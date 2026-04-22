@@ -1,0 +1,17 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "entire segment",
+      "source_locator": "all paragraphs",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft is empty — every signature in Chapter IX is missing, including the closing four paragraphs ('fresh, green breast,' 'capacity for wonder,' 'green light, the orgiastic future,' 'boats against the current'), 'careless people,' 'poor son-of-a-bitch,' 'Blessed are the dead,' the Hopalong Cassidy schedule, and the Middle West nostalgia. This is the book's landing.",
+      "suggested_fix": "Regenerate the entire segment, preserving verbatim all high-priority signatures listed in the plan."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Draft is empty; every signature in the book's closing chapter is absent."
+}

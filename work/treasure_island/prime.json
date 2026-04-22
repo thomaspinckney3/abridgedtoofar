@@ -1,0 +1,328 @@
+{
+  "book_id": "treasure_island",
+  "notes": "Treasure Island is rich in culturally famous set-pieces (the apple barrel eavesdropping, the black spot, 'Pieces of eight'), voice-establishing passages from Jim's first-person retrospective narration, character-defining speeches from Long John Silver, and atmospheric scene-setting. The critical tradition returns repeatedly to Silver's moral ambiguity, the apple barrel scene as the novel's pivot, and the opening chapters' establishment of dread and atmosphere. Signature material clusters around: (1) the famous song 'Fifteen men on the dead man's chest'; (2) the black spot ritual; (3) Silver's charismatic speech in the apple barrel; (4) Jim's coastal atmosphere passages; (5) Silver's shifting loyalties and self-revelation; (6) the treasure hunt climax. The voice is retrospective, boyish but canny, capable of both atmospheric poetry and dry ironic understatement. Downstream should hunt for: nautical folk-speech in Silver's dialogue, Jim's register-defining moments of fear/wonder, the moral-philosophical asides, and any scene where the narrative turns on concealment or revelation.",
+  "examples": [
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter 1, opening paragraph",
+      "passage_hint": "Squire Trelawney, Dr. Livesey, and the rest of these gentlemen having asked me to write down the whole particulars about Treasure Island, from the beginning to the end, keeping nothing back but the bearings of the island",
+      "why": "The novel's famous opening sentence establishes the retrospective frame and the one secret withheld, launching the entire adventure premise."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter 1, the captain's song",
+      "passage_hint": "\"Fifteen men on the dead man's chest-- Yo-ho-ho, and a bottle of rum!\"",
+      "why": "Perhaps the most culturally famous pirate song in English literature, repeated as a leitmotif throughout the novel and widely quoted outside it."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 1, description of the captain's arrival",
+      "passage_hint": "I remember him as if it were yesterday, as he came plodding to the inn door, his sea-chest following behind him in a hand-barrow--a tall, strong, heavy, nut-brown man, his tarry pigtail falling over the shoulder of his soiled blue coat",
+      "why": "The 'as if it were yesterday' retrospective anchor and the precise inventory of physical detail define Jim's narrating consciousness and Stevenson's visual style."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 1, Jim's nightmare description",
+      "passage_hint": "How that personage haunted my dreams, I need scarcely tell you. On stormy nights, when the wind shook the four corners of the house and the surf roared along the cove and up the cliffs, I would see him in a thousand forms, and with a thousand diabolical expressions.",
+      "why": "A sustained ironic-gothic digression establishing the dreamlike terror of the one-legged seafaring man; quintessential Jim Hawkins voice-establishing prose."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 1, Dr. Livesey confronts the captain",
+      "passage_hint": "\"If you do not put that knife this instant in your pocket, I promise, upon my honour, you shall hang at the next assizes.\"",
+      "why": "Livesey's fearless calm against the captain's brutishness introduces the novel's central moral contrast between discipline/honour and piratical violence."
+    },
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter 3, the black spot",
+      "passage_hint": "\"That's a summons, mate. I'll tell you if they get that. But you keep your weather-eye open, Jim, and I'll share with you equals, upon my honour.\"",
+      "why": "The black spot is the novel's most famous invented pirate tradition; this passage names and explains it for the first time."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 3, narrator reflects on his father's death",
+      "passage_hint": "But as things fell out, my poor father died quite suddenly that evening, which put all other matters on one side. Our natural distress, the visits of the neighbours, the arranging of the funeral, and all the work of the inn to be carried on in the meanwhile kept me so busy that I had scarcely time to think of the captain",
+      "why": "Jim's dry matter-of-factness about his father's death amid adventure-plot concerns is a defining register moment — grief absorbed into narrative momentum."
+    },
+    {
+      "origin": "cultural",
+      "category": "narrative",
+      "segment_hint": "Chapter 3, the black spot paper",
+      "passage_hint": "On the floor close to his hand there was a little round of paper, blackened on the one side. I could not doubt that this was the black spot; and taking it up, I found written on the other side, in a very good, clear hand, this short message: \"You have till ten tonight.\"",
+      "why": "The physical description of the black spot and its terse message is among the most iconic scene-objects in adventure literature."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 4, Jim's mother at the sea-chest",
+      "passage_hint": "\"I'll show these rogues that I'm an honest woman,\" said my mother. \"I'll have my dues, and not a farthing over.\"",
+      "why": "Jim's mother's stubborn rectitude amid mortal danger is a character-defining moment that also ironically anchors the novel's themes of honesty versus greed."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 4, the blind man's stick",
+      "passage_hint": "Then it struck sharp on the inn door, and then we could hear the handle being turned and the bolt rattling as the wretched being tried to enter; and then there was a long time of silence both within and without.",
+      "why": "The rhythm of repeated 'and then' clauses enacts the terror of waiting; a technically distinctive prose sentence that suspense-writing critics cite."
+    },
+    {
+      "origin": "cultural",
+      "category": "character",
+      "segment_hint": "Chapter 5, Pew trampled by horses",
+      "passage_hint": "Down went Pew with a cry that rang high into the night; and the four hoofs trampled and spurned him and passed by. He fell on his side, then gently collapsed upon his face and moved no more.",
+      "why": "Pew's sudden, grotesque death is one of the novel's most memorably violent images, balancing horror with the ironic justice of the blind villain's end."
+    },
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter 6, the treasure map revealed",
+      "passage_hint": "there fell out the map of an island, with latitude and longitude, soundings, names of hills and bays and inlets, and every particular that would be needed to bring a ship to a safe anchorage upon its shores.",
+      "why": "The map's revelation is the novel's structural and cultural pivot — the physical object that drives the entire adventure and became iconic in popular culture."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 6, map annotations",
+      "passage_hint": "Bulk of treasure here. ... Tall tree, Spy-glass shoulder, bearing a point to the N. of N.N.E. ... The bar silver is in the north cache",
+      "why": "Flint's cryptic annotations are among the most famous textual objects in adventure fiction — the treasure map's directions read as pure narrative desire."
+    },
+    {
+      "origin": "textual",
+      "category": "character",
+      "segment_hint": "Chapter 7, Squire Trelawney's letter introducing Silver",
+      "passage_hint": "Long John Silver, he is called, and has lost a leg; but that I regarded as a recommendation, since he lost it in his country's service, under the immortal Hawke.",
+      "why": "The ironic dramatic irony of Trelawney praising Silver's lost leg as heroic, while we know Jim's nightmare has been about a one-legged man, is a masterclass in narrative tension."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 8, Jim first sees Long John Silver",
+      "passage_hint": "His left leg was cut off close by the hip, and under the left shoulder he carried a crutch, which he managed with wonderful dexterity, hopping about upon it like a bird. He was very tall and strong, with a face as big as a ham--plain and pale, but intelligent and smiling.",
+      "why": "The physical description of Silver at first appearance is a character-defining portrait that subverts expectations — charming, not monstrous — establishing his ambiguity."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 8, Jim's relief about Silver",
+      "passage_hint": "I had seen the captain, and Black Dog, and the blind man, Pew, and I thought I knew what a buccaneer was like--a very different creature, according to me, from this clean and pleasant-tempered landlord.",
+      "why": "Jim's misreading of Silver signals the novel's central interpretive challenge: the unreliability of appearances and the seductiveness of Silver's charm."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 10, Silver's parrot described",
+      "passage_hint": "\"Now, that bird,\" he would say, \"is, maybe, two hundred years old, Hawkins--they live forever mostly; and if anybody's seen more wickedness, it must be the devil himself.\"",
+      "why": "Silver's comic-gothic yarn about Captain Flint the parrot is voice-defining for his character — the storyteller's gift that makes him simultaneously charming and dangerous."
+    },
+    {
+      "origin": "cultural",
+      "category": "narrative",
+      "segment_hint": "Chapter 10, into the apple barrel",
+      "passage_hint": "In I got bodily into the apple barrel, and found there was scarce an apple left; but sitting down there in the dark, what with the sound of the waters and the rocking movement of the ship, I had either fallen asleep or was on the point of doing so when a heavy man sat down with rather a clash close by.",
+      "why": "The apple barrel scene is the novel's most celebrated narrative invention — eavesdropping in a barrel — and the structural hinge on which the mutiny plot turns."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter 11, Silver's philosophy of fortune",
+      "passage_hint": "\"Here it is about gentlemen of fortune. They lives rough, and they risk swinging, but they eat and drink like fighting-cocks, and when a cruise is done, why, it's hundreds of pounds instead of hundreds of farthings in their pockets.\"",
+      "why": "Silver's recruitment speech is the critical locus for discussions of the novel's ambivalent romance with piracy and its critique of bourgeois respectability."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter 11, Silver on discipline and saving",
+      "passage_hint": "\"I'm fifty, mark you; once back from this cruise, I set up gentleman in earnest. Time enough too, says you. Ah, but I've lived easy in the meantime, never denied myself o' nothing heart desires, and slep' soft and ate dainty all my days but when at sea.\"",
+      "why": "Silver's self-portrait as a prudent, bourgeois-aspiring pirate is critically central to readings of the novel's ideology — the villain who reflects capitalist calculation."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter 11, Silver's threat about Trelawney",
+      "passage_hint": "\"Only one thing I claim--I claim Trelawney. I'll wring his calf's head off his body with these hands, Dick!\"",
+      "why": "Silver's sudden shift to murderous intent inside the charming philosophizing is the moment that crystallizes his dual nature for readers and critics alike."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 12, Jim's relief hearing faithful men remain",
+      "passage_hint": "I began to feel pretty desperate at this, for I felt altogether helpless; and yet, by an odd train of circumstances, it was indeed through me that safety came.",
+      "why": "Jim's prospective self-awareness — knowing the narrator survived — is a signature of the retrospective voice that shapes the novel's dramatic irony."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 13, first sight of the island",
+      "passage_hint": "Grey-coloured woods covered a large part of the surface. This even tint was indeed broken up by streaks of yellow sand-break in the lower lands, and by many tall trees of the pine family... but the general colouring was uniform and sad.",
+      "why": "The sustained melancholic palette of the island's first description is atmospheric scene-setting at its most distinctive — Stevenson's landscape writing as emotional register."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 13, Jim's dread of Treasure Island",
+      "passage_hint": "my heart sank, as the saying is, into my boots; and from the first look onward, I hated the very thought of Treasure Island.",
+      "why": "Jim's anti-romantic reaction to the island subverts the adventure genre expectation and is a critical touchstone for discussions of the novel's ambivalence."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 14, Silver murders Tom",
+      "passage_hint": "With a cry John seized the branch of a tree, whipped the crutch out of his armpit, and sent that uncouth missile hurtling through the air. It struck poor Tom, point foremost, and with stunning violence, right between the shoulders in the middle of his back.",
+      "why": "The murder of Tom is the scene that definitively strips Silver's charm and forces Jim — and the reader — to see his true nature; a critical pivot in Silver's characterization."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 14, Jim's faint after witnessing murder",
+      "passage_hint": "I do not know what it rightly is to faint, but I do know that for the next little while the whole world swam away from before me in a whirling mist; Silver and the birds, and the tall Spy-glass hilltop, going round and round and topsy-turvy before my eyes",
+      "why": "Jim's dissociative reaction to violence is psychologically rendered with unusual care for adventure fiction — a voice passage critics return to for Stevenson's realism."
+    },
+    {
+      "origin": "cultural",
+      "category": "character",
+      "segment_hint": "Chapter 15, Ben Gunn's introduction",
+      "passage_hint": "\"Ben Gunn,\" he answered, and his voice sounded hoarse and awkward, like a rusty lock. \"I'm poor Ben Gunn, I am; and I haven't spoke with a Christian these three years.\"",
+      "why": "Ben Gunn's self-introduction is one of the novel's most quoted and charming character moments — the marooned eccentric who becomes a key plot agent."
+    },
+    {
+      "origin": "textual",
+      "category": "character",
+      "segment_hint": "Chapter 15, Ben Gunn on cheese",
+      "passage_hint": "\"You mightn't happen to have a piece of cheese about you, now? No? Well, many's the long night I've dreamed of cheese--toasted, mostly--and woke up again, and here I were.\"",
+      "why": "Ben Gunn's cheese obsession is a beloved comic-pathetic detail, widely quoted and used critically to discuss the novel's tonal range."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 19, Jim describes the stockade log-house",
+      "passage_hint": "There was sand in our eyes, sand in our teeth, sand in our suppers, sand dancing in the spring at the bottom of the kettle, for all the world like porridge beginning to boil.",
+      "why": "The comic-miserable inventory of sand is a register-defining passage — Stevenson's comic realism cutting through adventure-romance with physical discomfort."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 20, Silver's embassy, Silver on the threshold",
+      "passage_hint": "\"You ain't a-going to let me inside, Cap'n?\" complained Long John. \"It's a main cold morning, to be sure, sir, to sit outside upon the sand.\"",
+      "why": "Silver's wheedling domestic complaint in the midst of a parley about lives and treasure captures his extraordinary tonal range — charm as weapon."
+    },
+    {
+      "origin": "cultural",
+      "category": "character",
+      "segment_hint": "Chapter 20, Smollett's dismissal of Silver",
+      "passage_hint": "\"You're either my ship's cook--and then you were treated handsome--or Cap'n Silver, a common mutineer and pirate, and then you can go hang!\"",
+      "why": "Smollett's binary formulation is one of the novel's most quoted confrontational lines, crystallizing the moral choice Silver has made."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 22, Jim's sea-adventure begins, the coracle",
+      "passage_hint": "It was a night out of ten thousand for my purpose. The fog had now buried all heaven. As the last rays of daylight dwindled and disappeared, absolute blackness settled down on Treasure Island.",
+      "why": "The atmospheric opening of Jim's night sea-adventure is prosodically heightened — the triple rhythms enact the darkness closing in."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 23, coracle on the sea",
+      "passage_hint": "The coracle--as I had ample reason to know before I was done with her--was a very safe boat for a person of my height and weight, both buoyant and clever in a seaway; but she was the most cross-grained, lop-sided craft to manage.",
+      "why": "Jim's comic-rueful retrospective on the coracle is voice-defining — the adult narrator's dry hindsight inflecting boyish experience."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 24, coracle navigation insight",
+      "passage_hint": "I found each wave, instead of the big, smooth glossy mountain it looks from shore or from a vessel's deck, was for all the world like any range of hills on dry land, full of peaks and smooth places and valleys.",
+      "why": "Jim's empirical discovery of wave structure is a moment of sustained observational prose that critics cite for Stevenson's scientific imagination within adventure."
+    },
+    {
+      "origin": "cultural",
+      "category": "narrative",
+      "segment_hint": "Chapter 25, striking the Jolly Roger",
+      "passage_hint": "\"God save the king!\" said I, waving my cap. \"And there's an end to Captain Silver!\"",
+      "why": "Jim's triumphant gesture of hauling down the Jolly Roger is a culturally resonant moment of boyish heroism at the heart of the adventure genre."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 26, Israel Hands's philosophy",
+      "passage_hint": "\"For thirty years,\" he said, \"I've sailed the seas and seen good and bad, better and worse, fair weather and foul, provisions running out, knives going, and what not. Well, now I tell you, I never seen good come o' goodness yet.\"",
+      "why": "Hands's nihilist credo is a philosophical counterpoint to the novel's surface morality; critically important for readings of the novel's ethics."
+    },
+    {
+      "origin": "cultural",
+      "category": "narrative",
+      "segment_hint": "Chapter 27, the parrot betrays Jim",
+      "passage_hint": "\"Pieces of eight! Pieces of eight! Pieces of eight! Pieces of eight! Pieces of eight!\" and so forth, without pause or change, like the clacking of a tiny mill.",
+      "why": "The parrot's cry as the instrument of Jim's capture is among the most famous ironic reversals in adventure fiction — the comic pet as nemesis."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter 28, Jim's defiant speech to the pirates",
+      "passage_hint": "\"I was in the apple barrel the night we sighted land, and I heard you, John, and you, Dick Johnson, and Hands, who is now at the bottom of the sea, and told every word you said before the hour was out.\"",
+      "why": "Jim's bravado confession is critically central to discussions of his coming-of-age — the boy claiming adult agency by owning his role in the plot's outcome."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 28, Silver protects Jim",
+      "passage_hint": "\"I like that boy, now; I never seen a better boy than that. He's more a man than any pair of rats of you in this here house, and what I say is this: let me see him that'll lay a hand on him\"",
+      "why": "Silver's protection of Jim is the novel's most discussed moral ambiguity — genuine affection, self-interest, or both — the passage every critical reading of Silver must address."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 29, Silver's debate with his crew over the black spot",
+      "passage_hint": "\"What soft-headed lubber had a Bible?\" ... \"Dick, was it? Then Dick can get to prayers,\" said Silver. \"He's seen his slice of luck, has Dick, and you may lay to that.\"",
+      "why": "Silver's scornful wit about the Bible-cutting is a voice-defining passage — dark comedy, command authority, and irreverence fused in characteristic Silver speech."
+    },
+    {
+      "origin": "critical",
+      "category": "thematic",
+      "segment_hint": "Chapter 30, Dr. Livesey rebukes Jim",
+      "passage_hint": "\"when Captain Smollett was well, you dared not have gone off; and when he was ill and couldn't help it, by George, it was downright cowardly!\"",
+      "why": "Livesey's rebuke is the novel's moral reckoning for Jim's heroic truancy — the passage critics use to discuss whether Stevenson endorses or critiques Jim's adventures."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 31, Jim on the treasure hunters' greed",
+      "passage_hint": "Their eyes burned in their heads; their feet grew speedier and lighter; their whole soul was bound up in that fortune, that whole lifetime of extravagance and pleasure, that lay waiting there for each of them.",
+      "why": "Jim's observation of treasure-fever is a thematic set-piece on greed rendered in heightened prose — sustained ironic distance from the narrator."
+    },
+    {
+      "origin": "cultural",
+      "category": "narrative",
+      "segment_hint": "Chapter 32, the voice among the trees",
+      "passage_hint": "out of the middle of the trees in front of us, a thin, high, trembling voice struck up the well-known air and words: \"Fifteen men on the dead man's chest-- Yo-ho-ho, and a bottle of rum!\"",
+      "why": "Ben Gunn's ghostly impersonation of Flint's voice is one of the novel's great theatrical moments — the recurring song weaponized as supernatural terror."
+    },
+    {
+      "origin": "interpretive",
+      "category": "narrative",
+      "segment_hint": "Chapter 33, the treasure pit empty",
+      "passage_hint": "Before us was a great excavation, not very recent, for the sides had fallen in and grass had sprouted on the bottom. In this were the shaft of a pick broken in two and the boards of several packing-cases strewn around.",
+      "why": "The empty treasure pit is the novel's great structural reversal — the goal achieved only to be already gone — and a critical touchstone for discussions of adventure-romance irony."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 33, the treasure cave revealed",
+      "passage_hint": "in a far corner, only duskily flickered over by the blaze, I beheld great heaps of coin and quadrilaterals built of bars of gold. That was Flint's treasure that we had come so far to seek and that had cost already the lives of seventeen men from the HISPANIOLA.",
+      "why": "The treasure's actual appearance is deliberately anti-climactic in emotional register — Jim's restraint and the death-toll reminder define the novel's moral accounting."
+    },
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter 34, closing lines",
+      "passage_hint": "the worst dreams that ever I have are when I hear the surf booming about its coasts or start upright in bed with the sharp voice of Captain Flint still ringing in my ears: \"Pieces of eight! Pieces of eight!\"",
+      "why": "The novel's closing image — the parrot's cry as nightmare — is among the most famous endings in adventure fiction, haunting Jim (and the reader) beyond the story's close."
+    }
+  ]
+}

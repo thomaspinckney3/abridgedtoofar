@@ -1,0 +1,35 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "seeking increase of wretchedness in every reflection that could afford it",
+      "source_locator": "paragraph on Elinor/Marianne grief, near end of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause is distinctively Austenian in its ironic precision — 'seeking increase of wretchedness' is a textually distinctive phrase that captures the novel's central thematic critique of performed sensibility; its excision flattens the satirical register of the passage.",
+      "suggested_fix": "Restore 'seeking increase of wretchedness in every reflection that could afford it' within the grief paragraph rather than condensing to 'and resolved against ever admitting consolation.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "he was very young when he married, and very fond of his wife",
+      "source_locator": "paragraph on John Dashwood's character",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause carries quiet ironic weight — the explanation for why he 'might have been made amiable' is the contrast between youthful affection and the wife he actually got; its omission weakens the satirical logic of the characterisation.",
+      "suggested_fix": "Restore 'for he was very young when he married, and very fond of his wife' before the pivot to Mrs. John Dashwood as caricature."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "so earnestly did she despise her daughter-in-law for it",
+      "source_locator": "paragraph beginning 'So acutely did Mrs. Dashwood feel'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The word 'despise' is a sharp register marker; the draft softens this to mere feeling the 'ungracious behaviour,' losing the intensity of Mrs. Dashwood's reaction that Austen underscores with the doubled construction.",
+      "suggested_fix": "Restore 'so earnestly did she despise her daughter-in-law for it' to preserve the full rhetorical parallel and tonal force."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all major signatures verbatim or near-verbatim, with only minor voice-flattening in the grief passage (loss of 'seeking increase of wretchedness') and two small excisions that trim Austen's ironic precision without rising to high severity."
+}

@@ -1,0 +1,26 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "At first I had supposed 'the dead man's chest' to be that identical big box of his upstairs in the front room, and the thought had been mingled in my nightmares with that of the one-legged seafaring man.",
+      "source_locator": "paragraph beginning 'At first I had supposed', after the second appearance of the song and before the doctor's reaction",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a distinctive voice-establishing passage that reveals Jim's childlike conflation of the song lyric with the sea-chest, linking the song, the chest, and the one-legged-man nightmare into a single interpretive knot; critics return to it as evidence of Jim's naïve-yet-retrospective narration. Its absence erases a key moment of the narrator's consciousness.",
+      "suggested_fix": "Restore the sentence (or a close paraphrase) in its original position: after the second quotation of the song and before noting that it was no longer new to the household — 'At first I had supposed the dead man's chest to be that identical big box upstairs, and the thought had mingled in my nightmares with that of the one-legged seafaring man.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "all the neighbours joining in for dear life, with the fear of death upon them, and each singing louder than the other to avoid remark",
+      "source_locator": "paragraph beginning 'But though I was so terrified', describing the captain's fits at the inn",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'with the fear of death upon them' is cut; it is the rhetorical peak of this comic-terror sentence and provides the hyperbolic register that defines Stevenson's tone in this passage.",
+      "suggested_fix": "Restore 'with the fear of death upon them' between 'for dear life' and 'each singing louder than the other.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all primary signatures; one medium-severity omission (the 'dead man's chest' / sea-chest conflation passage) and one low-severity voice flattening are the only notable losses, insufficient to require regeneration."
+}

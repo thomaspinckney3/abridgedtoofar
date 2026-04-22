@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "No lazy, sun-kissed life was this, with nothing to do but loaf and be bored.",
+      "source_locator": "Opening paragraph, between 'flung into the heart of things primordial' and 'Here was neither peace'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic contrast—the comfortable Southland life versus the brutal North—is a rhetorically distinctive sentence that sharpens the opening's tonal shift; its excision mutes the ironic register London establishes immediately.",
+      "suggested_fix": "Restore 'No lazy, sun-kissed life was this, with nothing to do but loaf and be bored.' between the primordial sentence and 'Here was neither peace.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Buck did not comprehend that silent intentness, nor the eager way with which they were licking their chops.",
+      "source_locator": "Third paragraph, Curly fight scene, after 'an intent and silent circle'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence conveys Buck's limited comprehension at this stage—a narratologically important beat showing his naivety before the lesson is learned; its loss collapses the before/after structure of the episode.",
+      "suggested_fix": "Restore the sentence about Buck's incomprehension and the huskies licking their chops before Curly rushes her antagonist."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "unconsciously he accommodated himself to the new mode of life",
+      "source_locator": "Paragraph beginning 'Not that Buck reasoned it out,' after 'He was fit, that was all'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'unconsciously he accommodated himself to the new mode of life' is London's key statement of instinct-over-reason, an interpretive cornerstone of the decivilization theme; its excision leaves the paragraph less theoretically complete.",
+      "suggested_fix": "Restore 'and unconsciously he accommodated himself to the new mode of life' after 'He was fit, that was all.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "They quickened the old life within him, and the old tricks which they had stamped into the heredity of the breed were his tricks.",
+      "source_locator": "Penultimate paragraph, ancestral instincts section, after 'In this manner had fought forgotten ancestors'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source specifies a two-step process: the ancestors 'quickened the old life' and then the hereditary tricks followed; the draft collapses this to a single clause, losing London's deliberate mechanistic language of atavistic awakening that critics rely on.",
+      "suggested_fix": "Restore 'They quickened the old life within him, and the old tricks which they had stamped into the heredity of the breed were his tricks. They came to him without effort or discovery, as though they had been his always.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all high-priority signatures verbatim, but drops or flattens four medium-weight passages—the 'lazy sun-kissed life' ironic contrast, Buck's incomprehension during the Curly scene, the 'unconsciously accommodated' decivilization statement, and the two-step ancestral-quickening sequence—each of which carries interpretive or voice-establishing weight."
+}

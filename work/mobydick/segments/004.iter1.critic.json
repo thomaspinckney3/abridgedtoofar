@@ -1,0 +1,71 @@
+{
+  "segment_id": "004",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Its extreme downtown is the battery, where that noble mole is washed by waves, and cooled by breezes, which a few hours previous were out of sight of land. Look at the crowds of water-gazers there.",
+      "source_locator": "paragraph 2, after 'commerce surrounds it with her surf'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The battery passage and 'Look at the crowds of water-gazers there' are the rhetorical pivot from city-description to crowd-observation; cutting it removes the staged buildup and the imperative voice that characterizes Ishmael's oratorical mode.",
+      "suggested_fix": "Restore the battery sentences before the Sabbath circumambulation paragraph; they are short and do significant structural and tonal work."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Are the green fields gone? What do they here?",
+      "source_locator": "paragraph 3, closing questions after 'clinched to desks'",
+      "draft_treatment": "absent",
+      "why_it_matters": "These two rhetorical questions are a signature of Ishmael's ironic interrogative style and mark the interpretive turn from observation to wonder; their removal flattens the paragraph's rhetorical arc.",
+      "suggested_fix": "Restore 'Are the green fields gone? What do they here?' after 'clinched to desks' before moving on."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tell me, does the magnetic virtue of the needles of the compasses of all those ships attract them thither?",
+      "source_locator": "paragraph 4, closing sentence after 'Yet here they all unite'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing rhetorical question is a distinctive, whimsical pseudo-scientific speculation that embodies Ishmael's ironic voice; it is the payoff of the crowd-observation sequence and is widely noted for its comic register.",
+      "suggested_fix": "Restore the compass-needle question as the closing sentence of the inlanders paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor.",
+      "source_locator": "paragraph 5, after 'he will infallibly lead you to water'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'metaphysical professor' joke is a signature comic aside that establishes Ishmael's satirical wit; its loss reduces the water-meditation paragraph to a straight philosophical claim and erases a distinctively funny moment.",
+      "suggested_fix": "Restore the desert/metaphysical professor sentence between the absent-minded man sentence and 'Yes, as every one knows.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Here stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle; and up from yonder cottage goes a sleepy smoke. Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.",
+      "source_locator": "paragraph 6 (artist/Saco valley paragraph)",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Saco valley ekphrasis is a set-piece of Melville's lyrical prose; the draft collapses it to a vague clause ('hollow trees and sleeping meadows'), losing the incantatory rhythm and the specific imagery that make the passage memorable.",
+      "suggested_fix": "Restore the Saco valley description in close to verbatim form; its length is the point — the accumulation of dormant details before the reveal of the stream is the rhetorical argument."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "though once broiled, judiciously buttered, and judgmatically salted and peppered, there is no one who will speak more respectfully, not to say reverentially, of a broiled fowl than I will. It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
+      "source_locator": "paragraph on not going as Cook, near end of that paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The broiled-fowl digression culminating in the pyramids-as-bake-houses joke is a celebrated comic non-sequitur and a prime example of Ishmael's absurdist humor; its complete removal is a significant voice erasure.",
+      "suggested_fix": "Restore the broiled fowl / Egyptian bake-houses passage; it is short and punches above its word-count in voice distinctiveness."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "nor, though I am something of a salt, do I ever go to sea as a Commodore, or a Captain, or a Cook. I abandon the glory and distinction of such offices to those who like them.",
+      "source_locator": "passenger/sailor paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The self-deprecating aside 'though I am something of a salt' and 'I abandon the glory and distinction' are part of Ishmael's ironic self-presentation; the draft cuts the first and the 'abandon' sentence, weakening the mock-grandiose tone.",
+      "suggested_fix": "Restore 'though I am something of a salt' and 'I abandon the glory and distinction of such offices to those who like them' in the sailor passage."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft is broadly faithful in structure and preserves the most famous verbatim passages, but accumulates five medium-severity voice-flattening failures—the battery/water-gazers pivot, the 'green fields' and compass-needle rhetorical questions, the metaphysical-professor joke, the Saco valley ekphrasis, and the broiled-fowl/pyramids digression—that collectively strip away a substantial portion of Ishmael's comic and oratorical signature."
+}

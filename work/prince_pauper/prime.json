@@ -1,0 +1,286 @@
+{
+  "book_id": "prince_pauper",
+  "notes": "This book contains several distinct categories of signature material: (1) the famous opening birth-parallel and framing device; (2) Twain's satirical asides on royal ceremony, law, and social hierarchy — these ironic digressions are the book's sharpest writing and most vulnerable to compression; (3) character-defining moments of role reversal where each boy reveals himself through behavior; (4) set-piece scenes of courtly absurdity (dressing ceremony, nose-scratching, rosewater drinking, Great Seal as nutcracker); (5) passages of genuine pathos (the burning of the Baptist women, the mother's recognition test, Hendon's sacrifice); (6) Twain's direct authorial intrusions on English law's cruelty; (7) the identity-recognition scenes that anchor the plot's critical interpretive questions; (8) voice passages where Twain's sardonic narrator editorializes on monarchy, class, and human nature. Downstream stage should hunt especially for the ironic narrator voice (easily compressed away), the legal-cruelty passages, and the 'small humanizing detail' moments that carry the book's thematic weight.",
+  "examples": [
+    {
+      "origin": "cultural",
+      "category": "hook",
+      "segment_hint": "Opening paragraph / Chapter 1",
+      "passage_hint": "In the ancient city of London, on a certain autumn day in the second quarter of the sixteenth century, a boy was born to a poor family of the name of Canty, who did not want him.",
+      "why": "The famous opening sentence establishing the symmetrical birth-parallel that is the book's entire premise; widely recognized as the novel's defining structural hook."
+    },
+    {
+      "origin": "cultural",
+      "category": "thematic",
+      "segment_hint": "Chapter 1, closing sentences",
+      "passage_hint": "All England wanted him too. England had so longed for him, and hoped for him, and prayed God for him, that, now that he was really come, the people went nearly mad for joy.",
+      "why": "The ironic juxtaposition of national celebration for Edward versus total indifference to Tom Canty establishes the book's central social critique in its first page."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 1, framing device / preface",
+      "passage_hint": "It may be history, it may be only a legend, a tradition. It may have happened, it may not have happened: but it COULD have happened.",
+      "why": "Twain's narrative-frame disclaimer is a signature rhetorical gesture establishing the book's playful relationship to historical fiction and authorial voice."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter 2, Tom's early life",
+      "passage_hint": "He had a hard time of it, but did not know it. It was the sort of time that all the Offal Court boys had, therefore he supposed it was the correct and comfortable thing.",
+      "why": "Crucial thematic statement about the relativity of suffering and the way social class shapes one's sense of normalcy — foundational to the book's social argument."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 2, Tom's reading and dreaming",
+      "passage_hint": "His dream-people were so fine that he grew to lament his shabby clothing and his dirt, and to wish to be clean and better clad. He went on playing in the mud just the same, and enjoying it, too",
+      "why": "Characteristic Twain irony — aspiration and appetite coexisting without contradiction; the sentence shape is distinctively Twainian in its comic qualification."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter 3, Tom meets Edward at the gate",
+      "passage_hint": "Oh! he was a prince—a prince, a living prince, a real prince—without the shadow of a question; and the prayer of the pauper-boy's heart was answered at last.",
+      "why": "The moment of recognition Tom has dreamed of; critically noted as the pivot on which the entire plot turns, and prosodically notable for its triple repetition."
+    },
+    {
+      "origin": "textual",
+      "category": "character",
+      "segment_hint": "Chapter 3, Edward defends Tom at the gate",
+      "passage_hint": "How dar'st thou use a poor lad like that? How dar'st thou use the King my father's meanest subject so? Open the gates, and let him in!",
+      "why": "Edward's instinctive defense of Tom — his first act of royal justice — is the character-defining moment that makes the later plot reversals morally credible."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 3, the mirror scene",
+      "passage_hint": "The two went and stood side by side before a great mirror, and lo, a miracle: there did not seem to have been any change made! They stared at each other, then at the glass, then at each other again.",
+      "why": "The mirror scene is the book's central structural image — the moment of identity dissolution — and its rhythm (three-beat staring pattern) is distinctively composed."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter 3, Edward's reaction to Tom's description of Offal Court life",
+      "passage_hint": "'Twould be worth my father's kingdom but to enjoy it once! Prithee go on.",
+      "why": "Edward's longing for the pleasures of poverty is the book's central irony crystallized in a single line — each boy envying the other's condition."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 4, Christ's Hospital boys mock Edward",
+      "passage_hint": "And now and then his mind reverted to his treatment by those rude Christ's Hospital boys, and he said, 'When I am king, they shall not have bread and shelter only, but also teachings out of books; for a full belly is little worth where the mind is starved'",
+      "why": "Edward's first reformist insight born directly from suffering — the thematic engine of the entire novel's social argument, here in embryo."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 5, Tom alone in the palace cabinet",
+      "passage_hint": "Suppose some one should come, and catch him in the prince's clothes, and the prince not there to explain. Might they not hang him at once, and inquire into his case afterward? He had heard that the great were prompt about small matters.",
+      "why": "Characteristic Twain satirical aside on aristocratic justice delivered through Tom's terrified reasoning — the comedy and the critique are inseparable."
+    },
+    {
+      "origin": "critical",
+      "category": "structural",
+      "segment_hint": "Chapter 6, Lord Hertford's private doubts",
+      "passage_hint": "Now were he impostor and called himself prince, look you that would be natural; that would be reasonable. But lived ever an impostor yet, who, being called prince by the king, prince by the court, prince by all, denied his dignity and pleaded against his exaltation? No!",
+      "why": "Hertford's logical argument for accepting Tom as the true prince — critically important as the book's exploration of how identity is socially constructed and maintained."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 7, Tom's first royal dinner",
+      "passage_hint": "Why they did not use a dog or a plumber seems strange; but all the ways of royalty are strange.",
+      "why": "Pure Twain satirical aside — the narrator's deadpan interjection about the royal taster is one of the book's funniest and most characteristic moments of ironic editorializing."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 7, the nose-scratching scene",
+      "passage_hint": "I crave your indulgence: my nose itcheth cruelly. What is the custom and usage in this emergence? Prithee, speed, for 'tis but a little time that I can bear it.",
+      "why": "The nose-scratching scene is the book's comic masterpiece of ceremonial absurdity — Tom reduced to tears by courtly paralysis over a basic human need."
+    },
+    {
+      "origin": "textual",
+      "category": "narrative",
+      "segment_hint": "Chapter 7, rosewater drinking",
+      "passage_hint": "Tom gazed at the dish a puzzled moment or two, then raised it to his lips, and gravely took a draught. Then he returned it to the waiting lord, and said—'Nay, it likes me not, my lord: it hath a pretty flavour, but it wanteth strength.'",
+      "why": "The rosewater finger-bowl scene is one of the most quoted comic moments in the book — perfectly capturing Tom's earnest misreading of aristocratic ritual."
+    },
+    {
+      "origin": "interpretive",
+      "category": "structural",
+      "segment_hint": "Chapter 8, the Great Seal question",
+      "passage_hint": "The Seal? Who keepeth the Seal but thou? / Please your majesty, you did take it from me two days since, saying it should no more do its office till your own royal hand should use it",
+      "why": "The missing Great Seal is the book's central mystery-object whose location drives the coronation climax — establishing it here as lost is a critical structural plant."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 11, Guildhall / King's death announced",
+      "passage_hint": "Then shall the king's law be law of mercy, from this day, and never more be law of blood! Up from thy knees and away! To the Tower, and say the King decrees the Duke of Norfolk shall not die!",
+      "why": "Tom's first authentic kingly act — speaking from moral instinct rather than instruction — is the moment that makes his pretender-kingship thematically legitimate."
+    },
+    {
+      "origin": "cultural",
+      "category": "character",
+      "segment_hint": "Chapter 11, Miles Hendon introduces himself",
+      "passage_hint": "'Though thou be prince or no prince, 'tis all one, thou be'st a gallant lad, and not friendless neither! Here stand I by thy side to prove it; and mind I tell thee thou might'st have a worser friend than Miles Hendon'",
+      "why": "Miles Hendon's self-introduction is one of the book's most memorable character entrances — establishing his swaggering loyalty that will anchor the second half."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 12, description of London Bridge",
+      "passage_hint": "Children were born on the Bridge, were reared there, grew to old age, and finally died without ever having set a foot upon any part of the world but London Bridge alone.",
+      "why": "Twain's extended satirical digression on London Bridge insularity is a sustained voice passage — his narrator's consciousness expanding beyond plot, characteristic of his best work."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 12, London Bridge as self-contained world",
+      "passage_hint": "It had its aristocracy, of course—its fine old families of butchers, and bakers, and what-not, who had occupied the same old premises for five or six hundred years... It was just the sort of population to be narrow and ignorant and self-conceited.",
+      "why": "Twain's satirical class commentary embedded in the Bridge digression — the narrator speaking directly on provincial self-satisfaction, a signature thematic preoccupation."
+    },
+    {
+      "origin": "textual",
+      "category": "character",
+      "segment_hint": "Chapter 12, Hendon's monologue watching the sleeping king",
+      "passage_hint": "I will teach him; I will cure his malady; yea, I will be his elder brother, and care for him and watch over him; and whoso would shame him or do him hurt may order his shroud, for though I be burnt for it he shall need it!",
+      "why": "Hendon's private vow of protection is the emotional center of their relationship — the sworn brotherhood that makes his later sacrifice meaningful."
+    },
+    {
+      "origin": "interpretive",
+      "category": "character",
+      "segment_hint": "Chapter 12, Hendon's knighthood",
+      "passage_hint": "'Rise, Sir Miles Hendon, Knight,' said the King, gravely—giving the accolade with Hendon's sword—'rise, and seat thyself. Thy petition is granted.'",
+      "why": "The invented knighthood that grants Hendon the right to sit — a comic scene that is also the book's central statement about the performative nature of aristocratic honor."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 14, Tom's elaborate dressing ceremony",
+      "passage_hint": "In the beginning, a shirt was taken up by the Chief Equerry in Waiting, who passed it to the First Lord of the Buckhounds, who passed it to the Second Gentleman of the Bedchamber... Poor little wondering chap, it reminded him of passing buckets at a fire.",
+      "why": "The extended chain-of-command dressing scene is Twain's most sustained set-piece satire on royal ceremony — the bucket-brigade simile is the perfect comic puncture."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 14, the damaged stocking crisis",
+      "passage_hint": "'Body of my life, a tag gone from a truss-point!—to the Tower with the Head Keeper of the King's Hose!'—after which he leaned upon the shoulder of the First Lord of the Buckhounds to regather his vanished strength",
+      "why": "The missing tag on the royal stocking — treated as near-treasonous catastrophe — is a compressed masterpiece of Twain's ceremonial-absurdity satire."
+    },
+    {
+      "origin": "critical",
+      "category": "thematic",
+      "segment_hint": "Chapter 15, Tom as de facto king",
+      "passage_hint": "He remained kind and gentle, and a sturdy and determined champion of all that were oppressed, and he made tireless war upon unjust laws: yet upon occasion, being offended, he could turn upon an earl, or even a duke, and give him a look that would make him tremble.",
+      "why": "Tom's character synthesis as a 'good king' — critically central to the book's argument that mercy and justice are natural rather than class-derived attributes."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter 15, the witch and storm scene",
+      "passage_hint": "I think the woman hath said true. An' my mother were in her place and gifted with the devil's functions, she had not stayed a moment to call her storms and lay the whole land in ruins, if the saving of my forfeit life were the price she got!",
+      "why": "Tom's reasoning about the accused witch — using maternal love as moral logic — is the book's most elegant demonstration of his natural judicial wisdom."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 17, the tramp gang / Yokel's speech",
+      "passage_hint": "I begged, from house to house—I and the wife—bearing with us the hungry kids—but it was crime to be hungry in England—so they stripped us and lashed us through three towns.",
+      "why": "Yokel's speech is the book's most direct and unironic indictment of English law's cruelty to the poor — Twain drops his comic mode for raw social protest."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 17, Foo-foo the First coronation by the tramps",
+      "passage_hint": "Then all flung themselves upon their knees about him and sent up a chorus of ironical wailings... 'Deign to spit upon us, O Sire, that our children's children may tell of thy princely condescension, and be proud and happy for ever!'",
+      "why": "The mock-coronation scene mirrors the book's real coronation — Twain's structural irony at its most pointed, the same rituals performed as degradation and as elevation."
+    },
+    {
+      "origin": "critical",
+      "category": "narrative",
+      "segment_hint": "Chapter 19, the peasant woman and Alfred the Great",
+      "passage_hint": "'Another English king had a commission like to this, in a bygone time—it is nothing against my dignity to undertake an office which the great Alfred stooped to assume. But I will try to better serve my trust than he; for he let the cakes burn.'",
+      "why": "Edward's self-comparison to Alfred — learning humility through domestic labor — is critically cited as the novel's central bildungsroman moment for the true king."
+    },
+    {
+      "origin": "textual",
+      "category": "narrative",
+      "segment_hint": "Chapter 18, Edward and the calf",
+      "passage_hint": "He was not only delighted to find that the creature was only a calf, but delighted to have the calf's company; for he had been feeling so lonesome and friendless that the company and comradeship of even this humble animal were welcome.",
+      "why": "The calf scene is the book's most tender moment — a king reduced to finding comfort in barnyard companionship; Twain's sentimental-ironic mode at its most affecting."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter 20, the hermit scene",
+      "passage_hint": "'I am an archangel!' The King started violently, and said to himself, 'Would God I were with the outlaws again; for lo, now am I the prisoner of a madman!'",
+      "why": "The hermit episode — genuine madness paralleling Edward's 'madness' — is critically read as the book's darkest mirror of the identity theme: the danger of being unbelieved."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter 27, the Baptist women burned",
+      "passage_hint": "'That which I have seen, in that one little moment, will never go out from my memory, but will abide there; and I shall see it all the days, and dream of it all the nights, till I die. Would God I had been blind!'",
+      "why": "Edward's response to watching the women burned is the book's most morally serious moment — the plain declarative rhythm conveying genuine horror without irony."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter 27, Edward's speech to Hendon on law reform",
+      "passage_hint": "'The world is made wrong; kings should go to school to their own laws, at times, and so learn mercy.'",
+      "why": "The novel's thesis statement, delivered by Edward after witnessing imprisonment and suffering — the most direct articulation of what the exchange of places has taught him."
+    },
+    {
+      "origin": "textual",
+      "category": "narrative",
+      "segment_hint": "Chapter 28, Hendon takes Edward's lashes",
+      "passage_hint": "'Kings cannot ennoble thee, thou good, great soul, for One who is higher than kings hath done that for thee; but a king can confirm thy nobility to men.' He picked up the scourge from the ground, touched Hendon's bleeding shoulders lightly with it, and whispered, 'Edward of England dubs thee Earl!'",
+      "why": "The stocks scene is the emotional climax of the Edward-Hendon relationship — the genuine ennobling through suffering contrasted with the comic absurdity of the formal ceremony."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter 28, Hendon's internal monologue on mock dignities",
+      "passage_hint": "'Better these poor mock dignities of mine, that come unasked, from a clean hand and a right spirit, than real ones bought by servility from grudging and interested power.'",
+      "why": "Hendon's reflection on honor is the book's most explicit thematic statement on authentic versus performed nobility — character over title."
+    },
+    {
+      "origin": "critical",
+      "category": "structural",
+      "segment_hint": "Chapter 30, Tom's moral corruption by kingship",
+      "passage_hint": "At last they ceased to trouble his thoughts almost wholly. And he was content, even glad: for, whenever their mournful and accusing faces did rise before him now, they made him feel more despicable than the worms that crawl.",
+      "why": "Tom's gradual forgetting of his mother and sisters — the corrupting effect of power — is the novel's most morally troubling passage, critically central to its social argument."
+    },
+    {
+      "origin": "interpretive",
+      "category": "narrative",
+      "segment_hint": "Chapter 31, Tom's mother recognizes him",
+      "passage_hint": "The same instant an officer of the King's Guard snatched her away with a curse, and sent her reeling back whence she came... she seemed so wounded, so broken-hearted, that a shame fell upon him which consumed his pride to ashes, and withered his stolen royalty.",
+      "why": "Tom's denial of his mother — and immediate shame — is the pivot of his moral arc; the involuntary hand-gesture also pays off the mother's recognition-test from Chapter 10."
+    },
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter 32, Coronation scene / Edward's entrance",
+      "passage_hint": "I forbid you to set the crown of England upon that forfeited head. I am the King!",
+      "why": "Edward's interruption of the coronation is the book's most famous dramatic moment — the climactic claim of true identity that the entire plot has built toward."
+    },
+    {
+      "origin": "textual",
+      "category": "narrative",
+      "segment_hint": "Chapter 32, Tom's confession about the Great Seal",
+      "passage_hint": "Tom stammered a moment, in a pathetic confusion, then got it out— 'To crack nuts with!' Poor child, the avalanche of laughter that greeted this nearly swept him off his feet.",
+      "why": "The Great Seal nutcracker revelation is the book's most celebrated comic coup — the mighty symbol of royal authority reduced to a practical tool by a practical boy."
+    },
+    {
+      "origin": "critical",
+      "category": "structural",
+      "segment_hint": "Conclusion / Justice and Retribution",
+      "passage_hint": "'What dost thou know of suffering and oppression? I and my people know, but not thou.' The reign of Edward VI. was a singularly merciful one for those harsh times.",
+      "why": "The novel's closing moral summary — Edward's authority to speak of suffering earned by experience — is Twain's final statement of the book's entire social-reform argument."
+    }
+  ]
+}

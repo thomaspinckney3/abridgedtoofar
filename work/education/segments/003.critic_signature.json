@@ -1,0 +1,71 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the charm was a true and natural child of the soil, not a cultivated weed of the ancients. The violence of the contrast was real",
+      "source_locator": "paragraph on New England politics and climate, after 'not its rarest amusement'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'a true and natural child of the soil, not a cultivated weed of the ancients' is a rhetorically distinctive Adams formulation that contrasts organic cultural growth with artificial transplantation—an interpretive motif for the whole chapter. Its excision flattens the irony of the passage.",
+      "suggested_fix": "Restore 'the charm was a true and natural child of the soil, not a cultivated weed of the ancients' before 'The violence of the contrast was real.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the boy who could look with pleasure into the violent snow-glare of the cold white sunshine, with its intense light and shade, scarcely knew what was meant by tone",
+      "source_locator": "paragraph beginning 'Boys are wild animals,' near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'the boy who could look with pleasure into the violent snow-glare scarcely knew what was meant by tone,' dropping 'of the cold white sunshine, with its intense light and shade'—specific sensory language that is signature Adams and carries the aesthetic-education motif.",
+      "suggested_fix": "Restore 'of the cold white sunshine, with its intense light and shade' in the snow-glare sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "a boy who began his education in these surroundings, with physical strength inferior to that of his brothers, and with a certain delicacy of mind and bone, ought rightly to have felt at home in the eighteenth century and should, in proper self-respect, have rebelled against the standards of the nineteenth",
+      "source_locator": "paragraph beginning 'A boy who began his education in these surroundings'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph, including its closing sentence about the tone of Boston society ('The true Bostonian always knelt in self-abasement before the majesty of English standards'), is a key interpretive passage about Adams's eighteenth-century identity and the colonial mentality of Boston. It is entirely missing from the draft.",
+      "suggested_fix": "Restore the full paragraph beginning 'A boy who began his education in these surroundings' including the observation about the Bostonian's self-abasement before English standards."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He liked the Adams side best, but for no other reason than that it reminded him of the country, the summer, and the absence of restraint. Yet he felt also that Quincy was in a way inferior to Boston, and that socially Boston looked down on Quincy.",
+      "source_locator": "paragraph about grandfather John Quincy Adams and grandfather Brooks, beginning 'He knew his grandfather'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage captures the boy's social self-consciousness and the Adams/Brooks contrast at its most precise. The draft merges the grandfathers' comparison but omits the boy's preference and the social inferiority of Quincy, losing a key note of ironic self-awareness.",
+      "suggested_fix": "Restore the sentences about preferring Adams for reasons of country and summer, and about Boston looking down on Quincy."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The defect was serious. Her future mother-in-law, Abigail, a famous New England woman whose authority over her turbulent husband, the second President, was hardly so great as that which she exercised over her son, the sixth to be",
+      "source_locator": "paragraph on Louisa Catherine Adams, after 'not one'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the Abigail passage nearly verbatim, which is good. However, the setup — 'Louisa was charming, like a Romney portrait, but among her many charms that of being a New England woman was not one. The defect was serious' — is present, making this acceptable, but the transition is slightly compressed. No severe loss here; flagging as low concern.",
+      "suggested_fix": "No action required; the core signature is preserved."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the taste of A-B, AB, suddenly revived on the boy's tongue sixty years afterwards",
+      "source_locator": "paragraph 'Boys are wild animals,' sentence about taste",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft includes this phrase but omits the immediate sensory setup: 'the children knew the taste of everything they saw or touched, from pennyroyal and flagroot to the shell of a pignut and the letters of a spelling-book.' The list is truncated but the signature phrase itself is present.",
+      "suggested_fix": "Restore the full list 'from pennyroyal and flagroot to the shell of a pignut and the letters of a spelling-book' for full sensory fidelity."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "He could not remember ever being seriously homesick again",
+      "source_locator": "paragraph about the Brooks grandfather and Medford visit",
+      "draft_treatment": "absent",
+      "why_it_matters": "The brief anecdote about the boy's violent homesickness at Medford (brought back in disgrace within 24 hours) and its telling coda is cut entirely. It is a small but characteristically Adamsian ironic aside.",
+      "suggested_fix": "Consider restoring the one-sentence Medford anecdote and its coda for tonal completeness, budget permitting."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful, preserving nearly all major signatures verbatim or near-verbatim, but loses several medium-weight voice and interpretive passages—most notably the 'true and natural child of the soil' aphorism, the entire 'A boy who began his education' paragraph with its Bostonian self-abasement observation, the boy's stated preference for Adams over Brooks, and some thinning of the sensory catalogue—none individually rising to high severity, and together falling just under the regeneration threshold."
+}

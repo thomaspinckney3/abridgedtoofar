@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The short-hand writers, the reporters of the court, and the reporters of the newspapers invariably decamp with the rest of the regulars when Jarndyce and Jarndyce comes on. Their places are a blank.",
+      "source_locator": "paragraph beginning 'Who happen to be in the Lord Chancellor's court'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a critically noticed ironic aside — the press literally vacates when Jarndyce and Jarndyce is called, leaving 'a blank'; the phrase 'Their places are a blank' is rhetorically and interpretively distinctive, underlining institutional meaninglessness. Its absence removes a key satirical beat.",
+      "suggested_fix": "Restore the sentence verbatim: 'The short-hand writers, the reporters of the court, and the reporters of the newspapers invariably decamp with the rest of the regulars when Jarndyce and Jarndyce comes on. Their places are a blank.' Insert it before the description of the little mad old woman."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "leaden-headed old obstruction, appropriate ornament for the threshold of a leaden-headed old corporation, Temple Bar",
+      "source_locator": "paragraph beginning 'The raw afternoon is rawest'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The deliberate repetition of 'leaden-headed' (applied first to the physical gateway, then to the corporation) is a signature rhetorical figure; the draft drops the second clause entirely, losing the satirical doubling that critics highlight as Dickens's institutional critique in miniature.",
+      "suggested_fix": "Restore: 'leaden-headed old obstruction, appropriate ornament for the threshold of a leaden-headed old corporation, Temple Bar.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "fog in the eyes and throats of ancient Greenwich pensioners, wheezing by the firesides of their wards; fog in the stem and bowl of the afternoon pipe of the wrathful skipper, down in his close cabin",
+      "source_locator": "fog paragraph, mid-section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The accumulating fog-catalogue's rhythm depends on each item's specific scenic detail ('wheezing by the firesides of their wards'; 'down in his close cabin'); the draft strips these phrases, reducing the anaphoric list to bare nouns and losing the claustrophobic texture Dickens builds deliberately.",
+      "suggested_fix": "Restore the full phrases: 'Fog in the eyes and throats of ancient Greenwich pensioners, wheezing by the firesides of their wards; fog in the stem and bowl of the afternoon pipe of the wrathful skipper, down in his close cabin.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Shirking and sharking in all their many varieties have been sown broadcast by the ill-fated cause",
+      "source_locator": "paragraph beginning 'How many people out of the suit'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's nominalized, alliterative formulation ('Shirking and sharking in all their many varieties') is rhetorically distinctive; the draft's 'shirkings and sharkings have been sown broadcast' strips the appositive and slightly garbles the voice.",
+      "suggested_fix": "Restore: 'Shirking and sharking in all their many varieties have been sown broadcast by the ill-fated cause.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft is largely faithful but omits the signature 'Their places are a blank' sentence (a critically noted ironic aside marking the press's abandonment of Chancery), drops the rhetorically doubled 'leaden-headed old corporation' phrase at Temple Bar, and strips the fog catalogue of its specific scenic detail — the high-severity absence alone warrants regeneration."
+}

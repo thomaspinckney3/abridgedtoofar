@@ -1,0 +1,123 @@
+{
+  "book_id": "call_of_the_wild",
+  "title": "The Call of the Wild",
+  "author": "Jack London",
+  "structural_classification": "lean",
+  "modernization_level": "L1",
+  "cultural_depth": "unknown",
+  "voice_driven_narrator": null,
+  "indirection_budget_applies": null,
+  "overall_compression_ratio": 2.0,
+  "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
+  "motifs": [],
+  "segments": [
+    {
+      "id": "001",
+      "kind": "chapter",
+      "number": "I",
+      "title": "Into the Primitive",
+      "raw_heading": "Chapter I. Into the Primitive",
+      "source_word_count": 3731,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2100,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "002",
+      "kind": "chapter",
+      "number": "II",
+      "title": "The Law of Club and Fang",
+      "raw_heading": "Chapter II. The Law of Club and Fang",
+      "source_word_count": 3315,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1900,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "003",
+      "kind": "chapter",
+      "number": "III",
+      "title": "The Dominant Primordial Beast",
+      "raw_heading": "Chapter III. The Dominant Primordial Beast",
+      "source_word_count": 5149,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2900,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "004",
+      "kind": "chapter",
+      "number": "IV",
+      "title": "Who Has Won to Mastership",
+      "raw_heading": "Chapter IV. Who Has Won to Mastership",
+      "source_word_count": 3219,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1800,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "005",
+      "kind": "chapter",
+      "number": "V",
+      "title": "The Toil of Trace and Trail",
+      "raw_heading": "Chapter V. The Toil of Trace and Trail",
+      "source_word_count": 5336,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 3000,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "006",
+      "kind": "chapter",
+      "number": "VI",
+      "title": "For the Love of a Man",
+      "raw_heading": "Chapter VI. For the Love of a Man",
+      "source_word_count": 4736,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2700,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    },
+    {
+      "id": "007",
+      "kind": "chapter",
+      "number": "VII",
+      "title": "The Sounding of the Call",
+      "raw_heading": "Chapter VII. The Sounding of the Call",
+      "source_word_count": 6230,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 3500,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": ""
+    }
+  ],
+  "_meta": {
+    "computed": {
+      "source_word_count": 34876,
+      "diegetic_source_word_count": 31716,
+      "target_word_count": 17438,
+      "target_hours": 1.46,
+      "overall_compression_ratio": 2.0
+    },
+    "builder": "lean_plan"
+  }
+}

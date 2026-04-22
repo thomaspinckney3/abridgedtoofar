@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Are the green fields gone? What do they here?... They must get just as nigh the water as they possibly can without falling in. And there they stand—miles of them—leagues.",
+      "source_locator": "paragraphs 3-4, water-gazers sequence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The cascade of rhetorical questions and the 'miles of them—leagues' amplification is part of the voice-establishing opening; the draft collapses two paragraphs into one sentence and loses the incantatory build.",
+      "suggested_fix": "Restore at least 'Are the green fields gone?' and the 'miles of them—leagues' cadence to preserve the rhetorical pressure."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat... or invest his money in a pedestrian trip to Rockaway Beach?",
+      "source_locator": "middle of Saco/Tennessee-poet paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The plan explicitly flags the Tennessee-poet passage as one of the rhetorical-question cascade entries whose cumulative pressure IS the voice; the draft drops it entirely along with 'first voyage as a passenger... mystical vibration.' The cascade is thinned from six questions to three.",
+      "suggested_fix": "Restore at least the Tennessee poet question and the 'first voyage as a passenger... mystical vibration' question to preserve the cascade's accumulation."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "The urbane activity with which a man receives money is really marvellous, considering that we so earnestly believe money to be the root of all earthly ills... Ah! how cheerfully we consign ourselves to perdition!",
+      "source_locator": "paying/being-paid paragraph near end",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'cheerfully we consign ourselves to perdition' climax is a signature Ishmaelian ironic flourish that closes the paying meditation; without it the joke is set up but not paid off.",
+      "suggested_fix": "Restore the 'urbane activity... root of all earthly ills... cheerfully we consign ourselves to perdition!' close to complete the ironic arc."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "head winds are far more prevalent than winds from astern... the Commodore on the quarter-deck gets his atmosphere at second hand from the sailors on the forecastle... the commonalty lead their leaders",
+      "source_locator": "penultimate movement before the playbill",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'commonalty lead their leaders' conceit complements 'Who ain't a slave?' as part of Ishmael's democratic ethic; its loss is a minor thematic thinning.",
+      "suggested_fix": "Consider a brief retention of the head-winds / commonalty-leads-leaders conceit."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Major signatures (opening, Cato/pistol, Narcissus key, Who ain't a slave, playbill, itch for things remote, snow hill) are preserved verbatim; the rhetorical-question cascade and the 'cheerfully we consign ourselves to perdition' flourish are thinned, but not to the point of triggering regeneration."
+}

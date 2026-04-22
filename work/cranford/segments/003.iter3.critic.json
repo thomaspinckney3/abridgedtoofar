@@ -1,0 +1,26 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "I was surprised to hear his opinions quoted as authority…he was even admitted in the tabooed hours before twelve. True, it was to discover the cause of a smoking chimney",
+      "source_locator": "paragraph beginning 'Yet, somehow, Captain Brown made himself respected'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage establishes the twelve-month time-lapse and the specific irony of the social reversal—the Captain's opinions quoted as authority, his admission in the 'tabooed hours before twelve'—which is the interpretive hinge showing how Cranford's resistance melted. Its loss flattens the arc of his social acceptance from a documented reversal to a vague assertion.",
+      "suggested_fix": "Restore the narrator's surprise at finding his opinions quoted as authority, the detail that his former opponents now admitted him 'even in the tabooed hours before twelve,' and the smoking-chimney anecdote as the occasion—these are the specific, voice-charged proofs of his acceptance."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "We had often rejoiced, in former days, that there was no gentleman to be attended to…we had almost persuaded ourselves that to be a man was to be 'vulgar'",
+      "source_locator": "paragraph beginning 'I wonder what the Cranford ladies did with Captain Brown at their parties'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic digression—'distaste of mankind,' 'to be a man was to be vulgar'—is a critical-tradition touchstone for the Amazon/gender satire running through the whole chapter; it directly glosses the chapter's opening claim and is a key instance of the narrator's voice. Its excision removes a layer of self-aware social commentary the chapter depends on.",
+      "suggested_fix": "Restore the narrator's wondering aside about what the ladies did with a man at their parties, including the 'snugness of evenings,' the 'distaste of mankind,' and the near-persuasion that 'to be a man was to be vulgar,' before describing the party itself."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most signatures verbatim, but two medium-severity passages are absent: the twelve-month social-reversal account (including 'tabooed hours before twelve') and the ironic 'to be a man was to be vulgar' digression, both of which carry interpretive and voice weight for the chapter's central Amazon/gender theme."
+}

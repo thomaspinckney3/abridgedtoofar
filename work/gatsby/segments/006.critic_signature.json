@@ -1,0 +1,17 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "entire segment",
+      "source_locator": "all paragraphs",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft is empty. Every tagged signature — 'Platonic conception of himself,' 'shiftless and unsuccessful farm people,' 'Can't repeat the past? ... Why of course you can!', the kiss/'mind would never romp again like the mind of God,' 'universe of ineffable gaudiness,' 'Dan Cody sober knew what lavish doings,' and 'invariably saddening to look through new eyes' — is missing.",
+      "suggested_fix": "Generate the segment, preserving all verbatim and recognizable signatures listed in the pre-pass at or near full strength."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Draft is empty; all signatures for segment VI are absent."
+}

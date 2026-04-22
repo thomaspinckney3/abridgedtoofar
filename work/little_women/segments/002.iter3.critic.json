@@ -1,0 +1,72 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But I am afraid I don't; and Meg shook her head, as she thought regretfully of all the pretty things she wanted.",
+      "source_locator": "Meg's speech about sacrifices, after 'ought to do it gladly'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-aware admission is a small but characteristic moment of ironic honesty that establishes Meg's vanity-vs-virtue tension; excising it flattens the speech into simple virtue-signaling rather than the ambivalent confession Alcott wrote.",
+      "suggested_fix": "Restore 'But I am afraid I don't;' and the clause about Meg's regretful thoughts after 'ought to do it gladly.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I can't help it; I never saw any one faint, and I don't choose to make myself all black and blue, tumbling flat as you do. If I can go down easily, I'll drop; if I can't, I shall fall into a chair and be graceful; I don't care if Hugo does come at me with a pistol",
+      "source_locator": "Rehearsal scene, Amy's reply to Jo's direction",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Amy's most comic and voice-distinctive speech in the chapter, showing her particular brand of self-important logic; it is entirely replaced by a one-clause summary ('Amy, ",
+      "poker,": "ould not contrive a good faint'), erasing both her comic voice and the interpretive detail that she is 'not gifted with dramatic power.'",
+      "suggested_fix": "Restore Amy's speech verbatim or near-verbatim; it is short enough to include without budget strain and is the primary comic set-piece of the rehearsal."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I used to be so frightened when it was my turn to sit in the big chair with the crown on, and see you all come marching round to give the presents, with a kiss.",
+      "source_locator": "Birthday-memory exchange, after Jo proposes putting gifts on the table",
+      "draft_treatment": "absent",
+      "why_it_matters": "Beth's shy confession is a small but well-known character-establishing moment (paired with the chapter's illustration) that shows her gentle timidity; the draft skips the entire exchange and moves directly to the shopping plan.",
+      "suggested_fix": "Restore Beth's birthday-chair speech after Jo's 'Don't you remember how we used to do on our birthdays?' line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "for he told me to take special care of mother while he was gone.",
+      "source_locator": "Jo's 'man of the family' speech, after 'I shall provide the slippers'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The clause 'for he told me to take special care of mother while he was gone' is the emotional and thematic justification for Jo's claim of paternal authority; without it, Jo's assertion sounds like mere bravado rather than a charge from her absent father.",
+      "suggested_fix": "Restore the full sentence: '...and I shall provide the slippers, for he told me to take special care of mother while he was gone.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "for the girls never grew too old for that familiar lullaby.",
+      "source_locator": "Final paragraph, closing sentence of the chapter",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Alcott's closing sentence ('the girls never grew too old for that familiar lullaby') is the chapter's thematic capstone—childhood permanence against the pressures of growing up—a motif running throughout the chapter. The draft substitutes 'as the little pilgrims went to sleep,' which is thematically thinner and loses the emotional resonance of the original closing.",
+      "suggested_fix": "Restore 'for the girls never grew too old for that familiar lullaby' as the chapter's final clause."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "she never seemed to know what to do with her long limbs, which were very much in her way.",
+      "source_locator": "Character sketches, Jo's description",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'colt' simile survives but the explanatory clause that gives it its comic specificity is dropped; this slightly reduces the vividness of the novel's most iconic character description.",
+      "suggested_fix": "Add 'for she never seemed to know what to do with her long limbs, which were very much in her way' after the colt comparison."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It didn't matter so much when you were a little girl; but now you are so tall, and turn up your hair, you should remember that you are a young lady.",
+      "source_locator": "Meg's lecture to Jo, after 'leave off boyish tricks'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause is what provokes Jo's explosive counter-speech ('I'm not!') and makes the dialogue's cause-and-effect clear; its absence makes Jo's outburst feel slightly unmotivated.",
+      "suggested_fix": "Restore Meg's full lecture sentence before Jo's rebuttal."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's major set-pieces and verbatim letter but drops or summarizes four medium-weight passages—Amy's comic rehearsal speech, Beth's birthday-chair confession, Jo's paternal mandate for the slippers, and the chapter's thematic closing line—triggering regeneration."
+}

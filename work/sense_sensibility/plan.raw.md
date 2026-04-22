@@ -1,0 +1,1957 @@
+```json
+{
+  "book_id": "sense_sensibility",
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "source_word_count": 121894,
+  "target_word_count": 36234,
+  "overall_compression_ratio": 3.36,
+
+  "structural_classification": "sequential",
+  "refusal": null,
+
+  "modernization_level": "L1",
+  "modernization_rationale": "The novel (1811) presents minimal lexical difficulty for modern readers; syntax is occasionally periodic but not opaque. Archaic forms ('a-piece', 'twelvemonth', 'post-horses') are self-glossing in context. Register and irony are the primary difficulty, not diction — preserve rather than modernize.",
+
+  "cultural_depth": "high",
+  "voice_driven_narrator": true,
+  "indirection_budget_applies": true,
+
+  "segments": [
+    {
+      "id": "001",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 700,
+      "relative_compression": 0.75,
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "hook",
+          "passage_hint": "The family of Dashwood had long been settled in Sussex. Their estate was large, and their residence was at Norland Park",
+          "why": "The novel's famous opening; establishes the inheritance world and sets the ironic tone governing everything that follows."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "an imperfect articulation, an earnest desire of having his own way, many cunning tricks, and a great deal of noise, as to outweigh all the value of all the attention which, for years, he had received",
+          "why": "Ironic set-piece on great-uncle's favoritism; the rhetorical escalation ('all the value of all') is signature Austen style."
+        },
+        {
+          "origin": "critical",
+          "category": "character",
+          "passage_hint": "He was not an ill-disposed young man, unless to be rather cold hearted and rather selfish is to be ill-disposed: but he was, in general, well respected",
+          "why": "Paradigmatic Austen ironic understatement; defines John Dashwood and her technique of moral evaluation through apparent qualification."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Elinor, this eldest daughter, whose advice was so effectual, possessed a strength of understanding, and coolness of judgment, which qualified her, though only nineteen",
+          "why": "Foundational character definition of Elinor; the critical debates about 'sense' begin here."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Marianne's abilities were, in many respects, quite equal to Elinor's. She was sensible and clever; but eager in everything… she was everything but prudent.",
+          "why": "Paired introduction establishing the novel's central thematic opposition; the final clause is one of Austen's most economical ironies."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Margaret, the other sister, was a good-humored, well-disposed girl; but as she had already imbibed a good deal of Marianne's romance, without having much of her sense",
+          "why": "The narrator's characterization of Margaret is a miniature ironic set-piece that also quietly reinforces the sense/sensibility binary."
+        },
+        {
+          "origin": "cultural",
+          "category": "narrative",
+          "passage_hint": "it was very well known that no affection was ever supposed to exist between the children of any man by different marriages; and why was he to ruin himself, and their poor little Harry",
+          "why": "The gradual reduction of the promise to nothing is one of the most famous comic-ironic sequences in English fiction."
+        }
+      ],
+      "notes": "Preserve the full ironic machinery of the opening inheritance situation: the will, the child's 'merits,' John Dashwood's self-deception. The character sketches of Elinor, Marianne, and Margaret must be kept nearly verbatim — these are the novel's thematic declarations. The word 'prudent' as the sole lack in Marianne's portrait must survive."
+    },
+    {
+      "id": "002",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 750,
+      "relative_compression": 0.67,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "people always live for ever when there is an annuity to be paid them; and she is very stout and healthy, and hardly forty. An annuity is a very serious business; it comes over and over every year",
+          "why": "Mrs. John Dashwood's reasoning about annuities is a sustained comic voice passage; the repetition captures her comic self-interest."
+        },
+        {
+          "origin": "cultural",
+          "category": "narrative",
+          "passage_hint": "it was very well known that no affection was ever supposed to exist between the children of any man by different marriages",
+          "why": "Marks the key rhetorical move in the famous reduction-of-promise sequence."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Whatever I did should be done at my own discretion entirely. I would not bind myself to allow them any thing yearly. It may be very inconvenient some years to spare a hundred, or even fifty pounds",
+          "why": "The step-by-step erosion of generosity from £3000 to nothing is the chapter's comic-moral spine; this passage marks the crucial slide to 'occasional presents.'"
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "To be sure it will. Indeed, to say the truth, I am convinced within myself that your father had no idea of your giving them any money at all.",
+          "why": "Fanny's retrospective reinterpretation of the dying father's wishes is the moral nadir; the brazen sophistry must survive."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Only conceive how comfortable they will be! Five hundred a year! I am sure I cannot imagine how they will spend half of it",
+          "why": "Mock-enthusiastic summation of the family's 'generosity'; the irony is sharpest here and must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "he finally resolved, that it would be absolutely unnecessary, if not highly indecorous, to do more for the widow and children of his father, than such kind of neighbourly acts",
+          "why": "The narrator's deadpan summary of John's resolution; 'highly indecorous' as the final euphemism for selfishness."
+        }
+      ],
+      "notes": "This chapter is the famous annuity-reduction dialogue — it must be reproduced in substantial detail. Keep the full arc: £3000 → £1500 → annuity → £50 occasionally → nothing. The dialogue is inseparable from characterization and social critique; it cannot be summarized. Preserve Fanny's voice throughout."
+    },
+    {
+      "id": "003",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 520,
+      "relative_compression": 0.94,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It was enough for her that he appeared to be amiable, that he loved her daughter, and that Elinor returned the partiality. It was contrary to every doctrine of hers that difference of fortune should keep any couple asunder",
+          "why": "Mrs. Dashwood's romantic doctrine in free indirect discourse; the irony is that this 'doctrine' will cause suffering."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "he was neither fitted by abilities nor disposition to answer the wishes of his mother and sister, who longed to see him distinguished—as—they hardly knew what",
+          "why": "The dash-interrupted characterization of the family's vague ambition for Edward is a small but typical Austen voice moment."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Like him!... I feel no sentiment of approbation inferior to love. / You may esteem him. / I have never yet known what it was to separate esteem and love.",
+          "why": "Mrs. Dashwood's exchange with Elinor over esteem vs. love foreshadows the novel's central argument and characterizes both speakers economically."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "a proposal particularly well timed…the offer of a small house, on very easy terms, belonging to a relation of her own, a gentleman of consequence and property in Devonshire",
+          "why": "The introduction of Sir John Middleton's offer motivates the move to Barton; must be present for narrative continuity."
+        }
+      ],
+      "notes": "Cover: the half-year at Norland, Edward's growing attachment to Elinor, Mrs. Dashwood's romantic optimism, Fanny's veiled threats, and the providential offer of Barton Cottage. Keep the esteem/love exchange. Elinor's measured response to the Devonshire proposal should be noted but can be compressed."
+    },
+    {
+      "id": "004",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 680,
+      "relative_compression": 0.96,
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Esteem him! Like him! Cold-hearted Elinor! Oh! worse than cold-hearted! Ashamed of being otherwise. Use those words again, and I will leave the room this moment.",
+          "why": "Marianne's explosion at Elinor's measured language; central to the novel's interrogation of whether restraint is virtue or repression."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Believe them to be stronger than I have declared; believe them, in short, to be such as his merit, and the suspicion—the hope of his affection for me may warrant, without imprudence or folly. But farther than this you must not believe.",
+          "why": "Elinor's careful calibration of her own feelings is the first full demonstration of self-command under pressure; the tripartite qualification is characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The youthful infatuation of nineteen would naturally blind him to every thing but her beauty and good nature; but the four succeeding years—years, which if rationally spent, give such improvement to the understanding",
+          "why": "Elinor's extended self-protective reasoning about Edward's engagement is psychologically precise; the parenthetical on 'rationally spent years' is quietly devastating."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "whatever might really be its limits, it was enough, when perceived by his sister, to make her uneasy, and at the same time…to make her uncivil",
+          "why": "The double action — Fanny's alarm AND her incivility — is rendered with characteristic Austen compression."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Marianne was astonished to find how much the imagination of her mother and herself had outstripped the truth.",
+          "why": "A turning-point sentence: Marianne's first genuine check on her own romantic projection."
+        }
+      ],
+      "notes": "The dialogue between Elinor and Marianne about Edward is the first full dramatization of the sense/sensibility contrast. Keep the 'esteem/like' explosion verbatim. Preserve Elinor's measured self-analysis about Edward's position and constraints. Fanny's intervention and its consequence (the decision to move) must be clear."
+    },
+    {
+      "id": "005",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 330,
+      "relative_compression": 0.90,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Devonshire! Are you, indeed, going there? So far from hence! And to what part of it?",
+          "why": "Edward's startled reaction to the Devonshire news reveals his feeling without declaration; the free indirect rendering of his alarm is important."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Mrs. John Dashwood saw the packages depart with a sigh: she could not help feeling it hard that as Mrs. Dashwood's income would be so trifling in comparison with their own, she should have any handsome article of furniture.",
+          "why": "Fanny's sigh over the furniture is a small but perfect character detail; the word 'hard' renders her grievance without ironic comment needed."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The discretion of Elinor prevailed. Her wisdom too limited the number of their servants to three",
+          "why": "The narrator's attribution of practical savings to Elinor's 'wisdom' and 'discretion' reinforces the sense motif economically."
+        }
+      ],
+      "notes": "Cover the departure from Norland: Edward's distress, John Dashwood's hollow regret about not helping with removal, Fanny's furniture-envy, Elinor's practical economies. Can be condensed but the emotional valences (Edward's distress, Fanny's pettiness) must register."
+    },
+    {
+      "id": "006",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 440,
+      "relative_compression": 0.90,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "Dear, dear Norland! said Marianne, as she wandered alone before the house, on the last evening of their being there; when shall I cease to regret you!—when learn to feel a home elsewhere!",
+          "why": "Marianne's apostrophe to Norland is a set-piece of sensibility rhetoric; the exclamatory address-to-landscape style is deliberately susceptible to ironic reading."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "As a house, Barton Cottage, though small, was comfortable and compact; but as a cottage it was defective, for the building was regular, the roof was tiled, the window shutters were not painted green, nor were the walls covered with honeysuckles.",
+          "why": "The ironic description of the cottage's failure to be 'picturesque' is a small set-piece of cultural commentary on the Romantic-aesthetic fashion."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "As for the house itself, to be sure, said she, it is too small for our family, but we will make ourselves tolerably comfortable for the present… if I have plenty of money, as I dare say I shall, we may think about building.",
+          "why": "Mrs. Dashwood's immediate improvement fantasies are rendered with affectionate irony; the parenthetical 'as I dare say I shall' is characteristic."
+        },
+        {
+          "origin": "interpretive",
+          "category": "narrative",
+          "passage_hint": "In such employments as these they were interrupted soon after breakfast the next day by the entrance of their landlord",
+          "why": "Sir John Middleton's introduction is a narrative pivot; his characterization in this chapter establishes the Barton Park social world."
+        }
+      ],
+      "notes": "Cover the journey, first view of Barton Valley, the cottage's description, Mrs. Dashwood's improvement fantasies, and Sir John's first visit. Marianne's Norland apostrophe must be preserved (at least its opening sentences). The physical comedy of the non-picturesque cottage is worth keeping."
+    },
+    {
+      "id": "007",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 500,
+      "relative_compression": 1.08,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Sir John was a sportsman, Lady Middleton a mother. He hunted and shot, and she humoured her children; and these were their only resources.",
+          "why": "The parallel structure and the word 'resources' do ironic double work; signature Austen compression of social critique."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Lady Middleton seemed to be roused to enjoyment only by the entrance of her four noisy children after dinner, who pulled her about, tore her clothes, and put an end to every kind of discourse except what related to themselves.",
+          "why": "Devastating economy; 'put an end to every kind of discourse' defines Lady Middleton in one clause."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "On every formal visit a child ought to be of the party, by way of provision for discourse.",
+          "why": "A Austen aphorism embedded in the narration; the satirical social observation is generalizable and characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She was perfectly disposed to make every allowance for the colonel's advanced state of life which humanity required.",
+          "why": "Free indirect discourse rendering Marianne's condescension as apparent generosity; a miniature of Austen's ironic technique."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Colonel Brandon, the friend of Sir John, seemed no more adapted by resemblance of manner to be his friend, than Lady Middleton was to be his wife",
+          "why": "The introduction of Brandon is managed through ironic negation; his separateness from the social noise is established immediately."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Sir John was loud in his admiration at the end of every song, and as loud in his conversation with the others while every song lasted.",
+          "why": "The simultaneity of loud admiration and loud conversation is a single-sentence comic portrait of Sir John's relation to culture."
+        }
+      ],
+      "notes": "The first dinner at Barton Park introduces the major secondary cast. Keep the ironic portraits of Sir John, Lady Middleton, and Colonel Brandon. The parallel 'resources' sentence is essential. Marianne's condescension toward Brandon (flannel waistcoat, rheumatism, 'advanced state of life') must register. The children's disruption of Lady Middleton can be compressed but the 'put an end to every kind of discourse' formulation should survive."
+    },
+    {
+      "id": "008",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 500,
+      "relative_compression": 1.10,
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "character",
+          "passage_hint": "A woman of seven and twenty, said Marianne, after pausing a moment, can never hope to feel or inspire affection again",
+          "why": "Widely quoted as illustrating Marianne's romantic absolutism; ironic given the novel's resolution."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It is so ridiculous! When is a man to be safe from such wit, if age and infirmity will not protect him?",
+          "why": "Marianne's rhetorical question about Brandon; the word 'infirmity' for a man of thirty-five is a fine example of her comic absolutism."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Perhaps, said Elinor, thirty-five and seventeen had better not have any thing to do with matrimony together. But if there should by any chance happen to be a woman who is single at seven and twenty",
+          "why": "Elinor's counter-argument is the sharpest ironic rebuttal in the exchange; the specificity of 'seven and twenty' sets up the joke."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "In his marrying such a woman therefore there would be nothing unsuitable. It would be a compact of convenience, and the world would be satisfied. In my eyes it would be no marriage at all",
+          "why": "Marianne's theory of marriage-as-compact is stated at its most extreme here; it prepares the irony of her own eventual marriage."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "But thirty-five has nothing to do with matrimony. / Had he been only in a violent fever, you would not have despised him half so much.",
+          "why": "Elinor's fever/flannel-waistcoat exchange is a comic corrective to Marianne's medical dramatism; the juxtaposition is sharp."
+        }
+      ],
+      "notes": "The central exchange is the argument about Brandon's age and marriageability; preserve the key formulations. The Mrs. Jennings matchmaking subplot and Edward's non-arrival anxiety at chapter end establish parallel romantic tensions. The '27-year-old woman' speech must be nearly verbatim given its critical importance."
+    },
+    {
+      "id": "009",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 680,
+      "relative_compression": 1.01,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His name was good, his residence was in their favourite village, and she soon found out that of all manly dresses a shooting-jacket was the most becoming.",
+          "why": "Ironic enumeration of Marianne's reasons for admiring Willoughby; the bathetic climax ('shooting-jacket') is signature Austen comedy."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Every circumstance belonging to him was interesting. His name was good, his residence was in their favourite village",
+          "why": "The accumulation of reasons for Marianne's admiration reaches its peak here; the mock-enumerative logic characterizes her infatuation."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "A gentleman carrying a gun, with two pointers playing round him, was passing up the hill and within a few yards of Marianne, when her accident happened.",
+          "why": "The physical rescue that initiates the Willoughby plot; the scene must be present in compressed form."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His manly beauty and more than common gracefulness were instantly the theme of general admiration, and the laugh which his gallantry raised against Marianne received particular spirit from his exterior attractions.",
+          "why": "The narrator's summary of the household's reaction balances admiration with gentle ironic distance on Marianne's blush."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "in his carrying her into the house with so little previous formality, there was a rapidity of thought which particularly recommended the action to her.",
+          "why": "The ironic observation that Willoughby's presumptuousness is experienced by Marianne as 'rapidity of thought' is a delicate characterization."
+        }
+      ],
+      "notes": "Cover the ankle-sprain meeting, Willoughby's rescue, and the household's collective admiration. Keep the shooting-jacket sentence. Marianne's enumeration of his virtues should be preserved. Sir John's information about Willoughby (Allenham, the inheritance, Somersetshire estate) is narrative necessity. The walk on the downs and Margaret's role in precipitating the accident can be compressed."
+    },
+    {
+      "id": "010",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 780,
+      "relative_compression": 1.05,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Their taste was strikingly alike. The same books, the same passages were idolized by each—or if any difference appeared, any objection arose, it lasted no longer than till the force of her arguments and the brightness of her eyes could be displayed.",
+          "why": "The qualification clause ('force of her arguments and brightness of her eyes') perfectly deflates romantic intellectual compatibility."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Well, Marianne, said Elinor, as soon as he had left them, for one morning I think you have done pretty well. You have already ascertained Mr. Willoughby's opinion in almost every matter of importance.",
+          "why": "Elinor's ironic inventory of Marianne's first-visit intelligence-gathering is one of the chapter's best comic passages."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I have been too much at my ease, too happy, too frank. I have erred against every common-place notion of decorum; I have been open and sincere where I ought to have been reserved, spiritless, dull, and deceitful",
+          "why": "Marianne's indignant self-defense parodies the social code she's rejecting; the climactic list ('reserved, spiritless, dull, and deceitful') is Austen at her sharpest."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "He was exactly formed to engage Marianne's heart, for with all this, he joined not only a captivating person, but a natural ardour of mind which was now roused and increased by the example of her own",
+          "why": "The narrator's analysis of the Willoughby-Marianne fit is the most direct statement of why the attachment is dangerous."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Elinor saw nothing to censure in him but a propensity, in which he strongly resembled and peculiarly delighted her sister, of saying too much what he thought on every occasion, without attention to persons or circumstances",
+          "why": "Elinor's one reservation about Willoughby is quietly ominous and characterizes both him and Marianne; this foreshadowing must survive."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His society became gradually her most exquisite enjoyment. They read, they talked, they sang together; his musical talents were considerable; and he read with all the sensibility and spirit which Edward had unfortunately wanted.",
+          "why": "The comparison with Edward (Edward 'unfortunately wanted' the quality Willoughby excels in) is quietly devastating; it links the two plots."
+        }
+      ],
+      "notes": "Willoughby's first formal call and the beginning of the daily visits. Preserve the intellectual-compatibility irony. Elinor's mock-inventory of Marianne's morning's work is essential. Elinor's single reservation about Willoughby (his propensity for incaution) is the chapter's moral pivot. The Edward/Willoughby comparison via reading-aloud is worth keeping."
+    },
+    {
+      "id": "011",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 520,
+      "relative_compression": 1.00,
+      "signatures": [
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "In Colonel Brandon alone, of all her new acquaintance, did Elinor find a person who could in any degree claim the respect of abilities, excite the interest of friendship, or give pleasure as a companion.",
+          "why": "Establishes the Elinor-Brandon parallel and signals the eventual pairing logic; important for double-marriage-plot readings."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Lady Middleton was more agreeable than her mother only in being more silent. Elinor needed little observation to perceive that her reserve was a mere calmness of manner with which sense had nothing to do.",
+          "why": "The discrimination between reserve-with-sense and reserve-without-sense is a quiet ironic stroke characterizing both Lady Middleton and, by contrast, Elinor."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She had already repeated her own history to Elinor three or four times; and had Elinor's memory been equal to her means of improvement, she might have known very early in their acquaintance all the particulars of Mr. Jennings's last illness",
+          "why": "The ironic characterization of Mrs. Jennings as an unwanted educator ('means of improvement') is a small but typical Austen voice moment."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Elinor was obliged, though unwillingly, to believe that the sentiments which Mrs. Jennings had assigned him for her own satisfaction, were now actually excited by her sister",
+          "why": "The moment Elinor recognizes Brandon's genuine feeling for Marianne; her reluctance ('though unwillingly') is significant for her sympathetic characterization."
+        }
+      ],
+      "notes": "The social life at Barton Park: balls, water parties, Willoughby's increasing intimacy, and Elinor's growing loneliness among insufficient companions. Keep the Brandon-as-only-intelligent-companion observation. Marianne and Willoughby's conduct (cheating at cards, dancing only together) can be summarized. The Brandon/Marianne dynamic's emergence should register."
+    },
+    {
+      "id": "012",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 570,
+      "relative_compression": 0.94,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It is not time or opportunity that is to determine intimacy;—it is disposition alone. Seven years would be insufficient to make some people acquainted with each other, and seven days are more than enough for others.",
+          "why": "Marianne's theory of intimacy is stated at its most absolute; the aphorism defines her romantic epistemology."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "From that moment she doubted not of their being engaged to each other; and the belief of it created no other surprise than that she, or any of their friends, should be left by tempers so frank, to discover it by accident.",
+          "why": "Elinor's inference from the 'Queen Mab' speech is a characteristic moment of her reasoning; the surprise at the secrecy establishes her later concern."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Oh, Elinor! I have such a secret to tell you about Marianne. I am sure she will be married to Mr. Willoughby very soon… he has got a lock of her hair.",
+          "why": "Margaret's disclosure scenes are ironic counterpoints to the serious engagement question; the lock-of-hair detail is both significant and comic."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Margaret, with more elegance than precision, styled Willoughby [Marianne's preserver]",
+          "why": "The narrator's ironic correction of Margaret's romantic precision quietly signals the gap between Marianne's circle's expectations and reality."
+        }
+      ],
+      "notes": "Cover: the horse-gift episode (Elinor's prudent intervention), the 'Queen Mab' overheard exchange, Margaret's disclosure of the hair-cutting. The horse episode is important as the first test of the engagement's reality. Keep Marianne's 'seven days/seven years' aphorism. Margaret's revelation and Elinor's consequent certainty about the engagement must be clear."
+    },
+    {
+      "id": "013",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 720,
+      "relative_compression": 0.94,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "There are some people who cannot bear a party of pleasure. Brandon is one of them. He was afraid of catching cold I dare say, and invented this trick for getting out of it. I would lay fifty guineas the letter was of his own writing.",
+          "why": "Willoughby's cruel flippancy about Brandon's urgent departure; dramatic irony as the reader later learns Brandon was summoned to Eliza's distress."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She is his natural daughter. Indeed! Oh, yes; and as like him as she can stare.",
+          "why": "Mrs. Jennings's revelation about Miss Williams plants the first seed of the Eliza backstory; the casualness of 'as like him as she can stare' is characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I am sorry to say, ma'am, that I am unable to keep my engagement with you. Mrs. Smith has this morning exercised the privilege of riches upon a poor dependent cousin, by sending me on business to London.",
+          "why": "Brandon's departure announcement and then Willoughby's; the parallel departures in one day create a structural irony the reader grasps later."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Mrs. Jennings laughed heartily; and Elinor found that in her resolution to know where they had been, she had actually made her own woman enquire of Mr. Willoughby's groom; and that she had by that method been informed that they had gone to Allenham",
+          "why": "The Allenham visit revelation is the chapter's moral climax; Marianne's defense of it establishes her most extreme position."
+        }
+      ],
+      "notes": "Brandon's mysterious departure, the canceled Whitwell excursion, Willoughby and Marianne's unauthorized Allenham visit. Preserve Willoughby's dismissal of Brandon ('afraid of catching cold'). The Allenham confrontation between Elinor and Marianne ('if there had been any real impropriety in what I did, I should have been sensible of it') is important for the sensibility theme."
+    },
+    {
+      "id": "014",
+      "diegetic_status": "diegetic",
+      "role": "digressive",
+      "target_word_count": 400,
+      "relative_compression": 1.46,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "So wondered, so talked Mrs. Jennings. Her opinion varying with every fresh conjecture, and all seeming equally probable as they arose.",
+          "why": "The narrator's compression of Mrs. Jennings's speculation is a useful ironic shorthand; the technique of listing her varying theories is typical."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Her wonder was otherwise disposed of. It was engrossed by the extraordinary silence of her sister and Willoughby on the subject",
+          "why": "Elinor's mystery here — focused on the secrecy about the engagement rather than Brandon's departure — establishes her priorities and her reasoning mode."
+        }
+      ],
+      "notes": "Mrs. Jennings's speculation about Brandon's departure, and Elinor's counter-reflection on the more puzzling silence of Marianne and Willoughby about their engagement. Digressive in nature; compress heavily. Keep the narrative fact: Willoughby attends the cottage like a family member. The narrator's summary of Elinor's doubts about the engagement is the chapter's real content."
+    },
+    {
+      "id": "015",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 850,
+      "relative_compression": 0.93,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "What! he exclaimed—Improve this dear cottage! No. That I will never consent to. Not a stone must be added to its walls, not an inch to its size, if my feelings are regarded.",
+          "why": "Willoughby's passionate speech against cottage improvement reads as ardent attachment; in retrospect it is bravado shortly before his departure."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Then, and then only, under such a roof, I might perhaps be as happy at Combe as I have been at Barton.",
+          "why": "The explicit comparison (Combe Magna vs. Barton Cottage) is significant for understanding Willoughby's double life."
+        },
+        {
+          "origin": "interpretive",
+          "category": "narrative",
+          "passage_hint": "I am now suffering under a very heavy disappointment! / Disappointment? / Yes, for I am unable to keep my engagement with you. Mrs. Smith has this morning exercised the privilege of riches upon a poor dependent cousin",
+          "why": "Willoughby's announcement of departure is dramatically loaded; 'privilege of riches upon a poor dependent cousin' is an ironic formulation that resonates differently once the truth is known."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His colour increased; and with his eyes fixed on the ground he only replied, 'You are too good.'",
+          "why": "Willoughby's inability to accept Mrs. Dashwood's invitation is rendered through body language; the brevity of 'You are too good' is more revealing than any speech."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "One moment she feared that no serious design had ever been formed on his side; and the next that some unfortunate quarrel had taken place between him and her sister",
+          "why": "Elinor's oscillation between the two worst interpretations of Willoughby's departure is psychologically acute and dramatically important."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It was not inclination that he wanted, Elinor; I could plainly see that. He had not the power of accepting it.",
+          "why": "Mrs. Dashwood's confident reading is ironic; she is partly right (he lacks power) but wrong about why."
+        }
+      ],
+      "notes": "The pivotal chapter: Willoughby's passionate cottage speech, Marianne's crisis, and Willoughby's sudden farewell. Keep the cottage speech. Preserve his evasiveness on Mrs. Dashwood's invitation and his 'You are too good.' The mother-daughter debate about interpreting his departure should be substantially kept — it defines their respective reasoning styles. Elinor's unease should register clearly."
+    },
+    {
+      "id": "016",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 580,
+      "relative_compression": 0.81,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "She spent whole hours at the pianoforte alternately singing and crying; her voice often totally suspended by her tears. In books too, as well as in music, she courted the misery which a contrast between the past and present was certain of giving.",
+          "why": "Marianne's stylized mourning-rituals are rendered with an ironic edge; 'courted the misery' is the key phrase."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "such violence of affliction indeed could not be supported for ever; it sunk within a few days into a calmer melancholy",
+          "why": "The narrator's tone of clinical observation on the subsiding of grief is quietly ironic; the word 'sunk' versus the elevated vocabulary Marianne uses for herself."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Remember, Elinor, how very often Sir John fetches our letters himself from the post, and carries them to it. We have already agreed that secrecy may be necessary",
+          "why": "Mrs. Dashwood's explanation for the absence of letters is a small but characteristic piece of romantic rationalization."
+        }
+      ],
+      "notes": "Marianne's sustained grief: the pianoforte sessions, the solitary walks, the studied melancholy. Keep 'courted the misery.' The debate about whether to ask Marianne directly about her engagement is important for characterizing Mrs. Dashwood's 'romantic delicacy' vs. Elinor's common sense. Can be moderately compressed."
+    },
+    {
+      "id": "017",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 580,
+      "relative_compression": 0.99,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "What a pity it is, Elinor, that Edward should have no taste for drawing. / No taste for drawing! replied Elinor, why should you think so?",
+          "why": "The exchange about Edward and drawing opens Edward's visit; the subtext about Marianne's low opinion of him is handled through indirection."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Strange that it would! cried Marianne. What have wealth or grandeur to do with happiness? / Grandeur has but little, said Elinor, but wealth has much to do with it.",
+          "why": "The wealth/happiness exchange is a crisp statement of the Marianne/Elinor positions; Elinor's qualification is sharp and practical."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "About eighteen hundred or two thousand a year; not more than that. / Elinor laughed. Two thousand a year! one is my wealth! I guessed how it would end.",
+          "why": "The 'competence' dialogue is a famous ironic exchange; Elinor's laugh and self-identification ('one is my wealth') captures the economic reality against Marianne's fantasy."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "He is only grown a little more grave than he was. / Nay, Edward, you need not reproach me. You are not very gay yourself.",
+          "why": "Marianne's pointed observation about Edward's gravity opens the question of his unhappiness; the parallelism is ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "No, Marianne, never. My doctrine has never aimed at the subjection of the understanding. All I have ever attempted to influence has been the behaviour.",
+          "why": "Elinor's distinction between behavior and judgment is the clearest theoretical statement of her position in the novel."
+        }
+      ],
+      "notes": "Edward's visit: the famous 'competence' exchange, the picturesque debate, the wealth/happiness argument. Keep the monetary dialogue (Marianne's £1800, Elinor's £1000) and Elinor's distinction between behavior and understanding. Edward's low spirits and the ring with hair (glimpsed by Marianne) are narrative necessities."
+    },
+    {
+      "id": "018",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 500,
+      "relative_compression": 0.91,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I never saw you wear a ring before, Edward… Is that Fanny's hair? I remember her promising to give you some. But I should have thought her hair had been darker.",
+          "why": "Marianne's innocent observation about the ring triggers the chapter's emotional crisis; her obtuseness is entirely in character."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Yes; it is my sister's hair. The setting always casts a different shade on it, you know.",
+          "why": "Edward's lie about the ring is told with minimal ceremony; the narrative understatement ('You know') makes it more cutting."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She was not in a humour, however, to regard it as an affront, and affecting to take no notice of what passed, by instantly talking of something else, she internally resolved henceforward to catch every opportunity of eyeing the hair",
+          "why": "Elinor's internal resolution ('catch every opportunity of eyeing the hair') is a subtle rendering of her controlled jealousy."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His name is Ferrars, said he, in a very audible whisper; but pray do not tell it, for it's a great secret. / Ferrars! repeated Miss Steele",
+          "why": "Sir John's whispered secret-telling is a perfect ironic set-piece; the secret is 'great' precisely because everyone hears it."
+        }
+      ],
+      "notes": "The hair-ring discovery and its silent aftermath; Sir John and Mrs. Jennings's arrival with the Ferrars name joke. Preserve the ring exchange and Elinor's controlled internal response. The picturesque debate (Edward's mock-anti-picturesque speech) can be condensed but a note of its tone should remain. The Ferrars name revelation should be kept for its implications."
+    },
+    {
+      "id": "019",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 780,
+      "relative_compression": 0.73,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I think, Edward, said Mrs. Dashwood, as they were at breakfast the last morning, you would be a happier man if you had any profession to engage your time",
+          "why": "Mrs. Dashwood's direct challenge to Edward opens his self-examination speech; her diagnosis is correct, her prescribed cure inadequate."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I always preferred the church, as I still do. But that was not smart enough for my family. They recommended the army. That was a great deal too smart for me.",
+          "why": "Edward's survey of his professional non-choices is gently comic; the parallel negatives ('not smart enough / too smart') are characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "idleness was pronounced on the whole to be most advantageous and honourable, and a young man of eighteen is not in general so earnestly bent on being busy as to resist the solicitations of his friends to do nothing.",
+          "why": "The narrator's sardonic summary of how Edward came to be idle is one of the chapter's best ironic set-pieces."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The business of self-command she settled very easily;—with strong affections it was impossible, with calm ones it could have no merit.",
+          "why": "Marianne's dismissal of Elinor's self-command; the irony is perfect — the statement predicts Marianne's own transformation."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Without shutting herself up from her family, or leaving the house in determined solitude to avoid them, or lying awake the whole night to indulge meditation, Elinor found every day afforded her leisure enough to think of Edward",
+          "why": "The narrator's description of Elinor's mode of suffering (by negation of Marianne's style) is a key passage contrasting the two sisters."
+        }
+      ],
+      "notes": "Edward's last morning, his profession speech, Mrs. Dashwood's pep-talk, the painful parting. Keep Edward's professional-history speech (church/army/law/navy). Keep the 'self-command settled very easily' passage. The contrast between Elinor's and Marianne's modes of bearing loss (Elinor sits down to draw; Marianne takes to her room) must be preserved. The new arrivals (Mrs. Palmer, etc.) at chapter end can be noted."
+    },
+    {
+      "id": "020",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 650,
+      "relative_compression": 0.74,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It is not every one, said Elinor, who has your passion for dead leaves. / No; my feelings are not often shared, not often understood. But sometimes they are.",
+          "why": "This small exchange crystallizes Marianne's self-pity and Elinor's gentle irony; the sigh-into-reverie that follows 'sometimes they are' points directly to Willoughby."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Mr. Palmer made her no answer, and did not even raise his eyes from the newspaper.",
+          "why": "Palmer's newspaper-reading is a running satirical device; each instance of it is a comic beat."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor was not inclined, after a little observation, to give him credit for being so genuinely and unaffectedly ill-natured or ill-bred as he wished to appear.",
+          "why": "Elinor's assessment of Palmer as performing rudeness rather than feeling it is a characteristic penetrating judgment."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "As vile a spot as I ever saw in my life, said Mr. Palmer. / Is it very ugly? continued Mrs. Palmer—then it must be some other place that is so pretty I suppose.",
+          "why": "The Palmer marriage comedy reaches its perfect pitch here; her cheerful non-comprehension is the chapter's best comic exchange."
+        }
+      ],
+      "notes": "The Palmers' visit: Palmer's newspaper rudeness, Mrs. Palmer's cheerful vacuity, the Edward-Norland dead-leaves exchange, Sir John's attempts to pair Marianne with Willoughby in conversation. Compress the bulk of the social scene; preserve the dead-leaves exchange and the Palmer marriage comedy. The invitation to Cleveland can be noted briefly."
+    },
+    {
+      "id": "021",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 800,
+      "relative_compression": 0.75,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Sir John wanted the whole family to walk to the Park directly and look at his guests. Benevolent, philanthropic man! It was painful to him even to keep a third cousin to himself.",
+          "why": "The mock-heroic 'Benevolent, philanthropic man!' is signature Austenian ironic apostrophe."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Lucy is monstrous pretty, and so good humoured and agreeable! The children are all hanging about her already, as if she was an old acquaintance.",
+          "why": "Sir John's characterization of Lucy via children-hanging is ironic foreshadowing of Lucy's strategic use of child-flattery."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Lucy was naturally clever; her remarks were often just and amusing; and as a companion for half an hour Elinor frequently found her agreeable; but her powers had received no aid from education",
+          "why": "Elinor's full assessment of Lucy is the novel's most extended study of the difference between natural cleverness and educated refinement."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She saw their sashes untied, their hair pulled about their ears, their work-bags searched, and their knives and scissors stolen away, and felt no doubt of its being a reciprocal enjoyment.",
+          "why": "Lady Middleton's maternal complacency rendered in free indirect discourse is a miniature of Austen's satirical method."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "while she was too honorable to listen… she could not keep herself from seeing that Elinor changed colour, attended with agitation",
+          "why": "This passage refers to chapter 39's window scene, but here in 21 the Miss Steeles' first flattery campaigns are established; the strategic use of children as social currency must register."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "A short pause succeeded this speech, which was first broken by Miss Steele, who seemed very much disposed for conversation, and who now said rather abruptly, 'And how do you like Devonshire, Miss Dashwood?'",
+          "why": "Miss Steele's abrupt familiarity establishes her social register; the intrusive question is the first signal of her vulgarity."
+        }
+      ],
+      "notes": "The Miss Steeles' arrival and first encounter. Keep the 'Benevolent, philanthropic man!' passage. Keep the full Elinor-Lucy character assessment. The children/sashes scene can be compressed but the strategic dynamic (Lucy currying Lady Middleton's favour through child-flattery) must be clear. Miss Steele's 'beaux' conversation is important for registering the social gap."
+    },
+    {
+      "id": "022",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 900,
+      "relative_compression": 0.88,
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "structural",
+          "passage_hint": "We have been engaged these four years. / Four years! / Yes.",
+          "why": "Lucy Steele's revelation of her engagement to Edward; the staccato exchange is among the most dramatically compressed moments in the novel."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Good heavens! cried Elinor, what do you mean? Are you acquainted with Mr. Robert Ferrars? Can you be?",
+          "why": "Elinor's wrong inference (Robert) makes the correct answer ('to his eldest brother') more devastating; the sequence must be preserved."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "She turned towards Lucy in silent amazement, unable to divine the reason or object of such a declaration; and though her complexion varied, she stood firm in incredulity, and felt in no danger of an hysterical fit, or a swoon.",
+          "why": "The narrator's description of Elinor's controlled physical response to the revelation is key to the characterization of her self-command."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I dare say he never dropped the smallest hint of it to you or any of your family; because it was always meant to be a great secret, and I am sure has been faithfully kept so by me to this hour.",
+          "why": "Lucy's protestation of secrecy while actively disclosing the secret is a perfect ironic moment; her obliviousness to the contradiction is essential."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I certainly did not seek your confidence, said Elinor; but you do me no more than justice in imagining that I may be depended on.",
+          "why": "Elinor's cool response — accepting the burden without warmth — is characteristic; 'I certainly did not seek your confidence' is a quietly devastating rebuke."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "What other reason for the disclosure of the affair could there be, but that Elinor might be informed by it of Lucy's superior claims on Edward, and be taught to avoid him in future?",
+          "why": "Elinor's analysis of Lucy's motive is one of the novel's most acute psychological observations; her conclusions are correct."
+        }
+      ],
+      "notes": "Lucy's revelation is the chapter's entire substance and one of the novel's most important scenes. The full disclosure sequence — Lucy's hints, Elinor's wrong guess (Robert), the four-years revelation, the miniature — must be preserved substantially. Elinor's self-command during the scene and her later analysis of Lucy's motives are essential. End with Elinor's quiet devastation."
+    },
+    {
+      "id": "023",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 750,
+      "relative_compression": 0.87,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The youthful infatuation of nineteen would naturally blind him to every thing but her beauty and good nature; but the four succeeding years—years, which if rationally spent, give such improvement to the understanding, must have opened his eyes to her defects of education",
+          "why": "Elinor's sustained self-protective reasoning about Edward is a psychologically precise passage; the parenthetical on 'rationally spent years' is quietly devastating."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Her resentment of such behaviour, her indignation at having been its dupe, for a short time made her feel only for herself; but other ideas, other considerations, soon arose.",
+          "why": "The transition from self-pity to concern for Edward is where Elinor's character emerges most clearly; this movement must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His imprudence had made her miserable for a while; but it seemed to have deprived himself of all chance of ever being otherwise. She might in time regain tranquillity; but he, what had he to look forward to?",
+          "why": "Elinor's compassionate inversion — her suffering is temporary, his permanent — is both generous and psychologically astute."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "no one would have supposed from the appearance of the sisters, that Elinor was mourning in secret over obstacles which must divide her for ever from the object of her love, and that Marianne was internally dwelling on the perfections of a man, of whose whole heart she felt thoroughly possessed",
+          "why": "The narrator's ironic juxtaposition of the two sisters' hidden states is the chapter's most characteristic voice moment."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "She was stronger alone, and her own good sense so well supported her, that her firmness was as unshaken, her appearance of cheerfulness as invariable, as with regrets so poignant and so fresh, it was possible for them to be.",
+          "why": "The characterization of Elinor as paradoxically stronger in isolation than in sympathy is central to understanding her stoicism."
+        }
+      ],
+      "notes": "Elinor's private reckoning with the revelation: the disbelief, the growing acceptance, the compassion for Edward over self-pity, the decision to conceal. Keep the analysis of Edward's entrapment. Preserve the ironic double-portrait of the two sisters at dinner. Elinor's renewed wish to speak with Lucy again (and her analysis of why Lucy told her) should be summarized if not quoted."
+    },
+    {
+      "id": "024",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 680,
+      "relative_compression": 0.89,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "your case is a very unfortunate one; you seem to me to be surrounded with difficulties, and you will have need of all your mutual affection to support you under them. Mr. Ferrars, I believe, is entirely dependent on his mother.",
+          "why": "Elinor's controlled sympathy — generous but undeceived — is a small masterpiece of self-concealment."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "All this, thought Elinor, is very pretty; but it can impose upon neither of us.",
+          "why": "The free-indirect thought is one of the novel's most compressed ironic observations; Elinor sees through Lucy perfectly."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I believe it would be the wisest way to put an end to the business at once by dissolving the engagement. We seem so beset with difficulties on every side, that though it would make us miserable for a time, we should be happier perhaps in the end. But you will not give me your advice, Miss Dashwood?",
+          "why": "Lucy's feigned wavering is designed to extract Elinor's endorsement; Elinor's refusal to play the game is sharp."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "'Tis because you are an indifferent person, said Lucy, with some pique, and laying a particular stress on those words, that your judgment might justly have such weight with me.",
+          "why": "Lucy's backhanded acknowledgment that Elinor's 'indifference' makes her opinion valuable is a perfectly passive-aggressive stroke."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor sat down to the card table with the melancholy persuasion that Edward was not only without affection for the person who was to be his wife; but that he had not even the chance of being tolerably happy in marriage",
+          "why": "The chapter's closing reflection encapsulates Elinor's full understanding of Edward's situation; its melancholy is the dominant note."
+        }
+      ],
+      "notes": "The card-table filigree-basket scene: Elinor maneuvers to sit with Lucy, they conduct their second conversation about the engagement. Keep 'All this is very pretty; but it can impose upon neither of us.' Preserve Lucy's feigned hesitation about breaking off, Elinor's refusal to advise, and Lucy's 'indifferent person' retort. The chapter's comic staging (Marianne at the piano as cover) should be noted."
+    },
+    {
+      "id": "025",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 590,
+      "relative_compression": 0.84,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I thank you, ma'am, sincerely thank you, said Marianne, with warmth: your invitation has insured my gratitude for ever, and it would give me such happiness, yes, almost the greatest happiness I am capable of, to be able to accept it.",
+          "why": "Marianne's hyperbolic gratitude for the London invitation exposes the degree to which Willoughby has become her only object."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "That Marianne, fastidious as she was, thoroughly acquainted with Mrs. Jennings' manners, and invariably disgusted by them, should overlook every inconvenience of that kind… was such a proof, so strong, so full, of the importance of that object to her",
+          "why": "The narrator's analysis of Marianne's willingness to endure Mrs. Jennings for Willoughby's sake is a quietly devastating exposure of her single-mindedness."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor…resolved within herself, that if her sister persisted in going, she would go likewise, as she did not think it proper that Marianne should be left to the sole guidance of her own judgment",
+          "why": "Elinor's decision to accompany Marianne as guardian is characteristic; her protectiveness and prudence are both rendered here."
+        }
+      ],
+      "notes": "The London visit is proposed; Mrs. Dashwood's eagerness, Marianne's barely-concealed desperation to reach Willoughby, Elinor's reluctant agreement. Keep the analysis of Marianne's willingness to tolerate Mrs. Jennings. The 'improvement' Mrs. Dashwood sees for Margaret can be compressed. The Lucy Steele subplot (her delight at the news) should be noted."
+    },
+    {
+      "id": "026",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 700,
+      "relative_compression": 0.76,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor could not find herself in the carriage with Mrs. Jennings, and beginning a journey to London under her protection, and as her guest, without wondering at her own situation, so short had their acquaintance with that lady been",
+          "why": "The narrator's free-indirect rendering of Elinor's self-wonder opens the chapter wryly."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She sat in silence almost all the way, wrapt in her own meditations, and scarcely ever voluntarily speaking, except when any object of picturesque beauty within their view drew from her an exclamation of delight exclusively addressed to her sister.",
+          "why": "Marianne's selective speechlessness (silent except for picturesque exclamations to Elinor) is a perfect comic portrait of her social priorities."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I am writing home, Marianne, said Elinor; had not you better defer your letter for a day or two? / I am not going to write to my mother, replied Marianne, hastily, and as if wishing to avoid any farther inquiry.",
+          "why": "The letter-writing exchange — Marianne writing to Willoughby — is a small ironic scene; Elinor's inference and its consequence are important."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "and seems almost ready to throw herself into his arms, when Colonel Brandon appeared.",
+          "why": "The shock-substitution (Brandon for Willoughby) is the chapter's dramatic climax; the sentence-structure enacts the disappointment."
+        }
+      ],
+      "notes": "The journey to London, arrival, Marianne's letter to Willoughby, and the evening's disappointment (Colonel Brandon instead of Willoughby). Keep the picturesque-exclamations portrait of Marianne. The letter-writing inference is needed. The Brandon entrance as substitute for expected Willoughby must be kept for its emotional impact."
+    },
+    {
+      "id": "027",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 680,
+      "relative_compression": 0.75,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "And now, silently conjectured Elinor, she will write to Combe by this day's post.",
+          "why": "The brief free-indirect thought captures Elinor's resigned surveillance of Marianne; the tone is gentle and precise."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "About a week after their arrival, it became certain that Willoughby was also arrived. His card was on the table when they came in from the morning's drive. / Good God! cried Marianne, he has been here while we were out.",
+          "why": "The arrival of the card is a small but crucial plot beat; Marianne's reaction ('he has been here while we were out') perfectly registers her state."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "You are expecting a letter, then? said Elinor, unable to be longer silent. / Yes, a little—not much. / After a short pause: You have no confidence in me, Marianne. / Nay, Elinor, this reproach from you—you who have confidence in no one!",
+          "why": "The mutual reproach of withholding is one of the novel's most painful exchanges; both are right, neither can explain why."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Our situations then are alike. We have neither of us any thing to tell; you, because you do not communicate, and I, because I conceal nothing.",
+          "why": "Marianne's unknowing inversion of their actual positions is a perfectly ironic formulation."
+        }
+      ],
+      "notes": "Willoughby's card, continued waiting, the note-for-Mrs.-Jennings scene, Marianne and Elinor's charged exchange about withholding. Keep the 'you who have confidence in no one' exchange. The ball at the Middletons' (Willoughby absent despite invitation) establishes his deliberate avoidance. Elinor's decision to write to Mrs. Dashwood should be noted."
+    },
+    {
+      "id": "028",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 500,
+      "relative_compression": 0.96,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Have you not received my notes? cried Marianne in the wildest anxiety. Here is some mistake I am sure—some dreadful mistake. What can be the meaning of it? Tell me, Willoughby; for heaven's sake tell me, what is the matter?",
+          "why": "Marianne's public appeal to Willoughby at the party is the scene's emotional core; her anguish is real and exposed."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I did myself the honour of calling in Berkeley Street last Tuesday, and very much regretted that I was not fortunate enough to find yourselves and Mrs. Jennings at home. My card was not lost, I hope.",
+          "why": "Willoughby's social formality in response to Marianne's anguish is the most chilling moment of the scene; the card-language is devastating."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Her face was crimsoned over, and she exclaimed, in a voice of the greatest emotion, 'Good God! Willoughby, what is the meaning of this? Have you not received my letters? Will you not shake hands with me?'",
+          "why": "The public scene of Marianne's pain must be kept; it is the novel's most dramatically exposed moment for the sensibility theme."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor was robbed of all presence of mind by such an address, and was unable to say a word.",
+          "why": "Even Elinor's self-command fails momentarily; the phrase 'robbed of all presence of mind' signals the severity of what has happened."
+        }
+      ],
+      "notes": "The party scene: Willoughby's cold public behavior, Marianne's distress, Elinor's struggle to contain the situation, and the departure. This is a crucial dramatic scene and must be kept substantially. Willoughby's card-visiting formality in response to Marianne's emotional appeal is the scene's key irony. The quiet carriage home and Mrs. Jennings's absence must allow for the emotional aftermath."
+    },
+    {
+      "id": "029",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 1100,
+      "relative_compression": 0.80,
+      "signatures": [
+        {
+          "origin": "interpretive",
+          "category": "narrative",
+          "passage_hint": "MY DEAR MADAM, I have just had the honour of receiving your letter, for which I beg to return my sincere acknowledgments. I am much concerned to find there was anything in my behaviour last night that did not meet your approbation",
+          "why": "Willoughby's letter is one of the novel's most formally ironic documents; the cold bureaucratic courtesy in a letter that destroys Marianne."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "a letter of which every line was an insult, and which proclaimed its writer to be deep in hardened villainy",
+          "why": "Elinor's reading of the letter is stated directly; the phrase 'deep in hardened villainy' is a rare moment of Elinor's controlled fury."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Happy, happy Elinor, you cannot have an idea of what I suffer. / Do you call me happy, Marianne? Ah! if you knew!—And can you believe me to be so, while I see you so wretched!",
+          "why": "The key dramatic irony scene; Marianne assumes Elinor has no suffering while Elinor conceals her own. Central to the novel's argument."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Engagement! cried Marianne. There has been no engagement. / No engagement! / No, he is not so unworthy as you believe him. He has broken no faith with me.",
+          "why": "Marianne's revelation that there was no formal engagement is critical; it retroactively changes the moral situation and must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I felt myself, she added, to be as solemnly engaged to him, as if the strictest legal covenant had bound us to each other.",
+          "why": "Marianne's statement of her felt engagement — the gap between her feeling and the legal/social reality — is central to understanding her position."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor, I have been cruelly used; but not by Willoughby.",
+          "why": "Marianne's refusal to blame Willoughby is the most extreme statement of her loyalty; it sets up the later revelation about the letter."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Exert yourself, dear Marianne, she cried, if you would not kill yourself and all who love you. Think of your mother; think of her misery while you suffer",
+          "why": "Elinor's direct appeal to Marianne's family love over self-indulgence is the chapter's moral resolution; it also sets up Marianne's later self-reproach."
+        }
+      ],
+      "notes": "The central tragedy chapter: Willoughby's letter, Elinor's reading, Marianne's letters, the 'Happy, happy Elinor' exchange. Willoughby's letter should be quoted substantially or in full (it is short and perfectly structured). The no-engagement revelation is critical. Preserve the 'Happy, happy Elinor' exchange. Marianne's three letters must be summarized in content if not fully quoted."
+    },
+    {
+      "id": "030",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 820,
+      "relative_compression": 0.74,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Fifty thousand pounds, my dear. Did you ever see her? a smart, stylish girl they say, but not handsome.",
+          "why": "Mrs. Jennings's briefing on Miss Grey is delivered in her characteristic compressed-gossip style; the fifty thousand pounds must register."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It is quite grievous to see her look so ill and forlorn. Pray, when are they to be married?",
+          "why": "Mrs. Jennings's cheerful practicality about Marianne's suffering is both comic and touching; her good heart despite blundering is a recurring motif."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Well, my dear, 'tis a true saying about an ill-wind, for it will be all the better for Colonel Brandon. He will have her at last; aye, that he will. Mind me, now, if they an't married by Mid-summer.",
+          "why": "Mrs. Jennings's matchmaking pivot from Willoughby to Brandon is a characteristic comic moment that also begins to plant the resolution."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I must do this justice to Mr. Willoughby—he has broken no positive engagement with my sister.",
+          "why": "Elinor's defense of Willoughby's technical position is important; it characterizes her scrupulous fairness."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I smiled to see the same eager fancy which had been leading her to the extreme of languid indolence and selfish repining, now at work in introducing excess into a scheme",
+          "why": "This passage appears in chapter 46, not 30, but here in 30 the parallel can be noted: the narrator watching Marianne's grief with a similar ironic-compassionate eye."
+        }
+      ],
+      "notes": "Mrs. Jennings's information about Miss Grey and Willoughby's impending marriage; the dinner scene; Elinor's management of Mrs. Jennings's kindness on Marianne's behalf; Mrs. Jennings on Delaford. Keep the fifty-thousand figure. Keep the Brandon-will-have-her prediction. The Constantia wine scene (Mrs. Jennings's remedy for grief) should be kept for its comedy."
+    },
+    {
+      "id": "031",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 1050,
+      "relative_compression": 0.77,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "No, no, no, it cannot be, she cried; she cannot feel. Her kindness is not sympathy; her good-nature is not tenderness. All that she wants is gossip, and she only likes me now because I supply it.",
+          "why": "Marianne's unjust but psychologically revealing dismissal of Mrs. Jennings is one of the chapter's key character moments."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Like half the rest of the world, if more than half there be that are clever and good, Marianne, with excellent abilities and an excellent disposition, was neither reasonable nor candid.",
+          "why": "The narrator's generalizing aside on self-deception is one of the most quoted pieces of Austenian moral commentary in the novel."
+        },
+        {
+          "origin": "textual",
+          "origin2": "interpretive",
+          "category": "thematic",
+          "passage_hint": "She felt all the force of that comparison; but not as her sister had hoped, to urge her to exertion now; she felt it with all the pain of continual self-reproach, regretted most bitterly that she had never exerted herself before; but it brought only the torture of penitence, without the hope of amendment.",
+          "why": "Psychologically precise; 'torture of penitence without the hope of amendment' is a memorable formulation of Marianne's paralysis."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "With a letter in her outstretched hand, and countenance gaily smiling, from the persuasion of bringing comfort, she entered their room, saying, 'Now, my dear, I bring you something that I am sure will do you good.'",
+          "why": "Mrs. Jennings's misreading (her letter is from Mrs. Dashwood not Willoughby) is perfectly staged; the stage direction 'gaily smiling' makes it more painful."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Willoughby filled every page. Her mother, still confident of their engagement, and relying as warmly as ever on his constancy, had only been roused by Elinor's application, to entreat from Marianne greater openness",
+          "why": "Mrs. Dashwood's letter — still about Willoughby — adds another layer of dramatic irony; Elinor's plan has not prepared her mother at all."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "We are never safe from him. A man who has nothing to do with his own time has no conscience in his intrusion on that of others.",
+          "why": "Marianne's dismissal of Brandon ('has nothing to do with his own time') is both unjust and ironically predictive; he comes with important information."
+        }
+      ],
+      "notes": "Marianne's continued grief, the Mrs. Jennings letter-delivery fiasco, Brandon's arrival with information about Willoughby. Keep 'Like half the rest of the world' passage in full. Preserve 'torture of penitence without the hope of amendment.' The Mrs. Jennings letter fiasco (Marianne expecting Willoughby's words, getting her mother's) is an essential comic-tragic scene. Brandon's arrival and offer to tell what he knows should close the chapter clearly."
+    },
+    {
+      "id": "032",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 680,
+      "relative_compression": 0.72,
+      "signatures": [
+        {
+          "origin": "interpretive",
+          "category": "narrative",
+          "passage_hint": "She felt the loss of Willoughby's character yet more heavily than she had felt the loss of his heart; his seduction and desertion of Miss Williams, the misery of that poor girl, and the doubt of what his designs might once have been on herself, preyed altogether so much on her spirits",
+          "why": "The distinction between losing Willoughby's 'heart' and losing his 'character' is psychologically precise; it marks Marianne's transition."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Bad indeed must the nature of Marianne's affliction be, when her mother could talk of fortitude! mortifying and humiliating must be the origin of those regrets, which she could wish her not to indulge!",
+          "why": "The narrator's observation about the scale of Mrs. Dashwood's concern is an economical ironic stroke."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "From all danger of seeing Willoughby again, her mother considered her to be at least equally safe in town as in the country, since his acquaintance must now be dropped by all who called themselves her friends.",
+          "why": "Mrs. Dashwood's reasoning about London safety is a small example of her rationalistic confidence that always overshoots the facts."
+        }
+      ],
+      "notes": "The aftermath of Brandon's revelation: Marianne's response (silent acceptance, settled gloom), Mrs. Dashwood's letters, the decision to stay in London per Mrs. Dashwood's recommendation. Keep the character/heart distinction. The survey of Sir John's, Mrs. Palmer's, and Lady Middleton's different responses to the Willoughby news can be compressed but should be summarized."
+    },
+    {
+      "id": "033",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 780,
+      "relative_compression": 0.71,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "one gentleman only was standing there, and it is probable that Elinor was not without hope of exciting his politeness to a quicker despatch. But the correctness of his eye, and the delicacy of his taste, proved to be beyond his politeness.",
+          "why": "The toothpick-case scene is a satirical set-piece introducing Robert Ferrars; 'correctness of eye beyond politeness' is Austen's most compressed comic portrait of conceit."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "he had no leisure to bestow any other attention on the two ladies, than what was comprised in three or four very broad stares; a kind of notice which served to imprint on Elinor the remembrance of a person and face, of strong, natural, sterling insignificance, though adorned in the first style of fashion.",
+          "why": "'Sterling insignificance' is one of Austen's most memorable coinages; the phrase must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "And so you are most comfortably settled in your little cottage and want for nothing! Edward brought us a most charming account of the place",
+          "why": "John Dashwood's patronizing account of the cottage is characteristic; the word 'little' and the condescension of 'want for nothing' define him."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Who is Colonel Brandon? Is he a man of fortune? / Yes; he has very good property in Dorsetshire. / I am glad of it. He seems a most gentlemanlike man; and I think, Elinor, I may congratulate you on the prospect of a very respectable establishment in life.",
+          "why": "John Dashwood's rapid pivot from Brandon's identity to Elinor's prospects is a perfect comic rendering of his values."
+        }
+      ],
+      "notes": "The Gray's shop scene with Robert Ferrars (toothpick-case), meeting John Dashwood, his visit to Berkeley Street, and their walk to Conduit Street. Keep 'sterling insignificance' verbatim. Keep John's Colonel-Brandon-as-Elinor's-prospect speech. His financial complaints (enclosure of Norland Common, East Kingham Farm, Fanny's greenhouse) can be compressed but should be summarized as character comedy."
+    },
+    {
+      "id": "034",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 700,
+      "relative_compression": 0.74,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "There was a kind of cold hearted selfishness on both sides, which mutually attracted them; and they sympathised with each other in an insipid propriety of demeanor, and a general want of understanding.",
+          "why": "The characterization of Mrs. John Dashwood and Lady Middleton's mutual attraction is one of the novel's most precise ironic diagnoses."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor wanted very much to know, though she did not chuse to ask, whether Edward was then in town",
+          "why": "The free indirect rendering of Elinor's controlled curiosity about Edward is a recurring technique; this instance is typical."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Lucy came very shortly to claim Elinor's compassion on being unable to see Edward, though he had arrived in town with Mr. and Mrs. Dashwood.",
+          "why": "Lucy's pursuit of Elinor's compassion is itself a comic display of manipulation; her 'compassion' framing of the claim is ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Pity me, dear Miss Dashwood! said Lucy, as they walked up the stairs together…there is nobody here but you, that can feel for me.",
+          "why": "Lucy's appeal to Elinor's sympathy on the way into the Ferrars dinner is either calculated or oblivious; the ambiguity is part of her characterization."
+        }
+      ],
+      "notes": "Fanny Dashwood calls; her alliance with Lady Middleton; Lucy's access to the Ferrars through the Middleton connection; the dinner party. Keep the 'cold hearted selfishness on both sides' characterization. The dinner party's social poverty should be noted. The children's-heights competition (the drawing-room scene after dinner) can be compressed."
+    },
+    {
+      "id": "035",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 780,
+      "relative_compression": 0.93,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Mrs. Ferrars was a little, thin woman, upright, even to formality, in her figure, and serious, even to sourness, in her aspect. Her complexion was sallow; and her features small, without beauty, and naturally without expression; but a lucky contraction of the brow had rescued her countenance from the disgrace of insipidity, by giving it the strong characters of pride and ill nature.",
+          "why": "The portrait of Mrs. Ferrars is one of Austen's most sustained satirical character-sketches; the ironic 'lucky contraction' is characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she proportioned them to the number of her ideas; and of the few syllables that did escape her, not one fell to the share of Miss Dashwood, whom she eyed with the spirited determination of disliking her at all events.",
+          "why": "The observation about proportioning words to ideas is devastating in its economy; 'spirited determination' to dislike is ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "while she herself, who had comparatively no power to wound them, sat pointedly slighted by both. But while she smiled at a graciousness so misapplied, she could not reflect on the mean-spirited folly from which it sprung, nor observe the studied attentions with which the Miss Steeles courted its continuance, without thoroughly despising them all four.",
+          "why": "Elinor's 'thoroughly despising them all four' is a rare moment of her allowing herself a sharp judgment; characterizes both her and the four."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "This is admiration of a very particular kind!—what is Miss Morton to us?—who knows, or who cares, for her?—it is Elinor of whom we think and speak.",
+          "why": "Marianne's spirited defense of Elinor against Mrs. Ferrars's pointed praise of Miss Morton is the dinner party's dramatic peak."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Dear, dear Elinor, don't mind them. Don't let them make you unhappy. / She could say no more; her spirits were quite overcome",
+          "why": "Marianne's whispered comfort to Elinor is one of the most genuinely tender moments in the novel; the overflow of feeling that silences her is well observed."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "Colonel Brandon's eyes, as they were fixed on Marianne, declared that he noticed only what was amiable in it, the affectionate heart which could not bear to see a sister slighted in the smallest point.",
+          "why": "Brandon's response to Marianne's defense of Elinor is the moment his feeling for her is most directly associated with her moral worth."
+        }
+      ],
+      "notes": "The famous Mrs. Ferrars dinner: the portrait of Mrs. Ferrars, the graciousness to Lucy at Elinor's expense, the screens and Miss Morton episode, Marianne's defense of Elinor, and Brandon watching. Keep 'lucky contraction of the brow' verbatim. Keep 'thoroughly despising them all four.' Keep the Marianne defense scene. The comparative heights competition can be condensed."
+    },
+    {
+      "id": "036",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 720,
+      "relative_compression": 0.64,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Their presence was a restraint both on her and on Lucy. It checked the idleness of one, and the business of the other. Lady Middleton was ashamed of doing nothing before them, and the flattery which Lucy was proud to think of and administer at other times, she feared they would despise her for offering.",
+          "why": "The parallel portrait of Lady Middleton and Lucy's discomfort before the Dashwoods is compact social satire."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Fanny was startled at the proposal. / I do not see how it can be done, said she, without affronting Lady Middleton",
+          "why": "Fanny's excuse for not inviting the Dashwoods (can't offend Lady Middleton) while inviting the Steeles is a perfect piece of social dishonesty."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Fanny, rejoicing in her escape, and proud of the ready wit that had procured it, wrote the next morning to Lucy, to request her company and her sister's",
+          "why": "Fanny's invitation to Lucy as an escape from her duty to the Dashwoods is the chapter's ironic pivot; its consequences are large."
+        }
+      ],
+      "notes": "The Conduit Street period: the Dashwoods' uncomfortable position between Lucy/Lady Middleton's designs and Mrs. Palmer's confinement. Keep the 'idleness of one, business of the other' passage. The Miss Steeles' removal to Harley Street (Fanny's maneuver) and its effect on Lucy's prospects should be kept — it sets up the revelation of chapter 37."
+    },
+    {
+      "id": "037",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 1200,
+      "relative_compression": 0.74,
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "narrative",
+          "passage_hint": "Lord! thinks she to herself, they are all so fond of Lucy, to be sure they will make no difficulty about it; and so, away she went to your sister, who was sitting all alone at her carpet-work, little suspecting what was to come",
+          "why": "Mrs. Jennings's breathless account of Anne Steele's revelation is a comic set-piece; the colloquial rush is signature Austen free indirect report."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she fell into violent hysterics immediately, with such screams as reached your brother's ears, as he was sitting in his own dressing-room down stairs, thinking about writing a letter to his steward in the country",
+          "why": "The domestic-comedy precision of Fanny's hysterics reaching John while he thinks about writing to his steward is a perfect satirical detail."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor's office was a painful one.—She was going to remove what she really believed to be her sister's chief consolation,—to give such particulars of Edward as she feared would ruin him for ever in her good opinion",
+          "why": "The narrator's summary of Elinor's painful task before telling Marianne about Edward; 'chief consolation' is cruelly ironic."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Four months!—Have you known of this four months? Elinor confirmed it. / What! while attending me in all my misery, has this been on your heart? And I have reproached you for being happy!",
+          "why": "Marianne's recognition of Elinor's concealed suffering is the emotional climax of the sense/sensibility theme; widely discussed in criticism."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "By feeling that I was doing my duty.—My promise to Lucy, obliged me to be secret. I owed it to her, therefore, to avoid giving any hint of the truth; and I owed it to my family and friends, not to create in them a solicitude about me",
+          "why": "Elinor's explanation of how she sustained four months of concealment is one of the novel's most morally precise statements."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Oh! Elinor, she cried, you have made me hate myself for ever.—How barbarous have I been to you!—you, who have been my only comfort, who have borne with me in all my misery",
+          "why": "Marianne's recognition of Elinor's suffering is the novel's emotional climax for the sisters' relationship; it must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She attended to all that Mrs. Jennings had to say upon the subject, with an unchanging complexion, dissented from her in nothing, and was heard three times to say, 'Yes, ma'am.'",
+          "why": "Marianne's performance of discretion (three 'Yes, ma'am's) is comic but also marks her transformation; the precision of 'three times' is characteristic."
+        }
+      ],
+      "notes": "The double-revelation chapter: Anne Steele's blunder at Harley Street, Mrs. Jennings's account, and Elinor telling Marianne. Keep Mrs. Jennings's breathless narration substantially. The 'Four months!' exchange between the sisters must be nearly verbatim — it is the novel's key moment. Marianne's self-reproach and her three 'Yes, ma'am's to Mrs. Jennings must both survive."
+    },
+    {
+      "id": "038",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 700,
+      "relative_compression": 0.61,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "All this, however, was urged in vain. Edward said very little; but what he did say, was in the most determined manner. Nothing should prevail on him to give up his engagement. He would stand to it, cost him what it might.",
+          "why": "Edward's quiet determination against all family pressure is rendered in indirect speech that paradoxically conveys his firmness better than any speech."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Then, cried Mrs. Jennings with blunt sincerity, no longer able to be silent, he has acted like an honest man! I beg your pardon, Mr. Dashwood, but if he had done otherwise, I should have thought him a rascal.",
+          "why": "Mrs. Jennings's direct rebuke to John Dashwood is one of her finest moments; the 'blunt sincerity' tag is perfectly chosen."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor's heart thanked her for such kindness towards Edward, though she could not forbear smiling at the form of it.",
+          "why": "Elinor's double response to Mrs. Jennings — gratitude and amusement — is characteristic of her complex sympathy for that character."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Mrs. Ferrars has never yet mentioned Edward's name, which does not surprise us; but, to our great astonishment, not a line has been received from him on the occasion.",
+          "why": "John Dashwood's astonishment that Edward hasn't written a letter of submission is characteristic; the moral inversion is complete."
+        }
+      ],
+      "notes": "John Dashwood's visit describing the Harley Street crisis; Edward's disinheritance; Colonel Brandon's living offer set up (implied here though occurring in ch.39). Keep Mrs. Jennings's 'he has acted like an honest man!' Keep Edward's determination summarized clearly. Marianne's suppressed indignation (she honors her promise) should be noted. The estate-to-Robert announcement is important."
+    },
+    {
+      "id": "039",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 560,
+      "relative_compression": 0.78,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Wait for his having a living!—ay, we all know how that will end:—they will wait a twelvemonth, and finding no good comes of it, will set down upon a curacy of fifty pounds a-year",
+          "why": "Mrs. Jennings's practical prophecy about Lucy and Edward is amusing in retrospect since it almost comes true, before the twist."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Oh, dear, yes; I know him extremely well, replied Mrs. Palmer;—Not that I ever spoke to him, indeed; but I have seen him for ever in town.",
+          "why": "Mrs. Palmer's 'know him extremely well / never spoke to him' is a small but perfect ironic characterization of social knowledge in this world."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Bartlett's Building, March. / I hope my dear Miss Dashwood will excuse the liberty I take of writing to her",
+          "why": "Lucy's letter is a performance of gentility that exposes her calculation; the solicitation of Elinor's interest for Edward/herself is the real content."
+        }
+      ],
+      "notes": "Miss Steele's gossip at Kensington Gardens about Edward and Lucy's reconciliation; Mrs. Jennings's prophecy; Lucy's letter to Elinor. Keep Lucy's letter in substantial form — its sycophancy and calculation are important character information. Miss Steele's eavesdropping confession should be noted as comic."
+    },
+    {
+      "id": "040",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 750,
+      "relative_compression": 0.79,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "I have heard, said he, with great compassion, of the injustice your friend Mr. Ferrars has suffered from his family; for if I understand the matter right, he has been entirely cast off by them for persevering in his engagement with a very deserving young woman.",
+          "why": "Brandon's offer of the living through Elinor as intermediary is built on a characteristically generous misunderstanding; the whole scene is important."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor's astonishment at this commission could hardly have been greater, had the Colonel been really making her an offer of his hand.",
+          "why": "The narrator's comparison of the living-offer to a marriage proposal is both ironic and accurate; it captures Elinor's emotional state."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Well, my dear, I must be gone before I have had half my talk out. But, however, we may have it all over in the evening; for we shall be quite alone. I do not ask you to go with me, for I dare say your mind is too full of the matter to care for company; and besides, you must long to tell your sister all about it.",
+          "why": "Mrs. Jennings's complacent misreading of the situation (believing a marriage offer has been made) is one of the novel's longest sustained comic misunderstandings."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The deception could not continue after this; and an explanation immediately took place, by which both gained considerable amusement for the moment, without any material loss of happiness to either",
+          "why": "The undeception scene between Elinor and Mrs. Jennings is briefly perfect; 'without any material loss of happiness to either' is characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "When she told Marianne what she had done, however, her first reply was not very auspicious. — This, along with 'I am afraid it cannot take place very soon' misheard by Mrs. Jennings",
+          "why": "Mrs. Jennings's misinterpretation of 'I am afraid it cannot take place very soon' (a general statement about Edward's ordination) as reluctant-suitor-talk is the chapter's comic peak."
+        }
+      ],
+      "notes": "Colonel Brandon offers the Delaford living for Edward through Elinor; Mrs. Jennings misreads the whole conversation as a marriage proposal; Elinor writes to Edward. Keep the living-offer scene substantially. The Mrs. Jennings misunderstanding arc (from 'sad thing for Colonel to wait two or three months' to the undeception) should be kept in outline if not in full."
+    },
+    {
+      "id": "041",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 620,
+      "relative_compression": 0.66,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she was not only ready to worship him as a saint, but was moreover truly anxious that he should be treated as one in all worldly concerns; anxious that his tithes should be raised to the utmost; and secretly resolved to avail herself, at Delaford, as far as she possibly could, of his servants, his carriage, his cows, and his poultry.",
+          "why": "Lucy's 'worship of Colonel Brandon' expressed through plans for his tithes, servants, carriage, cows, and poultry is a perfect ironic portrait of calculating piety."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor set out by herself to pay a visit, for which no one could really have less inclination, and to run the risk of a tête-à-tête with a woman, whom neither of the others had so much reason to dislike.",
+          "why": "The narrator's summary of Elinor's visit to Fanny captures the social obligation and its absurdity with characteristic economy."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Really!—Well, this is very astonishing!—no relationship!—no connection between them!—and now that livings fetch such a price!",
+          "why": "John Dashwood's astonishment at Brandon's gift is rendered through his immediate financial calculation; the dash-work captures his staccato thinking."
+        }
+      ],
+      "notes": "Edward's thanks to Brandon, Lucy's response, Elinor's obligatory visit to Fanny, John Dashwood's financial reaction to the living. Keep Lucy's 'tithes, carriage, cows, and poultry' speech. John's property-value calculation about the living can be condensed but the character note (he assumes Brandon sold the presentation) should register."
+    },
+    {
+      "id": "042",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 500,
+      "relative_compression": 0.77,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It amused her to observe that all her friends seemed determined to send her to Delaford;—a place, in which, of all others, she would now least chuse to visit, or wish to reside",
+          "why": "Elinor's ironic observation that everyone plans to send her to Delaford (as future resident) is a quiet character moment; her self-awareness about the irony is characteristic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Marianne, though few as had been her hours of comfort in London, and eager as she had long been to quit it, could not, when it came to the point, bid adieu to the house in which she had for the last time enjoyed those hopes",
+          "why": "Marianne's departure grief is rendered with compassion; even the place of her unhappiness has become attached to her hopes."
+        }
+      ],
+      "notes": "Final London farewells, departure for Cleveland. The 'everyone sending Elinor to Delaford' comic observation should survive. The emotional note of Marianne's departure from London should be retained. Elinor's contrasting relief at leaving should be noted. Travel to Cleveland sets up the illness chapters."
+    },
+    {
+      "id": "043",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 800,
+      "relative_compression": 0.65,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she quitted it again, stealing away through the winding shrubberies, now just beginning to be in beauty, to gain a distant eminence; where, from its Grecian temple, her eye, wandering over a wide tract of country to the south-east, could fondly rest on the farthest ridge of hills in the horizon, and fancy that from their summits Combe Magna might be seen.",
+          "why": "Marianne's seeking of a sight-line to Combe Magna is a quietly devastating detail; the romantic geography of longing is precisely observed."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "In such moments of precious, invaluable misery, she rejoiced in tears of agony to be at Cleveland",
+          "why": "'Precious, invaluable misery' is a perfect ironic encapsulation of Marianne's romantic self-indulgence in suffering."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Two delightful twilight walks on the third and fourth evenings of her being there, not merely on the dry gravel of the shrubbery, but all over the grounds… had—assisted by the still greater imprudence of sitting in her wet shoes and stockings—given Marianne a cold",
+          "why": "The clinical enumeration of causes (wet grounds, wet shoes and stockings) frames Marianne's self-destructive grief medically; the phrase 'greater imprudence' is dry."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she found him, however, perfectly the gentleman in his behaviour to all his visitors, and only occasionally rude to his wife and her mother",
+          "why": "The characterization of Palmer at Cleveland — 'only occasionally rude to his wife and her mother' — is a fine comic correction of expectations."
+        }
+      ],
+      "notes": "Arrival at Cleveland; Marianne's Combe Magna vigil; the description of Cleveland; her wild walks and wet-feet imprudence; the onset of illness. Keep 'precious, invaluable misery.' Keep the medical detail of the wet shoes/grounds as cause. The Palmer-at-home characterization should be noted. Mrs. Palmer's removal (for the baby) and Mrs. Jennings's decision to stay are narrative necessities."
+    },
+    {
+      "id": "044",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 1600,
+      "relative_compression": 0.82,
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "structural",
+          "passage_hint": "She rushed to the drawing-room,—she entered it,—and saw only Willoughby.",
+          "why": "One of the most effective chapter-ending shocks in Austen; the triple rhythm enacts the reader's own surprise. This actually ends chapter 43 but the scene opens chapter 44."
+        },
+        {
+          "origin": "cultural",
+          "category": "narrative",
+          "passage_hint": "Tell me honestly, a deeper glow overspreading his cheeks, do you think me most a knave or a fool?",
+          "why": "Willoughby's self-interrogating question to Elinor opens his confession; one of the most dramatically unexpected moments in the novel."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I was acting in this manner, trying to engage her regard, without a thought of returning it. But one thing may be said for me: even in that horrid state of selfish vanity, I did not know the extent of the injury I meditated, because I did not then know what it was to love.",
+          "why": "Willoughby's self-analysis at its most morally interesting; the distinction between the injury he inflicted and what he later felt is important."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "The world had made him extravagant and vain—Extravagance and vanity had made him cold-hearted and selfish. Vanity, while seeking its own guilty triumph at the expense of another, had involved him in a real attachment",
+          "why": "The narrator's moral anatomy of Willoughby is the most sustained piece of psychological-social analysis in the novel."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Your wife!—The letter was in your own hand-writing. / Yes, but I had only the credit of servilely copying such sentences as I was ashamed to put my name to. The original was all her own—her own happy thoughts and gentle diction.",
+          "why": "Willoughby's revelation that the letter's cruelty was Sophia's composition is both exculpatory and damning; 'gentle diction' for his wife's malice is ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "the night following this affair—I was to go the next morning—was spent by me in deliberating on what my future conduct should be. The struggle was great—but it ended too soon.",
+          "why": "'It ended too soon' is one of Willoughby's most precise and honest self-condemnations; the compression is perfect."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "She felt that his influence over her mind was heightened by circumstances which ought not in reason to have weight; by that person of uncommon attraction, that open, affectionate, and lively manner which it was no merit to possess",
+          "why": "Elinor's self-aware reflection on Willoughby's continued hold is a rare moment exposing her vulnerability; interpretively significant."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "This is not right, Mr. Willoughby.—Remember that you are married. Relate only what in your conscience you think necessary for me to hear.",
+          "why": "Elinor's restraint of Willoughby's sentiment about Marianne is a perfect ethical intervention; 'Remember that you are married' is direct."
+        }
+      ],
+      "notes": "Willoughby's surprise visit and confession — one of the novel's most complex scenes. The full arc of the confession must be preserved: vanity → real attachment → the Mrs. Smith encounter → the deliberation → the departure → the letter (Sophia's composition). The narrator's moral anatomy of Willoughby must be substantially preserved. Elinor's compassion mixed with judgment, and her own susceptibility to his manner, should both register."
+    },
+    {
+      "id": "045",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 650,
+      "relative_compression": 0.86,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She felt that his influence over her mind was heightened by circumstances which ought not in reason to have weight; by that person of uncommon attraction, that open, affectionate, and lively manner which it was no merit to possess",
+          "why": "Elinor's extended self-analysis after Willoughby's departure is the chapter's moral substance; her susceptibility must be acknowledged for the character to be credible."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Willoughby, he, whom only half an hour ago she had abhorred as the most worthless of men, Willoughby, in spite of all his faults, excited a degree of commiseration for the sufferings produced by them, which made her think of him as now separated for ever from her family, with a tenderness, a regret, rather in proportion… to his wishes than to his merits.",
+          "why": "The precise distinction between commiseration proportioned to wishes vs. merits is Austen's most honest insight into Elinor's response."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "she would not but have heard his vindication for the world, and now blamed, now acquitted herself for having judged him so harshly before. But her promise of relating it to her sister was invariably painful.",
+          "why": "Elinor's oscillation between blame and acquittal of herself is a further indication of Willoughby's lingering power; the dread of telling Marianne is important."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "her mother, catching it with all her usual warmth, was in a moment as much overcome by her happiness, as she had been before by her fears",
+          "why": "Mrs. Dashwood's arrival and the joyful reunion close the chapter on a note of warmth; the characteristic speed of her emotional reversals is noted."
+        }
+      ],
+      "notes": "The aftermath of Willoughby's visit: Elinor's complex response, Marianne's recovery, and Mrs. Dashwood's arrival. Keep the extended reflection on Willoughby's 'influence over her mind.' Preserve the tenderness/regret proportioned to wishes rather than merits. Mrs. Dashwood's arrival — her terror and then joy — must register as the emotional resolution of Marianne's crisis."
+    },
+    {
+      "id": "046",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 720,
+      "relative_compression": 0.69,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "His emotion on entering the room, in seeing her altered looks, and in receiving the pale hand which she immediately held out to him, was such, as, in Elinor's conjecture, must arise from something more than his affection for Marianne",
+          "why": "Elinor's observation of Brandon's emotion — she reads the Eliza parallel in his face — is a precise character moment."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She shook her head, put the music aside, and after running over the keys for a minute, complained of feebleness in her fingers, and closed the instrument again; declaring however with firmness as she did so, that she should in future practice much.",
+          "why": "Marianne's abandonment of Willoughby's opera-music is a small but significant gesture of recovery; the resolution to 'practice much' is both touching and gently ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "As they approached Barton, indeed, and entered on scenes of which every field and every tree brought some peculiar, some painful recollection, she grew silent and thoughtful, and turning away her face from their notice, sat earnestly gazing through the window.",
+          "why": "The landscape-grief parallel is used without excess; the turning-away face is a perfect gestural image."
+        }
+      ],
+      "notes": "Brandon's visit to the recovered Marianne; departure from Cleveland; return to Barton. Keep the piano-music rejection scene. The departure scene (Marianne's grateful farewell to Mrs. Jennings) marks a real change in her character and should be noted. The return to Barton and the landscape's painful associations should be compressed but retained."
+    },
+    {
+      "id": "047",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 720,
+      "relative_compression": 0.86,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I see every thing—as you can desire me to do. / …I am now perfectly satisfied, I wish for no change. I never could have been happy with him, after knowing, as sooner or later I must have known, all this.—I should have had no confidence, no esteem.",
+          "why": "Marianne's statement of her revised understanding of Willoughby is the scene's moral resolution; 'no confidence, no esteem' links back to the novel's defining terms."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I considered the past: I saw in my own behaviour, since the beginning of our acquaintance with him last autumn, nothing but a series of imprudence towards myself, and want of kindness to others.",
+          "why": "Marianne's self-analysis is the first full-scale accounting of her conduct; 'want of kindness to others' is the most important of her charges."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "You, you above all, above my mother, had been wronged by me. I, and only I, knew your heart and its sorrows; yet to what did it influence me?—not to any compassion that could benefit you or myself.",
+          "why": "Marianne's acknowledgment that she knew of Elinor's suffering and did nothing is the most self-critical statement in the novel."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "my feelings shall be governed and my temper improved. They shall no longer worry others, nor torture myself. I shall now live solely for my family.",
+          "why": "Marianne's plan for amendment is both admirable and slightly comic in its totalism; the narrator's gentle irony ('eager fancy...introducing excess') applies here."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She paused—and added in a low voice, If I could but know his heart, everything would become easy.",
+          "why": "The residual longing in Marianne's amendment-speech is honestly rendered; Elinor's decision to tell her Willoughby's story follows."
+        }
+      ],
+      "notes": "Marianne's recovery; her self-examination; the walk where she indicates where she fell and first saw Willoughby; Elinor tells her Willoughby's story. Keep Marianne's full self-reproach speech — it is the novel's moral climax for her character. Her residual longing ('if I could but know his heart') allows Elinor's disclosure to proceed. The Willoughby retelling should be summarized as 'she managed the recital with address.'"
+    },
+    {
+      "id": "048",
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 420,
+      "relative_compression": 0.90,
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Elinor now found the difference between the expectation of an unpleasant event, however certain the mind may be told to consider it, and certainty itself.",
+          "why": "The narrator's psychological observation about expectation vs. certainty is one of the novel's most precise moral generalizations."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She now found, that in spite of herself, she had always admitted a hope, while Edward remained single, that something would occur to prevent his marrying Lucy",
+          "why": "Elinor's discovery of her own concealed hope is the chapter's emotional core; the self-knowledge is Austen at her most penetrating."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "She feared that under this persuasion she had been unjust, inattentive, nay, almost unkind, to her Elinor;—that Marianne's affliction, because more acknowledged, more immediately before her, had too much engrossed her tenderness",
+          "why": "Mrs. Dashwood's belated recognition of her neglect of Elinor's suffering is the chapter's most important character moment."
+        }
+      ],
+      "notes": "The news of Edward's marriage (via Thomas the servant) reaches the family; Elinor's devastated reaction; Mrs. Dashwood's recognition of her neglect of Elinor. Keep the expectation-vs-certainty observation. Keep Elinor's discovery of her own secret hope. Keep Mrs. Dashwood's self-reproach. This is a pivotal short chapter and should not be over-compressed."
+    },
+    {
+      "id": "049",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 1250,
+      "relative_compression": 0.82,
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "narrative",
+          "passage_hint": "Elinor could sit it no longer. She almost ran out of the room, and as soon as the door was closed, burst into tears of joy, which at first she thought would never cease.",
+          "why": "Elinor's emotional release on learning Lucy married Robert is one of the most satisfying moments in the novel; the restraint of preceding chapters makes this eruption powerful."
+        },
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "His heart was now open to Elinor, all its weaknesses, all its errors confessed, and his first boyish attachment to Lucy treated with all the philosophic dignity of twenty-four.",
+          "why": "The ironic final clause ('philosophic dignity of twenty-four') is quintessential Austen; it simultaneously validates Edward and gently deflates his self-importance."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "It was a foolish, idle inclination on my side, the consequence of ignorance of the world, and want of employment. Had my mother given me some active profession when I was removed at eighteen from the care of Mr. Pratt",
+          "why": "Edward's analysis of his own Lucy-infatuation is the novel's most extended piece of male self-examination; its psychological accuracy is notable."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Mrs. Dashwood, too happy to be comfortable, knew not how to love Edward, nor praise Elinor enough, how to be enough thankful for his release without wounding his delicacy",
+          "why": "Mrs. Dashwood 'too happy to be comfortable' is a perfect ironic summary of her characteristic emotional excess."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Marianne could speak her happiness only by tears. Comparisons would occur—regrets would arise",
+          "why": "Marianne's joy-through-tears is a characteristic rendering; 'comparisons would occur' is an honest acknowledgment of the Willoughby shadow."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Between them no subject is finished, no communication is even made, till it has been made at least twenty times over.",
+          "why": "The narrator's generalization about lovers' conversation is a characteristic ironic aside; it belongs to the Austen voice register."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "DEAR SIR, Being very sure I have long lost your affections, I have thought myself at liberty to bestow my own on another",
+          "why": "Lucy's letter to Edward is a perfect document of her self-serving manipulation; 'I scorn to accept a hand while the heart was another's' is richly ironic."
+        }
+      ],
+      "notes": "The resolution: Robert Ferrars/Lucy Steele's marriage revealed (via Thomas), Edward's arrival at Barton, his proposal to Elinor. Keep 'She almost ran out of the room, and burst into tears of joy.' Keep 'philosophic dignity of twenty-four.' Keep Lucy's letter quoted or substantially paraphrased. Keep Edward's self-analysis speech. Mrs. Dashwood 'too happy to be comfortable' must survive. The Robert/Lucy story of how they came together can be compressed."
+    },
+    {
+      "id": "050",
+      "diegetic_status": "diegetic",
+      "role": "signature",
+      "target_word_count": 750,
+      "relative_compression": 0.84,
+      "signatures": [
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "Marianne Dashwood was born to an extraordinary fate. She was born to discover the falsehood of her own opinions, and to counteract, by her conduct, her most favourite maxims.",
+          "why": "The narrator's summation of Marianne's fate is the most critically discussed passage in the conclusion; the ironic distance between 'extraordinary fate' and the conventional marriage it describes."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "The whole of Lucy's behaviour in the affair, and the prosperity which crowned it, therefore, may be held forth as a most encouraging instance of what an earnest, an unceasing attention to self-interest, however its progress may be apparently obstructed, will do",
+          "why": "The narrator's ironic moral drawn from Lucy's success is one of Austen's most sardonic set-pieces; the mock-didactic framing is signature."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "that though sisters, and living almost within sight of each other, they could live without disagreement between themselves, or producing coolness between their husbands.",
+          "why": "The final sentence's domestic irony — sisters who don't fight, despite proximity — is a quietly perfect conclusion."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Marianne could never love by halves; and her whole heart became, in time, as much devoted to her husband, as it had once been to Willoughby.",
+          "why": "The narrator's observation that Marianne applies her characteristic totalism to Colonel Brandon is both satisfying and gently ironic."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "he always retained that decided regard which interested him in every thing that befell her, and made her his secret standard of perfection in woman; and many a rising beauty would be slighted by him in after-days as bearing no comparison with Mrs. Brandon.",
+          "why": "Willoughby's fate — surviving, enjoying himself, keeping Marianne as secret standard — is Austen's most honest and least sentimental ending for a romantic villain."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "instead of falling a sacrifice to an irresistible passion, as once she had fondly flattered herself with expecting,—instead of remaining even for ever with her mother… she found herself at nineteen, submitting to new attachments",
+          "why": "The triple ironic construction of Marianne's fate ('instead of… instead of… she found herself') is a perfectly structured ironic summary."
+        }
+      ],
+      "notes": "The conclusion: Mrs. Ferrars's semi-reconciliation with Edward; Edward and Elinor's marriage; Marianne and Brandon's eventual union; Willoughby's fate; Lucy and Robert's prosperity. Keep 'Marianne Dashwood was born to an extraordinary fate' passage in full. Keep the Lucy mock-moral in full. Keep Willoughby's honest fate (he survives, enjoys himself, keeps Marianne as his standard). Keep 'Marianne could never love by halves.' The final sentence on the sisters' harmony should close the abridgment."
+    }
+  ],
+
+  "motifs": [
+    {
+      "name": "Sense vs. Sensibility",
+      "description": "The novel's governing opposition: Elinor's self-command and reason against Marianne's emotional expressiveness and romantic absolutism. Every major scene either dramatizes or ironizes this contrast.",
+      "indicative_phrases": ["strength of understanding", "coolness of judgment", "everything but prudent", "business of self-command", "governed her feelings"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "The Annuity/Inheritance Logic",
+      "description": "Austen's sustained ironic analysis of how money shapes human relationships, obligations, and self-deception. The Dashwood bequest reduction is its purest expression.",
+      "indicative_phrases": ["it comes over and over every year", "only half blood", "the whole was tied up", "a very comfortable fortune"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Ironic Understatement and Qualification",
+      "description": "Austen's characteristic rhetorical mode: apparent concession that reveals judgment ('unless to be rather cold hearted and rather selfish is to be ill-disposed'). Constitutive of the narrator's voice.",
+      "indicative_phrases": ["not an ill-disposed young man, unless", "she was everything but prudent", "sterling insignificance", "philosophic dignity of twenty-four"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Romantic Absolutism and its Ironic Undercutting",
+      "description": "Marianne's pronouncements (no second attachments, a woman of twenty-seven cannot feel love, intimacy is disposition not time) are rendered sympathetically but undermined by the plot.",
+      "indicative_phrases": ["can never hope to feel or inspire affection again", "seven years would be insufficient", "the force of her arguments and the brightness of her eyes"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Concealment and Discovery",
+      "description": "The structural engine of the novel: secrets (Edward's engagement, Willoughby's character, Elinor's suffering) withheld, suspected, and revealed in precisely controlled sequence.",
+      "indicative_phrases": ["faithfully kept so by me", "you who have confidence in no one", "four months!", "a great secret"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Free Indirect Discourse as Irony",
+      "description": "Austen's use of characters' own thought-patterns to ironize them ('She was perfectly disposed to make every allowance for the colonel's advanced state of life which humanity required').",
+      "indicative_phrases": ["she was perfectly disposed", "she really believed", "it was contrary to every doctrine of hers"],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Social Noise and the Comedy of Assembly",
+      "description": "The Barton Park social world — Sir John's parties, Mrs. Jennings's gossip, Lady Middleton's children, the Steeles' flattery — as the comic matrix within which serious emotional action occurs.",
+      "indicative_phrases": ["put an end to every kind of discourse", "benevolent, philanthropic man", "the noisier they were the better"],
+      "target_legibility": "preserve at book scale"
+    }
+  ],
+
+  "plan_notes": "This is a voice-driven novel in the strictest sense: Austen's free indirect discourse, ironic understatement, and satirical asides are not ornamental but constitutive. Paraphrase into neutral modern prose destroys the book. The drafter must retain Austen's sentence structures wherever signature passages are involved — do not 'translate' her prose into contemporary diction. \n\nKey register notes: (1) The ironic qualification is Austen's primary rhetorical device; never let it be smoothed into simple assertion. (2) Free indirect discourse (character-thought rendered in narrator voice) is pervasive; preserve its grammatical markers (past tense but present-tense logic, no 'she thought that'). (3) The narrator's moral generalizations ('Like half the rest of the world...') are not digressions but load-bearing thematic statements; preserve them. \n\nCompression strategy: The novel's first volume (chapters 1-22) establishes all the major characters and the two central secrets (Marianne/Willoughby's apparent engagement; Edward/Lucy's actual one). These chapters require less compression than their word counts suggest because much of the material is characterological rather than merely plot. Chapters 23-36 (London, social comedy, Mrs. Ferrars dinner) can be more aggressively compressed while maintaining the key scenes. Chapters 37-49 (revelation arc through resolution) must be given significant space — the 'four months' scene (ch.37), Willoughby's confession (ch.44), and Elinor's joy at Lucy's marriage (ch.49) are the emotional payoffs of the whole novel. \n\nDialogue preservation: The John Dashwood / Fanny annuity-reduction dialogue (ch.2), the 'esteem/like' exchange (ch.4), the 'four months' exchange (ch.37), and Marianne's self-reproach speech (ch.47) must be reproduced substantially verbatim — these are the novel's signature dramatic passages. \n\nWilloughby: Do not simplify him into a villain. His confession (ch.44) is essential and must be kept at length. The narrator's moral anatomy ('the world had made him extravagant') and Elinor's sympathetic response must both survive. His un-tragic fate in the final chapter is important and must not be cut. \n\nBrandon: His gravity should not become inertness. His role emerges gradually; the Eliza story (ch.31) is essential to understanding both him and Willoughby. The living-offer is his most active moment and must be kept with its comic Mrs. Jennings misreading. \n\nPeriod cautions: Do not modernize 'sensibility' (it means emotional responsiveness, not 'sensitivity' in the modern sense). Do not modernize 'establishment' (means a secure social/domestic position). 'Connections' and 'situation' carry specific period meanings (social network; social position) that must not be translated away."
+}
+```

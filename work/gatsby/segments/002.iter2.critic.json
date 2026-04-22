@@ -1,0 +1,62 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I married him because I thought he was a gentleman... borrowed somebody's best suit to get married in... I lay down and cried to beat the band all afternoon.",
+      "source_locator": "Myrtle's monologue beginning 'I married him because I thought he was a gentleman'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is the interpretive keystone for Myrtle's character—her class aspirations, her self-deception, and the pathos of her marriage; it is the only moment of unguarded self-revelation she has in the novel, and critical readings of her characterisation depend on it. Its complete absence removes the human core of the chapter.",
+      "suggested_fix": "Restore the full monologue verbatim or near-verbatim: 'I married him because I thought he was a gentleman... borrowed somebody's best suit... the man came after it one day... I lay down and cried to beat the band all afternoon.' It must not be paraphrased or summarised."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The late afternoon sky bloomed in the window for a moment like the blue honey of the Mediterranean—then the shrill voice of Mrs. McKee called me back into the room.",
+      "source_locator": "After the Monte Carlo conversation, before Mrs. McKee's 'little kike' speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a prosodically and imagistically distinctive sentence—'blue honey of the Mediterranean' is a Fitzgerald signature phrase that critics cite as emblematic of his lyric intrusions; it also marks Nick's consciousness escaping the squalor of the party and is a register-defining moment.",
+      "suggested_fix": "Restore the sentence verbatim as a paragraph break between the Monte Carlo exchange and Mrs. McKee's next speech."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "A massage and a wave, and a collar for the dog, and one of those cute little ashtrays where you touch a spring, and a wreath with a black silk bow for mother's grave that'll last all summer.",
+      "source_locator": "Myrtle's shopping-list speech, beginning 'My dear, I'm going to give you this dress'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Myrtle's breathless, bathetic shopping list—culminating in the grave wreath—is a voice-defining comic-pathetic passage that encapsulates her social aspirations and the vulgarity of the new money world; its absence flattens her characterisation at the chapter's close.",
+      "suggested_fix": "Restore the speech from 'My dear, I'm going to give you this dress' through 'I got to write down a list so I won't forget all the things I got to do' verbatim or near-verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Works pretty slow, don't he? / No, he doesn't... And if you feel that way about it, maybe I'd better sell it somewhere else after all. / I don't mean that... I just meant—",
+      "source_locator": "Tom and Wilson's dialogue in the garage, after 'When are you going to sell me that car?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange establishes the power dynamic between Tom and Wilson with precision—Tom's casual cruelty and Wilson's cringing dependence are dramatised nowhere else so economically, and the dynamic is critical to the novel's class analysis.",
+      "suggested_fix": "Restore the three-exchange dialogue: Wilson's 'Works pretty slow, don't he?' through his trailing 'I just meant—' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'Keep your hands off the lever,' snapped the elevator boy. 'I beg your pardon,' said Mr. McKee with dignity, 'I didn't know I was touching it.'",
+      "source_locator": "Elevator descent at the end of the chapter, after 'Come to lunch some day'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This small, farcical exchange is part of the chapter's surreal, drunken coda—its absurdist comedy and McKee's wounded dignity are characteristic Fitzgerald tonal touches, and its loss makes the chapter's ending feel truncated and purely elliptical rather than comically dreamlike.",
+      "suggested_fix": "Restore the three-line exchange between the elevator boy and McKee verbatim before Nick's elliptical jump-cut to McKee's bedroom."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I told him I'd have to call a policeman, but he knew I lied. I was so excited that when I got into a taxi with him I didn't hardly know I wasn't getting into a subway train.",
+      "source_locator": "Myrtle's first-meeting-with-Tom story",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The 'call a policeman' line and the subway confusion are preserved in the draft but the former is cut; the policeman detail is a small but characteristic note of Myrtle's performative propriety giving way to desire.",
+      "suggested_fix": "Add 'I told him I'd have to call a policeman, but he knew I lied' before the subway line."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses Myrtle's wedding-suit monologue entirely (a high-severity interpretive keystone), and additionally drops 'blue honey of the Mediterranean,' the shopping-list speech, the Tom–Wilson car-negotiation dialogue, and the elevator-boy exchange—four medium-severity signature or voice losses that together seriously flatten the chapter's characterisation and Fitzgeraldian register."
+}

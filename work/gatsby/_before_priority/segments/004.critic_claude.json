@@ -1,0 +1,62 @@
+{
+  "segment_id": "004",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It appreciated fully the chain of national circumstances which had elicited this tribute from Montenegro's warm little heart.",
+      "source_locator": "Montenegro paragraph, after 'brave struggles of the Montenegrin people'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the third beat of the signature Montenegro riff — the escalating mock-solemnity that IS the irony. Cutting it flattens the joke to two beats and loses the 'warm little heart' cadence that makes the passage voice-establishing.",
+      "suggested_fix": "Restore the sentence verbatim between 'Montenegrin people' and 'My incredulity was submerged.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"That's the one from Montenegro.\" ... \"Turn it.\" \"Major Jay Gatsby,\" I read, \"For Valour Extraordinary.\"",
+      "source_locator": "after the medal falls into Nick's palm",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses Gatsby's proud 'Turn it' exchange into a flat narrator summary ('On the reverse:'). The dialogue beat — Gatsby's performative pride, Nick reading aloud — is the prose equivalent of the medal itself being produced as evidence. The voice register is lost.",
+      "suggested_fix": "Restore the 'Turn it.' exchange as dialogue with Nick reading the legend aloud."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I had an idea that Gatsby himself didn't believe it would come, and perhaps he no longer cared.",
+      "source_locator": "n/a — but related: the cut of 'I was sure the request would be something utterly fantastic, and for a moment I was sorry I'd ever set foot upon his overpopulated lawn.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft cuts Nick's signature editorial hedge — 'I was sure the request would be something utterly fantastic, and for a moment I was sorry I'd ever set foot upon his overpopulated lawn.' This is Nick's consciousness registering irritation in his distinctive balanced-clause cadence; its loss is voice erasure in a voice-driven narrator.",
+      "suggested_fix": "Restore the 'utterly fantastic ... overpopulated lawn' sentence after 'more annoyed than interested.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"You sit here and discuss your sports and your young ladies and your—\" He supplied an imaginary noun with another wave of his hand. \"As for me, I am fifty years old, and I won't impose myself on you any longer.\"",
+      "source_locator": "Wolfshiem's farewell, before 'As he shook hands and turned away'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'imaginary noun' gesture and 'I belong to another generation' speech are textually distinctive Wolfshiem voice — part of the grotesque-comic portrait the pre-pass flagged as critically discussed. Reducing to one flat sentence erases the comic rhythm.",
+      "suggested_fix": "Restore the 'You're very polite, but I belong to another generation' speech including the imaginary-noun beat."
+    },
+    {
+      "severity": "low",
+      "class": "signature_loss",
+      "source_passage": "I was flattered that she wanted to speak to me, because of all the older girls I admired her most.",
+      "source_locator": "Jordan's Louisville story, after 'Please come here'",
+      "draft_treatment": "absent",
+      "why_it_matters": "A small but characterizing beat establishing Jordan's adolescent hero-worship of Daisy, grounding the retrospective's emotional register.",
+      "suggested_fix": "Restore the sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "If he left the room for a minute she'd look around uneasily, and say: \"Where's Tom gone?\" ... It was touching to see them together—it made you laugh in a hushed, fascinated way.",
+      "source_locator": "Santa Barbara paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'hushed, fascinated way' detail is Jordan's signature observational irony; cutting it reduces a pointed set-piece about Daisy's performance of devotion to a bare summary sentence.",
+      "suggested_fix": "Restore the 'Where's Tom gone?' beat and the 'hushed, fascinated way' line."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Draft preserves most signatures but flattens the Montenegro riff (missing 'warm little heart' sentence), collapses the 'Turn it' medal exchange into narration, drops Nick's 'overpopulated lawn' hedge, and guts Wolfshiem's 'another generation' farewell — four medium voice losses in a voice-driven narrator."
+}

@@ -1,0 +1,71 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the mere accident of starting a twentieth-century career from a nest of associations so colonial,--so troglodytic--as the First Church...was so queer as to offer a subject of curious speculation",
+      "source_locator": "paragraph 1, opening section on safeguards",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The source introduces 'safeguards' with a full ironic development—'Safeguards are often irksome, but sometimes convenient, and if one needs them at all, one is apt to need them badly'—which is a voice-defining aside entirely dropped. The draft jumps straight to the colonial-troglodytic list without the ironic scaffolding.",
+      "suggested_fix": "Restore 'Safeguards are often irksome, but sometimes convenient, and if one needs them at all, one is apt to need them badly' before moving to the 1738/1838 comparison."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the double exterior nature gave life its relative values...The violence of the contrast was real and made the strongest motive of education.",
+      "source_locator": "paragraph on Massachusetts politics and contrasts, before 'Boys are wild animals'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The source's explicit statement that 'the violence of the contrast was real and made the strongest motive of education' is a thematic keystone linking the winter/summer dialectic to the book's educational argument. The draft omits it entirely, weakening the interpretive weight of the seasonal passage.",
+      "suggested_fix": "Insert 'The violence of the contrast was real and made the strongest motive of education. The double exterior nature gave life its relative values' in the transition between the Massachusetts politics paragraph and the 'Boys are wild animals' paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He felt his nature crudely, as it was meant...summer was drunken. Among senses, smell was the strongest--smell of hot pine-woods and sweet-fern in the scorching summer noon",
+      "source_locator": "paragraph beginning 'Boys are wild animals'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'He felt his nature crudely, as it was meant' is a signature Adams aphorism and is dropped. The sensory catalog is also truncated—'scorching summer noon,' 'pennyroyal and flagroot,' and the full enumeration of smells lose their rhythmic accumulation.",
+      "suggested_fix": "Restore 'He felt his nature crudely, as it was meant' and re-expand the smell catalog to include 'of hot pine-woods and sweet-fern in the scorching summer noon' as written."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "He knew his grandfather John Quincy Adams only as an old man of seventy-five or eighty who was friendly and gentle with him, but except that he heard his grandfather always called 'the President,' and his grandmother 'the Madam'",
+      "source_locator": "paragraph on Quincy vs. Boston, grandparents section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The detail that the grandfather was called 'the President' and the grandmother 'the Madam' is a signature characterization repeated throughout the chapter and central to how Adams frames the ancestral world. The draft uses these titles but never explains their first establishment in the boy's mind, losing the interpretive moment.",
+      "suggested_fix": "Restore the passage explaining that 'he heard his grandfather always called the President and his grandmother the Madam' when introducing the grandparents, as the titles carry interpretive weight throughout."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Then and always, the boy insisted that this reasoning justified his apparent submission; but the old man did not stop, and the boy saw all his strategical points turned, one after another, until he found himself seated inside the school",
+      "source_locator": "paragraph on the walk to school with the President",
+      "draft_treatment": "absent",
+      "why_it_matters": "The boy's tactical self-justification ('Then and always, the boy insisted that this reasoning justified his apparent submission') is a signature ironic move—Adams's mature wit looking back at childhood self-deception. The draft skips the reasoning entirely, collapsing the comic structure.",
+      "suggested_fix": "Restore the passage in which the boy reasons about finding 'a corner to dodge around' and insists 'this reasoning justified his apparent submission' while the old man relentlessly turned 'all his strategical points.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "as it proved fatal to young Adams. Louisa was charming, like a Romney portrait",
+      "source_locator": "paragraph on the Consulate and Louisa Johnson",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'so inviting that it proved fatal to young Adams' is a characteristically dry Adams epigram about love and marriage; the draft omits the setup sentence and moves straight to the Romney portrait simile.",
+      "suggested_fix": "Restore 'so inviting that it proved fatal to young Adams' before the Romney portrait sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "No such accident had ever happened before in human experience. For him, alone, the old universe was thrown into the ash-heap and a new one created.",
+      "source_locator": "paragraph beginning 'This problem of education, started in 1838'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the ash-heap sentence but loses 'For him, alone'—the emphatic comma-set isolation that makes the claim rhetorically distinctive.",
+      "suggested_fix": "Restore the comma-isolated 'alone': 'For him, alone, the old universe was thrown into the ash-heap.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves most major signatures, but carries multiple medium-severity voice flattenings—lost ironic asides, dropped thematic keystones, and compressed set-pieces—that collectively thin the chapter's rhetorical texture without individually triggering regeneration."
+}

@@ -1,0 +1,53 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was the wolf manner of fighting, to strike and leap away; but there was more to it than this.",
+      "source_locator": "paragraph 3, opening sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the narrator's interpretive pivot that explains the systemic logic of pack behavior—it distinguishes the individual strike from the collective ambush and is the hinge on which the scene's meaning turns. Its absence collapses the analytic commentary into mere action summary.",
+      "suggested_fix": "Restore the sentence 'It was the wolf manner of fighting, to strike and leap away; but there was more to it than this.' at the start of the pack-circle paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he saw the white camp spread out before him and knew where he was and remembered all that had passed from the time he went for a stroll with Manuel to the hole he had dug for himself the night before.",
+      "source_locator": "paragraph near 'bounded straight up into the blinding day'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's full formulation—'remembered all that had passed from the time he went for a stroll with Manuel'—is a compact retrospective that binds the entire narrative arc back to chapter one; the draft reduces it to 'remembered all from Manuel to the hole he had dug,' losing the ironic phrase 'went for a stroll with Manuel' which is characteristically loaded.",
+      "suggested_fix": "Restore the source's phrasing: 'remembered all that had passed from the time he went for a stroll with Manuel to the hole he had dug for himself the night before.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "The toil of the traces seemed the supreme expression of their being, and all that they lived for and the only thing in which they took delight.",
+      "source_locator": "paragraph on Dave and Sol-leks transformed by harness",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source adds the crucial second clause—'and all that they lived for and the only thing in which they took delight'—which carries significant interpretive weight about the dogs' essential nature and foreshadows Buck's own later transformation. The draft drops this clause entirely.",
+      "suggested_fix": "Restore the full sentence: 'The toil of the traces seemed the supreme expression of their being, and all that they lived for and the only thing in which they took delight.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He had one peculiarity which Buck was unlucky enough to discover.",
+      "source_locator": "Sol-leks paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial aside—'which Buck was unlucky enough to discover'—is a characteristically dry, ironic interjection that establishes the narrator's wry voice. Its removal slightly flattens the passage.",
+      "suggested_fix": "Reinsert 'He had one peculiarity which Buck was unlucky enough to discover' before the blind-side detail."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "and when, on the still cold nights, he pointed his nose at a star and howled long and wolflike, it was his ancestors, dead and dust, pointing nose at star and howling down through the centuries and through him. And his cadences were their cadences, the cadences which voiced their woe",
+      "source_locator": "ancestral-instinct paragraph, penultimate paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses 'And his cadences were their cadences, the cadences which voiced their woe' into a single clause appended with an em-dash, losing the anaphoric repetition of 'cadences' which is the rhythmic signature of this passage.",
+      "suggested_fix": "Restore the separate sentence: 'And his cadences were their cadences, the cadences which voiced their woe and what to them was the meaning of the stiffness, and the cold, and dark.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all high-priority signatures, including the key philosophical paragraphs on moral decay, decivilization, and ancestral instinct; the medium findings reflect partial compressions and dropped narrative commentary that modestly thin voice and interpretive texture but do not individually rise to regeneration-level severity."
+}

@@ -1,0 +1,53 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "Whatever was peculiar about him was education, not character, and came to him, directly and indirectly, as the result of that eighteenth-century inheritance which he took with his name.",
+      "source_locator": "paragraph after 'He seemed to himself quite normal'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire paragraph ('As far as the boy knew, the sickness did not affect him at all...') is the book's primary thesis statement distinguishing education from character — arguably the single most interpretively important paragraph in this chapter, and it is wholly absent from the draft.",
+      "suggested_fix": "Restore the full paragraph beginning 'As far as the boy knew, the sickness did not affect him at all' through 'eighteenth-century inheritance which he took with his name.' This is load-bearing for the book's argument and cannot be cut."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "He could never make the usual plea of irresponsibility. He accepted the situation as though he had been a party to it, and under the same circumstances would do it again, the more readily for knowing the exact values.",
+      "source_locator": "opening section, after 'he could not refuse to play his excellent hand'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence sequence is the rhetorical climax of the opening meditation on luck and consent; the ironic self-implication ('the more readily for knowing the exact values') is signature Adams voice and directly precedes the 'consciously assenting member' formulation.",
+      "suggested_fix": "Restore 'He could never make the usual plea of irresponsibility. He accepted the situation as though he had been a party to it, and under the same circumstances would do it again, the more readily for knowing the exact values.' before the 'To his life as a whole' sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "With such standards, the Bostonian could not but develop a double nature. Life was a double thing.",
+      "source_locator": "after the description of January blizzard and snow-glare, before 'Winter and summer, then, were two hostile lives'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the thematic pivot of the seasons-as-education argument; the aphoristic 'Life was a double thing' is voice-establishing and the explicit 'double nature' conclusion is the payoff of several paragraphs of buildup that the chapter's critical tradition treats as central.",
+      "suggested_fix": "Restore the closing sentence of the senses/color paragraph: 'With such standards, the Bostonian could not but develop a double nature. Life was a double thing.' before the transition to 'Winter and summer, then, were two hostile lives.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was to see many great functions--funerals and festival--in after-life, till his only thought was to see no more, but he never again witnessed anything nearly so impressive to him",
+      "source_locator": "funeral/Quincy service paragraph, near end of chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The ironic aside ('till his only thought was to see no more') is characteristic Adamsian self-deprecating voice and signals the retrospective elderly narrator; the draft collapses this to a bare assertion, erasing the ironic digression entirely.",
+      "suggested_fix": "Restore the full clause: 'He was to see many great functions—funerals and festival—in after life, till his only thought was to see no more, but he never again witnessed anything nearly so impressive to him as the last services at Quincy.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "whether she was happy or not, whether she was content or not, whether she was socially successful or not, her descendants did not surely know",
+      "source_locator": "Madam biographical paragraph, after description of Berlin years",
+      "draft_treatment": "absent",
+      "why_it_matters": "This triple-hedged formulation is characteristically Adamsian epistemic caution and voice; its absence flattens the biography of Louisa Catherine into bare fact without the narrator's self-aware comment on the limits of family knowledge.",
+      "suggested_fix": "Add a clause preserving the triply hedged 'whether she was happy or not...her descendants did not surely know' when summarizing the Berlin years."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity interpretive loss (the entire 'education not character' thesis paragraph is absent) and three medium-severity voice/interpretive failures, triggering regeneration."
+}

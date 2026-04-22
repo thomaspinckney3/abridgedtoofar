@@ -1,0 +1,98 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the meaning of an episode was not inside like a kernel but outside, enveloping the tale which brought it out only as a glow brings out a haze, in the likeness of one of these misty halos that sometimes are made visible by the spectral illumination of moonshine",
+      "source_locator": "paragraph describing Marlow as not typical, after 'And this also has been one of the dark places'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the most critically engaged sentences in Heart of Darkness—the 'glow/haze' formulation is the novel's explicit statement of its own narratological method and is cited in virtually every serious reading of the text. The draft cuts 'in the likeness of one of these misty halos that sometimes are made visible by the spectral illumination of moonshine,' removing the signature image entirely.",
+      "suggested_fix": "Restore the full sentence verbatim: '…enveloping the tale which brought it out only as a glow brings out a haze, in the likeness of one of these misty halos that sometimes are made visible by the spectral illumination of moonshine.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Mind, none of us would feel exactly like this. What saves us is efficiency—the devotion to efficiency.",
+      "source_locator": "Marlow's Roman digression, after 'The fascination of the abomination' passage, beginning 'Mind, he began again, lifting one arm from the elbow…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "'What saves us is efficiency—the devotion to efficiency' is a widely quoted, culturally famous line that sits at the heart of the novel's critique of colonialism and is the immediate pivot from the Roman analogy to Marlow's own situation; its absence removes the ironic self-implication of the European narrator.",
+      "suggested_fix": "Restore the full 'Mind' paragraph, including the Buddha pose description and the 'What saves us is efficiency' declaration, as well as the critique of the Romans as mere conquerors versus the 'idea' that redeems."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "It's queer how out of touch with truth women are. They live in a world of their own, and there has never been anything like it, and never can be. It is too beautiful altogether, and if they were to set it up it would go to pieces before the first sunset.",
+      "source_locator": "After the aunt says 'the labourer is worthy of his hire,' before 'After this I got embraced'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is critically important for interpretive debates about gender ideology in the novel (Marlow's deliberate keeping of women in their 'beautiful world' is returned to at the novel's close with the Intended); its complete absence removes a thematic keystone and a voice-defining moment of Marlow's ironic register.",
+      "suggested_fix": "Restore the full paragraph beginning 'It's queer how out of touch with truth women are' through 'would start up and knock the whole thing over.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the tidal current runs to and fro in its unceasing service, crowded with memories of men and ships… from the Golden Hind returning with her rotund flanks full of treasure… to the Erebus and Terror, bound on other conquests—and that never returned… Hunters for gold or pursuers of fame… bearing the sword, and often the torch, messengers of the might within the land, bearers of a spark from the sacred fire. What greatness had not floated on the ebb of that river into the mystery of an unknown earth!",
+      "source_locator": "The extended meditation on the Thames and English imperial history, before 'The sun set; the dusk fell'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended passage—naming the Golden Hind, the Erebus and Terror, Drake and Franklin, and culminating in 'What greatness had not floated on the ebb of that river'—is one of the most critically discussed passages in the novel, establishing the imperial-historical irony that makes Marlow's subsequent Congo narrative a counterpoint; its complete excision collapses the structural and thematic architecture of the opening.",
+      "suggested_fix": "Restore the full Thames-history meditation from 'The tidal current runs to and fro' through 'The dreams of men, the seed of commonwealths, the germs of empires.' This is non-negotiable interpretive material."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Often far away there I thought of these two, guarding the door of Darkness, knitting black wool as for a warm pall, one introducing, introducing continuously to the unknown, the other scrutinizing the cheery and foolish faces with unconcerned old eyes. Ave! Old knitter of black wool. Morituri te salutant.",
+      "source_locator": "Second description of the two women knitters in the outer office, after Marlow re-enters the waiting room",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft reduces this to a single line ('guarding the door of Darkness. Ave! Old knitter of black wool. Morituri te salutant') without 'knitting black wool as for a warm pall, one introducing, introducing continuously to the unknown, the other scrutinizing the cheery and foolish faces with unconcerned old eyes'—the rhythmically and rhetorically distinctive elaboration that gives the Latin its full weight and marks the Fates motif as deliberate.",
+      "suggested_fix": "Restore the full passage: 'knitting black wool as for a warm pall, one introducing, introducing continuously to the unknown, the other scrutinizing the cheery and foolish faces with unconcerned old eyes. Ave! Old knitter of black wool. Morituri te salutant. Not many of those she looked at ever saw her again—not half, by a long way.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "In the immutability of their surroundings the foreign shores, the foreign faces, the changing immensity of life, glide past, veiled not by a sense of mystery but by a slightly disdainful ignorance; for there is nothing mysterious to a seaman unless it be the sea itself, which is the mistress of his existence and as inscrutable as Destiny.",
+      "source_locator": "The paragraph contrasting typical seamen with Marlow, before 'The yarns of seamen have a direct simplicity'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage establishes the epistemological contrast between ordinary seamen (disdainful ignorance) and Marlow (seeking meaning outside), which is the intellectual frame for everything that follows; without it, the claim that Marlow is atypical loses its philosophical grounding.",
+      "suggested_fix": "Restore the full characterization of the typical seaman's mind and the sea-as-mistress passage to preserve the contrast with Marlow's mode of narration."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "a sea the colour of lead, a sky the colour of smoke, a kind of ship about as rigid as a concertina… Sand-banks, marshes, forests, savages,—precious little to eat fit for a civilized man, nothing but Thames water to drink. No Falernian wine here, no going ashore. Here and there a military camp lost in a wilderness, like a needle in a bundle of hay",
+      "source_locator": "Marlow's Roman commander speech, middle of the extended Roman digression",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific comic-ironic details ('No Falernian wine,' 'like a needle in a bundle of hay,' 'a kind of ship about as rigid as a concertina') are the prosodic and tonal signature of this speech; the draft reduces them to ellipses, losing the sardonic voice that makes Marlow's sympathy and distance simultaneously felt.",
+      "suggested_fix": "Restore the vivid specific inventory of the Roman commander's discomforts, including the Falernian wine, the concertina ship, and the needle-in-a-bundle-of-hay image."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "I've seen the devil of violence, and the devil of greed, and the devil of hot desire; but, by all the stars! these were strong, lusty, red-eyed devils… But as I stood on this hillside, I foresaw that in the blinding sunshine of that land I would become acquainted with a flabby, pretending, weak-eyed devil of a rapacious and pitiless folly.",
+      "source_locator": "After Marlow turns aside from the chain-gang, before he descends toward the grove of death",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'flabby devil' passage is a critical locus for readings of colonial capitalism as a distinct and degraded form of evil compared to older, more honest devils; its absence removes a key interpretive marker and a rhetorically distinctive set-piece.",
+      "suggested_fix": "Restore the full passage from 'You know I am not particularly tender' through 'How insidious he could be, too, I was only to find out several months later and a thousand miles farther.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the merry dance of death and trade goes on in a still and earthy atmosphere as of an overheated catacomb… streams of death in life, whose banks were rotting into mud… that seemed to writhe at us in the extremity of an impotent despair. It was like a weary pilgrimage amongst hints for nightmares.",
+      "source_locator": "Marlow's description of the coast as the French steamer passes trading stations, after the man-of-war episode",
+      "draft_treatment": "absent",
+      "why_it_matters": "'The merry dance of death and trade' and 'a weary pilgrimage amongst hints for nightmares' are among the most quoted phrases in the novel's African coast sequence and carry its characteristic tonal blend of absurdity and dread; their absence flattens a significant voice passage.",
+      "suggested_fix": "Restore the passage from 'We called at some more places' through 'It was like a weary pilgrimage amongst hints for nightmares.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the silence of the land went home to one's very heart—its mystery, its greatness, the amazing reality of its concealed life… I let him run on, this papier-mache Mephistopheles, and it seemed to me that if I tried I could poke my forefinger through him, and would find nothing inside but a little loose dirt, maybe.",
+      "source_locator": "After the candle-blowing scene with the brickmaker, on the riverside in moonlight",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves 'papier-mâché Mephistopheles' but cuts 'the silence of the land went home to one's very heart—its mystery, its greatness, the amazing reality of its concealed life,' which is the Africa-as-counter-presence passage that critics return to when arguing the wilderness has an autonomous moral weight; its loss is an interpretive thinning.",
+      "suggested_fix": "Restore the full riverside reflection including 'the silence of the land went home to one's very heart—its mystery, its greatness, the amazing reality of its concealed life' before the papier-mâché line."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has multiple high-severity signature losses including the 'glow/haze' narratological manifesto, the 'efficiency' passage, the Thames imperial-history meditation (Golden Hind/Erebus), and the women-and-truth paragraph, plus several medium losses of voice and interpretive material; regeneration is required."
+}

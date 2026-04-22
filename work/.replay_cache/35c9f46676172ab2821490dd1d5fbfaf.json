@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-21T22:02:04",
+  "key": "35c9f46676172ab2821490dd1d5fbfaf",
+  "model": "anthropic:claude-opus-4-7",
+  "response": {
+    "text": "{\n  \"segment_id\": \"006\",\n  \"critic\": \"signature\",\n  \"findings\": [],\n  \"verdict\": \"pass\",\n  \"summary\": \"All tagged verbatim and recognizable signatures are preserved intact; compression falls on dialogue and minor description as planned.\"\n}",
+    "input_tokens": 5,
+    "output_tokens": 94,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 15942,
+    "duration_s": 3.5479512214660645,
+    "stop_reason": "end_turn"
+  }
+}

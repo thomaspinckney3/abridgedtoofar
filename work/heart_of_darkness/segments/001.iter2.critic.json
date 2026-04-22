@@ -1,0 +1,89 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the sun sank low, and from glowing white changed to a dull red without rays and without heat, as if about to go out suddenly, stricken to death by the touch of that gloom",
+      "source_locator": "paragraph beginning 'And at last, in its curved and imperceptible fall'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This entire paragraph—the sun dying by the gloom—is a critically noted passage that pivots the opening serenity into darkness and introduces the brooding-gloom motif central to the novel's symbolic architecture. It is completely absent from the draft.",
+      "suggested_fix": "Restore the full sentence: 'And at last, in its curved and imperceptible fall, the sun sank low, and from glowing white changed to a dull red without rays and without heat, as if about to go out suddenly, stricken to death by the touch of that gloom brooding over a crowd of men.' This paragraph is a tonal keystone and should not be cut."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the fascination of the abomination—you know, imagine the growing regrets, the longing to escape, the powerless disgust, the surrender, the hate",
+      "source_locator": "In Marlow's Roman commander speech, paragraph beginning 'Or think of a decent young citizen'",
+      "draft_treatment": "absent",
+      "why_it_matters": "'The fascination of the abomination' is one of the most critically quoted phrases in the entire novel, recurring as an interpretive key throughout the critical tradition. Its complete absence is a severe signature loss.",
+      "suggested_fix": "Restore the passage: 'The fascination of the abomination—you know, imagine the growing regrets, the longing to escape, the powerless disgust, the surrender, the hate.' Insert it within the Roman digression where Marlow describes the effect of savage wilderness on a decent young citizen."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "it is impossible to convey the life-sensation of any given epoch of one's existence—that which makes its truth, its meaning—its subtle and penetrating essence. It is impossible. We live, as we dream—alone....",
+      "source_locator": "After Marlow's dream passage, paragraph beginning '... No, it is impossible'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "'We live, as we dream—alone' is one of the most famous and widely quoted lines in the novel and in Modernist literature generally. The draft preserves it but strips the entire rhetorical build-up ('No, it is impossible; it is impossible to convey the life-sensation…'), which is itself signature prose that frames and weights the line.",
+      "suggested_fix": "Restore the full paragraph: '... No, it is impossible; it is impossible to convey the life-sensation of any given epoch of one's existence—that which makes its truth, its meaning—its subtle and penetrating essence. It is impossible. We live, as we dream—alone....' The buildup is inseparable from the epigram."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the pose of a Buddha preaching in European clothes and without a lotus-flower",
+      "source_locator": "Paragraph beginning 'Mind,' he began again, lifting one arm from the elbow",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Buddha pose is one of Conrad's most discussed image-signatures in criticism of this novel, establishing Marlow's narrative persona and the Orientalist irony that frames his entire tale. The draft omits this detail entirely while rendering a compressed version of the speech.",
+      "suggested_fix": "Restore the physical description: 'lifting one arm from the elbow, the palm of the hand outwards, so that, with his legs folded before him, he had the pose of a Buddha preaching in European clothes and without a lotus-flower.' This is the novel's central image of Marlow and must be preserved."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Its light was dim, and a heavy writing-desk squatted in the middle. From behind that structure came out an impression of pale plumpness in a frock-coat. The great man himself.",
+      "source_locator": "Marlow's account of entering the Company offices, paragraph beginning 'A door opened'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Conrad's satirical portrait of the Company director—'impression of pale plumpness in a frock-coat'—is a signature piece of ironic voice that punctures colonial authority. The draft collapses the entire office visit to a single sentence, losing the satirical register entirely.",
+      "suggested_fix": "Restore the ironic interior description and the portrait of the great man, including 'an impression of pale plumpness in a frock-coat' and 'He had his grip on the handle-end of ever so many millions.' This is voice-establishing irony the draft has erased."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "they all had gone out on that stream, bearing the sword, and often the torch, messengers of the might within the land, bearers of a spark from the sacred fire. What greatness had not floated on the ebb of that river",
+      "source_locator": "The Thames reverie paragraph beginning 'The tidal current runs to and fro'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft preserves much of this paragraph verbatim but the opening framing—'We looked at the venerable stream not in the vivid flush of a short day that comes and departs for ever, but in the august light of abiding memories'—is entirely absent. This sentence establishes the temporal irony and elegiac register on which the entire Thames meditation depends.",
+      "suggested_fix": "Restore the opening of the reverie: 'We looked at the venerable stream not in the vivid flush of a short day that comes and departs for ever, but in the august light of abiding memories.' It is the rhetorical hinge of the passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like a lot of faithless pilgrims bewitched inside a rotten fence. The word 'ivory' rang in the air, was whispered, was sighed. You would think they were praying to it. A taint of imbecile rapacity blew through it all, like a whiff from some corpse.",
+      "source_locator": "Central Station description, paragraph beginning 'I went to work the next day'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'faithless pilgrims' passage and 'taint of imbecile rapacity' are critically discussed as Conrad's satirical condensation of colonial greed. The draft omits the entire passage, reducing the Central Station critique to a bare factual description.",
+      "suggested_fix": "Restore: 'They wandered here and there with their absurd long staves in their hands, like a lot of faithless pilgrims bewitched inside a rotten fence. The word \"ivory\" rang in the air, was whispered, was sighed. You would think they were praying to it. A taint of imbecile rapacity blew through it all, like a whiff from some corpse.' This passage is central to Conrad's satirical project."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the merry dance of death and trade goes on in a still and earthy atmosphere as of an overheated catacomb",
+      "source_locator": "Coast voyage paragraph beginning 'We gave her her letters'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft does preserve this phrase, but excises the surrounding framing about 'rivers, streams of death in life' and the mangroves writhing 'in the extremity of an impotent despair.' These collocated images constitute a signature sequence; isolated the key phrase loses its rhetorical weight.",
+      "suggested_fix": "The phrase is preserved but the surrounding signature prose—'streams of death in life,' 'writhe at us in the extremity of an impotent despair'—should be kept as they form an indivisible motif cluster."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I don't like work—no man does—but I like what is in the work—the chance to find yourself. Your own reality—for yourself, not for others—what no other man can ever know. They can only see the mere show, and never can tell what it really means.",
+      "source_locator": "After Marlow boards the steamboat, paragraph beginning 'I clambered on board'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the first two sentences but cuts 'what no other man can ever know. They can only see the mere show, and never can tell what it really means'—the phrase that gives the sentiment its full philosophical weight and connects to the novel's epistemological themes.",
+      "suggested_fix": "Restore the full passage including 'what no other man can ever know. They can only see the mere show, and never can tell what it really means.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft contains multiple high-severity signature losses—including the absent 'fascination of the abomination' phrase, the Buddha pose description, the dying-sun paragraph, and the incomplete 'We live, as we dream—alone' buildup—plus several medium-severity voice-flattenings that together constitute a significant failure to preserve Conrad's signature prose."
+}

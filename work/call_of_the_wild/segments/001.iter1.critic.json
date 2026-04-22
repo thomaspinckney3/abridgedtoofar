@@ -1,0 +1,53 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It stood back from the road, half hidden among the trees, through which glimpses could be caught of the wide cool veranda that ran around its four sides.",
+      "source_locator": "paragraph 2, description of Judge Miller's place",
+      "draft_treatment": "absent",
+      "why_it_matters": "London's leisurely, estate-establishing prose here is a voice-defining passage that sets the aristocratic Eden contrast; the draft collapses the full house description into a single compressed clause, losing the specific architectural and sensory texture London uses to establish what Buck is losing.",
+      "suggested_fix": "Restore at least the sentence about the house standing back from the road half hidden among trees, with glimpses of the veranda — this spatial imagery is part of the signature establishment of Buck's Edenic world."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "He plunged into the swimming tank or went hunting with the Judge's sons; he escorted Mollie and Alice, the Judge's daughters, on long twilight or early morning rambles; on wintry nights he lay at the Judge's feet before the roaring library fire",
+      "source_locator": "paragraph 4, Buck's life at the estate",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The anaphoric, cumulative rhythm of this sentence — 'he plunged… he escorted… he lay… he carried… he stalked' — is a signature prosodic feature establishing Buck's expansive domain; the draft collapses it, losing the rhetorical build.",
+      "suggested_fix": "Restore the full anaphoric list with its rhythm intact; the compression strips the sentence of the very parallelism London uses as a stylistic signature."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "During the four years since his puppyhood he had lived the life of a sated aristocrat; he had a fine pride in himself, was even a trifle egotistical, as country gentlemen sometimes become because of their insular situation.",
+      "source_locator": "paragraph 5, Buck's character description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'as country gentlemen sometimes become because of their insular situation' is the narrator's ironic social commentary — a key register marker and interpretive frame for Buck's class-based innocence; the draft omits this comparative clause entirely.",
+      "suggested_fix": "Restore the full simile including 'as country gentlemen sometimes become because of their insular situation' — it is the chapter's clearest instance of London's ironic narrator voice and sets up the class-fall theme."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "his eyes turned blood-shot, and he was metamorphosed into a raging fiend. So changed was he that the Judge himself would not have recognized him",
+      "source_locator": "paragraph describing two days in the express car, near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The clause 'So changed was he that the Judge himself would not have recognized him' is an interpretively crucial sentence — it marks the irreversibility of the transformation and ties the civilized past to the savage present; the draft retains 'metamorphosed into a raging fiend' but drops the Judge clause.",
+      "suggested_fix": "Restore 'So changed was he that the Judge himself would not have recognized him' immediately after 'metamorphosed into a raging fiend' — it is the thematic hinge of the chapter's transformation arc."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "There he lay for the remainder of the weary night, nursing his wrath and wounded pride. He could not understand what it all meant.",
+      "source_locator": "paragraph after Buck is caged at the saloon",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The interiority — 'He could not understand what it all meant. What did they want with him, these strange men?' — is rendered in the draft as mere summary; the direct free indirect discourse is a voice feature London uses consistently.",
+      "suggested_fix": "Restore the interior questioning: 'He could not understand what it all meant. What did they want with him, these strange men? Why were they keeping him pent up in this narrow crate?'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft faithfully compresses most narrative events but loses three or more medium-severity signature failures: the ironic 'country gentlemen' social-commentary clause, the anaphoric rhythm of Buck's estate life, and the thematically crucial 'the Judge himself would not have recognized him' sentence, together constituting sufficient grounds for regeneration."
+}

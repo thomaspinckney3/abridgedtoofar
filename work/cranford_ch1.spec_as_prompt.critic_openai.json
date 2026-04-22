@@ -1,0 +1,53 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the little boys mobbed it, and called it \u201ca stick in petticoats.\u201d",
+      "source_locator": "after the red-silk umbrella description, paragraph 10",
+      "draft_treatment": "absent",
+      "why_it_matters": "The nickname \u201ca stick in petticoats\u201d is one of the best-known comic taglines from Cranford; cutting it erases a culturally quoted, rhythmically punchy line that anchors the umbrella anecdote.",
+      "suggested_fix": "Restore the full phrase verbatim within the umbrella paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "\u201cOur friends have sent to inquire how you are after your journey to-night, my dear \u2026 be at liberty after twelve\u2014from twelve to three are our calling hours.\u201d",
+      "source_locator": "visiting-rules dialogue, paragraphs 14\u201315",
+      "draft_treatment": "absent",
+      "why_it_matters": "This stylised, mock-ceremonial announcement sets up the satire of Cranford etiquette; its excision flattens the narrator\u2019s ironic voice and the social-ritual motif.",
+      "suggested_fix": "Re-insert the full model speech introducing the calling-hour code before the quarter-hour debate."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the inhabitants of Cranford kept early hours, and clattered home in their pattens, under the guidance of a lantern-bearer, about nine o\u2019clock at night; and the whole town was abed and asleep by half-past ten.",
+      "source_locator": "paragraph beginning \u201cThere were one or two consequences\u2026\u201d",
+      "draft_treatment": "absent",
+      "why_it_matters": "The vivid auditory image of pattens and the lantern-bearer crystallises Cranford\u2019s modest decorum; deleting it removes a signature atmospheric detail repeatedly cited by critics.",
+      "suggested_fix": "Restore the early-hours sentence intact, including \u2018clattered home in their pattens\u2019 and the lantern-bearer reference."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Wafer bread-and-butter and sponge-biscuits were all that the Honourable Mrs Jamieson gave; and she was sister-in-law to the late Earl of Glenmire, although she did practise such \u201celegant economy.\u201d",
+      "source_locator": "same paragraph as pattens sentence, second half",
+      "draft_treatment": "absent",
+      "why_it_matters": "This juxtaposition of frugality with aristocratic connection underpins the novel\u2019s theme of \u2018elegant economy\u2019. The draft lifts the phrase but drops the framing example that gives it ironic bite.",
+      "suggested_fix": "Insert the wafer-bread example immediately before the \u2018Elegant economy!\u2019 exclamation."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The surgeon has his round of thirty miles, and sleeps at Cranford; but every man cannot be a surgeon.",
+      "source_locator": "opening section, paragraph 3",
+      "draft_treatment": "absent",
+      "why_it_matters": "The throwaway quip sharpens the narrator\u2019s mock-logic on why men are unnecessary; losing it slightly dulls the humour of the Amazonian set-up.",
+      "suggested_fix": "Restore the surgeon aside after \u201cWhat could they do if they were there?\u201d"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Key comic taglines (\u201ca stick in petticoats\u201d), ritual-etiquette speeches, and atmospheric details (pattens, wafer bread) are missing or flattened; high-profile signature loss requires regeneration."
+}

@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She supposes herself to be an inscrutable Being, quite out of the reach and ken of ordinary mortals—seeing herself in her glass, where indeed she looks so.",
+      "source_locator": "paragraph beginning 'Has Mr. Tulkinghorn any idea of this himself?'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source opens with the rhetorical question 'Has Mr. Tulkinghorn any idea of this himself? It may be so, or it may not, but there is this remarkable circumstance to be noted' — a signature narratorial aside that frames the irony deliberately. The draft drops this framing entirely and jumps straight to 'As to my Lady Dedlock—who supposes herself…', losing the ironic setup.",
+      "suggested_fix": "Restore the transitional sentence 'Has Mr. Tulkinghorn any idea of this himself? It may be so, or it may not, but there is this remarkable circumstance to be noted in everything associated with my Lady Dedlock' before the inscrutable Being passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "who, humbly affecting to follow with profound subservience, lead her and her whole troop after them; who, in hooking one, hook all and bear them off as Lemuel Gulliver bore away the stately fleet of the majestic Lilliput.",
+      "source_locator": "paragraph beginning 'Therefore, while Mr. Tulkinghorn may not know'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The Gulliver simile is placed at the climax of the extended satirical passage about the tradespeople who manage Lady Dedlock; the draft repositions it to end the paragraph rather than reserving it for the climactic position, and the elaborate three-part Blaze-and-Sparkle / Sheen-and-Gloss / Sladdery buildup is heavily compressed, losing the escalating comic rhythm that the Gulliver punchline depends on.",
+      "suggested_fix": "Restore the full three-speaker sequence with their characteristic repeated phrases ('our people', 'my high connexion sir') and keep the Gulliver simile in its original climactic position at the end."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He would on the whole admit nature to be a good idea (a little low, perhaps, when not enclosed with a park-fence), but an idea dependent for its execution on your great county families.",
+      "source_locator": "paragraph beginning 'Sir Leicester Dedlock is only a baronet'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source says Sir Leicester 'would on the whole admit' — the hedged condescension is signature characterisation. The draft shortens to 'Nature he admits to be a good idea', dropping 'would on the whole' and the verb construction that captures his patrician tentativeness.",
+      "suggested_fix": "Restore 'He would on the whole admit nature to be a good idea' in place of the flat 'Nature he admits'."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "It expresses, as it were, the steward of the legal mysteries, the butler of the legal cellar, of the Dedlocks.",
+      "source_locator": "paragraph beginning 'Sir Leicester Dedlock is with my Lady'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full passage contextualising why Sir Leicester likes Tulkinghorn's dress — 'It is eminently respectable, and likewise, in a general way, retainer-like' — is reduced to a single clause. The metaphor 'steward of the legal mysteries, butler of the legal cellar' survives as a fragment but the build-up is lost.",
+      "suggested_fix": "Retain the intermediate sentence 'It is eminently respectable, and likewise, in a general way, retainer-like' before the steward/butler metaphor."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful with most signatures intact; two medium findings (the dropped Tulkinghorn ironic-aside framing and the compressed Blaze-and-Sparkle / Gulliver satirical sequence) represent voice flattening but do not individually reach high severity, and the total of two medium findings falls below the regeneration threshold."
+}

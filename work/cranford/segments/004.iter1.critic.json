@@ -1,0 +1,71 @@
+{
+  "segment_id": "004",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "The Honourable Mrs Jamieson has only just quitted me... But from some mundane failings who is altogether free?",
+      "source_locator": "Miss Jenkyns's letter, spanning roughly 8 paragraphs from 'The Honourable Mrs Jamieson' to 'altogether free'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Miss Jenkyns's letter is one of the most sustained and distinctive voice performances in the chapter — its ironic stateliness, Johnsonian syntax, and barbed asides ('deficiency in the spirit of innocent curiosity,' 'improving his taste by holding converse with an elegant and refined member of the British aristocracy,' 'But from some mundane failings who is altogether free?') are the core of her characterisation. The draft reduces it to two flat sentences of reported speech, erasing the letter's entire rhetorical texture and all its quoted phrases.",
+      "suggested_fix": "Restore the letter at substantial length, preserving at minimum: 'You will not easily conjecture,' 'deficiency in the spirit of innocent curiosity,' 'the feast of reason and the flow of soul,' 'pure wells of English undefiled,' and 'But from some mundane failings who is altogether free?' These phrases are the signature of Miss Jenkyns's voice and cannot be paraphrased away."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I had often occasion to notice the use that was made of fragments and small opportunities in Cranford; the rose-leaves that were gathered ere they fell to make into a potpourri for someone who had no garden",
+      "source_locator": "Paragraph beginning 'I had often occasion to notice the use that was made of fragments'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This paragraph is the thematic keystone of the entire chapter and of Cranford as a book — it encapsulates the novel's central moral vision about small kindnesses and social solidarity. The critical tradition consistently returns to it. The draft collapses it into a single list sentence ('Our ladies gathered rose-leaves for potpourri, sent lavender to strew drawers'), stripping it of its reflective, generalising voice and its interpretive weight entirely.",
+      "suggested_fix": "Restore the paragraph's opening generalisation ('the use that was made of fragments and small opportunities in Cranford') with the specific images of rose-leaves, lavender bundles, and the evaluative comment ('Things that many would despise, and actions which it seemed scarcely worth while to perform, were all attended to in Cranford') before moving to the clove-apple detail."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "The great rough carter puckered up his manly face, and turned away to hide his tears. I turned to Miss Jenkyns. She looked very ill, as if she were going to faint",
+      "source_locator": "End of the carter's speech, paragraph beginning 'Please, mum, it is true'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The image of the rough carter turning away to hide his tears is one of the most emotionally resonant and distinctively rendered moments in the chapter — a textually unique detail that defines the Captain's impact on all social classes. Its absence, along with Miss Jenkyns looking 'very ill, as if she were going to faint,' erases the double emotional climax of the accident scene.",
+      "suggested_fix": "Restore 'The great rough carter puckered up his manly face, and turned away to hide his tears' and the description of Miss Jenkyns looking as if she were going to faint before she calls for her bonnet."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "she could even smile—a faint, sweet, wintry smile—as if to reassure us of her power to endure; but her look made our eyes fill suddenly with tears, more than if she had cried outright",
+      "source_locator": "Paragraph beginning 'Yet she came back almost calm'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the most prosodically distinctive sentence in the Miss Jessie strand — 'faint, sweet, wintry smile' is a textually unique phrase that carries the emotional and thematic weight of her character. Its complete absence flattens the crucial scene of her return from the funeral.",
+      "suggested_fix": "Restore at minimum 'a faint, sweet, wintry smile—as if to reassure us of her power to endure; but her look made our eyes fill suddenly with tears, more than if she had cried outright.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "The poor people will leave their earliest vegetables at our door for her. They speak short and gruff, as if they were ashamed of it: but I am sure it often goes to my heart to see their thoughtfulness",
+      "source_locator": "Miss Jessie's speech beginning 'But, to be sure, what a town Cranford is for kindness!'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full speech — especially 'They speak short and gruff, as if they were ashamed of it' — is a signature rendering of Cranford's peculiar social character: pride and generosity combined. The draft reduces Miss Jessie's speech to a single clause, losing both the social observation and her distinctive voice.",
+      "suggested_fix": "Restore the full passage including 'what a town Cranford is for kindness!' and 'They speak short and gruff, as if they were ashamed of it: but I am sure it often goes to my heart to see their thoughtfulness.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "unless Captain Brown has some reason for it, he never speaks about being poor; and he walked along by his lordship looking as happy and cheerful as a prince",
+      "source_locator": "Exchange between narrator and Miss Jessie, paragraph beginning 'But why does not this Lord Mauleverer do something'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange — including the question 'why does not this Lord Mauleverer do something for the man who saved his life?' — is interpretively important: it explains why the Captain's poverty persists despite his social connections, and it characterises his dignity. The entire dialogue is absent from the draft.",
+      "suggested_fix": "Restore the exchange, including Miss Jessie's explanation that the Captain 'never speaks about being poor' and 'walked along by his lordship looking as happy and cheerful as a prince.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Miss Matty rushed out into the street at once, and collared the man who was telling the tale. 'Come in—come to my sister at once, Miss Jenkyns, the rector's daughter. Oh, man, man! say it is not true'",
+      "source_locator": "Paragraph beginning 'Jenny came back with a white face of terror'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Miss Matty rushing out and collaring the carter, crying 'Oh, man, man! say it is not true,' is a signature character moment that establishes her impulsive warmth. It is entirely absent from the draft, which gives the carter's account without this framing. The detail of the wet boots on the new carpet — 'and no one regarded it' — is also missing, an important ironic callback.",
+      "suggested_fix": "Restore Miss Matty's rush into the street, her cry, and the detail of the carter standing with wet boots on the new carpet with 'no one regarded it.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has three high-severity failures — erasure of Miss Jenkyns's full letter (the chapter's primary voice performance), collapse of the thematic 'fragments and small opportunities' paragraph (the novel's moral keystone), and omission of the carter's emotional coda — plus four medium failures including Miss Jessie's 'wintry smile,' her full speech about Cranford's poor, the Lord Mauleverer dialogue, and Miss Matty's rush into the street; regeneration is required."
+}

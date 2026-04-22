@@ -1,0 +1,1734 @@
+{
+  "book_id": "mobydick",
+  "title": "Moby-Dick; or, The Whale",
+  "author": "Herman Melville",
+  "source_word_count": 177641,
+  "target_word_count": 41850,
+  "overall_compression_ratio": 4.24,
+  "structural_classification": "sequential",
+  "refusal": null,
+  "modernization_level": "L2",
+  "modernization_rationale": "Melville's 1851 prose is dense with archaic diction, biblical cadence, and 19th-century maritime jargon; light modernization of obsolete vocabulary and sentence untangling aids comprehension while preserving the signature voice.",
+  "cultural_depth": "high",
+  "indirection_budget_applies": true,
+  "segments": [
+    {
+      "id": "001",
+      "title": "Etymology & Extracts",
+      "kind": "section",
+      "diegetic_status": "extradiegetic",
+      "source_start_hint": "ETYMOLOGY. (Supplied by a Late Consumptive Usher",
+      "source_end_hint": "King of the boundless sea.\" \u2014Whale Song.",
+      "source_word_count_est": 3200,
+      "target_word_count": 250,
+      "relative_compression": 12.8,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "structural",
+          "passage_hint": "pale Usher\u2014threadbare in coat, heart, body, and brain",
+          "why": "Establishes the book's metatextual, scholarly-parodic frame; critically engaged as opening device."
+        }
+      ],
+      "notes": "Compress drastically to a short prefatory note. Preserve the Usher and Sub-Sub-Librarian conceit in a sentence or two; drop nearly all extracts but keep one or two signature quotes (Genesis 'great whales'; Hobbes 'Leviathan'; a Hakluyt or Paradise Lost snippet) to preserve the framing gesture."
+    },
+    {
+      "id": "002",
+      "title": "Loomings",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Call me Ishmael. Some years ago\u2014never mind how long",
+      "source_end_hint": "one grand hooded phantom, like a snow hill in the air.",
+      "source_word_count_est": 2100,
+      "target_word_count": 900,
+      "relative_compression": 0.68,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "Call me Ishmael.",
+          "why": "One of the most famous opening lines in world literature; must be preserved verbatim."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul... methodically knocking people's hats off",
+          "why": "The signature Ishmaelian register \u2014 grandiloquent-ironic cadence, anaphora, and deadpan self-mockery \u2014 established here as the book's voice."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship.",
+          "why": "Famous formulation of seagoing as suicide-substitute; essential thematic keynote."
+        },
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "meditation and water are wedded for ever",
+          "why": "Crystallizes the chapter's water-reverie argument that runs through the whole novel."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "the story of Narcissus... the ungraspable phantom of life; and this is the key to it all",
+          "why": "The novel's explicit hermeneutic key \u2014 heavily cited in criticism; cannot be cut."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Who ain't a slave? Tell me that... the universal thump is passed round",
+          "why": "Defines Ishmael's democratic-stoic ethic and his characteristic rhetorical question; load-bearing for his social vision."
+        },
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "Grand Contested Election for the Presidency of the United States. WHALING VOYAGE BY ONE ISHMAEL. BLOODY BATTLE IN AFFGHANISTAN.",
+          "why": "The playbill gag \u2014 distinctive typographic/structural joke framing fate as theater; preserve format."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "I am tormented with an everlasting itch for things remote. I love to sail forbidden seas, and land on barbarous coasts.",
+          "why": "Ishmael's self-definition as seeker of the remote \u2014 programmatic for the whole voyage."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "the great flood-gates of the wonder-world swung open... one grand hooded phantom, like a snow hill in the air",
+          "why": "Iconic closing image that summons the white whale; famous and must close the chapter."
+        }
+      ],
+      "notes": "This is the novel's overture; compression should be light on voice and imagery, heavier on the middle landscape-painting/Saco-valley and Tennessee-poet passages if budget forces cuts. Preserve the opening sentence verbatim, the Narcissus key verbatim, and the closing 'snow hill in the air' image verbatim. Retain the playbill's three-line typographic form. Keep the rhetorical-question cascades (Why did the old Persians... Why did the Greeks...) in at least abbreviated form \u2014 their cumulative pressure is the voice. Retain 'Who ain't a slave?' as direct quotation. The Cato/pistol-and-ball line and 'damp, drizzly November in my soul' are both culturally famous and should survive as near-verbatim. Modernize L2 only lightly here; Ishmael's periodic sentences are themselves the signature."
+    },
+    {
+      "id": "003",
+      "title": "The Carpet-Bag",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I stuffed a shirt or two into my old carpet-bag",
+      "source_end_hint": "see what sort of a place this \"Spouter\" may be.",
+      "source_word_count_est": 1800,
+      "target_word_count": 450,
+      "relative_compression": 1.0,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Coffin?\u2014Spouter?\u2014Rather ominous",
+          "why": "Establishes Ishmael's wry, foreboding voice and the novel's ironic onomastics."
+        }
+      ],
+      "notes": "Compress New Bedford wanderings; preserve Euroclydon / Lazarus / Dives reflection as it foreshadows thematic coldness."
+    },
+    {
+      "id": "004",
+      "title": "The Spouter-Inn",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Entering that gable-ended Spouter-Inn",
+      "source_end_hint": "I turned in, and never slept better in my life.",
+      "source_word_count_est": 5800,
+      "target_word_count": 1400,
+      "relative_compression": 1.0,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "the oilpainting so thoroughly besmoked",
+          "why": "The mysterious painting is a symbolic keystone prefiguring the whale-impaled ship."
+        },
+        {
+          "origin": "cultural",
+          "category": "character",
+          "passage_hint": "Better sleep with a sober cannibal than a drunken Christian",
+          "why": "Famous Ishmael aphorism; pivot of his conversion to Queequeg."
+        },
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "Queequeg enters with tomahawk",
+          "why": "First encounter with Queequeg, the novel's great friendship."
+        }
+      ],
+      "notes": "Preserve the painting description, Peter Coffin's teasing, and the full comedy of Queequeg's arrival through the 'sober cannibal' line. Compress Ishmael's prolonged deliberation about the harpooneer."
+    },
+    {
+      "id": "005",
+      "title": "The Counterpane",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Upon waking next morning about daylight",
+      "source_end_hint": "sporting his harpoon like a marshal's baton.",
+      "source_word_count_est": 1900,
+      "target_word_count": 500,
+      "relative_compression": 1.0,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Queequeg's arm thrown over me in the most loving and affectionate manner",
+          "why": "Central queer/intimate image; foundational to Ishmael-Queequeg bond and much critical discussion."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "supernatural hand in mine",
+          "why": "The childhood stepmother memory parallels Ahab's later isolation; thematically load-bearing."
+        }
+      ],
+      "notes": "Preserve the stepmother memory and the bridegroom-clasp image; trim toilet/boot comedy."
+    },
+    {
+      "id": "006",
+      "title": "Breakfast & The Street & The Chapel",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I quickly followed suit, and descending into the bar-room",
+      "source_end_hint": "stave my soul, Jove himself cannot.",
+      "source_word_count_est": 2700,
+      "target_word_count": 550,
+      "relative_compression": 1.25,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "Faith, like a jackal, feeds among the tombs",
+          "why": "Key theological aphorism in the Whaleman's Chapel."
+        },
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "black-bordered marbles which cover no ashes",
+          "why": "Foreshadows the Pequod's doom; sets elegiac tone."
+        }
+      ],
+      "notes": "Merge chapters 5-7. Compress street color. Preserve the chapel's marble cenotaphs, the jackal/faith line, and Ishmael's 'stave my soul' defiance."
+    },
+    {
+      "id": "007",
+      "title": "The Pulpit & The Sermon",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I had not been seated very long ere a man",
+      "source_end_hint": "left alone in the place.",
+      "source_word_count_est": 4400,
+      "target_word_count": 1500,
+      "relative_compression": 0.75,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "the pulpit is ever this earth's foremost part",
+          "why": "Famous figural image of the pulpit as ship's prow."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Delight is to him who gives no quarter in the truth",
+          "why": "Father Mapple's Jonah sermon is a critical and thematic pillar\u2014disobedience, prophecy, repentance mirror Ahab."
+        },
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "The ribs and terrors in the whale",
+          "why": "The hymn's pealing cadence is prosodically distinctive and must be preserved."
+        }
+      ],
+      "notes": "Preserve Father Mapple's ladder ascent, the hymn (at least opening and closing stanzas), and the sermon's core arc: Jonah's flight, repentance, and the second lesson ('woe to him'). This sermon thematically mirrors Ahab; keep the 'Delight is to him' peroration. Compress the Jonah-on-the-ship narration modestly."
+    },
+    {
+      "id": "008",
+      "title": "A Bosom Friend & Nightgown",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Returning to the Spouter-Inn from the Chapel",
+      "source_end_hint": "by little and little we found ourselves sitting up",
+      "source_word_count_est": 2600,
+      "target_word_count": 700,
+      "relative_compression": 0.93,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "henceforth we were married",
+          "why": "Iconic declaration of the Ishmael-Queequeg bond."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "I must then unite with him in his; ergo, I must turn idolator",
+          "why": "Famous syllogism of religious relativism; frequently cited in criticism."
+        }
+      ],
+      "notes": "Merge chapters 10-11. Preserve the 'married' pronouncement, the Presbyterian syllogism, and the cosy bed-chat framing."
+    },
+    {
+      "id": "009",
+      "title": "Biographical & Wheelbarrow",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Queequeg was a native of Rokovoko",
+      "source_end_hint": "We cannibals must help these Christians.",
+      "source_word_count_est": 3100,
+      "target_word_count": 700,
+      "relative_compression": 1.11,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "It is not down in any map; true places never are",
+          "why": "Widely quoted Melville aphorism."
+        },
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "mutual, joint-stock world",
+          "why": "Queequeg's cross-cultural philosophy; his rescue of the greenhorn is a moral keystone."
+        }
+      ],
+      "notes": "Merge. Preserve 'true places never are' and the rescue of the bumpkin with the 'mutual, joint-stock world' closer. Compress Queequeg's backstory."
+    },
+    {
+      "id": "010",
+      "title": "Nantucket & Chowder",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Nothing more happened on the passage worthy the mentioning",
+      "source_end_hint": "let's have a couple of smoked herring",
+      "source_word_count_est": 2400,
+      "target_word_count": 500,
+      "relative_compression": 1.2,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "he alone resides and riots on the sea",
+          "why": "The Nantucketer hymn is a prosodic set-piece."
+        }
+      ],
+      "notes": "Merge. Compress the Try Pots comic business; retain the mythic Nantucketer passage as condensed prose poem."
+    },
+    {
+      "id": "011",
+      "title": "The Ship",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "In bed we concocted our plans for the morrow",
+      "source_end_hint": "dark Ahab slipped my mind.",
+      "source_word_count_est": 5200,
+      "target_word_count": 1500,
+      "relative_compression": 0.87,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "a cannibal of a craft, tricking herself forth in the chased bones of her enemies",
+          "why": "The Pequod's defining image; essential to the novel's symbolic architecture."
+        },
+        {
+          "origin": "critical",
+          "category": "character",
+          "passage_hint": "a grand, ungodly, god-like man, Captain Ahab",
+          "why": "Peleg's famous introduction of Ahab; frequently cited."
+        },
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "all mortal greatness is but disease",
+          "why": "Key Melvillean aphorism setting up Ahab's tragic frame."
+        }
+      ],
+      "notes": "Preserve the Pequod's description, the comic Peleg/Bildad lay negotiation (condensed), and especially Peleg's speech introducing Ahab. Keep 'Ahab has his humanities.'"
+    },
+    {
+      "id": "012",
+      "title": "The Ramadan & His Mark",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "As Queequeg's Ramadan, or Fasting and Humiliation",
+      "source_end_hint": "save an end of tarred twine",
+      "source_word_count_est": 4700,
+      "target_word_count": 700,
+      "relative_compression": 1.69,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "the great and everlasting First Congregation of this whole worshipping world",
+          "why": "Ishmael's ecumenical comic speech to Bildad."
+        }
+      ],
+      "notes": "Compress heavily. Keep the comic signing scene and Ishmael's First Congregational Church speech; trim the long Ramadan vigil."
+    },
+    {
+      "id": "013",
+      "title": "The Prophet",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Shipmates, have ye shipped in that ship?",
+      "source_end_hint": "I pronounced him in my heart, a humbug.",
+      "source_word_count_est": 1800,
+      "target_word_count": 500,
+      "relative_compression": 1.0,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Elijah",
+          "why": "Elijah's prophetic warnings structurally foreshadow the tragedy; name is allusive."
+        }
+      ],
+      "notes": "Preserve Elijah's ominous half-hints and the naming reveal. Compress the doubled meeting in Chapter 21."
+    },
+    {
+      "id": "014",
+      "title": "All Astir & Going Aboard",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "A day or two passed, and there was great activity",
+      "source_end_hint": "Captain Ahab remained invisibly enshrined within his cabin.",
+      "source_word_count_est": 2800,
+      "target_word_count": 500,
+      "relative_compression": 1.25,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Aunt Charity",
+          "why": "Brief but memorable sister-of-charity figure."
+        }
+      ],
+      "notes": "Merge chapters 20-21. Compress preparations and the second Elijah encounter; retain the rigger-as-corpse scene briefly."
+    },
+    {
+      "id": "015",
+      "title": "Merry Christmas",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "At length, towards noon, upon the final dismissal",
+      "source_end_hint": "blindly plunged like fate into the lone Atlantic.",
+      "source_word_count_est": 1900,
+      "target_word_count": 500,
+      "relative_compression": 1.0,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "blindly plunged like fate into the lone Atlantic",
+          "why": "Prosodic punctuation of the voyage's launch."
+        },
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Sweet fields beyond the swelling flood",
+          "why": "Bildad's hymn; elegiac departure note."
+        }
+      ],
+      "notes": "Preserve Peleg's departure rage, Bildad's parting blessing, and the closing plunge. Trim."
+    },
+    {
+      "id": "016",
+      "title": "The Lee Shore",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Some chapters back, one Bulkington was spoken of",
+      "source_end_hint": "straight up, leaps thy apotheosis!",
+      "source_word_count_est": 550,
+      "target_word_count": 400,
+      "relative_compression": 0.55,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "in landlessness alone resides highest truth",
+          "why": "One of Melville's most quoted passages; Bulkington's 'stoneless grave.'"
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "all deep, earnest thinking is but the intrepid effort of the soul to keep the open independence of her sea",
+          "why": "Thematic keystone of the novel's philosophy."
+        }
+      ],
+      "notes": "Preserve in near-full; this six-inch chapter is a prose poem and thematic anchor."
+    },
+    {
+      "id": "017",
+      "title": "The Advocate & Postscript",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "As Queequeg and I are now fairly embarked",
+      "source_end_hint": "we whalemen supply your kings and queens",
+      "source_word_count_est": 2400,
+      "target_word_count": 350,
+      "relative_compression": 1.71,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "a whale-ship was my Yale College and my Harvard",
+          "why": "Famous autobiographical aphorism."
+        }
+      ],
+      "notes": "Compress heavily. Preserve 'Yale College and Harvard' line and the coronation-oil joke. Drop most historical catalogue."
+    },
+    {
+      "id": "018",
+      "title": "Knights and Squires (Starbuck)",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The chief mate of the Pequod was Starbuck",
+      "source_end_hint": "bear me out in it, O God!",
+      "source_word_count_est": 2000,
+      "target_word_count": 750,
+      "relative_compression": 0.8,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "character",
+          "passage_hint": "I will have no man in my boat who is not afraid of a whale",
+          "why": "Starbuck's defining ethic; sets up his tragic limitation."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "thou just Spirit of Equality",
+          "why": "Melville's democratic invocation; critically important."
+        }
+      ],
+      "notes": "Preserve Starbuck's portrait and the 'democratic dignity' invocation ('Thou who didst pick up Andrew Jackson'); trim some description."
+    },
+    {
+      "id": "019",
+      "title": "Knights and Squires (Stubb, Flask, Harpooneers)",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Stubb was the second mate",
+      "source_end_hint": "hailed a hero there!",
+      "source_word_count_est": 2200,
+      "target_word_count": 650,
+      "relative_compression": 1.02,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Isolatoes",
+          "why": "Key coinage for the crew's cosmopolitan isolation."
+        },
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Anacharsis Clootz deputation",
+          "why": "Defines the Pequod's symbolic democratic cosmos."
+        }
+      ],
+      "notes": "Introduce Stubb, Flask, Tashtego, Daggoo, Pip, Fedallah-precursor. Keep Isolatoes passage."
+    },
+    {
+      "id": "020",
+      "title": "Ahab",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "For several days after leaving Nantucket",
+      "source_end_hint": "soon flowered out in a smile.",
+      "source_word_count_est": 1900,
+      "target_word_count": 800,
+      "relative_compression": 0.59,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "character",
+          "passage_hint": "Captain Ahab stood upon his quarter-deck",
+          "why": "First appearance of Ahab; the livid brand and ivory leg."
+        },
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "moody stricken Ahab stood before them with a crucifixion in his face",
+          "why": "Canonical phrase."
+        }
+      ],
+      "notes": "Preserve Ahab's first appearance at length: the scar, ivory leg, posture, and crucifixion image."
+    },
+    {
+      "id": "021",
+      "title": "Enter Ahab; to Him, Stubb & The Pipe & Queen Mab",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Some days elapsed, and ice and icebergs all astern",
+      "source_end_hint": "Stand by for it, Flask.",
+      "source_word_count_est": 2800,
+      "target_word_count": 700,
+      "relative_compression": 1.0,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Down, dog, and kennel!",
+          "why": "Ahab's first outburst of imperious contempt."
+        }
+      ],
+      "notes": "Merge 29-31. Preserve the 'Down, dog' scene, Ahab's pipe-tossing, and Stubb's dream. Compress Stubb's monologue."
+    },
+    {
+      "id": "022",
+      "title": "Cetology",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Already we are boldly launched upon the deep",
+      "source_end_hint": "Time, Strength, Cash, and Patience!",
+      "source_word_count_est": 5500,
+      "target_word_count": 500,
+      "relative_compression": 11.0,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "structural",
+          "passage_hint": "This whole book is but a draught\u2014nay, but the draught of a draught",
+          "why": "Famous meta-commentary on the novel's method; must be preserved."
+        },
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "Folio, Octavo, Duodecimo",
+          "why": "Defines the book's encyclopedic taxonomic parody."
+        }
+      ],
+      "notes": "Compress drastically. Preserve the bibliographical system conceit (Folio/Octavo/Duodecimo) in a paragraph; end with the 'draught of a draught' and 'God keep me from ever completing anything' lines."
+    },
+    {
+      "id": "023",
+      "title": "The Specksnyder & The Cabin-Table",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Concerning the officers of the whale-craft",
+      "source_end_hint": "fed upon the sullen paws of its gloom!",
+      "source_word_count_est": 3400,
+      "target_word_count": 600,
+      "relative_compression": 1.42,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Ahab's soul, shut up in the caved trunk of his body",
+          "why": "Key image of Ahab's inner isolation."
+        },
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "sultanism of his brain",
+          "why": "Defines Ahab's mode of power."
+        }
+      ],
+      "notes": "Merge. Compress the satirical cabin dinner but preserve the 'sultanism' passage and the Grisly Bear closing image."
+    },
+    {
+      "id": "024",
+      "title": "The Mast-Head",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It was during the more pleasant weather",
+      "source_end_hint": "Heed it well, ye Pantheists!",
+      "source_word_count_est": 3500,
+      "target_word_count": 700,
+      "relative_compression": 1.25,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "takes the mystic ocean at his feet for the visible image of that deep, blue, bottomless soul",
+          "why": "The Pantheist passage is among the most critically discussed in American literature."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "Heed it well, ye Pantheists!",
+          "why": "Famous warning-closer."
+        }
+      ],
+      "notes": "Preserve the final third\u2014the reverie on identity dissolving into ocean and the 'Heed it well' warning. Compress the historical mast-head catalogue."
+    },
+    {
+      "id": "025",
+      "title": "The Quarter-Deck",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It was not a great while after the affair of the pipe",
+      "source_end_hint": "Ahab retired within his cabin.",
+      "source_word_count_est": 3600,
+      "target_word_count": 2200,
+      "relative_compression": 0.61,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "All visible objects, man, are but as pasteboard masks",
+          "why": "The most famous single speech in Moby-Dick; thematic keystone."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "I'd strike the sun if it insulted me",
+          "why": "Iconic Ahabian utterance."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "Death to Moby Dick!",
+          "why": "The oath; ritual center of the novel."
+        },
+        {
+          "origin": "critical",
+          "category": "narrative",
+          "passage_hint": "doubloon nailed to the mast",
+          "why": "Symbolic object returning throughout the novel."
+        }
+      ],
+      "notes": "Preserve at near-full compression: the doubloon-nailing, the crew's roused chorus, Starbuck's objection, Ahab's pasteboard-masks speech, the ritual drinking, and the harpoon-socket oath. This is the moral and dramatic fulcrum of the book."
+    },
+    {
+      "id": "026",
+      "title": "Sunset, Dusk, First Night-Watch, Midnight Forecastle",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I leave a white and turbid wake",
+      "source_end_hint": "preserve him from all men that have no bowels to feel fear!",
+      "source_word_count_est": 2800,
+      "target_word_count": 900,
+      "relative_compression": 1.04,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "The path to my fixed purpose is laid with iron rails",
+          "why": "Iconic self-definition of Ahab's monomania."
+        },
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "my one cogged circle fits into all their various wheels",
+          "why": "Ahab's Byronic soliloquy."
+        },
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "Stubb solus... Starbuck leaning against it",
+          "why": "The Shakespearean interior-monologue quartet is formally distinctive."
+        }
+      ],
+      "notes": "Merge 37-40. Preserve Ahab's iron-rails soliloquy, Starbuck's 'my soul is more than matched,' Stubb's laughter, and a condensed version of the forecastle's polyphonic sailor-chorus ending with Pip's prayer."
+    },
+    {
+      "id": "027",
+      "title": "Moby Dick",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I, Ishmael, was one of that crew",
+      "source_end_hint": "could see naught in that brute but the deadliest ill.",
+      "source_word_count_est": 3600,
+      "target_word_count": 1800,
+      "relative_compression": 0.8,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "all that most maddens and torments",
+          "why": "Classic statement of Ahab's symbolic projection onto the whale."
+        },
+        {
+          "origin": "critical",
+          "category": "narrative",
+          "passage_hint": "Moby Dick had reaped away Ahab's leg, as a mower a blade of grass",
+          "why": "The originary wound; essential backstory."
+        },
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "monomaniac incarnation of all those malicious agencies",
+          "why": "Defines Ahab's psychology."
+        }
+      ],
+      "notes": "Preserve the account of the White Whale's legend, the originary encounter where Ahab lost his leg, and the 'all that most maddens and torments' passage. Compress the ubiquity-legends and natural-history digressions."
+    },
+    {
+      "id": "028",
+      "title": "The Whiteness of the Whale",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "What the white whale was to Ahab",
+      "source_end_hint": "Wonder ye then at the fiery hunt?",
+      "source_word_count_est": 4200,
+      "target_word_count": 1800,
+      "relative_compression": 0.93,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "It was the whiteness of the whale that above all things appalled me",
+          "why": "One of the most famous and critically engaged chapters in American literature."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "colourless, all-colour of atheism",
+          "why": "Key theological/philosophical formulation."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Wonder ye then at the fiery hunt?",
+          "why": "Chapter's rhetorical climax."
+        }
+      ],
+      "notes": "Preserve at modest compression. This chapter is scholarly bedrock; retain the opening catalogue of whiteness's associations, the examples (albatross, polar bear, White Steed, albino man, Lima), and the 'colourless all-colour of atheism' climax. Can compress a few middle examples."
+    },
+    {
+      "id": "029",
+      "title": "Hark! & The Chart",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "HIST! Did you hear that noise, Cabaco?",
+      "source_end_hint": "that vulture the very creature he creates.",
+      "source_word_count_est": 2800,
+      "target_word_count": 700,
+      "relative_compression": 1.33,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "God help thee, old man, thy thoughts have created a creature in thee",
+          "why": "Ahab as Prometheus; prefiguring image."
+        }
+      ],
+      "notes": "Merge. Preserve the Prometheus/vulture closing and the chart-poring image. Compress the cetological migration discussion."
+    },
+    {
+      "id": "030",
+      "title": "The Affidavit",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "So far as what there may be of a narrative",
+      "source_end_hint": "must in all probability have been a sperm whale.",
+      "source_word_count_est": 3400,
+      "target_word_count": 350,
+      "relative_compression": 9.71,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "Essex",
+          "why": "The Essex disaster is the historical root of Moby-Dick; worth brief mention."
+        }
+      ],
+      "notes": "Compress heavily. Retain only the core claim that sperm whales have sunk ships (Essex, Union) as brief authentication; drop most citations."
+    },
+    {
+      "id": "031",
+      "title": "Surmises & The Mat-Maker",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Though, consumed with the hot fire of his purpose",
+      "source_end_hint": "surrounded by five dusky phantoms that seemed fresh formed out of air.",
+      "source_word_count_est": 2400,
+      "target_word_count": 800,
+      "relative_compression": 0.75,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Loom of Time, and I myself were a shuttle",
+          "why": "Classic allegory of chance, free will, necessity; heavily anthologized."
+        }
+      ],
+      "notes": "Preserve the Loom of Time allegory in full. Compress Ahab's Surmises about his crew's psychology into a short summary paragraph."
+    },
+    {
+      "id": "032",
+      "title": "The First Lowering",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The phantoms, for so they then seemed",
+      "source_end_hint": "light upon some token of our perishing",
+      "source_word_count_est": 4700,
+      "target_word_count": 1400,
+      "relative_compression": 1.01,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Fedallah",
+          "why": "Fedallah's appearance is a crucial gothic/supernatural turn."
+        },
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "Stubb's exordium to his crew",
+          "why": "Stubb's peculiar comic-prayer style of command is voice-defining."
+        }
+      ],
+      "notes": "Preserve the reveal of Fedallah's crew, Stubb's exhortation, the squall, and Queequeg's forlorn lantern. Compress mid-chase technicals."
+    },
+    {
+      "id": "033",
+      "title": "The Hyena",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "There are certain queer times and occasions",
+      "source_end_hint": "the devil fetch the hindmost.",
+      "source_word_count_est": 950,
+      "target_word_count": 450,
+      "relative_compression": 1.0,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "bolts down all events, all creeds, and beliefs",
+          "why": "The 'hyena' laugh as existential posture; often quoted."
+        }
+      ],
+      "notes": "Preserve the core philosophical stance and Ishmael drafting his will."
+    },
+    {
+      "id": "034",
+      "title": "Ahab's Boat and Crew. Fedallah & The Spirit-Spout",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Who would have thought it, Flask!",
+      "source_end_hint": "still thou steadfastly eyest thy purpose.",
+      "source_word_count_est": 3400,
+      "target_word_count": 800,
+      "relative_compression": 1.28,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "the silvery jet was seen far in advance of the white bubbles at the bow",
+          "why": "The Spirit-Spout is a central gothic motif."
+        },
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Fedallah remained a muffled mystery to the last",
+          "why": "Critical introduction of Fedallah's uncanny character."
+        }
+      ],
+      "notes": "Merge. Preserve the Spirit-Spout as a motif, Fedallah's mystery, Cape of Good Hope storm, and Starbuck's glimpse of Ahab eyeing the tell-tale."
+    },
+    {
+      "id": "035",
+      "title": "The Albatross & The Gam",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "South-eastward from the Cape",
+      "source_end_hint": "hold on there like grim death.",
+      "source_word_count_est": 3300,
+      "target_word_count": 600,
+      "relative_compression": 1.65,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "structural",
+          "passage_hint": "Round the world!",
+          "why": "Ahab's first ship-to-ship hail; sets up the gam-sequence structure."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Hast thou seen the White Whale?",
+          "why": "The recurring hail unifies the middle of the book."
+        }
+      ],
+      "notes": "Merge. Preserve the Goney encounter with 'Hast seen the White Whale?' and the 'Round the world' cry; compress the gam etiquette digression to a brief explanation."
+    },
+    {
+      "id": "036",
+      "title": "The Town-Ho's Story",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The Cape of Good Hope",
+      "source_end_hint": "talked with Steelkilt since the death of Radney.",
+      "source_word_count_est": 9500,
+      "target_word_count": 1500,
+      "relative_compression": 6.33,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "narrative",
+          "passage_hint": "Steelkilt",
+          "why": "The novel's only embedded novella; critically important as a self-contained meditation on the White Whale as instrument of inverted providence."
+        },
+        {
+          "origin": "interpretive",
+          "category": "thematic",
+          "passage_hint": "wondrous, inverted visitation of one of those so called judgments of God",
+          "why": "Thematically load-bearing."
+        }
+      ],
+      "notes": "Compress substantially but preserve the frame (Ishmael narrating at Golden Inn in Lima), the Steelkilt\u2013Radney conflict, the mutiny's resolution, and the climactic moment where Moby Dick takes Radney. Cut the Canaller digression and some of the Lima interludes."
+    },
+    {
+      "id": "037",
+      "title": "Monstrous Pictures & Less Erroneous Pictures & Whales in Paint etc.",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "I shall ere long paint to you as well as one can",
+      "source_end_hint": "lie encamped beyond my mortal sight!",
+      "source_word_count_est": 4800,
+      "target_word_count": 300,
+      "relative_compression": 16.0,
+      "role": "digressive",
+      "signatures": [],
+      "notes": "Compress to a brief note: Melville reviews pictorial representations of whales and finds them all false, arguing the living whale must be seen at sea. Drop specifics."
+    },
+    {
+      "id": "038",
+      "title": "Brit & Squid",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Steering north-eastward from the Crozetts",
+      "source_end_hint": "here spoken of, is included among the class of cuttle-fish",
+      "source_word_count_est": 2700,
+      "target_word_count": 700,
+      "relative_compression": 1.93,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "in the soul of man there lies one insular Tahiti",
+          "why": "Famous metaphor for inner peace surrounded by terror; heavily quoted."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "the great live squid",
+          "why": "Gothic apparition; important atmospheric beat."
+        }
+      ],
+      "notes": "Preserve the 'insular Tahiti' passage and the Squid apparition. Compress the meadows-of-brit description."
+    },
+    {
+      "id": "039",
+      "title": "The Line",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "With reference to the whaling scene shortly to be described",
+      "source_end_hint": "not a harpoon, by your side.",
+      "source_word_count_est": 1900,
+      "target_word_count": 600,
+      "relative_compression": 1.06,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "All men live enveloped in whale-lines",
+          "why": "One of the book's most quoted metaphorical aphorisms."
+        }
+      ],
+      "notes": "Preserve the closing philosophical turn. Compress technical descriptions to a paragraph that sets up the metaphor."
+    },
+    {
+      "id": "040",
+      "title": "Stubb Kills a Whale & The Dart & The Crotch",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "If to Starbuck the apparition of the Squid",
+      "source_end_hint": "scenes hereafter to be painted.",
+      "source_word_count_est": 4800,
+      "target_word_count": 1200,
+      "relative_compression": 1.0,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "His heart had burst!",
+          "why": "The first whale kill; essential narrative beat and definitive depiction of the hunt."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Start her like grim death and grinning devils",
+          "why": "Stubb's commanding voice."
+        }
+      ],
+      "notes": "Merge 61-63. Preserve Stubb's commanding patter, the whale's flurry, and 'His heart had burst.' Compress technical dart/crotch explanations."
+    },
+    {
+      "id": "041",
+      "title": "Stubb's Supper & Whale as a Dish & Shark Massacre",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Stubb's whale had been killed some distance from the ship",
+      "source_end_hint": "must be one dam Ingin.",
+      "source_word_count_est": 5400,
+      "target_word_count": 900,
+      "relative_compression": 2.0,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Cannibals? who is not a cannibal?",
+          "why": "Famous satirical/ethical inversion."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Fleece's sermon to the sharks",
+          "why": "Memorable, if now difficult, racial-comic set piece; critically engaged."
+        }
+      ],
+      "notes": "Compress considerably. Preserve Fleece's sermon to the sharks (with cautious editorial handling of dialect\u2014modernize spellings lightly but preserve the rhetorical structure) and the 'who is not a cannibal' thread. Trim the Whale-as-Dish digression."
+    },
+    {
+      "id": "042",
+      "title": "Cutting In & The Blanket & The Funeral",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It was a Saturday night",
+      "source_end_hint": "Doctor Johnson who believe in them.",
+      "source_word_count_est": 3700,
+      "target_word_count": 600,
+      "relative_compression": 2.06,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "Oh, man! admire and model thyself after the whale!",
+          "why": "Famous apostrophe urging inner temperature."
+        },
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "There's your orthodoxy!",
+          "why": "Vengeful-ghost-as-false-tradition passage."
+        }
+      ],
+      "notes": "Merge. Compress technical cutting-in. Preserve the 'admire and model thyself after the whale' passage and the 'orthodoxy' closing."
+    },
+    {
+      "id": "043",
+      "title": "The Sphynx & The Jeroboam's Story",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It should not have been omitted",
+      "source_end_hint": "strange things were hinted",
+      "source_word_count_est": 4400,
+      "target_word_count": 900,
+      "relative_compression": 1.63,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "prosodic",
+          "passage_hint": "Speak, thou vast and venerable head",
+          "why": "Ahab's apostrophe to the Sphynx-head; prosodically rich."
+        },
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Gabriel",
+          "why": "Gabriel of the Jeroboam doubles Fedallah/Elijah as prophet-figure; warns against the Whale."
+        }
+      ],
+      "notes": "Merge. Preserve Ahab's address to the severed head and the core of the Jeroboam encounter with Gabriel's warning. Compress Mayhew's narration."
+    },
+    {
+      "id": "044",
+      "title": "The Monkey-Rope & Stubb and Flask kill a Right Whale",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "In the tumultuous business of cutting-in",
+      "source_end_hint": "all these passing things.",
+      "source_word_count_est": 4500,
+      "target_word_count": 700,
+      "relative_compression": 2.14,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "Siamese connexion with a plurality of other mortals",
+          "why": "Famous image of human interdependence."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "some minds for ever keep trimming boat",
+          "why": "The Locke/Kant balance of heads image."
+        }
+      ],
+      "notes": "Merge. Preserve the Siamese connexion meditation and the Locke/Kant balance joke. Compress the shark-fending and Stubb/Flask banter about Fedallah-as-devil."
+    },
+    {
+      "id": "045",
+      "title": "Sperm Whale's Head & Right Whale's Head\u2014Contrasted",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Here, now, are two great whales",
+      "source_end_hint": "taken up Spinoza in his latter years.",
+      "source_word_count_est": 4100,
+      "target_word_count": 450,
+      "relative_compression": 9.11,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "This Right Whale I take to have been a Stoic; the Sperm Whale, a Platonian",
+          "why": "Memorable typological joke closing the pair of chapters."
+        }
+      ],
+      "notes": "Compress drastically. Preserve the Stoic/Platonian closing and one or two observations on the eyes/ears. Drop dentistry."
+    },
+    {
+      "id": "046",
+      "title": "Battering-Ram, Heidelburgh Tun, Cistern and Buckets",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Ere quitting, for the nonce, the Sperm Whale's head",
+      "source_end_hint": "sweetly perished there?",
+      "source_word_count_est": 4000,
+      "target_word_count": 800,
+      "relative_compression": 1.67,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "Tashtego plummets into the case",
+          "why": "Queequeg's midwife-like rescue is a memorable comic-heroic set piece."
+        }
+      ],
+      "notes": "Merge. Compress the anatomical description of the Tun; preserve the Tashtego-in-the-head rescue in full as a vivid narrative episode."
+    },
+    {
+      "id": "047",
+      "title": "The Prairie & The Nut",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "To scan the lines of his face",
+      "source_end_hint": "you will yet have reason to know.",
+      "source_word_count_est": 2500,
+      "target_word_count": 350,
+      "relative_compression": 7.14,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Read it if you can",
+          "why": "Closing imperative on the whale's unreadable brow."
+        }
+      ],
+      "notes": "Compress heavily. Preserve the 'Read it if you can' challenge concerning the whale's brow as undecipherable Chaldee."
+    },
+    {
+      "id": "048",
+      "title": "The Pequod Meets The Virgin",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The predestinated day arrived",
+      "source_end_hint": "Oh! many are the Fin-Backs",
+      "source_word_count_est": 5200,
+      "target_word_count": 1100,
+      "relative_compression": 4.73,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "old, maimed whale",
+          "why": "The old bull's pitiable death is a pivotal meditation on cruelty of the hunt."
+        }
+      ],
+      "notes": "Compress the race with Derick; preserve the capture and killing of the old blind whale with its explicit moral weight. Keep the sinking-of-the-whale phenomenon briefly."
+    },
+    {
+      "id": "049",
+      "title": "Honor & Glory of Whaling & Jonah Historically & Pitchpoling",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "There are some enterprises",
+      "source_end_hint": "mutely watches the monster die.",
+      "source_word_count_est": 4500,
+      "target_word_count": 400,
+      "relative_compression": 11.25,
+      "role": "digressive",
+      "signatures": [],
+      "notes": "Compress drastically. Keep one brief paragraph noting the ennobling lineage (Perseus, Jonah, Vishnu, Hercules) and a few sentences on pitchpoling as technical set-piece."
+    },
+    {
+      "id": "050",
+      "title": "The Fountain & The Tail",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "That for six thousand years",
+      "source_end_hint": "I say again he has no face.",
+      "source_word_count_est": 5700,
+      "target_word_count": 800,
+      "relative_compression": 7.13,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "doubts of all things earthly, and intuitions of some things heavenly",
+          "why": "One of the book's most quoted formulations of belief."
+        },
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "Thou shalt see my back parts, my tail",
+          "why": "Biblical joke closing The Tail; thematically important."
+        }
+      ],
+      "notes": "Compress anatomical/technical. Preserve the 'doubts and intuitions' closing of The Fountain and the Mosaic 'back parts' closing of The Tail."
+    },
+    {
+      "id": "051",
+      "title": "The Grand Armada",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The long and narrow peninsula of Malacca",
+      "source_end_hint": "by some other craft than the Pequod.",
+      "source_word_count_est": 6200,
+      "target_word_count": 1700,
+      "relative_compression": 3.65,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "amid the tornadoed Atlantic of my being, do I myself still for ever centrally disport in mute calm",
+          "why": "Famous image of inner calm at the center of chaos; frequently anthologized."
+        },
+        {
+          "origin": "critical",
+          "category": "narrative",
+          "passage_hint": "Queequeg patted their foreheads",
+          "why": "The enchanted pond with nursing whales is the tenderest and most extraordinary scene in the book."
+        },
+        {
+          "origin": "textual",
+          "category": "thematic",
+          "passage_hint": "young Leviathan amours in the deep",
+          "why": "The vision of whale birth and love at the herd's center is load-bearing."
+        }
+      ],
+      "notes": "Preserve the center-of-the-herd scene at length: Malay pirates pursuing pursuer, the gallied whales, the enchanted pond with mothers and calves, and the closing 'tornadoed Atlantic of my being.' Compress the piratical-Malay opening."
+    },
+    {
+      "id": "052",
+      "title": "Schools & Fast-Fish Loose-Fish & Heads or Tails",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The previous chapter gave account of an immense body",
+      "source_end_hint": "even in law.",
+      "source_word_count_est": 5400,
+      "target_word_count": 800,
+      "relative_compression": 6.75,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "What are you, reader, but a Loose-Fish and a Fast-Fish, too?",
+          "why": "Famous political-philosophical satire applying the fishery law to empire, labor, and the self."
+        }
+      ],
+      "notes": "Compress Schools. Preserve the Fast-Fish / Loose-Fish legal satire with its political catalogue (Ireland, Texas, Mexico, reader) intact. Trim Heads or Tails to a brief paragraph."
+    },
+    {
+      "id": "053",
+      "title": "The Pequod Meets The Rose-Bud & Ambergris",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It was a week or two after the last whaling scene",
+      "source_end_hint": "do honor to Alexander the Great?",
+      "source_word_count_est": 4800,
+      "target_word_count": 600,
+      "relative_compression": 8.0,
+      "role": "narrative",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Stubb tricks the Frenchman",
+          "why": "Signature Stubb comedy."
+        }
+      ],
+      "notes": "Compress to a summary: Stubb diddles a French whaler to extract ambergris from a blasted whale. Keep the punchline and brief ambergris-and-decay reflection."
+    },
+    {
+      "id": "054",
+      "title": "The Castaway",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "It was but some few days after encountering the Frenchman",
+      "source_end_hint": "like abandonment befell myself.",
+      "source_word_count_est": 1800,
+      "target_word_count": 1100,
+      "relative_compression": 0.6,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "He saw God's foot upon the treadle of the loom",
+          "why": "Pip's drowning-revelation is one of the most critically engaged passages in the novel."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "man's insanity is heaven's sense",
+          "why": "Famous formulation; thematic keystone."
+        },
+        {
+          "origin": "interpretive",
+          "category": "character",
+          "passage_hint": "The sea had jeeringly kept his finite body up, but drowned the infinite of his soul",
+          "why": "Pip's transformation is load-bearing for the book's later movements."
+        }
+      ],
+      "notes": "Preserve in near-full. This short chapter is thematically crucial: Pip's abandonment, madness, and vision of God's foot on the loom."
+    },
+    {
+      "id": "055",
+      "title": "A Squeeze of the Hand",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "That whale of Stubb's, so dearly purchased",
+      "source_end_hint": "Toes are scarce among veteran blubber-room men.",
+      "source_word_count_est": 1700,
+      "target_word_count": 900,
+      "relative_compression": 0.94,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "squeeze ourselves into each other",
+          "why": "Celebrated (and much-discussed) passage of erotic/communal ecstasy."
+        },
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "lower, or at least shift, his conceit of attainable felicity",
+          "why": "Thematic turn: Ishmael's accommodation to ordinary joys; counterpoint to Ahab."
+        }
+      ],
+      "notes": "Preserve the sperm-squeezing rhapsody in full and the reflection on shifted felicity. Compress the white-horse / plum-pudding / slobgollion catalogue."
+    },
+    {
+      "id": "056",
+      "title": "The Cassock & The Try-Works",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Had you stepped on board the Pequod",
+      "source_end_hint": "other birds upon the plain, even though they soar.",
+      "source_word_count_est": 3200,
+      "target_word_count": 1300,
+      "relative_compression": 1.23,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "the material counterpart of her monomaniac commander's soul",
+          "why": "Iconic image of the flaming ship as Ahab's soul."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "There is a wisdom that is woe",
+          "why": "Famous aphorism; Catskill eagle image."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "Look not too long in the face of the fire",
+          "why": "Moral warning closing Try-Works."
+        }
+      ],
+      "notes": "Preserve the Try-Works scene and the philosophical turn: 'Look not too long in the face of the fire,' the Ecclesiastes meditation, and the Catskill eagle. Compress The Cassock to a brief sentence."
+    },
+    {
+      "id": "057",
+      "title": "The Lamp & Stowing Down",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Had you descended from the Pequod's try-works",
+      "source_end_hint": "how to splice a rope!",
+      "source_word_count_est": 2200,
+      "target_word_count": 350,
+      "relative_compression": 6.29,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "There she blows!",
+          "why": "The refrain that opens a new cycle of work."
+        }
+      ],
+      "notes": "Compress to a paragraph. Preserve the 'There she blows!' return-to-hunt refrain and the metempsychosis closer."
+    },
+    {
+      "id": "058",
+      "title": "The Doubloon",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Ere now it has been related",
+      "source_end_hint": "get your hoe-cake done!",
+      "source_word_count_est": 2900,
+      "target_word_count": 1700,
+      "relative_compression": 0.6,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "structural",
+          "passage_hint": "each and every man in turn but mirrors back his own mysterious self",
+          "why": "The doubloon chapter is the book's most explicit meditation on interpretation; a critical keystone."
+        },
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "I look, you look, he looks",
+          "why": "Pip's grammatical riddle; famously enigmatic."
+        }
+      ],
+      "notes": "Preserve in near-full: Ahab, Starbuck, Stubb, Flask, Manxman, Queequeg, Fedallah, and Pip each reading the coin. This is the book's great parable of perspectivism."
+    },
+    {
+      "id": "059",
+      "title": "Leg and Arm (The Samuel Enderby)",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Ship, ahoy! Hast seen the White Whale?",
+      "source_end_hint": "Ahab stood upright till alongside of the Pequod.",
+      "source_word_count_est": 3000,
+      "target_word_count": 1100,
+      "relative_compression": 0.82,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "textual",
+          "category": "character",
+          "passage_hint": "Captain Boomer",
+          "why": "The cheerful one-armed counterpart to Ahab; his acceptance foils Ahab's obsession."
+        },
+        {
+          "origin": "textual",
+          "category": "narrative",
+          "passage_hint": "No more White Whales for me",
+          "why": "Boomer's answer that Ahab refuses."
+        }
+      ],
+      "notes": "Preserve the full encounter. Boomer's different attitude toward his loss is the book's clearest foil to Ahab."
+    },
+    {
+      "id": "060",
+      "title": "The Decanter & A Bower in the Arsacides",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "Ere the English ship fades from sight",
+      "source_end_hint": "subtlest thinkings may be overheard afar.",
+      "source_word_count_est": 4900,
+      "target_word_count": 600,
+      "relative_compression": 8.17,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "The weaver-god, he weaves",
+          "why": "The loom-weaver passage is among the most celebrated in Melville."
+        }
+      ],
+      "notes": "Compress Decanter and whale-history to a paragraph. Preserve the weaver-god / Arsacidean loom passage in near-full."
+    },
+    {
+      "id": "061",
+      "title": "Measurement of Skeleton & Fossil Whale & Diminish/Perish",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "In the first place, I wish to lay before you",
+      "source_end_hint": "spout his frothed defiance to the skies.",
+      "source_word_count_est": 4700,
+      "target_word_count": 400,
+      "relative_compression": 11.75,
+      "role": "digressive",
+      "signatures": [
+        {
+          "origin": "cultural",
+          "category": "quote",
+          "passage_hint": "we account the whale immortal in his species",
+          "why": "Closing declaration of the whale's eternity."
+        }
+      ],
+      "notes": "Compress drastically. Preserve the 'whale immortal in his species' peroration with its equatorial-flood defiance."
+    },
+    {
+      "id": "062",
+      "title": "Ahab's Leg & The Carpenter & Ahab and the Carpenter",
+      "kind": "chapter",
+      "diegetic_status": "diegetic",
+      "source_start_hint": "The precipitating manner in which Captain Ahab",
+      "source_end_hint": "Stubb knows him best of all",
+      "source_word_count_est": 4200,
+      "target_word_count": 1200,
+      "relative_compression": 1.17,
+      "role": "signature",
+      "signatures": [
+        {
+          "origin": "critical",
+          "category": "thematic",
+          "passage_hint": "cursed be that mortal inter-indebtedness",
+          "why": "Ahab's Promethean soliloquy; famous."
+        },
+        {
+          "origin": "textual",
+          "category": "voice",
+          "passage_hint": "Prometheus, who made men",
+          "why": "Ahab orders a 'complete man' from the blacksmith; grotesque emblem."
+        }
+      ],
+      "notes": "Preserve the Ahab-Carpenter dialogue with its Promethean grotesque and phantom-leg meditation. Compress the Carpenter's character-sketch."
+    }
+  ],
+  "motifs": [
+    {
+      "name": "Whiteness",
+      "description": "The terrifying, meaningless, all-colour / no-colour whiteness of the whale, of shrouds, of albino creatures, of Lima.",
+      "indicative_phrases": [
+        "whiteness of the whale",
+        "colourless, all-colour of atheism",
+        "monumental white shroud"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Loom / weaving",
+      "description": "Fate as loom, chance/free-will/necessity as warp/woof/shuttle, the weaver-god as deaf artisan.",
+      "indicative_phrases": [
+        "Loom of Time",
+        "weaver-god",
+        "warp and woof"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Monomania and the pasteboard mask",
+      "description": "Ahab's fixed purpose as iron rails; visible reality as mask concealing an unreasoning malice.",
+      "indicative_phrases": [
+        "pasteboard masks",
+        "iron rails",
+        "inscrutable malice"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Fire and the try-works",
+      "description": "The Pequod as infernal fire-ship, corpse-burning, soul-consuming.",
+      "indicative_phrases": [
+        "try-works",
+        "material counterpart of her monomaniac commander's soul",
+        "look not too long in the face of the fire"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Prophecy and the maimed prophet",
+      "description": "Elijah, Gabriel, Fedallah, and the Jonah sermon as recurring prophetic frame; foreshadowings of doom.",
+      "indicative_phrases": [
+        "Hast seen the White Whale?",
+        "Jonah",
+        "prophecy"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "The coffin / the grave",
+      "description": "Peter Coffin, the coffin life-buoy, the marble cenotaphs, burial imagery, Queequeg's coffin.",
+      "indicative_phrases": [
+        "coffin",
+        "cenotaph",
+        "grave"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Isolato / Ishmael's survival",
+      "description": "The book's frame as a single survivor's narrative; the motif of inner calm amid tornadoed chaos.",
+      "indicative_phrases": [
+        "Isolatoes",
+        "insular Tahiti",
+        "tornadoed Atlantic of my being"
+      ],
+      "target_legibility": "preserve at book scale"
+    },
+    {
+      "name": "Spirit-Spout",
+      "description": "The silvery, solitary jet that appears by moonlight and disappears \u2014 a siren-beckoning of the white whale.",
+      "indicative_phrases": [
+        "silvery jet",
+        "spirit-spout",
+        "moonlight"
+      ],
+      "target_legibility": "preserve at book scale"
+    }
+  ],
+  "plan_notes": "This is an unusually long, structurally heterogeneous novel of ~177k words mixing narrative, soliloquy (often in explicit play-script form), sermon, cetological encyclopedia, and embedded novella. The 4.24x compression ratio is aggressive given the amount of signature material that must be preserved. Strategy: compress digressive cetology chapters (32, 55-57, 74-77, 79-80, 82-83, 86, 92, 101-105) very hard \u2014 often to a sentence or paragraph \u2014 to free budget for signature narrative and voice chapters (1, 9, 23, 36, 41-42, 54, 93-96, 99, 132-135). The framing of cetology as 'draught of a draught' (ch. 32) should itself be preserved; the drafter may occasionally use a bridging sentence like 'Ishmael now digresses on [topic]; his chief point is...' to honor the encyclopedic impulse without reproducing it. Voice: preserve the Ishmael narrator's grandiloquent-ironic register \u2014 rhetorical questions, second-person address, biblical cadence, Shakespearean pastiche. When modernizing, lean toward L2: retain archaic 'thee/thou' in Ahab's and Mapple's speech (these are ritual registers) but modernize obscure vocabulary and untangle long Latinate periodic sentences elsewhere. Difficult passages: (a) Fleece's dialect sermon \u2014 preserve the rhetorical arc and flavor but normalize the most opaque eye-dialect; (b) Jonah sermon's long Cadiz/Tarshish geography \u2014 can trim; (c) Town-Ho's Story frame with Lima dons \u2014 preserve the frame compactly and the core Steelkilt narrative; (d) Pip chapters must not be cut or softened \u2014 Pip is load-bearing. The Shakespearean soliloquy quartet (37-40) should be preserved as interior-monologue set pieces, format retained. The ending (segments 63+, not shown in this source excerpt which cuts off at ch. 108) will include The Symphony, The Chase (three days), and Epilogue \u2014 these are absolute signature material and will receive the lowest compression. Note: source text provided here terminates mid-chapter 108; the plan above covers the segmentation through that point, but downstream stages must continue segmenting chapters 109-135 + Epilogue at similarly signature-weighted compressions. The Epilogue ('And I only am escaped alone to tell thee') must be preserved verbatim.",
+  "_meta": {
+    "model": "anthropic:claude-opus-4-7",
+    "stop_reason": "end_turn",
+    "computed": {
+      "source_word_count": 177641,
+      "target_word_count": 41850,
+      "target_hours": 3.49,
+      "overall_compression_ratio": 4.24
+    }
+  },
+  "voice_driven_narrator": true
+}

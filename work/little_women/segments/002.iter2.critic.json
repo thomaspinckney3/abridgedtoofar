@@ -1,0 +1,53 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "I'll try and be what he loves to call me, 'a little woman,' and not be rough and wild; but do my duty here instead of wanting to be somewhere else,",
+      "South.": "source_locator\": \"After the letter-reading scene, Jo's individual resolution",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The trailing clause—'keeping her temper at home was a much harder task than facing a rebel or two down South'—is a signature ironic aside that establishes Jo's self-aware, wry voice and grounds her feminism in comic realism; its absence flattens a key interpretive moment about domestic versus martial duty.",
+      "suggested_fix": "Restore the full sentence including the ironic parenthetical thought about the harder task being domestic; it is short enough to preserve verbatim even under compression."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Beth wiped away her tears with the blue army-sock, and began to knit with all her might, losing no time in doing the duty that lay nearest her, while she resolved in her quiet little soul to be all that father hoped to find her when the year brought round the happy coming home.",
+      "source_locator": "Immediately after the other sisters' resolutions following the letter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Beth's silent interiority—her 'quiet little soul' and the phrase 'the duty that lay nearest her'—is the thematic and stylistic centerpiece of her characterization; the draft reduces it to mere action ('began to knit') stripping the narrator's interpretive access to Beth's inner life.",
+      "suggested_fix": "Restore the full sentence from 'losing no time in doing the duty that lay nearest her' through 'the happy coming home'; this is Beth's defining moment in the chapter."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "a tall, motherly lady, with a 'can-I-help-you' look about her which was truly delightful. She was not elegantly dressed, but a noble-looking woman, and the girls thought the gray cloak and unfashionable bonnet covered the most splendid mother in the world.",
+      "source_locator": "Marmee's entrance, after the rehearsal ends",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'can-I-help-you look' is one of the most distinctive phrases in Alcott's portrait of Marmee and is widely cited as capturing her essential character; the draft reduces her to merely 'a tall, motherly lady' with reference to her cloak and bonnet but drops the signature phrase entirely.",
+      "suggested_fix": "Restore the 'can-I-help-you look about her which was truly delightful' and the 'not elegantly dressed, but a noble-looking woman' clauses; together they constitute the signature character-establishing sentence for Marmee."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Don't you wish we had the money papa lost when we were little, Jo? Dear me! how happy and good we'd be, if we had no worries!... you thought we were a deal happier than the King children, for they were fighting and fretting all the time, in spite of their money.",
+      "source_locator": "After the 'Don't peck' exchange and before the character sketches",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange—Meg's nostalgic wish for wealth countered by Beth's reminder that the Marches are happier than rich neighbors—introduces the novel's central class-and-contentment theme and is the immediate dramatic prelude to the portrait of the comfortable room; its absence removes a thematic keystone.",
+      "suggested_fix": "Restore Meg's 'Don't you wish we had the money papa lost' line and the Beth/Meg exchange about the King children; together they are brief and carry significant thematic freight."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I am afraid I don't; and Meg shook her head, as she thought regretfully of all the pretty things she wanted.",
+      "source_locator": "Meg's speech about making little sacrifices gladly",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Meg's admission that she is afraid she does not gladly make sacrifices—with the accompanying action of shaking her head—is a small but character-specific moment of self-knowledge that the draft smooths over with vague internalized longing.",
+      "suggested_fix": "Add 'But I am afraid I don't' and the head-shake after Meg's speech about making sacrifices; it is seven words and sharpens Meg's hypocrisy/self-awareness."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's major set-pieces but loses four medium-severity passages: Jo's ironic 'harder task than facing a rebel' aside, Beth's 'quiet little soul' resolution, Marmee's 'can-I-help-you look' character tag, and the King-children class-and-happiness exchange—collectively enough to trigger regeneration."
+}

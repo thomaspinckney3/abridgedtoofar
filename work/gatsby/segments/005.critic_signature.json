@@ -1,0 +1,17 @@
+{
+  "segment_id": "005",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the entire segment",
+      "source_locator": "all paragraphs",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft is empty. Every tagged signature (puddle-of-water Gatsby, defunct mantelpiece clock, beautiful shirts, count of enchanted objects, colossal vitality of his illusion, ghostly heart, brewer-period-craze digression) is missing, as is all of Nick's voice for this chapter.",
+      "suggested_fix": "Generate the segment, preserving verbatim: 'pale as death, with his hands plunged like weights,' the clock-tipping beat, the 'beautiful shirts' sob, 'His count of enchanted objects had diminished by one,' 'colossal vitality of his illusion,' 'No amount of fire or freshness can challenge what a man can store up in his ghostly heart,' and the closing 'that voice was a deathless song.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Draft is empty; the entire signature-dense reunion chapter is missing."
+}

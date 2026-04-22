@@ -1,0 +1,44 @@
+{
+  "segment_id": "005",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I had to follow the sound of it for a moment, up and down, with my ear alone, before any words came through.",
+      "source_locator": "immediately after Daisy’s \"my dearest one\" greeting in the driveway scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "Nick’s synaesthetic image of Daisy’s voice is one of the most-cited sound-vision similes in the chapter; cutting it flattens both Daisy’s enchantment and Nick’s narrative rhythm.",
+      "suggested_fix": "Restore the sentence verbatim right after the “wild tonic in the rain” line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "through which occasional thin drops swam like dew",
+      "source_locator": "rain-mist description just before Gatsby wants to leave",
+      "draft_treatment": "absent",
+      "why_it_matters": "The miniature, almost whimsical metaphor gives the weather paragraph its signature Fitzgerald shimmer; dropping it dulls the prose texture.",
+      "suggested_fix": "Insert the full clause so the rain description reads exactly as in the source."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "starting at the Finnish tread that shook the kitchen floor",
+      "source_locator": "same paragraph with Clay’s Economics",
+      "draft_treatment": "absent",
+      "why_it_matters": "Nick’s sly notice of the servant’s movement grounds the comic tension and is part of the period texture; its removal smooths away the uneasy domestic humor.",
+      "suggested_fix": "Re-insert the phrase inside the sentence describing Gatsby reading Clay’s Economics."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "You wouldn’t have to do any business with Wolfshiem.",
+      "source_locator": "right after Nick refuses Gatsby’s side-line offer",
+      "draft_treatment": "absent",
+      "why_it_matters": "Wolfshiem’s name flags Gatsby’s criminal network; deleting the reassurance sanitizes the scene and weakens the novel’s ongoing underworld thread.",
+      "suggested_fix": "Restore Gatsby’s explicit mention of Wolfshiem to keep the illicit subtext intact."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Four distinctively voiced or thematically loaded lines are missing, flattening Nick’s narration and muting the Wolfshiem connection; regenerate to restore them."
+}

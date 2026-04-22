@@ -1,0 +1,394 @@
+"""Provider-agnostic LLM client.
+
+Model strings are of the form "<provider>:<model-id>", e.g.
+"anthropic:claude-opus-4-7" or "openai:gpt-5". Adapters live in this module;
+add a new provider by adding one more dispatch branch in `complete`.
+
+Callers pass a work_dir so every call gets appended to that book's
+llm_calls.jsonl for reconstructibility.
+
+Response replay cache: set FORAGE_REPLAY=1 to memoize responses to
+work/.replay_cache/<hash>.json keyed by the full input tuple. Re-runs with
+identical inputs skip the live call and return the saved response. Any
+change to prompt text, model, system, or params busts the key (that's the
+signal to make a fresh call). Useful for iterating on post-LLM code
+(parsing, iterate-loop, rebudget, rendering) without re-spending.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import time
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Optional
+
+
+@dataclass
+class LLMResponse:
+    text: str
+    model: str
+    input_tokens: Optional[int]
+    output_tokens: Optional[int]
+    duration_s: float
+    stop_reason: Optional[str]
+    cache_read_tokens: Optional[int] = None
+    cache_write_tokens: Optional[int] = None
+
+
+ROOT = Path(__file__).resolve().parent.parent
+REPLAY_DIR = ROOT / "work" / ".replay_cache"
+
+
+def _replay_enabled() -> bool:
+    return os.environ.get("FORAGE_REPLAY", "") == "1"
+
+
+def _replay_key(model: str, system: Optional[str],
+                cached_prompt: Optional[str], prompt: str,
+                max_tokens: int, temperature: Optional[float],
+                tools: Optional[list] = None,
+                thinking: Optional[str] = None) -> str:
+    h = hashlib.sha256()
+    h.update(f"model={model}\n".encode())
+    h.update(f"system={system or ''}\n".encode())
+    h.update(f"cached={cached_prompt or ''}\n".encode())
+    h.update(f"prompt={prompt}\n".encode())
+    h.update(f"max_tokens={max_tokens}\n".encode())
+    h.update(f"temperature={'' if temperature is None else temperature}\n".encode())
+    if tools:
+        h.update(f"tools={json.dumps(tools, sort_keys=True)}\n".encode())
+    if thinking:
+        h.update(f"thinking={thinking}\n".encode())
+    return h.hexdigest()[:32]
+
+
+def _replay_load(key: str) -> Optional[dict]:
+    p = REPLAY_DIR / f"{key}.json"
+    if p.exists():
+        return json.loads(p.read_text())
+    return None
+
+
+def _replay_save(key: str, model: str, resp: "LLMResponse") -> None:
+    REPLAY_DIR.mkdir(parents=True, exist_ok=True)
+    data = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "key": key,
+        "model": model,
+        "response": {
+            "text": resp.text,
+            "input_tokens": resp.input_tokens,
+            "output_tokens": resp.output_tokens,
+            "cache_read_tokens": resp.cache_read_tokens,
+            "cache_write_tokens": resp.cache_write_tokens,
+            "duration_s": resp.duration_s,
+            "stop_reason": resp.stop_reason,
+        },
+    }
+    (REPLAY_DIR / f"{key}.json").write_text(json.dumps(data, indent=2))
+
+
+def complete(
+    *,
+    prompt: str,
+    model: str,
+    system: Optional[str] = None,
+    max_tokens: int = 4096,
+    temperature: Optional[float] = None,
+    cache: bool = False,
+    cached_prompt: Optional[str] = None,
+    tools: Optional[list[dict]] = None,
+    thinking: Optional[str] = None,
+    work_dir: Optional[Path] = None,
+    stage: str = "unknown",
+) -> LLMResponse:
+    """Call an LLM.
+
+    Caching shape (Anthropic only; OpenAI path ignores cache args):
+      - `cached_prompt` (preferred): the stable book-scale prefix; goes first
+        as a separate content block with cache_control. `prompt` is appended
+        as the per-call tail (uncached). Enables cross-stage cache reuse.
+      - `cache=True` (legacy): wrap the entire `prompt` in one cached block.
+        Useful when there's no natural split.
+    The two flags are independent; if both are set, `cached_prompt` wins.
+
+    `thinking`: on Opus 4.7+ models, enables extended thinking. Pass one of
+    "low" | "medium" | "high" | "max" to set the effort level. Thinking
+    tokens count toward output billing but substantially improve budget-
+    adherence and instruction-following on quality-sensitive tasks. None
+    (default) disables thinking.
+    """
+    # Model overrides:
+    #   FORAGE_{STAGE}_MODEL (e.g. FORAGE_CRITIC_MODEL) — per-stage, wins.
+    #   FORAGE_MODEL — global fallback.
+    # Applies to the cache key too, so each model's responses sit side-by-side.
+    stage_base = stage.split(":")[0].upper().replace("-", "_")
+    stage_override = os.environ.get(f"FORAGE_{stage_base}_MODEL")
+    requested = model
+    override_source: Optional[str] = None
+    if stage_override:
+        model = stage_override
+        override_source = f"FORAGE_{stage_base}_MODEL"
+    else:
+        global_override = os.environ.get("FORAGE_MODEL")
+        if global_override:
+            model = global_override
+            override_source = "FORAGE_MODEL"
+
+    import sys as _sys
+    if override_source and model != requested:
+        print(f"[llm] stage={stage} model={model} "
+              f"(caller requested {requested}, overridden by {override_source})",
+              file=_sys.stderr, flush=True)
+    else:
+        print(f"[llm] stage={stage} model={model}",
+              file=_sys.stderr, flush=True)
+
+    provider, _, model_id = model.partition(":")
+    if not model_id:
+        raise ValueError(f"model must be '<provider>:<id>', got {model!r}")
+
+    replay = _replay_enabled()
+    if replay:
+        # Tools and thinking influence the response; include in cache key.
+        key = _replay_key(model, system, cached_prompt, prompt,
+                          max_tokens, temperature, tools=tools,
+                          thinking=thinking)
+        hit = _replay_load(key)
+        if hit is not None:
+            r = hit["response"]
+            resp = LLMResponse(
+                text=r["text"], model=model,
+                input_tokens=r.get("input_tokens"),
+                output_tokens=r.get("output_tokens"),
+                cache_read_tokens=r.get("cache_read_tokens"),
+                cache_write_tokens=r.get("cache_write_tokens"),
+                duration_s=r.get("duration_s", 0.0),
+                stop_reason=r.get("stop_reason"),
+            )
+            if _STREAM_SINK is not None:
+                _STREAM_SINK(f"[REPLAY:{key[:8]}]\n{resp.text}")
+            if work_dir is not None:
+                _log_call(work_dir, stage=f"{stage}:replayed", prompt=prompt,
+                          system=system, model=model, response=resp)
+            return resp
+
+    start = time.time()
+    if provider == "anthropic":
+        resp = _anthropic(prompt=prompt, model_id=model_id, system=system,
+                          max_tokens=max_tokens, temperature=temperature,
+                          cache=cache, cached_prompt=cached_prompt,
+                          tools=tools, thinking=thinking)
+    elif provider == "openai":
+        # OpenAI has no equivalent of Anthropic's prompt-prefix caching, so
+        # flatten cached_prompt + prompt into a single user message.
+        flat = prompt if not cached_prompt else cached_prompt + prompt
+        resp = _openai(prompt=flat, model_id=model_id, system=system,
+                       max_tokens=max_tokens, temperature=temperature)
+    else:
+        raise ValueError(f"unknown provider {provider!r}")
+    resp.duration_s = time.time() - start
+
+    if replay:
+        _replay_save(key, model, resp)
+
+    if work_dir is not None:
+        _log_call(work_dir, stage=stage, prompt=prompt, system=system,
+                  model=model, response=resp)
+    return resp
+
+
+_RETRY_EXCEPTIONS_CACHE = None
+
+
+def _retryable_exceptions() -> tuple:
+    """Network-layer exceptions worth retrying transparently."""
+    global _RETRY_EXCEPTIONS_CACHE
+    if _RETRY_EXCEPTIONS_CACHE is not None:
+        return _RETRY_EXCEPTIONS_CACHE
+    import httpx
+    errs: list = [
+        httpx.RemoteProtocolError,
+        httpx.ReadTimeout,
+        httpx.ConnectError,
+        httpx.WriteTimeout,
+        httpx.PoolTimeout,
+    ]
+    try:
+        import anthropic
+        errs += [anthropic.APIConnectionError, anthropic.APITimeoutError]
+    except ImportError:
+        pass
+    try:
+        import openai
+        errs += [openai.APIConnectionError, openai.APITimeoutError]
+    except ImportError:
+        pass
+    _RETRY_EXCEPTIONS_CACHE = tuple(errs)
+    return _RETRY_EXCEPTIONS_CACHE
+
+
+def _with_retries(fn, *, attempts: int = 3,
+                  backoff: tuple[int, ...] = (2, 5, 15)):
+    """Call `fn` with transparent retries on transient network errors.
+
+    Non-retryable exceptions (auth, quota, bad request) propagate immediately.
+    """
+    last: Optional[Exception] = None
+    retryable = _retryable_exceptions()
+    for i in range(attempts):
+        try:
+            return fn()
+        except retryable as e:
+            last = e
+            if i == attempts - 1:
+                break
+            wait = backoff[min(i, len(backoff) - 1)]
+            import sys
+            print(f"[retry] {type(e).__name__} on attempt {i + 1}/{attempts}; "
+                  f"sleeping {wait}s", file=sys.stderr, flush=True)
+            time.sleep(wait)
+    assert last is not None
+    raise last
+
+
+def _anthropic(*, prompt: str, model_id: str, system: Optional[str],
+               max_tokens: int, temperature: Optional[float],
+               cache: bool,
+               cached_prompt: Optional[str] = None,
+               tools: Optional[list[dict]] = None,
+               thinking: Optional[str] = None) -> LLMResponse:
+    import anthropic
+    client = anthropic.Anthropic()
+    if cached_prompt is not None:
+        # Two blocks: cached prefix + uncached tail. Prefix carries the
+        # cache_control; the tail is plain text so it doesn't extend the
+        # cached segment (only content up to and including a breakpoint is
+        # cached, so putting cache_control on the tail would cache everything).
+        content = [
+            {"type": "text", "text": cached_prompt,
+             "cache_control": {"type": "ephemeral"}},
+            {"type": "text", "text": prompt},
+        ]
+    elif cache:
+        content = [{"type": "text", "text": prompt,
+                    "cache_control": {"type": "ephemeral"}}]
+    else:
+        content = prompt
+    kwargs = {
+        "model": model_id,
+        "max_tokens": max_tokens,
+        "messages": [{"role": "user", "content": content}],
+    }
+    if temperature is not None:
+        kwargs["temperature"] = temperature
+    if system:
+        kwargs["system"] = system
+    if tools:
+        kwargs["tools"] = tools
+    if thinking:
+        kwargs["thinking"] = {"type": "adaptive"}
+        kwargs["output_config"] = {"effort": thinking}
+
+    def _call() -> tuple[list[str], object]:
+        chunks_inner: list[str] = []
+        with client.messages.stream(**kwargs) as stream:
+            for chunk in stream.text_stream:
+                chunks_inner.append(chunk)
+                if _STREAM_SINK is not None:
+                    _STREAM_SINK(chunk)
+            final_inner = stream.get_final_message()
+        return chunks_inner, final_inner
+
+    chunks, final = _with_retries(_call)
+    text = "".join(chunks)
+    usage = final.usage
+    return LLMResponse(
+        text=text,
+        model=f"anthropic:{model_id}",
+        input_tokens=getattr(usage, "input_tokens", None),
+        output_tokens=getattr(usage, "output_tokens", None),
+        cache_read_tokens=getattr(usage, "cache_read_input_tokens", None),
+        cache_write_tokens=getattr(usage, "cache_creation_input_tokens", None),
+        duration_s=0.0,
+        stop_reason=final.stop_reason,
+    )
+
+
+_STREAM_SINK = None  # set via set_stream_sink for live output
+
+
+def set_stream_sink(sink) -> None:
+    """Register a callable(chunk: str) -> None called for each streamed token."""
+    global _STREAM_SINK
+    _STREAM_SINK = sink
+
+
+def _openai(*, prompt: str, model_id: str, system: Optional[str],
+            max_tokens: int, temperature: Optional[float]) -> LLMResponse:
+    import openai
+    client = openai.OpenAI()
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
+    # Newer OpenAI models (gpt-5, o-series) use max_completion_tokens and
+    # reject the legacy max_tokens. Use the new name and let the API map
+    # it for older models.
+    kwargs = {
+        "model": model_id,
+        "messages": messages,
+        "max_completion_tokens": max_tokens,
+    }
+    # Reasoning models (o1, o3, o4) often reject non-default temperature.
+    # Only pass it if the caller explicitly set one.
+    if temperature is not None:
+        kwargs["temperature"] = temperature
+    def _call():
+        try:
+            return client.chat.completions.create(**kwargs)
+        except openai.BadRequestError as e:
+            # Graceful fallback for legacy models that want max_tokens.
+            if "max_completion_tokens" in str(e) or "max_tokens" in str(e):
+                kwargs.pop("max_completion_tokens", None)
+                kwargs["max_tokens"] = max_tokens
+                return client.chat.completions.create(**kwargs)
+            raise
+
+    r = _with_retries(_call)
+    choice = r.choices[0]
+    return LLMResponse(
+        text=choice.message.content or "",
+        model=f"openai:{model_id}",
+        input_tokens=getattr(r.usage, "prompt_tokens", None),
+        output_tokens=getattr(r.usage, "completion_tokens", None),
+        duration_s=0.0,
+        stop_reason=choice.finish_reason,
+    )
+
+
+def _log_call(work_dir: Path, *, stage: str, prompt: str,
+              system: Optional[str], model: str, response: LLMResponse) -> None:
+    work_dir.mkdir(parents=True, exist_ok=True)
+    log_path = work_dir / "llm_calls.jsonl"
+    prompt_hash = hashlib.sha256(prompt.encode()).hexdigest()[:16]
+    entry = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "stage": stage,
+        "model": model,
+        "prompt_hash": prompt_hash,
+        "prompt_chars": len(prompt),
+        "system_chars": len(system) if system else 0,
+        "response_chars": len(response.text),
+        "input_tokens": response.input_tokens,
+        "output_tokens": response.output_tokens,
+        "cache_read_tokens": response.cache_read_tokens,
+        "cache_write_tokens": response.cache_write_tokens,
+        "duration_s": round(response.duration_s, 2),
+        "stop_reason": response.stop_reason,
+    }
+    with log_path.open("a") as f:
+        f.write(json.dumps(entry) + "\n")

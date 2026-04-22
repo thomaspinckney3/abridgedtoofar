@@ -1,0 +1,53 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he had lived the life of a sated aristocrat; he had a fine pride in himself, was even a trifle egotistical, as country gentlemen sometimes become because of their insular situation",
+      "source_locator": "paragraph 5, character description of Buck",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is a voice-establishing passage that ironically frames Buck's pre-Klondike complacency through class register ('sated aristocrat,' 'insular situation'); the draft preserves the words but cuts the preceding clause 'During the four years since his puppyhood' which contextualizes the saturation of that aristocratic life, slightly diminishing the ironic buildup.",
+      "suggested_fix": "Restore the full clause 'During the four years since his puppyhood he had lived the life of a sated aristocrat' verbatim to preserve the ironic temporal framing."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "he accumulated a fund of wrath that boded ill for whoever first fell foul of him. His eyes turned blood-shot, and he was metamorphosed into a raging fiend.",
+      "source_locator": "paragraph on two days and nights in the express car",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'accumulated a fund of wrath that boded ill for whoever first fell foul of him' is rhetorically distinctive — it gives Buck's transformation a deliberate, almost financial quality — and is entirely absent from the draft, which jumps directly to 'His eyes turned blood-shot.'",
+      "suggested_fix": "Insert 'he accumulated a fund of wrath that boded ill for whoever first fell foul of him' before the metamorphosis sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Of this last Buck was never guilty, though he did see beaten dogs that fawned upon the man, and wagged their tails, and licked his hand.",
+      "source_locator": "paragraph beginning 'He was beaten (he knew that)'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The explicit statement 'Of this last Buck was never guilty' — referring to conciliation — is interpretively critical: it establishes Buck's defining characteristic of proud non-submission that drives the entire novel. The draft reduces this to merely noting he 'saw dogs that fawned,' losing the direct declarative about Buck himself.",
+      "suggested_fix": "Restore 'Of this last Buck was never guilty' before describing the fawning dogs, as this is an interpretive keystone for Buck's character."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "There were great stables, where a dozen grooms and boys held forth, rows of vine-clad servants' cottages, an endless and orderly array of outhouses",
+      "source_locator": "paragraph 2, description of Judge Miller's place",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The elaborate cataloguing of the estate — 'an endless and orderly array of outhouses, long grape arbors, green pastures' — establishes the opulence and civilized comfort that makes Buck's fall so dramatic; the draft compresses this inventory significantly, losing the rhythmic accumulation.",
+      "suggested_fix": "Restore at least the full list including 'endless and orderly array of outhouses, long grape arbors, green pastures' to preserve the rhetorical effect of abundance."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Perrault was a French-Canadian, and swarthy; but François was a French-Canadian half-breed, and twice as swarthy. They were a new kind of men to Buck (of which he was destined to see many more)",
+      "source_locator": "final paragraphs, introduction of Perrault and François",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The parenthetical '(of which he was destined to see many more)' is a small but distinctive narratorial aside that establishes the epic forward-looking voice of the narrator; its loss is a minor voice flattening.",
+      "suggested_fix": "Restore the parenthetical aside '(of which he was destined to see many more)' after introducing Perrault and François as a new kind of men."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves most signature passages, but accumulates several medium-severity flattenings — notably the loss of 'accumulated a fund of wrath that boded ill,' the erasure of 'Of this last Buck was never guilty,' and slight compression of the sated-aristocrat passage — that collectively weaken the voice and interpretive precision without quite reaching the regeneration threshold."
+}

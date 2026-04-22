@@ -1,0 +1,53 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the evil of it is that it is a world wrapped up in too much jeweller's cotton and fine wool, and cannot hear the rushing of the larger worlds, and cannot see them as they circle round the sun. It is a deadened world",
+      "source_locator": "paragraph 2, second half",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The rhetorical build of 'the evil of it is that…' followed by two parallel 'cannot' clauses is signature Dickensian periodic structure; the draft collapses it into a subordinate 'that' clause, losing the emphatic syntactic rhythm and the foregrounded 'evil of it is' indictment.",
+      "suggested_fix": "Restore 'the evil of it is that it is a world wrapped up in too much jeweller's cotton and fine wool, and cannot hear…and cannot see them as they circle round the sun. It is a deadened world' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "How Alexander wept when he had no more worlds to conquer, everybody knows—or has some reason to know by this time, the matter having been rather frequently mentioned.",
+      "source_locator": "paragraph on Lady Dedlock's character, opening sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The parenthetical aside '—or has some reason to know by this time, the matter having been rather frequently mentioned' is the narrator's characteristic mock-weary irony; its deletion flattens the voice to plain fact-statement and loses a critical-tradition favourite instance of Dickensian narrative self-consciousness.",
+      "suggested_fix": "Restore the full sentence including the aside: 'everybody knows—or has some reason to know by this time, the matter having been rather frequently mentioned.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "she supposes herself to be an inscrutable Being, quite out of the reach and ken of ordinary mortals—seeing herself in her glass, where indeed she looks so. Yet every dim little star revolving about her…knows her weaknesses, prejudices, follies, haughtinesses, and caprices",
+      "source_locator": "long paragraph on Lady Dedlock's inscrutability",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'Yet' pivot and the full catalogue 'weaknesses, prejudices, follies, haughtinesses, and caprices' are signature; the draft omits 'follies, haughtinesses, and caprices' and drops 'Yet', weakening the ironic reversal that is the interpretive core of the passage.",
+      "suggested_fix": "Restore the full 'Yet every dim little star…knows her weaknesses, prejudices, follies, haughtinesses, and caprices' with the 'Yet' contrast preserved."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He would on the whole admit nature to be a good idea (a little low, perhaps, when not enclosed with a park-fence), but an idea dependent for its execution on your great county families.",
+      "source_locator": "Sir Leicester introduction paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft changes 'He would on the whole admit nature to be a good idea' to 'Nature he admits to be a good idea', losing the hedged condescension of 'on the whole admit' that makes Sir Leicester's pomposity comic.",
+      "suggested_fix": "Restore 'He would on the whole admit nature to be a good idea' to preserve the tonal precision."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the fashionable intelligence—which, like the fiend, is omniscient of the past and present, but not the future—cannot yet undertake to say",
+      "source_locator": "paragraph after Lady Dedlock leaves Lincolnshire",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this but compresses 'in mere lowness of spirits, as the housekeeper has passed along the old rooms shutting up the shutters' to 'as the housekeeper shut up the shutters', losing the melancholy directorial phrase 'in mere lowness of spirits' and 'passed along the old rooms'.",
+      "suggested_fix": "Restore 'have seemed to vanish into the damp walls in mere lowness of spirits, as the housekeeper has passed along the old rooms shutting up the shutters.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful but flattens three medium-weight signature moments—the 'evil of it is' periodic structure, the Alexander wept ironic aside, and the 'follies, haughtinesses, and caprices' catalogue—without rising to a high-severity loss; no regeneration trigger is met."
+}

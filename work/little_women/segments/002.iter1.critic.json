@@ -1,0 +1,71 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I know I do,--teaching those tiresome children nearly all day, when I'm longing to enjoy myself at home / How would you like to be shut up for hours with a nervous, fussy old lady",
+      "source_locator": "paragraph beginning 'I know I do' through Amy's speech about school-girls",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The individual complaint speeches are each character-establishing moments with distinctive voice and comic rhythm. The draft compresses them into a single summarizing sentence ('Complaints rose and crossed. Meg was tired of teaching tiresome children; Jo of being shut up with a nervous, fussy old lady...'), erasing the competitive one-upmanship structure and each character's distinct grievance idiom—a voice-establishing passage the chapter's opening irony depends on.",
+      "suggested_fix": "Restore each sister's complaint speech in near-verbatim form; the escalating competitive complaints are essential to characterization and the chapter's comedy."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "she seemed to live in a happy world of her own, only venturing out to meet the few whom she trusted and loved",
+      "source_locator": "character-sketch paragraph, description of Beth",
+      "draft_treatment": "absent",
+      "why_it_matters": "This phrase is the interpretive key to Beth's character—her interiority and gentle withdrawal—and it is entirely absent from the draft's compressed sketch. Readings of Beth depend on this sentence.",
+      "suggested_fix": "Restore 'only venturing out to meet the few whom she trusted and loved' in the character sketch of Beth."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was a comfortable old room, though the carpet was faded and the furniture very plain; for a good picture or two hung on the walls, books filled the recesses, chrysanthemums and Christmas roses bloomed in the windows",
+      "source_locator": "paragraph beginning 'As young readers like to know how people look'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This room description establishes the novel's central domestic atmosphere and the tension between poverty and cultivated taste; it is a thematically and stylistically distinctive passage that grounds the entire chapter's setting.",
+      "suggested_fix": "Reinsert the room description between the character-sketch introduction and the individual portraits."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Jo wasn't ashamed of the great tear that dropped off the end of her nose, and Amy never minded the rumpling of her curls as she hid her face on her mother's shoulder and sobbed out",
+      "source_locator": "paragraph beginning 'Everybody sniffed when they came to that part'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the emotional climax of the letter scene; its precise physical detail (the tear on Jo's nose, Amy's rumpled curls) is the signature of Alcott's sentimental-comic mode and is often quoted. The draft skips directly to Amy's speech, losing the narrator's affectionate commentary.",
+      "suggested_fix": "Restore the full sentence about Jo's tear and Amy's curls before Amy's speech."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Beth liked the place where the bundles fell off and tumbled down stairs / My favorite part was when we came out on the flat roof where our flowers and arbors and pretty things were, and all stood and sung for joy up there in the sunshine",
+      "source_locator": "dialogue following Mrs. March's Pilgrim's Progress speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Each sister's individual memory of the game is interpretively loaded—their choices of favorite moment characterize them (Meg: relief from burdens; Beth: joyful arrival; Amy: literal reward). The draft collapses these into a single vague sentence, erasing the individualizing detail.",
+      "suggested_fix": "Restore each sister's distinct named memory of the Pilgrim's Progress game in the dialogue."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "We were in the Slough of Despond to-night, and mother came and pulled us out as Help did in the book... the fancy which lent a little romance to the very dull task of doing her duty",
+      "source_locator": "Jo's speech and narrator comment near end of Pilgrim's Progress discussion",
+      "draft_treatment": "absent",
+      "why_it_matters": "Jo's application of the allegory to the evening's events is a key moment of self-awareness and textual playfulness; the narrator's parenthetical about 'romance' and 'duty' is a signature ironic aside that establishes the book's meta-fictional relationship to its own genre.",
+      "suggested_fix": "Restore Jo's 'Slough of Despond' speech and the narrator's commentary on her romantic fancy."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Jo, thinking that keeping her temper at home was a much harder task than facing a rebel or two down South",
+      "source_locator": "after Jo's resolution speech following the letter",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic parenthetical is a characteristic Alcott narratorial aside that both deepens Jo's characterization and leavens the sentiment with comedy; its absence flattens the emotional register.",
+      "suggested_fix": "Reinsert the parenthetical about Jo's private comparison of domestic duty to soldiering."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity compression of the individual complaint speeches (character-establishing voice lost) and four medium-severity losses—room description, Jo's tear/Amy's curls at the letter climax, the sisters' individual Pilgrim's Progress memories, and Jo's 'Slough of Despond' speech with narrator aside—together requiring regeneration."
+}

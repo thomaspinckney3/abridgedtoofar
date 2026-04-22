@@ -1,0 +1,53 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Indeed, as each has her own individuality, not to say eccentricity, pretty strongly developed, nothing is so easy as verbal retaliation; but, somehow, good-will reigns among them to a considerable degree.",
+      "source_locator": "end of first paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's careful three-part move—individuality → ease of retaliation → good-will nonetheless—carries the chapter's central ironic thesis about Cranford society. The draft collapses it into a rushed clause ('individuality (not to say eccentricity) is strong, peppery little quarrels flame up and out again, and somehow good-will reigns'), losing the rhetorical shape and the pointed observation about 'verbal retaliation.'",
+      "suggested_fix": "Restore the full sentence structure: 'as each has her own individuality, not to say eccentricity, pretty strongly developed, nothing is so easy as verbal retaliation; but, somehow, good-will reigns among them to a considerable degree.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The Cranford ladies have only an occasional little quarrel, spirited out in a few peppery words and angry jerks of the head; just enough to prevent the even tenor of their lives from becoming too flat.",
+      "source_locator": "opening of second paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is tonally distinctive Gaskell irony—'just enough to prevent the even tenor of their lives from becoming too flat' is a comic observation that is voice-establishing and quotable. It disappears entirely in the draft.",
+      "suggested_fix": "Restore as its own sentence at the opening of the dress/fashion paragraph, or folded cleanly into the first paragraph's close."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There were one or two consequences arising from this general but unacknowledged poverty, and this very much acknowledged gentility, which were not amiss, and which might be introduced into many circles of society to their great improvement.",
+      "source_locator": "paragraph beginning 'There were one or two consequences'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narrator's aside—'which might be introduced into many circles of society to their great improvement'—is a characteristically ironic intrusion of authorial voice that signals the chapter's satirical project. The draft reduces it to 'Certain consequences … were not amiss,' erasing the extrapolating wit entirely.",
+      "suggested_fix": "Restore the full framing sentence with the phrase 'which might be introduced into many circles of society to their great improvement.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I was surprised to hear his opinions quoted as authority at a visit which I paid to Cranford about a year after he had settled in the town. My own friends had been among the bitterest opponents of any proposal to visit the Captain and his daughters, only twelve months before; and now he was even admitted in the tabooed hours before twelve.",
+      "source_locator": "paragraph beginning 'Yet, somehow, Captain Brown made himself respected'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage establishes the narrator's temporal perspective and dramatises the speed of Captain Brown's social rehabilitation with precise irony ('tabooed hours before twelve'). The draft narrates his acceptance in compressed generality, losing the specific comedic detail and the narrator's personal witness.",
+      "suggested_fix": "Restore at least the detail of being admitted 'in the tabooed hours before twelve' and the narrator's surprise at finding him quoted as authority."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He had been blind to all the small slights, and omissions of trivial ceremonies, with which he had been received. He had been friendly, though the Cranford ladies had been cool; he had answered small sarcastic compliments in good faith",
+      "source_locator": "late in the Captain Brown introduction paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The anaphoric 'He had been … He had been …' rhythm is the rhetorical marker of Brown's character and forms an interpretive keystone for his social triumph. The draft paraphrases this into a participial clause ('Blind to the small slights … answering little sarcasms in good faith'), losing the deliberate syntactic emphasis.",
+      "suggested_fix": "Restore the anaphoric sentence structure so the three parallel clauses register as they do in the source."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all major set-pieces and quotable lines, but softens several voice-establishing sentences in the middle of the source—most notably the 'verbal retaliation' observation, the 'just enough to prevent the even tenor' irony, and the narrator's aside about elegant economy spreading to other circles—resulting in medium-grade voice flattening that does not individually rise to regeneration level."
+}

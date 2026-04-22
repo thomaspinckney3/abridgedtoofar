@@ -1,0 +1,71 @@
+{
+  "segment_id": "004",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The Adams connection was singularly small in Boston, but the family of Brooks was singularly large and even brilliant...One might have sought long in much larger and older societies for three brothers-in-law more distinguished",
+      "source_locator": "paragraph 2, opening of the Adams/Brooks family analysis",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph establishes the entire social and familial context for the chapter — the contrast between the Adams and Brooks connections, the positioning of Everett and Frothingham, and the chain of reasoning that leads to the State Street feud and anti-slavery inheritance. Its absence severs the logical foundation for all that follows about Charles Francis Adams's isolation.",
+      "suggested_fix": "Restore the paragraph beginning 'The Adams connection was singularly small in Boston' through the analysis of Everett's career and the slave-power context, before the State Street Paradise passage."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "For any American boy the fact that his father was running for office would have dwarfed for the time every other excitement, but even apart from personal bias, the year 1848, for a boy's road through life, was decisive for twenty years to come.",
+      "source_locator": "paragraph 4, immediately after the Buffalo convention sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a key interpretive hinge — Adams's explicit claim that 1848 was 'decisive for twenty years to come' and that there was 'never a side-path of escape.' The draft keeps the side-path sentence but drops the framing that gives it its weight as a statement about generational determination.",
+      "suggested_fix": "Restore the opening of this paragraph ('For any American boy...decisive for twenty years to come') as the transition into the 'stamp of 1848' passage."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "His father's business in life was to get past the dangers of the slave-power, or to fix its bounds at least. The task done, he might be content to let his sons pay for the pilotage; and it mattered little to his success whether they paid it with their lives wasted on battle-fields or in misdirected energies and lost opportunity.",
+      "source_locator": "paragraph 5, 'Thus far he had nothing to do with it'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The pilotage metaphor is a central figure in the chapter — the father navigating his own clear channel while the son faces an unknown ocean. Its absence removes the key structural image of generational divergence that explains why the father's education cannot serve the son.",
+      "suggested_fix": "Restore the full 'Thus far he had nothing to do with it' paragraph including the pilotage metaphor and the contrast between the generation of 1840–1870 and that of 1870–1900."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The boy naturally learned only one lesson from his saturation in such air...The Paris of Louis Philippe, Guizot, and de Tocqueville, as well as the London of Robert Peel, Macaulay, and John Stuart Mill, were but varieties of the same upper-class bourgeoisie...England's middle-class government was the ideal of human progress.",
+      "source_locator": "paragraph after 'The little group of men in Mount Vernon Street'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph places Boston's intellectual world in its European context and delivers the ironic conclusion — 'England's middle-class government was the ideal of human progress' — that sets up the Karl Marx passage. Its absence makes the transition to 'No one except Karl Marx foresaw radical change' abrupt and strips the irony.",
+      "suggested_fix": "Restore the paragraph beginning 'The boy naturally learned only one lesson' through 'England's middle-class government was the ideal of human progress' before the Karl Marx/coal passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Most school experience was bad. Boy associations at fifteen were worse than none. Boston at that time offered few healthy resources for boys or men. The bar-room and billiard-room were more familiar than parents knew.",
+      "source_locator": "near end of source, after the four-tools paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage with its catalogue of Boston boy-life (skating, baseball, sleighing, no sport as a pursuit) is voice-defining — the dry sociological register applied to childhood is characteristic Adams irony. Its absence flattens the account of the Boston environment.",
+      "suggested_fix": "Restore the 'Most school experience was bad' passage through the list of available sports and the conclusion about books remaining 'as in the eighteenth century.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Henry Adams, as a brand escaped from the burning, always looked back with astonishment at their luck. The fact seemed to prove that they were born, like birds, with a certain innate balance.",
+      "source_locator": "near end, 'As far as outward bearing went' paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "'A brand escaped from the burning' is a recognizable biblical allusion deployed with characteristic Adams self-deprecating irony; the passage about innate balance ties back to the portrait of Charles Francis Adams and is part of the chapter's structural argument.",
+      "suggested_fix": "Restore the paragraph beginning 'As far as outward bearing went' including the 'brand escaped from the burning' phrase and the 'born like birds with a certain innate balance' conclusion."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the happiest hours of the boy's education were passed in summer lying on a musty heap of Congressional Documents in the old farmhouse at Quincy, reading 'Quentin Durward,' 'Ivanhoe,' and 'The Talisman,' and raiding the garden at intervals for peaches and pears. On the whole he learned most then.",
+      "source_locator": "final sentence of source segment",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the Quincy/peaches-and-pears image but strips it of its closing rhythm — 'On the whole he learned most then' as the chapter's ironic final judgment is moved to become a mid-sentence clause, losing the punch of the period and the chapter-closing authority.",
+      "suggested_fix": "Restore 'On the whole he learned most then' as a standalone sentence concluding the passage, in its source position as the chapter's final word."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft omits multiple high-weight interpretive passages (the Adams/Brooks family context paragraph, the pilotage metaphor, the 'decisive for twenty years' framing) and several medium-weight voice passages (Paris/London bourgeoisie paragraph, 'brand escaped from the burning,' Boston boy-life catalogue), while inserting substantial non-source material; the combined losses and structural displacements require regeneration."
+}

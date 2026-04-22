@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "and really will come to a settlement one of these days",
+      "source_locator": "After 'a mere bud on the forest tree of the parent suit'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic coda is a classic Dickensian deadpan aside — the mock-reassurance that the suit 'really will come to a settlement one of these days' is a signature satirical beat that encapsulates the novel's whole critique of Chancery.",
+      "suggested_fix": "Restore the full sentence: 'For the question at issue is only a question of costs, a mere bud on the forest tree of the parent suit, and really will come to a settlement one of these days.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "some two or three of whom have inherited it from their fathers, who made a fortune by it",
+      "source_locator": "The 'solicitors in the cause' paragraph, describing the ranged solicitors",
+      "draft_treatment": "absent",
+      "why_it_matters": "The clause 'who made a fortune by it' is interpretively essential: it exposes that the suit has enriched the legal profession while ruining its nominal parties, which is a central satirical thesis of the chapter.",
+      "suggested_fix": "Restore 'who made a fortune by it' after 'inherited it from their fathers.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "there are influences that can never come to good",
+      "source_locator": "In the 'How many people' paragraph, the 'In trickery, evasion' sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's formulation 'In trickery, evasion...there are influences that can never come to good' is a rhetorically shaped, generalized moral verdict; the draft's 'Trickery, evasion...never come to good' strips the rhetorical framing and weakens its voice.",
+      "suggested_fix": "Restore to: 'In trickery, evasion, procrastination, spoliation, botheration, under false pretences of all sorts, there are influences that can never come to good.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Nothing can possibly come of the prisoner's conglomeration but his being sent back to prison, which is soon done. The man from Shropshire ventures another remonstrative 'My lord!'",
+      "source_locator": "Final scene, after the Chancellor speaks about the young people",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's ironic commentary on the prisoner ('Nothing can possibly come of...') and the man from Shropshire's 'remonstrative' cry are character beats compressed away; the word 'remonstrative' and the deadpan verdict on the prisoner are signature voice moments.",
+      "suggested_fix": "Restore at minimum: 'Nothing can possibly come of the prisoner's conglomeration but his being sent back to prison, which is soon done. The man from Shropshire ventures another remonstrative \"My lord!\"'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses — the ironic 'really will come to a settlement one of these days,' the damning 'who made a fortune by it,' and the flattened 'there are influences' formulation — collectively strip key satirical and interpretive beats from this signature chapter opening."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "It had occurred to me that this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead,",
+      "source_locator": "garage description, after the wrecked Ford sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "Nick’s ironic fantasy about hidden luxury is classic narrative voice-work that undercuts the squalor of Wilson’s garage; cutting it flattens his perspective.",
+      "suggested_fix": "Restore the sentence verbatim (or near-verbatim) within the garage paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "one of which decomposed apathetically in the saucer of milk all afternoon.",
+      "source_locator": "dog-care scene, after elevator boy brings straw, milk, biscuits",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sardonic image of the dog biscuit ‘decomposing apathetically’ is a miniature of Nick’s satirical eye and a critic-cited detail; its loss dulls the scene’s texture.",
+      "suggested_fix": "Insert the full biscuit sentence after the elevator-boy detail."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Mr. McKee was asleep on a chair with his fists clenched in his lap, like a photograph of a man of action.",
+      "source_locator": "late-party tableau, just before the nose-breaking sequence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This visual simile is a trademark Fitzgerald stroke and sets up the subsequent lather-wipe gag; deleting it weakens the party’s surreal drift and Nick’s tableau style.",
+      "suggested_fix": "Reinsert the \"photograph of a man of action\" sentence (with the later handkerchief line) before the Daisy argument erupts."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three voice-defining tableau sentences are missing, warranting a regenerate."
+}

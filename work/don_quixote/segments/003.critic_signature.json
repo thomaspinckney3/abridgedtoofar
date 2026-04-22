@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "who has such a firm belief in all that about the island, that I suppose all the exposures that could be imagined would not get it out of his head.",
+      "source_locator": "barber's first speech to the curate, after 'I have no doubt of it'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The barber's full line establishes an ironic commentary on the immovability of Sancho's credulity — 'all the exposures that could be imagined would not get it out of his head' is interpretively important for the novel's theme of delusion perpetuating itself; the draft cuts it to a stub.",
+      "suggested_fix": "Restore the complete barber speech: 'who has such a firm belief in all that about the island, that I suppose all the exposures that could be imagined would not get it out of his head.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Profit by this advice, Sancho, and report to me clearly and faithfully the truth of what thou knowest touching what I have demanded of thee.",
+      "source_locator": "Don Quixote's long speech to Sancho about reporting the truth, closing lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "The closing injunction 'Profit by this advice, Sancho' completes Don Quixote's sustained rhetorical address; its omission cuts the formal, ironic register of the speech, and the phrase 'times would be different' preceding it is also absent, softening the political-philosophical dimension.",
+      "suggested_fix": "Restore the tail of Don Quixote's speech: 'times would be different, and other ages would be reckoned iron ages more than ours... Profit by this advice, Sancho, and report to me clearly and faithfully the truth of what thou knowest touching what I have demanded of thee.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "That was only reasonable, replied Sancho, for, by what your worship says, misfortunes belong more properly to knights-errant than to their squires.",
+      "source_locator": "Sancho's reply after Don Quixote's 'blanketed thee once / belaboured me a hundred times' speech",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the line, but omits the surrounding texture: the source has 'We sallied forth together, we took the road together, we wandered abroad together' — the rhetorical triple — whereas the draft collapses it to 'We sallied forth together; we have had the same fortune.' The anaphoric rhythm is a textual distinctiveness marker.",
+      "suggested_fix": "Restore the triple: 'We sallied forth together, we took the road together, we wandered abroad together; we have had the same fortune and the same luck.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Is there more, then? asked Don Quixote. There's the tail to be skinned yet, said Sancho; all so far is cakes and fancy bread",
+      "source_locator": "exchange between Don Quixote and Sancho after the list of calumnies, before Sancho mentions Carrasco",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft runs 'That's just where it is—body of my father!—there's the tail to be skinned yet' but drops Don Quixote's interjection 'Is there more, then?' and the vivid idiom 'all so far is cakes and fancy bread,' which is a register-defining colloquialism from Sancho.",
+      "suggested_fix": "Insert Don Quixote's question and restore Sancho's full idiomatic reply: 'Is there more, then? / There's the tail to be skinned yet; all so far is cakes and fancy bread; but if your worship wants to know all...'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves most key dialogue verbatim, but suffers several medium-level voice flattenings: a truncated barber speech, a dropped political-rhetorical coda to Don Quixote's truth-telling address, a collapsed anaphoric triple, and a missing Sancho idiom — none individually rising to high severity, and the total (four findings, three medium) just clears the regenerate threshold only if three mediums trigger it; strictly counted, there are three medium findings plus one low, which by the rubric does warrant regeneration."
+}

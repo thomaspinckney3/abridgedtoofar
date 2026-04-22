@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-21T21:16:46",
+  "key": "ee01f63fdf481bb6ff6ccadfb8def090",
+  "model": "anthropic:claude-opus-4-7",
+  "response": {
+    "text": "{\n  \"segment_id\": \"003\",\n  \"critic\": \"signature\",\n  \"findings\": [],\n  \"verdict\": \"pass\",\n  \"summary\": \"All tagged signatures are preserved essentially verbatim, including the blue gardens opening, oranges/lemons catalogue, yellow cocktail music paragraph, Gatsby's smile, Owl Eyes, the metropolitan twilight digression, Jordan's subterfuges, and the honest-people closing line.\"\n}",
+    "input_tokens": 5,
+    "output_tokens": 158,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 22311,
+    "duration_s": 4.4598047733306885,
+    "stop_reason": "end_turn"
+  }
+}

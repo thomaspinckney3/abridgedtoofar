@@ -1,0 +1,35 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "As for you, Amy, you are altogether too particular and prim. Your airs are funny now; but you'll grow up an affected little goose, if you don't take care.",
+      "source_locator": "After Beth is called 'a dear, and nothing else'; before the character-sketch paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "Meg's critique of Amy is the thematic counterpoint to her critique of Jo and establishes the symmetry of the elder-sister lecture; its absence removes interpretive balance and a key beat in Amy's characterization that critics return to.",
+      "suggested_fix": "Restore Meg's speech to Amy, including the 'affected little goose' line and the acknowledgment that she likes Amy's 'nice manners and refined ways of speaking, when you don't try to be elegant.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Very few letters were written in those hard times that were not touching, especially those which fathers sent home. In this one little was said of the hardships endured, the dangers faced, or the homesickness conquered;",
+      "source_locator": "Immediately before the letter is quoted; after 'They all drew to the fire'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial aside is the only moment in the chapter where the narrator steps back to place the family's experience inside the larger war context; its loss flattens the chapter's tonal register from communal pathos to domestic scene.",
+      "suggested_fix": "Restore the two-sentence narrator paragraph before the letter text begins, preserving 'Very few letters were written in those hard times that were not touching' and the list of what was NOT said (hardships, dangers, homesickness)."
+    },
+    {
+      "severity": "low",
+      "class": "signature_loss",
+      "source_passage": "I don't see how you can write and act such splendid things, Jo. You're a regular Shakespeare! exclaimed Beth",
+      "source_locator": "After 'It's the best we've had yet,' said Meg; during the rehearsal scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "Beth's 'regular Shakespeare' line is a small but distinctively voiced moment that establishes Beth's uncritical adoration of Jo and has mild cultural familiarity among readers of the novel.",
+      "suggested_fix": "Insert Beth's exclamation and Jo's modest reply ('Not quite') before the Macbeth riff, which is already present in the draft."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Two medium-severity losses (Amy's character lecture omitted entirely; war-context narratorial aside cut) and one low-severity omission, but no high-severity failures; verdict is pass, though a revision pass should restore Meg's Amy lecture and the 'Very few letters' paragraph."
+}

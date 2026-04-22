@@ -1,0 +1,53 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "the fear of the wild thing for the trap. It was a token that he was harking back through his own life to the lives of his forebears; for he was a civilized dog, an unduly civilized dog, and of his own experience knew no trap",
+      "source_locator": "paragraph beginning 'Nor did he open his eyes till roused'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The explanatory sentence establishing the atavism thesis — that Buck's instinctive trap-fear is evidence of ancestral memory because 'he was a civilized dog, an unduly civilized dog' — is the interpretive keystone of the chapter and the novel's central argument; the draft keeps the phrase 'fear of the wild thing for the trap' but drops the entire explanation, gutting the thematic meaning.",
+      "suggested_fix": "Restore the full sentence: 'It was a token that he was harking back through his own life to the lives of his forebears; for he was a civilized dog, an unduly civilized dog, and of his own experience knew no trap and so could not of himself fear it.' This cannot be compressed away."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "Civilized, he could have died for a moral consideration, say the defence of Judge Miller's riding-whip; but the completeness of his decivilization was now evidenced by his ability to flee from the defence of a moral consideration and so save his hide.",
+      "source_locator": "paragraph beginning 'Not that Buck reasoned it out'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the novel's most explicit statement of Buck's 'decivilization,' named as such, and the Judge Miller's riding-whip callback is a critical interpretive link to Chapter 1; the entire sentence is absent in the draft, which jumps from 'He was fit, that was all' directly to stomach-driven theft, erasing the philosophical core of the passage.",
+      "suggested_fix": "Restore the full passage: 'All his days, no matter what the odds, he had never run from a fight. But the club of the man in the red sweater had beaten into him a more fundamental and primitive code. Civilized, he could have died for a moral consideration, say the defence of Judge Miller's riding-whip; but the completeness of his decivilization was now evidenced by his ability to flee from the defence of a moral consideration and so save his hide.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "It is true, it was a vicarious experience, else he would not have lived to profit by it.",
+      "source_locator": "paragraph beginning 'He had never seen dogs fight'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This dry, ironic narratorial aside is prosodically and rhetorically distinctive — it is one of London's signature intrusions of wry authorial voice and is widely noticed by critics as establishing the narrator's detached, almost sardonic stance toward Buck's education.",
+      "suggested_fix": "Restore the sentence verbatim immediately after 'his first experience taught him an unforgettable lesson.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "it was his ancestors, dead and dust, pointing nose at star and howling down through the centuries and through him.",
+      "source_locator": "paragraph beginning 'And not only did he learn by experience'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'pointing nose at star' from the ancestor clause, which is the structural echo ('he pointed his nose at a star... it was his ancestors... pointing nose at star') that gives the sentence its rhetorical power and makes the identification of Buck with his ancestors complete; losing the repetition flattens the cadence.",
+      "suggested_fix": "Restore the full clause: 'it was his ancestors, dead and dust, pointing nose at star and howling down through the centuries and through him.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "No lazy, sun-kissed life was this, with nothing to do but loaf and be bored.",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This phrase is the rhetorical contrast that gives the opening its punch — it ironically echoes the Southland idyll established in Chapter 1 and is stylistically distinctive in its rhythm.",
+      "suggested_fix": "Restore after 'flung into the heart of things primordial.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity interpretive losses gut the chapter's atavism thesis: the 'unduly civilized dog' explanatory sentence and the entire 'completeness of his decivilization / Judge Miller's riding-whip' passage are absent, with additional medium losses in narratorial voice."
+}

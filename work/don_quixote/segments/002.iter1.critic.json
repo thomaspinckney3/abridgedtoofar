@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "God keep thee in his hand, poor Don Quixote, for it seems to me thou art precipitating thyself from the height of thy madness into the profound abyss of thy simplicity.",
+      "source_locator": "After Don Quixote proposes his secret measure; curate's internal aside, before the barber speaks",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most rhetorically distinctive and critically noted lines in the chapter — the curate's ironic interior exclamation is both voice-establishing and interpretively rich, marking the tension between apparent sanity and persistent delusion. Its absence erases a key tonal moment.",
+      "suggested_fix": "Restore the curate's interior exclamation verbatim: 'God keep thee in his hand, poor Don Quixote, for it seems to me thou art precipitating thyself from the height of thy madness into the profound abyss of thy simplicity.' It must appear as a narratorial interior disclosure, not summarised."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Thou free, thou cured, thou in thy senses! and I mad, I disordered, I bound! I will as soon think of sending rain as of hanging myself.",
+      "source_locator": "The Jupiter madman's speech inside the madhouse story; near end of that embedded tale",
+      "draft_treatment": "absent",
+      "why_it_matters": "The tricolon antithesis ('Thou free… and I mad…') is the rhetorical and thematic climax of the barber's embedded tale, and the phrase 'I will as soon think of sending rain as of hanging myself' is the punchline that mirrors Don Quixote's own condition. Its loss flattens the interpolated story and severs its satirical parallel to the main narrative.",
+      "suggested_fix": "Restore the Jupiter madman's full speech including the tricolon 'Thou free, thou cured, thou in thy senses! and I mad, I disordered, I bound!' and the closing line about hanging himself; these are the rhetorical heart of the embedded anecdote."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "comparisons of wit with wit, valour with valour, beauty with beauty, birth with birth, are always odious and unwelcome",
+      "source_locator": "Don Quixote's reply to the barber after the madhouse story; beginning of his long speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This formulaic rhetorical sequence is a signature moment of Don Quixote's self-defence, demonstrating his logical acuity amid madness; it is also a set-piece stylistic flourish that defines the chapter's ironic register.",
+      "suggested_fix": "Restore Don Quixote's sentence on odious comparisons verbatim after 'how blind is he who cannot see through a sieve,' before his declaration about not being Neptune."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "each of the three setting up for a new legislator, a modern Lycurgus, or a brand-new Solon",
+      "source_locator": "Description of the State-craft conversation, second paragraph of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The classical legislative comparisons (Lycurgus, Solon) are part of the narrator's mock-heroic ironic register and contribute to the voice-establishing comedy of the opening conversation; dropping them flattens the satirical tone.",
+      "suggested_fix": "Restore 'each of the three setting up for a new legislator, a modern Lycurgus, or a brand-new Solon' in the description of the State-craft discussion."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft omits two high-severity signature passages — the curate's rhetorically distinctive interior exclamation ('God keep thee in his hand… precipitating thyself from the height of thy madness into the profound abyss of thy simplicity') and the Jupiter madman's climactic tricolon antithesis ('Thou free, thou cured… and I mad, I disordered, I bound!') — plus two medium-severity voice flattenings, and must be regenerated."
+}

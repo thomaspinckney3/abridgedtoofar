@@ -1,0 +1,80 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "only an occasional little quarrel, spirited out in a few peppery words and angry jerks of the head; just enough to prevent the even tenor of their lives from becoming too flat",
+      "source_locator": "Paragraph 2, opening sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is prosodically distinctive Gaskell voice \u2014 'peppery words and angry jerks of the head' is the kind of wry, physical comic detail that defines the narrator's register; the entire paragraph is silently dropped between the 'good-will reigns' close and the dress paragraph.",
+      "suggested_fix": "Restore the sentence in full at the transition between the social-harmony observation and the dress passage; it is short enough to include verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "He immediately and quietly assumed the man's place in the room \u2026 so much as if it were a matter of course for the strong to attend to the weak, that he was a true man throughout",
+      "source_locator": "Card-party paragraph, description of Captain Brown serving guests",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'A true man throughout' is the interpretive keystone for Captain Brown's characterisation \u2014 the critical tradition reads this phrase as Gaskell's counter-ideal of masculinity set against Cranford's Amazon ethos; flattening it to 'He quietly assumed the man's place; attended to every one's wants' loses the moral weight entirely.",
+      "suggested_fix": "Restore the full clause: 'and yet did it all in so easy and dignified a manner, and so much as if it were a matter of course for the strong to attend to the weak, that he was a true man throughout.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I do not know whether she was pretty or not; but I liked her face, and so did everybody, and I do not think she could help her dimples",
+      "source_locator": "Miss Jessie description paragraph, near the end",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-interrupting, hedging sentence is signature Gaskell narrator voice \u2014 the refusal to adjudicate prettiness while insisting on likeability is both stylistically distinctive and thematically important to Jessie's characterisation; it is wholly absent from the draft's condensed description.",
+      "suggested_fix": "After the physical description of Jessie, restore the sentence verbatim; it is one sentence and easily reinstated."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "there will be, I think, till she dies, though she should live to a hundred",
+      "source_locator": "Miss Jessie description, parenthetical on her childlike face",
+      "draft_treatment": "absent",
+      "why_it_matters": "This tender narratorial aside \u2014 an unusual flash of affection from an otherwise ironic narrator \u2014 signals Jessie's special status in the book and foreshadows her fate; removing it flattens a character note the rest of the novel depends on.",
+      "suggested_fix": "Restore in context: 'Her face \u2026 had something childlike in it; and there will be, I think, till she dies, though she should live to a hundred.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Death was as true and as common as poverty; yet people never spoke about that, loud out in the streets. It was a word not to be mentioned to ears polite.",
+      "source_locator": "Captain Brown / poverty-and-ostracism paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'as true and' and entirely omits the follow-up sentence 'It was a word not to be mentioned to ears polite' \u2014 a rhetorically compact, satirically charged line that the critical tradition cites when discussing Gaskell's treatment of death-avoidance as social convention paralleling poverty-avoidance.",
+      "suggested_fix": "Restore both sentences verbatim: 'Death was as true and as common as poverty; yet people never spoke about that, loud out in the streets. It was a word not to be mentioned to ears polite.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "which I think Miss Jenkyns could not have heard",
+      "source_locator": "'How was the Rambler published, ma'am?' exchange",
+      "draft_treatment": "absent",
+      "why_it_matters": "This parenthetical \u2014 'in a low voice, which I think Miss Jenkyns could not have heard' \u2014 is a signature ironic aside that dramatises the narrator's complicity and the social dynamics of the room; without it the Captain's retort reads as direct rather than whispered subversion.",
+      "suggested_fix": "Restore the full attribution: '\"How was the Rambler published, ma'am?\" asked Captain Brown in a low voice, which I think Miss Jenkyns could not have heard.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Have you any red silk umbrellas in London?",
+      "source_locator": "Red silk umbrella paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This direct address to the London reader is a register-defining narratorial intrusion \u2014 the same move repeated at the cow-in-flannel paragraph ('Do you ever see cows dressed in grey flannel in London?') \u2014 and its absence breaks the pattern of the narrator winking at the metropolitan audience.",
+      "suggested_fix": "Restore the rhetorical question after the first mention of the umbrella; it is five words."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"As you please,\" said she, settling herself with an air of resignation.",
+      "source_locator": "Pickwick/Johnson debate, before Captain Brown reads aloud",
+      "draft_treatment": "absent",
+      "why_it_matters": "The stage direction 'settling herself with an air of resignation' is a small but perfectly observed comic beat that characterises Miss Jenkyns's performative condescension; its omission slightly dulls the scene.",
+      "suggested_fix": "Restore the full line of dialogue and action before Captain Brown reads the Sam Weller passage."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits five medium-severity voice and signature losses \u2014 the 'peppery words and angry jerks' paragraph (wholly absent), 'a true man throughout' (flattened), 'I do not know whether she was pretty' (absent), 'there will be till she dies' (absent), and 'It was a word not to be mentioned to ears polite' (absent) \u2014 any three of which alone would require regeneration."
+}

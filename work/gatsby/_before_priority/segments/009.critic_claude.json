@@ -1,0 +1,53 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "His pride in his son and in his son's possessions was continually increasing and now he had something to show me.",
+      "source_locator": "paragraph introducing the photograph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'and in his son's possessions' is a key ironic Nick-touch, making explicit that Mr. Gatz's pride has been redirected onto the material house. Draft drops 'and in his son's possessions,' thinning the irony.",
+      "suggested_fix": "Restore 'His pride in his son and in his son's possessions was continually increasing.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I tried to think about Gatsby then for a moment, but he was already too far away, and I could only remember, without resentment, that Daisy hadn't sent a message or a flower.",
+      "source_locator": "at the graveside, before 'Blessed are the dead'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a critically-engaged sentence (the final Daisy indictment, Nick's last interior turn toward Gatsby). Its loss deletes the emotional hinge between the funeral and Owl Eyes' line.",
+      "suggested_fix": "Restore the sentence verbatim before the 'Blessed are the dead' murmur."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "For a moment I thought he was going to suggest a \"gonnegtion,\" but he only nodded and shook my hand.",
+      "source_locator": "Wolfshiem office scene, just before the 'Let us learn' line",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'gonnegtion' callback is a signature voice/character marker tying the funeral refusal to Wolfshiem's earlier characterization — a critically noticed echo.",
+      "suggested_fix": "Restore the 'gonnegtion' sentence before Wolfshiem's closing aphorism."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"And if you think I didn't have my share of suffering—look here, when I went to give up that flat and saw that damn box of dog biscuits…\"",
+      "source_locator": "Tom on Fifth Avenue, before 'I couldn't forgive him'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The dog-biscuits detail is a famously-remembered piece of Tom characterization and a key piece of evidence for Nick's 'careless people' judgment that follows.",
+      "suggested_fix": "Restore Tom's 'damn box of dog biscuits' speech; it motivates the 'careless people' paragraph."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "a little solemn with the feel of those long winters, a little complacent from growing up in the Carraway house in a city where dwellings are still called through decades by a family's name.",
+      "source_locator": "Middle West passage, after 'I am part of that'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'Carraway house' self-placement is voice-establishing autobiography inside the regional set-piece; its loss thins the passage the plan specifically flagged as load-bearing.",
+      "suggested_fix": "Restore 'I am part of that, a little solemn… called through decades by a family's name.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Closing pages and set-pieces largely intact, but three medium losses (Gatz's 'possessions,' the Daisy-flower sentence at the grave, and the 'gonnegtion' beat) plus the dog-biscuits and Carraway-house lines add up to regeneration."
+}

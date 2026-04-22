@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Miss Jenkyns sat in patient gravity. When it was ended, she turned to me, and said with mild dignity—",
+      "source_locator": "Pickwick Papers reading scene, after description of laughter",
+      "draft_treatment": "absent",
+      "why_it_matters": "\"Miss Jenkyns sat in patient gravity\" is one of the most-quoted, most-recognised sentences in the chapter, defining her character in three words; its excision collapses the ironic comedy of the famous Boz-vs-Johnson set-piece. The 'mild dignity' that follows is also gone.",
+      "suggested_fix": "Restore verbatim: after 'I did not dare, because I was staying in the house,' insert 'Miss Jenkyns sat in patient gravity. When it was ended, she turned to me, and said with mild dignity—'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "and so on, till we blinded ourselves to the vulgar fact that we were, all of us, people of very moderate means.",
+      "source_locator": "After the sedan-chairs / prints sentences in the poverty-concealment paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the rhetorical climax of Gaskell's ironic poverty passage—the narrator turns the satirical lens on herself and the community. Its loss flattens the paragraph to mere example rather than self-aware social critique.",
+      "suggested_fix": "Restore the closing sentence of the prints/sedan-chair sequence: 'and so on, till we blinded ourselves to the vulgar fact that we were, all of us, people of very moderate means.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "making the ladies feel gravely elated as they sat together in their best dresses",
+      "source_locator": "Party scene paragraph, after 'Parties in Cranford were solemn festivities'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The oxymoron 'gravely elated' is Gaskell's signature register—comic-serious, perfectly calibrated to the Cranford tone. Without it the sentence is generic, losing the voice that makes this scene memorable.",
+      "suggested_fix": "After 'Parties in Cranford were solemn festivities,' restore 'making the ladies feel gravely elated as they sat together in their best dresses.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Captain Brown walked upstairs, nothing daunted, spoke in a voice too large for the room, and joked quite in the way of a tame man about the house",
+      "source_locator": "Captain Brown's first acceptance in Cranford, 'True, it was to discover the cause of a smoking chimney...'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is an interpretively rich passage showing how Brown's unself-conscious masculinity disarms Cranford from within; the specific physical comedy ('voice too large for the room') and the phrase 'a tame man about the house' are signature and are wholly absent from the draft's compression.",
+      "suggested_fix": "Restore the smoking-chimney visit vignette with its key phrases: 'nothing daunted, spoke in a voice too large for the room, and joked quite in the way of a tame man about the house.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses the iconic 'Miss Jenkyns sat in patient gravity' (high severity) and flattens three other signature passages—the rhetorical climax of the poverty conceit, the 'gravely elated' oxymoron, and the 'voice too large for the room' vignette—any one of which would damage the chapter's distinctive Gaskell voice."
+}

@@ -1,0 +1,314 @@
+{
+  "book_id": "gatsby",
+  "notes": "The Great Gatsby's signature material clusters in several distinct registers: (1) culturally famous quotable lines (opening paternal advice, closing 'boats against the current', 'careless people', 'old sport', green light); (2) Nick's voice-establishing ironic digressions and lyrical set-pieces (valley of ashes, Gatsby's smile, the party catalogues, the guest-list in Chapter IV); (3) interpretively load-bearing passages on which most readings depend (Gatsby's 'Platonic conception of himself', Daisy's voice 'full of money', the kiss memory, 'you can't repeat the past'); (4) prosodic/stylistic set-pieces that showcase Fitzgerald's style (the curtains/young women scene, the shirts scene, East/West Egg descriptions). Chapter middles carry heavy voice weight — the guest catalogue in IV, the party tableau in III, Wolfshiem at lunch, the valley-of-ashes frame in II. Downstream stages should hunt for: Nick's retrospective judgmental asides; Gatsby's mythologizing self-presentation; set-piece metaphors involving light, water, or dust; Daisy's quoted speech (the 'beautiful little fool' speech); and the symbol-laden closings of each chapter.",
+  "examples": [
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter I opening",
+      "passage_hint": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
+      "why": "The novel's famous opening sentence — universally recognized, sets Nick's retrospective reserved voice. Scholarly editions and Wikipedia treat this as the novel's signature opening; mass-audience guides (SparkNotes, LitCharts) open analysis here."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter I, father's advice",
+      "passage_hint": "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had.",
+      "why": "Among the most quoted lines in American fiction; establishes Nick's claim to reserved judgment that the novel will test. Corroborated across all three tiers (scholarly, Wikipedia, mass-audience)."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter I middle, self-characterization",
+      "passage_hint": "Reserving judgements is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.",
+      "why": "Voice-establishing: Nick's self-aware snobbery, the balanced cadence, the moral hedging. Critical tradition returns to this as the key to Nick's unreliability."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter I, introducing Gatsby",
+      "passage_hint": "If personality is an unbroken series of successful gestures, then there was something gorgeous about him, some heightened sensitivity to the promises of life",
+      "why": "The novel's thesis statement about Gatsby; 'gorgeous' and 'promises of life' anchor virtually every critical reading. Scholarly editions treat this as load-bearing."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter I, Gatsby's gift",
+      "passage_hint": "it was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again.",
+      "why": "The 'romantic readiness' phrase is critically load-bearing — Trilling and subsequent critics cite it as Nick's definition of Gatsby's essence. Scholarly consensus; mass-audience guides quote it."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter I, the Buchanan sitting room",
+      "passage_hint": "The only completely stationary object in the room was an enormous couch on which two young women were buoyed up as though upon an anchored balloon. They were both in white, and their dresses were rippling and fluttering as if they had just been blown back in after a short flight around the house.",
+      "why": "Signature set-piece prose — the floating/flight imagery establishing Daisy and Jordan as ethereal, weightless. Frequently anthologized as an example of Fitzgerald's style."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter I, Daisy on her daughter",
+      "passage_hint": "I hope she'll be a fool—that's the best thing a girl can be in this world, a beautiful little fool.",
+      "why": "One of the novel's most quoted lines; central to feminist readings of Daisy. All three tiers foreground it."
+    },
+    {
+      "origin": "cultural",
+      "category": "touchstone",
+      "segment_hint": "Chapter I closing",
+      "passage_hint": "he stretched out his arms toward the dark water in a curious way, and, far as I was from him, I could have sworn he was trembling. Involuntarily I glanced seaward—and distinguished nothing except a single green light, minute and far away",
+      "why": "The green light's first appearance — the novel's central symbol. Universally recognized; every critical and mass-audience source treats this as signature."
+    },
+    {
+      "origin": "cultural",
+      "category": "thematic",
+      "segment_hint": "Chapter II opening",
+      "passage_hint": "This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens; where ashes take the forms of houses and chimneys and rising smoke",
+      "why": "The valley of ashes — signature set-piece and major symbol. Scholarly and mass-audience sources treat this paragraph as canonical."
+    },
+    {
+      "origin": "cultural",
+      "category": "thematic",
+      "segment_hint": "Chapter II, the billboard",
+      "passage_hint": "the eyes of Doctor T. J. Eckleburg. The eyes of Doctor T. J. Eckleburg are blue and gigantic—their retinas are one yard high. They look out of no face, but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose.",
+      "why": "The Eckleburg eyes — iconic image, later weaponized as 'God sees everything.' All three tiers treat this as signature."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter II middle, Myrtle's apartment",
+      "passage_hint": "I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.",
+      "why": "Nick's signature self-definition — the detached observer stance critics return to as the key to the narrator's doubleness. Load-bearing for every reading of Nick."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter II middle, the McKee party",
+      "passage_hint": "With the influence of the dress her personality had also undergone a change. The intense vitality that had been so remarkable in the garage was converted into impressive hauteur. Her laughter, her gestures, her assertions became more violently affected moment by moment",
+      "why": "Voice-establishing middle-chapter passage — Nick's ironic observation of Myrtle's class-performance. Register-defining satirical mode."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter III opening, the parties",
+      "passage_hint": "In his blue gardens men and girls came and went like moths among the whisperings and the champagne and the stars.",
+      "why": "Signature Fitzgerald sentence — widely quoted, anthologized. The 'moths' simile is iconic; scholarly editions foreground it."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter III, party preparation",
+      "passage_hint": "Every Friday five crates of oranges and lemons arrived from a fruiterer in New York—every Monday these same oranges and lemons left his back door in a pyramid of pulpless halves.",
+      "why": "Voice-establishing middle-chapter detail; the juicing-machine paragraph is signature for Fitzgerald's catalogue-of-excess mode."
+    },
+    {
+      "origin": "cultural",
+      "category": "character",
+      "segment_hint": "Chapter III, Gatsby's smile",
+      "passage_hint": "He smiled understandingly—much more than understandingly. It was one of those rare smiles with a quality of eternal reassurance in it, that you may come across four or five times in life.",
+      "why": "The famous 'Gatsby's smile' paragraph — one of the most analyzed character descriptions in American fiction. All three tiers treat this as signature."
+    },
+    {
+      "origin": "critical",
+      "category": "character",
+      "segment_hint": "Chapter III, Gatsby revealed",
+      "passage_hint": "Precisely at that point it vanished—and I was looking at an elegant young roughneck, a year or two over thirty, whose elaborate formality of speech just missed being absurd.",
+      "why": "Critical tradition foregrounds 'elegant young roughneck' as the first crack in Gatsby's performance. Scholarly editions annotate; mass-audience guides cite the phrase."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter III closing",
+      "passage_hint": "Everyone suspects himself of at least one of the cardinal virtues, and this is mine: I am one of the few honest people that I have ever known.",
+      "why": "Famous closing line of Chapter III — Nick's self-assessment, the pivot on which the unreliable-narrator reading turns. All three tiers quote it."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter III middle, the city",
+      "passage_hint": "At the enchanted metropolitan twilight I felt a haunting loneliness sometimes, and felt it in others—poor young clerks who loitered in front of windows waiting until it was time for a solitary restaurant dinner—young clerks in the dusk, wasting the most poignant moments of night and life.",
+      "why": "Voice-establishing lyrical digression — register-defining for Nick's urban melancholy. Often anthologized as pure Fitzgerald style."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter IV opening, the guest list",
+      "passage_hint": "From East Egg, then, came the Chester Beckers and the Leeches, and a man named Bunsen, whom I knew at Yale, and Doctor Webster Civet, who was drowned last summer up in Maine.",
+      "why": "The signature mock-Homeric catalogue — a set-piece of Nick's ironic cataloguing voice, central to the book's satirical texture. Middle-chapter voice material that compression tends to delete."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter IV, crossing the Queensboro",
+      "passage_hint": "The city seen from the Queensboro Bridge is always the city seen for the first time, in its first wild promise of all the mystery and the beauty in the world.",
+      "why": "Signature lyrical aside — widely quoted, anthologized. Captures Nick's New York romanticism."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter IV, crossing the bridge",
+      "passage_hint": "Anything can happen now that we've slid over this bridge, I thought; anything at all … Even Gatsby could happen, without any particular wonder.",
+      "why": "Famous coda to the bridge passage; frequently quoted. Scholarly and mass-audience sources highlight 'Even Gatsby could happen' as key to the novel's magical-American mode."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter IV end, Jordan's revelation",
+      "passage_hint": "Gatsby bought that house so that Daisy would be just across the bay.",
+      "why": "The structural pivot of the novel — the revelation that reframes everything. Load-bearing for every reading."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter IV closing, Jordan and Nick",
+      "passage_hint": "He had waited five years and bought a mansion where he dispensed starlight to casual moths—so that he could 'come over' some afternoon to a stranger's garden.",
+      "why": "Critically central: Nick's framing of Gatsby's quest as absurd/sublime. The 'starlight to casual moths' image recurs in criticism."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter V, the reunion",
+      "passage_hint": "Gatsby, pale as death, with his hands plunged like weights in his coat pockets, was standing in a puddle of water glaring tragically into my eyes.",
+      "why": "Signature comic-pathetic image — widely cited as a tonal masterpiece. The 'puddle of water' detail is iconic."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter V, the shirts scene",
+      "passage_hint": "They're such beautiful shirts, she sobbed, her voice muffled in the thick folds. It makes me sad because I've never seen such—such beautiful shirts before.",
+      "why": "The famous 'beautiful shirts' scene — one of the most discussed passages in the novel, central to readings of Daisy's materialism. All three tiers foreground."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter V, the green light reconsidered",
+      "passage_hint": "His count of enchanted objects had diminished by one.",
+      "why": "Critically load-bearing — the moment the green light loses its symbolic charge. Scholarly tradition treats this as the turning point of Gatsby's dream."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter V closing",
+      "passage_hint": "There must have been moments even that afternoon when Daisy tumbled short of his dreams—not through her own fault, but because of the colossal vitality of his illusion.",
+      "why": "The 'colossal vitality of his illusion' — one of the most-quoted critical phrases from the novel; central to every reading of Gatsby's idealism. Scholarly and mass-audience consensus."
+    },
+    {
+      "origin": "cultural",
+      "category": "thematic",
+      "segment_hint": "Chapter VI, Gatsby's origin",
+      "passage_hint": "The truth was that Jay Gatsby of West Egg, Long Island, sprang from his Platonic conception of himself. He was a son of God",
+      "why": "The 'Platonic conception of himself' passage — among the most-cited sentences in American literary criticism. Universally load-bearing."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter VI, Gatsby's insistence",
+      "passage_hint": "Can't repeat the past? he cried incredulously. Why of course you can!",
+      "why": "Iconic Gatsby line — the novel's most-quoted dialogue exchange. All three tiers foreground it as the thesis of Gatsby's tragedy."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter VI closing, the kiss memory",
+      "passage_hint": "His heart beat faster as Daisy's white face came up to his own. He knew that when he kissed this girl, and forever wed his unutterable visions to her perishable breath, his mind would never romp again like the mind of God.",
+      "why": "One of the novel's great lyrical set-pieces — the 'perishable breath' / 'mind of God' passage is canonical in Fitzgerald criticism."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter VII, the Plaza scene",
+      "passage_hint": "Her voice is full of money, he said suddenly.",
+      "why": "Among the most-quoted lines in American fiction — the hinge of economic readings of Daisy. All three tiers central."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter VII, after 'voice full of money'",
+      "passage_hint": "That was it. I'd never understood before. It was full of money—that was the inexhaustible charm that rose and fell in it, the jingle of it, the cymbals' song of it … High in a white palace the king's daughter, the golden girl",
+      "why": "The 'golden girl' coda — scholarly criticism treats this paragraph as the novel's most condensed statement of its economic-romantic theme."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter VII closing",
+      "passage_hint": "So we drove on toward death through the cooling twilight.",
+      "why": "Signature closing sentence — stark, prosodically unmistakable. Frequently cited as a masterpiece of Fitzgerald's compression."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter VII, thirtieth birthday",
+      "passage_hint": "Thirty—the promise of a decade of loneliness, a thinning list of single men to know, a thinning briefcase of enthusiasm, thinning hair.",
+      "why": "Voice-establishing middle-chapter aside — Nick's signature anaphoric melancholy. Often anthologized."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter VIII, Gatsby's dream collapsed",
+      "passage_hint": "He must have felt that he had lost the old warm world, paid a high price for living too long with a single dream.",
+      "why": "Critically load-bearing — the 'old warm world' phrase is quoted in virtually every scholarly treatment of Gatsby's death."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter VIII, Nick's compliment",
+      "passage_hint": "They're a rotten crowd, I shouted across the lawn. You're worth the whole damn bunch put together.",
+      "why": "One of the novel's most quoted lines — Nick's moral judgment crystallized. All three tiers treat as signature."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter IX, Nick's verdict on Tom and Daisy",
+      "passage_hint": "They were careless people, Tom and Daisy—they smashed up things and creatures and then retreated back into their money or their vast carelessness",
+      "why": "The 'careless people' passage — among the most-quoted indictments in American literature. All three tiers central."
+    },
+    {
+      "origin": "cultural",
+      "category": "thematic",
+      "segment_hint": "Chapter IX, the Dutch sailors",
+      "passage_hint": "a fresh, green breast of the new world. Its vanished trees, the trees that had made way for Gatsby's house, had once pandered in whispers to the last and greatest of all human dreams",
+      "why": "The 'fresh green breast of the new world' passage — canonical American-dream set-piece. Universally load-bearing across all tiers."
+    },
+    {
+      "origin": "interpretive",
+      "category": "thematic",
+      "segment_hint": "Chapter IX, capacity for wonder",
+      "passage_hint": "face to face for the last time in history with something commensurate to his capacity for wonder.",
+      "why": "Critically central — the 'capacity for wonder' phrase anchors readings of the novel's American-dream thesis. Scholarly tradition foregrounds."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter IX, the green light revisited",
+      "passage_hint": "Gatsby believed in the green light, the orgiastic future that year by year recedes before us.",
+      "why": "Iconic penultimate passage — widely quoted. All three tiers treat as signature closing material."
+    },
+    {
+      "origin": "cultural",
+      "category": "quote",
+      "segment_hint": "Chapter IX, final line",
+      "passage_hint": "So we beat on, boats against the current, borne back ceaselessly into the past.",
+      "why": "The novel's famous closing sentence — inscribed on Fitzgerald's grave, universally recognized. The single most-quoted line in the book."
+    },
+    {
+      "origin": "textual",
+      "category": "voice",
+      "segment_hint": "Chapter VI middle, Dan Cody",
+      "passage_hint": "I suppose he'd had the name ready for a long time, even then. His parents were shiftless and unsuccessful farm people—his imagination had never really accepted them as his parents at all.",
+      "why": "Voice-establishing middle-chapter material on Gatsby's origin; the 'imagination had never really accepted them' line is critically important for readings of self-invention."
+    },
+    {
+      "origin": "textual",
+      "category": "prosodic",
+      "segment_hint": "Chapter IV, Wolfshiem introduction",
+      "passage_hint": "A small, flat-nosed Jew raised his large head and regarded me with two fine growths of hair which luxuriated in either nostril.",
+      "why": "Signature grotesque-comic description — frequently discussed in scholarship on Fitzgerald's antisemitism and on his caricature style. Critically engaged across tiers."
+    },
+    {
+      "origin": "voice",
+      "category": "voice",
+      "segment_hint": "Chapter IX middle, Middle West memory",
+      "passage_hint": "That's my Middle West—not the wheat or the prairies or the lost Swede towns, but the thrilling returning trains of my youth, and the street lamps and sleigh bells in the frosty dark",
+      "why": "Voice-establishing lyrical digression — Nick's signature nostalgic register. Often anthologized; load-bearing for regionalist readings."
+    }
+  ]
+}
