@@ -1,0 +1,26 @@
+{
+  "segment_id": "065",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "no wonder that to many ship owners, whaling is but a losing concern; for it is the harpooneer that makes the voyage",
+      "source_locator": "first major paragraph, penultimate sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The specific indictment of the economic system — 'to many ship owners, whaling is but a losing concern' — is Melville's satirical jab at the industry's irrationality and carries interpretive weight about institutional failure; the draft drops 'ship owners' and 'losing concern' entirely.",
+      "suggested_fix": "Restore 'no wonder that to many ship owners, whaling is but a losing concern' verbatim before the 'for it is the harpooneer that makes the voyage' clause."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "often, in what is called a long dart, the heavy implement has to be flung to the distance of twenty or thirty feet",
+      "source_locator": "first major paragraph, third sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific technical detail ('what is called a long dart,' 'twenty or thirty feet') grounds the narrator's authority and the chapter's title in lived, precise observation; the draft trails off with a fragment ('in a long dart') that loses both the technical gloss and the measurement.",
+      "suggested_fix": "Complete the sentence: 'often, in what is called a long dart, the heavy implement has to be flung to the distance of twenty or thirty feet.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves both the famous closing aphorism and the key rhetorical anaphora ('no wonder…'), but drops the 'ship owners / losing concern' economic indictment and truncates the technical 'long dart' definition, producing minor voice flattening that does not rise to regeneration level."
+}

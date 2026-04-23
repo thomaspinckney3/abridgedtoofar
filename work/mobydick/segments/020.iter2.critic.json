@@ -1,0 +1,53 @@
+{
+  "segment_id": "020",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "hell is an idea first born on an undigested apple-dumpling; and since then perpetuated through the hereditary dyspepsias nurtured by Ramadans.",
+      "source_locator": "Ishmael's lecture paragraph, near end",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of Melville's most quoted comic-philosophical epigrams; the draft drops the crucial connective 'and since then' and the full rhythmic shape, reducing a famous sentence to a clipped fragment that loses its sardonic cadence.",
+      "suggested_fix": "Restore the exact wording: 'hell is an idea first born on an undigested apple-dumpling; and since then perpetuated through the hereditary dyspepsias nurtured by Ramadans.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "we are all somehow dreadfully cracked about the head, and sadly need mending.",
+      "source_locator": "Second paragraph, closing sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'and sadly need mending,' cutting the punchline of Ishmael's ecumenical irony; the full clause is the rhetorical payoff of the Presbyterian-tolerance riff and is critically noted as voice-defining.",
+      "suggested_fix": "Restore 'and sadly need mending' to complete the sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Now, as I before hinted, I have no objection to any person's religion, be it what it may, so long as that person does not kill or insult any other person, because that other person don't believe it also. But when a man's religion becomes really frantic; when it is a positive torment to him; and, in fine, makes this earth of ours an uncomfortable inn to lodge in; then I think it high time to take that individual aside and argue the point with him.",
+      "source_locator": "Paragraph beginning 'Now, as I before hinted'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage establishes Ishmael's liberal-tolerance position—a key interpretive node for the novel's treatment of religion—and its tripartite rhetorical structure ('when…when…when') is signature; the draft collapses it to a single paraphrased clause.",
+      "suggested_fix": "Restore the full three-clause 'when' construction and the 'uncomfortable inn' phrase, which are both textually distinctive and interpretively central."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "fasting makes the body cave in; hence the spirit caves in; and all thoughts born of a fast must necessarily be half-starved. This is the reason why most dyspeptic religionists cherish such melancholy notions about their hereafters.",
+      "source_locator": "Ishmael's lecture paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple-step syllogism (body→spirit→thoughts) and the coinage 'dyspeptic religionists' are prosodically and rhetorically distinctive; the draft abbreviates to 'Fasting caves the body, then the spirit; hence half-starved thoughts,' losing both the full logic chain and the key noun phrase.",
+      "suggested_fix": "Restore the three-step chain verbatim and the sentence 'This is the reason why most dyspeptic religionists cherish such melancholy notions about their hereafters.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "he no doubt thought he knew a good deal more about the true religion than I did. He looked at me with a sort of condescending concern and compassion",
+      "source_locator": "Final paragraph before departure",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the condescending-concern sentence but drops the preceding sentence about Queequeg's superior confidence in his own religion, which sets up the irony; partial loss of the comic reversal.",
+      "suggested_fix": "Add 'he no doubt thought he knew a good deal more about the true religion than I did' before the condescending-concern sentence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity truncation of Melville's most famous epigram ('hell is an idea first born on an undigested apple-dumpling') and three medium-severity voice-erasures that flatten the chapter's central rhetorical and philosophical passages, triggering regeneration."
+}

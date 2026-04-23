@@ -1,0 +1,62 @@
+{
+  "segment_id": "068",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Cannibals? who is not a cannibal? I tell you it will be more tolerable for the Fejee that salted down a lean missionary in his cellar against a coming famine",
+      "source_locator": "paragraph 5, 'Cannibals? who is not a cannibal?'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Cannibals? who is not a cannibal?' is one of the most famous, widely-quoted lines in Moby-Dick; the draft retains the question but strips 'I tell you' and the full rhetorical formulation 'salted down a lean missionary in his cellar against a coming famine,' collapsing the comic specificity that makes the line iconic.",
+      "suggested_fix": "Restore verbatim: 'Cannibals? who is not a cannibal? I tell you it will be more tolerable for the Fejee that salted down a lean missionary in his cellar against a coming famine; it will be more tolerable for that provident Fejee, I say, in the day of judgment, than for thee…'"
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "that a man should eat a newly murdered thing of the sea, and eat it too by its own light. But no doubt the first man that ever murdered an ox was regarded as a murderer; perhaps he was hung; and if he had been put on his trial by oxen, he certainly would have been",
+      "source_locator": "paragraph 5, 'It is not, perhaps, entirely because…'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The mock-juridical fantasy of the ox's trial ('if he had been put on his trial by oxen, he certainly would have been; and he certainly deserved it if any murderer does') is a voice-defining satirical digression; the draft reduces it to a single flat sentence ('the first butcher of an ox was surely deemed a murderer'), erasing the ironic register entirely.",
+      "suggested_fix": "Restore the trial-by-oxen conceit, including 'perhaps he was hung' and the deadpan 'he certainly deserved it if any murderer does'—even in compressed form the juridical joke must survive."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "nailest geese to the ground and feastest on their bloated livers in thy paté-de-foie-gras",
+      "source_locator": "paragraph 5, closing sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The archaic second-person ('nailest… feastest') and the grotesque image of nailing geese to the ground is the rhetorical peak of the paragraph's indictment; the draft replaces it with the bare noun 'gourmand of paté-de-foie-gras,' erasing the voice and the visceral cruelty charge.",
+      "suggested_fix": "Restore 'nailest geese to the ground and feastest on their bloated livers in thy paté-de-foie-gras' verbatim; the archaic syntax is essential to the satirical register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "The head looks a sort of reproachfully at him, with an 'Et tu Brute!' expression.",
+      "source_locator": "paragraph 4, final sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'Et tu Brute!' punchline is the comic payoff of the calves'-brains joke and an interpretively distinctive moment of Melville's ironic anthropomorphism; the draft drops the entire closing image.",
+      "suggested_fix": "Append the reproachful-head image and its 'Et tu Brute!' tag to the calves'-brain passage, even in one compressed sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "smelling something like old Amsterdam housewives' dough-nuts or oly-cooks, when fresh. They have such an eatable look that the most self-denying stranger can hardly keep his hands off.",
+      "source_locator": "paragraph 3, 'fritters' description",
+      "draft_treatment": "absent",
+      "why_it_matters": "The oly-cooks simile and the 'most self-denying stranger can hardly keep his hands off' are quintessential Ishmael voice—sensory, comic, culturally specific; the draft retains only 'crisp, brown scraps,' gutting the passage's humor and texture.",
+      "suggested_fix": "Restore the dough-nut/oly-cooks smell and the 'self-denying stranger' sentence; these are not mere filler but voice-establishing comic detail."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Look at your knife-handle, there, my civilized and enlightened gourmand dining off that roast beef, what is that handle made of?—what but the bones of the brother of the very ox you are eating?",
+      "source_locator": "paragraph 6, opening",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The direct-address harangue ('Look at your knife-handle, there, my civilized and enlightened gourmand') with its rhetorical question structure is the chapter's satirical climax; the draft converts it to a flat declarative ('look at thy knife-handle: bones of the brother of the ox thou eatest'), losing the performative indignation.",
+      "suggested_fix": "Restore the interrogative address form and the doubled ironic epithet 'civilized and enlightened gourmand' to preserve the satirical voice."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits three high-severity failures—mangling the famous 'who is not a cannibal' passage, stripping the trial-by-oxen satirical digression, and erasing 'nailest geese to the ground'—plus three medium voice-flattenings, together gutting the chapter's satirical register and its most quotable moments."
+}

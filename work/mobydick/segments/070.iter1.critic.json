@@ -1,0 +1,53 @@
+{
+  "segment_id": "070",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Ex officio professors of Sabbath breaking are all whalemen.",
+      "source_locator": "Paragraph 1, opening sentences",
+      "draft_treatment": "absent",
+      "why_it_matters": "This epigrammatic, ironic aside is one of Melville's characteristic voice-establishing gestures — the mock-legalistic 'ex officio' tone is signature Ishmael and is entirely erased in the draft's plain 'butchery' opener.",
+      "suggested_fix": "Restore the 'ex officio professors of Sabbath breaking' line verbatim or near-verbatim as a brief satirical aside in the opening sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "You would have thought we were offering up ten thousand red oxen to the sea gods.",
+      "source_locator": "Paragraph 1, final sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sacrificial-ritual simile is the only moment in the chapter that frames the cutting-in as something mythic and archaic rather than merely industrial; its absence collapses the chapter's thematic register from ritual to procedure.",
+      "suggested_fix": "Include the 'ten thousand red oxen to the sea gods' image, even in compressed form, to preserve the sacral-slaughter framing of the opening paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the prodigious blood-dripping mass sways to and fro as if let down from the sky, and every one present must take good heed to dodge it when it swings, else it may box his ears and pitch him headlong overboard.",
+      "source_locator": "Paragraph 2, final sentences",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The danger-and-comedy of 'box his ears and pitch him headlong overboard' is a classic Melvillean tonal shift—sublime horror immediately punctured by slapstick—and it is absent from the draft, which merely notes the mass 'sways blood-dripping.'",
+      "suggested_fix": "Restore the warning to 'dodge it' and the threat of having one's ears boxed, even in abbreviated form, to preserve the tonal juxtaposition."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "into an unfurnished parlor called the blubber-room… coiling away the long blanket-piece as if it were a great live mass of plaited serpents.",
+      "source_locator": "Paragraph 3, blubber-room description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'unfurnished parlor' conceit is a characteristic domestic-comic irony; the draft drops it and changes 'plaited serpents' to 'braid of serpents,' losing both the parlor joke and the exact reptilian image.",
+      "suggested_fix": "Restore 'unfurnished parlor' and 'plaited serpents' verbatim or near-verbatim."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "all hands swearing occasionally, by way of assuaging the general friction.",
+      "source_locator": "Paragraph 3, final clause",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The mock-technical explanation ('by way of assuaging the general friction') is a signature Melvillean deadpan; the draft replaces it with the vaguer 'oaths for oil to ease the friction,' which loses the phrasing and the comic logic.",
+      "suggested_fix": "Restore 'swearing occasionally, by way of assuaging the general friction' verbatim or very closely paraphrased."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft strips three medium-severity voice-signature passages—the 'ex officio professors of Sabbath breaking' epigram, the 'ten thousand red oxen to the sea gods' sacrificial frame, and the slapstick 'box his ears' danger warning—plus two low-severity domestic-comic touches, collectively erasing Melville's characteristic tonal alternation between the sublime, the ironic, and the farcical."
+}

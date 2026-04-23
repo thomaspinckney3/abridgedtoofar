@@ -1,0 +1,44 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It is not down in any map; true places never are.",
+      "source_locator": "Paragraph 1",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the most quoted lines in all of Melville, culturally famous and critically cited as a signature of the novel's epistemology. The draft places it in quotation marks as a fragment appended to a paraphrase ('Queequeg was a native of Rokovoko, far West and South'), losing the standalone rhetorical weight of the original two-sentence paragraph structure that gives the line its punch.",
+      "suggested_fix": "Restore the line as its own sentence or at minimum preserve the two-beat cadence: 'It is not down in any map; true places never are.' — do not subordinate it to a longer clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "even then, in Queequeg's ambitious soul, lurked a strong desire to see something more of Christendom than a specimen whaler or two",
+      "source_locator": "Paragraph 2",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'Queequeg's ambitious soul' with the verb 'lurked' carries voice-establishing weight — the narrator's intimate knowledge of Queequeg's interiority is established here. The draft renders it as flat summary ('he yet longed'), losing the rhetorical inversion and the word 'ambitious,' which is thematically significant.",
+      "suggested_fix": "Retain 'lurked a strong desire' and 'Queequeg's ambitious soul' rather than collapsing to 'he yet longed.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "poor Queequeg gave it up for lost. Thought he, it's a wicked world in all meridians; I'll die a pagan.",
+      "source_locator": "Paragraph 4",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The free indirect discourse — 'Thought he, it's a wicked world in all meridians; I'll die a pagan' — is a signature passage: the shift into Queequeg's reported thought in first person is a distinctive stylistic move and often quoted. The draft renders it as third-person summary ('He gave up Christendom for lost: 'tis a wicked world in all meridians; he would die a pagan'), losing the direct 'I'll die a pagan' and the 'Thought he' framing.",
+      "suggested_fix": "Restore the free indirect form: 'Thought he, it's a wicked world in all meridians; I'll die a pagan.' The first-person pronoun and the 'Thought he' tag are the signature element."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "actuated by a profound desire to learn among the Christians, the arts whereby to make his people still happier than they were; and more than that, still better than they were",
+      "source_locator": "Paragraph 4",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The doubled construction — 'still happier than they were; and more than that, still better than they were' — is rhetorically distinctive, the repetition enacting Queequeg's idealism. The draft collapses it to 'the arts to make his people happier and better,' losing the cadence and the 'more than that' escalation.",
+      "suggested_fix": "Restore the doubling: 'happier than they were; and more than that, still better than they were.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft's most serious failure is fragmenting the culturally canonical 'It is not down in any map; true places never are' into a subordinate clause in quotation marks, stripping its standalone rhetorical force; combined with the erasure of the free-indirect 'Thought he, it's a wicked world in all meridians; I'll die a pagan,' these losses require regeneration."
+}

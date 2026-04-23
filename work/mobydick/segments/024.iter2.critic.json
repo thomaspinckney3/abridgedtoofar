@@ -1,0 +1,44 @@
+{
+  "segment_id": "024",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But I beat the thing down; and again marking the sleeper, jocularly hinted to Queequeg that perhaps we had best sit up with the body",
+      "source_locator": "paragraph beginning 'Those sailors we saw, Queequeg'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'sit up with the body' is a piece of dark Ishmael irony that foreshadows mortality and establishes the narrator's gallows-humor voice; its omission flattens the interpretive texture of the scene.",
+      "suggested_fix": "Restore 'jocularly hinted to Queequeg that perhaps we had best sit up with the body' before describing Queequeg's seating himself."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "in his land, owing to the absence of settees and sofas of all sorts, the king, chiefs, and great people generally, were in the custom of fattening some of the lower orders for ottomans … upon occasion, a chief calling his attendant, and desiring him to make a settee of himself under a spreading tree, perhaps in some damp marshy place",
+      "source_locator": "paragraph beginning 'Queequeg removed himself to just beyond the head of the sleeper'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves the ottoman/fellows detail but cuts the vivid closing image of the chief commanding an attendant to become a living chair under a damp tree — the satirical comic peak of the digression that gives it its ironic anthropological weight.",
+      "suggested_fix": "Restore the concluding image: 'upon occasion, a chief calling his attendant, and desiring him to make a settee of himself under a spreading tree, perhaps in some damp marshy place.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "But he stole up to us again, and suddenly clapping his hand on my shoulder, said—'Did ye see anything looking like men going towards that ship a while ago?'",
+      "source_locator": "paragraph beginning 'But he stole up to us again'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses multiple Elijah approaches into one, losing the repeated, unsettling pattern of his returning — a rhythmic effect critical to building dread around the phantom sailors motif and Elijah's prophetic character.",
+      "suggested_fix": "Restore at least two distinct approach-and-retreat beats for Elijah before the 'four or five men' question to preserve the ominous repetition."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "'Holloa! Starbuck's astir,' said the rigger. 'He's a lively chief mate, that; good man, and a pious; but all alive now, I must turn to.'",
+      "source_locator": "paragraph beginning 'I was going to ask him some further questions'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'He's a lively chief mate, that' and 'all alive now, I must turn to,' which are the rigger's voice; the phrasing 'lively chief mate' sets up contrast with Ahab's invisible enclosure in the next beat.",
+      "suggested_fix": "Restore 'He's a lively chief mate, that' before 'good man, and a pious.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Three medium and one low finding — the draft preserves the chapter's key signatures (Elijah's cracked farewell verbatim, Queequeg's ottoman digression partially, the 'invisibly enshrined' close) but loses some voice-establishing irony and structural repetition in the middle; no single high-severity failure, so verdict is pass with recommended targeted restoration."
+}

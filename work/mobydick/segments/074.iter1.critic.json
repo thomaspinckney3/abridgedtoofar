@@ -1,0 +1,53 @@
+{
+  "segment_id": "074",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Such things may seem incredible; but, however wondrous, they are true. Nor is the history of fanatics half so striking in respect to the measureless self-deception of the fanatic himself, as his measureless power of deceiving and bedevilling so many others.",
+      "source_locator": "paragraph describing Gabriel's hold over the crew, near end of his backstory",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Melville's authorial aside on fanaticism—rhetorically distinctive and thematically central to the chapter's meditation on religious mania and mass credulity; its balanced paradox ('self-deception' vs. 'power of deceiving others') is signature Melvillean moralizing.",
+      "suggested_fix": "Restore the two-sentence aside verbatim or in near-verbatim form after the description of the crew's homage to Gabriel."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "He published his manifesto, whereby he set himself forth as the deliverer of the isles of the sea and vicar-general of all Oceanica.",
+      "source_locator": "Gabriel's backstory paragraph, mid-section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'deliverer of the isles of the sea and vicar-general of all Oceanica' is rhetorically flamboyant and interpretively important—it frames Gabriel's grandiosity in apocalyptic/colonial terms. The draft reduces it to 'vicar-general of Oceanica,' losing 'deliverer of the isles of the sea.'",
+      "suggested_fix": "Restore the full phrase: 'deliverer of the isles of the sea and vicar-general of all Oceanica.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It is well to parenthesize here, that of the fatal accidents in the Sperm-Whale Fishery, this kind is perhaps almost as frequent as any. Sometimes, nothing is injured but the man who is thus annihilated; oftener the boat's bow is knocked off, or the thigh-board, in which the headsman stands, is torn from its place and accompanies the body.",
+      "source_locator": "Parenthetical paragraph following Macey's death",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narratorial parenthesis is a characteristic Melvillean intrusion—its casual-documentary tone ('it is well to parenthesize here') is a voice-establishing gesture. The draft collapses it to a brief clause, erasing the rhetorical texture and the detail about thigh-boards.",
+      "suggested_fix": "Restore the parenthetical paragraph in near-verbatim form, including the word 'annihilated' and the thigh-board detail, to preserve the narratorial voice."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Of such a letter, Death himself might well have been the post-boy.",
+      "source_locator": "Paragraph describing the retrieved letter",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is among the sharpest epigram-level sentences in the chapter—widely recognized as a signature Melvillean one-liner that delivers the chapter's irony in a single image. The draft notes the letter is 'as if Death had been post-boy,' which is a near-paraphrase but strips the syntactic precision and the 'might well have been' modal.",
+      "suggested_fix": "Restore the sentence verbatim: 'Of such a letter, Death himself might well have been the post-boy.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Here be it said, that like the vessels of military marines, the ships of the American Whale Fleet have each a private signal; all which signals being collected in a book with the names of the respective vessels attached, every captain is provided with it.",
+      "source_locator": "Third paragraph, signal-system explanation",
+      "draft_treatment": "absent",
+      "why_it_matters": "The documentary aside on the whale-fleet signal system is a minor voice-establishing digression typical of Melville's encyclopedic register; its omission is a small loss of that texture, though not a critical one.",
+      "suggested_fix": "Consider adding a brief clause noting the American whale-fleet's private signal system to preserve the documentary register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses four passages of meaningful signature weight: the authorial epigram on fanaticism's self-deception, the parenthetical on fatal fishery accidents (both voice-establishing Melvillean intrusions), the precise 'Death himself might well have been the post-boy' one-liner, and a partial erasure of the 'deliverer of the isles of the sea' formulation—three of these rise to medium severity, triggering regeneration."
+}

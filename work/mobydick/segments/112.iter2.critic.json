@@ -1,0 +1,35 @@
+{
+  "segment_id": "112",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "paused for an instant and said: 'Thou hast outraged, not insulted me, sir; but for that I ask thee not to beware of Starbuck; thou wouldst but laugh; but let Ahab beware of Ahab; beware of thyself, old man.'",
+      "source_locator": "paragraph beginning 'But, mastering his emotion'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full speech is one of the most critically cited lines in the chapter; 'I ask thee not to beware of Starbuck; thou wouldst but laugh' is interpretively essential because it subordinates Starbuck's own threat while elevating Ahab's self-destructive nature. The draft collapses this to 'beware—let Ahab beware of Ahab; beware of thyself, old man,' erasing the first clause entirely.",
+      "suggested_fix": "Restore the full Starbuck exit speech verbatim: 'Thou hast outraged, not insulted me, sir; but for that I ask thee not to beware of Starbuck; thou wouldst but laugh; but let Ahab beware of Ahab; beware of thyself, old man.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "It may have been a flash of honesty in him; or mere prudential policy which, under the circumstance, imperiously forbade the slightest symptom of open disaffection, however transient, in the important chief officer of his ship.",
+      "source_locator": "final paragraph beginning 'It were perhaps vain to surmise'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial speculation is interpretively central: it suspends judgment on whether Ahab's reversal is moral or merely strategic, a crux critics repeatedly engage. Its absence removes the chapter's closing ambiguity entirely.",
+      "suggested_fix": "Append the narrator's closing surmise, even in compressed form: 'Whether a flash of honesty or mere prudential policy, his orders were executed; and the Burtons were hoisted.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "For an instant in the flashing eyes of the mate, and his fiery cheeks, you would have almost thought that he had really received the blaze of the levelled tube.",
+      "source_locator": "paragraph beginning 'For an instant'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile of the musket's 'blaze' transferred to Starbuck's face is a distinctive stylistic moment; the draft reduces it to 'The mate mastered his blaze,' losing the visual-rhetorical specificity and the direct-address 'you would have almost thought.'",
+      "suggested_fix": "Restore the simile: 'For an instant in the flashing eyes of the mate you would have almost thought he had received the blaze of the levelled tube. But mastering his emotion…'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves nearly all signature material faithfully but flattens Starbuck's crucial exit speech, drops the narratorial closing surmise that is an interpretive keystone, and reduces one distinctive visual simile—two medium findings and one low, below the regeneration threshold."
+}

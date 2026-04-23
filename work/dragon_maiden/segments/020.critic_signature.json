@@ -1,7 +1,44 @@
 {
   "segment_id": "020",
   "critic": "signature",
-  "findings": [],
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "That was my dream mantra as our group of two dozen riders rode through a torrential rain.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The word 'mantra' is a small but characterful voice marker—Miriam sardonically labeling her own miserable repetition as spiritual practice. The draft substitutes 'I chanted my dream,' losing the self-aware irony.",
+      "suggested_fix": "Restore 'dream mantra' or a close equivalent to preserve the narrator's wry self-awareness."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I winced. That was a long time without electricity.",
+      "source_locator": "after 'Nearly sixty years ago'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The original's flat, deadpan understatement ('That was a long time without electricity') is a signature comic beat. The draft replaces it with 'Six decades without light switches,' which is slightly wittier but in a different register—trading Mac Flynn's blunt comedy for a more polished quip.",
+      "suggested_fix": "Restore the original phrasing or something tonally identical to preserve the source's deadpan rather than upgrading it."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Spiro leaned forward so I could see him as he shook his head.",
+      "source_locator": "during the bull-riding anecdote",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft's 'Spiros leaned so I could see him past Xander's shoulder' is a small spatial addition not in the source, slightly editorializing the blocking. Minor but a real departure from the source's specific phrasing.",
+      "suggested_fix": "Return to the source's wording or stay closer to it without adding invented blocking detail."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I looked from Xander to Spiros. 'You guys got away from the guards?'",
+      "source_locator": "after Canal anecdote",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source has a beat where Miriam turns to look at both men—a small physical anchor that the draft drops, replacing with 'I grinned' alone. The physical gesture of looking between the two is a minor but authentic voice marker.",
+      "suggested_fix": "Restore or closely paraphrase the 'I looked from Xander to Spiros' beat."
+    }
+  ],
   "verdict": "pass",
-  "summary": "The draft text field is empty — no draft was provided to evaluate, so no signature failures can be identified."
+  "summary": "The draft is largely faithful with no high-severity signature losses; four low-severity voice-flattening instances were found, chiefly the erasure of 'dream mantra' and the replacement of the deadpan electricity joke with a slightly different register, but none rises to regeneration level."
 }

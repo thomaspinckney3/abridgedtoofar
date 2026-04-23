@@ -1,0 +1,53 @@
+{
+  "segment_id": "022",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "ambiguous, half-hinting, half-revealing, shrouded sort of talk, now begat in me all kinds of vague wonderments and half-apprehensions",
+      "source_locator": "penultimate paragraph, the long accumulating list",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The clause 'ambiguous, half-hinting, half-revealing, shrouded sort of talk' is rhythmically and rhetorically distinctive and critically noted as key to the prophetic register of the chapter; the draft reduces it to 'shrouded hints,' losing all three paired gerunds and the suspense-building syntax.",
+      "suggested_fix": "Restore the exact phrasing 'ambiguous, half-hinting, half-revealing, shrouded sort of talk' in the accumulation sentence; the parallelism is the signature."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was but shabbily apparelled in faded jacket and patched trowsers; a rag of a black handkerchief investing his neck.",
+      "source_locator": "first description of the stranger, paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Dickensian specificity of 'faded jacket and patched trowsers' and the unusual participial 'investing his neck' establish the prophetic-beggar archetype; the draft compresses to 'a black rag knotted his neck,' losing the full costume detail that frames Elijah as a biblical type.",
+      "suggested_fix": "Retain 'faded jacket and patched trowsers' alongside the handkerchief to preserve the period-register description of Elijah's shabbiness."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "what's signed, is signed; and what's to be, will be; and then again, perhaps it won't be, after all. Anyhow, it's all fixed and arranged a'ready; and some sailors or other must go with him, I suppose; as well these as any other men, God pity 'em!",
+      "source_locator": "Elijah's key fatalistic speech, paragraph after 'Pretty sure.'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple rhythm 'what's signed, is signed; and what's to be, will be' is a textbook Melvillean cadence with strong prophetic irony; the draft shortens to 'what's signed is signed; and what's to be, will be; and then again, perhaps it won't,' omitting 'all fixed and arranged a'ready' and the full 'as well these as any other men' phrase that gives the fatalism its breadth.",
+      "suggested_fix": "Restore 'Anyhow, it's all fixed and arranged a'ready; and some sailors or other must go with him, as well these as any other men' before 'God pity 'em!' to preserve the fatalistic sweep."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "nothing about that thing that happened to him off Cape Horn, long ago, when he lay like dead for three days and nights; nothing about that deadly skrimmage with the Spaniard afore the altar in Santa?",
+      "source_locator": "Elijah's accumulating revelations, middle paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The anaphoric 'nothing about… nothing about… nothing about' rhetorical structure is interpretively significant—it is the form of a false disclaimer that reveals by denying—and the draft collapses it into a single interrogative list, losing the rhetorical device entirely.",
+      "suggested_fix": "Restore the anaphoric 'nothing about… nor… nor' structure to preserve Elijah's prophetic rhetoric of revelation-through-denial."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It is the easiest thing in the world for a man to look as if he had a great secret in him.",
+      "source_locator": "Ishmael's retort near end of dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is Ishmael's sardonic self-defense and signals his rationalizing voice; its absence slightly flattens the ironic interplay between credulity and skepticism that the chapter thematizes.",
+      "suggested_fix": "Add Ishmael's dismissive 'It is the easiest thing in the world for a man to look as if he had a great secret in him' before Elijah's final 'Morning to ye.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses the signature anaphoric 'half-hinting, half-revealing' clause at high severity, and flattens three further medium-weight passages (Elijah's costume, the fatalistic cadence, and the 'nothing about' anaphora), collectively stripping the prophetic rhetorical architecture that defines this chapter."
+}

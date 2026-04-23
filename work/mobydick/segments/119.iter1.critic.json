@@ -1,0 +1,44 @@
+{
+  "segment_id": "119",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "such a sweetness and such plaintiveness, such inwreathing orisons curled up in that rosy air, that it almost seemed as if far over from the deep green convent valleys of the Manilla isles, the Spanish land-breeze, wantonly turned sailor, had gone to sea, freighted with these vesper hymns",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended atmospheric simile — the Spanish land-breeze as a wanton sailor carrying vesper hymns from Manilla's convent valleys — is one of Melville's most ornate prose-poems in the chapter, establishing the sacred-elegiac register that gives Ahab's subsequent monologue its full weight. Its complete absence flattens the transition from action to contemplation.",
+      "suggested_fix": "Restore the 'inwreathing orisons' / 'vesper hymns' passage in condensed but recognizable form, preserving at minimum 'inwreathing orisons,' 'Manilla isles,' and 'vesper hymns' to keep the sacred atmosphere intact."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "far water-locked; beyond all hum of human weal or woe; in these most candid and impartial seas; where to traditions no rocks furnish tablets; where for long Chinese ages, the billows have still rolled on speechless and unspoken to, as stars that shine upon the Niger's unknown source",
+      "source_locator": "Ahab's first speech, middle section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'long Chinese ages,' 'speechless and unspoken to,' and 'stars that shine upon the Niger's unknown source' are distinctive signature phrases with interpretive weight about cosmic indifference and the unmemorialized ocean; the draft collapses this to 'in candid seas where no tradition tablets rocks,' losing all the specific imagery.",
+      "suggested_fix": "Restore 'long Chinese ages,' 'rolled on speechless and unspoken to,' and at minimum the Niger simile, even in compressed paraphrase that preserves the key nouns."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Oh, thou dark Hindoo half of nature, who of drowned bones hast builded thy separate throne somewhere in the heart of these unverdured seas; thou art an infidel, thou queen, and too truly speakest to me in the wide-slaughtering Typhoon, and the hushed burial of its after calm",
+      "source_locator": "Ahab's second speech paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'drowned bones,' 'unverdured seas,' 'wide-slaughtering Typhoon,' and 'hushed burial of its after calm' are critically engaged phrases that define Ahab's cosmological dualism; the draft reduces this entire speech to an ellipsis and 'thou art an infidel, thou queen,' erasing the theological and elemental content.",
+      "suggested_fix": "Restore 'drowned bones hast builded thy separate throne,' 'unverdured seas,' and 'wide-slaughtering Typhoon … hushed burial of its after calm' — even in abbreviated form these phrases must survive."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "All thy unnamable imminglings float beneath me here; I am buoyed by breaths of once living things, exhaled as air, but water now",
+      "source_locator": "Ahab's third speech, closing lines before sea hail",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full sentence 'exhaled as air, but water now' completes the elemental cycle that gives the passage its interpretive weight about transformation and death; the draft quotes only 'I am buoyed by breaths of once living things,' cutting the crucial payoff phrase.",
+      "suggested_fix": "Restore 'exhaled as air, but water now' immediately after 'once living things' — it is short and indispensable."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Four medium-severity losses combine to gut the chapter's sacred-elegiac atmosphere and Ahab's cosmological dualism: the vesper-hymns simile is wholly absent, the Niger/Chinese-ages imagery is flattened, the dark Hindoo speech is reduced to an ellipsis, and the 'exhaled as air, but water now' payoff is cut."
+}

@@ -1,0 +1,44 @@
+{
+  "segment_id": "106",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "To me this vast ivory-ribbed chest, with the long, unrelieved spine, extending far away from it in a straight line, not a little resembled the hull of a great ship new-laid upon the stocks",
+      "source_locator": "paragraph 6, the ship-on-stocks simile",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended nautical simile is among the chapter's most distinctive rhetoric — 'ivory-ribbed chest' fusing organic and architectural imagery, the ship-on-stocks comparison giving the skeleton monumental visual form. It is a critically noted passage for Melville's technique of mapping whale onto vessel. Its complete absence erases a key interpretive node.",
+      "suggested_fix": "Restore the full simile, verbatim or near-verbatim: 'To me this vast ivory-ribbed chest, with the long, unrelieved spine…not a little resembled the hull of a great ship new-laid upon the stocks, when only some twenty of her naked bow-ribs are inserted, and the keel is otherwise…but a long, disconnected timber.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "How vain and foolish, then, thought I, for timid untravelled man to try to comprehend aright this wondrous whale, by merely poring over his dead attenuated skeleton… Only in the heart of quickest perils; only when within the eddyings of his angry flukes; only on the profound unbounded sea, can the fully invested whale be truly and livingly found out.",
+      "source_locator": "paragraph 9, the 'How vain and foolish' peroration",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the philosophical climax of the chapter — the anaphoric 'only…only…only' construction is among Melville's most recognizable rhetorical signatures and carries the interpretive weight of the entire whale-as-unknowable-in-death theme. Critical readings of Melville's epistemology return to this passage. Its complete erasure destroys the chapter's meaning and voice.",
+      "suggested_fix": "Restore the full paragraph verbatim, including the anaphoric 'only' construction. This is a non-negotiable signature; the compression target must accommodate it."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "you must not fail to carry it in your mind, or under your arm, as we proceed, otherwise you will not gain a complete notion",
+      "source_locator": "paragraph 4, the skull-under-your-arm aside",
+      "draft_treatment": "absent",
+      "why_it_matters": "The playful, ironic address — 'carry it in your mind, or under your arm' — is characteristic of Ishmael's register-mixing wit and direct engagement with the reader. Its removal flattens the narrator's voice.",
+      "suggested_fix": "Insert the aside as a parenthetical or brief sentence when introducing the skeleton's proportions."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "all that had been once wrapped round with tons of added bulk in flesh, muscle, blood, and bowels. Still more, for the ample fins, I here saw but a few disordered joints; and in place of the weighty and majestic, but boneless flukes, an utter blank!",
+      "source_locator": "paragraph 8, enumeration of the skeleton's absences",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses 'flesh, muscle, blood, and bowels' to 'flesh and viscera' and loses the exclamatory 'an utter blank!' with its rhetorical force. The specific accumulation and the punctuation are signature; compression to a bland phrase loses the voice.",
+      "suggested_fix": "Restore 'flesh, muscle, blood, and bowels' and retain the exclamatory 'an utter blank!' at minimum."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses — the iconic ship-on-stocks simile and the 'How vain and foolish…only on the profound unbounded sea' peroration (the chapter's philosophical and rhetorical climax) — are entirely absent from the draft, requiring regeneration."
+}

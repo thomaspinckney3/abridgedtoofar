@@ -1,0 +1,53 @@
+{
+  "segment_id": "071",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "where, when seamen fall overboard, they are sometimes found, months afterwards, perpendicularly frozen into the hearts of fields of ice, as a fly is found glued in amber.",
+      "source_locator": "paragraph beginning 'What would become of a Greenland whale'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This image—sailors frozen perpendicularly in Arctic ice like flies in amber—is one of the most visually arresting and widely remarked passages in the chapter; its rhetorical and imaginative force directly underpins the 'how wonderful is it then' conclusion about the whale's warmth, and its absence removes the specific sensory evidence for the whale's achievement.",
+      "suggested_fix": "Restore the seamen-frozen-in-ice simile verbatim or near-verbatim immediately before the statement about Arctic immersion; it is the essential counterpart to the whale's warmth and cannot be cut without losing interpretive and voice weight."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "But how easy and how hopeless to teach these fine things! Of erections, how few are domed like St. Peter's! of creatures, how few vast as the whale!",
+      "source_locator": "final paragraph of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's closing sentence, a signature rhetorical flourish that is distinctively Melvillean in its ironic deflation and its double entendre ('Of erections'); it is critically noted and provides the chapter's tonal close; its complete omission cuts the chapter's ending.",
+      "suggested_fix": "Restore the final two sentences verbatim as the chapter close; they are short enough to add without exceeding budget and are not compressible without total loss."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I have given no small attention to that not unvexed subject, the skin of the whale. I have had controversies about it with experienced whalemen afloat, and learned naturalists ashore.",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The chapter's famous opening establishes Ishmael's mock-scholarly, controversy-relishing persona and sets an ironic epistemic register that governs everything that follows; its absence means the draft begins in medias res without the narrator's characteristic self-positioning.",
+      "suggested_fix": "Restore at minimum the first two sentences as an opening; they are brief and voice-defining and set the ironic tone the rest of the chapter depends on."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "it is pleasant to read about whales through their own spectacles, as you may say",
+      "source_locator": "paragraph beginning 'Now, however preposterous'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft reduces this to 'reading, as it were, through the whale's spectacles'—the qualifier 'as you may say' and the sentence's independent rhetorical stance are gone; this is a small but textually distinctive phrase whose gentle self-irony is characteristic of the narrator's voice.",
+      "suggested_fix": "Retain 'as you may say' to preserve the slight comic self-consciousness of the phrase."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "It does seem to me, that herein we see the rare virtue of a strong individual vitality, and the rare virtue of thick walls, and the rare virtue of interior spaciousness.",
+      "source_locator": "penultimate paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The triple anaphora ('the rare virtue of… the rare virtue of… the rare virtue of') is the rhetorical preparation for the apostrophe to man; reducing it to 'admire the virtue of strong vitality, thick walls, interior spaciousness' loses the anaphoric rhythm that critics read as the chapter's philosophical climax and turns a cadenced proclamation into a list.",
+      "suggested_fix": "Restore the tripled 'the rare virtue of' construction verbatim before the apostrophe; it costs very few words and is essential to the passage's rhetorical effect."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses (the sailors-frozen-in-ice simile and the chapter's entire closing sentences) plus three medium-severity flattening failures require regeneration."
+}

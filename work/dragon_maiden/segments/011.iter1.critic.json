@@ -1,0 +1,62 @@
+{
+  "segment_id": "011",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Unless madness was catching. I had to get out of here.",
+      "source_locator": "Paragraph 2, after description of the woman",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sardonic aside 'Unless madness was catching' is a voice-establishing beat that delivers the narrator's dry, self-aware humor at a moment of crisis; its absence flattens the register shift that makes the line memorable.",
+      "suggested_fix": "Reinsert 'Unless madness was catching' as its own sentence before 'I had to get out.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There's a-um, a badger in here!\" Great one, heroine.",
+      "source_locator": "Paragraph after deciding to scream",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The sardonic parenthetical 'Great one, heroine' is the narrator breaking the fourth wall on her own absurdity—it is the core comic voice of the book. The draft keeps the badger line but drops the self-deprecating editorial, erasing the narrator's ironic consciousness.",
+      "suggested_fix": "Append 'Great one, heroine.' immediately after the badger line, as in the source."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Just right for a soft porridge of sex. There was also the matter of his member which dangled down",
+      "source_locator": "After 'His body was ripped with pliable muscle'",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Just right for a soft porridge of sex' is a deliberately absurdist, voice-defining simile—it is the narrator's comic register at its most distinctive. The draft skips the porridge metaphor entirely and only vaguely gestures at his body, flattening the scene's comic eroticism.",
+      "suggested_fix": "Restore the 'soft porridge of sex' simile and the 'member which dangled down' observation; both are interpretively necessary for the tonal register the book establishes here."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My heart stopped. Us. The dreaded plural.",
+      "source_locator": "After 'You may leave us'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This three-fragment sequence—sentence, one word, ironic label—is one of the most stylistically distinctive moments in the chapter. Its staccato rhythm and comic dread ('the dreaded plural') are pure narrator voice. The draft omits it entirely.",
+      "suggested_fix": "Restore 'My heart stopped. Us. The dreaded plural.' verbatim after the lord's line 'leave us.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I snorted. That was getting to be a habit.",
+      "source_locator": "After 'The Lady's favor is a great blessing'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The self-aware narrator noting her own repeated snorting is a small but characteristic voice beat—the narrator tracking her own behavior with wry detachment. Its absence is minor but cumulative.",
+      "suggested_fix": "Insert 'I snorted. That was getting to be a habit.' after the narrator's snorted response to the lord's blessing remark."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "His manner was quiet and calm, as though he spoke to a wild creature. I must admit I was ready to bolt out the window, even if the drop was a good sixty feet.",
+      "source_locator": "Before 'While you are my servant'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's aside about being ready to jump sixty feet is a characterizing moment of self-aware comic desperation that humanizes her and maintains the chapter's tonal balance between fear and humor.",
+      "suggested_fix": "Restore the aside about the drop being sixty feet and her readiness to bolt."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's plot faithfully but repeatedly erases the narrator's self-aware comic voice—the 'madness was catching' aside, the 'Great one, heroine' fourth-wall break, the 'soft porridge of sex' simile, and above all 'My heart stopped. Us. The dreaded plural.'—resulting in four medium-severity voice-flattening failures that together constitute the chapter's signature register."
+}

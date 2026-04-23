@@ -1,0 +1,62 @@
+{
+  "segment_id": "027",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "for a whale-ship was my Yale College and my Harvard.",
+      "source_locator": "final paragraph of source",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is the single most famous line in the chapter and one of the most quoted lines in the novel; it is present in the draft but stripped of its full surrounding rhetoric ('if, by any possibility, there be any as yet undiscovered prime thing in me... if I shall ever deserve any real repute in that small but high hushed world which I might not be unreasonably ambitious of... if, at my death, my executors, or more properly my creditors'), which provides the ironic, self-deprecating cadence that makes the closing line land. 'My executors, or more properly my creditors' is a signature ironic aside that is entirely absent.",
+      "suggested_fix": "Restore 'my executors, or more properly my creditors' and at least one of the preceding conditional clauses verbatim to preserve the ironic register that gives the famous closing line its force."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "that whaling may well be regarded as that Egyptian mother, who bore offspring themselves pregnant from her womb.",
+      "source_locator": "paragraph beginning 'I freely assert, that the cosmopolite philosopher...'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'Egyptian mother' figure is a rhetorically and imagistically distinctive conceit that critics note as characteristic of Melville's grandiloquent analogical style in this chapter; its absence flattens the passage about whaling's world-historical consequences.",
+      "suggested_fix": "Restore the Egyptian-mother simile when summarizing whaling's pregnant historical consequences."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Ah, the world! Oh, the world!",
+      "source_locator": "end of the paragraph about Nantucket captains and Cook/Krusenstern",
+      "draft_treatment": "absent",
+      "why_it_matters": "This two-beat exclamatory coda is a rare moment of naked apostrophe that punctuates Ishmael's rhetoric with ironic weariness; it is a voice-establishing micro-signature that is entirely cut from the draft.",
+      "suggested_fix": "Append 'Ah, the world! Oh, the world!' after the Nantucket-captains passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "In their succourless empty-handedness, they, in the heathenish sharked waters, and by the beaches of unrecorded, javelin islands, battled with virgin wonders and terrors",
+      "source_locator": "paragraph about anonymous Nantucket captains",
+      "draft_treatment": "absent",
+      "why_it_matters": "The dense, compounding noun-adjective constructions ('succourless empty-handedness,' 'heathenish sharked waters,' 'unrecorded, javelin islands') are prosodically and rhetorically distinctive—Melville's most concentrated adjectival invention in the chapter—and their complete removal erases the register that defines the passage.",
+      "suggested_fix": "Restore at minimum 'succourless empty-handedness' and 'heathenish sharked waters' and 'unrecorded, javelin islands' to preserve the adjectival signature of this passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "then am I ready to shiver fifty lances with you there, and unhorse you with a split helmet every time.",
+      "source_locator": "paragraph beginning 'But if, in the face of all this, you still declare that whaling has no æsthetically noble associations'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This pugnacious chivalric challenge is a rhetorically distinctive figure—Melville inverting knightly combat metaphors into a defense of whaling—and it is completely absent from the draft, which collapses the transition into bare attribution.",
+      "suggested_fix": "Restore the 'shiver fifty lances' challenge as the setup to the catechism sequence that follows."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "if a stranger were introduced into any miscellaneous metropolitan society... such a procedure would be deemed pre-eminently presuming and ridiculous.",
+      "source_locator": "second paragraph of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The visiting-card / S.W.F. satirical vignette establishes the comic social register of the chapter's opening argument and is entirely dropped; its loss removes a layer of Ishmael's ironic social critique.",
+      "suggested_fix": "Include at least the S.W.F. visiting-card image as an illustrative aside."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's argumentative skeleton but erases multiple signature voice passages—including 'my executors, or more properly my creditors,' the Egyptian-mother figure, 'Ah, the world! Oh, the world!,' the adjectival cascade of 'succourless empty-handedness / heathenish sharked waters / javelin islands,' and the 'shiver fifty lances' challenge—producing a high-severity loss and four medium-severity losses that collectively gut the rhetorical and ironic personality of the chapter."
+}

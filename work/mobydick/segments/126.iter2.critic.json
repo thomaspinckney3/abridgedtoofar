@@ -1,0 +1,71 @@
+{
+  "segment_id": "126",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "if practicable, was once more given to the helmsman. For during the violence of the gale, he had only steered according to its vicissitudes.",
+      "source_locator": "paragraph 4, description of course being restored",
+      "draft_treatment": "absent",
+      "why_it_matters": "The detail that the helmsman had 'only steered according to its vicissitudes' is a small but characteristically Melvillean touch establishing the chaos-to-order transition; its absence flattens the nautical texture.",
+      "suggested_fix": "Restore at least the phrase 'steered according to its vicissitudes' in the transition describing course correction."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "so that so promising an event should so soon have falsified the evil portents preceding it.",
+      "source_locator": "paragraph 5, crew singing",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause is interpretively important — it marks the ironic counterpoint between apparent good fortune and the doom-laden context; its absence removes the narrative's ironic register at a key moment.",
+      "suggested_fix": "Add the clause about the crew singing for joy 'that so promising an event should so soon have falsified the evil portents preceding it.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "however reluctantly and gloomily,—than he mechanically went below to apprise Captain Ahab of the circumstance.",
+      "source_locator": "paragraph 6, Starbuck going below",
+      "draft_treatment": "absent",
+      "why_it_matters": "The adverbs 'reluctantly and gloomily' are critically important to Starbuck's characterization at this moment — they foreshadow the temptation scene and register his inner conflict before he even reaches the door.",
+      "suggested_fix": "Restore 'however reluctantly and gloomily' to the sentence describing Starbuck going below."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "If, then, he were this instant—put aside, that crime would not be his. Ha! is he muttering in his sleep? Yes, just there,—in there, he's sleeping. Sleeping? aye, but still alive, and soon awake again. I can't withstand thee, then, old man. Not reasoning; not remonstrance; not entreaty wilt thou hearken to; all this thou scornest. Flat obedience to thy own flat commands, this is all thou breathest. Aye, and say'st the men have vow'd thy vow; say'st all of us are Ahabs. Great God forbid!—But is there no other way? no lawful way?—Make him a prisoner to be taken home?",
+      "source_locator": "Starbuck's interior monologue, middle section",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended interior monologue passage — including the rhetorical anaphora 'Not reasoning; not remonstrance; not entreaty,' the devastating 'say'st all of us are Ahabs. Great God forbid!' and the prisoner deliberation — is among the most critically discussed passages in the novel. It is entirely absent from the draft, collapsing the philosophically rich temptation scene into a mere gesture.",
+      "suggested_fix": "Restore the full interior monologue from 'If, then, he were this instant' through 'Great God forbid!—But is there no other way? no lawful way?' including the anaphora and 'all of us are Ahabs.' These are non-negotiable signatures."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "What! hope to wrest this old man's living power from his own living hands? Only a fool would try it. Say he were pinioned even; knotted all over with ropes and hawsers; chained down to ring-bolts on this cabin floor; he would be more hideous than a caged tiger, then.",
+      "source_locator": "Starbuck's interior monologue, prisoner deliberation",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'caged tiger' image and the vivid elaboration of Ahab pinioned are interpretively significant — they show Starbuck reasoning through and dismissing the only alternative to murder or submission, establishing the tragic inevitability of what follows.",
+      "suggested_fix": "Restore at minimum the 'caged tiger' comparison and the reasoning that making Ahab prisoner is impossible, not merely foolish."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "tindering sheets and skin together?—And would I be a murderer, then, if\"—and slowly, stealthily, and half sideways looking, he placed the loaded musket's end against the door.",
+      "source_locator": "end of Starbuck's monologue before placing musket",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'tindering sheets and skin together' and the stage direction 'half sideways looking' are both distinctive Melvillean prose signatures; the draft omits both, flattening the physical and moral horror of the moment.",
+      "suggested_fix": "Restore 'tindering sheets and skin together' and 'half sideways looking' in the sentence about placing the musket."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "But if I wake thee not to death, old man, who can tell to what unsounded deeps Starbuck's body this day week may sink, with all the crew!",
+      "source_locator": "Starbuck's second speech at the door",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence — 'unsounded deeps Starbuck's body this day week may sink' — is a powerful piece of foreshadowing that balances the domestic appeal of Mary and the boy against mortality; its absence weakens the emotional logic of the scene.",
+      "suggested_fix": "Restore this sentence between the 'boy! boy! boy!' cry and the 'Great God, where art Thou?' question."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits one high-severity signature loss by entirely omitting the philosophically crucial middle of Starbuck's interior monologue ('Not reasoning; not remonstrance; not entreaty… say'st all of us are Ahabs. Great God forbid!'), plus four medium-severity failures including loss of 'reluctantly and gloomily,' the 'caged tiger' reasoning, 'tindering sheets and skin together,' and the ironic crew-singing clause."
+}

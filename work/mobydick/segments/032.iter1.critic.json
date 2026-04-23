@@ -1,0 +1,62 @@
+{
+  "segment_id": "032",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The warmly cool, clear, ringing, perfumed, overflowing, redundant days, were as crystal goblets of Persian sherbet, heaped up—flaked up, with rose-water snow.",
+      "source_locator": "Paragraph 1, opening weather description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the most distinctively ornate sensory passages in the chapter—the Persian sherbet / rose-water snow simile is rhetorically unique and critically noted as a signature of Melville's tropical lyricism. The draft retains the adjective string but drops the entire simile, leaving only a bare list.",
+      "suggested_fix": "Restore the simile in full: 'were as crystal goblets of Persian sherbet, heaped up—flaked up, with rose-water snow.' It is short enough to absorb without exceeding word budget."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The starred and stately nights seemed haughty dames in jewelled velvets, nursing at home in lonely pride, the memory of their absent conquering Earls, the golden helmeted suns!",
+      "source_locator": "Paragraph 1, night description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The elaborate personification—jewelled velvets, nursing in lonely pride, absent conquering Earls, golden helmeted suns—is prosodically and rhetorically distinctive; the draft reduces it to the bare phrase 'like haughty dames,' erasing all of the interpretive and stylistic substance.",
+      "suggested_fix": "Restore at minimum 'nursing at home in lonely pride, the memory of their absent conquering Earls, the golden helmeted suns'—this is the heart of the conceit and cannot be dropped."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "memory shot her crystals as the clear ice most forms of noiseless twilights",
+      "source_locator": "Paragraph 1, end—'inward they turned upon the soul'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sentence 'Inward they turned upon the soul… memory shot her crystals as the clear ice most forms of noiseless twilights' provides the explicit psychological bridge between the weather and Ahab's mental state; without it the transition to 'wrought upon Ahab's texture' is unmotivated and thematically thin.",
+      "suggested_fix": "Add the 'memory shot her crystals' clause before 'more and more it wrought upon Ahab's texture' to preserve the inward/outward movement that is interpretively load-bearing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I am not used to be spoken to that way, sir; I do but less than half like it, sir.\" … \"I will not tamely be called a dog, sir.\"",
+      "source_locator": "Dialogue exchange after Ahab's 'Down, dog, and kennel!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Stubb's two-stage escalation—first protest, then defiant refusal—is characterologically important; the draft collapses both lines into a single vague phrase ('then flared: he was not used to be spoken to so'), erasing Stubb's comic dignity and his deliberate emboldening, which critics read as central to his character.",
+      "suggested_fix": "Restore both of Stubb's replies verbatim or nearly so: 'I am not used to be spoken to that way, sir' and 'I will not tamely be called a dog, sir.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It's very queer. Stop, Stubb; somehow, now, I don't well know whether to go back and strike him, or—what's that?—down here on my knees and pray for him? Yes, that was the thought coming up in me; but it would be the first time I ever _did_ pray.",
+      "source_locator": "Stubb's soliloquy, early section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Stubb's self-interrupting recognition that he might pray—'the first time I ever did pray'—is critically cited as a moment of genuine interiority breaking through the comic surface; the draft renders only the bare 'half for a blow, half for—what?—down here on my knees,' losing the confessional punchline and the voice entirely.",
+      "suggested_fix": "Include 'it would be the first time I ever did pray' to preserve the interpretive and comic weight of the moment."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It's worth a fellow's while to be born into the world, if only to fall right asleep. And now that I think of it, that's about the first thing babies do, and that's a sort of queer, too.",
+      "source_locator": "Stubb's soliloquy, near end before 'Here goes again'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This small Stubb digression is a voice-establishing moment of whimsy that shows his philosophical goofiness at its peak; its absence mildly thins the soliloquy's comic texture.",
+      "suggested_fix": "Could be dropped as a budget cut if marked; otherwise restore the 'born into the world / first thing babies do' aside to maintain Stubb's register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses (the Persian-sherbet simile and the jewelled-nights personification, both gutted to bare adjectives) plus multiple medium-severity voice flattenings in Stubb's dialogue and soliloquy require regeneration."
+}

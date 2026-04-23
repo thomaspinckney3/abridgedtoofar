@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T09:44:18",
+  "key": "18c93e07f61f65a07af6336452710422",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "I'll apply each test carefully, focusing only on structural damage, not loss of ornamentation.\n\n---\n\n**Ch 119, draft passage:** \"For that strange spectacle\u2014the head turned sunwards\u2014conveyed a new wondrousness.\"\n\n**Source has:** \"For that strange spectacle observable in all sperm whales dying\u2014the turning sunwards of the head, and so expiring\u2014that strange spectacle, beheld of such a placid evening, somehow to Ahab conveyed a wondrousness unknown before.\"\n\n**Test:** Missing definitional gloss (Test 4). In the source, the em-dash gloss establishes two things: (a) this is a general phenomenon \"observable in all sperm whales dying,\" not just this one whale, and (b) \"the head\" is the dying whale's head. In the draft, \"the head turned sunwards\" has no subject \u2014 whose head? A reader arriving fresh sees a bare nominative absolute fragment inside dashes. More critically, \"the head\" has no unambiguous antecedent: the prior draft sentence says \"sun and whale both stilly died together,\" then pivots to Ahab watching the whale's \"final wanings.\" \"The head\" could parse as the whale's head, but the draft gives no grammatical anchor \u2014 it is a nominative without an actor, presented as a gloss of \"that strange spectacle\" without saying it is the whale's head turning, let alone that this is characteristic of all dying sperm whales. A competent reader is genuinely uncertain whether \"the head\" is the whale's, and cannot tell this is a species-wide phenomenon rather than an incidental detail of this scene.\n\n---\n\n```json\n[\n  {\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"119\",\n    \"draft_passage\": \"For that strange spectacle\u2014the head turned sunwards\u2014conveyed a new wondrousness.\",\n    \"source_has\": \"For that strange spectacle observable in all sperm whales dying\u2014the turning sunwards of the head, and so expiring\u2014that strange spectacle, beheld of such a placid evening, somehow to Ahab conveyed a wondrousness unknown before.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'the head' has no grammatical subject or antecedent established in the draft, and without 'observable in all sperm whales dying' the reader cannot tell whether this is a characteristic cetacean behaviour (the source's point) or an incidental detail of this single whale, making the philosophical weight of Ahab's subsequent monologue unmotivated.\"\n  }\n]\n```",
+    "input_tokens": 4376,
+    "output_tokens": 593,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 14.963436126708984,
+    "stop_reason": "end_turn"
+  }
+}

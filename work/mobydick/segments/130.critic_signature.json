@@ -1,0 +1,44 @@
+{
+  "segment_id": "130",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Blind and dumb might well be envied now.",
+      "source_locator": "Ahab to himself, after 'The greyheaded woodpecker tapping the hollow tree!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is rhetorically striking and interpretively weighty — Ahab envying blindness and deafness to escape the symbol before him is a key articulation of his tormented consciousness; it precedes his observation about the line-tubs.",
+      "suggested_fix": "Restore 'Blind and dumb might well be envied now.' in Ahab's soliloquy between the woodpecker image and 'See! that thing rests on two line-tubs.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Art not thou the leg-maker? Look, did not this stump come from thy shop?",
+      "source_locator": "Ahab's second speech to the Carpenter, after 'Thy coffin lies handy to the vault.'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses Ahab's two sequential challenges ('leg-maker?' and 'undertaker?') into a single line, erasing the leg/stump self-reference that makes the exchange personally grotesque and thematically charged — Ahab's own body parts are implicated.",
+      "suggested_fix": "Restore the full two-beat exchange: 'Art not thou the leg-maker? Look, did not this stump come from thy shop?' with the Carpenter's reply, then the 'undertaker?' question separately."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the reason why the grave-digger made music must have been because there was none in his spade, sir. But the caulking mallet is full of it.",
+      "source_locator": "Carpenter's reply to the singing question",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops the Carpenter's 'Oh, I'm indifferent enough, sir, for that; but' preamble, losing the characteristic voice register of the Carpenter — his bumbling, hedging manner is a voice signature of this scene and shapes the comic texture of the exchange.",
+      "suggested_fix": "Restore the Carpenter's full reply including 'Oh, I'm indifferent enough, sir, for that; but' before the spade/mallet contrast."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Um, um; go on. / I was about to say, sir, that——",
+      "source_locator": "After 'Why, faith, sir, it's only a sort of exclamation-like—that's all, sir.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft omits Ahab's 'Um, um; go on.' beat, which is a small but characteristic moment of Ahab's weary irony before he abruptly cuts the Carpenter off — the comedic rhythm of the interruption depends on this setup.",
+      "suggested_fix": "Restore 'Um, um; go on.' before the Carpenter's 'I was about to say, sir, that——' to preserve the comic timing of Ahab's interruption."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings involve flattening of the leg/stump exchange, the Carpenter's hedging voice, and the dropped 'Blind and dumb' line, but the chapter's major interpretive set-pieces — the jack-of-all-trades speech, the immortality-preserver soliloquy, and the Equator speech — are preserved with sufficient fidelity."
+}

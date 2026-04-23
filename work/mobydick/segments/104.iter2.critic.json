@@ -1,0 +1,62 @@
+{
+  "segment_id": "104",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Samuel and all his Sons—how many, their mother only knows—and under their immediate auspices, and partly, I think, at their expense, the British government was induced to send the sloop-of-war Rattler",
+      "source_locator": "paragraph 2, description of the Rattler voyage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical 'how many, their mother only knows' is a prime instance of Melville's comic-ironic voice; the draft collapses it to 'a sloop-of-war, was sent whaling by British inducement,' losing both the joke and the narrative persona.",
+      "suggested_fix": "Restore the full clause 'Samuel and all his Sons—how many, their mother only knows' before the mention of the Rattler."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the Rattler made a rattling voyage of it, and did some service; how much does not appear",
+      "source_locator": "paragraph 2, after mention of the Rattler",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The pun 'made a rattling voyage of it' combined with the dismissive 'how much does not appear' is a signature ironic aside; the draft reduces it to 'how much she did, who knows?' losing both the pun and Melville's exact deadpan cadence.",
+      "suggested_fix": "Restore the sentence with its pun: 'the Rattler made a rattling voyage of it, and did some service; how much does not appear.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the beef was fine—tough, but with body in it. They said it was bull-beef; others, that it was dromedary beef; but I do not know, for certain, how that was. They had dumplings too; small, but substantial, symmetrically globular, and indestructible dumplings. I fancied that you could feel them, and roll them about in you after they were swallowed. If you stooped over too far forward, you risked their pitching out of you like billiard-balls.",
+      "source_locator": "paragraph 4, description of the food",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage is a sustained comic set-piece with distinctive physical comedy and voice; the draft compresses it to a bare clause ('Dumplings—small, globular, indestructible—seemed to roll within you like billiard-balls'), stripping the 'I fancied,' the stooping-forward joke, and Melville's leisurely elaboration.",
+      "suggested_fix": "Expand the food passage to preserve at least the full dumpling joke including 'I fancied that you could feel them' and the billiard-ball pitching image in its original framing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "taking her from truck to helm, considering the dimensions of the cook's boilers, including his own live parchment boilers; fore and aft, I say, the Samuel Enderby was a jolly ship; of good fare and plenty; fine flip and strong; crack fellows all, and capital from boot heels to hat-band.",
+      "source_locator": "paragraph 4, concluding appraisal of the ship",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The mock-systematic survey ('from truck to helm,' 'his own live parchment boilers,' 'capital from boot heels to hat-band') is quintessential Melville catalog-humor; the draft cuts it entirely, ending only with 'crack fellows all.'",
+      "suggested_fix": "Restore the concluding catalog including 'from truck to helm,' 'live parchment boilers,' and 'capital from boot heels to hat-band.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Now, whether these gin and beer harpooneers, so fuddled as one might fancy them to have been, were the right sort of men to stand up in a boat's head, and take good aim at flying whales; this would seem somewhat improbable. Yet they did aim at them, and hit them too.",
+      "source_locator": "final analytical paragraph, reasoning about Dutch harpooneers",
+      "draft_treatment": "absent",
+      "why_it_matters": "This deadpan reversal—'this would seem somewhat improbable. Yet they did aim at them, and hit them too'—is a characteristically Melvillean comic shrug; the draft skips directly from the arithmetic to 'High livers, those Hollanders,' losing the ironic beat.",
+      "suggested_fix": "Insert the fuddled-harpooneers sentence with its reversal before the summary about high livers."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "But this was very far North, be it remembered, where beer agrees well with the constitution; upon the Equator, in our southern fishery, beer would be apt to make the harpooneer sleepy at the mast-head and boozy in his boat; and grievous loss might ensue to Nantucket and New Bedford.",
+      "source_locator": "final analytical paragraph, after 'yet they did aim at them'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic geographic digression on beer's climatic effects and concern for Nantucket commerce is a self-contained ironic aside that establishes Ishmael's mock-scientific persona; its absence thins the chapter's satirical texture.",
+      "suggested_fix": "Restore the North-vs-Equator beer remark, even in compressed form, to preserve the comic-scientific voice."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's facts and several strong verbatim passages but systematically flattens Melville's comic-ironic voice in the food description, the Rattler pun, the dumpling physical comedy, the closing catalog, and the deadpan beer-harpooneers analysis, yielding four medium-severity voice-flattening failures that collectively trigger regeneration."
+}

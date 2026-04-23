@@ -1,0 +1,44 @@
+{
+  "segment_id": "103",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I'd rather be killed by you than kept alive by any other man.",
+      "source_locator": "Boomer's aside to Bunger, after 'Oh! a great watcher, and very dietetically severe, is Dr. Bunger'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most memorable comic lines in the chapter—Boomer's gallows-humor resignation—and it disappears entirely from the draft, flattening the banter's peak moment.",
+      "suggested_fix": "Restore the line verbatim after Boomer's rum-toddy speech: 'Oh! a great watcher, and very dietetically severe, is Dr. Bunger. (Bunger, you dog, laugh out! why don't ye?) But, heave ahead, boy, I'd rather be killed by you than kept alive by any other man.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "No more White Whales for me; I've lowered for him once, and that has satisfied me. There would be great glory in killing him, I know that; and there is a ship-load of precious sperm in him, but, hark ye, he's best let alone",
+      "source_locator": "Boomer's speech after Bunger's jack-knife anecdote",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Boomer's explicit refusal of Moby Dick is the chapter's interpretive keystone—his sane counterpoint to Ahab's obsession. The draft strips it to 'He's welcome to the arm he has, but not to another,' losing the crucial 'No more White Whales for me; I've lowered for him once, and that has satisfied me' and the full contrast with Ahab's response.",
+      "suggested_fix": "Restore Boomer's full declaration verbatim: 'No more White Whales for me; I've lowered for him once, and that has satisfied me.' This is the thematic hinge of the chapter and must not be compressed away."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as I was groping at midday, with a blinding sun, all crown-jewels; as I was groping, I say, after the second iron, to toss it overboard—down comes the tail like a Lima tower",
+      "source_locator": "Boomer's yarn, midway through the whale-attack account",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The doubled 'as I was groping' with the surreal 'blinding sun, all crown-jewels' is distinctively Melvillean in rhythm and imagery; the draft strips this to bare action, losing the hallucinatory voice that makes the passage memorable.",
+      "suggested_fix": "Preserve Boomer's groping-at-midday sentence even in compressed form: 'as I was groping at midday, with a blinding sun—crown-jewels all about—down comes the tail like a Lima tower.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "when, when, all of a sudden, thank the good God, the barb ript its way along the flesh—clear along the whole length of my arm—came out nigh my wrist, and up I floated",
+      "source_locator": "End of Boomer's yarn, just before introducing Bunger",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The doubled 'when, when' and the precise 'clear along the whole length' give the passage its oral, breathless quality; the draft has 'the barb ripped along the flesh, came out nigh my wrist,' which is accurate but loses the rhetorical stutter and Melville's pacing.",
+      "suggested_fix": "Restore 'when, when, all of a sudden, thank the good God' and 'clear along the whole length of my arm' to preserve Boomer's voice."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft faithfully reproduces many signature lines but drops Boomer's 'I'd rather be killed by you than kept alive by any other man,' critically truncates his thematic refusal of Moby Dick ('No more White Whales for me; I've lowered for him once'), and flattens the hallucinatory midpoint of his yarn—three medium-severity failures that together trigger regeneration."
+}

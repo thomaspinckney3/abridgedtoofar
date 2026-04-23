@@ -19,6 +19,7 @@ from .critics import run_critic
 from .drafter import draft_all, draft_segment, ensure_chapters
 from .book_critic import run_book_critic
 from .chapter_classifier import classify_chapters
+from .coherence import run_coherence
 from .iterate import iterate_segment
 from .lean_plan import build_lean_plan
 from .llm import set_stream_sink
@@ -643,6 +644,56 @@ def _render_rebudget(r) -> None:
             t.add_row(x.id, x.title[:36], str(x.old_target),
                       str(x.draft_words), str(x.new_target))
         console.print(t)
+
+
+@app.command()
+def coherence(
+    book_id: str,
+    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
+) -> None:
+    """Run the structural coherence critic on every adjacent pair of diegetic
+    chapters. Strict gate — only flags non-parseable sentences, dangling
+    references, broken logical pivots, missing definitional glosses,
+    unattributed dialogue, and mid-scene jumps. Writes
+    work/<book>/coherence_report.json. ~100% precision, ~55% recall.
+    Intended for human review — does NOT auto-feed regen.
+    """
+    book = load_book(book_id)
+    console.print(f"[dim]book:[/dim] {book.book_id}")
+    if stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk); sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+    report = run_coherence(book)
+    if stream:
+        sys.stdout.write("\n")
+    console.rule(f"[bold]coherence: {report['findings_total']} findings across "
+                 f"{report['pairs_checked']} pairs[/bold]")
+    # Summary counts.
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim"); tally.add_column()
+    tally.add_row("pairs_checked", str(report["pairs_checked"]))
+    tally.add_row("findings_total", str(report["findings_total"]))
+    for k, v in report["class_counts"].items():
+        tally.add_row(k, str(v))
+    console.print(Panel(tally, title="counts"))
+    if not report["findings"]:
+        console.print("[green]no structural coherence damage detected[/green]")
+        return
+    t = Table(show_lines=True)
+    t.add_column("seg")
+    t.add_column("class", width=22)
+    t.add_column("draft passage (trunc)", max_width=60)
+    t.add_column("source context (trunc)", max_width=60)
+    for f in report["findings"]:
+        t.add_row(
+            str(f.get("segment_id", "?")),
+            f.get("class", ""),
+            (f.get("draft_passage") or "")[:120],
+            (f.get("source_has") or "")[:120],
+        )
+    console.print(t)
 
 
 @app.command()

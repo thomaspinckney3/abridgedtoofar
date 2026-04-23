@@ -1,0 +1,53 @@
+{
+  "segment_id": "088",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "mistifying the gardens of the deep, as with so many sprinkling or mistifying pots",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'mistifying pots' image is a characteristically Melvillean comic-grotesque domestication of the sublime; the draft strips the opening sentence to bare fact, losing the rhetorical extravagance that gives the paragraph its ironic voice.",
+      "suggested_fix": "Restore the 'sprinkling and mistifying the gardens of the deep, as with so many sprinkling or mistifying pots' clause in the opening sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Not so much thy skill, then, O hunter, as the great necessities that strike the victory to thee!",
+      "source_locator": "end of the 'spoutings out' paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The apostrophe to the hunter ('O hunter') is rhetorically distinctive and interpretively important—it reframes the chase as necessity-driven rather than heroic; the draft paraphrases it into a flat declarative and drops the direct address.",
+      "suggested_fix": "Restore the verbatim apostrophe: 'Not so much thy skill, then, O hunter, as the great necessities that strike the victory to thee!'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "But why pester one with all this reasoning on the subject? Speak out! You have seen him spout; then declare what the spout is; can you not tell water from air? My dear sir, in this world it is not so easy to settle these plain things. I have ever found your plain things the knottiest of all.",
+      "source_locator": "penultimate paragraph before the 'central body' description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the segment's most voice-establishing digressions—the narrator's sudden mock-exasperated turn to the reader, with the paradox 'I have ever found your plain things the knottiest of all,' is a signature moment of Ishmael's rhetorical personality and is entirely absent from the draft.",
+      "suggested_fix": "Insert the full 'But why pester one' passage before the description of the central body of the spout; it is too distinctive to compress away."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "No roses, no violets, no Cologne-water in the sea.",
+      "source_locator": "paragraph on the whale's sense of smell",
+      "draft_treatment": "absent",
+      "why_it_matters": "The olfactory paragraph—including the comic punch-line about roses, violets, and Cologne-water—is entirely cut from the draft. The closing sentence is widely recognizable as a signature Melvillean comic aside and carries thematic weight (the whale's alien sensory world).",
+      "suggested_fix": "Restore at minimum the sentence 'But what does he want of them? No roses, no violets, no Cologne-water in the sea.' and brief context."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "engendered by his incommunicable contemplations",
+      "source_locator": "final 'how nobly it raises' paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'incommunicable contemplations' is one of Melville's most resonant compounds in this chapter, linking the whale's mystical interiority to the rainbow/thought metaphor; the draft simply writes 'a canopy of vapor' without this phrase.",
+      "suggested_fix": "Restore 'engendered by his incommunicable contemplations' after 'canopy of vapor.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft achieves reasonable factual coverage but erases three significant voice-establishing passages—the mock-exasperated reader address ('But why pester one'), the olfactory comedy ('No roses, no violets'), and the rhetorically distinctive apostrophe to the hunter—producing three medium-severity findings that together require regeneration."
+}

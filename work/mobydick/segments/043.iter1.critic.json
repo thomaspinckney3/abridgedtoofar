@@ -1,0 +1,44 @@
+{
+  "segment_id": "043",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I wonder whether those jolly lads bethink them of what they are dancing over. I'll dance over your grave, I will—that's the bitterest threat of your night-women",
+      "source_locator": "Old Manx Sailor's first speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Old Manx Sailor's meditation is one of the chapter's interpretive keystones—the 'dance over your grave' formulation is distinctive and carries the ominous undercurrent of the whole scene; the draft collapses it to a bare summary.",
+      "suggested_fix": "Restore the Manx Sailor's speech closer to verbatim: 'I wonder whether those jolly lads bethink them of what they are dancing over. I'll dance over your grave, I will—that's the bitterest threat of your night-women…'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Ready formed. There! the ringed horizon. In that ring Cain struck Abel. Sweet work, right work! No? Why then, God, mad'st thou the ring?",
+      "source_locator": "Old Manx Sailor's second speech, during the fight",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most critically noted speeches in the chapter—the Cain/Abel allusion within 'the ringed horizon' is a signature theological aside that carries heavy interpretive weight about violence and divine complicity; it is entirely absent from the draft.",
+      "suggested_fix": "Insert the Old Manx Sailor's ring speech during the brawl scene: 'Ready formed. There! the ringed horizon. In that ring Cain struck Abel. Sweet work, right work! No? Why then, God, mad'st thou the ring?'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "it makes me jingle all over like my tambourine—that anaconda of an old man swore 'em in to hunt him!",
+      "source_locator": "Pip's closing monologue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'anaconda of an old man' and 'jingle all over like my tambourine' are signature Pip-voice coinages; the draft retains 'anaconda' but omits the tambourine simile, losing the self-reflexive, voice-defining character of the speech.",
+      "suggested_fix": "Restore 'it makes me jingle all over like my tambourine—that anaconda of an old man swore 'em in to hunt him!' verbatim within Pip's closing monologue."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "2ND NANTUCKET SAILOR. Avast the chorus!… Star-bo-l-e-e-n-s, a-h-o-y! Eight bells there below! Tumble up!",
+      "source_locator": "2nd Nantucket Sailor's speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phonetic rendering of the sailor's bellow ('Star-bo-l-e-e-n-s, a-h-o-y!') is a period/register marker and a small comic-voice moment; its complete omission erases some of the chapter's nautical texture.",
+      "suggested_fix": "Include at least the phonetically spelled shout to preserve the register flavor of the scene."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft's most serious failure is the complete omission of the Old Manx Sailor's 'ringed horizon / Cain struck Abel' speech, an interpretively critical passage; combined with two further medium-severity flattenings of the Manx Sailor's first speech and Pip's tambourine simile, the threshold for regeneration is met."
+}

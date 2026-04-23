@@ -1,0 +1,44 @@
+{
+  "segment_id": "135",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Sweet childhood of air and sky! how oblivious were ye of old Ahab's close-coiled woe! But so have I seen little Miriam and Martha, laughing-eyed elves, heedlessly gambol around their old sire",
+      "source_locator": "paragraph beginning 'Oh, immortal infancy'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Miriam-and-Martha simile is distinctive voice material — a domestic tenderness that makes the cosmic irony of the paragraph land. The draft keeps only the opening invocation and cuts the comparator entirely, losing the interpretive pivot of the passage.",
+      "suggested_fix": "Restore the full paragraph: 'Oh, immortal infancy, and innocency of the azure! Invisible winged creatures that frolic all round us! Sweet childhood of air and sky! how oblivious were ye of old Ahab's close-coiled woe! But so have I seen little Miriam and Martha, laughing-eyed elves, heedlessly gambol around their old sire; sporting with the circle of singed locks which grew on the marge of that burnt-out crater of his brain.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "forty years on the pitiless sea! for forty years has Ahab forsaken the peaceful land, for forty years to make war on the horrors of the deep",
+      "source_locator": "Ahab's monologue, early section on 'forty years'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full anaphoric hammer of 'forty years' repetitions is one of the most rhetorically distinctive passages in the chapter; the draft compresses and loses one full iteration ('forty years on the pitiless sea!') and the internal rhythm of the repeated phrase, which is itself a signature structural device.",
+      "suggested_fix": "Restore the full sequence: 'forty years of privation, and peril, and storm-time! forty years on the pitiless sea! for forty years has Ahab forsaken the peaceful land, for forty years to make war on the horrors of the deep!'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the masoned, walled-town of a Captain's exclusiveness, which admits but small entrance to any sympathy from the green country without",
+      "source_locator": "Ahab's monologue, mid-section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'masoned, walled-town' metaphor for command's solitude is critically noted as one of Melville's most compressed images of psychological isolation; the draft cuts the dependent clause entirely, leaving only the bare phrase without the elaborating metaphor.",
+      "suggested_fix": "Restore: 'the masoned, walled-town of a Captain's exclusiveness, which admits but small entrance to any sympathy from the green country without—oh, weariness!'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "See, see! the boy's face from the window! the boy's hand on the hill!",
+      "source_locator": "Starbuck's speech, final lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "Starbuck's final visionary outcry — the boy's face and hand — is the emotional apex of his appeal and is simply cut from the draft; its absence weakens the pathos of the scene and the abruptness of Ahab's turn away.",
+      "suggested_fix": "Restore Starbuck's closing lines: 'See, see! the boy's face from the window! the boy's hand on the hill!' before the paragraph about Ahab's averted glance."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity failures — the Miriam-and-Martha simile cut entirely, the 'forty years' anaphora compressed, and the 'masoned, walled-town' metaphor truncated — together constitute sufficient voice erasure to require regeneration."
+}

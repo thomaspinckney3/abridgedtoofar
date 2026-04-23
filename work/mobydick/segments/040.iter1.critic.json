@@ -1,0 +1,62 @@
+{
+  "segment_id": "040",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "What I've dared, I've willed; and what I've willed, I'll do!",
+      "source_locator": "final paragraph, after 'Oh, hard! that to fire others'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most quoted and critically cited lines in the entire chapter, crystallizing Ahab's monomaniacal will as a philosophical and dramatic statement; its absence is a significant signature loss.",
+      "suggested_fix": "Restore verbatim: 'What I've dared, I've willed; and what I've willed, I'll do!' in the final paragraph."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Oh, hard! that to fire others, the match itself must needs be wasting!",
+      "source_locator": "final paragraph, after 'they all stand before me; and I their match'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a rhetorically and interpretively distinctive line — Ahab's self-consuming nature as an agent of destruction — that the critical tradition returns to repeatedly; its loss erases a key layer of self-awareness in Ahab's monologue.",
+      "suggested_fix": "Restore verbatim or near-verbatim: 'Oh, hard! that to fire others, the match itself must needs be wasting!'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I laugh and hoot at ye, ye cricket-players, ye pugilists, ye deaf Burkes and blinded Bendigoes!",
+      "source_locator": "final paragraph, after 'I now prophesy that I will dismember my dismemberer'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This grotesque, defiant comic catalogue is one of the most stylistically distinctive passages in the chapter, establishing Ahab's taunting of the gods in an unmistakably Melvillean register; replacing it with 'He flung his challenge upward. Come forth!' flattens the voice completely.",
+      "suggested_fix": "Restore the taunting address to the gods including 'ye cricket-players, ye pugilists, ye deaf Burkes and blinded Bendigoes' and the schoolboy bully passage to preserve Ahab's grotesque-comic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Yonder, by ever-brimming goblet's rim, the warm waves blush like wine. The gold brow plumbs the blue.",
+      "source_locator": "first soliloquy paragraph, second sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This lyrical sunset imagery is prosodically distinctive and sets up the soul-mounts-up contrast; its absence flattens the poetic texture of the opening meditation.",
+      "suggested_fix": "Restore at least 'Yonder, by ever-brimming goblet's rim, the warm waves blush like wine. The gold brow plumbs the blue.' before the diver-sun line."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "my one cogged circle fits into all their various wheels, and they revolve",
+      "source_locator": "final paragraph, opening lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "The cogged-circle / wheels metaphor is a critical touchstone for Ahab's mechanical determinism and his manipulation of the crew; it is interpretively significant and stylistically distinctive.",
+      "suggested_fix": "Restore: 'my one cogged circle fits into all their various wheels, and they revolve' in the transition to the final paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "This lovely light, it lights not me; all loveliness is anguish to me, since I can ne'er enjoy.",
+      "source_locator": "second soliloquy paragraph, middle",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft collapses 'This lovely light, it lights not me; all loveliness is anguish to me, since I can ne'er enjoy' to merely 'All loveliness is anguish to me,' losing the anaphoric light/lights construction and the explanatory 'since I can ne'er enjoy' that gives the line its pathos.",
+      "suggested_fix": "Restore: 'This lovely light, it lights not me; all loveliness is anguish to me, since I can ne'er enjoy.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the iron-rails peroration and isolated signature phrases but erases three high-priority passages ('What I've dared, I've willed,' the match-wasting line, and the gods-taunting catalogue) along with several medium-weight voice and interpretive passages, producing a significantly flattened Ahab soliloquy."
+}

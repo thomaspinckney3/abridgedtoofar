@@ -1,0 +1,44 @@
+{
+  "segment_id": "046",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the deepest silence, only broken by the occasional flap of a sail, and the steady hum of the unceasingly advancing keel",
+      "source_locator": "paragraph 1, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhythmically distinctive clause establishes the atmospheric tension that gives the subsequent whispered dialogue its weight; its erasure flattens the scene's sensory and prosodic texture.",
+      "suggested_fix": "Restore the phrase 'deepest silence, only broken by the occasional flap of a sail, and the steady hum of the unceasingly advancing keel' in the opening atmospheric sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Say what ye will, shipmate; I've sharp ears.",
+      "source_locator": "dialogue, after 'Look to the bucket!'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full line 'Say what ye will, shipmate' carries Archy's characteristic stubbornness and the idiomatic register of the sailor voice; stripping it to 'I've sharp ears' removes the rhetorical posture that defines his character in this scene.",
+      "suggested_fix": "Restore 'Say what ye will, shipmate; I've sharp ears.' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Grin away; we'll see what turns up. Hark ye, Cabaco",
+      "source_locator": "Archy's final speech, opening clause",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'We'll see what turns up' is a key beat of foreshadowing — Archy's knowing confidence that something is hidden aboard — and its omission weakens the interpretive weight of the chapter's closing revelation.",
+      "suggested_fix": "Restore 'we'll see what turns up' between 'Grin away' and 'Hark ye, Cabaco'."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "you are the chap, ain't ye, that heard the hum of the old Quakeress's knitting-needles fifty miles at sea from Nantucket",
+      "source_locator": "Cabaco's mocking speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'ain't ye' and 'at sea' are small register markers that sustain the sailor idiom; dropping 'the hum of' also removes the comic specificity of the image.",
+      "suggested_fix": "Restore 'ain't ye' and 'the hum of' and 'at sea' to match the source more closely."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings (atmospheric keel-silence clause dropped, Archy's 'Say what ye will' flattened, 'we'll see what turns up' omitted) and one low finding, collectively representing voice and foreshadowing thinning but not requiring regeneration under the three-medium threshold."
+}

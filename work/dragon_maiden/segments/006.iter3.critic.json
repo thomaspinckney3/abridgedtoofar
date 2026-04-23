@@ -1,0 +1,35 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Had I heard something clattering around in there? I leaned forward and squinted into the darkness.",
+      "source_locator": "Paragraph 2, alley approach",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source uses an interior rhetorical question plus a deliberate physical gesture ('leaned forward and squinted') that establishes the narrator's cautious, self-questioning voice; the draft collapses this to 'A clatter made me pause,' removing the interiority entirely.",
+      "suggested_fix": "Restore the rhetorical question and the leaning/squinting beat to preserve the narrator's self-interrogating voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My body still wouldn't respond. Its only reaction was tears that pooled in my eyes and slid down my cheeks. My furious thoughts gave way to a loose grasp of consciousness.",
+      "source_locator": "Final paragraph, during the chloroforming",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source explicitly establishes that the body's paralysis causes the tears—'My body still wouldn't respond. Its only reaction was tears'—linking the physical helplessness to the emotional response; the draft drops 'My body still wouldn't respond' and goes straight to tears, severing the causal and thematic connection.",
+      "suggested_fix": "Restore the sentence 'My body still wouldn't respond. Its only reaction was tears…' to maintain the paralysis-as-helplessness motif that is interpretively important for the kidnapping scene."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He pulled away the fake flesh that clung tightly to his brown skin. The nostrils of his nose bulged out like that of a pig, and his teeth were yellow and sharp at the ends like fangs.",
+      "source_locator": "Blake's reveal paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies 'fake flesh that clung tightly to his brown skin'—the brown skin detail is characterizing and specific—and 'sharp at the ends like fangs' is the precise simile; the draft loses both 'brown skin' and 'like fangs,' reducing a distinctive monster-reveal to generic description.",
+      "suggested_fix": "Restore 'brown skin' and 'like fangs' to preserve the specific horror-register phrasing of the reveal."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; two medium findings (interior voice flattening at the alley approach and the causal paralysis-tears link at the climax) and one low finding (specificity loss in the Blake reveal) that collectively fall below the regeneration threshold."
+}

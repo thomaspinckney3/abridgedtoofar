@@ -1,0 +1,71 @@
+{
+  "segment_id": "067",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "upon the great canal of Hang-Ho, or whatever they call it, in China, four or five laborers on the foot-path will draw a bulky freighted junk at the rate of a mile an hour; but this grand argosy we towed heavily forged along, as if laden with pig-lead in bulk",
+      "source_locator": "paragraph 1, closing sentences",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a rhetorically distinctive digression—playful, bathetic, and voice-defining—that establishes the chapter's ironic register before the whale-supper comedy begins. Its complete absence flattens the opening.",
+      "suggested_fix": "Restore the Hang-Ho / pig-lead comparison in the opening towing paragraph, even if slightly condensed; it is the chapter's first signature moment."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "they are the invariable outriders of all slave ships crossing the Atlantic, systematically trotting alongside, to be handy in case a parcel is to be carried anywhere, or a dead slave to be decently buried",
+      "source_locator": "long shark-digression paragraph, fourth 'and though' clause",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Melville's most charged anti-slavery insertions in the novel; critical tradition returns to it as an example of his moral politics embedded in apparent digression. The draft reduces the entire slave-ship clause to the bare phrase 'slave-ships,' erasing all of the specific language.",
+      "suggested_fix": "Restore the slave-ship clause verbatim or near-verbatim within the shark digression: 'invariable outriders of all slave ships crossing the Atlantic, systematically trotting alongside, to be handy in case a parcel is to be carried anywhere, or a dead slave to be decently buried.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "You must go home and be born over again; you don't know how to cook a whale-steak yet… Born in a ferry-boat! That's queer, too… 'Hind de hatchway, in ferry-boat, goin' ober de Roanoke",
+      "source_locator": "Stubb–Fleece dialogue, age-and-birthplace interrogation",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'born over again' exchange and the Roanoke ferry-boat detail are among the chapter's most comic and voice-establishing passages; they also carry interpretive weight regarding Fleece's identity and the chapter's burlesque sermon frame. The draft reduces the entire exchange to 'cross-questioned him on age and birthplace.'",
+      "suggested_fix": "Restore the dialogue: age question, 'born over again' punchline, and the Roanoke/'hind de hatchway' answer—these are compact enough to include without significant word-count cost."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "this old Fleece, as they called him, came shuffling and limping along, assisting his step with his tongs… this old Ebony floundered along",
+      "source_locator": "Fleece's entrance, triple-anaphoric description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Melville's triple-repetition structure ('this old Fleece… this old Ebony…') is a deliberate stylistic device that enacts Fleece's laborious progress; the knee-pans joke ('which he did not keep well scoured like his other pans') is also cut. The draft condenses this to a single clause.",
+      "suggested_fix": "Restore the triple-anaphoric structure and the knee-pans wordplay; both are brief enough to include and are essential to the comic texture of the entrance."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "huge globular pieces of the whale of the bigness of a human head",
+      "source_locator": "sharks-feeding description, paragraph beginning 'About midnight'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Of the bigness of a human head' is a specific, unsettling image that gives the shark feast its horror; reducing it to 'huge globular pieces' loses the human-scale comparison that makes the detail memorable.",
+      "suggested_fix": "Restore 'of the bigness of a human head' in the sharks-feeding sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "that's your gizzard! Aloft! aloft!—that's it—now you have it. Hold it there now, and pay attention",
+      "source_locator": "Stubb's 'hold your hat' orders, late in the Stubb–Fleece dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "The gizzard/heart comedy—where Stubb corrects Fleece's hand position and mistakes his gizzard for his heart—is a distinctive burlesque moment that amplifies the sermon parody; its absence leaves the instruction-giving sequence flat.",
+      "suggested_fix": "Restore the gizzard exchange (it is short) between the 'drop your tongs' line and the steak instructions."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Best cooked 'teak I eber taste; joosy, berry joosy",
+      "source_locator": "after Stubb commands Fleece to taste the steak",
+      "draft_treatment": "absent",
+      "why_it_matters": "Fleece's 'joosy, berry joosy' line is one of the chapter's small comic peaks and ironically reverses Stubb's complaint; its absence removes a punchline that the tasting scene exists to deliver.",
+      "suggested_fix": "Restore the tasting exchange: Stubb holding tongs toward Fleece, Fleece smacking his withered lips, and the 'joosy, berry joosy' line."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft contains three high-severity losses (Hang-Ho canal comparison, slave-ships passage, 'born over again' exchange) plus four medium-severity losses (Fleece's triple-anaphoric entrance, 'bigness of a human head,' gizzard comedy, 'joosy berry joosy'), gutting both the chapter's comic texture and its most interpretively charged passage."
+}

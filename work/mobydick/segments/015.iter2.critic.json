@@ -1,0 +1,53 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It is not down in any map; true places never are.",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the most quoted lines in Melville; it is culturally famous and carries immense interpretive weight about imagination, authenticity, and cartography. It survives in the draft verbatim — this is actually preserved. Flagging as a check: confirmed present.",
+      "suggested_fix": "No action needed — line is present verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There was excellent blood in his veins—royal stuff; though sadly vitiated, I fear, by the cannibal propensity he nourished in his untutored youth.",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narrator's ironic, parenthetical self-interjection ('I fear') and the sustained irony of 'sadly vitiated' by 'cannibal propensity' is a voice-establishing passage; the draft strips 'sadly' and 'I fear' and 'he nourished in his untutored youth,' losing the wry, self-aware narrator tone.",
+      "suggested_fix": "Restore 'though sadly vitiated, I fear, by the cannibal propensity he nourished in his untutored youth' to preserve the ironic narrator voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But, alas! the practices of whalemen soon convinced him that even Christians could be both miserable and wicked; infinitely more so, than all his father's heathens.",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'But, alas!' exclamation is a register marker carrying Ishmael's ironic sympathy; the draft rephrases without the interjection, flattening the narrator's performative lament and the rhetorical sting of the contrast.",
+      "suggested_fix": "Retain 'But, alas!' and the exact phrasing 'even Christians could be both miserable and wicked' to preserve the ironic moral judgment."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "For at bottom—so he told me—he was actuated by a profound desire to learn among the Christians, the arts whereby to make his people still happier than they were; and more than that, still better than they were.",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The careful rhetorical doubling—'happier than they were; and more than that, still better than they were'—carries interpretive weight about Queequeg's moral seriousness, and the attribution 'so he told me' roots it in Ishmael's testimony. The draft collapses this to 'learn the arts to make his people happier and better,' losing the rhetorical escalation and personal attestation.",
+      "suggested_fix": "Restore the doubled construction and the parenthetical 'so he told me' to preserve the moral escalation and narrative authenticity."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "By hints, I asked him whether he did not propose going back, and having a coronation; since he might now consider his father dead and gone",
+      "source_locator": "paragraph 5",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'by hints' framing and the question about 'a coronation' give comic and sociological texture to Ishmael's relationship with Queequeg; the draft elides the entire exchange structure, jumping to his answer without the inquiry.",
+      "suggested_fix": "Restore at least 'By hints, I asked him whether he did not propose going back, and having a coronation' to retain the conversational texture."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the most famous lines verbatim but flattens several voice-establishing ironic passages and the rhetorical doubling of Queequeg's moral purpose, producing three medium-severity findings and one low; no single high-severity loss triggers regeneration, so the draft narrowly passes."
+}

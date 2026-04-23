@@ -1,0 +1,44 @@
+{
+  "segment_id": "035",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "for mere sounds, full of Leviathanism, but signifying nothing.",
+      "source_locator": "final paragraph of the list of uncertain/fugitive whales, before the closing 'Finally' paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This Shakespearean echo ('signifying nothing') is critically noted as a deliberate allusion to Macbeth, encoding Melville's philosophical irony about taxonomic futility; the critical tradition returns to it and it carries interpretive weight about the limits of systematization. Its absence erases both the allusion and the satirical capstone of the fugitive-whale list.",
+      "suggested_fix": "Restore the closing phrase after the list of uncertain whales: 'for mere sounds, full of Leviathanism, but signifying nothing.' It can follow the list of names with minimal additional words."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "it would certainly be very convenient to him for a folder in reading pamphlets.",
+      "source_locator": "BOOK II, Chapter III, Narwhale, after the discussion of the horn's possible uses",
+      "draft_treatment": "absent",
+      "why_it_matters": "This absurdist comic aside is quintessential Ishmael — the narrator's deadpan pivot from natural-history speculation to domestic whimsy is a defining voice moment that critics cite when discussing Melville's ironic register in the cetology chapters.",
+      "suggested_fix": "After noting the various theories about the horn's use, restore: 'My own opinion is, that however this one-sided horn may really be used—it would certainly be very convenient to him for a folder in reading pamphlets.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "as some frugal housekeepers, in the absence of company, and quite alone by themselves, burn unsavory tallow instead of odorous wax.",
+      "source_locator": "BOOK II, Chapter II, Black Fish / Hyena Whale, after noting the whale is taken for cheap oil",
+      "draft_treatment": "absent",
+      "why_it_matters": "This domestic simile is a signature Ishmael digression — the unexpected domestication of a savage whale into a household-economy joke is precisely the kind of tonal maneuver that defines this narrator's voice throughout the cetology chapter.",
+      "suggested_fix": "Restore the housekeepers simile after the statement that the Hyena Whale is taken for cheap oil: 'as some frugal housekeepers, in the absence of company, and quite alone by themselves, burn unsavory tallow instead of odorous wax.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "What then remains? nothing but to take hold of the whales bodily, in their entire liberal volume, and boldly sort them that way. And this is the Bibliographical system here adopted; and it is the only one that can possibly succeed, for it alone is practicable.",
+      "source_locator": "After the two paragraphs on why classification by baleen/hump/fin/teeth/anatomy fails, before BOOK I Chapter IV",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This is the logical and rhetorical climax of Ishmael's taxonomic argument — the triumphant mock-scientific declaration that his bibliographical method is the *only* practicable one. The draft relocates and compresses it to a brief aside, losing both the rhetorical buildup and the confident finality of 'it alone is practicable.'",
+      "suggested_fix": "Restore the declarative culmination of the classification-failure argument before the whale chapters begin: 'What then remains? nothing but to take hold of the whales bodily, in their entire liberal volume, and boldly sort them that way—the only system that can possibly succeed, for it alone is practicable.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft faithfully preserves the chapter's architecture and many signature lines, but loses the Shakespearean 'full of Leviathanism, but signifying nothing' (high severity), two definitive Ishmael voice-digressions (the Narwhale pamphlet-folder joke and the tallow-vs-wax housekeepers simile), and the rhetorical climax of the bibliographical-method argument — together constituting one high and three medium failures that require regeneration."
+}

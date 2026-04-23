@@ -1,18 +1,18 @@
 “Weekend at last!”
 
-I threw my arms up as the crowd from our fifty-floor office spilled onto the sidewalk. Someone yelled “Amen!” Someone else asked about the game. I thought about pizza and how being one face in a tide of humanity reminded me how flat my life felt.
+I threw my arms up as the crowd from our fifty-floor office spilled onto the sidewalk. Someone yelled “Amen!” “I’m just seeing my eyelids,” a hefty guy quipped. That got a laugh from us office-dwellers, a laugh that extinguished much of the exhaustion from a lot of faces. The front doors spilled out onto a major intersection, and all around me bustled a humanity eager to get home to family and dinner. I only had the dinner part, but pizza awaited me. Still, being among such a large crowd of my fellow humans was a bitter reminder of how normal my boring life was.
 
-“Hey, Mir!” Heather waved me over. She’d brought the cute new transfer, Blake. My heart sank. I pasted on a smile.
+“Hey, Mir!” Heather waved me over. She’d brought the cute new transfer, Blake. My heart sank; I pasted on a smile.
 
 “This is the sexy woman I’ve been telling you about, Blake,” she announced.
 
-He looked me over with eyes I didn’t like and held out a clammy hand. “Nice to meet you.”
+Blake looked me over. There was something dark about his eyes that I didn’t like. He held out his hand. “Nice to meet you.”
 
-“Likewise, and don’t let Heather tell you about my love life. It’s practically non-existent.”
+I shook it. His fingers were clammy like his skin didn’t quite fit. “Likewise, and don’t let Heather tell you about my love life. It’s practically non-existent.”
 
 “Do you both have to be so old-fashioned with the handshake?” Heather groaned. “I’m trying to hook you up here.”
 
-Blake laughed. “I don’t think this is going to work, Heth. She’s on to me.” He blinked away her confusion with a shrug. “Anyway, nice to have met you.” He walked off.
+Blake laughed. “I don’t think this is going to work, Heth. She’s on to me.” “Anyway, nice to have met you.” He walked off.
 
 “This is the third time this month, and it’s only the seventh day,” I told her.
 
@@ -20,7 +20,7 @@ Blake laughed. “I don’t think this is going to work, Heth. She’s on to me.
 
 “Then stop helping. Your picks are getting creepier.”
 
-“He wasn’t that bad. A little strange, yeah, but who isn’t?” She hurried to catch me. “Wanna get a bite before you hole up all weekend?”
+“He wasn’t that bad. A little strange, yeah, but who isn’t?” “Wanna get a bite before you hole up all weekend?”
 
 “Only if you’re buying.”
 
@@ -34,17 +34,17 @@ Blake laughed. “I don’t think this is going to work, Heth. She’s on to me.
 
 “To the Bar Room, and step on it. We need to get drunk,” she told the driver.
 
-He pulled into traffic. Heather leaned back. “Speaking of losing weight, a few of us girls are going hiking one weekend. You coming?”
+Heather leaned back. “Speaking of losing weight, a few of us girls are going hiking one weekend. You coming?”
 
 “I’m not much for nature walks.”
 
 “It’s the society, isn’t it?”
 
-I winced. “It’s not that. I just don’t feel like I fit in. Like I’m an outsider or something.”
+“It’s not that. I just don’t feel like I fit in. Like I’m an outsider or something.”
 
 “Then I won’t take ‘no’ for an answer next time. Live a little, Miriam, before your whole life is gone.”
 
-The city slid by in a blur of lights. “I know. I… I just feel like I’m supposed to wait for something. Like my time will come.”
+“I know. I… I just feel like I’m supposed to wait for something. Like my time will come.”
 
 “Hey, ladies,” the driver cut in. “I think someone’s following you.”
 
@@ -58,7 +58,7 @@ Heather and I twisted to look. “Really?” she asked.
 
 Heather clapped. “You think you can lose ‘em?”
 
-“For the risk it’ll be extra,” he grinned.
+“For the risk it’ll be extra,” he said.
 
 “I’ll take that risk!” Heather crowed.
 
@@ -70,13 +70,13 @@ Heather clapped. “You think you can lose ‘em?”
 
 “This is living!”
 
-He dove into an alley; I clutched the oh-shit handle. “This isn’t living! This is the preliminaries before death!”
+He took another sharp corner into an alley and sped up. I clutched the oh-shit handle. “This isn’t living! This is the preliminaries before death!”
 
 “Just enjoy the ride already!”
 
 Another ninety-degree turn wrung my stomach. “I want out!”
 
-“Just another block, misses!” he called over the rattle.
+“Just another block, misses!” he called.
 
 “Let me out now!”
 
@@ -90,11 +90,11 @@ She tossed a wad of bills over the seat. “That should cover it.”
 
 Heather ripped our belts free, threw the door open, and dragged me out. “Thanks for the fun!”
 
-He saluted and shot away. Heather yanked me behind a dumpster. We crouched as a red car tore past and followed our former taxi into the maze.
+He saluted and shot away. Heather yanked me behind a dumpster. We crouched as a red car tore past after our taxi.
 
 Heather stood, swiping sweat from her brow. “Wow, that was close.”
 
-I wobbled up and grabbed the dumpster for balance. “Home,” I said, already staggering the way we’d come.
+I grabbed the dumpster for balance. “Home,” I said, staggering back the way we’d come.
 
 “Wait! Where are you going?”
 
@@ -104,29 +104,27 @@ I wobbled up and grabbed the dumpster for balance. “Home,” I said, already s
 
 I waved without looking back. It wasn’t such a bad suggestion—if Fate hadn’t had other plans.
 
-The bus took longer than I hoped. Night beat me to my stoop, and with it came shadow and silence. The stop was half a block from my building, an alley dividing it from the neighbor’s. I walked fast.
+The bus took longer than I hoped. Night beat me to the stoop of my apartment building, and with it came its friends shadow and darkness. The stop was half a block from my building, an alley dividing it from the neighbor’s.
 
-A soft clatter made me pause at the alley’s mouth. Boxes, cans, a few feeble streetlights reflecting off puddles—nothing moved. I shrugged and kept going, keys rattling as I dug them out.
+A clatter made me pause at the alley’s mouth. Hulking shadows of trashcans and broken boxes stared back at me. Puddles reflected darkness, broken only by a few feeble streetlights. Nothing moved. I shrugged and kept going, keys rattling as I dug them out.
 
-Another rattle mimicked mine. I half-turned. Something flickered at the alley’s edge, gone before I could focus. My pulse jumped. The key wouldn’t separate from the ring—then it did. I shoved it home, twisted, and fell into the lobby. The door slammed behind me, thunder loud in the empty hall.
+Another rattle mimicked mine. I half-turned. Something flickered at the alley’s edge, gone before I could focus. My pulse jumped. The key wouldn’t separate—then it did. I shoved it home, twisted, and fell into the lobby. The door slammed; the noise echoed.
 
-“Easy there, Miriam. It was just your imagination…” I whispered, hand on my chest. The feeling of being watched clung to me all the way up the stairs.
+“Easy there, Miriam. It was just your imagination…” I whispered, hand on my chest. The feeling of being watched clung to me up the stairs.
 
-My third-floor one-bedroom looked out on the fire escape and a friendly brick wall. I tossed my purse on the table and collapsed into my only recliner. The watching sensation loosened inside the safety of a lock.
+My one-bedroom apartment was on the third floor with a lovely view of the fire escape and the neighboring brick building. I tossed my purse onto the small table beside the door and plopped into my favorite-and only-recliner. The watching sensation loosened inside my locked apartment.
 
 “Now this is the way to live…” I murmured, sinking back. “Just me and my chair.”
 
-A sweet smell threaded the air. None of my incense candles were lit. I tried to sit up. My arms wouldn’t pull me forward.
+A sweet smell threaded the air; none of my incense candles were lit. I tried to sit up. My arms wouldn’t pull me forward.
 
-The feeling of eyes returned, cold. I glanced at the window. Three figures stood on the other side of the glass.
-
-I gasped; no sound came out. One knelt, worked the sill. The window popped an inch, then slid up. All three climbed inside under the glow of my overhead light.
+The feeling of eyes returned. I glanced at the window. Three figures stood on the other side of the glass. I gasped; no sound came out. One knelt, worked the sill. The window popped an inch, then slid up. All three climbed inside under my overhead light.
 
 Two were burly men in ragged coats. The third was a familiar face.
 
 Blake.
 
-The ragged pair strode over. One grabbed my legs; the other pulled rope from his coat. They tied my ankles while I sat, limp and mute, watching as if from a fog. Blake came to my head and smiled down.
+The ragged pair strode over. One grabbed my legs while the other tied my ankles. I sat, limp and mute, watching as if from a fog. Blake came to my head and smiled.
 
 “What a lucky break your friend introduced me to you today,” he said, studying me. “You’re just in time to join a few other girls on an exciting journey.”
 
@@ -138,7 +136,7 @@ The ragged pair strode over. One grabbed my legs; the other pulled rope from his
 
 “She ain’t pretty enough,” one of his men muttered.
 
-“Beauty isn’t everything,” Blake said. “And I think this one might have something special. After all—” He leaned close and reached into his shirt collar. He peeled away what I had taken for skin. Nostrils bulged like a pig’s. His teeth were yellow, sharp. He was a monster. “—she saw through my disguise.”
+“Beauty isn’t everything,” Blake said. “And I think this one might have something special. After all—” He leaned close and reached into his shirt collar. He peeled away what I had taken for skin. The nostrils bulged like a pig’s. His teeth were yellow, sharp. He was a monster. “—she saw through my disguise.”
 
 I wanted to run; my body shuddered and did nothing.
 
@@ -148,11 +146,9 @@ Blake tucked the mask back and grinned. “All right. Don’t damage the merchan
 
 “What about knocking her out? She’s going to struggle,” the other asked.
 
-“I’ll take care of that,” Blake said. He pulled a cloth from his pocket. A stink of rotten plants hit me. “It’ll prove whether she’s one of them or not, too.”
+“I’ll take care of that,” Blake said. He pulled a cloth from his pocket; a stink of rotten plants hit me. “It’ll prove whether she’s one of them or not, too.”
 
-He pressed the cloth over my mouth and nose. The reek flooded my head. Tears slid from my unblinking eyes. Thoughts unraveled; the room tilted.
-
-Darkness took me cleanly.
+He pressed the cloth over my mouth and nose. The reek flooded my head. Its only reaction was tears that pooled in my eyes and slid down my cheeks. My furious thoughts gave way to a loose grasp of consciousness. My head began to spin along with the room. In a moment I was knocked clean out.
 
 “Let me out! God damn fucks! Let me out!”
 
@@ -474,15 +470,19 @@ The candlelight died; a door shut. I slid the remaining distance and dropped to 
 
 I ran for the dark.
 
-I cut straight across the fields for the black fringe of trees. Shouts cracked the night behind me; they’d found my empty bed and knotted sheets. A dozen torchlit figures poured through the gate and fanned across road and grass, horses and men angling to sweep the grounds.
+CHAPTER 6
 
-I tore downhill, skidding on slick, rain-loosened earth, brambles clawing my clothes as I forced my way under ancient boughs where the moon couldn’t follow. An animal track spared me some thorns and paralleled the road. By flicker of torch far off, riders bearing the green wing crest thundered past. I kept to the trees and let the path bend away until the noise thinned, then followed it down to a sunken glen where a narrow creek leapt from a steep lip into a round, still pool. The sky opened above: clean stars; a hush that felt like a held breath.
+I cut straight across the fields for the black fringe of trees. Shouts cracked the night behind me; they’d found my empty bed and knotted sheets. A dozen torchlit figures poured through the gate, riders fanning across road and grass.
 
-I collapsed against a boulder. My feet throbbed; every muscle ached. Hunger gnawed, but the water’s burble smoothed the edges of panic. Just a moment, I told myself. Close my eyes, wait for dawn.
+I tore downhill, skidding on slick, rain-loosened earth. Below, the town twinkled with choosing-night lights.
+
+Brambles clawed my clothes as I forced my way under ancient boughs. An animal track spared me some thorns and paralleled the road. By torch-flicker far off, riders bearing the crest I’d seen on the gate guards thundered past. I kept to the trees until the noise thinned, then followed the path down to a sunken glen where a narrow creek leapt from a steep lip into a round, still pool. The sky opened: stars, a hush.
+
+I collapsed against a boulder. My feet throbbed. My drowsiness was surpassed only by my hunger, and I regretted not taking provisions. However, the water’s burble smoothed the edges of panic. Just a moment, I told myself. Close my eyes, wait for dawn.
 
 “What do you mean by this transgression?”
 
-I jolted upright. Across the pool stood the Grand Dragon Lord. Shadows should have hidden him, but his eyes glowed an unnatural green. One hand rested on the hilt of a sheathed sword.
+I jolted upright. Across the pool stood the dragon lord. Shadows should have hidden him, but his eyes glowed an unnatural green. One hand rested on the hilt of a sheathed sword.
 
 “You’re the one who’s transgressed,” I retorted. “Kidnapping, unlawful imprisonment—want me to keep going?”
 
@@ -496,17 +496,17 @@ His eyes widened; his grip on the sword tightened. “Put down the stone. You do
 
 He stepped into clearer starlight, and my breath hitched. Folded against his back were great red, membranous wings, canvas skin stretched on long bones. Even closed, their span was immense.
 
-Steel hissed; he drew and moved for the bank. I panicked and threw. My aim was true to form: the stone splashed into the pool short and left, near the base of the fall.
+Steel hissed; he drew and moved for the bank. I panicked and threw. I launched the rock at him, but my aim was-well, as reliable as ever. The stone fell short and to the side so that it plopped into the pond near the base of the waterfall.
 
-Bubbles surged where it struck—not the quick exhale of a thrown rock but a deep, rising boil that spread in a widening ring. The Dragon Lord skidded to the edge and retreated a pace. The ground trembled beneath my feet; I stumbled and fell hard.
+Bubbles surged where it struck—not the quick exhale of a thrown rock but a deep, rising boil that spread in a widening ring. The dragon lord skidded to the edge and retreated a pace. The ground trembled beneath my feet; I stumbled and fell hard.
 
 Water erupted in a column twenty feet high, spiraling into a spindle that turned faster and thinner until its shape was unmistakably human. At the last, the excess cascaded back into the pool, drenching us both.
 
-She hovered five feet above the surface: a woman of impossible beauty in a long blue dress that flowed like waves, alabaster skin without blemish, hair as dark as deep shallows, eyes the clear blue of high water—eyes that fixed on me.
+She hovered five feet above the surface: a woman of impossible beauty in a long blue dress that flowed like waves, alabaster skin, hair as dark as deep shallows, eyes the clear blue of high water—eyes that fixed on me.
 
 When she spoke, her voice carried a cavern’s echo. “Why have you transgressed me?”
 
-The Dragon Lord went to one knee, laid his sword flat, and bowed his head. “She meant no harm, My Lady. She is ignorant of this world.”
+The dragon lord went to one knee, laid his sword flat, and bowed his head. “She meant no harm, My Lady. She is ignorant of this world.”
 
 The woman half-turned to him but kept her gaze on me. “Then she is a Maiden.” Not a question.
 
@@ -516,9 +516,9 @@ A ghost-smile touched her lips. “I see. She must be very bold to have escaped 
 
 His eyes slid to me, mouth tightening. “Yes. Very bold. I will punish her in a fitting manner.”
 
-Anger trampled fear. I lurched to my feet. “Like hell you are! I’m not going back, and you’re going to let those other—”
+Anger trampled fear. I lurched to my feet. “Like hell you are! I’m not going back, and you’re going to let those other—” My not-so-eloquent speech was interrupted by the twinkling of laughter.
 
-Laughter, bright as light on water, broke over my rant. The woman tilted her head back and smiled at me. “My, my, Dragon Lord, but you have chosen a wild one. She has escaped your castle, eluded your men, violated my waters, and now berates you before me—all in one night.”
+The woman tilted her head back and smiled at me. “My, my, Dragon Lord, but you have chosen a wild one. She has escaped your castle, eluded your men, violated my waters, and now berates you before me—all in one night.”
 
 “I am sorry, My Lady,” he said, head bowed. “I swear it will never happen again.”
 
@@ -534,125 +534,130 @@ She released me; my legs folded and I knelt. She stepped backward onto the water
 
 “Good luck, little Maiden,” she said, smiling as if the night itself shone from her. “Sleep well, my darling.”
 
-A cocoon of water rose to enfold her, then melted back into the pool. She was gone as if she had never been, leaving only the quiet and the astonished Dragon Lord staring into the ripples.
+A cocoon of water rose to enfold her, then melted back into the pool. She was gone as if she had never been, leaving only the quiet and the astonished dragon lord staring into the ripples.
 
-I didn’t get to savor his shock. Dizziness washed up, heavy and irresistible. The world tilted; the stars slipped sideways. The last thing I felt was strong arms lifting me as the Grand Dragon Lord crossed the bank and caught me before I hit the ground.
+That was no mirage of an insane person.
 
-I woke in a strange bed, sunlight slicing through shutter slats to gild the stone floor. My head hummed with the memory of the woman in the water. She had been real—too precise, too enchanting for a shared delusion.
+I didn’t get to savor his shock. Dizziness washed over me; the world tilted, the stars slipping sideways. The last thing I felt was strong arms lifting me as the dragon lord crossed the bank and caught me before I hit the ground.
+
+I woke in a strange bed, sunlight slicing through the shutters and skating across the stone floor. My buzzing brain landed on the woman in the water. She had been real—too precise, too enchanting for a shared delusion. Unless madness was catching.
 
 I had to get out.
 
-I threw off the covers and only then noticed the white dress hanging from me, bell sleeves brushing my wrists, hem kissing my ankles. Someone had changed me. Questions could wait; escape could not. The nearest casement was latched and thick as a door. The door itself was no better. I listened, heard distant voices, then tried the handle. Locked.
+I threw off the covers and only then noticed the flowing white dress hanging from me, bell sleeves brushing my wrists, the hem to my ankles. Someone had changed me. Questions could wait; escape could not. The nearest casement was locked and thick as a door. The door itself was no better. I pressed my ear to the wood—distant voices, echoing steps—then tried the handle. Locked.
 
-That left noise. I snatched a sheet, braced myself by the door, and screamed my head off. “Help! Somebody help! There’s a—uh—a badger in here!”
+That left noise. I snatched a sheet, braced myself by the door, and screamed. “Is somebody there? Somebody please help me!” I pounded for effect. “Help! Somebody help! There’s a-um, a badger in here!” Great one, heroine.
 
-Heavy steps pounded up the corridor. A key scraped, the lock turned, and the door burst inward. I flung the sheet over the lead rescuer—the stern old woman from last night—toppling her into an elderly man and a guard. Limbs, sheet, and shouts tangled. I stepped over (on) the pile and ran.
+Heavy steps pounded up the corridor. A key scraped, the lock turned, and the door swung open. I flung the sheet over the lead rescuer—the stern old woman from last night. Behind her came an elderly man and a guard. She flailed, they lunged, and I shoved the lot into a tangle of limbs and linen. I stepped over them—on them—and ran.
 
-More boots, more voices, metal scraping metal. I bolted to the last door along the passage and slipped through. Unlocked. I shut it behind me, turned—and froze. This chamber was a twin to mine, and its bed was occupied. The dragon lord lay sleeping between two shuttered windows, pale light striping his face.
+More boots, more armor clattering. I bolted to the last door along the passage and slipped through. Unlocked. I shut it behind me, turned—and froze. This chamber was a twin to mine, and its bed was occupied. The dragon lord lay sleeping between two tall windows, pale light striping his face. I clapped a hand over my mouth. Double-whammies that would lead to failure.
 
-Outside, the corridor surged with frustrated servants. A handle jiggled on the door opposite; the old woman’s voice drifted through. “She has escaped.”
+Outside, frustrated servants gathered. A handle jiggled on the door opposite; the old woman’s voice drifted through. “Should we check the lord’s room?”
 
-“Should we check the lord’s room?” a man asked.
+“It must be done, but quietly,” she replied to someone.
 
-“It must be done,” she said, “but quietly.”
+I dove beneath the bed. There was room enough for an ox; I made do with my shaking legs. The door eased open. A beam of light slipped in, soft steps followed, and the bed above me groaned.
 
-I dove beneath the bed. There was room enough for an ox; I made do with my shaking legs. The door eased open. Light and softness entered, then the bed above me groaned.
+“What’s the meaning of this?” came the Lord’s voice.
 
-“What’s the meaning of this?” the lord asked, sleepy, irritated, entertained.
+“I’m sorry to disturb you, My Lord, but the girl has once again escaped,” the old woman explained, mortified. “Only a moment ago, and she—well, she threw a blanket over my husband and me.”
 
-“I’m sorry to disturb you, My Lord, but the girl has once again escaped,” the old woman said, mortified. “She—she threw a blanket over my husband and me.”
+There was merriment in his tone. “I see. There is no further cause for concern. She is found, and that is all that needs be done on your part.”
 
-Another amused creak. “I see. There is no further cause for concern. She is found, and that is all that needs be done on your part.”
+“I’m sorry your assistance was needed, My Lord,” she apologized.
 
-“Very well, My Lord.”
+“There is no need. You may leave us.” My heart stopped. Us. The dreaded plural.
 
-Their steps receded. Darkness returned. I held my breath until my lungs burned. Then the bed sighed again; weight thumped to the floor. His shadow crossed the boards toward the foot.
+Their steps receded. Darkness returned. The bed sighed as a great weight slid to the floor. His shadow crossed the boards toward the foot.
 
-“Come out from under the bed,” the lord said. “I know where you are.” His voice was cool; the words were colder. “The mark on your shoulder is more than a sign of your being my possession. It is an enchantment that allows me to know your location. Also, you are in need of a bath after your hike last night.”
+“Come out where you are hiding beneath the bed,” he ordered. I cringed but stayed put. “I know where you are. The mark on your shoulder is more than a sign of your being my possession. It is also an enchantment that allows me to know your location. Also, you are in need of a bath after your hike last night.”
 
-Possession. I scowled and slid my head out to deliver my glare—and choked on it. He stood naked, unashamed, wholly at ease in his skin. Heat flooded my face; I yelped and ducked back under the bed. “P-put some clothes on!”
+Possession. I scowled and slid my head out to deliver my glare—and choked on it. He stood naked, unashamed. His body was ripped with pliable muscle, not too hard and not too soft. Just right for a soft porridge of sex. There was also the matter of his member which dangled down, but I guessed would be of some length and thickness when aroused. Somehow the wings were missing.
 
-“I do not answer to the whims of my Maiden,” he said, unruffled. “Come out, or I will fetch you.”
+I let out an eep and ducked back under the bed. “P-put some clothes on!”
 
-“Not unless you’re dressed!”
+“I do not answer to the whims of my Maiden. Now come out from there, or I will drag you out myself.”
+
+“If you’re not getting dressed then I’m not coming out!”
 
 “Very well.”
 
-He crouched and lifted the sheet-skirt. I swatted uselessly at his hand as he caught my wrist and drew me out into the light. I twisted away from all that bare, impossible maleness, but he held me fast.
+He crouched and lifted the sheet-skirt. I batted at his hand, but he caught my wrist and drew me into the light, pressing me against him. I turned my head away from all that impossible maleness. “Let go!”
 
-“Let go!”
+“I will not let you go until you understand your situation,” he said.
 
-“I will not until you understand your situation,” he said.
+I whipped around to glare into his handsome, albeit evil, face. “You ordered a bunch of thugs to kidnap me from my apartment and drag me to this fantastical world where I would serve you until the end of my days. What exactly am I missing?”
 
-“My situation,” I snapped, whipping around to face him, “is that you ordered a bunch of thugs to kidnap me, drag me through some portal, and park me in your castle to ‘serve’ you till I die. What exactly am I missing?”
+“That you are now a part of this world, and nothing you wish can change that,” he told me, those red eyes unreadable and unblinking. “You don’t understand. The Lady of the Pond granted you a gift, and to leave with the gift would be to put your life in danger.”
 
-“That you are now a part of this world, and nothing you wish can change that,” he answered. His red eyes fixed on mine, unreadable and unblinking. “The Lady of the Pond granted you a gift, and to leave with the gift would be to put your life in danger.”
+I froze as the color drained from my face. “She did what to me?”
 
-The blood drained from my face. “She did what?”
+“The Lady has granted you a unique connection to me, and if my enemies were to find out our secret you would be used against me,” he rephrased.
 
-“The Lady has given you a connection to me,” he said, slower, as if translating. “If my enemies were to learn of it, you would be used against me. Her favor is a great blessing and is rarely given.”
+My eyebrows crashed down and I tried to wrench free, but he was too strong. “What kind of a ‘favor’ is that? I die if I go home, and staying here means I’m somebody’s pawn? Yeah, great favor there.”
 
-“Some favor,” I muttered. “I die if I go home, and if I stay I’m somebody’s pawn.”
+He pursed his lips. “The Lady’s favor is a great blessing and is rarely given.”
 
-He studied me—not angry now, not triumphant—measured, almost gentle. “I do not know the precise benefit,” he admitted, “but I know I do not wish for you to die.”
+I snorted. “What would be a great blessing is to wake up from this horrible nightmare. Even knowing I had to go back to work would be better than this junk about lords and ladies, and curses and blessings with no benefit and plenty of punishment.”
 
-“Why?” I asked, suspicious of softness.
+His face softened as he studied mine. “I do not know the precise benefit, but I know I do not wish for you to die.”
 
-“While you are my servant, you are also my responsibility and, if fate ordains it, my bride. I would never wish harm to come to you.”
+I paused in my tirade. “Why?”
 
-I stared at his perfect face and didn’t believe him. “You’re a monster.”
+His manner was quiet and calm, as though he spoke to a wild creature. I must admit I was ready to bolt out the window, even if the drop was a good sixty feet. “While you are my servant, you are also my responsibility and, if fate ordains it, my bride. I would never wish harm to come to you.”
 
-One dark brow lifted. “For what? Having wings?” I darted a glance at his bare back. Nothing. He half-smiled at my confusion. “You saw them,” he said, then turned from me and lifted his arms.
+I pulled as far away as he allowed and scrutinized his features. “I don’t believe you.”
 
-My curiosity overcame my mortification. I looked. The skin below his shoulder blades rippled, then split in a shiver of muscle and bone. A pair of leathery, veined wings unfurled in a single swift, impossible bloom until the tips nearly brushed both walls. For a breathless instant he stood like some fresco come alive—man, dragon, and something in between—before the wings folded back against him, the planes of his back smoothing as if nothing had happened.
+He raised an eyebrow, the corners of his lips twitching upward. “Why not? Do you believe me to be some sort of a monster?”
 
-It was beautiful, insane, mind-blowing, and it made the locked windows, the white dress, the mark, the word possession all too real.
+I nodded. “Uh, yeah. You had those wing thingies at that special pond place.” I glanced around him, but the wings were still missing. “I don’t know where you hid them, but I know they were there.”
 
-CHAPTER 8
+He chuckled and released me so he could step back. My eyes, traitors, flicked downward. A blush warmed my cheeks. I spun and stared fixedly at the bed. “Get some clothes on!”
 
-The lord glanced over his shoulder at me with a sly smile. “What do you think?”
+“I would rather you see this without clothes.”
 
-“Wow. . .” I murmured, daring to touch the wings. They felt like stretched skin over hard bone. “You’re… you’re really a dragon, aren’t you?”
+Curiosity overcame shyness. I peeked over my shoulder. He stood with his back toward me, arms spread. The skin below his shoulder blades rippled; muscles and bones seemed to stretch and pull themselves from his very skin as a pair of leathery wings erupted and unfurled to their full span, the tips nearly touching from one end of the long room to the other. He didn’t hold the position long. The wings retracted and folded against his back.
 
-“I consider myself only half dragon.  My mother was a Maiden like yourself, and my father took her as his bride,” he revealed.
+It was beautiful, insane, and mind-blowing, all at the same time.
 
-“So you can’t go all fire-breathing, scaly dragon-like?” I asked.
+He glanced over his shoulder, a sly curve to his mouth. “What do you think?”
 
-“I can, but the transformation is a great strain on my body.” I petted the wing; it twitched beneath my fingers. “The wings of a dragon are very sensitive,” he informed me. He half-turned to me, and I noticed his member stood erect. “It is a stimulus for mating.”
+“Wow,” I breathed, stepping closer despite myself. The wing skin was warm and taut under my fingers; the bones beneath felt like living iron. “You’re… you’re really a dragon, aren’t you?”
+“I consider myself only half dragon. My mother was a Maiden like yourself, and my father took her as his bride,” he revealed.
+He shuddered, jaw tight.
 
-My cheeks resembled the color of a firetruck. I tried to turn away, but he caught my chin, guiding my gaze to his heated eyes. “Do not be afraid. I do not wish to bring you harm.”
+“Are you all right?”
 
-A strange smell wafted into my nostrils: lilacs in spring and newly cut grass in early summer, my favorite scents. All my fear melted away as the lord wrapped his arms around me.
+“The wings of a dragon are very sensitive,” he said. “The sensitivity isn’t from pain.” He half-turned to me and I noticed his member stood erect. “It is a stimulus for mating.”
 
-“W-what are you doing to me?” I stuttered. I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't. I couldn't do anything but fall into his embrace and soak in the riches of his enticing scent.
+My cheeks resembled the color of a firetruck. I tried to turn away, but the lord caught my chin between the fingers of his hand, holding my gaze in the heat of his eyes. A strange smell wafted into the air: lilacs in spring and newly cut grass, my favorite scents. My fear loosened. The scent wrapped me like a blanket, and then his arms and wings enclosed me in warmth.
 
-“What do you smell?” he whispered into my ear.
+“W-what are you doing to me?” I whispered. I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn’t.
+“What do you smell?” he murmured at my ear.
 
-“Lilacs, and cut grass,” I murmured.
+“Lilacs. And cut grass.”
 
 “Beautiful, like you.”
 
-He drew me closer, and his wings curved around us in a warm cocoon. I felt like a caterpillar in a warm cocoon, ready to emerge as a beautiful butterfly.
+A kiss at my neck, gentle as a promise. I trembled. “What’s happening to me?”
 
-Heat pooled through me as he laid me back on the bed and stripped away the flimsy gown. His hands explored me, every touch lighting nerves I hadn’t known could sing. Desire built until I ached for him, for his strength against me and inside me.
+“Ssh. Enjoy the feeling.”
 
-“Your desire for me is strong, but how badly do you want me?”
+His winged embrace tightened. I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly. The thin dress bunched at my hips; his hands learned the lines of me. Heat coiled low; my traitor body answered him. He lifted me as if I weighed nothing and laid me on the bed. In the dimness his eyes were embers.
 
-“Badly,” I whispered.
+He drew the gown over my head and flung it aside. I lay naked beneath his eyes. They consumed me like a man starved of food who had finally found his feast. He stretched himself beside me and explored me with his hands. When his fingers found the place that pulsed, thought unraveled.
 
-“Will you allow me to take you as my own?  To make you mine and no other?” he whispered.
+“Your desire for me is strong,” he said, voice rough with restraint. “How badly do you want me?”
 
-His fingers moved faster, pleasure rippling through me. “Yes.  Oh god, yes.”
+“Badly,” I managed.
 
-He removed his finger and sat up to look down at me. His lips curled back in a sly grin that revealed his sharp teeth. “Then you will be mine until I release you.”
+“Will you allow me to take you as my own? To make you mine and no other?”
 
-He settled over me and pressed forward; I groaned as he filled me, my body tightening, welcoming.
+“Yes. Oh god, yes.”
 
-My mind and body were enveloped in a haze of lust. I wanted only to pleasure and be pleasured. This man could pleasure me, could take me and claim me again and again.
+His smile flashed the hint of teeth. “Then you will be mine until I release you.”
 
-He thrust and I answered, the rhythm carrying us higher until bliss broke through me in a deep, shuddering wave. He followed, collapsing at my side.
-
-One of his wings draped across my naked body, keeping out the chill. He pulled me into his arms. Exhaustion swept over me, and I closed my eyes and let sleep take me.
+He joined with me. My mind and body were enveloped in a haze of lust. I wanted only to pleasure and be pleasured. This man could pleasure me, could take me and claim me again and again. The world narrowed to motion and breath, the sure rhythm of him, the blazing arc that gathered and broke me apart. I cried out; he held me through it, following into his own shuddering end. After, a wing draped over me like a quilt, heavy and warm. He drew me close. Exhaustion pulled me under.
 
 I woke cradled by muscle and membrane, his arms a band around my waist, his wing a shelter over us both. The room was dimmer than it had been; afternoon had slipped toward evening. Memory flooded back; so did a blush. I shifted. He tightened his hold.
 
@@ -662,7 +667,7 @@ I woke cradled by muscle and membrane, his arms a band around my waist, his wing
 
 “Hungry,” he diagnosed.
 
-He sat up to look at me. I yanked a sheet across myself. He chuckled. “That you still hide yourself from me after such an intimate act.”
+He sat up; I yanked a sheet across myself. He chuckled. “That you still hide yourself from me after such an intimate act.”
 
 “You did something to me,” I shot back. “Those smells made me—made me do it.”
 
@@ -672,7 +677,7 @@ He shook his head. “I did very little. Dragon males have glands at the wrist a
 
 His eyes flicked, and he smiled. “They have ample assets.”
 
-“Not much of a bargain. The guy gets the control and the girl gets a cup size.”
+I glared at him. “Not much of a bargain. The guy gets the control, and the girl gets a couple of larger jugs.”
 
 “Would you prefer our positions reversed?”
 
@@ -682,11 +687,11 @@ He sighed. “I warned you before: I can find you anywhere in this world. You ar
 
 “I’m not going to give up. Even if we did—what we did, I still want to go home.”
 
-He considered me, then said, “Perhaps I have been too restraining. You seem a free soul. Have you ever hunted on horseback?”
+He said, “Perhaps I have been too restraining. You seem a free soul. Have you ever hunted on horseback?”
 
 “No. Why?”
 
-“One of the other lords has asked me to ride with him today. It would give you a chance to…spread your wings.” His mouth twitched. “In the figurative sense.”
+“One of the other lords has asked me to ride with him today; it would give you a chance to…spread your wings—in the figurative sense.”
 
 “What do you care if I feel trapped?”
 
@@ -732,7 +737,9 @@ I blinked. “How old are you?”
 
 He opened his wings; the tips rasped the walls. “Are these not real enough?”
 
-They were. So was everything below them; my face heated. He folded the wings and, with a kindness I wasn’t ready to credit him for, reached for a pair of trousers. “Perhaps you would be less distracted if I clothed myself. You will catch your death of cold in only that sheet.”
+My naughty eyes wandered down to his naked torso. That was very real. I blushed and averted my eyes from his body. “Y-yes, very real.”
+
+He folded his wings and reached for a pair of trousers. “Perhaps you would be less distracted if I clothed myself. You will catch your death of cold in only that sheet.”
 
 “I’m fine,” I said, shivering.
 
@@ -770,7 +777,7 @@ He lifted a brow. She handed him a folded note. He read, smiled. “Reply that w
 
 “He ‘got her,’ as you put it,” he said, amused, “and is most pleased with his catch. Fortunate, as this was his first Choosing since inheriting his domains.”
 
-I squinted at him. “So are you really three hundred?”
+“So are you really three hundred?”
 
 He laughed softly. “Are you displeased with my aged appearance?”
 
@@ -924,7 +931,7 @@ Cayden joined us with Stephanie clenched around his neck like a braid. “Are we
 
 “Yes,” Xander answered. “Let us go.”
 
-Xander angled his legs behind him and his head forward. His wings beat hard, and we shot over the darkening forest. A cool wind whipped my face, so I turned into his chest.
+Xander angled his legs back, his head forward. His wings pumped and we surged ahead. Wind whipped my face until I turned into his chest.
 
 “Cold?” he asked.
 
@@ -934,43 +941,47 @@ I gave him the Evil Eye. “What do you think?”
 
 “You don’t exactly come with a seat belt or parachute.”
 
-“Seat belt?”
+“Seat belt?” he echoed.
 
-I shook my head. “Never mind. Just don’t drop me.”
+“Never mind. Just don’t drop me.”
 
-He chuckled. “I believe I can agree to your request.”
+“I believe I can agree to your request.”
 
-Below, a winding gravel road ran beside us toward a small village of thatched roofs and chimney smoke. At its southern edge lay a round clearing and, on a stone platform reached by six wide steps, a twenty-foot hoop of stone twined with vines. Before it a round stone altar brimmed with oil and flame. Cloaked figures waited: two in brown and black flanked the steps; three in gold, green-and-blue, and white stood by the fire; half a dozen gray-habited monks tended the place.
+We skimmed over the black tops of ancient pines. The gravel road curved below, leading to a clutch of thatched cottages where chimney-smoke hung in the dusk. South of the village a round clearing opened into the trees. At its edge rose a twenty-foot hoop of stone laced with vines, set upon a stone platform reached by six broad steps. Before the steps stood a round stone altar filled with oil and crowned by a three-foot flame.
 
-We landed. The three approached and bowed. The one in green-and-blue drew back his hood—an older man with gray-stranded hair and soft eyes.
+Two cloaked figures waited at the stairs’ head; three more in cloth of gold, green-and-blue, and white tended the altar. A half-dozen gray-habited men poured oil, swept, or stood in a line.
 
-“My Lords, you do us a great honor with your visit.”
+We landed, and the three by the altar approached and bowed. The one in green-and-blue stepped forward. “My Lords, you do us a great honor with your visit.”
 
-“It is too often we forget to pay our respects to you who guard the Portal,” Xander returned, then gestured to me. “My Maiden wishes to see the Portal in all its mythical glory.”
+“It is too often we forget to pay our respects to you who guard the Portal,” Xander replied, inclining his head.
 
-“As you wish it, My Lord,” the man said, “but I cannot perform the ritual on my own.”
+The man lowered his hood: a sturdy fifty, gray-streaked hair tied back, kindly creases at his eyes. “It is, and always will be, an honor to manage the Portal for you, My Lord. How may we serve you this night?”
 
-“One must admire your diligence to code, Apuleius,” Xander smiled, then to Cayden: “Cayden, does my priest have your permission to open the Portal?”
+“My Maiden wishes to see the Portal in all its mythical glory.”
 
-“I will allow my priest to help,” Cayden answered.
+“As you wish it, My Lord, but I cannot perform the ritual on my own.”
 
-The man in the golden cloak removed his hood. He was about seventy with more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie. “I will gladly do My Lord’s bidding but would also congratulate you on a beautiful Maiden. I have not seen the likes of her in many years.” Stephanie blushed and looked at the ground.
+“One must admire your diligence to code, Apuleius,” Xander said, amused, and turned to Cayden. “Cayden, does my priest have your permission to open the Portal?”
+
+“I will allow my priest to help,” Cayden said.
+
+The golden-cloaked elder removed his hood. He was about seventy with more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie. “I will gladly do My Lord’s bidding, but would also congratulate you on a beautiful Maiden. I have not seen the likes of her in many years.”
 
 Cayden bowed. “Thank you, Jethro. I, too, am most pleased with her.”
 
-“But to the reason for our visit,” Xander reminded them.
+“But to the reason for our visit,” Xander prompted.
 
-Apuleius nodded. “Yes, My Lord. Your will shall be done.”
+Apuleius and Jethro mounted the steps and stood ten feet from the arch. Each raised one arm—left and right—and closed his eyes. Their lips moved in inaudible phrases.
 
-Apuleius and Jethro mounted the steps and faced the hoop. They raised opposite arms and silently mouthed their words. The vines on the archway drew back to reveal six carved standing dragons, scales etched fine as life: two trios up each side, all gazing toward the top center, where a small drop of water lay. The drop glowed blue; the dragons burned with the colors of the five houses, with a red dragon at the top left and its green opposite. Their brilliance ran over the stone and into the void until a thin, rippling film skinned the opening.
+The vines cringed back from the hoop, baring six carved dragons, two sets of three facing the crown. The tiny scales were chiseled with frightening care. A small droplet nestled at the highest point. The drop glowed blue; the dragons lit with the lords’ house-colors, red and green among them. Light poured from carvings to arch, drew a thin, rippling film over the empty span, and spread it to the platform’s edge.
 
-Light burst from the center and spread to the arch, leaving a smooth, reflective surface that threw back my astonished face.
+An explosion of brilliance burst from the center to the stone rim. When it cleared, a smooth, reflective skin remained, and my stunned face stared back.
 
 Xander picked up a pebble and offered me his arm. “Shall we?”
 
-In my stupor I took it. Cayden and Stephanie followed, and we stopped before the water face.
+I took it. He led me up the steps, Cayden and Stephanie close behind. The priests stepped aside as we faced the water-glass.
 
-“Quite impressive, is it not?” Xander murmured. “It took a century of ancient magic from the ruling houses of the dragons to bring this to fruition. The stone figures were carved by the dragons themselves and infused with their life forces.”
+“Quite impressive, is it not?” he said. “It took a century of ancient magic from the ruling houses of the dragons to bring this to fruition. The stone figures were carved by the dragons themselves and infused with their life forces.”
 
 “Did it hurt them?” Stephanie asked.
 
@@ -980,63 +991,67 @@ In my stupor I took it. Cayden and Stephanie followed, and we stopped before the
 
 “Because they believed the reward was worth the price. The Maidens would offer a rejuvenation of their line, a new promise to their descendants.”
 
-A smear on the stone caught my eye—a bit of compressed clay from a tire. I held it up. “So how were those pig-men able to go through?”
+By my foot lay a smear of compressed clay, the kind tracked from a truck tire. I picked it up and held it for him to see. “So how were those pig-men able to go through?”
 
 “Their kind are the exception to the rule,” he said. “They are not of our world, nor yours, but between them as travelers.”
 
-I let the clod fall; it crumbled. Xander lifted a rock, strode up, and the cloaked men bowed aside. He tossed the stone underhand at the gray sheen. A flash bloomed; the rock burst into a thousand bright fragments of glass that tinkled to the platform.
+I let the little clod fall; it crumbled to dust. Xander stooped for a rock, stepped nearer, and cast it underhand into the gray. The surface flashed; the stone burst into a thousand bright, glassy splinters that clinked down on the platform.
 
-Xander half-turned and gestured to the glitter. “That is what happens to anything from our world, of which you are now a part.”
+“That is what happens to anything from our world,” he said, “of which you are now a part.”
 
-My last small hope collapsed. Stephanie’s hand squeezed my shoulder. “I’m sorry,” she whispered.
+My last wisp of hope shriveled. Stephanie squeezed my shoulder. “I’m sorry,” she whispered.
 
-“I was just—”
+I gave her a bitter smile and shrugged. “I was just-”
 
-“Dragons!” someone cried.
+“Dragons!” a gray-cloaked man cried.
 
-We looked up. Six vast shapes cleaved the sky: true dragons, fifty feet of scale and claw, wings like sails, muzzles full of teeth, forelegs armed with man-forged silver talons. One monk fell back, white-eyed. “The Bestia Draconis!”
+We looked up. Six shapes rode the sky: true dragons of legend, fifty feet from nose to lashing tail, leathered wings, steel-hard scales, knife-long teeth. Four legs tucked against their bellies ended in claws capped with silver talons. A monk staggered back, fell, and gaped. “The Bestia Draconis!”
 
-Xander stepped between me and the oncoming shadows, lips curled, eyes flashing. Cayden pulled Stephanie close.
+Xander stepped before me, green eyes flashing, lip lifted in a snarl. Cayden pulled Stephanie behind him.
 
-“How can they be this far from the coast without our knowing?” he asked.
+“How can they be this far from the coast without our knowing?” he called to Xander.
 
-“I cannot understand it,” Xander said, never taking his gaze off the sky, “but we shall make them regret this intrusion.”
+“I cannot understand it,” Xander growled, gaze never leaving the shadows above, “but we shall make them regret this intrusion.”
 
-His hands lengthened into claws. He drew us together, then gripped my shoulders and met my eyes. “Remain here.”
+His fingers lengthened into claws. He drew me and Stephanie shoulder to shoulder, then gripped my shoulders and met my eyes. “Remain here.”
 
 “But what are you going to do?”
 
-“I will fight them, but you can do nothing against these fiends. Promise me you will remain here.”
+“I will fight them, but you can do nothing against these fiends.” His voice softened. “Promise me you will remain here.”
 
 I pressed my lips together and nodded. He smiled. “Then wait for me. I will return.”
 
-He stepped back, spread his wings, and his skin thickened to scales. A tail unfurled, limbs twisted into four stout legs, his handsome face lengthening into a green dragon’s fierce muzzle. He roared at the red forms and leapt skyward. Cayden, with a last look at Stephanie, took his place and shifted—smaller, golden—and followed.
+He stepped backward from the platform’s edge and spread his arms. His skin roughened and green scales raced across it; a tail unfurled; limbs thickened and twisted; wings unfurled wider than the platform. In a breath, the handsome face was gone, replaced by the brutal, beautiful head of a huge green dragon. He roared at the crimson shapes above and leapt skyward. Cayden tore himself from Stephanie’s grasp and, shrinking from man to gold-scaled beast, followed.
 
-Four of the invaders broke off to meet them. Claws and teeth clashed; Cayden dodged a double rake and wheeled behind to strike. Xander simply rammed, tearing at wings and bodies. One enemy screeched and crashed near the platform; as we watched, the broken dragon shrank into the naked body of a man, blood pooling to match his wounds.
+Four Bestia broke away to meet them. Cayden dodged a double swipe, wheeled, and struck from behind. Xander barreled through, rending wings and snapping jaws. One foe shrieked and tumbled; the ground thudded as it struck and shrank into the bloodied body of a naked man.
 
-The other two swung past the melee and dove for us. The five priests threw up their hands and sent light arcing skyward, but one dragon barrel-rolled clear. It swooped, seized a gray-cloaked monk, and flung him into the Portal. We ducked. The man struck the surface, screamed, and disintegrated into dust. The injured dragon landed hard and whipped its tail, knocking every robed figure sprawling.
+Two others arrowed past the melee toward the platform. The five priests raised their hands, chanting words that vanished beneath the dragons’ screams. Light—gold, green, blue, white—blazed from their palms. One dragon caught a bolt and faltered; the other rolled and tore through, swooped low, and snatched a gray monk. He flailed as the beast flung him at the Portal. He struck, screamed—and burst into dust.
 
-Its red eyes fixed on us. Silver talons clicked up the stone.
+The injured dragon dropped to the ground, landed four-square, and swept its tail in a deadly circle. Priests and monks scattered like ninepins. Its red eyes fixed on us. Silver talons clinked on the steps as it mounted the platform.
 
-“Run!” I shoved Stephanie to the right. She tumbled from the platform. The dragon cut me off with its long neck and hissed.
+“Run!” I shoved Stephanie hard to the right.
 
-I put up my hands, backing toward the Portal. “Can’t we talk about this?”
+She tumbled off the platform as the dragon hurled itself at us. Its wing cut her path; its neck and body slid between me and escape. It lowered its head, hissing.
 
-It lunged—and a dark mass fell from above. My dragon slammed onto its back, jaws clamping the red neck. They thrashed, wings and tail battering the stones.
+“Can’t we talk about this?” I asked, backing toward the water-glass with my hands up.
 
-I stumbled, tripped on a block, and pitched backward. Xander saw, wrenched free, and dove. I flung out my hand; his stretched toward mine. Our fingers grazed—and slipped. The last I saw was the red dragon beneath him lifting a silver-taloned foot to strike.
+It roared and lunged—and a dark shadow fell, slamming onto its back. Green on red. Xander’s jaws clamped down on the creature’s neck. The enemy thrashed and screamed, tail and wings beating.
 
-Warm, yielding pressure swallowed me, a spongy gray world pressing from every side. I couldn’t breathe. My vision blurred.
+I jerked backward; my heel caught a stone. Arms flailed for balance; gravity took me. Xander tore free and hurled himself toward me, neck outstretched. I reached. Our skin grazed—and then we fell apart. I saw the red dragon below wrench up a taloned foot to strike him.
 
-Just as I would have blacked out, the suffocating skin opened. I dropped back-first onto hard ground, my breath knocked out with a wheeze. The shining oval shrank to nothing.
+The Portal took me.
 
-Above me, a black sky glittered, wires cutting it into squares; distant traffic hummed. I pushed up, wide-eyed.
+Warm, viscous pressure closed over me like a spongy blanket. The world smeared gray and squeezed tight. I couldn’t breathe. Sight dimmed.
+
+Just as blackness crowded in, the suffocating pressure split. I fell backward out of a shrinking oval and slammed into hard ground. The last of my air fled in a wheeze. The Portal puckered to a point and vanished.
+
+I lay and stared upward at a black sea pricked with stars. Power lines and poles cut the sky to squares. Far-off traffic murmured. I pushed up on shaky arms, turned, and my eyes widened.
 
 I was home.
 
 The dump spat me back into the human world. Rusted hulks and trash-heaps loomed like dead beasts, and I’d had enough beasts for a lifetime. I ran until the hard-packed dirt gave way to cracked sidewalks and the murals and scraggly trees of the artsy district. I couldn’t go home—pig-men knew my address, and Blake knew my work. That left one place, if he hadn’t found it, too.
 
-Heather’s building was a four-story relic with mismatched furniture and lava lamps inside. A single light glowed on the third floor. I buzzed. “Heth! You gotta let me in!”
+Heather’s building was a four-story relic. A single light glowed on the third floor. I buzzed. “Heth! You gotta let me in!”
 
 “Miriam! Is that really you?”
 
@@ -1044,13 +1059,17 @@ Heather’s building was a four-story relic with mismatched furniture and lava l
 
 The lock buzzed. The door clicked. Footsteps pounded the stairs, and then Heather tackled me into the entryway wall, sobbing, “You’re safe!”
 
-“Remind me never to look for a man again,” I managed, peeling her off.
+I pried her off me and smiled into her tear-soaked face. “Yeah, but remind me never to look for a man again.”
 
-“It’s because of me, isn’t it? I said get a guy and—”
+She sniffled. Her lower lip quivered. “It’s because of me, isn’t it? I told you to get a guy and when you tried on your own a guy got you, didn’t he?”
 
 “Let’s debrief upstairs,” I said.
 
-She hauled me up and planted me at her dining table amid a constellation of lava lamps. The antique chairs creaked; the room smelled gloriously of dust and old coffee. She eyed my clean but rumpled clothes. “You don’t look like you’ve been kidnapped.”
+She tugged me upstairs. “We’ll make it a girl’s night out.”
+
+She plopped me in a chair at her dining table. The floor apartments were fully furnished with antique furniture and my friend’s own strange taste for lava lamps. The place was alive with the floating blobs of colorful goop.
+
+She eyed my clean but rumpled clothes. “You don’t look like you’ve been kidnapped.”
 
 “Try me.”
 
@@ -1090,23 +1109,25 @@ She rubbed her chin. “Maybe it has to do with your dragon husband.”
 
 “Got any wipe-the-hard-drive-clean?”
 
-“It tastes like socks and cough syrup,” she warned, fishing a tar-colored bottle from a cupboard.
+“It tastes like socks and cough syrup,” she warned.
 
 “I’ll take it.”
+
+She moved about the kitchen for glasses and a tar-colored bottle. “He’s probably got great teeth,” she pointed out.
+
+I snorted. “Yeah, he flosses the whole lamb out of them every day.”
+
+She whipped her head over her shoulder to look at me. “Really?”
+
+“I was joking.”
 
 As she poured, my shoulder twinged again—sharper, but distant, like a frayed connection. The last image of the red dragon’s silver talons over Xander rose up. “Do you know if silver hurts dragons?” I asked.
 
 Heather blinked. “Never heard that. Never heard of dragons turning into cute guys, either. Why?”
 
-“It’s nothing.” I stared at the floor.
+“It’s nothing.”
 
-She leaned on the kitchen column, arms crossed. “What is it?”
-
-“I said it was nothing.”
-
-She retreated, palms up. “All right, all right.”
-
-The knot in my stomach pulled tight. “What the hell happened?” I whispered to myself.
+She paused, then backed off. “All right, all right.”
 
 “Why should you care?” she called, then brought the glasses. “It’s not like you love the guy, right?”
 
@@ -1138,165 +1159,191 @@ Heather’s voice slid softer. “Well?”
 
 “Are you going back, or do I have to carry you?”
 
-I reeled. “Are you nuts? I’m not going back there!”
+“Are you nuts? I’m not going back there!”
 
 She stood, seized my hand. “Come on. Let’s get you to your scaly soul-mate before he dies or eats someone.”
 
 I jerked free and backed to the table. “Are you trying to get me killed? That red dragon wasn’t hugging me before I fell through a portal that also tried to kill me!”
 
-Hands on hips, foot tapping, she said, “Miriam, you have a chance to save a strong, handsome man who loves you, and you’re standing here like you don’t love him back.”
+“Miriam, you have a chance to save a strong, handsome man who loves you, and you’re standing here like you don’t love him back.”
 
 “How can I?”
 
-She set a warm palm on my shoulder, met my eyes. “Stockholm Syndrome.” My face fell. She laughed and patted me. “Or because sometimes love starts weird. Besides, could you live with yourself if he died?”
+She set a warm palm on my shoulder, met my eyes. “Stockholm Syndrome.” She grinned. “Or because sometimes love starts weird. Besides, could you live with yourself if he died?”
 
-I pursed my lips. No, I couldn’t. She slipped behind me, pressing her hands against my back, steering me toward the door. “Come on,” she said, grinning. “Let’s go save your scaly boyfriend.”
+I pursed my lips. No, I couldn’t. She slipped behind me, pressing her hands against my back, steering me toward the door. “Come on,” she said. “Let’s go save your scaly boyfriend.”
 
-CHAPTER 13
+We drove back to the junkyard. I led her to the patch of dirt where the portal had spat me out and folded my arms. “It’s supposed to be here, but I don’t know if love is going to get that thing to open.”
 
-Heather drove me back to the junk yard, and I led her to the spot where the portal had vanished. We stopped by a trash pile. “It’s supposed to be here,” I told her, folding my arms, “but I don’t know if love is going to get that thing to open.”
-
-“Do you remember how you got in the first time?” she asked, pacing.
+“Do you remember how you got in the first time?” Heather asked.
 
 “No. I forgot to click on my internal video recorder before they knocked me out.”
 
-“Maybe there’s a button or something.”
+She paced, scanning the ground. “Maybe there’s a button or something.”
 
-“Or maybe we’re not going to get this thing open, and we should just go home.”
+“Or maybe we’re not going to get this thing open, and we should go home.”
 
-She seized my hands and glared. “Don’t you dare give up on me and your heart. We’re counting on you.”
+Heather stomped up and grabbed my hands, eyes fierce. “Don’t you dare give up on me and your heart. We’re counting on you.”
 
-“When did my heart get a vote?”
+“When did my heart get a vote on this?”
 
-“When I said it had one.” Then her eyes lit. She dragged me to my butt-mark in the dirt and arranged us so we faced each other. “Maybe with your love and your mark thingy you can open the portal. They’re both from the other world, right?”
+“When I said it had one.”
 
-“I have no idea how that would work.”
+“And does my heart have any ideas?”
 
-“Slap your mark or kiss it or do something.”
+Her eyes widened. “Maybe that’s it!”
 
-I sighed, pushed up my sleeve, and cupped the ache on my shoulder. Heat rose under my palm. I thought of his warmth, the way he’d looked back, my last memory of him. I closed my eyes and whispered into the quiet air, “Damn it. . .why’d you have to go and be a hero?”
+“Maybe what’s it?”
 
-Pain ripped through my shoulder. Lines in the mark flared green; my hand glowed blue. The colors twined like silk bands, rose, and swept before me, drawing two halves of a circle. With a bang, the darkness filled in. The Portal stood complete.
+She dragged me to my butt-mark in the dirt and arranged us so we faced each other. “Your love and your mark are both from the other world, right? Use them.”
 
-Heather steadied me. “Wow. How’d you do that?”
+“I have no idea how.”
+
+“Slap it. Kiss it. Do something.”
+
+I sighed and glanced at my shoulder. A dull ache throbbed down my arm. I rolled up my sleeve and pressed my palm over the emblem. The skin was warm. It reminded me of his body against mine, and the warmth in his eyes. I thought of my vision, and the last memory I had of him.
+
+I closed my eyes and whispered, “Damn it…why’d you have to go and be a hero?”
+
+Pain flared. The lines of the mark blazed green; my hand kindled blue. The colors twined like silk bands and drew a circle in the air. With a bang the center blew black. The Portal hung there.
+
+Heather steadied me as I wobbled. “Wow,” she breathed. “How’d you do that?”
 
 “I don’t know.”
 
-“Well? What are you waiting for?” She hugged me tight. “Go on. You shouldn’t keep a dragon waiting. He might eat you.”
+She stepped forward and looked at me before she jerked her head toward the portal. “Well? What are you waiting for?” I smiled and gave her a tight hug. We parted and I could see a few tears in her eyes.
+
+“Go on,” she said. “You shouldn’t keep a dragon waiting. He might eat you.”
 
 “Thanks. That really helps.”
 
-I took a breath and leapt. The fall was the same; I tumbled onto stone at the sages’ feet. A red stain darkened the platform. “Where’s Xander?”
+“I’ll always be there to give you the good news. Now get going.”
 
-Apuleius offered his hand. “We must get you to him immediately.” Slits in his cloak parted and large green dragon wings unfurled. “If you will pardon my forwardness, My Lady.” He swept me up. I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle. The long fifteen miles had been covered in a little under fifteen minutes—an eternity for my heart, and I hoped I wouldn’t expect to find Xander in an eternity of sleep.
+I leapt.
 
-Spears met us in the courtyard, then lowered as Apuleius’s wings folded and his frame settled into priest again. “Does Our Lord still live?” he asked.
+I stumbled out onto stone, tripped, and hit hands and knees. Green cloaks filled my view. I looked up into Apuleius’s shocked face—his peers behind him wore the same expression. A red stain darkened the platform. My stomach dropped. “Where’s Xander?”
 
-“Yes, Priest Apuleius,” a guard said, “but only just barely.”
+Apuleius offered his hand. “We must get you to him immediately.”
 
-Apuleius led me through corridors to Xander’s chamber, where two guards bowed and opened the door; I wondered how many doors were shut to this priestly fellow. I stopped dead. Under blankets, he lay ashen and sweating, bandages crisscrossing his chest, breath a rapid struggle. Cayden and Darda stood by. A gray-bearded doctor shook his head. “There is nothing more my skills can do.”
+He turned to a gold-cloaked elder, who lifted his hand and grinned. “To the skies, before I throw you myself.”
 
-“What’s wrong with him?” I asked.
+“Thank you, old friend,” Apuleius said. He turned to me. “If you would climb on my back, My Lady.” The slits in his cloak parted. Great green wings unfurled. “If you will pardon my forwardness,” he said—and swept me up.
 
-“The Bestia Draconis wore poison-tipped silver talons,” Cayden said. “One of them cut Xander very deeply.”
+We surged skyward. I clung to his neck and prayed. The long fifteen miles fell in under fifteen minutes—an eternity for my heart; I prayed Xander wasn’t in an eternity of sleep.
 
-“Isn’t there an antidote?”
+Guards leveled spears as we landed. I slid down, stumbled, and his wings folded until his old frame was human again. The spears lowered.
+
+“Does Our Lord still live?” Apuleius asked.
+
+“Yes, Priest Apuleius,” a guard answered, “but only just.”
+
+“Follow me, My Lady,” Apuleius said, guiding me through corridors to Xander’s chamber. Two guards stood at the door. I wondered how many doors were shut to this priestly fellow.
+
+Inside: blankets, bandages, sweat. Xander lay gray-faced and shivering, breath quick and ragged. Cayden stood at the foot of the bed, Stephanie beside him; Darda and her husband at the back. A white-haired doctor with silk-stained gloves stood opposite, face grave.
+
+“How is his health?” Apuleius asked.
+
+“There is nothing more my skills can do,” the doctor said quietly.
+
+“What’s wrong with him?” I blurted.
+
+“The Bestia Draconis wore poison-tipped silver talons,” Cayden said. “One cut Xander very deeply.”
+
+The ache in my shoulder sharpened. “Isn’t there an antidote?”
 
 “Only the tears given by the Lady of the Pond can heal such a poison,” the doctor said.
 
-“The woman in the pond near the castle? What’s so hard about that?”
+“The woman in the pond by the castle? Then what’s the hold-up?”
 
-“The Lady only appears to those she deems worthy,” Cayden sighed. “She would not heed our calls.”
+“The Lady appears only to those she deems worthy,” Cayden said. “She would not heed our calls.”
 
-“Then I’ll go,” I said, heading for the door. The guards barred me.
+“Then I’ll go,” I said, striding to the door.
 
-“If you want that dragon lord to make it then let me go,” I snapped.
+The guards crossed halberds. I looked back at Cayden. “If you want him to live, let me through.”
 
-“We cannot allow you to escape again,” Cayden told me.
+“We cannot allow you to escape again,” he said through his teeth.
 
-“Do you want him to die?”
+“Do you want him to die?” I shot back, jerking a thumb at the bed.
 
-“Let her go,” Darda said, meeting Cayden’s gaze. “My Lord would wish it so.”
+“If you were to—”
 
-He nodded and signaled the soldiers aside. “I will go with you.”
+“Let her go,” Darda said, steady on Cayden. “My Lord would wish it so.”
 
-I grabbed the knob, looked back, and forced a smile. “I’ll be right back.”
+Cayden exhaled, then nodded to the guards. “Step aside. I will go with you.”
 
-CHAPTER 14
+The way cleared. I gripped the knob, glanced back, and forced a smile with a thumbs-up. “I’ll be right back.”
 
-I had no plan, though at that point what I really wanted was a machete and a flashlight. The world of dragons was very dark. The only light I had was the moon in the sky. I fumbled through the woods with Cayden as my guide. Every rock and tree branch tried to murder me, but the sound of the waterfall kept hope alive within me.
+I had no plan, though at that point what I really wanted was a machete and a flashlight. Every rock and tree branch tried to murder me, but the sound of the waterfall kept hope alive within me. Cayden held open the last homicidal branch as I stumbled into the clearing. The gurgling brook greeted us with its soft sounds, and the falling water glistened in the moonlight as its sparkling droplets splashed over the rocks.
 
-He held aside the last homicidal branch and I stumbled into the clearing. The brook gurgled softly; the falling water glistened in the moonlight, its droplets sparkling over the rocks.
+Cayden moved to step forward, but I caught his arm. “Let me handle this.”
 
-Cayden stepped forward, but I caught his arm. “Let me handle this.”
+He nodded and fell back. I went to the water’s edge and cupped my hands. “Hello!”
 
-He pursed his lips, nodded, and stepped back. I went to the water’s edge, leaned over, and cupped my hands. “Hello!”
+Only my echo answered. She wanted hard mode, then.
 
-My voice echoed. The water only gurgled back. I straightened and frowned. She wanted to do it the hard way. I palmed a stone. “Here goes nothing. . .” I tossed it. The ker-plop landed in the pond’s middle—and the familiar column of water burst upward, exploded outward, and left the beautiful woman standing there. Her brilliant blue eyes flicked from me to Cayden. The dragon lord knelt and bowed his head.
+I picked up a stone and tossed it in the air to catch it in my palm. “Here goes nothing. . .” I threw the stone. It landed with a hard ker-plop in the middle of the pond. A grin slid onto my face as the water gurgled. A column of water rose and burst outward. The Lady stepped through, her brilliant blue eyes sliding from me to Cayden. He dropped to one knee, head bowed.
 
-“Dragon of the Golden Fields. It is a pleasure to meet you,” she greeted him.
+“Dragon of the Golden Fields. It is a pleasure to meet you,” she said.
 
-“The pleasure is all mine, My Lady,” he replied without lifting his head.
+“The pleasure is all mine, My Lady,” he answered without lifting his head.
 
 Her gaze returned to me. “Why have you come without your lord?”
 
-I stepped to the rim. “Some red dragons attacked us at the Portal, and he got nicked by some poison on their claws. We need your water so we can heal him.”
+“Red dragons attacked us at the Portal,” I said, stepping to the rim. “He got nicked by poison on their claws. We need your water to heal him.”
 
-She tilted her head. “Why do you seek the water?”
+She tilted her head, studying me. “Why do you seek the water?”
 
-“I already told you, it’s because Xander’s hurt. He’s dying of poison right now, but the doc said you could cure him.”
+“I just told you. Xander’s hurt. He’s dying. The doctor said you could cure him.”
 
-She walked the surface toward me, each footstep leaving a small ripple, and stopped within a foot of me. Her eyes caught mine and held me fast. “Why do you seek to save him?”
+She walked across the surface toward me, each step sending out a ripple. She stopped a foot away, her eyes holding mine so tight I couldn’t move.
 
-I swallowed. “Because he was hurt trying to protect me. I owe him one.”
+“Why do you seek to save him?” she asked.
 
-She cupped my cheek, her skin cold as the creek. “Is that all?”
+I swallowed the lump in my throat. It wasn't easy being this close to such an ethereal being. “Because he was hurt trying to protect me,” I said, swallowing the lump in my throat. “I owe him.”
 
-“It isn’t that enough?”
+She cupped my cheek in one of her palms. Her skin was cold and brushed against mine like the flow of the gentle creek. “Is that all?”
 
-She shook her head. “The power of my tears rests on the love of the one who seeks it. Without love there can be no cure.” A sly smile touched her lips. “Do you not love him?”
+It was hard to breathe so close to her overpowering aura. “Isn’t that enough?”
 
-“I don’t know.”
+She shook her head. “The power of my tears rests on the love of the one who seeks it. Without love there can be no cure.” A small, knowing smile curved her lips. “Do you not love him?”
 
-Her smile widened. She brought my hands together in hers. Blue light pulsed from her palms; warmth and weight settled into mine. She stepped back onto the rocks. I opened my cupped hands to a small vial of crystal-clear water.
+“I don’t know,” I said, truth stinging.
 
-“I don’t understand. Why?”
+Her smile widened. She drew my hands together in hers. Blue light pulsed from her skin. Warmth and weight settled into my cupped palms. She stepped back onto the stones. I opened my hands. A small vial of crystal-clear water lay there, glittering.
 
-She eased backward into the pool; water bubbled up around her, yet her words were clear. “Where there is doubt, there is still hope. Heal him and you will find the peace you seek.”
+“I don’t understand. Why?” I asked.
 
-The water twisted up and enveloped her. “Wait!” I cried, but it swallowed her and sank. She was gone. The vial in my palm sparkled in the dim light of early morning. I clenched it, turned to Cayden. He rose, glanced from me to the vial. I breathed deep and pocketed it. “Let’s go.”
+She retreated into the pool. Water rose about her ankles, her waist, her shoulders, but her voice reached me clear as the vial. “Where there is doubt, there is still hope. Heal him and you will find the peace you seek.”
 
-We hurried back to the castle. Faces were grave, Xander paler still. I drew out the vial; the crowd parted. His breaths were quick and shallow, his hands white on the sheets.
+“Wait!” I cried, reaching—then she was gone, the pond smooth again.
 
-I popped the cork and looked to Cayden and the doctor. “Could you hold him still and get his mouth open for me?”
+I clenched the vial and turned to Cayden. He rose, eyes flicking to the water in my hand. I pocketed it. “Let’s go.”
 
-Cayden took his arms, Apuleius his legs, and the doctor pried apart his clenched teeth. I rammed the vial’s mouth between his lips. The cool liquid slid in. He arched, body tensing; I threw myself across his chest as he shook and thrashed.
+We ran the path back. In the chamber, faces had paled further; Xander’s breath snagged in shallow catches, his fingers bone-white on the sheets. I popped the cork. “Hold him,” I told Cayden and the doctor. Cayden pinned his arms; Apuleius took his legs; the doctor pried his jaw.
 
-After long seconds a soft blue glow spread from his chest, passing under us with a soothing coolness that eased my fear. His body relaxed; we stepped back as the light enveloped him, pulsing cold until it sank into him and vanished. We waited, breath held.
+I slid the vial’s mouth past his lips and poured. His body arched, muscles seizing. I threw myself across his chest as he thrashed. Then a soft blue glow pulsed from his wounds, spreading, coolness seeping into us. The light sank deeper with each pulse and faded.
 
-Xander’s eyes fluttered open. He blinked at our tense faces, found me, and his eyes widened. “Miriam—” He tried to rise, winced.
+Xander’s eyes fluttered open. His gaze fixed on me. “Miriam—” He tried to sit, winced. I pressed him back.
 
-I held his shoulders. “Easy there. I bet even dragons need to rest a bit after being almost-fatally poisoned.”
+“Easy. Even dragons need a minute after almost being fatally poisoned.”
 
-He grasped my arm, searching my face. “Is it you or some apparition come to take me to the skies?”
+His hand closed on my arm, searching my face. “Is it you, or some apparition come to take me to the skies?”
 
-“I’d have to go with the first option.”
+“I’ll go with the first option,” I said, smiling despite the blush I felt rising.
 
-He pulled me down and pressed our lips together. We parted so I could breathe and wipe the blush from my cheeks.
+He pulled me down and kissed me. I pulled back for air. “You could’ve just said ‘thank you.’”
 
-“You could have just said ‘thank you,’” I teased.
+“Words would be too weak,” he murmured.
 
-He smiled. “I thought words would be too weak.”
+“Not as weak as you, My Lord,” the doctor cut in, tugging sheets up to Xander’s chin. “The poison is vanquished, but the wounds remain.”
 
-“Not as weak as you, My Lord,” the doctor cut in, pulling the sheets up to Xander’s chin. “The poison may be vanquished, but your wounds from its talons are not yet healed.”
+Xander eased back against his pillows. “You needn’t worry too much, Galen. I hardly feel any weakness.”
 
-Xander sank back and shook his head. “You needn’t worry too much for me, Galen. I hardly feel any weakness.”
+“But it is a weakness nonetheless,” Galen said firmly. “You will rest. All of you, out.”
 
-“But it is still a weakness, nonetheless, and I demand you get some rest,” the doctor insisted. He swept the room. “If you would all leave Our Lord may find some.”
+Xander’s gaze found me again. “Let her stay,” he said. “I must speak with her.”
 
-Xander nodded toward me. “Let her stay. I must speak with her.”
-
-Galen bowed his head. “If you wish, My Lord.”
+Galen inclined his head. “As you wish, My Lord.”
 
 The room emptied. Stephanie shot me a grin before the door closed and we were alone.
 
@@ -1304,7 +1351,7 @@ Xander studied me as though I might vanish. “Did I imagine your falling into t
 
 “Nope. I went back to my own world, but this—” I tapped my shoulder where my shirt hid the Mark “—told me something was wrong, so I came back.”
 
-He took my hand, lips pressed in thought. “Then it appears you have somehow overcome a Maiden’s greatest enticement to remain with her dragon lord. You have managed to survive the Portal after the Marking.” He let my hand go and turned his head. “Under the circumstances, I cannot in good faith keep you with me. You may return to your home.”
+He clasped one of my hands, lips pressed in thought. “Then it appears you have somehow overcome a Maiden’s greatest enticement to remain with her dragon lord. You have managed to survive the Portal after the Marking.” He let my hand go and turned his head. “Under the circumstances, I cannot in good faith keep you with me. You may return to your home.”
 
 “Why would I want to do that? I am home.”
 
@@ -1312,13 +1359,13 @@ His head snapped up, eyes searching my face. “Do you speak in earnest, or do y
 
 “You think I’d lie to you after I just saved your scaly skin?”
 
-His grin flared, and he leaned in to kiss me, hot and grateful. When I finally pulled back for air, he still looked a little breathless, smiling like a tease.
+A grin brightened his face. He leaned forward and captured my lips in a searing kiss that spoke his happiness louder than any words. We broke apart so I could get some air. At this rate he was going to suffocate me. Even he was a little short as he studied me with his teasing smile.
 
 I glanced around the stark room. “I mean, this isn’t exactly a nice apartment, but it’ll work.”
 
 He chuckled. “If I might tell the truth, the High Castle is not my home.”
 
-“This isn’t your place?”
+I stopped my perusing and curtain measurements to frown at him. “This isn’t your place?”
 
 “No. It is only a gathering place for we dragon lords, a place of compromise that sits at the point where our five kingdoms come together.”
 
@@ -1340,7 +1387,7 @@ He caught my arm. “Stay with me. I fear your return is but a dream, and I woul
 
 He laughed softly. “As you wish, My Maiden.”
 
-We slept. Morning’s brightness stabbed my eyes. I reached for him and found only cold sheets. Panic spiked—then I spotted him at the dresser, half dressed, bandage pinking with new blood beneath healthier skin. He drew on a shirt and turned with that insufferable smile.
+We slept. Morning’s brightness stabbed my eyes. I reached for him and found only cold sheets. Panic spiked—then I spotted him at the dresser, half dressed, bandage tinged pink beneath healthier skin. He drew on a shirt and turned with that insufferable smile.
 
 “Are you prepared for the journey?”
 
@@ -1364,13 +1411,13 @@ A knock. “Enter,” he called.
 
 Darda bowed in the doorway. “My Lord, the horses are ready, and Lord Cayden awaits you.”
 
-“That is our cue to leave,” Xander said. He glanced at me. “I hope you won’t be displeased with their following us. Cayden’s kingdom abuts my own.”
+“That is our cue to leave,” Xander said. He glanced at me. “I hope you won’t be displeased they follow. Cayden’s kingdom abuts mine.”
 
 “Nope.”
 
 He took my hand. “Then let us be off.”
 
-The High Castle’s halls teemed with servants, arms full of luggage, eyes full of curiosity—and not all of it friendly. I stayed close to him through the bustle down into the courtyard, where horses, grooms, and an impossible number of wagons choked the space. Shouts, clatter, and the smell of wet leather filled the air.
+The High Castle’s halls teemed with servants, arms full of luggage, eyes full of curiosity—and not all of it friendly. I stayed close to him through the bustle down into the courtyard, where horses and grooms crowded the space.
 
 I spotted the three other Maidens. Alex sat a horse beside her brown-bearded lord. Olivia rode near the dark-haired one, scowling as usual, and Cindy by the white-haired lord. Alex waved.
 
@@ -1410,7 +1457,7 @@ The life of a Maiden to a dragon didn’t seem so glamorous. At the moment it wa
 
 “A warm fire. An electric blanket. A roof over my head.”
 
-I chanted my dream as two dozen of us splashed through a torrential rain, three days out from the High Castle with four to go. The dirt road was a hog’s wallow; my cloak clung, and each boot sloshed with its own private lake. Forest pressed close, trunks black with wet. I could barely see ten feet past my horse’s nose. Beyond that: more rain.
+I chanted my dream as two dozen of us splashed through a torrential rain, three days out from the High Castle with four to go. The dirt road we traveled on was now a mud pit fit for any hog. My cloak was soaked through and there were two puddles always with me, one in each of my riding boots. I could barely see ten feet past my horse’s nose. More rain.
 
 “A warm fire. An electric—”
 
@@ -1430,13 +1477,13 @@ I glanced back at Darda, small in her rough clothes, posture bowed by habit. It 
 
 I winced. Six decades without light switches.
 
-He watched the rain-washed road, face intent. “I have long wished to see this magic of your world, and that is why I asked if you have knowledge enough to create this electricity.”
+“I have long wished to see this magic of your world,” he went on, “and that is why I asked if you have knowledge enough to create this electricity.”
 
 “Nope. I doubt I could make a spark by dragging my feet, let alone power a light bulb.”
 
 A small smile tugged at his mouth. “Then I still must continue my dream.”
 
-Guilt pricked me for squashing it. “Maybe you can go there some day.”
+I felt a little guilty at having dashed his hopes. “Maybe you can go there some day.”
 
 He shook his head. “That is not possible. You yourself witnessed what would happen were I to even touch the Portal’s surface.”
 
@@ -1448,11 +1495,11 @@ He shook his head. “That is not possible. You yourself witnessed what would ha
 
 “That is a mystery the priests could not solve, and our books could not answer for us. However—” his smile took on mischief “—I would not have you make the attempt again.”
 
-I saluted, nearly drowning in raindrops. “I promise I’ll be a good little Maiden.”
+I raised my head and saluted him. The raindrops nearly drowned me. “I promise I’ll be a good little Maiden.”
 
 “I expect you to be something other than that,” he murmured, amused. “But I would ask nothing else of you.”
 
-The joke warmed me—then the cold reminded me who was winning. I hunched in my wet cloak, a tiny, shaking speck under the vast, dripping canopy.
+The joke warmed me; the cold won. I hunched in my wet cloak, a tiny speck under the dripping canopy.
 
 Xander edged closer, tugged a thick travel blanket free, and draped it over my shoulders. Heat pooled under the weight.
 
@@ -1470,7 +1517,7 @@ I eyed the guards ahead: round steel helmets, thick leather gloves, silvered arm
 
 “I am afraid that is very close to the truth.” He straightened and called, “Spiros!”
 
-A guard with a crested helm—like a dragon’s tail spine—reined back. He was about thirty, a scar across his left cheek, care etched in his face and humor tugging at his mouth. A glint in his eye reminded me of Xander.
+A guard with a crested helm—like a dragon’s tail spine—reined back. He was about thirty, a scar across his left cheek, care etched in his face and humor tugging at his mouth.
 
 “You called, My Lord?” he shouted.
 
@@ -1516,7 +1563,7 @@ Xander winced and rubbed his arm. “I am ashamed to say I deserved as much. I h
 
 “You guys ditched the guards?” I grinned.
 
-“ My Lord was very adept at eluding his keepers,” Spiros said, eyes dancing.
+“My Lord was very adept at eluding his keepers,” Spiros said, eyes dancing.
 
 Any reply drowned in the weather’s fresh fury. The downpour doubled, a drumbeat so loud it swallowed thought. Xander and Spiros exchanged tight looks. Spiros bowed and cantered to the front again.
 

@@ -1,0 +1,53 @@
+{
+  "segment_id": "019",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "Lay, indeed, thought I, and such a lay! the seven hundred and seventy-seventh!... the seven hundred and seventy-seventh part of a farthing is a good deal less than seven hundred and seventy-seven gold doubloons",
+      "source_locator": "paragraph beginning 'Lay, indeed, thought I'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ishmael's extended comic wordplay on 'lay' is a set-piece of voice-driven irony — the pun operating simultaneously on nautical, financial, and biblical registers. Its complete absence erases a defining passage of Ishmael's narrative consciousness.",
+      "suggested_fix": "Restore the internal monologue punning on 'lay': 'Lay, indeed, thought I... the seven hundred and seventy-seventh part of a farthing is a good deal less than seven hundred and seventy-seven gold doubloons; and so I thought at the time.' Even compressed, the wordplay chain must survive."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "thy conscience may be drawing ten inches of water, or ten fathoms, I can't tell; but... thy conscience be but a leaky one; and will in the end sink thee foundering down to the fiery pit, Captain Peleg",
+      "source_locator": "paragraph beginning 'Captain Peleg,' said Bildad steadily",
+      "draft_treatment": "absent",
+      "why_it_matters": "Bildad's nautical-conscience metaphor is a signature piece of Melville's ironic characterization — the pious Quaker whaleman rendering moral judgment in seamanship terms. The draft leaps to Peleg's explosion without this setup, losing the comedy of Bildad's unflappable retort.",
+      "suggested_fix": "Restore at minimum: 'thy conscience be but a leaky one; and will in the end sink thee foundering down to the fiery pit' before Peleg's outburst."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Pequod, you will no doubt remember, was the name of a celebrated tribe of Massachusetts Indians; now extinct as the ancient Medes",
+      "source_locator": "paragraph beginning 'After much prolonged sauntering'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'now extinct as the ancient Medes' carries heavy interpretive freight — the ominous naming of the ship after an exterminated people, underscored by the classical parallel, is a motif the critical tradition repeatedly engages. The draft reduces it to 'named after the extinct tribe.'",
+      "suggested_fix": "Restore: 'Pequod, you will no doubt remember, was the name of a celebrated tribe of Massachusetts Indians; now extinct as the ancient Medes.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Indolence and idleness perished before him. His own person was the exact embodiment of his utilitarian character... a soft, economical nap to it, like the worn nap of his broad-brimmed hat",
+      "source_locator": "paragraph beginning 'He never used to swear, though'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'economical nap' sentence is one of Melville's finest comic character-sketches — the body mirroring the soul in precise utilitarian detail. The draft replaces the full Bildad portrait with 'tall, gaunt, drab to the chin,' losing the satirical specificity entirely.",
+      "suggested_fix": "Add: 'His own person was the exact embodiment of his utilitarian character. On his long, gaunt body, he carried no spare flesh, no superfluous beard, his chin having a soft, economical nap to it, like the worn nap of his broad-brimmed hat.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "cherished Yojo with considerable esteem, as a rather good sort of god, who perhaps meant well enough upon the whole, but in all cases did not succeed in his benevolent designs",
+      "source_locator": "paragraph beginning 'I have forgotten to mention'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic aside on Yojo's theological standing establishes Ishmael's deadpan comedic voice early in the chapter and characterizes the Queequeg/Yojo relationship with gentle satire.",
+      "suggested_fix": "Restore the aside: 'a rather good sort of god, who perhaps meant well enough upon the whole, but in all cases did not succeed in his benevolent designs.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses one high-severity signature (the 'lay' wordplay set-piece, Ishmael's most sustained comic voice passage in this chapter) and three medium-severity failures (Bildad's leaky-conscience retort, the 'now extinct as the ancient Medes' ominous naming, and the utilitarian Bildad portrait with 'economical nap'), triggering regeneration."
+}

@@ -5,58 +5,76 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
+      "source_passage": "and especially by throwing open the little window towards the back of the entry, you at last come to the conclusion",
+      "source_locator": "paragraph 1, description of the painting",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic detail of throwing open the window to see the painting is a small but characteristic Ishmael gesture — absurdist problem-solving that establishes the narrator's voice; its omission flattens the paragraph's comic texture.",
+      "suggested_fix": "Restore 'and especially by throwing open the little window towards the back of the entry' before 'you at last come to the conclusion.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "_That_ once found out, and all the rest were plain",
+      "source_locator": "paragraph 2, painting description, after the list of guesses",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The italicized 'That' is a typographically and rhetorically distinctive moment — the italic emphasis is part of the sentence's signature rhythm and is dropped in the draft ('That once found out').",
+      "suggested_fix": "Restore the italic on 'That': '_That_ once found out, and all the rest were plain.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
       "source_passage": "in those jaws of swift destruction, like another cursed Jonah (by which name indeed they called him), bustles a little withered old man, who, for their money, dearly sells the sailors deliriums and death",
-      "source_locator": "paragraph describing the bar/whale's-jaw den",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft renders this as 'another cursed Jonah who, for their money, dearly sells the sailors deliriums and death' — stripping the parenthetical '(by which name indeed they called him)' which is part of the rhetorical texture, and losing the build-up through the whale-jaw description that makes the Jonah conceit land. The phrase 'deliriums and death' survives but its syntactic framing is compressed.",
-      "suggested_fix": "Restore the fuller sentence structure including the parenthetical '(by which name indeed they called him)' and the preceding detail about 'old decanters, bottles, flasks' to preserve the full gothic-comic buildup."
+      "source_locator": "paragraph describing the bar/public room",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The 'deliriums and death' clause is critically noted as a signature of Melville's moralizing rhetoric embedded in comic description; the draft preserves it but strips the surrounding public-room atmosphere (the 'corner-anchored old ark rocked so furiously,' the shelf of dusty rarities, the fireplace description) that gives it contextual weight.",
+      "suggested_fix": "Restore at least the 'corner-anchored old ark rocked so furiously' detail and the shelf of rarities to maintain the atmospheric build-up to the 'deliriums and death' line."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The more I pondered over this harpooneer, the more I abominated the thought of sleeping with him... I began to twitch all over... Suppose now, he should tumble in upon me at midnight—how could I tell from what vile hole he had been coming?",
-      "source_locator": "paragraphs of Ishmael's anxious deliberation before demanding the bench",
+      "source_passage": "Parallel meridians rudely pecked into the glass, surround these footpads' goblets. Fill to _this_ mark, and your charge is but a penny; to _this_ a penny more; and so on to the full glass—the Cape Horn measure, which you may gulp down for a shilling.",
+      "source_locator": "paragraph after the 'deliriums and death' sentence",
       "draft_treatment": "absent",
-      "why_it_matters": "This sustained comic-anxious interior monologue — including 'I began to twitch all over' and 'from what vile hole he had been coming' — is pure voice-establishing material. The draft jumps directly from the 'no man prefers to sleep two in a bed' paragraph to 'I declared I'd try the bench,' erasing the escalating paranoia that gives the scene its comic engine.",
-      "suggested_fix": "Restore the 'I abominated the thought' paragraph with at least the key lines about the harpooneer's potentially untidy linen, the twitching, and the midnight speculation — these are the comic texture the scene depends on."
+      "why_it_matters": "The 'footpads' goblets' / 'Cape Horn measure' passage is a distinctively voiced satirical aside on the cheating glasses — rhetorical irony and social critique compressed into a precise comic image; it is entirely absent from the draft.",
+      "suggested_fix": "Restore the full tumblers paragraph, including 'Parallel meridians rudely pecked into the glass, surround these footpads' goblets' and the 'Cape Horn measure' punchline."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "\"may be not,\" taking out a stick and whittling a toothpick, \"but I rayther guess you'll be done brown if that ere harpooneer hears you a slanderin' his head.\" \"I'll break it for him,\" said I... \"It's broke a'ready,\" said he.",
-      "source_locator": "the landlord-and-Ishmael dialogue about the head, middle of chapter",
+      "source_passage": "I sat down on an old wooden settle, carved all over like a bench on the Battery. At one end a ruminating tar was still further adorning it with his jack-knife… He was trying his hand at a ship under full sail, but he didn't make much headway, I thought.",
+      "source_locator": "after landlord's 'Supper'll be ready directly,' before the supper scene",
       "draft_treatment": "absent",
-      "why_it_matters": "The full comic escalation of this exchange — the whittling toothpick, 'done brown,' 'I'll break it for him,' 'It's broke a'ready' — is the funniest sustained dialogue in the chapter. The draft compresses this entire back-and-forth to a single sentence, erasing the deadpan wit that is one of Melville's most celebrated comic passages.",
-      "suggested_fix": "Restore the key beats of this exchange: the landlord's whittling, the 'done brown' line, Ishmael's 'I'll break it,' and the landlord's 'It's broke a'ready' rejoinder — these are critically recognized as signature comic prose."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "\"Depend upon it, landlord, that harpooneer is a dangerous man.\" \"He pays reg'lar,\" was the rejoinder.",
-      "source_locator": "after the New Zealand heads explanation",
-      "draft_treatment": "absent",
-      "why_it_matters": "This two-line exchange is one of the most quoted comic deflations in Melville — the moral concern instantly neutralized by commercial practicality. Its absence removes a key moment of satirical voice.",
-      "suggested_fix": "Restore both lines verbatim; they are brief enough to include without budget pressure."
+      "why_it_matters": "This is a characteristic Ishmael comic aside — the pun on 'headway' completing the tar's portrait — and it is a small but perfectly shaped voice-establishing moment that is wholly absent from the draft.",
+      "suggested_fix": "Restore the settle/tar/jack-knife passage with its closing pun; it is brief and captures essential narrator voice."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "It was cold as Iceland—no fire at all—the landlord said he couldn't afford it. Nothing but two dismal tallow candles, each in a winding sheet. We were fain to button up our monkey jackets, and hold to our lips cups of scalding tea with our half frozen fingers.",
-      "source_locator": "the supper scene",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft preserves 'two dismal tallow candles, each in a winding sheet' and the dumplings but drops 'cold as Iceland,' the monkey jackets, and the scalding tea with half-frozen fingers — the sensory accumulation that makes the scene vivid.",
-      "suggested_fix": "Restore 'cold as Iceland—no fire at all' and the monkey-jacket/scalding-tea detail to maintain the atmospheric texture."
+      "source_passage": "they seemed an eruption of bears from Labrador. They had just landed from their boat, and this was the first house they entered. No wonder, then, that they made a straight wake for the whale's mouth",
+      "source_locator": "paragraph describing the Grampus crew's entrance",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'eruption of bears from Labrador' simile and the 'straight wake for the whale's mouth' metaphor are characteristically Melvillean double-layered figures; their absence flattens the crew's entrance to mere plot summary.",
+      "suggested_fix": "Restore 'they seemed an eruption of bears from Labrador' and 'made a straight wake for the whale's mouth—the bar.'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "his very legs were marked, as if a parcel of dark green frogs were running up the trunks of young palms",
-      "source_locator": "description of Queequeg undressing",
+      "source_passage": "for sailors no more sleep two in a bed at sea, than bachelor Kings do ashore. To be sure they all sleep together in one apartment, but you have your own hammock, and cover yourself with your own blanket, and sleep in your own skin.",
+      "source_locator": "Ishmael's meditation on sleeping two in a bed",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'bachelor Kings' comparison and the rhythmically tripled 'your own hammock… your own blanket… your own skin' are signature Ishmael rhetoric; the draft cuts at 'bachelor Kings do ashore' and drops the elaboration.",
+      "suggested_fix": "Restore the three-beat 'your own hammock, and cover yourself with your own blanket, and sleep in your own skin' clause."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The more I pondered over this harpooneer, the more I abominated the thought of sleeping with him… Suppose now, he should tumble in upon me at midnight—how could I tell from what vile hole he had been coming?",
+      "source_locator": "after the 'bachelor Kings' passage, before Ishmael changes his mind",
       "draft_treatment": "absent",
-      "why_it_matters": "This simile is distinctive and memorable — one of the more striking figurative flourishes in Queequeg's introduction. The draft notes the legs were marked but drops the simile entirely.",
-      "suggested_fix": "Restore the frog/palm simile when describing Queequeg's tattooed legs."
+      "why_it_matters": "This paragraph of mounting comic anxiety ('I began to twitch all over'; the 'vile hole' question) is pure Ishmael comic-neurotic voice and is wholly absent, removing a key beat of the harpooneer suspense buildup.",
+      "suggested_fix": "Restore at least 'I began to twitch all over' and the 'vile hole' sentence as representative voice markers of this passage."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's skeleton and several key set-pieces but erases multiple voice-defining passages: the full landlord-Ishmael comic exchange about the broken head (including 'done brown' and 'He pays reg'lar'), Ishmael's anxious pre-bench interior monologue, and several rhetorically distinctive details — together constituting three medium-severity failures that trigger regeneration."
+  "summary": "The draft achieves adequate plot coverage but suppresses multiple voice-establishing comic digressions and at least one fully absent signature passage (the 'footpads' goblets'/'Cape Horn measure' paragraph), producing cumulative voice erasure that crosses the medium-severity threshold for regeneration."
 }

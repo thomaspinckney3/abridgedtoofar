@@ -1,0 +1,35 @@
+{
+  "segment_id": "073",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Consider that the whale has nothing that can properly be called a neck… Do you not marvel, then, at Stubb's boast, that he demanded but ten minutes to behead a sperm whale?",
+      "source_locator": "Paragraphs 2–3 (the surgical feat description)",
+      "draft_treatment": "absent",
+      "why_it_matters": "The extended rhetorical buildup — 'Consider… Remember… Bear in mind… Do you not marvel' — is a signature specimen of Ishmael's voice: accumulating imperatives that pull the reader into wonder. Compressing it to a single clause ('a blind, deep cut from above') eliminates both the voice and the tonal pivot that makes Stubb's boast land.",
+      "suggested_fix": "Restore at least one sentence of the 'Consider… Remember… Bear in mind' sequence and the payoff line about Stubb's ten-minute boast so the surgical-wonder register survives."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "for the sperm whale's head embraces nearly one third of his entire bulk… this were as vain a thing as to attempt weighing a Dutch barn in jewellers' scales",
+      "source_locator": "Paragraph 4 (one-third bulk / Dutch barn simile)",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Dutch-barn-in-jewellers'-scales simile is distinctively Melvillean in register and specificity; it also conveys interpretively important information (why the head is not hauled on deck) that is simply dropped, leaving the head-hoisting unexplained.",
+      "suggested_fix": "Add a brief clause preserving the one-third-bulk fact and ideally a trace of the Dutch-barn simile to keep both the practical logic and the voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Aye? Well, now, that's cheering,\" cried Ahab, suddenly erecting himself, while whole thunder-clouds swept aside from his brow.",
+      "source_locator": "Final exchange, Ahab's first response to 'Sail ho!'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders this as 'Ahab suddenly erect; whole thunder-clouds swept from his brow' — a bare participial fragment that drops 'Aye? Well, now, that's cheering' entirely. That colloquial exclamation is a signature micro-moment of Ahab's mercurial register, and its loss flattens the emotional whiplash the scene depends on.",
+      "suggested_fix": "Restore 'Aye? Well, now, that's cheering' as direct speech; the thunder-clouds simile can follow as a compressed tag."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Three medium-severity findings: the surgical-feat rhetorical buildup and Stubb's-boast payoff are collapsed without a trace, the Dutch-barn simile is cut entirely, and Ahab's 'Aye? Well, now, that's cheering' is dropped to a bare participial fragment — all representing voice flattening, but the chapter's central signature (the full Sphynx soliloquy and the closing Nature/soul analogies) is preserved verbatim, keeping the verdict at pass."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "107",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "not excluding its suburbs. Such, and so magnifying, is the virtue of a large and liberal theme!",
+      "source_locator": "third paragraph, after 'throughout the whole universe'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'not excluding its suburbs' is a characteristically Melvillean comic deflation after enormous cosmic enumeration — a signature micro-joke that defines the narrator's ironic register. Its excision flattens the rhetorical arc of the paragraph's climax.",
+      "suggested_fix": "Restore 'throughout the whole universe, not excluding its suburbs' before the aphoristic summary sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "though many there be who have tried it",
+      "source_locator": "end of third paragraph, after 'No great and enduring volume can ever be written on the flea'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This deadpan parenthetical ('though many there be who have tried it') supplies the comic puncture that completes the aphorism; without it the line reads as earnest rather than wry.",
+      "suggested_fix": "Append ', though many there be who have tried it' to restore the comic tail of the aphorism."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "wine-vaults, cellars, and cisterns of all sorts",
+      "source_locator": "fourth paragraph, credentials as geologist",
+      "draft_treatment": "absent",
+      "why_it_matters": "The absurdist accumulation of subterranean spaces (wells, wine-vaults, cellars, cisterns) is part of the chapter's comic self-credentialing voice; trimming to just 'ditches, canals and wells' loses the rhetorical excess that is itself the joke.",
+      "suggested_fix": "Restore 'wine-vaults, cellars, and cisterns of all sorts' to complete the list of Ishmael's geological credentials."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful, preserving all high-priority signatures verbatim, including the 'Give me a condor's quill' passage, the Saturn/Polar eternities paragraph, the Ahab/Pharaoh/Methuselah sequence, and the John Leo quotation in full; three minor voice-flattening losses (the 'suburbs' joke, the flea-book tail, and the wine-vault list) are low-severity and do not trigger regeneration."
+}

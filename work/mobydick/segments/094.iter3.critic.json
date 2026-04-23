@@ -1,0 +1,44 @@
+{
+  "segment_id": "094",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "standing in the ship's bows, 'there's a jackal for ye! I well know that these Crappoes of Frenchmen are but poor devils in the fishery; sometimes lowering their boats for breakers, mistaking them for Sperm Whale spouts; yes, and sometimes sailing from their port with their hold full of boxes of tallow candles'",
+      "source_locator": "Stubb's long speech from the ship's bows before pulling for the stranger",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This extended comic monologue is the primary voice-establishing passage for Stubb in this chapter; its specific comic absurdities (tallow candles, snuffers, 'not enough to dip the Captain's wick into') are signature Melville comic invention and are entirely stripped away, leaving only paraphrase.",
+      "suggested_fix": "Restore the bulk of Stubb's 'jackal' speech verbatim or near-verbatim, including the tallow candles / snuffers passage and the 'not enough to dip the Captain's wick' line, as this is the richest satirical voice moment in the chapter."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "All their noses upwardly projected from their faces like so many jib-booms. Now and then pairs of them would drop their work, and run up to the mast-head to get some fresh air. Some thinking they would catch the plague, dipped oakum in coal-tar",
+      "source_locator": "description of French sailors on deck after Stubb boards",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'noses like jib-booms' simile is a distinctive comic-grotesque image; the draft reduces the full comic tableau to a terse summary, losing the rhythmic accumulation and the specific detail of the mast-head escape.",
+      "suggested_fix": "Preserve the 'jib-booms' simile verbatim and keep the sequential buildup (drop work → mast-head air → coal-tar oakum → pipe-smoking) to maintain the comic texture."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "when suddenly from out the very heart of this plague, there stole a faint stream of perfume, which flowed through the tide of bad smells without being absorbed by it, as one river will flow into and then along with another, without at all blending with it for a time",
+      "source_locator": "paragraph describing the discovery of ambergris scent",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This simile is one of the most rhetorically distinctive sentences in the chapter and carries interpretive weight as a figure for the precious hidden within the vile; the draft truncates it to 'as one river within another,' erasing the extended vehicle of the simile.",
+      "suggested_fix": "Restore the full river simile verbatim: 'as one river will flow into and then along with another, without at all blending with it for a time.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "This was the tormented surgeon, who, after in vain remonstrating against the proceedings of the day, had betaken himself to the Captain's round-house (cabinet he called it) to avoid the pest",
+      "source_locator": "description of the surgeon in the round-house",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical '(cabinet he called it)' is a small but characteristic Melvillean ironic aside that locates the surgeon's pretension; the draft omits it.",
+      "suggested_fix": "Insert the parenthetical '(cabinet he called it)' to preserve the ironic register."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful but flattens three voice-establishing passages of medium signature weight—Stubb's 'tallow candles' speech, the jib-boom nose tableau, and the full river-perfume simile—reducing comic and rhetorical texture without crossing into high-severity loss."
+}

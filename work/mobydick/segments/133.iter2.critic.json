@@ -1,0 +1,62 @@
+{
+  "segment_id": "133",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "now that all his successive meetings with various ships contrastingly concurred to show the demoniac indifference with which the white whale tore his hunters, whether sinning or sinned against",
+      "source_locator": "paragraph 1, the long anaphoric 'now that' accumulation",
+      "draft_treatment": "absent",
+      "why_it_matters": "The full anaphoric 'now that…now that…now that' rhetorical build is a signature syntactic structure that generates the chapter's mounting dread; the draft cuts several clauses including the interpretively weighted 'demoniac indifference…whether sinning or sinned against,' which carries theological freight about guilt and fate.",
+      "suggested_fix": "Restore at minimum 'to show the demoniac indifference with which the white whale tore his hunters, whether sinning or sinned against' within the opening period to preserve both the anaphoric rhythm and the moral-interpretive phrase."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Such an added, gliding strangeness began to invest the thin Fedallah now; such ceaseless shudderings shook him; that the men looked dubious at him; half uncertain, as it seemed, whether indeed he were a mortal substance, or else a tremulous shadow cast upon the deck by some unseen being's body. And that shadow was always hovering there.",
+      "source_locator": "paragraph 3, description of Fedallah's ghostly aspect",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The specific syntactic shiver of 'ceaseless shudderings shook him' and 'And that shadow was always hovering there' are Melville's most atmospherically distinctive lines on Fedallah in this chapter; the draft collapses the passage and drops the sentinel sentence entirely.",
+      "suggested_fix": "Restore 'ceaseless shudderings shook him' and the closing 'And that shadow was always hovering there' to preserve the ghostly register and the interpretive motif of Fedallah as living shadow."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "his hat slouched heavily over his eyes…the unheeded night-damp gathered in beads of dew upon that stone-carved coat and hat. The clothes that the night had wet, the next day's sunshine dried upon him; and so, day after day, and night after night",
+      "source_locator": "paragraph 4, the vigil at the cabin-scuttle",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The detail of dew gathering and sunlight drying on him 'day after day, and night after night' is one of the chapter's most resonant images of Ahab's petrification into obsession; the draft drops 'The clothes that the night had wet, the next day's sunshine dried upon him' entirely, losing the elemental rhythm.",
+      "suggested_fix": "Restore the sentence 'The clothes that the night had wet, the next day's sunshine dried upon him; and so, day after day, and night after night' to preserve the petrification motif."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "nor reaped his beard; which darkly grew all gnarled, as unearthed roots of trees blown over, which still grow idly on at naked base, though perished in the upper verdure",
+      "source_locator": "paragraph 5, description of Ahab's beard",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile is cut at 'as unearthed roots of trees blown over,' dropping the full elaboration 'which still grow idly on at naked base, though perished in the upper verdure'—a signature image of Ahab as something still alive below while already dead above, with clear interpretive weight.",
+      "suggested_fix": "Complete the simile: 'as unearthed roots of trees blown over, which still grow idly on at naked base, though perished in the upper verdure.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "it was strange, that this was the very man he should select for his watchman; freely giving his whole life into such an otherwise distrusted person's hands",
+      "source_locator": "paragraph on the significance of choosing Starbuck as watchman",
+      "draft_treatment": "absent",
+      "why_it_matters": "Melville's narratorial reflection on the irony of Ahab entrusting his life to the one man he distrusted is a key interpretive aside; it is completely absent from the draft, reducing a meaningful authorial observation to a bare procedural fact.",
+      "suggested_fix": "Add a clause or sentence restoring the narratorial observation that Starbuck—the one who had 'almost' opposed him and whose faithfulness he doubted—was the very man Ahab chose, 'freely giving his whole life into such an otherwise distrusted person's hands.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Your hat, your hat, sir!\" suddenly cried the Sicilian seaman, who being posted at the mizen-mast-head, stood directly behind Ahab, though somewhat lower than his level, and with a deep gulf of air dividing them.",
+      "source_locator": "paragraph with the hawk attack",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The direct speech 'Your hat, your hat, sir!' is the chapter's most quotable moment before the omen closes it; the draft converts it to an oblique reference ('before the Sicilian seaman's cry reached him'), erasing the exclamatory voice.",
+      "suggested_fix": "Restore the direct cry: '\"Your hat, your hat, sir!\" suddenly cried the Sicilian seaman' before describing the hawk's strike."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton and closing omen but flattens or drops several medium-weight signature passages—the full anaphoric opening, the Fedallah shuddering/shadow lines, the dew-and-sunshine petrification image, the beard simile's full elaboration, the Starbuck-irony narratorial aside, and the direct-speech hat cry—producing three medium-severity failures that collectively trigger regeneration."
+}

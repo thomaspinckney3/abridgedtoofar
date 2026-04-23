@@ -1,0 +1,80 @@
+{
+  "segment_id": "113",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "and like circles on the water, which, as they grow fainter, expand; so his eyes seemed rounding and rounding, like the rings of Eternity",
+      "source_locator": "paragraph describing Queequeg's eyes during illness",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of Melville's most rhetorically distinctive similes in the chapter, with precise prosodic shape; the draft collapses it to 'rounding like rings on water—circles of Eternity,' losing the expansion logic and the doubled 'rounding and rounding.'",
+      "suggested_fix": "Restore the full simile verbatim or very close: 'like circles on the water, which, as they grow fainter, expand; so his eyes seemed rounding and rounding, like the rings of Eternity.'"
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "And the drawing near of Death, which alike levels all, alike impresses all with a last revelation, which only an author from the dead could adequately tell.",
+      "source_locator": "paragraph on Queequeg's waning, after the Zoroaster reference",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is critically engaged as Melville's meta-fictional reflection on mortality and narrative authority; it is entirely absent from the draft, removing a key interpretive keystone about the limits of authorship.",
+      "suggested_fix": "Restore this sentence and its surrounding context, including the Zoroaster comparison and the Chaldee/Greek elevation, as they carry critical and interpretive weight that cannot be summarized away."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "as any beheld who were bystanders when Zoroaster died. For whatever is truly wondrous and fearful in man, never yet was put into words or books.",
+      "source_locator": "paragraph on Queequeg's waning, near end",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Zoroaster allusion and the claim about the unspeakable are signature Melville — philosophically weighty, culturally distinctive, and critically referenced. Their total absence flattens the chapter's metaphysical register.",
+      "suggested_fix": "Include the Zoroaster comparison and the 'never yet was put into words or books' declaration; they are core to the passage's signature character."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "whose mysteries not even himself could read, though his own live heart beat against them; and these mysteries were therefore destined in the end to moulder away with the living parchment whereon they were inscribed, and so be unsolved to the last.",
+      "source_locator": "final paragraph, on Queequeg's tattooing",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage, culminating in the image of the living parchment mouldering unsolved, is one of the chapter's most critically cited and thematically central passages — it encapsulates the novel's meditation on unreadable meaning. The draft reduces it to 'yet its live heart could not read its own text,' erasing the key phrase 'moulder away with the living parchment' and the finality of 'unsolved to the last.'",
+      "suggested_fix": "Restore the full passage verbatim or near-verbatim, preserving 'moulder away with the living parchment whereon they were inscribed, and so be unsolved to the last.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "no dying Chaldee or Greek had higher and holier thoughts than those, whose mysterious shades you saw creeping over the face of poor Queequeg",
+      "source_locator": "paragraph on Queequeg's waning, near the Zoroaster passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Chaldee/Greek elevation is part of Melville's universalizing rhetoric that dignifies Queequeg's death; its absence reduces the philosophical register of the scene.",
+      "suggested_fix": "Restore this sentence as part of reinstating the full Zoroaster/dying-revelation passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the stars are isles, but that far beyond all visible horizons, their own mild, uncontinented seas, interflow with the blue heavens; and so form the white breakers of the milky way",
+      "source_locator": "Queequeg's coffin-canoe request, explaining his people's beliefs",
+      "draft_treatment": "absent",
+      "why_it_matters": "This cosmological image — stars as isles, the Milky Way as surf — is a signature Melvillean passage of visionary beauty that defines Queequeg's cultural world-view; its omission flattens the scene to bare ritual.",
+      "suggested_fix": "Restore the description of the Polynesian cosmology ('the stars are isles… white breakers of the milky way') within Queequeg's coffin-canoe request."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "some dying men are the most tyrannical; and certainly, since they will shortly trouble us so little for evermore, the poor fellows ought to be indulged.",
+      "source_locator": "when Queequeg commands the coffin be brought to him",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic aside is a characteristic Ishmael voice-moment — dry, humane, sardonic — whose loss removes a register-defining narrative interruption.",
+      "suggested_fix": "Restore this parenthetical observation when describing Queequeg's command that the coffin be brought to him."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Pip, who had been slily hovering near by all this while, drew nigh to him where he lay, and with soft sobbings, took him by the hand; in the other, holding his tambourine.",
+      "source_locator": "Pip's approach to Queequeg",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The careful staging of Pip's approach — 'slily hovering,' 'soft sobbings,' the detail of the tambourine in the other hand — establishes the scene's pathos; the draft reduces it to a bare summary, losing the emotional texture.",
+      "suggested_fix": "Restore the staging of Pip's approach with 'slily hovering,' 'soft sobbings,' and the two-hand image before his speech."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft omits or fatally flattens multiple high-priority signature passages — the Zoroaster/Death-as-last-revelation block, the living parchment/unsolved mystery passage, and the stars-as-isles cosmology — along with several medium-weight voice moments, collectively gutting the chapter's philosophical and rhetorical core."
+}

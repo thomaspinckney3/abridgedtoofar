@@ -1,0 +1,62 @@
+{
+  "segment_id": "041",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Horrible old man! Who's over him, he cries;—aye, he would be a democrat to all above; look, how he lords it over all below!",
+      "source_locator": "paragraph 1, after 'tows me with a cable I have no knife to cut'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is critically significant — Starbuck's characterization of Ahab as a 'democrat to all above' who 'lords it over all below' is a key interpretive moment for readings of Ahab's politics, authority, and class dynamics in the novel. Its complete absence removes interpretive weight the critical tradition depends on.",
+      "suggested_fix": "Restore 'Horrible old man! Who's over him, he cries;—aye, he would be a democrat to all above; look, how he lords it over all below!' verbatim or near-verbatim between the cable line and 'Yet is there hope.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Oh! I plainly see my miserable office,—to obey, rebelling; and worse yet, to hate with touch of pity!",
+      "source_locator": "paragraph 1, after the 'democrat' passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most critically cited lines in the chapter — 'to obey, rebelling; and worse yet, to hate with touch of pity' defines Starbuck's tragic condition and is an interpretive keystone for his entire characterization across the novel. Its complete omission is a severe signature failure.",
+      "suggested_fix": "Restore 'I plainly see my miserable office,—to obey, rebelling; and worse yet, to hate with touch of pity!' verbatim in the draft."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "my whole clock's run down; my heart the all-controlling weight, I have no key to lift again.",
+      "source_locator": "end of paragraph 1, after 'I would up heart, were it not like lead'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing image of the first paragraph — the clock metaphor — is prosodically distinctive and thematically resonant, crystallizing Starbuck's paralysis. 'I have no key to lift again' is a memorable period to the monologue's first movement and is absent entirely from the draft.",
+      "suggested_fix": "Restore 'my whole clock's run down; my heart the all-controlling weight, I have no key to lift again' at the close of the first paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Oh, God! to sail with such a heathen crew that have small touch of human mothers in them! Whelped somewhere by the sharkish sea.",
+      "source_locator": "paragraph 2, opening after the stage direction",
+      "draft_treatment": "absent",
+      "why_it_matters": "The exclamation 'Whelped somewhere by the sharkish sea' is a voice-defining, rhetorically distinctive line; its rhythm and imagery mark Starbuck's register. The draft jumps immediately to 'Hark the infernal orgies,' cutting this voice-establishing opening entirely.",
+      "suggested_fix": "Restore the opening lament about the heathen crew and 'whelped somewhere by the sharkish sea' before the 'Hark' line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Stand by me, hold me, bind me, O ye blessed influences!",
+      "source_locator": "final line of the segment",
+      "draft_treatment": "absent",
+      "why_it_matters": "The final plea — 'Stand by me, hold me, bind me, O ye blessed influences!' — is the rhetorical and emotional climax of the entire monologue, a prayer-like incantation that closes the chapter on a note of desperate supplication. Its omission flattens the ending catastrophically.",
+      "suggested_fix": "Restore 'Stand by me, hold me, bind me, O ye blessed influences!' as the final line of the draft."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'tis in an hour like this, with soul beat down and held to knowledge,—as wild, untutored things are forced to feed—Oh, life! 'tis now that I do feel the latent horror in thee! but 'tis not me! that horror's out of me!",
+      "source_locator": "paragraph 2, after 'set the watch'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses the doubled 'Oh, life!' apostrophe and the archaic contraction 'tis,' the simile of 'wild, untutored things forced to feed,' and the emphatic 'that horror's out of me!' — all of which are rhythmically and rhetorically distinctive. Only a bare paraphrase survives.",
+      "suggested_fix": "Restore the 'Oh, life! 'tis in an hour like this' passage with its doubled invocation and the simile intact; at minimum preserve 'but 'tis not me! that horror's out of me!'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft drops three high-severity signature passages — the 'democrat to all above' characterization of Ahab, the 'miserable office—to obey, rebelling' line, and the 'clock's run down' closing image — along with two medium-severity voice erasures (the 'whelped by the sharkish sea' opening and the 'Stand by me, bind me' climax), gutting both interpretive weight and rhetorical power from Starbuck's soliloquy."
+}

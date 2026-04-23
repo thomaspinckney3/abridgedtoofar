@@ -1,0 +1,53 @@
+{
+  "segment_id": "085",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "that antique Crockett and Kit Carson—that brawny doer of rejoicing good deeds, was swallowed down and thrown up by a whale",
+      "source_locator": "Hercules paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'antique Crockett and Kit Carson' appositive is one of the chapter's most rhetorically distinctive and critically noted moments—a comic anachronism that collapses mythic and frontier American registers. It is entirely absent from the draft.",
+      "suggested_fix": "Restore the phrase 'that antique Crockett and Kit Carson—that brawny doer of rejoicing good deeds' before 'was swallowed down and thrown up by a whale.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Any man may kill a snake, but only a Perseus, a St. George, a Coffin, have the heart in them to march boldly up to a whale.",
+      "source_locator": "St. George paragraph, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the chapter's most quotable sentences—it pairs mythic heroes with 'a Coffin' (a Nantucket name), a characteristic Melvillean comic-ironic move that is both voice-establishing and interpretively important for the chapter's argument about whaling's nobility.",
+      "suggested_fix": "Restore verbatim or near-verbatim: 'Any man may kill a snake, but only a Perseus, a St. George, a Coffin, have the heart in them to march boldly up to a whale.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "long remained dubious: for though according to the Greek mythologies… still, whether that strictly makes a whaleman of him, that might be mooted. It nowhere appears that he ever actually harpooned his fish, unless, indeed, from the inside.",
+      "source_locator": "Hercules paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The extended mock-legalistic deliberation ('long remained dubious,' 'that might be mooted,' 'unless, indeed, from the inside') is signature Ishmael voice—ironic scholarly hedging applied to absurd propositions. The draft collapses this to a single throwaway clause.",
+      "suggested_fix": "Restore the 'long remained dubious… might be mooted… unless, indeed, from the inside' sequence to preserve the ironic deliberative register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "in nothing short of the great gods themselves. That wondrous oriental story is now to be rehearsed from the Shaster, which gives us the dread Vishnoo, one of the three persons in the godhead of the Hindoos; gives us this divine Vishnoo himself for our Lord",
+      "source_locator": "Vishnoo paragraph, opening",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The ceremonial, liturgical cadence ('is now to be rehearsed from the Shaster,' 'gives us this divine Vishnoo himself for our Lord') is rhetorically distinctive and mimics religious proclamation—core to the chapter's mock-solemn voice. The draft cuts straight to the story, erasing the performance.",
+      "suggested_fix": "Restore the framing sentence beginning 'Our grand master is still to be named… in nothing short of the great gods themselves. That wondrous oriental story is now to be rehearsed from the Shaster.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "What seems most singular and suggestively important in this story, is this: it was from Joppa that Jonah set sail.",
+      "source_locator": "Perseus paragraph, closing sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Melville flags this connection himself as 'most singular and suggestively important'—the only moment in the chapter where the narrator explicitly marks interpretive weight. The draft reduces it to 'Mark, too—Jonah sailed from Joppa,' losing the rhetorical staging and the narrator's own evaluative emphasis.",
+      "suggested_fix": "Restore the narrator's framing: 'What seems most singular and suggestively important in this story, is this: it was from Joppa that Jonah set sail.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses (the 'Crockett and Kit Carson' appositive and the 'Any man may kill a snake… a Coffin' sentence) plus three medium-severity voice-flattenings require regeneration."
+}

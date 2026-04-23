@@ -1,0 +1,53 @@
+{
+  "segment_id": "108",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "those belonging to its latter formations exceed in size those of its earlier ones",
+      "source_locator": "paragraph 2, geological argument",
+      "draft_treatment": "absent",
+      "why_it_matters": "This detail — that even within the Tertiary, later formations produce larger whales — is the specific evidentiary scaffolding Melville builds his anti-degeneration argument on. Its erasure reduces a precise scientific observation to a bald assertion.",
+      "suggested_fix": "Restore the clause about later Tertiary formations exceeding earlier ones in size; it is brief and carries argumentative weight."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Because I cannot understand how it is, that while the Egyptian mummies that were buried thousands of years before even Pliny was born, do not measure so much in their coffins as a modern Kentuckian in his socks",
+      "source_locator": "paragraph 6, anti-degeneration analogy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full clause — including 'in his socks' — is a distinctively comic, voice-establishing construction that is a signature of Ishmael's ironic-scientific register. The draft compresses it to 'Egyptian mummies do not outmeasure modern Kentuckians,' erasing the rhetorical comedy.",
+      "suggested_fix": "Restore 'do not measure so much in their coffins as a modern Kentuckian in his socks' verbatim; the bathetic specificity is the joke."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the far west (in whose sunset suns still rise) was a wilderness and a virgin",
+      "source_locator": "paragraph on buffalo vs. whale-hunt comparison",
+      "draft_treatment": "absent",
+      "why_it_matters": "This parenthetical — '(in whose sunset suns still rise)' — is one of the most lyrically distinctive phrases in the chapter, a compressed meditation on westward expansion and myth. Its absence is a real voice loss.",
+      "suggested_fix": "Restore the parenthetical '(in whose sunset suns still rise)' within the buffalo hunting comparison sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Nor, considered aright, does it seem any argument in favour of the gradual extinction of the Sperm Whale, for example, that in former years… the voyages were not so prolonged, and were also much more remunerative",
+      "source_locator": "paragraph beginning 'Nor, considered aright'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The point that shorter, more profitable voyages in earlier years are misread as evidence of greater whale numbers is a substantive argumentative step that the draft drops entirely, compressing straight from the buffalo comparison to 'for safety they now swim in immense caravans.'",
+      "suggested_fix": "Add a sentence restoring the historical argument: that whales were encountered more often formerly because they travelled in pods rather than caravans, not because they were more numerous."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "as upon the invasion of their valleys, the frosty Swiss have retreated to their mountains; so, hunted from the savannas and glades of the middle seas, the whale-bone whales can at last resort to their Polar citadels",
+      "source_locator": "paragraph on polar fortresses",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Swiss analogy is the simile that gives the polar-citadel image its rhetorical and emotional weight; without it, the Polar citadels passage is present but the figure that makes it resonate is erased.",
+      "suggested_fix": "Restore the frosty-Swiss simile before the Polar citadels sentence."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; the draft preserves the chapter's famous lines (last whale/last pipe, immortal in his species, frothed defiance) and most argumentative structure, but several medium-severity voice-flattenings — particularly the Kentuckian-in-his-socks joke and the 'sunset suns still rise' parenthetical — plus the dropped Swiss simile and the 'former years/caravans' argumentative step, together approach but do not meet the regeneration threshold."
+}

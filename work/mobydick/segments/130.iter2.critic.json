@@ -1,0 +1,35 @@
+{
+  "segment_id": "130",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Not this hand complies with my humor more genially than that boy.—Middle aisle of a church! What's here?",
+      "source_locator": "Ahab's first speech, after 'Back, lad; I will be with ye again presently.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aside establishes Ahab's affection for Pip and his habit of fragmentary, associative speech; 'Middle aisle of a church!' is a distinctive rhetorical flourish that registers his existential state and voice.",
+      "suggested_fix": "Restore Ahab's full first speech: 'Not this hand complies with my humor more genially than that boy.—Middle aisle of a church! What's here?'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Thank ye, man. Thy coffin lies handy to the vault.",
+      "source_locator": "Ahab's reply to the Carpenter's warning about the hatchway",
+      "draft_treatment": "absent",
+      "why_it_matters": "This dark, punning one-liner ('Thy coffin lies handy to the vault') is a signature Ahab moment—black humor collapsing the distance between life and death; its omission removes a key tonal beat.",
+      "suggested_fix": "Restore the exchange: Carpenter warns about the hatchway; Ahab replies 'Thank ye, man. Thy coffin lies handy to the vault,' and the Carpenter's flustered response."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Sir? The hatchway? oh! So it does, sir, so it does.",
+      "source_locator": "Carpenter's response after 'Thy coffin lies handy to the vault.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Carpenter's confused stammer is part of the comic texture that offsets Ahab's darkness; its loss mildly flattens the scene's tonal balance.",
+      "suggested_fix": "Include the Carpenter's bewildered echo to preserve the comedic register."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft faithfully reproduces all major signature passages (the 'jack-of-all-trades' speech, the sounding-board exchange, the Carpenter's Equator soliloquy, and Ahab's full 'immortality-preserver' monologue), but drops two notable mid-scene beats—Ahab's 'Middle aisle of a church' aside and the dark pun 'Thy coffin lies handy to the vault'—which constitute medium-level voice flattening without reaching the threshold for regeneration."
+}

@@ -1,0 +1,44 @@
+{
+  "segment_id": "091",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like pious Solomon devoutly worshipping among his thousand concubines",
+      "source_locator": "paragraph beginning 'But supposing the invader of domestic bliss'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Solomon simile is a sharp, ironic register-marker that amplifies the Ottoman/harem comedy; its loss flattens the satirical voice at a key moment of the chapter.",
+      "suggested_fix": "Restore the phrase 'like pious Solomon devoutly worshipping among his thousand concubines' in the passage describing the schoolmaster's return to his harem after chasing off the intruder."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "my Lord Whale has no taste for the nursery, however much for the bower; and so, being a great traveller, he leaves his anonymous babies all over the world; every baby an exotic.",
+      "source_locator": "paragraph beginning 'But supposing the invader of domestic bliss'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage—'every baby an exotic'—is one of the most stylistically distinctive and quotable lines in the chapter; its epigrammatic rhythm and ironic social commentary are signature Melville wit that define the chapter's tone.",
+      "suggested_fix": "Restore the sentence about Lord Whale having 'no taste for the nursery, however much for the bower,' and especially the clinching phrase 'he leaves his anonymous babies all over the world; every baby an exotic.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "some have surmised that the man who first thus entitled this sort of Ottoman whale, must have read the memoirs of Vidocq, and informed himself what sort of a country-schoolmaster that famous Frenchman was in his younger days",
+      "source_locator": "paragraph beginning 'Now, as the harem of whales is called by the fishermen a school'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Vidocq digression is a characteristically Melvillean learned aside that carries interpretive weight about the etymology of 'schoolmaster' and is part of the narrator's ironic-encyclopedic voice; its complete absence erases a signature digressive gesture.",
+      "suggested_fix": "Include at least a compressed reference to the Vidocq allusion—e.g., 'some surmise the title derives from the memoirs of Vidocq, and the occult lessons that famous Frenchman inculcated as a country-schoolmaster'—to preserve the ironic learned aside."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Like venerable moss-bearded Daniel Boone, he will have no one near him but Nature herself; and her he takes to wife in the wilderness of waters, and the best of wives she is, though she keeps so many moody secrets.",
+      "source_locator": "paragraph beginning 'The same secludedness and isolation'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders 'like moss-bearded Boone, wifing Nature in the wilderness of waters'—dropping both 'venerable Daniel' and, crucially, 'the best of wives she is, though she keeps so many moody secrets,' which is the evocative close of the simile.",
+      "suggested_fix": "Restore 'the best of wives she is, though she keeps so many moody secrets' to preserve the melancholic, ironic coda to the Boone comparison."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—the 'every baby an exotic' epigram, the Solomon simile, and the Vidocq digression—collectively erase the chapter's most distinctive satirical-encyclopedic voice moves and one of its most quotable lines, warranting regeneration."
+}

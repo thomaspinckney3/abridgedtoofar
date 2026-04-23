@@ -1,0 +1,62 @@
+{
+  "segment_id": "099",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It smells like the left wing of the day of judgment; it is an argument for the pit.",
+      "source_locator": "paragraph beginning 'Like a plethoric burning martyr'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Left wing of the day of judgment' is one of the most quoted, stylistically distinctive phrases in the chapter—its specific metaphorical grotesquerie is wholly lost in the draft's compressed 'a Hindoo, pyre-like reek, an argument for the pit.'",
+      "suggested_fix": "Restore verbatim: 'It smells like the left wing of the day of judgment; it is an argument for the pit.' The Hindoo odor line should also be kept: 'It has an unspeakable, wild, Hindoo odor about it, such as may lurk in the vicinity of funereal pyres.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "then the rushing Pequod, freighted with savages, and laden with fire, and burning a corpse, and plunging into that blackness of darkness, seemed the material counterpart of her monomaniac commander's soul.",
+      "source_locator": "paragraph beginning 'The hatch, removed from the top'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the most critically cited sentences in the chapter and in the novel—'freighted with savages, and laden with fire, and burning a corpse' is a rhythmic, triadic, interpretively essential accumulation. The draft drops 'laden with fire' and compresses 'burning a corpse' and the full anaphoric rhythm is destroyed.",
+      "suggested_fix": "Restore the full triadic accumulation verbatim: 'freighted with savages, and laden with fire, and burning a corpse, and plunging into that blackness of darkness.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "This wilful world hath not got hold of unchristian Solomon's wisdom yet. But he who dodges hospitals and jails, and walks fast crossing graveyards, and would rather talk of operas than hell; calls Cowper, Young, Pascal, Rousseau, poor devils all of sick men; and throughout a care-free lifetime swears by Rabelais as passing wise, and therefore jolly;—not that man is fitted to sit down on tomb-stones, and break the green damp mould with unfathomably wondrous Solomon.",
+      "source_locator": "paragraph beginning 'Nevertheless the sun hides not'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This entire passage—'dodges hospitals and jails,' the catalogue of Cowper, Pascal, Rousseau, the Rabelais contrast—is a major critical touchstone for Melville's epistemology of sorrow and is wholly absent from the draft. It is interpretively and stylistically irreplaceable.",
+      "suggested_fix": "Restore this passage, at minimum the 'he who dodges hospitals and jails' catalogue through 'unfathomably wondrous Solomon.' It is short enough to include without violating the word budget significantly."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "tales of terror told in words of mirth; as their uncivilized laughter forked upwards out of them, like the flames from the furnace",
+      "source_locator": "paragraph beginning 'The hatch, removed from the top'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'tales of terror told in words of mirth' phrase is voice-establishing and rhythmically distinctive; its erasure flattens the crucial contrast between horror and gaiety that characterizes this scene's moral atmosphere.",
+      "suggested_fix": "Restore 'their tales of terror told in words of mirth' within the harpooneers description."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "And even if he for ever flies within the gorge, that gorge is in the mountains; so that even in his lowest swoop the mountain eagle is still higher than other birds upon the plain, even though they soar.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The closing clause 'even though they soar' is the paragraph's rhetorical punch and is absent from the draft, which also loses 'the mountain eagle' specification and the final paradox. The Catskill eagle passage is a critical touchstone and deserves full preservation.",
+      "suggested_fix": "Restore the final clause: 'even in his lowest swoop the mountain eagle is still higher than other birds upon the plain, even though they soar.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "But even Solomon, he says, 'the man that wandereth out of the way of understanding shall remain' (i.e., even while living) 'in the congregation of the dead.'",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Solomon quotation provides the scriptural anchor for the chapter's moral warning and the transition into the Catskill eagle passage; its absence severs the logical and theological chain of the conclusion.",
+      "suggested_fix": "Restore the Solomon quotation as a bridge between the 'All is vanity' paragraph and the Catskill eagle passage."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has three high-severity failures—the 'left wing of the day of judgment' phrase is flattened, the triadic 'freighted with savages' sentence is corrupted, and the entire 'dodges hospitals and jails' philosophical passage is absent—plus additional medium losses in the closing passages, requiring regeneration."
+}

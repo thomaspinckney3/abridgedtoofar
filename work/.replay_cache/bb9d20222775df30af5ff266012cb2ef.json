@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T08:55:05",
+  "key": "bb9d20222775df30af5ff266012cb2ef",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"draft_passage\": \"\u2026 Oh, take medicine, take medicine!\\\"\",\n    \"class\": \"missing_definitional_framing\",\n    \"why_damaged\": \"The ellipsis replaces the two sentences that explain what 'take medicine' refers to \u2014 the noise aloft being likened to a colic \u2014 so the imperative lands as inexplicable to a reader without the source.\",\n    \"source_context\": \"\\\"What a hooroosh aloft there! I would e'en take it for sublime, did I not know that the colic is a noisy malady. Oh, take medicine, take medicine!\\\"\"\n  }\n]\n```",
+    "input_tokens": 1122,
+    "output_tokens": 158,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.252203941345215,
+    "stop_reason": "end_turn"
+  }
+}

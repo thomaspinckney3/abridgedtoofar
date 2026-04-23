@@ -1,0 +1,53 @@
+{
+  "segment_id": "119",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "in these most candid and impartial seas; where to traditions no rocks furnish tablets",
+      "source_locator": "Ahab's first speech, middle section",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'in these most candid and impartial seas' is rhetorically distinctive and thematically important—it frames the ocean as a zone outside human moral categories. The draft cuts it entirely, jumping from 'weal or woe' directly to 'where to traditions no rocks furnish tablets,' losing the interpretive pivot.",
+      "suggested_fix": "Restore 'in these most candid and impartial seas' before the tablets clause; these three words carry significant rhetorical weight and should not be silently dropped."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "here, too, life dies sunwards full of faith; but see! no sooner dead, than death whirls round the corpse, and it heads some other way",
+      "source_locator": "Ahab's first speech, final lines",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'life dies sunwards full of faith' is the interpretive keystone of the chapter—it connects the whale's dying gesture to Ahab's meditation on faith and apostasy. The draft omits it, leaving only the second clause ('no sooner dead…'), which loses the faith/death opposition that drives the rest of the speech.",
+      "suggested_fix": "Restore 'here, too, life dies sunwards full of faith' before the 'but see!' clause; without it, the thematic architecture of Ahab's speech collapses."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Nor has this thy whale sunwards turned his dying head, and then gone round again, without a lesson to me.",
+      "source_locator": "Ahab's second speech (Hindoo half), closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the hinge between the dark-Hindoo invocation and the 'trebly hooped' exclamation; it makes explicit that Ahab reads the whale's death as a personal lesson, anchoring the passage's interpretive weight. Its absence breaks the logical and rhetorical flow between the two strophes.",
+      "suggested_fix": "Restore the closing sentence of the dark-Hindoo strophe before moving to 'Oh, trebly hooped…'."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Not seldom in this life, when, on the right side, fortune's favourites sail close by us, we, though all adroop before, catch somewhat of the rushing breeze",
+      "source_locator": "Opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The nautical simile opening the chapter establishes the narrator's voice and links this chapter back to the Bachelor encounter; its loss removes both the narrative connective tissue and a characteristic Ishmael digression.",
+      "suggested_fix": "A single compressed sentence preserving the 'fortune's favourites / rushing breeze / bagging sails' image would restore the narrator's register and the chapter's opening logic."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "that only calls forth life, but gives it not again",
+      "source_locator": "Third speech ('trebly hooped'), mid-passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause qualifies the sun's power in a theologically precise way—it creates life but cannot restore it—which is essential to Ahab's argument about the sun as a false intercessor. The draft cuts it silently.",
+      "suggested_fix": "Restore the subordinate clause after 'all-quickening sun': 'that only calls forth life, but gives it not again.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves most of Ahab's verbatim speeches adequately but drops three structurally and interpretively critical phrases ('in these most candid and impartial seas,' 'life dies sunwards full of faith,' and the lesson-to-me sentence), together meeting the threshold for regeneration."
+}

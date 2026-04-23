@@ -1,0 +1,53 @@
+{
+  "segment_id": "124",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "you have pretty red hair, but you couldn't get afire now. Shake yourself; you're Aquarius, or the water-bearer",
+      "source_locator": "Stubb's first long speech, mid-paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'pretty red hair' detail is a vivid, characterizing jab at Flask that personalizes Stubb's rhetoric; its omission flattens the exchange from intimate comic banter to generic argument.",
+      "suggested_fix": "Restore 'you have pretty red hair, but you couldn't get afire now' before the Aquarius line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like a militia officer's skewered feather, and trailing behind like his sash",
+      "source_locator": "Stubb's first long speech, near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The double image—'skewered feather' plus 'trailing sash'—is prosodically distinctive and comic; the draft drops 'skewered' and the sash clause entirely, losing the layered absurdity.",
+      "suggested_fix": "Restore the full phrase: 'like a militia officer's skewered feather, and trailing behind like his sash.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I don't know that, Stubb. You sometimes find it rather hard.\" \"Yes, when a fellow's soaked through, it's hard to be sensible, that's a fact.\"",
+      "source_locator": "After Stubb's first long speech, Flask's reply and Stubb's rejoinder",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief exchange is the only moment Flask gets a substantive line back, and Stubb's concession ('when a fellow's soaked through') is a rare flash of self-aware wit; its absence makes Flask entirely passive and removes a tonal beat.",
+      "suggested_fix": "Restore Flask's rejoinder and Stubb's reply before the transition to lashing-down the anchors."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Why, you King-Post, you, I suppose you would have every man in the world go about",
+      "source_locator": "Stubb's first long speech, after the rod analogy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'King-Post' is Flask's running nickname and its use here is a register marker; the draft uses only 'Flask,' diluting Stubb's mocking tone.",
+      "suggested_fix": "Replace 'Would you have every man' with 'Why, you King-Post, you, I suppose you would have every man in the world.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I wonder, Flask, whether the world is anchored anywhere; if she is, she swings with an uncommon long cable, though.",
+      "source_locator": "Stubb's second speech, anchor meditation",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the substance but drops the direct address 'Flask' and the trailing 'though,' which are part of Stubb's casual, musing cadence.",
+      "suggested_fix": "Restore 'Flask' and the closing 'though' for fidelity to Stubb's characteristic register."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; the draft is broadly faithful but flattens several mid-speech comic and tonal details—Flask's red hair, the skewered-feather/sash image, and the Flask-rejoinder exchange—that contribute meaningfully to Stubb's voice without rising individually to regeneration level."
+}

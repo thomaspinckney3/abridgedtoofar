@@ -1,0 +1,35 @@
+{
+  "segment_id": "087",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "rubbing in the unctuousness as though diligently seeking to insure a crop of hair from the craft's bald keel. He seemed to be working in obedience to some particular presentiment.",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft collapses 'as though diligently seeking to insure a crop of hair' into 'as if to raise a crop of hair' and drops entirely the sentence 'He seemed to be working in obedience to some particular presentiment'—the explicit ominous framing that charges the scene with portent.",
+      "suggested_fix": "Restore 'as though diligently seeking to insure a crop of hair from the craft's bald keel. He seemed to be working in obedience to some particular presentiment.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a disordered flight, as of Cleopatra's barges from Actium.",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft writes 'the disordered flight of Cleopatra's barges' but drops 'from Actium'—the specific historical referent that gives the simile its cultural and rhetorical weight. The Battle of Actium is the point; without it the allusion is reduced to mere decoration.",
+      "suggested_fix": "Restore the full simile: 'as of Cleopatra's barges from Actium.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Oil and water are hostile; that oil is a sliding thing, and that the object in view is to make the boat slide bravely.",
+      "source_locator": "paragraph 1, opening philosophical digression",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source opens with a sustained analogical digression (carriage axles → whale boats) building the logical argument for why greasing the keel is sound practice. The draft jumps straight to 'some whalers grease their bottoms,' erasing the voice-establishing ratiocination that is characteristic of Melville's essayistic mode throughout these craft chapters.",
+      "suggested_fix": "Restore at least the core logical chain: 'oil and water are hostile; oil is a sliding thing, and the object is to make the boat slide bravely.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the two most distinctive signature passages verbatim (Stubb's pitchpoling action sequence and his 'Monongahela' speech) but softens three medium-weight passages: the full Actium allusion is truncated, the ominous presentiment sentence is dropped, and the opening philosophical digression is compressed to a bare statement of fact."
+}

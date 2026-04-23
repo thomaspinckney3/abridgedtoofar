@@ -1,0 +1,53 @@
+{
+  "segment_id": "057",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Steelkilt was a tall and noble animal with a head like a Roman, and a flowing golden beard like the tasseled housings of your last viceroy's snorting charger; and a brain, and a heart, and a soul in him, gentlemen, which had made Steelkilt Charlemagne, had he been born son to Charlemagne's father. But Radney, the mate, was ugly as a mule",
+      "source_locator": "paragraph beginning 'Be this conceit of mine as it may'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the most quoted, most rhetorically distinctive passage in the chapter — Melville's baroque portrait of Steelkilt vs. Radney is a critical touchstone and an interpretive keystone for the aristocracy-of-nature theme. Its absence is a major signature failure.",
+      "suggested_fix": "Restore verbatim: the full 'tall and noble animal' paragraph through 'ugly as a mule; yet as hardy, as stubborn, as malicious. He did not love Steelkilt, and Steelkilt knew it.' This cannot be paraphrased without losing the passage's entire character."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "it is not seldom the case in this conventional world of ours—watery or otherwise; that when a person placed in command over his fellow-men finds one of them to be very significantly his superior in general pride of manhood, straightway against that man he conceives an unconquerable dislike and bitterness; and if he have a chance he will pull down and pulverize that subaltern's tower, and make a little heap of dust of it",
+      "source_locator": "paragraph beginning 'Now, as you well know, it is not seldom the case'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the narrator's explicit thematic digression on hierarchy and envy — the interpretive key to why the Radney-Steelkilt conflict erupts. Its complete absence strips the story of its social-philosophical scaffolding.",
+      "suggested_fix": "Restore the full digression, from 'Now, as you well know' through 'make a little heap of dust of it. Be this conceit of mine as it may,' before introducing Steelkilt's physical description."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "'his property is invested in looking-glasses. I wonder if he'd give a poor devil like me the model of his nose.'",
+      "source_locator": "Steelkilt's pump-banter speech, final lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "The punch line of Steelkilt's banter — mocking Radney's ugliness — is cut, removing the comic sting and the foreshadowing of the Charlemagne/mule contrast that also goes missing. The speech is truncated at the least significant point.",
+      "suggested_fix": "Restore the final two sentences of Steelkilt's speech: 'Boys, they say the rest of his property is invested in looking-glasses. I wonder if he'd give a poor devil like me the model of his nose.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "'It's not our fault; we didn't want it; I told him to take his hammer away; it was boy's business; he might have known me before this; I told him not to prick the buffalo; I believe I have broken a finger here against his cursed jaw; ain't those mincing knives down in the forecastle there, men? look to those handspikes, my hearties.'",
+      "source_locator": "barricade standoff, Steelkilt's extended speech while patrolling",
+      "draft_treatment": "absent",
+      "why_it_matters": "This speech is one of the most voice-distinctive moments for Steelkilt — its colloquial rhythm, self-justification, and veiled menace are signature Melville dialogue. It is entirely cut from the draft's summary of the standoff.",
+      "suggested_fix": "Restore Steelkilt's patrolling speech verbatim during the barricade scene; it is short enough to include at compression 1.0× and is too distinctive to summarize away."
+    },
+    {
+      "severity": "medium",
+      "class": "other",
+      "source_passage": "'for you, I mean to mince ye up for the try-pots;' and, seizing a rope, he applied it with all his might to the backs of the two traitors",
+      "source_locator": "captain's speech at sunrise, punishment of the three in the rigging",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source clearly distinguishes three men hung in the rigging — Steelkilt and the two traitors — but the draft says 'the two in the rigging,' erasing one figure and creating a factual inconsistency that distorts the story's logic.",
+      "suggested_fix": "Correct 'the two in the rigging' to 'the three men in the rigging' to match the source, and make clear the captain flogged the two traitors while reserving separate treatment for Steelkilt."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has two high-severity signature losses — the iconic Steelkilt/Radney portrait ('tall and noble animal… ugly as a mule') and the thematic digression on command-envy ('pull down and pulverize that subaltern's tower') — plus three medium failures, requiring regeneration."
+}

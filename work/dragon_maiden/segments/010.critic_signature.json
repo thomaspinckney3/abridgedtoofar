@@ -5,31 +5,40 @@
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "The woods weren't as friendly close up as they were from afar. The thick limbs of the ancient trees blocked out the moon, and there were no paths.",
-      "source_locator": "paragraph 3, description of entering the woods",
+      "source_passage": "The whole place was madness.",
+      "source_locator": "paragraph 2, after 'no doubt from the Maiden choosing'",
       "draft_treatment": "absent",
-      "why_it_matters": "This observational beat establishes the narrator's wry, slightly ironic voice — the contrast between expectation and reality is a recurring register note in the chapter.",
-      "suggested_fix": "Add a brief clause preserving the 'not as friendly close up as from afar' contrast when describing entering the woods."
+      "why_it_matters": "This clipped, sardonic sentence is a small but characteristic voice marker — the narrator's dry aside punctuating panic with deadpan commentary.",
+      "suggested_fix": "Restore the sentence verbatim after the mention of the choosing-night lights."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Below me the town twinkled with festive lights, no doubt from the Maiden choosing. The whole place was madness.",
-      "source_locator": "paragraph 2, during the hillside escape",
+      "source_passage": "I covered my face with my arm to shield my eyes from the damp, and when I looked at the pool again my jaw dropped open.",
+      "source_locator": "after the water-column collapses, before the woman's description",
       "draft_treatment": "absent",
-      "why_it_matters": "The narrator's dry editorial aside ('The whole place was madness') is a small but characteristic voice beat that marks the narrator's perspective on the ritual; its omission slightly flattens register.",
-      "suggested_fix": "Insert the glance at the town's festive lights and the sardonic 'The whole place was madness' during the escape description."
+      "why_it_matters": "The physical beat of the narrator shielding her face and then gaping is a small but grounding piece of embodied, comic reaction that bridges the spectacular effect to the narrator's personality.",
+      "suggested_fix": "Add the physical reaction beat before the woman's description to preserve the narrator's grounded, slightly comedic voice."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I'm not going back there, and you're going to let those other-\" My not-so-eloquent speech was interrupted by the twinkling of laughter.",
-      "source_locator": "paragraph after the lord says he will punish her",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The self-deprecating parenthetical 'My not-so-eloquent speech' is a signature voice beat of the narrator's ironic self-awareness; the draft simply cuts to 'a tirade that was cut short,' losing the narrator's wry self-commentary.",
-      "suggested_fix": "Restore 'My not-so-eloquent speech was interrupted' or equivalent self-deprecating phrasing rather than the neutral 'a tirade that was cut short.'"
+      "source_passage": "I shook like a leaf beneath her awesome beauty.",
+      "source_locator": "paragraph describing the woman descending to narrator's side",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile is the narrator's characteristic register—plain, slightly hyperbolic, self-aware; its absence slightly flattens the voice.",
+      "suggested_fix": "Restore 'I shook like a leaf beneath her awesome beauty' alongside the description of being unable to retreat."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "A wave of disbelief and fatigue swept over me.",
+      "source_locator": "penultimate paragraph, before 'That was no mirage'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The explicit naming of 'disbelief' alongside fatigue is an interpretive beat — the narrator consciously registers the unreality of the event, which immediately precedes the 'no mirage' line and gives it context.",
+      "suggested_fix": "Restore the 'wave of disbelief and fatigue' sentence before 'That was no mirage' to preserve the interpretive logic of that line."
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is broadly faithful, preserving all major plot beats, the water-spirit encounter, and key quoted dialogue verbatim; only minor voice-register notes and small ironic asides from the source narrator are absent or flattened, none rising above low severity."
+  "summary": "The draft is substantially faithful, preserving all high-weight signatures (the water-spirit's gift speech, the 'What a pity, for it amuses me' exchange, the stone-throw line, and the cavern-echo description) with only minor voice-flattening in transitional beats."
 }

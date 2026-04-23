@@ -3,69 +3,87 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Right and left, the streets take you waterward.",
-      "source_locator": "paragraph 2, after 'commerce surrounds it with her surf'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This crisp, imperative sentence is part of the rhythmic texture of the Manhattoes paragraph and contributes to Melville's distinctive rhetorical momentum; its excision flattens the paragraph's voice.",
-      "suggested_fix": "Restore 'Right and left, the streets take you waterward.' between 'commerce surrounds it with her surf.' and 'Its extreme downtown is the battery.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No.",
-      "source_locator": "paragraph 4, after 'seemingly bound for a dive'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The exclamatory 'Strange!' and the emphatic 'No.' with the intervening clause about loitering 'under the shady lee of yonder warehouses' are signature rhetorical gestures; the draft drops 'Strange!' and the loitering clause, losing the escalating insistence of the voice.",
-      "suggested_fix": "Restore 'Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No.' in full."
-    },
-    {
-      "severity": "medium",
+      "severity": "high",
       "class": "signature_loss",
-      "source_passage": "Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor.",
-      "source_locator": "paragraph 5, after 'infallibly lead you to water, if water there be in all that region'",
+      "source_passage": "There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.",
+      "source_locator": "End of paragraph 1, after 'I quietly take to the ship.'",
       "draft_treatment": "absent",
-      "why_it_matters": "The 'metaphysical professor' joke is one of Melville's wryest comic asides in the chapter and is interpretively important as an instance of his mock-philosophical register; its absence loses a distinctive voice marker.",
-      "suggested_fix": "Restore the sentence 'Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor.' before 'Yes, as every one knows, meditation and water are wedded for ever.'"
+      "why_it_matters": "This universalizing statement is the rhetorical pivot of the opening paragraph, expanding Ishmael's personal psychology into a claim about all humanity—interpretively essential and critically discussed.",
+      "suggested_fix": "Restore the two sentences verbatim after 'I quietly take to the ship.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It is the image of the ungraspable phantom of life; and this is the key to it all.",
+      "source_locator": "End of Narcissus paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The line is present verbatim—this is a pass item. (No failure here.)",
+      "suggested_fix": "N/A — preserved correctly."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I abominate all honorable respectable toils, trials, and tribulations of every kind whatsoever... though once broiled, judiciously buttered, and judgmatically salted and peppered, there is no one who will speak more respectfully, not to say reverentially, of a broiled fowl than I will.",
+      "source_locator": "Paragraph beginning 'Now, when I say that I am in the habit of going to sea...'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire digression on why Ishmael does not go as passenger, Commodore, or cook is absent. This is among the most voice-distinctive passages in the chapter—self-deprecating irony, mock-seriousness, the Egypt/pyramids joke—establishing the narrator's comic register. Its erasure flattens the chapter's tonal signature severely.",
+      "suggested_fix": "Restore at least the core of this passage: the refusal to go as Commodore or Cook, the 'abominate all honorable respectable toils' line, and the broiled-fowl joke, even in compressed form."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "The act of paying is perhaps the most uncomfortable infliction that the two orchard thieves entailed upon us. But being paid,—what will compare with it? The urbane activity with which a man receives money is really marvellous... Ah! how cheerfully we consign ourselves to perdition!",
+      "source_locator": "Paragraph beginning 'Again, I always go to sea as a sailor, because they make a point of paying me...'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most rhetorically distinctive and critically noted comic-philosophical passages in the chapter, and one of the clearest markers of Ishmael's ironic voice. The 'two orchard thieves' allusion and 'consign ourselves to perdition' are signature Melville.",
+      "suggested_fix": "Restore the paying/being-paid passage, including the 'two orchard thieves' line and 'how cheerfully we consign ourselves to perdition.'"
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "those stage managers, the Fates, put me down for this shabby part of a whaling voyage, when others were set down for magnificent parts in high tragedies, and short and easy parts in genteel comedies... induced me to set about performing the part I did, besides cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.",
+      "source_locator": "Paragraph beginning 'Though I cannot tell why it was exactly that those stage managers...'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph is interpretively critical: it introduces the theatrical/fatalistic framing of the whaling voyage and, crucially, raises the question of free will versus fate—a major thematic concern of the novel. The phrase 'cajoling me into the delusion that it was a choice resulting from my own unbiased freewill' is directly engaged by critics of Melville's determinism.",
+      "suggested_fix": "Restore the paragraph, especially the 'shabby part'/'magnificent parts in high tragedies' contrast and the free-will-as-delusion line."
     },
     {
       "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Go visit the Prairies in June, when for scores on scores of miles you wade knee-deep among Tiger-lilies—what is the one charm wanting?—Water—there is not a drop of water there! Were Niagara but a cataract of sand… Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat… or invest his money in a pedestrian trip to Rockaway Beach? Why is almost every robust healthy boy with a robust healthy soul in him, at some time or other crazy to go to sea? Why upon your first voyage as a passenger, did you yourself feel such a mystical vibration, when first told that you and your ship were now out of sight of land?",
-      "source_locator": "paragraph 6, middle rhetorical-question cascade",
+      "class": "voice_flattening",
+      "source_passage": "Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears Hook to Coenties Slip, and from thence, by Whitehall, northward. What do you see?",
+      "source_locator": "Paragraph 3, opening the Sabbath-walk passage",
       "draft_treatment": "absent",
-      "why_it_matters": "The rhetorical cascade of 'why' questions—the Prairies, the Tennessee poet, the robust healthy boy, the mystical vibration out of sight of land—is the argumentative and stylistic climax of the water-meditation passage; the draft jumps from the Saco valley directly to Niagara, excising all these questions and losing the cumulative rhetorical force that makes the Narcissus conclusion land.",
-      "suggested_fix": "Restore the full sequence from 'Go visit the Prairies in June' through 'out of sight of land?' before 'Why did the old Persians hold the sea holy?'"
+      "why_it_matters": "The imperative 'Circumambulate' and the specific New York street names are voice- and period-establishing; their removal collapses the vivid urban geography into a generic crowd scene.",
+      "suggested_fix": "Retain the opening imperative sentence and at least the rhetorical question 'What do you see?' to preserve the apostrophic voice."
     },
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
-      "source_locator": "paragraph on not going as cook, final sentence",
+      "source_passage": "What of it, if some old hunks of a sea-captain orders me to get a broom and sweep down the decks? What does that indignity amount to, weighed, I mean, in the scales of the New Testament? Do you think the archangel Gabriel thinks anything the less of me, because I promptly and respectfully obey that old hunks in that particular instance?",
+      "source_locator": "Paragraph beginning 'What of it, if some old hunks...'",
       "draft_treatment": "absent",
-      "why_it_matters": "This mock-erudite flourish—the pyramids as 'bake-houses'—is a characteristic Melvillean comic digression and a minor voice marker; its absence slightly deflates the passage's ironic comedy.",
-      "suggested_fix": "Append 'It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.' to the broiled-fowl passage."
+      "why_it_matters": "The rhetorical questions and the New Testament / archangel Gabriel mock-theology are signature Ishmael irony; the 'universal thump' line is retained but decontextualized without these preceding questions that give it its force.",
+      "suggested_fix": "Restore the 'old hunks' / Gabriel / New Testament setup before the 'universal thump' conclusion."
     },
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "And more than all, if just previous to putting your hand into the tar-pot, you have been lording it as a country schoolmaster, making the tallest boys stand in awe of you.",
-      "source_locator": "paragraph on going as a sailor, after the Van Rensselaers / Randolphs / Hardicanutes sentence",
+      "source_passage": "Not ignoring what is good, I am quick to perceive a horror, and could still be social with it—would they let me—since it is but well to be on friendly terms with all the inmates of the place one lodges in.",
+      "source_locator": "Second-to-last paragraph, after 'I love to sail forbidden seas, and land on barbarous coasts.'",
       "draft_treatment": "absent",
-      "why_it_matters": "The setup about lording it as a schoolmaster is the premise that makes 'The transition is a keen one… from a schoolmaster to a sailor' intelligible and funny; the draft retains the conclusion but drops the setup, leaving the schoolmaster reference contextually thin.",
-      "suggested_fix": "Restore the passage about being a country schoolmaster 'making the tallest boys stand in awe of you' before the 'transition is a keen one' sentence."
+      "why_it_matters": "This sentence is interpretively important: it foreshadows Ishmael's relationship to the horror of the whale and his detached-yet-engaged stance, a key critical locus; its loss removes a subtle characterization marker.",
+      "suggested_fix": "Restore after 'barbarous coasts' to preserve the foreshadowing of Ishmael's relationship to darkness."
     },
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "In much the same way do the commonalty lead their leaders in many other things, at the same time that the leaders little suspect it.",
-      "source_locator": "final paragraph before the Fates section, after 'He thinks he breathes it first; but not so.'",
+      "severity": "medium",
+      "class": "motif_depletion",
+      "source_passage": "But here is an artist. He desires to paint you the dreamiest, shadiest, quietest, most enchanting bit of romantic landscape... yet all were vain, unless the shepherd's eye were fixed upon the magic stream before him.",
+      "source_locator": "The artist/Saco valley paragraph, middle of the water-meditation section",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence is the interpretive payoff of the fore-castle/quarter-deck analogy, extending it into a broader social observation; its loss reduces the passage from social commentary to mere nautical fact.",
-      "suggested_fix": "Restore 'In much the same way do the commonalty lead their leaders in many other things, at the same time that the leaders little suspect it.' after 'He thinks he breathes it first; but not so.'"
+      "why_it_matters": "The painter-of-the-Saco passage is the central extended metaphor of the water-meditation sequence; its absence collapses that sequence from a rich argument to a series of rhetorical questions, losing the ekphrastic dimension that critics have analyzed extensively.",
+      "suggested_fix": "Restore at least the core of the Saco paragraph, including 'all were vain, unless the shepherd's eye were fixed upon the magic stream before him.'"
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves most verbatim signatures faithfully but excises the entire rhetorical-question cascade at the heart of the water-meditation (the Prairies, Tennessee poet, robust boy, mystical vibration), drops several voice-establishing comic asides (the metaphysical professor, the Egyptian pyramids), and flattens minor connective passages—yielding four medium-severity losses that collectively trigger regeneration."
+  "summary": "The draft preserves the opening paragraph and closing lines faithfully but erases multiple high-severity signature passages—including the entire cook/Commodore/broiled-fowl digression, the paying-vs-being-paid philosophical jest, the free-will-as-delusion paragraph, and the archangel Gabriel passage—along with several medium-severity voice-flattening cuts (Saco painter, Sabbath circumambulation, 'social with horror'), resulting in wholesale voice erasure of Ishmael's comic-ironic register."
 }

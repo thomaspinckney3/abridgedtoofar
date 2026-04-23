@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T09:09:57",
+  "key": "c02cf7345ff723e0136a5d8384c8452e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"broken_reference\",\n    \"ch_n_plus_1_passage\": \"\\\"Of the hearses? Have I not said, old man, that neither hearse nor coffin can be thine?\\\"\",\n    \"missing_in_ch_n\": \"Ch 119 contains no prior conversation between Ahab and the Parsee in which the Parsee made any statement about hearses or coffins.\",\n    \"why_confusing\": \"The Parsee's 'Have I not said' implies a previous exchange the reader should recall, but no such exchange appears in Ch 119, leaving the reader unable to identify when this was said.\"\n  },\n  {\n    \"class\": \"broken_reference\",\n    \"ch_n_plus_1_passage\": \"\\\"But I said, old man, that ere thou couldst die on this voyage, two hearses must verily be seen by thee on the sea\\\"\",\n    \"missing_in_ch_n\": \"Ch 119 never records the Parsee delivering this prophecy about two hearses to Ahab.\",\n    \"why_confusing\": \"The Parsee again presents this as a reiteration of something already told to Ahab, but no version of this prophecy was established in Ch 119, so the reader cannot locate the original utterance.\"\n  },\n  {\n    \"class\": \"broken_reference\",\n    \"ch_n_plus_1_passage\": \"\\\"Though it come to the last, I shall still go before thee thy pilot.\\\"\",\n    \"missing_in_ch_n\": \"Ch 119 includes no scene or dialogue in which the Parsee established the promise to serve as Ahab's pilot.\",\n    \"why_confusing\": \"Ahab's follow-up question 'Was it not so?' treats this as a callback to a prior agreement, but Ch 119 provides no such prior agreement for the reader to reference.\"\n  },\n  {\n    \"class\": \"broken_reference\",\n    \"ch_n_plus_1_passage\": \"\\\"I have dreamed it again,\\\" said he.\",\n    \"missing_in_ch_n\": \"Ch 119 contains no mention of Ahab having a recurring dream that would give meaning to 'again.'\",\n    \"why_confusing\": \"The word 'again' signals this is a repeated dream already known to the reader, but Ch 119 never established any such dream, leaving the reader unable to know what Ahab is referring to.\"\n  }\n]\n```",
+    "input_tokens": 1652,
+    "output_tokens": 587,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.900757074356079,
+    "stop_reason": "end_turn"
+  }
+}

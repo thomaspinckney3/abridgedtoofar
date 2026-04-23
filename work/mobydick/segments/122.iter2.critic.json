@@ -1,0 +1,53 @@
+{
+  "segment_id": "122",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Oh! jolly is the gale, And a joker is the whale… Such a funny, sporty, gamy, jesty, joky, hoky-poky lad, is the Ocean, oh! / The scud all a flyin'… Thunder splits the ships, But he only smacks his lips",
+      "source_locator": "after 'so the old song says' stage direction, full three-stanza song",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "Stubb's comic song is one of the most distinctive and critically discussed set-pieces in the chapter — its three full stanzas with the absurdist refrain establish the tonal counterpoint to Ahab's sublime defiance; truncating to a single-line fragment with an ellipsis destroys the comic-sublime dialectic that is the chapter's structural signature.",
+      "suggested_fix": "Restore all three stanzas of the song verbatim; they are short and the chapter's target word count easily accommodates them."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Now, as the lightning rod to a spire on shore is intended to carry off the perilous fluid into the soil; so the kindred rod which at sea some ships carry to each mast…",
+      "source_locator": "paragraph beginning 'Now, as the lightning rod to a spire on shore'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The lightning-rod technical digression is a signature Ishmael interpolation that grounds the supernatural St. Elmo's fire scene in practical seamanship, and provides the context for Ahab's defiant refusal ('let's have fair play here')—without it, Ahab's refusal loses its specific meaning and the irony of his danger-courting is invisible.",
+      "suggested_fix": "Restore at least a compressed version of the lightning-rod explanation (2–3 sentences) immediately before Starbuck's 'The rods! the rods!' so Ahab's refusal to deploy them is intelligible."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "[_Sudden, repeated flashes of lightning; the nine flames leap lengthwise to thrice their previous height; Ahab, with the rest, closes his eyes, his right hand pressed hard upon them._]",
+      "source_locator": "stage direction between Ahab's first and second speeches",
+      "draft_treatment": "absent",
+      "why_it_matters": "This bracketed theatrical stage direction is a critically noted formal anomaly in the chapter—Melville's shift to dramatic script form—that signals the chapter's deliberate theatrical register; replacing it with plain narrative prose erases a structurally and interpretively distinctive device.",
+      "suggested_fix": "Restore the bracketed stage direction verbatim between Ahab's first and second speeches; it is only one sentence and carries significant formal signature weight."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I would not take it. The lightning flashes through my skull",
+      "source_locator": "Ahab's second speech, after 'Take the homage of these poor eyes, and shutter-hands'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The line 'I would not take it' is a small but rhetorically charged self-correction within Ahab's defiant apostrophe; its omission slightly flattens the speech's internal dialectical movement.",
+      "suggested_fix": "Restore 'I would not take it.' after 'shutter-hands' in Ahab's second speech."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "so at those last words of Ahab's many of the mariners did run from him in a terror of dismay",
+      "source_locator": "final paragraph, closing simile",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'of Ahab's' and softens 'a terror of dismay' to plain 'terror,' losing small but characteristic rhythmic closure of the chapter's final sentence.",
+      "suggested_fix": "Restore 'of Ahab's' and 'a terror of dismay' in the closing sentence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity failure (Stubb's three-stanza song reduced to a fragment, destroying the chapter's comic-sublime dialectic) and two medium-severity failures (the lightning-rod digression entirely absent, and the theatrical stage direction erased), together requiring regeneration."
+}

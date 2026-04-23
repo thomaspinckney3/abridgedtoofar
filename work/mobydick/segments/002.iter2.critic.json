@@ -1,7 +1,26 @@
 {
   "segment_id": "002",
   "critic": "signature",
-  "findings": [],
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "in any book whatsoever, sacred or profane",
+      "source_locator": "paragraph 1, first sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'in any book whatsoever, sacred or profane' carries rhetorical breadth and the mock-scholarly comic register characteristic of the preface's voice; its omission slightly flattens the comic grandiosity of the Sub-Sub description.",
+      "suggested_fix": "Restore 'in any book whatsoever, sacred or profane' after 'he could anyways find' in the first sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "these extracts are solely valuable or entertaining, as affording a glancing bird's eye view",
+      "source_locator": "paragraph 1, final sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft reduces 'solely valuable or entertaining' and the framing around ancient authors and poets to a bare paraphrase, losing the self-deprecating ironic qualification that is part of the narrator's mock-editorial voice.",
+      "suggested_fix": "Restore 'these extracts are solely valuable or entertaining, as affording a glancing bird's eye view' rather than collapsing to 'They afford but a glancing bird's eye view.'"
+    }
+  ],
   "verdict": "pass",
-  "summary": "The draft reproduces the source text verbatim in its entirety; no signature loss of any kind."
+  "summary": "The draft preserves all high-priority signature passages faithfully, with only minor voice-flattening in two small phrases of the first paragraph that do not rise to regeneration severity."
 }

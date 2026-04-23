@@ -4,68 +4,50 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "Many are as green as the Green Mountains whence they came. In some things you would think them but a few hours old.",
-      "source_locator": "paragraph 3, after 'fellows who have felled forests'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This comic simile and deflationary aside are pure Ishmael voice — the dry irony of 'a few hours old' is a register-defining moment that the draft erases entirely.",
-      "suggested_fix": "Restore both sentences verbatim; they are short and carry essential tonal weight."
+      "class": "voice_flattening",
+      "source_passage": "New Bedford beats all Water Street and Wapping. In these last-mentioned haunts you see only sailors; but in New Bedford, actual cannibals stand chatting at street corners",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The comparative boast 'New Bedford beats all Water Street and Wapping' is the rhetorical pivot of the paragraph and carries Ishmael's mock-civic-pride voice; it disappears entirely in the draft, which jumps straight to the cannibals.",
+      "suggested_fix": "Restore 'New Bedford beats all Water Street and Wapping' before the cannibal sentence; it is short and metrically distinctive."
     },
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "you should see the comical things he does upon reaching the seaport.",
-      "source_locator": "paragraph 4, after 'joins the great whale-fishery'",
+      "class": "voice_flattening",
+      "source_passage": "Look there! that chap strutting round the corner. He wears a beaver hat and swallow-tailed coat, girdled with a sailor-belt and sheath-knife. Here comes another with a sou'-wester and a bombazine cloak.",
+      "source_locator": "paragraph 3, closing sentences",
       "draft_treatment": "absent",
-      "why_it_matters": "This rhetorical pivot — addressing the reader directly with mock-anticipatory glee — is a signature of Ishmael's ironic showmanship; its loss flattens the dandy paragraph.",
-      "suggested_fix": "Restore the clause 'you should see the comical things he does upon reaching the seaport' before the sea-outfit details."
+      "why_it_matters": "These vivid thumbnail sketches are the rhetorical payoff of the 'green Vermonters' passage—they make the bumpkin type concrete and comic. Their erasure collapses the scene into abstraction.",
+      "suggested_fix": "Reinsert the two street-portrait sentences ('Look there! … sou'-wester and a bombazine cloak') before the transition to the bumpkin-dandy paragraph."
     },
     {
       "severity": "medium",
-      "class": "signature_loss",
+      "class": "voice_flattening",
+      "source_passage": "Had it not been for us whalemen, that tract of land would this day perhaps have been in as howling condition as the coast of Labrador. As it is, parts of her back country are enough to frighten one, they look so bony.",
+      "source_locator": "paragraph 5, opening",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Ishmael's signature ironic civic boosterism—crediting whalemen for civilizing a wasteland—which frames the 'patrician houses' observation that follows. Without it the wealthy-New-Bedford passage loses its rhetorical setup.",
+      "suggested_fix": "Restore at least the Labrador comparison and the 'back country … so bony' sentence to preserve the ironic contrast with the opulent gardens."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
       "source_passage": "The streets do not run with milk; nor in the spring-time do they pave them with fresh eggs.",
-      "source_locator": "paragraph 5, after 'a land, also, of corn and wine'",
+      "source_locator": "paragraph 5",
       "draft_treatment": "absent",
-      "why_it_matters": "This ironic inversion of biblical pastoral abundance is textually distinctive Melville — a witty, rhythmically sharp sentence that defines the passage's satirical register; its absence is a clear voice loss.",
-      "suggested_fix": "Restore the sentence verbatim after 'a land, also, of corn and wine.'"
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Can Herr Alexander perform a feat like that?",
-      "source_locator": "paragraph 6, after 'dragged up hither from the bottom of the sea'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This rhetorical flourish — a mocking aside comparing whaling wealth to circus performance — is one of the chapter's most distinctively Melvillean comic gestures; its loss deflates the climax of the harpoon-mansion passage.",
-      "suggested_fix": "Restore the single sentence immediately after 'from the bottom of the sea.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "So omnipotent is art; which in many a district of New Bedford has superinduced bright terraces of flowers upon the barren refuse rocks thrown aside at creation's final day.",
-      "source_locator": "paragraph 8, after 'tapering upright cones of congregated blossoms'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This sentence, with its audacious cosmic scope ('creation's final day') grafted onto civic horticulture, is among the chapter's most critically noted passages; its loss removes a key interpretive node linking art, commerce, and cosmology.",
-      "suggested_fix": "Restore the sentence verbatim as the closing line of the summer-maples paragraph."
+      "why_it_matters": "This biblical anti-Canaan joke ('land of oil, true enough: but not like Canaan') needs its comic denial list to land; the draft keeps the Canaan reference but drops the punchline.",
+      "suggested_fix": "Add the two denial clauses ('streets do not run with milk… pave them with fresh eggs') after 'no Canaan' to restore the joke."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "every night recklessly burn their lengths in spermaceti candles",
-      "source_locator": "paragraph 7, the wedding/oil sentence",
+      "source_passage": "Whence came they? how planted upon this once scraggy scoria of a country?",
+      "source_locator": "paragraph 5, closing",
       "draft_treatment": "absent",
-      "why_it_matters": "The reckless candle-burning image completes the paragraph's portrait of New Bedford extravagance and carries motif-level weight (light/oil); its omission thins the passage.",
-      "suggested_fix": "Restore the full sentence about reservoirs of oil and spermaceti candles."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "The town itself is perhaps the dearest place to live in, in all New England.",
-      "source_locator": "paragraph 5, before 'It is a land of oil'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This plain declarative sets up the Canaan riff and anchors the passage's ironic praise of New Bedford; its omission leaves the transition abrupt.",
-      "suggested_fix": "Restore the sentence before 'It is a land of oil.'"
+      "why_it_matters": "The rhetorical question is the formal device that sets up the 'Go and gaze' answer; its omission makes the transition feel abrupt and removes Ishmael's mock-Socratic pose.",
+      "suggested_fix": "Restore the two-part question ('Whence came they? how planted upon this once scraggy scoria of a country?') before the 'Go gaze' sentence."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft preserves most verbatim passages well but systematically cuts the chapter's richest ironic asides and voice-establishing digressions — including the Canaan milk-and-eggs inversion, the 'Herr Alexander' flourish, the 'omnipotent art/creation's final day' sentence, and several Ishmael comic pivots — producing five medium-severity losses that together constitute a significant voice erasure."
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings (the 'New Bedford beats all Water Street' pivot, the street-portrait vignettes, and the Labrador/Canaan ironic framing) represent meaningful voice-flattening but do not individually or collectively meet the regeneration threshold given the two low-severity items."
 }

@@ -1,0 +1,35 @@
+{
+  "segment_id": "011",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I skidded to a stop in the hall. Shouts came from my bedroom and down the passage. More heavy feet approached, and what sounded like armor clattering against more metal. I whipped my head left and right.",
+      "source_locator": "After the escape from the pile of servants, before the door choice",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source gives a two-beat pause of disorientation—skidding stop, then sensory scan left and right—that mirrors the narrator's comic panic. The draft collapses it into a single clause.",
+      "suggested_fix": "Restore the 'skidded to a stop' beat and the explicit left-right head-whip to preserve the comic-action rhythm before the door choice."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "In all my frantic rushing and plotting I'd forgotten that the side door to my room opened to this one. I was abruptly reminded when I turned around and found myself staring at the sleeping dragon lord.",
+      "source_locator": "Paragraph beginning 'In all my frantic rushing'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-aware narratorial aside ('In all my frantic rushing and plotting I'd forgotten') is a mild but characteristic voice beat—the narrator catching herself in her own oversight. The draft just says 'turned—and froze' with no acknowledgment.",
+      "suggested_fix": "Add a brief self-aware aside noting she had forgotten the side door connected the two rooms, then the discovery of the sleeping lord."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I snorted. That was getting to be a habit.",
+      "source_locator": "After 'The Lady's favor is a great blessing and is rarely given.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The parenthetical self-observation 'That was getting to be a habit' is a small but characteristic self-aware narrator aside that reinforces the comedic voice. It is dropped entirely.",
+      "suggested_fix": "Restore 'That was getting to be a habit' after the snort line."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful—all major dialogue, the key naked-lord scene, the 'Us. The dreaded plural.' beat, and the wing-reveal are preserved, often verbatim—with only minor voice-flattening in a few transitional and self-aware narrator asides."
+}

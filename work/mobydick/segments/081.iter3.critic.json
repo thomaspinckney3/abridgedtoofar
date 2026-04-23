@@ -1,0 +1,35 @@
+{
+  "segment_id": "081",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like a treasure-hunter in some old house, sounding the walls to find where the gold is masoned in",
+      "source_locator": "paragraph 1, describing Tashtego's cautious search before breaking into the Tun",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is rhetorically distinctive — it analogizes the whale's head to a haunted house of hidden treasure, a motif that resonates with the novel's repeated gold-and-fate symbolism. Its absence flattens the paragraph's voice.",
+      "suggested_fix": "Reinsert: 'he proceeded heedfully, like a treasure-hunter in some old house, sounding the walls to find where the gold is masoned in.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as if that moment seized with some momentous idea; whereas it was only the poor Indian unconsciously revealing by those struggles the perilous depth to which he had sunk",
+      "source_locator": "paragraph 3, describing the throbbing head",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains the phrasing but strips the ironic 'whereas' pivot and loses 'the before lifeless head' framing that sets up the joke. The deadpan ironic voice is partially flattened.",
+      "suggested_fix": "Restore the full construction including 'the before lifeless head now throbbing and heaving just below the surface of the sea, as if that moment seized with some momentous idea; whereas it was only the poor Indian unconsciously revealing by those struggles the perilous depth to which he had sunk.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the delicious death of an Ohio honey-hunter... leaning too far over, it sucked him in, so that he died embalmed",
+      "source_locator": "final paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this passage reasonably well but omits the transitional 'As for the great head itself, that was doing as well as could be expected' — a characteristic Melvillean deadpan joke that closes the action before the meditation begins.",
+      "suggested_fix": "Insert 'As for the great head itself, that was doing as well as could be expected' between the rescue description and the 'And thus' conclusion paragraph."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful with strong preservation of signature lines, but loses the 'treasure-hunter sounding the walls' simile entirely and slightly flattens two other voice-marked passages; no high-severity failures, verdict pass."
+}

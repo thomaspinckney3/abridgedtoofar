@@ -1,0 +1,44 @@
+{
+  "segment_id": "047",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "some invisible pencil was also tracing lines and courses upon the deeply marked chart of his forehead",
+      "source_locator": "paragraph 2, the lamp/shadow/forehead passage",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The extended conceit — lamp throwing shadows of lines onto his brow while he draws lines on charts, and the 'invisible pencil' tracing the 'deeply marked chart of his forehead' — is one of the chapter's most critically noted images, a precise double-mirror of man and map. The draft reduces it to 'invisible pencils seemed to chase and furrow his wrinkled brow,' losing the key word 'chart' and the precise symmetry of the trope.",
+      "suggested_fix": "Restore the source's exact formulation: 'some invisible pencil was also tracing lines and courses upon the deeply marked chart of his forehead.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "secret intelligence from the Deity—mostly swim in _veins_, as they are called; continuing their way along a given ocean-line with such undeviating exactitude, that no ship ever sailed her course, by any chart, with one tithe of such marvellous precision",
+      "source_locator": "paragraph on sperm whales swimming in veins",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comparative clause — no ship ever sailed so precisely as these whales, making Ahab's chase in some ways a pursuit of a creature more navigational than any navigator — is interpretively important and stylistically distinctive. The draft cuts the explicit comparison entirely.",
+      "suggested_fix": "Restore the comparison: 'no ship ever sailed her course, by any chart, with one tithe of such marvellous precision.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Nor'-Westers, Harmattans, Trades; any wind but the Levanter and Simoon, might blow Moby Dick into the devious zig-zag world-circle of the Pequod's circumnavigating wake",
+      "source_locator": "penultimate full paragraph before recognition question",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The catalogue of winds ('Monsoons, Pampas, Nor'-Westers, Harmattans, Trades; any wind but the Levanter and Simoon') and the phrase 'devious zig-zag world-circle' are register-defining; the draft keeps only 'Monsoons or Trades' and 'zig-zag of the Pequod's wake,' losing the baroque abundance of the list and 'world-circle' and 'circumnavigating.'",
+      "suggested_fix": "Restore the full wind-catalogue and 'devious zig-zag world-circle of the Pequod's circumnavigating wake' to preserve the voice and the cosmological scope of the phrase."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "as even then not to be wholly without prospect of a meeting",
+      "source_locator": "paragraph ending 'hope to encounter his prey'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Minor but the understated irony of 'not to be wholly without prospect of a meeting' — the litotic formulation contrasting with Ahab's obsessive certainty — is a characteristic Melvillean tonal note.",
+      "suggested_fix": "A minor fix; reintroduce the litote or equivalent understatement."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful and preserves the chapter's most famous passages verbatim, but two medium-severity findings (the forehead-as-chart conceit flattened, and the ship-versus-whale precision comparison cut) and two low-severity findings represent meaningful voice and interpretive thinning."
+}

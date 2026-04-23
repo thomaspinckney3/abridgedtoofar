@@ -1,0 +1,44 @@
+{
+  "segment_id": "076",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"No doubt, and it's because of his cursed tail; he coils it down, do ye see, in the eye of the rigging.\"",
+      "source_locator": "dialogue exchange about Fedallah sleeping in boots/coiling tail in rigging",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief exchange about Fedallah coiling his devil's tail in the rigging is a small but precise comic-grotesque touch; its absence thins the sailors' theology comedy that is the chapter's tonal heart.",
+      "suggested_fix": "Restore the exchange: 'He sleeps in his boots, don't he? He hasn't got any hammock...' / 'No doubt...he coils it down in the eye of the rigging.' One or two lines suffice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"And if the devil has a latch-key to get into the admiral's cabin, don't you suppose he can crawl into a porthole? Tell me that, Mr. Flask?\"",
+      "source_locator": "Stubb's rejoinder after Flask asks whether Fedallah is the same devil",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'latch-key to the admiral's cabin / crawl into a porthole' line is Stubb's characteristic comic logic at its best; the draft collapses this entire passage into a vague summary ('sailor's theology'), losing the voice.",
+      "suggested_fix": "Restore at least Stubb's 'latch-key / porthole' argument and the 'Doesn't the devil live for ever; who ever heard that the devil was dead?' lines, which carry the chapter's humorous-metaphysical register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"There's a governor!\" ... \"Do I suppose it? You'll know it before long, Flask.\"",
+      "source_locator": "passage about the governor who signed a bond with the devil and won't put him in double-darbies",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft summarizes this as 'sailor's theology—duck the devil... the governor won't clap him in double-darbies, having signed a bond to roast the kidnappees.' The punchline 'There's a governor!' and its ironic political edge is erased; this is a voice-establishing satirical aside.",
+      "suggested_fix": "Restore at minimum: 'the old governor who daresn't catch him and put him in double-darbies, as he deserves... and signed a bond with him, that all the people the devil kidnapped, he'd roast for him? There's a governor!'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Three Spaniards? Adventures of those three bloody-minded soldadoes? Did ye read it there, Flask?\"",
+      "source_locator": "Flask says he can't remember where he heard the devil story; Stubb asks about the Three Spaniards",
+      "draft_treatment": "absent",
+      "why_it_matters": "The cryptic literary allusion about the 'three bloody-minded soldadoes' is an interpretive curiosity the critical tradition has discussed; its absence removes a small but characteristic layer of Melvillean in-joke.",
+      "suggested_fix": "Could be restored in a single sentence of dialogue without significant word-count cost."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's narrative spine and several key dialogue passages verbatim, but the middle section of the Stubb-Flask devil dialogue is collapsed into vague summary ('sailor's theology'), erasing multiple voice-establishing comic passages—the coiled tail in the rigging, the latch-key/porthole argument, 'There's a governor!'—producing three medium-severity voice-flattening failures that collectively trigger regeneration."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "105",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "untagging the points of his hose, unbuckling his garters, and casting loose the hooks and the eyes of the joints of his innermost bones",
+      "source_locator": "paragraph 1, opening sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This elaborately comic anatomical undressing metaphor is distinctively Melvillean — the burlesque register of 'unbuckling his garters' and 'hooks and eyes of the joints' is voice-establishing and has interpretive weight as a framing device for the skeletal chapters.",
+      "suggested_fix": "Restore the full undressing metaphor ('untagging the points of his hose, unbuckling his garters, and casting loose the hooks and the eyes of the joints of his innermost bones') in the opening paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "brushed the vines aside—broke through the ribs—and with a ball of Arsacidean twine, wandered, eddied long amid its many winding",
+      "source_locator": "paragraph near end, 'To and fro I paced'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft drops 'brushed the vines aside' — a small but rhythmically and imagistically important detail in the Theseus-labyrinth sequence; the source's three-beat dash-separated actions ('brushed … broke … wandered') are compressed to two, losing the deliberate accumulation.",
+      "suggested_fix": "Restore 'brushed the vines aside—' before 'broke through the ribs' to preserve the full rhythmic and labyrinthine sequence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "threepence to hear the echo in the hollow of his cerebellum; and sixpence for the unrivalled view from his forehead",
+      "source_locator": "Sir Clifford paragraph, near end",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft omits the 'threepence to hear the echo in the hollow of his cerebellum' item from the comic tariff list — the three-tier joke (twopence / threepence / sixpence) is a set piece of Melvillean satirical wit; dropping the middle term flattens the comic escalation.",
+      "suggested_fix": "Restore 'threepence to hear the echo in the hollow of his cerebellum' between the twopence and sixpence entries."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves all high-priority signature material (the weaver-god apostrophe, Life-Death passage, skeleton-temple description, tattooed-arm closing), but three medium-level compressions — the comic undressing metaphor in the opening, the dropped vine-brushing beat in the labyrinth sequence, and the missing middle tier of Sir Clifford's comic tariff — each erode Melville's distinctive comic and rhythmic voice without meeting the regeneration threshold."
+}

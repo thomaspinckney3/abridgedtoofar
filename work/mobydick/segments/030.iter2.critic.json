@@ -1,0 +1,62 @@
+{
+  "segment_id": "030",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "what helped to bring about that almost impious good-humor of his; that thing must have been his pipe",
+      "source_locator": "second paragraph, opening sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The long, winding syntactic structure of the 'what perhaps … what helped … that thing must have been his pipe' period is a signature of Melville's periodic sentence-building and is rhetorically distinctive; the draft collapses it to a quick rhetorical question and a fragment.",
+      "suggested_fix": "Restore the full periodic syntax: 'What perhaps … made Stubb such an easy-going, unfearing man … what helped to bring about that almost impious good-humor of his; that thing must have been his pipe.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the great leviathans had personally and hereditarily affronted him; and therefore it was a sort of point of honor with him, to destroy them whenever encountered",
+      "source_locator": "Flask's character paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "Flask's defining comic psychology—the idea that whales had 'personally and hereditarily affronted him'—is a critically noted characterization that explains his attitude; the draft replaces it with bare description of his opinion of whales as mice, losing the comic grievance logic.",
+      "suggested_fix": "Restore the clause about the leviathans having 'personally and hereditarily affronted him' and his sense of honor in destroying them, before summarizing the mouse/water-rat passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "So utterly lost was he to all sense of reverence for the many marvels of their majestic bulk and mystic ways",
+      "source_locator": "Flask's character paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The contrast between Flask's irreverence and the whale's 'majestic bulk and mystic ways' is thematically important, marking his blindness to the sublime; its absence removes an interpretive counterpoint to Starbuck and Ahab.",
+      "suggested_fix": "Include at least the clause about Flask being 'utterly lost to all sense of reverence for the many marvels of their majestic bulk and mystic ways' before the mouse characterization."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Curious to tell, this imperial negro, Ahasuerus Daggoo, was the Squire of little Flask, who looked like a chess-man beside him",
+      "source_locator": "Daggoo paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source uses the name 'Ahasuerus Daggoo' again here, reinforcing the biblical epithet that opens his description; the draft drops 'Ahasuerus' from this sentence, weakening the deliberate echo and the comic-sublime contrast it creates.",
+      "suggested_fix": "Restore 'Ahasuerus Daggoo' in this closing sentence to preserve the intentional biblical repetition."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "to behold. Suspended from his ears were two golden hoops, so large that the sailors called them ring-bolts, and would talk of securing the top-sail halyards to them",
+      "source_locator": "Daggoo paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific sailor joke—'would talk of securing the top-sail halyards to them'—is a vivid comic detail that establishes shipboard voice; the draft reduces it to a mere label ('like ring-bolts'), losing the sailors' speech and the humor.",
+      "suggested_fix": "Add 'and the sailors would talk of securing the top-sail halyards to them' after naming the ring-bolts."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the native American liberally provides the brains, the rest of the world as generously supplying the muscles",
+      "source_locator": "final paragraph, Isolatoes passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic formulation about American national identity is a critically noted satirical aside with interpretive weight about labor and race in the American enterprise; its absence thins the political subtext.",
+      "suggested_fix": "Include the sentence: 'the native American liberally provides the brains, the rest of the world as generously supplying the muscles.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—Flask's 'personally and hereditarily affronted' psychology, his 'reverence for majestic bulk' contrast, and the dropped periodic sentence building to Stubb's pipe—collectively constitute enough voice flattening and interpretive thinning to require regeneration."
+}

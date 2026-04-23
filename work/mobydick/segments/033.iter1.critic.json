@@ -1,0 +1,35 @@
+{
+  "segment_id": "033",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "In old Norse times, the thrones of the sea-loving Danish kings were fabricated, saith tradition, of the tusks of the narwhale. How could one look at Ahab then, seated on that tripod of bones, without bethinking him of the royalty it symbolized? For a Khan of the plank, and a king of the sea, and a great lord of Leviathans was Ahab.",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Norse-kings digression is the narrator's voice at its most extradiegetic and rhetorically distinctive; the inverted predicate ('was Ahab'), the 'saith tradition' archaism, and the full tricolon ('Khan… king… great lord of Leviathans') are all signature. The draft collapses this into a parenthetical clause, losing the narrator's presence entirely and truncating the tricolon to two terms.",
+      "suggested_fix": "Restore the full Norse-kings paragraph verbatim or near-verbatim, including 'saith tradition,' 'without bethinking him of the royalty it symbolized,' and the complete tricolon ending 'and a great lord of Leviathans was Ahab.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as if, like the dying whale, my final jets were the strongest and fullest of trouble",
+      "source_locator": "paragraph 3, Ahab's soliloquy",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is interpretively weighty — Ahab identifies himself with the dying whale he hunts, a key moment of self-revelation. The ellipsis in the draft erases it entirely, removing a critical mirror-image motif.",
+      "suggested_fix": "Restore 'as if, like the dying whale, my final jets were the strongest and fullest of trouble' within the soliloquy rather than eliding it with an ellipsis."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "This thing that is meant for sereneness, to send up mild white vapors among mild white hairs, not among torn iron-grey locks like mine.",
+      "source_locator": "paragraph 3, Ahab's soliloquy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full contrastive phrase 'mild white vapors among mild white hairs' is elided by an ellipsis in the draft; only the second half survives. The parallelism (mild/mild vs. torn/iron-grey) is a signature rhetorical figure.",
+      "suggested_fix": "Include the full phrase 'to send up mild white vapors among mild white hairs, not among torn iron-grey locks like mine' without internal ellipsis."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves Ahab's soliloquy and closing action adequately but flattens the narrator's extradiegetic Norse-kings digression (losing 'great lord of Leviathans' and 'saith tradition') and erases the dying-whale self-identification simile, producing two medium-severity failures and one low; below the regeneration threshold but approaching it."
+}

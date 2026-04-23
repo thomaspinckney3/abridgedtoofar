@@ -1,0 +1,44 @@
+{
+  "segment_id": "031",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the red-cheeked, dancing girls, April and May, trip home to the wintry, misanthropic woods; even the barest, ruggedest, most thunder-cloven old oak will at least send forth some few green sprouts",
+      "source_locator": "final paragraph, the extended April-and-May simile",
+      "draft_treatment": "absent",
+      "why_it_matters": "The elaborate personification of the seasons as 'dancing girls' is a distinctive, voice-establishing simile that critics note as characteristic of Melville's lyrical register; the draft omits the comparans entirely, reducing the closing image to a bare statement.",
+      "suggested_fix": "Restore the full simile: 'as when the red-cheeked, dancing girls, April and May, trip home to the wintry, misanthropic woods; even the barest, ruggedest, most thunder-cloven old oak will at least send forth some few green sprouts, to welcome such glad-hearted visitants; so Ahab did…'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "superstitiously asserted that not till he was full forty years old did Ahab become that way branded, and then it came upon him, not in the fury of any mortal fray, but in an elemental strife at sea",
+      "source_locator": "paragraph beginning 'By some tacit consent…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Gay-Head Indian's assertion that the scar came 'not in any mortal fray, but in an elemental strife at sea' is interpretively significant—it aligns Ahab's mark with cosmic rather than human violence, a crux for readings of Ahab's symbolic identity. The draft omits this entirely.",
+      "suggested_fix": "Add a sentence preserving the Gay-Head Indian's legend and the Manxman's counter-hint about a birth-mark 'from crown to sole.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "then, whoever should do that last office for the dead, would find a birth-mark on him from crown to sole",
+      "source_locator": "paragraph beginning 'By some tacit consent…', closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Manxman's prophecy that Ahab's scar runs from crown to sole is a critically noted passage linking Ahab to a deeper, fatally inscribed identity; its omission removes the supernatural doubling of the scar narrative.",
+      "suggested_fix": "Restore at least a compressed reference: the Manxman's counter-assertion that Ahab bears a birth-mark from crown to sole."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "they were every one of them Americans; a Nantucketer, a Vineyarder, a Cape man",
+      "source_locator": "second paragraph, characterization of the mates",
+      "draft_treatment": "absent",
+      "why_it_matters": "The terse catalogue of regional American identities is a period- and voice-marker that establishes democratic texture; the draft compresses the mates to a vague reassurance without this specificity.",
+      "suggested_fix": "Insert: 'they were every one of them Americans—a Nantucketer, a Vineyarder, a Cape man.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses three interpretively weighted passages—the Gay-Head Indian's elemental scar legend, the Manxman's crown-to-sole birth-mark prophecy, and the April-and-May dancing-girls simile—producing two medium-severity findings plus one more, crossing the regeneration threshold."
+}

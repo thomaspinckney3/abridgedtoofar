@@ -1,0 +1,62 @@
+{
+  "segment_id": "010",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "But Faith, like a jackal, feeds among the tombs, and even from these dead doubts she gathers her most vital hope.",
+      "source_locator": "paragraph after the 'All these things are not without their meanings' paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the most quoted lines in Moby-Dick and one of Melville's most famous sentences; the draft preserves it in quotation marks, which is good, but strips it from its paragraph-level context ('It needs scarcely to be told…') and embeds it mid-paragraph after a paraphrased transitional sentence that mangles the rhetorical setup, weakening the aphoristic landing.",
+      "suggested_fix": "Give the jackal sentence its own standalone paragraph as in the source, not buried in a transition."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "In what census of living creatures, the dead of mankind are included; why it is that a universal proverb says of them, that they tell no tales… All these things are not without their meanings.",
+      "source_locator": "Paragraph beginning 'In what census of living creatures'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhetorically elaborate anaphoric meditation—the 'In what census…why it is…how it is…' litany—is one of the chapter's most distinctive passages of Melville's philosophical voice and carries major interpretive weight about death, erasure, and the uncanny. It is entirely cut from the draft.",
+      "suggested_fix": "Restore at least the opening and closing phrases of this anaphoric paragraph; even a compressed version must preserve 'In what census of living creatures the dead of mankind are included' and the 'All these things are not without their meanings' close."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "What deadly voids and unbidden infidelities in the lines that seem to gnaw upon all Faith, and refuse resurrections to the beings who have placelessly perished without a grave.",
+      "source_locator": "Within the 'Oh! ye whose dead lie buried' paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft quotes the opening of this paragraph but drops the central theological charge—'refuse resurrections,' 'placelessly perished without a grave'—which is interpretively central to the chapter's concern with death at sea denying Christian burial and resurrection.",
+      "suggested_fix": "Extend the quoted passage from the 'Oh! ye' paragraph to include 'What deadly voids… placelessly perished without a grave.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Methinks we have hugely mistaken this matter of Life and Death… we are too much like oysters observing the sun through the water, and thinking that thick water the thinnest of air.",
+      "source_locator": "Final paragraph, 'But what then? Methinks…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'oysters observing the sun through the water' simile is rhetorically and stylistically distinctive Melville; it establishes the narrator's epistemological irony about spiritual knowledge. The draft skips from 'But what then?' directly to the two shorter 'Methinks' sentences, losing this central image.",
+      "suggested_fix": "Insert the oyster simile between the two preserved 'Methinks' quotations."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "fine chance for promotion, it seems—aye, a stove boat will make me an immortal by brevet.",
+      "source_locator": "Final paragraph, after 'Delightful inducements to embark'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic self-deprecating aside ('immortal by brevet') is a register-defining moment of Ishmael's dark comic voice; the draft drops it entirely, flattening the tonal shift that earns the philosophical turn that follows.",
+      "suggested_fix": "Restore 'Delightful inducements to embark, fine chance for promotion—aye, a stove boat will make me an immortal by brevet' before the meditation on Life and Death."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Queequeg near me. Affected by the solemnity of the scene… he was the only one who could not read, and, therefore, was not reading those frigid inscriptions",
+      "source_locator": "Paragraph beginning 'Shaking off the sleet from my ice-glazed hat'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Queequeg's presence and the detail that he cannot read the tablets—ironically making him the only one truly present in the chapel—is a structurally important character beat and carries interpretive weight about literacy and mourning, though it is not a famous quotable line.",
+      "suggested_fix": "Add a brief note of Queequeg's presence and the irony of his being the only one not reading the tablets."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity total erasure (the 'In what census of living creatures' anaphoric paragraph), one high-severity contextual stripping of the jackal sentence, and multiple medium-severity losses including the oyster simile, the 'immortal by brevet' irony, and the theological charge of 'placelessly perished without a grave,' collectively gutting the chapter's philosophical voice."
+}

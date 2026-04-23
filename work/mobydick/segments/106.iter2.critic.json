@@ -1,0 +1,35 @@
+{
+  "segment_id": "106",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "No speedy enterprise. But now it's done, it looks much like Pompey's Pillar.",
+      "source_locator": "paragraph beginning 'But the spine.'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The laconic two-sentence rhythm—'No speedy enterprise. But now it's done'—is a signature Ishmael comic aside; the deadpan self-interruption is erased in the draft's compressed 'pile its bones on end with a crane; it looks like Pompey's Pillar.'",
+      "suggested_fix": "Restore the two short sentences verbatim: 'No speedy enterprise. But now it's done, it looks much like Pompey's Pillar.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the circumstance, so variously repeated in this book, that the skeleton of the whale is by no means the mould of his invested form",
+      "source_locator": "paragraph beginning 'In considering these ribs'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The self-referential phrase 'so variously repeated in this book' is an important meta-narrative marker that critics read as Melville's comment on the novel's own epistemological project; the draft strips it to a bare statement of fact.",
+      "suggested_fix": "Retain the explicit self-referential framing: 'the circumstance, so variously repeated in this book, that the skeleton of the whale is by no means the mould of his invested form.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I was told that there were still smaller ones, but they had been lost by some little cannibal urchins, the priest's children, who had stolen them to play marbles with.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific detail 'the priest's children' and the verb 'stolen' give the anecdote its ironic edge (sacred/profane juxtaposition); the draft omits these, softening the joke.",
+      "suggested_fix": "Restore 'the priest's children, who had stolen them' to preserve the comic-ironic contrast."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful with strong verbatim preservation of the key passages, but minor voice-flattening affects three moments of Ishmael's signature comic-ironic register."
+}

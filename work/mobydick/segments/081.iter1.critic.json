@@ -1,0 +1,53 @@
+{
+  "segment_id": "081",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "smothered in the very whitest and daintiest of fragrant spermaceti; coffined, hearsed, and tombed in the secret inner chamber and sanctum sanctorum of the whale",
+      "source_locator": "final paragraph, 'Now, had Tashtego perished'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The tricolon 'coffined, hearsed, and tombed' is rhetorically and prosodically distinctive; 'tombed' and 'secret inner chamber' are dropped in the draft, cutting the full ceremonial escalation and the phrase 'secret inner chamber' which carries interpretive weight about the whale's interior as sacred space.",
+      "suggested_fix": "Restore the full phrase: 'coffined, hearsed, and tombed in the secret inner chamber and sanctum sanctorum of the whale.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "And thus, through the courage and great skill in obstetrics of Queequeg, the deliverance, or rather, delivery of Tashtego, was successfully accomplished, in the teeth, too, of the most untoward and apparently hopeless impediments; which is a lesson by no means to be forgotten.",
+      "source_locator": "paragraph beginning 'And thus, through the courage'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The self-correcting 'deliverance, or rather, delivery' and the moral tag 'which is a lesson by no means to be forgotten' are signature Ishmael irony; the draft drops both, removing the comic-moralizing register.",
+      "suggested_fix": "Restore 'the deliverance, or rather, delivery' and the clause 'which is a lesson by no means to be forgotten' before the midwifery sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "he seems some Turkish Muezzin calling the good people to prayers from the top of a tower",
+      "source_locator": "opening paragraph, after 'the rest of the company'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is a characteristic Ishmaelean cosmopolitan aside, adding interpretive and voice-establishing texture; its absence flattens the narrator's associative mode in the opening action sequence.",
+      "suggested_fix": "Reinsert the muezzin simile where Tashtego is described on top of the head crying down to the crew."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "But, peradventure, it may be sagaciously urged, how is this? We thought the tissued, infiltrated head of the Sperm Whale, was the lightest and most corky part about him … Not at all, but I have ye",
+      "source_locator": "paragraph beginning 'But, peradventure'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire mock-scientific digression in which the narrator pre-empts a reader objection and answers it is absent; this passage is a characteristic specimen of Melville's pseudo-natural-philosophy voice and carries interpretive weight about the head's density.",
+      "suggested_fix": "Add at least a compressed version of the 'peradventure' paragraph—the question-and-answer about why the head sinks—to preserve the narrator's direct address to the reader and the scientific-comic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I know that this queer adventure of the Gay-Header's will be sure to seem incredible to some landsmen, though they themselves may have either seen or heard of some one's falling into a cistern ashore",
+      "source_locator": "paragraph beginning 'I know that this queer adventure'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This direct-address paragraph, bridging the rescue narrative to the 'peradventure' pseudo-science section, establishes the narrator's knowing, ironic relationship with his landsman reader; its complete omission erases a register-defining intrusion.",
+      "suggested_fix": "Include at minimum the opening sentence addressing landsmen's skepticism, as it transitions naturally into the sinking-physics explanation."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the action arc but erases two full narrator-digression paragraphs (the landsmen address and the pseudo-scientific 'peradventure' refutation), drops the muezzin simile, flattens the signature tricolon 'coffined, hearsed, and tombed,' and loses the self-correcting 'deliverance, or rather, delivery' tag—collectively constituting voice erasure of the narrator's digressive, ironic register that defines the chapter's second half."
+}

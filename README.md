@@ -98,7 +98,23 @@ Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md` and wri
 
 Always emits `abridgment.md` when any drafted content exists. Budget adherence is reported, not gated — downstream stages (`book-critique`, `validate`) decide whether the produced abridgment is acceptable.
 
-### 9. `book-critique` — per-synopsis-sentence verification
+### 9. `coherence` — structural damage critic
+
+One Sonnet call per adjacent chapter pair (~$0.02 each). Walks the drafted diegetic chapters pairwise and flags places where compression *structurally damaged* meaning — not places where the draft is merely less richly phrased than source.
+
+Strict gate — only flags:
+- Non-parseable sentences
+- Dangling pronouns/demonstratives with no antecedent
+- Broken logical pivots (cut side of a `but`/`yet`/`because`)
+- Missing definitional glosses (the "observable in all sperm whales dying" case)
+- Unattributed dialogue (reply without trigger question, speaker elided)
+- Mid-scene jumps (chapter opens with "the waif-pole" etc. that prior draft didn't establish)
+
+Empirical numbers from Moby Dick + Dragon Maiden: ~100% precision, ~55% recall on dense-callback regions. Genre-stable (doesn't over-fire on modern prose).
+
+Writes `work/<book>/coherence_report.json`. Intended for human review — does NOT auto-feed regen. Budget-neutral regen can propagate micro-damage from every finding (even true ones) via compensating cuts elsewhere, so coherence findings deserve a review step before acting on them.
+
+### 10. `book-critique` — per-synopsis-sentence verification
 
 One LLM call on Sonnet (~$0.05). For each sentence in `book_synopsis.md`, checks whether the assembled abridgment contains evidence of that plot claim. Each sentence is classified:
 
@@ -110,11 +126,11 @@ Verdict: `ship` if all sentences are present, `hold` otherwise. Reads `abridgmen
 
 Writes `work/<book>/book_critic.json`.
 
-### 10. `rebudget` (optional) — book-level reallocation
+### 11. `rebudget` (optional) — book-level reallocation
 
 Reallocates per-segment targets if the assembled total is wildly off book_target.
 
-### 11. `validate` — mechanical sanity checks
+### 12. `validate` — mechanical sanity checks
 
 Zero-LLM. Motif concordance, style distribution (sentence length, em-dash frequency, vocab richness), signature fuzzy-match coverage. Flags depleted motifs and style divergence from source.
 
@@ -191,6 +207,7 @@ forage draft <book> --segment 001   # draft just one
 forage critique <book> 001          # run signature critic on one chapter
 forage iterate <book> 001           # draft → critic → regen loop (default 2 regens)
 forage assemble <book>              # concat + fail-loud budget gate
+forage coherence <book>             # structural damage critic (adjacent-chapter pairs)
 forage book-critique <book>         # synopsis-grounded per-sentence verification
 forage validate <book>              # motif + style + signature checks
 forage report [<book>]              # standard results row (all books if no arg)
@@ -245,6 +262,7 @@ forage/
     summarizer.py                  # 15-sentence synopsis, chunked chaining
     drafter.py                     # drafter + merge-group draft + fallback
     critics.py                     # signature critic
+    coherence.py                   # structural coherence critic
     book_critic.py                 # synopsis-vs-abridgment verifier
     iterate.py                     # draft/critique/regen loop
     assemble.py                    # concatenation + fail-loud gate
@@ -258,7 +276,11 @@ forage/
   prompts/                         # Jinja2 + YAML-frontmatter prompts
     draft_lean.md                  # spec-as-prompt drafter (lean)
     critic_signature.md            # adversarial signature critic
+    critic_coherence.md            # structural damage critic (adjacent pairs)
+    critic_book.md                 # synopsis-vs-abridgment verifier
     classify_chapters.md           # chapter classifier
+    summarize_synopsis.md          # single-call / partial synopsis
+    summarize_merge.md             # merge N partial synopses into one
     draft_segment.md               # legacy tier-based drafter
     prepass.md                     # legacy LLM plan builder
     prime.md                       # legacy example-signature seed
@@ -289,6 +311,7 @@ forage/
       abridgment.md                # assembled final output
       assembly_report.json         # budget stats, overage, segment tallies
       book_critic.json             # per-synopsis-sentence verdicts
+      coherence_report.json        # structural coherence findings
       llm_calls.jsonl              # every LLM call this book issued
     .replay_cache/                 # memoized LLM responses (FORAGE_REPLAY=1)
   CLAUDE.md                        # project rules for Claude Code

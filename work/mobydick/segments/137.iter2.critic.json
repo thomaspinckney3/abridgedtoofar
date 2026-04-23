@@ -1,0 +1,53 @@
+{
+  "segment_id": "137",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "And as the mighty iron Leviathan of the modern railway is so familiarly known in its every pace, that, with watches in their hands, men time his rate as doctors that of a baby's pulse",
+      "source_locator": "paragraph 3, within the Nantucket-commanders digression",
+      "draft_treatment": "absent",
+      "why_it_matters": "The railway-Leviathan / baby's-pulse comparison is one of the chapter's most distinctive rhetorical flourishes, a characteristic Melvillean analogy that the critical tradition cites as emblematic of his industrial-age consciousness; its complete omission flattens the digression to bare summary.",
+      "suggested_fix": "Restore at minimum the railway Leviathan sentence and the 'men time his rate as doctors that of a baby's pulse' clause; the digression can still be compressed but the central conceit must survive."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the proverbial evanescence of a thing writ in water, a wake, is to all desired purposes well nigh as reliable as the steadfast land",
+      "source_locator": "paragraph 3, Nantucket-commanders digression",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full formulation—'the proverbial evanescence of a thing writ in water, a wake, is to all desired purposes well nigh as reliable as the steadfast land'—is rhetorically and thematically precise; the draft reduces it to 'a thing writ in water is as sure as land,' erasing both 'proverbial evanescence' and 'wake,' which carry the philosophical weight.",
+      "suggested_fix": "Restore the fuller phrasing: 'a thing writ in water, a wake, is well nigh as reliable as the steadfast land.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Ahab's yet unstricken boat seemed drawn up towards Heaven by invisible wires,—as, arrow-like, shooting perpendicularly from the sea, the White Whale dashed his broad forehead against its bottom",
+      "source_locator": "paragraph near the end of the boat-smashing sequence",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'drawn up towards Heaven by invisible wires' image is one of the chapter's most critically noted phrases—a paradox of violent elevation framed as celestial ascent—and is entirely erased in the draft; only the arrow-like shooting remains, destroying the theological irony that interpreters depend on.",
+      "suggested_fix": "Restore the full image: 'Ahab's yet unstricken boat seemed drawn up towards Heaven by invisible wires,—as, arrow-like, shooting perpendicularly from the sea, the White Whale dashed his broad forehead against its bottom.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "intolerably glittered and glared like a glacier; and stood there gradually fading and fading away from its first sparkling intensity, to the dim mistiness of an advancing shower in a vale",
+      "source_locator": "paragraph describing Moby Dick's breaching",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The glacier simile and the slow fade 'to the dim mistiness of an advancing shower in a vale' are prosodically distinctive and visually precise; the draft reduces this to 'spray intolerably glittering, then fading to the dim mist of an advancing shower,' losing the glacier comparison and the rhythmic elaboration.",
+      "suggested_fix": "Restore: 'glittered and glared like a glacier; and stood there gradually fading and fading away … to the dim mistiness of an advancing shower in a vale.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "leaning on a shivered lance; propped up on a lonely foot",
+      "source_locator": "Ahab's 'Fates' lieutenant' speech, mid-paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "In the source this doublet—'leaning on a shivered lance; propped up on a lonely foot'—appears together as Ahab's self-description within his great speech; the draft drops 'leaning on a shivered lance' from this location, halving the image and reducing its rhetorical parallelism.",
+      "suggested_fix": "Restore both clauses: 'leaning on a shivered lance; propped up on a lonely foot.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "One high-severity erasure ('drawn up towards Heaven by invisible wires') plus three medium-severity losses—the railway-Leviathan analogy, the glacier simile, and the paired 'leaning on a shivered lance; propped up on a lonely foot'—combine to require regeneration."
+}

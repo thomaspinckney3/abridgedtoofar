@@ -1,0 +1,53 @@
+{
+  "segment_id": "110",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "a wonder, a grandeur, and a woe",
+      "source_locator": "paragraph 1, opening sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The tricolon 'a wonder, a grandeur, and a woe' is the rhetorical signature of the opening — its rhythm and the middle term 'grandeur' are what give the sentence its weight; the draft drops 'grandeur,' reducing the tricolon to a dyad.",
+      "suggested_fix": "Restore the full tricolon: 'he seems a wonder, a grandeur, and a woe.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "impersonal, I say; for it so shaded off into the surrounding infinite of things, that it seemed one with the general stolidity discernible in the whole visible world; which while pauselessly active in uncounted modes, still eternally holds its peace, and ignores you, though you dig foundations for cathedrals",
+      "source_locator": "paragraph on impersonal stolidity",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'ignores you, though you dig foundations for cathedrals' is an interpretively key and stylistically distinct clause — it gives the philosophical statement its cosmic sweep and irony; the draft compresses it to 'pauselessly active, yet holding its peace,' losing the cathedral image entirely.",
+      "suggested_fix": "Restore the 'ignores you, though you dig foundations for cathedrals' clause; it is the rhetorical peak of the stolidity passage and too distinctive to paraphrase away."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "He was a stript abstract; an unfractured integral; uncompromised as a new-born babe; living without premeditated reference to this world or the next",
+      "source_locator": "paragraph on the carpenter's character, after the Noah's ark clause",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'uncompromised as a new-born babe' is a critical touchstone for the carpenter's characterization as primordially pre-social; its absence leaves the parallel series ('stript abstract… unfractioned integral… uncompromised as a new-born babe') truncated and the interpretive force diminished.",
+      "suggested_fix": "Restore 'uncompromised as a new-born babe' between 'unfractioned integral' and 'living without premeditated reference.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "yet was it oddly dashed at times, with an old, crutch-like, antediluvian, wheezing humorousness, not unstreaked now and then with a certain grizzled wittiness; such as might have served to pass the time during the midnight watch on the bearded forecastle of Noah's ark",
+      "source_locator": "paragraph on stolidity and humorousness",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'not unstreaked' is Melville's characteristic litotes and 'bearded forecastle of Noah's ark' is a famous comic image; the draft renders it 'beardy forecastle' (a facetious modernism) and replaces 'not unstreaked' with plain 'streaked with,' flattening both the period voice and the irony.",
+      "suggested_fix": "Restore 'not unstreaked' and 'bearded forecastle' verbatim; 'beardy' is an unacceptable tonal intrusion."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "his brain, if he had ever had one, must have early oozed along into the muscles of his fingers",
+      "source_locator": "paragraph on pure manipulator",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The adverb 'along' in 'oozed along' is rhythmically and tonally specific; the draft drops it, slightly flattening the grotesque comic image.",
+      "suggested_fix": "Restore 'oozed along' in place of 'oozed.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses the tricolon 'wonder, grandeur, and woe' (high), erases the cathedral-foundations clause and 'uncompromised as a new-born babe' (medium interpretive losses), and misconstrues Melville's litotes and period diction in the Noah's ark passage (medium voice erasure), collectively requiring regeneration."
+}

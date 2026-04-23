@@ -1,0 +1,53 @@
+{
+  "segment_id": "064",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the whale looked like a portly burgher smoking his pipe of a warm afternoon. But that pipe, poor whale, was thy last.",
+      "source_locator": "paragraph describing the whale's first appearance at the surface",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'warm afternoon' detail and the full simile create the ironic domestic-vs.-doom juxtaposition that is signature Melville; losing 'of a warm afternoon' flattens the tonal contrast.",
+      "suggested_fix": "Restore 'of a warm afternoon' to the burgher-pipe simile to preserve the ironic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Woo-hoo! Wa-hee!\" screamed the Gay-Header in reply, raising some old war-whoop to the skies; as every oarsman in the strained boat involuntarily bounced forward with the one tremendous leading stroke which the eager Indian gave.",
+      "source_locator": "after Stubb's 'Start her!' speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source attributes the cry to 'the Gay-Header' (Tashtego) and includes the kinetic description of every oarsman bouncing forward — a moment of collective physical animation. The draft simply lists the three cries in sequence without the explanatory surrounding prose, losing the cause-and-effect energy.",
+      "suggested_fix": "Restore the attribution 'the Gay-Header' and the image of oarsmen bouncing forward from the leading stroke after Tashtego's war-whoop."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Ka-la! Koo-loo!\" howled Queequeg, as if smacking his lips over a mouthful of Grenadier's steak.",
+      "source_locator": "after Daggoo's cry",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The cannibal simile ('smacking his lips over a mouthful of Grenadier's steak') is a defining character note for Queequeg and a flash of Melville's dark comedy; its omission erases the interpretive texture of the moment.",
+      "suggested_fix": "Restore 'as if smacking his lips over a mouthful of Grenadier's steak' after Queequeg's howl."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the tall form of Tashtego at the steering oar crouching almost double, in order to bring down his centre of gravity",
+      "source_locator": "description of the boat under the taut harpoon-line",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft incorrectly reassigns this image to 'the tall Gay-Header' (which is accurate) but omits 'at the steering oar' and 'almost double,' reducing the specificity and physical vividness of the scene.",
+      "suggested_fix": "Restore 'at the steering oar crouching almost double' to retain precision."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "and vehement puff after puff from the mouth of the excited headsman; as at every dart, hauling in upon his crooked lance (by the line attached to it), Stubb straightened it again and again",
+      "source_locator": "description of Stubb during the blood-tide passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical '(by the line attached to it)' is a characteristic Melville technical aside that grounds the action in seamanship; its omission slightly reduces the documentary texture.",
+      "suggested_fix": "Minor; restore the parenthetical on revision if word budget allows."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most major signature passages verbatim, but three medium-severity voice-flattenings (the 'warm afternoon' burgher simile, the Gay-Header's war-whoop sequence, and the Grenadier's-steak simile for Queequeg) cumulatively thin the chapter's ironic and comic register."
+}

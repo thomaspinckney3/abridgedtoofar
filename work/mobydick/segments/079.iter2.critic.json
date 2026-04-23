@@ -1,0 +1,44 @@
+{
+  "segment_id": "079",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I would have you, as a sensible physiologist, simply—particularly remark its front aspect, in all its compacted collectedness.",
+      "source_locator": "Paragraph 1, opening sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The rhetorical address 'I would have you' repeated with 'simply—particularly' and 'I would have you investigate it now' is the voice-establishing didactic mode of the chapter; collapsing it to 'Regard now' flattens the narrator's insistent, professorial tone.",
+      "suggested_fix": "Restore 'I would have you, as a sensible physiologist, simply—particularly remark its front aspect' and the second 'I would have you investigate it now with the sole view of forming to yourself some unexaggerated, intelligent estimate.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "you observe that… you observe that… you observe that… Wherefore, you must now have perceived",
+      "source_locator": "Paragraph 2, entire anaphoric sequence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The repeated 'you observe that' anaphora is the rhetorical engine of the paragraph and a stylistically distinctive Melvillean gesture; the draft strips all five instances into a bare list, killing the prosodic and ironic texture.",
+      "suggested_fix": "Restore at least three 'you observe that' clauses to preserve the anaphoric rhythm that is the signature of this passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the blubber wraps the body of the whale, as the rind wraps an orange. Just so with the head; but with this difference",
+      "source_locator": "Paragraph 2, near end",
+      "draft_treatment": "absent",
+      "why_it_matters": "The orange-rind simile is a memorable, concretizing analogy Melville planted here deliberately and cross-referenced ('In some previous place I have described…'); its removal erases both a distinctive image and the narrator's self-referential voice.",
+      "suggested_fix": "Restore 'the blubber wraps the body of the whale, as the rind wraps an orange. Just so with the head; but with this difference…'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "By itself this sufficiently illustrates the obvious fact I drive at.",
+      "source_locator": "Paragraph 3, after the Indiamen analogy",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-conscious, mock-pedantic aside ('the obvious fact I drive at') is characteristic of Ishmael's rhetorical self-commentary and is dropped without replacement.",
+      "suggested_fix": "Reinsert the phrase after the Indiamen analogy to preserve the narrator's metalinguistic voice."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Three medium-severity findings (anaphora erasure, orange-rind simile loss, opening address flattening) and one low finding; no single high-severity loss, so the draft passes but should be revised to restore the 'you observe' anaphora and the orange-rind simile."
+}

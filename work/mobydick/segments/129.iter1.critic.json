@@ -1,0 +1,80 @@
+{
+  "segment_id": "129",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "He goes off in a huff. The whole he can endure; at the parts he baulks. Now I don't like this. I make a leg for Captain Ahab, and he wears it like a gentleman; but I make a bandbox for Queequeg, and he won't put his head into it.",
+      "source_locator": "Carpenter's soliloquy, opening lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "The carpenter's comic soliloquy is one of the most voice-distinctive passages in the chapter; its irony, register, and the 'leg for Ahab / bandbox for Queequeg' contrast are critically noted and establish the carpenter as a philosophical grotesque. Summarising it as mere 'grumbling' erases the voice entirely.",
+      "suggested_fix": "Restore the opening of the carpenter's soliloquy verbatim or near-verbatim, at minimum including 'He goes off in a huff. The whole he can endure; at the parts he baulks' and the Ahab-leg / Queequeg-bandbox antithesis."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I don't like this cobbling sort of business—I don't like it at all; it's undignified; it's not my place. Let tinkers' brats do tinkerings; we are their betters.",
+      "source_locator": "Carpenter's soliloquy, middle section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This declaration of craft-dignity and class pride ('Let tinkers' brats do tinkerings; we are their betters') is rhetorically distinctive and thematically important—it complicates the chapter's tone with dark comedy. The draft reduces this to a bland summary clause.",
+      "suggested_fix": "Preserve the 'tinkers' brats' line and the 'undignified; it's not my place' formulation verbatim or near-verbatim in the carpenter's interior speech."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I like to take in hand none but clean, virgin, fair-and-square mathematical jobs, something that regularly begins at the beginning, and is at the middle when midway, and comes to an end at the conclusion; not a cobbler's job, that's at an end in the middle, and at the beginning at the end.",
+      "source_locator": "Carpenter's soliloquy, middle section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the most rhetorically shaped sentences in the chapter—its chiastic inversion ('at an end in the middle, and at the beginning at the end') is a signature of Melville's comic philosophical prose and is critically cited as such. The draft preserves only a pale paraphrase.",
+      "suggested_fix": "Restore the full 'begins at the beginning… at the middle when midway… end at the conclusion' formulation with the chiastic reversal; it is compact enough to include verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Cruppered with a coffin! Sailing about with a grave-yard tray! But never mind. We workers in woods make bridal-bedsteads and card-tables, as well as coffins and hearses.",
+      "source_locator": "Carpenter's soliloquy, later section",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Sailing about with a grave-yard tray' and the bridal-bedsteads/coffins juxtaposition are interpretively loaded (life/death motif) and prosodically distinctive; they are absent from the draft entirely.",
+      "suggested_fix": "Include at least 'Sailing about with a grave-yard tray' and the 'bridal-bedsteads and card-tables, as well as coffins and hearses' line in the carpenter's monologue."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the pagan harpooneers remained unappalled… But again the old Manxman said nay.",
+      "source_locator": "Paragraph on the seal-cry and paragraph on the drowned sailor's fate",
+      "draft_treatment": "absent",
+      "why_it_matters": "The contrast between Christian sailors shuddering and pagan harpooneers unappalled, and the Manxman's dissent ('said nay') at the end of the episode, are both thematically significant (the book's paganism/Christianity dialectic) and characterologically specific. Both are omitted from the draft.",
+      "suggested_fix": "Add 'the pagan harpooneers remained unappalled' and the Manxman's final 'nay' after the crew's superstitious explanation for the death."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "they were not grieved at this event, at least as a portent; for they regarded it, not as a foreshadowing of evil in the future, but as the fulfilment of an evil already presaged.",
+      "source_locator": "Paragraph beginning 'But few, perhaps, thought of that at the time'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This distinction—fulfilment of an evil already presaged vs. foreshadowing of future evil—is interpretively precise and characteristic of Melville's fatalistic narrative voice; its loss removes a key articulation of the chapter's omen-logic.",
+      "suggested_fix": "Restore the 'not as a foreshadowing of evil in the future, but as the fulfilment of an evil already presaged' formulation in the narrative commentary following the sailor's death."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Stubb's line: 'Rather queer, that, I should say'",
+      "source_locator": "Dialogue after Starbuck's exclamation about the coffin-buoy",
+      "draft_treatment": "absent",
+      "why_it_matters": "Stubb's characteristic laconic humour ('Rather queer, that, I should say') is a brief but voice-specific beat that grounds the scene's dark comedy; its omission slightly flattens the trio's exchange.",
+      "suggested_fix": "Restore Stubb's single line of dialogue between Starbuck's exclamation and Flask's pragmatic response."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "like the carved Roman slave, while that wild cry remained within hearing",
+      "source_locator": "Paragraph on the night cry, describing the crew's stillness",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile 'like the carved Roman slave' is a characteristically Melvillean classical allusion that textures the scene; its loss is minor but represents a prose infelicity.",
+      "suggested_fix": "Insert 'like the carved Roman slave' into the description of the transfixed crew."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits high-severity voice erasure by reducing the carpenter's philosophic-comic soliloquy to a flat summary, losing multiple signature formulations (the Ahab-leg/Queequeg-bandbox contrast, the chiastic 'cobbler's job' sentence, 'tinkers' brats', 'grave-yard tray'), and also drops medium-severity interpretive and characterological material including the pagan/Christian contrast, the Manxman's dissent, and the 'fulfilment vs. foreshadowing' distinction."
+}

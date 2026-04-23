@@ -5,40 +5,40 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie.",
-      "source_locator": "paragraph describing Jethro, after the golden-cloaked figure removes his hood",
-      "draft_treatment": "absent",
-      "why_it_matters": "The simile 'more wrinkles than an unsettled pond' is a stylistically distinctive, voice-establishing comic figure that characterises Mac Flynn's narrator; its removal flattens a key moment of tonal register.",
-      "suggested_fix": "Restore the simile: 'He was about seventy with more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I shook my head. 'Never mind. Just don't drop me.' He chuckled. 'I believe I can agree to your request.'",
-      "source_locator": "Opening dialogue exchange, paragraphs 6–8",
+      "source_passage": "I gave him the Evil Eye. \"What do you think?\"",
+      "source_locator": "paragraph 4, narrator's first line of dialogue",
       "draft_treatment": "flattened",
-      "why_it_matters": "In the source the dialogue is tagged with full beats (she shakes her head; he chuckles) that carry the light, ironic tone. The draft strips the action tags, reducing it to bare speech and losing the rhythm that signals the narrator's voice.",
-      "suggested_fix": "Re-add 'He chuckled.' before his agreement line and 'I shook my head.' before 'Never mind,' to restore the comic beat."
+      "why_it_matters": "The capitalized 'Evil Eye' is a small but characteristically comic, narrator-voiced gesture; the draft drops the action beat entirely and keeps only the dialogue, erasing the narrator's sardonic physical register.",
+      "suggested_fix": "Restore the 'gave him the Evil Eye' action tag before the dialogue line."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Jethro. 'I have not seen the likes of her in many years.' Stephanie blushed and looked at the ground. Cayden bowed. 'Thank you, Jethro. I, too, am most pleased with her.'",
-      "source_locator": "After Jethro removes his hood, through Cayden's reply",
-      "draft_treatment": "absent",
-      "why_it_matters": "Jethro's compliment and Stephanie's blushing reaction, followed by Cayden's formal pleasure, form a small social comedy that also establishes the Maiden's value and Cayden's proprietorial satisfaction. Its removal deletes characterisation for both Stephanie and Cayden.",
-      "suggested_fix": "Restore Jethro's full speech, Stephanie's blush, and Cayden's reply before Xander's 'But to the reason for our visit' redirect."
+      "source_passage": "He was about seventy with more wrinkles than an unsettled pond.",
+      "source_locator": "paragraph describing Jethro, midway through the Portal scene",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This simile ('more wrinkles than an unsettled pond') is one of the chapter's few distinctively comic/literary lines; the draft keeps it but embeds it in a clipped clause that strips its stand-alone comic timing.",
+      "suggested_fix": "Give the simile its own sentence as in the source: 'He was about seventy with more wrinkles than an unsettled pond.'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "A cool wind whipped my hair over my face and over my bare arms. The warmth of the dragon lord's body stifled some of my shivering.",
-      "source_locator": "Second descriptive paragraph of the flight, after the first dialogue exchange",
+      "source_passage": "Something on the ground caught my attention. I stooped and picked it up to turn it in my fingers. It was a bit of compressed clay dropped from the tire of the pig-men's truck.",
+      "source_locator": "after the explanation of why dragons made the Portal, before the clay-clod question",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source makes the narrator's discovery a deliberate three-beat observation (noticing, examining, identifying); the draft collapses it to a single clause, losing the investigative rhythm that frames her deductive question.",
+      "suggested_fix": "Expand to at least two beats: the narrator spots something, picks it up, recognizes it as clay from the pig-men's tire, then displays it to Xander."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Our shadows ghosted over the needled tops as the sun set to our right. A cool wind whipped my hair over my face and over my bare arms.",
+      "source_locator": "second paragraph of the flight scene",
       "draft_treatment": "absent",
-      "why_it_matters": "The physical detail of bare arms and the dragon lord's warmth establishes the heroine's vulnerability and closeness to Xander; omitting it thins the sensory grounding of the opening flight.",
-      "suggested_fix": "Add a sentence noting the wind on her hair and bare arms and the warmth stifling her shivering during the flight description."
+      "why_it_matters": "The shadow-ghosting image and the detail of bare arms are small atmospheric/sensory anchors that establish the protagonist's physical vulnerability in flight; both are omitted in the draft's compressed opening.",
+      "suggested_fix": "Add the shadow-on-treetops image and the bare-arms shiver detail to the flight paragraph."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; the draft faithfully carries all major plot beats and most distinctive passages, but drops Jethro's comic wrinkle-simile, the Stephanie-blush social exchange, and a handful of beat-tags that carry the narrator's light ironic register — two medium and two low findings, below the regeneration threshold."
+  "summary": "No high-severity signature losses; two medium findings (loss of 'Evil Eye' action beat and flattening of the wrinkles simile's comic timing) and two low findings, falling below the regeneration threshold."
 }

@@ -1,0 +1,44 @@
+{
+  "segment_id": "127",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "every time the tetering ship loweringly pitched down her bowsprit, he turned to eye the bright sun's rays produced ahead; and when she profoundly settled by the stern, he turned behind",
+      "source_locator": "paragraph 2, Ahab's silent observation of the sun",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The rhythmic back-and-forth of Ahab turning ahead then behind — 'tetering … loweringly pitched … profoundly settled by the stern' — enacts his dawning suspicion with physical precision; the draft collapses this into a bland summary clause.",
+      "suggested_fix": "Restore the original two-beat structure: 'every time the ship loweringly pitched down her bowsprit, he turned to eye the bright sun's rays produced ahead; and when she profoundly settled by the stern, he turned behind.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But ere the first wild alarm could get out abroad among the crew, the old man with a rigid laugh exclaimed",
+      "source_locator": "after the compass discovery, before Ahab's 'I have it' speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "'A rigid laugh' and the phrase 'get out abroad among the crew' characterize Ahab's iron self-control in a crisis and the social dynamics of the Pequod; the draft drops straight to the dialogue, losing this voice-establishing beat.",
+      "suggested_fix": "Reinsert: 'But ere the first wild alarm could get out abroad among the crew, the old man with a rigid laugh exclaimed' before his 'I have it!' line."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the magnetic energy, as developed in the mariner's needle, is, as all know, essentially one with the electricity beheld in heaven; hence it is not to be much marvelled at",
+      "source_locator": "expository paragraph beginning 'Here, it must needs be said'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is an interpretive keystone: it equates the needle's magnetism with celestial lightning, thematically linking Ahab's self-magnetization of a new needle to his identification with divine/elemental force. The draft's paraphrase ('lightning has inverted or annihilated the needle's loadstone virtue') retains the fact but entirely erases this philosophical claim.",
+      "suggested_fix": "Restore the sentence on magnetic energy being 'essentially one with the electricity beheld in heaven' to preserve the chapter's thematic engine."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Accessory, perhaps, to the impulse dictating the thing he was now about to do, were certain prudential motives, whose object might have been to revive the spirits of his crew",
+      "source_locator": "paragraph beginning 'Accessory, perhaps'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph offers Melville's characteristic hedged, ironic narratorial commentary on Ahab's performance — the 'perhaps,' the 'prudential motives,' the note about superstitious sailors and 'shudderings and evil portents' — which establishes Ahab as theatrical manipulator as much as captain. Cutting it flattens the ironic layer.",
+      "suggested_fix": "Restore at least the core ironic observation: Ahab's motives may have been prudential — to revive crew spirits and forestall superstitious dread — as well as genuine seamanship."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses — the 'magnetic energy essentially one with electricity in heaven' interpretive sentence, the 'rigid laugh' before the compass revelation, and the ironic 'Accessory, perhaps' paragraph — together constitute three medium findings triggering regeneration."
+}

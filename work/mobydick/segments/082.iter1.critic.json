@@ -1,0 +1,62 @@
+{
+  "segment_id": "082",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I try all things; I achieve what I can.",
+      "source_locator": "paragraph 1, final sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This aphoristic sentence is one of Ishmael's most quoted self-characterizations in the entire novel; its rhythm and first-person directness are signature. The draft collapses it into 'trying all, I achieve what I can,' destroying the two-clause antithetical structure and the line's iconic form.",
+      "suggested_fix": "Restore the exact sentence verbatim: 'I try all things; I achieve what I can.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "there is no Champollion to decipher the Egypt of every man's and every being's face. Physiognomy, like every other human science, is but a passing fable.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Champollion conceit and the 'passing fable' verdict are the epistemological climax of the chapter; they carry major interpretive weight about the limits of reading and are critically discussed. Both are entirely omitted from the draft.",
+      "suggested_fix": "Restore the Champollion sentence and 'passing fable' declaration verbatim or near-verbatim before the closing line."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "unlettered Ishmael hope to read the awful Chaldee of the Sperm Whale's brow? I but put that brow before you.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'awful Chaldee of the Sperm Whale's brow' and the self-deprecating 'unlettered Ishmael' are interpretively crucial—they establish the narrator's humility, the brow's inscrutability as sacred text, and the chapter's hermeneutic theme. The draft jumps directly to 'I but put that brow before you' with no transition.",
+      "suggested_fix": "Insert 'how may unlettered Ishmael hope to read the awful Chaldee of the Sperm Whale's brow?' before the final closing line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Few are the foreheads which like Shakespeare's or Melancthon's rise so high, and descend so low, that the eyes themselves seem clear, eternal, tideless mountain lakes; and all above them in the forehead's wrinkles, you seem to track the antlered thoughts descending there to drink, as the Highland hunters track the snow prints of the deer.",
+      "source_locator": "paragraph 4, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended simile—Shakespeare and Melanchthon, tideless mountain lakes, antlered thoughts, Highland hunters—is among the most distinctive and critically noted prose-poetry in the chapter; reducing the brow catalogue to 'most are mere alpine strips' erases all of it.",
+      "suggested_fix": "Restore at least the Shakespeare/Melanchthon mountain-lakes sentence to preserve the comparative human-brow passage that frames the whale's brow as transcendent."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It signifies—'God: done this day by my hand.'",
+      "source_locator": "paragraph 4, the golden-seal sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This quoted motto is the rhetorical punch of the imperial-seal analogy; it is prosodically and thematically distinctive and gives the brow-as-divine-authority motif its sharpest articulation. The draft keeps the seal image but drops the inscription.",
+      "suggested_fix": "Append the motto verbatim after the golden-seal clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Dash the nose from Phidias's marble Jove, and what a sorry remainder! Nevertheless, Leviathan is of so mighty a magnitude… that the same deficiency which in the sculptured Jove were hideous, in him is no blemish at all. Nay, it is an added grandeur.",
+      "source_locator": "paragraph 2, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Phidias's Jove inversion—deficiency becomes grandeur—is a signature rhetorical move and voice-establishing irony. The draft keeps the 'magnitude redeems defect' logic but strips the Jove example and the 'Nay, it is an added grandeur' reversal entirely.",
+      "suggested_fix": "Restore the Phidias's Jove sentence and 'Nay, it is an added grandeur' to preserve Ishmael's characteristic ironic inversion."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses the verbatim 'I try all things; I achieve what I can,' the entire Champollion/passing-fable/awful-Chaldee finale, the Shakespeare–Melanchthon brow simile, and the Phidias's Jove inversion—collectively amounting to multiple high-severity signature and interpretive failures that require regeneration."
+}

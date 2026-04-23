@@ -1,0 +1,44 @@
+{
+  "segment_id": "113",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Poor rover! will ye never have done with all this weary roving? where go ye now? But if the currents carry ye to those sweet Antilles where the beaches are only beat with water-lilies, will ye do one little errand for me?",
+      "source_locator": "Pip's first speech, after Queequeg is replaced in hammock",
+      "draft_treatment": "absent",
+      "why_it_matters": "Pip's full lyrical speech is one of the most distinctive voice-moments in the chapter; the draft reduces it to a single closing line ('Now, Queequeg, die; and I'll beat ye your dying march') and omits the entire Antilles errand and the lost-Pip self-address, stripping the passage of its pathos and thematic resonance.",
+      "suggested_fix": "Restore at least the opening apostrophe ('Poor rover! will ye never have done…') and the Antilles errand speech; it can be lightly condensed but the voice and the self-referential motif (Pip seeking Pip) must survive."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Queequeg dies game!—mind ye that; Queequeg dies game!—take ye good heed of that; Queequeg dies game! I say; game, game, game! but base little Pip, he died a coward; died all a'shiver",
+      "source_locator": "Pip's second, wilder speech",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The manic repetition ('game, game, game!') and self-condemnation ('died all a'shiver') are critically noted as signature Pip rhetoric; the draft gives only a thin paraphrase, losing the rhythmic obsession and the full self-denunciation.",
+      "suggested_fix": "Preserve the triple iteration of 'Queequeg dies game' and the extended self-accusation including 'died all a'shiver—out upon Pip!' even within compression; the rhetorical shape is the signature."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Starbuck, gazing down the scuttle, murmured of fevers and ancient tongues; and that when the mystery is probed, it turns out always that in their wholly forgotten childhood those ancient tongues had been really spoken in their hearing by some lofty scholars. So, to my fond faith, poor Pip, in this strange sweetness of his lunacy, brings heavenly vouchers of all our heavenly homes. Where learned he that, but there?",
+      "source_locator": "Starbuck's speech at the scuttle",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Starbuck's theological gloss on Pip—'brings heavenly vouchers of all our heavenly homes. Where learned he that, but there?'—is an interpretively key passage that critics return to for the novel's treatment of madness and grace; the draft reduces it to a clause fragment.",
+      "suggested_fix": "Restore at least 'brings heavenly vouchers of all our heavenly homes. Where learned he that, but there?' in something close to verbatim form."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "you almost looked next for some mouldy corner-stone cask containing coins of Captain Noah, with copies of the posted placards, vainly warning the infatuated old world from the flood",
+      "source_locator": "Opening paragraph, description of the hold-clearing",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'Captain Noah' comic digression is a characteristic Ishmael whimsy that establishes the chapter's ironic-Biblical register before the fever narrative; its absence slightly flattens the narrator's voice at the opening.",
+      "suggested_fix": "A single sentence preserving the Captain Noah joke would restore the Ishmaelean comic register; it is short and loses nothing in word budget."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the great Queequeg death-vigil paragraph and the tattooing-riddle passage in strong form, but Pip's two speeches are heavily truncated (the lyrical Antilles address is entirely absent, the 'game, game, game' repetition reduced to a fragment), and Starbuck's theologically significant 'heavenly vouchers' speech is flattened—together these constitute three medium-severity findings triggering regeneration."
+}

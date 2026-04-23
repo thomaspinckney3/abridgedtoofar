@@ -3,51 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "voice_erasure",
-      "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
-      "source_locator": "after 'He wrapped his wings around me in a warm embrace'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is the chapter's most distinctive figurative image — a narratorial simile that establishes the transformation motif central to the novel's arc. Its absence erases both voice and interpretive weight.",
-      "suggested_fix": "Restore the caterpillar/butterfly simile verbatim; it is the chapter's clearest signature image and cannot be paraphrased without loss."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "A strange smell wafted into my nostrils. It was the fragrance of lilacs in spring and of newly cut grass in early summer, my favorite smells. All my fear melted away beneath such comforting scents.",
-      "source_locator": "paragraph beginning 'A strange smell wafted'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The scent-seduction passage is the chapter's key supernatural mechanism and the pivot from fear to consent; its complete absence removes the causal logic of the narrator's capitulation.",
-      "suggested_fix": "Restore the scent description (lilacs in spring, cut grass in early summer, 'my favorite smells') and the line 'All my fear melted away' — these are load-bearing for plot and character consent arc."
-    },
-    {
-      "severity": "high",
-      "class": "interpretive_loss",
-      "source_passage": "\"Will you allow me to take you as my own? To make you mine and no other?\" … \"Then you will be mine until I release you.\"",
-      "source_locator": "exchange before penetration, after 'His finger moved faster'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This verbal contract of possession ('mine until I release you') is the chapter's interpretive keystone — it defines the legal/magical terms of the Maiden bond and is the moment readers and critics point to when analyzing consent and power.",
-      "suggested_fix": "Restore the full consent-bargain dialogue verbatim, including the lord's closing line about release; it is structurally and thematically irreplaceable."
-    },
-    {
-      "severity": "high",
-      "class": "voice_erasure",
+      "severity": "medium",
+      "class": "voice_flattening",
       "source_passage": "I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't.",
-      "source_locator": "paragraph beginning 'W-what are you doing to me'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This internal confession is the narrator's clearest articulation of her conflicted agency and the captivity frame; erasing it removes the self-aware irony that defines her voice throughout the novel.",
-      "suggested_fix": "Restore the narrator's internal resistance-and-surrender passage; at minimum the 'kidnapped me and made me his slave' framing must survive to preserve interpretive context."
+      "source_locator": "paragraph beginning 'W-what are you doing to me?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This internal struggle—the explicit naming of 'dragon-man,' 'kidnapped,' 'slave'—is the interpretive keystone of the seduction scene, establishing the narrator's complicity and moral conflict. The draft alludes to it only in a parenthetical aside ('my traitor body... kidnapped and possession and no'), stripping the full emotional articulation that gives the consent scene its tension.",
+      "suggested_fix": "Restore the direct internal monologue verbalizing 'kidnapped me and made me his slave' so the reader feels the full weight of capitulation rather than a glancing reference."
     },
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "\"I consider myself only half dragon. My mother was a Maiden like yourself, and my father took her as his bride,\" he revealed.",
-      "source_locator": "early dialogue, after 'You're really a dragon, aren't you'",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
+      "source_locator": "paragraph ending 'He wrapped his wings around me in a warm embrace'",
       "draft_treatment": "absent",
-      "why_it_matters": "The lord's half-dragon origin is world-building exposition delivered here for the first time; it is interpretively essential to understanding the Maiden mythology and the lord's own identity.",
-      "suggested_fix": "Restore the half-dragon revelation dialogue verbatim; it is the chapter's primary lore disclosure and cannot be cut."
+      "why_it_matters": "The caterpillar/butterfly simile is the chapter's most distinctive figurative image and its only sustained metaphor; it encodes the transformation theme central to the whole book. Its complete absence removes a recognizable, genre-defining moment.",
+      "suggested_fix": "Reintroduce the caterpillar-to-butterfly simile in the wing-embrace passage; it is short enough to include verbatim within the compression budget."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "They consumed me like a man starved of food who had finally found his feast.",
+      "source_locator": "paragraph beginning 'He drew the flimsy gown over my head'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is the chapter's primary voice-establishing rhetorical flourish during the intimate scene and contributes significantly to the erotic register; its loss flattens the narrator's characteristic hyperbolic voice.",
+      "suggested_fix": "Restore or closely paraphrase the 'starved man / feast' simile when describing his gaze after removing her dress."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "\"I consider myself only half dragon. My mother was a Maiden like yourself, and my father took her as his bride,\" he revealed.",
+      "source_locator": "Early dialogue, after the narrator touches the wings",
+      "draft_treatment": "absent",
+      "why_it_matters": "The lord's disclosure that he is half-dragon and that his own mother was a Maiden is load-bearing world-building and mirrors the narrator's situation; it is the chapter's central piece of lore and its omission removes a thematically critical parallel.",
+      "suggested_fix": "Restore this dialogue exchange, including 'My mother was a Maiden like yourself,' before the seduction begins."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"So… tight,\" he gasped. I leaned forward and nibbled at his ear. \"So wonderful.\"",
+      "source_locator": "Near-climax exchange during intercourse",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief reciprocal dialogue is the only moment of mutual verbal exchange during the sex scene and gives the narrator an active, not merely receptive, role; its loss slightly reduces her voice in the scene's most intense passage.",
+      "suggested_fix": "Reintegrate the brief 'So tight / So wonderful' exchange to preserve narrative reciprocity."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft appears to be entirely absent or a near-blank placeholder — every major passage in Chapter 8, including the scent-seduction mechanism, the caterpillar simile, the consent-bargain dialogue, the narrator's captivity self-awareness, and the half-dragon origin disclosure, is completely missing, constituting catastrophic signature and interpretive loss."
+  "summary": "Four findings of medium severity (the absent half-dragon lore disclosure, the caterpillar/butterfly simile, the 'starved man/feast' simile, and the full slave-self-reproach) together trigger regeneration; the draft compresses the scene's interpretive and voice-defining material too aggressively."
 }

@@ -1,0 +1,71 @@
+{
+  "segment_id": "104",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "the original Samuel must long ago have slipped his cable for the great South Sea of the other world",
+      "source_locator": "paragraph after the Syren passage, 'All honor to the Enderbies'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a distinctive, voice-establishing joke — the narrator's whaling idiom applied to death — and it is part of the 'All honor to the Enderbies' paragraph that also carries the phrase 'exists to the present day.' Both are erased entirely, cutting a signature piece of Melvillean wit.",
+      "suggested_fix": "Restore the 'All honor to the Enderbies' sentence and the 'slipped his cable for the great South Sea of the other world' line verbatim; they are compact enough to fit easily."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "and may my parson forget me, and the devil remember me, if I ever lose sight of it",
+      "source_locator": "forecastle gam paragraph, after 'solid, Saxon hospitality of that ship'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This oath-formula is one of the chapter's most recognizable rhetorical flourishes — a signature of the narrator's exuberant irreverence. The entire clause and the preceding 'noble, solid, Saxon hospitality' sentence are cut, erasing a voice-defining moment.",
+      "suggested_fix": "Restore 'it minds me of the noble, solid, Saxon hospitality of that ship; and may my parson forget me, and the devil remember me, if I ever lose sight of it' verbatim."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "A short life to them, and a jolly death",
+      "source_locator": "forecastle gam paragraph, after 'every soul on board'",
+      "draft_treatment": "absent",
+      "why_it_matters": "A short, epigrammatic line that is tonally distinctive and culturally quotable; its sardonic warmth is a signature of Melville's whaling-world voice. The draft skips from 'every soul on board' directly to reefing the topsails.",
+      "suggested_fix": "Insert 'A short life to them, and a jolly death' verbatim after the mention of all trumps on board."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Most statistical tables are parchingly dry in the reading; not so in the present case, however, where the reader is flooded with whole pipes, barrels, quarts, and gills of good gin and good cheer",
+      "source_locator": "paragraph immediately after the Dutch provisions list",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is a classic example of Melville's self-conscious, ironic meta-commentary on his own digressive method; 'parchingly dry' and 'flooded with… gills' is a pointed rhetorical figure. Its loss flattens the narrator's voice at a key juncture.",
+      "suggested_fix": "Restore the sentence after the provisions list; it is brief and carries the chapter's ironic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I devoted three days to the studious digesting of all this beer, beef, and bread, during which many profound thoughts were incidentally suggested to me, capable of a transcendental and Platonic application",
+      "source_locator": "paragraph beginning 'At the time, I devoted three days'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The mock-scholarly aside about 'transcendental and Platonic application' from studying beer rations is a signature ironic digression that parodies academic method; cutting it erases the satirical register that defines this chapter.",
+      "suggested_fix": "Restore the 'three days digesting' passage with the 'transcendental and Platonic application' phrase; the unctuous-natures observation that follows may be trimmed but this sentence must appear."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I impute it, though, to their naturally unctuous natures, being rendered still more unctuous by the nature of their vocation",
+      "source_locator": "paragraph beginning 'At the time, I devoted three days'",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Unctuous natures… rendered still more unctuous' is a characteristic Melvillean pun (literal fat / moral oiliness) that the critical tradition notes; its omission is a voice loss in a chapter where such wordplay is structural.",
+      "suggested_fix": "Include at least one sentence on the 'unctuous natures' observation to preserve the pun and the mock-ethnographic tone."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "my friend Dr. Snodhead, a very learned man, professor of Low Dutch and High German in the college of Santa Claus and St. Pott's, to whom I handed the work for translation, giving him a box of sperm candles for his trouble",
+      "source_locator": "paragraph about 'Dan Coopman'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The absurd invented college name ('Santa Claus and St. Pott's') and the payment in sperm candles are pure Melvillean comedy; the draft reduces Snodhead to a brief attribution, losing the satirical invention entirely.",
+      "suggested_fix": "Restore the college of Santa Claus and St. Pott's and the sperm-candle fee; these details are brief but carry disproportionate voice weight."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft achieves adequate plot compression but erases multiple high-priority voice signatures — the 'slipped his cable' death-joke, the parson-and-devil oath, 'A short life to them and a jolly death,' the mock-scholarly 'transcendental and Platonic application' passage, the 'parchingly dry' meta-commentary, and the satirically named college of Santa Claus and St. Pott's — gutting the ironic narrator's voice that is this chapter's primary content."
+}

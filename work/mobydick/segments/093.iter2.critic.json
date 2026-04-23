@@ -1,0 +1,44 @@
+{
+  "segment_id": "093",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Now the Cinque Ports are partially or somehow under the jurisdiction of a sort of policeman or beadle, called a Lord Warden. Holding the office directly from the crown, I believe, all the royal emoluments incident to the Cinque Port territories become by assignment his. By some writers this office is called a sinecure. But not so. Because the Lord Warden is busily employed at times in fobbing his perquisites; which are his chiefly by virtue of that same fobbing of them.",
+      "source_locator": "paragraph 3, description of the Lord Warden",
+      "draft_treatment": "absent",
+      "why_it_matters": "This dry, satirical aside on the Lord Warden 'fobbing his perquisites' is a voice-establishing digression — the narrator's ironic legal commentary is precisely the register Melville sustains throughout this chapter. Its removal strips the setup of its satirical texture and leaves the reader with bare plot.",
+      "suggested_fix": "Restore at least the core joke: 'By some writers this office is called a sinecure. But not so. Because the Lord Warden is busily employed at times in fobbing his perquisites; which are his chiefly by virtue of that same fobbing of them.' One sentence is enough to preserve the irony."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the poor mariners in their respectful consternation—so truly English—knowing not what to say, fall to vigorously scratching their heads all round; meanwhile ruefully glancing from the whale to the stranger. But that did in nowise mend the matter, or at all soften the hard heart of the learned gentleman with the copy of Blackstone.",
+      "source_locator": "paragraph 5, between first dialogue exchange and 'At length one of them'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The aside 'so truly English' and the image of sailors scratching their heads while ruefully glancing from whale to stranger is a richly comic, nationally satirical set piece. Its absence collapses the dialogue exchange into a dry transcript and loses the cultural irony that gives the scene its Melvillean flavor.",
+      "suggested_fix": "Restore 'the poor mariners in their respectful consternation—so truly English—knowing not what to say, fall to vigorously scratching their heads all round' between the first 'It is his' and the subsequent questions."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I thought to relieve my old bed-ridden mother by part of my share of this whale.\" \"It is his.\"",
+      "source_locator": "paragraph 5, fourth exchange in the dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange is the emotional and rhetorical climax of the repetitive-refrain comedy — the most pathetic appeal answered with the same stonewalling 'It is his.' Its omission destroys the escalating bathos that makes the passage famous.",
+      "suggested_fix": "Restore the bed-ridden mother exchange in its position within the dialogue sequence; it is the affective peak of the anaphoric repetition."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It will readily be seen that in this case the alleged right of the Duke to the whale was a delegated one from the Sovereign. We must needs inquire then on what principle the Sovereign is originally invested with that right.",
+      "source_locator": "paragraph 7, transition to Plowdon",
+      "draft_treatment": "absent",
+      "why_it_matters": "This legal-reasoning transition sustains the chapter's mock-juridical voice; its absence makes the jump to Plowdon feel abrupt and strips one layer of the narrator's pseudo-scholarly posture.",
+      "suggested_fix": "A single bridging sentence restoring the delegated-right logic would recover the mock-legal narrator voice before the Plowdon citation."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity voice-flattening losses — the 'fobbing his perquisites' sinecure satire, the 'so truly English' head-scratching scene, and the bed-ridden mother dialogue exchange — together strip the chapter of its defining comic and ironic texture, triggering regeneration."
+}

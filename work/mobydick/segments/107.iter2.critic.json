@@ -1,0 +1,44 @@
+{
+  "segment_id": "107",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Give me a condor's quill! Give me Vesuvius' crater for an inkstand! Friends, hold my arms!",
+      "source_locator": "paragraph 3, the famous rhetorical exclamation",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "These three exclamations are among the most culturally famous lines in Moby-Dick and are preserved verbatim in the draft — this is actually preserved correctly. No loss here.",
+      "suggested_fix": "N/A — preserved verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "only think of the gigantic involutions of his intestines, where they lie in him like great cables and hawsers coiled away in the subterranean orlop-deck of a line-of-battle-ship",
+      "source_locator": "paragraph 1, end of opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a rhetorically distinctive, voice-establishing simile that exemplifies Melville's maritime analogical imagination; its excision flattens the opening paragraph's tonal register.",
+      "suggested_fix": "Restore the intestines/cables/orlop-deck simile at the close of the first paragraph, even in compressed form."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Applied to any other creature than the Leviathan—to an ant or a flea—such portly terms might justly be deemed unwarrantably grandiloquent. But when Leviathan is the text, the case is altered.",
+      "source_locator": "paragraph 2, after mention of archæological/fossiliferous/antediluvian",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence performs the chapter's central self-aware rhetorical joke about grandiloquence and is a signature instance of Melville's ironic narrator voice; removing it loses interpretive context for the Johnson/lexicographer joke that follows.",
+      "suggested_fix": "Restore 'Applied to any other creature… the case is altered' before the Johnson passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"Not far from the Sea-side, they have a Temple, the Rafters and Beams of which are made of Whale-Bones… This Rib (says John Leo) is said to have layn there a hundred Years before I saw it.\"",
+      "source_locator": "penultimate paragraph, the full John Leo block quotation",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Melville sets the John Leo passage off as a block quotation in period English prose, complete with archaic capitalization and syntax; this orthographic and rhetorical texture is a deliberate voice signature. The draft converts it to modern paraphrase, erasing the antique voice and the chapter's closing documentary effect.",
+      "suggested_fix": "Restore the John Leo passage as a verbatim (or near-verbatim) block quotation, preserving archaic spelling, capitalization, and Melville's framing attribution."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses — the intestines/orlop-deck simile, the 'ant or a flea… the case is altered' ironic pivot, and most critically the John Leo block quotation reduced from period-voiced direct quotation to modern paraphrase — collectively constitute three medium findings, triggering regeneration."
+}

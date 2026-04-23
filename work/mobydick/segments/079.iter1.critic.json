@@ -1,0 +1,53 @@
+{
+  "segment_id": "079",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "For unless you own the whale, you are but a provincial and sentimentalist in Truth. But clear Truth is a thing for salamander giants only to encounter; how small the chances for the provincials then?",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The line 'unless you own the whale, you are but a provincial and sentimentalist in Truth' is a critically engaged, interpretively weighty aphorism — it is the epistemological thesis of the chapter and the broader novel. The draft drops 'unless you own the whale, you are but a provincial and sentimentalist in Truth' entirely, preserving only the truncated 'clear Truth is for salamander giants only to encounter' without the rhetorical build or the provincial-sentimentalist formulation.",
+      "suggested_fix": "Restore verbatim or near-verbatim: 'For unless you own the whale, you are but a provincial and sentimentalist in Truth. But clear Truth is a thing for salamander giants only to encounter; how small the chances for the provincials then?'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "What befell the weakling youth lifting the dread goddess's veil at Lais?",
+      "source_locator": "final sentence of the chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing rhetorical question — the allusion to the veiled goddess at Lais (Sais) — is the chapter's closing flourish and carries major interpretive weight as a recurring Melvillean motif of veiled truth and the danger of uncovering it. Its total absence erases the chapter's thematic landing.",
+      "suggested_fix": "Append the sentence verbatim as the chapter's closing line: 'What befell the weakling youth lifting the dread goddess's veil at Lais?'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Unerringly impelling this dead, impregnable, uninjurable wall, and this most buoyant thing within; there swims behind it all a mass of tremendous life, only to be adequately estimated as piled wood is—by the cord; and all obedient to one volition, as the smallest insect.",
+      "source_locator": "fourth paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile 'estimated as piled wood is—by the cord' and the comparison 'obedient to one volition, as the smallest insect' are distinctive rhythmic and rhetorical figures that characterize Melville's analytical-sublime mode. The draft collapses this into 'a corded mass of tremendous life obedient to one volition,' losing both similes and the cumulative syntactic structure.",
+      "suggested_fix": "Restore the key similes: 'a mass of tremendous life, only to be estimated as piled wood is—by the cord; all obedient to one volition, as the smallest insect.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Here is a vital point; for you must either satisfactorily settle this matter with yourself, or for ever remain an infidel as to one of the most appalling, but not the less true events, perhaps anywhere to be found in all recorded history.",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This framing sentence establishes the rhetorical stakes of the entire chapter — the claim to historical truth and the charge of infidelity against skeptics. Its absence removes the chapter's argumentative spine and the voice's characteristic blend of urgency and irony.",
+      "suggested_fix": "Include near the opening: 'you must either settle this matter with yourself, or for ever remain an infidel as to one of the most appalling, but not the less true events, perhaps anywhere to be found in all recorded history.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I do not think that any sensation lurks in it.",
+      "source_locator": "second paragraph, final sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This deadpan, offhand closing remark is a signature Ishmael move — ironic understatement after an accumulation of vivid scientific detail. Its absence mutes the narrator's distinctive voice at a key tonal moment.",
+      "suggested_fix": "Restore the sentence after the horses'-hoofs image: 'I do not think that any sensation lurks in it.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity signature losses (the 'provincial and sentimentalist in Truth' aphorism and the closing veil-at-Lais question) plus three medium-severity voice flattenings demand regeneration."
+}

@@ -1,0 +1,53 @@
+{
+  "segment_id": "133",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "seemed to have chased his foe into an ocean-fold, to slay him the more securely there; now, that he found himself hard by the very latitude and longitude where his tormenting wound had been inflicted",
+      "source_locator": "Opening paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'ocean-fold' is distinctive and poetic; 'his tormenting wound had been inflicted' carries interpretive weight about Ahab's wound as the organizing obsession. The draft collapses this to bland geography ('chased her foe into these latitudes').",
+      "suggested_fix": "Restore 'ocean-fold' and the 'very latitude and longitude where his tormenting wound had been inflicted' clause to preserve the rhetorical accumulation of 'now that… now that… now that' and the wound motif."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as if in the Parsee Ahab saw his forethrown shadow, in Ahab the Parsee his abandoned substance",
+      "source_locator": "Fifth paragraph (Ahab/Fedallah starlight passage)",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the chapter's most interpretively weighted lines — the shadow/substance chiasm defining the Ahab-Fedallah relationship — but the draft places it mid-paragraph attached to the 'starlight' description, severing it from the surrounding prose that builds to it (the pole-like asunder contrast, the silence, the potent spell). The passage is present but stripped of its rhetorical build.",
+      "suggested_fix": "Restore the surrounding context: 'Though such a potent spell seemed secretly to join the twain; openly… they seemed pole-like asunder' before the shadow/substance line."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "it was strange, that this was the very man he should select for his watchman; freely giving his whole life into such an otherwise distrusted person's hands",
+      "source_locator": "Penultimate narrative paragraph before the hawk scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "The editorial reflection on the paradox of Ahab selecting Starbuck — the one man he distrusts, the one who opposed him — to hold his life-rope is a critical interpretive passage. Critics return to it as evidence of Ahab's unconscious trust in Starbuck. The draft omits this entirely.",
+      "suggested_fix": "After 'I give it into thy hands, Starbuck,' add the narrator's comment on the strangeness of Ahab entrusting his life to the one man he had seemed to doubt, who had also opposed him."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "But did you deeply scan him in his more secret confidential hours; when he thought no glance but one was on him",
+      "source_locator": "Third paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The clause 'when he thought no glance but one was on him' — meaning the Parsee's — is dropped, removing the layer of surveillance within surveillance that the passage establishes.",
+      "suggested_fix": "Restore 'when he thought no glance but one was on him' to maintain the nested watching dynamic."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "At the first faintest glimmering of the dawn, his iron voice was heard from aft,—'Man the mast-heads!'—and all through the day… 'What d'ye see?—sharp! sharp!'",
+      "source_locator": "Paragraph beginning 'At the first faintest glimmering'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The refrain of Ahab's voice — 'Man the mast-heads!' and 'What d'ye see?—sharp! sharp!' — punctuating every watch is a voice-establishing motif of obsessive command. Its absence thins the atmospheric build toward the hawk scene.",
+      "suggested_fix": "Insert one sentence preserving Ahab's repeated dawn-to-dusk commands, including the direct speech 'What d'ye see?—sharp! sharp!'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings (collapsed opening rhetoric including 'ocean-fold' and the wound, loss of the Starbuck-watchman interpretive passage, and the shadow/substance chiasm stripped of its build) plus two low findings, falling short of the regeneration threshold of three mediums — but the Starbuck watchman omission is the most consequential gap."
+}

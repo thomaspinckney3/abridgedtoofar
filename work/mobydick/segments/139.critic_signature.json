@@ -1,0 +1,26 @@
+{
+  "segment_id": "139",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was the devious-cruising Rachel, that in her retracing search after her missing children, only found another orphan.",
+      "source_locator": "final sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The closing sentence is among the most celebrated in American literature; its exact cadence and syntax ('It was the devious-cruising Rachel, that in her retracing search…') carry enormous signature weight. The draft restructures it as a relative clause appended to an em-dash, losing the biblical resonance of the deliberate, slow final sentence.",
+      "suggested_fix": "Restore the source sentence verbatim: 'It was the devious-cruising Rachel, that in her retracing search after her missing children, only found another orphan.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It so chanced, that after the Parsee's disappearance, I was he whom the Fates ordained to take the place of Ahab's bowsman, when that bowsman assumed the vacant post",
+      "source_locator": "third paragraph, opening",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The circumlocutory 'It so chanced, that…I was he whom the Fates ordained' is distinctively Ishmael's fatalistic voice; the draft's compression to 'the Fates ordained I be Ahab's bowsman' loses that characteristic syntactic indirection.",
+      "suggested_fix": "Restore 'It so chanced, that…I was he whom the Fates ordained' to preserve Ishmael's voice and the sense of chance intertwined with fate."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves the Ixion passage and the sharks/sea-hawks sentences verbatim, but the closing signature sentence—one of the most famous in the novel—is paraphrased away, constituting a medium-severity voice and signature loss."
+}

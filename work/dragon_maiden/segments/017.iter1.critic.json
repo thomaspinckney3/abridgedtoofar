@@ -3,15 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "other",
-      "source_passage": "entire Chapter 13 source text (≈1100 words)",
-      "source_locator": "full segment",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "No.  I forgot to click on my internal video recorder before they knocked me out.",
+      "source_locator": "paragraph 4, Miriam's response to Heather's question about how she got in",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'internal video recorder' phrasing is a signature comic beat — the technological anachronism and sarcastic formality establish the narrator's voice precisely. The draft's 'I forgot to hit record' strips the comedic specificity and the self-deprecating persona.",
+      "suggested_fix": "Restore 'forgot to click on my internal video recorder before they knocked me out' verbatim or extremely close to it."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle.  The long fifteen miles had been covered in a little under fifteen minutes.  An eternity for my heart",
+      "source_locator": "after the airborne flight section, before the guards with spears",
       "draft_treatment": "absent",
-      "why_it_matters": "No draft text was supplied in the 'Draft text' section; there is nothing to evaluate against the source, meaning all source content — including every signature passage — is effectively absent from the draft.",
-      "suggested_fix": "Supply the actual draft text for Chapter 13 and resubmit for evaluation."
+      "why_it_matters": "This is a sustained ironic digression — 'bartering my soul for a reprieve' and the play on 'eternity' for heart and for sleep — that exemplifies the narrator's comic-anxiety register. Its omission flattens the emotional texture of an otherwise tense scene.",
+      "suggested_fix": "Reinsert the soul-bartering line and the eternity wordplay as a brief interlude between take-off and landing at the castle."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I wondered how many doors were shut to this priestly fellow.",
+      "source_locator": "paragraph after guards bow and open the door to Xander's chambers",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aside is a voice-establishing ironic observation — dry, almost absurdist — that is immediately undercut by the horror of seeing Xander. The juxtaposition is a signature narrative technique; its absence removes a characteristic beat of the narrator's consciousness.",
+      "suggested_fix": "Reinsert the brief aside about doors and the priestly fellow before the pivot to seeing Xander in the bed."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She grinned.  'I'll always be there to give you the good news, now get going.'",
+      "source_locator": "Heather's farewell, just before Miriam leaps into the portal",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves 'I'll always be here to give you the good news' but drops 'now get going' and converts 'there' to 'here,' softening the brisk, affectionate send-off that defines Heather's voice in this exchange.",
+      "suggested_fix": "Restore 'now get going' and use 'there' to preserve the exact register of Heather's farewell."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Draft text field is empty; the draft is entirely missing, so all signature content is absent by definition."
+  "summary": "Three medium-severity voice-flattening failures — the 'internal video recorder' comic line, the 'bartering my soul' ironic digression during flight, and the 'how many doors were shut' aside — collectively erase the narrator's signature comic-anxiety register at key moments, warranting regeneration."
 }

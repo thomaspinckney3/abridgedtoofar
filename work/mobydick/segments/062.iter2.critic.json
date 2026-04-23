@@ -1,0 +1,53 @@
+{
+  "segment_id": "062",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the lonely, alluring jet would be seen. But one transparent blue morning, when a stillness almost preternatural spread over the sea",
+      "source_locator": "paragraph 1-2 transition",
+      "draft_treatment": "absent",
+      "why_it_matters": "The opening paragraph's closing image — 'the lonely, alluring jet would be seen' — establishes the motif of the spectral white whale sighting that has been building across chapters; its elision removes narrative continuity and the atmospheric beat that precedes the great squid reveal.",
+      "suggested_fix": "Restore 'and still, at wide intervals in the silvery night, the lonely, alluring jet would be seen' before the blue-morning paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It seemed not a whale; and yet is this Moby Dick? thought Daggoo.",
+      "source_locator": "paragraph 3, mid-passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "Daggoo's interior question — 'is this Moby Dick?' — is interpretively important: it stages the misrecognition (squid for whale) that is the chapter's central dramatic irony, and it belongs to the voice-establishing rhythm of the passage.",
+      "suggested_fix": "Restore 'It seemed not a whale; and yet is this Moby Dick? thought Daggoo' before Daggoo's cry."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Whether the flitting attendance of the one still and solitary jet had gradually worked upon Ahab, so that he was now prepared to connect the ideas of mildness and repose with the first sight of the particular whale he pursued",
+      "source_locator": "paragraph 5",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this passage but removes the framing sentence that explains Ahab's psychological preparation — the psychologically important clause is present but the introductory connective tissue that anchors it narratively is thinned, slightly flattening its interpretive weight.",
+      "suggested_fix": "Minor: acceptable as-is given compression, but the passage is intact enough to pass."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "whatever superstitions the sperm whalemen in general have connected with the sight of this object, certain it is, that a glimpse of it being so very unusual, that circumstance has gone far to invest it with portentousness",
+      "source_locator": "final expository paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's discursive, essayistic voice in the closing paragraphs — with its careful hedging ('certain it is, that'), its whaleman-lore register, and its extended reasoning about the whale's food — is compressed into a telegram-style summary that strips Melville's characteristic digressive authority from the passage.",
+      "suggested_fix": "Restore at least the opening cadence: 'Whatever superstitions the sperm whalemen in general have connected with the sight of this object, certain it is…' to preserve the register shift into natural-history digression."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the monster to which these arms belonged ordinarily clings by them to the bed of the ocean; and that the sperm whale, unlike other species, is supplied with teeth in order to attack and tear it",
+      "source_locator": "final expository paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The detail about the squid clinging to the ocean bed and the sperm whale's teeth being adapted to tear it is a small but substantive piece of natural-history voice that grounds the chapter's cetological register; its loss mildly thins the informational texture.",
+      "suggested_fix": "Add a clause preserving the ocean-bed-clinging and teeth detail in the closing summary."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; the draft preserves the chapter's most famous set-pieces (the squid description, Starbuck's cry, the key dialogue) largely intact, though Daggoo's interior misrecognition question and the chapter's opening lonely-jet motif-beat are absent, and the closing cetological digression is damagingly flattened in voice — three medium findings that together approach but do not cross the regeneration threshold."
+}

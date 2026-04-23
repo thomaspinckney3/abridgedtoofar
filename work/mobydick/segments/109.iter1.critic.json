@@ -1,0 +1,80 @@
+{
+  "segment_id": "109",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "since both the ancestry and posterity of Grief go further than the ancestry and posterity of Joy",
+      "source_locator": "paragraph 3, after 'Yea, more than equally, thought Ahab'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most rhetorically distinctive and critically cited formulations in the chapter — the chiastic balancing of Grief and Joy with 'ancestry and posterity' is a signature construction that encapsulates Ahab's metaphysics of suffering.",
+      "suggested_fix": "Restore near-verbatim: 'since both the ancestry and posterity of Grief go further than the ancestry and posterity of Joy.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "as the most poisonous reptile of the marsh perpetuates his kind as inevitably as the sweetest songster of the grove; so, equally with every felicity, all miserable events do naturally beget their like",
+      "source_locator": "paragraph 3, beginning 'Nor, at the time'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The reptile/songster simile is the rhetorical engine that drives Ahab's grief-logic; the draft reduces the entire argument to 'all miserable events beget their like' without this metaphor, stripping the voice and interpretive weight of the passage.",
+      "suggested_fix": "Restore the reptile-of-the-marsh / songster-of-the-grove simile and the full formulation before the 'ancestry and posterity' line."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "some guilty mortal miseries shall still fertilely beget to themselves an eternally progressive progeny of griefs beyond the grave",
+      "source_locator": "paragraph 3, the canonic-teachings aside",
+      "draft_treatment": "absent",
+      "why_it_matters": "This theologically charged clause — with its eschatological vision of grief self-propagating beyond death — is an interpretive keystone for readings of Ahab's cosmology and Melville's engagement with Calvinist doctrine; its absence flattens the chapter's metaphysical argument.",
+      "suggested_fix": "Reinstate the canonic-teachings aside, including 'joy-childlessness of all hell's despair' and 'fertilely beget … an eternally progressive progeny of griefs beyond the grave.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the ineffaceable, sad birth-mark in the brow of man, is but the stamp of sorrow in the signers",
+      "source_locator": "paragraph 3, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the most quotable single sentence in the chapter and a culturally famous formulation; its complete absence is a severe signature failure that also severs the link to the novel's broader birth-mark / branding motif.",
+      "suggested_fix": "Restore verbatim as the closing sentence of the Ahab-grief meditation: 'The ineffaceable, sad birth-mark in the brow of man, is but the stamp of sorrow in the signers.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "in the face of all the glad, hay-making suns, and soft cymballing, round harvest-moons, we must needs give in to this: that the gods themselves are not for ever glad",
+      "source_locator": "paragraph 3, penultimate sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Hay-making suns' and 'soft cymballing, round harvest-moons' are prosodically signature; the draft retains only 'the gods themselves are not for ever glad' while erasing the entire scenic/rhythmic apparatus that makes the sentence distinctive.",
+      "suggested_fix": "Restore 'in the face of all the glad, hay-making suns, and soft cymballing, round harvest-moons' before the 'gods themselves' clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "every revelation partook more of significant darkness than of explanatory light",
+      "source_locator": "paragraph 4, after 'Captain Peleg's bruited reason'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aphorism is a voice-establishing aside characterizing the epistemology of all Ahab-knowledge; dropping it reduces the paragraph to bald narrative and loses a characteristically Melvillean formulation.",
+      "suggested_fix": "Add back: 'every revelation partook more of significant darkness than of explanatory light.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "let the unseen, ambiguous synod in the air, or the vindictive princes and potentates of fire, have to do or not with earthly Ahab",
+      "source_locator": "paragraph 5, opening of the final turn",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Unseen, ambiguous synod in the air' and 'vindictive princes and potentates of fire' are cosmologically charged phrases that establish the supernatural frame before the pivot to practical action; their loss flattens the ironic contrast Melville builds.",
+      "suggested_fix": "Restore the synod/princes clause before 'in the present matter of his leg he took plain practical procedures.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "among the marble senate of the dead",
+      "source_locator": "paragraph 4, after 'Grand-Lama-like exclusiveness'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This image — 'marble senate of the dead' — is a distinct, rhetorical set-piece characterizing Ahab's withdrawal; it carries interpretive weight linking his isolation to mortality, and its removal flattens a significant voice moment.",
+      "suggested_fix": "Restore 'sought speechless refuge, as it were, among the marble senate of the dead' in the recluseness paragraph."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft catastrophically compresses the central grief-metaphysics paragraph, erasing the reptile/songster simile, the 'ancestry and posterity of Grief' formulation, the eschatological 'progeny of griefs beyond the grave' clause, the 'hay-making suns / soft cymballing harvest-moons' imagery, and the chapter's most famous sentence ('The ineffaceable, sad birth-mark in the brow of man'), plus two further medium-severity voice passages — requiring full regeneration."
+}

@@ -1,0 +1,62 @@
+{
+  "segment_id": "040",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Dry heat upon my brow? Oh! time was, when as the sunrise nobly spurred me, so the sunset soothed. No more.",
+      "source_locator": "third paragraph, opening lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is the thematic heart of the chapter titled 'Sunset' — the explicit contrast of sunrise-spur vs. sunset-sooth, now negated, is what gives the soliloquy its elegiac dimension and makes the chapter title meaningful. Its absence collapses the interpretive architecture.",
+      "suggested_fix": "Restore verbatim or near-verbatim before 'This lovely light, it lights not me'; the passage is short and must not be cut."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "my brain seems to beat against the solid metal; aye, steel skull, mine; the sort that needs no helmet in the most brain-battering fight!",
+      "source_locator": "second paragraph, closing lines of Iron Crown passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Melville's most tonally distinctive phrases — the grotesque self-mythologizing of 'steel skull, mine' is rhetorically and prosodically singular, and it anchors the Iron Crown meditation's conclusion. Its loss flattens the passage to mere complaint.",
+      "suggested_fix": "Restore the full closing of the Iron Crown passage including 'steel skull, mine' and the helmet line after 'the jagged edge galls me.'"
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "Good night—good night! (_waving his hand, he moves from the window_.)",
+      "source_locator": "end of third paragraph, before the fourth paragraph begins",
+      "draft_treatment": "absent",
+      "why_it_matters": "This stage direction and farewell mark the dramatic pivot of the chapter: Ahab leaves the window in apparent gentleness, then turns with ferocious defiance. Without it, the two halves of the soliloquy blur into one continuous rant, erasing the structural and tonal contrast Melville built.",
+      "suggested_fix": "Restore 'Good night—good night!' and the parenthetical stage direction at the structural break between the elegiac and defiant halves of the soliloquy."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "damned, most subtly and most malignantly! damned in the midst of Paradise!",
+      "source_locator": "third paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'most subtly' and the repeated 'damned' exclamation, reducing the doubled-anaphora rhythm that gives the line its rhetorical force. The repetition of 'damned' is itself signature.",
+      "suggested_fix": "Restore 'damned, most subtly and most malignantly! damned in the midst of Paradise!' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "she wearies with her endless hill",
+      "source_locator": "second paragraph, after 'my soul mounts up!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The gendered, mythic image of the soul as a weary climber ('she wearies with her endless hill') is a distinctive figurative register; its absence leaves 'my soul mounts up!' as a merely triumphant line rather than the ambivalent one Melville wrote.",
+      "suggested_fix": "Restore 'she wearies with her endless hill' immediately after 'my soul mounts up!'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I have no long gun to reach ye.",
+      "source_locator": "fourth paragraph, within the defiance speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line completes the logic of 'Come forth from behind your cotton bags' — without it, the mock-battle imagery loses its punchline and the darkly comic register of the gods-as-cowards passage is diminished.",
+      "suggested_fix": "Restore 'I have no long gun to reach ye.' between 'Come forth from behind your cotton bags!' and 'Come, Ahab's compliments.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft makes three high-severity cuts — the sunset/sunrise thematic keystone, the 'steel skull' climax of the Iron Crown passage, and the 'Good night' pivot stage direction — each of which is interpretively or prosodically irreplaceable, requiring regeneration."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "028",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "In behalf of the dignity of whaling, I would fain advance naught but substantiated facts. But after embattling his facts, an advocate who should wholly suppress a not unreasonable surmise, which might tell eloquently upon his cause—such an advocate, would he not be blameworthy?",
+      "source_locator": "Opening paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source opens with the narrator's pseudo-legalistic, ironic self-positioning ('In behalf of the dignity of whaling, I would fain advance naught but substantiated facts') and the rhetorical question about blameworthiness—both of which establish the mock-forensic voice. The draft collapses this to a plain declarative sentence ('An advocate, after embattling his facts, may season them with a not unreasonable surmise'), stripping the first-person narrator's voice, the 'dignity of whaling' framing, and the rhetorical question entirely.",
+      "suggested_fix": "Restore the opening sentence 'In behalf of the dignity of whaling, I would fain advance naught but substantiated facts' and the closing rhetorical question ('such an advocate, would he not be blameworthy?') to preserve the mock-forensic irony that frames the whole postscript."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There is a saltcellar of state, so called, and there may be a castor of state. How they use the salt, precisely—who knows?",
+      "source_locator": "Second paragraph, after 'a certain curious process of seasoning them for their functions is gone through'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'saltcellar of state' and 'How they use the salt, precisely—who knows?' are characteristic Melvillean digressions—mock-pedantic, playful, and voice-defining. Their absence removes a textual marker of the narrator's comic erudition and the 'seasoning' wordplay that ties the passage together thematically.",
+      "suggested_fix": "Reinsert the saltcellar-of-state sentence and the rhetorical 'who knows?' to restore the digressive, mock-scholarly register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Much might be ruminated here, concerning the essential dignity of this regal process, because in common life we esteem but meanly and contemptibly a fellow who anoints his hair",
+      "source_locator": "Second paragraph, after 'as they anoint machinery?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The transitional sentence ('Much might be ruminated here...') is the pivot from mock-regal pomp to sardonic social observation and is characteristic of Melville's self-aware digressive style. Its loss slightly weakens the ironic bridge to the hair-oil passage, though the hair-oil content itself is preserved.",
+      "suggested_fix": "Add 'Much might be ruminated here, concerning the essential dignity of this regal process, because in common life we esteem but meanly and contemptibly a fellow who anoints his hair, and palpably smells of that anointing' before the 'In truth, a mature man' sentence."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the most quotable lines (the quoggy spot, the oil list, and the closing 'ye loyal Britons' flourish) but meaningfully flattens the narrator's mock-forensic opening and erases the saltcellar-of-state digression; two medium and one low finding, below the regeneration threshold."
+}

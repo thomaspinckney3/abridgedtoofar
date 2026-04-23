@@ -1,0 +1,44 @@
+{
+  "segment_id": "101",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "prick your ears in this self-same ship",
+      "source_locator": "paragraph beginning 'But a day or two after'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'prick your ears' is a small but characteristically precise Melvillean sensory detail that the draft omits, reducing the vividness of the contrast passage.",
+      "suggested_fix": "Restore 'and prick your ears in this self-same ship' after 'you look about you.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the reason why the decks never look so white as just after what they call an affair of oil",
+      "source_locator": "paragraph beginning 'But a day or two after', mid-section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The wry phrase 'what they call an affair of oil' is a register-defining bit of sailors' euphemism that Melville savors; its omission flattens the ironic documentary voice.",
+      "suggested_fix": "Restore the sentence: 'This is the reason why the decks never look so white as just after what they call an affair of oil.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the soot is brushed from the lower rigging. All the numerous implements which have been in use are likewise faithfully cleansed and put away.",
+      "source_locator": "paragraph beginning 'But a day or two after', mid-section inventory of cleaning",
+      "draft_treatment": "absent",
+      "why_it_matters": "The meticulous inventory of cleaning tasks is a deliberate rhetorical accumulation whose rhythm enacts the exhausting thoroughness; compressing it loses that performative effect.",
+      "suggested_fix": "Restore at minimum the rigging and implements sentences to preserve the cumulative rhythm of the cleaning catalogue."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "think of having hanging to the top",
+      "source_locator": "paragraph beginning 'Now, with elated step'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This whimsical detail (suggesting curtains hung from the mast-top) is a characteristically absurdist flourish; its quiet omission slightly deflates the comic register of the passage.",
+      "suggested_fix": "Restore 'think of having hanging to the top' within the list of sailors' domestic fantasies."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high- or medium-severity signature losses; the draft preserves all major signature passages (the opening anaphora, the 'bridegrooms new-leaped from out the daintiest Holland' climax, the 'man-killing / Yet this is life' meditation, and the Pythagoras coda) with only minor omissions of small but flavourful Melvillean details in the cleaning inventory and the sailors' fantasy paragraph."
+}

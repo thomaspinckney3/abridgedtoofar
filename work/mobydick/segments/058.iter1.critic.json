@@ -1,0 +1,62 @@
+{
+  "segment_id": "058",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I doubt not the captain had this veracious picture taken for the benefit of his marines. To mention but one thing about it, let me say that it has an eye which applied…",
+      "source_locator": "paragraph on Captain Colnett",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The ironic aside 'I doubt not the captain had this veracious picture taken for the benefit of his marines' is pure Ishmael deadpan; it establishes the satirical register of the whole survey and is entirely absent in the draft.",
+      "suggested_fix": "Restore the marines remark verbatim before mentioning the five-foot eye; it is short and carries the satirical voice that the draft otherwise loses here."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I do not wish to seem inelegant, but this unsightly whale looks much like an amputated sow; and, as for the narwhale, one glimpse at it is enough to amaze one, that in this nineteenth century such a hippogriff could be palmed for genuine upon any intelligent public of schoolboys.",
+      "source_locator": "paragraph on Goldsmith's Animated Nature",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The self-deprecating hedge 'I do not wish to seem inelegant' followed by the brutal simile is a signature Ishmael ironic maneuver; the draft keeps the facts but strips the apologetic-then-savage voice move entirely.",
+      "suggested_fix": "Restore 'I do not wish to seem inelegant, but' before 'amputated sow'; the mock-politeness is the joke and the voice."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Before showing that picture to any Nantucketer, you had best provide for your summary retreat from Nantucket. In a word, Frederick Cuvier's Sperm Whale is not a Sperm Whale, but a squash.",
+      "source_locator": "paragraph on Frederick Cuvier",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The Nantucket retreat warning is one of the most quotable comic set-pieces in the chapter; only the 'squash' punchline survives, and the build-up that makes it land is gone entirely from the draft.",
+      "suggested_fix": "Restore 'Before showing that picture to any Nantucketer, you had best provide for your summary retreat from Nantucket' immediately before 'but a squash.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Perhaps he got it as his scientific predecessor in the same field, Desmarest, got one of his authentic abortions; that is, from a Chinese drawing. And what sort of lively lads with the pencil those Chinese are, many queer cups and saucers inform us.",
+      "source_locator": "end of Cuvier paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Chinese-drawing joke and the 'queer cups and saucers' kicker is a distinctive piece of Melville's digressive cultural satire; it is wholly absent from the draft, removing a characteristic voice flourish.",
+      "suggested_fix": "Add the Desmarest/Chinese drawing sentence and the cups-and-saucers kicker after 'but a squash' to restore the wry ethnographic aside."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Though Jeremy Bentham's skeleton, which hangs for candelabra in the library of one of his executors, correctly conveys the idea of a burly-browed utilitarian old gentleman… yet nothing of this kind could be inferred from any leviathan's articulated bones.",
+      "source_locator": "penultimate paragraph, on the skeleton",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Bentham comparison is interpretively important—it links the whale's unrepresentability to a philosophical reflection on embodiment—and is a culturally distinctive, eccentric detail wholly absent from the draft.",
+      "suggested_fix": "Restore the Jeremy Bentham candelabra sentence as contrast to the whale skeleton's failure to convey the animal's form."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "They are generally Richard III. whales, with dromedary humps, and very savage; breakfasting on three or four sailor tarts, that is whaleboats full of mariners: their deformities floundering in seas of blood and blue paint.",
+      "source_locator": "sign-painters paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft catches 'Richard III. whales' and 'dromedary humps' but drops the vivid 'sailor tarts' gloss and the 'seas of blood and blue paint' coda, which are the most distinctive phrases in the passage.",
+      "suggested_fix": "Preserve 'breakfasting on three or four sailor tarts, that is whaleboats full of mariners: their deformities floundering in seas of blood and blue paint' in full."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton and several key phrases but systematically strips the ironic satirical voice—including the marines joke, the Nantucket-retreat build-up, the Chinese cups kicker, the Bentham candelabra comparison, and the 'inelegant' hedge—producing four medium-severity losses that together trigger regeneration."
+}

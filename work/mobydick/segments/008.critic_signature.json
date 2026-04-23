@@ -5,40 +5,13 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "you could pretty plainly tell how long each one had been ashore… That man next him looks a few shades lighter; you might say a touch of satin wood is in him. In the complexion of a third still lingers a tropic tawn",
-      "source_locator": "paragraph beginning 'You could pretty plainly tell how long each one had been ashore'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The graduated catalogue of sailor complexions—sun-toasted pear, satin wood, tropic tawn—is a rhetorically distinctive and interpretively weighted passage (race, labour, the sea's mark on the body). The draft leaps straight from the first sailor to Queequeg, erasing the middle two comparisons and the framing 'you could pretty plainly tell' conceit entirely.",
-      "suggested_fix": "Restore at minimum the 'satin wood' and 'tropic tawn' figures with their framing logic; the graduated scale is essential to the Queequeg climax that follows."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "These reflections just here are occasioned by the circumstance that after we were all seated at the table, and I was preparing to hear some good stories about whaling",
-      "source_locator": "paragraph beginning 'These reflections just here are occasioned'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The self-conscious metanarrative pivot ('these reflections just here are occasioned by…') is voice-establishing Ishmaelean irony; cutting it flattens the digressive persona into plain reportage and loses the mock-pedantic tone that characterises the narrator.",
-      "suggested_fix": "Restore the transitional sentence so the Ledyard/Mungo Park digression is explicitly flagged as Ishmael's self-aware aside rather than unmarked exposition."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "To be sure I cannot say much for his breeding. His greatest admirer could not have cordially justified his bringing his harpoon into breakfast with him, and using it there without ceremony",
-      "source_locator": "paragraph beginning 'But as for Queequeg'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The ironic gentility framing—'cannot say much for his breeding,' 'greatest admirer could not have cordially justified'—is the comic register that makes the harpoon-at-breakfast scene Melvillean satire rather than mere anecdote; its removal flattens the scene to bare incident.",
-      "suggested_fix": "Restore the 'breeding' and 'greatest admirer' phrasing to preserve the satirical mock-etiquette voice before the harpoon action."
-    },
-    {
-      "severity": "low",
-      "class": "motif_depletion",
-      "source_passage": "how he eschewed coffee and hot rolls, and applied his undivided attention to beefsteaks, done rare",
-      "source_locator": "final paragraph beginning 'We will not speak of all Queequeg's peculiarities'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The 'beefsteaks, done rare' detail and the teasing 'we will not speak of all Queequeg's peculiarities' formula are small but characteristic Melvillean touches that establish Queequeg's physicality and the narrator's ironic restraint.",
-      "suggested_fix": "Add a brief clause restoring 'beefsteaks, done rare' and the mock-reticence formula; the compression budget allows it."
+      "source_passage": "the mere crossing of Siberia in a sledge drawn by dogs as Ledyard did, or the taking a long solitary walk on an empty stomach, in the negro heart of Africa, which was the sum of poor Mungo's performances—this kind of travel, I say, may not be the very best mode",
+      "source_locator": "paragraph on Ledyard and Mungo Park, middle of segment",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's mock-pedantic precision—naming the specific absurdity of each traveler's feat in Ishmael's deadpan parenthetical style—is the joke and the voice. The draft collapses it to 'their Siberian sledges and empty-stomached walks in Africa,' stripping the ironic rhythm and the phrase 'the sum of poor Mungo's performances,' which is a small but characteristic Ishmaelian aside.",
+      "suggested_fix": "Restore the full parenthetical with Ledyard's dog-drawn sledge and 'the sum of poor Mungo's performances' verbatim; the comic deflation depends on that exact phrasing."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Three medium-severity failures (the graduated complexion catalogue, the metanarrative pivot sentence, and the mock-etiquette framing of Queequeg's harpoon breakfast) collectively constitute enough voice erasure and interpretive flattening to require regeneration."
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all major signatures verbatim, with only one medium-level voice flattening in the Ledyard/Mungo Park digression where Ishmael's deadpan parenthetical precision is compressed away."
 }

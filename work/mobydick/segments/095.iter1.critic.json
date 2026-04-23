@@ -1,0 +1,44 @@
+{
+  "segment_id": "095",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Who would think, then, that such fine ladies and gentlemen should regale themselves with an essence found in the inglorious bowels of a sick whale!",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's 'fine ladies and gentlemen' is rhetorically sharp social irony; the draft's 'such fine folk' softens the register and loses the deliberate gender specificity that makes the contrast between high society and whale bowels more pointed.",
+      "suggested_fix": "Restore 'ladies and gentlemen' verbatim — it is a small change with notable tonal consequence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "unless by administering three or four boat loads of Brandreth's pills, and then running out of harm's way, as laborers do in blasting rocks",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The simile 'as laborers do in blasting rocks' is the comic engine of the sentence; the draft's 'running like men blasting rocks' garbles the image (laborers run away from blasting rocks, they do not blast while running) and collapses the absurdist precision of Melville's phrasing.",
+      "suggested_fix": "Restore the exact construction: 'running out of harm's way, as laborers do in blasting rocks.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "nor can whalemen be recognised, as the people of the middle ages affected to detect a Jew in the company, by the nose",
+      "source_locator": "penultimate paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This historically and ideologically loaded simile — deploying medieval antisemitic stereotyping as a comparator — is both rhetorically distinctive and a passage the critical tradition notices for its unsettling valences; its excision erases interpretive weight entirely.",
+      "suggested_fix": "Reinsert the full clause verbatim; it is brief enough to accommodate even under compression."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Nor indeed can the whale possibly be otherwise than fragrant, when, as a general thing, he enjoys such high health; taking abundance of exercise; always out of doors; though, it is true, seldom in the open air.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The parenthetical wit of 'always out of doors; though, it is true, seldom in the open air' is a characteristic Ishmael logical joke that establishes comic voice; its omission slightly flattens the transition to the elephant comparison.",
+      "suggested_fix": "Insert the clause, which is short, before the flukes-perfume sentence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity findings — the garbled Brandreth's-pills simile, the dropped medieval-Jew-by-nose simile (interpretive weight), and the softened 'fine ladies and gentlemen' — together trigger regeneration."
+}

@@ -1,0 +1,44 @@
+{
+  "segment_id": "127",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "its very blinding palpableness must have been the cause",
+      "source_locator": "paragraph after 'every soul was confounded'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause is Melville's characteristic ironic paradox — the compasses' error went unnoticed precisely because it was so blindingly obvious — and its omission removes a key moment of narrative wit.",
+      "suggested_fix": "Restore the full sentence: 'Upon this every soul was confounded; for the phenomenon just then observed by Ahab had unaccountably escaped every one else; but its very blinding palpableness must have been the cause.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the before magnetic steel was of no more use than an old wife's knitting needle",
+      "source_locator": "explanatory paragraph on magnetic accidents, mid-segment",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is tonally and rhetorically distinctive — the homely 'old wife's knitting needle' against the charged masculine world of the ship — and encapsulates Melville's habitual bathetic deflation; its loss flattens the explanatory digression.",
+      "suggested_fix": "Restore the full closing sentence of the magnetic-accident paragraph, including the knitting-needle simile and the detail about the kelson."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Accessory, perhaps, to the impulse dictating the thing he was now about to do, were certain prudential motives, whose object might have been to revive the spirits of his crew by a stroke of his subtile skill",
+      "source_locator": "paragraph before Ahab's speech to the crew beginning 'Men, said he'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph of authorial speculation on Ahab's motives — prudential calculation beneath mystic performance — is a critical interpretive node about whether Ahab's theatrics are cynically instrumental or genuinely felt; its complete omission removes a layer of psychological ambiguity.",
+      "suggested_fix": "Restore the full 'Accessory, perhaps' paragraph before the crew-address speech, as it carries interpretive weight about Ahab's leadership psychology."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Deliberately standing before the binnacle, and eyeing the transpointed compasses, the old man, with the sharp of his extended hand, now took the precise bearing of the sun",
+      "source_locator": "paragraph beginning 'Deliberately standing before the binnacle'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The detail of taking the sun's bearing 'with the sharp of his extended hand' is a vivid, physically specific gesture that characterises Ahab's bodily authority; the draft collapses this to 'satisfied they were exactly inverted' and loses the visual precision.",
+      "suggested_fix": "Restore the hand-as-instrument detail: 'with the sharp of his extended hand, now took the precise bearing of the sun.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses — the 'blinding palpableness' irony, the 'old wife's knitting needle' simile, and the entire 'Accessory, perhaps' paragraph on Ahab's prudential motives — collectively flatten Melville's ironic voice and remove a key interpretive node about Ahab's psychology, triggering regeneration."
+}

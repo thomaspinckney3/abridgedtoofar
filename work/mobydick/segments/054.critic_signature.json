@@ -1,0 +1,62 @@
+{
+  "segment_id": "054",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "every reclining mariner started to his feet as if some winged spirit had lighted in the rigging, and hailed the mortal crew",
+      "source_locator": "paragraph 2, after 'unearthly voice was heard'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The precise image of the spirit 'lighted in the rigging' and 'hailed the mortal crew' is atmospherically and rhythmically distinctive; the draft collapses it to 'as if a winged spirit hailed us,' losing the rigging detail and the contrast of 'mortal crew.'",
+      "suggested_fix": "Restore the phrasing 'started to his feet as if some winged spirit had lighted in the rigging, and hailed the mortal crew' verbatim or very close to it."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "While his one live leg made lively echoes along the deck, every stroke of his dead limb sounded like a coffin-tap. On life and death this old man walked.",
+      "source_locator": "paragraph 3, near end",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This is one of the chapter's most interpretively weighted sentences—the explicit 'coffin-tap' and the epigrammatic 'On life and death this old man walked' carry enormous symbolic freight. The draft preserves 'coffin-taps' and the epigram but softens 'every stroke of his dead limb sounded like' to 'his dead limb struck,' losing the sonic precision and the cadence.",
+      "suggested_fix": "Restore 'every stroke of his dead limb sounded like a coffin-tap' verbatim to recover the carefully constructed sound-image."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The strange, upheaving, lifting tendency of the taffrail breeze filling the hollows of so many sails, made the buoyant, hovering deck to feel like air beneath the feet; while still she rushed along, as if two antagonistic influences were struggling in her—one to mount direct to heaven, the other to drive yawingly to some horizontal goal.",
+      "source_locator": "paragraph 3, after 'piled-up craft rolled down before the wind'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The syntactic elaborateness—'filling the hollows of so many sails,' the precise 'two antagonistic influences,' 'mount direct to heaven,' 'horizontal goal'—is voice-defining and thematically crucial (it foreshadows Ahab's split fate). The draft strips it to bare paraphrase.",
+      "suggested_fix": "Restore the full sentence including 'filling the hollows of so many sails,' 'two antagonistic influences,' and 'mount direct to heaven … horizontal goal.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as for days and days we voyaged along, through seas so wearily, lonesomely mild, that all space, in repugnance to our vengeful errand, seemed vacating itself of life before our urn-like prow",
+      "source_locator": "paragraph 6 (the 'contrasting serenity' paragraph)",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Wearily, lonesomely mild' (adverbs modifying an adjective in a distinctly Melvillean construction) and the death-symbolism of 'urn-like prow' are lost; draft has only 'lonesomely mild' and retains 'urn-like prow' but drops 'wearily' and the whole framing clause about 'blue blandness' and 'devilish charm.'",
+      "suggested_fix": "Restore 'beneath all its blue blandness, some thought there lurked a devilish charm' and 'wearily, lonesomely mild' to preserve the atmospheric irony of the passage."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "day after day tore on through all the swift madness and gladness of the demoniac waves",
+      "source_locator": "paragraph 9, near 'painted sailors in wax'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The oxymoronic 'madness and gladness' and 'demoniac waves' are rhythmically memorable and tonally specific; they also evoke the Pequod-as-doomed-vessel motif. The draft omits this clause entirely.",
+      "suggested_fix": "Insert 'as if manned by painted sailors in wax, day after day tore on through all the swift madness and gladness of the demoniac waves' or a close approximation."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the silent ship, as if manned by painted sailors in wax",
+      "source_locator": "paragraph 9",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Painted sailors in wax' is a visually arresting, frequently noticed image. Its omission reduces the uncanny quality of the storm-passage.",
+      "suggested_fix": "Restore the simile 'as if manned by painted sailors in wax' before 'day after day tore on.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft competently compresses events but repeatedly flattens Melville's most distinctive sentence-shapes—the 'coffin-tap' construction, the 'two antagonistic influences' passage, the 'blue blandness / devilish charm' irony, and the 'painted sailors in wax' image—producing three medium-severity voice-flattening failures that collectively trigger regeneration."
+}

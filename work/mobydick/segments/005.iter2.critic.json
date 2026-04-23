@@ -4,23 +4,50 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage, it may as well be related",
-      "source_locator": "paragraph 2, opening sentence",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The ironic framing of whaling candidates accepting 'pains and penalties' is voice-establishing; the draft drops the opening clause entirely, beginning mid-sentence without the satirical setup.",
-      "suggested_fix": "Restore 'As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage' before the retained clause."
+      "class": "signature_loss",
+      "source_passage": "the Tyre of this Carthage;—the place where the first dead American whale was stranded. Where else but from Nantucket did those aboriginal whalemen, the Red-Men, first sally out in canoes",
+      "source_locator": "paragraph 2, after 'great original'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The elaboration of Nantucket's primacy—the Red-Men in canoes, the sloop laden with cobblestones—is interpretively important as it establishes Nantucket's mythic origin-status for whaling; the draft keeps only the 'Tyre of this Carthage' phrase and drops all the supporting historical/mythic detail.",
+      "suggested_fix": "Restore at least the Red-Men canoe sally and the cobblestone sloop anecdote in compressed form; they carry the mythologizing voice that the bare 'Tyre of this Carthage' tag alone cannot."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Ha! thought I, ha, as the flying particles almost choked me, are these ashes from that destroyed city, Gomorrah? But 'The Crossed Harpoons,' and 'The Sword-Fish?'—this, then must needs be the sign of 'The Trap.'",
+      "source_locator": "paragraph 5, the ash-box scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "The ash-box / Gomorrah joke and the ironic naming logic ('The Trap') are voice-establishing comic moves; the draft jumps straight to the Black Parliament scene without any of this, erasing the transition and a signature ironic digression.",
+      "suggested_fix": "Restore the ash-box stumble and the Gomorrah quip at minimum; the 'sign of The Trap' punchline should follow to preserve the comic-naming motif."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "What a pity they didn't stop up the chinks and the crannies though, and thrust in a little lint here and there. But it's too late to make any improvements now.",
+      "source_locator": "paragraph 8, after 'this body of mine is the house'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-deprecating philosophical extension of the window/body metaphor is a signature voice moment—Melville's characteristic darkly comic deflation; the draft keeps the metaphor's opening but cuts its payoff entirely.",
+      "suggested_fix": "Restore the 'chinks and crannies' / 'too late to make improvements' lines after the body-as-house observation."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Poor Lazarus there, chattering his teeth against the curbstone for his pillow... Euroclydon! says old Dives, in his red silken wrapper—(he had a redder one afterwards) pooh, pooh! What a fine frosty night",
+      "source_locator": "paragraph 8, Lazarus/Dives contrast introduced",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Lazarus/Dives contrast is a key thematic passage on poverty and privilege that the critical tradition repeatedly engages; the draft skips from the copestone line straight to the Moluccas iceberg paragraph, losing the full ironic exposition of Dives's dismissal and Lazarus's suffering.",
+      "suggested_fix": "Restore the Lazarus-chattering-teeth passage and the Dives red-silken-wrapper paragraph; these are not decorative but carry the segment's interpretive weight on class and cold."
     },
     {
       "severity": "low",
-      "class": "other",
-      "source_passage": "and heard a forlorn creaking in the air; and looking up, saw a swinging sign over the door with a white painting upon it, faintly representing",
-      "source_locator": "paragraph before 'Coffin?—Spouter?'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft omits 'heard a forlorn creaking in the air' and 'over the door with a white painting upon it,' losing the atmospheric auditory detail and the explicit description of the painting that precedes the verbal sign.",
-      "suggested_fix": "Restore the forlorn creaking and the mention of the white painting in the sign description."
+      "class": "voice_flattening",
+      "source_passage": "here and there a candle, like a candle moving about in a tomb",
+      "source_locator": "paragraph 5, 'Such dreary streets!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is a small but distinctively voiced image that sharpens the gothic atmosphere; its omission slightly flattens the prose register at a moment of strong source writing.",
+      "suggested_fix": "Reinsert 'and here and there a candle, like a candle moving about in a tomb' after 'blocks of blackness, not houses, on either hand'."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is largely faithful, preserving nearly all signature passages including the Ishmael soliloquy, 'The Trap' sequence, Tophet paragraph, Euroclydon digression, and Lazarus/Dives meditation verbatim; two minor voice flattenings are present but neither rises to high severity."
+  "verdict": "regenerate",
+  "summary": "The draft loses the Nantucket mythic-origin elaboration, the ash-box/Gomorrah comic transition, the body-as-house payoff lines, and the full Lazarus/Dives poverty-contrast passage—four medium-severity failures that together constitute significant voice erasure and interpretive thinning."
 }

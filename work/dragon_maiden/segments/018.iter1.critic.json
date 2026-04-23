@@ -3,15 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I had no plan, though at that point what I really wanted was a machete and a flashlight. The world of dragons was very dark.",
+      "source_locator": "Opening paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The opening line's dry comic logic ('I had no plan, though…') is the narrator's signature self-awareness; the draft collapses it to 'I wanted a machete and a flashlight,' losing the setup's ironic rhythm and the aside about the dragon world's darkness.",
+      "suggested_fix": "Restore the original opening clause structure: 'I had no plan, though what I really wanted was a machete and a flashlight. The world of dragons was very dark.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Every rock and tree branch tried to murder me, but the sound of the waterfall kept hope alive within me.",
+      "source_locator": "Opening paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The personification of the environment as homicidal ('tried to murder me') is a comic-voice register marker that appears again with 'last homicidal branch'; the draft reduces this to 'Every root tried to take me down,' losing the escalating comic hyperbole.",
+      "suggested_fix": "Restore 'murder me' phrasing and the branch's 'homicidal' modifier; both are small but tonally load-bearing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was hard to breathe so close to her overpowering aura. 'Isn't that enough?'",
+      "source_locator": "Exchange at the water's edge, after the Lady cups the narrator's cheek",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The internal tag 'It was hard to breathe so close to her overpowering aura' is character-experience texture establishing the Lady's supernatural presence; the draft omits it entirely, flattening the moment to bare dialogue.",
+      "suggested_fix": "Reinsert a beat indicating the narrator's difficulty breathing or the Lady's overwhelming aura before the 'Isn't that enough?' line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Her skin was cold and brushed against mine like the flow of the gentle creek.",
+      "source_locator": "After 'She cupped my cheek in one of her palms.'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The simile 'like the flow of the gentle creek' ties the Lady's physicality to her elemental nature; the draft reduces it to 'cold as the brook,' losing the verb ('brushed') and the gentleness qualifier that soften the uncanny moment.",
+      "suggested_fix": "Restore the fuller simile: 'cold and brushed against mine like the flow of the gentle creek.'"
+    },
+    {
+      "severity": "low",
       "class": "other",
-      "source_passage": "I had no plan, though at that point what I really wanted was a machete and a flashlight.",
-      "source_locator": "paragraph 1",
-      "draft_treatment": "absent",
-      "why_it_matters": "No draft was supplied; the entire segment is missing, meaning every signature passage — including all voice-establishing lines, the water-spirit dialogue, and the climactic healing scene — is absent.",
-      "suggested_fix": "Supply the draft text and rerun the critic. Until then, the segment must be treated as a complete failure to preserve any content."
+      "source_passage": "I threw myself over his chest as he began to shake and thrash. The episode lasted for a long few seconds before a soft blue glow spread from his chest across the rest of his body.",
+      "source_locator": "Healing scene, after the vial is administered",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source specifies 'a long few seconds'—a compressed, tense time-marker—and that the glow originates from 'his chest.' The draft compresses the timing and relocates the origin to 'his wounds,' slightly diffusing the precision of the image.",
+      "suggested_fix": "Retain 'a long few seconds' and 'spread from his chest' to preserve the source's specific choreography."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "No draft text was provided; the entire segment is absent and cannot be evaluated."
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium-severity findings of voice flattening (opening comic hyperbole, aura interiority, and elemental simile) reduce the narrator's comic-ironic register but do not individually trigger regeneration."
 }

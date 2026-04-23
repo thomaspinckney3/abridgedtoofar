@@ -3,51 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "threadbare in coat, heart, body, and brain; I see him now. He was ever dusting his old lexicons and grammars, with a queer handkerchief, mockingly embellished",
-      "source_locator": "paragraph 1, opening description of the Usher",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The quadruple 'threadbare' and the first-person intrusion 'I see him now' are voice-establishing and critically noted; 'mockingly embellished' carries ironic weight that 'gay-flagged' erases entirely.",
-      "suggested_fix": "Restore 'threadbare in coat, heart, body, and brain; I see him now' and 'mockingly embellished with all the gay flags of all the known nations of the world' verbatim or near-verbatim."
-    },
-    {
-      "severity": "high",
+      "severity": "medium",
       "class": "signature_loss",
       "source_passage": "He loved to dust his old grammars; it somehow mildly reminded him of his mortality.",
-      "source_locator": "paragraph 1, final sentence",
+      "source_locator": "paragraph 1, final two sentences",
       "draft_treatment": "paraphrased",
-      "why_it_matters": "This sentence is the interpretive keystone of the Etymology preface — the absurdist equation of lexicography with memento mori is one of the book's most-cited opening gestures; 'mindful of mortality' strips out the distinctive rhythm and the word 'somehow mildly' which carries all the ironic pathos.",
-      "suggested_fix": "Restore verbatim: 'He loved to dust his old grammars; it somehow mildly reminded him of his mortality.'"
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "PEKEE-NUEE-NUEE, _Fegee_. PEHEE-NUEE-NUEE, _Erromangoan_.",
-      "source_locator": "multilingual word-list, final two entries",
-      "draft_treatment": "absent",
-      "why_it_matters": "The Fijian and Erromangan entries are the climactic joke of the list — moving from Hebrew through European tongues to Pacific island languages; their absence destroys the comic and ethnographic arc that critics treat as central to Melville's encyclopedic ambition.",
-      "suggested_fix": "Restore both entries verbatim at the end of the word-list."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "‏חו‎, _Hebrew_. ϰητος, _Greek_. CETUS, _Latin_. WHŒL, _Anglo-Saxon_. HVALT, _Danish_. WAL, _Dutch_. HWAL, _Swedish_. HVALUR, _Icelandic_.",
-      "source_locator": "multilingual word-list, entries 1–8",
-      "draft_treatment": "absent",
-      "why_it_matters": "The full multilingual catalogue is the structural and rhetorical centrepiece of the Etymology segment; the draft retains only four of thirteen entries, obliterating the cumulative, encyclopedic effect that defines this passage's interpretive weight.",
-      "suggested_fix": "Restore the complete word-list from Hebrew through Erromangan; these are proper nouns and cannot be further compressed without destroying the passage's meaning."
+      "why_it_matters": "The source repeats 'He loved to dust his old grammars' before the mortality clause — the repetition is a deliberate rhetorical tic that gives the Usher his comic-pathetic rhythm. The draft collapses it to a single clause, losing the obsessive doubling that characterises the prose.",
+      "suggested_fix": "Restore 'He loved to dust his old grammars;' as its own clause before 'it somehow mildly reminded him of his mortality.'"
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "While you take in hand to school others, and to teach them by what name a whale-fish is to be called in our tongue",
-      "source_locator": "Hackluyt epigraph, opening clause",
+      "source_passage": "\"WHALE. * * * Sw. and Dan. _hval_. This animal is named from roundness or rolling...\" —Webster's Dictionary. \"WHALE. * * * It is more immediately from the Dut. and Ger. _Wallen_...\" —Richardson's Dictionary.",
+      "source_locator": "dictionary epigraphs, between Hackluyt quote and the word-list",
       "draft_treatment": "absent",
-      "why_it_matters": "The draft retains only the letter-H clause, losing the rhetorical setup of the Hackluyt quotation; the full sentence is what gives the fragmentary retention intelligibility and period voice.",
-      "suggested_fix": "Restore the full Hackluyt quotation or at minimum enough of the opening clause to make the ellipsis intelligible in context."
+      "why_it_matters": "Both Webster and Richardson dictionary entries are the etymological core of this section — they literalise the 'rolling/wallow' root that resonates throughout the novel's imagery of the whale's motion. Their omission removes the principal interpretive apparatus the Etymology chapter exists to supply.",
+      "suggested_fix": "Reinstate both dictionary quotations verbatim between the Hackluyt epigraph and the multilingual word-list."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "HVALUR, _Icelandic_.",
+      "source_locator": "multilingual word-list, between HWAL/Swedish and WHALE/English",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Icelandic entry is present in the source list and its omission silently truncates the catalogue, though this is a minor completeness issue rather than a voice failure.",
+      "suggested_fix": "Add 'HVALUR, *Icelandic*.' between HWAL/Swedish and WHALE/English in the word-list."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "PEHEE-NUEE-NUEE, _Erromangoan_.",
+      "source_locator": "final entry of the multilingual word-list",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Erromangoan entry closes the catalogue and pairs with the Fegee entry to extend the list to its most exotic extremes; its loss cuts the rhetorical flourish that ends the chapter.",
+      "suggested_fix": "Restore 'PEHEE-NUEE-NUEE, *Erromangoan*.' as the final item in the word-list."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft catastrophically compresses the Etymology segment, losing the verbatim Usher characterisation, the full multilingual word-list (including the signature Pacific-island entries), and most of the Hackluyt epigraph — multiple high-severity signature failures that require regeneration."
+  "summary": "The draft drops both dictionary epigraphs (Webster and Richardson) that are the etymological heart of the chapter, partially collapses the Usher's signature repetitive phrasing, and silently omits the Icelandic and Erromangoan entries from the word-list; the missing dictionary quotations alone constitute a medium-severity interpretive loss that, combined with two further medium/low findings, triggers regeneration."
 }

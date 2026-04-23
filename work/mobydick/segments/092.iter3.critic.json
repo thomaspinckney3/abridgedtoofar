@@ -1,0 +1,35 @@
+{
+  "segment_id": "092",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "their captain snapped his fingers in the plaintiffs' teeth, and assured them that by way of doxology to the deed he had done, he would now retain their line",
+      "source_locator": "paragraph describing the whale-trover case, after 'very eyes of the plaintiffs'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The captain's contemptuous gesture and the word 'doxology' are signature Melvillean irony and voice; the draft simply says the defendants retained the gear without this vivid, rhetorically distinct detail.",
+      "suggested_fix": "Restore the 'snapped his fingers in the plaintiffs' teeth' sentence and the 'doxology' phrase verbatim; they are compact enough to include without budget damage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Now in the present case Erskine contended that the examples of the whale and the lady were reciprocally illustrative of each other.",
+      "source_locator": "paragraph immediately after the crim. con. analogy",
+      "draft_treatment": "absent",
+      "why_it_matters": "This deadpan sentence is the comic capstone of the crim. con. digression; its dry legalistic voice is distinctively Melvillean and the draft omits it entirely, losing the rhetorical punch.",
+      "suggested_fix": "Add the sentence verbatim after the Erskine/lady account."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "A common man looking at this decision of the very learned Judge, might possibly object to it.",
+      "source_locator": "paragraph beginning 'A common man looking at this decision'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence sets up the ironic pivot from dry legal commentary to sweeping philosophical/political application; its absence makes the transition to 'fundamentals of all human jurisprudence' feel abrupt and strips the irony of the legal satire.",
+      "suggested_fix": "Restore the 'A common man…might possibly object' sentence before the 'ploughed to the primary rock' passage."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft faithfully preserves the chapter's most famous passages (the two laws, the Fast-Fish rhetorical cascade, the closing 'reader' address, and the Temple of the Philistines metaphor) but loses three mid-chapter voice moments—the captain's contemptuous 'doxology' gesture, Erskine's reciprocal-illustration summary, and the 'common man might object' pivot—that carry significant ironic and rhetorical weight; none rises to high severity, but the three medium findings together approach the regenerate threshold."
+}

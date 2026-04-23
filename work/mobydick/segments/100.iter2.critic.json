@@ -1,0 +1,53 @@
+{
+  "segment_id": "100",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "each mariner a chiselled muteness; a score of lamps flashing upon his hooded eyes",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "flattened",
+      "why_it_matters": "\"A chiselled muteness\" is the most distinctive phrase in the paragraph — a sculptural, near-oxymoronic image that defines Melville's ekphrastic register; the draft drops it entirely, reducing the line to bare fact.",
+      "suggested_fix": "Restore 'each mariner a chiselled muteness' verbatim or as close to verbatim as the word budget allows."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "so he lives in light. He makes his berth an Aladdin's lamp",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The rhetorical pivot 'as he seeks the food of light, so he lives in light' is a signature chiasmic construction that anchors the thematic contrast of whaleman vs. merchantman; the draft drops the 'food of light' clause, losing the antithesis that makes the Aladdin's lamp image payoff earned.",
+      "suggested_fix": "Restore 'as he seeks the food of light, so he lives in light' before the Aladdin's lamp sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "See with what entire freedom the whaleman takes his handful of lamps—often but old bottles and vials, though—to the copper cooler",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical aside '—often but old bottles and vials, though—' is a characteristic Melvillean deflating irony that humanizes the grandeur; its loss flattens the voice from ironic narrator to plain reporter. 'See with what entire freedom' is also a direct-address rhetorical summons that drives the paragraph's energy.",
+      "suggested_fix": "Retain the direct-address opening 'See with what entire freedom' and the aside about 'old bottles and vials' to preserve the narrator's ironic register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "as mugs of ale at a vat",
+      "source_locator": "paragraph 3, after 'replenishes them there'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile 'as mugs of ale at a vat' is a small but vivid colloquial touch that domesticates the exotic try-works scene; its absence is a minor voice loss.",
+      "suggested_fix": "Append 'as mugs of ale at a vat' after 'copper cooler' to restore the simile."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "even as the traveller on the prairie hunts up his own supper of game",
+      "source_locator": "paragraph 3, final clause",
+      "draft_treatment": "absent",
+      "why_it_matters": "The prairie-traveller analogy is Melville's closing rhetorical flourish linking maritime self-sufficiency to American frontier myth; collapsing it into 'freshness' loses the expansive comparative gesture.",
+      "suggested_fix": "Restore the prairie simile as the chapter's closing image."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity findings (loss of 'chiselled muteness,' the 'food of light' chiasm, and the direct-address irony with 'old bottles and vials') combine to trigger regeneration; the draft preserves facts but erases the narrator's distinctive voice-register throughout the segment."
+}

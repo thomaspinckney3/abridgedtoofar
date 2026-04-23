@@ -1,0 +1,62 @@
+{
+  "segment_id": "107",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Give me a condor's quill! Give me Vesuvius' crater for an inkstand! Friends, hold my arms! For in the mere act of penning my thoughts of this Leviathan, they weary me, and make me faint",
+      "source_locator": "paragraph 3, the great exclamatory passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the most quoted passages in the chapter and in Melville generally — the triple exclamatory structure ('Give me… Give me… Friends, hold my arms!') is a textual signature of high distinctiveness and cultural famousness. The draft drops 'Friends, hold my arms!' and 'make me faint,' collapsing the rhetorical climax and erasing the comic-sublime voice.",
+      "suggested_fix": "Restore the full exclamatory sequence verbatim: 'Give me a condor's quill! Give me Vesuvius' crater for an inkstand! Friends, hold my arms!' including the 'make me faint' clause — these are not compressible without signature loss."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Ahab's harpoon had shed older blood than the Pharaoh's. Methuselah seems a school-boy. I look round to shake hands with Shem. I am horror-struck at this antemosaic, unsourced existence",
+      "source_locator": "paragraph 7, the Leviathan antiquity peroration",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Ahab's harpoon had shed older blood than the Pharaoh's' is a critically cited, interpretively weighty line connecting Ahab to geological deep time and to the whale's cosmic seniority. 'I am horror-struck at this antemosaic, unsourced existence of the unspeakable terrors of the whale, which, having been before all time, must needs exist after all humane ages are over' is the thematic climax of the chapter. Both are completely absent from the draft.",
+      "suggested_fix": "Restore 'Ahab's harpoon had shed older blood than the Pharaoh's' and the full horror-struck closing sentence of that paragraph — both are non-negotiable interpretive signatures."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I have invariably used a huge quarto edition of Johnson, expressly purchased for that purpose; because that famous lexicographer's uncommon personal bulk more fitted him to compile a lexicon to be used by a whale author like me.",
+      "source_locator": "paragraph 2, the Johnson lexicographer aside",
+      "draft_treatment": "absent",
+      "why_it_matters": "This satirical aside — using Johnson's physical bulk as credential for whale-scale lexicography — is a voice-establishing digression of high textual distinctiveness. Its comic logic is signature Melville irony; losing it erases the narrator's self-aware absurdist register that defines the chapter's opening.",
+      "suggested_fix": "Restore the Johnson aside, including the reason given: his 'uncommon personal bulk' fitting him to compile a lexicon for a whale author."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Fain am I to stagger to this emprise under the weightiest words of the dictionary.",
+      "source_locator": "paragraph 2, after 'unwarrantably grandiloquent'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence — 'Fain am I to stagger to this emprise under the weightiest words of the dictionary' — is prosodically distinctive and establishes the mock-heroic register of the narrator's self-presentation. Its absence thins the voice of the opening.",
+      "suggested_fix": "Include this sentence in the compressed opening section to preserve the self-ironizing mock-heroic register."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "for time began with man. Here Saturn's grey chaos rolls over me, and I obtain dim, shuddering glimpses into those Polar eternities",
+      "source_locator": "paragraph 7, the geological sublime passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'For time began with man' is a philosophically charged clause — critically noted as Melville's assertion of a pre-human temporal scale — and 'dim, shuddering glimpses into those Polar eternities' is signature prose rhythm. The draft has 'Saturn's chaos rolls' but omits both of these distinctive phrases.",
+      "suggested_fix": "Restore 'for time began with man' and 'dim, shuddering glimpses into those Polar eternities' to preserve the interpretive and stylistic weight of this passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "No great and enduring volume can ever be written on the flea, though many there be who have tried it.",
+      "source_locator": "paragraph 3, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing comic aphorism — a meta-literary declaration — is a textually distinctive, oft-cited sentence that encapsulates the chapter's argument about scale and theme. Its wry specificity ('though many there be who have tried it') is signature voice.",
+      "suggested_fix": "Append the flea sentence to close the 'mighty theme' paragraph; it is short enough to include without budget strain and too distinctive to drop silently."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft omits or flattens multiple high-priority signatures including 'Ahab's harpoon had shed older blood than the Pharaoh's,' the full 'Friends, hold my arms!' exclamatory sequence, the horror-struck closing sentence on the whale's antemosaic existence, and the Johnson lexicographer comic aside — losses that erase both the chapter's interpretive climax and its defining voice-register."
+}

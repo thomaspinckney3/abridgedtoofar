@@ -1,0 +1,44 @@
+{
+  "segment_id": "037",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "this is marvellous, sometimes most comical. Wherefore this difference? A problem? Perhaps not.",
+      "source_locator": "paragraph 4, transition into the Belshazzar digression",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's rhetorical staging — 'this is marvellous, sometimes most comical' — is part of the narrator's ironic voice and sets up the Belshazzar digression; the draft omits these transitional exclamations and jumps straight to the problem-posing, losing the comedic register.",
+      "suggested_fix": "Restore 'this is marvellous, sometimes most comical' before 'Wherefore this difference?' to preserve the narrator's ironic comic tone."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the mate received his meat as though receiving alms; and cut it tenderly; and a little started if, perchance, the knife grazed against the plate; and chewed it noiselessly; and swallowed it, not without circumspection.",
+      "source_locator": "paragraph 5, Starbuck at table",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The anaphoric 'and…and…and' rhythm is signature Melville periodic prose; the draft condenses it into three quick clauses and drops 'swallowed it, not without circumspection,' losing the comedic solemnity that makes the passage memorable.",
+      "suggested_fix": "Restore the full anaphoric chain, including 'swallowed it, not without circumspection,' to preserve the rhythmic signature."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "What a relief it was to choking Stubb, when a rat made a sudden racket in the hold below.",
+      "source_locator": "paragraph 5, after 'Ahab forbade not conversation; only he himself was dumb'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a tonally distinctive comic beat — the rat as Stubb's savior — that punctuates the oppressive silence at table. Its absence removes a well-known piece of Melvillean comic relief that many readers remember.",
+      "suggested_fix": "Restore the rat sentence after 'only he was dumb' to preserve the comic relief and voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "for when they did enter it, it was something as a street-door enters a house; turning inwards for a moment, only to be turned out the next",
+      "source_locator": "final paragraph, on mates and harpooneers 'living out of the cabin'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The street-door simile is a small but characteristically Melvillean conceit that gives the observation rhetorical texture; without it the statement is merely factual.",
+      "suggested_fix": "Restore the street-door simile to retain the narrator's analogical playfulness."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the chapter's major signatures — the Belshazzar passage verbatim, Flask's butterless fate, the Daggoo/Dough-Boy scalping scene, the closing Bear/Logan/paws paragraph — but flattens three voice-defining passages (Starbuck's anaphoric alms-eating, the rat-in-the-hold comic beat, and the transitional 'marvellous, most comical') at medium severity, falling just short of the regeneration threshold."
+}

@@ -1,0 +1,44 @@
+{
+  "segment_id": "056",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Noah Webster's ark does not hold it. Nevertheless, this same expressive word has now for many years been in constant use among some fifteen thousand true born Yankees.",
+      "source_locator": "paragraph beginning 'But what is a Gam?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'fifteen thousand true born Yankees' clause is an ironic voice-establishing aside that grounds the lexicographical joke in democratic authority; the draft drops it entirely, cutting from 'Noah Webster's ark does not hold it' directly to 'Certainly, it needs a definition.'",
+      "suggested_fix": "Restore the sentence 'Nevertheless, this same expressive word has now for many years been in constant use among some fifteen thousand true born Yankees' between the Webster joke and the definition call."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "mutually cutting each other on the high seas, like a brace of dandies in Broadway; and all the time indulging, perhaps, in finical criticism upon each other's rig.",
+      "source_locator": "paragraph beginning 'So, then, we see that of all ships'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains 'dandies in Broadway' but drops the subsequent clause 'all the time indulging, perhaps, in finical criticism upon each other's rig,' which carries the satirical edge of the comparison and is a small but rhetorically pointed piece of Ishmael's ironic register.",
+      "suggested_fix": "Append 'and all the time indulging, perhaps, in finical criticism upon each other's rig' after 'mutually cutting each other on the high seas, like a brace of dandies in Broadway.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "As touching Slave-ships meeting, why, they are in such a prodigious hurry, they run away from each other as soon as possible.",
+      "source_locator": "paragraph beginning 'So, then, we see that of all ships'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's 'prodigious hurry' and 'run away from each other' are replaced with the bare 'Slave-ships hurry past,' losing the comic irony and the mild moral charge embedded in the exaggeration.",
+      "suggested_fix": "Restore closer to source: 'Slave-ships, why, they are in such a prodigious hurry they run away from each other as soon as possible.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "and as for Pirates, when they chance to cross each other's cross-bones, the first hail is—'How many skulls?'—the same way that whalers hail—'How many barrels?'",
+      "source_locator": "paragraph beginning 'So, then, we see that of all ships'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's 'cross each other's cross-bones' is a deliberate pun-with-emblem that the draft omits, simply saying 'Pirates, meeting, hail.' The heraldic / piratical wordplay is part of the comic texture.",
+      "suggested_fix": "Retain 'cross each other's cross-bones' as the lead-in to the skull-count hail."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves nearly all high-priority signature passages verbatim, but drops the 'fifteen thousand true born Yankees' clause and shaves the satirical edges from the merchant-ship and slave-ship comparisons, producing two medium and two low voice-flattening findings — below the regeneration threshold."
+}

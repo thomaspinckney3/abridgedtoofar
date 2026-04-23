@@ -5,49 +5,94 @@
     {
       "severity": "high",
       "class": "signature_loss",
-      "source_passage": "\"And God created great whales.\" —Genesis. \"Leviathan maketh a path to shine after him\" —Job. \"Now the Lord had prepared a great fish to swallow up Jonah.\" —Jonah.",
-      "source_locator": "Opening biblical epigraphs through the full sequence of Extracts",
+      "source_passage": "Silly Mansoul swallowed it without chewing, as if it had been a sprat in the mouth of a whale.",
+      "source_locator": "Pilgrim's Progress entry, approximately mid-section",
       "draft_treatment": "absent",
-      "why_it_matters": "The entire 'Extracts' segment — the sub-librarian's compilation of whale quotations from Genesis through Whale Song — is completely absent from the draft. This is the whole source text for segment 003; the draft instead contains Chapter 2 ('The Carpet-Bag') material, meaning the Extracts content has been entirely dropped and replaced.",
-      "suggested_fix": "The draft must be regenerated to actually represent the Extracts segment. The compression target of ~700 words should be met by selecting and presenting a curated but representative set of the Extracts quotations — at minimum the biblical epigraphs (Genesis, Job, Jonah, Psalms, Isaiah), the Shakespeare quotes ('Very like a whale' from Hamlet; Hobbes's Leviathan opening), the Owen Chace Essex quotation, the Edmund Burke Nantucket reference, the Paley's Theology aorta passage, the J. Ross Browne 'There she blows' dialogue, and the closing Whale Song — preserving their attributions and the cumulative encyclopedic-mock-scholarly voice."
-    },
-    {
-      "severity": "high",
-      "class": "voice_erasure",
-      "source_passage": "\"Very like a whale.\" —Hamlet. ... \"By art is created that great Leviathan, called a Commonwealth or State\" —Opening sentence of Hobbes's Leviathan.",
-      "source_locator": "Middle section of Extracts, Shakespeare and Hobbes entries",
-      "draft_treatment": "absent",
-      "why_it_matters": "These are among the most culturally famous and critically discussed of all the Extracts entries. The Hamlet quotation is a touchstone of ironic deflation; the Hobbes opening redeploys Leviathan's political meaning in a book about a literal leviathan — a signature interpretive nexus critics return to repeatedly.",
-      "suggested_fix": "Both must appear verbatim with their attributions in any regenerated Extracts draft."
+      "why_it_matters": "This is among the most culturally recognizable of all the Extracts, widely cited in criticism and anthologies; its absence removes a key signature quotation from the chapter.",
+      "suggested_fix": "Restore the Pilgrim's Progress entry verbatim."
     },
     {
       "severity": "high",
       "class": "signature_loss",
-      "source_passage": "\"My God! Mr. Chace, what is the matter?\" I answered, \"we have been stove by a whale.\" —Narrative of the Shipwreck of the Whale Ship Essex of Nantucket",
-      "source_locator": "Late section of Extracts, Owen Chace entry",
+      "source_passage": "Io! Paean! Io! sing. To the finny people's king. Not a mightier whale than this In the vast Atlantic is; Not a fatter fish than he, Flounders round the Polar Sea.",
+      "source_locator": "Charles Lamb's Triumph of the Whale entry, after Montgomery passage",
       "draft_treatment": "absent",
-      "why_it_matters": "The Essex narrative quotation is one of the most historically and culturally famous passages in the Extracts, grounding the book's central terror in documented catastrophe. Its absence removes a primary interpretive anchor for the novel's climax.",
-      "suggested_fix": "Restore verbatim with full attribution to Owen Chace in the regenerated Extracts draft."
+      "why_it_matters": "Lamb's mock-heroic verse is critically noted as one of the most tonally distinctive extracts, establishing the chapter's range from the sublime to the satirical; its loss flattens the tonal spectrum.",
+      "suggested_fix": "Restore the Charles Lamb entry verbatim."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "These things are reciprocal; the ball rebounds, only to bound forward again; for now in laying open the haunts of the whale, the whalemen seem to have indirectly hit upon new clews to that same mystic North-West Passage.",
+      "source_locator": "From 'Something' unpublished entry, near end of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the single most interpretively weighted extract in the chapter — the 'mystic North-West Passage' phrase is a critical touchstone for readings of the novel's metaphysical ambition and is widely cited in Melville scholarship.",
+      "suggested_fix": "Restore this entry verbatim; it is indispensable."
     },
     {
       "severity": "high",
       "class": "signature_loss",
-      "source_passage": "\"The sovereignest thing on earth is parmacetti for an inward bruise.\" —King Henry. \"Very like a whale.\" —Hamlet.",
-      "source_locator": "Middle of Extracts, Shakespeare entries",
+      "source_passage": "A tenth branch of the king's ordinary revenue... is the right to royal fish, which are whale and sturgeon. And these, when either thrown ashore or caught near the coast, are the property of the king.",
+      "source_locator": "Blackstone entry, after Edmund Burke entries",
       "draft_treatment": "absent",
-      "why_it_matters": "Both Shakespeare quotations are widely recognized outside the book and carry cultural-famousness signature weight; 'Very like a whale' is particularly iconic as a self-referential ironic citation.",
-      "suggested_fix": "Restore both Shakespeare entries verbatim with attributions."
+      "why_it_matters": "The Blackstone extract carries significant interpretive weight for legal and political readings of Moby-Dick and is cited in critical literature on the novel's engagement with sovereignty and property.",
+      "suggested_fix": "Restore the Blackstone entry verbatim."
     },
     {
-      "severity": "high",
+      "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "\"The aorta of a whale is larger in the bore than the main pipe of the water-works at London Bridge\" —Paley's Theology.",
-      "source_locator": "Late-middle section of Extracts, Paley entry",
+      "source_passage": "There go the ships; there is that Leviathan whom thou hast made to play therein.",
+      "source_locator": "Psalms entry, fourth extract in source",
       "draft_treatment": "absent",
-      "why_it_matters": "This is one of the most rhetorically vivid scientific-sublime passages in the Extracts, widely noted by critics for its characteristic Melvillean register of awe-through-measurement.",
-      "suggested_fix": "Restore verbatim with Paley attribution in regenerated draft."
+      "why_it_matters": "This Biblical extract from Psalms is one of the most recognized scriptural invocations of Leviathan and contributes to the chapter's theological architecture.",
+      "suggested_fix": "Restore the Psalms entry verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I built a cottage for Susan and myself and made a gateway in the form of a Gothic Arch, by setting up a whale's jaw bones.",
+      "source_locator": "Hawthorne's Twice Told Tales entry, near end of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Hawthorne entries carry strong authorial-intertextual significance given the Melville-Hawthorne relationship and are noted in biographical and critical scholarship.",
+      "suggested_fix": "Restore both Hawthorne entries."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The quantity of line withdrawn from the boats engaged in the capture of this one whale, amounted altogether to 10,440 yards or nearly six English miles.... Sometimes the whale shakes its tremendous tail in the air, which, cracking like a whip, resounds to the distance of three or four miles.",
+      "source_locator": "Scoresby entry, after Elizabeth Oakes Smith",
+      "draft_treatment": "absent",
+      "why_it_matters": "Scoresby is one of the primary naturalist authorities cited throughout Moby-Dick; his absence from the Extracts weakens the chapter's scientific register.",
+      "suggested_fix": "Restore the Scoresby entry verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Mast-head ahoy! Do you see that whale now? Ay ay, sir! A shoal of Sperm Whales! There she blows! There she breaches! Sing out! sing out every time! Ay Ay, sir! There she blows! there—there—thar she blows—bowes—bo-o-os!",
+      "source_locator": "J. Ross Browne entry, near end of source",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The compressed dialogue strips the phonetic comedy of 'thar she blows—bowes—bo-o-os!' which is the distinctive signature of the passage and its most-quoted element.",
+      "suggested_fix": "Restore the full call-and-response dialogue including the phonetic rendering of the lookout's cry."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The whale is doubtless the largest animal in creation. If you should write a fable for little fishes, you would make them speak like great whales.",
+      "source_locator": "Goldsmith entries, after Rape of the Lock",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Goldsmith-to-Johnson quip is a well-known witticism that contributes to the chapter's tonal variety and is cited in studies of the chapter's rhetorical range.",
+      "suggested_fix": "Restore both Goldsmith entries."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "And what thing soever besides cometh within the chaos of this monster's mouth, be it beast, boat, or stone, down it goes all incontinently that foul great swallow of his, and perisheth in the bottomless gulf of his paunch.",
+      "source_locator": "Holland's Plutarch's Morals entry, after Isaiah",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage's archaic diction and grotesque vividness are prosodically distinctive and establish the early modern register that gives the Extracts their historical texture.",
+      "suggested_fix": "Restore the Holland's Plutarch's Morals entry verbatim."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft does not contain the Extracts segment at all — it presents Chapter 2 ('The Carpet-Bag') instead — resulting in total loss of every signature passage, quotation, voice, and interpretive content from the source text."
+  "summary": "The draft retains roughly a third of the source extracts and loses three high-severity signatures (Pilgrim's Progress, Charles Lamb, and the 'mystic North-West Passage' unpublished fragment) along with seven medium-severity omissions, constituting a serious failure of signature preservation across this chapter."
 }

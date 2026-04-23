@@ -4,41 +4,32 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "So, if any one man, in his own proper person, afford stuff for a good joke to anybody, let him not be backward, but let him cheerfully allow himself to spend and be spent in that way. And the man that has anything bountifully laughable about him, be sure there is more in that man than you perhaps think for.",
-      "source_locator": "Second paragraph, the digression on laughter",
-      "draft_treatment": "absent",
-      "why_it_matters": "This ironic philosophical aside is register-defining voice material — Ishmael's characteristic move of elevating a trivial social moment into a general moral proposition. The draft keeps only the opening sentence of the riff and drops the fully characteristic conclusion, erasing the digressive, self-implicating voice that marks this narrator.",
-      "suggested_fix": "Restore at minimum the second sentence: 'And the man that has anything bountifully laughable about him, be sure there is more in that man than you perhaps think for.' The rhythm and paradox are signature and cost only one sentence."
+      "class": "voice_flattening",
+      "source_passage": "the more's the pity. So, if any one man, in his own proper person, afford stuff for a good joke to anybody, let him not be backward, but let him cheerfully allow himself to spend and be spent in that way. And the man that has anything bountifully laughable about him, be sure there is more in that man than you perhaps think for.",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The digressive moralizing on laughter—culminating in the gnomic 'be sure there is more in that man than you perhaps think for'—is a voice-establishing aside that exemplifies Ishmael's ironic, expansive philosophical register. The draft compresses it to a bare clause, losing the cadence, the 'more's the pity,' the 'bountifully laughable,' and the interpretive kicker.",
+      "suggested_fix": "Restore the full sentence sequence from 'the more's the pity' through 'than you perhaps think for'; the aphoristic closing line especially must survive intact."
     },
     {
       "severity": "medium",
       "class": "voice_erasure",
       "source_passage": "Ledyard, the great New England traveller, and Mungo Park, the Scotch one; of all men, they possessed the least assurance in the parlor. But perhaps the mere crossing of Siberia in a sledge drawn by dogs as Ledyard did, or the taking a long solitary walk on an empty stomach, in the negro heart of Africa",
-      "source_locator": "Fifth paragraph, the Ledyard/Mungo Park digression",
+      "source_locator": "paragraph after 'Grub, ho!'",
       "draft_treatment": "absent",
-      "why_it_matters": "The Ledyard/Mungo Park digression is a textbook instance of Ishmael's extravagant mock-scholarly aside; it establishes the narrator's ironic cosmopolitanism and provides tonal contrast with the whalemen's silence. Its complete absence flattens the transition from bar-room to breakfast table into bare narration.",
-      "suggested_fix": "Insert a compressed version of the digression: at minimum name Ledyard and Mungo Park and the joke that crossing Siberia by dog-sledge is poor preparation for the parlor. Even 30 words preserves the voice gesture."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "would seem to smell almost as musky; he cannot have been three days landed from his Indian voyage. That man next him looks a few shades lighter; you might say a touch of satin wood is in him.",
-      "source_locator": "Fourth paragraph, the extended complexion-reading passage",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The 'satin wood' simile and the near-synaesthetic 'would seem to smell almost as musky' are distinctive, irreproducible prose — sensory excess that marks Melville's style. The draft drops both the musky smell and the satin wood comparison, leaving only the bare navigational inference.",
-      "suggested_fix": "Restore 'would seem to smell almost as musky' and 'you might say a touch of satin wood is in him' — both are short and carry significant stylistic charge."
+      "why_it_matters": "The Ledyard/Mungo Park digression is a sustained Ishmaelian ironic aside—signature voice material in which the narrator mocks social polish via bathetic comparison. Its complete absence erases a full paragraph of the narrator's characteristic self-amused philosophizing and leaves a non-sequitur transition to the whalemen's silence.",
+      "suggested_fix": "Reinstate the Ledyard/Mungo Park paragraph, even in compressed form; the names, the sledge/Africa contrast, and the punchline about 'social polish' are the minimum required to preserve the voice."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "His greatest admirer could not have cordially justified his bringing his harpoon into breakfast with him, and using it there without ceremony",
-      "source_locator": "Seventh paragraph, Queequeg at breakfast",
-      "draft_treatment": "absent",
-      "why_it_matters": "The wry concession 'His greatest admirer could not have cordially justified…' is characteristic Ishmael understatement; its removal makes the harpoon-at-breakfast scene matter-of-fact rather than ironically excused.",
-      "suggested_fix": "Add a brief clause acknowledging that even Queequeg's admirers could not justify the harpoon at table, to preserve the ironic register."
+      "source_passage": "and not only that, but they looked embarrassed. Yes, here were a set of sea-dogs, many of whom without the slightest bashfulness had boarded great whales on the high seas—entire strangers to them—and duelled them dead without winking",
+      "source_locator": "paragraph beginning 'These reflections just here'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'entire strangers to them—and duelled them dead without winking' phrasing carries dry ironic punch that distinguishes Melville's comic rhythm; the draft's compression to 'boarded great whales without winking' softens the absurdist contrast and loses 'duelled them dead.'",
+      "suggested_fix": "Restore 'entire strangers to them—and duelled them dead without winking' as close to verbatim as space allows."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Three medium-severity failures — the laughter-digression tail, the Ledyard/Mungo Park aside, and the flattened complexion similes — collectively erase the digressive, ironic voice that is the chapter's principal literary content, triggering regeneration."
+  "summary": "The draft drops the entire Ledyard/Mungo Park ironic digression and significantly flattens the laugh-philosophy paragraph, together erasing two extended passages of Ishmael's most characteristic voice-establishing prose."
 }

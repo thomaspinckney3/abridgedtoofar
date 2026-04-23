@@ -1,0 +1,35 @@
+{
+  "segment_id": "008",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Blake nodded his head like a bobble-doll and stumbled forward. 'Of course, My Lord.'",
+      "source_locator": "near end, after 'Unchain my Maiden'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'bobble-doll' simile is a small but distinctive comic image that establishes Blake's obsequiousness with vivid specificity; the draft replaces it with the generic 'bobbed and scrambled.'",
+      "suggested_fix": "Restore 'like a bobble-doll' or an equivalent that preserves the comic-specific image: e.g. 'Blake nodded his head like a bobble-doll and scrambled forward.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Alex wiggled up beside her and smiled. 'It'll be okay.'",
+      "source_locator": "after Stephanie bursts into tears, before 'You shall be chosen this night'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Alex's specific action ('wiggled up') and spoken line characterize her as the group's quiet optimist; the draft collapses this to 'Alex inched close, murmuring something soft,' erasing both the gesture's distinctiveness and the actual dialogue.",
+      "suggested_fix": "Restore Alex's direct speech ('It'll be okay') and the 'wiggled' verb, which together establish her character in a single brushstroke."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "His wide eyes bespoke his youth as true as his wrinkle-free face and golden, curly locks.",
+      "source_locator": "after the young lord asks 'Are they truly Maidens?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the only line that explicitly characterises the young lord's naivety through the narrator's direct observation; without it, the subsequent note about his 'soft eyes' fixed on Stephanie loses its interpretive foundation.",
+      "suggested_fix": "Add back the characterizing clause about his youth before moving to Blake's reply, even in compressed form."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful, but three minor voice-flattening moments (the bobble-doll simile, Alex's dialogue, and the young lord's characterizing clause) dilute specific comic and interpretive texture without rising to high severity."
+}

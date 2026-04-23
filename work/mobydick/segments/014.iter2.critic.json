@@ -1,0 +1,44 @@
+{
+  "segment_id": "014",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I experienced a disagreeable revulsion. Nor did I at all object to the hint from Queequeg that perhaps it were best to strike a light",
+      "source_locator": "paragraph 3, after the identity/darkness passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Melvillean hedging and syntactic formality ('Nor did I at all object to the hint from Queequeg that perhaps it were best') is distinctive voice; the draft collapses it to 'I felt a revulsion, and did not object to Queequeg's hint to strike a light,' stripping the ironic indirection.",
+      "suggested_fix": "Restore 'Nor did I at all object to the hint from Queequeg that perhaps it were best to strike a light' verbatim or very close to it."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I no more felt unduly concerned for the landlord's policy of insurance. I was only alive to the condensed confidential comfortableness of sharing a pipe and a blanket with a real friend.",
+      "source_locator": "paragraph 3, after 'serene household joy'",
+      "draft_treatment": "absent",
+      "why_it_matters": "'The condensed confidential comfortableness' is a rhetorically distinctive coinage and a key thematic beat about interracial male friendship; 'the landlord's policy of insurance' is a wry comic callback. Both are entirely cut, erasing the culminating ironic warmth of the paragraph.",
+      "suggested_fix": "Restore both sentences, especially 'I was only alive to the condensed confidential comfortableness of sharing a pipe and a blanket with a real friend,' which crystallizes the chapter's emotional payload."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "coming out of my own pleasant and self-created darkness into the imposed and coarse outer gloom of the unilluminated twelve-o'clock-at-night",
+      "source_locator": "paragraph 3, the eye-opening passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The contrast 'self-created darkness' vs. 'imposed and coarse outer gloom' and the mock-precise 'unilluminated twelve-o'clock-at-night' are stylistically unique Melvillean coinages; the draft reduces this to 'the coarse outer gloom of midnight,' dropping both the self/world opposition and the comic exactitude.",
+      "suggested_fix": "Restore 'my own pleasant and self-created darkness into the imposed and coarse outer gloom of the unilluminated twelve-o'clock-at-night' — the phrasing is signature and short enough to include verbatim."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "subsequent disclosures, when I had become more familiar with his broken phraseology, now enable me to present the whole story such as it may prove in the mere skeleton I give",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial aside ('mere skeleton I give') is a voice-establishing moment of self-aware retrospective narration; the draft ends the chapter by cutting it entirely, losing the narrator's framing consciousness.",
+      "suggested_fix": "Add a brief closing clause restoring the retrospective narrator's caveat about 'broken phraseology' and presenting only a skeleton of Queequeg's story."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity failures — loss of 'condensed confidential comfortableness / landlord's policy of insurance,' flattening of 'self-created darkness / unilluminated twelve-o'clock-at-night,' and erasure of the 'Nor did I at all object' syntactic formality — collectively constitute enough voice erosion to require regeneration."
+}

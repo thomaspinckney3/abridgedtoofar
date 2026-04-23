@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T11:01:45",
+  "key": "f944936853bc5680cff7ff669446dfc7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"18\",\n    \"draft_passage\": \"I said, swallowing the lump in my throat. \"I owe him.\"\",\n    \"source_has\": \"Source has the throat-swallow action ONCE, placed before the dialogue: 'I swallowed the lump in my throat. It wasn't easy being this close to such an ethereal being. \"Because he was hurt trying to protect me. I owe him one.\"'\",\n    \"gate_test_answer\": \"A reader is not confused by the repeated action per se, but the draft renders the sentence as 'I said, swallowing the lump in my throat' when the draft already used that exact beat two sentences earlier ('I swallowed the lump in my throat. It wasn't easy being this close\u2026'). This is a copy-paste duplication error, not a compression ambiguity\u2014a reader is briefly confused about whether this is a second swallow or an editorial accident, but it does not rise to structural damage of meaning. Rejecting as not meeting the gate test.\"\n  }\n]\n```\n\nAfter applying the gate test rigorously to every candidate, the duplicated \"swallowing the lump in my throat\" in chapter 18 is the only anomaly, and it does not cause genuine reader confusion about meaning\u2014it reads as a copy error rather than a structural break. No sentence in either draft chapter fails the non-parseable, dangling-reference, broken-pivot, missing-gloss, unattributed-dialogue, or mid-scene-jump tests in a way that would genuinely mislead a competent reader with no source access.\n\n```json\n[]\n```",
+    "input_tokens": 7570,
+    "output_tokens": 393,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 11.356712818145752,
+    "stop_reason": "end_turn"
+  }
+}

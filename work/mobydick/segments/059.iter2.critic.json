@@ -1,0 +1,44 @@
+{
+  "segment_id": "059",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "sketching the profile of a pyramid. Even Scoresby, the justly renowned Right whaleman",
+      "source_locator": "paragraph on French aptitude vs English/American draughtsmen",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The pyramid simile ('about tantamount to sketching the profile of a pyramid') is a rhetorically distinctive, voice-establishing comparison that characterises Ishmael's satirical register; the draft drops it entirely.",
+      "suggested_fix": "Restore the pyramid simile: 'which, so far as picturesqueness of effect is concerned, is about tantamount to sketching the profile of a pyramid.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Sea fowls are pecking at the small crabs, shell-fish, and other sea candies and maccaroni, which the Right Whale sometimes carries on his pestilent back.",
+      "source_locator": "description of second Garnery engraving (Right Whale)",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'sea candies and maccaroni' is a textually distinctive, whimsical register-marker; its absence flattens the Garnery description and removes a characteristic touch of Ishmael's comic naturalism.",
+      "suggested_fix": "Reinsert the sea-fowl / sea candies detail within the Right Whale engraving description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the black stormy distance the ship is bearing down upon the scene",
+      "source_locator": "description of first Garnery engraving (Sperm Whale)",
+      "draft_treatment": "absent",
+      "why_it_matters": "The closing compositional detail of the ship bearing down in the black stormy distance completes the tableau and contributes to the interpretive weight Melville places on the engraving as a whole; its omission truncates the set-piece.",
+      "suggested_fix": "Add the background ship detail: 'while in the black stormy distance the ship is bearing down upon the scene.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I am strongly tempted here to enter upon those still more monstrous stories … But I pass that matter by.",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ishmael's conspicuous feint—announcing a digression and ostentatiously declining it—is a voice-establishing rhetorical device; the draft skips straight to the survey, losing the mock-reluctance tone.",
+      "suggested_fix": "Restore a brief version of the opening feint, e.g. 'I am tempted to enter upon the more monstrous stories—Pliny, Purchas, Hackluyt, Cuvier—but I pass that by.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—the pyramid simile, the 'sea candies and maccaroni' detail, and the closing ship-in-the-distance from the first Garnery tableau—together flatten Ishmael's satirical and whimsical register sufficiently to trigger regeneration."
+}

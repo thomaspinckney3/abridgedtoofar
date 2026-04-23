@@ -1,0 +1,35 @@
+{
+  "segment_id": "098",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "and for worshipping which, King Asa, her son, did depose her, and destroyed the idol, and burnt it for an abomination at the brook Kedron, as darkly set forth in the 15th chapter of the First Book of Kings.",
+      "source_locator": "paragraph 1, closing sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft retains only 'burnt for an abomination at the brook Kedron,' dropping the full biblical cadence—King Asa's deposition of his mother, the destruction of the idol, and crucially the citation 'as darkly set forth in the 15th chapter of the First Book of Kings.' The phrase 'as darkly set forth' is rhetorically distinctive and carries the chapter's interpretive freight linking the whale's phallus to idolatry.",
+      "suggested_fix": "Restore the full sentence: 'and for worshipping which, King Asa, her son, did depose her, and destroyed the idol, and burnt it for an abomination at the brook Kedron, as darkly set forth in the 15th chapter of the First Book of Kings.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Immemorial to all his order, this investiture alone will adequately protect him, while employed in the peculiar functions of his office.",
+      "source_locator": "paragraph 2, closing sentence",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft changes 'Immemorial to all his order' to 'this immemorial cassock,' shifting the emphasis and losing the ecclesiastical-order phrasing that sustains the chapter's sustained clerical satire. The phrase 'peculiar functions of his office' is also dropped.",
+      "suggested_fix": "Restore: 'Immemorial to all his order, this investiture alone will adequately protect him, while employed in the peculiar functions of his office.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "This is the invariable cry from the mates to the mincer. It enjoins him to be careful, and cut his work into as thin slices as possible, inasmuch as by so doing the business of boiling out the oil is much accelerated, and its quantity considerably increased, besides perhaps improving it in quality.",
+      "source_locator": "footnote / asterisked passage at end",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Melville's footnote is deadpan comic pedantry—'the invariable cry,' 'enjoins him to be careful'—and the mock-earnest explanation is part of the chapter's satirical voice. The draft flattens it into a plain paraphrase, losing the mock-learned register.",
+      "suggested_fix": "Restore the footnote's tone: 'This is the invariable cry from the mates to the mincer. It enjoins him to be careful, and cut his work into as thin slices as possible, inasmuch as by so doing the business of boiling out the oil is much accelerated, and its quantity considerably increased, besides perhaps improving it in quality.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the chapter's main movements adequately but flattens two rhetorically distinctive passages—the full King Asa biblical citation with 'as darkly set forth' and the 'Immemorial to all his order' ecclesiastical-order phrasing—and softens the mock-pedantic footnote; none individually rises to high severity, and with only two medium findings the verdict is a marginal pass, though restoration of the King Asa sentence is strongly advised."
+}

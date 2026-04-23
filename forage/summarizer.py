@@ -14,6 +14,7 @@ import math
 from .artifacts import Book, read_json
 from .chapter_split import split_to_disk
 from .llm import complete
+from .prompts import load_prompt
 
 TOKENS_PER_WORD = 1.4  # empirical for English prose on OpenAI tokenizers
 MAX_INPUT_TOKENS = 260_000  # conservative headroom under GPT-5's 272k limit
@@ -105,17 +106,16 @@ def _single_synopsis(book: Book, chapter_sources: list[dict], *,
                      n_sentences: int, note: str = "",
                      stage_suffix: str = "") -> str:
     source_block = "\n\n".join(c["text"] for c in chapter_sources)
-    prompt = (f"Provide a {n_sentences} sentence synopsis of the following "
-              f"book{(' ' + note) if note else ''}. Output exactly "
-              f"{n_sentences} sentences, one per line, no preamble.\n\n"
-              f"{source_block}\n")
+    prompt = load_prompt("summarize_synopsis")
+    rendered = prompt.render(n_sentences=n_sentences, note=note,
+                             source=source_block)
     stage = f"summarize:{book.book_id}"
     if stage_suffix:
         stage = f"{stage}:{stage_suffix}"
     resp = complete(
-        prompt=prompt,
-        model="openai:gpt-5",
-        max_tokens=8000,
+        prompt=rendered,
+        model=prompt.config.get("model", "openai:gpt-5"),
+        max_tokens=prompt.config.get("max_tokens", 8000),
         cache=False,
         work_dir=book.work_dir,
         stage=stage,
@@ -124,25 +124,17 @@ def _single_synopsis(book: Book, chapter_sources: list[dict], *,
 
 
 def _merge_synopses(book: Book, partials: list[str]) -> str:
-    parts_block = "\n\n".join(
-        f"=== Part {i} synopsis ===\n{s}"
-        for i, s in enumerate(partials, 1)
-    )
-    prompt = (
-        f"Below are {len(partials)} partial synopses of "
-        f"{book.metadata.get('title', book.book_id)} by "
-        f"{book.metadata.get('author', '?')}, one per part of the book "
-        f"in order. Merge them into a single {TARGET_SENTENCES}-sentence "
-        f"synopsis covering the entire book in plot order. Preserve "
-        f"principal characters, major plot turns, setting, and the book's "
-        f"thematic throughline. Output only the "
-        f"{TARGET_SENTENCES} sentences, one per line, no preamble.\n\n"
-        f"{parts_block}\n"
+    prompt = load_prompt("summarize_merge")
+    rendered = prompt.render(
+        partials=partials,
+        target_sentences=TARGET_SENTENCES,
+        book={"title": book.metadata.get("title", book.book_id),
+              "author": book.metadata.get("author", "?")},
     )
     resp = complete(
-        prompt=prompt,
-        model="openai:gpt-5",
-        max_tokens=4000,
+        prompt=rendered,
+        model=prompt.config.get("model", "openai:gpt-5"),
+        max_tokens=prompt.config.get("max_tokens", 4000),
         cache=False,
         work_dir=book.work_dir,
         stage=f"summarize:{book.book_id}:merge",

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T10:25:49",
+  "key": "2102f486f080e9a4d9ebf5c2e556b4dd",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"vague_reaction_verb\",\n    \"chapter\": \"116\",\n    \"draft_passage\": \"Ahab's voice turned: \\\"Can'st thou smoothe almost any seams and dents?\\\"\",\n    \"source_has\": \"\\\"And I suppose thou can'st smoothe almost any seams and dents; never mind how hard the metal, blacksmith?\\\"\",\n    \"why_damaged\": \"The draft says Ahab's voice \\\"turned\\\" without specifying what it turned to (source has a full transitional exchange about the pike-head seams, establishing the new topic organically), leaving the reader unable to infer what quality or direction of change is meant.\"\n  },\n  {\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"116\",\n    \"draft_passage\": \"\\\"Take them, man: I now neither shave, sup, nor pray till\u2014\\\"\",\n    \"source_has\": \"\\\"Take them, man, I have no need for them; for I now neither shave, sup, nor pray till\u2014but here\u2014to work!\\\" [attributed to Ahab]\",\n    \"why_damaged\": \"In the draft the line immediately follows \\\"For a moment Perth eyed them,\\\" making Perth the most recent subject; without Ahab's attribution the speaker of \\\"Take them, man\\\" is indeterminate.\"\n  },\n  {\n    \"class\": \"unprompted_reply\",\n    \"chapter\": \"116\",\n    \"draft_passage\": \"To temper: \\\"No\u2014no water; I want it of the true death-temper.\\\"\",\n    \"source_has\": \"\\\"Fashioned at last\u2026he cried to Ahab to place the water-cask near.\\\"\",\n    \"why_damaged\": \"Ahab's refusal \\\"No\u2014no water\\\" is a direct response to Perth's request to place the water-cask near, but the draft cuts Perth's request entirely, leaving Ahab's rebuttal without any stimulus.\"\n  },\n  {\n    \"class\": \"cut_interactional_trigger\",\n    \"chapter\": \"116\",\n    \"draft_passage\": \"\\\"Oh! that is the one.\\\" \\\"Aye, blacksmith, it is the one; aye, man, it is unsmoothable\\\"\",\n    \"source_has\": \"\\\"Said I not all seams and dents but one?\\\" \u2014 Perth's earlier promise \\\"all seams and dents but one\\\" (twice established in the source exchange)\",\n    \"why_damaged\": \"Perth's exclamation \\\"Oh! that is the one\\\" and Ahab's confirmation hinge on Perth's repeated prior pledge about \\\"all seams and dents but one,\\\" which the draft's compression of that exchange has removed, so the callback has no referent.\"\n  }\n]\n```",
+    "input_tokens": 5552,
+    "output_tokens": 659,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 16.84706401824951,
+    "stop_reason": "end_turn"
+  }
+}

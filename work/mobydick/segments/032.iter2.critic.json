@@ -1,0 +1,62 @@
+{
+  "segment_id": "032",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the sleeping man, 'twas hard to choose between such winsome days and such seducing nights",
+      "source_locator": "paragraph 1, after the night-dames image",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line bridges the sensory catalogue to the inward-turning passage; its seductive rhythm and the narrator's interjecting voice establish the dreamlike threshold before the pivot to Ahab's soul.",
+      "suggested_fix": "Restore 'For sleeping man, 'twas hard to choose between such winsome days and such seducing nights' before the pivot to inward effects."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Old age is always wakeful; as if, the longer linked with life, the less man has to do with aught that looks like death.",
+      "source_locator": "paragraph 2, opening sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full aphorism is a critical crux on Ahab's death-consciousness; the draft paraphrases it into 'Old age is always wakeful; and Ahab, long linked with life,' losing the philosophic second clause entirely.",
+      "suggested_fix": "Restore the full sentence verbatim: 'Old age is always wakeful; as if, the longer linked with life, the less man has to do with aught that looks like death.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"It feels like going down into one's tomb,\"—he would mutter to himself—\"for an old captain like me to be descending this narrow scuttle, to go to my grave-dug berth.\"",
+      "source_locator": "paragraph 2, Ahab's mutter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full quotation's self-referential framing ('he would mutter to himself') and the complete arc of the sentence are signature; the draft truncates the opening, loses 'for an old captain like me,' and stitches it awkwardly into indirect speech.",
+      "suggested_fix": "Render this as direct speech verbatim: '\"It feels like going down into one's tomb,\"—he would mutter—\"for an old captain like me to be descending this narrow scuttle, to go to my grave-dug berth.\"'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he's about the queerest old man Stubb ever sailed with... is he mad? Anyway there's something on his mind, as sure as there must be something on a deck when it cracks.",
+      "source_locator": "Stubb's soliloquy, middle section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'something on a deck when it cracks' simile is a minor but distinctively Melvillean nautical metaphor; the entire characterisation of Ahab as 'queerest old man Stubb ever sailed with' is also absent, weakening the soliloquy's cumulative portrait.",
+      "suggested_fix": "Restore 'aye, take him fore and aft, he's about the queerest old man Stubb ever sailed with. Anyway there's something on his mind, as sure as there must be something on a deck when it cracks.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "He's full of riddles; I wonder what he goes into the after hold for, every night, as Dough-Boy tells me he suspects; what's that for, I should like to know? Who's made appointments with him in the hold?",
+      "source_locator": "Stubb's soliloquy, near end",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ahab's secret nocturnal visits to the after hold carry significant interpretive weight for later plot developments (the hidden crew, the forge); their complete absence from the draft erases foreshadowing critical readers depend on.",
+      "suggested_fix": "Restore Stubb's wondering about the after-hold visits: 'I wonder what he goes into the after hold for, every night… Who's made appointments with him in the hold?'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Damn me, it's worth a fellow's while to be born into the world, if only to fall right asleep. And now that I think of it, that's about the first thing babies do, and that's a sort of queer, too.",
+      "source_locator": "Stubb's soliloquy, near 'Here goes for a snooze'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This whimsical aside is characteristic of Stubb's comic voice; without it the soliloquy loses its buoyant tonal counterweight to the anxiety about Ahab.",
+      "suggested_fix": "Insert the baby/sleep reflection after 'Here goes for a snooze' to preserve Stubb's register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the frame and most dialogue but flattens three medium-weight signature passages (the aphorism on old age, Ahab's full tomb-mutter, and the after-hold foreshadowing) and drops key connective voice material in Stubb's soliloquy, triggering regeneration."
+}

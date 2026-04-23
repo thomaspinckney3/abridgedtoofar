@@ -1,0 +1,53 @@
+{
+  "segment_id": "116",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"Ego non baptizo te in nomine patris, sed in nomine diaboli!\" deliriously howled Ahab, as the malignant iron scorchingly devoured the baptismal blood.",
+      "source_locator": "near end, after the three punctures",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the most famous and critically discussed lines in all of Melville — the Latin anti-baptism formula is verbatim in the draft, but the draft omits 'deliriously howled' and the surrounding sentence structure is intact. Actually the draft does preserve it verbatim. No loss here.",
+      "suggested_fix": "No action needed — verbatim preserved."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Oh, Pip! thy wretched laugh, thy idle but unresting eye; all thy strange mummeries not unmeaningly blended with the black tragedy of the melancholy ship, and mocked it!",
+      "source_locator": "final paragraph, closing apostrophe to Pip",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The closing apostrophe 'Oh, Pip!' is the chapter's final rhetorical gesture — the exclamatory direct address, the catalogue ('wretched laugh, thy idle but unresting eye'), and 'melancholy ship' are all signature. The draft softens 'Oh, Pip!' to 'poor Pip's restless laugh,' strips the direct address, loses 'wretched,' 'idle but unresting eye,' and 'melancholy ship.'",
+      "suggested_fix": "Restore the direct apostrophe: 'Oh, Pip! thy wretched laugh, thy idle but unresting eye; all thy strange mummeries not unmeaningly blended with the black tragedy of the melancholy ship, and mocked it!' — this closing cry is short enough to carry verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the red mass sending off the sparks in thick hovering flights, some of which flew close to Ahab",
+      "source_locator": "opening paragraph, scene-setting before Mother Carey's chickens dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "This image is the setup for the 'Mother Carey's chickens' dialogue; the 'thick hovering flights' of sparks that fly close to Ahab give the metaphor its physical grounding. Without it, Ahab's opening lines lose their concrete motivation and the passage reads as arbitrary rather than observed.",
+      "suggested_fix": "Restore the detail of the red mass sending off sparks in thick hovering flights close to Ahab, so the 'Mother Carey's chickens' line has its sensory anchor."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "pole, iron, and rope—like the Three Fates—remained inseparable, and Ahab moodily stalked away with the weapon; the sound of his ivory leg, and the sound of the hickory pole, both hollowly ringing along every plank.",
+      "source_locator": "penultimate paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Like the Three Fates' is a critically significant simile linking the assembled harpoon to destiny and doom; the draft preserves 'like the Three Fates, made one' but drops 'remained inseparable' and compresses the double sound of ivory leg and hickory pole into a single clause, losing the rhythmic doubling Melville built.",
+      "suggested_fix": "Restore 'the sound of his ivory leg, and the sound of the hickory pole, both hollowly ringing along every plank' as close to verbatim as space allows; the sonic parallelism is part of the chapter's closing music."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "ere he entered his cabin, light, unnatural, half-bantering, yet most piteous sound was heard",
+      "source_locator": "final sentence, before the Pip apostrophe",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Light, unnatural, half-bantering, yet most piteous' is a four-adjective climactic sequence; 'unnatural' is dropped in the draft, losing the uncanny register that marks Pip's madness.",
+      "suggested_fix": "Restore 'unnatural' in the adjectival sequence describing Pip's sound."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves the chapter's most famous verbatim passage (the Latin anti-baptism) but flattens the closing Pip apostrophe, drops the spark-imagery grounding the Mother Carey's chickens dialogue, compresses the Three Fates / double-sound closing, and loses 'unnatural' from the Pip description — three medium findings that together approach regeneration threshold but do not cross it."
+}

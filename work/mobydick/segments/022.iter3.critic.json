@@ -1,0 +1,35 @@
+{
+  "segment_id": "022",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Elijah! thought I, and we walked away, both commenting, after each other's fashion, upon this ragged old sailor; and agreed that he was nothing but a humbug, trying to be a bugbear.",
+      "source_locator": "paragraph near end, after Elijah names himself",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'after each other's fashion' carries quiet narrative irony about the linguistic gulf between Ishmael and Queequeg; 'thought I' establishes the reflective narrator's interiority. The draft collapses this to 'counting him a humbug bugbear,' losing both the irony and the dual-character dynamic.",
+      "suggested_fix": "Restore 'Elijah! thought I, and we walked away, both commenting, after each other's fashion' before noting their shared conclusion."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "what Captain Peleg had said of him, when I left the ship the day previous; and the prediction of the squaw Tistig",
+      "source_locator": "penultimate paragraph, the cumulative list of 'shadowy things'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft drops 'what Captain Peleg had said of him' from the accumulation list; this cross-reference anchors the chapter's interpretive function as a nexus of ominous foreshadowing. The squaw Tistig reference is present, but Peleg's role in the dread-web is erased.",
+      "suggested_fix": "Add 'and what Captain Peleg had said of him, when I left the ship the day previous' back into the list of shadowy things."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I was resolved to satisfy myself whether this ragged Elijah was really dogging us or not, and with that intent crossed the way with Queequeg, and on that side of it retraced our steps.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies crossing to the other side of the street as the deliberate test—a small but precise narratorial action that shows Ishmael's methodical rationalism. The draft condenses to 'crossing over, we retraced our steps to try him,' losing the slightly comic, painstaking quality of the experiment.",
+      "suggested_fix": "Keep 'with that intent crossed the way with Queequeg, and on that side of it retraced our steps' to preserve the specific, slightly absurd testing gesture."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most signature passages verbatim, but two medium-severity losses—the 'after each other's fashion' narrator-irony moment and the omission of Captain Peleg from the ominous accumulation list—slightly weaken the chapter's characteristic voice and interpretive network without reaching regeneration threshold."
+}

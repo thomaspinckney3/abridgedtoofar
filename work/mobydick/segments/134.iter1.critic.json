@@ -1,0 +1,44 @@
+{
+  "segment_id": "134",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"Then God keep thee, old man—see'st thou that\"—pointing to the hammock—\"I bury but one of five stout men",
+      "source_locator": "paragraph beginning 'Then God keep thee'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft reassigns the Delight captain's speech — collapsing it into the earlier 'Hast killed him?' exchange and stripping the 'Then God keep thee, old man' opening, which is the signature benediction/curse directed at Ahab and carries heavy interpretive weight as a foreboding judgment.",
+      "suggested_fix": "Restore 'Then God keep thee, old man' as the captain's direct address before the burial count, preserving that exact phrase."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "\"Oh! God\"—advancing towards the hammock with uplifted hands—\"may the resurrection and the life——\"",
+      "source_locator": "paragraph beginning 'Then God keep thee'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The interrupted burial prayer ('may the resurrection and the life——') is a critical interpretive crux — Ahab's 'Brace forward!' cuts off the sacred words mid-sentence, enacting his blasphemous refusal of Christian consolation. Its absence erases the dramatic and theological point of the scene.",
+      "suggested_fix": "Restore the captain's advance toward the hammock and the truncated prayer before Ahab's 'Brace forward! Up helm!' interruption."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "not so quick, indeed, but that some of the flying bubbles might have sprinkled her hull with their ghostly baptism",
+      "source_locator": "paragraph beginning 'But the suddenly started Pequod'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'ghostly baptism' phrase is a distinctive Melvillean ironic flourish — an anti-baptism answering the blood-baptism of the harpoon — and its loss flattens the symbolic texture of the scene.",
+      "suggested_fix": "Retain 'the flying bubbles might have sprinkled her hull with their ghostly baptism' within the corpse-splash sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "you now saw through this wreck, as plainly as you see through the peeled, half-unhinged, and bleaching skeleton of a horse",
+      "source_locator": "paragraph beginning 'Upon the stranger's shears'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The horse-skeleton simile is a prosodically distinctive Melvillean sentence with the accumulated adjectives ('peeled, half-unhinged, and bleaching') marking the narrator's voice; its excision reduces the wreck description to bare fact.",
+      "suggested_fix": "Restore the horse-skeleton simile as a trailing clause in the description of the shattered whale-boat ribs."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits two high-severity losses — the 'God keep thee, old man' benediction and the truncated burial prayer that Ahab's command interrupts — plus two medium-severity voice flattenings, collectively gutting the scene's theological and dramatic signature."
+}

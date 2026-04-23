@@ -1,0 +1,26 @@
+{
+  "segment_id": "047",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "even as a white-bearded Mufti in the thronged thoroughfares of Constantinople? Yes. For the peculiar snow-white brow of Moby Dick",
+      "source_locator": "paragraph beginning 'But granting all this'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Constantinople/Mufti simile is the rhetorical hinge of Melville's argument about individual recognition — a stylistically distinctive, exotic comparison that carries both comic and philosophical weight; its erasure flattens a signature Melvillean rhetorical move.",
+      "suggested_fix": "Restore the simile: 'that in the broad boundless ocean, one solitary whale, even if encountered, should be thought capable of individual recognition from his hunter, even as a white-bearded Mufti in the thronged thoroughfares of Constantinople? Yes. For the peculiar snow-white brow of Moby Dick…'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Lieutenant Maury, of the National Observatory, Washington, April 16th, 1851. By that circular, it appears that precisely such a chart is in course of completion",
+      "source_locator": "footnote after paragraph on migratory charts",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Maury footnote grounds the novel's scientific claims in real contemporary documentation and is a site of critical engagement with Melville's relationship to nineteenth-century natural science; its absence removes an authenticating and genre-complicating element.",
+      "suggested_fix": "Add a brief bracketed note or condensed footnote referencing Maury's 1851 circular and its five-degree latitude/longitude grid, preserving the documentary texture."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful, preserving nearly all verbatim signature passages including the invisible-pencil figure, the tallied-whale soliloquy, and the Prometheus closing, but loses the distinctive Constantinople/Mufti simile and the Maury footnote."
+}

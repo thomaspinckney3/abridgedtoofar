@@ -1,0 +1,63 @@
+{
+  "segment_id": "129",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like the carved Roman slave, while that wild cry remained within hearing",
+      "source_locator": "paragraph 2, after 'transfixedly listening'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'carved Roman slave' simile is a striking, distinctively Melvillean image that gives the listening pose its eerie sculptural quality; its removal flattens the passage to mere description.",
+      "suggested_fix": "Restore 'like the carved Roman slave, while that wild cry remained within hearing' immediately after 'transfixedly listening.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He hollowly laughed, and thus explained the wonder. Those rocky islands the ship had passed were the resort of great numbers of seals",
+      "source_locator": "paragraphs 3–4, Ahab's explanation of the seal-cries",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ahab's hollow laugh and the entire seal-explanation passage (including the striking observation that 'in the sea, under certain circumstances, seals have more than once been mistaken for men') is completely cut. This passage carries interpretive weight about the crew's superstition and the blurring of human and animal, living and dead.",
+      "suggested_fix": "Restore Ahab's hollow laugh, Flask's recounting, and at minimum the core of the seal explanation including 'seals have more than once been mistaken for men.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Are all my pains to go for nothing with that coffin? And now I'm ordered to make a life-buoy of it. It's like turning an old coat; going to bring the flesh on the other side now.",
+      "source_locator": "Carpenter's soliloquy, after 'He goes off in a huff'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The carpenter's voice-defining digression is significantly truncated; the 'turning an old coat / flesh on the other side' image is a key metaphor for the coffin-life-buoy transformation that critics return to. The draft cuts this and much of the subsequent comic-philosophical riffing.",
+      "suggested_fix": "Restore 'It's like turning an old coat; going to bring the flesh on the other side now' and adjacent lines about pains going for nothing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I like to take in hand none but clean, virgin, fair-and-square mathematical jobs, something that regularly begins at the beginning, and is at the middle when midway, and comes to an end at the conclusion; not a cobbler's job, that's at an end in the middle, and at the beginning at the end.",
+      "source_locator": "Carpenter's soliloquy, mid-section",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is preserved in the draft but the fuller context of the carpenter's philosophy of 'clean work' — including his anecdote about the old widow and the tinker and the line about 'knotty Aroostook hemlock' — is cut, stripping the soliloquy of its characteristic digressive voice.",
+      "suggested_fix": "Restore at minimum the Aroostook hemlock line ('I'm made of knotty Aroostook hemlock; I don't budge') and the preceding lines about superstitious old carpenters being 'tied up in the rigging' for tonal completeness."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Starbuck, after a melancholy pause. ",
+      "it.": "",
+      "source_locator": "Dialogue section, Starbuck's line",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Starbuck's hesitation ('do not look at me so—the coffin, I mean. Dost thou hear me?') conveys the psychological weight of the coffin-conversion; the draft reduces it to a bare 'Rig it, carpenter,' losing the stricken register.",
+      "suggested_fix": "Restore 'do not look at me so—the coffin, I mean. Dost thou hear me? Rig it.' to convey Starbuck's unease."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "And that's the reason I never would work for lonely widow old women ashore, when I kept my job-shop in the Vineyard",
+      "source_locator": "Carpenter's soliloquy, latter portion",
+      "draft_treatment": "absent",
+      "why_it_matters": "The comic anecdote about old women, tinkers, and the Vineyard job-shop is idiosyncratic narrator-level character voice; its loss thins the carpenter's distinctiveness.",
+      "suggested_fix": "If word budget allows, restore the Vineyard job-shop anecdote for the carpenter's comic-grotesque voice."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft makes three medium-severity cuts — the 'carved Roman slave' simile, the entire Ahab/seal explanation passage (including the interpretively weighted 'seals mistaken for men'), and the truncation of the carpenter's soliloquy (losing the 'turning an old coat / flesh on the other side' metaphor and the Aroostook hemlock self-characterization) — plus flattens Starbuck's psychologically loaded dialogue, collectively eroding voice and interpretive substance enough to require regeneration."
+}

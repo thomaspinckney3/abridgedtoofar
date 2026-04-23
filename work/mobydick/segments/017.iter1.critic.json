@@ -1,0 +1,62 @@
+{
+  "segment_id": "017",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "these naked Nantucketers, these sea hermits, issuing from their ant-hill in the sea, overrun and conquered the watery world like so many Alexanders; parcelling out among them the Atlantic, Pacific, and Indian oceans, as the three pirate powers did Poland",
+      "source_locator": "final paragraph, opening sentences",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Alexander/Poland analogy is one of the chapter's most rhetorically distinctive and critically cited passages; its complete absence erases a signature geopolitical-imperial conceit that defines the chapter's interpretive argument about Nantucketer sovereignty.",
+      "suggested_fix": "Restore the 'like so many Alexanders' sentence and the Poland comparison verbatim or near-verbatim; this is the rhetorical hinge of the chapter's climax."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Look now at the wondrous traditional story of how this island was settled by the red-men. Thus goes the legend.",
+      "source_locator": "third paragraph, opening",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The ceremonious framing ('Look now,' 'Thus goes the legend') is voice-establishing and sets the narrative as oral/mythic; the draft collapses it to a flat 'The old legend says,' erasing the rhetorical register.",
+      "suggested_fix": "Retain 'Look now at the wondrous traditional story' and 'Thus goes the legend' as the paragraph opener."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "most monstrous and most mountainous! That Himmalehan, salt-sea Mastodon, clothed with such portentousness of unconscious power, that his very panics are more to be dreaded than his most fearless and malicious assaults!",
+      "source_locator": "fourth paragraph, closing exclamations",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The exclamatory elaboration on the Mastodon ('clothed with such portentousness of unconscious power… very panics more to be dreaded') is rhythmically and thematically distinctive; the draft retains only the label 'Himmalehan, salt-sea Mastodon' and drops the entire interpretive expansion.",
+      "suggested_fix": "Restore the full elaboration on the Mastodon's unconscious power and the fear of its panics, at least as a compressed clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Take out your map and look at it. See what a real corner of the world it occupies; how it stands there, away off shore, more lonely than the Eddystone lighthouse.",
+      "source_locator": "second paragraph, opening imperative",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The imperative address ('Take out your map') is the chapter's voice-defining direct-reader gesture; the draft drops it entirely, beginning instead with a noun phrase, losing the characteristic Ishmael rhetorical mode.",
+      "suggested_fix": "Open the Nantucket description with 'Take out your map and look at it' to preserve the direct-address voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There is more sand there than you would use in twenty years as a substitute for blotting paper. Some gamesome wights will tell you… that one blade of grass makes an oasis, three blades in a day's walk a prairie",
+      "source_locator": "second paragraph, middle extravaganza list",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The extended satirical list of extravaganzas ('blotting paper,' 'Canada thistles,' 'toadstools,' 'oasis/prairie,' 'quicksand shoes') is a signature comic passage; the draft radically abbreviates it to three items, losing nearly all the ironic accumulation that earns the punchline 'Nantucket is no Illinois.'",
+      "suggested_fix": "Restore most of the list items—blotting-paper sand, Canada thistles, spile-beyond-seas, wood-as-true-cross, toadstools, oasis/prairie—to preserve the satirical voice and earn the concluding line."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "he hides among the waves, he climbs them as chamois hunters climb the Alps",
+      "source_locator": "final paragraph, near end",
+      "draft_treatment": "absent",
+      "why_it_matters": "The chamois-hunter simile adds lyrical texture to the paragraph's extended portrait of the Nantucketer at sea; its omission slightly thins the concluding set-piece.",
+      "suggested_fix": "Reinsert the chamois-hunter comparison before the gull simile."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits one high-severity loss (the Alexander/Poland passage, a critically signature analogy) and four medium-severity flattening failures spanning the imperatives, the comic extravaganza list, the Mastodon elaboration, and the Nantucketer-as-Alexander framing, cumulatively gutting the chapter's rhetorical and satirical character."
+}

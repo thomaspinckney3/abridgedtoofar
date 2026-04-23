@@ -1,0 +1,44 @@
+{
+  "segment_id": "049",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the more monsters he slew by so much the more he multiplied the chances that each subsequently encountered whale would prove to be the hated one he hunted",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's logically perverse multiplication-of-chances reasoning is a signature piece of Ahab's monomania logic; the draft reduces it to 'multiplying chances by multiplying slain,' losing the rhetorical elaboration and the specific interpretive point.",
+      "suggested_fix": "Restore the full clause: 'the more monsters he slew by so much the more he multiplied the chances that each subsequently encountered whale would prove to be the hated one he hunted.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "for to the purely spiritual, the intellectual but stand in a sort of corporeal relation. Starbuck's body and Starbuck's coerced will were Ahab's, so long as Ahab kept his magnet at Starbuck's brain",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The philosophical inversion ('to the purely spiritual, the intellectual but stand in a sort of corporeal relation') is a rhetorically and interpretively distinctive formulation about the hierarchy of mind and soul; the draft drops it entirely and also drops 'so long as Ahab kept his magnet at Starbuck's brain,' a vivid image.",
+      "suggested_fix": "Restore the sentence 'for to the purely spiritual, the intellectual but stand in a sort of corporeal relation' and the full phrasing 'Starbuck's body and Starbuck's coerced will were Ahab's, so long as Ahab kept his magnet at Starbuck's brain.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the Crusaders of old times were not content to traverse two thousand miles of land to fight for their holy sepulchre, without committing burglaries, picking pockets, and gaining other pious perquisites by the way",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full satirical inventory—'committing burglaries, picking pockets, and gaining other pious perquisites'—is rhetorically distinctive and darkly comic; the draft collapses it to 'burglaries and pious perquisites,' losing 'picking pockets' and the enumeration that makes the joke land.",
+      "suggested_fix": "Restore 'committing burglaries, picking pockets, and gaining other pious perquisites by the way' in full."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Having impulsively, it is probable, and perhaps somewhat prematurely revealed the prime but private purpose of the Pequod's voyage, Ahab was now entirely conscious that, in so doing, he had indirectly laid himself open to the unanswerable charge of usurpation; and with perfect impunity, both moral and legal, his crew if so disposed, and to that end competent, could refuse all further obedience",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source makes explicit that the imputation is 'unanswerable' and that the impunity is 'both moral and legal'—legally and morally resonant qualifiers that critics engage with regarding authority and mutiny aboard the Pequod. The draft compresses these away.",
+      "suggested_fix": "Restore 'unanswerable charge of usurpation' and 'with perfect impunity, both moral and legal' to preserve the legal-ethical dimension."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft achieves acceptable coverage of events but repeatedly flattens distinctive rhetorical formulations—the Starbuck soul/intellect inversion, the Crusader satirical list, the monomania logic of multiplying chances, and the moral/legal impunity framing—four medium-severity failures that collectively trigger regeneration."
+}

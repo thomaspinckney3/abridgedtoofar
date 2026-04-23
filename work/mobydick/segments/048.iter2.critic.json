@@ -1,0 +1,71 @@
+{
+  "segment_id": "048",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "that poor fellow there, who this moment perhaps caught by the whale-line off the coast of New Guinea, is being carried down to the bottom of the sea by the sounding leviathan—do you suppose that that poor fellow's name will appear in the newspaper obituary you will read to-morrow at your breakfast?",
+      "source_locator": "paragraph beginning 'First: Though most men have some vague flitting ideas'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the chapter's most rhetorically distinctive and culturally recognizable passages—the direct address to the reader imagining a nameless death at sea with darkly ironic newspaper-obituary framing. It is the voice-establishing anchor for the entire 'landsmen don't know' argument and its absence removes the chapter's sharpest satirical edge.",
+      "suggested_fix": "Restore the New Guinea passage verbatim or nearly so: 'Do you suppose that that poor fellow...will appear in the newspaper obituary you will read to-morrow at your breakfast? No: because the mails are very irregular between here and New Guinea.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "not only is the most marvellous event in this book corroborated by plain facts of the present day, but that these marvels (like all marvels) are mere repetitions of the ages; so that for the millionth time we say amen with Solomon—Verily there is nothing new under the sun.",
+      "source_locator": "paragraph beginning 'But I must be content with only one more and a concluding illustration'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft reproduces this passage verbatim, which is good—but it then strips all the subsequent Procopius contextual reasoning and rhetorical build-up (the careful identification of him as 'trustworthy and unexaggerating,' the Mediterranean argument, the brit/squid food-chain logic) and compresses the conclusion into a restatement of 'the whole story of the White Whale,' conflating it with the opening. The structural and interpretive weight of the Procopius close is largely intact in terms of the Solomon line, so this is not an outright absence, but the methodical reasoning chain that makes it land is severely thinned.",
+      "suggested_fix": "Restore Procopius's credentials ('considered a most trustworthy and unexaggerating historian'), the Mediterranean/Dardanelles route argument in its sequential logic, and the brit vs. squid food distinction—these are the evidential scaffolding the conclusion depends on."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "they might scout at Moby Dick as a monstrous fable, or still worse and more detestable, a hideous and intolerable allegory",
+      "source_locator": "paragraph beginning 'I do not know where I can find a better place'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the line, but strips the surrounding interpretive meta-commentary that frames it—the crucial phrase 'for this is one of those disheartening instances where truth requires full as much bolstering as error' is preserved, but the sentence about 'establishing in all respects the reasonableness of the whole story of the White Whale, more especially the catastrophe' is compressed and the rhetorical architecture flattened, dimming the self-referential narrative logic.",
+      "suggested_fix": "Restore the full framing sentence about the catastrophe and the 'truth requires full as much bolstering as error' clause in proximity to the 'hideous and intolerable allegory' line to preserve its meta-narrative punch."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I have seen Owen Chace, who was chief mate of the Essex at the time of the tragedy; I have read his plain and faithful narrative; I have conversed with his son; and all this within a few miles of the scene of the catastrophe.",
+      "source_locator": "paragraph beginning 'First: In the year 1820 the ship Essex'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This first-person testimonial chain ('I have seen...I have read...I have conversed with his son') is interpretively significant—it is Ishmael anchoring the book's central event to personal, layered witness. Its absence converts a testimony of intimate proximity into a mere summary of Chace's published narrative.",
+      "suggested_fix": "Restore the personal witnessing chain after the Essex account: 'I have seen Owen Chace...I have read his plain and faithful narrative; I have conversed with his son; and all this within a few miles of the scene of the catastrophe.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Was it not Saul of Tarsus converted from unbelief by a similar fright? I tell you, the sperm whale will stand no nonsense.",
+      "source_locator": "paragraph beginning 'Some weeks after, the Commodore set sail'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft keeps 'The sperm whale will stand no nonsense' but drops the Saul of Tarsus comparison and the sardonic theological aside—both are register-defining and rhetorically distinctive, typical of Melville's ironic yoking of the sacred and mundane.",
+      "suggested_fix": "Restore 'Was not Saul of Tarsus converted from unbelief by a similar fright?' immediately before 'The sperm whale will stand no nonsense.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "the whale he had struck must also have been on its travels; no doubt it had thrice circumnavigated the globe, brushing with its flanks all the coasts of Africa; but to no purpose. This man and this whale again came together, and the one vanquished the other.",
+      "source_locator": "paragraph beginning 'In the instance where three years intervened'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage—the whale and man as parallel wanderers across the globe—is interpretively central to the Moby Dick pursuit and carries thematic weight about fate and predestination. Its absence collapses the three-year instance into a bare fact and loses the cosmic symmetry Melville is establishing.",
+      "suggested_fix": "Restore the parallel wandering description: the whale 'thrice circumnavigated the globe...but to no purpose. This man and this whale again came together, and the one vanquished the other.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "in that up and down manly book of old-fashioned adventure, so full, too, of honest wonders—the voyage of Lionel Wafer, one of ancient Dampier's old chums",
+      "source_locator": "paragraph beginning 'In that up and down manly book'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The characterization 'up and down manly book of old-fashioned adventure, so full, too, of honest wonders' is a voice-bearing aside that marks Ishmael's bibliophilic persona; its reduction to 'Lionel Wafer, Dampier's chum' strips the affectionate register.",
+      "suggested_fix": "Restore at least 'that up and down manly book of old-fashioned adventure' when introducing Wafer."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has two high-severity losses (the New Guinea newspaper-obituary passage and the gutted Procopius evidential chain) plus four medium-severity findings including the dropped Owen Chace personal-witness chain, the Saul of Tarsus aside, and the whale-and-man parallel-wanderers passage—requiring regeneration."
+}

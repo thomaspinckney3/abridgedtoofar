@@ -1,0 +1,62 @@
+{
+  "segment_id": "108",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "whether he must not at last be exterminated from the waters, and the last whale, like the last man, smoke his last pipe, and then himself evaporate in the final puff.",
+      "source_locator": "paragraph beginning 'But still another inquiry remains'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most rhetorically distinctive and quotable formulations in the chapter — the triadic 'last whale, like the last man, smoke his last pipe, and then himself evaporate in the final puff' is a set-piece of Melvillean ironic eschatology. Its complete absence removes a key interpretive and voice-signature passage.",
+      "suggested_fix": "Restore the 'last whale, like the last man, smoke his last pipe, and then himself evaporate in the final puff' formulation verbatim or near-verbatim; it is too distinctive to paraphrase away."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "if ever I go where Pliny is, I, a whaleman (more than he was), will make bold to tell him so.",
+      "source_locator": "paragraph beginning 'But will any whaleman believe these stories?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ishmael's direct, combative first-person challenge to Pliny — 'I, a whaleman (more than he was), will make bold to tell him so' — is a voice-establishing moment that asserts the narrator's epistemic authority over classical antiquity. Its erasure flattens the passage to mere factual disputation and removes the narrator's characteristic swaggering persona.",
+      "suggested_fix": "Restore the direct address: 'if ever I go where Pliny is, I, a whaleman (more than he was), will make bold to tell him so.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "He swam the seas before the continents broke water; he once swam over the site of the Tuileries, and Windsor Castle, and the Kremlin.",
+      "source_locator": "final paragraph, beginning 'Wherefore, for all these things'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The catalogue of European landmarks — Tuileries, Windsor Castle, Kremlin — is a critically noted signature of the chapter's closing peroration, giving the whale's antiquity a specific, culturally resonant sweep. The draft jumps from 'He swam the seas before the continents broke water' directly to Noah's flood, omitting this line entirely.",
+      "suggested_fix": "Insert 'he once swam over the site of the Tuileries, and Windsor Castle, and the Kremlin' between the 'continents broke water' clause and the Noah's flood clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the moot point is, whether Leviathan can long endure so wide a chase, and so remorseless a havoc",
+      "source_locator": "paragraph beginning 'But still another inquiry remains'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'so wide a chase, and so remorseless a havoc' is part of the rhetorical cadence that frames the extinction question with Melvillean gravity; its replacement with a bare summary strips the characteristic balanced amplification of the source.",
+      "suggested_fix": "Preserve 'so wide a chase, and so remorseless a havoc' in the framing of the extinction question."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "shook their iron manes and scowled with their thunder-clotted brows upon the sites of populous river-capitals, where now the polite broker sells you land at a dollar an inch",
+      "source_locator": "paragraph beginning 'Comparing the humped herds of whales'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This vividly ironic image — buffalo scowling on sites where a polite broker now sells land at a dollar an inch — is a signature rhetorical contrast between wild nature and commercial modernity. The draft mentions the prairies but drops the entire vivid description and its satirical punch.",
+      "suggested_fix": "Restore at least the 'iron manes,' 'thunder-clotted brows,' and the broker-selling-land contrast to preserve the rhetorical and tonal signature of the buffalo comparison."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "adding this countless host to the present human population of the globe",
+      "source_locator": "paragraph beginning 'Moreover: we are to consider'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The full thought — imagining all grave-yards yielding up the living bodies of those who died in the last seventy-five years and adding them to the current population — is the specific analogy Melville uses to make whale longevity and contemporaneous generations concrete and imaginatively striking. The draft replaces it with a bare assertion about longevity, losing the interpretive analogy entirely.",
+      "suggested_fix": "Restore the grave-yard/cemetery analogy: 'by imagining all the grave-yards, cemeteries, and family vaults of creation yielding up the live bodies of all the men, women, and children who were alive seventy-five years ago; and adding this countless host to the present human population.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft drops three high-severity signatures — the 'last whale, like the last man, smoke his last pipe' climax, Ishmael's first-person challenge to Pliny, and the Tuileries/Windsor/Kremlin catalogue — along with several medium-severity voice-flattenings, together constituting substantial failure to preserve the chapter's most distinctive rhetoric and voice."
+}

@@ -1,0 +1,53 @@
+{
+  "segment_id": "016",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I leaned back and sighed. The old smell of the industrial, human world was wonderful to behold.",
+      "source_locator": "after Heather drags Miriam upstairs, before Heather studies her clothes",
+      "draft_treatment": "absent",
+      "why_it_matters": "This beat — Miriam exhaling into the sensory comfort of the human world — is a small but interpretively significant character moment establishing her emotional ambivalence about the dragon realm. It contrasts with later scenes and adds interiority the draft skips entirely.",
+      "suggested_fix": "Restore the sentence or a near-verbatim equivalent immediately after Miriam is seated: 'I leaned back and sighed. The old smell of the industrial, human world was wonderful to behold.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She grabbed my hand and pulled me toward the stairs. 'Yeah. We'll make it a girl's night out.'",
+      "source_locator": "after Miriam says 'dragged into the wrong crowd'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Heather's breezy 'girl's night out' line establishes her comic register and the tonal whiplash of treating a dragon kidnapping as a slumber party — a voice-defining beat for the chapter's humor that is fully cut.",
+      "suggested_fix": "Restore Heather's line before the apartment scene: 'She grabbed my hand and pulled me toward the stairs. \"Yeah. We'll make it a girl's night out.\"'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'Yeah, but remind me never to look for a man again.' She sniffled. Her lower lip quivered. 'It's because of me, isn't it?'",
+      "source_locator": "entryway reunion scene",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source gives Heather's guilt-spiral ('lower lip quivered,' 'It's because of me') as a distinct emotional beat with physical comedy; the draft collapses the exchange, losing Heather's self-reproach and the physical description that makes the comedy land.",
+      "suggested_fix": "Restore Heather's physical reaction and the full self-blaming line: 'She sniffled. Her lower lip quivered. \"It's because of me, isn't it? I told you to get a guy and when you tried on your own a guy got you, didn't he?\"'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "'He probably got great teeth,' she pointed out. I snorted. 'Yeah, he flosses the whole lamb out of them every day.'",
+      "source_locator": "after Heather suggests Miriam might like Xander",
+      "draft_treatment": "absent",
+      "why_it_matters": "The lamb-flossing joke is a punchy, absurdist comic line that establishes Miriam's dry humor and keeps the tone light during an emotionally heavy scene; its absence depletes the chapter's wit.",
+      "suggested_fix": "Restore the exchange: '\"He's probably got great teeth,\" she pointed out. I snorted. \"Yeah, he flosses the whole lamb out of them every day.\"'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She nodded at my shoulder. 'You gotta get past the Denial stage and take a shortcut to the Acceptance one.' 'I'm not grieving!' I snapped.",
+      "source_locator": "late in the chapter, after Heather's diagnosis",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source has Miriam snapping 'I'm not grieving!' — a sharp, funny comeback that's absent in the draft, which only paraphrases Heather's line and cuts Miriam's retort entirely, softening the sparring dynamic.",
+      "suggested_fix": "Restore Miriam's comeback: after Heather's 'Denial/Acceptance' line, add '\"I'm not grieving!\" I snapped.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium-severity voice-flattening findings (Miriam's sensory exhale, Heather's 'girl's night out' line, and the full guilt-spiral beat) reduce the chapter's tonal precision but do not rise to regeneration threshold."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "053",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But be all this as it may, certain it is that while the subordinate phantoms soon found their place among the crew, though still as it were somehow distinct from them, yet that hair-turbaned Fedallah remained a muffled mystery to the last.",
+      "source_locator": "final paragraph, opening sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The transitional sentence's careful qualification — 'though still as it were somehow distinct from them' — establishes that even the other phantoms maintained an eerie separateness; the draft collapses this to simply 'But the hair-turbaned Fedallah remained a muffled mystery,' losing the layered contrast between the crew's partial absorption of the others versus Fedallah's total impermeability.",
+      "suggested_fix": "Restore the full opening: 'But be all this as it may, certain it is that while the subordinate phantoms soon found their place among the crew, though still as it were somehow distinct from them, yet that hair-turbaned Fedallah remained a muffled mystery to the last.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Whence he came in a mannerly world like this, by what sort of unaccountable tie he soon evinced himself to be linked with Ahab's peculiar fortunes",
+      "source_locator": "final paragraph, second sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'in a mannerly world like this' is a characteristically Melvillean ironic aside — civilized convention pressed against the uncanny — and 'evinced himself to be linked' is more active and strange than the draft's passive 'was linked.' The draft strips the rhetorical color of the source.",
+      "suggested_fix": "Restore 'in a mannerly world like this' and 'evinced himself to be linked with Ahab's peculiar fortunes' verbatim, as these carry the chapter's tonal signature."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "those yellow men",
+      "source_locator": "fourth paragraph, opening",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft inserts 'those yellow men' as a descriptive gloss that does not appear in the source at this point; this is an addition, not a compression, and introduces an anachronistic racial descriptor that alters tone and may distort the original's register.",
+      "suggested_fix": "Remove 'those yellow men' — the source simply refers to 'the subordinate phantoms' without this interpolation."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves the key signatures, including the Beelzebub passage and the Fedallah description in full, but flattens two rhetorically important transitional sentences introducing Fedallah and introduces one spurious interpolation ('those yellow men'); no high-severity failures warrant regeneration."
+}

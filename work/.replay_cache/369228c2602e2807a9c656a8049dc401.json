@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T10:36:17",
+  "key": "369228c2602e2807a9c656a8049dc401",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"vague_reaction_verb\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"He let my hand go and turned his head.\",\n    \"source_has\": \"His hand fell away from mine and turned his head away from me.\",\n    \"why_damaged\": \"The draft's 'turned his head' drops 'away from me', losing the directional object that signals Xander is averting his gaze from Miriam as an interactional gesture of resignation.\"\n  },\n  {\n    \"class\": \"cut_interactional_trigger\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"But I got through.\\\"\\n\\\"Yes, but you are the first. I should not consider myself an exception to a rule that has stood a thousand years.\\\"\",\n    \"source_has\": \"\\\"But I got through,\\\" I reminded him.\",\n    \"why_damaged\": \"The source marks Miriam's line as a deliberate reminder of an established fact; without 'reminded him' the draft loses the interactional logic that she is invoking a prior shared witness event to challenge his reasoning, making her interjection read as a simple statement rather than a counter-argument anchored in their shared experience.\"\n  },\n  {\n    \"class\": \"vague_reaction_verb\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Any reply drowned in the weather's fresh fury. The downpour doubled, a drumbeat so loud it swallowed thought. Xander and Spiros exchanged tight looks.\",\n    \"source_has\": \"What I did catch, however, was a change in their expressions. They gazed out on the rains with pursed lips and furrowed brows before they glanced at each other with knowing looks.\",\n    \"why_damaged\": \"The draft replaces the source's specified 'knowing looks'\u2014a defined interactional signal that the two men share private awareness of a threat\u2014with the bare 'tight looks', stripping the cue that their exchange communicates unspoken mutual understanding rather than mere shared anxiety.\"\n  }\n]\n```",
+    "input_tokens": 9812,
+    "output_tokens": 498,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 12.303009986877441,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "segment_id": "090",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "for the circus-running sun has raced within his fiery ring, and needs no sustenance but what's in himself. So Ahab.",
+      "source_locator": "paragraph beginning 'But how now? in this zoned quest'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'circus-running sun' simile and the rhetorical build-up ('But how now? in this zoned quest, does Ahab touch no land? does his crew drink air?') are among the most distinctively voiced passages in the chapter; the draft jumps straight to 'Nay. So Ahab.' without the rhetorical questions or the solar image, erasing the voice entirely.",
+      "suggested_fix": "Restore the full rhetorical question sequence ('But how now? in this zoned quest, does Ahab touch no land? does his crew drink air? Surely, he will stop for water. Nay. For a long time now, the circus-running sun has raced within his fiery ring, and needs no sustenance but what's in himself. So Ahab.') before the paragraph on the whale-ship's self-sufficiency."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "as human infants while suckling will calmly and fixedly gaze away from the breast, as if leading two different lives at the time; and while yet drawing mortal nourishment, be still spiritually feasting upon some unearthly reminiscence",
+      "source_locator": "paragraph beginning 'But far beneath this wondrous world'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The passage is preserved verbatim, which is good, but the framing clause that introduces it in the source ('The lake, as I have hinted, was to a considerable depth exceedingly transparent; and as human infants…') is dropped, making the simile appear abruptly without the transparent-lake setup that gives it interpretive grounding about sight/depth/innocence.",
+      "suggested_fix": "Restore the transitional sentence 'The lake, as I have hinted, was to a considerable depth exceedingly transparent; and as human infants while suckling…' to preserve the connection between the lake's transparency and the nursing-whale simile."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "like the worshipped white-elephant in the coronation procession of the Siamese! So with stun-sail piled on stun-sail, we sailed along, driving these leviathans before us",
+      "source_locator": "paragraph beginning 'Crowding all sail the Pequod pressed after them'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses the white-elephant simile into a subordinate clause ('like the worshipped white-elephant in the coronation procession of the Siamese!—when of a sudden…') and removes the rhythmically distinct sentence 'So with stun-sail piled on stun-sail, we sailed along, driving these leviathans before us,' which has strong voice-establishing cadence.",
+      "suggested_fix": "Restore the full exclamatory sentence break and the independent clause 'So with stun-sail piled on stun-sail, we sailed along, driving these leviathans before us' before Tashtego's warning."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Witness, too, all human beings, how when herded together in the sheepfold of a theatre's pit, they will, at the slightest alarm of fire, rush helter-skelter for the outlets, crowding, trampling, jamming, and remorselessly dashing each other to death.",
+      "source_locator": "paragraph beginning 'Stripped to our shirts and drawers' / 'Though banding together in tens of thousands'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The theatre-fire passage is one of the chapter's famous sociological asides — a recognisable Melvillean digression on crowd panic used by critics as evidence of his proto-social-psychology; its absence means the final aphorism ('no folly of the beasts…not infinitely outdone by the madness of men') appears without the argumentative scaffold that earns it.",
+      "suggested_fix": "Restore the two-sentence digression on lion-maned buffaloes and the theatre-pit fire between the King Porus simile and the final aphorism about men's madness."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "the inexhaustible wealth of spices, and silks, and jewels, and gold, and ivory… it seems a significant provision of nature, that such treasures, by the very formation of the land, should at least bear the appearance, however ineffectual, of being guarded from the all-grasping western world.",
+      "source_locator": "paragraph beginning 'Those narrow straits of Sunda divide Sumatra from Java'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's ironic editorial voice ('however ineffectual, of being guarded from the all-grasping western world') and the full meditative paragraph on nature's 'significant provision' are collapsed to a mere catalogue ('spices, silks, jewels, gold, and ivory'), losing the political-ironic commentary that critics read as anti-colonial commentary.",
+      "suggested_fix": "Restore the full sentence about nature's 'significant provision' and the phrase 'all-grasping western world' so the ironic geopolitical commentary is legible."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Some of the subtlest secrets of the seas seemed divulged to us in this enchanted pond. We saw young Leviathan amours in the deep.",
+      "source_locator": "After the umbilical cord passage, before the footnote",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The sentence 'Some of the subtlest secrets of the seas seemed divulged to us in this enchanted pond' is absent from the draft, which moves straight from the umbilical cord to 'We saw young Leviathan amours in the deep.' The omitted sentence is the pivot that frames the erotic/mystical register of what follows.",
+      "suggested_fix": "Insert 'Some of the subtlest secrets of the seas seemed divulged to us in this enchanted pond' immediately before 'We saw young Leviathan amours in the deep.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Time out of mind the piratical proas of the Malays, lurking among the low shaded coves and islets of Sumatra, have sallied out upon the vessels sailing through the straits, fiercely demanding tribute at the point of their spears.",
+      "source_locator": "paragraph beginning 'Time out of mind the piratical proas'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The historical Malay piracy paragraph is dropped entirely; while not a famous quotable passage, it establishes the narrative context for why the pursuing Malays are not surprising and why 'solid tribute' is threatened — its loss makes the Malay appearance feel unmotivated.",
+      "suggested_fix": "Add a compressed version of the Malay-proas paragraph (one sentence) to preserve the contextual setup before the Pequod's approach."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity loss (the 'circus-running sun / does Ahab touch no land?' voice passage), one high-severity framing erasure (the transparent-lake setup), and four medium-severity losses including the theatre-fire digression, the 'all-grasping western world' ironic commentary, the stun-sail sentence, and the pivot sentence before 'young Leviathan amours'; taken together these warrant regeneration."
+}

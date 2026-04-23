@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T10:26:55",
+  "key": "e677cc3cd62fd174fb96ef537c5d3c42",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"cut_interactional_trigger\",\n    \"chapter\": \"124\",\n    \"draft_passage\": \"\\\"No, Stubb; you may pound that knot as much as you please, but you'll never pound into me what you were just now saying. Didn't you once say that whatever ship Ahab sails in should pay something extra on its insurance, as if loaded with powder aft and lucifers forward?\\\"\",\n    \"source_has\": \"\\\"And how long ago is it since you said the very contrary? ... Stop, now; didn't you say so?\\\"\",\n    \"why_damaged\": \"Flask's challenge depends on Stubb having said 'the very contrary' \u2014 i.e. something opposed to his current position \u2014 but the draft drops that framing, so the interactional logic of Flask catching Stubb in a contradiction is lost.\"\n  },\n  {\n    \"class\": \"cut_interactional_trigger\",\n    \"chapter\": \"124\",\n    \"draft_passage\": \"And what's the mighty difference between holding a mast's lightning-rod in a storm, and standing by a mast that hasn't any?\",\n    \"source_has\": \"\\\"But hark, again, and I'll answer ye the other thing. First take your leg off from the crown of the anchor here, though, so I can pass the rope; now listen.\\\"\",\n    \"why_damaged\": \"In the source Stubb explicitly signals he is now turning to answer 'the other thing' Flask raised; the draft cuts this pivot, so the lightning-rod argument floats without an interactional prompt and 'the other thing' it was promised to address is unknown to the reader.\"\n  },\n  {\n    \"class\": \"floating_temporal_again\",\n    \"chapter\": \"124\",\n    \"draft_passage\": \"\\\"Seems we lash these anchors as if never to be used again,\\\" said Stubb.\",\n    \"source_has\": \"\\\"never going to be used again\\\"\",\n    \"why_damaged\": \"The word 'again' presupposes a prior use of the anchors has been established in the draft, but no earlier reference to their use appears in the draft chapter, leaving 'again' without an antecedent event.\"\n  },\n  {\n    \"class\": \"floating_temporal_again\",\n    \"chapter\": \"125\",\n    \"draft_passage\": \"he worked on, muttering the same refrain between knots and heaves\u2014\\\"Um, um, um!\\\"\",\n    \"source_has\": \"Source ch 125 contains only a single utterance of the refrain; no earlier iteration precedes it.\",\n    \"why_damaged\": \"'The same refrain' implies Tashtego has already been heard muttering it earlier in the chapter, but the draft's only prior instance is the quoted speech itself, so 'same' has no distinct earlier referent.\"\n  }\n]\n```",
+    "input_tokens": 2368,
+    "output_tokens": 679,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.929552793502808,
+    "stop_reason": "end_turn"
+  }
+}

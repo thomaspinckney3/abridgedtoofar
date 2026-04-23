@@ -1,0 +1,44 @@
+{
+  "segment_id": "101",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "For hardly have we mortals by long toilings extracted from this world's vast bulk its small but valuable sperm; and then, with weary patience, cleansed ourselves from its defilements, and learned to live here in clean tabernacles of the soul; hardly is this done, when—There she blows!—the ghost is spouted up, and away we sail to fight some other world, and go through young life's old routine again.",
+      "source_locator": "final paragraphs, after 'Yet this is life'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the cosmic, allegorical culmination of the chapter—the metaphysical extension of the whaling routine into a meditation on mortal existence and spiritual striving. It is among the most interpretively weighted passages in the chapter, transforming a description of labor into existential philosophy. Its complete absence guts the chapter's meaning.",
+      "suggested_fix": "Restore this passage verbatim or near-verbatim after 'Yet this is life.' It must include 'clean tabernacles of the soul,' the em-dashed 'There she blows!' intrusion, and 'fight some other world.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Oh! the metempsychosis! Oh! Pythagoras, that in bright Greece, two thousand years ago, did die, so good, so wise, so mild; I sailed with thee along the Peruvian coast last voyage—and, foolish as I am, taught thee, a green simple boy, how to splice a rope!",
+      "source_locator": "final paragraph of the chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "The closing invocation of metempsychosis and Pythagoras is one of the most critically discussed passages in Moby-Dick, thematically connecting whale oil, the soul's recycling, and cosmic irony. It is the chapter's tonal and philosophical capstone—a wholly distinctive voice moment that no compression budget justifies dropping without a marker.",
+      "suggested_fix": "Restore the Pythagoras paragraph verbatim as the chapter's closing lines; it is too short (two sentences) to claim compression justifies its excision."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "then the crew themselves proceed to their own ablutions; shift themselves from top to toe; and finally issue to the immaculate deck, fresh and all aglow, as bridegrooms new-leaped from out the daintiest Holland.",
+      "source_locator": "paragraph describing the clean-up, near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders 'the daintiest Holland' as merely 'Holland,' losing the superlative mock-elegance that gives the simile its comic and rhetorical charge—'daintiest' is load-bearing voice.",
+      "suggested_fix": "Restore 'the daintiest Holland' exactly; the adjective is the joke."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "by rehearsing—singing, if I may—the romantic proceeding of decanting off his oil into the casks and striking them down into the hold, where once again leviathan returns to his native profundities, sliding along beneath the surface as before; but, alas! never more to rise and blow.",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's self-conscious aside 'singing, if I may' and the elegiac close 'but, alas! never more to rise and blow' are voice-establishing register markers—the playful self-commentary and the valedictory note are both dropped in the draft's compressed opening.",
+      "suggested_fix": "Restore the 'singing, if I may' aside and the closing 'but, alas! never more to rise and blow' to preserve the chapter's opening voice and its elegiac frame."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft catastrophically omits both the cosmic-allegorical climax ('clean tabernacles of the soul… fight some other world') and the Pythagoras/metempsychosis closing paragraph—the two most interpretively and critically weighted passages in the chapter—making regeneration mandatory."
+}

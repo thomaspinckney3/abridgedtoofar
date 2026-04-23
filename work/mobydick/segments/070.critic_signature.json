@@ -1,0 +1,44 @@
+{
+  "segment_id": "070",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "turned into what seemed a shamble",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source reads 'was turned into what seemed a shamble' — the passive 'turned into' carries the transformation rhetoric; the draft collapses it to 'seemed a shamble,' losing the active metamorphosis image.",
+      "suggested_fix": "Restore 'was turned into what seemed a shamble' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Now as the blubber envelopes the whale precisely as the rind does an orange, so is it stripped off from the body precisely as an orange is sometimes stripped by spiralizing it.",
+      "source_locator": "paragraph 2, mid-section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Melville's rhetorically exact simile with the doubled 'precisely as' is signature prose rhythm; the draft reduces it to 'As the orange's rind spirals from the fruit,' losing both the formal parallelism and the distinctive word 'spiralizing.'",
+      "suggested_fix": "Restore the 'precisely as the rind does an orange…precisely as an orange is sometimes stripped by spiralizing it' phrasing, preserving the doubled-'precisely' structure."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the prodigious blood-dripping mass sways to and fro as if let down from the sky",
+      "source_locator": "paragraph 2, near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'prodigious' and 'to and fro,' reducing a kinetically charged, rhythmically distinctive clause to 'sways blood-dripping as if let down from the sky.' The elision of 'to and fro' and 'prodigious' flattens the visual-sonic texture.",
+      "suggested_fix": "Restore 'the prodigious blood-dripping mass sways to and fro as if let down from the sky' verbatim."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "into an unfurnished parlor called the blubber-room. Into this twilight apartment sundry nimble hands keep coiling away the long blanket-piece as if it were a great live mass of plaited serpents.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'unfurnished parlor' and 'twilight apartment' domesticating metaphors—Melville's characteristic ironic domestication of the ship's interior—are cut; only 'blubber-room' and 'plaited serpents' survive. The domestic irony is voice-defining.",
+      "suggested_fix": "Insert 'an unfurnished parlor called the blubber-room. Into this twilight apartment' to preserve the ironic domestication."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings involving flattened signature rhetoric (the orange simile's 'precisely as…spiralizing,' the 'prodigious…to and fro' clause, and the opening 'turned into') and one low finding for the lost 'twilight apartment' domestic irony—insufficient collectively to require regeneration but worth correcting."
+}

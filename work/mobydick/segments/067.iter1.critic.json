@@ -1,0 +1,71 @@
+{
+  "segment_id": "067",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Though amid all the smoking horror and diabolism of a sea-fight, sharks will be seen longingly gazing up to the ship's decks, like hungry dogs round a table where red meat is being carved",
+      "source_locator": "long paragraph beginning 'Though amid all the smoking horror'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Melville's most rhetorically elaborate and critically engaged passages in the chapter—the extended shark-as-war/slavery digression climaxing in the devil-worship line. It carries interpretive weight (sharks as emblem of systemic violence, the slavery reference, the moral inversion) and the draft collapses the entire paragraph to one half-sentence. The 'suspend your decision about the propriety of devil-worship, and the expediency of conciliating the devil' line survives only in mangled paraphrase.",
+      "suggested_fix": "Restore the 'smoking horror and diabolism' paragraph, including at minimum the sea-fight analogy, the slave-ship outriders passage, and the full devil-worship closing sentence verbatim. These are not compressible without interpretive loss."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "cannibally carving each other's live meat with carving-knives all gilded and tasselled, the sharks, also, with their jewel-hilted mouths, are quarrelsomely carving away under the table at the dead meat",
+      "source_locator": "paragraph beginning 'Though amid all the smoking horror'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'jewel-hilted mouths' and 'gilded and tasselled' carving-knives parallelism is among the most prosodically distinctive phrases in the chapter—the rhetorical balance of human and shark as mirror carnivores is a signature Melvillean irony. Its complete absence erases both the voice and the moral argument.",
+      "suggested_fix": "Restore the full rhetorical parallel (men carving with gilded knives / sharks carving with jewel-hilted mouths) as it is unparaphraseable without destroying the ironic argument."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "sharks also are the invariable outriders of all slave ships crossing the Atlantic, systematically trotting alongside, to be handy in case a parcel is to be carried anywhere, or a dead slave to be decently buried",
+      "source_locator": "paragraph beginning 'Though amid all the smoking horror'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The slavery passage is one of the most critically discussed moments in the chapter and in Melville's treatment of race and systemic violence; its excision removes a primary interpretive keystone that the critical tradition returns to.",
+      "suggested_fix": "Restore the slave-ship sentence, even if other parts of the paragraph must be compressed; this specific observation cannot be silently dropped."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the old black, not in any very high glee at having been previously roused from his warm hammock at a most unseasonable hour, came shambling along from his galley… this old Fleece, as they called him, came shuffling and limping along, assisting his step with his tongs",
+      "source_locator": "paragraph beginning 'The old black, not in any very high glee'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Melville's triple-named, triple-described arrival of Fleece—'Ebony,' 'old black,' 'old Fleece'—is a voice-establishing comic set-piece with its own rhythmic momentum. The draft reduces it to a single clause ('The old black hobbled from the galley, tongs for a cane'), losing the narrator's ironic elaboration entirely.",
+      "suggested_fix": "Expand Fleece's entrance to preserve at least the 'warm hammock at a most unseasonable hour' motivation and the comic detail of the iron-hoop tongs as cane."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Stubb was a high liver; he was somewhat intemperately fond of the whale as a flavorish thing to his palate",
+      "source_locator": "paragraph beginning 'If moody Ahab was now all quiescence'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence characterizes Stubb's appetitive nature in the narrator's own register—'flavorish thing to his palate' is distinctively Melvillean voice. Its absence removes the narratorial frame that contextualizes the steak-demand as character revelation rather than mere incident.",
+      "suggested_fix": "Restore 'Stubb was a high liver; he was somewhat intemperately fond of the whale as a flavorish thing to his palate' or a close paraphrase preserving 'high liver' and 'flavorish.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Here be it known, that though these wild fishermen do not, as a general thing, and according to the great military maxim, make the enemy defray the current expenses of the war",
+      "source_locator": "paragraph beginning 'Here be it known'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This digressive aside—classic Ishmael extradiegetic commentary—establishes the cultural context of eating whale and delivers the 'military maxim' irony. Its absence is a voice erasure of the narrator's characteristic mode of mock-authoritative cultural annotation.",
+      "suggested_fix": "Restore at least the 'make the enemy defray the current expenses of the war' clause with its ironic context; this is signature Ishmael commentary."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard",
+      "source_locator": "paragraph beginning 'About midnight that steak was cut and cooked'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'as if that capstan were a sideboard' simile is repeated several times in the chapter as a comic motif anchoring Stubb's mock-gentlemanly dining; the draft's paraphrase loses 'stoutly stood up' and the capstan-as-sideboard phrasing.",
+      "suggested_fix": "Preserve 'capstan-head, as if that capstan were a sideboard' verbatim as the repeated motif that structures the scene."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits one high-severity erasure of the entire 'smoking horror and diabolism' paragraph (including the slave-ship passage and devil-worship conclusion), a second high-severity loss of the 'jewel-hilted mouths' rhetorical parallel, and four medium-severity voice-flattening findings; regeneration is required."
+}

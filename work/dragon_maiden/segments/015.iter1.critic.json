@@ -3,15 +3,33 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "I was home.",
-      "source_locator": "final line of chapter",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is the chapter's closing line and single most interpretively weighted moment — the protagonist's return to her world — carrying maximal emotional and structural significance; its absence (along with the entire draft) means the segment is wholly missing.",
-      "suggested_fix": "Provide the full draft text for evaluation; currently the draft field is empty and there is nothing to assess."
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie.",
+      "source_locator": "paragraph describing Jethro, after Cayden grants permission",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The simile 'more wrinkles than an unsettled pond' is a stylistically distinctive, comic image that establishes Flynn's playful narrator voice; the draft softens it to 'wrinkles like ripples on a pond,' losing the humor and the exaggeration that makes it signature.",
+      "suggested_fix": "Restore the original simile verbatim: 'more wrinkles than an unsettled pond.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I gave her a bitter smile and shrugged. 'I was just-' 'Dragons!' someone yelled.",
+      "source_locator": "After Stephanie's 'I'm sorry,' before the alarm cry",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The narrator's unfinished line 'I was just—' followed by the abrupt interruption is a classically timed comic-dramatic beat; the draft omits the bitter smile and shrug, stripping the emotional register (wry resignation) that contextualizes the interruption.",
+      "suggested_fix": "Restore 'I gave her a bitter smile and shrugged' before the truncated dialogue so the narrator's wry, self-aware tone is preserved."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He swept his eyes over the surface. 'Quite impressive, is it not?'",
+      "source_locator": "Xander's speech in front of the activated Portal",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source has Xander 'sweep his eyes over the surface' before speaking, a small gesture that conveys lordly deliberation; the draft has him speak without the beat, slightly flattening the characterization.",
+      "suggested_fix": "Reinsert the action beat 'He swept his eyes over the surface' before Xander's speech."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "No draft text was supplied — the draft field is completely empty, making every source passage absent by default; the segment must be regenerated."
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful, but one comic simile ('more wrinkles than an unsettled pond') is paraphrased away and one narrator beat (the bitter smile before the interruption) is stripped, producing two medium-severity voice-flattening losses that together do not cross the regeneration threshold."
 }

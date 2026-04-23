@@ -1,0 +1,44 @@
+{
+  "segment_id": "114",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "for here, millions of mixed shades and shadows, drowned dreams, somnambulisms, reveries; all that we call lives and souls, lie dreaming, dreaming, still; tossing like slumberers in their beds",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most critically and culturally celebrated passages in the chapter — the incantatory catalogue of 'drowned dreams, somnambulisms, reveries' culminating in 'lie dreaming, dreaming, still' is prosodically and rhetorically unique and carries enormous interpretive weight about the Pacific as the repository of human unconscious life. Its complete erasure is a major signature loss.",
+      "suggested_fix": "Restore the passage in close to verbatim form: 'millions of mixed shades and shadows, drowned dreams, somnambulisms, reveries; all that we call lives and souls, lie dreaming, dreaming, still; tossing like slumberers in their beds; the ever-rolling waves but made so by their restlessness.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It rolls the midmost waters of the world, the Indian ocean and Atlantic being but its arms… seems the tide-beating heart of earth. Lifted by those eternal swells, you needs must own the seductive god, bowing your head to Pan.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves only a fragment ('tide-beating heart of earth') while excising the full geographical-mythological synthesis, the Californian towns and Asiatic lands passage, the coral isles and 'impenetrable Japans,' and crucially 'bowing your head to Pan' — the Pan motif that the very next sentence ('But few thoughts of Pan stirred Ahab's brain') depends on for its rhetorical force. Without the Pan invocation, the contrast with Ahab collapses.",
+      "suggested_fix": "Restore at minimum the Pan closing — 'Lifted by those eternal swells, you needs must own the seductive god, bowing your head to Pan' — as it is the pivot on which the Ahab paragraph turns. The Californian/Asiatic/coral isles passage should also be restored or closely paraphrased."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "His firm lips met like the lips of a vice; the Delta of his forehead's veins swelled like overladen brooks",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "absent",
+      "why_it_matters": "These two similes — 'lips of a vice' and 'Delta of his forehead's veins swelled like overladen brooks' — are distinctive, bodily, highly specific figurative language characterizing Ahab's obsession at this threshold moment; their omission flattens the physical intensity of the description to mere statement ('his purpose intensified').",
+      "suggested_fix": "Restore: 'His firm lips met like the lips of a vice; the Delta of his forehead's veins swelled like overladen brooks' before the sleep-cry sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "with one nostril he unthinkingly snuffed the sugary musk from the Bashee isles (in whose sweet woods mild lovers must be walking)",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical aside — '(in whose sweet woods mild lovers must be walking)' — is a characteristically Melvillean ironic digression that sets the pacific erotic world of ordinary humanity against Ahab's monomania; its removal erases the tonal contrast that gives the passage its bite.",
+      "suggested_fix": "Reinstate the parenthetical: '(in whose sweet woods mild lovers must be walking)' after the Bashee isles reference."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits two high-severity signature losses — the entire 'drowned dreams, somnambulisms, reveries… lie dreaming, dreaming, still' passage and the Pan invocation that structurally pivots into the Ahab paragraph — plus two medium failures in the Ahab portrait, requiring regeneration."
+}

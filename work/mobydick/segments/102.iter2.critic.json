@@ -1,0 +1,116 @@
+{
+  "segment_id": "102",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the round world itself but an empty cipher, except to sell by the cartload, as they do hills about Boston, to fill up some morass in the Milky Way",
+      "source_locator": "paragraph 2, Ahab's meditation on significance",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The sentence is quoted verbatim in the draft, but it is stripped of its rhetorical frame ('And some certain significance lurks in all things, else all things are little worth') and awkwardly introduced mid-sentence as a clause following a colon after summary prose, destroying the aphoristic authority and full logical structure that makes it culturally famous.",
+      "suggested_fix": "Restore the complete sentence as a standalone unit beginning 'And some certain significance lurks in all things, else all things are little worth, and the round world itself but an empty cipher…' — do not graft it onto paraphrase."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "this round gold is but the image of the rounder globe, which, like a magician's glass, to each and every man in turn but mirrors back his own mysterious self",
+      "source_locator": "Ahab's soliloquy, paragraph beginning 'There's something ever egotistical'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft omits 'to each and every man in turn' and condenses to 'mirrors back each man's mysterious self,' erasing the iterative emphasis that is the rhetorical and interpretive crux — the coin as universal self-mirror. This is one of the most critically engaged lines in the chapter.",
+      "suggested_fix": "Restore verbatim: 'which, like a magician's glass, to each and every man in turn but mirrors back his own mysterious self.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Methinks now this coined sun wears a ruddy face; but see! aye, he enters the sign of storms, the equinox! and but six months before he wheeled out of a former equinox at Aries! From storm to storm!",
+      "source_locator": "Ahab's soliloquy, second half",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'See—he enters the sign of storms, the equinox!' cutting the full arc of storm-to-storm movement and the 'six months before … Aries' symmetry, which is critically central to Ahab's fatalistic worldview and the chapter's cosmological imagery.",
+      "suggested_fix": "Include 'and but six months before he wheeled out of a former equinox at Aries! From storm to storm! So be it, then.' in full."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "A dark valley between three mighty, heaven-abiding peaks, that almost seem the Trinity, in some faint earthly symbol. So in this vale of Death, God girds us round; and over all our gloom, the sun of Righteousness still shines a beacon and a hope.",
+      "source_locator": "Starbuck's soliloquy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft paraphrases and truncates Starbuck's full theological meditation, losing 'heaven-abiding peaks,' 'sun of Righteousness still shines a beacon and a hope,' and the complete sentence 'If we bend down our eyes…' passage. Starbuck's reading is the counterweight to Ahab's solipsism; flattening it erases the chapter's central dialectic.",
+      "suggested_fix": "Restore Starbuck's reading in full or near-full, including the vale of Death / sun of Righteousness imagery and 'If we bend down our eyes, the dark vale shows her mouldy soil; but if we lift them, the bright sun meets our glance half way, to cheer.'"
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "There now's the old Mogul… he's been twigging it; and there goes Starbuck from the same, and both with faces which I should say might be somewhere within nine fathoms long. And all from looking at a piece of gold, which did I have it now on Negro Hill or in Corlaer's Hook, I'd not look at it very long ere spending it.",
+      "source_locator": "Stubb's opening soliloquy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses Stubb's vivid, character-establishing opening into a single dismissive sentence, losing 'old Mogul,' 'twigging it,' 'Corlaer's Hook,' and the full comic register. Stubb's voice is one of the chapter's primary critical objects — its erasure flattens the polyphony.",
+      "suggested_fix": "Restore Stubb's opening monologue through 'I'd not look at it very long ere spending it' with his characteristic idiom intact."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "your doubloons of old Spain, your doubloons of Peru, your doubloons of Chili, your doubloons of Bolivia, your doubloons of Popayan; with plenty of gold moidores and pistoles, and joes, and half joes, and quarter joes. What then should there be in this doubloon of the Equator that is so killing wonderful? By Golconda!",
+      "source_locator": "Stubb's soliloquy, middle section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The anaphoric catalogue of doubloons and the rhetorical climax 'By Golconda!' is one of Melville's signature comic-incantatory passages; its complete absence removes a distinctive voice marker and the humor that makes Stubb's reading interpretively valuable.",
+      "suggested_fix": "Restore the doubloon-catalogue and 'By Golconda!' as part of Stubb's monologue."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I'll try my hand at raising a meaning out of these queer curvicues here with the Massachusetts calendar… Book! you lie there; the fact is, you books must know your places. You'll do to give us the bare words and facts, but we come in to supply the thoughts.",
+      "source_locator": "Stubb's soliloquy, almanac passage",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the 'Book! you lie there' lines verbatim, which is good, but the surrounding almanac-comedy ('Daboll's arithmetic,' 'Massachusetts calendar,' 'I'll try my hand at raising a meaning') is entirely absent, stripping the context that makes those lines funny and meaningful.",
+      "suggested_fix": "Restore the almanac setup including Daboll and Bowditch references so the 'Book! you lie there' punchline has its earned context."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "There's a sermon now, writ in high heaven, and the sun goes through it every year, and yet comes out of it all alive and hearty. Jollily he, aloft there, wheels through toil and trouble; and so, alow here, does jolly Stubb.",
+      "source_locator": "End of Stubb's zodiac reading",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'The sun goes through it jollily each year, and so does jolly Stubb,' losing 'There's a sermon now, writ in high heaven' — the key line that frames the zodiac reading as Stubb's counter-sermon to Starbuck's theology and Ahab's fatalism. It is a critically central comparative moment.",
+      "suggested_fix": "Restore 'There's a sermon now, writ in high heaven' verbatim, followed by 'Jollily he, aloft there, wheels through toil and trouble; and so, alow here, does jolly Stubb.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Shall I call that wise or foolish, now; if it be really wise it has a foolish look to it; yet, if it be really foolish, then has it a sort of wiseish look to it.",
+      "source_locator": "Stubb's commentary on Flask, paragraph beginning 'Shall I call that wise'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-undermining chiastic observation by Stubb is a signature stylistic moment and an interpretive comment on the chapter's entire epistemological theme; its absence leaves a gap in the chapter's meta-commentary.",
+      "suggested_fix": "Restore Stubb's 'wise or foolish' reflection as a beat between Flask's speech and the Manxman."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "There's another rendering now; but still one text. All sorts of men in one kind of world, you see.",
+      "source_locator": "Stubb's refrain after the Manxman",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this line but reassigns it to a narratorial aside rather than Stubb's soliloquy voice, stripping the accumulated choral force of Stubb's repeated 'dodge again / aside again' commentary structure that ties the whole chapter together.",
+      "suggested_fix": "Restore as Stubb's own spoken refrain, with his characteristic 'Dodge again!' framing intact."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Here's the ship's navel, this doubloon here, and they are all on fire to unscrew it. But, unscrew your navel, and what's the consequence?",
+      "source_locator": "Pip's soliloquy, opening lines",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft paraphrases this rather than preserving it; the navel/unscrew conceit is critically famous as Pip's oblique insight into the chapter's interpretive-destabilization theme. The exact formulation matters.",
+      "suggested_fix": "Restore Pip's navel speech verbatim: 'Here's the ship's navel, this doubloon here, and they are all on fire to unscrew it. But, unscrew your navel, and what's the consequence?'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I can stand the rest, for they have plain wits; but he's too crazy-witty for my sanity. So, so, I leave him muttering.",
+      "source_locator": "Stubb's exit line after Pip",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft relocates and paraphrases Stubb's exit ('over-witty for his own sanity'), inverting the original's meaning ('too crazy-witty for MY sanity') and losing Stubb's self-aware unease, which is interpretively significant as the chapter's closing register.",
+      "suggested_fix": "Restore Stubb's actual exit: 'I can stand the rest, for they have plain wits; but he's too crazy-witty for my sanity. So, so, I leave him muttering.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft suffers pervasive high-severity signature losses: Ahab's magician's-glass line is corrupted, his storm-to-storm arc truncated, Starbuck's theological meditation flattened, and Stubb's entire comic-polyphonic soliloquy is gutted of its most distinctive passages (doubloon-catalogue, Golconda, almanac comedy, 'sermon writ in high heaven'), erasing the chapter's central interpretive dialectic."
+}

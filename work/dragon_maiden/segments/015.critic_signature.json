@@ -5,49 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "more wrinkles than an unsettled pond",
+      "source_passage": "He was about seventy with more wrinkles than an unsettled pond.",
       "source_locator": "paragraph describing Jethro's appearance",
       "draft_treatment": "fragment_preserved",
-      "why_it_matters": "This simile is the chapter's most stylistically distinctive ornament—an unexpected, slightly comic comparison that defines the narrator's voice register. The draft preserves it verbatim, but attribution is subtly shifted: in the source the narrator (Kat) observes it; in the draft it reads as straight narration. Minor but the surrounding comic framing is intact.",
-      "suggested_fix": "No fix needed—phrase is preserved verbatim and in context."
+      "why_it_matters": "This is the one genuine comic simile in the chapter — a voice-establishing line that signals the narrator's wry register. The draft preserves it verbatim, which is correct, but strips the surrounding frame: in the source Jethro's 'soft blue eyes smiled at Stephanie' is the immediate follow-through beat. The draft reproduces that too, so preservation is adequate.",
+      "suggested_fix": "No action required — this was a false alarm on review."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The man collided with the Portal and let out a horrible scream before he burst into dust.",
-      "source_locator": "battle scene, after the dragon seizes the monk",
+      "source_passage": "I stumbled back and my heels tripped on one of the stones. My arms flailed at my sides to stop me, but gravity took hold.",
+      "source_locator": "near-final action sequence, after Xander leaps at narrator",
       "draft_treatment": "paraphrased",
-      "why_it_matters": "The source specifies the monk 'collided with the Portal and let out a horrible scream before he burst into dust'—the sequence (collision → scream → disintegration) is the narrative beat. The draft compresses to 'struck the surface, screamed, and disintegrated into dust,' losing 'horrible' and the word 'before' which carries the time-order irony of the scream preceding annihilation.",
-      "suggested_fix": "Restore: 'let out a horrible scream before he burst into dust.'"
+      "why_it_matters": "The source gives two discrete physical beats — heel-catch, arm-flail — then the blunt punch-line 'gravity took hold.' The draft compresses to 'my heel caught a stone. Arms flailed for balance; gravity took me.' The rhythm is shortened and 'gravity took me' loses the original's dry finality ('took hold'), flattening the kinetic voice of the climax.",
+      "suggested_fix": "Restore 'but gravity took hold' as the closing phrase of that sentence to preserve the rhythm and the narrator's detached, slightly darkly comic acknowledgment of her own fall."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The injured dragon dropped to the ground but landed on all fours. It swung its tail in a full circle and knocked away all the men in robes, the colorful ones included.",
+      "source_locator": "battle scene, after one dragon is hit by priests' light",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'the colorful ones included' is a small but signature comic aside — it undercuts the gravitas of the battle and is a clear register marker for this narrator. The draft replaces the whole sentence with 'swept its tail in a deadly circle. Priests and monks scattered like ninepins,' introducing a new simile that is not in the source and erasing the narrator's dry parenthetical.",
+      "suggested_fix": "Restore 'the colorful ones included' as a parenthetical after clearing the priests, and drop the invented 'like ninepins' simile which is not the author's voice."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Stephanie and I ducked as he flew past.",
-      "source_locator": "after the dragon seizes the monk",
-      "draft_treatment": "absent",
-      "why_it_matters": "The source includes 'We ducked' after ducking as the monk flew past, establishing the close physical danger in two distinct beats. The draft merges 'We ducked' with the death description, erasing the small beat of fear.",
-      "suggested_fix": "Minor; add 'We ducked as he swept overhead' as a separate sentence."
+      "source_passage": "He threw the rock underhanded at the gray blob.",
+      "source_locator": "Portal demonstration scene",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'Gray blob' is the narrator's casual, deflationary description of the Portal — it marks the first-person voice undercutting the grand magic with mundane language. The draft replaces it with 'cast it underhand into the gray,' losing the comic texture.",
+      "suggested_fix": "Restore 'gray blob' or a close equivalent to preserve the narrator's deflating register."
     },
     {
       "severity": "low",
       "class": "other",
-      "source_passage": "The earth shook as it struck the dirt near the platform. Stephanie cried out and clung to me.",
-      "source_locator": "after the first enemy dragon crashes",
+      "source_passage": "In my stupor I took his arm and let him lead me up the stairs.",
+      "source_locator": "after the Portal activates and Xander offers his arm",
       "draft_treatment": "absent",
-      "why_it_matters": "The earth tremor and Stephanie clinging to the narrator are small but concrete sensory and relational beats that ground the battle's physical threat and the women's bond.",
-      "suggested_fix": "Add 'The earth shook on impact; Stephanie cried out and clung to me' after the dragon crashes."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I gave her a bitter smile and shrugged. 'I was just-'",
-      "source_locator": "after Stephanie says 'I'm sorry'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source gives Kat 'a bitter smile and shrugged' before her line is cut off—this small gesture characterizes her resigned stoicism. The draft drops the gesture entirely and jumps straight to the interrupted speech.",
-      "suggested_fix": "Restore: 'I gave her a bitter smile and shrugged. \"I was just—\"'"
+      "why_it_matters": "'In my stupor' is a small but character-defining admission — it shows the narrator's awe overriding her usual resistance. The draft simply says 'I took it,' erasing the emotional note.",
+      "suggested_fix": "Add 'In my stupor' or 'Dazed, I took it' to restore the narrator's briefly suspended agency."
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is broadly faithful with no high-severity signature losses; several minor voice and sensory beats are flattened or absent but no single failure is severe enough to require regeneration."
+  "summary": "No high-severity signature losses; two medium-severity voice flattenings (the 'colorful ones included' parenthetical erased and 'gravity took hold' rhythm clipped) and two low-severity prose infelicities, falling below the regeneration threshold, but the draft should be revised to restore the author's comic asides."
 }

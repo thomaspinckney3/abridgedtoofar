@@ -1,0 +1,80 @@
+{
+  "segment_id": "019",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Her masts—cut somewhere on the coast of Japan… stood stiffly up like the spines of the three old kings of Cologne.",
+      "source_locator": "Pequod description paragraph, after the bearded-bows sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'three old kings of Cologne' simile is one of the most critically discussed details in the Pequod description; it carries Melville's characteristic yoking of the archaic and the grotesque. The draft replaces it with 'her masts stood stiff,' erasing the simile entirely.",
+      "suggested_fix": "Restore: 'her masts stood stiffly up like the spines of the three old kings of Cologne' — the simile is short enough to include verbatim even under compression."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "her old hull's complexion was darkened like a French grenadier's, who has alike fought in Egypt and Siberia",
+      "source_locator": "Pequod description paragraph, after 'Long seasoned and weather-stained'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is a signature instance of Melville's world-spanning comparisons and his technique of animating a ship through human analogy; reducing it to 'long-seasoned, weather-stained' strips the voice entirely.",
+      "suggested_fix": "Restore the grenadier simile in condensed form: 'darkened like a French grenadier's who has fought in Egypt and Siberia.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "ancient decks were worn and wrinkled, like the pilgrim-worshipped flag-stone in Canterbury Cathedral where Becket bled",
+      "source_locator": "Pequod description paragraph, after the Cologne-kings sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains 'pilgrim-worshipped flagstone' but drops 'Canterbury Cathedral where Becket bled,' which is the specific, historically resonant phrase that gives the simile its weight and critical attention.",
+      "suggested_fix": "Restore 'in Canterbury Cathedral where Becket bled' — five words that make the simile recognizable."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a fine and almost microscopic net-work of the minutest wrinkles interlacing round his eyes, which must have arisen from his continual sailings in many hard gales, and always looking to windward",
+      "source_locator": "Paragraph describing the man in the tent, before the first dialogue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is a prime example of Melville's physiognomical reading of character through the body — the narrator's speculative, digressive attention to physical detail is a voice-defining mode. 'His eyes pursed by windward scowls' discards the characteristic pseudo-scientific elaboration.",
+      "suggested_fix": "Restore the wrinkle passage, at least in condensed form: 'a microscopic net-work of wrinkles round his eyes, from continual sailings in hard gales, always looking to windward.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "a strange sort of tent, or rather wigwam… the loose hairy fibres waved to and fro like the top-knot on some old Pottowottamie Sachem's head",
+      "source_locator": "Paragraph describing the wigwam on the quarter-deck",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Pottowottamie Sachem simile is Melville's characteristic gesture of Native American reference applied to Nantucket's industry; the draft reduces the entire elaborate wigwam description to one clause, losing the simile and the triangular-opening detail that signals Ahab's domain.",
+      "suggested_fix": "Expand the wigwam description to include the Sachem top-knot simile and note that the opening faced forward — both are short enough to restore."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'Bildad,' cried Captain Peleg, 'at it again, Bildad, eh? Ye have been studying those Scriptures, now, for the last thirty years, to my certain knowledge. How far ye got, Bildad?'",
+      "source_locator": "After Ishmael follows Peleg into the cabin, before 'Dost thee?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic exchange is a character-establishing moment for both Peleg (irreverent) and Bildad (impervious to mockery); its absence flattens the cabin scene and removes a beat of dramatic irony before the lay negotiations begin.",
+      "suggested_fix": "Restore Peleg's jibe about thirty years of Scripture-studying and Bildad's imperviousness to it, even in compressed form."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "bolt-upright, sat old Bildad, who always sat so, and never leaned, and this to save his coat tails",
+      "source_locator": "Description of Bildad in the cabin, before 'His broad-brim was placed beside him'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'never leaned, to save his coat tails' detail is a perfect specimen of Melville's comic characterization through physical habit; its loss mildly flattens Bildad's portrait.",
+      "suggested_fix": "Add the coat-tails detail to Bildad's cabin description in a single clause."
+    },
+    {
+      "severity": "low",
+      "class": "motif_depletion",
+      "source_passage": "when he sailed the old Categut whaleman, his crew, upon arriving home, were mostly all carried ashore to the hospital, sore exhausted and worn out",
+      "source_locator": "Bildad background paragraph, after 'incorrigible old hunks'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Categut anecdote concretizes Bildad's notoriety and adds narrative texture; without it, the claim that he was 'hard-hearted' is asserted rather than demonstrated.",
+      "suggested_fix": "Include the Categut story in one sentence: 'When he sailed the Categut, his crew arrived home mostly carried to hospital, sore exhausted.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's major scenes and several verbatim passages but erases three signature Pequod similes (the French grenadier, the three kings of Cologne, and 'where Becket bled'), the physiognomical eye-wrinkle digression, the Pottowottamie Sachem simile, and Peleg's thirty-years Scripture jibe — losses that collectively flatten Melville's most distinctive descriptive voice in this segment."
+}

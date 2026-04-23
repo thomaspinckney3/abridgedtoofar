@@ -1,0 +1,44 @@
+{
+  "segment_id": "016",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I leaned back and sighed. The old smell of the industrial, human world was wonderful to behold.",
+      "source_locator": "After Heather drags Miriam upstairs and seats her at the table, before Heather examines her clothes",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief sensory beat is interpretively important: it marks Miriam's emotional reentry into her own world and establishes the contrast with the dragon realm. Its absence flattens the homecoming moment.",
+      "suggested_fix": "Restore the sentence pair, or a close paraphrase preserving 'old smell of the industrial, human world' and Miriam's relief at it, between the lava-lamp description and Heather's observation about her clothes."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She laughed and patted my shoulder. 'Because sometimes love starts under strange circumstances.'",
+      "source_locator": "Near end, after Heather says 'Stockholm Syndrome'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source has a two-beat comedic structure: Heather delivers 'Stockholm Syndrome' as a punchline, pauses for Miriam's deflated reaction ('My face fell'), then laughs and offers the warmer follow-up. The draft collapses this into a single sentence, losing the comedic timing and Miriam's 'face fell' reaction that shows genuine emotional impact.",
+      "suggested_fix": "Restore 'My face fell' as a beat between Heather's 'Stockholm Syndrome' line and her laugh/follow-up, preserving the two-step comedic rhythm that gives the line its punch."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Whether wanted or not, murals adorned the sides of the buildings and the streetlight posts. Trees were randomly planted in holes that littered the sidewalks. Signs outside the bottom floors of apartment buildings advertised everything from palm reading to palm trees.",
+      "source_locator": "Paragraph describing the artistic district, after Miriam stumbles twelve blocks",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'palm reading to palm trees' line is a small comic touch that establishes the neighbourhood's eccentric character and shows the narrator's wry voice. Its compression into 'murals and scraggly trees of the artsy district' removes the only joke in the scene-setting.",
+      "suggested_fix": "Restore at least the 'palm reading to palm trees' gag in the district description; it costs very few words and anchors the narrator's voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I snorted. 'Let's just say I was dragged into the wrong crowd, but I'll tell you everything in your apartment.'",
+      "source_locator": "Miriam's response after Heather's guilty speech about telling her to get a guy",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a small but voice-defining line—dry understatement ('dragged into the wrong crowd') that characterises Miriam's coping humour under pressure. Its replacement with plain 'Let's debrief upstairs' strips the sardonic register.",
+      "suggested_fix": "Restore the 'dragged into the wrong crowd' line or a close equivalent before moving the pair upstairs."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; two medium-severity voice flattenings (the homecoming sensory beat and the 'Stockholm Syndrome' comedic two-step) and two low-severity omissions reduce the chapter's tonal distinctiveness but do not trigger regeneration."
+}

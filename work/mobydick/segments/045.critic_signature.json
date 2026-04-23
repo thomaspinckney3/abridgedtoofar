@@ -1,0 +1,71 @@
+{
+  "segment_id": "045",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Through its inexpressible, strange eyes, methought I peeped to secrets which took hold of God. As Abraham before the angels, I bowed myself; the white thing was so white, its wings so wide, and in those for ever exiled waters, I had lost the miserable warping memories of traditions and of towns.",
+      "source_locator": "albatross footnote, third paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is one of the most critically celebrated passages in the chapter — Ishmael's mystical encounter with the albatross is an interpretive keystone showing the narrator's own susceptibility to the whiteness-horror. The draft reproduces the 'God' and 'Abraham' phrases but strips the full personal narrative arc: it omits the scene-setting (prolonged gale, Antarctic seas, ascending from forenoon watch, the bird dashed upon the main hatches), the 'king's ghost in supernatural distress' simile, and the entire resolution about the sailor calling it a 'goney' and Ishmael learning he had not read Coleridge — which is the philosophic payload of the footnote.",
+      "suggested_fix": "Restore the full albatross footnote encounter, including the scene-setting (gale, deck ascent, the bird dashed on hatches), 'some king's ghost in supernatural distress,' the sailor's 'Goney' reply, and the argument that by not having read Coleridge Ishmael proves whiteness itself — not literary association — is the source of the spell."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the elected Xerxes of vast herds of wild horses, whose pastures in those days were only fenced by the Rocky Mountains and the Alleghanies. At their flaming head he westward trooped it like that chosen star which every evening leads on the hosts of light.",
+      "source_locator": "White Steed of the Prairies paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The White Steed passage is one of the most rhetorically elaborate set-pieces in the chapter and a critical touchstone for Melville's prose style — the 'elected Xerxes,' the 'flashing cascade of his mane,' the 'comet of his tail,' 'housed in housings more resplendent than gold,' and the 'primeval times when Adam walked majestic as a god' are all signature cadences. The draft reduces the entire paragraph to a single clause, erasing the sustained apostrophe entirely.",
+      "suggested_fix": "Restore the White Steed paragraph in near-full, including 'elected Xerxes,' the mountain-fenced pastures, the star-simile, the mane and tail imagery, the archangelical apparition, and Adam walking 'bluff-browed and fearless.'"
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "Is it that by its indefiniteness it shadows forth the heartless voids and immensities of the universe, and thus stabs us from behind with the thought of annihilation... a colourless, all-colour of atheism from which we shrink?",
+      "source_locator": "final two paragraphs",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The closing philosophical argument — the most critically discussed passage in the chapter — is present in the draft but the setup is muffled. The source's connective logic ('But not yet have we solved the incantation of this whiteness, and learned why it appeals... nay, the very veil of the Christian's Deity') is truncated to a single clause, losing the explicit framing of the paradox that makes the passage the interpretive climax of the chapter.",
+      "suggested_fix": "Restore the full paragraph beginning 'But not yet have we solved the incantation' verbatim or near-verbatim, including 'the very veil of the Christian's Deity; and yet should be as it is, the intensifying agent in things the most appalling to mankind' — this is the hinge sentence the entire chapter builds toward."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the white, silent stillness of death in this shark, and the mild deadliness of his habits, the French call him Requin... The Romish mass for the dead begins with 'Requiem eternam' (eternal rest), whence Requiem denominating the mass itself",
+      "source_locator": "white shark / Requin footnote",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Requin / Requiem etymological conceit is a rhetorically distinctive and much-noted passage; the draft compresses it to a brief gloss ('The French, alluding to the white, silent stillness of death, call that shark Requin—from Requiem') losing the Latin citation and the 'mild deadliness of his habits' phrasing that makes the observation memorable.",
+      "suggested_fix": "Restore at minimum the 'Requiem eternam (eternal rest)' quotation and the logic that the mass-name then names the shark, preserving the etymological reasoning rather than just asserting it."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "How wildly it heightens the effect of that passage in Froissart, when, masked in the snowy symbol of their faction, the desperate White Hoods of Ghent murder their bailiff in the market-place!",
+      "source_locator": "White Squall / White Hoods paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Froissart reference and the specific 'murder their bailiff in the market-place' detail give the White Hoods moment its vivid historical particularity; the draft reduces it to 'White Hoods of Ghent masked in their snowy faction,' stripping the rhetorical exclamation and the Froissart grounding.",
+      "suggested_fix": "Restore 'the desperate White Hoods of Ghent murder their bailiff in the market-place' with the Froissart attribution."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But thou sayest, methinks that white-lead chapter about whiteness is but a white flag hung out from a craven soul; thou surrenderest to a hypo, Ishmael.",
+      "source_locator": "paragraph before the Vermont colt",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The internal address 'thou surrenderest to a hypo, Ishmael' is voice-establishing — Ishmael rebukes himself by name in a rhetorical pivot that is unique in the chapter. The draft renders it as indirect quotation ('sayest thou? White flag...') dropping 'thou surrenderest to a hypo, Ishmael' entirely.",
+      "suggested_fix": "Restore the direct address 'thou surrenderest to a hypo, Ishmael' verbatim — it is the only moment Ishmael addresses himself by name and carries both voice and tonal-pivot weight."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "all deified Nature absolutely paints like the harlot, whose allurements cover nothing but the charnel-house within",
+      "source_locator": "penultimate paragraph, cosmetic / harlot passage",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is among the most quoted lines of the chapter and the book; the draft preserves it but buries it in a subordinate clause without the rhetorical build-up ('so that all deified Nature absolutely paints like the harlot') that makes the aphorism land as a climax rather than a passing remark.",
+      "suggested_fix": "Keep the harlot simile and ensure the sentence retains its full independent declarative force rather than appearing embedded mid-clause."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft erases the full albatross encounter footnote (philosophically indispensable), guts the White Steed paragraph to a single clause, and muffles the closing paradox-framing sentence, with additional medium-level losses in the Requin etymology, the Froissart / White Hoods passage, the 'hypo, Ishmael' self-address, and the harlot simile's rhetorical force — multiple high-severity signature losses require regeneration."
+}

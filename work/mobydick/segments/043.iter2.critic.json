@@ -1,0 +1,53 @@
+{
+  "segment_id": "043",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "thy throat ain't spoiled with eating Amsterdam butter",
+      "source_locator": "Dutch Sailor's speech, paragraph 4",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Dutch sailor's comic riff on the resurrection and Amsterdam butter is a voice-establishing piece of comic grotesquerie; reducing the whole speech to a nationality-list ('Dutch and French, Maltese and Sicilian…') erases the chapter's carnivalesque register at its richest point.",
+      "suggested_fix": "Restore at least the resurrection joke and the Amsterdam butter punchline to preserve the Dutch sailor's signature speech."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "harpooneer, thy race is the undeniable dark side of mankind—devilish dark at that. No offence. / DAGGOO (_grimly_). None.",
+      "source_locator": "Spanish Sailor / Daggoo exchange, near end before squall",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This brief exchange carries enormous interpretive weight on race and power; the exact phrasing 'undeniable dark side of mankind' and Daggoo's monosyllabic 'None' are critically cited. The draft reduces it to 'A Spanish sailor, touchy, pricks him; knives glitter,' losing both the racist speech-act and Daggoo's chilling reply.",
+      "suggested_fix": "Restore the Spanish sailor's exact words and Daggoo's 'None' reply verbatim; they are the interpretive core of the scene."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Now would all the waves were women, then I'd go drown, and chassee with them evermore! There's naught so sweet on earth—heaven may not match it!—as those swift glances of warm, wild bosoms in the dance",
+      "source_locator": "Maltese Sailor's speech, after sky darkens",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Maltese sailor's erotic reverie is stylistically singular and frequently cited as evidence of the chapter's Dionysian undercurrent; the draft reduces it to a brief paraphrase losing the 'heaven may not match it' clause and the imagery of 'warm, wild bosoms.'",
+      "suggested_fix": "Restore the full Maltese speech including 'heaven may not match it' and the wave-women imagery to preserve the chapter's sensory register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Hail, holy nakedness of our dancing girls!—the Heeva-Heeva! Ah! low veiled, high palmed Tahiti! I still rest me on thy mat, but the soft soil has slid!",
+      "source_locator": "Tahitian Sailor's speech, mid-section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Tahitian's lament—'the soft soil has slid'—is a poignant micro-elegy for lost homeland; the draft mentions only 'holy nakedness and Pirohitee's torrents,' losing the mat-and-soil meditation entirely.",
+      "suggested_fix": "Include the mat/soil lines to preserve the Tahitian's homesick register alongside the storm-rousing climax."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "White skin, white liver! / SPANISH SAILOR (_meeting him_). Knife thee heartily! big frame, small spirit!",
+      "source_locator": "Daggoo / Spanish Sailor exchange, after 'None'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The taunts exchanged ('white liver,' 'big frame, small spirit') sharpen the racial and physical dimensions of the confrontation; their absence leaves the fight generic.",
+      "suggested_fix": "Add the two taunts to the brawl section to restore the confrontation's racial edge."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves Pip's closing monologue and the Manx sailor's key speeches verbatim but collapses the middle of the chapter—the Dutch-sailor resurrection speech, the racially charged Daggoo/Spanish-sailor exchange, and the Maltese erotic reverie—into a catalogue of nationalities and bare paraphrase, producing three medium-severity failures that collectively trigger regeneration."
+}

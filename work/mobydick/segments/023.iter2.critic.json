@@ -1,0 +1,35 @@
+{
+  "segment_id": "023",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But when a man suspects any wrong, it sometimes happens that if he be already involved in the matter, he insensibly strives to cover up his suspicions even from himself. And much this way it was with me. I said nothing, and tried to think nothing.",
+      "source_locator": "final paragraph of the Ahab-suspicion section",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The closing line 'I said nothing, and tried to think nothing' is the interpretive keystone of the passage — Ishmael's self-acknowledged suppression of dread. The draft preserves the preceding sentence but cuts this clinching phrase entirely, stripping the passage of its psychological punchline.",
+      "suggested_fix": "Append 'And much this way it was with me. I said nothing, and tried to think nothing.' immediately after the preserved suspicion sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a good deal to be done, and there is no telling how many things to be thought of, before the Pequod was fully equipped",
+      "source_locator": "paragraph 2, close",
+      "draft_treatment": "absent",
+      "why_it_matters": "Minor but the surrounding housekeeping analogy loses its full rhetorical setup; the draft compresses too hard here and the transition into the 'every one knows' paragraph feels abrupt.",
+      "suggested_fix": "Low priority; acceptable at this compression ratio if other fixes are made."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Never did any woman better deserve her name, which was Charity—Aunt Charity, as everybody called her. And like a sister of charity did this charitable Aunt Charity bustle about hither and thither, ready to turn her hand and heart to anything",
+      "source_locator": "Aunt Charity paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the quoted phrasing but truncates 'ready to turn her hand and heart to anything that promised to yield safety, comfort, and consolation to all on board a ship in which her beloved brother Bildad was concerned, and in which she herself owned a score or two of well-saved dollars' — the satirical close (her financial stake) that is the ironic punch of the whole Aunt Charity portrait.",
+      "suggested_fix": "Restore the trailing clause: '…and in which she herself owned a score or two of well-saved dollars.' This is the satirical sting Melville builds the paragraph toward."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves most signature language, but loses the chapter's psychological clincher ('I said nothing, and tried to think nothing') and the satirical payoff of the Aunt Charity portrait (her financial stake), producing moderate voice flattening at two of the passage's most tonally important moments."
+}

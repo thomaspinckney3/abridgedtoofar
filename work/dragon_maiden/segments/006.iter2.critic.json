@@ -1,0 +1,35 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My one-bedroom apartment was on the third floor with a lovely view of the fire escape and the neighboring brick building.",
+      "source_locator": "paragraph describing apartment, after 'I hurried up the stairs to my private abode'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's dry comic irony ('lovely view of the fire escape and the neighboring brick building') is voice-defining; the draft compresses to 'third-floor one-bedroom faced the fire escape and a brick wall,' stripping the sardonic register.",
+      "suggested_fix": "Restore the ironic framing: 'My one-bedroom apartment was on the third floor with a lovely view of the fire escape and the neighboring brick building.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I tossed my purse onto the small table beside the door and plopped into my favorite-and only-recliner.",
+      "source_locator": "paragraph after entering apartment",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical '—and only—' is a signature self-deprecating aside that defines Miriam's voice; the draft ('collapsed into my recliner') removes it entirely, losing the comedic register.",
+      "suggested_fix": "Restore 'my favorite—and only—recliner' to preserve the wry self-characterization."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My furious thoughts gave way to a loose grasp of consciousness.",
+      "source_locator": "final paragraph before losing consciousness",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The source line is present but the preceding emotional texture—'Its only reaction was tears that pooled in my eyes'—is compressed to 'Tears slid from my unblinking eyes,' losing the specific detail of bodily helplessness that gives the line interpretive weight.",
+      "suggested_fix": "Restore 'tears that pooled in my eyes and slid down my cheeks' to preserve the image of paralytic helplessness before the signature line."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity losses; three medium-severity voice flattenings involving the apartment's sardonic description, the 'favorite—and only—recliner' self-deprecating aside, and minor compression of the final helplessness imagery, but none individually nor collectively reach the regeneration threshold."
+}

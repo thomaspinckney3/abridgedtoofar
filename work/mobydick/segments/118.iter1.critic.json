@@ -1,0 +1,62 @@
+{
+  "segment_id": "118",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "How wondrous familiar is a fool!",
+      "source_locator": "Ahab's muttered aside, after the Bachelor's captain invites him aboard",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Ahab's most quotable and critically noted utterances in the chapter — a compressed, bitter epigram that defines his contempt for the Bachelor's captain and by extension for ordinary human happiness. Its absence erases a signature voice moment.",
+      "suggested_fix": "Restore verbatim: after the Bachelor's captain's jovial reply, include Ahab's muttered 'How wondrous familiar is a fool!' before his spoken response."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "well, then, call me an empty ship, and outward-bound. So go thy ways, and I will mine.",
+      "source_locator": "Ahab's final spoken reply to the Bachelor's captain",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full rhetorical construction — 'thou art a full ship and homeward bound, thou sayst; well, then, call me an empty ship, and outward-bound. So go thy ways, and I will mine' — is the chapter's central interpretive contrast rendered in dialogue. The draft cuts 'So go thy ways, and I will mine,' losing the biblical register and the thematic pivot.",
+      "suggested_fix": "Restore the full speech including 'So go thy ways, and I will mine' verbatim; the compressed dialogue version currently cuts the most resonant half of the utterance."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "that vial was filled with Nantucket soundings",
+      "source_locator": "Final sentence of the chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies 'Nantucket soundings' — not merely 'Nantucket sand' — and the distinction is interpretively significant: soundings tie the vial to the seafloor, navigation, and death-depth symbolism. The draft replaces 'soundings' with 'sand,' erasing the maritime precision that gives the image its weight.",
+      "suggested_fix": "Change 'a small vial of Nantucket sand' to 'a small vial of sand… filled with Nantucket soundings,' restoring the exact word 'soundings.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "three Long Island negroes, with glittering fiddle-bows of whale ivory, were presiding over the hilarious jig",
+      "source_locator": "Description of the Bachelor's festivities, middle of the chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'three ebony fiddlers presided,' losing the specific geographical identification (Long Island), the material detail of whale-ivory bows, and the word 'hilarious jig' — all of which contribute to Melville's precise, ethnographically textured scene-painting.",
+      "suggested_fix": "Restore 'three Long Island negroes, with glittering fiddle-bows of whale ivory' and the phrase 'hilarious jig' to preserve the scene's texture and racial-geographic specificity."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the two ships crossed each other's wakes—one all jubilations for things passed, the other all forebodings as to things to come—their two captains in themselves impersonated the whole striking contrast of the scene",
+      "source_locator": "Paragraph before the dialogue begins",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft omits 'their two captains in themselves impersonated the whole striking contrast of the scene' — a sentence critics identify as Melville's explicit symbolic thesis for the chapter. Without it, the contrast is shown but not named at the level of allegory.",
+      "suggested_fix": "Append 'their two captains in themselves impersonated the whole striking contrast of the scene' after the wake-crossing sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "You would have almost thought they were pulling down the cursed Bastille, such wild cries they raised",
+      "source_locator": "Description of the try-works demolition",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains 'as if pulling down the Bastille' but drops 'cursed' and 'such wild cries they raised,' stripping the narrator's ironic-exuberant voice and the specific rhetorical shape ('you would have almost thought') that makes this a voice-signature passage.",
+      "suggested_fix": "Restore 'You would have almost thought they were pulling down the cursed Bastille, such wild cries they raised' to preserve the narrator's mock-epic register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits three high-severity failures — erasure of 'How wondrous familiar is a fool!', truncation of Ahab's full outward-bound speech, and substitution of 'sand' for 'soundings' in the chapter's closing image — plus three medium-severity voice-flattening losses, making regeneration mandatory."
+}

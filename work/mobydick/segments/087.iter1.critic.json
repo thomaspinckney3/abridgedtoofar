@@ -1,0 +1,44 @@
+{
+  "segment_id": "087",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Would now, it were old Orleans whiskey, or old Ohio, or unspeakable old Monongahela! Then, Tashtego, lad, I'd have ye hold a canakin to the jet, and we'd drink round it! Yea, verily, hearts alive, we'd brew choice punch in the spread of his spout-hole there, and from that live punch-bowl quaff the living stuff.",
+      "source_locator": "Stubb's exclamation, paragraph beginning 'That drove the spigot out of him!'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Stubb's rapturous catalogue—'old Ohio, or unspeakable old Monongahela,' 'hold a canakin to the jet,' 'quaff the living stuff'—is a critically celebrated set-piece of Melville's comic-sublime voice; the cadence, the whiskey-names, and 'unspeakable old Monongahela' are distinctively quotable. The draft slashes it to a single clause, erasing the rhetorical exuberance that defines Stubb's character in this moment.",
+      "suggested_fix": "Restore the full exclamation verbatim: 'or old Ohio, or unspeakable old Monongahela! Then, Tashtego, lad, I'd have ye hold a canakin to the jet, and we'd drink round it! Yea, verily, hearts alive, we'd brew choice punch in the spread of his spout-hole there, and from that live punch-bowl quaff the living stuff.' Word-count pressure does not justify cutting Melville's most memorable passage in this chapter."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Of all the wondrous devices and dexterities, the sleights of hand and countless subtleties, to which the veteran whaleman is so often forced, none exceed that fine manœuvre with the lance called pitchpoling.",
+      "source_locator": "Paragraph beginning 'Of all the wondrous devices'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This rhetorical superlative—'sleights of hand and countless subtleties'—establishes pitchpoling as the apex of whaleman art and sets the celebratory register that governs the chapter. The draft reduces it to a bare introduction ('Then came that wondrous manœuvre called pitchpoling'), losing the enumerative praise that gives the subsequent description its epic weight.",
+      "suggested_fix": "Open the technical paragraph with the source's superlative phrasing: 'Of all the wondrous devices and dexterities…none exceed that fine manœuvre…called pitchpoling,' then compress the technical detail as needed."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Look now at Stubb; a man who from his humorous, deliberate coolness and equanimity in the direst emergencies, was specially qualified to excel in pitchpoling.",
+      "source_locator": "Paragraph beginning 'Look now at Stubb'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The doubled imperative 'Look now at Stubb…Look at him' is a rhetorically distinctive narrative intrusion that frames the action as spectacle; compressing it to 'Look at Stubb—cool, humorous in danger—' strips both the anaphoric structure and the explicit authorial judgement that he was 'specially qualified' for this art.",
+      "suggested_fix": "Retain both instances of 'Look at Stubb/Look at him' and the phrase 'humorous, deliberate coolness and equanimity in the direst emergencies, was specially qualified to excel in pitchpoling' to preserve the rhetorical invocation and character testimony."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Stubb whistlingly gathers up the coil of the warp in one hand…then holding the lance full before his waistband's middle, he levels it at the whale; when, covering him with it, he steadily depresses the butt-end in his hand, thereby elevating the point till the weapon stands fairly balanced upon his palm, fifteen feet in the air.",
+      "source_locator": "Central descriptive paragraph of the pitchpoling action",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The step-by-step cinematic choreography—'whistlingly,' 'waistband's middle,' 'steadily depresses the butt-end,' 'fairly balanced upon his palm'—is the prose showpiece of the chapter, demonstrating Melville's technical-aesthetic fusion. The draft collapses it to a single participial phrase, losing the slow-motion precision that makes the passage distinctive.",
+      "suggested_fix": "Expand the pitchpoling description to preserve at least 'whistlingly,' the waistband-level hold, the depression of the butt-end elevating the point, and the balance on the palm; these kinetic details are the chapter's heart."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits one high-severity loss—the near-total erasure of Stubb's whiskey-catalogue speech ('unspeakable old Monongahela…canakin to the jet…quaff the living stuff'), the chapter's most famous and critically cited passage—plus three medium-severity voice-flattenings that together hollow out the rhetorical and performative character of the chapter."
+}

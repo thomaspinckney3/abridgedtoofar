@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The woods weren't as friendly close up as they were from afar. The thick limbs of the ancient trees blocked out the moon, and there were no paths.",
-      "source_locator": "paragraph 3, description of entering the woods",
+      "source_passage": "My drowsiness was surpassed only by my hunger, and I regretted not taking provisions.",
+      "source_locator": "paragraph describing collapse against boulder",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's wry self-reproach ('I regretted not taking provisions') is a small but characteristic beat of the narrator's dry self-awareness; the draft renders it as plain 'Hunger gnawed,' losing the ironic, slightly rueful voice register.",
+      "suggested_fix": "Restore the narrator's self-critical aside about failing to take provisions; it takes only a clause and preserves voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I launched the rock at him, but my aim was-well, as reliable as ever.",
+      "source_locator": "paragraph describing rock throw",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The dash-interrupted self-deprecating aside ('well, as reliable as ever') is the clearest comic-voice moment in the chapter; it establishes the narrator's sardonic self-awareness. The draft replaces it with flat exposition ('My aim was true to form'), losing the stylistic signature.",
+      "suggested_fix": "Restore the original phrasing or the dash-interrupted joke; the self-deprecating register is the passage's point."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "That was no mirage of an insane person.",
+      "source_locator": "After the woman vanishes, before the world spins",
       "draft_treatment": "absent",
-      "why_it_matters": "This observational beat establishes the narrator's wry, slightly ironic voice — the contrast between expectation and reality is a recurring register note in the chapter.",
-      "suggested_fix": "Add a brief clause preserving the 'not as friendly close up as from afar' contrast when describing entering the woods."
+      "why_it_matters": "This single dry sentence is the narrator's comic commentary capping a supernatural spectacle—a signature moment of wry understatement. The draft omits it entirely, jumping straight to dizziness.",
+      "suggested_fix": "Re-insert 'That was no mirage of an insane person.' (or equivalent) as the narrator's deflating aside before the fainting onset."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Below me the town twinkled with festive lights, no doubt from the Maiden choosing. The whole place was madness.",
-      "source_locator": "paragraph 2, during the hillside escape",
-      "draft_treatment": "absent",
-      "why_it_matters": "The narrator's dry editorial aside ('The whole place was madness') is a small but characteristic voice beat that marks the narrator's perspective on the ritual; its omission slightly flattens register.",
-      "suggested_fix": "Insert the glance at the town's festive lights and the sardonic 'The whole place was madness' during the escape description."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I'm not going back there, and you're going to let those other-\" My not-so-eloquent speech was interrupted by the twinkling of laughter.",
-      "source_locator": "paragraph after the lord says he will punish her",
+      "source_passage": "I snorted. 'You're the one who's transgressed. Several kidnapping laws, if I'm not mistaken.'",
+      "source_locator": "First exchange at the pond",
       "draft_treatment": "paraphrased",
-      "why_it_matters": "The self-deprecating parenthetical 'My not-so-eloquent speech' is a signature voice beat of the narrator's ironic self-awareness; the draft simply cuts to 'a tirade that was cut short,' losing the narrator's wry self-commentary.",
-      "suggested_fix": "Restore 'My not-so-eloquent speech was interrupted' or equivalent self-deprecating phrasing rather than the neutral 'a tirade that was cut short.'"
+      "why_it_matters": "The 'I snorted' action tag and the legalistically comic 'if I'm not mistaken' sharpen the narrator's personality; the draft keeps the content but drops both, softening the voice.",
+      "suggested_fix": "Restore 'I snorted' and the 'if I'm not mistaken' qualifier to preserve the comic legalism of the retort."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Anger makes one forget their predicament, and mine was no exception.",
+      "source_locator": "Before narrator jumps up to berate the lord",
+      "draft_treatment": "absent",
+      "why_it_matters": "This generalizing aside is a small but characteristic narratorial intrusion that breaks the scene momentarily for wry commentary—a register marker for this narrator's style.",
+      "suggested_fix": "Add the generalizing sentence before the narrator's outburst to restore the ironic authorial aside."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is broadly faithful, preserving all major plot beats, the water-spirit encounter, and key quoted dialogue verbatim; only minor voice-register notes and small ironic asides from the source narrator are absent or flattened, none rising above low severity."
+  "verdict": "regenerate",
+  "summary": "Three medium-severity voice-flattening failures—the 'reliable as ever' aim joke, the missing 'no mirage of an insane person' coda, and the absent 'I regretted not taking provisions' aside—collectively erase the chapter's defining sardonic-narrator register and trigger regeneration."
 }

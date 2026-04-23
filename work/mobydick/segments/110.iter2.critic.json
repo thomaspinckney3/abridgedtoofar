@@ -1,0 +1,44 @@
+{
+  "segment_id": "110",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "half-horrible stolidity in him, involving, too, as it appeared, an all-ramifying heartlessness;—yet was it oddly dashed at times",
+      "source_locator": "paragraph on the carpenter's stolidity, before the Noah's ark line",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves 'oddly dashed at times' but drops the preceding clause 'Yet was this half-horrible stolidity in him, involving, too, as it appeared, an all-ramifying heartlessness'—a rhetorically loaded phrase that gives the full ironic turn its force; without it the 'yet' in the draft lands without contrast.",
+      "suggested_fix": "Restore 'half-horrible stolidity…all-ramifying heartlessness' before the 'oddly dashed' clause to preserve the rhetorical pivot."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "He was a stript abstract; an unfractioned integral; uncompromised as a new-born babe; living without premeditated reference to this world or the next.",
+      "source_locator": "paragraph on the wandering carpenter, after the Noah's ark reference",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft runs this directly into a sentence without the rolling-to-and-fro / gathered-no-moss passage that motivates it; the interpretive epithet 'stript abstract; unfractioned integral' survives but is cut adrift from its explanatory rhetoric, diminishing its weight.",
+      "suggested_fix": "Reinstate the 'life-long wanderer, whose much rolling, to and fro, not only had gathered no moss; but…had rubbed off whatever small outward clingings' sentence that logically precedes the epithet."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "an old, crutch-like, antediluvian, wheezing humorousness, not unstreaked now and then with a certain grizzled wittiness; such as might have served to pass the time during the midnight watch on the bearded forecastle of Noah's ark",
+      "source_locator": "stolidity paragraph, Noah's ark sentence",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This passage is preserved nearly verbatim in the draft, which is good; however, the draft omits the transition 'Was it that this old carpenter had been a life-long wanderer' before pivoting to 'A life-long wanderer', turning a speculative rhetorical question into a flat declarative and losing Melville's characteristic interrogative hedging voice.",
+      "suggested_fix": "Restore the rhetorical question 'Was it that this old carpenter had been a life-long wanderer…?' rather than stating it as plain fact."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "this it was, that kept him a great part of the time soliloquizing; but only like an unreasoning wheel, which also hummingly soliloquizes; or rather, his body was a sentry-box",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The striking simile of the 'unreasoning wheel, which also hummingly soliloquizes' is entirely dropped; the draft jumps straight to 'his body the sentry-box,' losing the layered analogy that characterizes Melville's style here.",
+      "suggested_fix": "Insert 'but only like an unreasoning wheel, which also hummingly soliloquizes; or rather' between 'soliloquizing' and 'his body the sentry-box' to restore the signature double-simile."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity losses; two medium findings (erasure of 'half-horrible stolidity / all-ramifying heartlessness' and the wanderer passage that motivates 'stript abstract') and two low findings (rhetorical question flattened to declaration; 'unreasoning wheel, hummingly soliloquizes' simile dropped) — below the regenerate threshold but the draft would benefit from restoration of the dropped clauses."
+}

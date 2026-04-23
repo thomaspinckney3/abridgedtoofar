@@ -1,0 +1,44 @@
+{
+  "segment_id": "016",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Yeah, but remind me never to look for a man again.",
+      "source_locator": "After Heather hugs Miriam at the entryway",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source gives the line with a beat of prying Heather off and smiling into her tear-soaked face — that small moment of wry comedic timing is the voice; the draft collapses it to 'I managed, peeling her off,' losing the direct delivery of the quip.",
+      "suggested_fix": "Restore the line verbatim: 'Remind me never to look for a man again' is fine, but add the smile-into-tear-soaked-face beat that gives it its rhythm."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The floor apartments were fully furnished with antique furniture and my friend's own strange taste for lava lamps. The place was alive with the floating blobs of colorful goop.",
+      "source_locator": "After Heather drags Miriam upstairs, before 'I leaned back and sighed'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source establishes Heather's apartment with two sentences that do distinct work: antique furniture plus lava lamps, then the vivid 'floating blobs of colorful goop.' The draft reduces this to 'amid lava lamps,' erasing the antique/lava-lamp contrast and the tactile specificity of the goop description that characterizes both the space and Heather.",
+      "suggested_fix": "Restore both sentences or compress to something like 'antique furniture swimming in the glow of a dozen lava lamps, their colorful blobs drifting like slow planets' to preserve the character detail."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"He's probably got great teeth,\" she pointed out. I snorted. \"Yeah, he flosses the whole lamb out of them every day.\" She whipped her head over her shoulder to look at me. \"Really?\" \"I was joking.\"",
+      "source_locator": "After Heather says 'you might kind of like him'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic exchange — Heather's straight-faced 'great teeth' line and Miriam's lamb-flossing joke followed by Heather's credulous 'Really?' — is the clearest instance of the chapter's signature banter rhythm and is entirely absent from the draft. It also reinforces Heather's character as both sly and naïve.",
+      "suggested_fix": "Restore the full teeth/flossing/Really?/joking exchange verbatim; it is short and irreplaceable."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I blushed and averted her eyes as she plopped one of the mugs down in front of me… \"I didn't say anything.\" She sat down in the chair beside me and snorted. \"Yeah, and I'm a nun who's taken a vow of silence.\"",
+      "source_locator": "After Heather asks 'it's not like you love the guy, right?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Heather's 'Yeah, and I'm a nun who's taken a vow of silence' is a distinctly voiced comic retort that characterizes her personality; the draft keeps 'I didn't say anything' but drops Heather's comeback, softening the interplay.",
+      "suggested_fix": "Add Heather's nun line after Miriam's 'I didn't say anything.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity failures — the lamb/teeth joke exchange is wholly absent, the lava-lamp apartment description is flattened to near-nothing, and the post-hug quip loses its beat — trigger regeneration."
+}

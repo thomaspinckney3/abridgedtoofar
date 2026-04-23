@@ -1,0 +1,26 @@
+{
+  "segment_id": "123",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "What a hooroosh aloft there! I would e'en take it for sublime, did I not know that the colic is a noisy malady.",
+      "source_locator": "final paragraph, after 'none but cowards send down their brain-trucks in tempest time'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is the rhetorical and tonal capstone of Ahab's soliloquy — the mock-sublime pivot that deflates cosmic grandeur into bodily comedy ('colic is a noisy malady'). It carries significant interpretive weight about Ahab's ironic self-awareness and is cut entirely, with only an ellipsis standing in its place.",
+      "suggested_fix": "Restore the full line: 'What a hooroosh aloft there! I would e'en take it for sublime, did I not know that the colic is a noisy malady.' It is short and must not be elided."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Then aside, scorn stinging him:",
+      "source_locator": "draft insertion after 'Quick, and see to it'",
+      "draft_treatment": "other",
+      "why_it_matters": "The source gives no stage direction; Ahab's shift from command to soliloquy is unmarked, which is itself a voice choice — the boundary between address and interior monologue deliberately blurs. The draft's editorial insertion ('Then aside, scorn stinging him') imposes a theatrical framing absent from Melville's text.",
+      "suggested_fix": "Remove the interpolated stage direction; let Ahab's words flow directly from his order to Starbuck into his muttered soliloquy, as in the source."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves most of the segment's signature language faithfully but omits the 'hooroosh / colic / noisy malady' line — the comic-sublime pivot — and adds a non-source stage direction; neither failure alone forces regeneration, but the missing line should be restored."
+}

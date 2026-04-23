@@ -1,0 +1,44 @@
+{
+  "segment_id": "011",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the pulpit is ever this earth's foremost part; all the rest comes in its rear; the pulpit leads the world. From thence it is the storm of God's quick wrath is first descried",
+      "source_locator": "final paragraph, before the closing 'the world's a ship' sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the interpretive climax of the chapter and one of the most critically cited passages in Moby-Dick — the rhetorical build-up to 'the pulpit is its prow' is itself the signature; jumping straight to the final sentence erases the argumentative movement and the thunder of the prose that makes the closing line resonate.",
+      "suggested_fix": "Restore the full sequence: 'the pulpit is ever this earth's foremost part; all the rest comes in its rear; the pulpit leads the world. From thence it is the storm of God's quick wrath is first descried…' before the concluding ship-and-prow line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "that sort of old age which seems merging into a second flowering youth, for among all the fissures of his wrinkles, there shone certain mild gleams of a newly developing bloom—the spring verdure peeping forth even beneath February's snow",
+      "source_locator": "first paragraph, description of Father Mapple's age",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'mild gleams of a second flowering youth in his wrinkles,' stripping the extended botanical simile ('spring verdure peeping forth even beneath February's snow') that is prosodically and rhetorically distinctive and establishes Melville's amplifying voice.",
+      "suggested_fix": "Restore at minimum 'the spring verdure peeping forth even beneath February's snow' to preserve the simile's signature shape."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Can it be, then, that by that act of physical isolation, he signifies his spiritual withdrawal for the time, from all outward worldly ties and connexions? Yes, for replenished with the meat and wine of the word, to the faithful man of God, this pulpit, I see, is a self-containing stronghold—a lofty Ehrenbreitstein, with a perennial well of water within the walls.",
+      "source_locator": "fourth paragraph, Ishmael's meditation on the ladder",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'A lofty Ehrenbreitstein, with a perennial well of water within the walls' is a rhetorically distinct, culturally specific image that critics return to; the draft quotes only 'a self-containing stronghold' and drops the Ehrenbreitstein comparison entirely, losing the interpretive and tonal weight of the passage.",
+      "suggested_fix": "Include 'a lofty Ehrenbreitstein, with a perennial well of water within the walls' alongside 'self-containing stronghold.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Ah, noble ship,\" the angel seemed to say, \"beat on, beat on, thou noble ship, and bear a hardy helm; for lo! the sun is breaking through; the clouds are rolling off—serenest azure is at hand.\"",
+      "source_locator": "fifth paragraph, angel's speech from the painting",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders this as 'Beat on, thou noble ship… serenest azure is at hand,' omitting the framing ('the angel seemed to say'), the doubled 'beat on, beat on,' 'bear a hardy helm,' and 'the sun is breaking through; the clouds are rolling off' — the rhetorical rhythm of the angelic address is a signature voice moment.",
+      "suggested_fix": "Restore the full quoted speech including 'beat on, beat on,' 'bear a hardy helm,' and the full closing sequence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft drops the entire rhetorical build-up to 'the pulpit is its prow' (a high-severity signature loss) and flattens three further signature passages — the February-snow simile, the Ehrenbreitstein image, and the angel's full speech — leaving the chapter's interpretive and voice-establishing core severely diminished."
+}

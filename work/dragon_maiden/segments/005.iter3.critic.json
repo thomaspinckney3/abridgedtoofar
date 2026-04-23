@@ -1,0 +1,26 @@
+{
+  "segment_id": "005",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He shook his head. 'It's nothing. Anyway, nice to have met you.'",
+      "source_locator": "Blake's exit, after Heather says 'On to you?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Blake's cryptic 'It's nothing' response to Heather's question carries interpretive weight — it marks his evasiveness — and is silently dropped from the draft, collapsing two beats into one.",
+      "suggested_fix": "Restore Blake's 'It's nothing' line before his farewell to preserve the character's deliberate ambiguity."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I glanced out the window and sighed. The world sped by us as a shadow play of colorful lights and figures.",
+      "source_locator": "Taxi scene, after Heather says 'You need to live a little, Miriam, before your whole life is gone.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'shadow play of colorful lights and figures' image is the chapter's only lyrical, register-shifting moment; it establishes that Miriam perceives the world with a wistfulness that characterizes her voice throughout the book.",
+      "suggested_fix": "Restore the one-sentence image ('The world sped by us as a shadow play of colorful lights and figures.') before Miriam's 'I know. I… I just feel like…' line."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful with only two low-severity voice-flattening instances: Blake's cryptic 'It's nothing' is silently dropped, and the chapter's sole lyrical image ('shadow play of colorful lights and figures') is absent — neither rises to high or medium severity individually."
+}

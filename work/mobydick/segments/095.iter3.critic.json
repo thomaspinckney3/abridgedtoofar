@@ -1,0 +1,44 @@
+{
+  "segment_id": "095",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Now that the incorruption of this most fragrant ambergris should be found in the heart of such decay; is this nothing? Bethink thee of that saying of St. Paul in Corinthians",
+      "source_locator": "paragraph 4, opening",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'most fragrant ambergris' and compresses 'that saying of St. Paul in Corinthians' to 'St. Paul to the Corinthians,' losing the cadence and rhetorical weight of the source's pivot to theological analogy.",
+      "suggested_fix": "Restore: 'Now that the incorruption of this most fragrant ambergris should be found in the heart of such decay; is this nothing? Bethink thee of that saying of St. Paul in Corinthians' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "nor indeed can the whale possibly be otherwise than fragrant, when, as a general thing, he enjoys such high health; taking abundance of exercise; always out of doors; though, it is true, seldom in the open air.",
+      "source_locator": "final paragraph, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is a quintessential Ishmaelean comic aside—the deadpan joke 'always out of doors; though, it is true, seldom in the open air' is both rhetorically distinctive and voice-defining; its removal erases a signature ironic moment.",
+      "suggested_fix": "Restore the full parenthetical: 'nor indeed can the whale possibly be otherwise than fragrant, when, as a general thing, he enjoys such high health; taking abundance of exercise; always out of doors; though, it is true, seldom in the open air.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I say, that the motion of a Sperm Whale's flukes above water dispenses a perfume",
+      "source_locator": "final paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'I say, that'—Ishmael's characteristic emphatic first-person assertion—reducing the rhetorical build to plain statement and softening the narrator's voice.",
+      "suggested_fix": "Restore 'I say, that' before 'the motion of a Sperm Whale's flukes.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Must it not be to that famous elephant, with jewelled tusks, and redolent with myrrh",
+      "source_locator": "final sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft converts the rhetorical question ('Must it not be…?') into a declarative sentence, losing the interrogative register that caps Ishmael's mock-grandiose comparison.",
+      "suggested_fix": "Restore as a rhetorical question: 'Must it not be to that famous elephant, with jewelled tusks, and redolent with myrrh…?'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; two medium-severity voice-flattenings (the whale-health comic aside is absent, and the theological pivot is slightly compressed) and two low-severity losses of Ishmael's rhetorical markers—insufficient to trigger regeneration."
+}

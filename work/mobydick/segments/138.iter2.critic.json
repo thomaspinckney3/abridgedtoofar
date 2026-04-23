@@ -1,0 +1,44 @@
+{
+  "segment_id": "138",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Some men die at ebb tide; some at low water; some at the full of the flood;—and I feel now like a billow that's all one crested comb, Starbuck.",
+      "source_locator": "farewell dialogue between Ahab and Starbuck, just before 'I am old;—shake hands with me, man'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhythmically distinctive line encodes Ahab's self-awareness of his imminent death through the tidal motif and is a critically noted passage; its loss flattens the farewell to bare sentiment.",
+      "suggested_fix": "Restore the 'ebb tide / low water / full of the flood' sentence verbatim before 'I am old;—shake hands with me, man' in the farewell exchange."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Aye, he's chasing _me_ now; not I, _him_—that's bad; I might have known it, too. Fool! the lines—the harpoons he's towing.",
+      "source_locator": "after 'Nothing! and noon at hand! The doubloon goes a-begging!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The italicized reversal—'he's chasing me now; not I, him'—is an interpretive keystone: Ahab explicitly recognizes the inversion of predator and prey, a moment critics return to repeatedly. The draft's paraphrase ('I've oversailed him—got the start!') erases the reversal entirely.",
+      "suggested_fix": "Restore Ahab's italicized reversal verbatim: 'he's chasing _me_ now; not I, _him_—that's bad' after the 'Nothing! and noon at hand!' line."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "he tears the vane\"—pointing to the red flag flying at the main-truck—\"Ha! he soars away with it!—Where's the old man now? see'st thou that sight, oh Ahab!—shudder, shudder!\"",
+      "source_locator": "end of Starbuck's visionary monologue, after 'Crazed;—aloft there!—keep thy keenest eye upon the boats'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The hawk tearing the vane and 'shudder, shudder' is the climax of Starbuck's prophetic vision, anticipating the sky-hawk in the final sinking scene; its absence severs the internal echo that gives the closing image its full weight.",
+      "suggested_fix": "Append the hawk-tears-the-vane conclusion to Starbuck's monologue, ending with 'shudder, shudder!' before transitioning to the sounding scene."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "frozen calm, this old skull cracks so, like a glass in which the contents turned to ice, and shiver it. And still this hair is growing now",
+      "source_locator": "middle of Ahab's long opening monologue, between the 'coolness and a calmness' sentence and the Greenland ice/Vesuvius lava passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The frozen-skull image and growing-hair meditation are distinctively Melvillean voice material that establish the monologue's oscillation between cold fatalism and organic life; their elision (marked only with '...') flattens the monologue's rhetorical arc.",
+      "suggested_fix": "Restore at minimum the 'frozen calm, this old skull cracks so, like a glass' image and the Greenland ice/Vesuvius lava comparison before the wind passage."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—the 'ebb tide / full of the flood' death-harbinger line, Ahab's italicized 'he's chasing me now; not I, him' reversal, and the hawk-tears-the-vane climax of Starbuck's vision—together trigger regeneration; collectively they erase key interpretive moments the critical tradition depends on."
+}

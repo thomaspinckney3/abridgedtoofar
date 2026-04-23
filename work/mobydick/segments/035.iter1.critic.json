@@ -1,0 +1,62 @@
+{
+  "segment_id": "035",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I have swam through libraries and sailed through oceans; I have had to do with whales with these visible hands; I am in earnest; and I will try.",
+      "source_locator": "paragraph beginning 'But it is a ponderous task'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most quoted lines in the chapter and in Melville criticism; it crystallizes Ishmael's dual authority (bookish and practical) and his defiant earnestness—a voice-establishing keystone that the chapter is partly famous for.",
+      "suggested_fix": "Restore verbatim or near-verbatim in the ponderous-task paragraph: 'I have swam through libraries and sailed through oceans; I have had to do with whales with these visible hands; I am in earnest; and I will try.'"
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "What am I that I should essay to hook the nose of this leviathan! The awful tauntings in Job might well appal me. Will he (the leviathan) make a covenant with thee? Behold the hope of him is vain!",
+      "source_locator": "paragraph beginning 'But it is a ponderous task'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Job invocation is the chapter's pivot from comedy to genuine awe, and it anchors the book's ongoing biblical-leviathan motif; its erasure removes interpretive weight that critics consistently cite when reading Cetology as theological as well as taxonomic.",
+      "suggested_fix": "Restore the Job passage ('What am I that I should essay to hook the nose of this leviathan!... Behold the hope of him is vain!') before the 'I have swam through libraries' sentence."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "For we are all killers, on land and on sea; Bonapartes and Sharks included.",
+      "source_locator": "BOOK II, Chapter IV (_Killer_), final sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "Widely anthologized and critically cited as a moment of Melvillean moral irony that reaches beyond cetology into universal human violence; its omission flattens the Killer entry from epigrammatic to merely descriptive.",
+      "suggested_fix": "Append verbatim to the Killer entry: 'For we are all killers, on land and on sea; Bonapartes and Sharks included.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "On that Ahaz-dial the shadow often goes back.",
+      "source_locator": "BOOK I, Chapter III (_Fin-Back_), after the gnomon/dial description",
+      "draft_treatment": "absent",
+      "why_it_matters": "A textually distinctive, cryptic sentence that critics read as a time-reversal motif and a buried allusion to 2 Kings 20; the draft preserves the gnomon image but drops this crucial closing flourish.",
+      "suggested_fix": "After the dial/gnomon description in the Fin-Back entry, restore: 'On that Ahaz-dial the shadow often goes back.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I submitted all this to my friends Simeon Macey and Charley Coffin, of Nantucket... they united in the opinion that the reasons set forth were altogether insufficient. Charley profanely hinted they were humbug.",
+      "source_locator": "paragraph on Linnæus's grounds for separating whales from fish",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic aside is one of the chapter's primary register-defining moments—Ishmael deflating Linnaean science with irreverent Nantucket opinion; its loss removes the ironic humor that characterizes Ishmael's voice throughout the classification scheme.",
+      "suggested_fix": "Restore the Simeon Macey/Charley Coffin anecdote after the Linnæus 'penem intrantem' passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I promise nothing complete; because any human thing supposed to be complete, must for that very reason infallibly be faulty.",
+      "source_locator": "paragraph beginning 'I promise nothing complete'",
+      "draft_treatment": "absent",
+      "why_it_matters": "An aphoristically shaped sentence with interpretive weight for the entire book's self-consciously incomplete structure; critics cite it alongside the cathedral-of-Cologne passage as Melville's poetics of incompletion.",
+      "suggested_fix": "Restore verbatim in the architectural paragraph: 'I promise nothing complete; because any human thing supposed to be complete, must for that very reason infallibly be faulty.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft drops three high-severity signature passages—the 'I have swam through libraries' declaration, the Job/leviathan invocation, and the 'we are all killers, Bonapartes and Sharks included' epigram—plus three medium-severity voice and interpretive losses, collectively gutting the chapter's most famous and critically essential moments."
+}

@@ -1,0 +1,98 @@
+{
+  "segment_id": "045",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "though this pre-eminence in it applies to the human race itself, giving the white man ideal mastership over every dusky tribe",
+      "source_locator": "long 'though' paragraph, after Hanoverian flag and Austrian Empire",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause is one of the most critically engaged passages in the entire novel—Melville's explicit indictment of racial ideology embedded in the rhetoric of whiteness. Its absence removes a primary site of interpretive weight that scholars consistently return to.",
+      "suggested_fix": "Restore the clause verbatim or near-verbatim within the catalogue of whiteness associations; it cannot be silently dropped."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "in some dim, random way, explain myself I must, else all these chapters might be naught",
+      "source_locator": "opening paragraph, second sentence cluster",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-reflexive declaration is voice-establishing and interpretively significant: it positions the entire whale-and-whiteness machinery as hinging on this chapter. Its loss flattens the narrator's meta-narrative anxiety.",
+      "suggested_fix": "Restore at or near verbatim in the opening paragraph."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Through its inexpressible, strange eyes, methought I peeped to secrets which took hold of God. As Abraham before the angels, I bowed myself",
+      "source_locator": "albatross footnote",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'its strange eyes peeped me to secrets that took hold of God,' losing the full clause 'methought I peeped to secrets which took hold of God' and entirely dropping the Abraham simile, which is a signature rhetorical and theological moment carrying enormous interpretive weight.",
+      "suggested_fix": "Restore the Abraham simile and 'methought I peeped to secrets which took hold of God' verbatim."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Though in many of its aspects this visible world seems formed in love, the invisible spheres were formed in fright.",
+      "source_locator": "colt/buffalo robe section, penultimate paragraph before final philosophical paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most quoted, critically celebrated sentences in Moby-Dick—a compressed cosmological statement of Melville's dark metaphysics. Its complete absence is a severe signature failure.",
+      "suggested_fix": "Restore verbatim; this sentence must appear in the draft."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "all deified Nature absolutely paints like the harlot, whose allurements cover nothing but the charnel-house within",
+      "source_locator": "final philosophical paragraph, after 'subtile deceits'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to 'Nature paints like the harlot,' dropping the full predicate ('absolutely paints like the harlot, whose allurements cover nothing but the charnel-house within'). The 'charnel-house' image is the signature shock of the metaphor and is critically prominent.",
+      "suggested_fix": "Restore the full sentence including 'whose allurements cover nothing but the charnel-house within.'"
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "it is not so much a colour as the visible absence of colour; and at the same time the concrete of all colours",
+      "source_locator": "final paragraph, philosophical climax",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this but the immediately following full logic chain—'is it for these reasons that there is such a dumb blankness, full of meaning'—is compressed into a paraphrase; the rhetorical question structure that frames this as unanswered mystery is weakened.",
+      "suggested_fix": "Preserve the full rhetorical question form: 'is it for these reasons that there is such a dumb blankness, full of meaning, in a wide landscape of snows—a colourless, all-colour of atheism from which we shrink?'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "there was another thought, or rather vague, nameless horror concerning him, which at times by its intensity completely overpowered all the rest",
+      "source_locator": "opening paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The qualifications 'or rather vague, nameless horror' and the admission of near-despair at articulation are signature moves of Ishmael's voice; the draft jumps immediately to the conclusion ('It was the whiteness') without the exploratory, self-doubting preamble.",
+      "suggested_fix": "Restore the hesitant build-up before 'It was the whiteness of the whale' to preserve Ishmael's register."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Not Coleridge first threw that spell; but God's great, unflattering laureate, Nature.",
+      "source_locator": "albatross section, before the footnote",
+      "draft_treatment": "absent",
+      "why_it_matters": "This epigrammatic sentence is the conceptual hinge of the albatross passage—prioritizing Nature over Coleridge—and is critically noted; its omission leaves the albatross memory without its framing argument.",
+      "suggested_fix": "Restore verbatim before or after the albatross memory."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "A most imperial and archangelical apparition of that unfallen, western world, which to the eyes of the old trappers and hunters revived the glories of those primeval times when Adam walked majestic as a god",
+      "source_locator": "White Steed paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves 'imperial and archangelical' but cuts the 'unfallen, western world' and the Adam comparison, which carry the mythological charge of the passage and are interpretively significant for American expansionist themes.",
+      "suggested_fix": "Restore 'that unfallen, western world' and the Adam simile within the White Steed description."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Lima has taken the white veil; and there is a higher horror in this whiteness of her woe. Old as Pizarro, this whiteness keeps her ruins for ever new; admits not the cheerful greenness of complete decay; spreads over her broken ramparts the rigid pallor of an apoplexy that fixes its own distortions.",
+      "source_locator": "Lima paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to a single clause; the full passage is prosodically and rhetorically distinctive, and the 'apoplexy that fixes its own distortions' image is signature. The draft's compression destroys the voice.",
+      "suggested_fix": "Restore at minimum the full Lima sentence through 'apoplexy that fixes its own distortions.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits multiple high-severity signature losses including the erasure of 'the invisible spheres were formed in fright,' the racial-ideology clause ('giving the white man ideal mastership'), the charnel-house metaphor's completion, and the Abraham/albatross simile, alongside several medium-severity voice and interpretive flattenings throughout."
+}

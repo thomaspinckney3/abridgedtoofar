@@ -1,0 +1,53 @@
+{
+  "segment_id": "043",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Hail, holy nakedness of our dancing girls!—the Heeva-Heeva! Ah! low veiled, high palmed Tahiti! I still rest me on thy mat, but the soft soil has slid!",
+      "source_locator": "Tahitan Sailor speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The Tahitian sailor's full speech is one of the chapter's most poetically distinct passages—its homesickness, the mat motif, the image of green worn to wilted, and the Pirohitee torrent all carry interpretive weight about displacement and loss. The draft reduces it to a bare summary clause ('hailing holy nakedness and Pirohitee's torrents') with none of the characteristic voice.",
+      "suggested_fix": "Restore at minimum the core lines: 'Hail, holy nakedness of our dancing girls!—the Heeva-Heeva! … I still rest me on thy mat, but the soft soil has slid! … not thou nor I can bear the change!' before the stage direction leap."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tell me not of it! Hark ye, lad—fleet interlacings of the limbs—lithe swayings—coyings—flutterings! lip! heart! hip! all graze: unceasing touch and go! not taste, observe ye, else come satiety.",
+      "source_locator": "Sicilian Sailor speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Sicilian's speech is prosodically unique—its staccato list of erotic sensation ('lip! heart! hip!') is one of the chapter's most distinctive rhythmic moments. The draft says only 'The Sicilian reclines,' erasing the voice entirely.",
+      "suggested_fix": "Include at least the opening fragment: 'Tell me not of it! fleet interlacings of the limbs—lithe swayings—coyings—flutterings! lip! heart! hip! all graze: unceasing touch and go!'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He wants to bully, ah!—the old grudge makes me touchy … Aye, harpooneer, thy race is the undeniable dark side of mankind—devilish dark at that. No offence.",
+      "source_locator": "Spanish Sailor aside and speech before Daggoo confrontation",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The aside '(_Aside_.) He wants to bully, ah!—the old grudge makes me touchy' is critically important—it signals the racial antagonism is mutual and premeditated, not spontaneous. The draft drops the aside entirely, losing that interpretive dimension.",
+      "suggested_fix": "Restore the aside: '(Aside.) He wants to bully, ah!—the old grudge makes me touchy' before the Spanish sailor advances and delivers his line."
+    },
+    {
+      "severity": "low",
+      "class": "motif_depletion",
+      "source_passage": "4TH NANTUCKET SAILOR. He has his orders, mind ye that. I heard old Ahab tell him he must always kill a squall, something as they burst a waterspout with a pistol—fire your ship right into it!",
+      "source_locator": "4th Nantucket Sailor speech, after Danish Sailor",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line establishes Ahab's command philosophy—killing a squall as you'd fire into a waterspout—and foreshadows his approach to the whale. Its absence thins the chapter's thematic resonance about Ahab's nature.",
+      "suggested_fix": "Add a brief line: '\"He has his orders,\" adds a Nantucket hand; \"I heard Ahab say he must always kill a squall—fire your ship right into it!\"'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Daggoo (_springing_). Swallow thine, mannikin! White skin, white liver! SPANISH SAILOR (_meeting him_). Knife thee heartily! big frame, small spirit!",
+      "source_locator": "Daggoo-Spanish Sailor exchange after 'None'",
+      "draft_treatment": "absent",
+      "why_it_matters": "These retorts—'Swallow thine, mannikin! White skin, white liver!' and 'Knife thee heartily! big frame, small spirit!'—are the rhetorical peak of the racial confrontation scene. The draft skips to 'Knives glitter,' losing the charged language that makes the scene's racial politics explicit.",
+      "suggested_fix": "Insert Daggoo's spring and lines ('Swallow thine, mannikin! White skin, white liver!') and the Spaniard's retort before 'A row! a row!'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft faithfully preserves the Old Manx, Pip's final soliloquy, and the Daggoo confrontation core, but loses three medium-severity passages—the Sicilian's staccato erotic litany (fully absent), the Tahitian sailor's homesick mat speech (reduced to a summary clause), and the Spanish sailor's self-revealing aside—any two of which together constitute the regeneration threshold."
+}

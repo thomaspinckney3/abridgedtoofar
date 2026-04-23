@@ -5,40 +5,22 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "So, if any one man, in his own proper person, afford stuff for a good joke to anybody, let him not be backward, but let him cheerfully allow himself to spend and be spent in that way.",
-      "source_locator": "Paragraph 2, the philosophical digression on laughter",
+      "source_passage": "This young fellow's healthy cheek is like a sun-toasted pear in hue, and would seem to smell almost as musky; he cannot have been three days landed from his Indian voyage. That man next him looks a few shades lighter; you might say a touch of satin wood is in him. In the complexion of a third still lingers a tropic tawn, but slightly bleached withal",
+      "source_locator": "paragraph beginning 'You could pretty plainly tell how long each one had been ashore'",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence is the rhetorical heart of Ishmael's digression on laughter—its self-deprecating generosity and the unusual 'spend and be spent' formulation establish the narrator's ethical voice. The draft preserves the opening and closing sentences of the paragraph but deletes the middle argument entirely, leaving the digression truncated.",
-      "suggested_fix": "Restore 'So, if any one man, in his own proper person, afford stuff for a good joke to anybody, let him not be backward, but let him cheerfully allow himself to spend and be spent in that way.' between the two preserved sentences."
+      "why_it_matters": "This extended impressionistic catalogue—sun-toasted pear, satin wood, tropic tawn—is stylistically distinctive voice-establishing prose, and the rhetorical build from figure to figure is signature Melville. The draft jumps directly from the topic sentence to the Queequeg climax, erasing all intermediate texture.",
+      "suggested_fix": "Restore at least the first two figures ('sun-toasted pear' and 'satin wood') before the Queequeg comparison; the progression is essential to the rhetorical effect of the payoff line."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "this kind of travel, I say, may not be the very best mode of attaining a high social polish. Still, for the most part, that sort of thing is to be had anywhere.",
-      "source_locator": "Paragraph on Ledyard and Mungo Park, closing sentences",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "Ishmael's dry ironic dismissal—'Still, for the most part, that sort of thing is to be had anywhere'—is the punchline of the Ledyard/Mungo Park digression and a classic specimen of his deadpan register. The draft replaces it with 'poor schooling for the parlor,' losing the irony and the throwaway finality of the original.",
-      "suggested_fix": "Retain Melville's phrasing: 'this kind of travel, I say, may not be the very best mode of attaining a high social polish. Still, for the most part, that sort of thing is to be had anywhere.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "here they sat at a social breakfast table—all of the same calling, all of kindred tastes—looking round as sheepishly at each other as though they had never been out of sight of some sheepfold among the Green Mountains.",
-      "source_locator": "Paragraph on the whalemen's silence, middle section",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The rhythmic parallelism 'all of the same calling, all of kindred tastes' and the exact phrasing 'looking round as sheepishly at each other' are signature Melville; the draft compresses to 'now sat looking round as sheepishly,' erasing the internal ironic contrast and the rhetorical balance.",
-      "suggested_fix": "Restore the full clause: 'here they sat at a social breakfast table—all of the same calling, all of kindred tastes—looking round as sheepishly at each other as though they had never been out of sight of some sheepfold among the Green Mountains.'"
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "To be sure I cannot say much for his breeding. His greatest admirer could not have cordially justified his bringing his harpoon into breakfast with him, and using it there without ceremony",
-      "source_locator": "Paragraph on Queequeg at the table",
+      "source_passage": "here were a set of sea-dogs, many of whom without the slightest bashfulness had boarded great whales on the high seas—entire strangers to them—and duelled them dead without winking; and yet, here they sat at a social breakfast table—all of the same calling, all of kindred tastes—looking round as sheepishly at each other as though they had never been out of sight of some sheepfold among the Green Mountains",
+      "source_locator": "paragraph beginning 'These reflections just here are occasioned by the circumstance'",
       "draft_treatment": "absent",
-      "why_it_matters": "This mock-genteel qualification—'To be sure I cannot say much for his breeding'—is characteristic Ishmaelite irony and gently humanizes Queequeg while satirizing parlor manners. Its omission leaves the Queequeg tableau as pure spectacle without the narrator's evaluative frame.",
-      "suggested_fix": "Reinsert: 'To be sure I cannot say much for his breeding. His greatest admirer could not have cordially justified his bringing his harpoon into breakfast with him, and using it there without ceremony' before the description of grappling the beefsteaks."
+      "why_it_matters": "This ironic contrast—men who duelled whales dead without winking now sheepish among kindred company—is the interpretive and comic heart of the silence passage; it establishes the whaleman's paradox of boldness and social awkwardness that recurs in the novel.",
+      "suggested_fix": "Re-insert the ironic contrast between whale-fighting boldness and breakfast-table bashfulness before the summary line 'A curious sight; these bashful bears.'"
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Three medium-severity findings (erasure of the 'spend and be spent' laughter argument, loss of the ironic Ledyard/Mungo Park punchline, and compression of the whalemen-silence parallel clauses) together trigger regeneration under the three-medium rule."
+  "verdict": "pass",
+  "summary": "Two medium-severity voice-flattening losses (the graduated cheek-colour catalogue and the ironic whale-duelling contrast) weaken the segment's rhetorical texture but do not individually meet the regeneration threshold; two medium findings keep the verdict at pass."
 }

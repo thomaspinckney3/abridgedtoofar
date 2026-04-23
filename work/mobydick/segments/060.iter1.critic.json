@@ -1,0 +1,53 @@
+{
+  "segment_id": "060",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "Long exile from Christendom and civilization inevitably restores a man to that condition in which God placed him, _i.e._ what is called savagery. Your true whale-hunter is as much a savage as an Iroquois. I myself am a savage, owning no allegiance but to the King of the Cannibals; and ready at any moment to rebel against him.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The declaration 'I myself am a savage, owning no allegiance but to the King of the Cannibals; and ready at any moment to rebel against him' is a critical voice-establishing and interpretive-weight passage—it positions Ishmael/the narrator in direct self-identification with savagery and anti-authoritarian rebellion; its total absence erases one of the segment's most distinctive rhetorical moves.",
+      "suggested_fix": "Restore the full sentence verbatim: 'I myself am a savage, owning no allegiance but to the King of the Cannibals; and ready at any moment to rebel against him.' It must appear as Ishmael's first-person confession, not collapsed into third-person generality."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "An ancient Hawaiian war-club or spear-paddle, in its full multiplicity and elaboration of carving, is as great a trophy of human perseverance as a Latin lexicon.",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Hawaiian war-club / Latin lexicon comparison is a rhetorically distinctive, register-defining analogy that demonstrates the narrator's characteristic leveling of savage and civilized achievement; its omission flattens a key ironic comparison.",
+      "suggested_fix": "Restore the analogy: 'An ancient Hawaiian war-club or spear-paddle, in its full multiplicity and elaboration of carving, is as great a trophy of human perseverance as a Latin lexicon.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as the Greek savage, Achilles's shield; and full of barbaric spirit and suggestiveness, as the prints of that fine old Dutch savage, Albert Durer.",
+      "source_locator": "paragraph 5",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's deliberate, ironic application of the word 'savage' to Achilles and Albert Durer—'the Greek savage' and 'that fine old Dutch savage'—is the rhetorical punch of the paragraph; the draft retains the names but drops the word 'savage' both times, erasing the wit and the thematic argument.",
+      "suggested_fix": "Restore 'the Greek savage, Achilles's shield' and 'that fine old Dutch savage, Albert Durer' with the word 'savage' intact in both epithets."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Nor when expandingly lifted by your subject, can you fail to trace out great whales in the starry heavens… as when long filled with thoughts of war the Eastern nations saw armies locked in battle among the clouds.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile of Eastern nations seeing battle-armies in clouds is a characteristically Melvillean comparative digression that validates and universalizes whale-seeing in the heavens; its omission reduces a rhetorical flourish to a bare factual claim.",
+      "suggested_fix": "Restore the Eastern-nations cloud-armies comparison before the polar chase sentence."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "to see whether the fabled heavens with all their countless tents really lie encamped beyond my mortal sight!",
+      "source_locator": "final sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "The closing clause—'to see whether the fabled heavens with all their countless tents really lie encamped beyond my mortal sight'—is the rhetorical climax of the entire chapter; its truncation cuts the aspirational/cosmic register that crowns the catalogue.",
+      "suggested_fix": "Restore the full closing clause after 'leap the topmost skies.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft's most damaging failure is the wholesale erasure of 'I myself am a savage, owning no allegiance but to the King of the Cannibals,' a high-severity voice-establishing and interpretive-weight declaration; three additional medium-severity flattenings compound the damage."
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T10:31:56",
+  "key": "a39895b0cce407fe2fd285e79743512c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"12\",\n    \"draft_passage\": \"\\\"Should we check the lord's room?\\\"\\n\\\"It must be done, but quietly,\\\" she replied to someone.\",\n    \"source_has\": \"\\\"Should we check the lord's room?\\\" a man's voice wondered. \\\"It must be done, but quietly,\\\" the old woman replied.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft attributes both lines to the same 'she' (the old woman), making her appear to ask and answer her own question, whereas the source clearly splits speaker and responder.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"12\",\n    \"draft_passage\": \"He shuddered, jaw tight.\",\n    \"source_has\": \"The lord shut his eyes and ground his teeth together. His breathing came out in quick gasps, and he appeared in pain. 'Are you all right?' [then explanation follows]\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft omits the narrator touching the wing and the lord's visible distress-reaction, so the shudder appears unprompted and structurally orphaned \u2014 there is no triggering cause established anywhere in the preceding draft sentences of this chapter.\"\n  }\n]\n```",
+    "input_tokens": 7775,
+    "output_tokens": 322,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.541514158248901,
+    "stop_reason": "end_turn"
+  }
+}

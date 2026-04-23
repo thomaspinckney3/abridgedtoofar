@@ -1,0 +1,35 @@
+{
+  "segment_id": "098",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Not the wondrous cistern in the whale's huge head; not the prodigy of his unhinged lower jaw; not the miracle of his symmetrical tail; none of these would so surprise you",
+      "source_locator": "paragraph 1, rhetorical list before the cone description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This tricolon of negations is a rhetorically distinctive sentence-shape—one of Melville's signature 'not this, not that, but' structures—that builds the strange object's significance against the already-wondrous whale anatomy. Its absence flattens the paragraph's voice and removes the escalatory irony.",
+      "suggested_fix": "Restore the anaphoric 'Not the wondrous cistern… not the prodigy… not the miracle… none of these' sequence before the cone is named; it is too distinctive to compress away."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "And an idol, indeed, it is; or, rather, in old times, its likeness was. Such an idol as that found in the secret groves of Queen Maachah in Judea",
+      "source_locator": "paragraph 1, after the Yojo comparison",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narrator's characteristic self-correction ('or, rather, in old times, its likeness was') is a voice-defining hedge; the draft collapses it to 'An idol its likeness was in old times,' losing the comic-ironic qualification and the digressive narrator's presence.",
+      "suggested_fix": "Preserve the two-beat rhythm: 'And an idol, indeed, it is; or, rather, in old times, its likeness was,' keeping the self-corrective aside intact."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "as if he were a grenadier carrying a dead comrade from the field",
+      "source_locator": "paragraph 2, after 'staggers off with it'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is colorful and tonally characteristic; its omission makes the staggers line blunt where Melville's comic image gives it texture.",
+      "suggested_fix": "Add 'as if a grenadier bearing a dead comrade from the field' after 'staggers with it.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves most key material, but loses two voice-defining passages of medium severity (the anaphoric 'not this / not that' escalation and the narrator's self-corrective 'or, rather') plus one minor simile; no single high-severity finding is present, so the draft passes."
+}

@@ -4,68 +4,59 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land",
-      "source_locator": "paragraph 4, opening clause",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The phrase 'seemingly bound for a dive' is excised from the draft, removing the comic-surreal edge of Ishmael's observation; the crowd's near-suicidal momentum toward water is a minor but voice-distinctive beat.",
-      "suggested_fix": "Restore 'and seemingly bound for a dive' before 'Strange!'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Once more. Say you are in the country; in some high land of lakes. Take almost any path you please… There is magic in it.",
-      "source_locator": "paragraph 5, opening sentences",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'Once more' is a rhetorical pivot that signals Ishmael's accumulating, sermon-like argument; 'There is magic in it' is a brief but resonant sentence the critical tradition notes as encapsulating the chapter's central claim. Both are dropped.",
-      "suggested_fix": "Restore the 'Once more.' opener and the sentence 'There is magic in it.' after the pool-in-the-stream clause."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "There stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle",
-      "source_locator": "paragraph 6, the artist/Saco passage",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The hermit-and-crucifix detail and the careful triplet of sleeping meadow/cattle are dropped; the draft gives 'There stand his trees; and here sleeps his meadow,' losing the gothic-pastoral texture that makes this painterly set-piece distinctive.",
-      "suggested_fix": "Restore 'each with a hollow trunk, as if a hermit and a crucifix were within' and 'and there sleep his cattle' to match the source's accumulative rhythm."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven.",
-      "source_locator": "paragraph on paying vs. being paid",
+      "class": "signature_loss",
+      "source_passage": "commerce surrounds it with her surf. Right and left, the streets take you waterward. Its extreme downtown is the battery, where that noble mole is washed by waves",
+      "source_locator": "paragraph 2, Manhattoes description",
       "draft_treatment": "absent",
-      "why_it_matters": "This sardonic theological aside ('a monied man enter heaven') is the punchline of the paying/being-paid joke and a signature of Ishmael's ironic-moral voice; without it the paragraph loses its comic payoff.",
-      "suggested_fix": "Restore 'considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven' before 'Ah! how cheerfully we consign ourselves to perdition!'"
+      "why_it_matters": "The 'commerce surrounds it with her surf' line and the Battery description are distinctive voice-establishing prose giving the city its maritime character; their removal flattens the Manhattoes passage to mere setup.",
+      "suggested_fix": "Restore 'commerce surrounds it with her surf. Right and left, the streets take you waterward' and the battery sentence between the Manhattoes opening and the water-gazers."
     },
     {
       "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "And, doubtless, my going on this whaling voyage, formed part of the grand programme of Providence that was drawn up a long time ago. It came in as a sort of brief interlude and solo between more extensive performances.",
-      "source_locator": "paragraph introducing the mock-playbill",
+      "class": "signature_loss",
+      "source_passage": "Some leaning against the spiles; some seated upon the pier-heads; some looking over the bulwarks of ships from China; some high aloft in the rigging, as if striving to get a still better seaward peep.",
+      "source_locator": "paragraph 3, Circumambulate passage",
       "draft_treatment": "absent",
-      "why_it_matters": "The Providence/grand-programme framing is interpretively central to the chapter's fatalism and directly precedes the playbill; its omission strips the mock-playbill of its theological irony and reduces it to a mere joke rather than a cosmic statement.",
-      "suggested_fix": "Restore both sentences about Providence and the 'brief interlude and solo between more extensive performances' before presenting the playbill."
+      "why_it_matters": "This catalogue of water-gazers is rhetorically distinctive—the anaphoric 'some…some…some' sequence is part of Melville's enumerative voice; collapsing it loses both the rhythm and the specificity that make the passage memorable.",
+      "suggested_fix": "Restore the 'some leaning against the spiles…some high aloft in the rigging' sequence before the landsmen description."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Tell me, does the magnetic virtue of the needles of the compasses of all those ships attract them thither?",
+      "source_locator": "paragraph 4, after 'leagues'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhetorical question is a signature flourish capping the inlanders passage; its wit and the compass/needle conceit are part of the chapter's voice-establishing irony.",
+      "suggested_fix": "Restore the final rhetorical question about the magnetic virtue of compass needles at the close of the inlanders paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Take almost any path you please, and ten to one it carries you down in a dale, and leaves you there by a pool in the stream. There is magic in it.",
+      "source_locator": "paragraph 5, highland lakes passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire 'high land of lakes' paragraph—including the metaphysical professor in the desert—is a sustained comic-philosophical digression that is interpretively important for the water-wedded-to-meditation theme; its complete excision removes a key rhetorical step.",
+      "suggested_fix": "Restore the highland lakes paragraph, including 'There is magic in it' and the metaphysical professor joke, before 'meditation and water are wedded for ever.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the transition is a keen one, I assure you, from a schoolmaster to a sailor, and requires a strong decoction of Seneca and the Stoics to enable you to grin and bear it.",
+      "source_locator": "paragraph on going as simple sailor / schoolmaster transition",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Seneca-and-the-Stoics sentence is characteristic Ishmael self-deprecating irony and classical allusion; its loss, along with the Van Rensselaers / schoolmaster setup, strips the voice-establishing humor from the sailor passage.",
+      "suggested_fix": "Restore the schoolmaster-to-sailor transition paragraph including the Seneca and Stoics line."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
-      "source_locator": "end of the cook/broiled-fowl paragraph",
-      "draft_treatment": "absent",
-      "why_it_matters": "This absurdist digression on Egyptian pyramid-bakeries is pure Ishmaelean comic excess; its loss mildly flattens the voice in a passage otherwise preserved.",
-      "suggested_fix": "Restore the Egyptian mummies/pyramids sentence as the closing flourish of the cook paragraph."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "if you never violate the Pythagorean maxim",
-      "source_locator": "final paragraph on forecastle air",
-      "draft_treatment": "absent",
-      "why_it_matters": "This parenthetical (alluding to the Pythagorean prohibition against beans / flatulence) is a characteristic learned-comic aside; its removal slightly flattens Ishmael's pedantic-ironic register.",
-      "suggested_fix": "Restore the parenthetical '(that is, if you never violate the Pythagorean maxim)' in the head-winds sentence."
+      "source_passage": "with other men, perhaps, such things would not have been inducements; but as for me, I am tormented with an everlasting itch for things remote.",
+      "source_locator": "penultimate paragraph, after Patagonian sights and sounds",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft drops 'with other men, perhaps…' qualifying phrase, removing the self-characterizing rhetorical gesture that frames the itch-for-things-remote declaration.",
+      "suggested_fix": "Restore 'With other men, perhaps, such things would not have been inducements; but as for me' as the lead-in to 'I am tormented with an everlasting itch for things remote.'"
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's skeleton faithfully but accumulates four medium-severity losses—the 'There is magic in it' sentence, the Providence/grand-programme framing before the playbill, the theological punchline in the paying/being-paid passage, and the hermit-and-crucifix detail in the artist paragraph—each erasing either interpretive weight or signature voice, collectively triggering regeneration."
+  "summary": "The draft faithfully preserves the opening and closing but drops or flattens multiple signature passages in the middle (highland lakes paragraph, compass-needles question, some…some anaphora, Seneca/schoolmaster wit), triggering regeneration on four medium-severity findings."
 }

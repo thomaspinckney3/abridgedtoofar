@@ -1,0 +1,44 @@
+{
+  "segment_id": "054",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "made what seemed a silvery silence, not a solitude; on such a silent night a silvery jet was seen far in advance of the white bubbles at the bow",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The triple anaphora on 'silvery' and the specific phrase 'white bubbles at the bow' are prosodically distinctive; the draft collapses the repetition and drops 'white bubbles at the bow,' losing the sonic texture that is part of Melville's signature here.",
+      "suggested_fix": "Restore 'what seemed a silvery silence, not a solitude' and 'white bubbles at the bow' verbatim; the triple 'silver' repetition is the rhetorical signature of the passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Had the trump of judgment blown, they could not have quivered more; yet still they felt no terror; rather pleasure.",
+      "source_locator": "paragraph 2, after 'There she blows!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is interpretively and rhetorically distinctive—it pairs the apocalyptic with unexpected pleasure, and the antithesis ('no terror; rather pleasure') is a critical touchstone for the chapter's uncanny affect.",
+      "suggested_fix": "Restore this sentence, ideally near-verbatim, immediately after 'There she blows!' and the starting-to-feet image."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "heaved and heaved, still unrestingly heaved the black sea, as if its vast tides were a conscience; and the great mundane soul were in anguish and remorse for the long sin and suffering it had bred.",
+      "source_locator": "penultimate paragraph of the Cape Horn section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple anaphora 'heaved and heaved, still unrestingly heaved' is one of the chapter's most distinctive rhythmic gestures; the draft reduces it to 'Still unrestingly heaved,' losing the incantatory repetition, and drops 'remorse' and 'it had bred,' thinning the moral-cosmic register.",
+      "suggested_fix": "Restore the full triple anaphora 'heaved and heaved, still unrestingly heaved' and include 'remorse' and 'it had bred' to preserve the cosmological-guilt motif."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Even when wearied nature seemed demanding repose he would not seek that repose in his hammock.",
+      "source_locator": "final extended paragraph, before the Starbuck scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line underscores Ahab's inhuman refusal of rest and sets up the Starbuck cabin scene; its absence slightly weakens the narrative transition.",
+      "suggested_fix": "Add a brief clause preserving the idea that even when nature demanded repose, Ahab would not seek it in his hammock, before the Starbuck observation."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful but loses three prosodically and interpretively significant passages—the 'trump of judgment' antithesis, the full triple-anaphora on 'heaved,' and the exact 'silvery silence, not a solitude' phrasing—creating medium-level flattening without reaching the threshold for regeneration."
+}

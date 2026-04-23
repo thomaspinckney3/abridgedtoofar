@@ -1,0 +1,53 @@
+{
+  "segment_id": "124",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "First take your leg off from the crown of the anchor here, though, so I can pass the rope; now listen.",
+      "source_locator": "Stubb's long second speech, after 'Here are hydrants, Flask'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This transitional aside is a signature moment of Melville's dramaturgy — the physical stage direction embedded in dialogue — and its absence flattens the scene's texture and Stubb's characteristic mixing of task and talk.",
+      "suggested_fix": "Restore the 'First take your leg off from the crown of the anchor, so I can pass the rope; now listen' line before the lightning-rod argument."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Why, you King-Post, you, I suppose you would have every man in the world go about with a small lightning-rod running up the corner of his hat",
+      "source_locator": "Stubb's long second speech, after the 'ten thousand ships' line",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The address 'you King-Post, you' — Stubb's nickname for Flask — is a register-defining character marker; the draft drops it and reduces the speech to a generic second-person 'you,' losing the comic condescension and the characters' distinctive relationship.",
+      "suggested_fix": "Restore 'you King-Post, you' in the lightning-rod passage; Flask's nickname is a running voice signature in these chapters."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I wonder, Flask, whether the world is anchored anywhere; if she is, she swings with an uncommon long cable, though.",
+      "source_locator": "Stubb's final speech block, after 'iron fists'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The direct address 'Flask' and the trailing 'though' give this philosophic aside its casual, half-musing voice quality — a signature Stubb-ism. The draft preserves the thought but loses the conversational 'though' and the address, slightly deflating it.",
+      "suggested_fix": "Retain the trailing 'though' and the address 'Flask' to preserve the register: 'I wonder, Flask, whether the world is anchored anywhere; if she is, she swings with an uncommon long cable, though.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "next to touching land, lighting on deck is the most satisfactory.",
+      "source_locator": "After 'hammer that knot down, and we've done'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This throwaway sailor's aphorism is a characteristic Stubb voice-note; its absence is a small but real thinning of his rambling, aphoristic style.",
+      "suggested_fix": "Insert 'Next to touching land, lighting on deck is the most satisfactory' after the anchor-tying business is concluded."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Halloa! whew! there goes my tarpaulin overboard; Lord, Lord, that the winds that come from heaven should be so unmannerly!",
+      "source_locator": "Final lines of segment",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this closing exclamation verbatim and attributes it to quotation marks, but in the source the speech flows seamlessly from Stubb's coat-and-beaver riff. The draft's paragraph break and attribution 'said Stubb' before the prior speech, and the abrupt shift here, slightly disrupt the rhetorical flow — though the words themselves survive.",
+      "suggested_fix": "Minor: ensure the 'Halloa! whew!' exclamation reads as the organic culmination of Stubb's coat monologue without a hard paragraph break interrupting the voice."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings involve flattening of Stubb's characteristic address ('King-Post'), a dropped physical stage-direction in dialogue, and minor trailing-word compression, none of which individually triggers regeneration under the three-medium threshold — but the draft is slightly voice-thinned throughout Stubb's speeches."
+}

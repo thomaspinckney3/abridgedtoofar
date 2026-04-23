@@ -1,0 +1,71 @@
+{
+  "segment_id": "051",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Never heed yonder yellow boys, Archy. / Oh, I don't mind 'em, sir, said Archy; I knew it all before now. Didn't I hear 'em in the hold? And didn't I tell Cabaco here of it?",
+      "source_locator": "exchange between Flask and Archy, after first lowering commands",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Archy–Cabaco exchange is interpretively significant: it confirms the stowaways were heard in the hold and marks Ishmael's network of foreknowledge; it also provides characterizing crew texture absent from the draft.",
+      "suggested_fix": "Restore the Archy/Cabaco exchange, even in compressed form: 'Never heed yonder yellow boys, Archy.—Oh, I don't mind 'em, sir; I knew it before—didn't I hear 'em in the hold? They are stowaways, Mr. Flask.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Pull, pull, my fine hearts-alive; pull, my children; pull, my little ones… Why don't you break your backbones, my boys? … never mind the brimstone—devils are good fellows enough… pull, can't ye? pull, won't ye? Why in the name of gudgeons and ginger-cakes don't ye pull?",
+      "source_locator": "Stubb's exordium to his crew, middle of chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Stubb's rowing sermon is one of the great comic set-pieces of the chapter; its escalating, ritualistic rhythm ('pull, can't ye? pull, won't ye?') and specific comic details ('gudgeons and ginger-cakes,' 'marling-spikes') are signature. The draft collapses it to a fragment, losing the rhetorical shape that Melville himself calls 'his religion of rowing.'",
+      "suggested_fix": "Restore the escalating sequence including 'pull, can't ye? pull, won't ye? Why in the name of gudgeons and ginger-cakes,' and at minimum one more of the mock-violent imperatives ('start her, marling-spikes'); the draft has the sermon framing but gutted the specimen."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "those odd sort of humorists, whose jollity is sometimes so curiously ambiguous, as to put all inferiors on their guard in the matter of obeying them",
+      "source_locator": "narrator's commentary paragraph on Stubb after the exordium",
+      "draft_treatment": "absent",
+      "why_it_matters": "This characterological gloss on Stubb's ambiguity is part of the critical tradition's reading of Stubb as morally complex; the draft reproduces other parts of the same commentary paragraph but drops this closing sentence entirely.",
+      "suggested_fix": "Add the closing clause about Stubb being 'one of those odd humorists whose jollity is so curiously ambiguous as to put all inferiors on their guard'—it takes six words to restore."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "for you live under the blessed light of the evangelical land. Only the infidel sharks in the audacious seas may give ear to such words, when, with tornado brow, and eyes of red murder, and foam-glued lips, Ahab leaped after his prey.",
+      "source_locator": "paragraph beginning 'But what it was that inscrutable Ahab said'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'eyes of red murder' and the mock-pious justification 'you live under the blessed light of the evangelical land' are rhetorically distinctive and interpretively important to readings of Ahab's demonic characterization; the draft keeps only the frame and 'tornado brow' and 'foam-glued lips,' dropping 'eyes of red murder' and the evangelical-land irony.",
+      "suggested_fix": "Restore 'eyes of red murder' and 'you live under the blessed light of the evangelical land' to preserve the mock-pious register and the demonic characterization."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the oarsmen must put out their eyes, and ram a skewer through their necks; usage pronouncing that they must have no organs but ears, and no limbs but arms, in these critical moments.",
+      "source_locator": "paragraph on Flask's allusions and oarsmen looking back, late chase section",
+      "draft_treatment": "absent",
+      "why_it_matters": "This grotesque formulation of the oarsman's discipline ('put out their eyes, ram a skewer through their necks') is a signature comic-horrific digression that critics note as encapsulating the dehumanizing machine-logic of the whale hunt; it is entirely absent from the draft.",
+      "suggested_fix": "Restore even in brief: 'for the oarsmen must put out their eyes and ram a skewer through their necks—no organs but ears, no limbs but arms, in these critical moments.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "like gigantic bowls in a boundless bowling-green; the brief suspended agony of the boat, as it would tip for an instant on the knife-like edge of the sharper waves",
+      "source_locator": "set-piece paragraph 'It was a sight full of quick wonder and awe'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The bowling-green simile is the kind of prosodic specificity that marks Melville's descriptive voice at full power; the draft replaces it with vaguer phrasing ('shouldering our low gunwales'), losing the tonal register though preserving the general content.",
+      "suggested_fix": "Restore at least 'like gigantic bowls in a boundless bowling-green' and 'the brief suspended agony' to maintain the chapter's sonic texture."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "For me, I silently recalled the mysterious shadows I had seen creeping on board the Pequod during the dim Nantucket dawn, as well as the enigmatical hintings of the unaccountable Elijah.",
+      "source_locator": "narrator's reflection paragraph after Stubb's soliloquy, before the Ahab pursuit description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Ishmael's first-person introspective moment in the chapter, tying back to earlier chapters (Elijah's warnings) and establishing narrative retrospect; its absence removes a key callback and the narrator's participatory voice.",
+      "suggested_fix": "Restore the Ishmael callback: 'For me, I silently recalled the mysterious shadows creeping aboard at the dim Nantucket dawn, and the enigmatical hintings of the unaccountable Elijah.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton and several key passages but commits three or more medium-severity failures—gutting Stubb's exordium, dropping the Archy/Cabaco stowaway exchange, losing the 'put out their eyes / skewer through their necks' oarsman-discipline passage, and flattening the Ahab 'eyes of red murder / evangelical land' irony—which together constitute sufficient voice erosion and interpretive loss to require regeneration."
+}

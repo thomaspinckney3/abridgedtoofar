@@ -1,0 +1,80 @@
+{
+  "segment_id": "102",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "some certain significance lurks in all things, else all things are little worth, and the round world itself but an empty cipher, except to sell by the cartload, as they do hills about Boston, to fill up some morass in the Milky Way.",
+      "source_locator": "paragraph 2, Ahab's meditation on significance before describing the coin",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most critically noted and rhetorically distinctive sentences in the chapter—the comic bathos of 'sell by the cartload…hills about Boston…morass in the Milky Way' is interpretively essential, establishing Melville's ironic register before the parade of interpreters and underpinning the chapter's argument about meaning-making. Critics regularly cite it.",
+      "suggested_fix": "Restore the full sentence verbatim: 'And some certain significance lurks in all things, else all things are little worth, and the round world itself but an empty cipher, except to sell by the cartload, as they do hills about Boston, to fill up some morass in the Milky Way.' It belongs in the Ahab paragraph before the coin description."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "No fairy fingers can have pressed the gold, but devil's claws must have left their mouldings there since yesterday… The old man seems to read Belshazzar's awful writing.",
+      "source_locator": "Starbuck's soliloquy, opening lines",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Devil's claws' and 'Belshazzar's awful writing' are signature Starbuck lines—critically engaged repeatedly for the Belshazzar allusion (presaging doom) and for the characterization of Ahab's mad reading. The draft omits them entirely, giving only the second half of Starbuck's meditation.",
+      "suggested_fix": "Begin Starbuck's turn with 'No fairy fingers can have pressed the gold, but devil's claws must have left their mouldings there since yesterday' and include the Belshazzar reference before his theological reading of the peaks."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "There's another rendering now; but still one text. All sorts of men in one kind of world, you see.",
+      "source_locator": "Stubb's meta-commentary, after the Manxman and before Queequeg",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's explicit thesis statement—'still one text'—around which the entire structure of multiple interpreters is organized. Critics treat it as the hermeneutic key to the chapter and to the novel's epistemology. Its absence is an interpretive loss of the first order.",
+      "suggested_fix": "Restore verbatim in Stubb's running commentary, between the Manxman section and Queequeg: 'There's another rendering now; but still one text. All sorts of men in one kind of world, you see.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Great pains, small gains for those who ask the world to solve them; it cannot solve itself.",
+      "source_locator": "Ahab's soliloquy, middle section",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aphorism is one of Ahab's most quotable and philosophically dense lines, widely cited in critical discussions of Melville's epistemology and Ahab's solipsism. The draft omits it entirely from Ahab's speech.",
+      "suggested_fix": "Insert verbatim after 'mirrors back each man's mysterious self' in Ahab's speech: 'Great pains, small gains for those who ask the world to solve them; it cannot solve itself.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Now this doubloon was of purest, virgin gold, raked somewhere out of the heart of gorgeous hills, whence, east and west, over golden sands, the head-waters of many a Pactolus flows.",
+      "source_locator": "paragraph 3, narrator's description of the doubloon",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's lyrical, mythologizing description of the coin's origin (Pactolus, 'Quito glow,' immunity to foulness) establishes the coin as numinous object before the interpreters arrive—its absence flattens the transition from narration to soliloquy.",
+      "suggested_fix": "Restore at least the Pactolus sentence and 'Quito glow' passage, and the detail that every sunrise found the doubloon where the sunset left it, as these set up the coin's talismanic status."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "those noble golden coins of South America are as medals of the sun and tropic token-pieces. Here palms, alpacas, and volcanoes; sun's disks and stars; ecliptics, horns-of-plenty, and rich banners waving, are in luxuriant profusion stamped; so that the precious gold seems almost to derive an added preciousness… so Spanishly poetic.",
+      "source_locator": "paragraph 4, narrator's celebration of South American coinage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'so Spanishly poetic' and the catalogue of tropical imagery are voice-establishing for Melville's narrator and give the chapter its sensory richness before the interpretive contest. The draft skips directly to the coin's inscriptions.",
+      "suggested_fix": "Insert a compressed version of this passage—keeping at minimum 'medals of the sun,' 'palms, alpacas, and volcanoes,' and 'so Spanishly poetic'—between the opening and the coin's description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Ho! more and more. This way comes Pip—poor boy! would he had died, or I; he's half horrible to me.",
+      "source_locator": "Stubb's commentary, just before Pip's turn",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Would he had died, or I; he's half horrible to me' is a powerful line characterizing Stubb's discomfort with Pip's madness and the guilt it evokes. Its absence removes emotional texture from the Pip section.",
+      "suggested_fix": "Restore before Pip's appearance: 'This way comes Pip—poor boy! would he had died, or I; he's half horrible to me.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Book! you lie there; the fact is, you books must know your places. You'll do to give us the bare words and facts, but we come in to supply the thoughts.",
+      "source_locator": "Stubb's almanac passage, middle of his soliloquy",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The direct address to the book ('Book! you lie there') is a signature rhetorical move—Stubb's anti-intellectual bluster at its most comic. The draft reduces it to a flat paraphrase ('Books give words and facts; we supply thoughts'), losing the voice entirely.",
+      "suggested_fix": "Restore the direct address verbatim: 'Book! you lie there; the fact is, you books must know your places. You'll do to give us the bare words and facts, but we come in to supply the thoughts.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has four high-severity losses—the Boston/Milky Way cipher sentence, Starbuck's 'devil's claws/Belshazzar' opening, Stubb's 'still one text' thesis statement, and Ahab's 'it cannot solve itself' aphorism—plus four medium-severity voice/interpretive failures, making regeneration mandatory."
+}

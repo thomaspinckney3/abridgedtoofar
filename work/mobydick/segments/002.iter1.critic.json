@@ -3,51 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "So fare thee well, poor devil of a Sub-Sub, whose commentator I am. Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm",
-      "source_locator": "Second paragraph of source, opening of the farewell address to Sub-Sub",
-      "draft_treatment": "absent",
-      "why_it_matters": "The farewell address to the Sub-Sub is one of the most tonally distinctive passages in the entire prefatory apparatus of Moby-Dick — a sustained ironic elegy combining pathos and comedy that is critically recognized as establishing Melville's narrative register. Its complete absence erases both voice and interpretive content.",
-      "suggested_fix": "Restore at minimum the core of the Sub-Sub farewell: 'So fare thee well, poor devil of a Sub-Sub… Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm… Give it up, Sub-Subs!' and the closing heavenly image of striking 'unsplinterable glasses.'"
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Give it up, Sub-Subs! For by how much the more pains ye take to please the world, by so much the more shall ye for ever go thankless!",
-      "source_locator": "Second paragraph, midpoint of farewell address",
-      "draft_treatment": "absent",
-      "why_it_matters": "This rhetorically distinctive apostrophe — with its biblical cadence and bitter irony — is a signature passage in the critical literature on Melville's relationship to his own literary labor and obscurity. Its absence is a total loss.",
-      "suggested_fix": "Include this line verbatim or near-verbatim in any regeneration of the Extracts segment."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!",
-      "source_locator": "Final sentence of source segment",
-      "draft_treatment": "absent",
-      "why_it_matters": "This closing image — the contrast between splintered hearts on earth and unsplinterable glasses in heaven — is the rhetorical climax of the Extracts preface and one of Melville's most compressed, tonally complex images. It is entirely missing.",
-      "suggested_fix": "Restore the closing line verbatim as the conclusion of the Extracts section."
-    },
-    {
-      "severity": "high",
-      "class": "interpretive_loss",
-      "source_passage": "this mere painstaking burrower and grub-worm of a poor devil of a Sub-Sub appears to have gone through the long Vaticans and street-stalls of the earth, picking up whatever random allusions to whales",
-      "source_locator": "First paragraph of source",
-      "draft_treatment": "absent",
-      "why_it_matters": "The characterization of the Sub-Sub as 'burrower and grub-worm' who traverses the 'long Vaticans and street-stalls' is critically important: it frames the entire Extracts apparatus as both encyclopedic and bathetic, and establishes the epistemological irony that governs the book's relationship to cetological knowledge.",
-      "suggested_fix": "The Extracts preface must appear in the draft as its own section; the Sub-Sub framing paragraph should be present, including the 'Vaticans and street-stalls' and 'higgledy-piggledy whale statements' language."
-    },
-    {
-      "severity": "high",
+      "severity": "medium",
       "class": "voice_erasure",
-      "source_passage": "grow convivial upon tears; and say to them bluntly, with full eyes and empty glasses, and in not altogether unpleasant sadness",
-      "source_locator": "Second paragraph, middle of farewell",
+      "source_passage": "whose commentator I am",
+      "source_locator": "opening of second paragraph: 'So fare thee well, poor devil of a Sub-Sub, whose commentator I am.'",
       "draft_treatment": "absent",
-      "why_it_matters": "This phrase — 'grow convivial upon tears… full eyes and empty glasses… not altogether unpleasant sadness' — is a signature specimen of Melville's tragicomic voice; critics cite it as an exemplar of his tonal complexity. Its erasure removes the key voice-establishing moment of the segment.",
-      "suggested_fix": "Preserve this phrase verbatim or within one degree; it is too rhetorically distinctive to paraphrase without total loss."
+      "why_it_matters": "The phrase 'whose commentator I am' is the moment the narrator identifies himself in relation to the Sub-Sub — a meta-textual, voice-establishing aside critical to understanding the framing device. Its removal erases the narrator's self-positioning.",
+      "suggested_fix": "Restore 'whose commentator I am' in the farewell sentence: 'So fare thee well, poor devil of a Sub-Sub, whose commentator I am.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Would that I could clear out Hampton Court and the Tuileries for ye! But gulp down your tears and hie aloft to the royal-mast with your hearts",
+      "source_locator": "Second paragraph, after 'For by how much the more pains ye take…go thankless!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Hampton Court/Tuileries exclamation and the 'gulp down your tears and hie aloft to the royal-mast' image are the rhetorical climax of the passage — tonally and prosodically distinctive, blending mock-heroic sympathy with nautical register. Their absence deflates the entire peroration.",
+      "suggested_fix": "Restore from 'Would that I could clear out Hampton Court…' through '…making refugees of long-pampered Gabriel, Michael, and Raphael, against your coming' and the closing antithesis about splintered/unsplinterable glasses, or at minimum the 'gulp down your tears and hie aloft' sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "your friends who have gone before are clearing out the seven-storied heavens, and making refugees of long-pampered Gabriel, Michael, and Raphael, against your coming. Here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!",
+      "source_locator": "Final sentences of the second paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The closing antithesis ('splintered hearts / unsplinterable glasses') is the rhetorical and tonal capstone of the Extracts preface — widely noted by critics as exemplifying Melville's mock-heroic, tragicomic register. Its complete absence removes the climactic signature moment of the segment.",
+      "suggested_fix": "The closing two sentences must be restored verbatim or near-verbatim; they are the highest-density signature prose in this segment."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Therefore you must not, in every case at least, take the higgledy-piggledy whale statements, however authentic, in these extracts, for veritable gospel cetology.",
+      "source_locator": "First paragraph, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Higgledy-piggledy whale statements' and 'veritable gospel cetology' are tonally distinctive coinages that signal the narrator's ironic, playful erudition; their omission slightly flattens the opening paragraph's voice.",
+      "suggested_fix": "Consider restoring the 'higgledy-piggledy' disclaimer sentence to preserve the ironic framing of the extracts' reliability."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft contains none of the source segment's content — it reproduces Chapter 1 (Loomings) instead of the Extracts preface, resulting in total loss of every signature passage including the Sub-Sub characterization, the farewell apostrophe, and the closing 'unsplinterable glasses' image."
+  "summary": "Three medium-severity failures — erasure of the narrator's self-identification, loss of the Hampton Court/royal-mast exclamation, and complete absence of the signature 'splintered hearts / unsplinterable glasses' closing antithesis — strip the segment of its rhetorical climax and voice-establishing capstone, triggering regeneration."
 }

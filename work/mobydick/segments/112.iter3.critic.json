@@ -1,0 +1,44 @@
+{
+  "segment_id": "112",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "with a daring so strangely respectful and cautious that it almost seemed not only every way seeking to avoid the slightest outward manifestation of itself, but within also seemed more than half distrustful of itself",
+      "source_locator": "paragraph beginning 'Captain Ahab,' said the reddening mate",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The original's doubled 'seemed…seemed' construction and the phrase 'manifestation of itself' carry the distinctive psychological precision Melville uses to anatomise Starbuck's paralysis; 'outward show' and truncation lose the rhetorical mirroring that makes the description critically significant.",
+      "suggested_fix": "Restore 'that it almost seemed not only every way seeking to avoid the slightest outward manifestation of itself, but within also seemed more than half distrustful of itself' verbatim or near-verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "For an instant in the flashing eyes of the mate, and his fiery cheeks, you would have almost thought that he had really received the blaze of the levelled tube.",
+      "source_locator": "paragraph beginning 'For an instant in the flashing eyes'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence—Starbuck flinching as though actually shot—is interpretively essential: it externalises the psychological violence of the musket threat and is a key passage in critical readings of Ahab's dominance over Starbuck. Its complete absence removes the narrator's commentary at a pivotal dramatic moment.",
+      "suggested_fix": "Restore the sentence 'For an instant in the flashing eyes of the mate, and his fiery cheeks, you would have almost thought that he had really received the blaze of the levelled tube' before 'But, mastering his emotion…'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Then unconsciously using the musket for a staff, with an iron brow he paced to and fro in the little cabin; but presently the thick plaits of his forehead relaxed",
+      "source_locator": "paragraph beginning 'He waxes brave, but nevertheless obeys'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The image of Ahab unconsciously leaning on the musket and the loosening of 'the thick plaits of his forehead' are signature physical-psychological notation; they show Ahab's internal shift from rage to relent and are the kind of body-reading prose that defines Melville's characterisation of Ahab throughout the novel.",
+      "suggested_fix": "Restore 'Then unconsciously using the musket for a staff, with an iron brow he paced to and fro in the little cabin; but presently the thick plaits of his forehead relaxed, and returning the gun to the rack, he went to the deck' in place of the compressed version."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "So it is, so it is; if we get it.\" \"I was speaking of the oil in the hold, sir.\" \"And I was not speaking or thinking of that at all.",
+      "source_locator": "dialogue exchange before 'Begone! Let it leak!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This three-line micro-exchange is the hinge on which Ahab's leap from commercial reality to existential metaphor turns; its absence causes the 'I'm all aleak myself' speech to arrive without the deflection that gives it dramatic logic.",
+      "suggested_fix": "Insert the brief exchange ('So it is, so it is; if we get it' / 'I was speaking of the oil in the hold, sir' / 'And I was not speaking or thinking of that at all') before 'Begone! Let it leak!'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves most quoted dialogue faithfully but erases the narrator's pivotal 'blaze of the levelled tube' sentence entirely, flattens the double-'seemed' Starbuck psychology passage, and cuts Ahab's musket-as-staff / forehead-relaxing transition—three medium-severity losses that together cross the regeneration threshold."
+}

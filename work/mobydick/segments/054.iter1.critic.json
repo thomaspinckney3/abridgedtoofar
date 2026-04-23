@@ -1,0 +1,44 @@
+{
+  "segment_id": "054",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "and, by their soft, suffusing seethings, made what seemed a silvery silence, not a solitude",
+      "source_locator": "paragraph 2, description of the moonlight night",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The distinction 'a silvery silence, not a solitude' is a precise, philosophically charged phrase — silence without emptiness — that carries interpretive and stylistic signature weight. The draft renders only 'a silvery silence,' dropping the qualifying clause entirely.",
+      "suggested_fix": "Restore 'not a solitude' verbatim after 'silvery silence.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "On life and death this old man walked.",
+      "source_locator": "paragraph 3, after the coffin-tap sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most resonant, lapidary sentences in the chapter — five words carrying the chapter's entire thematic weight about Ahab's dual existence. It is missing from the draft entirely.",
+      "suggested_fix": "Restore verbatim: 'On life and death this old man walked.' after the coffin-tap sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "seemed condemned to swim on everlastingly without any haven in store, or beat that black air without any horizon",
+      "source_locator": "paragraph 9, the Cape Tormentoso passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Cape Tormentoso passage in the source expands into a vision of guilty beings transformed into fowls and fish, condemned to swim everlastingly — a mythologizing digression of high voice and interpretive weight. The draft compresses the whole passage to three short clauses, losing the condemnation imagery entirely.",
+      "suggested_fix": "Restore at minimum the 'guilty beings transformed' and 'condemned to swim on everlastingly without any haven' clause to preserve the mythic register of the Cape Tormentoso passage."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "some thought there lurked a devilish charm, as for days and days we voyaged along, through seas so wearily, lonesomely mild",
+      "source_locator": "paragraph 7, 'These temporary apprehensions' paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'wearily' and 'devilish charm,' thinning the ominous atmosphere. 'Wearily, lonesomely mild' is a distinctive adverbial cluster; its compression to 'lonesomely mild' loses the prosodic texture.",
+      "suggested_fix": "Restore 'wearily, lonesomely mild' and 'devilish charm' in the weather-blandness passage."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most signatures including the Starbuck closing and the spirit-spout's supernatural atmosphere, but loses the crucial lapidary sentence 'On life and death this old man walked,' drops the 'not a solitude' distinction, and flattens the mythic Cape Tormentoso condemnation imagery — none individually high-severity but collectively represent meaningful voice thinning."
+}

@@ -3,15 +3,33 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "other",
-      "source_passage": "entire Chapter 5 source text provided",
-      "source_locator": "full segment",
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "These people were mad. There was no other explanation for their behavior. They believed they were in some fantasy land of lords and ladies with damsels in distress.",
+      "source_locator": "After the narrator pulls her sleeve down following the branding, before 'I had to get out'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source gives the narrator's internal dismissal its full sarcastic shape across three short declarative sentences; the draft compresses this to a single hurried clause, losing the ironic rhythm of the original voice.",
+      "suggested_fix": "Restore the three-sentence structure: 'Mad. The whole place was mad' is a start but the third sentence—'They believed they were in some fantasy land of lords and ladies with damsels in distress'—should be kept intact or very close."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Dragon lords and the Maidens? Medieval bullshit. The authorities would come and lock them in an insane asylum.",
+      "source_locator": "Internal monologue paragraph after rope-making, before the escape plan",
       "draft_treatment": "absent",
-      "why_it_matters": "No draft text was supplied; the draft section is completely empty, making any comparison impossible and constituting total preservation failure.",
-      "suggested_fix": "Supply the actual draft text and resubmit for evaluation."
+      "why_it_matters": "This blunt profane exclamation ('Medieval bullshit') is the sharpest register marker in the chapter—it establishes the narrator's contemptuous modern voice against the fantasy setting. Its absence flattens the voice.",
+      "suggested_fix": "Re-insert the exclamation and the insane-asylum conclusion verbatim or very close within the pre-escape internal monologue."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I had to hurry lest this dragon lord show me off to his drunken friends.",
+      "source_locator": "Just before narrator slips over the window frame",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source line's wry characterisation of the celebrants as 'drunken friends' is a small but register-specific voice beat; the draft replaces it with a neutral phrase ('parade me'), losing the sardonic specificity.",
+      "suggested_fix": "Restore 'show me off to his drunken friends' or keep 'drunken' in any paraphrase."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft field is entirely empty; there is nothing to evaluate against the source, which is an absolute preservation failure requiring regeneration."
+  "verdict": "pass",
+  "summary": "No high- or medium-severity signature losses; three low-severity voice-flattening instances where the narrator's sardonic register is slightly dulled by compression, but all plot and interpretive content is preserved."
 }

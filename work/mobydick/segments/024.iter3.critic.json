@@ -1,0 +1,53 @@
+{
+  "segment_id": "024",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Hands off, will you,\" said I. \"Lookee here,\" said Queequeg, shaking himself, \"go 'way!\"",
+      "source_locator": "paragraph 4-5, exchange with Elijah after 'Going aboard?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The physical resistance—Ishmael and Queequeg pushing Elijah off—establishes the confrontational, slightly menacing texture of the encounter; its absence flattens the scene's body language.",
+      "suggested_fix": "Restore 'Hands off, will you' and Queequeg's 'go 'way!' with the shaking gesture to preserve the physical comic tension."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Elijah,\" said I, \"you will oblige my friend and me by withdrawing. We are going to the Indian and Pacific Oceans, and would prefer not to be detained.\"",
+      "source_locator": "paragraph 7, Ishmael's formal rebuke of Elijah",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ishmael's stiff, mock-formal register ('you will oblige my friend and me by withdrawing') is a signature voice moment—deadpan self-importance in the face of prophecy; its replacement with 'what's that to you?' loses the irony entirely.",
+      "suggested_fix": "Reinstate the formal phrasing, or at minimum the mention of the Indian and Pacific Oceans, to capture the ironic-pompous register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"No, no, no; I wasn't aware of that,\" said Elijah, slowly and wonderingly looking from me to Queequeg, with the most unaccountable glances.",
+      "source_locator": "paragraph 6, Elijah's response to being called impertinent",
+      "draft_treatment": "absent",
+      "why_it_matters": "Elijah's 'most unaccountable glances' and slow wonderment are part of his prophetic strangeness; dropping the whole exchange (including calling him 'a little impertinent') erases the comic-ominous texture of this prophet scene.",
+      "suggested_fix": "Restore at least Ishmael calling Elijah 'a little impertinent' and Elijah's unaccountable, slow wondering response."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"very benevolent countenance then; but how hard he breathes, he's heaving himself\"",
+      "source_locator": "paragraph near end, Ishmael's riff on the sleeper's 'face'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Ishmael's comically extended meditation on calling the sleeper's rear a 'face' and the 'benevolent countenance' quip is a small but characteristic voice-flourish; the draft cuts the wit of the extended joke.",
+      "suggested_fix": "Restore 'very benevolent countenance then; but how hard he breathes' to preserve the full comic riff."
+    },
+    {
+      "severity": "low",
+      "class": "motif_depletion",
+      "source_passage": "which, it seemed, had in its two uses both brained his foes and soothed his soul",
+      "source_locator": "paragraph about Queequeg's tomahawk-pipe reminiscences",
+      "draft_treatment": "absent",
+      "why_it_matters": "The tomahawk-pipe's dual nature—weapon and comfort—is a recurrent thematic motif in the novel; this phrase crystallises it and its absence thins the passage.",
+      "suggested_fix": "Insert 'which in its two uses had brained his foes and soothed his soul' to keep the motif alive."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium-severity voice-flattenings (the physical Elijah confrontation, Ishmael's formal Indian-and-Pacific-Oceans rebuke, and Elijah's 'most unaccountable glances' response) reduce tonal fidelity but do not individually trigger regeneration—verdict is a marginal pass."
+}

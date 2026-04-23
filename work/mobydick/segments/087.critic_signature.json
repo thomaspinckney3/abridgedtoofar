@@ -1,0 +1,44 @@
+{
+  "segment_id": "087",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "not long after the German ship Jungfrau disappeared, took more than customary pains in that occupation; crawling under its bottom, where it hung over the side",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The reference to the Jungfrau creates a narrative continuity thread with the preceding chapter and signals Queequeg's presentiment more precisely; its erasure flattens the episodic connective tissue and the emphasis on 'more than customary pains.'",
+      "suggested_fix": "Restore 'not long after the German ship Jungfrau disappeared, took more than customary pains in that occupation' before the crawling description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Small sword, or broad sword, in all its exercises boasts nothing like it. It is only indispensable with an inveterate running whale",
+      "source_locator": "paragraph 4, opening of pitchpoling description",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sword-combat comparison is a characteristic Melvillean rhetorical flourish that elevates the whaleman's art above martial traditions; its omission reduces the passage's voice and interpretive claim about whaling as supreme skill.",
+      "suggested_fix": "Insert 'Small sword, or broad sword, in all its exercises boasts nothing like it' after 'none exceed that fine manœuvre with the lance called pitchpoling.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "But before going further, it is important to mention here, that though the harpoon may be pitchpoled in the same way with the lance, yet it is seldom done",
+      "source_locator": "paragraph 5 (entire paragraph on harpoon vs. lance)",
+      "draft_treatment": "absent",
+      "why_it_matters": "This technical digression is characteristic of Melville's encyclopedic narrator voice; its absence is a mild compression loss but does not rise to high severity given the chapter's tone.",
+      "suggested_fix": "If word budget allows, restore the harpoon-comparison paragraph as a brief aside to maintain the narrator's encyclopedic register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "By great exertion, Tashtego at last succeeded in planting one iron",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'By great exertion… at last succeeded' carries narrative drama that 'Tashtego planted one iron' collapses; minor but flattens the action.",
+      "suggested_fix": "Restore 'By great exertion, Tashtego at last succeeded in planting one iron.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signatures including the full pitchpoling action sequence, Stubb's speech, and the closing image; two medium-severity omissions (Jungfrau reference, sword-comparison flourish) and two low-severity flattenings are present but insufficient to trigger regeneration."
+}

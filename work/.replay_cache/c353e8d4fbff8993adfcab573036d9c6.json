@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T07:58:30",
+  "key": "c353e8d4fbff8993adfcab573036d9c6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n{\n  \"segment_id\": \"132\",\n  \"critic\": \"signature\",\n  \"findings\": [],\n  \"verdict\": \"pass\",\n  \"summary\": \"The draft reproduces the source text verbatim with no omissions, paraphrases, or compressions of any kind.\"\n}\n```",
+    "input_tokens": 2,
+    "output_tokens": 76,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3039,
+    "duration_s": 2.3541457653045654,
+    "stop_reason": "end_turn"
+  }
+}

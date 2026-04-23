@@ -1,0 +1,44 @@
+{
+  "segment_id": "131",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Throttling his joy, Ahab negatively answered this unexpected question; and would then have fain boarded the stranger, when the stranger captain himself, having stopped his vessel's way, was seen descending her side.",
+      "source_locator": "paragraph 4, after the exchange of first hails",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Throttling his joy' is a characteristically intense Melvillean phrase capturing Ahab's psychological tension; its erasure flattens the moment of the whale-sighting confirmation and loses a key interior beat.",
+      "suggested_fix": "Restore 'Throttling his joy, Ahab negatively answered this unexpected question' before the description of the Rachel's captain boarding."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"Where was he?—not killed!—not killed!\" cried Ahab, closely advancing. \"How was it?\"",
+      "source_locator": "paragraph 5, immediately after the captain boards",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ahab's frantic, repeated cry 'not killed!—not killed!' is interpretively significant—it shows Ahab's obsessive desire that Moby Dick survive to be killed by him alone; erasing it removes a critical character note.",
+      "suggested_fix": "Insert Ahab's exclamation verbatim after the captain boards, before the narrative account of the prior day's events."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Yes, yes, you relent; I see it—run, run, men, now, and stand by to square in the yards.\"",
+      "source_locator": "Gardiner's speech, near end of chapter, after invoking Ahab's child",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line—Gardiner mistaking a flicker in Ahab's face for relenting and ordering his men to act—is dramatically essential; it shows how desperately Gardiner reads into Ahab, and Ahab's refusal immediately following is all the more devastating. The draft cuts the whole tail of Gardiner's speech.",
+      "suggested_fix": "Restore the full closing of Gardiner's speech: '—a child of your old age too—Yes, yes, you relent; I see it—run, run, men, now, and stand by to square in the yards.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "she crowded all sail—stunsail on stunsail—after the missing boat; kindling a fire in her try-pots for a beacon",
+      "source_locator": "long narrative paragraph describing the night search",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific detail 'stunsail on stunsail' gives Melvillean texture and urgency to the night search; the draft reduces it to a generic phrase, losing the prosodic and nautical specificity.",
+      "suggested_fix": "Retain 'crowded all sail—stunsail on stunsail' in the search narrative."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "Three medium-severity findings (loss of 'Throttling his joy,' loss of 'not killed!—not killed!,' and truncation of Gardiner's climactic speech) and one low; no single high-severity failure, so the draft passes but should be strengthened in regeneration."
+}

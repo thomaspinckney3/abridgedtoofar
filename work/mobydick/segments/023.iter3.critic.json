@@ -1,0 +1,53 @@
+{
+  "segment_id": "023",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "but new sails were coming on board, and bolts of canvas, and coils of rigging; in short, everything betokened that the ship's preparations were hurrying to a close",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The original's cumulative list rhythm and the phrase 'everything betokened that the ship's preparations were hurrying to a close' establish the chapter's opening tempo; the draft compresses to a bare summary, losing the Melvillean catalogue voice.",
+      "suggested_fix": "Restore 'everything betokened that the ship's preparations were hurrying to a close' to preserve the rhetorical cadence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Every one knows what a multitude of things—beds, sauce-pans, knives and forks, shovels and tongs, napkins, nut-crackers, and what not, are indispensable to the business of housekeeping",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Napkins, nut-crackers' are deliberately comic details that anchor Melville's extended housekeeping analogy; dropping them strips the ironic domesticity that makes the comparison work.",
+      "suggested_fix": "Restore 'napkins, nut-crackers' to the list so the comic bathos of the catalogue is intact."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "far from all grocers, costermongers, doctors, bakers, and bankers. And though this also holds true of merchant vessels, yet not by any means to the same extent as with whalemen",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "absent",
+      "why_it_matters": "The list of shore-based providers ('costermongers, doctors, bakers, and bankers') and the explicit comparison with merchant vessels are the substance of Melville's argument for why whalers must over-provision; the draft leaves only the conclusion without the reasoning.",
+      "suggested_fix": "Add at least the 'far from all grocers, costermongers, doctors, bakers, and bankers' list and the merchant-vessel qualification to preserve the analytic texture."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "a lean old lady of a most determined and indefatigable spirit, but withal very kindhearted, who seemed resolved that, if she could help it, nothing should be found wanting in the Pequod",
+      "source_locator": "paragraph 5 (Aunt Charity introduction)",
+      "draft_treatment": "absent",
+      "why_it_matters": "The character sketch of Aunt Charity ('lean old lady… determined and indefatigable… kindhearted') is the narrative introduction of a named figure; its absence reduces her to a label rather than a rendered person.",
+      "suggested_fix": "Restore the brief character sketch before the list of her errands."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Peleg came hobbling out of his whalebone den, roaring at the men down the hatchways, roaring up to the riggers at the mast-head, and then concluded by roaring back into his wigwam",
+      "source_locator": "paragraph 6",
+      "draft_treatment": "absent",
+      "why_it_matters": "The triple 'roaring' anaphora is a small set-piece of comic characterization for Peleg; the draft collapses it into a single earlier mention ('roaring from his whalebone den'), losing the deliberate comedic escalation.",
+      "suggested_fix": "Restore the triple-roaring sequence in the Peleg/Bildad paragraph to preserve the comic rhythm."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium-severity voice-flattenings (catalogue truncation, absent reasoning for the housekeeping analogy, Peleg's triple-roaring set-piece lost) and two low-severity character-sketch elisions, none individually triggering regeneration under the rubric."
+}

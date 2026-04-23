@@ -1,0 +1,53 @@
+{
+  "segment_id": "018",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The world of dragons was very dark. The only light I had was the moon in the sky. I fumbled my way through the woods with Cayden as my guide.",
+      "source_locator": "Paragraph 1, sentences 2-4",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief passage establishes the narrator's wry, self-aware tone and the atmospheric darkness that frames the chapter's opening mood; its omission removes a voice-defining aside that colours the subsequent action.",
+      "suggested_fix": "Restore the two-sentence atmospheric aside ('The world of dragons was very dark. The only light I had was the moon in the sky. I fumbled my way through the woods with Cayden as my guide.') between the opening sentence and 'Every rock and tree branch…'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She straightened and frowned. She wanted to do it the hard way.",
+      "source_locator": "After 'The water gurgled in reply.'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source gives the reader Miriam's internal framing ('She wanted to do it the hard way') as a first-person sardonic aside; the draft converts it to a detached paraphrase ('She wanted hard mode, then') that loses the narrator's characteristic deadpan register.",
+      "suggested_fix": "Restore as close to source phrasing as possible: 'She wanted to do it the hard way.' — the exact wording is brief and carries the narrator's signature ironic economy."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I pursed my lips and shook my head. 'I don't know.'",
+      "source_locator": "After Lady's question 'Do you not love him?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's staging—Miriam pursing her lips, physically shaking her head before admitting 'I don't know'—is a precise, restrained gesture that gives the moment interpretive weight about her emotional ambivalence; the draft strips it to bare dialogue with an editorialising tag ('truth stinging') that replaces character action with narrator commentary.",
+      "suggested_fix": "Restore the physical stage direction: 'I pursed my lips and shook my head. \"I don't know.\"' and remove the added 'truth stinging' gloss."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I heard a gasp from Stephanie and a chuckle from Apuleius. We parted so I could partake of some air and wipe the blush from my cheeks.",
+      "source_locator": "After the kiss, before 'You could have just said thank you'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The reaction beat (Stephanie's gasp, Apuleius's chuckle) grounds the intimate moment within the watching ensemble and is a recognisable Mac Flynn comic-relief signature; its loss flattens the scene's tonal contrast and removes the narrator's self-deprecating wit about the blush.",
+      "suggested_fix": "Restore the two sentences after the kiss, including both named character reactions and Miriam's comic aside about wiping the blush from her cheeks."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She swept her eyes over the many occupants of the room. 'If you would all leave Our Lord may find some.'",
+      "source_locator": "Near end, doctor's dismissal of the room",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses this to 'You will rest. All of you, out.' — losing the slightly formal, faintly comic register of Galen's speech which is a minor but consistent voice marker for the character.",
+      "suggested_fix": "Restore Galen's fuller dismissal line: 'He swept his eyes over the many occupants of the room. \"If you would all leave Our Lord may find some.\"'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Four medium-severity findings — loss of the opening atmospheric/voice-establishing aside, flattening of Miriam's sardonic 'hard way' interiority, erasure of the physical staging at the interpretive crux ('I pursed my lips'), and omission of the post-kiss ensemble reaction beat — collectively constitute sufficient voice erasure to require regeneration."
+}

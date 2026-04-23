@@ -1,0 +1,62 @@
+{
+  "segment_id": "136",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Not the white bull Jupiter swimming away with ravished Europa clinging to his graceful horns; his lovely, leering eyes sideways intent upon the maid; with smooth bewitching fleetness, rippling straight for the nuptial bower in Crete; not Jove, not that great majesty Supreme! did surpass the glorified White Whale as he so divinely swam.",
+      "source_locator": "paragraph describing whale's approach, after 'invested the gliding whale'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended mythological simile is critically notable and interpretively important—it elevates Moby Dick to divine/mythic status and is a signature rhetorical flourish that the critical tradition returns to repeatedly. The draft drops it entirely, keeping only the general 'gentle joyousness' phrase.",
+      "suggested_fix": "Restore the Jupiter-Europa comparison, even in compressed form: 'Not the white bull Jupiter bearing ravished Europa straight for the nuptial bower in Crete; not Jove, not that great majesty Supreme! did surpass the glorified White Whale as he so divinely swam.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "No wonder there had been some among the hunters who namelessly transported and allured by all this serenity, had ventured to assail it; but had fatally found that quietude but the vesture of tornadoes. Yet calm, enticing calm, oh, whale! thou glidest on, to all who for the first time eye thee, no matter how many in that same way thou may'st have bejuggled and destroyed before.",
+      "source_locator": "paragraph after Jupiter-Europa simile",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The apostrophe 'Yet calm, enticing calm, oh, whale!' and the 'bejuggled and destroyed' formulation are distinctive voice markers and carry interpretive weight about seduction and destruction. The draft reduces this to a mere parenthetical tag 'calm, enticing calm—the vesture of tornadoes,' stripping the direct address and the critical idea about prior victims.",
+      "suggested_fix": "Restore the apostrophe and the thought about hunters 'namelessly transported' who 'fatally found that quietude but the vesture of tornadoes,' and the direct address to the whale with 'bejuggled and destroyed before.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "In an instant's compass, great hearts sometimes condense to one deep pang, the sum total of those shallow pains kindly diffused through feebler men's whole lives. And so, such hearts, though summary in each one suffering; still, if the gods decree it, in their life-time aggregate a whole age of woe, wholly made up of instantaneous intensities; for even in their pointless centres, those noble natures contain the entire circumferences of inferior souls.",
+      "source_locator": "paragraph after 'nameless wails came from him, as desolate sounds from out ravines'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is one of the novel's great philosophical digressions on heroic suffering and is interpretively central to understanding Ahab. The draft reduces it to 'But great hearts condense to one deep pang and rise,' losing the full elaboration of the noble nature/inferior souls contrast and the rhetoric of 'instantaneous intensities.'",
+      "suggested_fix": "Restore at least the key formulation: 'great hearts sometimes condense to one deep pang, the sum total of those shallow pains kindly diffused through feebler men's whole lives... those noble natures contain the entire circumferences of inferior souls.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Far inland, nameless wails came from him, as desolate sounds from out ravines.",
+      "source_locator": "paragraph after Ahab is dragged into Stubb's boat",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is prosodically distinctive and emotionally resonant—it is a rare moment of raw Ahab vulnerability rendered in elevated poetic register. The draft moves directly to the philosophical digression without this image.",
+      "suggested_fix": "Insert 'Far inland, nameless wails came from him, as desolate sounds from out ravines' between the description of Ahab lying crushed and the 'great hearts' passage."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "did I not know thee brave as fearless fire (and as mechanical) I could swear thou wert a poltroon. Groan nor laugh should be heard before a wreck.",
+      "source_locator": "Ahab's reply to Stubb after the thistle jest",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops the crucial parenthetical '(and as mechanical)' and the opening 'Man, man!' — the mechanicalness of Stubb's bravery is a key characterization. The draft renders only 'What soulless thing is this that laughs before a wreck? Groan nor laugh should be heard before a wreck,' omitting the full speech.",
+      "suggested_fix": "Restore 'Man, man! did I not know thee brave as fearless fire (and as mechanical) I could swear thou wert a poltroon' before 'Groan nor laugh.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Cold, cold—I shiver!—How now? Aloft there! D'ye see him? Sing out for every spout, though he spout ten times a second!",
+      "source_locator": "end of Ahab's 'Omen? omen?' speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sudden 'Cold, cold—I shiver!' is a striking tonal break that reveals a crack in Ahab's armor immediately after his declaration of solitary grandeur, and the abrupt command shifts register dramatically. Its absence smooths over an important character beat.",
+      "suggested_fix": "Append 'Cold, cold—I shiver!—Aloft there! Sing out for every spout, though he spout ten times a second!' to the end of the 'opposite poles' speech."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft achieves reasonable compression but drops the Jupiter-Europa mythological simile entirely, badly flattens the 'noble natures contain the entire circumferences of inferior souls' philosophical passage, and loses the apostrophe to the whale and the 'nameless wails' sentence—three medium-severity failures that together trigger regeneration."
+}

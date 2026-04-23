@@ -1,0 +1,26 @@
+[
+  {
+    "class": "dangling_reference",
+    "chapter": "6",
+    "draft_passage": "Its only reaction was tears that pooled in my eyes and slid down my cheeks.",
+    "source_has": "My body still wouldn't respond. Its only reaction was tears that pooled in my eyes and slid down my cheeks.",
+    "gate_test_answer": "A reader is genuinely confused: 'its' has no unambiguous antecedent in the draft because the sentence 'My body still wouldn't respond' was cut, leaving 'its' floating after 'The reek flooded my head,' making it unclear what 'its only reaction' refers to.",
+    "pair": "005-006"
+  },
+  {
+    "class": "unattributed_dialogue",
+    "chapter": "12",
+    "draft_passage": "\"Should we check the lord's room?\"\n\"It must be done, but quietly,\" she replied to someone.",
+    "source_has": "\"Should we check the lord's room?\" a man's voice wondered. \"It must be done, but quietly,\" the old woman replied.",
+    "gate_test_answer": "A reader is genuinely confused: the draft attributes both lines to the same 'she' (the old woman), making her appear to ask and answer her own question, whereas the source clearly splits speaker and responder.",
+    "pair": "011-012"
+  },
+  {
+    "class": "broken_pivot",
+    "chapter": "12",
+    "draft_passage": "He shuddered, jaw tight.",
+    "source_has": "The lord shut his eyes and ground his teeth together. His breathing came out in quick gasps, and he appeared in pain. 'Are you all right?' [then explanation follows]",
+    "gate_test_answer": "A reader is genuinely confused: the draft omits the narrator touching the wing and the lord's visible distress-reaction, so the shudder appears unprompted and structurally orphaned \u2014 there is no triggering cause established anywhere in the preceding draft sentences of this chapter.",
+    "pair": "011-012"
+  }
+]

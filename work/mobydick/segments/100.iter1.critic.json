@@ -1,0 +1,35 @@
+{
+  "segment_id": "100",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "so he lives in light. He makes his berth an Aladdin's lamp, and lays him down in it; so that in the pitchiest night the ship's black hull still houses an illumination.",
+      "source_locator": "paragraph 2, second half",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The rhythmic cadence 'lays him down in it; so that in the pitchiest night the ship's black hull still houses an illumination' is the interpretive and imagistic climax of the paragraph — the contrast of black hull and internal light is a signature Melville figure. The draft cuts 'lays him down in it' and the entire 'pitchiest night / black hull / illumination' sentence.",
+      "suggested_fix": "Restore: 'He makes his berth an Aladdin's lamp, and lays him down in it; so that in the pitchiest night the ship's black hull still houses an illumination.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a fluid unknown to solar, lunar, or astral contrivances ashore",
+      "source_locator": "paragraph 3, after 'unvitiated state'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This triplet — 'solar, lunar, or astral contrivances' — is stylistically distinctive, carrying Melville's mock-grandiose register and the thematic claim that whale-oil transcends all earthly illuminants. Its excision flattens the chapter's central conceit.",
+      "suggested_fix": "Restore after 'unvitiated': 'a fluid unknown to solar, lunar, or astral contrivances ashore.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "even as the traveller on the prairie hunts up his own supper of game",
+      "source_locator": "final sentence of paragraph 3",
+      "draft_treatment": "absent",
+      "why_it_matters": "The prairie-traveller simile closes the chapter with a distinctly American frontier analogy that reinforces the self-sufficiency motif; its loss mildly thins the rhetorical finish.",
+      "suggested_fix": "Append: 'even as the traveller on the prairie hunts up his own supper of game.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two medium-severity losses — the 'pitchiest night / black hull / illumination' sentence and the 'solar, lunar, or astral contrivances' phrase — strip the chapter of its central imagistic and rhetorical signature, warranting regeneration."
+}

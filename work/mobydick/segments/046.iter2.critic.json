@@ -1,0 +1,44 @@
+{
+  "segment_id": "046",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was in the midst of this repose, that Archy, one of the cordon, whose post was near the after-hatches, whispered to his neighbor, a Cholo, the words above.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence names Archy explicitly, identifies him as a member of the cordon near the after-hatches, and identifies Cabaco as a Cholo — details that carry both character-establishing and interpretive weight (Cabaco's ethnicity is a textual marker). Their absence reduces the passage to unattributed dialogue.",
+      "suggested_fix": "Restore the introductory sentence identifying Archy's position in the cordon and Cabaco as a Cholo before or after the first whispered exchange."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough.\"",
+      "source_locator": "dialogue, paragraph 5",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The stammer-and-repeat rhythm (\"a cough—it sounded like a cough\") is signature Melville dramatic rendering; the draft compresses it to a flat summary clause, erasing the nervous, halting voice that establishes atmosphere.",
+      "suggested_fix": "Restore the full stammered line verbatim: \"There it is again—under the hatches—don't you hear it—a cough—it sounded like a cough.\""
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"There again—there it is!—it sounds like two or three sleepers turning over, now!\"",
+      "source_locator": "dialogue, paragraph 7",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The exclamatory doubling (\"There again—there it is!\") and the trailing \"now!\" give this line its urgent, breathless character. The draft renders it as a calm summary sentence, losing the dramatic rhythm.",
+      "suggested_fix": "Restore the exclamation structure verbatim or near-verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "\"there is somebody down in the after-hold that has not yet been seen on deck; and I suspect our old Mogul knows something of it too. I heard Stubb tell Flask, one morning watch, that there was something of that sort in the wind.\"",
+      "source_locator": "final speech by Archy",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This speech is the chapter's entire interpretive payload — the first foreshadowing of Fedallah and his crew. Truncating it to \"I heard Stubb tell Flask—\" cuts the corroboration from Stubb and Flask and drops the phrase \"something of that sort in the wind,\" which carries both narrative and thematic weight as a wind/prophecy motif.",
+      "suggested_fix": "Restore the full speech, including the Stubb/Flask reference and the phrase \"something of that sort in the wind.\""
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Four medium-severity failures — loss of Cabaco's ethnic identification, flattening of two rhythmically signature dialogue lines, and truncation of the chapter's key foreshadowing speech — collectively constitute a regeneration-level failure."
+}

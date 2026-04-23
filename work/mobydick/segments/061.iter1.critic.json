@@ -1,0 +1,53 @@
+{
+  "segment_id": "061",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "As morning mowers, who side by side slowly and seethingly advance their scythes through the long wet grass of marshy meads; even so these monsters swam, making a strange, grassy, cutting sound; and leaving behind them endless swaths of blue upon the yellow sea.",
+      "source_locator": "Paragraph 3, the mowers simile",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most critically cited and anthologized similes in the chapter — its prosodic shape, the 'swaths of blue upon the yellow sea' close, and the 'strange, grassy, cutting sound' are textually distinctive and interpretively important as the pivot between pastoral beauty and oceanic menace. Its complete absence is a major signature failure.",
+      "suggested_fix": "Restore the full mowers simile verbatim, including 'making a strange, grassy, cutting sound' and 'endless swaths of blue upon the yellow sea,' as it is load-bearing both rhetorically and thematically."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Panting and snorting like a mad battle steed that has lost its rider, the masterless ocean overruns the globe.",
+      "source_locator": "Paragraph 10, end of the 'fiend to its own offspring' paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most recognizable sentences in the chapter — the battle-steed simile gives 'masterless ocean' its full rhetorical power; without it the phrase 'masterless ocean overruns the globe' is present but its signature vehicle is erased, gutting the force of the sentence.",
+      "suggested_fix": "Restore 'Panting and snorting like a mad battle steed that has lost its rider' verbatim immediately before 'the masterless ocean overruns the globe.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Like a savage tigress that tossing in the jungle overlays her own cubs, so the sea dashes even the mightiest whales against the rocks",
+      "source_locator": "Paragraph 10, 'fiend to its own offspring' section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The tigress simile is the rhetorical engine that makes the sea-as-fiend-to-its-own-offspring argument viscerally convincing; the draft preserves the bare claim but strips the imagery entirely, flattening a voice-defining passage.",
+      "suggested_fix": "Restore the tigress simile before 'so the sea dashes even the mightiest whales against the rocks.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "though, by vast odds, the most terrific of all mortal disasters have immemorially and indiscriminately befallen tens and hundreds of thousands of those who have gone upon the waters; though but a moment's consideration will teach, that however baby man may brag of his science and skill",
+      "source_locator": "Paragraph 7, the long 'though…nevertheless' periodic sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Baby man may brag of his science and skill' is a distinctively ironic, register-defining phrase; its omission, along with 'for ever and for ever, to the crack of doom,' reduces the sweeping rhetorical period to a flat summary, losing the voice-establishing irony of the narrator.",
+      "suggested_fix": "Restore 'however baby man may brag of his science and skill' and 'for ever and for ever, to the crack of doom' within the periodic sentence to preserve the register and irony."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "though, by vast odds, the most terrific of all mortal disasters have immemorially and indiscriminately befallen tens and hundreds of thousands…Columbus sailed over numberless unknown worlds to discover his one superficial western one",
+      "source_locator": "Paragraph 7, Columbus clause",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Columbus clause — 'numberless unknown worlds to discover his one superficial western one' — is an interpretively rich inversion of the discovery narrative and a critically noted passage; its absence thins the philosophical argument of the paragraph.",
+      "suggested_fix": "Restore the Columbus clause within the 'terra incognita' sentence to preserve the ironic inversion that the sea contains more unknowns than any western discovery."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses two high-severity signatures (the morning-mowers simile and the battle-steed simile) and flattens three further medium-weight passages (tigress simile, 'baby man' irony, Columbus clause), collectively gutting the chapter's most distinctive voice-establishing and critically noted prose."
+}

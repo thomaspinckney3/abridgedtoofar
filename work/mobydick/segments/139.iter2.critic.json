@@ -1,0 +1,26 @@
+{
+  "segment_id": "139",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The unharming sharks, they glided by as if with padlocks on their mouths; the savage sea-hawks sailed with sheathed beaks.",
+      "source_locator": "penultimate paragraph, after 'floated on a soft and dirgelike main'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'padlocks on their mouths' image is one of the most critically celebrated and rhetorically distinctive phrases in the entire Epilogue — the 'unharming' and 'savage' epithets and the padlock conceit are all erased, leaving only bare factual residue. This is among the most quoted lines in the chapter.",
+      "suggested_fix": "Restore verbatim: 'The unharming sharks, they glided by as if with padlocks on their mouths; the savage sea-hawks sailed with sheathed beaks.' This line must not be compressed."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Buoyed up by that coffin, for almost one whole day and night, I floated on a soft and dirgelike main.",
+      "source_locator": "penultimate paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'One whole day and night' has a biblical, incantatory rhythm lost by the cut; 'floated' is more precisely elegiac than 'drifted,' which implies passivity without the funereal resonance.",
+      "suggested_fix": "Restore 'one whole day and night' and 'floated' rather than 'drifted.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The erasure of 'padlocks on their mouths' — the epilogue's most famous image — is a high-severity signature loss that requires regeneration."
+}

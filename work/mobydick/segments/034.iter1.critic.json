@@ -1,0 +1,53 @@
+{
+  "segment_id": "034",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Like a blazing fool, kept kicking at it. But what was still more curious, Flask—you know how curious all dreams are—through all this rage",
+      "source_locator": "Stubb's dream narration, paragraph 1",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical aside 'you know how curious all dreams are' is a small but characteristic voice marker; the 'blazing fool' epithet is rhetorically vivid. Their removal flattens Stubb's rambling, self-aware storytelling voice.",
+      "suggested_fix": "Restore 'like a blazing fool' and the 'you know how curious all dreams are' aside to preserve Stubb's vernacular digressive register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "That's what makes a blow from the hand, Flask, fifty times more savage to bear than a blow from a cane. The living member—that makes the living insult, my little man.",
+      "source_locator": "Stubb's dream narration, after 'a living thump and a dead thump'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The formulation 'The living member—that makes the living insult' is the philosophical kernel of the passage; it is the interpretive pivot of the whole insult-logic, and 'my little man' is a signature speech-habit of Stubb addressing Flask. Both are entirely absent.",
+      "suggested_fix": "Insert 'fifty times more savage… The living member—that makes the living insult, my little man' after the living/dead thump line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a sort of eating of his own gums like a chimney hag",
+      "source_locator": "Description of the merman muttering 'wise Stubb'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This grotesque simile is one of the most stylistically distinctive micro-images in the chapter; it gives the merman figure his uncanny quality and is the kind of odd, vivid comparator that defines Melville's descriptive register here.",
+      "suggested_fix": "Restore 'a sort of eating of his own gums like a chimney hag' when the merman's muttering is described."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "In old England the greatest lords think it great glory to be slapped by a queen, and made garter-knights of; but, be _your_ boast, Stubb, that ye were kicked by old Ahab, and made a wise man of.",
+      "source_locator": "Merman's argument, second half of his speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The garter-knight analogy is the rhetorical and satirical climax of the merman's argument—it is culturally allusive, ironically grandiose, and critically noted as encapsulating the chapter's meditation on hierarchy and deference. Its absence removes the passage's argumentative and comic peak.",
+      "suggested_fix": "Restore the garter-knight comparison verbatim or near-verbatim before the 'account his kicks honors' line."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "he all of a sudden seemed somehow, in some queer fashion, to swim off into the air. I snored; rolled over; and there I was in my hammock!",
+      "source_locator": "End of Stubb's dream narrative",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple-beat 'I snored; rolled over; and there I was in my hammock!' is a rhythmically crisp, comic close to the dream narrative; the draft replaces it with 'Stubb woke in his hammock,' erasing both the rhythm and the self-deprecating humor.",
+      "suggested_fix": "Restore the punchy three-beat sentence and the merman 'swimming off into the air' as the dream's exit."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton but flattens four signature passages—the 'living member/living insult' philosophical pivot, the garter-knight analogy (the merman's rhetorical climax), the chimney-hag simile, and Stubb's comic wake-up rhythm—constituting three or more medium-severity failures that collectively erase the chapter's voice and interpretive substance."
+}

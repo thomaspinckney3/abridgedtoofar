@@ -1,0 +1,53 @@
+{
+  "segment_id": "097",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Such a clearer! such a sweetener! such a softener! such a delicious molifier!",
+      "source_locator": "paragraph 3, after 'favourite cosmetic'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This anaphoric exclamatory series is one of the most tonally distinctive, voice-establishing passages in the chapter — the rhetorical exuberance is precisely what critics and readers cite as Melville's comic-ecstatic register. Its complete omission flattens the narrator's voice at a key moment.",
+      "suggested_fix": "Restore the verbatim exclamatory series 'Such a clearer! such a sweetener! such a softener! such a delicious molifier!' before the eels sentence."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "not placing it anywhere in the intellect or the fancy; but in the wife, the heart, the bed, the table, the saddle, the fireside, the country; now that I have perceived all this, I am ready to squeeze case eternally.",
+      "source_locator": "paragraph 6, 'Would that I could keep squeezing' paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The specific formulation 'not placing it anywhere in the intellect or the fancy' is interpretively central — it stages Ishmael's philosophical capitulation to the domestic and corporeal. The draft drops this framing clause entirely and also omits 'I am ready to squeeze case eternally,' which is the rhetorical payoff binding sperm-squeezing to a philosophy of happiness. This is a critically engaged passage that gets erased.",
+      "suggested_fix": "Restore 'not placing it anywhere in the intellect or the fancy; but in the wife, the heart...' and 'I am ready to squeeze case eternally' in their approximate verbatim form."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "It is plums of rubies, in pictures of citron. Spite of reason, it is hard to keep yourself from eating it. I confess, that once I stole behind the foremast to try it.",
+      "source_locator": "paragraph on 'Plum-pudding'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's confession of sneaking to taste the plum-pudding is a comic, characterizing moment of voice-driven digression. The draft reduces plum-pudding to a parenthetical phrase and loses all the descriptive color, the ironic Melvillean aside, and the royal-cutlet comparison.",
+      "suggested_fix": "Restore at minimum the narrator's confession ('I stole behind the foremast to try it') and the vivid color description ('plums of rubies, in pictures of citron') to preserve the comic-digressive voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "as much as to say,—Oh! my dear fellow beings, why should we longer cherish any social acerbities, or know the slightest ill-humor or envy! Come; let us squeeze hands all round; nay, let us all squeeze ourselves into each other",
+      "source_locator": "paragraph 5, 'Squeeze! squeeze! squeeze!' paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'Come;' and 'let us all squeeze ourselves into each other' — the progressive intensification ('all round' → 'into each other' → 'universally') is the rhetorical climax of the passage and a famous interpretive crux for readings of homoerotic or communitarian themes. 'Social acerbities' also loses its precision, becoming merely 'acerbities.'",
+      "suggested_fix": "Restore 'let us all squeeze ourselves into each other' as a distinct step before 'universally'; restore 'social acerbities, or know the slightest ill-humor or envy' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "It tasted something as I should conceive a royal cutlet from the thigh of Louis le Gros might have tasted, supposing him to have been killed the first day after the venison season",
+      "source_locator": "paragraph on 'Plum-pudding', after 'I stole behind the foremast'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Louis le Gros conceit is a signature Melvillean mock-erudite digression — precisely the kind of absurdist scholarly humor that defines the narrator's voice throughout. Its complete absence impoverishes the chapter's tonal register.",
+      "suggested_fix": "Include at least a compressed rendering of the Louis le Gros comparison to preserve the comic-pedantic register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses two high-severity signatures (the 'Such a clearer!' exclamatory series and the 'not placing it in the intellect or fancy / I am ready to squeeze case eternally' philosophical pivot) plus three medium-severity voice-flattenings, collectively stripping the chapter's most rhetorically and interpretively distinctive passages."
+}

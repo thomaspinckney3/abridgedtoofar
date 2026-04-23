@@ -1,0 +1,44 @@
+{
+  "segment_id": "076",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Didn't I tell you so?\" said Flask; \"yes, you'll soon see this right whale's head hoisted up opposite that parmacetti's.\"",
+      "source_locator": "Near end, after boats hailed to tow",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The line 'hoisted up opposite that parmacetti's' is characteristic Flask dialect and directly sets up the Locke/Kant allegory; the draft drops it, weakening the transition.",
+      "suggested_fix": "Restore Flask's exact words including 'opposite that parmacetti's' before the Locke/Kant passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"Do I suppose it? You'll know it before long, Flask...take it to the capstan, and give him such a wrenching and heaving, that his tail will come short off at the stump—do you see; and then, I rather guess when he finds himself docked in that queer fashion, he'll sneak off without the poor satisfaction of feeling his tail between his legs.\"",
+      "source_locator": "Long Stubb speech near end of dialogue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic grotesque detail—'sneak off without the poor satisfaction of feeling his tail between his legs'—is signature Melville burlesque; the draft truncates the speech and loses this punchline entirely.",
+      "suggested_fix": "Restore the tail-between-legs punchline and the ensuing rapid-fire exchange about selling the tail for an ox whip."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"And what will you do with the tail, Stubb?\" \"Do with it? Sell it for an ox whip when we get home;—what else?\" \"Now, do you mean what you say...\" \"Mean or not mean, here we are at the ship.\"",
+      "source_locator": "Final exchanges of the Stubb-Flask dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rapid-fire coda—ox-whip punchline and the dismissive 'Mean or not mean, here we are at the ship'—is a rhetorical cap on the comic theology; its absence flattens the scene's ending.",
+      "suggested_fix": "Restore the ox-whip exchange and Stubb's closing 'Mean or not mean, here we are at the ship' before the boats are hailed."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Did you ever notice how that tusk of his is a sort of carved into a snake's head, Stubb?",
+      "source_locator": "Flask's speech about Fedallah's tusk",
+      "draft_treatment": "absent",
+      "why_it_matters": "The snake's-head tusk detail is a specific Fedallah characterization motif; its loss slightly thins the devilry imagery that the scene is building.",
+      "suggested_fix": "Insert a brief mention of the snake's-head tusk in Flask's description of Fedallah."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves the key signatures (Locke/Kant, Fedallah shadow, core devil-swap dialogue), but suffers medium-level flattening in the comic tail-disposal exchanges and Flask's parmacetti line, with the ox-whip coda and the 'tail between his legs' punchline absent entirely."
+}

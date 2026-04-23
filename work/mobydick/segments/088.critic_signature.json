@@ -1,0 +1,53 @@
+{
+  "segment_id": "088",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the whale can only live by inhaling the disengaged air in the open atmosphere. Wherefore the necessity for his periodical visits to the upper world.",
+      "source_locator": "paragraph 2, on whale anatomy",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrasing 'periodical visits to the upper world' is characteristically Melvillean in its elevation and register; the draft skips this transitional reasoning entirely, jumping straight to spiracle anatomy.",
+      "suggested_fix": "Restore the sentence 'the whale can only live by inhaling the disengaged air in the open atmosphere. Wherefore the necessity for his periodical visits to the upper world' before the spiracle discussion."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But the Sperm Whale only breathes about one seventh or Sunday of his time.",
+      "source_locator": "paragraph after the 'seventy breaths' passage, standalone short paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'one seventh or Sunday of his time' is a memorably wry, voice-defining aphorism—the comic compression of a theological metaphor into anatomical fact is signature Melville. Its absence erases a distinct tonal beat.",
+      "suggested_fix": "Insert the standalone paragraph 'But the Sperm Whale only breathes about one seventh or Sunday of his time' after the 'fatal hazards of the chase' passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Seldom have I known any profound being that had anything to say to this world, unless forced to stammer out something by way of getting a living. Oh! happy that the world is such an excellent listener!",
+      "source_locator": "paragraph on the whale having no voice",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves the first clause but drops 'Oh! happy that the world is such an excellent listener!'—a sharp satirical aside of unmistakable voice. The exclamatory kicker is the entire point of the joke.",
+      "suggested_fix": "Restore the full line including 'Oh! happy that the world is such an excellent listener!' after 'forced to stammer for a living.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "And so, through all the thick mists of the dim doubts in my mind, divine intuitions now and then shoot, enkindling my fog with a heavenly ray. And for this I thank God; for all have doubts; many deny; but doubts or denials, few along with them, have intuitions.",
+      "source_locator": "final paragraph, before closing sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft compresses this to a single clause and omits 'And for this I thank God; for all have doubts; many deny; but doubts or denials, few along with them, have intuitions'—the precise rhythmic elaboration that gives the final meditation its theological weight.",
+      "suggested_fix": "Restore the full sequence 'And for this I thank God; for all have doubts; many deny; but doubts or denials, few along with them, have intuitions' before the closing 'Doubts of all things earthly' sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "like the grand Erie Canal—is furnished with a sort of locks (that open and shut) for the downward retention of air or the upward exclusion of water",
+      "source_locator": "paragraph on the spouting canal and the whale's lack of voice",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Erie Canal simile is a small but characteristic Melvillean analogy — the vernacular, infrastructural comparison applied to cetacean anatomy. Its loss mildly flattens the voice of the anatomical digression.",
+      "suggested_fix": "Restore 'like the grand Erie Canal—is furnished with a sort of locks (that open and shut)' in the spouting-canal sentence."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most major signatures, but loses the wry 'one seventh or Sunday' aphorism entirely, truncates the 'Oh! happy that the world is such an excellent listener!' kicker, and slightly flattens the closing theological meditation — three medium findings that fall just below the regeneration threshold."
+}

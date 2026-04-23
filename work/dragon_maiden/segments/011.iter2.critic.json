@@ -1,0 +1,35 @@
+{
+  "segment_id": "011",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "What would be a great blessing is to wake up from this horrible nightmare. Even knowing I had to go back to work would be better than this junk about lords and ladies, and curses and blessings with no benefit and plenty of punishment.",
+      "source_locator": "After 'What kind of a favor is that?' exchange, before 'His face softened'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended tirade is the heroine's signature voice in full flight—colloquial, self-deprecating, grounding the fantasy in mundane reality ('go back to work'). Its absence strips the scene of a key register-defining moment that distinguishes this narrator's comic, contemporary voice.",
+      "suggested_fix": "Restore the full rant verbatim or very closely: 'What would be a great blessing is to wake up from this horrible nightmare. Even knowing I had to go back to work would be better than this junk about lords and ladies, and curses and blessings with no benefit and plenty of punishment.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "His manner was quiet and calm, as though he spoke to a wild creature. I must admit I was ready to bolt out the window, even if the drop was a good sixty feet.",
+      "source_locator": "Paragraph beginning 'His manner was quiet and calm'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narratorial aside ('I must admit I was ready to bolt out the window, even if the drop was a good sixty feet') is a signature self-aware interjection that establishes the narrator's ironic, confessional tone and keeps the comedy alive during an otherwise tense exchange. Its loss flattens the heroine's perspective.",
+      "suggested_fix": "Reinsert the parenthetical narrative aside, either verbatim or equivalently, when the lord speaks 'quietly and calmly as though to a wild creature.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I snorted. That was getting to be a habit.",
+      "source_locator": "After 'The Lady's favor is a great blessing and is rarely given.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The self-aware aside ('That was getting to be a habit') is a small but characteristic marker of the narrator's self-deprecating comic voice; its repeated absence across this exchange contributes to cumulative voice erosion.",
+      "suggested_fix": "Restore the brief narratorial commentary when the heroine snorts in response to the dragon lord's insistence on the Lady's favor."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful, preserving most signature lines and plot beats, but loses two voice-establishing digressions mid-scene—the heroine's 'go back to work' tirade and the 'wild creature / sixty-foot drop' aside—that are medium-severity flattening of the narrator's signature comic register."
+}

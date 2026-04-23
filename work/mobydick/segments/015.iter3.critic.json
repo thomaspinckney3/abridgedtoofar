@@ -1,0 +1,53 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It is not down in any map; true places never are.",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This is among the most famous, most quoted sentences in Melville; it appears verbatim in the draft, so this is NOT a loss — flagging only to confirm preservation.",
+      "suggested_fix": "No action needed; preserved verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "like a flash he darted out; gained her side; with one backward dash of his foot capsized and sank his canoe; climbed up the chains; and throwing himself at full length upon the deck",
+      "source_locator": "paragraph 3 (canoe escape sequence)",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The rhythmically propulsive, semi-colon-driven action sequence is one of the most kinetically distinctive passages in the chapter; 'throwing himself at full length upon the deck' and the precise choreography are erased, losing the prose energy that makes the scene memorable.",
+      "suggested_fix": "Restore 'throwing himself at full length upon the deck, grappled a ring-bolt there' in the compressed sequence to preserve the physical and rhythmic signature."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Struck by his desperate dauntlessness, and his wild desire to visit Christendom, the captain at last relented, and told him he might make himself at home. But this fine young savage—this sea Prince of Wales, never saw the Captain's cabin.",
+      "source_locator": "paragraph 4, opening sentences",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Desperate dauntlessness' is a signature Melvillean coinage and 'this fine young savage—this sea Prince of Wales' carries the ironic, affectionate narrative voice; both are absent from the draft, which reduces the moment to bare plot.",
+      "suggested_fix": "Reinstate 'Struck by his desperate dauntlessness' and 'this fine young savage—this sea Prince of Wales' even at the cost of cutting elsewhere."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "he was fearful Christianity, or rather Christians, had unfitted him for ascending the pure and undefiled throne of thirty pagan Kings before him",
+      "source_locator": "paragraph 6",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'thirty pagan Kings before him' is interpretively significant (the depth of Queequeg's royal lineage and the tragic irony of his civilizing mission) and is dropped in the draft's compressed paraphrase, reducing a weighty sentence to a bare clause.",
+      "suggested_fix": "Restore 'thirty pagan Kings before him' in full; the phrase is short and earns its keep."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "And thus an old idolator at heart, he yet lived among these Christians, wore their clothes, and tried to talk their gibberish. Hence the queer ways about him, though now some time from home.",
+      "source_locator": "paragraph 5",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Hence the queer ways about him, though now some time from home' is a quietly ironic, characteristically Ishmaelian aside that explains the social texture of Queequeg's strangeness; its omission mildly flattens the narrator's voice.",
+      "suggested_fix": "Add 'Hence the queer ways about him, though now some time from home' after the gibberish sentence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses three medium-severity signature passages — the kinetic choreography of the canoe escape, 'desperate dauntlessness / fine young savage / sea Prince of Wales,' and 'thirty pagan Kings before him' — collectively constituting three medium findings that trigger regeneration under the rubric."
+}

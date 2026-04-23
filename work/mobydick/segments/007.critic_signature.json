@@ -5,49 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Let me try to explain them. When I was a child, I well remember a somewhat similar circumstance",
-      "source_locator": "paragraph 2, opening",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The self-interrupting, essayistic phrase 'Let me try to explain them' is characteristic Ishmael narrator-consciousness, signaling the digressive, ruminative voice; its omission flattens the register.",
-      "suggested_fix": "Restore 'My sensations were strange. Let me try to explain them.' verbatim before the childhood memory begins."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I lay there dismally calculating that sixteen entire hours must elapse before I could hope for a resurrection. Sixteen hours in bed! the small of my back ached to think of it.",
-      "source_locator": "paragraph 3, after 'got between the sheets'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "'The small of my back ached to think of it' is a voice-establishing comic-ironic aside and the Sixteen-hours repetition is a rhetorical signature; the draft drops the back-ache line entirely, losing the humor and the body-comedy.",
-      "suggested_fix": "Restore 'the small of my back ached to think of it' immediately after 'Sixteen hours in bed!'"
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "I got up, dressed, and softly going down in my stockinged feet, sought out my stepmother, and suddenly threw myself at her feet, beseeching her as a particular favour to give me a good slippering for my misbehaviour",
-      "source_locator": "paragraph 3, middle",
-      "draft_treatment": "absent",
-      "why_it_matters": "The episode of Ishmael begging for a beating as preferable to bed is a celebrated comic-grotesque moment that critics return to as evidence of Ishmael's ironic self-awareness; its complete omission is a significant interpretive loss.",
-      "suggested_fix": "Re-insert the slippering passage in compressed form, retaining the action of going downstairs and begging the stepmother."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Thinks I, Queequeg, under the circumstances, this is a very civilized overture; but, the truth is, these savages have an innate sense of delicacy, say what you will; it is marvellous how essentially polite they are.",
-      "source_locator": "paragraph 4, near end",
+      "source_passage": "feeling a great deal worse than I have ever done since, even from the greatest subsequent misfortunes",
+      "source_locator": "third paragraph, near end of childhood-memory sequence",
       "draft_treatment": "flattened",
-      "why_it_matters": "The ironic qualifier 'say what you will' and the editorial build-up are signature Ishmael voice on racial/cultural inversion; the draft reduces this to a bare paraphrase without the rhetoric, losing the ironic register.",
-      "suggested_fix": "Restore 'say what you will' and keep the full phrasing of the reflection, including Ishmael's admission of his own rudeness in staring."
+      "why_it_matters": "The phrase 'even from the greatest subsequent misfortunes' is a characteristic Ishmael aside that casts an ironic shadow over all his later trials, including the Pequod's fate; its omission removes interpretive resonance.",
+      "suggested_fix": "Restore 'even from the greatest subsequent misfortunes' after 'feeling worse than I have ever done since.'"
     },
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "He was just enough civilized to show off his outlandishness in the strangest possible manners. His education was not yet completed. He was an undergraduate.",
-      "source_locator": "paragraph 5, middle",
+      "class": "voice_flattening",
+      "source_passage": "if he had not been a small degree civilized, he very probably would not have troubled himself with boots at all; but then, if he had not been still a savage, he never would have dreamt of getting under the bed to put them on",
+      "source_locator": "fifth paragraph, 'neither caterpillar nor butterfly' passage",
       "draft_treatment": "absent",
-      "why_it_matters": "'He was an undergraduate' is a famous, critically-noted comic aphorism and a key moment of Ishmael's ironic anthropology; the entire caterpillar/butterfly/undergraduate passage is cut, losing a signature voice digression.",
-      "suggested_fix": "Restore the 'neither caterpillar nor butterfly… He was an undergraduate' sequence; it is short and carries significant voice weight."
+      "why_it_matters": "This is the logical punch-line of the 'undergraduate / transition stage' conceit—the rhetorical structure that makes Melville's civilisation-versus-savagery joke land. Without it, the caterpillar/butterfly metaphor hangs unresolved.",
+      "suggested_fix": "Restore the two-clause sentence beginning 'If he had not been a small degree civilized…' immediately after 'He was an undergraduate.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "no two parts of which were of one precise shade—owing I suppose to his keeping his arm at sea unmethodically in sun and shade, his shirt sleeves irregularly rolled up at various times",
+      "source_locator": "first paragraph, describing the tattooed arm",
+      "draft_treatment": "absent",
+      "why_it_matters": "The parenthetical explanation is a characteristic Ishmaelian pseudo-scientific aside that establishes the narrator's observational voice; its removal slightly flattens the quilt-arm comparison.",
+      "suggested_fix": "Reinsert the explanatory clause about sun and shade after 'Cretan labyrinth of a figure' to preserve the narrator's digressive voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "and the sound of gay voices all over the house",
+      "source_locator": "third paragraph, describing what Ishmael hears while confined to bed",
+      "draft_treatment": "absent",
+      "why_it_matters": "The detail completes the sensory trio (light, coaches, voices) that intensifies the child's misery; its omission mildly weakens the accumulative effect.",
+      "suggested_fix": "Add 'and the sound of gay voices all over the house' after 'a great rattling of coaches in the streets.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Afterwards I wondered the less at this operation when I came to know of what fine steel the head of a harpoon is made, and how exceedingly sharp the long straight edges are always kept",
+      "source_locator": "sixth paragraph, after the harpoon-shaving scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "The retrospective rationalisation is a small but voice-typical Ishmael coda that links the comic scene to the novel's larger world of whaling craft; its loss is minor but noticeable.",
+      "suggested_fix": "Append the sentence beginning 'Afterwards I wondered the less…' after 'Rogers's best cutlery with a vengeance.'"
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Five medium-severity losses—including the slippering episode, the 'small of my back' body-comedy, the 'He was an undergraduate' aphorism, and two key ironic narrative asides—collectively flatten Ishmael's voice and strip interpretively significant material from the segment."
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority verbatim passages faithfully but drops two medium-weight voice-establishing elaborations (the 'greatest subsequent misfortunes' aside and the boots-civilisation punchline) and three minor Ishmaelian digressions, none severe enough individually to require regeneration."
 }

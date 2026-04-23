@@ -1,0 +1,62 @@
+{
+  "segment_id": "077",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "you may fancy, for yourself, how it would fare with you, did you sideways survey objects through your ears",
+      "source_locator": "paragraph on whale's sideway vision, before 'bitterest foe' passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhetorical invitation — 'you may fancy, for yourself' — is a characteristic Ishmael move drawing the reader into a thought experiment; its absence flattens the narrator's distinctive pedagogical voice before the famous 'bitterest foe' sentence.",
+      "suggested_fix": "Restore 'you may fancy, for yourself, how it would fare with you, did you sideways survey objects through your ears' as a lead-in to the bitterest-foe passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the position of the whale's eyes corresponds to that of a man's ears; and you may fancy, for yourself",
+      "source_locator": "paragraph beginning 'Now, from this peculiar sideway position'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The analogy 'whale's eyes corresponds to that of a man's ears' is the logical setup that makes the subsequent 'bitterest foe' image legible as argument, not mere rhetoric; dropping it creates a small but real interpretive gap.",
+      "suggested_fix": "Include the ears/eyes analogy sentence before the thirty-degrees-of-vision detail."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "which towers between them like a great mountain separating two lakes in valleys",
+      "source_locator": "paragraph beginning 'Moreover, while in most other animals'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This geological simile is stylistically distinctive and prosodically rich — a classic Melvillean scale-expansion; it is quietly dropped in the draft, which says only 'divided by many cubic feet of head.'",
+      "suggested_fix": "Restore the mountain/lakes simile when describing the head-mass separating the whale's eyes."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "alas! it proves to many a poor wight in the fishery, upon whom these spikes fall with impaling force",
+      "source_locator": "paragraph beginning 'But come out now, and look at this portentous lower jaw'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'poor wight' exclamatory aside is a minor but voice-carrying moment of ironic sympathy; its removal slightly deanimates the jaw description.",
+      "suggested_fix": "Retain 'alas! it proves to many a poor wight' after the portcullis simile."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "who must, no doubt, imprecate lock-jaws upon him",
+      "source_locator": "paragraph on the 'sulky whale' with hanging jaw",
+      "draft_treatment": "absent",
+      "why_it_matters": "This satirical punchline — imprecating lock-jaws — is a small but characteristic wit-flourish capping the hypochondriac-whale passage; its loss mildly flattens the humour.",
+      "suggested_fix": "Append 'who must, no doubt, imprecate lock-jaws upon him' to close the sulky-whale passage."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "furnishing a supply of that hard white whalebone with which the fishermen fashion all sorts of curious articles, including canes, umbrella-stocks, and handles to riding-whips",
+      "source_locator": "paragraph beginning 'In most cases this lower jaw'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The catalogue of domestic objects made from whalebone (canes, umbrella-stocks, riding-whips) is a signature inventory — connecting leviathan grandeur to mundane commerce — that Melville deploys throughout; its quiet omission erases that thematic resonance.",
+      "suggested_fix": "Include the list of whalebone articles (canes, umbrella-stocks, riding-whip handles) in the jaw/dentistry paragraph."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signature passages verbatim or near-verbatim, but drops several voice-carrying similes, rhetorical invitations, and ironic asides (mountain/lakes simile, 'you may fancy for yourself,' the lock-jaws punchline, the whalebone-objects catalogue) that together moderately flatten Ishmael's distinctive pedagogical and satirical register without rising to regeneration level."
+}

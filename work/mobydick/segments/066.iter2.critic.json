@@ -1,0 +1,35 @@
+{
+  "segment_id": "066",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "this critical act is not always unattended with the saddest and most fatal casualties",
+      "source_locator": "paragraph 3, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This understated, ironic closing sentence is a voice-defining moment — Melville's dry formality masking mortal danger. Its erasure removes the rhetorical punch and the narrator's characteristic deadpan.",
+      "suggested_fix": "Restore the sentence near-verbatim: 'But this critical act is not always unattended with the saddest and most fatal casualties.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "making a prodigious sensation in all directions. Nor, in general, is it possible to secure it again until the whale is fairly captured and a corpse.",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Prodigious sensation in all directions' is a comic-inflated Melvillean phrase with signature rhetorical excess; the draft replaces it with plain paraphrase, losing both voice and irony.",
+      "suggested_fix": "Restore 'making a prodigious sensation in all directions' rather than folding the second iron's behavior into a bare clause."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "All these particulars are faithfully narrated here, as they will not fail to elucidate several most important, however intricate passages, in scenes hereafter to be painted.",
+      "source_locator": "final paragraph, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This meta-narrative sentence is interpretively significant: it signals Melville's deliberate preparation of the reader for future action and asserts the narrator's architectonic control — the chapter's whole justification. Its absence removes the self-conscious narratorial frame that anchors the chapter's purpose.",
+      "suggested_fix": "Restore this closing sentence, at minimum as: 'All these particulars are narrated here as they will elucidate several important, intricate passages in scenes hereafter to be painted.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity failures — loss of the fatal-casualties understatement, erasure of 'prodigious sensation in all directions,' and complete omission of the closing meta-narrative sentence — collectively flatten the chapter's voice and strip its interpretive frame, triggering regeneration."
+}

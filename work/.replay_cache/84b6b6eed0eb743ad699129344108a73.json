@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T09:48:17",
+  "key": "84b6b6eed0eb743ad699129344108a73",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"floating_temporal_again\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Soothed again, but only soothed to deeper gloom, Ahab, who had sterned off from the whale, sat intently watching his final wanings from the now tranquil boat.\",\n    \"source_has\": \"Source Ch 119 context: 'Soothed again' refers back to the earlier soothing effect of the Bachelor's gaiety in Ch 118, but the draft of Ch 119 opens cold with 'Next day four whales were slain' and never depicts any preceding soothed state in this chapter.\",\n    \"why_damaged\": \"The word 'again' requires an earlier instance of Ahab being soothed within the reader's recent view, but the draft of Ch 119 opens with nothing but a battle summary, leaving 'again' without a referent in the compressed text.\"\n  },\n  {\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"\\\"Hast seen the White Whale?\\\" gritted Ahab.\",\n    \"source_has\": \"\\\"Hast seen the White Whale?\\\" gritted Ahab in reply.\",\n    \"why_damaged\": \"The dropped words 'in reply' are minor, but more critically the draft cuts 'in reply' which confirms the stimulus; however this is borderline\u2014the larger flag is that 'gritted Ahab in reply' in the source explicitly ties Ahab's line to the Bachelor commander's 'Come aboard' invitation, whereas the draft's bare 'gritted Ahab' leaves the interactional link to that preceding hail slightly weakened.\"\n  },\n  {\n    \"class\": \"cut_interactional_trigger\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"here, too, life dies sunwards full of faith; but see! no sooner dead, than death whirls round the corpse, and it heads another way.\\\"\",\n    \"source_has\": \"\\\"here, too, life dies sunwards full of faith; but see! no sooner dead, than death whirls round the corpse, and it heads some other way. / 'Oh, thou dark Hindoo half of nature\u2026Nor has this thy whale sunwards turned his dying head, and then gone round again, without a lesson to me.'\",\n    \"why_damaged\": \"The draft omits the explicit bridge sentence 'Nor has this thy whale sunwards turned his dying head, and then gone round again, without a lesson to me,' which is the stated trigger for everything Ahab addresses to the 'dark Hindoo half' in the next speech-turn; without it, the pivot from sun-worship to the dark counter-faith is interactionally unmotivated.\"\n  }\n]\n```",
+    "input_tokens": 4165,
+    "output_tokens": 675,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 14.414952039718628,
+    "stop_reason": "end_turn"
+  }
+}

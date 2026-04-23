@@ -1,0 +1,35 @@
+{
+  "segment_id": "090",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a herd of remorseless wild pirates and inhuman atheistical devils were infernally cheering him on with their curses;—when all these conceits had passed through his brain",
+      "source_locator": "paragraph beginning 'As if too long lurking behind the headlands'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'inhuman atheistical devils infernally cheering him on with their curses' is an interpretive keystone for Ahab's psychology — the irony that his enemies unwittingly accelerate his doom is the chapter's thematic punchline; the draft compresses it to 'when these conceits had passed,' erasing the specific charge.",
+      "suggested_fix": "Restore 'a herd of remorseless wild pirates and inhuman atheistical devils were infernally cheering him on with their curses' before 'his brow was left gaunt and ribbed'; the full clause earns the simile that follows."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Ahab's brow was left gaunt and ribbed, like the black sand beach after some stormy tide has been gnawing it, without being able to drag the firm thing from its place.",
+      "source_locator": "paragraph beginning 'As if too long lurking behind the headlands'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The closing clause 'without being able to drag the firm thing from its place' is the rhetorical payload of the simile — it names Ahab's immovability; dropping it reduces a signature image to mere description.",
+      "suggested_fix": "Restore the full simile verbatim: 'like the black sand beach after some stormy tide has been gnawing it, without being able to drag the firm thing from its place.'"
+    },
+    {
+      "severity": "low",
+      "class": "motif_depletion",
+      "source_passage": "Time out of mind the piratical proas of the Malays, lurking among the low shaded coves and islets of Sumatra, have sallied out upon the vessels sailing through the straits",
+      "source_locator": "third paragraph of source, before 'With a fair, fresh wind'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paragraph establishes the Malay threat that drives the chapter's central dramatic irony; its atmospheric voice ('piratical proas,' 'low shaded coves') is entirely dropped, leaving the pirates' appearance later without proper preparation.",
+      "suggested_fix": "Restore at least one sentence of the piratical-proas paragraph, including the lurking-in-coves image, before the Pequod's approach."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves most signatures faithfully, including the key lyrical and philosophical passages, but flattens the climactic Ahab-brow paragraph by omitting 'atheistical devils infernally cheering him on with their curses' and truncating the beach simile, reducing an interpretive keystone to atmospheric shorthand."
+}

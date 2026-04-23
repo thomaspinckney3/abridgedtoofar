@@ -6,57 +6,84 @@
       "severity": "high",
       "class": "signature_loss",
       "source_passage": "Ever and anon a bright, but, alas, deceptive idea would dart you through.—It's the Black Sea in a midnight gale.—It's the unnatural combat of the four primal elements.—It's a blasted heath.—It's a Hyperborean winter scene.—It's the breaking-up of the icebound stream of Time.",
-      "source_locator": "paragraph 2, description of the painting",
+      "source_locator": "paragraph 2, the extended meditation on the painting",
       "draft_treatment": "absent",
-      "why_it_matters": "This rhetorical cascade is one of the most distinctive and frequently quoted passages in the chapter, establishing the novel's habit of piling sublime interpretations and ironizing all of them; its absence erases a key voice-signature moment and flattens the painting episode to bare summary.",
-      "suggested_fix": "Restore the full 'dart you through' list verbatim between the sublimity sentence and the leviathan question; it is brief enough to include within compression budget and is non-negotiable for signature preservation."
+      "why_it_matters": "This rhetorically distinctive litany of guesses—with its dashes and escalating cosmic imagery—is among the most recognizable and critically discussed passages in the chapter; it establishes the painting as a figure for the novel's interpretive indeterminacy and is prosodically unique in Melville's repertoire.",
+      "suggested_fix": "Restore the full catalogue of guesses ('It's the Black Sea in a midnight gale … the breaking-up of the icebound stream of Time') verbatim or near-verbatim; the dash-separated list is the signature shape and cannot be paraphrased away."
     },
     {
       "severity": "high",
-      "class": "voice_erasure",
+      "class": "signature_loss",
+      "source_passage": "A boggy, soggy, squitchy picture truly, enough to drive a nervous man distracted.",
+      "source_locator": "paragraph 2, immediately after the description of the 'black mass'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is prosodically and lexically unique ('boggy, soggy, squitchy') and critically cited as exemplary of Melville's comic-sublime register; its erasure removes the tonal pivot that makes the painting passage work as both mock-sublime and genuinely portentous.",
+      "suggested_fix": "Restore verbatim: 'A boggy, soggy, squitchy picture truly, enough to drive a nervous man distracted.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "like another cursed Jonah (by which name indeed they called him), bustles a little withered old man, who, for their money, dearly sells the sailors deliriums and death.",
+      "source_locator": "public-room paragraph, bar description",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains 'deliriums and death' but omits '(by which name indeed they called him)'—the parenthetical is the interpretively loaded Jonah-naming, a motif that resonates throughout the novel, and the full sentence is critically cited for its biblical freight.",
+      "suggested_fix": "Restore the parenthetical '(by which name indeed they called him)' to preserve the Jonah-naming motif."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
       "source_passage": "Abominable are the tumblers into which he pours his poison. Though true cylinders without—within, the villanous green goggling glasses deceitfully tapered downwards to a cheating bottom. Parallel meridians rudely pecked into the glass, surround these footpads' goblets.",
-      "source_locator": "paragraph beginning 'Abominable are the tumblers'",
+      "source_locator": "paragraph immediately following the bar description",
       "draft_treatment": "absent",
-      "why_it_matters": "This is a fully self-contained satirical set piece with a rhetorically distinctive opening sentence ('Abominable are the tumblers') that is among the most stylistically recognizable in the chapter; its total omission removes a register-defining digression and the novel's first extended social satire.",
-      "suggested_fix": "Restore at minimum the opening sentence and the 'deceitfully tapered downwards to a cheating bottom' line with the Cape Horn measure; even a two-sentence condensation preserving the voice should be present."
-    },
-    {
-      "severity": "high",
-      "class": "voice_erasure",
-      "source_passage": "No man prefers to sleep two in a bed. In fact, you would a good deal rather not sleep with your own brother. I don't know how it is, but people like to be private when they are sleeping.",
-      "source_locator": "paragraph beginning 'No man prefers to sleep two in a bed'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This comic meditation on privacy and the indignity of shared sleeping is a sustained ironic digression that defines Ishmael's narrative voice and his habit of universalizing personal anxieties; its complete absence is a significant voice erasure.",
-      "suggested_fix": "Restore the opening lines and at least the comparison to 'bachelor Kings' and the hammock remark; the paragraph establishes Ishmael's comic register and cannot be reduced to zero."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Landlord, said I, going up to him as cool as Mt. Hecla in a snow-storm—landlord, stop whittling. You and I must understand one another, and that too without delay.",
-      "source_locator": "long speech paragraph, beginning 'Landlord, said I, going up to him as cool as Mt. Hecla'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This extended comic speech—formally legalistic yet absurdly overwrought—is a signature comic moment of the chapter, critically noted for its parody of rational argumentation in an irrational situation; 'a baffling exchange followed' erases it entirely.",
-      "suggested_fix": "Restore the Mt. Hecla simile and the key rhetorical moves of the speech, even in compressed form; at minimum the opening gambit and the criminal prosecution threat must appear."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "procured the plane; and with his old silk handkerchief first dusting the bench, vigorously set to planing away at my bed, the while grinning like an ape. The shavings flew right and left; till at last the plane-iron came bump against an indestructible knot.",
-      "source_locator": "paragraph beginning 'Just as you please; I'm sorry I can't spare ye a tablecloth'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The bench-planing scene is a memorable comic episode that develops the landlord's character and Ishmael's fussy anxiety; its complete omission removes a beat of physical comedy that the critical tradition regularly cites as exemplary of Melville's humor.",
-      "suggested_fix": "Add a sentence or two preserving the landlord's planing offer, the grinning-like-an-ape image, and Ishmael's observation about making eider down of a pine plank."
+      "why_it_matters": "This passage is a set-piece of Melville's satirical-moralistic voice—'footpads' goblets,' 'villanous green goggling glasses,' the fake measure marks—and is rhetorically and stylistically distinctive; its complete absence erases a voice-establishing digression critical to the chapter's tone.",
+      "suggested_fix": "Restore the tumblers passage in full or near-full; the 'footpads' goblets' and 'cheating bottom' phrasing is the signature and must survive."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "others were tufted with knots of human hair; and one was sickle-shaped, with a vast handle sweeping round like the segment made in the new-mown grass by a long-armed mower. You shuddered as you gazed, and wondered what monstrous cannibal and savage could ever have gone a death-harvesting with such a hacking, horrifying implement.",
-      "source_locator": "paragraph describing the opposite wall, clubs and spears",
+      "source_passage": "No man prefers to sleep two in a bed. In fact, you would a good deal rather not sleep with your own brother… sailors no more sleep two in a bed at sea, than bachelor Kings do ashore.",
+      "source_locator": "extended interior-monologue paragraph beginning 'No man prefers to sleep two in a bed'",
       "draft_treatment": "absent",
-      "why_it_matters": "The 'death-harvesting' mowing simile is one of the chapter's most stylistically distinctive figures, linking the weapons to agrarian violence in an uncanny register; its loss flattens the weapons wall to a bare mention.",
-      "suggested_fix": "Restore at minimum the sickle-shaped weapon with the mowing simile and 'death-harvesting' phrase, which require only two sentences."
+      "why_it_matters": "This comic-philosophical digression on privacy in sleep is a sustained voice passage that establishes Ishmael's rationalising consciousness; its omission flattens the interior monologue that is central to the chapter's comic structure.",
+      "suggested_fix": "Restore at least the opening proposition and the 'bachelor Kings' comparison to preserve the satirical register."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Bulkington! Bulkington! where's Bulkington?",
+      "source_locator": "paragraph describing the Grampus crew, near end of that section",
+      "draft_treatment": "absent",
+      "why_it_matters": "Bulkington's introduction—his brooding apart-ness, his physical description, and the repeated cry of his name—is an interpretively loaded passage (he is a figure critics return to repeatedly as an emblem of the novel's tragic dimension); the entire Bulkington episode is absent from the draft.",
+      "suggested_fix": "Restore the Bulkington passage: his physical description ('chest like a coffer-dam'), his slipping away unobserved, and the crew's repeated cry of his name."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the landlord procured the plane; and with his old silk handkerchief first dusting the bench, vigorously set to planing away at my bed, the while grinning like an ape. The shavings flew right and left; till at last the plane-iron came bump against an indestructible knot.",
+      "source_locator": "bench-planing episode, after Ishmael refuses to share the bed",
+      "draft_treatment": "absent",
+      "why_it_matters": "The bench-planing scene is the chapter's central comic set-piece; its complete absence removes a sustained passage of physical comedy and voice-establishing absurdist detail that critics treat as emblematic of Melville's comic mode.",
+      "suggested_fix": "Restore the planing scene, including 'grinning like an ape,' 'plane-iron came bump against an indestructible knot,' and Ishmael's reflection that no planing could 'make eider down of a pine plank.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "going up to him as cool as Mt. Hecla in a snow-storm—'landlord, stop whittling. You and I must understand one another… you persist in telling me the most mystifying and exasperating stories tending to beget in me an uncomfortable feeling towards the man whom you design for my bedfellow—a sort of connexion, landlord, which is an intimate and confidential one in the highest degree.'",
+      "source_locator": "Ishmael's long speech demanding an explanation about the harpooneer",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended mock-legal oration ('you sir, you I mean, landlord, you, sir, by trying to induce me… would thereby render yourself liable to a criminal prosecution') is a signature voice passage—Ishmael's comic-pompous register at its most sustained and distinctive.",
+      "suggested_fix": "Restore the speech in substantial form, particularly the 'Mt. Hecla' simile, the 'connexion, landlord' formulation, and the mock threat of criminal prosecution."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Ignorance is the parent of fear, and being completely nonplussed and confounded about the stranger, I confess I was now as much afraid of him as if it was the devil himself who had thus broken into my room at the dead of night.",
+      "source_locator": "paragraph beginning 'Even as it was, I thought something of slipping out of the window'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The aphorism 'Ignorance is the parent of fear' is a recognisable Melvillean sententia that anchors the comic-philosophical register of the scene; its loss mildly flattens the narrator's self-aware moralising voice.",
+      "suggested_fix": "Restore the sentence verbatim or close to verbatim as part of Ishmael's internal reaction to Queequeg."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft drops four high-severity signature passages—the painting's 'dart you through' catalogue, the tumblers satirical set piece, the 'No man prefers to sleep two in a bed' comic meditation, and the Mt. Hecla speech—plus two medium-severity losses (the bench-planing scene and the death-harvesting weapons description), collectively erasing the chapter's most distinctive comic voice-work and several of its most quoted lines."
+  "summary": "The draft has multiple high-severity signature losses—the 'boggy, soggy, squitchy' / litany-of-guesses painting passage, the tumblers/footpads'-goblets digression, and the Bulkington introduction—plus several medium-severity voice flattenings (bench-planing scene, Ishmael's mock-legal oration, the privacy-in-sleep digression) that together constitute a substantial erasure of the chapter's distinctive voice and interpretive content."
 }

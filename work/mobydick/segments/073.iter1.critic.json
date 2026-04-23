@@ -1,0 +1,71 @@
+{
+  "segment_id": "073",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "not the smallest atom stirs or lives on matter, but has its cunning duplicate in mind.",
+      "source_locator": "final paragraph, closing sentence of the chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's closing philosophical climax — a philosophically and critically canonical line about the correspondence between nature and mind; it is the interpretive keystone of the entire chapter and of Ahab's analogical mode of thought. Its absence eradicates the chapter's intellectual resolution.",
+      "suggested_fix": "Restore the full sentence verbatim as the chapter's closing line: 'not the smallest atom stirs or lives on matter, but has its cunning duplicate in mind.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "That head upon which the upper sun now gleams, has moved amid this world's foundations. Where unrecorded names and navies rust, and untold hopes and anchors rot; where in her murderous hold this frigate earth is ballasted with bones of millions of the drowned",
+      "source_locator": "Ahab's speech, paragraph 7",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full rhetorical architecture of this passage — 'upper sun,' 'world's foundations,' 'murderous hold,' 'bones of millions of the drowned' — is one of the most critically discussed passages in the novel. The draft silently drops 'upper sun,' 'world's foundations,' 'murderous hold,' and 'of the drowned,' collapsing a rhythmically and imagistically singular sentence into plain summary.",
+      "suggested_fix": "Restore the sentence as closely as possible: 'That head upon which the upper sun now gleams, has moved amid this world's foundations. Where unrecorded names and navies rust, and untold hopes and anchors rot; where in her murderous hold this frigate earth is ballasted with bones of millions of the drowned; there, in that awful water-land, there was thy most familiar home.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "hast slept by many a sailor's side, where sleepless mothers would give their lives to lay them down.",
+      "source_locator": "Ahab's speech, after 'most familiar home'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is among the most emotionally resonant lines in the speech and the chapter — 'sleepless mothers would give their lives to lay them down' is a verbatim-quality, widely noted passage. Its total omission removes a crucial human dimension from Ahab's cosmic elegy.",
+      "suggested_fix": "Restore the line verbatim within Ahab's speech, between 'most familiar home' and the locked-lovers passage."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "heart to heart they sank beneath the exulting wave; true to each other, when heaven seemed false to them.",
+      "source_locator": "Ahab's speech, after 'flaming ship'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause — 'true to each other, when heaven seemed false to them' — is one of the most quoted phrases from the speech and embodies the chapter's thematic concern with fidelity against cosmic indifference. Its omission reduces a philosophically loaded passage to a bare narrative sketch.",
+      "suggested_fix": "Restore verbatim: 'heart to heart they sank beneath the exulting wave; true to each other, when heaven seemed false to them.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "his murderers still sailed on unharmed—while swift lightnings shivered the neighboring ship that would have borne a righteous husband to outstretched, longing arms.",
+      "source_locator": "Ahab's speech, after 'insatiate maw'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic theodicy passage — the murderers spared while lightning destroys the righteous man's ship — is interpretively central to the chapter's challenge to providential justice and is critically well-noted. Its removal guts the moral-philosophical argument of the speech.",
+      "suggested_fix": "Restore the full clause verbatim: 'and his murderers still sailed on unharmed—while swift lightnings shivered the neighboring ship that would have borne a righteous husband to outstretched, longing arms.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "That lively cry upon this deadly calm might almost convert a better man.—Where away?",
+      "source_locator": "paragraph after 'Sail ho!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Ahab's wry, self-deprecating remark ('convert a better man') is character-defining voice and a well-noted ironic flourish. The draft replaces it with a bare 'Where away?' losing the irony entirely.",
+      "suggested_fix": "Restore Ahab's full response: '\"That lively cry upon this deadly calm might almost convert a better man.—Where away?\"'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "An intense copper calm, like a universal yellow lotus, was more and more unfolding its noiseless measureless leaves upon the sea.",
+      "source_locator": "paragraph after the crew goes to dinner",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains 'copper calm' and 'lotus-leaves' but loses 'universal yellow lotus,' 'noiseless measureless,' and the expansive unfolding rhythm — the sentence's distinctive Melvillean prose music and imagistic specificity are gone.",
+      "suggested_fix": "Restore as closely as compression allows: 'an intense copper calm, like a universal yellow lotus, more and more unfolding its noiseless measureless leaves upon the sea.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton but catastrophically truncates Ahab's speech, dropping the closing philosophical epigram, the 'sleepless mothers' line, the locked-lovers coda, the theodicy passage about the murderers and lightning, and erasing the chapter's final sentence — together removing the interpretive heart of one of Moby-Dick's most critically noted chapters."
+}

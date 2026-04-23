@@ -3,78 +3,78 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
+      "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "There Leviathan, Hugest of living creatures, in the deep Stretched like a promontory sleeps or swims, And seems a moving land; and at his gills Draws in, and at his breath spouts out a sea.",
-      "source_locator": "Second Paradise Lost extract, after 'That sea beast Leviathan' extract",
+      "source_passage": "The Indian Sea breedeth the most and the biggest fishes that are: among which the Whales and Whirlpooles called Balaene, take up as much in length as four acres or arpens of land.",
+      "source_locator": "early group, Holland's Pliny",
       "draft_treatment": "absent",
-      "why_it_matters": "This is the more famous and interpretively loaded of the two Paradise Lost extracts—'seems a moving land' is a critical touchstone for the novel's sublime-whale imagery and is widely quoted in Melville scholarship; its absence while the lesser extract is retained is a clear signature failure.",
-      "suggested_fix": "Restore verbatim: '—\"There Leviathan, Hugest of living creatures, in the deep Stretched like a promontory sleeps or swims, And seems a moving land; and at his gills Draws in, and at his breath spouts out a sea.\" —_Ibid_.' immediately after the first Paradise Lost extract."
+      "why_it_matters": "The Holland's Pliny extract contributes to the comic/encyclopedic range of sources Melville deliberately assembles; its archaic diction and absurd unit of measurement ('acres or arpens of land') are part of the tonal variety the Extracts establish.",
+      "suggested_fix": "Restore the Holland's Pliny extract in its original position among the early biblical/classical group."
     },
     {
-      "severity": "high",
+      "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "Mad with the agonies he endures from these fresh attacks, the infuriated Sperm Whale rolls over and over; he rears his enormous head, and with wide expanded jaws snaps at everything around him",
-      "source_locator": "Thomas Beale's History of the Sperm Whale extract, near end of source",
+      "source_passage": "Scarcely had we proceeded two days on the sea, when about sunrise a great many Whales and other monsters of the sea, appeared. Among the former, one was of a most monstrous size.... This came towards us, open-mouthed, raising the waves on all sides",
+      "source_locator": "early group, Tooke's Lucian / The True History",
       "draft_treatment": "absent",
-      "why_it_matters": "The Beale extract is the longest single quotation in EXTRACTS and is critically significant—it directly establishes the neglected scientific study of the sperm whale that Melville's cetological chapters implicitly answer; its absence removes a primary interpretive keystone for the whole book's project.",
-      "suggested_fix": "Restore the full Beale extract verbatim, including both the action description and the lament about the animal being 'so entirely neglected' by observers—this is too thematically load-bearing to cut."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Spain—a great whale stranded on the shores of Europe.",
-      "source_locator": "Edmund Burke (somewhere) extract, after the Parliament/Nantucket Burke extract",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is one of the most culturally famous individual lines in the entire EXTRACTS section—Burke's epigram is widely anthologized independently of Moby-Dick and its compression of geopolitical metaphor into whale-imagery is a signature moment; the draft keeps the less famous Burke quotation but drops the more famous one.",
-      "suggested_fix": "Restore: '\"Spain—a great whale stranded on the shores of Europe.\" —_Edmund Burke_. (_somewhere_.)' immediately after the Parliament Burke extract."
+      "why_it_matters": "The Lucian extract is an early instance of the whale-as-monster-approaching-open-mouthed image, a motif central to the book's symbolic economy; its absence thins the mythological register of the early Extracts.",
+      "suggested_fix": "Restore the Tooke's Lucian extract in its original sequence position."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
       "source_passage": "Let us fly, let us fly! Old Nick take me if it is not Leviathan described by the noble prophet Moses in the life of patient Job.",
-      "source_locator": "Rabelais extract, after Montaigne extract",
+      "source_locator": "middle group, Rabelais",
       "draft_treatment": "absent",
-      "why_it_matters": "The Rabelais extract is tonally distinctive and famous—its comic panic voice is unlike any other entry in the list and contributes to the tonal range that makes EXTRACTS itself a literary performance rather than a dry bibliography.",
-      "suggested_fix": "Restore: '\"Let us fly, let us fly! Old Nick take me if it is not Leviathan described by the noble prophet Moses in the life of patient Job.\" —_Rabelais_.' in its original position."
+      "why_it_matters": "The Rabelais extract is tonally distinctive—comic, profane, and carnivalesque—and its contrast with the biblical solemnity around it is part of Melville's deliberate range-setting in the Extracts.",
+      "suggested_fix": "Restore the Rabelais extract in its original sequence position."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "The Cachalot (Sperm Whale) is not only better armed than the True Whale (Greenland or Right Whale) in possessing a formidable weapon at either extremity of its body, but also more frequently displays a disposition to employ these weapons offensively",
-      "source_locator": "Frederick Debell Bennett's Whaling Voyage extract, after Beale extract",
+      "source_passage": "Which to secure, no skill of leach's art Mote him availle, but to returne againe To his wound's worker, that with lowly dart, Dinting his breast, had bred his restless paine, Like as the wounded whale to shore flies thro' the maine.",
+      "source_locator": "middle group, The Fairie Queen",
       "draft_treatment": "absent",
-      "why_it_matters": "The Bennett extract establishes the sperm whale as uniquely dangerous—a claim that underpins the entire novel's premise; its presence alongside Beale creates the authoritative scientific framing for Moby Dick's threat, and cutting both Beale and Bennett together removes this framing entirely.",
-      "suggested_fix": "Restore the Bennett extract verbatim after the Beale extract; at minimum include the characterization of the Cachalot as 'the most dangerous to attack of all the known species of the whale tribe.'"
+      "why_it_matters": "The Spenser extract is prosodically distinctive (archaic spelling, Spenserian register) and introduces the 'wounded whale' motif that resonates throughout the novel; its loss removes an important literary-historical layer.",
+      "suggested_fix": "Restore The Fairie Queen extract verbatim, preserving archaic spelling."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "What spermacetti is, men might justly doubt, since the learned Hosmannus in his work of thirty years, saith plainly, Nescio quid sit.",
-      "source_locator": "Sir T. Browne extract, after Davenant extract",
+      "source_passage": "Spain—a great whale stranded on the shores of Europe.",
+      "source_locator": "middle group, Edmund Burke (somewhere)",
       "draft_treatment": "absent",
-      "why_it_matters": "Sir Thomas Browne is a known stylistic influence on Melville and this extract's learned irony—thirty years of study yielding 'I don't know what it is'—is a voice-signature moment; it also thematically prefigures the novel's epistemological uncertainty about the whale.",
-      "suggested_fix": "Restore the Sir T. Browne extract verbatim, preserving the Latin tag 'Nescio quid sit' which is essential to its ironic force."
+      "why_it_matters": "This is among the most quotable single lines in the Extracts—Burke's metaphor extending whale-meaning into geopolitics—and the parenthetical '(somewhere)' is itself a signature Melvillean comic gesture.",
+      "suggested_fix": "Restore the Burke 'Spain' extract and its attributed '(somewhere)' in full."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "And what thing soever besides cometh within the chaos of this monster's mouth, be it beast, boat, or stone, down it goes all incontinently that foul great swallow of his, and perisheth in the bottomless gulf of his paunch.",
-      "source_locator": "Holland's Plutarch's Morals extract, after Tooke's Lucian extract",
+      "source_passage": "It is a matter of great astonishment that the consideration of the habits of so interesting, and, in a commercial point of view, so important an animal (as the Sperm Whale) should have been so entirely neglected",
+      "source_locator": "late group, Thomas Beale — second half of the extract",
       "draft_treatment": "absent",
-      "why_it_matters": "This is one of the most rhetorically distinctive lines in the early portion of EXTRACTS—'the bottomless gulf of his paunch' and the tricolon 'beast, boat, or stone' give it a Rabelaisian energy that establishes the monster's all-consuming nature central to the novel's symbolic architecture.",
-      "suggested_fix": "Restore the Holland's Plutarch extract verbatim in its original position after the early scriptural extracts."
+      "why_it_matters": "The Beale extract's second half—its aside on the astonishing neglect of the Sperm Whale's habits—carries interpretive weight as a meta-commentary on the book's own project; cutting it leaves only the action description and loses the reflective dimension.",
+      "suggested_fix": "Restore the full Beale extract including the 'matter of great astonishment' passage."
     },
     {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Io! Paean! Io! sing. To the finny people's king. Not a mightier whale than this In the vast Atlantic is; Not a fatter fish than he, Flounders round the Polar Sea.",
-      "source_locator": "Charles Lamb's Triumph of the Whale extract",
+      "severity": "low",
+      "class": "other",
+      "source_passage": "In the free element beneath me swam, Floundered and dived, in play, in chace, in battle, Fishes of every colour, form, and kind; Which language cannot paint",
+      "source_locator": "middle group, Montgomery's World before the Flood",
       "draft_treatment": "absent",
-      "why_it_matters": "Charles Lamb's mock-heroic whale poem is one of the few comic-celebratory entries in EXTRACTS and its inclusion by Melville is a deliberate tonal choice; the 'Io! Paean!' opening is immediately recognizable and its loss flattens the emotional register of the compilation.",
-      "suggested_fix": "Restore the Lamb extract verbatim; it is short enough to fit within any reasonable compression budget."
+      "why_it_matters": "The Montgomery verse is a sustained poetic extract that broadens the register; its 'which language cannot paint' phrase anticipates Melville's own claims about the whale's ineffability.",
+      "suggested_fix": "Consider restoring the Montgomery extract if word budget permits."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "No, Sir, 'tis a Right Whale,",
+      "I saw his sprout; he threw up a pair of as pretty rainbows as a Christian would wish to look at. He's a raal oil-butt, that fellow!": "source_locator\": \"late group, Cooper's Pilot",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Cooper extract introduces vernacular sailor speech and the Right Whale / Sperm Whale distinction early, both recurring concerns in the novel.",
+      "suggested_fix": "Restore the Cooper's Pilot extract if budget allows."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft retains roughly 40% of the source extracts and omits multiple high- and medium-priority signatures including the second (more famous) Paradise Lost extract, the thematically critical Beale passage, Burke's 'Spain' epigram, and several voice-distinctive entries (Rabelais, Lamb, Sir T. Browne) that together constitute the literary and interpretive character of the EXTRACTS section."
+  "summary": "The draft preserves most of the highest-profile extracts verbatim but silently drops a significant number of mid-sequence entries—Rabelais, Spenser, Burke ('Spain'), Holland's Pliny, Tooke's Lucian, Montgomery, Cooper, and truncates Beale—producing five medium-severity losses that together trigger regeneration."
 }

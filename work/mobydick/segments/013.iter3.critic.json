@@ -1,0 +1,44 @@
+{
+  "segment_id": "013",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "All this struck me as mighty singular; yet, upon second thoughts, there was something almost sublime in it.",
+      "source_locator": "paragraph beginning 'But savages are strange beings'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This pivot sentence is Ishmael's interpretive hinge between noticing Queequeg's aloofness and the rapturous Cape Horn reflection; without it the philosophical flight feels unmotivated and the narrator's characteristic move from perception to wonder is erased.",
+      "suggested_fix": "Restore 'All this struck me as mighty singular; yet, upon second thoughts, there was something almost sublime in it.' immediately before the Cape Horn passage to preserve the rhetorical escalation."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he seemed entirely at his ease; preserving the utmost serenity; content with his own companionship; always equal to himself. Surely this was a touch of fine philosophy; though no doubt he had never heard there was such a thing as that.",
+      "source_locator": "paragraph beginning 'But savages are strange beings'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's exact phrase 'Surely this was a touch of fine philosophy; though no doubt he had never heard there was such a thing as that' is the ironic payoff of the paragraph; the draft replaces it with 'Surely there was fine philosophy there, unknowing itself,' erasing the deadpan Melvillean wit of 'he had never heard there was such a thing.'",
+      "suggested_fix": "Restore verbatim: 'Surely this was a touch of fine philosophy; though no doubt he had never heard there was such a thing as that.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "content with his own companionship; always equal to himself",
+      "source_locator": "paragraph beginning 'But savages are strange beings'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft inadvertently duplicates this phrase—once in the compressed middle section and again verbatim inside the Cape Horn block—creating a redundancy that slightly muddles the prose rhythm without being a true loss.",
+      "suggested_fix": "Remove the first instance ('seemed content with his own companionship—equal to himself') so the phrase appears only once, inside the verbatim Cape Horn passage where it belongs."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "especially considering the affectionate arm I had found thrown over me upon waking in the morning, I thought this indifference of his very strange",
+      "source_locator": "paragraph beginning 'Whilst I was thus closely scanning him'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The callback to the previous night's accidental embrace is a small but characterful beat of Ishmael's embarrassed sociability; its omission removes a thread of continuity with Chapter 12.",
+      "suggested_fix": "Add a brief clause noting the indifference seemed strange given the affectionate arm of the previous morning, even if compressed."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "All canonical signature passages are preserved, but two medium-severity losses—the 'almost sublime' pivot and the exact ironic phrasing of the 'fine philosophy' sentence—flatten Ishmael's characteristic movement from observation to wit; the draft passes but should restore those two phrases in any revision pass."
+}

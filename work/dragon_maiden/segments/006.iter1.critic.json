@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "Night beat me to the stoop of my apartment building, and with it came its friends shadow and darkness.",
-      "source_locator": "paragraph 1",
+      "source_locator": "Paragraph 1",
       "draft_treatment": "flattened",
-      "why_it_matters": "The personification of night bringing 'its friends shadow and darkness' is a small but voice-establishing rhetorical flourish that sets the narrator's wry, slightly gothic register; the draft drops the personification entirely.",
-      "suggested_fix": "Restore the 'with it came its friends shadow and darkness' construction, or something close to it, in the opening sentence."
+      "why_it_matters": "The personification 'its friends shadow and darkness' is a small but rhythmically distinctive piece of voice-establishing prose; the draft drops 'its friends' and substitutes 'silence,' erasing both the rhetorical figure and the narrator's wry tone.",
+      "suggested_fix": "Restore 'its friends shadow and darkness' verbatim in the opening paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Hulking shadows of trashcans and broken boxes stared back at me. Puddles reflected the darkness that was only broken by a few feeble attempts by the streetlights to illuminate the deep interior.",
+      "source_locator": "Paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The personification 'stared back at me' and the wryly hyperbolic 'feeble attempts by the streetlights to illuminate the deep interior' both carry the narrator's signature ironic register; the draft compresses this to a flat list ('Boxes, cans, a few feeble streetlights reflecting off puddles') stripping both the stare-personification and the extended metaphor.",
+      "suggested_fix": "Restore 'hulking shadows…stared back at me' and the 'feeble attempts by the streetlights' phrasing to preserve the alley's menacing-yet-wry character."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My furious thoughts gave way to a loose grasp of consciousness. My head began to spin along with the room. In a moment I was knocked clean out.",
+      "source_locator": "Final three sentences",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'My furious thoughts' and 'a loose grasp of consciousness' establish interior resistance and are tonally distinct; the source's three-beat closing ('furious thoughts / loose grasp / knocked clean out') is a recognizable rhythmic close. The draft renders it as 'Thoughts unraveled; the room tilted. Darkness took me cleanly.' — a poetic substitute that erases the specific 'furious thoughts' interiority and the colloquial 'knocked clean out.'",
+      "suggested_fix": "Restore 'My furious thoughts gave way to a loose grasp of consciousness' and the colloquial closing 'knocked clean out' to preserve both the interior voice and the chapter's tonal landing."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "The damn key wouldn't come out. There! It separated from the others.",
-      "source_locator": "paragraph 5 (fumbling with key chain)",
+      "source_passage": "My one-bedroom apartment was on the third floor with a lovely view of the fire escape and the neighboring brick building.",
+      "source_locator": "Paragraph 7",
       "draft_treatment": "flattened",
-      "why_it_matters": "The staccato interjection 'There!' is a tiny but distinctive voice marker conveying the narrator's panicked internal monologue; its removal smooths away one of the few moments of pure free indirect style in the chapter.",
-      "suggested_fix": "Re-insert 'The damn key wouldn't come out. There!' to preserve the rhythm and the panicked internal-voice beat."
+      "why_it_matters": "The dry irony of 'a lovely view of the fire escape and the neighboring brick building' is a small character beat; the draft substitutes 'a friendly brick wall,' losing 'lovely view' and compressing the joke.",
+      "suggested_fix": "Restore 'a lovely view of the fire escape and the neighboring brick building' to keep the narrator's self-deprecating irony intact."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "My furious thoughts gave way to a loose grasp of consciousness.",
-      "source_locator": "penultimate paragraph (cloth scene)",
-      "draft_treatment": "absent",
-      "why_it_matters": "The phrase 'furious thoughts gave way to a loose grasp of consciousness' conveys the narrator's inward resistance even while physically paralysed, an interpretive detail about her will vs. her body. The draft replaces it with 'Thought unraveled,' losing both the fury and the loosening-grip image.",
-      "suggested_fix": "Restore 'my furious thoughts gave way to a loose grasp of consciousness' or keep the 'furious' qualifier so the narrator's defiant interiority is not erased."
+      "source_passage": "Its only reaction was tears that pooled in my eyes and slid down my cheeks.",
+      "source_locator": "Second-to-last paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'its only reaction' distancing Miriam from her own body is an interpretively important moment of helpless dissociation; the draft has 'Tears slid from my unblinking eyes,' which conveys the image but loses the dissociative grammar that makes the paralysis vivid.",
+      "suggested_fix": "Restore the subject-shift 'Its only reaction was tears that pooled in my eyes' to preserve the bodily-dissociation effect."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; three low-severity voice-flattening instances (night's personification, the panicked 'There!', and 'furious thoughts') are present but collectively insufficient to require regeneration."
+  "summary": "No high-severity signature losses; two medium-severity voice flattenings (alley personification and closing interiority) and three low-severity irony/register erosions are present but insufficient individually to mandate regeneration under the rubric."
 }

@@ -1,0 +1,53 @@
+{
+  "segment_id": "105",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Oh, busy weaver! unseen weaver!—pause!—one word!—whither flows the fabric? what palace may it deck? wherefore all these ceaseless toilings? Speak, weaver!—stay thy hand!—but one single word with thee! Nay—the shuttle flies",
+      "source_locator": "paragraph beginning 'It was a wondrous sight'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This apostrophe to the weaver is one of the most critically discussed passages in the novel—its anaphoric, incantatory rhetoric enacting the very indifference it laments. The draft collapses it to 'Oh, busy weaver—whither flows the fabric?' losing the rhetorical escalation, the unanswered questions, the 'Nay—the shuttle flies' turn, and all of the signature prosody.",
+      "suggested_fix": "Restore the full apostrophe sequence verbatim or near-verbatim: 'Oh, busy weaver! unseen weaver!—pause!—one word!—whither flows the fabric?… Nay—the shuttle flies—the figures float from forth the loom.' This is non-negotiable signature material."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "For even so it is in all material factories. The spoken words that are inaudible among the flying spindles; those same words are plainly heard without the walls, bursting from the opened casements. Thereby have villainies been detected. Ah, mortal! then, be heedful; for so, in all this din of the great world's loom, thy subtlest thinkings may be overheard afar.",
+      "source_locator": "end of the weaver paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the interpretive payload of the entire weaver passage—the moral and philosophical extension from natural observation to human conscience and surveillance. It carries enormous interpretive weight (the loom as cosmic eavesdropper) and is entirely absent from the draft.",
+      "suggested_fix": "Restore this paragraph in full or near-full; it is the thematic climax of the weaver digression and cannot be cut without destroying the passage's reason for existing."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "But how now, Ishmael? How is it, that you, a mere oarsman in the fishery, pretend to know aught about the subterranean parts of the whale?… Can you land a full-grown whale on your deck for examination, as a cook dishes a roast-pig?",
+      "source_locator": "paragraph 2, the self-interrogation",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This self-interrogative paragraph is a defining instance of Ishmael's self-undermining, ironic voice—addressing himself in the second person, questioning his own authority with comic rhetorical escalation. The draft reduces it to a dash and half-sentence, erasing the sustained voice-establishing irony entirely.",
+      "suggested_fix": "Restore the self-interrogation ('But how now, Ishmael?… Can you land a full-grown whale on your deck for examination, as a cook dishes a roast-pig? Surely not…') at minimum preserving the roast-pig simile and the 'privilege of Jonah' formulation."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "the wood was green as mosses of the Icy Glen; the trees stood high and haughty, feeling their living sap; the industrious earth beneath was as a weaver's loom, with a gorgeous carpet on it, whereof the ground-vine tendrils formed the warp and woof, and the living flowers the figures.",
+      "source_locator": "opening of the weaver paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This extended simile establishing the loom-of-nature conceit is stylistically distinctive and necessary to motivate the apostrophe. The draft jumps straight to 'The wood was a weaver's loom' without the elaboration, losing the specific botanical imagery and rhetorical buildup.",
+      "suggested_fix": "Restore at minimum: 'the wood was green as mosses of the Icy Glen… the industrious earth beneath was as a weaver's loom, whereof the ground-vine tendrils formed the warp and woof, and the living flowers the figures.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the skeleton dimensions I shall now proceed to set down are copied verbatim from my right arm, where I had them tattooed… I did not trouble myself with the odd inches; nor, indeed, should inches at all enter into a congenial admeasurement of the whale.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the tattoo detail but omits the key comic clause—'wished the other parts of my body to remain a blank page for a poem I was then composing'—which is a memorably absurd Ishmaelean aside that establishes the comic register closing the chapter.",
+      "suggested_fix": "Restore: 'I was crowded for space, and wished the other parts of my body to remain a blank page for a poem I was then composing.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft commits two high-severity losses—the full weaver apostrophe with its moral payload is gutted, and the self-interrogation paragraph establishing Ishmael's ironic voice is erased—plus two medium-severity flattenings; regeneration is required."
+}

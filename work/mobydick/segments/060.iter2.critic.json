@@ -1,0 +1,62 @@
+{
+  "segment_id": "060",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Some of them have little boxes of dentistical-looking implements, specially intended for the skrimshandering business. But, in general, they toil with their jack-knives alone",
+      "source_locator": "paragraph 2, scrimshander passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'dentistical-looking implements' detail is a characteristic Melvillean comic aside that establishes the narrator's voice; its loss flattens the passage into bare summary.",
+      "suggested_fix": "Restore 'Some of them have little boxes of dentistical-looking implements' before the jack-knife line to preserve the comic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "they will turn you out anything you please, in the way of a mariner's fancy",
+      "source_locator": "paragraph 2, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing flourish is a voice-defining phrase that gives the scrimshander paragraph its warm, admiring conclusion; dropping it leaves the paragraph truncated without a landing.",
+      "suggested_fix": "Append 'and with that almost omnipotent tool of the sailor, they will turn you out anything you please, in the way of a mariner's fancy' to the scrimshander paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "For, with but a bit of broken sea-shell or a shark's tooth, that miraculous intricacy of wooden net-work has been achieved; and it has cost steady years of steady application.",
+      "source_locator": "paragraph 4, Hawaiian war-club passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the argumentative and rhetorical pivot of the Hawaiian–sailor-savage comparison; omitting it removes the evidence that makes the Latin-lexicon analogy persuasive.",
+      "suggested_fix": "Insert the sea-shell/steady-application sentence between the Latin-lexicon comparison and the transition to the white sailor-savage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "When the porter is sleepy, the anvil-headed whale would be best. But these knocking whales are seldom remarkable as faithful essays.",
+      "source_locator": "paragraph 7, brass-whale knockers",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'porter is sleepy / anvil-headed whale' quip is a signature Melvillean comic digression; its erasure strips the catalogue of its characteristic wry humor.",
+      "suggested_fix": "Restore 'When the porter is sleepy, the anvil-headed whale would be best. But these knocking whales are seldom remarkable as faithful essays.' in the knockers sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "besides that are to all intents and purposes so labelled with \"Hands off!\" you cannot examine them closely enough to decide upon their merit.",
+      "source_locator": "paragraph 7, sheet-iron whales on spires",
+      "draft_treatment": "absent",
+      "why_it_matters": "The parenthetical 'Hands off!' label is a dry joke that defines the tone of the whole catalogue; compressing it to a bare list erases the ironic commentary on these unexaminable specimens.",
+      "suggested_fix": "Add the 'Hands off! / cannot examine them closely enough' clause when mentioning the spire weather-cocks."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "to see whether the fabled heavens with all their countless tents really lie encamped beyond my mortal sight!",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The final clause 'to see whether the fabled heavens with all their countless tents really lie encamped beyond my mortal sight!' is the chapter's cosmic climax; without it the closing sentence ends mid-gesture.",
+      "suggested_fix": "Restore the full final sentence: 'would I could mount that whale and leap the topmost skies, to see whether the fabled heavens with all their countless tents really lie encamped beyond my mortal sight!'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton and several key verbatim passages but consistently strips the comic asides and rhetorical elaborations that give the catalogue its Melvillean voice, with four medium-severity voice-flattening losses triggering the regenerate threshold."
+}

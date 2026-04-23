@@ -1,0 +1,53 @@
+{
+  "segment_id": "011",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "immediately as the storm-pelted door flew back upon admitting him, a quick regardful eyeing of him by all the congregation, sufficiently attested that this fine old man was the chaplain.",
+      "source_locator": "paragraph 1, opening sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence establishes the communal, atmospheric entrance of Mapple through Ishmael's characteristically oblique observation of the congregation's reaction — a voice-defining moment of indirect narration that the draft replaces with a bare physical description.",
+      "suggested_fix": "Restore the image of the congregation's 'quick regardful eyeing' attesting Mapple's identity; this is interpretively significant as Ishmael learns who Mapple is through collective witness, not direct statement."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "there must be some sober reason for this thing; furthermore, it must symbolize something unseen. Can it be, then, that by that act of physical isolation",
+      "source_locator": "paragraph 4, Ishmael's meditation on the ladder",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Ishmael's explicit interpretive process — his deliberation, his rejection of 'mere tricks of the stage,' his arriving at a symbolic reading — is a key instance of his hermeneutic character. The draft collapses this into a bare rhetorical question, erasing the reasoning.",
+      "suggested_fix": "Restore at least the sentence 'there must be some sober reason for this thing; furthermore, it must symbolize something unseen' before the isolation question, to preserve Ishmael's interpretive voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Father Mapple enjoyed such a wide reputation for sincerity and sanctity, that I could not suspect him of courting notoriety by any mere tricks of the stage.",
+      "source_locator": "paragraph 4",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line performs Ishmael's characteristic generous yet analytical regard for Mapple, and the phrase 'tricks of the stage' carries rhetorical and thematic weight contrasting theatrical religion with genuine spiritual act.",
+      "suggested_fix": "Reinsert the sentence about Mapple's 'wide reputation for sincerity and sanctity' and the dismissal of 'mere tricks of the stage' before the symbolic interpretation of the ladder."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the architect, it seemed, had acted upon the hint of Father Mapple, and finished the pulpit without a stairs, substituting a perpendicular side ladder, like those used in mounting a ship from a boat at sea.",
+      "source_locator": "paragraph 2",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The detail that the architect acted on Mapple's hint underscores Mapple's long influence on the chapel's nautical character, a small but interpretively resonant fact that the draft omits.",
+      "suggested_fix": "Add a brief clause noting the architect acted on Mapple's hint when describing the ladder substitution."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "something like that silver plate now inserted into the Victory's plank where Nelson fell.",
+      "source_locator": "paragraph 5, description of the painting",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Nelson simile is a distinctively Melvillean historical-maritime cross-reference that enriches the painting's meaning and exemplifies Ishmael's digressive associative style.",
+      "suggested_fix": "Restore the Nelson comparison after 'radiance upon the tossed deck' to preserve the characteristic allusive texture."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signatures (Ehrenbreitstein, Quebec, angel speech, prow peroration) but flattens Ishmael's hermeneutic reasoning over the ladder and erases several voice-establishing sentences, producing three medium findings that collectively weaken the chapter's interpretive and atmospheric depth without reaching the regeneration threshold."
+}

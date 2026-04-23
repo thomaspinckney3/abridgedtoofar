@@ -1,0 +1,53 @@
+{
+  "segment_id": "061",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "But it was only the sound they made as they parted the brit which at all reminded one of mowers.",
+      "source_locator": "Paragraph after the mowers simile / footnote",
+      "draft_treatment": "absent",
+      "why_it_matters": "This transition sentence explicitly qualifies and complicates the mowers simile before pivoting to the visual description; its omission erases the narrator's ironic, corrective voice-move that is characteristic of Melville's digressive style.",
+      "suggested_fix": "Restore the transitional sentence 'But it was only the sound they made as they parted the brit which at all reminded one of mowers' before the mast-head description."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "their immense magnitude renders it very hard really to believe that such bulky masses of overgrowth can possibly be instinct, in all parts, with the same sort of life that lives in a dog or a horse.",
+      "source_locator": "Paragraph 5, after the India/elephants comparison",
+      "draft_treatment": "absent",
+      "why_it_matters": "This observation about animate life being unbelievable at whale-scale is an interpretive keystone connecting the visual/perceptual theme to the deeper philosophical meditation; its loss collapses the logical bridge between the elephant simile and the sea-creature meditation.",
+      "suggested_fix": "Restore the sentence about immense magnitude making it hard to believe such masses can be 'instinct with the same sort of life that lives in a dog or a horse' as a pivot after the India simile."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Indeed, in other respects, you can hardly regard any creatures of the deep with the same feelings that you do those of the shore. For though some old naturalists have maintained that all creatures of the land are of their kind in the sea",
+      "source_locator": "Paragraph 6, opening the land/sea analogy digression",
+      "draft_treatment": "absent",
+      "why_it_matters": "The full setup paragraph, including the reference to 'some old naturalists,' establishes the essayistic, Montaigne-like voice of the chapter's philosophical turn; without it the transition from whale description to the dog/shark observation is abrupt and the register shift unearned.",
+      "suggested_fix": "Restore the introductory paragraph ('Indeed, in other respects … The accursed shark …') so the philosophical digression has its proper voice-establishing preamble."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "worse than the Persian host who murdered his own guests; sparing not the creatures which itself hath spawned.",
+      "source_locator": "Paragraph: 'But not only is the sea such a foe…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Persian-host allusion is a distinctive rhetorical flourish that elevates the sea's cruelty to a historical/moral register; its removal flattens the passage to a generic nature metaphor and erases a characteristic Melvillean classical aside.",
+      "suggested_fix": "Restore 'worse than the Persian host who murdered his own guests; sparing not the creatures which itself hath spawned' between 'fiend to its own off-spring' and the tigress simile."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "That same ocean rolls now; that same ocean destroyed the wrecked ships of last year.",
+      "source_locator": "Paragraph: 'The first boat we read of…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The anaphoric 'That same ocean rolls now; that same ocean destroyed…' reinforces the chapter's insistence on continuity between biblical and present-day catastrophe; its omission weakens the rhetorical rhythm.",
+      "suggested_fix": "Restore the sentence 'That same ocean rolls now; that same ocean destroyed the wrecked ships of last year' between the widow clause and the Noah sentence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's major set-pieces but loses several medium-severity voice-establishing and interpretive passages in the middle—most critically the transition after the mowers simile, the 'instinct with life' observation, the naturalist-digression preamble, and the Persian-host allusion—resulting in three medium-severity failures that trigger regeneration."
+}

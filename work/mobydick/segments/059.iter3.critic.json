@@ -1,0 +1,44 @@
+{
+  "segment_id": "059",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "where every sword seems a flash of the Northern Lights, and the successive armed kings and Emperors dash by, like a charge of crowned centaurs",
+      "source_locator": "paragraph on Garnery and Versailles",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source has 'every sword SEEMS a flash' — a simile of appearance — and 'the SUCCESSIVE armed kings,' both rhythmically precise; the draft changes 'seems' to 'flashes' (collapsing the simile into a flat metaphor) and drops 'successive,' degrading the sentence-shape.",
+      "suggested_fix": "Restore 'every sword seems a flash of the Northern Lights' and 'the successive armed kings and Emperors' verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I honor him for a veteran",
+      "source_locator": "paragraph on Scoresby and snow crystals",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source reads 'I honor him FOR a veteran,' a deliberately archaic/nautical idiom that registers Ishmael's voice; the draft substitutes 'as a veteran,' normalizing and erasing the period register.",
+      "suggested_fix": "Restore 'I honor him for a veteran' exactly."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "pell-mell, through the consecutive great battles of France",
+      "source_locator": "Versailles paragraph",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "'Consecutive' is present in source but absent from draft ('consecutive great battles of France' → just 'consecutive great battles of France' — actually present; confirmed present), so this resolves as preserved.",
+      "suggested_fix": "No action needed — 'consecutive' is retained in draft."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Not wholly unworthy of a place in that gallery, are these sea battle-pieces of Garnery.",
+      "source_locator": "end of Versailles paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'of Garnery' from the sentence and also omits 'in that gallery,' making the callback to Versailles vaguer and less emphatic; minor but a small voice loss.",
+      "suggested_fix": "Restore 'Not wholly unworthy of a place in that gallery, are these sea battle-pieces of Garnery.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful; two medium findings (the Versailles sword-simile flattened from 'seems a flash' to 'flashes,' and 'honor him for a veteran' normalized to 'as a veteran') degrade Melville's signature idiom but do not alone trigger regeneration, and no high-severity losses are present."
+}

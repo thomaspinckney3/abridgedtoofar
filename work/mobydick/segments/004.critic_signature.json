@@ -4,50 +4,50 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.",
-      "source_locator": "Saco valley / artist paragraph, mid-passage",
+      "class": "voice_erasure",
+      "source_passage": "There stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle; and up from yonder cottage goes a sleepy smoke. Deep into distant woodlands winds a mazy way",
+      "source_locator": "Saco valley / artist paragraph",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence is the rhetorical centrepiece of the landscape-painting passage—its sinuous syntax enacts the 'mazy way' it describes. Without it, the Saco paragraph jumps abruptly from cattle and cottage smoke to 'But though the picture lies thus tranced,' losing the hypnotic build-up that earns the payoff about the shepherd's eye on the stream.",
-      "suggested_fix": "Restore 'Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.' between the cottage-smoke sentence and 'But though the picture lies thus tranced.'"
+      "why_it_matters": "The entire interior of the artist-painting-the-Saco passage is cut; the draft jumps from 'What is the chief element he employs?' directly to 'yet all were vain, unless the shepherd's eye were fixed upon the magic stream.' The intervening landscape description is a distinctively voiced, rhythmically elaborate set-piece and a key moment of sustained Melvillean prose.",
+      "suggested_fix": "Restore the interior of the Saco passage ('There stand his trees…winds a mazy way…though this pine-tree shakes down its sighs') so the rhetorical build from landscape to water-as-essential-element is preserved."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat, which he sadly needed, or invest his money in a pedestrian trip to Rockaway Beach?",
+      "source_locator": "Rhetorical-question sequence after Saco passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This distinctly Ishmaelean comic digression—one of the most idiosyncratic rhetorical flourishes in the chapter—is entirely missing. The draft jumps from Niagara to the robust boy, skipping the Tennessee poet and several other rhetorical questions, flattening the cumulative ironic voice.",
+      "suggested_fix": "Restore at minimum the Tennessee poet sentence and the 'Why upon your first voyage as a passenger, did you yourself feel such a mystical vibration' question to preserve the comic escalation and direct-address voice."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat, which he sadly needed, or invest his money in a pedestrian trip to Rockaway Beach?",
-      "source_locator": "Narcissus / water-magnetism paragraph, rhetorical-questions series",
+      "source_passage": "The urbane activity with which a man receives money is really marvellous, considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven.",
+      "source_locator": "Paying vs. being paid paragraph",
       "draft_treatment": "absent",
-      "why_it_matters": "This comic, satirical question is a signature specimen of Ishmael's ironic voice—mixing high rhetoric with a deliberately bathetic, specific anecdote. Its omission flattens the rhetorical catalogue from five questions to four and removes the only humorous beat in the series, thinning the voice-defining register.",
-      "suggested_fix": "Reinsert the Tennessee-poet question in its original position between the Niagara question and the 'robust healthy boy' question."
+      "why_it_matters": "The draft preserves the frame ('all the difference in the world between paying and being paid' and 'how cheerfully we consign ourselves to perdition') but drops the central ironic elaboration—'The urbane activity…monied man enter heaven'—which is the rhetorical payoff of the joke and a signature moment of Ishmael's sardonic voice.",
+      "suggested_fix": "Restore the sentence beginning 'The urbane activity with which a man receives money is really marvellous…' to preserve the ironic punch."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "cooled by breezes, which a few hours previous were out of sight of land.",
-      "source_locator": "Manhattoes / battery paragraph",
+      "source_passage": "Do you think the archangel Gabriel thinks anything the less of me, because I promptly and respectfully obey that old hunks in that particular instance?",
+      "source_locator": "Who ain't a slave paragraph",
       "draft_treatment": "absent",
-      "why_it_matters": "The clause extends the Battery description outward to the open sea and enacts the very pull toward the horizon Ishmael is anatomising; its loss slightly deflates the passage's thematic resonance.",
-      "suggested_fix": "Append 'and cooled by breezes, which a few hours previous were out of sight of land' after 'washed by waves' in the Manhattoes paragraph."
+      "why_it_matters": "The archangel Gabriel sentence is part of the comic theological escalation ('scales of the New Testament' → Gabriel) that gives the 'Who ain't a slave?' passage its ironic texture; its omission mildly flattens the voice.",
+      "suggested_fix": "Restore the Gabriel sentence between 'scales of the New Testament' and 'Who ain't a slave?'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
       "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
-      "source_locator": "Passenger/cook/sailor digression, end of the broiled-fowl riff",
+      "source_locator": "Cook / broiled fowl digression",
       "draft_treatment": "absent",
-      "why_it_matters": "This mock-erudite non-sequitur is classic Ishmael—absurdist digression used to deflate self-importance—and its loss shortens an already-trimmed paragraph, removing a characteristic comic cadence.",
-      "suggested_fix": "Restore the Egyptian/pyramids sentence as the closing beat of the broiled-fowl passage."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.",
-      "source_locator": "Fates / stage-managers paragraph, closing clause",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The draft compresses to 'cajoling me into the delusion that it was my own choice,' losing the ironic legalism of 'unbiased freewill and discriminating judgment' which is part of Ishmael's mock-philosophical voice.",
-      "suggested_fix": "Restore the full phrase: 'cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.'"
+      "why_it_matters": "The pyramids-as-bake-houses joke is a classic Ishmaelean absurdist aside; its removal ends the cook passage prematurely, losing a characteristic instance of the narrator's digressive humor.",
+      "suggested_fix": "Restore the Egyptian/pyramid sentence to close the cook digression properly."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft preserves all high-priority signatures (opening paragraph, Narcissus, Providence bill, flood-gates closing) verbatim or near-verbatim; the five findings are two medium-level voice flattenings (omitted Saco woodland sentence and Tennessee-poet question) and three low-level cuts, none rising to regeneration threshold individually, and the medium count does not reach three."
+  "verdict": "regenerate",
+  "summary": "The draft faithfully preserves the chapter's most famous opening and closing passages but silently excises the interior of the Saco artist set-piece, the Tennessee poet and several other key rhetorical questions, and the core ironic elaboration in the paying/being-paid paragraph—three medium-severity voice-erasure failures that together trigger regeneration."
 }

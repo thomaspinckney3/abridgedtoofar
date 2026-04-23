@@ -5,40 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Mediterranean mariners will sometimes jostle the affrighted ladies. Regent Street is not unknown to Lascars and Malays; and at Bombay, in the Apollo Green, live Yankees have often scared the natives.",
-      "source_locator": "paragraph 2, middle of the catalogue of seaports",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft reduces these three vivid, rhythmically differentiated clauses — with their comic reversals ('live Yankees have often scared the natives') — to a bland list ('Broadway and Chestnut, Regent Street, Bombay's Apollo Green know such jostlings'). The signature irony of Americans frightening Bombay natives is entirely erased.",
-      "suggested_fix": "Restore the three-clause sequence in close to original phrasing, preserving 'affrighted ladies,' 'Lascars and Malays,' and especially 'live Yankees have often scared the natives' — each clause earns its place rhetorically and comedically."
+      "source_passage": "many of whom yet carry on their bones unholy flesh. It makes a stranger stare.",
+      "source_locator": "paragraph 2, after 'savages outright'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The phrase 'carry on their bones unholy flesh' is a rhetorically charged, distinctively Melvillean formulation that intensifies the cannibal motif; its excision flattens the passage's shock effect.",
+      "suggested_fix": "Restore 'many of whom yet carry on their bones unholy flesh' immediately after 'savages outright' before 'It makes a stranger stare.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "It makes a stranger stare.",
-      "source_locator": "paragraph 2, closing sentence",
-      "draft_treatment": "absent",
-      "why_it_matters": "This four-word deadpan sentence is a classic Melvillean landing — the shortest possible close to an escalating catalogue, and its bluntness is the joke. Its omission erases a micro-signature of the narrator's comic voice.",
-      "suggested_fix": "Append 'It makes a stranger stare.' after the cannibals-on-street-corners sentence as in the source."
+      "source_passage": "No town-bred dandy will compare with a country-bred one—I mean a downright bumpkin dandy—a fellow that, in the dog-days, will mow his two acres in buckskin gloves for fear of tanning his hands.",
+      "source_locator": "paragraph 4, opening sentence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The elaborated comic definition—'a fellow that, in the dog-days, will mow his two acres in buckskin gloves'—is the satirical payoff of the dandy passage and establishes the narrator's ironic register; its compression to 'a downright bumpkin' erases the joke.",
+      "suggested_fix": "Restore the full appositive definition including the buckskin-gloves detail, as it is the signature comic beat of the paragraph."
     },
     {
       "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "you must go to New Bedford to see a brilliant wedding; for, they say, they have reservoirs of oil in every house, and every night recklessly burn their lengths in spermaceti candles.",
-      "source_locator": "paragraph 7, second sentence",
+      "class": "voice_flattening",
+      "source_passage": "In summer time, the town is sweet to see; full of fine maples—long avenues of green and gold.",
+      "source_locator": "paragraph 8, opening",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence is interpretively rich — it literalizes the oil economy as conspicuous domestic excess and is one of the chapter's most vivid images of whaling-wealth translated into lifestyle. Its complete omission removes a key thematic illustration of New Bedford's opulence.",
-      "suggested_fix": "Restore this sentence in full (or very close to it) following the fathers/dowers/porpoises sentence, as it appears in the source."
+      "why_it_matters": "The summer/maples image and the candelabra simile work together as a lyrical pastoral set-piece; cutting the maples line reduces the passage to a single compressed image and loses the seasonal/chromatic build-up that gives the horse-chestnut sentence its resonance.",
+      "suggested_fix": "Restore 'In summer time, the town is sweet to see; full of fine maples—long avenues of green and gold' before the horse-chestnut sentence."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "The town itself is perhaps the dearest place to live in, in all New England.",
-      "source_locator": "paragraph 5, after the Labrador comparison",
+      "source_passage": "Whence came they? how planted upon this once scraggy scoria of a country?",
+      "source_locator": "paragraph 5, closing rhetorical questions",
       "draft_treatment": "absent",
-      "why_it_matters": "This clause — with its doubled 'in, in' rhythm and superlative claim — establishes the pivot from bony back-country to patrician wealth, and its removal slightly weakens the rhetorical contrast that follows.",
-      "suggested_fix": "Insert this sentence between the Labrador/back-country passage and 'It is a land of oil, true enough.'"
+      "why_it_matters": "These rhetorical questions set up the iconic harpoon-mansion answer in the next paragraph; without them the transition loses its interrogative momentum and the answer feels unmotivated.",
+      "suggested_fix": "Restore the two closing rhetorical questions at the end of the 'patrician-like houses' paragraph to preserve the call-and-response structure."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "In New Bedford, fathers, they say, give whales for dowers to their daughters",
+      "source_locator": "paragraph 7",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'to their daughters,' a small but rhythmically and tonally complete element of the satirical social portrait; 'give whales for dowers' alone is slightly truncated.",
+      "suggested_fix": "Minor: restore 'to their daughters' after 'give whales for dowers' for rhythmic completeness."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft has three medium-severity failures — the flattening of the Lascars/Yankees seaport catalogue, the erasure of the deadpan 'It makes a stranger stare,' and the complete omission of the spermaceti-candles sentence — that together constitute a pattern of voice flattening sufficient to require regeneration."
+  "verdict": "pass",
+  "summary": "No high-severity losses; three medium findings (unholy flesh phrase cut, bumpkin-dandy definition flattened, summer-maples opening absent) and two low findings reduce voice texture but no single loss is severe enough to require regeneration."
 }

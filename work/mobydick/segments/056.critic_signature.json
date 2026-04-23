@@ -1,0 +1,35 @@
+{
+  "segment_id": "056",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the pirate has no proper foundation for his superior altitude. Hence, I conclude, that in boasting himself to be high lifted above a whaleman",
+      "source_locator": "paragraph 6, the pirates/gallows digression",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The wordplay on 'foundation' and 'altitude' (the gallows lifts you but gives no solid footing) is a signature Melvillean pun; the draft drops the 'no proper foundation for his superior altitude' line, preserving only the conclusion and losing the comic logic that makes the passage memorable.",
+      "suggested_fix": "Restore: 'but only at the gallows. And besides, when a man is elevated in that odd fashion, he has no proper foundation for his superior altitude' before the concluding 'no solid basis to stand on.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "mutually cutting each other on the high seas, like a brace of dandies in Broadway; and all the time indulging, perhaps, in finical criticism upon each other's rig",
+      "source_locator": "paragraph 5, merchantmen comparison",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the dandies simile and the 'finical criticism' clause but drops the connective rhythm ('will oftentimes pass on without so much as a single word of recognition'), slightly flattening the satirical build-up, though the key image survives.",
+      "suggested_fix": "Minor: restore 'will oftentimes pass on without so much as a single word of recognition' before the Broadway simile to preserve the comedic escalation."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "and as for Pirates, when they chance to cross each other's cross-bones, the first hail is—'How many skulls?'—the same way that whalers hail—'How many barrels?'",
+      "source_locator": "paragraph 5, pirates comparison",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves both questions and the parallel structure but loses the vivid 'cross each other's cross-bones' pun, which is a characteristic Melvillean wordplay on pirate iconography.",
+      "suggested_fix": "Restore 'cross each other's cross-bones' for the pun: 'when they chance to cross each other's cross-bones, the first hail is—'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft preserves all major signatures faithfully, including the formal GAM definition, the 'Dr. Johnson / Noah Webster's ark' passage, the standing-captain comic set-piece, and the pirate-gallows digression, with only minor voice-flattening in transitional comic phrasing and one dropped pun."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "055",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There seemed but little in the words, but the tone conveyed more of deep helpless sadness than the insane old man had ever before evinced.",
+      "source_locator": "paragraph beginning 'Swim away from me, do ye?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The precise, devastating phrasing 'deep helpless sadness' and 'the insane old man' carries critical interpretive weight—it is one of the few moments Ishmael openly labels Ahab's mental state while also marking genuine pathos. The draft reduces this to 'more sadness in the tone than he had yet evinced,' losing both the diagnostic label and the emotional specificity.",
+      "suggested_fix": "Restore the clause verbatim: 'There seemed but little in the words, but the tone conveyed more of deep helpless sadness than the insane old man had ever before evinced.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "though, when the ship slowly glided close under our stern, we six men in the air came so nigh to each other that we might almost have leaped from the mast-heads of one ship to those of the other; yet, those forlorn-looking fishermen, mildly eyeing us as they passed, said not one word to our own look-outs",
+      "source_locator": "second paragraph of source",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The contrast between physical proximity and total communicative silence ('mildly eyeing us…said not one word') is a signature image of oceanic isolation and is thematically important for the encounter's meaning. The draft preserves only the proximity detail and drops the silence of the look-outs entirely.",
+      "suggested_fix": "Add: 'yet those forlorn-looking fishermen, mildly eyeing us as they passed, said not one word to our own look-outs' to restore the eerie silence that makes the scene interpretively significant."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "though, when the ship slowly glided close under our stern…in accordance with their singular ways, shoals of small harmless fish…darted away with what seemed shuddering fins",
+      "source_locator": "paragraph beginning 'At that moment the two wakes were fairly crossed'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'what seemed shuddering fins' (hedged, phenomenological) is compressed to 'shuddering fins' (declarative); the hedging is part of Ishmael's precise observational voice.",
+      "suggested_fix": "Restore 'with what seemed shuddering fins' rather than stating it as fact."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful, preserving most signature passages including Ahab's trumpet speech, the philosophical coda, and the lion-voice command, but it flattens the critical 'deep helpless sadness / insane old man' line and drops the look-outs' ominous silence; neither alone triggers regeneration, but both are medium-severity losses."
+}

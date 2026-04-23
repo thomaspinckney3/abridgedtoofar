@@ -1,0 +1,53 @@
+{
+  "segment_id": "064",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "losing all consciousness, at last my soul went out of my body; though my body still continued to sway as a pendulum will, long after the power which first moved it is withdrawn",
+      "source_locator": "paragraph 4, foremast-head reverie",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile's philosophical tail—'long after the power which first moved it is withdrawn'—is the interpretive key, linking bodily mechanism to lost volition; the draft cuts it, leaving only the bare pendulum image without its philosophical extension.",
+      "suggested_fix": "Restore the full pendulum clause: 'though my body still continued to sway as a pendulum will, long after the power which first moved it is withdrawn.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the seamen at the main and mizzen-mast-heads were already drowsy. So that at last all three of us lifelessly swung from the spars, and for every swing that we made there was a nod from below from the slumbering helmsman. The waves, too, nodded their indolent crests; and across the wide trance of the sea, east nodded to west, and the sun over all.",
+      "source_locator": "paragraph 5, universal drowsiness passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage—'east nodded to west, and the sun over all'—is one of Melville's most celebrated moments of cosmic somnolence and is a critical touchstone for the chapter's enchantment theme; it is entirely absent from the draft.",
+      "suggested_fix": "Insert the full nodding passage before the bubble-burst awakening: 'all three of us lifelessly swung from the spars … east nodded to west, and the sun over all.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "raise the buried dead perpendicular out of their graves, boys—that's all. Start her!",
+      "source_locator": "Stubb's chase speech, paragraph on 'Start her'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'raise the buried dead perpendicular out of their graves' is one of Stubb's most extravagant, carnivalesque rhetorical heights; it is the climax of his speech and is omitted from the draft, which ends his address at 'grim death and grinning devils.'",
+      "suggested_fix": "Extend Stubb's speech to include 'and raise the buried dead perpendicular out of their graves, boys—that's all. Start her!'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "\"Woo-hoo! Wa-hee!\" screamed the Gay-Header in reply, raising some old war-whoop to the skies; as every oarsman in the strained boat involuntarily bounced forward with the one tremendous leading stroke which the eager Indian gave.",
+      "source_locator": "paragraph on harpooneers' cries",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft attributes the cry correctly to Tashtego but drops 'raising some old war-whoop to the skies' and the detail of every oarsman bouncing forward involuntarily—vivid physical action that gives the yell its contagious power.",
+      "suggested_fix": "Add 'raising some old war-whoop to the skies; every oarsman involuntarily bounced forward with the one tremendous leading stroke the eager Indian gave.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "\"Ka-la! Koo-loo!\" howled Queequeg, as if smacking his lips over a mouthful of Grenadier's steak.",
+      "source_locator": "paragraph on harpooneers' cries",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile 'as if smacking his lips over a mouthful of Grenadier's steak' is a grotesque, darkly comic characterization of Queequeg; its omission removes the chapter's cannibal irony at a moment of killing.",
+      "suggested_fix": "Append the simile after Queequeg's cry in the draft."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—the entire 'east nodded to west, and the sun over all' cosmic drowsiness passage (absent), the pendulum simile's philosophical tail (flattened), and Stubb's climactic 'raise the buried dead' peroration (cut)—trigger regeneration."
+}

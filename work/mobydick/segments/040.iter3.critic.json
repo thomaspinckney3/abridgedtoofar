@@ -1,0 +1,53 @@
+{
+  "segment_id": "040",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "That wild madness that's only calm to comprehend itself!",
+      "source_locator": "third paragraph, after 'I am madness maddened!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aphoristic self-definition is one of the most critically cited phrases in the chapter, capturing Ahab's paradoxical self-awareness; its omission erases a key interpretive node about Ahab's relationship to his own monomaniacal consciousness.",
+      "suggested_fix": "Restore verbatim after 'I am madness maddened!' — the sentence is short and the draft has room."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Now, then, be the prophet and the fulfiller one. That's more than ye, ye great gods, ever were.",
+      "source_locator": "fourth paragraph, after 'I now prophesy that I will dismember my dismemberer.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is critically central to Ahab's hubristic self-elevation above the gods; it is rhetorically distinctive and interpretively essential to the theme of Ahab surpassing divine authority, and its absence collapses the theological dimension of the soliloquy.",
+      "suggested_fix": "Restore verbatim immediately after the dismemberer prophecy line before moving to the gods-taunting passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The envious billows sidelong swell to whelm my track; let them; but first I pass.",
+      "source_locator": "first paragraph, second sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is prosodically distinctive and voice-establishing, setting the defiant tone of the soliloquy from its opening; its loss means the first paragraph now begins mid-thought without its characteristically compressed bravado.",
+      "suggested_fix": "Restore after 'pale waters, paler cheeks' — the line is brief and fits the word budget."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Or, if you will, like so many ant-hills of powder, they all stand before me; and I their match.",
+      "source_locator": "third paragraph, after 'they revolve'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The ant-hills-of-powder simile is stylistically distinctive and gives interpretive weight to Ahab's view of the crew as instruments; cutting it flattens the transition from crew-manipulation to the 'match must needs be wasting' line, which now feels unmotivated.",
+      "suggested_fix": "Restore the simile before 'Oh, hard! that to fire others' to preserve the logical and rhetorical chain."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Swerve me? ye cannot swerve me, else ye swerve yourselves! man has ye there.",
+      "source_locator": "fourth paragraph, first 'Swerve me?' repetition sequence",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "'man has ye there' is a rhetorically pointed aside that underscores human will triumphing over divine determinism; its omission in the draft reduces the triple swerve-refrain to a two-beat sequence and loses the interpretive punch.",
+      "suggested_fix": "Re-insert 'man has ye there' after 'else ye swerve yourselves!' verbatim."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity signature losses ('That wild madness that's only calm to comprehend itself!' and 'Now, then, be the prophet and the fulfiller one. That's more than ye, ye great gods, ever were.') plus three medium-severity cuts together strip the soliloquy of its key theological and psychological pivot points, requiring regeneration."
+}

@@ -1,0 +1,35 @@
+{
+  "segment_id": "014",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "A feast of meat and mead was set before us, and I must admit I did justice to everything within reach.",
+      "source_locator": "paragraph after seating arrangement at table",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's wry first-person confession 'I must admit I did justice to everything within reach' is a small but characteristic voice beat; the draft replaces it with the blander 'I did my share of the damage.'",
+      "suggested_fix": "Restore the original phrasing 'I must admit I did justice to everything within reach' to preserve the narrator's self-deprecating directness."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She quivered harder than me, but her driver didn't seem to mind her clinging to him so closely.",
+      "source_locator": "final paragraph, Cayden joins them in the air",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's closing observational aside about Stephanie and Cayden ('her driver didn't seem to mind') carries the narrator's wry, knowing tone; the draft replaces it with 'Cayden joined us with Stephanie clenched around his neck like a braid,' which is more colourful but loses the pointed romantic commentary.",
+      "suggested_fix": "Retain the source's wry aside—'she quivered harder than me, but her driver didn't seem to mind her clinging to him so closely'—as the chapter's closing beat."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The sharp blades turned to seas of green as we quickly left the earth below us. Every flap of his powerful wings lifted us ten feet.",
+      "source_locator": "paragraph after they lift off the ground",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The specific tactile detail 'every flap of his powerful wings lifted us ten feet' grounds the flight scene with physical precision; the draft blurs this into 'every stroke took us higher.'",
+      "suggested_fix": "Restore the precise detail 'every flap of his powerful wings lifted us ten feet' to keep the physicality of the flight scene."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful; three minor voice flattenings are present but none rises to high severity, and no signature passages are absent or interpretively lost."
+}

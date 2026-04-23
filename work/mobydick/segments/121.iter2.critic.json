@@ -1,0 +1,35 @@
+{
+  "segment_id": "121",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"Here some one thrusts these cards into these old hands of mine; swears that I must play them, and no others.\" And damn me, Ahab, but thou actest right; live in the game, and die in it!",
+      "source_locator": "final paragraph, Stubb's speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'cards' quotation is one of the chapter's most interpretively loaded moments — Stubb repeating Ahab's own fatalistic words about compulsion and predestination; it is a critical touchstone for determinism in the novel. The draft retains only 'live in the game, and die in it!' with no attribution of the card-speech to Ahab himself, gutting the fatalism embedded in the exchange.",
+      "suggested_fix": "Restore the verbatim card-speech: 'Here some one thrusts these cards into these old hands of mine; swears that I must play them, and no others' — it need not be long but cannot be dropped."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"Thou sea-mark! thou high and mighty Pilot! thou tellest me truly where I _am_—but canst thou cast the least hint where I _shall_ be?\"",
+      "source_locator": "paragraph 3, Ahab's first murmured speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'High and mighty Pilot' is a signature apostrophe — the capitalization and religious register are part of the rhetorical weight of Ahab addressing the sun as a divine navigator. The draft omits 'high and mighty Pilot' entirely, reducing the address to 'Thou sea-mark! thou tellest me truly where I am,' stripping the theological irony.",
+      "suggested_fix": "Restore 'thou high and mighty Pilot!' between 'Thou sea-mark!' and 'thou tellest me truly where I am.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "her three firm-seated graceful masts erectly poised upon her long, ribbed hull, seemed as the three Horatii pirouetting on one sufficient steed",
+      "source_locator": "paragraph 5, after 'yards swung round'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full simile — 'firm-seated graceful masts erectly poised upon her long, ribbed hull' — is prosodically distinctive and carries the visual grandeur Melville deploys at key action moments. The draft's 'her three masts pirouetted like the Horatii on one steed' loses the mast/hull description and changes 'seemed as' to 'like,' flattening the period register.",
+      "suggested_fix": "Restore at minimum 'firm-seated graceful masts' and 'one sufficient steed' to preserve the rhythm and register of the simile."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft's most serious failure is the complete omission of Stubb's verbatim report of Ahab's 'cards' speech — a high-priority interpretive and voice passage — compounded by two medium-severity flattenings of Ahab's apostrophe to the sun and the Horatii simile."
+}

@@ -1,0 +1,62 @@
+{
+  "segment_id": "072",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "There's a most doleful and most mocking funeral! The sea-vultures all in pious mourning, the air-sharks all punctiliously in black or speckled.",
+      "source_locator": "paragraph beginning 'There's a most doleful and most mocking funeral!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's title-sentence and its most memorable rhetorical set-piece—'doleful and most mocking funeral' names the central irony; the sea-vultures/air-sharks inversion is a signature image that gives the chapter its interpretive frame.",
+      "suggested_fix": "Restore verbatim: 'There's a most doleful and most mocking funeral! The sea-vultures all in pious mourning, the air-sharks all punctiliously in black or speckled.' The draft jumps directly to 'horrible vultureism' without the setup that earns it."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "in life but few of them would have helped the whale, I ween, if peradventure he had needed it; but upon the banquet of his funeral they most piously do pounce.",
+      "source_locator": "paragraph beginning 'There's a most doleful and most mocking funeral!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage establishes the satirical moral thrust—pious exploitation of the dead—which is the chapter's central philosophical statement; without it the exclamation 'Oh, horrible vultureism!' hangs unsupported.",
+      "suggested_fix": "Restore the sentence or a close paraphrase placing the irony that those who would not help in life now piously feast; it is essential to make 'vultureism of earth' land with its intended force."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "as silly sheep leap over a vacuum, because their leader originally leaped there when a stick was held. There's your law of precedents; there's your utility of traditions; there's the story of your obstinate survival of old beliefs never bottomed on the earth, and now not even hovering in the air! There's orthodoxy!",
+      "source_locator": "paragraph beginning 'Nor is this the end'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The sheep-over-a-vacuum simile and the full rhetorical series ('there's the story of your obstinate survival of old beliefs never bottomed on the earth, and now not even hovering in the air!') are Melville's most concentrated satirical broadside on tradition and orthodoxy in this segment; the draft truncates after 'utility of traditions' and loses the climactic third and fourth members entirely.",
+      "suggested_fix": "Restore the full anaphoric series through 'There's orthodoxy!' including the sheep/vacuum simile and 'obstinate survival of old beliefs never bottomed on the earth'—these are precisely the phrases critics and readers return to."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Thus, while in life the great whale's body may have been a real terror to his foes, in his death his ghost becomes a powerless panic to a world.",
+      "source_locator": "penultimate paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's closing thematic summary—the contrast of real terror versus ghost-panic encapsulates the entire meditation; omitting it cuts the interpretive capstone.",
+      "suggested_fix": "Restore verbatim or nearly so as the penultimate sentence before the closing coda."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Are you a believer in ghosts, my friend? There are other ghosts than the Cock-Lane one, and far deeper men than Doctor Johnson who believe in them.",
+      "source_locator": "final paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's closing sally—the direct address to the reader and the allusion to the Cock-Lane ghost and Dr. Johnson are culturally specific, voice-defining, and critically noted; their complete absence erases Ishmael's register-defining ironic wink.",
+      "suggested_fix": "Restore both sentences verbatim; they are short and form the chapter's entire final paragraph, so compression cannot justify dropping them."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "what seem square roods of sharks and cubic roods of fowls, augment the murderous din. For hours and hours from the almost stationary ship that hideous sight is seen.",
+      "source_locator": "first paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'square roods / cubic roods' construction is a distinctively Melvillean mock-geometric hyperbole that establishes the chapter's ironic-sublime register; its absence along with 'For hours and hours' flattens the temporal dread.",
+      "suggested_fix": "Restore the 'square roods of sharks and cubic roods of fowls' phrase and the durational emphasis 'For hours and hours' to preserve the chapter's ironic-sublime voice."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft strips five high-severity signature elements—the title-level ironic funeral announcement, the pious-predators satirical development, the full rhetorical anaphora on orthodoxy including the sheep/vacuum simile, the thematic summary contrasting real terror with ghost-panic, and the entire closing Cock-Lane/Dr. Johnson coda—leaving only a skeletal action summary that erases Melville's satirical and philosophical core."
+}
