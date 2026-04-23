@@ -1,0 +1,17 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I was home.",
+      "source_locator": "final line of chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's closing line and single most interpretively weighted moment — the protagonist's return to her world — carrying maximal emotional and structural significance; its absence (along with the entire draft) means the segment is wholly missing.",
+      "suggested_fix": "Provide the full draft text for evaluation; currently the draft field is empty and there is nothing to assess."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "No draft text was supplied — the draft field is completely empty, making every source passage absent by default; the segment must be regenerated."
+}

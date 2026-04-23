@@ -1,0 +1,17 @@
+{
+  "segment_id": "018",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "other",
+      "source_passage": "I had no plan, though at that point what I really wanted was a machete and a flashlight.",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "absent",
+      "why_it_matters": "No draft was supplied; the entire segment is missing, meaning every signature passage — including all voice-establishing lines, the water-spirit dialogue, and the climactic healing scene — is absent.",
+      "suggested_fix": "Supply the draft text and rerun the critic. Until then, the segment must be treated as a complete failure to preserve any content."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "No draft text was provided; the entire segment is absent and cannot be evaluated."
+}

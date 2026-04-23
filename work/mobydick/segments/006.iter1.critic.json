@@ -1,0 +1,62 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Ever and anon a bright, but, alas, deceptive idea would dart you through.—It's the Black Sea in a midnight gale.—It's the unnatural combat of the four primal elements.—It's a blasted heath.—It's a Hyperborean winter scene.—It's the breaking-up of the icebound stream of Time.",
+      "source_locator": "paragraph 2, description of the painting",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhetorical cascade is one of the most distinctive and frequently quoted passages in the chapter, establishing the novel's habit of piling sublime interpretations and ironizing all of them; its absence erases a key voice-signature moment and flattens the painting episode to bare summary.",
+      "suggested_fix": "Restore the full 'dart you through' list verbatim between the sublimity sentence and the leviathan question; it is brief enough to include within compression budget and is non-negotiable for signature preservation."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "Abominable are the tumblers into which he pours his poison. Though true cylinders without—within, the villanous green goggling glasses deceitfully tapered downwards to a cheating bottom. Parallel meridians rudely pecked into the glass, surround these footpads' goblets.",
+      "source_locator": "paragraph beginning 'Abominable are the tumblers'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a fully self-contained satirical set piece with a rhetorically distinctive opening sentence ('Abominable are the tumblers') that is among the most stylistically recognizable in the chapter; its total omission removes a register-defining digression and the novel's first extended social satire.",
+      "suggested_fix": "Restore at minimum the opening sentence and the 'deceitfully tapered downwards to a cheating bottom' line with the Cape Horn measure; even a two-sentence condensation preserving the voice should be present."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "No man prefers to sleep two in a bed. In fact, you would a good deal rather not sleep with your own brother. I don't know how it is, but people like to be private when they are sleeping.",
+      "source_locator": "paragraph beginning 'No man prefers to sleep two in a bed'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic meditation on privacy and the indignity of shared sleeping is a sustained ironic digression that defines Ishmael's narrative voice and his habit of universalizing personal anxieties; its complete absence is a significant voice erasure.",
+      "suggested_fix": "Restore the opening lines and at least the comparison to 'bachelor Kings' and the hammock remark; the paragraph establishes Ishmael's comic register and cannot be reduced to zero."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Landlord, said I, going up to him as cool as Mt. Hecla in a snow-storm—landlord, stop whittling. You and I must understand one another, and that too without delay.",
+      "source_locator": "long speech paragraph, beginning 'Landlord, said I, going up to him as cool as Mt. Hecla'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extended comic speech—formally legalistic yet absurdly overwrought—is a signature comic moment of the chapter, critically noted for its parody of rational argumentation in an irrational situation; 'a baffling exchange followed' erases it entirely.",
+      "suggested_fix": "Restore the Mt. Hecla simile and the key rhetorical moves of the speech, even in compressed form; at minimum the opening gambit and the criminal prosecution threat must appear."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "procured the plane; and with his old silk handkerchief first dusting the bench, vigorously set to planing away at my bed, the while grinning like an ape. The shavings flew right and left; till at last the plane-iron came bump against an indestructible knot.",
+      "source_locator": "paragraph beginning 'Just as you please; I'm sorry I can't spare ye a tablecloth'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The bench-planing scene is a memorable comic episode that develops the landlord's character and Ishmael's fussy anxiety; its complete omission removes a beat of physical comedy that the critical tradition regularly cites as exemplary of Melville's humor.",
+      "suggested_fix": "Add a sentence or two preserving the landlord's planing offer, the grinning-like-an-ape image, and Ishmael's observation about making eider down of a pine plank."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "others were tufted with knots of human hair; and one was sickle-shaped, with a vast handle sweeping round like the segment made in the new-mown grass by a long-armed mower. You shuddered as you gazed, and wondered what monstrous cannibal and savage could ever have gone a death-harvesting with such a hacking, horrifying implement.",
+      "source_locator": "paragraph describing the opposite wall, clubs and spears",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'death-harvesting' mowing simile is one of the chapter's most stylistically distinctive figures, linking the weapons to agrarian violence in an uncanny register; its loss flattens the weapons wall to a bare mention.",
+      "suggested_fix": "Restore at minimum the sickle-shaped weapon with the mowing simile and 'death-harvesting' phrase, which require only two sentences."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft drops four high-severity signature passages—the painting's 'dart you through' catalogue, the tumblers satirical set piece, the 'No man prefers to sleep two in a bed' comic meditation, and the Mt. Hecla speech—plus two medium-severity losses (the bench-planing scene and the death-harvesting weapons description), collectively erasing the chapter's most distinctive comic voice-work and several of its most quoted lines."
+}

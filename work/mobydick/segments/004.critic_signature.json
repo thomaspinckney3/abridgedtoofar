@@ -5,67 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land",
-      "source_locator": "paragraph 4, opening clause",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The phrase 'seemingly bound for a dive' is excised from the draft, removing the comic-surreal edge of Ishmael's observation; the crowd's near-suicidal momentum toward water is a minor but voice-distinctive beat.",
-      "suggested_fix": "Restore 'and seemingly bound for a dive' before 'Strange!'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Once more. Say you are in the country; in some high land of lakes. Take almost any path you please… There is magic in it.",
-      "source_locator": "paragraph 5, opening sentences",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'Once more' is a rhetorical pivot that signals Ishmael's accumulating, sermon-like argument; 'There is magic in it' is a brief but resonant sentence the critical tradition notes as encapsulating the chapter's central claim. Both are dropped.",
-      "suggested_fix": "Restore the 'Once more.' opener and the sentence 'There is magic in it.' after the pool-in-the-stream clause."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "There stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle",
-      "source_locator": "paragraph 6, the artist/Saco passage",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The hermit-and-crucifix detail and the careful triplet of sleeping meadow/cattle are dropped; the draft gives 'There stand his trees; and here sleeps his meadow,' losing the gothic-pastoral texture that makes this painterly set-piece distinctive.",
-      "suggested_fix": "Restore 'each with a hollow trunk, as if a hermit and a crucifix were within' and 'and there sleep his cattle' to match the source's accumulative rhythm."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven.",
-      "source_locator": "paragraph on paying vs. being paid",
+      "source_passage": "Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.",
+      "source_locator": "Saco valley / artist paragraph, mid-passage",
       "draft_treatment": "absent",
-      "why_it_matters": "This sardonic theological aside ('a monied man enter heaven') is the punchline of the paying/being-paid joke and a signature of Ishmael's ironic-moral voice; without it the paragraph loses its comic payoff.",
-      "suggested_fix": "Restore 'considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven' before 'Ah! how cheerfully we consign ourselves to perdition!'"
+      "why_it_matters": "This sentence is the rhetorical centrepiece of the landscape-painting passage—its sinuous syntax enacts the 'mazy way' it describes. Without it, the Saco paragraph jumps abruptly from cattle and cottage smoke to 'But though the picture lies thus tranced,' losing the hypnotic build-up that earns the payoff about the shepherd's eye on the stream.",
+      "suggested_fix": "Restore 'Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.' between the cottage-smoke sentence and 'But though the picture lies thus tranced.'"
     },
     {
       "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "And, doubtless, my going on this whaling voyage, formed part of the grand programme of Providence that was drawn up a long time ago. It came in as a sort of brief interlude and solo between more extensive performances.",
-      "source_locator": "paragraph introducing the mock-playbill",
+      "class": "voice_flattening",
+      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat, which he sadly needed, or invest his money in a pedestrian trip to Rockaway Beach?",
+      "source_locator": "Narcissus / water-magnetism paragraph, rhetorical-questions series",
       "draft_treatment": "absent",
-      "why_it_matters": "The Providence/grand-programme framing is interpretively central to the chapter's fatalism and directly precedes the playbill; its omission strips the mock-playbill of its theological irony and reduces it to a mere joke rather than a cosmic statement.",
-      "suggested_fix": "Restore both sentences about Providence and the 'brief interlude and solo between more extensive performances' before presenting the playbill."
+      "why_it_matters": "This comic, satirical question is a signature specimen of Ishmael's ironic voice—mixing high rhetoric with a deliberately bathetic, specific anecdote. Its omission flattens the rhetorical catalogue from five questions to four and removes the only humorous beat in the series, thinning the voice-defining register.",
+      "suggested_fix": "Reinsert the Tennessee-poet question in its original position between the Niagara question and the 'robust healthy boy' question."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "cooled by breezes, which a few hours previous were out of sight of land.",
+      "source_locator": "Manhattoes / battery paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The clause extends the Battery description outward to the open sea and enacts the very pull toward the horizon Ishmael is anatomising; its loss slightly deflates the passage's thematic resonance.",
+      "suggested_fix": "Append 'and cooled by breezes, which a few hours previous were out of sight of land' after 'washed by waves' in the Manhattoes paragraph."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
       "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
-      "source_locator": "end of the cook/broiled-fowl paragraph",
+      "source_locator": "Passenger/cook/sailor digression, end of the broiled-fowl riff",
       "draft_treatment": "absent",
-      "why_it_matters": "This absurdist digression on Egyptian pyramid-bakeries is pure Ishmaelean comic excess; its loss mildly flattens the voice in a passage otherwise preserved.",
-      "suggested_fix": "Restore the Egyptian mummies/pyramids sentence as the closing flourish of the cook paragraph."
+      "why_it_matters": "This mock-erudite non-sequitur is classic Ishmael—absurdist digression used to deflate self-importance—and its loss shortens an already-trimmed paragraph, removing a characteristic comic cadence.",
+      "suggested_fix": "Restore the Egyptian/pyramids sentence as the closing beat of the broiled-fowl passage."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "if you never violate the Pythagorean maxim",
-      "source_locator": "final paragraph on forecastle air",
-      "draft_treatment": "absent",
-      "why_it_matters": "This parenthetical (alluding to the Pythagorean prohibition against beans / flatulence) is a characteristic learned-comic aside; its removal slightly flattens Ishmael's pedantic-ironic register.",
-      "suggested_fix": "Restore the parenthetical '(that is, if you never violate the Pythagorean maxim)' in the head-winds sentence."
+      "source_passage": "cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.",
+      "source_locator": "Fates / stage-managers paragraph, closing clause",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft compresses to 'cajoling me into the delusion that it was my own choice,' losing the ironic legalism of 'unbiased freewill and discriminating judgment' which is part of Ishmael's mock-philosophical voice.",
+      "suggested_fix": "Restore the full phrase: 'cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.'"
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's skeleton faithfully but accumulates four medium-severity losses—the 'There is magic in it' sentence, the Providence/grand-programme framing before the playbill, the theological punchline in the paying/being-paid passage, and the hermit-and-crucifix detail in the artist paragraph—each erasing either interpretive weight or signature voice, collectively triggering regeneration."
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signatures (opening paragraph, Narcissus, Providence bill, flood-gates closing) verbatim or near-verbatim; the five findings are two medium-level voice flattenings (omitted Saco woodland sentence and Tennessee-poet question) and three low-level cuts, none rising to regeneration threshold individually, and the medium count does not reach three."
 }

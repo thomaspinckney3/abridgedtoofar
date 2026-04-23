@@ -1,0 +1,62 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "in those jaws of swift destruction, like another cursed Jonah (by which name indeed they called him), bustles a little withered old man, who, for their money, dearly sells the sailors deliriums and death",
+      "source_locator": "paragraph describing the bar/whale's-jaw den",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders this as 'another cursed Jonah who, for their money, dearly sells the sailors deliriums and death' — stripping the parenthetical '(by which name indeed they called him)' which is part of the rhetorical texture, and losing the build-up through the whale-jaw description that makes the Jonah conceit land. The phrase 'deliriums and death' survives but its syntactic framing is compressed.",
+      "suggested_fix": "Restore the fuller sentence structure including the parenthetical '(by which name indeed they called him)' and the preceding detail about 'old decanters, bottles, flasks' to preserve the full gothic-comic buildup."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The more I pondered over this harpooneer, the more I abominated the thought of sleeping with him... I began to twitch all over... Suppose now, he should tumble in upon me at midnight—how could I tell from what vile hole he had been coming?",
+      "source_locator": "paragraphs of Ishmael's anxious deliberation before demanding the bench",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sustained comic-anxious interior monologue — including 'I began to twitch all over' and 'from what vile hole he had been coming' — is pure voice-establishing material. The draft jumps directly from the 'no man prefers to sleep two in a bed' paragraph to 'I declared I'd try the bench,' erasing the escalating paranoia that gives the scene its comic engine.",
+      "suggested_fix": "Restore the 'I abominated the thought' paragraph with at least the key lines about the harpooneer's potentially untidy linen, the twitching, and the midnight speculation — these are the comic texture the scene depends on."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"may be not,\" taking out a stick and whittling a toothpick, \"but I rayther guess you'll be done brown if that ere harpooneer hears you a slanderin' his head.\" \"I'll break it for him,\" said I... \"It's broke a'ready,\" said he.",
+      "source_locator": "the landlord-and-Ishmael dialogue about the head, middle of chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "The full comic escalation of this exchange — the whittling toothpick, 'done brown,' 'I'll break it for him,' 'It's broke a'ready' — is the funniest sustained dialogue in the chapter. The draft compresses this entire back-and-forth to a single sentence, erasing the deadpan wit that is one of Melville's most celebrated comic passages.",
+      "suggested_fix": "Restore the key beats of this exchange: the landlord's whittling, the 'done brown' line, Ishmael's 'I'll break it,' and the landlord's 'It's broke a'ready' rejoinder — these are critically recognized as signature comic prose."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Depend upon it, landlord, that harpooneer is a dangerous man.\" \"He pays reg'lar,\" was the rejoinder.",
+      "source_locator": "after the New Zealand heads explanation",
+      "draft_treatment": "absent",
+      "why_it_matters": "This two-line exchange is one of the most quoted comic deflations in Melville — the moral concern instantly neutralized by commercial practicality. Its absence removes a key moment of satirical voice.",
+      "suggested_fix": "Restore both lines verbatim; they are brief enough to include without budget pressure."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It was cold as Iceland—no fire at all—the landlord said he couldn't afford it. Nothing but two dismal tallow candles, each in a winding sheet. We were fain to button up our monkey jackets, and hold to our lips cups of scalding tea with our half frozen fingers.",
+      "source_locator": "the supper scene",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves 'two dismal tallow candles, each in a winding sheet' and the dumplings but drops 'cold as Iceland,' the monkey jackets, and the scalding tea with half-frozen fingers — the sensory accumulation that makes the scene vivid.",
+      "suggested_fix": "Restore 'cold as Iceland—no fire at all' and the monkey-jacket/scalding-tea detail to maintain the atmospheric texture."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "his very legs were marked, as if a parcel of dark green frogs were running up the trunks of young palms",
+      "source_locator": "description of Queequeg undressing",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is distinctive and memorable — one of the more striking figurative flourishes in Queequeg's introduction. The draft notes the legs were marked but drops the simile entirely.",
+      "suggested_fix": "Restore the frog/palm simile when describing Queequeg's tattooed legs."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's skeleton and several key set-pieces but erases multiple voice-defining passages: the full landlord-Ishmael comic exchange about the broken head (including 'done brown' and 'He pays reg'lar'), Ishmael's anxious pre-bench interior monologue, and several rhetorically distinctive details — together constituting three medium-severity failures that trigger regeneration."
+}

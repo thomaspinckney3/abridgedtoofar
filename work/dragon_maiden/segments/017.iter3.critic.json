@@ -1,0 +1,53 @@
+{
+  "segment_id": "017",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She grinned. 'I'll always be there to give you the good news, now get going.'",
+      "source_locator": "After 'Thanks. That really helps.' and before 'Heather stepped aside.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a character-voice line that completes Heather's sardonic send-off exchange; without it, her personality is truncated and the goodbye feels abrupt rather than warmly comic.",
+      "suggested_fix": "Restore Heather's closing quip verbatim or near-verbatim before Miriam leaps into the portal."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I grinned up at them. 'Um, hi. You don't happen to-' My eyes noticed a large stain over the stones.",
+      "source_locator": "After Miriam stumbles onto the stone platform, before she asks 'Where's Xander?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Miriam's interrupted quip on arrival is a signature voice beat — deflecting shock with attempted humor — and its erasure collapses her narrator register at a pivotal re-entry moment.",
+      "suggested_fix": "Restore the attempted one-liner ('Um, hi. You don't happen to-') cut short by the blood stain, to preserve the narrator's characteristic voice and the tonal contrast with what she sees."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I blinked at him and glanced at his back. 'I don't think I'd-' My mistake was cut short when the slits in the back of his cloak parted",
+      "source_locator": "When Apuleius offers his back before revealing his wings",
+      "draft_treatment": "absent",
+      "why_it_matters": "The interrupted protest followed by the wing reveal is a comedic-ironic beat that defines Miriam's narrating voice; the draft skips straight to the wings, losing the signature rhythm of assumption-then-surprise.",
+      "suggested_fix": "Restore Miriam's skeptical half-sentence before the wing reveal so the comedic interruption structure is preserved."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Like any unprofessional rider I clung tightly to his neck and prayed.",
+      "source_locator": "After Apuleius sweeps Miriam into the air",
+      "draft_treatment": "absent",
+      "why_it_matters": "The self-deprecating aside ('like any unprofessional rider') is a small but characteristic voice marker; its omission continues a pattern of trimming the narrator's ironic asides.",
+      "suggested_fix": "Restore the 'unprofessional rider' beat in the flight sentence."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Stephanie. Darda stood behind them with her husband.",
+      "source_locator": "Description of those gathered at Xander's bedside",
+      "draft_treatment": "absent",
+      "why_it_matters": "Stephanie's presence at Xander's bedside is a character-continuity detail; her omission silently erases a named character from the scene.",
+      "suggested_fix": "Add Stephanie and Darda's husband to the bedside assembly list."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft strips multiple consecutive ironic/comedic voice beats from Miriam's narration (the interrupted quip on arrival, the half-protest before the wing reveal, the 'unprofessional rider' aside, Heather's closing one-liner), producing three medium-severity voice-flattening findings that collectively trigger regeneration."
+}

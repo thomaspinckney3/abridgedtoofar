@@ -3,69 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "So, wherever you go, Ishmael, said I to myself, as I stood in the middle of a dreary street shouldering my bag... wherever in your wisdom you may conclude to lodge for the night, my dear Ishmael, be sure to inquire the price, and don't be too particular.",
-      "source_locator": "paragraph 3, the pocket-sounding and self-address passage",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is a voice-defining moment of Ishmael's ironic self-address; the 'sounded my pocket' metaphor and the dual 'Ishmael' apostrophes establish his sardonic, self-deprecating narrator's consciousness. Its total absence erases a key register marker.",
-      "suggested_fix": "Restore the direct self-address verbatim or nearly so: 'wherever you go, Ishmael, said I to myself… be sure to inquire the price, and don't be too particular.' It is short enough to include within the compression budget."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "\"In judging of that tempestuous wind called Euroclydon,\" says an old writer—of whose works I possess the only copy extant—\"it maketh a marvellous difference, whether thou lookest out at it from a glass window where the frost is all on the outside, or whether thou observest it from that sashless window, where the frost is on both sides, and of which the wight Death is the only glazier.\"",
-      "source_locator": "paragraph on Euroclydon, the mock-quotation from 'an old writer'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This apocryphal quotation and the Euroclydon digression are among the most critically discussed passages in the chapter—the fake learned citation, the Lazarus/Dives contrast, and the meditation on privilege versus poverty are interpretively central to the novel's class and theological themes.",
-      "suggested_fix": "Restore at minimum the fake quotation ('it maketh a marvellous difference…') and the Lazarus/Dives contrast. These are the chapter's philosophical heart and cannot be dropped without interpretive loss."
-    },
-    {
-      "severity": "high",
-      "class": "interpretive_loss",
-      "source_passage": "Poor Lazarus there, chattering his teeth against the curbstone for his pillow… Euroclydon! says old Dives, in his red silken wrapper—(he had a redder one afterwards) pooh, pooh! What a fine frosty night; how Orion glitters",
-      "source_locator": "Lazarus/Dives digression, after the Euroclydon quotation",
-      "draft_treatment": "absent",
-      "why_it_matters": "The Lazarus/Dives parable — including the parenthetical '(he had a redder one afterwards)' — is one of the most discussed passages of social irony in the novel and carries the chapter's moral and theological weight. Its complete absence is a major interpretive loss.",
-      "suggested_fix": "Restore the Lazarus/Dives contrast including Dives's dismissal ('pooh, pooh! What a fine frosty night') and at minimum the closing line about living like a Czar in an ice palace made of frozen sighs."
-    },
-    {
-      "severity": "high",
-      "class": "voice_erasure",
-      "source_passage": "But no more of this blubbering now, we are going a-whaling, and there is plenty of that yet to come. Let us scrape the ice from our frosted feet, and see what sort of a place this \"Spouter\" may be.",
-      "source_locator": "final paragraph of source",
-      "draft_treatment": "absent",
-      "why_it_matters": "This closing line is a signature self-interruption that pivots from digression back to narrative; 'we are going a-whaling' is a famous tonal marker, and 'scrape the ice from our frosted feet' is a vivid, register-defining image. The chapter ends flatly in the draft without it.",
-      "suggested_fix": "Restore verbatim as the chapter's closing line — it is brief and cannot be compressed further without erasure."
-    },
-    {
       "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Nantucket was her great original—the Tyre of this Carthage;—the place where the first dead American whale was stranded… partly laden with imported cobblestones—so goes the story—to throw at the whales",
-      "source_locator": "paragraph 2, Nantucket defense",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft retains 'Tyre of this Carthage' but drops the cobblestones anecdote, which is the chapter's most whimsical and distinctive historical digression and a marker of Melville's satirical historical voice.",
-      "suggested_fix": "Restore the cobblestone sloop anecdote ('partly laden with imported cobblestones—so goes the story—to throw at the whales') — it is short and tonally irreplaceable."
+      "class": "voice_flattening",
+      "source_passage": "it may as well be related that I, for one, had no idea of so doing. For my mind was made up to sail in no other than a Nantucket craft",
+      "source_locator": "paragraph 2, opening clause",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The self-conscious narratorial aside ('it may as well be related that I, for one') is a voice-establishing gesture of Ishmael's ironic self-presentation; stripping it removes the narrator's characteristic mock-formality.",
+      "suggested_fix": "Restore 'it may as well be related that I, for one, had no idea of so doing' before the Nantucket-craft declaration."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "your patched boots are stopping the way. So on I went.",
-      "source_locator": "Sword-Fish Inn paragraph, internal monologue continuation",
-      "draft_treatment": "absent",
-      "why_it_matters": "The patched boots detail and the self-dismissal ('your patched boots are stopping the way') are voice-establishing class markers and part of the comic self-address pattern; their loss flattens the narrator's ironic self-portraiture.",
-      "suggested_fix": "Restore 'your patched boots are stopping the way. So on I went.' in conjunction with the fuller self-address passage."
+      "source_passage": "a very dubious-looking, nay, a very dark and dismal night, bitingly cold and cheerless",
+      "source_locator": "paragraph 3, description of the night",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The rhetorical self-correction ('dubious-looking, nay, a very dark') is a signature Ishmael move—hesitation-then-amplification—that the draft flattens to plain 'a very dark and dismal night.'",
+      "suggested_fix": "Restore 'a very dubious-looking, nay, a very dark and dismal night' to preserve the narrator's characteristic self-correcting rhetoric."
     },
     {
-      "severity": "medium",
+      "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "It was a queer sort of place—a gable-ended old house, one side palsied as it were, and leaning over sadly. It stood on a sharp bleak corner, where that tempestuous wind Euroclydon kept up a worse howling than ever it did about poor Paul's tossed craft.",
-      "source_locator": "opening of Spouter-Inn exterior description",
-      "draft_treatment": "absent",
-      "why_it_matters": "The physical description of the Spouter-Inn ('one side palsied as it were') and the first introduction of Euroclydon (with its biblical allusion to Paul) are omitted entirely; this erases the atmospheric and theological framing of the Lazarus digression.",
-      "suggested_fix": "Restore at minimum the 'palsied' description and the first Euroclydon reference before the quoted passage, so the digression has its proper setup."
+      "source_passage": "It was a negro church; and the preacher's text was about the blackness of darkness",
+      "source_locator": "paragraph 6 (Black Parliament paragraph)",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft changes 'was about the blackness of darkness' to 'was of the blackness of darkness'—a minor verbal shift, but 'about' is the source reading and the phrasing is thematically charged.",
+      "suggested_fix": "Restore 'was about the blackness of darkness' verbatim."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "and heard a forlorn creaking in the air; and looking up, saw a swinging sign over the door",
+      "source_locator": "paragraph 7, approach to the Spouter Inn",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft drops 'heard a forlorn creaking in the air'—a sensory, atmospherically distinctive detail that introduces the Spouter Inn aurally before visually, characteristic of Melville's layered scene-setting.",
+      "suggested_fix": "Restore 'heard a forlorn creaking in the air' before 'looking up, saw a swinging sign.'"
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft catastrophically drops the entire Euroclydon digression including the apocryphal quotation, the Lazarus/Dives parable, and the chapter's closing line — all high-priority interpretive and voice-defining passages — while also omitting the self-address pocket-sounding passage and the Spouter-Inn exterior description."
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all high-priority signature passages verbatim, including the Nantucket-as-Tyre-of-Carthage passage, the Ishmael self-address, the Euroclydon digression, and the Dives/Lazarus meditation; four minor voice-flattening instances noted but none rise to high severity."
 }

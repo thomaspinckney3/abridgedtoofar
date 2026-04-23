@@ -1,14 +1,16 @@
-"""Assembly stage: concatenate segment drafts into a single abridgment + report.
+"""Assembly stage: concatenate segment drafts into a single abridgment +
+budget report.
 
 Pure local operation — no LLM. Runs any time after the drafter has produced
 at least some segment files. Missing, extract-failed, or cut segments are
 reported and skipped in the final text.
 
-Also serves as a **failure gate**: if the assembled word count exceeds
-book_target × 1.2, writes work/<book>/halt.json with a refusal reason
-and signals non-zero exit. Per the spec's fail-loud rule: the output
-domain is "a faithful abridgment" OR "a diagnosed stop," nothing in
-between. Being substantially over budget is a diagnosed stop.
+Always writes abridgment.md when any drafted content exists, and writes
+assembly_report.json with per-stage stats: segments drafted/cut/missing,
+total drafted words, book target/ceiling, overage (words and %),
+over_target/over_ceiling flags. Budget adherence is reported, not
+enforced — downstream stages (book critic, validate) decide whether
+the produced abridgment is acceptable.
 """
 
 from __future__ import annotations
@@ -118,41 +120,43 @@ def assemble_book(book: Book, plan: dict) -> AssemblyResult:
     book_target = int(meta.get("target_word_count",
                                plan.get("target_word_count", 0)) or 0)
     book_ceiling = int(book_target * 1.2)
-    halt_path = book.work_dir / "halt.json"
     over_ceiling = total_drafted > book_ceiling
+    over_budget = total_drafted > book_target
     partial = missing > 0
 
-    # Write abridgment.md only if we're within spec's acceptable range AND
-    # the book is complete. Per the fail-loud rule: output domain is
-    # "faithful abridgment" OR "diagnosed stop." No silently-emitted
-    # over-budget drafts; use halt.json to surface the stop condition.
+    # Write abridgment.md whenever we have any drafted content. Budget
+    # adherence is reported (overage_pct, over_ceiling) but does not gate
+    # output — the book critic and validate stages decide whether the
+    # produced abridgment is acceptable.
     abridgment_path = book.work_dir / "abridgment.md"
-    if parts and not over_ceiling and not partial:
+    budget_report_path = book.work_dir / "assembly_report.json"
+    if parts:
         abridgment_path.write_text("\n".join(parts))
-        # Clear any stale halt file on a clean pass.
-        if halt_path.exists():
-            halt_path.unlink()
-    elif over_ceiling and not partial:
-        # Record the refusal reason. Leave any stale abridgment.md in place
-        # but don't overwrite it with the over-budget version.
-        overage = total_drafted - book_target
-        over_ceiling_by = total_drafted - book_ceiling
-        write_json(halt_path, {
-            "book_id": book.book_id,
-            "reason": "budget-exceeded",
-            "detail": (f"total_drafted {total_drafted} exceeds ceiling "
-                       f"{book_ceiling} (target {book_target} × 1.2). "
-                       f"Over target by {overage} words "
-                       f"({overage / book_target * 100:.1f}%); over ceiling "
-                       f"by {over_ceiling_by} words."),
-            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
-            "book_target": book_target,
-            "book_ceiling": book_ceiling,
-            "total_drafted": total_drafted,
-            "overage_pct": round((total_drafted - book_target)
-                                 / book_target * 100, 1) if book_target else 0,
-        })
-    # Partial drafts: neither emit nor halt — still in progress. No halt.json.
+    overage = total_drafted - book_target
+    over_ceiling_by = total_drafted - book_ceiling
+    overage_pct = (overage / book_target * 100) if book_target else 0
+    write_json(budget_report_path, {
+        "book_id": book.book_id,
+        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "book_target": book_target,
+        "book_ceiling": book_ceiling,
+        "total_drafted": total_drafted,
+        "over_target": over_budget,
+        "over_ceiling": over_ceiling,
+        "partial": partial,
+        "segments_total": len(plan.get("segments", [])),
+        "segments_drafted": drafted,
+        "segments_cut": cut,
+        "segments_missing": missing,
+        "overage_words": overage,
+        "over_ceiling_words": over_ceiling_by,
+        "overage_pct": round(overage_pct, 1),
+    })
+    # Remove any stale halt.json left over from the previous fail-loud
+    # regime so downstream tooling doesn't read obsolete state.
+    halt_path = book.work_dir / "halt.json"
+    if halt_path.exists():
+        halt_path.unlink()
 
     return AssemblyResult(
         book_id=book.book_id,

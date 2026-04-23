@@ -1,0 +1,35 @@
+{
+  "segment_id": "010",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The woods weren't as friendly close up as they were from afar. The thick limbs of the ancient trees blocked out the moon, and there were no paths.",
+      "source_locator": "paragraph 3, description of entering the woods",
+      "draft_treatment": "absent",
+      "why_it_matters": "This observational beat establishes the narrator's wry, slightly ironic voice — the contrast between expectation and reality is a recurring register note in the chapter.",
+      "suggested_fix": "Add a brief clause preserving the 'not as friendly close up as from afar' contrast when describing entering the woods."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Below me the town twinkled with festive lights, no doubt from the Maiden choosing. The whole place was madness.",
+      "source_locator": "paragraph 2, during the hillside escape",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's dry editorial aside ('The whole place was madness') is a small but characteristic voice beat that marks the narrator's perspective on the ritual; its omission slightly flattens register.",
+      "suggested_fix": "Insert the glance at the town's festive lights and the sardonic 'The whole place was madness' during the escape description."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I'm not going back there, and you're going to let those other-\" My not-so-eloquent speech was interrupted by the twinkling of laughter.",
+      "source_locator": "paragraph after the lord says he will punish her",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The self-deprecating parenthetical 'My not-so-eloquent speech' is a signature voice beat of the narrator's ironic self-awareness; the draft simply cuts to 'a tirade that was cut short,' losing the narrator's wry self-commentary.",
+      "suggested_fix": "Restore 'My not-so-eloquent speech was interrupted' or equivalent self-deprecating phrasing rather than the neutral 'a tirade that was cut short.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful, preserving all major plot beats, the water-spirit encounter, and key quoted dialogue verbatim; only minor voice-register notes and small ironic asides from the source narrator are absent or flattened, none rising above low severity."
+}

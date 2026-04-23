@@ -1,0 +1,71 @@
+{
+  "segment_id": "012",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The lord shut his eyes and ground his teeth together. His breathing came out in quick gasps, and he appeared in pain. 'Are you allright?'",
+      "source_locator": "paragraph 6, after 'I petted the wing with one hand'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's concern and the beat of apparent pain before the reveal of erotic sensitivity is a character-establishing micro-scene; its removal flattens the comedic/dramatic reversal that follows.",
+      "suggested_fix": "Restore the lord shutting his eyes and grinding his teeth, the narrator's worried question, and the punchline reversal before he explains the wings' sensitivity."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the smells, too, swirled around me in a soft blanket",
+      "source_locator": "paragraph 9, after 'the lord wrapped his arms around me'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sensory metaphor of scent as a 'soft blanket' is a signature atmospheric image establishing the dragon's pheromone seduction; the draft cuts it, reducing the scene's distinctive mood.",
+      "suggested_fix": "Restore 'the smells, too, swirled around me in a soft blanket' or a close equivalent after describing the lilac/grass scents."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
+      "source_locator": "paragraph 11, after 'He wrapped his wings around me in a warm embrace'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile is the chapter's central transformation metaphor—physically enacted (dragon wings, cocooning) and thematically resonant (Maiden's transformation). The draft awkwardly doubles 'cocoon' and loses the 'long, comforting nap' beat that carries the emotional register.",
+      "suggested_fix": "Restore verbatim: 'I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly,' replacing the garbled double-cocoon phrasing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "They consumed me like a man starved of food who had finally found his feast.",
+      "source_locator": "paragraph 15, after 'He drew the flimsy gown over my head and flung it aside'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is the chapter's most rhetorically distinctive line describing the lord's gaze; it establishes predatory hunger as eroticized longing, a key interpretive note for the dragon-maiden dynamic.",
+      "suggested_fix": "Restore the feast simile when the draft describes the lord looking down at the narrator after removing the gown."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My sultry voice dripped with desire. 'Yes. More. So much more.' … 'So… tight,' he gasped. … 'So wonderful.'",
+      "source_locator": "paragraphs 21–23, the exchange during intercourse",
+      "draft_treatment": "absent",
+      "why_it_matters": "The spoken dialogue during the act—including 'So…tight' and 'So wonderful'—is the chapter's most intimate verbal exchange and defines the narrator's active, desiring voice rather than passive receipt; its loss flattens character agency.",
+      "suggested_fix": "Restore the dialogue exchange: his gasped 'So…tight,' her nibble at his ear, and her voiced 'Yes. More. So much more.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "His warm breath ghosted across my tingling flesh.",
+      "source_locator": "paragraph 10, before 'Beautiful, like you'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The tactile image of breath 'ghosting' is a prosodically distinctive verb choice that registers the supernatural quality of the encounter; its removal is minor but contributes to cumulative voice thinning.",
+      "suggested_fix": "Add 'His warm breath ghosted across my tingling flesh' before his 'Beautiful, like you' line."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "My sensual torture was his.",
+      "source_locator": "paragraph 13, end of the pre-bed stroking passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This four-word sentence is the chapter's most rhetorically compressed moment of mirroring desire; its brevity and chiastic reversal are signature stylistically.",
+      "suggested_fix": "Restore 'My sensual torture was his.' as a stand-alone sentence in the build-up sequence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has four medium-severity failures—the wing-sensitivity comedic beat, the scent-blanket image, the feast simile, and the in-coitus dialogue—plus the caterpillar simile is garbled; together they constitute three or more medium findings, requiring regeneration."
+}

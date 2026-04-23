@@ -1,0 +1,62 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "by throwing open the little window towards the back of the entry, you at last come to the conclusion that such an idea, however wild, might not be altogether unwarranted",
+      "source_locator": "paragraph 1, describing the painting",
+      "draft_treatment": "absent",
+      "why_it_matters": "The passage establishes the narrator's comic-investigative method of 'arriving at conclusions' about the painting — the joke about opening the window to get a better look at chaos is voice-defining irony that sets up the whole painting description.",
+      "suggested_fix": "Restore the sentence about throwing open the little window and the wry conclusion; it belongs in the painting paragraph and carries the chapter's characteristic ironic method."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was the unnatural combat of the four primal elements.—It's a blasted heath.—It's a Hyperborean winter scene.—It's the breaking-up of the icebound stream of Time. But at last all these fancies yielded to that one portentous something in the picture's midst. That once found out, and all the rest were plain.",
+      "source_locator": "paragraph 2, the painting interpretations",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the list of guesses but omits the clinching sentence 'That once found out, and all the rest were plain' — a signature rhetorical move that mirrors the book's larger interpretive logic of reading signs. Its loss flattens the passage from interpretive drama to mere catalogue.",
+      "suggested_fix": "Add 'But at last all these fancies yielded to that one portentous something in the picture's midst. That once found out, and all the rest were plain.' before the pivot to the whale identification."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Some were thickly set with glittering teeth resembling ivory saws; others were tufted with knots of human hair",
+      "source_locator": "paragraph 4, the weapons wall",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reverses and abbreviates the description of the weapons — the ivory-saw teeth detail is dropped and the ordering is disrupted. This is precisely the kind of ethnographic-grotesque catalogue that is signature Melville and sets the cannibal-savage atmosphere for Queequeg's arrival.",
+      "suggested_fix": "Restore 'Some were thickly set with glittering teeth resembling ivory saws' in the weapons paragraph before the human-hair knots detail."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I thought ye know'd it;—didn't I tell ye, he was a peddlin' heads around town?—but turn flukes again and go to sleep. Queequeg, look here—you sabbee me, I sabbee—you this man sleepe you—you sabbee?",
+      "source_locator": "near end, landlord's speech after Queequeg's entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "The landlord's pidgin-to-Queequeg and the whole comic exchange establishing the cross-cultural communication is erased. The 'sabbee' dialogue is a signature passage of comic cross-cultural register and also narratively important in showing how the landlord mediates between Ishmael and Queequeg.",
+      "suggested_fix": "Restore the landlord's 'sabbee' exchange and the full scene of his mediation — these lines are too distinctive to cut."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Landlord,",
+      "tell him to stash his tomahawk there, or pipe, or whatever you call it... I ain't insured.": "source_locator\": \"final exchange, Ishmael negotiating the tomahawk",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The punch-line 'Besides, I ain't insured' is the chapter's final comic beat and a famous Melvillian quip. The draft summarizes the request without preserving the joke.",
+      "suggested_fix": "Restore Ishmael's full speech to the landlord including 'It's dangerous. Besides, I ain't insured.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "getting into a towering rage. 'Do you pretend to say, landlord, that this harpooneer is actually engaged this blessed Saturday night, or rather Sunday morning, in peddling his head around this town?'",
+      "source_locator": "the head-peddling dialogue",
+      "draft_treatment": "absent",
+      "why_it_matters": "The escalating comic rage of Ishmael — 'this blessed Saturday night, or rather Sunday morning' — is the voice-peak of the head-peddling sequence and its ironic religiosity is both funny and thematically resonant. The draft collapses this to bare narration.",
+      "suggested_fix": "Restore at least one or two of the verbatim outburst lines to preserve the comic register of the dialogue."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's plot and several signature passages but loses or flattens four or more medium-weight voice moments — the window-opening irony in the painting scene, the clinching 'That once found out' sentence, the weapons catalogue detail, and critically the landlord's 'sabbee' cross-cultural comedy — collectively constituting sufficient voice erosion to require regeneration."
+}

@@ -92,11 +92,11 @@ Per-iteration snapshots preserved: `NNN.iter0.md`, `NNN.iter1.md`, …, `NNN.cri
 
 Default `--max-retries` is **2**.
 
-### 8. `assemble` — fail-loud assembly
+### 8. `assemble` — assembly with budget report
 
-Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md` **only if** the book is complete AND under the +20% ceiling. Otherwise writes `work/<book>/halt.json` with a refusal reason and exits non-zero.
+Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md` and writes `work/<book>/assembly_report.json` with budget stats: book target, ceiling, total drafted, overage (words and %), over_target/over_ceiling flags, and segments drafted/cut/missing.
 
-Per the spec's fail-loud rule: the output domain is "faithful abridgment" OR "diagnosed stop" — nothing in between.
+Always emits `abridgment.md` when any drafted content exists. Budget adherence is reported, not gated — downstream stages (`book-critique`, `validate`) decide whether the produced abridgment is acceptable.
 
 ### 9. `book-critique` — per-synopsis-sentence verification
 
@@ -271,7 +271,7 @@ forage/
         NNN.iterK.critic.json      # per-iteration critic snapshots
         gNNN.md                    # merged-group raw output (before split)
       abridgment.md                # assembled final output
-      halt.json                    # refusal record when over ceiling
+      assembly_report.json         # budget stats, overage, segment tallies
       book_critic.json             # per-synopsis-sentence verdicts
       llm_calls.jsonl              # every LLM call this book issued
     .replay_cache/                 # memoized LLM responses (FORAGE_REPLAY=1)

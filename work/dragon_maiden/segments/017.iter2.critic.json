@@ -1,0 +1,53 @@
+{
+  "segment_id": "017",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She dragged me to my butt-mark in the dirt and arranged us so we faced each other.",
+      "source_locator": "paragraph 10, after 'Maybe what's it?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'butt-mark in the dirt' detail is a comic, voice-defining beat that grounds the scene in Miriam's wry self-deprecation; its absence flattens the exchange into generic action.",
+      "suggested_fix": "Restore the 'butt-mark in the dirt' staging line to preserve the comic register before Heather's theory."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle.",
+      "source_locator": "paragraph after 'Like any unprofessional rider I clung tightly to his neck and prayed.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic hyperbole ('bartering my soul') is Miriam's most voice-defining line in the flight sequence and establishes her ironic register under duress; its removal leaves only bare travel fact.",
+      "suggested_fix": "Restore the 'bartering my soul' line and the 'eternity for my heart' coda—they are the only voice material in the flight passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I wondered how many doors were shut to this priestly fellow.",
+      "source_locator": "paragraph beginning 'He led me through the maze of corridors'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aside is a characteristic narratorial digression—dry humor amid crisis—that establishes the narrator's refusal to surrender irony even in a desperate scene; erasing it flattens voice.",
+      "suggested_fix": "Insert the 'I wondered how many doors were shut to this priestly fellow' interjection after the guards bow and open the door."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Like any unprofessional rider I clung tightly to his neck and prayed.",
+      "source_locator": "paragraph after Apuleius sweeps Miriam into his arms",
+      "draft_treatment": "absent",
+      "why_it_matters": "A small but characteristically self-mocking line that marks Miriam's voice; its loss is minor but consistent with a pattern of comic-aside erasure in this draft.",
+      "suggested_fix": "Restore this line when describing the airborne departure."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She grinned. 'I'll always be there to give you the good news, now get going.'",
+      "source_locator": "farewell exchange between Miriam and Heather, after 'Thanks. That really helps.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Heather's parting quip is a small character-voice beat that closes the human-world segment on a note of warmth and comedy; the draft cuts it, ending the farewell abruptly.",
+      "suggested_fix": "Restore Heather's 'I'll always be there to give you the good news' line before Miriam leaps."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity voice-flattening losses—the 'butt-mark in the dirt' staging beat, the 'bartering my soul' flight hyperbole, and the 'I wondered how many doors' priestly aside—collectively erase the chapter's comic-ironic register and trigger regeneration."
+}

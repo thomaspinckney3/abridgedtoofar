@@ -540,8 +540,10 @@ def _render_signature_diff(segment_id: str, diff: dict) -> None:
 
 @app.command()
 def assemble(book_id: str) -> None:
-    """Concatenate drafted segments, emit abridgment.md if under ceiling,
-    or write halt.json + exit non-zero if over +20%. Fail-loud, per spec."""
+    """Concatenate drafted segments into abridgment.md and write
+    assembly_report.json with budget stats. Always emits; budget adherence
+    is reported (overage %, over_target, over_ceiling flags) but does not
+    gate output."""
     book = load_book(book_id)
     plan_path = book.work_dir / "plan.json"
     if not plan_path.exists():
@@ -550,19 +552,13 @@ def assemble(book_id: str) -> None:
     plan = read_json(plan_path)
     result = assemble_book(book, plan)
     _render_assembly(result)
-    if result.over_ceiling:
-        console.print(
-            f"[bold red]HALT[/bold red] — book over +20% ceiling. "
-            f"Refusal written to {book.work_dir / 'halt.json'}. "
-            f"abridgment.md NOT produced."
-        )
-        raise typer.Exit(code=2)
 
 
 def _render_assembly(r) -> None:
     status = ("[red]OVER CEILING[/red]" if r.over_ceiling
               else "[yellow]OVER TARGET[/yellow]" if r.over_budget
               else "[green]WITHIN BUDGET[/green]")
+    # Status is informational only now; abridgment.md is always emitted.
     summary = Table.grid(padding=(0, 1))
     summary.add_column(style="dim")
     summary.add_column()

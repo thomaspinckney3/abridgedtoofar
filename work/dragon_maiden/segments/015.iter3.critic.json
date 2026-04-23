@@ -1,0 +1,53 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "more wrinkles than an unsettled pond",
+      "source_locator": "paragraph describing Jethro's appearance",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "This simile is the chapter's most stylistically distinctive ornament—an unexpected, slightly comic comparison that defines the narrator's voice register. The draft preserves it verbatim, but attribution is subtly shifted: in the source the narrator (Kat) observes it; in the draft it reads as straight narration. Minor but the surrounding comic framing is intact.",
+      "suggested_fix": "No fix needed—phrase is preserved verbatim and in context."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The man collided with the Portal and let out a horrible scream before he burst into dust.",
+      "source_locator": "battle scene, after the dragon seizes the monk",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source specifies the monk 'collided with the Portal and let out a horrible scream before he burst into dust'—the sequence (collision → scream → disintegration) is the narrative beat. The draft compresses to 'struck the surface, screamed, and disintegrated into dust,' losing 'horrible' and the word 'before' which carries the time-order irony of the scream preceding annihilation.",
+      "suggested_fix": "Restore: 'let out a horrible scream before he burst into dust.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Stephanie and I ducked as he flew past.",
+      "source_locator": "after the dragon seizes the monk",
+      "draft_treatment": "absent",
+      "why_it_matters": "The source includes 'We ducked' after ducking as the monk flew past, establishing the close physical danger in two distinct beats. The draft merges 'We ducked' with the death description, erasing the small beat of fear.",
+      "suggested_fix": "Minor; add 'We ducked as he swept overhead' as a separate sentence."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "The earth shook as it struck the dirt near the platform. Stephanie cried out and clung to me.",
+      "source_locator": "after the first enemy dragon crashes",
+      "draft_treatment": "absent",
+      "why_it_matters": "The earth tremor and Stephanie clinging to the narrator are small but concrete sensory and relational beats that ground the battle's physical threat and the women's bond.",
+      "suggested_fix": "Add 'The earth shook on impact; Stephanie cried out and clung to me' after the dragon crashes."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I gave her a bitter smile and shrugged. 'I was just-'",
+      "source_locator": "after Stephanie says 'I'm sorry'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source gives Kat 'a bitter smile and shrugged' before her line is cut off—this small gesture characterizes her resigned stoicism. The draft drops the gesture entirely and jumps straight to the interrupted speech.",
+      "suggested_fix": "Restore: 'I gave her a bitter smile and shrugged. \"I was just—\"'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful with no high-severity signature losses; several minor voice and sensory beats are flattened or absent but no single failure is severe enough to require regeneration."
+}

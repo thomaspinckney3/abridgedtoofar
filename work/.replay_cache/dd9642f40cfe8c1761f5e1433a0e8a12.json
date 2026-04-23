@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-22T23:57:29",
+  "key": "dd9642f40cfe8c1761f5e1433a0e8a12",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "I cannot evaluate a draft against the source because **no draft text was provided** \u2014 the \"Draft text\" section is empty.\n\n```json\n{\n  \"segment_id\": \"017\",\n  \"critic\": \"signature\",\n  \"findings\": [\n    {\n      \"severity\": \"high\",\n      \"class\": \"other\",\n      \"source_passage\": \"entire Chapter 13 source text (\u22481100 words)\",\n      \"source_locator\": \"full segment\",\n      \"draft_treatment\": \"absent\",\n      \"why_it_matters\": \"No draft text was supplied in the 'Draft text' section; there is nothing to evaluate against the source, meaning all source content \u2014 including every signature passage \u2014 is effectively absent from the draft.\",\n      \"suggested_fix\": \"Supply the actual draft text for Chapter 13 and resubmit for evaluation.\"\n    }\n  ],\n  \"verdict\": \"regenerate\",\n  \"summary\": \"Draft text field is empty; the draft is entirely missing, so all signature content is absent by definition.\"\n}\n```",
+    "input_tokens": 2,
+    "output_tokens": 244,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3840,
+    "duration_s": 6.310221195220947,
+    "stop_reason": "end_turn"
+  }
+}

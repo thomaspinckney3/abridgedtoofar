@@ -1,0 +1,71 @@
+{
+  "segment_id": "010",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I snorted. \"You're the one who's transgressed. Several kidnapping laws, if I'm not mistaken.\"",
+      "source_locator": "paragraph 9, after dragon lord appears across the pond",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the narrator's defining voice moment — defiant, sardonic wit under genuine threat. It establishes the register of the entire protagonist-dragon-lord dynamic and is the first spoken line of the confrontation.",
+      "suggested_fix": "Restore verbatim or within one word; this line must appear in the draft."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I held it up in a throwing position. \"Get away! I know how to use this!\" I shot back.",
+      "source_locator": "paragraph 10, after narrator grabs river stone",
+      "draft_treatment": "absent",
+      "why_it_matters": "Comic bravado with a river stone is a tonal signature — it undercuts the high-fantasy scene with self-aware humour and is the inciting action that summons the water spirit.",
+      "suggested_fix": "Include the rock-throwing exchange verbatim; it is load-bearing for both comedy and plot."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"My, my, Dragon Lord, but you have chosen a wild one. She has escaped your castle, eluded your men, violated my waters, and now berates you before me, all in one night.\"",
+      "source_locator": "paragraph 22, the water-spirit's speech to the dragon lord",
+      "draft_treatment": "absent",
+      "why_it_matters": "This speech is the thematic summary of the chapter and the only external validation of the protagonist's agency; it also establishes the water spirit's amused, superior voice and the heroine's reputation.",
+      "suggested_fix": "Restore this speech in full or near-verbatim; it is interpretively irreplaceable."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"It won't? What a pity, for it amuses me.\"",
+      "source_locator": "paragraph 24, water spirit's reply to the lord's apology",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the sharpest, most quotable line in the chapter; it inverts power dynamics between the lord and the spirit and characterises the spirit's capricious benevolence.",
+      "suggested_fix": "Include verbatim — it is a one-sentence register signature that cannot be paraphrased away."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "\"May your body grow with your love, and let it accept your master in all his forms as your form.\"",
+      "source_locator": "paragraph 25, the blessing/curse spoken by the water spirit",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's central plot-mythological event — the water spirit's blessing/enchantment on the Maiden. It foreshadows transformation and the dragon-lord relationship; all subsequent plot interpretation depends on this exact wording.",
+      "suggested_fix": "Restore verbatim; this is the single most interpretively weighted sentence in the segment."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "Anger makes one forget their predicament, and mine was no exception. I jumped to my feet and glared at him. \"Like hell you are!\"",
+      "source_locator": "paragraph 21, narrator's outburst interrupting the lord",
+      "draft_treatment": "absent",
+      "why_it_matters": "The generalising opener followed by the defiant outburst is exactly the voice-establishing formula Mac Flynn uses throughout; it is also the moment that provokes the spirit's laughter and advances plot.",
+      "suggested_fix": "Restore the line including the generalising aside; the 'Like hell you are!' must appear verbatim."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "That was no mirage of an insane person. The world spun around me as I clutched my head and swayed from side-to-side.",
+      "source_locator": "final two paragraphs of the chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "The wry self-aware aside ('no mirage of an insane person') is a closing voice signature that reframes the supernatural event through the narrator's ironic consciousness before she loses consciousness.",
+      "suggested_fix": "Restore the closing paragraphs including this exact aside and the final image of the dragon lord catching her."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft is entirely absent — no text is present at all — resulting in total loss of every signature, voice moment, and interpretively critical passage in this chapter."
+}

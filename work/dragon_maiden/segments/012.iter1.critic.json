@@ -1,0 +1,53 @@
+{
+  "segment_id": "012",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
+      "source_locator": "after 'He wrapped his wings around me in a warm embrace'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's most distinctive figurative image — a narratorial simile that establishes the transformation motif central to the novel's arc. Its absence erases both voice and interpretive weight.",
+      "suggested_fix": "Restore the caterpillar/butterfly simile verbatim; it is the chapter's clearest signature image and cannot be paraphrased without loss."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "A strange smell wafted into my nostrils. It was the fragrance of lilacs in spring and of newly cut grass in early summer, my favorite smells. All my fear melted away beneath such comforting scents.",
+      "source_locator": "paragraph beginning 'A strange smell wafted'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The scent-seduction passage is the chapter's key supernatural mechanism and the pivot from fear to consent; its complete absence removes the causal logic of the narrator's capitulation.",
+      "suggested_fix": "Restore the scent description (lilacs in spring, cut grass in early summer, 'my favorite smells') and the line 'All my fear melted away' — these are load-bearing for plot and character consent arc."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "\"Will you allow me to take you as my own? To make you mine and no other?\" … \"Then you will be mine until I release you.\"",
+      "source_locator": "exchange before penetration, after 'His finger moved faster'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This verbal contract of possession ('mine until I release you') is the chapter's interpretive keystone — it defines the legal/magical terms of the Maiden bond and is the moment readers and critics point to when analyzing consent and power.",
+      "suggested_fix": "Restore the full consent-bargain dialogue verbatim, including the lord's closing line about release; it is structurally and thematically irreplaceable."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't.",
+      "source_locator": "paragraph beginning 'W-what are you doing to me'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This internal confession is the narrator's clearest articulation of her conflicted agency and the captivity frame; erasing it removes the self-aware irony that defines her voice throughout the novel.",
+      "suggested_fix": "Restore the narrator's internal resistance-and-surrender passage; at minimum the 'kidnapped me and made me his slave' framing must survive to preserve interpretive context."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"I consider myself only half dragon. My mother was a Maiden like yourself, and my father took her as his bride,\" he revealed.",
+      "source_locator": "early dialogue, after 'You're really a dragon, aren't you'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The lord's half-dragon origin is world-building exposition delivered here for the first time; it is interpretively essential to understanding the Maiden mythology and the lord's own identity.",
+      "suggested_fix": "Restore the half-dragon revelation dialogue verbatim; it is the chapter's primary lore disclosure and cannot be cut."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft appears to be entirely absent or a near-blank placeholder — every major passage in Chapter 8, including the scent-seduction mechanism, the caterpillar simile, the consent-bargain dialogue, the narrator's captivity self-awareness, and the half-dragon origin disclosure, is completely missing, constituting catastrophic signature and interpretive loss."
+}

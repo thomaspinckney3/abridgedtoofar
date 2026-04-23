@@ -3,33 +3,24 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Much was I disappointed upon learning that the little packet for Nantucket had already sailed",
-      "source_locator": "paragraph 1",
-      "draft_treatment": "fragment_preserved",
-      "why_it_matters": "Minor omission: the draft drops the framing paragraph about 'most young candidates for the pains and penalties of whaling' stopping at New Bedford, which establishes Ishmael's self-aware voice positioning himself against the norm.",
-      "suggested_fix": "Restore the opening sentence of paragraph 2 ('As most young candidates for the pains and penalties of whaling stop at this same New Bedford') as it establishes the narrator's ironic self-positioning."
-    },
-    {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "It was a very dubious-looking, nay, a very dark and dismal night, bitingly cold and cheerless.",
-      "source_locator": "paragraph 3",
+      "source_passage": "As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage, it may as well be related",
+      "source_locator": "paragraph 2, opening sentence",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft drops 'a very dubious-looking, nay,' — the self-correcting, escalating rhetoric is a signature Melville voice move; 'nay' is the pivot that gives the sentence its rhetorical personality.",
-      "suggested_fix": "Restore 'a very dubious-looking, nay,' before 'a very dark and dismal night' to preserve the characteristic self-correcting rhetorical gesture."
+      "why_it_matters": "The ironic framing of whaling candidates accepting 'pains and penalties' is voice-establishing; the draft drops the opening clause entirely, beginning mid-sentence without the satirical setup.",
+      "suggested_fix": "Restore 'As most young candidates for the pains and penalties of whaling stop at this same New Bedford, thence to embark on their voyage' before the retained clause."
     },
     {
       "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "heard a forlorn creaking in the air; and looking up, saw a swinging sign over the door with a white painting upon it, faintly representing",
+      "class": "other",
+      "source_passage": "and heard a forlorn creaking in the air; and looking up, saw a swinging sign over the door with a white painting upon it, faintly representing",
       "source_locator": "paragraph before 'Coffin?—Spouter?'",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft omits 'heard a forlorn creaking in the air' — a small but atmospheric detail that contributes to the gothic mood-building sequence leading to the Spouter Inn's introduction.",
-      "suggested_fix": "Restore 'heard a forlorn creaking in the air; and' before 'looking up, saw a swinging sign' to preserve the sensory atmosphere."
+      "why_it_matters": "The draft omits 'heard a forlorn creaking in the air' and 'over the door with a white painting upon it,' losing the atmospheric auditory detail and the explicit description of the painting that precedes the verbal sign.",
+      "suggested_fix": "Restore the forlorn creaking and the mention of the white painting in the sign description."
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is largely faithful, preserving all major signature passages including the Nantucket-as-Tyre passage, the Ishmael self-address, the Black Parliament scene, the Euroclydon digression, and the Lazarus/Dives extended metaphor verbatim; only minor voice flattening in two small rhetorical gestures and one dropped contextual paragraph."
+  "summary": "The draft is largely faithful, preserving nearly all signature passages including the Ishmael soliloquy, 'The Trap' sequence, Tophet paragraph, Euroclydon digression, and Lazarus/Dives meditation verbatim; two minor voice flattenings are present but neither rises to high severity."
 }

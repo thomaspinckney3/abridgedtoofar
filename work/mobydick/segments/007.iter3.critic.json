@@ -1,0 +1,53 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Let me try to explain them. When I was a child, I well remember a somewhat similar circumstance",
+      "source_locator": "paragraph 2, opening",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The self-interrupting, essayistic phrase 'Let me try to explain them' is characteristic Ishmael narrator-consciousness, signaling the digressive, ruminative voice; its omission flattens the register.",
+      "suggested_fix": "Restore 'My sensations were strange. Let me try to explain them.' verbatim before the childhood memory begins."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I lay there dismally calculating that sixteen entire hours must elapse before I could hope for a resurrection. Sixteen hours in bed! the small of my back ached to think of it.",
+      "source_locator": "paragraph 3, after 'got between the sheets'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'The small of my back ached to think of it' is a voice-establishing comic-ironic aside and the Sixteen-hours repetition is a rhetorical signature; the draft drops the back-ache line entirely, losing the humor and the body-comedy.",
+      "suggested_fix": "Restore 'the small of my back ached to think of it' immediately after 'Sixteen hours in bed!'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I got up, dressed, and softly going down in my stockinged feet, sought out my stepmother, and suddenly threw myself at her feet, beseeching her as a particular favour to give me a good slippering for my misbehaviour",
+      "source_locator": "paragraph 3, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "The episode of Ishmael begging for a beating as preferable to bed is a celebrated comic-grotesque moment that critics return to as evidence of Ishmael's ironic self-awareness; its complete omission is a significant interpretive loss.",
+      "suggested_fix": "Re-insert the slippering passage in compressed form, retaining the action of going downstairs and begging the stepmother."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Thinks I, Queequeg, under the circumstances, this is a very civilized overture; but, the truth is, these savages have an innate sense of delicacy, say what you will; it is marvellous how essentially polite they are.",
+      "source_locator": "paragraph 4, near end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The ironic qualifier 'say what you will' and the editorial build-up are signature Ishmael voice on racial/cultural inversion; the draft reduces this to a bare paraphrase without the rhetoric, losing the ironic register.",
+      "suggested_fix": "Restore 'say what you will' and keep the full phrasing of the reflection, including Ishmael's admission of his own rudeness in staring."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "He was just enough civilized to show off his outlandishness in the strangest possible manners. His education was not yet completed. He was an undergraduate.",
+      "source_locator": "paragraph 5, middle",
+      "draft_treatment": "absent",
+      "why_it_matters": "'He was an undergraduate' is a famous, critically-noted comic aphorism and a key moment of Ishmael's ironic anthropology; the entire caterpillar/butterfly/undergraduate passage is cut, losing a signature voice digression.",
+      "suggested_fix": "Restore the 'neither caterpillar nor butterfly… He was an undergraduate' sequence; it is short and carries significant voice weight."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Five medium-severity losses—including the slippering episode, the 'small of my back' body-comedy, the 'He was an undergraduate' aphorism, and two key ironic narrative asides—collectively flatten Ishmael's voice and strip interpretively significant material from the segment."
+}

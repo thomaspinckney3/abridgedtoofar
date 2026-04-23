@@ -1,0 +1,44 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Mediterranean mariners will sometimes jostle the affrighted ladies. Regent Street is not unknown to Lascars and Malays; and at Bombay, in the Apollo Green, live Yankees have often scared the natives.",
+      "source_locator": "paragraph 2, middle of the catalogue of seaports",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces these three vivid, rhythmically differentiated clauses — with their comic reversals ('live Yankees have often scared the natives') — to a bland list ('Broadway and Chestnut, Regent Street, Bombay's Apollo Green know such jostlings'). The signature irony of Americans frightening Bombay natives is entirely erased.",
+      "suggested_fix": "Restore the three-clause sequence in close to original phrasing, preserving 'affrighted ladies,' 'Lascars and Malays,' and especially 'live Yankees have often scared the natives' — each clause earns its place rhetorically and comedically."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It makes a stranger stare.",
+      "source_locator": "paragraph 2, closing sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This four-word deadpan sentence is a classic Melvillean landing — the shortest possible close to an escalating catalogue, and its bluntness is the joke. Its omission erases a micro-signature of the narrator's comic voice.",
+      "suggested_fix": "Append 'It makes a stranger stare.' after the cannibals-on-street-corners sentence as in the source."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "you must go to New Bedford to see a brilliant wedding; for, they say, they have reservoirs of oil in every house, and every night recklessly burn their lengths in spermaceti candles.",
+      "source_locator": "paragraph 7, second sentence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is interpretively rich — it literalizes the oil economy as conspicuous domestic excess and is one of the chapter's most vivid images of whaling-wealth translated into lifestyle. Its complete omission removes a key thematic illustration of New Bedford's opulence.",
+      "suggested_fix": "Restore this sentence in full (or very close to it) following the fathers/dowers/porpoises sentence, as it appears in the source."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The town itself is perhaps the dearest place to live in, in all New England.",
+      "source_locator": "paragraph 5, after the Labrador comparison",
+      "draft_treatment": "absent",
+      "why_it_matters": "This clause — with its doubled 'in, in' rhythm and superlative claim — establishes the pivot from bony back-country to patrician wealth, and its removal slightly weakens the rhetorical contrast that follows.",
+      "suggested_fix": "Insert this sentence between the Labrador/back-country passage and 'It is a land of oil, true enough.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has three medium-severity failures — the flattening of the Lascars/Yankees seaport catalogue, the erasure of the deadpan 'It makes a stranger stare,' and the complete omission of the spermaceti-candles sentence — that together constitute a pattern of voice flattening sufficient to require regeneration."
+}

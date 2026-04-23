@@ -5,67 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Right and left, the streets take you waterward.",
-      "source_locator": "paragraph 2, after 'commerce surrounds it with her surf'",
+      "source_passage": "Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.",
+      "source_locator": "Saco valley / artist paragraph, mid-passage",
       "draft_treatment": "absent",
-      "why_it_matters": "This crisp, imperative sentence is part of the rhythmic texture of the Manhattoes paragraph and contributes to Melville's distinctive rhetorical momentum; its excision flattens the paragraph's voice.",
-      "suggested_fix": "Restore 'Right and left, the streets take you waterward.' between 'commerce surrounds it with her surf.' and 'Its extreme downtown is the battery.'"
+      "why_it_matters": "This sentence is the rhetorical centrepiece of the landscape-painting passage—its sinuous syntax enacts the 'mazy way' it describes. Without it, the Saco paragraph jumps abruptly from cattle and cottage smoke to 'But though the picture lies thus tranced,' losing the hypnotic build-up that earns the payoff about the shepherd's eye on the stream.",
+      "suggested_fix": "Restore 'Deep into distant woodlands winds a mazy way, reaching to overlapping spurs of mountains bathed in their hill-side blue.' between the cottage-smoke sentence and 'But though the picture lies thus tranced.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No.",
-      "source_locator": "paragraph 4, after 'seemingly bound for a dive'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The exclamatory 'Strange!' and the emphatic 'No.' with the intervening clause about loitering 'under the shady lee of yonder warehouses' are signature rhetorical gestures; the draft drops 'Strange!' and the loitering clause, losing the escalating insistence of the voice.",
-      "suggested_fix": "Restore 'Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No.' in full."
+      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat, which he sadly needed, or invest his money in a pedestrian trip to Rockaway Beach?",
+      "source_locator": "Narcissus / water-magnetism paragraph, rhetorical-questions series",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic, satirical question is a signature specimen of Ishmael's ironic voice—mixing high rhetoric with a deliberately bathetic, specific anecdote. Its omission flattens the rhetorical catalogue from five questions to four and removes the only humorous beat in the series, thinning the voice-defining register.",
+      "suggested_fix": "Reinsert the Tennessee-poet question in its original position between the Niagara question and the 'robust healthy boy' question."
     },
     {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor.",
-      "source_locator": "paragraph 5, after 'infallibly lead you to water, if water there be in all that region'",
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "cooled by breezes, which a few hours previous were out of sight of land.",
+      "source_locator": "Manhattoes / battery paragraph",
       "draft_treatment": "absent",
-      "why_it_matters": "The 'metaphysical professor' joke is one of Melville's wryest comic asides in the chapter and is interpretively important as an instance of his mock-philosophical register; its absence loses a distinctive voice marker.",
-      "suggested_fix": "Restore the sentence 'Should you ever be athirst in the great American desert, try this experiment, if your caravan happen to be supplied with a metaphysical professor.' before 'Yes, as every one knows, meditation and water are wedded for ever.'"
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Go visit the Prairies in June, when for scores on scores of miles you wade knee-deep among Tiger-lilies—what is the one charm wanting?—Water—there is not a drop of water there! Were Niagara but a cataract of sand… Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat… or invest his money in a pedestrian trip to Rockaway Beach? Why is almost every robust healthy boy with a robust healthy soul in him, at some time or other crazy to go to sea? Why upon your first voyage as a passenger, did you yourself feel such a mystical vibration, when first told that you and your ship were now out of sight of land?",
-      "source_locator": "paragraph 6, middle rhetorical-question cascade",
-      "draft_treatment": "absent",
-      "why_it_matters": "The rhetorical cascade of 'why' questions—the Prairies, the Tennessee poet, the robust healthy boy, the mystical vibration out of sight of land—is the argumentative and stylistic climax of the water-meditation passage; the draft jumps from the Saco valley directly to Niagara, excising all these questions and losing the cumulative rhetorical force that makes the Narcissus conclusion land.",
-      "suggested_fix": "Restore the full sequence from 'Go visit the Prairies in June' through 'out of sight of land?' before 'Why did the old Persians hold the sea holy?'"
+      "why_it_matters": "The clause extends the Battery description outward to the open sea and enacts the very pull toward the horizon Ishmael is anatomising; its loss slightly deflates the passage's thematic resonance.",
+      "suggested_fix": "Append 'and cooled by breezes, which a few hours previous were out of sight of land' after 'washed by waves' in the Manhattoes paragraph."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
       "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
-      "source_locator": "paragraph on not going as cook, final sentence",
+      "source_locator": "Passenger/cook/sailor digression, end of the broiled-fowl riff",
       "draft_treatment": "absent",
-      "why_it_matters": "This mock-erudite flourish—the pyramids as 'bake-houses'—is a characteristic Melvillean comic digression and a minor voice marker; its absence slightly deflates the passage's ironic comedy.",
-      "suggested_fix": "Append 'It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.' to the broiled-fowl passage."
+      "why_it_matters": "This mock-erudite non-sequitur is classic Ishmael—absurdist digression used to deflate self-importance—and its loss shortens an already-trimmed paragraph, removing a characteristic comic cadence.",
+      "suggested_fix": "Restore the Egyptian/pyramids sentence as the closing beat of the broiled-fowl passage."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "And more than all, if just previous to putting your hand into the tar-pot, you have been lording it as a country schoolmaster, making the tallest boys stand in awe of you.",
-      "source_locator": "paragraph on going as a sailor, after the Van Rensselaers / Randolphs / Hardicanutes sentence",
-      "draft_treatment": "absent",
-      "why_it_matters": "The setup about lording it as a schoolmaster is the premise that makes 'The transition is a keen one… from a schoolmaster to a sailor' intelligible and funny; the draft retains the conclusion but drops the setup, leaving the schoolmaster reference contextually thin.",
-      "suggested_fix": "Restore the passage about being a country schoolmaster 'making the tallest boys stand in awe of you' before the 'transition is a keen one' sentence."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "In much the same way do the commonalty lead their leaders in many other things, at the same time that the leaders little suspect it.",
-      "source_locator": "final paragraph before the Fates section, after 'He thinks he breathes it first; but not so.'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This sentence is the interpretive payoff of the fore-castle/quarter-deck analogy, extending it into a broader social observation; its loss reduces the passage from social commentary to mere nautical fact.",
-      "suggested_fix": "Restore 'In much the same way do the commonalty lead their leaders in many other things, at the same time that the leaders little suspect it.' after 'He thinks he breathes it first; but not so.'"
+      "source_passage": "cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.",
+      "source_locator": "Fates / stage-managers paragraph, closing clause",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft compresses to 'cajoling me into the delusion that it was my own choice,' losing the ironic legalism of 'unbiased freewill and discriminating judgment' which is part of Ishmael's mock-philosophical voice.",
+      "suggested_fix": "Restore the full phrase: 'cajoling me into the delusion that it was a choice resulting from my own unbiased freewill and discriminating judgment.'"
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft preserves most verbatim signatures faithfully but excises the entire rhetorical-question cascade at the heart of the water-meditation (the Prairies, Tennessee poet, robust boy, mystical vibration), drops several voice-establishing comic asides (the metaphysical professor, the Egyptian pyramids), and flattens minor connective passages—yielding four medium-severity losses that collectively trigger regeneration."
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signatures (opening paragraph, Narcissus, Providence bill, flood-gates closing) verbatim or near-verbatim; the five findings are two medium-level voice flattenings (omitted Saco woodland sentence and Tennessee-poet question) and three low-level cuts, none rising to regeneration threshold individually, and the medium count does not reach three."
 }

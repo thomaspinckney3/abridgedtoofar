@@ -1,0 +1,17 @@
+{
+  "segment_id": "017",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "other",
+      "source_passage": "entire Chapter 13 source text (≈1100 words)",
+      "source_locator": "full segment",
+      "draft_treatment": "absent",
+      "why_it_matters": "No draft text was supplied in the 'Draft text' section; there is nothing to evaluate against the source, meaning all source content — including every signature passage — is effectively absent from the draft.",
+      "suggested_fix": "Supply the actual draft text for Chapter 13 and resubmit for evaluation."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Draft text field is empty; the draft is entirely missing, so all signature content is absent by definition."
+}

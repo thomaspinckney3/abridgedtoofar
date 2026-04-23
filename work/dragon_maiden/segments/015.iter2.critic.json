@@ -1,0 +1,44 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie.",
+      "source_locator": "paragraph describing Jethro, after the golden-cloaked figure removes his hood",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile 'more wrinkles than an unsettled pond' is a stylistically distinctive, voice-establishing comic figure that characterises Mac Flynn's narrator; its removal flattens a key moment of tonal register.",
+      "suggested_fix": "Restore the simile: 'He was about seventy with more wrinkles than an unsettled pond. His soft blue eyes smiled at Stephanie.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I shook my head. 'Never mind. Just don't drop me.' He chuckled. 'I believe I can agree to your request.'",
+      "source_locator": "Opening dialogue exchange, paragraphs 6–8",
+      "draft_treatment": "flattened",
+      "why_it_matters": "In the source the dialogue is tagged with full beats (she shakes her head; he chuckles) that carry the light, ironic tone. The draft strips the action tags, reducing it to bare speech and losing the rhythm that signals the narrator's voice.",
+      "suggested_fix": "Re-add 'He chuckled.' before his agreement line and 'I shook my head.' before 'Never mind,' to restore the comic beat."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Jethro. 'I have not seen the likes of her in many years.' Stephanie blushed and looked at the ground. Cayden bowed. 'Thank you, Jethro. I, too, am most pleased with her.'",
+      "source_locator": "After Jethro removes his hood, through Cayden's reply",
+      "draft_treatment": "absent",
+      "why_it_matters": "Jethro's compliment and Stephanie's blushing reaction, followed by Cayden's formal pleasure, form a small social comedy that also establishes the Maiden's value and Cayden's proprietorial satisfaction. Its removal deletes characterisation for both Stephanie and Cayden.",
+      "suggested_fix": "Restore Jethro's full speech, Stephanie's blush, and Cayden's reply before Xander's 'But to the reason for our visit' redirect."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "A cool wind whipped my hair over my face and over my bare arms. The warmth of the dragon lord's body stifled some of my shivering.",
+      "source_locator": "Second descriptive paragraph of the flight, after the first dialogue exchange",
+      "draft_treatment": "absent",
+      "why_it_matters": "The physical detail of bare arms and the dragon lord's warmth establishes the heroine's vulnerability and closeness to Xander; omitting it thins the sensory grounding of the opening flight.",
+      "suggested_fix": "Add a sentence noting the wind on her hair and bare arms and the warmth stifling her shivering during the flight description."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; the draft faithfully carries all major plot beats and most distinctive passages, but drops Jethro's comic wrinkle-simile, the Stephanie-blush social exchange, and a handful of beat-tags that carry the narrator's light ironic register — two medium and two low findings, below the regeneration threshold."
+}

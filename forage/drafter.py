@@ -202,20 +202,18 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     # Preserve the raw merged output alongside per-chapter splits.
     (seg_dir / f"{group_id}.md").write_text(merged_draft + "\n")
 
-    # Split on `## Chapter N` / `Chapter N` / `## Sub-chapter N` lines.
+    # Split on `## Chapter N` / `Chapter N` / `## Sub-chapter N` lines and
+    # assign sections to members in document order. The LLM uses whatever
+    # chapter numbering is natural for the source (Dragon Maiden's
+    # "Chapter 4" for the 4th story-chapter, not the 1st group member);
+    # we just want "first heading found → first member", etc.
     pieces = _re.split(
-        r"(?m)^(?:##\s*)?(?:Sub-)?Chapter\s*(\d+)\b[^\n]*$",
+        r"(?m)^(?:##\s*)?(?:Sub-)?Chapter\s*\d+\b[^\n]*$",
         merged_draft)
-    bodies: dict[int, str] = {}
-    for i in range(1, len(pieces), 2):
-        try:
-            n = int(pieces[i])
-        except ValueError:
-            continue
-        bodies[n] = pieces[i + 1].strip() if i + 1 < len(pieces) else ""
+    section_bodies = [p.strip() for p in pieces[1:]]
 
-    for idx, m in enumerate(members, 1):
-        body_text = bodies.get(idx, "")
+    for idx, m in enumerate(members):
+        body_text = section_bodies[idx] if idx < len(section_bodies) else ""
         (seg_dir / f"{m['id']}.md").write_text(body_text + "\n")
         draft_words = len(body_text.split())
         _write_checks(seg_dir / f"{m['id']}.checks.json", m,
