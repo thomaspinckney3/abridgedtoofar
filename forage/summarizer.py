@@ -106,7 +106,9 @@ def _single_synopsis(book: Book, chapter_sources: list[dict], *,
                      stage_suffix: str = "") -> str:
     source_block = "\n\n".join(c["text"] for c in chapter_sources)
     prompt = (f"Provide a {n_sentences} sentence synopsis of the following "
-              f"book{(' ' + note) if note else ''}.\n\n{source_block}\n")
+              f"book{(' ' + note) if note else ''}. Output exactly "
+              f"{n_sentences} sentences, one per line, no preamble.\n\n"
+              f"{source_block}\n")
     stage = f"summarize:{book.book_id}"
     if stage_suffix:
         stage = f"{stage}:{stage_suffix}"

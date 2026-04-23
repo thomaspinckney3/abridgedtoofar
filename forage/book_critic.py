@@ -55,12 +55,28 @@ def _read_abridgment(book: Book) -> tuple[str, bool]:
 
 
 def _split_synopsis_sentences(text: str) -> list[str]:
-    """Parse the synopsis into individual sentences. Each line is treated as
-    a sentence (matching the output convention of summarizer). Leading
-    numeric prefixes like '1. ' are stripped.
+    """Parse the synopsis into individual sentences.
+
+    Handles both formats the summarizer produces:
+      - one sentence per line (from the merge step of chunked synopses)
+      - one paragraph of prose (from single-call whole-book summaries)
+
+    Leading numeric prefixes like "1. " are stripped.
     """
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-    return [re.sub(r"^\d+\.\s*", "", ln) for ln in lines]
+    if len(lines) > 1:
+        # Sentence-per-line format.
+        return [re.sub(r"^\d+\.\s*", "", ln) for ln in lines]
+    if not lines:
+        return []
+    # Paragraph format — split on sentence boundaries. The lookbehind for
+    # terminal punctuation + lookahead for a capital / opening quote
+    # tolerates ". She" and '." The' without over-splitting on abbreviations
+    # like "Dr. Smith" (which would need a capital after the space — true —
+    # but abbreviations in prose synopses are rare enough that this is
+    # acceptably accurate).
+    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201C])', lines[0])
+    return [re.sub(r"^\d+\.\s*", "", s).strip() for s in sentences if s.strip()]
 
 
 def run_book_critic(book: Book) -> dict:
