@@ -193,7 +193,23 @@ forage iterate <book> 001           # draft → critic → regen loop (default 2
 forage assemble <book>              # concat + fail-loud budget gate
 forage book-critique <book>         # synopsis-grounded per-sentence verification
 forage validate <book>              # motif + style + signature checks
+forage report [<book>]              # standard results row (all books if no arg)
 ```
+
+### Standard results report
+
+Every book's pipeline run produces artifacts (`plan.json`, `assembly_report.json`, `book_critic.json`) that `forage report` reads to render a uniform per-book row:
+
+| Column | Meaning |
+|---|---|
+| `book` | book id |
+| `chapters` | drafted / total diegetic chapters |
+| `source → final` | raw word counts (source of truth vs assembled abridgment) |
+| `compression (vs target)` | achieved ratio vs spec's target ratio — only shown for complete abridgments; partial books show `(partial)` because partial-draft ratios are meaningless |
+| `over ceiling` | `under` / `+N%` past target × 1.2 |
+| `book critic` | `ship` or `hold`, `<present>/<total>` synopsis sentences verified |
+
+Zero LLM cost to run. Re-run any time to refresh from the on-disk artifacts.
 
 ## End-to-end example
 

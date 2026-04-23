@@ -22,6 +22,7 @@ from .chapter_classifier import classify_chapters
 from .iterate import iterate_segment
 from .lean_plan import build_lean_plan
 from .llm import set_stream_sink
+from .report import (COLUMNS, available_books, build_report, format_row)
 from .summarizer import summarize_book
 from .prepass import run_prepass
 from .prime import run_prime
@@ -642,6 +643,39 @@ def _render_rebudget(r) -> None:
             t.add_row(x.id, x.title[:36], str(x.old_target),
                       str(x.draft_words), str(x.new_target))
         console.print(t)
+
+
+@app.command()
+def report(book_id: str = typer.Argument(None)) -> None:
+    """Standard per-book results row: source/final words, actual
+    compression, over-ceiling flag, book-critic verdict. Reads existing
+    artifacts only — no LLM calls.
+
+    With BOOK_ID: single-book row. Without: all books in work/.
+    """
+    ids = [book_id] if book_id else available_books()
+    if not ids:
+        console.print("[yellow]no books have pipeline output under work/[/yellow]")
+        raise typer.Exit(code=0)
+    t = Table(show_header=True, header_style="bold")
+    for c in COLUMNS:
+        t.add_column(c)
+    notes: list[tuple[str, str]] = []
+    for bid in ids:
+        try:
+            r = build_report(bid)
+        except FileNotFoundError as e:
+            console.print(f"[yellow]{bid}: {e}[/yellow]")
+            continue
+        row = format_row(r)
+        t.add_row(*row)
+        for n in r.notes:
+            notes.append((bid, n))
+    console.print(t)
+    if notes:
+        console.rule("[dim]notes[/dim]")
+        for bid, n in notes:
+            console.print(f"  [dim]{bid}:[/dim] {n}")
 
 
 @app.command()
