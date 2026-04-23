@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "In spite of her small vanities, Margaret had a sweet and pious nature, which unconsciously influenced her sisters, especially Jo, who loved her very tenderly, and obeyed her because her advice was so gently given.",
+      "source_locator": "paragraph 2, between the books-under-pillows scene and Meg's speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial aside is a rare authorial intrusion that establishes character hierarchy and moral dynamics between the sisters; its absence removes a key interpretive frame for why the girls follow Meg's lead.",
+      "suggested_fix": "Restore the sentence as a brief narratorial aside between the book-discovery scene and Meg's speech, even at the cost of a few words elsewhere."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Hannah, who had lived with the family since Meg was born, and was considered by them all more as a friend than a servant.",
+      "source_locator": "Hannah's dialogue passage, after 'There never was such a woman'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The defining clause 'more as a friend than a servant' is a character-establishing tag for Hannah that the novel returns to; the draft truncates it, losing its social and thematic specificity.",
+      "suggested_fix": "Restore the full appositive: 'who had lived with the family since Meg was born, and was considered by them all more as a friend than a servant.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "there was a good deal of laughing and kissing and explaining, in the simple, loving fashion which makes these home-festivals so pleasant at the time, so sweet to remember long afterward",
+      "source_locator": "after Mrs. March tries on the gifts, before 'then all fell to work'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This narratorial generalization is tonally and thematically signature — Alcott's characteristic step back from scene to reflective sentiment about domestic life; its loss is a voice-flattening of a voice-establishing digression.",
+      "suggested_fix": "Restore the clause 'in the simple, loving fashion which makes these home-festivals so pleasant at the time, so sweet to remember long afterward' before 'then all fell to work.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"You see I felt ashamed of my present, after reading and talking about being good this morning, so I ran round the corner and changed it the minute I was up: and I'm so glad, for mine is the handsomest now.\"",
+      "source_locator": "Amy's speech after showing the handsome flask",
+      "draft_treatment": "absent",
+      "why_it_matters": "This speech is crucial for Amy's characterization — showing simultaneously her genuine moral growth and her persistent vanity ('mine is the handsomest now'), a key interpretive complexity the novel depends on. The draft omits it entirely.",
+      "suggested_fix": "Restore Amy's explanation verbatim or near-verbatim; it is short and characterologically essential."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It was excellent drill for their memories, a harmless amusement, and employed many hours which otherwise would have been idle, lonely, or spent in less profitable society.",
+      "source_locator": "theater preparations paragraph, after description of the acting demands",
+      "draft_treatment": "absent",
+      "why_it_matters": "This authorial moral endorsement of the girls' amateur theatricals is a small but characteristic Alcott narratorial intrusion that frames domestic creativity as virtuous; its removal slightly flattens the narrator's presence.",
+      "suggested_fix": "Append the sentence after 'it was excellent drill and a harmless amusement' to restore the narrator's moralizing voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Isn't it right? I thought it was better to do it so, because Meg's initials are 'M. M.,' and I don't want any one to use these but Marmee,\" said Beth, looking troubled.",
+      "source_locator": "handkerchief exchange, after Jo's 'How funny!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Beth's explanation is endearing and character-revealing; the draft retains Jo's joke and Meg's reply but drops Beth's rationale, cutting the emotional beat the scene depends on.",
+      "suggested_fix": "Restore Beth's line before Meg's 'It's all right, dear' to preserve the three-beat comic-tender exchange."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has no high-severity signature losses but accumulates four medium-severity failures — the Margaret character-note, Hannah's 'more as a friend than a servant' tag, the home-festivals reflective aside, and Amy's self-aware flask speech — which together constitute sufficient grounds for regeneration."
+}

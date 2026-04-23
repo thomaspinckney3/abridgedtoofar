@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was a great aristocrat and a good-looking man, above middle height and with attractive features, in spite of his hard forehead and his rather cold eyes.",
+      "source_locator": "paragraph describing the Comte de Chagny's appearance",
+      "draft_treatment": "absent",
+      "why_it_matters": "The specific physical description — 'above middle height,' 'hard forehead,' 'rather cold eyes' — establishes the count's dual nature (attractive yet cold) and is characterologically important; the draft collapses this to 'great aristocrat' with no physical detail.",
+      "suggested_fix": "Restore the physical description verbatim or near-verbatim: 'a good-looking man, above middle height and with attractive features, in spite of his hard forehead and his rather cold eyes.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "On the death of old Count Philibert, he became the head of one of the oldest and most distinguished families in France, whose arms dated back to the fourteenth century.",
+      "source_locator": "paragraph on the Chagny family history",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The heraldic detail ('arms dated back to the fourteenth century') and the full family description carry interpretive weight about the social world the novel inhabits; the draft reduces this to a vague 'oldest families in France.'",
+      "suggested_fix": "Retain 'whose arms dated back to the fourteenth century' to preserve the period-register flavour and the novel's insistence on aristocratic credentials."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The shyness of the sailor-lad--I was almost saying his innocence--was remarkable... petted as he was by his two sisters and his old aunt, he had retained from this purely feminine education manners that were almost candid and stamped with a charm that nothing had yet been able to sully.",
+      "source_locator": "paragraph on Raoul's character, beginning 'The shyness of the sailor-lad'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narratorial aside 'I was almost saying his innocence' is a voice-establishing intrusion that characterises both Raoul and the narrator's ironising stance; 'stamped with a charm that nothing had yet been able to sully' is signature Leroux. The draft compresses this to 'a candid charm' with no narratorial presence.",
+      "suggested_fix": "Restore the narratorial aside and the full phrase: 'The shyness of the sailor-lad—I was almost saying his innocence—was remarkable… manners that were almost candid and stamped with a charm that nothing had yet been able to sully.'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Those who heard her say that her voice, in these passages, was seraphic; but this was nothing to the superhuman notes that she gave forth in the prison scene and the final trio in FAUST",
+      "source_locator": "paragraph on Christine's performance, after listing composers",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains this sentence but drops the crucial contextual detail that this was the first time she sang in Gounod's Romeo and Juliet, that it had not been transferred to the Opera, and the history via Mme. Carvalho — period colour and musical-world specificity that establishes the novel's authentic milieu.",
+      "suggested_fix": "Add back: 'It was the first time that the young artist sang in this work of Gounod, which had not been transferred to the Opera… revived at the Opera Comique after it had been produced at the old Theatre Lyrique by Mme. Carvalho.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Faure and Krauss had sung; and… Gounod had conducted the Funeral March of a Marionnette; Reyer, his beautiful overture to Siguar; Saint Saens, the Danse Macabre and a Reverie Orientale; Massenet, an unpublished Hungarian march; Guiraud, his Carnaval; Delibes, the Valse Lente from Sylvia and the Pizzicati from Coppelia. Mlle. Krauss had sung the bolero in the Vespri Siciliani; and Mlle. Denise Bloch the drinking song in Lucrezia Borgia.",
+      "source_locator": "paragraph listing the gala programme",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The detailed programme listing is period-register texture that authenticates the novel's claim to document a real cultural moment; the draft reduces it to four names with no titles, losing the encyclopedic specificity.",
+      "suggested_fix": "Restore the full programme listing, or at minimum several specific work titles, to preserve the documentary register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He quite failed to see that the indiscretion of his conduct was exceeding all bounds.",
+      "source_locator": "paragraph after Raoul calls out in the dark dressing-room",
+      "draft_treatment": "absent",
+      "why_it_matters": "This dry narratorial comment is a small but characteristic ironic aside on Raoul's blindness to his own behaviour; its removal strips a moment of narratorial voice.",
+      "suggested_fix": "Reinsert: 'He quite failed to see that the indiscretion of his conduct was exceeding all bounds.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings (Raoul's characterisation paragraph with narratorial aside, the count's physical description, the first-performance contextual detail) and two low findings represent moderate but non-fatal flattening — the draft preserves all key plot beats and most verbatim signature lines."
+}

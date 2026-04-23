@@ -1,0 +1,53 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There was something so piquant and original in these elucidations of humanity, that Mr. Shelby could not help laughing in company. Perhaps you laugh too, dear reader; but you know humanity comes out in a variety of strange forms now-a-days",
+      "source_locator": "paragraph after Haley folds his arms as 'a second Wilberforce'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The narrator's direct address to the reader ('Perhaps you laugh too, dear reader') is a voice-establishing satirical aside; the draft preserves the second sentence almost verbatim but drops the first sentence ('There was something so piquant and original in these elucidations of humanity'), which is the ironic setup that makes the aside land. Without it the passage is present but its rhetorical preparation is absent.",
+      "suggested_fix": "Restore the full two-sentence unit: 'There was something so piquant and original in these elucidations of humanity, that Mr. Shelby could not help laughing in company. Perhaps you laugh too, dear reader…'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "humanity, sir, I may say, is the great pillar of my management… and I lays it all to my management, sir",
+      "source_locator": "Haley's long self-praise speech before 'Mr. Shelby did not know what to say'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Haley's sustained boast that he brings in 'about the finest droves of niggers… fat and likely' and loses as few as any man, attributing it all to 'humanity, sir… the great pillar of my management' is the core ironic material that the chapter title itself mocks; the draft telescopes it into a brief reference and loses the specific pompous elaboration on which that irony depends.",
+      "suggested_fix": "Restore Haley's self-congratulatory speech: his claim to bring in the finest droves, 'fat and likely,' losing as few as any man, and the declaration that 'humanity, sir, is the great pillar of my management.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "S'pose not; you Kentucky folks spile your niggers. You mean well by 'em, but 'tan't no real kindness, arter all… 'tan't no kindness to be givin' on him notions and expectations… and I think I treat niggers just about as well as it's ever worth while to treat 'em.",
+      "source_locator": "Haley's reply after 'I'm afraid mine are not properly brought up, then'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Haley's extended rationalization that kindness to slaves is itself cruel because it gives them 'notions and expectations' above their station is a key piece of pro-slavery ideology the novel is contesting; the draft reduces it to a single clause ('Kentucky folks spile their people with expectations'), losing the specific logic and sardonic voice that make it interpretively significant.",
+      "suggested_fix": "Expand the Haley 'spile' passage to include: the reasoning that a slave 'fetched up properly, ha'n't no kind of 'spectations,' the contrast of plantation negroes 'singing and whooping,' and the chilling conclusion 'I think I treat niggers just about as well as it's ever worth while to treat 'em.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It's a happy thing to be satisfied,",
+      "nature.": "source_locator\": \"Shelby's reply after Haley's 'I treat niggers just about as well as it's ever worth while'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Shelby's brief, dry reply—coupled with the narrator's tag of 'some perceptible feelings of a disagreeable nature'—registers his moral discomfort without his being able to act on it; it is a small but characterizing moment for the novel's portrait of the complicit moderate.",
+      "suggested_fix": "Insert Shelby's line and the narrator's tag after the Haley 'spile' passage."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Mrs. Shelby was a woman of a high class, both intellectually and morally. To that natural magnanimity and generosity of mind which one often marks as characteristic of the women of Kentucky, she added high moral and religious sensibility",
+      "source_locator": "narrator's paragraph introducing Mrs. Shelby's character",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The characterization of Mrs. Shelby as specifically representative of 'the women of Kentucky'—not merely a pious individual—carries regional-ideological weight the novel repeatedly relies on; the draft collapses this to 'a woman of high moral and religious sensibility,' losing the rhetorical framing.",
+      "suggested_fix": "Restore the phrase 'that natural magnanimity and generosity of mind which one often marks as characteristic of the women of Kentucky' to preserve the regional-ideological dimension."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful but flattens Haley's signature self-praise ('humanity, sir, is the great pillar of my management'), partially strips the ironic narrator aside, and compresses his 'spile your niggers' rationalization to a single clause, producing three medium-severity voice-flattening findings that together approach but do not reach the regeneration threshold."
+}

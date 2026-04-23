@@ -1,0 +1,53 @@
+{
+  "segment_id": "008",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the sun still low and only touching the hilltops and shining far to seaward",
+      "source_locator": "paragraph 2, description of January morning",
+      "draft_treatment": "absent",
+      "why_it_matters": "This lyrical environmental detail is part of Stevenson's distinctive scene-painting prose; the draft compresses the January morning description and cuts the sun imagery entirely, flattening the atmospheric voice-establishing passage.",
+      "suggested_fix": "Restore the sun detail: 'the sun still low and only touching the hilltops and shining far to seaward' within the morning description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a most horrible change came over his tallowy face, and he ordered me in with an oath that made me jump. As soon as I was back again he returned to his former manner",
+      "source_locator": "paragraph 8, Black Dog calling Jim back from road",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The grotesque shift in Black Dog's manner — the 'horrible change' in his tallowy face — is interpretively important for characterising him as genuinely dangerous beneath the fawning, and the specific phrasing is stylistically distinctive. The draft merely says 'he called me back with an oath.'",
+      "suggested_fix": "Restore the 'horrible change came over his tallowy face' and the return to fawning manner — this two-beat characterisation of Black Dog is signature."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I have a son of my own,\" said he, \"as like you as two blocks, and he's all the pride of my 'art. But the great thing for boys is discipline, sonny--discipline. Now, if you had sailed along of Bill, you wouldn't have stood there to be spoke to twice--not you. That was never Bill's way, nor the way of sich as sailed with him.\"",
+      "source_locator": "paragraph 8, Black Dog's speech about discipline",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'pride of my 'art' phrasing and the full cadence of the discipline speech — 'not you. That was never Bill's way' — is stylistically distinctive dialect writing. The draft cuts 'not you' and 'he's all the pride of my 'art,' losing the grotesque pathos that makes the passage memorable.",
+      "suggested_fix": "Restore 'he's all the pride of my 'art' and 'not you. That was never Bill's way' to preserve the full voice of this speech."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "\"Ah, well! I told you.\"",
+      "source_locator": "paragraph 6, Black Dog's speech about the cut on the cheek",
+      "draft_treatment": "absent",
+      "why_it_matters": "The cryptic 'Ah, well! I told you' — spoken apparently to himself — is a small but tonally distinctive moment of menace and self-satisfaction that the draft drops without replacement.",
+      "suggested_fix": "Restore 'Ah, well! I told you.' in Black Dog's speech about the cheek."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "It was tattooed in several places. \"Here's luck,\" \"A fair wind,\" and \"Billy Bones his fancy,\" were very neatly and clearly executed on the forearm",
+      "source_locator": "paragraph after Dr. Livesey arrives, tattoo description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'very neatly and clearly executed' and 'on the forearm' is dropped; 'were on it' replaces this. Minor compression but the precision of 'neatly and clearly executed' is part of Jim's observational voice.",
+      "suggested_fix": "Restore 'very neatly and clearly executed on the forearm' rather than the bare 'were on it.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves the chapter's major set-pieces and signature dialogue verbatim, but suffers from several medium-grade voice flattenings — most notably the compressed January morning description, the erasure of Black Dog's 'horrible change' of face, and the trimmed discipline speech — none individually severe enough to trigger regeneration."
+}

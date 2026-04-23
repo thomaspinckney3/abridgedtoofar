@@ -1,0 +1,35 @@
+{
+  "segment_id": "008",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the ripple lapping softly on the stones, the sun still low and only touching the hilltops",
+      "source_locator": "paragraph 2, the January morning description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The clause 'the ripple lapping softly on the stones' is part of a sonorous, rhythmically distinctive landscape sentence; its omission breaks the triadic cadence ('cove all grey…ripple lapping…sun still low') that gives the opening its pictorial signature.",
+      "suggested_fix": "Restore 'the ripple lapping softly on the stones' between 'hoar-frost' and 'the sun still low' to preserve the original tricolon."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he cleared the hilt of his cutlass and loosened the blade in the sheath; and all the time we were waiting there he kept swallowing as if he felt what we used to call a lump in the throat",
+      "source_locator": "paragraph after 'So saying, the stranger backed along with me'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specific action of loosening the blade and the narratorial aside 'what we used to call a lump in the throat' are interpretively and stylistically distinctive; the draft reduces this to 'he cleared the hilt of his cutlass and kept swallowing,' losing both the detail of readied violence and Jim's characterising voice.",
+      "suggested_fix": "Restore 'loosened the blade in the sheath' and 'as if he felt what we used to call a lump in the throat' to preserve the tonal precision of the original."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Dear, deary me,\" cried my mother, \"what a disgrace upon the house! And your poor father sick!\"",
+      "source_locator": "near end, after the captain falls",
+      "draft_treatment": "absent",
+      "why_it_matters": "Mrs. Hawkins's exclamation is a small but character-establishing moment of comic domestic priorities amid crisis; its absence flattens her voice and removes a touch of Stevensonian ironic humour.",
+      "suggested_fix": "Insert Mrs. Hawkins's line 'Dear, deary me—what a disgrace upon the house! And your poor father sick!' as the captain is found on the floor."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful with no high-severity signature losses; two medium findings (an omitted clause in the iconic January-morning sentence and the flattening of Black Dog's frightened gesture) and one low finding (Mrs. Hawkins's comic exclamation) do not collectively reach the regeneration threshold."
+}

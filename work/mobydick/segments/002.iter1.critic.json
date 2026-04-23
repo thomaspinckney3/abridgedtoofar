@@ -3,42 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Are the green fields gone? What do they here?... They must get just as nigh the water as they possibly can without falling in. And there they stand—miles of them—leagues.",
-      "source_locator": "paragraphs 3-4, water-gazers sequence",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The cascade of rhetorical questions and the 'miles of them—leagues' amplification is part of the voice-establishing opening; the draft collapses two paragraphs into one sentence and loses the incantatory build.",
-      "suggested_fix": "Restore at least 'Are the green fields gone?' and the 'miles of them—leagues' cadence to preserve the rhetorical pressure."
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "So fare thee well, poor devil of a Sub-Sub, whose commentator I am. Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm",
+      "source_locator": "Second paragraph of source, opening of the farewell address to Sub-Sub",
+      "draft_treatment": "absent",
+      "why_it_matters": "The farewell address to the Sub-Sub is one of the most tonally distinctive passages in the entire prefatory apparatus of Moby-Dick — a sustained ironic elegy combining pathos and comedy that is critically recognized as establishing Melville's narrative register. Its complete absence erases both voice and interpretive content.",
+      "suggested_fix": "Restore at minimum the core of the Sub-Sub farewell: 'So fare thee well, poor devil of a Sub-Sub… Thou belongest to that hopeless, sallow tribe which no wine of this world will ever warm… Give it up, Sub-Subs!' and the closing heavenly image of striking 'unsplinterable glasses.'"
     },
     {
-      "severity": "medium",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Give it up, Sub-Subs! For by how much the more pains ye take to please the world, by so much the more shall ye for ever go thankless!",
+      "source_locator": "Second paragraph, midpoint of farewell address",
+      "draft_treatment": "absent",
+      "why_it_matters": "This rhetorically distinctive apostrophe — with its biblical cadence and bitter irony — is a signature passage in the critical literature on Melville's relationship to his own literary labor and obscurity. Its absence is a total loss.",
+      "suggested_fix": "Include this line verbatim or near-verbatim in any regeneration of the Extracts segment."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "here ye strike but splintered hearts together—there, ye shall strike unsplinterable glasses!",
+      "source_locator": "Final sentence of source segment",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing image — the contrast between splintered hearts on earth and unsplinterable glasses in heaven — is the rhetorical climax of the Extracts preface and one of Melville's most compressed, tonally complex images. It is entirely missing.",
+      "suggested_fix": "Restore the closing line verbatim as the conclusion of the Extracts section."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "this mere painstaking burrower and grub-worm of a poor devil of a Sub-Sub appears to have gone through the long Vaticans and street-stalls of the earth, picking up whatever random allusions to whales",
+      "source_locator": "First paragraph of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The characterization of the Sub-Sub as 'burrower and grub-worm' who traverses the 'long Vaticans and street-stalls' is critically important: it frames the entire Extracts apparatus as both encyclopedic and bathetic, and establishes the epistemological irony that governs the book's relationship to cetological knowledge.",
+      "suggested_fix": "The Extracts preface must appear in the draft as its own section; the Sub-Sub framing paragraph should be present, including the 'Vaticans and street-stalls' and 'higgledy-piggledy whale statements' language."
+    },
+    {
+      "severity": "high",
       "class": "voice_erasure",
-      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat... or invest his money in a pedestrian trip to Rockaway Beach?",
-      "source_locator": "middle of Saco/Tennessee-poet paragraph",
+      "source_passage": "grow convivial upon tears; and say to them bluntly, with full eyes and empty glasses, and in not altogether unpleasant sadness",
+      "source_locator": "Second paragraph, middle of farewell",
       "draft_treatment": "absent",
-      "why_it_matters": "The plan explicitly flags the Tennessee-poet passage as one of the rhetorical-question cascade entries whose cumulative pressure IS the voice; the draft drops it entirely along with 'first voyage as a passenger... mystical vibration.' The cascade is thinned from six questions to three.",
-      "suggested_fix": "Restore at least the Tennessee poet question and the 'first voyage as a passenger... mystical vibration' question to preserve the cascade's accumulation."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "The urbane activity with which a man receives money is really marvellous, considering that we so earnestly believe money to be the root of all earthly ills... Ah! how cheerfully we consign ourselves to perdition!",
-      "source_locator": "paying/being-paid paragraph near end",
-      "draft_treatment": "absent",
-      "why_it_matters": "The 'cheerfully we consign ourselves to perdition' climax is a signature Ishmaelian ironic flourish that closes the paying meditation; without it the joke is set up but not paid off.",
-      "suggested_fix": "Restore the 'urbane activity... root of all earthly ills... cheerfully we consign ourselves to perdition!' close to complete the ironic arc."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "head winds are far more prevalent than winds from astern... the Commodore on the quarter-deck gets his atmosphere at second hand from the sailors on the forecastle... the commonalty lead their leaders",
-      "source_locator": "penultimate movement before the playbill",
-      "draft_treatment": "absent",
-      "why_it_matters": "The 'commonalty lead their leaders' conceit complements 'Who ain't a slave?' as part of Ishmael's democratic ethic; its loss is a minor thematic thinning.",
-      "suggested_fix": "Consider a brief retention of the head-winds / commonalty-leads-leaders conceit."
+      "why_it_matters": "This phrase — 'grow convivial upon tears… full eyes and empty glasses… not altogether unpleasant sadness' — is a signature specimen of Melville's tragicomic voice; critics cite it as an exemplar of his tonal complexity. Its erasure removes the key voice-establishing moment of the segment.",
+      "suggested_fix": "Preserve this phrase verbatim or within one degree; it is too rhetorically distinctive to paraphrase without total loss."
     }
   ],
-  "verdict": "pass",
-  "summary": "Major signatures (opening, Cato/pistol, Narcissus key, Who ain't a slave, playbill, itch for things remote, snow hill) are preserved verbatim; the rhetorical-question cascade and the 'cheerfully we consign ourselves to perdition' flourish are thinned, but not to the point of triggering regeneration."
+  "verdict": "regenerate",
+  "summary": "The draft contains none of the source segment's content — it reproduces Chapter 1 (Loomings) instead of the Extracts preface, resulting in total loss of every signature passage including the Sub-Sub characterization, the farewell apostrophe, and the closing 'unsplinterable glasses' image."
 }

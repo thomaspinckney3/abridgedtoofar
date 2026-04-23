@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "He looked so wistful as he went away, hearing the frolic, and evidently having none of his own.",
+      "source_locator": "After Mrs. March says she would have asked Laurie in if she'd known what was going on upstairs",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the emotional keystone establishing Laurie's loneliness and isolation, which motivates Jo's determination to befriend him; its absence removes the affective grounding for one of the novel's central friendships.",
+      "suggested_fix": "Restore verbatim after Mrs. March's remark about asking him in: 'He looked so wistful as he went away, hearing the frolic, and evidently having none of his own.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It's a mercy you didn't, mother! … But we'll have another play, some time, that he can see. Perhaps he'll help act; wouldn't that be jolly?",
+      "source_locator": "Immediately after Mrs. March's 'He looked so wistful' remark",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange is both voice-distinctive (Jo's exuberant projection of a shared future with Laurie) and a motif-initiating moment that plants the seed of the cross-fence friendship; its omission along with the wistful line above erases the Laurie-introduction payoff entirely.",
+      "suggested_fix": "Restore Jo's 'It's a mercy you didn't, mother!' exchange, ideally preceded by restoration of the 'so wistful' line that motivates it."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "My mother knows old Mr. Laurence; but says he's very proud … Mother says he's very nice, though he never speaks to us girls.",
+      "source_locator": "The neighbor girl's speech at supper, between Jo's first mention of Laurie and Jo's cat-over-the-fence anecdote",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage supplies the social-class and isolation context for Laurie's situation (proud grandfather, kept apart, tutor-bound) that makes his wistfulness legible; without it, the characterization of Laurie at chapter's end is thin and the neighbor-world texture is lost.",
+      "suggested_fix": "Restore the neighbor girl's speech beginning 'My mother knows old Mr. Laurence' between Jo's first mention of Laurie being bashful and Jo's cat anecdote."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "employed many hours which otherwise would have been idle, lonely, or spent in less profitable society.",
+      "source_locator": "After 'it was excellent drill for their memories, a harmless amusement'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The concluding clause of the narrator's aside is a period-register, morally evaluative voice marker; its removal flattens the narrator's characteristic didactic-ironic tone.",
+      "suggested_fix": "Append the full clause: '…employed many hours which otherwise would have been idle, lonely, or spent in less profitable society.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses—the 'wistful' Laurie characterization, Jo's follow-up 'help act' exchange, and the neighbor girl's contextualizing speech—collectively erase the chapter's carefully constructed Laurie introduction, which is interpretively foundational to the novel's central friendship arc."
+}

@@ -1,19 +1,478 @@
 {
   "book_id": "don_quixote",
-  "total_chapters": 75,
-  "total_words": 423555,
+  "total_chapters": 126,
+  "total_words": 402470,
   "chapters": [
     {
       "id": "001",
-      "kind": "front",
-      "number": null,
-      "title": "INTRODUCTION",
-      "raw_heading": "INTRODUCTION",
-      "start": 17212,
-      "end": 1184912
+      "kind": "chapter",
+      "number": "I",
+      "title": "WHICH TREATS OF THE CHARACTER AND PURSUITS OF THE FAMOUS GENTLEMAN DON",
+      "raw_heading": "CHAPTER I.",
+      "start": 132564,
+      "end": 143604
     },
     {
       "id": "002",
+      "kind": "chapter",
+      "number": "II",
+      "title": "WHICH TREATS OF THE FIRST SALLY THE INGENIOUS DON QUIXOTE MADE FROM",
+      "raw_heading": "CHAPTER II.",
+      "start": 143604,
+      "end": 156527
+    },
+    {
+      "id": "003",
+      "kind": "chapter",
+      "number": "III",
+      "title": "WHEREIN IS RELATED THE DROLL WAY IN WHICH DON QUIXOTE HAD HIMSELF",
+      "raw_heading": "CHAPTER III.",
+      "start": 156527,
+      "end": 170290
+    },
+    {
+      "id": "004",
+      "kind": "chapter",
+      "number": "IV",
+      "title": "OF WHAT HAPPENED TO OUR KNIGHT WHEN HE LEFT THE INN",
+      "raw_heading": "CHAPTER IV.",
+      "start": 170290,
+      "end": 184198
+    },
+    {
+      "id": "005",
+      "kind": "chapter",
+      "number": "V",
+      "title": "IN WHICH THE NARRATIVE OF OUR KNIGHT’S MISHAP IS CONTINUED",
+      "raw_heading": "CHAPTER V.",
+      "start": 184198,
+      "end": 193331
+    },
+    {
+      "id": "006",
+      "kind": "chapter",
+      "number": "VI",
+      "title": "OF THE DIVERTING AND IMPORTANT SCRUTINY WHICH THE CURATE AND THE BARBER",
+      "raw_heading": "CHAPTER VI.",
+      "start": 193331,
+      "end": 208420
+    },
+    {
+      "id": "007",
+      "kind": "chapter",
+      "number": "VII",
+      "title": "OF THE SECOND SALLY OF OUR WORTHY KNIGHT DON QUIXOTE OF LA MANCHA",
+      "raw_heading": "CHAPTER VII.",
+      "start": 208420,
+      "end": 219320
+    },
+    {
+      "id": "008",
+      "kind": "chapter",
+      "number": "VIII",
+      "title": "OF THE GOOD FORTUNE WHICH THE VALIANT DON QUIXOTE HAD IN THE TERRIBLE",
+      "raw_heading": "CHAPTER VIII.",
+      "start": 219320,
+      "end": 236379
+    },
+    {
+      "id": "009",
+      "kind": "chapter",
+      "number": "IX",
+      "title": "IN WHICH IS CONCLUDED AND FINISHED THE TERRIFIC BATTLE BETWEEN THE",
+      "raw_heading": "CHAPTER IX.",
+      "start": 236379,
+      "end": 247856
+    },
+    {
+      "id": "010",
+      "kind": "chapter",
+      "number": "X",
+      "title": "OF THE PLEASANT DISCOURSE THAT PASSED BETWEEN DON QUIXOTE AND HIS",
+      "raw_heading": "CHAPTER X.",
+      "start": 247856,
+      "end": 259068
+    },
+    {
+      "id": "011",
+      "kind": "chapter",
+      "number": "XI",
+      "title": "WHAT BEFELL DON QUIXOTE WITH CERTAIN GOATHERDS",
+      "raw_heading": "CHAPTER XI.",
+      "start": 259068,
+      "end": 271189
+    },
+    {
+      "id": "012",
+      "kind": "chapter",
+      "number": "XII",
+      "title": "OF WHAT A GOATHERD RELATED TO THOSE WITH DON QUIXOTE",
+      "raw_heading": "CHAPTER XII.",
+      "start": 271189,
+      "end": 284321
+    },
+    {
+      "id": "013",
+      "kind": "chapter",
+      "number": "XIII",
+      "title": "IN WHICH IS ENDED THE STORY OF THE SHEPHERDESS MARCELA, WITH OTHER",
+      "raw_heading": "CHAPTER XIII.",
+      "start": 284321,
+      "end": 304329
+    },
+    {
+      "id": "014",
+      "kind": "chapter",
+      "number": "XIV",
+      "title": "WHEREIN ARE INSERTED THE DESPAIRING VERSES OF THE DEAD SHEPHERD,",
+      "raw_heading": "CHAPTER XIV.",
+      "start": 304329,
+      "end": 320737
+    },
+    {
+      "id": "015",
+      "kind": "chapter",
+      "number": "XV",
+      "title": "IN WHICH IS RELATED THE UNFORTUNATE ADVENTURE THAT DON QUIXOTE FELL IN",
+      "raw_heading": "CHAPTER XV.",
+      "start": 320737,
+      "end": 336853
+    },
+    {
+      "id": "016",
+      "kind": "chapter",
+      "number": "XVI",
+      "title": "OF WHAT HAPPENED TO THE INGENIOUS GENTLEMAN IN THE INN WHICH HE TOOK TO",
+      "raw_heading": "CHAPTER XVI.",
+      "start": 336853,
+      "end": 353232
+    },
+    {
+      "id": "017",
+      "kind": "chapter",
+      "number": "XVII",
+      "title": "IN WHICH ARE CONTAINED THE INNUMERABLE TROUBLES WHICH THE BRAVE DON",
+      "raw_heading": "CHAPTER XVII.",
+      "start": 353232,
+      "end": 371636
+    },
+    {
+      "id": "018",
+      "kind": "chapter",
+      "number": "XVIII",
+      "title": "IN WHICH IS RELATED THE DISCOURSE SANCHO PANZA HELD WITH HIS MASTER,",
+      "raw_heading": "CHAPTER XVIII.",
+      "start": 371636,
+      "end": 394069
+    },
+    {
+      "id": "019",
+      "kind": "chapter",
+      "number": "XIX",
+      "title": "OF THE SHREWD DISCOURSE WHICH SANCHO HELD WITH HIS MASTER, AND OF THE",
+      "raw_heading": "CHAPTER XIX.",
+      "start": 394069,
+      "end": 410200
+    },
+    {
+      "id": "020",
+      "kind": "chapter",
+      "number": "XX",
+      "title": "OF THE UNEXAMPLED AND UNHEARD-OF ADVENTURE WHICH WAS ACHIEVED BY THE",
+      "raw_heading": "CHAPTER XX.",
+      "start": 410200,
+      "end": 438797
+    },
+    {
+      "id": "021",
+      "kind": "chapter",
+      "number": "XXI",
+      "title": "WHICH TREATS OF THE EXALTED ADVENTURE AND RICH PRIZE OF MAMBRINO’S",
+      "raw_heading": "CHAPTER XXI.",
+      "start": 438797,
+      "end": 463857
+    },
+    {
+      "id": "022",
+      "kind": "chapter",
+      "number": "XXII",
+      "title": "OF THE FREEDOM DON QUIXOTE CONFERRED ON SEVERAL UNFORTUNATES WHO",
+      "raw_heading": "CHAPTER XXII.",
+      "start": 463857,
+      "end": 487115
+    },
+    {
+      "id": "023",
+      "kind": "chapter",
+      "number": "XXIII",
+      "title": "OF WHAT BEFELL DON QUIXOTE IN THE SIERRA MORENA, WHICH WAS ONE OF THE",
+      "raw_heading": "CHAPTER XXIII.",
+      "start": 487115,
+      "end": 512625
+    },
+    {
+      "id": "024",
+      "kind": "chapter",
+      "number": "XXIV",
+      "title": "IN WHICH IS CONTINUED THE ADVENTURE OF THE SIERRA MORENA",
+      "raw_heading": "CHAPTER XXIV.",
+      "start": 512625,
+      "end": 532046
+    },
+    {
+      "id": "025",
+      "kind": "chapter",
+      "number": "XXV",
+      "title": "WHICH TREATS OF THE STRANGE THINGS THAT HAPPENED TO THE STOUT KNIGHT OF",
+      "raw_heading": "CHAPTER XXV.",
+      "start": 532046,
+      "end": 567676
+    },
+    {
+      "id": "026",
+      "kind": "chapter",
+      "number": "XXVI",
+      "title": "IN WHICH ARE CONTINUED THE REFINEMENTS WHEREWITH DON QUIXOTE PLAYED THE",
+      "raw_heading": "CHAPTER XXVI.",
+      "start": 567676,
+      "end": 584530
+    },
+    {
+      "id": "027",
+      "kind": "chapter",
+      "number": "XXVII",
+      "title": "OF HOW THE CURATE AND THE BARBER PROCEEDED WITH THEIR SCHEME; TOGETHER",
+      "raw_heading": "CHAPTER XXVII.",
+      "start": 584530,
+      "end": 620567
+    },
+    {
+      "id": "028",
+      "kind": "chapter",
+      "number": "XXVIII",
+      "title": "WHICH TREATS OF THE STRANGE AND DELIGHTFUL ADVENTURE THAT BEFELL THE",
+      "raw_heading": "CHAPTER XXVIII.",
+      "start": 620567,
+      "end": 652757
+    },
+    {
+      "id": "029",
+      "kind": "chapter",
+      "number": "XXIX",
+      "title": "WHICH TREATS OF THE DROLL DEVICE AND METHOD ADOPTED TO EXTRICATE OUR",
+      "raw_heading": "CHAPTER XXIX.",
+      "start": 652757,
+      "end": 678661
+    },
+    {
+      "id": "030",
+      "kind": "chapter",
+      "number": "XXX",
+      "title": "WHICH TREATS OF ADDRESS DISPLAYED BY THE FAIR DOROTHEA, WITH OTHER",
+      "raw_heading": "CHAPTER XXX.",
+      "start": 678661,
+      "end": 700961
+    },
+    {
+      "id": "031",
+      "kind": "chapter",
+      "number": "XXXI",
+      "title": "OF THE DELECTABLE DISCUSSION BETWEEN DON QUIXOTE AND SANCHO PANZA, HIS",
+      "raw_heading": "CHAPTER XXXI.",
+      "start": 700961,
+      "end": 720886
+    },
+    {
+      "id": "032",
+      "kind": "chapter",
+      "number": "XXXII",
+      "title": "WHICH TREATS OF WHAT BEFELL DON QUIXOTE’S PARTY AT THE INN",
+      "raw_heading": "CHAPTER XXXII.",
+      "start": 720886,
+      "end": 735473
+    },
+    {
+      "id": "033",
+      "kind": "chapter",
+      "number": "XXXIII",
+      "title": "IN WHICH IS RELATED THE NOVEL OF “THE ILL-ADVISED CURIOSITY”",
+      "raw_heading": "CHAPTER XXXIII.",
+      "start": 735473,
+      "end": 778197
+    },
+    {
+      "id": "034",
+      "kind": "chapter",
+      "number": "XXXIV",
+      "title": "IN WHICH IS CONTINUED THE NOVEL OF “THE ILL-ADVISED CURIOSITY”",
+      "raw_heading": "CHAPTER XXXIV.",
+      "start": 778197,
+      "end": 819994
+    },
+    {
+      "id": "035",
+      "kind": "chapter",
+      "number": "XXXV",
+      "title": "WHICH TREATS OF THE HEROIC AND PRODIGIOUS BATTLE DON QUIXOTE HAD WITH",
+      "raw_heading": "CHAPTER XXXV.",
+      "start": 819994,
+      "end": 839231
+    },
+    {
+      "id": "036",
+      "kind": "chapter",
+      "number": "XXXVI",
+      "title": "WHICH TREATS OF MORE CURIOUS INCIDENTS THAT OCCURRED AT THE INN",
+      "raw_heading": "CHAPTER XXXVI.",
+      "start": 839231,
+      "end": 860171
+    },
+    {
+      "id": "037",
+      "kind": "chapter",
+      "number": "XXXVII",
+      "title": "IN WHICH IS CONTINUED THE STORY OF THE FAMOUS PRINCESS MICOMICONA, WITH",
+      "raw_heading": "CHAPTER XXXVII.",
+      "start": 860171,
+      "end": 883022
+    },
+    {
+      "id": "038",
+      "kind": "chapter",
+      "number": "XXXVIII",
+      "title": "WHICH TREATS OF THE CURIOUS DISCOURSE DON QUIXOTE DELIVERED ON ARMS AND",
+      "raw_heading": "CHAPTER XXXVIII.",
+      "start": 883022,
+      "end": 891928
+    },
+    {
+      "id": "039",
+      "kind": "chapter",
+      "number": "XXXIX",
+      "title": "WHEREIN THE CAPTIVE RELATES HIS LIFE AND ADVENTURES",
+      "raw_heading": "CHAPTER XXXIX.",
+      "start": 891928,
+      "end": 909734
+    },
+    {
+      "id": "040",
+      "kind": "chapter",
+      "number": "XL",
+      "title": "",
+      "raw_heading": "CHAPTER XL.",
+      "start": 909734,
+      "end": 936537
+    },
+    {
+      "id": "041",
+      "kind": "chapter",
+      "number": "XLI",
+      "title": "IN WHICH THE CAPTIVE STILL CONTINUES HIS ADVENTURES",
+      "raw_heading": "CHAPTER XLI.",
+      "start": 936537,
+      "end": 980176
+    },
+    {
+      "id": "042",
+      "kind": "chapter",
+      "number": "XLII",
+      "title": "WHICH TREATS OF WHAT FURTHER TOOK PLACE IN THE INN, AND OF SEVERAL",
+      "raw_heading": "CHAPTER XLII.",
+      "start": 980176,
+      "end": 996259
+    },
+    {
+      "id": "043",
+      "kind": "chapter",
+      "number": "XLIII",
+      "title": "WHEREIN IS RELATED THE PLEASANT STORY OF THE MULETEER, TOGETHER WITH",
+      "raw_heading": "CHAPTER XLIII.",
+      "start": 996259,
+      "end": 1017045
+    },
+    {
+      "id": "044",
+      "kind": "chapter",
+      "number": "XLIV",
+      "title": "IN WHICH ARE CONTINUED THE UNHEARD-OF ADVENTURES OF THE INN",
+      "raw_heading": "CHAPTER XLIV.",
+      "start": 1017045,
+      "end": 1035880
+    },
+    {
+      "id": "045",
+      "kind": "chapter",
+      "number": "XLV",
+      "title": "IN WHICH THE DOUBTFUL QUESTION OF MAMBRINO’S HELMET AND THE PACK-SADDLE",
+      "raw_heading": "CHAPTER XLV.",
+      "start": 1035880,
+      "end": 1052950
+    },
+    {
+      "id": "046",
+      "kind": "chapter",
+      "number": "XLVI",
+      "title": "OF THE END OF THE NOTABLE ADVENTURE OF THE OFFICERS OF THE HOLY",
+      "raw_heading": "CHAPTER XLVI.",
+      "start": 1052950,
+      "end": 1071224
+    },
+    {
+      "id": "047",
+      "kind": "chapter",
+      "number": "XLVII",
+      "title": "OF THE STRANGE MANNER IN WHICH DON QUIXOTE OF LA MANCHA WAS CARRIED",
+      "raw_heading": "CHAPTER XLVII.",
+      "start": 1071224,
+      "end": 1093129
+    },
+    {
+      "id": "048",
+      "kind": "chapter",
+      "number": "XLVIII",
+      "title": "IN WHICH THE CANON PURSUES THE SUBJECT OF THE BOOKS OF CHIVALRY, WITH",
+      "raw_heading": "CHAPTER XLVIII.",
+      "start": 1093129,
+      "end": 1109998
+    },
+    {
+      "id": "049",
+      "kind": "chapter",
+      "number": "XLIX",
+      "title": "WHICH TREATS OF THE SHREWD CONVERSATION WHICH SANCHO PANZA HELD WITH",
+      "raw_heading": "CHAPTER XLIX.",
+      "start": 1109998,
+      "end": 1125202
+    },
+    {
+      "id": "050",
+      "kind": "chapter",
+      "number": "L",
+      "title": "OF THE SHREWD CONTROVERSY WHICH DON QUIXOTE AND THE CANON HELD,",
+      "raw_heading": "CHAPTER L.",
+      "start": 1125202,
+      "end": 1139408
+    },
+    {
+      "id": "051",
+      "kind": "chapter",
+      "number": "LI",
+      "title": "WHICH DEALS WITH WHAT THE GOATHERD TOLD THOSE WHO WERE CARRYING OFF DON",
+      "raw_heading": "CHAPTER LI.",
+      "start": 1139408,
+      "end": 1151332
+    },
+    {
+      "id": "052",
+      "kind": "chapter",
+      "number": "LII",
+      "title": "OF THE QUARREL THAT DON QUIXOTE HAD WITH THE GOATHERD, TOGETHER WITH",
+      "raw_heading": "CHAPTER LII.",
+      "start": 1151332,
+      "end": 1184912
+    },
+    {
+      "id": "053",
       "kind": "chapter",
       "number": "I",
       "title": "OF THE INTERVIEW THE CURATE AND THE BARBER HAD WITH DON QUIXOTE ABOUT",
@@ -22,7 +481,7 @@
       "end": 1208808
     },
     {
-      "id": "003",
+      "id": "054",
       "kind": "chapter",
       "number": "II",
       "title": "WHICH TREATS OF THE NOTABLE ALTERCATION WHICH SANCHO PANZA HAD WITH DON",
@@ -31,7 +490,7 @@
       "end": 1218955
     },
     {
-      "id": "004",
+      "id": "055",
       "kind": "chapter",
       "number": "III",
       "title": "OF THE LAUGHABLE CONVERSATION THAT PASSED BETWEEN DON QUIXOTE, SANCHO",
@@ -40,7 +499,7 @@
       "end": 1235490
     },
     {
-      "id": "005",
+      "id": "056",
       "kind": "chapter",
       "number": "IV",
       "title": "IN WHICH SANCHO PANZA GIVES A SATISFACTORY REPLY TO THE DOUBTS AND",
@@ -49,7 +508,7 @@
       "end": 1246668
     },
     {
-      "id": "006",
+      "id": "057",
       "kind": "chapter",
       "number": "V",
       "title": "OF THE SHREWD AND DROLL CONVERSATION THAT PASSED BETWEEN SANCHO PANZA",
@@ -58,7 +517,7 @@
       "end": 1260409
     },
     {
-      "id": "007",
+      "id": "058",
       "kind": "chapter",
       "number": "VI",
       "title": "OF WHAT TOOK PLACE BETWEEN DON QUIXOTE AND HIS NIECE AND HOUSEKEEPER;",
@@ -67,7 +526,7 @@
       "end": 1272531
     },
     {
-      "id": "008",
+      "id": "059",
       "kind": "chapter",
       "number": "VII",
       "title": "OF WHAT PASSED BETWEEN DON QUIXOTE AND HIS SQUIRE, TOGETHER WITH OTHER",
@@ -76,7 +535,7 @@
       "end": 1287500
     },
     {
-      "id": "009",
+      "id": "060",
       "kind": "chapter",
       "number": "VIII",
       "title": "WHEREIN IS RELATED WHAT BEFELL DON QUIXOTE ON HIS WAY TO SEE HIS LADY",
@@ -85,7 +544,7 @@
       "end": 1303288
     },
     {
-      "id": "010",
+      "id": "061",
       "kind": "chapter",
       "number": "IX",
       "title": "WHEREIN IS RELATED WHAT WILL BE SEEN THERE",
@@ -94,7 +553,7 @@
       "end": 1311419
     },
     {
-      "id": "011",
+      "id": "062",
       "kind": "chapter",
       "number": "X",
       "title": "WHEREIN IS RELATED THE CRAFTY DEVICE SANCHO ADOPTED TO ENCHANT THE LADY",
@@ -103,7 +562,7 @@
       "end": 1330744
     },
     {
-      "id": "012",
+      "id": "063",
       "kind": "chapter",
       "number": "XI",
       "title": "OF THE STRANGE ADVENTURE WHICH THE VALIANT DON QUIXOTE HAD WITH THE CAR",
@@ -112,7 +571,7 @@
       "end": 1344136
     },
     {
-      "id": "013",
+      "id": "064",
       "kind": "chapter",
       "number": "XII",
       "title": "OF THE STRANGE ADVENTURE WHICH BEFELL THE VALIANT DON QUIXOTE WITH THE",
@@ -121,7 +580,7 @@
       "end": 1357553
     },
     {
-      "id": "014",
+      "id": "065",
       "kind": "chapter",
       "number": "XIII",
       "title": "IN WHICH IS CONTINUED THE ADVENTURE OF THE KNIGHT OF THE GROVE,",
@@ -130,7 +589,7 @@
       "end": 1370383
     },
     {
-      "id": "015",
+      "id": "066",
       "kind": "chapter",
       "number": "XIV",
       "title": "WHEREIN IS CONTINUED THE ADVENTURE OF THE KNIGHT OF THE GROVE",
@@ -139,7 +598,7 @@
       "end": 1394236
     },
     {
-      "id": "016",
+      "id": "067",
       "kind": "chapter",
       "number": "XV",
       "title": "WHEREIN IT IS TOLD AND KNOWN WHO THE KNIGHT OF THE MIRRORS AND HIS",
@@ -148,7 +607,7 @@
       "end": 1398839
     },
     {
-      "id": "017",
+      "id": "068",
       "kind": "chapter",
       "number": "XVI",
       "title": "OF WHAT BEFELL DON QUIXOTE WITH A DISCREET GENTLEMAN OF LA MANCHA",
@@ -157,7 +616,7 @@
       "end": 1419695
     },
     {
-      "id": "018",
+      "id": "069",
       "kind": "chapter",
       "number": "XVII",
       "title": "WHEREIN IS SHOWN THE FURTHEST AND HIGHEST POINT WHICH THE UNEXAMPLED",
@@ -166,7 +625,7 @@
       "end": 1441799
     },
     {
-      "id": "019",
+      "id": "070",
       "kind": "chapter",
       "number": "XVIII",
       "title": "OF WHAT HAPPENED DON QUIXOTE IN THE CASTLE OR HOUSE OF THE KNIGHT OF",
@@ -175,7 +634,7 @@
       "end": 1459204
     },
     {
-      "id": "020",
+      "id": "071",
       "kind": "chapter",
       "number": "XIX",
       "title": "IN WHICH IS RELATED THE ADVENTURE OF THE ENAMOURED SHEPHERD, TOGETHER",
@@ -184,7 +643,7 @@
       "end": 1475290
     },
     {
-      "id": "021",
+      "id": "072",
       "kind": "chapter",
       "number": "XX",
       "title": "WHEREIN AN ACCOUNT IS GIVEN OF THE WEDDING OF CAMACHO THE RICH,",
@@ -193,7 +652,7 @@
       "end": 1493502
     },
     {
-      "id": "022",
+      "id": "073",
       "kind": "chapter",
       "number": "XXI",
       "title": "IN WHICH CAMACHO’S WEDDING IS CONTINUED, WITH OTHER DELIGHTFUL",
@@ -202,7 +661,7 @@
       "end": 1507419
     },
     {
-      "id": "023",
+      "id": "074",
       "kind": "chapter",
       "number": "XXII",
       "title": "WHEREIN IS RELATED THE GRAND ADVENTURE OF THE CAVE OF MONTESINOS IN THE",
@@ -211,7 +670,7 @@
       "end": 1524244
     },
     {
-      "id": "024",
+      "id": "075",
       "kind": "chapter",
       "number": "XXIII",
       "title": "OF THE WONDERFUL THINGS THE INCOMPARABLE DON QUIXOTE SAID HE SAW IN THE",
@@ -220,7 +679,7 @@
       "end": 1546393
     },
     {
-      "id": "025",
+      "id": "076",
       "kind": "chapter",
       "number": "XXIV",
       "title": "WHEREIN ARE RELATED A THOUSAND TRIFLING MATTERS, AS TRIVIAL AS THEY ARE",
@@ -229,7 +688,7 @@
       "end": 1560090
     },
     {
-      "id": "026",
+      "id": "077",
       "kind": "chapter",
       "number": "XXV",
       "title": "WHEREIN IS SET DOWN THE BRAYING ADVENTURE, AND THE DROLL ONE OF THE",
@@ -238,7 +697,7 @@
       "end": 1580353
     },
     {
-      "id": "027",
+      "id": "078",
       "kind": "chapter",
       "number": "XXVI",
       "title": "WHEREIN IS CONTINUED THE DROLL ADVENTURE OF THE PUPPET-SHOWMAN,",
@@ -247,7 +706,7 @@
       "end": 1597897
     },
     {
-      "id": "028",
+      "id": "079",
       "kind": "chapter",
       "number": "XXVII",
       "title": "WHEREIN IT IS SHOWN WHO MASTER PEDRO AND HIS APE WERE, TOGETHER WITH",
@@ -256,7 +715,7 @@
       "end": 1612307
     },
     {
-      "id": "029",
+      "id": "080",
       "kind": "chapter",
       "number": "XXVIII",
       "title": "OF MATTERS THAT BENENGELI SAYS HE WHO READS THEM WILL KNOW, IF HE READS",
@@ -265,7 +724,7 @@
       "end": 1623369
     },
     {
-      "id": "030",
+      "id": "081",
       "kind": "chapter",
       "number": "XXIX",
       "title": "OF THE FAMOUS ADVENTURE OF THE ENCHANTED BARK",
@@ -274,7 +733,7 @@
       "end": 1636643
     },
     {
-      "id": "031",
+      "id": "082",
       "kind": "chapter",
       "number": "XXX",
       "title": "OF DON QUIXOTE’S ADVENTURE WITH A FAIR HUNTRESS",
@@ -283,7 +742,7 @@
       "end": 1647093
     },
     {
-      "id": "032",
+      "id": "083",
       "kind": "chapter",
       "number": "XXXI",
       "title": "WHICH TREATS OF MANY AND GREAT MATTERS",
@@ -292,7 +751,7 @@
       "end": 1664959
     },
     {
-      "id": "033",
+      "id": "084",
       "kind": "chapter",
       "number": "XXXII",
       "title": "OF THE REPLY DON QUIXOTE GAVE HIS CENSURER, WITH OTHER INCIDENTS, GRAVE",
@@ -301,7 +760,7 @@
       "end": 1695140
     },
     {
-      "id": "034",
+      "id": "085",
       "kind": "chapter",
       "number": "XXXIII",
       "title": "OF THE DELECTABLE DISCOURSE WHICH THE DUCHESS AND HER DAMSELS HELD WITH",
@@ -310,7 +769,7 @@
       "end": 1710394
     },
     {
-      "id": "035",
+      "id": "086",
       "kind": "chapter",
       "number": "XXXIV",
       "title": "WHICH RELATES HOW THEY LEARNED THE WAY IN WHICH THEY WERE TO DISENCHANT",
@@ -319,7 +778,7 @@
       "end": 1726155
     },
     {
-      "id": "036",
+      "id": "087",
       "kind": "chapter",
       "number": "XXXV",
       "title": "WHEREIN IS CONTINUED THE INSTRUCTION GIVEN TO DON QUIXOTE TOUCHING THE",
@@ -328,7 +787,7 @@
       "end": 1740848
     },
     {
-      "id": "037",
+      "id": "088",
       "kind": "chapter",
       "number": "XXXVI",
       "title": "WHEREIN IS RELATED THE STRANGE AND UNDREAMT-OF ADVENTURE OF THE",
@@ -337,7 +796,7 @@
       "end": 1753022
     },
     {
-      "id": "038",
+      "id": "089",
       "kind": "chapter",
       "number": "XXXVII",
       "title": "WHEREIN IS CONTINUED THE NOTABLE ADVENTURE OF THE DISTRESSED DUENNA",
@@ -346,7 +805,7 @@
       "end": 1757348
     },
     {
-      "id": "039",
+      "id": "090",
       "kind": "chapter",
       "number": "XXXVIII",
       "title": "WHEREIN IS TOLD THE DISTRESSED DUENNA’S TALE OF HER MISFORTUNES",
@@ -355,7 +814,7 @@
       "end": 1770725
     },
     {
-      "id": "040",
+      "id": "091",
       "kind": "chapter",
       "number": "XXXIX",
       "title": "IN WHICH THE TRIFALDI CONTINUES HER MARVELLOUS AND MEMORABLE STORY",
@@ -364,7 +823,7 @@
       "end": 1776485
     },
     {
-      "id": "041",
+      "id": "092",
       "kind": "chapter",
       "number": "XL",
       "title": "OF MATTERS RELATING AND BELONGING TO THIS ADVENTURE AND TO THIS",
@@ -373,7 +832,7 @@
       "end": 1788227
     },
     {
-      "id": "042",
+      "id": "093",
       "kind": "chapter",
       "number": "XLI",
       "title": "OF THE ARRIVAL OF CLAVILEÑO AND THE END OF THIS PROTRACTED ADVENTURE",
@@ -382,7 +841,7 @@
       "end": 1810127
     },
     {
-      "id": "043",
+      "id": "094",
       "kind": "chapter",
       "number": "XLII",
       "title": "OF THE COUNSELS WHICH DON QUIXOTE GAVE SANCHO PANZA BEFORE HE SET OUT",
@@ -391,7 +850,7 @@
       "end": 1821285
     },
     {
-      "id": "044",
+      "id": "095",
       "kind": "chapter",
       "number": "XLIII",
       "title": "OF THE SECOND SET OF COUNSELS DON QUIXOTE GAVE SANCHO PANZA",
@@ -400,7 +859,7 @@
       "end": 1834102
     },
     {
-      "id": "045",
+      "id": "096",
       "kind": "chapter",
       "number": "XLIV",
       "title": "HOW SANCHO PANZA WAS CONDUCTED TO HIS GOVERNMENT, AND OF THE STRANGE",
@@ -409,7 +868,7 @@
       "end": 1853255
     },
     {
-      "id": "046",
+      "id": "097",
       "kind": "chapter",
       "number": "XLV",
       "title": "OF HOW THE GREAT SANCHO PANZA TOOK POSSESSION OF HIS ISLAND, AND OF HOW",
@@ -418,7 +877,7 @@
       "end": 1868197
     },
     {
-      "id": "047",
+      "id": "098",
       "kind": "chapter",
       "number": "XLVI",
       "title": "OF THE TERRIBLE BELL AND CAT FRIGHT THAT DON QUIXOTE GOT IN THE COURSE",
@@ -427,7 +886,7 @@
       "end": 1876453
     },
     {
-      "id": "048",
+      "id": "099",
       "kind": "chapter",
       "number": "XLVII",
       "title": "WHEREIN IS CONTINUED THE ACCOUNT OF HOW SANCHO PANZA CONDUCTED HIMSELF",
@@ -436,7 +895,7 @@
       "end": 1894317
     },
     {
-      "id": "049",
+      "id": "100",
       "kind": "chapter",
       "number": "XLVIII",
       "title": "OF WHAT BEFELL DON QUIXOTE WITH DOÑA RODRIGUEZ, THE DUCHESS’S DUENNA,",
@@ -445,7 +904,7 @@
       "end": 1912127
     },
     {
-      "id": "050",
+      "id": "101",
       "kind": "chapter",
       "number": "XLIX",
       "title": "OF WHAT HAPPENED SANCHO IN MAKING THE ROUND OF HIS ISLAND",
@@ -454,7 +913,7 @@
       "end": 1935741
     },
     {
-      "id": "051",
+      "id": "102",
       "kind": "chapter",
       "number": "L",
       "title": "WHEREIN IS SET FORTH WHO THE ENCHANTERS AND EXECUTIONERS WERE WHO",
@@ -463,7 +922,7 @@
       "end": 1954273
     },
     {
-      "id": "052",
+      "id": "103",
       "kind": "chapter",
       "number": "LI",
       "title": "OF THE PROGRESS OF SANCHO’S GOVERNMENT, AND OTHER SUCH ENTERTAINING",
@@ -472,7 +931,7 @@
       "end": 1972654
     },
     {
-      "id": "053",
+      "id": "104",
       "kind": "chapter",
       "number": "LII",
       "title": "WHEREIN IS RELATED THE ADVENTURE OF THE SECOND DISTRESSED OR AFFLICTED",
@@ -481,7 +940,7 @@
       "end": 1988083
     },
     {
-      "id": "054",
+      "id": "105",
       "kind": "chapter",
       "number": "LIII",
       "title": "OF THE TROUBLOUS END AND TERMINATION SANCHO PANZA’S GOVERNMENT CAME TO",
@@ -490,7 +949,7 @@
       "end": 2000351
     },
     {
-      "id": "055",
+      "id": "106",
       "kind": "chapter",
       "number": "LIV",
       "title": "WHICH DEALS WITH MATTERS RELATING TO THIS HISTORY AND NO OTHER",
@@ -499,7 +958,7 @@
       "end": 2017307
     },
     {
-      "id": "056",
+      "id": "107",
       "kind": "chapter",
       "number": "LV",
       "title": "OF WHAT BEFELL SANCHO ON THE ROAD, AND OTHER THINGS THAT CANNOT BE",
@@ -508,7 +967,7 @@
       "end": 2032950
     },
     {
-      "id": "057",
+      "id": "108",
       "kind": "chapter",
       "number": "LVI",
       "title": "OF THE PRODIGIOUS AND UNPARALLELED BATTLE THAT TOOK PLACE BETWEEN DON",
@@ -517,7 +976,7 @@
       "end": 2043890
     },
     {
-      "id": "058",
+      "id": "109",
       "kind": "chapter",
       "number": "LVII",
       "title": "WHICH TREATS OF HOW DON QUIXOTE TOOK LEAVE OF THE DUKE, AND OF WHAT",
@@ -526,7 +985,7 @@
       "end": 2051083
     },
     {
-      "id": "059",
+      "id": "110",
       "kind": "chapter",
       "number": "LVIII",
       "title": "WHICH TELLS HOW ADVENTURES CAME CROWDING ON DON QUIXOTE IN SUCH NUMBERS",
@@ -535,7 +994,7 @@
       "end": 2075842
     },
     {
-      "id": "060",
+      "id": "111",
       "kind": "chapter",
       "number": "LIX",
       "title": "WHEREIN IS RELATED THE STRANGE THING, WHICH MAY BE REGARDED AS AN",
@@ -544,7 +1003,7 @@
       "end": 2092914
     },
     {
-      "id": "061",
+      "id": "112",
       "kind": "chapter",
       "number": "LX",
       "title": "OF WHAT HAPPENED DON QUIXOTE ON HIS WAY TO BARCELONA",
@@ -553,7 +1012,7 @@
       "end": 2120304
     },
     {
-      "id": "062",
+      "id": "113",
       "kind": "chapter",
       "number": "LXI",
       "title": "OF WHAT HAPPENED DON QUIXOTE ON ENTERING BARCELONA, TOGETHER WITH OTHER",
@@ -562,7 +1021,7 @@
       "end": 2126403
     },
     {
-      "id": "063",
+      "id": "114",
       "kind": "chapter",
       "number": "LXII",
       "title": "WHICH DEALS WITH THE ADVENTURE OF THE ENCHANTED HEAD, TOGETHER WITH",
@@ -571,7 +1030,7 @@
       "end": 2152145
     },
     {
-      "id": "064",
+      "id": "115",
       "kind": "chapter",
       "number": "LXIII",
       "title": "OF THE MISHAP THAT BEFELL SANCHO PANZA THROUGH THE VISIT TO THE",
@@ -580,7 +1039,7 @@
       "end": 2172980
     },
     {
-      "id": "065",
+      "id": "116",
       "kind": "chapter",
       "number": "LXIV",
       "title": "TREATING OF THE ADVENTURE WHICH GAVE DON QUIXOTE MORE UNHAPPINESS THAN",
@@ -589,7 +1048,7 @@
       "end": 2182449
     },
     {
-      "id": "066",
+      "id": "117",
       "kind": "chapter",
       "number": "LXV",
       "title": "WHEREIN IS MADE KNOWN WHO THE KNIGHT OF THE WHITE MOON WAS; LIKEWISE",
@@ -598,7 +1057,7 @@
       "end": 2193994
     },
     {
-      "id": "067",
+      "id": "118",
       "kind": "chapter",
       "number": "LXVI",
       "title": "WHICH TREATS OF WHAT HE WHO READS WILL SEE, OR WHAT HE WHO HAS IT READ",
@@ -607,7 +1066,7 @@
       "end": 2204879
     },
     {
-      "id": "068",
+      "id": "119",
       "kind": "chapter",
       "number": "LXVII",
       "title": "OF THE RESOLUTION DON QUIXOTE FORMED TO TURN SHEPHERD AND TAKE TO A",
@@ -616,7 +1075,7 @@
       "end": 2215531
     },
     {
-      "id": "069",
+      "id": "120",
       "kind": "chapter",
       "number": "LXVIII",
       "title": "OF THE BRISTLY ADVENTURE THAT BEFELL DON QUIXOTE",
@@ -625,7 +1084,7 @@
       "end": 2226062
     },
     {
-      "id": "070",
+      "id": "121",
       "kind": "chapter",
       "number": "LXIX",
       "title": "OF THE STRANGEST AND MOST EXTRAORDINARY ADVENTURE THAT BEFELL DON",
@@ -634,7 +1093,7 @@
       "end": 2237047
     },
     {
-      "id": "071",
+      "id": "122",
       "kind": "chapter",
       "number": "LXX",
       "title": "WHICH FOLLOWS SIXTY-NINE AND DEALS WITH MATTERS INDISPENSABLE FOR THE",
@@ -643,7 +1102,7 @@
       "end": 2252519
     },
     {
-      "id": "072",
+      "id": "123",
       "kind": "chapter",
       "number": "LXXI",
       "title": "OF WHAT PASSED BETWEEN DON QUIXOTE AND HIS SQUIRE SANCHO ON THE WAY TO",
@@ -652,7 +1111,7 @@
       "end": 2265152
     },
     {
-      "id": "073",
+      "id": "124",
       "kind": "chapter",
       "number": "LXXII",
       "title": "OF HOW DON QUIXOTE AND SANCHO REACHED THEIR VILLAGE",
@@ -661,7 +1120,7 @@
       "end": 2275393
     },
     {
-      "id": "074",
+      "id": "125",
       "kind": "chapter",
       "number": "LXXIII",
       "title": "OF THE OMENS DON QUIXOTE HAD AS HE ENTERED HIS OWN VILLAGE, AND OTHER",
@@ -670,7 +1129,7 @@
       "end": 2285683
     },
     {
-      "id": "075",
+      "id": "126",
       "kind": "chapter",
       "number": "LXXIV",
       "title": "OF HOW DON QUIXOTE FELL SICK, AND OF THE WILL HE MADE, AND HOW HE DIED",

@@ -1,0 +1,17 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "other",
+      "source_passage": "entire Chapter 5 source text provided",
+      "source_locator": "full segment",
+      "draft_treatment": "absent",
+      "why_it_matters": "No draft text was supplied; the draft section is completely empty, making any comparison impossible and constituting total preservation failure.",
+      "suggested_fix": "Supply the actual draft text and resubmit for evaluation."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft field is entirely empty; there is nothing to evaluate against the source, which is an absolute preservation failure requiring regeneration."
+}

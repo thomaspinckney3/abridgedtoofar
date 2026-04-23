@@ -1,0 +1,35 @@
+{
+  "segment_id": "008",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he had the look of a man who sees a ghost, or the evil one, or something worse, if anything can be; and upon my word, I felt sorry to see him all in a moment turn so old and sick",
+      "source_locator": "paragraph describing the captain's reaction to Black Dog's voice, before 'Black Dog!' said he",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence does double interpretive work: it registers the captain's extreme terror in rhetorically distinctive phrasing ('something worse, if anything can be') and reveals Jim's unexpected sympathy for the captain—a key note in his characterization that is entirely lost in the draft.",
+      "suggested_fix": "Restore after 'all the brown had gone out of his face and even his nose was blue': 'he had the look of a man who sees a ghost, or the evil one, or something worse, if anything can be; and upon my word, I felt sorry to see him all in a moment turn so old and sick.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "the last sound I heard of him as he turned the big rock was a loud snort of indignation, as though his mind was still running upon Dr. Livesey",
+      "source_locator": "end of the captain's departure paragraph, before 'Well, mother was upstairs'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic aside—that the captain's parting snort is still directed at Livesey, who then rescues him at the chapter's end—is a classic Stevensonian structural irony and a voice-establishing digression; its removal erases both comic texture and narrative foreshadowing.",
+      "suggested_fix": "Append to the captain's departure sentence: 'and the last sound I heard of him as he turned the big rock was a loud snort of indignation, as though his mind was still running upon Dr. Livesey.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was not sailorly, and yet he had a smack of the sea about him too",
+      "source_locator": "paragraph introducing Black Dog, after 'I had always my eye open for seafaring men, with one leg or two'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This paradox ('not sailorly, and yet a smack of the sea') is Jim's characteristic mode of close observation and is stylistically distinctive; it also sets up Black Dog's sinister ambiguity. The entire sentence and the lead-in observation about Jim's habit of watching seafarers is cut.",
+      "suggested_fix": "After describing Black Dog's missing fingers and non-fighter appearance, restore: 'I had always my eye open for seafaring men, with one leg or two, and I remember this one puzzled me. He was not sailorly, and yet he had a smack of the sea about him too.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity losses: the captain's ghost-and-evil-one reaction (interpretive and rhetorical), the parting snort of indignation aimed at Livesey (structural irony and voice), and the 'not sailorly, yet a smack of the sea' paradox (Jim's observational voice)—each absent rather than compressed."
+}

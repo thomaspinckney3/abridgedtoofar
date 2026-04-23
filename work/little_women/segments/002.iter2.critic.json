@@ -4,50 +4,77 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "I'll try and be what he loves to call me, 'a little woman,' and not be rough and wild; but do my duty here instead of wanting to be somewhere else,",
-      "South.": "source_locator\": \"After the letter-reading scene, Jo's individual resolution",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The trailing clause—'keeping her temper at home was a much harder task than facing a rebel or two down South'—is a signature ironic aside that establishes Jo's self-aware, wry voice and grounds her feminism in comic realism; its absence flattens a key interpretive moment about domestic versus martial duty.",
-      "suggested_fix": "Restore the full sentence including the ironic parenthetical thought about the harder task being domestic; it is short enough to preserve verbatim even under compression."
+      "class": "voice_flattening",
+      "source_passage": "Nobody spoke for a minute; then Meg said in an altered tone,--",
+      "source_locator": "paragraph 6, before Meg's speech about sacrifices",
+      "draft_treatment": "absent",
+      "why_it_matters": "The beat of silence and the narratorial note of Meg's 'altered tone' establish the tonal shift from grumbling to sober reflection; its removal flattens the scene's emotional pacing.",
+      "suggested_fix": "Restore the sentence 'Nobody spoke for a minute; then Meg said in an altered tone,—' before Meg's speech about sacrifices."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Beth wiped away her tears with the blue army-sock, and began to knit with all her might, losing no time in doing the duty that lay nearest her, while she resolved in her quiet little soul to be all that father hoped to find her when the year brought round the happy coming home.",
-      "source_locator": "Immediately after the other sisters' resolutions following the letter",
-      "draft_treatment": "flattened",
-      "why_it_matters": "Beth's silent interiority—her 'quiet little soul' and the phrase 'the duty that lay nearest her'—is the thematic and stylistic centerpiece of her characterization; the draft reduces it to mere action ('began to knit') stripping the narrator's interpretive access to Beth's inner life.",
-      "suggested_fix": "Restore the full sentence from 'losing no time in doing the duty that lay nearest her' through 'the happy coming home'; this is Beth's defining moment in the chapter."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "a tall, motherly lady, with a 'can-I-help-you' look about her which was truly delightful. She was not elegantly dressed, but a noble-looking woman, and the girls thought the gray cloak and unfashionable bonnet covered the most splendid mother in the world.",
-      "source_locator": "Marmee's entrance, after the rehearsal ends",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The 'can-I-help-you look' is one of the most distinctive phrases in Alcott's portrait of Marmee and is widely cited as capturing her essential character; the draft reduces her to merely 'a tall, motherly lady' with reference to her cloak and bonnet but drops the signature phrase entirely.",
-      "suggested_fix": "Restore the 'can-I-help-you look about her which was truly delightful' and the 'not elegantly dressed, but a noble-looking woman' clauses; together they constitute the signature character-establishing sentence for Marmee."
-    },
-    {
-      "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "Don't you wish we had the money papa lost when we were little, Jo? Dear me! how happy and good we'd be, if we had no worries!... you thought we were a deal happier than the King children, for they were fighting and fretting all the time, in spite of their money.",
-      "source_locator": "After the 'Don't peck' exchange and before the character sketches",
+      "source_passage": "which no one heard but the hearth-brush and kettle-holder",
+      "source_locator": "paragraph after Jo's bookworm line, Beth's sigh",
       "draft_treatment": "absent",
-      "why_it_matters": "This exchange—Meg's nostalgic wish for wealth countered by Beth's reminder that the Marches are happier than rich neighbors—introduces the novel's central class-and-contentment theme and is the immediate dramatic prelude to the portrait of the comfortable room; its absence removes a thematic keystone.",
-      "suggested_fix": "Restore Meg's 'Don't you wish we had the money papa lost' line and the Beth/Meg exchange about the King children; together they are brief and carry significant thematic freight."
+      "why_it_matters": "This whimsical, personifying aside is a signature stylistic touch—Alcott's playful comic narrator voice; its deletion flattens the prose to plain report.",
+      "suggested_fix": "Restore the parenthetical 'which no one heard but the hearth-brush and kettle-holder' to Beth's line about new music."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "a good picture or two hung on the walls, books filled the recesses",
+      "source_locator": "room description paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The draft omits the detail about pictures on the walls from the room description, slightly thinning the establishing sketch of the comfortable modest home that carries interpretive weight about the March family's genteel poverty.",
+      "suggested_fix": "Add 'a good picture or two hung on the walls' back into the room description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Her father called her 'Little Tranquillity,' and the name suited her excellently",
+      "source_locator": "character sketches paragraph, Beth's description",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft uses 'Little Tranquillity' as a bare label without the full sentence explaining the father gave her this name and why it suited her—losing the warmth and interpretive framing of Beth's character.",
+      "suggested_fix": "Restore 'Her father called her "
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "What the characters of the four sisters were we will leave to be found out.",
+      "source_locator": "end of character sketches paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing narratorial wink is a well-known voice-establishing moment—the narrator directly addressing the reader with playful irony; its loss erases a signature register marker.",
+      "suggested_fix": "Restore the closing line 'What the characters of the four sisters were we will leave to be found out.' at the end of the character sketch paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Jo tossed up her napkin, crying, 'A letter! a letter! Three cheers for father!'",
+      "source_locator": "supper scene, Mrs. March announces the treat",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft reverses the order—gives the letter content first, then Jo's cry—and omits 'tossed up her napkin', losing the vivid physicality and the exact exclamatory rhythm of a culturally recognizable moment.",
+      "suggested_fix": "Restore the sequence: first Jo's cry with napkin-tossing, then Mrs. March's description of the letter contents."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I am afraid I don't; and Meg shook her head, as she thought regretfully of all the pretty things she wanted.",
-      "source_locator": "Meg's speech about making little sacrifices gladly",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "Meg's admission that she is afraid she does not gladly make sacrifices—with the accompanying action of shaking her head—is a small but character-specific moment of self-knowledge that the draft smooths over with vague internalized longing.",
-      "suggested_fix": "Add 'But I am afraid I don't' and the head-shake after Meg's speech about making sacrifices; it is seven words and sharpens Meg's hypocrisy/self-awareness."
+      "source_passage": "Jo, rolling her eyes and clutching at the air, as she had seen a famous tragedian do",
+      "source_locator": "rehearsal scene, Jo's Macbeth speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Macbeth riff ('Is that a dagger that I see before me?') and the stage business are cut entirely; though the rehearsal scene is compressed, this comic highlight is signature Alcott wit.",
+      "suggested_fix": "Add Jo's Macbeth moment ('Is that a dagger that I see before me?') with the stage-business detail into the rehearsal paragraph."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "for the mother was a born singer. The first sound in the morning was her voice, as she went about the house singing like a lark",
+      "source_locator": "final paragraph, singing scene",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses the passage into a vague summary, losing 'singing like a lark' and the full warmth of the closing image of Marmee's voice as the household's sonic frame.",
+      "suggested_fix": "Restore 'for the mother was a born singer. The first sound in the morning was her voice, as she went about the house singing like a lark' in the final paragraph."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's major set-pieces but loses four medium-severity passages: Jo's ironic 'harder task than facing a rebel' aside, Beth's 'quiet little soul' resolution, Marmee's 'can-I-help-you look' character tag, and the King-children class-and-happiness exchange—collectively enough to trigger regeneration."
+  "summary": "The draft preserves the chapter's major plot beats and most signature lines but accumulates five medium-severity voice-flattening losses—the silence beat before Meg's altered-tone speech, the comic hearth-brush parenthetical, the 'what the characters were we leave to be found out' narratorial wink, the reversal of the letter-announcement sequence, and the compression of Beth's character-sketch framing—which together erode the narrator's distinctive playful register and trigger regeneration."
 }

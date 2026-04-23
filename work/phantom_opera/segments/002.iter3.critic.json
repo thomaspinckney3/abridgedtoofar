@@ -1,0 +1,71 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He had run up against the ghost on the little staircase, by the footlights, which leads to 'the cellars.' He had seen him for a second--for the ghost had fled--and to any one who cared to listen to him he said:",
+      "source_locator": "paragraph introducing Joseph Buquet's testimony, before his description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies Buquet 'ran up against' the ghost—a physical, visceral collision—and the phrase 'to any one who cared to listen to him' establishes Buquet as an eager, credible witness. The draft compresses this to 'he said to any one who cared to listen,' losing the 'ran up against' detail and the 'he had seen him for a second—for the ghost had fled' rhythm that makes the sighting feel frighteningly brief.",
+      "suggested_fix": "Restore 'He had run up against the ghost on the little staircase' and the parenthetical 'for the ghost had fled' to preserve the kinetic quality of the encounter."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "This chief scene-shifter was a serious, sober, steady man, very slow at imagining things.",
+      "source_locator": "paragraph following Buquet's description, before 'His words were received'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'very slow at imagining things' is a key characterization that lends credibility to Buquet's account—it is the narrator's ironic, voice-establishing aside that signals we should take the ghost seriously. The draft drops this clause entirely.",
+      "suggested_fix": "Restore 'very slow at imagining things' to maintain the narrator's rhetorical move of vouching for Buquet's prosaic literalness."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "For instance, a fireman is a brave fellow! He fears nothing, least of all fire! Well, the fireman in question, who had gone to make a round of inspection in the cellars",
+      "source_locator": "paragraph introducing the fireman Pampin, before the description of his terror",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's rhetorical buildup—'a fireman is a brave fellow! He fears nothing, least of all fire!'—is a signature voice move, establishing the narrator's ironic lecturing tone before the punchline. The draft jumps straight to 'A fireman, Pampin, went to make a round,' erasing the exclamatory framing entirely.",
+      "suggested_fix": "Restore the two exclamatory sentences ('a fireman is a brave fellow! He fears nothing, least of all fire!') before introducing Pampin's experience."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "This reticence exasperated the curiosity of the young ladies, who crowded round little Giry, begging her to explain herself. They were there, side by side, leaning forward simultaneously in one movement of entreaty and fear, communicating their terror to one another, taking a keen pleasure in feeling their blood freeze in their veins.",
+      "source_locator": "paragraph after Meg says 'Because--because--nothing--', before 'I swore not to tell!'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage is one of the most atmospherically distinctive in the chapter—the image of the girls 'taking a keen pleasure in feeling their blood freeze in their veins' is psychologically sharp and stylistically signature, establishing the delicious communal terror motif. It is entirely absent from the draft.",
+      "suggested_fix": "Restore the full paragraph describing the girls crowding Meg, leaning forward simultaneously, 'communicating their terror to one another, taking a keen pleasure in feeling their blood freeze in their veins.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I swore not to tell!\" gasped Meg. But they left her no peace and promised to keep the secret, until Meg, burning to say all she knew, began, with her eyes fixed on the door:",
+      "source_locator": "paragraph before 'Well, it's because of the private box'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source gives the dramatic buildup—Meg's gasp, the girls leaving her no peace, the detail of her eyes fixed on the door—before the box revelation. The draft collapses this to 'Pressed and promised secrecy, Meg, burning to say all, stared at the door and began,' losing the gasped oath and the escalating pressure.",
+      "suggested_fix": "Restore '\"I swore not to tell!\" gasped Meg' and the sentence about the girls leaving her no peace before the box dialogue begins."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "a respectable lady, built on the lines of a Pomeranian grenadier, burst into the dressing-room and dropped groaning into a vacant arm-chair",
+      "source_locator": "paragraph where Ma Jammes enters with the news of Buquet's death",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic simile 'built on the lines of a Pomeranian grenadier' is a physically vivid and tonally characteristic description. The draft simply writes 'Ma Jammes burst in and dropped groaning into a chair,' omitting the characterization entirely.",
+      "suggested_fix": "Restore 'built on the lines of a Pomeranian grenadier' and 'brick-dust colored face' (the latter is preserved) to keep the physical comedy of the entrance."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Oh, M. Moncharmin found a very simple explanation! Listen to him:",
+      "source_locator": "narrator's interjection between Moncharmin's quote and his explanation about the ballet-girls",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's sarcastic 'Oh, M. Moncharmin found a very simple explanation! Listen to him:' is a signature ironic interjection establishing the unreliable/skeptical narrator voice. The draft moves directly from Moncharmin's memoir to the explanation without this rhetorical framing.",
+      "suggested_fix": "Restore 'So this is an event which M. Moncharmin thinks natural' and 'Oh, M. Moncharmin found a very simple explanation! Listen to him:' to preserve the narrator's ironic commentary."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's plot and most signature set-pieces but erases four medium-severity voice-establishing passages—the 'blood freeze in their veins' crowd image, the fireman's rhetorical buildup, the 'very slow at imagining things' credibility aside, and Meg's gasped oath—triggering a regenerate verdict."
+}

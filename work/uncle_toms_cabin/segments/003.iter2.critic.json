@@ -1,0 +1,35 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "her mistress herself adorned the bride's beautiful hair with orange-blossoms, and threw over it the bridal veil, which certainly could scarce have rested on a fairer head; and there was no lack of white gloves, and cake and wine,—of admiring guests to praise the bride's beauty, and her mistress' indulgence and liberality.",
+      "source_locator": "paragraph describing the wedding in the parlor",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specificity—white gloves, cake and wine, admiring guests praising the mistress's liberality—carries ironic interpretive weight about the performance of benevolent slaveholding. The draft strips it to a bare mention of orange-blossoms and veil, erasing the social staging and the narrator's implicit irony.",
+      "suggested_fix": "Restore the detail of white gloves, cake, wine, and admiring guests praising the mistress's 'indulgence and liberality'—the latter phrase is the ironic payload and must survive."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "except the loss of two infant children, to whom she was passionately attached, and whom she mourned with a grief so intense as to call for gentle remonstrance from her mistress, who sought, with maternal anxiety, to direct her naturally passionate feelings within the bounds of reason and religion.",
+      "source_locator": "paragraph on Eliza's years of happiness before Harry's birth",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'within the bounds of reason and religion' and the description of the mistress's 'maternal anxiety' carry interpretive weight about the paternalistic regulation of enslaved emotion. The draft cuts the second clause entirely, removing the narrator's implicit critique.",
+      "suggested_fix": "Restore the clause about the mistress seeking 'with maternal anxiety, to direct her naturally passionate feelings within the bounds of reason and religion.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "A machine of this description was really the invention of a young colored man in Kentucky. [Mrs. Stowe's note.]",
+      "source_locator": "footnote after the hemp-machine description",
+      "draft_treatment": "absent",
+      "why_it_matters": "Stowe's authorial footnote authenticating the invention is a deliberate rhetorical intervention that bolsters her documentary claim and her argument against slavery's waste of human talent. Its absence is a minor but real loss of authorial voice.",
+      "suggested_fix": "Add a parenthetical or footnote marker: '(A machine of this description was really the invention of a young colored man in Kentucky. —Author's note.)'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft faithfully preserves the chapter's major signatures—the verbatim volcano passage, the law's 'not a man but a thing,' George's transfixed reaction, and the closing jurist aphorism—but flattens the wedding-scene irony and the mistress's paternalistic remonstrance, constituting two medium findings that do not individually or collectively trigger regeneration."
+}

@@ -37,6 +37,66 @@ def _role_for_kind(kind: str) -> str:
     return "narrative"
 
 
+# Merge thresholds — empirical from the prototype runs on Bleak House and
+# Little Women. GPT-5 compresses well on inputs whose target is >= ~1500w;
+# below that it hits a floor around 1.2× regardless of the ask. Grouping
+# adjacent short chapters into a super-segment of combined target up to
+# ~3000w puts the draft call back in GPT-5's effective zone (3–4× ratio).
+MERGE_TARGET_FLOOR = 1500
+MERGE_GROUP_CAP = 2000
+
+
+def _assign_merge_groups(segments: list[dict]) -> dict[str, dict]:
+    """Walk diegetic segments in plan order, group adjacent ones whose
+    individual targets are below MERGE_TARGET_FLOOR into super-segments
+    capped at MERGE_GROUP_CAP combined target.
+
+    Mutates `segments` in place to add `group_id` (None or "g<NNN>") and
+    returns a dict: {group_id: {member_ids, combined_target, combined_source}}.
+    """
+    groups: dict[str, dict] = {}
+    current: list[dict] = []
+    group_seq = 0
+
+    def flush():
+        nonlocal group_seq, current
+        if len(current) >= 2:
+            group_seq += 1
+            gid = f"g{group_seq:03d}"
+            for s in current:
+                s["group_id"] = gid
+            groups[gid] = {
+                "member_ids": [s["id"] for s in current],
+                "combined_target_word_count": sum(s["target_word_count"] for s in current),
+                "combined_source_word_count": sum(s["source_word_count"] for s in current),
+            }
+        else:
+            for s in current:
+                s.setdefault("group_id", None)
+        current = []
+
+    for s in segments:
+        s.setdefault("group_id", None)
+        # Extradiegetic and already-large chapters don't participate.
+        if (s.get("diegetic_status") != "diegetic"
+                or s.get("target_word_count", 0) >= MERGE_TARGET_FLOOR):
+            flush()
+            continue
+
+        # Candidate for merging — check whether adding it would bust the cap.
+        prospective = sum(x["target_word_count"] for x in current) + s["target_word_count"]
+        if current and prospective > MERGE_GROUP_CAP:
+            flush()
+        current.append(s)
+        # If the running group's target has already crossed the floor and the
+        # next candidate would push over the cap, seal now. Otherwise keep
+        # accumulating small chapters.
+        if sum(x["target_word_count"] for x in current) >= MERGE_GROUP_CAP:
+            flush()
+    flush()
+    return groups
+
+
 def build_lean_plan(book: Book) -> dict:
     manifest_path = book.work_dir / "chapters.json"
     if not manifest_path.exists():
@@ -78,16 +138,34 @@ def build_lean_plan(book: Book) -> dict:
         p = book.work_dir / "chapters" / f"{c['id']}.md"
         chapter_words[c["id"]] = len(p.read_text().split()) if p.exists() else 0
 
+    # LLM chapter classifications override the heuristic. Auto-run the
+    # classifier on first `plan` invocation; subsequent `plan` runs reuse
+    # the cached file. One LLM call per book, one-time.
+    cls_path = book.work_dir / "chapter_classifications.json"
+    if not cls_path.exists():
+        from .chapter_classifier import classify_chapters
+        classify_chapters(book)
+    classifications = read_json(cls_path)
+
+    def _role_for_segment(c: dict) -> str:
+        verdict = classifications.get(c["id"], {}).get("status")
+        if verdict == "diegetic":
+            return "narrative"
+        if verdict in ("extradiegetic", "toc_fragment"):
+            return "extradiegetic"
+        # cut_for_review or no classification → heuristic fallback
+        return _role_for_kind(c["kind"])
+
     # Apportion target by diegetic chapter share only — extradiegetic
     # chapters are cut, they shouldn't claim any of the book's target budget.
     diegetic_source_total = sum(
         chapter_words[c["id"]] for c in chapters
-        if _role_for_kind(c["kind"]) != "extradiegetic"
+        if _role_for_segment(c) != "extradiegetic"
     )
 
     segments: list[dict] = []
     for c in chapters:
-        role = _role_for_kind(c["kind"])
+        role = _role_for_segment(c)
         src_w = chapter_words[c["id"]]
         if role == "extradiegetic" or diegetic_source_total == 0:
             target_w = 0
@@ -97,7 +175,7 @@ def build_lean_plan(book: Book) -> dict:
             # target reads as authoritative and gives a few words of slack
             # vs. the exact proportional math.
             target_w = int(-(-raw // 100) * 100)
-        segments.append({
+        seg = {
             "id": c["id"],
             "kind": c["kind"],
             "number": c.get("number"),
@@ -110,7 +188,15 @@ def build_lean_plan(book: Book) -> dict:
             "relative_compression": 1.0,
             "signatures": [],  # no prepass — drafter identifies in-line
             "notes": "",
-        })
+            "group_id": None,  # populated by _assign_merge_groups below
+        }
+        cls = classifications.get(c["id"])
+        if cls:
+            seg["classification_status"] = cls.get("status")
+            seg["classification_reason"] = cls.get("reason", "")
+        segments.append(seg)
+
+    merged_groups = _assign_merge_groups(segments)
 
     plan = {
         "book_id": book.book_id,
@@ -127,6 +213,7 @@ def build_lean_plan(book: Book) -> dict:
                        "No prepass, no signature enumeration."),
         "motifs": [],
         "segments": segments,
+        "merged_groups": merged_groups,
         "_meta": {
             "computed": {
                 "source_word_count": source_words,

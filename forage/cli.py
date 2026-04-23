@@ -17,9 +17,12 @@ from .assemble import assemble_book
 from .chapter_split import split_to_disk
 from .critics import run_critic
 from .drafter import draft_all, draft_segment, ensure_chapters
+from .book_critic import run_book_critic
+from .chapter_classifier import classify_chapters
 from .iterate import iterate_segment
 from .lean_plan import build_lean_plan
 from .llm import set_stream_sink
+from .summarizer import summarize_book
 from .prepass import run_prepass
 from .prime import run_prime
 from .rebudget import rebudget
@@ -134,10 +137,118 @@ def prepass(
 
 
 @app.command()
+def classify(
+    book_id: str,
+    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
+) -> None:
+    """Run the LLM chapter classifier on BOOK_ID. Decides which candidate
+    segments from the splitter are diegetic (keep) vs extradiegetic (cut).
+    Writes work/<book>/chapter_classifications.json. The lean planner reads
+    this file to override its kind-based heuristic when present.
+    """
+    book = load_book(book_id)
+    console.print(f"[dim]source:[/dim] {book.source_path}")
+    if stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk); sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+    result = classify_chapters(book)
+    if stream:
+        sys.stdout.write("\n")
+    from collections import Counter
+    counts = Counter(v["status"] for v in result.values())
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim"); tally.add_column()
+    tally.add_row("candidates", str(len(result)))
+    for s in ("diegetic", "extradiegetic", "toc_fragment", "cut_for_review"):
+        if counts.get(s):
+            tally.add_row(s, str(counts[s]))
+    console.print(Panel(tally, title="classify"))
+    non_d = [(cid, v) for cid, v in sorted(result.items())
+             if v["status"] != "diegetic"]
+    if non_d:
+        t = Table(title="non-diegetic candidates", show_lines=False)
+        t.add_column("id"); t.add_column("status"); t.add_column("reason")
+        for cid, v in non_d:
+            t.add_row(cid, v["status"], (v.get("reason") or "")[:60])
+        console.print(t)
+
+
+@app.command()
+def summarize(
+    book_id: str,
+    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
+) -> None:
+    """Produce a 15-sentence book synopsis used as ground truth by the
+    book-level critic. Uses chunked chaining (partial synopses + merge) for
+    books that exceed GPT-5's input context.
+    Writes work/<book>/book_synopsis.md.
+    """
+    book = load_book(book_id)
+    console.print(f"[dim]source:[/dim] {book.source_path}")
+    if stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk); sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+    text = summarize_book(book)
+    if stream:
+        sys.stdout.write("\n")
+    console.rule("[bold]synopsis[/bold]")
+    console.print(text)
+
+
+@app.command(name="book-critique")
+def book_critique_cmd(
+    book_id: str,
+    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
+) -> None:
+    """Verify each synopsis sentence against the assembled abridgment.
+    Reads work/<book>/book_synopsis.md and either `abridgment.md` (if
+    present) or a concatenation of `segments/NNN.md` (partial mode).
+    Writes work/<book>/book_critic.json.
+    """
+    book = load_book(book_id)
+    if stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk); sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+    result = run_book_critic(book)
+    if stream:
+        sys.stdout.write("\n")
+    color = "green" if result["verdict"] == "ship" else "red"
+    console.rule(f"[bold {color}]book critic: {result['verdict'].upper()}"
+                 + (" [PARTIAL]" if result.get("is_partial") else "")
+                 + f"[/bold {color}]")
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim"); tally.add_column()
+    tally.add_row("sentences", str(result["synopsis_sentence_count"]))
+    for k, v in result["counts"].items():
+        tally.add_row(k, str(v))
+    console.print(Panel(tally, title="counts"))
+    t = Table(title="per-sentence verdicts", show_lines=False)
+    t.add_column("#", width=3)
+    t.add_column("status", width=10)
+    t.add_column("note / evidence", max_width=90)
+    sev_color = {"present": "green", "missing": "red", "distorted": "yellow"}
+    for f in result["findings"]:
+        s = f.get("status", "?")
+        line = (f.get("note") or f.get("evidence", ""))[:200]
+        t.add_row(str(f.get("sentence", "?")),
+                  f"[{sev_color.get(s, 'white')}]{s}[/{sev_color.get(s, 'white')}]",
+                  line)
+    console.print(t)
+
+
+@app.command()
 def plan(book_id: str) -> None:
-    """Build a deterministic lean plan (no LLM): chapter splits + proportional
-    per-chapter targets derived from the book-level compression formula.
-    Writes work/<book>/plan.json. Zero LLM cost.
+    """Build a deterministic lean plan (no LLM unless classify step has been
+    run): chapter splits + proportional per-chapter targets derived from the
+    book-level compression formula. Picks up `chapter_classifications.json`
+    if `forage classify` has been run for this book.
+    Writes work/<book>/plan.json.
     """
     book = load_book(book_id)
     console.print(f"[dim]source:[/dim] {book.source_path}")

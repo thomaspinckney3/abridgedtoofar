@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Those who heard her say that her voice, in these passages, was seraphic; but this was nothing to the superhuman notes that she gave forth",
+      "source_locator": "paragraph beginning 'But the real triumph was reserved for Christine Daae'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The word 'seraphic' and the reporter-style 'Those who heard her say' establish the narrator's distanced, testimonial register for Christine's singing — a key voice-establishing passage. The draft skips directly to 'superhuman notes,' losing the seraphic qualifier and the testimonial framing.",
+      "suggested_fix": "Restore 'Those who heard her say that her voice, in these passages, was seraphic; but this was nothing to the superhuman notes' before the prison scene reference."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was exquisitely polite to the women and a little haughty to the men, who did not always forgive him for his successes in society. He had an excellent heart and an irreproachable conscience.",
+      "source_locator": "paragraph beginning 'The Comte de Chagny, standing up in his box'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The character sketch of Philippe is rendered in brisk summary; the precise moral calibration ('excellent heart and irreproachable conscience') and the social observation about men not forgiving his success are dropped. These details establish Philippe's moral credibility as a reliable witness and contrast with Raoul.",
+      "suggested_fix": "Restore the sentence 'He had an excellent heart and an irreproachable conscience' and the clause about men not forgiving his social successes within the Philippe portrait."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The count considered that, at Raoul's age, it is not good to be too good. Philippe himself had a character that was very well-balanced in work and pleasure alike; his demeanor was always faultless; and he was incapable of setting his brother a bad example.",
+      "source_locator": "paragraph beginning 'Philippe spoiled Raoul'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This ironic, narrator-voiced aside — 'it is not good to be too good' — is the chapter's clearest instance of Leroux's sardonic register and is interpretively important for understanding Philippe's worldly philosophy that inadvertently exposes Raoul to the Opera's dangers.",
+      "suggested_fix": "Restore 'The count considered that, at Raoul's age, it is not good to be too good' and the follow-on description of Philippe's balanced character as a lead-in to introducing Raoul to the foyer."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "a procession of workmen were carrying a sort of stretcher, covered with a white sheet... behind him",
+      "source_locator": "final paragraphs",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies 'behind him' — emphasising Raoul is oblivious, the procession overtakes him — a small but pointed detail. The draft omits 'behind him,' slightly dulling the staging.",
+      "suggested_fix": "Add 'behind him' to the stretcher procession sentence to preserve the spatial irony."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves all high-priority signatures verbatim, but loses three medium-weight passages: the 'seraphic' testimonial voice for Christine's singing, the moral précis of Philippe ('excellent heart, irreproachable conscience'), and the narrator's ironic aside that 'it is not good to be too good' — the chapter's clearest register-defining moment."
+}

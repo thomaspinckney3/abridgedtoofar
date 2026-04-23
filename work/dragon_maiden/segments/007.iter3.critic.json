@@ -1,0 +1,53 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Mascara-face gathered what few wits she had and glared at him. 'I-I want you to release me.'",
+      "source_locator": "after Blake opens the canvas flap",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narratorial aside 'gathered what few wits she had' is a signature voice beat—dry, slightly contemptuous character appraisal that defines the narrator's register. The draft renders it as bare dialogue attribution.",
+      "suggested_fix": "Restore the parenthetical characterization: 'Mascara-face gathered what few wits she had and glared at him.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She took a deep breath and opened her big mouth wide. 'Heellppppp!'",
+      "source_locator": "Mascara-face's first scream sequence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'opened her big mouth wide' is a distinctively comic-contemptuous physical detail that establishes the narrator's sardonic eye; the draft compresses this to 'took a breath' losing the signature tone.",
+      "suggested_fix": "Restore 'opened her big mouth wide' before the scream."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Blake stood between the stalls and sneered at us... He paced the floor between the straw of the stalls.",
+      "source_locator": "Blake's speech in the stables, presentation monologue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source stages the speech with 'He paced the floor between the straw of the stalls' as a mid-paragraph action beat that adds menace and cinematic presence. The draft omits it, making Blake's speech a static lecture.",
+      "suggested_fix": "Reinsert the pacing action beat mid-speech to preserve the staged menace."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "A flash of red blinded my vision. I screamed and lunged at the closest asshole.",
+      "source_locator": "after Stephanie is yanked down",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'A flash of red blinded my vision' is a distinctive synesthetic rage-marker and 'closest asshole' is register-defining narrator voice; the draft replaces both with 'Heat flashed through me,' which is blander and loses the specific visual/linguistic signature.",
+      "suggested_fix": "Restore 'A flash of red blinded my vision' and 'closest asshole' to preserve the voice and physical specificity of the rage response."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Alex gave a war whoop and threw herself at the other henchman.",
+      "source_locator": "fight scene after Stephanie falls",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'War whoop' is a lively characterizing detail for Alex that the draft reduces to 'Alex whooped,' which is close but slightly flattened.",
+      "suggested_fix": "Minor: restore 'gave a war whoop and threw herself' for full idiomatic flavor."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium findings reflect voice-flattening of narrator asides and staging beats that weaken the sardonic register but do not rise to regeneration threshold."
+}

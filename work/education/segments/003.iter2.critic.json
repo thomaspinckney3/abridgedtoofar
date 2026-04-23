@@ -3,69 +3,78 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "the mere accident of starting a twentieth-century career from a nest of associations so colonial,--so troglodytic--as the First Church...was so queer as to offer a subject of curious speculation",
-      "source_locator": "paragraph 1, opening section on safeguards",
-      "draft_treatment": "fragment_preserved",
-      "why_it_matters": "The source introduces 'safeguards' with a full ironic development—'Safeguards are often irksome, but sometimes convenient, and if one needs them at all, one is apt to need them badly'—which is a voice-defining aside entirely dropped. The draft jumps straight to the colonial-troglodytic list without the ironic scaffolding.",
-      "suggested_fix": "Restore 'Safeguards are often irksome, but sometimes convenient, and if one needs them at all, one is apt to need them badly' before moving to the 1738/1838 comparison."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "the double exterior nature gave life its relative values...The violence of the contrast was real and made the strongest motive of education.",
-      "source_locator": "paragraph on Massachusetts politics and contrasts, before 'Boys are wild animals'",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Whether the children rolled in the grass, or waded in the brook, or swam in the salt ocean, or sailed in the bay, or fished for smelts in the creeks, or netted minnows in the salt-marshes, or took to the pine-woods and the granite quarries, or chased muskrats and hunted snapping-turtles in the swamps, or mushrooms or nuts on the autumn hills, summer and country were always sensual living, while winter was always compulsory learning.",
+      "source_locator": "paragraph beginning 'Winter and summer, then, were two hostile lives'",
       "draft_treatment": "absent",
-      "why_it_matters": "The source's explicit statement that 'the violence of the contrast was real and made the strongest motive of education' is a thematic keystone linking the winter/summer dialectic to the book's educational argument. The draft omits it entirely, weakening the interpretive weight of the seasonal passage.",
-      "suggested_fix": "Insert 'The violence of the contrast was real and made the strongest motive of education. The double exterior nature gave life its relative values' in the transition between the Massachusetts politics paragraph and the 'Boys are wild animals' paragraph."
+      "why_it_matters": "This rhythmically cumulative catalog is one of the most prosodically distinctive passages in the chapter, widely noted by critics for its enumerative rhetoric and sensory excess; its complete absence erases a signature voice moment that defines the summer/winter opposition at its structural climax.",
+      "suggested_fix": "Restore the full catalog verbatim or near-verbatim as its own sentence; the rhythm and accumulation are the point and cannot be compressed without destroying the signature."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "he had said nothing; he had uttered no syllable of revolting cant about the duty of obedience and the wickedness of resistance to law; he had shown no concern in the matter; hardly even a consciousness of the boy's existence.",
+      "source_locator": "paragraph beginning 'The point was that this act, contrary to the inalienable rights of boys'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'no syllable of revolting cant about the duty of obedience and the wickedness of resistance to law' is a critically famous formulation—the exact ironic phrasing enacts Adams's lifelong resistance to moralistic authority; the draft's reduction to 'uttered no cant about duty' strips away all the voice.",
+      "suggested_fix": "Restore the full sentence verbatim: 'he had uttered no syllable of revolting cant about the duty of obedience and the wickedness of resistance to law'; the specific diction is the signature and cannot be paraphrased."
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "He felt his nature crudely, as it was meant...summer was drunken. Among senses, smell was the strongest--smell of hot pine-woods and sweet-fern in the scorching summer noon",
-      "source_locator": "paragraph beginning 'Boys are wild animals'",
+      "class": "voice_erasure",
+      "source_passage": "but this is the only interest in the story, which otherwise has no moral and little incident.",
+      "source_locator": "paragraph beginning 'As it happened, he never got to the point of playing the game at all'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This self-deprecating, ironic aside about the book's own nature is a voice-establishing moment that signals Adams's narrator stance toward his own autobiography; its absence flattens the passage into bare summary.",
+      "suggested_fix": "Restore the clause: 'but this is the only interest in the story, which otherwise has no moral and little incident' within the paragraph on the education problem."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "The boy reflected that an old gentleman close on eighty would never trouble himself to walk near a mile on a hot summer morning over a shadeless road to take a boy to school, and that it would be strange if a lad imbued with the passion of freedom could not find a corner to dodge around, somewhere before reaching the school door.",
+      "source_locator": "paragraph beginning 'All the more singular it seemed afterwards'",
       "draft_treatment": "flattened",
-      "why_it_matters": "The phrase 'He felt his nature crudely, as it was meant' is a signature Adams aphorism and is dropped. The sensory catalog is also truncated—'scorching summer noon,' 'pennyroyal and flagroot,' and the full enumeration of smells lose their rhythmic accumulation.",
-      "suggested_fix": "Restore 'He felt his nature crudely, as it was meant' and re-expand the smell catalog to include 'of hot pine-woods and sweet-fern in the scorching summer noon' as written."
+      "why_it_matters": "This is the key ironic interior monologue that shows the boy's tactical reasoning and Adams's characteristic mock-serious tone; the draft reduces it to 'The boy counted on a corner to dodge,' losing the voice entirely.",
+      "suggested_fix": "Restore the full sentence of the boy's reasoning, including 'old gentleman close on eighty,' 'near a mile on a hot summer morning,' and 'a lad imbued with the passion of freedom'; these details carry the irony."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Safeguards are often irksome, but sometimes convenient, and if one needs them at all, one is apt to need them badly.",
+      "source_locator": "paragraph beginning 'Had he been born in Jerusalem'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This epigrammatic sentence is Adams's characteristic ironic wisdom at its most condensed, establishing the sardonic narrator voice that defines the entire book's register; it is entirely absent from the draft.",
+      "suggested_fix": "Restore this sentence in the opening paragraph's discussion of safeguards, verbatim or very close to it."
     },
     {
       "severity": "medium",
       "class": "interpretive_loss",
-      "source_passage": "He knew his grandfather John Quincy Adams only as an old man of seventy-five or eighty who was friendly and gentle with him, but except that he heard his grandfather always called 'the President,' and his grandmother 'the Madam'",
-      "source_locator": "paragraph on Quincy vs. Boston, grandparents section",
+      "source_passage": "Her future mother-in-law, Abigail, a famous New England woman whose authority over her turbulent husband, the second President, was hardly so great as that which she exercised over her son, the sixth to be, was troubled by the fear that Louisa might not be made of stuff stern enough",
+      "source_locator": "paragraph beginning 'At that time, and long afterwards, the Consul's house'",
       "draft_treatment": "absent",
-      "why_it_matters": "The detail that the grandfather was called 'the President' and the grandmother 'the Madam' is a signature characterization repeated throughout the chapter and central to how Adams frames the ancestral world. The draft uses these titles but never explains their first establishment in the boy's mind, losing the interpretive moment.",
-      "suggested_fix": "Restore the passage explaining that 'he heard his grandfather always called the President and his grandmother the Madam' when introducing the grandparents, as the titles carry interpretive weight throughout."
+      "why_it_matters": "The Abigail Adams passage establishes the matriarchal authority structure of the Adams family and the tension between New England severity and Louisa's exotic character—an interpretive keystone for understanding the Madam's significance to Adams's education; its complete omission is a substantive loss.",
+      "suggested_fix": "Restore at least the characterization of Abigail's concern about Louisa's fitness for New England life and the pointed observation about 'sound judgment' being a 'source of weakness rather than of force.'"
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Then and always, the boy insisted that this reasoning justified his apparent submission; but the old man did not stop, and the boy saw all his strategical points turned, one after another, until he found himself seated inside the school",
-      "source_locator": "paragraph on the walk to school with the President",
-      "draft_treatment": "absent",
-      "why_it_matters": "The boy's tactical self-justification ('Then and always, the boy insisted that this reasoning justified his apparent submission') is a signature ironic move—Adams's mature wit looking back at childhood self-deception. The draft skips the reasoning entirely, collapsing the comic structure.",
-      "suggested_fix": "Restore the passage in which the boy reasons about finding 'a corner to dodge around' and insists 'this reasoning justified his apparent submission' while the old man relentlessly turned 'all his strategical points.'"
+      "class": "signature_loss",
+      "source_passage": "crossed Europe from St. Petersburg to Paris, in her travelling-carriage, passing through the armies, and reaching Paris in the Cent Jours after Napoleon's return from Elba.",
+      "source_locator": "paragraph beginning 'In 1801 the overthrow of the Federalist Party'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The specificity of 'passing through the armies' and 'the Cent Jours after Napoleon's return from Elba' is what makes Louisa's journey legendary and explains why she 'had earned the right to be tired'; flattening to 'crossing Europe alone with a boy of seven' loses the interpretive weight of her endurance.",
+      "suggested_fix": "Restore 'in her travelling-carriage, passing through the armies, and reaching Paris in the Cent Jours after Napoleon's return from Elba' verbatim."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "as it proved fatal to young Adams. Louisa was charming, like a Romney portrait",
-      "source_locator": "paragraph on the Consulate and Louisa Johnson",
-      "draft_treatment": "absent",
-      "why_it_matters": "The phrase 'so inviting that it proved fatal to young Adams' is a characteristically dry Adams epigram about love and marriage; the draft omits the setup sentence and moves straight to the Romney portrait simile.",
-      "suggested_fix": "Restore 'so inviting that it proved fatal to young Adams' before the Romney portrait sentence."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "No such accident had ever happened before in human experience. For him, alone, the old universe was thrown into the ash-heap and a new one created.",
-      "source_locator": "paragraph beginning 'This problem of education, started in 1838'",
+      "source_passage": "a vision of silver gray, presiding over her old President and her Queen Anne mahogany; an exotic, like her Sevres china; an object of deference to every one",
+      "source_locator": "paragraph beginning 'Such a figure was even less fitted'",
       "draft_treatment": "fragment_preserved",
-      "why_it_matters": "The draft preserves the ash-heap sentence but loses 'For him, alone'—the emphatic comma-set isolation that makes the claim rhetorically distinctive.",
-      "suggested_fix": "Restore the comma-isolated 'alone': 'For him, alone, the old universe was thrown into the ash-heap.'"
+      "why_it_matters": "The draft preserves 'a vision of silver gray' but drops 'presiding over her old President and her Queen Anne mahogany; an exotic, like her Sevres china'—the full appositive chain is the rhetorical unit; fragmenting it loses the cadenced portrait.",
+      "suggested_fix": "Restore the full phrase through 'an exotic, like her Sevres china' to complete the portrait's rhythm."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is broadly faithful and preserves most major signatures, but carries multiple medium-severity voice flattenings—lost ironic asides, dropped thematic keystones, and compressed set-pieces—that collectively thin the chapter's rhetorical texture without individually triggering regeneration."
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses (the summer-activities catalog and the 'revolting cant' sentence) plus five medium findings confirm systemic voice erasure and signature compression throughout; the draft must be regenerated."
 }

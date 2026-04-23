@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "As for you, Amy, you are altogether too particular and prim. Your airs are funny now; but you'll grow up an affected little goose, if you don't take care.",
-      "source_locator": "After Beth is called 'a dear, and nothing else'; before the character-sketch paragraph",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Hugo died in agonies of remorse and arsenic, with a wild 'Ha! ha!'",
+      "source_locator": "rehearsal scene, after Hagar's incantation and before 'It's the best we've had yet'",
       "draft_treatment": "absent",
-      "why_it_matters": "Meg's critique of Amy is the thematic counterpoint to her critique of Jo and establishes the symmetry of the elder-sister lecture; its absence removes interpretive balance and a key beat in Amy's characterization that critics return to.",
-      "suggested_fix": "Restore Meg's speech to Amy, including the 'affected little goose' line and the acknowledgment that she likes Amy's 'nice manners and refined ways of speaking, when you don't try to be elegant.'"
+      "why_it_matters": "This is one of the chapter's most distinctively comic lines—'remorse and arsenic' is prosodically and tonally singular, establishing Alcott's ironic narrative register and introducing Jo as a melodrama-loving writer. Its absence erases a primary voice-signature moment.",
+      "suggested_fix": "Restore the full rehearsal passage: 'Don Pedro defied the world in a speech of two pages… Hugo died in agonies of remorse and arsenic, with a wild \"Ha! ha!\"'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"I don't see how you can write and act such splendid things, Jo. You're a regular Shakespeare!\" exclaimed Beth",
+      "source_locator": "after the rehearsal, before Jo's Macbeth parody",
+      "draft_treatment": "absent",
+      "why_it_matters": "Beth's 'regular Shakespeare' line and Jo's Macbeth parody ('Is that a dagger that I see before me?') are critical for establishing Jo's identity as an aspiring writer-actress; this is the first major signal of her literary ambition in the novel and is critically noted.",
+      "suggested_fix": "Restore Beth's Shakespeare exclamation and Jo's modest reply, plus the Macbeth quotation and the toasting-fork punchline, as these are interpretive keystones for Jo's character arc."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"No, it's the toasting fork, with mother's shoe on it instead of the bread. Beth's stage-struck!\" cried Meg, and the rehearsal ended in a general burst of laughter.",
+      "source_locator": "end of rehearsal scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "The punchline that closes the rehearsal is the comic payoff of the entire scene; without it, the scene's tonal arc is severed and the chapter loses a characteristic Alcott comic deflation.",
+      "suggested_fix": "Restore the toasting-fork punchline as the scene's closing beat."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Very few letters were written in those hard times that were not touching, especially those which fathers sent home. In this one little was said of the hardships endured, the dangers faced, or the homesickness conquered;",
-      "source_locator": "Immediately before the letter is quoted; after 'They all drew to the fire'",
+      "source_passage": "she was not elegantly dressed, but a noble-looking woman… 'Well, dearies, how have you got on to-day? There was so much to do, getting the boxes ready to go to-morrow, that I didn't come home to dinner. Has any one called, Beth? How is your cold, Meg? Jo, you look tired to death. Come and kiss me, baby.'",
+      "source_locator": "Marmee's entrance, after actors and audience turn to welcome her",
       "draft_treatment": "absent",
-      "why_it_matters": "This narratorial aside is the only moment in the chapter where the narrator steps back to place the family's experience inside the larger war context; its loss flattens the chapter's tonal register from communal pathos to domestic scene.",
-      "suggested_fix": "Restore the two-sentence narrator paragraph before the letter text begins, preserving 'Very few letters were written in those hard times that were not touching' and the list of what was NOT said (hardships, dangers, homesickness)."
+      "why_it_matters": "Marmee's specific maternal inquiries ('How is your cold, Meg? Jo, you look tired to death. Come and kiss me, baby') are voice-defining for her character and establish the warmth-register of the novel's domestic world; the draft replaces them with a vague paraphrase ('happy little inquiries').",
+      "suggested_fix": "Restore Marmee's spoken greeting verbatim or near-verbatim; the specific details ('tired to death,' 'Come and kiss me, baby') are character-establishing."
     },
     {
-      "severity": "low",
-      "class": "signature_loss",
-      "source_passage": "I don't see how you can write and act such splendid things, Jo. You're a regular Shakespeare! exclaimed Beth",
-      "source_locator": "After 'It's the best we've had yet,' said Meg; during the rehearsal scene",
-      "draft_treatment": "absent",
-      "why_it_matters": "Beth's 'regular Shakespeare' line is a small but distinctively voiced moment that establishes Beth's uncritical adoration of Jo and has mild cultural familiarity among readers of the novel.",
-      "suggested_fix": "Insert Beth's exclamation and Jo's modest reply ('Not quite') before the Macbeth riff, which is already present in the draft."
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the mother was a born singer. The first sound in the morning was her voice, as she went about the house singing like a lark; and the last sound at night was the same cheery sound, for the girls never grew too old for that familiar lullaby.",
+      "source_locator": "closing paragraph of chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'born singer' / 'singing like a lark' coda is the chapter's closing grace-note, establishing Marmee's musical presence as a motif running through the novel; the draft collapses it to 'their mother's voice… the same cheery lullaby,' losing the lark image and the 'born singer' characterization.",
+      "suggested_fix": "Restore 'the mother was a born singer… singing like a lark' and 'the girls never grew too old for that familiar lullaby' to preserve the chapter's closing cadence."
     }
   ],
-  "verdict": "pass",
-  "summary": "Two medium-severity losses (Amy's character lecture omitted entirely; war-context narratorial aside cut) and one low-severity omission, but no high-severity failures; verdict is pass, though a revision pass should restore Meg's Amy lecture and the 'Very few letters' paragraph."
+  "verdict": "regenerate",
+  "summary": "The draft's most serious failure is the near-total erasure of the comic rehearsal sequence—including 'Hugo died in agonies of remorse and arsenic,' Beth's 'regular Shakespeare,' Jo's Macbeth parody, and the toasting-fork punchline—removing the chapter's primary signature comedy and the first major signal of Jo's literary ambition; secondary losses include Marmee's specific maternal greeting and the 'born singer / singing like a lark' closing motif."
 }

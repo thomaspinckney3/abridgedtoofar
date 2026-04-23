@@ -4,68 +4,77 @@
   "findings": [
     {
       "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "He stood alone. He had no master--hardly even his father. He had no scholars--hardly even his sons.",
-      "source_locator": "paragraph on Boston standards, after listing Ticknor, Prescott, Longfellow, Motley, O. W. Holmes",
-      "draft_treatment": "absent",
-      "why_it_matters": "This three-sentence climax is one of the most critically-cited formulations about Charles Francis Adams's isolation in the entire book; its rhetorical rhythm (the paired negations, the escalating paradox) is unmistakably signature Adams. Its omission removes the interpretive keystone of the whole portrait of the father.",
-      "suggested_fix": "Restore the full Boston-standards paragraph culminating in 'He stood alone. He had no master—hardly even his father. He had no scholars—hardly even his sons.' before or within the existing Charles Francis Adams characterization block."
-    },
-    {
-      "severity": "high",
       "class": "interpretive_loss",
-      "source_passage": "named candidates for the general election in November: for President, Martin Van Buren; for Vice-President, Charles Francis Adams.",
-      "source_locator": "paragraph beginning 'The parallel, as concerned bias of education, was complete when'",
+      "source_passage": "His father's business in life was to get past the dangers of the slave-power, or to fix its bounds at least. The task done, he might be content to let his sons pay for the pilotage; and it mattered little to his success whether they paid it with their lives wasted on battle-fields or in misdirected energies and lost opportunity.",
+      "source_locator": "paragraph beginning 'Thus far he had nothing to do with it'",
       "draft_treatment": "absent",
-      "why_it_matters": "The VP nomination is the exact hinge that makes the 1848/1776 parallel 'complete'—Adams calls it so explicitly. Without it, the entire education-as-political-destiny argument for this segment loses its documentary anchor, and the reader cannot understand why the stamp of 1848 is 'almost as indelible as the stamp of 1776.'",
-      "suggested_fix": "Insert the Free Soil Buffalo convention passage with the Van Buren/Charles Francis Adams ticket names; this is the payoff of the 1848/1776 parallel that the draft otherwise reproduces."
+      "why_it_matters": "This is the chapter's central interpretive statement about the father-son educational dynamic and the cost borne by the sons — it establishes that Henry's miseducation is a structural consequence of his father's political mission, not merely personal neglect. Its absence removes a load-bearing argument.",
+      "suggested_fix": "Restore this passage near-verbatim in the paragraph discussing the father's role, preserving 'pay for the pilotage' and 'lives wasted on battle-fields or in misdirected energies.'"
     },
     {
       "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "the fourth, being of less account, was in a way given to his mother, who named him Henry Brooks, after a favorite brother just lost.",
-      "source_locator": "opening paragraph, Peter Chardon Brooks genealogy",
+      "class": "voice_erasure",
+      "source_passage": "Dana at first suggested the opposite; he affected to be still before the mast, a direct, rather bluff, vigorous seaman, and only as one got to know him better one found the man of rather excessive refinement trying with success to work like a day-laborer, deliberately hardening his skin to the burden, as though he were still carrying hides at Monterey.",
+      "source_locator": "paragraph beginning 'In that respect, and in that only'... no — paragraph on Dana within the Mount Vernon Street group",
       "draft_treatment": "absent",
-      "why_it_matters": "The entire opening genealogical paragraph is absent, including the famous self-deprecating irony of Henry being 'of less account'—one of the most quoted self-presentations in the book and a foundational voice-establishing gesture for the chapter.",
-      "suggested_fix": "Restore the opening paragraph on Peter Chardon Brooks's estate, the seven children, and especially the 'being of less account' formulation for Henry; this is the chapter's announced subject and its first ironic signature."
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "his father gave him a writing-table in one of the alcoves of his Boston library, and there, winter after winter, Henry worked over his Latin Grammar and listened to these four gentlemen discussing the course of anti-slavery politics.",
-      "source_locator": "paragraph beginning 'As the boy grew up to be ten or twelve years old'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The writing-table scene is the central image of the boy's political education by absorption—it anchors the chapter's educational argument concretely and bridges the abstract discussion of Adams/Palfrey/Dana/Sumner to the boy's actual experience; its absence loses a key scene.",
-      "suggested_fix": "Restore the alcove writing-table passage, including the Novanglus proof-reading anecdote and the sardonic observation about learning to 'be dull in some different way.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Sumner was the boy's ideal of greatness; the highest product of nature and art. The only fault of such a model was its superiority which defied imitation... Mr. Sumner was a different order--heroic.",
-      "source_locator": "paragraph beginning 'The boy Henry worshipped him'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The draft retains 'The boy Henry worshipped him' but drops the escalating characterization ('highest product of nature and art,' 'a different order—heroic'), which is the rhetorical climax of the Sumner portrait and critically cited in studies of Adams's hero-worship.",
-      "suggested_fix": "Restore the full closing sentences of the Sumner worship passage, especially 'a different order—heroic,' which is tonally distinct and interpretively important."
+      "why_it_matters": "The 'carrying hides at Monterey' image is one of Adams's most distinctive character sketches in the chapter — a precise, ironic portrait of Dana's performed roughness against his aristocratic nature. The draft replaces it with the bare attribution 'aristocratic to the tenth generation,' losing the signature rhetoric.",
+      "suggested_fix": "Restore the Dana characterization including 'deliberately hardening his skin to the burden, as though he were still carrying hides at Monterey' and the contrast between his affected seamanship and inner refinement."
     },
     {
       "severity": "medium",
       "class": "voice_erasure",
-      "source_passage": "the eldest child, Louisa, was one of the most sparkling creatures her brother met in a long and varied experience of bright women... while Mr. Adams, who talked relatively little, was always a good listener, and laughed over a witticism till he choked.",
-      "source_locator": "paragraph beginning 'The children reached manhood without knowing religion'",
+      "source_passage": "Napoleons and Andrew Jacksons amuse it, but it is not amused by perfect balance. Had Mr. Adams's nature been cold, he would have followed Mr. Webster, Mr. Everett, Mr. Seward, and Mr. Winthrop in the lines of party discipline and self-interest.",
+      "source_locator": "paragraph beginning 'The same thing might perhaps have been said of John Quincy Adams'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'Napoleons and Andrew Jacksons' formulation is one of Adams's signature rhetorical antitheses in this chapter, anchoring the poise-vs-amusement argument with specific historical examples. The draft retains the abstraction but drops the concrete names.",
+      "suggested_fix": "Insert 'Napoleons and Andrew Jacksons amuse it, but it is not amused by perfect balance' in the relevant sentence to restore the rhetorical punch."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "A coarser instrument would have impressed them more. Average human nature is very coarse, and its ideals must necessarily be average. The world never loved perfect poise.",
+      "source_locator": "paragraph beginning 'The same thing might perhaps have been said of John Quincy Adams'",
       "draft_treatment": "absent",
-      "why_it_matters": "The dinner-table paragraph humanizes the entire Adams household with specific, affectionate characterizations—Louisa 'sparkling,' John 'best talkers in Boston,' Sumner 'smiled grandly,' and the father 'laughed till he choked'—voice-establishing domestic texture entirely absent from the draft.",
-      "suggested_fix": "Restore the dinner-table paragraph with its individual characterizations, particularly the closing image of Mr. Adams laughing till he choked, which uniquely softens the formal portrait of the father."
+      "why_it_matters": "This sentence cluster is a characteristic Adams ironic aside — the aphoristic compression ('Average human nature is very coarse') is recognizable and interpretively links the father's poise to the educational theme of what the world values. Its absence flattens the irony.",
+      "suggested_fix": "Restore 'A coarser instrument would have impressed them more. Average human nature is very coarse, and its ideals must necessarily be average' before the poise/amusement sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "He thought his mind a good enough machine, if it were given time to act, but it acted wrong if hurried. Schoolmasters never gave time.",
+      "source_locator": "paragraph beginning 'In any and all its forms, the boy detested school'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The laconic 'Schoolmasters never gave time' is a signature Adams aphorism — its rhythm and irony establish the narrator's retrospective voice at a key moment in the schooling critique. It is frequently quoted in discussions of the chapter.",
+      "suggested_fix": "Restore verbatim: 'He thought his mind a good enough machine, if it were given time to act, but it acted wrong if hurried. Schoolmasters never gave time.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Henry Adams, as a brand escaped from the burning, always looked back with astonishment at their luck.",
+      "source_locator": "paragraph beginning 'As far as outward bearing went'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The biblical allusion 'a brand escaped from the burning' is a voice-establishing self-deprecating aside that recurs in Adams's self-presentation; its absence removes a characteristic moment of ironic self-characterization.",
+      "suggested_fix": "Restore the phrase within the paragraph on the family's lucky escape from ruin."
     },
     {
       "severity": "medium",
       "class": "interpretive_loss",
-      "source_passage": "The passionate hatred of school methods was almost a method in itself... He always reckoned his school-days, from ten to sixteen years old, as time thrown away.",
-      "source_locator": "paragraph beginning 'In any and all its forms, the boy detested school'",
+      "source_passage": "The generation that lived from 1840 to 1870 could do very well with the old forms of education; that which had its work to do between 1870 and 1900 needed something quite new.",
+      "source_locator": "paragraph beginning 'Thus far he had nothing to do with it'",
       "draft_treatment": "absent",
-      "why_it_matters": "The paradox that 'passionate hatred of school methods was almost a method in itself' is a signature Adamsian inversion and the chapter's core educational thesis in miniature; the draft omits this and gives only a pale summary of the school-failure argument.",
-      "suggested_fix": "Restore the passage on school-hatred as method, the 'time thrown away' verdict, and the specific statement about the four necessary tools (Mathematics, French, German, Spanish) as a coherent block; the draft has the tools list but without the framing hatred-as-method paradox."
+      "why_it_matters": "This sentence is one of the chapter's explicit thematic statements about the generational mismatch between education and historical need — central to the book's argument. Its loss is an interpretive thinning.",
+      "suggested_fix": "Restore verbatim in the paragraph on the father's pilotage, as the generational conclusion to that argument."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "a balance of mind and temper that neither challenged nor avoided notice, nor admitted question of superiority or inferiority, of jealousy, of personal motives, from any source, even under great pressure",
+      "source_locator": "paragraph beginning 'His father's character was therefore the larger part'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The accumulated negative clauses ('neither challenged nor avoided...nor admitted...from any source, even under great pressure') are prosodically distinctive and define the father's poise with precision. The draft reduces this to 'absence of self-assertion or self-consciousness' and 'instinctive mastery of form,' losing the rhetorical specificity.",
+      "suggested_fix": "Restore the full clause 'a balance of mind and temper that neither challenged nor avoided notice, nor admitted question of superiority or inferiority, of jealousy, of personal motives, from any source, even under great pressure' in the father's character description."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft has three high-severity failures—the iconic 'He stood alone' sentence, the VP nomination payoff of the 1848/1776 parallel, and the entire Brooks genealogical opening with its foundational 'of less account' irony—plus four medium-severity losses of voice and interpretive content, requiring regeneration."
+  "summary": "The draft omits the chapter's central interpretive argument (the pilotage passage on the cost borne by sons), erases the signature Dana portrait ('carrying hides at Monterey'), drops 'Schoolmasters never gave time,' 'a brand escaped from the burning,' and the generational thesis sentence, together constituting losses of high and medium severity that require regeneration."
 }

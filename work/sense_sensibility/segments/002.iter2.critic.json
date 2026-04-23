@@ -1,0 +1,62 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "which she considered as no relationship at all, have on his generosity to so large an amount. It was very well known that no affection was ever supposed to exist between the children of any man by different marriages",
+      "source_locator": "paragraph 3, narrator's free indirect discourse on Fanny's reasoning",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The italicised social 'fact' ('It was very well known that no affection was ever supposed to exist…') is a key piece of Austenian free indirect irony; its removal flattens the satirical register and loses the mock-authoritative voice that establishes the novel's ironic mode.",
+      "suggested_fix": "Restore the full sentence: 'which she considered as no relationship at all…It was very well known that no affection was ever supposed to exist between the children of any man by different marriages; and why was he to ruin himself, and their poor little Harry, by giving away all his money to his half sisters?'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "and why was he to ruin himself, and their poor little Harry, by giving away all his money to his half sisters?",
+      "source_locator": "paragraph 3, close of Fanny's internal monologue",
+      "draft_treatment": "absent",
+      "why_it_matters": "The rhetorical question is the climax of the free-indirect-discourse paragraph; its absence removes the escalating, self-righteous tone that makes the passage distinctively Austenian satire.",
+      "suggested_fix": "Reattach this clause to the preceding paragraph so the whole arc of Fanny's rationalisation is preserved."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Perhaps it would have been as well if he had left it wholly to myself. He could hardly suppose I should neglect them. But as he required the promise, I could not do less than give it; at least I thought so at the time.",
+      "source_locator": "John Dashwood's speech, paragraph after 'He did not stipulate'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The self-exculpatory parenthetical 'at least I thought so at the time' is a small but characteristic specimen of John Dashwood's moral cowardice; cutting it removes a thread of character irony that the dialogue depends on.",
+      "suggested_fix": "Restore the full speech, including 'at least I thought so at the time,' to preserve the self-undermining voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"To be sure,\" said her husband, very gravely, \"that would make great difference. The time may come when Harry will regret that so large a sum was parted with. If he should have a numerous family, for instance, it would be a very convenient addition.\"",
+      "source_locator": "Mr. Dashwood's reply beginning 'Why, to be sure'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft replaces this full speech with an ellipsis, losing the gravely comic reasoning about Harry's hypothetical 'numerous family'—a moment that shows how quickly John Dashwood is persuaded by Fanny's greed and that the critical tradition cites as emblematic of his character.",
+      "suggested_fix": "Restore the complete speech so readers see the husband's solemn self-deception in full."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Oh! beyond anything great! What brother on earth would do half so much for his sisters, even if _really_ his sisters! And as it is—only half blood!—But you have such a generous spirit!\"",
+      "source_locator": "Fanny's exclamatory reply after the five-hundred-pound proposal",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft omits 'But you have such a generous spirit!'—Fanny's crowning piece of flattery that manipulates her husband. This sycophantic kicker is essential to the ironic comedy and is part of what critics identify as Austen's satirical portrait of moral hollowness masked as affection.",
+      "suggested_fix": "Restore the closing exclamation 'But you have such a generous spirit!' to complete Fanny's manipulative performance."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The assistance he thought of, I dare say, was only such as might be reasonably expected of you; for instance, such as looking out for a comfortable small house for them, helping them to move their things, and sending them presents of fish and game, and so forth, whenever they are in season. I'll lay my life that he meant nothing farther; indeed, it would be very strange and unreasonable if he did.",
+      "source_locator": "Fanny's long speech, between 'no idea of your giving them any money' and 'Do but consider'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'fish and game' passage is a celebrated comic passage where charitable obligation is reduced to seasonal produce; its absence removes a recognisable satirical set-piece, though the ellipsis at least signals a cut.",
+      "suggested_fix": "Restore the fish-and-game passage for full satirical effect; if word-count forbids it, mark as a deliberate drop."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft is largely faithful but accumulates five medium-severity losses—principally the free-indirect-discourse paragraph on half-blood kinship, John Dashwood's self-exculpatory 'at least I thought so at the time,' his solemn meditation on Harry's future family, Fanny's closing 'generous spirit' flattery, and the fish-and-game reductio—which together flatten the scene's ironic register and dilute its status as Austen's signature satirical set-piece."
+}

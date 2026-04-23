@@ -1,0 +1,44 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was not an ill-disposed young man, unless to be rather cold hearted and rather selfish is to be ill-disposed",
+      "source_locator": "paragraph beginning 'He was not an ill-disposed young man'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The phrasing is preserved nearly verbatim, which is good, but the surrounding ironic framing — 'but he was, in general, well respected; for he conducted himself with propriety in the discharge of his ordinary duties' — is also preserved. However, the full satirical build-up ('Had he married a more amiable woman, he might have been made still more respectable than he was:—he might even have been made amiable himself; for he was very young when he married, and very fond of his wife') is trimmed to a single clause, losing the layered irony Austen deploys here.",
+      "suggested_fix": "Restore the full sentence: 'Had he married a more amiable woman, he might have been made still more respectable than he was:—he might even have been made amiable himself; for he was very young when he married, and very fond of his wife.' The 'for he was very young when he married, and very fond of his wife' clause is the ironic sting and must not be cut."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "but in her mind there was a sense of honor so keen, a generosity so romantic, that any offence of the kind, by whomsoever given or received, was to her a source of immovable disgust",
+      "source_locator": "paragraph beginning 'No sooner was his father's funeral over'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft renders this as 'to Mrs. Dashwood—whose sense of honour was keen, and generosity romantic—highly unpleasing.' The source's full formulation — 'any offence of the kind, by whomsoever given or received, was to her a source of immovable disgust' — is critically important for characterising Mrs. Dashwood's romantic excess of sensibility, a theme the novel depends on. 'Immovable disgust' and 'by whomsoever given or received' are interpretively loaded and lost.",
+      "suggested_fix": "Restore the clause in fuller form: 'in her mind there was a sense of honour so keen, a generosity so romantic, that any offence of the kind, by whomsoever given or received, was to her a source of immovable disgust.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Mrs. John Dashwood had never been a favourite with any of her husband's family; but she had had no opportunity, till the present, of showing them with how little attention to the comfort of other people she could act when occasion required it.",
+      "source_locator": "paragraph beginning 'No sooner was his father's funeral over'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a classic Austenian ironic sentence — the deadpan understatement of 'with how little attention to the comfort of other people she could act when occasion required it' is quintessential narrative voice. Its complete absence removes a signature satirical beat.",
+      "suggested_fix": "Append this sentence after describing Mrs. John Dashwood's arrival: 'Mrs. John Dashwood had never been a favourite with any of her husband's family; but she had had no opportunity, till the present, of showing them with how little attention to the comfort of other people she could act when occasion required it.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "she was everything but prudent",
+      "source_locator": "paragraph beginning 'Marianne's abilities were, in many respects'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "Preserved, but the source also includes 'She was sensible and clever; but eager in everything: her sorrows, her joys, could have no moderation. She was generous, amiable, interesting' — the rhythm of the tricolon 'generous, amiable, interesting' followed by the pivot 'everything but prudent' is Austen's rhetorical signature here. The draft preserves the content but renders the tricolon with an em-dash that slightly disrupts the rhythm.",
+      "suggested_fix": "Minor: restore the colon after 'everything' and keep the tricolon as a full stop before 'everything but prudent' to preserve the rhetorical shape."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful and preserves the most famous passages nearly verbatim, but it flattens three passages of notable Austenian ironic voice — the full build of the John Dashwood characterisation, the 'immovable disgust' formulation for Mrs. Dashwood, and the entirely absent closing satirical sentence about Mrs. John Dashwood's capacity for inconsideration — none individually high-severity but collectively represent meaningful voice thinning."
+}

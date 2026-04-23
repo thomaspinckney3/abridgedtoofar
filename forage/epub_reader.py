@@ -27,15 +27,16 @@ AFTERMATTER_FILENAME_PATTERNS = (
 
 
 def _item_kind(filename: str) -> str:
-    """Classify a spine item by its filename."""
+    """Classify a spine item by its filename alone. Used only as a hint —
+    Gutenberg EPUBs use opaque hashed filenames, so real classification lives
+    in _classify_from_title below.
+    """
     lname = Path(filename).name.lower()
     if any(p in lname for p in FRONTMATTER_FILENAME_PATTERNS):
         return "front"
     if any(p in lname for p in AFTERMATTER_FILENAME_PATTERNS):
-        return "front"  # bucket with extradiegetic for lean_plan purposes
+        return "front"
     if "preface" in lname or "foreword" in lname or "prologue" in lname:
-        # Prologues are debatable. Lean_plan treats "front" as extradiegetic,
-        # which matches our earlier decision to cut preface-like material.
         return "front"
     if "epilogue" in lname:
         return "epilogue"
@@ -44,39 +45,115 @@ def _item_kind(filename: str) -> str:
     return "prose"
 
 
-def _html_to_markdown(html: bytes) -> tuple[str, str]:
-    """Convert one HTML file to (title, body_text).
+FRONT_HEADING_KEYWORDS = (
+    "project gutenberg", "title page", "cover", "table of contents",
+    "contents", "preface", "foreword", "introduction", "prologue",
+    "dedication", "copyright", "author’s note", "author's note",
+    "about the author", "editor’s preface", "editor's preface",
+    "translator’s note", "translator's note",
+)
+AFTER_HEADING_KEYWORDS = (
+    "epilogue", "afterword", "appendix", "glossary", "bibliography",
+    "about the project gutenberg", "colophon",
+)
 
-    Title is pulled from the first heading element and stripped from body so
-    it isn't duplicated. Body is rendered as paragraph blocks separated by
-    blank lines — enough fidelity for prose, no list/table handling yet.
+
+def _classify_from_title(title: str) -> tuple[str, int | None]:
+    """Classify a section by its heading text. Returns (kind, chapter_number)."""
+    t = (title or "").strip()
+    if not t:
+        return "prose", None
+    tl = t.lower()
+    if any(kw in tl for kw in FRONT_HEADING_KEYWORDS):
+        return "front", None
+    if any(kw in tl for kw in AFTER_HEADING_KEYWORDS):
+        return "epilogue", None
+    # "CHAPTER N" / "Chapter N" / "CHAPTER N: Title" / "CHAPTER N. Title"
+    m = re.match(r"^(?:CHAPTER|Chapter)\s+([IVXLCDM]+|\d+)\b", t)
+    if m:
+        return "chapter", _parse_number(m.group(1))
+    # Roman numeral alone or followed by title (Gatsby's "I", Little Women's
+    # "I. Playing Pilgrims.", Treasure Island's "I The Old Sea-dog"). Anchor
+    # on end-of-string for bare numerals, or on period/whitespace boundary
+    # followed by title text. Capital-N max length 7 = up to LXXIII.
+    m = re.match(r"^([IVXLCDM]{1,7})\s*\.\s*(.*)$", t)  # "I. Title" / "I."
+    if m:
+        return "chapter", _parse_number(m.group(1))
+    m = re.match(r"^([IVXLCDM]{1,7})(?:\s+([A-Z].*))?\s*$", t)  # "I Title" / "I"
+    if m:
+        return "chapter", _parse_number(m.group(1))
+    # Arabic alone or followed by title.
+    m = re.match(r"^(\d{1,3})\s*[\.\s]\s*(.*)$", t)
+    if m:
+        return "chapter", int(m.group(1))
+    return "prose", None
+
+
+_HEADING_TAGS = ("h1", "h2", "h3", "h4", "h5", "h6")
+
+
+def _split_epub_document(html: bytes) -> list[dict]:
+    """Split one EPUB document's HTML into sections.
+
+    A heading tag (h1–h6) creates a new section only when its text classifies
+    as a chapter/front/epilogue marker via `_classify_from_title`. Headings
+    whose text doesn't match (e.g. Bleak House's "In Chancery" subtitle,
+    which is a chapter's theme rather than its number) fold into body text
+    instead of creating spurious splits.
+
+    Handles: Gutenberg EPUBs where many chapters live in one HTML file with
+    `<h4>CHAPTER I</h4>` tags between them; self-pub EPUBs (Dragon Maiden
+    style) with one chapter per file and a single leading h1/h2; and hybrid
+    cases where a chapter number heading is followed by a descriptive
+    subtitle heading.
     """
     soup = BeautifulSoup(html, "lxml")
-    # Strip script/style early.
     for t in soup(["script", "style", "nav"]):
         t.decompose()
 
-    title = ""
-    for h in soup.find_all(["h1", "h2", "h3"]):
-        txt = h.get_text(" ", strip=True)
-        if txt:
-            title = txt
-            h.decompose()
-            break
+    blocks = soup.find_all([*_HEADING_TAGS, "p", "blockquote", "pre"])
+    sections: list[dict] = []
+    current_title = ""
+    current_texts: list[str] = []
 
-    blocks: list[str] = []
-    for el in soup.find_all(["p", "blockquote", "pre"]):
-        txt = el.get_text(" ", strip=True)
-        if txt:
-            blocks.append(txt)
+    def flush():
+        body_text = "\n\n".join(current_texts).strip()
+        if body_text or current_title:
+            sections.append({"title": current_title, "body": body_text})
 
-    # If no paragraphs found (some EPUBs use <div> wrappers), fall back to
-    # the full body text split by blank lines.
-    if not blocks:
-        body = soup.get_text("\n", strip=True)
-        blocks = [b.strip() for b in re.split(r"\n\s*\n", body) if b.strip()]
+    for el in blocks:
+        if el.name in _HEADING_TAGS:
+            heading_text = el.get_text(" ", strip=True)
+            if not heading_text:
+                continue
+            k, _ = _classify_from_title(heading_text)
+            if k != "prose":
+                # Real section boundary.
+                flush()
+                current_title = heading_text
+                current_texts = []
+            else:
+                # Non-boundary heading — Bleak House's "In Chancery"
+                # chapter-subtitle case. Treat as body text; if the current
+                # section has no title yet, promote it to the title.
+                if not current_title:
+                    current_title = heading_text
+                else:
+                    current_texts.append(heading_text)
+        else:
+            txt = el.get_text(" ", strip=True)
+            if txt:
+                current_texts.append(txt)
+    flush()
 
-    return title, "\n\n".join(blocks)
+    # If no heading-delimited sections produced any body text (<div> wrappers
+    # or odd structure), fall back to the whole document as one section.
+    if not sections or all(not s["body"] for s in sections):
+        text = soup.get_text("\n", strip=True)
+        blocks = [b.strip() for b in re.split(r"\n\s*\n", text) if b.strip()]
+        sections = [{"title": "", "body": "\n\n".join(blocks)}]
+
+    return sections
 
 
 def _parse_number(num_str: str) -> int | None:
@@ -100,38 +177,56 @@ def _parse_number(num_str: str) -> int | None:
 
 
 def extract_epub_chapters(epub_path: Path) -> list[dict]:
-    """Walk an EPUB's spine and return an ordered list of chapter dicts.
+    """Walk an EPUB's spine, split each document into heading-delimited
+    sections, classify each section, and return a flat ordered list of
+    section dicts: {id, kind, number, title, raw_heading, text,
+    source_filename}.
 
-    Each dict carries {id, kind, number, title, raw_heading, text}.
-    Empty items are dropped. Order matches spine order.
+    Handles both one-file-per-chapter EPUBs (self-pub) and Gutenberg-style
+    many-chapters-per-file EPUBs uniformly.
     """
     book = epub.read_epub(str(epub_path), options={"ignore_ncx": True})
     chapters: list[dict] = []
-    chapter_n = 0
     for sid, _ in book.spine:
         item = book.get_item_with_id(sid)
         if item is None or item.get_type() != ebooklib.ITEM_DOCUMENT:
             continue
         fname = item.get_name()
-        kind = _item_kind(fname)
-        title, body = _html_to_markdown(item.get_content())
-        if not body.strip():
-            continue
-        num: int | None = None
-        if kind == "chapter":
-            chapter_n += 1
-            # Prefer a number extracted from the filename (chapter-007 → 7)
-            m = re.search(r"(\d+)", Path(fname).stem)
-            num = int(m.group(1)) if m else chapter_n
-        chapters.append({
-            "id": f"{len(chapters) + 1:03d}",
-            "kind": kind,
-            "number": num,
-            "title": title,
-            "raw_heading": title,
-            "source_filename": fname,
-            "text": body,
-        })
+        filename_hint = _item_kind(fname)
+        for section in _split_epub_document(item.get_content()):
+            title = section["title"]
+            body = section["body"]
+            if not body.strip():
+                continue
+            kind, num = _classify_from_title(title)
+            # If the title gave no signal, fall back to the filename hint.
+            if kind == "prose" and filename_hint != "prose":
+                kind = filename_hint
+            chapters.append({
+                "id": f"{len(chapters) + 1:03d}",
+                "kind": kind,
+                "number": num,
+                "title": title,
+                "raw_heading": title,
+                "source_filename": fname,
+                "text": body,
+            })
+
+    # Position-based reclassification: unclassified "prose" sections that
+    # fall BEFORE the first chapter-kind section are front matter;
+    # those AFTER the last are back matter (epilogue). This catches Moby
+    # Dick's "Etymology" / "Extracts" preambles and Don Quixote's long
+    # translator's introduction, whose headings don't match known patterns
+    # but whose position-in-spine makes their apparatus-status clear.
+    chapter_idxs = [i for i, c in enumerate(chapters) if c["kind"] == "chapter"]
+    if chapter_idxs:
+        first_i, last_i = chapter_idxs[0], chapter_idxs[-1]
+        for i, c in enumerate(chapters):
+            if c["kind"] == "prose":
+                if i < first_i:
+                    c["kind"] = "front"
+                elif i > last_i:
+                    c["kind"] = "epilogue"
     return chapters
 
 

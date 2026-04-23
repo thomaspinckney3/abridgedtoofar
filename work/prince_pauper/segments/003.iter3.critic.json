@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the grounds that are now closely packed with grim acres of brick and stone",
+      "source_locator": "paragraph 1, closing clause of the Strand description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a characteristically Twainian temporal aside—the narrator's voice intruding to contrast Elizabethan beauty with Victorian urban grimness. It establishes the narrator's ironic, historically aware perspective and is a small but distinctive voice-register marker.",
+      "suggested_fix": "Restore the closing clause: '…grounds that are now closely packed with grim acres of brick and stone.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Half a dozen attendants sprang forward to—I don't know what; interfere, no doubt.",
+      "source_locator": "paragraph after Edward Tudor's first speech",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the words but the source's comic narrative intrusion ('I don't know what; interfere, no doubt') is a signature moment of the narrator breaking the fourth wall with comic understatement. The draft carries it, but the surrounding flattening of the scene reduces its pop.",
+      "suggested_fix": "The phrase is present; acceptable as-is, but verify the surrounding comic cadence is intact."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "You should have seen that fickle crowd snatch off their hats then. You should have heard them cheer, and shout, 'Long live the Prince of Wales!'",
+      "source_locator": "after soldier's rebuke, crowd reaction",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The rhetorical 'You should have seen… You should have heard…' anaphora is a distinctive narrator address to the reader—one of the most voice-forward moments in the chapter. The draft collapses this to 'You should have seen that fickle crowd snatch off their hats then, and shout,' losing the second 'You should have heard' clause and flattening the rhetorical doubling.",
+      "suggested_fix": "Restore both parallel sentences: 'You should have seen that fickle crowd snatch off their hats then. You should have heard them cheer, and shout, \"Long live the Prince of Wales!\"'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "\"Then is thy grand-dam not over kind to thee, I take it?\" \"Neither to any other is she, so please your worship. She hath a wicked heart, and worketh evil all her days.\"",
+      "source_locator": "dialogue exchange after 'Hast parents?' passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange ('Neither to any other is she… She hath a wicked heart, and worketh evil all her days') is important characterization of the grandmother and of Tom's candid, direct speech register. The draft elides the full grandmother exchange, jumping from 'Hast parents?' to 'Doth she mistreat thee?' without the intervening character-establishing lines.",
+      "suggested_fix": "Restore the grandmother exchange: Edward's inference 'Then is thy grand-dam not over kind to thee' and Tom's reply about her wicked heart before moving to the mistreatment question."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Thou hast the same hair, the same eyes, the same voice and manner, the same form and stature, the same face and countenance that I bear.\"",
+      "source_locator": "mirror scene, Edward's speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The rhythmic accumulation of 'the same hair, the same eyes, the same voice and manner, the same form and stature' is a rhetorically distinctive sentence whose anaphoric repetition enacts the astonishment of perfect doubling. The draft compresses it to 'Thou hast the same hair… the same face and countenance,' dropping the middle items and destroying the incantatory rhythm.",
+      "suggested_fix": "Restore the full list verbatim: 'the same hair, the same eyes, the same voice and manner, the same form and stature, the same face and countenance.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The little prince contemplated the little pauper gravely a moment, then said— 'And prithee, why not? Who helpeth them undress at night? Who attireth them when they rise?'",
+      "source_locator": "servants exchange, after Tom's 'dost think they have servants?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The comic exchange about servants—Tom's incredulous reply, Edward's equally incredulous counter-questions, and Tom's punchline 'Have they but one?'—is partly collapsed into 'They spoke of sisters and servitors; the prince marvelled.' The specific comic dialogue is the content; the paraphrase loses the wit.",
+      "suggested_fix": "Restore the servants/one-garment dialogue at least in abbreviated form, keeping Edward's 'Who helpeth them undress?' and Tom's 'Have they but one?' punchline."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves most major action and dialogue but accumulates four medium-severity failures—loss of the narrator's temporal aside, collapse of the anaphoric 'You should have seen/heard' address, omission of the grandmother's characterizing exchange, and compression of the mirror-scene's rhetorically essential list—triggering regeneration."
+}

@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "such attractions as are by no means unusual in children of two or three years old; an imperfect articulation, an earnest desire of having his own way, many cunning tricks, and a great deal of noise",
+      "source_locator": "paragraph 3, describing the child who supplanted the Dashwood daughters",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Austen's sharpest and most celebrated ironic aside in the chapter — the satirical enumeration of infantile charms that outweighed years of devoted niece-service is a textbook example of her voice and is critically canonical. Its erasure removes the chapter's primary moment of Austenian wit.",
+      "suggested_fix": "Restore the satirical catalogue verbatim or near-verbatim: 'an imperfect articulation, an earnest desire of having his own way, many cunning tricks, and a great deal of noise' — this is non-negotiable signature prose."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "Yes, he would give them three thousand pounds: it would be liberal and handsome! It would be enough to make them completely easy. Three thousand pounds! he could spare so considerable a sum with little inconvenience.",
+      "source_locator": "paragraph 7, John Dashwood's interior monologue",
+      "draft_treatment": "absent",
+      "why_it_matters": "The free indirect discourse rendering of John Dashwood's self-congratulatory generosity is interpretively central — it establishes his comic self-deception and sets up the famous deliberation scene that follows. The draft reduces this to a bare fact ('meditated the liberal present of a thousand pounds a-piece'), erasing the voice entirely.",
+      "suggested_fix": "Restore at minimum the quoted interior monologue — 'Yes, he would give them three thousand pounds… he could spare so considerable a sum with little inconvenience' — as this free indirect speech is the chapter's principal comic register-marker."
+    },
+    {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "seeking increase of wretchedness in every reflection that could afford it",
-      "source_locator": "paragraph on Elinor/Marianne grief, near end of source",
+      "source_passage": "it was a knowledge which her mother had yet to learn; and which one of her sisters had resolved never to be taught.",
+      "source_locator": "paragraph describing Elinor's character",
       "draft_treatment": "absent",
-      "why_it_matters": "This clause is distinctively Austenian in its ironic precision — 'seeking increase of wretchedness' is a textually distinctive phrase that captures the novel's central thematic critique of performed sensibility; its excision flattens the satirical register of the passage.",
-      "suggested_fix": "Restore 'seeking increase of wretchedness in every reflection that could afford it' within the grief paragraph rather than condensing to 'and resolved against ever admitting consolation.'"
+      "why_it_matters": "This closing epigram on knowing how to govern one's feelings is the sharpest formulation of the novel's central thematic opposition between the sisters; it also characterises Marianne with elegant economy before she is even individually described. Its omission flattens a passage of significant interpretive weight.",
+      "suggested_fix": "Append the sentence to the Elinor description: 'it was a knowledge which her mother had yet to learn; and which one of her sisters had resolved never to be taught.'"
     },
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "he was very young when he married, and very fond of his wife",
-      "source_locator": "paragraph on John Dashwood's character",
-      "draft_treatment": "absent",
-      "why_it_matters": "This clause carries quiet ironic weight — the explanation for why he 'might have been made amiable' is the contrast between youthful affection and the wife he actually got; its omission weakens the satirical logic of the characterisation.",
-      "suggested_fix": "Restore 'for he was very young when he married, and very fond of his wife' before the pivot to Mrs. John Dashwood as caricature."
+      "source_passage": "They gave themselves up wholly to their sorrow, seeking increase of wretchedness in every reflection that could afford it, and resolved against ever admitting consolation in future.",
+      "source_locator": "paragraph on Mrs. Dashwood and Marianne's grief",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft ('renewed by choice, and heightened by every painful recollection; they resolved against consolation') preserves the bare fact but loses the specific ironic formulation — 'seeking increase of wretchedness' and 'every reflection that could afford it' — which defines Austen's satirical attitude toward excessive sensibility.",
+      "suggested_fix": "Restore 'seeking increase of wretchedness in every reflection that could afford it' — these particular phrases carry the ironic edge that establishes the novel's critique of sensibility."
     },
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "so earnestly did she despise her daughter-in-law for it",
-      "source_locator": "paragraph beginning 'So acutely did Mrs. Dashwood feel'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The word 'despise' is a sharp register marker; the draft softens this to mere feeling the 'ungracious behaviour,' losing the intensity of Mrs. Dashwood's reaction that Austen underscores with the doubled construction.",
-      "suggested_fix": "Restore 'so earnestly did she despise her daughter-in-law for it' to preserve the full rhetorical parallel and tonal force."
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "He was not an ill-disposed young man, unless to be rather cold hearted and rather selfish is to be ill-disposed",
+      "source_locator": "paragraph 8, characterisation of John Dashwood",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft reproduces this phrase correctly. However, the surrounding ironic elaboration — 'he was, in general, well respected; for he conducted himself with propriety in the discharge of his ordinary duties' — is a further unit of Austenian irony that is present only in skeleton form in the draft, losing the deadpan 'ordinary duties' framing.",
+      "suggested_fix": "Minor: retain 'in the discharge of his ordinary duties' to preserve the ironic precision of the original."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is largely faithful and preserves all major signatures verbatim or near-verbatim, with only minor voice-flattening in the grief passage (loss of 'seeking increase of wretchedness') and two small excisions that trim Austen's ironic precision without rising to high severity."
+  "verdict": "regenerate",
+  "summary": "The draft commits two high-severity failures: erasure of the ironic catalogue of infant charms (Austen's most famous satirical set-piece in this chapter) and suppression of John Dashwood's self-congratulatory interior monologue (the chapter's principal instance of free indirect discourse), plus two medium-severity voice-flattenings."
 }

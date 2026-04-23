@@ -5,40 +5,31 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "better than four cities or four judgeships at court",
-      "source_locator": "Sancho's reply to the niece about islands",
+      "source_passage": "and I suppose all the exposures that could be imagined would not get it out of his head.",
+      "source_locator": "barber's remark about Sancho's belief in the island, after curate's first speech",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft cuts 'or four judgeships at court,' diminishing the comic specificity of Sancho's aspiration, which is a minor but characteristic voice marker establishing his materialistic ambition.",
-      "suggested_fix": "Restore 'or four judgeships at court' to preserve the full comic inventory of Sancho's island-dreams."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "and the madness of the master without the simplicity of the man would not be worth a farthing",
-      "source_locator": "Curate's speech to the barber, after 'cast in the same mould'",
-      "draft_treatment": "fragment_preserved",
-      "why_it_matters": "The draft merges the curate's two separate speeches into one paragraph, attributing both the 'cast in the same mould' observation and 'I promise you the niece will tell us' to the same speech, obscuring the barber's interjection ('That is true … I should like very much to know what the pair are talking about'). This eliminates the barber's voiced curiosity, a small but characterizing exchange.",
-      "suggested_fix": "Restore the barber's two-line reply ('That is true … I should like very much to know what the pair are talking about at this moment') before the curate's closing promise about the niece."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Dost thou mean to say now, Sancho, that I did not feel when they were blanketing thee? If thou dost, thou must not say so or think so, for I felt more pain then in spirit than thou didst in body.",
-      "source_locator": "Don Quixote's reply after Sancho's head-over-the-wall rejoinder",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is a characteristically ironic and interpretively significant line — Don Quixote's claim of spiritual suffering during Sancho's physical humiliation is a key moment of his self-serving rationalization and the comedy of their relationship. The draft simply cuts to 'Say no more of that now,' erasing the punchline.",
-      "suggested_fix": "Restore Don Quixote's protest that he felt more pain in spirit than Sancho did in body before transitioning to 'But let us put that aside.'"
+      "why_it_matters": "The barber's full remark about no exposure being able to dislodge Sancho's belief is cut to a mere clause, losing the comic emphasis on Sancho's incorrigible credulity, which the critical tradition treats as a key characterisation moment.",
+      "suggested_fix": "Restore the barber's full sentence: 'who has such a firm belief in all that about the island, that I suppose all the exposures that could be imagined would not get it out of his head.'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Is there more, then? … There's the tail to be skinned yet … all so far is cakes and fancy bread",
-      "source_locator": "Exchange between Don Quixote and Sancho before introduction of Samson Carrasco",
+      "source_passage": "uneasy lest Sancho should blab and blurt out a whole heap of mischievous stupidities, and touch upon points that might not be altogether to his credit",
+      "source_locator": "narrator's aside before Don Quixote calls Sancho in",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft collapses the two-beat exchange ('Is there more then?' / 'There's the tail to be skinned yet — all so far is cakes and fancy bread') into a single run-on sentence by Sancho. The 'cakes and fancy bread' proverb is a Sanchism and a voice marker; losing the setup ('Is there more, then?') loses the comic timing.",
-      "suggested_fix": "Restore Don Quixote's prompt 'Is there more, then?' as a separate line before Sancho's 'There's the tail to be skinned yet — all so far is cakes and fancy bread.'"
+      "why_it_matters": "The narrator's comic specificity ('a whole heap of mischievous stupidities') is compressed to 'fearing Sancho would blurt out mischief not to his credit,' losing the satirical texture of the original.",
+      "suggested_fix": "Restore 'a whole heap of mischievous stupidities' and the phrase 'touch upon points that might not be altogether to his credit' to preserve the narrator's ironic register."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "we took the road together, we wandered abroad together",
+      "source_locator": "Don Quixote's speech to Sancho in his room, first paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The anaphoric triple ('We sallied forth together, we took the road together, we wandered abroad together') is a rhetorically distinctive passage; the draft preserves only the first clause, losing the accumulative rhythm that marks Don Quixote's speech style.",
+      "suggested_fix": "Restore the full tricolon: 'we sallied forth together, we took the road together, we wandered abroad together.'"
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; three medium-severity flattening instances (the barber's interjection erased, the blanket-in-spirit joke cut, and minor Sanchismo trimming) and one low-severity cut, none individually fatal but collectively representing mild voice erosion."
+  "summary": "The draft is largely faithful, preserving all major signatures including the island exchange, the curate-barber colloquy, the naked-truth speech, and the Cide Hamete Berengena comedy; only minor voice flattening and one omitted rhetorical tricolon are noted."
 }

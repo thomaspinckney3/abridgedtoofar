@@ -1,0 +1,98 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The aorta of a whale is larger in the bore than the main pipe of the water-works at London Bridge, and the water roaring in its passage through that pipe is inferior in impetus and velocity to the blood gushing from the whale's heart.",
+      "source_locator": "Paley's Theology entry, late middle of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Paley's Theology extract is one of the most frequently cited and culturally famous entries in the Extracts; it encapsulates the book's sublime scale-rhetoric and is a critical touchstone for discussions of Melville's engagement with natural theology.",
+      "suggested_fix": "Restore the Paley's Theology extract verbatim; it is short and indispensable."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The whale is a mammiferous animal without hind feet.",
+      "source_locator": "Baron Cuvier entry, late middle of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "Baron Cuvier's one-line extract is famous for its deadpan scientific reductiveness in ironic contrast to the book's epic treatment of the whale; it is widely quoted and represents a signature tonal pivot in the Extracts.",
+      "suggested_fix": "Restore the Baron Cuvier extract verbatim; it is a single sentence and costs almost nothing in word count."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "there—pointing to the sea—is a green pasture where our children's grand-children will go for bread.",
+      "source_locator": "Obed Macy's History of Nantucket entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extract from Obed Macy is critically noted as carrying the book's central thematic weight about Nantucket's economic and existential relationship to the sea; it is also beautifully distinct in diction and rhythm.",
+      "suggested_fix": "Restore the Obed Macy extract verbatim; it is brief and thematically essential."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I built a cottage for Susan and myself and made a gateway in the form of a Gothic Arch, by setting up a whale's jaw bones. —Hawthorne's Twice Told Tales.",
+      "source_locator": "Hawthorne's Twice Told Tales entry (first of two)",
+      "draft_treatment": "absent",
+      "why_it_matters": "Hawthorne's appearance in the Extracts is a famous authorial cameo signaling Melville's literary allegiances; critics consistently note it as an intentional dedication-in-plain-sight. Its omission erases a key interpretive signal.",
+      "suggested_fix": "Restore both Hawthorne entries verbatim; they are brief and carry extraordinary intertextual weight."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "whalemen seem to have indirectly hit upon new clews to that same mystic North-West Passage. —From 'Something' unpublished.",
+      "source_locator": "'From Something unpublished' entry, late section of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'Something unpublished' extract—with its phrase 'mystic North-West Passage'—is a self-reflexive plant by Melville pointing to the book's own metaphysical quest; critics identify it as one of the most interpretively loaded moments in the Extracts.",
+      "suggested_fix": "Restore the 'Something unpublished' extract verbatim; it is two sentences and essential to the book's self-commentary."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Silly Mansoul swallowed it without chewing, as if it had been a sprat in the mouth of a whale. —Pilgrim's Progress.",
+      "source_locator": "Pilgrim's Progress entry, middle of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "This Bunyan extract is a culturally recognizable allusion that contributes to the Extracts' theological range and its ironic juxtaposition of sacred and mundane registers.",
+      "suggested_fix": "Restore the Pilgrim's Progress extract verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "The larger whales, they seldom venture to attack. They stand in so great dread of some of them, that when out at sea they are afraid to mention even their names.",
+      "source_locator": "Uno Von Troil's Letters entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extract establishes the whale's numinous, unspeakable quality—a core thematic element of the novel—and its erasure flattens the Extracts' thematic arc toward dread and the uncanny.",
+      "suggested_fix": "Restore the Uno Von Troil extract verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "'Stern all!' exclaimed the mate, as upon turning his head, he saw the distended jaws of a large Sperm Whale close to the head of the boat, threatening it with instant destruction;—'Stern all, for your lives!'",
+      "source_locator": "Wharton the Whale Killer entry, near end of source",
+      "draft_treatment": "absent",
+      "why_it_matters": "This extract is the Extracts' most dramatically kinetic whale-attack moment; its rhetorical energy and the phrase 'for your lives' provide a tonal crescendo that the draft loses by jumping to the closing songs.",
+      "suggested_fix": "Restore the Wharton the Whale Killer extract verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "motif_depletion",
+      "source_passage": "In the free element beneath me swam, Floundered and dived, in play, in chace, in battle, Fishes of every colour, form, and kind; Which language cannot paint...",
+      "source_locator": "Montgomery's World before the Flood entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Montgomery verse is the longest and most sustained poetic passage in the Extracts; its sweep and the phrase 'which language cannot paint' anticipate the novel's central epistemological preoccupation with representing the unrepresentable.",
+      "suggested_fix": "Restore the Montgomery extract verbatim; it is short enough to include without significant budget impact."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Nantucket itself, said Mr. Webster, is a very striking and peculiar portion of the National interest. There is a population of eight or nine thousand persons living here in the sea.",
+      "source_locator": "Daniel Webster's Speech entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "Webster's rhetorical elevation of Nantucket to a matter of 'National interest' is thematically resonant for the novel's American-epic ambitions; its absence thins the political-cultural register of the Extracts.",
+      "suggested_fix": "Restore the Webster extract verbatim."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft retains roughly a third of the Extracts, omitting numerous entries of high signature weight including the Paley's Theology aorta passage, Baron Cuvier's one-liner, both Hawthorne entries, Obed Macy's 'green pasture' extract, and Melville's self-reflexive 'Something unpublished' plant—losses that collectively erase the Extracts' thematic arc, its most famous individual moments, and its key interpretive signals."
+}

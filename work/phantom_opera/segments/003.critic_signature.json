@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "No one had ever heard or seen anything like it.",
+      "source_locator": "paragraph ending the account of Christine's Faust triumph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This short declarative sentence functions as a rhetorical full-stop—a voice-establishing beat that punctuates the ecstatic description and gives it finality. Its omission flattens the narrative cadence at a key moment.",
+      "suggested_fix": "Restore 'No one had ever heard or seen anything like it.' immediately after the description of Christine's triumph in FAUST."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "he had retained from this purely feminine education manners that were almost candid and stamped with a charm that nothing had yet been able to sully.",
+      "source_locator": "paragraph on Raoul's shyness and innocence",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this phrase but strips the full surrounding passage including 'I was almost saying his innocence—was remarkable,' which is part of the narrator's gently ironic voice-signature. The draft does keep the phrase, but the narrator's parenthetical aside is present only in truncated form.",
+      "suggested_fix": "Retain the full sentence including its rhetorical setup ('The shyness of the sailor-lad—I was almost saying his innocence—was remarkable') exactly as written; the dash-and-retraction construction is a prose-voice marker."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "but it could hardly be reckoned as a crime for this nobleman, a bachelor, with plenty of leisure, especially since his sisters were settled, to come and spend an hour or two after dinner in the company of a dancer, who, though not so very, very witty, had the finest eyes that ever were seen!",
+      "source_locator": "paragraph on Philippe being 'on terms' with Sorelli",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage characterises Sorelli precisely and ironically ('not so very, very witty, had the finest eyes that ever were seen') while also establishing the narrator's amused, society-observing tone. The draft reduces it to a bare rhetorical question, losing both the character detail and the narratorial irony.",
+      "suggested_fix": "Restore the full clause about Sorelli including the double 'very, very' and the 'finest eyes' detail, which supplies both character colour and narratorial voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Lastly, Philippe would perhaps not have taken his brother behind the scenes of the Opera if Raoul had not been the first to ask him, repeatedly renewing his request with a gentle obstinacy which the count remembered at a later date.",
+      "source_locator": "transitional paragraph before the evening's events",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'which the count remembered at a later date' is a narratorial prolepsis that seeds dramatic irony and reminds the reader this account is retrospective. The draft shortens this to 'which the count remembered later,' but the full source phrase 'at a later date' has a more formal, ominous weight that carries the novel's retrospective framing.",
+      "suggested_fix": "Restore 'which the count remembered at a later date' verbatim to preserve the proleptic, slightly ominous tone."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "lover though he was, he did not even think of stealing a ribbon that would have given him the perfume of the woman he loved.",
+      "source_locator": "near end, Raoul standing in the empty dressing-room",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies 'that would have given him the perfume of the woman he loved'—the subordinate clause makes the observation tenderly ironic and characterises Raoul's romantic paralysis. The draft shortens it to 'a ribbon with her perfume,' losing the syntactic shape and emotional register.",
+      "suggested_fix": "Restore the full clause: 'a ribbon that would have given him the perfume of the woman he loved.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Faure and Krauss had sung; and, on that evening, Christine Daae had revealed her true self, for the first time",
+      "source_locator": "foyer-of-the-ballet paragraph listing composers and performers",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses the named roster of composers and performers (Faure, Krauss, Reyer, Guiraud, Delibes, with their specific works) into a generic list. While compression of a catalogue list is defensible, the specific named works (Danse Macabre, Valse Lente, Pizzicati, etc.) provide period-colour and textual distinctiveness that readers of the novel associate with this chapter.",
+      "suggested_fix": "Restore at minimum the names of Faure and Krauss as singers and add a few of the specific works (e.g., Danse Macabre, Valse Lente from Sylvia) to retain period texture, even if the full list cannot be reproduced at target word count."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves all major plot events and key dialogue verbatim but flattens several voice-establishing and interpretive passages—most critically the Sorelli characterisation with its double 'very, very' and 'finest eyes' irony, the full Raoul ribbon sentence, the 'No one had ever heard or seen anything like it' beat, and the proleptic 'at a later date'—resulting in three medium-severity findings that together trigger regeneration."
+}

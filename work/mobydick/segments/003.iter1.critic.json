@@ -1,0 +1,53 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"And God created great whales.\" —Genesis. \"Leviathan maketh a path to shine after him\" —Job. \"Now the Lord had prepared a great fish to swallow up Jonah.\" —Jonah.",
+      "source_locator": "Opening biblical epigraphs through the full sequence of Extracts",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire 'Extracts' segment — the sub-librarian's compilation of whale quotations from Genesis through Whale Song — is completely absent from the draft. This is the whole source text for segment 003; the draft instead contains Chapter 2 ('The Carpet-Bag') material, meaning the Extracts content has been entirely dropped and replaced.",
+      "suggested_fix": "The draft must be regenerated to actually represent the Extracts segment. The compression target of ~700 words should be met by selecting and presenting a curated but representative set of the Extracts quotations — at minimum the biblical epigraphs (Genesis, Job, Jonah, Psalms, Isaiah), the Shakespeare quotes ('Very like a whale' from Hamlet; Hobbes's Leviathan opening), the Owen Chace Essex quotation, the Edmund Burke Nantucket reference, the Paley's Theology aorta passage, the J. Ross Browne 'There she blows' dialogue, and the closing Whale Song — preserving their attributions and the cumulative encyclopedic-mock-scholarly voice."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "\"Very like a whale.\" —Hamlet. ... \"By art is created that great Leviathan, called a Commonwealth or State\" —Opening sentence of Hobbes's Leviathan.",
+      "source_locator": "Middle section of Extracts, Shakespeare and Hobbes entries",
+      "draft_treatment": "absent",
+      "why_it_matters": "These are among the most culturally famous and critically discussed of all the Extracts entries. The Hamlet quotation is a touchstone of ironic deflation; the Hobbes opening redeploys Leviathan's political meaning in a book about a literal leviathan — a signature interpretive nexus critics return to repeatedly.",
+      "suggested_fix": "Both must appear verbatim with their attributions in any regenerated Extracts draft."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"My God! Mr. Chace, what is the matter?\" I answered, \"we have been stove by a whale.\" —Narrative of the Shipwreck of the Whale Ship Essex of Nantucket",
+      "source_locator": "Late section of Extracts, Owen Chace entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Essex narrative quotation is one of the most historically and culturally famous passages in the Extracts, grounding the book's central terror in documented catastrophe. Its absence removes a primary interpretive anchor for the novel's climax.",
+      "suggested_fix": "Restore verbatim with full attribution to Owen Chace in the regenerated Extracts draft."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"The sovereignest thing on earth is parmacetti for an inward bruise.\" —King Henry. \"Very like a whale.\" —Hamlet.",
+      "source_locator": "Middle of Extracts, Shakespeare entries",
+      "draft_treatment": "absent",
+      "why_it_matters": "Both Shakespeare quotations are widely recognized outside the book and carry cultural-famousness signature weight; 'Very like a whale' is particularly iconic as a self-referential ironic citation.",
+      "suggested_fix": "Restore both Shakespeare entries verbatim with attributions."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"The aorta of a whale is larger in the bore than the main pipe of the water-works at London Bridge\" —Paley's Theology.",
+      "source_locator": "Late-middle section of Extracts, Paley entry",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most rhetorically vivid scientific-sublime passages in the Extracts, widely noted by critics for its characteristic Melvillean register of awe-through-measurement.",
+      "suggested_fix": "Restore verbatim with Paley attribution in regenerated draft."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft does not contain the Extracts segment at all — it presents Chapter 2 ('The Carpet-Bag') instead — resulting in total loss of every signature passage, quotation, voice, and interpretive content from the source text."
+}

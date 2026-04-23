@@ -1,0 +1,53 @@
+{
+  "segment_id": "001",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "an earnest desire of having his own way, many cunning tricks, and a great deal of noise",
+      "source_locator": "paragraph 3, the catalogue of the child's 'attractions'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Austen's satirical catalogue of the child's charms includes 'an earnest desire of having his own way' — a phrase that carries the ironic sting of the whole passage. The draft drops it, losing one of the three items and softening the satirical precision.",
+      "suggested_fix": "Restore 'an earnest desire of having his own way' alongside 'an imperfect articulation, many cunning tricks, and a great deal of noise' to preserve the complete ironic list."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "seeking increase of wretchedness in every reflection that could afford it, and resolved against ever admitting consolation in future",
+      "source_locator": "paragraph near end, grief of Mrs. Dashwood and Marianne",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains this phrase but omits 'was sought for, was created again and again' — the triadic escalation ('voluntarily renewed, was sought for, was created again and again') that makes the narrator's ironic critique of performative sensibility so distinctive. The draft collapses it to 'voluntarily renewed again and again,' losing the deliberate rhetorical build.",
+      "suggested_fix": "Restore the full tricolon: 'was voluntarily renewed, was sought for, was created again and again' to preserve the ironic rhythm."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "his temper was cheerful and sanguine; and he might reasonably hope to live many years, and by living economically, lay by a considerable sum from the produce of an estate already large, and capable of almost immediate improvement. But the fortune, which had been so tardy in coming, was his only one twelvemonth.",
+      "source_locator": "paragraph 4, Mr. Henry Dashwood's death",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The irony of 'the fortune, which had been so tardy in coming, was his only one twelvemonth' is a signature narratorial aside — the delayed inheritance cutting off hope immediately. The draft reduces this to 'Mr. Dashwood's disappointment was soothed by hope; he might, by economy and time, save a sum. But he survived his uncle no longer than twelvemonth,' losing the pointed ironic formulation.",
+      "suggested_fix": "Restore 'the fortune, which had been so tardy in coming, was his only one twelvemonth' verbatim as the pivot sentence."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She had an excellent heart;—her disposition was affectionate, and her feelings were strong",
+      "source_locator": "paragraph on Elinor's character",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft omits 'her disposition was affectionate' from the description of Elinor, slightly thinning the balanced characterisation Austen carefully constructs to show Elinor is not cold but governed.",
+      "suggested_fix": "Add 'her disposition was affectionate' back to Elinor's character description."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "So acutely did Mrs. Dashwood feel this ungracious behaviour, and so earnestly did she despise her daughter-in-law for it, that, on the arrival of the latter, she would have quitted the house for ever",
+      "source_locator": "paragraph on Mrs. Dashwood's reaction to Mrs. John Dashwood's arrival",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft collapses this to a single clause ('She would have quitted the house for ever had not the entreaties of her eldest daughter prevailed'), erasing the narrator's emphatic double construction ('so acutely… so earnestly') and the reason — 'induced her first to reflect on the propriety of going, and her own tender love for all her three children determined her afterwards to stay.' The motivation for staying is interpretively important to Elinor's role.",
+      "suggested_fix": "Expand to include the narrator's 'so acutely… so earnestly' framing and Elinor's role in making Mrs. Dashwood first reflect, then stay for her children's sake."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful but loses the ironic tricolon describing the child's attractions (missing 'earnest desire of having his own way'), deflates the grief-performance tricolon, drops the signature 'fortune so tardy in coming' irony, and compresses Mrs. Dashwood's flight-impulse scene in ways that thin the narrator's satirical voice; none individually reaches high severity, and with only one finding at medium-bordering-on-high, the draft narrowly passes but should be revised."
+}

@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "grounds that are now closely packed with grim acres of brick and stone",
+      "source_locator": "paragraph 1, final clause of the Strand description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aside is a characteristic Twain narratorial intrusion—the voice reaching across time to address the reader directly; its loss removes the only extradiegetic commentary in the opening movement.",
+      "suggested_fix": "Restore the clause ('grounds that are now closely packed with grim acres of brick and stone') as a parenthetical at the end of the Strand description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Half a dozen attendants sprang forward to--I don't know what; interfere, no doubt. But they were waved aside with a right royal gesture, and they stopped stock still where they were, like so many statues.",
+      "source_locator": "paragraph after Edward says 'Come with me'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The self-interrupting 'I don't know what; interfere, no doubt' is a distinctively comic narratorial aside—one of the few moments of direct narrator wit in the chapter. The draft collapses it to 'Half a dozen attendants started forward; he waved them aside with a royal gesture,' losing the voice entirely.",
+      "suggested_fix": "Restore the narrator's self-correction verbatim: 'Half a dozen attendants sprang forward to—I don't know what; interfere, no doubt. But they were waved aside with a right royal gesture, and they stopped stock still where they were, like so many statues.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "You should have seen that fickle crowd snatch off their hats then. You should have heard them cheer, and shout, 'Long live the Prince of Wales!'",
+      "source_locator": "paragraph after the prince's gate speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The anaphoric 'You should have seen… You should have heard…' is a rhetorically distinctive direct address to the reader—a set-piece flourish that ironically underlines the crowd's fickleness. The draft reduces it to 'Hats flew; they shouted,' stripping the rhetorical shape entirely.",
+      "suggested_fix": "Restore the two 'You should have…' sentences verbatim before the hat-and-cheer action; they are brief and essential to the ironic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the prince, with princely delicacy and breeding, sent away the servants, so that his humble guest might not be embarrassed by their critical presence",
+      "source_locator": "paragraph describing Edward bringing Tom to the cabinet",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full phrase 'with princely delicacy and breeding… so that his humble guest might not be embarrassed by their critical presence' is the primary characterisation of Edward's innate grace; reducing it to 'with princely delicacy, dismissed the servants' loses the interpretive clause that explains his motivation.",
+      "suggested_fix": "Restore 'so that his humble guest might not be embarrassed by their critical presence' after 'dismissed the servants.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "oh the lovely mud, it hath not its like for delightfulness in all the world!--we do fairly wallow in the mud, sir, saving your worship's presence",
+      "source_locator": "Maypole and mud-pastry speech, near end of dialogue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical exclamation about mud—'oh the lovely mud, it hath not its like for delightfulness in all the world!'—is the comic peak of Tom's catalogue of Offal Court pleasures. The draft summarises 'wallowing in lovely mud' without the rhapsodic interruption.",
+      "suggested_fix": "Insert the exclamatory aside verbatim when mud pastry is mentioned, to preserve the comic climax of the list."
+    },
+    {
+      "severity": "low",
+      "class": "signature_loss",
+      "source_passage": "Tom's breath came quick and short with excitement, and his eyes grew big with wonder and delight. Everything gave way in his mind instantly to one desire: that was to get close to the prince, and have a good, devouring look at him.",
+      "source_locator": "paragraph opening 'Tom's breath came quick'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The sentence 'a good, devouring look at him' is pointed psychological characterisation—Tom as watcher, as imagination-driven observer—that underpins the whole substitution theme. Its complete absence slightly thins the interpretive texture.",
+      "suggested_fix": "Add one bridging sentence before Tom presses to the bars, restoring 'his eyes grew big with wonder and delight' and 'a good, devouring look at him.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves plot and most dialogue but loses three medium-severity voice items—the 'grim acres' narrator aside, the self-interrupting 'I don't know what' interjection, and the rhetorically charged 'You should have seen / You should have heard' apostrophe—collectively erasing the chapter's three most distinctive moments of direct narratorial voice and triggering the regenerate threshold."
+}

@@ -5,40 +5,67 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
+      "source_passage": "each of the three setting up for a new legislator, a modern Lycurgus, or a brand-new Solon",
+      "source_locator": "paragraph 2, State-craft discussion",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Lycurgus/Solon comparison is a characteristic piece of Cervantine ironic deflation—mocking the would-be lawmakers with classical allusion—and its erasure flattens the satirical register of the scene.",
+      "suggested_fix": "Restore 'each setting up for a new legislator, a modern Lycurgus, or a brand-new Solon' within the furnace-of-the-state passage."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
       "source_passage": "no one now takes a nap, as they call it, without drawing his feet out of the stirrups, and leaning upon his lance, as the knights-errant used to do",
-      "source_locator": "Don Quixote's long speech on the depraved age, middle of the chivalry lament paragraph",
+      "source_locator": "Don Quixote's long speech on the degenerate knights, middle of the passage",
       "draft_treatment": "absent",
-      "why_it_matters": "This specific, vivid image of the knight napping in the saddle is a characteristic piece of Cervantine comic-heroic detail that anchors the lament in physical reality; its absence flattens the rhetorical texture of the speech.",
-      "suggested_fix": "Restore the sentence about taking a nap without drawing feet from the stirrups and leaning on the lance between the armour-rustling observation and the beach/bark passage."
+      "why_it_matters": "The specific image of sleeping upright in the saddle, leaning on the lance, is an iconic chivalric motif that Don Quixote's speech deploys for satirical/elegiac effect; the draft skips from 'no one sleeps in the open field' to 'issuing from the wood,' losing this concrete and rhetorically distinctive detail.",
+      "suggested_fix": "Restore the stirrups-and-lance nap image between the 'no one sleeps in full panoply' and 'issuing from the wood' clauses."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I am not versed in stories, said Don Quixote; but I know the oath is a good one, because I know the barber to be an honest fellow",
-      "source_locator": "After the barber's oath by the ballad of the curate, before the curate goes bail",
+      "source_passage": "the light and glory of chivalry. These, or such as these, I would have to carry out my plan",
+      "source_locator": "End of Don Quixote's long enumeration of knights, before the Turk conclusion",
       "draft_treatment": "absent",
-      "why_it_matters": "This small exchange is a characteristic piece of Cervantine ironic character-drawing—Don Quixote's trusting naivety and dry wit are on display; collapsing it erases a moment of voice that also signals his residual sanity.",
-      "suggested_fix": "Restore the three-line exchange: barber's oath by the ballad, Don Quixote's 'I am not versed in stories but I know the oath is a good one,' and the curate's going bail."
+      "why_it_matters": "The capping phrase 'the light and glory of chivalry' is a rhetorically climactic tag that closes Don Quixote's celebrated rhetorical list; the draft moves straight from the Ruggiero/Ferrara sentence to the plan, losing the peroration.",
+      "suggested_fix": "Insert 'were knights-errant, the light and glory of chivalry' as the closing flourish of the enumeration before 'These, or such as these, would carry out my plan.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "he said the governor was against him, not to lose the presents his relations made him for reporting him still mad but with lucid intervals; and that the worst foe he had in his misfortune was his large property",
-      "source_locator": "Barber's tale, during the chaplain's interview with the licentiate",
+      "source_passage": "He was a graduate of Osuna in canon law; but even if he had been of Salamanca, it was the opinion of most people that he would have been mad all the same.",
+      "source_locator": "Opening of the barber's madhouse story",
       "draft_treatment": "absent",
-      "why_it_matters": "This passage is interpretively important: the licentiate's accusation about property and corrupt governors mirrors Don Quixote's own situation and is the satirical core of the embedded tale; its omission removes the allegorical bite.",
-      "suggested_fix": "Restore the licentiate's speech about the governor taking presents and the worst enemy being his large property, which his relations want to enjoy—this is the thematic heart of the anecdote."
+      "why_it_matters": "This is a famous satirical aside at the expense of the University of Osuna's reputation; its wit is the first joke of the embedded tale and is part of Cervantes' ironic texture. The draft omits it entirely, beginning only with the licentiate's confinement.",
+      "suggested_fix": "Restore the Osuna/Salamanca joke as the opening identification of the licentiate; it is too distinctive to cut."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I suspect it to be all fiction, fable, and falsehood, and dreams told by men awakened from sleep, or rather still half asleep.",
+      "source_locator": "Curate's expression of doubt about the reality of knights-errant",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The curate's formulation 'fiction, fable, and falsehood, and dreams told by men awakened from sleep, or rather still half asleep' is interpretively important (it rehearses the novel's own self-questioning about fiction) and is rhetorically distinctive; the draft reduces it to the bare claim without the memorable phrasing.",
+      "suggested_fix": "Restore the curate's exact formulation including the sleeping/half-asleep paradox when voicing his doubt about the reality of knights-errant."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "yielding to the enjoyment of hearing such nonsense, he asked him what was his notion of the features of Reinaldos of Montalban",
-      "source_locator": "Narrator's aside before the portraits of the Twelve Peers",
+      "source_passage": "supporting it upon the shoulders of the truth; which truth is so clear that I can almost say I have with my own eyes seen Amadis of Gaul",
+      "source_locator": "Don Quixote's reply on having seen Amadis",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'supporting it upon the shoulders of the truth' and the rhetorical build-up are lost; the draft jumps straight to the Amadis description, flattening the epistemological bravado that is characteristic of Don Quixote's voice.",
+      "suggested_fix": "Retain the 'shoulders of the truth' clause as a bridge before the Amadis portrait."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "it is naturally the way with poets who have been scorned and rejected by their ladies, whether fictitious or not, in short by those whom they select as the ladies of their thoughts, to avenge themselves in satires and libels—a vengeance, to be sure, unworthy of generous hearts",
+      "source_locator": "Don Quixote's answer on satirists of Angelica",
       "draft_treatment": "absent",
-      "why_it_matters": "The narratorial aside 'yielding to the enjoyment of hearing such nonsense' is a characteristic ironic intrusion that keeps the reader aware of the comedy; its loss is a minor but real instance of voice flattening.",
-      "suggested_fix": "Restore the parenthetical 'yielding to the enjoyment of hearing such nonsense' before the curate's question about Reinaldos."
+      "why_it_matters": "This generalizing observation on poets and vengeance is characteristic Cervantine ironic commentary on literary culture; the draft reduces his answer to bare summary, losing the digressive moral voice.",
+      "suggested_fix": "Restore the aside on poets' retaliatory satires as 'unworthy of generous hearts' before the final sentence about Angelica."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Three medium-severity findings—loss of the saddle-nap image in Don Quixote's chivalry lament, erasure of the barber's oath exchange and Don Quixote's dry reply, and omission of the licentiate's satirically loaded speech about property and corrupt governors—cumulatively trigger regeneration."
+  "summary": "The draft preserves the narrative sequence and several verbatim passages well, but accumulates five medium-severity voice-flattening failures—including the loss of the Osuna/Salamanca joke, the curate's 'fiction, fable, and falsehood … dreams told by men half asleep' formulation, the Lycurgus/Solon satirical tag, the stirrups-and-lance nap image, and the 'light and glory of chivalry' peroration—which together constitute sufficient grounds for regeneration."
 }

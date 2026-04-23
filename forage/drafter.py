@@ -86,6 +86,145 @@ def _recent_drafts(book: Book, plan: dict, segment_id: str,
     return list(reversed(out))  # oldest first
 
 
+def _disk_draft_result(seg_dir: Path, segment: dict) -> DraftResult:
+    """Synthesize a DraftResult by reading a segment's on-disk draft. Used
+    when another member of the same merged group already did the LLM work.
+    """
+    path = seg_dir / f"{segment['id']}.md"
+    text = path.read_text() if path.exists() else ""
+    words = len(text.split())
+    return DraftResult(
+        segment_id=segment["id"], title=segment.get("title", ""),
+        status="drafted" if words > 0 else "error",
+        source_words=segment.get("source_word_count", 0),
+        target_words=segment.get("target_word_count", 0),
+        draft_words=words, signature_hits=0, signature_misses=[],
+        message="drafted via merged group",
+    )
+
+
+def _draft_group(book: Book, plan: dict, group_id: str) -> None:
+    """Draft all segments in a merged group with one LLM call, then split
+    the output into per-member segments/<id>.md files.
+    """
+    import re as _re
+    groups = plan.get("merged_groups") or {}
+    group = groups[group_id]
+    member_ids = group["member_ids"]
+    members = [next(s for s in plan["segments"] if s["id"] == mid)
+               for mid in member_ids]
+
+    seg_dir = book.work_dir / "segments"
+    seg_dir.mkdir(parents=True, exist_ok=True)
+
+    # Build merged source with per-sub-chapter headers the model can mirror
+    # in its output.
+    source_blocks: list[str] = []
+    sources: list[str] = []
+    for i, m in enumerate(members, 1):
+        src_path = book.work_dir / "chapters" / f"{m['id']}.md"
+        src = src_path.read_text() if src_path.exists() else ""
+        sources.append(src)
+        title = m.get("title") or f"Chapter {m.get('number') or i}"
+        source_blocks.append(
+            f"## Sub-chapter {i} — {title}\n"
+            f"(id {m['id']}; source {m['source_word_count']}w; "
+            f"target {m['target_word_count']}w)\n\n"
+            f"{src}"
+        )
+    merged_source = "\n\n---\n\n".join(source_blocks)
+
+    spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
+    spec_text = spec_path.read_text() if spec_path.exists() else ""
+
+    virtual_segment = {
+        "id": group_id,
+        "kind": "merged",
+        "title": f"merged: {' + '.join(member_ids)}",
+        "diegetic_status": "diegetic",
+        "role": "narrative",
+        "source_word_count": group["combined_source_word_count"],
+        "target_word_count": group["combined_target_word_count"],
+    }
+
+    prompt = load_prompt("draft_lean")
+    cached, body = prompt.render_blocks(
+        spec=spec_text,
+        book={"title": plan.get("title", book.book_id),
+              "author": plan.get("author", "?"),
+              "genre": book.metadata.get("genre", "unknown")},
+        segment=virtual_segment,
+        ceiling=int(round(virtual_segment["target_word_count"] * 1.2)),
+        segment_source=merged_source,
+        critic_feedback=None,
+        previous_draft=None,
+        merged_members=members,
+    )
+
+    default_model = prompt.config.get("model", "openai:gpt-5")
+    active_model = (os.environ.get("FORAGE_DRAFT_MODEL")
+                    or os.environ.get("FORAGE_MODEL")
+                    or default_model)
+    thinking = "max" if "opus" in active_model.lower() else None
+    max_out = max(prompt.config.get("max_tokens", 16000), 64000) if thinking \
+              else prompt.config.get("max_tokens", 32000)
+
+    resp = complete(
+        prompt=body, cached_prompt=cached,
+        model=default_model, system=prompt.system,
+        max_tokens=max_out,
+        temperature=prompt.config.get("temperature"),
+        cache=not cached, thinking=thinking,
+        work_dir=book.work_dir,
+        stage=f"draft:{book.book_id}:{group_id}",
+    )
+
+    # Cross-provider fallback (same logic as the per-segment drafter path)
+    if resp.stop_reason == "content_filter" and active_model.startswith("openai:"):
+        import sys as _sys
+        fallback_model = os.environ.get("FORAGE_DRAFT_FALLBACK_MODEL",
+                                        "anthropic:claude-sonnet-4-6")
+        print(f"[drafter] content_filter on {active_model}; "
+              f"retrying on {fallback_model}",
+              file=_sys.stderr, flush=True)
+        fb_thinking = "max" if "opus" in fallback_model.lower() else None
+        resp = complete(
+            prompt=body, cached_prompt=cached,
+            model=fallback_model, system=prompt.system,
+            max_tokens=64000 if fb_thinking else max_out,
+            temperature=prompt.config.get("temperature"),
+            cache=not cached, thinking=fb_thinking,
+            work_dir=book.work_dir,
+            stage=f"draft_fallback:{book.book_id}:{group_id}",
+        )
+
+    merged_draft = resp.text.strip()
+    # Preserve the raw merged output alongside per-chapter splits.
+    (seg_dir / f"{group_id}.md").write_text(merged_draft + "\n")
+
+    # Split on `## Chapter N` / `Chapter N` / `## Sub-chapter N` lines.
+    pieces = _re.split(
+        r"(?m)^(?:##\s*)?(?:Sub-)?Chapter\s*(\d+)\b[^\n]*$",
+        merged_draft)
+    bodies: dict[int, str] = {}
+    for i in range(1, len(pieces), 2):
+        try:
+            n = int(pieces[i])
+        except ValueError:
+            continue
+        bodies[n] = pieces[i + 1].strip() if i + 1 < len(pieces) else ""
+
+    for idx, m in enumerate(members, 1):
+        body_text = bodies.get(idx, "")
+        (seg_dir / f"{m['id']}.md").write_text(body_text + "\n")
+        draft_words = len(body_text.split())
+        _write_checks(seg_dir / f"{m['id']}.checks.json", m,
+                      source_words=m["source_word_count"],
+                      draft_words=draft_words,
+                      signature_hits=0, signature_misses=[],
+                      status="drafted" if draft_words > 0 else "error")
+
+
 def draft_segment(
     book: Book,
     plan: dict,
@@ -100,6 +239,21 @@ def draft_segment(
 
     seg_dir = book.work_dir / "segments"
     seg_dir.mkdir(parents=True, exist_ok=True)
+
+    # Group-aware initial drafting: if this segment belongs to a merged group
+    # AND we're not in a regen pass, route to _draft_group so all members of
+    # the group are drafted together (better compression on short adjacent
+    # chapters). Regen stays per-segment for now.
+    group_id = segment.get("group_id")
+    groups = plan.get("merged_groups") or {}
+    if group_id and group_id in groups and not critic_feedback:
+        existing = seg_dir / f"{segment_id}.md"
+        # If another member already triggered the group draft, just return a
+        # result describing the on-disk content without redoing LLM work.
+        if not existing.exists() or not existing.read_text().strip():
+            _draft_group(book, plan, group_id)
+        return _disk_draft_result(seg_dir, segment)
+
     source_path = segment_source_path(book, segment_id)
     if source_path is None:
         return DraftResult(

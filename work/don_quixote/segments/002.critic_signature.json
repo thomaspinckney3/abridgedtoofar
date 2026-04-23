@@ -5,49 +5,67 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "he said he would go with him to see what madmen there were in the house; so they went upstairs, and with them some of those who were present. Approaching a cage in which there was a furious madman, though just at that moment calm and quiet",
-      "source_locator": "madhouse story, approach to the cage",
+      "source_passage": "the curate, however, changing his original plan, which was to avoid touching upon matters of chivalry, resolved to test Don Quixote's recovery thoroughly, and see whether it were genuine or not",
+      "source_locator": "paragraph 3, transition to the Turk discussion",
       "draft_treatment": "flattened",
-      "why_it_matters": "The spatial staging—upstairs, the cage, the furious madman 'just at that moment calm and quiet'—gives the scene its theatrical and ironic texture; the draft collapses this into a bare summary, losing the carefully constructed visual irony.",
-      "suggested_fix": "Restore the upstairs procession, the cage detail, and the parenthetical 'though just at that moment calm and quiet' to preserve the scene's dramatic staging."
+      "why_it_matters": "The source makes explicit that the curate deliberately shifts strategy as a test—a narratively significant moment of psychological maneuvering that the draft compresses to a single clause, losing the deliberateness and the irony of the curate's duplicity.",
+      "suggested_fix": "Restore the narrator's explicit framing of the curate's change of plan as a deliberate test of recovery, keeping the phrase 'to test Don Quixote's recovery thoroughly, and see whether it were genuine or not.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "'I know I am cured,' returned the licentiate, 'and that I shall not have to go stations again.'",
-      "source_locator": "madhouse dialogue, after the naked madman's first challenge",
+      "source_passage": "Who was more virtuous and more valiant than the famous Amadis of Gaul?... as if they all had but one throat or were made of sugar paste?",
+      "source_locator": "Don Quixote's speech on the Turk, 'Is it any new thing for a single knight-errant'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'as if they all had but one throat or were made of sugar paste' is a distinctively comic, rhetorically vivid Cervantine simile that carries signature voice; the draft drops it entirely, flattening the comic energy of the passage.",
+      "suggested_fix": "Restore 'as if they all had but one throat or were made of sugar paste' after 'two hundred thousand men.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "our depraved age does not deserve to enjoy such a blessing as those ages enjoyed when knights-errant took upon their shoulders the defence of kingdoms, the protection of damsels, the succour of orphans and minors, the chastisement of the proud, and the recompense of the humble",
+      "source_locator": "Don Quixote's long speech after the barber's tale, paragraph beginning 'My only endeavour'",
       "draft_treatment": "absent",
-      "why_it_matters": "This brief exchange—especially 'go stations again'—is a distinctive colloquial idiom that anchors the licentiate's voice and the ironic comedy of the scene; its absence flattens a key moment in the dialogue.",
-      "suggested_fix": "Restore the licentiate's reply verbatim, including the idiomatic 'go stations again.'"
+      "why_it_matters": "This is a thematically central formulation of knight-errantry's social mission—the litany of 'defence of kingdoms, protection of damsels, succour of orphans and minors, chastisement of the proud, recompense of the humble'—which is critically recognized as expressing the idealistic heart of Don Quixote's worldview; its absence removes interpretive weight.",
+      "suggested_fix": "Restore the full litany immediately after 'not reviving in itself the happy time when the order of knight-errantry was in the field.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "it seems to me thou art precipitating thyself from the height of thy madness into the profound abyss of thy simplicity",
-      "source_locator": "curate's aside to himself, after Don Quixote's offer of advice to the king",
+      "source_passage": "no one now, issuing from the wood, penetrates yonder mountains, and then treads the barren, lonely shore of the sea—mostly a tempestuous and stormy one—and finding on the beach a little bark without oars, sail, mast, or tackling of any kind, in the intrepidity of his heart flings himself into it and commits himself to the wrathful billows of the deep sea, that one moment lift him up to heaven and the next plunge him into the depths",
+      "source_locator": "Don Quixote's speech comparing old and new knights, extended nautical passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft omits the dramatic rhythm of 'that one moment lift him up to heaven and the next plunge him into the depths' and 'opposing his breast to the irresistible gale' and 'three thousand leagues and more away'—sustained prosodic signature prose that establishes the romantic sublime of knight-errantry; the abbreviation strips the passage of its rhetorical power.",
+      "suggested_fix": "Restore the full nautical sequence including 'lift him up to heaven and the next plunge him into the depths,' 'opposing his breast to the irresistible gale,' and 'three thousand leagues and more away from the place where he embarked.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I can almost say I have with my own eyes seen Amadis of Gaul, who was a man of lofty stature, fair complexion, with a handsome though black beard, of a countenance between gentle and stern in expression, sparing of words, slow to anger, and quick to put it away from him",
+      "source_locator": "Don Quixote's reply to the curate's doubt about knights' reality",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The claim to have 'with my own eyes seen' Amadis is interpretively crucial—it marks the depth of Don Quixote's delusion or visionary sincerity—and the portrait's specific phrasing ('countenance between gentle and stern') is signature; the draft compresses it significantly, losing the rhetorical buildup ('which truth is so clear that') and the precise character description.",
+      "suggested_fix": "Restore 'which truth is so clear that I can almost say I have with my own eyes seen Amadis of Gaul' and the full portrait including 'of a countenance between gentle and stern in expression.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "He was a graduate of Osuna in canon law; but even if he had been of Salamanca, it was the opinion of most people that he would have been mad all the same.",
+      "source_locator": "Barber's tale, description of the licentiate",
       "draft_treatment": "fragment_preserved",
-      "why_it_matters": "This aside is one of the rhetorically sharpest lines in the chapter—a layered irony about the relationship between madness and simplicity. The draft preserves it verbatim, but buries it mid-paragraph without the theatrical separation ('said to himself') that gives it punch.",
-      "suggested_fix": "Set the curate's aside off as its own sentence or short paragraph to restore its rhetorical isolation and dramatic weight."
+      "why_it_matters": "The jibe at Osuna vs. Salamanca is a period joke about the relative prestige of universities; the draft preserves it verbatim, which is good, but the surrounding prose context (the licentiate's letters, the governor's warnings) is heavily compressed, reducing the comic texture of the tale.",
+      "suggested_fix": "No fix needed for this specific line, but ensure surrounding comic detail of the governor's repeated warnings to the chaplain is not fully elided."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "he was a graduate of Osuna in canon law; but even if he had been of Salamanca, it was the opinion of most people that he would have been mad all the same",
-      "source_locator": "barber's madhouse story, opening description of the licentiate",
-      "draft_treatment": "absent",
-      "why_it_matters": "The Osuna/Salamanca joke is a signature piece of Cervantine academic satire; its absence removes a layer of period-specific irony that has attracted critical comment.",
-      "suggested_fix": "Restore the parenthetical joke about Salamanca when introducing the graduate."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "no one now, issuing from the wood, penetrates yonder mountains, and then treads the barren, lonely shore of the sea",
-      "source_locator": "Don Quixote's lament for chivalry, the 'little bark' passage",
+      "source_passage": "poets are also called vates, that is to say diviners",
+      "source_locator": "Don Quixote on Ariosto and prophecy",
       "draft_treatment": "flattened",
-      "why_it_matters": "The source has 'issuing from the wood, penetrates yonder mountains, and then treads'—a three-beat spatial movement; the draft omits the mountains entirely, weakening the rhetorical climax of the peripatetic image.",
-      "suggested_fix": "Restore 'penetrates yonder mountains, and then treads' to preserve the three-stage journey that gives the sentence its cumulative force."
+      "why_it_matters": "The draft drops 'that is to say diviners,' a small but characteristic Cervantine gloss that shows Don Quixote's pedantic erudition; the full explanatory aside is part of the voice.",
+      "suggested_fix": "Restore 'that is to say diviners' after 'poets are also called vates.'"
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is broadly faithful and preserves all high-priority signatures, but suffers several medium-level voice flattenings—chiefly in the madhouse scene's staging and dialogue—and a handful of minor omissions; none rises to regeneration threshold."
+  "verdict": "regenerate",
+  "summary": "The draft preserves most narrative content but strips several medium-severity signature passages—the litany of knight-errantry's social mission, the comic 'sugar paste' simile, the full nautical sublime passage, and the precise Amadis portrait with its interpretive claim of eyewitness vision—producing four medium-severity findings that together trigger regeneration."
 }

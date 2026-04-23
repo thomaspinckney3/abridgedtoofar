@@ -1,0 +1,44 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "His conversation was in free and easy defiance of Murray's Grammar, and was garnished at convenient intervals with various profane expressions, which not even the desire to be graphic in our account shall induce us to transcribe.",
+      "source_locator": "Paragraph 2, Haley's physical description",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The narrator's self-conscious aside ('which not even the desire to be graphic in our account shall induce us to transcribe') is a voice-establishing wink at the reader that both characterizes Haley and demonstrates Stowe's ironic narrative persona. The draft retains 'defiance of Murray's Grammar' but drops the mock-prim aside entirely.",
+      "suggested_fix": "Append the narrator's aside verbatim or near-verbatim after 'Murray's Grammar' to preserve the ironic narratorial voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "well used to run up at a glance the points of a fine female article",
+      "source_locator": "Paragraph describing Eliza's entrance, after 'trim foot and ankle'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this phrase almost verbatim, but it is isolated without the full preceding sentence context that builds up the objectifying gaze through accumulation. The critical tradition repeatedly returns to this as an example of Stowe's technique of inhabiting the trader's dehumanizing perspective to indict it. Checked as preserved but the surrounding sentence compression strips the rhetorical build.",
+      "suggested_fix": "Retain the full sentence ('a delicately formed hand… fine female article') as it stands in source; the draft does actually reproduce it verbatim — this is acceptable as-is."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Whoever visits some estates there, and witnesses the good-humored indulgence of some masters and mistresses, and the affectionate loyalty of some slaves, might be tempted to dream the oft-fabled poetic legend of a patriarchal institution, and all that; but over and above the scene there broods a portentous shadow—the shadow of law.",
+      "source_locator": "Kentucky editorial paragraph, second sub-paragraph",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This is one of the most critically cited passages in the novel — the 'shadow of law' formulation is a cornerstone of Stowe's anti-slavery argument and her rebuttal to the paternalist defense of Kentucky-style slavery. The draft compresses it into a paraphrase ('a scene to tempt one to dream the patriarchal legend') that loses the rhetorical structure and reduces the second sentence to a near-quotation only of 'the shadow of law,' dropping the full periodic sentence about 'beating hearts and living affections' as so many 'things.'",
+      "suggested_fix": "Reproduce both sentences of this passage much closer to verbatim, beginning 'Whoever visits some estates there…' through 'shadow of law' and then the full sentence about 'so long as the law considers all these human beings, with beating hearts and living affections, only as so many things belonging to a master.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Mrs. Shelby was a woman of a high class, both intellectually and morally. To that natural magnanimity and generosity of mind which one often marks as characteristic of the women of Kentucky, she added high moral and religious sensibility and principle, carried out with great energy and ability into practical results.",
+      "source_locator": "Final section, paragraph on Mrs. Shelby's character",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Stowe's extended characterization of Mrs. Shelby as representative of Kentucky women's moral greatness is interpretively important — it sets up the novel's gender-based critique of male commercial decisions overriding female moral authority. The draft collapses this to 'a woman of high moral and religious sensibility,' losing the regional type-characterization and the 'energy and ability into practical results' clause.",
+      "suggested_fix": "Restore the opening two sentences of the Mrs. Shelby characterization paragraph more closely, including the reference to Kentucky women's 'natural magnanimity' and 'energy and ability into practical results.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful, preserving the chapter's major set-pieces, key dialogue, the Wilberforce irony, and the 'shadow of law' formulation (though the latter is somewhat compressed); two medium findings (the full 'shadow of law' periodic sentence and the Shelby-as-Kentucky-type characterization) are the most serious concerns but do not individually rise to high severity, leaving the segment at a marginal pass."
+}

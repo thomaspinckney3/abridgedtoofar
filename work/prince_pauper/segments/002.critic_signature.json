@@ -1,0 +1,17 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The higher the houses grew, the broader they grew.",
+      "source_locator": "paragraph 1, description of London streets",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a rhetorically distinctive chiastic/repetition sentence — prosodically signature and visually memorable; its removal slightly flattens the architectural description's voice.",
+      "suggested_fix": "Restore the sentence verbatim after the description of projecting storeys: 'The higher the houses grew, the broader they grew.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is a faithful, high-fidelity compression of the source, preserving all major signatures verbatim or near-verbatim, with only the minor omission of one rhetorically distinctive sentence ('The higher the houses grew, the broader they grew') that does not rise to regeneration level."
+}

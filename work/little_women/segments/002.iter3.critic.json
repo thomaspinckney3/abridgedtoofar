@@ -3,70 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "But I am afraid I don't; and Meg shook her head, as she thought regretfully of all the pretty things she wanted.",
-      "source_locator": "Meg's speech about sacrifices, after 'ought to do it gladly'",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Hugo died in agonies of remorse and arsenic, with a wild 'Ha! ha!'",
+      "source_locator": "rehearsal scene, after Hagar's incantation and before 'It's the best we've had yet'",
       "draft_treatment": "absent",
-      "why_it_matters": "This self-aware admission is a small but characteristic moment of ironic honesty that establishes Meg's vanity-vs-virtue tension; excising it flattens the speech into simple virtue-signaling rather than the ambivalent confession Alcott wrote.",
-      "suggested_fix": "Restore 'But I am afraid I don't;' and the clause about Meg's regretful thoughts after 'ought to do it gladly.'"
+      "why_it_matters": "This is one of the chapter's most distinctively comic lines—'remorse and arsenic' is prosodically and tonally singular, establishing Alcott's ironic narrative register and introducing Jo as a melodrama-loving writer. Its absence erases a primary voice-signature moment.",
+      "suggested_fix": "Restore the full rehearsal passage: 'Don Pedro defied the world in a speech of two pages… Hugo died in agonies of remorse and arsenic, with a wild \"Ha! ha!\"'"
     },
     {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "I can't help it; I never saw any one faint, and I don't choose to make myself all black and blue, tumbling flat as you do. If I can go down easily, I'll drop; if I can't, I shall fall into a chair and be graceful; I don't care if Hugo does come at me with a pistol",
-      "source_locator": "Rehearsal scene, Amy's reply to Jo's direction",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"I don't see how you can write and act such splendid things, Jo. You're a regular Shakespeare!\" exclaimed Beth",
+      "source_locator": "after the rehearsal, before Jo's Macbeth parody",
       "draft_treatment": "absent",
-      "why_it_matters": "This is Amy's most comic and voice-distinctive speech in the chapter, showing her particular brand of self-important logic; it is entirely replaced by a one-clause summary ('Amy, ",
-      "poker,": "ould not contrive a good faint'), erasing both her comic voice and the interpretive detail that she is 'not gifted with dramatic power.'",
-      "suggested_fix": "Restore Amy's speech verbatim or near-verbatim; it is short enough to include without budget strain and is the primary comic set-piece of the rehearsal."
+      "why_it_matters": "Beth's 'regular Shakespeare' line and Jo's Macbeth parody ('Is that a dagger that I see before me?') are critical for establishing Jo's identity as an aspiring writer-actress; this is the first major signal of her literary ambition in the novel and is critically noted.",
+      "suggested_fix": "Restore Beth's Shakespeare exclamation and Jo's modest reply, plus the Macbeth quotation and the toasting-fork punchline, as these are interpretive keystones for Jo's character arc."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "I used to be so frightened when it was my turn to sit in the big chair with the crown on, and see you all come marching round to give the presents, with a kiss.",
-      "source_locator": "Birthday-memory exchange, after Jo proposes putting gifts on the table",
+      "source_passage": "\"No, it's the toasting fork, with mother's shoe on it instead of the bread. Beth's stage-struck!\" cried Meg, and the rehearsal ended in a general burst of laughter.",
+      "source_locator": "end of rehearsal scene",
       "draft_treatment": "absent",
-      "why_it_matters": "Beth's shy confession is a small but well-known character-establishing moment (paired with the chapter's illustration) that shows her gentle timidity; the draft skips the entire exchange and moves directly to the shopping plan.",
-      "suggested_fix": "Restore Beth's birthday-chair speech after Jo's 'Don't you remember how we used to do on our birthdays?' line."
+      "why_it_matters": "The punchline that closes the rehearsal is the comic payoff of the entire scene; without it, the scene's tonal arc is severed and the chapter loses a characteristic Alcott comic deflation.",
+      "suggested_fix": "Restore the toasting-fork punchline as the scene's closing beat."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "for he told me to take special care of mother while he was gone.",
-      "source_locator": "Jo's 'man of the family' speech, after 'I shall provide the slippers'",
+      "source_passage": "she was not elegantly dressed, but a noble-looking woman… 'Well, dearies, how have you got on to-day? There was so much to do, getting the boxes ready to go to-morrow, that I didn't come home to dinner. Has any one called, Beth? How is your cold, Meg? Jo, you look tired to death. Come and kiss me, baby.'",
+      "source_locator": "Marmee's entrance, after actors and audience turn to welcome her",
       "draft_treatment": "absent",
-      "why_it_matters": "The clause 'for he told me to take special care of mother while he was gone' is the emotional and thematic justification for Jo's claim of paternal authority; without it, Jo's assertion sounds like mere bravado rather than a charge from her absent father.",
-      "suggested_fix": "Restore the full sentence: '...and I shall provide the slippers, for he told me to take special care of mother while he was gone.'"
+      "why_it_matters": "Marmee's specific maternal inquiries ('How is your cold, Meg? Jo, you look tired to death. Come and kiss me, baby') are voice-defining for her character and establish the warmth-register of the novel's domestic world; the draft replaces them with a vague paraphrase ('happy little inquiries').",
+      "suggested_fix": "Restore Marmee's spoken greeting verbatim or near-verbatim; the specific details ('tired to death,' 'Come and kiss me, baby') are character-establishing."
     },
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "for the girls never grew too old for that familiar lullaby.",
-      "source_locator": "Final paragraph, closing sentence of the chapter",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "Alcott's closing sentence ('the girls never grew too old for that familiar lullaby') is the chapter's thematic capstone—childhood permanence against the pressures of growing up—a motif running throughout the chapter. The draft substitutes 'as the little pilgrims went to sleep,' which is thematically thinner and loses the emotional resonance of the original closing.",
-      "suggested_fix": "Restore 'for the girls never grew too old for that familiar lullaby' as the chapter's final clause."
-    },
-    {
-      "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "she never seemed to know what to do with her long limbs, which were very much in her way.",
-      "source_locator": "Character sketches, Jo's description",
-      "draft_treatment": "absent",
-      "why_it_matters": "The 'colt' simile survives but the explanatory clause that gives it its comic specificity is dropped; this slightly reduces the vividness of the novel's most iconic character description.",
-      "suggested_fix": "Add 'for she never seemed to know what to do with her long limbs, which were very much in her way' after the colt comparison."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "It didn't matter so much when you were a little girl; but now you are so tall, and turn up your hair, you should remember that you are a young lady.",
-      "source_locator": "Meg's lecture to Jo, after 'leave off boyish tricks'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This clause is what provokes Jo's explosive counter-speech ('I'm not!') and makes the dialogue's cause-and-effect clear; its absence makes Jo's outburst feel slightly unmotivated.",
-      "suggested_fix": "Restore Meg's full lecture sentence before Jo's rebuttal."
+      "source_passage": "the mother was a born singer. The first sound in the morning was her voice, as she went about the house singing like a lark; and the last sound at night was the same cheery sound, for the girls never grew too old for that familiar lullaby.",
+      "source_locator": "closing paragraph of chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'born singer' / 'singing like a lark' coda is the chapter's closing grace-note, establishing Marmee's musical presence as a motif running through the novel; the draft collapses it to 'their mother's voice… the same cheery lullaby,' losing the lark image and the 'born singer' characterization.",
+      "suggested_fix": "Restore 'the mother was a born singer… singing like a lark' and 'the girls never grew too old for that familiar lullaby' to preserve the chapter's closing cadence."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's major set-pieces and verbatim letter but drops or summarizes four medium-weight passages—Amy's comic rehearsal speech, Beth's birthday-chair confession, Jo's paternal mandate for the slippers, and the chapter's thematic closing line—triggering regeneration."
+  "summary": "The draft's most serious failure is the near-total erasure of the comic rehearsal sequence—including 'Hugo died in agonies of remorse and arsenic,' Beth's 'regular Shakespeare,' Jo's Macbeth parody, and the toasting-fork punchline—removing the chapter's primary signature comedy and the first major signal of Jo's literary ambition; secondary losses include Marmee's specific maternal greeting and the 'born singer / singing like a lark' closing motif."
 }

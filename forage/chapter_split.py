@@ -51,6 +51,12 @@ class SplitConfig:
     gutenberg_start: str = r"\*\*\*\s*START OF.*?\*\*\*"
     gutenberg_end: str = r"\*\*\*\s*END OF.*?\*\*\*"
 
+    # TOC-removal algorithm. "keep_last" (default) handles books where the
+    # TOC repeats the chapter-body heading text verbatim. "block_run" is
+    # for multi-part books whose chapter numbering repeats across parts
+    # (e.g. Don Quixote). See `_drop_toc_*` implementations.
+    toc_algorithm: str = "keep_last"
+
     # Regex patterns for structural headings. Each must capture (number, title)
     # where number can be None. Flags: MULTILINE so ^/$ match line boundaries.
     # Leading whitespace tolerated (some books indent headings).
@@ -151,7 +157,7 @@ def split_book(source: str, config: SplitConfig | None = None) -> list[Chapter]:
 
     stripped, strip_offset = _strip_gutenberg(source, config)
     matches = _find_heading_matches(stripped, config)
-    matches = _drop_toc(matches)
+    matches = _drop_toc(matches, algorithm=config.toc_algorithm)
 
     chapters: list[Chapter] = []
     for i, m in enumerate(matches):
@@ -274,37 +280,31 @@ def _find_heading_matches(text: str, config: SplitConfig) -> list[dict[str, Any]
     return hits
 
 
-def _drop_toc(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """TOC entries are duplicates of real content headings — the same text
-    appears once in the TOC and again at the real chapter. Keep only the
-    LAST occurrence of each heading (normalized by whitespace + case).
+_TOC_MIN_RUN = 3
 
-    After dedup, apply a gap-based safety filter: if any surviving match is
-    separated from both its neighbors by less than the real-content
-    threshold, drop it as a likely mention-in-text (e.g., a cross-reference
-    inside a chapter body, not a real heading).
+
+def _drop_toc_keep_last(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Default TOC filter: keep-last dedup + both-sides-tight safety.
+
+    Works on the common pattern where each TOC entry's heading text is
+    repeated verbatim at the real chapter body. Breaks on books that have
+    identical heading text in two distinct body locations (e.g. a two-part
+    novel whose Part I and Part II chapters share "CHAPTER I."). For those,
+    set `"toc_algorithm": "block_run"` in the book's split_config.json.
     """
     if not matches:
         return matches
 
     def _norm(s: str) -> str:
-        # Strip punctuation too, so "EXTRACTS." == "EXTRACTS" and
-        # "EXTRACTS (Supplied by a Sub-Sub-Librarian)." ==
-        # "EXTRACTS. (Supplied by a Sub-Sub-Librarian)."
         s = re.sub(r"[^A-Za-z0-9\s]", " ", s)
         return re.sub(r"\s+", " ", s).strip().upper()
 
-    # Keep last occurrence per normalized heading.
     seen_last: dict[str, int] = {}
     for i, m in enumerate(matches):
-        key = _norm(m["raw"])
-        seen_last[key] = i
+        seen_last[_norm(m["raw"])] = i
     kept = [matches[i] for i in sorted(seen_last.values())]
 
-    # Safety filter: drop any match tightly surrounded on both sides
-    # (possibly a chapter-cross-reference inside prose, not a real heading).
-    # Parts are exempt — they're expected to be followed closely by their
-    # first child chapter, which would otherwise make gap_next tiny.
+    # Safety filter: drop any match tightly surrounded on both sides.
     safe: list[dict[str, Any]] = []
     for i, m in enumerate(kept):
         if m.get("kind") == "part":
@@ -316,6 +316,54 @@ def _drop_toc(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
             continue
         safe.append(m)
     return safe
+
+
+def _drop_toc_block_run(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Alternative TOC filter for books with repeated chapter numbering
+    across multi-part structures (Don Quixote).
+
+    Finds runs of consecutive matches whose adjacent gaps are all under
+    MIN_REAL_CHAPTER_GAP_CHARS. Drops any run of length ≥ _TOC_MIN_RUN.
+    Correctly keeps both Part I and Part II body chapters of a two-part
+    novel because their bodies are separated by thousands of chars of
+    prose, but drops the TOC block where they're packed tightly.
+
+    Failure mode: loses the first chapter body of any book whose TOC ends
+    with no gap before the first body heading (Call of the Wild, Gatsby,
+    etc.). Use `_drop_toc_keep_last` by default; opt into this via
+    split_config.json only for books where keep-last fails.
+    """
+    if not matches:
+        return matches
+    n = len(matches)
+
+    is_toc = [False] * n
+    i = 0
+    while i < n:
+        j = i
+        while j + 1 < n:
+            gap = matches[j + 1]["start"] - matches[j]["end"]
+            if gap >= MIN_REAL_CHAPTER_GAP_CHARS:
+                break
+            j += 1
+        if j - i + 1 >= _TOC_MIN_RUN:
+            for k in range(i, j + 1):
+                is_toc[k] = True
+        i = j + 1
+
+    return [m for idx, m in enumerate(matches) if not is_toc[idx]]
+
+
+_TOC_ALGORITHMS = {
+    "keep_last": _drop_toc_keep_last,
+    "block_run": _drop_toc_block_run,
+}
+
+
+def _drop_toc(matches: list[dict[str, Any]],
+              algorithm: str = "keep_last") -> list[dict[str, Any]]:
+    fn = _TOC_ALGORITHMS.get(algorithm, _drop_toc_keep_last)
+    return fn(matches)
 
 
 def _extract_title_from_next_lines(text: str, after_offset: int,

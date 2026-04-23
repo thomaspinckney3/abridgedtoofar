@@ -1,0 +1,62 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the huge stone gateway, with its gilded bars and its magnificent array of colossal granite lions, and other the signs and symbols of English royalty. Was the desire of his soul to be satisfied at last? Here, indeed, was a king's palace. Might he not hope to see a prince now--a prince of flesh and blood, if Heaven were willing?",
+      "source_locator": "paragraph 2, Tom approaching Westminster",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The rhetorical questions culminating in 'a prince of flesh and blood, if Heaven were willing?' carry interpretive weight—they establish Tom's dreamlike yearning as almost religious longing. The draft drops 'if Heaven were willing' and 'a prince of flesh and blood,' flattening the devotional register.",
+      "suggested_fix": "Restore 'a prince of flesh and blood, if Heaven were willing?' verbatim in the closing question of the Westminster approach paragraph."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tom's breath came quick and short with excitement, and his eyes grew big with wonder and delight. Everything gave way in his mind instantly to one desire: that was to get close to the prince, and have a good, devouring look at him.",
+      "source_locator": "paragraph after prince description, before Tom presses face to bars",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence—especially 'a good, devouring look'—is stylistically distinctive and establishes Tom's consuming, almost physical hunger for royal spectacle. Its loss flattens the transition from wonder to action.",
+      "suggested_fix": "Insert the full sentence before 'Tom pressed his face against the bars,' preserving 'devouring look' as that phrase is the signature element."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'Tis an odd one. Where dost live?… Offal Court! Truly 'tis another odd one. Hast parents?",
+      "source_locator": "dialogue exchange, first questions after Tom eats",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The prince's repeated comic reactions—''Tis an odd one' / 'Truly 'tis another odd one'—establish his dry, ironic register and are small but period-flavored voice markers. The draft omits both responses entirely.",
+      "suggested_fix": "Restore the prince's brief interjections ''Tis an odd one' and 'Offal Court! Truly 'tis another odd one.' between the exchanges."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "\"Fathers be alike, mayhap. Mine hath not a doll's temper. He smiteth with a heavy hand, yet spareth me: he spareth me not always with his tongue, though, sooth to say.\"",
+      "source_locator": "mid-dialogue, prince speaking of his own father Henry VIII",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is an interpretively critical passage: the prince's candid admission that his royal father also beats and demeans him establishes the moral equivalence between the two boys' worlds—a thematic keystone of the book. The draft reproduces the line but omits 'he spareth me not always with his tongue, though, sooth to say,' losing the tongue-lashing nuance.",
+      "suggested_fix": "Restore the full speech including 'he spareth me not always with his tongue, though, sooth to say' to preserve the thematic parallel."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "We dance and sing about the Maypole in Cheapside; we play in the sand, each covering his neighbour up; and times we make mud pastry--oh the lovely mud, it hath not its like for delightfulness in all the world!--we do fairly wallow in the mud, sir, saving your worship's presence.",
+      "source_locator": "Tom describing Offal Court pleasures, just before the crown exchange",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The parenthetical exclamation 'oh the lovely mud, it hath not its like for delightfulness in all the world!' is tonally and rhetorically distinctive—Tom's naive rapture in it is the comic and poignant peak of the exchange. The draft reduces this to a bare summary ('wallowing in lovely mud'), erasing the signature voice.",
+      "suggested_fix": "Restore Tom's verbatim speech on the mud, including the exclamatory aside, rather than summarizing the list of Offal Court pleasures."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "The prince picked himself out of the mud, and made fiercely at the sentry, shouting—",
+      "source_locator": "near end, after the prince is boxed on the ear",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft says 'The prince sprang up from the mud,' losing the specific image of him 'picking himself out of the mud' and 'made fiercely at the sentry'—the physicality and the charge at the soldier are part of the scene's comedy and pathos.",
+      "suggested_fix": "Use 'picked himself out of the mud, and made fiercely at the sentry' instead of the compressed version."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the skeleton of the chapter but loses several medium-weight voice and interpretive passages—Tom's 'devouring look,' the prince's doubled comic reactions to odd names, the full mud-rapture speech, and the tongue/temper nuance about Henry VIII—amounting to four medium-severity findings that together trigger regeneration."
+}

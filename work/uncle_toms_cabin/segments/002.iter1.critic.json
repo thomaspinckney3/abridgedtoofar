@@ -1,0 +1,53 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "There was something so piquant and original in these elucidations of humanity, that Mr. Shelby could not help laughing in company. Perhaps you laugh too, dear reader; but you know humanity comes out in a variety of strange forms now-a-days, and there is no end to the odd things that humane people will say and do.",
+      "source_locator": "paragraph after Haley's 'humanity, sir, I may say, is the great pillar of my management' speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This is the narrator's direct address to the reader—a signature ironic aside that establishes the novel's satirical moral framework and is a canonical example of Stowe's rhetorical method. The draft collapses it to 'half in disgust, half in bitter amusement, found himself laughing with this piquant parody of virtue,' entirely erasing the 'dear reader' apostrophe and the pointed irony about 'humanity comes out in a variety of strange forms.'",
+      "suggested_fix": "Restore the narrator's direct address verbatim or near-verbatim: 'Perhaps you laugh too, dear reader; but you know humanity comes out in a variety of strange forms now-a-days, and there is no end to the odd things that humane people will say and do.' This is a voice-establishing moment that must not be paraphrased away."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "the trader leaned back in his chair, and folded his arms, with an air of virtuous decision, apparently considering himself a second Wilberforce.",
+      "source_locator": "end of Haley's long speech about the 'ravin' mad' woman in Orleans",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Wilberforce comparison is one of the most famous and critically noted lines in the chapter—a bitterly ironic juxtaposition of the slave-trader with the great abolitionist that encapsulates Stowe's satirical method. Its complete absence is a significant signature loss.",
+      "suggested_fix": "Restore the concluding image: 'the trader leaned back in his chair, and folded his arms, with an air of virtuous decision, apparently considering himself a second Wilberforce.' It should follow the 'always best to do the humane thing' line."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Well, I've got just as much conscience as any man in business can afford to keep,—just a little, you know, to swear by, as 't were",
+      "source_locator": "Haley's reply after Shelby says 'you would, Haley, if you had any conscience'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Haley's most quotable and rhetorically distinctive lines—the 'conscience as any man in business can afford to keep' formulation is a sharp satirical epigram on commercial morality that critics return to repeatedly. The draft skips it entirely, moving straight to Haley pressing for a 'boy or gal.'",
+      "suggested_fix": "Insert Haley's conscience line before his request for 'a boy or gal to throw in': restore 'just as much conscience as any man in business can afford to keep,—just a little, you know, to swear by.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "well used to run up at a glance the points of a fine female article",
+      "source_locator": "description of Haley appraising Eliza on her entrance",
+      "draft_treatment": "absent",
+      "why_it_matters": "This phrase—'run up at a glance the points of a fine female article'—is interpretively critical: it frames Haley's gaze in the language of livestock appraisal, a signature moment of Stowe's technique of making the dehumanizing logic of slavery explicit. The draft describes his 'bold admiration' but loses the commodity-language entirely.",
+      "suggested_fix": "Restore the specific phrase in describing Haley's appraisal of Eliza: 'a delicately formed hand and a trim foot and ankle were items of appearance that did not escape the quick eye of the trader, well used to run up at a glance the points of a fine female article.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "in fact, if not exactly a believer in the doctrine of the efficiency of the extra good works of saints, he really seemed somehow or other to fancy that his wife had piety and benevolence enough for two—to indulge a shadowy expectation of getting into heaven through her superabundance",
+      "source_locator": "narrator's characterization of Mrs. Shelby near the end",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full ironic-theological formulation about Mr. Shelby's 'shadowy expectation of getting into heaven through her superabundance of qualities to which he made no particular pretension' is a voice-establishing passage of Stowe's dry comedy. The draft truncates it to just 'getting into heaven through her superabundance,' stripping the carefully qualified theology.",
+      "suggested_fix": "Restore the full formulation including 'the doctrine of the efficiency of the extra good works of saints' and 'qualities to which he made no particular pretension' to preserve the ironic register."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft loses two high-severity signatures—the famous 'dear reader' apostrophe on humanity and the Wilberforce comparison—plus three medium-severity voice-flattening losses (the conscience-in-business epigram, the livestock-appraisal gaze on Eliza, and the theological irony about Mrs. Shelby), collectively erasing the chapter's defining satirical voice."
+}

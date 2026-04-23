@@ -1,0 +1,53 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "intoxicated with the success of truthfulness",
+      "source_locator": "after 'Or I might just have hit upon it by chance,' continued Tuppence",
+      "draft_treatment": "absent",
+      "why_it_matters": "This short phrase is a characteristic Christiean comic-ironic aside that crystallises the chapter's central joke—Tuppence bluffing through pure accidental truth—and is rhetorically distinctive enough to be signature voice material.",
+      "suggested_fix": "Restore the phrase verbatim: 'continued Tuppence, intoxicated with the success of truthfulness.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Life,",
+      "is full of surprises.": "source_locator\": \"after Whittington says 'Thought you were quite a meek little kid with just enough brains for my purpose.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a brief, perfectly pitched comic aphorism in Tuppence's voice—the ironic 'moralized' tag is the joke—and it is the kind of throwaway line Christie's narration is famous for; its omission flattens the exchange.",
+      "suggested_fix": "Restore verbatim: '\"Life,\" moralized Tuppence, \"is full of surprises.\"'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the last five words took Tuppence's fancy mightily, especially after a meagre breakfast and a supper of buns the night before. Her present part was of the adventuress rather than the adventurous order",
+      "source_locator": "after Whittington says 'How much do you know? And how much do you want?'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft keeps 'adventuress rather than adventurous' but drops the crucial comic motivation clause ('especially after a meagre breakfast and a supper of buns the night before'), which grounds the comedy in economic reality and is a classic Christie ironic aside.",
+      "suggested_fix": "Restore the phrase: 'mightily, especially after a meagre breakfast and a supper of buns the night before.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "She looked particularly small and demure this morning. She sat there meekly with downcast eyes whilst Mr. Whittington sorted and rustled amongst his papers.",
+      "source_locator": "after 'Sit down, will you?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft compresses to a single clause ('while he rustled among papers'), losing 'meekly with downcast eyes'—the deliberate performance of demureness that characterises Tuppence's conscious act and prefigures her sudden reversal.",
+      "suggested_fix": "Add: 'She sat there meekly with downcast eyes whilst Whittington sorted and rustled among his papers.'"
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Tuppence paused a moment to admire her own ingenuity, and then said softly: 'I shouldn't like to contradict you, Mr. Whittington.'",
+      "source_locator": "after Whittington says 'you know a great deal more than you're willing to admit.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The self-admiring pause and the softly ironic line are characterising beats for Tuppence; their removal slightly flattens the cat-and-mouse rhythm of the exchange, though the severity is low given the surrounding material is preserved.",
+      "suggested_fix": "Restore the beat: 'Tuppence paused a moment to admire her own ingenuity. \"I shouldn't like to contradict you, Mr. Whittington,\" she said softly.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; two medium-severity voice flattenings (the 'intoxicated with the success of truthfulness' aside and the 'Life is full of surprises' aphorism are both absent) and one partial medium loss of a comic motivation clause fall just short of the three-medium regeneration threshold, but the draft is noticeably thinner in Christie's ironic register at these points."
+}

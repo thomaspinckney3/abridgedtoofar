@@ -1,0 +1,44 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The shroud of night hung over the forest. The gravel road wound through it, and up and over the short hills. Distant lights spoke of a small town, but nothing like the city I knew.",
+      "source_locator": "paragraph after Blake opens the canvas for the first time",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'but nothing like the city I knew' is an interpretive beat — it's Miriam orienting herself geographically and emotionally, establishing how far she is from home. The draft compresses this to 'distant lights blinked from a small town,' losing the comparative and the narrator's interiority entirely.",
+      "suggested_fix": "Restore the comparative clause: 'Distant lights spoke of a small town — nothing like the city I knew.' It is brief but carries real interpretive weight."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "A terrible hush fell over us as he marched back to the front. The truck started forward down the gravel road.",
+      "source_locator": "paragraph immediately after Blake drops the canvas and walks away (first stop)",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The source carries this sentence in direct sequence with Blake's line about 'bedding them,' making the silence a direct emotional consequence of that threat. The draft preserves the sentence but omits Blake's preceding line entirely ('The lords don't like loud women unless they're bedding them'), which is the key piece of menace that gives the 'terrible hush' its weight.",
+      "suggested_fix": "Restore Blake's line about the lords before the hush sentence so the silence lands with its intended menace."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "What do you want with us?' the woman beside me questioned him. Blake chuckled. 'You'll see. We should be there in a little bit, and then you'd better keep your mouths shut. The lords don't like loud women unless they're bedding them.'",
+      "source_locator": "during Blake's first appearance at the truck rear",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exchange is the first explicit statement of sexual threat in the chapter and defines the stakes for all five women. 'The lords don't like loud women unless they're bedding them' is the chapter's clearest piece of menacing dialogue and cannot be omitted without thinning the threat register.",
+      "suggested_fix": "Reinstate the question and Blake's full reply, including the 'bedding them' line, before the canvas is dropped and the terrible hush falls."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Blake snorted. The noise even sounded piggish.",
+      "source_locator": "during Blake's first truck-rear appearance",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this sentence verbatim, which is good. However, in the source it follows the exchange about releasing Mascara-face; in the draft the preceding dialogue is cut, slightly weakening the comedic-menacing rhythm the line depends on.",
+      "suggested_fix": "No fix needed for this line itself; fixing the surrounding dialogue (see above) will restore its full effect."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft omits Blake's sexually threatening 'bedding them' line—the chapter's first explicit statement of peril—and loses the narrator's orienting 'nothing like the city I knew' observation, constituting two medium-severity voice/interpretive failures that together cross the regeneration threshold."
+}

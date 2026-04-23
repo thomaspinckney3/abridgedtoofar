@@ -1,0 +1,35 @@
+{
+  "segment_id": "005",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Much was I disappointed upon learning that the little packet for Nantucket had already sailed",
+      "source_locator": "paragraph 1",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "Minor omission: the draft drops the framing paragraph about 'most young candidates for the pains and penalties of whaling' stopping at New Bedford, which establishes Ishmael's self-aware voice positioning himself against the norm.",
+      "suggested_fix": "Restore the opening sentence of paragraph 2 ('As most young candidates for the pains and penalties of whaling stop at this same New Bedford') as it establishes the narrator's ironic self-positioning."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It was a very dubious-looking, nay, a very dark and dismal night, bitingly cold and cheerless.",
+      "source_locator": "paragraph 3",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft drops 'a very dubious-looking, nay,' — the self-correcting, escalating rhetoric is a signature Melville voice move; 'nay' is the pivot that gives the sentence its rhetorical personality.",
+      "suggested_fix": "Restore 'a very dubious-looking, nay,' before 'a very dark and dismal night' to preserve the characteristic self-correcting rhetorical gesture."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "heard a forlorn creaking in the air; and looking up, saw a swinging sign over the door with a white painting upon it, faintly representing",
+      "source_locator": "paragraph before 'Coffin?—Spouter?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft omits 'heard a forlorn creaking in the air' — a small but atmospheric detail that contributes to the gothic mood-building sequence leading to the Spouter Inn's introduction.",
+      "suggested_fix": "Restore 'heard a forlorn creaking in the air; and' before 'looking up, saw a swinging sign' to preserve the sensory atmosphere."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful, preserving all major signature passages including the Nantucket-as-Tyre passage, the Ishmael self-address, the Black Parliament scene, the Euroclydon digression, and the Lazarus/Dives extended metaphor verbatim; only minor voice flattening in two small rhetorical gestures and one dropped contextual paragraph."
+}

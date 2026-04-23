@@ -1,0 +1,44 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The traveller in the south must often have remarked that peculiar air of refinement, that softness of voice and manner, which seems in many cases to be a particular gift to the quadroon and mulatto women.",
+      "source_locator": "Paragraph 2, opening of the ethnographic digression",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The narratorial address to 'the traveller in the south' is a distinctive voice-establishing move — it positions the narrator as eye-witness sociologist and implicates the reader's assumed experience. The draft collapses this into a bare descriptor, erasing the rhetorical frame.",
+      "suggested_fix": "Restore the full sentence opening 'The traveller in the south must often have remarked…' to preserve the narrator's sociological voice and the reader-implicating address."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "These natural graces in the quadroon are often united with beauty of the most dazzling kind, and in almost every case with a personal appearance prepossessing and agreeable.",
+      "source_locator": "Paragraph 2, second sentence of the ethnographic digression",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This sentence extends the narrator's deliberate socio-ethnographic register, a sustained analytical voice that is interpretively significant as the narrator positions Eliza within a racialized aesthetic framework. The draft fuses it into 'dazzling beauty,' losing both the rhetorical rhythm and the sociological framing.",
+      "suggested_fix": "Retain the two-sentence ethnographic digression in close to its original phrasing before the Eliza-specific application."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "this same gentleman, having heard of the fame of George's invention, took a ride over to the factory, to see what this intelligent chattel had been about. He was received with great enthusiasm by the employer, who congratulated him on possessing so valuable a slave.",
+      "source_locator": "Paragraph after George's introduction as factory worker, before the factory tour scene",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'so valuable a slave' delivered with deadpan narratorial irony — congratulating an owner on his chattel — is a signature moment of Stowe's satirical narrator voice. The draft absorbs it into a neutral summary, dropping the irony entirely.",
+      "suggested_fix": "Restore the sentence 'He was received with great enthusiasm by the employer, who congratulated him on possessing so valuable a slave' to keep the satirical irony intact."
+    },
+    {
+      "severity": "low",
+      "class": "other",
+      "source_passage": "And so fell George's last hope;—nothing before him but a life of toil and drudgery, rendered more bitter by every little smarting vexation",
+      "source_locator": "Penultimate paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source reads 'rendered more bitter by every little smarting vexation and indignity'; the draft drops 'rendered more bitter by every little' and substitutes 'sharpened by every smarting,' weakening the accumulative bitterness the original phrasing conveys.",
+      "suggested_fix": "Restore 'rendered more bitter by every little smarting vexation and indignity' verbatim."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves the most critical verbatim passages (the transfixed George scene, the closing jurist epigram, the wedding scene, and the 'man could not become a thing' line), but it flattens the narrator's distinctive sociological voice in the opening ethnographic digression and loses the deadpan irony of 'so valuable a slave'; three medium findings, no high-severity losses."
+}

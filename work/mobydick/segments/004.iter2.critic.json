@@ -5,58 +5,67 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "But look! here come more crowds, pacing straight for the water, and seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land",
-      "source_locator": "paragraph 4, before 'No. They must get just as nigh'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The exclamatory voice — 'But look!' and 'Strange!' — is Ishmael's rhetoric at its most animated; the draft jumps straight to 'They must get just as nigh the water' without this rhetorical build-up, erasing the narrator's characteristic performative urgency.",
-      "suggested_fix": "Restore 'But look! here come more crowds, pacing straight for the water, and seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land; loitering under the shady lee of yonder warehouses will not suffice. No.' before 'They must get just as nigh the water.'"
+      "source_passage": "seemingly bound for a dive. Strange! Nothing will content them but the extremest limit of the land",
+      "source_locator": "paragraph 4, opening clause",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'seemingly bound for a dive' is excised from the draft, removing the comic-surreal edge of Ishmael's observation; the crowd's near-suicidal momentum toward water is a minor but voice-distinctive beat.",
+      "suggested_fix": "Restore 'and seemingly bound for a dive' before 'Strange!'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Why did the poor poet of Tennessee, upon suddenly receiving two handfuls of silver, deliberate whether to buy him a coat, which he sadly needed, or invest his money in a pedestrian trip to Rockaway Beach?",
-      "source_locator": "paragraph 6 (water/Narcissus paragraph), mid-series of rhetorical questions",
-      "draft_treatment": "absent",
-      "why_it_matters": "This eccentric, comic rhetorical question is one of the most distinctively Melvillean asides in the chapter — it establishes Ishmael's digressive, humorous voice and the bathos of the water-obsession argument. Its omission flattens the rhetorical texture.",
-      "suggested_fix": "Restore the Tennessee poet question in the sequence of rhetorical questions between 'Would you travel your thousand miles to see it?' and 'Why is almost every robust healthy boy.'"
+      "source_passage": "Once more. Say you are in the country; in some high land of lakes. Take almost any path you please… There is magic in it.",
+      "source_locator": "paragraph 5, opening sentences",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Once more' is a rhetorical pivot that signals Ishmael's accumulating, sermon-like argument; 'There is magic in it' is a brief but resonant sentence the critical tradition notes as encapsulating the chapter's central claim. Both are dropped.",
+      "suggested_fix": "Restore the 'Once more.' opener and the sentence 'There is magic in it.' after the pool-in-the-stream clause."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Why did the old Persians hold the sea holy? Why did the Greeks give it a separate deity, and own brother of Jove?",
-      "source_locator": "paragraph 6, in the series of rhetorical questions before the Narcissus passage",
-      "draft_treatment": "absent",
-      "why_it_matters": "These questions situate the water-obsession in a cosmic, mythological register that directly prepares for the Narcissus allegory; their removal weakens the interpretive bridge to 'the ungraspable phantom of life.'",
-      "suggested_fix": "Restore the Persian/Greek rhetorical questions before 'Surely all this is not without meaning.'"
+      "source_passage": "There stand his trees, each with a hollow trunk, as if a hermit and a crucifix were within; and here sleeps his meadow, and there sleep his cattle",
+      "source_locator": "paragraph 6, the artist/Saco passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The hermit-and-crucifix detail and the careful triplet of sleeping meadow/cattle are dropped; the draft gives 'There stand his trees; and here sleeps his meadow,' losing the gothic-pastoral texture that makes this painterly set-piece distinctive.",
+      "suggested_fix": "Restore 'each with a hollow trunk, as if a hermit and a crucifix were within' and 'and there sleep his cattle' to match the source's accumulative rhythm."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "for to go as a passenger you must needs have a purse, and a purse is but a rag unless you have something in it",
-      "source_locator": "paragraph 8, opening of the 'not as a passenger' section",
+      "source_passage": "considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven.",
+      "source_locator": "paragraph on paying vs. being paid",
       "draft_treatment": "absent",
-      "why_it_matters": "This is characteristic Ishmael wit — the mock-logical, deflating aside — and it also closes the circle back to 'little or no money in my purse' from the opening sentence, a structural as well as tonal signature.",
-      "suggested_fix": "Restore 'For to go as a passenger you must needs have a purse, and a purse is but a rag unless you have something in it. Besides, passengers get sea-sick—' before the abbreviated passenger list."
+      "why_it_matters": "This sardonic theological aside ('a monied man enter heaven') is the punchline of the paying/being-paid joke and a signature of Ishmael's ironic-moral voice; without it the paragraph loses its comic payoff.",
+      "suggested_fix": "Restore 'considering that we so earnestly believe money to be the root of all earthly ills, and that on no account can a monied man enter heaven' before 'Ah! how cheerfully we consign ourselves to perdition!'"
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "And, doubtless, my going on this whaling voyage, formed part of the grand programme of Providence that was drawn up a long time ago. It came in as a sort of brief interlude and solo between more extensive performances.",
+      "source_locator": "paragraph introducing the mock-playbill",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Providence/grand-programme framing is interpretively central to the chapter's fatalism and directly precedes the playbill; its omission strips the mock-playbill of its theological irony and reduces it to a mere joke rather than a cosmic statement.",
+      "suggested_fix": "Restore both sentences about Providence and the 'brief interlude and solo between more extensive performances' before presenting the playbill."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I abandon the glory and distinction of such offices to those who like them. For my part, I abominate all honorable respectable toils",
-      "source_locator": "paragraph 8, after declining Commodore/Captain/Cook",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The draft moves the 'abominate' line to a different structural position (after the cook digression), severing it from 'I abandon the glory and distinction' — a small but real disruption of the ironic sequence.",
-      "suggested_fix": "Keep 'I abandon the glory and distinction of such offices to those who like them. For my part, I abominate all honorable respectable toils' in its original position, immediately after the Commodore/Captain/Cook refusal."
+      "source_passage": "It is out of the idolatrous dotings of the old Egyptians upon broiled ibis and roasted river horse, that you see the mummies of those creatures in their huge bake-houses the pyramids.",
+      "source_locator": "end of the cook/broiled-fowl paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "This absurdist digression on Egyptian pyramid-bakeries is pure Ishmaelean comic excess; its loss mildly flattens the voice in a passage otherwise preserved.",
+      "suggested_fix": "Restore the Egyptian mummies/pyramids sentence as the closing flourish of the cook paragraph."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "And at first, this sort of thing is unpleasant enough. It touches one's sense of honor, particularly if you come of an old established family in the land, the Van Rensselaers, or Randolphs, or Hardicanutes.",
-      "source_locator": "paragraph 9, after 'grasshopper in a May meadow'",
+      "source_passage": "if you never violate the Pythagorean maxim",
+      "source_locator": "final paragraph on forecastle air",
       "draft_treatment": "absent",
-      "why_it_matters": "The patrician name-dropping (Van Rensselaers, Randolphs, Hardicanutes) is comic social satire that characterizes Ishmael's class-consciousness and ironic self-awareness; its absence slightly flattens the schoolmaster-to-sailor transition.",
-      "suggested_fix": "Restore the 'Van Rensselaers, or Randolphs, or Hardicanutes' aside as local color before the Seneca sentence."
+      "why_it_matters": "This parenthetical (alluding to the Pythagorean prohibition against beans / flatulence) is a characteristic learned-comic aside; its removal slightly flattens Ishmael's pedantic-ironic register.",
+      "suggested_fix": "Restore the parenthetical '(that is, if you never violate the Pythagorean maxim)' in the head-winds sentence."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Three medium-severity losses (the 'But look!/Strange!' exclamatory passage, the Tennessee poet rhetorical question, and the Persian/Greek mythological questions) together with two further medium losses (the purse-as-rag aside and its structural echo, and the misplaced 'abominate' line) constitute four medium findings, triggering regeneration."
+  "summary": "The draft preserves the chapter's skeleton faithfully but accumulates four medium-severity losses—the 'There is magic in it' sentence, the Providence/grand-programme framing before the playbill, the theological punchline in the paying/being-paid passage, and the hermit-and-crucifix detail in the artist paragraph—each erasing either interpretive weight or signature voice, collectively triggering regeneration."
 }

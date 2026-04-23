@@ -1,0 +1,98 @@
+{
+  "segment_id": "002",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It was the stillness of an implacable force brooding over an inscrutable intention. It looked at you with a vengeful aspect.",
+      "source_locator": "river-journey description, paragraph beginning 'Going up that river was like traveling back'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The phrase 'implacable force brooding over an inscrutable intention' is retained but 'It looked at you with a vengeful aspect' is dropped entirely; this sentence is interpretively central to the wilderness-as-antagonist motif and critically canonical.",
+      "suggested_fix": "Restore 'It looked at you with a vengeful aspect' immediately after the 'inscrutable intention' clause."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "But I felt it all the same; I felt often its mysterious stillness watching me at my monkey tricks, just as it watches you fellows performing on your respective tight-ropes for—what is it? half-a-crown a tumble—",
+      "source_locator": "end of river-journey paragraph, before 'Try to be civil, Marlow'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the voice-establishing self-interruption that provokes the listener's rebuke and opens the frame-narrative exchange; its absence severs the dramatic and tonal logic of 'Try to be civil, Marlow.' It is also distinctively Conradian in its ironic register.",
+      "suggested_fix": "Restore the 'monkey tricks / tight-ropes / half-a-crown a tumble' passage verbatim as the close of the stillness paragraph to motivate the listener's interjection."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I made the strange discovery that I had never imagined him as doing, you know, but as discoursing. I didn't say to myself, 'Now I will never see him,' or 'Now I will never shake him by the hand,' but, 'Now I will never hear him.' The man presented himself as a voice.",
+      "source_locator": "after the shoe thrown overboard, before the 'gift of expression' passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The critically famous 'presented himself as a voice' formulation is present but the crucial distinction between 'see'/'shake his hand' vs 'hear' is absent; this is the passage on which nearly all critical readings of Kurtz-as-voice depend.",
+      "suggested_fix": "Restore the full tripartite 'I didn't say … but \"Now I will never hear him\"' sequence verbatim before 'The man presented himself as a voice.'"
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I laid the ghost of his gifts at last with a lie,",
+      "Girl! What? Did I mention a girl? Oh, she is out of it—completely. They—the women, I mean—are out of it—should be out of it. We must help them to stay in that beautiful world of their own, lest ours gets worse.": "source_locator\": \"final paragraphs of the segment, after the 'Voices, voices' passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The passage 'We must help them to stay in that beautiful world of their own, lest ours gets worse' is a critically central statement on gender and Marlow's ideology; in the draft it is cut entirely and replaced with a vague deferral 'that is for later.'",
+      "suggested_fix": "Restore the full speech beginning 'I laid the ghost of his gifts at last with a lie' through 'lest ours gets worse' and the description of Kurtz's 'lofty frontal bone' and the wilderness passage; these are not optional."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The wilderness had patted him on the head, and, behold, it was like a ball—an ivory ball; it had caressed him, and—lo!—he had withered; it had taken him, loved him, embraced him, got into his veins, consumed his flesh, and sealed his soul to its own by the inconceivable ceremonies of some devilish initiation.",
+      "source_locator": "Kurtz description after 'Voices, voices' passage",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft moves this passage to the wrong narrative position (after the harlequin scene, introduced by an intrusive 'Later—listen—'), destroying Conrad's deliberate sequencing where these reflections arise from the 'voices' reverie; and the setup phrase 'and the lofty frontal bone of Mr. Kurtz' with the baldness description is cut, which provides the iconic physical signature.",
+      "suggested_fix": "Restore the 'lofty frontal bone' / baldness description and reposition the entire wilderness-and-Kurtz passage to its correct location after the 'Voices, voices—even the girl herself' passage, not after the harlequin scene."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I saw him extend his short flipper of an arm for a gesture that took in the forest, the creek, the mud, the river—seemed to beckon with a dishonouring flourish before the sunlit face of the land a treacherous appeal to the lurking death, to the hidden evil, to the profound darkness of its heart. It was so startling that I leaped to my feet and looked back at the edge of the forest, as though I had expected an answer of some sort to that black display of confidence. You know the foolish notions that come to one sometimes.",
+      "source_locator": "uncle's gesture passage, first section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves the gesture but drops Marlow's reactive leap to his feet, the phrase 'black display of confidence,' and the self-deprecating 'You know the foolish notions'—all of which establish Marlow's ironic self-aware voice and the moment's psychological weight.",
+      "suggested_fix": "Add 'It was so startling that I leaped to my feet… You know the foolish notions that come to one sometimes. The high stillness confronted these two figures with its ominous patience' after the uncle's gesture."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "They swore aloud together—out of sheer fright, I believe—then pretending not to know anything of my existence, turned back to the station… tugging painfully uphill their two ridiculous shadows of unequal length, that trailed behind them slowly over the tall grass without bending a single blade.",
+      "source_locator": "after the uncle's gesture, closing the eavesdropping scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing image of the two men's ridiculous shadows is one of the segment's finest visual ironies and is completely absent from the draft; it tonally closes the eavesdropping episode and the Eldorado Expedition frame.",
+      "suggested_fix": "Restore the 'ridiculous shadows of unequal length, that trailed behind them slowly over the tall grass without bending a single blade' image to close the eavesdropping scene."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Let the fool gape and shudder—the man knows, and can look on without a wink. But he must at least be as much of a man as these on the shore. He must meet that truth with his own true stuff—with his own inborn strength. Principles won't do. Acquisitions, clothes, pretty rags—rags that would fly off at the first good shake.",
+      "source_locator": "kinship-with-savages passage, 'The earth seemed unearthly' section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'Let the fool gape and shudder—the man knows' formulation and the 'pretty rags that would fly off at the first good shake' are absent; these carry the passage's rhetorical climax and are picked up by critics reading Conrad on restraint and civilization.",
+      "suggested_fix": "Restore 'Let the fool gape and shudder—the man knows, and can look on without a wink' and 'Acquisitions, clothes, pretty rags—rags that would fly off at the first good shake' within the kinship passage."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "Of course you may be too much of a fool to go wrong—too dull even to know you are being assaulted by the powers of darkness. I take it, no fool ever made a bargain for his soul with the devil; the fool is too much of a fool, or the devil too much of a devil—I don't know which.",
+      "source_locator": "Kurtz moral-philosophical digression, 'You can't understand. How could you?' passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The fool/devil distinction is the interpretive hinge of Marlow's moral taxonomy in this segment and is entirely absent; it directly conditions how readers understand Kurtz's 'choice' and Marlow's own positioning.",
+      "suggested_fix": "Restore the full 'fool / devil' passage within the 'You can't understand' philosophical digression."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "his eyes shone with an amazing lustre… he looked at me anxiously, gripping the spear like something precious, with an air of being afraid I would try to take it away from him… Only in the very last moment… he frowned heavily, and that frown gave to his black death-mask an inconceivably sombre, brooding, and menacing expression. The lustre of inquiring glance faded swiftly into vacant glassiness.",
+      "source_locator": "helmsman's death scene",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains the spear-gripping detail but omits the 'frown… inconceivably sombre, brooding, and menacing expression' and 'lustre… faded swiftly into vacant glassiness'—the passage's most powerful death-image, critically noted for its dignity.",
+      "suggested_fix": "Restore the final frown description and 'The lustre of inquiring glance faded swiftly into vacant glassiness' to preserve the helmsman's death as Conrad wrote it."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has multiple high-severity signature losses including the 'monkey tricks / tight-ropes' voice passage that motivates the frame interruption, the full 'presented himself as a voice' distinction passage, the 'We must help them to stay in that beautiful world' statement, the correct positioning of the wilderness-and-Kurtz meditation, and the fool/devil moral taxonomy—any one of which alone would require regeneration."
+}

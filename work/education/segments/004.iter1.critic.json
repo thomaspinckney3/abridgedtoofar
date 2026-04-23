@@ -5,112 +5,58 @@
     {
       "severity": "high",
       "class": "signature_loss",
-      "source_passage": "Charles Francis Adams possessed the only perfectly balanced mind that ever existed in the name. For a hundred years, every newspaper scribbler had...derided or abused the older Adamses for want of judgment. They abused Charles Francis for his judgment.",
-      "source_locator": "paragraph beginning 'His father's character was therefore the larger part of his education'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The extended portrait of Charles Francis Adams is the interpretive center of this chapter — the 'perfectly balanced mind' passage is critically cited as the chapter's governing thesis and defines the father-as-educator relationship the entire segment depends on. Its total absence erases the chapter's core argument.",
-      "suggested_fix": "Restore the full Charles Francis Adams portrait, including the 'only perfectly balanced mind' formulation, the contrast with grandfather and great-grandfather, and the 'singular perfection, admirable self-restraint, instinctive mastery of form' characterization."
+      "source_passage": "No one, except Karl Marx, foresaw radical change. What announced it? The world was producing sixty or seventy million tons of coal",
+      "source_locator": "paragraph beginning 'Even the violent reaction after 1848'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'except Karl Marx' parenthetical is one of the most critically noted moments in the chapter — Adams's wry, retrospective acknowledgment of Marx is a famous ironic aside that shapes interpretations of his historical self-awareness. The draft drops it entirely, writing only 'No one foresaw radical change,' erasing the signature.",
+      "suggested_fix": "Restore 'except Karl Marx' verbatim within the sentence: 'No one, except Karl Marx, foresaw radical change.'"
     },
     {
       "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Never a tone of arrogance! Never a gesture of pride! ... The world never loved perfect poise. What the world does love is commonly absence of poise, for it has to be amused. Napoleons and Andrew Jacksons amuse it.",
-      "source_locator": "paragraphs 'Almost alone among his Boston contemporaries' and 'The same thing might perhaps have been said of John Quincy Adams'",
+      "class": "interpretive_loss",
+      "source_passage": "that the most powerful emotion of man, next to the sexual, should disappear, might be a personal defect of his own; but that the most intelligent society, led by the most intelligent clergy, in the most moral conditions he ever knew, should have solved all the problems of the universe so thoroughly as to have quite ceased making itself anxious about past or future",
+      "source_locator": "paragraph beginning 'Of all the conditions of his youth which afterwards puzzled'",
       "draft_treatment": "absent",
-      "why_it_matters": "These rhetorically distinctive passages — the anaphoric 'Never a tone' series and the 'world never loved perfect poise' aphorism — are among the most prosodically signature sentences in the chapter, and the 'poise' analysis is a critical touchstone for Adams's theory of character.",
-      "suggested_fix": "Restore both passages: the anaphoric series on arrogance/pride and the aphoristic paragraph on poise, including the Napoleon/Jackson contrast."
+      "why_it_matters": "This is the interpretive climax of Adams's critique of Boston Unitarianism — the 'most powerful emotion of man, next to the sexual' formulation is famously noted by critics as Adams's most daring diagnostic claim, and the extended ironic sentence about 'solving all problems of the universe' is the rhetorical peak of the chapter. The draft skips the entire passage, jumping directly to Parker and Emerson.",
+      "suggested_fix": "Restore this sentence substantially verbatim; it is both culturally famous and interpretively essential to the chapter's argument about the disappearance of religion."
     },
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Of all the conditions of his youth which afterwards puzzled the grown-up man, this disappearance of religion puzzled him most... Boston had solved the universe; or had offered and realized the best solution yet tried.",
-      "source_locator": "paragraphs beginning 'The standards of Boston were high' through 'Boston had solved the universe'",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "men whose lives were to fall in the generation between 1865 and 1900 had, first of all, to get rid of it, and take the stamp that belonged to their time. This was their education. To outsiders, immigrants, adventurers, it was easy, but the old Puritan nature rebelled against change.",
+      "source_locator": "paragraph beginning 'For any American boy the fact that his father was running'",
       "draft_treatment": "absent",
-      "why_it_matters": "The religion-disappearance passage and 'Boston had solved the universe' are among the most widely cited passages in the entire book and are central to every critical reading of Adams's skepticism and his account of Unitarian failure. Their complete absence is a catastrophic loss.",
-      "suggested_fix": "Restore the full religion passage including 'That the most powerful emotion of man, next to the sexual, should disappear,' the Unitarian self-satisfaction critique, and the 'Boston had solved the universe' formulation."
+      "why_it_matters": "The 'This was their education' sentence is a rhetorical pivot that echoes the book's title ironically, and the argument about the 1865–1900 generation is the structural logic behind the chapter's educational thesis. The draft compresses the entire passage to a vague reference to Puritan thought and moral standards, losing the generational framing.",
+      "suggested_fix": "Restore the sentences about men between 1865 and 1900 having to 'get rid of' the stamp, with the 'This was their education' pivot sentence included."
     },
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Were half the power that fills the world with terror, / Were half the wealth bestowed on camps and courts, / Given to redeem the human mind from error, / There were no need of arsenals nor forts.",
-      "source_locator": "paragraph beginning 'Viewed from Mount Vernon Street, the problem of life was as simple'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This verse quotation (Longfellow's 'The Arsenal at Springfield') is the only poetry block in the chapter and is deliberately placed as ironic evidence of Unitarian optimism — its absence removes both the quotation and the ironic frame around it.",
-      "suggested_fix": "Restore the 'Mount Vernon Street problem of life' paragraph with the Longfellow verse and the preceding description of Unitarian certainty about Suffrage, Common Schools, and Press."
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He had nothing but himself to think about. His superiority was, indeed, real and incontestable; he was the classical ornament of the anti-slavery party; their pride in him was unbounded",
+      "source_locator": "paragraph on Sumner, after 'his solitude was glacial'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "'He had nothing but himself to think about' is a signature epigram — a devastating, economical portrait that critics single out as Adams's sharpest characterization of Sumner's psychic condition. The draft has 'his solitude was glacial, and reacted on his character' but drops the epigram entirely.",
+      "suggested_fix": "Insert 'He had nothing but himself to think about' as a standalone sentence after the reference to his glacial solitude."
     },
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Nature had given to the boy Henry a character that, in any previous century, would have led him into the Church; he inherited dogma and a priori thought from the beginning of time",
-      "source_locator": "paragraph beginning 'There was never a side-path of escape. The stamp of 1848'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This passage — establishing Adams's inherent Puritan/dogmatic character and its displacement into anti-slavery politics — is interpretively foundational for the entire education narrative and is a primary text for critics reading Adams's religious psychology.",
-      "suggested_fix": "Restore the full 'stamp of 1848' paragraph including the character-leading-to-Church formulation and the anti-slavery-as-religious-war comparison."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Had State Street been Paradise, they must hunger for it in vain, and it hardly needed Daniel Webster to act as archangel with the flaming sword, to order them away from the door.",
-      "source_locator": "paragraph beginning 'He could not help it. With the record of J. Q. Adams fresh'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is one of the most quotable and rhetorically distinctive sentences in the chapter — the Webster-as-archangel image is a critical set piece and exemplifies Adams's sustained political irony at its sharpest.",
-      "suggested_fix": "Restore the full State Street / slave-power paragraph culminating in the Webster-as-archangel sentence."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "he needed, as afterwards appeared, the facile use of only four tools: Mathematics, French, German, and Spanish. With these, he could master in very short time any special branch of inquiry... Latin and Greek, he could...learn more completely by the intelligent work of six weeks than in the six years he spent on them at school.",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The passionate hatred of school methods was almost a method in itself. Yet the day-school of that time was respectable, and the boy had nothing to complain of. In fact, he never complained. He hated it because he was here with a crowd of other boys and compelled to learn by memory a quantity of things that did not amuse him.",
       "source_locator": "paragraph beginning 'In any and all its forms, the boy detested school'",
       "draft_treatment": "absent",
-      "why_it_matters": "The 'four tools' passage is a primary critical text for Adams's retrospective theory of education — frequently quoted in discussions of his pragmatic epistemology — and its total absence guts the chapter's educational argument.",
-      "suggested_fix": "Restore the four-tools paragraph with the specific enumeration and the six-weeks vs. six-years Latin/Greek contrast."
+      "why_it_matters": "The paradox 'The passionate hatred of school methods was almost a method in itself' is a voice-defining ironic formulation, and the deadpan 'In fact, he never complained' followed immediately by 'He hated it' is signature Adams irony. The draft reduces this entire passage to two flat sentences.",
+      "suggested_fix": "Restore the ironic pivot sentences, particularly 'The passionate hatred of school methods was almost a method in itself' and the deadpan sequence 'he had nothing to complain of. In fact, he never complained.'"
     },
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "the happiest hours of the boy's education were passed in summer lying on a musty heap of Congressional Documents in the old farmhouse at Quincy, reading 'Quentin Durward,' 'Ivanhoe,' and 'The Talisman,' and raiding the garden at intervals for peaches and pears.",
-      "source_locator": "final paragraph of the source segment",
-      "draft_treatment": "absent",
-      "why_it_matters": "This closing image — the ironic capstone of the chapter, placing the boy's happiest education in unofficial reading on a heap of Congressional Documents — is the chapter's signature ending and is widely quoted as crystallizing Adams's ironic view of formal versus informal education.",
-      "suggested_fix": "Restore this closing sentence as the chapter's ending or near-ending, preserving the specific titles and the 'Congressional Documents' detail."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "No one, except Karl Marx, foresaw radical change. What announced it? The world was producing sixty or seventy million tons of coal, and might be using nearly a million steam-horsepower",
-      "source_locator": "paragraph beginning 'Even the violent reaction after 1848'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The Karl Marx sentence is one of the most critically noted in the chapter — Adams's surprising acknowledgment of Marx as the sole prophet of industrial change is an interpretive key to his theory of historical forces and is standard in critical discussions of the book.",
-      "suggested_fix": "Restore the coal/steam paragraph with the Karl Marx sentence intact."
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "The boy Henry worshipped him, and if he ever regarded any older man as a personal friend, it was Mr. Sumner. The relation of Mr. Sumner in the household was far closer than any relation of blood.",
-      "source_locator": "paragraph beginning 'The boy Henry worshipped him'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The draft mentions Sumner's importance but loses the specific 'worshipped' formulation and 'closer than any relation of blood' which are the affective signature of Adams's account of Sumner's role in his education.",
-      "suggested_fix": "Restore the 'worshipped' sentence and 'closer than any relation of blood' phrasing when introducing the Sumner relationship."
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Dana was the most marked. Without dogmatism or self-assertion, he seemed always to be fully in sight...but disguise and silence it as he liked, it was aristocratic to the tenth generation.",
-      "source_locator": "paragraph beginning 'In that respect, and in that only, Charles Sumner was like him'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The Dana portrait — especially 'aristocratic to the tenth generation' — is a distinctive character sketch that critics cite as exemplary of Adams's compression of social type; its absence removes one of the four key educator-portraits the chapter depends on.",
-      "suggested_fix": "Restore the Dana sketch with the 'aristocratic to the tenth generation' conclusion and the William Evarts quotation about doing things one doesn't like to do."
-    },
-    {
-      "severity": "medium",
-      "class": "signature_loss",
-      "source_passage": "Down to 1850, and even later, New England society was still directed by the professions. Lawyers, physicians, professors, merchants were classes, and acted not as individuals, but as though they were clergymen",
-      "source_locator": "paragraph beginning 'Down to 1850, and even later'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This sociological set piece — the Ciceronian theory of New England governance and the Webster-as-representative-of-Boston-capital analysis — provides the chapter's structural argument about class, politics, and the Adams position; its loss thins the political-educational analysis significantly.",
-      "suggested_fix": "Restore the professions paragraph including the Ciceronian governance theory and the Daniel Webster/Peter Harvey fundraising detail."
+      "severity": "low",
+      "class": "other",
+      "source_passage": "Never a tone of arrogance! Never a gesture of pride!",
+      "source_locator": "paragraph on Charles Francis Adams's character, near end",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft places these sentences inside quotation marks ('\"Never a tone of arrogance! Never a gesture of pride!\"'), which misrepresents them as a quotation rather than the narrator's own rhetorical exclamation — a minor but real distortion of the passage's register.",
+      "suggested_fix": "Remove the quotation marks so the exclamatory sentences read as the narrator's voice, not a cited quotation."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft has replaced the majority of this source chapter with Washington-trip material, wholesale dropping the Brooks genealogy, the Charles Francis Adams portrait, the 'perfectly balanced mind' and 'Never a tone of arrogance' passages, the religion-disappearance and 'Boston had solved the universe' passages, the Longfellow verse, the stamp-of-1848 and Church-character passages, the Webster-as-archangel sentence, the Karl Marx sentence, the four-tools passage, the Dana portrait, and the 'Congressional Documents / Quentin Durward' closing — nine high-severity and three medium-severity losses that gutting the chapter's interpretive, rhetorical, and voice substance."
+  "summary": "Two high-severity losses — the famous 'except Karl Marx' parenthetical erased entirely, and the climactic 'most powerful emotion of man, next to the sexual' religion passage absent — plus three medium-severity voice and interpretive flattenings require regeneration."
 }
