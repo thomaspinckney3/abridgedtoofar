@@ -86,14 +86,27 @@ def _word_diff_html(source: str, draft: str) -> str:
         if tag == "equal":
             out.append(html.escape(a_seg))
         elif tag == "replace":
+            # Whitespace-only differences (e.g. source has \n, draft has space)
+            # are visual noise — render the draft's whitespace unchanged rather
+            # than wrapping empty <del>/<ins>, which would drop the whitespace
+            # entirely.
+            if not a_seg.strip() and not b_seg.strip():
+                out.append(html.escape(b_seg or a_seg))
+            else:
+                if a_seg.strip():
+                    out.append(f"<del>{html.escape(a_seg)}</del>")
+                if b_seg.strip():
+                    out.append(f"<ins>{html.escape(b_seg)}</ins>")
+        elif tag == "delete":
             if a_seg.strip():
                 out.append(f"<del>{html.escape(a_seg)}</del>")
+            else:
+                out.append(html.escape(a_seg))
+        elif tag == "insert":
             if b_seg.strip():
                 out.append(f"<ins>{html.escape(b_seg)}</ins>")
-        elif tag == "delete":
-            out.append(f"<del>{html.escape(a_seg)}</del>")
-        elif tag == "insert":
-            out.append(f"<ins>{html.escape(b_seg)}</ins>")
+            else:
+                out.append(html.escape(b_seg))
     return "".join(out)
 
 
