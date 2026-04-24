@@ -1,10 +1,20 @@
 """Run the full lean pipeline on all diegetic chapters of a book end-to-end.
 
-Usage: python -m scripts.full_pipeline <book_id>
+Usage: python -m scripts.full_pipeline <book_id> [--iterate] [--coherence]
 
 Stages assumed already complete (cached on disk): split, classify, plan,
-summarize. This script runs iterate per chapter, then assemble, then the
-book-level critic. Writes progress to work/<book>/full_pipeline_progress.jsonl.
+summarize, cuts. This script drafts each chapter, assembles, then runs the
+book-level critic. The iterate loop (critic + regen) and the coherence pass
+are OPT-IN — pass `--iterate` and/or `--coherence` to include them.
+
+Rationale: empirically, the iterate loop whack-a-moles on voice-dense prose
+(most chapters exhaust with mediums accumulated), and coherence has low
+recall on the worst compression-induced breaks (dangling antecedents).
+Default pipeline relies on the Opus drafter's referent-chain handling and
+the proofread tool + human review for quality. Both checks remain available
+as `forage iterate` / `forage coherence` for spot-checking.
+
+Writes progress to work/<book>/full_pipeline_progress.jsonl.
 """
 from __future__ import annotations
 
@@ -24,12 +34,15 @@ from forage.artifacts import load_book, read_json
 from forage.assemble import assemble_book
 from forage.book_critic import run_book_critic
 from forage.coherence import run_coherence
+from forage.drafter import draft_segment
 from forage.iterate import iterate_segment
 
 if len(sys.argv) < 2:
-    print("usage: python -m scripts.full_pipeline <book_id>")
+    print("usage: python -m scripts.full_pipeline <book_id> [--iterate] [--coherence]")
     sys.exit(2)
 BOOK_ID = sys.argv[1]
+RUN_ITERATE = "--iterate" in sys.argv[2:]
+RUN_COHERENCE = "--coherence" in sys.argv[2:]
 MIN_CHAPTER_WORDS = 100
 
 book = load_book(BOOK_ID)
@@ -55,40 +68,59 @@ def log(entry: dict) -> None:
 
 t_pipeline = time.time()
 
+phase_name = "iterate" if RUN_ITERATE else "draft"
 for i, seg in enumerate(diegetic, 1):
     sid = seg["id"]
     title = (seg.get("title") or "")[:40]
     t0 = time.time()
-    print(f"[{i:>3}/{len(diegetic)}] iterate {sid} '{title}' "
+    print(f"[{i:>3}/{len(diegetic)}] {phase_name} {sid} '{title}' "
           f"src={seg['source_word_count']}w tgt={seg['target_word_count']}w "
           f"group={seg.get('group_id') or '—'}", flush=True)
     try:
-        r = iterate_segment(book, plan, sid, max_retries=1,
-                            redraft_first=False)
-        draft_path = book.work_dir / "segments" / f"{sid}.md"
-        final_words = (len(draft_path.read_text().split())
-                       if draft_path.exists() else 0)
-        elapsed = time.time() - t0
-        print(f"      verdict={r.final_verdict} attempts={r.attempts} "
-              f"exhausted={r.exhausted} got={final_words}w t={elapsed:.0f}s")
-        log({
-            "phase": "iterate", "segment_id": sid, "title": title,
-            "source_words": seg["source_word_count"],
-            "target_words": seg["target_word_count"],
-            "final_words": final_words,
-            "verdict": r.final_verdict,
-            "attempts": r.attempts,
-            "exhausted": r.exhausted,
-            "elapsed_s": round(elapsed, 1),
-        })
+        if RUN_ITERATE:
+            r = iterate_segment(book, plan, sid, max_retries=1,
+                                redraft_first=False)
+            draft_path = book.work_dir / "segments" / f"{sid}.md"
+            final_words = (len(draft_path.read_text().split())
+                           if draft_path.exists() else 0)
+            elapsed = time.time() - t0
+            print(f"      verdict={r.final_verdict} attempts={r.attempts} "
+                  f"exhausted={r.exhausted} got={final_words}w t={elapsed:.0f}s")
+            log({
+                "phase": "iterate", "segment_id": sid, "title": title,
+                "source_words": seg["source_word_count"],
+                "target_words": seg["target_word_count"],
+                "final_words": final_words,
+                "verdict": r.final_verdict,
+                "attempts": r.attempts,
+                "exhausted": r.exhausted,
+                "elapsed_s": round(elapsed, 1),
+            })
+        else:
+            # Draft-only: skip the critic + regen loop. Empirically most
+            # iterate runs exhaust with medium findings that the critic
+            # keeps whack-a-moling, so we default to no-iterate and let the
+            # proofread tool + human review surface any real issues.
+            d = draft_segment(book, plan, sid)
+            elapsed = time.time() - t0
+            print(f"      {d.status} got={d.draft_words}w "
+                  f"(target {d.target_words}w) t={elapsed:.0f}s")
+            log({
+                "phase": "draft", "segment_id": sid, "title": title,
+                "source_words": seg["source_word_count"],
+                "target_words": seg["target_word_count"],
+                "final_words": d.draft_words,
+                "status": d.status,
+                "elapsed_s": round(elapsed, 1),
+            })
     except Exception as e:
         print(f"      ERROR: {type(e).__name__}: {e}")
-        log({"phase": "iterate", "segment_id": sid,
+        log({"phase": phase_name, "segment_id": sid,
              "error": f"{type(e).__name__}: {e}"})
 
-t_iterate = time.time() - t_pipeline
+t_draft = time.time() - t_pipeline
 print()
-print(f"iterate phase done in {t_iterate/60:.1f} min")
+print(f"{phase_name} phase done in {t_draft/60:.1f} min")
 
 print()
 print("assembling...")
@@ -108,21 +140,22 @@ log({"phase": "assemble",
      "segments_cut": assembly.segments_cut,
      "segments_missing": assembly.segments_missing})
 
-print()
-print("running coherence (post-hoc; does not feed regen)...")
-try:
-    coh = run_coherence(book)
-    print(f"  pairs={coh['pairs_checked']} findings={coh['findings_total']} "
-          f"classes={coh.get('class_counts', {})}")
-    log({"phase": "coherence",
-         "pairs_checked": coh["pairs_checked"],
-         "findings_total": coh["findings_total"],
-         "class_counts": coh.get("class_counts", {}),
-         "per_segment_counts": coh.get("per_segment_counts", {})})
-except Exception as e:
-    print(f"  ERROR: {type(e).__name__}: {e}")
-    log({"phase": "coherence",
-         "error": f"{type(e).__name__}: {e}"})
+if RUN_COHERENCE:
+    print()
+    print("running coherence (post-hoc; does not feed regen)...")
+    try:
+        coh = run_coherence(book)
+        print(f"  pairs={coh['pairs_checked']} findings={coh['findings_total']} "
+              f"classes={coh.get('class_counts', {})}")
+        log({"phase": "coherence",
+             "pairs_checked": coh["pairs_checked"],
+             "findings_total": coh["findings_total"],
+             "class_counts": coh.get("class_counts", {}),
+             "per_segment_counts": coh.get("per_segment_counts", {})})
+    except Exception as e:
+        print(f"  ERROR: {type(e).__name__}: {e}")
+        log({"phase": "coherence",
+             "error": f"{type(e).__name__}: {e}"})
 
 print()
 print("running book critic...")

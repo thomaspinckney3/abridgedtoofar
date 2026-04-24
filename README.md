@@ -19,13 +19,18 @@ A reader who loves the original should feel the abridgment is the same book, sho
 ```
 split → classify → plan → summarize → cuts ──┐
                                               │
-                      (cuts.json feeds into  ▼ drafter + signature and coherence critics)
+                      (cuts.json feeds into  ▼ drafter)
                      
-                   draft → critique → iterate → assemble → coherence → validate
-                                                                │
-                                                                └──► book-critique
-                                                                └──► proofread (post-hoc)
+                   draft → assemble → book-critique          ◄── default pipeline
+                     │
+                     └──► proofread (post-hoc)               ◄── opt-in, recommended
+
+                   critique + iterate (draft → regen loop)    ◄── opt-in
+                   coherence (adjacent-pair structural check) ◄── opt-in
+                   validate (motif/style mechanical checks)   ◄── opt-in
 ```
+
+Default pipeline is **draft-only + book-critique**: the Opus drafter with extended thinking handles referent-chain integrity during generation, and the book critic verifies synopsis preservation at the end. The iterate loop (signature critic + regen) and coherence critic are opt-in — empirically they whack-a-mole on voice-dense prose and have low recall on the worst compression-induced breaks (cross-chapter antecedent loss). The proofread tool + human review is the recommended quality surface.
 
 Every stage has a CLI subcommand. All stages operate on files under `work/<book_id>/`, so they're inspectable and rerunnable.
 
@@ -293,10 +298,14 @@ forage validate gatsby              # mechanical sanity checks
 forage proofread gatsby             # paragraph-level alignment viewer
 ```
 
-Or use the `scripts/full_pipeline.py` driver to run iterate across all diegetic chapters, then assemble + coherence + book-critique:
+Or use the `scripts/full_pipeline.py` driver to run draft across all diegetic chapters, then assemble + book-critique:
 
 ```bash
 .venv/bin/python -m scripts.full_pipeline gatsby
+# opt-in extras:
+.venv/bin/python -m scripts.full_pipeline gatsby --iterate      # critic + regen loop
+.venv/bin/python -m scripts.full_pipeline gatsby --coherence    # adjacent-pair critic
+.venv/bin/python -m scripts.full_pipeline gatsby --iterate --coherence
 ```
 
 (The full-pipeline script assumes `split`, `summarize`, and `cuts` have already been run; those are book-level one-time prereqs.)
