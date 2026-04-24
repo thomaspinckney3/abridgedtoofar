@@ -1,0 +1,2561 @@
+{
+  "book_id": "secret_adversary",
+  "chapters_checked": 29,
+  "findings_total": 122,
+  "nature_counts": {
+    "definite_article": 60,
+    "pronoun": 43,
+    "connective": 9,
+    "callback": 10
+  },
+  "per_chapter": [
+    {
+      "segment_id": "001",
+      "paragraphs": 19,
+      "windows": 18,
+      "findings_count": 0,
+      "findings": []
+    },
+    {
+      "segment_id": "002",
+      "paragraphs": 57,
+      "windows": 56,
+      "findings_count": 0,
+      "findings": []
+    },
+    {
+      "segment_id": "003",
+      "paragraphs": 61,
+      "windows": 60,
+      "findings_count": 3,
+      "findings": [
+        {
+          "window_id": "W10",
+          "referent": "Tommy's pencil which she had retained",
+          "nature": "definite_article",
+          "sentence": "Tuppence drew out Tommy's pencil which she had retained and wrote rapidly: \"Don't put in advertisement. Will explain to-morrow.\"",
+          "explanation": "The phrase 'which she had retained' implies a prior scene in which Tuppence took or kept Tommy's pencil, an event not established anywhere in this window.",
+          "agreement": 2,
+          "start_para": 9
+        },
+        {
+          "window_id": "W39",
+          "referent": "what he meant",
+          "nature": "definite_article",
+          "sentence": "Tuppence, utterly taken aback, kept her head. She had no idea what he meant, but she \"kept her end up.\"",
+          "explanation": "The first paragraph describes Tuppence reacting to something Whittington said, but his accusatory remark ('So that's your little game') appears only in the preceding window, not in this one, so 'what he meant' dangles without context.",
+          "agreement": 2,
+          "start_para": 38
+        },
+        {
+          "window_id": "W49",
+          "referent": "her present part",
+          "nature": "definite_article",
+          "sentence": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities.",
+          "explanation": "The phrase 'her present part' implies a role or performance previously established in context not found in this window, leaving a reader uncertain what part is being described.",
+          "agreement": 2,
+          "start_para": 48
+        }
+      ]
+    },
+    {
+      "segment_id": "004",
+      "paragraphs": 53,
+      "windows": 52,
+      "findings_count": 7,
+      "findings": [
+        {
+          "window_id": "W26",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "After all, you know, you can't bluff him forever. He'll want to know where you got your information.",
+          "explanation": "This window opens with a reference to bluffing 'him' but provides no antecedent for 'him' anywhere within its two paragraphs.",
+          "agreement": 2,
+          "start_para": 25
+        },
+        {
+          "window_id": "W34",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "My plan is this: I go alone to-morrow, put him off again.",
+          "explanation": "There is no antecedent for 'him' anywhere in this window; the person being put off is established only in prior material.",
+          "agreement": 2,
+          "start_para": 33
+        },
+        {
+          "window_id": "W35",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "My plan is this: I go alone to-morrow, put him off again. You hang about outside. When he comes out I'll drop a handkerchief or something—and off you go.",
+          "explanation": "Neither 'him' nor 'he' has an antecedent within this window; the person being followed is established only outside this window.",
+          "agreement": 2,
+          "start_para": 34
+        },
+        {
+          "window_id": "W36",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "Follow him, of course!",
+          "explanation": "No antecedent for 'him' exists anywhere in this window; the person to be followed is identified only in prior material.",
+          "agreement": 2,
+          "start_para": 35
+        },
+        {
+          "window_id": "W37",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "Follow him, of course!",
+          "explanation": "No antecedent for 'him' is present in this window; a reader cannot determine who is to be followed.",
+          "agreement": 2,
+          "start_para": 36
+        },
+        {
+          "window_id": "W39",
+          "referent": "the five-pound notes",
+          "nature": "definite_article",
+          "sentence": "Two of the five-pound notes died gallantly.",
+          "explanation": "A reader seeing only this window has no prior mention of five-pound notes to anchor this definite reference.",
+          "agreement": 2,
+          "start_para": 38
+        },
+        {
+          "window_id": "W47",
+          "referent": "they",
+          "nature": "pronoun",
+          "sentence": "Back in the street they stared at one another.",
+          "explanation": "The window opens mid-scene and 'they' has no antecedent within it; the characters who went to the office together are established only in prior windows.",
+          "agreement": 2,
+          "start_para": 46
+        }
+      ]
+    },
+    {
+      "segment_id": "005",
+      "paragraphs": 51,
+      "windows": 50,
+      "findings_count": 5,
+      "findings": [
+        {
+          "window_id": "W6",
+          "referent": "them",
+          "nature": "pronoun",
+          "sentence": "Tommy, you devil! Give them to me. How could you be so mean!",
+          "explanation": "The pronoun 'them' has no antecedent within this window — the reader cannot tell what Tommy is withholding without prior context establishing the letters or envelopes.",
+          "agreement": 2,
+          "start_para": 5
+        },
+        {
+          "window_id": "W11",
+          "referent": "the fifty",
+          "nature": "definite_article",
+          "sentence": "I reply: 'Edward Whittington!' He turns purple and gasps: 'How much?' I pocket the fifty—",
+          "explanation": "The definite 'the fifty' presupposes a sum of fifty pounds established in prior material; no such amount has been introduced anywhere in this window.",
+          "agreement": 2,
+          "start_para": 10
+        },
+        {
+          "window_id": "W12",
+          "referent": "the fifty",
+          "nature": "definite_article",
+          "sentence": "I reply: 'Edward Whittington!' He turns purple and gasps: 'How much?' I pocket the fifty—",
+          "explanation": "The definite 'the fifty' presupposes a specific sum established in prior context that does not appear anywhere in this window.",
+          "agreement": 2,
+          "start_para": 11
+        },
+        {
+          "window_id": "W13",
+          "referent": "the other",
+          "nature": "definite_article",
+          "sentence": "Don't be absurd. Now the other. Oh, this is from the Ritz!",
+          "explanation": "The phrase 'the other' assumes a previously established pair of items (letters/envelopes), neither of which is introduced within this window.",
+          "agreement": 2,
+          "start_para": 12
+        },
+        {
+          "window_id": "W22",
+          "referent": "But",
+          "nature": "connective",
+          "sentence": "But Tommy's tone held deference.",
+          "explanation": "The opening 'But' signals a contrast with Tuppence's preceding resistance or speech, which appears in W21 and is entirely absent from this window.",
+          "agreement": 2,
+          "start_para": 21
+        }
+      ]
+    },
+    {
+      "segment_id": "006",
+      "paragraphs": 39,
+      "windows": 38,
+      "findings_count": 3,
+      "findings": [
+        {
+          "window_id": "W8",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "It will be waiting for you.",
+          "explanation": "The pronoun 'it' has no antecedent anywhere in this window, leaving a reader unable to determine what will be waiting.",
+          "agreement": 3,
+          "start_para": 7
+        },
+        {
+          "window_id": "W17",
+          "referent": "Mr. Beresford obliged",
+          "nature": "connective",
+          "sentence": "Mr. Beresford obliged.",
+          "explanation": "This sentence records Tommy complying with a request to pinch Tuppence, but the request itself appears only in the preceding window (W16), so a reader seeing only W17 cannot understand what action 'obliged' refers to.",
+          "agreement": 2,
+          "start_para": 16
+        },
+        {
+          "window_id": "W20",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "We never told Mr. Carter about hearing from him.",
+          "explanation": "The pronoun 'him' refers to a person not established anywhere in this window, leaving the reader unable to identify who contacted them.",
+          "agreement": 2,
+          "start_para": 19
+        }
+      ]
+    },
+    {
+      "segment_id": "007",
+      "paragraphs": 48,
+      "windows": 47,
+      "findings_count": 3,
+      "findings": [
+        {
+          "window_id": "W1",
+          "referent": "The reverse",
+          "nature": "definite_article",
+          "sentence": "A veil might with profit be drawn over the next half-hour. Suffice it to say that no such person as 'Inspector Brown' was known to Scotland Yard, and the photograph of Jane Finn, which would have been of the utmost value, was lost beyond recovery. Once again 'Mr. Brown' had triumphed.",
+          "explanation": "A reader seeing only this window has no context for what 'The reverse' refers to — the failure or setback that prompted this paragraph is entirely outside the window.",
+          "agreement": 2,
+          "start_para": 0
+        },
+        {
+          "window_id": "W34",
+          "referent": "he",
+          "nature": "pronoun",
+          "sentence": "Still, it is queer he hasn't wreaked vengeance upon us.",
+          "explanation": "The pronoun 'he' has no antecedent within this window; it refers to Mr. Brown, who was last mentioned in prior material not present here.",
+          "agreement": 3,
+          "start_para": 33
+        },
+        {
+          "window_id": "W46",
+          "referent": "his",
+          "nature": "pronoun",
+          "sentence": "Her hand still in his, they reached the entrance hall.",
+          "explanation": "The possessive pronoun 'his' has no antecedent within this window; the male character whose hand Tuppence holds is not introduced or named here.",
+          "agreement": 2,
+          "start_para": 45
+        }
+      ]
+    },
+    {
+      "segment_id": "008",
+      "paragraphs": 28,
+      "windows": 27,
+      "findings_count": 3,
+      "findings": [
+        {
+          "window_id": "W4",
+          "referent": "the other",
+          "nature": "definite_article",
+          "sentence": "\"Why not, my friend?\" the other laughed softly.",
+          "explanation": "A reader seeing only this window has no way to identify who 'the other' is, as no second character has been established within this window.",
+          "agreement": 2,
+          "start_para": 3
+        },
+        {
+          "window_id": "W5",
+          "referent": "the other",
+          "nature": "definite_article",
+          "sentence": "\"Why not, my friend?\" the other laughed softly.",
+          "explanation": "A reader seeing only this window has no way to identify who 'the other' is, as no second character has been introduced or named within this window.",
+          "agreement": 2,
+          "start_para": 4
+        },
+        {
+          "window_id": "W16",
+          "referent": "the other",
+          "nature": "definite_article",
+          "sentence": "That's Whittington—getting in now. The foreign chap is the other.",
+          "explanation": "A reader seeing only this window has no context for who 'the other' refers to, as no second person has been introduced or described within this window.",
+          "agreement": 2,
+          "start_para": 15
+        }
+      ]
+    },
+    {
+      "segment_id": "009",
+      "paragraphs": 59,
+      "windows": 58,
+      "findings_count": 0,
+      "findings": []
+    },
+    {
+      "segment_id": "010",
+      "paragraphs": 51,
+      "windows": 50,
+      "findings_count": 4,
+      "findings": [
+        {
+          "window_id": "W1",
+          "referent": "the two men",
+          "nature": "definite_article",
+          "sentence": "When Tommy set forth on the trail of the two men, it took all Tuppence's self-command not to run after him.",
+          "explanation": "A reader seeing only this window has no information about which two men are being trailed, as they were introduced in prior material outside the window.",
+          "agreement": 3,
+          "start_para": 0
+        },
+        {
+          "window_id": "W1",
+          "referent": "her 'Rita' deduction",
+          "nature": "callback",
+          "sentence": "Consoling herself that her 'Rita' deduction had panned out, she drifted back to the entrance hall of South Audley Mansions.",
+          "explanation": "The 'Rita' deduction refers to reasoning Tuppence performed in prior material not present in this window, leaving a reader with no context for what it means or why it matters.",
+          "agreement": 3,
+          "start_para": 0
+        },
+        {
+          "window_id": "W30",
+          "referent": "His warnings",
+          "nature": "pronoun",
+          "sentence": "His warnings passed unheeded; but she sensibly adopted his plan.",
+          "explanation": "The possessive pronoun 'His' has no antecedent within this window; Mr. Carter and his letter appear only in W29, not in W30, so the referent is inaccessible to a reader of this window alone.",
+          "agreement": 3,
+          "start_para": 29
+        },
+        {
+          "window_id": "W38",
+          "referent": "She had not feared Whittington",
+          "nature": "callback",
+          "sentence": "She had not feared Whittington, but this woman was different.",
+          "explanation": "The contrast with Whittington is a callback to prior scenes involving him that are not present in this window, so a reader cannot understand the basis of the comparison.",
+          "agreement": 2,
+          "start_para": 37
+        }
+      ]
+    },
+    {
+      "segment_id": "011",
+      "paragraphs": 67,
+      "windows": 66,
+      "findings_count": 2,
+      "findings": [
+        {
+          "window_id": "W12",
+          "referent": "The other",
+          "nature": "definite_article",
+          "sentence": "She came in to-day. The other was a fiend. This girl seems all right. She waits well.",
+          "explanation": "A reader seeing only this window cannot identify who 'the other' refers to, as no prior servant or comparison figure has been introduced within the window.",
+          "agreement": 2,
+          "start_para": 11
+        },
+        {
+          "window_id": "W13",
+          "referent": "The other",
+          "nature": "definite_article",
+          "sentence": "The other was a fiend. This girl seems all right. She waits well.",
+          "explanation": "The definite reference 'the other' presupposes a prior person (a previous servant) introduced outside this window, leaving a reader seeing only this window without an antecedent.",
+          "agreement": 2,
+          "start_para": 12
+        }
+      ]
+    },
+    {
+      "segment_id": "012",
+      "paragraphs": 60,
+      "windows": 59,
+      "findings_count": 6,
+      "findings": [
+        {
+          "window_id": "W7",
+          "referent": "he",
+          "nature": "pronoun",
+          "sentence": "But where is he?",
+          "explanation": "The pronoun 'he' has no antecedent within this window, so a reader sees only this window cannot determine whose whereabouts are being questioned.",
+          "agreement": 2,
+          "start_para": 6
+        },
+        {
+          "window_id": "W7",
+          "referent": "But",
+          "nature": "connective",
+          "sentence": "But where is he?",
+          "explanation": "The opening 'But' signals contrast with something said immediately before, which is entirely outside this window.",
+          "agreement": 2,
+          "start_para": 6
+        },
+        {
+          "window_id": "W32",
+          "referent": "that man Boris",
+          "nature": "definite_article",
+          "sentence": "He couldn't—passports and things. Besides, I've seen that man Boris since. He dined with Mrs. Vandemeyer last night.",
+          "explanation": "The definite phrase 'that man Boris' signals a previously established referent, but Boris is introduced here for the first time in this window with no prior setup.",
+          "agreement": 2,
+          "start_para": 31
+        },
+        {
+          "window_id": "W50",
+          "referent": "the ambiguous warning",
+          "nature": "callback",
+          "sentence": "Oh; but I forgot—I met Sir James Peel Edgerton this morning, and told of the ambiguous warning.",
+          "explanation": "The narrator summarizes telling Julius 'the ambiguous warning,' treating it as a known, defined event, but the content of that warning is not established anywhere in this window.",
+          "agreement": 2,
+          "start_para": 49
+        },
+        {
+          "window_id": "W53",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "Don't you think it. So long.",
+          "explanation": "The pronoun 'it' refers to a claim made outside this window, so a reader seeing only W53 cannot determine what Julius is dismissing.",
+          "agreement": 2,
+          "start_para": 52
+        },
+        {
+          "window_id": "W56",
+          "referent": "She",
+          "nature": "pronoun",
+          "sentence": "'She's some pace-maker,' said Julius complacently.",
+          "explanation": "The pronoun 'she' refers to a car being admired, but no car is introduced or described anywhere in this window, so the referent is completely opaque.",
+          "agreement": 2,
+          "start_para": 55
+        }
+      ]
+    },
+    {
+      "segment_id": "013",
+      "paragraphs": 98,
+      "windows": 97,
+      "findings_count": 1,
+      "findings": [
+        {
+          "window_id": "W29",
+          "referent": "They parted",
+          "nature": "pronoun",
+          "sentence": "They parted. Tuppence, restless, walked, but as she neared Hyde Park Corner an unreasonable uneasiness grew.",
+          "explanation": "A reader seeing only this window cannot determine who 'they' are, as no prior scene or participants are established within the window.",
+          "agreement": 2,
+          "start_para": 28
+        }
+      ]
+    },
+    {
+      "segment_id": "014",
+      "paragraphs": 96,
+      "windows": 95,
+      "findings_count": 2,
+      "findings": [
+        {
+          "window_id": "W46",
+          "referent": "the original",
+          "nature": "definite_article",
+          "sentence": "In any case, it's the original I'm after. Where do you think she can be?",
+          "explanation": "The speaker refers to 'the original' as if a specific document or item has already been discussed, but no such item is introduced in this window.",
+          "agreement": 3,
+          "start_para": 45
+        },
+        {
+          "window_id": "W95",
+          "referent": "the little glass she had upset",
+          "nature": "definite_article",
+          "sentence": "Tuppence remembered the little glass she had upset.",
+          "explanation": "The glass and the upsetting event are not introduced anywhere in this window, so a reader has no basis for knowing what glass is meant or when it was upset.",
+          "agreement": 2,
+          "start_para": 94
+        }
+      ]
+    },
+    {
+      "segment_id": "015",
+      "paragraphs": 71,
+      "windows": 70,
+      "findings_count": 1,
+      "findings": [
+        {
+          "window_id": "W34",
+          "referent": "As I said before",
+          "nature": "callback",
+          "sentence": "\"As I said before, I'm a mutt,\" muttered Julius.",
+          "explanation": "The phrase 'as I said before' explicitly references a prior statement by Julius that does not appear anywhere in this window.",
+          "agreement": 2,
+          "start_para": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "016",
+      "paragraphs": 84,
+      "windows": 83,
+      "findings_count": 6,
+      "findings": [
+        {
+          "window_id": "W3",
+          "referent": "your fall from my tree",
+          "nature": "definite_article",
+          "sentence": "Yes—after your—er—fall from my tree. A very urgent message came from Mrs. Vandemeyer.",
+          "explanation": "A reader seeing only this window has no context for what 'your fall from my tree' refers to, as the incident was established in prior material outside this window.",
+          "agreement": 2,
+          "start_para": 2
+        },
+        {
+          "window_id": "W29",
+          "referent": "Once before he had thrown a hint in this careless fashion",
+          "nature": "callback",
+          "sentence": "Once before he had thrown a hint in this careless fashion. Was this a hint now? Had he not abandoned the case after all?",
+          "explanation": "The callback to a prior occasion when Sir James threw a hint relies on material outside this window that a reader cannot access here.",
+          "agreement": 3,
+          "start_para": 28
+        },
+        {
+          "window_id": "W31",
+          "referent": "Julius at the safe; her own question; his pause before 'Nothing.'",
+          "nature": "callback",
+          "sentence": "Another memory flashed: Julius at the safe; her own question; his pause before 'Nothing.' Had he, too, held back?",
+          "explanation": "The scene at the safe and the exchange about 'Nothing' are recalled as specific prior events not established anywhere in this window.",
+          "agreement": 3,
+          "start_para": 30
+        },
+        {
+          "window_id": "W32",
+          "referent": "Julius at the safe; her own question; his pause before 'Nothing.'",
+          "nature": "callback",
+          "sentence": "Another memory flashed: Julius at the safe; her own question; his pause before 'Nothing.' Had he, too, held back?",
+          "explanation": "The definite reference to the safe scene and the specific exchange are callbacks to prior material entirely absent from this window.",
+          "agreement": 3,
+          "start_para": 31
+        },
+        {
+          "window_id": "W75",
+          "referent": "that safe",
+          "nature": "definite_article",
+          "sentence": "He'll insist on a reason. I wonder if he did find anything in that safe——",
+          "explanation": "The definite phrase 'that safe' presupposes a previously established safe known to both speaker and reader, but no safe is introduced or mentioned anywhere in this window.",
+          "agreement": 3,
+          "start_para": 74
+        },
+        {
+          "window_id": "W76",
+          "referent": "that safe",
+          "nature": "definite_article",
+          "sentence": "He'll insist on a reason. I wonder if he did find anything in that safe——",
+          "explanation": "'That safe' is a definite reference to a specific object established in prior material not contained in this window.",
+          "agreement": 3,
+          "start_para": 75
+        }
+      ]
+    },
+    {
+      "segment_id": "017",
+      "paragraphs": 66,
+      "windows": 65,
+      "findings_count": 2,
+      "findings": [
+        {
+          "window_id": "W26",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They wavered.",
+          "explanation": "The paragraph opens with 'They wavered' but no group has been introduced in this window, leaving the referent of 'They' entirely undefined.",
+          "agreement": 2,
+          "start_para": 25
+        },
+        {
+          "window_id": "W35",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "\"Then—\" baffled anger choked him.",
+          "explanation": "The pronoun 'him' has no named or described character introduced in this window to serve as its antecedent.",
+          "agreement": 2,
+          "start_para": 34
+        }
+      ]
+    },
+    {
+      "segment_id": "018",
+      "paragraphs": 89,
+      "windows": 88,
+      "findings_count": 6,
+      "findings": [
+        {
+          "window_id": "W4",
+          "referent": "the verbal encounter of this afternoon",
+          "nature": "definite_article",
+          "sentence": "Such an affair was infinitely more in his line than the verbal encounter of this afternoon.",
+          "explanation": "A reader seeing only this window has no knowledge of what verbal encounter took place this afternoon, as it occurred in prior material outside the window.",
+          "agreement": 2,
+          "start_para": 3
+        },
+        {
+          "window_id": "W32",
+          "referent": "the picture he had set against the wall",
+          "nature": "definite_article",
+          "sentence": "She turned—caught sight of the picture he had set against the wall.",
+          "explanation": "The act of Tommy setting a picture against the wall occurred in a prior scene not contained in this window, so the definite reference to it has no establishing context here.",
+          "agreement": 2,
+          "start_para": 31
+        },
+        {
+          "window_id": "W45",
+          "referent": "the famous picture",
+          "nature": "definite_article",
+          "sentence": "He felt an economical pleasure that his first plan would not be wasted. He waited.",
+          "explanation": "The picture is called 'the famous picture' as a callback to its earlier description and Tommy's plan involving it, neither of which appears in this window.",
+          "agreement": 2,
+          "start_para": 44
+        },
+        {
+          "window_id": "W46",
+          "referent": "the famous picture",
+          "nature": "definite_article",
+          "sentence": "in the dark unhooked the famous picture.",
+          "explanation": "The epithet 'famous' is a callback to prior material describing the picture and Tommy's plan to use it; a reader of only this window has no basis for the label.",
+          "agreement": 3,
+          "start_para": 45
+        },
+        {
+          "window_id": "W72",
+          "referent": "that draft treaty",
+          "nature": "definite_article",
+          "sentence": "But if that draft treaty turns up—we're done.",
+          "explanation": "The draft treaty is referenced with 'that' as if previously established, but no treaty has been introduced or described anywhere in this window.",
+          "agreement": 2,
+          "start_para": 71
+        },
+        {
+          "window_id": "W88",
+          "referent": "'Rita'",
+          "nature": "definite_article",
+          "sentence": "Tommy hailed a taxi, the thought of startling Tuppence warming him. 'Dogging 'Rita' most likely.'",
+          "explanation": "The name 'Rita' is invoked as a known referent (someone Tuppence is apparently following) with no introduction or explanation anywhere in this window.",
+          "agreement": 2,
+          "start_para": 87
+        }
+      ]
+    },
+    {
+      "segment_id": "019",
+      "paragraphs": 74,
+      "windows": 73,
+      "findings_count": 7,
+      "findings": [
+        {
+          "window_id": "W11",
+          "referent": "she / it / he",
+          "nature": "pronoun",
+          "sentence": "'The doctor kidded himself she took it herself,' he ended dryly.",
+          "explanation": "The window opens with 'she took it' and 'he ended' but none of these pronouns have antecedents established anywhere within this window.",
+          "agreement": 2,
+          "start_para": 10
+        },
+        {
+          "window_id": "W19",
+          "referent": "All the same",
+          "nature": "connective",
+          "sentence": "All the same, Mr. Brown hasn't got wings. I don't see how he got in and out.",
+          "explanation": "'All the same' opens the paragraph by conceding or contrasting with a point made outside this window, and Mr. Brown's relevance is not established within it.",
+          "agreement": 3,
+          "start_para": 18
+        },
+        {
+          "window_id": "W31",
+          "referent": "she / that note",
+          "nature": "definite_article",
+          "sentence": "'What did she say in that note?' he demanded fiercely.",
+          "explanation": "'That note' presupposes a specific note already known to the reader, and 'she' has no named antecedent introduced anywhere in this window.",
+          "agreement": 2,
+          "start_para": 30
+        },
+        {
+          "window_id": "W41",
+          "referent": "that telegram",
+          "nature": "definite_article",
+          "sentence": "'Come on, Julius. We must find that telegram.'",
+          "explanation": "'That telegram' is a definite back-reference to a telegram not introduced or mentioned anywhere in this window.",
+          "agreement": 2,
+          "start_para": 40
+        },
+        {
+          "window_id": "W44",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "'You didn't send it?' 'Of course not.'",
+          "explanation": "The window opens with 'You didn't send it?' but no document, message, or object has been introduced in this window for 'it' to refer to.",
+          "agreement": 2,
+          "start_para": 43
+        },
+        {
+          "window_id": "W54",
+          "referent": "The journey",
+          "nature": "definite_article",
+          "sentence": "The journey was wearisome. At a deserted station they got meticulous but perplexing directions to 'the big house near the sea.'",
+          "explanation": "No journey has been introduced in this window; 'The journey' presupposes a destination or plan established in prior material not visible here.",
+          "agreement": 2,
+          "start_para": 53
+        },
+        {
+          "window_id": "W65",
+          "referent": "the plan",
+          "nature": "definite_article",
+          "sentence": "But the plan miscarried. Later in the day Tommy received a wire:",
+          "explanation": "A reader seeing only this window has no idea what 'the plan' refers to, as no plan has been described or mentioned anywhere within the window.",
+          "agreement": 2,
+          "start_para": 64
+        }
+      ]
+    },
+    {
+      "segment_id": "020",
+      "paragraphs": 87,
+      "windows": 86,
+      "findings_count": 4,
+      "findings": [
+        {
+          "window_id": "W22",
+          "referent": "The words",
+          "nature": "definite_article",
+          "sentence": "The words came out like the crack of a pistol, and Tommy looked up with a start.",
+          "explanation": "This window opens with 'The words came out' but no words have been spoken within this window, so the definite reference is unresolvable without prior context.",
+          "agreement": 2,
+          "start_para": 21
+        },
+        {
+          "window_id": "W64",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They've been telling me dreadful things—that my memory went, and that there are years I shall never know.",
+          "explanation": "'They' opens the window referring to people not introduced or identified anywhere within this window.",
+          "agreement": 2,
+          "start_para": 63
+        },
+        {
+          "window_id": "W69",
+          "referent": "She",
+          "nature": "pronoun",
+          "sentence": "She hesitated, glancing at the others.",
+          "explanation": "The opening 'She hesitated' has no female antecedent established within this window; the name 'Jane' only appears later in Julius's direct address, after the pronoun is used.",
+          "agreement": 2,
+          "start_para": 68
+        },
+        {
+          "window_id": "W80",
+          "referent": "She",
+          "nature": "pronoun",
+          "sentence": "She pressed her hand to her head.",
+          "explanation": "No female character is named or introduced in this window; 'She' is used in narration without any antecedent present in either paragraph.",
+          "agreement": 2,
+          "start_para": 79
+        }
+      ]
+    },
+    {
+      "segment_id": "021",
+      "paragraphs": 59,
+      "windows": 58,
+      "findings_count": 4,
+      "findings": [
+        {
+          "window_id": "W13",
+          "referent": "he / But",
+          "nature": "connective",
+          "sentence": "But he won't be needed this trip. There's nobody to put Mr. Brown wise.",
+          "explanation": "The opening 'But' contrasts a prior statement not present in this window, and 'he' has no antecedent established within the window, leaving a reader confused about who is being discussed and what is being contradicted.",
+          "agreement": 2,
+          "start_para": 12
+        },
+        {
+          "window_id": "W31",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "Can't be. We'd see him.",
+          "explanation": "The pronoun 'him' refers to an unidentified person supposedly following the characters, whose existence was established only in the preceding window (W30), leaving a reader of W31 alone with no antecedent for 'him'.",
+          "agreement": 2,
+          "start_para": 30
+        },
+        {
+          "window_id": "W32",
+          "referent": "Nevertheless",
+          "nature": "connective",
+          "sentence": "Nevertheless Tommy's sense of the enemy's omniscience deepened.",
+          "explanation": "The 'Nevertheless' contrasts with a reassurance ('Can't be. We'd see him.') that does not appear anywhere in this window, leaving the logical contrast without a basis.",
+          "agreement": 2,
+          "start_para": 31
+        },
+        {
+          "window_id": "W46",
+          "referent": "the rock",
+          "nature": "definite_article",
+          "sentence": "He glared at the rock. 'Damn it! It's impossible! Five years! Bird's-nesting boys, picnic parties, thousands of people passing! It can't be there!'",
+          "explanation": "A reader seeing only this window has no introduction to which specific rock Tommy is glaring at, as the boulder/crevice scene is not established within this window.",
+          "agreement": 2,
+          "start_para": 45
+        }
+      ]
+    },
+    {
+      "segment_id": "022",
+      "paragraphs": 54,
+      "windows": 53,
+      "findings_count": 8,
+      "findings": [
+        {
+          "window_id": "W1",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They stared at each other stupidly. Somehow, inexplicably, Mr. Brown had forestalled them.",
+          "explanation": "The pronoun 'They' opens the window with no antecedent established inside it, leaving the reader unable to identify who is staring.",
+          "agreement": 3,
+          "start_para": 0
+        },
+        {
+          "window_id": "W2",
+          "referent": "the stitches",
+          "nature": "definite_article",
+          "sentence": "It accounts for the stitches being new, said Tommy dully. We might have guessed.",
+          "explanation": "The stitches are referenced as already known to the reader but are never introduced or explained anywhere within this window.",
+          "agreement": 2,
+          "start_para": 1
+        },
+        {
+          "window_id": "W15",
+          "referent": "this other news",
+          "nature": "definite_article",
+          "sentence": "I have been blaming myself ever since I heard this other news.",
+          "explanation": "A reader seeing only this window cannot determine what 'this other news' refers to, as it points to information introduced outside the window.",
+          "agreement": 2,
+          "start_para": 14
+        },
+        {
+          "window_id": "W29",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "Kind old beggar, muttered Tommy, flinging it aside.",
+          "explanation": "The pronoun 'it' refers to an object (a letter or note) that has not been introduced anywhere in this window, leaving the referent unclear.",
+          "agreement": 2,
+          "start_para": 28
+        },
+        {
+          "window_id": "W43",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They were on the point of blows, when Julius's anger dropped away.",
+          "explanation": "The window opens with 'They were on the point of blows' but the altercation and who 'they' are in this moment of conflict has no setup within the window itself.",
+          "agreement": 2,
+          "start_para": 42
+        },
+        {
+          "window_id": "W50",
+          "referent": "Sir James's letter",
+          "nature": "definite_article",
+          "sentence": "He re-read Sir James's letter and shook his head. Tuppence must be avenged. Still, it was kind.",
+          "explanation": "Sir James's letter is referred to as a known, previously seen object but has not been introduced or described anywhere within this window.",
+          "agreement": 3,
+          "start_para": 49
+        },
+        {
+          "window_id": "W51",
+          "referent": "Sir James's letter",
+          "nature": "definite_article",
+          "sentence": "He re-read Sir James's letter and shook his head. Tuppence must be avenged. Still, it was kind.",
+          "explanation": "Sir James's letter is treated as already known to the reader but is never introduced or quoted anywhere within this window.",
+          "agreement": 2,
+          "start_para": 50
+        },
+        {
+          "window_id": "W53",
+          "referent": "the French girl Annette",
+          "nature": "definite_article",
+          "sentence": "What on earth was a photograph of the French girl Annette doing in Julius Hersheimmer's writing-table?",
+          "explanation": "Annette is referred to with the definite descriptor 'the French girl' as though previously established, but a reader seeing only this window has no context for who Annette is or why her presence would be surprising.",
+          "agreement": 2,
+          "start_para": 52
+        }
+      ]
+    },
+    {
+      "segment_id": "023",
+      "paragraphs": 43,
+      "windows": 42,
+      "findings_count": 14,
+      "findings": [
+        {
+          "window_id": "W3",
+          "referent": "that girl at Manchester",
+          "nature": "definite_article",
+          "sentence": "If I'm right, that girl at Manchester was just a plant.",
+          "explanation": "A reader seeing only this window has no prior introduction to any girl at Manchester, making 'that girl' a dangling definite reference.",
+          "agreement": 2,
+          "start_para": 2
+        },
+        {
+          "window_id": "W5",
+          "referent": "those things of Tuppence's",
+          "nature": "definite_article",
+          "sentence": "You see, I've figured it out that those things of Tuppence's are a plant too, and she's no more drowned than I am.",
+          "explanation": "No 'things of Tuppence's' have been introduced in this window, so 'those things' presupposes prior context a reader of only this window does not have.",
+          "agreement": 2,
+          "start_para": 4
+        },
+        {
+          "window_id": "W6",
+          "referent": "those things of Tuppence's",
+          "nature": "definite_article",
+          "sentence": "You see, I've figured it out that those things of Tuppence's are a plant too, and she's no more drowned than I am.",
+          "explanation": "No 'things of Tuppence's' are introduced in this window; 'those things' dangles without an antecedent for a reader seeing only this window.",
+          "agreement": 2,
+          "start_para": 5
+        },
+        {
+          "window_id": "W9",
+          "referent": "The enclosure",
+          "nature": "definite_article",
+          "sentence": "\"The enclosure?\"",
+          "explanation": "The enclosure is referenced as though just discussed, but nothing in this window establishes what enclosure is meant, leaving the referent dangling.",
+          "agreement": 3,
+          "start_para": 8
+        },
+        {
+          "window_id": "W13",
+          "referent": "those girls",
+          "nature": "definite_article",
+          "sentence": "Once it's known, I wouldn't give that—for the lives of those girls.",
+          "explanation": "No girls have been introduced in this window; 'those girls' presupposes prior context that a reader of only this window does not have.",
+          "agreement": 3,
+          "start_para": 12
+        },
+        {
+          "window_id": "W16",
+          "referent": "He",
+          "nature": "pronoun",
+          "sentence": "\"He seems confident,\" mused the Prime Minister.",
+          "explanation": "The pronoun 'He' opens the window referring to someone not introduced within it, leaving a reader unable to identify who is being discussed.",
+          "agreement": 2,
+          "start_para": 15
+        },
+        {
+          "window_id": "W19",
+          "referent": "This—boy",
+          "nature": "definite_article",
+          "sentence": "\"This—boy. But I sometimes fancy I see a shadow behind.\"",
+          "explanation": "'This boy' is a demonstrative reference to a boy not introduced in this window, leaving the referent unresolved for a reader seeing only this window.",
+          "agreement": 2,
+          "start_para": 18
+        },
+        {
+          "window_id": "W29",
+          "referent": "the page-boy's statement",
+          "nature": "definite_article",
+          "sentence": "And the one clue they overlooked was the page-boy's statement that Miss Cowley drove to Charing Cross.",
+          "explanation": "'The page-boy's statement' is referenced as a known specific piece of evidence not introduced anywhere in this window.",
+          "agreement": 2,
+          "start_para": 28
+        },
+        {
+          "window_id": "W30",
+          "referent": "Then",
+          "nature": "connective",
+          "sentence": "\"Then young Beresford is now—?\"",
+          "explanation": "'Then' opens this window as a logical consequence of something not present in the window, leaving the connective dangling without the premise it follows from.",
+          "agreement": 2,
+          "start_para": 29
+        },
+        {
+          "window_id": "W32",
+          "referent": "there",
+          "nature": "definite_article",
+          "sentence": "\"I rather wonder you're not there too.\"",
+          "explanation": "'There' refers to a specific place established in prior context that is not introduced anywhere in this window, leaving the location unresolved.",
+          "agreement": 2,
+          "start_para": 31
+        },
+        {
+          "window_id": "W35",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "\"Perhaps it never left it,\" suggested the lawyer gently.",
+          "explanation": "Both instances of 'it' refer to objects (the photograph and the drawer, or similar) not introduced in this window, leaving the pronouns without antecedents.",
+          "agreement": 2,
+          "start_para": 34
+        },
+        {
+          "window_id": "W35",
+          "referent": "the bogus inspector",
+          "nature": "definite_article",
+          "sentence": "\"But the bogus inspector? Inspector Brown?\"",
+          "explanation": "'The bogus inspector' is referenced as a known figure using a definite article, but no bogus inspector has been introduced anywhere in this window.",
+          "agreement": 2,
+          "start_para": 34
+        },
+        {
+          "window_id": "W36",
+          "referent": "the bogus inspector",
+          "nature": "definite_article",
+          "sentence": "\"But the bogus inspector? Inspector Brown?\"",
+          "explanation": "'The bogus inspector' is used as though previously established, but no bogus inspector has been introduced anywhere in this window.",
+          "agreement": 3,
+          "start_para": 35
+        },
+        {
+          "window_id": "W42",
+          "referent": "the letter",
+          "nature": "definite_article",
+          "sentence": "He threw the letter into the basket.",
+          "explanation": "'The letter' is referenced as a known object with a definite article, but no letter has been introduced anywhere in this window.",
+          "agreement": 2,
+          "start_para": 41
+        }
+      ]
+    },
+    {
+      "segment_id": "024",
+      "paragraphs": 35,
+      "windows": 34,
+      "findings_count": 10,
+      "findings": [
+        {
+          "window_id": "W14",
+          "referent": "Again the cold chill seized Tommy.",
+          "nature": "callback",
+          "sentence": "Again the cold chill seized Tommy.",
+          "explanation": "The word 'Again' refers to a prior occurrence of this chill that is not described anywhere in this two-paragraph window, so a reader cannot identify what earlier event is being recalled.",
+          "agreement": 2,
+          "start_para": 13
+        },
+        {
+          "window_id": "W15",
+          "referent": "Again the cold chill",
+          "nature": "callback",
+          "sentence": "Again the cold chill seized Tommy.",
+          "explanation": "The word 'again' refers to a prior occurrence of Tommy feeling a cold chill that is not shown anywhere in this window, leaving a reader confused about what is being repeated.",
+          "agreement": 2,
+          "start_para": 14
+        },
+        {
+          "window_id": "W15",
+          "referent": "the sealed envelope",
+          "nature": "definite_article",
+          "sentence": "Hence the sealed envelope—bait.",
+          "explanation": "A reader seeing only this window has no prior introduction to any sealed envelope; the definite article presupposes knowledge of an object not established here.",
+          "agreement": 3,
+          "start_para": 14
+        },
+        {
+          "window_id": "W16",
+          "referent": "the sealed envelope",
+          "nature": "definite_article",
+          "sentence": "Hence the sealed envelope—bait.",
+          "explanation": "The sealed envelope is referenced with a definite article as though already known, but no sealed envelope has been introduced anywhere in this window.",
+          "agreement": 3,
+          "start_para": 15
+        },
+        {
+          "window_id": "W20",
+          "referent": "him",
+          "nature": "pronoun",
+          "sentence": "With perfect decorum they seized him by either arm and ran him out of the gate.",
+          "explanation": "The pronoun 'him' has no antecedent in this window — no character is introduced as the person ejected; a reader sees only the song lyrics and then 'they seized him' with no prior naming of who 'him' is.",
+          "agreement": 2,
+          "start_para": 19
+        },
+        {
+          "window_id": "W21",
+          "referent": "it",
+          "nature": "pronoun",
+          "sentence": "In Tuppence's hospital days the gramophone had ground it out a hundred times.",
+          "explanation": "'It' refers to a song that is not quoted or identified anywhere in this window, leaving the reader unable to determine what the gramophone had played.",
+          "agreement": 2,
+          "start_para": 20
+        },
+        {
+          "window_id": "W25",
+          "referent": "He repeated it",
+          "nature": "pronoun",
+          "sentence": "He repeated it, abashed.",
+          "explanation": "Both 'He' and 'it' lack antecedents within this window; the window opens with this sentence so a reader cannot identify who is speaking or what is being repeated.",
+          "agreement": 2,
+          "start_para": 24
+        },
+        {
+          "window_id": "W26",
+          "referent": "He repeated it, abashed.",
+          "nature": "pronoun",
+          "sentence": "He repeated it, abashed.",
+          "explanation": "Both 'He' and 'it' lack antecedents within this window — no character has been introduced and nothing has been said that could be repeated; the referents exist entirely outside this window.",
+          "agreement": 2,
+          "start_para": 25
+        },
+        {
+          "window_id": "W33",
+          "referent": "the note",
+          "nature": "definite_article",
+          "sentence": "He smoothed the note thoughtfully. 'Yes, a damned fool,' he said softly.",
+          "explanation": "The window opens with Tommy smoothing 'the note' as though it has already been presented, but no note has been introduced within this window.",
+          "agreement": 2,
+          "start_para": 32
+        },
+        {
+          "window_id": "W34",
+          "referent": "the note",
+          "nature": "definite_article",
+          "sentence": "He smoothed the note thoughtfully. 'Yes, a damned fool,' he said softly.",
+          "explanation": "'The note' is referenced with a definite article presupposing prior introduction, but no note has been established anywhere in this window.",
+          "agreement": 3,
+          "start_para": 33
+        }
+      ]
+    },
+    {
+      "segment_id": "025",
+      "paragraphs": 85,
+      "windows": 84,
+      "findings_count": 5,
+      "findings": [
+        {
+          "window_id": "W29",
+          "referent": "the other girl",
+          "nature": "definite_article",
+          "sentence": "What about the other girl—the one you decoyed away?",
+          "explanation": "A reader seeing only this window has no basis for who 'the other girl' is, as no first girl has been established within the window.",
+          "agreement": 2,
+          "start_para": 28
+        },
+        {
+          "window_id": "W30",
+          "referent": "the other girl",
+          "nature": "definite_article",
+          "sentence": "What about the other girl—the one you decoyed away?",
+          "explanation": "The phrase 'the other girl' presupposes a first girl already introduced, but no such girl is established anywhere within this window.",
+          "agreement": 2,
+          "start_para": 29
+        },
+        {
+          "window_id": "W53",
+          "referent": "she",
+          "nature": "pronoun",
+          "sentence": "\"Splendid!\" she cried.",
+          "explanation": "The pronoun 'she' has no antecedent within this window, and 'Splendid' is a reaction to something entirely outside the window, leaving the speaker and context unidentifiable.",
+          "agreement": 2,
+          "start_para": 52
+        },
+        {
+          "window_id": "W62",
+          "referent": "He",
+          "nature": "pronoun",
+          "sentence": "He raised a hand to his cheek. Only a scratch.",
+          "explanation": "The window opens with 'He' but contains no named or described male character within it to establish who has been scratched.",
+          "agreement": 2,
+          "start_para": 61
+        },
+        {
+          "window_id": "W83",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They ran.",
+          "explanation": "The pronoun 'They' has no antecedent within this window, making it impossible for a reader to know who is running or why.",
+          "agreement": 3,
+          "start_para": 82
+        }
+      ]
+    },
+    {
+      "segment_id": "026",
+      "paragraphs": 53,
+      "windows": 52,
+      "findings_count": 0,
+      "findings": []
+    },
+    {
+      "segment_id": "027",
+      "paragraphs": 34,
+      "windows": 33,
+      "findings_count": 7,
+      "findings": [
+        {
+          "window_id": "W1",
+          "referent": "As I was saying to Miss Tuppence",
+          "nature": "callback",
+          "sentence": "As I was saying to Miss Tuppence, the lawyer resumed quietly, I set to work to prove the impossible possible.",
+          "explanation": "This phrase explicitly refers to a prior conversation not contained in the window, leaving a reader seeing only this window unable to know what was previously said.",
+          "agreement": 2,
+          "start_para": 0
+        },
+        {
+          "window_id": "W7",
+          "referent": "him / them",
+          "nature": "pronoun",
+          "sentence": "Yes. When the right moment came to get rid of him, he was too sharp for them.",
+          "explanation": "Both 'him' and 'them' lack any antecedent inside this window; the subject being discussed and the group trying to get rid of him are established only in prior material.",
+          "agreement": 3,
+          "start_para": 6
+        },
+        {
+          "window_id": "W8",
+          "referent": "him / them",
+          "nature": "pronoun",
+          "sentence": "When the right moment came to get rid of him, he was too sharp for them.",
+          "explanation": "Neither 'him' nor 'them' is introduced within this window; a reader sees only this two-paragraph snippet and cannot determine who 'him' is or who 'them' refers to.",
+          "agreement": 2,
+          "start_para": 7
+        },
+        {
+          "window_id": "W29",
+          "referent": "As he did so",
+          "nature": "pronoun",
+          "sentence": "As he did so, an iron grip seized him from behind; the revolver was wrenched away.",
+          "explanation": "'As he did so' refers to an action performed by an unidentified 'he' doing something established outside the window, leaving both the actor and the action unresolvable.",
+          "agreement": 2,
+          "start_para": 28
+        },
+        {
+          "window_id": "W31",
+          "referent": "the other",
+          "nature": "definite_article",
+          "sentence": "Sir James looked from one to the other, longest at Tommy.",
+          "explanation": "The window opens mid-scene with 'one' and 'the other' as definite references to two people never established within the window itself.",
+          "agreement": 2,
+          "start_para": 30
+        },
+        {
+          "window_id": "W32",
+          "referent": "his",
+          "nature": "pronoun",
+          "sentence": "They relaxed their hold a fraction. His left hand—bearing the big signet ring—flashed to his lips.",
+          "explanation": "The window opens with 'They relaxed their hold' and then 'His left hand,' but no male subject has been introduced within this window to anchor the pronoun 'his'.",
+          "agreement": 3,
+          "start_para": 31
+        },
+        {
+          "window_id": "W33",
+          "referent": "They",
+          "nature": "pronoun",
+          "sentence": "They relaxed their hold a fraction. His left hand—bearing the big signet ring—flashed to his lips.",
+          "explanation": "'They' opens the window with no antecedent established within it, so a reader cannot identify who is relaxing their hold or upon whom.",
+          "agreement": 2,
+          "start_para": 32
+        }
+      ]
+    },
+    {
+      "segment_id": "028",
+      "paragraphs": 40,
+      "windows": 39,
+      "findings_count": 6,
+      "findings": [
+        {
+          "window_id": "W2",
+          "referent": "the other three",
+          "nature": "definite_article",
+          "sentence": "there and then, in the presence of the other three, it was reduced to ashes.",
+          "explanation": "No group of people has been established in this window, leaving 'the other three' without an identifiable antecedent.",
+          "agreement": 2,
+          "start_para": 1
+        },
+        {
+          "window_id": "W34",
+          "referent": "the diary excerpts",
+          "nature": "definite_article",
+          "sentence": "\"... The war disturbs me.... They won the war.... It disturbs me....",
+          "explanation": "These quoted passages continue a diary reading established in an earlier window; without that framing, a reader of only W34 cannot identify whose diary this is or who is reading it.",
+          "agreement": 2,
+          "start_para": 33
+        },
+        {
+          "window_id": "W35",
+          "referent": "the diary excerpts",
+          "nature": "definite_article",
+          "sentence": "\"... All goes well. The loss of memory is vexing. It cannot be a fake. No girl could deceive me!...",
+          "explanation": "Mid-stream diary excerpts with no establishing frame inside the window to identify the writer or the context of this document being read.",
+          "agreement": 2,
+          "start_para": 34
+        },
+        {
+          "window_id": "W36",
+          "referent": "the diary excerpts / the girl",
+          "nature": "definite_article",
+          "sentence": "\"... By inducing the girl to come to me of her own accord, I have disarmed her. But she has intuitive flashes that might be dangerous....",
+          "explanation": "Both 'the girl' and the broader diary-reading context are established outside this window; a reader seeing only W36 cannot identify who is writing, who 'the girl' is, or why these passages are being quoted.",
+          "agreement": 3,
+          "start_para": 35
+        },
+        {
+          "window_id": "W37",
+          "referent": "the other boy",
+          "nature": "definite_article",
+          "sentence": "Sometimes I fear I have underestimated the other boy. He is not clever, but it is hard to blind his eyes to facts.",
+          "explanation": "No boys or group of boys are introduced in this window, so 'the other boy' implies a contrast with a previously mentioned boy absent from this window.",
+          "agreement": 2,
+          "start_para": 36
+        },
+        {
+          "window_id": "W39",
+          "referent": "He",
+          "nature": "pronoun",
+          "sentence": "He rose. 'I will give you a toast. The Joint Venture that has justified itself by success!'",
+          "explanation": "No male character is identified as the current speaker in this window, so 'He rose' leaves the subject of the action unresolvable from the window alone.",
+          "agreement": 2,
+          "start_para": 38
+        }
+      ]
+    },
+    {
+      "segment_id": "029",
+      "paragraphs": 73,
+      "windows": 72,
+      "findings_count": 3,
+      "findings": [
+        {
+          "window_id": "W12",
+          "referent": "his",
+          "nature": "pronoun",
+          "sentence": "But a small hand was slipped into his.",
+          "explanation": "The pronoun 'his' has no named or introduced antecedent within this window, so a reader cannot determine whose hand is being taken.",
+          "agreement": 2,
+          "start_para": 11
+        },
+        {
+          "window_id": "W12",
+          "referent": "But",
+          "nature": "connective",
+          "sentence": "But a small hand was slipped into his.",
+          "explanation": "The opening 'But' contrasts with a prior statement or action not present in this window, leaving the contrast without a basis.",
+          "agreement": 3,
+          "start_para": 11
+        },
+        {
+          "window_id": "W28",
+          "referent": "equally afflicted",
+          "nature": "connective",
+          "sentence": "Tommy was equally afflicted.",
+          "explanation": "The word 'equally' implies a prior comparison — someone else was afflicted first — but that prior reference is not established anywhere in this window.",
+          "agreement": 2,
+          "start_para": 27
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "window_id": "W10",
+      "referent": "Tommy's pencil which she had retained",
+      "nature": "definite_article",
+      "sentence": "Tuppence drew out Tommy's pencil which she had retained and wrote rapidly: \"Don't put in advertisement. Will explain to-morrow.\"",
+      "explanation": "The phrase 'which she had retained' implies a prior scene in which Tuppence took or kept Tommy's pencil, an event not established anywhere in this window.",
+      "agreement": 2,
+      "start_para": 9,
+      "segment_id": "003"
+    },
+    {
+      "window_id": "W39",
+      "referent": "what he meant",
+      "nature": "definite_article",
+      "sentence": "Tuppence, utterly taken aback, kept her head. She had no idea what he meant, but she \"kept her end up.\"",
+      "explanation": "The first paragraph describes Tuppence reacting to something Whittington said, but his accusatory remark ('So that's your little game') appears only in the preceding window, not in this one, so 'what he meant' dangles without context.",
+      "agreement": 2,
+      "start_para": 38,
+      "segment_id": "003"
+    },
+    {
+      "window_id": "W49",
+      "referent": "her present part",
+      "nature": "definite_article",
+      "sentence": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities.",
+      "explanation": "The phrase 'her present part' implies a role or performance previously established in context not found in this window, leaving a reader uncertain what part is being described.",
+      "agreement": 2,
+      "start_para": 48,
+      "segment_id": "003"
+    },
+    {
+      "window_id": "W26",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "After all, you know, you can't bluff him forever. He'll want to know where you got your information.",
+      "explanation": "This window opens with a reference to bluffing 'him' but provides no antecedent for 'him' anywhere within its two paragraphs.",
+      "agreement": 2,
+      "start_para": 25,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W34",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "My plan is this: I go alone to-morrow, put him off again.",
+      "explanation": "There is no antecedent for 'him' anywhere in this window; the person being put off is established only in prior material.",
+      "agreement": 2,
+      "start_para": 33,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W35",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "My plan is this: I go alone to-morrow, put him off again. You hang about outside. When he comes out I'll drop a handkerchief or something—and off you go.",
+      "explanation": "Neither 'him' nor 'he' has an antecedent within this window; the person being followed is established only outside this window.",
+      "agreement": 2,
+      "start_para": 34,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W36",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "Follow him, of course!",
+      "explanation": "No antecedent for 'him' exists anywhere in this window; the person to be followed is identified only in prior material.",
+      "agreement": 2,
+      "start_para": 35,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W37",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "Follow him, of course!",
+      "explanation": "No antecedent for 'him' is present in this window; a reader cannot determine who is to be followed.",
+      "agreement": 2,
+      "start_para": 36,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W39",
+      "referent": "the five-pound notes",
+      "nature": "definite_article",
+      "sentence": "Two of the five-pound notes died gallantly.",
+      "explanation": "A reader seeing only this window has no prior mention of five-pound notes to anchor this definite reference.",
+      "agreement": 2,
+      "start_para": 38,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W47",
+      "referent": "they",
+      "nature": "pronoun",
+      "sentence": "Back in the street they stared at one another.",
+      "explanation": "The window opens mid-scene and 'they' has no antecedent within it; the characters who went to the office together are established only in prior windows.",
+      "agreement": 2,
+      "start_para": 46,
+      "segment_id": "004"
+    },
+    {
+      "window_id": "W6",
+      "referent": "them",
+      "nature": "pronoun",
+      "sentence": "Tommy, you devil! Give them to me. How could you be so mean!",
+      "explanation": "The pronoun 'them' has no antecedent within this window — the reader cannot tell what Tommy is withholding without prior context establishing the letters or envelopes.",
+      "agreement": 2,
+      "start_para": 5,
+      "segment_id": "005"
+    },
+    {
+      "window_id": "W11",
+      "referent": "the fifty",
+      "nature": "definite_article",
+      "sentence": "I reply: 'Edward Whittington!' He turns purple and gasps: 'How much?' I pocket the fifty—",
+      "explanation": "The definite 'the fifty' presupposes a sum of fifty pounds established in prior material; no such amount has been introduced anywhere in this window.",
+      "agreement": 2,
+      "start_para": 10,
+      "segment_id": "005"
+    },
+    {
+      "window_id": "W12",
+      "referent": "the fifty",
+      "nature": "definite_article",
+      "sentence": "I reply: 'Edward Whittington!' He turns purple and gasps: 'How much?' I pocket the fifty—",
+      "explanation": "The definite 'the fifty' presupposes a specific sum established in prior context that does not appear anywhere in this window.",
+      "agreement": 2,
+      "start_para": 11,
+      "segment_id": "005"
+    },
+    {
+      "window_id": "W13",
+      "referent": "the other",
+      "nature": "definite_article",
+      "sentence": "Don't be absurd. Now the other. Oh, this is from the Ritz!",
+      "explanation": "The phrase 'the other' assumes a previously established pair of items (letters/envelopes), neither of which is introduced within this window.",
+      "agreement": 2,
+      "start_para": 12,
+      "segment_id": "005"
+    },
+    {
+      "window_id": "W22",
+      "referent": "But",
+      "nature": "connective",
+      "sentence": "But Tommy's tone held deference.",
+      "explanation": "The opening 'But' signals a contrast with Tuppence's preceding resistance or speech, which appears in W21 and is entirely absent from this window.",
+      "agreement": 2,
+      "start_para": 21,
+      "segment_id": "005"
+    },
+    {
+      "window_id": "W8",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "It will be waiting for you.",
+      "explanation": "The pronoun 'it' has no antecedent anywhere in this window, leaving a reader unable to determine what will be waiting.",
+      "agreement": 3,
+      "start_para": 7,
+      "segment_id": "006"
+    },
+    {
+      "window_id": "W17",
+      "referent": "Mr. Beresford obliged",
+      "nature": "connective",
+      "sentence": "Mr. Beresford obliged.",
+      "explanation": "This sentence records Tommy complying with a request to pinch Tuppence, but the request itself appears only in the preceding window (W16), so a reader seeing only W17 cannot understand what action 'obliged' refers to.",
+      "agreement": 2,
+      "start_para": 16,
+      "segment_id": "006"
+    },
+    {
+      "window_id": "W20",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "We never told Mr. Carter about hearing from him.",
+      "explanation": "The pronoun 'him' refers to a person not established anywhere in this window, leaving the reader unable to identify who contacted them.",
+      "agreement": 2,
+      "start_para": 19,
+      "segment_id": "006"
+    },
+    {
+      "window_id": "W1",
+      "referent": "The reverse",
+      "nature": "definite_article",
+      "sentence": "A veil might with profit be drawn over the next half-hour. Suffice it to say that no such person as 'Inspector Brown' was known to Scotland Yard, and the photograph of Jane Finn, which would have been of the utmost value, was lost beyond recovery. Once again 'Mr. Brown' had triumphed.",
+      "explanation": "A reader seeing only this window has no context for what 'The reverse' refers to — the failure or setback that prompted this paragraph is entirely outside the window.",
+      "agreement": 2,
+      "start_para": 0,
+      "segment_id": "007"
+    },
+    {
+      "window_id": "W34",
+      "referent": "he",
+      "nature": "pronoun",
+      "sentence": "Still, it is queer he hasn't wreaked vengeance upon us.",
+      "explanation": "The pronoun 'he' has no antecedent within this window; it refers to Mr. Brown, who was last mentioned in prior material not present here.",
+      "agreement": 3,
+      "start_para": 33,
+      "segment_id": "007"
+    },
+    {
+      "window_id": "W46",
+      "referent": "his",
+      "nature": "pronoun",
+      "sentence": "Her hand still in his, they reached the entrance hall.",
+      "explanation": "The possessive pronoun 'his' has no antecedent within this window; the male character whose hand Tuppence holds is not introduced or named here.",
+      "agreement": 2,
+      "start_para": 45,
+      "segment_id": "007"
+    },
+    {
+      "window_id": "W4",
+      "referent": "the other",
+      "nature": "definite_article",
+      "sentence": "\"Why not, my friend?\" the other laughed softly.",
+      "explanation": "A reader seeing only this window has no way to identify who 'the other' is, as no second character has been established within this window.",
+      "agreement": 2,
+      "start_para": 3,
+      "segment_id": "008"
+    },
+    {
+      "window_id": "W5",
+      "referent": "the other",
+      "nature": "definite_article",
+      "sentence": "\"Why not, my friend?\" the other laughed softly.",
+      "explanation": "A reader seeing only this window has no way to identify who 'the other' is, as no second character has been introduced or named within this window.",
+      "agreement": 2,
+      "start_para": 4,
+      "segment_id": "008"
+    },
+    {
+      "window_id": "W16",
+      "referent": "the other",
+      "nature": "definite_article",
+      "sentence": "That's Whittington—getting in now. The foreign chap is the other.",
+      "explanation": "A reader seeing only this window has no context for who 'the other' refers to, as no second person has been introduced or described within this window.",
+      "agreement": 2,
+      "start_para": 15,
+      "segment_id": "008"
+    },
+    {
+      "window_id": "W1",
+      "referent": "the two men",
+      "nature": "definite_article",
+      "sentence": "When Tommy set forth on the trail of the two men, it took all Tuppence's self-command not to run after him.",
+      "explanation": "A reader seeing only this window has no information about which two men are being trailed, as they were introduced in prior material outside the window.",
+      "agreement": 3,
+      "start_para": 0,
+      "segment_id": "010"
+    },
+    {
+      "window_id": "W1",
+      "referent": "her 'Rita' deduction",
+      "nature": "callback",
+      "sentence": "Consoling herself that her 'Rita' deduction had panned out, she drifted back to the entrance hall of South Audley Mansions.",
+      "explanation": "The 'Rita' deduction refers to reasoning Tuppence performed in prior material not present in this window, leaving a reader with no context for what it means or why it matters.",
+      "agreement": 3,
+      "start_para": 0,
+      "segment_id": "010"
+    },
+    {
+      "window_id": "W30",
+      "referent": "His warnings",
+      "nature": "pronoun",
+      "sentence": "His warnings passed unheeded; but she sensibly adopted his plan.",
+      "explanation": "The possessive pronoun 'His' has no antecedent within this window; Mr. Carter and his letter appear only in W29, not in W30, so the referent is inaccessible to a reader of this window alone.",
+      "agreement": 3,
+      "start_para": 29,
+      "segment_id": "010"
+    },
+    {
+      "window_id": "W38",
+      "referent": "She had not feared Whittington",
+      "nature": "callback",
+      "sentence": "She had not feared Whittington, but this woman was different.",
+      "explanation": "The contrast with Whittington is a callback to prior scenes involving him that are not present in this window, so a reader cannot understand the basis of the comparison.",
+      "agreement": 2,
+      "start_para": 37,
+      "segment_id": "010"
+    },
+    {
+      "window_id": "W12",
+      "referent": "The other",
+      "nature": "definite_article",
+      "sentence": "She came in to-day. The other was a fiend. This girl seems all right. She waits well.",
+      "explanation": "A reader seeing only this window cannot identify who 'the other' refers to, as no prior servant or comparison figure has been introduced within the window.",
+      "agreement": 2,
+      "start_para": 11,
+      "segment_id": "011"
+    },
+    {
+      "window_id": "W13",
+      "referent": "The other",
+      "nature": "definite_article",
+      "sentence": "The other was a fiend. This girl seems all right. She waits well.",
+      "explanation": "The definite reference 'the other' presupposes a prior person (a previous servant) introduced outside this window, leaving a reader seeing only this window without an antecedent.",
+      "agreement": 2,
+      "start_para": 12,
+      "segment_id": "011"
+    },
+    {
+      "window_id": "W7",
+      "referent": "he",
+      "nature": "pronoun",
+      "sentence": "But where is he?",
+      "explanation": "The pronoun 'he' has no antecedent within this window, so a reader sees only this window cannot determine whose whereabouts are being questioned.",
+      "agreement": 2,
+      "start_para": 6,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W7",
+      "referent": "But",
+      "nature": "connective",
+      "sentence": "But where is he?",
+      "explanation": "The opening 'But' signals contrast with something said immediately before, which is entirely outside this window.",
+      "agreement": 2,
+      "start_para": 6,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W32",
+      "referent": "that man Boris",
+      "nature": "definite_article",
+      "sentence": "He couldn't—passports and things. Besides, I've seen that man Boris since. He dined with Mrs. Vandemeyer last night.",
+      "explanation": "The definite phrase 'that man Boris' signals a previously established referent, but Boris is introduced here for the first time in this window with no prior setup.",
+      "agreement": 2,
+      "start_para": 31,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W50",
+      "referent": "the ambiguous warning",
+      "nature": "callback",
+      "sentence": "Oh; but I forgot—I met Sir James Peel Edgerton this morning, and told of the ambiguous warning.",
+      "explanation": "The narrator summarizes telling Julius 'the ambiguous warning,' treating it as a known, defined event, but the content of that warning is not established anywhere in this window.",
+      "agreement": 2,
+      "start_para": 49,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W53",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "Don't you think it. So long.",
+      "explanation": "The pronoun 'it' refers to a claim made outside this window, so a reader seeing only W53 cannot determine what Julius is dismissing.",
+      "agreement": 2,
+      "start_para": 52,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W56",
+      "referent": "She",
+      "nature": "pronoun",
+      "sentence": "'She's some pace-maker,' said Julius complacently.",
+      "explanation": "The pronoun 'she' refers to a car being admired, but no car is introduced or described anywhere in this window, so the referent is completely opaque.",
+      "agreement": 2,
+      "start_para": 55,
+      "segment_id": "012"
+    },
+    {
+      "window_id": "W29",
+      "referent": "They parted",
+      "nature": "pronoun",
+      "sentence": "They parted. Tuppence, restless, walked, but as she neared Hyde Park Corner an unreasonable uneasiness grew.",
+      "explanation": "A reader seeing only this window cannot determine who 'they' are, as no prior scene or participants are established within the window.",
+      "agreement": 2,
+      "start_para": 28,
+      "segment_id": "013"
+    },
+    {
+      "window_id": "W46",
+      "referent": "the original",
+      "nature": "definite_article",
+      "sentence": "In any case, it's the original I'm after. Where do you think she can be?",
+      "explanation": "The speaker refers to 'the original' as if a specific document or item has already been discussed, but no such item is introduced in this window.",
+      "agreement": 3,
+      "start_para": 45,
+      "segment_id": "014"
+    },
+    {
+      "window_id": "W95",
+      "referent": "the little glass she had upset",
+      "nature": "definite_article",
+      "sentence": "Tuppence remembered the little glass she had upset.",
+      "explanation": "The glass and the upsetting event are not introduced anywhere in this window, so a reader has no basis for knowing what glass is meant or when it was upset.",
+      "agreement": 2,
+      "start_para": 94,
+      "segment_id": "014"
+    },
+    {
+      "window_id": "W34",
+      "referent": "As I said before",
+      "nature": "callback",
+      "sentence": "\"As I said before, I'm a mutt,\" muttered Julius.",
+      "explanation": "The phrase 'as I said before' explicitly references a prior statement by Julius that does not appear anywhere in this window.",
+      "agreement": 2,
+      "start_para": 33,
+      "segment_id": "015"
+    },
+    {
+      "window_id": "W3",
+      "referent": "your fall from my tree",
+      "nature": "definite_article",
+      "sentence": "Yes—after your—er—fall from my tree. A very urgent message came from Mrs. Vandemeyer.",
+      "explanation": "A reader seeing only this window has no context for what 'your fall from my tree' refers to, as the incident was established in prior material outside this window.",
+      "agreement": 2,
+      "start_para": 2,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W29",
+      "referent": "Once before he had thrown a hint in this careless fashion",
+      "nature": "callback",
+      "sentence": "Once before he had thrown a hint in this careless fashion. Was this a hint now? Had he not abandoned the case after all?",
+      "explanation": "The callback to a prior occasion when Sir James threw a hint relies on material outside this window that a reader cannot access here.",
+      "agreement": 3,
+      "start_para": 28,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W31",
+      "referent": "Julius at the safe; her own question; his pause before 'Nothing.'",
+      "nature": "callback",
+      "sentence": "Another memory flashed: Julius at the safe; her own question; his pause before 'Nothing.' Had he, too, held back?",
+      "explanation": "The scene at the safe and the exchange about 'Nothing' are recalled as specific prior events not established anywhere in this window.",
+      "agreement": 3,
+      "start_para": 30,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W32",
+      "referent": "Julius at the safe; her own question; his pause before 'Nothing.'",
+      "nature": "callback",
+      "sentence": "Another memory flashed: Julius at the safe; her own question; his pause before 'Nothing.' Had he, too, held back?",
+      "explanation": "The definite reference to the safe scene and the specific exchange are callbacks to prior material entirely absent from this window.",
+      "agreement": 3,
+      "start_para": 31,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W75",
+      "referent": "that safe",
+      "nature": "definite_article",
+      "sentence": "He'll insist on a reason. I wonder if he did find anything in that safe——",
+      "explanation": "The definite phrase 'that safe' presupposes a previously established safe known to both speaker and reader, but no safe is introduced or mentioned anywhere in this window.",
+      "agreement": 3,
+      "start_para": 74,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W76",
+      "referent": "that safe",
+      "nature": "definite_article",
+      "sentence": "He'll insist on a reason. I wonder if he did find anything in that safe——",
+      "explanation": "'That safe' is a definite reference to a specific object established in prior material not contained in this window.",
+      "agreement": 3,
+      "start_para": 75,
+      "segment_id": "016"
+    },
+    {
+      "window_id": "W26",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They wavered.",
+      "explanation": "The paragraph opens with 'They wavered' but no group has been introduced in this window, leaving the referent of 'They' entirely undefined.",
+      "agreement": 2,
+      "start_para": 25,
+      "segment_id": "017"
+    },
+    {
+      "window_id": "W35",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "\"Then—\" baffled anger choked him.",
+      "explanation": "The pronoun 'him' has no named or described character introduced in this window to serve as its antecedent.",
+      "agreement": 2,
+      "start_para": 34,
+      "segment_id": "017"
+    },
+    {
+      "window_id": "W4",
+      "referent": "the verbal encounter of this afternoon",
+      "nature": "definite_article",
+      "sentence": "Such an affair was infinitely more in his line than the verbal encounter of this afternoon.",
+      "explanation": "A reader seeing only this window has no knowledge of what verbal encounter took place this afternoon, as it occurred in prior material outside the window.",
+      "agreement": 2,
+      "start_para": 3,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W32",
+      "referent": "the picture he had set against the wall",
+      "nature": "definite_article",
+      "sentence": "She turned—caught sight of the picture he had set against the wall.",
+      "explanation": "The act of Tommy setting a picture against the wall occurred in a prior scene not contained in this window, so the definite reference to it has no establishing context here.",
+      "agreement": 2,
+      "start_para": 31,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W45",
+      "referent": "the famous picture",
+      "nature": "definite_article",
+      "sentence": "He felt an economical pleasure that his first plan would not be wasted. He waited.",
+      "explanation": "The picture is called 'the famous picture' as a callback to its earlier description and Tommy's plan involving it, neither of which appears in this window.",
+      "agreement": 2,
+      "start_para": 44,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W46",
+      "referent": "the famous picture",
+      "nature": "definite_article",
+      "sentence": "in the dark unhooked the famous picture.",
+      "explanation": "The epithet 'famous' is a callback to prior material describing the picture and Tommy's plan to use it; a reader of only this window has no basis for the label.",
+      "agreement": 3,
+      "start_para": 45,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W72",
+      "referent": "that draft treaty",
+      "nature": "definite_article",
+      "sentence": "But if that draft treaty turns up—we're done.",
+      "explanation": "The draft treaty is referenced with 'that' as if previously established, but no treaty has been introduced or described anywhere in this window.",
+      "agreement": 2,
+      "start_para": 71,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W88",
+      "referent": "'Rita'",
+      "nature": "definite_article",
+      "sentence": "Tommy hailed a taxi, the thought of startling Tuppence warming him. 'Dogging 'Rita' most likely.'",
+      "explanation": "The name 'Rita' is invoked as a known referent (someone Tuppence is apparently following) with no introduction or explanation anywhere in this window.",
+      "agreement": 2,
+      "start_para": 87,
+      "segment_id": "018"
+    },
+    {
+      "window_id": "W11",
+      "referent": "she / it / he",
+      "nature": "pronoun",
+      "sentence": "'The doctor kidded himself she took it herself,' he ended dryly.",
+      "explanation": "The window opens with 'she took it' and 'he ended' but none of these pronouns have antecedents established anywhere within this window.",
+      "agreement": 2,
+      "start_para": 10,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W19",
+      "referent": "All the same",
+      "nature": "connective",
+      "sentence": "All the same, Mr. Brown hasn't got wings. I don't see how he got in and out.",
+      "explanation": "'All the same' opens the paragraph by conceding or contrasting with a point made outside this window, and Mr. Brown's relevance is not established within it.",
+      "agreement": 3,
+      "start_para": 18,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W31",
+      "referent": "she / that note",
+      "nature": "definite_article",
+      "sentence": "'What did she say in that note?' he demanded fiercely.",
+      "explanation": "'That note' presupposes a specific note already known to the reader, and 'she' has no named antecedent introduced anywhere in this window.",
+      "agreement": 2,
+      "start_para": 30,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W41",
+      "referent": "that telegram",
+      "nature": "definite_article",
+      "sentence": "'Come on, Julius. We must find that telegram.'",
+      "explanation": "'That telegram' is a definite back-reference to a telegram not introduced or mentioned anywhere in this window.",
+      "agreement": 2,
+      "start_para": 40,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W44",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "'You didn't send it?' 'Of course not.'",
+      "explanation": "The window opens with 'You didn't send it?' but no document, message, or object has been introduced in this window for 'it' to refer to.",
+      "agreement": 2,
+      "start_para": 43,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W54",
+      "referent": "The journey",
+      "nature": "definite_article",
+      "sentence": "The journey was wearisome. At a deserted station they got meticulous but perplexing directions to 'the big house near the sea.'",
+      "explanation": "No journey has been introduced in this window; 'The journey' presupposes a destination or plan established in prior material not visible here.",
+      "agreement": 2,
+      "start_para": 53,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W65",
+      "referent": "the plan",
+      "nature": "definite_article",
+      "sentence": "But the plan miscarried. Later in the day Tommy received a wire:",
+      "explanation": "A reader seeing only this window has no idea what 'the plan' refers to, as no plan has been described or mentioned anywhere within the window.",
+      "agreement": 2,
+      "start_para": 64,
+      "segment_id": "019"
+    },
+    {
+      "window_id": "W22",
+      "referent": "The words",
+      "nature": "definite_article",
+      "sentence": "The words came out like the crack of a pistol, and Tommy looked up with a start.",
+      "explanation": "This window opens with 'The words came out' but no words have been spoken within this window, so the definite reference is unresolvable without prior context.",
+      "agreement": 2,
+      "start_para": 21,
+      "segment_id": "020"
+    },
+    {
+      "window_id": "W64",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They've been telling me dreadful things—that my memory went, and that there are years I shall never know.",
+      "explanation": "'They' opens the window referring to people not introduced or identified anywhere within this window.",
+      "agreement": 2,
+      "start_para": 63,
+      "segment_id": "020"
+    },
+    {
+      "window_id": "W69",
+      "referent": "She",
+      "nature": "pronoun",
+      "sentence": "She hesitated, glancing at the others.",
+      "explanation": "The opening 'She hesitated' has no female antecedent established within this window; the name 'Jane' only appears later in Julius's direct address, after the pronoun is used.",
+      "agreement": 2,
+      "start_para": 68,
+      "segment_id": "020"
+    },
+    {
+      "window_id": "W80",
+      "referent": "She",
+      "nature": "pronoun",
+      "sentence": "She pressed her hand to her head.",
+      "explanation": "No female character is named or introduced in this window; 'She' is used in narration without any antecedent present in either paragraph.",
+      "agreement": 2,
+      "start_para": 79,
+      "segment_id": "020"
+    },
+    {
+      "window_id": "W13",
+      "referent": "he / But",
+      "nature": "connective",
+      "sentence": "But he won't be needed this trip. There's nobody to put Mr. Brown wise.",
+      "explanation": "The opening 'But' contrasts a prior statement not present in this window, and 'he' has no antecedent established within the window, leaving a reader confused about who is being discussed and what is being contradicted.",
+      "agreement": 2,
+      "start_para": 12,
+      "segment_id": "021"
+    },
+    {
+      "window_id": "W31",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "Can't be. We'd see him.",
+      "explanation": "The pronoun 'him' refers to an unidentified person supposedly following the characters, whose existence was established only in the preceding window (W30), leaving a reader of W31 alone with no antecedent for 'him'.",
+      "agreement": 2,
+      "start_para": 30,
+      "segment_id": "021"
+    },
+    {
+      "window_id": "W32",
+      "referent": "Nevertheless",
+      "nature": "connective",
+      "sentence": "Nevertheless Tommy's sense of the enemy's omniscience deepened.",
+      "explanation": "The 'Nevertheless' contrasts with a reassurance ('Can't be. We'd see him.') that does not appear anywhere in this window, leaving the logical contrast without a basis.",
+      "agreement": 2,
+      "start_para": 31,
+      "segment_id": "021"
+    },
+    {
+      "window_id": "W46",
+      "referent": "the rock",
+      "nature": "definite_article",
+      "sentence": "He glared at the rock. 'Damn it! It's impossible! Five years! Bird's-nesting boys, picnic parties, thousands of people passing! It can't be there!'",
+      "explanation": "A reader seeing only this window has no introduction to which specific rock Tommy is glaring at, as the boulder/crevice scene is not established within this window.",
+      "agreement": 2,
+      "start_para": 45,
+      "segment_id": "021"
+    },
+    {
+      "window_id": "W1",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They stared at each other stupidly. Somehow, inexplicably, Mr. Brown had forestalled them.",
+      "explanation": "The pronoun 'They' opens the window with no antecedent established inside it, leaving the reader unable to identify who is staring.",
+      "agreement": 3,
+      "start_para": 0,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W2",
+      "referent": "the stitches",
+      "nature": "definite_article",
+      "sentence": "It accounts for the stitches being new, said Tommy dully. We might have guessed.",
+      "explanation": "The stitches are referenced as already known to the reader but are never introduced or explained anywhere within this window.",
+      "agreement": 2,
+      "start_para": 1,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W15",
+      "referent": "this other news",
+      "nature": "definite_article",
+      "sentence": "I have been blaming myself ever since I heard this other news.",
+      "explanation": "A reader seeing only this window cannot determine what 'this other news' refers to, as it points to information introduced outside the window.",
+      "agreement": 2,
+      "start_para": 14,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W29",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "Kind old beggar, muttered Tommy, flinging it aside.",
+      "explanation": "The pronoun 'it' refers to an object (a letter or note) that has not been introduced anywhere in this window, leaving the referent unclear.",
+      "agreement": 2,
+      "start_para": 28,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W43",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They were on the point of blows, when Julius's anger dropped away.",
+      "explanation": "The window opens with 'They were on the point of blows' but the altercation and who 'they' are in this moment of conflict has no setup within the window itself.",
+      "agreement": 2,
+      "start_para": 42,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W50",
+      "referent": "Sir James's letter",
+      "nature": "definite_article",
+      "sentence": "He re-read Sir James's letter and shook his head. Tuppence must be avenged. Still, it was kind.",
+      "explanation": "Sir James's letter is referred to as a known, previously seen object but has not been introduced or described anywhere within this window.",
+      "agreement": 3,
+      "start_para": 49,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W51",
+      "referent": "Sir James's letter",
+      "nature": "definite_article",
+      "sentence": "He re-read Sir James's letter and shook his head. Tuppence must be avenged. Still, it was kind.",
+      "explanation": "Sir James's letter is treated as already known to the reader but is never introduced or quoted anywhere within this window.",
+      "agreement": 2,
+      "start_para": 50,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W53",
+      "referent": "the French girl Annette",
+      "nature": "definite_article",
+      "sentence": "What on earth was a photograph of the French girl Annette doing in Julius Hersheimmer's writing-table?",
+      "explanation": "Annette is referred to with the definite descriptor 'the French girl' as though previously established, but a reader seeing only this window has no context for who Annette is or why her presence would be surprising.",
+      "agreement": 2,
+      "start_para": 52,
+      "segment_id": "022"
+    },
+    {
+      "window_id": "W3",
+      "referent": "that girl at Manchester",
+      "nature": "definite_article",
+      "sentence": "If I'm right, that girl at Manchester was just a plant.",
+      "explanation": "A reader seeing only this window has no prior introduction to any girl at Manchester, making 'that girl' a dangling definite reference.",
+      "agreement": 2,
+      "start_para": 2,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W5",
+      "referent": "those things of Tuppence's",
+      "nature": "definite_article",
+      "sentence": "You see, I've figured it out that those things of Tuppence's are a plant too, and she's no more drowned than I am.",
+      "explanation": "No 'things of Tuppence's' have been introduced in this window, so 'those things' presupposes prior context a reader of only this window does not have.",
+      "agreement": 2,
+      "start_para": 4,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W6",
+      "referent": "those things of Tuppence's",
+      "nature": "definite_article",
+      "sentence": "You see, I've figured it out that those things of Tuppence's are a plant too, and she's no more drowned than I am.",
+      "explanation": "No 'things of Tuppence's' are introduced in this window; 'those things' dangles without an antecedent for a reader seeing only this window.",
+      "agreement": 2,
+      "start_para": 5,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W9",
+      "referent": "The enclosure",
+      "nature": "definite_article",
+      "sentence": "\"The enclosure?\"",
+      "explanation": "The enclosure is referenced as though just discussed, but nothing in this window establishes what enclosure is meant, leaving the referent dangling.",
+      "agreement": 3,
+      "start_para": 8,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W13",
+      "referent": "those girls",
+      "nature": "definite_article",
+      "sentence": "Once it's known, I wouldn't give that—for the lives of those girls.",
+      "explanation": "No girls have been introduced in this window; 'those girls' presupposes prior context that a reader of only this window does not have.",
+      "agreement": 3,
+      "start_para": 12,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W16",
+      "referent": "He",
+      "nature": "pronoun",
+      "sentence": "\"He seems confident,\" mused the Prime Minister.",
+      "explanation": "The pronoun 'He' opens the window referring to someone not introduced within it, leaving a reader unable to identify who is being discussed.",
+      "agreement": 2,
+      "start_para": 15,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W19",
+      "referent": "This—boy",
+      "nature": "definite_article",
+      "sentence": "\"This—boy. But I sometimes fancy I see a shadow behind.\"",
+      "explanation": "'This boy' is a demonstrative reference to a boy not introduced in this window, leaving the referent unresolved for a reader seeing only this window.",
+      "agreement": 2,
+      "start_para": 18,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W29",
+      "referent": "the page-boy's statement",
+      "nature": "definite_article",
+      "sentence": "And the one clue they overlooked was the page-boy's statement that Miss Cowley drove to Charing Cross.",
+      "explanation": "'The page-boy's statement' is referenced as a known specific piece of evidence not introduced anywhere in this window.",
+      "agreement": 2,
+      "start_para": 28,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W30",
+      "referent": "Then",
+      "nature": "connective",
+      "sentence": "\"Then young Beresford is now—?\"",
+      "explanation": "'Then' opens this window as a logical consequence of something not present in the window, leaving the connective dangling without the premise it follows from.",
+      "agreement": 2,
+      "start_para": 29,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W32",
+      "referent": "there",
+      "nature": "definite_article",
+      "sentence": "\"I rather wonder you're not there too.\"",
+      "explanation": "'There' refers to a specific place established in prior context that is not introduced anywhere in this window, leaving the location unresolved.",
+      "agreement": 2,
+      "start_para": 31,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W35",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "\"Perhaps it never left it,\" suggested the lawyer gently.",
+      "explanation": "Both instances of 'it' refer to objects (the photograph and the drawer, or similar) not introduced in this window, leaving the pronouns without antecedents.",
+      "agreement": 2,
+      "start_para": 34,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W35",
+      "referent": "the bogus inspector",
+      "nature": "definite_article",
+      "sentence": "\"But the bogus inspector? Inspector Brown?\"",
+      "explanation": "'The bogus inspector' is referenced as a known figure using a definite article, but no bogus inspector has been introduced anywhere in this window.",
+      "agreement": 2,
+      "start_para": 34,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W36",
+      "referent": "the bogus inspector",
+      "nature": "definite_article",
+      "sentence": "\"But the bogus inspector? Inspector Brown?\"",
+      "explanation": "'The bogus inspector' is used as though previously established, but no bogus inspector has been introduced anywhere in this window.",
+      "agreement": 3,
+      "start_para": 35,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W42",
+      "referent": "the letter",
+      "nature": "definite_article",
+      "sentence": "He threw the letter into the basket.",
+      "explanation": "'The letter' is referenced as a known object with a definite article, but no letter has been introduced anywhere in this window.",
+      "agreement": 2,
+      "start_para": 41,
+      "segment_id": "023"
+    },
+    {
+      "window_id": "W14",
+      "referent": "Again the cold chill seized Tommy.",
+      "nature": "callback",
+      "sentence": "Again the cold chill seized Tommy.",
+      "explanation": "The word 'Again' refers to a prior occurrence of this chill that is not described anywhere in this two-paragraph window, so a reader cannot identify what earlier event is being recalled.",
+      "agreement": 2,
+      "start_para": 13,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W15",
+      "referent": "Again the cold chill",
+      "nature": "callback",
+      "sentence": "Again the cold chill seized Tommy.",
+      "explanation": "The word 'again' refers to a prior occurrence of Tommy feeling a cold chill that is not shown anywhere in this window, leaving a reader confused about what is being repeated.",
+      "agreement": 2,
+      "start_para": 14,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W15",
+      "referent": "the sealed envelope",
+      "nature": "definite_article",
+      "sentence": "Hence the sealed envelope—bait.",
+      "explanation": "A reader seeing only this window has no prior introduction to any sealed envelope; the definite article presupposes knowledge of an object not established here.",
+      "agreement": 3,
+      "start_para": 14,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W16",
+      "referent": "the sealed envelope",
+      "nature": "definite_article",
+      "sentence": "Hence the sealed envelope—bait.",
+      "explanation": "The sealed envelope is referenced with a definite article as though already known, but no sealed envelope has been introduced anywhere in this window.",
+      "agreement": 3,
+      "start_para": 15,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W20",
+      "referent": "him",
+      "nature": "pronoun",
+      "sentence": "With perfect decorum they seized him by either arm and ran him out of the gate.",
+      "explanation": "The pronoun 'him' has no antecedent in this window — no character is introduced as the person ejected; a reader sees only the song lyrics and then 'they seized him' with no prior naming of who 'him' is.",
+      "agreement": 2,
+      "start_para": 19,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W21",
+      "referent": "it",
+      "nature": "pronoun",
+      "sentence": "In Tuppence's hospital days the gramophone had ground it out a hundred times.",
+      "explanation": "'It' refers to a song that is not quoted or identified anywhere in this window, leaving the reader unable to determine what the gramophone had played.",
+      "agreement": 2,
+      "start_para": 20,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W25",
+      "referent": "He repeated it",
+      "nature": "pronoun",
+      "sentence": "He repeated it, abashed.",
+      "explanation": "Both 'He' and 'it' lack antecedents within this window; the window opens with this sentence so a reader cannot identify who is speaking or what is being repeated.",
+      "agreement": 2,
+      "start_para": 24,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W26",
+      "referent": "He repeated it, abashed.",
+      "nature": "pronoun",
+      "sentence": "He repeated it, abashed.",
+      "explanation": "Both 'He' and 'it' lack antecedents within this window — no character has been introduced and nothing has been said that could be repeated; the referents exist entirely outside this window.",
+      "agreement": 2,
+      "start_para": 25,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W33",
+      "referent": "the note",
+      "nature": "definite_article",
+      "sentence": "He smoothed the note thoughtfully. 'Yes, a damned fool,' he said softly.",
+      "explanation": "The window opens with Tommy smoothing 'the note' as though it has already been presented, but no note has been introduced within this window.",
+      "agreement": 2,
+      "start_para": 32,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W34",
+      "referent": "the note",
+      "nature": "definite_article",
+      "sentence": "He smoothed the note thoughtfully. 'Yes, a damned fool,' he said softly.",
+      "explanation": "'The note' is referenced with a definite article presupposing prior introduction, but no note has been established anywhere in this window.",
+      "agreement": 3,
+      "start_para": 33,
+      "segment_id": "024"
+    },
+    {
+      "window_id": "W29",
+      "referent": "the other girl",
+      "nature": "definite_article",
+      "sentence": "What about the other girl—the one you decoyed away?",
+      "explanation": "A reader seeing only this window has no basis for who 'the other girl' is, as no first girl has been established within the window.",
+      "agreement": 2,
+      "start_para": 28,
+      "segment_id": "025"
+    },
+    {
+      "window_id": "W30",
+      "referent": "the other girl",
+      "nature": "definite_article",
+      "sentence": "What about the other girl—the one you decoyed away?",
+      "explanation": "The phrase 'the other girl' presupposes a first girl already introduced, but no such girl is established anywhere within this window.",
+      "agreement": 2,
+      "start_para": 29,
+      "segment_id": "025"
+    },
+    {
+      "window_id": "W53",
+      "referent": "she",
+      "nature": "pronoun",
+      "sentence": "\"Splendid!\" she cried.",
+      "explanation": "The pronoun 'she' has no antecedent within this window, and 'Splendid' is a reaction to something entirely outside the window, leaving the speaker and context unidentifiable.",
+      "agreement": 2,
+      "start_para": 52,
+      "segment_id": "025"
+    },
+    {
+      "window_id": "W62",
+      "referent": "He",
+      "nature": "pronoun",
+      "sentence": "He raised a hand to his cheek. Only a scratch.",
+      "explanation": "The window opens with 'He' but contains no named or described male character within it to establish who has been scratched.",
+      "agreement": 2,
+      "start_para": 61,
+      "segment_id": "025"
+    },
+    {
+      "window_id": "W83",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They ran.",
+      "explanation": "The pronoun 'They' has no antecedent within this window, making it impossible for a reader to know who is running or why.",
+      "agreement": 3,
+      "start_para": 82,
+      "segment_id": "025"
+    },
+    {
+      "window_id": "W1",
+      "referent": "As I was saying to Miss Tuppence",
+      "nature": "callback",
+      "sentence": "As I was saying to Miss Tuppence, the lawyer resumed quietly, I set to work to prove the impossible possible.",
+      "explanation": "This phrase explicitly refers to a prior conversation not contained in the window, leaving a reader seeing only this window unable to know what was previously said.",
+      "agreement": 2,
+      "start_para": 0,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W7",
+      "referent": "him / them",
+      "nature": "pronoun",
+      "sentence": "Yes. When the right moment came to get rid of him, he was too sharp for them.",
+      "explanation": "Both 'him' and 'them' lack any antecedent inside this window; the subject being discussed and the group trying to get rid of him are established only in prior material.",
+      "agreement": 3,
+      "start_para": 6,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W8",
+      "referent": "him / them",
+      "nature": "pronoun",
+      "sentence": "When the right moment came to get rid of him, he was too sharp for them.",
+      "explanation": "Neither 'him' nor 'them' is introduced within this window; a reader sees only this two-paragraph snippet and cannot determine who 'him' is or who 'them' refers to.",
+      "agreement": 2,
+      "start_para": 7,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W29",
+      "referent": "As he did so",
+      "nature": "pronoun",
+      "sentence": "As he did so, an iron grip seized him from behind; the revolver was wrenched away.",
+      "explanation": "'As he did so' refers to an action performed by an unidentified 'he' doing something established outside the window, leaving both the actor and the action unresolvable.",
+      "agreement": 2,
+      "start_para": 28,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W31",
+      "referent": "the other",
+      "nature": "definite_article",
+      "sentence": "Sir James looked from one to the other, longest at Tommy.",
+      "explanation": "The window opens mid-scene with 'one' and 'the other' as definite references to two people never established within the window itself.",
+      "agreement": 2,
+      "start_para": 30,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W32",
+      "referent": "his",
+      "nature": "pronoun",
+      "sentence": "They relaxed their hold a fraction. His left hand—bearing the big signet ring—flashed to his lips.",
+      "explanation": "The window opens with 'They relaxed their hold' and then 'His left hand,' but no male subject has been introduced within this window to anchor the pronoun 'his'.",
+      "agreement": 3,
+      "start_para": 31,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W33",
+      "referent": "They",
+      "nature": "pronoun",
+      "sentence": "They relaxed their hold a fraction. His left hand—bearing the big signet ring—flashed to his lips.",
+      "explanation": "'They' opens the window with no antecedent established within it, so a reader cannot identify who is relaxing their hold or upon whom.",
+      "agreement": 2,
+      "start_para": 32,
+      "segment_id": "027"
+    },
+    {
+      "window_id": "W2",
+      "referent": "the other three",
+      "nature": "definite_article",
+      "sentence": "there and then, in the presence of the other three, it was reduced to ashes.",
+      "explanation": "No group of people has been established in this window, leaving 'the other three' without an identifiable antecedent.",
+      "agreement": 2,
+      "start_para": 1,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W34",
+      "referent": "the diary excerpts",
+      "nature": "definite_article",
+      "sentence": "\"... The war disturbs me.... They won the war.... It disturbs me....",
+      "explanation": "These quoted passages continue a diary reading established in an earlier window; without that framing, a reader of only W34 cannot identify whose diary this is or who is reading it.",
+      "agreement": 2,
+      "start_para": 33,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W35",
+      "referent": "the diary excerpts",
+      "nature": "definite_article",
+      "sentence": "\"... All goes well. The loss of memory is vexing. It cannot be a fake. No girl could deceive me!...",
+      "explanation": "Mid-stream diary excerpts with no establishing frame inside the window to identify the writer or the context of this document being read.",
+      "agreement": 2,
+      "start_para": 34,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W36",
+      "referent": "the diary excerpts / the girl",
+      "nature": "definite_article",
+      "sentence": "\"... By inducing the girl to come to me of her own accord, I have disarmed her. But she has intuitive flashes that might be dangerous....",
+      "explanation": "Both 'the girl' and the broader diary-reading context are established outside this window; a reader seeing only W36 cannot identify who is writing, who 'the girl' is, or why these passages are being quoted.",
+      "agreement": 3,
+      "start_para": 35,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W37",
+      "referent": "the other boy",
+      "nature": "definite_article",
+      "sentence": "Sometimes I fear I have underestimated the other boy. He is not clever, but it is hard to blind his eyes to facts.",
+      "explanation": "No boys or group of boys are introduced in this window, so 'the other boy' implies a contrast with a previously mentioned boy absent from this window.",
+      "agreement": 2,
+      "start_para": 36,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W39",
+      "referent": "He",
+      "nature": "pronoun",
+      "sentence": "He rose. 'I will give you a toast. The Joint Venture that has justified itself by success!'",
+      "explanation": "No male character is identified as the current speaker in this window, so 'He rose' leaves the subject of the action unresolvable from the window alone.",
+      "agreement": 2,
+      "start_para": 38,
+      "segment_id": "028"
+    },
+    {
+      "window_id": "W12",
+      "referent": "his",
+      "nature": "pronoun",
+      "sentence": "But a small hand was slipped into his.",
+      "explanation": "The pronoun 'his' has no named or introduced antecedent within this window, so a reader cannot determine whose hand is being taken.",
+      "agreement": 2,
+      "start_para": 11,
+      "segment_id": "029"
+    },
+    {
+      "window_id": "W12",
+      "referent": "But",
+      "nature": "connective",
+      "sentence": "But a small hand was slipped into his.",
+      "explanation": "The opening 'But' contrasts with a prior statement or action not present in this window, leaving the contrast without a basis.",
+      "agreement": 3,
+      "start_para": 11,
+      "segment_id": "029"
+    },
+    {
+      "window_id": "W28",
+      "referent": "equally afflicted",
+      "nature": "connective",
+      "sentence": "Tommy was equally afflicted.",
+      "explanation": "The word 'equally' implies a prior comparison — someone else was afflicted first — but that prior reference is not established anywhere in this window.",
+      "agreement": 2,
+      "start_para": 27,
+      "segment_id": "029"
+    }
+  ]
+}
