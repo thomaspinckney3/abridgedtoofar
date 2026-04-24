@@ -28,7 +28,10 @@ from .llm import complete
 from .prompts import load_prompt
 
 TOKENS_PER_WORD = 1.4
-MAX_INPUT_TOKENS = 260_000
+# GPT-5's context fits ~260k tokens, but format adherence degrades at
+# very large inputs (it starts returning prose instead of JSON at ~250k).
+# Conservative cap forces mid-size books like Uncle Tom's Cabin to chunk.
+MAX_INPUT_TOKENS = 200_000
 PROMPT_OVERHEAD_TOKENS = 2000  # spec + synopsis + instructions
 MAX_CHUNK_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
 # Back-compat alias (older code may import MAX_SOURCE_WORDS).
@@ -53,6 +56,12 @@ def _parse_json_object(text: str) -> dict:
             if start < 0 or end < 0:
                 raise
             result = json.loads(s[start:end + 1])
+    # Some models wrap the JSON payload in a quoted string; unwrap once.
+    if isinstance(result, str):
+        try:
+            result = json.loads(result)
+        except json.JSONDecodeError:
+            pass
     if not isinstance(result, dict):
         raise ValueError(f"expected JSON object, got {type(result).__name__}")
     return result

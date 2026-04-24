@@ -1,0 +1,165 @@
+{
+  "minor_characters": [
+    {
+      "name": "Mrs. Smith of Allenham",
+      "appearances_summary": "Willoughby’s wealthy relation at Allenham whose discovery of his misconduct leads to his disinheritance; referenced in several conversations and as the unseen owner of Allenham.",
+      "reason_removable": "Her function can be folded into a brief mention of Willoughby’s loss of fortune without keeping her as a character."
+    },
+    {
+      "name": "Miss Morton (and Lady Morton)",
+      "appearances_summary": "The titled heiress repeatedly floated as Edward’s prudent match and used by Fanny and Mrs. Ferrars as a foil; never appears on page.",
+      "reason_removable": "She serves only as a counterfactual fiancée and can be omitted without affecting the main plot or themes."
+    },
+    {
+      "name": "Mr. Pratt",
+      "appearances_summary": "Lucy Steele’s uncle and schoolmaster near Plymouth, cited only to explain how Lucy and Edward first met.",
+      "reason_removable": "Edward’s past entanglement with Lucy can be conveyed without naming the uncle or his school."
+    },
+    {
+      "name": "Mrs. Ellison",
+      "appearances_summary": "Gossiping acquaintance connected to Miss Grey’s guardianship who relays London tidings at a party.",
+      "reason_removable": "Her sole purpose is to pass on second-hand news that can be summarized in narration."
+    },
+    {
+      "name": "Mr. Harris",
+      "appearances_summary": "The apothecary who attends Marianne’s fever at Cleveland and gives periodic prognoses.",
+      "reason_removable": "Medical attendants are procedural detail; Marianne’s grave illness and recovery can be shown without naming him."
+    },
+    {
+      "name": "Mr. Donavan",
+      "appearances_summary": "A London physician summoned during Fanny Dashwood’s theatrics and later mentioned around Charlotte Palmer’s confinement.",
+      "reason_removable": "He has no bearing on the protagonists’ choices or arcs and can be elided."
+    },
+    {
+      "name": "Dr. Davies",
+      "appearances_summary": "Comic object of Anne Steele’s flirtation in London/Kensington anecdotes.",
+      "reason_removable": "A light comic aside that does not inform the central plot or themes."
+    },
+    {
+      "name": "Mrs. Taylor",
+      "appearances_summary": "A London acquaintance used in party small talk and to seed minor gossip.",
+      "reason_removable": "Expendable society color that does not affect outcomes."
+    },
+    {
+      "name": "Mrs. Richardson",
+      "appearances_summary": "Casual acquaintance who escorts the Steeles in the Kensington Gardens scene.",
+      "reason_removable": "A passing facilitator in a gossip vignette that can be excised."
+    },
+    {
+      "name": "The Careys and the Whitakers",
+      "appearances_summary": "Barton Park invitees who bulk out dinner tables and picnics.",
+      "reason_removable": "They are unnamed social furniture whose presence does not alter any decision or reveal interiority."
+    },
+    {
+      "name": "Mr. Rose and Mr. Simpson",
+      "appearances_summary": "Names dropped in Anne Steele’s chatter about ‘smart beaux’ in Exeter.",
+      "reason_removable": "Pure background color; removing them loses nothing."
+    },
+    {
+      "name": "Thomas (the Dashwoods’ footman) and Betty (a maid)",
+      "appearances_summary": "Named servants who carry notes and news and fetch doctors.",
+      "reason_removable": "Their named identities are unnecessary; errands can be summarized or reassigned generically."
+    },
+    {
+      "name": "Mrs. Burgess",
+      "appearances_summary": "An Exeter acquaintance with whom Anne Steele proposes to stay after Lucy elopes.",
+      "reason_removable": "A one-line haven for a side character that doesn’t touch the main story."
+    },
+    {
+      "name": "Lady Middleton’s children (Annamaria, William, etc.)",
+      "appearances_summary": "Repeatedly exhibited for small talk and comic misrule during visits.",
+      "reason_removable": "Their named antics can be dropped without affecting plot, themes, or character arcs."
+    },
+    {
+      "name": "Lord Courtland",
+      "appearances_summary": "A name used in Robert Ferrars’s brag about giving ‘advice’ on cottage plans.",
+      "reason_removable": "A throwaway boast that can be cut with no loss."
+    }
+  ],
+  "subplots": [
+    {
+      "name": "The aborted Whitwell excursion and party logistics",
+      "chapter_span": "Ch 012–013",
+      "reason_removable": "The cancelled outing and guest wrangling add bustle but do not advance the central arcs beyond what a line about Brandon’s sudden departure already provides."
+    },
+    {
+      "name": "Robert Ferrars’s toothpick-case and haberdashery vignette",
+      "chapter_span": "Ch 033",
+      "reason_removable": "A comic set-piece that introduces his vanity can be replaced by brief narration when he reappears meaningfully later."
+    },
+    {
+      "name": "Prolonged Middleton/Palmer salon episodes in London",
+      "chapter_span": "Ch 020, Ch 034–035",
+      "reason_removable": "The card parties, musical evenings, and guest lists chiefly pad the London milieu; the one essential scene—Mrs. Ferrars’s snobbery toward Elinor—can be kept without the surrounding filler."
+    },
+    {
+      "name": "Kensington Gardens gossip outing with the Steeles",
+      "chapter_span": "Ch 037",
+      "reason_removable": "A second, duplicative round of Lucy/Anne chatter that can be compressed into narration after Lucy’s initial revelation."
+    },
+    {
+      "name": "The Palmers’ comic marriage and baby-confinement business",
+      "chapter_span": "Ch 019–021, Ch 036",
+      "reason_removable": "Their bickering and Charlotte’s confinement provide tone but Cleveland’s role in Marianne’s crisis does not require this extended comic business."
+    },
+    {
+      "name": "Edward’s mysterious ring (lock of hair) mini-mystery",
+      "chapter_span": "Ch 018",
+      "reason_removable": "Elinor’s deduction via the ring is an extra clue to Lucy’s engagement that can be omitted once Lucy discloses it herself."
+    },
+    {
+      "name": "John Dashwood’s greenhouse and Norland improvement plans",
+      "chapter_span": "Ch 033",
+      "reason_removable": "His petty grand projects satirize him but do not alter the story’s course."
+    },
+    {
+      "name": "Margaret’s teasing about Elinor’s secret ‘F.’",
+      "chapter_span": "Ch 012",
+      "reason_removable": "A running joke that neither changes decisions nor reveals anything not shown more clearly elsewhere."
+    }
+  ],
+  "digressions": [
+    {
+      "chapter_ids": [
+        "006"
+      ],
+      "topic": "Detailed architectural and room-by-room description of Barton Cottage",
+      "reason_removable": "A scenic inventory that can be condensed to a sentence without affecting plot or character."
+    },
+    {
+      "chapter_ids": [
+        "007"
+      ],
+      "topic": "General essayistic portrait of Sir John as sportsman and Lady Middleton as mother, with social calendar taxonomy",
+      "reason_removable": "A satiric character sketch that can be summarized briefly once their roles are established."
+    },
+    {
+      "chapter_ids": [
+        "002"
+      ],
+      "topic": "Fanny Dashwood’s extended diatribe against annuities and servants’ pensions",
+      "reason_removable": "The minutiae of her ‘annuity abhorrence’ can be trimmed once their stinginess and its consequence are clear."
+    },
+    {
+      "chapter_ids": [
+        "018"
+      ],
+      "topic": "Taste debate on the picturesque (crooked trees, watch-towers, banditti)",
+      "reason_removable": "An essay in miniature contrasting temperaments that can be alluded to without the full disquisition."
+    },
+    {
+      "chapter_ids": [
+        "011"
+      ],
+      "topic": "Catalogue of private balls, water parties, and Lady Middleton’s invariability",
+      "reason_removable": "Scene-setting that reads like social taxonomy and can be compressed without loss."
+    },
+    {
+      "chapter_ids": [
+        "033"
+      ],
+      "topic": "Robert Ferrars’s cottage-ornament sermon and plans for Grecian temples and shrubberies",
+      "reason_removable": "A comic lecture on taste that delays the plot and can be cut once his vanity is established."
+    }
+  ]
+}
