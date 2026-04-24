@@ -1,0 +1,248 @@
+{
+  "book_id": "secret_adversary",
+  "pairs_checked": 28,
+  "findings_total": 12,
+  "class_counts": {
+    "broken_pivot": 3,
+    "dangling_reference": 7,
+    "unattributed_dialogue": 1,
+    "non_parseable": 1
+  },
+  "per_segment_counts": {
+    "003": 1,
+    "006": 1,
+    "007": 1,
+    "010": 1,
+    "012": 1,
+    "015": 1,
+    "023": 1,
+    "024": 1,
+    "026": 1,
+    "028": 1,
+    "029": 2
+  },
+  "per_pair": [
+    {
+      "pair": "001-002",
+      "count": 0
+    },
+    {
+      "pair": "002-003",
+      "count": 1
+    },
+    {
+      "pair": "003-004",
+      "count": 0
+    },
+    {
+      "pair": "004-005",
+      "count": 0
+    },
+    {
+      "pair": "005-006",
+      "count": 1
+    },
+    {
+      "pair": "006-007",
+      "count": 1
+    },
+    {
+      "pair": "007-008",
+      "count": 0
+    },
+    {
+      "pair": "008-009",
+      "count": 0
+    },
+    {
+      "pair": "009-010",
+      "count": 1
+    },
+    {
+      "pair": "010-011",
+      "count": 0
+    },
+    {
+      "pair": "011-012",
+      "count": 1
+    },
+    {
+      "pair": "012-013",
+      "count": 0
+    },
+    {
+      "pair": "013-014",
+      "count": 0
+    },
+    {
+      "pair": "014-015",
+      "count": 1
+    },
+    {
+      "pair": "015-016",
+      "count": 0
+    },
+    {
+      "pair": "016-017",
+      "count": 0
+    },
+    {
+      "pair": "017-018",
+      "count": 0
+    },
+    {
+      "pair": "018-019",
+      "count": 0
+    },
+    {
+      "pair": "019-020",
+      "count": 0
+    },
+    {
+      "pair": "020-021",
+      "count": 0
+    },
+    {
+      "pair": "021-022",
+      "count": 0
+    },
+    {
+      "pair": "022-023",
+      "count": 1
+    },
+    {
+      "pair": "023-024",
+      "count": 1
+    },
+    {
+      "pair": "024-025",
+      "count": 0
+    },
+    {
+      "pair": "025-026",
+      "count": 1
+    },
+    {
+      "pair": "026-027",
+      "count": 0
+    },
+    {
+      "pair": "027-028",
+      "count": 1
+    },
+    {
+      "pair": "028-029",
+      "count": 2
+    }
+  ],
+  "findings": [
+    {
+      "class": "broken_pivot",
+      "chapter": "3",
+      "draft_passage": "She turned aside into a post office, weighed five shillings against ninepence.",
+      "source_has": "The thought of a possible five shillings spent unnecessarily [on the advertisement already written] spurred her to action, and she decided to risk the waste of ninepence [on a telegram to Tommy saying 'Don't put in advertisement'].",
+      "gate_test_answer": "A reader is genuinely confused: the draft presents a numeric comparison ('five shillings against ninepence') with no referent for either figure, no indication that she is weighing the ad cost against a telegram cost, and no explanation of what decision she reaches — the sentence reads as an unmotivated non-sequitur rather than a less-ornamented version of the original.",
+      "segment_id": "003",
+      "pair": "002-003"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "6",
+      "draft_passage": "Yes, but—you know one really has the devil of a time getting anything out of it!",
+      "source_has": "Yes, but—I'm sure I don't want to be rude about the Government if you've got anything to do with it, but you know one really has the devil of a time getting anything out of it!",
+      "gate_test_answer": "A reader is genuinely confused: 'it' in 'getting anything out of it' has no unambiguous antecedent in the draft—the Government has not been named—so the sentence reads as though Tuppence means she has trouble extracting money from money itself, which is nonsense.",
+      "segment_id": "006",
+      "pair": "005-006"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "6",
+      "draft_passage": "Yes, but—you know one really has the devil of a time getting anything out of it!",
+      "source_has": "Source reads: 'I'm sure I don't want to be rude about the Government if you've got anything to do with it, but you know one really has the devil of a time getting anything out of it!' — 'it' is explicitly anchored to 'the Government' two clauses earlier.",
+      "gate_test_answer": "A reader is genuinely confused: 'it' has no antecedent in the draft because the preceding clause naming 'the Government' was cut, leaving the pronoun floating with no referent the reader can recover.",
+      "segment_id": "007",
+      "pair": "006-007"
+    },
+    {
+      "class": "unattributed_dialogue",
+      "chapter": "10",
+      "draft_passage": "\"Not the moment,\" said Tuppence, considering. \"But see here—didn't you say a girl upstairs was leaving?\"",
+      "source_has": "In the source Albert volunteers unprompted: 'Annie always said as how she was a bad lot… She’s leaving to-day.' Only after Albert raises Annie does Tuppence ask about her. In the draft that remark was cut, so Albert has said nothing about any departing girl before Tuppence asks this question.",
+      "gate_test_answer": "A reader is genuinely confused: Tuppence asks Albert to confirm something ('didn't you say…') that he never said anywhere in the draft, making the question read as a non-sequitur with a false attribution to a prior line of dialogue that does not exist in the draft.",
+      "segment_id": "010",
+      "pair": "009-010"
+    },
+    {
+      "class": "broken_pivot",
+      "chapter": "N+1",
+      "draft_passage": "Julius negatived it sharply. \"We don't want any lawyers mixed up. That guy couldn't help us any.\"",
+      "source_has": "Tuppence explicitly proposes: 'I wouldn't mind going to him and telling him everything.' Julius then negatives that proposal sharply.",
+      "gate_test_answer": "A reader is genuinely confused: Julius negatives 'it,' but the draft never has Tuppence propose consulting Peel Edgerton — she only reports meeting him, leaving Julius's sharp objection without an identifiable object.",
+      "segment_id": "012",
+      "pair": "011-012"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "14",
+      "draft_passage": "\"You forget your own dictaphone,\" said Sir James dryly.",
+      "source_has": "In the source Julius says \"Maybe she meant a dictaphone\" earlier in the same scene, giving Sir James the referent to invoke here. That line was cut from the draft.",
+      "gate_test_answer": "A reader of the draft alone will be genuinely confused: Julius has never mentioned a dictaphone anywhere in the draft, so Sir James's rebuke ('your own dictaphone') has no antecedent and appears to accuse Julius of something he never said.",
+      "segment_id": "015",
+      "pair": "014-015"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "23",
+      "draft_passage": "To Carter's direct question he said smilingly: 'He rang me up.'",
+      "source_has": "Carter asks 'You've seen him, I suppose?' — Sir James replies 'You suppose wrong' — Carter is nonplussed — then Sir James volunteers 'He rang me up.'",
+      "gate_test_answer": "A reader is genuinely confused: the draft tells them a 'direct question' prompted Sir James's answer, but no question appears anywhere in the preceding draft, leaving the reader unable to determine what was asked or why Sir James's account begins where it does.",
+      "segment_id": "023",
+      "pair": "022-023"
+    },
+    {
+      "class": "broken_pivot",
+      "chapter": "24",
+      "draft_passage": "\"Your zeal will be the undoing of us, Albert. What did you say?\" He repeated it, abashed.",
+      "source_has": "In the source Albert gives only a condensed summary first ('Said we was a-staying at the inn…'), Tommy groans and asks 'What did you say?', and Albert then delivers the full message as a repetition. The question and 'He repeated it' follow content not yet stated.",
+      "gate_test_answer": "A reader is genuinely confused: Tommy asks 'What did you say?' immediately after Albert has already said it in full, and 'He repeated it' refers to content already on the page, making the exchange circular and the question meaningless — not merely less ornamented.",
+      "segment_id": "024",
+      "pair": "023-024"
+    },
+    {
+      "class": "non_parseable",
+      "chapter": "26",
+      "draft_passage": "Then Mr. Beresford rang me—what I had already suspected—the photograph of Miss Jane Finn had never really been out of Mr. Hersheimmer's possession——",
+      "source_has": "Mr. Beresford rang me up and told me, what I had already suspected, that the photograph of Miss Jane Finn had never really been out of Mr. Hersheimmer's possession",
+      "gate_test_answer": "A reader is genuinely confused: the matrix verb 'told me' and the subordinating 'that' have been cut, so the noun clause 'the photograph…possession' has no grammatical anchor and the sentence has no parseable main predicate beyond 'rang me', leaving the crucial revelation syntactically stranded.",
+      "segment_id": "026",
+      "pair": "025-026"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "28",
+      "draft_passage": "'A great many men are mad, and no one knows it. They do not know it themselves.'... I did not like his glance....",
+      "source_has": "Professor D----, the great alienist, was present. The talk fell on insanity. He said, 'A great many men are mad, and no one knows it. They do not know it themselves.' I do not understand why he looked at me when he said that. His glance was strange.... I did not like it....",
+      "gate_test_answer": "A reader of the draft cannot determine whose glance is being disliked, because the professor who delivered the quoted speech and directed the unsettling look has been cut entirely from the draft; 'his' has no antecedent anywhere in the preceding draft text, leaving the diary entry genuinely uninterpretable at that point.",
+      "segment_id": "028",
+      "pair": "027-028"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "28",
+      "draft_passage": "'A great many men are mad, and no one knows it. They do not know it themselves.'... I did not like his glance....",
+      "source_has": "Professor D----, the great alienist, was present at a dinner. The talk fell on insanity. He said, 'A great many men are mad, and no one knows it.' I did not understand why he looked at me when he said that. His glance was strange.",
+      "gate_test_answer": "A reader is genuinely confused: 'his glance' has no antecedent in the draft diary passage, because the framing figure (Professor D---- the alienist) who did the looking was cut, leaving the pronoun without any referent.",
+      "segment_id": "029",
+      "pair": "028-029"
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "29",
+      "draft_passage": "But after listening to a rotten one like Julius's, I'm inclined to let you off.",
+      "source_has": "Tuppence jokes in Ch 028 that Julius proposed to her and she 'shall always consider I have been jilted'—establishing for the reader that Julius once proposed to Tuppence. The draft Ch 028 cut this entire exchange.",
+      "gate_test_answer": "A reader following only the draft has seen Julius propose solely to Jane in Ch 029; 'a rotten one like Julius's' (meaning his proposal to Tuppence) is entirely unestablished in the draft, so the reader is genuinely misled into thinking Tuppence means Julius's proposal to Jane, which makes no sense in context.",
+      "segment_id": "029",
+      "pair": "028-029"
+    }
+  ]
+}

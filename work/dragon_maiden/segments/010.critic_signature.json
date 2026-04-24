@@ -3,42 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "The whole place was madness.",
-      "source_locator": "paragraph 2, after 'no doubt from the Maiden choosing'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This clipped, sardonic sentence is a small but characteristic voice marker — the narrator's dry aside punctuating panic with deadpan commentary.",
-      "suggested_fix": "Restore the sentence verbatim after the mention of the choosing-night lights."
+      "source_locator": "paragraph 2, after description of festive lights",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This terse, sardonic sentence is a voice-establishing beat — the narrator's dry, deadpan register in a single snap judgment. The draft folds 'madness' into a longer clause ('madness everywhere I looked'), losing the staccato finality that defines the narrator's comic tone.",
+      "suggested_fix": "Restore the sentence as a standalone: 'The whole place was madness.' The isolation is the joke."
     },
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I covered my face with my arm to shield my eyes from the damp, and when I looked at the pool again my jaw dropped open.",
-      "source_locator": "after the water-column collapses, before the woman's description",
+      "source_passage": "My aim was-well, as reliable as ever.",
+      "source_locator": "paragraph after dragon lord draws sword, description of stone throw",
       "draft_treatment": "absent",
-      "why_it_matters": "The physical beat of the narrator shielding her face and then gaping is a small but grounding piece of embodied, comic reaction that bridges the spectacular effect to the narrator's personality.",
-      "suggested_fix": "Add the physical reaction beat before the woman's description to preserve the narrator's grounded, slightly comedic voice."
+      "why_it_matters": "This self-deprecating, self-interrupting dash construction is a signature voice moment — the narrator's wry interiority mid-action. The draft replaces it with 'My aim, as usual, betrayed me,' which conveys the same fact but scrubs the narrator's comic timing and the rhetorical dash-pause that marks the voice.",
+      "suggested_fix": "Restore the phrasing as close to 'my aim was—well, as reliable as ever' as the sentence allows; the dash-and-hedge construction is the signature, not just the self-deprecation."
     },
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "I shook like a leaf beneath her awesome beauty.",
-      "source_locator": "paragraph describing the woman descending to narrator's side",
+      "source_locator": "paragraph describing the water woman approaching Miriam, before the blessing",
       "draft_treatment": "absent",
-      "why_it_matters": "The simile is the narrator's characteristic register—plain, slightly hyperbolic, self-aware; its absence slightly flattens the voice.",
-      "suggested_fix": "Restore 'I shook like a leaf beneath her awesome beauty' alongside the description of being unable to retreat."
+      "why_it_matters": "This line characterizes Miriam's physical terror-response to the supernatural with a folksy simile that blends sincerity and slight self-mockery — a register marker for the narrator's voice. The draft replaces the physical reaction with 'Her presence pressed like tide and undertow at once,' which is a stylistic substitution, not a compression of the original.",
+      "suggested_fix": "Restore 'I shook like a leaf beneath her awesome beauty' or integrate it alongside the draft's tide/undertow image to preserve both the physicality and the voice register."
     },
     {
       "severity": "low",
-      "class": "other",
-      "source_passage": "A wave of disbelief and fatigue swept over me.",
-      "source_locator": "penultimate paragraph, before 'That was no mirage'",
+      "class": "voice_flattening",
+      "source_passage": "That was no mirage of an insane person.",
+      "source_locator": "penultimate paragraph, after the woman vanishes",
       "draft_treatment": "absent",
-      "why_it_matters": "The explicit naming of 'disbelief' alongside fatigue is an interpretive beat — the narrator consciously registers the unreality of the event, which immediately precedes the 'no mirage' line and gives it context.",
-      "suggested_fix": "Restore the 'wave of disbelief and fatigue' sentence before 'That was no mirage' to preserve the interpretive logic of that line."
+      "why_it_matters": "This brief internal line is a voice beat — Miriam reassuring herself with comic understatement after witnessing the supernatural. Its absence removes a moment of narratorial self-awareness that characterizes the chapter's closing tone.",
+      "suggested_fix": "Reinsert 'That was no mirage of an insane person' (or near-verbatim) as a single sentence of interior reaction before the final collapse."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is substantially faithful, preserving all high-weight signatures (the water-spirit's gift speech, the 'What a pity, for it amuses me' exchange, the stone-throw line, and the cavern-echo description) with only minor voice-flattening in transitional beats."
+  "verdict": "regenerate",
+  "summary": "The draft preserves plot and most dialogue faithfully but erases three medium-severity voice markers — the standalone 'madness' snap, the signature dash-hedge on the stone throw, and the 'shook like a leaf' simile — which together constitute sufficient voice-flattening to require regeneration."
 }

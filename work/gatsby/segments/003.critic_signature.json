@@ -3,69 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "whose elaborate formality of speech just missed being absurd. Some time before he introduced himself I'd got a strong impression that he was picking his words with care.",
-      "source_locator": "paragraph immediately after the famous smile paragraph",
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "At high tide in the afternoon I watched his guests diving from the tower of his raft, or taking the sun on the hot sand of his beach while his two motorboats slit the waters of the Sound",
+      "source_locator": "Opening paragraph, after 'men and girls came and went like moths'",
       "draft_treatment": "absent",
-      "why_it_matters": "The draft cuts off mid-sentence at 'a year or two over' — the 'elegant young roughneck' completion is a tagged recognizable signature and the first crack in Gatsby's performance. The entire rest of the chapter is also missing.",
-      "suggested_fix": "Complete the roughneck sentence and restore the remainder of Chapter III."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "Everyone suspects himself of at least one of the cardinal virtues, and this is mine: I am one of the few honest people that I have ever known.",
-      "source_locator": "final line of segment",
-      "draft_treatment": "absent",
-      "why_it_matters": "Verbatim-tier signature; the tagged closing line of the chapter and a pivot for the unreliable-narrator reading. Its absence is a catastrophic signature loss.",
-      "suggested_fix": "Restore the line verbatim as the segment's closing sentence."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "At the enchanted metropolitan twilight I felt a haunting loneliness sometimes, and felt it in others—poor young clerks who loitered in front of windows",
-      "source_locator": "New York commuter-romantic digression, second half of chapter",
-      "draft_treatment": "absent",
-      "why_it_matters": "Tagged recognizable voice-establishing signature; the 'enchanted metropolitan twilight' passage is explicitly called out in plan notes as one of Nick's three voice registers that 'must survive.'",
-      "suggested_fix": "Restore the Probity Trust / Fifth Avenue / enchanted metropolitan twilight paragraphs, keeping 'enchanted metropolitan twilight' and 'poor young clerks' verbatim."
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "It takes two to make an accident.",
-      "source_locator": "Jordan driving exchange, near end of segment",
-      "draft_treatment": "absent",
-      "why_it_matters": "Tagged signature line setting up Jordan's carelessness and the novel's ethic ('I hate careless people'). Entire Jordan-dishonesty / careless-driver exchange is missing.",
-      "suggested_fix": "Restore the driving dialogue including 'It takes two to make an accident' and 'I hate careless people. That's why I like you.'"
-    },
-    {
-      "severity": "high",
-      "class": "signature_loss",
-      "source_passage": "A sudden emptiness seemed to flow now from the windows and the great doors, endowing with complete isolation the figure of the host",
-      "source_locator": "end of party scene, after the car-wreck",
-      "draft_treatment": "absent",
-      "why_it_matters": "Tagged prosodic signature — the closing image of Gatsby alone after the party. The entire drunk-driving wreckage closer (Owl Eyes redux, 'I wasn't even trying,' the amputated wheel) is missing, which plan notes explicitly flag as must-preserve.",
-      "suggested_fix": "Restore the coupé-in-the-ditch scene and the 'sudden emptiness' closing image of the host alone on the porch."
+      "why_it_matters": "This passage completes the impressionistic summer tableau that opens the chapter; the daytime beach imagery contrasts with the nocturnal party scenes and is part of the signature rhythmic buildup of the opening paragraph.",
+      "suggested_fix": "Restore the afternoon beach/motorboat sentence between the moths image and the Rolls-Royce sentence to preserve the full arc of the opening paragraph's sensory catalogue."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "a whole pitful of oboes and trombones and saxophones and viols and cornets and piccolos, and low and high drums... shawls beyond the dreams of Castile",
-      "source_locator": "seven-o'clock orchestra paragraph",
-      "draft_treatment": "flattened",
-      "why_it_matters": "Draft drops 'whole pitful' and 'shawls beyond the dreams of Castile' — distinctive catalog voice markers — and shifts to past tense, flattening the present-tense set-piece cadence.",
-      "suggested_fix": "Restore 'a whole pitful' and 'shawls beyond the dreams of Castile'; maintain present tense through the set-piece."
+      "source_passage": "shawls beyond the dreams of Castile. The bar is in full swing, and floating rounds of cocktails permeate the garden outside, until the air is alive with chatter and laughter, and casual innuendo and introductions forgotten on the spot",
+      "source_locator": "Party description paragraph beginning 'By seven o'clock'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves these lines but omits the preceding sentence about 'the halls and salons and verandas are gaudy with primary colours'—'salons' is dropped to 'halls and verandas,' and the scene-setting preamble that places 'shawls beyond the dreams of Castile' in context is truncated, slightly flattening the cascade effect.",
+      "suggested_fix": "Minor: restore 'salons' alongside 'halls and verandas' to preserve the full tricolon and the social texture of the space."
     },
     {
       "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "no one swooned backward on Gatsby, and no French bob touched Gatsby's shoulder, and no singing quartets were formed with Gatsby's head for one link",
-      "source_locator": "after 'Jazz History of the World'",
+      "class": "voice_erasure",
+      "source_passage": "I was immediately struck by the number of young Englishmen dotted about; all well dressed, all looking a little hungry, and all talking in low, earnest voices to solid and prosperous Americans. I was sure that they were selling something: bonds or insurance or automobiles.",
+      "source_locator": "After Nick arrives in white flannels, before he searches for Gatsby",
       "draft_treatment": "absent",
-      "why_it_matters": "This triple-negative rhythm establishing Gatsby's isolation at his own party is a critically discussed passage and essential to the 'within and without' motif of the chapter.",
-      "suggested_fix": "Restore the 'no one swooned... no French bob... no singing quartets' triad."
+      "why_it_matters": "This passage is a distinctive satirical aside—Fitzgerald's ironic commentary on transatlantic social climbing and the money-hunger at Gatsby's parties. It establishes Nick's observational voice and the economic undercurrent of the glamour; its absence flattens the narrator's ironic register.",
+      "suggested_fix": "Restore the Englishmen observation (2–3 sentences) between Nick's arrival and his failed search for Gatsby; it is brief enough to include at 1.0× compression."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I began to like New York, the racy, adventurous feel of it at night, and the satisfaction that the constant flicker of men and women and machines gives to the restless eye. I liked to walk up Fifth Avenue and pick out romantic women from the crowd and imagine that in a few minutes I was going to enter into their lives",
+      "source_locator": "Reflective interlude after 'On the contrary, they were merely casual events'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reduces this to a single clause ('I began to like New York, the racy, adventurous feel of it at night') and skips the Fifth Avenue fantasy entirely. The urban-romantic reverie is voice-establishing digression that shows Nick's susceptibility to romantic illusion—a thematic echo of his response to Gatsby—and its compression to a clause strips the passage of its interpretive resonance.",
+      "suggested_fix": "Restore at minimum the Fifth Avenue women fantasy (2–3 sentences); this is non-cut material with interpretive weight about Nick's character."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "most affectations conceal something eventually, even though they don't in the beginning—and one day I found what it was. When we were on a house-party together up in Warwick, she left a borrowed car out in the rain with the top down, and then lied about it—and suddenly I remembered the story about her",
+      "source_locator": "Jordan Baker characterization paragraph",
+      "draft_treatment": "absent",
+      "why_it_matters": "The Warwick car-in-the-rain incident is the specific triggering memory that connects Jordan's dishonesty to the golf cheating story; without it, the transition to her character assessment feels unmotivated. The golf scandal itself is an authorized cut, but the car-rain detail that bridges affectation to dishonesty is not authorized cut material.",
+      "suggested_fix": "Restore the Warwick car-left-in-the-rain sentence as the pivot between 'one day I found what it was' and the character assessment, even without naming the golf scandal explicitly."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "The draft is truncated mid-sentence at the 'elegant young roughneck' paragraph, losing the entire second half of Chapter III including four tagged signatures: the roughneck completion, the enchanted-metropolitan-twilight passage, Jordan's 'it takes two to make an accident,' the 'sudden emptiness' closing image, and the famous 'honest people' closing line."
+  "verdict": "pass",
+  "summary": "The draft preserves all high-priority signatures (Gatsby's smile, the party-has-begun passage, yellow cocktail music, the Jordan driving dialogue, the cardinal virtues close) faithfully or verbatim, but flattens several medium-weight voice passages—the Englishmen satirical aside, the Fifth Avenue romantic fantasy, and the Warwick triggering memory—that carry Nick's ironic observational register and thematic self-portrait."
 }

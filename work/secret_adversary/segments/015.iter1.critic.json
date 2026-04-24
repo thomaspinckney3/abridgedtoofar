@@ -1,0 +1,53 @@
+{
+  "segment_id": "015",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Nothing was more surprising and bewildering to Tuppence than the ease and simplicity with which everything was arranged, owing to Sir James's skilful handling.",
+      "source_locator": "Opening sentence of the chapter",
+      "draft_treatment": "absent",
+      "why_it_matters": "The chapter's opening sentence is voice-establishing and character-focalized through Tuppence; the draft opens with a de-personalized passive construction ('Everything was smoothed') that erases her perspective entirely, losing the narratorial register that frames the scene.",
+      "suggested_fix": "Restore the opening sentence verbatim or very close to it, anchoring the scene to Tuppence's point of view as Christie intends."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "There was something rather ghoulish in the little man's satisfaction.",
+      "source_locator": "After 'Not so uncommon, really, as you would think.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aside is a textbook Christie narratorial intrusion—dry, ironic, character-defining—and is the kind of sentence the critical tradition notices. Its omission flattens Dr. Hall from an unsettling comic figure into a merely pleasant one, removing the tonal complexity Christie built into the scene.",
+      "suggested_fix": "Restore the sentence 'There was something rather ghoulish in the little man's satisfaction.' immediately after the doctor's enthusiastic account of the case."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The doctor believed him—which was a tribute to his nationality. If an Englishman had suggested such a thing, he would have had grave doubts as to his sanity.",
+      "source_locator": "After 'You bet your bottom dollar I do.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Christie's sharpest piece of cultural comedy in the chapter—a signature ironic aside on Anglo-American character contrast that is distinctively Christiean in register and widely recognizable as her wit. Its loss is a clear voice-erasure.",
+      "suggested_fix": "Restore both sentences verbatim after Julius's 'You bet your bottom dollar I do.' They are short, essential, and the draft has the budget for them."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The doctor's glance came back to Julius with a new and subtle quality in it. This was no longer an eccentric young fellow with a habit of falling off trees.",
+      "source_locator": "After Sir James says 'Mr. Hersheimmer is very well off—very well off indeed.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Christie's satirical observation on how wealth transforms social perception—the callback to 'falling off trees' is a witty structural joke linking the two scenes, and the 'new and subtle quality' observation is rhetorically precise. The draft reduces this to a bare 'new deference,' losing both the irony and the callback.",
+      "suggested_fix": "Restore the full two-sentence observation, including 'no longer an eccentric young fellow with a habit of falling off trees,' before the simplified 'deference' beat."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "he suddenly came out of his brown study, and hit the table such a resounding bang with his fist that every one jumped, the doctor most of all.",
+      "source_locator": "Before Julius proposes the liner plan",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft has 'Julius, frowning, struck the table with his fist. They all jumped.'—the 'brown study' phrase and the specific comic detail of the doctor jumping most of all are both lost, slightly deflating the comic physicality of the moment.",
+      "suggested_fix": "Restore 'brown study' and the specific 'the doctor most of all' to preserve Christie's light comic touch."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft preserves the chapter's plot and dialogue adequately but erases four voice-establishing or ironic Christie asides—the Tuppence-focalized opening, the 'ghoulish satisfaction' aside, the Anglo-American nationality joke, and the wealth-transforms-perception satirical observation—resulting in three medium-severity voice-flattening failures that collectively trigger regeneration."
+}

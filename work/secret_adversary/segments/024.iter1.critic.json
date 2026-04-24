@@ -1,0 +1,44 @@
+{
+  "segment_id": "024",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "You see, if the spider lets the fly walk out too easily, the fly might suspect it was a put-up job. Hence the usefulness of that promising youth, Mr. T. Beresford, who's blundered in just at the right moment for them. But later, Mr. T. Beresford had better look out!",
+      "source_locator": "After Albert's frog-message exchange, Tommy's self-analysis speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This spider/fly speech is Tommy's most rhetorically distinctive moment in the chapter—a wry, self-aware monologue that establishes his dawning strategic intelligence. The 'promising youth, Mr. T. Beresford' ironic self-address is a signature voice beat; replacing it with 'try not to improve on Providence' erases the interpretive content (Tommy realising he is being used as a pawn) and the chapter's only sustained ironic digression.",
+      "suggested_fix": "Restore the spider/fly passage, including the 'I'm a pawn in their game, Albert' line and the 'Mr. T. Beresford had better look out' kicker; these are not compressible without loss of the chapter's key character beat."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Owing to Albert's insistence they dragged themselves along painfully on their stomachs, thereby producing a great deal more noise than if they had stood upright. In any case, these precautions were totally unnecessary.",
+      "source_locator": "First evening reconnaissance paragraph",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Christie's ironic aside—that the belly-crawling produced more noise than walking upright, and that the precautions were 'totally unnecessary'—is the passage's comic voice. The draft keeps the crawling detail but omits the punchline irony that reverses it, flattening the narrator's characteristic dry deflation.",
+      "suggested_fix": "Add the parenthetical reversal: 'thereby producing a great deal more noise than if they had stood upright. In any case, these precautions were totally unnecessary.' The joke depends on the explicit letdown after the laborious setup."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Albert's fancy ran to a puma, or a tame cobra.",
+      "source_locator": "First evening reconnaissance paragraph, after mention of a possible watchdog",
+      "draft_treatment": "absent",
+      "why_it_matters": "This small detail is the sharpest comic characterisation of Albert in the chapter—his cinematic imagination (puma, tame cobra) against Tommy's more modest 'watchdog'. Its omission trims the only passage that individuates Albert as a comic figure rather than a functional helper.",
+      "suggested_fix": "Restore the puma/cobra aside in the reconnaissance paragraph alongside the watchdog mention."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Tommy raised a shout for Albert before he had even finished perusing this characteristic epistle.",
+      "source_locator": "After Tommy reads Tuppence's note",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narratorial interjection 'this characteristic epistle' is a small but register-defining ironic tag that frames Tuppence's voice from the outside; its removal is minor but contributes to cumulative flattening of Christie's wry narrative commentary.",
+      "suggested_fix": "Retain 'characteristic epistle' when Tommy finishes reading the note."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft's most serious failure is the complete omission of Tommy's spider/fly/pawn speech—the chapter's only sustained ironic self-analysis and an interpretive keystone for his strategic awakening—compounded by the loss of the reconnaissance comedy reversal and Albert's puma/cobra characterisation, totalling three medium-severity findings that trigger regeneration."
+}

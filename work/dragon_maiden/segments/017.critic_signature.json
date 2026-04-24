@@ -5,49 +5,31 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "She shrugged. 'Neither do I, but there's got to be a way. Maybe you could slap your mark or kiss it or do something.' My face fell. 'Seriously?'",
-      "source_locator": "After Heather suggests the mark, before she crosses her arms",
+      "source_passage": "She grinned. 'I'll always be there to give you the good news, now get going.'",
+      "source_locator": "After Heather steps aside, before Miriam leaps into the portal",
       "draft_treatment": "flattened",
-      "why_it_matters": "Miriam's deadpan 'Seriously?' reaction beat and Heather's full shrug-and-hedge exchange establish the comic register of the friendship. The draft collapses this into a bare imperative list, losing the narrator's incredulous voice.",
-      "suggested_fix": "Restore Miriam's 'Seriously?' and the preceding shrug-and-hedge from Heather to preserve the comic timing."
+      "why_it_matters": "The source has Heather deliver her quip AFTER the hug and parting, functioning as a warm farewell punchline; the draft inverts the order—placing the quip before 'He might eat you'—and conflates the two separate lines, collapsing the comedic beat's timing and altering its register.",
+      "suggested_fix": "Restore the sequence: hug, part, Miriam sees the tears, Heather says 'He might eat you,' Miriam rolls her eyes and thanks her, THEN Heather grins and delivers 'I'll always be there to give you the good news, now get going.' Keep the lines in source order."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "'She released my hands and stepped to the side where she crossed her arms. \"It's all up to you now, Miriam. I got you here, now you've got to get that mark going.\" \"All you did was drive me here!\" I argued. \"Close enough, now focus on that mark!\"'",
-      "source_locator": "After 'My face fell. Seriously?' exchange, before Miriam looks at her shoulder",
+      "source_passage": "I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle. The long fifteen miles had been covered in a little under fifteen minutes. An eternity for my heart, and I hoped I wouldn't expect to find Xander in an eternity of sleep.",
+      "source_locator": "After Apuleius sweeps Miriam into flight, before landing at the castle",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's sentence is a voice-defining ironic digression—'An eternity for my heart, and I hoped I wouldn't expect to find Xander in an eternity of sleep'—that double-charges the flight with both humor and dread. The draft strips it to bare logistics ('Fifteen miles vanished in fifteen minutes'), losing both the narrator's wry register and the thematic foreshadowing of Xander's near-death.",
+      "suggested_fix": "After the fifteen-miles-in-fifteen-minutes beat, restore a close paraphrase: 'An eternity for my heart—and I hoped I wouldn't find Xander in an eternity of sleep.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I wondered how many doors were shut to this priestly fellow.",
+      "source_locator": "After guards bow and open Xander's chamber door for Apuleius",
       "draft_treatment": "absent",
-      "why_it_matters": "This micro-argument is a voice-defining beat: Miriam's pushback ('All you did was drive me here!') and Heather's dismissive 'Close enough' is the signature comic rhythm of their dynamic. The draft omits it entirely.",
-      "suggested_fix": "Restore the 'All you did was drive me here!' / 'Close enough, now focus on that mark!' exchange before Miriam turns to her shoulder."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "'With a hope and a prayer I leapt into the void. The trip was exactly like the first one, but the exit was a little different. I stumbled out of the other side of the portal and onto the hard stone platform. The front of my foot betrayed me this time and I tripped on one of those rocks.'",
-      "source_locator": "Immediately after Heather steps aside, before the sage's shocked face",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'With a hope and a prayer' and 'The front of my foot betrayed me this time' are both register-defining — the first is a set-phrase beat that marks the narrator's voice; the second is the self-deprecating specificity that characterises Miriam throughout. The draft replaces them with a bare 'I leapt.'",
-      "suggested_fix": "Restore 'With a hope and a prayer' as the launching phrase and add the 'front of my foot betrayed me' detail on landing."
-    },
-    {
-      "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "'Um, hi. You don't happen to-' My eyes noticed a large stain over the stones. The stain was a distinct red color. My heart quickened. I looked up at them. 'Where's Xander?'",
-      "source_locator": "After Miriam grins up at the sages, before Apuleius offers his hand",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The interrupted comic opener ('Um, hi. You don't happen to-') cut by the sight of blood is an interpretively important beat: Miriam's breezy confidence collides with the gravity of Xander's situation. The draft jumps straight to the stain and the question, erasing the tonal collision.",
-      "suggested_fix": "Restore the 'Um, hi. You don't happen to—' line so the interruption by the blood stain reads as the intended dramatic pivot."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "'I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle.'",
-      "source_locator": "After Apuleius sweeps Miriam into his arms and they are airborne, before the guards with spears",
-      "draft_treatment": "absent",
-      "why_it_matters": "'Bartering my soul for a reprieve' is the narrator's hyperbolic interior voice — a small but characteristic comic aside during the flight. Its omission flattens the airborne passage.",
-      "suggested_fix": "Add the 'bartering my soul for a reprieve from the wind' line in the brief flight summary to keep Miriam's voice present."
+      "why_it_matters": "This quick aside is a signature of the narrator's observational irony—characterizing Apuleius's authority through her own wry curiosity. Its absence erases a small but distinctive voice beat that breaks the tension with characteristic humor.",
+      "suggested_fix": "Insert the line (verbatim or close): 'I wondered how many doors were shut to this priestly fellow.' between the guards opening the door and the moment Miriam sees Xander."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Four medium-severity voice/interpretive losses — including the deleted 'All you did was drive me here!' argument, the 'With a hope and a prayer' launch, the interrupted comic greeting before the blood stain, and the Heather 'Seriously?' beat — collectively erase enough of Miriam's signature ironic register to require regeneration."
+  "verdict": "pass",
+  "summary": "Three medium-severity voice-flattening issues—a reordered farewell quip, the erasure of the ironic 'eternity of sleep' digression, and the omission of the narrator's aside about Apuleius's authority—none individually severe enough to trigger regeneration, but the draft consistently shaves the narrator's wry register under compression."
 }

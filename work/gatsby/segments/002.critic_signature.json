@@ -4,68 +4,95 @@
   "findings": [
     {
       "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "The fact that he had one was insisted upon wherever he was known. His acquaintances resented the fact that he turned up in popular cafés with her and, leaving her at a table, sauntered about, chatting with whomsoever he knew.",
+      "source_locator": "paragraph introducing Tom's mistress, before the train scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage establishes Tom's brazen, socially reckless conduct with his mistress and is interpretively important: it shows his contempt for convention and his power to violate norms openly. It also supplies the social texture that makes Nick's reluctant involvement legible. Its erasure flattens the moral atmosphere.",
+      "suggested_fix": "Restore the two-sentence social observation ('The fact that he had one was insisted upon…') before Nick's account of the train ride; it is compact enough to keep verbatim."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I think he'd tanked up a good deal at luncheon, and his determination to have my company bordered on violence. The supercilious assumption was that on Sunday afternoon I had nothing better to do.",
+      "source_locator": "immediately after 'I want you to meet my girl'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is voice-establishing prose: Nick's dry, ironic register — 'bordered on violence,' 'supercilious assumption' — is signature Fitzgerald/Nick narration. Its removal erases the narrator's characteristic tone at a key moment of coercion.",
+      "suggested_fix": "Restore both sentences verbatim after Tom's 'We're getting off' line; they are short and tonally irreplaceable."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "It had occurred to me that this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead",
+      "source_locator": "inside the garage, before Wilson appears",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is quintessential Nick irony — the fantasy of hidden glamour layered over squalor — and encapsulates the novel's central motif of illusion vs. reality. Its absence removes a critical voice beat and a thematic marker.",
+      "suggested_fix": "Restore Nick's speculation about the 'shadow of a garage' being a blind for sumptuous apartments above; it is one sentence and interpretively essential."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.",
+      "source_locator": "late in the party scene, after Nick tries to leave",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "'Within and without, simultaneously enchanted and repelled by the inexhaustible variety of life' is one of the most critically cited sentences in the novel — it defines Nick's dual consciousness and is central to every major reading of his character. The draft preserves it verbatim, but strips the preceding sentence of its full rhetorical setup ('yet high over the city…'), weakening the rhythm and the contrast. However the key phrase IS present; severity is mitigated but the truncation of the lead-in is notable.",
+      "suggested_fix": "Restore the full passage from 'yet high over the city' through 'inexhaustible variety of life' without abbreviation; the draft drops 'yet' and alters the connective flow."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "A white ashen dust veiled his dark suit and his pale hair as it veiled everything in the vicinity—except his wife, who moved close to Tom.",
+      "source_locator": "after Wilson goes for chairs",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains this sentence, but by removing the preceding line about Wilson 'mingling immediately with the cement colour of the walls,' it strips the visual metaphor of its full force. Wilson's erasure into the background is a motif that prefigures his victimhood; the cement-colour line completes the image.",
+      "suggested_fix": "Restore 'Wilson hurried toward the little office, mingling immediately with the cement colour of the walls' before the ashen-dust sentence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "the late afternoon sky bloomed in the window for a moment like the blue honey of the Mediterranean—then the shrill voice of Mrs. McKee called me back into the room.",
+      "source_locator": "during the Catherine conversation, before Mrs. McKee's remark",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a prosodically distinctive sentence — 'blue honey of the Mediterranean' is a Fitzgerald image of rare texture — that simultaneously evokes escape and entrapment. Its absence is a clear voice loss in a segment where Fitzgerald's prose style is itself thematically operative.",
+      "suggested_fix": "Restore the one-sentence image 'The late afternoon sky bloomed in the window for a moment like the blue honey of the Mediterranean' at the transition point in the party scene."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Myrtle pulled her chair close to mine, and suddenly her warm breath poured over me the story of her first meeting with Tom. 'It was on the two little seats facing each other that are always the last ones left on the train.'",
+      "source_locator": "Myrtle's account of meeting Tom",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft paraphrases Myrtle's monologue into reported speech, losing her voice entirely — the specific train-seat detail, her breathless first-person delivery, and the comic bathos of mistaking a taxi for a subway. Only the final 'You can't live forever' line is kept verbatim. Myrtle's voice is a distinct register; its erasure flattens characterization.",
+      "suggested_fix": "Restore Myrtle's account in direct speech from 'It was on the two little seats…' through '…I didn't hardly know I wasn't getting into a subway train,' then keep the 'You can't live forever' close verbatim."
+    },
+    {
+      "severity": "medium",
       "class": "interpretive_loss",
-      "source_passage": "Taking out my handkerchief I wiped from his cheek the spot of dried lather that had worried me all the afternoon.",
-      "source_locator": "penultimate scene, after McKee wakes and before the elevator exchange",
-      "draft_treatment": "absent",
-      "why_it_matters": "This gesture is one of the most critically discussed moments in the chapter—routinely cited as evidence of Nick's homoerotic interest in McKee and as a marker of his unreliable, selectively attentive consciousness; its absence is an interpretive loss the critical tradition would immediately notice.",
-      "suggested_fix": "Restore the sentence verbatim in the elevator/departure sequence: 'Taking out my handkerchief I wiped from his cheek the spot of dried lather that had worried me all the afternoon.'"
+      "source_passage": "Her personality had also undergone a change. The intense vitality that had been so remarkable in the garage was converted into impressive hauteur. Her laughter, her gestures, her assertions became more violently affected moment by moment, and as she expanded the room grew smaller around her, until she seemed to be revolving on a noisy, creaking pivot through the smoky air.",
+      "source_locator": "description of Myrtle in her chiffon dress at the party",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this passage almost verbatim, which is correct — but omits the preceding observation about the dress producing the change ('With the influence of the dress her personality had also undergone a change'). The causal link between costume and persona is thematically important (performance, class aspiration). The draft retains enough that this is medium rather than high.",
+      "suggested_fix": "Restore 'With the influence of the dress her personality had also undergone a change' as the opening clause; the draft begins mid-thought."
     },
     {
       "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "\"That's no police dog\" … \"more of an Airedale\" … \"Some coat. That's a dog that'll never bother you with catching cold.\" … \"Is it a boy or a girl?\" \"That dog? That dog's a boy.\" \"It's a bitch,\" said Tom decisively.",
-      "source_locator": "dog-buying scene, after backing up to the old man resembling Rockefeller",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The extended comic dialogue—culminating in the 'Is it a boy or a girl?' / 'It's a bitch' exchange—is a signature set-piece of Fitzgerald's social comedy and establishes the chapter's satirical register; the draft reduces it to a single sentence, erasing the rhythm entirely.",
-      "suggested_fix": "Restore the dialogue exchange in condensed but voiced form, preserving at minimum the 'Is it a boy or a girl?' / 'It's a bitch' beat and the salesman's coat monologue."
+      "class": "signature_loss",
+      "source_passage": "'Daisy! Daisy! Daisy!' shouted Mrs. Wilson. 'I'll say it whenever I want to! Daisy! Dai—' Making a short deft movement, Tom Buchanan broke her nose with his open hand.",
+      "source_locator": "climax of the party scene",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the exchange verbatim, which is correct. However it omits the full aftermath passage: 'Then there were bloody towels upon the bathroom floor… trying to spread a copy of Town Tattle over the tapestry scenes of Versailles. Then Mr. McKee turned and continued on out the door.' The Versailles/Town Tattle ironic juxtaposition is Fitzgerald's own satirical punctuation of the scene. The draft keeps 'Town Tattle over the tapestry scenes of Versailles' but removes Mr. McKee's exit and the full inventory of chaos, flattening the ending.",
+      "suggested_fix": "Restore the full aftermath paragraph including 'his wife and Catherine scolding and consoling as they stumbled here and there among the crowded furniture with articles of aid' and Mr. McKee's dazed turn and exit."
     },
     {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "a reluctant elevator boy went for a box full of straw and some milk, to which he added on his own initiative a tin of large, hard dog biscuits—one of which decomposed apathetically in the saucer of milk all afternoon.",
-      "source_locator": "apartment scene, after Mrs. Wilson tends to the dog",
-      "draft_treatment": "absent",
-      "why_it_matters": "'Decomposed apathetically' is unmistakably Fitzgerald's ironic deflating voice applied to the entire afternoon's pretension; its loss flattens the narrator's satirical presence at a key moment.",
-      "suggested_fix": "Restore the sentence about the dog biscuit decomposing apathetically; it need not be verbatim but 'decomposed apathetically' should survive."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "Her eyebrows had been plucked and then drawn on again at a more rakish angle, but the efforts of nature toward the restoration of the old alignment gave a blurred air to her face.",
-      "source_locator": "Catherine's introduction paragraph",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is a rhetorically distinctive sentence—nature straining against artifice in a single face—that does double duty as social satire and as a thematic chord with the chapter's preoccupation with performance and fakery.",
-      "suggested_fix": "Restore the eyebrow sentence within Catherine's description; the exact phrasing ('efforts of nature toward the restoration') is the point."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "I told him I'd have to call a policeman, but he knew I lied. I was so excited that when I got into a taxi with him I didn't hardly know I wasn't getting into a subway train.",
-      "source_locator": "Myrtle's first-meeting monologue, before 'You can't live forever'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The policeman lie and the subway confusion are specific, voice-laden details that make Myrtle's account of her seduction vivid and tragicomic; their loss reduces her monologue to a bare summary frame.",
-      "suggested_fix": "Restore 'I told him I'd have to call a policeman, but he knew I lied' and the subway confusion in Myrtle's speech."
-    },
-    {
-      "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "The answer to this was unexpected. It came from Myrtle, who had overheard the question, and it was violent and obscene.",
-      "source_locator": "after Catherine says 'Doesn't she like Wilson either?'",
-      "draft_treatment": "absent",
-      "why_it_matters": "Myrtle's violent obscene outburst—rendered in circumspect indirection—is the chapter's clearest signal of her real contempt for Wilson and the suppressed rage beneath her performed gaiety; cutting it removes interpretive material about her character.",
-      "suggested_fix": "Restore Nick's narration of Myrtle's violent and obscene response (it can remain indirect/off-page as in the source) and Catherine's 'You see' reaction."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "\"George B. Wilson at the Gasoline Pump,\" or something like that.",
-      "source_locator": "Tom's joke to McKee about photographing Wilson, during the apartment gathering",
-      "draft_treatment": "absent",
-      "why_it_matters": "Tom's sardonic proposal that McKee photograph the cuckolded Wilson as an 'artistic' subject is a darkly comic moment that encapsulates Tom's cruelty and Nick's complicit observation; the entire McKee/Tom exchange in this passage is cut from the draft.",
-      "suggested_fix": "Restore the exchange where Tom suggests McKee get 'a letter of introduction' to Wilson and proposes 'George B. Wilson at the Gasoline Pump' as a subject."
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "the only car visible was the dust-covered wreck of a Ford which crouched in a dim corner",
+      "source_locator": "inside Wilson's garage",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains this image but removes the framing: 'The interior was unprosperous and bare' is present implicitly, but 'the only car visible' is now syntactically subordinated into a compressed description that loses some of the deliberate bareness of the original paragraph.",
+      "suggested_fix": "Minor; preserve 'The interior was unprosperous and bare' as a separate sentence before the Ford detail."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's major set-pieces but erases seven passages of signature weight, most critically the handkerchief-wiping gesture (an interpretive crux in the critical tradition), plus the dog-buying comedy, Myrtle's obscene outburst, the 'decomposed apathetically' line, Catherine's eyebrow description, the policeman-lie detail in Myrtle's monologue, and Tom's 'George B. Wilson at the Gasoline Pump' joke."
+  "summary": "The draft contains two high-severity signature losses (the social framing of Tom's affair and Nick's 'bordered on violence' irony; Nick's 'shadow of a garage' fantasy) plus one probable high (the 'within and without' passage is present but its setup is clipped), alongside five medium-severity failures including the erasure of Myrtle's direct-speech monologue, the 'blue honey of the Mediterranean' image, and the thinning of the party's climactic aftermath — collectively requiring regeneration."
 }

@@ -52,6 +52,9 @@ def run_critic(book: Book, segment_id: str, critic_name: str) -> CriticResult:
     segment_source = source_path.read_text()
     draft = draft_path.read_text()
 
+    cuts_path = book.work_dir / "cuts.json"
+    cuts = read_json(cuts_path) if cuts_path.exists() else None
+
     prompt = load_prompt(prompt_name)
     rendered = prompt.render(
         book={
@@ -68,6 +71,7 @@ def run_critic(book: Book, segment_id: str, critic_name: str) -> CriticResult:
         segment=segment,
         segment_source=segment_source,
         draft=draft,
+        cuts=cuts,
     )
 
     resp = complete(

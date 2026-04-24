@@ -5,49 +5,40 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I had no plan, though at that point what I really wanted was a machete and a flashlight. The world of dragons was very dark.",
-      "source_locator": "Opening paragraph",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The opening line's dry comic logic ('I had no plan, though…') is the narrator's signature self-awareness; the draft collapses it to 'I wanted a machete and a flashlight,' losing the setup's ironic rhythm and the aside about the dragon world's darkness.",
-      "suggested_fix": "Restore the original opening clause structure: 'I had no plan, though what I really wanted was a machete and a flashlight. The world of dragons was very dark.'"
+      "source_passage": "The clear water sparkled in the dim light of early morning.",
+      "source_locator": "After the water-spirit disappears, before Miriam turns to Cayden",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'early morning' detail is a small but interpretively significant time-marker — it signals that Miriam has spent the entire night on this quest, adding weight to her exhaustion and commitment; the draft omits this beat entirely.",
+      "suggested_fix": "After the Lady vanishes, retain the phrase 'the dim light of early morning' or equivalent to preserve the temporal note."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Every rock and tree branch tried to murder me, but the sound of the waterfall kept hope alive within me.",
-      "source_locator": "Opening paragraph",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The personification of the environment as homicidal ('tried to murder me') is a comic-voice register marker that appears again with 'last homicidal branch'; the draft reduces this to 'Every root tried to take me down,' losing the escalating comic hyperbole.",
-      "suggested_fix": "Restore 'murder me' phrasing and the branch's 'homicidal' modifier; both are small but tonally load-bearing."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "It was hard to breathe so close to her overpowering aura. 'Isn't that enough?'",
-      "source_locator": "Exchange at the water's edge, after the Lady cups the narrator's cheek",
+      "source_passage": "The grave faces were paler, as was Xander... He clutched the covers so tightly his hands were as white as the sheets.",
+      "source_locator": "Return to the sickroom, before Miriam administers the cure",
       "draft_treatment": "flattened",
-      "why_it_matters": "The internal tag 'It was hard to breathe so close to her overpowering aura' is character-experience texture establishing the Lady's supernatural presence; the draft omits it entirely, flattening the moment to bare dialogue.",
-      "suggested_fix": "Reinsert a beat indicating the narrator's difficulty breathing or the Lady's overwhelming aura before the 'Isn't that enough?' line."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Her skin was cold and brushed against mine like the flow of the gentle creek.",
-      "source_locator": "After 'She cupped my cheek in one of her palms.'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The simile 'like the flow of the gentle creek' ties the Lady's physicality to her elemental nature; the draft reduces it to 'cold as the brook,' losing the verb ('brushed') and the gentleness qualifier that soften the uncanny moment.",
-      "suggested_fix": "Restore the fuller simile: 'cold and brushed against mine like the flow of the gentle creek.'"
+      "why_it_matters": "The simile 'as white as the sheets' is a compact, distinctive image that links Xander's pallor to his grip on the deathbed linen; the draft reduces this to 'his fists clutching the sheets until his knuckles matched them,' losing the explicit 'white as the sheets' formulation that mirrors the source's economical lyricism.",
+      "suggested_fix": "Restore the simile: 'his hands were as white as the sheets' rather than the paraphrase 'knuckles matched them.'"
     },
     {
       "severity": "low",
-      "class": "other",
-      "source_passage": "I threw myself over his chest as he began to shake and thrash. The episode lasted for a long few seconds before a soft blue glow spread from his chest across the rest of his body.",
-      "source_locator": "Healing scene, after the vial is administered",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source specifies 'a long few seconds'—a compressed, tense time-marker—and that the glow originates from 'his chest.' The draft compresses the timing and relocates the origin to 'his wounds,' slightly diffusing the precision of the image.",
-      "suggested_fix": "Retain 'a long few seconds' and 'spread from his chest' to preserve the source's specific choreography."
+      "class": "voice_flattening",
+      "source_passage": "I threw myself over his chest as he began to shake and thrash. The episode lasted for a long few seconds before a soft blue glow...",
+      "source_locator": "During the cure scene, after Miriam administers the vial",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'A long few seconds' is a characteristically wry narratorial phrase — the oxymoron captures Miriam's subjective dread; the draft replaces it with a smooth action sequence and loses the voice-level aside.",
+      "suggested_fix": "Retain 'a long few seconds' or equivalent self-aware phrase to preserve the narrator's ironic register at that moment of suspense."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The water beneath her bubbled up and surrounded her, but her soft words reached me as clear as the water in my hands.",
+      "source_locator": "After the Lady steps back into the pool, before she delivers her final speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile 'clear as the water in my hands' creates a deliberate echo between the gift and the departing figure's speech; the draft delivers the dialogue without this connective image, flattening a small but rhetorically purposeful moment.",
+      "suggested_fix": "Reintroduce the linking simile—'her words reached me as clear as the water in my hands'—before the Lady's final speech."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; three medium-severity findings of voice flattening (opening comic hyperbole, aura interiority, and elemental simile) reduce the narrator's comic-ironic register but do not individually trigger regeneration."
+  "summary": "The draft is broadly faithful with no high-severity losses; two medium findings (the 'early morning' time-marker erased and the 'white as the sheets' simile paraphrased away) and two low findings indicate minor voice-flattening that falls short of the regeneration threshold."
 }

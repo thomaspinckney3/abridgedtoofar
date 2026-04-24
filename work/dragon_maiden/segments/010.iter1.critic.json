@@ -5,31 +5,40 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I jumped to my feet and glared at him. 'Like hell you are! I'm not going back there, and you're going to let those other-' My not-so-eloquent speech was interrupted by the twinkling of laughter.",
-      "source_locator": "paragraph after 'The lord bowed his head. I am sorry...'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The narrator's self-deprecating aside 'My not-so-eloquent speech' is a voice-establishing beat — the heroine's ironic self-awareness in mid-crisis is central to the chapter's comic register. The draft replaces it with neutral narration ('Laughter, bright as light on water, broke over my rant'), erasing the self-commentary.",
-      "suggested_fix": "Restore the parenthetical self-commentary in close proximity to the interrupted outburst, e.g., keep a version of 'my not-so-eloquent speech was interrupted' rather than absorbing it into description."
+      "source_passage": "The whole place was madness.",
+      "source_locator": "paragraph 2, after description of festive lights",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This terse, sardonic sentence is a voice-establishing beat — the narrator's dry, deadpan register in a single snap judgment. The draft folds 'madness' into a longer clause ('madness everywhere I looked'), losing the staccato finality that defines the narrator's comic tone.",
+      "suggested_fix": "Restore the sentence as a standalone: 'The whole place was madness.' The isolation is the joke."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The whole place was madness.",
-      "source_locator": "End of paragraph 2, describing the town's festive lights",
+      "source_passage": "My aim was-well, as reliable as ever.",
+      "source_locator": "paragraph after dragon lord draws sword, description of stone throw",
       "draft_treatment": "absent",
-      "why_it_matters": "This blunt, wry three-word sentence is a register-defining beat — the narrator punctuates an atmospheric observation with deadpan editorial judgment, establishing the sardonic voice that runs through the escape sequence.",
-      "suggested_fix": "Restore or closely echo the flat editorial aside at the end of the description of town lights below."
+      "why_it_matters": "This self-deprecating, self-interrupting dash construction is a signature voice moment — the narrator's wry interiority mid-action. The draft replaces it with 'My aim, as usual, betrayed me,' which conveys the same fact but scrubs the narrator's comic timing and the rhetorical dash-pause that marks the voice.",
+      "suggested_fix": "Restore the phrasing as close to 'my aim was—well, as reliable as ever' as the sentence allows; the dash-and-hedge construction is the signature, not just the self-deprecation."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I shook like a leaf beneath her awesome beauty.",
+      "source_locator": "paragraph describing the water woman approaching Miriam, before the blessing",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line characterizes Miriam's physical terror-response to the supernatural with a folksy simile that blends sincerity and slight self-mockery — a register marker for the narrator's voice. The draft replaces the physical reaction with 'Her presence pressed like tide and undertow at once,' which is a stylistic substitution, not a compression of the original.",
+      "suggested_fix": "Restore 'I shook like a leaf beneath her awesome beauty' or integrate it alongside the draft's tide/undertow image to preserve both the physicality and the voice register."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "my aim was-well, as reliable as ever",
-      "source_locator": "Paragraph describing the rock throw at the Dragon Lord",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The em-dash self-correction ('well, as reliable as ever') is a characteristic voice tic — the narrator catching herself mid-sentence and substituting irony. The draft's 'My aim was true to form' conveys the same fact but flattens the spoken, self-interrupting rhythm.",
-      "suggested_fix": "Restore the self-interrupting construction: 'my aim was — well, as reliable as ever' rather than the more polished paraphrase."
+      "source_passage": "That was no mirage of an insane person.",
+      "source_locator": "penultimate paragraph, after the woman vanishes",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief internal line is a voice beat — Miriam reassuring herself with comic understatement after witnessing the supernatural. Its absence removes a moment of narratorial self-awareness that characterizes the chapter's closing tone.",
+      "suggested_fix": "Reinsert 'That was no mirage of an insane person' (or near-verbatim) as a single sentence of interior reaction before the final collapse."
     }
   ],
-  "verdict": "pass",
-  "summary": "No high-severity signature losses; two medium-severity voice flattenings (the narrator's self-deprecating aside and the 'whole place was madness' editorial beat) and one low-severity rhythm loss are present but insufficient individually or collectively to require regeneration."
+  "verdict": "regenerate",
+  "summary": "The draft preserves plot and most dialogue faithfully but erases three medium-severity voice markers — the standalone 'madness' snap, the signature dash-hedge on the stone throw, and the 'shook like a leaf' simile — which together constitute sufficient voice-flattening to require regeneration."
 }

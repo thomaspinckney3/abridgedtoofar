@@ -6,48 +6,48 @@
       "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "Night beat me to the stoop of my apartment building, and with it came its friends shadow and darkness.",
-      "source_locator": "Paragraph 1",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The personification 'its friends shadow and darkness' is a small but rhythmically distinctive piece of voice-establishing prose; the draft drops 'its friends' and substitutes 'silence,' erasing both the rhetorical figure and the narrator's wry tone.",
-      "suggested_fix": "Restore 'its friends shadow and darkness' verbatim in the opening paragraph."
+      "source_locator": "paragraph 1",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's personification — 'Night beat me to the stoop… with its friends shadow and darkness' — is a small but characterful register marker establishing the narrator's wry, slightly literary voice. The draft flattens it to 'night had settled in with its friends, shadow and silence,' losing 'beat me to the stoop' (the competitive, personified energy) and swapping 'darkness' for 'silence,' which dissolves the atmospheric pairing.",
+      "suggested_fix": "Restore 'Night beat me to the stoop' and 'shadow and darkness' verbatim or within a word; the competitive verb 'beat' and the noun pair are the signature elements."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Hulking shadows of trashcans and broken boxes stared back at me. Puddles reflected the darkness that was only broken by a few feeble attempts by the streetlights to illuminate the deep interior.",
-      "source_locator": "Paragraph 2",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The personification 'stared back at me' and the wryly hyperbolic 'feeble attempts by the streetlights to illuminate the deep interior' both carry the narrator's signature ironic register; the draft compresses this to a flat list ('Boxes, cans, a few feeble streetlights reflecting off puddles') stripping both the stare-personification and the extended metaphor.",
-      "suggested_fix": "Restore 'hulking shadows…stared back at me' and the 'feeble attempts by the streetlights' phrasing to preserve the alley's menacing-yet-wry character."
+      "source_passage": "Puddles reflected the darkness that was only broken by a few feeble attempts by the streetlights to illuminate the deep interior.",
+      "source_locator": "paragraph 2, alley description",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence carries the narrator's wry, almost mock-Gothic register ('feeble attempts by the streetlights') and establishes the atmospheric texture of the alley scene. The draft omits it entirely, collapsing the alley pause to a single sentence and removing the voice-establishing irony.",
+      "suggested_fix": "Reinsert the streetlight detail, even in compressed form: the phrase 'feeble attempts by the streetlights' is the voice marker worth keeping."
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "My furious thoughts gave way to a loose grasp of consciousness. My head began to spin along with the room. In a moment I was knocked clean out.",
-      "source_locator": "Final three sentences",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'My furious thoughts' and 'a loose grasp of consciousness' establish interior resistance and are tonally distinct; the source's three-beat closing ('furious thoughts / loose grasp / knocked clean out') is a recognizable rhythmic close. The draft renders it as 'Thoughts unraveled; the room tilted. Darkness took me cleanly.' — a poetic substitute that erases the specific 'furious thoughts' interiority and the colloquial 'knocked clean out.'",
-      "suggested_fix": "Restore 'My furious thoughts gave way to a loose grasp of consciousness' and the colloquial closing 'knocked clean out' to preserve both the interior voice and the chapter's tonal landing."
-    },
-    {
-      "severity": "low",
       "class": "voice_flattening",
       "source_passage": "My one-bedroom apartment was on the third floor with a lovely view of the fire escape and the neighboring brick building.",
-      "source_locator": "Paragraph 7",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The dry irony of 'a lovely view of the fire escape and the neighboring brick building' is a small character beat; the draft substitutes 'a friendly brick wall,' losing 'lovely view' and compressing the joke.",
-      "suggested_fix": "Restore 'a lovely view of the fire escape and the neighboring brick building' to keep the narrator's self-deprecating irony intact."
+      "source_locator": "paragraph after lobby scene",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's dry self-deprecating irony — 'lovely view of the fire escape and the neighboring brick building' — is voice-establishing humour. The draft trims it to 'a view of the fire escape,' losing the comic punch of the brick-building comparison and the sarcastic 'lovely.'",
+      "suggested_fix": "Restore 'with a lovely view of the fire escape and the neighboring brick building' verbatim; the irony depends on both elements."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "he leaned down close to me again and reached into his shirt collar. My eyes widened as he pulled away the fake flesh… The nostrils of his nose bulged out like that of a pig",
+      "source_locator": "Blake's unmasking scene, mid-chapter",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's phrase 'pulled away the fake flesh that clung tightly to his brown skin' is interpretively significant: it registers Miriam's shocked noticing of the monster beneath a human-of-colour disguise, which carries both horror-genre and potential thematic weight. The draft replaces this with 'peeled back a thin mask of flesh,' dropping the skin-colour detail and the verb 'clung,' both of which are specific to the source's characterisation of the deception.",
+      "suggested_fix": "Reintroduce 'pulled away the fake flesh' with the detail of it clinging to Brown skin; the source's specificity here is meaningful and should not be generalised away."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Its only reaction was tears that pooled in my eyes and slid down my cheeks.",
-      "source_locator": "Second-to-last paragraph",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The phrase 'its only reaction' distancing Miriam from her own body is an interpretively important moment of helpless dissociation; the draft has 'Tears slid from my unblinking eyes,' which conveys the image but loses the dissociative grammar that makes the paralysis vivid.",
-      "suggested_fix": "Restore the subject-shift 'Its only reaction was tears that pooled in my eyes' to preserve the bodily-dissociation effect."
+      "source_passage": "My furious thoughts gave way to a loose grasp of consciousness. My head began to spin along with the room.",
+      "source_locator": "final paragraph before blackout",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'furious thoughts gave way to a loose grasp of consciousness' captures Miriam's interiority — her rage at being helpless — which is then dissolved by the drug. The draft replaces this with 'the room loosened,' losing the emotional beat of her anger.",
+      "suggested_fix": "Add a beat preserving 'furious thoughts' before the blackout to maintain Miriam's interior emotional state."
     }
   ],
-  "verdict": "pass",
-  "summary": "No high-severity signature losses; two medium-severity voice flattenings (alley personification and closing interiority) and three low-severity irony/register erosions are present but insufficient individually to mandate regeneration under the rubric."
+  "verdict": "regenerate",
+  "summary": "The draft competently compresses plot but repeatedly flattens the narrator's wry, ironic register (the alley streetlights, the 'lovely view,' 'Night beat me'), and a medium-severity interpretive loss in the unmasking scene — dropping the source's skin-colour detail — pushes the tally to four medium-severity findings, triggering regeneration."
 }

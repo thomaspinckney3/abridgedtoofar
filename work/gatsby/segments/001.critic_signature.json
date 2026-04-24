@@ -3,51 +3,105 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Her face was sad and lovely with bright things in it, bright eyes and a bright passionate mouth, but there was an excitement in her voice",
-      "source_locator": "paragraph describing Daisy's voice, after Baker introduction",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "some heightened sensitivity to the promises of life, as if he were related to one of those intricate machines that register earthquakes ten thousand miles away",
+      "source_locator": "opening paragraphs, Gatsby introduction passage",
+      "draft_treatment": "absent",
+      "why_it_matters": "The earthquake-machine simile is one of the most critically discussed metaphors in the novel, establishing Gatsby's preternatural responsiveness; the draft preserves the surrounding sentences but omits this specific image entirely, gutting the passage's interpretive core.",
+      "suggested_fix": "Restore the full simile: 'some heightened sensitivity to the promises of life, as if he were related to one of those intricate machines that register earthquakes ten thousand miles away.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "a sense of the fundamental decencies is parcelled out unequally at birth",
+      "source_locator": "first paragraph block, closing sentence of opening meditation",
+      "draft_treatment": "absent",
+      "why_it_matters": "This line is present in the source and present in the draft — on re-reading the draft does include it. Withdrawing this finding.",
+      "suggested_fix": "N/A — line is present in draft."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "she seemed to be buoyed up as though upon an anchored balloon … I was almost surprised into murmuring an apology for having disturbed her by coming in",
+      "source_locator": "Jordan Baker's introduction on the couch",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft drops 'bright eyes and a bright passionate mouth' from the description, reducing a carefully constructed anaphoric image ('bright things in it, bright eyes and a bright passionate mouth') to a bare clause. The triple 'bright' repetition is a minor but characteristic stylistic signature.",
-      "suggested_fix": "Restore the full phrase: 'Her face was sad and lovely with bright things in it, bright eyes and a bright passionate mouth.'"
+      "why_it_matters": "The draft collapses the careful, irony-laden introduction of Jordan — her complete motionless self-sufficiency, Nick's near-apology, and the line 'Almost any exhibition of complete self-sufficiency draws a stunned tribute from me' — into a single compressed gesture. That line is a voice-defining aside that shapes Nick's character and his susceptibility to Jordan.",
+      "suggested_fix": "Restore: 'The younger of the two was extended full length … as if she were balancing something on it which was quite likely to fall … Almost any exhibition of complete self-sufficiency draws a stunned tribute from me.'"
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "It was the kind of voice that the ear follows up and down … a singing compulsion, a whispered 'Listen,' a promise that she had done gay, exciting things just a while since",
+      "source_locator": "Nick's description of Daisy's voice, after Jordan introduction",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft keeps the opening clause about the voice but drops the critical elaboration — 'a singing compulsion, a whispered Listen, a promise that she had done gay, exciting things just a while since and that there were gay, exciting things hovering in the next hour.' This is the passage critics return to most often when discussing Daisy's voice as seduction and artifice; its truncation removes its interpretive payload.",
+      "suggested_fix": "Restore the full passage through 'hovering in the next hour' to preserve the culturally famous characterization of Daisy's voice."
     },
     {
       "severity": "medium",
       "class": "voice_erasure",
-      "source_passage": "I must have stood for a few moments listening to the whip and snap of the curtains and the groan of a picture on the wall.",
-      "source_locator": "interior scene, after the two women are described on the couch",
+      "source_passage": "And so with the sunshine and the great bursts of leaves growing on the trees, just as things grow in fast movies, I had that familiar conviction that life was beginning over again with the summer.",
+      "source_locator": "Nick's first days at West Egg, after the stranger asks directions",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence—with its sensory precision and Nick's dreamlike passivity—is a characteristic voice moment establishing the enchanted strangeness of the Buchanan house. Its omission flattens the hallucinatory quality of the scene.",
-      "suggested_fix": "Restore the sentence between the description of the two women and Tom shutting the windows."
+      "why_it_matters": "This lyrical passage — including the books standing 'like new money from the mint' and the 'well-rounded man' epigram — establishes Nick's self-mythologizing optimism at chapter's start, which the novel then systematically ironizes. Its absence removes an important register marker for Nick's voice.",
+      "suggested_fix": "Restore at minimum: 'And so with the sunshine and the great bursts of leaves … I had that familiar conviction that life was beginning over again with the summer,' and the books-as-new-money image."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "a factual imitation of some Hôtel de Ville in Normandy, with a tower on one side, spanking new under a thin beard of raw ivy",
+      "source_locator": "description of Gatsby's mansion",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft strips the 'factual imitation of some Hôtel de Ville in Normandy' phrase — the precise social comedy of the detail ('factual imitation') that announces Gatsby's aspirational fakery before we know anything about him. Only 'spanking new under a thin beard of raw ivy' survives.",
+      "suggested_fix": "Restore: 'a factual imitation of some Hôtel de Ville in Normandy, with a tower on one side' to keep the mock-grandeur specificity intact."
     },
     {
       "severity": "medium",
       "class": "voice_erasure",
-      "source_passage": "To a certain temperament the situation might have seemed intriguing—my own instinct was to telephone immediately for the police.",
-      "source_locator": "after 'this fifth guest's shrill metallic urgency out of mind'",
+      "source_passage": "he seemed to fill those glistening boots until he strained the top lacing … Two shining arrogant eyes had established dominance over his face and gave him the appearance of always leaning aggressively forward",
+      "source_locator": "Tom Buchanan physical description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft removes 'gave him the appearance of always leaning aggressively forward' and the boot-straining detail, which together compose the signature physicality of Tom — the visual grammar for his bullying aggression throughout the novel. The condensed description loses the rhetorical build.",
+      "suggested_fix": "Restore: 'gave him the appearance of always leaning aggressively forward' and 'he seemed to fill those glistening boots until he strained the top lacing.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "The windows were ajar and gleaming white against the fresh grass outside that seemed to grow a little way into the house. A breeze blew through the room … making a shadow on it as wind does on the sea.",
+      "source_locator": "interior of Buchanan house, curtain passage",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft keeps the curtain-and-rug passage but drops 'the fresh grass outside that seemed to grow a little way into the house' — a signature image of nature penetrating the artificial that critics cite in discussions of the novel's pastoral themes. The 'boom as Tom Buchanan shut the rear windows and the caught wind died' — the kinetic moment of Tom's intrusion — is also absent.",
+      "suggested_fix": "Restore the grass-growing-into-house image and the boom of Tom shutting the windows, which enacts his physical dominance in the novel's first interior scene."
+    },
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "I felt the basic insincerity of what she had said. It made me uneasy, as though the whole evening had been a trick of some sort to exact a contributory emotion from me … she looked at me with an absolute smirk on her lovely face, as if she had asserted her membership in a rather distinguished secret society to which she and Tom belonged.",
+      "source_locator": "end of Daisy's 'beautiful little fool' speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft condenses this to 'a stirring smirk came presently to her lovely face, as if she had asserted a membership in a secret society,' losing the crucial interpretive frame: Nick's recognition that 'the whole evening had been a trick … to exact a contributory emotion.' This is the passage that establishes Nick as a potentially unreliable, manipulated observer — a cornerstone of the novel's critical conversation.",
+      "suggested_fix": "Restore: 'I felt the basic insincerity of what she had said. It made me uneasy, as though the whole evening had been a trick of some sort to exact a contributory emotion from me.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "They knew that presently dinner would be over and a little later the evening too would be over and casually put away. It was sharply different from the West, where an evening was hurried from phase to phase towards its close",
+      "source_locator": "narrator aside on Daisy and Jordan's manner at dinner",
       "draft_treatment": "absent",
-      "why_it_matters": "This is one of Nick's sharpest ironic asides and a voice-defining moment of sardonic understatement; its loss erases a signature register marker and diminishes Nick's characterization as an ironic observer.",
-      "suggested_fix": "Restore the full sentence as Nick's ironic reaction to the telephone situation."
+      "why_it_matters": "This passage establishes the East/West contrast as a register of moral carelessness — one of the novel's organizing thematic oppositions — in Nick's own essayistic voice. Its complete omission removes a key voice-and-theme beat.",
+      "suggested_fix": "Restore the passage contrasting the women's cool indifference to the evening's close with the West's anxious anticipation; it is brief and thematically load-bearing."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I never saw this great-uncle, but I'm supposed to look like him—with special reference to the rather hard-boiled painting that hangs in father's office.",
-      "source_locator": "family background paragraph, before Yale graduation",
-      "draft_treatment": "absent",
-      "why_it_matters": "The detail of the 'hard-boiled painting' is a small but characteristic self-deprecating Fitzgerald touch; its omission is minor but the draft loses a moment of dry humor from Nick's self-presentation.",
-      "suggested_fix": "Include the sentence about the great-uncle and the hard-boiled painting when compressing the family background."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "The lamplight, bright on his boots and dull on the autumn-leaf yellow of her hair, glinted along the paper as she turned a page with a flutter of slender muscles in her arms.",
-      "source_locator": "interior scene, Tom and Jordan with the Saturday Evening Post",
-      "draft_treatment": "absent",
-      "why_it_matters": "The draft reduces the Post-reading scene to a bare summary, losing a signature prose-visual image of Jordan Baker that the critical tradition has noted as characteristic of Fitzgerald's painterly style.",
-      "suggested_fix": "Restore the lamplight sentence describing Jordan turning the page."
+      "source_passage": "I had heard some story of her too, a critical, unpleasant story, but what it was I had forgotten long ago.",
+      "source_locator": "Jordan Baker recognition scene",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this but collapses the fuller Jordan-recognition scene, including the rotogravure detail and 'Asheville and Hot Springs and Palm Beach.' The specificity of place-names signals her social world and foreshadows the golf-cheating scandal; the compression is minor but present.",
+      "suggested_fix": "Retain 'rotogravure pictures of the sporting life at Asheville and Hot Springs and Palm Beach' for period texture and social specificity."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is largely faithful, preserving all major signatures verbatim (opening lines, Gatsby introduction, 'beautiful little fool,' green light closing), but suffers three medium-severity voice/register losses in the Buchanan interior that flatten Nick's ironic narrator consciousness without triggering regeneration."
+  "verdict": "regenerate",
+  "summary": "The draft preserves the novel's famous opening paragraph and closing green-light scene intact but erases or fatally truncates multiple high-priority signatures: the earthquake-machine simile (absent), the full characterization of Daisy's voice as 'a singing compulsion, a whispered Listen,' Jordan's self-sufficiency introduction, and Nick's recognition that the whole evening was 'a trick to exact a contributory emotion' — collectively representing both culturally famous passages and the interpretive keystones the critical tradition depends on."
 }

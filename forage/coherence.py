@@ -81,6 +81,9 @@ def run_coherence(book: Book) -> dict:
     per_pair: list[dict] = []
     prompt = load_prompt("critic_coherence")
 
+    cuts_path = book.work_dir / "cuts.json"
+    cuts = read_json(cuts_path) if cuts_path.exists() else None
+
     for sid_n, sid_np1 in pairs:
         if not _pair_has_drafts(book, sid_n, sid_np1):
             per_pair.append({"pair": f"{sid_n}-{sid_np1}",
@@ -95,6 +98,7 @@ def run_coherence(book: Book) -> dict:
             n=sid_n, n_plus_1=sid_np1,
             src_n=src_n, draft_n=draft_n,
             src_np1=src_np1, draft_np1=draft_np1,
+            cuts=cuts,
         )
         resp = complete(
             prompt=rendered,
@@ -110,6 +114,15 @@ def run_coherence(book: Book) -> dict:
             per_pair.append({"pair": f"{sid_n}-{sid_np1}",
                              "skipped": f"parse error: {e}", "count": 0})
             continue
+
+        # Flatten nested list responses (critic sometimes returns [[...]]).
+        flat: list[dict] = []
+        for f in findings:
+            if isinstance(f, list):
+                flat.extend(x for x in f if isinstance(x, dict))
+            elif isinstance(f, dict):
+                flat.append(f)
+        findings = flat
 
         # Resolve the "chapter" field ("N" or "N+1") to an actual segment id.
         for f in findings:

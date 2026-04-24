@@ -8,46 +8,37 @@
       "source_passage": "I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't.",
       "source_locator": "paragraph beginning 'W-what are you doing to me?'",
       "draft_treatment": "flattened",
-      "why_it_matters": "This internal struggle—the explicit naming of 'dragon-man,' 'kidnapped,' 'slave'—is the interpretive keystone of the seduction scene, establishing the narrator's complicity and moral conflict. The draft alludes to it only in a parenthetical aside ('my traitor body... kidnapped and possession and no'), stripping the full emotional articulation that gives the consent scene its tension.",
-      "suggested_fix": "Restore the direct internal monologue verbalizing 'kidnapped me and made me his slave' so the reader feels the full weight of capitulation rather than a glancing reference."
+      "why_it_matters": "The explicit self-naming of Xander as 'this dragon-man who had kidnapped me and made me his slave' is interpretively loaded — it marks Miriam's ongoing consciousness of her captivity even inside desire, which is a thematic keystone of the maiden-to-dragon dynamic. The draft replaces this with 'to remember the door, the locked window, the word possession,' which gestures at the same idea but strips the direct, blunt moral framing.",
+      "suggested_fix": "Restore the phrase 'this dragon-man who had kidnapped me and made me his slave' (or a very close paraphrase) inside the internal-resistance beat so the reader hears Miriam name her situation explicitly even as she surrenders to it."
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
+      "class": "signature_loss",
       "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
-      "source_locator": "paragraph ending 'He wrapped his wings around me in a warm embrace'",
+      "source_locator": "paragraph beginning 'Ssh. Enjoy the feeling'",
       "draft_treatment": "absent",
-      "why_it_matters": "The caterpillar/butterfly simile is the chapter's most distinctive figurative image and its only sustained metaphor; it encodes the transformation theme central to the whole book. Its complete absence removes a recognizable, genre-defining moment.",
-      "suggested_fix": "Reintroduce the caterpillar-to-butterfly simile in the wing-embrace passage; it is short enough to include verbatim within the compression budget."
+      "why_it_matters": "This simile is the segment's single most stylistically distinctive metaphor — it frames the seduction as metamorphic transformation, which is a thematic throughline for the entire series (Maiden transformed by the Dragon). Its absence erases a voice-establishing figure that carries both tonal signature and interpretive weight.",
+      "suggested_fix": "Re-insert the caterpillar/butterfly simile at the moment his wings enfold her, either verbatim or in very close paraphrase, so the transformation motif is preserved."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "They consumed me like a man starved of food who had finally found his feast.",
       "source_locator": "paragraph beginning 'He drew the flimsy gown over my head'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This simile is the chapter's primary voice-establishing rhetorical flourish during the intimate scene and contributes significantly to the erotic register; its loss flattens the narrator's characteristic hyperbolic voice.",
-      "suggested_fix": "Restore or closely paraphrase the 'starved man / feast' simile when describing his gaze after removing her dress."
-    },
-    {
-      "severity": "medium",
-      "class": "interpretive_loss",
-      "source_passage": "\"I consider myself only half dragon. My mother was a Maiden like yourself, and my father took her as his bride,\" he revealed.",
-      "source_locator": "Early dialogue, after the narrator touches the wings",
-      "draft_treatment": "absent",
-      "why_it_matters": "The lord's disclosure that he is half-dragon and that his own mother was a Maiden is load-bearing world-building and mirrors the narrator's situation; it is the chapter's central piece of lore and its omission removes a thematically critical parallel.",
-      "suggested_fix": "Restore this dialogue exchange, including 'My mother was a Maiden like yourself,' before the seduction begins."
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source uses a blunt, carnivorous simile ('starved of food … found his feast') that defines the register of the erotic prose — unguarded, almost melodramatic. The draft replaces it with 'as if he'd found water after a long thirst,' which is softer, more literary, and loses the food/feast predatory charge that matches the dragon-nature of the character.",
+      "suggested_fix": "Restore the 'starved man who has found his feast' formulation rather than the water/thirst substitution, to preserve the predatory register the source establishes."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "\"So… tight,\" he gasped. I leaned forward and nibbled at his ear. \"So wonderful.\"",
-      "source_locator": "Near-climax exchange during intercourse",
+      "source_passage": "My sultry voice dripped with desire. 'Yes. More. So much more.'",
+      "source_locator": "paragraph beginning 'He grunted and thrust deeper'",
       "draft_treatment": "absent",
-      "why_it_matters": "This brief reciprocal dialogue is the only moment of mutual verbal exchange during the sex scene and gives the narrator an active, not merely receptive, role; its loss slightly reduces her voice in the scene's most intense passage.",
-      "suggested_fix": "Reintegrate the brief 'So tight / So wonderful' exchange to preserve narrative reciprocity."
+      "why_it_matters": "Miriam's self-description of her own voice as 'sultry' and the staccato imperative sequence ('Yes. More. So much more.') are stylistically distinctive — the self-aware narrator naming her own register is a mild but real voice marker. The draft collapses this to an indirect reference ('asked for more').",
+      "suggested_fix": "Restore the direct speech ('Yes. More. So much more.') and at minimum the rhythmic staccato, even if the self-description tag is trimmed."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Four findings of medium severity (the absent half-dragon lore disclosure, the caterpillar/butterfly simile, the 'starved man/feast' simile, and the full slave-self-reproach) together trigger regeneration; the draft compresses the scene's interpretive and voice-defining material too aggressively."
+  "summary": "Three medium-severity failures — the erasure of Miriam's explicit self-naming of captivity, the complete loss of the caterpillar/butterfly transformation simile, and the replacement of the predatory 'starved man/feast' image with a softer substitute — collectively flatten the segment's thematic voice and strip its most interpretively loaded metaphor; regeneration is required."
 }

@@ -23,6 +23,7 @@ load_dotenv()
 from forage.artifacts import load_book, read_json
 from forage.assemble import assemble_book
 from forage.book_critic import run_book_critic
+from forage.coherence import run_coherence
 from forage.iterate import iterate_segment
 
 if len(sys.argv) < 2:
@@ -62,7 +63,7 @@ for i, seg in enumerate(diegetic, 1):
           f"src={seg['source_word_count']}w tgt={seg['target_word_count']}w "
           f"group={seg.get('group_id') or '—'}", flush=True)
     try:
-        r = iterate_segment(book, plan, sid, max_retries=2,
+        r = iterate_segment(book, plan, sid, max_retries=1,
                             redraft_first=False)
         draft_path = book.work_dir / "segments" / f"{sid}.md"
         final_words = (len(draft_path.read_text().split())
@@ -106,6 +107,22 @@ log({"phase": "assemble",
      "segments_drafted": assembly.segments_drafted,
      "segments_cut": assembly.segments_cut,
      "segments_missing": assembly.segments_missing})
+
+print()
+print("running coherence (post-hoc; does not feed regen)...")
+try:
+    coh = run_coherence(book)
+    print(f"  pairs={coh['pairs_checked']} findings={coh['findings_total']} "
+          f"classes={coh.get('class_counts', {})}")
+    log({"phase": "coherence",
+         "pairs_checked": coh["pairs_checked"],
+         "findings_total": coh["findings_total"],
+         "class_counts": coh.get("class_counts", {}),
+         "per_segment_counts": coh.get("per_segment_counts", {})})
+except Exception as e:
+    print(f"  ERROR: {type(e).__name__}: {e}")
+    log({"phase": "coherence",
+         "error": f"{type(e).__name__}: {e}"})
 
 print()
 print("running book critic...")

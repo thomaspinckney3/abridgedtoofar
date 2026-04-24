@@ -5,49 +5,40 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The world of dragons was very dark. The only light I had was the moon in the sky. I fumbled my way through the woods with Cayden as my guide.",
-      "source_locator": "Paragraph 1, sentences 2-4",
+      "source_passage": "The clear water sparkled in the dim light of early morning.",
+      "source_locator": "After the water-spirit disappears, before Miriam turns to Cayden",
       "draft_treatment": "absent",
-      "why_it_matters": "This brief passage establishes the narrator's wry, self-aware tone and the atmospheric darkness that frames the chapter's opening mood; its omission removes a voice-defining aside that colours the subsequent action.",
-      "suggested_fix": "Restore the two-sentence atmospheric aside ('The world of dragons was very dark. The only light I had was the moon in the sky. I fumbled my way through the woods with Cayden as my guide.') between the opening sentence and 'Every rock and tree branch…'"
+      "why_it_matters": "The 'early morning' detail is a small but interpretively significant time-marker — it signals that Miriam has spent the entire night on this quest, adding weight to her exhaustion and commitment; the draft omits this beat entirely.",
+      "suggested_fix": "After the Lady vanishes, retain the phrase 'the dim light of early morning' or equivalent to preserve the temporal note."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "She straightened and frowned. She wanted to do it the hard way.",
-      "source_locator": "After 'The water gurgled in reply.'",
+      "source_passage": "The grave faces were paler, as was Xander... He clutched the covers so tightly his hands were as white as the sheets.",
+      "source_locator": "Return to the sickroom, before Miriam administers the cure",
       "draft_treatment": "flattened",
-      "why_it_matters": "The source gives the reader Miriam's internal framing ('She wanted to do it the hard way') as a first-person sardonic aside; the draft converts it to a detached paraphrase ('She wanted hard mode, then') that loses the narrator's characteristic deadpan register.",
-      "suggested_fix": "Restore as close to source phrasing as possible: 'She wanted to do it the hard way.' — the exact wording is brief and carries the narrator's signature ironic economy."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I pursed my lips and shook my head. 'I don't know.'",
-      "source_locator": "After Lady's question 'Do you not love him?'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The source's staging—Miriam pursing her lips, physically shaking her head before admitting 'I don't know'—is a precise, restrained gesture that gives the moment interpretive weight about her emotional ambivalence; the draft strips it to bare dialogue with an editorialising tag ('truth stinging') that replaces character action with narrator commentary.",
-      "suggested_fix": "Restore the physical stage direction: 'I pursed my lips and shook my head. \"I don't know.\"' and remove the added 'truth stinging' gloss."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I heard a gasp from Stephanie and a chuckle from Apuleius. We parted so I could partake of some air and wipe the blush from my cheeks.",
-      "source_locator": "After the kiss, before 'You could have just said thank you'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The reaction beat (Stephanie's gasp, Apuleius's chuckle) grounds the intimate moment within the watching ensemble and is a recognisable Mac Flynn comic-relief signature; its loss flattens the scene's tonal contrast and removes the narrator's self-deprecating wit about the blush.",
-      "suggested_fix": "Restore the two sentences after the kiss, including both named character reactions and Miriam's comic aside about wiping the blush from her cheeks."
+      "why_it_matters": "The simile 'as white as the sheets' is a compact, distinctive image that links Xander's pallor to his grip on the deathbed linen; the draft reduces this to 'his fists clutching the sheets until his knuckles matched them,' losing the explicit 'white as the sheets' formulation that mirrors the source's economical lyricism.",
+      "suggested_fix": "Restore the simile: 'his hands were as white as the sheets' rather than the paraphrase 'knuckles matched them.'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "She swept her eyes over the many occupants of the room. 'If you would all leave Our Lord may find some.'",
-      "source_locator": "Near end, doctor's dismissal of the room",
+      "source_passage": "I threw myself over his chest as he began to shake and thrash. The episode lasted for a long few seconds before a soft blue glow...",
+      "source_locator": "During the cure scene, after Miriam administers the vial",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft collapses this to 'You will rest. All of you, out.' — losing the slightly formal, faintly comic register of Galen's speech which is a minor but consistent voice marker for the character.",
-      "suggested_fix": "Restore Galen's fuller dismissal line: 'He swept his eyes over the many occupants of the room. \"If you would all leave Our Lord may find some.\"'"
+      "why_it_matters": "'A long few seconds' is a characteristically wry narratorial phrase — the oxymoron captures Miriam's subjective dread; the draft replaces it with a smooth action sequence and loses the voice-level aside.",
+      "suggested_fix": "Retain 'a long few seconds' or equivalent self-aware phrase to preserve the narrator's ironic register at that moment of suspense."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "The water beneath her bubbled up and surrounded her, but her soft words reached me as clear as the water in my hands.",
+      "source_locator": "After the Lady steps back into the pool, before she delivers her final speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The simile 'clear as the water in my hands' creates a deliberate echo between the gift and the departing figure's speech; the draft delivers the dialogue without this connective image, flattening a small but rhetorically purposeful moment.",
+      "suggested_fix": "Reintroduce the linking simile—'her words reached me as clear as the water in my hands'—before the Lady's final speech."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Four medium-severity findings — loss of the opening atmospheric/voice-establishing aside, flattening of Miriam's sardonic 'hard way' interiority, erasure of the physical staging at the interpretive crux ('I pursed my lips'), and omission of the post-kiss ensemble reaction beat — collectively constitute sufficient voice erasure to require regeneration."
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful with no high-severity losses; two medium findings (the 'early morning' time-marker erased and the 'white as the sheets' simile paraphrased away) and two low findings indicate minor voice-flattening that falls short of the regeneration threshold."
 }

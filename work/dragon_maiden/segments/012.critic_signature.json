@@ -5,49 +5,40 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't. I couldn't do anything but fall into his embrace and soak in the riches of his enticing scent.",
+      "source_passage": "I tried to will myself to hate this creature, this dragon-man who had kidnapped me and made me his slave, but I couldn't.",
       "source_locator": "paragraph beginning 'W-what are you doing to me?'",
       "draft_treatment": "flattened",
-      "why_it_matters": "The doubled 'I couldn't' and the phrase 'soak in the riches of his enticing scent' carry the narrator's internal conflict and voice; the draft drops the second sentence entirely, flattening the emotional surrender that is interpretively central to the scene.",
-      "suggested_fix": "Restore the second sentence: 'I couldn't do anything but fall into his embrace and soak in the riches of his enticing scent.'"
+      "why_it_matters": "The explicit self-naming of Xander as 'this dragon-man who had kidnapped me and made me his slave' is interpretively loaded — it marks Miriam's ongoing consciousness of her captivity even inside desire, which is a thematic keystone of the maiden-to-dragon dynamic. The draft replaces this with 'to remember the door, the locked window, the word possession,' which gestures at the same idea but strips the direct, blunt moral framing.",
+      "suggested_fix": "Restore the phrase 'this dragon-man who had kidnapped me and made me his slave' (or a very close paraphrase) inside the internal-resistance beat so the reader hears Miriam name her situation explicitly even as she surrenders to it."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "I felt like a caterpillar preparing for a long, comforting nap before emerging as a beautiful butterfly.",
+      "source_locator": "paragraph beginning 'Ssh. Enjoy the feeling'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This simile is the segment's single most stylistically distinctive metaphor — it frames the seduction as metamorphic transformation, which is a thematic throughline for the entire series (Maiden transformed by the Dragon). Its absence erases a voice-establishing figure that carries both tonal signature and interpretive weight.",
+      "suggested_fix": "Re-insert the caterpillar/butterfly simile at the moment his wings enfold her, either verbatim or in very close paraphrase, so the transformation motif is preserved."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "My legs shook beneath me as he stroked the sensitive nerves tucked between my hot, wet folds. I clung to him and leaned my cheek against his hard chest. His rapid heartbeat thrilled me. My sensual torture was his.",
-      "source_locator": "paragraph beginning 'I closed my eyes and reveled'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The line 'My sensual torture was his' is a rhetorically distinctive reversal that establishes mutual desire as the chapter's thematic pivot; its absence removes that interpretive beat.",
-      "suggested_fix": "Restore at least 'His rapid heartbeat thrilled me. My sensual torture was his.' within the intimacy sequence."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I moaned and squirmed beneath his attentions… I ached for him, for his hard muscles against me and inside me… I felt my breasts swell. My hips thickened. Every part of me felt alive with desire for this creature, this man.",
-      "source_locator": "paragraph beginning 'I moaned and squirmed'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The physical transformation detail ('breasts swell,' 'hips thickened') and the closing 'this creature, this man' are signature genre markers that signal the Maiden's physical response to the dragon-bond; omitting them thins the genre-specific content the chapter depends on.",
-      "suggested_fix": "Restore the paragraph's closing beats, especially 'I felt my breasts swell. My hips thickened. Every part of me felt alive with desire for this creature, this man.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "He pulled out and pushed back in. He clenched his teeth, but a hiss escaped his lips. 'So… tight,' he gasped. I leaned forward and nibbled at his ear. 'So wonderful.' He grunted and thrust deeper into me. I lay my head back and moaned. My sultry voice dripped with desire. 'Yes. More. So much more.'",
-      "source_locator": "paragraphs of explicit dialogue during intercourse",
-      "draft_treatment": "absent",
-      "why_it_matters": "This exchange—including the mirrored 'So… tight' / 'So wonderful' and the narrator's self-description 'My sultry voice dripped with desire'—is the scene's most voice-distinct dialogue block and characterizes both parties; it is entirely absent from the draft.",
-      "suggested_fix": "Restore the dialogue exchange and the narrator's self-aware 'My sultry voice dripped with desire' line to preserve the scene's tonal signature."
+      "source_passage": "They consumed me like a man starved of food who had finally found his feast.",
+      "source_locator": "paragraph beginning 'He drew the flimsy gown over my head'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source uses a blunt, carnivorous simile ('starved of food … found his feast') that defines the register of the erotic prose — unguarded, almost melodramatic. The draft replaces it with 'as if he'd found water after a long thirst,' which is softer, more literary, and loses the food/feast predatory charge that matches the dragon-nature of the character.",
+      "suggested_fix": "Restore the 'starved man who has found his feast' formulation rather than the water/thirst substitution, to preserve the predatory register the source establishes."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "His warm breath ghosted across my tingling flesh.",
-      "source_locator": "paragraph following 'Lilacs, and cut grass'",
+      "source_passage": "My sultry voice dripped with desire. 'Yes. More. So much more.'",
+      "source_locator": "paragraph beginning 'He grunted and thrust deeper'",
       "draft_treatment": "absent",
-      "why_it_matters": "A small but prosodically distinctive line ('ghosted across my tingling flesh') that establishes the seduction's tactile register before the kiss; its loss is minor but part of a pattern of trimming sensory specificity.",
-      "suggested_fix": "Reinsert the sentence before the kiss at the neck."
+      "why_it_matters": "Miriam's self-description of her own voice as 'sultry' and the staccato imperative sequence ('Yes. More. So much more.') are stylistically distinctive — the self-aware narrator naming her own register is a mild but real voice marker. The draft collapses this to an indirect reference ('asked for more').",
+      "suggested_fix": "Restore the direct speech ('Yes. More. So much more.') and at minimum the rhythmic staccato, even if the self-description tag is trimmed."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft preserves the chapter's plot skeleton and several signature phrases but erases four substantive voice-carrying passages—the mutual-desire reversal ('My sensual torture was his'), the transformation details, the mirrored 'So tight'/'So wonderful' dialogue block, and the second half of the narrator's internal-conflict sentence—accumulating three medium-severity failures that require regeneration."
+  "summary": "Three medium-severity failures — the erasure of Miriam's explicit self-naming of captivity, the complete loss of the caterpillar/butterfly transformation simile, and the replacement of the predatory 'starved man/feast' image with a softer substitute — collectively flatten the segment's thematic voice and strip its most interpretively loaded metaphor; regeneration is required."
 }

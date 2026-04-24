@@ -1,0 +1,80 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Wolfshiem's letter verbatim: 'Dear Mr. Carraway. This has been one of the most terrible shocks of my life to me I hardly can believe it that it is true at all. Such a mad act as that man did should make us all think...'",
+      "source_locator": "Wolfshiem's letter, after 'feeling of defiance'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The letter's broken syntax, malapropisms, and postscript ('Let me know about the funeral etc do not know his family at all') are among the most critically noted passages in the novel — Wolfshiem's voice is a signature in itself, and his epistolary evasion is interpretively essential to the theme of Gatsby's abandonment. Paraphrase destroys the comic-sinister register that no summary can replicate.",
+      "suggested_fix": "Restore the letter in full, verbatim, including the postscript. It is short enough to include at any compression ratio and too distinctive to paraphrase."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "the thrilling returning trains of my youth… When we pulled out into the winter night and the real snow, our snow, began to stretch out beside us… unutterably aware of our identity with this country for one strange hour",
+      "source_locator": "Middle West reverie, 'One of my most vivid memories is of coming back West…'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The entire first paragraph of the Midwestern homecoming reverie — the Union Station gathering, 'our snow,' the Wisconsin stations, 'unutterably aware of our identity with this country' — is completely dropped. This passage is a critically central voice-defining digression that establishes the geographic-moral framework for everything that follows ('this has been a story of the West'). Its absence makes the 'That's my Middle West' sentence that the draft does retain feel contextless and truncated.",
+      "suggested_fix": "Restore the Union Station paragraph and the 'real snow, our snow' passage in full or near-full; the 'That's my Middle West' passage grammatically and emotionally depends on it."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "I see now that this has been a story of the West… Even when the East excited me most, even when I was most keenly aware of its superiority to the bored, sprawling, swollen towns beyond the Ohio, with their interminable inquisitions which spared only the children and the very old—even then it had always for me a quality of distortion.",
+      "source_locator": "After 'all Westerners' sentence, before El Greco vision",
+      "draft_treatment": "absent",
+      "why_it_matters": "The clause about the East's 'superiority to the bored, sprawling, swollen towns beyond the Ohio, with their interminable inquisitions which spared only the children and the very old' is a signature rhetorical construction that critics return to repeatedly as evidence of Nick's ambivalence and the novel's critique of American geography and class. Its complete absence flattens the transition to the El Greco vision.",
+      "suggested_fix": "Restore the full sentence beginning 'Even when the East excited me most, even when I was most keenly aware of its superiority…' before the El Greco description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "At first I was surprised and confused; then, as he lay in his house and didn't move or breathe or speak, hour upon hour, it grew upon me that I was responsible",
+      "source_locator": "Third paragraph of chapter, 'But all this part of it seemed remote…'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft drops 'At first I was surprised and confused; then,' which is a rhythmically deliberate construction showing Nick's dawning realization. The temporal build ('hour upon hour') and the emotional logic of the passage depend on this opening clause.",
+      "suggested_fix": "Restore 'At first I was surprised and confused; then,' before 'as he lay in his house.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "he pulled from his pocket a ragged old copy of a book called Hopalong Cassidy… On the last flyleaf was printed the word schedule, and the date September 12, 1906… Rise from bed 6:00 a.m. / Dumbell exercise and wall-scaling 6:15-6:30 / Study electricity, etc…",
+      "source_locator": "Hopalong Cassidy schedule, after photo of the house",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft reproduces only a partial and scrambled version of the schedule — dropping 'Dumbell exercise and wall-scaling,' 'Work 8:30-4:30 p.m.,' 'Study needed inventions,' and most of the General Resolves (notably 'No wasting time at Shafters,' 'Bath every other day,' 'Save $5.00 [crossed out] $3.00 per week'). The schedule is an iconic passage — one of the most quoted in the novel — evoking Benjamin Franklin and the self-improvement myth. Its truncation and scrambled ordering (the draft lists items out of sequence) damages its interpretive force.",
+      "suggested_fix": "Restore the schedule in its full original order, including all line items and all General Resolves, verbatim. The passage is a set piece and must not be compressed."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "After that I felt a certain shame for Gatsby—one gentleman to whom I telephoned implied that he had got what he deserved. However, that was my fault, for he was one of those who used to sneer most bitterly at Gatsby on the courage of Gatsby's liquor",
+      "source_locator": "After Klipspringer hangs up",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief ironic observation — 'on the courage of Gatsby's liquor' — is a signature Fitzgerald phrase and one of Nick's sharpest ironies, encapsulating the hypocrisy of the party guests. Its loss removes a crucial voice beat in the funeral-preparation sequence.",
+      "suggested_fix": "Restore the sentence about the gentleman who 'implied that he had got what he deserved' and 'sneered most bitterly at Gatsby on the courage of Gatsby's liquor.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I see it as a night scene by El Greco: a hundred houses, at once conventional and grotesque, crouching under a sullen, overhanging sky and a lustreless moon. In the foreground four solemn men in dress suits are walking along the sidewalk with a stretcher on which lies a drunken woman in a white evening dress.",
+      "source_locator": "El Greco passage, after 'quality of distortion'",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The El Greco passage is present and largely intact, which is good. However, because the preceding sentence about 'bored, sprawling, swollen towns' is cut (see finding above), the logical and rhetorical setup for 'even then it had always for me a quality of distortion' is missing, making the El Greco vision feel unmotivated in the draft.",
+      "suggested_fix": "Addressed by restoring the prior sentence (see finding 3); no separate fix needed beyond that."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Someone started to ask me questions, but I broke away and going upstairs looked hastily through the unlocked parts of his desk—he'd never told me definitely that his parents were dead. But there was nothing—only the picture of Dan Cody, a token of forgotten violence, staring down from the wall.",
+      "source_locator": "After Gatsby's imagined protest, before 'Next morning'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Dan Cody's photograph as 'a token of forgotten violence' is a thematic callback and the phrase itself is interpretively charged, recalling Gatsby's origins. Its absence is a minor but real loss of the novel's internal cross-referencing.",
+      "suggested_fix": "Add a brief clause noting Nick's search of the desk and the Dan Cody photo as a token of forgotten violence."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has three high-severity failures — Wolfshiem's letter reduced to paraphrase, the Union Station / 'our snow' Midwestern reverie entirely dropped, and the 'bored sprawling swollen towns' sentence absent — plus three medium-severity failures including a scrambled and truncated Hopalong Cassidy schedule; regeneration is required."
+}

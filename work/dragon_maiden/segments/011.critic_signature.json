@@ -3,33 +3,60 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Just right for a soft porridge of sex. There was also the matter of his member which dangled down, but I guessed would be of some length and thickness when aroused.",
+      "source_locator": "paragraph beginning 'The lord stood naked before me.'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'soft porridge of sex' phrase is the chapter's single most distinctive, voice-establishing comic simile — absurdist, self-aware, and tonally irreplaceable. Its removal, along with the candid size-speculation, erases the narrator's defining register at the scene's highest-stakes moment.",
+      "suggested_fix": "Restore verbatim: 'Just right for a soft porridge of sex. There was also the matter of his member which dangled down, but I guessed would be of some length and thickness when aroused.' The comedic frankness is inseparable from the narrator's voice."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "What would be a great blessing is to wake up from this horrible nightmare. Even knowing I had to go back to work would be better than this junk about lords and ladies, and curses and blessings with no benefit and plenty of punishment.",
+      "source_locator": "dialogue exchange after 'The Lady's favor is a great blessing and is rarely given.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This full speech is Miriam's clearest, most sustained expression of her modern-world identity and comedic voice — the 'going back to work' line anchors her as an ordinary woman trapped in fantasy, a defining character note. The draft replaces it with a one-liner that loses the cumulative irony and contemporary register.",
+      "suggested_fix": "Restore the full speech verbatim, including 'even knowing I had to go back to work would be better than this junk about lords and ladies, and curses and blessings with no benefit and plenty of punishment.' This is a primary voice-establishing passage."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Help! Somebody help! There's a-um, a badger in here! Great one, heroine.",
+      "source_locator": "Miriam's shouting scene, after she grabs the sheet",
+      "draft_treatment": "absent",
+      "why_it_matters": "The badger-ruse and its self-mocking aside ('Great one, heroine') are a recognizable comedic signature of Flynn's narrator — the absurd panic-lie followed by immediate self-awareness. Although the 'badger caper' subplot is on the authorized-cuts list, this specific line — the voiced self-commentary — is a voice beat that exists independently of the caper's physical slapstick.",
+      "suggested_fix": "Note: the slapstick escape itself is an authorized cut, so the physical tumble need not be restored. However, the internal self-mocking commentary is the voice marker. If space permits, insert a brief aside capturing the same register ('Great one, heroine') when Miriam improvises her distraction, preserving the narrator's self-awareness."
+    },
+    {
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I skidded to a stop in the hall. Shouts came from my bedroom and down the passage. More heavy feet approached, and what sounded like armor clattering against more metal. I whipped my head left and right.",
-      "source_locator": "After the escape from the pile of servants, before the door choice",
+      "source_passage": "snorted and whipped my head around to glare into his handsome, albeit evil, face.",
+      "source_locator": "Miriam's retort after 'I will not let you go until you understand your situation'",
       "draft_treatment": "flattened",
-      "why_it_matters": "The source gives a two-beat pause of disorientation—skidding stop, then sensory scan left and right—that mirrors the narrator's comic panic. The draft collapses it into a single clause.",
-      "suggested_fix": "Restore the 'skidded to a stop' beat and the explicit left-right head-whip to preserve the comic-action rhythm before the door choice."
+      "why_it_matters": "'Handsome, albeit evil' is a signature comic qualification — the narrator acknowledging his attractiveness while maintaining comic hostility — that recurs as a motif in the series. The draft drops the aside entirely ('I shot back, jerking against his grip'), losing the characteristic self-divided commentary.",
+      "suggested_fix": "Insert the parenthetical acknowledgment when Miriam looks up at him: preserve 'his handsome, albeit evil, face' or close equivalent to keep the recurring motif intact."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "My heart stopped. Us. The dreaded plural.",
+      "source_locator": "After the lord says 'You may leave us.'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source isolates 'Us' as its own sentence and follows it with 'The dreaded plural' — a three-beat comic rhythm that is prosodically and rhetorically distinctive. The draft condenses it to 'Us. My heart stopped at that terrible plural,' which survives the fact but loses the staccato comic structure of the original.",
+      "suggested_fix": "Restore the source's sentence rhythm: 'My heart stopped. Us. The dreaded plural.' — three beats, not two, and in that order."
     },
     {
       "severity": "low",
       "class": "other",
-      "source_passage": "In all my frantic rushing and plotting I'd forgotten that the side door to my room opened to this one. I was abruptly reminded when I turned around and found myself staring at the sleeping dragon lord.",
-      "source_locator": "Paragraph beginning 'In all my frantic rushing'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This self-aware narratorial aside ('In all my frantic rushing and plotting I'd forgotten') is a mild but characteristic voice beat—the narrator catching herself in her own oversight. The draft just says 'turned—and froze' with no acknowledgment.",
-      "suggested_fix": "Add a brief self-aware aside noting she had forgotten the side door connected the two rooms, then the discovery of the sleeping lord."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I snorted. That was getting to be a habit.",
-      "source_locator": "After 'The Lady's favor is a great blessing and is rarely given.'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The parenthetical self-observation 'That was getting to be a habit' is a small but characteristic self-aware narrator aside that reinforces the comedic voice. It is dropped entirely.",
-      "suggested_fix": "Restore 'That was getting to be a habit' after the snort line."
+      "source_passage": "He glanced over his shoulder, a sly smile curving his lips. 'What do you think?' 'Wow,' I breathed.",
+      "source_locator": "Final paragraph of the draft — added material not in source",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The source ends on 'It was beautiful, insane, and mind-blowing, all at the same time' — a clean, comic-tricolon close. The draft appends an invented exchange and Miriam reaching toward the wings, adding interpretive weight (reluctant wonder) that the source deliberately withholds at this moment.",
+      "suggested_fix": "End the segment at 'It was beautiful, insane, and mind-blowing, all at the same time.' Remove the added dialogue and gesture; they shift tone beyond the source's intention."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is substantially faithful—all major dialogue, the key naked-lord scene, the 'Us. The dreaded plural.' beat, and the wing-reveal are preserved, often verbatim—with only minor voice-flattening in a few transitional and self-aware narrator asides."
+  "verdict": "regenerate",
+  "summary": "Two high-severity losses — the 'soft porridge of sex' comic simile (the chapter's defining voice moment) and Miriam's full 'going back to work' speech (her primary modern-identity declaration) — plus three medium-severity flattenings require regeneration."
 }

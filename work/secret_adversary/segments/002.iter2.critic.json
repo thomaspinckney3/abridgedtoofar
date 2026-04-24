@@ -4,68 +4,59 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Seventh month: Pleasing appearance and nice manners so striking that am promoted to waiting on the Sisters!",
-      "source_locator": "Tuppence's abridged biography, seventh month entry",
-      "draft_treatment": "absent",
-      "why_it_matters": "The self-mocking comic voice of the biography section is one of the chapter's most distinctive passages; the draft collapses months 5-7 into 'promotions ensued: drying, potatoes, bread and butter, wardmaid with mop and pail, then waiting at table, then on the Sisters!' losing the specific comic phrasing that makes the seventh month funny.",
-      "suggested_fix": "Restore the seventh month entry verbatim: 'Seventh month: Pleasing appearance and nice manners so striking that am promoted to waiting on the Sisters!'"
+      "class": "voice_erasure",
+      "source_passage": "She pounced at once. 'Tommy, you're stony!' 'Not a bit of it,' declared Tommy unconvincingly.",
+      "source_locator": "Early dialogue, after 'the astute ears of Miss Prudence Cowley'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Christie's narrator describes Tuppence 'pouncing' and names Tommy's tone as 'unconvincing'—the narratorial commentary that establishes the double-act dynamic is erased in the draft, which renders it as bare dialogue.",
+      "suggested_fix": "Restore 'She pounced at once' and the narrator's 'declared Tommy unconvincingly' to preserve the comic-narrator voice that defines the register."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk… First month: Washed up six hundred and forty-eight plates every day. Second month: Promoted to drying aforesaid plates…",
+      "source_locator": "Tuppence's self-narrated biography, middle of chapter",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This is one of the most distinctive and critically noted passages in the chapter—its mock-bureaucratic, enumerated structure is the single strongest specimen of Christie's early comic voice here. The draft collapses it to 'Did chores, climbed, with mop and pail, to parlourmaid,' stripping the signature rhythm and the wit entirely.",
+      "suggested_fix": "Restore the full enumerated month-by-month format verbatim or near-verbatim, including the specific numbers and the sardonic asides ('How are the mighty fallen!'), even at the cost of other compression elsewhere."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "How are the mighty fallen! Ninth month: Promoted to sweeping out wards, where I found a friend of my childhood",
-      "source_locator": "Tuppence's abridged biography, eighth-ninth month entries",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The exclamatory 'How are the mighty fallen!' is a distinctively voice-rich comic flourish within the mock-heroic biography; the draft drops it entirely, weakening the ironic register of the passage.",
-      "suggested_fix": "Restore 'How are the mighty fallen!' between 'Mop and pail again!' and 'Ninth:' to preserve the mock-heroic rhetorical escalation."
+      "source_passage": "'I have always been the changeling. I don't want to go back, but--oh, Tommy, what else is there to do?'",
+      "source_locator": "Tuppence's 'going home' speech, after 'Father's a dear'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'changeling' self-identification is a small but interpretively loaded character beat—it crystallises Tuppence's outsider self-perception and the Edwardian/early-modern tension that the novel uses her to dramatise. Its absence thins the characterisation.",
+      "suggested_fix": "Restore the 'changeling' passage, even in compressed form, to preserve the interpretive weight of Tuppence's self-description."
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "The meeting was affecting! Tenth month: Reproved by matron for visiting the pictures",
-      "source_locator": "Tuppence's abridged biography, ninth-tenth month transition",
-      "draft_treatment": "absent",
-      "why_it_matters": "'The meeting was affecting!' is a characteristically dry Christie comic aside; its omission removes a beat of ironic understatement central to Tuppence's voice.",
-      "suggested_fix": "Restore 'The meeting was affecting!' after the introduction of Lieutenant Thomas Beresford in the ninth month entry."
+      "class": "voice_erasure",
+      "source_passage": "'Money, money, money! I think about money morning, noon and night! I dare say it's mercenary of me, but there it is!'",
+      "source_locator": "Tuppence's money speech, after the silence following 'just about desperate'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple repetition and the admission 'I dare say it's mercenary of me, but there it is!' are signature Christie—a frank, anti-sentimental voice note that distinguishes Tuppence. The draft folds the line into reported speech without the rhetorical force.",
+      "suggested_fix": "Restore the triple 'money, money, money' and the 'mercenary' concession as direct dialogue to preserve the voice beat."
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "she has that delightful early Victorian view that short skirts and smoking are immoral. You can imagine what a thorn in the flesh I am to him! He just heaved a sigh of relief when the war took me off.",
-      "source_locator": "Tuppence's speech about going home, after 'Father's a dear'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "This passage establishes Tuppence's sardonic self-awareness and her generational-cultural position with precision; the draft reduces it to a flat clause ('short skirts and smoking are immoral'), losing the 'thorn in the flesh' image and the sigh-of-relief line that characterise the relationship.",
-      "suggested_fix": "Restore the fuller speech: 'He has that delightful early Victorian view that short skirts and smoking are immoral. You can imagine what a thorn in the flesh I am to him! He just heaved a sigh of relief when the war took me off.'"
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I always help old ladies over crossings, and pick up parcels for old gentlemen, in case they should turn out to be eccentric millionaires. But not one of them has ever asked me my name--and quite a lot never said 'Thank you.'",
-      "source_locator": "Tuppence's speech on 'being left' money, before the marriage section",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The comic image of Tuppence tirelessly assisting elderly strangers in hopes of inheritance is a charming character detail and period-specific joke; the draft strips it to 'the old ladies I help over crossings never even ask my name,' losing the parcels, the eccentric millionaires, and the wry 'quite a lot never said Thank you.'",
-      "suggested_fix": "Restore the fuller version: 'I always help old ladies over crossings, and pick up parcels for old gentlemen, in case they should turn out to be eccentric millionaires. But not one of them has ever asked me my name--and quite a lot never said Thank you.'"
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Now, if I see a man in a fur coat come out of the Ritz I can't rush up to him and say: 'Look here, you're rich. I'd like to know you.'",
-      "source_locator": "Tuppence's speech on why she can't marry a rich man, after 'you could marry a rich girl'",
+      "class": "signature_loss",
+      "source_passage": "'I'm not sentimental, you know.' … 'Come now, you can't say I'm sentimental,' she added sharply. 'Certainly not,' agreed Tommy hastily. 'No one would ever think of sentiment in connection with you.'",
+      "source_locator": "Exchange after 'I made up my mind to marry money when I was quite young'",
       "draft_treatment": "absent",
-      "why_it_matters": "This is a characteristic Tuppence comic line—direct, self-aware, period-voiced—that the draft removes entirely, replacing it with no equivalent, slightly weakening the repartee.",
-      "suggested_fix": "Restore the fur-coat-Ritz line before the discussion of how Tommy might meet a rich girl."
+      "why_it_matters": "This brief exchange is the clearest ironic signal of Tuppence's self-deception/self-awareness and establishes the comic romantic irony that underpins the whole Tommy-Tuppence arc. Losing it removes a critical interpretive marker.",
+      "suggested_fix": "Re-insert the 'I'm not sentimental' exchange, including Tommy's pointed reply, as a brief two-line beat."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "it struck me as such a romantic phrase to come across in the middle of musty old figures. It's got an Elizabethan flavour about it--makes one think of galleons and doubloons.",
-      "source_locator": "Tuppence explaining 'joint venture', before Tommy names the company",
+      "source_passage": "'It's not half so insane as a thing I read this morning beginning \"Petunia\" and signed \"Best Boy.\"' She tore out the leaf and handed it to Tommy. 'There you are. Times, I think. Reply to Box so-and-so. I expect it will be about five shillings. Here's half a crown for my share.'",
+      "source_locator": "After the advertisement is composed",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft keeps 'Elizabethan flavour--galleons and doubloons' but drops the preceding context ('such a romantic phrase to come across in the middle of musty old figures'), which grounds the joke in Tuppence's bookkeeping past and makes the romanticism funnier by contrast.",
-      "suggested_fix": "Restore: 'It struck me as such a romantic phrase to come across in the middle of musty old figures' before 'It's got an Elizabethan flavour.'"
+      "why_it_matters": "The physical action of tearing out the leaf and Tuppence paying her exact half add period texture and practical comic realism; the draft collapses them into a single narrative sentence losing the show-don't-tell character beat.",
+      "suggested_fix": "Restore the tearing-out and the specific 'five shillings / half a crown' exchange as brief action beats."
     }
   ],
-  "verdict": "pass",
-  "summary": "No high-severity losses; four medium-severity findings (voice flattening in the comic biography section and Tuppence's home-life speech) and three low-severity losses, falling just below the regeneration threshold, but the draft should be revised to restore the suppressed comic voice in the biography passage and the 'thorn in the flesh' / 'sigh of relief' lines."
+  "verdict": "regenerate",
+  "summary": "The draft commits one high-severity failure (the complete collapse of Tuppence's enumerated mock-biography, the chapter's most distinctive comic set-piece) and four medium-severity failures including erasure of the 'sentimental' ironic exchange, the 'money, money, money' voice beat, the 'changeling' self-identification, and the narratorial framing of Tuppence's pouncing instinct—collectively gutting the register-defining voice work of the segment."
 }

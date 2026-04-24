@@ -49,6 +49,23 @@ Priority tiers affect severity of any loss:
 - A missing `recognizable` signature (absent, or present but unrecognizably compressed) is **medium** severity.
 - A missing `optional` signature is **low** severity and NOT a loss if the draft ends with a `<!-- DROPPED-OPTIONAL: ... -->` marker naming it — that's an intentional budget-driven cut.
 
+{% if cuts %}### Cuts inventory — intentional removals (DO NOT flag)
+
+A separate prepass identified the following characters, subplots, and digressions as *authorized removals* — material the drafter was instructed to cut or minimize because it does not carry plot, theme, or principal-arc load. **Do not flag the absence of material on this list.** If a signature phrase or voice beat lived inside authorized-cut material and is now gone, that is expected, not a finding. Residual seams left behind by these cuts (a dangling reference, a slightly abrupt transition) are also not findings for this critic.
+
+Your hunt still applies to everything OFF this list — if the draft flattens voice or erases signatures in non-cut material, flag it normally.
+
+{% if cuts.minor_characters %}**Authorized minor-character removals:**
+{% for c in cuts.minor_characters %}- **{{c.name}}** — {{c.reason_removable}}
+{% endfor %}
+{% endif %}{% if cuts.subplots %}**Authorized subplot removals:**
+{% for s in cuts.subplots %}- **{{s.name}}** ({{s.chapter_span}}) — {{s.reason_removable}}
+{% endfor %}
+{% endif %}{% if cuts.digressions %}**Authorized digression removals:**
+{% for d in cuts.digressions %}- **Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}** — {{d.reason_removable}}
+{% endfor %}{% endif %}
+{% endif %}
+
 ## Severity rubric
 
 - **high** — signature loss (absent or flattened), voice erasure in a voice-driven narrator, interpretive-weight material cut, primary-source quotation corrupted in biography. Any one instance triggers regeneration.

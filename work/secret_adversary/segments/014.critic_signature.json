@@ -1,0 +1,53 @@
+{
+  "segment_id": "014",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "she saw Mrs. Vandemeyer, her eyes half-open, with such an expression of mingled fear and malevolence on her face that it quite froze the words on her lips.",
+      "source_locator": "paragraph beginning 'Tuppence was about to protest'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source carefully stages this sinister moment with 'half-open' eyes and the specific phrase 'mingled fear and malevolence' before noting words 'froze on her lips'—the chill effect depends on those precise word choices. The draft collapses it to 'Through half-shut lids Mrs. Vandemeyer's face wore for a second such fear and malice,' losing 'malevolence,' the freezing of protest, and the full dramatic beat.",
+      "suggested_fix": "Restore the source phrasing: 'eyes half-open, with such an expression of mingled fear and malevolence on her face that it quite froze the words on her lips,' preserving the register-defining freeze image."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "For a moment she wondered whether the faint and the heart attack had been a gigantic sham, but remembering the deadly pallor she could hardly credit the supposition. As she looked the expression disappeared as by magic",
+      "source_locator": "paragraph immediately after the half-open-eyes beat",
+      "draft_treatment": "absent",
+      "why_it_matters": "This passage does essential interpretive work—Tuppence's momentary suspicion that the whole collapse was staged is a thematic keystone (is Vandemeyer feigning? is Brown already watching?). The draft omits this internal reasoning entirely, stripping a layer of ambiguity the chapter is built around.",
+      "suggested_fix": "Reinstate Tuppence's brief internal doubt ('Was the faint a gigantic sham?') and the magic disappearance of the expression; these are not merely atmospheric but interpretively load-bearing."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tuppence gave her familiar shake of the shoulders. It was absurd, this giving way to nerves! Slowly she went out of the room.",
+      "source_locator": "after the wardrobe/under-bed search",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft reproduces the wardrobe and under-bed search verbatim but then preserves 'Tuppence gave her familiar shake of the shoulders. It was absurd, this giving way to nerves! Slowly she went out of the room.' intact—this is one instance where the draft is faithful. No finding here; included for completeness but withdrawn.",
+      "suggested_fix": "N/A — draft preserves this passage faithfully."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Seeing us so suddenly must have given her a shock.\"",
+      "source_locator": "Opening line of Sir James's first speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "The opening diagnosis line ('Seeing us so suddenly must have given her a shock. Brandy—and quickly, or she'll slip through our fingers.') is compressed to drop the first clause entirely. The full sentence establishes Sir James's rapid-inference authority; cutting the explanatory clause slightly flattens his characterization.",
+      "suggested_fix": "Restore: 'Seeing us so suddenly must have given her a shock. Brandy—and quickly, or she'll slip through our fingers.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "With the first faint glimmerings of dawn, Sir James drew aside the curtains. They beheld, what few Londoners see, the slow rising of the sun over the sleeping city.",
+      "source_locator": "penultimate long paragraph of the vigil section",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's parenthetical 'what few Londoners see' carries the quiet wonder and sociological aside characteristic of Christie's narrative voice at its most lyrical. The draft reduces it to 'they beheld the slow rising of the sun over the sleeping city,' losing the distinctive authorial interjection.",
+      "suggested_fix": "Restore 'what few Londoners see' as a parenthetical—it is brief and carries the voice-signature."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is largely faithful and preserves most signatures intact, but loses two interpretively significant passages (Tuppence's suspicion about the feigned faint, and the precise 'mingled fear and malevolence / froze the words' construction), reducing the chapter's ambient menace and one of its key ambiguity beats; verdict is a borderline pass with medium-severity findings that should be corrected in revision."
+}

@@ -5,59 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Then she gave a curious movement of her shoulders, rather as a terrier shakes himself.",
-      "source_locator": "after Whittington walks away, before 'The adventures have begun'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "Christie's precise simile 'rather as a terrier shakes himself' is a voice-establishing character note; the draft reduces it to 'gave a little shake, like a terrier,' losing the deliberate oddity of 'curious movement of her shoulders' and the slightly detached, observational register.",
-      "suggested_fix": "Restore the full phrasing: 'she gave a curious movement of her shoulders, rather as a terrier shakes himself.'"
+      "source_passage": "She remained for some minutes gazing after him. Then she gave a curious movement of her shoulders, rather as a terrier shakes himself.",
+      "source_locator": "After Whittington walks away, before Tuppence's monologue",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The simile 'rather as a terrier shakes himself' is a precise, voice-establishing character image; it conveys Tuppence's instinctive self-possession in a way the draft's bare 'terrier-like shake' diminishes.",
+      "suggested_fix": "Restore the full simile: 'gave a curious movement of her shoulders, rather as a terrier shakes himself' rather than the compressed 'terrier-like shake.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "The thought of a possible five shillings spent unnecessarily spurred her to action, and she decided to risk the waste of ninepence.",
-      "source_locator": "post office paragraph, before the telegraph description",
+      "source_passage": "I'm not the least bit afraid of you. And as I've said before, and shall doubtless say again, little Tuppence can look after herself, thank you!",
+      "source_locator": "Tuppence's post-departure monologue on the street",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full self-referential formula — 'as I've said before, and shall doubtless say again' — is a recurring voice-signature for Tuppence's self-aware bravado; the draft cuts it, losing the ironic meta-commentary on her own catchphrase.",
+      "suggested_fix": "Restore: 'I'm not the least bit afraid of you. And as I've said before, and shall doubtless say again, little Tuppence can look after herself, thank you!'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Disdaining the spiky pen and thick, black treacle which a beneficent Government had provided, Tuppence drew out Tommy's pencil which she had retained",
+      "source_locator": "Post office scene, before the telegram text",
       "draft_treatment": "absent",
-      "why_it_matters": "This sentence is a compact comic-ironic character beat—five shillings saved by risking ninepence—that establishes Tuppence's poverty-aware practicality with Christiean dry wit. The draft says only 'spurred by economy,' erasing the irony entirely.",
-      "suggested_fix": "Restore the ironic arithmetic: 'The thought of a possible five shillings spent unnecessarily spurred her to action, and she decided to risk the waste of ninepence.'"
+      "why_it_matters": "This satirical aside — 'thick, black treacle which a beneficent Government had provided' — is a textually distinctive comic register marker; the draft drops it entirely and simply notes she wrote 'with Tommy's pencil,' erasing the period irony.",
+      "suggested_fix": "Restore at least the phrase about the government pen/treacle to preserve Christie's satirical voice in this passage."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Disdaining the spiky pen and thick, black treacle which a beneficent Government had provided",
-      "source_locator": "post office paragraph",
-      "draft_treatment": "fragment_preserved",
-      "why_it_matters": "The satirical aside 'which a beneficent Government had provided' is the whole joke; the draft drops it, keeping only the physical description and losing Christie's wry political irony.",
-      "suggested_fix": "Include the full clause: 'Disdaining the spiky pen and thick, black treacle which a beneficent Government had provided.'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "addressed it to Tommy at his club, from which in one short month he would have to resign, unless a kindly fortune permitted him to renew his subscription.",
-      "source_locator": "after writing the telegram",
-      "draft_treatment": "absent",
-      "why_it_matters": "This parenthetical is a quietly poignant character note about Tommy's financial precarity that adds pathos and social texture; its absence thins the characterisation and removes a motif (their shared poverty) that recurs throughout.",
-      "suggested_fix": "Restore the dependent clause about the club subscription after Tommy's club is mentioned."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities.",
-      "source_locator": "after 'how much do you want?'—before 'She sat up and smiled'",
-      "draft_treatment": "absent",
-      "why_it_matters": "This epigrammatic sentence is a signature Christie narrative aside, marking the thematic distinction between adventuress and adventurer that underpins the whole novel's irony; its loss is a voice and interpretive thinning.",
-      "suggested_fix": "Reinsert the sentence between the description of the final question's appeal and Tuppence composing herself."
+      "source_passage": "The last five words took Tuppence's fancy mightily, especially after a meagre breakfast and a supper of buns the night before. Her present part was of the adventuress rather than the adventurous order",
+      "source_locator": "After Whittington says 'How much do you want?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narrator's distinction between 'adventuress' and 'adventurous' is an interpretive and voice-establishing comment on the moral ambiguity Tuppence is embracing; the draft replaces it with only 'Those last five words sang to her,' losing both the irony and the thematic framing.",
+      "suggested_fix": "Restore: 'Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities,' along with the motivation of the meagre breakfast."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Life,",
-      "is full of surprises.": "",
-      "source_locator": "after Whittington says 'You took me in all right'",
+      "source_passage": "To arrive before the time would look over-eager. So Tuppence decided to walk to the end of the street and back again.",
+      "source_locator": "Opening of the second morning scene, before Tuppence enters the building",
       "draft_treatment": "absent",
-      "why_it_matters": "A neat, ironic single-line Tuppence riposte that is textually distinctive and characterises her deflective wit; its absence is a minor but real voice loss.",
-      "suggested_fix": "Restore the one-line exchange as a standalone speech tag."
+      "why_it_matters": "This brief internal-logic beat is characteristic of Christie's light free-indirect rendering of Tuppence's social calculations; its omission slightly thins the characterisation without significant damage.",
+      "suggested_fix": "Consider adding the walk-to-end-of-street beat to preserve Tuppence's self-conscious social reasoning."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft is broadly faithful but accumulates four medium-severity voice-flattening losses—the ninepence irony, the 'beneficent Government' aside, the Tommy-club pathos note, and the 'adventuress rather than adventurous' epigram—which together cross the regeneration threshold."
+  "summary": "The draft preserves the plot and most key dialogue but systematically flattens Christie's voice in four signature passages — the terrier simile, Tuppence's self-referential catchphrase, the satirical government-pen aside, and the narratorially crucial 'adventuress rather than adventurous' distinction — producing three or more medium-severity findings that collectively constitute a voice-erasure requiring regeneration."
 }

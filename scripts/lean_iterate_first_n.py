@@ -66,7 +66,7 @@ for book_id in BOOKS:
             print(f"  -> segment {sid} '{seg.get('title','')[:40]}' "
                   f"src={seg['source_word_count']}w tgt={seg['target_word_count']}w",
                   flush=True)
-            r = iterate_segment(book, plan, sid, max_retries=2,
+            r = iterate_segment(book, plan, sid, max_retries=1,
                                 redraft_first=False)
             elapsed = time.time() - t0
 

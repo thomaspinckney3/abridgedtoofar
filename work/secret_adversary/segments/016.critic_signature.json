@@ -1,0 +1,44 @@
+{
+  "segment_id": "016",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "his words gave Tuppence an extraordinarily desolate feeling.",
+      "source_locator": "paragraph after Sir James says 'nothing more to be done'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Christie's precise narratorial interiority tag ('extraordinarily desolate feeling') registers Tuppence's emotional state in the narrator's voice; the draft replaces it with the vaguer action-phrase 'Desolation swept her,' losing the adverb and the more measured Edwardian register.",
+      "suggested_fix": "Restore 'his words gave Tuppence an extraordinarily desolate feeling' as the narratorial beat rather than substituting a more melodramatic verb."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"that's so. I'm getting down and out over the business... He's pretty cute, and I guess he wouldn't quit if there was any chance of success--now, would he?\"",
+      "source_locator": "Julius's discouraged speech in the car, beginning 'That's so. I'm getting down and out'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "Julius's extended, voice-distinctive speech ('getting down and out over the business'; 'pretty cute'; 'wouldn't quit') is where Christie establishes his American vernacular register as a sustained character voice; the draft truncates and reassigns the key sentiment to Tuppence's reported interpretation, erasing Julius's direct idiolect.",
+      "suggested_fix": "Restore Julius's original speech nearly verbatim—'That's so. I'm getting down and out over the business... I don't like him—we don't gee together somehow—but he's pretty cute'—rather than paraphrasing it through Tuppence's viewpoint."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I call your bluff, that's all. I admire you immensely, Miss Tuppence, more than any girl I've ever met. You're so darned plucky. I'd just love to give you a real, rattling good time.\"",
+      "source_locator": "Julius's proposal speech, beginning 'I don't see anything unfair'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The phrase 'I call your bluff' is the interpretive crux of the proposal scene—it frames the entire exchange as Julius responding to Tuppence's stated mercenary marriage criteria as a business negotiation rather than romance, which is central to the scene's comic tone. 'Real, rattling good time' is also a period-voice marker. The draft omits 'I call your bluff' and 'rattling good time', flattening the scene's distinctive register.",
+      "suggested_fix": "Restore 'I call your bluff, that's all' at the opening of Julius's proposal response, and 'a real, rattling good time' in the following clause, to preserve both the scene's logic and its period voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Oh, Tommy, Tommy,\" she cried, \"I do love you so--and I may never see you again...\"",
+      "source_locator": "Tuppence's breakdown before the mirror, final clause",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves this line but omits the source's framing detail—'she struggled for self-control, and then abandoning all presence'—that gives the moment its psychological specificity and marks the narrator's ironic sympathy. The bare dialogue survives but its narratorial scaffolding does not.",
+      "suggested_fix": "Add back the brief narrator beat 'she struggled for self-control, and then abandoning all pretence' before the dialogue to restore Christie's careful management of ironic distance here."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; three medium-severity voice flattenings (the 'extraordinarily desolate' tag, Julius's full vernacular speech, and the 'I call your bluff' / 'rattling good time' proposal phrasing) plus one low-severity omission of framing detail—falling just below the regeneration threshold but warranting targeted repair in a revision pass."
+}

@@ -5,40 +5,31 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "No.  I forgot to click on my internal video recorder before they knocked me out.",
-      "source_locator": "paragraph 4, Miriam's response to Heather's question about how she got in",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The 'internal video recorder' phrasing is a signature comic beat — the technological anachronism and sarcastic formality establish the narrator's voice precisely. The draft's 'I forgot to hit record' strips the comedic specificity and the self-deprecating persona.",
-      "suggested_fix": "Restore 'forgot to click on my internal video recorder before they knocked me out' verbatim or extremely close to it."
+      "source_passage": "She grinned. 'I'll always be there to give you the good news, now get going.'",
+      "source_locator": "After Heather steps aside, before Miriam leaps into the portal",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source has Heather deliver her quip AFTER the hug and parting, functioning as a warm farewell punchline; the draft inverts the order—placing the quip before 'He might eat you'—and conflates the two separate lines, collapsing the comedic beat's timing and altering its register.",
+      "suggested_fix": "Restore the sequence: hug, part, Miriam sees the tears, Heather says 'He might eat you,' Miriam rolls her eyes and thanks her, THEN Heather grins and delivers 'I'll always be there to give you the good news, now get going.' Keep the lines in source order."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle.  The long fifteen miles had been covered in a little under fifteen minutes.  An eternity for my heart",
-      "source_locator": "after the airborne flight section, before the guards with spears",
-      "draft_treatment": "absent",
-      "why_it_matters": "This is a sustained ironic digression — 'bartering my soul for a reprieve' and the play on 'eternity' for heart and for sleep — that exemplifies the narrator's comic-anxiety register. Its omission flattens the emotional texture of an otherwise tense scene.",
-      "suggested_fix": "Reinsert the soul-bartering line and the eternity wordplay as a brief interlude between take-off and landing at the castle."
+      "source_passage": "I was up to bartering my soul for a reprieve from the wind whipping through my hair when we reached the castle. The long fifteen miles had been covered in a little under fifteen minutes. An eternity for my heart, and I hoped I wouldn't expect to find Xander in an eternity of sleep.",
+      "source_locator": "After Apuleius sweeps Miriam into flight, before landing at the castle",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's sentence is a voice-defining ironic digression—'An eternity for my heart, and I hoped I wouldn't expect to find Xander in an eternity of sleep'—that double-charges the flight with both humor and dread. The draft strips it to bare logistics ('Fifteen miles vanished in fifteen minutes'), losing both the narrator's wry register and the thematic foreshadowing of Xander's near-death.",
+      "suggested_fix": "After the fifteen-miles-in-fifteen-minutes beat, restore a close paraphrase: 'An eternity for my heart—and I hoped I wouldn't find Xander in an eternity of sleep.'"
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "I wondered how many doors were shut to this priestly fellow.",
-      "source_locator": "paragraph after guards bow and open the door to Xander's chambers",
+      "source_locator": "After guards bow and open Xander's chamber door for Apuleius",
       "draft_treatment": "absent",
-      "why_it_matters": "This aside is a voice-establishing ironic observation — dry, almost absurdist — that is immediately undercut by the horror of seeing Xander. The juxtaposition is a signature narrative technique; its absence removes a characteristic beat of the narrator's consciousness.",
-      "suggested_fix": "Reinsert the brief aside about doors and the priestly fellow before the pivot to seeing Xander in the bed."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "She grinned.  'I'll always be there to give you the good news, now get going.'",
-      "source_locator": "Heather's farewell, just before Miriam leaps into the portal",
-      "draft_treatment": "fragment_preserved",
-      "why_it_matters": "The draft preserves 'I'll always be here to give you the good news' but drops 'now get going' and converts 'there' to 'here,' softening the brisk, affectionate send-off that defines Heather's voice in this exchange.",
-      "suggested_fix": "Restore 'now get going' and use 'there' to preserve the exact register of Heather's farewell."
+      "why_it_matters": "This quick aside is a signature of the narrator's observational irony—characterizing Apuleius's authority through her own wry curiosity. Its absence erases a small but distinctive voice beat that breaks the tension with characteristic humor.",
+      "suggested_fix": "Insert the line (verbatim or close): 'I wondered how many doors were shut to this priestly fellow.' between the guards opening the door and the moment Miriam sees Xander."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Three medium-severity voice-flattening failures — the 'internal video recorder' comic line, the 'bartering my soul' ironic digression during flight, and the 'how many doors were shut' aside — collectively erase the narrator's signature comic-anxiety register at key moments, warranting regeneration."
+  "verdict": "pass",
+  "summary": "Three medium-severity voice-flattening issues—a reordered farewell quip, the erasure of the ironic 'eternity of sleep' digression, and the omission of the narrator's aside about Apuleius's authority—none individually severe enough to trigger regeneration, but the draft consistently shaves the narrator's wry register under compression."
 }

@@ -1,0 +1,53 @@
+{
+  "segment_id": "027",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"_Ave, Cæsar! te morituri salutant_,\" he said, still looking at Tommy.",
+      "source_locator": "final paragraphs, immediately before death",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The Latin death-salute is the chapter's single most quotable and culturally distinctive line — its typographic emphasis (italics) and the dramatic gesture of a dying villain quoting gladiators at Caesar are signature Christie. The draft drops the italics/emphasis entirely and renders it as plain roman text without the opening apostrophe of the elided 'Ave' being properly set; critically, the rhetorical staging of this as a climactic utterance is flattened.",
+      "suggested_fix": "Restore the italicised Latin exactly as source: \"'_Ave, Cæsar! te morituri salutant_,'\" — typographic fidelity matters here as the italics signal the deliberate theatrical register of the moment."
+    },
+    {
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "\"In this room.... You don't understand? _I am Mr. Brown_....\" Stupefied, unbelieving, they stared at him. The very lines of his face had changed. It was a different man who stood before them.",
+      "source_locator": "revelation paragraph, after Sir James's 'Mr. Brown is here' speech",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The reveal sentence '_I am Mr. Brown_' carries italics in the source that signal the novel's central interpretive shock; the italics are stripped in the draft. The accompanying beat 'Stupefied, unbelieving, they stared at him' — which registers the characters' (and the reader's) stunned disbelief — is entirely absent, erasing the emotional-interpretive pause that makes the reveal land.",
+      "suggested_fix": "Restore the italics on 'I am Mr. Brown' and reinsert 'Stupefied, unbelieving, they stared at him' before 'The very lines of his face had changed' to preserve the narrative beat that anchors the book's climactic revelation."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Shall I tell you how it will be? Sooner or later the police will break in, and they will find three victims of Mr. Brown--three, not two, you understand, but fortunately the third will not be dead, only wounded...\"",
+      "source_locator": "Mr. Brown's monologue after the reveal",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's direct address 'Shall I tell you how it will be?' — the leisurely, almost theatrical self-congratulation — is the defining voice beat of Brown's unmasked persona. The draft converts it to a flat declarative sequence, losing the sinister rhetorical relish Christie gives the villain's exposition.",
+      "suggested_fix": "Restore 'Shall I tell you how it will be?' as the opener of Brown's plan-speech; its rhetorical form (the question to helpless captives) is interpretively significant and voice-distinctive."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Now she could almost swear it moved--as though _some one_ was behind it. So strong was the illusion that she almost fancied she could make out the outline of a form....\"",
+      "source_locator": "staircase ascent, Tuppence approaching the velvet curtain",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage — with its italicised 'some one', the creeping atmospheric suspense, and the specific 'outline of a form' — is Christie's carefully constructed dramatic irony: Mr. Brown IS in the house, and Tuppence's instinct is correct. The draft reduces it to 'surely it stirred? Nonsense!' losing both the irony's weight and the stylistically distinctive internal-monologue voice.",
+      "suggested_fix": "Expand the curtain moment to include 'as though some one was behind it' and 'she could almost make out the outline of a form', then restore 'Impossible of course! Yet she almost went back' — the dramatic irony of Tuppence's near-correct instinct is interpretively essential."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Now they were entering the prison room. No place for anyone to hide here, thought Tuppence, with a sigh of relief, then chided herself indignantly. She must not give way to this foolish fancying--this curious insistent feeling that _Mr. Brown was in the house_....\"",
+      "source_locator": "entering the prison room, before Jane goes to the picture",
+      "draft_treatment": "absent",
+      "why_it_matters": "The italicised 'Mr. Brown was in the house' is a structural irony signature — Tuppence's instinct naming the precise truth Christie has concealed. Its loss means the dramatic irony built across the room-entry sequence (correct fear, dismissed as hysteria, then confirmed) is entirely erased from the draft.",
+      "suggested_fix": "Restore the internal thought 'this curious insistent feeling that Mr. Brown was in the house' (with italics) and the preceding self-chiding; it is the pivot on which the chapter's suspense architecture depends."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft contains two high-severity losses (the Latin death-salute de-italicised and the reveal beat 'Stupefied, unbelieving' excised) and three medium-severity flattenings of Christie's precisely staged dramatic irony across the house-entry sequence, making regeneration necessary."
+}

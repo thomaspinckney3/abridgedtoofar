@@ -5,40 +5,49 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "I only had the dinner part, but pizza awaited me. Still, being among such a large crowd of my fellow humans was a bitter reminder of how normal my boring life was.",
-      "source_locator": "paragraph 3-4, after the intersection description",
+      "source_passage": "Still, being among such a large crowd of my fellow humans was a bitter reminder of how normal my boring life was.",
+      "source_locator": "paragraph 4, after pizza line",
       "draft_treatment": "flattened",
-      "why_it_matters": "The two-beat ironic structure — the mundane comfort (pizza) set against the existential flatness — is voice-establishing for Miriam's dry self-deprecating register. The draft collapses it into 'reminded me how flat my life felt,' losing the pizza payoff and the comic rhythm.",
-      "suggested_fix": "Restore the pizza beat and the 'how normal my boring life was' phrasing so both the humor and the self-awareness land as distinct, sequential observations rather than a single compressed clause."
+      "why_it_matters": "The source's self-deprecating, resigned tone—'bitter reminder,' 'boring life'—is interpretively loaded; the draft softens to 'reminded me how ordinary my life was,' losing the edge of bitterness that establishes Miriam's voice.",
+      "suggested_fix": "Restore the 'bitter reminder' phrasing and 'boring life' self-assessment verbatim or very close; these establish her resigned interiority."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "His fingers were clammy like his skin didn't quite fit.",
-      "source_locator": "paragraph 7, after Blake extends his hand",
+      "source_passage": "I glanced out the window and sighed. The world sped by us as a shadow play of colorful lights and figures.",
+      "source_locator": "taxi conversation, Miriam's introspective beat",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Shadow play of colorful lights and figures' is the only piece of literary, image-driven prose in the chapter—it signals the author's register and frames Miriam's yearning mood. The draft replaces it with 'Lights smeared against the glass,' erasing the distinctive figure.",
+      "suggested_fix": "Restore 'the world sped by us as a shadow play of colorful lights and figures' or a near-verbatim version."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"This isn't living! This is the preliminaries before death!\"",
+      "source_locator": "taxi-chase sequence, Miriam's spoken line",
       "draft_treatment": "absent",
-      "why_it_matters": "This simile ('skin didn't quite fit') is the first foreshadowing detail about Blake's non-human nature and carries interpretive weight for the genre's supernatural reveal; it is also stylistically distinctive. Its absence removes the motif entirely.",
-      "suggested_fix": "Restore the exact simile — 'His fingers were clammy like his skin didn't quite fit' — when Miriam shakes Blake's hand."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "The world sped by us as a shadow play of colorful lights and figures.",
-      "source_locator": "paragraph after 'I glanced out the window and sighed'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The 'shadow play' image is prosodically and rhetorically distinctive — it is the chapter's only lyrical register shift and contextualizes Miriam's sense of living at one remove from life. The draft replaces it with 'The city slid by in a blur of lights,' which is generic.",
-      "suggested_fix": "Replace the draft's generic image with the source's 'shadow play of colorful lights and figures' to preserve both the lyricism and its thematic resonance."
+      "why_it_matters": "This comic one-liner is the clearest voice-establishing joke in the chapter—it shows Miriam's dry wit under pressure and is the most quotable line in the source. The draft collapses the whole chase without preserving it.",
+      "suggested_fix": "Even if the chase is compressed, include Miriam's 'preliminaries before death' line to preserve her comedic voice register."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I slapped a smile on my face and walked over to them.",
-      "source_locator": "paragraph 6, after Heather waves",
+      "source_passage": "He shook his head. 'It's nothing. Anyway, nice to have met you.' He waved and walked off.",
+      "source_locator": "Blake exit, after Heather's 'on to you?' line",
       "draft_treatment": "flattened",
-      "why_it_matters": "'Slapped a smile' is a small but characteristically physical, self-aware idiom that establishes Miriam's wry internal voice; 'pasted on a smile' is a near-synonym but slightly more clichéd.",
-      "suggested_fix": "Prefer the source's 'slapped a smile on my face' to maintain the narrator's specific diction."
+      "why_it_matters": "Blake's cryptic 'It's nothing' deflection carries interpretive weight as a subtle hint of something sinister; the draft skips his spoken exit and replaces it with a generic 'look that felt like a test,' losing the specific verbal cue.",
+      "suggested_fix": "Retain Blake's spoken dismissal 'It's nothing' to preserve the subtle menace of his exit."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Heather stamped her foot on the ground and slopped puddle water all over herself.",
+      "source_locator": "final beat, Heather's farewell",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic physical consequence—puddle water soaking Heather after her indignant stamp—is a small but characteristic comic grace note. The draft notes 'ankles splashing through a puddle' but removes the self-drenching payoff.",
+      "suggested_fix": "Restore the detail that her stomp splashed water 'all over herself' for the comic beat."
     }
   ],
-  "verdict": "regenerate",
-  "summary": "Three medium-severity failures — loss of the 'skin didn't quite fit' foreshadowing simile, erasure of the pizza/boring-life two-beat ironic structure, and replacement of the 'shadow play' lyrical image — combine to trigger regeneration."
+  "verdict": "pass",
+  "summary": "No high-severity signature losses, but three medium-severity voice flattenings (bitterness framing, 'shadow play' image, and the 'preliminaries before death' joke) collectively thin the chapter's register without crossing the regeneration threshold."
 }

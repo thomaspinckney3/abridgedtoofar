@@ -1,0 +1,53 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "'If you want to kiss me any time during the evening, Nick, just let me know… Or present a green card. I'm giving out green—'",
+      "source_locator": "After 'They arrived at twilight, and, as we strolled out among the sparkling hundreds'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Daisy's entire voiced arrival at the party is cut. Her whispered flirtation and the 'green card' quip — a bitter ironic echo of the green light — establish her voice as seductive performance and are essential to interpreting the party through her eyes. Without her speaking presence here, the transition to 'the polo player' scene loses its human anchor.",
+      "suggested_fix": "Restore Daisy's arrival whisper, at minimum the 'green card' line, as it carries both voice-signature and motif weight that the abridgment cannot afford to lose."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Daisy began to sing with the music in a husky, rhythmic whisper, bringing out a meaning in each word that it had never had before and would never have again… each change tipped out a little of her warm human magic upon the air.",
+      "source_locator": "Outside on the front steps, between Tom's 'menagerie' remark and his 'bootlegger' question",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is among the novel's most critically cited characterizations of Daisy's voice as the vessel of Gatsby's longing. Its absence is a direct interpretive loss: the chapter's entire argument about why Gatsby is destroyed by Daisy depends on passages like this making her enchantment legible.",
+      "suggested_fix": "Restore the singing passage in full; it is only four sentences and irreplaceable."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "What was it up there in the song that seemed to be calling her back inside? What would happen now in the dim, incalculable hours? Perhaps some unbelievable guest would arrive, a person infinitely rare and to be marvelled at, some authentically radiant young girl who with one fresh glance at Gatsby… would blot out those five years of unwavering devotion.",
+      "source_locator": "Paragraph following 'The dilatory limousine came rolling up the drive'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains only the bare reference to the waltz and 'romantic possibilities totally absent from her world,' stripping Nick's speculative meditation. This passage is Nick's ironic, melancholy commentary on Gatsby's delusion and one of the chapter's interpretive keystones.",
+      "suggested_fix": "Restore the rhetorical questions and the 'unbelievable guest' fantasy after the waltz reference; this is Nick's voice at its most analytically lyrical."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "Sometimes a shadow moved against a dressing-room blind above, gave way to another shadow, an indefinite procession of shadows, who rouged and powdered in an invisible glass.",
+      "source_locator": "Paragraph beginning 'I sat on the front steps with them while they waited for their car. It was dark here in front'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This atmospheric image is a prosodically distinctive sentence giving the party's end a ghostly, theatrical unreality. Its removal flattens the sensory texture of the scene and loses a signature Fitzgerald visual figure.",
+      "suggested_fix": "Restore the shadow-procession sentence immediately after the 'soft black morning' line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "He was silent, and I guessed at his unutterable depression.",
+      "source_locator": "Post-party conversation, between 'She didn't have a good time' and 'I feel far away from her'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The word 'unutterable' here consciously echoes 'his unutterable visions' in the kiss flashback, and 'I guessed at' registers Nick's sympathetic imagination — the mode that defines his narration. Its removal is a small but real voice and motif loss.",
+      "suggested_fix": "Restore 'He was silent, and I guessed at his unutterable depression' before Gatsby's next speech."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Two high-severity signature losses (Daisy's voiced arrival with the 'green card' quip, and the 'husky, rhythmic whisper' / 'warm human magic' singing passage) plus three medium findings require regeneration; the draft otherwise preserves the chapter's major prose well."
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T20:35:01",
+  "key": "ee746d792f020ec1ea6c67252a6438af",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2, 3, 4, 5], \"note\": \"compressed \u2014 collapses arrival, alley, keys, rattle, and slamming door into one paragraph\"},\n  {\"draft_para\": 1, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [7, 8, 9], \"note\": \"compressed \u2014 merges hurrying upstairs, apartment description, and recliner moment\"},\n  {\"draft_para\": 3, \"source_paras\": [9], \"note\": \"verbatim \u2014 second half of Miriam's murmured line\"},\n  {\"draft_para\": 4, \"source_paras\": [10, 11], \"note\": \"compressed \u2014 sweet smell, failed attempt to rise, feeling of being watched returning\"},\n  {\"draft_para\": 5, \"source_paras\": [11, 12, 13], \"note\": \"compressed \u2014 three figures, window opening, intruders identified including Blake\"},\n  {\"draft_para\": 6, \"source_paras\": [14, 15], \"note\": \"compressed \u2014 garbled cry, leg-binding, Blake leaning over\"},\n  {\"draft_para\": 7, \"source_paras\": [16], \"note\": \"paraphrased \u2014 first half of Blake's line split across two draft paragraphs\"},\n  {\"draft_para\": 8, \"source_paras\": [16], \"note\": \"verbatim \u2014 second half of Blake's speech\"},\n  {\"draft_para\": 9, \"source_paras\": [17], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [18], \"note\": \"paraphrased \u2014 slight attribution change ('chuckled' added)\"},\n  {\"draft_para\": 11, \"source_paras\": [19], \"note\": \"paraphrased \u2014 compresses Blake's longer speech, isolates consort line\"},\n  {\"draft_para\": 12, \"source_paras\": [20], \"note\": \"verbatim\"},\n  {\"draft_para\": 13, \"source_paras\": [21], \"note\": \"paraphrased \u2014 first part of Blake's speech extracted\"},\n  {\"draft_para\": 14, \"source_paras\": [21], \"note\": \"compressed \u2014 Blake's reveal of his monstrous face, near-verbatim for physical description but slightly reworked ending\"},\n  {\"draft_para\": 15, \"source_paras\": [22], \"note\": \"paraphrased \u2014 shudder and inability to act, reordered slightly\"},\n  {\"draft_para\": 16, \"source_paras\": [24, 25, 26], \"note\": \"compressed \u2014 merchandise warning, cloth produced, rotten smell, and purpose of cloth merged\"},\n  {\"draft_para\": 17, \"source_paras\": [27], \"note\": \"paraphrased \u2014 cloth pressed, stench, tears, spinning room compressed\"},\n  {\"draft_para\": 18, \"source_paras\": [28], \"note\": \"paraphrased\"}\n]\n```",
+    "input_tokens": 2578,
+    "output_tokens": 762,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 12.148719072341919,
+    "stop_reason": "end_turn"
+  }
+}

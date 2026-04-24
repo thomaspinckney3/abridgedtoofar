@@ -30,10 +30,14 @@ def _parse_json_array(text: str) -> list:
     try:
         result = json.loads(s)
     except json.JSONDecodeError:
-        start, end = s.find("["), s.rfind("]")
-        if start < 0 or end < 0:
-            raise
-        result = json.loads(s[start:end + 1])
+        try:
+            from json_repair import loads as repair_loads
+            result = repair_loads(s)
+        except Exception:
+            start, end = s.find("["), s.rfind("]")
+            if start < 0 or end < 0:
+                raise
+            result = json.loads(s[start:end + 1])
     if not isinstance(result, list):
         raise ValueError(f"expected JSON array, got {type(result).__name__}")
     return result

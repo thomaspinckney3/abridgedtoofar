@@ -5,49 +5,76 @@
     {
       "severity": "high",
       "class": "signature_loss",
-      "source_passage": "blew curtains in at one end and out the other like pale flags, twisting them up toward the frosted wedding-cake of the ceiling, and then rippled over the wine-coloured rug, making a shadow on it as wind does on the sea",
-      "source_locator": "paragraph describing the interior of the Buchanan house, before the two women on the couch",
+      "source_passage": "The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician",
+      "source_locator": "Opening paragraph, after 'victim of not a few veteran bores'",
       "draft_treatment": "absent",
-      "why_it_matters": "This is one of the most critically cited sentences in the novel — a set piece of Fitzgerald's prose style whose rhythm, imagery ('frosted wedding-cake,' 'shadow on it as wind does on the sea'), and symbolic charge (the illusory, ephemeral world of East Egg) are signature. The draft replaces it with an ellipsis, erasing the passage entirely.",
-      "suggested_fix": "Restore the full curtain passage verbatim from 'A breeze blew through the room' through 'making a shadow on it as wind does on the sea.' Do not compress or paraphrase; this sentence is the voice."
+      "why_it_matters": "This passage is both voice-establishing and interpretively weighted — it defines Nick's self-conception as a reluctant confessor and frames his entire narrative stance. The deleted material includes the distinctive phrase about 'intimate revelations of young men' being 'plagiaristic and marred by obvious suppressions,' which is signature Fitzgerald irony and critical-tradition territory.",
+      "suggested_fix": "Restore the full passage from 'The abnormal mind is quick to detect' through 'plagiaristic and marred by obvious suppressions' before the 'Reserving judgements is a matter of infinite hope' sentence, which the draft correctly preserves."
     },
     {
-      "severity": "medium",
-      "class": "voice_erasure",
-      "source_passage": "The Carraways are something of a clan… the actual founder of my line was my grandfather's brother, who came here in fifty-one, sent a substitute to the Civil War… All my aunts and uncles talked it over as if they were choosing a prep school for me, and finally said, 'Why—ye-es,' with very grave, hesitant faces",
-      "source_locator": "second section, paragraphs on family background and the decision to go East",
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "This responsiveness had nothing to do with that flabby impressionability which is dignified under the name of the 'creative temperament'—it was an extraordinary gift for hope, a romantic readiness",
+      "source_locator": "Third paragraph of the novel, the Gatsby characterization block",
       "draft_treatment": "absent",
-      "why_it_matters": "The Civil War substitute detail and the aunts-as-prep-school-committee passage are register-defining comic irony that establishes Nick's ironic, self-aware voice and the Midwestern social milieu against which the East is set. Their absence flattens the narrator's voice in the opening exposition.",
-      "suggested_fix": "Restore at minimum the clan/Buccleuch sentence, the Civil War substitute line, and the aunts' 'Why—ye-es' deliberation. These are compact and need not be cut at 1.0× compression."
+      "why_it_matters": "The contrast between 'flabby impressionability' and 'extraordinary gift for hope' is a critically celebrated distinction that defines Gatsby's nature and Nick's moral framework for the entire novel. The draft jumps directly to 'It was an extraordinary gift for hope,' losing the rhetorical opposition and the 'creative temperament' phrase that critics consistently engage with.",
+      "suggested_fix": "Restore the full sentence beginning 'This responsiveness had nothing to do with that flabby impressionability...' before the preserved 'It was an extraordinary gift for hope' clause."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don't care what it's founded on.",
+      "source_locator": "Fourth paragraph, before 'When I came back from the East'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is one of the most quoted lines in the novel's opening, establishing Nick's moral exhaustion and relativism; its Biblical resonance and rhetorical compactness make it a signature line that critics and readers alike return to.",
+      "suggested_fix": "Restore the sentence 'Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don't care what it's founded on.' immediately before the 'When I came back from the East' sentence."
     },
     {
       "severity": "medium",
       "class": "signature_loss",
-      "source_passage": "like the egg in the Columbus story, they are both crushed flat at the contact end… the most domesticated body of salt water in the Western hemisphere, the great wet barnyard of Long Island Sound",
-      "source_locator": "paragraph describing the two Eggs, before 'I lived at West Egg'",
+      "source_passage": "The lawn started at the beach and ran towards the front door for a quarter of a mile, jumping over sundials and brick walks and burning gardens—finally when it reached the house drifting up the side in bright vines as though from the momentum of its run.",
+      "source_locator": "Description of the Buchanan house exterior, before Tom on the front porch",
       "draft_treatment": "absent",
-      "why_it_matters": "The Columbus egg simile is distinctively Fitzgeraldian and widely noticed by critics as a signal of the novel's concern with the New World myth; 'most domesticated body of salt water in the Western hemisphere' is a characteristic tonal marker. Both are absent from the draft's compressed version.",
-      "suggested_fix": "Restore the Columbus egg simile and the 'most domesticated body of salt water / great wet barnyard' phrase in the geography paragraph; both are short enough to include at 1.0× compression."
+      "why_it_matters": "This is a prosodically distinctive, much-admired sentence — the personification of the lawn 'jumping' and then 'drifting' is a signature stylistic moment that establishes the dreamy grandeur of East Egg and Fitzgerald's lyrical method. Its absence flattens the arrival scene.",
+      "suggested_fix": "Restore the full lawn sentence before or after the brief mention of the Buchanan house being a 'cheerful red-and-white Georgian Colonial mansion.'"
     },
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "There was something pathetic in his concentration, as if his complacency, more acute than of old, was not enough to him any more… 'We've got to beat them down,' whispered Daisy, winking ferociously toward the fervent sun",
-      "source_locator": "Tom's racist speech at dinner, near its close",
+      "class": "signature_loss",
+      "source_passage": "a gruff husky tenor, added to the impression of fractiousness he conveyed. There was a touch of paternal contempt in it, even toward people he liked—and there were men at New Haven who had hated his guts.",
+      "source_locator": "Tom's physical description, after 'a cruel body'",
       "draft_treatment": "absent",
-      "why_it_matters": "Nick's aside about Tom's 'pathetic concentration' is an interpretive keystone — it frames Tom as hollowed-out and anxious, not merely brutish — and Daisy's winking whisper is a characteristic ironic beat. Both are cut, thinning the scene's thematic texture.",
-      "suggested_fix": "Restore 'There was something pathetic in his concentration' observation and Daisy's 'We've got to beat them down' whisper; they are brief and essential to the scene's ironic register."
+      "why_it_matters": "Tom's voice characterization — the 'paternal contempt' and the men at New Haven who 'hated his guts' — is central to establishing his menace and social violence. It is interpretively loaded and feeds directly into readings of Tom's class aggression throughout the novel.",
+      "suggested_fix": "Restore the two sentences about Tom's voice and the 'paternal contempt' after the 'cruel body' sentence that the draft preserves."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I looked back at my cousin, who began to ask me questions in her low, thrilling voice. It was the kind of voice that the ear follows up and down, as if each speech is an arrangement of notes that will never be played again.",
+      "source_locator": "After Jordan Baker's introduction, Daisy's voice description",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft preserves a shortened echo ('the kind the ear follows up and down') but strips the full sentence shape and loses the crucial second clause — 'an arrangement of notes that will never be played again' — which is one of the novel's most quoted characterizations of Daisy and becomes a motif when Gatsby later identifies her voice as 'full of money.'",
+      "suggested_fix": "Restore the complete sentence: 'It was the kind of voice that the ear follows up and down, as if each speech is an arrangement of notes that will never be played again.'"
     },
     {
       "severity": "medium",
       "class": "interpretive_loss",
-      "source_passage": "surprising me by opening up again in a flower-like way. 'We heard it from three people, so it must be true.'… The fact that gossip had published the banns was one of the reasons I had come East. You can't stop going with an old friend on account of rumours, and on the other hand I had no intention of being rumoured into marriage",
-      "source_locator": "closing scene at the Buchanans' door, after Nick starts his motor",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "Nick's explanation of why he came East — to escape being 'rumoured into marriage' — is interpretively significant character context that establishes his flight from the Midwest as socially motivated; the 'flower-like' reopening of Daisy is also a characteristic voice moment. The draft collapses this to 'a few last words—nothing to alter the sense,' losing both the content and the voice.",
-      "suggested_fix": "Restore the engagement exchange including Daisy's 'flower-like' reopening, her 'three people' insistence, and Nick's internal gloss on why gossip drove him East. This is compact (three short paragraphs) and should not be cut at 1.0× compression."
+      "source_passage": "Something was making him nibble at the edge of stale ideas as if his sturdy physical egotism no longer nourished his peremptory heart.",
+      "source_locator": "Final paragraph of the dinner scene, before 'Already it was deep summer'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the interpretive key to Tom's psychological state — his white-supremacist reading and his affair are both symptoms of the same spiritual vacancy. Critics rely on this exact phrasing. The draft preserves the surrounding sentence about Tom being 'depressed by a book' but drops this crucial analytical follow-through.",
+      "suggested_fix": "Restore the full sentence 'Something was making him nibble at the edge of stale ideas as if his sturdy physical egotism no longer nourished his peremptory heart.' after the observation about Tom being depressed by a book."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I felt that Tom would drift on forever seeking, a little wistfully, for the dramatic turbulence of some irrecoverable football game.",
+      "source_locator": "Paragraph about why the Buchanans came East, after 'I didn't believe it'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a signature characterization of Tom — the football game as the peak of his existence — and is one of the novel's most cited psychological portraits. The draft omits the entire paragraph about the Buchanans drifting from polo ground to polo ground, erasing an important ironic register passage.",
+      "suggested_fix": "Restore the paragraph beginning 'Why they came East I don't know' including the 'irrecoverable football game' clause, which crystallizes Tom's stunted character in a way the novel returns to."
     }
   ],
   "verdict": "regenerate",
-  "summary": "The draft has one high-severity signature loss (the famous curtain/wedding-cake/wind-on-the-sea passage, replaced by an ellipsis) and four medium-severity failures including erasure of the Columbus egg simile, the clan/Civil War-substitute voice passage, Tom's 'pathetic concentration' aside with Daisy's winking 'beat them down,' and the interpretively significant engagement-gossip closing scene — together representing substantial voice and content loss in a chapter at 1.0× compression where no such cuts are warranted."
+  "summary": "The draft drops three high-severity signature passages from the novel's famous opening (the 'hard rock or wet marshes' line, the 'flabby impressionability'/'creative temperament' contrast, and the 'abnormal mind'/'plagiaristic revelations' voice block) plus five medium-severity losses including Daisy's full voice description, Tom's 'peremptory heart' sentence, the football-game characterization, Tom's 'paternal contempt' voice portrait, and the Buchanan lawn's signature kinetic sentence — collectively requiring regeneration."
 }

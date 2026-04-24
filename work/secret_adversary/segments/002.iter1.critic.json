@@ -4,77 +4,68 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "The very faint anxiety which underlay his tone did not escape the astute ears of Miss Prudence Cowley, known to her intimate friends for some mysterious reason as 'Tuppence.' She pounced at once.",
-      "source_locator": "paragraph 5, before 'Tommy, you're stony!'",
+      "class": "voice_erasure",
+      "source_passage": "The adjective 'old' was misleading. Their united ages would certainly not have totalled forty-five.",
+      "source_locator": "Opening paragraph, after the greeting exchange",
       "draft_treatment": "absent",
-      "why_it_matters": "This is a voice-establishing, mildly ironic narratorial intrusion that introduces Tuppence's full name and her characteristic acuity; erasing it removes the narrator's first real stylistic flourish and the formal introduction of Tuppence.",
-      "suggested_fix": "Restore the sentence introducing Miss Prudence Cowley by name, with the narrator's observation about 'the astute ears' and 'she pounced at once' before her line 'Tommy, you're stony!'"
+      "why_it_matters": "This is a crisp, ironic narratorial aside that establishes Christie's light-touch omniscient voice in its first appearance; its absence removes the first instance of the narrator's dry wit.",
+      "suggested_fix": "Restore the two-sentence aside verbatim immediately after the greeting exchange, before the 'Not seen you' line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "His face was pleasantly ugly--nondescript, yet unmistakably the face of a gentleman and a sportsman.",
+      "source_locator": "Physical description of Tommy, after seating at Lyons'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This oxymoronic phrase 'pleasantly ugly' is a signature character-establishing line; the draft retains only the red hair and the suit, stripping the characterisation that defines Tommy for the whole novel.",
+      "suggested_fix": "Restore the 'pleasantly ugly—nondescript, yet unmistakably the face of a gentleman and a sportsman' phrasing within the Tommy description block."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "there was character and charm in the elfin lines of her little face, with its determined chin and large, wide-apart grey eyes that looked mistily out from under straight, black brows.",
+      "source_locator": "Physical description of Tuppence, same paragraph as Tommy's",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source gives a precise, memorable physical portrait that anchors Tuppence's character visually; the draft collapses this to 'elfin-faced,' losing the determined chin and the distinctive grey-eyed description that critics and readers return to.",
+      "suggested_fix": "Expand the Tuppence description to include the determined chin, wide-apart grey eyes under straight black brows—this is the novel's definitive portrait of her."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "a joint venture! It struck me as such a romantic phrase to come across in the middle of musty old figures. It's got an Elizabethan flavour about it--makes one think of galleons and doubloons.",
+      "source_locator": "Tuppence explaining the 'joint venture' phrase, before naming the company",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the voice-defining passage that gives thematic colour to the whole enterprise; the Elizabethan/galleons digression explains why two broke young people romanticise their predicament and is the tonal heart of the chapter.",
+      "suggested_fix": "Restore Tuppence's riff on 'joint venture'—the Elizabethan flavour, galleons, and doubloons—before the company name is announced."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "'you did once persuade Sister Greenbank that the doctor had ordered you beer as a tonic, but forgotten to write it on the chart. Do you remember?' Tommy chuckled.",
-      "source_locator": "paragraph 7-8, Tuppence's speech about 'shocking liar'",
+      "source_passage": "It's not half so insane as a thing I read this morning beginning 'Petunia' and signed 'Best Boy.'",
+      "source_locator": "After Tommy says the ad reads like a hoax or a lunatic wrote it",
       "draft_treatment": "absent",
-      "why_it_matters": "The Sister Greenbank anecdote is a period-specific characterisation beat that establishes Tommy's roguish wit and the easy shared history of these two; its omission flattens the ellipsis ('severely...') that replaces it.",
-      "suggested_fix": "Restore the Sister Greenbank beer-as-tonic anecdote and Tommy's chuckle, which carries the scene's early comic warmth."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "No, old thing, not in riotous dissipation. No such luck! The cost of living--ordinary plain, or garden living nowadays is, I assure you, if you do not know----",
-      "source_locator": "Tommy's speech after 'Oh, Tommy!'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "Tommy's digressive, self-interrupting sentence about 'ordinary plain, or garden living' is rhythmically distinctive and period-flavoured; the draft reduces it to 'The cost of living----', losing the ironic voice entirely.",
-      "suggested_fix": "Restore Tommy's full speech including 'not in riotous dissipation. No such luck! The cost of living—ordinary plain, or garden living nowadays is, I assure you, if you do not know—'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "the cost of living. Here we are at Lyons', and we will each of us pay for our own. That's it!' And Tuppence led the way upstairs.",
-      "source_locator": "Tuppence's interruption, paragraph 11",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The emphatic 'And Tuppence led the way upstairs' is a small but characteristic piece of Tuppence action-characterisation, showing her decisiveness; the draft drops it and also omits the italicised 'do not know' which signals her register-matching of Tommy's pomposity.",
-      "suggested_fix": "Restore 'And Tuppence led the way upstairs' and the italicised 'do not know' to preserve Tuppence's assertive characterisation beat."
+      "why_it_matters": "This period-specific comic detail (lonely-hearts column argot) is a register-establishing period marker and a sharp comic beat; its removal flattens the exchange to bare plot mechanics.",
+      "suggested_fix": "Re-insert the 'Petunia'/'Best Boy' line as Tuppence's riposte to Tommy's 'lunatic' remark."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Seventh month: Pleasing appearance and nice manners so striking that am promoted to waiting on the Sisters!",
-      "source_locator": "Tuppence's abridged biography, mid-list",
+      "source_passage": "catching odds and ends of conversation as they did so. 'And--do you know, she sat down and _cried_ when I told her she couldn't have the flat after all.'",
+      "source_locator": "Wandering for a table at Lyons', before Jane Finn mention",
       "draft_treatment": "absent",
-      "why_it_matters": "This self-mocking ironic entry is the comic high-point of the list before the 'slight check'; its loss slightly dulls the comedic rhythm of the biography sequence.",
-      "suggested_fix": "Reinsert the seventh-month entry verbatim in the biography list."
+      "why_it_matters": "The overheard snatches of conversation create a period-realist texture and contrast with Tommy's Jane Finn snippet; excising them weakens the naturalness of that coincidental detail.",
+      "suggested_fix": "A single overheard line before Tommy's Jane Finn remark would restore the ambient texture; not strictly required but improves period voice."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I always help old ladies over crossings, and pick up parcels for old gentlemen, in case they should turn out to be eccentric millionaires. But not one of them has ever asked me my name--and quite a lot never said 'Thank you.'",
-      "source_locator": "Tuppence's money speech, paragraph on 'only three ways'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft keeps the old-ladies-over-crossings image but drops the 'pick up parcels for old gentlemen' parallel and crucially omits 'quite a lot never said Thank you'—the punchline that makes the passage witty rather than merely practical.",
-      "suggested_fix": "Restore the full sentence including 'pick up parcels for old gentlemen' and the closing punchline about not even receiving thanks."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I made up my mind to marry money when I was quite young. Any thinking girl would! I'm not sentimental, you know... Come now, you can't say I'm sentimental... No one would ever think of sentiment in connection with you.",
-      "source_locator": "Marriage discussion, Tuppence's speech and Tommy's reply",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The repeated, anxiously insisted 'I'm not sentimental' followed by Tommy's deadpan agreement ('No one would ever think of sentiment in connection with you') and Tuppence's offended response is a key character-irony exchange; the draft cuts the repetition and Tommy's exact retort.",
-      "suggested_fix": "Restore Tuppence's repeated insistence ('Come now, you can't say I'm sentimental') and Tommy's precise reply, which establishes their comic dynamic."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "what do you call it in book-keeping?... Don't know. Never did any. I have--but I always got mixed up, and used to put credit entries on the debit side",
-      "source_locator": "Joint venture discussion, before 'Oh, I know—a joint venture'",
+      "source_passage": "Tommy was holding the paper thoughtfully. His face burned a deeper red.",
+      "source_locator": "After Tuppence tears out the leaf and hands the ad to Tommy",
       "draft_treatment": "absent",
-      "why_it_matters": "The comic exchange about neither of them knowing book-keeping properly is a small but warm characterisation beat that earns the 'joint venture' phrase; its omission makes the arrival at the phrase slightly abrupt.",
-      "suggested_fix": "Restore the brief exchange where neither Tommy nor Tuppence can properly recall book-keeping, ending with Tuppence admitting she got credit and debit mixed up."
+      "why_it_matters": "This small physical beat—Tommy's blush—signals genuine vulnerability beneath the banter and is the emotional hinge before his 'shall we really?' question; losing it flattens the moment.",
+      "suggested_fix": "Add the detail of Tommy holding the paper and his face flushing before his 'Shall we really try it?' line."
     }
   ],
-  "verdict": "pass",
-  "summary": "The draft is broadly faithful but systematically flattens several medium-weight voice and characterisation beats—particularly the formal narratorial introduction of Tuppence, the Sister Greenbank anecdote, Tommy's riotous-dissipation speech, and the sentimental exchange—none of which individually reaches high severity, and the total medium findings (four) do not by themselves meet the regeneration threshold, though the cumulative voice-thinning is notable."
+  "verdict": "regenerate",
+  "summary": "The draft preserves plot and dialogue adequately but erases four medium-severity voice and characterisation passages—the opening narratorial aside, Tommy's 'pleasantly ugly' description, Tuppence's galleons-and-doubloons digression, and the 'Petunia'/'Best Boy' comic beat—triggering the regenerate threshold."
 }

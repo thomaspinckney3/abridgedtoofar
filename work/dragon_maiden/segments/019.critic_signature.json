@@ -1,7 +1,35 @@
 {
   "segment_id": "019",
   "critic": "signature",
-  "findings": [],
+  "findings": [
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "My mind imagined a stone hovel in some distant land. I cringed.",
+      "source_locator": "after 'a place of compromise that sits at the point where our five kingdoms come together' and before 'So where is your kingdom?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief interior beat is a small but characteristic Miriam voice moment—the comedic anxiety about Xander's home being primitive. Its removal slightly flattens the narrator's personality at a key anticipatory beat.",
+      "suggested_fix": "Restore the one-sentence interior image ('My mind imagined a stone hovel in some distant land. I cringed.') before Miriam asks 'So where is your kingdom?'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I stopped my perusing and curtain measurements to frown at him.",
+      "source_locator": "after 'the High Castle is not my home' and before 'This isn't your place?'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The 'curtain measurements' joke is a register-defining comic aside that shows Miriam mentally redecorating a fantasy castle—a characteristic domestic-irony beat the draft replaces with the blander 'I paused mid–curtain measurement,' partially preserving the gag but losing the full wording.",
+      "suggested_fix": "Minor: restore the full line 'I stopped my perusing and curtain measurements to frown at him' to keep the voice beat intact."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "I toyed with the strings that closed his shirt and smiled.",
+      "source_locator": "before 'No, but I hope you enjoyed my butt.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The physical business of Miriam toying with his shirt strings grounds the intimate moment and is the lead-in gesture before her comedic line; without it the comic beat loses its physical staging.",
+      "suggested_fix": "Re-insert the physical action ('I toyed with the strings that closed his shirt and smiled') before the 'butt' quip."
+    }
+  ],
   "verdict": "pass",
-  "summary": "The draft faithfully preserves all signature passages, voice-establishing exchanges, and interpretive-weight material from the source; no meaningful losses detected."
+  "summary": "The draft preserves all high-priority signature material faithfully; three minor voice-beat omissions (the stone-hovel cringe, the full curtain-measurements line, and Miriam toying with Xander's shirt) represent low-severity flattenings that do not individually or collectively require regeneration."
 }

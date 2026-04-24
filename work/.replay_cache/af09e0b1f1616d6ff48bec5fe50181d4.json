@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T16:15:26",
+  "key": "af09e0b1f1616d6ff48bec5fe50181d4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2, 3, 4, 5, 6], \"note\": \"compressed \u2014 collapses the walk, alley pause, key fumbling, rattle, and door-slamming into one paragraph\"},\n  {\"draft_para\": 1, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [7, 8, 9], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [10, 11], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [11, 12, 13], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [14, 15], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [16], \"note\": \"paraphrased \u2014 slightly shortened\"},\n  {\"draft_para\": 7, \"source_paras\": [17], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [18], \"note\": \"paraphrased \u2014 'joined in' replaced with 'chuckled'\"},\n  {\"draft_para\": 9, \"source_paras\": [19], \"note\": \"paraphrased \u2014 compresses Blake's speech, omits the preamble\"},\n  {\"draft_para\": 10, \"source_paras\": [20], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [21], \"note\": \"paraphrased \u2014 compresses Blake's longer speech to key line\"},\n  {\"draft_para\": 12, \"source_paras\": [21], \"note\": \"compressed \u2014 draws from the mask-removal description, adds slight elaboration at end\"},\n  {\"draft_para\": 13, \"source_paras\": [22, 23], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [24, 25, 26], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [27], \"note\": \"compressed\"},\n  {\"draft_para\": 16, \"source_paras\": [28], \"note\": \"paraphrased\"}\n]\n```",
+    "input_tokens": 2566,
+    "output_tokens": 581,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.181508302688599,
+    "stop_reason": "end_turn"
+  }
+}

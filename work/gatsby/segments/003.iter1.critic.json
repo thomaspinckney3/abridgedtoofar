@@ -1,0 +1,71 @@
+{
+  "segment_id": "003",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "hair bobbed in strange new ways, and shawls beyond the dreams of Castile. The bar is in full swing, and floating rounds of cocktails permeate the garden outside, until the air is alive with chatter",
+      "source_locator": "party-description paragraph beginning 'By seven o'clock'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The phrase 'shawls beyond the dreams of Castile' is a textually distinctive, critically noted image that anchors the passage's register; the draft drops it entirely while reproducing surrounding material, silently erasing a signature stylistic ornament.",
+      "suggested_fix": "Restore 'hair bobbed in strange new ways, and shawls beyond the dreams of Castile' within the party-arrival description where 'primary colours' is mentioned."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Suddenly one of these gypsies, in trembling opal, seizes a cocktail out of the air, dumps it down for courage and, moving her hands like Frisco, dances out alone on the canvas platform. A momentary hush … The party has begun.",
+      "source_locator": "paragraph beginning 'Suddenly one of these gypsies'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of the most stylistically distinctive set-pieces in the chapter — 'trembling opal,' 'moving her hands like Frisco,' and the ceremonial declaration 'The party has begun' function together as a period- and voice-defining signature that critics and anthologists regularly cite.",
+      "suggested_fix": "Restore the full 'gypsies in trembling opal' paragraph verbatim or near-verbatim; 'The party has begun' in particular must be retained as a chapter-level signature line."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "women who never knew each other's names … The lights grow brighter as the earth lurches away from the sun … Laughter is easier minute by minute, spilled with prodigality, tipped out at a cheerful word.",
+      "source_locator": "party-atmosphere paragraph beginning 'The lights grow brighter'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Tipped out at a cheerful word' and 'groups change more swiftly, swell … dissolve and form in the same breath' plus 'wanderers, confident girls who weave here and there … glide on through the sea-change of faces' are all lost; the draft retains only the barest skeleton of this famous passage, erasing the characteristic rhythm and imagery Fitzgerald scholarship returns to repeatedly.",
+      "suggested_fix": "Restore 'tipped out at a cheerful word,' the 'wanderers, confident girls … sea-change of faces and voices and colour,' and 'women who never knew each other's names' to preserve the passage's signature cadence."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "instead of rambling, this party had preserved a dignified homogeneity, and assumed to itself the function of representing the staid nobility of the countryside—East Egg condescending to West Egg and carefully on guard against its spectroscopic gaiety.",
+      "source_locator": "paragraph describing Jordan's party at supper",
+      "draft_treatment": "absent",
+      "why_it_matters": "'East Egg condescending to West Egg' and 'spectroscopic gaiety' are interpretively loaded phrases that critics use to trace the novel's class-geography; their absence flattens the chapter's social commentary.",
+      "suggested_fix": "Reintroduce the East Egg / West Egg condescension sentence, at minimum 'East Egg condescending to West Egg and carefully on guard against its spectroscopic gaiety,' when Jordan's group is described."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I noticed that she wore her evening-dress, all her dresses, like sports clothes—there was a jauntiness about her movements as if she had first learned to walk upon golf courses on clean, crisp mornings.",
+      "source_locator": "paragraph when Jordan follows the butler",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft retains 'the jauntiness of a girl who had learned to walk on golf courses on clean, crisp mornings' but drops the defining first clause 'she wore her evening-dress, all her dresses, like sports clothes,' which is the interpretive key to Jordan's character and a critically noted character-establishing phrase.",
+      "suggested_fix": "Restore the full sentence including 'she wore her evening-dress, all her dresses, like sports clothes' as the lead clause."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "most affectations conceal something eventually, even though they don't in the beginning—and one day I found what it was … Jordan Baker instinctively avoided clever, shrewd men … she felt safer on a plane where any divergence from a code would be thought impossible.",
+      "source_locator": "Jordan character-analysis paragraphs near end of chapter",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft retains 'incurably dishonest' and the subterfuge sentence but entirely drops 'most affectations conceal something eventually,' the shrewd-men observation, and 'safer on a plane where any divergence from a code would be thought impossible'—all three are critically engaged passages that define Jordan's psychology and Nick's mode of moral analysis.",
+      "suggested_fix": "Restore 'most affectations conceal something eventually, even though they don't in the beginning' and the 'avoided clever, shrewd men … safer on a plane' sentence to maintain the chapter's analytical voice."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "floating in the Sound was a triangle of silver scales, trembling a little to the stiff, tinny drip of the banjoes on the lawn.",
+      "source_locator": "midnight-party paragraph, after 'champagne was served in glasses bigger than finger-bowls'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a prosodically distinctive image — 'triangle of silver scales, trembling a little to the stiff, tinny drip of the banjoes' — that exemplifies Fitzgerald's synesthetic style and is a recognizable sentence-shape; its absence thins the midnight scene.",
+      "suggested_fix": "Append the moon-over-Sound image after the finger-bowl sentence to restore the scene's characteristic closing image."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft has one high-severity loss of the 'gypsies in trembling opal / The party has begun' set-piece, one high-severity loss of 'shawls beyond the dreams of Castile,' one high-severity flattening of the 'laughter spilled with prodigality / sea-change of faces' passage, and four medium-severity voice-flattenings affecting the East Egg/West Egg contrast, Jordan's dress characterisation, her psychological profile, and the silver-scales moon image — together constituting a pattern of signature erasure that requires regeneration."
+}

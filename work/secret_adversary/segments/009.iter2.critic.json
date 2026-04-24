@@ -1,0 +1,44 @@
+{
+  "segment_id": "009",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Well, I'm damned!\" he said. \"What a dirty trick!\"",
+      "source_locator": "after Tommy fails to open the locked door, before 'As his indignation cooled'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This exclamation is a characteristic Tommy voice-beat — his breezy, colloquial self-expression under pressure. The draft simply elides this moment of comic indignation entirely, flattening his character voice at a key beat.",
+      "suggested_fix": "Restore the exclamation verbatim: after the locked-door failure, add 'Well, I'm damned!' he said. 'What a dirty trick!' before moving to the reversed-handle manoeuvre."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He spoke with a grim relish. \"Dreams of it, sometimes, I does. And diamonds and pearls rolling about in the gutter for anyone to pick up!\"",
+      "source_locator": "Number Fourteen's speech about streets running with blood",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies 'He spoke with a grim relish' — a telling narratorial beat characterising Number Fourteen's menace and social type. The draft drops this attribution, weakening the portrait and losing the ironic authorial gloss.",
+      "suggested_fix": "Restore the 'grim relish' tag before the diamonds-and-pearls speech to preserve Christie's characterisation."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"If that isn't a Hun, I'm a Dutchman!\" said Tommy to himself. \"And running the show darned systematically too--as they always do. Lucky I didn't roll in. I'd have given the wrong number, and there would have been the deuce to pay. No, this is the place for me.\"",
+      "source_locator": "after the first arrival gives his number and is admitted",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full interior monologue establishes Tommy's voice — jaunty, slightly jingoistic, but clear-headed. The draft keeps only the first sentence and 'wrong number' reference, dropping 'running the show darned systematically — as they always do,' 'there would have been the deuce to pay,' and 'this is the place for me,' all of which are register-defining.",
+      "suggested_fix": "Restore the full internal aside verbatim: 'And running the show darned systematically too—as they always do. Lucky I didn't roll in. I'd have given the wrong number, and there would have been the deuce to pay. No, this is the place for me.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"A girl?\" The Russian's voice rose contemptuously.",
+      "source_locator": "final exchange about who knows the document's location",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source specifies the Russian's voice 'rose contemptuously' — a specific, characterising detail. The draft replaces it with 'The Russian's contempt was icy,' which reverses the vocal dynamic (rising vs. cold) and substitutes the drafter's word for Christie's.",
+      "suggested_fix": "Restore 'The Russian's voice rose contemptuously' rather than substituting 'icy contempt.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "No high-severity signature losses; two medium findings (the 'Well, I'm damned!' voice-beat and the 'grim relish' narratorial gloss are absent or stripped) and two low findings, but the draft broadly preserves the chapter's plot mechanics, key dialogue, and most signature passages including the revolution-and-honest-men speech verbatim."
+}

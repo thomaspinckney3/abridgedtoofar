@@ -3,33 +3,42 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "A feast of meat and mead was set before us, and I must admit I did justice to everything within reach.",
-      "source_locator": "paragraph after seating arrangement at table",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source's wry first-person confession 'I must admit I did justice to everything within reach' is a small but characteristic voice beat; the draft replaces it with the blander 'I did my share of the damage.'",
-      "suggested_fix": "Restore the original phrasing 'I must admit I did justice to everything within reach' to preserve the narrator's self-deprecating directness."
+      "source_passage": "\"I looked to Xander and jerked my head in the direction of the woody carnage. 'What kind of mutton are you raising?'\"",
+      "source_locator": "after the sheep destroy the stick, before Xander's speech about creatures",
+      "draft_treatment": "absent",
+      "why_it_matters": "Miriam's sardonic 'woody carnage' quip and the 'mutton' joke are voice-establishing beats — deadpan humor in the face of danger that defines her character register. The draft cuts the line entirely, jumping straight to Xander's explanation.",
+      "suggested_fix": "Restore Miriam's 'What kind of mutton are you raising?' line verbatim after the sheep scene; it is a short, high-value voice moment that costs almost nothing in word count."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"Caution is the best course of action in dealing with our plants and animals.\" / Cayden grasped Stephanie's shaking shoulders and looked to us.",
+      "source_locator": "Xander's full speech about creatures changing between worlds, through Cayden's reaction",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Xander's speech ('These creatures may have wandered into our world long ago and changed their appearance, or perhaps they were changed in your world and what we see are the originals') is interpretive worldbuilding that establishes the metaphysics of the portal between worlds — a thematic keystone for the book's central conceit. The draft reduces it to a bare half-sentence ('Not all that resembles creatures in your world are the same in ours'), stripping the philosophical nuance.",
+      "suggested_fix": "Restore Xander's full explanation about creatures wandering between worlds and possibly representing 'originals'; the two-sentence speech carries real interpretive weight about the nature of the two worlds."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "She quivered harder than me, but her driver didn't seem to mind her clinging to him so closely.",
-      "source_locator": "final paragraph, Cayden joins them in the air",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source's closing observational aside about Stephanie and Cayden ('her driver didn't seem to mind') carries the narrator's wry, knowing tone; the draft replaces it with 'Cayden joined us with Stephanie clenched around his neck like a braid,' which is more colourful but loses the pointed romantic commentary.",
-      "suggested_fix": "Retain the source's wry aside—'she quivered harder than me, but her driver didn't seem to mind her clinging to him so closely'—as the chapter's closing beat."
+      "source_passage": "\"The sharp blades turned to seas of green as we quickly left the earth below us. Every flap of his powerful wings lifted us ten feet.\"",
+      "source_locator": "just after takeoff, before Miriam looks down",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's precise sensory detail ('sharp blades turned to seas of green,' 'ten feet per flap') gives the flight scene kinetic texture. The draft replaces it with 'The lawn turned to a rippling green sea,' losing the blade/grass image and the measured lift detail.",
+      "suggested_fix": "Restore the 'sharp blades turned to seas of green' phrasing and the 'every flap lifted us ten feet' metric; these lines ground the fantastical flight in physical sensation."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "The sharp blades turned to seas of green as we quickly left the earth below us. Every flap of his powerful wings lifted us ten feet.",
-      "source_locator": "paragraph after they lift off the ground",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The specific tactile detail 'every flap of his powerful wings lifted us ten feet' grounds the flight scene with physical precision; the draft blurs this into 'every stroke took us higher.'",
-      "suggested_fix": "Restore the precise detail 'every flap of his powerful wings lifted us ten feet' to keep the physicality of the flight scene."
+      "source_passage": "\"She quivered harder than me, but her driver didn't seem to mind her clinging to him so closely.\"",
+      "source_locator": "final paragraph, after Cayden joins with Stephanie",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing observation is a small but telling characterization beat — Miriam noticing Stephanie's fear and Cayden's quiet pleasure in her closeness, reinforcing the diverging fates of the two women. The draft omits it, ending more abruptly.",
+      "suggested_fix": "Add the observation about Stephanie quivering harder and Cayden not minding her closeness before the final exchange; it costs one sentence and preserves the chapter's closing warmth."
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is largely faithful; three minor voice flattenings are present but none rises to high severity, and no signature passages are absent or interpretively lost."
+  "summary": "No high-severity signature losses; the draft is broadly faithful but flattens two medium-weight passages — Miriam's 'mutton' quip and Xander's inter-world creature explanation — plus two minor voice details in the flight sequence, none severe enough to require regeneration."
 }

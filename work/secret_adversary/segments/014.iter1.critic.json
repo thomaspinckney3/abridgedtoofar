@@ -1,0 +1,53 @@
+{
+  "segment_id": "014",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "One and all were conscious of a certain feeling of anticlimax. Clearly any scheme for cross-questioning the lady was out of the question for the moment.",
+      "source_locator": "After 'She'll do now.' — paragraph on anticlimax",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Christie's wry, precise register ('one and all,' 'a certain feeling') is a voice-establishing phrase. The draft collapses it to 'flatly conscious of anticlimax' and drops the explanatory clause, losing the slightly ironic narrative distance.",
+      "suggested_fix": "Restore 'one and all were conscious of a certain feeling of anticlimax' verbatim; it is short and captures the narrator's dry tone."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She had determined nevertheless to be on the alert. … Half-ashamed of herself, Tuppence pulled it open and looked inside. No one--of course!",
+      "source_locator": "After Tuppence hears 'Mr. Brown—' — the wardrobe/paranoia passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source lingers on Tuppence's nervous interiority—the wardrobe looming 'in a sinister fashion,' 'plenty of room for a man,' the self-deprecating 'No one--of course!' These comic-tense beats define her character voice; the draft compresses them to a perfunctory two sentences, erasing both the irony and the atmospheric texture.",
+      "suggested_fix": "Restore the sinister wardrobe looming detail, the 'plenty of room for a man to hide in that' reasoning, and the self-mocking 'No one—of course!' punchline."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tuppence gave her familiar shake of the shoulders. It was absurd, this giving way to nerves! Slowly she went out of the room.",
+      "source_locator": "After the wardrobe/bed search, before rejoining the others",
+      "draft_treatment": "absent",
+      "why_it_matters": "'Her familiar shake of the shoulders' is a character-defining gesture used across the novel; its absence here removes a recognisable Tuppence motif at exactly the moment it has most interpretive weight.",
+      "suggested_fix": "Reinsert 'Tuppence gave her familiar shake of the shoulders. It was absurd, this giving way to nerves!' before she exits the room."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tuppence felt that if she was Mr. Brown she would not like the tone of those simple words.",
+      "source_locator": "After Sir James's 'We must find out,' final paragraph of investigation",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source gives Tuppence's interiority ('if she was Mr. Brown she would not like…') as free indirect thought — a distinctive Christie ironic register. The draft substitutes 'His quiet tone made Tuppence think that, if she were Mr. Brown, she would not like it,' which is grammatically tidied and robs the sentence of its slightly breezy, colloquial confidence.",
+      "suggested_fix": "Restore the source's phrasing closely: 'Tuppence felt that if she was Mr. Brown she would not like the tone of those simple words.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "with the first faint glimmerings of dawn, Sir James drew aside the curtains. They beheld, what few Londoners see, the slow rising of the sun over the sleeping city.",
+      "source_locator": "Dawn paragraph, penultimate section of the vigil",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source's aside—'what few Londoners see'—is a small but characteristically Christiean extradiegetic nudge. The draft drops it, reducing the moment to bare description.",
+      "suggested_fix": "Restore 'what few Londoners see' as a parenthetical: 'They beheld, what few Londoners see, the slow rising of the sun over the sleeping city.'"
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is broadly faithful but flattens several voice-establishing passages—most critically, Tuppence's wardrobe-paranoia interiority, her 'familiar shake of the shoulders' motif, and a handful of Christie's dry ironic asides—producing medium-severity voice degradation that, while not individually regeneration-triggering, represents a consistent thinning of the narrator's register across the segment."
+}

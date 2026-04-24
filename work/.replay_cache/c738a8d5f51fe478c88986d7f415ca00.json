@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T12:26:57",
+  "key": "c738a8d5f51fe478c88986d7f415ca00",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n{\n  \"segment_id\": \"001\",\n  \"critic\": \"signature\",\n  \"findings\": [],\n  \"verdict\": \"pass\",\n  \"summary\": \"The draft preserves all signature passages with high fidelity, retaining verbatim or near-verbatim the key dialogue, the oilskin-packet handoff, the 'Shipmate' advertising instruction, and the voice-establishing character sketches; minor compression of descriptive framing is within acceptable bounds and no signature material is absent or flattened.\"\n}\n```",
+    "input_tokens": 2,
+    "output_tokens": 128,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 3679,
+    "duration_s": 4.1346213817596436,
+    "stop_reason": "end_turn"
+  }
+}

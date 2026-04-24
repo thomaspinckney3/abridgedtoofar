@@ -1,0 +1,62 @@
+{
+  "segment_id": "012",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "When I saw the skunk, with his big sleek fat face, and thought of poor little Jane in his clutches, I felt real mad that I hadn't got a gun with me. I'd have tickled him up some.",
+      "source_locator": "Julius's story, compartment section",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The vivid physical description 'big sleek fat face' and the distinctly American idiom 'I'd have tickled him up some' are signature voice markers for Julius; the draft drops both, reducing a characterful moment to a bare summary.",
+      "suggested_fix": "Restore 'with his big sleek fat face' and 'I'd have tickled him up some' to preserve Julius's vernacular register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I thought for sure you'd know all this... I began to think that there was nothing doing, that he'd just come on the trip for his health, but I remembered that he hadn't changed for dinner, though it was by way of being a slap-up hotel",
+      "source_locator": "Julius's story, Bournemouth hotel section",
+      "draft_treatment": "absent",
+      "why_it_matters": "The deductive aside ('he hadn't changed for dinner … slap-up hotel') is a small but rhythmically distinctive piece of Julius's story-logic that shows his alertness; the draft replaces it with a flat paraphrase losing the reasoning voice entirely.",
+      "suggested_fix": "Re-insert the 'hadn't changed for dinner / slap-up hotel' deduction verbatim or near-verbatim."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He did the usual stunt. Said: 'What's happened?' And 'Where am I?' But I knew the answer to the last well enough. There's no moss growing on my brain.",
+      "source_locator": "Julius's story, waking-up scene after the fall",
+      "draft_treatment": "absent",
+      "why_it_matters": "'There's no moss growing on my brain' is a distinctively Americanised self-deprecating witticism that characterises Julius's voice; the draft omits the whole 'usual stunt' passage and the quip entirely.",
+      "suggested_fix": "Restore the 'usual stunt' beat and 'There's no moss growing on my brain' line, even in compressed form."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I fell, with a considerable portion of one of my trees, into one of my newly planted flower-beds.",
+      "source_locator": "Dr. Hall's reply about the fall",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the doctor's most quotable and tonally distinctive line—dry English understatement—and Julius's follow-up ('I liked the man. He seemed to have a sense of humour') depends on it. Both are absent from the draft.",
+      "suggested_fix": "Restore Dr. Hall's verbatim formulation and Julius's appreciative aside ('I liked the man. He seemed to have a sense of humour. I felt sure that he, at least, was plumb straight') to preserve the comic register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I made up my mind in a flash... I trotted out the stern guardian business, and a nervous breakdown, and finally explained that I had fancied I recognized her among the patients... I guess it was just the kind of story he was expecting. 'Quite a romance,' he said genially",
+      "source_locator": "Julius's story, explanation to Dr. Hall",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The draft compresses the cover-story sequence into bald summary, losing the vernacular texture ('I trotted out,' 'just the kind of story he was expecting') that is part of Julius's colourful idiom.",
+      "suggested_fix": "Restore 'I trotted out the stern guardian business' and 'I guess it was just the kind of story he was expecting' to maintain Julius's self-aware narrative voice."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "valiantly repressing memories of the steely glitter in Mrs. Vandemeyer's eyes",
+      "source_locator": "after Tuppence says 'Do you think I'm afraid?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "In the source this parenthetical is narratorial irony undercutting Tuppence's bravado; the draft folds it awkwardly into her summary of events rather than keeping it as a dry aside, losing the comic-ironic register.",
+      "suggested_fix": "Return it to its position as a parenthetical aside after Tuppence's indignant denial, not as part of her reported speech."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft faithfully conveys plot but repeatedly flattens Julius's idiomatic American vernacular and Dr. Hall's dry wit—losing at least four medium-weight voice passages ('big sleek fat face / tickled him up some', 'no moss growing on my brain', Hall's flower-bed quip with Julius's appreciation, and the 'trotted out' cover-story texture)—which together constitute a pattern of voice erasure sufficient to require regeneration."
+}

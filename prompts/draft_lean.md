@@ -6,6 +6,12 @@ system: |
   abridged version of one chapter under the spec's constraints. Your output is
   plain prose (Markdown). No preamble, no commentary, no metadata — just the
   drafted chapter text, ready to be spliced into the book.
+
+  Preserve standard fiction paragraph conventions. Each new speaker's dialogue
+  turn goes in its own paragraph (separated by a blank line). Never concatenate
+  multiple speakers' lines into one paragraph, even under compression pressure.
+  A single speaker's dialogue plus surrounding attribution and action may
+  share a paragraph.
 ---
 # Forage abridgment spec (authoritative guidance)
 
@@ -30,10 +36,27 @@ Produce one contiguous output, but delimit each sub-chapter with a `## Chapter N
 - **Chapter:** {{segment.title}} (id {{segment.id}})
 {% endif %}
 
+{% if cuts %}
+# Cuttable material inventory
+
+A prepass has identified the following characters, subplots, and digressions as *removable without meaningfully changing the book's plot, themes, or principal-character arcs.* When compressing this chapter, prefer cutting or minimizing these over cutting anything else. You do not need to invent reasons to preserve material on this list.
+
+{% if cuts.minor_characters %}**Minor characters — prefer to elide, un-name, or collapse into descriptors:**
+{% for c in cuts.minor_characters %}- **{{c.name}}** — {{c.reason_removable}}
+{% endfor %}
+{% endif %}{% if cuts.subplots %}**Subplots — prefer to cut or reduce to one-sentence summary:**
+{% for s in cuts.subplots %}- **{{s.name}}** ({{s.chapter_span}}) — {{s.reason_removable}}
+{% endfor %}
+{% endif %}{% if cuts.digressions %}**Digressions — prefer to cut or condense heavily:**
+{% for d in cuts.digressions %}- **Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}** — {{d.reason_removable}}
+{% endfor %}{% endif %}
+{% endif %}
 {% if critic_feedback %}
 # Critic findings to address (regeneration pass)
 
-You are revising a previous draft: address each finding below using the source text as the authoritative basis for restored material. **Aim for a roughly budget-neutral revision**: for every passage you restore, tighten or cut lower-priority material elsewhere in the draft (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) by roughly equivalent length — the draft should not grow meaningfully. Never cut a signature passage (flagged in this round, previously flagged, or otherwise load-bearing in the spec's sense), and do not reshuffle paragraph order.
+You are revising a previous draft: address each finding below using the source text as the authoritative basis for restored material. **Aim for a roughly budget-neutral revision**: for every passage you restore, tighten or cut lower-priority material elsewhere in the draft (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) by roughly equivalent length — the draft should not grow meaningfully. Never cut a signature passage (flagged in this round, previously flagged, or otherwise load-bearing in the spec's sense), and do not reshuffle paragraph order.{% if cuts %}
+
+**Cuts inventory overrides critic findings.** If a finding asks you to restore material that lives inside — or is inseparable from — a scene, subplot, character, or digression on the authorized cuts inventory above, SKIP that finding. The cuts inventory takes priority over critic feedback because it represents an upstream editorial decision the critic may not fully honor. The critic *may* still surface useful complaints about material ADJACENT to a cut (e.g. a causal link, pivot, or signature phrase that could have survived even though the scene it lived in was cut) — use judgment: restore only the severable, non-cut element, not the cut scene itself.{% endif %}
 
 {% for f in critic_feedback %}{{loop.index}}. **[{{f.severity}}] {{f.class}}**
    - Source passage: "{{f.source_passage}}"

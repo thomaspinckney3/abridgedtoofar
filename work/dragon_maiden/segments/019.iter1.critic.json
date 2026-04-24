@@ -3,42 +3,33 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "medium",
+      "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "A grin brightened his face. He leaned forward and captured my lips in a searing kiss that spoke his happiness louder than any words. We broke apart so I could get some air. At this rate he was going to suffocate me. Even he was a little short as he studied me with his teasing smile.",
-      "source_locator": "Paragraph 8, after 'You think I'd lie to you after I just saved your scaly skin?'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The narrator's comic aside ('At this rate he was going to suffocate me') is a register-defining voice beat that characterizes Miriam's dry humor and grounds the romantic moment; the draft collapses this to 'he still looked a little breathless' without the self-aware commentary.",
-      "suggested_fix": "Restore the narrator's parenthetical observation about nearly being suffocated; this is the kind of wry aside that establishes the narrator's voice throughout the book and should not be smoothed away."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I stopped my perusing and curtain measurements to frown at him. 'This isn't your place?'",
-      "source_locator": "Paragraph 12, after 'the High Castle is not my home'",
+      "source_passage": "My mind imagined a stone hovel in some distant land. I cringed.",
+      "source_locator": "after 'a place of compromise that sits at the point where our five kingdoms come together' and before 'So where is your kingdom?'",
       "draft_treatment": "absent",
-      "why_it_matters": "The 'curtain measurements' bit is a small comic-domestic detail that reveals Miriam's personality — she's already mentally redecorating — and is the kind of quirky character-voice moment that makes the narrator distinct; its removal flattens her characterization.",
-      "suggested_fix": "Restore the stage business of Miriam 'perusing and taking curtain measurements' before she turns to frown at him; it is a brief but voice-rich gesture."
+      "why_it_matters": "This brief interior beat is a small but characteristic Miriam voice moment—the comedic anxiety about Xander's home being primitive. Its removal slightly flattens the narrator's personality at a key anticipatory beat.",
+      "suggested_fix": "Restore the one-sentence interior image ('My mind imagined a stone hovel in some distant land. I cringed.') before Miriam asks 'So where is your kingdom?'"
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "My mind imagined a stone hovel in some distant land. I cringed. 'So where is your kingdom?'",
-      "source_locator": "Paragraph 13, before 'A moment and I will show you'",
+      "source_passage": "I stopped my perusing and curtain measurements to frown at him.",
+      "source_locator": "after 'the High Castle is not my home' and before 'This isn't your place?'",
       "draft_treatment": "absent",
-      "why_it_matters": "Miriam's mental image of a 'stone hovel' is a small comic-ironic beat that shows her dry wit and class-conscious humor; its omission slightly thins the narrator's comedic voice.",
-      "suggested_fix": "Add the brief aside about imagining a stone hovel before Miriam asks where his kingdom is."
+      "why_it_matters": "The 'curtain measurements' joke is a register-defining comic aside that shows Miriam mentally redecorating a fantasy castle—a characteristic domestic-irony beat the draft replaces with the blander 'I paused mid–curtain measurement,' partially preserving the gag but losing the full wording.",
+      "suggested_fix": "Minor: restore the full line 'I stopped my perusing and curtain measurements to frown at him' to keep the voice beat intact."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I sat on the edge of the bed with my legs dangling over as she handed the paper to Xander. He unfurled the paper across his lap. A large, browned map spread out before him. The rough leather was covered from corner-to-corner with seas, mountains, oceans, lakes, and so much more.",
-      "source_locator": "Paragraph 15, map description",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The specific physical detail ('legs dangling over,' 'corner-to-corner') gives the scene tactile grounding; the draft compresses it to a single clause losing the visual specificity.",
-      "suggested_fix": "Restore the image of Miriam sitting with her legs dangling and the fuller map description with its list of geographic features."
+      "source_passage": "I toyed with the strings that closed his shirt and smiled.",
+      "source_locator": "before 'No, but I hope you enjoyed my butt.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The physical business of Miriam toying with his shirt strings grounds the intimate moment and is the lead-in gesture before her comedic line; without it the comic beat loses its physical staging.",
+      "suggested_fix": "Re-insert the physical action ('I toyed with the strings that closed his shirt and smiled') before the 'butt' quip."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses found; two medium-severity voice flattenings (the 'suffocate me' comic aside and the 'curtain measurements' characterization beat) slightly thin the narrator's voice but do not individually or collectively trigger regeneration."
+  "summary": "The draft preserves all high-priority signature material faithfully; three minor voice-beat omissions (the stone-hovel cringe, the full curtain-measurements line, and Miriam toying with Xander's shirt) represent low-severity flattenings that do not individually or collectively require regeneration."
 }

@@ -1,0 +1,62 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I've always had a kind of idea that English girls were just a mite moss-grown. Old-fashioned and sweet, you know, but scared to move round without a footman or a maiden aunt. I guess I'm a bit behind the times!",
+      "source_locator": "Julius's speech to Tuppence after the narration, paragraph 4",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Julius's sole register-establishing speech in the chapter — his Americanism, his transatlantic social observation, and his warm capitulation to Tuppence are all carried here. Its loss flattens the rapprochement scene to a bare plot beat and erases character voice.",
+      "suggested_fix": "Restore Julius's speech verbatim or near-verbatim; it is short enough (three sentences) to include without budget pressure."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"My union, Tuppence, my union! It does not permit me to work before 11 a.m.\"",
+      "source_locator": "Tommy's reply to Tuppence, the banter sequence before 'plan of campaign'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The draft collapses this to 'My union does not permit me to work before eleven,' losing the doubled mock-formality ('My union, Tuppence, my union!') that gives the line its comic rhythm and is part of Christie's register-defining banter.",
+      "suggested_fix": "Restore the double invocation: 'My union, Tuppence, my union! It does not permit me to work before eleven a.m.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"What about meals?\" inquired the practical Tommy. \"How like a man! What does mere food matter?\" \"That's all very well. You've just had a thundering good breakfast...by tea-time you'd be eating the flags, pins and all.\"",
+      "source_locator": "Exchange over the Piccadilly Circus / flags scheme",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic exchange is compressed to two half-lines ('What about meals?' / 'How like a man!'), erasing Tommy's extended rejoinder which is itself a characterisation beat — his practicality and gentle mockery of Tuppence's romantic impracticality are genre-defining here.",
+      "suggested_fix": "Restore at least Tommy's counter-argument ('You've just had a thundering good breakfast… eating the flags, pins and all') to preserve the bantering rhythm."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tommy laid his paper finally aside. \"There's something of the simplicity of the truly great mind about you, Tuppence. Fire ahead. I'm listening.\"",
+      "source_locator": "Tommy's capitulation before the plan-of-campaign, after the applause sequence",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The draft preserves the line but strips the stage direction ('laid his paper finally aside') and 'I'm listening', removing the mock-ceremonious build-up that gives the compliment its ironic weight.",
+      "suggested_fix": "Include the full sentence with stage direction and closing 'I'm listening.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I thought as much,\" said Tommy with satisfaction. \"How like a woman! No foresight! Now just stand aside, and see how easily the mere male deals with the situation.\"",
+      "source_locator": "Before the Keith doorbell scene, Tommy arresting Tuppence's hand",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a key gender-comedy passage — Tommy's mock-chauvinism answered by the Keith scene's success and Tuppence's frank concession — which the draft entirely omits, losing the ironic reversal structure that Christie is clearly enjoying.",
+      "suggested_fix": "Restore Tommy's 'How like a woman! No foresight!' speech and Tuppence's subsequent admission that he scored handsomely; the Mrs. Keith scene can still be compressed."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Buck up, old bean. We always knew it was an outside chance…a fine tour of England, Ireland and Scotland before us.\" \"True,\" said Tuppence, her flagging spirits reviving. \"And all expenses paid!\"",
+      "source_locator": "Lunch exchange, after listing fruitless calls",
+      "draft_treatment": "absent",
+      "why_it_matters": "This short exchange captures Tuppence's mercenary optimism ('all expenses paid!') which is a recurring comic motif; its absence thins the character note.",
+      "suggested_fix": "Add the one-line 'all expenses paid!' beat; it costs only a few words and preserves a running joke."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft carries the plot skeleton faithfully but systematically strips the banter, Julius's Americanism speech, the mock-chauvinism reversal, and the extended comic exchanges that are Christie's voice in this chapter — four medium-severity flattening failures push the verdict to regenerate."
+}

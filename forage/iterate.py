@@ -43,7 +43,7 @@ def iterate_segment(
     plan: dict,
     segment_id: str,
     *,
-    max_retries: int = 2,
+    max_retries: int = 1,
     redraft_first: bool = False,
 ) -> IterateResult:
     """Run the regeneration loop on one segment.
@@ -71,6 +71,12 @@ def iterate_segment(
                                  attempts=1, exhausted=False, steps=steps)
 
     for attempt in range(1, max_retries + 2):
+        # Skip the would-be verification critic once the regen budget is
+        # exhausted — its findings are never acted on downstream, so running
+        # it just wastes money and noise. Attempt 1 always runs so we get at
+        # least one critic pass even with max_retries=0.
+        if attempt > 1 and attempt > max_retries:
+            break
         c = run_critic(book, segment_id, "signature")
         _snapshot_critic(seg_dir, segment_id, attempt=attempt)
         # Compute regen trigger from findings directly — the critic's own
@@ -134,13 +140,12 @@ def _verdict_from_findings(findings: list[dict]) -> str:
 
     Rules (aligned with spec's severity buckets):
       - Any high-severity finding → regenerate (high-stakes failures).
-      - Two or more medium-severity findings → regenerate (conservative
-        single-critic fallback for lower-stakes agreement).
+      - Three or more medium-severity findings → regenerate.
       - Otherwise → pass.
     """
     highs = sum(1 for f in findings if f.get("severity") == "high")
     mediums = sum(1 for f in findings if f.get("severity") == "medium")
-    if highs >= 1 or mediums >= 2:
+    if highs >= 1 or mediums >= 3:
         return "regenerate"
     return "pass"
 

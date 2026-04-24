@@ -1,0 +1,44 @@
+{
+  "segment_id": "005",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "\"I'm glad, Jay.\" Her throat, full of aching, grieving beauty, told only of her unexpected joy.",
+      "source_locator": "After Gatsby says 'What do you think of that? It's stopped raining.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is the chapter's primary gloss on Daisy's voice as simultaneously mournful and joyful; it directly bridges to 'that voice was a deathless song' at the chapter's close and is one of the most critically cited passages in the novel for the Daisy-voice motif. Without it, 'that voice was a deathless song' lands without preparation.",
+      "suggested_fix": "Restore verbatim after Daisy's 'I'm glad, Jay': 'Her throat, full of aching, grieving beauty, told only of her unexpected joy.' It is a single sentence and carries disproportionate interpretive weight."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I had to follow the sound of it for a moment, up and down, with my ear alone, before any words came through.",
+      "source_locator": "After 'The exhilarating ripple of her voice was a wild tonic in the rain.'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This sentence is the most distinctive stylistic rendering of Daisy's voice as pure sound preceding meaning—a signature of Fitzgerald's technique and a passage the critical tradition treats as establishing how her voice operates on Nick and Gatsby. The draft preserves only the opening clause and drops this.",
+      "suggested_fix": "Append the sentence directly after 'The exhilarating ripple of her voice was a wild tonic in the rain.' It is compact and should survive any compression budget."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Americans, while willing, even eager, to be serfs, have always been obstinate about being peasantry.",
+      "source_locator": "In the brewer-house digression while Nick shelters under the tree",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a rhetorically distinctive aphorism and a thematic keystone for the novel's class critique; it is widely quoted and sits in a non-cut passage (the brewer paragraph is not on the authorized-cut list). Its absence removes the chapter's only explicit commentary on American class mythology.",
+      "suggested_fix": "Restore the closing sentence of the brewer paragraph: 'Americans, while willing, even eager, to be serfs, have always been obstinate about being peasantry.' The surrounding context (brewer, thatched roofs, Found a Family) can remain compressed, but this line should appear."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "the sparkling odour of jonquils and the frothy odour of hawthorn and plum blossoms and the pale gold odour of kiss-me-at-the-gate",
+      "source_locator": "As Nick, Gatsby, and Daisy enter via the postern gate",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple-catalog of synesthetic scent-descriptions ('sparkling odour,' 'frothy odour,' 'pale gold odour') is one of the chapter's most prosodically distinctive passages, establishing the enchanted-world register of Gatsby's domain; compression to 'the pale gold odour of blossoms' erases two-thirds of it and the rhetorical pattern entirely.",
+      "suggested_fix": "Restore at minimum the full tricolon: 'the sparkling odour of jonquils and the frothy odour of hawthorn and plum blossoms and the pale gold odour of kiss-me-at-the-gate.' It adds one sentence and preserves the voice signature."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "The draft fatally drops the 'throat, full of aching, grieving beauty' sentence that anchors the Daisy-voice motif and severs the preparation for 'that voice was a deathless song,' and additionally flattens three further signature passages—the 'ear alone' voice description, the Americans/serfs aphorism, and the triple-scent catalog—each of which is absent from the authorized-cut list."
+}

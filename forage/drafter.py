@@ -148,6 +148,8 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     }
 
     prompt = load_prompt("draft_lean")
+    cuts_path = book.work_dir / "cuts.json"
+    cuts = read_json(cuts_path) if cuts_path.exists() else None
     cached, body = prompt.render_blocks(
         spec=spec_text,
         book={"title": plan.get("title", book.book_id),
@@ -159,6 +161,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
         critic_feedback=None,
         previous_draft=None,
         merged_members=members,
+        cuts=cuts,
     )
 
     default_model = prompt.config.get("model", "openai:gpt-5")
@@ -290,6 +293,9 @@ def draft_segment(
         spec_text = spec_path.read_text() if spec_path.exists() else ""
         target = int(segment.get("target_word_count", 0) or 0)
         ceiling = int(round(target * 1.2)) if target else 0
+        # Load cuts inventory if a prepass has produced one.
+        cuts_path = book.work_dir / "cuts.json"
+        cuts = (read_json(cuts_path) if cuts_path.exists() else None)
         cached, body = prompt.render_blocks(
             spec=spec_text,
             book={
@@ -303,6 +309,7 @@ def draft_segment(
             segment_source=segment_source,
             critic_feedback=critic_feedback,
             previous_draft=previous_draft,
+            cuts=cuts,
         )
         rendered = body
     else:

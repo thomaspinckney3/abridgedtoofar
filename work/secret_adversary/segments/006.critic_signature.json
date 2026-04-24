@@ -1,0 +1,62 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "No one could have mistaken him for anything but an American, though he spoke with very little accent.",
+      "source_locator": "Description of Hersheimmer on entering his suite",
+      "draft_treatment": "absent",
+      "why_it_matters": "The qualifier 'though he spoke with very little accent' is a precise, wry narrative observation that nuances the stereotype-breaking characterisation of Julius — it is exactly the kind of quiet ironic notation Christie deploys to individuate a type-character.",
+      "suggested_fix": "Restore the clause verbatim or in close paraphrase after the nationality note: 'unmistakably American, though he spoke with very little accent.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "my conscience got busy! Kept knocking me up and saying: What about your Aunt Jane, way out West? It worried me some.",
+      "source_locator": "Hersheimmer's backstory monologue, middle section",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is Julius's most voice-defining line — the Americanism 'my conscience got busy' and the internal address 'What about your Aunt Jane, way out West?' establish his vernacular register and comic interiority. Compressing it to 'Julius got the dollars—and a conscience' strips the character voice entirely.",
+      "suggested_fix": "Restore at least 'my conscience got busy' and the quoted inner speech to preserve Julius's dialect colour."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "This isn't Sicily! No demanding ransom or threatening to crop her ears if I refuse. These are the British Isles, so quit the funny business, or I'll just sing out for that beautiful big British policeman I see out there in Piccadilly.",
+      "source_locator": "Hersheimmer's suspicious outburst before Tommy's explanation",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is one of Julius's most characteristic comic speeches — the Sicily reference, 'crop her ears,' and 'beautiful big British policeman' are vivid period Americanisms that establish his personality as both suspicious and broadly humorous. Their total absence flattens the scene's comedy and Julius's voice.",
+      "suggested_fix": "Restore Hersheimmer's Sicily speech in full or near-full; it is brief and carries high character-establishing weight."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Tommy murmured a name in her ear. 'Oh!' said Tuppence, impressed. 'And I can tell you, old bean, he's IT!'",
+      "source_locator": "On the steps of Carshalton Terrace, immediately after leaving Carter",
+      "draft_treatment": "absent",
+      "why_it_matters": "Tommy's 'he's IT!' is a period register marker and voice-beat that captures the youthful slang energy Christie uses to characterise the Young Adventurers. Its loss is a minor but real flattening of register.",
+      "suggested_fix": "Insert Tommy's exclamation 'And I can tell you, old bean, he's IT!' after Tuppence's first impressed 'Oh!'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "for the moment this paralysed the Young Adventurers, but Tuppence, recovering herself, plunged boldly into the breach with a reminiscence culled from detective fiction.",
+      "source_locator": "Narrative transition before Tuppence's 'When did you last see the dece—'",
+      "draft_treatment": "absent",
+      "why_it_matters": "The narrator's ironic aside—'a reminiscence culled from detective fiction'—is a self-reflexive wink at genre that is characteristic of Christie's narratorial voice in this novel and adds metatextual texture; its loss is a small but genuine flattening.",
+      "suggested_fix": "Add a brief narratorial tag such as 'plunged boldly, drawing on detective fiction' to preserve the ironic frame."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Tuppence expressed a preference for the latter, and Julius bowed to her decision.",
+      "source_locator": "Transition to the restaurant lunch",
+      "draft_treatment": "absent",
+      "why_it_matters": "The small comic beat of Julius deferring to Tuppence is a gentle character note; its absence is minor but part of a pattern of stripping incidental social texture.",
+      "suggested_fix": "Add a brief clause noting Julius's acquiescence to Tuppence's preference for the restaurant."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity voice-flattening failures — Hersheimmer's Sicily speech, his 'my conscience got busy' monologue, and the loss of his physical description qualifier — collectively erase the scene's primary comic and character-establishing material, warranting regeneration."
+}

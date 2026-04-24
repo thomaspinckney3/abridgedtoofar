@@ -4,68 +4,59 @@
   "findings": [
     {
       "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Miss Cowley left the delights (and drudgeries) of her home life early in the war and came up to London, where she entered an officers' hospital.",
-      "source_locator": "Tuppence's 'Abridged biography' opening",
+      "class": "voice_erasure",
+      "source_passage": "She pounced at once. 'Tommy, you're stony!' 'Not a bit of it,' declared Tommy unconvincingly.",
+      "source_locator": "Early dialogue, after 'the astute ears of Miss Prudence Cowley'",
       "draft_treatment": "flattened",
-      "why_it_matters": "The parenthetical '(and drudgeries)' and the full mock-formal framing of the biography opening are part of Christie's comic voice; the draft jumps straight to the hospital, erasing the ironic setup sentence that establishes the bit's register.",
-      "suggested_fix": "Restore the sentence 'Miss Cowley left the delights (and drudgeries) of her home life early in the war and came up to London, where she entered an officers' hospital.' before the month-by-month list."
+      "why_it_matters": "Christie's narrator describes Tuppence 'pouncing' and names Tommy's tone as 'unconvincing'—the narratorial commentary that establishes the double-act dynamic is erased in the draft, which renders it as bare dialogue.",
+      "suggested_fix": "Restore 'She pounced at once' and the narrator's 'declared Tommy unconvincingly' to preserve the comic-narrator voice that defines the register."
+    },
+    {
+      "severity": "high",
+      "class": "signature_loss",
+      "source_passage": "Abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk… First month: Washed up six hundred and forty-eight plates every day. Second month: Promoted to drying aforesaid plates…",
+      "source_locator": "Tuppence's self-narrated biography, middle of chapter",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "This is one of the most distinctive and critically noted passages in the chapter—its mock-bureaucratic, enumerated structure is the single strongest specimen of Christie's early comic voice here. The draft collapses it to 'Did chores, climbed, with mop and pail, to parlourmaid,' stripping the signature rhythm and the wit entirely.",
+      "suggested_fix": "Restore the full enumerated month-by-month format verbatim or near-verbatim, including the specific numbers and the sardonic asides ('How are the mighty fallen!'), even at the cost of other compression elsewhere."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Eighth month: Slight check in career. Sister Bond ate Sister Westhaven's egg! Grand row! Wardmaid clearly to blame! Inattention in such important matters cannot be too highly censured.",
-      "source_locator": "Tuppence's biography, eighth month",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The mock-bureaucratic sentence 'Inattention in such important matters cannot be too highly censured' is the comic apex of the eighth-month entry and a distinctive voice marker; the draft omits it entirely.",
-      "suggested_fix": "Restore 'Inattention in such important matters cannot be too highly censured.' after 'Wardmaid clearly to blame!'"
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Tenth month: Reproved by matron for visiting the pictures in company with one of the patients, namely: the aforementioned Lieutenant Thomas Beresford. Eleventh and twelfth months: Parlourmaid duties resumed with entire success.",
-      "source_locator": "Tuppence's biography, tenth-twelfth months",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft condenses 'Eleventh and twelfth months: Parlourmaid duties resumed with entire success' into 'Eleventh and twelfth: Parlourmaid triumph,' losing the mock-formal 'resumed with entire success' phrasing that sustains the comedy of the whole passage.",
-      "suggested_fix": "Restore 'Parlourmaid duties resumed with entire success' verbatim."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "After that, the talented Miss Cowley drove successively a trade delivery van, a motor-lorry and a general! The last was the pleasantest. He was quite a young general!",
-      "source_locator": "End of Tuppence's biography, post-hospital section",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'The talented Miss Cowley' and 'The last was the pleasantest' are the ironic pay-off of the driving-a-general joke; the draft collapses all three sentences into a single clause and drops the punch-line structure entirely.",
-      "suggested_fix": "Restore 'After that, the talented Miss Cowley drove successively…The last was the pleasantest. He was quite a young general!' as three distinct sentences."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "Tommy shook his head sadly. There was a silence, and then Tuppence burst out: 'Money, money, money! I think about money morning, noon and night! I dare say it's mercenary of me, but there it is!'",
-      "source_locator": "After Tommy's 'I'm just about desperate' exchange",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The draft compresses 'I dare say it's mercenary of me, but there it is!' and the preceding narrative beat ('Tommy shook his head sadly. There was a silence') into a bald paragraph break, losing both the self-aware ironic qualifier and the rhythmic build-up to the outburst.",
-      "suggested_fix": "Restore 'I dare say it's mercenary of me, but there it is!' and the brief narrative bridge before Tuppence's speech."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Come now, you can't say I'm sentimental… No one would ever think of sentiment in connection with you. That's not very polite, but I dare say you mean it all right.",
-      "source_locator": "Marriage discussion, after 'I'm not sentimental, you know'",
+      "source_passage": "'I have always been the changeling. I don't want to go back, but--oh, Tommy, what else is there to do?'",
+      "source_locator": "Tuppence's 'going home' speech, after 'Father's a dear'",
       "draft_treatment": "absent",
-      "why_it_matters": "This brief exchange neatly characterises the Tommy-Tuppence dynamic and Tuppence's mock-offended self-awareness; its omission slightly flattens the relationship register.",
-      "suggested_fix": "Restore the brief back-and-forth: Tuppence's 'Come now, you can't say I'm sentimental' / Tommy's 'No one would ever think of sentiment…' / Tuppence's 'That's not very polite.'"
+      "why_it_matters": "The 'changeling' self-identification is a small but interpretively loaded character beat—it crystallises Tuppence's outsider self-perception and the Edwardian/early-modern tension that the novel uses her to dramatise. Its absence thins the characterisation.",
+      "suggested_fix": "Restore the 'changeling' passage, even in compressed form, to preserve the interpretive weight of Tuppence's self-description."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "'Money, money, money! I think about money morning, noon and night! I dare say it's mercenary of me, but there it is!'",
+      "source_locator": "Tuppence's money speech, after the silence following 'just about desperate'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The triple repetition and the admission 'I dare say it's mercenary of me, but there it is!' are signature Christie—a frank, anti-sentimental voice note that distinguishes Tuppence. The draft folds the line into reported speech without the rhetorical force.",
+      "suggested_fix": "Restore the triple 'money, money, money' and the 'mercenary' concession as direct dialogue to preserve the voice beat."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "'I'm not sentimental, you know.' … 'Come now, you can't say I'm sentimental,' she added sharply. 'Certainly not,' agreed Tommy hastily. 'No one would ever think of sentiment in connection with you.'",
+      "source_locator": "Exchange after 'I made up my mind to marry money when I was quite young'",
+      "draft_treatment": "absent",
+      "why_it_matters": "This brief exchange is the clearest ironic signal of Tuppence's self-deception/self-awareness and establishes the comic romantic irony that underpins the whole Tommy-Tuppence arc. Losing it removes a critical interpretive marker.",
+      "suggested_fix": "Re-insert the 'I'm not sentimental' exchange, including Tommy's pointed reply, as a brief two-line beat."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "the joint venture…makes one think of galleons and doubloons. A joint venture!",
-      "source_locator": "Tuppence proposing 'a joint venture'",
+      "source_passage": "'It's not half so insane as a thing I read this morning beginning \"Petunia\" and signed \"Best Boy.\"' She tore out the leaf and handed it to Tommy. 'There you are. Times, I think. Reply to Box so-and-so. I expect it will be about five shillings. Here's half a crown for my share.'",
+      "source_locator": "After the advertisement is composed",
       "draft_treatment": "flattened",
-      "why_it_matters": "The draft retains 'galleons and doubloons' but omits the fuller explanation ('musty old figures…It's got an Elizabethan flavour about it') that gives the romantic digression its self-mocking texture.",
-      "suggested_fix": "Restore 'such a romantic phrase to come across in the middle of musty old figures. It's got an Elizabethan flavour about it' before 'galleons and doubloons.'"
+      "why_it_matters": "The physical action of tearing out the leaf and Tuppence paying her exact half add period texture and practical comic realism; the draft collapses them into a single narrative sentence losing the show-don't-tell character beat.",
+      "suggested_fix": "Restore the tearing-out and the specific 'five shillings / half a crown' exchange as brief action beats."
     }
   ],
   "verdict": "regenerate",
-  "summary": "Four medium-severity findings (key comic sentences in Tuppence's mock-biography systematically flattened, the 'mercenary of me' self-qualifier dropped, and the parlourmaid close-out paraphrased) collectively constitute voice erasure of the chapter's most signature set-piece and trigger regeneration."
+  "summary": "The draft commits one high-severity failure (the complete collapse of Tuppence's enumerated mock-biography, the chapter's most distinctive comic set-piece) and four medium-severity failures including erasure of the 'sentimental' ironic exchange, the 'money, money, money' voice beat, the 'changeling' self-identification, and the narratorial framing of Tuppence's pouncing instinct—collectively gutting the register-defining voice work of the segment."
 }

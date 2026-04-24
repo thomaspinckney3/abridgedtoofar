@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Blake nodded his head like a bobble-doll and stumbled forward. 'Of course, My Lord.'",
-      "source_locator": "near end, after 'Unchain my Maiden'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The 'bobble-doll' simile is a small but distinctive comic image that establishes Blake's obsequiousness with vivid specificity; the draft replaces it with the generic 'bobbed and scrambled.'",
-      "suggested_fix": "Restore 'like a bobble-doll' or an equivalent that preserves the comic-specific image: e.g. 'Blake nodded his head like a bobble-doll and scrambled forward.'"
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "Alex wiggled up beside her and smiled. 'It'll be okay.'",
-      "source_locator": "after Stephanie bursts into tears, before 'You shall be chosen this night'",
-      "draft_treatment": "flattened",
-      "why_it_matters": "Alex's specific action ('wiggled up') and spoken line characterize her as the group's quiet optimist; the draft collapses this to 'Alex inched close, murmuring something soft,' erasing both the gesture's distinctiveness and the actual dialogue.",
-      "suggested_fix": "Restore Alex's direct speech ('It'll be okay') and the 'wiggled' verb, which together establish her character in a single brushstroke."
-    },
-    {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
       "source_passage": "His wide eyes bespoke his youth as true as his wrinkle-free face and golden, curly locks.",
-      "source_locator": "after the young lord asks 'Are they truly Maidens?'",
+      "source_locator": "paragraph describing the youngest lord, after 'Are they truly Maidens?'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This sentence is the narrator's observational voice characterizing the youngest lord with a distinctive, slightly arch construction ('bespoke his youth as true as'). The draft replaces it with the bare functional phrase 'golden curls, wide eyes, scarcely a wrinkle,' losing the voice register entirely.",
+      "suggested_fix": "Restore the original phrasing: 'His wide eyes bespoke his youth as true as his wrinkle-free face and golden, curly locks.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "His eyes studied each of us with a firm, steady gaze that didn't betray his emotions.",
+      "source_locator": "paragraph describing the five lords, describing the central man",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This precise character-establishing phrase for the Grand Dragon Lord — 'didn't betray his emotions' — is interpretively important; it sets up the reader's first impression of him as guarded and unreadable. The draft says only 'gaze cool and unreadable,' a generic compression that loses the narrator's specific construal.",
+      "suggested_fix": "Restore: 'His eyes studied each of us with a firm, steady gaze that didn't betray his emotions.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "The people wore simple leather and cloth clothes like they were from the Middle Ages. Men in armor with lances in their hands guarded either side of the gate. Their helmets were tipped with leather-looking wings. On some of their chest plates was a side view of a green wing superimposed over a blue circle.",
+      "source_locator": "courtyard description, after exiting the stables",
       "draft_treatment": "absent",
-      "why_it_matters": "This is the only line that explicitly characterises the young lord's naivety through the narrator's direct observation; without it, the subsequent note about his 'soft eyes' fixed on Stephanie loses its interpretive foundation.",
-      "suggested_fix": "Add back the characterizing clause about his youth before moving to Blake's reply, even in compressed form."
+      "why_it_matters": "This worldbuilding passage establishes the realm's visual identity and the dragon-lord insignia (green wing over blue circle) which connects directly to the Grand Dragon Lord's blue-and-green colors — an interpretive detail for understanding his house sigil. It is entirely cut from the draft.",
+      "suggested_fix": "Restore the courtyard observation including the helmets with leather-looking wings and the chest-plate insignia of green wing over blue circle; this is not an authorized cut and carries both world-building and interpretive weight."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "A dozen women in white aprons scurried to and fro baking and stirring. Their chatter soothed my ears. It was a glimpse of the familiar in an unfamiliar place.",
+      "source_locator": "corridor passage, kitchen glimpse",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The closing interpretive line — 'It was a glimpse of the familiar in an unfamiliar place' — is the narrator explicitly processing her emotional state, a small but voice-defining beat. The draft reduces it to the functional phrase 'comforting sounds in an alien place,' losing the narrator's interiority.",
+      "suggested_fix": "Restore: 'Their chatter soothed my ears. It was a glimpse of the familiar in an unfamiliar place.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Blake nodded his head like a bobble-doll and stumbled forward.",
+      "source_locator": "final scene, after 'Unchain my Maiden'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'bobble-doll' simile is a small but distinct register marker — the narrator's sardonic, pop-culture-inflected observation. The draft replaces it with the plain 'Blake bobbed,' erasing the comic voice beat.",
+      "suggested_fix": "Restore: 'Blake nodded his head like a bobble-doll and stumbled forward.'"
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is substantially faithful, but three minor voice-flattening moments (the bobble-doll simile, Alex's dialogue, and the young lord's characterizing clause) dilute specific comic and interpretive texture without rising to high severity."
+  "summary": "No high-severity signature losses; the draft is broadly faithful but flattens several voice-establishing phrases and omits the courtyard insignia passage, producing medium-level erosion of the narrator's register and one worldbuilding-interpretive detail."
 }

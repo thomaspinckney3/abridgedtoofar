@@ -1,0 +1,62 @@
+{
+  "segment_id": "013",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "Although she was accustomed to take the lead, and to pride herself on her quick-wittedness, in reality she had relied upon Tommy more than she realized at the time.",
+      "source_locator": "Paragraph 2, opening introspective passage on Tommy's absence",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source passage establishes the key interpretive irony of Tuppence's self-awareness: she thought herself the leader but was secretly dependent. The draft reduces this to 'though she prided herself on quick wits, she felt rudderless,' losing the specific self-revelation and its ironic register.",
+      "suggested_fix": "Restore the 'in reality she had relied upon Tommy more than she realized at the time' phrasing with the surrounding context that makes explicit the gap between Tuppence's self-image and reality."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "It seemed to the girl that, for the first time, she realized the sinister character of the mission they had undertaken so lightheartedly. It had begun like a page of romance.",
+      "source_locator": "Paragraph 3, before the 'Little fool' apostrophe",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The contrast of 'page of romance' turning to 'grim reality' is the thematic statement of the chapter's opening movement and is voice-establishing in its register. The draft compresses it to 'the mission looked sinister, its romance shorn off,' losing the rhetorical shape and the 'page of romance' phrase.",
+      "suggested_fix": "Restore 'It had begun like a page of romance. Now, shorn of its glamour, it seemed to be turning to grim reality' as close to verbatim as possible."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"I'm surprised you should have been gulled so easily,\" said Tuppence scornfully. \"Did you really think I was the kind of girl to roll about on the floor and whine for mercy?\"",
+      "source_locator": "After the revolver-grab triumph, Mrs. Vandemeyer's 'Not a fool' speech",
+      "draft_treatment": "absent",
+      "why_it_matters": "This is a character-defining and distinctively comic line: Tuppence's post-victory self-assertion is a signature voice beat. Its absence after the confrontation scene noticeably flattens the chapter's tonal payoff.",
+      "suggested_fix": "Restore Tuppence's scornful retort verbatim after Mrs. Vandemeyer's 'long memory' speech."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "She had accused Tommy of being a pessimist, and it is certain that he always saw the disadvantages and difficulties which she herself was optimistically given to overlooking, but nevertheless she had really relied a good deal on his judgment. He might be slow, but he was very sure.",
+      "source_locator": "Paragraph 2, closing sentences of the Tommy-reflection passage",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The 'pessimist' / 'slow but sure' contrast is character-defining for both Tommy and Tuppence, and the sentence 'He might be slow, but he was very sure' is a quietly memorable formulation. The draft keeps the last sentence but drops the optimist/pessimist contrast that gives it meaning.",
+      "suggested_fix": "Restore the pessimist/optimist contrast and the sentence 'He might be slow, but he was very sure' in fuller form."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Tuppence warmed to her pet creed--\"well, there's nothing unsatisfactory about money, is there?\"",
+      "source_locator": "Money negotiation scene, Tuppence's speech on revenge vs. money",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The narratorial tag 'Tuppence warmed to her pet creed' is a light ironic signature that characterises Tuppence's mercenary streak; without it the line becomes a straight speech rather than a character-revealing moment.",
+      "suggested_fix": "Restore 'Tuppence warmed to her pet creed' or equivalent narratorial frame to preserve the ironic register."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "\"Not a fool, then, after all! You did that well, girl. But you shall pay for it\"",
+      "source_locator": "Immediately after the revolver grab",
+      "draft_treatment": "fragment_preserved",
+      "why_it_matters": "The line is present in the draft but the following exchange ('You may do—some day!') with its 'cold malignity' sending 'an unpleasant chill' is dropped, thinning the menace of Mrs. Vandemeyer.",
+      "suggested_fix": "Restore the 'You may do—some day!' exchange and the brief narratorial note about cold malignity."
+    }
+  ],
+  "verdict": "pass",
+  "summary": "The draft is substantially faithful but flattens several voice-establishing and character-defining passages—most notably the 'page of romance' thematic statement, the pessimist/optimist Tommy analysis, and Tuppence's post-victory scornful retort—none rising to high severity individually, and with only four medium findings the verdict remains a borderline pass."
+}

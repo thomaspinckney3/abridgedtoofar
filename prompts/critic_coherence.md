@@ -23,6 +23,13 @@ Explicit rejections — these are NOT valid findings:
 
 **The gate test**: would a competent reader with no source access be *actually confused or misled* by this draft sentence, or would they merely be reading a less-ornamented version of the sentence? Only flag the first kind.
 
+{% if cuts %}**Authorized cuts — residual seams are not findings.** A separate prepass instructed the drafter to remove the following material. Dangling references, missing-gloss seams, mid-scene jumps, or broken pivots that are *direct residues* of these authorized cuts (a sentence referring to "the hall" when the hallway scene was cut, an attribution to a character who has been elided) are EXPECTED and NOT findings. Only flag continuity breaks in material that should have survived compression.
+
+{% if cuts.minor_characters %}Authorized minor-character removals: {% for c in cuts.minor_characters %}{{c.name}}{% if not loop.last %}, {% endif %}{% endfor %}.
+{% endif %}{% if cuts.subplots %}Authorized subplot removals: {% for s in cuts.subplots %}{{s.name}} ({{s.chapter_span}}){% if not loop.last %}; {% endif %}{% endfor %}.
+{% endif %}{% if cuts.digressions %}Authorized digression removals: {% for d in cuts.digressions %}Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}{% if not loop.last %}; {% endif %}{% endfor %}.
+{% endif %}{% endif %}
+
 For each finding:
 - `class`: one of `non_parseable | dangling_reference | broken_pivot | missing_gloss | unattributed_dialogue | mid_scene_jump`
 - `chapter`: "N" or "N+1"

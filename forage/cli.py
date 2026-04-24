@@ -20,6 +20,7 @@ from .drafter import draft_all, draft_segment, ensure_chapters
 from .book_critic import run_book_critic
 from .chapter_classifier import classify_chapters
 from .coherence import run_coherence
+from .cuts import generate_cuts
 from .iterate import iterate_segment
 from .lean_plan import build_lean_plan
 from .llm import set_stream_sink
@@ -410,7 +411,7 @@ def _render_draft(r) -> None:
 def iterate(
     book_id: str,
     segment: str = typer.Argument(..., help="Segment id, e.g. 002"),
-    max_retries: int = typer.Option(2, help="Max regeneration attempts."),
+    max_retries: int = typer.Option(1, help="Max regeneration attempts."),
     redraft_first: bool = typer.Option(False, "--redraft-first",
                                        help="Re-draft from scratch before the first critic pass."),
     stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
@@ -647,6 +648,64 @@ def _render_rebudget(r) -> None:
 
 
 @app.command()
+def cuts(
+    book_id: str,
+    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
+) -> None:
+    """Produce a 'cuts inventory' identifying removable characters,
+    subplots, and digressions. Inverse framing of signature preservation —
+    enumerates what can be cut rather than what must be kept. Writes
+    work/<book>/cuts.json. Pulls in book_synopsis.md as an authoritative
+    shape-of-the-book anchor if present.
+    """
+    book = load_book(book_id)
+    console.print(f"[dim]book:[/dim] {book.book_id}")
+    if stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk); sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+    data = generate_cuts(book)
+    if stream:
+        sys.stdout.write("\n")
+    # Summary counts.
+    console.rule("[bold]cuts inventory[/bold]")
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim"); tally.add_column()
+    tally.add_row("minor_characters", str(len(data.get("minor_characters", []))))
+    tally.add_row("subplots", str(len(data.get("subplots", []))))
+    tally.add_row("digressions", str(len(data.get("digressions", []))))
+    console.print(Panel(tally, title="counts"))
+    if data.get("minor_characters"):
+        t = Table(title="minor characters", show_lines=False)
+        t.add_column("name"); t.add_column("appearances", max_width=35)
+        t.add_column("reason removable", max_width=60)
+        for c in data["minor_characters"]:
+            t.add_row(c.get("name", ""),
+                      c.get("appearances_summary", "")[:100],
+                      c.get("reason_removable", "")[:120])
+        console.print(t)
+    if data.get("subplots"):
+        t = Table(title="subplots", show_lines=False)
+        t.add_column("name", max_width=40); t.add_column("chapter span", width=16)
+        t.add_column("reason removable", max_width=60)
+        for s in data["subplots"]:
+            t.add_row(s.get("name", "")[:80],
+                      s.get("chapter_span", "")[:20],
+                      s.get("reason_removable", "")[:120])
+        console.print(t)
+    if data.get("digressions"):
+        t = Table(title="digressions", show_lines=False)
+        t.add_column("chapters", width=14); t.add_column("topic", max_width=40)
+        t.add_column("reason removable", max_width=60)
+        for d in data["digressions"]:
+            chs = ",".join(d.get("chapter_ids", []))
+            t.add_row(chs[:16], d.get("topic", "")[:60],
+                      d.get("reason_removable", "")[:120])
+        console.print(t)
+
+
+@app.command()
 def coherence(
     book_id: str,
     stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
@@ -727,6 +786,29 @@ def report(book_id: str = typer.Argument(None)) -> None:
         console.rule("[dim]notes[/dim]")
         for bid, n in notes:
             console.print(f"  [dim]{bid}:[/dim] {n}")
+
+
+@app.command()
+def proofread(book_id: str,
+              render_only: bool = typer.Option(False, "--render-only",
+                  help="Skip alignment calls; render HTML from existing alignments/")) -> None:
+    """Align each draft chapter to its source (paragraph-level), then emit a
+    static HTML viewer at work/<book>/proofread.html. Alignments are cached
+    per chapter — re-running resumes from where it stopped."""
+    from .align import align_book
+    from .proofread import render_proofread_html
+
+    book = load_book(book_id)
+    if not render_only:
+        console.rule(f"[bold]align {book_id}[/bold]")
+        summary = align_book(book)
+        console.print(f"aligned: {len(summary['aligned'])}  "
+                      f"skipped: {len(summary['skipped'])}  "
+                      f"errors: {len(summary['errors'])}")
+        for sid, reason in summary['errors']:
+            console.print(f"  [red]{sid}:[/red] {reason}")
+    out = render_proofread_html(book)
+    console.print(f"[green]wrote[/green] {out}")
 
 
 @app.command()

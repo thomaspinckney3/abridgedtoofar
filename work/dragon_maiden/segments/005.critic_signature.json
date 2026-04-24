@@ -3,24 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "He shook his head. 'It's nothing. Anyway, nice to have met you.'",
-      "source_locator": "Blake's exit, after Heather says 'On to you?'",
+      "source_passage": "Still, being among such a large crowd of my fellow humans was a bitter reminder of how normal my boring life was.",
+      "source_locator": "paragraph 4, after pizza line",
       "draft_treatment": "flattened",
-      "why_it_matters": "Blake's cryptic 'It's nothing' response to Heather's question carries interpretive weight — it marks his evasiveness — and is silently dropped from the draft, collapsing two beats into one.",
-      "suggested_fix": "Restore Blake's 'It's nothing' line before his farewell to preserve the character's deliberate ambiguity."
+      "why_it_matters": "The source's self-deprecating, resigned tone—'bitter reminder,' 'boring life'—is interpretively loaded; the draft softens to 'reminded me how ordinary my life was,' losing the edge of bitterness that establishes Miriam's voice.",
+      "suggested_fix": "Restore the 'bitter reminder' phrasing and 'boring life' self-assessment verbatim or very close; these establish her resigned interiority."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I glanced out the window and sighed. The world sped by us as a shadow play of colorful lights and figures.",
+      "source_locator": "taxi conversation, Miriam's introspective beat",
+      "draft_treatment": "flattened",
+      "why_it_matters": "'Shadow play of colorful lights and figures' is the only piece of literary, image-driven prose in the chapter—it signals the author's register and frames Miriam's yearning mood. The draft replaces it with 'Lights smeared against the glass,' erasing the distinctive figure.",
+      "suggested_fix": "Restore 'the world sped by us as a shadow play of colorful lights and figures' or a near-verbatim version."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "\"This isn't living! This is the preliminaries before death!\"",
+      "source_locator": "taxi-chase sequence, Miriam's spoken line",
+      "draft_treatment": "absent",
+      "why_it_matters": "This comic one-liner is the clearest voice-establishing joke in the chapter—it shows Miriam's dry wit under pressure and is the most quotable line in the source. The draft collapses the whole chase without preserving it.",
+      "suggested_fix": "Even if the chase is compressed, include Miriam's 'preliminaries before death' line to preserve her comedic voice register."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "I glanced out the window and sighed. The world sped by us as a shadow play of colorful lights and figures.",
-      "source_locator": "Taxi scene, after Heather says 'You need to live a little, Miriam, before your whole life is gone.'",
-      "draft_treatment": "absent",
-      "why_it_matters": "The 'shadow play of colorful lights and figures' image is the chapter's only lyrical, register-shifting moment; it establishes that Miriam perceives the world with a wistfulness that characterizes her voice throughout the book.",
-      "suggested_fix": "Restore the one-sentence image ('The world sped by us as a shadow play of colorful lights and figures.') before Miriam's 'I know. I… I just feel like…' line."
+      "source_passage": "He shook his head. 'It's nothing. Anyway, nice to have met you.' He waved and walked off.",
+      "source_locator": "Blake exit, after Heather's 'on to you?' line",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Blake's cryptic 'It's nothing' deflection carries interpretive weight as a subtle hint of something sinister; the draft skips his spoken exit and replaces it with a generic 'look that felt like a test,' losing the specific verbal cue.",
+      "suggested_fix": "Retain Blake's spoken dismissal 'It's nothing' to preserve the subtle menace of his exit."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "Heather stamped her foot on the ground and slopped puddle water all over herself.",
+      "source_locator": "final beat, Heather's farewell",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The comic physical consequence—puddle water soaking Heather after her indignant stamp—is a small but characteristic comic grace note. The draft notes 'ankles splashing through a puddle' but removes the self-drenching payoff.",
+      "suggested_fix": "Restore the detail that her stomp splashed water 'all over herself' for the comic beat."
     }
   ],
   "verdict": "pass",
-  "summary": "The draft is broadly faithful with only two low-severity voice-flattening instances: Blake's cryptic 'It's nothing' is silently dropped, and the chapter's sole lyrical image ('shadow play of colorful lights and figures') is absent — neither rises to high or medium severity individually."
+  "summary": "No high-severity signature losses, but three medium-severity voice flattenings (bitterness framing, 'shadow play' image, and the 'preliminaries before death' joke) collectively thin the chapter's register without crossing the regeneration threshold."
 }

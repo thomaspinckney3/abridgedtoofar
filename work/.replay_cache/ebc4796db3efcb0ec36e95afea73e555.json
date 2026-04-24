@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-23T13:26:41",
+  "key": "ebc4796db3efcb0ec36e95afea73e555",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to every sentence that might be structurally damaged.\n\n**Ch 010 Draft**\n\n- \"Peter B. Rysdale, the oil king,\" said Tuppence promptly \u2014 the source has Albert first saying he doesn't know Rysdale, then Tuppence supplies the name. In the draft, Tuppence says this *without* the \"Do you know old man Rysdale? / Albert shook his head\" exchange being present. But the draft still reads coherently \u2014 Tuppence is simply volunteering information. Not a genuine confusion.\n\n- The dirty postcard: draft says \"A dirty postcard arrived too: 'It's O.K.' scrawled in Tommy's hand.\" The source never says it's Tommy's hand \u2014 it's from Albert. This is an error of attribution but not a structural parse failure \u2014 it doesn't leave the reader unable to follow the scene.\n\n- The \"Albert vaguely relegated by a magnificent hall porter\" \u2014 parseable without confusion.\n\n- All other passages check out structurally.\n\n**Ch 011 Draft**\n\n- \"The archdeacon's daughters had been well grounded in household tasks and in training a 'raw girl.'\" \u2014 Archdeacon is an authorized removal. The sentence still parses fully and the reader understands Tuppence has domestic training. Not a finding.\n\n- \"He had given her a piercing glance before.\" \u2014 This refers back to when Peel Edgerton arrived and Tuppence answered the door. The draft does establish this (\"Tuppence went to answer it\"). Parseable.\n\n- All dialogue exchanges are intact with their triggers.\n\n- No mid-scene jumps, no dangling pronouns that lack antecedents in the draft.\n\nAfter careful review, both drafts are structurally coherent. The one potential issue \u2014 attributing the postcard to Tommy rather than Albert \u2014 is an introduced error but doesn't leave a reader *structurally confused* in the sense defined; the postcard's function (\"go-ahead signal\") is clear from context. No sentence fails any of the five structural tests under the gate test.\n\n```json\n[]\n```",
+    "input_tokens": 12881,
+    "output_tokens": 495,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 14.022997617721558,
+    "stop_reason": "end_turn"
+  }
+}

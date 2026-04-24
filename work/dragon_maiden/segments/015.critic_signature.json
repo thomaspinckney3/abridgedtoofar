@@ -5,49 +5,31 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "He was about seventy with more wrinkles than an unsettled pond.",
-      "source_locator": "paragraph describing Jethro's appearance",
+      "source_passage": "more wrinkles than an unsettled pond",
+      "source_locator": "paragraph describing Jethro, after Cayden grants permission",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source simile 'more wrinkles than an unsettled pond' is a distinctively whimsical, voice-establishing image; the draft renders it as 'more wrinkles than a stirred pond,' swapping the precise, slightly surreal 'unsettled' for the mundane 'stirred,' flattening the original's tonal texture.",
+      "suggested_fix": "Restore the exact phrase 'more wrinkles than an unsettled pond' to preserve the source's idiosyncratic voice register."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "I stooped and picked it up to turn it in my fingers. It was a bit of compressed clay dropped from the tire of the pig-men's truck.",
+      "source_locator": "after Portal explanation, before Miriam holds up the clay for Xander",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source gives Miriam a specific, grounded observational beat—she identifies pig-men's truck tire clay—that shows her sharp, practical attention as the first-person consciousness driving the scene. The draft collapses this into a vague 'fleck… the kind that clung to tires,' losing both the specificity of her reasoning and the narratorial voice.",
+      "suggested_fix": "Restore Miriam's explicit identification: 'a bit of compressed clay dropped from the tire of the pig-men's truck,' keeping her observational logic intact."
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He looked down to study me. 'Because they believed the reward was worth the price.'",
+      "source_locator": "Portal explanation exchange, Xander's answer to 'Then why did they do it?'",
       "draft_treatment": "fragment_preserved",
-      "why_it_matters": "This is the one genuine comic simile in the chapter — a voice-establishing line that signals the narrator's wry register. The draft preserves it verbatim, which is correct, but strips the surrounding frame: in the source Jethro's 'soft blue eyes smiled at Stephanie' is the immediate follow-through beat. The draft reproduces that too, so preservation is adequate.",
-      "suggested_fix": "No action required — this was a false alarm on review."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "I stumbled back and my heels tripped on one of the stones. My arms flailed at my sides to stop me, but gravity took hold.",
-      "source_locator": "near-final action sequence, after Xander leaps at narrator",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source gives two discrete physical beats — heel-catch, arm-flail — then the blunt punch-line 'gravity took hold.' The draft compresses to 'my heel caught a stone. Arms flailed for balance; gravity took me.' The rhythm is shortened and 'gravity took me' loses the original's dry finality ('took hold'), flattening the kinetic voice of the climax.",
-      "suggested_fix": "Restore 'but gravity took hold' as the closing phrase of that sentence to preserve the rhythm and the narrator's detached, slightly darkly comic acknowledgment of her own fall."
-    },
-    {
-      "severity": "medium",
-      "class": "voice_flattening",
-      "source_passage": "The injured dragon dropped to the ground but landed on all fours. It swung its tail in a full circle and knocked away all the men in robes, the colorful ones included.",
-      "source_locator": "battle scene, after one dragon is hit by priests' light",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The phrase 'the colorful ones included' is a small but signature comic aside — it undercuts the gravitas of the battle and is a clear register marker for this narrator. The draft replaces the whole sentence with 'swept its tail in a deadly circle. Priests and monks scattered like ninepins,' introducing a new simile that is not in the source and erasing the narrator's dry parenthetical.",
-      "suggested_fix": "Restore 'the colorful ones included' as a parenthetical after clearing the priests, and drop the invented 'like ninepins' simile which is not the author's voice."
-    },
-    {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "He threw the rock underhanded at the gray blob.",
-      "source_locator": "Portal demonstration scene",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "'Gray blob' is the narrator's casual, deflationary description of the Portal — it marks the first-person voice undercutting the grand magic with mundane language. The draft replaces it with 'cast it underhand into the gray,' losing the comic texture.",
-      "suggested_fix": "Restore 'gray blob' or a close equivalent to preserve the narrator's deflating register."
-    },
-    {
-      "severity": "low",
-      "class": "other",
-      "source_passage": "In my stupor I took his arm and let him lead me up the stairs.",
-      "source_locator": "after the Portal activates and Xander offers his arm",
-      "draft_treatment": "absent",
-      "why_it_matters": "'In my stupor' is a small but character-defining admission — it shows the narrator's awe overriding her usual resistance. The draft simply says 'I took it,' erasing the emotional note.",
-      "suggested_fix": "Add 'In my stupor' or 'Dazed, I took it' to restore the narrator's briefly suspended agency."
+      "why_it_matters": "The source includes the beat 'He looked down to study me,' which marks a moment of Xander's deliberate, weighted attention on Miriam—a micro-gesture that signals the thematic importance of the exchange. The draft omits this physical cue, slightly thinning the interpretive weight of the moment.",
+      "suggested_fix": "Retain 'He looked down to study me' before Xander's answer to preserve the character beat's emotional register."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; two medium-severity voice flattenings (the 'colorful ones included' parenthetical erased and 'gravity took hold' rhythm clipped) and two low-severity prose infelicities, falling below the regeneration threshold, but the draft should be revised to restore the author's comic asides."
+  "summary": "The draft is largely faithful and preserves all major plot and voice beats; two medium-severity paraphrases (Jethro's wrinkle simile and the pig-men clay identification) and one low-severity cut of a character micro-gesture are the only meaningful losses, insufficient to trigger regeneration."
 }

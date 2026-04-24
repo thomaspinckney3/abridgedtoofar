@@ -5,49 +5,58 @@
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Mascara-face gathered what few wits she had and glared at him. 'I-I want you to release me.'",
-      "source_locator": "after Blake opens the canvas flap",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The narratorial aside 'gathered what few wits she had' is a signature voice beat—dry, slightly contemptuous character appraisal that defines the narrator's register. The draft renders it as bare dialogue attribution.",
-      "suggested_fix": "Restore the parenthetical characterization: 'Mascara-face gathered what few wits she had and glared at him.'"
+      "source_passage": "My dark world was slowly receding, and that was my introduction back into the real one. I forced my eyes open and was presented with a barren sight.",
+      "source_locator": "Opening paragraphs, after the first line of dialogue",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The narrator's wry, detached voice—'that was my introduction back into the real one' and 'presented with a barren sight'—establishes her register immediately; the draft collapses this into bland functional prose ('The voice hauled me back. I pried my eyes open').",
+      "suggested_fix": "Restore the narrator's dry, slightly formal self-commentary in the first-person orientation sentence to preserve the voice register that defines the chapter's POV."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "She took a deep breath and opened her big mouth wide. 'Heellppppp!'",
-      "source_locator": "Mascara-face's first scream sequence",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'opened her big mouth wide' is a distinctively comic-contemptuous physical detail that establishes the narrator's sardonic eye; the draft compresses this to 'took a breath' losing the signature tone.",
-      "suggested_fix": "Restore 'opened her big mouth wide' before the scream."
+      "source_passage": "Tears had run her makeup down her face and given her an undead look.",
+      "source_locator": "Description of the irate woman, before 'Let me out, you stupid fucks!'",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The 'undead look' simile is the narrator's signature observational wit; the draft replaces it with 'mascara melted like a skull face,' which is a different image with a different register and loses the dry humor of the original.",
+      "suggested_fix": "Use the source's 'undead look' phrasing, or preserve the dry clinical humor rather than substituting a more lurid image."
     },
     {
       "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Blake stood between the stalls and sneered at us... He paced the floor between the straw of the stalls.",
-      "source_locator": "Blake's speech in the stables, presentation monologue",
-      "draft_treatment": "flattened",
-      "why_it_matters": "The source stages the speech with 'He paced the floor between the straw of the stalls' as a mid-paragraph action beat that adds menace and cinematic presence. The draft omits it, making Blake's speech a static lecture.",
-      "suggested_fix": "Reinsert the pacing action beat mid-speech to preserve the staged menace."
+      "source_passage": "Blake snorted. The noise even sounded piggish.",
+      "source_locator": "During Blake's first appearance at the rear of the truck",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The two-sentence deadpan—the second sentence as a standalone comic beat—is a stylistic signature of the narrator's ironic register; the draft renders it as 'He snorted, a wet, animal sound,' losing the wry self-awareness of the observation.",
+      "suggested_fix": "Restore the two-sentence structure: 'Blake snorted. The noise even sounded piggish.' The comic rhythm is the point."
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "Cindy charged Blake. He side-stepped her attack and smacked her on the back of her head. Cindy's eyes rolled back in her head, and she crumpled to the ground.",
+      "source_locator": "The fight scene at the rear of the truck",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source has the specific detail that Blake side-steps and smacks the back of Cindy's head, with 'eyes rolled back'—a kinetically precise beat; the draft replaces this with 'He stepped aside and clipped the back of her head. She folded to the ground like a dropped rag,' which changes the physical mechanics and imposes an uncharacteristic simile.",
+      "suggested_fix": "Restore 'Cindy's eyes rolled back in her head' as it is the specific physical detail that conveys the violence; the 'dropped rag' simile is a drafting invention that doesn't belong."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
       "source_passage": "A flash of red blinded my vision. I screamed and lunged at the closest asshole.",
-      "source_locator": "after Stephanie is yanked down",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'A flash of red blinded my vision' is a distinctive synesthetic rage-marker and 'closest asshole' is register-defining narrator voice; the draft replaces both with 'Heat flashed through me,' which is blander and loses the specific visual/linguistic signature.",
-      "suggested_fix": "Restore 'A flash of red blinded my vision' and 'closest asshole' to preserve the voice and physical specificity of the rage response."
+      "source_locator": "Miriam's attack after Stephanie falls",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source's 'I screamed and lunged' captures Miriam's impulsive rage; the draft omits the scream entirely ('I lunged shoulder-first'), softening the emotional intensity of her reaction.",
+      "suggested_fix": "Restore 'I screamed and lunged' to preserve the involuntary emotional outburst that characterizes Miriam's personality."
     },
     {
       "severity": "low",
       "class": "voice_flattening",
-      "source_passage": "Alex gave a war whoop and threw herself at the other henchman.",
-      "source_locator": "fight scene after Stephanie falls",
-      "draft_treatment": "flattened",
-      "why_it_matters": "'War whoop' is a lively characterizing detail for Alex that the draft reduces to 'Alex whooped,' which is close but slightly flattened.",
-      "suggested_fix": "Minor: restore 'gave a war whoop and threw herself' for full idiomatic flavor."
+      "source_passage": "A soft female voice spoke up. 'There is no problem.'",
+      "source_locator": "Final line of the chapter",
+      "draft_treatment": "paraphrased",
+      "why_it_matters": "The source ends on bare dialogue with minimal attribution—maximum tension. The draft adds 'calm as a blade sliding free,' an editorializing simile that intrudes on the cliffhanger effect and imposes interpretation on what should be purely mysterious.",
+      "suggested_fix": "Cut the added simile; end the chapter as the source does, on the spoken line alone."
     }
   ],
   "verdict": "pass",
-  "summary": "No high-severity signature losses; three medium findings reflect voice-flattening of narrator asides and staging beats that weaken the sardonic register but do not rise to regeneration threshold."
+  "summary": "No high-severity signature losses; three medium findings (opening voice register, the 'undead look' simile, and the piggish-snort comic beat) show consistent voice flattening that cumulatively dulls the narrator's wry register, but no single erasure rises to regeneration threshold."
 }

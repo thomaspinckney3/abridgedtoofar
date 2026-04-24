@@ -3,33 +3,51 @@
   "critic": "signature",
   "findings": [
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "These people were mad. There was no other explanation for their behavior. They believed they were in some fantasy land of lords and ladies with damsels in distress.",
-      "source_locator": "After the narrator pulls her sleeve down following the branding, before 'I had to get out'",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source gives the narrator's internal dismissal its full sarcastic shape across three short declarative sentences; the draft compresses this to a single hurried clause, losing the ironic rhythm of the original voice.",
-      "suggested_fix": "Restore the three-sentence structure: 'Mad. The whole place was mad' is a start but the third sentence—'They believed they were in some fantasy land of lords and ladies with damsels in distress'—should be kept intact or very close."
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "I didn't want to reveal any sort of escape plan I could devise, if my mind could devise one for me. At the moment, it was a little tired, and her suggestion of rest was a little too tempting.",
+      "source_locator": "paragraph after Darda lists escape obstacles, before she touches Miriam's shoulder",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This interiority establishes Miriam's self-aware, wry voice — she's not just exhausted, she's ironically acknowledging her own vulnerability. The draft collapses it to 'My shoulder ached; my mind swam with exhaustion—and temptation,' stripping the self-deprecating humor that defines her narrator voice throughout.",
+      "suggested_fix": "Restore the original phrasing or its close equivalent: 'I didn't want to reveal any escape plan I could devise, if my mind could devise one. At the moment it was a little tired, and her suggestion of rest was a little too tempting.' This keeps the ironic self-awareness intact."
     },
     {
-      "severity": "low",
+      "severity": "high",
+      "class": "interpretive_loss",
+      "source_passage": "These people were obviously mentally ill. Dragon lords and the Maidens? Medieval bullshit. The authorities would come and lock them in an insane asylum.",
+      "source_locator": "paragraph after Miriam decides on the sheet-rope plan, beginning 'I looked out the window'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "This passage is interpretively central: Miriam's flat refusal to accept the fantasy-world premise — her dismissal of it as psychiatric delusion — is the book's foundational tension between the mundane and the fantastical. The raw, irreverent register ('Medieval bullshit,' 'insane asylum') is voice-defining. The draft replaces it with vague gestures ('cosplay without the exits,' 'pointed toward sanity') that lose both the interpretive weight and the specific voice.",
+      "suggested_fix": "Restore the substance: Miriam's explicit framing of dragon lords and Maidens as mental illness, her plan to have the authorities come, and the 'medieval bullshit' register. The draft's substitute metaphors are too soft and lack the cynical punch of the original."
+    },
+    {
+      "severity": "high",
+      "class": "voice_erasure",
+      "source_passage": "I had to hurry lest this dragon lord show me off to his drunken friends... The inmates were celebrating their torment of six women.",
+      "source_locator": "paragraph after Miriam secures the rope, before she slips out the window",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Miriam's characterization of the household as 'inmates' and framing the feast as 'torment' and 'drunken friends' is voice-establishing irony — she's narrating a fantasy-world abduction entirely through a contemporary, sardonic lens. The draft substitutes 'celebration of our choosing' which is the castle's framing, not Miriam's, losing her oppositional narrative voice.",
+      "suggested_fix": "Restore Miriam's hostile interior framing: 'inmates celebrating their torment' and 'drunken friends' — language that encodes her refusal to accept the world's self-presentation and keeps her satirical voice intact."
+    },
+    {
+      "severity": "medium",
       "class": "voice_flattening",
-      "source_passage": "Dragon lords and the Maidens? Medieval bullshit. The authorities would come and lock them in an insane asylum.",
-      "source_locator": "Internal monologue paragraph after rope-making, before the escape plan",
+      "source_passage": "The problem would be when my much-wider body slid down.",
+      "source_locator": "paragraph describing lowering the rope between the window shutters",
       "draft_treatment": "absent",
-      "why_it_matters": "This blunt profane exclamation ('Medieval bullshit') is the sharpest register marker in the chapter—it establishes the narrator's contemptuous modern voice against the fantasy setting. Its absence flattens the voice.",
-      "suggested_fix": "Re-insert the exclamation and the insane-asylum conclusion verbatim or very close within the pre-escape internal monologue."
+      "why_it_matters": "This small self-deprecating aside is characteristic of Miriam's wry, practical humor — she's aware of the physical comedy of her situation. Its absence removes a voice beat that distinguishes the narrator's personality during the tense escape sequence.",
+      "suggested_fix": "Reinsert the aside after noting the rope fits between the shutters: 'The problem would be when my much-wider body slid down.'"
     },
     {
-      "severity": "low",
-      "class": "voice_flattening",
-      "source_passage": "I had to hurry lest this dragon lord show me off to his drunken friends.",
-      "source_locator": "Just before narrator slips over the window frame",
-      "draft_treatment": "paraphrased",
-      "why_it_matters": "The source line's wry characterisation of the celebrants as 'drunken friends' is a small but register-specific voice beat; the draft replaces it with a neutral phrase ('parade me'), losing the sardonic specificity.",
-      "suggested_fix": "Restore 'show me off to his drunken friends' or keep 'drunken' in any paraphrase."
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "They all celebrated their triumph of us and talked their insane talk about rival dragon clans.",
+      "source_locator": "final paragraph, after Miriam's feet touch ground",
+      "draft_treatment": "absent",
+      "why_it_matters": "This closing line of the chapter reinforces Miriam's interpretive frame — that the overheard war-news about dragon clans is 'insane talk,' not real — and it also closes the chapter on her voice, not on action. The draft ends on 'I ran for the dark line of trees,' which is purely kinetic and loses the ironic narratorial closure that gives the chapter its tone.",
+      "suggested_fix": "Add a closing beat in Miriam's voice that reasserts her disbelief in the world's premise before or as she runs, echoing the 'insane talk' framing of the original chapter ending."
     }
   ],
-  "verdict": "pass",
-  "summary": "No high- or medium-severity signature losses; three low-severity voice-flattening instances where the narrator's sardonic register is slightly dulled by compression, but all plot and interpretive content is preserved."
+  "verdict": "regenerate",
+  "summary": "The draft preserves plot mechanics but systematically erases Miriam's defining narrator voice — her sardonic self-awareness, her hostile refusal of the fantasy frame ('medieval bullshit,' 'inmates,' 'insane asylum'), and her wry physical self-deprecation — producing a competent summary that reads like a different, blander character telling the same events."
 }

@@ -1,0 +1,53 @@
+{
+  "segment_id": "022",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "He was still bewildered by the introduction of tragedy into his cheerful commonplace existence.",
+      "source_locator": "After 'Back at the Ritz, Tommy packed up his few belongings mechanically'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The source phrase 'his cheerful commonplace existence' is a deliberately ironic voice marker — Christie's narrator uses 'existence' (not 'life') to underline the bathos of adventure intruding on ordinariness; the draft substitutes 'cheerful commonplace life,' losing the precise diction.",
+      "suggested_fix": "Restore 'cheerful commonplace existence' verbatim rather than 'cheerful commonplace life.'"
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "That functionary, however, merely replied respectfully: 'Yes, sir. Shall I call a taxi?'",
+      "source_locator": "After Tommy says 'I'm going to the devil'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "Christie's identification of the servant as 'That functionary' is a light satirical register marker — the narrator's ironic distance from the scene. The draft omits the label entirely, cutting the voice beat that provides dry comic relief at an emotionally heavy moment.",
+      "suggested_fix": "Restore 'That functionary, however, merely replied respectfully' before the taxi line."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "'You were up against one of the biggest brains of the century. And you came very near success. Remember that.'",
+      "source_locator": "Mr. Carter's consolation speech to Tommy, after 'Don't take it to heart, lad'",
+      "draft_treatment": "absent",
+      "why_it_matters": "Mr. Carter's characterisation of Mr. Brown as 'one of the biggest brains of the century' carries interpretive weight — it is the novel's clearest authorial testimony to the villain's stature, and Tommy's near-success is the only mitigation he is offered. The draft omits this entirely, losing both the villain-framing and the emotional beat.",
+      "suggested_fix": "Restore Carter's full consolation: 'Don't take it to heart, lad… You were up against one of the biggest brains of the century. And you came very near success. Remember that.'"
+    },
+    {
+      "severity": "medium",
+      "class": "signature_loss",
+      "source_passage": "\"I've been the most almighty blithering darned idiot that it's possible to imagine.\"",
+      "source_locator": "Julius's speech after anger drops, before 'Calm down'",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The full self-deprecating phrase 'the most almighty blithering darned idiot that it's possible to imagine' is a stylistically distinctive piece of Julius's transatlantic voice — its extravagance is the point. The draft trims to 'the most almighty blithering idiot,' losing 'darned' and 'that it's possible to imagine,' which deflates the comic/self-aware register.",
+      "suggested_fix": "Restore verbatim: 'I've been the most almighty blithering darned idiot that it's possible to imagine.'"
+    },
+    {
+      "severity": "low",
+      "class": "voice_flattening",
+      "source_passage": "He came to himself with a start. 'I'm taking up your time, sir,' he said with an effort.",
+      "source_locator": "Tommy's departure from Carter's office",
+      "draft_treatment": "flattened",
+      "why_it_matters": "The stage direction 'Tommy came to himself with a start' signals the precise moment Tommy regathers self-control after his outburst; the draft drops it and moves straight to the dialogue, softening the psychological specificity Christie gives to the scene.",
+      "suggested_fix": "Restore 'Tommy came to himself with a start' before 'I'm taking up your time, sir.'"
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three medium-severity findings — the erasure of Carter's 'biggest brains of the century' consolation (interpretive weight on the villain), the truncation of Julius's self-deprecating speech (voice register), and the loss of Carter's 'Don't take it to heart, lad' beat — collectively trigger a regenerate verdict."
+}
