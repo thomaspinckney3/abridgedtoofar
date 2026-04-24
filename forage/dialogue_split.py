@@ -1,19 +1,24 @@
 """Post-hoc dialogue paragraph splitter.
 
-Under compression pressure the drafter (GPT-5) sometimes concatenates multiple
+Under compression pressure the drafter sometimes concatenates multiple
 dialogue turns into a single paragraph, losing the standard fiction convention
 that each new speaker's turn gets its own paragraph. This module detects such
-cases and splits them conservatively — only where a new speaker is clearly
-unambiguous.
+cases and splits them — but only where a new speaker is unambiguous.
 
-Split rules (within a single paragraph only):
+Split rule (within a single paragraph only):
 
-  A. Directly adjacent quoted turns — closing-terminal-quote + whitespace +
-     opening-quote, with nothing between. Always a speaker change.
+  Directly adjacent quoted turns — closing-terminal-quote + whitespace +
+  opening-quote, with nothing between. This pattern can only mean a speaker
+  change, so it's always safe to split.
 
-  B. Closing-terminal-quote + short attribution (<=120 chars, contains a
-     speaker verb like said/replied/asked, ends with terminal punctuation) +
-     opening-quote. Safe signal of speaker change.
+An earlier version of this module also had a Rule B that split on
+`"A." attribution. "B."` patterns where the attribution ended in a period.
+That rule over-split same-speaker continuations (e.g. Gatsby's *"We don't
+know each other very well, Nick," she said suddenly. "Even if we are
+cousins…"* — Daisy continuing in one paragraph, not two speakers), so it
+was removed. Same-speaker continuations with mid-attribution are
+linguistically ambiguous without reading context; leaving them alone is
+safer than breaking them.
 
 The splitter never breaks across paragraph boundaries (inputs are already
 split on blank lines).
@@ -29,35 +34,15 @@ CLOSE_Q = r"[\u201d\"]"
 OPEN_Q = r"[\u201c\"]"
 TERM_PUNCT = r"[.!?]"
 
-SPEAKER_VERBS = (
-    r"said|replied|answered|asked|whispered|murmured|added|continued|"
-    r"went\s+on|remarked|shouted|yelled|hissed|breathed|exclaimed|"
-    r"interrupted|muttered|laughed|cried|responded|protested|demanded|"
-    r"retorted|insisted|declared|agreed|admitted|confessed|sighed|"
-    r"grumbled|snapped|stammered|repeated|pressed|nodded|began|spoke|"
-    r"told\s+me|told\s+him|told\s+her|called|returned|put\s+in|"
-    r"observed|went\s+on|ventured|volunteered|mused|teased|conceded|"
-    r"reminded|suggested|pointed\s+out|objected"
-)
-
 # Rule A: closing-terminal-quote + whitespace + opening-quote.
 RULE_A = re.compile(
     rf"({TERM_PUNCT}{CLOSE_Q})(\s+)({OPEN_Q})"
 )
 
-# Rule B: closing-quote (comma or terminal punct) + short attribution
-# (contains a speaker verb, ends with terminal punct) + opening-quote.
-RULE_B = re.compile(
-    rf"([,{TERM_PUNCT[1:-1]}]{CLOSE_Q})"
-    rf"(\s+[^\u201c\u201d\"\n]{{1,120}}?\b(?:{SPEAKER_VERBS})\b[^\u201c\u201d\"\n]{{0,100}}?{TERM_PUNCT})"
-    rf"(\s+)({OPEN_Q})"
-)
-
 
 def split_dialogue_paragraphs(text: str) -> tuple[str, int]:
     """Return (modified_text, split_count). Only splits within paragraphs
-    (inputs already separated by blank lines). Conservative — see module
-    docstring."""
+    (inputs already separated by blank lines). See module docstring."""
     paragraphs = re.split(r"\n\s*\n", text)
     total_splits = 0
     new_paragraphs: list[str] = []
@@ -66,11 +51,7 @@ def split_dialogue_paragraphs(text: str) -> tuple[str, int]:
         if not para.strip():
             continue
         original = para
-        # Apply Rule B first (longer patterns) then Rule A.
-        # Rule B: insert break before the opening quote; keep attribution
-        # with the preceding quote.
-        para = RULE_B.sub(lambda m: f"{m.group(1)}{m.group(2)}\n\n{m.group(4)}", para)
-        # Rule A: insert break between adjacent quotes.
+        # Rule A: insert break between directly adjacent quotes.
         para = RULE_A.sub(lambda m: f"{m.group(1)}\n\n{m.group(3)}", para)
         if para != original:
             total_splits += para.count("\n\n") - original.count("\n\n")
