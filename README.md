@@ -17,12 +17,14 @@ A reader who loves the original should feel the abridgment is the same book, sho
 ## Pipeline stages
 
 ```
-split → classify → plan → summarize ──────────────────────────────────┐
-                    │                                                 │
-                    ▼                                                 ▼
-                   draft → critique → iterate → assemble → validate   │
-                                                    │                 │
-                                                    └──► book-critique (uses synopsis)
+split → classify → plan → summarize → cuts ──┐
+                                              │
+                      (cuts.json feeds into  ▼ drafter + signature and coherence critics)
+                     
+                   draft → critique → iterate → assemble → coherence → validate
+                                                                │
+                                                                └──► book-critique
+                                                                └──► proofread (post-hoc)
 ```
 
 Every stage has a CLI subcommand. All stages operate on files under `work/<book_id>/`, so they're inspectable and rerunnable.
@@ -68,37 +70,61 @@ For longer books, the summarizer does chunked chaining: split diegetic source at
 
 Runs once per book; cached. Independent of the drafting stage — can be generated before any chapter drafts exist.
 
-### 5. `draft` — GPT-5 drafter (spec-as-prompt)
+### 5. `cuts` — removable-material inventory
+
+One LLM call per book (GPT-5, ~$1–2). Using the 15-sentence synopsis as the authoritative shape of the book, the prepass identifies three categories of material a careful abridger could remove without materially changing the reader's sense of plot, themes, or principal-character arcs:
+
+- **minor_characters** — named figures whose removal wouldn't affect major arcs (party guests, one-scene hosts, background functionaries)
+- **subplots** — self-contained or thematically parallel side narratives not structurally necessary
+- **digressions** — essayistic, taxonomic, technical, or descriptive passages that don't advance plot
+
+Each entry requires a one-sentence `reason_removable`. The prompt has an explicit "bias toward preservation" rule — a short, confident inventory is more useful than an inflated list.
+
+Writes `work/<book>/cuts.json`. Consumed by:
+- the drafter prompt (explicit "prefer cutting these" block)
+- the signature critic prompt (authorized removals — don't flag their absence as voice_erasure)
+- the coherence critic prompt (residual seams from authorized cuts are expected, not findings)
+- the regen prompt in iterate (cuts override critic findings when they collide — the drafter may still restore *severable* non-cut voice tics that lived inside a cut scene)
+
+Gatsby example output: 16 minor characters (Owl Eyes, Klipspringer, Catherine, etc.), 9 subplots (Pammy's cameo, Jordan's golf-cheat flashback, Michaelis's overnight vigil), 7 digressions (the Ch 4 guest-list "timetable," Wolfshiem's Metropole reminiscence, Nick's Midwestern homecoming reverie).
+
+### 6. `draft` — GPT-5 drafter (spec-as-prompt)
 
 Default model: `openai:gpt-5` (routable via `FORAGE_DRAFT_MODEL`).
 
-The drafter prompt (`prompts/draft_lean.md`) is the abridgment spec + chapter source. The model reads the spec and writes the chapter; no per-chapter signature enumeration, no tier scaffolding. Output goes to `work/<book>/segments/<NNN>.md`.
+The drafter prompt (`prompts/draft_lean.md`) is the abridgment spec + chapter source + (if present) the cuts inventory. The model reads the spec and writes the chapter; no per-chapter signature enumeration, no tier scaffolding. Output goes to `work/<book>/segments/<NNN>.md`.
+
+The system prompt instructs the drafter to preserve standard fiction paragraph conventions — each new speaker's dialogue turn goes in its own paragraph. (A post-hoc `forage.dialogue_split` tool also fixes older drafts that concatenated dialogue under compression pressure.)
 
 **Merge-group initial drafting**: when `draft` is called for a segment that belongs to a merged group, it renders a multi-source prompt covering all group members, calls the LLM once, and splits the output (`## Chapter N` delimited) back into per-member `.md` files. Non-first members of a group are read from disk; no redundant LLM calls.
 
 **Fallback**: if OpenAI returns `stop_reason=content_filter` (which hits on classical-lit triggers like Moby Dick's "pistol and ball"), the drafter transparently retries on Anthropic (`FORAGE_DRAFT_FALLBACK_MODEL`, default Sonnet). The [llm] log line shows the provider switch.
 
-### 6. `critique` — adversarial signature critic
+### 7. `critique` — adversarial signature critic
 
 Default model: `anthropic:claude-sonnet-4-6` (routable via `FORAGE_CRITIC_MODEL`).
 
 Prompt: `prompts/critic_signature.md`. Hunts for voice-establishing prose, culturally famous passages, and interpretively load-bearing moments that are **absent, paraphrased, or flattened** in the draft. Emits a JSON findings list with severity (high/medium/low) and per-finding fields: `source_passage`, `draft_treatment`, `why_it_matters`, `suggested_fix`.
 
-### 7. `iterate` — draft → critique → regenerate loop
+If `cuts.json` exists the prompt includes the authorized-removals block — the critic is instructed not to flag absences of material on that list as voice_erasure. Non-cut material off the list is still fair game.
 
-Runs the critic on a draft, computes a verdict from the findings (any high OR ≥2 mediums → regenerate), and hands the **high+medium findings only** to the drafter's regen prompt (low dropped). The regen block asks for a roughly budget-neutral revision: for every restored passage, tighten lower-priority material (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) of equivalent length — don't just add.
+### 8. `iterate` — draft → critique → regenerate loop
+
+Runs the critic on a draft, computes a verdict from the findings (any high OR ≥3 mediums → regenerate), and hands the **high+medium findings only** to the drafter's regen prompt (low dropped). The regen block asks for a roughly budget-neutral revision: for every restored passage, tighten lower-priority material (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) of equivalent length — don't just add.
+
+The regen prompt also includes the cuts-override clause: if a critic finding asks the drafter to restore material that lives inside an authorized-cut scene, the drafter skips it. The critic *may* still surface useful complaints about severable material *adjacent* to a cut (a pivot sentence, a signature phrase not tied to the cut scene) — the drafter uses judgment.
 
 Per-iteration snapshots preserved: `NNN.iter0.md`, `NNN.iter1.md`, …, `NNN.critic_signature.json`, `NNN.iter1.critic.json`, …
 
-Default `--max-retries` is **2**.
+Default `--max-retries` is **1** (so the loop runs at most: critic → maybe redraft, no verification critic after the final redraft — that final critic was always discarded).
 
-### 8. `assemble` — assembly with budget report
+### 9. `assemble` — assembly with budget report
 
 Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md` and writes `work/<book>/assembly_report.json` with budget stats: book target, ceiling, total drafted, overage (words and %), over_target/over_ceiling flags, and segments drafted/cut/missing.
 
 Always emits `abridgment.md` when any drafted content exists. Budget adherence is reported, not gated — downstream stages (`book-critique`, `validate`) decide whether the produced abridgment is acceptable.
 
-### 9. `coherence` — structural damage critic
+### 10. `coherence` — structural damage critic
 
 One Sonnet call per adjacent chapter pair (~$0.02 each). Walks the drafted diegetic chapters pairwise and flags places where compression *structurally damaged* meaning — not places where the draft is merely less richly phrased than source.
 
@@ -110,11 +136,13 @@ Strict gate — only flags:
 - Unattributed dialogue (reply without trigger question, speaker elided)
 - Mid-scene jumps (chapter opens with "the waif-pole" etc. that prior draft didn't establish)
 
-Empirical numbers from Moby Dick + Dragon Maiden: ~100% precision, ~55% recall on dense-callback regions. Genre-stable (doesn't over-fire on modern prose).
+If `cuts.json` exists the prompt includes the authorized-removals block — residual seams left by authorized cuts (a dangling reference to a character who was cut, a stranded spatial reference to a removed scene) are expected and NOT findings. Only continuity breaks in material that should have survived get flagged.
 
-Writes `work/<book>/coherence_report.json`. Intended for human review — does NOT auto-feed regen. Budget-neutral regen can propagate micro-damage from every finding (even true ones) via compensating cuts elsewhere, so coherence findings deserve a review step before acting on them.
+Empirical numbers from the three books drafted with the cuts-aware pipeline: Dragon Maiden 0 findings / 15 pairs, Christie's *Secret Adversary* 12 findings / 28 pairs, Gatsby 11 findings / 8 pairs. Gatsby's higher hit rate reflects Fitzgerald's more allusive prose — some flagged items are genuine dialogue-turn drops, others are residues even the cuts-aware prompt doesn't fully suppress.
 
-### 10. `book-critique` — per-synopsis-sentence verification
+Writes `work/<book>/coherence_report.json`. Intended for human review — does NOT auto-feed regen. The post-assembly full-pipeline driver runs coherence automatically.
+
+### 11. `book-critique` — per-synopsis-sentence verification
 
 One LLM call on Sonnet (~$0.05). For each sentence in `book_synopsis.md`, checks whether the assembled abridgment contains evidence of that plot claim. Each sentence is classified:
 
@@ -126,13 +154,27 @@ Verdict: `ship` if all sentences are present, `hold` otherwise. Reads `abridgmen
 
 Writes `work/<book>/book_critic.json`.
 
-### 11. `rebudget` (optional) — book-level reallocation
+### 12. `rebudget` (optional) — book-level reallocation
 
 Reallocates per-segment targets if the assembled total is wildly off book_target.
 
-### 12. `validate` — mechanical sanity checks
+### 13. `validate` — mechanical sanity checks
 
 Zero-LLM. Motif concordance, style distribution (sentence length, em-dash frequency, vocab richness), signature fuzzy-match coverage. Flags depleted motifs and style divergence from source.
+
+### 14. `proofread` — paragraph-level alignment viewer
+
+One Sonnet call per chapter (~$0.15 each). For each chapter, aligns draft paragraphs back to their source paragraphs and classifies each as `verbatim`, `paraphrased`, `compressed`, or `unsupported`. Renders a self-contained HTML file at `work/<book>/proofread.html`:
+
+- Color-coded blocks per classification
+- Stacked draft ↔ source view for compressed pairs
+- Inline word-level diff (using Python's `difflib`) for close pairs where a paragraph-scale edit isn't happening
+- Collapsible "source paragraphs not mapped to any draft" section per chapter showing cut material
+- `unsupported` flags likely drift / fabrication / cross-chapter movement
+
+Alignments cache to `work/<book>/alignments/NNN.json` — re-running resumes from where it stopped. The `--render-only` flag skips LLM calls and re-renders HTML from existing alignments.
+
+Empirical: across Gatsby + Dragon Maiden + Secret Adversary, 0.2–1% of aligned paragraphs are marked `unsupported`, and after inspection most unsupported cases are chapter-title headings or drafter-added bridging sentences — zero genuine plot/character fabrications.
 
 ## Legacy LLM stages (optional)
 
@@ -162,7 +204,9 @@ FORAGE_DRAFT_MODEL=openai:gpt-5
 FORAGE_REGEN_MODEL=openai:gpt-5
 FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-4-6
 
-# Optional: memoize every LLM response to work/.replay_cache/<hash>.json
+# Memoize every LLM response to work/.replay_cache/<hash>.json so reruns
+# hit the cache instead of spending. The cache is committed to the repo so
+# collaborators inherit the cached responses for the books already processed.
 FORAGE_REPLAY=1
 ```
 
@@ -201,15 +245,17 @@ forage split <book>                 # chapter split, zero-LLM
 forage classify <book>              # LLM classifier (auto-invoked by plan)
 forage plan <book>                  # deterministic plan + merge groups
 forage summarize <book>             # 15-sentence synopsis (chunked if needed)
+forage cuts <book>                  # removable-material prepass (needs synopsis)
 forage show <book>                  # print current plan
-forage draft <book>                 # draft all diegetic segments
+forage draft <book>                 # draft all diegetic segments (uses cuts.json if present)
 forage draft <book> --segment 001   # draft just one
 forage critique <book> 001          # run signature critic on one chapter
-forage iterate <book> 001           # draft → critic → regen loop (default 2 regens)
-forage assemble <book>              # concat + fail-loud budget gate
+forage iterate <book> 001           # draft → critic → regen loop (default 1 regen)
+forage assemble <book>              # concat + budget report (no fail-loud gate)
 forage coherence <book>             # structural damage critic (adjacent-chapter pairs)
 forage book-critique <book>         # synopsis-grounded per-sentence verification
 forage validate <book>              # motif + style + signature checks
+forage proofread <book>             # paragraph-level alignment viewer → proofread.html
 forage report [<book>]              # standard results row (all books if no arg)
 ```
 
@@ -233,20 +279,25 @@ Zero LLM cost to run. Re-run any time to refresh from the on-disk artifacts.
 ```bash
 forage split gatsby
 forage summarize gatsby             # one-time, produces book_synopsis.md
+forage cuts gatsby                  # one-time, produces cuts.json
 forage plan gatsby                  # auto-runs classify on first call
 for chapter in 001 002 003 ... ; do
-  forage iterate gatsby $chapter    # drafts + critiques + regens
+  forage iterate gatsby $chapter    # drafts + critiques + regens (cuts-aware)
 done
 forage assemble gatsby              # produces abridgment.md
+forage coherence gatsby             # structural damage critic (post-hoc)
 forage book-critique gatsby         # verifies abridgment against synopsis
 forage validate gatsby              # mechanical sanity checks
+forage proofread gatsby             # paragraph-level alignment viewer
 ```
 
-Or use the `scripts/full_pipeline.py` driver to run all diegetic chapters end-to-end:
+Or use the `scripts/full_pipeline.py` driver to run iterate across all diegetic chapters, then assemble + coherence + book-critique:
 
 ```bash
 .venv/bin/python -m scripts.full_pipeline gatsby
 ```
+
+(The full-pipeline script assumes `split`, `summarize`, and `cuts` have already been run; those are book-level one-time prereqs.)
 
 ## Directory structure
 
@@ -261,26 +312,32 @@ forage/
     chapter_classifier.py          # LLM classifier (diegetic vs not)
     summarizer.py                  # 15-sentence synopsis, chunked chaining
     drafter.py                     # drafter + merge-group draft + fallback
+    cuts.py                        # removable-material prepass
     critics.py                     # signature critic
     coherence.py                   # structural coherence critic
     book_critic.py                 # synopsis-vs-abridgment verifier
     iterate.py                     # draft/critique/regen loop
-    assemble.py                    # concatenation + fail-loud gate
+    assemble.py                    # concatenation + budget report
     rebudget.py                    # book-level target reallocation
     validate.py                    # mechanical sanity checks
+    align.py                       # per-chapter draft↔source paragraph alignment
+    proofread.py                   # HTML renderer for alignments
+    dialogue_split.py              # post-hoc dialogue paragraph splitter
     llm.py                         # provider-agnostic LLM client + routing
     prompts.py                     # prompt template loader
     json_parse.py                  # robust LLM-JSON parsing
     motif_ledger.py                # running motif state across segments
     cli.py                         # typer CLI
   prompts/                         # Jinja2 + YAML-frontmatter prompts
-    draft_lean.md                  # spec-as-prompt drafter (lean)
-    critic_signature.md            # adversarial signature critic
-    critic_coherence.md            # structural damage critic (adjacent pairs)
+    draft_lean.md                  # spec-as-prompt drafter (lean, cuts-aware)
+    critic_signature.md            # adversarial signature critic (cuts-aware)
+    critic_coherence.md            # structural damage critic (cuts-aware)
     critic_book.md                 # synopsis-vs-abridgment verifier
     classify_chapters.md           # chapter classifier
     summarize_synopsis.md          # single-call / partial synopsis
     summarize_merge.md             # merge N partial synopses into one
+    prepass_cuts.md                # removable-material prepass
+    align.md                       # paragraph-level draft↔source alignment
     draft_segment.md               # legacy tier-based drafter
     prepass.md                     # legacy LLM plan builder
     prime.md                       # legacy example-signature seed
@@ -290,11 +347,13 @@ forage/
     lean_iterate_first_n.py        # multi-book sweep: first N chapters each
   spec/
     ABRIDGMENT_SPEC.md             # canonical design doc (also fed to drafter)
-  books/                           # source inputs
+  books/                           # source inputs + published deliverables
     <book>/
       <book>.txt | <book>.epub     # source
       metadata.json                # {title, author, genre}
       split_config.json            # optional per-book splitter override
+      abridgment.md                # (published) assembled abridgment
+      proofread.html               # (published) alignment viewer
   work/                            # generated output
     <book>/
       chapters.json                # structural manifest
@@ -302,18 +361,22 @@ forage/
       chapter_classifications.json # LLM verdicts per candidate
       plan.json                    # lean plan with targets + merge groups
       book_synopsis.md             # 15-sentence ground-truth synopsis
+      cuts.json                    # removable-material inventory
       segments/
         NNN.md                     # final draft (latest iteration)
         NNN.iterK.md               # per-iteration snapshots
         NNN.critic_signature.json  # latest chapter critic findings
         NNN.iterK.critic.json      # per-iteration critic snapshots
         gNNN.md                    # merged-group raw output (before split)
+      alignments/NNN.json          # per-chapter paragraph alignments (for proofread)
       abridgment.md                # assembled final output
       assembly_report.json         # budget stats, overage, segment tallies
       book_critic.json             # per-synopsis-sentence verdicts
       coherence_report.json        # structural coherence findings
+      proofread.html               # self-contained alignment viewer
       llm_calls.jsonl              # every LLM call this book issued
-    .replay_cache/                 # memoized LLM responses (FORAGE_REPLAY=1)
+    .replay_cache/                 # memoized LLM responses — tracked in git so
+                                   # collaborators get deterministic replay
   CLAUDE.md                        # project rules for Claude Code
   pyproject.toml
 ```
