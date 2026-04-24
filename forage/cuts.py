@@ -5,9 +5,12 @@ without materially changing the reader's sense of plot, theme, or
 principal-character arcs. Inverse framing of the older signature-prepass
 which tried to enumerate what to preserve.
 
-One LLM call per book (GPT-5 when source fits context; raises for books
-that don't — chunking is not yet supported for cuts because merging
-cuts-inventories across chunks is non-trivial).
+For books that fit GPT-5's input context, a single LLM call produces the
+inventory. For longer books, the source is split into N chunks at chapter
+boundaries, each chunk is sent with the same authoritative synopsis, and
+the partial inventories are merged deterministically by deduplicating
+named entries (characters by name, subplots by name, digressions by
+chapter_id+topic).
 
 Writes work/<book>/cuts.json. Not auto-fed to the drafter in this round —
 human review first.
@@ -16,6 +19,7 @@ human review first.
 from __future__ import annotations
 
 import json
+import math
 import re
 from pathlib import Path
 
@@ -26,7 +30,9 @@ from .prompts import load_prompt
 TOKENS_PER_WORD = 1.4
 MAX_INPUT_TOKENS = 260_000
 PROMPT_OVERHEAD_TOKENS = 2000  # spec + synopsis + instructions
-MAX_SOURCE_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
+MAX_CHUNK_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
+# Back-compat alias (older code may import MAX_SOURCE_WORDS).
+MAX_SOURCE_WORDS = MAX_CHUNK_WORDS
 
 _FENCE_RE = re.compile(r"^```(?:json)?\s*(.*?)\s*```$", re.DOTALL)
 
@@ -52,10 +58,10 @@ def _parse_json_object(text: str) -> dict:
     return result
 
 
-def generate_cuts(book: Book) -> dict:
-    """Enumerate minor characters, subplots, and digressions that can be
-    cut from `book`. Writes work/<book>/cuts.json.
-    """
+def _build_chapter_blocks(book: Book) -> list[tuple[str, int]]:
+    """Return a list of (block_text, word_count) for each diegetic chapter,
+    in plan order. Each block is the chapter's source prose with a
+    `## Chapter NNN — title` header."""
     manifest_path = book.work_dir / "chapters.json"
     if not manifest_path.exists():
         raise FileNotFoundError(
@@ -63,13 +69,10 @@ def generate_cuts(book: Book) -> dict:
     manifest = read_json(manifest_path)
     chapters = manifest.get("chapters", [])
 
-    # Filter by classifier if present — digressions identification only
-    # makes sense over diegetic content.
     cls_path = book.work_dir / "chapter_classifications.json"
     classifications = read_json(cls_path) if cls_path.exists() else {}
 
-    blocks: list[str] = []
-    total_words = 0
+    blocks: list[tuple[str, int]] = []
     for c in chapters:
         status = classifications.get(c["id"], {}).get("status", "diegetic")
         if status in ("extradiegetic", "toc_fragment"):
@@ -81,45 +84,122 @@ def generate_cuts(book: Book) -> dict:
         title = c.get("title", "")
         header = (f"## Chapter {c['id']} — {title}"
                   if title else f"## Chapter {c['id']}")
-        blocks.append(f"{header}\n\n{text}")
-        total_words += len(text.split())
+        block = f"{header}\n\n{text}"
+        blocks.append((block, len(text.split())))
+    return blocks
 
-    if not blocks:
-        raise RuntimeError(f"no diegetic chapters found for {book.book_id}")
 
-    if total_words > MAX_SOURCE_WORDS:
-        raise RuntimeError(
-            f"book source ({total_words}w) exceeds single-call budget "
-            f"(~{MAX_SOURCE_WORDS}w). Chunked cuts inventory not yet "
-            f"supported; use Opus via FORAGE_CUTS_MODEL=anthropic:... "
-            f"or wait for a chunked implementation."
-        )
+def _partition_into_chunks(blocks: list[tuple[str, int]],
+                            max_words: int) -> list[list[tuple[str, int]]]:
+    """Partition chapter blocks into N contiguous chunks, each <= max_words.
+    Falls back to a single chunk when blocks fit."""
+    total = sum(w for _, w in blocks)
+    if total <= max_words:
+        return [blocks]
+    # Balance chunk sizes: use ceil(total / max_words) chunks.
+    n_chunks = max(2, math.ceil(total / max_words))
+    target = total / n_chunks
+    chunks: list[list[tuple[str, int]]] = []
+    current: list[tuple[str, int]] = []
+    current_words = 0
+    for block, w in blocks:
+        # If adding this block would push well past target AND we already have
+        # content, close the chunk. Still allow overshoot if target is tiny
+        # relative to a single block.
+        if current and current_words + w > max_words:
+            chunks.append(current)
+            current = []
+            current_words = 0
+        current.append((block, w))
+        current_words += w
+    if current:
+        chunks.append(current)
+    return chunks
 
-    synopsis_path = book.work_dir / "book_synopsis.md"
-    synopsis = synopsis_path.read_text().strip() if synopsis_path.exists() else ""
 
+def _call_cuts_prepass(book: Book, chunk_blocks: list[tuple[str, int]],
+                        synopsis: str, stage: str) -> dict:
+    """Issue one LLM call for a chunk of chapters; return parsed JSON object."""
     prompt = load_prompt("prepass_cuts")
     rendered = prompt.render(
         book={"title": book.metadata.get("title", book.book_id),
               "author": book.metadata.get("author", "?")},
         synopsis=synopsis,
-        source="\n\n".join(blocks),
+        source="\n\n".join(b for b, _ in chunk_blocks),
     )
-
     resp = complete(
         prompt=rendered,
         model=prompt.config.get("model", "openai:gpt-5"),
         max_tokens=prompt.config.get("max_tokens", 12000),
         cache=False,
         work_dir=book.work_dir,
-        stage=f"cuts:{book.book_id}",
+        stage=stage,
     )
-
     data = _parse_json_object(resp.text)
-
-    # Normalize: ensure the three expected keys exist.
     for key in ("minor_characters", "subplots", "digressions"):
         data.setdefault(key, [])
+    return data
+
+
+def _merge_cuts(partials: list[dict]) -> dict:
+    """Deterministically merge N partial cuts inventories:
+    - minor_characters: dedup by lowercase name; keep the first-seen entry.
+    - subplots: dedup by lowercase name; keep the first-seen entry.
+    - digressions: dedup by (sorted chapter_ids, topic.lower()) tuple.
+    """
+    seen_chars: set[str] = set()
+    seen_subplots: set[str] = set()
+    seen_digressions: set[tuple] = set()
+    merged = {"minor_characters": [], "subplots": [], "digressions": []}
+    for p in partials:
+        for c in p.get("minor_characters", []) or []:
+            key = str(c.get("name", "")).strip().lower()
+            if not key or key in seen_chars:
+                continue
+            seen_chars.add(key)
+            merged["minor_characters"].append(c)
+        for s in p.get("subplots", []) or []:
+            key = str(s.get("name", "")).strip().lower()
+            if not key or key in seen_subplots:
+                continue
+            seen_subplots.add(key)
+            merged["subplots"].append(s)
+        for d in p.get("digressions", []) or []:
+            ch_ids = tuple(sorted(str(x) for x in (d.get("chapter_ids") or [])))
+            topic = str(d.get("topic", "")).strip().lower()
+            key = (ch_ids, topic)
+            if not topic or key in seen_digressions:
+                continue
+            seen_digressions.add(key)
+            merged["digressions"].append(d)
+    return merged
+
+
+def generate_cuts(book: Book) -> dict:
+    """Enumerate minor characters, subplots, and digressions that can be
+    cut from `book`. For books over the single-call budget, splits into
+    chunks at chapter boundaries and merges partial inventories. Writes
+    work/<book>/cuts.json.
+    """
+    blocks = _build_chapter_blocks(book)
+    if not blocks:
+        raise RuntimeError(f"no diegetic chapters found for {book.book_id}")
+
+    synopsis_path = book.work_dir / "book_synopsis.md"
+    synopsis = synopsis_path.read_text().strip() if synopsis_path.exists() else ""
+
+    chunks = _partition_into_chunks(blocks, MAX_CHUNK_WORDS)
+    if len(chunks) == 1:
+        data = _call_cuts_prepass(book, chunks[0], synopsis,
+                                   stage=f"cuts:{book.book_id}")
+    else:
+        partials: list[dict] = []
+        for i, chunk in enumerate(chunks, 1):
+            partial = _call_cuts_prepass(
+                book, chunk, synopsis,
+                stage=f"cuts:{book.book_id}:part{i}")
+            partials.append(partial)
+        data = _merge_cuts(partials)
 
     out_path = book.work_dir / "cuts.json"
     write_json(out_path, data)
