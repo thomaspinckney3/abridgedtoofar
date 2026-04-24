@@ -65,19 +65,19 @@ Zero-LLM itself; auto-invokes `classify` if `chapter_classifications.json` is mi
 - **Merge groups**: adjacent short chapters (per-chapter target < 1500w) get bundled into super-segments up to 2000w combined target. On books with many short chapters (Moby Dick, Bleak House) this lets GPT-5 find real compression instead of hitting its natural 1.2× floor on short inputs.
 - Extradiegetic and toc_fragment entries marked `target_word_count=0`, cut at draft time.
 
-### 4. `summarize` — 15-sentence book synopsis
+### 4. `summarize` — ~30-sentence prose book synopsis
 
-One (or a few) LLM calls per book. Produces a 15-sentence plot synopsis used as ground truth by the book-level critic.
+One (or a few) LLM calls per book. Produces a flowing-prose plot synopsis (~30 sentences, paragraph-structured) used as ground truth by the book-level critic and the cuts prepass. Earlier versions produced 15 sentence-per-line bullets; the prose format gives the downstream stages a more complete, naturalistic shape to hold to.
 
 For books that fit GPT-5's ~272k input context (everything up to ~178k source words, ~13 of our 16 books), a single call writes `work/<book>/book_synopsis.md`.
 
-For longer books, the summarizer does chunked chaining: split diegetic source at chapter boundaries into N roughly-equal chunks, produce a partial synopsis per chunk, merge into one 15-sentence whole-book synopsis. N=2 for Moby Dick / Little Women / Education / Bleak House; N=3 for Don Quixote.
+For longer books, the summarizer does chunked chaining: split diegetic source at chapter boundaries into N roughly-equal chunks, produce a partial synopsis per chunk, merge into one ~30-sentence prose whole-book synopsis. N=2 for Moby Dick / Little Women / Education / Bleak House; N=3 for Don Quixote.
 
 Runs once per book; cached. Independent of the drafting stage — can be generated before any chapter drafts exist.
 
 ### 5. `cuts` — removable-material inventory
 
-One LLM call per book (GPT-5, ~$1–2). Using the 15-sentence synopsis as the authoritative shape of the book, the prepass identifies three categories of material a careful abridger could remove without materially changing the reader's sense of plot, themes, or principal-character arcs:
+One LLM call per book (GPT-5, ~$1–2). Using the ~30-sentence prose synopsis as the authoritative shape of the book, the prepass identifies three categories of material a careful abridger could remove without materially changing the reader's sense of plot, themes, or principal-character arcs:
 
 - **minor_characters** — named figures whose removal wouldn't affect major arcs (party guests, one-scene hosts, background functionaries)
 - **subplots** — self-contained or thematically parallel side narratives not structurally necessary
@@ -251,7 +251,7 @@ forage -h                           # help (also --help)
 forage split <book>                 # chapter split, zero-LLM
 forage classify <book>              # LLM classifier (auto-invoked by plan)
 forage plan <book>                  # deterministic plan + merge groups
-forage summarize <book>             # 15-sentence synopsis (chunked if needed)
+forage summarize <book>             # ~30-sentence prose synopsis (chunked if needed)
 forage cuts <book>                  # removable-material prepass (needs synopsis)
 forage show <book>                  # print current plan
 forage draft <book>                 # draft all diegetic segments (uses cuts.json if present)
@@ -321,7 +321,7 @@ forage/
     compression.py                 # book-level target formula
     lean_plan.py                   # plan builder + merge-group assignment
     chapter_classifier.py          # LLM classifier (diegetic vs not)
-    summarizer.py                  # 15-sentence synopsis, chunked chaining
+    summarizer.py                  # ~30-sentence prose synopsis, chunked chaining
     drafter.py                     # drafter + merge-group draft + fallback
     cuts.py                        # removable-material prepass
     critics.py                     # signature critic
@@ -371,7 +371,7 @@ forage/
       chapters/NNN.md              # split chapter sources
       chapter_classifications.json # LLM verdicts per candidate
       plan.json                    # lean plan with targets + merge groups
-      book_synopsis.md             # 15-sentence ground-truth synopsis
+      book_synopsis.md             # ~30-sentence prose ground-truth synopsis
       cuts.json                    # removable-material inventory
       segments/
         NNN.md                     # final draft (latest iteration)

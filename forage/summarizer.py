@@ -1,10 +1,10 @@
-"""Book synopsis stage: produce a 15-sentence plot synopsis used as
+"""Book synopsis stage: produce a prose synopsis (~30 sentences) used as
 ground truth by the book-level critic.
 
 Chunked chaining for books that exceed the drafter model's input context:
 split diegetic source at chapter boundaries into N roughly equal chunks,
-produce a partial synopsis per chunk, then merge into one 15-sentence
-synopsis of the whole book.
+produce a partial synopsis per chunk, then merge into one prose synopsis
+of the whole book.
 """
 
 from __future__ import annotations
@@ -20,12 +20,12 @@ TOKENS_PER_WORD = 1.4  # empirical for English prose on OpenAI tokenizers
 MAX_INPUT_TOKENS = 260_000  # conservative headroom under GPT-5's 272k limit
 PROMPT_OVERHEAD_TOKENS = 500
 MAX_CHUNK_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
-TARGET_SENTENCES = 15
+TARGET_SENTENCES = 30
 
 
 def summarize_book(book: Book) -> str:
-    """Produce a 15-sentence plot synopsis of `book`. Writes the result to
-    `work/<book>/book_synopsis.md` and returns the text.
+    """Produce a ~30-sentence prose plot synopsis of `book`. Writes the result
+    to `work/<book>/book_synopsis.md` and returns the text.
     """
     manifest_path = book.work_dir / "chapters.json"
     if not manifest_path.exists():

@@ -62,25 +62,32 @@ def _read_abridgment(book: Book) -> tuple[str, bool]:
 def _split_synopsis_sentences(text: str) -> list[str]:
     """Parse the synopsis into individual sentences.
 
-    Handles both formats the summarizer produces:
-      - one sentence per line (from the merge step of chunked synopses)
-      - one paragraph of prose (from single-call whole-book summaries)
+    Handles three formats the summarizer may produce:
+      - multi-paragraph prose (current default): paragraph breaks + sentences
+      - one sentence per line (legacy bullet-like format)
+      - single paragraph of prose (single-call fallback)
 
+    Heuristic: if most non-empty lines end with terminal punctuation AND are
+    short (≤200 chars), treat each line as its own sentence (legacy format).
+    Otherwise collapse to one string and split on sentence boundaries.
     Leading numeric prefixes like "1. " are stripped.
     """
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-    if len(lines) > 1:
-        # Sentence-per-line format.
-        return [re.sub(r"^\d+\.\s*", "", ln) for ln in lines]
     if not lines:
         return []
-    # Paragraph format — split on sentence boundaries. The lookbehind for
-    # terminal punctuation + lookahead for a capital / opening quote
-    # tolerates ". She" and '." The' without over-splitting on abbreviations
-    # like "Dr. Smith" (which would need a capital after the space — true —
-    # but abbreviations in prose synopses are rare enough that this is
-    # acceptably accurate).
-    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201C])', lines[0])
+    # Legacy bullet detection: every line ends with terminal punct and is
+    # short. Rare in practice with the new prose prompt, but we preserve the
+    # path for old synopsis files.
+    short_terminal = sum(1 for ln in lines
+                         if len(ln) <= 200 and re.search(r"[.!?][\"\u201d]?$", ln))
+    if len(lines) > 1 and short_terminal == len(lines):
+        return [re.sub(r"^\d+\.\s*", "", ln) for ln in lines]
+    # Prose format — collapse paragraph breaks and split on sentence
+    # boundaries. The lookbehind for terminal punctuation + lookahead for a
+    # capital / opening quote tolerates ". She" and '." The' without
+    # over-splitting on abbreviations like "Dr. Smith".
+    collapsed = " ".join(lines)
+    sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z"\u201C])', collapsed)
     return [re.sub(r"^\d+\.\s*", "", s).strip() for s in sentences if s.strip()]
 
 
