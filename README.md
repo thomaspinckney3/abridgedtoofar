@@ -88,9 +88,9 @@ Writes `work/<book>/cuts.json`. Consumed by:
 
 Gatsby example output: 16 minor characters (Owl Eyes, Klipspringer, Catherine, etc.), 9 subplots (Pammy's cameo, Jordan's golf-cheat flashback, Michaelis's overnight vigil), 7 digressions (the Ch 4 guest-list "timetable," Wolfshiem's Metropole reminiscence, Nick's Midwestern homecoming reverie).
 
-### 6. `draft` — GPT-5 drafter (spec-as-prompt)
+### 6. `draft` — Opus drafter (spec-as-prompt)
 
-Default model: `openai:gpt-5` (routable via `FORAGE_DRAFT_MODEL`).
+Default model: `anthropic:claude-opus-4-7` (routable via `FORAGE_DRAFT_MODEL`). The drafter auto-enables max extended thinking whenever the active model is an Opus variant — thinking tokens substantially improve referent-chain integrity under compression (e.g. cutting a character's introduction without orphaning later pronouns that depend on it).
 
 The drafter prompt (`prompts/draft_lean.md`) is the abridgment spec + chapter source + (if present) the cuts inventory. The model reads the spec and writes the chapter; no per-chapter signature enumeration, no tier scaffolding. Output goes to `work/<book>/segments/<NNN>.md`.
 
@@ -98,7 +98,9 @@ The system prompt instructs the drafter to preserve standard fiction paragraph c
 
 **Merge-group initial drafting**: when `draft` is called for a segment that belongs to a merged group, it renders a multi-source prompt covering all group members, calls the LLM once, and splits the output (`## Chapter N` delimited) back into per-member `.md` files. Non-first members of a group are read from disk; no redundant LLM calls.
 
-**Fallback**: if OpenAI returns `stop_reason=content_filter` (which hits on classical-lit triggers like Moby Dick's "pistol and ball"), the drafter transparently retries on Anthropic (`FORAGE_DRAFT_FALLBACK_MODEL`, default Sonnet). The [llm] log line shows the provider switch.
+**Fallback**: if OpenAI returns `stop_reason=content_filter` (on the drafts where a user-configured `FORAGE_DRAFT_MODEL` routes to OpenAI), the drafter transparently retries on Anthropic (`FORAGE_DRAFT_FALLBACK_MODEL`, default Sonnet). The [llm] log line shows the provider switch.
+
+GPT-5 is still a supported option via `FORAGE_DRAFT_MODEL=openai:gpt-5` — it's ~3–5× cheaper per draft but produces more compression-induced dangling references (Gatsby Ch 1 test: Opus preserved the Jordan and daughter antecedents that GPT-5 cut).
 
 ### 7. `critique` — adversarial signature critic
 
@@ -200,8 +202,8 @@ ANTHROPIC_API_KEY=sk-ant-...
 OPENAI_API_KEY=sk-proj-...
 
 # Lean pipeline model routing (recommended defaults)
-FORAGE_DRAFT_MODEL=openai:gpt-5
-FORAGE_REGEN_MODEL=openai:gpt-5
+FORAGE_DRAFT_MODEL=anthropic:claude-opus-4-7
+FORAGE_REGEN_MODEL=anthropic:claude-opus-4-7
 FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-4-6
 
 # Memoize every LLM response to work/.replay_cache/<hash>.json so reruns
@@ -213,7 +215,7 @@ FORAGE_REPLAY=1
 Per-stage overrides (`FORAGE_{STAGE}_MODEL`) beat the global `FORAGE_MODEL`, which beats whatever the caller passes. The CLI prints which model each call resolved to:
 
 ```
-[llm] stage=draft:gatsby:001 model=openai:gpt-5
+[llm] stage=draft:gatsby:001 model=anthropic:claude-opus-4-7
 [llm] stage=critic:signature:gatsby:001 model=anthropic:claude-sonnet-4-6 (caller requested anthropic:claude-opus-4-7, overridden by FORAGE_CRITIC_MODEL)
 ```
 
@@ -385,8 +387,8 @@ forage/
 
 | Stage | Env var | Default | Why |
 |---|---|---|---|
-| `draft` / `regen` | `FORAGE_DRAFT_MODEL`, `FORAGE_REGEN_MODEL` | `openai:gpt-5` | Strong long-form generator; doesn't collapse to plot spine like `o3` does |
-| `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `anthropic:claude-sonnet-4-6` | Automatic retry on OpenAI `content_filter` |
+| `draft` / `regen` | `FORAGE_DRAFT_MODEL`, `FORAGE_REGEN_MODEL` | `anthropic:claude-opus-4-7` | Max extended thinking auto-enabled on Opus variants; better referent-chain integrity under compression than GPT-5 |
+| `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `anthropic:claude-sonnet-4-6` | Automatic retry on OpenAI `content_filter` (only fires if user routes drafter to OpenAI) |
 | `critic:*` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-sonnet-4-6` | Consistent adversarial voice for signature and book critics |
 | `classify` | `FORAGE_CLASSIFY_MODEL` | `anthropic:claude-sonnet-4-6` (prompt default) | Cheap content-aware classification |
 | `summarize` | `FORAGE_SUMMARIZE_MODEL` | `openai:gpt-5` | Long-context synopsis generation |
