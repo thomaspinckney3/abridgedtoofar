@@ -51,6 +51,15 @@ A prepass has identified the following characters, subplots, and digressions as 
 {% for d in cuts.digressions %}- **Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}** — {{d.reason_removable}}
 {% endfor %}{% endif %}
 {% endif %}
+{% if kernels %}
+# Mandatory passages to preserve — relocated kernels
+
+The following passages are kernels relocated from chapters that were elided wholesale. They carry plot beats, character setups, or callbacks that LATER chapters depend on, so they MUST appear in your draft of this chapter, in either the position indicated or somewhere structurally equivalent. Preserve them verbatim or paraphrase only minimally; do NOT paraphrase them down further or omit them, even under compression pressure. The per-chapter target word count assumes these kernels are present.
+
+{% for k in kernels %}- **From skipped Ch {{k.from_chapter}} → into Ch {{k.to_chapter}} ({{k.position}}):**
+  > {{k.kernel}}
+
+{% endfor %}{% endif %}
 {% if critic_feedback %}
 # Critic findings to address (regeneration pass)
 

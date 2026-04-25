@@ -150,6 +150,22 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     prompt = load_prompt("draft_lean")
     cuts_path = book.work_dir / "cuts.json"
     cuts = read_json(cuts_path) if cuts_path.exists() else None
+    # Extract relocated kernels whose target is a member of this group —
+    # the drafter must preserve them verbatim/near-verbatim because they
+    # carry plot beats from chapters that were elided wholesale.
+    member_id_set = set(member_ids)
+    kernels = []
+    if cuts:
+        for entry in cuts.get("skippable_chapters", []) or []:
+            tgt = (entry.get("relocate_to") or "").strip()
+            kernel_text = (entry.get("kernel") or "").strip()
+            if tgt in member_id_set and kernel_text:
+                kernels.append({
+                    "from_chapter": entry.get("chapter_id"),
+                    "to_chapter": tgt,
+                    "position": entry.get("position"),
+                    "kernel": kernel_text,
+                })
     cached, body = prompt.render_blocks(
         spec=spec_text,
         book={"title": plan.get("title", book.book_id),
@@ -162,6 +178,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
         previous_draft=None,
         merged_members=members,
         cuts=cuts,
+        kernels=kernels,
     )
 
     default_model = prompt.config.get("model", "openai:gpt-5")
@@ -301,6 +318,20 @@ def draft_segment(
         # Load cuts inventory if a prepass has produced one.
         cuts_path = book.work_dir / "cuts.json"
         cuts = (read_json(cuts_path) if cuts_path.exists() else None)
+        # Extract any kernels relocated TO this segment — the drafter
+        # must preserve them verbatim/near-verbatim.
+        kernels = []
+        if cuts:
+            for entry in cuts.get("skippable_chapters", []) or []:
+                tgt = (entry.get("relocate_to") or "").strip()
+                kernel_text = (entry.get("kernel") or "").strip()
+                if tgt == segment["id"] and kernel_text:
+                    kernels.append({
+                        "from_chapter": entry.get("chapter_id"),
+                        "to_chapter": tgt,
+                        "position": entry.get("position"),
+                        "kernel": kernel_text,
+                    })
         cached, body = prompt.render_blocks(
             spec=spec_text,
             book={
@@ -315,6 +346,7 @@ def draft_segment(
             critic_feedback=critic_feedback,
             previous_draft=previous_draft,
             cuts=cuts,
+            kernels=kernels,
         )
         rendered = body
     else:
