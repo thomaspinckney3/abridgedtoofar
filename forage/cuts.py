@@ -145,7 +145,7 @@ def _call_cuts_prepass(book: Book, chunk_blocks: list[tuple[str, int]],
         stage=stage,
     )
     data = _parse_json_object(resp.text)
-    for key in ("minor_characters", "subplots", "digressions"):
+    for key in ("minor_characters", "subplots", "digressions", "skippable_chapters"):
         data.setdefault(key, [])
     return data
 
@@ -155,11 +155,14 @@ def _merge_cuts(partials: list[dict]) -> dict:
     - minor_characters: dedup by lowercase name; keep the first-seen entry.
     - subplots: dedup by lowercase name; keep the first-seen entry.
     - digressions: dedup by (sorted chapter_ids, topic.lower()) tuple.
+    - skippable_chapters: dedup by chapter_id; keep the first-seen entry.
     """
     seen_chars: set[str] = set()
     seen_subplots: set[str] = set()
     seen_digressions: set[tuple] = set()
-    merged = {"minor_characters": [], "subplots": [], "digressions": []}
+    seen_skippable: set[str] = set()
+    merged = {"minor_characters": [], "subplots": [],
+              "digressions": [], "skippable_chapters": []}
     for p in partials:
         for c in p.get("minor_characters", []) or []:
             key = str(c.get("name", "")).strip().lower()
@@ -181,6 +184,12 @@ def _merge_cuts(partials: list[dict]) -> dict:
                 continue
             seen_digressions.add(key)
             merged["digressions"].append(d)
+        for k in p.get("skippable_chapters", []) or []:
+            cid = str(k.get("chapter_id", "")).strip()
+            if not cid or cid in seen_skippable:
+                continue
+            seen_skippable.add(cid)
+            merged["skippable_chapters"].append(k)
     return merged
 
 

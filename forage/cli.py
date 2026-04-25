@@ -705,6 +705,38 @@ def cuts(
         console.print(t)
 
 
+@app.command(name="prepare-skips")
+def prepare_skips_cmd(book_id: str) -> None:
+    """Apply cuts.json's `skippable_chapters` directives to the source.
+    Inserts kernel paragraphs into target chapters and zeros target_word_count
+    on skipped chapters. Backs up modified sources as `<id>.md.orig`. Free —
+    no LLM calls."""
+    from .prepare_skips import apply_skips
+    book = load_book(book_id)
+    summary = apply_skips(book)
+    console.rule(f"[bold]prepare-skips {book_id}[/bold]")
+    console.print(f"chapters skipped (target=0): {len(summary.skipped)}")
+    if summary.skipped:
+        console.print(f"  {', '.join(summary.skipped)}")
+    console.print(f"kernels inserted: {len(summary.kernels_inserted)}")
+    for k in summary.kernels_inserted:
+        console.print(f"  {k['from']} → {k['to']} ({k['position']}, "
+                      f"{k['kernel_words']}w)")
+    if summary.not_found:
+        console.print(f"[yellow]not in plan: {', '.join(summary.not_found)}[/yellow]")
+    console.print(f"backups created: {len(summary.backup_paths)}")
+
+
+@app.command(name="revert-skips")
+def revert_skips_cmd(book_id: str) -> None:
+    """Restore chapter sources from `.orig` backups and reset plan.json's
+    target_word_counts. Reverses `prepare-skips`."""
+    from .prepare_skips import revert_skips
+    book = load_book(book_id)
+    n = revert_skips(book)
+    console.print(f"restored {n} chapter source files; plan.json reset")
+
+
 @app.command()
 def coherence(
     book_id: str,

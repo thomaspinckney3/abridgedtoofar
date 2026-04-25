@@ -90,6 +90,9 @@ Writes `work/<book>/cuts.json`. Consumed by:
 - the signature critic prompt (authorized removals — don't flag their absence as voice_erasure)
 - the coherence critic prompt (residual seams from authorized cuts are expected, not findings)
 - the regen prompt in iterate (cuts override critic findings when they collide — the drafter may still restore *severable* non-cut voice tics that lived inside a cut scene)
+- `forage prepare-skips` (see below)
+
+The `skippable_chapters` field nominates chapters whose entire content can be elided. Each entry can carry a `kernel` (1-3 sentence paraphrase of any load-bearing material that must survive), a `relocate_to` segment id, and a `position` (`start`|`end`). `forage prepare-skips <book>` reads these fields, inserts the kernels into the target chapter sources (backing originals up as `<id>.md.orig`), and sets `target_word_count=0` on the skipped chapters. The drafter then reads the augmented sources and skips the zeroed chapters naturally — no drafter changes needed. `forage revert-skips <book>` reverses the operation.
 
 Gatsby example output: 16 minor characters (Owl Eyes, Klipspringer, Catherine, etc.), 9 subplots (Pammy's cameo, Jordan's golf-cheat flashback, Michaelis's overnight vigil), 7 digressions (the Ch 4 guest-list "timetable," Wolfshiem's Metropole reminiscence, Nick's Midwestern homecoming reverie).
 
