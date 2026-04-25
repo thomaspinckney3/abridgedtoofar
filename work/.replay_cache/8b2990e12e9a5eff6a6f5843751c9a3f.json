@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:01:40",
+  "key": "8b2990e12e9a5eff6a6f5843751c9a3f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 Stubb's coffee-pot line omitted\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 Flask's line only, Stubb's omitted\"},\n  {\"draft_para\": 4, \"source_paras\": [6, 7], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [8], \"note\": \"paraphrased\"},\n  {\"draft_para\": 6, \"source_paras\": [9, 10, 12], \"note\": \"compressed \u2014 merges pod description, old bull, and fin stump; omits Stubb's paregoric quip\"},\n  {\"draft_para\": 7, \"source_paras\": [14], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [15], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [16], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [21], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [19, 23], \"note\": \"compressed \u2014 combines Derick pitching lamp-feeder with the crab incident and Pequod boats ranging up\"},\n  {\"draft_para\": 12, \"source_paras\": [24], \"note\": \"compressed\"},\n  {\"draft_para\": 13, \"source_paras\": [25, 26], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [28, 29], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [31, 32], \"note\": \"compressed\"},\n  {\"draft_para\": 16, \"source_paras\": [33, 34, 35], \"note\": \"compressed\"},\n  {\"draft_para\": 17, \"source_paras\": [36], \"note\": \"verbatim\"},\n  {\"draft_para\": 18, \"source_paras\": [37], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [38], \"note\": \"compressed\"},\n  {\"draft_para\": 20, \"source_paras\": [39, 40], \"note\": \"compressed\"},\n  {\"draft_para\": 21, \"source_paras\": [41], \"note\": \"compressed\"},\n  {\"draft_para\": 22, \"source_paras\": [42], \"note\": \"compressed\"},\n  {\"draft_para\": 23, \"source_paras\": [43], \"note\": \"compressed\"},\n  {\"draft_para\": 24, \"source_paras\": [44, 45], \"note\": \"compressed\"},\n  {\"draft_para\": 25, \"source_paras\": [46], \"note\": \"compressed\"},\n  {\"draft_para\": 26, \"source_paras\": [47], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 9019,
+    "output_tokens": 810,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.974733829498291,
+    "stop_reason": "end_turn"
+  }
+}

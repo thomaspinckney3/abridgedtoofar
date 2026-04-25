@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:01:29",
+  "key": "aa3cc515319083ac0aff24683cce5db4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [], \"note\": \"unsupported \u2014 chapter title not present in source paragraphs\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [4, 5, 6], \"note\": \"compressed \u2014 draws spine/vertebrae concept from 4 and 5, hump/indomitableness conclusion from 6; skips much of 5's detail\"}\n]\n```",
+    "input_tokens": 2119,
+    "output_tokens": 193,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.282922029495239,
+    "stop_reason": "end_turn"
+  }
+}

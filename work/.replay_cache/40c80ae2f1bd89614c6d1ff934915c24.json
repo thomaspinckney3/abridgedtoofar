@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:58:39",
+  "key": "40c80ae2f1bd89614c6d1ff934915c24",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [], \"note\": \"unsupported \u2014 chapter heading\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"compressed \u2014 omits middle sentences but retains opening, ostrich simile, and closing\"},\n  {\"draft_para\": 2, \"source_paras\": [1], \"note\": \"compressed \u2014 strips context, keeps core question\"},\n  {\"draft_para\": 3, \"source_paras\": [1, 2, 3, 4, 5], \"note\": \"compressed \u2014 merges Queequeg's reply with Stubb and Flask exchanges into one sentence\"},\n  {\"draft_para\": 4, \"source_paras\": [6, 7], \"note\": \"compressed \u2014 condenses the will-making deliberation and its emotional aftermath\"},\n  {\"draft_para\": 5, \"source_paras\": [8], \"note\": \"verbatim \u2014 minor omission of 'unconsciously rolling up the sleeves of my frock'\"}\n]\n```",
+    "input_tokens": 2040,
+    "output_tokens": 256,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.514820098876953,
+    "stop_reason": "end_turn"
+  }
+}

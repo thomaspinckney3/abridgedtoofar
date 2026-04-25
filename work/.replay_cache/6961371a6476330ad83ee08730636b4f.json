@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:55:36",
+  "key": "6961371a6476330ad83ee08730636b4f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], \"note\": \"compressed \u2014 collapses the entire landlady episode and door-bursting sequence into a brief summary, then near-verbatim for Queequeg's discovery\"},\n  {\"draft_para\": 3, \"source_paras\": [16, 18, 19], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [20, 22, 23], \"note\": \"compressed \u2014 omits supper details and waking details, combines evening/night/morning\"},\n  {\"draft_para\": 5, \"source_paras\": [24, 25], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [26], \"note\": \"paraphrased\"},\n  {\"draft_para\": 7, \"source_paras\": [27, 28], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 4741,
+    "output_tokens": 315,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.265621185302734,
+    "stop_reason": "end_turn"
+  }
+}

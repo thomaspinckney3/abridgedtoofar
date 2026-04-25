@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:00:10",
+  "key": "24c552072df7ba3485661ebe7f997751",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim \u2014 minor condensation\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2, 3], \"note\": \"compressed \u2014 draws opening from para 1, appetite line from para 2, 'great prize ox' from para 3\"},\n  {\"draft_para\": 2, \"source_paras\": [5], \"note\": \"compressed \u2014 omits some detail but follows para 5 closely\"},\n  {\"draft_para\": 3, \"source_paras\": [6], \"note\": \"compressed \u2014 omits quill/gander society detail\"}\n]\n```",
+    "input_tokens": 2394,
+    "output_tokens": 170,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 3.4765429496765137,
+    "stop_reason": "end_turn"
+  }
+}

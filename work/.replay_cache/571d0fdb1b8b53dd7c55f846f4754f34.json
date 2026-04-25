@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:02:44",
+  "key": "571d0fdb1b8b53dd7c55f846f4754f34",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [3, 4], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [5, 6], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [7, 8, 9], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [14], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [15], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [16], \"note\": \"paraphrased\"},\n  {\"draft_para\": 8, \"source_paras\": [18, 26, 27], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [25, 28], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [30], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [31], \"note\": \"paraphrased\"},\n  {\"draft_para\": 12, \"source_paras\": [32], \"note\": \"paraphrased\"},\n  {\"draft_para\": 13, \"source_paras\": [35], \"note\": \"paraphrased\"},\n  {\"draft_para\": 14, \"source_paras\": [36], \"note\": \"paraphrased\"},\n  {\"draft_para\": 15, \"source_paras\": [37], \"note\": \"paraphrased\"},\n  {\"draft_para\": 16, \"source_paras\": [38], \"note\": \"verbatim\"},\n  {\"draft_para\": 17, \"source_paras\": [39], \"note\": \"paraphrased\"},\n  {\"draft_para\": 18, \"source_paras\": [40, 41, 42, 43], \"note\": \"compressed\"},\n  {\"draft_para\": 19, \"source_paras\": [44, 45, 46, 47], \"note\": \"compressed\"},\n  {\"draft_para\": 20, \"source_paras\": [48], \"note\": \"verbatim\"},\n  {\"draft_para\": 21, \"source_paras\": [49], \"note\": \"paraphrased\"}\n]\n```",
+    "input_tokens": 5561,
+    "output_tokens": 639,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.348798036575317,
+    "stop_reason": "end_turn"
+  }
+}

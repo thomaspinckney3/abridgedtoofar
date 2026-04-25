@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:02:59",
+  "key": "47763b6877034db38a2f291b5c384008",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed \u2014 skips para 1 detail, merges cutting/hoisting with sperm-squeezing intro\"},\n  {\"draft_para\": 1, \"source_paras\": [3], \"note\": \"paraphrased \u2014 condenses the meadow/oath passage, omits Paracelsan superstition\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"compressed \u2014 omits the sentimental hand-squeezing buildup and middle portion\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 omits the philosophical reflection on felicity, keeps angels in paradise image\"},\n  {\"draft_para\": 4, \"source_paras\": [6, 7, 8, 9, 10, 11, 12], \"note\": \"compressed \u2014 rapidly summarises all remaining substances and the blubber-room scene\"}\n]\n```",
+    "input_tokens": 2947,
+    "output_tokens": 252,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.282954931259155,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:54:41",
+  "key": "31216a6fa8d896108f4a9646f1013b79",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits details about old age, umbrella, congregation reaction, but draws entirely from para 0\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2, 3], \"note\": \"compressed \u2014 merges the ladder description, the dragging up of ladder, and the spiritual withdrawal interpretation\"},\n  {\"draft_para\": 2, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 combines the painting description and the ship's-bows pulpit front\"},\n  {\"draft_para\": 3, \"source_paras\": [6], \"note\": \"verbatim \u2014 final sentence of para 6\"}\n]\n```",
+    "input_tokens": 2149,
+    "output_tokens": 184,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 3.8549749851226807,
+    "stop_reason": "end_turn"
+  }
+}

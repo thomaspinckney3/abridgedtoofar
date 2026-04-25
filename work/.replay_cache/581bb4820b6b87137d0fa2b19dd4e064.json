@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:02:23",
+  "key": "581bb4820b6b87137d0fa2b19dd4e064",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 3], \"note\": \"compressed \u2014 combines geographic intro from [0] with Pequod's purpose from [3]\"},\n  {\"draft_para\": 1, \"source_paras\": [4], \"note\": \"compressed \u2014 condenses the whale-ship/water passage\"},\n  {\"draft_para\": 2, \"source_paras\": [5, 7, 8, 9], \"note\": \"compressed \u2014 merges approach to Java Head, the whale-jets spectacle, metropolis simile, and marching-armies comparison\"},\n  {\"draft_para\": 3, \"source_paras\": [10, 11], \"note\": \"compressed \u2014 Tashtego's warning and Ahab's Malay cry\"},\n  {\"draft_para\": 4, \"source_paras\": [12], \"note\": \"paraphrased \u2014 Ahab pacing, chasing and being chased, gaunt brow\"},\n  {\"draft_para\": 5, \"source_paras\": [13, 14], \"note\": \"compressed \u2014 Cockatoo Point, springing to boats, whales rallying, gallied whales, King Porus simile, closing maxim\"},\n  {\"draft_para\": 6, \"source_paras\": [15, 16, 17], \"note\": \"compressed \u2014 boats separate, Queequeg's harpoon, plunging into herd, ice-isle simile, Queequeg steering, Starbuck darting\"},\n  {\"draft_para\": 7, \"source_paras\": [17], \"note\": \"verbatim \u2014 'Commodore' and 'Hard down' cries\"},\n  {\"draft_para\": 8, \"source_paras\": [19, 20, 21], \"note\": \"compressed \u2014 gliding into calm centre, cows and calves, nursing mothers below, young whales' gaze, Queequeg and Starbuck with calves\"},\n  {\"draft_para\": 9, \"source_paras\": [22], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [23], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [24], \"note\": \"verbatim\"},\n  {\"draft_para\": 12, \"source_paras\": [25], \"note\": \"compressed \u2014 umbilical cord scene, enchanted pond, young Leviathan amours\"},\n  {\"draft_para\": 13, \"source_paras\": [27], \"note\": \"verbatim\"},\n  {\"draft_para\": 14, \"source_paras\": [28, 29, 30], \"note\": \"compressed \u2014 wounded whale with cutting-spade, entangled in line, murdering comrades, herd recalled, lake heaves, Hudson ice simile\"},\n  {\"draft_para\": 15, \"source_paras\": [31], \"note\": \"compressed \u2014 Starbuck's whispered commands\"},\n  {\"draft_para\": 16, \"source_paras\": [32, 33, 34], \"note\": \"compressed \u2014 Dardanelles, Queequeg's hat, herd flees, drugged whales, only one captured, sagacious saying\"}\n]\n```",
+    "input_tokens": 9407,
+    "output_tokens": 791,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 14.729511260986328,
+    "stop_reason": "end_turn"
+  }
+}

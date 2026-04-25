@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:55:44",
+  "key": "ceac8a75e6cedb396a778a29a2b237ad",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits Queequeg carrying harpoon and specific dialogue\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 merges Peleg's and Bildad's responses\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"paraphrased \u2014 omits the aside about tattooed savages converting\"},\n  {\"draft_para\": 3, \"source_paras\": [6, 7, 8, 9, 10], \"note\": \"compressed \u2014 collapses extended back-and-forth into a single Bildad line\"},\n  {\"draft_para\": 4, \"source_paras\": [11], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [12], \"note\": \"compressed \u2014 omits several lines of Peleg's speech\"},\n  {\"draft_para\": 6, \"source_paras\": [13, 14, 15], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [16], \"note\": \"compressed \u2014 omits detail about Bildad retreating from harpoon\"},\n  {\"draft_para\": 8, \"source_paras\": [17, 18, 19], \"note\": \"compressed \u2014 omits the signing preliminaries and Peleg's question about writing\"},\n  {\"draft_para\": 9, \"source_paras\": [20], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [21], \"note\": \"compressed \u2014 omits Bildad's extended speech and description of the tract\"},\n  {\"draft_para\": 11, \"source_paras\": [23], \"note\": \"compressed \u2014 omits the story of Nat Swaine\"}\n]\n```",
+    "input_tokens": 3347,
+    "output_tokens": 467,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.426267862319946,
+    "stop_reason": "end_turn"
+  }
+}

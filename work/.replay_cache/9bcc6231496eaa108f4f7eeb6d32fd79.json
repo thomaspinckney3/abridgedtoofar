@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:55:53",
+  "key": "9bcc6231496eaa108f4f7eeb6d32fd79",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"paraphrased \u2014 compresses description, omits sauntering detail\"},\n  {\"draft_para\": 2, \"source_paras\": [5], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [8, 12], \"note\": \"compressed \u2014 merges soul/fifth-wheel remark with Old Thunder question, omitting intervening dialogue\"},\n  {\"draft_para\": 6, \"source_paras\": [13], \"note\": \"paraphrased \u2014 drops 'said I, again riveted with the insane earnestness of his manner'\"},\n  {\"draft_para\": 7, \"source_paras\": [14], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [17], \"note\": \"paraphrased \u2014 condensed\"},\n  {\"draft_para\": 9, \"source_paras\": [18, 22], \"note\": \"compressed \u2014 merges Ahab's arm quip with selected details from the long speech, omitting Cape Horn/articles/Nantucket material\"},\n  {\"draft_para\": 10, \"source_paras\": [23], \"note\": \"paraphrased \u2014 drops framing and 'I don't know' preamble\"},\n  {\"draft_para\": 11, \"source_paras\": [24], \"note\": \"verbatim\"},\n  {\"draft_para\": 12, \"source_paras\": [26], \"note\": \"compressed \u2014 omits finger-pointing stage direction and some phrases\"},\n  {\"draft_para\": 13, \"source_paras\": [31], \"note\": \"paraphrased \u2014 drops Queequeg reference and 'Come along' line\"},\n  {\"draft_para\": 14, \"source_paras\": [32], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [33, 34], \"note\": \"compressed \u2014 merges both paragraphs, omitting intermediate detail about crossing the way\"}\n]\n```",
+    "input_tokens": 2987,
+    "output_tokens": 590,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.260735988616943,
+    "stop_reason": "end_turn"
+  }
+}

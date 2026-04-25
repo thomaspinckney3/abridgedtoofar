@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:59:35",
+  "key": "6ce8bc3725d0c64ea33987e282a2f5d8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed \u2014 combines the introduction and hemp/Manilla comparison, skipping technical hemp details\"},\n  {\"draft_para\": 1, \"source_paras\": [3, 4], \"note\": \"compressed \u2014 combines line dimensions/coiling from para 3 with the wedding-cake image from para 4, skipping paras 5-6 on line ends and routing\"},\n  {\"draft_para\": 2, \"source_paras\": [6, 7], \"note\": \"compressed \u2014 takes the line-routing description from para 6 and merges with the full boat-coils/juggler/burghers passage from para 7, skipping para 8\"},\n  {\"draft_para\": 3, \"source_paras\": [9], \"note\": \"paraphrased \u2014 closely follows para 9, omitting the rifle/powder simile and slightly condensing the calm-storm analogy\"}\n]\n```",
+    "input_tokens": 3176,
+    "output_tokens": 245,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.550002336502075,
+    "stop_reason": "end_turn"
+  }
+}

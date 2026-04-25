@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:02:02",
+  "key": "00eb0718101d54d5c9db3c466c5be042",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the detail about millions of ages before, hunters watching, and the precise timestamp context is kept but surrounding prose trimmed\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 omits the herring/cod comparison and detail about mouth being buried eight feet beneath surface\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 omits the opening theoretical discussion of breathing/blood oxygenation and condenses the spoutings-out argument\"},\n  {\"draft_para\": 3, \"source_paras\": [7], \"note\": \"compressed \u2014 omits the opening challenge and the observation about nearly standing in the spout\"},\n  {\"draft_para\": 4, \"source_paras\": [9], \"note\": \"compressed \u2014 omits the detail about skin peeling and feverish smarting, retains the poisonous/blindness warning and conclusion\"},\n  {\"draft_para\": 5, \"source_paras\": [10], \"note\": \"compressed \u2014 omits the mirror/treatise anecdote and the hot tea/attic detail\"},\n  {\"draft_para\": 6, \"source_paras\": [11], \"note\": \"paraphrased \u2014 near-verbatim with minor omissions\"}\n]\n```",
+    "input_tokens": 4149,
+    "output_tokens": 332,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.004044771194458,
+    "stop_reason": "end_turn"
+  }
+}

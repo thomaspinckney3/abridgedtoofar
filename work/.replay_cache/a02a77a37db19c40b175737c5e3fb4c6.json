@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:56:24",
+  "key": "a02a77a37db19c40b175737c5e3fb4c6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed \u2014 combines opening argument with coronation oil discussion, omitting hair-oil digression\"},\n  {\"draft_para\": 1, \"source_paras\": [3], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 1052,
+    "output_tokens": 86,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 1.9231319427490234,
+    "stop_reason": "end_turn"
+  }
+}

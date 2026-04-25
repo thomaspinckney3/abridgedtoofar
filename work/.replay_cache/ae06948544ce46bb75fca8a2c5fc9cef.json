@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:56:58",
+  "key": "ae06948544ce46bb75fca8a2c5fc9cef",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3, 4, 5, 6], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [8, 9], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [10, 11, 12], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [13], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [14, 16, 17], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [19], \"note\": \"paraphrased\"},\n  {\"draft_para\": 7, \"source_paras\": [20], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [21], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [23], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [26, 27, 28], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [24, 25], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [29, 30], \"note\": \"compressed\"},\n  {\"draft_para\": 13, \"source_paras\": [34], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [36, 37], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [38, 39, 41], \"note\": \"compressed\"},\n  {\"draft_para\": 16, \"source_paras\": [45], \"note\": \"compressed \u2014 drafter conflates 'uncertain whales' list with the 'omit as obsolete' remark, slightly misrepresenting source\"},\n  {\"draft_para\": 17, \"source_paras\": [46], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 10556,
+    "output_tokens": 548,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.3798980712890625,
+    "stop_reason": "end_turn"
+  }
+}

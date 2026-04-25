@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:03:23",
+  "key": "8b1d1b1f2c1eba097151df9cc25ba9ab",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 2], \"note\": \"compressed \u2014 merges Ahab's habit of eyeing the coin with the doubloon's golden description and talisman status\"},\n  {\"draft_para\": 1, \"source_paras\": [4], \"note\": \"compressed \u2014 omits border lettering context and some zodiac detail but draws from same source paragraph\"},\n  {\"draft_para\": 2, \"source_paras\": [6], \"note\": \"compressed \u2014 condenses Ahab's soliloquy, omitting storm/equinox imagery\"},\n  {\"draft_para\": 3, \"source_paras\": [7], \"note\": \"compressed \u2014 condenses Starbuck's soliloquy, omitting some lines\"},\n  {\"draft_para\": 4, \"source_paras\": [8], \"note\": \"compressed \u2014 heavily condenses Stubb's long soliloquy, merging his opening observations with his zodiac reading\"},\n  {\"draft_para\": 5, \"source_paras\": [9], \"note\": \"compressed \u2014 omits Flask's cigar-pipe comparison and closing line\"},\n  {\"draft_para\": 6, \"source_paras\": [10, 11], \"note\": \"compressed \u2014 merges Stubb's observation of the Manxman with the Manxman's speech\"},\n  {\"draft_para\": 7, \"source_paras\": [12], \"note\": \"compressed \u2014 heavily condenses Stubb's observations of Queequeg and Fedallah\"},\n  {\"draft_para\": 8, \"source_paras\": [13, 14, 15, 16, 17, 18, 19, 20, 21], \"note\": \"compressed \u2014 merges Pip's repeated grammar lines with his crow speech and doubloon/navel speech, omitting Stubb's interjections\"}\n]\n```",
+    "input_tokens": 5442,
+    "output_tokens": 456,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.531905889511108,
+    "stop_reason": "end_turn"
+  }
+}

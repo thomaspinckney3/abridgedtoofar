@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:02:49",
+  "key": "9fac46a1439e40c835a63f17cb09a39e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the Captain Coffin anecdote and some detail, but draws entirely from source para 0\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 omits the Brandreth's pills joke\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"paraphrased \u2014 near-verbatim of source para 3, minor omission ('likewise') but essentially the same; source para 2 (squid bones) is skipped entirely\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5, 6], \"note\": \"compressed \u2014 collapses paras 4-6, omitting Schmerenburgh detail and the Alexander the Great elephant closing, but draws key points from all three\"}\n]\n```",
+    "input_tokens": 2380,
+    "output_tokens": 225,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.154995918273926,
+    "stop_reason": "end_turn"
+  }
+}

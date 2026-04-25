@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:56:51",
+  "key": "78bf50a191cdd5929455bab877fe7193",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 heavily condensed but draws all key elements from source para 1\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"paraphrased \u2014 minor reordering/attribution added\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed \u2014 omits some detail but preserves key lines\"},\n  {\"draft_para\": 4, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 combines two source paragraphs into one\"},\n  {\"draft_para\": 5, \"source_paras\": [6], \"note\": \"compressed \u2014 omits Flask-directed framing and closing line\"}\n]\n```",
+    "input_tokens": 2191,
+    "output_tokens": 221,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 3.7302141189575195,
+    "stop_reason": "end_turn"
+  }
+}

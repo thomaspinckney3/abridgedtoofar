@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:03:58",
+  "key": "5411f53ba50b545862bb656591cb8be8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [3, 4, 5], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [6, 7, 8, 9, 10], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [12], \"note\": \"paraphrased\"},\n  {\"draft_para\": 4, \"source_paras\": [14], \"note\": \"paraphrased\"}\n]\n```",
+    "input_tokens": 3430,
+    "output_tokens": 166,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 2.9257149696350098,
+    "stop_reason": "end_turn"
+  }
+}

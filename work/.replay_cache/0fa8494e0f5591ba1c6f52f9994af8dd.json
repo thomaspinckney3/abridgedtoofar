@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:54:33",
+  "key": "0fa8494e0f5591ba1c6f52f9994af8dd",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 merges opening astonishment with Water Street/Wapping comparison and cannibals detail\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 combines Feegeeans/green Vermonters passage with beaver-hat figure and Hay-Seed exclamation from para 3\"},\n  {\"draft_para\": 2, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 draws patrician houses/opulent gardens question from para 4 and harpoon/bottom-of-the-sea answer from para 5\"},\n  {\"draft_para\": 3, \"source_paras\": [7, 8], \"note\": \"compressed \u2014 takes summer maples sentence from para 7 and women/roses sentence from para 8\"}\n]\n```",
+    "input_tokens": 2090,
+    "output_tokens": 227,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.539611101150513,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:03:46",
+  "key": "43509dadba7510c7fd64f1ebfe0a69c5",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the elaborate unbuttoning metaphor but retains core idea\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2, 3], \"note\": \"compressed \u2014 merges the rhetorical challenge, the confession about dissecting the cub, and the introduction of Tranquo into one paragraph\"},\n  {\"draft_para\": 2, \"source_paras\": [5, 6], \"note\": \"compressed \u2014 omits source para 4 (Tranquo's collection) and condenses stranding/skeleton transport and the temple description\"},\n  {\"draft_para\": 3, \"source_paras\": [7], \"note\": \"compressed \u2014 selects key images from the weaver passage, omitting several sentences\"},\n  {\"draft_para\": 4, \"source_paras\": [8], \"note\": \"verbatim \u2014 last sentence of source para 8, dropping the preceding context\"},\n  {\"draft_para\": 5, \"source_paras\": [9, 10, 13], \"note\": \"compressed \u2014 draws the twine wandering from para 9, the measuring-rod and priests from para 10, and the tattooed admeasurements from para 13; omits paras 11\u201312 entirely\"}\n]\n```",
+    "input_tokens": 3602,
+    "output_tokens": 325,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.972271680831909,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:01:55",
+  "key": "74427cd4d355714b9acdcab6958f2a01",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits carriage/axle analogy and greasing rationale, retains presentiment detail\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2], \"note\": \"compressed \u2014 merges whales fleeing and Tashtego's iron into one paragraph\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 omits comparison to swords and harpoon details, retains core description of pitchpoling\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 omits Stubb's qualifications and some preparatory steps, retains key visual action\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 retains opening exclamations, omits the whiskey/punch-bowl elaboration\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"paraphrased \u2014 near-verbatim with minor trimming\"}\n]\n```",
+    "input_tokens": 2121,
+    "output_tokens": 276,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.690598964691162,
+    "stop_reason": "end_turn"
+  }
+}

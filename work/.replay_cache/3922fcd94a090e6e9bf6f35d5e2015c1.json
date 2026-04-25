@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:57:42",
+  "key": "3922fcd94a090e6e9bf6f35d5e2015c1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"paraphrased \u2014 condensed stage direction\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [4], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [5], \"note\": \"compressed \u2014 omits final couplet\"},\n  {\"draft_para\": 6, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [9], \"note\": \"compressed \u2014 omits Dutch/2nd Nantucket sailors, merges French Sailor lines\"},\n  {\"draft_para\": 8, \"source_paras\": [10], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [11], \"note\": \"compressed \u2014 truncated French Sailor speech\"},\n  {\"draft_para\": 10, \"source_paras\": [16, 24], \"note\": \"compressed \u2014 merges Azore Sailor stage direction with sky-darkening stage direction, skipping intervening sailors\"},\n  {\"draft_para\": 11, \"source_paras\": [25], \"note\": \"compressed \u2014 truncated Lascar Sailor line\"},\n  {\"draft_para\": 12, \"source_paras\": [35], \"note\": \"compressed \u2014 omits Old Manx Sailor setup and Daggoo attribution prefix\"},\n  {\"draft_para\": 13, \"source_paras\": [36], \"note\": \"paraphrased \u2014 omits aside marker and advancing action\"},\n  {\"draft_para\": 14, \"source_paras\": [37], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [40], \"note\": \"verbatim\"},\n  {\"draft_para\": 16, \"source_paras\": [41], \"note\": \"verbatim\"},\n  {\"draft_para\": 17, \"source_paras\": [42], \"note\": \"verbatim\"},\n  {\"draft_para\": 18, \"source_paras\": [43], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [47], \"note\": \"compressed \u2014 omits Old Manx Sailor attribution and surrounding lines\"},\n  {\"draft_para\": 20, \"source_paras\": [48], \"note\": \"compressed \u2014 truncated Mate's voice line\"},\n  {\"draft_para\": 21, \"source_paras\": [49], \"note\": \"verbatim\"},\n  {\"draft_para\": 22, \"source_paras\": [50], \"note\": \"compressed \u2014 omits a few internal sentences\"}\n]\n```",
+    "input_tokens": 4366,
+    "output_tokens": 742,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.194306135177612,
+    "stop_reason": "end_turn"
+  }
+}

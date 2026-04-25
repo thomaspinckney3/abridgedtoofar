@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:58:02",
+  "key": "dc3a500221bf8ef070b5f2fc71c60fd4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [], \"note\": \"unsupported \u2014 chapter title added by drafter\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [1], \"note\": \"compressed \u2014 omits the explanatory framing about hoping to explain\"},\n  {\"draft_para\": 3, \"source_paras\": [2], \"note\": \"compressed \u2014 selects representative examples from the long enumeration, retains conclusion verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [3, 6, 10, 12], \"note\": \"compressed \u2014 combines white bear/shark passage, albatross mention, White Steed, and Albino man into single paragraph\"},\n  {\"draft_para\": 5, \"source_paras\": [14, 22], \"note\": \"compressed \u2014 draws ghosts/pallid horse from para 14 and midnight milky sea from para 22\"},\n  {\"draft_para\": 6, \"source_paras\": [25, 26, 27, 28], \"note\": \"compressed \u2014 combines the Vermont colt illustration with the demonism conclusion and the milky sea analogy\"},\n  {\"draft_para\": 7, \"source_paras\": [29, 30], \"note\": \"compressed \u2014 combines the unsolved incantation setup with the indefiniteness/absence-of-colour argument and final conclusion\"}\n]\n```",
+    "input_tokens": 7246,
+    "output_tokens": 365,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.681153059005737,
+    "stop_reason": "end_turn"
+  }
+}

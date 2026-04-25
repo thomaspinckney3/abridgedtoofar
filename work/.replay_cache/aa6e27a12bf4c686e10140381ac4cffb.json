@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:05:02",
+  "key": "aa6e27a12bf4c686e10140381ac4cffb",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 combines the approach to the Line and the noon observation with the Japanese sun description\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 draws from Ahab's murmured speech at the end of para 1, omitting the Parsee detail\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 condenses Ahab's quadrant soliloquy and destruction of the instrument\"},\n  {\"draft_para\": 3, \"source_paras\": [3, 5], \"note\": \"compressed \u2014 combines the Parsee's reaction from para 3 with Starbuck watching from para 5, omitting paras 4 and the forecastle detail\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"paraphrased \u2014 Starbuck's speech, omitting the coal fire setup\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"compressed \u2014 condenses Stubb's reply, omitting the Ahab mutter quotation\"}\n]\n```",
+    "input_tokens": 2268,
+    "output_tokens": 299,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.595866918563843,
+    "stop_reason": "end_turn"
+  }
+}

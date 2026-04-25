@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:01:47",
+  "key": "72ae741d37575e663ab45345f2dcc264",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"paraphrased\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 omits the Joppa ship escape detail and the Nineveh geography objection\"},\n  {\"draft_para\": 3, \"source_paras\": [2, 3, 4], \"note\": \"compressed \u2014 blends Sag-Harbor's geography objection from [2], the Cape of Good Hope route from [3], and the Portuguese priest/Turkish mosque material from [4]; skips [4]'s rebuke of Sag-Harbor's pride\"}\n]\n```",
+    "input_tokens": 2008,
+    "output_tokens": 195,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.221334934234619,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:00:14",
+  "key": "456a891467c0b492d00b18a67eedda86",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 combines the Southern Fishery night routine and the shark-infested Line description\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"compressed \u2014 omits footnote reference and some detail but follows source paragraph closely\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"verbatim \u2014 Queequeg's closing remark\"}\n]\n```",
+    "input_tokens": 1699,
+    "output_tokens": 131,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 3.9009268283843994,
+    "stop_reason": "end_turn"
+  }
+}

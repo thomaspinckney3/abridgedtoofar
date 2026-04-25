@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:54:08",
+  "key": "8b7a64d67d3fae4fbcba701ab8ae70bc",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [], \"note\": \"unsupported \u2014 chapter title, not in source\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"compressed \u2014 omits disappointment framing but otherwise close to verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [1], \"note\": \"compressed \u2014 omits Red-Men and sloop anecdote, retains core reason for preferring Nantucket\"},\n  {\"draft_para\": 3, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 merges the cold-night/pocket framing from [2] with the street-walking and inn signs from [3]\"},\n  {\"draft_para\": 4, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 merges dreary streets and ash-box entry from [4] with the negro church scene from [5]\"},\n  {\"draft_para\": 5, \"source_paras\": [6], \"note\": \"paraphrased \u2014 slightly condensed but follows source closely\"},\n  {\"draft_para\": 6, \"source_paras\": [7, 11], \"note\": \"compressed \u2014 takes ominous name reaction and cheap-lodgings conclusion from [7], closing line from [11]; omits Lazarus/Dives digression [8-10]\"}\n]\n```",
+    "input_tokens": 3155,
+    "output_tokens": 342,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.1641857624053955,
+    "stop_reason": "end_turn"
+  }
+}

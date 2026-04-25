@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:04:36",
+  "key": "21e2861318b1fd071eaa53d7250af944",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 sets scene and opens with Ahab's sparks remark\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"paraphrased \u2014 slight condensation of Perth's reply\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 omits much of Ahab's speech, retains go-mad question and pike-head question\"},\n  {\"draft_para\": 3, \"source_paras\": [4], \"note\": \"verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [5, 7], \"note\": \"compressed \u2014 merges two similar questions into one\"},\n  {\"draft_para\": 5, \"source_paras\": [8], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [9], \"note\": \"compressed \u2014 retains key phrases but omits some detail\"},\n  {\"draft_para\": 7, \"source_paras\": [10], \"note\": \"compressed \u2014 partial verbatim, omits second sentence\"},\n  {\"draft_para\": 8, \"source_paras\": [11, 12, 13], \"note\": \"compressed \u2014 merges Ahab's skull speech with horse-shoe stubbs and harpoon commission\"},\n  {\"draft_para\": 9, \"source_paras\": [14, 15, 20, 21, 22, 23], \"note\": \"compressed \u2014 collapses the rod-welding sequence and razor-barb fashioning into a bridging summary\"},\n  {\"draft_para\": 10, \"source_paras\": [24], \"note\": \"paraphrased \u2014 omits opening refusal line, otherwise close to source\"},\n  {\"draft_para\": 11, \"source_paras\": [25], \"note\": \"verbatim\"},\n  {\"draft_para\": 12, \"source_paras\": [27], \"note\": \"compressed \u2014 omits rope-assembly detail and some of Pip passage, retains key phrases\"}\n]\n```",
+    "input_tokens": 3183,
+    "output_tokens": 519,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.251540899276733,
+    "stop_reason": "end_turn"
+  }
+}

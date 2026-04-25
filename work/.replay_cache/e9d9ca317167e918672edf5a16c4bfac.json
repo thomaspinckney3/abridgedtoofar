@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:59:29",
+  "key": "e9d9ca317167e918672edf5a16c4bfac",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the jet detail and Java specifics\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2], \"note\": \"compressed \u2014 merges Daggoo's sighting and the white mass description, omits seamen rushing to yard-arms\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4, 5], \"note\": \"compressed \u2014 collapses Ahab's orders, the boats lowering, and the squid description; omits Ahab on bowsprit detail\"},\n  {\"draft_para\": 3, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [8], \"note\": \"paraphrased \u2014 Starbuck's reply slightly condensed, attributed generically\"},\n  {\"draft_para\": 6, \"source_paras\": [9], \"note\": \"paraphrased \u2014 near-verbatim, minor condensation\"}\n]\n```",
+    "input_tokens": 2249,
+    "output_tokens": 295,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.608496189117432,
+    "stop_reason": "end_turn"
+  }
+}

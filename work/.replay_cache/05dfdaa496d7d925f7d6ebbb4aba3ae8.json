@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:56:03",
+  "key": "05dfdaa496d7d925f7d6ebbb4aba3ae8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"paraphrased \u2014 minor wording compression\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [14], \"note\": \"paraphrased\"},\n  {\"draft_para\": 4, \"source_paras\": [15], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [16], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [17], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [18], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [19], \"note\": \"compressed \u2014 omits sharp frost and Grand Jury preamble details but retains key lines\"},\n  {\"draft_para\": 9, \"source_paras\": [20], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [21, 22, 23, 24, 25, 26, 27, 28, 29], \"note\": \"compressed \u2014 collapses the extended sitting-on-sleeper scene and tomahawk-pipe exchange\"},\n  {\"draft_para\": 11, \"source_paras\": [30], \"note\": \"verbatim\"},\n  {\"draft_para\": 12, \"source_paras\": [31], \"note\": \"compressed\"},\n  {\"draft_para\": 13, \"source_paras\": [32], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [33], \"note\": \"paraphrased\"},\n  {\"draft_para\": 15, \"source_paras\": [34], \"note\": \"verbatim\"},\n  {\"draft_para\": 16, \"source_paras\": [35, 36, 37], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 2841,
+    "output_tokens": 529,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.280742168426514,
+    "stop_reason": "end_turn"
+  }
+}

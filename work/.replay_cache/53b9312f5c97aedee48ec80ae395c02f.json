@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:57:23",
+  "key": "53b9312f5c97aedee48ec80ae395c02f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [4], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [6, 9], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [10], \"note\": \"verbatim\"},\n  {\"draft_para\": 4, \"source_paras\": [11], \"note\": \"paraphrased\"},\n  {\"draft_para\": 5, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [14], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [15], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [16], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [17, 18, 19, 20, 21], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [22], \"note\": \"paraphrased\"},\n  {\"draft_para\": 11, \"source_paras\": [24, 25], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [28], \"note\": \"paraphrased\"},\n  {\"draft_para\": 13, \"source_paras\": [29], \"note\": \"paraphrased\"},\n  {\"draft_para\": 14, \"source_paras\": [30], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [31], \"note\": \"compressed\"},\n  {\"draft_para\": 16, \"source_paras\": [32], \"note\": \"compressed\"},\n  {\"draft_para\": 17, \"source_paras\": [33], \"note\": \"paraphrased\"},\n  {\"draft_para\": 18, \"source_paras\": [38], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [39], \"note\": \"compressed \u2014 truncated, omitting the latter half of Ahab's speech\"},\n  {\"draft_para\": 20, \"source_paras\": [40], \"note\": \"verbatim\"},\n  {\"draft_para\": 21, \"source_paras\": [48, 49, 50], \"note\": \"compressed \u2014 skips grog ceremony and lance-crossing ritual (paras 43\u201347)\"}\n]\n```",
+    "input_tokens": 6379,
+    "output_tokens": 653,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.374918222427368,
+    "stop_reason": "end_turn"
+  }
+}

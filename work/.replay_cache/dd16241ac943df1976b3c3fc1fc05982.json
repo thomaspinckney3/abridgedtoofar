@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:57:55",
+  "key": "dd16241ac943df1976b3c3fc1fc05982",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the oath-hammering and history-learning sentences\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2], \"note\": \"compressed \u2014 merges source paras 1 and 2, cutting much detail about rumor spread and fishery context\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4, 9, 12], \"note\": \"compressed \u2014 draws on the rumors/supernatural agencies from paras 3-4 and the ubiquity/immortality claims from paras 9 and 12\"},\n  {\"draft_para\": 3, \"source_paras\": [13, 14], \"note\": \"compressed \u2014 combines the description of Moby Dick's distinguishing features and his white coloring/appellation\"},\n  {\"draft_para\": 4, \"source_paras\": [15], \"note\": \"paraphrased \u2014 condenses the malignity and treacherous retreat description\"},\n  {\"draft_para\": 5, \"source_paras\": [18], \"note\": \"compressed \u2014 takes only the Ahab encounter scene, omitting the extended philosophical passage about monomania and malignity\"},\n  {\"draft_para\": 6, \"source_paras\": [18], \"note\": \"compressed \u2014 draws from the latter half of source para 18 on Ahab's vindictiveness and identification of the whale with evil\"},\n  {\"draft_para\": 7, \"source_paras\": [19], \"note\": \"compressed \u2014 condenses the homeward voyage madness and monomania, omitting much detail\"},\n  {\"draft_para\": 8, \"source_paras\": [21, 22], \"note\": \"compressed \u2014 combines the dissembling/shore return from para 21 with the purposeful voyage details from para 22\"},\n  {\"draft_para\": 9, \"source_paras\": [23], \"note\": \"compressed \u2014 retains the crew description and Ishmael's closing reflection, cutting the philosophical musings about the subterranean miner\"}\n]\n```",
+    "input_tokens": 7489,
+    "output_tokens": 508,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 13.551641941070557,
+    "stop_reason": "end_turn"
+  }
+}

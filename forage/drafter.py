@@ -169,7 +169,12 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
                     or os.environ.get("FORAGE_MODEL")
                     or default_model)
     thinking = "max" if "opus" in active_model.lower() else None
-    max_out = max(prompt.config.get("max_tokens", 16000), 64000) if thinking \
+    # Extended thinking + multi-chapter merge-group output can consume >64k
+    # tokens (thinking budget + visible output share max_tokens). Pre-Opus
+    # default was 64k, but Melville-scale merge groups (6-10 short chapters)
+    # truncated at that ceiling. 128k gives thinking room while leaving plenty
+    # of visible-output budget.
+    max_out = max(prompt.config.get("max_tokens", 16000), 128000) if thinking \
               else prompt.config.get("max_tokens", 32000)
 
     resp = complete(
@@ -194,7 +199,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
         resp = complete(
             prompt=body, cached_prompt=cached,
             model=fallback_model, system=prompt.system,
-            max_tokens=64000 if fb_thinking else max_out,
+            max_tokens=128000 if fb_thinking else max_out,
             temperature=prompt.config.get("temperature"),
             cache=not cached, thinking=fb_thinking,
             work_dir=book.work_dir,
@@ -350,7 +355,12 @@ def draft_segment(
                     or os.environ.get("FORAGE_MODEL")
                     or default_model)
     thinking = "max" if "opus" in active_model.lower() else None
-    max_out = max(prompt.config.get("max_tokens", 16000), 64000) if thinking \
+    # Extended thinking + multi-chapter merge-group output can consume >64k
+    # tokens (thinking budget + visible output share max_tokens). Pre-Opus
+    # default was 64k, but Melville-scale merge groups (6-10 short chapters)
+    # truncated at that ceiling. 128k gives thinking room while leaving plenty
+    # of visible-output budget.
+    max_out = max(prompt.config.get("max_tokens", 16000), 128000) if thinking \
               else prompt.config.get("max_tokens", 32000)
     resp = complete(
         prompt=rendered,
@@ -377,7 +387,7 @@ def draft_segment(
               f"retrying on {fallback_model}",
               file=_sys.stderr, flush=True)
         fb_thinking = "max" if "opus" in fallback_model.lower() else None
-        fb_max = 64000 if fb_thinking else max_out
+        fb_max = 128000 if fb_thinking else max_out
         fallback_stage = (("draft_fallback:" if not critic_feedback
                            else "regen_fallback:")
                           + f"{book.book_id}:{segment_id}")

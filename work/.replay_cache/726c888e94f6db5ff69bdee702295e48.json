@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:04:02",
+  "key": "726c888e94f6db5ff69bdee702295e48",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 combines the Samuel Enderby departure injury with the earlier Nantucket groin injury, omitting the philosophical aside of para 1\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"compressed \u2014 selects key phrases from the long philosophical meditation, dropping the theological/genealogical elaborations\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4, 5], \"note\": \"compressed \u2014 briefly references the reclusiveness explanation from para 3, then merges paras 4 and 5 into a single summary sentence about calling the carpenter and hoisting the forge\"}\n]\n```",
+    "input_tokens": 2188,
+    "output_tokens": 183,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.218472957611084,
+    "stop_reason": "end_turn"
+  }
+}

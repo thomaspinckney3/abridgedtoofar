@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:04:52",
+  "key": "91dca32b71e3e81c208926dc3c16405e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 omits the fortune/Bachelor metaphor and the poetic vesper hymns passage, retains key narrative beats\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"compressed \u2014 omits 'Soothed again, but only soothed to deeper gloom' and some surrounding detail\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 omits the middle portion about water-locked seas, traditions, Niger's unknown source, retaining opening and closing lines\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 draws opening from para 4 and closing lines ('All thy unnamable imminglings...') from para 5, omitting para 5's middle material about the jet and sun\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 near-verbatim but truncated, omitting the final sentence about hill, valley, and foster-brothers\"}\n]\n```",
+    "input_tokens": 1650,
+    "output_tokens": 280,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.19805121421814,
+    "stop_reason": "end_turn"
+  }
+}

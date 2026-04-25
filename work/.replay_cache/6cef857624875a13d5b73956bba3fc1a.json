@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:57:08",
+  "key": "6cef857624875a13d5b73956bba3fc1a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits the observation/tablet detail, keeps the key action\"},\n  {\"draft_para\": 1, \"source_paras\": [1, 2], \"note\": \"compressed \u2014 combines the chain of dinner announcements and Flask's hornpipe entrance\"},\n  {\"draft_para\": 2, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 draws on Ahab-as-sea-lion passage and Flask's hunger/butter details from both paras\"},\n  {\"draft_para\": 3, \"source_paras\": [6, 7, 8], \"note\": \"compressed \u2014 combines harpooneers' arrival, their frantic democracy, and the Dough-Boy abuse scenes\"},\n  {\"draft_para\": 4, \"source_paras\": [9, 10], \"note\": \"compressed \u2014 combines the harpooneers' limited cabin use with Ahab's inaccessibility and the Grisly Bear/Logan closing image\"}\n]\n```",
+    "input_tokens": 4663,
+    "output_tokens": 257,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.529006004333496,
+    "stop_reason": "end_turn"
+  }
+}

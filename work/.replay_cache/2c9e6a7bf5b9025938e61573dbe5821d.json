@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T19:56:28",
+  "key": "2c9e6a7bf5b9025938e61573dbe5821d",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 selects key descriptive phrases from the long opening portrait\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"compressed \u2014 draws from the latter half of source para 0 on superstition, domestic memories, and the whale-fear quote\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4], \"note\": \"compressed \u2014 first sentence from source para 3, second sentence from source para 4\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 selects and condenses key phrases from source para 5, omitting some examples\"}\n]\n```",
+    "input_tokens": 2792,
+    "output_tokens": 186,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.060309171676636,
+    "stop_reason": "end_turn"
+  }
+}

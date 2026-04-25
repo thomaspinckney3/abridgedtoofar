@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:03:39",
+  "key": "23acd40dc35df04d9348c204ad3177d6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed \u2014 merges Enderby history, Amelia/Syren voyages, and closing honor; omits detail from paras 1-2\"},\n  {\"draft_para\": 1, \"source_paras\": [3], \"note\": \"compressed \u2014 omits food description and closing reflections from para 3-4\"},\n  {\"draft_para\": 2, \"source_paras\": [5, 6, 7, 8, 11], \"note\": \"compressed \u2014 merges the hospitality question, Dutch predecessors, the Dutch volume list, and the beer-per-man calculation; omits paras 9-10\"},\n  {\"draft_para\": 3, \"source_paras\": [12], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 3840,
+    "output_tokens": 212,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.668029308319092,
+    "stop_reason": "end_turn"
+  }
+}

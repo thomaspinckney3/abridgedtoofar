@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:03:50",
+  "key": "eed8640414c5293deb8a365fba90ec80",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1], \"note\": \"compressed \u2014 omits the calculation details and Scoresby reference, retains key figures\"},\n  {\"draft_para\": 1, \"source_paras\": [4, 6, 7], \"note\": \"compressed \u2014 combines skeleton measurements, rib details, and the observation that skeleton is not the mould of the living form\"},\n  {\"draft_para\": 2, \"source_paras\": [8], \"note\": \"paraphrased\"},\n  {\"draft_para\": 3, \"source_paras\": [9, 10], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 2090,
+    "output_tokens": 162,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 3.8074262142181396,
+    "stop_reason": "end_turn"
+  }
+}

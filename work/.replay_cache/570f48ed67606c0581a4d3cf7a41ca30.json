@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-24T20:05:46",
+  "key": "570f48ed67606c0581a4d3cf7a41ca30",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed \u2014 combines the description of idle log/line and Ahab's order\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3, 4, 5, 6], \"note\": \"compressed \u2014 skips detail of positioning and unwinding, jumps to Manxman's warning\"},\n  {\"draft_para\": 2, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [14], \"note\": \"compressed \u2014 omits detail about towing resistance causing reelman to stagger\"},\n  {\"draft_para\": 4, \"source_paras\": [15], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [16], \"note\": \"paraphrased \u2014 slightly shortened\"},\n  {\"draft_para\": 6, \"source_paras\": [17, 18], \"note\": \"compressed \u2014 merges Ahab's two speeches, drops Tahitian/Manxman instructions and most of para 18\"},\n  {\"draft_para\": 7, \"source_paras\": [19], \"note\": \"compressed \u2014 truncated, drops the hatchet/arm passage\"},\n  {\"draft_para\": 8, \"source_paras\": [20], \"note\": \"compressed \u2014 drops 'Away from the quarter-deck!'\"},\n  {\"draft_para\": 9, \"source_paras\": [21, 23], \"note\": \"compressed \u2014 merges Ahab's two speeches, skipping para 22 and dropping 'Where sayest thou Pip was'\"},\n  {\"draft_para\": 10, \"source_paras\": [24], \"note\": \"compressed \u2014 slightly shortened\"},\n  {\"draft_para\": 11, \"source_paras\": [25], \"note\": \"compressed \u2014 drops the opening lines about frozen heavens and creative libertines\"},\n  {\"draft_para\": 12, \"source_paras\": [28], \"note\": \"compressed \u2014 drops the rotten line/new line detail\"}\n]\n```",
+    "input_tokens": 2917,
+    "output_tokens": 518,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.02386212348938,
+    "stop_reason": "end_turn"
+  }
+}
