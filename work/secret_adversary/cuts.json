@@ -1,164 +1,113 @@
 {
   "minor_characters": [
     {
-      "name": "Albert (lift-boy/errand-runner)",
-      "appearances_summary": "Helps Tuppence at South Audley Mansions, runs messages, plays greengrocer’s boy, warns of Mrs. Vandemeyer’s departure, and assists Tommy’s Gatehouse stakeout (Ch 010, 012–013, 024).",
-      "reason_removable": "His errands and warnings can be reassigned to anonymous messengers or folded into narration without affecting the core plot."
+      "name": "Albert",
+      "appearances_summary": "The lift-boy at South Audley Mansions whom Tuppence recruits as an ally; later assists Tommy at Astley Priors",
+      "reason_removable": "His comic-relief errands and detective-fiction enthusiasm support scenes whose essential beats (Tuppence's infiltration, Tommy's surveillance) can stand without a named accomplice."
     },
     {
-      "name": "Annie (Mrs. Vandemeyer’s maid)",
-      "appearances_summary": "Gossips to Tuppence about the household and exits in a huff as Tuppence takes the job (Ch 010).",
-      "reason_removable": "Her function is purely expository and can be summarized in a sentence of narration."
-    },
-    {
-      "name": "Cook at Mrs. Vandemeyer’s",
-      "appearances_summary": "Kitchen presence who fears the mistress and chats briefly with Tuppence (Ch 010–011).",
-      "reason_removable": "She contributes atmosphere only and no plot turns depend on her."
-    },
-    {
-      "name": "Hall porter at South Audley Mansions",
-      "appearances_summary": "Seen supervising Albert and opening doors during Tuppence’s maid infiltration (Ch 010).",
-      "reason_removable": "He adds building color but no story beat hinges on him."
-    },
-    {
-      "name": "Henry (page at the Ritz)",
-      "appearances_summary": "Delivers Tuppence’s telegram and casually reports her sudden departure (Ch 019).",
-      "reason_removable": "A desk clerk or brief narration can convey the same information with fewer moving parts."
-    },
-    {
-      "name": "Mrs. Sweeny (caretaker of the Moat House)",
-      "appearances_summary": "Loans the key and confirms the house has stood empty when Tommy and Julius search it (Ch 019).",
-      "reason_removable": "Her scene is part of a detour that can be summarized or elided without loss to the main arc."
-    },
-    {
-      "name": "George (Julius’s chauffeur)",
-      "appearances_summary": "Drives during Julius’s kidnapping of Kramenin and the Gatehouse rescue (Ch 025).",
-      "reason_removable": "His driving can remain offstage; naming and character beats are unnecessary."
-    },
-    {
-      "name": "Butler and footman at Gatehouse",
-      "appearances_summary": "Appear fleetingly as staff when Julius bluffs Kramenin’s ‘order’ to release the girls (Ch 025).",
-      "reason_removable": "They are nameless obstacles; their actions can be compressed to ‘house staff.’"
-    },
-    {
-      "name": "Sir William Beresford",
-      "appearances_summary": "Tommy’s crusty uncle who reconciles and offers a home/allowance during the Savoy coda (Ch 028–029).",
-      "reason_removable": "His reconciliation subplot is peripheral to the spy plot and themes and can be cut cleanly."
-    },
-    {
-      "name": "American Ambassador",
-      "appearances_summary": "Attends the Savoy supper and invites Jane to the Embassy (Ch 028).",
-      "reason_removable": "Diplomatic kudos can be implied via Mr. Carter’s toast; his presence is not structurally needed."
+      "name": "Dr. Hall",
+      "appearances_summary": "The Bournemouth nursing-home doctor who treats Julius after his fall and later confirms Jane's amnesia in Manchester",
+      "reason_removable": "His exposition about Jane's lost memory can be delivered by Sir James or Carter; he is a one-function informant absent from the synopsis."
     },
     {
       "name": "Dr. Roylance",
-      "appearances_summary": "Sir James’s doctor friend in Manchester who houses Jane after her street accident (Ch 020).",
-      "reason_removable": "The ‘kindly doctor’ function can be left unnamed or summarized during Jane’s reveal without changing events."
+      "appearances_summary": "The Manchester doctor in whose house the supposed Jane Finn is convalescing",
+      "reason_removable": "A single-scene host who merely opens a door for the bogus-Jane interview."
     },
     {
-      "name": "Inspector Japp (name-only)",
-      "appearances_summary": "Referenced on a calling card mix‑up during the photograph theft (Ch 006–007).",
-      "reason_removable": "This name-drop adds no plot leverage and can be omitted."
+      "name": "Conrad",
+      "appearances_summary": "The villainous doorkeeper/gaoler at the Soho house",
+      "reason_removable": "Functions as generic muscle whose role can be folded into 'the gang' without affecting Tommy's imprisonment or escape arc."
     },
     {
-      "name": "Greengrocer’s boy / carter",
-      "appearances_summary": "Helps Albert with a ruse and later delivers Jane’s roadside note to Tommy (Ch 024).",
-      "reason_removable": "Anonymous helpers can be elided; both notes can be handed off in narration."
+      "name": "Boris (Count Stepanov)",
+      "appearances_summary": "Foreign agent Tommy trails to Soho; dines with Mrs Vandemeyer; present at the council",
+      "reason_removable": "Although recurring, he is a fungible lieutenant whose plot functions (leading Tommy to Soho, visiting Vandemeyer) the synopsis attributes generically to 'a foreign agent' and the conspirators."
     },
     {
-      "name": "Number 14 (henchman)",
-      "appearances_summary": "A named thug who helps bind Tommy in Soho (Ch 010, 018).",
-      "reason_removable": "He can be collapsed into ‘a henchman’ without losing clarity or stakes."
+      "name": "Sir William Beresford",
+      "appearances_summary": "Tommy's choleric rich uncle, introduced at the closing supper party",
+      "reason_removable": "A coda figure whose reconciliation with Tommy is orthogonal to the central plot resolution."
+    },
+    {
+      "name": "Annie",
+      "appearances_summary": "Mrs Vandemeyer's departing housemaid who briefs Tuppence",
+      "reason_removable": "A single-scene speaker whose function (warning Tuppence about her new mistress) can be cut without consequence."
+    },
+    {
+      "name": "Inspector Japp",
+      "appearances_summary": "Mentioned in connection with the Scotland Yard card brought to Hersheimmer",
+      "reason_removable": "Named only in passing as cover for the impersonation; the scene works with an unnamed inspector."
+    },
+    {
+      "name": "Ivan / Monsieur Grieber",
+      "appearances_summary": "Kramenin's secretary, dismissed from the room before Julius's holdup",
+      "reason_removable": "A walk-on whose only function is to be sent away before the confrontation."
+    },
+    {
+      "name": "George",
+      "appearances_summary": "Julius's chauffeur during the Kent rescue",
+      "reason_removable": "A nameless driver would serve the rescue scene equally well."
+    },
+    {
+      "name": "Mrs Sweeny",
+      "appearances_summary": "Villager at Ebury who lends Tommy and Julius the key to the empty Moat House",
+      "reason_removable": "A one-scene local whose information confirms a dead-end the abridger may compress."
     }
   ],
   "subplots": [
     {
-      "name": "Julius’s impulsive proposal to Tuppence",
-      "chapter_span": "Ch 016",
-      "reason_removable": "This comic feint toward a triangle is resolved immediately and does not alter later pairings or stakes."
-    },
-    {
-      "name": "Tommy’s inheritance reconciliation with Sir William",
-      "chapter_span": "Ch 028–029",
-      "reason_removable": "A feel‑good tag unrelated to the conspiracy; cutting it keeps the denouement focused on the case’s end and the partners’ future."
-    },
-    {
-      "name": "The Moat House (Ebury) caretaker detour",
+      "name": "The Ebury / Moat House false-trail expedition",
       "chapter_span": "Ch 019",
-      "reason_removable": "The empty‑house search and caretaker interview add delay without changing outcomes; Tuppence’s abduction can be reported without the village interlude."
+      "reason_removable": "The decoy telegram lures Tommy and Julius on a several-day wild-goose chase that yields no plot advance beyond confirming Tuppence has been abducted, a fact the synopsis covers in a single beat."
     },
     {
-      "name": "Albert’s disguises and ‘frog‑croak’ signal caper",
-      "chapter_span": "Ch 024",
-      "reason_removable": "These light capers can be summarized as “Tommy used a messenger to stake out the house,” preserving momentum."
-    },
-    {
-      "name": "Rolls‑Royce shopping and dollars-as-sledgehammer vignette",
+      "name": "Julius's Bournemouth tree-climbing escapade",
       "chapter_span": "Ch 012",
-      "reason_removable": "It establishes Julius’s wealth comically but can be implied elsewhere with no effect on plot or theme."
+      "reason_removable": "His comic fall, sprain, and chat with Dr Hall produce only the later (relocatable) fact that 'Nurse Edith' left with a patient; the adventure itself is self-contained colour."
     },
     {
-      "name": "Full Savoy supper guest‑list and matchmaking coda",
-      "chapter_span": "Ch 028–029",
-      "reason_removable": "The lengthy dinner scene can be compressed to Mr. Carter’s toast and the partners’ engagement without the parade of attendees and banter."
+      "name": "Julius's marriage proposal to Tuppence",
+      "chapter_span": "Ch 016, Ch 029",
+      "reason_removable": "The misunderstanding and its resolution are a romantic side-thread whose only structural function (Tommy's jealousy, Tuppence's choice) the synopsis condenses into the closing matrimony beat."
+    },
+    {
+      "name": "Tommy's reconciliation with Uncle William and the Argentine ranch offer",
+      "chapter_span": "Ch 022, Ch 028",
+      "reason_removable": "Tommy's family inheritance subplot is decorative; the synopsis names neither uncle nor ranch and treats the ending as a flat-and-furniture future."
     }
   ],
   "digressions": [
     {
       "chapter_ids": [
-        "002"
-      ],
-      "topic": "Extended money-and-marriage banter and Tuppence’s ‘abridged biography’ at Lyons",
-      "reason_removable": "Lengthy comic patter can be trimmed to their joblessness and decision to form the Young Adventurers, keeping pace brisk."
-    },
-    {
-      "chapter_ids": [
-        "008"
-      ],
-      "topic": "Tommy’s meta‑commentary on ‘how to follow people’ in fiction vs. real streets",
-      "reason_removable": "Amusing aside that slows the chase without revealing character or moving the plot."
-    },
-    {
-      "chapter_ids": [
-        "009"
-      ],
-      "topic": "Soho room filth and peep‑hole set‑dressing in excess",
-      "reason_removable": "Atmosphere repeats can be tightened once the danger layout (no window, thick door, peep‑hole) is established."
-    },
-    {
-      "chapter_ids": [
-        "012"
-      ],
-      "topic": "Julius’s extravagant car‑buying anecdote and hotel comedy",
-      "reason_removable": "Comic business about money and service adds flavor but not story beats."
-    },
-    {
-      "chapter_ids": [
-        "025"
-      ],
-      "topic": "Julius’s tall tales (Arizona, Rockies) while menacing Kramenin",
-      "reason_removable": "The scare tactic works without the embellished yarns; condensing keeps the rescue taut."
-    },
-    {
-      "chapter_ids": [
         "028"
       ],
-      "topic": "Lavish Savoy supper menu, flowers, and long guest introductions",
-      "reason_removable": "Ornate description can be reduced to Mr. Carter’s toast and brief recognition to keep the denouement sleek."
+      "topic": "Extended Savoy supper-party set piece with Mr Carter's reading of Sir James's diary",
+      "reason_removable": "The lengthy diary excerpts and toasts essayistically psychologize the villain after the plot is over; the synopsis already summarizes the diary's revelation in one sentence."
+    }
+  ],
+  "skippable_chapters": [
+    {
+      "chapter_id": "012",
+      "reason_removable": "Julius's Bournemouth narrative is a self-contained side-adventure; only the datum that Nurse Edith left with a patient matters later, and that surfaces again in Ch 015.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
     },
     {
-      "chapter_ids": [
-        "028"
-      ],
-      "topic": "Long quotations from Sir James’s diary",
-      "reason_removable": "His motive and dual life can be summarized in a few lines once his identity as Mr. Brown is revealed."
+      "chapter_id": "019",
+      "reason_removable": "The week-long Ebury wild-goose chase produces no plot advance the synopsis depends on; Tuppence's abduction is already established by the forged telegram in Ch 017, and the Manchester summons in Ch 020 reopens the action.",
+      "kernel": "A week of fruitless searching around the empty Moat House — Tuppence's brooch found among the leaves the only trace — convinces Tommy and Julius that the telegram was a plant and that they must turn to the professionals; Julius resolves to go to Scotland Yard, while Tommy stays behind in case anything breaks.",
+      "relocate_to": "020",
+      "position": "start"
     },
     {
-      "chapter_ids": [
-        "019"
-      ],
-      "topic": "Step‑by‑step travelogue of trains, missed turns, and small‑talk in the Ebury search",
-      "reason_removable": "A detour that can be summarized as a fruitless chase without scenic detail."
+      "chapter_id": "028",
+      "reason_removable": "The Savoy supper, Sir William's introduction, and the long diary readings are valedictory colour after the plot's resolution; the synopsis already condenses the toast and the diary's confession into a sentence.",
+      "kernel": "At a celebratory supper Mr Carter raises a glass to the Joint Venture, reads brief passages from Sir James's notebook revealing a man who chose absolute power outside the law and wore borrowed personalities, and confirms that the treaty has been burnt and the conspiracy collapsed.",
+      "relocate_to": "029",
+      "position": "start"
     }
   ]
 }

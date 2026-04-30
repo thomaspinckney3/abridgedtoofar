@@ -343,13 +343,16 @@
       "source_word_count": 2221,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1200,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": "g006",
       "classification_status": "diegetic",
-      "classification_reason": "Sneak peek excerpt is narrative fiction content"
+      "classification_reason": "Sneak peek excerpt is narrative fiction content",
+      "source_word_count_original": 2221,
+      "target_word_count_original": 1200,
+      "skipped": true
     },
     {
       "id": "021",
@@ -470,7 +473,7 @@
         "019",
         "020"
       ],
-      "combined_target_word_count": 2100,
+      "combined_target_word_count": 900,
       "combined_source_word_count": 3857
     }
   },

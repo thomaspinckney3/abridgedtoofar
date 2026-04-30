@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T13:58:18",
+  "key": "0ad149bc4584216126c53c556ef3e2c0",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [], \"note\": \"unsupported \u2014 chapter heading added by drafter\"},\n  {\"draft_para\": 1, \"source_paras\": [0], \"note\": \"paraphrased\"},\n  {\"draft_para\": 2, \"source_paras\": [1, 2], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [6], \"note\": \"compressed \u2014 condenses Julius's proposal\"},\n  {\"draft_para\": 4, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [11], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [12], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [24, 25], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [29, 30], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [31], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [33], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [34, 35], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [36], \"note\": \"verbatim\"},\n  {\"draft_para\": 13, \"source_paras\": [37], \"note\": \"verbatim\"},\n  {\"draft_para\": 14, \"source_paras\": [38, 39, 40], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [41], \"note\": \"verbatim\"},\n  {\"draft_para\": 16, \"source_paras\": [44], \"note\": \"verbatim\"},\n  {\"draft_para\": 17, \"source_paras\": [45], \"note\": \"verbatim\"},\n  {\"draft_para\": 18, \"source_paras\": [50, 57], \"note\": \"compressed \u2014 combines glance and Tuppence's adventure comment\"},\n  {\"draft_para\": 19, \"source_paras\": [58], \"note\": \"paraphrased\"},\n  {\"draft_para\": 20, \"source_paras\": [59], \"note\": \"verbatim\"},\n  {\"draft_para\": 21, \"source_paras\": [60], \"note\": \"compressed\"},\n  {\"draft_para\": 22, \"source_paras\": [61], \"note\": \"verbatim\"},\n  {\"draft_para\": 23, \"source_paras\": [62], \"note\": \"verbatim\"},\n  {\"draft_para\": 24, \"source_paras\": [63], \"note\": \"verbatim\"},\n  {\"draft_para\": 25, \"source_paras\": [64], \"note\": \"compressed \u2014 omits second sentence\"},\n  {\"draft_para\": 26, \"source_paras\": [65], \"note\": \"paraphrased\"},\n  {\"draft_para\": 27, \"source_paras\": [66], \"note\": \"verbatim\"},\n  {\"draft_para\": 28, \"source_paras\": [67], \"note\": \"verbatim\"},\n  {\"draft_para\": 29, \"source_paras\": [68], \"note\": \"compressed\"},\n  {\"draft_para\": 30, \"source_paras\": [69], \"note\": \"verbatim\"},\n  {\"draft_para\": 31, \"source_paras\": [70], \"note\": \"verbatim\"},\n  {\"draft_para\": 32, \"source_paras\": [71], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 3346,
+    "output_tokens": 932,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.118016004562378,
+    "stop_reason": "end_turn"
+  }
+}

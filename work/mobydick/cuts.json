@@ -2,430 +2,785 @@
   "minor_characters": [
     {
       "name": "Bulkington",
-      "appearances_summary": "Briefly glimpsed as a stoic sailor at the Spouter-Inn (Ch 006) and memorialized in the stand‑alone meditation 'The Lee Shore' (Ch 026)",
-      "reason_removable": "He has no effect on the Pequod’s voyage or its outcome and is unmentioned in the core arc; removing him trims a self‑contained aside without touching the plot or central themes."
+      "appearances_summary": "Glimpsed at the Spouter-Inn (Ch 006) and given a brief eulogistic chapter as helmsman of the Pequod (Ch 026); never speaks again or affects events.",
+      "reason_removable": "He is explicitly a 'stoneless grave' figure with no plot function beyond a thematic meditation on landlessness."
     },
     {
       "name": "Peter Coffin",
-      "appearances_summary": "The jocular Spouter‑Inn landlord who spars with Ishmael on arrival in New Bedford (Ch 005–006)",
-      "reason_removable": "The Spouter‑Inn can function with an unnamed innkeeper; his banter adds color but is not needed to establish Ishmael, Queequeg, or the voyage."
+      "appearances_summary": "Landlord of the Spouter-Inn who jokes about Queequeg and beds Ishmael with him.",
+      "reason_removable": "His role as comic host can be folded into the Spouter-Inn scene without losing any later reference."
     },
     {
       "name": "Mrs. Hussey",
-      "appearances_summary": "The Try Pots proprietress who serves chowder and fusses over boarding‑house rules (Ch 018)",
-      "reason_removable": "She is a comic grace note; chowder at the Try Pots can be retained in narration without her specific personality or dialogue."
+      "appearances_summary": "Proprietress of the Try Pots who serves chowder and confiscates Queequeg's harpoon during the Ramadan.",
+      "reason_removable": "She is local color around the chowder and Ramadan beats and never recurs."
     },
     {
-      "name": "Guernsey-mate of the Rose‑Bud",
-      "appearances_summary": "Mate of the French whaler Rose‑Bud in the ambergris episode, bickering through an interpreter with Stubb (Ch 094)",
-      "reason_removable": "Comic foil in a detachable encounter; cutting him and the ship’s vignette does not alter the Pequod’s track or Ahab’s pursuit."
+      "name": "Aunt Charity",
+      "appearances_summary": "Bildad's sister who fusses over Pequod's outfitting and sends ginger aboard.",
+      "reason_removable": "Her bustle adds flavor but no plot consequence; the ginger gag in Ch 075 is self-contained."
     },
     {
-      "name": "Captain Boomer (Samuel Enderby)",
-      "appearances_summary": "Genial English captain missing an arm, who warns Ahab off Moby Dick during their gam (Ch 101–103)",
-      "reason_removable": "His role duplicates warnings Ahab already ignores; the core gams named in the synopsis (Jeroboam, Jungfrau, Rachel) carry the needed braid of rumor and omen."
+      "name": "Elijah",
+      "appearances_summary": "Ragged 'prophet' on the Nantucket wharves who hints darkly about Ahab to Ishmael and Queequeg.",
+      "reason_removable": "His ominous foreshadowing duplicates what Peleg, Tistig, and Ahab's own appearance already establish."
+    },
+    {
+      "name": "Dough-Boy",
+      "appearances_summary": "Pale ship's steward bullied by the harpooneers at the cabin table and elsewhere.",
+      "reason_removable": "A comic foil for the harpooneers' 'frantic democracy'; removing him does not touch the main arc."
+    },
+    {
+      "name": "Fleece",
+      "appearances_summary": "Old black cook who delivers the comic sermon to the sharks at Stubb's request in Ch 067.",
+      "reason_removable": "His sermon is a self-contained set piece with no consequence for plot or main characters."
+    },
+    {
+      "name": "Captain Mayhew",
+      "appearances_summary": "Captain of the Jeroboam who relays Gabriel's story and Macey's death.",
+      "reason_removable": "Gabriel and the gam itself (in the synopsis) carry the meaning; Mayhew is a narrative conduit who can be compressed."
+    },
+    {
+      "name": "Harry Macey",
+      "appearances_summary": "Jeroboam mate killed by Moby Dick, recalled in Gabriel's tale and via the undelivered letter.",
+      "reason_removable": "An offstage casualty whose function (Moby Dick has killed before) is already covered by Ahab's own history."
+    },
+    {
+      "name": "Derick De Deer",
+      "appearances_summary": "Bremen captain of the Jungfrau who borrows oil and races the Pequod for a sick old whale.",
+      "reason_removable": "The Jungfrau gam is in the synopsis, but Derick himself is interchangeable color and can be reduced to 'the German captain.'"
+    },
+    {
+      "name": "Steelkilt and Radney",
+      "appearances_summary": "Lakeman mutineer and Vineyard mate in the embedded Town-Ho story (Ch 057).",
+      "reason_removable": "They exist only inside a self-contained inset tale that has no bearing on the Pequod's voyage."
+    },
+    {
+      "name": "Cabaco and Archy",
+      "appearances_summary": "Sailors who overhear Fedallah's hidden crew below decks in Ch 046.",
+      "reason_removable": "Their eavesdropping merely foreshadows the reveal that the synopsis already gives directly."
+    },
+    {
+      "name": "Captain Sleet",
+      "appearances_summary": "Fictional Greenland whaler cited at length in the Mast-Head chapter for his crow's-nest.",
+      "reason_removable": "A digressive citation inside an essayistic chapter, with no narrative role."
+    },
+    {
+      "name": "Old Manxman, Tashtego's senior, Dough-Boy etc. forecastle voices",
+      "appearances_summary": "Anonymous or near-anonymous sailors who deliver lines in the Midnight Forecastle scene (Ch 043).",
+      "reason_removable": "The polyglot 'democracy of hands' is established by the synopsis at a glance and need not be dramatized chorus by chorus."
+    },
+    {
+      "name": "Captain Boomer",
+      "appearances_summary": "One-gam captain of the Samuel Enderby who lost an arm to Moby Dick and tells his tale to Ahab.",
+      "reason_removable": "His encounter is one more in a series of gam-confirmations of the White Whale; the synopsis names other ships (Jeroboam, Jungfrau, Rachel, Delight) but not this one, and his anecdote can be cut without altering the main arc."
     },
     {
       "name": "Dr. Bunger",
-      "appearances_summary": "Wry surgeon aboard the Samuel Enderby who spars verbally with Ahab (Ch 103)",
-      "reason_removable": "A side comic presence in a removable gam; eliminating him tightens focus on Ahab’s obsession without loss."
+      "appearances_summary": "The Samuel Enderby's surgeon who provides comic relief during the gam.",
+      "reason_removable": "Pure comic byplay attached to a removable gam."
     },
     {
-      "name": "Captain of the Albatross (Goney)",
-      "appearances_summary": "Silent, unlucky captain of the passing ship Albatross that drops his speaking‑trumpet (Ch 052)",
-      "reason_removable": "A brief atmospheric omen; the synopsis already preserves the essential gams, so this extra sighting can go without harm."
+      "name": "Captain Gardiner",
+      "appearances_summary": "Nantucket captain of the Rachel who begs Ahab to help search for his lost son.",
+      "reason_removable": "Named here only for completeness; the Rachel encounter is preserved per the synopsis but Gardiner's name itself is incidental."
+    },
+    {
+      "name": "Perth",
+      "appearances_summary": "The blacksmith with a backstory of ruin who forges Ahab's harpoon.",
+      "reason_removable": "His personal backstory chapter (The Blacksmith) is digressive; the forging itself must remain but Perth's biography can be excised."
+    },
+    {
+      "name": "Tranquo, king of Tranque",
+      "appearances_summary": "Mentioned in Ishmael's Arsacides reminiscence about a whale-skeleton temple.",
+      "reason_removable": "Embedded anecdote with no bearing on the Pequod's voyage."
+    },
+    {
+      "name": "Captain of the Bouton-de-Rose",
+      "appearances_summary": "French captain duped by Stubb in the ambergris episode.",
+      "reason_removable": "One-scene comic foil within a removable side adventure."
+    },
+    {
+      "name": "The Guernsey-man",
+      "appearances_summary": "Chief mate of the Rose-Bud who conspires with Stubb.",
+      "reason_removable": "One-scene speaker tied to the removable Rose-Bud episode."
     },
     {
       "name": "Captain of the Bachelor",
-      "appearances_summary": "Exultant homeward‑bound master of the Bachelor who invites Ahab aboard (Ch 118)",
-      "reason_removable": "This celebratory contrast to the Pequod’s doom is dispensable; the Rachel encounter supplies the necessary moral counterpoint late in the arc."
-    },
-    {
-      "name": "The Manxman",
-      "appearances_summary": "An elderly sailor who mutters fatalistic asides during several deck scenes (e.g., Ch 099–102)",
-      "reason_removable": "His gnomic color does not affect events or major character arcs; excising him reduces stage‑business without touching the story."
-    },
-    {
-      "name": "Dough‑Boy (steward)",
-      "appearances_summary": "The timid steward who ferries food and gets flustered by mates (e.g., Ch 064, 067, 097)",
-      "reason_removable": "A bit player for comic texture; removing his lines leaves all whaling action and Ahab’s arc intact."
-    },
-    {
-      "name": "The Manxman (old Manx sailor)",
-      "appearances_summary": "Ch 128–131: chats at the log and line, mutters superstitions about omens and the Rachel, offers commentary during storm work and deaths.",
-      "reason_removable": "He is a color character whose superstitions and quips can be omitted or reassigned to unnamed sailors without affecting any plot turn or a principal character’s arc."
-    },
-    {
-      "name": "The Sicilian seaman",
-      "appearances_summary": "Ch 133: cries out from the mizzen-mast about Ahab’s hat as a sea-hawk snatches it.",
-      "reason_removable": "His one-line omen trigger adds atmosphere only, and cutting him (and the hat incident) does not alter events or themes already reinforced elsewhere."
-    },
-    {
-      "name": "The Tahitian (seaman)",
-      "appearances_summary": "Ch 128: helps Ahab heave the log with the Manxman and is briefly addressed in the melee with Pip.",
-      "reason_removable": "He serves a purely functional role that can be performed by an unnamed hand without changing any outcome or relationship."
+      "appearances_summary": "Jolly captain of a homeward-bound ship met in passing.",
+      "reason_removable": "The Bachelor gam is thematic counterpoint not required by the synopsis."
     },
     {
       "name": "Captain of the Delight",
-      "appearances_summary": "Ch 134: the hollow-cheeked master who gams with the Pequod while burying a sailor lost to Moby Dick.",
-      "reason_removable": "He is confined to a single, parallel-incident gam that duplicates omens and losses shown elsewhere and is not required by the synopsis."
+      "appearances_summary": "Hollow-cheeked captain burying a sailor killed by Moby Dick.",
+      "reason_removable": "Brief omen-scene; its function (omens before the chase) is already carried by the typhoon, corpusants, and Rachel."
+    },
+    {
+      "name": "Mounttop",
+      "appearances_summary": "First mate of the Samuel Enderby, named in a parenthetical introduction.",
+      "reason_removable": "One-line walk-on tied to a removable gam."
     }
   ],
   "subplots": [
     {
-      "name": "The Town‑Ho’s Story",
+      "name": "The Town-Ho's Story",
       "chapter_span": "Ch 057",
-      "reason_removable": "A long inset tale told off the Pequod that does not change Ahab’s hunt, Ishmael’s arc, or the ship’s fate; cutting it preserves narrative drive."
+      "reason_removable": "An embedded tale told at a Lima inn about a different ship's mutiny; it never affects the Pequod's plot or Ishmael's arc."
     },
     {
-      "name": "Bulkington and The Lee Shore",
+      "name": "Tashtego's fall into the Heidelburgh Tun and Queequeg's rescue",
+      "chapter_span": "Ch 080\u2013081",
+      "reason_removable": "A self-contained mishap during head-baling that has no later consequences for plot, theme, or character."
+    },
+    {
+      "name": "Stubb and Flask's Right Whale hunt and superstitions about Fedallah",
+      "chapter_span": "Ch 076",
+      "reason_removable": "Procures the second head for the head-contrast essays but produces no plot beat the synopsis depends on."
+    },
+    {
+      "name": "The Jungfrau's chase of the old, lame whale and the Fin-Back coda",
+      "chapter_span": "Ch 084 (latter half)",
+      "reason_removable": "The gam itself is in the synopsis ('all brass and emptiness'); the extended kill and aftermath are color that can be trimmed."
+    },
+    {
+      "name": "The Bulkington apostrophe",
       "chapter_span": "Ch 026",
-      "reason_removable": "A lyric memorial to a peripheral sailor; its meditation on freedom and fate duplicates broader themes without affecting the Pequod’s story."
+      "reason_removable": "A short eulogy for a character introduced and dropped without consequence."
     },
     {
-      "name": "The Rose‑Bud (ambergris trick)",
-      "chapter_span": "Ch 094",
-      "reason_removable": "A comic interlude with a French whaler; amusing but extraneous to Ahab’s pursuit and the named gams that matter to the plot."
+      "name": "The Pequod meets the Bouton-de-Rose (Stubb's ambergris swindle)",
+      "chapter_span": "094\u2013095",
+      "reason_removable": "A self-contained comic episode whose only consequence (Pip taking an after-oarsman's place) can be relocated as a single sentence."
     },
     {
-      "name": "The Samuel Enderby gam (Captain Boomer)",
-      "chapter_span": "Ch 100–103",
-      "reason_removable": "Reiterates warnings Ahab rejects; the Jeroboam and Rachel encounters in the synopsis already supply the braid of rumor, omen, and final moral reckoning."
+      "name": "The Pequod meets the Samuel Enderby",
+      "chapter_span": "103\u2013104",
+      "reason_removable": "A duplicative gam: another captain maimed by Moby Dick adds atmosphere but no new plot beat beyond what Jeroboam/Rachel/Delight already supply."
     },
     {
-      "name": "The Albatross (Goney) sighting",
-      "chapter_span": "Ch 052",
-      "reason_removable": "An atmospheric pass‑by; removing it streamlines the outward passage without weakening the established forebodings."
+      "name": "The Pequod meets the Bachelor",
+      "chapter_span": "118",
+      "reason_removable": "Thematic counterpoint (jolly homeward-bound ship) not required by the synopsis's chain of gams."
     },
     {
-      "name": "The Grand Armada nursery‑scene",
-      "chapter_span": "Ch 087",
-      "reason_removable": "A lush set‑piece of whales at play; beautiful but nonessential to the Pequod’s hunt or the climactic pursuit."
+      "name": "Perth the blacksmith's backstory",
+      "chapter_span": "115",
+      "reason_removable": "A self-contained biographical digression; the forge scene that matters (Ch. 116) stands without it."
     },
     {
-      "name": "The Spirit‑Spout",
-      "chapter_span": "Ch 051",
-      "reason_removable": "A spectral tease that foreshadows Moby Dick; the synopsis already keeps Fedallah’s prophecy and the major gams for fatalism and omen."
-    },
-    {
-      "name": "The Decanter (Enderby after‑talk)",
-      "chapter_span": "Ch 114",
-      "reason_removable": "A retrospective on the Enderby gam; once that visit is cut, this coda may go as well without loss."
-    },
-    {
-      "name": "Ahab’s hat carried off by the sea-hawk (the omen of the hat)",
-      "chapter_span": "Ch 133",
-      "reason_removable": "This self-contained omen has no causal effect on the chase or crew and the book’s tapestry of portents is already ample without it."
-    },
-    {
-      "name": "Gam with the Delight (burial at sea and warning from a ruined crew)",
-      "chapter_span": "Ch 134",
-      "reason_removable": "It is an atmospheric parallel that neither advances the Pequod’s plot nor adds necessities beyond omens already supplied by other gams and scenes."
-    },
-    {
-      "name": "Starbuck’s midnight temptation with the musket",
-      "chapter_span": "Ch 126",
-      "reason_removable": "Starbuck’s moral caution, piety, and later near-mutiny are fully legible from the typhoon scenes and the third-day plea, so this private crisis can be trimmed without obscuring his arc."
-    },
-    {
-      "name": "Forecastle nightwork interlude (banter, songs, and brief lashings during the typhoon)",
-      "chapter_span": "Ch 124–125",
-      "reason_removable": "These short side-scenes provide comic relief and texture but do not change the storm’s outcome, Ahab’s stance, or any later decision."
-    },
-    {
-      "name": "Orders on deck during the gale (Ahab refuses to strike anything down)",
-      "chapter_span": "Ch 123",
-      "reason_removable": "The same trait—Ahab’s defiant will in storm and omen—is conveyed more forcefully in the St. Elmo’s fire and quadrant/compass chapters."
+      "name": "The Arsacides whale-skeleton reminiscence",
+      "chapter_span": "105\u2013106",
+      "reason_removable": "An embedded travel anecdote unconnected to the Pequod's voyage."
     }
   ],
   "digressions": [
     {
       "chapter_ids": [
-        "001"
-      ],
-      "topic": "Etymology",
-      "reason_removable": "A playful preface of word‑origins that does not touch the voyage, characters, or through‑line."
-    },
-    {
-      "chapter_ids": [
+        "001",
         "002",
         "003"
       ],
-      "topic": "Extracts (quotations about whales)",
-      "reason_removable": "A literary collage that sets tone but can be omitted without affecting plot or core themes preserved elsewhere."
+      "topic": "Etymology and Extracts on whales",
+      "reason_removable": "Front-matter compendium of quotations and word-lists that precedes the narrative proper."
+    },
+    {
+      "chapter_ids": [
+        "027",
+        "028"
+      ],
+      "topic": "The Advocate / Postscript: defense of whaling's dignity",
+      "reason_removable": "Polemical essay chapters with no plot or character development."
     },
     {
       "chapter_ids": [
         "035"
       ],
-      "topic": "Cetology (taxonomy overview)",
-      "reason_removable": "Ishmael’s cataloguing can be sampled elsewhere; trimming this long taxonomy leaves the chase and themes intact."
+      "topic": "Cetology: bibliographic classification of whales",
+      "reason_removable": "Pure taxonomic essay; the synopsis explicitly notes such 'learned digressions' as a confession of mystery, which a single short specimen can carry."
     },
     {
       "chapter_ids": [
-        "056"
+        "036"
       ],
-      "topic": "The Gam (definition and custom)",
-      "reason_removable": "A procedural aside; the necessary gams are dramatized in‑scene, so the definition chapter can be cut."
+      "topic": "The Specksnyder: history of the harpooneer rank",
+      "reason_removable": "Historical exposition about whaling hierarchy with no narrative load."
     },
     {
       "chapter_ids": [
-        "058"
+        "038"
       ],
-      "topic": "Monstrous pictures of whales",
-      "reason_removable": "An art‑historical riff; enjoyable but irrelevant to the hunt or to Ahab’s arc."
+      "topic": "The Mast-Head: history and reverie of mast-head standing",
+      "reason_removable": "Essayistic meditation that can be condensed into a few sentences in the catalog Ishmael describes."
     },
     {
       "chapter_ids": [
-        "059"
+        "048"
       ],
-      "topic": "Less erroneous whale pictures and true scenes",
-      "reason_removable": "Further art commentary; can be dropped with no effect on story or character."
+      "topic": "The Affidavit: documented cases of whales sinking ships",
+      "reason_removable": "Author's brief on the plausibility of the climax; orthogonal to the experiential narrative."
     },
     {
       "chapter_ids": [
+        "058",
+        "059",
         "060"
       ],
-      "topic": "Whales in paint, teeth, wood, iron, stone, mountains, stars",
-      "reason_removable": "A wide‑ranging meditation on representations; ornamental rather than structural."
+      "topic": "Surveys of monstrous, less-erroneous, and miscellaneous whale pictures",
+      "reason_removable": "An art-history triptych on whale iconography unrelated to plot."
     },
     {
       "chapter_ids": [
         "061"
       ],
-      "topic": "Brit (natural‑history note)",
-      "reason_removable": "Naturalist color that can be excised without dulling plot momentum."
+      "topic": "Brit: meadows of feed and the cannibal sea",
+      "reason_removable": "Mood essay; its 'universal cannibalism' theme is already captured by other surviving passages."
     },
     {
       "chapter_ids": [
+        "063"
+      ],
+      "topic": "The Line: technical and metaphysical anatomy of the whale-line",
+      "reason_removable": "Equipment essay that can be reduced to a sentence within the kill scene."
+    },
+    {
+      "chapter_ids": [
+        "065",
         "066"
       ],
-      "topic": "The Crotch (gear detail)",
-      "reason_removable": "Technical minutiae of gear that add little to character or theme."
+      "topic": "The Dart and The Crotch: technique of harpooning",
+      "reason_removable": "Technical sidebars on whaling craft."
     },
     {
       "chapter_ids": [
         "068"
       ],
-      "topic": "The Whale as a Dish",
-      "reason_removable": "Culinary/philosophical digression; removable with no impact on the narrative."
+      "topic": "The Whale as a Dish: gastronomy of whale meat",
+      "reason_removable": "Culinary essay tangential to plot."
     },
     {
       "chapter_ids": [
-        "071"
-      ],
-      "topic": "The Blanket (blubber as skin)",
-      "reason_removable": "Technical anatomy; the synopsis already preserves Ishmael’s cataloguing feel elsewhere."
-    },
-    {
-      "chapter_ids": [
+        "071",
         "072"
       ],
-      "topic": "The Funeral (carcase adrift and omens)",
-      "reason_removable": "A lyrical aside on a drifting corpse; mood can be sustained without it."
+      "topic": "The Blanket and The Funeral: the whale's skin and floating carcass",
+      "reason_removable": "Anatomical and elegiac essays after the first kill."
     },
     {
       "chapter_ids": [
-        "075"
+        "077",
+        "078"
       ],
-      "topic": "The Monkey‑Rope",
-      "reason_removable": "A metaphysical riff on interdependence; resonant but optional for a tight plot‑driven abridgment."
+      "topic": "Sperm Whale's Head and Right Whale's Head contrasted",
+      "reason_removable": "Anatomical comparison enabled only by the side-quest of the Right-whale kill."
     },
     {
       "chapter_ids": [
         "079"
       ],
-      "topic": "The Battering‑Ram (forehead power)",
-      "reason_removable": "Anatomy and symbolism chapter that can be trimmed without harming the chase."
+      "topic": "The Battering-Ram: the structure of the whale's brow",
+      "reason_removable": "Anatomical argument prefiguring the climax that the climax already proves."
     },
     {
       "chapter_ids": [
-        "081"
+        "082",
+        "083"
       ],
-      "topic": "Cistern and Buckets (case‑baling procedure)",
-      "reason_removable": "Shop‑floor process detail; dispensable."
+      "topic": "The Prairie and The Nut: physiognomy and phrenology of the whale",
+      "reason_removable": "Pseudo-scientific digressions on the whale's face and skull."
     },
     {
       "chapter_ids": [
-        "085"
-      ],
-      "topic": "The Fountain (spout debate)",
-      "reason_removable": "A speculative essay on spouting; color rather than core."
-    },
-    {
-      "chapter_ids": [
+        "085",
         "086"
       ],
-      "topic": "The Tail",
-      "reason_removable": "Extended praise of the flukes; thematically echoing but nonessential."
+      "topic": "Honor and Glory of Whaling; Jonah Historically Regarded",
+      "reason_removable": "Mythological and exegetical sidebars defending whaling's pedigree."
+    },
+    {
+      "chapter_ids": [
+        "087"
+      ],
+      "topic": "Pitchpoling: a lance technique demonstrated by Stubb",
+      "reason_removable": "A second technical kill-method scene after Stubb's main kill."
     },
     {
       "chapter_ids": [
         "088"
       ],
-      "topic": "Schools and Schoolmasters",
-      "reason_removable": "Natural‑history taxonomy of pods; removable without loss."
+      "topic": "The Fountain: physiology of the whale's spout",
+      "reason_removable": "Speculative essay on whether the spout is water or vapor."
     },
     {
       "chapter_ids": [
         "089"
       ],
-      "topic": "Fast‑Fish and Loose‑Fish",
-      "reason_removable": "A legal‑philosophical disquisition; notable but not needed for plot or the core fatalism of the hunt."
+      "topic": "Anatomy and motions of the sperm whale's tail",
+      "reason_removable": "Cetological essay with no plot or character function."
     },
     {
       "chapter_ids": [
-        "090"
+        "091"
       ],
-      "topic": "Heads or Tails (royal fish law)",
-      "reason_removable": "Another law digression; safe to excise."
+      "topic": "Whale schools and 'schoolmasters'",
+      "reason_removable": "Taxonomic digression on whale social organization."
     },
     {
       "chapter_ids": [
-        "094"
+        "092"
       ],
-      "topic": "The Squeeze of the Hand",
-      "reason_removable": "A celebrated lyrical passage about fellowship; beautiful but optional in a lean narrative cut."
+      "topic": "Fast-Fish and Loose-Fish whaling law",
+      "reason_removable": "Legal-philosophical essay independent of the main arc."
+    },
+    {
+      "chapter_ids": [
+        "093"
+      ],
+      "topic": "English royal-fish law (Heads or Tails)",
+      "reason_removable": "Legal anecdote unconnected to the Pequod."
     },
     {
       "chapter_ids": [
         "095"
       ],
-      "topic": "Ambergris",
-      "reason_removable": "A profitable substance’s aside; detachable."
+      "topic": "Ambergris lore",
+      "reason_removable": "Encyclopedic digression following the Rose-Bud episode."
+    },
+    {
+      "chapter_ids": [
+        "097"
+      ],
+      "topic": "Squeezing sperm and other blubber substances",
+      "reason_removable": "Lyrical-taxonomic interlude; the famous 'squeeze of the hand' passage is thematic seasoning, not plot."
     },
     {
       "chapter_ids": [
         "098"
       ],
-      "topic": "The Cassock",
-      "reason_removable": "Anatomical whimsy about the mincer’s smock; expendable."
+      "topic": "The mincer's 'cassock' (whale-pelt vestment)",
+      "reason_removable": "Brief comic-anatomical sketch."
     },
     {
       "chapter_ids": [
         "100"
       ],
-      "topic": "The Lamp",
-      "reason_removable": "A note on shipboard lamps and oil; nonessential."
+      "topic": "Lamps and oil aboard a whaler",
+      "reason_removable": "Short descriptive sketch with no narrative function."
     },
     {
       "chapter_ids": [
         "101"
       ],
-      "topic": "Stowing Down and Clearing Up",
-      "reason_removable": "Process description that can go without harming character or plot."
+      "topic": "Stowing down and cleaning the ship",
+      "reason_removable": "Procedural description of post-trying routine."
     },
     {
       "chapter_ids": [
-        "105"
+        "104"
       ],
-      "topic": "A Bower in the Arsacides (whale skeleton shrine)",
-      "reason_removable": "A travelogue‑like meditation on a beached skeleton; evocative but not required."
+      "topic": "History of the Enderby whaling house and Dutch whaling provisions",
+      "reason_removable": "Historical-statistical essay."
     },
     {
       "chapter_ids": [
+        "105",
         "106"
       ],
-      "topic": "Measurement of the Whale’s Skeleton",
-      "reason_removable": "Exact measurements and speculation; removable."
+      "topic": "Skeleton anecdote and measurements",
+      "reason_removable": "Anatomical-archaeological digression unconnected to the voyage."
     },
     {
       "chapter_ids": [
         "107"
       ],
-      "topic": "The Fossil Whale",
-      "reason_removable": "Deep time cetology; thematic echo, not structural necessity."
+      "topic": "Fossil whales",
+      "reason_removable": "Geological-paleontological essay."
     },
     {
       "chapter_ids": [
         "108"
       ],
-      "topic": "Does the Whale’s Magnitude Diminish?—Will He Perish?",
-      "reason_removable": "A historical‑statistical essay; can be trimmed without loss."
+      "topic": "Whether the whale will perish or diminish",
+      "reason_removable": "Speculative natural-history essay."
     },
     {
       "chapter_ids": [
-        "114"
+        "110"
       ],
-      "topic": "The Pacific",
-      "reason_removable": "A lyrical apostrophe to the ocean; the synopsis already captures the sea’s overarching presence."
+      "topic": "Character sketch of the carpenter",
+      "reason_removable": "Standalone portrait; the carpenter's plot functions (leg, coffin) are dramatized in adjacent chapters."
     },
     {
       "chapter_ids": [
         "115"
       ],
-      "topic": "The Blacksmith (Perth’s backstory)",
-      "reason_removable": "A moving biography not needed to understand the forging of Ahab’s ‘infernal iron’ preserved in the synopsis."
+      "topic": "Perth the blacksmith's biography",
+      "reason_removable": "Backstory digression preceding the forge scene."
+    }
+  ],
+  "skippable_chapters": [
+    {
+      "chapter_id": "001",
+      "reason_removable": "Etymology front-matter, no narrative content.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "117"
-      ],
-      "topic": "The Gilder",
-      "reason_removable": "Another oceanic reverie; optional in a focused abridgment."
+      "chapter_id": "002",
+      "reason_removable": "Sub-Sub-Librarian preface to the Extracts.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "119"
-      ],
-      "topic": "The Dying Whale",
-      "reason_removable": "A poetic death tableau unconnected to the main chase; expendable."
+      "chapter_id": "003",
+      "reason_removable": "Compendium of literary extracts on whales.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "121"
-      ],
-      "topic": "Lavish description of the Japanese sun and Ahab’s broad apostrophe to Science before the act with the quadrant.",
-      "reason_removable": "Trimming the purple prelude preserves the essential action (renouncing instruments) noted in the synopsis while tightening pace."
+      "chapter_id": "026",
+      "reason_removable": "A short apostrophe to Bulkington with no plot consequence.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "122"
-      ],
-      "topic": "Technical aside on shipboard lightning-rods and corpusants.",
-      "reason_removable": "The storm’s spectacle and Ahab’s blasphemous consecration of the harpoon read clearly without the hardware tutorial."
+      "chapter_id": "027",
+      "reason_removable": "Essay defending the dignity of whaling.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "127"
-      ],
-      "topic": "Didactic explanation of lightning’s effects on compasses and magnetism at sea.",
-      "reason_removable": "Ahab’s forging of a new compass (which the synopsis preserves) carries the dramatic point without the science lesson."
+      "chapter_id": "028",
+      "reason_removable": "Postscript joke about coronation oil; no narrative content.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "128"
-      ],
-      "topic": "General essay on the neglect of the log and line among whalemen before the scene itself.",
-      "reason_removable": "The needed beats—that the line parts and Ahab later folds Pip to him—survive without the trade-practice preamble."
+      "chapter_id": "035",
+      "reason_removable": "Pure cetological taxonomy.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
     },
     {
-      "chapter_ids": [
-        "129"
-      ],
-      "topic": "Speculations about seal-cries, mermaids, and sailors’ superstitions before the mast-head fall.",
-      "reason_removable": "The plot consequence (a lookout falls and the coffin becomes a life-buoy) is intact without the folkloric detour."
+      "chapter_id": "036",
+      "reason_removable": "Historical essay on the harpooneer rank, plus a brief note that Ahab cloaks his will in customary forms.",
+      "kernel": "Ahab observes the punctilious forms of the quarter-deck and through them masks his sultanism, turning ship's usage into the vehicle of his private will.",
+      "relocate_to": "037",
+      "position": "start"
     },
     {
-      "chapter_ids": [
-        "130"
-      ],
-      "topic": "Ahab’s metaphysical riff on the coffin as an ‘immortality-preserver.’",
-      "reason_removable": "Its philosophy echoes themes voiced elsewhere, while the practical fact of the coffin’s conversion has already been established."
+      "chapter_id": "038",
+      "reason_removable": "Essay on mast-head standing with no plot beats.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "136"
-      ],
-      "topic": "Footnoted aside defining ‘pitchpoling.’",
-      "reason_removable": "The chase’s action is self-explanatory on the page and does not require the glossary note."
+      "chapter_id": "048",
+      "reason_removable": "The Affidavit: documentary defense of the climax's plausibility.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     },
     {
-      "chapter_ids": [
-        "137"
-      ],
-      "topic": "Extended analogy on night-and-day pursuit, pilots, compasses, and even railways.",
-      "reason_removable": "This essayistic generalization can be lifted without affecting the momentum or clarity of the second day’s chase."
+      "chapter_id": "057",
+      "reason_removable": "The Town-Ho's Story is a self-contained inset tale told at a Lima inn.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "058",
+      "reason_removable": "Survey of monstrous whale pictures.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "059",
+      "reason_removable": "Survey of less-erroneous whale pictures.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "060",
+      "reason_removable": "Catalog of whales in paint, teeth, wood, stone, and stars.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "061",
+      "reason_removable": "Brit-meadows mood essay; its 'universal cannibalism' beat survives elsewhere.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "063",
+      "reason_removable": "Essay on the whale-line.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "065",
+      "reason_removable": "Reflective sidebar on the harpooneer's dart.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "066",
+      "reason_removable": "Equipment note on the crotch and second iron.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "068",
+      "reason_removable": "Essay on eating whale meat.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "071",
+      "reason_removable": "Essay on the whale's skin/blubber.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "072",
+      "reason_removable": "Elegiac essay on the discarded carcass.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "076",
+      "reason_removable": "A second kill (Right Whale) staged largely to enable the head-contrast essays.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "077",
+      "reason_removable": "Anatomical comparison of the two heads.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "078",
+      "reason_removable": "Anatomical comparison of the two heads.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "079",
+      "reason_removable": "Essay on the whale's forehead as battering-ram.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "080",
+      "reason_removable": "Anatomy of the sperm whale's case.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "081",
+      "reason_removable": "Tashtego's fall into the case and Queequeg's rescue is a self-contained mishap with no later consequence.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "082",
+      "reason_removable": "Physiognomy of the whale.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "083",
+      "reason_removable": "Phrenology of the whale.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "085",
+      "reason_removable": "Mythological pedigree of whaling.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "086",
+      "reason_removable": "Exegetical defense of the Jonah story.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "087",
+      "reason_removable": "A pitchpoling kill scene additional to Stubb's main kill.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "088",
+      "reason_removable": "Essay on the spout.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "089",
+      "reason_removable": "Pure cetological essay on the tail.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "091",
+      "reason_removable": "Taxonomic essay on whale 'schools.'",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "092",
+      "reason_removable": "Legal essay on Fast-Fish and Loose-Fish.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "093",
+      "reason_removable": "Legal anecdote on royal fish.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "094",
+      "reason_removable": "The Rose-Bud episode is a self-contained comic gam; only its consequence (Pip taking an oarsman's place) feeds later chapters.",
+      "kernel": "Some weeks earlier, the Pequod had encountered a French whaler called the Rose-Bud, whose crew was unwittingly carrying a fortune in ambergris within a putrid blasted whale; Stubb, with his usual roguishness, talked them out of the prize, to the comic consternation of the French captain. Shortly afterward, one of Stubb's after-oarsmen sprained his hand, and Pip was temporarily put into his place.",
+      "relocate_to": "096",
+      "position": "start"
+    },
+    {
+      "chapter_id": "095",
+      "reason_removable": "Encyclopedic essay on ambergris attached to the removable Rose-Bud episode.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "098",
+      "reason_removable": "Brief sketch of the mincer's whale-pelt vestment.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "100",
+      "reason_removable": "Short descriptive sketch on whaler lamps.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "101",
+      "reason_removable": "Procedural description of stowing down.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "103",
+      "reason_removable": "The Samuel Enderby gam duplicates omens already supplied by other gams.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "104",
+      "reason_removable": "Historical essay on English/Dutch whaling.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "105",
+      "reason_removable": "Embedded Arsacides skeleton anecdote.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "106",
+      "reason_removable": "Continuation of skeleton-measurement digression.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "107",
+      "reason_removable": "Essay on fossil whales.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "108",
+      "reason_removable": "Speculative essay on whether the whale will perish.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "110",
+      "reason_removable": "Standalone character sketch of the carpenter; his actions appear in surrounding chapters.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "115",
+      "reason_removable": "Biographical backstory of Perth the blacksmith.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "118",
+      "reason_removable": "The Bachelor gam is thematic counterpoint not required by the synopsis.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
+    },
+    {
+      "chapter_id": "125",
+      "reason_removable": "A few-line vignette of Tashtego in the storm with no plot consequence.",
+      "kernel": "",
+      "relocate_to": "",
+      "position": null
     }
   ]
 }

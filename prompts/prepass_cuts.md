@@ -20,13 +20,19 @@ The abridgment must preserve everything that appears in this {{ synopsis.splitli
 
 4. **Whole-chapter skips**: chapter IDs whose ENTIRE content can be removed without losing any plot beat the synopsis depends on. A chapter qualifies only if every meaningful event in it is either subplot material listed in (2), digression material listed in (3), or background colour with no main-arc consequence. Be conservative: if a chapter contains *any* line whose absence would orphan a later reference (a name, a return, a callback), keep it off this list — UNLESS the load-bearing material can be cleanly distilled and relocated.
 
-   For each skippable chapter, also identify whether a *kernel* of essential content needs to survive elsewhere:
+   For each skippable chapter, decide whether a *kernel* of essential content needs to survive elsewhere. The kernel decision has exactly two outcomes:
 
-   - `kernel`: a 1-3 sentence paraphrase capturing the load-bearing event/fact/character-introduction from the chapter that later chapters depend on. Use empty string `""` if the chapter is cleanly skippable with no preservation needed.
-   - `relocate_to`: the segment ID where the kernel should be inserted (a surviving chapter, NOT another skippable chapter). Use the segment IDs from the `## Chapter NNN` headings, not canonical book chapter numbers.
-   - `position`: where in the target chapter to insert — `"start"` (before existing content), `"end"` (after existing content). Use `null` if no kernel.
+   **(a) Relocate a kernel** — produce a 1-3 sentence paraphrase of the chapter's load-bearing material and identify exactly one target:
 
-   Chronology and voice MUST match: the kernel paraphrase should read as a natural continuation/anticipation of the target chapter's existing prose. If a target chapter is in a different narrator-voice (e.g. Esther's first-person vs. omniscient), the kernel should match the target's voice.
+   - `relocate_to`: MUST be either the most-recent surviving chapter BEFORE the skipped chapter (in segment-ID order) OR the next surviving chapter AFTER it. Long-distance relocations are forbidden — the kernel must land in an immediate prior-or-subsequent kept chapter, never further away. Use the segment IDs from the `## Chapter NNN` headings, not canonical book chapter numbers.
+   - `position`: `"start"` (before existing content of the target) or `"end"` (after).
+   - The kernel paraphrase MUST integrate naturally with the target chapter's voice and chronology — read as a clean continuation/anticipation of the target's existing prose, not a mood-breaking interjection. If a target chapter is in a different narrator-voice (e.g. Esther's first-person vs. omniscient), the kernel must match the target's voice.
+
+   **(b) Clean skip with no kernel** — pick this if (i) no later chapter depends on a setup or callback from this chapter, OR (ii) the load-bearing material can't be relocated to either the prior or subsequent kept chapter without breaking voice or chronology. This is a first-class outcome, not a fallback. Famous voice-signature passages (e.g. Moby Dick's Cetology meta-commentary, Bleak House's elegiac coda) often belong here — the loss is real but trying to relocate them produces worse damage than just letting them go.
+
+   For (b), set `kernel: ""`, `relocate_to: null`, `position: null`.
+
+   Pick exactly one outcome per chapter. Do NOT propose alternatives or hedged placements.
 
 Each entry requires a **one-sentence `reason_removable`** that a careful reader would accept as justification. If you can't articulate a justification, don't list the item.
 

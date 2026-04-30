@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:36:56",
+  "key": "29c24aafceb8b3085508fa525055da0c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2, 3], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 omits middle portion but otherwise close\"},\n  {\"draft_para\": 5, \"source_paras\": [7, 8, 9, 10], \"note\": \"compressed \u2014 draws from multiple source paragraphs\"},\n  {\"draft_para\": 6, \"source_paras\": [11], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [12, 13], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [14, 15], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [16], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [17, 18], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 5426,
+    "output_tokens": 330,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.674546003341675,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:37:41",
+  "key": "8e9a4888eb0206659493afe0ea823638",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [3, 4], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [5, 6], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [13, 14, 15, 17], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [21, 22, 23, 24], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [26, 27], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [28], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 8337,
+    "output_tokens": 271,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.003634929656982,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:48:19",
+  "key": "45f75fa54790a0ae586b556bcf56e66b",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1, 2], \"note\": \"compressed \u2014 title plus opening of ch. XI, condensing source paras 2's first half\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 combines Russell/Alabama innuendo from para 2 with the collusion argument of para 3\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"paraphrased \u2014 condenses para 4, omitting Shakespeare reference and some detail\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 condenses para 5, dropping opening sentence and some detail\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 condenses Vicksburg/Gettysburg/Milnes reception scene, dropping Delane contempt details\"},\n  {\"draft_para\": 5, \"source_paras\": [8], \"note\": \"compressed \u2014 draws from para 8, dropping Seward/Stanton detail\"},\n  {\"draft_para\": 6, \"source_paras\": [11], \"note\": \"compressed \u2014 condenses para 11, dropping history of Russell's 1862 efforts and connivance detail\"},\n  {\"draft_para\": 7, \"source_paras\": [12, 13, 14, 15], \"note\": \"compressed \u2014 merges the private secretary's interpretation and Russell's reply into one paragraph\"},\n  {\"draft_para\": 8, \"source_paras\": [17, 19], \"note\": \"compressed \u2014 combines Adams's revisiting the ground (para 17) with Russell's denial and proof (para 17/19)\"},\n  {\"draft_para\": 9, \"source_paras\": [19, 22, 23, 26, 27], \"note\": \"compressed \u2014 synthesises the 1889 biography revelation, Russell's letter to Palmerston, and the Admiralty letter\"},\n  {\"draft_para\": 10, \"source_paras\": [27, 28], \"note\": \"compressed \u2014 combines the upset of diplomatic education with Gladstone's remark\"},\n  {\"draft_para\": 11, \"source_paras\": [29], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 8303,
+    "output_tokens": 565,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.858240127563477,
+    "stop_reason": "end_turn"
+  }
+}

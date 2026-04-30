@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:50:48",
+  "key": "c00ed8e4fd4624b77d36cc4a0b58a96e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 merges the general tragedy opening with the 1901 personal tragedies; note attribution of King quote shifted to Hay in draft\"},\n  {\"draft_para\": 3, \"source_paras\": [4], \"note\": \"paraphrased \u2014 slightly condensed\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 draws from the Roosevelt/Seneca/friend-in-power passage, omitting the moth metaphor and other material\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"compressed \u2014 keeps power-is-poison and Roosevelt agitation, omits broader societal reflection\"},\n  {\"draft_para\": 6, \"source_paras\": [9, 10], \"note\": \"compressed \u2014 combines Lodge's Massachusetts position from para 9 with the character portrait from para 10, omitting much detail\"},\n  {\"draft_para\": 7, \"source_paras\": [12, 13], \"note\": \"compressed \u2014 takes the motors/forces conclusion from para 12 and the international relations standard from para 13\"},\n  {\"draft_para\": 8, \"source_paras\": [15], \"note\": \"compressed \u2014 omits the comparison to Secretary of State and the opening context, retains Hay as schoolmaster and Adams's intellectual goals\"},\n  {\"draft_para\": 9, \"source_paras\": [16], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 5120,
+    "output_tokens": 427,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.599852085113525,
+    "stop_reason": "end_turn"
+  }
+}

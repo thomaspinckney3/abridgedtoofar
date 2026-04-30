@@ -87,7 +87,15 @@ def assemble_book(book: Book, plan: dict) -> AssemblyResult:
             except Exception:
                 checks_status = None
 
-        if sid in ext_errors:
+        # prepare-skips marks a chapter skipped=True after relocating its
+        # kernel into a neighbor; target_word_count is zeroed and the drafter
+        # writes an empty file. Classify as cut regardless of any stale
+        # checks.json (e.g. an "error" status from a pre-skip run).
+        if s.get("skipped"):
+            status = "cut"
+            draft_words = 0
+            cut += 1
+        elif sid in ext_errors:
             status = "extract_fail"
             missing += 1
         elif checks_status in ("error", "truncated"):

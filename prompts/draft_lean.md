@@ -34,6 +34,10 @@ Produce one contiguous output, but delimit each sub-chapter with a `## Chapter N
 
 - **Book:** {{book.title}} by {{book.author}} ({{book.genre}})
 - **Chapter:** {{segment.title}} (id {{segment.id}})
+- **Source:** {{segment.source_word_count}} words
+- **Target:** {{segment.target_word_count}} words ({{'%.1f'|format(segment.source_word_count / segment.target_word_count)}}× compression)
+
+Hit the target. Aggressive compression where the spec permits, but do not undershoot — words below target signal lost content, not virtue.
 {% endif %}
 
 {% if cuts %}

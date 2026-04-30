@@ -112,11 +112,35 @@ def apply_skips(book: Book) -> SkipApply:
         seg["skipped"] = True
         skipped.append(cid)
 
-    # 3. Recompute merge_groups' combined_target_word_count.
-    for g, info in (plan.get("merged_groups") or {}).items():
-        members = [seg_by_id[m] for m in info.get("member_ids", []) if m in seg_by_id]
-        info["combined_target_word_count"] = sum(s.get("target_word_count", 0)
-                                                  for s in members)
+    # 3. Drop skipped (target=0) members from merge_groups, recompute totals,
+    # and dissolve any group that ends up with <2 remaining members (the
+    # surviving member becomes a standalone segment).
+    groups = plan.get("merged_groups") or {}
+    dissolved: list[str] = []
+    for g, info in list(groups.items()):
+        member_ids = info.get("member_ids", [])
+        kept_ids = [m for m in member_ids
+                    if m in seg_by_id and seg_by_id[m].get("target_word_count", 0) > 0]
+        if len(kept_ids) < 2:
+            for m in kept_ids:
+                seg_by_id[m]["group_id"] = None
+            for m in member_ids:
+                if m in seg_by_id and seg_by_id[m].get("group_id") == g:
+                    seg_by_id[m]["group_id"] = None
+            del groups[g]
+            dissolved.append(g)
+            continue
+        info["member_ids"] = kept_ids
+        info["combined_target_word_count"] = sum(
+            seg_by_id[m].get("target_word_count", 0) for m in kept_ids)
+        info["combined_source_word_count"] = sum(
+            seg_by_id[m].get("source_word_count", 0) for m in kept_ids)
+        # Reflect group reassignment on members in case skipped chapters
+        # carried a stale group_id.
+        for m in member_ids:
+            if m in seg_by_id:
+                seg_by_id[m]["group_id"] = g if m in kept_ids else None
+    plan["merged_groups"] = groups
 
     write_json(plan_path, plan)
 

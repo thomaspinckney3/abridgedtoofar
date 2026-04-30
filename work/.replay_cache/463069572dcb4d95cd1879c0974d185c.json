@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T13:58:08",
+  "key": "463069572dcb4d95cd1879c0974d185c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3, 4, 5], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [17, 18, 19, 20], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [21, 22, 23, 24], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [36, 37], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [38, 39, 40, 41, 42], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [43, 44, 45, 46, 47, 48, 49, 50], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [51, 52, 53, 54, 55, 56, 57, 58, 59], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [61, 62, 63, 64, 65, 66], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [88, 89, 90, 91], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 5722,
+    "output_tokens": 567,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 21.492518186569214,
+    "stop_reason": "end_turn"
+  }
+}

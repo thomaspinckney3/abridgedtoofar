@@ -207,13 +207,16 @@
       "source_word_count": 3258,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1300,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter XI full narrative prose"
+      "classification_reason": "Chapter XI full narrative prose",
+      "source_word_count_original": 3258,
+      "target_word_count_original": 1300,
+      "skipped": true
     },
     {
       "id": "013",
@@ -326,13 +329,16 @@
       "source_word_count": 4120,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1700,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter XVIII full narrative prose"
+      "classification_reason": "Chapter XVIII full narrative prose",
+      "source_word_count_original": 4120,
+      "target_word_count_original": 1700,
+      "skipped": true
     },
     {
       "id": "020",
@@ -479,13 +485,16 @@
       "source_word_count": 3340,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1400,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": "g008",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter XXVII full narrative prose"
+      "classification_reason": "Chapter XXVII full narrative prose",
+      "source_word_count_original": 3340,
+      "target_word_count_original": 1400,
+      "skipped": true
     },
     {
       "id": "029",
@@ -574,7 +583,7 @@
         "028",
         "029"
       ],
-      "combined_target_word_count": 2700,
+      "combined_target_word_count": 1300,
       "combined_source_word_count": 6223
     }
   },

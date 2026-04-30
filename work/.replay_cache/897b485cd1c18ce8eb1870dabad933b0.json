@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:35:28",
+  "key": "897b485cd1c18ce8eb1870dabad933b0",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [3, 4, 5], \"note\": \"compressed \u2014 merges Seward's envoys, Weed's character, and his unselfishness\"},\n  {\"draft_para\": 4, \"source_paras\": [5], \"note\": \"compressed \u2014 draws from the card/Albany lobby anecdote and closing dialogue\"},\n  {\"draft_para\": 5, \"source_paras\": [6], \"note\": \"compressed \u2014 moral lesson, Evarts introduction and dose-of-truth quote\"},\n  {\"draft_para\": 6, \"source_paras\": [7], \"note\": \"paraphrased\"},\n  {\"draft_para\": 7, \"source_paras\": [8, 9], \"note\": \"compressed \u2014 belligerency/Russell bad faith from para 8, tutors sentence from para 9\"},\n  {\"draft_para\": 8, \"source_paras\": [10], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [11, 12], \"note\": \"compressed \u2014 opens with inference from para 11, then Russell's defence and concession from para 12\"},\n  {\"draft_para\": 10, \"source_paras\": [13, 14], \"note\": \"compressed \u2014 father's belief from para 13, Westbury's amorality from para 14\"},\n  {\"draft_para\": 11, \"source_paras\": [15, 16], \"note\": \"compressed \u2014 Walpole publication from para 15, Palmerston letter from para 16\"},\n  {\"draft_para\": 12, \"source_paras\": [17], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 5715,
+    "output_tokens": 495,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.923086881637573,
+    "stop_reason": "end_turn"
+  }
+}

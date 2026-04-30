@@ -1,7 +1,7 @@
 """Deterministic lean plan builder: no LLM, no prime/prepass.
 
 Builds plan.json from chapters.json + book-level compression math alone:
-  - book target from compression.plan_compression (log-scaled reading time)
+  - book target from compression.plan_compression (strict 2× of full source)
   - per-chapter target apportioned by chapter source share
   - extradiegetic chapters (front-matter, toc, translator notes, epilogue
     apparatus) marked and excluded from target apportionment

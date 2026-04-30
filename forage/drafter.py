@@ -223,6 +223,25 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
             stage=f"draft_fallback:{book.book_id}:{group_id}",
         )
 
+    # Failure mode: empty text + stop_reason=max_tokens means thinking
+    # consumed the entire output budget. Retry once with reduced thinking
+    # effort so visible output gets guaranteed budget.
+    if not resp.text.strip() and resp.stop_reason == "max_tokens" and thinking == "max":
+        import sys as _sys
+        retry_thinking = "medium"
+        print(f"[drafter] {group_id}: empty output after {resp.output_tokens} "
+              f"tokens with thinking=max; retrying with thinking={retry_thinking}",
+              file=_sys.stderr, flush=True)
+        resp = complete(
+            prompt=body, cached_prompt=cached,
+            model=default_model, system=prompt.system,
+            max_tokens=max_out,
+            temperature=prompt.config.get("temperature"),
+            cache=not cached, thinking=retry_thinking,
+            work_dir=book.work_dir,
+            stage=f"draft_thinkretry:{book.book_id}:{group_id}",
+        )
+
     merged_draft = resp.text.strip()
     # Preserve the raw merged output alongside per-chapter splits.
     (seg_dir / f"{group_id}.md").write_text(merged_draft + "\n")
@@ -233,7 +252,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     # "Chapter 4" for the 4th story-chapter, not the 1st group member);
     # we just want "first heading found → first member", etc.
     pieces = _re.split(
-        r"(?m)^(?:##\s*)?(?:Sub-)?Chapter\s*\d+\b[^\n]*$",
+        r"(?m)^(?:##\s*)?(?:Sub-)?Chapter\s+(?:\d+|[IVXLCDM]+)\b[^\n]*$",
         merged_draft)
     section_bodies = [p.strip() for p in pieces[1:]]
 
@@ -302,6 +321,21 @@ def draft_segment(
             target_words=segment.get("target_word_count", 0),
             draft_words=0, signature_hits=0, signature_misses=[],
             message="extradiegetic — cut per spec",
+        )
+
+    # target_word_count=0 on a narrative segment means prepare-skips marked
+    # this chapter for wholesale elision (its kernel, if any, was relocated
+    # into an adjacent chapter). Skip the LLM call and emit an empty draft.
+    if int(segment.get("target_word_count", 0) or 0) == 0:
+        write_text(seg_dir / f"{segment_id}.md", "")
+        _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
+                      source_words=source_words, draft_words=0,
+                      signature_hits=0, signature_misses=[], status="cut")
+        return DraftResult(
+            segment_id=segment_id, title=segment.get("title", ""),
+            status="cut", source_words=source_words, target_words=0,
+            draft_words=0, signature_hits=0, signature_misses=[],
+            message="target=0 — skipped by prepare-skips (kernel relocated)",
         )
 
     # Lean plans (no prepass) use the spec-as-prompt drafter; fall back to
@@ -452,7 +486,34 @@ def draft_segment(
 
     # Failure mode: empty text + stop_reason=max_tokens means the model
     # consumed its entire output budget on thinking/reasoning and never
-    # emitted any draft. Mark as error. Don't leave a stale .md around.
+    # emitted any draft. Retry once with reduced thinking effort so visible
+    # output gets guaranteed budget. Only kicks in when thinking="max" was
+    # used (otherwise there's nothing to dial down).
+    if not draft_text and resp.stop_reason == "max_tokens" and thinking == "max":
+        import sys as _sys
+        retry_thinking = "medium"
+        retry_stage = (f"draft_thinkretry:{book.book_id}:{segment_id}"
+                       if not critic_feedback
+                       else f"regen_thinkretry:{book.book_id}:{segment_id}")
+        print(f"[drafter] {segment_id}: empty output after {resp.output_tokens} "
+              f"tokens with thinking=max; retrying with thinking={retry_thinking}",
+              file=_sys.stderr, flush=True)
+        resp = complete(
+            prompt=rendered,
+            cached_prompt=cached,
+            model=default_model,
+            system=prompt.system,
+            max_tokens=max_out,
+            temperature=prompt.config.get("temperature"),
+            cache=not cached,
+            thinking=retry_thinking,
+            work_dir=book.work_dir,
+            stage=retry_stage,
+        )
+        draft_text = resp.text.strip()
+
+    # If still empty after the thinking-retry (or thinking wasn't max to begin
+    # with), report error. Don't leave a stale .md around.
     if not draft_text and resp.stop_reason == "max_tokens":
         draft_path = seg_dir / f"{segment_id}.md"
         if draft_path.exists():
@@ -466,8 +527,8 @@ def draft_segment(
             target_words=segment.get("target_word_count", 0),
             draft_words=0, signature_hits=0, signature_misses=[],
             message=(f"empty output with stop_reason=max_tokens after "
-                     f"{resp.output_tokens} tokens — thinking likely exhausted "
-                     f"the token budget. Bump max_tokens or reduce thinking."),
+                     f"{resp.output_tokens} tokens — thinking exhausted budget "
+                     f"on both default and reduced-thinking retry."),
         )
 
     (seg_dir / f"{segment_id}.md").write_text(draft_text + "\n")

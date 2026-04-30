@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:47:20",
+  "key": "35b5fa695d5f8cbcb44e8360d368bb54",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"paraphrased\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [4], \"note\": \"paraphrased\"},\n  {\"draft_para\": 4, \"source_paras\": [5], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [6], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [7, 8], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [10], \"note\": \"compressed\"},\n  {\"draft_para\": 8, \"source_paras\": [11, 12, 13], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [14, 15], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [17], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [18], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [19], \"note\": \"compressed\"},\n  {\"draft_para\": 13, \"source_paras\": [20], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [21, 22, 25, 26, 27, 29], \"note\": \"compressed\"},\n  {\"draft_para\": 15, \"source_paras\": [30, 31], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 10290,
+    "output_tokens": 452,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.233262300491333,
+    "stop_reason": "end_turn"
+  }
+}

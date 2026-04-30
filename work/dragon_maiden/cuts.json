@@ -1,52 +1,76 @@
 {
   "minor_characters": [
     {
-      "name": "Jethro",
-      "appearances_summary": "Cayden’s gold-robed priest who briefly helps Apuleius open the Portal and compliments Stephanie during the Chapter 11 ceremony.",
-      "reason_removable": "His ritual function and lines can be folded into Apuleius without changing the scene’s outcome or anyone’s arc."
+      "name": "Renner",
+      "appearances_summary": "The Grand Dragon Lord's adviser who manages the Maiden selection ceremony and tries to direct Stephanie toward Xander before Miriam intervenes.",
+      "reason_removable": "His function as ceremony-master can be folded into Xander or Blake's dialogue without losing any plot beat from the synopsis."
     },
     {
-      "name": "Spiros",
-      "appearances_summary": "Introduced only in the Chapter 020 sneak peek as Xander’s guard captain during a rainy march, trading childhood anecdotes and travel logistics.",
-      "reason_removable": "He appears solely in the teaser for the next book, so removing him (with the sneak peek) has no effect on Book 1."
+      "name": "Darda's husband",
+      "appearances_summary": "Briefly mentioned as the elderly male servant tangled in the bedsheet during Miriam's second escape attempt.",
+      "reason_removable": "He is unnamed, has no lines, and his presence adds nothing to the comedy of the scene that Darda alone cannot carry."
+    },
+    {
+      "name": "Galen",
+      "appearances_summary": "The white-haired physician who tends to the poisoned Xander and explains that only the Lady's tears can cure silver-talon poison.",
+      "reason_removable": "The synopsis names him but his role as exposition-deliverer could be merged with Apuleius or Cayden; however, since he IS named in the synopsis, he must be retained — excluded."
+    },
+    {
+      "name": "Jethro",
+      "appearances_summary": "Cayden's elderly golden-cloaked priest who assists Apuleius in opening the Portal and compliments Stephanie.",
+      "reason_removable": "He performs a ritual function that Apuleius alone could perform without altering the Portal demonstration or the ensuing attack."
+    },
+    {
+      "name": "The unnamed taxi driver",
+      "appearances_summary": "Drives Miriam and Heather in the opening chapter's chase sequence and accepts cash to lose a tailing red car.",
+      "reason_removable": "He is a one-scene utility figure whose role can be compressed into a single line of action without losing the chase's function as menace foreshadowing."
+    },
+    {
+      "name": "The unnamed pig-men henchmen",
+      "appearances_summary": "Blake's two nameless cohorts who help drug, abduct, and transport the women.",
+      "reason_removable": "They are interchangeable muscle whose collective presence is preserved by retaining Blake; individuating them adds nothing."
     }
   ],
   "subplots": [
     {
-      "name": "Killer-sheep fence detour",
-      "chapter_span": "Ch 10",
-      "reason_removable": "This cautionary pasture vignette adds color but does not affect the Portal visit, attack, or any character decision."
+      "name": "Heather's matchmaking running gag",
+      "chapter_span": "Ch 005",
+      "reason_removable": "The repeated jokes about Heather setting Miriam up with creepy guys can be compressed to a single line establishing the Blake introduction without losing thematic content."
+    },
+    {
+      "name": "The killer-sheep demonstration",
+      "chapter_span": "Ch 014",
+      "reason_removable": "Stephanie's encounter with the aggressive wool-creatures is a self-contained worldbuilding aside that doesn't affect the Portal visit or the dragon attack that follows."
+    },
+    {
+      "name": "The northern-borderland raid intelligence",
+      "chapter_span": "Ch 009",
+      "reason_removable": "Xander's overheard conversation with Renner about scout reports and unknown northern dragons is foreshadowing for later books and not needed for Book 1's resolution."
     }
   ],
   "digressions": [
     {
       "chapter_ids": [
-        "020"
+        "014"
       ],
-      "topic": "Sneak peek of Book 2 (Realms of the Dragons)",
-      "reason_removable": "It is marketing/teaser content unrelated to Book 1’s completed arc."
+      "topic": "Extended worldbuilding on dragon biology, glands, mating scents, and the longevity of dragons",
+      "reason_removable": "Much of the taxonomic exposition about dragon nature can be trimmed to the essentials the synopsis names (glands, scented mates, dual nature) without the extended Q&A."
     },
     {
       "chapter_ids": [
-        "019"
+        "015"
       ],
-      "topic": "Backmatter promotions for other series/titles",
-      "reason_removable": "Non-narrative advertising copy can be cut without affecting story or themes."
-    },
+      "topic": "Detailed description of the Portal's vine-covered carved-dragon iconography and the century of magic used to build it",
+      "reason_removable": "The ornate ritual description is atmospheric and can be condensed since the synopsis only requires the mirror-surface awakening and the stone-to-glass demonstration."
+    }
+  ],
+  "skippable_chapters": [
     {
-      "chapter_ids": [
-        "008"
-      ],
-      "topic": "Extended explicit description of Miriam and Xander’s first coupling",
-      "reason_removable": "The scene’s graphic detail can be summarized to preserve the consummation noted in the synopsis without losing plot or character beats."
-    },
-    {
-      "chapter_ids": [
-        "007",
-        "008"
-      ],
-      "topic": "Lengthy architectural and scenic inventories of High Castle, its halls, and surrounding grounds",
-      "reason_removable": "These descriptive passages establish setting but can be tightened substantially without altering events or interiority."
+      "chapter_id": "020",
+      "reason_removable": "This is a sneak-peek excerpt from the next book that follows the resolution of Book 1 and contains no content the synopsis depends on.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
     }
   ]
 }

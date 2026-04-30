@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:38:21",
+  "key": "bb4ba7878d1021e4d952493dc368a7a8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [2], \"note\": \"compressed \u2014 omits some detail but follows source closely\"},\n  {\"draft_para\": 1, \"source_paras\": [3], \"note\": \"compressed \u2014 omits the diplomatic anecdotes and November detail\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"compressed \u2014 omits Lamsdorf, some Cassini quotes, and opening context\"},\n  {\"draft_para\": 3, \"source_paras\": [5, 6], \"note\": \"compressed \u2014 merges Roosevelt dinner scene with the follow-up reflection\"},\n  {\"draft_para\": 4, \"source_paras\": [7, 8], \"note\": \"compressed \u2014 omits Japan/Euclid paragraph detail and some Hay detail\"},\n  {\"draft_para\": 5, \"source_paras\": [9, 10], \"note\": \"compressed \u2014 merges St. Louis journey and new American observations, omits St. Gaudens/Sargent\"},\n  {\"draft_para\": 6, \"source_paras\": [11, 12], \"note\": \"compressed \u2014 merges Exposition description and optimist's hope paragraphs, omits para 13 bridging content\"},\n  {\"draft_para\": 7, \"source_paras\": [14], \"note\": \"compressed \u2014 omits some detail about senators and candles\"},\n  {\"draft_para\": 8, \"source_paras\": [15], \"note\": \"compressed \u2014 omits Matthew Arnold quote context and some automobile/Virgin detail\"},\n  {\"draft_para\": 9, \"source_paras\": [17], \"note\": \"compressed \u2014 omits John La Farge mention and some stained-glass description detail\"},\n  {\"draft_para\": 10, \"source_paras\": [18], \"note\": \"compressed \u2014 omits opening sentence and some context about the sixteenth century\"},\n  {\"draft_para\": 11, \"source_paras\": [19], \"note\": \"compressed \u2014 omits some detail about the church windows and closing rhetorical flourish is preserved\"},\n  {\"draft_para\": 12, \"source_paras\": [20], \"note\": \"compressed \u2014 omits the hypothenuse formula and self-invention of formula passages\"},\n  {\"draft_para\": 13, \"source_paras\": [21], \"note\": \"compressed \u2014 omits the historical fractions sentence\"},\n  {\"draft_para\": 14, \"source_paras\": [22], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [23], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 9004,
+    "output_tokens": 634,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 11.541820287704468,
+    "stop_reason": "end_turn"
+  }
+}

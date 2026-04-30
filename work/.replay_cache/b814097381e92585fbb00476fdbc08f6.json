@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:38:09",
+  "key": "b814097381e92585fbb00476fdbc08f6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"paraphrased\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5, 6], \"note\": \"compressed \u2014 combines Hay's predicament, Holleben/Sternburg coup, and Germany swinging to Atlantic system\"},\n  {\"draft_para\": 4, \"source_paras\": [7, 8, 9, 10], \"note\": \"compressed \u2014 combines Russian enigma, inertia crushing all opposition, China mass, and charted positions\"},\n  {\"draft_para\": 5, \"source_paras\": [11], \"note\": \"paraphrased \u2014 draws on glacier/vis inertiae passage\"},\n  {\"draft_para\": 6, \"source_paras\": [12, 13], \"note\": \"compressed \u2014 dictionary definition of inertia and unequal inertia of minds\"},\n  {\"draft_para\": 7, \"source_paras\": [14], \"note\": \"paraphrased\"},\n  {\"draft_para\": 8, \"source_paras\": [15, 16], \"note\": \"compressed \u2014 combines Adams's dinner-table habit and the specific dinner-party rejoinder\"},\n  {\"draft_para\": 9, \"source_paras\": [17], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [19], \"note\": \"compressed \u2014 omits source para 18 setup and source para 20\"},\n  {\"draft_para\": 11, \"source_paras\": [21, 22, 23, 24], \"note\": \"compressed \u2014 combines man on lever, woman imitating him, tragedy since Eve, Church and woman, marry machinery\"},\n  {\"draft_para\": 12, \"source_paras\": [25, 26], \"note\": \"compressed \u2014 Marguerite passage and horseshoe crab conclusion\"},\n  {\"draft_para\": 13, \"source_paras\": [27], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 8374,
+    "output_tokens": 545,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.065621137619019,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:50:00",
+  "key": "dd15e1afac631acacaf3bcee90a05a24",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1], \"note\": \"verbatim \u2014 chapter heading\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"verbatim \u2014 section title\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 opening and closing sentences selected, middle omitted\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 combines summary of twenty-year result from para 4 with closing fatigue/retirement passage from para 5\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 drops some detail but closely follows para 6\"},\n  {\"draft_para\": 5, \"source_paras\": [7, 8, 9], \"note\": \"compressed \u2014 draws La Farge detail from para 7, education/halves from para 7, fantastic world from para 8, companion/stable from para 9\"},\n  {\"draft_para\": 6, \"source_paras\": [10], \"note\": \"compressed \u2014 omits Bancroft and Hay details, keeps core Washington/stable-companion/La Fayette Square content\"},\n  {\"draft_para\": 7, \"source_paras\": [12, 13], \"note\": \"compressed \u2014 Yorkshire from para 12, Teutonic voyage and wonder figures from para 13\"},\n  {\"draft_para\": 8, \"source_paras\": [14], \"note\": \"compressed \u2014 keeps Kipling garden-hose image and American/English dichotomy, drops extended reflection\"},\n  {\"draft_para\": 9, \"source_paras\": [15], \"note\": \"compressed \u2014 drops Harrison/Cleveland election detail and Bancroft/Hay references\"},\n  {\"draft_para\": 10, \"source_paras\": [16], \"note\": \"compressed \u2014 drops Calvin Brice anecdote, King and Hay party-loyalty passages\"},\n  {\"draft_para\": 11, \"source_paras\": [0, 17], \"note\": \"compressed \u2014 opening sentence draws from source para 0 (Clarence King meeting), then follows para 17 on King/Hay/Adams careers and government non-employment\"},\n  {\"draft_para\": 12, \"source_paras\": [22], \"note\": \"compressed \u2014 follows para 22 on Harrison/Cleveland indifference, literary work finished, signs of economic check\"},\n  {\"draft_para\": 13, \"source_paras\": [28], \"note\": \"compressed \u2014 closely follows para 28 on Rock Creek bronze figure, tourist reactions, clergy, St. Gaudens mirror\"},\n  {\"draft_para\": 14, \"source_paras\": [29], \"note\": \"compressed \u2014 follows para 29 on railway system, coal output, bicycle\"},\n  {\"draft_para\": 15, \"source_paras\": [30], \"note\": \"verbatim \u2014 nearly identical to para 30\"}\n]\n```",
+    "input_tokens": 11384,
+    "output_tokens": 717,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 13.00365400314331,
+    "stop_reason": "end_turn"
+  }
+}

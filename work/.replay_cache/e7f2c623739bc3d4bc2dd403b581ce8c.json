@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:50:11",
+  "key": "e7f2c623739bc3d4bc2dd403b581ce8c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [2], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [3, 4], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [5, 6], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [8], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [9, 10], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [11, 12], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [13, 14], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [16, 17, 18], \"note\": \"compressed \u2014 omits details about Lodge relationship and Mexico/Ravenna travel\"},\n  {\"draft_para\": 8, \"source_paras\": [18, 19, 20, 21], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [24, 25, 26, 31], \"note\": \"compressed \u2014 draws on the silence meditation and Vigny quote, skips Byron and other poets\"},\n  {\"draft_para\": 10, \"source_paras\": [32, 33], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [34], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 10007,
+    "output_tokens": 385,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.750955104827881,
+    "stop_reason": "end_turn"
+  }
+}

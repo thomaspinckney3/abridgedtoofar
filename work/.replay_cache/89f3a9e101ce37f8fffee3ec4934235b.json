@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:46:54",
+  "key": "89f3a9e101ce37f8fffee3ec4934235b",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits Longfellow/Tennyson mention and some detail, otherwise close paraphrase\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 omits much of the political/literary influence discussion and the Sumner/Dana/Palfrey references\"},\n  {\"draft_para\": 2, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 draws opening from source para 2, then blends in school critique and the four tools from source para 3\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 omits most of the sports/amusements list, retains the books and Quincy farmhouse closing\"}\n]\n```",
+    "input_tokens": 2862,
+    "output_tokens": 208,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.978254079818726,
+    "stop_reason": "end_turn"
+  }
+}

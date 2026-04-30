@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T23:34:18",
+  "key": "db9d83170eee42bde0b5973b9f9f8f0a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"compressed \u2014 omits Wordsworth gift anecdote detail but captures main points\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 omits Sumner/Dana/Palfrey references and some detail about siblings\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 omits school dislike material and stops before school discussion\"},\n  {\"draft_para\": 3, \"source_paras\": [2], \"note\": \"compressed \u2014 draws from second half of source para 2 on school hatred and memory\"},\n  {\"draft_para\": 4, \"source_paras\": [3, 4], \"note\": \"compressed \u2014 merges source paras 3 and 4, omitting the home-teaching argument of para 4\"},\n  {\"draft_para\": 5, \"source_paras\": [5], \"note\": \"compressed \u2014 omits several sport details and skating/baseball specifics but preserves key examples and conclusion\"}\n]\n```",
+    "input_tokens": 3011,
+    "output_tokens": 269,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 5.812431812286377,
+    "stop_reason": "end_turn"
+  }
+}

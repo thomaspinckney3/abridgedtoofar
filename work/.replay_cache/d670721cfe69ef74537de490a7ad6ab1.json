@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:47:28",
+  "key": "d670721cfe69ef74537de490a7ad6ab1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0, 1], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"paraphrased\"},\n  {\"draft_para\": 2, \"source_paras\": [3, 4, 5], \"note\": \"compressed \u2014 draws opening from para 3, Civil War sentiment from paras 4-5, omits some detail\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5, 6], \"note\": \"compressed \u2014 prodigal/secretary from para 4, Wide-Awakes/procession from para 5, Washington arrival from para 6\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [7, 8, 9], \"note\": \"compressed \u2014 ignorance/secessionists from para 7, cotton-planters from para 7, Confederate school lesson from para 9\"},\n  {\"draft_para\": 6, \"source_paras\": [10, 11], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [14], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [17, 18], \"note\": \"compressed \u2014 Seward as family friend from para 17, dinner scene/description from para 18\"},\n  {\"draft_para\": 10, \"source_paras\": [16, 21], \"note\": \"compressed \u2014 Seward as Secretary of State from para 16, Virginia strategy and dinner quote from para 21\"},\n  {\"draft_para\": 11, \"source_paras\": [23], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [22], \"note\": \"compressed \u2014 John Hay passage from para 22\"},\n  {\"draft_para\": 13, \"source_paras\": [25, 26], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [28, 29], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 7825,
+    "output_tokens": 559,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.235281705856323,
+    "stop_reason": "end_turn"
+  }
+}

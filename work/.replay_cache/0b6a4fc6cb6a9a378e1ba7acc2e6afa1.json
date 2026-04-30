@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-25T20:51:12",
+  "key": "0b6a4fc6cb6a9a378e1ba7acc2e6afa1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"paraphrased \u2014 drops reference to 1800 and student of Jefferson/Gallatin/Madison\"},\n  {\"draft_para\": 3, \"source_paras\": [4], \"note\": \"compressed \u2014 omits Pauncefote, Herbert appointment details, and social intimacy passages\"},\n  {\"draft_para\": 4, \"source_paras\": [5, 6], \"note\": \"compressed \u2014 merges both paragraphs, drops some detail about France and Congress\"},\n  {\"draft_para\": 5, \"source_paras\": [7, 8], \"note\": \"compressed \u2014 merges Russian problem intro and Cassini/inertia material, drops Adams's personal gratitude to Czars\"},\n  {\"draft_para\": 6, \"source_paras\": [9, 10], \"note\": \"compressed \u2014 merges launch of Russian mass and checkmate/open door conclusion\"},\n  {\"draft_para\": 7, \"source_paras\": [11], \"note\": \"compressed \u2014 extracts glacier/vis inertiae questions, drops much surrounding context\"},\n  {\"draft_para\": 8, \"source_paras\": [12], \"note\": \"compressed \u2014 paraphrases dictionary definition and motive conclusion, drops bulk/acceleration detail\"},\n  {\"draft_para\": 9, \"source_paras\": [13, 14], \"note\": \"compressed \u2014 merges unequal inertia and sex-inertia passages, drops race/class-list detail and woman's sequence\"},\n  {\"draft_para\": 10, \"source_paras\": [14, 15], \"note\": \"compressed \u2014 draws American woman task from para 14 and dinner-table trick from para 15\"},\n  {\"draft_para\": 11, \"source_paras\": [16], \"note\": \"compressed \u2014 retains dinner scene and rejoinder, drops full guest list details and Adams's defense of women\"},\n  {\"draft_para\": 12, \"source_paras\": [17, 19, 21], \"note\": \"compressed \u2014 blends woman's failure/family from 17, volatilized gas from 19, and American man on lever from 21\"},\n  {\"draft_para\": 13, \"source_paras\": [22, 23, 24], \"note\": \"compressed \u2014 merges tragic result/inertia of rotation, women's rebellion/cloister, and male blindness\"},\n  {\"draft_para\": 14, \"source_paras\": [25], \"note\": \"compressed \u2014 extracts Faust/Marguerite closing lines from longer paragraph\"},\n  {\"draft_para\": 15, \"source_paras\": [27], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 8505,
+    "output_tokens": 705,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 12.293503999710083,
+    "stop_reason": "end_turn"
+  }
+}
