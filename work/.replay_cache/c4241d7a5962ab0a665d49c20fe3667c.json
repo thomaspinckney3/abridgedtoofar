@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:22:04",
+  "key": "c4241d7a5962ab0a665d49c20fe3667c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 first half of source para 2, omitting later material\"},\n  {\"draft_para\": 3, \"source_paras\": [2], \"note\": \"compressed \u2014 draws from second half of source para 2\"},\n  {\"draft_para\": 4, \"source_paras\": [3], \"note\": \"compressed \u2014 omits details about Sumner and Adams's lack of effort rationale\"},\n  {\"draft_para\": 5, \"source_paras\": [4], \"note\": \"compressed \u2014 omits some detail about neighbors and Charles's regiment\"},\n  {\"draft_para\": 6, \"source_paras\": [5], \"note\": \"compressed \u2014 omits Seward/Sumner counterfactual and some context\"},\n  {\"draft_para\": 7, \"source_paras\": [5], \"note\": \"compressed \u2014 draws from latter portion of source para 5\"},\n  {\"draft_para\": 8, \"source_paras\": [6], \"note\": \"compressed \u2014 omits grumbling/war material, retains Clay and confidence observation\"},\n  {\"draft_para\": 9, \"source_paras\": [7], \"note\": \"compressed \u2014 omits opening sentence about grumbling to chief and Tiberius laugh detail\"},\n  {\"draft_para\": 10, \"source_paras\": [8], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 3978,
+    "output_tokens": 403,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.054594993591309,
+    "stop_reason": "end_turn"
+  }
+}

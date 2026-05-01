@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:21:32",
+  "key": "ace3a2fd5792e34fdd460aba0c42f7bf",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 first half of source para 2, omitting later details\"},\n  {\"draft_para\": 3, \"source_paras\": [2], \"note\": \"compressed \u2014 second half of source para 2\"},\n  {\"draft_para\": 4, \"source_paras\": [3], \"note\": \"compressed \u2014 omits companions, G.P.R. James reference, and some elaboration\"},\n  {\"draft_para\": 5, \"source_paras\": [4], \"note\": \"compressed \u2014 omits some details about Oxford Street approach and Charles the First elaboration\"},\n  {\"draft_para\": 6, \"source_paras\": [5], \"note\": \"compressed \u2014 omits final sentences about Black District being far in the distance and boy running away\"},\n  {\"draft_para\": 7, \"source_paras\": [6], \"note\": \"compressed \u2014 omits opening Oxford Street passage and some details\"},\n  {\"draft_para\": 8, \"source_paras\": [7], \"note\": \"compressed \u2014 omits several passages including fifty-years-later reflection and sensual education commentary\"},\n  {\"draft_para\": 9, \"source_paras\": [8], \"note\": \"compressed \u2014 omits opening context sentences and some detail\"},\n  {\"draft_para\": 10, \"source_paras\": [9], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 4789,
+    "output_tokens": 399,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 7.4216389656066895,
+    "stop_reason": "end_turn"
+  }
+}

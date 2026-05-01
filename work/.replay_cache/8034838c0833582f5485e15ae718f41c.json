@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:21:24",
+  "key": "8034838c0833582f5485e15ae718f41c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1], \"note\": \"compressed \u2014 omits some details but follows source closely\"},\n  {\"draft_para\": 1, \"source_paras\": [2], \"note\": \"compressed \u2014 drops detail about Redruth being a poor reader\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 omits paragraphs 4, 6, 7, 8, 9, 10, 11 and merges ship description directly; drops Blandly material and the Redruth commentary\"},\n  {\"draft_para\": 4, \"source_paras\": [12, 13, 14], \"note\": \"compressed \u2014 merges the three paragraphs about finding Silver; omits some phrasing\"},\n  {\"draft_para\": 5, \"source_paras\": [15], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [17], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [18], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [18], \"note\": \"verbatim \u2014 sign-off line\"},\n  {\"draft_para\": 9, \"source_paras\": [22, 23], \"note\": \"compressed \u2014 merges excitement reaction with the visit to Admiral Benbow; drops Redruth grumbling detail and some inn repair details\"},\n  {\"draft_para\": 10, \"source_paras\": [24], \"note\": \"compressed \u2014 omits the detail about leading the boy a dog's life\"},\n  {\"draft_para\": 11, \"source_paras\": [25], \"note\": \"paraphrased \u2014 close to verbatim, minor omissions\"},\n  {\"draft_para\": 12, \"source_paras\": [26], \"note\": \"compressed \u2014 omits details about being wedged between Redruth and the old gentleman, cold night air, etc.\"},\n  {\"draft_para\": 13, \"source_paras\": [27], \"note\": \"verbatim\"},\n  {\"draft_para\": 14, \"source_paras\": [28], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [29], \"note\": \"compressed \u2014 omits sailors singing, men aloft, and some descriptive details\"},\n  {\"draft_para\": 16, \"source_paras\": [30], \"note\": \"verbatim\"},\n  {\"draft_para\": 17, \"source_paras\": [31], \"note\": \"verbatim\"},\n  {\"draft_para\": 18, \"source_paras\": [32], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [33], \"note\": \"verbatim\"},\n  {\"draft_para\": 20, \"source_paras\": [34], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 4724,
+    "output_tokens": 753,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 11.266122102737427,
+    "stop_reason": "end_turn"
+  }
+}

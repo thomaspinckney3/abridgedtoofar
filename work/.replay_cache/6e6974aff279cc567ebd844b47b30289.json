@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:24:07",
+  "key": "6e6974aff279cc567ebd844b47b30289",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1], \"note\": \"paraphrased \u2014 omits Ben Gunn quote, otherwise close\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [4, 5], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [6, 7], \"note\": \"compressed\"},\n  {\"draft_para\": 4, \"source_paras\": [8, 9], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [10], \"note\": \"paraphrased\"},\n  {\"draft_para\": 6, \"source_paras\": [11], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [12], \"note\": \"paraphrased\"},\n  {\"draft_para\": 8, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [14, 15, 16, 17], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [18, 19], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [20, 21], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [22, 23, 24], \"note\": \"compressed\"},\n  {\"draft_para\": 13, \"source_paras\": [25], \"note\": \"paraphrased\"},\n  {\"draft_para\": 14, \"source_paras\": [26, 27], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 3808,
+    "output_tokens": 449,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.018130779266357,
+    "stop_reason": "end_turn"
+  }
+}

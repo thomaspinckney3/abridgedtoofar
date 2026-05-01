@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:23:19",
+  "key": "61b8103604aa378c1f2484bb67803161",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"paraphrased \u2014 minor omissions but same content\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed \u2014 omits Baden Baden anecdote and some detail\"},\n  {\"draft_para\": 4, \"source_paras\": [4], \"note\": \"paraphrased \u2014 near-verbatim with minor omissions\"},\n  {\"draft_para\": 5, \"source_paras\": [5], \"note\": \"paraphrased \u2014 near-verbatim with minor omissions\"},\n  {\"draft_para\": 6, \"source_paras\": [6, 7], \"note\": \"compressed \u2014 merges two source paragraphs, omits list of friends' careers\"},\n  {\"draft_para\": 7, \"source_paras\": [8], \"note\": \"paraphrased \u2014 near-verbatim with minor omissions\"},\n  {\"draft_para\": 8, \"source_paras\": [9], \"note\": \"compressed \u2014 omits some detail about mother and Legation social life context\"},\n  {\"draft_para\": 9, \"source_paras\": [10], \"note\": \"compressed \u2014 omits Minister's aesthetic habits and coin sales detail\"},\n  {\"draft_para\": 10, \"source_paras\": [11], \"note\": \"compressed \u2014 omits William Hunt anecdote\"},\n  {\"draft_para\": 11, \"source_paras\": [13], \"note\": \"compressed \u2014 omits Palgrave family background and Richardson/Paris visit\"},\n  {\"draft_para\": 12, \"source_paras\": [14], \"note\": \"paraphrased \u2014 near-verbatim with minor omissions\"},\n  {\"draft_para\": 13, \"source_paras\": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], \"note\": \"compressed \u2014 heavily compresses the entire Sotheby's drawing episode into one paragraph\"},\n  {\"draft_para\": 14, \"source_paras\": [27], \"note\": \"compressed \u2014 omits detail about buying specific drawings and British method\"},\n  {\"draft_para\": 15, \"source_paras\": [28], \"note\": \"compressed \u2014 omits Froude/Kinglake dinner detail and Athen\u00e6um Club ending\"},\n  {\"draft_para\": 16, \"source_paras\": [29], \"note\": \"compressed \u2014 omits detail about Captain John Smith and Puritan context\"},\n  {\"draft_para\": 17, \"source_paras\": [30], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 12078,
+    "output_tokens": 700,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.590142250061035,
+    "stop_reason": "end_turn"
+  }
+}

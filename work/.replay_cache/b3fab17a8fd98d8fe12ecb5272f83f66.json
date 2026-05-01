@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:21:35",
+  "key": "b3fab17a8fd98d8fe12ecb5272f83f66",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1], \"note\": \"paraphrased \u2014 slightly condensed\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 merges tavern description and customer observation\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"paraphrased \u2014 omits cheerful spirits/whistling detail\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"paraphrased \u2014 omits opening 'Now, to tell you the truth'\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"paraphrased \u2014 omits 'propped on his crutch, talking to a customer'\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [8, 9, 10], \"note\": \"compressed \u2014 merges Silver's responses into one paragraph\"},\n  {\"draft_para\": 7, \"source_paras\": [11], \"note\": \"paraphrased \u2014 omits 'It was close by him'\"},\n  {\"draft_para\": 8, \"source_paras\": [12], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 10, \"source_paras\": [14], \"note\": \"paraphrased \u2014 omits 'who was nearest the door'\"},\n  {\"draft_para\": 11, \"source_paras\": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31], \"note\": \"compressed \u2014 collapses the entire Morgan interrogation and Black Dog pursuit/Silver's performance into two sentences\"},\n  {\"draft_para\": 12, \"source_paras\": [32], \"note\": \"paraphrased \u2014 omits several lines of Silver's speech\"},\n  {\"draft_para\": 13, \"source_paras\": [33, 34], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [35], \"note\": \"paraphrased \u2014 omits 'peal after peal'\"},\n  {\"draft_para\": 15, \"source_paras\": [38], \"note\": \"paraphrased \u2014 condensed\"},\n  {\"draft_para\": 16, \"source_paras\": [39, 40], \"note\": \"compressed\"},\n  {\"draft_para\": 17, \"source_paras\": [41], \"note\": \"paraphrased\"},\n  {\"draft_para\": 18, \"source_paras\": [44], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [45], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 4579,
+    "output_tokens": 743,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 10.360245943069458,
+    "stop_reason": "end_turn"
+  }
+}

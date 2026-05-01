@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:24:14",
+  "key": "bfa79950cc4efd168cf2aee5ca5a847b",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2, 3, 4, 5], \"note\": \"compressed\"},\n  {\"draft_para\": 1, \"source_paras\": [6, 7], \"note\": \"compressed\"},\n  {\"draft_para\": 2, \"source_paras\": [8, 9, 10, 11, 12, 13, 14], \"note\": \"compressed\"},\n  {\"draft_para\": 3, \"source_paras\": [15], \"note\": \"paraphrased\"},\n  {\"draft_para\": 4, \"source_paras\": [16], \"note\": \"compressed\"},\n  {\"draft_para\": 5, \"source_paras\": [17], \"note\": \"compressed\"},\n  {\"draft_para\": 6, \"source_paras\": [18], \"note\": \"compressed\"},\n  {\"draft_para\": 7, \"source_paras\": [19], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [20], \"note\": \"compressed\"},\n  {\"draft_para\": 9, \"source_paras\": [21], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [22], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [23], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [25, 26], \"note\": \"compressed \u2014 omits source para 24 about leeway\"},\n  {\"draft_para\": 13, \"source_paras\": [27, 28], \"note\": \"compressed\"},\n  {\"draft_para\": 14, \"source_paras\": [29], \"note\": \"compressed\"}\n]\n```",
+    "input_tokens": 4512,
+    "output_tokens": 441,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 6.431404113769531,
+    "stop_reason": "end_turn"
+  }
+}

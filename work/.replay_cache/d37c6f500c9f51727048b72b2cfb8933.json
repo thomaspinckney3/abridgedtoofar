@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:20:53",
+  "key": "d37c6f500c9f51727048b72b2cfb8933",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim \u2014 title only\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"compressed \u2014 omits some detail but covers the same content\"},\n  {\"draft_para\": 2, \"source_paras\": [3], \"note\": \"compressed \u2014 omits the smuggler/lugger detail and the road strangers\"},\n  {\"draft_para\": 3, \"source_paras\": [4, 5], \"note\": \"compressed \u2014 merges mother's speech and the neighbours' response\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"compressed \u2014 omits detail about departure being exposed\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"compressed \u2014 omits bar detail slightly\"},\n  {\"draft_para\": 6, \"source_paras\": [8], \"note\": \"paraphrased \u2014 near verbatim, minor trimming\"},\n  {\"draft_para\": 7, \"source_paras\": [9], \"note\": \"compressed \u2014 omits kneeling detail\"},\n  {\"draft_para\": 8, \"source_paras\": [10], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [12], \"note\": \"compressed \u2014 list of pocket items condensed, despair line kept\"},\n  {\"draft_para\": 10, \"source_paras\": [13], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [14], \"note\": \"compressed \u2014 omits triumph/hope sentence slightly\"},\n  {\"draft_para\": 12, \"source_paras\": [15, 16, 17], \"note\": \"compressed \u2014 merges chest description, opening, and contents\"},\n  {\"draft_para\": 13, \"source_paras\": [18], \"note\": \"compressed \u2014 omits boat-cloak detail slightly\"},\n  {\"draft_para\": 14, \"source_paras\": [19], \"note\": \"compressed \u2014 omits Mrs. Crossley's bag reference\"},\n  {\"draft_para\": 15, \"source_paras\": [20, 21], \"note\": \"compressed \u2014 merges coin counting and blind man's approach\"},\n  {\"draft_para\": 16, \"source_paras\": [22], \"note\": \"verbatim \u2014 first line only, rest trimmed\"},\n  {\"draft_para\": 17, \"source_paras\": [23], \"note\": \"compressed \u2014 omits clock time detail\"},\n  {\"draft_para\": 18, \"source_paras\": [24], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [25], \"note\": \"verbatim\"},\n  {\"draft_para\": 20, \"source_paras\": [26], \"note\": \"compressed \u2014 omits moonlight/dell detail and veil description\"},\n  {\"draft_para\": 21, \"source_paras\": [27], \"note\": \"verbatim\"},\n  {\"draft_para\": 22, \"source_paras\": [28], \"note\": \"compressed \u2014 omits cursing neighbours and blaming mother passage\"}\n]\n```",
+    "input_tokens": 4983,
+    "output_tokens": 781,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 11.342726230621338,
+    "stop_reason": "end_turn"
+  }
+}

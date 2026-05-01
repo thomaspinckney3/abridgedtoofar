@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:23:28",
+  "key": "14937784076987ebc40ab3bdfdbe7bf9",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"compressed \u2014 omits Palgrave/Tennyson anecdote and details about intrusion, retains core Darwinist setup\"},\n  {\"draft_para\": 3, \"source_paras\": [2], \"note\": \"compressed \u2014 draws from latter half of source para 2 on British theories and Adams's Darwinism\"},\n  {\"draft_para\": 4, \"source_paras\": [3], \"note\": \"compressed \u2014 omits last two sentences about losing hold on results\"},\n  {\"draft_para\": 5, \"source_paras\": [4], \"note\": \"compressed \u2014 omits curate/geology setup and some elaboration, retains key ideas\"},\n  {\"draft_para\": 6, \"source_paras\": [5], \"note\": \"compressed \u2014 retains opening sentences, omits the Legation visit anecdote which is moved to next draft para\"},\n  {\"draft_para\": 7, \"source_paras\": [5], \"note\": \"compressed \u2014 draws from latter half of source para 5 about the Legation visit and Pendennis\"},\n  {\"draft_para\": 8, \"source_paras\": [6, 7], \"note\": \"compressed \u2014 collapses source 6 (educate himself, ignorance) and source 7 (Glacial Theory, inserted sentence, no effect)\"},\n  {\"draft_para\": 9, \"source_paras\": [8], \"note\": \"compressed \u2014 omits opening sentence about objections and the attempt at Natural Selection illustration framing\"},\n  {\"draft_para\": 10, \"source_paras\": [9], \"note\": \"compressed \u2014 omits Catherine Olney reference, Wrekin/historical haunts detail, and some landscape description\"},\n  {\"draft_para\": 11, \"source_paras\": [10], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 4994,
+    "output_tokens": 515,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.004418134689331,
+    "stop_reason": "end_turn"
+  }
+}

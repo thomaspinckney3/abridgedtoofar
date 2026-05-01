@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:26:26",
+  "key": "e9ed2ef6d4fb3479b3c4168c31e99092",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed \u2014 omits several quoted passages and details but follows source closely\"},\n  {\"draft_para\": 4, \"source_paras\": [4], \"note\": \"paraphrased \u2014 lightly condensed\"},\n  {\"draft_para\": 5, \"source_paras\": [5], \"note\": \"compressed \u2014 omits middle sentence about finishing school\"},\n  {\"draft_para\": 6, \"source_paras\": [6], \"note\": \"compressed \u2014 omits some elaboration on Seneca/moth passage but retains core\"},\n  {\"draft_para\": 7, \"source_paras\": [7], \"note\": \"compressed \u2014 omits opening sentence about education and closing sentence about self-control\"},\n  {\"draft_para\": 8, \"source_paras\": [8], \"note\": \"compressed \u2014 omits detail about Lodge's false position elaboration\"},\n  {\"draft_para\": 9, \"source_paras\": [9], \"note\": \"compressed \u2014 omits Evarts anecdote and some detail on Irish/socialist elements\"},\n  {\"draft_para\": 10, \"source_paras\": [10], \"note\": \"compressed \u2014 omits opening on Adams's sympathy, condenses Lodge character description\"},\n  {\"draft_para\": 11, \"source_paras\": [11, 12], \"note\": \"compressed \u2014 combines condensed Adams/Boston passage from para 11 with opening of para 12\"},\n  {\"draft_para\": 12, \"source_paras\": [12], \"note\": \"compressed \u2014 draws from latter half of para 12, omitting political game and foreign affairs context\"},\n  {\"draft_para\": 13, \"source_paras\": [13, 14], \"note\": \"compressed \u2014 combines key sentences from both paragraphs\"},\n  {\"draft_para\": 14, \"source_paras\": [15], \"note\": \"compressed \u2014 omits opening framing sentences and some detail\"},\n  {\"draft_para\": 15, \"source_paras\": [16], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 6170,
+    "output_tokens": 583,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.831680059432983,
+    "stop_reason": "end_turn"
+  }
+}

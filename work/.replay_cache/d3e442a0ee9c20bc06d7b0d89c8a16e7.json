@@ -1,0 +1,14 @@
+{
+  "ts": "2026-05-01T09:20:32",
+  "key": "d3e442a0ee9c20bc06d7b0d89c8a16e7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [1, 2], \"note\": \"compressed \u2014 merges opening bus/night arrival with deserted streets and alley detail\"},\n  {\"draft_para\": 1, \"source_paras\": [2, 3], \"note\": \"compressed \u2014 combines alley inspection with nothing moving and keys rattling\"},\n  {\"draft_para\": 2, \"source_paras\": [4], \"note\": \"paraphrased\"},\n  {\"draft_para\": 3, \"source_paras\": [5], \"note\": \"compressed \u2014 omits some fumbling detail but same content\"},\n  {\"draft_para\": 4, \"source_paras\": [6], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [7, 8, 9], \"note\": \"compressed \u2014 merges feeling watched, hurrying upstairs, apartment description, and aching feet\"},\n  {\"draft_para\": 6, \"source_paras\": [10], \"note\": \"compressed \u2014 omits incense candle detail\"},\n  {\"draft_para\": 7, \"source_paras\": [11], \"note\": \"compressed \u2014 omits 'feeling of being watched returned' sentence\"},\n  {\"draft_para\": 8, \"source_paras\": [12], \"note\": \"paraphrased\"},\n  {\"draft_para\": 9, \"source_paras\": [13], \"note\": \"paraphrased\"},\n  {\"draft_para\": 10, \"source_paras\": [14, 15], \"note\": \"compressed \u2014 merges binding and Blake standing by head\"},\n  {\"draft_para\": 11, \"source_paras\": [16, 19], \"note\": \"compressed \u2014 omits the two cohorts' cruise/expenses jokes and jumps to consort line\"},\n  {\"draft_para\": 12, \"source_paras\": [20], \"note\": \"verbatim\"},\n  {\"draft_para\": 13, \"source_paras\": [21], \"note\": \"compressed \u2014 omits 'closed his eyes' and some descriptive phrasing but same content\"},\n  {\"draft_para\": 14, \"source_paras\": [22], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [23], \"note\": \"paraphrased\"},\n  {\"draft_para\": 16, \"source_paras\": [24], \"note\": \"compressed \u2014 omits 'All right' attribution detail but same content\"},\n  {\"draft_para\": 17, \"source_paras\": [25, 26], \"note\": \"compressed \u2014 skips the 'knocking her out' exchange, merges cloth and stench\"},\n  {\"draft_para\": 18, \"source_paras\": [27], \"note\": \"compressed \u2014 omits body not responding and spinning room detail condensed\"},\n  {\"draft_para\": 19, \"source_paras\": [28], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 2643,
+    "output_tokens": 719,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.673380851745605,
+    "stop_reason": "end_turn"
+  }
+}
