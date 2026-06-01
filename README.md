@@ -23,7 +23,8 @@ split → classify → plan → summarize → cuts ──┐
 
                    draft → coherence → coherence-fix → assemble → book-critique   ◄── default pipeline
                      │
-                     └──► proofread (post-hoc)                      ◄── opt-in, recommended
+                     ├──► proofread (post-hoc)                      ◄── opt-in, recommended
+                     └──► audiobook (ElevenLabs TTS)                 ◄── opt-in, paid
 
                    critique + iterate (draft → regen loop)    ◄── opt-in
                    coherence (adjacent-pair structural check) ◄── opt-in
@@ -186,6 +187,44 @@ Alignments cache to `work/<book>/alignments/NNN.json` — re-running resumes fro
 
 Empirical: across Gatsby + Dragon Maiden + Secret Adversary, 0.2–1% of aligned paragraphs are marked `unsupported`, and after inspection most unsupported cases are chapter-title headings or drafter-added bridging sentences — zero genuine plot/character fabrications.
 
+### 15. `audiobook` — ElevenLabs narration
+
+Paid API stage. Reads `books/<book>/abridgment.txt` (falling back to `work/<book>/abridgment.txt`) and splits the assembled abridgment into bounded narration chunks. A dry run writes only chunk text and `work/<book>/audiobook/audiobook_manifest.json`:
+
+```bash
+forage audiobook gatsby --dry-run
+```
+
+Generation requires `ELEVENLABS_API_KEY` and a per-book voice id in `books/<book>/metadata.json`:
+
+```json
+{
+  "genre": "novel",
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "audiobook": {
+    "voice_id": "<elevenlabs-voice-id>"
+  }
+}
+```
+
+Then run:
+
+```bash
+forage audiobook gatsby
+```
+
+`--voice-id <id>` remains available as an explicit one-off override for testing.
+
+Outputs:
+
+- `work/<book>/audiobook/chunks/NNNN.txt` - text sent to each request
+- `work/<book>/audiobook/audio/NNNN.mp3` - per-chunk audio
+- `work/<book>/audiobook/audiobook_manifest.json` - chunk hashes, request ids, status, and paths
+- `work/<book>/audiobook/audiobook.mp3` and `books/<book>/audiobook.mp3` when `ffmpeg` is available and `--combine` is enabled
+
+The stage is resumable: existing chunk audio is skipped unless `--overwrite` is passed. Use `--limit N` for a paid smoke test on the first N chunks. By default it sends adjacent text and up to three prior ElevenLabs request ids to improve continuity across chunk boundaries; `--zero-retention` disables request-id stitching for accounts that require it.
+
 ## Legacy LLM stages (optional)
 
 `prime` and `prepass` remain in the CLI for experimentation but are not used by the lean pipeline. They produce a richer plan (LLM-enumerated signatures per segment, web-search-grounded cultural famousness) but at real cost and without clear quality wins over the lean path.
@@ -206,6 +245,7 @@ cp .env.example .env   # edit to add your keys
 Required environment (in `.env`):
 
 ```dotenv
+# Required for LLM-backed abridgment stages
 ANTHROPIC_API_KEY=sk-ant-...
 OPENAI_API_KEY=sk-proj-...
 
@@ -218,6 +258,12 @@ FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-4-6
 # hit the cache instead of spending. The cache is committed to the repo so
 # collaborators inherit the cached responses for the books already processed.
 FORAGE_REPLAY=1
+
+# Optional audiobook defaults
+# ELEVENLABS_API_KEY=...
+# FORAGE_AUDIOBOOK_MODEL=eleven_multilingual_v2
+# FORAGE_AUDIOBOOK_OUTPUT_FORMAT=mp3_44100_128
+# FORAGE_AUDIOBOOK_MAX_CHARS=9000
 ```
 
 Per-stage overrides (`FORAGE_{STAGE}_MODEL`) beat the global `FORAGE_MODEL`, which beats whatever the caller passes. The CLI prints which model each call resolved to:
@@ -266,6 +312,8 @@ forage coherence <book>             # structural damage critic (adjacent-chapter
 forage book-critique <book>         # synopsis-grounded per-sentence verification
 forage validate <book>              # motif + style + signature checks
 forage proofread <book>             # paragraph-level alignment viewer → proofread.html
+forage audiobook <book> --dry-run   # split abridgment into ElevenLabs chunks
+forage audiobook <book>             # generate using metadata audiobook.voice_id
 forage report [<book>]              # standard results row (all books if no arg)
 ```
 
@@ -299,6 +347,7 @@ forage coherence gatsby             # structural damage critic (post-hoc)
 forage book-critique gatsby         # verifies abridgment against synopsis
 forage validate gatsby              # mechanical sanity checks
 forage proofread gatsby             # paragraph-level alignment viewer
+forage audiobook gatsby --dry-run   # inspect chunking before paid TTS
 ```
 
 Or use the `scripts/full_pipeline.py` driver to run the required upstream stages, draft across all diegetic chapters, then fresh coherence + coherence-fix + assemble + book-critique:
@@ -328,6 +377,7 @@ forage/
     summarizer.py                  # ~30-sentence prose synopsis, chunked chaining
     drafter.py                     # drafter + merge-group draft + fallback
     cuts.py                        # removable-material prepass
+    audiobook.py                   # ElevenLabs TTS chunking + audio artifacts
     critics.py                     # signature critic
     coherence.py                   # structural coherence critic
     book_critic.py                 # synopsis-vs-abridgment verifier
@@ -369,6 +419,7 @@ forage/
       split_config.json            # optional per-book splitter override
       abridgment.md                # (published) assembled abridgment
       abridgment.txt               # (published) UTF-8 plain-text abridgment
+      audiobook.mp3                # (published) combined audiobook, when generated
       proofread.html               # (published) alignment viewer
   work/                            # generated output
     <book>/
@@ -390,6 +441,11 @@ forage/
       assembly_report.json         # budget stats, overage, segment tallies
       book_critic.json             # per-synopsis-sentence verdicts
       coherence_report.json        # structural coherence findings
+      audiobook/
+        chunks/NNNN.txt            # per-request narration text
+        audio/NNNN.mp3             # per-request ElevenLabs audio
+        audiobook_manifest.json    # request ids, hashes, paths, status
+        audiobook.mp3              # combined audio when ffmpeg is available
       proofread.html               # self-contained alignment viewer
       llm_calls.jsonl              # every LLM call this book issued
     .replay_cache/                 # memoized LLM responses — tracked in git so

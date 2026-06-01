@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -14,6 +15,9 @@ from rich.table import Table
 
 from .artifacts import load_book, read_json
 from .assemble import assemble_book
+from .audiobook import (DEFAULT_MAX_CHARS, DEFAULT_MODEL,
+                        DEFAULT_OUTPUT_FORMAT, AudiobookError,
+                        generate_audiobook)
 from .chapter_split import split_to_disk
 from .critics import run_critic
 from .drafter import draft_all, draft_segment, ensure_chapters
@@ -611,6 +615,261 @@ def _render_assembly(r) -> None:
                 t.add_row(s.id, s.title[:36], s.role, str(s.target),
                           "—", "—", s.status)
         console.print(t)
+
+
+@app.command()
+def audiobook(
+    book_id: str,
+    voice_id: str | None = typer.Option(
+        None, "--voice-id",
+        help="ElevenLabs voice id. Overrides books/<book>/metadata.json.",
+    ),
+    input_path: Path | None = typer.Option(
+        None, "--input",
+        help="Text file to narrate. Defaults to books/<book>/abridgment.txt.",
+    ),
+    output_dir: Path | None = typer.Option(
+        None, "--output-dir",
+        help="Output directory. Defaults to work/<book>/audiobook/.",
+    ),
+    model: str | None = typer.Option(
+        None, "--model",
+        help="ElevenLabs model id. Defaults to metadata audiobook.model, "
+             f"FORAGE_AUDIOBOOK_MODEL, or {DEFAULT_MODEL}.",
+    ),
+    output_format: str | None = typer.Option(
+        None, "--output-format",
+        help="ElevenLabs output format. Defaults to metadata "
+             "audiobook.output_format, FORAGE_AUDIOBOOK_OUTPUT_FORMAT, or "
+             f"{DEFAULT_OUTPUT_FORMAT}.",
+    ),
+    max_chars: int | None = typer.Option(
+        None, "--max-chars",
+        help="Maximum text characters per API request. Defaults to metadata "
+             "audiobook.max_chars, FORAGE_AUDIOBOOK_MAX_CHARS, or 9000.",
+    ),
+    context_chars: int | None = typer.Option(
+        None, "--context-chars",
+        help="Neighbor text sent for cross-chunk prosody context. Defaults to "
+             "metadata audiobook.context_chars or 1200.",
+    ),
+    stability: float | None = typer.Option(
+        None, "--stability",
+        help="Optional ElevenLabs voice stability setting.",
+    ),
+    similarity_boost: float | None = typer.Option(
+        None, "--similarity-boost",
+        help="Optional ElevenLabs similarity_boost setting.",
+    ),
+    style: float | None = typer.Option(
+        None, "--style",
+        help="Optional ElevenLabs style setting.",
+    ),
+    speed: float | None = typer.Option(
+        None, "--speed",
+        help="Optional ElevenLabs speed setting.",
+    ),
+    speaker_boost: bool = typer.Option(
+        True, "--speaker-boost/--no-speaker-boost",
+        help="Send use_speaker_boost in voice settings.",
+    ),
+    seed: int | None = typer.Option(
+        None, "--seed",
+        help="Optional deterministic generation seed.",
+    ),
+    language_code: str | None = typer.Option(
+        None, "--language-code",
+        help="Optional language code for multilingual models.",
+    ),
+    text_normalization: str = typer.Option(
+        "auto", "--text-normalization",
+        help="ElevenLabs apply_text_normalization value.",
+    ),
+    enable_logging: bool = typer.Option(
+        True, "--enable-logging/--zero-retention",
+        help="Disable logging only for accounts that support zero retention; "
+             "request-id stitching is disabled with --zero-retention.",
+    ),
+    stitch: bool = typer.Option(
+        True, "--stitch/--no-stitch",
+        help="Send neighboring text and prior request ids for long-form flow.",
+    ),
+    combine: bool = typer.Option(
+        True, "--combine/--no-combine",
+        help="Use ffmpeg to concatenate generated MP3 chunks when available.",
+    ),
+    overwrite: bool = typer.Option(
+        False, "--overwrite",
+        help="Regenerate chunk audio even if files already exist.",
+    ),
+    dry_run: bool = typer.Option(
+        False, "--dry-run",
+        help="Write chunk text and manifest without calling ElevenLabs.",
+    ),
+    limit: int | None = typer.Option(
+        None, "--limit",
+        help="Generate only the first N chunks; useful for paid smoke tests.",
+    ),
+    timeout: float = typer.Option(
+        120.0, "--timeout",
+        help="Per-request timeout in seconds.",
+    ),
+    retries: int = typer.Option(
+        2, "--retries",
+        help="Retries for 429/5xx and transient network failures.",
+    ),
+) -> None:
+    """Generate an ElevenLabs audiobook from an assembled abridgment.
+
+    Outputs chunk text, per-chunk audio, and audiobook_manifest.json under
+    work/<book>/audiobook/. For MP3 output, --combine also publishes
+    books/<book>/audiobook.mp3 when ffmpeg is available.
+    """
+    book = load_book(book_id)
+    try:
+        config = _audiobook_config(book.metadata)
+    except AudiobookError as e:
+        console.print(f"[red]{e}[/red]")
+        raise typer.Exit(code=1)
+    settings = _voice_settings(
+        stability=stability,
+        similarity_boost=similarity_boost,
+        style=style,
+        speed=speed,
+        speaker_boost=speaker_boost,
+    )
+    try:
+        resolved_voice = voice_id or config.get("voice_id")
+        resolved_model = (
+            model
+            or config.get("model")
+            or os.environ.get("FORAGE_AUDIOBOOK_MODEL")
+            or DEFAULT_MODEL
+        )
+        resolved_format = (
+            output_format
+            or config.get("output_format")
+            or os.environ.get("FORAGE_AUDIOBOOK_OUTPUT_FORMAT")
+            or DEFAULT_OUTPUT_FORMAT
+        )
+        resolved_max_chars = (
+            max_chars
+            or _int_config(config.get("max_chars"), "audiobook.max_chars")
+            or _int_env("FORAGE_AUDIOBOOK_MAX_CHARS", DEFAULT_MAX_CHARS)
+        )
+        resolved_context_chars = (
+            context_chars
+            if context_chars is not None
+            else _int_config(
+                config.get("context_chars"), "audiobook.context_chars"
+            )
+            or 1200
+        )
+    except AudiobookError as e:
+        console.print(f"[red]{e}[/red]")
+        raise typer.Exit(code=1)
+
+    console.print(f"[dim]source:[/dim] {input_path or 'abridgment.txt'}")
+    console.print(f"[dim]voice: [/dim] {resolved_voice or 'unset'}")
+    console.print(f"[dim]model: [/dim] {resolved_model}")
+    try:
+        result = generate_audiobook(
+            book,
+            voice_id=resolved_voice,
+            input_path=input_path,
+            output_dir=output_dir,
+            model_id=resolved_model,
+            output_format=resolved_format,
+            max_chars=resolved_max_chars,
+            context_chars=resolved_context_chars,
+            voice_settings=settings,
+            seed=seed,
+            language_code=language_code,
+            apply_text_normalization=text_normalization,
+            enable_logging=enable_logging,
+            stitch=stitch,
+            combine=combine,
+            overwrite=overwrite,
+            dry_run=dry_run,
+            limit=limit,
+            timeout=timeout,
+            retries=retries,
+        )
+    except AudiobookError as e:
+        console.print(f"[red]{e}[/red]")
+        raise typer.Exit(code=1)
+
+    _render_audiobook(result, dry_run=dry_run)
+    if result.error_count:
+        raise typer.Exit(code=1)
+
+
+def _audiobook_config(metadata: dict) -> dict:
+    raw = metadata.get("audiobook") or {}
+    if not isinstance(raw, dict):
+        raise AudiobookError("metadata field 'audiobook' must be an object")
+    return raw
+
+
+def _int_config(value, field: str) -> int | None:
+    if value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError) as e:
+        raise AudiobookError(f"metadata field {field} must be an integer") from e
+
+
+def _int_env(name: str, default: int) -> int:
+    value = os.environ.get(name)
+    if value is None:
+        return default
+    try:
+        return int(value)
+    except ValueError as e:
+        raise AudiobookError(f"environment variable {name} must be an integer") from e
+
+
+def _voice_settings(
+    *,
+    stability: float | None,
+    similarity_boost: float | None,
+    style: float | None,
+    speed: float | None,
+    speaker_boost: bool,
+) -> dict | None:
+    settings: dict[str, float | bool] = {"use_speaker_boost": speaker_boost}
+    if stability is not None:
+        settings["stability"] = stability
+    if similarity_boost is not None:
+        settings["similarity_boost"] = similarity_boost
+    if style is not None:
+        settings["style"] = style
+    if speed is not None:
+        settings["speed"] = speed
+    return settings
+
+
+def _render_audiobook(r, *, dry_run: bool) -> None:
+    title = "audiobook dry run" if dry_run else "audiobook"
+    summary = Table.grid(padding=(0, 1))
+    summary.add_column(style="dim")
+    summary.add_column()
+    summary.add_row("book_id", r.book_id)
+    summary.add_row("source", str(r.source_path))
+    summary.add_row("output", str(r.output_dir))
+    summary.add_row("manifest", str(r.manifest_path))
+    summary.add_row("chunks", str(r.chunk_count))
+    summary.add_row("characters", str(r.total_chars))
+    summary.add_row("generated", str(r.generated_count))
+    summary.add_row("skipped", str(r.skipped_count))
+    summary.add_row("planned", str(r.planned_count))
+    summary.add_row("errors", str(r.error_count))
+    if r.combined_audio_path:
+        summary.add_row("combined_audio", str(r.combined_audio_path))
+    if r.published_audio_path:
+        summary.add_row("published_audio", str(r.published_audio_path))
+    console.print(Panel(summary, title=title))
 
 
 @app.command(name="rebudget")
