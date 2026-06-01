@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:10:33",
+  "key": "9d0a2d633723047ff735c0cc8be16506",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "[]",
+    "input_tokens": 23946,
+    "output_tokens": 4,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 1.6912672519683838,
+    "stop_reason": "end_turn"
+  }
+}

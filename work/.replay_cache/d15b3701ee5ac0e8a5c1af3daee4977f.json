@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T01:41:38",
+  "key": "d15b3701ee5ac0e8a5c1af3daee4977f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"whenever it is a damp, drizzly November in my soul...This is my substitute for pistol and ball...I thought I would sail about a little and see the watery part of the world\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"he pressed his forehead against mine, clasped me round the waist, and said that henceforth we were married\u2014meaning, in his country's phrase, that we were bosom friends\", \"note\": \"The awkward comical night and sworn brotherhood are covered across the Spouter-Inn chapters\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"Father Mapple...the lesson that Jonah teaches to all sinners...the sin of disobedience...Jonah sought to flee world-wide from God\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"the rare old Pequod...Captain Peleg...Captain Bildad...part owners and agents...the three hundredth lay...the seven hundred and seventy-seventh\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"Ragged Elijah's ominous hints covered; 'Elijah'...shadowy things connected with the Pequod and Captain Ahab; on a frigid Christmas morning: 'It was a short, cold Christmas'\", \"note\": \"Bulkington mentioned only obliquely among the crew; the abridgment does not give him a named 'restless return to sea' scene, but all other elements are present\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"He looked like a man cut away from the stake...a slender rod-like mark, lividly whitish...his barbaric white leg upon which he partly stood\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"Starbuck a native of Nantucket...Stubb was the second mate...The third mate was Flask...Queequeg...Tashtego...Daggoo\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"'it is a sixteen dollar piece, men...Whosoever of ye raises me that white-headed whale...he shall have this gold ounce'...nailing the gold to the mast...Moby Dick that razeed me...that inscrutable thing is chiefly what I hate\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"'Vengeance on a dumb brute! that simply smote thee from blindest instinct! Madness! To be enraged with a dumb thing, Captain Ahab, seems blasphemous'...the men drink from harpoon sockets: 'Forthwith, slowly going from one officer to the other, he brimmed the harpoon sockets with the fiery waters'\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"a squall swamps the boats: 'Squall, whale, and harpoon had all blended together...the boat was nearly unharmed...the wind increased to a howl'...Ahab watches from deck implied by his separate boat\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"'from out the old man's shadow a fourth boat materializes\u2014Ahab's own\u2014manned by Fedallah and a crew of silent phantoms': 'dark Ahab, who was surrounded by five dusky phantoms that seemed fresh formed out of air'\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"the Town-Ho's story told at Lima; the whiteness of the whale chapter; cetological passages throughout; 'Moby Dick destroys a tyrant' covered in the Town-Ho story where Moby Dick kills Radney\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"meadows of brit; Right Whales; 'a vast pulpy mass...an unearthly, formless, chance-like apparition of life'\u2014the squid; 'Almost rather had I seen Moby Dick and fought him, than to have seen thee, thou white ghost'\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"'I was the attendant or page of Queequeg...weaving a sword-mat...This warp seemed necessity...free will still free to ply her shuttle...chance, though restrained within necessity's right lines'\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"Goney's captain drops his trumpet; the Jeroboam brings Gabriel 'who solemnly warned the captain against attacking the White Whale'...Gabriel damns any that would strike the White Whale\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"missing\", \"evidence\": \"\", \"note\": \"The abridgment does not contain a passage specifically describing the Indian Ocean setting with coils of whale-line that can garrote a man, barbs forged of steel, and the red work of cutting-in while sharks riot at the hull as a distinct named episode\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"Stubb kills a Right Whale; midnight feast; old Fleece scolds the sharks; 'the deck runs with blubber'; skulls and spines compared in cetological chapters\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"Fedallah: 'two hearses must verily be seen by thee on the sea...Hemp only can kill thee'\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"Perth the blacksmith tempers harpoon: 'No, no\u2014no water for that; I want it of the true death-temper. Tashtego, Queequeg, Daggoo!...Three punctures were made in the heathen flesh'; typhoon crowns masts with St. Elmo's fire: 'The corpusants! the corpusants! All the yard-arms were tipped with a pallid fire'\", \"note\": \"Sentences 19 and 20 are split mid-sentence in the synopsis; covered together\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"Ahab toasts the elements: 'Oh! thou clear spirit of clear fire...I now know thee, thou clear spirit, and I now know that thy right worship is defiance'\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"'Curse thee, thou quadrant! He dashed it to the deck'...'the thunder turned old Ahab's needles'...Ahab remagnetizes by hand: 'out of this bit of steel Ahab can make one of his own, that will point as true as any'...trusting to dead reckoning: 'the level ship's compass, and the level dead-reckoning, by log and by line'\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"Pip leaps from boat and comes back mad; 'the sea had jeeringly kept his finite body up, but drowned the infinite of his soul'...Ahab cherishes him: 'Ahab's cabin shall be Pip's home henceforth'...Starbuck with musket: 'he placed the loaded musket's end against the door...he placed the death-tube in its rack, and left the place'\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"carpenter makes ivory leg; coffin-planks for Queequeg; 'the whole ship seems snared': Ahab says 'The path to my fixed purpose is laid with iron rails, whereon my soul is grooved to run'\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"the jubilant Bachelor: 'Come aboard, come aboard!'...Ahab refuses; the Delight sewing a dead sailor: 'I bury but one of five stout men'; the Rachel's plea refused: 'Captain Gardiner...I will not do it'\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"Queequeg sickens; orders coffin carved; recovers; 'the lost life-buoy was now to be replaced...Queequeg hinted concerning his coffin...A life-buoy of a coffin!'\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"Ahab's eyes at masthead; doubloon nailed; 'there she blows!\u2014there she blows! A hump like a snow-hill! It is Moby Dick!'\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"three-day chase; 'the half-torn body of the Parsee was seen; his sable raiment frayed to shreds...lashed round and round to the fish's back'\u2014Fedallah the first hearse fulfilled; boats stove and lines snarl\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"'the solid white buttress of his forehead smote the ship's starboard bow'\u2014on the third day; but the ramming of the Pequod occurs on the third day in the abridgment, not the second. The second day has the whale smashing boats and Starbuck begging for home: 'not too late is it, even now, the third day, to desist'\u2014Starbuck's plea is on the third day; second day ramming of Pequod is present implicitly\", \"note\": \"The abridgment does place Moby Dick ramming the Pequod on the third day (Chase Third Day), while the synopsis says second day. Distorted on this specific fact\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"'he darted his fierce iron, and his far fiercer curse, into the hated whale...the flying turn caught him round the neck...he was shot out of the boat...the whale wheeled round...smiting his jaws...the solid white buttress of his forehead smote the ship's starboard bow'\", \"note\": \"\"},\n  {\"sentence\": 30, \"status\": \"present\", \"evidence\": \"'a red arm and a hammer hovered backwardly uplifted...nailing the flag faster...a sky-hawk...this bird now chanced to intercept its broad fluttering wing between the hammer and the wood...went down with his ship'\", \"note\": \"\"},\n  {\"sentence\": 31, \"status\": \"present\", \"evidence\": \"'and the great shroud of the sea rolled on as it rolled five thousand years ago'\", \"note\": \"\"},\n  {\"sentence\": 32, \"status\": \"present\", \"evidence\": \"'the coffin life-buoy, liberated by its cunning spring, shot lengthwise from the sea and floated by my side. Buoyed up by that coffin, for almost one whole day and night, I floated on a soft and dirgelike main'\", \"note\": \"\"},\n  {\"sentence\": 33, \"status\": \"present\", \"evidence\": \"'It was the devious-cruising Rachel, that in her retracing search after her missing children, only found another orphan'\", \"note\": \"\"},\n  {\"sentence\": 34, \"status\": \"present\", \"evidence\": \"instruments fail: quadrant smashed, compasses spin, log-line snaps; sermons and songs throughout; whale's blind forehead smashes ship; 'the only witness left to tell it counts his heartbeats on a borrowed coffin' covered by Ishmael floating on the coffin\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 123160,
+    "output_tokens": 2836,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 64.53921580314636,
+    "stop_reason": "end_turn"
+  }
+}

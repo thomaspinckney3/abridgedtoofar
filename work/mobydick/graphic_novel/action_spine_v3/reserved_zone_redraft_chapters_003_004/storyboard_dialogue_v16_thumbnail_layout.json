@@ -1,0 +1,3145 @@
+{
+  "title": "Moby-Dick Chapters 3-4 Reserved-Zone Redraft",
+  "source": "action_spine_v3 plus expanded chapter 3 landlord sequence prototype",
+  "lettering_policy": {
+    "speech_balloons": "tail-less",
+    "placement": "reserved storyboard zones",
+    "panel_art_fit": "contain"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_frame_001.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.19
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.72,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "center",
+                "body_box": {
+                  "x": 0.31,
+                  "y": 0.31,
+                  "w": 0.38,
+                  "h": 0.65
+                },
+                "face_box": {
+                  "x": 0.4468,
+                  "y": 0.3555,
+                  "w": 0.0912,
+                  "h": 0.13
+                },
+                "mouth_point": {
+                  "x": 0.4924,
+                  "y": 0.4361
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. - Place Ishmael body in x 31%, y 31%, w 38%, h 65%; face in x 45%, y 36%, w 9%, h 13%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_frame_002.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.",
+              "caption_zone": "top_center",
+              "lettering_notes": "demoted from speech: indirect or internal narration",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.5409
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.5409
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Peter Coffin: x 56%, y 20%, w 38%, h 16%. - Place Peter Coffin body in x 58%, y 44%, w 36%, h 52%; face in x 72%, y 48%, w 9%, h 10%. - Place Ishmael body in x 6%, y 44%, w 36%, h 52%; face in x 19%, y 48%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 2,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 3, frames 3",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch003_frame_003.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0231,
+            "w": 0.9688,
+            "h": 0.9538
+          },
+          "source_chapter": 3,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I chose the bench; the planing and the bitter draughts defeated me.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "I shan’t sleep with him. I’ll try the bench.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"I shan’t sleep with him. I’ll try the bench here.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "left"
+            },
+            {
+              "kind": "speech",
+              "text": "Wait—I’ll make ye snug enough.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"wait, I say, and I’ll make ye snug enough.\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "panel_archetype": "two_speaker_exchange",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "full_page",
+            "panel_archetype": "two_speaker_exchange",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0231,
+              "w": 0.9688,
+              "h": 0.9538
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_left",
+                "speaker": "Ishmael",
+                "speaker_side": "left",
+                "text_index": 1,
+                "reading_order": 2
+              },
+              {
+                "id": "balloon_2",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 2,
+                "reading_order": 3
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.5409
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.5409
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Ishmael: x 6%, y 20%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Peter Coffin: x 56%, y 20%, w 38%, h 16%. - Place Ishmael body in x 6%, y 44%, w 36%, h 52%; face in x 19%, y 48%, w 9%, h 10%. - Place Peter Coffin body in x 58%, y 44%, w 36%, h 52%; face in x 72%, y 48%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 3,
+      "layout": "six_panel_exchange",
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, expanded landlord selling-heads exchange",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_landlord_001.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Does he always keep such late hours?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "“does he always keep such late hours?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "left"
+            },
+            {
+              "kind": "speech",
+              "text": "He went out a peddling—unless maybe he can't sell his head.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“to-night he went out a peddling... unless, may be, he can’t sell his head.”",
+              "text_index": 1,
+              "slot_id": "balloon_2",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.015,
+            "y": 0.012,
+            "w": 0.97,
+            "h": 0.205
+          },
+          "panel_archetype": "two_speaker_exchange",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_strip",
+            "panel_archetype": "two_speaker_exchange",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.012,
+              "w": 0.97,
+              "h": 0.205
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_left",
+                "speaker": "Ishmael",
+                "speaker_side": "left",
+                "text_index": 0,
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_2",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.31,
+                  "w": 0.36,
+                  "h": 0.65
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3555,
+                  "w": 0.0864,
+                  "h": 0.13
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.4361
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.31,
+                  "w": 0.36,
+                  "h": 0.65
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3555,
+                  "w": 0.0864,
+                  "h": 0.13
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.4361
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Ishmael: x 6%, y 4%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Peter Coffin: x 56%, y 4%, w 38%, h 19%. - Place Ishmael body in x 6%, y 31%, w 36%, h 65%; face in x 19%, y 36%, w 9%, h 13%. - Place Peter Coffin body in x 58%, y 31%, w 36%, h 65%; face in x 72%, y 36%, w 9%, h 13%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_landlord_002.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Peddling his head around town?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_center",
+              "speaker_region": "center",
+              "source_evidence": "“engaged... in peddling his head around this town?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.3,
+                "y": 0.04,
+                "w": 0.4,
+                "h": 0.23
+              },
+              "speaker_position": "center"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.015,
+            "y": 0.227,
+            "w": 0.477,
+            "h": 0.205
+          },
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_center",
+              "box": {
+                "x": 0.3,
+                "y": 0.04,
+                "w": 0.4,
+                "h": 0.23
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "center",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.227,
+              "w": 0.477,
+              "h": 0.205
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.3,
+                  "y": 0.04,
+                  "w": 0.4,
+                  "h": 0.23
+                },
+                "zone": "top_center",
+                "speaker": "Ishmael",
+                "speaker_side": "center",
+                "text_index": 0,
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "center",
+                "body_box": {
+                  "x": 0.31,
+                  "y": 0.35,
+                  "w": 0.38,
+                  "h": 0.61
+                },
+                "face_box": {
+                  "x": 0.4468,
+                  "y": 0.3927,
+                  "w": 0.0912,
+                  "h": 0.122
+                },
+                "mouth_point": {
+                  "x": 0.4924,
+                  "y": 0.4683
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Ishmael: x 30%, y 4%, w 40%, h 23%. - Place Ishmael body in x 31%, y 35%, w 38%, h 61%; face in x 45%, y 39%, w 9%, h 12%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 3,
+          "image": "ch003_landlord_003.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "That's precisely it. The market's overstocked.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“That’s precisely it... the market’s overstocked.”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.27
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.508,
+            "y": 0.227,
+            "w": 0.477,
+            "h": 0.205
+          },
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.27
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.227,
+              "w": 0.477,
+              "h": 0.205
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.27
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 0,
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.54,
+                  "y": 0.39,
+                  "w": 0.4,
+                  "h": 0.57
+                },
+                "face_box": {
+                  "x": 0.692,
+                  "y": 0.4299,
+                  "w": 0.096,
+                  "h": 0.114
+                },
+                "mouth_point": {
+                  "x": 0.74,
+                  "y": 0.5006
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Peter Coffin: x 56%, y 4%, w 38%, h 27%. - Place Peter Coffin body in x 54%, y 39%, w 40%, h 57%; face in x 69%, y 43%, w 10%, h 11%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "image": "ch003_landlord_004.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With what?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_center",
+              "speaker_region": "center",
+              "source_evidence": "“With what?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.3,
+                "y": 0.04,
+                "w": 0.4,
+                "h": 0.18
+              },
+              "speaker_position": "center"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.015,
+            "y": 0.443,
+            "w": 0.477,
+            "h": 0.205
+          },
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_center",
+              "box": {
+                "x": 0.3,
+                "y": 0.04,
+                "w": 0.4,
+                "h": 0.18
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "center",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.443,
+              "w": 0.477,
+              "h": 0.205
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.3,
+                  "y": 0.04,
+                  "w": 0.4,
+                  "h": 0.18
+                },
+                "zone": "top_center",
+                "speaker": "Ishmael",
+                "speaker_side": "center",
+                "text_index": 0,
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "center",
+                "body_box": {
+                  "x": 0.31,
+                  "y": 0.3,
+                  "w": 0.38,
+                  "h": 0.66
+                },
+                "face_box": {
+                  "x": 0.4468,
+                  "y": 0.3462,
+                  "w": 0.0912,
+                  "h": 0.132
+                },
+                "mouth_point": {
+                  "x": 0.4924,
+                  "y": 0.428
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Ishmael: x 30%, y 4%, w 40%, h 18%. - Place Ishmael body in x 31%, y 30%, w 38%, h 66%; face in x 45%, y 35%, w 9%, h 13%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 5,
+          "image": "ch003_landlord_005.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With heads, to be sure.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“With heads to be sure; ain’t there too many heads in the world?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.18
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.508,
+            "y": 0.443,
+            "w": 0.477,
+            "h": 0.205
+          },
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.18
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.443,
+              "w": 0.477,
+              "h": 0.205
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.18
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 0,
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.54,
+                  "y": 0.3,
+                  "w": 0.4,
+                  "h": 0.66
+                },
+                "face_box": {
+                  "x": 0.692,
+                  "y": 0.3462,
+                  "w": 0.096,
+                  "h": 0.132
+                },
+                "mouth_point": {
+                  "x": 0.74,
+                  "y": 0.428
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Peter Coffin: x 56%, y 4%, w 38%, h 18%. - Place Peter Coffin body in x 54%, y 30%, w 40%, h 66%; face in x 69%, y 35%, w 10%, h 13%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_landlord_006.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "’Balmed New Zealand heads—he’s sold all on ’em but one.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“bought up a lot of ’balmed New Zealand heads... he’s sold all on ’em but one”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "right"
+            },
+            {
+              "kind": "caption",
+              "text": "This account cleared up the otherwise unaccountable mystery.",
+              "caption_zone": "bottom_center",
+              "text_index": 1,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.84,
+                "w": 0.88,
+                "h": 0.12
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "box": {
+            "x": 0.015,
+            "y": 0.658,
+            "w": 0.97,
+            "h": 0.33
+          },
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.84,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.658,
+              "w": 0.97,
+              "h": 0.33
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.84,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "bottom_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  1
+                ],
+                "reading_order": 2
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 0,
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3164,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.3809
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 84%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Peter Coffin: x 56%, y 4%, w 38%, h 16%. - Place Peter Coffin body in x 58%, y 28%, w 36%, h 52%; face in x 72%, y 32%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "fit_mode": "crop",
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 4,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch003_frame_005.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Since it was Sunday, I took the prodigious bed and eyed his outlandish gear.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Come along—I’ll give ye a glim in a jiffy.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Come along here, I’ll give ye a glim in a jiffy;\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_right",
+                "speaker": "Peter Coffin",
+                "speaker_side": "right",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Peter Coffin",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.5409
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.5409
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Peter Coffin: x 56%, y 20%, w 38%, h 16%. - Place Peter Coffin body in x 58%, y 44%, w 36%, h 52%; face in x 72%, y 48%, w 9%, h 10%. - Place Ishmael body in x 6%, y 44%, w 36%, h 52%; face in x 19%, y 48%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_frame_006.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals.",
+              "caption_zone": "bottom_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.22,
+                "y": 0.77,
+                "w": 0.72,
+                "h": 0.19
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.22,
+                "y": 0.77,
+                "w": 0.72,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.22,
+                  "y": 0.77,
+                  "w": 0.72,
+                  "h": 0.19
+                },
+                "zone": "bottom_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.45
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3115,
+                  "w": 0.0864,
+                  "h": 0.09
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.3673
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.45
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3115,
+                  "w": 0.0864,
+                  "h": 0.09
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.3673
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 77%, w 72%, h 19%. - Place Ishmael body in x 6%, y 28%, w 36%, h 45%; face in x 19%, y 31%, w 9%, h 9%. - Place Queequeg body in x 58%, y 28%, w 36%, h 45%; face in x 72%, y 31%, w 9%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 5,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 7, 8",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch003_frame_007.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He sprang into bed with the tomahawk-pipe. Peter Coffin said, \"Don’t be afraid; Queequeg won’t harm a hair of your head.\"",
+              "caption_zone": "top_center",
+              "lettering_notes": "demoted from speech: panel exceeded 2 balloons",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+              "speaker": "Queequeg",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Who-e debel you?—you no speak-e, dam-me, I kill-e.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.23,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "left"
+            },
+            {
+              "kind": "speech",
+              "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Landlord, for God’s sake, Peter Coffin! ... Watch! ... Angels! save me!\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.23,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker_position": "right"
+            }
+          ],
+          "panel_archetype": "two_speaker_exchange",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.23,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Queequeg",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.23,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "right",
+              "reserved_for": null,
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "two_speaker_exchange",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.23,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_left",
+                "speaker": "Queequeg",
+                "speaker_side": "left",
+                "text_index": 1,
+                "reading_order": 2
+              },
+              {
+                "id": "balloon_2",
+                "kind": "speech",
+                "box": {
+                  "x": 0.56,
+                  "y": 0.23,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_right",
+                "speaker": "Ishmael",
+                "speaker_side": "right",
+                "text_index": 2,
+                "reading_order": 3
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Queequeg",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.5,
+                  "w": 0.36,
+                  "h": 0.46
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.5322,
+                  "w": 0.0864,
+                  "h": 0.092
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.5892
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.5,
+                  "w": 0.36,
+                  "h": 0.46
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.5322,
+                  "w": 0.0864,
+                  "h": 0.092
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.5892
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Queequeg: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Ishmael: x 56%, y 23%, w 38%, h 19%. - Place Queequeg body in x 6%, y 50%, w 36%, h 46%; face in x 19%, y 53%, w 9%, h 9%. - Place Ishmael body in x 58%, y 50%, w 36%, h 46%; face in x 72%, y 53%, w 9%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 8,
+          "image": "ch003_frame_008.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 3,
+          "source_frame_number": 8,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He stashed the tomahawk-pipe; I turned in again and slept soundly.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              }
+            },
+            {
+              "kind": "thought",
+              "text": "Better sleep with a sober cannibal than a drunken Christian.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Better sleep with a sober cannibal than a drunken Christian.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker_position": "left"
+            },
+            {
+              "kind": "speech",
+              "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"tell him to stash his tomahawk there, or pipe... tell him to stop smoking... Besides, I ain’t insured.\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.415,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker_position": "left"
+            }
+          ],
+          "panel_archetype": "two_speaker_exchange",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "thought",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.415,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "two_speaker_exchange",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "thought",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_left",
+                "speaker": "Ishmael",
+                "speaker_side": "left",
+                "text_index": 1,
+                "reading_order": 2
+              },
+              {
+                "id": "balloon_2",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.415,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_left",
+                "speaker": "Ishmael",
+                "speaker_side": "left",
+                "text_index": 2,
+                "reading_order": 3
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.685,
+                  "w": 0.36,
+                  "h": 0.275
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.7042,
+                  "w": 0.0864,
+                  "h": 0.055
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.7383
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.685,
+                  "w": 0.36,
+                  "h": 0.275
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.7042,
+                  "w": 0.0864,
+                  "h": 0.055
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.7383
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty thought box balloon_1 for Ishmael: x 6%, y 20%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Ishmael: x 6%, y 42%, w 38%, h 19%. - Place Ishmael body in x 6%, y 68%, w 36%, h 28%; face in x 19%, y 70%, w 9%, h 6%. - Place Queequeg body in x 58%, y 68%, w 36%, h 28%; face in x 72%, y 70%, w 9%, h 6%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 6,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch004_frame_001.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I woke at daylight to find Queequeg’s tattooed arm thrown over me, so blended with the patchwork counterpane that only its weight told me he was hugging me.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.15
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.72,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.4119
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.4119
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. - Place Ishmael body in x 6%, y 28%, w 36%, h 68%; face in x 19%, y 33%, w 9%, h 14%. - Place Queequeg body in x 58%, y 28%, w 36%, h 68%; face in x 72%, y 33%, w 9%, h 14%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch004_frame_002.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I wriggled to rouse him and found the tomahawk-pipe by his side.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Queequeg! In the name of goodness—wake!",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Queequeg!—in the name of goodness, Queequeg, wake!\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker_position": "left"
+            }
+          ],
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.12
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.2,
+                "w": 0.38,
+                "h": 0.16
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.12
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.2,
+                  "w": 0.38,
+                  "h": 0.16
+                },
+                "zone": "top_left",
+                "speaker": "Ishmael",
+                "speaker_side": "left",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.5409
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.44,
+                  "w": 0.36,
+                  "h": 0.52
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.4764,
+                  "w": 0.0864,
+                  "h": 0.104
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.5409
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Ishmael: x 6%, y 20%, w 38%, h 16%. - Place Ishmael body in x 6%, y 44%, w 36%, h 52%; face in x 19%, y 48%, w 9%, h 10%. - Place Queequeg body in x 58%, y 44%, w 36%, h 52%; face in x 72%, y 48%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 7,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 3, 4",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch004_frame_003.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "By much wriggling and loud expostulations I woke him; he drew back his arm, shook himself, and sat up staring, while I lay quiet and curious rather than afraid.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.4119
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.4119
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Place Ishmael body in x 6%, y 28%, w 36%, h 68%; face in x 19%, y 33%, w 9%, h 14%. - Place Queequeg body in x 58%, y 28%, w 36%, h 68%; face in x 72%, y 33%, w 9%, h 14%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "image": "ch004_frame_004.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 4,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He made signs that he would dress first and then leave me to dress alone—a very civilized overture I accepted as I watched him.",
+              "caption_zone": "bottom_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.22,
+                "y": 0.81,
+                "w": 0.72,
+                "h": 0.15
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.22,
+                "y": 0.81,
+                "w": 0.72,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.22,
+                  "y": 0.81,
+                  "w": 0.72,
+                  "h": 0.15
+                },
+                "zone": "bottom_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.49
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3143,
+                  "w": 0.0864,
+                  "h": 0.098
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.3751
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.49
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3143,
+                  "w": 0.0864,
+                  "h": 0.098
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.3751
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 81%, w 72%, h 15%. - Place Queequeg body in x 6%, y 28%, w 36%, h 49%; face in x 19%, y 31%, w 9%, h 10%. - Place Ishmael body in x 58%, y 28%, w 36%, h 49%; face in x 72%, y 31%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 8,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch004_frame_005.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0117,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I watched him begin at the top with his very tall beaver hat, hunt up his boots, crawl under the bed to pull them on, and limp creaking about the room.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.22,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.15
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.22,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0117,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.22,
+                  "y": 0.04,
+                  "w": 0.72,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.4119
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.68
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3276,
+                  "w": 0.0864,
+                  "h": 0.136
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.4119
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 4%, w 72%, h 15%. - Place Queequeg body in x 6%, y 28%, w 36%, h 68%; face in x 19%, y 33%, w 9%, h 14%. - Place Ishmael body in x 58%, y 28%, w 36%, h 68%; face in x 72%, y 33%, w 9%, h 14%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch004_frame_006.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.5044,
+            "w": 0.9688,
+            "h": 0.4839
+          },
+          "source_chapter": 4,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Seeing there were no curtains and the house opposite looked in, I begged him to hasten into his pantaloons, whereupon he complied and washed only his chest, arms, and hands.",
+              "caption_zone": "bottom_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.77,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.77,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "wide_large",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.5044,
+              "w": 0.9688,
+              "h": 0.4839
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.77,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "bottom_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.45
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3115,
+                  "w": 0.0864,
+                  "h": 0.09
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.3673
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.28,
+                  "w": 0.36,
+                  "h": 0.45
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3115,
+                  "w": 0.0864,
+                  "h": 0.09
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.3673
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 88%, h 19%. - Place Ishmael body in x 6%, y 28%, w 36%, h 45%; face in x 19%, y 31%, w 9%, h 9%. - Place Queequeg body in x 58%, y 28%, w 36%, h 45%; face in x 72%, y 31%, w 9%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 9,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 4, frames 7",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch004_frame_007.png",
+          "box": {
+            "x": 0.0156,
+            "y": 0.0231,
+            "w": 0.9688,
+            "h": 0.9538
+          },
+          "source_chapter": 4,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Then I saw him coolly shave with the head of his harpoon, and, his toilet complete, he marched out in his pilot monkey jacket, sporting the harpoon like a marshal’s baton.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.19
+              }
+            }
+          ],
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.72,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "full_page",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.0156,
+              "y": 0.0231,
+              "w": 0.9688,
+              "h": 0.9538
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.72,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Queequeg",
+                "role": "visible_character",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.31,
+                  "w": 0.36,
+                  "h": 0.65
+                },
+                "face_box": {
+                  "x": 0.1896,
+                  "y": 0.3555,
+                  "w": 0.0864,
+                  "h": 0.13
+                },
+                "mouth_point": {
+                  "x": 0.2328,
+                  "y": 0.4361
+                }
+              },
+              {
+                "id": "figure_2",
+                "character": "Ishmael",
+                "role": "visible_character",
+                "side": "right",
+                "body_box": {
+                  "x": 0.58,
+                  "y": 0.31,
+                  "w": 0.36,
+                  "h": 0.65
+                },
+                "face_box": {
+                  "x": 0.7168,
+                  "y": 0.3555,
+                  "w": 0.0864,
+                  "h": 0.13
+                },
+                "mouth_point": {
+                  "x": 0.76,
+                  "y": 0.4361
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. - Place Queequeg body in x 6%, y 31%, w 36%, h 65%; face in x 19%, y 36%, w 9%, h 13%. - Place Ishmael body in x 58%, y 31%, w 36%, h 65%; face in x 72%, y 36%, w 9%, h 13%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    }
+  ]
+}

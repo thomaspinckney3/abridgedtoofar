@@ -1,0 +1,242 @@
+{
+  "book_id": "secret_adversary",
+  "pairs_checked": 28,
+  "findings_total": 10,
+  "findings_raw_total": 10,
+  "findings_invalid": 0,
+  "class_counts": {
+    "dangling_reference": 3,
+    "broken_pivot": 2,
+    "unattributed_dialogue": 2,
+    "missing_gloss": 2,
+    "mid_scene_jump": 1
+  },
+  "per_segment_counts": {
+    "002": 1,
+    "005": 1,
+    "006": 1,
+    "007": 1,
+    "010": 1,
+    "011": 1,
+    "019": 1,
+    "020": 1,
+    "023": 1,
+    "028": 1
+  },
+  "per_pair": [
+    {
+      "pair": "001-002",
+      "count": 1
+    },
+    {
+      "pair": "002-003",
+      "count": 0
+    },
+    {
+      "pair": "003-004",
+      "count": 0
+    },
+    {
+      "pair": "004-005",
+      "count": 1
+    },
+    {
+      "pair": "005-006",
+      "count": 1
+    },
+    {
+      "pair": "006-007",
+      "count": 1
+    },
+    {
+      "pair": "007-008",
+      "count": 0
+    },
+    {
+      "pair": "008-009",
+      "count": 0
+    },
+    {
+      "pair": "009-010",
+      "count": 1
+    },
+    {
+      "pair": "010-011",
+      "count": 1
+    },
+    {
+      "pair": "011-012",
+      "count": 0
+    },
+    {
+      "pair": "012-013",
+      "count": 0
+    },
+    {
+      "pair": "013-014",
+      "count": 0
+    },
+    {
+      "pair": "014-015",
+      "count": 0
+    },
+    {
+      "pair": "015-016",
+      "count": 0
+    },
+    {
+      "pair": "016-017",
+      "count": 0
+    },
+    {
+      "pair": "017-018",
+      "count": 0
+    },
+    {
+      "pair": "018-019",
+      "count": 1
+    },
+    {
+      "pair": "019-020",
+      "count": 1
+    },
+    {
+      "pair": "020-021",
+      "count": 0
+    },
+    {
+      "pair": "021-022",
+      "count": 0
+    },
+    {
+      "pair": "022-023",
+      "count": 1
+    },
+    {
+      "pair": "023-024",
+      "count": 0
+    },
+    {
+      "pair": "024-025",
+      "count": 0
+    },
+    {
+      "pair": "025-026",
+      "count": 0
+    },
+    {
+      "pair": "026-027",
+      "count": 0
+    },
+    {
+      "pair": "027-028",
+      "count": 1
+    },
+    {
+      "pair": "028-029",
+      "count": 0
+    }
+  ],
+  "findings": [
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "Tommy nodded. Her grey eyes looked misty. \"You're a good sort, Tommy.\"",
+      "source_has": "Tommy nodded. Tuppence's large grey eyes looked misty. 'You're a good sort, Tommy.'",
+      "gate_test_answer": "A reader is genuinely confused: the immediately preceding subject is Tommy, and 'her' could attach to his recently mentioned dead mother; only the source's explicit name 'Tuppence's large grey eyes' anchors the reference unambiguously.",
+      "segment_id": "002",
+      "pair": "001-002"
+    },
+    {
+      "valid": true,
+      "class": "broken_pivot",
+      "chapter": "N+1",
+      "draft_passage": "\"Did you notice a telephone in the outer office?\" \"No, I don't think I did.\" \"Exactly. That 'message' was Mr. Brown's way of giving an order to his subordinate.",
+      "source_has": "Carter first asks 'Brought a telephone message to the man Whittington, did he?' — establishing that a telephone message was the pretext — before asking whether Tuppence noticed a telephone. The 'Exactly' pivot depends on the reader knowing a telephone message had been claimed.",
+      "gate_test_answer": "A reader genuinely confused: Carter asks about a telephone with no prior mention of a telephone message in the draft, so 'Exactly' and the explanation that follows ('That message was Mr. Brown's way of giving an order') are logically unmotivated — the reader cannot reconstruct what the 'message' refers to or why the absence of a telephone matters.",
+      "segment_id": "005",
+      "pair": "004-005"
+    },
+    {
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N+1",
+      "draft_passage": "\"Ow! That's enough!\"",
+      "source_has": "Tuppence says 'Pinch me, Tommy'; 'Mr. Beresford obliged'; then Tuppence cries 'Ow! That's enough!'—the physical action (Tommy pinching her) that triggers the exclamation is present between the two lines of dialogue.",
+      "gate_test_answer": "A reader genuinely cannot tell what 'Ow! That's enough!' is a response to, because the triggering action (Tommy pinching her) has been cut from the draft, leaving a cry of pain with no cause.",
+      "segment_id": "006",
+      "pair": "005-006"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N+1",
+      "draft_passage": "Tuppence produced Mr. Carter's reply enclosing the official statement of those saved.",
+      "source_has": "'I wrote a long list of things I wanted to know, and sent it to Mr. Carter. I got his reply this morning, and among other things it encloses the official statement of those saved from the Lusitania.'",
+      "gate_test_answer": "A reader of only the draft has seen no prior mention of Tuppence writing to Carter or expecting a reply, so 'Mr. Carter's reply' arrives with no established referent — the reader is genuinely puzzled about where this document came from, not merely reading a less-ornamented version.",
+      "segment_id": "007",
+      "pair": "006-007"
+    },
+    {
+      "valid": true,
+      "class": "mid_scene_jump",
+      "chapter": "N+1",
+      "draft_passage": "When Tommy set off after the two men, Tuppence retraced her steps to the entrance hall of the mansions",
+      "source_has": "When Tommy set forth on the trail of the two men... The two men had undoubtedly come from the second floor flat, and that one slender thread of the name 'Rita' had set the Young Adventurers once more upon the track of the abductors of Jane Finn.",
+      "gate_test_answer": "A reader is genuinely confused: the preceding draft chapter ends with Tommy unconscious from a blow to the head, so 'when Tommy set off after the two men' has no antecedent event in the draft — neither Tommy's recovery nor the specific two men he is trailing were established anywhere in the surviving draft text.",
+      "segment_id": "010",
+      "pair": "009-010"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N+1",
+      "draft_passage": "The next morning a few brief words at the stationer's confirmed nothing was waiting for her there.",
+      "source_has": "Source Ch 010 establishes 'a small stationer's shop near at hand where Albert was to call in frequently' as Tuppence's pre-arranged message drop before leaving the Ritz; source Ch 011 then reads 'a few brief words with Albert informed her that nothing was waiting for her at the stationer's.'",
+      "gate_test_answer": "A reader is genuinely confused: 'the stationer's' carries a definite article pointing to a previously identified location, but neither draft chapter has established what stationer's this is or why Tuppence would go there to receive messages, so the reference is uninterpretable without the source.",
+      "segment_id": "011",
+      "pair": "010-011"
+    },
+    {
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N+1",
+      "draft_passage": "\"Lost her memory, eh?\" said Tommy with interest. \"By Jove, that explains why they looked at me so queerly when I spoke of questioning her.\"",
+      "source_has": "Julius narrates that Jane Finn has lost her memory before Tommy reacts with 'Lost her memory, eh?' — the draft's compressed summary of Julius's narration ('Bournemouth, the call upon Sir James, the sensational events of the previous night, Mrs. Vandemeyer's death') omits any mention of Jane Finn's amnesia, so Tommy's reaction has no referent in the draft.",
+      "gate_test_answer": "A reader with no source access cannot determine whose memory loss Tommy is reacting to, since the draft's summary of Julius's narration never mentions it; this is genuine confusion, not merely less-ornamented prose.",
+      "segment_id": "019",
+      "pair": "018-019"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "Mrs. Vandemeyer always signed herself Rita. Curious that the girl was crying out to her at the moment Vandemeyer was either dead or dying.",
+      "source_has": "Source has Tommy say the girl cried out wanting to be taken to 'Marguerite,' prompting Sir James to note that Vandemeyer signed herself Rita and the girl must have called her by her full name — establishing what crying-out incident is meant. The draft cuts Tommy's report of the girl calling for Marguerite, leaving 'the girl was crying out to her' with no antecedent event in the draft.",
+      "gate_test_answer": "A reader of the draft alone genuinely cannot identify which girl, crying out what, is being referred to — the incident was entirely cut — so this is real confusion, not mere loss of ornament.",
+      "segment_id": "020",
+      "pair": "019-020"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "\"But the bogus inspector?\" \"Ah,\" said Sir James thoughtfully.",
+      "source_has": "\"But the bogus inspector? Inspector Brown?\" — establishing the referent as the person who the PM suspects placed or took the photograph; prior chapters establish Inspector Brown as Mr. Brown's alias used to conduct a search.",
+      "gate_test_answer": "A reader of only the two draft chapters has seen no mention of any inspector in either chapter, so 'the bogus inspector' is genuinely unresolvable — the reader cannot tell who or what is being asked about, not merely less richly described.",
+      "segment_id": "023",
+      "pair": "022-023"
+    },
+    {
+      "valid": true,
+      "class": "broken_pivot",
+      "chapter": "N+1",
+      "draft_passage": "She'd never spell her name 'Twopence,' but anyone who'd never seen it written might easily do so. Julius *had* seen it. *Sir James hadn't!*",
+      "source_has": "She'd never spell her name 'Twopence,' but anyone who'd never seen it written might quite easily do so. Julius _had_ seen it—he showed me a note of hers to him once—but _Sir James hadn't!_",
+      "gate_test_answer": "A reader is genuinely confused: 'Julius had seen it' is an unsupported bare assertion without the explanatory clause 'he showed me a note of hers to him once,' so the logical deduction that Sir James (not Julius) wrote the forgery has no evidential foundation and reads as a non sequitur.",
+      "segment_id": "028",
+      "pair": "027-028"
+    }
+  ]
+}

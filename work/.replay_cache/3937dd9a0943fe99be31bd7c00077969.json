@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:37:20",
+  "key": "3937dd9a0943fe99be31bd7c00077969",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test to every candidate before flagging it.\n\n---\n\n**Ch 053 draft \u2014 candidates**\n\nThe draft is a clean compression. Fedallah is introduced with his name and description (\"hair-turbaned Fedallah\") and is treated as a character the reader has already met from earlier chapters. The Stubb/Flask dialogue trim is minor and self-contained. No broken pivots, no dangling pronouns, no unglossed names survive.\n\n**Ch 054 draft \u2014 candidates**\n\n1. *\"On the table beside him lay unrolled one of those charts of tides and currents.\"* \u2014 The source says \"those charts of tides and currents **which have previously been spoken of**.\" The draft drops the gloss. But the phrase \"charts of tides and currents\" is self-describing; a reader knows what tidal charts are without the back-reference gloss. The gloss points to prior source chapters, not to anything in the draft that was cut. Gate test: the reader is not confused, merely reading a less-ornamented sentence. **Rejected.**\n\n2. *\"the tell-tale that swung from a beam in the ceiling\"* \u2014 The source has a footnote explaining that the cabin-compass is called the tell-tale. The draft drops the footnote. But \"tell-tale\" is used in a purely referential way \u2014 the sentence describes it physically (swinging from the ceiling beam), and the reader only needs to know it is a navigational instrument Ahab's eyes are pointed toward, which the physical description conveys. Gate test: no genuine confusion about meaning or scene. **Rejected.**\n\n3. The \"Cape Tormentoso\" paragraph in the draft reads: *\"Cape of Good Hope, do they call ye? Rather Cape Tormentoso, as called of yore. But still beckoning us on from before, the solitary jet would at times be descried.\"* In the source, between the \"Cape Tormentoso\" exclamation and the return of the jet, there is a long elaboration of guilt and desolation that ends with \"still directing its fountain of feathers to the sky; still beckoning us on from before, the solitary jet would at times be descried.\" The pivot word \"But\" in the draft sentence \"But still beckoning us on from before\u2026\" is meant to contrast the stormy darkness with the jet's calm persistence. The storm/darkness material immediately precedes in the draft (the sea-ravens paragraph), so the contrast survives. Gate test: a reader can follow the contrast. **Rejected.**\n\n---\n\nAfter exhaustive checking, no sentence in either draft chapter fails any of the seven structural tests under the gate test standard.\n\n```json\n[]\n```",
+    "input_tokens": 7552,
+    "output_tokens": 613,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 14.405346155166626,
+    "stop_reason": "end_turn"
+  }
+}

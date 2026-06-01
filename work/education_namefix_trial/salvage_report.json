@@ -1,0 +1,43 @@
+{
+  "book_id": "education",
+  "timestamp": "2026-05-06T11:31:19",
+  "snapshot": "work/_salvage_snapshots/education_20260506_110754",
+  "restored_from_replay_cache": {
+    "006": "47836f31ea29bf0255aaadd8a0747009",
+    "007": "0b2ca401be6bb0701a7cadabe1c9e838",
+    "008": "fe95f712be050d5e7577b856c9dc7437",
+    "031": "37aa433a9999b39ff49284d225092fdb",
+    "032": "97b7c3bc92a03923704bbaf2beb88ea9"
+  },
+  "rezeroed_skipped_segments": [
+    "019"
+  ],
+  "assembly": {
+    "partial": false,
+    "total_drafted": 86217,
+    "book_target": 89517,
+    "book_ceiling": 107420,
+    "over_target": false,
+    "over_ceiling": false,
+    "segments_drafted": 28,
+    "segments_cut": 9,
+    "segments_missing": 0
+  },
+  "local_validation": {
+    "status": "passed",
+    "incomplete_required_drafts": 0,
+    "forage_validate_delta_vs_target_pct": -3.7
+  },
+  "book_critic": {
+    "verdict": "ship",
+    "is_partial": false,
+    "counts": {
+      "present": 29
+    }
+  },
+  "fresh_coherence": {
+    "status": "blocked",
+    "reason": "Anthropic overloaded_error on live pair 032-033 after completed prior pairs replayed; coherence_report.json was not refreshed",
+    "existing_coherence_report_mtime": "2026-05-04T21:42:46"
+  }
+}

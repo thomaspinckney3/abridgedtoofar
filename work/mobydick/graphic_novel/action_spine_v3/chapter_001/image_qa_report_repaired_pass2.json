@@ -1,0 +1,56 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The coin purse appears as a modern bifold wallet rather than a small clasp coin purse.",
+          "visible_evidence": "In Ishmael's right hand is a flat, rectangular brown leather item opened like a bifold, lacking a metal clasp and shaped more like a wallet.",
+          "repair_prompt": "Keep the same composition and pose. Replace the item in Ishmael’s hand with a small, worn brown leather coin purse featuring a simple metal clasp hinge and a slightly rounded, cupped shape. Optionally show a couple of coins inside; do not show paper currency. Maintain all other details: 1840s pea coat, watch cap, rough trousers, worn boots; weathered dock spiles with coiled tarred hemp ropes; overcast drizzle; distant moored ships; clear negative space at bottom-center for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is not fully clean; a diagonal rope and misty texture intrude where the caption should go.",
+          "visible_evidence": "A thick tarred rope the character is holding runs down through the lower center of the frame, with foggy water texture under it, leaving no flat empty space.",
+          "repair_prompt": "Recompose to leave a clear, uncluttered negative space at the bottom-center for captioning. Shift the rope slightly left or right so it does not cross the bottom-center, and soften or flatten textures there. Keep medium dockside shot, Ishmael in 1840s working clothes, hand on tarred hemp rope, rigged sailing ship and indistinct background sailors. No readable text."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Background includes additional people and a horse-drawn cart along the waterfront, whereas the frame calls for only Ishmael to be visibly present.",
+          "visible_evidence": "Small human figures and a horse with cart are visible on the left street behind the pier.",
+          "repair_prompt": "Remove all discernible background people and the horse-drawn cart from the waterfront; keep only Ishmael visible while retaining the 1840s city skyline as an impersonal backdrop."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Birds are visible over the harbor though no animals are specified for this frame.",
+          "visible_evidence": "Several seagulls appear in the sky above the horizon.",
+          "repair_prompt": "Omit the birds from the sky; preserve the open horizon, ships, choppy water, and pale light."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:32:08",
+  "key": "a66eb2d7c3cd85073b304832fe48995b",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I reviewed both chapter pairs carefully against all seven tests and the gate test, checking for structural coherence failures that would genuinely confuse a reader with no source access.\n\n**Ch 022 draft:**\n- The dialogue flows coherently; all pronouns and proper names have clear antecedents within the draft.\n- \"He did; and it seemed he was dogging us, but with what intent I could not imagine. This, coupled with his ambiguous\u2026\" \u2014 \"This\" refers to the act of following/dogging, which is clearly established in the immediately preceding sentence. No dangling demonstrative.\n- \"the Cape Horn fit\" \u2014 mentioned earlier in the stranger's speech within the draft itself (\"that thing that happened to him off Cape Horn, when he lay like dead\"). Clear.\n- \"the prediction of the squaw Tistig\" \u2014 appears in the list of half-apprehensions. This name is not introduced anywhere in the draft or the preceding draft chapter. However, it also appears verbatim in the source's list, which similarly provides no local gloss for Tistig. The source treats it as a passing reference in a list of accumulated anxieties. A reader of only the draft encounters the same bare reference as a reader of the source. No structural damage from compression here \u2014 the source equally provides no gloss. Not a valid finding.\n\n**Ch 023 draft:**\n- \"Aunt Charity\" is on the authorized minor-character removal list. However, she *appears* in the draft \u2014 she is introduced with an appositive: \"Captain Bildad's sister, a lean old lady of indefatigable spirit\u2026\u2014Aunt Charity, as everybody called her.\" The named-person continuity invariant applies only when the introduction has been cut; here the introduction survives in compressed form. No finding.\n- All other references parse cleanly against prior draft content.\n\nNo structurally damaged sentences meeting the required tests were found in either chapter pair.\n\n```json\n[]\n```",
+    "input_tokens": 6741,
+    "output_tokens": 435,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 13.241605281829834,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:59:07",
+  "key": "ad14be44bf4ccba81fc23e40afb6b790",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through each chapter draft methodically, applying only the seven tests and the gate test.\n\n---\n\n**Ch 006 draft scan**\n\n- \"descending the steps with their heads in a whirl\" \u2014 source says \"descending the steps of 27 Carshalton Terrace.\" The address is cut, but the phrase still parses fine. Not a finding.\n- `\"Julius P. Hersheimmer!\" they exclaimed together.` \u2014 In the source this follows a clear beat where Tommy voices the name first, then Tuppence echoes it. In the draft the exclamation is presented as simultaneous. This is a compression of the comic beat, not a structural failure. Still parses.\n- The lunch scene transition: the draft jumps from \"Come on, we'd better take a taxi\" directly to \"On inquiring for Mr. Hersheimmer at the *Ritz*\u2026\" The taxi ride and Tuppence's blackmailer quip are cut. No structural damage.\n- \"Oysters had just given place to Sole Colbert when a card was brought to Hersheimmer.\" \u2014 The draft cuts the scene where Julius invites them to lunch and they go down to the restaurant. The lunch is now a mid-scene arrival. However, the draft has Julius already talking with them and then \"Oysters had just given place to Sole Colbert\" \u2014 a competent reader can infer they went to lunch together. Not a mid-scene jump per test 6 because the previous draft chapter did not need to establish it; it's within the same chapter. Slightly abrupt but parseable.\n- `\"Scotland Yard again. Another man. I hope they haven't lost that photograph.\"` \u2014 In the source, Hersheimmer reads the card and says \"Inspector Japp, C.I.D. Scotland Yard again. Another man this time. What does he expect I can tell him that I didn't tell the first chap?\" The draft strips \"Inspector Japp, C.I.D.\" and the explanation of why a second man is surprising. The sentence still parses. Not a structural failure.\n- \"Inspector Brown. Quiet, unassuming sort of chap.\" \u2014 antecedent is the man who came this morning, established in draft. Fine.\n\nNo valid findings in Ch 006 draft.\n\n---\n\n**Ch 007 draft scan**\n\n- Opening: \"no such person as 'Inspector Brown' was known to Scotland Yard\" \u2014 Inspector Brown was established at the end of Ch 006 draft. Fine.\n- \"Tuppence produced Mr. Carter's reply enclosing the official statement of those saved.\" \u2014 \"Mr. Carter's reply\" requires that Tuppence sent Carter a list of questions and received a reply. In the source this is explicit: \"I wrote a long list of things I wanted to know, and sent it to Mr. Carter. I got his reply this morning.\" In the draft this exchange is entirely absent; the draft jumps straight to \"Tuppence produced Mr. Carter's reply.\" A reader who has only the draft has no knowledge that Tuppence contacted Carter or that a reply was expected. Test 4 (missing definitional gloss) / Test 1: the object \"Mr. Carter's reply\" has no established referent in the preceding draft \u2014 the action of writing to Carter and receiving a response was cut. A competent reader would be genuinely puzzled: where did this reply come from?\n\n- \"The first address proved a dilapidated house with a few grimy bushes for a front garden.\" \u2014 \"The first address\" refers to the list of seven. The draft says \"bearing a list of seven\" so this is fine.\n\n- `\"Child's play to the masculine mind.\"` \u2014 unattributed. In the source this is Tommy's line, said to Tuppence after the servant shuts the door, clearly attributed. In the draft the servant shuts the door and then this line appears with no speaker tag and no \"said Tommy\" or equivalent. Test 5 is for dialogue whose triggering question was cut; this is slightly different \u2014 attribution was cut. But test 1: the sentence has a main clause and is parseable as a quip. The reader can infer from context it's Tommy. Not a structural failure \u2014 merely less ornamented. Not a finding.\n\n- \"By lunch they had collected a Gladys Mary and a Marjorie, been baffled by one change of address, and endured a long lecture on universal suffrage from a vivacious American named Sadie.\" \u2014 The draft cuts the second visit (Mrs. Edgar Keith's) but that was the first address already shown. The Gladys Mary, Marjorie, and Sadie are new names introduced in passing summary. These are minor names used purely as examples of results, not characters requiring identification. The draft's \"a vivacious American named Sadie\" is self-glossing. Fine.\n\n- \"Mrs. Vandemeyer, 20 South Audley Mansions.\" \u2014 First appearance of this name. In the source, Tuppence reads from the notebook: \"Mrs. Vandemeyer, 20 South Audley Mansions. Miss Wheeler\u2026\" \u2014 then Tommy says the Mayfair lady is indicated. In the draft the same exchange occurs. \"Mrs. Vandemeyer\" is introduced here for the first time as a name on the survivors list. The reader understands her as a London-area Lusitania survivor. Not an unglossed name problem; she is presented exactly as in the source at this point. Fine.\n\n- \"Quick\u2014follow them. I daren't. He might recognize me. The bigger of the two was Whittington.\" \u2014 In the source: \"I don't know who the other man is, but the bigger of the two was Whittington.\" The draft cuts \"I don't know who the other man is, but.\" The sentence now reads: \"The bigger of the two was Whittington.\" This is a broken pivot in a minor sense \u2014 the source's contrast (known/unknown identities) is compressed away \u2014 but the statement still parses and conveys the essential information. A reader is not confused. Not a finding.\n\n---\n\n**One valid finding:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Tuppence produced Mr. Carter's reply enclosing the official statement of those saved.\",\n    \"source_has\": \"'I wrote a long list of things I wanted to know, and sent it to Mr. Carter. I got his reply this morning, and among other things it encloses the official statement of those saved from the Lusitania.'\",\n    \"gate_test_answer\": \"A reader of only the draft has seen no prior mention of Tuppence writing to Carter or expecting a reply, so 'Mr. Carter's reply' arrives with no established referent \u2014 the reader is genuinely puzzled about where this document came from, not merely reading a less-ornamented version.\"\n  }\n]\n```",
+    "input_tokens": 9847,
+    "output_tokens": 1603,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 35.02235794067383,
+    "stop_reason": "end_turn"
+  }
+}

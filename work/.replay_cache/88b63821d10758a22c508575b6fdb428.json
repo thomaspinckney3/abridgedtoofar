@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:42:15",
+  "key": "88b63821d10758a22c508575b6fdb428",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying the gate test strictly.\n\n**Ch 112 draft review:**\n\nThe draft is a faithful compression. The dialogue is preserved nearly verbatim. \"The chief mate\" replaces \"Starbuck\" in the first paragraph but Starbuck is named throughout the dialogue immediately after \u2014 no confusion. No structural breaks detected.\n\n**Ch 113 draft review:**\n\nChecking paragraph by paragraph:\n\n1. Opening \u2014 \"They broke out deeper\" \u2014 antecedent for \"they\" is established by preceding chapter's \"Burtons were hoisted\" / repair crew. Fine.\n\n2. \"In such labor... Queequeg, as harpooneer and holder\" \u2014 the source introduced this with \"in this vocation of whaling, sinecures are unknown... So with poor Queequeg.\" The draft compresses but \"harpooneer and holder\" explains his role. Fine.\n\n3. Queequeg's request paragraph \u2014 \"he told how\" \u2014 source says \"He called one to him... taking his hand, said...\" The draft cuts the \"taking his hand\" framing and \"called one to him.\" The speech content survives. Fine.\n\n4. \"Aft, the carpenter was at once commanded\" \u2014 \"Aft\" used as an adverb of location (meaning on the after part of the ship), not a definite reference requiring prior establishment. Fine.\n\n5. The Long Island sailor: source says \"the Long Island sailor\"; draft says \"a Long Island sailor.\" That's actually a correction \u2014 minor improvement, no problem.\n\n6. \"Pip, the ship's little tambourine-player and poor mad castaway\" \u2014 the draft provides an appositive gloss here. Pip has been authorized for removal from the minor-character list? Checking \u2014 Pip is NOT on the authorized removal list. But the draft does gloss him: \"the ship's little tambourine-player and poor mad castaway.\" That's sufficient local identification. Fine.\n\n7. \"I have heard,\" murmured Starbuck, the chief mate\" \u2014 Starbuck is a principal character, continuously present. The appositive is added (not cut), so no problem.\n\n8. \"But now that every preparation for death seemed made\u2014his coffin proved a good fit\u2014Queequeg suddenly rallied.\" \u2014 Source: \"But now that he had apparently made every preparation for death; now that his coffin was proved a good fit, Queequeg suddenly rallied.\" The draft compression is fine.\n\n9. \"Was to live or die a matter of his own sovereign will and pleasure? He answered, certainly.\" \u2014 Source: \"They asked him, then, whether to live or die was a matter of his own sovereign will and pleasure. He answered, certainly.\" Draft converts indirect question to direct question without establishing who asked. But this reads as narratorial summary/rhetorical question, not unattributed dialogue. A reader reads it as the narrator posing the question that was asked, then reporting the answer. Not genuinely confusing.\n\n10. \"And this thought, it must have been, suggested to Captain Ahab, turning one morning from surveying poor Queequeg, that wild exclamation\" \u2014 source says \"And this thought it must have been which suggested to Ahab that wild exclamation of his, when one morning turning away from surveying poor Queequeg.\" The draft restructures the participial phrase so that \"turning one morning from surveying poor Queequeg\" dangles \u2014 it modifies \"Captain Ahab\" but the syntax places it awkwardly after \"suggested to Captain Ahab.\" A competent reader would parse \"Captain Ahab, turning one morning from surveying poor Queequeg\" as a nominative absolute or appositive construction and understand the meaning. Awkward but parseable. Not a structural coherence failure by the gate test.\n\nNo valid findings detected in either chapter.\n\n```json\n[]\n```",
+    "input_tokens": 10393,
+    "output_tokens": 876,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 21.226244688034058,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:41:43",
+  "key": "6ef03f476ae1dfaf9a184a91273c5854",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test rigorously.\n\n---\n\n**Ch 037 draft review**\n\nThe draft is a faithful compression. The Tompkins name (from the source's crop-bet subplot) is elided cleanly \u2014 the draft replaces \"Tompkins won't lord it over you\" with a generic \"you won't mind, I suppose?\" \u2014 no orphaned name. All pronouns have clear antecedents. No structural damage found.\n\n---\n\n**Ch 038 draft review**\n\n**Candidate 1 \u2014 \"One, with his old mother, was forwarded separately\"**\n\nSource: \"Jim, with his old mother, was forwarded separately.\" The draft replaces \"Jim\" with \"One.\" Jim is a minor character not on the authorized-removal list, but the draft deliberately elides the name in favour of the descriptor \"One.\" The descriptor \"One\" is slightly unusual but parses: the reader understands one person from the divided party was sent ahead with his mother. A reader is not confused about the event, only deprived of the name. Since the draft uses a descriptor rather than an orphaned proper name, this falls under the explicit rejection: \"A minor character is referred to only by a descriptor\u2026 and the descriptor is clear.\" Not a valid finding.\n\n**Candidate 2 \u2014 The unattributed line \"Come, Eliza, why do you try to coax him, when you know that he has got to be kept away from you?\"**\n\nIn the source, this line is spoken by George. In the draft, no speaker attribution is given. Who says it? The preceding exchange has George speaking (\"You always will be pretty, do what you will\"), then Eliza (\"What does make you so sober?\"), then George (long speech), then Eliza (long speech), then George (long speech ending \"I wonder if the woman has got Harry rigged?\"), then the door opens, then a short exchange between Eliza and the child. The unattributed line follows \"The child clung shyly to the woman.\" The nearest named speakers are Eliza and George. A reader could plausibly assign it to either \u2014 George admonishing Eliza, or a narrator-like interjection. In the source it is clearly George. The missing attribution creates genuine ambiguity: is it George, or is it the newly-entered woman? This is a structural coherence failure \u2014 the speaker's identity is genuinely uncertain.\n\n**Candidate 3 \u2014 \"I've heard,\" said the woman, \"that there have been men down, warning all the packet captains against a man and woman, with a little boy.\"**\n\nIn the source this is spoken by \"Mrs. Smyth.\" Mrs. Smyth is on the authorized-removal list. The draft replaces her with \"the woman.\" The descriptor \"the woman\" is clear enough in context (the respectable middle-aged woman who just entered with Harry). Not a valid finding \u2014 authorized removal, descriptor is clear.\n\n**Candidate 4 \u2014 Broken pivot around the Loker/Sandusky warning**\n\nSource: \"As Tom had informed them that their party would be looked for in Sandusky, it was thought prudent to divide them.\" Draft: \"As he had informed them that their party would be looked for in Sandusky, it was thought prudent to divide them.\" The pronoun \"he\" \u2014 does it have a clear antecedent in the draft? The immediately preceding paragraph ends with Tom Loker's quoted speech (\"Make jist the tallest kind o' broth and knicknacks\"). Tom Loker is the subject of that entire paragraph. \"He\" clearly refers to Tom Loker. No confusion. Not a valid finding.\n\n---\n\n**Valid finding:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"The child clung shyly to the woman.\\n\\n\\\"Come, Eliza, why do you try to coax him, when you know that he has got to be kept away from you?\\\"\",\n    \"source_has\": \"The child clung shyly to the woman.\\n\\n\\\"Come Eliza, why do you try to coax him, when you know that he has got to be kept away from you?\\\" [spoken by George, attributed in source context]\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the line follows a beat in which Eliza, George, and the newly-entered unnamed woman are all present, and without the attribution the speaker could be any of the three \u2014 the source makes clear it is George, but the draft leaves it unassigned, creating real ambiguity about who is admonishing Eliza.\"\n  }\n]\n```",
+    "input_tokens": 16219,
+    "output_tokens": 1088,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.074584007263184,
+    "stop_reason": "end_turn"
+  }
+}

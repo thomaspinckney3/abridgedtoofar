@@ -1,0 +1,85 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: 1922 Long Island and Queens, New York; Jazz Age America
+- line and color: Inked linework with muted period palette; ash greys and soot blacks for the valley, warmer sepia and lavender for the city, sickly yellows for the billboard, smoky amber and cream for the cramped apartment interior, cold blue-greys for the dawn station
+- lighting: Smoky amber lamplight thickening toward midnight in the apartment; sudden harsh shadows at the moment of violence; flat fluorescent-cold pallor in the elevator; bluish pre-dawn light at Pennsylvania Station
+
+Character continuity:
+- Nick Carraway: Lean young man, late twenties, side-parted brown hair, observant eyes Costume: Rumpled light grey three-piece summer suit, tie pulled crooked, hat retrieved from the chandelier Continuity: Within-and-without observer; follows McKee out and ends the night at Penn Station
+- Tom Buchanan: Hulking sandy-haired man, hard mouth, heavy shoulders Costume: Summer suit, collar undone, sleeves of jacket taut across his back Continuity: Breaks Myrtle's nose with the flat of his open hand
+- Doctor T. J. Eckleburg (billboard): Enormous blue eyes behind huge yellow spectacles, no face Costume: N/A Continuity: Overhead as they leave the valley
+- George Wilson: Blond, spiritless, anaemic; pale light-blue eyes Costume: Dark mechanic's suit veiled in ash, rag in hands Continuity: Emerges with chairs as Myrtle slips away; unaware of the affair
+- Myrtle Wilson: Faintly stout mid-thirties woman, sensuous carriage, dark hair Costume: Cream-coloured chiffon afternoon dress, now spattered with blood Continuity: Chants Daisy's name; ends bleeding on couch over Versailles tapestry
+- Dog Vendor: Grey-haired old man with a small basket of puppies Costume: Shabby coat, soft cap Continuity: Pockets Tom's bill on the curb
+- Catherine: Slender worldly girl about thirty, sticky bob of red hair, milky-powdered complexion Costume: Slim afternoon dress, pottery bracelets jangling Continuity: Stumbles among furniture with articles of aid
+- Mr. McKee (Chester): Pale, feminine man, soft-featured Costume: Light suit rumpled from sleep; later, sitting up in bed in his underwear with a large portfolio Continuity: Wakes from doze, leaves with Nick, ends in his own bed reciting his photographic studies
+- Mrs. McKee: Shrill, languid woman, handsome but pinched Costume: Fussy afternoon dress, sleeves pushed back Continuity: Among the women tending Myrtle
+- Airedale puppy: Small Airedale with white feet, blunt face Costume: N/A Continuity: Sits on the table groaning in the smoke
+- Elevator boy: Young man in uniform cap, gloved hand on lever Costume: Brass-buttoned elevator uniform Continuity: Snaps at McKee in the descending cage
+
+Page 4 summary: On the sunlit curb Tom settles the puppy's sex and pays off the vendor; the taxi rolls up a pastoral Fifth Avenue; Nick tries to bow out but is dragged into the West 158th Street apartment; inside the cramped, over-furnished flat Myrtle fusses with the dog while Tom unlocks the whisky and the long drunken afternoon begins.
+
+Panels:
+
+Panel 1:
+Beat: On the curb Myrtle coos over the puppy's sex while Tom shoves money at the vendor and dismisses him.
+Shot: medium
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=12%
+- balloon_1: speech for Myrtle Wilson, top_left, x=6%, y=20%, w=38%, h=16%
+- balloon_2: speech for Tom Buchanan, top_right, x=56%, y=20%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Myrtle Wilson: x 6%, y 20%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 20%, w 38%, h 16%. - Place Myrtle Wilson body in x 6%, y 44%, w 40%, h 52%; face in x 20%, y 48%, w 10%, h 10%. - Place Tom Buchanan body in x 54%, y 44%, w 40%, h 52%; face in x 69%, y 48%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Myrtle Wilson: body x=6%, y=44%, w=40%, h=52%; face x=20%, y=48%, w=10%, h=10%
+- Tom Buchanan: body x=54%, y=44%, w=40%, h=52%; face x=69%, y=48%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Myrtle Wilson: x 6%, y 20%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 20%, w 38%, h 16%. - Place Myrtle Wilson body in x 6%, y 44%, w 40%, h 52%; face in x 20%, y 48%, w 10%, h 10%. - Place Tom Buchanan body in x 54%, y 44%, w 40%, h 52%; face in x 69%, y 48%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Sunlit Manhattan curb beside a lavender taxicab, three figures grouped on the sidewalk: a stout woman in tight brown figured muslin cradling a small Airedale puppy with white feet and gazing down at it with delighted curiosity; a tall hulking man in a well-cut summer suit thrusting folded bills toward a shabby grey-haired old vendor with a basket of puppies; warm midday light, soft pastel storefronts behind, clear empty space at top left and bottom right for caption and balloons, no text anywhere
+
+Panel 2:
+Beat: The taxi rolls up Fifth Avenue; Nick tries to take his leave but Tom and Myrtle reel him back in.
+Shot: wide
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Nick Carraway, top_left, x=6%, y=23%, w=38%, h=16%
+- balloon_2: speech for Myrtle Wilson, top_right, x=56%, y=23%, w=38%, h=22%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Nick Carraway: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Myrtle Wilson: x 56%, y 23%, w 38%, h 22%. - Place Nick Carraway body in x 6%, y 53%, w 40%, h 43%; face in x 20%, y 56%, w 10%, h 9%. - Place Myrtle Wilson body in x 54%, y 53%, w 40%, h 43%; face in x 69%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Nick Carraway: body x=6%, y=53%, w=40%, h=43%; face x=20%, y=56%, w=10%, h=9%
+- Myrtle Wilson: body x=54%, y=53%, w=40%, h=43%; face x=69%, y=56%, w=10%, h=9%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Nick Carraway: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Myrtle Wilson: x 56%, y 23%, w 38%, h 22%. - Place Nick Carraway body in x 6%, y 53%, w 40%, h 43%; face in x 20%, y 56%, w 10%, h 9%. - Place Myrtle Wilson body in x 54%, y 53%, w 40%, h 43%; face in x 69%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Interior of a lavender taxicab seen from the front seat looking back, sunlit Fifth Avenue visible through the rear window with warm pastoral light and pale facades, a lean young man in a grey three-piece suit and straw boater half-turned with his hand on the door handle as if to step out, a hulking man in a summer suit gripping his sleeve to pull him back, a woman in brown muslin with an Airedale puppy in her lap leaning across to coax him, soft summery palette, clear caption space top center and balloon space along right side, no text
+
+Panel 3:
+Beat: The cab deposits them at 158th Street; Myrtle sweeps regally into the white apartment-house with dog and parcels.
+Shot: establishing
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Street view of a long white slab of Manhattan apartment houses on West 158th Street under bright sun, the lavender taxi stopped at the curb, a stout woman in tight brown muslin sweeping toward the entrance with an Airedale puppy under one arm and shopping parcels under the other, chin lifted in haughty queenly pride, a young man in grey suit and straw boater and a tall man in summer suit trailing behind, warm sepia-gold tones, generous empty band at top for caption, no text
+
+Panel 4:
+Beat: Inside the cramped over-furnished apartment Myrtle fusses with the puppy while Tom unlocks the whisky and the drunken afternoon begins.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, bottom_center, x=6%, y=77%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Cramped top-floor living room jammed with oversized tapestried furniture depicting ladies swinging in the gardens of Versailles, an over-enlarged sepia photograph on the wall of what looks like a hen on a rock that resolves into a bonneted old lady, copies of a tabloid magazine and a novel on the table, bright afternoon sun streaming through gauzy curtains; a stout woman in brown muslin kneeling fussing over an Airedale puppy at a saucer of milk with a dog biscuit decomposing in it; a tall man in shirtsleeves bent at a small locked bureau pulling out a whisky bottle; a young man in grey suit perched awkwardly on a couch arm watching, sepia and dusty rose tones, clear caption bands top left and bottom center, no text

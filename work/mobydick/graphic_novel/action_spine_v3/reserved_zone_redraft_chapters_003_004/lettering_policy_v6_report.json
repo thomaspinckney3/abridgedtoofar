@@ -1,0 +1,59 @@
+{
+  "changed_panels": [
+    {
+      "page_number": 1,
+      "panel_number": 2,
+      "old_counts": {
+        "caption": 1,
+        "speech": 2,
+        "thought": 0
+      },
+      "new_counts": {
+        "caption": 1,
+        "speech": 1,
+        "thought": 0
+      },
+      "old_texts": [
+        {
+          "kind": "caption",
+          "text": "The house was full; I asked for a room and agreed to share.",
+          "caption_zone": "bottom_center"
+        },
+        {
+          "kind": "speech",
+          "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+          "speaker": "Peter Coffin",
+          "balloon_zone": "top_right",
+          "speaker_region": "right",
+          "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\""
+        },
+        {
+          "kind": "speech",
+          "text": "I never liked to sleep two in a bed.",
+          "speaker": "Ishmael",
+          "balloon_zone": "top_left",
+          "speaker_region": "left",
+          "source_evidence": "\"I told him that I never liked to sleep two in a bed;\""
+        }
+      ],
+      "new_texts": [
+        {
+          "kind": "caption",
+          "text": "The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.",
+          "caption_zone": "bottom_center",
+          "lettering_notes": "demoted from speech: indirect or internal narration"
+        },
+        {
+          "kind": "speech",
+          "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+          "speaker": "Peter Coffin",
+          "balloon_zone": "top_right",
+          "speaker_region": "right",
+          "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\""
+        }
+      ]
+    }
+  ],
+  "source_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v3_sequence_repaired.json",
+  "output_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v6_policy_cleaned.json"
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:42:39",
+  "key": "cb9f3a5c5f7496928438b863b4b9c4d4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test.\n\n---\n\n## Ch 113 Draft\n\n**Scanning for structural damage:**\n\n- \"Pip, the ship's little tambourine-player and poor mad castaway\" \u2014 Pip is introduced with a gloss here. The authorized removals include Pip's backstory (the Grand Armada and related subplots are cut, and Pip's overboard scene is part of the authorized subplot removals). But Pip appears here with a local appositive (\"the ship's little tambourine-player and poor mad castaway\") that identifies him adequately for a reader. Not a finding.\n\n- \"the Long Island sailor\" in the source becomes \"a Long Island sailor\" in the draft \u2014 fine, no structural issue.\n\n- Starbuck is glossed as \"the chief mate\" \u2014 this is actually a helpful gloss, not a damage.\n\n- \"Aft, the carpenter was at once commanded to do Queequeg's bidding\" \u2014 the carpenter has not been previously introduced in Ch 113 draft. However, looking at the draft, the carpenter appears without prior introduction in this chapter and without a gloss. But \"the carpenter\" is a role descriptor, not a proper name \u2014 the test for **unglossed_name** applies to proper names, and the descriptor \"the carpenter\" is self-identifying. Not a finding.\n\n- No other structural issues detected in Ch 113.\n\n---\n\n## Ch 115 Draft\n\n**Scanning for structural damage:**\n\n**Candidate 1:** \"And so Perth, having even lent his hand of late to Captain Ahab's cruel leg, went a-whaling.\"\n\nThe source ending is: \"Hearkening to these voices, East and West, by early sunrise, and by fall of eve, the blacksmith's soul responded, Aye, I come! And so Perth went a-whaling.\"\n\nThe draft adds: \"having even lent his hand of late to Captain Ahab's cruel leg.\" This is a *new* bridging clause the drafter inserted. It refers to Perth's work on Ahab's leg, which was mentioned in the source Ch 115 (\"after concluding his contributory work for Ahab's leg\") but was cut from the draft of Ch 115 (the draft says only that Perth \"still kept his portable forge on deck\" without explaining why it was still there or that he had worked on Ahab's leg). So the draft opening cut the phrase \"after concluding his contributory work for Ahab's leg\" \u2014 and then the closing sentence re-inserts the reference. Does the draft reader have context for \"Ahab's cruel leg\"? Ahab's ivory leg is a continuously established fact across the novel and is a major character detail \u2014 Ahab is a principal character. A competent reader would understand \"Ahab's cruel leg\" as his ivory prosthetic. This is not a finding under the gate test.\n\n**Candidate 2:** \"but Death is only a launching into the region of the strange Untried; but the first salutation to the possibilities of the immense Remote, the Wild, the Watery, the Unshored.\"\n\nThe source reads: \"but Death is only a launching into the region of the strange Untried; it is but the first salutation to the possibilities of the immense Remote...\"\n\nThe draft has \"but Death is only a launching... ; *but* the first salutation...\" \u2014 the second \"but\" is a broken connector. In the source the second clause uses \"it is but\" (meaning \"it is only\"), not an adversative \"but.\" The draft drops \"it is\" leaving \"but the first salutation\" \u2014 syntactically this clause has no main verb and no subject. The sentence reads: \"but Death is only a launching into the region of the strange Untried; but the first salutation to the possibilities of the immense Remote, the Wild, the Watery, the Unshored.\" The second independent clause \"but the first salutation...\" has no main verb \u2014 it is a fragment. This is a **non-parseable** sentence: the second member of the semicolon construction lacks a main clause.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"but Death is only a launching into the region of the strange Untried; but the first salutation to the possibilities of the immense Remote, the Wild, the Watery, the Unshored.\",\n    \"source_has\": \"but Death is only a launching into the region of the strange Untried; it is but the first salutation to the possibilities of the immense Remote, the Wild, the Watery, the Unshored\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the second clause has no subject or finite verb ('but the first salutation to the possibilities...'), making it an unparseable fragment rather than a merely less-ornamented version of the source.\"\n  }\n]\n```",
+    "input_tokens": 10393,
+    "output_tokens": 1141,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 23.793045043945312,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:46:45",
+  "key": "9a9db1a26930f370a5d3cf3a3a589d57",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test rigorously.\n\n---\n\n**Ch 136 draft \u2014 scan**\n\nThe draft is well-compressed. Fedallah is introduced by name in the first-day action (\"A pale, death-glimmer lit Fedallah's sunken eyes\") and later \"calling upon Fedallah the Parsee to change places with him\" \u2014 the appositive \"the Parsee\" is supplied locally. Perth is glossed as \"Perth the blacksmith's harpoon.\" No orphaned names, no broken pivots, no mid-scene jumps. Nothing flag-worthy.\n\n---\n\n**Ch 137 draft \u2014 scan**\n\n**Candidate 1 \u2014 Starbuck's truncated speech:**\nSource: \"Starbuck, of late I've felt strangely moved to thee; ever since that hour we both saw\u2014thou know'st what, in one another's eyes.\"\nDraft: \"Starbuck, of late I've felt strangely moved to thee.\"\n\nThe clause \"ever since that hour we both saw\u2014thou know'st what\" is cut. This is atmospheric/allusive enrichment, not a structural referent. The remaining sentence parses and conveys the meaning. Not a finding.\n\n**Candidate 2 \u2014 \"thy evil shadow gone\":**\nSource and draft both contain Starbuck's cry: \"thy evil shadow gone\u2014all good angels mobbing thee with warnings.\" The \"evil shadow\" refers to Fedallah (the Parsee), who has just been established as missing in both source and draft. In the draft, the Parsee's disappearance is confirmed several paragraphs earlier. A competent reader can connect \"evil shadow\" to the Parsee. Not a finding.\n\n**Candidate 3 \u2014 Missing carpenter line:**\nSource: After Ahab's leg is found snapped, the carpenter says: \"The ferrule has not stood, sir,\" said the carpenter, now coming up; \"I put good work into that leg.\" This is cut from the draft. The carpenter is an authorized minor character (not on the removal list), but his line is simply omitted \u2014 no dangling reference results. Not a finding.\n\n**Candidate 4 \u2014 \"Surely I have not seen him yet. By heaven it cannot be!\u2014missing?\u2014quick! call them all.\"**\n\nIn the source, between \"Up helm, then; pile on the sail again, ship keepers! down the rest of the spare boats and rig them\u2014Mr. Starbuck away, and muster the boat's crews\" and \"Surely I have not seen him yet\u2026\" there is intervening action: Starbuck offers to help him to the bulwarks, Ahab says \"Oh, oh, oh! how this splinter gores me now!\" and asks for a cane, then says \"Muster the men.\" The \"Surely I have not seen him yet\" refers to Fedallah (Parsee). In the draft the sequence runs: \"Mr. Starbuck away, and muster the boat's crews. Surely I have not seen him yet.\" The pronoun \"him\" here shifts referent abruptly \u2014 \"him\" in the preceding sentence refers to the whale (\"Dead to leeward, sir\" / \"Up helm\"), and now \"him\" means the Parsee without transition. A reader would genuinely be confused about who \"him\" refers to \u2014 the whale or a crew member \u2014 because no intervening signal marks the shift. This is a dangling/ambiguous pronoun. However, let me apply the gate test carefully: the next sentence is \"By heaven it cannot be!\u2014missing?\u2014quick! call them all,\" and then \"The old man's hinted thought was true. Upon mustering the company, the Parsee was not there.\" A competent reader, seeing \"missing\" and \"call them all,\" would likely resolve the confusion within two sentences. The confusion is momentary but genuine \u2014 \"him\" with no antecedent shift is a structural seam from cutting the intervening exchange. This is a real dangling pronoun caused by compression, not an authorized cut residue.\n\n**Candidate 5 \u2014 \"the Parsee\" mustering scene:**\n\"The Parsee!\" cried Stubb in the source is cut from the draft, replaced by Stubb's explanation line. Stubb's exclamation is cut (authorized? No \u2014 the Parsee is not on the authorized removal list). But Stubb's explanatory line (\"caught among the tangles\") still attributes the missing man properly. Not a structural failure.\n\n**Candidate 6 \u2014 Mid-scene, second day:**\nThe draft Ch 137 opens \"At day-break, the three mast-heads were punctually manned afresh.\" The preceding draft Ch 136 ended with Ahab standing in the scuttle till dawn. No mid-scene jump \u2014 the transition is clean.\n\n**Candidate 7 \u2014 \"he meant to take the whale head-and-head\":**\nSource: \"he told them he would take the whale head-and-head,\u2014that is, pull straight up to his forehead,\u2014a not uncommon thing; for when within a certain limit, such a course excludes the coming onset from the whale's sidelong vision.\"\nDraft: \"Ahab's boat was central; he meant to take the whale head-and-head.\"\n\nThe gloss \"that is, pull straight up to his forehead\" and the tactical explanation are cut. Is \"head-and-head\" a term needing a definitional gloss? In the source it is explicitly glossed as general/characteristic. Without the gloss a reader cannot parse what \"head-and-head\" means tactically. This meets the missing-gloss test: the source marked it as needing explanation (\"that is\u2026a not uncommon thing; for when within a certain limit\u2026\") and the draft drops the gloss, leaving a nautical term opaque. A competent reader with no source access would not know what \"take the whale head-and-head\" means. This is a valid missing-gloss finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Up helm, then; pile on the sail again, ship keepers!\u2014Mr. Starbuck away, and muster the boat's crews. Surely I have not seen him yet. By heaven it cannot be!\u2014missing?\u2014quick! call them all.\",\n    \"source_has\": \"Between the order to muster and 'Surely I have not seen him yet,' the source inserts Starbuck's offer of help, Ahab's cry about the splinter, his request for a cane, and 'Muster the men'\u2014establishing that Ahab's mind has shifted from the whale to a missing crew member before the pronoun 'him' appears.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'him' in 'Surely I have not seen him yet' has no unambiguous antecedent in the draft\u2014the immediately prior referent is the whale ('Dead to leeward, sir'), so the reader cannot tell whether Ahab means the whale or a crew member until 'missing' and the Parsee revelation two sentences later.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Ahab's boat was central; he meant to take the whale head-and-head.\",\n    \"source_has\": \"'he told them he would take the whale head-and-head,\u2014that is, pull straight up to his forehead,\u2014a not uncommon thing; for when within a certain limit, such a course excludes the coming onset from the whale's sidelong vision.'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'head-and-head' is a specialized nautical/whaling term whose tactical meaning is not inferable from context, and the source explicitly flagged it as needing the gloss 'that is, pull straight up to his forehead'; without it the phrase is opaque.\"\n  }\n]\n```",
+    "input_tokens": 20100,
+    "output_tokens": 1872,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.828192949295044,
+    "stop_reason": "end_turn"
+  }
+}

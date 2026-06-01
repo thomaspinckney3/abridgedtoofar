@@ -1,0 +1,21 @@
+{
+  "page_number": 6,
+  "anchors": [
+    {
+      "panel_number": 2,
+      "text_index": 1,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Queequeg! In the name of goodness—wake!",
+      "visible": true,
+      "confidence": 0.86,
+      "mouth_point": {"x": 363, "y": 249},
+      "mouth_point_ratio": {"x": 0.235, "y": 0.245},
+      "tail_target_point": {"x": 317, "y": 239},
+      "tail_target_point_ratio": {"x": 0.205, "y": 0.235},
+      "face_box": {"x1": 201, "y1": 92, "x2": 464, "y2": 336},
+      "evidence": "Left-side figure sitting up in bed with mouth slightly open and hand raised; matches speaker region 'left'.",
+      "reason": "Ishmael is the left figure; mouth located mid-left of image. Tail target offset up-left toward the top-left balloon zone and positioned just outside the lips to avoid stabbing into the mouth. Face box bounds his visible head to keep balloons clear."
+    }
+  ]
+}

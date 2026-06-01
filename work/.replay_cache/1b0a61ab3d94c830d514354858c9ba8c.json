@@ -1,0 +1,51 @@
+{
+  "ts": "2026-05-06T13:26:05",
+  "key": "1b0a61ab3d94c830d514354858c9ba8c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence_targeted",
+    "hash": "bcc88f90a4b330bdb56763cc32dbc0e0",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Looking at these two chapters carefully, I'll check each draft sentence against the six structural tests.\n\nThe most significant candidate is in Ch 026 draft, where the paragraph about La Farge is compressed to anonymize him (authorized removal of La Farge) but introduces a referential problem.\n\nLet me trace it:\n\n**Source**: \"His solitude was broken in November by the chance arrival of John La Farge.\" \u2014 then several paragraphs develop La Farge's character and his relationship to glass and Chartres.\n\n**Draft**: \"His solitude was broken in November by the chance arrival of an old friend through whom contact with the medieval imagination had a new value\u2014an artist who alone among Adams's acquaintance could use glass like a thirteenth-century artist, and who led him back to Chartres.\"\n\nLa Farge is an authorized removal, so this anonymization is expected. The sentence is self-contained and parseable. No structural problem here \u2014 the reader understands \"an old friend / an artist\" without needing the name.\n\nNow checking the **broken pivot** in Ch 026 draft:\n\n**Source**: \"Adams's opinion of politics and politicians... he explained everything by his old explanation of Grant's character as more or less a general type; but what roused in his mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\"\n\n**Draft** (Ch 023): \"What roused in Adams's mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\"\n\nIn the draft, the sentence begins \"What roused in Adams's mind **more** rebellion\" \u2014 the comparative \"more\" implies a contrasting baseline that has been established. In the source, this follows a sentence about Adams's general opinion of politicians and his \"old explanation\" of Grant's character (which is the thing against which \"more rebellion\" is measured). In the draft (Ch 023), the preceding sentence reads: \"In Washington Hay was the only competent man in the party for diplomatic work. Had usefulness to the public service been ever a question, Hay should have had a first-class mission under Hayes; should have been placed in the Cabinet by Garfield, and should have been restored to it by Harrison.\"\n\nThe word \"more\" is a broken comparative \u2014 there is no stated baseline in the draft against which this rebellion is \"more.\" The source's baseline (Adams's general irritation at politicians, explained via Grant's character) was cut.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"23\",\n    \"draft_passage\": \"What roused in Adams's mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\",\n    \"source_has\": \"Adams's opinion of politics and politicians, as he frankly admitted, lacked enthusiasm...and he explained everything by his old explanation of Grant's character as more or less a general type; but what roused in his mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'more rebellion' is a comparative that requires a stated baseline of lesser rebellion, but the draft cuts the preceding sentence establishing Adams's baseline irritation with politicians generally (the Grant explanation), leaving 'more' dangling against nothing and making the sentence logically incomplete.\"\n  }\n]\n```",
+    "input_tokens": 28069,
+    "output_tokens": 760,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 18.426666021347046,
+    "stop_reason": "end_turn"
+  }
+}

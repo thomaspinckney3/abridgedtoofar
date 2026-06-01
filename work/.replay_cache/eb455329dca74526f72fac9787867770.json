@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T19:35:18",
+  "key": "eb455329dca74526f72fac9787867770",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"Mr. Shelby had speculated largely and quite loosely; had involved himself deeply, and his notes to a large amount had come into the hands of Haley\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Haley makes offers to sell Tom and Harry (the child of Eliza) to settle the debt\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"Eliza described as Mrs. Shelby's favorite maid, 'brought up by her mistress from girlhood\u2014petted, indulged, trained'\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"she vaulted sheer over the turbid current by the shore, on to the raft of ice beyond\u2026leaping\u2014slipping\u2014springing upwards again\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"At the Quaker house, Eliza reunites with George Harris; Simeon Halliday and Rachel Halliday shelter them; Tom Loker is wounded and nursed by the Quakers\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"Senator Bird and his wife shelter Eliza and Harry and convey them to Van Trompe's farm\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"Tom Loker is wounded (falls in the swamp) and is nursed at the Quaker dwelling, 'arising a somewhat sadder and wiser man'\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"The novel frames Eliza's escape as exposing the inhumanity of the law; Senator Bird's Christian charity aids her despite his own legislation\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"Tom is chained and put on the steamboat La Belle Riviere going 'down the river'\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"the child lost her balance and fell sheer over the side\u2026Tom\u2026was after her in a moment\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Augustine St. Clare described as 'genial' and 'skeptical'\u2014'gay, easy, unpunctual, unpractical, sceptical'\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"St. Clare buys Tom for his New Orleans household after Eva petitions him\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"Tom manages the stable, reads his Bible, softens Miss Ophelia, and begins the conversion of Topsy\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"Eva reads Scripture to Tom; 'He explains what it means, you know'; she insists slaves are souls\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"Eva distributes locks of her golden hair, pleads for freedom for 'our poor people,' and dies serenely\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"St. Clare, shaken, begins Tom's emancipation after Eva's death\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"St. Clare received a fatal stab in the side with a bowie-knife while trying to separate two quarrelling men in a caf\u00e9\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"Marie sells off the servants; Tom is marched to the slave warehouse and sold at auction\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"Tom is purchased by Simon Legree, a brutal cotton planter on the Red River, who rules by lash and dogs\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"Tom is ordered to whip and betray his fellows, refuses, and resolves 'I'll hold on to the Lord, and put his commands before all'\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"Cassy is described as a proud, tormented woman crushed by years of abuse; Emmeline is the innocent girl Legree intends to break\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"Cassy befriends Tom; his prayers begin to thaw her despair; she hatches the 'haunting' stratagem in the garret playing on Legree's superstition, helping her and Emmeline escape\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"Tom will not betray the women even under savage beating; 'I can die!'\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"Legree's rage results in Tom being beaten to death; Tom forgives and prays to the last\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"George Shelby arrives too late; kneels at Tom's side as he dies\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"George buries Tom under the trees; back in Kentucky he frees every slave and declares Uncle Tom's Cabin a memorial\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"Topsy, taught by Miss Ophelia and uplifted by Eva's memory, grows into a gentle Christian and goes as a missionary to Africa\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"Cassy discovers Eliza is her long-lost daughter; Madame de Thoux is revealed as George Harris's sister; the family is reunited\", \"note\": \"\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"George's letter articulates a vision for an African nationality and Christian civilization in Liberia; 'the family sailed for Africa'\", \"note\": \"\"},\n  {\"sentence\": 30, \"status\": \"present\", \"evidence\": \"Through these converging fates the novel shows how Christian love turns bondage into witness and death into life\", \"note\": \"\"},\n  {\"sentence\": 31, \"status\": \"present\", \"evidence\": \"The novel moves from parlors to steamboats, Quaker kitchens to swamps, showing how slavery corrodes masters but how people can choose to love and rescue\", \"note\": \"\"},\n  {\"sentence\": 32, \"status\": \"present\", \"evidence\": \"The night flight across the ice, Eva's farewell with locks of hair, the ghostly garret stratagem, and Tom's dying forgiveness are all rendered in the abridgment\", \"note\": \"\"},\n  {\"sentence\": 33, \"status\": \"present\", \"evidence\": \"Christian love expressed in cups of cold water, in refusing to flog, in Senator Bird bending the law to shelter Eliza\", \"note\": \"\"},\n  {\"sentence\": 34, \"status\": \"present\", \"evidence\": \"The law sanctions selling souls; but Stowe insists God counts every tear and justice will come\u2014Mrs. Shelby: 'This is God's curse on slavery'\", \"note\": \"\"},\n  {\"sentence\": 35, \"status\": \"present\", \"evidence\": \"Some free (George Shelby frees his slaves), some teach (Miss Ophelia/Topsy), some sail to found a nation (George Harris), some fight at home\", \"note\": \"\"},\n  {\"sentence\": 36, \"status\": \"present\", \"evidence\": \"George Shelby makes Uncle Tom's Cabin a memorial, pointing to Tom's life and the cause still to be won\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 166993,
+    "output_tokens": 1911,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 38.74160718917847,
+    "stop_reason": "end_turn"
+  }
+}

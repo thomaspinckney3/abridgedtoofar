@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:40:54",
+  "key": "036da887fe480d7a7855aaf5fec23235",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both chapters systematically, applying each test to the draft sentences.\n\n**Ch 115 draft:** The compression is faithful and clean. Perth is introduced with full context, the backstory flows coherently, and no pronouns or connectives are left dangling.\n\n**Ch 116 draft:** Let me check carefully.\n\n1. Stubb's remark \u2014 in the source, Stubb is \"looking on from the forecastle.\" In the draft this context is cut, but Stubb is a principal character, so no finding needed there.\n\n2. The Parsee \u2014 in the source the Parsee is introduced as \"the Parsee passed silently.\" In the draft: \"the Parsee passed silently and bowed over his head toward the fire.\" The Parsee (Fedallah) is a named recurring character who has appeared significantly in earlier chapters. He's not a minor/removable character. A competent reader tracking the narrative would know him. Not a finding.\n\n3. Stubb's cut framing line \u2014 in the source Stubb's line includes \"looking on from the forecastle\" and \"That Parsee smells fire like a fusee.\" The draft cuts \"That Parsee smells fire like a fusee\" and jumps straight to \"and smells of it himself.\" Wait \u2014 actually checking the draft again: `\"That Parsee smells fire like a fusee,\" muttered Stubb from the forecastle, \"and smells of it himself, like a hot musket's powder-pan.\"` \u2014 this is preserved intact. No issue.\n\n4. The dialogue compression \u2014 Ahab's line `\"Nail-stubbs of the steel shoes of racing horses.\"` in the draft. In the source this is: `\"Look ye, blacksmith, these are the gathered nail-stubbs of the steel shoes of racing horses.\"` The draft cuts \"Look ye, blacksmith, these are the gathered\" and leaves just `\"Nail-stubbs of the steel shoes of racing horses.\"` This is a fragment \u2014 it has no main verb. It reads as an orphaned noun phrase, not a complete sentence or even a parseable exclamatory construction with clear context. A reader could guess it's an explanation of the bag's contents, but as a standalone quoted utterance attributed to Ahab it has no main clause.\n\nLet me verify: the preceding draft sentence is `\"There's the stuff,\" flinging the pouch upon the anvil.` Then: `\"Nail-stubbs of the steel shoes of racing horses.\"` \u2014 this is genuinely non-parseable as a sentence (no verb), and while a reader might infer the meaning, it fails the main-clause test.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Nail-stubbs of the steel shoes of racing horses.\\\"\",\n    \"source_has\": \"\\\"Look ye, blacksmith, these are the gathered nail-stubbs of the steel shoes of racing horses.\\\"\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the utterance has no main verb and no subject, leaving it a bare noun phrase that does not parse as a sentence or a recognisable exclamatory fragment\u2014the compression stripped the predicate ('these are') that made it grammatical.\"\n  }\n]\n```",
+    "input_tokens": 7748,
+    "output_tokens": 765,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 17.092100858688354,
+    "stop_reason": "end_turn"
+  }
+}

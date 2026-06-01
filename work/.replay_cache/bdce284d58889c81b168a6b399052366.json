@@ -1,0 +1,51 @@
+{
+  "ts": "2026-05-09T09:08:04",
+  "key": "bdce284d58889c81b168a6b399052366",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "graphic_storyboard_page",
+    "hash": "4d7bf02b7b86d88ee11706b598d75b48",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"style_bible\": {\n    \"visual_period\": \"Early 1920s America; modest Midwestern porches, a busy New York office floor, a small commuting-town bungalow, and a country road near West Egg.\",\n    \"line_and_color\": \"Clean, slightly textured ink line with restrained, naturalistic color. This page primarily in warm sepia undertones to cue flashback time shifts.\",\n    \"lighting\": \"Flashbacks: warm late-afternoon and morning light; office in bright summer daylight; train platform in pale spring sun through steam; bungalow kitchen lit by an electric stove glow.\",\n    \"lettering\": \"Narration in rectangular caption boxes with a classic serif. Dialogue in round balloons. Occasional italic for emphasis. SFX small and unobtrusive.\",\n    \"recurring_motifs\": [\n      \"Window reflections and passing scenery\",\n      \"Shifting light across faces to mark introspection\",\n      \"Clock or watch hinting at measured restraint\",\n      \"Fountain pen and open notebook\"\n    ]\n  },\n  \"characters\": [\n    {\n      \"name\": \"Nick Carraway\",\n      \"visual_anchor\": \"Clean-cut, slim man with neatly parted dark hair and observant eyes.\",\n      \"costume\": \"Flashback: WWI U.S. Army uniform; later: simple suit with hat for travel; office attire with rolled sleeves; at bungalow, shirtsleeves.\",\n      \"expression_range\": \"Composed, gently amused, quietly restless; attentive when addressed.\",\n      \"continuity_note\": \"Keep him slightly younger in flashbacks than the present-day desk frame from previous pages; warm sepia tones for memory.\"\n    },\n    {\n      \"name\": \"Mr. Carraway (Nick\u2019s father)\",\n      \"visual_anchor\": \"Dignified middle-aged man with neat mustache and steady gaze.\",\n      \"costume\": \"Three-piece suit, pocket watch chain, understated tie; rimless spectacles.\",\n      \"expression_range\": \"Calm, supportive, measured.\",\n      \"continuity_note\": \"Appears briefly on the station platform, signaling practical, steady support.\"\n    }\n  ],\n  \"page\": {\n    \"page_number\": 3,\n    \"page_summary\": \"Nick recalls wartime restlessness that pushes him to leave the Midwest; he decides to learn the bond business, accepts his father\u2019s backing, and arrives in the spring of 1922. At the office he agrees to share a commuting-town bungalow, but when his colleague is reassigned he moves out alone. Settling into the shabby place with a fleeting dog, an old Dodge, and a Finnish housekeeper, he passes a day or two of solitude until a newly arrived man stops him on the road to ask directions.\",\n    \"source_unit_ids\": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26],\n    \"source_word_range\": [508, 755],\n    \"panels\": [\n      {\n        \"panel_number\": 1,\n        \"beat\": \"Nick\u2019s wartime memory frames his post-college restlessness.\",\n        \"shot\": \"medium\",\n        \"image_prompt\": \"Warm-sepia flashback: WWI Western Front scene. A muddy trench with sandbags and duckboards under a gray, smoky sky. Young Nick in a U.S. Army uniform peers over the parapet, tense but steady, with other doughboys crouched nearby. A flare\u2019s pallid light washes faces; rain beads on his helmet. No readable insignia or text.\",\n        \"caption\": \"I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War. I enjoyed the counter-raid so thoroughly that I came back restless.\",\n        \"dialogue\": [],\n        \"sfx\": [],\n        \"continuity_notes\": \"All in warm sepia to signal flashback; no desk frame visible on this page.\",\n        \"source_unit_ids\": [17, 18],\n        \"source_word_range\": [508, 539],\n        \"source_anchor\": \"17-18\",\n        \"adaptation_note\": \"\"\n      },\n      {\n        \"panel_number\": 2,\n        \"beat\": \"Feeling the Midwest as the \u2018ragged edge,\u2019 Nick decides to go East; his father backs the plan and he departs in spring 1922.\",\n        \"shot\": \"wide\",\n        \"image_prompt\": \"Outdoor train platform in early spring light. Steam billows around a waiting passenger train. Nick, hat in hand with a suitcase, shakes hands with his dignified father in a three-piece suit and watch chain. Coats and hats of other travelers blur by; bare trees hint at early spring. No readable signs.\",\n        \"caption\": \"Instead of being the warm centre of the world, the Middle West now seemed like the ragged edge of the universe\u2014so I decided to go East and learn the bond business. Father agreed to finance me for a year, and after various delays I came East, permanently, I thought, in the spring of twenty-two.\",\n        \"dialogue\": [],\n        \"sfx\": [\"HISS\"],\n        \"continuity_notes\": \"Maintain father\u2019s composed look and pocket watch; spring brightness with lingering chill.\",\n        \"source_unit_ids\": [19, 20],\n        \"source_word_range\": [540, 593],\n        \"source_anchor\": \"19-20\",\n        \"adaptation_note\": \"\"\n      },\n      {\n        \"panel_number\": 3,\n        \"beat\": \"In a warm season, an office mate suggests sharing a house in a commuting town; the firm sends him away, leaving Nick to go out alone.\",\n        \"shot\": \"medium\",\n        \"image_prompt\": \"New York office floor in summer light through open windows. Nick at a desk; a young male colleague, coat off and sleeves rolled, leans in, animatedly pitching an idea, gesturing toward a pinned photo-like image of a small bungalow on a corkboard. A desk fan spins; papers and ledgers lie open. No readable text.\",\n        \"caption\": \"The practical thing was to find rooms in the city, but it was a warm season, and I had just left a country of wide lawns and friendly trees, so when a young man at the office suggested that we take a house together in a commuting town, it sounded like a great idea. He found the house, a weather-beaten cardboard bungalow at eighty a month, but",
+    "input_tokens": 1995,
+    "output_tokens": 7174,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 115.6288959980011,
+    "stop_reason": "content_filter"
+  }
+}

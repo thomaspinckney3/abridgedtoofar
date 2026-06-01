@@ -1,0 +1,21 @@
+{
+  "page_number": 4,
+  "anchors": [
+    {
+      "panel_number": 5,
+      "text_index": 1,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "Come along—I’ll give ye a glim in a jiffy.",
+      "visible": true,
+      "confidence": 0.87,
+      "mouth_point": {"x": 1240, "y": 343},
+      "mouth_point_ratio": {"x": 0.7811, "y": 0.3454},
+      "tail_target_point": {"x": 1292, "y": 382},
+      "tail_target_point_ratio": {"x": 0.8148, "y": 0.3851},
+      "face_box": {"x1": 1188, "y1": 248, "x2": 1318, "y2": 420},
+      "evidence": "The right-side figure at the open doorway is holding a candle and looking back toward the room; this matches the speaker_region 'right' and the innkeeper leading with a light.",
+      "reason": "Speaker is the rightmost character. Mouth located on his turned face; tail target offset down-right toward the bottom-right balloon zone, just outside the jawline to avoid stabbing the mouth. Face box encloses the visible head to keep it clear of balloons."
+    }
+  ]
+}

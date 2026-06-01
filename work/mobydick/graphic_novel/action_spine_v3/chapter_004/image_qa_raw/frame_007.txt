@@ -1,0 +1,13 @@
+{
+  "frame_number": 7,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "caption_zone",
+      "finding": "Top-left caption zone is partially busy with Ishmael, bedpost, and patchwork quilt encroaching, leaving limited clean negative space.",
+      "visible_evidence": "In the upper-left area, Ishmael’s head and the bed’s post and quilt occupy space up to near the corner of the frame.",
+      "repair_prompt": "Recompose to reserve a clear top-left caption area: shift the camera slightly right or down, or move Ishmael/bed leftward, adding blank wall in the top-left so text can sit cleanly."
+    }
+  ]
+}

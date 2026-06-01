@@ -1,0 +1,37 @@
+{
+  "page_number": 5,
+  "anchors": [
+    {
+      "panel_number": 8,
+      "text_index": 1,
+      "kind": "thought",
+      "speaker": "Ishmael",
+      "text": "Better sleep with a sober cannibal than a drunken Christian.",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 444.7, "y": 321.3},
+      "mouth_point_ratio": {"x": 0.272, "y": 0.334},
+      "tail_target_point": {"x": 376.1, "y": 259.7},
+      "tail_target_point_ratio": {"x": 0.230, "y": 0.270},
+      "face_box": {"x1": 376.1, "y1": 298.2, "x2": 523.2, "y2": 432.9},
+      "evidence": "Left-side reclining man’s head visible on pillow; temple/hairline around x≈0.27,y≈0.33. Top-left is the planned balloon zone, so tail target is slightly above-left of the head.",
+      "reason": "Speaker named as Ishmael in left region. For thought, use a head/temple point and offset the tail target toward the top-left to avoid covering the face."
+    },
+    {
+      "panel_number": 8,
+      "text_index": 2,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+      "visible": true,
+      "confidence": 0.87,
+      "mouth_point": {"x": 482.3, "y": 367.5},
+      "mouth_point_ratio": {"x": 0.295, "y": 0.382},
+      "tail_target_point": {"x": 433.3, "y": 404.0},
+      "tail_target_point_ratio": {"x": 0.265, "y": 0.420},
+      "face_box": {"x1": 376.1, "y1": 298.2, "x2": 523.2, "y2": 432.9},
+      "evidence": "Left man’s mouth and lower face are visible; lips near grid x≈0.295, y≈0.382. Bottom-left balloon zone suggests a tail slightly left and below the mouth.",
+      "reason": "Speaker specified as Ishmael on the left. Mouth point marks the speaking source; tail target is offset toward the intended bottom-left balloon area without stabbing into the mouth, and the face box reserves the visible head region."
+    }
+  ]
+}

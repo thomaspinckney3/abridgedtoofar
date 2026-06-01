@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T15:58:07",
+  "key": "6a21461b1ad30b246729d23f692f11ba",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "92e80799492fc0c15cb29a75163e1709",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "82ce8d89bcffcb692c689f7263cafd1f5228cd37fe055a683732015551f305e3",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\"name\": \"Adolph\", \"appearances_summary\": \"St. Clare\u2019s self-styled valet/dandy in the New Orleans household; flits through parlor, kitchen, and sale scenes as comic foil and to be sold at auction later.\", \"reason_removable\": \"He is comic color and a class-contrast but has no effect on the plot beats or the arcs preserved in the synopsis.\"},\n    {\"name\": \"Jane and Rosa\", \"appearances_summary\": \"Quadroon maids in Marie\u2019s and Miss Ophelia\u2019s orbit; appear in kitchen parodies, gossip, and as background in Eva\u2019s rooms.\", \"reason_removable\": \"They provide local color and minor banter; removing them does not affect any required event or decision.\"},\n    {\"name\": \"Mammy (Eva\u2019s nurse)\", \"appearances_summary\": \"Old nurse who fusses over Marie and loves Eva; present at the lake villa and in New Orleans during Eva\u2019s decline.\", \"reason_removable\": \"Her presence heightens sentiment but no plot turn depends on her.\"},\n    {\"name\": \"Mr. Marks\", \"appearances_summary\": \"Tom Loker\u2019s sly associate met at the tavern and in the river pursuit of Eliza.\", \"reason_removable\": \"Loker\u2019s pursuit, wounding, and later change of heart can be shown without his sidekick; Marks adds banter but no plot hinge.\"},\n    {\"name\": \"Mr. Skeggs\", \"appearances_summary\": \"Dealer who runs the New Orleans depot and primes slaves for auction.\", \"reason_removable\": \"He is a transactional facilitator with no lasting role in the story\u2019s required arcs.\"},\n    {\"name\": \"Henrique St. Clare\", \"appearances_summary\": \"Alfred St. Clare\u2019s spirited son who visits briefly; flirtatious with Eva and cruel to his groom Dodo.\", \"reason_removable\": \"His episode is a didactic contrast that does not alter the St. Clare/Eva/Tom arc preserved in the synopsis.\"},\n    {\"name\": \"Alfred St. Clare\", \"appearances_summary\": \"Augustine\u2019s twin brother who visits with Henrique and debates politics and slavery.\", \"reason_removable\": \"He is a philosophical foil; nothing in the synopsis depends on his scenes.\"},\n    {\"name\": \"Dodo\", \"appearances_summary\": \"Henrique\u2019s mulatto groom boy, present only in the Henrique visit to illustrate petty master\u2013slave cruelty.\", \"reason_removable\": \"He exists solely within the cuttable Henrique subplot and can be removed with it.\"}\n  ],\n  \"subplots\": [\n    {\"name\": \"Prue the bakery woman\", \"chapter_span\": \"Ch 020\", \"reason_removable\": \"Prue\u2019s tragic vignette amplifies themes of cruelty but no main-character decision or synopsis beat depends on it.\"},\n    {\"name\": \"Henrique\u2019s visit and Dodo\u2019s mistreatment\", \"chapter_span\": \"Ch 024\", \"reason_removable\": \"This visit is a moral contrast and does not change the St. Clare household arc or any later necessity.\"},\n    {\"name\": \"Aunt Chloe hired out in Louisville to earn Tom\u2019s redemption money\", \"chapter_span\": \"Ch 022\", \"reason_removable\": \"It humanizes Shelby\u2019s people but does not affect Tom\u2019s downstream sale, Legree\u2019s purchase, or the synopsis-required resolutions.\"},\n    {\"name\": \"Miss Ophelia\u2019s housekeeping crusade and kitchen comedy\", \"chapter_span\": \"Ch 017\u2013018\", \"reason_removable\": \"These scenes satirize northern neatness and teach Topsy slowly, but Topsy\u2019s introduction and moral turn can stand without the housekeeping set-pieces.\"}\n  ],\n  \"digressions\": [\n    {\"chapter_ids\": [\"013\"], \"topic\": \"Author\u2019s editorial asides on the \u2018lawful trade\u2019 and polite society\u2019s tolerance of slave-catching\", \"reason_removable\": \"The polemic does not advance the plot; the auction and pursuit still read cleanly without narrator intrusions.\"},\n    {\"chapter_ids\": [\"016\"], \"topic\": \"St. Clare\u2019s broad social theory\u2014aristocracy vs. democracy, English vs. American labor\", \"reason_removable\": \"Philosophical framing of slavery can be trimmed without losing required character or event beats.\"},\n    {\"chapter_ids\": [\"017\"], \"topic\": \"Extended salons of argument (St. Clare, Marie, Miss Ophelia) about \u2018systems\u2019 and north\u2013south morality\", \"reason_removable\": \"These essays-in-dialogue slow the story and can be tightened or cut without harming the synopsis arc.\"},\n    {\"chapter_ids\": [\"020\"], \"topic\": \"Narrator\u2019s moral addresses around Prue, northern prejudice, and church-going hypocrisy\", \"reason_removable\": \"They are thematic digressions; the story\u2019s needed events (Eva\u2019s decline; Tom\u2019s sale) proceed without them.\"}\n  ],\n  \"skippable_chapters\": [\n    {\n      \"chapter_id\": \"018\",\n      \"reason_removable\": \"Miss Ophelia\u2019s extended housekeeping battles and kitchen satire neither set up nor pay off any synopsis-required beat.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"020\",\n      \"reason_removable\": \"The Prue episode is a stand\u2011alone social vignette; its details don\u2019t alter Eva\u2019s illness, Tom\u2019s fate, or the St. Clare arc the synopsis depends on.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"022\",\n      \"reason_removable\": \"Aunt Chloe\u2019s Louisville hire-out plan is a side thread; Tom\u2019s path to Legree and the Shelby ending in the synopsis do not rely on it.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"024\",\n      \"reason_removable\": \"Henrique\u2019s visit is a didactic interlude; removing it leaves the Eva\u2013St. Clare\u2013Tom trajectory and New Orleans household arc intact.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    }\n  ]\n}",
+    "input_tokens": 199195,
+    "output_tokens": 5041,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 101.66005992889404,
+    "stop_reason": "stop"
+  }
+}

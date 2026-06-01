@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:18:09",
+  "key": "d9685e706b40f461e0f44e460a3c6c14",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "16fbe212da6f381bc241f01c98eae677",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "0d20186e30d91b1e32f9c1937887f5c90fa693af446e9839bc46403fdd15aa45",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the draft systematically, applying each test.\n\n**Ch 002 draft:**\n\n1. \"His voice faded off and Tom glanced impatiently around the garage.\" \u2014 In the source this is Wilson's voice fading after Tom cuts him off with a threat to sell elsewhere. The draft cut Tom's threat (\"maybe I'd better sell it somewhere else after all\") and Wilson's explanation attempt, leaving \"His voice faded off\" with no clear antecedent action. But re-reading: the draft still has Wilson speaking last (\"Works pretty slow, don't he?\") and Tom responding coldly. The \"his\" could still refer to Wilson. The sentence parses, though the reason for the fading is cut. Not a structural failure by the gate test \u2014 a reader infers Wilson stops talking after Tom's cold rebuke.\n\n2. \"But immediately she tapped on the front glass.\" \u2014 The source had \"But immediately she turned sharply from the window and, leaning forward, tapped on the front glass.\" The draft cut the preceding sentence about turning from the window. The \"but\" pivot contrasts with something \u2014 in the source it contrasts with sliding out into the glowing sunshine (the joy of departure). In the draft, that contrast is still present: the previous sentence describes sliding out into glowing sunshine, so \"but immediately\" still works as a pivot. Not broken.\n\n3. The \"Lucille\" reference in Ch 003 draft: \"I don't think it's so much that,\" argued Lucille\u2026\" \u2014 In the source, Lucille is introduced earlier: \"She turned to her companion: 'Wasn't it for you, Lucille?' It was for Lucille, too. 'I like to come,' Lucille said.\" In the draft, that introduction is cut. The draft jumps straight from the girls at the table (unnamed) to Lucille speaking by name. Let me check the draft carefully: \"we sat at a table with two girls in yellow and three men, each one introduced to us as Mr. Mumble.\" Then the girls speak without names. Then: \"I don't think it's so much that,\" argued Lucille.\" The name Lucille appears here for the first time with no introduction in the draft. This is an unglossed minor proper name \u2014 a reader has no idea which of the two girls is Lucille or who she is. Lucille is not on the authorized-removal list. This is a valid finding.\n\n4. \"Young men didn't\u2014at least in my provincial inexperience I believed they didn't\u2014drift coolly out of nowhere and buy a palace on Long Island Sound.\" \u2014 In the source this is prefaced: \"That was comprehensible. But young men didn't\u2026\" The draft cut the preceding sentence about Nick accepting that Gatsby sprang from the swamps of Louisiana or the lower East Side. The \"but\" is dropped in the draft, and the sentence stands on its own as a standalone declaration. It parses without the missing contrast. Not a structural failure.\n\n5. The scene transition at the end of Ch 003 draft: \"As I walked down the steps I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\" \u2014 In the source, the \"evening was not quite over\" is followed by the car-in-the-ditch / Owl Eyes scene. That subplot is on the authorized-removal list. The draft's \"but I turned away\" is a direct residue of that authorized cut \u2014 the \"but\" now pivots away from nothing. However, this is an authorized subplot removal, so the residual seam is expected and not a finding.\n\n6. Ch 002 draft: \"Come on,\" she urged. \"I'll telephone my sister. She's said to be very beautiful by people who ought to know.\" \u2014 The source has \"I'll telephone my sister Catherine.\" The draft elides Catherine's name (she's on the authorized-removal list), rendering it \"my sister.\" That's fine \u2014 the descriptor is clear. Not a finding.\n\n7. Ch 003 draft: After Gatsby is revealed, \"When he had gone I turned immediately to Jordan\u2026\" \u2014 the draft reads \"when he had gone I turned immediately to Jordan\" but the draft actually says: \"'Who is he?' I demanded of Jordan when he had gone.\" This parses fine.\n\n8. Ch 002 draft opening of the party scene: \"company commenced to arrive at the apartment door: her sister, a slender, worldly girl with powdered face and jangling bracelets; and a pale, feminine man from the flat below, a photographer, with his shrill, languid wife.\" The photographer is consistently referred to as \"the photographer\" throughout \u2014 but then later: \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\". The name \"Chester\" appears here for a man who has been introduced only as \"a photographer.\" Chester McKee is on the authorized-removal list, so the name surviving after the introduction was cut is a named-person continuity issue. Wait \u2014 the authorized removal is of Mr. McKee (Chester McKee). The draft consistently uses \"the photographer\" \u2014 except in this one passage: \"if Chester could only get her in that light.\" That name appears in dialogue quoted from the sister's speech, and Chester has not been named anywhere in the draft. This is an unglossed name appearing in dialogue where the character was introduced only as \"a photographer.\" Let me verify: draft passage: \"the sister sat down beside me and, lowering her voice, confided views on marriages that don't stand and why people should get divorces, with elaborate certainty about what kept Tom and Myrtle apart. Much of it was lies and all of it was said with a milky assurance.\" \u2014 Actually, looking again at the draft more carefully:\n\nDraft: \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\"\n\nThe name \"Chester\" appears here. The photographer has been introduced only as \"a pale, feminine man from the flat below, a photographer.\" His name has not appeared anywhere in the draft. A reader encountering \"Chester\" here has no way to know this is the photographer. This is a valid unglossed_name finding \u2014 Chester McKee is on the authorized-removal list, which means the removal of his named introduction is authorized, but the residual use of his first name \"Chester\" in surviving dialogue creates an orphaned name that the named-person continuity invariant requires to be flagged.\n\nWait \u2014 I need to re-read the invariant: \"if a proper name from the authorized minor-character list appears in the draft, either the preceding draft chapter or the local sentence/paragraph must identify that person. Flag the orphaned name.\" Chester (McKee) is on the list, and \"Chester\" appears in the draft without identification. This is a valid finding.\n\nNow let me compile the final answer.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"2\",\n    \"draft_passage\": \"his wife declared a pose could be made of Myrtle \\\"if Chester could only get her in that light\\\"\",\n    \"source_has\": \"Source names him fully as Mr. McKee / Chester McKee, introduced as 'a pale, feminine man from the flat below' with his wife; the first name 'Chester' is used freely because his identity is established. The draft replaces all other references with 'the photographer' but lets this one first-name use survive in quoted dialogue.\",\n    \"gate_test_answer\": \"A reader who knows the photographer only as 'a pale, feminine man from the flat below, a photographer' encounters the name 'Chester' with no local identifier and cannot tell who is being referred to \u2014 genuinely confusing, not merely less ornamented.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"3\",\n    \"draft_passage\": \"\\\"I don't think it's so much that,\\\" argued Lucille; \\\"it's more that he was a German spy during the war.\\\"\",\n    \"source_has\": \"Source introduces Lucille by name before she speaks: one girl turns to her companion asking 'Wasn't it for you, Lucille?' and 'It was for Lucille, too. \\\"I like to come,\\\" Lucille said.' \u2014 establishing which of the two yellow-dressed girls she is before she contributes to the Gatsby-rumour exchange.\",\n    \"gate_test_answer\": \"The draft seats Nick at a table with 'two girls in yellow' who remain unnamed until 'Lucille' suddenly speaks; a reader has no way to identify which girl this is or that she is one of the two already present \u2014 genuinely confusing, not merely less ornamented.\"\n  }\n]\n```",
+    "input_tokens": 24705,
+    "output_tokens": 1989,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 45.93467998504639,
+    "stop_reason": "end_turn"
+  }
+}

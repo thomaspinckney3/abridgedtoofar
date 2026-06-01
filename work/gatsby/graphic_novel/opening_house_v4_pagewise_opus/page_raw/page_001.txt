@@ -1,0 +1,172 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI Midwest and East Coast",
+    "line_and_color": "Clean inked linework with muted watercolor washes; sepia and dusty blues for memory, warmer ambers for present",
+    "lighting": "Soft window light and lamp glow; long shadows suggesting introspection",
+    "lettering": "Hand-lettered serif captions in rectangular boxes for Nick's narration; classic round speech balloons reserved for spoken lines",
+    "recurring_motifs": ["the writing desk and journal", "window light", "father's remembered figure", "the East as a distant horizon"]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neat side-parted light brown hair, calm observant eyes, slight reserved posture",
+      "costume": "White shirt with rolled sleeves, vest and loosened tie; in memory panels, a younger collegiate sweater",
+      "expression_range": "Thoughtful, guarded, faintly weary; rarely smiling",
+      "continuity_note": "Introduced this page as the narrator, writing in retrospect after returning from the East."
+    },
+    {
+      "name": "Nick's Father",
+      "visual_anchor": "Older man, graying mustache, kind but reserved eyes, seated upright",
+      "costume": "Three-piece Midwestern suit, watch chain across the vest",
+      "expression_range": "Measured, paternal, restrained",
+      "continuity_note": "Appears only in Nick's memory; not a present-tense character."
+    }
+  ],
+  "page": {
+    "page_number": 1,
+    "page_summary": "Nick sits at his writing desk after returning from the East and begins his account; as he writes, he recalls his father's long-ago advice, reflects on how reserving judgment shaped him in college, and admits that his tolerance now has a limit.",
+    "source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "source_word_range": [1, 335],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick at his desk in a quiet room, pen poised over an open journal, beginning to write his memoir.",
+        "shot": "medium",
+        "image_prompt": "A young man in a white shirt and loosened tie sits at a wooden writing desk by a tall window, pen in hand over an open leather journal. Soft autumn daylight slants across the page. Bookshelves and a small lamp behind him. Quiet, contemplative mood, muted sepia and dusty blue palette, 1920s Midwestern study. Leave the upper area of the panel clear of detail for a caption.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p1c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.55, "h": 0.22},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Nick's opening narration about his father's advice",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "In my younger and more vulnerable years, my father gave me some advice I've been turning over ever since.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Establishes Nick as the present-tense narrator writing in retrospect.",
+        "source_unit_ids": [1],
+        "source_word_range": [1, 23],
+        "source_anchor": "Unit 1: father's advice in younger years",
+        "adaptation_note": "Anchors abstract opening to the concrete act of writing."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Memory: Nick's father speaks to a younger Nick across a parlor table.",
+        "shot": "medium",
+        "image_prompt": "A sepia-toned memory scene: an older mustached man in a three-piece suit sits across a small parlor table from a younger version of the same young man wearing a collegiate sweater. The father leans slightly forward, hand resting on the table, speaking with quiet seriousness. Warm interior, lace curtains, framed photographs. Reserve the lower portion of the panel clear of detail for a speech balloon near the father and a small caption.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p2d1",
+            "kind": "speech",
+            "zone": "bottom_left",
+            "box": {"x": 0.05, "y": 0.55, "w": 0.5, "h": 0.35},
+            "speaker": "Nick's Father",
+            "speaker_side": "left",
+            "reserved_for": "Father's spoken advice",
+            "reading_order": 1
+          },
+          {
+            "id": "p2c1",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.55, "y": 0.05, "w": 0.4, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "Nick's narration framing the memory",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "He didn't say more, but we'd always been communicative in a reserved way. I understood he meant a great deal more than that.",
+        "dialogue": [
+          {"speaker": "Nick's Father", "text": "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Father appears only in memory; younger Nick visually distinguished by collegiate sweater.",
+        "source_unit_ids": [2, 3],
+        "source_word_range": [24, 75],
+        "source_anchor": "Units 2-3: father's quoted advice and the understood subtext",
+        "adaptation_note": "Pairs the spoken advice (unit 2) with Nick's reflective gloss (unit 3) in a single staged memory."
+      },
+      {
+        "panel_number": 3,
+        "beat": "College memory: younger Nick on a campus bench, a restless stranger leaning in to confide, others hovering nearby.",
+        "shot": "wide",
+        "image_prompt": "A college quad in soft afternoon light. A young man in a sweater sits on a stone bench, listening with quiet patience as another agitated young man leans toward him, gesturing. In the background, two other students linger as if waiting their turn. Ivy-covered building, autumn leaves, 1910s collegiate atmosphere. Reserve a clear horizontal band at the top of the panel for caption text.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p3c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.05, "y": 0.04, "w": 0.9, "h": 0.22},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "Nick's narration about reserving judgment and being mistaken for a politician",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Reserving judgement opened curious natures to me. In college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men—confidences I never sought.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Younger Nick still in sweater; bridges units 4-6 with one staged scene of being confided in.",
+        "source_unit_ids": [4, 5, 6],
+        "source_word_range": [76, 210],
+        "source_anchor": "Units 4-6: habit of reserving judgement, college reputation, unwanted confidences",
+        "adaptation_note": "Consolidates three closely linked reflective units into one observable scene of being confided in, to keep the page from fragmenting."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Back at the desk: Nick pauses, looks out the window toward an autumn horizon, admitting the limit of his tolerance.",
+        "shot": "medium",
+        "image_prompt": "Return to the present-day study. The young man sets down his pen and looks out the tall window at a bare autumn landscape and distant road. His expression is sober, slightly hardened. Warm amber lamp light contrasts with cool blue light outside. Journal open on the desk. Reserve the lower portion of the panel clear for a stacked caption.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4c1",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.55, "w": 0.92, "h": 0.4},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Nick's narration on the limits of tolerance and his return from the East",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "bottom_left",
+        "caption": "Reserving judgement is a matter of infinite hope—yet, after boasting of my tolerance, I admit it has a limit. When I came back from the East last autumn, I wanted the world in uniform and at moral attention forever.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Returns to the framing action of writing; foreshadows the East as the story's setting.",
+        "source_unit_ids": [7, 8, 9, 10, 11],
+        "source_word_range": [211, 335],
+        "source_anchor": "Units 7-11: hope, snobbish inheritance, the admitted limit, return from the East",
+        "adaptation_note": "Closes the page by returning to the desk frame; condenses the closing reflective units into one caption tied to a concrete look out the window."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "last_scene": "Nick at his writing desk after returning from the East, having just begun his memoir and reflected on his father's advice and the limits of his tolerance.",
+    "active_characters": ["Nick Carraway"],
+    "character_updates": [
+      "Nick established as reserved, observant narrator writing in retrospect",
+      "Father introduced only as a memory figure, not a present character"
+    ],
+    "visual_motifs": ["writing desk and open journal", "window light", "sepia memory tone", "the East as a horizon"],
+    "next_page_needs": [
+      "Transition from the writing desk into the East: Nick's arrival in West Egg",
+      "Introduce the physical setting of Long Island, the bungalow, and the neighboring Gatsby estate",
+      "Prepare to introduce Daisy and Tom Buchanan"
+    ]
+  }
+}

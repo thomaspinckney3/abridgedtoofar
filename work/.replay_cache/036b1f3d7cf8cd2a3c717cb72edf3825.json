@@ -1,0 +1,81 @@
+{
+  "ts": "2026-05-08T02:37:44",
+  "key": "036b1f3d7cf8cd2a3c717cb72edf3825",
+  "model": "anthropic:claude-opus-4-7",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "draft",
+    "hash": "9051cf285d6ab6095a24d0887ebc4cd4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/drafter.py",
+        "sha256": "7b528c6eeb991962ac87433eecf551d6e5701b918acc79a0904da5eaecd834b8",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/motif_ledger.py",
+        "sha256": "e954339be994d3c05b158ff34567bb3fe48f5aa4d1df25b4c7b85e9562aa80d4",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "forage/text_norm.py",
+        "sha256": "203b6456278189eb60b29a06ac25d406164940f405e6f9129b7f2f76c53ce64b",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_lean.md",
+        "sha256": "1ec9e462dab787b602c28800358c800ee1bc882b42b56c4f009f6ab141178152",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_segment.md",
+        "sha256": "45996981ceee16182e89bd7dbdc5983a8446045506ece4efebc6fcca9a43c6ac",
+        "missing": false
+      },
+      {
+        "path": "spec/ABRIDGMENT_SPEC.md",
+        "sha256": "a1d6760a2bf9cbc19d1e92214903cbd1fc03dcbe4e7692307df7e3170c918f7d",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "# CHAPTER 73. The Sphynx.\n\nPrevious to stripping the body, the leviathan was beheaded. The beheading of the Sperm Whale is a scientific anatomical feat: he has no neck, where head and body seem to join being his thickest part. The Pequod's whale being decapitated, its head \u2014 nearly a third of his bulk, too vast for even a whaler's tackles, like weighing a Dutch barn in jewellers' scales \u2014 was hoisted against the ship's side, half out of the sea; and there, with the strained craft steeply leaning, that blood-dripping head hung to her waist like the giant Holofernes's from the girdle of Judith.\n\nThis task accomplished, it was noon, and the seamen went below. An intense copper calm, like a universal yellow lotus, unfolded its noiseless measureless leaves upon the sea. Up into this noiselessness came Ahab alone from his cabin. Taking Stubb's long spade \u2014 still there after the decapitation \u2014 he struck it into the half-suspended mass, placed its other end crutch-wise under his arm, and stood leaning, eyes fixed on the head.\n\nBlack and hooded, in the midst of so intense a calm, it seemed the Sphynx's in the desert. \"Speak, thou vast and venerable head,\" muttered Ahab, \"which, though ungarnished with a beard, yet here and there lookest hoary with mosses; speak, mighty head, and tell us the secret thing that is in thee. Of all divers, thou hast dived the deepest. Where unrecorded names and navies rust, and untold hopes and anchors rot; where in her murderous hold this frigate earth is ballasted with bones of millions of the drowned; there, in that awful water-land, was thy most familiar home. Thou hast been where bell or diver never went; hast slept by many a sailor's side, where sleepless mothers would give their lives to lay them down. Thou saw'st the locked lovers when leaping from their flaming ship; heart to heart they sank beneath the exulting wave; true to each other, when heaven seemed false to them. Thou saw'st the murdered mate when tossed by pirates from the midnight deck; for hours he fell into the deeper midnight of the insatiate maw; and his murderers still sailed on unharmed \u2014 while swift lightnings shivered the neighboring ship that would have borne a righteous husband to outstretched, longing arms. O head! thou hast seen enough to split the planets and make an infidel of Abraham, and not one syllable is thine!\"\n\n\"Sail ho!\" cried a triumphant voice from the main-mast-head.\n\n\"Aye? Well, now, that's cheering,\" cried Ahab, suddenly erecting himself, while whole thunder-clouds swept aside from his brow. \"That lively cry upon this deadly calm might almost convert a better man. \u2014 Where away?\"\n\n\"Three points on the starboard bow, sir, and bringing down her breeze to us!\"\n\n\"Better and better, man. Would now St. Paul would come along that way, and to my breezelessness bring his breeze! O Nature, and O soul of man! how far beyond all utterance are your linked analogies! not the smallest atom stirs or lives on matter, but has its cunning duplicate in mind.\"",
+    "input_tokens": 5061,
+    "output_tokens": 30108,
+    "cache_read_tokens": 12752,
+    "cache_write_tokens": 0,
+    "duration_s": 280.4237461090088,
+    "stop_reason": "end_turn"
+  }
+}

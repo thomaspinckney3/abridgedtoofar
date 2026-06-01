@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:05:56",
+  "key": "95282634baf03474dd19c5e243033d1c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence-fix",
+    "hash": "05af23c16d7569c876384c7e76954fcc",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_fix.py",
+        "sha256": "5e700ecc59cb7c44ccf1eca51000fe803a7c6e29de95ef1df63709c6f131c6b0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/coherence_fix_pair.md",
+        "sha256": "71eff4043236868d9179bcdc8a0eb4bfa52c5f9368e57df367b5dc5aec5e6a6b",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n{\n  \"pair\": \"001-002\",\n  \"edits\": [\n    {\"segment_id\": \"002-idx-0\", \"change\": \"Replace ambiguous 'Her grey eyes looked misty' with 'Tuppence's grey eyes looked misty' to anchor the pronoun unambiguously, matching the source's explicit name reference.\"}\n  ],\n  \"draft_n\": \"It was 2 p.m. on the afternoon of May 7, 1915. The *Lusitania*, struck by two torpedoes in succession, was sinking rapidly, while the boats were being launched with all possible speed. Women and children were being lined up awaiting their turn. One girl stood slightly apart from the rest. She was quite young, not more than eighteen. She did not seem afraid, and her grave, steadfast eyes looked straight ahead.\\n\\n\\\"I beg your pardon.\\\"\\n\\nA man's voice beside her made her start. She had noticed him more than once amongst the first-class passengers\u2014a hint of mystery about him, a nervous way of looking over his shoulder with a swift, suspicious glance. Now beads of perspiration stood on his brow. He was evidently in a state of overmastering fear, and yet he did not strike her as the kind of man who would be afraid to meet death.\\n\\n\\\"Yes?\\\"\\n\\nHe stood looking at her with desperate irresolution. \\\"It must be!\\\" he muttered. \\\"Yes\u2014it is the only way.\\\" Then aloud: \\\"You are an American?\\\"\\n\\n\\\"Yes.\\\"\\n\\n\\\"A patriotic one?\\\"\\n\\nShe flushed. \\\"Of course I am!\\\"\\n\\n\\\"Don't be offended. But I've got to trust some one\u2014and it must be a woman. Because of 'women and children first.'\\\" He lowered his voice. \\\"I'm carrying papers\u2014vitally important papers. They may make all the difference to the Allies in the war. They've more chance with you than with me. Will you take them?\\\"\\n\\nThe girl held out her hand.\\n\\n\\\"There may be a risk\u2014if I've been followed. Have you the nerve to go through with it?\\\"\\n\\nShe smiled. \\\"I'll go through with it all right. And I'm real proud to be chosen! What am I to do with them afterwards?\\\"\\n\\n\\\"Watch the newspapers! I'll advertise in the personal column of the *Times*, beginning 'Shipmate.' At the end of three days if there's nothing\u2014you'll know I'm down and out. Then take the packet to the American Embassy, and deliver it into the Ambassador's own hands.\\\"\\n\\n\\\"Quite clear.\\\"\\n\\n\\\"Then good-bye.\\\" He took her hand. \\\"Good-bye. Good luck to you,\\\" he said in a louder tone.\\n\\nHer hand closed on the oilskin packet that had lain in his palm. The *Lusitania* settled with a more decided list to starboard. In answer to a quick command, the girl went forward to take her place in the boat.\",\n  \"draft_np1\": \"\\\"Tommy, old thing!\\\"\\n\\n\\\"Tuppence, old bean!\\\"\\n\\nThe two young people greeted each other affectionately, momentarily blocking the Dover Street Tube exit. The adjective \\\"old\\\" was misleading: their united ages would certainly not have totalled forty-five.\\n\\n\\\"Not seen you for simply centuries,\\\" said the young man. \\\"Come and chew a bun with me.\\\"\\n\\nThe girl assented, and they walked down Dover Street towards Piccadilly. The very faint anxiety underlying his tone did not escape the astute ears of Miss Prudence Cowley, known to her intimate friends for some mysterious reason as \\\"Tuppence.\\\"\\n\\n\\\"Tommy, you're stony!\\\"\\n\\n\\\"Not a bit of it. Rolling in cash.\\\"\\n\\n\\\"You always were a shocking liar.\\\"\\n\\nTommy chuckled. \\\"Demobbed like everything else, I suppose. Two months ago. Gratuity? Spent. The cost of living\u2014\\\"\\n\\n\\\"My dear child, there is nothing I do *not* know about the cost of living. Here we are at Lyons', and we will each pay for our own.\\\"\\n\\nThey found a table. \\\"Funny scraps one does overhear,\\\" murmured Tommy. \\\"I passed two Johnnies in the street to-day talking about some one called Jane Finn. Did you ever hear such a name?\\\"\\n\\nTommy was pleasantly ugly, with a shock of slicked-back red hair\u2014nondescript, yet unmistakably the face of a gentleman and a sportsman. Tuppence had no claim to beauty, but there was character and charm in the elfin lines of her little face, with its determined chin and large, wide-apart grey eyes. She wore a small bright green toque over her bobbed black hair; her appearance was a valiant attempt at smartness.\\n\\n\\\"Now then,\\\" said Tommy, taking a large bite of bun. \\\"Let's get up-to-date. I haven't seen you since that time in hospital in 1916.\\\"\\n\\n\\\"Very well.\\\" Tuppence helped herself liberally to buttered toast and gave the abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk: ward duties, plate-washing, peeling potatoes, sweeping out wards (where she found a friend of her childhood in Lieutenant Thomas Beresford\u2014bow, Tommy!), then a trade van, a motor-lorry, and a young general. \\\"After that, a Government office, and several enjoyable tea parties\u2014until I was combed out at last. Since then I've been looking for a job. Now\u2014your turn.\\\"\\n\\n\\\"There's less variety in mine. France, Mesopotamia, wounded again, hospital out there, Egypt till the Armistice, finally demobbed. For ten long, weary months I've been job hunting. There aren't any jobs. And, if there were, they wouldn't give 'em to me. What good am I?\\\"\\n\\n\\\"Rich relations?\\\"\\n\\n\\\"An old uncle who's more or less rolling. Wanted to adopt me once. I refused\u2014because of the mater. Old boy hated her.\\\"\\n\\n\\\"Your mother's dead, isn't she?\\\" said Tuppence gently.\\n\\nTommy nodded. Tuppence's grey eyes looked misty. \\\"You're a good sort, Tommy.\\\"\\n\\n\\\"Rot! Well, that's my position. I'm just about desperate.\\\"\\n\\n\\\"So am I. I shall have to go home. Father's a dear, but you've no idea how I worry him\u2014short skirts and smoking are immoral, in his early Victorian view. He just heaved a sigh of relief when the war took me off. Seven of us at home. All housework and mothers' meetings!\\\"\\n\\nShe burst out: \\\"Money, money, money! I think about money morning, noon and night. There are only three ways to get it: to be left it, to marry it, or to make it. The first is ruled out\u2014my relatives are in homes for decayed gentlewomen. Marriage is my best chance. I made up my mind to marry money when I was quite young. Any thinking girl would. I'm not sentimental, you know.\\\"\\n\\n\\\"No one would ever think of sentiment in connection with you,\\\" said Tommy hastily.\\n\\n\\\"That's not very polite. Well, there it is\u2014I'm ready and willing, but I never meet any rich men. All the boys I know are about as hard up as I am.\\\"\\n\\n\\\"Same here.\\\"\\n\\n\\\"We've tried the orthodox ways. Suppose we try the unorthodox. Tommy, let's be adventurers!\\\"\\n\\n\\\"Certainly. How do we begin?\\\"\\n\\n\\\"If we could make ourselves known, people might hire us to commit crimes for them.\\\"\\n\\n\\\"Delightful\u2014coming from a clergyman's daughter!\\\"\\n\\n\\\"The moral guilt would be theirs\u2014not mine. Let's form a\u2014joint venture! It struck me as such a romantic phrase. It's got an Elizabethan flavour about it\u2014galleons and doubloons.\\\"\\n\\n\\\"Trading under the name of the Young Adventurers, Ltd.? Is that your idea?\\\"\\n\\n\\\"Don't laugh. Advertisement! Have you got paper and pencil?\\\"\\n\\nTommy handed over a rather shabby green notebook, and Tuppence wrote busily.\\n\\n\\\"How's this? 'Two young adventurers for hire. Willing to do anything, go anywhere. Pay must be good. No unreasonable offer refused.'\\\"\\n\\n\\\"It would strike me as either a hoax or written by a lunatic.\\\"\\n\\n\\\"It's not half so insane as a thing I read this morning beginning 'Petunia' and signed 'Best Boy.'\\\" She tore out the leaf and handed it to him. \\\"There you are. *Times*, I think.\\\"\\n\\nTommy was holding the paper thoughtfully. His face burned a deeper red. \\\"Shall we really try it, Tuppence? Just for the fun of the thing?\\\"\\n\\n\\\"Tommy, you're a sport! Let's drink to success.\\\" She poured cold dregs of tea into the two cups. \\\"Here's to our joint venture, and may it prosper!\\\"\\n\\n\\\"The Young Adventurers, Ltd.!\\\" responded Tommy.\\n\\nThey put down the cups and laughed rather uncertainly. Tuppence rose. \\\"I must return to my palatial suite at the hostel.\\\"\\n\\n\\\"Perhaps it is time I strolled round to the *Ritz*. Where shall we meet?\\\"\\n\\n\\\"Twelve o'clock to-morrow. Piccadilly Tube station.\\\"\\n\\n\\\"My time is my own,\\\" replied Mr. Beresford magnificently.\\n\\nThe two young people went off in opposite directions. Tuppence's hostel was situated in what was charitably called Southern Belgravia. For reasons of economy she did not take a bus.\\n\\nShe was half-way across St. James's Park when a man's voice behind her made her start.\\n\\n\\\"Excuse me. But may I speak to you for a moment?\\\"\"\n}\n```",
+    "input_tokens": 8020,
+    "output_tokens": 2450,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 53.210673093795776,
+    "stop_reason": "end_turn"
+  }
+}

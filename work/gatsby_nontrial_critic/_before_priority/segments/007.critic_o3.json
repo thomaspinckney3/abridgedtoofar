@@ -1,0 +1,35 @@
+{
+  "segment_id": "007",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "“The master’s body?” roared the butler into the mouthpiece. “I’m sorry, madame, but we can’t furnish it—it’s far too hot to touch this noon!”",
+      "source_locator": "early visit to Buchanan house, telephone scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "Nick’s ironic gloss on the overheard call sets the chapter’s comic-surreal register and the heat motif; cutting it flattens both atmosphere and narrative voice.",
+      "suggested_fix": "Restore the full overheard line and Nick’s parenthetical clarification before the butler takes their hats."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "In this heat every extra gesture was an affront to the common store of life.",
+      "source_locator": "same paragraph after butler scene",
+      "draft_treatment": "absent",
+      "why_it_matters": "This aphoristic sentence is classic Nick—compressed irony that critics quote when discussing Fitzgerald’s style. Losing it dulls the heat motif and narrator voice.",
+      "suggested_fix": "Insert the line verbatim after the butler ushers Nick and Gatsby inside."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "“Do you mean you’ve been to a medium?” inquired Jordan humorously.  “What?  Confused, he stared at us as we laughed.  “A medium?”",
+      "source_locator": "drive to New York, Tom’s ‘second sight’ ramble",
+      "draft_treatment": "absent",
+      "why_it_matters": "Jordan’s teasing and Tom’s bafflement are a rhythm break that exposes Tom’s pomposity; critics note the scene for its comic pacing. Its removal smooths away character shading.",
+      "suggested_fix": "Re-insert Jordan’s quip and Tom’s confused reaction before the ‘About Gatsby!’ exchange."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three voice-defining passages—telephone farce, heat aphorism, and Jordan’s ‘medium’ tease—are missing, warranting a regeneration pass."
+}

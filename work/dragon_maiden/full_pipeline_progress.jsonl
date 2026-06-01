@@ -1,18 +1,27 @@
-{"phase": "iterate", "segment_id": "005", "title": "CHAPTER 1", "source_words": 1296, "target_words": 700, "final_words": 809, "verdict": "pass", "attempts": 3, "exhausted": false, "elapsed_s": 246.0}
-{"phase": "iterate", "segment_id": "006", "title": "CHAPTER 2", "source_words": 918, "target_words": 500, "final_words": 611, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 150.1}
-{"phase": "iterate", "segment_id": "007", "title": "CHAPTER 3", "source_words": 2062, "target_words": 1100, "final_words": 1220, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 0.0}
-{"phase": "iterate", "segment_id": "008", "title": "CHAPTER 4", "source_words": 1985, "target_words": 1100, "final_words": 1223, "verdict": "pass", "attempts": 1, "exhausted": false, "elapsed_s": 13.4}
-{"phase": "iterate", "segment_id": "009", "title": "CHAPTER 5", "source_words": 1710, "target_words": 900, "final_words": 1014, "verdict": "pass", "attempts": 1, "exhausted": false, "elapsed_s": 13.9}
-{"phase": "iterate", "segment_id": "010", "title": "CHAPTER 6", "source_words": 1587, "target_words": 900, "final_words": 952, "verdict": "pass", "attempts": 3, "exhausted": false, "elapsed_s": 144.3}
-{"phase": "iterate", "segment_id": "011", "title": "CHAPTER 7", "source_words": 2019, "target_words": 1100, "final_words": 1234, "verdict": "pass", "attempts": 3, "exhausted": false, "elapsed_s": 131.5}
-{"phase": "iterate", "segment_id": "012", "title": "CHAPTER 8", "source_words": 1127, "target_words": 600, "final_words": 513, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 146.8}
-{"phase": "iterate", "segment_id": "013", "title": "CHAPTER 9", "source_words": 1885, "target_words": 1000, "final_words": 1293, "verdict": "pass", "attempts": 2, "exhausted": false, "elapsed_s": 96.1}
-{"phase": "iterate", "segment_id": "014", "title": "CHAPTER 10", "source_words": 1759, "target_words": 1000, "final_words": 1202, "verdict": "pass", "attempts": 1, "exhausted": false, "elapsed_s": 11.9}
-{"phase": "iterate", "segment_id": "015", "title": "CHAPTER 11", "source_words": 2450, "target_words": 1300, "final_words": 1443, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 177.3}
-{"phase": "iterate", "segment_id": "016", "title": "CHAPTER 12", "source_words": 2076, "target_words": 1100, "final_words": 976, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 215.5}
-{"phase": "iterate", "segment_id": "017", "title": "CHAPTER 13", "source_words": 1771, "target_words": 1000, "final_words": 849, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 189.3}
-{"phase": "iterate", "segment_id": "018", "title": "CHAPTER 14", "source_words": 1263, "target_words": 700, "final_words": 838, "verdict": "regenerate", "attempts": 3, "exhausted": true, "elapsed_s": 202.6}
-{"phase": "iterate", "segment_id": "019", "title": "CHAPTER 15", "source_words": 1636, "target_words": 900, "final_words": 937, "verdict": "pass", "attempts": 2, "exhausted": false, "elapsed_s": 62.0}
-{"phase": "iterate", "segment_id": "020", "title": "SNEAK PEEK: REALMS OF THE DRAGONS", "source_words": 2221, "target_words": 1200, "final_words": 1507, "verdict": "pass", "attempts": 2, "exhausted": false, "elapsed_s": 83.8}
-{"phase": "assemble", "total_drafted": 16621, "book_target": 14318, "book_ceiling": 17181, "over_budget": true, "over_ceiling": false, "segments_drafted": 16, "segments_cut": 0, "segments_missing": 8}
-{"phase": "book_critique", "verdict": "ship", "is_partial": false, "counts": {"present": 1}}
+{"phase": "split", "elapsed_s": 0.2}
+{"phase": "classify", "elapsed_s": 9.5}
+{"phase": "summarize", "elapsed_s": 32.4}
+{"phase": "cuts", "elapsed_s": 67.3}
+{"phase": "plan", "elapsed_s": 0.0}
+{"phase": "prepare-skips", "skipped": [], "kernels_inserted": [], "not_found": [], "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "005", "title": "CHAPTER 1", "source_words": 1296, "target_words": 700, "final_words": 672, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "006", "title": "CHAPTER 2", "source_words": 918, "target_words": 500, "final_words": 497, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "007", "title": "CHAPTER 3", "source_words": 2062, "target_words": 1100, "final_words": 1113, "status": "drafted", "elapsed_s": 276.4}
+{"phase": "draft", "segment_id": "008", "title": "CHAPTER 4", "source_words": 1985, "target_words": 1100, "final_words": 997, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "009", "title": "CHAPTER 5", "source_words": 1710, "target_words": 900, "final_words": 831, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "010", "title": "CHAPTER 6", "source_words": 1587, "target_words": 900, "final_words": 955, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "011", "title": "CHAPTER 7", "source_words": 2019, "target_words": 1100, "final_words": 1062, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "012", "title": "CHAPTER 8", "source_words": 1127, "target_words": 600, "final_words": 602, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "013", "title": "CHAPTER 9", "source_words": 1885, "target_words": 1000, "final_words": 1167, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "014", "title": "CHAPTER 10", "source_words": 1759, "target_words": 1000, "final_words": 992, "status": "drafted", "elapsed_s": 115.5}
+{"phase": "draft", "segment_id": "015", "title": "CHAPTER 11", "source_words": 2450, "target_words": 1300, "final_words": 1316, "status": "drafted", "elapsed_s": 135.7}
+{"phase": "draft", "segment_id": "016", "title": "CHAPTER 12", "source_words": 2076, "target_words": 1100, "final_words": 1109, "status": "drafted", "elapsed_s": 403.1}
+{"phase": "draft", "segment_id": "017", "title": "CHAPTER 13", "source_words": 1771, "target_words": 1000, "final_words": 974, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "018", "title": "CHAPTER 14", "source_words": 1263, "target_words": 700, "final_words": 700, "status": "drafted", "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "019", "title": "CHAPTER 15", "source_words": 1636, "target_words": 900, "final_words": 939, "status": "drafted", "elapsed_s": 184.8}
+{"phase": "draft", "segment_id": "020", "title": "SNEAK PEEK: REALMS OF THE DRAGONS", "source_words": 2221, "target_words": 1200, "final_words": 1218, "status": "drafted", "elapsed_s": 410.9}
+{"phase": "draft-verify", "status": "passed"}
+{"phase": "coherence-pre-fix", "pairs_checked": 15, "findings_total": 1, "class_counts": {"unglossed_name": 1}}
+{"phase": "coherence-fix", "pairs_processed": 1, "pairs_applied": 1, "pairs_no_change": 0, "pairs_failed": 0, "pairs_no_findings": 0}
+{"phase": "assemble", "total_drafted": 15149, "book_target": 14318, "book_ceiling": 17181, "over_budget": true, "over_ceiling": false, "segments_drafted": 16, "segments_cut": 8, "segments_missing": 0, "plain_text_path": "/Users/tp/abridgedtoofar/work/dragon_maiden/abridgment.txt", "published_plain_text_path": "/Users/tp/abridgedtoofar/books/dragon_maiden/abridgment.txt"}
+{"phase": "book_critique", "verdict": "hold", "is_partial": false, "counts": {"present": 27, "distorted": 1}}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:59:24",
+  "key": "08e3b7fd09066d7040b038666cad5891",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Looking at the two draft chapters carefully, I'll check each candidate against the seven tests and the gate test.\n\n**Ch 010 draft \u2014 \"When Tommy set off after the two men, Tuppence retraced her steps to the entrance hall of the mansions...\"**\n\nThe draft opens mid-chapter by referencing \"the two men\" as if the reader has just been told about them. The N draft (Ch 009) ends with Tommy being knocked unconscious in the hidden room. The source Ch 010 explains: Tommy had trailed two men, and Tuppence's reasoning had been justified by events \u2014 the two men had come from the second floor flat. This framing bridge was cut. The draft's opening sentence simply states \"When Tommy set off after the two men\" with no prior draft establishment of who these men are or what Tommy's trailing mission was. The Ch 009 draft ends only with Tommy being knocked out; there is no transition establishing that he recovered, regained consciousness, exited the house, returned to Tuppence, and then set off trailing men. A reader with no source access would be genuinely confused: the last they knew, Tommy was unconscious from a blow to the head \u2014 now he is apparently recovered and tailing people, with no explanation of how or when.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"mid_scene_jump\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"When Tommy set off after the two men, Tuppence retraced her steps to the entrance hall of the mansions\",\n    \"source_has\": \"When Tommy set forth on the trail of the two men... The two men had undoubtedly come from the second floor flat, and that one slender thread of the name 'Rita' had set the Young Adventurers once more upon the track of the abductors of Jane Finn.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the preceding draft chapter ends with Tommy unconscious from a blow to the head, so 'when Tommy set off after the two men' has no antecedent event in the draft \u2014 neither Tommy's recovery nor the specific two men he is trailing were established anywhere in the surviving draft text.\"\n  }\n]\n```",
+    "input_tokens": 13798,
+    "output_tokens": 508,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 12.871275901794434,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:44:18",
+  "key": "acb040493393f57092a4bbb12168f4f7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying only the seven structural tests and the gate test.\n\n---\n\n**Ch 044 draft \u2014 scan**\n\nThe draft is self-contained. The opening summary paragraph establishes Cassy, Emmeline, George Shelby, Madame de Thoux, and the escape. The Montreal reunion scene, George Harris's letter, the Africa resolution, Miss Ophelia/Topsy coda, and the P.S. about Cassy's son all parse cleanly. Madame de Thoux is introduced with her relationship (\"George Harris's sister\") in the summary. \"Emmeline\" reappears in the France passage without a fresh gloss, but she was introduced in the opening summary paragraph of the same chapter (\"Emmeline as her maid\"), so a reader tracking the chapter can place her. No dangling pronouns, no broken pivots from cuts, no unglossed minor names that survive after their introduction was removed.\n\n**Ch 045 draft \u2014 scan**\n\n\"Aunt Chloe, Tom's wife\" \u2014 the draft supplies the appositive identifier right in the sentence. No problem there.\n\nThe money on the table: in the source, Chloe had explicitly preserved the bills paid for her hired-out wages (authorized cut: Aunt Chloe hired out in Louisville). In the draft the money appears on the table with no prior establishment of what it is or why Chloe is proud of it.\n\n- \"In the supper-room the money, of which Chloe was so proud, still lay on the table.\" \u2014 The word \"still\" implies the money has been mentioned or established before in the draft, but it has not. More critically, the phrase \"of which Chloe was so proud\" is a characterizing gloss that the source earned through the Louisville subplot (the bills were the proof of her competence and loyalty). That subplot is an authorized cut. So the residual seam (the money appearing without context) is a *direct residue of an authorized cut* and is therefore **not a finding**.\n\nBeyond that seam, the rest of Ch 045 parses cleanly. All dialogue is properly attributed. George Shelby is established from the chapter's first sentence. No pronouns dangle. No mid-scene jumps that weren't authorized. The freed-servant scene and Tom's death recollection all follow logically from what precedes them in the draft.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 13572,
+    "output_tokens": 549,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 15.582705974578857,
+    "stop_reason": "end_turn"
+  }
+}

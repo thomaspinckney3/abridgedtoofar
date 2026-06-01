@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:15:33",
+  "key": "e14458ecde5aae8d7639024f6d36c06a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test to sentences that could be structurally damaged.\n\n---\n\n**Ch 021 draft \u2014 checking sentence by sentence**\n\n\"That field of education seemed closed too.\" \u2014 The source ties this to the deaths of Mrs. Milnes Gaskell and Miss Charlotte Wynn (authorized removals) plus Milnes Gaskell leaving Parliament. The draft drops those names (authorized) but keeps the summarizing sentence \"Death had ravaged one's circle of friends.\" A reader can follow: death ravaged the circle \u2192 that field closed. Borderline, but the logical chain is intact. Not a finding.\n\n\"He gladly set down Reeve's refusal of the Gold Conspiracy to respectability and editorial law, but when he sent the manuscript on to the Quarterly\u2026\" \u2014 The draft drops the entire \"He gladly set down\u2026to respectability and editorial law\" sentence and jumps straight to \"When he sent the manuscript on to the Quarterly, the editor of the Quarterly also refused it.\" The word \"also\" implies a prior refusal was *just explained/contextualized*, but in the draft the prior paragraph ended with the plain refusal and Reeve's libel-suit reason. The \"also\" still parses because Reeve's refusal was described immediately before. Not a broken pivot.\n\n\"As usual, when an ally was needed, the American was driven into the arms of the radicals. Respectability, everywhere and always, turned its back the moment one asked to do it a favor.\" \u2014 In the source, between the second Quarterly refusal and this sentence, there is: \"Adams had no choice but to realize that he had to deal in 1870 with the same old English character of 1860, and the same inability in himself to understand it.\" The draft cuts that sentence. The \"As usual\" + \"Respectability\u2026turned its back\" pivot reads as a conclusion following something \u2014 and the draft does have the double refusal just above, so the logical chain holds. Not a finding.\n\n\"Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person\u2026\" \u2014 The source has \"Here was a tour de force he had never dreamed himself equal to performing: two long\u2026\" The draft cuts \"Here was a tour de force\u2026equal to performing:\" and leaves the fragment \"Two long, dry, quarterly articles, appearing in quick succession\u2026and not one person, man or woman, offering him so much as a congratulation.\" This is a sentence without a main verb \u2014 a nominal fragment. A reader hits it and has no predicate. This passes the non-parseable test.\n\n\"He sought education; he did not sell it.\" \u2014 In the source this sentence is embedded in a paragraph about Henry knowing Gurney, feeling influenced by his advice, and considering the professorship. The draft cuts the preceding context (Gurney, the double load, seeing no relation between himself and a professorship) and jumps to \"He sought education; he did not sell it.\" The pronoun \"he\" has an antecedent (Adams) and the sentence parses on its own as a standalone aphorism. A reader can follow it. Not a finding.\n\n---\n\n**Ch 022 draft \u2014 checking sentence by sentence**\n\n\"The Pteraspis grins horribly from the closed entrance.\" \u2014 This sentence appears in the middle of the draft's discussion of historical method. In the source (Ch 022) it is preceded by \"complexity precedes evolution.\" The draft keeps that. The sentence is retained from source. Pteraspis as a figure was introduced in the source's Ch 022 geological excursus \u2014 but that excursus is an *authorized removal* from Ch 017/021. However, the Pteraspis reference in Ch 022 source is *within Ch 022 itself*, not imported from the authorized cut chapters, and the draft *keeps* the sentence with its preceding clause \"complexity precedes evolution. The Pteraspis grins horribly from the closed entrance.\" A reader unfamiliar with the geological subplot will find \"Pteraspis\" opaque, but it functions here as a metaphor for the closed-off beginning of history, which the immediately preceding clause (\"complexity precedes evolution\") contextualizes. The source does not gloss it differently in this passage. Not a finding \u2014 the missing gloss is a residue of the authorized Ch 017 digression removal.\n\n\"As a companion, King's charm was great, but King had moulded and directed his life logically, scientifically\u2026\" \u2014 Source: \"As a companion, King's charm was great, but this was not the quality that so much attracted Adams, nor could he affect even distant rivalry on this ground. Adams could never tell a story\u2026King and the Fortieth Parallel influenced him in a way far more vital. The lines of their lives converged, but King had moulded\u2026\" The draft cuts \"this was not the quality that so much attracted Adams\u2026King and the Fortieth Parallel influenced him in a way far more vital. The lines of their lives converged,\" and jumps straight to \"but King had moulded and directed his life logically.\" The \"but\" is supposed to pivot from \"King's charm was great [as a companion]\" to something contrasting \u2014 in the source, the contrast is \"but this was NOT what attracted Adams; what attracted him was King's directed life.\" The draft's version reads: \"King's charm was great, but King had moulded his life logically\" \u2014 which makes \"charm\" contrast with \"moulded his life logically\" as if these are opposites, which is not what is meant. The logical pivot is broken: the \"but\" now connects two positive attributes of King rather than pivoting to what actually drew Adams. A reader is genuinely misled about the argumentative structure.\n\n\"When the first year of professing and editing was at last over, he took the next train for the West.\" \u2014 The source has a substantial transition: Adams putting the July North American in his pocket with a notice of the Fortieth Parallel Survey, starting for the plains. The draft cuts the transition material (authorized: Western geological field-trip subplot). The sentence itself parses fine and no mid-scene jump issue since the West trip was authorized to be compressed. Not a finding.\n\n\"One morning when the party was camped high above Estes Park, on the flank of Long's Peak, he borrowed a rod, and rode down for some trout.\" \u2014 The source has: \"Adams enjoyed killing big game\u2026he liked to wander off alone on his mule, and pass the day fishing\u2026One morning when the party was camped\u2026he borrowed a rod, and rode down over a rough trail into Estes Park, for some trout.\" The draft cuts the setup about Adams's habits on the survey trip and jumps to the morning scene. The \"he\" refers clearly to Adams, established throughout. The authorized removal of the Western field-trip subplot covers this compression. Not a finding.\n\n\"Darkness caught him before he could catch his trail.\" \u2014 Source establishes the fishing day at length; draft omits it but this sentence still parses. Not a finding.\n\n---\n\n**Findings:**\n\n```json\n[\n  {\n    \"class\": \"non_parseable\",\n    \"chapter\": \"21\",\n    \"draft_passage\": \"Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\",\n    \"source_has\": \"Here was a tour de force he had never dreamed himself equal to performing: two long, dry, quarterly, thirty or forty page articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\",\n    \"gate_test_answer\": \"A reader hits a noun phrase with no main verb \u2014 'Two long, dry, quarterly articles\u2026and not one person\u2026offering him\u2026' \u2014 and finds no predicate; the sentence is a fragment that cannot be parsed as a complete clause, causing genuine confusion rather than mere stylistic impoverishment.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"22\",\n    \"draft_passage\": \"As a companion, King's charm was great, but King had moulded and directed his life logically, scientifically, as Adams thought American life should be directed.\",\n    \"source_has\": \"As a companion, King's charm was great, but this was not the quality that so much attracted Adams, nor could he affect even distant rivalry on this ground. Adams could never tell a story\u2026King and the Fortieth Parallel influenced him in a way far more vital. The lines of their lives converged, but King had moulded and directed his life logically, scientifically\u2026\",\n    \"gate_test_answer\": \"A reader is genuinely misled: the draft's 'but' makes King's charm contrast with King having moulded his life logically, as if these are opposing traits, whereas the source's pivot is between what charmed Adams socially and what actually influenced him intellectually \u2014 the cut removes the hinge sentence that explains what the 'but' is contrasting, leaving the logical relationship inverted.\"\n  }\n]\n```",
+    "input_tokens": 24358,
+    "output_tokens": 2095,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 46.12385416030884,
+    "stop_reason": "end_turn"
+  }
+}

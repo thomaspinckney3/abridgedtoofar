@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:17:26",
+  "key": "f3cd467a7615c2a2e0e91bbab8f82c52",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test and checking only for structural damage, not mere compression.\n\n**Ch 026 draft checks:**\n\nThe passage about \"the old friend\" La Farge is anonymized (authorized cut). Let me check the paragraph: \"His solitude was broken in November by the chance arrival of an old friend through whom contact with the medieval imagination had a new value\u2014an artist who alone among Adams's acquaintance could use glass like a thirteenth-century artist, and who led him back to Chartres.\" This is an authorized cut of La Farge, so residual seams here are expected.\n\n\"He shouldered his pack and started for home.\" \u2014 In the source this refers to Hay. In the draft, the preceding sentence says \"his obedience to the President's order was the gloomiest acquiescence he had ever smiled.\" The subject \"he\" could refer to Hay (the subject of preceding sentences), and \"Adams had no mind to lose his friend\" follows. Parseable.\n\n\"President Cleveland set aside Hewitt; President Harrison set aside Hay.\" \u2014 In the source: \"The story of Abram Hewitt would offer one type of this statesman series, and that of Hay another. President Cleveland set aside the one; President Harrison set aside the other.\" The draft compresses this, substituting names for \"the one/the other.\" This is fine \u2014 actually clearer.\n\n\"'There is no politics in it,' was his comment on Hay's appointment to office.\" \u2014 \"his\" refers to Harrison, who was just named. But in the source, the referent is clear because Harrison was just mentioned. In the draft, the sentence directly follows \"President Harrison set aside Hay.\" So \"his\" = Harrison. Parseable.\n\n\"Hay turned to McKinley\" \u2014 source says \"Hay held a different opinion and turned to McKinley.\" The draft drops \"held a different opinion and,\" making this a broken pivot: the source contrast is between Harrison setting Hay aside and Hay turning elsewhere, but the \"different opinion\" clause was the logical hinge. However, the draft reader can still understand Hay turned to McKinley; it's just less ornamented. Gate test: not genuinely confusing.\n\nLet me check the \"but the poison he complained of was not ambition\" passage \u2014 this is cut in the draft. The draft says: \"Office was more poisonous than priestcraft or pedagogy in proportion as it held more power; the poison was that of the will\u2014the distortion of sight...\" The source has \"but the poison he complained of was not ambition; he shared none of Cardinal Wolsey's belated penitence for that healthy stimulant, as he had shared none of the fruits; his poison was that of the will.\" The draft cuts the clarifying contrast and goes straight to \"the poison was that of the will.\" This is a broken pivot \u2014 the source explicitly contrasts \"not ambition\" against \"the will,\" but the draft just asserts \"the poison was that of the will\" without the contrast. But is a reader genuinely confused? The reader gets the point about what office's poison is; they just don't get the Wolsey contrast. Not genuinely confused.\n\n\"Adams could go back to his own pursuits which were slowly taking a direction. Perhaps they had no right to be called pursuits...\" \u2014 This passage is cut from the draft. The draft goes straight from the Mrs. Hay paragraph to \"The short session broke up the Washington circle.\" This is fine; no broken reference.\n\n\"He passed a summer of solitude contrasting sadly with the last at Surrenden\" \u2014 the draft includes this. The reader knows about Surrenden from earlier in ch.26 draft. Fine.\n\nNow checking Ch 027 draft:\n\n\"Vaguely seeking a clue, he wandered through the art exhibit, and stopped almost every day before St. Gaudens's General Sherman. Once St. Gaudens took him down to Amiens to see the cathedral.\" \u2014 In the source, between these two sentences there is a substantial passage: \"St. Gaudens himself was in Paris, putting on the work his usual interminable last touches... This summer his health was poor... Adams was not the best companion... he risked going now and then to the studio on Mont Parnasse to draw him out... and in return St. Gaudens sometimes let Adams go about in his company. Once St. Gaudens took him down to Amiens...\" The draft jumps directly from stopping before the Sherman statue to the Amiens trip. St. Gaudens is an authorized cut character, so this is an authorized residual seam \u2014 NOT a finding.\n\n\"The idea survived only as art. Adams asked himself whether he knew of any American artist who had ever insisted on the power of sex...\" \u2014 Source has \"Vaguely seeking a clue... Adams began to ponder, asking himself...\" The draft cuts the transition and \"Adams began to ponder.\" The sentence \"The idea survived only as art.\" is an abbreviated version of \"The idea survived only as art. There one turned as naturally as though the artist were himself a woman. Adams began to ponder...\" The draft's \"The idea survived only as art\" then immediately \"Adams asked himself\" works fine grammatically. Not a finding.\n\n\"The economies, like the discoveries, were absolute, supersensual, occult; incapable of expression in horse-power. X-rays had played no part whatever in man's consciousness...\" \u2014 Source between these has \"What mathematical equivalent could he suggest as the value of a Branly coherer? Frozen air, or the electric furnace, had some scale of measurement, no doubt, if somebody could invent a thermometer adequate to the purpose; but X-rays...\" The draft cuts this. The reader gets to \"X-rays had played no part\" without the setup explaining why various forces couldn't be measured. Is the reader confused? The X-rays sentence stands alone fine. Not a finding.\n\n\"Neither St. Gaudens nor Matthew Arnold at the Grande Chartreuse felt goddesses as power\u2014only as reflected emotion, human expression, beauty, purity, taste.\" \u2014 In the source: \"St. Gaudens at Amiens was hardly less sensitive to the force of the female energy than Matthew Arnold at the Grande Chartreuse. Neither of them felt goddesses as power\u2014only as reflected emotion...\" The draft changes this from a comparison structure to a flat listing. The source gloss \"St. Gaudens at Amiens was hardly less sensitive... than Matthew Arnold at the Grande Chartreuse\" establishes the analogy; the draft just says \"Neither St. Gaudens nor Matthew Arnold at the Grande Chartreuse felt goddesses as power.\" The draft sentence parses fine and the meaning is conveyed. Not a finding.\n\nNow let me check carefully for the broken pivot in Ch 026 regarding \"the poison\":\n\n\"Office was more poisonous than priestcraft or pedagogy in proportion as it held more power; the poison was that of the will\u2014the distortion of sight\u2014the warping of mind\u2014the degradation of tissue\u2014the coarsening of taste\u2014the narrowing of sympathy to the emotions of a caged rat.\"\n\nSource: \"Office was more poisonous than priestcraft or pedagogy in proportion as it held more power; but the poison he complained of was not ambition; he shared none of Cardinal Wolsey's belated penitence for that healthy stimulant, as he had shared none of the fruits; his poison was that of the will...\"\n\nThe draft removes \"but the poison he complained of was not ambition\" and goes directly to \"the poison was that of the will.\" This is a structural cut but the remaining clause still identifies what the poison was. A reader is not confused \u2014 they simply don't encounter the Wolsey contrast. Not a finding.\n\nLet me check the \"his\" in \"his obedience to the President's order was the gloomiest acquiescence he had ever smiled\":\n\nSource: \"Neither he nor any of the Surrenden circle made pretence of gladness at the new dignity for, with all his gaiety of manner and lightness of wit, he took dark views of himself, none the lighter for their humor, and his obedience to the President's order was the gloomiest acquiescence he had ever smiled.\"\n\nDraft: \"Neither he nor any of the Surrenden circle made pretence of gladness at the new dignity, and his obedience to the President's order was the gloomiest acquiescence he had ever smiled.\"\n\n\"his\" refers to Hay, established in preceding draft sentences. Fine.\n\n\"He shouldered his pack and started for home.\" In the source this clearly refers to Hay. In the draft, the antecedent for \"He\" is Hay (subject of preceding sentences). Then \"Adams had no mind to lose his friend...\" This is fine.\n\nLet me look more carefully at the transition in Ch 026: \"Adams went at once to Washington to find out what had become of Hay.\" This sentence appears after the La Farge paragraph ends with \"education made a step backwards towards Chartres.\" In the source, there's: \"Adams was glad to get him safely back to New York, January 15, 1900, while he himself went at once to Washington.\" The draft cuts La Farge (authorized) and the sentence becomes \"Adams went at once to Washington.\" The \"at once\" implies immediacy from something \u2014 from getting La Farge back to New York \u2014 but that's cut. However, \"at once\" can also just mean \"straightaway/soon.\" A reader would understand Adams went to Washington. Not a finding.\n\nAfter thorough checking, I find no valid structural coherence failures that survive the gate test and are not residues of authorized cuts.\n\n```json\n[]\n```",
+    "input_tokens": 23268,
+    "output_tokens": 2164,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 48.46323204040527,
+    "stop_reason": "end_turn"
+  }
+}

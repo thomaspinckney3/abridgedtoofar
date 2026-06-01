@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:11:16",
+  "key": "75422e50a028b7173f165c1edfed3fbd",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test strictly and checking against authorized cuts.\n\n---\n\n**Ch 009 draft \u2014 scan**\n\nThe draft is a tight compression of the source but follows it closely. Pronouns are well-anchored. No mid-scene jumps relative to the previous chapter (Ch 008 is not supplied, so I cannot test test 6 for Ch 009's opening). Logical pivots are preserved. No findings.\n\n---\n\n**Ch 010 draft \u2014 scan**\n\nWorking paragraph by paragraph:\n\n**P1 (\"He thought on May 12\u2026\"):** The subject \"He\" appears with no named antecedent in the preceding paragraph of the draft. The preceding draft paragraph ends with \"Palmerston \u2026 had already arranged the ceremony.\" Before that, \"the party landed at Liverpool.\" The last named human subject acting in first person was \"the private secretary.\" But \"He\" here is the private secretary / Henry Adams \u2014 the reader can track this. Not a finding.\n\n**P4 (\"By way of teaching him quickly, the Government sent out the new Minister to Russia, Cassius M. Clay, in the same ship\u2014a teacher having no equal though possibly some rivals.\"):** The source says \"Cassius Clay as a teacher having no equal though possibly some rivals.\" The draft's phrasing, by cutting the name to \"a teacher having no equal,\" creates a dangling appositive \u2014 but actually the draft does name \"Cassius M. Clay\" before the dash, so the appositive \"a teacher having no equal\" refers back to Clay. Parses fine. Not a finding.\n\n**\"The private secretary could not grumble to his chief. He never labored so hard to learn a language as he did to hold his tongue\u2026\"** This follows the Cassius Clay sentence with no transition. The source has an intervening passage: \"No young man, not in Government pay, could be asked to draw, from such lessons, any confidence in himself\u2026 At home, young men went to the war\u2026 in England they might grumble or not; no one listened. Above all, the private secretary could not grumble to his chief.\" The source's \"Above all\" establishes this as the culmination of a contrast (men at home grumble and die vs. those in England get no audience). The draft jumps directly from the Clay sentence to \"The private secretary could not grumble,\" losing the \"above all\" pivot \u2014 but the sentence still parses and makes sense on its own (a reader understands he cannot complain to his father/boss). Gate test: the reader understands the statement; it is merely less pointed. Not a finding under the gate test.\n\n**\"He thought on May 12 that he was going to a friendly Government and people\u2026\"** The subject \"He\" \u2014 the prior paragraph ended with \"Palmerston \u2026 had already arranged the ceremony.\" No named individual was the last subject. But throughout the chapter, \"the private secretary\" / \"Henry\" / \"he\" are the consistent focal subject; a reader would not be confused. Not a finding.\n\n**\"They telegraphed the news to the Minister, who was staying with Monckton Milnes at Fryston in Yorkshire. The moment was for him the crisis of his diplomatic career.\"** The source continues: \"How Mr. Adams took it, is told in the 'Lives' of Lord Houghton and William E. Forster who was one of the Fryston party.\" The draft drops this and moves directly to \"The moment was for him the crisis of his diplomatic career.\" The \"for him\" refers to the Minister/Mr. Adams \u2014 antecedent is clear. Not a finding.\n\n**\"He was mistaken\u2014of course!\"** No antecedent for \"He\" in the immediately preceding sentences. The prior paragraph ends: \"Portland Place at Christmas in a black fog was never a rosy landscape, but in 1861 the most hardened Londoner lost his ruddiness.\" Before that: \"At the moment of sharpest suspense, the Prince Consort sickened and died.\" The source has, before \"He was mistaken,\" a passage about the private secretary thinking he would not be private secretary much longer. The draft cut this setup. The source passage reads: \"The private secretary had one source of comfort denied to them\u2014he should not be private secretary long. He was mistaken\u2014of course!\" The draft drops the comfort/prediction sentence entirely and opens with \"He was mistaken\u2014of course!\" A reader has no referent for what prediction or expectation he was mistaken about.\n\nThis is a **broken pivot** (test 3): \"He was mistaken\u2014of course!\" is a reversal of an expectation that was cut. The exclamatory \"of course!\" marks this as the punch line of a two-part structure (prediction \u2192 reversal), and the prediction half was removed from the draft. A competent reader with no source access would genuinely ask: mistaken about what? The preceding paragraph discusses the Prince Consort's death and London's gloom; there is no stated belief or prediction by Adams in the draft that the \"of course!\" overturns. The reader is genuinely confused.\n\n**\"He was mistaken\u2014of course! He had been mistaken at every point of his education, and on this point he kept up the same mistake for nearly seven years longer, always deluded by the notion that the end was near.\"** The second sentence does clarify that \"this point\" was the belief that \"the end was near\" \u2014 so a reader can reconstruct that he expected to leave soon. The gate test is close: the second sentence partially rescues the meaning. However, \"on this point\" still requires \"this point\" to have been established, and it was not established in the draft \u2014 the reader must work backward from \"the end was near\" to reconstruct what he was mistaken about, with no prior statement of that belief in the draft. The damage is mild but real: the reader cannot parse what specific expectation he held without inferring it from the explanation that follows. I will flag this as a broken pivot, noting that the rescue in the second clause is incomplete.\n\n**\"The singular luck that took him to Fryston to meet the shock of the Trent Affair under the sympathetic eyes of Monckton Milnes and William E. Forster never afterwards deserted him.\"** \u2014 \"him\" refers to Minister Adams. \"The private secretary in May\" is mentioned \u2014 what did the private secretary overlook in May? The source explains: \"the hopeless position they were in if the American Minister made a mistake.\" The draft retains this. Parses.\n\n**\"They saw what the private secretary in May had overlooked, the hopeless position they were in if the American Minister made a mistake, and lost no time in expressing to all the world their estimate of the Minister's character.\"** \"The private secretary in May had overlooked\" \u2014 this refers back to the chapter's opening (May 13, recognition of Confederate belligerency), where the private secretary was naive. A reader can follow this. Not a finding.\n\n**Forster paragraph:** \"he took up the Union cause and made himself its champion, partly because of his Quaker anti-slavery convictions, and partly because it gave him a practical opening in the House.\" The source adds \"As a new member, he needed a field.\" Without this, \"it gave him a practical opening in the House\" is slightly thin but parses. Not a finding.\n\n**\"With such a manager, the friends of the Union began to take heart.\"** \"such a manager\" refers to Forster, described in the prior paragraph. Clear antecedent. Not a finding.\n\n**\"With four such allies, Minister Adams stood no longer quite helpless.\"** The four allies: Milnes, Forster, Bright, Cobden \u2014 all named in the draft. Clear. Not a finding.\n\n---\n\n**Summary of valid findings:**\n\n```json\n[\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"10\",\n    \"draft_passage\": \"He was mistaken\u2014of course! He had been mistaken at every point of his education, and on this point he kept up the same mistake for nearly seven years longer, always deluded by the notion that the end was near.\",\n    \"source_has\": \"The private secretary had one source of comfort denied to them\u2014he should not be private secretary long. He was mistaken\u2014of course! He had been mistaken at every point of his education, and on this point he kept up the same mistake for nearly seven years longer, always deluded by the notion that the end was near.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'He was mistaken\u2014of course!' is the reversal of a specific, stated prediction (that he would soon cease to be private secretary), but that prediction was cut from the draft; the exclamatory 'of course!' marks a two-part joke whose setup is missing, and while the following clause ('deluded by the notion that the end was near') partially rescues the meaning, the reader must infer backward what belief Adams held, because no such belief was stated anywhere in the preceding draft.\"\n  }\n]\n```",
+    "input_tokens": 24577,
+    "output_tokens": 2048,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 42.58494281768799,
+    "stop_reason": "end_turn"
+  }
+}

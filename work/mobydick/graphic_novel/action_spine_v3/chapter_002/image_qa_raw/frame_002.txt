@@ -1,0 +1,34 @@
+{
+  "frame_number": 2,
+  "valid": false,
+  "findings": [
+    {
+      "severity": "blocker",
+      "category": "readable_text",
+      "finding": "Legible lettering/details visible on the coins, violating the no readable text rule and modern-currency ambiguity.",
+      "visible_evidence": "Top coin in Ishmael’s gloved palm shows a distinct rim with engraved letters around a profile that are partially readable.",
+      "repair_prompt": "Render the coins as small, tarnished silver with indistinct, worn faces; remove any legible letters or numerals; avoid crisp modern edges; reduce contrast and detail so no text is readable."
+    },
+    {
+      "severity": "major",
+      "category": "prop_confusion",
+      "finding": "Carpet-bag reads as a modern patterned handbag with a structured body and repeating logo-like motif.",
+      "visible_evidence": "Bag under Ishmael’s arm has a rigid, rounded shape with uniform decorative patterning and hardware rings, resembling a contemporary designer purse.",
+      "repair_prompt": "Replace with a 19th-century small, soft-sided carpet-bag of mottled fabric and scuffed leather trim; no repeating logos or modern hardware; make it slouch slightly under the arm with muted, worn materials."
+    },
+    {
+      "severity": "minor",
+      "category": "character_continuity",
+      "finding": "Patched boots lack clearly visible toe patches specified for Ishmael.",
+      "visible_evidence": "Boots appear worn and scuffed but do not show distinct rough toe patches.",
+      "repair_prompt": "Add rough toe patches and evident sole wear to Ishmael’s dark leather ankle boots; keep the finish matte and battered."
+    },
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "Framing is closer to a full-body shot rather than the requested medium three-quarter view.",
+      "visible_evidence": "Ishmael is shown head-to-toe within the frame.",
+      "repair_prompt": "Reframe to a medium three-quarter view (crop above the knees) while keeping Ishmael studying a few coins and hugging the carpet-bag; preserve clean negative space at bottom-center for the caption."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:42:39",
+  "key": "6fa6328558d83536df58c0cb75ce2dea",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through both draft chapters systematically, applying each test to every sentence or passage that might be structurally damaged.\n\n---\n\n**Ch 039 draft \u2014 scan**\n\nThe chapter is largely well-compressed. One passage warrants examination:\n\n> \"Sometimes he saw Cassy, and now and then, when summoned to the house, the dejected Emmeline; but there was no time to commune with any.\"\n\nEmmeline has not been introduced in the draft at any prior point in Ch 039 or in any preceding draft chapter visible here. The source introduces her across several earlier chapters (she is purchased alongside Cassy in Ch 034). In the draft she simply appears here with no role, relationship, or appositive identifier. This is a potential **unglossed_name** issue. However, I need to check: is Emmeline on the authorized minor-character removal list? She is not. Is she a \"major or continuously present character\"? She is not a principal; she is a secondary character who has been present since Ch 034. The question is whether the immediately preceding draft chapters establish who she is.\n\nThe source of Ch 039 references Emmeline only in passing (\"caught a glimpse of the dejected form of Emmeline\") \u2014 no gloss there either, which implies the source assumed she was already established. In the draft's Ch 039, this is her first named appearance in this pair of consecutive chapters. A competent reader with no source access, reading only the draft, would not know who Emmeline is when her name first appears here. Later in Ch 039 draft, Tom advises Cassy to take \"Emmeline\" with her in escape \u2014 again no identifier. In Ch 040 draft, Emmeline is Cassy's companion throughout, central to the action, yet still never glossed.\n\nChecking whether prior draft chapters (not provided here) would have established her: given that she was purchased in Ch 034 and the authorized removals do not include her introduction, a reader coming through prior draft chapters should have encountered her. Since I can only evaluate the pair provided, and the source of Ch 039 does not gloss her either (treating her as already-known), I will not flag this \u2014 the gloss belongs to an earlier chapter pair, and its absence here is not a residue of compression in *this* pair.\n\n**Ch 039 draft \u2014 no valid findings.**\n\n---\n\n**Ch 040 draft \u2014 scan**\n\n**Passage 1:**\n> \"One of the overseers will be sure to see us.\"\n\nSource: \"Sambo or Quimbo will be sure to see us.\"\n\nSambo and Quimbo are authorized removals? Checking: Sambo and Quimbo are not on the authorized minor-character removal list. However, in the source, Cassy specifically names Sambo and Quimbo because they are Legree's enforcers who she knows will report the sighting \u2014 the whole plan depends on being *seen* and *chased*. The draft replaces \"Sambo or Quimbo\" with \"One of the overseers.\" This substitution is a paraphrase, not a structural break \u2014 a reader understands \"someone will see us\" without knowing those names. Not a finding.\n\n**Passage 2:**\n> \"Shall we shoot 'em, if can't cotch 'em?\" asked one, to whom the master brought out a rifle.\n\nSource: \"'Mas'r, shall we shoot 'em, if can't cotch 'em?' said Sambo, to whom his master brought out a rifle.\"\n\nThe speaker is \"Sambo\" in the source. In the draft, Sambo's name is replaced with \"one.\" The dialogue is attributed generically. However, since Sambo is not on the authorized removal list, this is a name-elision done during compression. The sentence still parses; the speaker is identified as \"one [to whom the master brought out a rifle]\" \u2014 a descriptor. Per the explicit rejection rule: \"A minor character is referred to only by a descriptor ('the neighbour', 'Myrtle's sister') and the descriptor is clear; proper-name continuity is not required when the name has been elided.\" Not a finding.\n\n**Passage 3 \u2014 the main candidate:**\n> \"It was not an underling, but Legree himself, pursuing with violent execrations.\"\n\nSource: \"It was not Sambo, however, but Legree, who was pursuing them with violent execrations.\"\n\nThe source contrasts \"not Sambo\" vs. \"Legree.\" The draft substitutes \"not an underling\" vs. \"Legree.\" This is a clean compression substitution; both versions parse and convey the same surprise. Not a structural damage \u2014 merely less specific. Not a finding.\n\n**Passage 4:**\n> \"At the sound, the feebler spirit of Emmeline gave way; she clutched Cassy's arm.\"\n\nThe source has: \"At the sound, the feebler spirit of Emmeline gave way; and, laying hold of Cassy's arm, she said, 'O, Cassy, I'm going to faint!'\" The draft compresses the action but then gives the dialogue on the next line. The sequence is intact. Not a finding.\n\n**General scan of Ch 040 draft for mid-scene jump (Test 6):**\n\nThe chapter opens with \"The garret of the house that Legree occupied was a great, desolate space\u2026\" \u2014 this is *introduced fresh* in Ch 040's source, and Ch 040's draft preserves this introduction. No mid-scene jump.\n\nThe word \"Emmeline\" first appears in Ch 040 draft at: *\"It suddenly occurred to Cassy to make use of the superstitious excitability, so great in Legree, for the purpose of her liberation and that of her fellow-sufferer, Emmeline.\"* This is actually a gloss \u2014 \"her fellow-sufferer, Emmeline\" \u2014 an appositive that tells the reader Emmeline is Cassy's fellow-sufferer. This is preserved from the source (\"her fellow-sufferer\") and the name is appended in apposition. A reader understands who Emmeline is from this construction. Not a finding.\n\n**No further structural damage found in Ch 040 draft.**\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 22435,
+    "output_tokens": 1438,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 32.85370492935181,
+    "stop_reason": "end_turn"
+  }
+}

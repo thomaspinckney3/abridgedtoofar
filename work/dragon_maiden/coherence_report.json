@@ -1,9 +1,15 @@
 {
   "book_id": "dragon_maiden",
   "pairs_checked": 15,
-  "findings_total": 0,
-  "class_counts": {},
-  "per_segment_counts": {},
+  "findings_total": 1,
+  "findings_raw_total": 1,
+  "findings_invalid": 0,
+  "class_counts": {
+    "unglossed_name": 1
+  },
+  "per_segment_counts": {
+    "017": 1
+  },
   "per_pair": [
     {
       "pair": "005-006",
@@ -51,7 +57,7 @@
     },
     {
       "pair": "016-017",
-      "count": 0
+      "count": 1
     },
     {
       "pair": "017-018",
@@ -66,5 +72,16 @@
       "count": 0
     }
   ],
-  "findings": []
+  "findings": [
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Cayden stood near the foot of the bed with Stephanie, and Darda waited behind them.",
+      "source_has": "Near the foot of the bed stood Cayden, and at his side was Stephanie. Darda stood behind them with her husband. — Stephanie is not glossed in the source either, but the source's prior chapters would have established her; the draft's prior chapter (Ch 016) takes place entirely off-world and introduces no castle characters beyond Darda and Cayden (by name, in a vision).",
+      "gate_test_answer": "A reader with no source access sees a bare proper name 'Stephanie' placed at a dragon lord's sickbed with no role, relationship, or descriptor supplied anywhere in this draft chapter or the immediately preceding draft chapter, leaving them genuinely unable to place who this person is.",
+      "segment_id": "017",
+      "pair": "016-017"
+    }
+  ]
 }

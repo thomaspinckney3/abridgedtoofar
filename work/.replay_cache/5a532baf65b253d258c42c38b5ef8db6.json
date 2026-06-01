@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:34:06",
+  "key": "5a532baf65b253d258c42c38b5ef8db6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying all seven tests and the gate test, while respecting the authorized cuts.\n\n---\n\n**Ch 031 draft \u2014 systematic check**\n\n- \"strangely heightened by Elijah's diabolical incoherences uninvitedly recurring to me\" \u2014 \"Elijah\" was introduced in a prior chapter (the wharves scene); this is a major-enough recurring named figure. Not a finding.\n- \"A grey Manxman, an old sepulchral man popularly invested with preternatural powers of discernment, insinuated that if ever Captain Ahab should be tranquilly laid out\u2026\" \u2014 The source has a two-part structure: first the Gay-Head Indian asserts a 40-year-old branding, *then* the Manxman's insinuation is presented as inferentially negating that. The draft cuts the Gay-Head Indian's claim entirely, retaining only the Manxman's statement \u2014 but without any \"yet\" / \"however\" or contrasting claim to negate, the Manxman's sentence stands on its own without structural damage; it simply asserts his view. The pivot in the source (\"Yet, this wild hint seemed inferentially negatived, by what a grey Manxman insinuated\") is gone, but the Manxman sentence in the draft is not a broken pivot \u2014 it has no connective implying a prior side. No finding.\n- The Gay-Head Indian quotation: \"Aye, he was dismasted off Japan,\" said an old Gay-Head Indian \u2014 in the source, this is attributed to \"the old Gay-Head Indian once,\" referring back to \"Tashtego's senior, an old Gay-Head Indian among the crew.\" The draft cuts Tashtego's senior / the Gay-Head Indian's prior introduction entirely. The draft sentence reads: *\"said an old Gay-Head Indian\"* \u2014 this is an indefinite (\"an\"), so the reader is not sent looking for a previously established person. The descriptor \"old Gay-Head Indian\" is self-identifying. Not a finding.\n- Everything else in Ch 031 draft parses cleanly and sequentially.\n\n**Ch 032 draft \u2014 systematic check**\n\n- Stubb is introduced in Ch 032 draft with \"Stubb came up from below\" \u2014 the source at that moment says \"Stubb, the old second mate.\" The draft omits \"the old second mate.\" Is Stubb a \"major or continuously present character\"? Yes \u2014 he is one of the three named mates already mentioned in Ch 031 draft (\"the three chief officers of the ship, the mates\"). Not a finding.\n- \"They say his pillow's hot of a morning.\" \u2014 In the source, this is attributed to Dough-Boy the steward (\"Didn't that Dough-Boy, the steward, tell me\u2026\"). The draft replaces this with an impersonal \"They say,\" so there is no dangling reference to a removed character. The authorized removal of Dough-Boy is handled. Not a finding.\n- \"what does he go into the after hold for, every night?\" \u2014 In the source this is \"every night, as Dough-Boy tells me he suspects.\" Draft removes the attribution. Again, properly handled. Not a finding.\n- All connectives in Ch 032 draft are intact and their two sides are present.\n- No mid-scene jumps between Ch 031 draft and Ch 032 draft.\n- No unglossed minor proper names surviving from authorized cuts.\n\n---\n\nAfter exhaustive checking, no sentence in either draft chapter fails any of the seven tests in a way that would genuinely confuse a reader without source access. Every compression either uses indefinite articles, self-identifying descriptors, or simply elides rather than stranding a referent.\n\n```json\n[]\n```",
+    "input_tokens": 7885,
+    "output_tokens": 866,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.663881063461304,
+    "stop_reason": "end_turn"
+  }
+}

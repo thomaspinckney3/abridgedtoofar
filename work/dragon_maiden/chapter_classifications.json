@@ -1,19 +1,19 @@
 {
   "001": {
-    "status": "extradiegetic",
-    "reason": "Title page only, no narrative content"
+    "status": "toc_fragment",
+    "reason": "title page only, 13 words, no prose"
   },
   "002": {
     "status": "toc_fragment",
-    "reason": "Table of contents listing"
+    "reason": "table-of-contents listing, no prose body"
   },
   "003": {
     "status": "extradiegetic",
-    "reason": "Copyright and legal notice"
+    "reason": "copyright and publisher notice"
   },
   "004": {
     "status": "extradiegetic",
-    "reason": "Author's promotional note and newsletter links"
+    "reason": "author's promotional note and newsletter links"
   },
   "005": {
     "status": "diegetic",
@@ -77,22 +77,22 @@
   },
   "020": {
     "status": "diegetic",
-    "reason": "Sneak peek excerpt is narrative fiction content"
+    "reason": "sneak peek contains real narrative story prose"
   },
   "021": {
     "status": "extradiegetic",
-    "reason": "Author's review request to readers"
+    "reason": "author request for review, promotional apparatus"
   },
   "022": {
     "status": "extradiegetic",
-    "reason": "Newsletter promotional material"
+    "reason": "newsletter promotional blurb, no narrative"
   },
   "023": {
     "status": "extradiegetic",
-    "reason": "Author's series bibliography list"
+    "reason": "series backlist bibliography, no narrative"
   },
   "024": {
     "status": "extradiegetic",
-    "reason": "Author biographical blurb"
+    "reason": "author biographical blurb"
   }
 }

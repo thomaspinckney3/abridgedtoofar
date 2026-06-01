@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:41:13",
+  "key": "e89806cdc5dd6a565f35a27c4ff03a39",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying all seven tests and the gate test.\n\n---\n\n**Ch 034 draft \u2014 weighing-room passage:**\n\n> \"Legree was there, busily conversing with his two drivers, Sambo and Quimbo; there was ugly talk of 'breakin' in' hands that had 'notions,' and a brutal jest that a soft-spoken fellow should get his hand in by flogging a sick wench. 'I do the weighing!' said Legree, when there was mention that certain baskets had been filled by friendly hands.\"\n\nThe source has a full dramatic scene: Sambo explicitly names Tom and Lucy, Legree explicitly assigns Tom the task of flogging Lucy as a \"practice,\" Quimbo laughs, and Legree's line \"I do the weighing!\" is a response to Sambo's specific observation that Tom, Cassy, and others filled Lucy's basket. In the draft, this is compressed into reported summary. Let me check whether the compression creates a structural break downstream.\n\nThe next paragraph has Legree say to Tom: *\"You see, I telled ye I didn't buy ye jest for the common work; I mean to promote ye, and make a driver of ye; and tonight ye may jest as well begin to get yer hand in. Now, ye jest take this yer gal and flog her.\"*\n\nThe phrase **\"I telled ye\"** \u2014 in the source, Legree had previously told Tom about his promotion plans. In the draft of Ch 034, has Legree ever told Tom this? Scanning the draft: Legree's plan to make Tom an overseer is described narratively (\"He had purchased Tom with a view of making him, in time, a sort of overseer\"), but Legree never says this to Tom directly in the draft. The source also has this as narrator exposition only at that point. So \"I telled ye\" refers to something not shown in the draft either \u2014 but this is true in the source too (it's a character claim, not necessarily a scene shown to the reader). This is not a structural break caused by compression.\n\n**Ch 034 \u2014 \"Just then one of the drivers, Sambo, came up.\"**\n\nSambo is on the authorized removal list. But wait \u2014 Sambo appears extensively in Ch 033 (both source and draft). He is introduced by name in Ch 033 draft: *\"How now, Sambo!\" he said to a ragged fellow officious in his attentions.* And later: *\"Ho yo!\" said Sambo to the mulatto woman...* and *\"I say, Sambo, you go to spilin' the hands...\"* So Sambo is well-established in the preceding draft chapter. The appositive \"one of the drivers, Sambo\" in Ch 034 draft is fine \u2014 it even re-identifies him. No issue.\n\n**Ch 034 \u2014 \"She made no answer.\"**\n\nIn the source, after Sambo asks the mulatto woman \"what a cuss yo name?\" she answers \"Lucy.\" In the draft, the name exchange is cut (Lucy is an authorized removal), and \"She made no answer\" replaces it. Sambo then says \"Wal, you my woman now\" \u2014 in the source \"Wal, Lucy, yo my woman now.\" This is a clean authorized cut. No structural break.\n\n**Ch 034 \u2014 the mulatto woman's exhaustion scene and Sambo's identification:**\n\nIn the draft: *\"Just then one of the drivers, Sambo, came up. He seemed to have a special spite against this woman.\"*\n\nIn the source, the \"special spite\" is explained later (in the weighing-room scene) as Sambo's resentment that the woman refused to be \"his woman.\" In the draft, the weighing-room dialogue about this is compressed into summary. Does \"special spite\" dangle? The source explains it in the weighing-room scene; the draft compresses that scene. But \"special spite\" is a narratorial observation that reads fine on its own \u2014 a reader doesn't need the cause explained to understand that the driver singles her out. Not a structural break.\n\n**Ch 034 \u2014 \"The mild, smooth voice and habitually respectful manner had made Legree think Tom cowardly and easy to subdue.\"**\n\nSource: *\"Tom had a remarkably smooth, soft voice, and a habitually respectful manner, that had given Legree an idea that he would be cowardly, and easily subdued.\"* Draft rewords this slightly. This is fine.\n\n**Ch 033 \u2014 overall check:**\n\nThe draft of Ch 033 is clean. All references parse. The authorized digression removal (the \"picking cotton isn't hard work\" Inquisition comparison) is handled by a brief retained sentence: *\"Work, not in itself the hardest, was turned to torment by being pressed hour after hour with unvarying, unrelenting sameness, without even the consciousness of free-will to take from its tediousness.\"* This stands alone fine.\n\n**Ch 034 \u2014 \"I telled ye I didn't buy ye jest for the common work\"**\n\nAs noted, in the draft the narrator told us Legree planned to make Tom an overseer, but Legree never told Tom this in any scene shown in the draft. However, this is equally true in the source \u2014 Legree's plan is only revealed to the reader through narrator exposition, not in dialogue to Tom. So the line \"I telled ye\" refers to something presumably off-page in both versions. Not a compression-caused break.\n\n**Ch 034 \u2014 Cassy's name introduction:**\n\n*\"Didn't mean no harm, Misse Cassy!\"* \u2014 The driver speaks this name. This is the first time the name \"Cassy\" appears in the draft (the chapter is titled \"Cassy\"). Shortly after: *\"The person who had been called Misse Cassy now came forward...\"* The chapter title and this phrase together orient the reader to who Cassy is. This is fine.\n\n**Ch 034 \u2014 summary of weighing-room conversation:**\n\n> \"there was ugly talk of 'breakin' in' hands that had 'notions,' and a brutal jest that a soft-spoken fellow should get his hand in by flogging a sick wench.\"\n\nThis is summary that prepares the reader for Legree's direct order to Tom. Does the phrase \"a soft-spoken fellow\" refer to Tom? Yes \u2014 Tom has been characterized as having a mild, smooth voice. This is inferrable. Not a structural break.\n\n**Final check \u2014 \"I do the weighing!\"**\n\nIn the draft this becomes: *\"'I do the weighing!' said Legree, when there was mention that certain baskets had been filled by friendly hands.\"* In the source, this is Legree's pointed refusal to acknowledge that Tom, Cassy, and others padded Lucy's basket \u2014 he controls the numbers. The draft's paraphrase preserves this meaning. Fine.\n\nAfter exhaustive review, I find no valid structural coherence failures in either draft chapter. The compression is occasionally abrupt but never leaves a sentence non-parseable, a pronoun unanchored, a pivot broken, a gloss missing, a dialogue unattributed, a scene mid-jumped, or a name unglossed in ways that would genuinely confuse a reader without source access.\n\n```json\n[]\n```",
+    "input_tokens": 18547,
+    "output_tokens": 1677,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 36.81597185134888,
+    "stop_reason": "end_turn"
+  }
+}

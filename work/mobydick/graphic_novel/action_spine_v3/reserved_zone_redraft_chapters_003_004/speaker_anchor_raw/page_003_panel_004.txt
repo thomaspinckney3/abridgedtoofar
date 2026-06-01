@@ -1,0 +1,21 @@
+{
+  "page_number": 3,
+  "anchors": [
+    {
+      "panel_number": 4,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "With what?",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 656.4, "y": 816.0},
+      "mouth_point_ratio": {"x": 0.585, "y": 0.582},
+      "tail_target_point": {"x": 614.9, "y": 793.5},
+      "tail_target_point_ratio": {"x": 0.548, "y": 0.566},
+      "face_box": {"x1": 583.4, "y1": 687.0, "x2": 768.6, "y2": 897.3},
+      "evidence": "Central figure looking up-left with mouth slightly open; no other faces visible.",
+      "reason": "Speaker region is center; balloon zone is top_left so tail target offset up-left from mouth, just outside left edge of lips. Face box bounds the visible head to avoid covering it."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Coin purse reads as a larger soft pouch without a visible clasp, risking confusion with a small bag.",
+          "visible_evidence": "Ishmael holds a floppy brown pouch with both hands; no metal clasp is visible and the scale appears larger than a small coin purse.",
+          "repair_prompt": "Refine the coin purse to a small, worn brown leather clasp purse that fits in one hand; add a simple metal clasp and suggest a few coins inside. Avoid drawstrings or sack-like proportions while keeping the rest of the scene unchanged."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Background crowd on the left pier is denser than the specified 'few distant indistinct figures.'",
+          "visible_evidence": "Multiple small figures line the left waterfront, creating a busier backdrop than called for.",
+          "repair_prompt": "Reduce the number of background pedestrians to just a few faint, indistinct silhouettes along the rail far behind Ishmael; lower their contrast and detail so they don't compete with the subject."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is cluttered and high-contrast, leaving no clean area for lettering.",
+          "visible_evidence": "A large coil of tarred rope and a mooring post sit directly in the bottom-center, with additional ropes and water reflections crossing that area.",
+          "repair_prompt": "Recompose to leave clean negative space in the bottom-center for a caption. Move the rope coil, mooring post, and any ropes away from that zone; use low-detail wet deck planks or softly blurred water with subdued contrast. Keep Ishmael beside the rigged sailing ship, same 1840s wardrobe, hand on tarred rope, background sailors indistinct, and no readable text."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Framing reads closer to a full/medium-long shot rather than the specified medium shot.",
+          "visible_evidence": "Ishmael is shown nearly head-to-toe with ample dock and ship visible.",
+          "repair_prompt": "Crop or reframe to a true medium shot (roughly waist-to-chest up) of Ishmael beside the ship’s rail, retaining his hand on the tarred rope and the rigging as context."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael’s posture appears relaxed with one hand in pocket, not clearly showing squared shoulders in resolve.",
+          "visible_evidence": "His torso leans slightly and the shoulders are not visibly squared; left hand is in his coat pocket.",
+          "repair_prompt": "Adjust pose so Ishmael stands more upright with squared shoulders and a resolute stance while looking toward the ship; keep hand contact with the tarred rope."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Background people and a horse-drawn carriage are visible along the quay, adding unsupported figures/animals when only Ishmael should be visible.",
+          "visible_evidence": "Left side of the frame shows small human figures and a horse with a carriage on the street behind the pier.",
+          "repair_prompt": "Re-render the wide shot along the pier with only Ishmael visible; remove or reduce to indistinct silhouettes any background pedestrians and vehicles. No animals. Preserve 1840s harbor architecture, wooden spiles with coiled hemp ropes, choppy water, pale light, and clear negative space at bottom-center for the caption."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Birds are visible in the sky, adding unsupported animals.",
+          "visible_evidence": "Several small birds are flying above the harbor on the right side of the sky.",
+          "repair_prompt": "Remove birds from the sky while retaining the open horizon, distant ships, and overall weathered harbor mood. Keep the bottom-center caption space clear."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

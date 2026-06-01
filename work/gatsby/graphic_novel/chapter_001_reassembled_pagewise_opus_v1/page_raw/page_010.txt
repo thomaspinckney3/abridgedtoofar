@@ -1,0 +1,262 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI New York and Midwest",
+    "line_and_color": "Clean ink linework with muted Art Deco palette: dusky blues, warm sepia, cream, and faded gold accents",
+    "lighting": "Soft window light and lamp glow indoors; overcast melancholy outdoors; selective warm highlights on the narrator",
+    "lettering": "Hand-drawn rectangular caption boxes in cream with charcoal type; sparing speech balloons reserved for staged exchanges",
+    "recurring_motifs": [
+      "reserved judgement gaze",
+      "father's remembered voice",
+      "distant seismograph-like ripples of light",
+      "manuscript pages and writing desk",
+      "weather-beaten bungalow at West Egg",
+      "two eggs of land across a courtesy bay",
+      "Georgian Colonial mansion at East Egg",
+      "burning gardens and sundials on a running lawn",
+      "white curtains billowing like flags",
+      "two young women buoyed on an anchored couch",
+      "candles snuffed on a rosy porch",
+      "bruised knuckle",
+      "ringing telephone interruption",
+      "crimson room blooming with light",
+      "magazine tossed on a side table"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neatly combed light-brown hair, attentive eyes",
+      "costume": "Light summer suit and tie, soft collar",
+      "expression_range": "Quiet attentiveness shifting to subtle unease, then polite social farewell",
+      "continuity_note": "Closes the front-porch confidence with Daisy, then follows her back into the lit library"
+    },
+    {
+      "name": "Daisy Buchanan",
+      "visual_anchor": "Slender young woman with soft bobbed hair, luminous face",
+      "costume": "White summer dress",
+      "expression_range": "Bitter scorn, then a knowing smirk; later breezy hostess teasing",
+      "continuity_note": "Briefly performs cynicism, then resumes the charming hostess on returning to the library"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Sturdy straw-haired man, hard mouth, arrogant shining eyes",
+      "costume": "Riding clothes: jodhpurs, glistening boots, thin coat",
+      "expression_range": "Bored attentiveness while listening, mild approval after Jordan exits",
+      "continuity_note": "Settled on the long couch in the crimson library as Jordan reads to him"
+    },
+    {
+      "name": "Jordan Baker",
+      "visual_anchor": "Slender girl with erect cadet carriage, chin tipped up",
+      "costume": "White summer dress",
+      "expression_range": "Pleasingly contemptuous, languid, then polite stage-yawn farewell",
+      "continuity_note": "Reading aloud from a magazine; rises, announces bedtime, and exits up the stairs"
+    }
+  ],
+  "page": {
+    "page_number": 10,
+    "page_summary": "Still on the rosy front porch, Daisy finishes her cynical confession with a boast of sophistication; Nick registers a faint smirk and senses the whole performance was rigged. They rejoin Tom and Jordan in the crimson library, where Jordan has been reading aloud; Jordan closes the magazine, announces bedtime, and exchanges parting words with Nick while Daisy teasingly threatens to matchmake them. Tom offers a flat verdict as Jordan disappears upstairs.",
+    "source_unit_ids": [211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242],
+    "source_word_range": [3673, 4070],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "On the dim porch Daisy declares her weary sophistication, eyes flashing Tom-like scorn.",
+        "shot": "medium",
+        "image_prompt": "Medium shot on a dim rosy front porch of an East Egg Georgian Colonial at twilight, a slender young woman in a white summer dress seated on a wicker settee, leaning forward with one hand spread, eyes flashing with scornful laughter, head tilted back slightly; snuffed candle on a low table beside her trailing a thin curl of smoke; deep dusky blues and warm sepia, muted Art Deco palette, clean ink linework; leave clear empty space across the top of the panel and a smaller clear area at the bottom right for lettering; no text, no letters, no signs, no captions, no speech balloons in the art.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p10c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.55, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration",
+            "reading_order": 1
+          },
+          {
+            "id": "p10d1",
+            "kind": "speech",
+            "zone": "bottom_right",
+            "box": {"x": 0.55, "y": 0.7, "w": 0.4, "h": 0.22},
+            "speaker": "Daisy",
+            "speaker_side": "right",
+            "reserved_for": "Daisy's sophisticated boast",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Everything was terrible, she said—the most advanced people thought so, and she knew. She had been everywhere, seen everything, done everything.",
+        "dialogue": [
+          {"speaker": "Daisy", "text": "Sophisticated—God, I'm sophisticated!"}
+        ],
+        "sfx": [],
+        "continuity_notes": "Daisy still on the wicker settee from prior page; Nick is implied off-panel beside her as listener.",
+        "source_unit_ids": [211, 212, 213, 214, 215],
+        "source_word_range": [3673, 3725],
+        "source_anchor": "Daisy's 'everything's terrible' monologue capped by 'Sophisticated—God, I'm sophisticated!'",
+        "adaptation_note": "Compress four short source beats into a single staged outburst panel; Daisy's spoken climax goes in a balloon, the build-up rides in the caption."
+      },
+      {
+        "panel_number": 2,
+        "beat": "The moment her voice stops Nick reads insincerity; she gives him a small smirk, as if to a fellow member of a secret society.",
+        "shot": "close",
+        "image_prompt": "Close two-shot on the same dim porch, the young woman in white now half-turned toward a lean young man in a light summer suit and soft collar seated beside her on the wicker settee; her face wears a knowing, almost smug little smirk, lips closed and slightly curled; he sits very still, attentive eyes narrowed faintly with unease, hands resting on his knees; the snuffed candle behind them, lit library window glowing faintly in the deep background through a doorway; muted dusky blues and warm cream highlights, clean ink linework; leave a wide clean band along the bottom of the panel for lettering and a smaller clean strip in the upper right; no text, no letters, no signs, no captions, no speech balloons in the art.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p10c2a",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.5, "y": 0.05, "w": 0.45, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "narration on insincerity",
+            "reading_order": 1
+          },
+          {
+            "id": "p10c2b",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.06, "y": 0.74, "w": 0.88, "h": 0.2},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "narration on the smirk and secret society",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "bottom_center",
+        "caption": "The instant her voice broke off, I felt the basic insincerity of what she had said—as if the whole evening had been a trick to exact some contributory emotion from me. Then she looked at me with an absolute smirk, as if asserting her membership in a rather distinguished secret society to which she and Tom belonged.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Nick now visibly beside Daisy; this is the silent registration moment, no dialogue.",
+        "source_unit_ids": [216, 217, 218],
+        "source_word_range": [3726, 3810],
+        "source_anchor": "Nick's recognition of Daisy's insincerity and the smirk of the secret society",
+        "adaptation_note": "Abstract interior observation anchored to a concrete two-shot of Daisy's smirk and Nick's stilled reaction; two captions split the long sentence cleanly."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Returning inside the crimson library, Nick and Daisy enter to find Jordan reading aloud to Tom on the long couch; she lifts a hand, closes the magazine, and stands.",
+        "shot": "wide",
+        "image_prompt": "Wide interior of a crimson-walled library blooming with warm lamp light, a long couch centered, a sturdy straw-haired man in jodhpurs and glistening boots lounging at one end with one arm draped along the back, a slender young woman with erect cadet carriage in a white dress seated at the other end holding an open magazine, hand lifted in a small 'wait' gesture; in the foreground left, the lean young man in the light suit and the slender woman in white have just entered through an archway and paused; rich crimson, faded gold, and warm sepia palette, clean Art Deco ink linework; keep the upper portion of the panel clear for caption space and reserve a clear pocket near the seated reader on the right for one short speech balloon; no text, no letters, no signs, no captions, no speech balloons in the art.",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "p10c3",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.55, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration about the crimson room and reading",
+            "reading_order": 1
+          },
+          {
+            "id": "p10d3",
+            "kind": "speech",
+            "zone": "top_right",
+            "box": {"x": 0.62, "y": 0.06, "w": 0.33, "h": 0.16},
+            "speaker": "Jordan",
+            "speaker_side": "right",
+            "reserved_for": "Jordan closing the reading",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Inside, the crimson room bloomed with light. Tom and Miss Baker sat at either ends of the long couch, and she had been reading aloud from the Saturday Evening Post—murmurous, uninflected, a soothing tune. When we came in, she held us silent a moment with a lifted hand.",
+        "dialogue": [
+          {"speaker": "Jordan", "text": "To be continued… in our very next issue."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Transition from porch to library; Tom and Jordan resume from their off-page library retreat established earlier.",
+        "source_unit_ids": [219, 220, 221, 222, 223],
+        "source_word_range": [3811, 3896],
+        "source_anchor": "Crimson library, Jordan reading from the Saturday Evening Post, magazine tossed aside",
+        "adaptation_note": "Three-figure wide to re-establish the foursome; only Jordan speaks aloud, so only one balloon is staged on her side."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Jordan announces bedtime and heads upstairs; Nick recognizes her from rotogravures; goodbyes are exchanged, Daisy teases a future match, and Tom delivers a flat verdict after she's gone.",
+        "shot": "wide",
+        "image_prompt": "Wide interior of the crimson library viewed toward a staircase at right, the slender young woman with erect carriage in a white dress on the lower steps, one hand on the banister, head tipped back over her shoulder in a polite farewell; in the middle ground the lean young man in the light summer suit stands near a side table where a magazine has been tossed; the slender woman in white stands close beside him, one arm lightly threaded through his elbow with a mischievous expression; at far left the sturdy straw-haired man in jodhpurs leans on the back of the long couch watching Jordan go, mouth set in a flat appraisal; warm lamp light, crimson walls, faded gold accents, clean ink linework; reserve a clear band across the top of the panel for narration and three small clear pockets near each speaker for short balloons in left-to-right reading order; no text, no letters, no signs, no captions, no speech balloons in the art.",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "p10c4",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.05, "y": 0.04, "w": 0.9, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "narration recognizing Jordan and Tom's closing line",
+            "reading_order": 1
+          },
+          {
+            "id": "p10d4a",
+            "kind": "speech",
+            "zone": "bottom_center",
+            "box": {"x": 0.34, "y": 0.62, "w": 0.3, "h": 0.16},
+            "speaker": "Daisy",
+            "speaker_side": "center",
+            "reserved_for": "Daisy's matchmaking tease",
+            "reading_order": 2
+          },
+          {
+            "id": "p10d4b",
+            "kind": "speech",
+            "zone": "bottom_right",
+            "box": {"x": 0.66, "y": 0.62, "w": 0.3, "h": 0.18},
+            "speaker": "Jordan",
+            "speaker_side": "right",
+            "reserved_for": "Jordan's good night from the stairs",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Ten o'clock—time, she said, for a good girl to go to bed. Daisy explained Jordan was playing at Westchester tomorrow. I knew her now: that pleasingly contemptuous face had looked out at me from rotogravures of the sporting life, attached to some critical, unpleasant story I had long forgotten. After she'd gone, Tom said, 'She's a nice girl.'",
+        "dialogue": [
+          {"speaker": "Daisy", "text": "Come over often, Nick—I'll fling you together."},
+          {"speaker": "Jordan", "text": "Good night! I haven't heard a word."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Jordan exits upstairs; Tom's closing remark is reported in caption rather than balloon since he is positioned away from the speaking pair to keep reading order clean.",
+        "source_unit_ids": [224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242],
+        "source_word_range": [3897, 4070],
+        "source_anchor": "Jordan's bedtime exit, identification as the golfer, Daisy's matchmaking, Tom's 'She's a nice girl'",
+        "adaptation_note": "Densest source block of the page compressed into one wide farewell tableau; two balloons used for the staged exchange between Daisy (center) and Jordan (right on stairs), with Tom's brief verdict and Nick's recognition carried in caption to keep the reading order clean."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242],
+    "last_scene": "In the crimson East Egg library, Jordan has retired upstairs after reading aloud, Daisy has teasingly proposed matching Nick with her, and Tom has flatly approved Jordan as a nice girl. Nick has just recognized Jordan as the golfer of the rotogravure pictures.",
+    "active_characters": [
+      "Nick Carraway",
+      "Daisy Buchanan",
+      "Tom Buchanan",
+      "Jordan Baker"
+    ],
+    "character_updates": [
+      "Nick now consciously identifies Jordan Baker as the celebrated golfer attached to a vague unpleasant rumor",
+      "Daisy's brief porch cynicism is sealed by a knowing smirk Nick reads as performance",
+      "Jordan exits the immediate scene, going upstairs to bed before the Westchester tournament",
+      "Tom returns to a possessive, approving stance toward Jordan after she leaves the room"
+    ],
+    "visual_motifs": [
+      "snuffed candles on a rosy porch",
+      "wicker settee in deep gloom",
+      "crimson room blooming with light",
+      "long couch with a figure at each end",
+      "magazine tossed aside on a side table",
+      "lit staircase farewell",
+      "Daisy's knowing smirk"
+    ],
+    "next_page_needs": [
+      "Move Nick from the library out to his car and back across the bay toward West Egg",
+      "Stage Nick's first sighting of Gatsby alone on his lawn, arms reaching toward the green light, face withheld",
+      "Carry forward the unease seeded by Daisy's smirk and Tom's possessive calm into Nick's drive home"
+    ]
+  }
+}

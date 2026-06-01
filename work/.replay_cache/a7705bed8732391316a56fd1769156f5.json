@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:15:53",
+  "key": "a7705bed8732391316a56fd1769156f5",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"He had just come up from the South Seas with John La Farge. Adams would rather, as choice, have gone back to the east\",\n    \"source_has\": \"He had just come up from the South Seas with John La Farge, who had reluctantly crawled away towards New York to resume the grinding routine of studio-work at an age when life runs low.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft introduces La Farge and then immediately pivots to Adams wanting to 'go back to the east' with no connective tissue explaining why La Farge is mentioned at all \u2014 the source's clause explaining La Farge's departure was the logical bridge that made Adams's contrasting wish coherent. La Farge is not an authorized removal.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Fate was kind on that voyage. Rudyard Kipling, on his wedding trip to America, dashed over the passenger his exuberant fountain of gaiety and wit\u2014as though playing a garden hose on a thirsty and faded begonia.\",\n    \"source_has\": \"Rudyard Kipling, on his wedding trip to America, thanks to the mediation of Henry James, dashed over the passenger his exuberant fountain of gaiety and wit\",\n    \"gate_test_answer\": \"A reader is not seriously confused here \u2014 the sentence still parses and the meeting is comprehensible without Henry James's mediation. This is merely a less-ornamented version. NOT a valid finding.\"\n  },\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"and when one day La Farge asked whether there might not still be room for something simple in art, Adams shook his head.\",\n    \"source_has\": \"when one day, after much reflection, John La Farge asked whether there might not still be room for something simple in art\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft has not named La Farge in the Paris/London passage at all \u2014 the previous mention of La Farge was in the London hospital paragraph about the South Seas trip, and the Paris gallery scene introduces no interlocutor. 'La Farge' here has no established presence in the draft's Paris context, making the reference a dangling name whose presence in this scene was set up only in source material that was not carried over.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"What roused in Adams's mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\",\n    \"source_has\": \"Adams's opinion of politics and politicians, as he frankly admitted, lacked enthusiasm... but what roused in his mind more rebellion was the patience and good-nature with which Hay allowed himself to be used.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'more rebellion' is a comparative ('more than what?') whose baseline \u2014 Adams's general opinion of politicians \u2014 was cut from the draft. The word 'more' dangles without the first term of comparison, making the sentence read as one side of a missing two-sided structure.\"\n  }\n]\n```",
+    "input_tokens": 26521,
+    "output_tokens": 812,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 19.609715223312378,
+    "stop_reason": "end_turn"
+  }
+}

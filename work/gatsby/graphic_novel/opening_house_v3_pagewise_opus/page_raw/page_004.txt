@@ -1,0 +1,204 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age; muted period authenticity in dress and interiors",
+    "line_and_color": "Clean inked linework with soft watercolor washes; sepia and dusk-blue palette with cream paper tones",
+    "lighting": "Warm interior lamplight against cool window light; long shadows suggesting memory and retrospection",
+    "lettering": "Hand-lettered serif captions in cream caption boxes with thin black borders; minimal balloons",
+    "recurring_motifs": [
+      "a single desk lamp",
+      "open notebook and pen",
+      "window framing distant water",
+      "father's photograph on the desk",
+      "stack of red-and-gold finance volumes"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, early thirties, neatly parted light-brown hair, thoughtful gray eyes, narrow jaw",
+      "costume": "White shirt with rolled sleeves, loosened dark tie, suspenders, high-waisted wool trousers",
+      "expression_range": "Curious, wry, quietly observant",
+      "continuity_note": "Stepping outside his bungalow to take in the geography of West Egg for the first time."
+    }
+  ],
+  "page": {
+    "page_number": 4,
+    "page_summary": "Nick steps out of his bungalow onto the lawn and takes in his surroundings: he surveys the twin eggs of Long Island across the bay, then turns to find his small house dwarfed by Gatsby's colossal mansion next door. The abstract geography is anchored to his physical walk from doorstep to the property line, where he first lays eyes on the neighbor he does not yet know.",
+    "source_unit_ids": [35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "source_word_range": [973, 1238],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick steps out of his bungalow door onto the lawn, shading his eyes toward the Sound; the two eggs of Long Island are visible as low promontories across a glittering courtesy bay.",
+        "shot": "establishing",
+        "image_prompt": "Wide establishing view from a low grassy bluff on Long Island in 1922. Foreground: Nick Carraway in white rolled-sleeve shirt, suspenders, loosened tie, standing on the lawn outside a modest weathered bungalow, one hand shading his eyes, gazing across calm blue-grey water. Middle distance: a domesticated salt-water bay separating two matching tongues of land jutting east, dotted with estate rooftops and trees. Sepia and dusk-blue watercolor wash, clean inked linework, warm morning light. Leave the entire top third of the panel as open pale sky for caption boxes. No text, no signs, no labels.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4c1a",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.5, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "It was on that slender riotous island east of New York...",
+            "reading_order": 1
+          },
+          {
+            "id": "p4c1b",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.55, "y": 0.05, "w": 0.41, "h": 0.2},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "Two enormous eggs jut into Long Island Sound.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "It was on that slender riotous island which extends itself due east of New York—where, twenty miles from the city, a pair of enormous eggs jut into the great wet barnyard of Long Island Sound.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "First geographic reveal anchored to Nick's vantage from his lawn.",
+        "source_unit_ids": [35, 36],
+        "source_word_range": [973, 1041],
+        "source_anchor": "slender riotous island... a pair of enormous eggs",
+        "adaptation_note": "Geography anchored to Nick's line of sight, not a detached aerial map."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Closer on Nick at the property's edge; he glances left across the bay toward the manicured estates of East Egg, contrasting them with his own side.",
+        "shot": "medium",
+        "image_prompt": "Medium shot of Nick Carraway in three-quarter profile standing at a low wooden fence at the edge of a lawn, looking left across a narrow bay. Across the water on the far egg: polished white mansions, clipped hedges, a flagpole. On Nick's side: scrappier hedges and a weathered bungalow corner. Soft sepia and dusk-blue wash, clean inked lines, mid-morning light. Reserve the upper-left quadrant as empty sky for caption. No text or signage anywhere.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4c2a",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.55, "h": 0.22},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Their dissimilarity in every particular except shape...",
+            "reading_order": 1
+          },
+          {
+            "id": "p4c2b",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.45, "y": 0.78, "w": 0.5, "h": 0.17},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "I lived at West Egg, the less fashionable of the two.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "To the wingless, the more interesting phenomenon was their dissimilarity in every particular except shape and size. I lived at West Egg—the, well, the less fashionable of the two.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Nick remains on his own lawn; East Egg seen across water introduces next page's destination.",
+        "source_unit_ids": [37, 38],
+        "source_word_range": [1042, 1089],
+        "source_anchor": "dissimilarity in every particular... less fashionable of the two",
+        "adaptation_note": ""
+      },
+      {
+        "panel_number": 3,
+        "beat": "Nick turns and walks along the side of his bungalow toward the right, where a vast Norman-style mansion looms above the hedge—he stops and tilts his head up at it.",
+        "shot": "wide",
+        "image_prompt": "Wide low-angle view from a narrow side yard. Nick Carraway, small in frame, stands at left with his back partially to viewer, looking up and to the right. Looming over a thin hedge at right: an enormous Norman-style mansion, a factual imitation of a Hôtel de Ville, with a square tower, raw new stonework under a thin beard of ivy, a glimpse of a marble swimming pool and sweeping lawns receding into distance. His own modest bungalow visible at far left, dwarfed. Sepia and dusk-blue palette, dramatic scale contrast, warm afternoon light, long shadows. Leave the upper-right sky open for a caption. No text or signs.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4c3a",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.48, "y": 0.05, "w": 0.47, "h": 0.2},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "Squeezed between two huge places; the one on my right was colossal.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4c3b",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.78, "w": 0.45, "h": 0.17},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "An imitation Hôtel de Ville, with a marble pool and forty acres of lawn.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "My house, at the very tip of the egg, was squeezed between two huge places that rented for twelve or fifteen thousand a season. The one on my right was a colossal affair—a factual imitation of some Hôtel de Ville in Normandy, with a tower, a marble swimming pool, and more than forty acres of lawn and garden.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "First concrete reveal of Gatsby's mansion next door, anchored to Nick's walk along the property line.",
+        "source_unit_ids": [39, 40],
+        "source_word_range": [1090, 1172],
+        "source_anchor": "squeezed between two huge places... colossal affair... imitation Hôtel de Ville",
+        "adaptation_note": ""
+      },
+      {
+        "panel_number": 4,
+        "beat": "Nick lowers his gaze to his own small bungalow, hands in pockets, a wry half-smile; through a gap in the hedge a sliver of the Sound is visible behind his house.",
+        "shot": "medium",
+        "image_prompt": "Medium shot of Nick Carraway in three-quarter view, hands in trouser pockets, a wry faint smile, standing on a patchy lawn in front of his small weathered shingled bungalow. To one side, the corner of the colossal neighboring estate's stone wall and ivy intrudes; behind the bungalow, a thin glittering sliver of the Sound visible between hedges. Warm late-afternoon sepia light, soft watercolor wash, clean inked linework. Leave the top band and bottom band of the panel clear for caption boxes. No text, no signs, no labels.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4c4a",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.6, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "It was Gatsby's mansion—or a mansion inhabited by a gentleman of that name.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4c4b",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.05, "y": 0.78, "w": 0.9, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "My own house was an eyesore—but a small one—for eighty dollars a month.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "It was Gatsby's mansion. Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but a small eyesore—and it had been overlooked, so I had a view of the water, a partial view of my neighbour's lawn, and the consoling proximity of millionaires—all for eighty dollars a month.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Gatsby named for the first time; Nick remains physically anchored at his bungalow.",
+        "source_unit_ids": [41, 42, 43],
+        "source_word_range": [1173, 1238],
+        "source_anchor": "It was Gatsby's mansion... eighty dollars a month",
+        "adaptation_note": ""
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43],
+    "last_scene": "Nick stands on his West Egg lawn surveying the geography: the two eggs across the courtesy bay, the colossal Gatsby mansion looming over his own modest bungalow.",
+    "active_characters": ["Nick Carraway"],
+    "character_updates": [
+      "Gatsby introduced by name only as an unseen neighbor",
+      "Nick's bungalow situated at the tip of West Egg, fifty yards from the Sound"
+    ],
+    "visual_motifs": [
+      "window framing distant water",
+      "the colossal Norman mansion next door",
+      "the courtesy bay between the two eggs",
+      "Nick's modest bungalow dwarfed by neighboring estates"
+    ],
+    "next_page_needs": [
+      "Drive across the bay to East Egg",
+      "Introduction of Daisy and Tom Buchanan at their mansion",
+      "First spoken dialogue scene between Nick and the Buchanans"
+    ]
+  }
+}

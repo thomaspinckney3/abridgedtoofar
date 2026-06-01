@@ -1,5 +1,12 @@
 {
   "genre": "novel",
   "title": "Uncle Tom's Cabin",
-  "author": "Harriet Beecher Stowe"
+  "author": "Harriet Beecher Stowe",
+  "force_keep_chapters": [
+    {
+      "chapter_id": "046",
+      "target_words": 800,
+      "reason": "Concluding Remarks carries Stowe's explicit source claims and moral synthesis; the book critic treats those themes as required coverage."
+    }
+  ]
 }

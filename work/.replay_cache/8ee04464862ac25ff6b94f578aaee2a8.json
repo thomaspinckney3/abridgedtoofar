@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:19:57",
+  "key": "8ee04464862ac25ff6b94f578aaee2a8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the five tests and gate test to every potential issue, while respecting the authorized cuts.\n\n---\n\n**Ch 029 analysis:**\n\n**\"Thus the student of Hegel prepared himself for a visit to Russia in order to enlarge his synthesis.\"**\nThe source has \"enlarge his 'synthesis'\" \u2014 the term \"synthesis\" (and its companion \"larger synthesis\") was built up across several paragraphs of the Conservative Christian Anarchist digression, which is an *authorized* removal. The draft still uses the term \"synthesis\" (without scare quotes in a meaningful way), but the prior draft paragraph does say \"conservative Christian anarchists\" and \"the faith was national.\" The term \"synthesis\" appears in the draft sentence without prior definition in the draft. However \u2014 does this cause genuine confusion? A reader sees \"enlarge his synthesis\" and might find it slightly opaque, but the word \"synthesis\" in an intellectual/philosophical context is not so arcane as to be genuinely unparseable. The authorized removal of the CCA digression is the direct residue here. **Not a valid finding** \u2014 authorized cut residue.\n\n**\"Baireuth amused the aging student well enough; but the Senator, yearning for sterner study, pointed to Moscow.\"**\nThe Senator is introduced here without prior establishment in the draft. Looking back at the draft: the prior paragraph says \"he joined the family for the festival\" \u2014 no Senator is named or introduced in the draft before this point. In the source, the Senator is introduced in the Baireuth section: \"the Senator, yearning for sterner study, pointed to a haven at Moscow. For years Adams had taught American youth never to travel without a Senator...\" \u2014 this IS kept in the following draft sentence. So the Senator IS introduced in the very next sentence of the draft: \"For years Adams had taught American youth never to travel without a Senator\u2014useful in America at times, but indispensable in Russia.\" So the Senator is introduced/explained in the sentence immediately following. Order is: \"the Senator pointed to Moscow\" \u2192 \"for years Adams had taught never to travel without a Senator.\" The antecedent comes *after* \u2014 a forward reference. Is a reader confused? Yes, momentarily \u2014 \"the Senator\" appears with a definite article but no prior introduction in the draft. However, the very next sentence glosses who/what the Senator is. A competent reader would catch up immediately. Borderline, but the definite \"the Senator\" without prior establishment is a real structural seam. Let me check: is the Senator's introduction an authorized cut? The Senator (Senator Lodge) is NOT on the authorized minor-character removal list (Lodge is kept). The Baireuth subplot IS an authorized removal, and it was within the Baireuth section that the Senator first appeared in the source. So this is a residue of the authorized Baireuth cut. **Authorized cut residue \u2014 not a valid finding.**\n\n**\"The tragedy of King impressed Hay intensely\"** (Ch 030)\nIn the source: \"The tragedy of King impressed *him* intensely\" \u2014 the \"him\" = Adams (or Hay?). Actually in the source it's \"The tragedy of King impressed him intensely: 'There you have it in the face!' he said\u2014\" The \"he said\" is Hay speaking. In the source context, \"him\" = Adams, and \"he said\" = Hay. But the draft changes \"him\" to \"Hay\" \u2014 making Hay both the impressed party AND the speaker, which actually makes the quote cohere better. Not a finding.\n\n**Ch 030: \"With this game an elderly friend had long before carried acquaintance as far as he wished.\"**\nThe source has this sentence after a discussion of Roosevelt and Lodge playing a shifting-standards game. The draft has removed most of the Bostonitis/Lodge portrait (authorized removal) but retains this sentence. \"This game\" refers to the double-standards political game described in the preceding paragraph in the draft: \"Double standards are inspiration to men of letters, but apt to be fatal to politicians.\" The \"game\" = the double-standards political game. This still parses for a competent reader. Not a finding.\n\n**Ch 030: \"Hay had induced the Senate, with only six negative votes, to permit Great Britain to renounce, without equivalent, treaty rights which she had for fifty years defended tooth and nail.\"**\nThe source prefaces this with \"With infinite effort he had achieved the astonishing diplomatic feat of inducing...\" \u2014 the draft drops \"with infinite effort\" and the framing of \"astonishing diplomatic feat.\" The matrix clause still parses. Not a finding.\n\n**Ch 029: \"As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin.\"**\nThe \"monkey\" metaphor comes from the La Fontaine passage in the source (the bear and monkey poem). In the draft, the La Fontaine poem and the bear/monkey framing are cut. The draft goes directly from \"he took steamer for Sweden and landed at Stockholm\" to \"Until the student is fairly sure...\" to \"Yet Russia was too vast a force...\" to \"As the monkey looked back across the Baltic...\" \u2014 the monkey metaphor arrives with no establishment in the draft. A reader has no idea what \"the monkey\" refers to. This is a genuine dangling reference.\n\nLet me verify: does the draft contain any prior mention of \"monkey\"? Searching the draft... No. The La Fontaine poem and the bear/monkey discussion (\"as bear or as monkey according to the mirror he held before him\") are entirely cut from the draft. The \"monkey\" appears from nowhere.\n\nIs this an authorized cut? The authorized digression removals for Ch 029 include \"Ice-cap and Norse ancestry meditations tying Russia to glacial inertia\" \u2014 but the La Fontaine/monkey passage is not specifically listed as an authorized removal. The authorized removals are specific listed items. The monkey/La Fontaine passage is not among them. This is a **valid finding**.\n\n**Gate test**: A reader encountering \"As the monkey looked back across the Baltic from the safe battlements of Stockholm\" with no prior mention of a monkey would be genuinely confused about what \"the monkey\" refers to \u2014 it has no antecedent in the draft.\n\n---\n\nNow let me check Ch 030 more carefully for the \"these two minds\" reference:\n\n**\"Since 1860, education had done its worst, under the greatest masters and at enormous expense to the world, to train these two minds to catch and comprehend every spring of international action.\"**\n\"These two minds\" \u2014 in the source, this refers to Hay and Adams, established by the preceding paragraph: \"He had under his eyes the whole educational staff of the Government... to train these two minds.\" The draft also has the preceding paragraph discussing Hay instructing Adams, so \"these two minds\" = Hay and Adams, which is clear from context. Not a finding.\n\n---\n\n```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"29\",\n    \"draft_passage\": \"As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin.\",\n    \"source_has\": \"The source establishes the monkey figure via the La Fontaine poem ('Moi? pourquoi non? / N'ai-je pas quatre pieds...') and the explicit gloss 'his own figure as monkey' before using the image; the draft cuts the entire La Fontaine passage and bear/monkey framing, leaving 'the monkey' without any antecedent in the draft.\",\n    \"gate_test_answer\": \"A reader of the draft alone would be genuinely confused: 'the monkey' carries a definite article and refers to a specific metaphorical identity that has never been established anywhere in the draft, making the sentence opaque rather than merely less ornate.\"\n  }\n]\n```",
+    "input_tokens": 18157,
+    "output_tokens": 1783,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.99780297279358,
+    "stop_reason": "end_turn"
+  }
+}

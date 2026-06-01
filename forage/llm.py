@@ -13,6 +13,10 @@ identical inputs skip the live call and return the saved response. Any
 change to prompt text, model, system, or params busts the key (that's the
 signal to make a fresh call). Useful for iterating on post-LLM code
 (parsing, iterate-loop, rebudget, rendering) without re-spending.
+
+Cache files also store a source_fingerprint metadata object for the relevant
+pipeline stage. It is not part of the replay key; audits use it to flag cache
+entries produced by older stage code while still allowing exact-response reuse.
 """
 
 from __future__ import annotations
@@ -24,6 +28,8 @@ import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Optional
+
+from .source_fingerprint import source_fingerprint_for_stage
 
 
 @dataclass
@@ -38,19 +44,51 @@ class LLMResponse:
     cache_write_tokens: Optional[int] = None
 
 
+class LLMStreamTimeoutError(TimeoutError):
+    """Raised when a streaming LLM call stays alive without yielding text."""
+
+
 ROOT = Path(__file__).resolve().parent.parent
 REPLAY_DIR = ROOT / "work" / ".replay_cache"
+DEFAULT_ANTHROPIC_READ_TIMEOUT_S = 420.0
 
 
 def _replay_enabled() -> bool:
     return os.environ.get("FORAGE_REPLAY", "") == "1"
 
 
-def _replay_key(model: str, system: Optional[str],
-                cached_prompt: Optional[str], prompt: str,
-                max_tokens: int, temperature: Optional[float],
-                tools: Optional[list] = None,
-                thinking: Optional[str] = None) -> str:
+def _env_float(name: str, default: float) -> float:
+    raw = os.environ.get(name)
+    if raw is None or raw.strip() == "":
+        return default
+    try:
+        value = float(raw)
+    except ValueError as e:
+        raise ValueError(f"{name} must be a number of seconds, got {raw!r}") from e
+    if value <= 0:
+        raise ValueError(f"{name} must be > 0, got {raw!r}")
+    return value
+
+
+def resolve_model_for_stage(model: str, stage: str) -> tuple[str, Optional[str]]:
+    """Apply the same per-stage/global model override rules used by
+    `complete`. Returns `(resolved_model, override_source)`, where
+    `override_source` is None when no override was applied."""
+    stage_base = stage.split(":")[0].upper().replace("-", "_")
+    stage_override = os.environ.get(f"FORAGE_{stage_base}_MODEL")
+    if stage_override:
+        return stage_override, f"FORAGE_{stage_base}_MODEL"
+    global_override = os.environ.get("FORAGE_MODEL")
+    if global_override:
+        return global_override, "FORAGE_MODEL"
+    return model, None
+
+
+def replay_key_for_request(model: str, system: Optional[str],
+                           cached_prompt: Optional[str], prompt: str,
+                           max_tokens: int, temperature: Optional[float],
+                           tools: Optional[list] = None,
+                           thinking: Optional[str] = None) -> str:
     h = hashlib.sha256()
     h.update(f"model={model}\n".encode())
     h.update(f"system={system or ''}\n".encode())
@@ -65,6 +103,10 @@ def _replay_key(model: str, system: Optional[str],
     return h.hexdigest()[:32]
 
 
+def replay_cache_path(key: str) -> Path:
+    return REPLAY_DIR / f"{key}.json"
+
+
 def _replay_load(key: str) -> Optional[dict]:
     p = REPLAY_DIR / f"{key}.json"
     if p.exists():
@@ -72,12 +114,13 @@ def _replay_load(key: str) -> Optional[dict]:
     return None
 
 
-def _replay_save(key: str, model: str, resp: "LLMResponse") -> None:
+def _replay_save(key: str, model: str, resp: "LLMResponse", stage: str) -> None:
     REPLAY_DIR.mkdir(parents=True, exist_ok=True)
     data = {
         "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "key": key,
         "model": model,
+        "source_fingerprint": source_fingerprint_for_stage(stage),
         "response": {
             "text": resp.text,
             "input_tokens": resp.input_tokens,
@@ -125,18 +168,8 @@ def complete(
     #   FORAGE_{STAGE}_MODEL (e.g. FORAGE_CRITIC_MODEL) — per-stage, wins.
     #   FORAGE_MODEL — global fallback.
     # Applies to the cache key too, so each model's responses sit side-by-side.
-    stage_base = stage.split(":")[0].upper().replace("-", "_")
-    stage_override = os.environ.get(f"FORAGE_{stage_base}_MODEL")
     requested = model
-    override_source: Optional[str] = None
-    if stage_override:
-        model = stage_override
-        override_source = f"FORAGE_{stage_base}_MODEL"
-    else:
-        global_override = os.environ.get("FORAGE_MODEL")
-        if global_override:
-            model = global_override
-            override_source = "FORAGE_MODEL"
+    model, override_source = resolve_model_for_stage(model, stage)
 
     import sys as _sys
     if override_source and model != requested:
@@ -154,9 +187,9 @@ def complete(
     replay = _replay_enabled()
     if replay:
         # Tools and thinking influence the response; include in cache key.
-        key = _replay_key(model, system, cached_prompt, prompt,
-                          max_tokens, temperature, tools=tools,
-                          thinking=thinking)
+        key = replay_key_for_request(model, system, cached_prompt, prompt,
+                                     max_tokens, temperature, tools=tools,
+                                     thinking=thinking)
         hit = _replay_load(key)
         if hit is not None:
             r = hit["response"]
@@ -193,7 +226,7 @@ def complete(
     resp.duration_s = time.time() - start
 
     if replay:
-        _replay_save(key, model, resp)
+        _replay_save(key, model, resp, stage)
 
     if work_dir is not None:
         _log_call(work_dir, stage=stage, prompt=prompt, system=system,
@@ -216,6 +249,7 @@ def _retryable_exceptions() -> tuple:
         httpx.ConnectError,
         httpx.WriteTimeout,
         httpx.PoolTimeout,
+        LLMStreamTimeoutError,
     ]
     try:
         import anthropic
@@ -262,7 +296,13 @@ def _anthropic(*, prompt: str, model_id: str, system: Optional[str],
                tools: Optional[list[dict]] = None,
                thinking: Optional[str] = None) -> LLMResponse:
     import anthropic
-    client = anthropic.Anthropic()
+    read_timeout = _env_float("FORAGE_ANTHROPIC_READ_TIMEOUT_S",
+                              DEFAULT_ANTHROPIC_READ_TIMEOUT_S)
+    text_timeout = _env_float("FORAGE_ANTHROPIC_TEXT_TIMEOUT_S", read_timeout)
+    client = anthropic.Anthropic(
+        timeout=anthropic.Timeout(connect=30.0, read=read_timeout,
+                                  write=60.0, pool=30.0)
+    )
     if cached_prompt is not None:
         # Two blocks: cached prefix + uncached tail. Prefix carries the
         # cache_control; the tail is plain text so it doesn't extend the
@@ -294,14 +334,40 @@ def _anthropic(*, prompt: str, model_id: str, system: Optional[str],
         kwargs["output_config"] = {"effort": thinking}
 
     def _call() -> tuple[list[str], object]:
+        import signal
+        import threading
+
         chunks_inner: list[str] = []
-        with client.messages.stream(**kwargs) as stream:
-            for chunk in stream.text_stream:
-                chunks_inner.append(chunk)
-                if _STREAM_SINK is not None:
-                    _STREAM_SINK(chunk)
-            final_inner = stream.get_final_message()
-        return chunks_inner, final_inner
+        use_alarm = (
+            threading.current_thread() is threading.main_thread()
+            and hasattr(signal, "SIGALRM")
+            and hasattr(signal, "ITIMER_REAL")
+        )
+        previous_handler = None
+
+        def _raise_stream_timeout(signum, frame):
+            raise LLMStreamTimeoutError(
+                f"Anthropic stream yielded no text for {text_timeout:g}s"
+            )
+
+        if use_alarm:
+            previous_handler = signal.getsignal(signal.SIGALRM)
+            signal.signal(signal.SIGALRM, _raise_stream_timeout)
+            signal.setitimer(signal.ITIMER_REAL, text_timeout)
+        try:
+            with client.messages.stream(**kwargs) as stream:
+                for chunk in stream.text_stream:
+                    if use_alarm:
+                        signal.setitimer(signal.ITIMER_REAL, text_timeout)
+                    chunks_inner.append(chunk)
+                    if _STREAM_SINK is not None:
+                        _STREAM_SINK(chunk)
+                final_inner = stream.get_final_message()
+            return chunks_inner, final_inner
+        finally:
+            if use_alarm:
+                signal.setitimer(signal.ITIMER_REAL, 0.0)
+                signal.signal(signal.SIGALRM, previous_handler)
 
     chunks, final = _with_retries(_call)
     text = "".join(chunks)

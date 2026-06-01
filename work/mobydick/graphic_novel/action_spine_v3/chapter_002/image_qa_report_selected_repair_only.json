@@ -1,0 +1,71 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/candidate_frames_selected_repair",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "readable_text",
+          "finding": "Legible lettering/details visible on the coins, violating the no readable text rule and modern-currency ambiguity.",
+          "visible_evidence": "Top coin in Ishmael\u2019s gloved palm shows a distinct rim with engraved letters around a profile that are partially readable.",
+          "repair_prompt": "Render the coins as small, tarnished silver with indistinct, worn faces; remove any legible letters or numerals; avoid crisp modern edges; reduce contrast and detail so no text is readable."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag reads as a modern patterned handbag with a structured body and repeating logo-like motif.",
+          "visible_evidence": "Bag under Ishmael\u2019s arm has a rigid, rounded shape with uniform decorative patterning and hardware rings, resembling a contemporary designer purse.",
+          "repair_prompt": "Replace with a 19th-century small, soft-sided carpet-bag of mottled fabric and scuffed leather trim; no repeating logos or modern hardware; make it slouch slightly under the arm with muted, worn materials."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Patched boots lack clearly visible toe patches specified for Ishmael.",
+          "visible_evidence": "Boots appear worn and scuffed but do not show distinct rough toe patches.",
+          "repair_prompt": "Add rough toe patches and evident sole wear to Ishmael\u2019s dark leather ankle boots; keep the finish matte and battered."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Framing is closer to a full-body shot rather than the requested medium three-quarter view.",
+          "visible_evidence": "Ishmael is shown head-to-toe within the frame.",
+          "repair_prompt": "Reframe to a medium three-quarter view (crop above the knees) while keeping Ishmael studying a few coins and hugging the carpet-bag; preserve clean negative space at bottom-center for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag appears rigid like a framed doctor\u2019s/Gladstone bag rather than a soft-sided carpet-bag.",
+          "visible_evidence": "The bag under Ishmael\u2019s arm has a stiff metal frame and structured shape with a hinged clasp, holding its form firmly.",
+          "repair_prompt": "Redesign the carpet-bag to be small and soft-sided with a slight sag, mottled worn fabric and leather trim, minimizing any rigid frame; keep it scuffed and 19th-century with no readable text."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Boots look worn but lack the clearly visible rough toe patches specified.",
+          "visible_evidence": "The front boot shows scuffs yet no distinct patching on the toes is visible.",
+          "repair_prompt": "Add obvious rough leather toe patches and thin, well-worn soles to Ishmael\u2019s ankle boots; keep them dull and battered, avoiding modern tread."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "The turn into a darker side street is not clearly depicted; he appears to continue along the main street.",
+          "visible_evidence": "Ishmael strides past the inn toward the open downhill street; no distinct side-lane branching or turning motion is emphasized.",
+          "repair_prompt": "Recompose so a darker side lane branches off downhill toward the water, and angle Ishmael\u2019s body/footprints to clearly show him turning into that lane while passing the bright inn door."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

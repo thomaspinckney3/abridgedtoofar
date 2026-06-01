@@ -1,14 +1,66 @@
 {
-  "ts": "2026-04-24T11:14:18",
+  "ts": "2026-05-05T14:23:36",
   "key": "101cc4e83ce2d28c99cfe5a4293adab8",
   "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "summarize",
+    "hash": "982c97c860bffb01fc27559dd8a8b818",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "forage/summarizer.py",
+        "sha256": "91f66bb83c9e3863b529bc7ef13c7de75549af865262362069526aaf0317f368",
+        "missing": false
+      },
+      {
+        "path": "prompts/summarize_merge.md",
+        "sha256": "90b78e2c624dca9c8eef501a1532a34a8d652933c17d3fcdc1a3516c8d3d0ee2",
+        "missing": false
+      },
+      {
+        "path": "prompts/summarize_synopsis.md",
+        "sha256": "4be08e535a31189c6d96b93272e0399bfe0f2a70291c205e5b89f3b56752db63",
+        "missing": false
+      }
+    ]
+  },
   "response": {
-    "text": "Ishmael, a melancholy schoolmaster with a periodic urge to flee land\u2019s confinements, chooses to \u201csail about a little,\u201d drifting to New Bedford where a grimy whaling world, a funereal inn, and a smudged painting of chaos announce the book\u2019s strange waters. Amid comic anxieties and black-humored sermons (not least Father Mapple\u2019s thunderous parable of Jonah), he shares a bed, then a bond, with Queequeg, a tattooed harpooneer whose calm dignity, fierce prowess, and pagan rites broaden Ishmael\u2019s compass. Prophecies flicker at the edges\u2014Elijah\u2019s insinuations on the pier, ominous shop-signs, and casual portents\u2014when the pair sign aboard the Pequod, a weather-darkened, bone-decorated Nantucket ship owned by canting Quakers Peleg and Bildad and commanded, it\u2019s whispered, by the unseen Ahab. After chowder at the Try Pots, Queequeg\u2019s Ramadan, and a passage crowded with greenhorns, the Pequod embarks on Christmas, its crew a polyglot \u201cdemocracy of hands\u201d under three mates\u2014careful Starbuck, jocular Stubb, and pugnacious Flask\u2014who will learn the cost of following one man\u2019s will.\n\nAhab emerges at last in daylight: a scar-seamed bronze figure pegged to the deck by his ivory leg and staring through men and horizon alike with a fixed, fathomless intent. He nails a Spanish ounce of gold to the mast, swears the harpooneers to the draught of their own irons, and baptizes the hunt\u2014\u201cDeath to Moby Dick!\u201d\u2014while Starbuck, caught between conscience and duty, senses blasphemy masquerading as purpose. With the surfacing of Fedallah, a glistening-turbaned Parsee, and his hidden boat-crew, Ahab\u2019s private vow takes on a darker, fatal grandeur, and the chase opens in a squall that nearly drowns Ishmael\u2019s boat within sight of a moonlit, teasing spout. Between such crises the ship gams with other whalers, hears secondhand the violence that trails the White Whale (never more chillingly than in the \u201cTown-Ho\u2019s Story,\u201d where Moby Dick answers human spite with annihilating force), and moves through a working life of try-works, mast-heads, and the brutal commerce of oil\u2014all filtered through Ishmael\u2019s learned, jocular digressions on cetology that insist both on the whale\u2019s tangible bulk and its unpaintable mystery.\n\nStanding watch, weaving a sword-mat with Queequeg, or daydreaming high in the rigging, Ishmael muses on fate and free will\u2014the steady warp, the wayward woof, and chance\u2019s indifferent stroke\u2014and the reader moves with him from practical hunting scenes to metaphysical abysses. His famous meditation on the \u201cwhiteness of the whale\u201d confesses how purity can terrify, how blankness can swallow meanings, so that Moby Dick becomes not just a beast but the vast, indifferent face of creation onto which men like Ahab project their rage. The Pequod\u2019s cosmopolitan company\u2014Parsee, Gay-Header, African, Islander, Yankee\u2014mirrors the world it circles, yet their fraternity is bent by one man\u2019s monomania; even the sea\u2019s beauty\u2014the meadows of golden brit, the starry calm, the glassy line of sun\u2014hides a universal cannibalism. At every turn the ocean insults man\u2019s measurements, swallowing ships and truths with equal ease, while Ahab\u2019s will, describing a hard, iron groove, drives the vessel through rumor, prophecy, and accident toward a single point.\n\nAs the ship drifts among right whales, spouting brit like grass clippings, and the men taste both the industry\u2019s routine and its uncanny, the sea yields up something rarer than Moby Dick: a vast, glimmering squid, furlongs long, an eyeless apparition rising and sinking in a hush that Starbuck calls more dreadful than the White Whale himself. That portent, coupled with the haunting, moonlit spout that eludes the boats and the inscrutable presence of Fedallah, stains the air with the sense that Providence, chance, and obsession have braided themselves into one line. The Pequod bears on toward Java and beyond, with oaths hammered into the mast, gold glinting over the deck, and every man pulled taut between wages, wonder, and doom, while Ahab\u2014sleepless sentinel, storm-gazer, maker of vows\u2014steers by a star only he can see. This first leg of the voyage ends not in conquest, but in deepening signs and whispers: the world-wrapping rumor of a ubiquitous whale, the terror of blank whiteness, and the living ocean\u2019s unanswerable riddles gathering around a ship already pledged to pursue one.",
+    "text": "Ishmael, beset by a \u201cdamp, drizzly November\u201d in his soul, chooses the sea over self-destruction and drifts to New Bedford, where at the rough-hewn Spouter-Inn he meets the tattooed South Sea harpooneer Queequeg and, after an awkward nocturnal introduction, forges a deep, unlikely brotherhood with him. The two attend the Whalemen\u2019s Chapel to hear Father Mapple\u2019s thunderous sermon on Jonah\u2014obedience, repentance, and the peril of fleeing a divine summons\u2014and then ship for a whaling voyage out of Nantucket aboard the Pequod, a weathered, trophy-clad bark owned by the flinty Quaker partners Peleg and Bildad. Prophetic hints gather\u2014an ominous forecast from the ragged Elijah, Bulkington\u2019s restless return to sea, idle talk of a captain named Ahab\u2014until on a frigid Christmas departure the crew leaves civilization behind under hymns and hard orders.\n\nFor a time Ahab is only a rumor on the heaving deck; then he appears, a scar-seamed, ivory-legged veteran whose lightning-branded brow and punctured soul announce a man fused to a single purpose. Starbuck, Stubb, and Flask\u2014the prudent, the jovial, and the pugnacious\u2014command boats beneath him, while the harpooneers\u2014Queequeg, Tashtego, and Daggoo\u2014stand like carved emblems of the globe\u2019s far corners, making the Pequod a floating democracy and a ship of metaphors. Ahab\u2019s monomania clarifies when he nails a Spanish ounce of gold to the mainmast and, in a burning quarter-deck scene, swears the crew to hunt the White Whale\u2014Moby Dick\u2014the very brute that \u201crazed\u201d him and, in his mind, embodies an inscrutable malice behind the world\u2019s mask. Despite Starbuck\u2019s moral misgivings about vengeance on a dumb beast, the crew\u2019s blood and superstition boil; they drink from harpoon sockets and bind themselves to Ahab\u2019s doom.\n\nThe voyage\u2019s first lowerings reveal both the sea\u2019s theatrical beauty and its treachery: a sudden squall swamps the boats and nearly drowns Ishmael before they are hauled back aboard under the impassive gaze of their captain. From the ship\u2019s other side a fourth boat has stolen forth\u2014Ahab\u2019s own\u2014manned by five dusky phantoms led by Fedallah, a turbaned Parsee whose silent authority and dark prophecies deepen the voyage\u2019s fatal atmosphere. As weeks pass, the Pequod steams through gales and calms, and Melville braids in cetological catalogs, meditations on the dignity of whaling, and a shiver-inducing taxonomy of the \u201cwhiteness\u201d that appalls as much as it sanctifies. In the Golden Inn at Lima, Ishmael retells the \u201cTown-Ho\u2019s Story,\u201d where mutiny, class rancor, and shipboard justice culminate in Moby Dick himself bursting up to seize the tyrannical mate Radney\u2014a whispered testament that the White Whale is both fact and fatal visitation.\n\nAhab\u2019s will wrestles nightly with his better angel even as he drills his crew, scouts the horizon, and treats every chance spout as the whale he hunts, while the mates measure discipline against common cause. Gams with other ships bring only broken trumpets and rumor; a nocturnal, solitary jet teases the Pequod onward like a perfidious beckoning finger. The ship sails through meadows of golden brit and among Right Whales that feed like lawn-mowers, scenes of serene industry that throw Ahab\u2019s vendetta into starker relief. When a vast, pale squid heaves up\u2014a nearly mythic apparition few ships see and live to report\u2014Starbuck would almost rather fight Moby Dick than behold that formless living portent; the crew reads it as a sign that the White Whale is near. All the while, the loom of time clacks beneath Ishmael\u2019s hands as he and Queequeg weave a sword-mat, and he imagines necessity as the warp, free will the shuttle, and chance the savage\u2019s indifferent sword beating the pattern.\n\nBy now the ship\u2019s society\u2014pious foremast hands and godless Bostons, Quaker owners and Parsee augurs\u2014has settled into a rhythm of watch, rope, and hymn, even as Ahab\u2019s fiery eye steadies the helm and bends every wind to his single aim. Father Mapple\u2019s call to truth, Starbuck\u2019s cautious reason, and Queequeg\u2019s pagan stoicism form a counter-chorus to Ahab\u2019s blasphemous vow to \u201cstrike through the mask\u201d of appearances and stab at whatever inscrutable agency lurks behind the whale. The Pequod herself becomes emblem and engine, a battered, barbaric ark rolling through a universe that alternates between glassy peace and Borean rage. As the island of Java looms ahead and the crew studies every ripple for a beckoning spout, the chase is fully joined in spirit if not yet in sight, and the book\u2019s themes\u2014obsession and fate, the limits of knowledge, the mingled terror and glory of the sea\u2014tighten like a line running out toward an unseen leviathan. In this first stretch, Melville fixes us to Ahab\u2019s keel: the hunt is declared, the oath is sworn, omens are read, and the vast, white absence that commands a man\u2019s soul begins to fill the horizon.",
     "input_tokens": 151449,
-    "output_tokens": 1867,
+    "output_tokens": 2054,
     "cache_read_tokens": null,
     "cache_write_tokens": null,
-    "duration_s": 52.796201944351196,
+    "duration_s": 44.063077211380005,
     "stop_reason": "stop"
   }
 }

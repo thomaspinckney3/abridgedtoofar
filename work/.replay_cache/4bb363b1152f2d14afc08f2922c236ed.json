@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:26:37",
+  "key": "4bb363b1152f2d14afc08f2922c236ed",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter's draft systematically, applying the gate test to every candidate sentence.\n\n**Ch 001 draft checks:**\n\nThe draft is clean through most of Chapter 1. One passage draws attention:\n\n> \"When, almost immediately, the telephone rang inside and the butler left the porch Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.\"\n\nIn the source, Daisy seizes on the interruption to lean toward Nick (sharing the butler's-nose story, which is an authorized cut), while Tom is separately summoned by the butler. The draft inverts or conflates this: \"yet\" makes Tom's departure the contrasting clause to Daisy's seizing, which is structurally odd but still parseable \u2014 both characters react to the phone ringing. A reader can follow: Daisy used the interruption; Tom went inside. Not a true structural failure.\n\nThe \"fifth guest\" reference: \"I doubt if even Miss Baker\u2026was able utterly to put this fifth guest's shrill metallic urgency out of mind.\" In the source, Nick counts: himself + Daisy + Tom + Miss Baker + the woman on the phone = five. The draft has cut no one from the dinner table, so the count still works. Not a finding.\n\n**Ch 002 draft checks:**\n\n> \"His voice faded off and Tom glanced impatiently around the garage.\"\n\nIn the source: \"His voice faded off\" belongs to Wilson \u2014 it's Wilson's voice that fades, after Wilson says \"I just meant\u2014\". The draft cut Wilson's final line and Tom's cold rebuff, so \"His voice faded off\" now has no clear referent. Whose voice? The previous speaker in the draft was Tom (\"No, he doesn't,\" said Tom coldly.) \u2014 so \"his\" most naturally reads as Tom's voice, which is the opposite of what the sentence means. However, the surrounding context (Tom glances around the garage, suggesting Wilson has gone quiet) allows an alert reader to infer Wilson's voice faded. This is ambiguous but borderline.\n\nApplying the gate test strictly: a reader with no source access reading \"His voice faded off and Tom glanced impatiently around the garage\" immediately after Tom's cold speech would likely parse \"his\" as Tom's \u2014 a genuine misread. But this is a residue of compressing Wilson's \"I just meant\u2014\" exchange, which was an authorized compression (no named character from the authorized list, but a general dialogue tightening). The seam is a direct residue of cutting Wilson's retort; authorized-cut residues are not findings.\n\n> \"She turned to the photographer's wife and the room rang full of her artificial laughter.\"\n\nIn the source: \"She turned to Mrs. McKee.\" The McKees are authorized removals. \"The photographer's wife\" is the descriptor used throughout the draft, and it is clear. Not a finding.\n\n> \"the sister sat down beside me and, lowering her voice, confided views on marriages that don't stand and why people should get divorces, with elaborate certainty about what kept Tom and Myrtle apart.\"\n\nCatherine is an authorized removal. \"The sister\" is used as a descriptor. But the sentence refers to \"what kept Tom and Myrtle apart\" \u2014 in the source this was a specific lie about Daisy being Catholic. The draft reduces this to a vague summary. The sentence still parses and conveys meaning at a summary level. Not a finding.\n\n> \"Much of it was lies and all of it was said with a milky assurance.\"\n\nThis sentence follows the summary of the sister's gossip and the photographer's talk. \"Much of it was lies\" has an antecedent (\"views on marriages\u2026with elaborate certainty\") that is present in the preceding sentence. Parseable. Not a finding.\n\n> \"\u2026 I was standing beside his bed and he was sitting up between the sheets, clad in his underwear, with a great portfolio in his hands.\"\n\nIn the draft, the photographer has left the party with Nick. The ellipsis signals a jump. \"His bed\" \u2014 \"his\" refers to the photographer (the last named/described character Nick left with). In the source this is Mr. McKee's bed; in the draft it's the photographer's. The antecedent is the photographer, established immediately before the ellipsis. Parseable. Not a finding.\n\nAfter thorough review, I find no sentences that genuinely fail the structural coherence tests in a way that would confuse a competent reader \u2014 all apparent seams are either authorized-cut residues, parseable in context, or merely less ornamented.\n\n```json\n[]\n```",
+    "input_tokens": 26876,
+    "output_tokens": 1043,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 28.051569938659668,
+    "stop_reason": "end_turn"
+  }
+}

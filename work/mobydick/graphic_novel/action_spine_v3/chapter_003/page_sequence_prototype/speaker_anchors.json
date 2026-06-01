@@ -1,0 +1,286 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/page_sequence_prototype",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/page_sequence_prototype/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/page_sequence_prototype/panel_art",
+  "model": "openai:gpt-5",
+  "image_source": "panels",
+  "grid_overlay": true,
+  "dry_run": false,
+  "pages": [
+    {
+      "page_number": 1,
+      "anchors": [
+        {
+          "panel_number": 1,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "He went out peddling. Maybe he can't sell his head.",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 865,
+            "y": 124
+          },
+          "mouth_point_ratio": {
+            "x": 0.565,
+            "y": 0.23755024892414134
+          },
+          "tail_target_point": {
+            "x": 914,
+            "y": 129
+          },
+          "tail_target_point_ratio": {
+            "x": 0.598,
+            "y": 0.25115875453548225
+          },
+          "source_image_point": {
+            "x": 957,
+            "y": 339
+          },
+          "source_image_point_ratio": {
+            "x": 0.565,
+            "y": 0.365
+          },
+          "source_tail_target_point": {
+            "x": 1012,
+            "y": 346
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.598,
+            "y": 0.372
+          },
+          "face_box": null,
+          "evidence": "Lean older man on the right wearing a cap and waistcoat, looking left while carving at the bar; his smiling mouth is visible.",
+          "reason": "The figure matches the speaker description and right-side region. Tail target is offset slightly up-right toward the top-right balloon zone, placed just outside the mouth on the cheek/lower-face edge.",
+          "source": "speaker_anchor_detection_panel"
+        },
+        {
+          "panel_number": 2,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Peddling his head around town?",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 483,
+            "y": 663
+          },
+          "mouth_point_ratio": {
+            "x": 0.625,
+            "y": 0.4789925106990013
+          },
+          "tail_target_point": {
+            "x": 467,
+            "y": 654
+          },
+          "tail_target_point_ratio": {
+            "x": 0.6029999999999999,
+            "y": 0.4565845221112695
+          },
+          "source_image_point": {
+            "x": 876,
+            "y": 544
+          },
+          "source_image_point_ratio": {
+            "x": 0.625,
+            "y": 0.485
+          },
+          "source_tail_target_point": {
+            "x": 845,
+            "y": 526
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.603,
+            "y": 0.469
+          },
+          "face_box": null,
+          "evidence": "Center figure, young sailor in dark jacket; open mouth at grid ~x=0.625, y=0.485.",
+          "reason": "Only character matching hint in center. Mouth located using grid; tail endpoint nudged up-left toward top-left balloon zone, placed just outside lips on cheek edge to avoid piercing the mouth.",
+          "source": "speaker_anchor_detection_panel"
+        },
+        {
+          "panel_number": 3,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "That's precisely it. The market's overstocked.",
+          "visible": true,
+          "confidence": 0.91,
+          "mouth_point": {
+            "x": 1163,
+            "y": 597
+          },
+          "mouth_point_ratio": {
+            "x": 0.525,
+            "y": 0.3207360912981455
+          },
+          "tail_target_point": {
+            "x": 1196,
+            "y": 587
+          },
+          "tail_target_point_ratio": {
+            "x": 0.57,
+            "y": 0.29692760342368046
+          },
+          "source_image_point": {
+            "x": 736,
+            "y": 417
+          },
+          "source_image_point_ratio": {
+            "x": 0.525,
+            "y": 0.372
+          },
+          "source_tail_target_point": {
+            "x": 799,
+            "y": 398
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.57,
+            "y": 0.355
+          },
+          "face_box": null,
+          "evidence": "Right-side figure matches hint: lean older landlord in cap and waistcoat, actively whittling at the table. His mouth is clearly visible mid-smile.",
+          "reason": "Speaker region is right; only character fits visual hint. Tail aimed toward balloon zone top_right, so target is just outside the right side of his mouth/cheek rather than at mouth center.",
+          "source": "speaker_anchor_detection_panel"
+        },
+        {
+          "panel_number": 4,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "With what?",
+          "visible": true,
+          "confidence": 0.87,
+          "mouth_point": {
+            "x": 450,
+            "y": 1188
+          },
+          "mouth_point_ratio": {
+            "x": 0.58,
+            "y": 0.6858712121212122
+          },
+          "tail_target_point": {
+            "x": 425,
+            "y": 1179
+          },
+          "tail_target_point_ratio": {
+            "x": 0.545,
+            "y": 0.664004010695187
+          },
+          "source_image_point": {
+            "x": 651,
+            "y": 820
+          },
+          "source_image_point_ratio": {
+            "x": 0.58,
+            "y": 0.585
+          },
+          "source_tail_target_point": {
+            "x": 611,
+            "y": 806
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.545,
+            "y": 0.575
+          },
+          "face_box": null,
+          "evidence": "Young man in dark jacket at center-right; mouth slightly open around grid x≈0.58, y≈0.585.",
+          "reason": "Identified as Ishmael per hint and center placement. Tail target offset up-left from lips toward the top-left balloon zone, landing just outside the mouth on the cheek edge.",
+          "source": "speaker_anchor_detection_panel"
+        },
+        {
+          "panel_number": 5,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "With heads, to be sure.",
+          "visible": true,
+          "confidence": 0.9,
+          "mouth_point": {
+            "x": 1299,
+            "y": 1099
+          },
+          "mouth_point_ratio": {
+            "x": 0.7100000000000001,
+            "y": 0.47375000000000006
+          },
+          "tail_target_point": {
+            "x": 1321,
+            "y": 1088
+          },
+          "tail_target_point_ratio": {
+            "x": 0.74,
+            "y": 0.44749999999999984
+          },
+          "source_image_point": {
+            "x": 727,
+            "y": 753
+          },
+          "source_image_point_ratio": {
+            "x": 0.71,
+            "y": 0.49
+          },
+          "source_tail_target_point": {
+            "x": 758,
+            "y": 737
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.74,
+            "y": 0.48
+          },
+          "face_box": null,
+          "evidence": "Right-side older landlord in cap and waistcoat, shrugging with a slight smirk; only character on the right. Mouth located around x≈0.71, y≈0.49 by grid.",
+          "reason": "Speaker matches visual hint and region. Tail target offset slightly up-right from the mouth toward the top-right balloon zone, placed at the cheek edge just outside the lips.",
+          "source": "speaker_anchor_detection_panel"
+        },
+        {
+          "panel_number": 6,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "Embalmed New Zealand heads. He's sold all but one.",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 877,
+            "y": 1594
+          },
+          "mouth_point_ratio": {
+            "x": 0.573,
+            "y": 0.3726434314507172
+          },
+          "tail_target_point": {
+            "x": 914,
+            "y": 1573
+          },
+          "tail_target_point_ratio": {
+            "x": 0.598,
+            "y": 0.3428872238457446
+          },
+          "source_image_point": {
+            "x": 970,
+            "y": 365
+          },
+          "source_image_point_ratio": {
+            "x": 0.573,
+            "y": 0.393
+          },
+          "source_tail_target_point": {
+            "x": 1012,
+            "y": 342
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.598,
+            "y": 0.368
+          },
+          "face_box": null,
+          "evidence": "Older landlord on right in cap and waistcoat, leaning toward Ishmael and gesturing; mouth slightly open.",
+          "reason": "Speaker matches right-side landlord description; mouth located on his face. Tail offset slightly up-right toward top-right balloon zone and just outside the mouth/cheek.",
+          "source": "speaker_anchor_detection_panel"
+        }
+      ]
+    }
+  ]
+}

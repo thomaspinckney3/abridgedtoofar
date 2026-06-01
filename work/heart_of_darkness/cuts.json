@@ -1,51 +1,86 @@
 {
   "minor_characters": [
     {
-      "name": "Director of Companies (frame host on the Nellie)",
-      "appearances_summary": "Introduces the frame scene on the Thames in Ch 001 and reappears only to note the ebb at the very end of Ch 003.",
-      "reason_removable": "His specific identity and traits are not needed for the frame to function; the yawl and anonymous listeners suffice to preserve the opening/closing shape in the synopsis."
+      "name": "The Director of Companies (captain of the Nellie)",
+      "appearances_summary": "Frame narrator’s host on the Thames in Ch 001 and the voice that ends the frame in Ch 003.",
+      "reason_removable": "The frame only requires anonymous listeners aboard the Nellie, so his titled presence can be merged into an unnamed ‘captain/listener’ without affecting plot or themes."
     },
     {
-      "name": "The Lawyer (on the Nellie)",
-      "appearances_summary": "A silent listener on the yacht in Ch 001 who never affects Marlow’s tale.",
-      "reason_removable": "He is mere scene-dressing in the frame and can be elided without loss to plot, theme, or character."
+      "name": "The Lawyer (aboard the Nellie)",
+      "appearances_summary": "One of Marlow’s silent listeners on the yacht in Ch 001.",
+      "reason_removable": "He contributes no action or unique perspective beyond being one of the generic listeners required by the frame."
     },
     {
-      "name": "The Accountant (on the Nellie, frame figure)",
-      "appearances_summary": "Another silent listener in Ch 001 distinct from the Company’s chief accountant ashore.",
-      "reason_removable": "Removing this frame extra avoids confusion with the indispensable chief accountant at the Outer Station and changes nothing substantive."
+      "name": "The Accountant (aboard the Nellie, frame character)",
+      "appearances_summary": "Another of the silent listeners in Ch 001 (not the Company accountant at the Outer Station).",
+      "reason_removable": "He is redundant as an individual since the synopsis only needs an audience on the Nellie, not this titled listener."
     },
     {
-      "name": "Van Shuyten",
-      "appearances_summary": "A Dutch outfitter mentioned only in the Russian’s backstory in Ch 002–003.",
-      "reason_removable": "He exists solely to color the Russian’s past and has no bearing on Marlow, Kurtz, or the plot."
+      "name": "The compassionate secretary (Brussels)",
+      "appearances_summary": "Briefly ushers Marlow through contract formalities in Ch 001.",
+      "reason_removable": "The synopsis already covers Marlow’s hiring in Brussels, so this clerk’s sympathetic color can be dropped."
     },
     {
-      "name": "Towson (Towser), author of the seamanship manual",
-      "appearances_summary": "Named on the cover of the old nautical book found at the riverside hut in Ch 002.",
-      "reason_removable": "The scene’s function (a cipher-annotated manual signaling another white man) is fully preserved without naming its long-dead author."
+      "name": "The shabby clerk escort (Brussels)",
+      "appearances_summary": "Takes Marlow to the doctor and trades small talk over a drink in Ch 001.",
+      "reason_removable": "He adds only incidental local color to the Brussels sequence and can be omitted without loss."
+    },
+    {
+      "name": "The Company ‘great man’ in Brussels",
+      "appearances_summary": "A brief handshake meeting with the local Company head in Ch 001.",
+      "reason_removable": "Marlow’s appointment is already secured by his aunt’s influence, so this faceless executive is nonessential."
+    },
+    {
+      "name": "The Swede (coastal steamer captain)",
+      "appearances_summary": "Ferries Marlow up the coast and mentions a suicide in Ch 001.",
+      "reason_removable": "He is a one-scene ferry for transport logistics and can be elided while Marlow simply ‘proceeds inland.’"
+    },
+    {
+      "name": "The manager’s uncle (leader of the Eldorado Expedition)",
+      "appearances_summary": "Appears in Ch 001–002 hovering around the Central Station and whispering with the manager before vanishing upriver.",
+      "reason_removable": "The synopsis requires the Eldorado Expedition to appear, not the uncle’s person or private chats, so he can be dropped while keeping the expedition as a group."
+    },
+    {
+      "name": "Van Shuyten (Dutch trader on the coast, mentioned by the Russian)",
+      "appearances_summary": "Named in Ch 002 as the Russian’s outfitter before the interior wanderings.",
+      "reason_removable": "He exists only in the Russian’s backstory and has no effect on events or themes."
+    },
+    {
+      "name": "Mr. Towson/Towser (author of the seamanship manual)",
+      "appearances_summary": "Named on the title page of the found book at the reed hut in Ch 002.",
+      "reason_removable": "The synopsis needs the manual as a talisman of reality, not its author’s name."
+    },
+    {
+      "name": "The Company agent with gold-rimmed spectacles (Europe)",
+      "appearances_summary": "Calls on Marlow after his return in Ch 003 to demand Kurtz’s papers for the Company.",
+      "reason_removable": "The synopsis only requires that Marlow refuses the Company’s attempts to seize the papers, which can be narrated without this specific emissary."
     }
   ],
   "subplots": [
     {
-      "name": "Marlow’s fainting trek companion and the hammock fiasco",
-      "chapter_span": "Ch 001",
-      "reason_removable": "This comic-miserable side episode during the 200‑mile march neither advances the plot nor adds insight beyond the already ample trek brutality."
+      "name": "The manager and his uncle’s whispered schemes against Kurtz",
+      "chapter_span": "Ch 002",
+      "reason_removable": "Their balcony-of-the-bush conniving is duplicative of the manager’s envy and bad faith already shown elsewhere and has no bearing on the river journey’s outcomes."
     },
     {
-      "name": "The boiler-maker friendship, pigeon‑fancying, and moonlit jig for rivets",
+      "name": "The boilermaker’s pigeon-fancying friendship with Marlow",
       "chapter_span": "Ch 001",
-      "reason_removable": "These amiable asides can be compressed to ‘foreman helps repair the boat’ without affecting the rivet‑delay arc central to the chapter."
+      "reason_removable": "It is charming color around the ‘rivets’ obsession but does not alter the repair, departure, or any later consequence."
     },
     {
-      "name": "The camp’s nightly hunt for a ‘charmed’ hippopotamus",
+      "name": "Marlow’s fainting white companion and the wrecked hammock episode on the overland trek",
       "chapter_span": "Ch 001",
-      "reason_removable": "This running joke exists as local color and does not influence the steamer repair, the Manager conflict, or Marlow’s fixation on Kurtz."
+      "reason_removable": "This side adventure only underscores the general futility and can be cut without changing the passage to the Central Station or Marlow’s arc."
     },
     {
-      "name": "The Russian’s life story (runaway sailor, arch‑priest’s son, Dutch outfitter)",
+      "name": "The Eldorado Expedition’s later fate (the dead donkeys)",
+      "chapter_span": "Ch 002",
+      "reason_removable": "Reporting their eventual ruin adds satiric closure but has no effect on Marlow’s repair, voyage, or meeting with Kurtz."
+    },
+    {
+      "name": "The Russian trader’s personal backstory (runaway schoolboy, English ships, arch-priest father, outfitted by Van Shuyten)",
       "chapter_span": "Ch 002–003",
-      "reason_removable": "His zealous loyalty to Kurtz can be conveyed in a line or two without the multi‑paragraph personal history that never returns."
+      "reason_removable": "Only his present role—devoted go-between for Kurtz and source of key revelations—matters to the plot."
     }
   ],
   "digressions": [
@@ -53,64 +88,37 @@
       "chapter_ids": [
         "001"
       ],
-      "topic": "Roll‑call of English navigators and ships on the Thames (Drake, Franklin, Golden Hind, Erebus and Terror).",
-      "reason_removable": "Name‑checking this historical catalog adds atmosphere but the frame’s imperial irony and the ‘dark places of the earth’ point stand without it."
+      "topic": "Long historical catalogue of the Thames’ heroic past (Drake to Franklin; Golden Hind to Erebus and Terror)",
+      "reason_removable": "This soaring prelude can be compressed to ‘the Thames has launched conquests’ without harming the frame or throughline."
     },
     {
       "chapter_ids": [
         "001"
       ],
-      "topic": "General essay on ‘seamen’s minds’ versus Marlow’s notion that a tale’s meaning lies ‘outside’.",
-      "reason_removable": "This meta‑narrative musing is stylistically signature but nonessential to following the plot or the synopsis’s thematic throughline."
-    },
-    {
-      "chapter_ids": [
-        "001"
-      ],
-      "topic": "Vermouth interlude with the shabby clerk and his ‘quoth Plato’ quip before the doctor visit.",
-      "reason_removable": "It is pure comic filler around the indispensable doctor scene and can be lifted without loss."
-    },
-    {
-      "chapter_ids": [
-        "001"
-      ],
-      "topic": "Extended portrait of the boiler‑maker’s beard‑wrapper, laundry routine, and pigeon lore.",
-      "reason_removable": "These charming details are expendable local color that do not alter events or character arcs."
-    },
-    {
-      "chapter_ids": [
-        "001"
-      ],
-      "topic": "Road‑overseer vignette and the bullet‑holed corpse as ‘permanent improvement’ during the inland march.",
-      "reason_removable": "The Outer Station’s grove of dying helpers already establishes colonial brutality, making this extra tableau redundant for the abridgment."
+      "topic": "Coastal voyage vignettes, including the French man-of-war ‘firing into a continent’ and catacomb-like ports",
+      "reason_removable": "These set tone but do not set up any later action or character turn beyond what briefer summary can supply."
     },
     {
       "chapter_ids": [
         "002"
       ],
-      "topic": "Technical inventory of the steamer’s layout and pilot‑house furniture.",
-      "reason_removable": "The mechanics of the deck scow are immaterial to the river journey’s action and mood preserved in the synopsis."
+      "topic": "Technical layout of the steamboat and pilot-house furnishings",
+      "reason_removable": "The inventory of couch, shutters, gauges, rifles, and wheel adds mechanics but no stakes or meaning not conveyed elsewhere."
     },
     {
       "chapter_ids": [
-        "001"
+        "002"
       ],
-      "topic": "Manager’s round‑table anecdote and the note on his coast ‘boy’s’ insolence.",
-      "reason_removable": "These side notes reinforce pettiness already evident elsewhere and can be pruned without affecting the ‘unsound method’ throughline."
+      "topic": "Economic aside on cannibals’ brass-wire ‘pay’ and rotten hippo-meat provisions",
+      "reason_removable": "The micro-economy details can be tightened to a line about hunger and restraint without loss of the theme or plot."
     },
     {
       "chapter_ids": [
-        "001"
+        "002"
       ],
-      "topic": "Marlow’s aside about a Scotch sailmaker certain of inhabitants on Mars.",
-      "reason_removable": "It is a whimsical aside that neither shapes the action nor deepens any principal character."
-    },
-    {
-      "chapter_ids": [
-        "003"
-      ],
-      "topic": "Inventory‑like description of the Intended’s drawing‑room furnishings (piano as sarcophagus, gilt legs, marble fireplace).",
-      "reason_removable": "The core scene—Marlow’s lie and her preserving illusion—remains intact without the furniture catalog."
+      "topic": "Mini-essay praising Towson’s seamanship manual as ‘unmistakably real’",
+      "reason_removable": "The manual must be found, but its page-long eulogy can be pared down to a sentence and still serve as Marlow’s tether to reality."
     }
-  ]
+  ],
+  "skippable_chapters": []
 }

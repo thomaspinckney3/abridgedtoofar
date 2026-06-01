@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:58:05",
+  "key": "e2f6926eed672af727c66486295649b3",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter's draft carefully, applying the gate test to each candidate.\n\n---\n\n**Ch 002 draft candidates:**\n\n1. *\"Tuppence's conscience gave her a passing twinge as she remembered the archdeacon.\"* \u2014 Wait, this is Ch 003. Let me continue Ch 002 first.\n\n2. *\"Tommy chuckled. 'Demobbed like everything else, I suppose. Two months ago. Gratuity? Spent. The cost of living\u2014'\"* \u2014 The source has Tommy saying \"Demobbed like everything else\" as a callback to Tuppence's mention of Sister Greenbank and the hospital. That exchange was compressed. Does the line still parse? Yes \u2014 it's slightly abrupt but a reader can follow it. Not a structural failure.\n\n3. *\"Tuppence helped herself liberally to buttered toast and gave the abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk\"* \u2014 The Archdeacon Cowley is named here but he's on the authorized minor-character removal list. However, he's named here *as her father*, with a relational identifier (\"fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk\"). The descriptor is sufficient. Not a finding.\n\n**Ch 003 draft candidates:**\n\n1. *\"Tuppence's conscience gave her a passing twinge as she remembered the archdeacon.\"* \u2014 In the draft of Ch 002, Tuppence's father is identified as \"Archdeacon Cowley of Little Missendell, Suffolk\" in the biographical recitation. So \"the archdeacon\" has an antecedent in the preceding draft chapter. A reader who has just read the Ch 002 draft would understand \"the archdeacon\" = her father. Not a finding.\n\n2. *\"A middle-aged clerk admitted her at the partition door marked 'Private.'\"* \u2014 The middle-aged clerk is on the authorized minor-character removal list. The authorized cuts note says residual seams from authorized cuts are not findings. The clerk appears here only as a functional gatekeeper without a name. This is fine.\n\n3. *\"That'll do, Brown.\"* \u2014 In the source, the clerk is addressed as \"Brown\" here. The clerk is on the authorized minor-character removal list. The name \"Brown\" appears without introduction in the draft \u2014 the clerk was introduced only as \"A middle-aged clerk\" with no name given. Is this an unglossed name? The name is used only as a dismissal address, not as a reference requiring the reader to know who \"Brown\" is. A competent reader understands this is the clerk's name used in address. The reader is not confused about *who is being addressed* because the clerk was just described performing that action. Marginal, but the gate test: is the reader genuinely confused? No \u2014 they understand it's the clerk. Not a finding.\n\n4. *\"She wrote rapidly: 'Don't put in advertisement. Will explain to-morrow.' She addressed it to Tommy at his club, from which in one short month he would have to resign unless a kindly fortune intervened.\"* \u2014 \"his club\" \u2014 was the club established in the Ch 002 draft? Looking at the Ch 002 draft... no mention of Tommy's club appears anywhere in the Ch 002 draft. In the source Ch 002, \"his club\" is never mentioned either \u2014 it only appears in Ch 003 source. So this is not a mid-scene jump from a cut passage; it's introduced here in Ch 003 for the first time in both source and draft. The reader might wonder what club, but this is a minor detail introduced freshly, not a broken reference. Not a finding.\n\nAfter careful review, I find no instances where compression has structurally damaged meaning in a way that would genuinely confuse a competent reader. Every potentially odd moment either parses cleanly from context, has an antecedent in the preceding draft, or is a residue of an authorized cut.\n\n```json\n[]\n```",
+    "input_tokens": 12804,
+    "output_tokens": 924,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 20.090117692947388,
+    "stop_reason": "end_turn"
+  }
+}

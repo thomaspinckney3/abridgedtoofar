@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:40:36",
+  "key": "f94ba31d1236038d8cb60cf8a342f8bf",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft systematically, applying only the seven structural tests and the gate test.\n\n---\n\n**Ch 002 draft \u2014 checks**\n\n- The authorized removals include Catherine, Mr. McKee, Mrs. McKee. The draft replaces them with descriptors (\"her sister,\" \"a pale, feminine man from the flat below, a photographer, with his shrill, languid wife\"). Those descriptors are clear throughout. No proper-name orphan issue.\n- \"But immediately she tapped on the front glass.\" \u2014 The \"but\" here is a connective; in the source it follows \"we slid out from the mass of the station into the glowing sunshine. But immediately she turned sharply from the window and, leaning forward, tapped on the front glass.\" The draft cuts \"turned sharply from the window and, leaning forward,\" but keeps \"But immediately she tapped on the front glass.\" The pivot word \"but\" now has no contrasting antecedent action in the draft \u2014 however, the preceding sentence ends with them sliding into sunshine, and \"but immediately\" simply marks a quick turn of attention. A competent reader reads this as \"right away, however\" \u2014 slightly abrupt but not misleading. Not a structural failure.\n- \"the sister sat down beside me and, lowering her voice, confided views on marriages that don't stand and why people should get divorces, with elaborate certainty about what kept Tom and Myrtle apart. Much of it was lies and all of it was said with a milky assurance.\" \u2014 The authorized cut removes Catherine's Catholic lie and Monte Carlo tangent. The phrase \"Much of it was lies\" is a summary judgment. The preceding draft sentence establishes the sister said things with \"elaborate certainty about what kept Tom and Myrtle apart.\" The reader knows what was said (views on divorce, what keeps them apart) and the narrator's judgment follows. Parseable. Not a finding.\n- No unglossed proper names from the authorized list appear in Ch 002 draft.\n- No mid-scene jump issues between chapters here.\n\nCh 002 draft looks structurally sound.\n\n---\n\n**Ch 003 draft \u2014 checks**\n\n**Lucille** \u2014 appears by name at the table scene: \"She turned to her companion: 'Wasn't it for you, Lucille?'\" The authorized removal list includes \"Lucille\" as an authorized minor-character removal. But checking: Lucille is on the authorized removal list? Let me re-read. The authorized removals list: \"Ewing Klipspringer, Catherine, Mr. McKee (Chester McKee), Mrs. McKee (Lucille McKee), Mr. Sloane, Lucille, Chester Becker...\" \u2014 yes, \"Lucille\" is listed. But she *does* appear in the Ch 003 draft by name, speaking lines. Her name appears without any role/relationship gloss. However, she is introduced in context as the companion of one of the girls in yellow at the table \u2014 \"She turned to her companion: 'Wasn't it for you, Lucille?'\" \u2014 so she is a party guest, a companion of the other girl. The reader can place her as a minor party guest. The name is used immediately after being introduced by address in the same exchange. Not an orphaned name situation \u2014 she is introduced in the same paragraph where her name first appears. Not a finding.\n\n**The car-in-ditch / Owl Eyes exit scene:** The authorized subplot removal includes \"Owl Eyes's library discovery and the car-in-the-ditch gag (Ch 003).\" The library scene itself is kept in the draft (abbreviated). The car-in-ditch gag is cut. The draft ends the evening differently: \"As I walked down the steps I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\" This replaces the Owl Eyes ditch scene. No dangling reference to it. Fine.\n\n**\"At her first big golf tournament there had been a suggestion that she had moved her ball from a bad lie; the thing approached the proportions of a scandal\u2014then died away.\"** \u2014 The authorized removal is \"Jordan Baker's golf scandal and the 'bad drivers' mini-essay (Ch 003).\" But the draft *keeps* the golf scandal summary and the bad-drivers conversation. This is not a finding about what was cut \u2014 I need to check whether what *remains* is structurally damaged. The golf scandal passage and driving scene are kept intact and parse correctly on their own.\n\n**\"Her instinct was to avoid clever, shrewd men; she felt safer where any divergence from a code would be thought impossible.\"** \u2014 In the source this reads: \"Jordan Baker instinctively avoided clever, shrewd men, and now I saw that this was because she felt safer on a plane where any divergence from a code would be thought impossible.\" The draft cuts \"and now I saw that this was because\" and also cuts \"on a plane.\" The draft sentence still parses and conveys the meaning. Less richly phrased, not structurally damaged.\n\n**\"Once, driving back from a house-party, she passed so close to some workmen...\"** \u2014 The source situates this: \"It was on that same house-party that we had a curious conversation about driving a car. It started because she passed so close to some workmen...\" The draft replaces this with: \"Once, driving back from a house-party, she passed so close to some workmen that our fender flicked a button on one man's coat.\" This is fine \u2014 it introduces the driving scene without needing the source's bridge sentence. Parseable.\n\n**The Gatsby smile description:** \"It faced\u2014or seemed to face\u2014the whole external world for an instant\" \u2014 source has \"eternal world.\" This is a transcription difference (\"external\" vs \"eternal\") but not a structural coherence issue.\n\n**\"the sister sat down beside me and, lowering her voice, confided views on marriages that don't stand...\"** \u2014 wait, this is Ch 002. Already checked.\n\n**Ch 003 \u2014 \"East Egg condescending to West Egg and carefully on guard against its spectroscopic gaiety.\"** \u2014 In the source this is: \"Jordan invited me to join her own party, who were spread around a table on the other side of the garden. There were three married couples and Jordan's escort, a persistent undergraduate given to violent innuendo... Instead of rambling, this party had preserved a dignified homogeneity, and assumed to itself the function of representing the staid nobility of the countryside\u2014East Egg condescending to West Egg and carefully on guard against its spectroscopic gaiety.\" \n\nThe draft reads: \"Jordan invited me to join her own party, East Egg condescending to West Egg and carefully on guard against its spectroscopic gaiety.\" \u2014 The phrase \"East Egg condescending to West Egg\" is appended to the invitation sentence as a compressed appositive. A reader can follow this \u2014 it characterizes Jordan's party. Not structurally broken.\n\n**\"He smiled\u2014and suddenly there seemed to be a pleasant significance in having been among the last to go. As I walked down the steps I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\"** \u2014 Source has the car-in-ditch scene between \"evening was not quite over\" and cutting across the lawn. The draft cuts the car scene but keeps \"I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\" The \"but\" here creates a broken pivot: the source's \"but\" contrasts the ditch-scene spectacle (which provided the content of \"not quite over\") with Nick turning away. In the draft, \"the evening was not quite over\" has no content \u2014 nothing has been shown to make it \"not quite over,\" and then \"but I turned away\" contrasts with something the reader cannot identify. This is a broken logical pivot (test 3): the \"but\" follows from material (the car-in-ditch scene) that was cut.\n\nHowever \u2014 is this an authorized-cut residue? The authorized subplot removals include: \"Owl Eyes's library discovery and the car-in-the-ditch gag (Ch 003).\" The broken pivot is a **direct residue of this authorized cut**. Per the instructions: \"Authorized cuts \u2014 residual seams are not findings.\" So this is NOT a finding.\n\n**Nick's New York work life and Jersey City fling** \u2014 these are authorized subplot removals, but the draft *keeps* them (the Probity Trust passage, the Jersey City affair). They are kept abbreviated. No structural damage from keeping them.\n\n**Checking for any mid-scene jump at the opening of Ch 003** relative to what Ch 002 draft established \u2014 Ch 003 opens with \"There was music from my neighbour's house...\" This is not a definite reference requiring prior establishment. Fine.\n\n**\"I was still with Jordan.\"** \u2014 Jordan Baker is a continuously present character introduced in Ch 003. Fine.\n\n**\"Young men didn't\u2014at least in my provincial inexperience I believed they didn't\u2014drift coolly out of nowhere and buy a palace on Long Island Sound.\"** \u2014 Source has: \"I would have accepted without question the information that Gatsby sprang from the swamps of Louisiana or from the lower East Side of New York. That was comprehensible. But young men didn't...\" The draft cuts the preceding two sentences and presents \"Young men didn't...\" as a standalone paragraph. The \"didn't\" clause parsed alone is a complete sentence; it does not require the cut material to make sense. Not a finding.\n\n---\n\nAfter this full pass, I find no structural coherence failures that survive both the gate test and the authorized-cut exemption.\n\n```json\n[]\n```",
+    "input_tokens": 24794,
+    "output_tokens": 2188,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 49.72094106674194,
+    "stop_reason": "end_turn"
+  }
+}

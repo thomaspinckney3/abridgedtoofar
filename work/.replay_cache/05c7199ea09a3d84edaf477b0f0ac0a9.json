@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:32:45",
+  "key": "05c7199ea09a3d84edaf477b0f0ac0a9",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Looking at both chapter pairs carefully, I'll apply each test systematically.\n\n**Ch 024 draft review:**\n\nThe draft is a tight compression of the source dialogue and action. All pronouns have clear antecedents established within the draft. The rigger scene parses cleanly. No broken pivots, unglossed names, or mid-scene jumps.\n\n**Ch 025 draft review:**\n\nThe Charity mention: \"Charity, his sister, had placed a small choice copy of Watts in each seaman's berth.\" \u2014 Charity is on the authorized minor-character removal list. However, her name appears here with an immediate appositive identifier (\"his sister\"), and Bildad has been established in this same draft chapter. The local gloss is sufficient. The Named-person continuity invariant asks whether \"the local sentence/paragraph must identify that person\" \u2014 it does via appositive. Not a finding.\n\nThe Stubb mention in Peleg's farewell: \"Luck to ye, Starbuck\u2014luck to ye, Mr. Stubb\u2014luck to ye, Mr. Flask\" \u2014 Stubb and Flask are named here. Stubb and Flask are principal officers of the Pequod, recurring throughout the novel. They are not minor removable characters. Starbuck has been actively present throughout Ch 025 draft. Stubb and Flask appear as names in a farewell roll-call. The question is whether a reader is confused. Starbuck has been established; Stubb and Flask appear only as names being bid farewell. But these are major, continuously present characters \u2014 the invariant explicitly excludes \"a major or continuously present character\" from requiring a fresh gloss. Not a finding.\n\nLooking more carefully at the Ch 025 draft: \"Charity, his sister\" \u2014 the authorized removal list includes Aunt Charity. She appears here named with a gloss (\"his sister\"), but the source passage that was cut (her arrival by whale-boat with gifts) was the *introduction* of her name in this chapter. She now appears mid-paragraph without the scene that brought her aboard. However, the local appositive \"his sister\" identifies her role and relationship. A reader understands she is Bildad's sister. They are not confused about who she is, merely unaware of her gift-giving scene. The gate test: a reader reads \"Charity, his sister\" and understands it is Bildad's sister named Charity. Not genuinely confused.\n\nRe-examining the Ch 025 draft for broken pivots: The source passage \"not three days previous, Bildad had told them that no profane songs would be allowed on board... and Charity, his sister, had placed a small choice copy of Watts in each seaman's berth\" \u2014 this is a contrast: the pious prohibition vs. the actual bawdy singing happening now. The draft preserves both sides of this contrast (prohibition + Watts, versus bawdy chorus). The pivot survives. Not a finding.\n\nAfter thorough review, no structurally damaged sentences meet the threshold of genuine reader confusion under the gate test.\n\n```json\n[]\n```",
+    "input_tokens": 8712,
+    "output_tokens": 693,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 17.714406967163086,
+    "stop_reason": "end_turn"
+  }
+}

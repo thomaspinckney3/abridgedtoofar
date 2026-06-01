@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T12:34:37",
+  "key": "203b32692eb49afb6292c82d1f52808f",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "3cc30e40d8356b3ca2603eaa7a6265c2",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"Forces grasped his wrists and flung him about as though he had hold of a live wire or a runaway automobile\u2014\",\n    \"source_has\": \"Man could no longer hold it off. Forces grasped his wrists and flung him about as though he had hold of a live wire or a runaway automobile; which was very nearly the exact truth for the purposes of an elderly and timid single gentleman in Paris...\",\n    \"gate_test_answer\": \"A reader is genuinely confused because the draft introduces 'his' with no prior referent in the paragraph, leaving it unclear whose wrists are being grasped until a later aside, whereas the source first establishes 'Man' as the antecedent.\"\n  }\n]",
+    "input_tokens": 13131,
+    "output_tokens": 7479,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 88.49414801597595,
+    "stop_reason": "stop"
+  }
+}

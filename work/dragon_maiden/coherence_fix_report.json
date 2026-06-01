@@ -1,0 +1,46 @@
+{
+  "book_id": "dragon_maiden",
+  "requested_pairs": [],
+  "include_name_lint": false,
+  "name_lint_only": false,
+  "use_adjudication": false,
+  "name_lint_findings_seen": 0,
+  "adjudication_findings_seen": 0,
+  "adjudication_repair_candidates": 0,
+  "name_lint_findings_mapped": 0,
+  "findings_seen": 1,
+  "findings_selected": 1,
+  "findings_filtered": 0,
+  "filtered_findings": [],
+  "pairs_processed": 1,
+  "pairs_applied": 1,
+  "pairs_no_change": 0,
+  "pairs_failed": 0,
+  "pairs_no_findings": 0,
+  "pairs": [
+    {
+      "pair": "016-017",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "017"
+      ],
+      "before_words": {
+        "016": 1109,
+        "017": 974
+      },
+      "after_words": {
+        "016": 1109,
+        "017": 979
+      },
+      "edits": [
+        {
+          "segment_id": "017-sickbed-names",
+          "change": "Add a compact descriptor for Stephanie so the name is not orphaned; source identifies her only by presence near Cayden, so the smallest fix is to gloss her as 'a woman' or use her relationship as established in earlier source context. The source elsewhere shows Stephanie as a castle attendant/lady; replacing the bare name with a brief apposition is the minimal repair."
+        }
+      ],
+      "dry_run": false
+    }
+  ]
+}

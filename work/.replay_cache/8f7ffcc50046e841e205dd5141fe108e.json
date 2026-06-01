@@ -1,0 +1,81 @@
+{
+  "ts": "2026-05-07T21:19:25",
+  "key": "8f7ffcc50046e841e205dd5141fe108e",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "draft",
+    "hash": "9051cf285d6ab6095a24d0887ebc4cd4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/drafter.py",
+        "sha256": "7b528c6eeb991962ac87433eecf551d6e5701b918acc79a0904da5eaecd834b8",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/motif_ledger.py",
+        "sha256": "e954339be994d3c05b158ff34567bb3fe48f5aa4d1df25b4c7b85e9562aa80d4",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "forage/text_norm.py",
+        "sha256": "203b6456278189eb60b29a06ac25d406164940f405e6f9129b7f2f76c53ce64b",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_lean.md",
+        "sha256": "1ec9e462dab787b602c28800358c800ee1bc882b42b56c4f009f6ab141178152",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_segment.md",
+        "sha256": "45996981ceee16182e89bd7dbdc5983a8446045506ece4efebc6fcca9a43c6ac",
+        "missing": false
+      },
+      {
+        "path": "spec/ABRIDGMENT_SPEC.md",
+        "sha256": "a1d6760a2bf9cbc19d1e92214903cbd1fc03dcbe4e7692307df7e3170c918f7d",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "## Chapter 1\n\nFour whales, struck toward evening, died far sundered\u2014one to windward, one to leeward, one ahead, one astern. The last three were towed alongside ere night; but the windward carcass lay beyond reach till morning; and the boat that had killed it kept ward all night\u2014and that boat was Ahab\u2019s, the captain\u2019s.\n\nA waif-pole stood upright in the dead spout-hole, and from its small lantern a troubled, flickering glare went over the black, glossy back and far across the midnight waves that softly chafed the broad flank, like surf upon a beach. All seemed asleep but the Parsee, Ahab\u2019s secret harpooneer, crouched in the bow, watching the pale sharks that played spectrally round and tapped the cedar with their tails. A shudder like Gomorrah\u2019s unforgiven ghosts moaned over the sea.\n\nStarted from his slumber, Ahab, face to face, saw the Parsee; hoop\u2019d round by the night, they seemed the last men in a flooded world.\n\n\u201cI have dreamed it again,\u201d said he.\n\n\u201cOf the hearses? Have I not said, old man, that neither hearse nor coffin can be thine?\u201d\n\n\u201cAnd who are hearsed that die on the sea?\u201d\n\n\u201cBut I said, old man, that ere thou couldst die on this voyage, two hearses must verily be seen by thee on the sea; the first not made by mortal hands; and the visible wood of the last one must be grown in America.\u201d\n\n\u201cAye, aye! a strange sight that, Parsee:\u2014a hearse and its plumes floating over the ocean with the waves for the pall-bearers. Ha! Such a sight we shall not soon see.\u201d\n\n\u201cBelieve it or not, thou canst not die till it be seen, old man.\u201d\n\n\u201cAnd what was that saying about thyself?\u201d\n\n\u201cThough it come to the last, I shall still go before thee thy pilot.\u201d\n\n\u201cAnd when thou art so gone before\u2014if that ever befall\u2014then ere I can follow, thou must still appear to me, to pilot me still?\u2014Was it not so? Well, then, did I believe all ye say, oh my pilot! I have here two pledges that I shall yet slay Moby Dick and survive it.\u201d\n\n\u201cTake another pledge, old man,\u201d said the Parsee, his eyes like fire-flies in the gloom\u2014\u201cHemp only can kill thee.\u201d\n\n\u201cThe gallows, ye mean.\u2014I am immortal then, on land and on sea,\u201d cried Ahab, with a deriding laugh;\u2014\u201cImmortal on land and on sea!\u201d\n\nThey were silent again. The grey dawn came; the crew stirred from the boat\u2019s bottom; and ere noon the dead whale was brought to the ship.\n\n\n## Chapter 2\n\nThe season for the Line drew near; daily, when Ahab, the captain, came aloft, the helmsman fondled his spokes, the men sprang to the braces, and all eyes fixed on the nailed doubloon\u2014waiting the word to head for the equator. At last, hard upon high noon, the order came. Ahab, seated in the bows of his high-hoisted boat, raised his daily instrument to take the sun.\n\nIn that Japanese sea the summer days are freshets of effulgences; the unblinking sun the blazing focus of the glassy ocean\u2019s burning-glass; the lacquered sky without a cloud; the horizon afloat; the naked radiance like the insufferable splendors of God\u2019s throne. Well that his quadrant had coloured glasses. Swinging to the ship\u2019s roll, Ahab steadied the astrological-looking thing to his eye; beneath him, the Parsee knelt, upturned to the same orb, his lids half-hooded, his wild visage subdued to passionlessness.\n\nThe observation taken, with a pencil upon his ivory leg Ahab cast his latitude; then, looking again sunward, murmured: \u201cThou sea-mark! thou high and mighty Pilot! thou tellest me truly where I am\u2014but canst thou cast the least hint where I shall be? Or canst thou tell where some other thing besides me is this moment living? Where is Moby Dick? This instant thou must be eyeing him. These eyes of mine look into the very eye that is even now beholding him.\u201d\n\nHis hand went back to the cabalistical wheels and sights. \u201cFoolish toy! babies\u2019 plaything of haughty Admirals and Captains; the world brags of thee; but what after all canst thou do, but tell the poor, pitiful point where thou thyself happenest to be, and the hand that holds thee\u2014no! not one jot more! Thou canst not tell where one drop of water or one grain of sand will be to-morrow noon; and yet with thy impotence thou insultest the sun! Science! Curse thee, thou vain toy; and cursed be all the things that cast man\u2019s eyes aloft to that heaven, whose live vividness but scorches him. Curse thee, thou quadrant!\u201d He dashed it to the deck. \u201cNo longer will I guide my earthly way by thee; the level ship\u2019s compass, and the level dead-reckoning, by log and by line; these shall conduct me, and show me my place on the sea. Aye,\u201d he leaped to the deck, \u201cthus I trample on thee, thou paltry thing that feebly pointest on high; thus I split and destroy thee!\u201d\n\nWhile his live and dead feet so trampled, a sneering triumph meant for Ahab, and a fatalistic despair meant for himself, crossed the mute Parsee\u2019s face; unnoted, he rose and glided away. The men, awestruck, clustered forward; then Ahab, troubledly pacing, shouted\u2014\u201cTo the braces! Up helm!\u2014square in!\u201d\n\nIn an instant the yards swung; the ship half-wheeled upon her heel; her three firm masts poised like dancers upon the ribbed hull.\n\nStanding between the knight-heads, Starbuck, the chief mate, watched the Pequod\u2019s tumultuous way, and Ahab\u2019s also, as he lurched along.\n\n\u201cI have sat before the dense coal fire,\u201d he said, \u201cand watched it all aglow, full of its tormented flaming life; and I have seen it wane at last, down, down, to dumbest dust. Old man of oceans! of all this fiery life of thine, what will at length remain but one little heap of ashes!\u201d\n\n\u201cAye,\u201d cried Stubb, the second mate, \u201cbut sea-coal ashes\u2014mind ye that, Mr. Starbuck\u2014sea-coal, not your common charcoal. Well, well; I heard Ahab mutter, \u2018Here some one thrusts these cards into these old hands of mine; swears that I must play them, and no others.\u2019 And damn me, Ahab, but thou actest right; live in the game, and die in it!\u201d",
+    "input_tokens": 11785,
+    "output_tokens": 3657,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 35.43545579910278,
+    "stop_reason": "stop"
+  }
+}

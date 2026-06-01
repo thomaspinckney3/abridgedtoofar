@@ -1,0 +1,71 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age; muted period authenticity in dress and interiors
+- line and color: Clean inked linework with soft watercolor washes; sepia and dusk-blue palette with cream paper tones
+- lighting: Warm interior lamplight against cool window light; long shadows suggesting memory and retrospection
+
+Character continuity:
+- Nick Carraway: Lean young man, early thirties, neatly parted light-brown hair, thoughtful gray eyes, narrow jaw Costume: White shirt with rolled sleeves, loosened dark tie, suspenders, high-waisted wool trousers Continuity: Stepping outside his bungalow to take in the geography of West Egg for the first time.
+- Nick's Father: Older man, silver-streaked hair, trim mustache, kind but stern eyes Costume: Dark three-piece Midwestern suit, watch chain, stiff collar Continuity: Appears briefly in a remembered conversation; render with softer linework and warmer wash.
+- Finnish Housekeeper: Stout middle-aged woman, ruddy cheeks, hair in a low bun, capable hands Costume: Plain dark dress, white apron Continuity: New minor character; appears only in the bungalow kitchen.
+- Lost Stranger: Young man newer to the area than Nick, hat in hand, uncertain stance Costume: Light summer suit, straw boater, walking shoes Continuity: One-off speaker on the country road.
+
+Page 1 summary: Nick sits at his desk at night, opens a notebook, and begins writing his account; as he writes, he recalls his father's advice, considers how reserving judgment has shaped his life, and admits that his tolerance has a limit—he has come back from the East wanting the world at moral attention.
+
+Panels:
+
+Panel 1:
+Beat: Nick, alone at a lamp-lit desk at night, opens a notebook and uncaps his pen; behind him a window shows the dim Midwestern dusk. He pauses to remember his father's long-ago advice.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Medium shot of a thoughtful young man in white shirt, suspenders, and loosened tie seated at a wooden writing desk in a quiet study at night. A brass desk lamp glows warmly on an open blank notebook and uncapped fountain pen. A framed photograph of an older man sits near the inkwell. Behind him, a tall window shows a deep blue dusk. Warm amber lamplight, cool blue window light, soft watercolor wash. Reserve a clear empty band across the top of the panel and a clear empty strip along the bottom for caption boxes. Keep his face, hands, and the notebook well inside the central area, away from the top and bottom edges. No text, no lettering, no signs. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+
+Panel 2:
+Beat: Memory image: Nick's father, seen across a parlor table years earlier, speaking quietly to a younger Nick. The scene is rendered in warmer, softer tones to mark it as memory.
+Shot: medium
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- balloon_1: speech for Nick's Father, top_left, x=6%, y=4%, w=38%, h=19%
+- balloon_2: speech for Nick's Father, top_left, x=6%, y=26%, w=38%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty speech box balloon_1 for Nick's Father: x 6%, y 4%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Nick's Father: x 6%, y 26%, w 38%, h 19%. - Place Nick's Father body in x 6%, y 52%, w 40%, h 44%; face in x 20%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Nick's Father: body x=6%, y=52%, w=40%, h=44%; face x=20%, y=56%, w=10%, h=9%
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Nick's Father: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Nick's Father: x 56%, y 4%, width 38%, height 24%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Nick's Father on the left, below or beside that speaker's slot; stage Nick's Father on the right, below or beside that speaker's slot.
+Art prompt: A warm sepia-toned memory scene: an older man with silver-streaked hair, trim mustache, dark three-piece suit and watch chain leans slightly forward across a polished parlor table, speaking gently. Soft afternoon light through lace curtains. A younger man's shoulder is visible at the right edge, listening. Period 1900s American Midwestern interior. Soft brushwork, slightly hazy edges to signal memory. Reserve a wide empty area at the top of the panel and a smaller clear zone at bottom-right for two speech balloons. Keep the father's mouth, eyes, and hands well inside the central frame, away from the reserved top band. No text, no lettering. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Nick's Father: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Nick's Father: x 56%, y 4%, width 38%, height 24%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Nick's Father on the left, below or beside that speaker's slot; stage Nick's Father on the right, below or beside that speaker's slot.
+
+Panel 3:
+Beat: Back at the desk in the present. Nick writes, his pen moving across the page; in his mind he sees faint, ghostly figures of college men leaning in to confide in him.
+Shot: close
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Close shot of a young man's hand guiding a fountain pen across an open notebook page on a lamplit desk. His other hand rests near his temple in thought. Faintly visible in the smoke-like blur of the background, ghostly translucent silhouettes of several young men in 1910s collegiate clothing lean toward him as if confiding. Warm amber light on the page, cool shadows around. Reserve a tall empty column along the left side and a clear strip along the bottom for caption boxes. Keep the pen, hand, and notebook clearly inside the right half of the panel. No text on the notebook page, no lettering anywhere. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+
+Panel 4:
+Beat: Nick rises from the desk and turns to the window, jaw set. Beyond the glass, faint silhouettes of New York skyline and revelers fade into night. His tolerance has reached its limit; he has come home wanting moral order.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Wide shot of a young man in shirt and suspenders standing at a tall study window at night, one hand resting on the sash, his expression firm and weary. Reflected faintly in the dark glass, ghostly impressions of a distant city skyline and blurred figures in evening dress dissolve into the night sky. The lit desk with notebook and lamp sits behind him at the right. Cool deep blue tones outside, warm amber spill from the lamp. Soft watercolor wash, clean ink lines. Reserve a wide empty band across the top of the panel and a clear empty band across the bottom for three stacked caption boxes. Keep the figure's face, hand, and the window's central area free of any overlap with those reserved bands. No text, no lettering, no signage. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.

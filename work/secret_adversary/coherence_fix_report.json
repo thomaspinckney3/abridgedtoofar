@@ -1,0 +1,262 @@
+{
+  "book_id": "secret_adversary",
+  "requested_pairs": [],
+  "include_name_lint": false,
+  "name_lint_only": false,
+  "use_adjudication": false,
+  "name_lint_findings_seen": 0,
+  "adjudication_findings_seen": 0,
+  "adjudication_repair_candidates": 0,
+  "name_lint_findings_mapped": 0,
+  "findings_seen": 10,
+  "findings_selected": 10,
+  "findings_filtered": 0,
+  "filtered_findings": [],
+  "pairs_processed": 10,
+  "pairs_applied": 10,
+  "pairs_no_change": 0,
+  "pairs_failed": 0,
+  "pairs_no_findings": 0,
+  "pairs": [
+    {
+      "pair": "001-002",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "002"
+      ],
+      "before_words": {
+        "001": 387,
+        "002": 968
+      },
+      "after_words": {
+        "001": 387,
+        "002": 968
+      },
+      "edits": [
+        {
+          "segment_id": "002-idx-0",
+          "change": "Replace ambiguous 'Her grey eyes looked misty' with 'Tuppence's grey eyes looked misty' to anchor the pronoun unambiguously, matching the source's explicit name reference."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "004-005",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "005"
+      ],
+      "before_words": {
+        "004": 674,
+        "005": 1141
+      },
+      "after_words": {
+        "004": 674,
+        "005": 1173
+      },
+      "edits": [
+        {
+          "segment_id": "005-1",
+          "change": "Insert Carter's prior question about the telephone message before asking whether Tuppence noticed a telephone, so the 'Exactly' pivot is logically motivated."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "005-006",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "006"
+      ],
+      "before_words": {
+        "005": 1173,
+        "006": 766
+      },
+      "after_words": {
+        "005": 1173,
+        "006": 769
+      },
+      "edits": [
+        {
+          "segment_id": "006-idx-2",
+          "change": "Insert the triggering physical action between Tuppence's request and her cry of pain so 'Ow! That's enough!' is attributed. Added 'Mr. Beresford obliged.' as a single bridging sentence, the smallest fix that restores cause."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "006-007",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "007"
+      ],
+      "before_words": {
+        "006": 769,
+        "007": 805
+      },
+      "after_words": {
+        "006": 769,
+        "007": 826
+      },
+      "edits": [
+        {
+          "segment_id": "007-para-rapprochement+list",
+          "change": "In ch007, the sentence introducing the Lusitania list needs a brief gloss explaining Tuppence had written to Carter asking for it, so 'Mr. Carter's reply' has an established referent for a draft-only reader."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "009-010",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "010"
+      ],
+      "before_words": {
+        "009": 1390,
+        "010": 1065
+      },
+      "after_words": {
+        "009": 1390,
+        "010": 1098
+      },
+      "edits": [
+        {
+          "segment_id": "010-para-01",
+          "change": "Opening sentence lacks antecedent for 'Tommy set off after the two men' because Tommy's recovery and the earlier trailing scene are cut. Added a compact orienting clause (drawn from source ch.010 opening) identifying the two men as having come from the second-floor flat and naming the 'Rita' thread, so the reader understands the timeline without a new scene."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "010-011",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "011"
+      ],
+      "before_words": {
+        "010": 1098,
+        "011": 938
+      },
+      "after_words": {
+        "010": 1098,
+        "011": 958
+      },
+      "edits": [
+        {
+          "segment_id": "011-para-stationer",
+          "change": "Add compact gloss identifying the stationer's as the pre-arranged message drop via Albert, matching source Ch 010 setup without restoring cut scene."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "018-019",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "019"
+      ],
+      "before_words": {
+        "018": 1448,
+        "019": 2233
+      },
+      "after_words": {
+        "018": 1448,
+        "019": 2252
+      },
+      "edits": [
+        {
+          "segment_id": "019-idx6",
+          "change": "Julius's compressed narration summary omits Jane Finn's amnesia, leaving Tommy's reaction without a referent. Added a single clause to the narration summary to establish that Julius mentioned Jane Finn had lost her memory, so Tommy's 'Lost her memory, eh?' has a clear antecedent."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "019-020",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "020"
+      ],
+      "before_words": {
+        "019": 2252,
+        "020": 1420
+      },
+      "after_words": {
+        "019": 2252,
+        "020": 1395
+      },
+      "edits": [
+        {
+          "segment_id": "020-idx-7",
+          "change": "Add a compact gloss before Sir James's 'Rita' remark so that the crying-out incident has an antecedent: Tommy mentions the girl called for 'Marguerite' as he escaped, giving Sir James his cue to note the Rita/Marguerite discrepancy."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "022-023",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "023"
+      ],
+      "before_words": {
+        "022": 907,
+        "023": 740
+      },
+      "after_words": {
+        "022": 907,
+        "023": 747
+      },
+      "edits": [
+        {
+          "segment_id": "023-idx-8",
+          "change": "The PM's question about 'the bogus inspector' is unresolvable without a referent. Add 'Inspector Brown' as an appositive gloss so the reader knows this is the alias Mr. Brown used — the smallest local repair that resolves the dangling reference without restoring any cut scene."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "027-028",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "028"
+      ],
+      "before_words": {
+        "027": 783,
+        "028": 1831
+      },
+      "after_words": {
+        "027": 783,
+        "028": 1841
+      },
+      "edits": [
+        {
+          "segment_id": "028-09",
+          "change": "Restore the explanatory clause 'he showed me a note of hers to him once' so that Tommy's deduction that Sir James wrote the forgery has its evidential foundation."
+        }
+      ],
+      "dry_run": false
+    }
+  ]
+}

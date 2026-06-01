@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:18:16",
+  "key": "8410ad992cbd06dbb946afb102c0a0b1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying the gate test and checking only for structural damage (not loss of ornamentation).\n\n---\n\n**Ch 045 draft \u2014 pass-through check**\n\nThe draft is a compression of the Whiteness of the Whale chapter. The main cuts are atmospheric elaborations, footnotes, and some examples. Checking for structural damage:\n\n- \"Therefore, in his other moods, symbolize whatever grand or gracious thing he will by whiteness...\" \u2014 \"his other moods\" refers to... whom? In both source and draft the pronoun \"he\" here is impersonal/generic (the same construction Melville uses). This is not a referential problem introduced by compression; it exists in the source too. Not a finding.\n\n- The draft cuts the transition \"Can we, then, by the citation of some of those instances...\" and moves directly into the examples. The examples still parse. Not a finding.\n\n- The mariner passage: the source has \"yet where is the mariner who will tell thee, 'Sir, it was not so much the fear of striking hidden rocks, as the fear of that hideous whiteness that so stirred me?'\" \u2014 the draft cuts this. The preceding sentence ends \"heart and helm they both go down; he never rests till blue water is under him again\" \u2014 but wait, the draft cuts that sentence too. Let me check: the draft reads: \"...then he feels a silent, superstitious dread; the shrouded phantom of the whitened waters is horrible to him as a real ghost. Not so the sailor beholding the scenery of the Antarctic seas...\" The source had \"in vain the lead assures him he is still off soundings; heart and helm they both go down; he never rests till blue water is under him again. Yet where is the mariner who will tell thee...\" and then a second numbered example about the Indian of Peru before the Antarctic sailor passage. The draft jumps from the mariner to \"Not so the sailor beholding the scenery of the Antarctic seas\" \u2014 in the source these are part of a \"First/Second\" numbered pair. The draft cuts the \"Second\" label and the Peru/backwoodsman setup. The \"Not so the sailor\" pivot contrasts with something that *was* present in the draft (the mariner's fear), just not labeled as \"First.\" The reader can follow the contrast. Not a finding.\n\n- No unglossed names, no broken pivots that require material cut from draft. Ch 045 is clean.\n\n---\n\n**Ch 047 draft \u2014 check**\n\n- \"Yet these, perhaps, instead of being the unsuppressable symptoms of some latent weakness, or fright at his own resolve, were but the plainest tokens of **their** intensity.\"\n\nSource: \"were but the plainest tokens of **its** intensity\" \u2014 \"its\" refers to Ahab's resolve/purpose, which is present in the draft. The draft changes \"its\" to \"their\" \u2014 \"their\" now has no clear antecedent. The nearest plural nouns are \"symptoms,\" \"tokens,\" or the described throes/dreams. The source's \"its\" pointed to Ahab's resolve (singular). The draft's \"their\" is genuinely ambiguous/broken \u2014 a reader would not know what \"their\" refers to (the symptoms? the throes?). This is a dangling pronoun introduced by compression/editing.\n\n- \"For the Ahab that had gone to his hammock was not the agent that caused him to burst from it again. The latter was the eternal, living principle or soul in him...\"\n\nSource: \"the latter was the eternal, living principle or soul in him.\" In context \"the latter\" refers to the second of two things mentioned: \"not the agent that so caused him to burst from it in horror again. The latter was the eternal, living principle or soul in him.\" In the draft sentence, \"the latter\" should refer to the second item in a two-item list. The draft sentence has: \"not the agent that caused him to burst from it again. The latter was the eternal, living principle or soul in him.\" The two items are (1) the Ahab that went to his hammock, (2) the agent that caused him to burst. \"The latter\" = the agent = the eternal living principle. This parses, if awkwardly. A reader can follow it. Not a finding.\n\n- \"In Ahab's case, yielding up all his thoughts to his one supreme purpose, that purpose, by its own sheer inveteracy of will, forced itself into a kind of self-assumed, independent being of its own.\"\n\nSource has a subordinating clause \"yielding up all his thoughts and fancies to his one supreme purpose\" grammatically attached to \"it must have been that, in Ahab's case...\" \u2014 i.e., there's a main clause (\"it must have been that\") preceding. The draft cuts \"it must have been that\" and the sentence now begins with a dangling participial phrase \"yielding up all his thoughts to his one supreme purpose\" \u2014 whose subject is unclear. The sentence has a main clause (\"that purpose...forced itself\") but \"yielding up all his thoughts\" dangles without a clear subject (it should attach to \"Ahab\" but the sentence's grammatical subject is \"that purpose\"). A competent reader would be confused about who is yielding up thoughts \u2014 Ahab or the purpose. This is a structural damage introduced by compression.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"were but the plainest tokens of their intensity\",\n    \"source_has\": \"were but the plainest tokens of its intensity \u2014 'its' referring unambiguously to Ahab's resolve\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'their' has no clear plural antecedent in the draft (the nearest candidates are 'symptoms' or 'throes'), whereas the source's 'its' pointed unambiguously to Ahab's singular resolve/purpose.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"In Ahab's case, yielding up all his thoughts to his one supreme purpose, that purpose, by its own sheer inveteracy of will, forced itself into a kind of self-assumed, independent being of its own.\",\n    \"source_has\": \"it must have been that, in Ahab's case, yielding up all his thoughts and fancies to his one supreme purpose; that purpose, by its own sheer inveteracy of will, forced itself\u2026 \u2014 the participial phrase 'yielding up' was anchored to the main clause subject 'it must have been that'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the participial phrase 'yielding up all his thoughts' dangles without a grammatical subject \u2014 the draft's main-clause subject is 'that purpose,' which cannot be the thing yielding up thoughts; the source's framing clause ('it must have been that') provided the anchor that was cut.\"\n  }\n]\n```",
+    "input_tokens": 15153,
+    "output_tokens": 1625,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 34.28739786148071,
+    "stop_reason": "end_turn"
+  }
+}

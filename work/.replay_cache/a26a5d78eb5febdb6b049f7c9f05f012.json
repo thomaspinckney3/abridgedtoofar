@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:05:01",
+  "key": "a26a5d78eb5febdb6b049f7c9f05f012",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test to every potentially damaged sentence.\n\n---\n\n**Ch 027 draft review**\n\nThe draft compresses cleanly. The newspaper-cutting context is slightly condensed but the cutting's role (identifying the dead man in New York as the real Hersheimmer) is preserved. Sir James's explanation of the escape plot omits the detail about Tommy's \"sharp\" evasion but the pivot \"Tommy\u2026Yes. I'm not too easy in my mind about him\" still parses because Tommy was mentioned immediately before. The prison-room scene, the revelation, and the capture all survive structurally intact.\n\nNo findings in Ch 027.\n\n---\n\n**Ch 028 draft review**\n\n**Candidate 1 \u2014 \"The professor said\u2026\"**\n\nSource: \"Professor D----, the great alienist, was present. The talk fell on insanity. He said, 'A great many men are mad\u2026'\" Draft: \"The professor said, 'A great many men are mad, and no one knows it.'\" The source glossed \"Professor D----\" as \"the great alienist.\" The draft drops that gloss but also drops the name, referring only to \"the professor.\" A descriptor without a proper name does not trigger rule 7, and the reader understands someone at a dinner said something alarming \u2014 the gloss (\"alienist\") would sharpen the frisson but its absence does not make the sentence non-parseable or genuinely misleading. **Rejected** (less ornamented, not structurally broken).\n\n**Candidate 2 \u2014 Sir William Beresford introduced as \"an old friend of his\"**\n\nDraft guest list: \"Mr. Carter; an old friend of his, Sir William Beresford.\" Source had the same construction. Sir William then appears as \"a choleric-looking old gentleman\" and is addressed as \"sir\" by Tommy, who calls him his uncle. The draft has not previously established the uncle relationship before that scene, but the scene itself makes it explicit immediately (\"So you're my nephew\"). A competent reader is not confused. **Rejected**.\n\n**Candidate 3 \u2014 \"I sent Albert to Mr. Carter\"**\n\nTommy's explanation in the draft: \"I sent Albert to Mr. Carter, pretended to go away, and doubled back.\" Albert appears here without any prior identification in the draft of Ch 028, and Ch 027's draft does not mention Albert at all. Albert's role and identity (Tommy's helper, the boy from the earlier chapters) were established much earlier in the novel and he is a recurring named helper, not a minor removable character. The authorized minor-character removal list does not include Albert. However, Albert has been absent from the draft for many chapters and his name appears here with no local role identifier.\n\nApply rule 7: Is Albert a \"minor/removable character whose proper name appears without a local role, relationship, or appositive identifier, and the immediately preceding draft chapter does not establish who that named person is\"? Albert is not on the authorized removal list, but he is a minor named character who has not appeared in either of the two chapters under review, and the draft gives him no identifier here. A reader of only these compressed chapters would not know who Albert is. The source chapter also provides no fresh gloss (it just says \"I sent off Albert post-haste\"), so the absence of a gloss is not a result of compression of this chapter \u2014 it was already unglossed in the source at this point because Albert was a known recurring character. Since he is a continuously present supporting character (the hotel-boy helper), not a truly minor removable one, and the source itself doesn't gloss him here, this is an authorized-cut residue from earlier compression, not a seam created in these two chapters. **Rejected**.\n\n**Candidate 4 \u2014 Tommy's note and \"Julius *had* seen it. *Sir James hadn't!*\"**\n\nDraft: \"She'd never spell her name 'Twopence,' but anyone who'd never seen it written might easily do so. Julius *had* seen it. *Sir James hadn't!*\" This is a broken-pivot candidate. The logic depends on the reader knowing that Julius once showed Tommy a note from Tuppence. The source makes this explicit: \"Julius _had_ seen it\u2014he showed me a note of hers to him once.\" The draft cuts the explanatory clause entirely. Without it, the statement \"Julius *had* seen it\" is a bare assertion with no grounding \u2014 the reader cannot understand *how* Julius had seen Tuppence's handwriting, which is the entire logical crux of Tommy's deduction. The sentence as drafted reads as the conclusion of a two-part logical structure (\"Julius had seen her name written; Sir James hadn't; therefore the forger was Sir James\") but the first premise's basis is cut. A reader genuinely cannot reconstruct why Julius having seen it matters unless they know he'd previously received a note from her.\n\nGate test: A competent reader with no source access would be genuinely confused: the claim \"Julius *had* seen it\" is an unsupported assertion, and without the source clause explaining how, the deduction collapses into an unexplained non sequitur. This is a **broken pivot** \u2014 one side of a two-sided logical structure (the evidence that Julius had prior exposure to Tuppence's written name) was cut, leaving only the bare conclusion.\n\n**This is a valid finding.**\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"She'd never spell her name 'Twopence,' but anyone who'd never seen it written might easily do so. Julius *had* seen it. *Sir James hadn't!*\",\n    \"source_has\": \"She'd never spell her name 'Twopence,' but anyone who'd never seen it written might quite easily do so. Julius _had_ seen it\u2014he showed me a note of hers to him once\u2014but _Sir James hadn't!_\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'Julius had seen it' is an unsupported bare assertion without the explanatory clause 'he showed me a note of hers to him once,' so the logical deduction that Sir James (not Julius) wrote the forgery has no evidential foundation and reads as a non sequitur.\"\n  }\n]\n```",
+    "input_tokens": 12940,
+    "output_tokens": 1444,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 36.66529679298401,
+    "stop_reason": "end_turn"
+  }
+}

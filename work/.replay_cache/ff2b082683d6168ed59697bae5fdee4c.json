@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:33:43",
+  "key": "ff2b082683d6168ed59697bae5fdee4c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test to every candidate.\n\n---\n\n**Ch 031 draft \u2014 \"A grey Manxman, an old sepulchral man popularly invested with preternatural powers of discernment, insinuated that if ever Captain Ahab should be tranquilly laid out, whoever should do that last office for the dead, would find a birth-mark on him from crown to sole.\"**\n\nThe Manxman is on the authorized minor-character removal list. In the source, this passage is preceded by the Gay-Head Indian's remark AND the Manxman's contrasting insinuation. In the draft the Gay-Head Indian's remark has been cut (the line is reassigned: \"said an old Gay-Head Indian\" appears later, in the ivory-leg paragraph, but the specific remark about the scar/brand origin is gone). The Manxman paragraph in the source functions as a counter-weight (\"Yet, this wild hint seemed inferentially negatived, by what a grey Manxman insinuated\u2026\"). In the draft, the Manxman sentence stands without the \"yet/however\" pivot \u2014 but the Manxman is on the authorized removal list, so a seam here is expected and not a finding.\n\n**Ch 031 draft \u2014 \"strangely heightened by Elijah's diabolical incoherences uninvitedly recurring to me.\"**\n\n\"Elijah\" \u2014 is this a named minor character? Elijah appeared in the boarding/departure chapters (Ch 019\u2013021 range) as a prophetic figure on the wharf. He is not on the authorized minor-character removal list, and he is not a principal character. The draft of Ch 031 is the chapter immediately following Ch 030 draft. Ch 030 draft does not mention Elijah. Does any earlier surviving draft chapter establish Elijah? The question is whether the immediately preceding draft chapter (Ch 030) establishes him. It does not. However, the invariant says \"the preceding draft chapter or the local sentence/paragraph must identify that person.\" The local sentence provides no role, relationship, or appositive. Elijah's role (the prophetic figure on the wharves, the \"ragged Elijah\") is established in the source of Ch 031 (\"the ragged Elijah's diabolical incoherences\") \u2014 but the draft strips the descriptor \"ragged\" and the source gloss \"that outlandish prophet of the wharves.\" A competent reader with no source access, reading only the draft, encounters \"Elijah's diabolical incoherences\" with no local identifier. Without the appositive \"that outlandish prophet of the wharves\" or any equivalent, a reader cannot place who Elijah is. This is a genuine unglossed-name failure.\n\nNo other structural failures found after full review.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"strangely heightened by Elijah's diabolical incoherences uninvitedly recurring to me.\",\n    \"source_has\": \"strangely heightened at times by the ragged Elijah's diabolical incoherences uninvitedly recurring to me \u2026 that outlandish prophet of the wharves\",\n    \"gate_test_answer\": \"A reader with no source access has no way to know who Elijah is \u2014 the draft provides no appositive, descriptor, or prior introduction in any surviving draft chapter, so the name is genuinely unplaceable, not merely less evocative.\"\n  }\n]\n```",
+    "input_tokens": 8902,
+    "output_tokens": 841,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 18.4513680934906,
+    "stop_reason": "end_turn"
+  }
+}

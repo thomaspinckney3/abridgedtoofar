@@ -1,0 +1,211 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age; muted period authenticity in dress and interiors",
+    "line_and_color": "Clean inked linework with soft watercolor washes; sepia and dusk-blue palette with cream paper tones",
+    "lighting": "Warm interior lamplight against cool window light; long shadows suggesting memory and retrospection",
+    "lettering": "Hand-lettered serif captions in cream caption boxes with thin black borders; minimal balloons",
+    "recurring_motifs": [
+      "a single desk lamp",
+      "open notebook and pen",
+      "window framing distant water",
+      "father's photograph on the desk"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, early thirties, neatly parted light-brown hair, thoughtful gray eyes, narrow jaw",
+      "costume": "White shirt with sleeves rolled, loosened dark tie, suspenders, high-waisted wool trousers; in war flashback, U.S. Army officer's olive drab tunic and Sam Browne belt; in 1922 arrival, traveling suit with overcoat and hat",
+      "expression_range": "Reflective, wry, restrained; flickers of hope and weariness",
+      "continuity_note": "Same narrator from page 1, now bridging memory to action: war, return home, decision to go East."
+    },
+    {
+      "name": "Nick's Father",
+      "visual_anchor": "Older man, silver-streaked hair, trim mustache, kind but stern eyes",
+      "costume": "Dark three-piece Midwestern suit, watch chain, stiff collar",
+      "expression_range": "Measured, paternal; here, gravely agreeable",
+      "continuity_note": "Appears briefly in a remembered conversation; render with softer linework and warmer wash."
+    }
+  ],
+  "page": {
+    "page_number": 2,
+    "page_summary": "At his desk, Nick writes about the one exception to his scorn—Gatsby—then turns the page to his own history: graduating, returning restless from the Great War, securing his father's backing, and arriving East in spring 1922 where a coworker's suggestion points him toward a commuter town.",
+    "source_unit_ids": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "source_word_range": [336, 647],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick at his desk pauses over the notebook; in the ghosted window-reflection, a tall silhouette resolves—Gatsby, the one exception, sensed but unseen.",
+        "shot": "medium",
+        "image_prompt": "Night interior of a Midwestern study. Nick Carraway in white shirt and loosened tie sits at his desk, pen lifted from an open notebook, gazing toward the dark window at right. In the windowpane, a faint, ghosted silhouette of a tall man in an elegant suit appears as if registering on the glass—no facial detail, only an impression of presence. Warm desk-lamp light on Nick's hands and face; cool blue night beyond. Sepia and dusk-blue palette. Empty space along the top edge and lower-left for caption boxes; keep Nick's face, hands, pen, and the ghost silhouette clear of those zones.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p2_c1a",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.5, "h": 0.16},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "Only Gatsby was exempt from my reaction—Gatsby, who represented everything for which I have an unaffected scorn.",
+            "reading_order": 1
+          },
+          {
+            "id": "p2_c1b",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.78, "w": 0.46, "h": 0.17},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "Something gorgeous about him—a sensitivity to the promises of life.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Only Gatsby was exempt from my reaction—Gatsby, who represented everything for which I have an unaffected scorn. // Yet there was something gorgeous about him, some heightened sensitivity to the promises of life.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Reuses page 1 motifs: desk lamp, notebook, window with ghost reflection. Gatsby is implied, not shown.",
+        "source_unit_ids": [12, 13],
+        "source_word_range": [336, 403],
+        "source_anchor": "Only Gatsby... was exempt... something gorgeous about him.",
+        "adaptation_note": "Anchors abstract praise to Nick's writing gesture and a single ghosted reflection rather than a symbolic tableau."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Close on Nick's hand writing; on the page, a sentence forms about hope and what preyed on Gatsby. The lamp pools light on cream paper.",
+        "shot": "detail",
+        "image_prompt": "Tight overhead detail of Nick's right hand with fountain pen against a cream notebook page, ink lines forming on the paper. Lamp glow at upper right warms the scene; the desk's wood grain visible beneath. No legible text—only suggestive ink strokes. Sepia wash. Reserve broad empty space at top-right and bottom-center for caption boxes; keep the hand, pen tip, and ink lines outside those zones.",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p2_c2a",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.5, "y": 0.05, "w": 0.46, "h": 0.2},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "An extraordinary gift for hope, a romantic readiness I have never found in any other person.",
+            "reading_order": 1
+          },
+          {
+            "id": "p2_c2b",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.15, "y": 0.78, "w": 0.7, "h": 0.17},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "Gatsby turned out all right at the end; it is what preyed on him, what foul dust floated in the wake of his dreams, that closed out my interest in other men.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "An extraordinary gift for hope—a romantic readiness I have never found in any other person. // Gatsby turned out all right at the end; it is what preyed on him, what foul dust floated in the wake of his dreams, that closed out my interest in the abortive sorrows and short-winded elations of men.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Same desk and lamp; physical act of writing carries the abstract reflection.",
+        "source_unit_ids": [14, 15],
+        "source_word_range": [404, 492],
+        "source_anchor": "extraordinary gift for hope... what preyed on Gatsby...",
+        "adaptation_note": "Caption-only beat keeps thematic prose attached to the visible writing action."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Memory unfurls: a young Nick in uniform returns from the Great War to his prominent Midwestern family's parlor; the homecoming is warm but he is already restless, the Midwest now feeling like the ragged edge of the world.",
+        "shot": "wide",
+        "image_prompt": "Soft-edged memory panel, warmer sepia wash. A respectable Midwestern parlor in 1919: heavy drapes, framed family portraits, a mantel clock. Young Nick Carraway in U.S. Army officer's olive-drab tunic and Sam Browne belt stands just inside the doorway with a duffel at his feet, hat in hand, looking past the room toward a bright window where the flat horizon stretches out. His expression is polite but distant, restless. Edges of the panel feather into cream. Empty space across the top for a caption strip and at lower right for a second caption; keep Nick's face, uniform details, and the window clear.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p2_c3a",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.06, "y": 0.05, "w": 0.88, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "My family have been prominent, well-to-do people in this Middle Western city for three generations. I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War.",
+            "reading_order": 1
+          },
+          {
+            "id": "p2_c3b",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.5, "y": 0.78, "w": 0.46, "h": 0.17},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "I enjoyed the counter-raid so thoroughly that I came back restless. The Middle West now seemed like the ragged edge of the universe.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "My family have been prominent, well-to-do people in this Middle Western city for three generations. I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War. // I enjoyed the counter-raid so thoroughly that I came back restless—the Middle West now seemed the ragged edge of the universe.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Memory frame: feathered edges, warmer wash, softer line, as established for remembered scenes.",
+        "source_unit_ids": [16, 17, 18, 19],
+        "source_anchor": "My family have been prominent... ragged edge of the universe.",
+        "source_word_range": [493, 570],
+        "adaptation_note": "Compresses biographical exposition into one staged homecoming so it reads as a single observable beat, not a montage."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Spring 1922: Nick steps off a train into the East, suitcases in hand, while a young coworker beside him gestures toward the green commuter horizon—the suggestion that becomes the West Egg bungalow.",
+        "shot": "wide",
+        "image_prompt": "Daylit New York commuter train platform, spring 1922. Nick Carraway, late twenties here, in a smart traveling suit, overcoat folded on his arm, two leather suitcases at his feet, stepping forward from a steaming train. Beside him, a friendly young office colleague in a sack suit and straw boater leans in and gestures off-panel toward the suburbs. Soft morning light, dusk-blue and sepia muted by fresh greens. Period detail: porter in cap, brick station wall, telegraph poles in the distance. Empty space along the top for a wide caption box and bottom-left for a second caption; keep both men's faces, hands, suitcases, and the gesturing arm outside those zones. No signage text, no readable letters.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p2_c4a",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.06, "y": 0.05, "w": 0.88, "h": 0.13},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "So I decided to go East and learn the bond business. Father agreed to finance me for a year, and I came East, permanently, I thought, in the spring of twenty-two.",
+            "reading_order": 1
+          },
+          {
+            "id": "p2_c4b",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.78, "w": 0.6, "h": 0.17},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "When a young man at the office suggested we take a house together in a commuting town, it sounded like a great idea.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "So I decided to go East and learn the bond business. Father agreed to finance me for a year, and I came East, permanently, I thought, in the spring of twenty-two. // When a young man at the office suggested we take a house together in a commuting town, it sounded like a great idea.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Action transitions to the East and sets up next page's arrival in West Egg next to Gatsby's estate.",
+        "source_unit_ids": [20, 21],
+        "source_word_range": [571, 647],
+        "source_anchor": "Father agreed to finance me... a house together in a commuting town.",
+        "adaptation_note": "Concrete arrival action (stepping off train, colleague gesturing) anchors the decision to go East and the seed of the West Egg house."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "last_scene": "Spring 1922: Nick steps off a train into the East with a coworker who suggests sharing a house in a commuting town.",
+    "active_characters": ["Nick Carraway"],
+    "character_updates": [
+      "Nick established biographically: prominent Midwestern family, Yale 1915, Great War veteran returned restless",
+      "Nick financed by his father for a year to learn the bond business in the East",
+      "An unnamed office coworker introduced as the catalyst for the commuter-town housing plan"
+    ],
+    "visual_motifs": [
+      "desk lamp and open notebook",
+      "ghosted figure in window glass (Gatsby implied)",
+      "memory panels with feathered edges and warmer wash",
+      "train platform and travel luggage marking the move East"
+    ],
+    "next_page_needs": [
+      "Arrival in West Egg: the rented bungalow, neighboring Gatsby's mansion, line of sight across the lawn or water",
+      "First concrete glimpse or named mention of Gatsby's house",
+      "Possible drive to East Egg / introduction of Daisy and Tom if pacing allows"
+    ]
+  }
+}

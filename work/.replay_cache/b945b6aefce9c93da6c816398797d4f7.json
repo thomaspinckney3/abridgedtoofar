@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:37:29",
+  "key": "b945b6aefce9c93da6c816398797d4f7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, checking for the seven failure classes against the gate test and authorized-cut exemptions.\n\n---\n\n**Ch 016 draft \u2014 passage: \"In the full tide of gay company, a letter in that well-remembered hand was brought to him.\"**\n\nThe source establishes the honeymoon setting (\"The married couple were enjoying their honeymoon, and entertaining a brilliant circle of friends in their splendid villa, near Lake Pontchartrain\") before the letter arrives. The draft cuts that setup but the compressed version still parses: \"In the full tide of gay company\" is self-sufficient. The reader isn't confused. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 passage: \"Seems to me, sir,\" he added, laying his finger on the elegant figured satin vest the fellow was sporting, \"seems to me that's _my_ vest.\"**\n\nIn the source, St. Clare addresses the valet as \"Dolph\" by name here (\"seems to me, Dolph\"). In the draft, \"Adolph\" has been removed as an authorized cut, so the valet has been referred to only as \"a highly-dressed young mulatto valet\" and \"the valet\" throughout. The draft renders the address as \"Seems to me, sir,\" which is a coherent substitution. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 \"Tell the nurse to come here\" / \"And Miss Ophelia disappeared in the rear of the nurse.\"**\n\nIn the source, St. Clare says \"tell Mammy to come here\" and \"Mammy\" is described as \"The decent mulatto woman whom Eva had caressed so rapturously.\" Mammy is on the authorized-removal list. The draft substitutes \"nurse\" for \"Mammy\" throughout this passage, including in the narrator's closing line. This is a direct residue of the authorized Mammy cut. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 \"O, there's my mammy!\" said Eva**\n\nThe source has Eva say \"O, there's Mammy!\" The draft renders this as \"O, there's my mammy!\" \u2014 a lower-case possessive usage rather than a proper name, which works as a descriptor (\"my mammy\" = my nurse/nanny). The reader reads it as a term of endearment, not an unglossed proper name. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 \"Halloa, here, what's to pay out here? Here, you all\u2014Mammy, Jimmy, Polly, Sukey\u2014glad to see Mas'r?\"**\n\nHere St. Clare's dialogue calls out \"Mammy\" by name. Mammy is on the authorized-removal list, and the authorized-cut instruction means seams from that removal are expected. This is a direct residue of the authorized Mammy cut. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 the valet's dialogue: \"I understood I was to take it.\"**\n\nIn the source, the valet's full line is: \"O! Master, this vest all stained with wine; of course, a gentleman in Master's standing never wears a vest like this. I understood I was to take it. It does for a poor nigger-fellow, like me.\" The draft renders this as: \"O! Master, this vest all stained with wine; of course, a gentleman in Master's standing never wears a vest like this. It does for a poor nigger-fellow, like me.\" \u2014 dropping the middle sentence. This is a compression within surviving dialogue but does not damage meaning. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 \"She sat upright as a darning-needle stuck in a board, holding her bundle of umbrella and parasols, and wondering 'what upon earth her papa could be thinking of; he couldn't have fallen over, now,' till St. Clare came up...\"**\n\nIn the source, Miss Ophelia's interior fretting is attributed to her wondering about \"her papa\" \u2014 but the referent of \"her papa\" in the source is clearly Eva's papa (St. Clare). This pronoun in free indirect discourse is slightly ambiguous (\"her papa\" = Eva's papa, not Miss Ophelia's). But the source has the same construction; the draft faithfully reproduces it. The reader can infer from context (she is waiting for St. Clare/Eva's father). Not a structural damage introduced by compression.\n\n---\n\n**Ch 016 draft \u2014 \"I'm going to take Tom up to mother for a peace-offering, to make up for that drunken fellow that upset the carriage.\"**\n\nThis is the only mention in the draft of \"that drunken fellow that upset the carriage.\" It appears nowhere else in Ch 015 draft or Ch 016 draft. The source also introduces this reference here without prior elaboration \u2014 it is a throwaway allusion in the source too, not something established earlier and cut. The source does not explain \"that drunken fellow\" either; it is a casual passing reference St. Clare makes in conversation, implying backstory the reader is not given. Since this reference exists identically in the source without prior establishment, the draft has not introduced a new mid-scene jump; both source and draft treat it as an unexplained allusion. Not a finding introduced by compression.\n\n---\n\n**Ch 015 draft \u2014 passage: \"Partly through Mr. Shelby's letters, partly through Tom's quiet, inoffensive ways, even Haley, the trader, had ceased to fetter him at night, and, trusting his parole of honor, let him come and go on the boat.\"**\n\nSource has \"Partly from confidence inspired by Mr. Shelby's representations\" \u2014 the draft changes this to \"Mr. Shelby's letters,\" a minor rephrasing. Haley is introduced here as \"Haley, the trader\" with an appositive. This is clean. Not a finding.\n\n---\n\n**Ch 016 draft \u2014 \"He had taken her to Vermont, and persuaded his cousin, Miss Ophelia St. Clare, to return with him to his southern residence\"**\n\nIn the source this reads: \"He had taken her with him on a tour to Vermont, and had persuaded his cousin, Miss Ophelia St. Clare, to return with him to his southern residence; and they are now returning on this boat, where we have introduced them to our readers.\" The draft has \"they are now returning on this boat, where we introduce them.\" The reference to the boat is coherent because the scene is set on the steamboat approaching New Orleans. Not a finding.\n\n---\n\nAfter this full pass, I find **no valid structural coherence failures** in either draft chapter that pass the gate test and are not residues of authorized cuts.\n\n```json\n[]\n```",
+    "input_tokens": 28316,
+    "output_tokens": 1521,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 31.287513971328735,
+    "stop_reason": "end_turn"
+  }
+}

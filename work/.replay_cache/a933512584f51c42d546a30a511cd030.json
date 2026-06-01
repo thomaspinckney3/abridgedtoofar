@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:57:45",
+  "key": "a933512584f51c42d546a30a511cd030",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test to each candidate finding.\n\n**Ch 001 draft**\n\nThe reply \"Quite clear\" appears without the source's framing (\"Is that clear?\"), but it still parses as a standalone affirmation \u2014 a reader can follow the exchange. Not a finding.\n\nThe Ambassador reference survives (\"deliver it into the Ambassador's own hands\") \u2014 the Ambassador is on the authorized removal list, but the *reference* to him as a role (\"the Ambassador\") is clear enough without a proper name. Not a finding.\n\n**Ch 002 draft**\n\nCandidate 1: \"Tuppence gave the abridged biography of Miss Prudence Cowley, fifth daughter of **Archdeacon Cowley** of Little Missendell, Suffolk\"\n\nThe authorized removal list includes \"Archdeacon Cowley\" as a minor character. But here the name appears as a *relationship identifier* for Tuppence herself (\"fifth daughter of Archdeacon Cowley\"), not as an independent character requiring a local gloss. A reader understands this is her father. Not a finding under rule 7 (the descriptor \"fifth daughter of\" makes the relationship clear).\n\nCandidate 2: Tommy's compressed speech: *\"Demobbed like everything else, I suppose. Two months ago. Gratuity? Spent. The cost of living\u2014\"*\n\nIn the source this follows Tommy chuckling about Sister Greenbank and the hospital. In the draft the hospital reminiscence is cut. The word \"Demobbed\" arrives without an antecedent subject. But \"Tommy chuckled\" is the immediately preceding clause and Tommy is the unambiguous speaker/subject. The fragmentary style (\"Two months ago. Gratuity? Spent.\") mirrors the source's compressed banter. A reader can follow this as Tommy narrating his own circumstances. Not structurally broken.\n\nCandidate 3: *\"Her grey eyes looked misty.\"* \u2014 After \"Tommy nodded.\" the pronoun \"Her\" refers to Tuppence, but the immediately preceding sentence has Tommy as subject. In the source, \"Tuppence's large grey eyes looked misty\" \u2014 the name anchors it. In the draft the name is dropped. The preceding paragraph does describe Tuppence's \"wide-apart grey eyes,\" so the grey-eyes motif is present, but \"Her\" with Tommy as the most recent subject creates a genuine dangling reference \u2014 a reader could parse \"Her\" as Tommy's mother (just mentioned) or as ambiguously attributed.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Tommy nodded. Her grey eyes looked misty. \\\"You're a good sort, Tommy.\\\"\",\n    \"source_has\": \"Tommy nodded. Tuppence's large grey eyes looked misty. 'You're a good sort, Tommy.'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the immediately preceding subject is Tommy, and 'her' could attach to his recently mentioned dead mother; only the source's explicit name 'Tuppence's large grey eyes' anchors the reference unambiguously.\"\n  }\n]\n```",
+    "input_tokens": 8447,
+    "output_tokens": 745,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 17.066313982009888,
+    "stop_reason": "end_turn"
+  }
+}

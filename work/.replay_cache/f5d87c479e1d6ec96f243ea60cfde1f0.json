@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:38:56",
+  "key": "f5d87c479e1d6ec96f243ea60cfde1f0",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test.\n\n---\n\n**Ch 067 draft analysis**\n\nThe authorized removals for this chapter are Fleece's shark sermon (Ch 067\u2013068) and Old Fleece himself. Looking at the draft, the drafter has *kept* the Stubb\u2013cook dialogue but elided Fleece's name (replacing with \"old cook,\" \"old black,\" \"old man,\" \"old negro,\" \"the cook\"). That is a clean authorized elision \u2014 the descriptor survives even where the name was cut. No name-continuity problem there.\n\nChecking the dialogue sequence: the source has the cook say \"Who dat? Den preach to him yourself\" after Stubb interrupts. The draft cuts that line and runs straight from Stubb's interruption (\"you mustn't swear that way when you're preaching\") to Stubb saying \"No, cook; go on, go on.\" In the source, Stubb's \"No, cook; go on, go on\" is a reply to the cook's \"Who dat? Den preach to him yourself.\" In the draft, the cook's line is cut, so Stubb's \"No, cook; go on, go on\" is an unattributed reply whose triggering line has been removed \u2014 but does it parse? A reader can reasonably read it as Stubb overriding the cook's reluctance (which is implied by the cook having been told to stop swearing). The \"No\" reads as Stubb pre-empting an objection. Marginally parseable without confusion.\n\nAlso, the draft introduces: `\"Massa\u2014\" He checked himself, squinting aft at Stubb's hand.` \u2014 this is a drafted interpolation, not in the source, so not a compression artifact. No finding there.\n\nThe line `\"No, cook; go on, go on.\"` immediately follows Stubb's own reprimand with no cook response between them. A reader might be briefly puzzled by the \"No\" (no to what?), but the context \u2014 Stubb just told the cook he mustn't swear, the cook stopped, so Stubb is urging him to continue \u2014 is recoverable. Gate test: the reader is mildly puzzled but not genuinely misled. Borderline; I will not flag it.\n\nNo other structural breaks in Ch 067 draft.\n\n---\n\n**Ch 069 draft analysis**\n\nSource opens the chapter with: \"Nevertheless, upon Stubb setting the anchor-watch after his supper was concluded; and when, accordingly, Queequeg and a forecastle seaman came on deck\u2026\" \u2014 the \"accordingly\" and \"after his supper was concluded\" tie the anchor-watch to the Stubb supper scene (Ch 067\u2013068). The draft removes \"upon Stubb setting the anchor-watch after his supper was concluded\" and simply writes \"When Queequeg and a forecastle seaman came on deck\u2026\"\n\nIs this a broken pivot? The \"accordingly\" and the attribution to Stubb setting the watch are cut, but the draft sentence stands on its own and the reader understands Queequeg came on deck for anchor-watch duty (the preceding paragraph just explained the anchor-watch rotation). No confusion.\n\nThe draft removes the footnote about the whaling-spade dimensions \u2014 authorized digression removal, no seam.\n\nThe source has \"upon Stubb setting the anchor-watch\" which was the logical connective between Stubb's supper and Queequeg's appearance. The supper subplot is an authorized removal. The seam is therefore an authorized residue. Not a finding.\n\nNo other issues in Ch 069 draft.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 11636,
+    "output_tokens": 838,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 19.181964635849,
+    "stop_reason": "end_turn"
+  }
+}

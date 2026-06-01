@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:41:11",
+  "key": "0b710b55d3ab2bae2cdc52166c13fa66",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, checking only for the seven structural failure types against the gate test.\n\n---\n\n**Ch 102 \u2014 \"King-Post\" / Flask identification**\n\nStubb's soliloquy ends: *\"But stop; here comes little King-Post.\"* In the source, Flask then speaks, and his speech is headed by his own name. In the draft, the next speech begins: *\"I see nothing here,\" said Flask\u2026* \u2014 the name \"Flask\" is used without any prior establishment that \"King-Post\" is Flask's nickname. A reader with no source access who has not encountered this nickname before would not know who just spoke; \"King-Post\" is not glossed anywhere in the draft.\n\nHowever, I need to check whether \"Flask\" has been established as \"King-Post\" in earlier draft chapters. In the broader Moby-Dick narrative, Flask is introduced as \"King-Post\" in early chapters. If those introductory chapters survive in the abridgment with that gloss, this is not a finding. Since the authorized digression removals include Ch 027-028 and Ch 035-038 but not the crew-introduction chapters (typically Ch 026/027 range for the mates), I cannot confirm the gloss was cut. This is borderline but ultimately not a structural failure if Flask was established as King-Post in earlier draft chapters not shown here. I will not flag it as a finding without evidence the gloss was removed.\n\n**Ch 102 \u2014 \"the old hearse-driver\"**\n\nIn the draft: *\"here comes the old hearse-driver\u2014he luffs up before the doubloon\u2026\"* \u2014 The Manxman is on the authorized removal list. In the source, Stubb names him \"old Manxman\" and adds the parenthetical gloss \"the old hearse-driver, he must have been.\" In the draft, only \"the old hearse-driver\" appears, with no proper name. Since The Manxman is on the authorized removal list, this residual seam is an authorized cut and not a finding.\n\n**Ch 102 \u2014 Starbuck's \"He goes below; let me read\"**\n\nIn the source, Starbuck says \"He goes below; let me read.\" This transitional line was cut in the draft. The draft instead reads: *\"Let me read.\"* \u2014 this is a minor compression, the sentence still parses, and the context (Ahab has finished and walked away) is clear from prior lines. Not a finding.\n\n**Ch 109 \u2014 \"We spoke the London whaler Samuel Enderby\u2026\"**\n\nThe draft of Ch 109 opens: *\"We spoke the London whaler Samuel Enderby, whose genial Captain Boomer, one-armed from Moby Dick, told how the White Whale stove him and warned us off\u2026\"* The Samuel Enderby gam is on the **authorized subplot removal** list (Ch 103\u2013104). The Ch 109 draft therefore opens with definite references to a ship and captain whose entire episode was authorized to be cut. The source of the *previous* chapter (Ch 102) contains no establishment of this ship or encounter.\n\nBut wait \u2014 the sentence itself provides a full identifying gloss: \"the London whaler Samuel Enderby, whose genial Captain Boomer, one-armed from Moby Dick, told how the White Whale stove him.\" This is a self-contained summary introduction. A reader can follow it without any prior chapter. This is not a mid-scene jump (test 6 requires *definite* references without establishment; this sentence introduces rather than assumes). Captain Boomer is on the authorized removal list, but the sentence locally identifies him (\"genial Captain Boomer, one-armed from Moby Dick\"). The named-person invariant says the local sentence must identify the person \u2014 and it does. Not a finding.\n\n**Ch 109 \u2014 Carpenter introduction**\n\nIn the source, the carpenter is introduced as \"that functionary\" after being \"called.\" In the draft: *\"he called the carpenter; bade him without delay set about a new leg\u2026\"* \u2014 this parses cleanly. Not a finding.\n\nAfter this thorough pass, I find no repairs-worthy structural coherence failures in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 10191,
+    "output_tokens": 967,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 23.36212992668152,
+    "stop_reason": "end_turn"
+  }
+}

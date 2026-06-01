@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:18:39",
+  "key": "4c1cf1cf283ba23eb20b7d2cf441a46e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test.\n\n---\n\n**Ch 062 draft analysis:**\n\nThe draft is clean. Daggoo is named before \"he yelled out\" \u2014 the antecedent is the last named subject in that paragraph, so no dangling pronoun. Flask's question and Starbuck's answer both survive. The squid description stands without its source gloss (Kraken/Pontoppodan, cuttle-fish taxonomy) but those are authorized digression cuts and the reader understands what the squid is. No issues.\n\n---\n\n**Ch 074 draft analysis:**\n\nThe chapter opens with \"the stranger waved his hand\" \u2014 \"the stranger\" was introduced as \"the Jeroboam of Nantucket\" and the boat crew, which is fine.\n\n**Candidate 1:** \"So soon as this figure was descried, Stubb exclaimed\u2014'That's he! that's he!\u2014the long-togged scaramouch the Town-Ho's company told us of!'\"\n\nIn the source, Stubb's exclamation is immediately followed by: \"Stubb here alluded to a strange story told of the Jeroboam, and a certain man among her crew, some time previous when the Pequod spoke the Town-Ho. According to this account and what was subsequently learned, it seemed that the scaramouch in question had gained a wonderful ascendency over almost everybody in the Jeroboam.\" Then: \"His story was this:\"\n\nIn the draft, Stubb's line is followed immediately by: \"His story was this.\" The bridging material \u2014 identifying *whose* story, and establishing that Stubb's reference points back to prior knowledge from the Town-Ho \u2014 is cut. \"His story was this\" now has an ambiguous antecedent: \"his\" could refer to Stubb, the figure/Gabriel, or Mayhew (not yet speaking). A reader has no way to know whose story is about to be told, since the source's transitional sentence (\"it seemed that the scaramouch in question had gained a wonderful ascendency... His story was this\") which anchors \"His\" to the scaramouch/Gabriel was dropped.\n\nThis is a dangling pronoun: \"his\" in \"His story was this\" has no unambiguous antecedent in the preceding draft text. Stubb just spoke; the freckled figure was described but never named or designated as the subject of a story. A reader would genuinely not know whose story is being narrated.\n\n**Candidate 2:** \"As the seamen resumed their work upon the jacket of a sperm whale already hoisted alongside...\"\n\nThe source says \"the jacket of the whale\" \u2014 referring to a whale previously established. The draft changes \"the whale\" to \"a sperm whale already hoisted alongside,\" which is actually a repair rather than damage. Not a finding.\n\nNo other structural issues found.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"So soon as this figure was descried, Stubb exclaimed\u2014\\\"That's he! that's he!\u2014the long-togged scaramouch the Town-Ho's company told us of!\\\" His story was this.\",\n    \"source_has\": \"Stubb here alluded to a strange story told of the Jeroboam, and a certain man among her crew\u2026 it seemed that the scaramouch in question had gained a wonderful ascendency over almost everybody in the Jeroboam. His story was this:\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'His story was this' immediately follows Stubb's speech with no intervening antecedent identifying the freckled figure as the subject; the bridging sentence that anchored 'his' to the scaramouch/Gabriel was cut, leaving the pronoun floating between Stubb, the unnamed figure, and Captain Mayhew.\"\n  }\n]\n```",
+    "input_tokens": 9511,
+    "output_tokens": 928,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 21.872156143188477,
+    "stop_reason": "end_turn"
+  }
+}

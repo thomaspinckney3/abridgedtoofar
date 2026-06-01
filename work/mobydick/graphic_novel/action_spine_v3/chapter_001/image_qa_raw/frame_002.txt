@@ -1,0 +1,13 @@
+{
+  "frame_number": 2,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "caption_zone",
+      "finding": "Bottom-center caption zone is not fully clean; a diagonal rope and misty texture intrude where the caption should go.",
+      "visible_evidence": "A thick tarred rope the character is holding runs down through the lower center of the frame, with foggy water texture under it, leaving no flat empty space.",
+      "repair_prompt": "Recompose to leave a clear, uncluttered negative space at the bottom-center for captioning. Shift the rope slightly left or right so it does not cross the bottom-center, and soften or flatten textures there. Keep medium dockside shot, Ishmael in 1840s working clothes, hand on tarred hemp rope, rigged sailing ship and indistinct background sailors. No readable text."
+    }
+  ]
+}

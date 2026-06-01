@@ -1,0 +1,198 @@
+{
+  "style_bible": {
+    "visual_period": "1922 Long Island and Queens, New York; Jazz Age America",
+    "line_and_color": "Inked linework with muted period palette; ash greys and soot blacks dominate, sickly yellows for the billboard, warm sepia for train interior",
+    "lighting": "Overcast, dust-diffused daylight over the valley; flat sunless grey with shafts breaking through ash haze",
+    "lettering": "Rectangular cream caption boxes with serif type for Nick's narration; standard oval balloons for dialogue",
+    "recurring_motifs": ["valley of ashes", "the eyes of Doctor T. J. Eckleburg", "trains and tracks", "drifting grey dust"]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, late twenties, neat side-parted brown hair, observant eyes, slight reserved posture",
+      "costume": "Light grey three-piece summer suit, soft collar, dark tie, straw boater carried or worn",
+      "expression_range": "Curious, wry, uneasy, passive",
+      "continuity_note": "First appearance on this page; he is the narrator/POV"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Tall, hulking man around thirty, broad shoulders, hard mouth, arrogant set to the eyes, sandy hair",
+      "costume": "Well-cut riding-style summer suit, stiff collar, tie pin, polished shoes",
+      "expression_range": "Imperious, flushed from drink, aggressive, possessive",
+      "continuity_note": "First appearance on this page; physically forceful, slightly drunk in panel 4"
+    },
+    {
+      "name": "Doctor T. J. Eckleburg (billboard)",
+      "visual_anchor": "Faded painted advertisement: enormous blue eyes behind huge yellow spectacles, no face, no nose",
+      "costume": "N/A (signage)",
+      "expression_range": "Blank, brooding, unblinking",
+      "continuity_note": "Establish as recurring symbolic motif overlooking the valley"
+    }
+  ],
+  "page": {
+    "page_number": 1,
+    "page_summary": "Nick rides the train with Tom from West Egg toward New York; as the train slows beside the valley of ashes, Nick observes the desolate dumping ground, the ash-men at work, and the looming eyes of Doctor T. J. Eckleburg's billboard. When the train halts, Tom drunkenly seizes Nick's elbow and forces him off to meet his mistress.",
+    "source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "source_word_range": [4762, 5176],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Establishing: motor road bends close to the railroad to skirt a desolate stretch; a passenger train moves along the track past ridged grey hills of ash.",
+        "shot": "establishing",
+        "image_prompt": "Wide aerial-adjacent view from track level: a 1920s passenger train running on rails beside a paved motor road that veers in to hug the tracks; both arteries skirt a vast bleak basin of grey ash forming ridges, hills, and grotesque mounded shapes like ruined gardens; smokestacks of distant factories; overcast diffused light; muted greys and sepia; no text, no signage, empty sky reserved at upper edge",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p1c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.45, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Narration about road joining railroad to skirt desolate land, introducing the valley of ashes",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "About halfway between West Egg and New York, the motor road hurries to join the railroad and run beside it, shrinking from a certain desolate stretch of land — a valley of ashes.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Anchors geography between West Egg and the city; sets up Nick's recurring transit",
+        "source_unit_ids": [1, 2],
+        "source_word_range": [4762, 4849],
+        "source_anchor": "halfway between West Egg and New York; valley of ashes—a fantastic farm where ashes grow like wheat",
+        "adaptation_note": "Combines units 1 and 2 in one establishing shot because they share the same vantage and subject."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Closer ground-level view: a line of grey freight cars halts on a siding and ash-grey laborers swarm up with spades, kicking up a choking cloud.",
+        "shot": "wide",
+        "image_prompt": "Ground-level wide shot in the valley of ashes; a line of dusty grey freight cars stopped on a side track; stooped laborers caked head-to-foot in grey ash shoveling with heavy leaden spades, a thick powdery cloud half-obscuring them; figures appearing to crumble at the edges; flat sunless light; muted monochrome palette of soot and bone; figures placed in the lower two-thirds, sky and dust haze kept clear at top for caption",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p2c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.10, "y": 0.04, "w": 0.80, "h": 0.20},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "Narration about ash-grey men and grey cars working the dumping ground",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Ash-grey men move dimly through the powdery air; a line of grey cars crawls in, creaks to rest, and the men swarm up with leaden spades to stir an impenetrable cloud.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Establishes the human labor of the valley; carries source units 2-3",
+        "source_unit_ids": [3],
+        "source_word_range": [4850, 4893]
+      },
+      {
+        "panel_number": 3,
+        "beat": "Looking up from the valley: the enormous painted eyes of Doctor T. J. Eckleburg on a peeling billboard brood over the dumping ground; a small foul river runs at the base.",
+        "shot": "wide",
+        "image_prompt": "Low-angle wide composition: a large weather-beaten billboard rising above the grey waste, dominated by a pair of enormous painted blue eyes behind huge yellow rimmed spectacles with no face and no nose beneath them; paint cracked and faded by sun and rain; below the billboard, the edge of the ash valley meets a sluggish foul little river with an upraised drawbridge in the distance and a halted passenger train on the embankment; brooding overcast sky; muted palette with sour yellow of the spectacles popping faintly; keep right third of sky empty for caption; absolutely no readable letters, numbers, or words anywhere on the billboard or signage",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p3c1",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.52, "y": 0.05, "w": 0.44, "h": 0.22},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "Narration introducing Doctor T. J. Eckleburg's eyes and the river bounding the valley",
+            "reading_order": 1
+          },
+          {
+            "id": "p3c2",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.74, "w": 0.50, "h": 0.20},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Continued narration about the foul river, drawbridge, and the train halting there",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "Above the bleak dust brood the eyes of Doctor T. J. Eckleburg — blue and gigantic, gazing from huge yellow spectacles set there by some forgotten oculist and left to dim under sun and rain.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Introduces the Eckleburg billboard as recurring motif; second caption bridges to the train halt that sets up panel 4",
+        "source_unit_ids": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "source_word_range": [4894, 5054],
+        "source_anchor": "the eyes of Doctor T. J. Eckleburg are blue and gigantic; valley of ashes is bounded on one side by a small foul river",
+        "adaptation_note": "Consolidates the Eckleburg description (units 4–12) plus the river/drawbridge (unit 13) into one anchored vista because they share Nick's single line of sight from the halted train."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Inside the stopped train car: Tom, flushed from drink, rises from his seat and grips Nick's elbow, hauling him toward the door against Nick's reluctance.",
+        "shot": "medium",
+        "image_prompt": "Medium two-shot inside a 1920s passenger train car interior; wooden paneling, brass fittings, plush seats; on the left a lean young man in a light grey summer suit (Nick) half-risen, expression wary and reluctant, boater in one hand; on the right a tall, hulking flushed man in a well-cut summer suit (Tom) standing, gripping the younger man's elbow firmly and pulling him toward the carriage door; window behind them shows the grey ash valley outside; warm sepia interior light contrasting with cold grey out the window; reserve clear space upper-left for a caption box and upper-right for two stacked speech balloons; faces, mouths, and Tom's gripping hand kept clear of those zones",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p4c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.40, "h": 0.22},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Narration: the train always halts here, and so Nick first met Tom's mistress; Tom forced him off the train",
+            "reading_order": 1
+          },
+          {
+            "id": "p4s1",
+            "kind": "speech",
+            "zone": "top_right",
+            "box": {"x": 0.60, "y": 0.08, "w": 0.32, "h": 0.12},
+            "speaker": "Tom Buchanan",
+            "speaker_side": "right",
+            "reserved_for": "Tom's line: We're getting off.",
+            "reading_order": 2
+          },
+          {
+            "id": "p4s2",
+            "kind": "speech",
+            "zone": "top_right",
+            "box": {"x": 0.60, "y": 0.22, "w": 0.32, "h": 0.12},
+            "speaker": "Tom Buchanan",
+            "speaker_side": "right",
+            "reserved_for": "Tom's line: I want you to meet my girl.",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "The train always halts there at least a minute — and it was because of that halt that I first met Tom Buchanan's mistress. He'd tanked up at luncheon, and his determination for my company bordered on violence.",
+        "dialogue": [
+          {"speaker": "Tom Buchanan", "text": "We're getting off."},
+          {"speaker": "Tom Buchanan", "text": "I want you to meet my girl."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Introduces Tom physically and his coercive energy; sets up next page's encounter with Myrtle",
+        "source_unit_ids": [14, 15, 16, 17, 18, 19, 20],
+        "source_word_range": [5055, 5176],
+        "source_anchor": "I first met Tom Buchanan's mistress; 'We're getting off'; 'I want you to meet my girl.'",
+        "adaptation_note": "Both balloons belong to Tom and are stacked on the right side near his figure to preserve speaker-side rule."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "last_scene": "Inside the halted train beside the valley of ashes; Tom has gripped Nick's elbow and is forcing him off to meet his mistress.",
+    "active_characters": ["Nick Carraway", "Tom Buchanan"],
+    "character_updates": [
+      "Nick established as reluctant observer-narrator traveling with Tom",
+      "Tom established as physically imposing, drunk, coercive, openly maintaining a mistress"
+    ],
+    "visual_motifs": ["valley of ashes", "eyes of Doctor T. J. Eckleburg", "grey ash men and ash dust", "trains halting beside the wasteland"],
+    "next_page_needs": [
+      "Arrival at the garage/roadside where Tom's mistress (Myrtle Wilson) is introduced",
+      "Introduction of George Wilson and the garage setting",
+      "Continuation of the Eckleburg billboard as overhead presence"
+    ]
+  }
+}

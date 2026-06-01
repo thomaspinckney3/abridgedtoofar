@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-07T14:36:29",
+  "key": "416f5ad6c36583dec71ed697cf179b0a",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "9011b498d8f69c96534ecd7e91bae74c",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\"name\": \"Middle\u2011aged clerk at the Esthonia Glassware Co.\", \"appearances_summary\": \"Opens the partition door for Tuppence during her first visit to Whittington\u2019s sham office in Chapter 003, then vanishes from the story.\", \"reason_removable\": \"He neither returns nor influences any decision or revelation; removing him does not affect the Whittington encounter or its consequences.\"},\n    {\"name\": \"Slatternly servant at The Laurels (Mrs. Edgar Keith\u2019s)\", \"appearances_summary\": \"Answers the door during Tommy and Tuppence\u2019s voter\u2011register ruse in Chapter 007.\", \"reason_removable\": \"A one\u2011line gatekeeper who adds colour but no plot leverage; the address\u2011checking beat stands without her.\"},\n    {\"name\": \"Lyons\u2019 waitress\", \"appearances_summary\": \"Serves Tommy and Tuppence during their early planning lunches (Chapters 002\u2013004).\", \"reason_removable\": \"Pure background; trimming her lines leaves the restaurant scenes intact.\"},\n    {\"name\": \"Magnificent hall porter at South Audley Mansions\", \"appearances_summary\": \"Momentarily replaces Albert at Mrs. Vandemeyer\u2019s building (Chapter 010).\", \"reason_removable\": \"A brief sight gag; no actions or information depend on him.\"},\n    {\"name\": \"Mrs. Sweeny (key holder near the Moat House)\", \"appearances_summary\": \"Lends the Moat House key and confirms it\u2019s been empty (Chapter 019).\", \"reason_removable\": \"The protagonists can discover the house is deserted directly; her function is redundant exposition.\"},\n    {\"name\": \"Station page 'Henry' at the Ritz\", \"appearances_summary\": \"Reports Tuppence\u2019s hasty trip to Charing Cross and recalls her Bradshaw request (Chapter 019).\", \"reason_removable\": \"A minor relay of a clue already re\u2011established by the forged telegram; the pursuit proceeds without him.\"},\n    {\"name\": \"George (Julius\u2019s chauffeur)\", \"appearances_summary\": \"Drives during Julius\u2019s Kramenin snatch and the Astley Priors rescue (Chapter 025).\", \"reason_removable\": \"His driving adds action colour but no unique plot contribution; Julius can be said to drive himself.\"},\n    {\"name\": \"Dr. Roylance (Manchester physician)\", \"appearances_summary\": \"Houses injured Jane Finn and introduces her to the party (Chapter 020).\", \"reason_removable\": \"He is a hand\u2011off conduit; the Manchester reveal and Dr. Hall\u2019s amnesia brief can proceed without naming him.\"},\n    {\"name\": \"The American Ambassador\", \"appearances_summary\": \"Attends Julius\u2019s Savoy supper in Chapter 028 and offers social niceties.\", \"reason_removable\": \"A prestige cameo that adds no stakes or decisions; Mr. Carter already carries the official coda.\"},\n    {\"name\": \"Archdeacon Cowley\", \"appearances_summary\": \"Tuppence\u2019s father appears at the Savoy supper (Chapter 028).\", \"reason_removable\": \"A sentimental bow that does not alter the plot or Tuppence\u2019s arc in the synopsis.\"},\n    {\"name\": \"Unnamed carter (brings Tuppence\u2019s warning note)\", \"appearances_summary\": \"Delivers Jane\u2019s roadside note to Tommy in Chapter 024.\", \"reason_removable\": \"A messenger role; the warning can be folded into a found note without a scene partner.\"}\n  ],\n  \"subplots\": [\n    {\"name\": \"Julius\u2019s brief proposal to Tuppence\", \"chapter_span\": \"Ch 016\", \"reason_removable\": \"It\u2019s a red\u2011herring flirtation that does not affect the later canonical pairings (Julius\u2013Jane, Tommy\u2013Tuppence) specified in the synopsis.\"},\n    {\"name\": \"Running comic business about Tuppence\u2019s money worries and luxury menus\", \"chapter_span\": \"Ch 002\u2013004, 012\u2013013\", \"reason_removable\": \"These gags and food catalogues are tonal garnish and can be compressed without changing motivations or plot beats.\"},\n    {\"name\": \"Rolls\u2011Royce shopping spree and motoring pride\", \"chapter_span\": \"Ch 012\u2013013\", \"reason_removable\": \"Julius\u2019s wealth is already clear; the exact make of car and buying scene do not advance the investigation.\"},\n    {\"name\": \"Taxi feints and minor street mishaps during the London chase\", \"chapter_span\": \"Ch 021, Ch 026\", \"reason_removable\": \"Side\u2011business (swapping cabs, a fender\u2011bender) can be tightened without losing the essential \u2018get to Sir James\u2019/\u2018flee to safety\u2019 beats.\"},\n    {\"name\": \"Albert\u2019s comic \u2018Underworld\u2019 slang and ambitions\", \"chapter_span\": \"Ch 010\u2013014\", \"reason_removable\": \"His quips can be pared to a single helpful page\u2011boy appearance; the plot turns (Vandemeyer watch, messages) are preservable in narration.\"}\n  ],\n  \"digressions\": [],\n  \"skippable_chapters\": []\n}",
+    "input_tokens": 108678,
+    "output_tokens": 4314,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 63.41761922836304,
+    "stop_reason": "stop"
+  }
+}

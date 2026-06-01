@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-07T13:42:27",
+  "key": "bfc15a7b4efa798fa06ba9867814c38b",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "9011b498d8f69c96534ecd7e91bae74c",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [],\n  \"subplots\": [],\n  \"digressions\": [\n    {\n      \"chapter_ids\": [\"005\"],\n      \"topic\": \"Opening office-crowd patter and one-liner jokes before Heather appears, plus extra quips during the taxi chase\",\n      \"reason_removable\": \"The stand-up-style banter and extended chase quips don\u2019t change the inciting beats (Heather\u2019s setup with Blake and the reckless taxi escapade) and can be tightened without harming plot or tone.\"\n    },\n    {\n      \"chapter_ids\": [\"007\"],\n      \"topic\": \"Extended architectural and pastoral description of the stables, castle, fields, and village on arrival\",\n      \"reason_removable\": \"Long scenic paragraphs can be pared to a few lines confirming the medieval-feeling estate and village without losing any required plot setup.\"\n    },\n    {\n      \"chapter_ids\": [\"009\"],\n      \"topic\": \"Room inventory and window mechanics while Miriam fashions the bedsheet rope\",\n      \"reason_removable\": \"The minute logistics of furnishings and window hardware slow pace; a brief note that she knots linens and descends suffices to preserve the escape.\"\n    },\n    {\n      \"chapter_ids\": [\"011\"],\n      \"topic\": \"Slapstick \u2018badger in here!\u2019 ruse and sheet-tangle scuffle in the corridor\",\n      \"reason_removable\": \"The comic beat doesn\u2019t alter how she ends up in Xander\u2019s room or the consent/captivity conversation that follows, so it can be shortened.\"\n    },\n    {\n      \"chapter_ids\": [\"012\"],\n      \"topic\": \"Graphic, step-by-step sexual detail after the musk takes effect\",\n      \"reason_removable\": \"The synopsis requires consummation under dragon musk, but the explicit choreography can be compressed to a few sentences without losing the turning-point beat.\"\n    },\n    {\n      \"chapter_ids\": [\"014\"],\n      \"topic\": \"Modern \u2018frat party\u2019 explanation and culture-clash riff at breakfast\",\n      \"reason_removable\": \"A brief acknowledgement that the feast is celebratory covers the joke; the extended modern-culture aside isn\u2019t needed for plot or character.\"\n    },\n    {\n      \"chapter_ids\": [\"015\"],\n      \"topic\": \"Ceremonial and iconographic detail of the Portal\u2019s carvings and glow sequence\",\n      \"reason_removable\": \"Only the functional points (priests open it; foreign matter shatters) are load-bearing, so the ritual pageantry can be trimmed.\"\n    },\n    {\n      \"chapter_ids\": [\"016\"],\n      \"topic\": \"Heather\u2019s hard-liquor banter and \u2018wipe-the-hard-drive-clean\u2019 cocktail jokes\",\n      \"reason_removable\": \"The comic drink talk doesn\u2019t affect Miriam\u2019s decision or the Mark\u2019s pain/vision and can be cut for momentum.\"\n    },\n    {\n      \"chapter_ids\": [\"020\"],\n      \"topic\": \"Discussion of electricity and whether Miriam could recreate it here\",\n      \"reason_removable\": \"The tech chat is color only; Darda\u2019s origin, Spiros\u2019s role, and the storm/bridge sequence carry the required beats.\"\n    },\n    {\n      \"chapter_ids\": [\"020\"],\n      \"topic\": \"Childhood-anecdote exchange between Xander and Spiros (the bull \u2018Devil,\u2019 Grand Canal wing-softening, eluding guards)\",\n      \"reason_removable\": \"The specifics are extraneous once we\u2019ve established that Spiros \u2018grew up daring beside his lord,\u2019 which the synopsis preserves.\"\n    }\n  ],\n  \"skippable_chapters\": []\n}",
+    "input_tokens": 39783,
+    "output_tokens": 5038,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 67.27390098571777,
+    "stop_reason": "stop"
+  }
+}

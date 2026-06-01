@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:03:06",
+  "key": "8161571773fdc94b5a0eea5e3ba461e3",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Analyzing both chapters carefully against the seven tests and the authorized cuts list.\n\n**Ch 025 draft review:**\n\nThe draft compresses the chapter cleanly. The chauffeur George is on the authorized removal list, but the draft retains him as an unnamed functional presence (\"the chauffeur \u2014 a naval man whose brother had been murdered by Bolsheviks\"). No orphaned proper name; his role is given locally. Tuppence's question \"Where's Tommy?\" is answered; Tommy's appearance is set up adequately. No structural breaks found.\n\n**Ch 026 draft review:**\n\nWorking through carefully:\n\n1. The taxi misdirection to King's Cross: In the source Tuppence says \"if they think we're going to Sir James, this will put them off the scent\" and directs the taxi to King's Cross to suggest they're heading to Mr. Carter (north of London). The draft compresses this to \"If they think we're going to Mr. Carter, this will put them off the scent.\" This is internally consistent and parseable \u2014 the reader understands the feint.\n\n2. Sir James's hint at Manchester: The source says \"From some words of Mr. Hersheimmer's at Manchester, I gathered that you had understood and acted on that hint.\" The draft cuts this sentence entirely. The surrounding argument about Julius being Mr. Brown still parses without it.\n\n3. The brandy/chloral passage: Sir James says \"it was administered in the brandy you gave her.\" The antecedent \"her\" is Mrs. Vandemeyer, who has been established in Jane's story in this same draft chapter. Parseable.\n\n4. \"Only three people touched that brandy \u2014 you, Miss Tuppence, I myself, and one other \u2014 Mr. Julius Hersheimmer!\" \u2014 This references a prior scene (at Mrs. Vandemeyer's) where Tuppence gave brandy. That scene occurred in earlier chapters, not in these two chapters under review. The draft chapter does not establish this brandy scene, but it is not required to \u2014 it is a prior-chapter event, and the source of Ch 026 presents it the same way (as a recalled fact). A competent reader of the abridgment would need that scene to have survived in earlier chapters; that is not a Ch 026 structural problem. No finding here.\n\n5. Sir James's hint: The source includes \"I took an early opportunity of giving you a hint.\" The draft omits this. Does \"At last?\" from Tuppence become a broken pivot? Let me check the draft: Tuppence says \"At last?\" querying doubtfully \u2014 in the source, this query is followed by \"Oh, but I thought\u2014\" and then Sir James confirms she thought correctly and references giving her a hint earlier. The draft cuts \"Oh, but I thought\u2014\" and goes straight to Sir James's explanation. Tuppence's \"At last?\" still makes sense as mild surprise at the phrasing; Sir James's answer follows adequately. Not a structural break.\n\n6. Jane's narrative \u2014 \"I knew I was being watched.\" This appears in the draft without the preceding business (the \"Mon Dieu!\" test, the rustling dress, the creak) that established *how* she knew. But the source material establishing this was simply compressed; the statement still parses \u2014 Jane says she knew, then acts on it. A reader is not confused, merely reading a less-detailed version.\n\n7. Checking for the unglossed name test on \"Mr. Danvers\": In the draft, Jane says \"a man came up to me \u2014 Mr. Danvers.\" This is a minor character named here for the first and only time with a local role identifier (\"a man\"). The name is glossed by the immediate context (\"he was carrying papers which were just life or death to the Allies\"). Not an unglossed name problem.\n\nAfter full review, I find no valid structural coherence failures meeting the gate test in either chapter.\n\n```json\n[]\n```",
+    "input_tokens": 17944,
+    "output_tokens": 890,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 23.775455951690674,
+    "stop_reason": "end_turn"
+  }
+}

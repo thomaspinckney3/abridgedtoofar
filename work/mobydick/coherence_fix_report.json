@@ -1,0 +1,136 @@
+{
+  "book_id": "mobydick",
+  "requested_pairs": [],
+  "include_name_lint": false,
+  "name_lint_only": false,
+  "use_adjudication": false,
+  "name_lint_findings_seen": 0,
+  "adjudication_findings_seen": 0,
+  "adjudication_repair_candidates": 0,
+  "name_lint_findings_mapped": 0,
+  "findings_seen": 9,
+  "findings_selected": 9,
+  "findings_filtered": 0,
+  "filtered_findings": [],
+  "pairs_processed": 8,
+  "pairs_applied": 3,
+  "pairs_no_change": 0,
+  "pairs_rejected": 5,
+  "pairs_failed": 0,
+  "pairs_no_findings": 0,
+  "pairs": [
+    {
+      "pair": "004-005",
+      "status": "rejected",
+      "findings": 2,
+      "attempts": 2,
+      "error": "004-005 repair for 004 appears truncated at the end",
+      "changed_segments": []
+    },
+    {
+      "pair": "030-031",
+      "status": "rejected",
+      "findings": 1,
+      "attempts": 2,
+      "error": "030-031 repair for 031 changed word count from 760 to 438; coherence-fix only allows local edits",
+      "changed_segments": []
+    },
+    {
+      "pair": "056-057",
+      "status": "rejected",
+      "findings": 1,
+      "attempts": 2,
+      "error": "056-057 repair for 056 changed word count from 1171 to 593; coherence-fix only allows local edits",
+      "changed_segments": []
+    },
+    {
+      "pair": "063-064",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "064"
+      ],
+      "before_words": {
+        "063": 794,
+        "064": 1002
+      },
+      "after_words": {
+        "063": 794,
+        "064": 1012
+      },
+      "edits": [
+        {
+          "segment_id": "064-para-harpoon-line",
+          "change": "Add inline gloss for 'hand-cloths' so readers understand the protective function and why their absence matters. Smallest local fix: insert 'or squares of quilted canvas worn to protect the hands' after 'hand-cloths'."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "066-067",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "067"
+      ],
+      "before_words": {
+        "066": 305,
+        "067": 2294
+      },
+      "after_words": {
+        "066": 305,
+        "067": 2309
+      },
+      "edits": [
+        {
+          "segment_id": "067-5",
+          "change": "Insert the cook's exit-line ('Who dat? Den preach to him yourself,' turning to go) before Stubb's rejoinder 'No, cook; go on, go on.' so that Stubb's refusal has a triggering speech to respond to."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "074-076",
+      "status": "rejected",
+      "findings": 1,
+      "attempts": 2,
+      "error": "response must include string fields draft_n and draft_np1",
+      "changed_segments": []
+    },
+    {
+      "pair": "076-096",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "076",
+        "096"
+      ],
+      "before_words": {
+        "076": 1149,
+        "096": 1258
+      },
+      "after_words": {
+        "076": 1211,
+        "096": 1258
+      },
+      "edits": [
+        {
+          "segment_id": "076-idx-7",
+          "change": "Flask's 'if he's going to live for ever' rebuts a claim Stubb never made in the draft. Restore a compact version of the mainmast/hoops speech immediately before Flask's line so the premise is established."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "115-116",
+      "status": "rejected",
+      "findings": 1,
+      "attempts": 2,
+      "error": "115-116 repair for 116 changed word count from 703 to 44; coherence-fix only allows local edits",
+      "changed_segments": []
+    }
+  ]
+}

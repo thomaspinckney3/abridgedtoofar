@@ -1,3 +1,5 @@
+## PROLOGUE
+
 It was 2 p.m. on the afternoon of May 7, 1915. The *Lusitania*, struck by two torpedoes in succession, was sinking rapidly, while the boats were being launched with all possible speed. Women and children were being lined up awaiting their turn. One girl stood slightly apart from the rest. She was quite young, not more than eighteen. She did not seem afraid, and her grave, steadfast eyes looked straight ahead.
 
 "I beg your pardon."
@@ -29,6 +31,8 @@ She smiled. "I'll go through with it all right. And I'm real proud to be chosen!
 "Then good-bye." He took her hand. "Good-bye. Good luck to you," he said in a louder tone.
 
 Her hand closed on the oilskin packet that had lain in his palm. The *Lusitania* settled with a more decided list to starboard. In answer to a quick command, the girl went forward to take her place in the boat.
+
+## CHAPTER I. THE YOUNG ADVENTURERS, LTD.
 
 "Tommy, old thing!"
 
@@ -66,7 +70,7 @@ Tommy was pleasantly ugly, with a shock of slicked-back red hair—nondescript, 
 
 "Your mother's dead, isn't she?" said Tuppence gently.
 
-Tommy nodded. Her grey eyes looked misty. "You're a good sort, Tommy."
+Tommy nodded. Tuppence's grey eyes looked misty. "You're a good sort, Tommy."
 
 "Rot! Well, that's my position. I'm just about desperate."
 
@@ -121,6 +125,8 @@ The two young people went off in opposite directions. Tuppence's hostel was situ
 She was half-way across St. James's Park when a man's voice behind her made her start.
 
 "Excuse me. But may I speak to you for a moment?"
+
+## CHAPTER II. MR. WHITTINGTON’S OFFER
 
 Tuppence turned sharply, but the words hovering on the tip of her tongue remained unspoken; the man's appearance and manner did not bear out her first natural assumption. He was a big man, clean-shaven, with a heavy jowl. His eyes were small and cunning, and shifted their glance under her direct gaze.
 
@@ -254,6 +260,8 @@ The cab drew up outside the tube station. Tommy hurried forward to assist her to
 
 "Pay the thing, will you, old bean? I've got nothing smaller than a five-pound note!"
 
+## CHAPTER III. A SET BACK
+
 The moment was not quite so triumphant as it ought to have been. Tommy's pockets were limited, and only after the lady recollected a plebeian twopence was the fare managed; the driver moved off with one last hoarse demand as to what the gentleman thought he was giving him.
 
 "I think you've given him too much, Tommy," said Tuppence innocently. "I fancy he wants to give some of it back."
@@ -328,6 +336,8 @@ She handed him back a slip of paper. Tommy read the words on it aloud:
 
 "WANTED, any information respecting Jane Finn. Apply Y. A."
 
+## CHAPTER IV. WHO IS JANE FINN?
+
 The day of disillusionment had been a Wednesday. On Friday, Tommy met Tuppence at the National Gallery with two answers to the advertisement.
 
 "Tommy, you devil! Give them to me."
@@ -386,7 +396,11 @@ He leaned back, brought the tips of his fingers together, and began in a low mon
 
 "Oh!" Tuppence jumped. "I remember—in Mr. Whittington's office, the clerk—he called him Brown. You don't think—"
 
-Carter nodded thoughtfully. "Very likely. A curious point is that the name is usually mentioned. An idiosyncrasy of genius. Did you notice a telephone in the outer office?"
+Carter nodded thoughtfully. "Very likely. A curious point is that the name is usually mentioned. An idiosyncrasy of genius. Can you describe him at all?"
+
+"I really didn't notice. He was quite ordinary—just like anyone else."
+
+"That is the invariable description of Mr. Brown. He brought a telephone message to Whittington, did he? Notice a telephone in the outer office?"
 
 "No, I don't think I did."
 
@@ -411,6 +425,8 @@ Tuppence nodded.
 "Then you think—it *was* as Jane Finn that they wanted me to go to Paris?"
 
 Mr. Carter smiled more wearily than ever. "I believe in coincidences, you know."
+
+## CHAPTER V. MR. JULIUS P. HERSHEIMMER
 
 "Well," said Tuppence, recovering herself, "it really seems as though it were meant to be."
 
@@ -439,6 +455,8 @@ Tommy murmured a name in her ear.
 "And I can tell you, old bean, he's IT!"
 
 "I like him. He looks so awfully tired and bored, and yet you feel that underneath he's just like steel, all keen and flashing. Pinch me, Tommy, do pinch me. I can't believe it's real!"
+
+Mr. Beresford obliged.
 
 "Ow! That's enough!"
 
@@ -484,7 +502,7 @@ An unformulated dread swept over Tuppence.
 
 "Yes, I do. It was on his card. Inspector Brown. Quiet, unassuming sort of chap."
 
-A PLAN OF CAMPAIGN
+## CHAPTER VI. A PLAN OF CAMPAIGN
 
 A veil might with profit be drawn over the next half-hour. No such person as "Inspector Brown" was known to Scotland Yard. The photograph of Jane Finn was lost beyond recovery. Once again Mr. Brown had triumphed.
 
@@ -518,7 +536,7 @@ She set out her reasoning: the man Danvers had been shadowed on the way over, ve
 
 "Then we've got to hunt through the survivors of the *Lusitania* till we find her. The first thing is to get a list."
 
-"I've got it." Tuppence produced Mr. Carter's reply enclosing the official statement of those saved. But the list gave few Christian names; mostly Mrs. or Miss.
+"I've got it." Tuppence had written a long list of things she wanted to know and sent it to Mr. Carter; his reply, received that morning, enclosed the official statement of those saved from the *Lusitania*. But the list gave few Christian names; mostly Mrs. or Miss.
 
 "That complicates matters."
 
@@ -588,7 +606,7 @@ Two men passed out through the entrance. Tuppence's hand closed tighter on his a
 
 "Quick—follow them. I daren't. He might recognize me. The bigger of the two was Whittington."
 
-THE HOUSE IN SOHO
+## CHAPTER VII. THE HOUSE IN SOHO
 
 Whittington and his companion walked at a good pace through the small Mayfair streets. Tommy started in pursuit. Following anyone, he discovered, was fraught with difficulties unmentioned in the novels he had read. But the men did not hail a taxi, and presently they zigzagged into Oxford Street.
 
@@ -648,7 +666,7 @@ To his surprise the man stood aside.
 
 "Upstairs," he said, jerking his thumb. "Second door on your left."
 
-THE ADVENTURES OF TOMMY
+## CHAPTER VIII. THE ADVENTURES OF TOMMY
 
 Tommy passed quietly into the house and mounted the ramshackle staircase. Everything was filthy beyond words. The man below had disappeared into a back room; clearly no suspicion attached. To come and ask for "Mr. Brown" appeared a reasonable proceeding.
 
@@ -780,7 +798,9 @@ Tommy held his breath.
 
 But Tommy heard no more. A crashing blow descended on his head, and all was darkness.
 
-When Tommy set off after the two men, Tuppence retraced her steps to the entrance hall of the mansions, now tenanted by a small lift-boy polishing brass and whistling the latest air. She had always got on well with small boys; an ally in the enemy's camp was not to be despised.
+## CHAPTER IX. TUPPENCE ENTERS DOMESTIC SERVICE
+
+Earlier that same morning, while Tommy had set off on the trail of two men seen leaving the second-floor flat—one slender thread, the name "Rita," having set the Young Adventurers once more upon the track of the abductors of Jane Finn—Tuppence had retraced her steps to the entrance hall of the mansions, now tenanted by a small lift-boy polishing brass and whistling the latest air. She had always got on well with small boys; an ally in the enemy's camp was not to be despised.
 
 Glancing mysteriously round, she leaned in. "I want a word with you." She flung back her coat and exposed a small enamelled badge—in reality the device of a local training corps, pinned in for some flowers a day or two before—but she had noted the corner of a threepenny detective novel protruding from his pocket, and the immediate enlargement of his eyes told her that her tactics were good.
 
@@ -854,6 +874,8 @@ Glibly enough Tuppence ran through her imaginary career on the lines suggested b
 
 Tuppence withdrew. The adventure had begun, but she felt less elated than earlier in the morning. It crossed her mind that if the unknown Jane Finn had fallen into the hands of Mrs. Vandemeyer, it was likely to have gone hard with her.
 
+## CHAPTER X. ENTER SIR JAMES PEEL EDGERTON
+
 Tuppence betrayed no awkwardness in her new duties—the archdeacon's daughters were well grounded in household tasks. The cook went in deadly terror of her mistress; for the rest, she cooked like a *chef*. Mrs. Vandemeyer was expecting a guest to dinner, and Tuppence laid the table for two with some inward trepidation, fearing it might prove to be Whittington. The bell rang at a few minutes past eight; she was relieved to find the visitor was the second of the two men Tommy had set out to follow.
 
 He gave his name as Count Stepanov. Mrs. Vandemeyer rose with a quick murmur of pleasure: "It is delightful to see you, Boris Ivanovitch."
@@ -902,7 +924,7 @@ Tuppence removed herself speedily, cleared away at hospital speed, then slipped 
 
 Tuppence beat a hasty retreat. The conversation proved beyond doubt the complicity of both Rita and Boris, but threw little light on present preoccupations; Jane Finn's name had not been mentioned.
 
-The next morning a few brief words at the stationer's confirmed nothing was waiting for her there. It seemed incredible that Tommy should not send word. A cold hand seemed to close round her heart. But she leapt at a chance offered by Mrs. Vandemeyer.
+The next morning a few brief words with Albert—who had been calling in at a small stationer's near the mansions, the message drop she had arranged before leaving the Ritz—confirmed that nothing was waiting for her there. It seemed incredible that Tommy should not send word. A cold hand seemed to close round her heart. But she leapt at a chance offered by Mrs. Vandemeyer.
 
 "What day do you usually go out, Prudence?"
 
@@ -942,7 +964,129 @@ But Sir James was already on the topmost stair. He looked back with his kindly, 
 
 Tuppence went back to the pantry more thoughtful than ever.
 
-# A FRIEND IN NEED
+## CHAPTER XI. JULIUS TELLS A STORY
+
+Dressed appropriately, Tuppence sallied forth for her "afternoon out." She went first to the stationer's to make sure nothing had come for her, then to the Ritz. Tommy had not yet returned. It was the answer she had expected, but another nail in the coffin of her hopes. She resolved to appeal to Mr. Carter, telling him when and where Tommy had started on his quest, and asking him to trace him. The prospect revived her mercurial spirits, and she inquired for Julius Hersheimmer. He had returned half an hour ago, but had gone out immediately.
+
+She wrote her note to Mr. Carter in Julius's sitting-room, and was just addressing the envelope when the door burst open.
+
+"What the hell——" began Julius, then checked himself. "I beg your pardon, Miss Tuppence. Those fools down at the office would have it that Beresford wasn't here any longer—hadn't been here since Wednesday. Is that so?"
+
+Tuppence nodded. "You don't know where he is?"
+
+"I? How should I know? I haven't had one darned word from him, though I wired him yesterday morning."
+
+"I expect your wire's at the office unopened. Where is he?"
+
+"I don't know. I hoped you might."
+
+"I haven't had one darned word from him since we parted at the depot on Wednesday."
+
+"What depot?"
+
+"Waterloo. Your London and South Western road. He gave me a call. Said he was trailing two crooks. I hurried along right away. Beresford pointed out the crooks. The big one was mine, the guy you bluffed. Tommy shoved a ticket into my hand and told me to get aboard. He was going to sleuth the other crook." Julius paused. "I thought for sure you'd know all this."
+
+"Julius," said Tuppence firmly, "stop walking up and down. It makes me giddy. Sit down in that armchair, and tell me the whole story with as few fancy turns of speech as possible."
+
+Mr. Hersheimmer obeyed.
+
+"Well, I got into one of your dear old-fashioned first-class British compartments. Did a bit of prospecting along the corridor. Whittington was there right enough. When I saw the skunk, with his big sleek fat face, and thought of poor little Jane in his clutches, I felt real mad that I hadn't got a gun with me.
+
+"We got to Bournemouth. Whittington took a cab to an hotel. I did likewise. He hired a room, and I hired one too. He sat around in the lounge, reading the papers till dinner. I began to think there was nothing doing—but he hadn't changed for dinner, though it was a slap-up hotel, so it seemed likely he'd be going out on his real business afterwards.
+
+"Sure enough, about nine o'clock, so he did. Took a car across town, paid it off, and struck out along those pine-woods on the top of the cliff. I was there too, you understand. We walked maybe half an hour. The villas got more and more thinned out, and in the end we got to one that seemed the last of the bunch—big house, piny grounds.
+
+"It was a pretty black night, the carriage drive dark as pitch. I could hear him ahead but couldn't see him. I turned a curve just in time to see him ring the bell and get admitted. I stopped where I was. It was beginning to rain. Whittington didn't come out, and by and by I got restive, and began to mouch around. All the ground floor windows were shuttered tight, but upstairs I noticed a window with a light burning and the curtains not drawn.
+
+"Just opposite that window there was a tree growing—about thirty foot from the house. I got it into my head that if I climbed up I'd very likely see into that room. No reason why Whittington should be in that room rather than any other—less reason, in fact—but I'd got the hump from standing in the rain. So I started up.
+
+"It wasn't easy. The boughs were mighty slippery. But bit by bit I managed it, till at last I was level with the window. Then I was disappointed. I was too far to the left—a bit of curtain and a yard of wallpaper was all I could command. Just as I was going to give it up, some one inside moved and threw his shadow on my little bit of wall—and, by gum, it was Whittington!
+
+"After that, my blood was up. I noticed a long branch running out in the right direction. Mighty uncertain whether it would bear my weight. I decided I'd just got to risk it. Inch by inch, I crawled along. The bough creaked and swayed in a nasty fashion, but at last I got safely to where I wanted to be.
+
+"The room was medium-sized, furnished bare and hygienic. At a table with a lamp, facing me, was Whittington. He was talking to a woman dressed as a hospital nurse. Her back was to me. The window was shut, so I couldn't catch a word. Whittington seemed to be doing all the talking. He was very emphatic—once or twice he beat with his fist on the table.
+
+"Presently he got up, and so did she. He looked towards the window and asked something. She came right across and looked out. Just then the moon came out from behind the clouds. I was full in the moonlight. I tried to move back. The jerk was too much for that rotten old branch. Down it came, and Julius P. Hersheimmer with it!"
+
+"Oh, Julius," breathed Tuppence, "how exciting! Go on."
+
+"Luckily I pitched into a good soft bed of earth—but it put me out of action. Next thing I knew, I was lying in bed with a hospital nurse (not Whittington's one) on one side, and a little black-bearded man with gold glasses, medical man written all over him, on the other. 'Ah!' he said. 'So our young friend is coming round again. Capital. Capital.'
+
+"I did the usual stunt. Said: 'What's happened? Where am I?' But I knew the answer to the last well enough. There's no moss growing on my brain. I tried to sit up, but my right foot gave a nasty twinge. 'A slight sprain,' said the doctor. 'You'll be about again in a couple of days.'"
+
+"I noticed you walked lame," interpolated Tuppence.
+
+Julius nodded. "'How did it happen?' I asked. He replied dryly: 'You fell, with a considerable portion of one of my trees, into one of my newly planted flower-beds.'
+
+"I liked the man—seemed to have a sense of humour. Felt sure he was plumb straight. 'Sure, doc,' I said, 'I'm sorry about the tree. But perhaps you'd like to know what I was doing in your garden?' 'I think the facts do call for an explanation.' 'Well, to begin with, I wasn't after the spoons.' He smiled. 'My first theory. By the way, you are an American?' I told him my name. 'And you?' 'I am Dr. Hall, and this is my private nursing home.'
+
+"I made up my mind in a flash. I mumbled out something about a girl—stern guardian, nervous breakdown, fancied I'd recognized her among the patients. 'Quite a romance,' he said genially. 'Now, doc,' I went on, 'will you be frank with me? Have you here now, or have you had here at any time, a young girl called Jane Finn?' He repeated the name thoughtfully. 'Jane Finn? No.'
+
+"I was chagrined. 'You are sure?' 'Quite sure, Mr. Hersheimmer. It is an uncommon name.'
+
+"That laid me out. 'Now, there's another matter. When I was hugging that branch I thought I recognized an old friend talking to one of your nurses.' I didn't mention any name—Whittington might be calling himself something different—but the doctor answered at once. 'Mr. Whittington, perhaps?' 'That's the fellow. What's he doing down here?'
+
+"Dr. Hall laughed. 'He came down to see one of my nurses, Nurse Edith, who is a niece of his.' 'Is he still here?' 'No, he went back to town almost immediately.' 'Perhaps I could speak to his niece?' But the doctor shook his head. 'Nurse Edith left with a patient to-night also.' 'Have you his address in town?' 'I don't know it. I can write to Nurse Edith for it if you like.' I thanked him. 'Don't say who it is wants it. I'd like to give him a little surprise.'
+
+"That was all I could do. I wired Beresford that I was laid up. I had to be guarded. Didn't hear from him, my foot soon got right—it was only ricked—and to-day I came back to town. Say, Miss Tuppence, you're looking mighty pale!"
+
+"It's Tommy," said Tuppence. "What can have happened to him?"
+
+"Buck up, I guess he's all right really. See here, it was a foreign-looking guy he went off after. Maybe they've gone abroad—to Poland, or something?"
+
+"He couldn't without passports. Besides, I've seen that man, Boris Something, since. He dined with Mrs. Vandemeyer last night."
+
+"Mrs. Who?"
+
+"I forgot. You don't know all that."
+
+"Put me wise."
+
+Tuppence related the events of the last two days. Julius's astonishment was unbounded.
+
+"Bully for you! Fancy you a menial. It just tickles me to death!" Then more seriously: "But say now, I don't like it, Miss Tuppence. These crooks would as soon croak a girl as a man."
+
+"Do you think I'm afraid?" said Tuppence indignantly, repressing memories of the steely glitter in Mrs. Vandemeyer's eyes.
+
+"I said you were darned plucky. But that doesn't alter facts. Let's think what can have happened to Tommy. I guess we'd better get on the track of Boris. You say he's been to your place. I'd better get hold of a car, dress as a chauffeur and hang about outside. If Boris comes, you could signal, and I'd trail him."
+
+"Splendid, but he mightn't come for weeks."
+
+"We'll have to chance that." He rose. "I'll be round in half an hour."
+
+"You're awfully good, Julius. But I can't help feeling it's rather a forlorn hope. I'm really pinning my faith to Mr. Carter."
+
+"Then I shouldn't."
+
+"Why?"
+
+"Just an idea of mine."
+
+"Oh, but he must do something. There's no one else. By the way, I forgot to tell you of a queer thing that happened this morning." And she narrated her encounter with Sir James Peel Edgerton. Julius was interested.
+
+"What did the guy mean, do you think?"
+
+"I don't quite know. But I think that, in an ambiguous, legal, without-prejudishish lawyer's way, he was trying to warn me. He looked kind, and simply awfully clever. I wouldn't mind going to him and telling him everything."
+
+Somewhat to her surprise, Julius negatived the idea sharply. "See here, we don't want any lawyers mixed up in this. That guy couldn't help us any."
+
+"Well, I believe he could," reiterated Tuppence obstinately.
+
+"Don't you think it. So long."
+
+Thirty-five minutes later Julius returned, and walked Tuppence to the window. "There she is."
+
+"Oh!" said Tuppence with a note of reverence, gazing down at the enormous Rolls-Royce.
+
+"How did you get it?" she gasped.
+
+"She was just being sent home to some bigwig. I went round to his house. Said I reckoned a car like that was worth every penny of twenty thousand dollars. Then I told him it was worth just about fifty thousand dollars to me if he'd get out."
+
+"Well?" said Tuppence, intoxicated.
+
+"Well," returned Julius, "he got out, that's all."
+
+## CHAPTER XII. A FRIEND IN NEED
 
 Friday and Saturday passed uneventfully. Mr. Carter's reply to Tuppence's appeal was cold comfort: the Young Adventurers had undertaken the work at their own risk and been fully warned; if anything had happened to Tommy, he regretted it, but could do nothing.
 
@@ -1172,7 +1316,7 @@ Tuppence looked round.
 
 In the doorway stood Sir James Peel Edgerton and Julius Hersheimmer.
 
-THE VIGIL
+## CHAPTER XIII. THE VIGIL
 
 Sir James brushed past Julius and bent over the fallen woman.
 
@@ -1286,7 +1430,7 @@ A young doctor arrived, deferential to Sir James. "Heart failure, or possibly an
 
 A new thought drove Tuppence to the washstand. She found the little bottle from which Mrs. Vandemeyer had poured a few drops. It had been three parts full. Now— _it was empty_.
 
-A CONSULTATION
+## CHAPTER XIV. A CONSULTATION
 
 Nothing was more bewildering to Tuppence than the ease with which everything was arranged through Sir James's skilful handling. The doctor accepted that Mrs. Vandemeyer had taken an accidental overdose of chloral and doubted whether an inquest would be necessary. A nurse arrived to take charge, and they left the ill-omened building.
 
@@ -1356,7 +1500,7 @@ The doctor's glance came back to Julius with a new deference.
 
 The doctor stared. "I beg your pardon. I thought you understood. Miss Vandemeyer is no longer under my care."
 
-TUPPENCE RECEIVES A PROPOSAL
+## CHAPTER XV. TUPPENCE RECEIVES A PROPOSAL
 
 Julius sprang up. "What?"
 
@@ -1474,6 +1618,8 @@ A small page-boy was waiting outside her own door when she returned.
 
 Tuppence tore it open carelessly. Then she gave a cry. The telegram was from Tommy.
 
+## CHAPTER XVI. FURTHER ADVENTURES OF TOMMY
+
 From a darkness punctuated with throbbing stabs of fire, Tommy dragged his senses back to life. He blinked feebly. This was not his bedroom at the Ritz.
 
 "Damn!" said Tommy, and tried to sit up. He had remembered. He was in that sinister house in Soho. They knew him now for a spy, and would in all probability give him short shrift. Nobody knew where he was; he must depend solely on his own wits.
@@ -1551,6 +1697,8 @@ With an effort Tommy pulled himself together and sank on to the bed.
 "Anyway," he said, trying to cheer himself, "I shall see the chief—the mysterious Mr. Brown—and with a bit of luck in bluffing I shall see the mysterious Jane Finn also. After that——"
 
 After that the prospect looked dreary.
+
+## CHAPTER XVII. ANNETTE
 
 The present's troubles pressed harder than the future's — chiefly, hunger. Tommy prowled his prison, pounded the door, was answered by no one.
 
@@ -1696,7 +1844,195 @@ In the taxi to the *Ritz* Tommy dwelt on the pleasure of startling Tuppence. Mar
 
 The taxi drew up. Tommy burst into the sacred portals — and his enthusiasm received a check. Miss Cowley had gone out a quarter of an hour ago.
 
-A week of fruitless searching around the empty Moat House — Tuppence's brooch found among the leaves the only trace — convinces Tommy and Julius that the telegram was a plant and that they must turn to the professionals; Julius resolves to go to Scotland Yard, while Tommy stays behind in case anything breaks.
+## CHAPTER XVIII. THE TELEGRAM
+
+Baffled for the moment, Tommy strolled into the restaurant and ordered a meal of surpassing excellence. His four days' imprisonment had taught him anew to value good food.
+
+He was conveying a particularly choice morsel of Sole à la Jeanette to his mouth when he caught sight of Julius entering the room. At the sight of Tommy, Julius's eyes seemed as though they would pop out of his head. He strode across and pump-handled Tommy's hand with what seemed quite unnecessary vigour.
+
+"Holy snakes!" he ejaculated. "Is it really you?"
+
+"Of course it is. Why shouldn't it be?"
+
+"Why shouldn't it be? Say, man, don't you know you've been given up for dead? I guess we'd have had a solemn requiem for you in another few days."
+
+"Who thought I was dead?"
+
+"Tuppence."
+
+"She remembered the proverb about the good dying young, I suppose. There must be a certain amount of original sin in me to have survived. Where is Tuppence, by the way?"
+
+"Isn't she here? I dropped her here in the car about an hour ago. But, say, can't you shed that British calm of yours, and get down to it?"
+
+Julius drew up a chair, and Tommy plunged into his recital. Julius listened spellbound, forgetting half the dishes placed before him. At the end he heaved a long sigh.
+
+"Bully for you. Reads like a dime novel!"
+
+In his turn Julius narrated the home front — his unsuccessful reconnaissance at Bournemouth, the call upon Sir James, the sensational events of the previous night, Mrs. Vandemeyer's death, and the discovery that Jane Finn, when at last traced, had entirely lost her memory.
+
+"But who killed her?"
+
+"The doctor kidded himself she took it herself. Sir James, being a legal luminary, is likewise a human oyster. He 'reserved judgment.'" Julius detailed the morning's events.
+
+"Lost her memory, eh?" said Tommy with interest. "By Jove, that explains why they looked at me so queerly when I spoke of questioning her."
+
+"There's no doubt it was chloral?"
+
+"They call it heart failure induced by an overdose. We don't want to be worried with an inquest. But Tuppence and I and even the highbrow Sir James have all got the same idea."
+
+"Mr. Brown?"
+
+"Sure thing."
+
+Tommy nodded. "All the same, Mr. Brown hasn't got wings. I don't see how he got in and out."
+
+"How about some high-class thought transference stunt? Some magnetic influence that irresistibly impelled Mrs. Vandemeyer to commit suicide?"
+
+"Distinctly good, Julius. Especially the phraseology. But it leaves me cold. I yearn for a real Mr. Brown of flesh and blood. I think the gifted young detectives must get to work, study the entrances and exits, and tap the bumps on their foreheads until the solution dawns on them. Let's go round to the scene of the crime. I wish we could get hold of Tuppence."
+
+Inquiry at the office revealed that Tuppence had not yet returned. Julius went upstairs to look in his sitting-room. Suddenly a diminutive page-boy spoke at Tommy's elbow.
+
+"The young lady — she's gone away by train, I think, sir. I heard her tell the driver Charing Cross and to look sharp. So I thought, having asked for an A.B.C. and a Bradshaw."
+
+"When did she ask for those?"
+
+"When I took her up the telegram, sir. About half-past twelve. She opened it and gave a gasp, and then she said, very jolly like, 'Bring me up a Bradshaw and an A.B.C., and look sharp.' She looked something up, looked at the clock, called for a taxi, and was down in two ticks."
+
+At that moment Julius rejoined him, an open letter in his hand.
+
+"I say, Hersheimmer — Tuppence has gone off sleuthing on her own. She went off in a taxi to Charing Cross in the deuce of a hurry after getting a telegram." His eye fell on the letter. "Oh, she left a note for you. Where's she off to?"
+
+Almost unconsciously, he held out his hand for the letter, but Julius folded it up and placed it in his pocket. He seemed a trifle embarrassed.
+
+"I guess this is nothing to do with it. It's about something else — something I asked her that she was to let me know about."
+
+"Oh!" Tommy looked puzzled.
+
+"See here," said Julius suddenly, "I'd better put you wise. I asked Miss Tuppence to marry me this morning."
+
+"Oh!" said Tommy mechanically. He felt dazed. For the moment Julius's words benumbed his brain.
+
+"I'd like to tell you that before I suggested anything of the kind to Miss Tuppence, I made it clear that I didn't want to butt in in any way between her and you — "
+
+Tommy roused himself. "That's all right. Tuppence and I have been pals for years. Nothing more." He lit a cigarette with a hand that shook ever so little.
+
+"Oh, I guess it'll be the dollars that'll do the trick. Miss Tuppence put me wise to that right away. There's no humbug about her. We ought to gee along together very well."
+
+Tommy looked at him curiously. Tuppence and Julius! Well, why not? Had she not lamented that she knew no rich men? Had she not openly avowed her intention of marrying for money if she ever had the chance?
+
+Nevertheless, Tommy did blame her. He was filled with a passionate and utterly illogical resentment. It was all very well to *say* things like that — but a *real* girl would never marry for money. Tuppence was utterly cold-blooded and selfish, and he would be delighted if he never saw her again! And it was a rotten world!
+
+"Yes, we ought to gee along together very well," Julius continued. "I've heard that a girl always refuses you once — a sort of convention."
+
+Tommy caught his arm. "Refuses? Did you say *refuses*?"
+
+"Sure thing. She just rapped out a 'no' without any reason to it. But she'll come round right enough."
+
+"What did she say in that note?" Tommy demanded fiercely.
+
+The obliging Julius handed it to him. The note, in Tuppence's well-known schoolboy writing, ran as follows:
+
+"DEAR JULIUS,
+
+"It's always better to have things in black and white. I don't feel I can be bothered to think of marriage until Tommy is found. Let's leave it till then.
+
+"Yours affectionately,
+
+"TUPPENCE."
+
+Tommy handed it back, his eyes shining. His feelings had undergone a sharp reaction. Tuppence was all that was noble and disinterested. Had she not refused Julius without hesitation? Darling Tuppence, there was not a girl in the world to touch her!
+
+"There's not a hint here as to what she's up to," he remarked, pulling himself together. He turned to the page-boy and produced five shillings. "One thing more. What did the young lady do with the telegram?"
+
+"She crumpled it up into a ball and threw it into the grate, sir, and made a sort of noise like 'Whoop!'"
+
+"Very graphic. Here's your five shillings. Come on, Julius."
+
+They hurried upstairs. In the fireplace was a crumpled ball of orange and white. Tommy disentangled it and smoothed out the telegram.
+
+*"Come at once, Moat House, Ebury, Yorkshire, great developments — TOMMY."*
+
+They looked at each other in stupefaction.
+
+"You didn't send it?"
+
+"Of course not. What does it mean?"
+
+"I guess it means the worst," said Julius quietly. "They've got her. They signed your name, and she fell into the trap like a lamb."
+
+"My God! What shall we do?"
+
+"Get busy, and go after her! It's almighty luck that she didn't take the wire with her. Where's that Bradshaw?"
+
+After a few muttered imprecations Julius handed the Bradshaw to Tommy, who abandoned it in favour of an A.B.C.
+
+"Ebury, Yorks. From King's Cross. (Boy must have made a mistake. It was King's Cross, not *Charing* Cross.) 12.50, that's the train she went by. 3.20 is the next — and a damned slow train too."
+
+"She's a hostage, that's what she is," Tommy said as they prepared to leave. "She's in no immediate danger, because if we tumble on to anything, she'd be damned useful to them. As long as they've got her, they've got the whip hand of us. Besides, I've great faith in Tuppence."
+
+The journey was wearisome, with many stops and crowded carriages. They had to change twice. Ebury was a deserted station with a solitary porter, who gave meticulous but perplexing directions to the Moat House. It was beginning to rain. Tommy ran back to the porter to ask about a young lady from the 12.50 train. Several people had arrived; he could call to mind no one in particular, but was certain no one had asked the way to the Moat House.
+
+Depression settled on Tommy like a leaden weight. The enemy had over three hours' start — more than enough for Mr. Brown.
+
+The way seemed endless. It was past seven o'clock when they came in sight of the house. A rusty iron gate swung dismally on its hinges; an overgrown drive lay thick with leaves. Something about the place struck a chill to both their hearts. The leaves deadened their footsteps. The daylight was almost gone. It was like walking in a world of ghosts. Overhead the branches flapped and creaked with a mournful note. A turn of the drive brought them in sight of the house, also empty and deserted, the shutters closed, the steps overgrown with moss. Was it indeed to this desolate spot that Tuppence had been decoyed?
+
+Julius jerked the rusty bell handle. A jangling peal rang discordantly through the emptiness within. No one came. They rang again and again. They walked completely round the house. Everywhere silence and shuttered windows.
+
+"Nothing doing," said Julius.
+
+In the village they obtained the key from a woman at a cottage near the post office, who told them the place had been empty for years. As the front door swung back, protesting loudly, Julius struck a match and examined the floor.
+
+"I'd swear no one's passed this way. Look at the dust. Thick. Not a sign of a footmark."
+
+They wandered round the deserted house. Everywhere the same tale. Thick layers of dust, undisturbed.
+
+"This gets me. I don't believe Tuppence was ever in this house."
+
+"She must have been."
+
+On the morrow they searched again, and were reluctantly forced to the conclusion that the house had not been invaded for some considerable time. They might have left altogether but for a fortunate discovery. As they retraced their steps to the gate, Tommy gave a sudden cry, and stooping, picked something up from among the leaves. It was a small gold brooch.
+
+"That's Tuppence's! Absolutely. I've often seen her wear it."
+
+Julius drew a deep breath. "I guess that settles it. She came as far as here, anyway. We'll make that pub our head-quarters, and raise hell round here until we find her."
+
+The campaign began. Tommy and Julius worked separately and together, but the result was the same. Nobody answering Tuppence's description had been seen in the vicinity. Tuppence had certainly not remained long; that pointed to her being overcome and carried away in a car. Again they met no success. Julius wired to town for his own car, and they scoured the neighbourhood daily with unflagging zeal. Every car that had passed through the village on the fateful day was tracked down. Julius forced his way into country properties and submitted the owners to searching cross-examination. So well had the abduction been planned that the girl seemed literally to have vanished into thin air.
+
+And another preoccupation was weighing on Tommy's mind.
+
+"Do you know how long we've been here?" he asked one morning at breakfast. "A week! We're no nearer to finding Tuppence, *and next Sunday is the 29th!*"
+
+"Shucks! I'd almost forgotten about the 29th. I've been thinking of nothing but Tuppence."
+
+"To-day's the 23rd, and time's getting short. If we're ever going to get hold of her at all, we must do it before the 29th — her life won't be worth an hour's purchase afterwards. The hostage game will be played out by then. We've made a big mistake in the way we've set about this."
+
+"I'm with you there. We've been a couple of mutts. I'm going to do what we ought to have done a week ago. I'm going right back to London to put the case in the hands of your British police. Sleuths! It was a piece of damn-fool foolishness! Scotland Yard for me!"
+
+"You're right," said Tommy slowly. "I wish to God we'd gone there right away."
+
+"Are you coming along?"
+
+Tommy shook his head. "What's the good? One of us is enough. I might as well stay here and nose round a bit longer. Something *might* turn up."
+
+But the course of events was not to follow Julius's plan. Later in the day Tommy received a wire:
+
+*"Join me Manchester Midland Hotel. Important news — JULIUS."*
+
+At 7.30 that night Tommy alighted from a slow cross-country train. Julius was on the platform.
+
+Tommy grasped him by the arm. "What is it? Is Tuppence found?"
+
+Julius shook his head. "No. But I found this waiting in London. Just arrived."
+
+He handed the telegraph form to him. Tommy's eyes opened as he read:
+
+*"Jane Finn found. Come Manchester Midland Hotel immediately — PEEL EDGERTON."*
+
+Julius took the form back and folded it up.
+
+"Queer," he said thoughtfully. "I thought that lawyer chap had quit!"
+
+## CHAPTER XIX. JANE FINN
 
 It was Sir James Peel Edgerton, however, who reached them first, with a wire summoning them both to Manchester. Julius had got in half an hour earlier and led the way out of the station as Tommy arrived.
 
@@ -1744,7 +2080,7 @@ But Tommy was now certain of what he had only suspected. Sir James had not aband
 
 The words came out like the crack of a pistol. For a moment hostility flared between the two men; then Julius lowered his eyes. "For the moment, I reckon you're the boss."
 
-Sir James turned smoothly to Tommy. He had heard, he said, that his friends had been anxious. Helped by questions, Tommy gave an abbreviated account of his adventures.
+Sir James turned smoothly to Tommy. He had heard, he said, that his friends had been anxious. Helped by questions, Tommy gave an abbreviated account of his adventures, including the moment near the end when a girl in the house had cried out, wanting to be taken to 'Marguerite.'
 
 "You got yourself out of a tight place very well," Sir James said gravely. "I congratulate you."
 
@@ -1754,7 +2090,7 @@ Sir James turned smoothly to Tommy. He had heard, he said, that his friends had 
 
 "I'm afraid not. She went back to them when she could have got away."
 
-Sir James nodded. "Mrs. Vandemeyer always signed herself Rita. Curious that the girl was crying out to her at the moment Vandemeyer was either dead or dying. There are one or two points that strike me as obscure. The house was raided?"
+Sir James nodded. "Mrs. Vandemeyer always signed herself Rita — never Marguerite. Curious that the girl was crying out for her by her full name at the very moment Vandemeyer was either dead or dying. There are one or two points that strike me as obscure. The house was raided?"
 
 "They'd all cleared out. Not a clue left behind."
 
@@ -1811,6 +2147,8 @@ Her voice, with its slight Western warmth, had an almost thrilling quality. It s
 "Thank you, Miss Finn," said Sir James.
 
 Julius took her hand. "So long, Cousin Jane. I'm going to get busy after those papers."
+
+## CHAPTER XX. TOO LATE
 
 In the street they held an informal council. Sir James drew out his watch.
 
@@ -1899,6 +2237,8 @@ In a few minutes a little fire of twigs was blazing. Tommy held the sheet near t
 Tommy held the paper longer until he judged the heat had done its work. Then he uttered a cry.
 
 Across the sheet in neat brown printing ran the words: WITH THE COMPLIMENTS OF MR. BROWN.
+
+## CHAPTER XXI. TOMMY MAKES A DISCOVERY
 
 For a moment they stood staring at each other, dazed.
 
@@ -1994,6 +2334,8 @@ But the room was deserted. Tommy walked to the writing-table and opened the midd
 
 What on earth was a photograph of the French girl Annette doing in Julius Hersheimmer's writing-table?
 
+## CHAPTER XXII. IN DOWNING STREET
+
 The Prime Minister tapped the desk with nervous fingers. "Do you really mean things are not so desperate after all?"
 
 "So this lad seems to think." Mr. Carter handed the letter across. It was written in a sprawling boyish hand.
@@ -2061,7 +2403,7 @@ The other two asked no questions.
 
 "Perhaps it never left it," suggested the lawyer gently.
 
-"But the bogus inspector?"
+"But the bogus inspector — Inspector Brown, who conducted the search?"
 
 "Ah," said Sir James thoughtfully. He rose. "I mustn't keep you. I must get back to my case."
 
@@ -2070,6 +2412,8 @@ Two days later Julius Hersheimmer returned from Manchester. A note from Tommy la
 A peculiar smile lingered on Julius's face. He threw the letter into the waste-paper basket.
 
 "The darned fool!" he murmured.
+
+## CHAPTER XXIII. A RACE AGAINST TIME
 
 After ringing up Sir James, Tommy enlisted Tuppence's friend Albert, and the two took quarters at the inn in Gatehouse. Astley Priors, the village volunteered, was the property of a Dr. Adams — retired, but kept a few private patients ("balmy ones — you understand"). A popular figure, given to subscriptions, "a very pleasant, affable gentleman." Scientific; always visitors.
 
@@ -2123,6 +2467,8 @@ Holyhead. Did that mean—? He read the note again slowly. The boots above conti
 He smoothed out the note thoughtfully.
 
 "Yes, a damned fool. But so's some one else. And at last I know who it is."
+
+## CHAPTER XXIV. JULIUS TAKES A HAND
 
 In his suite at Claridge's, Kramenin was informed that a Mr. Julius P. Hersheimmer was below. The name promised a millionaire several times over.
 
@@ -2270,6 +2616,8 @@ They started running.
 
 "Dry up. I want a few words with you, Mr. Julius Hersheimmer."
 
+## CHAPTER XXV. JANE’S STORY
+
 Her arm through Jane's, dragging her along, Tuppence reached the station just as the train came to a standstill. They sank breathless into an empty first-class compartment.
 
 A man looked in, then passed on. Jane started, her eyes dilating with terror.
@@ -2380,7 +2728,7 @@ But the girl sprang to her feet. "What do you mean? That Mr. Brown is *Julius?* 
 
 "No, Miss Finn," said Sir James unexpectedly. "Not your cousin. The man who calls himself Julius Hersheimmer is no relation to you whatsoever."
 
-**MR. BROWN**
+## CHAPTER XXVI. MR. BROWN
 
 Sir James's words came like a bomb-shell. The lawyer crossed to his desk and returned with a small newspaper cutting—the paragraph about the man found dead in New York.
 
@@ -2438,7 +2786,107 @@ Their grip slackened. Quick as a flash his left hand, the hand which bore the bi
 
 Then his face changed, and with a long convulsive shudder he fell forward in a crumpled heap, while an odour of bitter almonds filled the air.
 
-**AND AFTER**
+## CHAPTER XXVII. A SUPPER PARTY AT THE _SAVOY_
+
+The supper party given by Mr. Julius Hersheimmer to a few friends on the evening of the 30th will long be remembered in catering circles. He gave carte blanche—and when a millionaire gives carte blanche he usually gets it. Every delicacy out of season was provided; waiters carried bottles of ancient vintage with loving care. The list of guests was small and select: Mr. Carter; an old friend of his, Sir William Beresford; Dr. Hall; those two youthful adventurers, Miss Prudence Cowley and Mr. Thomas Beresford; and last, as guest of honour, Miss Jane Finn.
+
+Julius had spared no pains to make Jane's appearance a success. Earlier in the day, a mysterious knock had brought Tuppence to the door of the apartment she was sharing with the American girl. It was Julius, with a cheque in his hand.
+
+"Say, Tuppence, will you do me a good turn? Get Jane regularly togged up for this evening. Spare no expense. You get me?"
+
+"Sure thing," mimicked Tuppence. "It will be a pleasure dressing Jane. She's the loveliest thing I've ever seen."
+
+"That's so," agreed Mr. Hersheimmer fervently. His fervour brought a momentary twinkle to Tuppence's eye.
+
+To most people the 29th, the much-heralded "Labour Day," had passed much as any other day. Newspapers which had hinted at a general strike and a reign of terror were forced to hide their diminished heads. In the Sunday papers a brief notice of the sudden death of Sir James Peel Edgerton, the famous K.C., had appeared. The exact manner of his sudden death was never made public.
+
+Tommy had been right in his forecast. It had been a one-man show. Deprived of their chief, the organization fell to pieces. Kramenin had made a precipitate return to Russia. The gang had fled from Astley Priors in a panic, leaving behind documents which compromised them hopelessly. With these proofs, aided by a small brown diary taken from the dead man's pocket containing a full and damning résumé of the whole plot, the Government had called an eleventh-hour conference. The Labour leaders were forced to recognize that they had been used as a cat's paw. It was to be Peace, not War.
+
+But the Cabinet knew by how narrow a margin they had escaped utter disaster. Burnt in on Mr. Carter's brain was the strange scene which had taken place in the house in Soho the night before—he had entered the squalid room to find that great man, the friend of a lifetime, dead, betrayed out of his own mouth. From the dead man's pocket-book he had retrieved the ill-omened draft treaty, and then and there it had been reduced to ashes. England was saved.
+
+And now, in a private room at the *Savoy*, Mr. Julius P. Hersheimmer was receiving his guests.
+
+Mr. Carter was the first to arrive. With him was a choleric-looking old gentleman, at sight of whom Tommy flushed up to the roots of his hair.
+
+"Ha!" said Sir William, surveying him apoplectically. "So you're my nephew, are you? Not much to look at—but you've done good work. Shall we let bygones be bygones? You're my heir; I propose to make you an allowance, and you can look upon Chalmers Park as your home."
+
+"Thank you, sir, it's awfully decent of you."
+
+"Where's this young lady I've been hearing such a lot about?"
+
+Tommy introduced Tuppence.
+
+"Girls aren't what they used to be in my young days."
+
+"Yes, they are," said Tuppence. "Their clothes are different, perhaps, but they themselves are just the same. I'm a frightful minx myself."
+
+"Minxes then—minxes now!" The old gentleman chuckled and pinched her ear in high good-humour. Most young women were terrified of the "old bear," as they termed him; Tuppence's pertness delighted the old misogynist.
+
+When all were assembled, Julius indicated the place of honour with a wave of his hand. "Tuppence, will you—"
+
+But Tuppence shook her head. "No—that's Jane's place. When one thinks of how she's held out all these years, she ought to be made the queen of the feast to-night."
+
+Julius flung her a grateful glance, and Jane came forward shyly to the allotted seat. Beautiful as she had seemed before, it was as nothing to the loveliness that now went fully adorned. The model gown supplied by a famous dressmaker had been entitled "A tiger lily." It was all golds and reds and browns, and out of it rose the pure column of the girl's white throat, and the bronze masses of hair that crowned her lovely head. There was admiration in every eye as she took her seat.
+
+Soon the supper party was in full swing, and with one accord Tommy was called upon for a full explanation.
+
+"You've been too darned close about the whole business," Julius accused him. "The idea of you and Tuppence casting me for the part of Mr. Brown just tickles me to death!"
+
+"The idea was not original to them," said Mr. Carter gravely. "It was suggested, and the poison very carefully instilled, by a past-master in the art."
+
+"There's nothing to tell," said Tommy, acutely uncomfortable. "I was an awful mug—right up to the time I found that photograph of Annette, and realized that she was Jane Finn. Then I remembered how persistently she had shouted out that word 'Marguerite'—and I thought of the pictures, and—well, that's that."
+
+"Go on," said Mr. Carter.
+
+"That business about Mrs. Vandemeyer had worried me. On the face of it, Julius or Sir James must have done the trick. Finding that photograph in the drawer made me suspect Julius. Then I remembered that it was Sir James who had discovered the false Jane Finn. I decided to take no chances either way. I left a note for Julius saying I was off to the Argentine, and dropped Sir James's letter with the offer of the job by the desk so that he would see it was genuine. Then I rang up Sir James and told him everything except where I believed the papers to be hidden. The way he helped me track Tuppence and Annette almost disarmed me. Then I got a bogus note from Tuppence—and I knew."
+
+"But how?"
+
+Tommy passed the note round the table. "It's her handwriting all right, but I knew it wasn't from her because of the signature. She'd never spell her name 'Twopence,' but anyone who'd never seen it written might quite easily do so. Julius *had* seen it—he showed me a note of hers to him once—but *Sir James hadn't!* After that everything was plain sailing. I sent Albert to Mr. Carter, pretended to go away, and doubled back. I sent the girls off to Sir James—I was sure they'd fetch up at the house in Soho. The moment they were out of sight I told Julius to drive like hell for London. We met Mr. Carter outside, hid behind the curtain in the recess, and—that's all."
+
+"By the way," said Julius suddenly, "you're all wrong about that photograph of Jane. It *was* taken from me, but I found it again—in that little safe on the wall in Mrs. Vandemeyer's bedroom."
+
+"I knew you found something," said Tuppence reproachfully. "That's what started me off suspecting you."
+
+"I guess I was a mite suspicious too. I determined I wouldn't let on I'd got it until a photographer had made a dozen copies."
+
+"We all kept back something or other," said Tuppence thoughtfully. "I suppose secret service work makes you like that."
+
+Mr. Carter took from his pocket a small shabby brown book.
+
+"Not until I read the entries here could I bring myself fully to credit the amazing truth. This book will pass into the possession of Scotland Yard, but never be publicly exhibited. To you, who know the truth, I propose to read certain passages."
+
+He opened the book and turned the thin pages.
+
+"... It is madness to keep this book. I know that. But I have never shrunk from taking risks. The book will only be taken from my dead body....
+
+"... From an early age I realized I had exceptional abilities. My appearance was the only thing against me—quiet and insignificant, utterly nondescript....
+
+"... When I was a boy I heard a famous murder trial. I was deeply impressed by the eloquence of the counsel for the defence. Then I studied the criminal in the dock. The man was a fool—I felt an immeasurable contempt for him. It occurred to me that the criminal standard was a low one—wastrels, failures, the riff-raff of civilization. Strange that men of brains had never realized its extraordinary opportunities....
+
+"... Supposing I became Prime Minister of England? Hampered at every turn, fettered by the democratic system of which I should be the mere figurehead! No—the power I dreamed of was absolute! An autocrat! A dictator! And such power could only be obtained by working outside the law....
+
+"... I saw that I must lead two lives. I modelled myself upon famous K.C.'s. If I had chosen to be an actor, I should have been the greatest actor living! No disguises—no grease paint—no false beards! Personality! I put it on like a glove! When I shed it, I was myself, quiet, unobtrusive, a man like every other man. I called myself Mr. Brown. There are hundreds of men called Brown—hundreds of men looking just like me....
+
+"... I have been reading a life of Napoleon. He and I have much in common....
+
+"... Once or twice I have felt afraid. The first time was in Italy. The talk fell on insanity. The professor said, 'A great many men are mad, and no one knows it. They do not know it themselves.' I do not understand why he looked at me when he said that...."
+
+Mr. Carter paused. "There are just two small entries that refer to the three of you. In the light of what happened they are interesting.
+
+"... By inducing the girl to come to me of her own accord, I have succeeded in disarming her. But she has intuitive flashes that might be dangerous. She must be got out of the way. I can do nothing with the American. He suspects and dislikes me. But he cannot know. Sometimes I fear I have underestimated the other boy. He is not clever, but it is hard to blind his eyes to facts...."
+
+Mr. Carter shut the book. "A great man. Genius, or insanity, who can say?"
+
+There was silence. Then Mr. Carter rose to his feet.
+
+"I will give you a toast. The Joint Venture which has so amply justified itself by success!"
+
+It was drunk with acclamation.
+
+"There's something more we want to hear," continued Mr. Carter. "We'll ask Miss Jane Finn to tell us the story that only Miss Tuppence has heard so far—but before we do so we'll drink her health. The health of one of the bravest of America's daughters, to whom is due the thanks and gratitude of two great countries!"
+
+## CHAPTER XXVIII. AND AFTER
 
 At a celebratory supper at the Savoy, Mr. Carter raised a glass to the Joint Venture and read brief passages from Sir James's notebook—revealing a man who had chosen absolute power outside the law and worn borrowed personalities. The treaty had been burnt; the conspiracy had collapsed.
 

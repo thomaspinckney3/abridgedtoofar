@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T13:23:30",
+  "key": "5f100315a326b07843913d53d1dbf4a8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "5ff4145f5f7a0c732069111e00d18b13",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"a child was born, and christened later...as Henry Brooks Adams...under the shadow of Boston State House...Beacon Hill...Quincy\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Winter and summer, cold and heat, town and country, force and freedom, marked two modes of life and thought...the man who pretended they were not, was in his eyes a schoolmaster...From earliest childhood the boy was accustomed to feel that, for him, life was double\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"He hung about the library; handled books...ransacked drawers...yet his dislike of schools is stated: 'he always reckoned his school-days...as time thrown away'\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"the year 1848, for a boy's road, was decisive...anti-slavery politics...Free Soil maneuvers...Sumner...he had managed to get himself into a state of moral confusion...public virtue and personal loyalty seldom meet neatly\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"Harvard, as far as it educated at all, was a mild and liberal school...His first lecture was his last. He needed no more than one hour to see that he had made another failure in education...The Civil Law existed as lecture in its deadliest thirteenth-century form\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"Mrs. Kuhn insisted on invading the enemy's country...The Valtellina showed war; Garibaldi's Cacciatori...this first plunge into Italy passed Beethoven as a piece of accidental education...London's gray respectability...the revelation that the modern mind must take its measure from force as much as from form\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"Mr. Adams once more intimated that he thought himself entitled to the services of one of his sons...Henry packed his trunk again...Minister Adams sailed for England, May 1, 1861...The Civil War throws him into Washington's ad hoc stage, a private secretary to his father\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"the Trent Affair passed like a snowstorm...he watches Earl Russell's polite evasions and the Lairds' ironclad rams put England's scruples on the scales against America's survival\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"His lessons accumulate through the confusing splendor of Palmerston's drawing rooms, the paradoxes and violences of Gladstone's eloquence, and the dry, implacable habits of the British cabinet\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"Russell's reply...announcing at last that 'instructions have been issued which will prevent the departure of the two ironclad vessels from Liverpool'...the Alabama escaped...patience, documentation, and quiet pressure eventually detain them\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Through these years he loses illusions about men...society is a mechanism, and the mind must find a scale on which to weigh it\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"In February, 1868, he was back in Rome...At ten o'clock of a July night...the Adams family...clambered down the side of their Cunard steamer...wondering whether his education has taught him to read the drift of a nation\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"The postwar Republic makes him a writer and sometimes a professor, but in both roles he calls himself a failure...as professor, he regarded himself as a failure...his reviews and histories bite at the present with facts\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"King, Hay, and Adams had been inseparable...He secures intimacy with men and women of brilliance\u2014Clarence King, John Hay...sits inside the operating theater of Gilded Age politics and press, but rarely mistakes access for mastery\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"History seems to him a contest of forces more than of principles...he studies the Chicago and Paris Expositions as if they were dynamos with the covers off\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"the dynamo became a symbol of infinity...On one side, at the Louvre and at Chartres, was the highest energy ever known to man...compare the Virgin of Chartres...with the whirring dynamo\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"Art and architecture, once the world's grammar, now read like dialects...he turns from cathedrals' glass to steel's glow and from Thomas Aquinas's synthesis to Karl Pearson's skepticism, finding that order has dissolved into multiplicity\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"the movement from unity into multiplicity, between 1200 and 1900, was unbroken in sequence...If the Middle Ages made a universe of 'One,' the modern makes it many\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"These contradictions gather as friends die...The year 1901 was a year of tragedy...death had ravaged one's circle of friends\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"The summer of the Spanish War began the Indian summer of life...McKinley's assassination...Hay's 'open door' diplomacy...the sudden tilt of Germany towards the Atlantic balance hint\u2014briefly\u2014at a modern pax\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"Russia had nothing in common with any ancient or modern world...the Boxer crisis's theater...new forces overwhelm old ethics; bombs educate more swiftly than sermons, and the Senate calls force by another name\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"A dynamic law requires that nature and man react on each other without stop...modern life doubles its power like coal tons and intensities like heat...man is a force among forces, his mind is a function of acceleration\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"He comes to a dynamic theory of history: as new energies\u2014steam, electricity, radium\u2014enter the system...education, if honest, must prepare for shock rather than repose\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"Chartres and the Virgin still model a unity of appeal, but the dynamo and its derivatives command habit; the modern student must triangulate from both\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"Adams, an elderly 'pedometer' of forces, confesses that his dynamic law may be no more than an instrument...the next generation will test it...waiting another ten years, in order to face a seventh doubling of complexities\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"He proposes no program: the Senate cannot legislate unity, nor can a press arouse ethics in an engine\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"sitting once more on the steps of Ara Coeli...history is a sequence of accelerations whose unity may exist only in our need to find one\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"The deaths of Clarence King and John Hay, the last of his trio, cue the curtain's fall...the three friends had begun life together; and the last of the three had no motive\u2014no attraction\u2014to carry it on after the others had gone\", \"note\": \"\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"between the Virgin and the Dynamo lies the path of the modern mind...He had no choice but to march with his world...the only preparation worth having is the agility to move between them as the forces that summon us grow stronger and less humane\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 117174,
+    "output_tokens": 2028,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 52.849539041519165,
+    "stop_reason": "end_turn"
+  }
+}

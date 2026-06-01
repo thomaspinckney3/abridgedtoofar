@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:02:42",
+  "key": "9e044d8c4d0f26e79d2e09b14512bf20",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both chapters systematically, applying each test against the draft alone (not the source).\n\n---\n\n**Ch 024 draft \u2014 pre-checks**\n\n- Albert is introduced in the first sentence: \"Tommy enlisted Tuppence's friend Albert.\" \u2713\n- Dr. Adams, Astley Priors, the inn at Gatehouse \u2014 all established. \u2713\n- The carter: the authorized cut list includes \"Unnamed carter (brings Tuppence's warning note).\" The draft keeps the carter but strips his name \u2014 the draft refers only to \"a rude-looking carter coated with mud,\" which is a descriptor, not a proper name. Not a finding.\n- \"Whittington\" appears in the draft (\"the butler was Whittington\"). Whittington is a major continuing character introduced in earlier chapters; not a minor removable name. \u2713\n- \"Annette\" is mentioned in the inquiry passage and appears in the letter. \u2713\n- Tommy's reasoning at the end (\"at last I know who it is\") \u2014 the source's explanation of *why* re-reading the note reveals the identity is cut, but the sentence still parses; the reader understands Tommy has deduced something. Not a structural break.\n- Pivot check: \"Again Tommy felt the cold chill of uncertainty\" \u2014 \"again\" implies a prior instance. The prior instance is present in the same draft paragraph (\"Tommy felt doubts\"). \u2713\n\nNo valid findings in Ch 024.\n\n---\n\n**Ch 025 draft \u2014 pre-checks**\n\n**George the chauffeur**: The authorized cut list removes \"George (Julius's chauffeur).\" In the source, George is introduced by name with a full backstory (naval man, brother murdered by Bolsheviks, etc.). The draft retains the backstory in paraphrase (\"the chauffeur \u2014 a naval man whose brother had been murdered by Bolsheviks\") but never uses his name in the body of the scene \u2014 until it does: \"Pull up, George.\" and \"Cross-roads here, sir\" (attributed to the chauffeur by role only in the draft, which is fine). Wait \u2014 checking the draft again:\n\n> \"Turn the car first. Keep the engine going, and be ready to scoot like hell.\"\n\nThis is Julius speaking to someone \u2014 but the draft has stripped out the direct address \"George\" and the source line \"Very good, sir. / The front door was opened by the butler.\" In the draft this is unattributed but contextually clear (Julius is commanding his chauffeur). Not a structural break.\n\nBut then: **\"Pull up \u2014 the gentleman's not making the return trip.\"** \u2014 In the source Julius says \"Pull up, George.\" The draft says \"Pull up\" with no addressee, which parses fine as an imperative. Not a finding.\n\nThe name \"George\" does not appear in the draft at all \u2014 I re-read and confirm it's been cleanly elided. \u2713\n\n**Kramenin's secretary Ivan / \"Grieber\"**: In the source the secretary is named \"Ivan\" and \"Monsieur Grieber.\" In the draft the secretary is referred to only as \"The secretary\" throughout. No orphaned name. \u2713\n\n**\"Little Willie\"**: Julius refers to his revolver as \"Little Willie\" in the draft. First use in draft: \"And Little Willie here is just hopping mad to go off.\" This is the first mention of \"Little Willie\" in the draft \u2014 the source has Julius's earlier lines establishing it's the revolver, but in the draft the name appears mid-dialogue without any prior gloss. However, the context makes it immediately parseable: the line follows directly after Julius holding up Kramenin at gunpoint, and the name is repeated later with \"Julius tapped his revolver. 'Little Willie here takes the credit.'\" A competent reader can infer at the first use that \"Little Willie\" is the revolver from context (Julius just drew it, Kramenin is panicking). This is a less-ornamented version, not a genuine confusion. Not a finding.\n\n**Tuppence's question \"Where's Tommy?\"**: In the source and draft, after the rescue Tuppence asks \"Where's Tommy?\" Julius answers \"Tommy's making tracks for the Argentine. He thought you'd turned up your toes.\" The draft cuts Julius's previous line to Tuppence in Ch 024 where he explains anything about Tommy \u2014 but this dialogue parses fine; it's just Julius's report of his assumption. Not broken.\n\n**\"Are you all right, Tuppence?\" / \"Have you hit him?\"**: In the source, after Julius fires back, Tuppence asks \"Have you hit him?\" and Julius confirms, then asks \"Are you all right, Tuppence?\" In the draft: `\"Hit him \u2014 not killed.\"` \u2014 this is rendered as a free-floating declaration rather than a reply to Tuppence's question, which was cut. Let me check: in the draft Tuppence's \"Have you hit him?\" is cut; the draft just has Julius say \"Hit him \u2014 not killed.\" This is Julius speaking to no one in particular, but it still parses as a self-contained statement. Not a structural break.\n\n**\"Where's Tommy? And who's this?\"** in the draft: Tuppence says \"Where's Tommy?\" and \"And who's this?\" In the source she says \"Are you all right, Tuppence?\" first, then Tuppence asks both questions. In the draft the sequence is: Julius fires, says \"Hit him \u2014 not killed,\" then Tuppence cries \"Where's Tommy? And who's this?\" This parses. \u2713\n\n**\"Annette\"**: Tuppence refers to the other girl as \"Annette.\" In the draft's Ch 024, Tuppence's note mentions \"Annette told me how you'd escaped\" \u2014 so Annette is established in the draft. \u2713 In Ch 025 draft, the girl is called \"Annette\" by Tuppence, and the draft has Julius reveal she is actually \"the one real and original Jane Finn.\" This works. \u2713\n\n**Tommy's appearance at the crossroads**: Tommy climbs over the back of the car. He says \"Was in the bushes by the drive. Hung on behind.\" In the source he adds \"Couldn't let you know before at the pace you were going. It was all I could do to hang on.\" The draft cuts these explanatory lines but the remaining lines parse. \u2713\n\n**\"Mr. Carter lives out of town, but you'll be safe with him.\"**: In the source Tommy says \"Mr. Carter lives out of town, but you'll be safe with him.\" The draft cuts this entirely and just has \"Go straight to Sir James Peel Edgerton.\" This is a simple compression. \u2713\n\n**The \"smaller girl\" identification issue**: In the draft, after the Russian exits, \"How did you 'persuade' him? asked the smaller girl \u2014 the first time she'd spoken.\" This refers to \"the smaller girl.\" The two girls were hustled into the car as \"two figures huddled in cloaks\" \u2014 \"the smaller of the two\" was noted to have resisted. So \"the smaller girl\" has an antecedent. Julius has also just called one \"Jane\" (\"Get down, Jane\"). The reader can track that there are two girls. But at this point in the draft has the reader been told which of the two girls is which? Julius called one \"Jane\" when she was shot at. The other is Tuppence (who subsequently speaks). So \"the smaller girl\" asking \"how did you persuade him\" \u2014 in the source this is explicitly Jane Finn/Annette. The draft reader would need to know which girl is smaller. In the source, Whittington \"shoved [the smaller of the two] in unceremoniously\" \u2014 this is preserved in the draft. So the draft has established \"the smaller\" as the one who resisted. Julius addressed \"Jane\" when pushing someone down. The question is whether a reader knows \"the smaller girl\" = Jane/Annette vs. Tuppence. Given that Julius just called the taller one \"Jane\" (pushing her flat, \"Get down, Jane\"), the reader might actually be confused about which is which \u2014 BUT looking at the draft more carefully: \"Get down, Jane!\" Julius cried, thrusting her flat\" \u2014 here Julius calls the taller girl (the one the bullet nearly missed) \"Jane.\" Then \"the smaller girl\" asks the question. Then Tuppence speaks separately. So the reader is told there are two girls; one is \"Jane\" (taller), one is the smaller (Tuppence?). But then Julius reveals that \"Annette\" is actually Jane Finn \u2014 which contradicts the reader's inference from Julius calling the taller girl \"Jane.\" This is confusing but it's a deliberate plot revelation, not a compression artifact. The source has the same structure. Not a finding.\n\n**\"Darn you! Jane, you stay where you are.\"**: Julius shouts this. The draft has established that Julius called the taller girl \"Jane\" and has just announced she is Jane Finn. The name is coherent. \u2713\n\nAfter thorough examination of both drafts against all seven tests, I find no sentences that fail any of the specified tests in a way that would genuinely confuse a competent reader without source access. Each potential issue either resolves from immediate context or is a less-ornamented version of the source.\n\n```json\n[]\n```",
+    "input_tokens": 12501,
+    "output_tokens": 2148,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 45.14452004432678,
+    "stop_reason": "end_turn"
+  }
+}

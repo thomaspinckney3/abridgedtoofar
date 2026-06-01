@@ -1,14 +1,61 @@
 {
-  "ts": "2026-04-22T22:16:17",
+  "ts": "2026-05-05T20:57:07",
   "key": "1a83ea19733071554acaf90b7631ef67",
   "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "classify",
+    "hash": "f61cff406ef1c4a104cec785524d185d",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_classifier.py",
+        "sha256": "057d9dce3dd5d6ebc6ff94f20a9b17c4e7317618be01f7f791e8a1ac56845afb",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/classify_chapters.md",
+        "sha256": "be91bb67e4fecc47bf1fa8e2590b6aae1e59c823deab167c5d7a75ff3a0d62c0",
+        "missing": false
+      }
+    ]
+  },
   "response": {
-    "text": "[\n  {\"id\": \"001\", \"status\": \"diegetic\", \"reason\": \"Chapter I narrative prose, Nick's opening monologue\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Chapter II narrative prose, valley of ashes\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter III narrative prose, Gatsby's parties\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter IV narrative prose, Gatsby's guests and past\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter V narrative prose, Gatsby and Daisy reunite\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter VI narrative prose, Gatsby's origins\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter VII narrative prose, climactic confrontation\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII narrative prose, Gatsby's death\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter IX narrative prose, aftermath and conclusion\"}\n]",
+    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"diegetic\", \"reason\": \"Chapter I narrative prose\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Chapter II narrative prose\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter III narrative prose\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter IV narrative prose\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter V narrative prose\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter VI narrative prose\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter VII narrative prose\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII narrative prose\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter IX narrative prose\"}\n]\n```",
     "input_tokens": 3585,
-    "output_tokens": 283,
+    "output_tokens": 236,
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
-    "duration_s": 4.324580907821655,
+    "duration_s": 3.4236719608306885,
     "stop_reason": "end_turn"
   }
 }

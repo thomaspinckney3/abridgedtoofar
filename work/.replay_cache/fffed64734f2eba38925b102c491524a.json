@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T22:26:24",
+  "key": "fffed64734f2eba38925b102c491524a",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "690c637961c17a9fa3c0da9e8720b751",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"A succulent hash arrived, and Mr. Wolfshiem, forgetting the more sentimental atmosphere of the old Metropole, began to eat with ferocious delicacy.\",\n    \"source_has\": \"\u201cThis is a nice restaurant here,\u201d said Mr. Wolfshiem\u2026 \u201cBut I like across the street better!\u201d \u2026 \u201cWhat place is that?\u201d I asked. \u201cThe old Metropole.\u201d \u201cThe old Metropole,\u201d brooded Mr. Wolfshiem\u2026 A succulent hash arrived, and Mr. Wolfshiem, forgetting the more sentimental atmosphere of the old Metropole, began to eat\u2026\",\n    \"gate_test_answer\": \"A reader is likely to stumble because \u201cthe old Metropole\u201d is named without ever being identified in the draft; they can infer it\u2019s the place across the street, but the specific name appears without introduction, creating a small placement gap rather than mere lost ornament.\"\n  }\n]",
+    "input_tokens": 24831,
+    "output_tokens": 9568,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 119.7533450126648,
+    "stop_reason": "stop"
+  }
+}

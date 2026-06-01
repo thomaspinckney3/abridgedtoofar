@@ -1,0 +1,30 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 5 of mobydick chapter 3: The Spouter-Inn.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Ishmael (narrator).
+Primary frame action: accepts the room and inspects it.
+Caption zone reserved for later lettering: top_center.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Ishmael (narrator) (Narrator, traveler seeking a bed): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious. | Peter Coffin (landlord) (Innkeeper of the Spouter-Inn): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.
+Prop continuity: candle: Plain tallow candle with small brass or tin holder. Avoid confusion: No readable labels; keep flame modest. | seaman's bag: Large, weathered canvas sea-bag with knotted cords. Avoid confusion: Not a trunk; soft-sided and cinched with rope. | harpoon by bed: Tall iron harpoon standing upright at the bed’s head. Avoid confusion: Keep as background prop; not used as weapon in scene. | prodigious bed: Very large, plain wooden bedstead with heavy, rumpled blankets. Avoid confusion: No ornate finials; utilitarian inn bed. | papered fireboard: Thin panel with printed paper covering the fireplace opening. Avoid confusion: Do not include readable text or imagery; it is removed for the idol. | shaggy poncho-like cloak: Thick, door-mat-like garment with a central slit and small tinkling quill-like tags on the edge. Avoid confusion: Garment, not an actual mat; worn as a poncho.
+Secondary supporting visuals only: Rude shelf with odd bone hooks; A crazy old sea chest serving as stand
+Do not show: Readable images on the papered fireboard; Invented modern furniture; No readable text
+Scene: Ishmael stands at the side of an enormous, plain bed, surveying the small cold room as the landlord backs toward the door with a candle. A harpoon leans at the bed’s head; a seaman’s bag lies near a lashed hammock; a shaggy poncho-like cloak with little quill tags rests on a sea chest; a papered fireboard closes the hearth. No readable text. Leave clean negative space in the top-center for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. blocker caption_zone: Top-center caption zone is occupied by a mirror and a burning candle on the mantel, leaving no clean negative space for lettering.
+   Visible failure to avoid: In the upper center of the frame above the fireplace, a framed mirror and a lit candle sit directly where the caption should go.
+   Repair instruction: Reserve clean negative space in the top-center third: remove or lower the mirror and bottle from above the mantel, relocate the candle away from the top-center, and leave a plain wall area for the caption.
+2. major primary_action: The landlord is not carrying the candle while backing toward the door as specified.
+   Visible failure to avoid: The landlord stands at the open door empty-handed; the lit candle rests on the mantel.
+   Repair instruction: Have the landlord hold a plain tallow candle in a small brass/tin holder as he backs toward the open door; remove the candle from the mantel.
+3. major prop_confusion: The prodigious bed is depicted with decorative ball finials and looks neatly made, conflicting with the plain, utilitarian, heavily rumpled bedstead specified.
+   Visible failure to avoid: Bedposts with round finials and a smooth, neatly tucked blanket are clearly visible.
+   Repair instruction: Swap the bed for a very large, plain wooden bedstead with no finials; add heavy, rumpled blankets to emphasize its utilitarian inn character.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.

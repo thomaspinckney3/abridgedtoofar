@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:32:27",
+  "key": "8a502c4bd0682ff78b29c0cfc46a4fb2",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying the gate test rigorously and checking only for structural damage, not mere compression.\n\n---\n\n**Ch 023 draft \u2014 scan**\n\n- \"Chief among those fetching and carrying was Captain Bildad's sister, a lean old lady of indefatigable spirit, resolved that nothing should be found wanting in the Pequod\u2014Aunt Charity, as everybody called her.\" \u2014 Aunt Charity is on the authorized-removal list. However, her name *survives* in the draft. The draft does supply a local identifier (\"Captain Bildad's sister, a lean old lady\u2026\") before the name, so the name is glossed inline. The authorized-removal list makes this an expected seam; not a finding.\n\n- Everything else in Ch 023 draft parses cleanly and the pronouns have clear antecedents.\n\n---\n\n**Ch 024 draft \u2014 scan**\n\n- Elijah is introduced as \"It was Elijah\" without a prior gloss. But he appears in an earlier chapter (Ch 019/020 in the source) and is a recurring, named character the reader has already met. He is not on the authorized-minor-character-removal list. His name was established in a prior chapter; he is not a newly introduced minor character here \u2014 he is returning. Not a finding.\n\n- \"Those sailors we saw, where can they have gone to?\" \u2014 The sailors were mentioned in the opening of this same draft chapter (\"some sailors running ahead there\"). Clear antecedent. Not a finding.\n\n- \"were it not for Elijah's otherwise inexplicable question\" \u2014 Elijah's question (\"Did ye see anything looking like men\u2026\") is present in the draft. Not a finding.\n\n- \"He put his hand upon the sleeper's rear, and without more ado, sat quietly down there.\" \u2014 \"the sleeper\" introduced same paragraph. Clear.\n\n- \"In his land, owing to the absence of settees, the king and great people fattened some of the lower orders for ottomans.\" \u2014 The source attributes this to Queequeg's narration explicitly: \"upon questioning him in his broken fashion, Queequeg gave me to understand that, in his land\u2026\" The draft strips the attribution frame entirely, leaving the clause floating without a grammatical subject or attribution. Let me check: the draft reads: *\"'Oh! perry dood seat,' said Queequeg, 'my country way; won't hurt him face.' In his land, owing to the absence of settees, the king and great people fattened some of the lower orders for ottomans.\"* \u2014 The sentence \"In his land\u2026\" has no main-clause subject performing the action of telling/explaining. However, it does parse as a declarative narrator observation \u2014 a competent reader would understand this as narrative summary of what Queequeg's custom was, following Queequeg's speech. It's compressed but not broken; the \"his\" in \"his land\" links back to Queequeg via context. Gate test: less ornamented, not genuinely confusing. Not a finding.\n\n- \"Starbuck's astir\" \u2014 Starbuck has not been introduced in either draft chapter (Ch 023 or Ch 024). The source introduces him here only by name and the rigger's gloss: \"He's a lively chief mate, that; good man, and a pious.\" That gloss **survives in the draft**: *\"He's a lively chief mate, that; good man, and a pious.\"* So the name is locally glossed. Not a finding.\n\n---\n\nAfter full review, I find **no valid structural coherence failures** in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 6547,
+    "output_tokens": 830,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 19.26595687866211,
+    "stop_reason": "end_turn"
+  }
+}

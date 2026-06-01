@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:30:46",
+  "key": "234d810e58e68a11f1daa6ebbf76968f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4a5032225b34b0798d203020f35a2828",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"a child was born, and christened later by his uncle... as Henry Brooks Adams... born February 16, 1838... Beacon Hill... Quincy\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Winter and summer, cold and heat, town and country, force and freedom, marked two modes of life and thought... With such standards, the Bostonian could not but develop a double nature... From earliest childhood the boy was accustomed to feel that, for him, life was double\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"He hung about the library; handled books... the smell of peaches and pears... Boston's politics and pulpit\", \"note\": \"The abridgment covers the library/grandfather relationship and the Boston political/religious atmosphere; orchards/smell detail is present via peaches and pears\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"The year 1848 was like 1776... Free Soil Party... Sumner's rise... the stamp of 1848 was almost as indelible as the stamp of 1776... anti-slavery politics... party, press, and social friction\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"Harvard gave him more stamp than substance... His first lecture was his last. He needed no more than one hour to see that he had made another failure in education... The Civil Law existed as lecture in its deadliest thirteenth-century form. The professor mumbled\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"To young Adams this first plunge into Italy passed Beethoven as a piece of accidental education... Captain Palmer took him with the officers to make an evening call on Garibaldi... London's gray respectability... the modern mind must take its measure from force as much as from form\", \"note\": \"Italian sunlight/Garibaldi and London covered; the force/form idea appears in the dynamic theory sections\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"his father hinted only at some shade of prodigality by quietly inviting his son to act as private secretary during the winter in Washington... Minister Adams sailed for England, May 1, 1861... The Civil War throws him into Washington's ad hoc stage\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"The Trent Affair showed where Palmerston and Russell stood... the Lairds' ironclad rams... Earl Russell's polite evasions... England's scruples on the scales against America's survival\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"His lessons accumulate through the confusing splendor of Palmerston's drawing rooms, the paradoxes and violences of Gladstone's eloquence, and the dry, implacable habits of the British cabinet\", \"note\": \"Directly quoted from abridgment\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"The Alabama escaped... Russell's reply to this note of September 5 reached the Legation on September 8, announcing at last that 'instructions have been issued which will prevent the departure of the two ironclad vessels from Liverpool'... diplomacy is a game of friction\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Through these years he loses illusions about men while gaining a mature appetite for relation and measure: society is a mechanism, and the mind must find a scale on which to weigh it\", \"note\": \"Directly quoted/paraphrased in abridgment\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"In February, 1868, he was back in Rome... he knew no more in 1868 than in 1858... wondering whether his education... had taught him to read the drift of a nation that has changed continents under his feet\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"As a professor, he regarded himself as a failure... his reviews and histories bite at the present with facts... Harvard's lecture rooms turn quick minds into catalogues\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"Clarence King... John Hay... the Lodges... sits inside the operating theater of Gilded Age politics and press, but rarely mistakes access for mastery\", \"note\": \"Edith Lodge not named separately but the group is covered; the sentiment about access vs mastery is present\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"History seemed to him a contest of forces more than of principles... he studied the Chicago and Paris Expositions as if they were dynamos with the covers off\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"the dynamo became a symbol of infinity... the forty-foot dynamos as a moral force, much as the early Christians felt the Cross... compare the Virgin of Chartres, who drew an age into a self-coherent unity of feeling, with the whirring dynamo\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"he turns from cathedrals' glass to steel's glow and from Thomas Aquinas's synthesis to Karl Pearson's skepticism, finding that order has dissolved into multiplicity\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"If the Middle Ages made a universe of 'One,' the modern makes it many, and education\u2014his and ours\u2014must learn to think in contradictions\", \"note\": \"Directly quoted\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"These contradictions gather as friends die and power modernizes its cruelty\", \"note\": \"Directly quoted\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"The summer of the Spanish War began the Indian summer of life... McKinley's assassination... Hay's 'open door' diplomacy\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"Russia's inertia... the Boer War's ironies... the Boxer crisis's theater... bombs educate more swiftly than sermons, and the Senate calls force by another name\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"Adams looks for a law of motion: if man is a force among forces, his mind is a function of acceleration; modern life doubles its power like coal tons and intensities like heat\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"He comes to a dynamic theory of history: as new energies\u2014steam, electricity, radium\u2014enter the system, the mind is reoriented, the old unities crack, and education, if honest, must prepare for shock rather than repose\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"Chartres and the Virgin still model a unity of appeal, but the dynamo and its derivatives command habit; the modern student must triangulate from both, or be sliced by the machine\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"The book closes in an Indian summer of clarity and fatigue: Adams, an elderly 'pedometer' of forces, confesses that his dynamic law may be no more than an instrument, and that the next generation will test it by living through the next doubling of speed\", \"note\": \"Directly quoted/paraphrased\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"He proposes no program: the Senate cannot legislate unity, nor can a press arouse ethics in an engine\", \"note\": \"Directly quoted\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"His ultimate 'education' is to stand on the steps of Ara Coeli, as in youth, and acknowledge that history is a sequence of accelerations whose unity may exist only in our need to find one\", \"note\": \"Directly quoted/paraphrased; Ara Coeli appears multiple times in abridgment\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"The deaths of Clarence King and John Hay, the last of his trio, cue the curtain's fall; with them goes the last of a certain American candor\", \"note\": \"Directly quoted/paraphrased; King's death at 'Clarence King's funeral' and Hay's death 'one warm evening in early July' both covered\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"between the Virgin and the Dynamo lies the path of the modern mind, and the only preparation worth having is the agility to move between them as the forces that summon us grow stronger and less humane\", \"note\": \"Directly quoted/paraphrased\"}\n]\n```",
+    "input_tokens": 116942,
+    "output_tokens": 2155,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 50.905478715896606,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "page_number": 3,
+  "anchors": [
+    {
+      "panel_number": 1,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Does he always keep such late hours?",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 414.785, "y": 357.665},
+      "mouth_point_ratio": {"x": 0.245, "y": 0.385},
+      "tail_target_point": {"x": 363.995, "y": 348.375},
+      "tail_target_point_ratio": {"x": 0.215, "y": 0.375},
+      "face_box": {"x1": 321.67, "y1": 260.12, "x2": 507.9, "y2": 436.63},
+      "evidence": "Younger man in the center-left facing right; visible lips below y≈0.4 near x≈0.25.",
+      "reason": "Speaker is centered; mouth located on lower face. Tail offset slightly up-left toward the top-left balloon zone without piercing the mouth. Face box bounds the visible head so balloons avoid it."
+    },
+    {
+      "panel_number": 1,
+      "text_index": 1,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "He went out a peddling—unless maybe he can't sell his head.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 927.764, "y": 364.168},
+      "mouth_point_ratio": {"x": 0.548, "y": 0.392},
+      "tail_target_point": {"x": 973.475, "y": 354.878},
+      "tail_target_point_ratio": {"x": 0.575, "y": 0.382},
+      "face_box": {"x1": 846.5, "y1": 278.7, "x2": 1032.73, "y2": 436.63},
+      "evidence": "Older man on the right, head turned left; mouth line just above y≈0.4 near x≈0.55.",
+      "reason": "Speaker region is right; mouth clearly visible. Tail target nudged up-right toward the top-right balloon zone and set on the cheek edge just outside the lips. Face box encloses the visible head."
+    }
+  ]
+}

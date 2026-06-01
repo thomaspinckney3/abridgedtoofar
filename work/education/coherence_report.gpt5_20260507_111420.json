@@ -1,0 +1,466 @@
+{
+  "book_id": "education",
+  "pairs_checked": 27,
+  "findings_total": 32,
+  "findings_raw_total": 32,
+  "findings_invalid": 0,
+  "class_counts": {
+    "missing_gloss": 6,
+    "non_parseable": 5,
+    "unglossed_name": 19,
+    "dangling_reference": 2
+  },
+  "per_segment_counts": {
+    "003": 2,
+    "005": 1,
+    "006": 1,
+    "012": 4,
+    "017": 3,
+    "018": 2,
+    "021": 3,
+    "022": 1,
+    "023": 2,
+    "026": 1,
+    "027": 1,
+    "028": 1,
+    "029": 3,
+    "032": 3,
+    "033": 1,
+    "034": 2,
+    "035": 1
+  },
+  "per_pair": [
+    {
+      "pair": "003-004",
+      "count": 2
+    },
+    {
+      "pair": "004-005",
+      "count": 0
+    },
+    {
+      "pair": "005-006",
+      "count": 1
+    },
+    {
+      "pair": "006-007",
+      "count": 1
+    },
+    {
+      "pair": "007-008",
+      "count": 0
+    },
+    {
+      "pair": "008-009",
+      "count": 0
+    },
+    {
+      "pair": "009-010",
+      "count": 0
+    },
+    {
+      "pair": "010-011",
+      "skipped": "parse error: expected JSON array, got str",
+      "count": 0
+    },
+    {
+      "pair": "011-012",
+      "count": 2
+    },
+    {
+      "pair": "012-013",
+      "count": 2
+    },
+    {
+      "pair": "013-017",
+      "count": 2
+    },
+    {
+      "pair": "017-018",
+      "count": 2
+    },
+    {
+      "pair": "018-021",
+      "count": 3
+    },
+    {
+      "pair": "021-022",
+      "count": 2
+    },
+    {
+      "pair": "022-023",
+      "count": 2
+    },
+    {
+      "pair": "023-026",
+      "count": 0
+    },
+    {
+      "pair": "026-027",
+      "count": 2
+    },
+    {
+      "pair": "027-028",
+      "count": 1
+    },
+    {
+      "pair": "028-029",
+      "count": 3
+    },
+    {
+      "pair": "029-030",
+      "count": 0
+    },
+    {
+      "pair": "030-031",
+      "skipped": "parse error: expected JSON array, got str",
+      "count": 0
+    },
+    {
+      "pair": "031-032",
+      "count": 2
+    },
+    {
+      "pair": "032-033",
+      "count": 1
+    },
+    {
+      "pair": "033-034",
+      "count": 2
+    },
+    {
+      "pair": "034-035",
+      "count": 1
+    },
+    {
+      "pair": "035-036",
+      "count": 1
+    },
+    {
+      "pair": "036-037",
+      "count": 0
+    }
+  ],
+  "findings": [
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N",
+      "draft_passage": "The Madam bore with fortitude the loss of tumblers which her husband purloined for these hatcheries; but she protested when he carried off her best cut‑glass bowls...",
+      "source_has": "He knew his grandfather John Quincy Adams only as an old man of seventy-five or eighty who was friendly and gentle with him, but except that he heard his grandfather always called \"the President,\" and his grandmother \"the Madam,\" he had no reason to suppose that his Adams grandfather differed in character from his Brooks grandfather... ... The Madam bore with fortitude the loss of the tumblers which her husband purloined for these hatcheries...",
+      "gate_test_answer": "A reader is genuinely left to guess who “The Madam” is at first mention, because the draft cut the earlier explanation that this title referred to his grandmother.",
+      "segment_id": "003",
+      "pair": "003-004"
+    },
+    {
+      "valid": true,
+      "class": "non_parseable",
+      "chapter": "N",
+      "draft_passage": "Before railways entered the New England town, every parish church showed half‑a‑dozen of these leading citizens, with gray hair, on the main aisle in the best pews, and had sat there, or in some equivalent dignity, since the time of St. Augustine, if not since the glacial epoch.",
+      "source_has": "Before railways entered the New England town, every parish church showed half-a-dozen of these leading citizens, with gray hair, who sat on the main aisle in the best pews, and had sat there, or in some equivalent dignity, since the time of St. Augustine, if not since the glacial epoch.",
+      "gate_test_answer": "Yes; by removing “who sat,” the draft leaves “had sat” without a proper subject, momentarily implying the church itself had sat there, which forces the reader to stop and repair the sentence.",
+      "segment_id": "003",
+      "pair": "003-004"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "After February, 1848, but one slight tie remained... The Madam stayed in Washington and in her turn was struck by paralysis and bedridden. From time to time her son Charles went on to see her...",
+      "source_has": "After February, 1848, ... The Madam stayed in Washington, after her husband's death, and in her turn was struck by paralysis and bedridden. From time to time her son Charles ...",
+      "gate_test_answer": "A reader would be genuinely puzzled who “The Madam” is; without the widow clue or a local identifier, the draft introduces a minor figure by sobriquet only, leaving her identity (the grandmother) unclear.",
+      "segment_id": "005",
+      "pair": "005-006"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N",
+      "draft_passage": "…when things reached this condition, Lee had to exhaust his authority over his own staff. Lee was a gentleman of the old school; he kept his temper and his friends under control.",
+      "source_has": "…the two others who seemed instinctively to form a staff for Lee, were town‑Virginians from Petersburg.… when things reached this condition, Lee had to exhaust his authority over his own staff.",
+      "gate_test_answer": "A reader is genuinely left unsure what “his own staff” refers to, since the draft never established that Lee had a ‘staff’ (i.e., his two Virginian friends), so the phrase lacks its defining setup and can mislead.",
+      "segment_id": "006",
+      "pair": "006-007"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "The most curious fact, even then, was that Russell believed in his own good faith and that Argyll believed in it also.",
+      "source_has": "The most curious fact, even then, was that Russell believed in his own good faith and that Argyll believed in it also.",
+      "gate_test_answer": "A reader is likely to be confused about who “Argyll” is and why his belief matters, since the draft never identifies him as the Duke of Argyll or gives his political role or relation to Russell.",
+      "segment_id": "012",
+      "pair": "011-012"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Granville replied at once decidedly opposing recognition of the Confederacy, and wrote to Lord Stanley of Alderley, in words published forty years afterwards:",
+      "source_has": "At the same time Granville wrote to another member of the Cabinet, Lord Stanley of Alderley, a letter published forty years afterwards in Granville's \"Life\" (I, 442)...",
+      "gate_test_answer": "Because the draft omits that Lord Stanley was another member of the Cabinet, a reader has no local cue who he is or why his opinion-letter is weighty, which undercuts the sense of Cabinet-level opposition being tallied.",
+      "segment_id": "012",
+      "pair": "011-012"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "He immediately put up Sir George Cornewall Lewis to repudiate the Chancellor of the Exchequer, against whom he turned his press at the same time.",
+      "source_has": "The proof of it was that it outraged even Palmerston, who immediately put up Sir George Cornewall Lewis to repudiate the Chancellor of the Exchequer, against whom he turned his press at the same time.",
+      "gate_test_answer": "A reader who hasn’t been told who Sir George Cornewall Lewis is or what role he plays will be genuinely at sea about why he matters in this moment.",
+      "segment_id": "012",
+      "pair": "012-013"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N",
+      "draft_passage": "The cat’s-paw theory offered no safer clue than the frank, old-fashioned, honest theory of villainy.",
+      "source_has": "Minister Adams retained his belief that Russell could be trusted, but that Palmerston could not. This was the diplomatic tradition, especially held by the Russian diplomats. Possibly it was sound, but it helped in no way the education of a private secretary. The cat's-paw theory offered no safer clue, than the frank, old-fashioned, honest theory of villainy.",
+      "gate_test_answer": "Yes—without the cut gloss that this was a diplomatic tradition (notably Russian) about Palmerston using others as cat’s-paws, the reader can’t place what the ‘cat’s-paw theory’ refers to.",
+      "segment_id": "012",
+      "pair": "012-013"
+    },
+    {
+      "valid": true,
+      "class": "non_parseable",
+      "chapter": "N+1",
+      "draft_passage": "It might well be! At all events, no complete proof of Natural Selection had occurred back to the time of Pteraspis, and before Pteraspis was eternal void. Only starfish, shell-fish, polyps, or trilobites — whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.",
+      "source_has": "…and that before Pteraspis was eternal void. No trace of any vertebrate had been found there; only starfish, shell-fish, polyps, or trilobites whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.",
+      "gate_test_answer": "A reader hits a sentence fragment lacking a main verb; shorn of the preceding clause, it no longer parses as a complete thought and reads like a broken sentence.",
+      "segment_id": "017",
+      "pair": "013-017"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N+1",
+      "draft_passage": "Neither in the Limulus nor in the Terebratula, any more than in the Pteraspis, could one conceive an ancestor; but, if one must, the choice mattered little.",
+      "source_has": "…nor could he at all simplify the problem by taking the sudden back-somersault into Quincy Bay in search of the fascinating creature he had called a horseshoe… In Siluria, he understood, Sir Roderick Murchison called the horseshoe a Limulus, which helped nothing.",
+      "gate_test_answer": "Without the cut gloss that Limulus is the horseshoe crab, a general reader is left unable to place the term and thus loses the point of the comparison among fossil types.",
+      "segment_id": "017",
+      "pair": "013-017"
+    },
+    {
+      "valid": true,
+      "class": "non_parseable",
+      "chapter": "N",
+      "draft_passage": "Only starfish, shell-fish, polyps, or trilobites — whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.",
+      "source_has": "No trace of any vertebrate had been found there; only starfish, shell-fish, polyps, or trilobites whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.",
+      "gate_test_answer": "A reader would be genuinely confused because the draft leaves a sentence fragment with no main clause, breaking the sense of the preceding thought.",
+      "segment_id": "017",
+      "pair": "017-018"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "The Tribune under Horace Greeley was out of the question; Whitelaw Reid had already undertaken that singularly venturesome position.",
+      "source_has": "The Tribune under Horace Greeley was out of the question both for political and personal reasons, and because Whitelaw Reid had already undertaken that singularly venturesome position, amid difficulties that would have swamped Adams in four-and-twenty hours.",
+      "gate_test_answer": "A reader is genuinely confused because Whitelaw Reid (an authorized minor character) appears without any local identifier or role, leaving unclear who he is or why his occupancy matters.",
+      "segment_id": "018",
+      "pair": "017-018"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "Lamar used to say that he never entertained a doubt of the soundness of the Southern system until he found that slavery could not stand a war.",
+      "source_has": "Lamar used to say that he never entertained a doubt of the soundness of the Southern system until he found that slavery could not stand a war.",
+      "gate_test_answer": "A reader is left asking who “Lamar” is or what authority he represents, since the draft never identifies him, which weakens and momentarily confuses the point being made.",
+      "segment_id": "018",
+      "pair": "018-021"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N+1",
+      "draft_passage": "Lying on the turf, the ground littered with newspapers, the monks studied the war correspondence.",
+      "source_has": "Only the few remaining monks, undisturbed by the brutalities of Henry VIII—three or four young Englishmen—survived there, with Milnes Gaskell acting as Prior. The August sun was warm; … Lying on the turf the ground littered with newspapers, the monks studied the war correspondence.",
+      "gate_test_answer": "Yes—without the source’s gloss that these “monks” are just a few young Englishmen jokingly styled as such, a reader may wrongly picture actual monastics at Wenlock Abbey and misread the scene.",
+      "segment_id": "021",
+      "pair": "018-021"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Reeve refused the Gold Conspiracy.",
+      "source_has": "The first shock came lightly, as though Nature were playing tricks on her spoiled child, though she had thus far not exerted herself to spoil him. Reeve refused the Gold Conspiracy.",
+      "gate_test_answer": "The sentence drops a bare surname with no role or identifier, so a reader cannot tell who Reeve is (an editor) and may be briefly puzzled about why his refusal matters.",
+      "segment_id": "021",
+      "pair": "018-021"
+    },
+    {
+      "valid": true,
+      "class": "non_parseable",
+      "chapter": "N",
+      "draft_passage": "Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.",
+      "source_has": "Here was a tour de force he had never dreamed himself equal to performing: two long, dry, quarterly, thirty or forty page articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.",
+      "gate_test_answer": "A reader is genuinely tripped up because the draft leaves a verbless fragment where the source supplied a governing main clause; the sentence no longer parses as a complete thought.",
+      "segment_id": "021",
+      "pair": "021-022"
+    },
+    {
+      "valid": true,
+      "class": "non_parseable",
+      "chapter": "N+1",
+      "draft_passage": "The students alone satisfied.",
+      "source_has": "The students alone satisfied. They thought they gained something.",
+      "gate_test_answer": "As an isolated sentence it lacks a verb and reads awkwardly; in the source it was immediately clarified by the following sentence, which the draft cut, so the fragment now stands unsupported and can momentarily confuse.",
+      "segment_id": "022",
+      "pair": "021-022"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "He had just come up from the South Seas with John La Farge. Adams would rather, as choice, have gone back to the east...",
+      "source_has": "He had just come up from the South Seas with John La Farge, who had reluctantly crawled away towards New York to resume the grinding routine of studio-work...",
+      "gate_test_answer": "A reader will not know who John La Farge is or why he matters; without the local identifier that he is an artist returning to studio work, the name functions as an unexplained proper noun.",
+      "segment_id": "023",
+      "pair": "022-023"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Such works never return money. Even Frank Parkman never printed a first edition of more than seven hundred copies, until quite at the end of his life.",
+      "source_has": "Such works never return money. Even Frank Parkman never printed a first edition of his relatively cheap and popular volumes, numbering more than seven hundred copies, until quite at the end of his life.",
+      "gate_test_answer": "A reader unfamiliar with the name will not know that Parkman is a historian/author; without a local identifier, the point about first editions loses clear reference and risks confusion.",
+      "segment_id": "023",
+      "pair": "022-023"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "In June, at the crisis of interest, the Camerons came over, and took the fine old house of Surrenden Dering in Kent, which they made a sort of country house to the Embassy.",
+      "source_has": "In June, at the crisis of interest, the Camerons came over, and took the fine old house of Surrenden Dering in Kent which they made a sort of country house to the Embassy.",
+      "gate_test_answer": "A reader is genuinely left wondering who “the Camerons” are or why they matter to the Embassy; the sentence introduces a proper name with no role or relationship, creating real confusion about their identity.",
+      "segment_id": "026",
+      "pair": "026-027"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Vaguely seeking a clue, he wandered through the art exhibit, and stopped almost every day before St. Gaudens's General Sherman. Once St. Gaudens took him down to Amiens to see the cathedral.",
+      "source_has": "St. Gaudens himself was in Paris, putting on the work his usual interminable last touches, and listening to the usual contradictory suggestions of brother sculptors... This summer his health was poor and his spirits were low... he risked going now and then to the studio on Mont Parnasse... and in return St. Gaudens sometimes let Adams go about in his company. Once St. Gaudens took him down to Amiens, with a party of Frenchmen, to see the cathedral.",
+      "gate_test_answer": "A reader unfamiliar with the name is abruptly dropped into a personal outing with “St. Gaudens” without being told he is the sculptor of the Sherman monument or an acquaintance of Adams, causing real disorientation about who he is and why he’s with Adams.",
+      "segment_id": "027",
+      "pair": "026-027"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "He felt almost aggrieved to find Walcott so vigorously flinging the ganoid all the way off to Colorado and far back into the Lower Trenton limestone, making the Pteraspis as modern as a Mississippi gar-pike...",
+      "source_has": "He felt almost aggrieved to find Walcott so vigorously acting the part of Comus as to have flung the ganoid all the way off to Colorado and far back into the Lower Trenton limestone...",
+      "gate_test_answer": "A reader is likely to pause and wonder who “Walcott” is and why his act matters; without a local identifier (e.g., the geologist C. D. Walcott), the name lacks placement in the draft’s continuity.",
+      "segment_id": "028",
+      "pair": "027-028"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "The Senator himself shook his head, and after surveying Warsaw and Moscow went on to St. Petersburg to ask questions of Mr. de Witte; but their efforts had been immense, their expenditure enormous, and their results on the people seemed uncertain as yet, even to themselves.",
+      "source_has": "…went on to St. Petersburg to ask questions of Mr. de Witte and Prince Khilkoff. Their conversation added new doubts; for their efforts had been immense, their expenditure enormous, and their results on the people seemed to be uncertain as yet, even to themselves.",
+      "gate_test_answer": "A reader cannot tell who “their” and “themselves” refer to, since the draft names only de Witte and cuts Khilkoff—the plural pronouns lack an unambiguous antecedent.",
+      "segment_id": "029",
+      "pair": "028-029"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N+1",
+      "draft_passage": "Thus the student of Hegel prepared himself for a visit to Russia in order to enlarge his synthesis. In America all were conservative Christian anarchists; the faith was national, racial, geographic.",
+      "source_has": "Bay Lodge and Joe Stickney had given birth to the wholly new and original party of Conservative Christian Anarchists… This wing of the anarchistic party consisted rigorously of but two members, Adams and Bay Lodge… Adams proclaimed that in the last synthesis, order and anarchy were one, but that the unity was chaos…",
+      "gate_test_answer": "Without the source’s explicit setup that “conservative Christian anarchists” is Adams’s ironic, two‑man, made‑up ‘party’ (and what he means by it), the term reads like an undefined real movement and leaves the reader unable to place it.",
+      "segment_id": "029",
+      "pair": "028-029"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Suddenly Mrs. Lodge appeared on the horizon and bade him come, and he joined the family for the festival.",
+      "source_has": "…or discussing the charm of youth and the Seine with Bay Lodge and his exquisite young wife. … He joined them, parents and children… and they went on to the Baireuth festival together.",
+      "gate_test_answer": "The draft introduces “Mrs. Lodge” with no local identifier or role; with the earlier Bay Lodge context cut and a different ‘Senator’ Lodge appearing later, a reader cannot tell who she is or why she matters.",
+      "segment_id": "029",
+      "pair": "028-029"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Suddenly Holleben received a telegram ordering him to pretext illness and come home, which he obeyed within four-and-twenty hours.",
+      "source_has": "…Holleben and Cassini were taken to be a single force in Eastern affairs… Suddenly Holleben, who seemed to have had no thought but to obey… received a telegram ordering him to pretext illness and come home…",
+      "gate_test_answer": "A reader is likely puzzled who Holleben is or why his recall matters, since the draft gives no role or identifier for him.",
+      "segment_id": "032",
+      "pair": "031-032"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Perhaps Hay protected Cassini for the very reason that Cassini could not disguise an emotion, and never failed to betray…",
+      "source_has": "…Holleben and Cassini were taken to be a single force in Eastern affairs… The least was that it seemed to isolate Cassini… Perhaps Hay protected Cassini for the very reason that Cassini could not disguise an emotion…",
+      "gate_test_answer": "A reader is left unsure who Cassini is (e.g., the Russian ambassador) or why Hay would protect him, because his identity was introduced in source material that was cut.",
+      "segment_id": "032",
+      "pair": "031-032"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "Suddenly Holleben received a telegram ordering him to pretext illness and come home, which he obeyed within four-and-twenty hours.",
+      "source_has": "…Down to that moment, the Kaiser, rightly or wrongly, had counted as the ally of the Czar in all matters relating to the East. Holleben and Cassini were taken to be a single force in Eastern affairs… Suddenly Holleben… received a telegram ordering him to pretext illness and come home…",
+      "gate_test_answer": "A reader is genuinely confused about who Holleben is; the draft introduces the name with no role or identifier after cutting the source sentence that framed him as the German participant in the Cassini–Holleben pairing, leaving the action unmoored.",
+      "segment_id": "032",
+      "pair": "032-033"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N",
+      "draft_passage": "All it needed to know was the admission of ignorance.",
+      "source_has": "History had no need to ask what either might be; all it needed to know was the admission of ignorance; the mere fact of multiplicity baffling science.",
+      "gate_test_answer": "A reader cannot tell what “it” refers to (history, the historian, or force), so the sentence’s subject is ambiguous and meaning is unclear.",
+      "segment_id": "033",
+      "pair": "033-034"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "Approaching, he read that M. de Plehve had been assassinated at St. Petersburg.",
+      "source_has": "Approaching, he read that M. de Plehve had been assassinated at St. Petersburg.",
+      "gate_test_answer": "Because Plehve is introduced without any role or identifier, a reader unfamiliar with him cannot gauge the significance of the assassination.",
+      "segment_id": "034",
+      "pair": "033-034"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "Approaching, he read that M. de Plehve had been assassinated at St. Petersburg.",
+      "source_has": "Approaching, he read that M. de Plehve had been assassinated at St. Petersburg.",
+      "gate_test_answer": "A reader would be genuinely unsure who Plehve is or why the name matters; the draft gives no local role or identifier for this authorized‑minor figure, so the reference cannot be placed.",
+      "segment_id": "034",
+      "pair": "034-035"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "Eighty years later, Theodosius marched against Eugene with the Cross for physical champion; Eugene raised Hercules for the pagans;",
+      "source_has": "Eighty years afterwards, Theodosius marched against his rival Eugene with the Cross for physical champion; and Eugene raised the image of Hercules to fight for the pagans;",
+      "gate_test_answer": "A reader would stumble over who “Eugene” is, since the draft drops the source’s appositive “his rival,” leaving a minor name with no local role or identifier.",
+      "segment_id": "035",
+      "pair": "035-036"
+    }
+  ]
+}

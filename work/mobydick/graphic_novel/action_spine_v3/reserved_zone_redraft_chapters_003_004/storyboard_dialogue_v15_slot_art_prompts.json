@@ -1,0 +1,1367 @@
+{
+  "title": "Moby-Dick Chapters 3-4 Reserved-Zone Redraft",
+  "source": "action_spine_v3 plus expanded chapter 3 landlord sequence prototype",
+  "lettering_policy": {
+    "speech_balloons": "tail-less",
+    "placement": "reserved storyboard zones",
+    "panel_art_fit": "contain"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_frame_001.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts.",
+              "caption_zone": "top_left",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 1, panel 1.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael (the young sailor) studies the smoke-dark oil painting in the Spouter-Inn entry, leaning in with narrowed eyes as he holds open a small back window to catch more light. The large, blackened canvas suggests a storm-tossed ship with three faint blue verticals and a looming dark mass above. Old wainscots and dim lamplight frame the entry; vague whaling gear hangs in deeper shadow.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=76%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_frame_002.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.",
+              "caption_zone": "top_center",
+              "lettering_notes": "demoted from speech: indirect or internal narration",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.17
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.52,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.17
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.52,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Peter Coffin: x 52%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 1, panel 2.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael stands before Peter Coffin the landlord in the dusky bar-room, hand lifted in reluctant assent as he requests a room and conditionally agrees to share a harpooneer’s blanket. The landlord nods, thumb jerking toward an unseen stair. Low beams, cracked curios cases, and a carved bench sit in the gloom.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Peter Coffin: x 52%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=17%.\n- balloon_1: speech for Peter Coffin, x=52%, y=22%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.\n- speech by Peter Coffin: Hain’t no objections to sharing a harpooneer’s blanket?\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 3, frames 3",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch003_frame_003.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.023076923076923078,
+            "w": 0.96875,
+            "h": 0.9538461538461539
+          },
+          "source_chapter": 3,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I chose the bench; the planing and the bitter draughts defeated me.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "I shan’t sleep with him. I’ll try the bench.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"I shan’t sleep with him. I’ll try the bench here.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Wait—I’ll make ye snug enough.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"wait, I say, and I’ll make ye snug enough.\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "two_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "tail_target": "left_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Ishmael: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Peter Coffin: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 2, panel 3.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael tries to bed down on a carved wooden bench he has shoved along the wall with a chair for length, then hugs his coat and grimaces as a cold draft cuts over him. In the background the landlord lowers a carpenter’s plane, wood shavings scattered near the bench; a loose window and rickety door suggest the crossing currents.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Ishmael: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Peter Coffin: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=14%.\n- balloon_1: speech for Ishmael, x=6%, y=22%, w=38%, h=20%.\n- balloon_2: speech for Peter Coffin, x=56%, y=22%, w=38%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: I chose the bench; the planing and the bitter draughts defeated me.\n- speech by Ishmael: I shan’t sleep with him. I’ll try the bench.\n- speech by Peter Coffin: Wait—I’ll make ye snug enough.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "layout": "six_panel_exchange",
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, expanded landlord selling-heads exchange",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_landlord_001.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Does he always keep such late hours?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "“does he always keep such late hours?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.2
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "He went out a peddling—unless maybe he can't sell his head.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“to-night he went out a peddling... unless, may be, he can’t sell his head.”",
+              "text_index": 1,
+              "slot_id": "balloon_2",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.2
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "two_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "tail_target": "left_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Peter Coffin: x 56%, y 4%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 1.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Wide two-shot: Ishmael is on the left leaning forward with a questioning look; Peter Coffin is on the right, amused and wry, hands near a small whittling knife on the table.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Peter Coffin: x 56%, y 4%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Ishmael, x=6%, y=4%, w=38%, h=20%.\n- balloon_2: speech for Peter Coffin, x=56%, y=4%, w=38%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Ishmael: Does he always keep such late hours?\n- speech by Peter Coffin: He went out a peddling—unless maybe he can't sell his head.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_landlord_002.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Peddling his head around town?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_center",
+              "speaker_region": "center",
+              "source_evidence": "“engaged... in peddling his head around this town?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "center",
+              "slot_box_ratio": {
+                "x": 0.29,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_center",
+              "box": {
+                "x": 0.29,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "center",
+              "tail_target": "center_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 29%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael near the center, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 2.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Medium close on Ishmael near the center, puzzled and incredulous, one hand lifted as he repeats the idea back.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 29%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael near the center, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Ishmael, x=29%, y=4%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Ishmael: Peddling his head around town?\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 3,
+          "image": "ch003_landlord_003.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "That's precisely it. The market's overstocked.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“That’s precisely it... the market’s overstocked.”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 3.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Medium close on Peter Coffin on the right, amused, explaining with a dry grin while he whittles or gestures at the table.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Peter Coffin, x=52%, y=4%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Peter Coffin: That's precisely it. The market's overstocked.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 4,
+          "image": "ch003_landlord_004.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With what?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_center",
+              "speaker_region": "center",
+              "source_evidence": "“With what?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "center",
+              "slot_box_ratio": {
+                "x": 0.29,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_center",
+              "box": {
+                "x": 0.29,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "center",
+              "tail_target": "center_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 29%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael near the center, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 4.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Medium close on Ishmael near the center, confused, palm open in a plain question.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Ishmael: x 29%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael near the center, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Ishmael, x=29%, y=4%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Ishmael: With what?\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 5,
+          "image": "ch003_landlord_005.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With heads, to be sure.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“With heads to be sure; ain’t there too many heads in the world?”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 5.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Medium close on Peter Coffin on the right, spreading his hands as if the answer is obvious.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Peter Coffin, x=52%, y=4%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Peter Coffin: With heads, to be sure.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_landlord_006.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "’Balmed New Zealand heads—he’s sold all on ’em but one.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“bought up a lot of ’balmed New Zealand heads... he’s sold all on ’em but one”",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              }
+            },
+            {
+              "kind": "caption",
+              "text": "This account cleared up the otherwise unaccountable mystery.",
+              "caption_zone": "bottom_center",
+              "text_index": 1,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.84,
+                "w": 0.88,
+                "h": 0.14
+              }
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange",
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.52,
+                "y": 0.04,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 0,
+              "reading_order": 1
+            },
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.84,
+                "w": 0.88,
+                "h": 0.14
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 2
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%; caption slot caption for narrator caption: x 6%, y 84%, width 88%, height 14%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 3, panel 6.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nInside the Spouter-Inn bar-room, Ishmael, a young dark-haired sailor in a worn dark jacket, and Peter Coffin, a lean late-middle-aged landlord in shirtsleeves and waistcoat, carry on a comic exchange about the absent harpooneer selling preserved heads. Keep the preserved head material understated and non-gory; use a sea-bag or wrapped trade bundle as context only when needed. Wide two-shot: Ishmael listens on the left while Peter Coffin on the right leans in and explains; a weathered sea-bag or wrapped trade bundle sits low in the foreground as context, not as a grisly display.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Peter Coffin: x 52%, y 4%, width 42%, height 20%; caption slot caption for narrator caption: x 6%, y 84%, width 88%, height 14%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- balloon_1: speech for Peter Coffin, x=52%, y=4%, w=42%, h=20%.\n- caption: caption for narrator caption, x=6%, y=84%, w=88%, h=14%.\n\nLater lettering text for staging only; do not draw it:\n- speech by Peter Coffin: ’Balmed New Zealand heads—he’s sold all on ’em but one.\n- caption: This account cleared up the otherwise unaccountable mystery.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ],
+      "fit_mode": "crop"
+    },
+    {
+      "page_number": 4,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch003_frame_005.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Since it was Sunday, I took the prodigious bed and eyed his outlandish gear.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Come along—I’ll give ye a glim in a jiffy.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Come along here, I’ll give ye a glim in a jiffy;\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.52,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.52,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Peter Coffin",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Peter Coffin: x 52%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 4, panel 5.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael stands at the side of an enormous, plain bed, surveying the small cold room as the landlord backs toward the door with a candle. A harpoon leans at the bed’s head; a seaman’s bag lies near a lashed hammock; a shaggy poncho-like cloak with little quill tags rests on a sea chest; a papered fireboard closes the hearth.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Peter Coffin: x 52%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Peter Coffin on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=14%.\n- balloon_1: speech for Peter Coffin, x=52%, y=22%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: Since it was Sunday, I took the prodigious bed and eyed his outlandish gear.\n- speech by Peter Coffin: Come along—I’ll give ye a glim in a jiffy.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_frame_006.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals.",
+              "caption_zone": "bottom_right",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.18,
+                "y": 0.78,
+                "w": 0.76,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.18,
+                "y": 0.78,
+                "w": 0.76,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 78%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 4, panel 6.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nFrom the bed’s perspective, Ishmael watches wide-eyed as the tattooed harpooneer kneels at the open hearth, sets a small wooden idol between the andirons, and kindles a handful of shavings with a biscuit poised for a quick snatch. The preserved head is now tucked beside his seaman’s bag; his heavy grego hangs on a chair; a tomahawk-shaped pipe and wallet sit on the sea chest.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 78%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=18%, y=78%, w=76%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 7, 8",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch003_frame_007.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He sprang into bed with the tomahawk-pipe. Peter Coffin said, \"Don’t be afraid; Queequeg won’t harm a hair of your head.\"",
+              "caption_zone": "top_center",
+              "lettering_notes": "demoted from speech: panel exceeded 2 balloons",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.17
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+              "speaker": "Queequeg",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Who-e debel you?—you no speak-e, dam-me, I kill-e.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Landlord, for God’s sake, Peter Coffin! ... Watch! ... Angels! save me!\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "two_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.17
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Queequeg",
+              "speaker_side": "left",
+              "tail_target": "left_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Queequeg: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Ishmael: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Queequeg on the left, below or beside that speaker's slot; stage Ishmael on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 5, panel 7.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael throws up his hands and cries out as the tattooed harpooneer, tomahawk-shaped pipe clenched at his mouth, lands in the prodigious bed; the landlord bursts through the door with a raised candle to intervene. Ash flecks spot the blanket; the harpoon stands in the background.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Queequeg: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Ishmael: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Queequeg on the left, below or beside that speaker's slot; stage Ishmael on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=17%.\n- balloon_1: speech for Queequeg, x=6%, y=22%, w=38%, h=20%.\n- balloon_2: speech for Ishmael, x=56%, y=22%, w=38%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: He sprang into bed with the tomahawk-pipe. Peter Coffin said, \"Don’t be afraid; Queequeg won’t harm a hair of your head.\"\n- speech by Queequeg: Who-e debel you? You no speak-e—dam-me, I kill-e!\n- speech by Ishmael: Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 8,
+          "image": "ch003_frame_008.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 8,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He stashed the tomahawk-pipe; I turned in again and slept soundly.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              }
+            },
+            {
+              "kind": "thought",
+              "text": "Better sleep with a sober cannibal than a drunken Christian.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Better sleep with a sober cannibal than a drunken Christian.\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"tell him to stash his tomahawk there, or pipe... tell him to stop smoking... Besides, I ain’t insured.\"",
+              "text_index": 2,
+              "slot_id": "balloon_2",
+              "speaker_position": "right",
+              "slot_box_ratio": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "two_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "thought",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "tail_target": "left_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_right",
+              "box": {
+                "x": 0.56,
+                "y": 0.22,
+                "w": 0.38,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "right",
+              "tail_target": "right_speaker_mouth",
+              "text_index": 2,
+              "reading_order": 3
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; thought slot balloon_1 for Ishmael: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Ishmael: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Ishmael on the right, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 5, panel 8.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael (narrator): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.\n- Peter Coffin (landlord): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.\n- Queequeg (harpooneer): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.\n\nPanel content:\nIshmael settles back under the blankets, calm now, while Queequeg politely sets the tomahawk-shaped pipe aside on the sea chest and rolls to his own side of the prodigious bed; a single candle burns low.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; thought slot balloon_1 for Ishmael: x 6%, y 22%, width 38%, height 20%; speech slot balloon_2 for Ishmael: x 56%, y 22%, width 38%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot; stage Ishmael on the right, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=14%.\n- balloon_1: thought for Ishmael, x=6%, y=22%, w=38%, h=20%.\n- balloon_2: speech for Ishmael, x=56%, y=22%, w=38%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: He stashed the tomahawk-pipe; I turned in again and slept soundly.\n- thought by Ishmael: Better sleep with a sober cannibal than a drunken Christian.\n- speech by Ishmael: Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch004_frame_001.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I woke at daylight to find Queequeg’s tattooed arm thrown over me, so blended with the patchwork counterpane that only its weight told me he was hugging me.",
+              "caption_zone": "top_left",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 6, panel 1.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nIshmael wakes and looks down at Queequeg’s tattooed arm draped across his chest. Stage them in a narrow 19th-century inn bed under a multicolored patchwork quilt; the intricate black tattoos on the arm visually echo the quilt’s little squares and triangles. Dawn light spills softly from a small window. Ishmael’s eyes are open in surprised recognition while Queequeg sleeps, his arm heavy across Ishmael.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=76%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: I woke at daylight to find Queequeg’s tattooed arm thrown over me, so blended with the patchwork counterpane that only its weight told me he was hugging me.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 2,
+          "image": "ch004_frame_002.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I wriggled to rouse him and found the tomahawk-pipe by his side.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "Queequeg! In the name of goodness—wake!",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Queequeg!—in the name of goodness, Queequeg, wake!\"",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "single_character",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.14
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.22,
+                "w": 0.42,
+                "h": 0.2
+              },
+              "speaker": "Ishmael",
+              "speaker_side": "left",
+              "tail_target": "left_speaker_mouth",
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Ishmael: x 6%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot.",
+          "image_prompt": "Create clean text-free panel art for page 6, panel 2.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nIshmael wriggles and rolls, throwing aside the patchwork quilt as he reaches to rouse the sleeping Queequeg and flinches at a slight scratch on his neck. Reveal a small tomahawk-shaped smoking pipe resting by Queequeg’s side. Keep the rough inn room setting simple and close.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 14%; speech slot balloon_1 for Ishmael: x 6%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Ishmael on the left, below or beside that speaker's slot.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=14%.\n- balloon_1: speech for Ishmael, x=6%, y=22%, w=42%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: I wriggled to rouse him and found the tomahawk-pipe by his side.\n- speech by Ishmael: Queequeg! In the name of goodness—wake!\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 3, 4",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch004_frame_003.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "By much wriggling and loud expostulations I woke him; he drew back his arm, shook himself, and sat up staring, while I lay quiet and curious rather than afraid.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 7, panel 3.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nIshmael leans forward in bed, mid-expostulation, as Queequeg sits up withdrawing his arm and giving himself a vigorous dry shake before staring at Ishmael. The rough inn bed is tousled, tattoos bold over Queequeg’s chest and arms, morning light cool.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=88%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: By much wriggling and loud expostulations I woke him; he drew back his arm, shook himself, and sat up staring, while I lay quiet and curious rather than afraid.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 4,
+          "image": "ch004_frame_004.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 4,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He made signs that he would dress first and then leave me to dress alone—a very civilized overture I accepted as I watched him.",
+              "caption_zone": "bottom_right",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.18,
+                "y": 0.81,
+                "w": 0.76,
+                "h": 0.17
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.18,
+                "y": 0.81,
+                "w": 0.76,
+                "h": 0.17
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 81%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 7, panel 4.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nQueequeg stands by the bed and makes courteous, unmistakable gestures—toward his clothes, then toward the door—indicating he will dress first and then give privacy. Ishmael watches from the bed in a small, spare inn room.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 81%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=18%, y=81%, w=76%, h=17%.\n\nLater lettering text for staging only; do not draw it:\n- caption: He made signs that he would dress first and then leave me to dress alone—a very civilized overture I accepted as I watched him.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch004_frame_005.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I watched him begin at the top with his very tall beaver hat, hunt up his boots, crawl under the bed to pull them on, and limp creaking about the room.",
+              "caption_zone": "top_right",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.18,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.18,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 8, panel 5.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nQueequeg, already wearing a very tall black beaver hat, crawls halfway under the low bed with a pair of damp cowhide boots in his hands as he tugs them on. Ishmael watches with frank curiosity from the rumpled bed while the harpooner later emerges limping and creaking in the tight boots.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=18%, y=4%, w=76%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: I watched him begin at the top with his very tall beaver hat, hunt up his boots, crawl under the bed to pull them on, and limp creaking about the room.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        },
+        {
+          "panel_number": 6,
+          "image": "ch004_frame_006.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Seeing there were no curtains and the house opposite looked in, I begged him to hasten into his pantaloons, whereupon he complied and washed only his chest, arms, and hands.",
+              "caption_zone": "bottom_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.78,
+                "w": 0.88,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "bottom_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.78,
+                "w": 0.88,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 78%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 8, panel 6.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nIshmael, from the bedside, motions urgently toward the uncurtained window and the pantaloons while Queequeg, now in his trousers, stands at the wash-stand washing his chest and arms. Show the narrow street beyond the bare window without legible signage, and a small mirror piece above the basin.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 78%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=78%, w=88%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: Seeing there were no curtains and the house opposite looked in, I begged him to hasten into his pantaloons, whereupon he complied and washed only his chest, arms, and hands.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 4, frames 7",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch004_frame_007.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.023076923076923078,
+            "w": 0.96875,
+            "h": 0.9538461538461539
+          },
+          "source_chapter": 4,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Then I saw him coolly shave with the head of his harpoon, and, his toilet complete, he marched out in his pilot monkey jacket, sporting the harpoon like a marshal’s baton.",
+              "caption_zone": "top_left",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              }
+            }
+          ],
+          "panel_archetype": "caption_only",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.76,
+                "h": 0.2
+              },
+              "reserved_for": "narrator caption",
+              "reading_order": 1
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "image_prompt": "Create clean text-free panel art for page 9, panel 7.\nStyle: historical graphic novel panel, 1840s New England whaling inn, fine ink linework with muted watercolor wash, sepia and smoky lamplight, expressive faces, grounded physical action, consistent character designs.\nCharacter continuity:\n- Ishmael: Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.\n- Queequeg: Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.\n\nPanel content:\nQueequeg stands at the small washstand after completing his morning grooming, calm and composed, facing the tiny wall mirror. He holds his whaling harpoon safely upright like a walking staff or marshal's baton, with the wooden stock visible and the steel head angled away from his face. Ishmael watches from the background. The basin, mirror shard, towel, and heavy pilot monkey jacket on a peg are nearby. No cuts, no blood, no injury, no distress, and no blade touching skin.\n\nLettering-aware staging:\nLettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.\nReserved lettering slots, measured as percentages of the panel:\n- caption: caption for narrator caption, x=6%, y=4%, w=76%, h=20%.\n\nLater lettering text for staging only; do not draw it:\n- caption: Then I saw him coolly finish his toilet, march out in his pilot monkey jacket, and carry the harpoon like a marshal's baton.\n\nHard constraints: No readable text, no labels, no signs, no caption boxes, no speech balloons, no lettering, no watermarks. The art may be stylized but must not invent unsupported props, animals, symbols, or future-story imagery."
+        }
+      ]
+    }
+  ]
+}

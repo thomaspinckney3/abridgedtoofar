@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:28:06",
+  "key": "b2c17e2502ddac9ee49393649fde5f60",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test to every candidate.\n\n---\n\n**Ch 038 candidates:**\n\n**1. \"Jim, a fellow fugitive who had been sheltered at the same Quaker farm, with his old mother, was forwarded separately\"** \u2014 Jim is glossed right here (\"a fellow fugitive who had been sheltered at the same Quaker farm\"), so this is self-sufficient. Not a finding.\n\n**2. Tom Loker's attendant** \u2014 The source names her \"Aunt Dorcas\" (authorized removal). The draft replaces her throughout with \"the Quaker woman,\" \"she,\" \"the other,\" \"she answered\" \u2014 all traceable by context. Not a finding.\n\n**3. \"just to spite\u2014him!\"** \u2014 The source has \"just to spite Marks,\u2014the cursed puppy!\" Marks is on the authorized removal list, so the elision of the name is expected. The dash-dash is a slight seam but the sentence still parses. Not a finding.\n\n**4. \"I wonder if the woman has got Harry rigged?\"** \u2014 Source: \"I wonder if Mrs. Smyth has got Harry rigged?\" Mrs. Smyth is on the authorized removal list. The draft uses \"the woman.\" The unnamed woman has just appeared in the scene (she entered \"leading little Harry\"), so the referent is clear. Not a finding.\n\n**5. \"I've heard,\" said the woman, \"that there have been men down...\"** \u2014 In the source this is attributed to Mrs. Smyth, a character who has been properly introduced earlier in the source chapter with her role explained. In the draft she is only \"the woman\" \u2014 a descriptor without any prior introduction in the draft. Has the draft established who this woman is before this line of dialogue? Let me check: the draft says \"The door opened, and a respectable, middle-aged woman entered, leading little Harry, dressed in girl's clothes.\" That is the first mention of her in the draft. She speaks here, and later \"The disguises the party had assumed were in accordance with the hints of Tom Loker. The woman, being fortunately about crossing the lake to return to the Canadian settlement whither they were fleeing, had consented to appear as the aunt of little Harry.\" So her role IS established \u2014 just after this dialogue, not before it. At the moment she speaks, a reader only knows she is \"a respectable, middle-aged woman\" who entered leading Harry. Then she volunteers intelligence about packet-captain warnings. Is a reader confused? They know she is a woman associated with the fugitives' household. Her statement is intelligible in context. The gate test: the reader is not misled; they understand she is a trusted ally present in the scene. **Not a finding.**\n\n**6. \"You would scarcely know the woman from a white one,\" said the other.** \u2014 In the source, the second speaker is identified as \"Marks.\" In the draft, the source's \"The voice was that of the clerk of the boat. The speaker whom he addressed was our sometime friend Marks\" is cut, and both men are anonymous. But Marks is on the authorized removal list. The sentence still parses \u2014 a reader understands two men are talking about the fugitives. Not a finding.\n\n**7. \"The bell rang out its farewell peal; the plank was drawn. George had the satisfaction to see the suspicious talkers walk down to the shore\"** \u2014 Source: \"George had the satisfaction, as the bell rang out its farewell peal, to see Marks walk down the plank to the shore.\" The draft replaces \"Marks\" with \"the suspicious talkers\" \u2014 a descriptor that is perfectly clear from the immediately preceding overheard conversation. Not a finding.\n\n---\n\n**Ch 037 candidates:**\n\nThe draft is very close to the source. I scanned for any broken pivots, dangling references, or missing glosses. The Tompkins reference (\"Tompkins won't lord it over you\") is cut in the draft, replaced with \"If your crop comes shorter than others into market, you won't mind, I suppose?\" \u2014 this still parses as a standalone taunt without needing the specific name. Tompkins is an authorized minor-character removal (listed as \"Tompkins\"). Not a finding.\n\n\"He had but one form of ambition,\u2014to bring in the heaviest crop; and Cassy, with woman's tact, touched the string that could be made to vibrate.\" \u2014 Source: \"Legree, like many other planters, had but one form of ambition...\" The draft's \"He\" has a clear antecedent: Legree was named in the immediately preceding dialogue. Not a finding.\n\n---\n\nAfter applying the gate test to all candidates, I find no structurally damaged sentences that would genuinely confuse a reader. All seams are either self-healing, covered by authorized cuts, or resolved by immediate context.\n\n```json\n[]\n```",
+    "input_tokens": 16239,
+    "output_tokens": 1112,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 25.64520812034607,
+    "stop_reason": "end_turn"
+  }
+}

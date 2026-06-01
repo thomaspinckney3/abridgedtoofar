@@ -1,0 +1,215 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI Midwest and East Coast",
+    "line_and_color": "Clean inked linework with muted watercolor washes; sepia and dusty blues for memory, warmer ambers for present",
+    "lighting": "Soft window light and lamp glow; long shadows suggesting introspection",
+    "lettering": "Hand-lettered serif captions in rectangular boxes for Nick's narration; classic round speech balloons reserved for spoken lines",
+    "recurring_motifs": [
+      "the writing desk and journal",
+      "window light",
+      "father's remembered figure",
+      "the East as a distant horizon",
+      "train and travel silhouettes"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neat side-parted light brown hair, calm observant eyes",
+      "costume": "Light summer suit with vest, tie loosened; sleeves rolled while reading at home",
+      "expression_range": "Tentative on arrival, brightening into hopeful optimism, then settling into earnest study",
+      "continuity_note": "Nick is now physically in West Egg, occupying the bungalow alone; the retrospective voice continues in captions."
+    },
+    {
+      "name": "Stranger on the Road",
+      "visual_anchor": "Younger man, slightly disheveled, hat in hand, uncertain posture",
+      "costume": "Light traveling jacket, soft cap, plain shoes",
+      "expression_range": "Helpless, asking directions",
+      "continuity_note": "One-off character; appears only to ask Nick the way to West Egg village."
+    },
+    {
+      "name": "Finnish Housekeeper",
+      "visual_anchor": "Sturdy middle-aged woman, hair pinned back, weathered hands",
+      "costume": "Plain dark dress, white apron",
+      "expression_range": "Quietly muttering to herself, absorbed in work",
+      "continuity_note": "Domestic background figure at the bungalow stove."
+    }
+  ],
+  "page": {
+    "page_number": 3,
+    "page_summary": "Nick arrives alone at the weather-beaten West Egg bungalow when his coworker is reassigned, settles into a small household routine with a dog, a Dodge, and a Finnish cook, then is stopped on the road by a newcomer asking directions, after which his loneliness lifts; back at the bungalow he opens a stack of new banking books in the summer light, resolving to become a well-rounded man in what he already senses is one of the strangest communities in North America.",
+    "source_unit_ids": [22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34],
+    "source_word_range": [648, 972],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick arrives alone at the weather-beaten West Egg bungalow; his coworker has been sent to Washington. Inside, the Finnish housekeeper tends the stove while Nick sets down his suitcase.",
+        "shot": "establishing",
+        "image_prompt": "Wide establishing shot of a small weather-beaten clapboard bungalow on a Long Island lane in late spring 1922, peeling paint, sagging porch, an old Dodge parked in the dirt drive, a small dog sniffing at the steps. Young Nick Carraway in light traveling suit and soft hat stands at the open front door holding a suitcase, looking in. Through the open doorway, a sturdy middle-aged Finnish housekeeper in dark dress and white apron stoops over an electric stove inside a modest kitchen. Warm amber afternoon light, muted watercolor washes, clean inked linework. Reserve a clean empty band across the top of the panel and a smaller clean rectangle in the lower left for narration boxes, free of figures, hands, and props.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p3p1_c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.55, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "caption",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "He found the house—a weather-beaten cardboard bungalow at eighty a month. At the last minute the firm ordered him to Washington, and I went out to the country alone. I had a dog, an old Dodge, and a Finnish woman who muttered Finnish wisdom over the electric stove.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "First concrete view of the West Egg bungalow. Establishes Nick's solo arrival and the small household.",
+        "source_unit_ids": [22, 23],
+        "source_word_range": [648, 718],
+        "source_anchor": "He found the house... I went out to the country alone... I had a dog... an old Dodge and a Finnish woman.",
+        "adaptation_note": "Combines units 22 and 23 into a single arrival establisher to keep the action spine clear: arrival, household."
+      },
+      {
+        "panel_number": 2,
+        "beat": "On a sunlit country road near the bungalow, a stranger stops Nick and asks the way to West Egg village. Nick points down the road.",
+        "shot": "medium",
+        "image_prompt": "Medium two-shot on a dusty country road bordered by new green leaves and low hedges, late spring morning. On the right, Nick Carraway in light summer suit and soft hat pauses mid-walk, turning toward a younger disheveled stranger on the left who holds his cap in hand with a helpless, questioning posture. Nick lifts one hand to point down the road behind the stranger. Warm sunlight, clean ink lines, muted watercolor. Keep the upper center area and the lower right corner clear of figures and gesture for lettering. Mouths and pointing hand stay in the mid panel area, away from the reserved zones.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p3p2_s1",
+            "kind": "speech",
+            "zone": "top_center",
+            "box": {"x": 0.18, "y": 0.05, "w": 0.38, "h": 0.18},
+            "speaker": "Stranger",
+            "speaker_side": "left",
+            "reserved_for": "speech",
+            "reading_order": 1
+          },
+          {
+            "id": "p3p2_c1",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.45, "y": 0.80, "w": 0.51, "h": 0.16},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "caption",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "bottom_right",
+        "caption": "It was lonely for a day or so—until one morning some man, more recently arrived than I, stopped me on the road. I told him.",
+        "dialogue": [
+          {"speaker": "Stranger", "text": "How do you get to West Egg village?"}
+        ],
+        "sfx": [],
+        "continuity_notes": "Stranger appears only here. Nick's pointing gesture answers the question; the verbal reply is folded into the caption.",
+        "source_unit_ids": [24, 25, 26],
+        "source_word_range": [719, 755],
+        "source_anchor": "It was lonely for a day or so until one morning some man... 'How do you get to West Egg village?' ... I told him.",
+        "adaptation_note": "Groups the encounter and Nick's reply into one staged exchange."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Continuing alone up the road after giving directions, Nick walks taller; trees burst into leaf around him as the season turns.",
+        "shot": "wide",
+        "image_prompt": "Wide shot of Nick Carraway walking alone away from camera up a country lane in West Egg, jacket over his shoulder, posture straighter, head lifted. The trees on either side are exploding into fresh green leaves, sunlight streaming through them in dappled patches, as if the season is changing in fast motion. A distant glimpse of the bungalow roofline and the bay beyond. Warm amber and green palette, soft watercolor washes, clean ink. Reserve a clean horizontal band along the top and a clean band along the bottom of the panel for two stacked narration boxes, free of foliage detail and the figure.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p3p3_c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.6, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "caption",
+            "reading_order": 1
+          },
+          {
+            "id": "p3p3_c2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.36, "y": 0.82, "w": 0.6, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "caption",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "And as I walked on, I was lonely no longer. I was a guide, a pathfinder, an original settler—he had casually conferred on me the freedom of the neighbourhood.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Same lane as panel 2, moments later. Nick's lifted posture conveys the shift from loneliness to belonging.",
+        "source_unit_ids": [27, 28, 29, 30],
+        "source_word_range": [756, 821],
+        "source_anchor": "And as I walked on I was lonely no longer... a guide, a pathfinder, an original settler... freedom of the neighbourhood... great bursts of leaves growing on the trees.",
+        "adaptation_note": "Folds the 'fast movies' growth of summer into the same walking shot to keep action continuous."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Back at the bungalow, Nick at a small desk by the window opens one of a dozen new red-and-gold banking books, ready to remake himself as a well-rounded man—unaware he has rented into one of the strangest communities in North America.",
+        "shot": "medium",
+        "image_prompt": "Medium interior shot of Nick Carraway seated at a small wooden desk by an open window in the bungalow, sleeves rolled, vest unbuttoned, an open book in his hands. On the desk and on a shelf behind him, a row of about a dozen brand-new volumes bound in red cloth with gold lettering stand upright, gleaming like new mint coins. Through the window behind him, late afternoon light and a hint of the bay and a large neighboring rooftop in the distance. Warm amber lamp glow mixing with cool window light, muted watercolor, clean inked lines. Reserve a clear vertical caption column along the left side of the panel and a clear band along the bottom, free of the figure, the book, and the shelf, for narration boxes.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p3p4_c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.34, "h": 0.45},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "caption",
+            "reading_order": 1
+          },
+          {
+            "id": "p3p4_c2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.30, "y": 0.82, "w": 0.66, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "caption",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "There was so much to read, and so much fine health to pull down out of the air. I bought a dozen volumes on banking and credit, standing on my shelf in red and gold like new money from the mint—promising the shining secrets only Midas and Morgan and Maecenas knew. I was going to be that most limited of specialists, the well-rounded man.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Establishes Nick's study habit at the bungalow window and previews, through the distant rooftop, the neighboring Gatsby estate without naming it. The second caption tees up next page's encounter with West Egg's strangeness.",
+        "source_unit_ids": [31, 32, 33, 34],
+        "source_word_range": [822, 972],
+        "source_anchor": "There was so much to read... a dozen volumes on banking and credit... red and gold like new money from the mint... 'well-rounded man'... rented a house in one of the strangest communities in North America.",
+        "adaptation_note": "Final caption carries unit 34 as a turn-the-page hook; the action remains anchored to Nick reading at the desk."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
+    "last_scene": "Nick at a desk by the window of his West Egg bungalow on a late spring afternoon, opening new banking books, with the neighboring rooftop just visible through the window.",
+    "active_characters": ["Nick Carraway", "Finnish Housekeeper"],
+    "character_updates": [
+      "Nick is now physically installed in the West Egg bungalow, alone after his coworker was sent to Washington",
+      "Household established: a dog (briefly), an old Dodge, a Finnish housekeeper",
+      "Nick's mood shifts from loneliness to belonging after directing a newcomer, then to studious optimism",
+      "Stranger on the Road introduced and dismissed as a one-off catalyst"
+    ],
+    "visual_motifs": [
+      "weather-beaten bungalow",
+      "old Dodge in the drive",
+      "country road through bursting leaves",
+      "red-and-gold banking books like new mint money",
+      "writing desk by the open window",
+      "distant neighboring rooftop across the bay"
+    ],
+    "next_page_needs": [
+      "Reveal the neighboring Gatsby estate by direct line of sight from Nick's bungalow window or lawn",
+      "Stage the drive across the bay to East Egg and the Buchanan house",
+      "Introduce Tom Buchanan and Daisy Buchanan in person",
+      "Pay off the 'strangest communities in North America' line with concrete West Egg/East Egg contrast"
+    ]
+  }
+}

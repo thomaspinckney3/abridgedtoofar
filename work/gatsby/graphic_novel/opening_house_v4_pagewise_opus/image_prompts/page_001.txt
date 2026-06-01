@@ -1,0 +1,73 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age, post-WWI Midwest and East Coast
+- line and color: Clean inked linework with muted watercolor washes; sepia and dusty blues for memory, warmer ambers for present
+- lighting: Soft window light and lamp glow; long shadows suggesting introspection
+
+Character continuity:
+- Nick Carraway: Lean young man, neat side-parted light brown hair, calm observant eyes Costume: Light summer suit with vest, tie loosened, sleeves rolled Continuity: Steps out from the bungalow to take in his surroundings; same costume as previous page for continuity.
+- Nick's Father: Older man, graying mustache, kind reserved eyes Costume: Three-piece Midwestern suit, watch chain Continuity: Appears briefly in a memory beat as he agrees to finance Nick's year East.
+- Jay Gatsby (silhouette only): Tall male silhouette at a distance, back to camera, faceless Costume: Dark suit, indistinct; outlined against horizon light Continuity: First appearance, deliberately unidentifiable; reserved as a distant figure in Nick's narration.
+- Stranger on the Road: Younger man, slightly disheveled, hat in hand, uncertain posture Costume: Light traveling jacket, soft cap, plain shoes Continuity: One-off character; appears only to ask Nick the way to West Egg village.
+- Finnish Housekeeper: Sturdy middle-aged woman, hair pinned back, weathered hands Costume: Plain dark dress, white apron Continuity: Domestic background figure at the bungalow stove.
+- Jay Gatsby's mansion: Colossal Norman-style chateau with a tower, raw thin ivy on new stone Costume: n/a Continuity: First clear architectural reveal; Gatsby himself remains unseen.
+
+Page 1 summary: Nick sits at his writing desk after returning from the East and begins his account; as he writes, he recalls his father's long-ago advice, reflects on how reserving judgment shaped him in college, and admits that his tolerance now has a limit.
+
+Panels:
+
+Panel 1:
+Beat: Nick at his desk in a quiet room, pen poised over an open journal, beginning to write his memoir.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=11%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 11%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 11%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: A young man in a white shirt and loosened tie sits at a wooden writing desk by a tall window, pen in hand over an open leather journal. Soft autumn daylight slants across the page. Bookshelves and a small lamp behind him. Quiet, contemplative mood, muted sepia and dusty blue palette, 1920s Midwestern study.
+
+Panel 2:
+Beat: Memory: Nick's father speaks to a younger Nick across a parlor table.
+Shot: medium
+Panel archetype: single_speaker
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Nick's Father, top_left, x=6%, y=23%, w=38%, h=22%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Nick's Father: x 6%, y 23%, w 38%, h 22%. - Place Nick's Father body in x 6%, y 53%, w 40%, h 43%; face in x 20%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Nick's Father: body x=6%, y=53%, w=40%, h=43%; face x=20%, y=56%, w=10%, h=9%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Nick's Father: x 6%, y 23%, w 38%, h 22%. - Place Nick's Father body in x 6%, y 53%, w 40%, h 43%; face in x 20%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: A sepia-toned memory scene: an older mustached man in a three-piece suit sits across a small parlor table from a younger version of the same young man wearing a collegiate sweater. The father leans slightly forward, hand resting on the table, speaking with quiet seriousness. Warm interior, lace curtains, framed photographs.
+
+Panel 3:
+Beat: College memory: younger Nick on a campus bench, a restless stranger leaning in to confide, others hovering nearby.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: A college quad in soft afternoon light. A young man in a sweater sits on a stone bench, listening with quiet patience as another agitated young man leans toward him, gesturing. In the background, two other students linger as if waiting their turn. Ivy-covered building, autumn leaves, 1910s collegiate atmosphere.
+
+Panel 4:
+Beat: Back at the desk: Nick pauses, looks out the window toward an autumn horizon, admitting the limit of his tolerance.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, bottom_center, x=6%, y=77%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Return to the present-day study. The young man sets down his pen and looks out the tall window at a bare autumn landscape and distant road. His expression is sober, slightly hardened. Warm amber lamp light contrasts with cool blue light outside. Journal open on the desk.

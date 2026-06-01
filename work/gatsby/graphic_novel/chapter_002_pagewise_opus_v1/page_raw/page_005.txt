@@ -1,0 +1,262 @@
+{
+  "style_bible": {
+    "visual_period": "1922 Long Island and Queens, New York; Jazz Age America",
+    "line_and_color": "Inked linework with muted period palette; ash greys and soot blacks for the valley, warmer sepia and lavender for the city, sickly yellows for the billboard, smoky amber and cream for the cramped apartment interior",
+    "lighting": "Overcast ash-diffused daylight in the valley shifting to glowing midday sunshine over Manhattan streets; in the apartment, smoky lamplight thickening as afternoon turns to dusk and finally lit yellow windows above the street",
+    "lettering": "Rectangular cream caption boxes with serif type for Nick's narration; standard oval balloons for dialogue",
+    "recurring_motifs": [
+      "valley of ashes",
+      "the eyes of Doctor T. J. Eckleburg",
+      "trains and tracks",
+      "drifting grey dust",
+      "lavender taxicab",
+      "Airedale puppy",
+      "hen/old-lady photograph",
+      "Simon Called Peter",
+      "yellow apartment windows"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, late twenties, side-parted brown hair, observant eyes",
+      "costume": "Light grey three-piece summer suit, soft collar, dark tie; jacket loosening as the party wears on",
+      "expression_range": "Bemused, increasingly unfocused, polite discomfort",
+      "continuity_note": "Sits alone reading until the company arrives; gets pulled into the party against his will"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Tall hulking man, broad shoulders, hard mouth, sandy hair",
+      "costume": "Well-cut summer suit, stiff collar loosened",
+      "continuity_note": "Reappears with Myrtle from the bedroom just as guests arrive",
+      "expression_range": "Possessive, hard-eyed, proprietary"
+    },
+    {
+      "name": "Myrtle Wilson",
+      "visual_anchor": "Faintly stout mid-thirties woman, sensuous carriage",
+      "costume": "Now an elaborate cream-coloured chiffon afternoon dress that rustles as she sweeps about",
+      "expression_range": "Affected hauteur, brittle laughter, regal vanity",
+      "continuity_note": "Costume change has converted her vitality into impressive hauteur"
+    },
+    {
+      "name": "Catherine",
+      "visual_anchor": "Slender worldly girl about thirty, sticky bob of red hair, complexion powdered milky white, plucked eyebrows penciled back at a jaunty angle",
+      "costume": "Slim afternoon dress, innumerable pottery bracelets jangling up her arms",
+      "expression_range": "Confiding, gossipy, milky assurance",
+      "continuity_note": "Myrtle's sister; sits close to Nick and gossips about Tom and Daisy"
+    },
+    {
+      "name": "Mr. McKee (Chester)",
+      "visual_anchor": "Pale, feminine man, soft-featured, white spot of shaving lather on his cheekbone",
+      "costume": "Light suit, soft tie",
+      "expression_range": "Languid, self-important about his art",
+      "continuity_note": "Photographer from the flat below; made the dim enlargement on the wall"
+    },
+    {
+      "name": "Mrs. McKee",
+      "visual_anchor": "Shrill, languid woman, handsome but pinched",
+      "costume": "Fussy afternoon dress",
+      "expression_range": "Languid, shrilly enthusiastic",
+      "continuity_note": "Talks of poses Chester could make of Myrtle"
+    }
+  ],
+  "page": {
+    "page_number": 5,
+    "page_summary": "Nick returns from the drugstore to an empty parlor and tries to read Simon Called Peter; Tom and Myrtle re-emerge just as Catherine and the McKees arrive; Myrtle, now in chiffon, takes on a regal hauteur while Catherine leans in to gossip; Nick tries to leave for the park but is pulled back into his chair as the lit yellow windows hang over the darkening street.",
+    "source_unit_ids": [114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125],
+    "source_word_range": [6447, 6870],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick, returned alone to the living-room, reads Simon Called Peter as the whisky thickens the air; Tom and Myrtle re-emerge from the bedroom just as the doorbell calls in guests.",
+        "shot": "wide",
+        "image_prompt": "Cramped over-furnished top-floor apartment parlor in 1922 New York, smoky amber lamplight, tapestried Versailles furniture, Town Tattle magazines on the low table; in the foreground Nick in shirtsleeves and grey waistcoat slumped in an armchair holding an open novel, expression bewildered; mid-ground a bedroom door cracking open with Tom's broad shoulders and Myrtle's chiffon sleeve emerging; background a front door beginning to open to silhouettes in the hall; clear empty wall space upper left and lower right for caption boxes; no text, no signs, no lettering",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.03, "y": 0.04, "w": 0.42, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration about reading Simon Called Peter",
+            "reading_order": 1
+          },
+          {
+            "id": "c2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.55, "y": 0.78, "w": 0.42, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "narration about Tom and Myrtle reappearing as company arrived",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "When I came back they had both disappeared. I sat in the living-room and read a chapter of Simon Called Peter—either it was terrible stuff or the whisky distorted things.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Hen/old-lady photograph hovers on the wall; locked bureau visible behind the chair",
+        "source_unit_ids": [114, 115],
+        "source_word_range": [6447, 6544],
+        "source_anchor": "Just as Tom and Myrtle reappeared, company commenced to arrive at the apartment door.",
+        "adaptation_note": "Two captions cover the pivot from solitary reading to the door opening, preserving the cause/effect order of units 114 and 115."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Introductions in the hallway: Catherine jangles in past Nick, with McKee (lather still on his cheek) and his languid wife behind her; McKee announces he made the dim enlargement on the wall.",
+        "shot": "three_character_wide",
+        "image_prompt": "Full-width medium shot inside the apartment entry, three guests just arrived in 1922 afternoon clothes; left, Catherine, slender powdered woman about thirty with a sticky red bob and many pottery bracelets stacked up both arms catching the lamplight; center, pale soft-featured Mr. McKee with a tiny white smudge of shaving lather on his cheekbone, gesturing toward a framed dim enlarged photograph of an old woman that hovers ectoplasm-like on the wall behind him; right, Mrs. McKee, shrill languid woman with a fussy hat tilting her head; Nick visible at the panel edge watching; smoky amber interior light; clear caption strip across the very top and a small reserved area lower center; no text, no signs, no lettering",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.92, "h": 0.14},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "narration introducing Catherine and the McKees",
+            "reading_order": 1
+          },
+          {
+            "id": "c2",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.22, "y": 0.80, "w": 0.56, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "narration about McKee, lather, and the enlargement",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Her sister—a slender, worldly girl with powdered face and jangling bracelets—and a pale, feminine man from the flat below, a photographer, with his shrill, languid wife.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "The hen/old-lady photograph is the same one introduced in the earlier apartment beat; lather spot on McKee's cheek will recur later",
+        "source_unit_ids": [115, 116],
+        "source_word_range": [6488, 6588],
+        "source_anchor": "He had just shaved, for there was a white spot of lather on his cheekbone, and he informed me that he was in the \"artistic game.\"",
+        "adaptation_note": "Carries McKee's self-description in caption rather than balloon since the line is reported, not staged dialogue."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Myrtle, now in rustling cream chiffon, sweeps through the small smoky parlor with new hauteur, ordering ice and mineral water and waving away the elevator boy; the room seems to revolve around her.",
+        "shot": "medium",
+        "image_prompt": "Medium shot in the smoky parlor, late afternoon lamplight; Myrtle Wilson at center in an elaborate cream-coloured chiffon afternoon dress, hem and sleeves visibly rustling, chin lifted in impressive hauteur, one hand making a grand dismissive gesture; around her the room appears to tilt slightly as if revolving, ashtrays and glasses on side tables, the tapestried Versailles couch behind; other guests blurred at edges raising glasses; smoke curling through the air; clear caption space top right and bottom left; no text, no signs, no lettering",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "c1",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.55, "y": 0.04, "w": 0.42, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "narration about the chiffon dress and changed personality",
+            "reading_order": 1
+          },
+          {
+            "id": "c2",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.03, "y": 0.78, "w": 0.46, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration about the room revolving and her affected airs",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "Her cream chiffon swept the room, and her vitality turned to impressive hauteur—orders for ice and mineral water, small disdain for the elevator boy, large airs for the small rooms.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Myrtle's costume change marks the transformation noted in units 117–119; the regal-hostess persona from prior page now fully expanded",
+        "source_unit_ids": [117, 118, 119, 120, 121],
+        "source_word_range": [6589, 6715],
+        "source_anchor": "The intense vitality that had been so remarkable in the garage was converted into impressive hauteur.",
+        "adaptation_note": "Compresses the four contiguous descriptive units of Myrtle's transformation into a single staged action panel rather than separate symbolic tableaux, per the action-spine rule."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Catherine settles beside Nick on the couch, lowering her voice to gossip with milky assurance about Tom and Myrtle's marriages; Nick tries to leave for the park but is pulled back into the chair as, outside, the apartment's yellow windows glow over the darkening street.",
+        "shot": "wide",
+        "image_prompt": "Split composition. Left two-thirds: interior medium shot, Catherine the slender powdered woman with jangling pottery bracelets leaning conspiratorially toward Nick on a tapestried couch, one hand on his sleeve, her painted eyebrows arched; Nick half-rising in his chair as if to leave, jacket open, expression bewildered, an invisible rope of obligation tugging him back down; smoky amber lamplight, glasses on the table, Mr. and Mrs. McKee and Tom blurred in the background mid-argument. Right third: a vertical inset showing the exterior of the apartment building at dusk, the top-floor row of yellow lit windows glowing against a darkening blue street, a small lone figure on the sidewalk below looking up; clear caption space top center and bottom right; no text, no signs, no lettering",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.08, "y": 0.04, "w": 0.62, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "narration about Catherine's milky gossip",
+            "reading_order": 1
+          },
+          {
+            "id": "c2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.52, "y": 0.78, "w": 0.45, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "narration about wanting to walk to the park and the watcher in the street",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "The sister sat down beside me, lowering her voice with milky assurance about Tom and Myrtle—much of it lies.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Catherine's confidences seed the next page's escalation toward the mention of Daisy; the yellow-windows inset prepares the dusk/dawn frame and the casual watcher",
+        "source_unit_ids": [122, 123, 124, 125],
+        "source_word_range": [6716, 6870],
+        "source_anchor": "Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering.",
+        "adaptation_note": "Inset exterior is anchored to Nick's vantage from the couch (he 'saw him too'), satisfying the rule against detached aerial tableaux."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [
+      1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125
+    ],
+    "last_scene": "In the smoky top-floor apartment at dusk, Nick is pinned to his chair by Catherine's gossip while Myrtle in chiffon revolves through the room; outside, the building's lit yellow windows glow over a lone passerby looking up.",
+    "active_characters": [
+      "Nick Carraway",
+      "Tom Buchanan",
+      "Myrtle Wilson",
+      "Catherine",
+      "Mr. McKee (Chester)",
+      "Mrs. McKee"
+    ],
+    "character_updates": [
+      "Myrtle's costume change to cream chiffon completes her transformation from garage vitality to apartment hauteur",
+      "Catherine introduced as the gossiping sister with milky assurance about Tom and Daisy",
+      "Mr. McKee introduced as the languid photographer with shaving lather still on his cheek; he made the old-lady enlargement on the wall",
+      "Nick is fully drunk now and physically anchored to his chair, unable to leave"
+    ],
+    "visual_motifs": [
+      "lavender taxicab",
+      "Airedale puppy with white feet",
+      "tapestried Versailles furniture",
+      "hen/old-lady photograph on the wall",
+      "Town Tattle and Simon Called Peter on the table",
+      "locked bureau and whisky bottle",
+      "Myrtle's rustling cream chiffon dress",
+      "Catherine's jangling pottery bracelets",
+      "white spot of lather on McKee's cheekbone",
+      "yellow apartment windows over the darkening street"
+    ],
+    "next_page_needs": [
+      "Escalation of the drunken party with more named exchanges among Catherine, the McKees, Tom, and Myrtle",
+      "Catherine's specific claims about Tom's wife in Catholic country and Daisy",
+      "McKee's photographic 'studies' becoming concrete dialogue",
+      "Tom breaking Myrtle's nose with the flat of his hand when she chants Daisy's name",
+      "Aftermath: blood on the tapestried furniture, Nick leaving with McKee, the elevator"
+    ]
+  }
+}

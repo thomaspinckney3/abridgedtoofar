@@ -1,0 +1,145 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag material and styling do not match the specified mottled fabric with leather trim.",
+          "visible_evidence": "The bag under Ishmael’s arm appears as a solid brown suede/leather duffel with uniform texture and no mottled fabric paneling.",
+          "repair_prompt": "Redesign the carpet-bag as a small, 19th-century soft-sided travel bag made of mottled fabric with scuffed leather trim and handles; keep it compact and worn, not a modern duffel."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched detail on Ishmael’s boots is not clearly visible.",
+          "visible_evidence": "Boots look worn and laced but show no distinct toe patches or thin, battered soles.",
+          "repair_prompt": "Add visible rough toe patches and thin, scuffed soles to Ishmael’s dark leather ankle boots; avoid any polished or new appearance."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "A background pedestrian is visible despite the scene calling for a desolate waterfront with only Ishmael present.",
+          "visible_evidence": "A small human figure is walking near the row of houses under a lamp on the right midground.",
+          "repair_prompt": "Remove background pedestrians to keep the waterfront empty and desolate; only Ishmael should be visible."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag is depicted as a brown drawstring sack rather than a small soft-sided carpet-bag with leather trim.",
+          "visible_evidence": "Under Ishmael’s left arm is a round, soft bag with a cinched top and cord; no mottled fabric or leather-trimmed structure typical of a 19th-century carpet-bag.",
+          "repair_prompt": "Replace the drawstring sack with a compact 19th-century carpet-bag: small, soft-sided, mottled fabric panels with worn leather trim and short handles, scuffed and tucked under Ishmael’s arm. Preserve the rest of the scene, coins in gloved palm, snowy New Bedford street, and no readable text."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Framing reads as a full-body long shot rather than the requested medium three-quarter view.",
+          "visible_evidence": "Ishmael is shown head-to-toe with substantial empty street space around him.",
+          "repair_prompt": "Tighten to a medium three-quarter view (waist-up, slight angle), keeping Ishmael studying the coins and hugging the carpet-bag, and preserve clean negative space at the bottom-center for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Ishmael’s boots appear new and modern with thick lugged soles and no visible toe patches, conflicting with the specified worn, patched 19th-century ankle boots.",
+          "visible_evidence": "His footwear shows glossy leather and deep treaded soles; no scuffed thin soles or rough toe patches are visible.",
+          "repair_prompt": "Replace the footwear with dark, battered 19th-century ankle boots: thin, worn soles, scuffed toes with rough patches, and no modern lug tread or shine. Keep all else unchanged."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "The scene shows Ishmael passing the warm-lit inn toward the waterfront but does not clearly depict him turning into a darker side street as specified.",
+          "visible_evidence": "He continues along the main street toward the docks; no distinct side-lane entry is shown.",
+          "repair_prompt": "Recompose or adjust pose so Ishmael is clearly stepping into a darker side lane sloping waterward—body angled into the lane with one foot entering it—while keeping the warm inn doorway and unreadable signs, and preserving the bottom-right caption space."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag material reads as a smooth, possibly full-leather satchel rather than a mottled-fabric carpet-bag with leather trim.",
+          "visible_evidence": "Ishmael clutches a dark, uniform-texture bag with minimal fabric patterning or mottling; it appears leathery and plain.",
+          "repair_prompt": "Change Ishmael’s bag to a small 19th-century carpet-bag made of mottled fabric with scuffed leather trim, clearly soft-sided and hand-carried under his arm; avoid a smooth full-leather satchel look."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Ishmael’s boots do not show the specified rough toe patches.",
+          "visible_evidence": "The ankle boots look worn but the toes appear intact without distinct patching.",
+          "repair_prompt": "Render Ishmael’s ankle boots visibly battered with rough toe patches and thin, worn soles; avoid a new or intact toe appearance."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Ash-box reads as an active brazier due to visible smoke/steam rising from it.",
+          "visible_evidence": "At the threshold, a low wooden box emits a noticeable plume, implying heat rather than cold gray stove ashes.",
+          "repair_prompt": "Depict a low wooden or tin ash-box half-filled with fine gray stove ash, lid ajar and dust around it; remove any glow or smoke so it doesn’t read as a brazier."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "character_continuity",
+          "finding": "Ishmael’s headwear does not match the knit cap specified.",
+          "visible_evidence": "He is wearing a dark brimmed sailor’s cap with a short peak as he reaches for the door.",
+          "repair_prompt": "Replace the brimmed sailor cap with a dark knit watch cap while keeping his coat and pose the same."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched, battered look of Ishmael’s boots is not evident.",
+          "visible_evidence": "Boots appear intact and relatively neat with no clear toe patches or thin, worn soles visible.",
+          "repair_prompt": "Age the boots: add scuffed leather, rough toe patches, and thinner-looking worn soles."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael is not clearly looking up at the sign while reaching for the latch.",
+          "visible_evidence": "His head and eyes are directed toward the door rather than upward toward the hanging signboard.",
+          "repair_prompt": "Tilt Ishmael’s head and gaze upward toward the sign while keeping his right hand on the door latch."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "The swinging motion of the sign in the wind is not conveyed.",
+          "visible_evidence": "The signboard hangs straight with no visible angle, chain tension, or motion blur to suggest movement.",
+          "repair_prompt": "Angle the sign slightly and add a hint of chain sway or motion blur consistent with the sleet and wind."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot type does not match the requested low-angle medium shot.",
+          "visible_evidence": "The composition is a wide, eye-level scene showing much of the dock and ships, with Ishmael nearly full-body in profile.",
+          "repair_prompt": "Reframe to a low-angle medium shot: crop Ishmael roughly waist-up with the weathered sign looming above."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

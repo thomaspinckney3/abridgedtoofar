@@ -22,3 +22,16 @@ build/
 
 # Claude Code runtime state (not repo-relevant)
 .claude/
+
+# Large experimental graphic-novel intermediates. Keep metadata, replay
+# caches, PDFs, and contact sheets trackable; leave page/debug image batches
+# local unless explicitly promoted.
+work/**/graphic_novel/**/generated_pages*/**
+work/**/graphic_novel/**/debug_pages*/**
+work/**/graphic_novel/**/panel_art/**
+work/**/graphic_novel/**/panel_art_v*/**
+work/**/graphic_novel/**/rough_pages*/**
+work/**/graphic_novel/**/thumbnail_rough_pages*/**
+work/**/graphic_novel/**/speaker_anchor_grid/**
+work/**/graphic_novel/**/lettered_pages*/**
+!work/**/graphic_novel/**/lettered_pages*/lettered_book.pdf

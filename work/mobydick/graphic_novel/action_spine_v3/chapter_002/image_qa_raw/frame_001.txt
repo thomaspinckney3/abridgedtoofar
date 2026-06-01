@@ -1,0 +1,20 @@
+{
+  "frame_number": 1,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "major",
+      "category": "prop_confusion",
+      "finding": "Carpet-bag appears as a modern-ish duffel/satchel rather than a 19th-century carpet-bag.",
+      "visible_evidence": "Ishmael holds a soft brown bag with a rounded, gathered/rolled top and uniform material, lacking the mottled fabric body and framed/rectangular mouth typical of a carpet-bag.",
+      "repair_prompt": "Redesign the bag as a small 19th-century carpet-bag: mottled fabric body with scuffed leather trim and short handles, a soft-sided rectangular silhouette with a short top opening; no zippers or modern seam details; keep it tucked under Ishmael’s arm."
+    },
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "Patched boots are not clearly patched or thin-soled as specified.",
+      "visible_evidence": "The ankle boots look intact with smooth toes and no obvious toe patches or thinning soles visible.",
+      "repair_prompt": "Weather and age the boots: add rough toe patches, scuffs, stitching repairs, and thinner worn soles; avoid a clean or sturdy appearance."
+    }
+  ]
+}

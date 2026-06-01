@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-05T20:59:32",
+  "key": "d7bc4cc60b49d8ab3321fc79180aa5fa",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "4afd6d49d21d5bdbbae4b1824018eb18",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\n      \"name\": \"Ewing Klipspringer\",\n      \"appearances_summary\": \"A perpetually visiting 'boarder' at Gatsby\u2019s who plays piano during Daisy\u2019s visit (Ch 005) and later telephones only to ask for his tennis shoes back (Ch 009).\",\n      \"reason_removable\": \"His functions (background music, a comic postmortem phone call) can be folded into anonymous servants/guests without changing any plot turn or theme the synopsis requires.\"\n    },\n    {\n      \"name\": \"Catherine\",\n      \"appearances_summary\": \"Myrtle Wilson\u2019s sister at the Manhattan apartment gathering who gossips and later lies to the coroner (Ch 002, Ch 009).\",\n      \"reason_removable\": \"Her chatter and later denial add color but no consequence to the affair, the fatal accident, or the fallout described in the synopsis.\"\n    },\n    {\n      \"name\": \"Mr. McKee (Chester McKee)\",\n      \"appearances_summary\": \"A fussy photographer at the Manhattan apartment party (Ch 002).\",\n      \"reason_removable\": \"He is pure background satire at Myrtle\u2019s party and never affects the affair, the death, or Gatsby\u2019s arc.\"\n    },\n    {\n      \"name\": \"Mrs. McKee (Lucille McKee)\",\n      \"appearances_summary\": \"Chester\u2019s shrill wife at the Manhattan apartment party (Ch 002).\",\n      \"reason_removable\": \"She amplifies the scene\u2019s tawdriness but has no bearing on any later event.\"\n    },\n    {\n      \"name\": \"Mr. Sloane\",\n      \"appearances_summary\": \"A haughty rider who briefly visits Gatsby\u2019s and pointedly excludes him from dinner (Ch 006).\",\n      \"reason_removable\": \"This snub reiterates East Egg snobbery already conveyed elsewhere without shifting any outcome.\"\n    },\n    {\n      \"name\": \"Lucille\",\n      \"appearances_summary\": \"A named party guest in twin scenes of Gatsby\u2019s parties who repeats rumors and a dress anecdote (Ch 003).\",\n      \"reason_removable\": \"Her gossip is duplicative of the general rumor-swirl that the synopsis already captures.\"\n    },\n    {\n      \"name\": \"Chester Becker (representative of the guest\u2011list names)\",\n      \"appearances_summary\": \"Appears only in Nick\u2019s long roster of partygoers (Ch 004).\",\n      \"reason_removable\": \"He exists solely in a catalog that can be trimmed without cost to story or theme.\"\n    },\n    {\n      \"name\": \"Doctor Webster Civet\",\n      \"appearances_summary\": \"Named in the party guest\u2011list (Ch 004) and later invoked as 'Doc Civet' at a drunken table (Ch 006).\",\n      \"reason_removable\": \"A marginal namecheck whose presence never influences any scene that matters to the main arc.\"\n    },\n    {\n      \"name\": \"Michaelis\",\n      \"appearances_summary\": \"The coffee\u2011stall owner who narrates George Wilson\u2019s night of grief (Ch 007\u2013008).\",\n      \"reason_removable\": \"Nick can summarize Wilson\u2019s despair and movements without inserting Michaelis as a character and nothing in the synopsis depends on him.\"\n    },\n    {\n      \"name\": \"\u2018Blocks\u2019 Biloxi\",\n      \"appearances_summary\": \"A comic wedding anecdote figure raised during the Plaza confrontation (Ch 007).\",\n      \"reason_removable\": \"The anecdote is digressive comedy that neither alters Daisy\u2019s wavering nor Tom and Gatsby\u2019s showdown.\"\n    },\n    {\n      \"name\": \"Rosy Rosenthal\",\n      \"appearances_summary\": \"A murdered gambler in Wolfshiem\u2019s reminiscence at lunch (Ch 004).\",\n      \"reason_removable\": \"He serves only to thicken Wolfshiem\u2019s aura; excising him leaves Wolfshiem\u2019s role in Gatsby\u2019s 'drugstore' business intact.\"\n    },\n    {\n      \"name\": \"Motorcycle policeman\",\n      \"appearances_summary\": \"Pulls Gatsby over and is waved off by a 'Christmas card' (Ch 004).\",\n      \"reason_removable\": \"This roadside cameo is a throwaway hint of Gatsby\u2019s pull and can be dropped without changing any later beat.\"\n    },\n    {\n      \"name\": \"Ferdie (Daisy\u2019s chauffeur)\",\n      \"appearances_summary\": \"Briefly named when Daisy arrives at Nick\u2019s cottage for tea (Ch 005).\",\n      \"reason_removable\": \"Swapping him for an unnamed driver has zero effect on the reunion or its consequences.\"\n    }\n  ],\n  \"subplots\": [\n    {\n      \"name\": \"Nick\u2019s New York work life and Jersey City fling\",\n      \"chapter_span\": \"Ch 003\",\n      \"reason_removable\": \"His office routine and brief romance are self\u2011contained diversions that don\u2019t touch the Gatsby\u2013Daisy\u2013Tom triangle or the novel\u2019s outcome.\"\n    },\n    {\n      \"name\": \"Jordan Baker\u2019s golf scandal and the 'bad drivers' mini\u2011essay\",\n      \"chapter_span\": \"Ch 003\",\n      \"reason_removable\": \"Her alleged cheating and driving maxim are side character notes; the synopsis needs only that Nick later breaks with Jordan.\"\n    },\n    {\n      \"name\": \"Owl Eyes\u2019s library discovery and the car\u2011in\u2011the\u2011ditch gag\",\n      \"chapter_span\": \"Ch 003\",\n      \"reason_removable\": \"You can let Owl Eyes appear unnamed or newly named at the funeral without earlier comic set\u2011pieces.\"\n    },\n    {\n      \"name\": \"Wolfshiem\u2019s Rosy Rosenthal murder reminiscence\",\n      \"chapter_span\": \"Ch 004\",\n      \"reason_removable\": \"The anecdote is flavor; Wolfshiem\u2019s essential functions (shadowy 'fixer,' Gatsby\u2019s business partner) survive without it.\"\n    },\n    {\n      \"name\": \"Gatsby\u2019s 'Christmas card' from the police commissioner\",\n      \"chapter_span\": \"Ch 004\",\n      \"reason_removable\": \"It\u2019s a one\u2011off wink at his influence that can be cut without weakening the criminal-connection thread already carried by Wolfshiem.\"\n    },\n    {\n      \"name\": \"Mr. Sloane\u2019s perfunctory invitation and snub\",\n      \"chapter_span\": \"Ch 006\",\n      \"reason_removable\": \"This dinner fake\u2011out restates East Egg hauteur already visible at the Plaza and in Tom\u2019s behavior.\"\n    },\n    {\n      \"name\": \"Catherine\u2019s Catholic lie and Monte Carlo tangent\",\n      \"chapter_span\": \"Ch 002\",\n      \"reason_removable\": \"Her claims are colorful but unnecessary to establishing Tom\u2019s affair and the apartment melee that ends with Myrtle\u2019s broken nose.\"\n    },\n    {\n      \"name\": \"Klipspringer\u2019s posthumous 'tennis shoes' phone call\",\n      \"chapter_span\": \"Ch 009\",\n      \"reason_removable\": \"Wolfsheim\u2019s refusal and the vanishing party crowd already make the funeral\u2019s emptiness clear.\"\n    },\n    {\n      \"name\": \"Biloxi-at-the-wedding comic detour during the Plaza scene\",\n      \"chapter_span\": \"Ch 007\",\n      \"reason_removable\": \"The story stalls the confrontation and adds no new leverage to Daisy\u2019s waver or Tom\u2019s counterattack.\"\n    }\n  ],\n  \"digressions\": [\n    {\n      \"chapter_ids\": [\"004\"],\n      \"topic\": \"Nick\u2019s full page(s) of rostered party names from his old timetable\",\n      \"reason_removable\": \"This taxonomic guest list is pure social color; trimming it won\u2019t affect any scene the synopsis depends on.\"\n    },\n    {\n      \"chapter_ids\": [\"003\"],\n      \"topic\": \"Baroque inventory of party logistics (oranges machine, caterers\u2019 canvas, instrument roll\u2011call)\",\n      \"reason_removable\": \"The lavish cataloguing can be compressed to 'huge parties every weekend' without loss of plot or theme.\"\n    },\n    {\n      \"chapter_ids\": [\"001\"],\n      \"topic\": \"Carraway genealogy and great\u2011uncle portrait (Dukes of Buccleuch, Civil War substitute, hardware business)\",\n      \"reason_removable\": \"It\u2019s background pedigree that exceeds what\u2019s needed for 'Midwesterner Nick moves East' in the synopsis.\"\n    },\n    {\n      \"chapter_ids\": [\"007\"],\n      \"topic\": \"The 'butler\u2019s nose' anecdote and sundry small\u2011talk curlicues at the Buchanans\u2019\",\n      \"reason_removable\": \"These comic asides don\u2019t move the lunch\u2011to\u2011Plaza chain of events.\"\n    },\n    {\n      \"chapter_ids\": [\"009\"],\n      \"topic\": \"Extended Midwestern prep\u2011school/railroad Christmas reminiscence\",\n      \"reason_removable\": \"You can keep Nick\u2019s 'East like a night scene by El Greco' and return\u2011home resolution while paring this nostalgic excursus.\"\n    }\n  ],\n  \"skippable_chapters\": []\n}",
+    "input_tokens": 67224,
+    "output_tokens": 6973,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 103.8604748249054,
+    "stop_reason": "stop"
+  }
+}

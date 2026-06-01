@@ -1,0 +1,76 @@
+{
+  "book_id": "uncle_toms_cabin",
+  "requested_pairs": [],
+  "include_name_lint": false,
+  "name_lint_only": false,
+  "use_adjudication": false,
+  "name_lint_findings_seen": 0,
+  "adjudication_findings_seen": 0,
+  "adjudication_repair_candidates": 0,
+  "name_lint_findings_mapped": 0,
+  "findings_seen": 3,
+  "findings_selected": 3,
+  "findings_filtered": 0,
+  "filtered_findings": [],
+  "pairs_processed": 2,
+  "pairs_applied": 2,
+  "pairs_no_change": 0,
+  "pairs_rejected": 0,
+  "pairs_failed": 0,
+  "pairs_no_findings": 0,
+  "pairs": [
+    {
+      "pair": "038-039",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "039"
+      ],
+      "before_words": {
+        "038": 2173,
+        "039": 2551
+      },
+      "after_words": {
+        "038": 2173,
+        "039": 2552
+      },
+      "edits": [
+        {
+          "segment_id": "039-cassy-evil-spirits-callback",
+          "change": "Replace 'Didn't I tell you that evil spirits followed me?' with a self-contained confession that removes the dangling back-reference, since the prior conversation (Cassy's autobiography in Ch 035) was authoritatively cut. Smallest fix: drop the callback phrase and let Cassy state the fact directly."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "045-046",
+      "status": "applied",
+      "findings": 2,
+      "attempts": 1,
+      "changed_segments": [
+        "045",
+        "046"
+      ],
+      "before_words": {
+        "045": 989,
+        "046": 1588
+      },
+      "after_words": {
+        "045": 1017,
+        "046": 1598
+      },
+      "edits": [
+        {
+          "segment_id": "045-supper-room-money",
+          "change": "Add a brief gloss explaining the money's origin (Chloe's wages, preserved as proof of her capability) so the emotional pivot is motivated for a reader who has not seen the cut prior scene."
+        },
+        {
+          "segment_id": "046-nathan-name",
+          "change": "Introduce the servant's name 'Nathan' before the master addresses him by it, with the smallest possible insertion at the point of the interview, matching source order."
+        }
+      ],
+      "dry_run": false
+    }
+  ]
+}

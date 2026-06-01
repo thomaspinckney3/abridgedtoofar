@@ -1,0 +1,124 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s America with flashbacks to the 1910s Midwest",
+    "line_and_color": "Clean ink lines with selective hatching; muted, slightly desaturated palette with warm sepias for memory and cooler neutrals for present reflections",
+    "lighting": "Naturalistic, time-of-day motivated; warm late-afternoon glow for the porch memory, dormroom lamplight for college, crisp autumn daylight for the return home",
+    "lettering": "Classic serif narrative captions; dialogue in understated, readable roman; generous negative space for dense narration",
+    "recurring_motifs": ["porch railings and straight lines (order/reserve)", "train platforms and suitcases (transit between East/West)", "autumn leaves (afterglow/aftermath)", "windows and thresholds (observation vs participation)"]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean, observant young man in his late 20s; tidy hair parted to the side; watchful eyes; composed posture",
+      "costume": "Conservative 1920s civilian dress: dark three-piece suit, white shirt, slim tie; in flashback, simpler Midwestern shirtwaist and vest",
+      "expression_range": "Thoughtful, reserved half-smiles, politely attentive, weary detachment, firm resolve",
+      "continuity_note": "Narrator and point-of-view; frequently framed slightly apart from others, looking on rather than performing"
+    },
+    {
+      "name": "Nick's Father",
+      "visual_anchor": "Middle-aged gentleman with neatly trimmed mustache; calm, steady gaze; composed demeanor",
+      "costume": "Early 1910s Midwestern attire: shirt, vest, rolled sleeves on a porch; pocket watch chain visible",
+      "expression_range": "Measured warmth, instructive seriousness",
+      "continuity_note": "Appears only in memory; presence sets Nick’s moral framework"
+    }
+  ],
+  "page": {
+    "page_number": 1,
+    "page_summary": "Nick recalls his father's counsel and how it formed his habit of reserving judgment, the confidences it drew to him, his guarded tolerance with limits, and his return from the East desiring moral order.",
+    "source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "source_word_range": [1, 335],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "In youth, Nick receives his father's enduring advice, shaping his outlook.",
+        "shot": "medium",
+        "image_prompt": "Early 1910s Midwestern front porch in late afternoon. Young Nick sits on the porch steps, attentive, while his father leans on a porch post, speaking gently. Wood railings cast orderly shadows across the floorboards. A quiet yard beyond: trimmed grass, a gravel lane, a distant treeline. Father’s posture calm and instructive; Nick open, thoughtful. Warm golden light, soft breeze suggested by a lightly stirring curtain inside the open doorway. Leave clear sky and porch wall space for lettering.",
+        "caption": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that.",
+        "dialogue": [
+          {
+            "speaker": "Nick's Father",
+            "text": "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had."
+          }
+        ],
+        "sfx": ["summer insects softly"],
+        "continuity_notes": "Memory scene; introduce father and establish moral seed. Nick younger here; period costuming earlier than rest of page.",
+        "source_unit_ids": [1, 2, 3],
+        "source_word_range": [1, 75],
+        "source_anchor": "“In my younger and more vulnerable years…” / “Whenever you feel like criticizing anyone…”",
+        "adaptation_note": "Combines the opening memory and the single spoken line to anchor philosophy visually."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Nick’s reserved judgment invites confidences, from college through young adulthood, often against his will.",
+        "shot": "wide",
+        "image_prompt": "Early 1910s college dormitory room at night. A single shaded desk lamp pools light. Nick lies on a narrow iron-framed bed, eyes half-closed as if feigning sleep. At the edge of the bed, a rumpled, agitated classmate perches, leaning forward as if on the verge of confession. Trunks, a few campus pennants, books stacked neatly near Nick, a jacket hanging from a hook. The room’s darkness fades into corners, leaving negative space along the wall and ceiling for multiple caption boxes.",
+        "caption": "In consequence, I'm inclined to reserve all judgements, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought—frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions.",
+        "dialogue": [],
+        "sfx": ["tick...tick (desk clock)"],
+        "continuity_notes": "Advances from porch memory to college years, showing how the advice shaped behavior.",
+        "source_unit_ids": [4, 5, 6],
+        "source_word_range": [76, 210],
+        "source_anchor": "“reserve all judgements… victim of… bores” / “in college I was unjustly accused…” / “Most of the confidences were unsought—… feigned sleep…”",
+        "adaptation_note": "Single setting stands in for multiple instances; staging supports several consecutive narration captions without symbolic montage."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Philosophy: reserving judgment as hope, tempered by class-aware caution.",
+        "shot": "medium",
+        "image_prompt": "Daytime train platform in a modest Midwestern town. Nick stands slightly apart, hands in coat pockets, watching a small cross-section of people pass: a well-dressed businessman, a laborer with a lunch pail, a mother with a child. Subtle spatial separation underscores observation without intrusion. Clear sky and station wall provide open areas for captions.",
+        "caption": "Reserving judgements is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.",
+        "dialogue": [],
+        "sfx": ["distant train hiss"],
+        "continuity_notes": "Reflective present-tense philosophy; maintains East/West travel motif with platform setting.",
+        "source_unit_ids": [7, 8],
+        "source_word_range": [211, 252],
+        "source_anchor": "“Reserving judgements is a matter of infinite hope.” / “fundamental decencies… parcelled out unequally at birth.”",
+        "adaptation_note": "A neutral public space allows visual variety of people without turning the ideas into a symbolic montage."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Despite tolerance, Nick admits a firm personal limit.",
+        "shot": "close",
+        "image_prompt": "Interior, evening. Nick sits at a small writing desk near a window, jaw set, eyes steady. A fountain pen rests beside a closed notebook; ashtray with a just-snubbed cigarette. Streetlights glow outside in soft bokeh. Composition leaves a swath of negative space over the desktop and window frame for captions.",
+        "caption": "And, after boasting this way of my tolerance, I come to the admission that it has a limit. Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don't care what it's founded on.",
+        "dialogue": [],
+        "sfx": ["match snuff"],
+        "continuity_notes": "Transitions from general creed to personal boundary; intimate framing tightens mood before the return-from-East beat.",
+        "source_unit_ids": [9, 10],
+        "source_word_range": [253, 294],
+        "source_anchor": "“tolerance… has a limit.” / “hard rock or the wet marshes…”",
+        "adaptation_note": "Avoids literalizing the metaphor; grounds the admission in Nick’s controlled demeanor."
+      },
+      {
+        "panel_number": 5,
+        "beat": "After returning from the East, Nick longs for order and no more tumultuous confidences.",
+        "shot": "establishing",
+        "image_prompt": "Autumn afternoon outside a small Midwestern train station. Nick steps onto the platform with a worn suitcase, paused mid-step, looking toward a quiet street of neat houses and straight-lined fences. Trees with copper leaves; a breeze sends a few across the platform. The horizon and station facade leave generous negative space for the closing caption.",
+        "caption": "When I came back from the East last autumn I felt that I wanted the world to be in uniform and at a sort of moral attention forever; I wanted no more riotous excursions with privileged glimpses into the human heart.",
+        "dialogue": [],
+        "sfx": ["steel wheels settling", "leaves skitter"],
+        "continuity_notes": "Establishes the timeline pivot: return from the East; sets tone for stricter moral stance moving forward.",
+        "source_unit_ids": [11],
+        "source_word_range": [295, 335],
+        "source_anchor": "“When I came back from the East last autumn…”",
+        "adaptation_note": "Visual order implied by straight fences and tidy street, without literal military imagery."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "last_scene": "Nick’s reflective narration from youthful advice through college confidences to his return from the East in autumn, embracing a stricter moral posture.",
+    "active_characters": ["Nick Carraway", "Nick's Father"],
+    "character_updates": [
+      "Nick’s philosophy of reserving judgment established and contextualized by his father’s advice.",
+      "Nick shown as a confidant in college, often unwillingly.",
+      "Nick admits limits to his tolerance and, post-East, desires moral order."
+    ],
+    "visual_motifs": ["porch railings and orderly lines", "train platforms/suitcase", "autumn leaves", "windows/thresholds"],
+    "next_page_needs": [
+      "Continue from Nick’s post-East resolve into the next chronological setting and characters he introduces.",
+      "Maintain narrator’s introspective captions while staging clear environments for upcoming scenes.",
+      "Begin establishing the East/West contrast visually if the next units move toward Long Island or New York."
+    ]
+  }
+}

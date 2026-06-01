@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:56:06",
+  "key": "51e43a6d4f44e84c102f147dd75127ac",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence-fix",
+    "hash": "30ebfe05eef93b41d30d1b864ab1a230",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_fix.py",
+        "sha256": "cc81eebc1048ad65b20c9b27a7da95a0d4d4266e7937e705637db1c20f9d55e0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/coherence_fix_pair.md",
+        "sha256": "71eff4043236868d9179bcdc8a0eb4bfa52c5f9368e57df367b5dc5aec5e6a6b",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n{\n  \"pair\": \"115-116\",\n  \"edits\": [\n    {\"segment_id\": \"116-08\", \"change\": \"Restored minimal predicate from source ('Look ye, blacksmith, these are the gathered nail-stubbs\u2026') so the utterance parses as a grammatical sentence rather than a bare noun fragment.\"}\n  ],\n  \"draft_n\": \"Availing himself of the mild summer-cool now reigning, and in preparation for the active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again after concluding his contributory work for Ahab's leg, but still kept it on deck, lashed by the foremast; incessantly invoked by headsmen, harpooneers, and bowsmen to do some little job\u2014altering, repairing, reshaping their weapons and boat furniture. Often he was surrounded by an eager circle, all waiting to be served, holding boat-spades, pike-heads, harpoons, lances, jealously watching his every sooty movement. Nevertheless, this old man's was a patient hammer wielded by a patient arm. No murmur, no impatience, no petulance came from him. Silent, slow, and solemn; bowing over still further his chronically broken back, he toiled as if toil were life itself, and the heavy beating of his hammer the heavy beating of his heart. And so it was.\u2014Most miserable!\\n\\nA peculiar yawing in his gait had early excited curiosity; to persistent questionings he had given in; and so every one now knew the shameful story of his fate. Belated, and not innocently, one bitter winter midnight on the road between two country towns, the blacksmith, half-stupid, felt deadly numbness stealing over him, and sought refuge in a leaning, dilapidated barn. The issue was the loss of the extremities of both feet. Out of this revelation, part by part, came the four acts of the gladness, and the one long, and as yet uncatastrophied, fifth act of the grief of his life's drama.\\n\\nHe, nearly sixty, had postponedly encountered that thing in sorrow's technicals called ruin. Once an artisan of famed excellence, with plenty to do; owning a house and garden; embracing a youthful, daughter-like, loving wife, and three blithe, ruddy children; every Sunday to a cheerful church in a grove\u2014when, one night, under cover of darkness, and cunningly disguised, a desperate burglar slid into his happy home and robbed them all of everything. Darker yet to tell, the blacksmith himself ignorantly conducted this burglar into his family's heart. It was the Bottle Conjuror! Upon the opening of that fatal cork, forth flew the fiend and shrivelled up his home. For prudent, wise, economic reasons, the shop was in the basement with a separate entrance; so that the young, loving, healthy wife had listened with no unhappy nervousness, but with vigorous pleasure, to the stout ringing of her young-armed old husband's hammer; muffled reverberations came up to her, not unsweetly, in her nursery; and so, to stout Labor's iron lullaby, the infants were rocked to slumber.\\n\\nOh, woe on woe! Oh, Death, why canst thou not sometimes be timely? Hadst thou taken this old blacksmith ere his full ruin came, then had the young widow had a delicious grief, and her orphans a venerable, legendary sire to dream of; and all a care-killing competency. But Death plucked down some virtuous elder brother, on whose whistling daily toil hung the responsibilities of some other family, and left the worse than useless old man standing, till the hideous rot of life should make him easier to harvest.\\n\\nWhy tell the whole? The blows of the basement hammer every day grew more and more between; and each blow every day grew fainter than the last; the wife sat frozen at the window, with tearless eyes glitteringly gazing into the weeping faces of her children; the bellows fell; the forge choked with cinders; the house was sold; the mother dived down into the long church-yard grass; her children twice followed her thither; and the houseless, familyless old man staggered off a vagabond in crape; his every woe unreverenced; his grey head a scorn to flaxen curls!\\n\\nDeath seems the only desirable sequel for a career like this; but Death is only a launching into the region of the strange Untried; it is but the first salutation to the possibilities of the immense Remote, the Wild, the Watery, the Unshored. Therefore, to the death-longing eyes of such men, who have left in them some interior compunctions against suicide, does the all-contributed and all-receptive ocean alluringly spread forth his whole plain of unimaginable, taking terrors and wonderful new-life adventures; and from the hearts of infinite Pacifics the thousand mermaids sing\u2014\"Come hither, broken-hearted; here is another life without the guilt of intermediate death; here are wonders supernatural, without dying for them. Come hither! bury thyself in a life which, to thy now equally abhorred and abhorring landed world, is more oblivious than death. Come hither! put up thy gravestone, too, within the churchyard, and come hither, till we marry thee!\"\\n\\nHearkening to these voices\u2014East and West, by early sunrise and by fall of eve\u2014the blacksmith's soul responded, Aye, I come! And so Perth went a-whaling.\",\n  \"draft_np1\": \"With matted beard, swathed in a bristling shark-skin apron, Perth stood between his forge and anvil, a pike-head in the coals. Captain Ahab approached, carrying a small rusty leathern bag, and paused until the blacksmith began hammering, the red mass sending sparks toward him.\\n\\n\"Are these thy Mother Carey's chickens, Perth? They are always flying in thy wake; birds of good omen, too, but not to all;\u2014look here, they burn; but thou\u2014thou liv'st among them without a scorch.\"\\n\\n\"Because I am scorched all over, Captain Ahab,\" answered Perth, resting on his hammer; \"I am past scorching; not easily can'st thou scorch a scar.\"\\n\\n\"Well, well; no more. Thy shrunk voice sounds too calmly, sanely woeful to me. I am impatient of all misery in others that is not mad. Thou should'st go mad, blacksmith; why dost thou not go mad? How can'st thou endure without being mad?\u2014What wert thou making there?\"\\n\\n\"Welding an old pike-head, sir; there were seams and dents in it.\"\\n\\n\"And can'st thou smoothe almost any seams and dents, never mind how hard the metal, blacksmith?\"\\n\\n\"Aye, sir; all seams and dents but one.\"\\n\\n\"Look ye here, then,\" cried Ahab, leaning with both hands on Perth's shoulders; \"look ye here\u2014_here_\u2014can ye smoothe out a seam like this,\" sweeping one hand across his ribbed brow; \"if thou could'st, glad enough would I lay my head upon thy anvil. Answer!\"\\n\\n\"Oh! that is the one, sir! Said I not all seams and dents but one?\"\\n\\n\"Aye, blacksmith, it is the one; for though thou see'st it here in my flesh, it has worked down into the bone of my skull\u2014_that_ is all wrinkles! But, away with child's play. I, too, want a harpoon made; one that a thousand yoke of fiends could not part. There's the stuff,\" flinging the pouch upon the anvil. \"Look ye, blacksmith, these are the gathered nail-stubbs of the steel shoes of racing horses.\"\\n\\n\"Horse-shoe stubbs, sir? The best and stubbornest stuff we blacksmiths ever work.\"\\n\\n\"Forge me first twelve rods for the shank; then wind, and twist, and hammer them together like the yarns of a tow-line. I'll blow the fire.\"\\n\\nWhen the rods were made, Ahab welded his own iron, rejecting one rod as flawed. As he hammered, the Parsee passed silently and bowed over his head toward the fire, invoking some curse or blessing; but as Ahab looked up, he slid aside.\\n\\n\"That Parsee smells fire like a fusee,\" muttered Stubb from the forecastle, \"and smells of it himself, like a hot musket's powder-pan.\"\\n\\nWhen the shank received its final heat, Perth plunged it hissing into the cask, and the scalding steam shot up into Ahab's bent face.\\n\\n\"Would'st thou brand me, Perth? Have I been but forging my own branding-iron, then?\"\\n\\n\"Pray God, not that; yet I fear something, Captain Ahab. Is not this harpoon for the White Whale?\"\\n\\n\"For the white fiend! Now for the barbs; thou must make them thyself. Here are my razors\u2014the best of steel; make the barbs sharp as the needle-sleet of the Icy Sea. I now neither shave, sup, nor pray till\u2014but here\u2014to work!\"\\n\\nFashioned into an arrowy shape and welded to the shank, the barbs were ready, and Perth cried for the water-cask.\\n\\n\"No, no\u2014no water for that; I want it of the true death-temper. Tashtego, Queequeg, Daggoo! What say ye, pagans! Will ye give me as much blood as will cover this barb?\" A cluster of dark nods replied, Yes. Three punctures were made in the heathen flesh, and the White Whale's barbs were then tempered.\\n\\n\"Ego non baptizo te in nomine patris, sed in nomine diaboli!\" deliriously howled Ahab, as the malignant iron scorchingly devoured the baptismal blood.\\n\\nFitting a hickory pole to the socket, Ahab pressed his foot upon the new tow-line till the rope hummed like a harp-string. The seizings were made; pole, iron, and rope\u2014like the Three Fates\u2014remained inseparable, and Ahab stalked away, his ivory leg and the hickory pole hollowly ringing along every plank. But ere he entered his cabin, a light, unnatural, half-bantering, yet most piteous sound was heard. Oh, Pip! thy wretched laugh, thy idle but unresting eye; all thy strange mummeries not unmeaningly blended with the black tragedy of the melancholy ship, and mocked it!\"\n}\n```",
+    "input_tokens": 7136,
+    "output_tokens": 2594,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 71.927805185318,
+    "stop_reason": "end_turn"
+  }
+}

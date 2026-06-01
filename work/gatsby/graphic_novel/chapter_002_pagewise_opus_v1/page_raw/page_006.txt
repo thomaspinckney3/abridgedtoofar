@@ -1,0 +1,247 @@
+{
+  "style_bible": {
+    "visual_period": "1922 Long Island and Queens, New York; Jazz Age America",
+    "line_and_color": "Inked linework with muted period palette; ash greys and soot blacks for the valley, warmer sepia and lavender for the city, sickly yellows for the billboard, smoky amber and cream for the cramped apartment interior",
+    "lighting": "Overcast ash-diffused daylight in the valley shifting to glowing midday sunshine over Manhattan streets; in the apartment, smoky lamplight thickening as afternoon turns to dusk and finally lit yellow windows above the street",
+    "lettering": "Rectangular cream caption boxes with serif type for Nick's narration; standard oval balloons for dialogue",
+    "recurring_motifs": [
+      "valley of ashes",
+      "the eyes of Doctor T. J. Eckleburg",
+      "trains and tracks",
+      "drifting grey dust",
+      "lavender taxicab",
+      "Airedale puppy",
+      "hen/old-lady photograph",
+      "Simon Called Peter",
+      "yellow apartment windows"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, late twenties, side-parted brown hair, observant eyes",
+      "costume": "Light grey three-piece summer suit, jacket open, tie loose, collar rumpled",
+      "expression_range": "Drowsy, dazed, quietly fascinated, mildly nauseated",
+      "continuity_note": "Drunk and pinned to his chair; serves as the within-and-without observer"
+    },
+    {
+      "name": "Myrtle Wilson",
+      "visual_anchor": "Faintly stout mid-thirties woman, sensuous carriage, dark hair",
+      "costume": "Cream-coloured chiffon afternoon dress, rustling as she leans in",
+      "expression_range": "Confiding, flushed, hungry, theatrically excited",
+      "continuity_note": "Pulls her chair to Nick's; pours out the story of meeting Tom"
+    },
+    {
+      "name": "Mrs. McKee",
+      "visual_anchor": "Shrill, languid woman, handsome but pinched",
+      "costume": "Fussy afternoon dress",
+      "expression_range": "Flattered, languid, sycophantic",
+      "continuity_note": "Receives Myrtle's promised dress gift"
+    },
+    {
+      "name": "Mr. McKee (Chester)",
+      "visual_anchor": "Pale, feminine man, soft-featured",
+      "costume": "Light suit, soft tie; white spot of shaving lather still on cheekbone earlier in the evening",
+      "expression_range": "Asleep, slack, fists clenched as if mid-action",
+      "continuity_note": "Now slumped asleep in a chair; Nick wipes the lather away"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Hulking sandy-haired man, hard mouth",
+      "costume": "Summer suit, collar undone",
+      "expression_range": "Background presence, restless",
+      "continuity_note": "In Myrtle's recollected memory only, in dress suit and patent leather shoes on the train"
+    },
+    {
+      "name": "Airedale puppy",
+      "visual_anchor": "Small Airedale with white feet, blunt face",
+      "costume": "N/A",
+      "expression_range": "Blind, drowsy, suffering",
+      "continuity_note": "Sits on the table groaning in the smoke"
+    }
+  ],
+  "page": {
+    "page_number": 6,
+    "page_summary": "Pinned in his chair, Nick listens as Myrtle drags her chair close and pours out the story of meeting Tom on the train; she pivots to promise her dress to Mrs. McKee and rattle off a list of errands; time slips an hour, and Nick wakes enough to wipe the lather from sleeping McKee's cheek while the puppy groans and the party dissolves into people losing and finding each other in the smoke.",
+    "source_unit_ids": [126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144],
+    "source_word_range": [6871, 7273],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Myrtle pulls her chair close to Nick and begins confiding the story of meeting Tom on the train; Nick is enchanted and repelled at once.",
+        "shot": "medium",
+        "image_prompt": "Smoky amber apartment interior at night. Myrtle in a rustling cream chiffon dress has dragged her chair flush against Nick's, leaning in so her warm breath is almost on his face; Nick in his rumpled grey suit slumps back in his chair, eyes half-lidded and fascinated, hands limp on the armrests. Lamp glow, haze of cigarette smoke, tapestried Versailles upholstery visible behind them. Reserve a clean rectangular area along the top edge for a caption box; keep both faces and Myrtle's gesturing hand well below it.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p1c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.6, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration about being within and without",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "I was within and without, enchanted and repelled by the inexhaustible variety of life—and Myrtle pulled her chair close, her warm breath pouring her first meeting with Tom over me.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Establishes the confessional posture for the train flashback that follows.",
+        "source_unit_ids": [126, 127],
+        "source_word_range": [6871, 6908],
+        "source_anchor": "within and without; Myrtle pulled her chair close",
+        "adaptation_note": "Two-character staging with narration carried in caption, not balloon."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Flashback to the train: Myrtle and Tom in facing seats, his dress suit and patent leather shoes, her stolen looks at the advertisement above his head; on arrival his shirtfront presses her arm and she steps into a taxi thinking only that she cannot live forever.",
+        "shot": "wide",
+        "image_prompt": "Sepia-toned memory panel split visually into two halves divided by a soft vignette. Left half: interior of a 1922 passenger train, two little seats facing each other; younger Myrtle seated opposite a hulking Tom Buchanan in formal dress suit and patent leather shoes, she glancing up shyly at an advertisement above his head, train window dark behind them. Right half: a busy station platform fading into a lavender taxicab at the curb, Tom's white shirtfront brushing Myrtle's arm as they move through the crowd. Warm sepia tones to mark memory. Reserve a wide caption strip across the bottom; keep all faces and the taxi above it.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p2c1",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.04, "y": 0.74, "w": 0.92, "h": 0.22},
+            "speaker": "Myrtle",
+            "speaker_side": "center",
+            "reserved_for": "Myrtle's recalled monologue about the train and taxi",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "bottom_center",
+        "caption": "“The two little seats facing each other—he had on a dress suit and patent leather shoes, and I couldn't keep my eyes off him. In the station his white shirtfront pressed against my arm. When I got into the taxi with him I kept thinking, over and over, you can't live forever, you can't live forever.”",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Sepia memory tonality differentiates from the apartment present.",
+        "source_unit_ids": [128, 129, 130, 131, 132, 133],
+        "source_word_range": [6909, 7058],
+        "source_anchor": "It was on the two little seats... you can't live forever",
+        "adaptation_note": "Compressed flashback held as a single remembered tableau under one continuous caption rather than scattered panels."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Back in the apartment, Myrtle laughs theatrically and turns to Mrs. McKee, promising her the chiffon dress and reeling off her list of things to buy tomorrow.",
+        "shot": "medium",
+        "image_prompt": "Smoky apartment. Myrtle in her cream chiffon turns away from Nick toward Mrs. McKee, who sits on a tapestried settee at right in a fussy afternoon dress, looking up flattered and languid. Myrtle plucks at her own skirt as if already gifting it, mouth open in artificial laughter; Mrs. McKee leans forward to receive. Lamp haze. Reserve a balloon zone in the upper left above Myrtle for her speech and a smaller second slot mid-right near her gesturing hand, both well clear of faces. Keep a thin caption strip at the very top.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p3c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.5, "h": 0.1},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "narration cue",
+            "reading_order": 1
+          },
+          {
+            "id": "p3s1",
+            "kind": "speech",
+            "zone": "top_center",
+            "box": {"x": 0.18, "y": 0.18, "w": 0.42, "h": 0.22},
+            "speaker": "Myrtle",
+            "speaker_side": "left",
+            "reserved_for": "Myrtle offering the dress",
+            "reading_order": 2
+          },
+          {
+            "id": "p3s2",
+            "kind": "speech",
+            "zone": "bottom_left",
+            "box": {"x": 0.06, "y": 0.6, "w": 0.5, "h": 0.32},
+            "speaker": "Myrtle",
+            "speaker_side": "left",
+            "reserved_for": "Myrtle's list of errands",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Her artificial laughter rang through the room.",
+        "dialogue": [
+          {"speaker": "Myrtle", "text": "My dear—I'm going to give you this dress as soon as I'm through with it. I've got to get another one tomorrow."},
+          {"speaker": "Myrtle", "text": "A massage and a wave, and a collar for the dog, and one of those cute little ashtrays where you touch a spring, and a wreath with a black silk bow for mother's grave. I got to write down a list so I won't forget."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Both balloons stay on Myrtle's side; Mrs. McKee only listens.",
+        "source_unit_ids": [134, 135, 136, 137, 138, 139],
+        "source_word_range": [7059, 7168],
+        "source_anchor": "She turned to the photographer's wife... so I won't forget all the things I got to do.",
+        "adaptation_note": "Two Myrtle balloons stacked on the same side to follow same-speaker rule."
+      },
+      {
+        "panel_number": 4,
+        "beat": "An hour vanishes; Nick rouses, wipes the dried lather from the sleeping McKee's cheek while the puppy groans on the table and the rest of the party drifts in and out of the smoke.",
+        "shot": "wide",
+        "image_prompt": "Late-night smoky apartment, hour past nine. Mr. McKee asleep slumped in an armchair, fists clenched in his lap like a posed photograph of a man of action; Nick standing over him in his loosened grey suit, leaning down with a white handkerchief to dab the dried spot of shaving lather from McKee's cheekbone. On the small table beside them the Airedale puppy sits with blind eyes, mouth slightly open in a faint groan, framed by drifting cigarette smoke. In the smoky background, blurred silhouettes of guests passing each other, gesturing, lost and refound. Tapestried furniture, lamplight. Reserve a caption box across the bottom and a small caption at the top right; keep McKee's face, Nick's hand with the handkerchief, and the puppy clear of both.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p4c1",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.5, "y": 0.04, "w": 0.46, "h": 0.14},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "time slip narration",
+            "reading_order": 1
+          },
+          {
+            "id": "p4c2",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.04, "y": 0.76, "w": 0.92, "h": 0.2},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "puppy and drifting guests",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "bottom_center",
+        "caption": "The little dog sat blind in the smoke, groaning faintly, while people disappeared, reappeared, made plans, lost each other, and found each other a few feet away.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Pays off the lather motif by erasing it; sets the dissolved-time mood for the page-7 climax.",
+        "source_unit_ids": [140, 141, 142, 143, 144],
+        "source_word_range": [7169, 7273],
+        "source_anchor": "nine o'clock—almost immediately afterward... found each other a few feet away.",
+        "adaptation_note": "Two captions handle the time jump and the closing dissolution; no dialogue needed."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144],
+    "last_scene": "Deep into the night in the smoky apartment: Myrtle has confided the train-meeting with Tom and promised her dress to Mrs. McKee; an hour has slipped; Nick wipes lather from the sleeping McKee while the Airedale groans and guests drift in and out of the haze.",
+    "active_characters": [
+      "Nick Carraway",
+      "Myrtle Wilson",
+      "Mrs. McKee",
+      "Mr. McKee (Chester)",
+      "Tom Buchanan (in flashback)"
+    ],
+    "character_updates": [
+      "Myrtle has aired her romanticized memory of meeting Tom on the train",
+      "Mr. McKee has passed out asleep with fists clenched; the lather spot is gone from his cheek",
+      "Nick has reached the within-and-without detachment that defines his narration",
+      "Time in the apartment has begun to dissolve, with guests losing and refinding each other"
+    ],
+    "visual_motifs": [
+      "lavender taxicab in memory",
+      "Airedale puppy with blind eyes in smoke",
+      "tapestried Versailles furniture",
+      "Myrtle's rustling cream chiffon dress",
+      "handkerchief wiping away the lather spot",
+      "smoky lamplight and dissolving guests"
+    ],
+    "next_page_needs": [
+      "Catherine's claims that Tom's wife is Catholic and won't divorce; her gossip about Daisy",
+      "Mr. McKee's photographic 'studies' surfacing as concrete dialogue",
+      "Tom breaking Myrtle's nose with the flat of his hand when she chants Daisy's name",
+      "Blood on the tapestried furniture; Nick leaving with McKee; the elevator and the dawn at Pennsylvania Station"
+    ]
+  }
+}

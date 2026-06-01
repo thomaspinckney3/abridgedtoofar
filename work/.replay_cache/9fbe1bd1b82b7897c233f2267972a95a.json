@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:41:23",
+  "key": "9fbe1bd1b82b7897c233f2267972a95a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through each draft chapter carefully, applying only the seven structural tests and the gate test, and ignoring authorized cuts.\n\n---\n\n**Ch 109 draft \u2014 passage-by-passage check**\n\n- *\"We spoke the London whaler Samuel Enderby, whose genial Captain Boomer, one-armed from Moby Dick\u2026\"* \u2014 Captain Boomer is on the authorized minor-character removal list. His name survives in the draft but his role/identity is glossed in the same sentence (\"one-armed from Moby Dick, told how the White Whale stove him and warned us off\"), so a reader can place him. Not a finding.\n- All other sentences parse, have clear antecedents, and no broken pivots. The chapter is structurally clean.\n\n---\n\n**Ch 110 draft \u2014 passage-by-passage check**\n\n- *\"Stubb wants vermillion stars on the blade of every oar; the carpenter symmetrically supplies the constellation.\"* \u2014 \"Stubb\" is a principal, continuously present character. Not a finding.\n- The Sheffield contrivances simile: *\"He was like one of those Sheffield contrivances, multum in parvo, assuming the exterior of a common pocket knife, yet containing blades, screw-drivers, cork-screws, tweezers, awls, pens, rulers.\"* The source then adds \"nail-filers, countersinkers\" and, crucially, the punchline that completes the simile's point: *\"So, if his superiors wanted to use the carpenter for a screw-driver, all they had to do was to open that part of him, and the screw was fast: or if for tweezers, take him up by the legs, and there they were.\"* The draft carries this punchline in the very next sentence: *\"If his superiors wanted a screw-driver, they had but to open that part of him; or for tweezers, take him up by the legs.\"* The punchline is present; the simile closes. Not a finding.\n- All sentences parse; antecedents are unambiguous throughout; no broken pivots; no mid-scene jumps; no unglossed names.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 6610,
+    "output_tokens": 509,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 11.880628824234009,
+    "stop_reason": "end_turn"
+  }
+}

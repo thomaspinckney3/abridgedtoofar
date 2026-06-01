@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:13:50",
+  "key": "30d80f1ca51a09871d1e75ed0858312d",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters carefully, applying each test in order, and checking only for structural damage \u2014 not mere compression.\n\n---\n\n**Ch 039 draft checks**\n\nThe draft is largely faithful in structure. Tom's vision, the Legree confrontations, the Cassy midnight scene, and Tom's counsel all survive intact. One candidate worth examining:\n\n- \"Sometimes he saw Cassy, and now and then, when summoned to the house, the dejected Emmeline\" \u2014 Emmeline is named here with no prior introduction in the draft. In the source, Emmeline appears earlier in the narrative (she is introduced as a character Legree purchased alongside Cassy). In the preceding draft chapter (Ch 038, not provided here), Emmeline would need to have been introduced. Since she is referred to as \"the dejected Emmeline\" with a definite article and no appositive, this is a potential unglossed-name issue. However, Emmeline is a continuous, non-authorized-cut character who appears prominently in Ch 040 draft (the very next chapter), and the source of Ch 039 likewise introduces her without fresh gloss at this point \u2014 she is a principal figure in the escape subplot. She is not on the authorized minor-character removal list. The question is whether the *preceding draft chapter* established her. Since Ch 038 is not provided, I cannot confirm her establishment there, but she is not a minor/removable character \u2014 she is a continuing figure in the main plot thread. This does not meet the threshold for a valid finding.\n\n- \"the poor mulatto woman\" \u2014 the source makes clear this refers to Emmeline; the draft uses a descriptor (\"the poor mulatto\") that a reader can connect to Emmeline from context (she was just named two paragraphs above). Not a finding.\n\n- Cassy's midnight scene: \"Didn't I tell you that evil spirits followed me?\" \u2014 in the source this line has a prior reference point established much earlier in the narrative (Cassy's biography/history). The draft has no instance of Cassy saying this previously *within the draft*, meaning the reader has no antecedent for \"Didn't I tell you.\" This is a dangling reference to a prior statement that was cut. However, the authorized cut list includes \"Cassy's full autobiography (the 'Quadroon's Story')\" from Ch 035. If the earlier \"telling\" was in that cut material, the seam is an authorized residue. The phrase reads as a rhetorical flourish \u2014 \"evil spirits follow me\" \u2014 rather than a strict callback requiring a prior textual statement to parse. A competent reader understands this as Cassy asserting a belief about herself, not as a broken referential chain. Not a valid finding.\n\n**Ch 040 draft checks**\n\n- **\"One of the overseers will be sure to see us.\"** In the source, Cassy says \"Sambo or Quimbo will be sure to see us.\" The draft replaces this with \"One of the overseers.\" In the source's escape plan explanation, the named enforcers Sambo and Quimbo are the ones who will see them and raise the alarm, then be part of the blundering pursuit. The draft substitutes a generic \"one of the overseers.\" This is a deliberate compression choice, not a structural break \u2014 readers understand the plan. Not a finding.\n\n- **\"asked one, to whom the master brought out a rifle.\"** In the source this is: \"'Mas'r, shall we shoot 'em, if can't cotch 'em?' said Sambo, to whom his master brought out a rifle.\" The draft drops \"Sambo\" (authorized removal) and substitutes \"asked one.\" The pronoun/demonstrative issue: \"to whom the master brought out a rifle\" \u2014 the antecedent \"one\" is present in the same sentence. This parses. Not a finding.\n\n- **\"It was not an underling, but Legree himself, pursuing with violent execrations.\"** The source reads: \"It was not Sambo, however, but Legree.\" The draft replaces \"Sambo\" (authorized removal) with \"an underling.\" This is a clean substitution; readers understand the contrast. Not a finding.\n\n- **\"Of late, a partial insanity had given a weird, unsettled cast to her words and manner that harassed him the more.\"** In the source, this paragraph about Cassy's influence over Legree is preceded by the \"No one is so thoroughly superstitious as the godless man\" passage (an authorized digression removal from Ch 040). The source's paragraph about Cassy's influence begins with \"Legree had had the slumbering moral elements in him roused by his encounters with Tom,\u2014roused, only to be resisted by the determinate force of evil; but still there was a thrill and commotion of the dark, inner world, produced by every word, or prayer, or hymn, that reacted in superstitious dread.\" This transitional paragraph is cut in the draft. The draft then says \"Of late, a partial insanity had given a weird, unsettled cast to her words and manner that harassed him the more.\" The word \"more\" is comparative \u2014 it implies a pre-existing level of harassment that has now increased. The source's cut paragraph established the base level of Legree's superstitious dread that made Cassy's influence especially potent. Without it, \"harassed him the more\" dangles: more than what? The draft has already said \"he found himself encompassed by [a creeping horror], as by an atmosphere,\" which partially establishes the baseline. The \"more\" is marginally coherent by reference to that preceding sentence. Borderline, but a competent reader can resolve \"the more\" as meaning \"increasingly\" or \"yet more\" given the surrounding context. I'll apply the gate test strictly: would a reader be *genuinely confused*, or just reading a slightly less supported comparative? The comparative is weak but not unresolvable. Not a valid finding.\n\n- **\"A night or two after, Legree sat in the old sitting-room...\"** \u2014 \"a night or two after\" \u2014 after what? In the source, this follows the bottle-in-the-knot-hole paragraph and implies a few nights after Cassy installed the device and the servants started hearing it. The draft preserves both those passages immediately before, so the temporal anchor is intact. Not a finding.\n\nAfter thorough review, I find no sentences in either draft that fail the gate test \u2014 no competent reader would be *genuinely confused or misled* by any draft sentence. The compression has been careful, and referential seams that remain are either resolvable from immediate context or are residues of authorized cuts.\n\n```json\n[]\n```",
+    "input_tokens": 22435,
+    "output_tokens": 1528,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 40.172205209732056,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T15:54:57",
+  "key": "c9a840e54ae8740fb46b34c86c7ca5f2",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f8998d99a396a8470a1b715024aa3d15",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter's draft carefully, applying the gate test to every candidate before flagging it.\n\n---\n\n**Ch 007 draft \u2014 candidate 1**\n\nDraft: `\"About Gatsby,\" he corrected himself when Jordan laughed at \"medium.\"`\n\nIn the source, Tom's confused reaction to Jordan's joke about a \"medium\" is fully staged: Jordan asks \"Do you mean you've been to a medium?\", Tom is confused, they laugh, and he clarifies \"About Gatsby!\" Only then does the exchange make sense. In the draft, the word \"medium\" appears in Tom's self-correction without Jordan's triggering question ever being spoken. The reader sees Tom correcting himself for having apparently said something about a medium \u2014 but no such remark exists in the draft. The referent of `\"medium\"` is entirely missing from the draft text.\n\n**Gate test**: A reader with no source access reads Tom saying he \"corrected himself when Jordan laughed at 'medium'\" \u2014 but Jordan has not laughed at anything in the draft, and the word \"medium\" has not appeared. The reader is genuinely confused about what Tom said that required correction and what Jordan laughed at.\n\n---\n\n**Ch 007 draft \u2014 candidate 2**\n\nDraft: `The afternoon's heat had broken; dusk gathered in the valley of ashes. In the garage office Wilson had locked his wife upstairs and spoke, in a colourless way turned hard and strange, about moving West.`\n\nThis paragraph opens the Myrtle-death sequence. In the source this is a sustained Michaelis point-of-view scene (authorized-removal character), so the Michaelis material is legitimately cut. The question is whether \"Wilson had locked his wife upstairs\" is a mid-scene jump or broken pivot. The draft has just said \"So we drove on toward death through the cooling twilight\" \u2014 a chapter-break line. The next sentence jumps back in time to events at the garage that the draft has not previously narrated from Wilson's/Michaelis's perspective. The definite construction \"Wilson had locked his wife upstairs\" treats the locking as established, but neither the draft's Ch 007 nor the draft's Ch 006 has established it. In the source it was established by Michaelis's scene. That scene was cut (Michaelis is an authorized removal), but the information it contained \u2014 the locking \u2014 is smuggled in here as a known fact.\n\n**Gate test**: Does \"Wilson had locked his wife upstairs\" confuse the reader? The reader has seen Wilson at the garage pump, sick, saying his wife wants to go West. The statement that he \"locked his wife upstairs\" arrives without any preparation. However \u2014 checking the authorized-cut list: \"Michaelis\" is an authorized minor-character removal, and his scene is the source of this information. The seam is a direct residue of that authorized cut. **Rejected as an authorized-cut residue.**\n\n---\n\n**Ch 007 draft \u2014 candidate 3**\n\nDraft: `\"About Gatsby,\" he corrected himself when Jordan laughed at \"medium.\"`\n\nReturning to confirm this one is not an authorized-cut residue. The Biloxi detour is an authorized subplot removal, but the medium exchange is not part of any authorized cut \u2014 it is part of the Tom-in-the-car scene that otherwise survived. The drafter compressed the exchange but left only Tom's self-correction without its trigger.\n\nThis is a genuine **unattributed dialogue exchange** / **dangling reference**: `\"medium\"` has no antecedent in the draft.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"7\",\n    \"draft_passage\": \"\\\"About Gatsby,\\\" he corrected himself when Jordan laughed at \\\"medium.\\\"\",\n    \"source_has\": \"Jordan asks \\\"Do you mean you've been to a medium?\\\" Tom is confused and laughs before clarifying \\\"About Gatsby!\\\" \u2014 the word 'medium' is introduced by Jordan's question, which the draft cut entirely.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: Tom 'corrects himself' for apparently having used the word 'medium,' but no such remark appears anywhere in the draft, and Jordan has not laughed at anything; the referent of the correction is missing, not merely less ornamented.\"\n  }\n]\n```",
+    "input_tokens": 33903,
+    "output_tokens": 1002,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 24.796200275421143,
+    "stop_reason": "end_turn"
+  }
+}

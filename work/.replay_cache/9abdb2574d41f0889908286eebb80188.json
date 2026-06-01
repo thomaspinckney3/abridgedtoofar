@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:36:15",
+  "key": "9abdb2574d41f0889908286eebb80188",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, checking every sentence against the seven structural tests, keeping the gate test in mind, and respecting all authorized cuts.\n\n---\n\n**Ch 050 draft \u2014 scan**\n\nThe chapter is self-contained and parses cleanly. No dangling pronouns, no broken pivots, no missing glosses for surviving material.\n\n**Ch 051 draft \u2014 scan**\n\n*Passage 1 \u2014 \"All ready there, Fedallah?\" cried Ahab to the white-turbaned old man.*\nFedallah is introduced here by name for the first time in the draft. The draft's preceding chapter (Ch 050) ends with \"five dusky phantoms that seemed fresh formed out of air\" \u2014 no name given. The current chapter's opening paragraph describes \"the figure at its bows\" but never supplies the name Fedallah before Ahab shouts it. Does the local sentence itself supply a role/appositive? It calls him \"the white-turbaned old man\" \u2014 that descriptor does connect back to \"a glistening white plaited turban\" two sentences earlier. The reader can thus reconstruct who \"Fedallah\" is from the local paragraph. This is borderline, but the appositive \"the white-turbaned old man\" in the same sentence does provide an identifier. Not a finding.\n\n*Passage 2 \u2014 Stubb's soliloquy: \"as soon as I clapt eye on 'em. They were hidden down there.\"*\nThe source has Stubb add \"as Dough-Boy long suspected\" \u2014 Dough-Boy is an authorized removal, so the residual seam (\"They were hidden down there\") is an expected residue of an authorized cut. Not a finding.\n\n*Passage 3 \u2014 \"The advent of these outlandish strangers had awakened a superstitious amazement; but Stubb's confident way of accounting for them freed the men from surmisings\u2026\"*\nThe source's version of this pivot explains that \"Archy's fancied discovery having some time previous got abroad among them\" had already \"in some small measure prepared them for the event\" \u2014 and only THEN says Stubb's account freed them. The draft collapses this to a simple \"but,\" making it a direct contrast: amazement \u2192 Stubb's words freed them. Archy is a named character who appears in the source but was cut from the draft. Does the pivot actually break? The draft sentence reads: superstitious amazement arose, BUT Stubb's confident way freed them. This is a perfectly parseable two-sided contrast; neither side is missing. The dropped Archy material was an additional explanatory cause, but the logical pivot \"amazement \u2192 but freed by Stubb\" still holds on both sides. Not a finding under test 3.\n\n*Passage 4 \u2014 \"After many failures Starbuck contrived to ignite the lamp in the lantern; then stretching it on a waif pole, he handed it to Queequeg as the standard-bearer of this forlorn hope.\"*\nThe source establishes the waif pole in this same passage (\"stretching it on a waif pole\"). The waif pole is introduced here, not in a prior chapter. No mid-scene jump (test 6 requires the reference to arrive at a chapter opening pointing back to something dropped from the *previous* chapter). Not a finding.\n\n*Passage 5 \u2014 Daggoo/Flask exchange: \"Good a mast-head as any, sir. Will you mount?\" / \"That I will, and thank ye very much, my fine fellow; only I wish you fifty feet taller.\"*\nDaggoo is named in the draft. Is Daggoo a minor character without a local identifier? Daggoo is one of the three principal harpooneers, present throughout the novel. He is not on the authorized minor-character removal list. He is a continuously present principal character. No finding under the explicit rejections rule.\n\n*Passage 6 \u2014 \"He withdrew his pipe from his hatband, where he always wore it aslant like a feather, and had hardly ignited his match when Tashtego, his harpooneer, dropped like light from his erect attitude\u2026\"*\nStubb is the subject. \"He withdrew his pipe\" \u2014 antecedent is Stubb, last named in the immediately preceding paragraph. Clean.\n\nAfter a thorough pass, I find **no valid structural coherence failures** in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 13553,
+    "output_tokens": 1018,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 24.95078706741333,
+    "stop_reason": "end_turn"
+  }
+}

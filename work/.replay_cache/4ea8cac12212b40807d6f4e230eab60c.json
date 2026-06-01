@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-05T15:25:17",
+  "key": "4ea8cac12212b40807d6f4e230eab60c",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "4afd6d49d21d5bdbbae4b1824018eb18",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\"name\": \"Joseph (Joe) Stickney\", \"appearances_summary\": \"A Paris companion in 1901; shows up in Chapter 029 as Adams\u2019s salon-mate and co-parent (with Bay Lodge) of the mock 'Conservative Christian Anarchists.'\", \"reason_removable\": \"Anecdotal salon company for color; cutting him does not change the diplomatic arc, the Virgin/Dynamo argument, or Adams\u2019s core circle.\"},\n    {\"name\": \"Bay Lodge\", \"appearances_summary\": \"Appears in Chapter 029 as Adams\u2019s foil in the tongue\u2011in\u2011cheek 'Conservative Christian Anarchists' and again socially in Chapter 032.\", \"reason_removable\": \"He functions as a humorous counterweight rather than a driver of Adams\u2019s education or Hay/Roosevelt politics; Henry Cabot Lodge (the father) remains essential and is distinct.\"},\n    {\"name\": \"Mrs. Bay Lodge (Bessie)\", \"appearances_summary\": \"A social presence in Paris (029) and at Washington dinners (032).\", \"reason_removable\": \"Purely atmospheric; removing her does not affect any theme or plot beat.\"},\n    {\"name\": \"Mounet\u2011Sully\", \"appearances_summary\": \"Name\u2011checked as part of Paris theatre marathons in Chapter 029.\", \"reason_removable\": \"One\u2011scene cultural color, irrelevant to the educational through\u2011line.\"},\n    {\"name\": \"Ternina\", \"appearances_summary\": \"Invoked in Chapter 029 as the Wagnerian voice of doom in New York.\", \"reason_removable\": \"Operatic garnish; dropping her leaves Wagner/Baireuth points intact if those pages are trimmed.\"},\n    {\"name\": \"Frau Wagner\", \"appearances_summary\": \"Briefly appears in Chapter 029 during Adams\u2019s Baireuth remarks.\", \"reason_removable\": \"A passing courtesy mention with no structural consequence.\"},\n    {\"name\": \"Mr. Cameron\", \"appearances_summary\": \"Host who takes Inverlochy and gathers friends in Chapter 031.\", \"reason_removable\": \"Logistical background for a summer that yields no essential turn in the argument.\"},\n    {\"name\": \"Reynolds Hitt\", \"appearances_summary\": \"Provides Adams with a Paris attic in Chapter 031.\", \"reason_removable\": \"Incidental facilitator; his absence doesn\u2019t affect what Adams learns or concludes.\"},\n    {\"name\": \"Prince Khilkoff\", \"appearances_summary\": \"A Russian official Adams cites in Chapters 029 and 032 while weighing Russian modernization.\", \"reason_removable\": \"Supplementary to the Russia\u2011as\u2011inertia thesis, which reads clearly without his name.\"},\n    {\"name\": \"Vyacheslav von Plehve\", \"appearances_summary\": \"His assassination is noted in Chapter 034 while Adams tours French churches.\", \"reason_removable\": \"A topical aside that does not alter Adams\u2019s Russian\u2011inertia conclusion or his dynamic theory.\"},\n    {\"name\": \"Baron Hermann von Holleben\", \"appearances_summary\": \"Recalled German ambassador in Chapter 032, mentioned to frame the Kaiser\u2019s Washington pivot.\", \"reason_removable\": \"Fine grain in a diplomatic vignette; the 'Germany tilts Atlantic\u2011ward' point stands without him.\"},\n    {\"name\": \"Miss Chamberlain\", \"appearances_summary\": \"Seated near Adams at a White House supper in Chapter 034.\", \"reason_removable\": \"A seating\u2011chart detail with no bearing on themes or plot.\"},\n    {\"name\": \"John La Farge\", \"appearances_summary\": \"Credited in Chapter 034 for schooling Adams\u2019s eye on stained glass.\", \"reason_removable\": \"Nice provenance for Adams\u2019s medieval eye, but cutting the name does not weaken the Virgin/Dynamo contrast.\"},\n    {\"name\": \"Augustus Saint\u2011Gaudens and John Singer Sargent\", \"appearances_summary\": \"Appear in Chapter 034 as artists who model/paint Hay near the end.\", \"reason_removable\": \"Elegiac adornment; Hay\u2019s decline and role in the story remain clear without their cameos.\"}\n  ],\n  \"subplots\": [\n    {\"name\": \"The 'Conservative Christian Anarchists'\", \"chapter_span\": \"Ch 029\", \"reason_removable\": \"A playful, self\u2011invented two\u2011man 'party' with Bay Lodge that satirizes Adams\u2019s conflicting impulses; amusing, but it neither advances the diplomatic education nor the Virgin/Dynamo argument.\"},\n    {\"name\": \"Baireuth detour and Wagner talk\", \"chapter_span\": \"Ch 029\", \"reason_removable\": \"Extended Baireuth/Wagner scene-setting can go without loss; Adams\u2019s modern/archaic tension is established elsewhere more directly.\"},\n    {\"name\": \"Highlands\u2013Switzerland\u2013Paris shuffle (Inverlochy\u2013Carlsruhe\u2013Avenue du Bois refuge)\", \"chapter_span\": \"Ch 031\", \"reason_removable\": \"A travel shuffle that supplies mood but no indispensable turning point.\"},\n    {\"name\": \"The Washington dinner spar over 'the American woman' and who's a 'failure'\", \"chapter_span\": \"Ch 032\", \"reason_removable\": \"Entertaining society theater that launches the long sex\u2011inertia essay; the book\u2019s plot and principal themes read cleanly without this set piece.\"},\n    {\"name\": \"The St. Louis Exposition junket\", \"chapter_span\": \"Ch 034\", \"reason_removable\": \"A vivid World\u2019s Fair postcard that overlaps with already\u2011established Exposition/dynamo imagery; the Chicago/Paris Exposition frame in the synopsis suffices.\"},\n    {\"name\": \"White House supper and seating details\", \"chapter_span\": \"Ch 034\", \"reason_removable\": \"Supper chatter and place\u2011cards add flavor but no essential development.\"},\n    {\"name\": \"French cathedral glass crawl (Troyes, Beauvais, etc.) around the Plehve telegram\", \"chapter_span\": \"Ch 034\", \"reason_removable\": \"A gorgeous catalogue of windows; the Virgin\u2019s force and the Virgin/Dynamo contrast are already built and can be preserved in briefer strokes.\"}\n  ],\n  \"digressions\": [\n    {\"chapter_ids\": [\"029\"], \"topic\": \"Home-brewed 'conservative Christian anarchy' (Hegel\u2013Schopenhauer riffs; Kropotkin/Reclus put\u2011downs).\", \"reason_removable\": \"A comic/philosophic curlicue that doesn\u2019t alter the education arc or the force/multiplicity thesis.\"},\n    {\"chapter_ids\": [\"029\"], \"topic\": \"Ice-cap and Norse ancestry meditations tying Russia to glacial inertia.\", \"reason_removable\": \"Striking image\u2011work, but the book makes the Russia\u2011as\u2011inertia point elsewhere without the extended Arctic conceit.\"},\n    {\"chapter_ids\": [\"031\"], \"topic\": \"Scholastic metaphysics and pantheism (Thomas Aquinas, unity vs. multiplicity) to the brink of theology.\", \"reason_removable\": \"Overlong for an abridgment; the Virgin/Unity axis can be kept in a much shorter bridge to the modern 'dynamo' without the scholastic labyrinth.\"},\n    {\"chapter_ids\": [\"031\"], \"topic\": \"New psychology (split personalities; the bicycle\u2011rider analogy; subconscious chaos).\", \"reason_removable\": \"Engaging speculation but tangential to the diplomatic and dynamo/virgin through\u2011line.\"},\n    {\"chapter_ids\": [\"030\"], \"topic\": \"Bostonitis and the exhaustive portrait of Henry Cabot Lodge as type.\", \"reason_removable\": \"A brilliant character essay that can be pruned for pace without weakening Roosevelt/Hay\u2019s roles or the larger argument about force.\"},\n    {\"chapter_ids\": [\"032\"], \"topic\": \"The 'inertia of sex' essay (bees, maternity axis, social statistics he wishes he had).\", \"reason_removable\": \"A thematic side\u2011trail not required by the synopsis\u2019s plot beats; it can be compressed or cut without harming the central metaphor or diplomatic story.\"},\n    {\"chapter_ids\": [\"034\"], \"topic\": \"St. Louis Exposition as Arabian nightfall of light.\", \"reason_removable\": \"Beautiful, but duplicative of the Exposition/dynamo imagery already established in Chicago and Paris.\"},\n    {\"chapter_ids\": [\"034\"], \"topic\": \"Sixteenth\u2011century stained glass set\u2011pieces (Tree of Jesse, Troyes tableaux) and the Plehve aside.\", \"reason_removable\": \"Deep art\u2011historical texture that doesn\u2019t change the Virgin/Dynamo logic in an abridgment.\"}\n  ],\n  \"skippable_chapters\": []\n}",
+    "input_tokens": 49095,
+    "output_tokens": 7604,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 96.24002408981323,
+    "stop_reason": "stop"
+  }
+}

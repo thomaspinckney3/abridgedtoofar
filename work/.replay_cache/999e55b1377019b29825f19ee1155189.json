@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:39:58",
+  "key": "999e55b1377019b29825f19ee1155189",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test.\n\n**Ch 030 draft \u2014 checking for structural damage**\n\nThe authorized removals of Adolph, Rosa, Jane, Mammy mean those characters' names should not appear \u2014 and indeed the draft replaces them with descriptors (\"the pretty young quadroon girl,\" \"a fellow-servant,\" \"an attendant\"). Let me check whether those descriptors create any coherence problems.\n\n- \"the pretty young quadroon girl\" \u2014 introduced by context of the tap at the door, parseable.\n- \"a fellow-servant, crest-fallen since his master's death, drew near in fear\" \u2014 this replaces Adolph. The descriptor is self-contained. Parseable.\n- \"the next day, Tom, with the fellow-servant and some half a dozen others\" \u2014 refers back to \"a fellow-servant\" from the same chapter. Parseable.\n\nNo issues found in Ch 030.\n\n**Ch 031 draft \u2014 checking for structural damage**\n\n\"A day or two after, Tom and about half a dozen others of the St. Clare estate were turned over to the loving kindness of Mr. Skeggs...\" \u2014 \"A day or two after\" what? The previous draft chapter ended with Tom being marched to a slave-warehouse. The source says \"a day or two after the conversation between Marie and Miss Ophelia\" \u2014 but the draft's preceding chapter ended at the warehouse march, so \"a day or two after\" connects fine temporally. No mid-scene jump.\n\n\"A burly wag of the place, full of trick and grimace, came and poked his jests into the ribs of a scented, cream-colored valet, and a scuffle broke out\" \u2014 Sambo and Adolph are authorized removals. The draft anonymizes both. Parseable on its own.\n\n\"the scented valet was knocked off, at a good sum, to the young gentleman who had fancied him\" \u2014 \"the young gentleman who had fancied him\": the draft has the young exquisite say \"I was wanting a valet... I heard St. Clare's lot was going\" and his companion warns him off, but the draft never has the first exquisite say \"I buy him, that's flat!\" as the source does. However, \"fancied him\" is inferable from \"I was wanting a valet.\" A reader would understand. Not a structural failure by the gate test.\n\n\"He paused before the scented valet; spat a discharge of tobacco-juice upon the well-blacked boots; umph!\u2014and walked on.\" \u2014 The source has \"He paused a moment before Dolph; then spitting a discharge of tobacco-juice on his well-blacked boots, and giving a contemptuous umph, he walked on.\" This is fine; the draft refers to \"the scented valet\" established earlier. Parseable.\n\nNow let me check the Mr. Skeggs introduction. The source introduces him by name and role in Chapter 31. The draft does the same: \"the loving kindness of Mr. Skeggs, the keeper of a depot on \u2014\u2014 street.\" So Skeggs is glossed on first appearance. Fine.\n\nLet me re-examine Ch 031 more carefully for the \"fellow-servant\" from Ch 030 who is marched with Tom. The Ch 030 draft ends: \"The next day, Tom, with the fellow-servant and some half a dozen others, was marched down to a slave-warehouse.\" Ch 031 draft says \"Tom and about half a dozen others of the St. Clare estate were turned over.\" The fellow-servant disappears \u2014 but Adolph is an authorized removal, so any residual seam from dropping Adolph is expected.\n\nLet me check the \"Mr. Skeggs\" name at the end of the men's-room scene. After introducing him with role (\"Mr. Skeggs, the keeper of a depot\"), he is later referred to again: \"the worthy Mr. Skeggs is busy and bright.\" This is fine \u2014 he was introduced with his role.\n\nEverything appears structurally sound in both drafts.\n\n```json\n[]\n```",
+    "input_tokens": 20055,
+    "output_tokens": 938,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 21.799917936325073,
+    "stop_reason": "end_turn"
+  }
+}

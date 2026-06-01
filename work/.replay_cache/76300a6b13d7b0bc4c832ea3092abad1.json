@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:40:07",
+  "key": "76300a6b13d7b0bc4c832ea3092abad1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying all seven tests and the gate test.\n\n---\n\n**Ch 074 draft \u2014 scan**\n\nThe draft is generally clean. \"The stranger waved his hand\" \u2014 antecedent for \"the stranger\" is Mayhew, who has just been named in context; no problem. \"Macey, the chief mate\" \u2014 named with role appositive, fine. The cutting-spade pole handling is slightly compressed but parses. No structural failures found.\n\n---\n\n**Ch 076 draft \u2014 scan**\n\n**Candidate 1:** Flask's dialogue line about Fedallah's tusk.\n\nDraft: *\"Did you ever notice how that tusk of his\u2014a long tooth, carved somehow into a snake's head\u2014is a sort of omen?\"*\n\nSource: *\"Did you ever notice how that tusk of his is a sort of carved into a snake's head, Stubb?\"* \u2014 followed by Stubb's reply about Fedallah being the devil.\n\nThe draft adds \"a long tooth, carved somehow into a snake's head\" as a gloss (actually an improvement), and then ends with \"is a sort of omen?\" \u2014 the source doesn't say \"omen\"; it just ends the question about the snake-carving, to which Stubb responds. But the draft's question still parses and conveys the same suspicion. Not a structural failure.\n\n**Candidate 2:** Stubb's speech \u2014 logical sequence within compressed monologue.\n\nDraft: *\"The devil is a curious chap, and a wicked one. They say he went a sauntering into the old flag-ship once\u2026 'Take him,' says the governor\u2026 But I never look at Fedallah at all; if ever I get a chance of a dark night, and he standing hard by the bulwarks, and no one by\u2014look down there, Flask\u2014Aye, will I!\"*\n\nIn the source, Stubb first says \"I never look at Fedallah at all; if ever I get a chance of a dark night\u2026\" *before* the flag-ship story. In the draft, the flag-ship story comes first, then the dark-night threat is appended as a non-sequitur after \"I'll eat this whale in one mouthful.\" The compressed monologue stitches two passages together out of order, making \"But I never look at Fedallah at all\" a **broken pivot**: the \"But\" implies a contrast with something just said, but what was just said was the flag-ship anecdote, not the claim that Stubb looks at Fedallah. In the source the \"But\" is not present in this reordered position \u2014 the contrast was between \"Sink him! I never look at him at all\" and what follows. Here the \"But I never look at Fedallah at all\" is spliced after a different passage, creating an incoherent pivot.\n\nGate test: A reader would genuinely be confused \u2014 Stubb just told the flag-ship story and concluded with the cholera joke, then suddenly says \"But I never look at Fedallah at all\" as if contradicting something, but nothing in the immediately preceding draft text says he does look at Fedallah. It reads as one side of a missing two-sided structure.\n\n**Candidate 3:** \"Stubb, you boasted of giving Fedallah a sea-toss; if he's going to live for ever, what good will pitching him overboard do?\"\n\nIn the source, this is Flask's line after a long exchange about Fedallah's age (the mainmast/hoops exchange), which established that Fedallah is immortally old. That exchange was cut. The phrase \"if he's going to live for ever\" now lacks its premise \u2014 the reader hasn't seen the immortality established in this chapter's draft dialogue (only Stubb's devil-talk, not the specific age question). However, Stubb did say \"does the devil live for ever; who ever heard that the devil was dead?\" in the source \u2014 but that exchange is also cut from the draft. Flask's compressed question assumes the reader knows Fedallah lives forever, which was established only in cut material.\n\nGate test: The draft has Stubb say \"the devil lives for ever\" implicitly through the devil-identification framework, and Flask's question \"if he's going to live for ever\" can be parsed as following from the devil=Fedallah thread. A competent reader can follow this. Not a structural failure \u2014 just less scaffolded.\n\n**Candidate 4:** *\"But Stubb, you boasted of giving Fedallah a sea-toss\"* \u2014 Flask says Stubb \"boasted\" of this earlier in the conversation. In the source, Stubb said explicitly: *\"if ever I get a chance of a dark night, and he standing hard by the bulwarks, and no one by; look down there, Flask\u2014pointing into the sea\u2026\u2014Aye, will I!\"* In the draft this threat appears in the immediately preceding paragraph (the reordered monologue), so Flask's \"you boasted\" does have an antecedent in the draft. Not a broken pivot.\n\n---\n\n**Final finding:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"But I never look at Fedallah at all; if ever I get a chance of a dark night, and he standing hard by the bulwarks, and no one by\u2014look down there, Flask\u2014Aye, will I!\",\n    \"source_has\": \"In the source this 'I never look at him at all' opens Stubb's speech about Fedallah, contrasting with the preceding 'Sink him!'\u2014before the flag-ship story. In the draft it is appended after the flag-ship/cholera anecdote, making 'But I never look at Fedallah at all' a contrast with nothing in the immediately preceding text.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: Stubb has just finished the flag-ship story and the cholera punchline, then abruptly says 'But I never look at Fedallah at all'\u2014the 'But' implies a contradiction of a preceding claim that Stubb watches or engages with Fedallah, yet no such claim appears in the draft; it is one side of a two-sided contrast whose other side was cut.\"\n  }\n]\n```",
+    "input_tokens": 12273,
+    "output_tokens": 1484,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 32.13639497756958,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ts": "2026-04-22T22:16:17",
+  "key": "1a83ea19733071554acaf90b7631ef67",
+  "model": "anthropic:claude-sonnet-4-6",
+  "response": {
+    "text": "[\n  {\"id\": \"001\", \"status\": \"diegetic\", \"reason\": \"Chapter I narrative prose, Nick's opening monologue\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Chapter II narrative prose, valley of ashes\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter III narrative prose, Gatsby's parties\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter IV narrative prose, Gatsby's guests and past\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter V narrative prose, Gatsby and Daisy reunite\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter VI narrative prose, Gatsby's origins\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter VII narrative prose, climactic confrontation\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII narrative prose, Gatsby's death\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter IX narrative prose, aftermath and conclusion\"}\n]",
+    "input_tokens": 3585,
+    "output_tokens": 283,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 4.324580907821655,
+    "stop_reason": "end_turn"
+  }
+}

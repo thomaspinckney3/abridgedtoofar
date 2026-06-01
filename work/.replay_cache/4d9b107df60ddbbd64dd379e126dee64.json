@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:35:11",
+  "key": "4d9b107df60ddbbd64dd379e126dee64",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through the draft of Ch 044 and Ch 045 systematically, applying only the seven structural tests and the gate test, and respecting all authorized cuts.\n\n---\n\n**Ch 045 \u2014 \"To the sailor beholding the scenery of the Antarctic seas\u2026\"**\n\nThe source presents two parallel, complete illustrations: First, the mariner hearing breakers vs. the milky sea (both complete); Second, the native Indian/backwoodsman vs. the sailor in the Antarctic (both complete). The draft keeps the First illustration intact and keeps the sailor's Antarctic half of the Second illustration, but it drops the native Indian/backwoodsman half that the source used as the foil. More critically, the draft's sentence is structurally broken: \"To the sailor beholding the scenery of the Antarctic seas\u2014where at times\u2026views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses.\" This sentence has no main verb/main clause\u2014\"To the sailor beholding\" introduces a prepositional/participial phrase that is never completed by a predicate. The sentence is non-parseable on its own.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"To the sailor beholding the scenery of the Antarctic seas\u2014where at times, by some infernal trick of legerdemain in the powers of frost and air, he, shivering and half shipwrecked, instead of rainbows speaking hope and solace to his misery, views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses.\",\n    \"source_has\": \"Not so the sailor, beholding the scenery of the Antarctic seas; where at times\u2026views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses. [Full grammatical sentence with 'Not so the sailor' as the subject complement of a contrast structure]\",\n    \"gate_test_answer\": \"A reader genuinely cannot parse this sentence: 'To the sailor beholding\u2026' introduces a prepositional phrase that has no main verb and no predicate; the sentence trails off after 'splintered crosses' without ever completing a clause, leaving the reader actually confused rather than merely reading a less-ornamented version.\"\n  }\n]\n```",
+    "input_tokens": 19216,
+    "output_tokens": 553,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 12.479474782943726,
+    "stop_reason": "end_turn"
+  }
+}

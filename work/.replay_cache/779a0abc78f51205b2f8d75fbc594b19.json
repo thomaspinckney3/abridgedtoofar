@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:20:49",
+  "key": "779a0abc78f51205b2f8d75fbc594b19",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test strictly and checking only for structural damage, not mere compression.\n\n---\n\n**Ch 112 draft \u2014 review**\n\nThe draft is a faithful compression. The musket-from-the-rack passage drops the parenthetical gloss \"(forming part of most South-Sea-men's cabin furniture)\" but the matrix clause still parses. The \"chief mate\" substitution for \"Starbuck\" in the narrative frame is consistent throughout. No broken pivots, dangling pronouns, unglossed names, or mid-scene jumps. No findings.\n\n---\n\n**Ch 113 draft \u2014 review**\n\n**Candidate 1 \u2014 \"Aft, the carpenter was at once commanded to do Queequeg's bidding.\"**\n\nThe source says \"when this strange circumstance was made known aft.\" The draft omits that bridging clause, but the reader still understands the coffin order follows from Queequeg's wish. The sentence parses; the \"aft\" is mildly elliptical but not broken. Gate test: less ornamented, not confusing. Rejected.\n\n**Candidate 2 \u2014 \"There was some coffin-coloured old lumber aboard, cut of old from aboriginal groves\"**\n\nThe source says \"cut from the aboriginal groves of the Lackaday islands.\" \"The Lackaday islands\" is a minor geographic gloss the draft drops, but the matrix clause (\"there was lumber, it became the coffin\") is unaffected. Not a structural failure. Rejected.\n\n**Candidate 3 \u2014 \"'Ah! poor fellow! he'll have to die now,' ejaculated a Long Island sailor.\"**\n\nThe source attributes this to \"the Long Island sailor\" \u2014 a minor named descriptor, not a proper name, so not an unglossed proper name. No finding.\n\n**Candidate 4 \u2014 \"But ere this was done, Pip, the ship's little tambourine-player and poor mad castaway, who had been slyly hovering near all this while, drew nigh\u2026\"**\n\nThe draft reintroduces Pip with an appositive (\"the ship's little tambourine-player and poor mad castaway\"). This is a local identifier. The appositive tells the reader who Pip is. No structural failure. Rejected.\n\n**Candidate 5 \u2014 \"I have heard,\" murmured Starbuck, the chief mate\u2026**\n\nStarbuck is a major, continuously present character. The gloss \"the chief mate\" is a bonus. No finding.\n\n**Candidate 6 \u2014 \"In such labor, where sinecures are unknown and dignity and danger go hand in hand\u2026\"**\n\nThe draft opens this paragraph by folding the general observation about whaling labor (\"in this vocation of whaling, sinecures are unknown\u2026\") into a subordinate clause that introduces Queequeg's fever. The source's generalization was a separate paragraph before naming Queequeg. The draft's construction is: \"In such labor\u2026Queequeg, as harpooneer and holder, must not only\u2026but descend\u2026\" \u2014 this compresses correctly and the sentence parses cleanly. No finding.\n\n**Candidate 7 \u2014 The Long Island sailor ejaculation: source says \"Long Island sailor,\" draft says \"a Long Island sailor.\"**\n\nThe indefinite article change reflects that the prior introduction of this character (the source's parenthetical setup) is absent, but the draft just calls him \"a Long Island sailor,\" which is a clear descriptor. Not a proper-name problem. No finding.\n\n**Candidate 8 \u2014 mid-scene jump at Ch 113 opening: \"They broke out deeper and deeper to seek the leak\"**\n\nThe previous draft chapter (Ch 112) ends with \"his orders were executed; and the Burtons were hoisted.\" The Ch 113 draft opens with \"They broke out deeper and deeper to seek the leak.\" Does \"they broke out\" and \"the leak\" have antecedents in the preceding draft? Ch 112 draft explicitly mentions the hold leak and the Burtons order to \"break out in the main-hold.\" The reader can follow. No mid-scene jump. Rejected.\n\n**Candidate 9 \u2014 \"And this thought, it must have been, suggested to Captain Ahab, turning one morning from surveying poor Queequeg, that wild exclamation\u2014'Oh, devilish tantalization of the gods!'\"**\n\nThe source's version attributes the exclamation to \"Ahab\" and is prompted by reflection on Queequeg's tattooing. The draft's closing sentence has a slightly tangled syntax (\"suggested to Captain Ahab\u2026that wild exclamation\") but it does parse \u2014 the thought suggested the exclamation to Ahab. A reader can follow this. Not a structural failure. Rejected.\n\n---\n\nAfter applying the gate test to all candidates, no sentence in either draft chapter fails at least one of the seven structural tests in a way that would genuinely confuse a competent reader. The compression is clean.\n\n```json\n[]\n```",
+    "input_tokens": 10393,
+    "output_tokens": 1145,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 28.19320511817932,
+    "stop_reason": "end_turn"
+  }
+}

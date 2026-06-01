@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:39:16",
+  "key": "67a7c5e07ccd81399bbadb5e2b99f293",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter's draft methodically, applying each test to sentences that look potentially damaged.\n\n---\n\n**Ch 062 draft \u2014 screening**\n\n- \"he yelled out\u2014\" : The pronoun \"he\" replaces \"the negro yelled out\" from source. In the draft, the paragraph describes Daggoo seeing the mass, thinking \"is this Moby Dick? thought Daggoo,\" then \"Again the phantom went down, but on re-appearing once more\u2026 he yelled out.\" The antecedent \"Daggoo\" is present in the same paragraph (\"a strange spectre was seen by Daggoo\"). Unambiguous \u2014 not a finding.\n\n- Flask's \"What was it, Sir?\" / Starbuck's reply: Flask's question survives; Starbuck's reply is the answer. The exchange is intact. Not a finding.\n\n- \"So rarely is it beheld that the sight has gone far to invest it with portentousness\": This is a compressed but parseable sentence. Not a finding.\n\nAll other sentences parse cleanly with clear antecedents in the draft. No findings for Ch 062.\n\n---\n\n**Ch 074 draft \u2014 screening**\n\n- \"But as the side-ladder was being rigged, the stranger waved his hand in token that this was unnecessary.\" \u2014 In the source, \"the stranger in question\" (Captain Mayhew) waves his hand. In the draft, \"the stranger\" was introduced as \"she was the Jeroboam of Nantucket. She ranged abeam\u2026 and lowered a boat.\" The boat's occupant hasn't been individually identified yet; \"the stranger\" here refers ambiguously to someone in the boat, but readers can infer it is the captain. Marginal but parseable by context. Not a gate-test failure.\n\n- \"So soon as this figure was descried, Stubb exclaimed\u2014'That's he! that's he!\u2014the long-togged scaramouch the Town-Ho's company told us of!'\" \u2014 In the source, this is immediately followed by: \"Stubb here alluded to a strange story told of the Jeroboam, and a certain man among her crew, some time previous when the Pequod spoke the Town-Ho. According to this account and what was subsequently learned, it seemed that the scaramouch in question had gained a wonderful ascendency over almost everybody in the Jeroboam. His story was this:\" \u2014 The draft cuts all of that bridging explanation and jumps directly to \"His story was this.\" The pronoun \"His\" now has no clear antecedent in the draft: \"this figure\" (the freckled man) is the only candidate, but Stubb's exclamation refers to \"the scaramouch\" as someone previously learned about from the Town-Ho, and the draft provides no sentence establishing who \"His\" refers to in the transition to the backstory. Let me check: draft reads \"So soon as this figure was descried, Stubb exclaimed\u2014[quote]\" then next paragraph \"His story was this.\" \"His\" = the figure's / the scaramouch's. The figure was described in the previous paragraph. A competent reader will connect \"His story was this\" to the just-described freckled man Stubb identified as the scaramouch. This is tight but traceable. Gate test: probably not genuinely confusing.\n\n- \"he left for Nantucket and shipped as green-hand on the Jeroboam.\" \u2014 Source says \"he had left Neskyeuna for Nantucket.\" The draft just says \"he left for Nantucket.\" Antecedent of \"he\" is the man in the backstory being narrated. Fine.\n\n- \"the archangel opened all his seals and vials, devoting the ship to unconditional perdition; the crew threatened in a body to leave if he were sent off, and Gabriel had the complete freedom of the ship.\" \u2014 \"Gabriel\" is introduced here as a name; in the draft the man announced himself as \"the archangel Gabriel\" earlier in this same paragraph. Name is established locally. Fine.\n\n- \"As the seamen resumed their work upon the jacket of the whale, many strange things were hinted in reference to this wild affair.\" \u2014 Source: \"As, after this interlude, the seamen resumed their work upon the jacket of the whale\u2026\" The draft drops \"after this interlude\" but the sentence still parses. The \"jacket of the whale\" \u2014 is there a whale established in this draft chapter? Scanning the draft: the chapter involves the Jeroboam encounter; the hoisted sperm whale's head is mentioned in the source (\"the hoisted sperm whale's head jogged about very violently\") but that detail was cut from the draft. So \"the jacket of the whale\" references a whale being worked on shipside that was never established in the draft. Let me verify: the source has \"the hoisted sperm whale's head jogged about very violently, and Gabriel was seen eyeing it with rather more apprehensiveness than his archangel nature seemed to warrant\" \u2014 this was cut from the draft. And at the very end, source has \"the seamen resumed their work upon the jacket of the whale\" \u2014 retained in draft. The whale being processed alongside is a definite reference (\"the jacket of the whale\") that was established in the source passage that was cut. This is a mid-scene/dangling definite reference. A reader of the draft has no idea what whale is being worked on; no whale has been mentioned as alongside the ship in this chapter's draft. Gate test: a competent reader with no source access would be genuinely puzzled by \"their work upon the jacket of the whale\" \u2014 what whale? This is a real finding.\n\n**Finding: Ch 074, final sentence \u2014 \"As the seamen resumed their work upon the jacket of the whale\" \u2014 \"the whale\" is a definite reference to a sperm whale being processed alongside the Pequod during the Jeroboam encounter, established in source by \"the hoisted sperm whale's head jogged about very violently\" but that line was cut from the draft, leaving the definite article stranded.**\n\nThis qualifies as **mid_scene_jump** (definite reference to an object not established in the draft chapter, established in the source passage that was dropped).\n\nLet me do one final check on Ch 062 to make sure I haven't missed anything, particularly the Flask/Starbuck exchange \u2014 Flask asks \"What was it, Sir?\" and Starbuck answers. Who is \"Sir\"? Starbuck was named in the source as making the exclamation. In the draft, Starbuck's exclamation names him: \"Starbuck still gazing at the agitated waters where it had sunk, with a wild voice exclaimed\u2014\" Yes, Starbuck is named as the speaker immediately before Flask's question. Fine.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"mid_scene_jump\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"As the seamen resumed their work upon the jacket of the whale, many strange things were hinted in reference to this wild affair.\",\n    \"source_has\": \"the hoisted sperm whale's head jogged about very violently, and Gabriel was seen eyeing it with rather more apprehensiveness than his archangel nature seemed to warrant \u2026 As, after this interlude, the seamen resumed their work upon the jacket of the whale\",\n    \"gate_test_answer\": \"A reader of the draft alone is genuinely confused: no whale being processed alongside the Pequod has been mentioned anywhere in the draft chapter, so 'the jacket of the whale' is a stranded definite reference pointing to an object that was established only in the source passage the drafter cut.\"\n  }\n]\n```",
+    "input_tokens": 9505,
+    "output_tokens": 1772,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 41.2925980091095,
+    "stop_reason": "end_turn"
+  }
+}

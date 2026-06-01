@@ -1,0 +1,37 @@
+{
+  "page_number": 2,
+  "anchors": [
+    {
+      "panel_number": 3,
+      "text_index": 1,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "I shan’t sleep with him. I’ll try the bench.",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 972, "y": 290},
+      "mouth_point_ratio": {"x": 0.633, "y": 0.283},
+      "tail_target_point": {"x": 934, "y": 315},
+      "tail_target_point_ratio": {"x": 0.608, "y": 0.308},
+      "face_box": {"x1": 891, "y1": 225, "x2": 1021, "y2": 374},
+      "evidence": "Younger man seated on the right bench, head turned left; mouth slightly open around x≈0.63, y≈0.28.",
+      "reason": "Ishmael is the seated traveler; tail offset down-left toward the bottom-left balloon zone while staying just outside the lower lip."
+    },
+    {
+      "panel_number": 3,
+      "text_index": 2,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "Wait—I’ll make ye snug enough.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 238, "y": 223},
+      "mouth_point_ratio": {"x": 0.155, "y": 0.218},
+      "tail_target_point": {"x": 273, "y": 248},
+      "tail_target_point_ratio": {"x": 0.178, "y": 0.242},
+      "face_box": {"x1": 169, "y1": 118, "x2": 315, "y2": 266},
+      "evidence": "Older man standing at the left workbench; mouth visible, facing right around x≈0.155, y≈0.218.",
+      "reason": "Innkeeper/carpenter figure addressing the seated man; tail offset down-right toward the bottom-right balloon zone at the chin edge."
+    }
+  ]
+}

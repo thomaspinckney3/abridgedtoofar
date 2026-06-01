@@ -1,0 +1,1954 @@
+{
+  "title": "The Great Gatsby — Pagewise Graphic Novel Trial",
+  "adaptation_scope": "Page-by-page storyboard for words 1-1238 of /Users/tp/abridgedtoofar/books/gatsby/abridgment.txt.",
+  "format": {
+    "page_count": 4,
+    "target_panels_per_page": 4,
+    "reading_order": "left-to-right, top-to-bottom",
+    "drafting_mode": "page_by_page"
+  },
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age; muted period authenticity in dress and interiors",
+    "line_and_color": "Clean inked linework with soft watercolor washes; sepia and dusk-blue palette with cream paper tones",
+    "lighting": "Warm interior lamplight against cool window light; long shadows suggesting memory and retrospection",
+    "lettering": "Hand-lettered serif captions in cream caption boxes with thin black borders; minimal balloons",
+    "recurring_motifs": [
+      "a single desk lamp",
+      "open notebook and pen",
+      "window framing distant water",
+      "father's photograph on the desk",
+      "stack of red-and-gold finance volumes"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, early thirties, neatly parted light-brown hair, thoughtful gray eyes, narrow jaw",
+      "costume": "White shirt with rolled sleeves, loosened dark tie, suspenders, high-waisted wool trousers",
+      "expression_range": "Curious, wry, quietly observant",
+      "continuity_note": "Stepping outside his bungalow to take in the geography of West Egg for the first time."
+    },
+    {
+      "name": "Nick's Father",
+      "visual_anchor": "Older man, silver-streaked hair, trim mustache, kind but stern eyes",
+      "costume": "Dark three-piece Midwestern suit, watch chain, stiff collar",
+      "expression_range": "Measured, paternal; here, gravely agreeable",
+      "continuity_note": "Appears briefly in a remembered conversation; render with softer linework and warmer wash."
+    },
+    {
+      "name": "Finnish Housekeeper",
+      "visual_anchor": "Stout middle-aged woman, ruddy cheeks, hair in a low bun, capable hands",
+      "costume": "Plain dark dress, white apron",
+      "expression_range": "Stoic, murmuring to herself",
+      "continuity_note": "New minor character; appears only in the bungalow kitchen."
+    },
+    {
+      "name": "Lost Stranger",
+      "visual_anchor": "Young man newer to the area than Nick, hat in hand, uncertain stance",
+      "costume": "Light summer suit, straw boater, walking shoes",
+      "expression_range": "Helpless, polite",
+      "continuity_note": "One-off speaker on the country road."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "page_summary": "Nick sits at his desk at night, opens a notebook, and begins writing his account; as he writes, he recalls his father's advice, considers how reserving judgment has shaped his life, and admits that his tolerance has a limit—he has come back from the East wanting the world at moral attention.",
+      "source_unit_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "source_word_range": [
+        1,
+        335
+      ],
+      "panels": [
+        {
+          "panel_number": 1,
+          "beat": "Nick, alone at a lamp-lit desk at night, opens a notebook and uncaps his pen; behind him a window shows the dim Midwestern dusk. He pauses to remember his father's long-ago advice.",
+          "shot": "medium",
+          "image_prompt": "Medium shot of a thoughtful young man in white shirt, suspenders, and loosened tie seated at a wooden writing desk in a quiet study at night. A brass desk lamp glows warmly on an open blank notebook and uncapped fountain pen. A framed photograph of an older man sits near the inkwell. Behind him, a tall window shows a deep blue dusk. Warm amber lamplight, cool blue window light, soft watercolor wash. Reserve a clear empty band across the top of the panel and a clear empty strip along the bottom for caption boxes. Keep his face, hands, and the notebook well inside the central area, away from the top and bottom edges. No text, no lettering, no signs. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Establish Nick at his desk as the framing action that holds the page together.",
+          "source_unit_ids": [
+            1
+          ],
+          "source_word_range": [
+            1,
+            23
+          ],
+          "source_anchor": "1",
+          "adaptation_note": "Anchor the abstract opening to a concrete writing action.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "beat": "Memory image: Nick's father, seen across a parlor table years earlier, speaking quietly to a younger Nick. The scene is rendered in warmer, softer tones to mark it as memory.",
+          "shot": "medium",
+          "image_prompt": "A warm sepia-toned memory scene: an older man with silver-streaked hair, trim mustache, dark three-piece suit and watch chain leans slightly forward across a polished parlor table, speaking gently. Soft afternoon light through lace curtains. A younger man's shoulder is visible at the right edge, listening. Period 1900s American Midwestern interior. Soft brushwork, slightly hazy edges to signal memory. Reserve a wide empty area at the top of the panel and a smaller clear zone at bottom-right for two speech balloons. Keep the father's mouth, eyes, and hands well inside the central frame, away from the reserved top band. No text, no lettering. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Nick's Father: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Nick's Father: x 56%, y 4%, width 38%, height 24%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Nick's Father on the left, below or beside that speaker's slot; stage Nick's Father on the right, below or beside that speaker's slot.",
+          "panel_archetype": "two_speaker_exchange",
+          "lettering_slots": [
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Nick's Father",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 0,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_2",
+              "kind": "speech",
+              "zone": "top_left",
+              "box": {
+                "x": 0.06,
+                "y": 0.255,
+                "w": 0.38,
+                "h": 0.19
+              },
+              "speaker": "Nick's Father",
+              "speaker_side": "left",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "caption_zone": "bottom_left",
+          "caption": "",
+          "dialogue": [
+            {
+              "speaker": "Nick's Father",
+              "text": "Whenever you feel like criticizing anyone, just remember—"
+            },
+            {
+              "speaker": "Nick's Father",
+              "text": "—that all the people in this world haven't had the advantages that you've had."
+            }
+          ],
+          "sfx": [],
+          "continuity_notes": "Memory panel; render with softer wash. Father speaks; Nick listens off-panel.",
+          "source_unit_ids": [
+            2,
+            3
+          ],
+          "source_word_range": [
+            24,
+            75
+          ],
+          "source_anchor": "2-3",
+          "adaptation_note": "Combine units 2 and 3 in one remembered exchange; unit 3's reserved understanding is conveyed by the father's quiet pause between balloons.",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Whenever you feel like criticizing anyone, just remember—",
+              "speaker": "Nick's Father",
+              "balloon_zone": "top_left",
+              "text_index": 0,
+              "slot_id": "balloon_1",
+              "speaker_region": "left",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.38,
+                "h": 0.19
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "—that all the people in this world haven't had the advantages that you've had.",
+              "speaker": "Nick's Father",
+              "balloon_zone": "top_left",
+              "text_index": 1,
+              "slot_id": "balloon_2",
+              "speaker_region": "left",
+              "speaker_position": "left",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.255,
+                "w": 0.38,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: speech slot balloon_1 for Nick's Father: x 6%, y 4%, width 38%, height 20%; speech slot balloon_2 for Nick's Father: x 56%, y 4%, width 38%, height 24%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Nick's Father on the left, below or beside that speaker's slot; stage Nick's Father on the right, below or beside that speaker's slot.",
+          "box": {
+            "x": 0.508,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "two_speaker_exchange",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_left",
+                "speaker": "Nick's Father",
+                "speaker_side": "left",
+                "text_index": 0,
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_2",
+                "kind": "speech",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.255,
+                  "w": 0.38,
+                  "h": 0.19
+                },
+                "zone": "top_left",
+                "speaker": "Nick's Father",
+                "speaker_side": "left",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Nick's Father",
+                "role": "speaker",
+                "side": "left",
+                "body_box": {
+                  "x": 0.06,
+                  "y": 0.525,
+                  "w": 0.4,
+                  "h": 0.435
+                },
+                "face_box": {
+                  "x": 0.204,
+                  "y": 0.5554,
+                  "w": 0.096,
+                  "h": 0.087
+                },
+                "mouth_point": {
+                  "x": 0.252,
+                  "y": 0.6094
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty speech box balloon_1 for Nick's Father: x 6%, y 4%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Nick's Father: x 6%, y 26%, w 38%, h 19%. - Place Nick's Father body in x 6%, y 52%, w 40%, h 44%; face in x 20%, y 56%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 3,
+          "beat": "Back at the desk in the present. Nick writes, his pen moving across the page; in his mind he sees faint, ghostly figures of college men leaning in to confide in him.",
+          "shot": "close",
+          "image_prompt": "Close shot of a young man's hand guiding a fountain pen across an open notebook page on a lamplit desk. His other hand rests near his temple in thought. Faintly visible in the smoke-like blur of the background, ghostly translucent silhouettes of several young men in 1910s collegiate clothing lean toward him as if confiding. Warm amber light on the page, cool shadows around. Reserve a tall empty column along the left side and a clear strip along the bottom for caption boxes. Keep the pen, hand, and notebook clearly inside the right half of the panel. No text on the notebook page, no lettering anywhere. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "I'm inclined to reserve all judgements—a habit that has opened up many curious natures to me, and made me the victim of not a few veteran bores.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Ghost figures visualize units 5 and 6 without breaking the desk-writing frame.",
+          "source_unit_ids": [
+            4,
+            5,
+            6
+          ],
+          "source_word_range": [
+            76,
+            210
+          ],
+          "source_anchor": "4-6",
+          "adaptation_note": "Compress three closely related reflective units into one writing beat with a second caption to carry the college confidences; preserves the desk frame instead of a scattered montage.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I'm inclined to reserve all judgements—a habit that has opened up many curious natures to me, and made me the victim of not a few veteran bores.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "beat": "Nick rises from the desk and turns to the window, jaw set. Beyond the glass, faint silhouettes of New York skyline and revelers fade into night. His tolerance has reached its limit; he has come home wanting moral order.",
+          "shot": "wide",
+          "image_prompt": "Wide shot of a young man in shirt and suspenders standing at a tall study window at night, one hand resting on the sash, his expression firm and weary. Reflected faintly in the dark glass, ghostly impressions of a distant city skyline and blurred figures in evening dress dissolve into the night sky. The lit desk with notebook and lamp sits behind him at the right. Cool deep blue tones outside, warm amber spill from the lamp. Soft watercolor wash, clean ink lines. Reserve a wide empty band across the top of the panel and a clear empty band across the bottom for three stacked caption boxes. Keep the figure's face, hand, and the window's central area free of any overlap with those reserved bands. No text, no lettering, no signage. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "Reserving judgements is a matter of infinite hope—a sense of the fundamental decencies parcelled out unequally at birth.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Sets up the next page's flashback to the East. The faint cityscape in the glass seeds Gatsby's world without naming it.",
+          "source_unit_ids": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source_word_range": [
+            211,
+            335
+          ],
+          "source_anchor": "7-11",
+          "adaptation_note": "Three stacked captions track the explicit chronological/logical turn: hope → admitted limit → the return from the East. The single physical action (rising to the window) keeps the page's spine intact.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Reserving judgements is a matter of infinite hope—a sense of the fundamental decencies parcelled out unequally at birth.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 17%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 2,
+      "page_summary": "At his desk, Nick writes about the one exception to his scorn—Gatsby—then turns the page to his own history: graduating, returning restless from the Great War, securing his father's backing, and arriving East in spring 1922 where a coworker's suggestion points him toward a commuter town.",
+      "source_unit_ids": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "source_word_range": [
+        336,
+        647
+      ],
+      "panels": [
+        {
+          "panel_number": 1,
+          "beat": "Nick at his desk pauses over the notebook; in the ghosted window-reflection, a tall silhouette resolves—Gatsby, the one exception, sensed but unseen.",
+          "shot": "medium",
+          "image_prompt": "Night interior of a Midwestern study. Nick Carraway in white shirt and loosened tie sits at his desk, pen lifted from an open notebook, gazing toward the dark window at right. In the windowpane, a faint, ghosted silhouette of a tall man in an elegant suit appears as if registering on the glass—no facial detail, only an impression of presence. Warm desk-lamp light on Nick's hands and face; cool blue night beyond. Sepia and dusk-blue palette. Empty space along the top edge and lower-left for caption boxes; keep Nick's face, hands, pen, and the ghost silhouette clear of those zones. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "Only Gatsby was exempt from my reaction—Gatsby, who represented everything for which I have an unaffected scorn. // Yet there was something gorgeous about him, some heightened sensitivity to the promises of life.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Reuses page 1 motifs: desk lamp, notebook, window with ghost reflection. Gatsby is implied, not shown.",
+          "source_unit_ids": [
+            12,
+            13
+          ],
+          "source_word_range": [
+            336,
+            403
+          ],
+          "source_anchor": "12-13",
+          "adaptation_note": "Anchors abstract praise to Nick's writing gesture and a single ghosted reflection rather than a symbolic tableau.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Only Gatsby was exempt from my reaction—Gatsby, who represented everything for which I have an unaffected scorn. // Yet there was something gorgeous about him, some heightened sensitivity to the promises of life.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "beat": "Close on Nick's hand writing; on the page, a sentence forms about hope and what preyed on Gatsby. The lamp pools light on cream paper.",
+          "shot": "detail",
+          "image_prompt": "Tight overhead detail of Nick's right hand with fountain pen against a cream notebook page, ink lines forming on the paper. Lamp glow at upper right warms the scene; the desk's wood grain visible beneath. No legible text—only suggestive ink strokes. Sepia wash. Reserve broad empty space at top-right and bottom-center for caption boxes; keep the hand, pen tip, and ink lines outside those zones. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_right",
+          "caption": "An extraordinary gift for hope—a romantic readiness I have never found in any other person. // Gatsby turned out all right at the end; it is what preyed on him, what foul dust floated in the wake of his dreams, that closed out my interest in the abortive sorrows and short-winded elations of men.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Same desk and lamp; physical act of writing carries the abstract reflection.",
+          "source_unit_ids": [
+            14,
+            15
+          ],
+          "source_word_range": [
+            404,
+            492
+          ],
+          "source_anchor": "14-15",
+          "adaptation_note": "Caption-only beat keeps thematic prose attached to the visible writing action.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "An extraordinary gift for hope—a romantic readiness I have never found in any other person. // Gatsby turned out all right at the end; it is what preyed on him, what foul dust floated in the wake of his dreams, that closed out my interest in the abortive sorrows and short-winded elations of men.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 3,
+          "beat": "Memory unfurls: a young Nick in uniform returns from the Great War to his prominent Midwestern family's parlor; the homecoming is warm but he is already restless, the Midwest now feeling like the ragged edge of the world.",
+          "shot": "wide",
+          "image_prompt": "Soft-edged memory panel, warmer sepia wash. A respectable Midwestern parlor in 1919: heavy drapes, framed family portraits, a mantel clock. Young Nick Carraway in U.S. Army officer's olive-drab tunic and Sam Browne belt stands just inside the doorway with a duffel at his feet, hat in hand, looking past the room toward a bright window where the flat horizon stretches out. His expression is polite but distant, restless. Edges of the panel feather into cream. Empty space across the top for a caption strip and at lower right for a second caption; keep Nick's face, uniform details, and the window clear. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_center",
+          "caption": "My family have been prominent, well-to-do people in this Middle Western city for three generations. I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War. // I enjoyed the counter-raid so thoroughly that I came back restless—the Middle West now seemed the ragged edge of the universe.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Memory frame: feathered edges, warmer wash, softer line, as established for remembered scenes.",
+          "source_unit_ids": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "source_anchor": "16-19",
+          "source_word_range": [
+            493,
+            570
+          ],
+          "adaptation_note": "Compresses biographical exposition into one staged homecoming so it reads as a single observable beat, not a montage.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "My family have been prominent, well-to-do people in this Middle Western city for three generations. I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War. // I enjoyed the counter-raid so thoroughly that I came back restless—the Middle West now seemed the ragged edge of the universe.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "beat": "Spring 1922: Nick steps off a train into the East, suitcases in hand, while a young coworker beside him gestures toward the green commuter horizon—the suggestion that becomes the West Egg bungalow.",
+          "shot": "wide",
+          "image_prompt": "Daylit New York commuter train platform, spring 1922. Nick Carraway, late twenties here, in a smart traveling suit, overcoat folded on his arm, two leather suitcases at his feet, stepping forward from a steaming train. Beside him, a friendly young office colleague in a sack suit and straw boater leans in and gestures off-panel toward the suburbs. Soft morning light, dusk-blue and sepia muted by fresh greens. Period detail: porter in cap, brick station wall, telegraph poles in the distance. Empty space along the top for a wide caption box and bottom-left for a second caption; keep both men's faces, hands, suitcases, and the gesturing arm outside those zones. No signage text, no readable letters. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_center",
+          "caption": "So I decided to go East and learn the bond business. Father agreed to finance me for a year, and I came East, permanently, I thought, in the spring of twenty-two. // When a young man at the office suggested we take a house together in a commuting town, it sounded like a great idea.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Action transitions to the East and sets up next page's arrival in West Egg next to Gatsby's estate.",
+          "source_unit_ids": [
+            20,
+            21
+          ],
+          "source_word_range": [
+            571,
+            647
+          ],
+          "source_anchor": "20-21",
+          "adaptation_note": "Concrete arrival action (stepping off train, colleague gesturing) anchors the decision to go East and the seed of the West Egg house.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "So I decided to go East and learn the bond business. Father agreed to finance me for a year, and I came East, permanently, I thought, in the spring of twenty-two. // When a young man at the office suggested we take a house together in a commuting town, it sounded like a great idea.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 3,
+      "page_summary": "Nick moves alone into the weather-beaten West Egg bungalow, settles into solitary routines with a Finnish cook, is asked directions by a newer arrival on the road (which converts his loneliness into a sense of belonging), and begins his summer of self-improvement by shelving a stack of finance volumes—setting up his arrival in one of the strangest communities in North America.",
+      "source_unit_ids": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_word_range": [
+        648,
+        972
+      ],
+      "panels": [
+        {
+          "panel_number": 1,
+          "beat": "Nick arrives alone at the weather-beaten bungalow with his suitcase; the coworker has been ordered to Washington.",
+          "shot": "establishing",
+          "image_prompt": "Wide establishing shot of a small weather-beaten clapboard bungalow on a grassy lane in West Egg, sagging porch, peeling paint, late spring afternoon. Nick Carraway in traveling suit and hat stands at the gate with a single suitcase, looking up at the house. An old Dodge automobile is parked at the curb. Soft sepia and dusk-blue watercolor wash, clean ink lines, long warm shadows. Reserve clear empty sky in the upper band and a clean lower-left strip of lawn for caption boxes; no text, no signs, no lettering of any kind. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "He found the house—a weather-beaten cardboard bungalow at eighty a month. At the last minute the firm ordered him to Washington, and I went out to the country alone.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Old Dodge introduced here will recur. Bungalow's modesty contrasts with the mansion to be revealed next page.",
+          "source_unit_ids": [
+            22
+          ],
+          "source_word_range": [
+            648,
+            678
+          ],
+          "source_anchor": "22",
+          "adaptation_note": "Establishing shot grounds Nick's solitary arrival; the parked Dodge previews the next beat.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He found the house—a weather-beaten cardboard bungalow at eighty a month. At the last minute the firm ordered him to Washington, and I went out to the country alone.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "beat": "Interior morning: the Finnish woman mutters at the stove while Nick eats breakfast; the dog briefly featured before running off.",
+          "shot": "medium",
+          "image_prompt": "Interior of a modest bungalow kitchen at morning. On the left, a stout middle-aged Finnish housekeeper in plain dark dress and white apron tends an electric stove, lips moving as she mutters to herself. On the right, Nick Carraway in white shirt with rolled sleeves and suspenders sits at a small wooden table with coffee and toast, reading a folded newspaper. A small terrier dog sits near the door, leash trailing, looking outward as if about to bolt. Warm interior lamplight against cool window light. Sepia and cream palette, soft watercolor wash. Leave the upper third of the panel as clean wall space for caption boxes; no text, no signs, no lettering. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "I had a dog—at least for a few days, until he ran away—and an old Dodge, and a Finnish woman who made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric stove.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Domestic routine establishes the loneliness that the next panel will break.",
+          "source_unit_ids": [
+            23
+          ],
+          "source_word_range": [
+            679,
+            718
+          ],
+          "source_anchor": "23",
+          "adaptation_note": "Compresses three details (dog, Dodge, housekeeper) into one staged morning.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I had a dog—at least for a few days, until he ran away—and an old Dodge, and a Finnish woman who made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric stove.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 3,
+          "beat": "On a sunlit country road, a newer arrival asks Nick directions to West Egg village; Nick, walking on, feels promoted from stranger to settler.",
+          "shot": "wide",
+          "image_prompt": "Outdoor wide shot on a dusty country road lined with fresh young trees bursting into spring leaf. On the left, a young man in a light summer suit and straw boater holds his hat in hand, asking directions with a helpless expression. On the right, Nick Carraway in shirtsleeves and loose tie pauses mid-walk, half-turned, beginning to gesture down the road. Bright morning sun, warm sepia wash with pale blue sky, long soft shadows. Reserve clean sky at the top and a clear strip of road at the bottom for caption and speech space; no text, no signs, no lettering in the art. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Lost Stranger: x 29%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Lost Stranger near the center, below or beside that speaker's slot.",
+          "panel_archetype": "single_speaker",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            },
+            {
+              "id": "balloon_1",
+              "kind": "speech",
+              "zone": "top_center",
+              "box": {
+                "x": 0.3,
+                "y": 0.23,
+                "w": 0.4,
+                "h": 0.16
+              },
+              "speaker": "Lost Stranger",
+              "speaker_side": "center",
+              "reserved_for": null,
+              "text_index": 1,
+              "reading_order": 2
+            }
+          ],
+          "caption_zone": "bottom_left",
+          "caption": "I told him. And as I walked on I was lonely no longer—a guide, a pathfinder, an original settler. He had casually conferred on me the freedom of the neighbourhood.",
+          "dialogue": [
+            {
+              "speaker": "Lost Stranger",
+              "text": "How do you get to West Egg village?"
+            }
+          ],
+          "sfx": [],
+          "continuity_notes": "Bursting leaves on the trees seed the 'life beginning over again' motif used in next panel's caption.",
+          "source_unit_ids": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "source_word_range": [
+            719,
+            785
+          ],
+          "source_anchor": "24-29",
+          "adaptation_note": "Single staged exchange covers six short source units in order; the only direct quotation on the page anchors the beat.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I told him. And as I walked on I was lonely no longer—a guide, a pathfinder, an original settler. He had casually conferred on me the freedom of the neighbourhood.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.15
+              }
+            },
+            {
+              "kind": "speech",
+              "text": "How do you get to West Egg village?",
+              "speaker": "Lost Stranger",
+              "balloon_zone": "top_center",
+              "text_index": 1,
+              "slot_id": "balloon_1",
+              "speaker_region": "center",
+              "speaker_position": "center",
+              "slot_box_ratio": {
+                "x": 0.3,
+                "y": 0.23,
+                "w": 0.4,
+                "h": 0.16
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Lost Stranger: x 29%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Lost Stranger near the center, below or beside that speaker's slot.",
+          "box": {
+            "x": 0.015,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "single_speaker",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.15
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              },
+              {
+                "id": "balloon_1",
+                "kind": "speech",
+                "box": {
+                  "x": 0.3,
+                  "y": 0.23,
+                  "w": 0.4,
+                  "h": 0.16
+                },
+                "zone": "top_center",
+                "speaker": "Lost Stranger",
+                "speaker_side": "center",
+                "text_index": 1,
+                "reading_order": 2
+              }
+            ],
+            "figures": [
+              {
+                "id": "figure_1",
+                "character": "Lost Stranger",
+                "role": "speaker",
+                "side": "center",
+                "body_box": {
+                  "x": 0.31,
+                  "y": 0.47,
+                  "w": 0.38,
+                  "h": 0.49
+                },
+                "face_box": {
+                  "x": 0.4468,
+                  "y": 0.5043,
+                  "w": 0.0912,
+                  "h": 0.098
+                },
+                "mouth_point": {
+                  "x": 0.4924,
+                  "y": 0.5651
+                }
+              }
+            ],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Lost Stranger: x 30%, y 23%, w 40%, h 16%. - Place Lost Stranger body in x 31%, y 47%, w 38%, h 49%; face in x 45%, y 50%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "beat": "Back inside the bungalow study, Nick shelves a dozen red-and-gold finance volumes by a sunlit window, beginning his summer program of self-improvement.",
+          "shot": "medium",
+          "image_prompt": "Interior medium shot of a small study in the bungalow. Nick Carraway in shirtsleeves, loosened tie, and suspenders stands at a low bookshelf beneath a window, sliding a thick red-and-gold-bound volume into place beside eleven matching volumes. On the desk beside him: a single lit desk lamp, an open notebook with pen, and a framed photograph of his father. Beyond the window, a hint of green lawn and a sliver of bright water in late spring sunlight. Warm lamplight blending with cool daylight from the window; soft sepia and dusk-blue watercolor wash. Reserve clean wall area above the bookshelf and a clear bottom band for two stacked caption boxes; no readable text, no lettering, no signage anywhere in the art. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_right",
+          "caption": "With the sunshine and the bursting leaves, I had that familiar conviction that life was beginning over again with the summer. I bought a dozen volumes on banking and credit—red and gold like new money from the mint—and meant once more to become the 'well-rounded man.' It was a matter of chance that I should have rented a house in one of the strangest communities in North America.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Desk lamp, notebook, and father's photograph carry forward from page 1. Sliver of water through the window foreshadows the West Egg/East Egg geography to be opened on page 4.",
+          "source_unit_ids": [
+            30,
+            31,
+            32,
+            33,
+            34
+          ],
+          "source_word_range": [
+            786,
+            972
+          ],
+          "source_anchor": "30-34",
+          "adaptation_note": "Single concrete action—shelving the finance books at the window—anchors five short reflective units; closing caption seeds the West Egg reveal.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "With the sunshine and the bursting leaves, I had that familiar conviction that life was beginning over again with the summer. I bought a dozen volumes on banking and credit—red and gold like new money from the mint—and meant once more to become the 'well-rounded man.' It was a matter of chance that I should have rented a house in one of the strangest communities in North America.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    },
+    {
+      "page_number": 4,
+      "page_summary": "Nick steps out of his bungalow onto the lawn and takes in his surroundings: he surveys the twin eggs of Long Island across the bay, then turns to find his small house dwarfed by Gatsby's colossal mansion next door. The abstract geography is anchored to his physical walk from doorstep to the property line, where he first lays eyes on the neighbor he does not yet know.",
+      "source_unit_ids": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "source_word_range": [
+        973,
+        1238
+      ],
+      "panels": [
+        {
+          "panel_number": 1,
+          "beat": "Nick steps out of his bungalow door onto the lawn, shading his eyes toward the Sound; the two eggs of Long Island are visible as low promontories across a glittering courtesy bay.",
+          "shot": "establishing",
+          "image_prompt": "Wide establishing view from a low grassy bluff on Long Island in 1922. Foreground: Nick Carraway in white rolled-sleeve shirt, suspenders, loosened tie, standing on the lawn outside a modest weathered bungalow, one hand shading his eyes, gazing across calm blue-grey water. Middle distance: a domesticated salt-water bay separating two matching tongues of land jutting east, dotted with estate rooftops and trees. Sepia and dusk-blue watercolor wash, clean inked linework, warm morning light. Leave the entire top third of the panel as open pale sky for caption boxes. No text, no signs, no labels. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "It was on that slender riotous island which extends itself due east of New York—where, twenty miles from the city, a pair of enormous eggs jut into the great wet barnyard of Long Island Sound.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "First geographic reveal anchored to Nick's vantage from his lawn.",
+          "source_unit_ids": [
+            35,
+            36
+          ],
+          "source_word_range": [
+            973,
+            1041
+          ],
+          "source_anchor": "35-36",
+          "adaptation_note": "Geography anchored to Nick's line of sight, not a detached aerial map.",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "It was on that slender riotous island which extends itself due east of New York—where, twenty miles from the city, a pair of enormous eggs jut into the great wet barnyard of Long Island Sound.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 2,
+          "beat": "Closer on Nick at the property's edge; he glances left across the bay toward the manicured estates of East Egg, contrasting them with his own side.",
+          "shot": "medium",
+          "image_prompt": "Medium shot of Nick Carraway in three-quarter profile standing at a low wooden fence at the edge of a lawn, looking left across a narrow bay. Across the water on the far egg: polished white mansions, clipped hedges, a flagpole. On Nick's side: scrappier hedges and a weathered bungalow corner. Soft sepia and dusk-blue wash, clean inked lines, mid-morning light. Reserve the upper-left quadrant as empty sky for caption. No text or signage anywhere. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "To the wingless, the more interesting phenomenon was their dissimilarity in every particular except shape and size. I lived at West Egg—the, well, the less fashionable of the two.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Nick remains on his own lawn; East Egg seen across water introduces next page's destination.",
+          "source_unit_ids": [
+            37,
+            38
+          ],
+          "source_word_range": [
+            1042,
+            1089
+          ],
+          "source_anchor": "37-38",
+          "adaptation_note": "",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "To the wingless, the more interesting phenomenon was their dissimilarity in every particular except shape and size. I lived at West Egg—the, well, the less fashionable of the two.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.015,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.015,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 3,
+          "beat": "Nick turns and walks along the side of his bungalow toward the right, where a vast Norman-style mansion looms above the hedge—he stops and tilts his head up at it.",
+          "shot": "wide",
+          "image_prompt": "Wide low-angle view from a narrow side yard. Nick Carraway, small in frame, stands at left with his back partially to viewer, looking up and to the right. Looming over a thin hedge at right: an enormous Norman-style mansion, a factual imitation of a Hôtel de Ville, with a square tower, raw new stonework under a thin beard of ivy, a glimpse of a marble swimming pool and sweeping lawns receding into distance. His own modest bungalow visible at far left, dwarfed. Sepia and dusk-blue palette, dramatic scale contrast, warm afternoon light, long shadows. Leave the upper-right sky open for a caption. No text or signs. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_right",
+          "caption": "My house, at the very tip of the egg, was squeezed between two huge places that rented for twelve or fifteen thousand a season. The one on my right was a colossal affair—a factual imitation of some Hôtel de Ville in Normandy, with a tower, a marble swimming pool, and more than forty acres of lawn and garden.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "First concrete reveal of Gatsby's mansion next door, anchored to Nick's walk along the property line.",
+          "source_unit_ids": [
+            39,
+            40
+          ],
+          "source_word_range": [
+            1090,
+            1172
+          ],
+          "source_anchor": "39-40",
+          "adaptation_note": "",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "My house, at the very tip of the egg, was squeezed between two huge places that rented for twelve or fifteen thousand a season. The one on my right was a colossal affair—a factual imitation of some Hôtel de Ville in Normandy, with a tower, a marble swimming pool, and more than forty acres of lawn and garden.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.015,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.015,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        },
+        {
+          "panel_number": 4,
+          "beat": "Nick lowers his gaze to his own small bungalow, hands in pockets, a wry half-smile; through a gap in the hedge a sliver of the Sound is visible behind his house.",
+          "shot": "medium",
+          "image_prompt": "Medium shot of Nick Carraway in three-quarter view, hands in trouser pockets, a wry faint smile, standing on a patchy lawn in front of his small weathered shingled bungalow. To one side, the corner of the colossal neighboring estate's stone wall and ivy intrudes; behind the bungalow, a thin glittering sliver of the Sound visible between hedges. Warm late-afternoon sepia light, soft watercolor wash, clean inked linework. Leave the top band and bottom band of the panel clear for caption boxes. No text, no signs, no labels. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "panel_archetype": "caption_action",
+          "lettering_slots": [
+            {
+              "id": "caption",
+              "kind": "caption",
+              "zone": "top_center",
+              "box": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              },
+              "speaker": null,
+              "speaker_side": null,
+              "reserved_for": "narrator caption",
+              "text_index": null,
+              "reading_order": 1
+            }
+          ],
+          "caption_zone": "top_left",
+          "caption": "It was Gatsby's mansion. Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but a small eyesore—and it had been overlooked, so I had a view of the water, a partial view of my neighbour's lawn, and the consoling proximity of millionaires—all for eighty dollars a month.",
+          "dialogue": [],
+          "sfx": [],
+          "continuity_notes": "Gatsby named for the first time; Nick remains physically anchored at his bungalow.",
+          "source_unit_ids": [
+            41,
+            42,
+            43
+          ],
+          "source_word_range": [
+            1173,
+            1238
+          ],
+          "source_anchor": "41-43",
+          "adaptation_note": "",
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "It was Gatsby's mansion. Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but a small eyesore—and it had been overlooked, so I had a view of the water, a partial view of my neighbour's lawn, and the consoling proximity of millionaires—all for eighty dollars a month.",
+              "caption_zone": "top_center",
+              "text_index": 0,
+              "slot_id": "caption",
+              "slot_box_ratio": {
+                "x": 0.06,
+                "y": 0.04,
+                "w": 0.88,
+                "h": 0.19
+              }
+            }
+          ],
+          "lettering_constraints": "Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.",
+          "box": {
+            "x": 0.508,
+            "y": 0.508,
+            "w": 0.477,
+            "h": 0.477
+          },
+          "thumbnail_layout": {
+            "version": "thumbnail_layout_v1",
+            "panel_size_class": "standard",
+            "panel_archetype": "caption_action",
+            "panel_box": {
+              "x": 0.508,
+              "y": 0.508,
+              "w": 0.477,
+              "h": 0.477
+            },
+            "text_boxes": [
+              {
+                "id": "caption",
+                "kind": "caption",
+                "box": {
+                  "x": 0.06,
+                  "y": 0.04,
+                  "w": 0.88,
+                  "h": 0.19
+                },
+                "zone": "top_center",
+                "reserved_for": "narrator caption",
+                "text_indexes": [
+                  0
+                ],
+                "reading_order": 1
+              }
+            ],
+            "figures": [],
+            "key_prop_boxes": [],
+            "rules": [
+              "Draw finished art only in the panel frame.",
+              "Keep every text box empty for later lettering; draw no boxes or text there.",
+              "Keep all faces and mouths inside their face boxes.",
+              "Keep bodies inside their body boxes unless a gesture is explicitly required.",
+              "Keep active hands and key props out of text boxes.",
+              "Stage speakers in the same left-to-right order as their text boxes."
+            ]
+          },
+          "thumbnail_constraints": "Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes."
+        }
+      ],
+      "thumbnail_layout_version": "thumbnail_layout_v1"
+    }
+  ],
+  "open_questions": [
+    "Drive across the bay to East Egg",
+    "Introduction of Daisy and Tom Buchanan at their mansion",
+    "First spoken dialogue scene between Nick and the Buchanans"
+  ]
+}

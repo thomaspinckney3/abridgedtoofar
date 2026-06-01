@@ -1,0 +1,68 @@
+{
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Coin purse reads as a larger soft pouch without a visible clasp, risking confusion with a small bag.",
+          "visible_evidence": "Ishmael holds a floppy brown pouch with both hands; no metal clasp is visible and the scale appears larger than a small coin purse.",
+          "repair_prompt": "Refine the coin purse to a small, worn brown leather clasp purse that fits in one hand; add a simple metal clasp and suggest a few coins inside. Avoid drawstrings or sack-like proportions while keeping the rest of the scene unchanged."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Background crowd on the left pier is denser than the specified 'few distant indistinct figures.'",
+          "visible_evidence": "Multiple small figures line the left waterfront, creating a busier backdrop than called for.",
+          "repair_prompt": "Reduce the number of background pedestrians to just a few faint, indistinct silhouettes along the rail far behind Ishmael; lower their contrast and detail so they don't compete with the subject."
+        }
+      ],
+      "selected_candidate": "initial",
+      "selection_score": {
+        "weighted_score": 2,
+        "severe_count": 0,
+        "finding_count": 2
+      }
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is partially busy with a diagonal rope and hull detail, reducing clean space for lettering.",
+          "visible_evidence": "A thick rope crosses the lower center-right and the ship\u2019s plank strakes and railings run behind it where the caption should sit; only a narrow misty gap remains.",
+          "repair_prompt": "Reserve a clear bottom-center band for the caption by relocating or thinning the foreground rope away from center, softening/removing hull detail lines in that area, and extending the misty negative space across the bottom-center while keeping Ishmael, the dock spiles, and rigged ship unchanged."
+        }
+      ],
+      "selected_candidate": "repair1",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Background pedestrians and dockworkers are visible even though only Ishmael should be discernibly visible.",
+          "visible_evidence": "Small human figures are present along the waterfront street and near moored ships on the left side of the image.",
+          "repair_prompt": "Remove or heavily blur background people so that Ishmael is the only clearly discernible person; keep buildings, ships, and pier details but render distant humans as indistinct silhouettes."
+        }
+      ],
+      "selected_candidate": "repair1",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:38:15",
+  "key": "302ed173f41f594e9763955ebc38992e",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test strictly.\n\n**Ch 021 draft**\n\nThe draft is a clean compression. Rosa and Jane are referenced as \"two housemaids\" / \"the maid\" / \"the housemaid\" \u2014 their proper names are elided, which is authorized. Dinah becomes \"the cook.\" No orphaned proper names, no broken pivots, no dangling pronouns whose antecedents are missing from the draft. The chapter is self-contained.\n\n**Ch 023 draft**\n\nLet me check carefully:\n\n1. **\"Aunt Chloe\" in the letter summary**: The draft says \"his wife, Aunt Chloe, had been hired to a confectioner in Louisville.\" In the draft of Ch 021, Aunt Chloe does not appear (she is an authorized removal). But this is in Ch 023, and the letter gloss reads \"his wife, Aunt Chloe\" \u2014 the appositive \"his wife\" identifies her locally. A reader knows she is Tom's wife. This is not an unglossed name.\n\n2. **\"Mammy\"**: Eva says \"Here's poor Mammy,\" and the draft inserts a gloss: \"her nurse, who loved the book so.\" Mammy is on the authorized removal list, but the name is used here with an appositive identifier (\"her nurse\"). However, the authorized removal list includes \"Mammy (Eva's nurse)\" \u2014 the character is supposed to be removed. The name survives in the draft with a gloss attached. Since the name appears with a local identifier (\"her nurse\"), the named-person continuity invariant is satisfied. But wait \u2014 Mammy is on the authorized minor-character removal list. The instruction says \"if a proper name from the authorized minor-character list appears in the draft, either the preceding draft chapter or the local sentence/paragraph must identify that person.\" The local sentence does identify her: \"her nurse.\" So this passes.\n\n   Then at the end: \"Eva stole away; and after that, she assiduously gave her nurse reading lessons.\" The name is dropped here, replaced by descriptor. Fine.\n\n3. **\"Miss Ophelia, St. Clare's northern cousin\"**: The draft introduces this gloss at the moment Miss Ophelia calls out to Eva. In Ch 021 draft, Miss Ophelia is the central figure and fully established. This gloss is actually redundant/helpful but not a coherence problem.\n\n4. **\"She tried to communicate her fears to St. Clare, Eva's father\"**: Fine, helpful gloss.\n\n5. **\"Well, it was just so\u2014\" she began. / \"O! stop these hobgoblin' nurse legends.\"**: In the source, Miss Ophelia lists specific names (\"Eliza Jane,\" \"Ellen and Maria Sanders\") and St. Clare cuts her off. In the draft, Miss Ophelia's line is cut to \"Well, it was just so\u2014\" and St. Clare responds to a completed argument. Let me check the gate test: does the reader understand the exchange? Miss Ophelia is clearly beginning to cite a parallel case and St. Clare interrupts. The reader understands the pivot \u2014 she's making an analogy, he dismisses it. The sentence parses, the connective works. Not a structural break.\n\n6. **\"Topsy\u2014Miss Ophelia's little pupil\"**: This is a helpful gloss connecting Ch 021 to Ch 023. Fine.\n\n7. The reference to \"Prue's\" case: St. Clare says \"such cases as Prue's.\" Prue is an authorized subplot removal (Ch 020). In the draft, there is no prior establishment of who Prue is. Let me check: is this an orphaned name? The authorized subplot removal covers \"Prue the bakery woman (Ch 020)\" \u2014 so Prue's story was cut. The name \"Prue\" appears in St. Clare's speech without any identifier. A reader encountering this name cold would have no idea who Prue is or what her case involved. St. Clare is using it as a known example of horrid cruelty. Is this a finding under rule 7 (unglossed minor proper name)?\n\n   Prue is not on the authorized *character removal* list by name \u2014 she is covered under *subplot removals*. The named-person continuity invariant says \"if a proper name from the authorized minor-character list appears in the draft\u2026\" \u2014 Prue is not on the named minor-character list explicitly, but she is an authorized subplot removal. The instruction says authorized-cut residual seams are not findings. The reference to \"Prue's\" case is a direct residue of the authorized subplot removal of Prue. This is an expected seam and NOT a finding.\n\n8. The letter says Tom's cabin \"stood shut, but was to be set forth with new ornaments when he came back\" \u2014 and the source also mentions Mose, Pete, baby, Sally, etc. The draft omits those but the letter summary still parses fine.\n\nAfter careful review, I find no valid structural coherence failures in either chapter draft.\n\n```json\n[]\n```",
+    "input_tokens": 24828,
+    "output_tokens": 1162,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.172032117843628,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:41:54",
+  "key": "27855e06b24e20418111915557480724",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying the gate test and checking only for structural damage, not mere compression.\n\n**Ch 111 draft review:**\n\nThe dialogue exchange where Ahab says \"How the soot flies! This must be the remainder the Greek made the Africans of. Carpenter, when he's through with that buckle, tell him to forge a pair of steel shoulder-blades; there's a pedlar aboard with a crushing pack.\" is cut, and the carpenter responds \"Sir?\" \u2014 this \"Sir?\" survives in the draft. Let me check: in the draft, Ahab says \"...and so hell's probable.\" then \"Sir?\" appears. The carpenter's \"Sir?\" is a response to the cut line about the pedlar and shoulder-blades. However, in context, reading the draft, the carpenter's \"Sir?\" could plausibly be read as puzzlement at \"hell's probable\" \u2014 a competent reader might be slightly confused but could interpret it as general bewilderment. Actually, the \"Sir?\" here is a reply to Ahab's non-sequitur about shoulder-blades and a pedlar, both of which are cut. The reader genuinely cannot understand what the \"Sir?\" is responding to \u2014 it appears to be responding to \"so hell's probable,\" which is a complete thought that doesn't obviously warrant a puzzled \"Sir?\". This is a broken pivot / unattributed dialogue issue.\n\n**Ch 112 draft review:**\n\nThe draft is clean. \"The chief mate\" is used before \"Starbuck\" is named \u2014 but Starbuck is named immediately after in the same paragraph, so no confusion. The musket's parenthetical \"(forming part of most South-Sea-men's cabin furniture)\" is cut, but the musket itself is described and the scene parses fine.\n\n```json\n[\n  {\n     \"valid\": true,\n     \"class\": \"unattributed_dialogue\",\n     \"chapter\": \"N\",\n     \"draft_passage\": \"and so hell's probable.\\n\\nSir?\",\n     \"source_has\": \"hell's probable. How the soot flies! This must be the remainder the Greek made the Africans of. Carpenter, when he's through with that buckle, tell him to forge a pair of steel shoulder-blades; there's a pedlar aboard with a crushing pack.\\n\\nSir?\",\n     \"gate_test_answer\": \"A reader genuinely cannot tell what the carpenter's 'Sir?' is responding to; the triggering command about shoulder-blades and the pedlar has been cut, leaving the puzzled 'Sir?' hanging after a self-contained statement about hell, which does not naturally invite confusion.\"\n  }\n]\n```",
+    "input_tokens": 9015,
+    "output_tokens": 611,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 13.918798923492432,
+    "stop_reason": "end_turn"
+  }
+}

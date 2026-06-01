@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:01:14",
+  "key": "a777488141ddc5652d5faa72244cfb83",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Examining both draft chapters carefully against the gate test.\n\n**Ch 019 draft review:**\n\nThe draft is well-compressed. The page-boy is introduced as \"a diminutive page-boy\" without the name \"Henry\" \u2014 the authorized cut of \"Station page 'Henry' at the Ritz\" is listed, so any residual seam there is expected and not a finding. The rest of the chapter parses cleanly.\n\n**Ch 020 draft review:**\n\nThe chapter opens with a summary paragraph recapping the Moat House search, then transitions to Manchester. Let me check each potential issue.\n\n1. *\"He's booked rooms for us, and will be round to dine at eight.\"* \u2014 This is dialogue spoken by Julius after he's led Tommy out of the station. The \"He\" refers to Sir James Peel Edgerton, who was named in the preceding draft chapter's final telegram. No issue.\n\n2. The reference to Julius having arrived half an hour earlier \u2014 the source establishes this explicitly (\"My train got in half an hour ago,\" explained Julius). The draft renders it as \"Julius had got in half an hour earlier and led the way out of the station as Tommy arrived\" \u2014 fine.\n\n3. *\"Mrs. Vandemeyer always signed herself Rita. Curious that the girl was crying out to her at the moment Vandemeyer was either dead or dying.\"* \u2014 In the source, Sir James leads into this by saying the girl must have been in the habit of calling her by her full name \"Marguerite.\" The draft cuts the setup about the girl calling out to \"Marguerite.\" Let me check whether this leaves the remark unanchored in the draft. The draft has: `\"I couldn't have got away but for the girl, sir.\" / \"It was lucky for you she happened to take a fancy to you. There's no doubt about her being one of the gang?\" / \"I'm afraid not. She went back to them when she could have got away.\" / Sir James nodded. \"Mrs. Vandemeyer always signed herself Rita. Curious that the girl was crying out to her at the moment Vandemeyer was either dead or dying.\"` \u2014 The source has Tommy saying the girl wanted to be taken to \"Marguerite,\" and Sir James explaining that Vandemeyer signed herself Rita. In the draft, the detail about the girl crying out to Vandemeyer has no antecedent \u2014 the girl's cry for \"Marguerite\" was cut, so \"the girl was crying out to her\" is a dangling reference. A competent reader would genuinely not know what girl-crying-out event is being referred to, since it was never mentioned in the draft.\n\n4. Jane Finn's account: she says \"I watched when we got on the open road. No other car was following us. I saw a path at the side of the road. I told the man to wait.\" \u2014 The draft compresses this to \"The path led to the cliff...\" cutting the \"I saw a path... I told the man to wait\" transitional sentences. But the remaining sentence still parses \u2014 the reader can follow that she walked a path to the cliff. Not a structural failure.\n\n5. The draft cuts Dr. Roylance \u2014 he's on the authorized removal list, so the introduction scene (\"He introduced them to the doctor. 'Mr. Hersheimmer \u2014 Mr. Beresford \u2014 Dr. Roylance...'\") being gone is expected and not a finding.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Mrs. Vandemeyer always signed herself Rita. Curious that the girl was crying out to her at the moment Vandemeyer was either dead or dying.\",\n    \"source_has\": \"Source has Tommy say the girl cried out wanting to be taken to 'Marguerite,' prompting Sir James to note that Vandemeyer signed herself Rita and the girl must have called her by her full name \u2014 establishing what crying-out incident is meant. The draft cuts Tommy's report of the girl calling for Marguerite, leaving 'the girl was crying out to her' with no antecedent event in the draft.\",\n    \"gate_test_answer\": \"A reader of the draft alone genuinely cannot identify which girl, crying out what, is being referred to \u2014 the incident was entirely cut \u2014 so this is real confusion, not mere loss of ornament.\"\n  }\n]\n```",
+    "input_tokens": 17790,
+    "output_tokens": 1012,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.836677312850952,
+    "stop_reason": "end_turn"
+  }
+}

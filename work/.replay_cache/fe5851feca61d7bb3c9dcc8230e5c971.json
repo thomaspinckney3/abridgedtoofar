@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:01:55",
+  "key": "fe5851feca61d7bb3c9dcc8230e5c971",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to every potentially damaged sentence.\n\n---\n\n**Ch 022 draft analysis**\n\nThe draft cuts the attribution that Julius specifically \"elected to stay the night at Holyhead\" before \"half an hour after arrival\" \u2014 but the arrival sentence still parses (Tommy took the train back). No confusion there.\n\nThe note from Peel Edgerton: the draft says \"a few kind words of sympathy from Peel Edgerton, who had read the news\" and \"the letter ended with the offer of a post on a ranch in the Argentine.\" Sir James Peel Edgerton has appeared in Ch 022 draft (Tommy mentions him earlier), so the name is established. No issue.\n\nThe draft says \"He re-read Sir James's letter\" \u2014 this is fine; the note was just described.\n\n\"Something cracked in Tommy's brain\" \u2014 he rose to his feet: clear.\n\n\"Then one of the nurses listened at the door. The game's up. We've failed.\" \u2014 In the source this is still Julius speaking, but in the draft the attribution is ambiguous; it runs on from Julius's previous speech. However the prior sentence is also Julius, and \"The game's up\" is in the same speech paragraph \u2014 a competent reader would attribute it to Julius. Not a structural break.\n\nThe draft cuts Julius's explanation of *why* he's going to the London and North Western Railway depot (the insight about Jane/Annette). In the source, Julius says \"It's mighty lucky you did say it\" explaining the nurse-kit comment sparked his realization. The draft keeps \"It's mighty lucky you did say it\" but removes what Julius figured out \u2014 so a reader can follow that Julius has an idea but loses *what* the idea is. However, this is atmospheric rather than structurally damaging \u2014 the chapter ends with the Annette photograph clue, which is still present. Not a structural break per the gate test.\n\n**Ch 023 draft analysis**\n\nThe opening: \"The Prime Minister tapped the desk with nervous fingers. 'Do you really mean things are not so desperate after all?'\" \u2014 the source establishes this is resuming a conversation (\"took up his conversation with Mr. Carter at the point it had broken off\"). The draft omits this framing. A reader opening Ch 023 cold sees the PM ask this question without knowing *what* prior development prompted it. But actually \u2014 the PM is responding to Tommy's letter, which is about to be produced. The question is answered immediately. A competent reader follows.\n\n\"Sir James was shown in\" \u2014 Sir James Peel Edgerton has been mentioned in this same draft chapter already (\"I sometimes fancy I see a shadow behind. Peel Edgerton \u2014 working in the dark\"). So the name is established in the preceding draft passage. Fine.\n\nThe letter quote: \"I want a repeat of that telegram sent to Tuppence at the Ritz.\" The draft cuts the sentence: \"Sir James Peel Edgerton said you would be able to manage that for me. He's frightfully clever.\" This is an authorized removal of a supporting detail; the request still parses.\n\nSir James says he asked whether \"it bore a Californian photographer's mark\" \u2014 this is a detail whose origin (what Sir James knew/suspected about the photo) was cut. A reader can understand the exchange without knowing *why* Sir James guessed this. Not a structural failure.\n\n\"He reminded me of something I'd said at Manchester about that bogus telegram.\" The source says: \"something I had said to him at Manchester respecting that bogus telegram which lured Miss Cowley away.\" The draft drops \"which lured Miss Cowley away.\" A reader who has read the draft of previous chapters knows about the bogus telegram; the phrase still parses. Not a structural failure.\n\n\"Carter took a sheet out and read aloud\" \u2014 in the source, Carter takes the sheet \"from his pocket.\" The draft just says \"took a sheet out.\" Parses fine.\n\nThe page-boy's statement: \"the page-boy's statement that Miss Cowley drove to Charing Cross.\" In the draft, no page-boy has been introduced in Ch 022 or Ch 023 draft. The source introduces the page-boy via Sir James's explanation \u2014 which is present in the draft (\"the page-boy's statement\"). But who is this page-boy? The draft has not previously established any page-boy character. The source doesn't introduce a named character here \u2014 it's just an unnamed functionary (a page-boy at the Ritz who saw Tuppence leave). This is a minor unnamed character referenced by descriptor. Per the explicit rejections: \"A minor character is referred to only by a descriptor ('the neighbour', 'Myrtle's sister') and the descriptor is clear; proper-name continuity is not required.\" The descriptor \"page-boy\" is clear enough \u2014 a reader understands it's someone who saw Miss Cowley leave. Not a finding.\n\n\"But the bogus inspector?\" \u2014 in the source this is \"But the bogus inspector? Inspector Brown?\" The draft cuts \"Inspector Brown.\" The PM is asking about the bogus inspector's connection to the photograph in Hersheimmer's drawer. The phrase \"bogus inspector\" was established earlier in the novel (authorized cuts haven't removed all references). The draft reader may not have a clear antecedent for \"the bogus inspector\" in *this* chapter's draft \u2014 but Ch 023 draft hasn't established who the bogus inspector is either. Let me check: does \"Inspector Brown\" / \"bogus inspector\" appear anywhere in Ch 022 or Ch 023 draft? In Ch 022 draft: no mention of a bogus inspector. In Ch 023 draft: no mention. The PM's question \"But the bogus inspector?\" lands with no local establishment of what inspector is meant. However \u2014 Mr. Brown has been established throughout the novel, and \"bogus inspector\" is a descriptor. The gate test: would a reader be *genuinely confused*? The PM is asking how the photograph got in Hersheimmer's drawer, and then asks about \"the bogus inspector\" \u2014 a reader without source access, having read these two chapters, would not know what \"bogus inspector\" refers to because neither draft chapter has mentioned any inspector. This could be a mid-scene jump or dangling reference...\n\nBut wait \u2014 is this a residue of an authorized cut? The authorized subplot removals don't include anything about \"Inspector Brown.\" Let me check: \"Authorized minor-character removals\" do not include Inspector Brown. This appears to be material that should have survived compression. The PM's non-sequitur \"But the bogus inspector?\" refers to someone/something not established in either draft chapter, and Sir James's response (\"Ah,\" said Sir James thoughtfully) only makes sense if the reader knows what inspector is being asked about. This is a dangling reference.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"But the bogus inspector?\\\" \\\"Ah,\\\" said Sir James thoughtfully.\",\n    \"source_has\": \"\\\"But the bogus inspector? Inspector Brown?\\\" \u2014 establishing the referent as the person who the PM suspects placed or took the photograph; prior chapters establish Inspector Brown as Mr. Brown's alias used to conduct a search.\",\n    \"gate_test_answer\": \"A reader of only the two draft chapters has seen no mention of any inspector in either chapter, so 'the bogus inspector' is genuinely unresolvable \u2014 the reader cannot tell who or what is being asked about, not merely less richly described.\"\n  }\n]\n```",
+    "input_tokens": 8939,
+    "output_tokens": 1727,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 38.41522693634033,
+    "stop_reason": "end_turn"
+  }
+}

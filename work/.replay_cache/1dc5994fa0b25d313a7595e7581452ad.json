@@ -1,0 +1,81 @@
+{
+  "ts": "2026-05-07T23:01:49",
+  "key": "1dc5994fa0b25d313a7595e7581452ad",
+  "model": "anthropic:claude-opus-4-7",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "draft",
+    "hash": "9051cf285d6ab6095a24d0887ebc4cd4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/drafter.py",
+        "sha256": "7b528c6eeb991962ac87433eecf551d6e5701b918acc79a0904da5eaecd834b8",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/motif_ledger.py",
+        "sha256": "e954339be994d3c05b158ff34567bb3fe48f5aa4d1df25b4c7b85e9562aa80d4",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "forage/text_norm.py",
+        "sha256": "203b6456278189eb60b29a06ac25d406164940f405e6f9129b7f2f76c53ce64b",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_lean.md",
+        "sha256": "1ec9e462dab787b602c28800358c800ee1bc882b42b56c4f009f6ab141178152",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_segment.md",
+        "sha256": "45996981ceee16182e89bd7dbdc5983a8446045506ece4efebc6fcca9a43c6ac",
+        "missing": false
+      },
+      {
+        "path": "spec/ABRIDGMENT_SPEC.md",
+        "sha256": "a1d6760a2bf9cbc19d1e92214903cbd1fc03dcbe4e7692307df7e3170c918f7d",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "## Chapter 1 \u2014 The Life-Buoy\n\nSteering southeastward by Ahab's levelled steel, the Pequod held on her path towards the Equator. The long passage through unfrequented waters, the unvarying trade winds, the monotonously mild waves \u2014 all seemed strange calm things preluding some riotous and desperate scene.\n\nAt last, in the deep darkness before dawn, sailing by a cluster of rocky islets, the watch was startled by a cry so plaintively wild and unearthly \u2014 like half-articulated wailings of the ghosts of all Herod's murdered Innocents \u2014 that all stood transfixedly listening, like the carved Roman slave. The Christian part of the crew said it was mermaids, and shuddered; the pagan harpooneers remained unappalled. Yet the grey Manxman, oldest mariner of all, declared the sounds were the voices of newly drowned men in the sea.\n\nWhen Ahab came to the deck at dawn and was told, he hollowly laughed and explained the wonder. Those rocky islands were the resort of seals; young seals or their dams, parted from one another, must have risen by the ship, crying with their human sort of wail. Mariners cherish a superstitious feeling about seals, from their peculiar tones in distress and the human look of their round heads peering from the water.\n\nThe bodings were destined to receive plausible confirmation. At sunrise a man went from his hammock to the fore-mast-head, and whether he was not yet half waked from his sleep \u2014 for sailors sometimes go aloft in a transition state \u2014 there is now no telling; but he had not been long at his perch when a cry was heard, and a rushing; and looking up, they saw a falling phantom in the air; and looking down, a little tossed heap of white bubbles in the blue of the sea.\n\nThe life-buoy \u2014 a long slender cask \u2014 was dropped from the stern; but no hand rose to seize it, and the sun having long beat upon it, the cask had shrunken, so that it slowly filled, and the studded iron-bound cask followed the sailor to the bottom, as if to yield him his pillow, though in sooth but a hard one.\n\nAnd thus the first man of the Pequod that mounted the mast to look out for the White Whale, on the White Whale's own peculiar ground, was swallowed up in the deep. Few were grieved, regarding it not as a foreshadowing of evil but as the fulfilment of an evil already presaged \u2014 the wild shrieks of the night before. But again the old Manxman said nay.\n\nThe lost life-buoy was now to be replaced; and as no cask of sufficient lightness could be found, they were going to leave the stern unprovided when, by certain strange signs and innuendoes, Queequeg hinted concerning his coffin.\n\n\"A life-buoy of a coffin!\" cried Starbuck, starting.\n\n\"Rather queer, that, I should say,\" said Stubb.\n\n\"It will make a good enough one,\" said Flask. \"The carpenter can arrange it easily.\"\n\n\"Bring it up; there's nothing else for it,\" said Starbuck, after a melancholy pause. \"Rig it, carpenter; do not look at me so \u2014 the coffin, I mean. Dost thou hear me? Rig it.\"\n\n\"And shall I nail down the lid, sir?\"\n\n\"Aye.\"\n\n\"And shall I caulk the seams, sir?\"\n\n\"Aye.\"\n\n\"And shall I then pay over the same with pitch, sir?\"\n\n\"Away! what possesses thee to this? Make a life-buoy of the coffin, and no more.\"\n\nThe carpenter, set to the task, grumbled at the cobbling sort of business \u2014 undignified, not his place. He liked clean, virgin, fair-and-square mathematical jobs: something that begins at the beginning, is at the middle when midway, and comes to an end at the conclusion; not a cobbler's job, that's at an end in the middle, and at the beginning at the end. But he was made of knotty Aroostook hemlock; he did not budge. \"We workers in woods make bridal-bedsteads and card-tables, as well as coffins and hearses; we work by the month, or by the job, or by the profit. Cruppered with a coffin! Sailing about with a grave-yard tray! But never mind. I'll have me thirty separate Turk's-headed life-lines, each three feet long, hanging round the coffin. Then, if the hull go down, there'll be thirty lively fellows all fighting for one coffin, a sight not seen very often beneath the sun! Come hammer, caulking-iron, pitch-pot, and marling-spike! Let's to it.\"\n\n## Chapter 2 \u2014 The Pequod Meets The Rachel\n\nNext day, a large ship, the Rachel, was descried bearing directly down upon the Pequod, all her spars thickly clustering with men. As she shot nigh, her boastful sails fell together as blank bladders that are burst, and all life fled from the smitten hull.\n\n\"Bad news; she brings bad news,\" muttered the old Manxman. But ere her commander, with trumpet to mouth, could hopefully hail, Ahab's voice was heard.\n\n\"Hast seen the White Whale?\"\n\n\"Aye, yesterday. Have ye seen a whale-boat adrift?\"\n\nThrottling his joy, Ahab negatively answered; and would have boarded the stranger when the captain himself, having stopped his vessel's way, descended her side. A few keen pulls and his boat-hook clinched the Pequod's main-chains, and he sprang to the deck \u2014 recognised by Ahab for a Nantucketer he knew. But no formal salutation was exchanged.\n\n\"Where was he? \u2014 not killed! \u2014 not killed!\" cried Ahab, closely advancing. \"How was it?\"\n\nIt seemed that late on the previous afternoon, three of the stranger's boats engaged with a shoal of whales had been led some four or five miles from the ship; and while in swift chase to windward, the white hump and head of Moby Dick had loomed up out of the water to leeward. The fourth, reserved boat had been instantly lowered in chase; the masthead saw a swift gleam of bubbling white water, and after that nothing more. Darkness came on; the ship picked up her three windward boats, kindled a fire in her try-pots for a beacon, and crowded all sail after the missing one. They paused, lowered spare boats, dashed on, paused again; yet not the least glimpse of the missing keel had been seen.\n\nThe stranger Captain immediately revealed his object: that the Pequod unite with his own in the search, sailing some four or five miles apart on parallel lines, sweeping a double horizon.\n\n\"I will wager something now,\" whispered Stubb to Flask, \"that some one in that missing boat wore off that Captain's best coat \u2014 see how pale he looks \u2014 pale in the very buttons of his eyes \u2014\"\n\n\"My boy, my own boy is among them. For God's sake \u2014 I beg, I conjure\" \u2014 exclaimed the stranger Captain to Ahab, who thus far had but icily received his petition. \"For eight-and-forty hours let me charter your ship \u2014 I will gladly pay, and roundly pay \u2014 for eight-and-forty hours only \u2014 you must, oh, you must, and you _shall_ do this thing.\"\n\n\"His son!\" cried Stubb. \"Oh, it's his son he's lost! We must save that boy.\"\n\n\"He's drowned with the rest on 'em, last night,\" said the old Manx sailor; \"I heard; all of ye heard their spirits.\"\n\nNot only was one of the captain's sons among the missing boat's crew; another son had been aboard one of the other boats, separated from the ship during the dark vicissitudes of the chase, and the wretched father had been plunged to the cruellest perplexity until his chief mate adopted the ordinary procedure of picking up the majority first. The yet-missing boy was but twelve years old \u2014 sent early, with the unmisgiving hardihood of a Nantucketer's paternal love, to be initiated in the perils and wonders of his race's almost immemorial vocation.\n\nMeantime, the stranger still besought his poor boon; and Ahab still stood like an anvil, receiving every shock, but without the least quivering of his own.\n\n\"I will not go,\" said the stranger, \"till you say _aye_ to me. Do to me as you would have me do to you in the like case. For _you_ too have a boy, Captain Ahab \u2014 though but a child, and nestling safely at home now \u2014 a child of your old age too \u2014 Yes, yes, you relent; I see it \u2014 run, run, men, now, and stand by to square in the yards.\"\n\n\"Avast,\" cried Ahab \u2014 \"touch not a rope-yarn\"; then in a voice that prolongingly moulded every word \u2014 \"Captain Gardiner, I will not do it. Even now I lose time. Good-bye, good-bye. God bless ye, man, and may I forgive myself, but I must go. Mr. Starbuck, look at the binnacle watch, and in three minutes from this present instant warn off all strangers: then brace forward again, and let the ship sail as before.\"\n\nHurriedly turning, with averted face, he descended into his cabin. Gardiner, transfixed at this unconditional and utter rejection, started from his enchantment and silently hurried to the side; more fell than stepped into his boat, and returned to his ship.\n\nSoon the two ships diverged their wakes; and long as the strange vessel was in view, she was seen to yaw hither and thither at every dark spot on the sea, however small, her masts and yards thickly clustered with men, as three tall cherry trees, when the boys are cherrying among the boughs. But by her still halting course and winding, woeful way, you plainly saw that this ship that so wept with spray still remained without comfort. She was Rachel, weeping for her children, because they were not.",
+    "input_tokens": 8969,
+    "output_tokens": 19631,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 12752,
+    "duration_s": 2359.3413388729095,
+    "stop_reason": "end_turn"
+  }
+}

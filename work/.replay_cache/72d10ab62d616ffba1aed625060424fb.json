@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:39:46",
+  "key": "72d10ab62d616ffba1aed625060424fb",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the draft systematically, applying each test.\n\n**Ch 001 draft checks:**\n\n- The sentence \"When, almost immediately, the telephone rang inside and the butler left the porch Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.\" \u2014 In the source, Daisy seizes the interruption to lean toward Nick and whisper, while Tom separately goes inside when the butler murmurs to him. In the draft these are collapsed and joined by \"yet,\" creating a broken pivot: \"yet\" implies contrast, but both Daisy and Tom are reacting to the same interruption. More importantly, the source had the butler whisper to Tom *first*, prompting Tom to leave, and then Daisy uses the resulting absence. The draft's \"yet\" makes it read as if Daisy and Tom respond oppositely to the same moment \u2014 but the content of both reactions is preserved. A competent reader would be puzzled by the \"yet\" since both clauses describe responses to the telephone/interruption rather than contrasting actions. Let me assess if this is a genuine structural failure. Actually, re-reading: in the source, the butler murmurs to Tom, Tom goes inside; then Daisy (in Tom's absence) leans forward. In the draft, Daisy seizes the interruption AND Tom goes inside, joined by \"yet.\" This is a broken pivot \u2014 \"yet\" signals contrast between two things, but both are reactions to the same phone call, and the causal chain (Tom leaves \u2192 Daisy, freed, leans forward) is destroyed. This is a valid broken_pivot finding.\n\n- \"I doubt if even Miss Baker, who seemed to have mastered a certain hardy scepticism, was able utterly to put this fifth guest's shrill metallic urgency out of mind.\" \u2014 \"fifth guest\" in draft: at the table we have Nick, Tom, Daisy, Miss Baker, and the implied woman on the phone. The source has the same sentence. The draft cut \"I was conscious of wanting to look squarely at everyone\" but kept the \"fifth guest\" line. The phrase \"fifth guest\" requires the reader to count the dinner party: Tom, Daisy, Miss Baker, Nick = four, plus the telephone woman = five. This is inferable. Not a finding.\n\n- Jordan Baker's introduction as a sports figure: \"Oh\u2014you're Jordan Baker.\" / \"I knew now why her face was familiar\u2014its pleasing contemptuous expression had looked out at me from many rotogravure pictures of the sporting life.\" The source adds \"at Asheville and Hot Springs and Palm Beach.\" The draft just says \"sporting life.\" This is a minor trim, not a structural failure.\n\n**Ch 002 draft checks:**\n\n- \"the sister, a slender, worldly girl with powdered face and jangling bracelets; and a pale, feminine man from the flat below, a photographer, with his shrill, languid wife.\" \u2014 Catherine and the McKees are authorized removals (named). They appear here only by descriptor. This is fine \u2014 no named orphan since Catherine, Mr. McKee, Mrs. McKee are elided by name. The descriptor \"the sister\" and \"a photographer\" are clear.\n\n- \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\" \u2014 \"Chester\" here is the photographer's first name. The photographer has been introduced only as \"a pale, feminine man from the flat below, a photographer.\" \"Chester\" appears without any prior establishment in the draft. Chester McKee is on the authorized-removal list, but the name \"Chester\" survives in this quoted speech. A reader of the draft has no idea who \"Chester\" is \u2014 the photographer was never named. This is an unglossed_name finding.\n\n- \"She turned to the photographer's wife and the room rang full of her artificial laughter.\" \u2014 In the source, Myrtle \"turned to Mrs. McKee.\" The draft replaces with \"the photographer's wife\" \u2014 this is clear by descriptor. Not a finding.\n\n- \"his wife and the sister scolding and consoling\" \u2014 \"the sister\" is introduced earlier in the draft paragraph as part of the arriving company. Clear enough.\n\n- The broken pivot in Ch 001: \"Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.\" \u2014 This is structurally damaged. In the source, the sequence is: (1) butler murmurs to Tom; (2) Tom goes inside; (3) in Tom's absence, Daisy leans toward Nick. The draft collapses this into a single moment joined by \"yet,\" implying Daisy's seizing and Tom's departure are contrasted responses. The \"yet\" signals logical opposition but there is no opposition \u2014 both are reactions to the same event, and the causal logic (Tom's departure enabling Daisy's confidence) is severed. Valid broken_pivot.\n\n- \"A subdued impassioned murmur was audible in the room beyond, trembled on the verge of coherence, sank down, mounted excitedly, and then ceased altogether.\" \u2014 In the source, this comes after Miss Baker leans forward to listen. In the draft, the murmur sentence follows directly after Tom going inside, with no mention of Miss Baker's listening posture. The sentence still parses \u2014 it describes the murmur. Not a structural failure, just less atmospheric.\n\nNow let me finalize findings:\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.\",\n    \"source_has\": \"the butler left the porch Daisy seized upon the momentary interruption and leaned towards me [then later] The butler came back and murmured something close to Tom's ear, whereupon Tom frowned, pushed back his chair, and without a word went inside.\",\n    \"gate_test_answer\": \"A reader is genuinely misled: the 'yet' signals logical contrast between Daisy's and Tom's reactions, but both are responses to the same interruption; moreover the source's causal chain\u2014Tom's absence enabling Daisy's confidential lean\u2014is destroyed, leaving the 'yet' connecting two parallel, not opposing, actions.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\",\n    \"source_has\": \"\\\"If Chester could only get you in that pose I think he could make something of it.\\\" \u2014 spoken by Mrs. McKee, with Chester established as Mr. McKee's first name via prior introduction of 'Mr. McKee'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the photographer has been introduced in the draft only as 'a pale, feminine man from the flat below, a photographer' \u2014 never named \u2014 so the name 'Chester' in this quoted speech has no antecedent in the draft and the reader cannot identify who Chester is.\"\n  }\n]\n```",
+    "input_tokens": 26915,
+    "output_tokens": 1657,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.63523316383362,
+    "stop_reason": "end_turn"
+  }
+}

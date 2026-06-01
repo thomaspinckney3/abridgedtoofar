@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:27:04",
+  "key": "89e19d6e7f4f921e6917715fba6fda21",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft systematically, applying only the seven tests and the gate test.\n\n---\n\n**Ch 002 draft \u2014 checking for structural damage**\n\nThe draft replaces named minor characters (McKee, Catherine) with descriptors (\"the photographer,\" \"his wife,\" \"the sister\") \u2014 this is authorized and clean.\n\nOne passage needs attention:\n\n> \"His voice faded off and Tom glanced impatiently around the garage.\"\n\nIn the source, Wilson says \"I don't mean that\u2026 I just meant\u2014\" and *then* his voice fades off. In the draft, Tom has just said \"No, he doesn't\" (coldly), and then \"His voice faded off\" \u2014 but \"his\" has no clear antecedent: Tom just spoke; Wilson hasn't spoken since \"Works pretty slow, don't he?\" The \"voice fading off\" belongs to Wilson in the source, but in the draft the pronoun's antecedent is ambiguous/wrong. A reader would attribute the fading voice to Tom, who just spoke coldly \u2014 which is the opposite of what happened. This is a genuine dangling pronoun.\n\nNo other structural breaks in Ch 002.\n\n---\n\n**Ch 003 draft \u2014 checking for structural damage**\n\n**\"Lucille\" passage:**\n\n> \"I don't think it's so much that,\" argued Lucille; \"it's more that he was a German spy during the war.\"\n\nIn the source, \"Lucille\" is introduced two exchanges earlier: *\"It was for Lucille, too.\"* and *\"I like to come,\" Lucille said.* In the draft, those lines are cut. The draft has the girl's companion referenced only as \"her companion\" (also cut) and the name \"Lucille\" never appears before this sentence. The draft goes: girl answers Jordan \u2192 girl turns to companion \u2192 (cut) \u2192 another girl says gown-story \u2192 Jordan asks \u2192 girl confirms \u2192 other girl comments \u2192 Nick asks \u2192 \"Gatsby\" \u2192 leaning together \u2192 \"killed a man\" \u2192 Mr. Mumbles listen \u2192 **\"Lucille\"** appears with no prior introduction in the draft.\n\nThis is an unglossed minor proper name: Lucille is on the authorized removal list as \"Lucille\" (authorized minor-character removal). Per the named-person continuity invariant: *\"if a proper name from the authorized minor-character list appears in the draft, either the preceding draft chapter or the local sentence/paragraph must identify that person.\"* The name survives but its introduction was cut; the local sentence gives no identifier.\n\n**\"mid-scene jump\" / \"broken pivot\" check for the end of Ch 003:**\n\n> \"As I walked down the steps I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\"\n\nIn the source, what Nick sees is the car-in-the-ditch scene (Owl Eyes). That subplot is authorized to be cut. The draft's \"but I turned away\" is a pivot contrasting something (the not-quite-over evening) that the draft never shows \u2014 but this is a *direct residue of an authorized cut*, so not a finding.\n\nNo other structural breaks in Ch 003.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"His voice faded off and Tom glanced impatiently around the garage.\",\n    \"source_has\": \"Wilson says 'I don't mean that\u2026 I just meant\u2014' and his voice fades off; the pronoun clearly belongs to Wilson after his interrupted self-correction.\",\n    \"gate_test_answer\": \"A reader is genuinely misled: the immediately preceding speaker in the draft is Tom ('No, he doesn't'), so 'his voice faded off' reads as Tom's voice fading \u2014 the opposite of what the scene requires, where Wilson trails off mid-excuse.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"I don't think it's so much that,\\\" argued Lucille; \\\"it's more that he was a German spy during the war.\\\"\",\n    \"source_has\": \"Lucille is introduced two exchanges earlier: 'It was for Lucille, too.' and 'I like to come,' Lucille said \u2014 establishing her as one of the two girls at the table before she voices any opinion.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the name 'Lucille' appears without any prior mention in the draft, mid-conversation, with no appositive or descriptor to identify who is speaking, leaving the reader unable to place the voice.\"\n  }\n]\n```",
+    "input_tokens": 24715,
+    "output_tokens": 1090,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 26.701739072799683,
+    "stop_reason": "end_turn"
+  }
+}

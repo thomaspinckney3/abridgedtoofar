@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T10:28:57",
+  "key": "975356ad5ee92df164b0205f6c919c5d",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "92e80799492fc0c15cb29a75163e1709",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "82ce8d89bcffcb692c689f7263cafd1f5228cd37fe055a683732015551f305e3",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\n      \"name\": \"The Director of Companies (captain of the Nellie)\",\n      \"appearances_summary\": \"Frame narrator\u2019s host on the Thames in Ch 001 and the voice that ends the frame in Ch 003.\",\n      \"reason_removable\": \"The frame only requires anonymous listeners aboard the Nellie, so his titled presence can be merged into an unnamed \u2018captain/listener\u2019 without affecting plot or themes.\"\n    },\n    {\n      \"name\": \"The Lawyer (aboard the Nellie)\",\n      \"appearances_summary\": \"One of Marlow\u2019s silent listeners on the yacht in Ch 001.\",\n      \"reason_removable\": \"He contributes no action or unique perspective beyond being one of the generic listeners required by the frame.\"\n    },\n    {\n      \"name\": \"The Accountant (aboard the Nellie, frame character)\",\n      \"appearances_summary\": \"Another of the silent listeners in Ch 001 (not the Company accountant at the Outer Station).\",\n      \"reason_removable\": \"He is redundant as an individual since the synopsis only needs an audience on the Nellie, not this titled listener.\"\n    },\n    {\n      \"name\": \"The compassionate secretary (Brussels)\",\n      \"appearances_summary\": \"Briefly ushers Marlow through contract formalities in Ch 001.\",\n      \"reason_removable\": \"The synopsis already covers Marlow\u2019s hiring in Brussels, so this clerk\u2019s sympathetic color can be dropped.\"\n    },\n    {\n      \"name\": \"The shabby clerk escort (Brussels)\",\n      \"appearances_summary\": \"Takes Marlow to the doctor and trades small talk over a drink in Ch 001.\",\n      \"reason_removable\": \"He adds only incidental local color to the Brussels sequence and can be omitted without loss.\"\n    },\n    {\n      \"name\": \"The Company \u2018great man\u2019 in Brussels\",\n      \"appearances_summary\": \"A brief handshake meeting with the local Company head in Ch 001.\",\n      \"reason_removable\": \"Marlow\u2019s appointment is already secured by his aunt\u2019s influence, so this faceless executive is nonessential.\"\n    },\n    {\n      \"name\": \"The Swede (coastal steamer captain)\",\n      \"appearances_summary\": \"Ferries Marlow up the coast and mentions a suicide in Ch 001.\",\n      \"reason_removable\": \"He is a one-scene ferry for transport logistics and can be elided while Marlow simply \u2018proceeds inland.\u2019\"\n    },\n    {\n      \"name\": \"The manager\u2019s uncle (leader of the Eldorado Expedition)\",\n      \"appearances_summary\": \"Appears in Ch 001\u2013002 hovering around the Central Station and whispering with the manager before vanishing upriver.\",\n      \"reason_removable\": \"The synopsis requires the Eldorado Expedition to appear, not the uncle\u2019s person or private chats, so he can be dropped while keeping the expedition as a group.\"\n    },\n    {\n      \"name\": \"Van Shuyten (Dutch trader on the coast, mentioned by the Russian)\",\n      \"appearances_summary\": \"Named in Ch 002 as the Russian\u2019s outfitter before the interior wanderings.\",\n      \"reason_removable\": \"He exists only in the Russian\u2019s backstory and has no effect on events or themes.\"\n    },\n    {\n      \"name\": \"Mr. Towson/Towser (author of the seamanship manual)\",\n      \"appearances_summary\": \"Named on the title page of the found book at the reed hut in Ch 002.\",\n      \"reason_removable\": \"The synopsis needs the manual as a talisman of reality, not its author\u2019s name.\"\n    },\n    {\n      \"name\": \"The Company agent with gold-rimmed spectacles (Europe)\",\n      \"appearances_summary\": \"Calls on Marlow after his return in Ch 003 to demand Kurtz\u2019s papers for the Company.\",\n      \"reason_removable\": \"The synopsis only requires that Marlow refuses the Company\u2019s attempts to seize the papers, which can be narrated without this specific emissary.\"\n    }\n  ],\n  \"subplots\": [\n    {\n      \"name\": \"The manager and his uncle\u2019s whispered schemes against Kurtz\",\n      \"chapter_span\": \"Ch 002\",\n      \"reason_removable\": \"Their balcony-of-the-bush conniving is duplicative of the manager\u2019s envy and bad faith already shown elsewhere and has no bearing on the river journey\u2019s outcomes.\"\n    },\n    {\n      \"name\": \"The boilermaker\u2019s pigeon-fancying friendship with Marlow\",\n      \"chapter_span\": \"Ch 001\",\n      \"reason_removable\": \"It is charming color around the \u2018rivets\u2019 obsession but does not alter the repair, departure, or any later consequence.\"\n    },\n    {\n      \"name\": \"Marlow\u2019s fainting white companion and the wrecked hammock episode on the overland trek\",\n      \"chapter_span\": \"Ch 001\",\n      \"reason_removable\": \"This side adventure only underscores the general futility and can be cut without changing the passage to the Central Station or Marlow\u2019s arc.\"\n    },\n    {\n      \"name\": \"The Eldorado Expedition\u2019s later fate (the dead donkeys)\",\n      \"chapter_span\": \"Ch 002\",\n      \"reason_removable\": \"Reporting their eventual ruin adds satiric closure but has no effect on Marlow\u2019s repair, voyage, or meeting with Kurtz.\"\n    },\n    {\n      \"name\": \"The Russian trader\u2019s personal backstory (runaway schoolboy, English ships, arch-priest father, outfitted by Van Shuyten)\",\n      \"chapter_span\": \"Ch 002\u2013003\",\n      \"reason_removable\": \"Only his present role\u2014devoted go-between for Kurtz and source of key revelations\u2014matters to the plot.\"\n    }\n  ],\n  \"digressions\": [\n    {\n      \"chapter_ids\": [\"001\"],\n      \"topic\": \"Long historical catalogue of the Thames\u2019 heroic past (Drake to Franklin; Golden Hind to Erebus and Terror)\",\n      \"reason_removable\": \"This soaring prelude can be compressed to \u2018the Thames has launched conquests\u2019 without harming the frame or throughline.\"\n    },\n    {\n      \"chapter_ids\": [\"001\"],\n      \"topic\": \"Coastal voyage vignettes, including the French man-of-war \u2018firing into a continent\u2019 and catacomb-like ports\",\n      \"reason_removable\": \"These set tone but do not set up any later action or character turn beyond what briefer summary can supply.\"\n    },\n    {\n      \"chapter_ids\": [\"002\"],\n      \"topic\": \"Technical layout of the steamboat and pilot-house furnishings\",\n      \"reason_removable\": \"The inventory of couch, shutters, gauges, rifles, and wheel adds mechanics but no stakes or meaning not conveyed elsewhere.\"\n    },\n    {\n      \"chapter_ids\": [\"002\"],\n      \"topic\": \"Economic aside on cannibals\u2019 brass-wire \u2018pay\u2019 and rotten hippo-meat provisions\",\n      \"reason_removable\": \"The micro-economy details can be tightened to a line about hunger and restraint without loss of the theme or plot.\"\n    },\n    {\n      \"chapter_ids\": [\"002\"],\n      \"topic\": \"Mini-essay praising Towson\u2019s seamanship manual as \u2018unmistakably real\u2019\",\n      \"reason_removable\": \"The manual must be found, but its page-long eulogy can be pared down to a sentence and still serve as Marlow\u2019s tether to reality.\"\n    }\n  ],\n  \"skippable_chapters\": []\n}",
+    "input_tokens": 54696,
+    "output_tokens": 7916,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 90.78242778778076,
+    "stop_reason": "stop"
+  }
+}

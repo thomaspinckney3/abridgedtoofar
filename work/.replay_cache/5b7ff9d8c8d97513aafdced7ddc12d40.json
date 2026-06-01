@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:22:59",
+  "key": "5b7ff9d8c8d97513aafdced7ddc12d40",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test and the seven validity tests.\n\n---\n\n**Ch 134 draft \u2014 scan**\n\nThe draft is a clean compression. \"Perth's levelled iron\" appears \u2014 Perth is the blacksmith who forged Ahab's harpoon, introduced earlier in the narrative, and is a continuing named figure (not on the authorized removal list). His name appears here only as a possessive modifier identifying the iron, and the preceding draft chapter (134) does not re-introduce him. However, Perth is a major enough recurring character (he forged the harpoon in a dedicated scene) that a competent reader following the abridgment would know who he is. Marginal, but let's check: he is not on the authorized-removal list, he's a named craftsman whose scene was not listed as an authorized cut. The draft uses \"Perth's levelled iron\" with no local gloss. Test 7 asks whether the first local use identifies who the person is. Perth last appeared in earlier chapters; this chapter gives no identifier. But Perth is not a \"minor/removable\" character in the sense of the list \u2014 he's a named character with a dedicated chapter. A competent reader of the abridgment would have encountered him. Not a valid finding.\n\nEverything else in Ch 134 parses cleanly.\n\n---\n\n**Ch 135 draft \u2014 scan**\n\nThe chapter is largely verbatim. Let me check for structural issues.\n\n- \"Even as laughing-eyed elves gambol around their old sire, sporting with the circle of singed locks on the marge of the burnt-out crater of his brain.\" \u2014 The source names \"little Miriam and Martha\" as the elves. The draft removes the names (authorized or not \u2014 they're minor names not on the removal list, but they're essentially illustrative figures, not characters). The draft converts to descriptor \"laughing-eyed elves.\" Test 7 asks about proper names \u2014 the names are *removed* here, not orphaned. The descriptor survives. Not a finding.\n\n- Starbuck's line \"'Tis my Mary, my Mary herself!\" \u2014 \"Mary\" here is Starbuck's wife, named in his speech. She was introduced in the source in the same speech. In the draft, she is also in the same speech. No cut separates introduction from reference. Not a finding.\n\n- Fedallah at the end: \"Fedallah was motionlessly leaning over the same rail.\" Fedallah is a major recurring character, not on the removal list. Not a finding.\n\n- The entire chapter is so close to verbatim that no structural damage is detectable.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 7740,
+    "output_tokens": 606,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 15.579637050628662,
+    "stop_reason": "end_turn"
+  }
+}

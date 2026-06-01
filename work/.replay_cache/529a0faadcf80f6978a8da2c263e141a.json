@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:30:10",
+  "key": "529a0faadcf80f6978a8da2c263e141a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft systematically, applying the gate test rigorously and checking only for structural damage, not loss of ornamentation.\n\n---\n\n**Ch 005 draft \u2014 scan**\n\n- \"You wouldn't have to do any business with Wolfshiem.\" \u2014 The source follows this with \"Evidently he thought that I was shying away from the 'gonnegtion' mentioned at lunch, but I assured him he was wrong.\" The draft drops that explanatory clause. But the line itself parses; a reader understands Gatsby is clarifying the offer. The dropped explanation is a detail loss, not a structural failure. Not a finding.\n\n- \"Come back in an hour,\" she said to the driver in a grave murmur.\" \u2014 Source has \"Come back in an hour, Ferdie\" + \"His name is Ferdie\" exchange. Ferdie is on the authorized-removal list. The draft elides the name and the joke. The sentence parses cleanly and the driver is identified by descriptor. Not a finding.\n\n- \"I walked out the back way\u2014just as Gatsby had when he had made his nervous circuit of the house half an hour before, pacing round the outside while he worked up the courage to knock\" \u2014 The draft *adds* a gloss here that the source leaves implicit. Fine.\n\n- \"I know what we'll do,\" said Gatsby, \"we'll have the piano.\" / \"He called, and presently music drifted up\" \u2014 Klipspringer is on the authorized-removal list. The draft cuts the name and replaces the scene with an anonymous piano. The sentence parses. Not a finding.\n\n- The owl-eyed man reference: \"I could have sworn I heard the owl-eyed man break into ghostly laughter.\" \u2014 The owl-eyed man appeared in Ch 003 source (Owl Eyes library scene). That subplot is on the authorized-removal list. Does the draft of Ch 003 (not provided here) establish him? The authorized cut list removes \"Owl Eyes's library discovery and the car-in-the-ditch gag (Ch 003).\" If Owl Eyes was introduced only in those removed scenes, his name appears here in Ch 005 draft without any prior draft establishment. However, I don't have the Ch 003 draft to verify. I must work with what's provided. Since I cannot confirm from provided material, I'll note this as a candidate but cannot definitively flag it without the Ch 003 draft. I will not flag it as a confirmed finding.\n\n- Dan Cody photograph: \"That? That's Mr. Dan Cody, old sport.\" \u2014 In the draft, Nick notes \"The name sounded faintly familiar\" is *cut* from the draft. Let me check: source has \"The name sounded faintly familiar.\" Draft has: Nick asks \"Who's this?\" Gatsby answers \"That? That's Mr. Dan Cody, old sport.\" The draft then omits \"The name sounded faintly familiar. / 'He's dead now. He used to be my best friend years ago.'\" Wait \u2014 let me recheck the draft text carefully.\n\nDraft Ch 005: *\"'Who's this?' / 'That? That's Mr. Dan Cody, old sport.' / There was a small picture of Gatsby...\"* \u2014 The lines \"The name sounded faintly familiar. / 'He's dead now. He used to be my best friend years ago.'\" are cut. This is a detail/ornamentation loss. Dan Cody is named and will be fully explained in Ch 006. No structural damage here.\n\n**Ch 005 draft \u2014 clean.**\n\n---\n\n**Ch 006 draft \u2014 scan**\n\n- Ella Kaye: Source has a full paragraph on \"the none too savoury ramifications by which Ella Kaye, the newspaper woman, played Madame de Maintenon to his weakness and sent him to sea in a yacht, were common property of the turgid journalism in 1902.\" The draft cuts this. Ella Kaye still appears: \"Ella Kaye came on board one night in Boston and a week later Dan Cody inhospitably died\" and \"what remained of the millions went intact to Ella Kaye.\" Without the gloss identifying her as the newspaper woman who maneuvered Cody, is the reader confused? The reader knows she's a woman who got Cody's money \u2014 that's enough to follow the plot. The dropped gloss (\"the newspaper woman, played Madame de Maintenon\") is atmospheric/characterizing. The sentences still parse and the reader understands who she is in context (a woman who benefited from Cody's death). Gate test: reader is reading a less-ornamented version, not confused. Not a finding.\n\n- \"I hadn't been there two minutes when somebody brought Tom Buchanan in for a drink, with a man and a lady in a brown riding-habit.\" \u2014 Source: \"They were a party of three on horseback\u2014Tom and a man named Sloane and a pretty woman in a brown riding-habit, who had been there previously.\" Mr. Sloane is authorized-removed. The draft folds him into \"a man.\" Fine. But: \"a lady in a brown riding-habit\" \u2014 the source says \"a pretty woman in a brown riding-habit, who had been there previously.\" The \"who had been there previously\" gloss matters in the source because it explains why Gatsby is comfortable/excited; she later issues the vague dinner invitation. In the draft this detail is gone but the scene still reads coherently \u2014 she's just a lady in the party. Not a structural failure.\n\n- \"Gatsby stood on his porch, delighted that they had 'dropped in,' ringing bells, offering everything to people who wanted nothing.\" \u2014 This compresses the source dialogue. Parses fine.\n\n- \"Moved by an impulse, he turned to Tom, who had accepted the introduction as a stranger.\" \u2014 Source: \"Moved by an irresistible impulse.\" Minor word trim. Parses. But more importantly: \"who had accepted the introduction as a stranger\" \u2014 in the draft, was there an introduction? The draft says \"somebody brought Tom Buchanan in for a drink, with a man and a lady.\" There's no explicit introduction scene in the draft; Gatsby just speaks to Tom directly. In the source, the introduction is implied in the social scene. The phrase \"who had accepted the introduction as a stranger\" refers to an introduction that the draft hasn't shown. However, a competent reader can infer that when guests arrive, introductions happen \u2014 this is not genuinely confusing. Not a finding.\n\n- \"A vague invitation from the lady led to a muddle; Gatsby ran inside for his hat and light overcoat, intending to follow their party in his car.\" \u2014 The source has an extended scene where the lady invites \"both of you\" to supper, Mr. Sloane maneuvers to exclude Gatsby, Nick declines, and Gatsby misses the social cues. The draft compresses all this to \"a vague invitation from the lady led to a muddle.\" This parses. The reader understands Gatsby was invited vaguely and got confused. Not a structural failure.\n\n- \"While he was gone Tom muttered on the porch: 'My God, I believe the man's coming. Doesn't he know she doesn't want him?\u2026 I wonder where in the devil he met Daisy.'\" \u2014 In the source, this is a direct dialogue with Nick responding (\"She says she does want him\" / \"She has a big dinner party and he won't know a soul there\"). The draft presents Tom's words as a monologue/mutter, which removes the exchange but doesn't create a dangling dialogue \u2014 it reads as Tom muttering, not as a reply to a cut question. The reader follows. Not a finding.\n\n- \"Then the other three mounted their horses and rode away, and when Gatsby came out the front door they were already gone.\" \u2014 Source: Tom, Sloane, and the lady ride away. \"The other three\" refers to Tom + the man + the lady. In the draft, \"a man and a lady in a brown riding-habit\" plus Tom = three. \"The other three\" (other than Nick) is coherent. Parses.\n\n- \"We were at a particularly tipsy table, and what had amused me two weeks before turned septic on the air now.\" \u2014 Source: \"That was my fault\u2014Gatsby had been called to the phone, and I'd enjoyed these same people only two weeks before.\" The draft omits the explanation of why Nick was at this table and why he had been there before. The sentence reads as a broken pivot: \"what had amused me two weeks before\" \u2014 the draft gives no prior context for Nick having been at this table two weeks before. But wait: is there prior draft context? In the Ch 003/004 drafts (not provided), there were party scenes. The \"two weeks before\" refers to a previous party Nick attended. A reader who has been reading the abridgment knows Nick attended Gatsby's parties before. The sentence is somewhat compressed but a reader understands \"two weeks before at a similar party.\" Gate test: mildly jarring but not genuinely confusing. Not a finding.\n\n- \"At one point a drunken young woman at our table began shrieking until a doctor nearby stuck her head in the pool to calm her\u2014a cold shower being suggested and hotly refused\u2014and the fuss left Daisy tight-lipped with distaste.\" \u2014 This replaces the Miss Baedeker / Doctor Civet scene. Both are on the authorized-removal list. The compression introduces an anonymous \"doctor nearby\" \u2014 fine. But then: \"Tom laughed and turned to me. / 'Did you notice Daisy's face when that girl asked her to put her under a cold shower?'\" \u2014 In the draft's compressed version, it was the doctor who stuck the girl's head in the pool (to \"calm her\"), not the girl asking to put Daisy under a cold shower. Tom's question in the source refers to \"that girl asked her [Daisy] to put her [the girl] under a cold shower\" \u2014 i.e., the drunk girl asked Daisy to administer a cold shower. In the draft, the scene is compressed so that a doctor puts the girl's head in a pool. Tom's question \"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\" now refers to something that didn't happen in the draft version of events. The draft's version has a doctor doing it; the source's version has the girl asking Daisy to do it. Tom's question has a referent that was replaced/altered by compression.\n\nLet me apply the gate test carefully: A reader of the draft reads the compressed pool scene (doctor sticks girl's head in pool), then reads Tom asking \"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\" The reader would be confused: who asked Daisy to administer a cold shower? That didn't happen in the draft. This is a **broken pivot / dangling reference** \u2014 Tom's question refers to an event that the draft's own compression replaced with a different event.\n\nThis is a valid finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\\\"\",\n    \"source_has\": \"The source's pool scene has the drunk girl (Miss Baedeker) asking Daisy to administer a cold shower, making Tom's question directly referential. The draft replaced that beat with a doctor sticking the girl's head in the pool unprompted, so no girl ever asked Daisy anything.\",\n    \"gate_test_answer\": \"A reader of the draft is genuinely confused: Tom asks Daisy about a moment when 'that girl asked her to put her under a cold shower,' but the draft's own compressed version of the scene shows a doctor acting on his own initiative \u2014 no girl asked Daisy to do anything, so Tom's question has no antecedent event in the draft.\"\n  }\n]\n```",
+    "input_tokens": 23537,
+    "output_tokens": 2759,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 63.84695291519165,
+    "stop_reason": "end_turn"
+  }
+}

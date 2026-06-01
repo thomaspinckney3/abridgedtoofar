@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:44:35",
+  "key": "b5dbcd351d1cf4f69478faa9d76041c5",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both chapters carefully, applying each test in sequence.\n\n---\n\n**Ch 127 draft \u2014 scan**\n\nThe draft is well-compressed. \"Stubb and Flask, the third mate\" correctly glosses Flask locally. All pronouns and pivots are anchored. No issues.\n\n---\n\n**Ch 128 draft \u2014 scan**\n\n**The Manxman**: He is on the authorized removal list, but the draft retains him with a local appositive (\"the old Manxman, a sailor of the Isle of Man\"), so the named-person continuity invariant is satisfied. Not a finding.\n\n**\"'Twill hold, old gentleman\u2026\" dialogue**: The Manxman's warning is present; Ahab's reply is fully anchored. Fine.\n\n**\"There he goes now,\" muttered the Manxman**: The Manxman has been introduced locally. Fine.\n\n**\"Pip? whom call ye Pip?\" cried a small wild voice**: In the source, Pip's voice is unattributed here; the source's next few lines also lack a speaker tag for Pip until later context makes it clear. The draft adds \"cried a small wild voice,\" which is parallel. Fine.\n\n**\"let old Perth the blacksmith now come\"**: Source says \"let old Perth now come and rivet these two hands together.\" The draft adds \"the blacksmith\" as an appositive. Perth has not appeared in either draft chapter shown here, and the draft adds the gloss \"the blacksmith\" \u2014 this is actually a help, not a harm. Not a finding.\n\n**\"I'll see Mr. Stubb about it.\"**: Stubb is a principal character, continuously present across the narrative. No fresh gloss required. Not a finding.\n\n**Mid-scene jump check**: Ch 128 draft opens with \"The log and line had but very seldom been in use this voyage.\" The reference to \"the magnet scene\" (\"not many hours after the magnet scene\") \u2014 does Ch 127 draft establish this? Yes: Ch 127 draft is entirely about the compass/magnet incident. Fine.\n\n**\"his frantic oath about the level log and line\"**: The source earlier (in a chapter not shown here, Ch 118) contains Ahab's oath about the log and line when he dashes the quadrant. The draft refers to \"his frantic oath about the level log and line\" as if it has been established. Checking whether this was established in Ch 127 draft \u2014 it was not; the quadrant is mentioned (\"the crushed copper sight-tubes of the quadrant he had dashed down the day before\") but no oath about the log and line is mentioned anywhere in Ch 127 draft. This oath originates in a source chapter (Ch 118, where Ahab smashes the quadrant and swears to navigate only by dead reckoning, including the log-line), which may have been cut or compressed.\n\nLet me check: is Ch 118 an authorized cut? Looking at the authorized digression removals \u2014 Ch 117 (sea as gilder) and Ch 119 (the whale's sunward death) are cut, but Ch 118 is not listed as an authorized cut. However, the oath itself may have been in the preceding chapter's draft. The source of Ch 127 does not contain the oath; the oath is in Ch 118 source (Ahab smashes the quadrant). If Ch 118 was compressed and the oath was dropped, then \"his frantic oath about the level log and line\" becomes a dangling reference.\n\nBut I don't have the Ch 118 draft to verify. I can only judge on what's presented (Ch 127 draft and Ch 128 draft as a consecutive pair). Within the presented pair, \"his frantic oath\" is referred to definitionally \u2014 and within Ch 128 draft itself, the phrase is used in a subordinate clause that explains *why* Ahab glanced at the reel. A competent reader unfamiliar with the source would understand that Ahab had previously made some oath about the log and line, even without having read Ch 118. The phrase \"recalling his frantic oath\" implies prior establishment, but functions as a character-motivation marker; readers can infer Ahab had strong feelings about the log without confusion about the plot. This is borderline \u2014 it's a missing antecedent for \"his frantic oath\" \u2014 but the gate test suggests a reader would be mildly puzzled rather than actively misled or blocked. I'll treat it as a weak case and not flag it as a valid structural failure, since the sentence still parses and the reader understands Ahab is motivated by prior resolve.\n\nAfter full review, I find no sentence in either draft that fails the gate test by genuinely confusing or misleading a competent reader. The compression is clean.\n\n```json\n[]\n```",
+    "input_tokens": 8390,
+    "output_tokens": 1087,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 26.821306943893433,
+    "stop_reason": "end_turn"
+  }
+}

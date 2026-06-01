@@ -1,0 +1,20 @@
+{
+  "frame_number": 2,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "major",
+      "category": "prop_confusion",
+      "finding": "The Spouter-Inn’s smoke-dark whaling painting is depicted as a conventional marine seascape, breaking prop continuity.",
+      "visible_evidence": "On the left wall above the bench there is a framed painting of a ship on open water with clear tones, not a smoke-blackened abstract scene with a looming dark mass and three faint blue verticals.",
+      "repair_prompt": "Replace the left-wall artwork with the correct smoke-blackened, abstract whaling painting: a large soot-dark canvas showing a looming dark shape above three faint blue vertical strokes in a stormy, chaotic sea; no labels or plaques."
+    },
+    {
+      "severity": "minor",
+      "category": "unsupported_content",
+      "finding": "A giant toothed jawbone arch dominates the backbar area, an unspecific extra prop not called for in this frame.",
+      "visible_evidence": "Behind the landlord, large curved jaws with many sharp teeth form an arch over the counter and shelves.",
+      "repair_prompt": "Remove or reduce the prominence of the giant jawbone; emphasize low beams, unlabeled bottles, and cracked curios cases instead."
+    }
+  ]
+}

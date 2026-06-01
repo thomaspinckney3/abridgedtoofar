@@ -20,17 +20,17 @@ A reader who loves the original should feel the abridgment is the same book, sho
 split → classify → plan → summarize → cuts ──┐
                                               │
                       (cuts.json feeds into  ▼ drafter)
-                     
-                   draft → assemble → book-critique          ◄── default pipeline
+
+                   draft → coherence → coherence-fix → assemble → book-critique   ◄── default pipeline
                      │
-                     └──► proofread (post-hoc)               ◄── opt-in, recommended
+                     └──► proofread (post-hoc)                      ◄── opt-in, recommended
 
                    critique + iterate (draft → regen loop)    ◄── opt-in
                    coherence (adjacent-pair structural check) ◄── opt-in
                    validate (motif/style mechanical checks)   ◄── opt-in
 ```
 
-Default pipeline is **draft-only + book-critique**: the Opus drafter with extended thinking handles referent-chain integrity during generation, and the book critic verifies synopsis preservation at the end. The iterate loop (signature critic + regen) and coherence critic are opt-in — empirically they whack-a-mole on voice-dense prose and have low recall on the worst compression-induced breaks (cross-chapter antecedent loss). The proofread tool + human review is the recommended quality surface.
+Default pipeline is **draft + fresh coherence + coherence-fix + book-critique**: the Opus drafter with extended thinking handles referent-chain integrity during generation, the coherence-fix stage applies constrained adjacent-pair repairs from a current coherence report after drafting, and the book critic verifies synopsis preservation at the end. The iterate loop (signature critic + regen) and standalone post-hoc coherence critic are opt-in — empirically they whack-a-mole on voice-dense prose and have low recall on the worst compression-induced breaks (cross-chapter antecedent loss). The proofread tool + human review is the recommended quality surface.
 
 Every stage has a CLI subcommand. All stages operate on files under `work/<book_id>/`, so they're inspectable and rerunnable.
 
@@ -130,9 +130,9 @@ Default `--max-retries` is **1** (so the loop runs at most: critic → maybe red
 
 ### 9. `assemble` — assembly with budget report
 
-Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md` and writes `work/<book>/assembly_report.json` with budget stats: book target, ceiling, total drafted, overage (words and %), over_target/over_ceiling flags, and segments drafted/cut/missing.
+Zero-LLM. Concatenates drafted segments into `work/<book>/abridgment.md`, exports the final assembled book as UTF-8 plain text at `work/<book>/abridgment.txt`, publishes both `abridgment.md` and `abridgment.txt` under `books/<book>/`, and writes `work/<book>/assembly_report.json` with budget stats: book target, ceiling, total drafted, overage (words and %), over_target/over_ceiling flags, and segments drafted/cut/missing.
 
-Always emits `abridgment.md` when any drafted content exists. Budget adherence is reported, not gated — downstream stages (`book-critique`, `validate`) decide whether the produced abridgment is acceptable.
+Always emits work artifacts and published copies when any drafted content exists. Budget adherence is reported, not gated — downstream stages (`book-critique`, `validate`) decide whether the produced abridgment is acceptable.
 
 ### 10. `coherence` — structural damage critic
 
@@ -150,7 +150,7 @@ If `cuts.json` exists the prompt includes the authorized-removals block — resi
 
 Empirical numbers from the three books drafted with the cuts-aware pipeline: Dragon Maiden 0 findings / 15 pairs, Christie's *Secret Adversary* 12 findings / 28 pairs, Gatsby 11 findings / 8 pairs. Gatsby's higher hit rate reflects Fitzgerald's more allusive prose — some flagged items are genuine dialogue-turn drops, others are residues even the cuts-aware prompt doesn't fully suppress.
 
-Writes `work/<book>/coherence_report.json`. Intended for human review — does NOT auto-feed regen. The post-assembly full-pipeline driver runs coherence automatically.
+Writes `work/<book>/coherence_report.json`. Intended for human review when run directly — does NOT auto-feed regen. The full-pipeline driver regenerates this report immediately before coherence-fix so repairs never use stale findings, and can run an additional post-fix coherence review optionally.
 
 ### 11. `book-critique` — per-synopsis-sentence verification
 
@@ -294,24 +294,25 @@ forage plan gatsby                  # auto-runs classify on first call
 for chapter in 001 002 003 ... ; do
   forage iterate gatsby $chapter    # drafts + critiques + regens (cuts-aware)
 done
-forage assemble gatsby              # produces abridgment.md
+forage assemble gatsby              # produces abridgment.md + abridgment.txt
 forage coherence gatsby             # structural damage critic (post-hoc)
 forage book-critique gatsby         # verifies abridgment against synopsis
 forage validate gatsby              # mechanical sanity checks
 forage proofread gatsby             # paragraph-level alignment viewer
 ```
 
-Or use the `scripts/full_pipeline.py` driver to run draft across all diegetic chapters, then assemble + book-critique:
+Or use the `scripts/full_pipeline.py` driver to run the required upstream stages, draft across all diegetic chapters, then fresh coherence + coherence-fix + assemble + book-critique:
 
 ```bash
 .venv/bin/python -m scripts.full_pipeline gatsby
 # opt-in extras:
 .venv/bin/python -m scripts.full_pipeline gatsby --iterate      # critic + regen loop
 .venv/bin/python -m scripts.full_pipeline gatsby --coherence    # adjacent-pair critic
+.venv/bin/python -m scripts.full_pipeline gatsby --skip-coherence-fix  # disable coherence-fix
 .venv/bin/python -m scripts.full_pipeline gatsby --iterate --coherence
 ```
 
-(The full-pipeline script assumes `split`, `summarize`, and `cuts` have already been run; those are book-level one-time prereqs.)
+The full-pipeline script runs `split`, `classify`, `summarize`, `cuts`, `plan`, and `prepare-skips` before drafting. LLM stages still use the normal replay cache, so reruns reuse cached responses when the rendered prompt has not changed.
 
 ## Directory structure
 
@@ -367,6 +368,7 @@ forage/
       metadata.json                # {title, author, genre}
       split_config.json            # optional per-book splitter override
       abridgment.md                # (published) assembled abridgment
+      abridgment.txt               # (published) UTF-8 plain-text abridgment
       proofread.html               # (published) alignment viewer
   work/                            # generated output
     <book>/
@@ -383,7 +385,8 @@ forage/
         NNN.iterK.critic.json      # per-iteration critic snapshots
         gNNN.md                    # merged-group raw output (before split)
       alignments/NNN.json          # per-chapter paragraph alignments (for proofread)
-      abridgment.md                # assembled final output
+      abridgment.md                # assembled internal markdown-ish output
+      abridgment.txt               # UTF-8 plain-text final output
       assembly_report.json         # budget stats, overage, segment tallies
       book_critic.json             # per-synopsis-sentence verdicts
       coherence_report.json        # structural coherence findings
@@ -401,6 +404,8 @@ forage/
 |---|---|---|---|
 | `draft` / `regen` | `FORAGE_DRAFT_MODEL`, `FORAGE_REGEN_MODEL` | `anthropic:claude-opus-4-7` | Max extended thinking auto-enabled on Opus variants; better referent-chain integrity under compression than GPT-5 |
 | `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `anthropic:claude-sonnet-4-6` | Automatic retry on OpenAI `content_filter` (only fires if user routes drafter to OpenAI) |
+| `coherence-fix` | `FORAGE_COHERENCE_FIX_MODEL` | `anthropic:claude-sonnet-4-6` | Constrained adjacent-pair repairs with Anthropic as the primary provider |
+| `coherence-fix` fallback | `FORAGE_COHERENCE_FIX_FALLBACK_MODEL` | `openai:gpt-5` | Automatic retry when Anthropic API calls fail during repair |
 | `critic:*` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-sonnet-4-6` | Consistent adversarial voice for signature and book critics |
 | `classify` | `FORAGE_CLASSIFY_MODEL` | `anthropic:claude-sonnet-4-6` (prompt default) | Cheap content-aware classification |
 | `summarize` | `FORAGE_SUMMARIZE_MODEL` | `openai:gpt-5` | Long-context synopsis generation |

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-05T15:22:17",
+  "key": "862b22f30fcf8730af04fc37bbb3b573",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "summarize",
+    "hash": "982c97c860bffb01fc27559dd8a8b818",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "forage/summarizer.py",
+        "sha256": "91f66bb83c9e3863b529bc7ef13c7de75549af865262362069526aaf0317f368",
+        "missing": false
+      },
+      {
+        "path": "prompts/summarize_merge.md",
+        "sha256": "90b78e2c624dca9c8eef501a1532a34a8d652933c17d3fcdc1a3516c8d3d0ee2",
+        "missing": false
+      },
+      {
+        "path": "prompts/summarize_synopsis.md",
+        "sha256": "4be08e535a31189c6d96b93272e0399bfe0f2a70291c205e5b89f3b56752db63",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Henry Adams begins by setting his own education against that of his forebears, born in 1838 under the shadow of Boston\u2019s Puritan past and between the twin poles of Beacon Hill and the rocky fields of Quincy. Childhood becomes a study in opposites\u2014winter and summer, town and country, law and liberty\u2014that imprint a \u201cdouble nature\u201d on a boy already heir to the Adams name and the stern moral energy it carried. He recoils from schools and prizes, preferring the smell of orchards and the moral perfumes of his grandfather John Quincy Adams\u2019s library, yet is profoundly shaped by the rituals, arguments, and ironies of Boston\u2019s politics and pulpit. As the national struggle over slavery quickens\u20141848, Free Soil maneuvers, Sumner\u2019s rise\u2014he learns that public virtue and personal loyalty seldom meet neatly, and that education in America is as much a matter of party, press, and social friction as of books. Harvard gives him more stamp than substance, and Germany\u2014its law-lectures dead, its air pasty with metaphysics\u2014teaches him more by negation than instruction. What does shape him is the shock of travel and contagion of events: Italian sunlight at Garibaldi\u2019s heels, London\u2019s gray respectability, and the revelation that the modern mind must take its measure from force as much as from form.\n\nThe Civil War throws him into Washington\u2019s ad hoc stage, a private secretary to his father before the son follows the elder to London as minister\u2019s attach\u00e9, where diplomacy becomes his university. There he watches the Trent Affair de-ice British fastidiousness; he learns the practical grammar of power when Earl Russell\u2019s polite evasions and the Lairds\u2019 ironclad rams put England\u2019s scruples on the scales against America\u2019s survival. His lessons accumulate through the confusing splendor of Palmerston\u2019s drawing rooms, the paradoxes and violences of Gladstone\u2019s eloquence, and the dry, implacable habits of the British cabinet. The Alabama escapes; the rams nearly do; but patience, documentation, and quiet pressure\u2014backed by war\u2019s proof\u2014eventually detain them, teaching Adams that force slow-walks behind pretense and that diplomacy is a game of friction. Through these years he loses illusions about men while gaining a mature appetite for relation and measure: society is a mechanism, and the mind must find a scale on which to weigh it. In 1868 he returns home, wondering whether his education\u2014partly absorbed from Sumner and the London fog, partly from incidents more violent than reason\u2014has taught him to read the drift of a nation that has changed continents under his feet.\n\nThe postwar Republic makes him a writer and sometimes a professor, but in both roles he calls himself a failure; his reviews and histories bite at the present with facts filleted from the past, while Harvard\u2019s lecture rooms turn quick minds into catalogues. He secures intimacy with men and women of brilliance\u2014Clarence King, John Hay, Edith and Henry Cabot Lodge\u2014and sits inside the operating theater of Gilded Age politics and press, but rarely mistakes access for mastery. History seems to him a contest of forces more than of principles, and the century\u2019s exploding engines confirm it; he studies the Chicago and Paris Expositions as if they were dynamos with the covers off. The revelation of 1900 in Paris\u2014the dynamo\u2019s silent majesty across from the lost unity of the twelfth century\u2014crystallizes his great metaphor: compare the Virgin of Chartres, who drew an age into a self-coherent unity of feeling, with the whirring dynamo that condenses new infinities of power without a moral map. Art and architecture, once the world\u2019s grammar, now read like dialects; he turns from cathedrals\u2019 glass to steel\u2019s glow and from Thomas Aquinas\u2019s synthesis to Karl Pearson\u2019s skepticism, finding that order has dissolved into multiplicity. If the Middle Ages made a universe of \u201cOne,\u201d the modern makes it many, and education\u2014his and ours\u2014must learn to think in contradictions.\n\nThese contradictions gather as friends die and power modernizes its cruelty. The Spanish War and McKinley\u2019s assassination pass swiftly from spectacle to structure; meanwhile Hay\u2019s \u201copen door\u201d diplomacy and the sudden tilt of Germany toward the Atlantic balance hint\u2014briefly\u2014at a modern pax. Yet Russia\u2019s inertia, the Boer War\u2019s ironies, and the Boxer crisis\u2019s theater show that new forces overwhelm old ethics; bombs educate more swiftly than sermons, and the Senate calls force by another name. In this press of events, Adams looks for a law of motion: if man is a force among forces, his mind is a function of acceleration; modern life doubles its power like coal tons and intensities like heat. He comes to a dynamic theory of history: as new energies\u2014steam, electricity, radium\u2014enter the system, the mind is reoriented, the old unities crack, and education, if honest, must prepare for shock rather than repose. Chartres and the Virgin still model a unity of appeal, but the dynamo and its derivatives command habit; the modern student must triangulate from both, or be sliced by the machine.\n\nThe book closes in an Indian summer of clarity and fatigue: Adams, an elderly \u201cpedometer\u201d of forces, confesses that his dynamic law may be no more than an instrument, and that the next generation will test it by living through the next doubling of speed. He proposes no program: the Senate cannot legislate unity, nor can a press arouse ethics in an engine. His ultimate \u201ceducation\u201d is to stand on the steps of Ara Coeli, as in youth, and acknowledge that history is a sequence of accelerations whose unity may exist only in our need to find one. The deaths of Clarence King and John Hay, the last of his trio, cue the curtain\u2019s fall; with them goes the last of a certain American candor. Adams accepts that he has learned chiefly how ignorant he is, but he bequeaths a working image: between the Virgin and the Dynamo lies the path of the modern mind, and the only preparation worth having is the agility to move between them as the forces that summon us grow stronger and less humane.",
+    "input_tokens": 233203,
+    "output_tokens": 1743,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 50.114479780197144,
+    "stop_reason": "stop"
+  }
+}

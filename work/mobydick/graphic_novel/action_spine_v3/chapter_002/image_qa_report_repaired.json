@@ -1,0 +1,145 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag looks like a plain tan leather duffel rather than a mottled-fabric 19th‑century carpet-bag with leather trim.",
+          "visible_evidence": "Under Ishmael’s right arm is a smooth, solid-colored tan bag with soft rounded shape and no mottled textile pattern or distinct leather trim panels.",
+          "repair_prompt": "Redesign the bag as a small, old-fashioned carpet-bag: mottled fabric body with worn leather trim and handles, scuffed, hand-carried under his arm. Avoid any modern duffel/backpack cues. No readable text or logos."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boots are not clearly patched.",
+          "visible_evidence": "Boots appear worn and laced but lack obvious rough toe patches or thin, battered soles.",
+          "repair_prompt": "Emphasize dark leather ankle boots with visible rough toe patches and thin, scuffed soles; keep them clearly battered, not shiny."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Additional background person visible on the right-side pier/street.",
+          "visible_evidence": "A small human figure stands near the waterfront buildings under a lamp to the right of Ishmael.",
+          "repair_prompt": "Remove all other people so only Ishmael is visible; keep the wharf desolate."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Ishmael’s breath in the cold air is not apparent.",
+          "visible_evidence": "No visible condensation plume near his mouth despite snow and icy conditions.",
+          "repair_prompt": "Add a subtle, wind-blown breath plume from Ishmael to reinforce the bitter cold."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is occupied by Ishmael’s torso, hands, and bag, leaving no clean negative space for lettering.",
+          "visible_evidence": "The lowest central area of the frame shows his dark coat and the carpet-bag overlapping a light fog vignette, with no clear empty snow or sky band.",
+          "repair_prompt": "Raise the subject higher in the composition and clear a low-contrast snow or fog band across the bottom-center (at least 15% of image height) for the caption."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boots, specified as a visible prop, are not visible in the frame.",
+          "visible_evidence": "The shot crops at mid-thigh and below, showing no footwear.",
+          "repair_prompt": "Pull back slightly or tilt down to include Ishmael’s scuffed, patch-toed ankle boots in the foreground without adding shine or newness."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "An additional person is visible in the background despite the frame specifying only Ishmael.",
+          "visible_evidence": "A small human figure stands near the lamppost along the snowy street.",
+          "repair_prompt": "Remove background pedestrians so that only Ishmael is present; keep buildings, snowbanks, and lamppost intact."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag depicted as a large shoulder duffel rather than a small 19th-century carpet-bag carried under the arm.",
+          "visible_evidence": "Ishmael carries a cylindrical, soft bag slung by a long strap over his shoulder; it appears bulkier than a compact carpet-bag.",
+          "repair_prompt": "Redesign the bag as a small, old-fashioned carpet-bag with mottled fabric and leather trim, no shoulder strap; have Ishmael tuck it under one arm while striding."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boots lack clearly visible toe patches and thin battered soles.",
+          "visible_evidence": "Boots look worn but show no distinct toe patching; soles are not obviously thin or scuffed at the edges.",
+          "repair_prompt": "Add rough toe patches and visible sole wear to Ishmael’s dark leather ankle boots; avoid any new or shiny finish."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael’s coughing is not clearly depicted.",
+          "visible_evidence": "Ishmael is backing through the doorway, but his mouth is closed and there is no visible cough plume or hand-to-mouth gesture.",
+          "repair_prompt": "Add a subtle cough cue: a small breath cloud or hand-to-mouth motion with a few ash motes near his face, while keeping him mid-retreat with one hand on the door."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Ash-box reads slightly like a brazier due to visible smoke and absence of a lid.",
+          "visible_evidence": "The low wooden box at the threshold emits a rising wisp of smoke and has no ajar lid, which can imply burning coals rather than cold ashes.",
+          "repair_prompt": "Show the ash-box half-filled with fine gray ash and include a thin lid leaning ajar on its rim; reduce or eliminate smoke and add scattered ash dust on the floor."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Boot toe patches on Ishmael are not distinctly visible.",
+          "visible_evidence": "His ankle boots appear worn but lack clear rough toe patches specified for continuity.",
+          "repair_prompt": "Add obvious rough toe patches and thin, scuffed soles on Ishmael’s boots while keeping their dark, battered look."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boots are not visible despite being a called-out visible prop.",
+          "visible_evidence": "The framing crops Ishmael above the knees; no boots are shown.",
+          "repair_prompt": "Widen or lower the framing to include Ishmael’s feet and depict dark, battered ankle boots with visible toe patches and thin soles."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Unspecified background people are present on the dock.",
+          "visible_evidence": "Two small human figures are visible walking near the lamplights along the waterfront.",
+          "repair_prompt": "Remove distant pedestrians or reduce them to non-figurative silhouettes/posts so that only Ishmael is visibly present."
+        },
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Top-center caption zone is partially occupied by the hanging sign and chain, reducing clean negative space for lettering.",
+          "visible_evidence": "The wooden signboard and its iron hangers extend into the upper-center area against the sky.",
+          "repair_prompt": "Shift the sign slightly left or crop/recompose so the top-center sky area remains clean and evenly toned for caption placement."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

@@ -1,0 +1,89 @@
+{
+  "page_number": 1,
+  "anchors": [
+    {
+      "panel_number": 1,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "He went out peddling. Maybe he can't sell his head.",
+      "visible": true,
+      "confidence": 0.87,
+      "mouth_point": {"x": 1220, "y": 220},
+      "mouth_point_ratio": {"x": 0.804, "y": 0.467},
+      "face_box": {"x1": 1150, "y1": 150, "x2": 1290, "y2": 280},
+      "evidence": "Right-side lean older man in cap and waistcoat, looking left; mouth visible in slight smile.",
+      "reason": "Matches speaker hint and right-region placement in this panel; only landlord figure present on the right."
+    },
+    {
+      "panel_number": 2,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Peddling his head around town?",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 390, "y": 700},
+      "mouth_point_ratio": {"x": 0.498, "y": 0.567},
+      "face_box": {"x1": 330, "y1": 630, "x2": 450, "y2": 760},
+      "evidence": "Young sailor in dark jacket centered; mouth slightly open as he reacts, hand raised.",
+      "reason": "Only young sailor matches the hint in this panel; anchor set to his mouth for top-left balloon."
+    },
+    {
+      "panel_number": 3,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "That's precisely it. The market's overstocked.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 1150, "y": 700},
+      "mouth_point_ratio": {"x": 0.507, "y": 0.567},
+      "face_box": {"x1": 1100, "y1": 640, "x2": 1215, "y2": 770},
+      "evidence": "Close-up of landlord on the right, cap and waistcoat, whittling; mouth visible in a smirk.",
+      "reason": "Speaker is the only older landlord figure on the right; clear mouth position for speech tail."
+    },
+    {
+      "panel_number": 4,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "With what?",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 360, "y": 1080},
+      "mouth_point_ratio": {"x": 0.457, "y": 0.429},
+      "face_box": {"x1": 300, "y1": 1015, "x2": 430, "y2": 1135},
+      "evidence": "Young sailor in dark jacket, mid-gesture with questioning look; mouth centered on lower face.",
+      "reason": "Matches Ishmael’s visual hint and central placement in this left panel."
+    },
+    {
+      "panel_number": 5,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "With heads, to be sure.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 1140, "y": 1100},
+      "mouth_point_ratio": {"x": 0.494, "y": 0.476},
+      "face_box": {"x1": 1090, "y1": 1040, "x2": 1220, "y2": 1165},
+      "evidence": "Right-side landlord in cap and waistcoat, shrugging; mouth visible as he speaks.",
+      "reason": "Only landlord figure on the right; matches shrugging hint and balloon zone."
+    },
+    {
+      "panel_number": 6,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "Embalmed New Zealand heads. He's sold all but one.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 1120, "y": 1650},
+      "mouth_point_ratio": {"x": 0.737, "y": 0.455},
+      "face_box": {"x1": 1060, "y1": 1580, "x2": 1195, "y2": 1710},
+      "evidence": "Right-leaning older landlord in cap and waistcoat, gesturing toward Ishmael; mouth clearly visible.",
+      "reason": "Speaker is on the right and leaning toward Ishmael as described; anchor placed on his mouth."
+    }
+  ]
+}

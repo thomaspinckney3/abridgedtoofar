@@ -1,0 +1,30 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 6 of mobydick chapter 3: The Spouter-Inn.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Ishmael (narrator).
+Primary frame action: watches the harpooneer’s entry and heathen rite in fear.
+Caption zone reserved for later lettering: bottom_right.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Ishmael (narrator) (Narrator, traveler seeking a bed): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious. | Queequeg (harpooneer) (South Seas harpooneer and Ishmael’s future bedfellow): Tall, powerfully built; skin with a purplish-yellow cast; face, torso, and limbs tattooed in dark square patterns; mostly bald with a small scalp-knot; wears a heavy grego/wrapall and a shaggy poncho-like cloak with quill-like tags when arriving; carries a tomahawk-shaped pipe, a seaman’s bag, a preserved head in trade, and a small polished wooden idol.
+Prop continuity: candle: Plain tallow candle with small brass or tin holder. Avoid confusion: No readable labels; keep flame modest. | seaman's bag: Large, weathered canvas sea-bag with knotted cords. Avoid confusion: Not a trunk; soft-sided and cinched with rope. | New Zealand preserved head: Small, shrunken, lacquer-dark human head with closed features, carried carefully. Avoid confusion: A preserved head used as a trade curiosity, not a fresh or gory depiction. | tomahawk-pipe: Hatchet-shaped smoking pipe with a bowl at the head and a mouthpiece at the handle. Avoid confusion: It is primarily a pipe; do not render as a separate battle axe. | wooden idol: Small, polished, hunch-backed ebony-like figurine set between andirons. Avoid confusion: Not a living baby; a carved object used in a private rite. | grego (heavy sailor's coat): Bulky, dark wrapall coat with deep pockets, sea-worn. Avoid confusion: Not a cape; a heavy overcoat. | papered fireboard: Thin panel with printed paper covering the fireplace opening. Avoid confusion: Do not include readable text or imagery; it is removed for the idol.
+Secondary supporting visuals only: Papered fireboard set aside; Seal-skin wallet and tomahawk-pipe resting on the sea chest
+Do not show: The idol moving like a living being; Graphic gore from the head; Readable imagery on fireboard; No readable text
+Scene: From the bed’s perspective, Ishmael watches wide-eyed as the tattooed harpooneer kneels at the open hearth, sets a small wooden idol between the andirons, and kindles a handful of shavings with a biscuit poised for a quick snatch. The preserved head is now tucked beside his seaman’s bag; his heavy grego hangs on a chair; a tomahawk-shaped pipe and wallet sit on the sea chest. No readable text. Leave clean negative space in the bottom-right for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. major prop_confusion: The New Zealand preserved head appears life-sized and naturalistic rather than a small, lacquer-dark shrunken head.
+   Visible failure to avoid: A full-size human head with natural proportions and hair protrudes from the open sea-bag on the floor by the hearth.
+   Repair instruction: Redesign the preserved head as a small shrunken, lacquer-dark mokomokai with closed features; reduce its scale relative to the bag and desaturate to a dark, glossy brown. Avoid any fresh or gory detailing.
+2. major prop_confusion: Garment on the chair is the shaggy poncho-like cloak with quill-like tags, not the heavy grego specified for this frame.
+   Visible failure to avoid: Right side chair holds a thick, shaggy mat-like cloak edged with dangling white quill/teeth tags.
+   Repair instruction: Replace the garment on the chair with a bulky, dark grego overcoat with deep pockets and a worn, sea-scuffed look. If the shaggy poncho is kept, move it off-frame or hang it elsewhere so the chair shows the grego.
+3. major caption_zone: Bottom-right caption zone is cluttered, leaving no clean space for lettering.
+   Visible failure to avoid: The bottom-right quadrant contains a sea chest topped with the tomahawk-pipe, wallet, and a brass cup, filling the area.
+   Repair instruction: Clear negative space in the bottom-right by moving or cropping away the sea chest and small objects; keep that corner as plain floor or wall with low texture.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.

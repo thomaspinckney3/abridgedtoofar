@@ -1,0 +1,71 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age; muted period authenticity in dress and interiors
+- line and color: Clean inked linework with soft watercolor washes; sepia and dusk-blue palette with cream paper tones
+- lighting: Warm interior lamplight against cool window light; long shadows suggesting memory and retrospection
+
+Character continuity:
+- Nick Carraway: Lean young man, early thirties, neatly parted light-brown hair, thoughtful gray eyes, narrow jaw Costume: White shirt with rolled sleeves, loosened dark tie, suspenders, high-waisted wool trousers Continuity: Stepping outside his bungalow to take in the geography of West Egg for the first time.
+- Nick's Father: Older man, silver-streaked hair, trim mustache, kind but stern eyes Costume: Dark three-piece Midwestern suit, watch chain, stiff collar Continuity: Appears briefly in a remembered conversation; render with softer linework and warmer wash.
+- Finnish Housekeeper: Stout middle-aged woman, ruddy cheeks, hair in a low bun, capable hands Costume: Plain dark dress, white apron Continuity: New minor character; appears only in the bungalow kitchen.
+- Lost Stranger: Young man newer to the area than Nick, hat in hand, uncertain stance Costume: Light summer suit, straw boater, walking shoes Continuity: One-off speaker on the country road.
+
+Page 3 summary: Nick moves alone into the weather-beaten West Egg bungalow, settles into solitary routines with a Finnish cook, is asked directions by a newer arrival on the road (which converts his loneliness into a sense of belonging), and begins his summer of self-improvement by shelving a stack of finance volumes—setting up his arrival in one of the strangest communities in North America.
+
+Panels:
+
+Panel 1:
+Beat: Nick arrives alone at the weather-beaten bungalow with his suitcase; the coworker has been ordered to Washington.
+Shot: establishing
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Wide establishing shot of a small weather-beaten clapboard bungalow on a grassy lane in West Egg, sagging porch, peeling paint, late spring afternoon. Nick Carraway in traveling suit and hat stands at the gate with a single suitcase, looking up at the house. An old Dodge automobile is parked at the curb. Soft sepia and dusk-blue watercolor wash, clean ink lines, long warm shadows. Reserve clear empty sky in the upper band and a clean lower-left strip of lawn for caption boxes; no text, no signs, no lettering of any kind. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+
+Panel 2:
+Beat: Interior morning: the Finnish woman mutters at the stove while Nick eats breakfast; the dog briefly featured before running off.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Interior of a modest bungalow kitchen at morning. On the left, a stout middle-aged Finnish housekeeper in plain dark dress and white apron tends an electric stove, lips moving as she mutters to herself. On the right, Nick Carraway in white shirt with rolled sleeves and suspenders sits at a small wooden table with coffee and toast, reading a folded newspaper. A small terrier dog sits near the door, leash trailing, looking outward as if about to bolt. Warm interior lamplight against cool window light. Sepia and cream palette, soft watercolor wash. Leave the upper third of the panel as clean wall space for caption boxes; no text, no signs, no lettering. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+
+Panel 3:
+Beat: On a sunlit country road, a newer arrival asks Nick directions to West Egg village; Nick, walking on, feels promoted from stranger to settler.
+Shot: wide
+Panel archetype: single_speaker
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Lost Stranger, top_center, x=30%, y=23%, w=40%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Lost Stranger: x 30%, y 23%, w 40%, h 16%. - Place Lost Stranger body in x 31%, y 47%, w 38%, h 49%; face in x 45%, y 50%, w 9%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Lost Stranger: body x=31%, y=47%, w=38%, h=49%; face x=45%, y=50%, w=9%, h=10%
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Lost Stranger: x 29%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Lost Stranger near the center, below or beside that speaker's slot.
+Art prompt: Outdoor wide shot on a dusty country road lined with fresh young trees bursting into spring leaf. On the left, a young man in a light summer suit and straw boater holds his hat in hand, asking directions with a helpless expression. On the right, Nick Carraway in shirtsleeves and loose tie pauses mid-walk, half-turned, beginning to gesture down the road. Bright morning sun, warm sepia wash with pale blue sky, long soft shadows. Reserve clean sky at the top and a clear strip of road at the bottom for caption and speech space; no text, no signs, no lettering in the art. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 6%, y 4%, width 88%, height 17%; speech slot balloon_1 for Lost Stranger: x 29%, y 22%, width 42%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there. stage Lost Stranger near the center, below or beside that speaker's slot.
+
+Panel 4:
+Beat: Back inside the bungalow study, Nick shelves a dozen red-and-gold finance volumes by a sunlit window, beginning his summer program of self-improvement.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=22%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.
+Art prompt: Interior medium shot of a small study in the bungalow. Nick Carraway in shirtsleeves, loosened tie, and suspenders stands at a low bookshelf beneath a window, sliding a thick red-and-gold-bound volume into place beside eleven matching volumes. On the desk beside him: a single lit desk lamp, an open notebook with pen, and a framed photograph of his father. Beyond the window, a hint of green lawn and a sliver of bright water in late spring sunlight. Warm lamplight blending with cool daylight from the window; soft sepia and dusk-blue watercolor wash. Reserve clean wall area above the bookshelf and a clear bottom band for two stacked caption boxes; no readable text, no lettering, no signage anywhere in the art. Lettering layout constraint: reserve these empty in-panel lettering slots for later lettering, but draw no boxes, balloons, tails, or text: caption slot caption for narrator caption: x 18%, y 4%, width 76%, height 20%. Keep faces, mouths, hands, active gestures, and key props completely out of those slots; use simple background or wall space there.

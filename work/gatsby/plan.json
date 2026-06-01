@@ -7,7 +7,7 @@
   "cultural_depth": "unknown",
   "voice_driven_narrator": null,
   "indirection_budget_applies": null,
-  "overall_compression_ratio": 2.2,
+  "overall_compression_ratio": 2.0,
   "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
   "motifs": [],
   "segments": [
@@ -20,13 +20,13 @@
       "source_word_count": 5891,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2900,
+      "target_word_count": 3200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter I narrative prose, Nick's opening monologue"
+      "classification_reason": "Chapter I narrative prose"
     },
     {
       "id": "002",
@@ -37,13 +37,13 @@
       "source_word_count": 4279,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2100,
+      "target_word_count": 2300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter II narrative prose, valley of ashes"
+      "classification_reason": "Chapter II narrative prose"
     },
     {
       "id": "003",
@@ -54,13 +54,13 @@
       "source_word_count": 5733,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2800,
+      "target_word_count": 3100,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter III narrative prose, Gatsby's parties"
+      "classification_reason": "Chapter III narrative prose"
     },
     {
       "id": "004",
@@ -71,13 +71,13 @@
       "source_word_count": 5455,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2700,
+      "target_word_count": 3000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter IV narrative prose, Gatsby's guests and past"
+      "classification_reason": "Chapter IV narrative prose"
     },
     {
       "id": "005",
@@ -88,13 +88,13 @@
       "source_word_count": 4232,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2100,
+      "target_word_count": 2300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter V narrative prose, Gatsby and Daisy reunite"
+      "classification_reason": "Chapter V narrative prose"
     },
     {
       "id": "006",
@@ -105,13 +105,13 @@
       "source_word_count": 4035,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2000,
+      "target_word_count": 2200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter VI narrative prose, Gatsby's origins"
+      "classification_reason": "Chapter VI narrative prose"
     },
     {
       "id": "007",
@@ -122,13 +122,13 @@
       "source_word_count": 8765,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 4300,
+      "target_word_count": 4700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter VII narrative prose, climactic confrontation"
+      "classification_reason": "Chapter VII narrative prose"
     },
     {
       "id": "008",
@@ -139,13 +139,13 @@
       "source_word_count": 4529,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2200,
+      "target_word_count": 2500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter VIII narrative prose, Gatsby's death"
+      "classification_reason": "Chapter VIII narrative prose"
     },
     {
       "id": "009",
@@ -156,13 +156,13 @@
       "source_word_count": 5224,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2600,
+      "target_word_count": 2800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter IX narrative prose, aftermath and conclusion"
+      "classification_reason": "Chapter IX narrative prose"
     }
   ],
   "merged_groups": {},
@@ -170,9 +170,9 @@
     "computed": {
       "source_word_count": 51262,
       "diegetic_source_word_count": 48143,
-      "target_word_count": 23317,
-      "target_hours": 1.94,
-      "overall_compression_ratio": 2.2
+      "target_word_count": 25631,
+      "target_hours": 2.14,
+      "overall_compression_ratio": 2.0
     },
     "builder": "lean_plan"
   }

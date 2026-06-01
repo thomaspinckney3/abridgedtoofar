@@ -1,0 +1,2109 @@
+You are creating a graphic novel storyboard from an intermediate graphic plot
+treatment. The treatment has already decided what source material is preserved,
+compressed, implied, or omitted.
+
+Book: Moby-Dick; or, The Whale
+Author: Herman Melville
+Requested pages: 9
+Target panels per page: 5
+
+Hard rules:
+- Use the plot treatment as the source of truth.
+- Preserve graphic beat order exactly.
+- Cover every graphic beat at least once.
+- Do not include omitted source units.
+- A panel may cover one beat or adjacent beats only.
+- Inanimate objects can never drive the plot. Every panel action must be driven
+  by a living character or role-identifiable person, usually Nick.
+- Maps, diagrams, signs, labels, camera moves, montages, vignettes, timelines,
+  trains, buildings, weather, books, windows, and landscapes are supports only.
+  They cannot be the panel's action.
+- If geography must be explained, stage it through a character looking,
+  walking, pointing, arriving, entering, leaving, writing, reading, or speaking.
+- Captions and dialogue are post-lettering text, not part of the image prompt.
+- Image prompts must be for clean art only: no readable text, no captions,
+  no labels, no signs, no maps with text, no speech balloons, no lettering.
+- Every panel must have exactly one caption. The caption should tell the story
+  in simple, readable language and should flow in book order from the previous
+  panel.
+- Match the source narration voice. If the source/excerpt is first-person,
+  captions must be first-person narration from that narrator, not third-person
+  summaries about the narrator.
+- Avoid speech balloons by default. Use dialogue only when the source contains
+  an explicit spoken line and the visible speaker can be anchored unambiguously
+  in the panel. Otherwise convert the information into the caption.
+- Every panel must include `caption_zone`, choosing one of:
+  `top_left`, `top_center`, `top_right`, `bottom_left`, `bottom_center`,
+  `bottom_right`.
+- Choose `caption_zone` to avoid covering faces, major bodies, hands doing
+  important actions, and key story props. Put the same reserved area into the
+  `image_prompt`, e.g. "leave clean negative space in the upper-right for a
+  later caption; keep faces and important bodies out of that area."
+- Use exact source wording from `caption_candidates` when it is useful, but keep
+  captions short enough for comics pacing.
+- Do not invent speeches. Dialogue should come only from caption candidates or
+  obvious quoted source lines.
+- If a beat is reflective, stage Nick physically writing, remembering, looking,
+  walking, or deciding.
+
+Graphic plot treatment:
+{
+  "title": "Moby-Dick: Loomings to the Spouter-Inn",
+  "adaptation_scope": "Ch. 1–3 excerpt from Ishmael’s opening reflections through his first night at the Spouter-Inn with Queequeg.",
+  "pacing_strategy": {
+    "summary": "Compress Melville’s reflective essays into selective captions riding over purposeful action. Privilege concrete movement: Ishmael walking to water, traveling to New Bedford, entering the Spouter-Inn, barroom business, the late-night room scene, and the bed mix-up with Queequeg. Preserve iconic voice lines and key motifs while trimming rhetorical digressions.",
+    "target_reader_experience": "A brisk, atmospheric arrival sequence that moves from melancholic pull of the sea to comic unease and finally humanizing acceptance, with Melville’s voice surfacing in sharp captions.",
+    "compression_ratio": "moderate",
+    "main_risks": [
+      "Losing Melville’s essayistic music and humor if over-trimmed",
+      "Confusing time and place without strong anchors between reflections and present action",
+      "Othering Queequeg if staging leans into fear without the humanizing turn",
+      "Overloading barroom exposition and object-lore (painting, weapons) at the cost of forward motion"
+    ]
+  },
+  "time_frames": [
+    {
+      "id": "TF1",
+      "label": "Narrative reflection: pull of the sea",
+      "chronological_position": "Timeless narrator frame before the journey proper",
+      "reader_cue": "Voice-over reflections before concrete travel begins",
+      "visual_cue": "Ishmael in city streets looking toward water; captions over crowds at the Battery"
+    },
+    {
+      "id": "TF2",
+      "label": "Manhattan waterfront",
+      "chronological_position": "Just before departure",
+      "reader_cue": "City-to-water drift and collective sea-gazing",
+      "visual_cue": "Battery seawall, wharves, ships, and clusters of onlookers"
+    },
+    {
+      "id": "TF3",
+      "label": "Rationale and whaling choice",
+      "chronological_position": "Pre-departure decision-making",
+      "reader_cue": "Practical reasons and fatalistic turn to whaling",
+      "visual_cue": "Ishmael packing, ships, imagined whale phantoms"
+    },
+    {
+      "id": "TF4",
+      "label": "Arrival in New Bedford (Saturday night)",
+      "chronological_position": "Night of arrival",
+      "reader_cue": "Cold, unfamiliar streets; missed packet to Nantucket",
+      "visual_cue": "Frosted streets, breath in the air, Ishmael with carpet-bag"
+    },
+    {
+      "id": "TF5",
+      "label": "Spouter-Inn exterior",
+      "chronological_position": "Same night, near the docks",
+      "reader_cue": "Ominous signage and shabby corner inn",
+      "visual_cue": "Swinging sign: The Spouter Inn—Peter Coffin"
+    },
+    {
+      "id": "TF6",
+      "label": "Spouter-Inn entry and painting",
+      "chronological_position": "Moments after entering",
+      "reader_cue": "Odd, smoky entry and inscrutable painting",
+      "visual_cue": "Huge, dark, weathered canvas; dim crosslight"
+    },
+    {
+      "id": "TF7",
+      "label": "Public room and bar",
+      "chronological_position": "Same evening",
+      "reader_cue": "Heathenish implements, whale-jaw bar, Jonah at service",
+      "visual_cue": "Whale jawbone arch over the bar; cracked cases and curios"
+    },
+    {
+      "id": "TF8",
+      "label": "Supper and waiting",
+      "chronological_position": "Late evening",
+      "reader_cue": "Cold supper, landlord’s terms, waiting for the harpooneer",
+      "visual_cue": "Shivering diners, tallow candles, dumplings"
+    },
+    {
+      "id": "TF9",
+      "label": "Grampus crew; Bulkington",
+      "chronological_position": "Later that night",
+      "reader_cue": "Crew storms in, revelry, a tall quiet sailor departs",
+      "visual_cue": "Ice-crusted coats, brimmers poured, Bulkington slipping out"
+    },
+    {
+      "id": "TF10",
+      "label": "Downstairs lodging dilemma",
+      "chronological_position": "Near midnight",
+      "reader_cue": "Ishmael balks at sharing a bed; bench fiasco; landlord’s yarn",
+      "visual_cue": "Planed bench, draughts, landlord whittling toothpick"
+    },
+    {
+      "id": "TF11",
+      "label": "Head-peddling explained",
+      "chronological_position": "Minutes later",
+      "reader_cue": "Cannibal panic diffused by practical explanation",
+      "visual_cue": "Landlord gesturing, string of heads pantomimed"
+    },
+    {
+      "id": "TF12",
+      "label": "Upstairs chamber inspection",
+      "chronological_position": "Past midnight",
+      "reader_cue": "Room, gear, door-mat poncho; Ishmael turns in",
+      "visual_cue": "Prodigious bed, harpoon, bone hooks, the shaggy poncho"
+    },
+    {
+      "id": "TF13",
+      "label": "Dozing; Queequeg enters",
+      "chronological_position": "Dead of night",
+      "reader_cue": "Footfalls, strange face, tomahawk, terror",
+      "visual_cue": "Candle on floor, New Zealand head, tattooed body"
+    },
+    {
+      "id": "TF14",
+      "label": "Queequeg’s idol ritual",
+      "chronological_position": "Immediately after",
+      "reader_cue": "Pagan rites baffling Ishmael",
+      "visual_cue": "Idol in the fireplace, shavings aflame, biscuit offering"
+    },
+    {
+      "id": "TF15",
+      "label": "Bed scare and resolution",
+      "chronological_position": "Moments later to lights-out",
+      "reader_cue": "Panic, landlord’s mediation, agreement, sleep",
+      "visual_cue": "Tomahawk-pipe, landlord with lamp, the two in bed"
+    }
+  ],
+  "unit_treatments": [
+    {
+      "source_unit_id": 1,
+      "disposition": "omit",
+      "time_frame": "TF1",
+      "subject": "Chapter heading",
+      "narrative_function": "Paratext",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "paratext_heading_low_plot_value"
+    },
+    {
+      "source_unit_id": 2,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF1",
+      "subject": "Ishmael’s melancholy cure: go to sea",
+      "narrative_function": "Establish narrator voice, motive, tone",
+      "preservation_reason": "Iconic opening; frames motive",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 3,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF2",
+      "subject": "Manhattan water-gazers at the Battery",
+      "narrative_function": "Set place; universalize pull of water",
+      "preservation_reason": "Strong visual anchor and theme",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 4,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF2",
+      "subject": "Crowds fixed in ocean reveries",
+      "narrative_function": "Reinforce theme; societal contrast",
+      "preservation_reason": "Poetic phrasing supports montage",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 5,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF2",
+      "subject": "Inlanders pressing to water’s edge",
+      "narrative_function": "Amplify magnetism of the sea",
+      "preservation_reason": "Good VO over crowd visuals",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 6,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF1",
+      "subject": "Paths lead to water; meditation wedded to water",
+      "narrative_function": "Theme articulation",
+      "preservation_reason": "Short, resonant thesis line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 7,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF1",
+      "subject": "Landscapes need water; ungraspable phantom of life",
+      "narrative_function": "Key metaphysical motif",
+      "preservation_reason": "Signature Melville idea; briefable",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 8,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "TF3",
+      "subject": "Not a passenger nor a cook; abominate respectable toils",
+      "narrative_function": "Character ethos; comic tone",
+      "preservation_reason": "Supports sailor-role choice beat",
+      "omit_or_compress_reason": "Compression into reasons montage"
+    },
+    {
+      "source_unit_id": 9,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Goes as simple sailor; humbling transition",
+      "narrative_function": "Role selection and humility",
+      "preservation_reason": "Crisp statement of identity at sea",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 10,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Universal thump; obedience vs honor",
+      "narrative_function": "Philosophical framing of hardship",
+      "preservation_reason": "Short aphoristic VO pairs with visuals",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 11,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Being paid vs paying; cheerful perdition",
+      "narrative_function": "Wry aside; practical motive",
+      "preservation_reason": "Compact gag that fits montage",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 12,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Forecastle air; Fates steer him to whaling",
+      "narrative_function": "Introduce whaling decision; fate motif",
+      "preservation_reason": "Sets up whaling pivot",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 13,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Playbill of Providence",
+      "narrative_function": "Dark-humor list framing destiny",
+      "preservation_reason": "Memorable, brief caption",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 14,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Fates’ motives disguised as freewill",
+      "narrative_function": "Internal motivation clarified",
+      "preservation_reason": "Short VO over packing/travel prep",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 15,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "The whale as mysterious lure; forbidden seas",
+      "narrative_function": "Primary inducement and character trait",
+      "preservation_reason": "Core motive; vivid voice",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 16,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF3",
+      "subject": "Hooded phantom like a snow hill in the air",
+      "narrative_function": "Mythic image foreshadowing Moby Dick",
+      "preservation_reason": "Striking image for montage",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 17,
+      "disposition": "omit",
+      "time_frame": "TF4",
+      "subject": "Chapter heading",
+      "narrative_function": "Paratext",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "paratext_heading_low_plot_value"
+    },
+    {
+      "source_unit_id": 18,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF4",
+      "subject": "Packing; arrival New Bedford; missed packet",
+      "narrative_function": "Inciting travel to Nantucket via layover",
+      "preservation_reason": "Concrete action pivot to setting",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 19,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF4",
+      "subject": "Why a Nantucket craft",
+      "narrative_function": "Preference and lore seed",
+      "preservation_reason": "Short VO over New Bedford street",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 20,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF4",
+      "subject": "Cold, dark streets; money short; resolve to cheap lodging",
+      "narrative_function": "Stakes and mood",
+      "preservation_reason": "Situational pressure visualized",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 21,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF4",
+      "subject": "Passing pricey inns; head toward water for cheap ones",
+      "narrative_function": "Orient to waterfront",
+      "preservation_reason": "Transitions smoothly with VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 22,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF4",
+      "subject": "Enter low, smoky public building; trip on ash-box",
+      "narrative_function": "Comic misstep and texture",
+      "preservation_reason": "Action beat that builds place",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 23,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF4",
+      "subject": "Stumble into a Black church; back out",
+      "narrative_function": "Misdirection; continues search",
+      "preservation_reason": "Brief visual gag; keeps momentum",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 24,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF5",
+      "subject": "Find The Spouter Inn sign",
+      "narrative_function": "Arrival at key location",
+      "preservation_reason": "Clear orientation",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 25,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF5",
+      "subject": "Ominous names; cheap promise",
+      "narrative_function": "Tone and expectation",
+      "preservation_reason": "Short VO over exterior",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 26,
+      "disposition": "omit",
+      "time_frame": "TF5",
+      "subject": "Euroclydon, Lazarus/Dives meditation (part 1)",
+      "narrative_function": "Extended metaphor",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "repetitive_reflection"
+    },
+    {
+      "source_unit_id": 27,
+      "disposition": "omit",
+      "time_frame": "TF5",
+      "subject": "Lazarus would rather be in Sumatra",
+      "narrative_function": "Extended metaphor continuation",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "repetitive_reflection"
+    },
+    {
+      "source_unit_id": 28,
+      "disposition": "omit",
+      "time_frame": "TF5",
+      "subject": "Dives in an ice palace",
+      "narrative_function": "Extended metaphor continuation",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "repetitive_reflection"
+    },
+    {
+      "source_unit_id": 29,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF5",
+      "subject": "Cut the blubbering; go a-whaling",
+      "narrative_function": "Transition to action",
+      "preservation_reason": "Brief, witty bridge",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 30,
+      "disposition": "omit",
+      "time_frame": "TF6",
+      "subject": "Chapter heading",
+      "narrative_function": "Paratext",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "paratext_heading_low_plot_value"
+    },
+    {
+      "source_unit_id": 31,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF6",
+      "subject": "The smoked, puzzling painting",
+      "narrative_function": "Mood; whale omen",
+      "preservation_reason": "Visual mystery anchors scene",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 32,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF6",
+      "subject": "Portentous black mass; near-sublimity",
+      "narrative_function": "Heighten enigma",
+      "preservation_reason": "Evocative VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 33,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF6",
+      "subject": "Final theory: whale vaulting a Cape-Horner",
+      "narrative_function": "Payoff of mystery",
+      "preservation_reason": "Clarifies image economically",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 34,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF7",
+      "subject": "Heathenish clubs, spears, storied irons",
+      "narrative_function": "Texture; foreshadowing violence",
+      "preservation_reason": "Striking props inform world",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 35,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF7",
+      "subject": "Public room; whale-jaw bar; Jonah",
+      "narrative_function": "Anchor barroom; introduce Jonah",
+      "preservation_reason": "Strong geography and character intro",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 36,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF7",
+      "subject": "Cheating tumblers and measures",
+      "narrative_function": "Humor; period detail",
+      "preservation_reason": "Quick VO flavor",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 37,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF7",
+      "subject": "House is full; share a harpooneer’s blanket?",
+      "narrative_function": "Complication set-up",
+      "preservation_reason": "Dialogue turns plot",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 38,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF7",
+      "subject": "Ishmael’s conditional acceptance",
+      "narrative_function": "Character stance; stakes",
+      "preservation_reason": "Dialogue beat needed",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 39,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF7",
+      "subject": "Supper will be ready",
+      "narrative_function": "Move to next scene",
+      "preservation_reason": "Bridge line, can ride as VO/speech bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 40,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Settle carved bench; tar scrimshanders",
+      "narrative_function": "Texture; waiting mood",
+      "preservation_reason": "Quick VO image",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 41,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF8",
+      "subject": "Cold supper; dumplings assault",
+      "narrative_function": "Comic hardship; camaraderie",
+      "preservation_reason": "Visual gag anchors meal",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 42,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Nightmare warning",
+      "narrative_function": "Comic line",
+      "preservation_reason": "Short bubble/VO fits panel",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 43,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Whisper: is that the harpooneer?",
+      "narrative_function": "Seed suspense",
+      "preservation_reason": "Brief dialog beats suspense",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 44,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Dark complexioned; steaks rare",
+      "narrative_function": "Humor and othering setup",
+      "preservation_reason": "Memorable line; short",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 45,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Where is he?",
+      "narrative_function": "Further suspense",
+      "preservation_reason": "Tiny line to carry moment",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 46,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "He’ll be here afore long",
+      "narrative_function": "Delay",
+      "preservation_reason": "Brief bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 47,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF8",
+      "subject": "Ishmael’s suspicion and plan to let him undress first",
+      "narrative_function": "Character thought; stakes",
+      "preservation_reason": "Short VO; sets later action",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 48,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF8",
+      "subject": "Back to barroom to wait",
+      "narrative_function": "Stage waiting area",
+      "preservation_reason": "Action transition",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 49,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF9",
+      "subject": "Grampus reported; crew incoming",
+      "narrative_function": "Cue for raucous entry",
+      "preservation_reason": "Setup line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 50,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF9",
+      "subject": "Crew erupts in; Jonah pours brimmers",
+      "narrative_function": "Spectacle; atmosphere",
+      "preservation_reason": "Strong kinetic beat",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 51,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF9",
+      "subject": "Liquor mounts; capering",
+      "narrative_function": "Escalate revelry",
+      "preservation_reason": "VO over action",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 52,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF9",
+      "subject": "Bulkington stands aloof; slips away",
+      "narrative_function": "Introduce Bulkington; foreshadow",
+      "preservation_reason": "Character intro",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 53,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF9",
+      "subject": "Quiet after orgy; Ishmael’s plan returns",
+      "narrative_function": "Pace down; transition",
+      "preservation_reason": "VO bridge",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 54,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "No man prefers to sleep two in a bed",
+      "narrative_function": "State objection",
+      "preservation_reason": "Humorous VO thesis",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 55,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "More objections; unknown stranger",
+      "narrative_function": "Escalate comic dread",
+      "preservation_reason": "Brief VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 56,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "Ishmael decides to try the bench",
+      "narrative_function": "Action attempt",
+      "preservation_reason": "Visual action",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 57,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "Landlord planes the bench",
+      "narrative_function": "Comic prop business",
+      "preservation_reason": "Physical gag",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 58,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "Bench too short and drafty",
+      "narrative_function": "Complication deepens",
+      "preservation_reason": "Visual trial-and-error",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 59,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "Temptation to steal harpooneer’s bed; dismisses it",
+      "narrative_function": "Thought beat; humor",
+      "preservation_reason": "Quick VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 60,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "He’ll wait and judge the man",
+      "narrative_function": "Reasoned pause",
+      "preservation_reason": "Transitions",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 61,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "Other boarders go to bed; no harpooneer",
+      "narrative_function": "Delay",
+      "preservation_reason": "Short VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 62,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "Asks landlord about late hours",
+      "narrative_function": "Interrogation starts",
+      "preservation_reason": "Dialogue beat",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 63,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "Landlord’s chuckling answer",
+      "narrative_function": "Set up punchline",
+      "preservation_reason": "Brief VO/bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 64,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "Ishmael explodes: peddling his head?",
+      "narrative_function": "Comic shock",
+      "preservation_reason": "Strong dialog moment",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 65,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF10",
+      "subject": "Market overstocked with heads",
+      "narrative_function": "Absurdist humor",
+      "preservation_reason": "Quick bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 66,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF10",
+      "subject": "With what?—With heads!",
+      "narrative_function": "Punchline exchange",
+      "preservation_reason": "Comic timing",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 67,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "Stop the yarn—I’m not green",
+      "narrative_function": "Ishmael’s stance",
+      "preservation_reason": "Short line fits",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 68,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "You’ll be done brown if he hears you",
+      "narrative_function": "Heighten stakes",
+      "preservation_reason": "Brief line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 69,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "I’ll break it for him",
+      "narrative_function": "Comic bravado",
+      "preservation_reason": "Quick line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 70,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "It’s broke already",
+      "narrative_function": "Punchline reversal",
+      "preservation_reason": "Quick line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 71,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "Broke?",
+      "narrative_function": "Beat of confusion",
+      "preservation_reason": "One-word bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 72,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "Sartain; can’t sell it",
+      "narrative_function": "Setup for explanation",
+      "preservation_reason": "Quick line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 73,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "That’s why he can’t sell it",
+      "narrative_function": "Running gag",
+      "preservation_reason": "Quick line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 74,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF11",
+      "subject": "Ishmael’s stern demand for truth",
+      "narrative_function": "Confrontation crest",
+      "preservation_reason": "Strong dialog and stance",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 75,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF11",
+      "subject": "Landlord’s full explanation: embalmed heads",
+      "narrative_function": "Mystery resolved",
+      "preservation_reason": "Plot clarity",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 76,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF11",
+      "subject": "Ishmael’s moral recoil at ‘cannibal’ commerce",
+      "narrative_function": "Internal reaction",
+      "preservation_reason": "Brief VO to set bias",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 77,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF12",
+      "subject": "He’s a dangerous man",
+      "narrative_function": "Bias stated",
+      "preservation_reason": "Short line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 78,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF12",
+      "subject": "Landlord urges bed; boasts of its size; leads upstairs",
+      "narrative_function": "Move to room",
+      "preservation_reason": "Physical transition",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 79,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF12",
+      "subject": "The prodigious bed revealed",
+      "narrative_function": "Setting anchor",
+      "preservation_reason": "Visual gag and orientation",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 80,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF12",
+      "subject": "Left alone with candle and sea chest",
+      "narrative_function": "Beat of solitude",
+      "preservation_reason": "Tone and focus",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 81,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF12",
+      "subject": "Room inventory: hammock, bag, hooks, harpoon",
+      "narrative_function": "Prop seeding (harpoon, gear)",
+      "preservation_reason": "Concise VO list",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 82,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF12",
+      "subject": "Examining the shaggy ‘door-mat’ poncho",
+      "narrative_function": "Comic prop discovery",
+      "preservation_reason": "Visual curiosity",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 83,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF12",
+      "subject": "Too cold; trusts landlord; tumbles into bed",
+      "narrative_function": "Set up for intrusion",
+      "preservation_reason": "Short VO for transition",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 84,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF13",
+      "subject": "Footfall in passage; light under door",
+      "narrative_function": "Suspense trigger",
+      "preservation_reason": "Action cue",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 85,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF13",
+      "subject": "Queequeg enters with New Zealand head; tattoos revealed; tomahawk and wallet",
+      "narrative_function": "Introduce Queequeg; escalate fear",
+      "preservation_reason": "Major character reveal",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 86,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF13",
+      "subject": "Ishmael’s mounting fear; considers escape",
+      "narrative_function": "Internal tension",
+      "preservation_reason": "Brief VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 87,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF13",
+      "subject": "More tattoos; ‘abominable savage’ judgment",
+      "narrative_function": "Bias intensifies",
+      "preservation_reason": "Short VO to set contrast before turn",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 88,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF14",
+      "subject": "Queequeg sets up idol in fireplace",
+      "narrative_function": "Cultural practice shown",
+      "preservation_reason": "Visual ritual anchor",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 89,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF14",
+      "subject": "Shavings blaze; biscuit offering; guttural prayer",
+      "narrative_function": "Otherness through action",
+      "preservation_reason": "VO to compress steps",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 90,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Ishmael decides to speak—but delays",
+      "narrative_function": "Pivotal hesitation",
+      "preservation_reason": "Brief VO beat",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 91,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Tomahawk-pipe lit; Queequeg springs into bed",
+      "narrative_function": "Comic-shock escalation",
+      "preservation_reason": "Action spike",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 92,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Ishmael rolls away; tries to reason",
+      "narrative_function": "Chaos in dark; language gap",
+      "preservation_reason": "VO/bubble compression",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 93,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Who-e debel you? I kill-e",
+      "narrative_function": "Threat line showing miscommunication",
+      "preservation_reason": "Iconic dialect line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 94,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Ishmael shouts for landlord",
+      "narrative_function": "Call for aid",
+      "preservation_reason": "Action/dialog beat",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 95,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Landlord enters with light; Ishmael flees to him",
+      "narrative_function": "De-escalation begins",
+      "preservation_reason": "Plot turn to resolution",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 96,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Landlord: Queequeg wouldn’t harm you",
+      "narrative_function": "Reassurance",
+      "preservation_reason": "Short line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 97,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Why didn’t you tell me he was a cannibal?",
+      "narrative_function": "Release of tension via complaint",
+      "preservation_reason": "Brief bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 98,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Landlord mediates in pidgin; sets terms",
+      "narrative_function": "Agreement groundwork",
+      "preservation_reason": "Key dialog exchange",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 99,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Queequeg: Me sabbee plenty",
+      "narrative_function": "Assent",
+      "preservation_reason": "Short bubble",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 100,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Queequeg kindly invites Ishmael back to bed",
+      "narrative_function": "Humanizing turn",
+      "preservation_reason": "Crucial character beat; includes ‘Better sleep with a sober cannibal…’ as VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 101,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Ishmael: stash the tomahawk-pipe; I ain’t insured",
+      "narrative_function": "Comic condition to accept",
+      "preservation_reason": "Memorable line; action request",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 102,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Queequeg complies, rolls aside",
+      "narrative_function": "Trust building",
+      "preservation_reason": "Short VO",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 103,
+      "disposition": "keep_as_caption",
+      "time_frame": "TF15",
+      "subject": "Good night, landlord",
+      "narrative_function": "Closure beat pre-sleep",
+      "preservation_reason": "Quick line",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 104,
+      "disposition": "keep_as_panel",
+      "time_frame": "TF15",
+      "subject": "Ishmael sleeps soundly",
+      "narrative_function": "Resolve scene; ironic comfort",
+      "preservation_reason": "Final image button",
+      "omit_or_compress_reason": ""
+    }
+  ],
+  "graphic_beats": [
+    {
+      "beat_id": "B1",
+      "source_unit_ids": [
+        2
+      ],
+      "time_frame": "TF1",
+      "subject": "Ishmael chooses the sea to cure his spleen",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From grim restlessness to decisive plan: get to sea",
+      "physical_action_spine": "Ishmael walks past coffin warehouses and funerals toward the waterfront, reflecting.",
+      "narrative_function": "Establish voice, motive, tone",
+      "essential_facts": [
+        "Narrator is Ishmael",
+        "He goes to sea when melancholy threatens",
+        "He views this as his safe outlet"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "City streets edging toward the harbor",
+      "caption_candidates": [
+        "Call me Ishmael.",
+        "…I account it high time to get to sea as soon as I can."
+      ],
+      "visual_anchor": "Ishmael passing a coffin warehouse and a funeral procession",
+      "compression_guidance": "Keep two short sentences; cut the longer catalog of hypos.",
+      "storyboard_guidance": "VO over two narrow panels pushing him cityward; mood: damp, November.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B2",
+      "source_unit_ids": [
+        3,
+        4,
+        5
+      ],
+      "time_frame": "TF2",
+      "subject": "Manhattaners gazing at the water",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Aligns his urge with the crowd’s magnetism",
+      "physical_action_spine": "Ishmael drifts among crowds at the Battery, looking out to sea.",
+      "narrative_function": "Broaden theme; set place",
+      "essential_facts": [
+        "The city is ringed by wharves",
+        "Crowds gather at water’s edge",
+        "The sea exerts a universal draw"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Battery seawall; ships at anchor",
+      "caption_candidates": [
+        "Posted like silent sentinels all around the town, stand thousands upon thousands of mortal men fixed in ocean reveries."
+      ],
+      "visual_anchor": "A line of onlookers at the seawall in winter light",
+      "compression_guidance": "One wide shot; VO trimmed to one or two lines.",
+      "storyboard_guidance": "Use a long horizontal panel to convey the ‘leagues’ of people.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B3",
+      "source_unit_ids": [
+        6,
+        7
+      ],
+      "time_frame": "TF1",
+      "subject": "Meditation and water; the ungraspable phantom of life",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From observation to philosophy: water as life’s mystery",
+      "physical_action_spine": "Ishmael continues walking; reflections ride as VO over watery imagery.",
+      "narrative_function": "Theme statement",
+      "essential_facts": [
+        "Meditation and water are bound",
+        "Water completes landscapes and dreams",
+        "The sea mirrors life’s ungraspable phantom"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Montage of streams, prairies, oceans",
+      "caption_candidates": [
+        "Yes, as every one knows, meditation and water are wedded for ever.",
+        "It is the image of the ungraspable phantom of life; and this is the key to it all."
+      ],
+      "visual_anchor": "Reflections in moving water overlapping Ishmael’s silhouette",
+      "compression_guidance": "Montage in 1–2 panels max.",
+      "storyboard_guidance": "Consider a soft crossfade sequence; no hard cutaways needed.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B4",
+      "source_unit_ids": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "time_frame": "TF3",
+      "subject": "Why he ships before the mast",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Commits to sailor’s role with wry acceptance of hardship and pay",
+      "physical_action_spine": "Ishmael shoulders a bag on a wharf, imagines being ordered about while pocketing pay.",
+      "narrative_function": "Character ethos; practical motives",
+      "essential_facts": [
+        "Not a passenger, officer, or cook",
+        "Accepts being ordered around",
+        "Prefers being paid"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Wharf/ship imagery, rope coils, tar pot",
+      "caption_candidates": [
+        "No, when I go to sea, I go as a simple sailor…",
+        "…so the universal thump is passed round, and all hands should be content."
+      ],
+      "visual_anchor": "Deck-level view of Ishmael taking orders good-humoredly",
+      "compression_guidance": "Pick 2–3 punchy lines; imply the rest with visuals.",
+      "storyboard_guidance": "Interleave small inset of coins changing hands.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B5",
+      "source_unit_ids": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "time_frame": "TF3",
+      "subject": "Fate and the lure of the whale",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From general seafaring to choosing a whaling voyage",
+      "physical_action_spine": "Ishmael packs a carpet-bag as a spectral whale looms in mental imagery.",
+      "narrative_function": "State mission; foreshadow mythic whale",
+      "essential_facts": [
+        "Fates steer him to whaling",
+        "Whale’s mystery captivates him",
+        "He longs for forbidden seas"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Room with bag; overlay of playbill text; imagined ocean",
+      "caption_candidates": [
+        "Grand Contested Election… WHALING VOYAGE BY ONE ISHMAEL…",
+        "…one grand hooded phantom, like a snow hill in the air."
+      ],
+      "visual_anchor": "Packing table with captions styled like a playbill",
+      "compression_guidance": "One montage with 2–3 VO lines maximum.",
+      "storyboard_guidance": "Ghost-whale silhouette in negative space behind Ishmael.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B6",
+      "source_unit_ids": [
+        18
+      ],
+      "time_frame": "TF4",
+      "subject": "Arrival in New Bedford; missed Nantucket packet",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Accepts a two-night layover",
+      "physical_action_spine": "Ishmael steps off coach/packet into a cold New Bedford street, checks a notice about the missed boat.",
+      "narrative_function": "Inciting inconvenience; set time",
+      "essential_facts": [
+        "It is Saturday night in December",
+        "He’ll be stuck until Monday"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Snowy street; dock office sign",
+      "caption_candidates": [],
+      "visual_anchor": "Frosted breath; small sign: ‘Packet to Nantucket—SAILED’",
+      "compression_guidance": "Silent panel with environmental text.",
+      "storyboard_guidance": "Use signage rather than narration to convey the miss.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B7",
+      "source_unit_ids": [
+        19
+      ],
+      "time_frame": "TF4",
+      "subject": "Why only a Nantucket craft will do",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Affirms preference despite delay",
+      "physical_action_spine": "Ishmael looks toward the dark harbor, imagining Nantucket lore.",
+      "narrative_function": "Character resolve; whaling heritage nod",
+      "essential_facts": [
+        "He intends to sail from Nantucket",
+        "Nantucket’s primacy in whaling"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "New Bedford quay; imagined canoes and sloops",
+      "caption_candidates": [
+        "Nantucket—the Tyre of this Carthage."
+      ],
+      "visual_anchor": "Superimposed vignette of aboriginal canoes pursuing whales",
+      "compression_guidance": "Single line VO; imply the rest visually.",
+      "storyboard_guidance": "Subtle ghost-vignettes to avoid clutter.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B8",
+      "source_unit_ids": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "time_frame": "TF4",
+      "subject": "Cold streets and the wrong door",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Seeks cheap lodging; course-corrects after a misstep",
+      "physical_action_spine": "He trudges past warm, pricey inns toward the docks, enters a public building, stumbles into a Black church, and backs out.",
+      "narrative_function": "Hunt for shelter; comic misdirection",
+      "essential_facts": [
+        "He has little money",
+        "He aims for dockside cheapness",
+        "Mistakenly enters a church"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Icy streets; dim doorway; church interior with preacher",
+      "caption_candidates": [],
+      "visual_anchor": "Ash-box stumble and the preacher’s shadowy pulpit",
+      "compression_guidance": "Two panels cover both entry and retreat.",
+      "storyboard_guidance": "Keep church depiction respectful; focus on Ishmael’s faux pas.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B9",
+      "source_unit_ids": [
+        24,
+        25,
+        29
+      ],
+      "time_frame": "TF5",
+      "subject": "The Spouter-Inn exterior",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Commits to entering despite ominous signs",
+      "physical_action_spine": "He studies the creaking sign and steps inside.",
+      "narrative_function": "Arrival at key set",
+      "essential_facts": [
+        "Inn name and keeper: Peter Coffin",
+        "Place looks cheap and battered"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Bleak corner; creaking swinging sign",
+      "caption_candidates": [
+        "But no more of this blubbering now, we are going a-whaling…"
+      ],
+      "visual_anchor": "Close on ‘The Spouter Inn—Peter Coffin’",
+      "compression_guidance": "One exterior panel with VO button.",
+      "storyboard_guidance": "Wind lines on the sign; dim window glow.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B10",
+      "source_unit_ids": [
+        31,
+        32,
+        33
+      ],
+      "time_frame": "TF6",
+      "subject": "The inscrutable painting",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From bewilderment to a chilling ‘leviathan’ reading",
+      "physical_action_spine": "He steps close, opens a small window for light, studies the canvas.",
+      "narrative_function": "Foreshadowing; tone",
+      "essential_facts": [
+        "The painting suggests a whale attacking a ship",
+        "It exerts a dreadful fascination"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Smoked entry with wainscots",
+      "caption_candidates": [
+        "…does it not bear a faint resemblance to a gigantic fish?",
+        "…an exasperated whale…in the act of impaling himself upon the three mast-heads."
+      ],
+      "visual_anchor": "Murky canvas with three mast-stubs and looming black form",
+      "compression_guidance": "Avoid exhaustive interpretations—jump to his final theory.",
+      "storyboard_guidance": "Let the painting fill a panel; Ishmael a small silhouette before it.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B11",
+      "source_unit_ids": [
+        34,
+        35,
+        36
+      ],
+      "time_frame": "TF7",
+      "subject": "Weapons wall and Jonah at the bar",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Absorbs rough, whaling-saturated atmosphere",
+      "physical_action_spine": "He crosses into the public room under the whale’s jaw arch.",
+      "narrative_function": "World-building; menace and lore",
+      "essential_facts": [
+        "Heathenish clubs and storied irons",
+        "Bar set in a whale’s jawbone",
+        "Landlord at bar nicknamed Jonah"
+      ],
+      "character_relationships": [
+        "Ishmael meets the house ambience and its keeper"
+      ],
+      "setting_or_orientation": "Low-beamed, rocking room; bar as whale head",
+      "caption_candidates": [],
+      "visual_anchor": "Ishmael framed under the jawbone arch with bottles behind ‘Jonah’",
+      "compression_guidance": "Show the wall and the jaw; compress tumbler-rant to a single etched mark on glass.",
+      "storyboard_guidance": "Prop close-ups in insets: a corkscrewed harpoon; a marked tumbler.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B12",
+      "source_unit_ids": [
+        37,
+        38,
+        39
+      ],
+      "time_frame": "TF7",
+      "subject": "House full; share a harpooneer’s blanket",
+      "driver_character": "Landlord Peter Coffin",
+      "character_goal_or_state_change": "Offers a practical but alarming solution",
+      "physical_action_spine": "Landlord leans in, tapping forehead; Ishmael weighs the offer.",
+      "narrative_function": "Introduce central night complication",
+      "essential_facts": [
+        "No spare beds",
+        "Only option: share with a harpooneer"
+      ],
+      "character_relationships": [
+        "Landlord sets terms with Ishmael"
+      ],
+      "setting_or_orientation": "Near bar; low light",
+      "caption_candidates": [],
+      "visual_anchor": "The landlord’s knowing grin; Ishmael’s doubtful glance",
+      "compression_guidance": "Keep dialogue brisk; two exchanges max.",
+      "storyboard_guidance": "Use speech bubbles; avoid VO.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B13",
+      "source_unit_ids": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "time_frame": "TF8",
+      "subject": "Frigid supper and harpooneer rumor",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Curiosity about his unseen bedfellow grows",
+      "physical_action_spine": "He eats with others, whispers to landlord, hears ‘steaks rare’ line.",
+      "narrative_function": "Build suspense via comic detail",
+      "essential_facts": [
+        "Cold, cheap fare",
+        "Harpooneer is dark complexioned and eats steaks rare"
+      ],
+      "character_relationships": [
+        "Ishmael queries landlord"
+      ],
+      "setting_or_orientation": "Bare supper room with two tallow candles",
+      "caption_candidates": [
+        "…he eats nothing but steaks, and he likes ’em rare."
+      ],
+      "visual_anchor": "Young sailor demolishing dumplings; landlord’s aside",
+      "compression_guidance": "Condense meal to a single snapshot and two lines.",
+      "storyboard_guidance": "Warm candle halos in an otherwise blue-cold room.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B14",
+      "source_unit_ids": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "time_frame": "TF8",
+      "subject": "Waiting in the barroom; suspicions",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Decides to wait him out and gauge him",
+      "physical_action_spine": "Returns to the barroom to keep watch.",
+      "narrative_function": "Set stage for late-night arrivals",
+      "essential_facts": [
+        "Harpooneer not yet back",
+        "Ishmael grows wary"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Barroom benches and scrimshaw table",
+      "caption_candidates": [],
+      "visual_anchor": "Ishmael on the carved settle near dim lamp",
+      "compression_guidance": "One panel; inner thought as short caption.",
+      "storyboard_guidance": "Focus on his eyes following the door.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B15",
+      "source_unit_ids": [
+        49,
+        50,
+        51
+      ],
+      "time_frame": "TF9",
+      "subject": "The Grampus’s crew storms in",
+      "driver_character": "Jonah (bartender) with Ishmael observing",
+      "character_goal_or_state_change": "Room energy spikes; Ishmael’s watch is interrupted",
+      "physical_action_spine": "Crew bursts in; Jonah pours; capers begin.",
+      "narrative_function": "Inject action and maritime color",
+      "essential_facts": [
+        "Returning crew from long voyage",
+        "Drinking and revelry"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Barroom packed with ice-crusted sailors",
+      "caption_candidates": [],
+      "visual_anchor": "Jonah beneath the jawbone pouring brimmers; frosted beards",
+      "compression_guidance": "Single chaotic panel; no need to list drinks.",
+      "storyboard_guidance": "Motion lines; overlapping speech bubbles.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B16",
+      "source_unit_ids": [
+        52,
+        53
+      ],
+      "time_frame": "TF9",
+      "subject": "Bulkington’s quiet exit; quiet returns",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Notices Bulkington as a figure of interest",
+      "physical_action_spine": "Ishmael catches sight of Bulkington leaving; room calms after.",
+      "narrative_function": "Seed Bulkington; reset mood",
+      "essential_facts": [
+        "Bulkington is tall, reserved",
+        "He slips away, a favorite of the crew"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Doorway with winter night beyond",
+      "caption_candidates": [
+        "“Bulkington! Bulkington! where’s Bulkington?”"
+      ],
+      "visual_anchor": "Bulkington’s silhouette in the open door",
+      "compression_guidance": "One panel, one shout.",
+      "storyboard_guidance": "Let the name hang in the speech balloon as he disappears.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B17",
+      "source_unit_ids": [
+        54,
+        55,
+        56
+      ],
+      "time_frame": "TF10",
+      "subject": "Ishmael refuses to share; tries the bench",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "Seeks solo sleep solution",
+      "physical_action_spine": "He announces he’ll sleep on the bench and beds down.",
+      "narrative_function": "Escalate complication toward comic failure",
+      "essential_facts": [
+        "He dislikes sharing beds",
+        "Intends to sleep on bench"
+      ],
+      "character_relationships": [
+        "Ishmael pushes back on landlord’s plan"
+      ],
+      "setting_or_orientation": "Barroom benches",
+      "caption_candidates": [
+        "No man prefers to sleep two in a bed."
+      ],
+      "visual_anchor": "Ishmael stretching across the rough bench",
+      "compression_guidance": "One panel with a single VO line.",
+      "storyboard_guidance": "Show knots in the plank digging into him.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B18",
+      "source_unit_ids": [
+        57,
+        58,
+        59
+      ],
+      "time_frame": "TF10",
+      "subject": "Planing the bench; drafts defeat him",
+      "driver_character": "Landlord Peter Coffin",
+      "character_goal_or_state_change": "Attempts to help; solution fails",
+      "physical_action_spine": "Landlord planes the bench; Ishmael reconfigures; gives up.",
+      "narrative_function": "Comic business; raise stakes",
+      "essential_facts": [
+        "Bench too short and drafty",
+        "Ishmael abandons the idea"
+      ],
+      "character_relationships": [
+        "Landlord tries to oblige Ishmael"
+      ],
+      "setting_or_orientation": "Stove-lit barroom, window draught",
+      "caption_candidates": [],
+      "visual_anchor": "Shavings flying; candle guttering in a draft",
+      "compression_guidance": "Two small panels; keep it physical.",
+      "storyboard_guidance": "Exaggerate the curls of planed wood for humor.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B19",
+      "source_unit_ids": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "time_frame": "TF10",
+      "subject": "The late harpooneer and the ‘head’ puzzle",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From patience to irritation and incredulity",
+      "physical_action_spine": "He questions the landlord about the harpooneer’s lateness; learns of ‘peddling his head’.",
+      "narrative_function": "Wind-up to comic misunderstanding",
+      "essential_facts": [
+        "Harpooneer is late",
+        "Landlord hints he’s ‘selling his head’"
+      ],
+      "character_relationships": [
+        "Ishmael challenges landlord"
+      ],
+      "setting_or_orientation": "Barroom corner clock nearing midnight",
+      "caption_candidates": [
+        "“Can’t sell his head?”",
+        "“With what?” — “With heads, to be sure!”"
+      ],
+      "visual_anchor": "Clock striking twelve; landlord whittling a toothpick",
+      "compression_guidance": "Keep only the key volley of lines.",
+      "storyboard_guidance": "Use tight shot-reverse-shot to sell timing.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B20",
+      "source_unit_ids": [
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "time_frame": "TF11",
+      "subject": "Confrontation and explanation: embalmed heads",
+      "driver_character": "Landlord Peter Coffin",
+      "character_goal_or_state_change": "Diffuses Ishmael’s suspicion with facts",
+      "physical_action_spine": "Ishmael lays down a demand; landlord explains the South Seas heads.",
+      "narrative_function": "Resolve misunderstanding; maintain comic tone",
+      "essential_facts": [
+        "Harpooneer sells embalmed heads as curios",
+        "Sunday taboo prevents selling tomorrow",
+        "Ishmael deems it cannibal business"
+      ],
+      "character_relationships": [
+        "Landlord educates Ishmael"
+      ],
+      "setting_or_orientation": "Same barroom spot",
+      "caption_candidates": [
+        "…he bought up a lot of ’balmed New Zealand heads…",
+        "…I take it to be good evidence that this harpooneer is stark mad…"
+      ],
+      "visual_anchor": "Landlord pantomimes a string of heads like onions",
+      "compression_guidance": "Give Ishmael’s ‘sermon’ a single decisive balloon; keep landlord’s explanation concise.",
+      "storyboard_guidance": "Stage as a mini courtroom—Ishmael pointing, landlord gesturing.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B21",
+      "source_unit_ids": [
+        77,
+        78,
+        79
+      ],
+      "time_frame": "TF12",
+      "subject": "Upstairs to the prodigious bed",
+      "driver_character": "Landlord Peter Coffin",
+      "character_goal_or_state_change": "Shepherds Ishmael to a practical end",
+      "physical_action_spine": "He lights a candle and leads Ishmael to the room and bed.",
+      "narrative_function": "Transition to the set-piece",
+      "essential_facts": [
+        "It’s late; harpooneer likely anchored elsewhere",
+        "The bed is huge"
+      ],
+      "character_relationships": [
+        "Landlord reassures and guides Ishmael"
+      ],
+      "setting_or_orientation": "Narrow staircase; chilly room",
+      "caption_candidates": [],
+      "visual_anchor": "Candlelight reveals the massive bed",
+      "compression_guidance": "One panel reveal is enough.",
+      "storyboard_guidance": "Exaggerate scale of bed vs Ishmael.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B22",
+      "source_unit_ids": [
+        80,
+        81,
+        82,
+        83
+      ],
+      "time_frame": "TF12",
+      "subject": "Room inventory and the door-mat poncho",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From wariness to practical surrender to sleep",
+      "physical_action_spine": "He inspects the room, tries on the shaggy garment, then blows out the light and turns in.",
+      "narrative_function": "Seed props; lull before intrusion",
+      "essential_facts": [
+        "Harpoon and seaman’s gear present",
+        "Odd shaggy garment",
+        "Ishmael goes to bed"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Cold chamber; sea chest; shelf with hooks",
+      "caption_candidates": [],
+      "visual_anchor": "Ishmael in the shaggy poncho before a tiny wall mirror",
+      "compression_guidance": "One gag image plus a quiet tuck-in panel.",
+      "storyboard_guidance": "Keep prop placements consistent for later continuity.",
+      "pacing_priority": "low"
+    },
+    {
+      "beat_id": "B23",
+      "source_unit_ids": [
+        84
+      ],
+      "time_frame": "TF13",
+      "subject": "Footsteps; light under the door",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From drowsy to alert and tense",
+      "physical_action_spine": "He opens his eyes to the glow under the door.",
+      "narrative_function": "Suspense trigger",
+      "essential_facts": [
+        "Someone approaches the room at night"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Dark room; crack of light",
+      "caption_candidates": [],
+      "visual_anchor": "Strip of light across the floorboards",
+      "compression_guidance": "Silent panel.",
+      "storyboard_guidance": "Emphasize sound effect of a heavy step.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B24",
+      "source_unit_ids": [
+        85,
+        86,
+        87
+      ],
+      "time_frame": "TF13",
+      "subject": "Queequeg revealed; Ishmael’s terror",
+      "driver_character": "Queequeg",
+      "character_goal_or_state_change": "Queequeg unpacks, oblivious; Ishmael’s fear peaks",
+      "physical_action_spine": "Queequeg sets candle, unlaces his bag, reveals tattoos and tomahawk; Ishmael recoils internally.",
+      "narrative_function": "Introduce Queequeg physically and culturally (first pass)",
+      "essential_facts": [
+        "Tattooed, scarified appearance",
+        "Carries a tomahawk and a New Zealand head",
+        "Ishmael misreads him as dangerous"
+      ],
+      "character_relationships": [
+        "Ishmael forms a fearful first impression of Queequeg"
+      ],
+      "setting_or_orientation": "Same chamber; candle on floor",
+      "caption_candidates": [],
+      "visual_anchor": "Queequeg’s face and torso revealed in stark candlelight",
+      "compression_guidance": "Let visuals carry; minimal VO needed.",
+      "storyboard_guidance": "Use chiaroscuro; keep Queequeg calm and methodical.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B25",
+      "source_unit_ids": [
+        88,
+        89
+      ],
+      "time_frame": "TF14",
+      "subject": "Idol ritual at the fireplace",
+      "driver_character": "Queequeg",
+      "character_goal_or_state_change": "Performs private worship; Ishmael’s bafflement increases",
+      "physical_action_spine": "Queequeg sets the idol, lights shavings, offers biscuit, chants, then bags the idol.",
+      "narrative_function": "Cultural practice shown without judgment from Queequeg",
+      "essential_facts": [
+        "Queequeg has an idol",
+        "He makes a small offering and chant"
+      ],
+      "character_relationships": [],
+      "setting_or_orientation": "Fireplace with soot-black bricks",
+      "caption_candidates": [],
+      "visual_anchor": "Small idol between andirons with tiny blaze",
+      "compression_guidance": "One panel of the rite; one panel bagging the idol.",
+      "storyboard_guidance": "Keep focus respectful and observational; minimize caricature.",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "B26",
+      "source_unit_ids": [
+        90,
+        91
+      ],
+      "time_frame": "TF15",
+      "subject": "Tomahawk-pipe and sudden bedmate",
+      "driver_character": "Queequeg",
+      "character_goal_or_state_change": "Queequeg settles in; Ishmael’s panic bursts",
+      "physical_action_spine": "Queequeg lights his tomahawk-pipe, then springs into the bed in the dark.",
+      "narrative_function": "Comic shock and escalation",
+      "essential_facts": [
+        "Tomahawk is also a pipe",
+        "Queequeg leaps into bed unaware of Ishmael"
+      ],
+      "character_relationships": [
+        "Physical proximity ignites conflict"
+      ],
+      "setting_or_orientation": "Darkened room; bedclothes flying",
+      "caption_candidates": [],
+      "visual_anchor": "Glow of pipe bowl; blur of motion into the bed",
+      "compression_guidance": "Action-first; VO can be omitted.",
+      "storyboard_guidance": "Use sound effects and motion lines to sell the leap.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B27",
+      "source_unit_ids": [
+        92,
+        93,
+        94,
+        95
+      ],
+      "time_frame": "TF15",
+      "subject": "Threats in the dark; landlord’s rescue",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From panic to relief as help arrives",
+      "physical_action_spine": "Ishmael cries out; Queequeg flourishes the tomahawk; landlord bursts in with a lamp.",
+      "narrative_function": "Crisis and de-escalation",
+      "essential_facts": [
+        "Miscommunication and threat",
+        "Landlord intervenes with light"
+      ],
+      "character_relationships": [
+        "Landlord mediates between Ishmael and Queequeg"
+      ],
+      "setting_or_orientation": "Sudden lamplight in the cramped room",
+      "caption_candidates": [
+        "“Landlord, for God’s sake!”",
+        "“Who-e debel you? … I kill-e!”"
+      ],
+      "visual_anchor": "Door flung open, landlord with lamp; Ishmael clinging to him",
+      "compression_guidance": "Keep two short lines total; let visuals carry heat.",
+      "storyboard_guidance": "Contrast darkness and new light dramatically.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B28",
+      "source_unit_ids": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "time_frame": "TF15",
+      "subject": "Peace terms and humanizing turn",
+      "driver_character": "Landlord Peter Coffin",
+      "character_goal_or_state_change": "Transforms fear into tentative trust",
+      "physical_action_spine": "Landlord explains; Queequeg nods; Ishmael negotiates no-smoking condition.",
+      "narrative_function": "Resolve conflict; deepen character",
+      "essential_facts": [
+        "Queequeg means no harm",
+        "Ishmael recognizes his shared humanity",
+        "Condition: no smoking in bed"
+      ],
+      "character_relationships": [
+        "Ishmael and Queequeg move from fear to acceptance"
+      ],
+      "setting_or_orientation": "Bedside parley under lamp",
+      "caption_candidates": [
+        "Better sleep with a sober cannibal than a drunken Christian.",
+        "…I ain’t insured."
+      ],
+      "visual_anchor": "Queequeg seated up in bed, pipe in hand but stilled",
+      "compression_guidance": "One panel of landlord ‘translation’; one panel of Ishmael’s condition.",
+      "storyboard_guidance": "Soften Queequeg’s expression; show kindness in gesture inviting Ishmael back.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "B29",
+      "source_unit_ids": [
+        102,
+        103,
+        104
+      ],
+      "time_frame": "TF15",
+      "subject": "Lights out; unlikely peace",
+      "driver_character": "Ishmael",
+      "character_goal_or_state_change": "From alarm to rest",
+      "physical_action_spine": "Queequeg stashes pipe; landlord exits; Ishmael turns in and sleeps soundly.",
+      "narrative_function": "Close scene with ironic comfort",
+      "essential_facts": [
+        "Trust holds",
+        "Ishmael sleeps well"
+      ],
+      "character_relationships": [
+        "Temporary harmony between Ishmael and Queequeg"
+      ],
+      "setting_or_orientation": "The vast bed; room in half-dark",
+      "caption_candidates": [],
+      "visual_anchor": "Two figures back-to-back under covers; lamp snuffed",
+      "compression_guidance": "Keep it wordless or a single ‘Good night’.",
+      "storyboard_guidance": "Final calm panel; echo the bed’s earlier scale from a new, restful angle.",
+      "pacing_priority": "medium"
+    }
+  ],
+  "omitted_units": [
+    {
+      "source_unit_id": 1,
+      "reason": "paratext_heading_low_plot_value",
+      "safe_because": "Chapter title can be handled in book design without consuming comics pacing."
+    },
+    {
+      "source_unit_id": 17,
+      "reason": "paratext_heading_low_plot_value",
+      "safe_because": "Chapter header not needed for plot beats; page design can carry it."
+    },
+    {
+      "source_unit_id": 26,
+      "reason": "repetitive_reflection",
+      "safe_because": "Euroclydon/Lazarus metaphor extends mood without advancing action or relationships."
+    },
+    {
+      "source_unit_id": 27,
+      "reason": "repetitive_reflection",
+      "safe_because": "Continuation of the same metaphor; cold and poverty already established."
+    },
+    {
+      "source_unit_id": 28,
+      "reason": "repetitive_reflection",
+      "safe_because": "Further elaboration on Dives adds little to scene’s forward motion."
+    },
+    {
+      "source_unit_id": 30,
+      "reason": "paratext_heading_low_plot_value",
+      "safe_because": "Chapter title can appear as a design element rather than a staged beat."
+    }
+  ],
+  "continuity_requirements": [
+    {
+      "type": "character",
+      "name": "Ishmael",
+      "requirement": "Maintain as on-page driver with VO captions preserving sardonic tone; consistent winter clothing and old carpet-bag."
+    },
+    {
+      "type": "character",
+      "name": "Landlord Peter Coffin",
+      "requirement": "Lean, grinning, practical; present at bar as ‘Jonah’ keeper and later as mediator with lamp."
+    },
+    {
+      "type": "character",
+      "name": "Queequeg",
+      "requirement": "Tattooed from face to legs; small scalp-knot; carries tomahawk-pipe and a small idol; manner calm and courteous after initial surprise."
+    },
+    {
+      "type": "character",
+      "name": "Bulkington",
+      "requirement": "Tall, broad-shouldered, reserved; only briefly seen leaving amid revelry."
+    },
+    {
+      "type": "place",
+      "name": "Manhattan Battery/wharves",
+      "requirement": "Establish as wintery waterfront with crowds gazing seaward to set theme."
+    },
+    {
+      "type": "place",
+      "name": "New Bedford streets",
+      "requirement": "Icy, dim, near-empty; visual cold must carry from arrival to inn discovery."
+    },
+    {
+      "type": "place",
+      "name": "The Spouter-Inn exterior",
+      "requirement": "Swinging sign ‘The Spouter Inn—Peter Coffin’; creaking in wind; poverty-worn facade."
+    },
+    {
+      "type": "place",
+      "name": "Spouter-Inn entry and painting",
+      "requirement": "Dark, smoky entry; inscrutable whale painting with three mast-stubs; small window Ishmael opens."
+    },
+    {
+      "type": "place",
+      "name": "Public room/bar",
+      "requirement": "Whale jawbone arch over bar; cracked curios cases; cheating tumblers detail."
+    },
+    {
+      "type": "place",
+      "name": "Upstairs chamber",
+      "requirement": "Prodigious bed; sea chest; harpoon at bedhead; bone hooks on shelf; fireplace with sooty bricks."
+    },
+    {
+      "type": "object",
+      "name": "Carpet-bag",
+      "requirement": "Appears when Ishmael packs and on arrival in New Bedford."
+    },
+    {
+      "type": "object",
+      "name": "New Zealand head (curio)",
+      "requirement": "In Queequeg’s hand on entry; then crammed back into bag; not visible after resolution."
+    },
+    {
+      "type": "object",
+      "name": "Tomahawk-pipe",
+      "requirement": "Shown as pipe during bed-leap; stashed before final sleep per Ishmael’s request."
+    },
+    {
+      "type": "object",
+      "name": "Idol",
+      "requirement": "Placed in fireplace for brief rite; then bagged; do not leave it on display in later panels."
+    },
+    {
+      "type": "theme",
+      "name": "Magnetism of water",
+      "requirement": "Early montage/captions must articulate ‘meditation and water’ and the ‘ungraspable phantom of life’."
+    },
+    {
+      "type": "theme",
+      "name": "Prejudice to empathy",
+      "requirement": "Arc from Ishmael’s fear of the ‘cannibal’ to his chosen acceptance ‘Better sleep with a sober cannibal…’ must read clearly."
+    }
+  ],
+  "storyboard_instructions": [
+    "Open with Ishmael in motion; keep VO sparse and iconic. Use environmental storytelling (signs, clocks, breath in cold) to avoid expository boxes.",
+    "Use a single long horizontal panel for the Battery water-gazers with a short VO to sell the universal pull of the sea.",
+    "For the essayistic water montage, overlay 1–2 translucent images (stream, prairie, ocean) rather than multiple cutaways; avoid derailing action.",
+    "When staging the Spouter-Inn painting, let it fill a panel; keep Ishmael small to convey awe and the painting’s scale.",
+    "Barroom geography: establish the whale jawbone arch clearly once; reuse angles for continuity when the Grampus crew arrives.",
+    "Keep the supper room painfully cold—blue palette, tallow candle haloes, visible breath—to sell discomfort with minimal text.",
+    "Landlord’s ‘head’ misunderstanding: deliver as a tight 3-beat volley for timing—set-up (‘Can’t sell his head?’), mischief (‘With heads, to be sure!’), escalation (Ishmael’s ‘sermon’ pose).",
+    "Bench planing gag: two small panels—shavings fly; Ishmael swaddled in drafts—then move on; don’t linger.",
+    "Upstairs chamber: plant key props (harpoon at bedhead, idol spot in fireplace, bone hooks) for later beats; maintain their positions consistently.",
+    "Queequeg’s reveal: chiaroscuro lighting; avoid caricature; his calm, methodical motions contrast Ishmael’s fear.",
+    "Idol rite: stage respectfully and briefly; keep focus on Ishmael’s bafflement rather than mocking the ritual.",
+    "Bed-leap: prioritize kinetic clarity—glow of tomahawk-pipe, silhouette arc into bed, Ishmael’s yelp, then immediate cut to the landlord’s lamplight.",
+    "Resolution: shift facial expressions to warmth and courtesy; include Ishmael’s line ‘Better sleep with a sober cannibal…’ as a quiet VO over the final settling-in.",
+    "End with a calm, wide shot of the prodigious bed, lamp out—the visual ‘button’ that relieves the preceding tension.",
+    "Across pages, balance dense VO passages with silent or near-silent panels to preserve pace and allow art to carry mood."
+  ]
+}
+
+Return strict JSON only:
+
+{
+  "title": string,
+  "adaptation_scope": string,
+  "format": {
+    "page_count": number,
+    "target_panels_per_page": number,
+    "reading_order": "left-to-right, top-to-bottom",
+    "drafting_mode": "storyboard_from_plot_version"
+  },
+  "style_bible": {
+    "visual_period": string,
+    "line_and_color": string,
+    "lighting": string,
+    "lettering": string,
+    "recurring_motifs": [string]
+  },
+  "characters": [
+    {
+      "name": string,
+      "visual_anchor": string,
+      "costume": string,
+      "expression_range": string,
+      "continuity_note": string
+    }
+  ],
+  "pages": [
+    {
+      "page_number": number,
+      "page_summary": string,
+      "panels": [
+        {
+          "panel_number": number,
+          "graphic_beat_ids": [string],
+          "driver_character": string,
+          "character_action": string,
+          "beat": string,
+          "shot": "establishing" | "wide" | "medium" | "close" | "detail" | "silent",
+          "image_prompt": string,
+          "caption_zone": "top_left" | "top_center" | "top_right" | "bottom_left" | "bottom_center" | "bottom_right",
+          "caption": string,
+          "dialogue": [
+            {"speaker": string, "text": string}
+          ],
+          "sfx": [string],
+          "continuity_notes": string,
+          "lettering_notes": string,
+          "adaptation_note": string
+        }
+      ]
+    }
+  ],
+  "open_questions": [string]
+}

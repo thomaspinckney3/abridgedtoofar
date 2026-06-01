@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:28:45",
+  "key": "544ef693f059339b4da54bb1ee1f5030",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will check each draft chapter methodically against the seven tests, keeping the authorized cuts and the gate test firmly in mind.\n\n---\n\n**Ch 038 draft \u2014 scan**\n\n1. *Tom Loker / Aunt Dorcas scene.* Aunt Dorcas is on the authorized-removal list, so replacing her with \"a grave, soft-voiced woman\" is expected. No finding.\n\n2. *\"just to spite\u2014him!\"* The source has \"just to spite Marks,\u2014the cursed puppy!\" Marks is on the authorized-removal list, so eliding the name is authorized. The dash reads as a self-correction by Tom; a reader understands he's spiting someone. No structural failure.\n\n3. *\"Jim, a fellow fugitive who had been sheltered at the same Quaker farm, with his old mother, was forwarded separately.\"* The draft adds an appositive gloss for Jim that the source does not have. This is protective drafting, not a failure.\n\n4. *\"I wonder if the woman has got Harry rigged?\"* Source: \"I wonder if Mrs. Smyth has got Harry rigged?\" Mrs. Smyth is on the authorized-removal list, so \"the woman\" is the authorized replacement. The referent is a bit loose but \"the woman\" refers to the middle-aged woman who enters moments later \u2014 the reader is not confused. No finding.\n\n5. The Marks overheard-dialogue scene. The source names Marks explicitly and identifies him as \"our sometime friend Marks.\" The draft replaces him with \"the other\" (the second speaker). The exchange still parses: George overhears two men talking, one says he's watched the boat, the other describes the fugitives. The removal of Marks is authorized. No finding.\n\n6. *\"The disguises the party had assumed were in accordance with the hints of Tom Loker. The woman, being fortunately about crossing the lake to return to the Canadian settlement whither they were fleeing, had consented to appear as the aunt of little Harry\u2026\"* Mrs. Smyth's role is now attributed to \"the woman.\" She has been called \"the woman\" since the door-opening scene. Consistent. No finding.\n\n**Ch 038 \u2014 no valid findings.**\n\n---\n\n**Ch 039 draft \u2014 scan**\n\n1. *\"Sometimes he saw Cassy, and now and then, when summoned to the house, the dejected Emmeline; but there was no time to commune with any.\"* Cassy and Emmeline have been present in earlier chapters of the draft (the plantation scenes). Cassy's name has appeared; Emmeline was introduced as Legree's other slave. Both names survive across chapters without local gloss. Both are more than minor removable characters \u2014 they are principals of the escape subplot. No finding.\n\n2. *\"Poor mulatto\" passage.* \"The poor mulatto woman, whose simple faith had been well-nigh crushed\u2026\" \u2014 the draft compresses to \"The poor mulatto, whose faith had been all but crushed by cruelty and wrong, felt her soul raised by the hymns and Scriptures Tom breathed in her ear between tasks.\" Who is this \"poor mulatto\"? In the source she is Emmeline, briefly glimpsed. In the draft she has been mentioned a few lines earlier as \"the dejected Emmeline.\" But \"the poor mulatto\" is not identified by name here. Is the reader confused? Emmeline has just been named two paragraphs above. The descriptor \"the poor mulatto\" suffices to identify her; a reader can connect it. The explicit-rejection rule says \"A minor character is referred to only by a descriptor \u2026 and the descriptor is clear; proper-name continuity is not required when the name has been elided.\" No finding.\n\n3. *Cassy's midnight-murder proposal scene.* The source has an extended build-up: Tom sees Cassy at the window, comes out, \"It was between one and two o'clock at night\u2014broad, calm, still moonlight. Tom remarked, as the light of the moon fell upon Cassy's large, black eyes, that there was a wild and peculiar glare in them.\" The draft: \"One night, after the cabin slept, Tom saw her face at the chink that served for a window. She made a silent gesture. Tom came out. It was broad, calm moonlight. The light, as it fell on Cassy's large, black eyes, showed a wild glare unlike her wonted fixed despair.\" Fully parseable. No finding.\n\n4. *\"Didn't I tell you that evil spirits followed me?\"* This is Cassy's line. The source has it at the same place. In the source, Cassy had earlier (in Ch 035, the Quadroon's Story) told Tom that evil spirits followed her. That full autobiography is an authorized subplot removal. Does the draft's Cassy say \"Didn't I tell you\" with no prior telling in the draft? Let me check: the authorized cut list includes \"Cassy's full autobiography (the 'Quadroon's Story') (Ch 035).\" In the draft of Ch 039, there is no prior moment where Cassy told Tom anything about evil spirits. The phrase \"Didn't I tell you\" is a back-reference to a conversation that has been entirely cut.\n\n   - **Test 3 (broken logical pivot)**: The sentence functions as a callback \u2014 \"as I told you before\" \u2014 but the telling was in the Ch 035 material that was cut. A reader of the draft has never seen Cassy say this to Tom. The sentence is an unattributed back-reference whose antecedent has been excised.\n   - **Gate test**: Would a reader be genuinely confused? Yes \u2014 they would wonder when Cassy told Tom this, since they have no record of it in the draft. It reads as a dangling reference, not merely a less-ornamented version.\n\n   This is a **valid finding** (broken pivot / dangling reference from an authorized cut that leaves a seam in surviving material).\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Didn't I tell you that evil spirits followed me? O! Father Tom, I can't pray,\u2014I wish I could.\",\n    \"source_has\": \"Cassy's back-reference to her earlier confession about evil spirits (drawn from her full autobiography in Ch 035, 'Didn't I tell you that evil spirits followed me?'). The Ch 035 Quadroon's Story established this prior telling between Cassy and Tom; its authorized removal leaves the callback with no antecedent in the draft.\",\n    \"gate_test_answer\": \"A reader of the draft has seen no prior scene in which Cassy told Tom that evil spirits followed her, so 'Didn't I tell you' reads as a dangling callback to a missing conversation, genuinely confusing rather than merely compressed.\"\n  }\n]\n```",
+    "input_tokens": 18621,
+    "output_tokens": 1608,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.309974908828735,
+    "stop_reason": "end_turn"
+  }
+}

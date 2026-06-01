@@ -1,0 +1,21 @@
+{
+  "page_number": 1,
+  "anchors": [
+    {
+      "panel_number": 5,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "With heads, to be sure.",
+      "visible": true,
+      "confidence": 0.9,
+      "mouth_point": {"x": 727, "y": 753},
+      "mouth_point_ratio": {"x": 0.71, "y": 0.49},
+      "tail_target_point": {"x": 758, "y": 737},
+      "tail_target_point_ratio": {"x": 0.74, "y": 0.48},
+      "face_box": {"x1": 676, "y1": 661, "x2": 840, "y2": 876},
+      "evidence": "Right-side older landlord in cap and waistcoat, shrugging with a slight smirk; only character on the right. Mouth located around x≈0.71, y≈0.49 by grid.",
+      "reason": "Speaker matches visual hint and region. Tail target offset slightly up-right from the mouth toward the top-right balloon zone, placed at the cheek edge just outside the lips."
+    }
+  ]
+}

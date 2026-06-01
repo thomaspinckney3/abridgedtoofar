@@ -1,0 +1,51 @@
+{
+  "ts": "2026-05-11T14:08:41",
+  "key": "dea694d6f9009217e560f4533a64cf29",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "graphic_dialogue_draft",
+    "hash": "65f063daf96644293ad1d31380064eeb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"valid\": true,\n  \"notes\": [\n    \"Added source-backed speech to key moments (lodging request, bench plan, room handoff, night fright, morning rousing) while preserving captions and layout.\"\n  ],\n  \"pages\": [\n    {\n      \"page_number\": 1,\n      \"panels\": [\n        {\n          \"panel_number\": 2,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I sought the landlord for a room, and being told the house was full, I consented\u2014if the harpooneer were not decidedly objectionable\u2014to share a blanket rather than wander further on so bitter a night.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"You haint no objections to sharing a harpooneer\u2019s blanket?\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cyou haint no objections to sharing a harpooneer\u2019s blanket, have ye?\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"If he\u2019s decent, I\u2019ll take half a blanket.\",\n              \"balloon_zone\": \"bottom_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cI would put up with the half of any decent man\u2019s blanket.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 2,\n      \"panels\": [\n        {\n          \"panel_number\": 3,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I changed my mind about that harpooneer, chose the bench, and soon learned that knots, a foot too short, and the meeting draughts would never do\u2014while the landlord kept chuckling that the fellow was out \u2018selling his head.\u2019\",\n              \"caption_zone\": \"top_right\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"I shan\u2019t sleep with him. I\u2019ll try the bench here.\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cI shan\u2019t sleep with him. I\u2019ll try the bench here.\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"Wait a bit\u2014I'll make ye snug enough.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cwait a bit, Skrimshander\u2026 I\u2019ll make ye snug enough.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 4,\n      \"panels\": [\n        {\n          \"panel_number\": 5,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Seeing it was Sunday and he\u2019d come to anchor elsewhere, I let the landlord lead me to the prodigious bed; I eyed the room and the harpooneer\u2019s outlandish gear, then turned in.\",\n              \"caption_zone\": \"top_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"There; make yourself comfortable now, and good night to ye.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cThere\u2026 make yourself comfortable now, and good night to ye.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 5,\n      \"panels\": [\n        {\n          \"panel_number\": 7,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Then, tomahawk-pipe between his teeth, he sprang into bed with me; I sang out, and the landlord burst in with a light to swear the harpooneer, Queequeg, wouldn\u2019t harm a hair of my head.\",\n              \"caption_zone\": \"top_right\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Landlord! Watch! Coffin! Angels! save me!\",\n              \"balloon_zone\": \"bottom_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cLandlord! Watch! Coffin! Angels! save me!\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Queequeg\",\n              \"text\": \"Who-e debel you? You no speak-e\u2014dam-me, I kill-e.\",\n              \"balloon_zone\": \"bottom_center\",\n              \"speaker_region\": \"center\",\n              \"source_evidence\": \"\u201cWho-e debel you?\u2014you no speak-e, dam-me, I kill-e.\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"Don't be afraid\u2014Queequeg won't harm a hair of your head.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cQueequeg here wouldn\u2019t harm a hair of your head.\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 8,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Better sleep with a sober cannibal than a drunken Christian, thought I; he stashed the tomahawk-pipe, I turned in again, and never slept better in my life.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Tell him to stash his tomahawk and stop smoking.\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201ctell him to stash his tomahawk\u2026 tell him to stop smoking\u2026\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Queequeg\",\n              \"text\": \"Me sabbee plenty.\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cMe sabbee plenty\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 6,\n      \"panels\": [\n        {\n          \"panel_number\": 1,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I woke at daylight to find Queequeg\u2019s tattooed arm thrown over me, so blended with the patchwork counterpane that only its weight told me he was hugging me.\",\n              \"caption_zone\": \"top_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Queequeg!\",\n              \"balloon_zone\": \"bottom_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cI now strove to rouse him\u2014\u2018Queequeg!\u2019\u2014but his only answer was a snore.\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 2,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I tried to free myself and rouse him, rolled, felt a slight scratch, and, throwing aside the counterpane, I saw his tomahawk-pipe lying by his side.\",\n              \"caption_zone\": \"bottom_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"In the name of goodness, Queequeg\u2014wake!\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cQueequeg!\u2014in the name of goodness, Queequeg, wake!\u201d\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "input_tokens": 22506,
+    "output_tokens": 7051,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 99.65732192993164,
+    "stop_reason": "stop"
+  }
+}

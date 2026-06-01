@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:14:47",
+  "key": "58bb8d95577fa862319cdcdaa2ba010c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter carefully, applying the gate test to every potentially damaged sentence.\n\n**Ch 018 Draft \u2014 scan**\n\nThe draft is well-compressed. Most cuts are cosmetic. Let me check the specific transitions:\n\n- \"To him the village seemed unchanged\" \u2014 the preceding sentence established Evarts took Adams to Washington in October 1868; there's no explicit \"arriving\" sentence, but the preceding paragraph ends with that. A reader can follow this.\n- The Evarts paragraph leading into Washington: \"The outlook was dim, but at Washington, except for the personal friendship of Mr. Evarts...\" \u2014 source had \"The outlook was dim, but it was all he had, and at Washington...\" The draft cuts \"it was all he had\" \u2014 the pivot from \"dim\" to \"but at Washington\" still works; Evarts is established as the one friendly presence.\n- \"The first acquaintance was naturally the President\" \u2014 the source says \"The first step, of course, was the making of acquaintance, and the first acquaintance was naturally the President.\" The draft cuts the first clause. Does \"The first acquaintance was naturally the President\" parse on its own? Yes \u2014 \"first acquaintance\" is readable as \"the first person he met.\" Not broken.\n\n**Ch 021 Draft \u2014 scan**\n\n- \"Lying on the turf, the ground littered with newspapers, the monks studied the war correspondence.\" \u2014 The source establishes the Wenlock Abbey scene by naming \"the few remaining monks \u2014 three or four young Englishmen \u2014 survived there, with Milnes Gaskell acting as Prior.\" The draft cuts this entirely (Milnes Gaskell is an authorized cut). So \"the monks\" appears with no antecedent in the draft's Wenlock paragraph. The draft says only \"he fled to England and once more took refuge in the profound peace of Wenlock Abbey\" and then describes the calm \u2014 then suddenly \"the monks studied the war correspondence.\" A reader has no idea who \"the monks\" are; there's been no mention of monks or other people at Wenlock in the draft. The source's monk introduction was cut (partly because Milnes Gaskell is authorized out, but the generic \"three or four young Englishmen\" described as monks is not itself an authorized cut \u2014 it was collateral). However, I need to check: is this a direct residue of the authorized Milnes Gaskell removal? The authorized cut is Milnes Gaskell specifically. The source passage says \"Only the few remaining monks, undisturbed by the brutalities of Henry VIII\u2014three or four young Englishmen\u2014survived there, with Milnes Gaskell acting as Prior.\" The drafter cut the whole monk-introduction sentence (presumably because Milnes Gaskell was in it), which leaves \"the monks\" dangling. This is a residue of the authorized Milnes Gaskell removal \u2014 the seam is a direct consequence of that authorized cut. Per instructions, this is NOT a finding.\n\n- \"He sought education; he did not sell it.\" \u2014 In the source this follows naturally from the paragraph about his views on the professorship. In the draft, it follows Charles's argument. The source has \"Henry knew the university well enough... He sought education; he did not sell it. He knew no history...\" In the draft, after Charles's speech, the next paragraph begins \"He sought education; he did not sell it.\" The subject \"he\" is unambiguous (Adams, just discussed). The sentence parses. Not a finding.\n\n- \"Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\" \u2014 This is a fragment (no main verb). The source has \"Here was a tour de force he had never dreamed himself equal to performing: two long, dry, quarterly...\" The draft drops \"Here was a tour de force...\" leaving only the colon's content as a standalone sentence \u2014 it has no main clause. A reader encounters a noun phrase with participles but no finite verb, dangling after the sentence about piracy. This is genuinely non-parseable.\n\nLet me verify: The draft sentence reads: *\"Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\"* There is no finite verb. The source's matrix clause \"Here was a tour de force he had never dreamed himself equal to performing:\" was cut, leaving only the illustrative content. A reader cannot parse this as a complete sentence.\n\nNo other structural damage found after careful review.\n\n```json\n[\n  {\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Two long, dry, quarterly articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\",\n    \"source_has\": \"Here was a tour de force he had never dreamed himself equal to performing: two long, dry, quarterly, thirty or forty page articles, appearing in quick succession, and pirated for audiences running well into the hundred thousands; and not one person, man or woman, offering him so much as a congratulation, except to call him a begonia.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the passage has no finite verb and no main clause \u2014 it is an unanchored noun phrase that cannot be parsed as a sentence, because the matrix clause 'Here was a tour de force he had never dreamed himself equal to performing' was cut and nothing replaced it.\"\n  }\n]\n```",
+    "input_tokens": 26674,
+    "output_tokens": 1310,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 31.177342891693115,
+    "stop_reason": "end_turn"
+  }
+}

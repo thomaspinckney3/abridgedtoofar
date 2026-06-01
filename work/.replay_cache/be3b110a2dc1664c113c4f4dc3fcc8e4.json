@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:19:17",
+  "key": "be3b110a2dc1664c113c4f4dc3fcc8e4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft methodically, testing each potentially damaged sentence against the five criteria, keeping the authorized cuts in mind.\n\n---\n\n**Ch 028 Draft Analysis**\n\nThe draft is clean overall. The St. Gaudens authorized removal leaves a seam in the opening but it still parses. The magnet/coherer science preamble cut (authorized: Ch 025 digression) is handled gracefully. The Pteraspis/geologic excursus cut (authorized: Ch 017) leaves the Pteraspis reference in the draft \u2014 but the draft *keeps* that material, so no seam. \"He had accepted uniformity and Pteraspis and ice age\" \u2014 Pteraspis was introduced earlier in the same draft chapter, so this parses. No structural damage found.\n\n---\n\n**Ch 029 Draft Analysis**\n\n**Candidate 1:** \"Baireuth amused the aging student well enough; but the Senator, yearning for sterner study, pointed to Moscow.\"\n\nThe source establishes who \"the Senator\" is through the Lodge family context and the Russia trip setup. The draft has already named \"Mrs. Lodge\" in the previous sentence (\"Mrs. Lodge appeared on the horizon and bade him come, and he joined the family for the festival\"). However, \"the Senator\" is never identified in the draft \u2014 the source identifies Senator Lodge, but the authorized removal of the Baireuth/Wagner subplot and Conservative Christian Anarchist subplot means much of the Lodge-as-Senator context was stripped. The draft uses the definite article \"the Senator\" as though this person has been introduced by name and title, but the draft has only named \"Mrs. Lodge.\" A reader encounters a definite \"the Senator\" with no antecedent.\n\n- Gate test: A reader genuinely cannot tell who \"the Senator\" is \u2014 they have met \"Mrs. Lodge\" but no Senator has been named or introduced in the draft. This is a dangling reference.\n\n**Candidate 2:** \"Thus the student of Hegel prepared himself for a visit to Russia in order to enlarge his synthesis.\"\n\nThe source has an extensive \"conservative Christian anarchist\" and \"larger synthesis\" setup explaining why Russia enlarges the synthesis in that specific philosophical framework. The authorized cut removes that digression. However, \"his synthesis\" in the draft has a referent \u2014 the draft earlier says \"to enlarge his 'synthesis'\" \u2014 wait, let me check: the draft says \"enlarge his synthesis\" with no prior mention of \"synthesis\" in Ch 029 draft at all at this point (the word \"synthesis\" does not appear earlier in the Ch 029 draft). In Ch 028 draft, \"larger synthesis\" appears twice in the closing paragraphs. So a reader of the consecutive draft chapters has encountered \"synthesis\" \u2014 but the specific philosophical content of \"the student of Hegel\" preparing for Russia via the Conservative Christian Anarchist framework is entirely cut. The sentence reads as the conclusion of an argument that was removed. This is a broken pivot \u2014 it's the payoff of the Hegel/Schopenhauer/Conservative Christian Anarchy digression, which is an authorized cut, so the residual seam is expected and NOT a finding.\n\n**Candidate 3:** \"The Senator himself shook his head, and after surveying Warsaw and Moscow went on to St. Petersburg to ask questions of Mr. de Witte; but their efforts had been immense, their expenditure enormous, and their results on the people seemed uncertain as yet, even to themselves.\"\n\nThe pronoun \"their\" here is broken. In the source, the sentence reads: \"went on to St. Petersburg to ask questions of Mr. de Witte and Prince Khilkoff. Their conversation added new doubts; for their efforts had been immense...\" \u2014 \"their efforts\" refers to de Witte and Khilkoff's efforts. But Prince Khilkoff is an authorized minor-character removal. In the draft the sentence reads \"to ask questions of Mr. de Witte; but their efforts had been immense\" \u2014 \"their\" now has no plural antecedent. The Senator asked questions of Mr. de Witte (singular), so \"their efforts\" is now ambiguous/broken: it could be read as the Senator and de Witte, or it is simply unmoored. A reader cannot tell whose efforts were immense.\n\n- Gate test: A reader is genuinely confused \u2014 \"their efforts\" follows a sentence naming only one person (de Witte) being questioned, with no other party established to make \"their\" plural. The reader cannot resolve the referent.\n\n**Candidate 4:** \"For Adams, all opinion founded on fact must be error, because the facts can never be complete, and their relations must be always infinite. When the Lodges started for Berlin\u2014forty years of varied emotions had not deadened his memories of that city\u2014he took steamer for Sweden and landed at Stockholm.\"\n\nThe source has: \"this result reached, the Lodges thought their moral improvement required a visit to Berlin; but forty years of varied emotions had not deadened Adams's memories of Berlin, and he preferred, at any cost, to escape new ones. When the Lodges started for Germany, Adams took steamer for Sweden.\" The draft collapses this into a parenthetical. The pivot \"but\" (Adams avoiding Berlin) is converted into a parenthetical aside, which actually parses \u2014 a reader understands he chose Sweden over Berlin. No structural damage.\n\n**Candidate 5:** \"As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin.\"\n\nThe \"monkey\" metaphor comes from the La Fontaine passage in the source, which the draft cut. The draft has no prior mention of \"the monkey\" as a metaphor for the tourist/Adams. This is introduced without any gloss.\n\n- Gate test: A reader encounters \"the monkey\" with no introduction \u2014 the La Fontaine poem and the bear/monkey extended metaphor were cut entirely from the draft. The word \"monkey\" appears here for the first time in the Ch 029 draft with no antecedent or explanatory context. A reader is genuinely confused about what \"the monkey\" refers to.\n\n---\n\n```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"29\",\n    \"draft_passage\": \"but the Senator, yearning for sterner study, pointed to Moscow.\",\n    \"source_has\": \"Source identifies the Senator as Senator Lodge, introduced through the Lodge family travel party and named repeatedly in context; the draft names only 'Mrs. Lodge' and never introduces or names a Senator before this sentence.\",\n    \"gate_test_answer\": \"A reader is genuinely confused about who 'the Senator' is, having encountered only 'Mrs. Lodge' in the draft \u2014 no Senator has been named or identified.\"\n  },\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"29\",\n    \"draft_passage\": \"went on to St. Petersburg to ask questions of Mr. de Witte; but their efforts had been immense, their expenditure enormous, and their results on the people seemed uncertain as yet, even to themselves.\",\n    \"source_has\": \"Source reads 'to ask questions of Mr. de Witte and Prince Khilkoff. Their conversation added new doubts; for their efforts had been immense' \u2014 'their' refers to de Witte and Khilkoff jointly; Prince Khilkoff is an authorized removal, leaving 'their' with no plural antecedent in the draft.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: only de Witte is named as the person questioned, making 'their efforts' a pronoun with no recoverable plural referent \u2014 the reader cannot determine whose efforts and expenditure are being described.\"\n  },\n  {\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"29\",\n    \"draft_passage\": \"As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin.\",\n    \"source_has\": \"Source precedes this with the full La Fontaine poem and extended bear/monkey metaphor: the tourist figures himself as the monkey and Russia as the bear, establishing 'the monkey' as the traveller's ironic self-designation before using it as a referring expression.\",\n    \"gate_test_answer\": \"A reader is genuinely confused \u2014 'the monkey' appears here for the first time in the chapter draft with no prior introduction or gloss; the La Fontaine passage that establishes the metaphor was cut, leaving the referent uninterpretable.\"\n  }\n]\n```",
+    "input_tokens": 20415,
+    "output_tokens": 1952,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.6395480632782,
+    "stop_reason": "end_turn"
+  }
+}

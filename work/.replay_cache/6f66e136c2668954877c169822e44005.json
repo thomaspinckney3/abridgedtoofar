@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:31:31",
+  "key": "6f66e136c2668954877c169822e44005",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the drafts systematically, applying each test, and being careful to distinguish structural damage from mere compression.\n\n---\n\n**Preliminary notes on authorized cuts:**\n- Michaelis is on the authorized-removal list. The Ch 008 draft replaces him with \"a neighbor\" throughout \u2014 that's an authorized substitution and any residual seam from it is not a finding.\n- Catherine is on the authorized-removal list. Her scene at the garage is cut; no residual seam survives into material that should have been kept.\n- The Biloxi comic detour is an authorized cut from Ch 007.\n- The \"butler's nose\" anecdote and small-talk curlicues are authorized cuts from Ch 007.\n\n---\n\n**Ch 007 draft \u2014 working through candidate passages:**\n\n**1. \"About Gatsby,\" he corrected himself.**\n\nIn the source, after Tom is confused by \"A medium?\", the exchange is: Jordan says \"About Gatsby,\" and Tom replies \"About Gatsby! No, I haven't. I said I'd been making a small investigation of his past.\" In the draft, the line \"About Gatsby,\" he corrected himself is presented as Tom speaking (\"he corrected himself\"), but in the source Jordan speaks the line \"About Gatsby.\" The draft has reassigned the line's speaker, making Tom correct himself. While this is an alteration, it is parseable and not structurally broken \u2014 a reader understands Tom is clarifying his statement about Gatsby. **Not a valid finding.**\n\n**2. The Biloxi reference: \"You must have gone there about the time Biloxi went to New Haven.\"**\n\nThe Biloxi comic detour is an *authorized cut*. Biloxi appears in the draft only in this single line with no prior introduction. Is this a finding? The authorized-cut instruction says \"Biloxi-at-the-wedding comic detour during the Plaza scene (Ch 007)\" is removed. The name \"Biloxi\" survives in Tom's taunt but was introduced *only* within the cut passage. A reader of the draft has no idea who Biloxi is or why his going to New Haven is relevant as a parallel to Gatsby's Oxford claim. The line reads as a broken allusion \u2014 Tom is evidently implying Biloxi's Oxford/Yale credential was fraudulent (as a jab at Gatsby), but without the Biloxi passage, the reader cannot understand the comparison at all. The name is not a \"major or continuously present character\" \u2014 it is a minor proper name whose only function is internal to the cut passage. This is a case where the name survives after its introduction was cut.\n\nTest 7 applies: a minor character's proper name appears without a local role, relationship, or appositive identifier, and the immediately preceding draft does not establish who that named person is.\n\n**This is a valid finding.**\n\n**3. Ch 007 draft: \"We came up with their blue coup\u00e9 under the spidery girders of the elevated.\"**\n\nIn the source, the cars leaving the Buchanan house are arranged as: Tom drives Gatsby's yellow car (with Nick and Jordan); Daisy and Gatsby take Tom's coup\u00e9. The source says \"she walked close to Gatsby\u2026Jordan and Tom and I got into the front seat of Gatsby's car\" and Daisy/Gatsby follow in \"the coup\u00e9.\" Then in the city pursuit, the source says \"we came in sight of the easygoing blue coup\u00e9.\" So the coup\u00e9 Daisy and Gatsby are in is described as blue in the source. The draft also says \"blue coup\u00e9.\" This is consistent. **Not a finding.**\n\n**4. Ch 007 draft Jordan-phone-call scene:**\n\nIn the source (Ch 008), Jordan's call opens: \"I've left Daisy's house\u2026\" then she says \"You weren't so nice to me last night.\" In the draft, the exchange is preserved but the opening line \"Probably it had been tactful to leave Daisy's house, but the act annoyed me, and her next remark made me rigid\" is cut. The draft goes directly from \"'I've left Daisy's house,' she said\" to \"'You weren't so nice to me last night.'\" This is slightly compressed but the dialogue is intact and parseable. **Not a finding.**\n\n**5. Ch 008 draft: \"The neighbor offered a dozen explanations\u2026but Wilson may have heard them before, for he whispered 'Oh, my God!' again and let them die in the air.\"**\n\nThe authorized cut of Michaelis means \"the neighbor\" replaces him. The dog-leash scene is retained but compressed. The line is parseable. **Not a finding.**\n\n**6. Ch 007 draft: The \"death car\" paragraph and the preceding summary paragraph:**\n\nThe draft transitions from \"So we drove on toward death through the cooling twilight\" directly into \"The afternoon's heat had broken; dusk gathered in the valley of ashes. In the garage office Wilson had locked his wife upstairs and spoke, in a colourless way turned hard and strange, about moving West. Then the racket overhead, the rush of a body through the dark, the cry\u2014'Beat me! Throw me down and beat me, you dirty little coward!'\u2014and the bursting out into the road.\"\n\nThis is a summary-compression of the Michaelis material (authorized cut). The passage is parseable. **Not a finding.**\n\n---\n\n**Now the one clear structural finding:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"\\\"You must have gone there about the time Biloxi went to New Haven.\\\"\",\n    \"source_has\": \"The source introduces 'Blocks' Biloxi at length in the Plaza scene: Daisy recalls him fainting at their wedding, Jordan says he stayed in her house for three weeks, and he falsely claimed to be president of Tom's Yale class \u2014 establishing him as a fraudulent credential-claimer whose Yale claim is the exact parallel Tom is using against Gatsby's Oxford claim.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: without the Biloxi passage (an authorized cut), 'Biloxi' is an unidentified proper name whose relevance to Gatsby's Oxford claim is entirely opaque, so the taunt reads as a non-sequitur rather than a pointed parallel about fabricated academic credentials.\"\n  }\n]\n```",
+    "input_tokens": 35019,
+    "output_tokens": 1485,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 39.524208784103394,
+    "stop_reason": "end_turn"
+  }
+}

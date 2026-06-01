@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:31:09",
+  "key": "79339593921606790520a50798fb52d8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test, being careful to distinguish structural damage from mere compression.\n\n---\n\n**Ch 018 draft review**\n\nThe draft compresses Mrs. Hussey substantially (authorized minor-character removal). Checking for residual seams in surviving material:\n\n- \"The landlady ushered us into a little room\" \u2014 Mrs. Hussey is on the authorized removal list, so this descriptor substitution is expected and not a finding.\n- The dialogue \"Why not?\" / \"Because it's dangerous\" \u2014 the triggering question survives in the draft (\"Why not?\" said I), so no unattributed dialogue issue.\n- Everything else parses cleanly against what the draft itself has established.\n\nNo structural damage found in Ch 018 draft.\n\n---\n\n**Ch 019 draft review**\n\nWorking through carefully:\n\n**\"Old Captain Peleg, many years her chief-mate, had built upon her original grotesqueness...\"**\nSource says: \"Old Captain Peleg, many years her chief-mate, before he commanded another vessel of his own, and now a retired seaman, and one of the principal owners of the Pequod.\" The draft introduces Peleg here with only \"many years her chief-mate.\" This is the *first mention* of Peleg in the draft. A few paragraphs later he is named as a co-owner/agent in the dialogue, so his role is established in context. A reader can track this. Not a finding.\n\n**\"Seated on the transom was Captain Bildad, who along with Captain Peleg was one of the largest owners of the vessel.\"**\nThis is fine \u2014 Bildad is introduced with a clear role description here.\n\n**The extended Quaker digression (\"And when these things unite in a man of greatly superior natural force... formed for noble tragedies... But, as yet we have not to do with such an one, but with quite another...\"):**\nThe source makes clear this passage pivots *away* from a type just described and toward Bildad. In the draft the same passage survives, but because so much of the surrounding Bildad character sketch was compressed, and because the passage ends \"But, as yet we have not to do with such an one, but with quite another; and still a man, who, if indeed peculiar, it only results again from another phase of the Quaker, modified by individual circumstances,\" a reader needs to understand that \"such an one\" refers to the grand tragic Quaker type just described, and \"quite another\" refers to Bildad. This still parses \u2014 Bildad is present in the draft, the contrast is readable. Not a finding.\n\n**\"Bildad, mend that pen, will ye.\"**\nSource: \"Bildad, thou used to be good at sharpening a lance, mend that pen, will ye. My jack-knife here needs the grindstone.\" The draft cuts \"My jack-knife here needs the grindstone. That's he; thank ye, Bildad.\" In the source, Peleg has been *vainly trying to mend a pen with his jack-knife* \u2014 this was established. In the draft, the jack-knife detail was also retained earlier: \"Peleg was vainly trying to mend a pen with his jack-knife.\" So asking Bildad to mend the pen is coherent. Not a finding.\n\n**\"It's a lie.\"**\nIn the source, Peleg says: \"And yet the old squaw Tistig, at Gayhead, said that the name would somehow prove prophetic. And, perhaps, other fools like her may tell thee the same. I wish to warn thee. It's a lie.\" The draft cuts \"And, perhaps, other fools like her may tell thee the same. I wish to warn thee.\" leaving: \"And yet the old squaw Tistig, at Gayhead, said that the name would somehow prove prophetic. It's a lie.\"\n\nDoes this damage the meaning? \"It's a lie\" in the source refers to the prophecy \u2014 and in the draft that reference is still intact (Tistig's prophecy is the last thing mentioned). A reader can follow this. Not a finding.\n\n**\"He says he's our man, Bildad,\" said Peleg, \"he wants to ship.\"**\nBildad \"quietly looked up, and seeing me, glanced again inquiringly towards Peleg.\" This is a non-verbal action that triggers Peleg's response. In the source, Bildad's glance comes after the narration that \"Bildad, without noticing his present irreverence, quietly looked up.\" The draft cuts \"without noticing his present irreverence\" \u2014 but the action still parses. Not a finding.\n\n**\"I thought him the queerest old Quaker I ever saw.\"**\nSource continues: \"especially as Peleg, his friend and old shipmate, seemed such a blusterer.\" The draft cuts the \"especially as\" clause. This is a broken pivot situation \u2014 the \"especially as\" clause is a comparative contrast that motivates \"queerest.\" But without it, the sentence still stands on its own as an opinion. It's less richly motivated, not structurally broken. Not a finding.\n\n**\"And yet the old squaw Tistig, at Gayhead, said that the name would somehow prove prophetic.\"**\nTistig is a minor name. Is this an unglossed minor proper name? Tistig appears only once, is identified by descriptor (\"the old squaw... at Gayhead\"), and is not a recurring character. The name is accompanied by a sufficient appositive identifier (\"the old squaw Tistig, at Gayhead\"). Not a finding.\n\n**Checking \"the three hundredth lay\" negotiation for broken pivots:**\n\nThe exchange in the draft reads correctly. Both sides of the negotiation survive.\n\n**Checking Ch 019 for the \"Captain Peleg\" introduction seam:**\n\nIn the draft, Peleg is first named in the ship description paragraph (\"Old Captain Peleg, many years her chief-mate, had built upon her original grotesqueness\"). Then when the dialogue begins, Ishmael asks \"Is this the Captain of the Pequod?\" and Peleg says \"Supposing it be the captain of the Pequod, what dost thou want of him?\" \u2014 Ishmael has not yet learned this man's name. Then later Peleg identifies himself: \"Thou art speaking to Captain Peleg.\" This sequence is coherent in the draft as in the source. Not a finding.\n\n**\"What lay does he want?\" groaned Bildad.**\nIn the source this is: \"What lay does he want?\" groaned Bildad, glancing up from the book in which he had again been burying himself.\" The draft cuts the participial phrase. The speech is clearly attributed and parseable. Not a finding.\n\nAfter this thorough review, I find no instances of structural coherence failure that pass the gate test in either draft.\n\n```json\n[]\n```",
+    "input_tokens": 18518,
+    "output_tokens": 1587,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 38.90371799468994,
+    "stop_reason": "end_turn"
+  }
+}

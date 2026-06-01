@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:17:23",
+  "key": "076083a10e391c3023082855f38d9801",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "16fbe212da6f381bc241f01c98eae677",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "0d20186e30d91b1e32f9c1937887f5c90fa693af446e9839bc46403fdd15aa45",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the seven tests and the gate test, checking only for structural coherence failures \u2014 not mere thinning.\n\n---\n\n**Ch 001 draft \u2014 review**\n\nThe authorized cuts (Carraway genealogy, Nick's bond-work/Jersey City fling, Jordan's golf scandal, Owl-Eyes, butler's-nose anecdote) are all performed cleanly. The draft's surviving sentences parse on their own. No mid-scene jumps, no dangling pronouns whose antecedents were cut, no broken pivots whose other side was removed.\n\nOne candidate worth examining:\n\n> \"When, almost immediately, the telephone rang inside and the butler left the porch Daisy seized upon the interruption; **yet** Tom frowned, pushed back his chair, and without a word went inside.\"\n\nIn the source, this is split across two separate actions: Daisy seizes the interruption *and leans toward Nick*; Tom separately goes inside because he has been summoned. The draft collapses them into one sentence with \"yet\" implying opposition between Daisy's seizing and Tom's going in. But a reader can follow this: the phone rang, Daisy used the pause, Tom went inside to answer it. The \"yet\" is slightly odd but not a broken pivot \u2014 neither leg of the contrast was cut from the draft; both Daisy's action and Tom's are present. Gate test: a reader would understand both actions occurred; they are just mildly surprised by the \"yet.\" Not a structural failure.\n\nNo valid findings in Ch 001.\n\n---\n\n**Ch 002 draft \u2014 review**\n\nThe authorized removals are: Catherine (named), Mr./Mrs. McKee (named), Michaelis, Rosy Rosenthal, the motorcycle policeman, the Catherine/Catholic/Monte Carlo tangent.\n\nThe draft replaces the named minor characters with descriptors (\"her sister,\" \"a pale, feminine man from the flat below, a photographer,\" \"his shrill, languid wife,\" \"the photographer's wife,\" \"the sister\"). That is clean by the rules \u2014 descriptor continuity is fine.\n\n**Candidate 1:**\n\n> \"His voice faded off and Tom glanced impatiently around the garage.\"\n\nIn the source, Wilson's voice fades because Tom has coldly threatened to sell the car elsewhere and Wilson walks back his complaint. The draft cut Tom's threat and Wilson's retreat, leaving only Tom's response to a no-longer-present exchange. But the sentence still parses \u2014 \"his voice faded off\" is attributable to Wilson, who is present in the draft and whose name appears earlier in the same paragraph. Gate test: a reader understands Wilson trailed off and Tom looked away; they don't need the cut middle exchange to follow the action. Not a structural failure \u2014 the cause was cut but the event is comprehensible.\n\n**Candidate 2 \u2014 the \"Chester\" reference:**\n\n> \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\"\n\n\"Chester\" is the first name of the photographer (Mr. McKee / Chester McKee). Mr. McKee is on the authorized removal list. In the draft, the photographer has been introduced only as \"a pale, feminine man from the flat below, a photographer.\" His first name \"Chester\" has never appeared in the draft. The wife's quotation uses \"Chester\" \u2014 a proper name \u2014 without any antecedent in the draft.\n\n**Gate test**: A reader of only the draft has no idea who \"Chester\" is. The photographer was introduced without a name. \"Chester\" floats free, with no local role, relationship, or appositive to anchor it. The reader is genuinely confused: is Chester someone else? Is this the photographer? The name survived in quoted speech while its introduction was cut.\n\nThis passes the unglossed-name test (rule 7): the proper name appears without a local role or identifier, and the immediately preceding draft text does not establish who Chester is.\n\nThis is a valid finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"2\",\n    \"draft_passage\": \"his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'\",\n    \"source_has\": \"Source names the photographer as 'Mr. McKee' / 'Chester McKee' and his wife calls him 'Chester' \u2014 the name is established before its use. Draft introduces the photographer only as 'a pale, feminine man from the flat below, a photographer,' never naming him, yet his wife's quoted speech uses 'Chester' without any prior introduction of that name.\",\n    \"gate_test_answer\": \"A reader of only the draft cannot identify who 'Chester' is \u2014 the photographer has been given no name anywhere in the draft, so the first-name reference in the wife's quotation is genuinely orphaned, not merely less ornamented.\"\n  }\n]\n```",
+    "input_tokens": 26866,
+    "output_tokens": 1128,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 29.7292799949646,
+    "stop_reason": "end_turn"
+  }
+}

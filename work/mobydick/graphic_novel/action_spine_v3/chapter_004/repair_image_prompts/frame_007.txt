@@ -1,0 +1,27 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 7 of mobydick chapter 4: The Counterpane.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Queequeg.
+Primary frame action: shaves with the harpoon head.
+Caption zone reserved for later lettering: top_left.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Queequeg (Harpooner; Ishmael’s bedfellow): Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon. | Ishmael (Narrator; lodging sailor at the Spouter-Inn): Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed.
+Prop continuity: whaling_harpoon: A stout whaling harpoon with a detachable wooden stock and a long, straight-edged steel head kept very sharp. Avoid confusion: Not a spear or pike; show the detachable stock and the steel head used for shaving when unsheathed. | pilot_monkey_jacket: A short, heavy, double-breasted, dark wool sailor’s jacket suited to cold weather. Avoid confusion: Not a tailcoat or long overcoat. | washstand_and_mirror_shard: A small wash-stand table with a basin and a small piece of mirror tacked against the wall above. Avoid confusion: Do not show a full-length dressing mirror.
+Secondary supporting visuals only: Queequeg’s boot used moments earlier for whetting; Pilot monkey jacket ready on a peg or chair; Harpoon wooden stock set aside as he uses only the head
+Do not show: Blood or cuts; A separate razor; Readable text; Military insignia or literal marshal’s regalia
+Scene: Queequeg stands at the tiny wall mirror calmly shaving his cheek with the unsheathed steel head of his whaling harpoon, its wooden stock set aside. Ishmael watches from the background; the heavy pilot monkey jacket waits on a peg, ready for him to don next. Keep the small wash-stand and basin nearby. No readable text. Leave clean negative space in the top-left for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. major prop_confusion: Two harpoons appear: Queequeg shaves with a separate harpoon head while a fully assembled harpoon also leans against the wall, obscuring the intended detachable-stock setup.
+   Visible failure to avoid: A complete harpoon with steel head is propped beside the hanging coat, while Queequeg holds another steel head on a short handle to his cheek.
+   Repair instruction: Depict only one harpoon. Show Queequeg holding the detached steel head for shaving and place the matching wooden stock clearly set aside without a head (e.g., on the washstand or leaning nearby). Remove any second full harpoon.
+2. major caption_zone: The reserved top-left caption zone is busy and lacks clean negative space.
+   Visible failure to avoid: Top-left contains a detailed window with curtains and an exterior harbor view plus the upper area of Ishmael and the quilt.
+   Repair instruction: Clear the top-left by shifting or cropping the window and Ishmael down/right and leaving a plain section of wall with minimal texture for the caption.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.

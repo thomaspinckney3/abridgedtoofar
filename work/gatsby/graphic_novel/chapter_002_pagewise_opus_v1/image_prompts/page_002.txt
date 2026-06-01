@@ -1,0 +1,80 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: 1922 Long Island and Queens, New York; Jazz Age America
+- line and color: Inked linework with muted period palette; ash greys and soot blacks for the valley, warmer sepia and lavender for the city, sickly yellows for the billboard, smoky amber and cream for the cramped apartment interior, cold blue-greys for the dawn station
+- lighting: Smoky amber lamplight thickening toward midnight in the apartment; sudden harsh shadows at the moment of violence; flat fluorescent-cold pallor in the elevator; bluish pre-dawn light at Pennsylvania Station
+
+Character continuity:
+- Nick Carraway: Lean young man, late twenties, side-parted brown hair, observant eyes Costume: Rumpled light grey three-piece summer suit, tie pulled crooked, hat retrieved from the chandelier Continuity: Within-and-without observer; follows McKee out and ends the night at Penn Station
+- Tom Buchanan: Hulking sandy-haired man, hard mouth, heavy shoulders Costume: Summer suit, collar undone, sleeves of jacket taut across his back Continuity: Breaks Myrtle's nose with the flat of his open hand
+- Doctor T. J. Eckleburg (billboard): Enormous blue eyes behind huge yellow spectacles, no face Costume: N/A Continuity: Overhead as they leave the valley
+- George Wilson: Blond, spiritless, anaemic; pale light-blue eyes Costume: Dark mechanic's suit veiled in ash, rag in hands Continuity: Emerges with chairs as Myrtle slips away; unaware of the affair
+- Myrtle Wilson: Faintly stout mid-thirties woman, sensuous carriage, dark hair Costume: Cream-coloured chiffon afternoon dress, now spattered with blood Continuity: Chants Daisy's name; ends bleeding on couch over Versailles tapestry
+- Dog Vendor: Grey-haired old man with a small basket of puppies Costume: Shabby coat, soft cap Continuity: Pockets Tom's bill on the curb
+- Catherine: Slender worldly girl about thirty, sticky bob of red hair, milky-powdered complexion Costume: Slim afternoon dress, pottery bracelets jangling Continuity: Stumbles among furniture with articles of aid
+- Mr. McKee (Chester): Pale, feminine man, soft-featured Costume: Light suit rumpled from sleep; later, sitting up in bed in his underwear with a large portfolio Continuity: Wakes from doze, leaves with Nick, ends in his own bed reciting his photographic studies
+- Mrs. McKee: Shrill, languid woman, handsome but pinched Costume: Fussy afternoon dress, sleeves pushed back Continuity: Among the women tending Myrtle
+- Airedale puppy: Small Airedale with white feet, blunt face Costume: N/A Continuity: Sits on the table groaning in the smoke
+- Elevator boy: Young man in uniform cap, gloved hand on lever Costume: Brass-buttoned elevator uniform Continuity: Snaps at McKee in the descending cage
+
+Page 2 summary: Nick follows Tom over a railroad fence and down the road beneath the Eckleburg billboard to a small yellow-brick block of shops. They enter Wilson's garage, where Tom needles the ash-dusted proprietor about a car deal; then Myrtle Wilson descends the stairs and walks past her husband to meet Tom's eyes.
+
+Panels:
+
+Panel 1:
+Beat: Nick follows Tom along the road beneath Eckleburg toward the lone block of yellow brick shops, the garage signage visible.
+Shot: establishing
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide establishing shot from behind two men crossing a low whitewashed railroad fence and walking along a dusty road in the valley of ashes. Tom Buchanan, tall and broad in a fitted summer riding suit, strides ahead; Nick Carraway, lean in a light grey three-piece suit and straw boater, follows a pace behind. In the middle distance, an isolated small block of yellow-brick shops on the edge of grey waste land: an all-night restaurant approached by a trail of ashes, a middle shop, and a garage. Above, looming on a billboard, enormous faded blue eyes behind huge yellow spectacles, no face. Overcast dust-diffused daylight, drifting grey ash.
+
+Panel 2:
+Beat: Inside the bare garage, Wilson emerges wiping his hands; a damp gleam of hope as he sees Tom.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Interior of a dim, unprosperous garage. A dust-covered wrecked Ford crouches in a shadowed corner. In the foreground center, George Wilson stands in the doorway of a small office, blond, anaemic, faintly handsome, wiping his hands on a piece of oily waste rag; his pale blue eyes catch a damp gleam as he looks up. Tom Buchanan stands to the right in his summer suit, broad and dominant, with Nick partially visible behind him in grey. Cement-grey walls, white ashen dust on every surface, weak overcast light through a grimy window. No text, no signage, no labels in the art.
+
+Panel 3:
+Beat: Tom needles Wilson about the car deal; Wilson stammers and backs down.
+Shot: medium
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=12%
+- balloon_1: speech for Tom, top_left, x=6%, y=20%, w=38%, h=19%
+- balloon_2: speech for Wilson, top_right, x=56%, y=20%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom: x 6%, y 20%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Wilson: x 56%, y 20%, w 38%, h 16%. - Place Tom body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Wilson body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Tom: body x=6%, y=47%, w=40%, h=49%; face x=20%, y=50%, w=10%, h=10%
+- Wilson: body x=54%, y=47%, w=40%, h=49%; face x=69%, y=50%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom: x 6%, y 20%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Wilson: x 56%, y 20%, w 38%, h 16%. - Place Tom body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Wilson body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Medium two-shot inside the garage. On the left, George Wilson, pale and ash-dusted in a dark mechanic's suit, holds the oily rag awkwardly in front of him, mouth half-open, eyes lowered, conciliatory. On the right, Tom Buchanan, larger, ruddy and dominant in his fitted suit, has just clapped Wilson on the shoulder; his expression hardens mid-conversation, jaw set, eyes cold. Dim cement walls behind them, drifting motes of ash in a slanted shaft of grey light. No text in the art, no labels.
+
+Panel 4:
+Beat: Myrtle descends, walks through her husband as if he were a ghost, and shakes Tom's hand, eye to eye.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide interior shot. From a wooden staircase at the back of the office a thickish woman in her middle thirties descends and blocks the doorway light; she is faintly stout but carries her flesh sensuously, in a spotted dark blue crêpe-de-chine dress, no conventional beauty but smouldering vitality in her face. She walks forward past George Wilson on the left, who recedes against the cement-coloured wall, his dark suit and pale hair veiled in white ashen dust until he nearly disappears into the surface. In the center foreground she clasps Tom Buchanan's hand and looks him flush in the eye with a slow knowing smile, lips slightly wet. Nick stands at the right edge, watching, straw boater in hand. Drifting ash motes, flat overcast light from a high window. No text, no signage, no labels in the art.

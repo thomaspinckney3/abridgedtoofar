@@ -1,0 +1,34 @@
+{
+  "frame_number": 5,
+  "valid": false,
+  "findings": [
+    {
+      "severity": "blocker",
+      "category": "caption_zone",
+      "finding": "Top-center caption zone is occupied and visually busy.",
+      "visible_evidence": "A large wooden swinging sign and its chains occupy the top-center area, with dense sleet across the same region.",
+      "repair_prompt": "Recompose so the top-center has clean negative sky: shift the sign leftward (upper-left quadrant) and/or lower it, open a clear band of darker sky at top-center, and reduce sleet density in that band by 30%. Keep the sign text-free and weathered."
+    },
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "Door hardware shown as a round knob instead of the specified latch.",
+      "visible_evidence": "Ishmael’s right hand grips a round doorknob on the inn door.",
+      "repair_prompt": "Replace the knob with a simple 19th-century iron thumb-latch or latch handle; keep Ishmael’s hand reaching for the latch and retain the weathered wooden door."
+    },
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "Required prop ‘patched boots’ are not visible in the frame.",
+      "visible_evidence": "The composition crops at mid-thigh; Ishmael’s feet/boots are out of frame.",
+      "repair_prompt": "Adjust framing or pose to reveal Ishmael’s lower legs and worn ankle boots with visible toe patches, keeping the low-angle medium shot feel."
+    },
+    {
+      "severity": "minor",
+      "category": "unsupported_content",
+      "finding": "Unspecified background pedestrians are visible.",
+      "visible_evidence": "Two small human figures are seen down the dockside street near lamplights.",
+      "repair_prompt": "Remove or obscure distant pedestrians with sleet and darkness so only Ishmael is discernible; retain masts, posts, and lamplight."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age, post-WWI New York and Midwest
+- line and color: Clean ink linework with muted Art Deco palette: dusky blues, warm sepia, cream, and faded gold accents
+- lighting: Soft window light and lamp glow indoors; overcast melancholy outdoors; selective warm highlights on the narrator; moonlit night with a single distant green pinpoint across water
+
+Character continuity:
+- Nick Carraway: Lean young man, neatly combed light-brown hair, attentive eyes Costume: Light summer suit, tie loosened, soft collar Continuity: Has arrived home at his West Egg bungalow; sits in the yard and then notices his neighbor on the next lawn
+- Nick's Father: Older man with graying mustache, kind reserved eyes, resemblance to Nick Costume: Edwardian-cut dark suit, vest, watch chain Continuity: Appears only in remembered flashback; not present in current timeline
+- Jay Gatsby: Tall man in silhouette at fifty feet, face withheld, hands first in pockets then arms stretched toward the water Costume: Dark summer suit, pale shirt collar visible in moonlight Continuity: First on-page appearance; identified only by leisurely bearing and the secure stance of his feet on his own lawn
+- Lost Stranger: Younger man with rumpled jacket and a road-map, hat pushed back, helpless squint Costume: Plain summer suit, soft cap, scuffed shoes; clearly newer to the area than Nick Continuity: One-scene character introduced on the dusty West Egg road
+- Finnish Housekeeper: Stout middle-aged woman, hair in a kerchief, broad hands Costume: Apron over a plain housedress Continuity: Background domestic presence in the bungalow
+- Tom Buchanan: Sturdy straw-haired man, hard mouth, arrogant shining eyes Costume: Riding clothes: jodhpurs, glistening boots, thin coat Continuity: Stands shoulder-to-shoulder with Daisy in the doorway, then recedes in Nick's mind as a man depressed by a book
+- Daisy Buchanan: Slender young woman with soft bobbed hair, luminous face Costume: White summer dress Continuity: Joins Tom at the door, calls Nick back from the drive to press him about a Western engagement
+- Jordan Baker: Slender girl with erect cadet carriage, chin tipped up Costume: White summer dress Continuity: Reading aloud from a magazine; rises, announces bedtime, and exits up the stairs
+
+Page 11 summary: Inside the crimson library Tom frets about Jordan's family and Daisy laughingly promises Nick will look after her; Tom rounds on Daisy about the veranda talk, then Nick rises, takes his leave, and is called back from his idling motor by Daisy and Tom side by side in the lit doorway pressing him about a rumored engagement. Driving home along the dark East Egg road, Nick sorts through his confusion: he is not engaged, Daisy is not leaving with the child, and Tom is unsettled by ideas as much as by another woman.
+
+Panels:
+
+Panel 1:
+Beat: In the crimson library, Tom grumbles that Jordan's family oughtn't let her run around; Daisy parries that her family is one ancient aunt and that Nick will look after her on weekends out here, while the two of them share a charged silent look.
+Shot: two_character
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=12%
+- balloon_1: speech for Tom Buchanan, top_left, x=6%, y=20%, w=38%, h=19%
+- balloon_2: speech for Daisy Buchanan, top_right, x=56%, y=20%, w=38%, h=22%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom Buchanan: x 6%, y 20%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Daisy Buchanan: x 56%, y 20%, w 38%, h 22%. - Place Tom Buchanan body in x 6%, y 50%, w 40%, h 46%; face in x 20%, y 53%, w 10%, h 9%. - Place Daisy Buchanan body in x 54%, y 50%, w 40%, h 46%; face in x 69%, y 53%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Tom Buchanan: body x=6%, y=50%, w=40%, h=46%; face x=20%, y=53%, w=10%, h=9%
+- Daisy Buchanan: body x=54%, y=50%, w=40%, h=46%; face x=69%, y=53%, w=10%, h=9%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom Buchanan: x 6%, y 20%, w 38%, h 19%. - Reserve empty speech box balloon_2 for Daisy Buchanan: x 56%, y 20%, w 38%, h 22%. - Place Tom Buchanan body in x 6%, y 50%, w 40%, h 46%; face in x 20%, y 53%, w 10%, h 9%. - Place Daisy Buchanan body in x 54%, y 50%, w 40%, h 46%; face in x 69%, y 53%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Interior crimson library at night, lamp-lit warm reds and faded gold. Tom Buchanan, sturdy straw-haired man in jodhpurs and thin coat, stands by the long couch with a hard frown, one hand on the back of the couch. Daisy in a white summer dress half-reclines on the couch, head tipped back with a teasing smile aimed up at Tom. Between them a brief charged look. Magazine tossed on the side table in the foreground. keep faces and hands clear of those zones. No text in the art.
+
+Panel 2:
+Beat: Nick diverts the moment by asking if Jordan is from New York; Daisy answers Louisville and begins on 'our beautiful white—' until Tom abruptly rounds on her about the veranda talk, and Daisy lightly deflects with the Nordic race.
+Shot: three_character_wide
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Daisy Buchanan, top_left, x=6%, y=23%, w=38%, h=16%
+- balloon_2: speech for Tom Buchanan, top_right, x=56%, y=23%, w=38%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Daisy Buchanan: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 23%, w 38%, h 19%. - Place Daisy Buchanan body in x 6%, y 50%, w 40%, h 46%; face in x 20%, y 53%, w 10%, h 9%. - Place Tom Buchanan body in x 54%, y 50%, w 40%, h 46%; face in x 69%, y 53%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Daisy Buchanan: body x=6%, y=50%, w=40%, h=46%; face x=20%, y=53%, w=10%, h=9%
+- Tom Buchanan: body x=54%, y=50%, w=40%, h=46%; face x=69%, y=53%, w=10%, h=9%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Daisy Buchanan: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 23%, w 38%, h 19%. - Place Daisy Buchanan body in x 6%, y 50%, w 40%, h 46%; face in x 20%, y 53%, w 10%, h 9%. - Place Tom Buchanan body in x 54%, y 50%, w 40%, h 46%; face in x 69%, y 53%, w 10%, h 9%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide interior shot of the crimson library, three figures across. Left: Nick Carraway in light summer suit, leaning forward politely from an armchair, asking a question. Center: Daisy on the couch, white dress, lifting a hand in a dreamy gesture as she speaks of Louisville. Right: Tom standing, suddenly turning, jaw hard, eyes sharpened with suspicion toward Daisy. Warm crimson and gold lamp light. keep all three faces and gesturing hands clear of those reserved boxes. No text in the art.
+
+Panel 3:
+Beat: Nick is at the threshold; Tom and Daisy stand side by side in the cheerful square of doorway light, and as Nick starts his motor Daisy calls him back to press the rumor of a Western engagement, which Tom kindly corroborates.
+Shot: wide
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Daisy Buchanan, top_left, x=6%, y=23%, w=38%, h=16%
+- balloon_2: speech for Tom Buchanan, top_right, x=56%, y=23%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Daisy Buchanan: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 23%, w 38%, h 16%. - Place Daisy Buchanan body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Tom Buchanan body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Daisy Buchanan: body x=6%, y=47%, w=40%, h=49%; face x=20%, y=50%, w=10%, h=10%
+- Tom Buchanan: body x=54%, y=47%, w=40%, h=49%; face x=69%, y=50%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Daisy Buchanan: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Tom Buchanan: x 56%, y 23%, w 38%, h 16%. - Place Daisy Buchanan body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Tom Buchanan body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Exterior night drive of the Buchanan mansion. In the mid-ground, Tom and Daisy stand side by side framed in the bright rectangular glow of the open front door, faces lit warm, calling out across the gravel. In the foreground left, Nick at the wheel of a dark open coupe, head turned back over his shoulder, motor running, headlamps fanning yellow on the drive. Faded gold and dusky blue night palette. Keep their faces and Nick's profile clear of the reserved boxes. No text in the art.
+
+Panel 4:
+Beat: Driving home along the dark road, Nick turns over the gossip-banns that helped drive him East, his touched-but-disgusted reaction to the Buchanans, his sense that Daisy ought to rush out child-in-arms but won't, and his surprise that Tom is depressed by a book rather than only by a woman in New York.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=22%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 22%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Three-quarter view of Nick alone at the wheel of his open coupe on a dark wooded East Egg road, dashboard glow on his face, hands at ten and two, eyes troubled and far away. Headlamps throw cones of pale yellow across the road into a corridor of trees. Dusky blue night palette with warm gold dash light selectively highlighting Nick. keep Nick's face, hands, and the steering wheel clear of those reserved zones. No text in the art.

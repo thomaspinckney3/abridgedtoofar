@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:37:05",
+  "key": "8a7ce086590131f555652913029e136b",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters carefully, applying each test.\n\n---\n\n**Ch 052 draft \u2014 scan**\n\nThe dialogue with Stubb: `\"Mr. Stubb,\" said I to that worthy, calmly smoking his pipe in the rain; \"going plump on a flying whale with sail set in a foggy squall is the height of a whaleman's discretion?\"` \u2014 The source had Ishmael preface this question by paraphrasing what Stubb had said about Starbuck being \"the most careful and prudent\" whaleman, setting up the irony. The draft cuts that premise but the question still parses as a standalone ironic query; a reader understands the gist without the source framing. Not a structural break.\n\nFlask's reply: `\"Yes, that's the law. Ha, ha! the whale would give them squint for squint!\"` \u2014 The source had Flask first say `\"Can't you twist that smaller?\"` before answering. That opener is cut. The reply still parses on its own. Not a finding.\n\n`\"This was the fourth time in my nautical life.\"` \u2014 The source completes: \"that I had done the same thing.\" The draft sentence ends abruptly without a predicate complement, but \"in my nautical life\" reads as the end of a sentence \u2014 it's grammatically incomplete (no finite verb asserting what happened for the fourth time). Let me examine: \"This was the fourth time in my nautical life.\" \u2014 The sentence does have a main clause (\"This was the fourth time\") and \"in my nautical life\" is a prepositional modifier. The subject \"this\" refers to the will-making ceremony just mentioned. A reader can parse it. Slightly elliptical but not broken.\n\nOverall Ch 052 is structurally sound.\n\n---\n\n**Ch 053 draft \u2014 scan**\n\nOpening dialogue: `\"Who would have thought it, Flask!\" cried Stubb; \"if I had but one leg you would not catch me in a boat. Oh! he's a wonderful old man!\"` \u2014 The source follows this with Flask's response and a counter-response from Stubb. Both are cut. The Stubb speech still opens the chapter and is self-contained. The \"he\" refers to Ahab, who is the subject of the surrounding discussion. A reader arriving here knows the chapter concerns Ahab's one leg. Not a finding.\n\n`\"Until Cabaco's published discovery...\"` \u2014 This sentence was cut from the draft. Check whether \"Cabaco\" appears anywhere. In the draft: `\"The sailors little foresaw it, though after being a little while out of port Ahab was now and then found making thole-pins...\"` \u2014 Cabaco is not mentioned in the draft at all. The source passage that referenced Cabaco was compressed away. But the draft doesn't mention Cabaco either \u2014 so no orphaned name problem here.\n\n`\"such generous conceits never entered the heads of the owners.\"` \u2014 antecedent of \"such generous conceits\" is the boat/crew arrangement just described in the preceding clause. Parses fine.\n\n`\"No one suspected any boat's crew assigned to that boat.\"` \u2014 reads slightly oddly (no verb: \"assigned\"?). Let me parse: \"No one suspected any boat's crew [being] assigned to that boat.\" The participial construction is elliptical but parseable as compression of \"as to any boat's crew being assigned.\" Not a structural failure.\n\n`\"With the subordinate phantoms, what wonder remained soon waned; for in a whaler wonders soon wane.\"` \u2014 \"the subordinate phantoms\" are Fedallah and his companions, who haven't yet been introduced in the draft at this point. The draft opens with Stubb/Flask on Ahab, then discusses Ahab's private preparations, and then jumps to \"With the subordinate phantoms.\" In the source, the phantoms were introduced earlier (Ch. 048 in Melville's numbering \u2014 the appearance of Fedallah and his crew at the lowering). Let me check whether the preceding draft chapter (Ch. 052) establishes these phantoms. Ch. 052 draft is entirely about Ishmael's mood, the squall capsize, dialogue with Queequeg/Stubb/Flask, and will-making. No mention of subordinate phantoms. Does the Ch. 053 draft itself introduce them before this sentence? The sentence \"With the subordinate phantoms, what wonder remained soon waned\" precedes the paragraph about Fedallah \u2014 so \"the subordinate phantoms\" appears with a definite article before any introduction. Then Fedallah is introduced in the next paragraph. This is a mid-scene jump / dangling reference using definite \"the subordinate phantoms\" with no prior establishment in the draft.\n\nHowever \u2014 this is a question of authorized cuts. The phantoms' first appearance would have been in an earlier chapter (source Ch. 048, \"The First Lowering\"), which is not among the current pair. The question under the mid-scene jump test (Test 6) is specifically about chapter N+1 opening with definite references that chapter N (the immediately preceding draft chapter) did not establish. Ch. 052 draft did not mention the phantoms. The source of Ch. 052 also did not mention them \u2014 they would have been in an earlier chapter. So this is not a seam created by compression of Ch. 052\u2013053; it's a continuity issue from an earlier chapter's compression. The gate test: would a competent reader be confused? \"The subordinate phantoms\" with a definite article implies prior introduction. A reader who hadn't encountered these figures before would be genuinely confused about who \"the subordinate phantoms\" are.\n\nBut wait \u2014 Test 7 (unglossed minor proper name) and Test 4 (missing definitional gloss) could apply. The phrase \"the subordinate phantoms\" uses a definite article implying established referent. And then \"that hair-turbaned Fedallah\" \u2014 Fedallah is a named person. Is he a minor character on the authorized removal list? He is not. He is a significant named figure. Is he introduced anywhere in the draft before this mention? In Ch. 053 draft, \"the subordinate phantoms\" comes first, then \"that hair-turbaned Fedallah remained a muffled mystery.\" The \"that\" is a demonstrative implying prior acquaintance. If Fedallah was established in an earlier chapter (outside this pair), the reader of this abridgment would already know him. The question is whether his introduction survives in an earlier draft chapter. That's outside our scope (we only see Ch. 052 and 053).\n\nLet me re-read the instructions: Test 6 is specifically \"a chapter opens with definite references\u2026 that the *previous draft chapter* did not establish, AND the source of the previous chapter DID establish them in material that was dropped.\" The previous draft chapter is Ch. 052. The Ch. 052 source does not mention phantoms either. So this fails Test 6's second condition \u2014 the Ch. 052 source didn't establish the phantoms, so their absence from Ch. 052 draft is not due to compression of Ch. 052.\n\nThe phantoms would have been established in Ch. 048 source material (the first lowering). Whether they survive in the Ch. 048 draft is outside our window. Given we can only assess the pair provided, and the seam is not traceable to compression within this pair, I should not flag it.\n\n`\"that hair-turbaned Fedallah remained a muffled mystery to the last.\"` \u2014 \"that hair-turbaned Fedallah\" \u2014 the demonstrative \"that\" implies prior reference. Within Ch. 053 draft, \"the subordinate phantoms\" appeared one paragraph before, but Fedallah himself wasn't named there. This is Fedallah's first named mention in the Ch. 053 draft. Is this an unglossed name? He does receive a descriptor \u2014 \"hair-turbaned\" \u2014 and immediately the paragraph goes on to elaborate on his nature at length. The sentence itself identifies him implicitly as one of the phantoms who \"remained a muffled mystery.\" The subsequent sentences provide extensive gloss. So while \"that\" implies prior acquaintance, the following text glosses him adequately. A reader can place him. Not a structural failure.\n\nBack to \"the subordinate phantoms\" \u2014 within the Ch. 053 draft itself, this sentence precedes any introduction of them. But the sentence does describe them: they are phantoms who found their place among the crew. The prior paragraph mentions Ahab's concealed boat's crew of \"five extra men.\" A careful reader could connect \"the subordinate phantoms\" to those five extra men, especially given the next paragraph names Fedallah as their leader. The gloss is implicit but available within the same chapter. Marginal.\n\nLet me apply the gate test strictly: \"With the subordinate phantoms, what wonder remained soon waned; for in a whaler wonders soon wane.\" Would a competent reader with no source access be *actually confused*? The sentence uses \"the subordinate phantoms\" with a definite article, implying they were previously identified. If this is the reader's first encounter with this term, they would be puzzled \u2014 who are the subordinate phantoms? The next paragraph identifies Fedallah and hints at others, but \"the subordinate phantoms\" is used as if already known. This is a genuine confusion point \u2014 but it arises from earlier chapters' compression (pre-Ch. 052), not from the compression of this pair. Per the instructions, I assess only the pair provided. Since I cannot confirm the phantoms were established in Ch. 052 source (they were not) or Ch. 052 draft (they were not), and the issue predates this pair, I should not flag it as a finding in this pair.\n\nAfter thorough analysis, I find no structurally damaged sentence within this pair that meets the validity criteria and is not an authorized-cut residue or a pre-existing compression from outside this chapter pair.\n\n```json\n[]\n```",
+    "input_tokens": 6075,
+    "output_tokens": 2278,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 48.59029483795166,
+    "stop_reason": "end_turn"
+  }
+}

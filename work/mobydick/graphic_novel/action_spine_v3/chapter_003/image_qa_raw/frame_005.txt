@@ -1,0 +1,20 @@
+{
+  "frame_number": 5,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Papered fireboard absent even though it is a specified visible prop.",
+      "visible_evidence": "No hearth or thin papered panel is visible on any wall; the left wall shows a lashed hammock and harpoon, and the back/right walls are bare plaster.",
+      "repair_prompt": "Add a small fireplace on one wall with a thin papered fireboard covering the opening; keep the paper pattern indistinct with no readable text or imagery and place it where it won’t intrude into the top-center caption space."
+    },
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Supporting visual 'rude shelf with odd bone hooks' is missing.",
+      "visible_evidence": "Room walls are bare aside from the hammock; no shelf or bone hooks are present.",
+      "repair_prompt": "Include a rough wooden wall shelf with several odd bone hooks beneath it on a side wall, rendered low-contrast so it doesn’t pull focus from Ishmael, the landlord, and the bed."
+    }
+  ]
+}

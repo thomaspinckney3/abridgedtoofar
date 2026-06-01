@@ -1,0 +1,105 @@
+{
+  "title": "Moby-Dick",
+  "source_chapter": "Chapter 3: The Spouter-Inn",
+  "pages": [
+    {
+      "page_number": 1,
+      "layout": "six_panel_exchange",
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "panel_001.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Peter Coffin",
+              "text": "He went out peddling. Maybe he can't sell his head.",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "speaker_visual_hint": "lean older landlord on the right, wearing a cap and waistcoat"
+            }
+          ]
+        },
+        {
+          "panel_number": 2,
+          "image": "panel_002.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Ishmael",
+              "text": "Peddling his head around town?",
+              "balloon_zone": "top_left",
+              "speaker_region": "center",
+              "speaker_visual_hint": "young sailor in a dark jacket"
+            }
+          ]
+        },
+        {
+          "panel_number": 3,
+          "image": "panel_003.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Peter Coffin",
+              "text": "That's precisely it. The market's overstocked.",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "speaker_visual_hint": "lean older landlord in cap and waistcoat, whittling"
+            }
+          ]
+        },
+        {
+          "panel_number": 4,
+          "image": "panel_004.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Ishmael",
+              "text": "With what?",
+              "balloon_zone": "top_left",
+              "speaker_region": "center",
+              "speaker_visual_hint": "young sailor in a dark jacket"
+            }
+          ]
+        },
+        {
+          "panel_number": 5,
+          "image": "panel_005.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Peter Coffin",
+              "text": "With heads, to be sure.",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "speaker_visual_hint": "lean older landlord in cap and waistcoat, shrugging"
+            }
+          ]
+        },
+        {
+          "panel_number": 6,
+          "image": "panel_006.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "speaker": "Peter Coffin",
+              "text": "Embalmed New Zealand heads. He's sold all but one.",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "speaker_visual_hint": "lean older landlord in cap and waistcoat leaning toward Ishmael"
+            },
+            {
+              "kind": "caption",
+              "text": "Then I understood the dreadful joke: the harpooneer was selling preserved heads, not his own.",
+              "caption_zone": "bottom_left"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

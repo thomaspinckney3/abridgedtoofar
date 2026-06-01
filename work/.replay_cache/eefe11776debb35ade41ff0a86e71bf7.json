@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:28:17",
+  "key": "eefe11776debb35ade41ff0a86e71bf7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the gate test and checking all seven failure classes against only the material that survived compression.\n\n---\n\n**Ch 004 draft \u2014 checks:**\n\nThe draft is largely intact. The Narcissus paragraph opens \"And still deeper the meaning of that story of Narcissus\u2026\" \u2014 in the source this is the conclusion of a long meditation building from water-gazing, art, and Niagara. In the draft, it follows a two-sentence compression (\"Say you are in the country\u2026 Meditation and water are wedded for ever.\") The \"And still deeper\" comparative pivot implies a preceding layer of depth that was just stated \u2014 but the draft *does* state \"Meditation and water are wedded for ever\" as the immediately preceding sentence, so there is a shallower layer to go deeper than. The pivot is weakened but not broken \u2014 a reader understands \"and deeper still than this general truth, consider Narcissus.\" That parses.\n\nThe \"The transition is a keen one, from a schoolmaster to a sailor\" \u2014 in the source, this followed the specific setup that Ishmael had been \"lording it as a country schoolmaster.\" The draft cuts that sentence but the sentence still names both terms (\"schoolmaster\" and \"sailor\") internally, so it parses without the prior gloss.\n\n\"But wherefore it was\u2026\" \u2014 the \"But\" pivot in the source contrasted paying vs. being paid with the whaling-voyage question. In the draft, the preceding paragraph ends \"But being paid,\u2014what will compare with it?\" and then \"But wherefore\u2026\" opens the next paragraph. Two consecutive \"But\"-led paragraphs, but both parse independently. No broken pivot.\n\nNo findings in Ch 004.\n\n---\n\n**Ch 005 draft \u2014 checks:**\n\n\"For my mind was made up to sail in no other than a Nantucket craft.\" \u2014 the \"For\" introduces a causal explanation. In the source, this followed: \"it may as well be related that I, for one, had no idea of so doing\" (i.e., stopping at New Bedford to embark). The draft cut that sentence. So the \"For\" now dangles \u2014 it is explaining a conclusion the reader was never given. The source sentence it was glossing (\"I had no idea of stopping at New Bedford\") was removed, leaving a causal connective with no cause-recipient. A reader would reasonably ask: \"For\" what? What is this justifying?\n\nGate test: A reader with no source access sees \"For my mind was made up\u2026\" immediately after \"no way of reaching that place would offer till the following Monday.\" The \"For\" reads as if it is explaining why Ishmael accepted the delay \u2014 which is not what it means. It actually explains why he *didn't* plan to embark from New Bedford. The logical pivot is broken because the conclusion it explains was cut.\n\n\"Poor Lazarus there, chattering his teeth against the curbstone\u2014that he should lie stranded before the door of Dives is more wonderful than that an iceberg should be moored to one of the Moluccas.\" \u2014 In the source, \"Dives\" is introduced in the Euroclydon passage (\"old Dives, in his red silken wrapper\") a few sentences earlier. The draft retains the Euroclydon passage but cuts the Dives sentence entirely, then uses \"Dives\" in the Lazarus sentence as if already established. The draft's Euroclydon passage does not name Dives. Dives appears without introduction.\n\nGate test: A reader of the draft has not encountered \"Dives\" before this sentence. They see \"the door of Dives\" \u2014 is this a named character, a building, a biblical figure? The draft provides no gloss. A reader unfamiliar with the Lazarus/Dives parable (Luke 16) cannot place this name, and even a reader who knows it cannot be sure it is the biblical Dives since named characters have been appearing throughout (Peter Coffin, etc.). This is a missing definitional gloss / dangling reference.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"For my mind was made up to sail in no other than a Nantucket craft.\",\n    \"source_has\": \"it may as well be related that I, for one, had no idea of so doing [stopping at New Bedford to embark]. For my mind was made up to sail in no other than a Nantucket craft\",\n    \"gate_test_answer\": \"A reader is genuinely misled: the causal 'For' appears to explain why Ishmael accepted the delay in New Bedford, but it actually explains a conclusion (that he never planned to embark from New Bedford) that was cut from the draft, leaving the logical pivot without its target.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"that he should lie stranded before the door of Dives is more wonderful than that an iceberg should be moored to one of the Moluccas.\",\n    \"source_has\": \"says old Dives, in his red silken wrapper\u2014(he had a redder one afterwards) pooh, pooh! \u2026 Now, that Lazarus should lie stranded there on the curbstone before the door of Dives\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'Dives' appears without introduction in the draft \u2014 the source's earlier sentence naming and characterising Dives was cut from the Euroclydon passage, so a reader has no basis for knowing who or what 'Dives' refers to.\"\n  }\n]\n```",
+    "input_tokens": 9789,
+    "output_tokens": 1322,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 31.347337007522583,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:31:28",
+  "key": "789ad2e7f2b375adde424c9b26e82488",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test and checking against all seven criteria.\n\n**Ch 020 draft review:**\n\nThe draft compresses well. The landlady material (Mrs. Hussey) is authorized for removal. The chamber-maid scene is also cut, which is fine. Let me check the moment where the draft jumps from \"Running down stairs, I quickly stated my suspicions to the landlady\" \u2014 in the source, there's a long sequence with the chamber-maid, then Mrs. Hussey, then the locksmith key attempt, then the rush. In the draft: \"Running down stairs, I quickly stated my suspicions to the landlady, who ran with me up the stairs, vowing I should not break down her premises; but I tore from her, and with a sudden bodily rush dashed myself full against the mark.\" This compresses multiple scenes but parses \u2014 the landlady is present and her role is clear. No structural failure.\n\n\"Queequeg\u2014not four feet off\u2014sitting there in that uneasy position, stark alone in the cold and dark, made me really wretched.\" \u2014 parseable.\n\n\"He said no; only upon one memorable occasion.\" \u2014 antecedent clear (Queequeg).\n\nCh 020 looks clean.\n\n**Ch 021 draft review:**\n\n\"Father Mapple himself couldn't beat it\" \u2014 in the source, the full line is \"Deacon Deuteronomy\u2014why Father Mapple himself couldn't beat it.\" The draft drops \"Deacon Deuteronomy\u2014why\" but retains \"Father Mapple.\" Father Mapple was introduced in an earlier chapter as a preacher; this is a named minor character. But Father Mapple is a major recurring named character in the narrative (Ch 009), not a minor one. A reader who has read the draft up to this point would know Father Mapple from the sermon chapters. Not a finding.\n\n\"Quick, Bildad,\" said Peleg, \"get the ship's papers.\" \u2014 In the source, Peleg is identified as \"his partner, who, aghast at the close vicinity of the flying harpoon, had retreated towards the cabin gangway.\" The draft cuts the appositive/context. But Bildad is a continuously present major character in this scene; the reader tracks him. Not a finding.\n\n\"Peleg! Peleg!\" said Bildad \u2014 \"Thou beliest thine own heart, Peleg\" is cut from the draft, along with \"This same Pequod here had her three masts overboard in that typhoon on Japan, that same voyage when thou went mate with Captain Ahab.\" The draft retains this line. No issue there.\n\nLet me check the \"Hear him\" speech: Source has \"Think of Death and the Judgment then? What? With all three masts...\" The draft has \"Think of Death and the Judgment then? With all three masts...\" \u2014 the \"What?\" is cut but this is a minor compression, not structural.\n\nThe draft ends Peleg's speech at \"how to save all hands\" cutting \"how to rig jury-masts\u2014how to get into the nearest port; that was what I was thinking of.\" This is fine \u2014 Peleg's speech still parses and concludes coherently.\n\nEverything in Ch 021 parses. Characters are tracked. No broken pivots, no dangling references.\n\n```json\n[]\n```",
+    "input_tokens": 11293,
+    "output_tokens": 770,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 17.888311862945557,
+    "stop_reason": "end_turn"
+  }
+}

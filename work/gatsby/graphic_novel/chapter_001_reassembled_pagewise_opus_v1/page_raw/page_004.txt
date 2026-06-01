@@ -1,0 +1,223 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI New York and Midwest",
+    "line_and_color": "Clean ink linework with muted Art Deco palette: dusky blues, warm sepia, cream, and faded gold accents",
+    "lighting": "Soft window light and lamp glow indoors; overcast melancholy outdoors; selective warm highlights on the narrator",
+    "lettering": "Hand-drawn rectangular caption boxes in cream with charcoal type; sparing speech balloons reserved for staged exchanges",
+    "recurring_motifs": [
+      "reserved judgement gaze",
+      "father's remembered voice",
+      "distant seismograph-like ripples of light",
+      "manuscript pages and writing desk",
+      "weather-beaten bungalow at West Egg",
+      "two eggs of land across a courtesy bay",
+      "Georgian Colonial mansion at East Egg",
+      "burning gardens and sundials on a running lawn"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neatly combed light-brown hair, attentive eyes, slight reserved smile",
+      "costume": "Light summer suit and tie for the drive to East Egg; jacket, soft collar",
+      "expression_range": "Curious, mildly apprehensive, observing",
+      "continuity_note": "Same young man, now leaving the bungalow and driving across the bay to dinner at the Buchanans'"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Sturdy straw-haired man of thirty, hard mouth, two arrogant shining eyes, body leaning aggressively forward",
+      "costume": "Riding clothes: jodhpurs, glistening tall riding boots strained at the top lacing, thin coat over packed shoulders",
+      "expression_range": "Supercilious, fractious, dominating",
+      "continuity_note": "First appearance; staged on the front porch of the Georgian Colonial, legs apart"
+    }
+  ],
+  "page": {
+    "page_number": 4,
+    "page_summary": "Nick drives across the courtesy bay to East Egg for dinner at the Buchanans'; as he arrives, he recalls his ties to Daisy and Tom, surveys the elaborate Georgian Colonial and its running lawn, and meets Tom Buchanan planted on the porch in riding clothes — a cruel-bodied, supercilious changed man from his New Haven years.",
+    "source_unit_ids": [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+    "source_word_range": [1240, 1641],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick drives his old Dodge across the bay road on a warm windy evening, the white palaces of East Egg glittering ahead — the summer truly begins.",
+        "shot": "establishing",
+        "image_prompt": "Wide establishing shot at dusk-leaning-warm: a battered old Dodge motoring along a curving shoreline road, viewed from a low three-quarter angle. Across a glittering blue courtesy bay, white Georgian palaces of East Egg gleam along the water with faded gold reflections. Wind ripples the grass and water. Warm sepia sky with dusky blue water. Reserve a clean empty band along the top of the frame for caption lettering, and a smaller clean rectangle in the bottom-left corner. Keep the car, driver silhouette, and distant mansions outside those reserved bands. No text, no signs, no lettering.",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p4_p1_cap1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.06, "y": 0.04, "w": 0.88, "h": 0.14},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "Across the courtesy bay, the white palaces of East Egg glittered.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4_p1_cap2",
+            "kind": "caption",
+            "zone": "bottom_left",
+            "box": {"x": 0.05, "y": 0.78, "w": 0.45, "h": 0.16},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "The history of the summer really begins the evening I drove over to dine with the Buchanans.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Across the courtesy bay the white palaces of fashionable East Egg glittered along the water — and the history of the summer really begins the evening I drove over there to dine with the Tom Buchanans.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Anchors East Egg geography to Nick's actual route, fulfilling the prior page's promise. Defers Gatsby reveal by pointing east, away from his mansion.",
+        "source_unit_ids": [44],
+        "source_word_range": [1240, 1276],
+        "source_anchor": "Across the courtesy bay the white palaces of fashionable East Egg glittered… the evening I drove over there to have dinner with the Tom Buchanans.",
+        "adaptation_note": "Splits a long narrative sentence across two stacked caption slots to preserve the cause: arrival prompts the whole summer's story."
+      },
+      {
+        "panel_number": 2,
+        "beat": "While driving, Nick mentally rehearses who these people are to him: Daisy his second cousin once removed, Tom a college acquaintance, two days together in Chicago after the war.",
+        "shot": "medium",
+        "image_prompt": "Medium shot through the windscreen of the old Dodge: Nick Carraway at the wheel in a light summer suit and tie, light-brown hair neatly combed, attentive eyes on the road, faint reserved smile. Behind and around him, ghostly faded sepia vignettes drift in the sky like memory: a young woman's gloved hand raised in greeting; two young men in collegiate clothes on a Chicago street corner with luggage. The memory vignettes are translucent, washed in cream and faded gold, clearly subordinate to the driving figure. Reserve a clean tall caption column down the right side of the panel, free of faces and hands. No text, no signs, no lettering.",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p4_p2_cap1",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.62, "y": 0.06, "w": 0.34, "h": 0.40},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "Daisy was my second cousin once removed, and I'd known Tom in college.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4_p2_cap2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.62, "y": 0.54, "w": 0.34, "h": 0.36},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "Just after the war I'd spent two days with them in Chicago.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_right",
+        "caption": "Daisy was my second cousin once removed, and I'd known Tom in college. Just after the war I spent two days with them in Chicago.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Names Daisy for the first time and recalls Tom — but defers their first proper staged appearance to the next panels. Memory imagery is clearly subordinate to the present driving action.",
+        "source_unit_ids": [45, 46],
+        "source_word_range": [1277, 1302],
+        "source_anchor": "Daisy was my second cousin once removed… I spent two days with them in Chicago.",
+        "adaptation_note": "Two adjacent micro-units fused into one driving-while-remembering beat; memory is anchored to the visible action of driving."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Approaching the gates, Nick recalls Tom's almost mythic past: a national-figure football end at New Haven, family money so vast that even his polo ponies from Lake Forest had been shipped East.",
+        "shot": "wide",
+        "image_prompt": "Wide three-quarter shot of the Buchanan estate at warm windy afternoon: a cheerful red-and-white Georgian Colonial mansion overlooking the bay, French windows along the front glowing with reflected gold, wide open to the wind. The lawn starts at the beach and runs a quarter of a mile up to the front door, jumping sundials, brick walks, and burning gardens, finally drifting up the side of the house in bright vines. In the middle distance, Nick's old Dodge has just pulled up on the gravel drive; tiny Nick stepping out. To one side, behind a paddock fence, a string of glossy polo ponies in a row, grooms attending. Muted Art Deco palette, warm sepia and faded gold with dusky blue bay. Reserve a clean caption strip across the bottom of the frame, free of horses, lawn ornaments, and the car. No text, no signs, no lettering.",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p4_p3_cap1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.05, "y": 0.05, "w": 0.50, "h": 0.18},
+            "speaker": "Nick (narration)",
+            "speaker_side": "left",
+            "reserved_for": "Tom had been one of the most powerful ends ever to play football at New Haven — a national figure at twenty-one.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4_p3_cap2",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.05, "y": 0.78, "w": 0.90, "h": 0.17},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "His family were enormously wealthy. Now he'd come East in a fashion that took your breath away — he'd even brought down a string of polo ponies from Lake Forest.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "bottom_center",
+        "caption": "Tom had been one of the most powerful ends ever to play football at New Haven — a national figure at twenty-one, whose every later thing would savour of anticlimax. His family were enormously wealthy; now he'd come East in a way that rather took your breath away — he'd brought down a string of polo ponies from Lake Forest.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Establishes the visual contrast between East Egg's lavish estate and Nick's weather-beaten West Egg bungalow. Polo ponies appear as a visible fact, not a label.",
+        "source_unit_ids": [47, 48, 49, 50, 51],
+        "source_word_range": [1303, 1484],
+        "source_anchor": "Her husband… one of the most powerful ends… polo ponies from Lake Forest… cheerful red-and-white Georgian Colonial mansion… jumping over sundials and brick walks and burning gardens.",
+        "adaptation_note": "Compresses five contiguous units that are all establishing description of Tom and the estate into one fully concrete establishing shot, anchored to Nick's arrival on the drive. Not a symbolic montage — single staged moment."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Nick steps onto the porch path and first sees Tom Buchanan: changed since New Haven, planted legs apart in riding clothes, cruel-bodied and supercilious, leaning aggressively forward.",
+        "shot": "medium",
+        "image_prompt": "Medium low-angle shot looking up at the front porch of the Georgian Colonial. Tom Buchanan stands centered between the open French windows that glow with reflected gold behind him: sturdy straw-haired man of thirty, hard mouth, two shining arrogant eyes, body leaning aggressively forward. He wears riding clothes — jodhpurs and tall glistening boots strained at the top lacing — a thin coat across packed shoulders showing the shifting mass of muscle. Legs planted apart, one gloved hand on his hip. In the lower foreground, the back of Nick's head and shoulder enters the frame from the bottom-left, light summer suit, looking up. Warm windy late afternoon light, faded gold highlights on the boots and door frame. Reserve a clean caption band across the very top of the panel and a smaller clean rectangle in the bottom-right corner; keep Tom's face, hands, boots, and the foreground figure of Nick clear of those zones. No text, no signs, no lettering.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p4_p4_cap1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.05, "y": 0.04, "w": 0.90, "h": 0.16},
+            "speaker": "Nick (narration)",
+            "speaker_side": "center",
+            "reserved_for": "He had changed since his New Haven years — a sturdy straw-haired man of thirty now, hard-mouthed and supercilious.",
+            "reading_order": 1
+          },
+          {
+            "id": "p4_p4_cap2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.50, "y": 0.78, "w": 0.46, "h": 0.18},
+            "speaker": "Nick (narration)",
+            "speaker_side": "right",
+            "reserved_for": "Not even the swank of riding clothes could hide that enormous, cruel body — and his gruff husky tenor only added to the fractiousness.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "Tom Buchanan in riding clothes stood with his legs apart on the front porch. He had changed since New Haven — a sturdy straw-haired man of thirty now, with a hard mouth, a supercilious manner, and two shining arrogant eyes that had established dominance over his face. Not even the effeminate swank of those riding clothes could hide the enormous power of that body — a cruel body — and his gruff husky tenor only added to the fractiousness he conveyed.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "First proper appearance of Tom Buchanan; satisfies the prior page's 'next_page_needs'. Daisy is still deferred to the following page. No spoken line in source, so kept as caption per rules.",
+        "source_unit_ids": [52, 53, 54, 55, 56, 57, 58],
+        "source_word_range": [1485, 1641],
+        "source_anchor": "Tom Buchanan in riding clothes was standing with his legs apart on the front porch… a body capable of enormous leverage — a cruel body… a gruff husky tenor.",
+        "adaptation_note": "Seven contiguous descriptive units coalesce on a single staged figure — Tom on the porch — exactly as the source itself compounds them. One panel, one observed action: Nick looking up at Tom."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+      39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+      57, 58
+    ],
+    "last_scene": "Nick has driven across the bay to East Egg at warm windy dusk, arrived at the Buchanans' red-and-white Georgian Colonial, and looked up at Tom Buchanan standing legs-apart on the front porch in riding clothes — cruel-bodied, supercilious, fractious.",
+    "active_characters": ["Nick Carraway", "Tom Buchanan"],
+    "character_updates": [
+      "Tom Buchanan is now visually established: straw-haired, thirty, hard mouth, arrogant shining eyes, packed muscle, riding clothes with strained tall boots, gruff husky tenor",
+      "Daisy named for the first time as Nick's second cousin once removed, but not yet visually present",
+      "Nick is now physically at the Buchanan estate, having driven from West Egg"
+    ],
+    "visual_motifs": [
+      "white palaces of East Egg across the courtesy bay",
+      "red-and-white Georgian Colonial mansion",
+      "quarter-mile lawn jumping sundials, brick walks, and burning gardens",
+      "French windows glowing with reflected gold",
+      "string of polo ponies from Lake Forest",
+      "Tom planted legs-apart in glistening riding boots"
+    ],
+    "next_page_needs": [
+      "Stage Tom greeting Nick and leading him inside, with first spoken dialogue if source provides it",
+      "First proper appearance of Daisy Buchanan (and Jordan Baker) in the breezy interior",
+      "Continue to defer Gatsby's full face reveal",
+      "Contrast Tom's cruel physicality with the airy, billowing interior of the Buchanan house"
+    ]
+  }
+}

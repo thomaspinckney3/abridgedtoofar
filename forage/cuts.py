@@ -193,6 +193,55 @@ def _merge_cuts(partials: list[dict]) -> dict:
     return merged
 
 
+def _chapter_id_aliases(value: str) -> set[str]:
+    raw = str(value).strip()
+    aliases = {raw}
+    if raw.isdigit():
+        aliases.add(str(int(raw)))
+        aliases.add(raw.zfill(3))
+    return {a for a in aliases if a}
+
+
+def _apply_forced_keeps(book: Book, data: dict) -> dict:
+    """Remove book-configured must-keep chapters from skippable_chapters.
+
+    This is a deterministic guardrail for cases where the cut prepass marks a
+    chapter skippable but downstream coverage requires it. Metadata accepts
+    either strings or objects with `chapter_id`/`id` and optional `reason`.
+    """
+    configured = book.metadata.get("force_keep_chapters") or []
+    keep_aliases: set[str] = set()
+    keep_notes: list[dict] = []
+    for item in configured:
+        if isinstance(item, dict):
+            cid = str(item.get("chapter_id") or item.get("id") or "").strip()
+            reason = str(item.get("reason") or "").strip()
+        else:
+            cid = str(item).strip()
+            reason = ""
+        if not cid:
+            continue
+        keep_aliases.update(_chapter_id_aliases(cid))
+        keep_notes.append({"chapter_id": cid, "reason": reason})
+
+    if not keep_aliases:
+        return data
+
+    kept_skips = []
+    removed_skips = []
+    for entry in data.get("skippable_chapters", []) or []:
+        cid = str(entry.get("chapter_id", "")).strip()
+        if cid in keep_aliases:
+            removed_skips.append(entry)
+        else:
+            kept_skips.append(entry)
+    data["skippable_chapters"] = kept_skips
+    data.setdefault("_meta", {})
+    data["_meta"]["force_keep_chapters"] = keep_notes
+    data["_meta"]["force_keep_removed_skips"] = removed_skips
+    return data
+
+
 def generate_cuts(book: Book) -> dict:
     """Enumerate minor characters, subplots, and digressions that can be
     cut from `book`. For books over the single-call budget, splits into
@@ -218,6 +267,8 @@ def generate_cuts(book: Book) -> dict:
                 stage=f"cuts:{book.book_id}:part{i}")
             partials.append(partial)
         data = _merge_cuts(partials)
+
+    data = _apply_forced_keeps(book, data)
 
     out_path = book.work_dir / "cuts.json"
     write_json(out_path, data)

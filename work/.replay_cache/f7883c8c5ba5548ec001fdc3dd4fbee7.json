@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:36:20",
+  "key": "f7883c8c5ba5548ec001fdc3dd4fbee7",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test.\n\n**Ch 007 draft \u2014 scan**\n\nThe draft is a faithful compression. Andy is introduced locally (\"a colored boy entered\u2026 'Andy,' said his mistress\"). Aunt Chloe is named and glossed (\"the head cook, Aunt Chloe\"). Black Sam is introduced with his epithet explained. All dialogue exchanges have their triggers present. No mid-scene jumps. No broken pivots from surviving material. Authorized removals (Adolph, Jane/Rosa, Mammy, etc.) leave no orphaned references in the surviving text.\n\n**Ch 008 draft \u2014 scan**\n\n*Tom's parlor scene:* The source has a small exchange before Tom's famous speech where the trader warns him (\"don't come it over your master with any o' yer nigger tricks\"). Tom's response \u2014 \"I was jist eight years old when ole Missis put you into my arms\" \u2014 is addressed to *Mr. Shelby*, not the trader. In the source, Tom explicitly turns to address his master after the trader's jibe. The draft preserves this but cuts one intervening line from the source (\"If he'd hear to me, he wouldn't trust any on ye\u2014slippery as eels!\"). The remaining exchange still parses: Tom's speech is addressed to \"Mas'r\" (Shelby), and Shelby responds. This reads fine.\n\n*Aunt Chloe kitchen scene:* The draft cuts Jake's lines (\"He'll go to torment, and no mistake\" and \"'Chil'en!' said a voice\u2026 he said\") and cuts Andy and Jake's follow-up. Then Uncle Tom's speech appears. Let me check:\n\nSource: Tom enters, says \"Chil'en!\" then warns them about \"Forever.\" Then Andy replies (\"We wouldn't to anybody but the soul-drivers\"), then Aunt Chloe's long speech, then Tom's \"Pray for them\u2026\"\n\nDraft: Tom enters, says \"Forever is a _dre'ful_ word, chil'en\u2026\" \u2014 but the draft omits Tom's opening \"Chil'en!\" call and the first sentence of his speech. More critically, the draft cuts Andy's reply and jumps straight to Aunt Chloe's speech. Then Tom's \"Pray for them\u2026\" responds to Aunt Chloe's \"Lor, if the devil don't get them, what's he good for?\" \u2014 that trigger is present. This parses.\n\n*\"Lizy's bridge\" \u2014 mid-scene jump check:* At the very end of Ch 008 draft, Sam says \"Missis wouldn't hear of our ridin' the critters over Lizy's bridge tonight.\" The source has the same line. This is a colloquial reference to the ice-crossing Eliza just made \u2014 it's not a pre-established proper noun requiring introduction, and the context (they just watched Eliza cross the ice) makes it perfectly clear. Not a finding.\n\n*The Symmes introduction:* \"Eliza recognized the voice and face for a man who owned a farm not far from her old home. 'O, Mr. Symmes!\u2014save me\u2026'\" The source has the same structure \u2014 no prior introduction of Symmes, just this recognition sentence. This was always the source's method; the draft reproduces it identically. Not a compression artifact.\n\n*Ch 008 draft, Tom's kitchen speech \u2014 broken pivot check:* In the source, Tom's first speech has two parts: the caution about \"Forever\" and then specific remarks about soul-drivers in response to Andy. The draft cuts Andy's line that triggers Tom's second response, but Tom's speech in the draft is trimmed to just the \"Forever\" caution, without the soul-driver response. What remains parses on its own.\n\n*The \"Chil'en!\" / \"Forever\" transition:* In the draft: `\"Chil'en!\" said a voice that made them all start. It was Uncle Tom\u2026 \"Forever is a _dre'ful_ word, chil'en\u2026\"` \u2014 but wait. In the source, Tom first says \"Chil'en!\" as a standalone exclamation, *then* says \"I'm afeard you don't know what ye're sayin'. Forever is a _dre'ful_ word\u2026\" The draft merges these by cutting the first sentence of Tom's speech. What the draft actually has is: `\"Chil'en!\" said a voice that made them all start. It was Uncle Tom, who had come in, and stood listening to the conversation at the door. \"Forever is a _dre'ful_ word, chil'en\u2026\"` \u2014 the word \"Forever\" comes out of nowhere without the preceding sentence \"I'm afeard you don't know what ye're sayin'\" which established *why* he's addressing them about forever. But does it parse? A reader can infer Tom is reacting to Aunt Chloe's invocations of hellfire (\"He'll go to torment,\" \"Sich'll be burnt up forever\"). Actually \u2014 Jake's line \"He'll go to torment, and no mistake\" and \"'Sich'll be burnt up forever, and no mistake; won't ther?' said Andy\" \u2014 wait, are those in the draft?\n\nRe-reading the draft kitchen scene carefully: The draft has Aunt Chloe's speech ending with \"the Lord he'll hear 'em\u2014so he will!\" \u2014 then immediately `\"Chil'en!\" said a voice\u2026` The draft *cuts* Jake's \"He'll go to torment\" and Andy's \"I'd be glad to see it\" and Andy's \"Sich'll be burnt up forever\" lines entirely. So Tom's \"Forever is a _dre'ful_ word\" has no proximate trigger in the draft \u2014 the last thing said before Tom's entrance is Aunt Chloe's biblical prophecy about the Lord hearing the souls calling for vengeance. Tom's \"Forever is a dre'ful word, chil'en; it's awful to think on 't. You oughtenter wish that ar to any human crittur\" \u2014 without Andy/Jake having just said \"he'll go to torment\" and \"I'd be glad to see it\" and \"Sich'll be burnt up forever,\" Tom's caution about wishing damnation on people and dwelling on \"forever\" is **a response to a missing prompt**. A reader would genuinely wonder: who said \"forever\"? Who wished torment on someone? Tom's admonition reads as one side of a cut two-sided structure.\n\nThis is a **broken pivot** (test 3): Tom's speech is a correction/caution responding to the children wishing eternal damnation on Haley, but those wishes were cut from the draft, leaving Tom's warning contextless.\n\nLet me verify no other issues and confirm this is the only valid finding.\n\n*\"Both ducked\" \u2014 pronoun check:* \"Both ducked, and ran shouting up the bank\" \u2014 both Sam and Andy, named immediately prior. Clear.\n\n*\"He rode along with an air of dutiful submission\"* \u2014 \"He\" after \"Sam knew this perfectly well; Andy had never heard of it.\" The \"he\" most naturally refers to the nearer antecedent Andy, but then \"only groaning that 't was 'desp't rough'\" \u2014 in the source this is Sam's groan. The pronoun is ambiguous between Sam and Andy. But reading carefully: source says \"He therefore rode along with an air of dutiful submission, only groaning and vociferating occasionally that 't was 'desp't rough, and bad for Jerry's foot.'\" \u2014 \"He\" = Sam in the source. In the draft the referent sentence is \"Sam knew this perfectly well,\u2014indeed, the road had been so long closed up, that Andy had never heard of it. He rode along with an air of dutiful submission\u2026\" \u2014 the \"he\" could be Andy (the nearer noun) but context (Sam's whole scheme) makes it Sam. A competent reader would likely parse this correctly. Borderline but not a genuine confusion \u2014 the gate test passes as \"less ornamented\" rather than genuinely misleading. Not a finding.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Chil'en!\\\" said a voice that made them all start. It was Uncle Tom, who had come in, and stood listening to the conversation at the door. \\\"Forever is a _dre'ful_ word, chil'en; it's awful to think on 't. You oughtenter wish that ar to any human crittur.\\\"\",\n    \"source_has\": \"Before Tom's entry the source has Jake say 'He'll go to torment, and no mistake,' Andy say 'I'd be glad to see it, I'll be boun',' and Andy ask 'Sich'll be burnt up forever, and no mistake; won't ther?' \u2014 Tom then enters and responds directly: 'I'm afeard you don't know what ye're sayin'. Forever is a _dre'ful_ word\u2026 You oughtenter wish that ar to any human crittur.' The children's explicit wishes of eternal damnation are the trigger Tom is correcting.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: nothing in the preceding draft has anyone say 'forever' or wish torment on Haley, so Tom's admonition about the word 'forever' and wishing damnation on any human creature appears to come from nowhere, leaving the reader unable to identify what Tom heard that prompted his warning.\"\n  }\n]\n```",
+    "input_tokens": 26003,
+    "output_tokens": 2206,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 50.352952003479004,
+    "stop_reason": "end_turn"
+  }
+}

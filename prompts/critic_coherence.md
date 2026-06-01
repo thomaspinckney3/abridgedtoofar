@@ -12,6 +12,7 @@ A finding is valid ONLY if the draft sentence fails at least ONE of these specif
 4. **Missing definitional gloss**: a phrase that the source glossed as general/characteristic is presented in the draft without the gloss, leaving the reader unable to place it.
 5. **Unattributed dialogue exchange**: a reply whose triggering question was cut, or a dialogue where the speaker was introduced in the cut passage.
 6. **Mid-scene jump**: a chapter opens with definite references ("the waif-pole", "the dead whale", "that night") that the previous draft chapter did not establish, AND the source of the previous chapter DID establish them in material that was dropped during compression.
+7. **Unglossed minor proper name**: a minor/removable character's proper name appears without a local role, relationship, or appositive identifier, and the immediately preceding draft chapter does not establish who that named person is. If the name survives after its introduction was cut or after a long absence, the first local use must tell the reader who the person is.
 
 Explicit rejections — these are NOT valid findings:
 
@@ -20,6 +21,8 @@ Explicit rejections — these are NOT valid findings:
 - A detail's cause or origin is cut; the reader understands the event without the source's flourish.
 - The source named an object and the draft refers to it by context/descriptor; if a reader can infer what the object is, not a finding.
 - Temporal sequencing is slightly altered but still parses.
+- A major or continuously present character is named without a fresh gloss; readers can track principal names across chapters.
+- A minor character is referred to only by a descriptor ("the neighbour", "Myrtle's sister") and the descriptor is clear; proper-name continuity is not required when the name has been elided.
 
 **The gate test**: would a competent reader with no source access be *actually confused or misled* by this draft sentence, or would they merely be reading a less-ornamented version of the sentence? Only flag the first kind.
 
@@ -30,9 +33,15 @@ Explicit rejections — these are NOT valid findings:
 {% endif %}{% if cuts.digressions %}Authorized digression removals: {% for d in cuts.digressions %}Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}{% if not loop.last %}; {% endif %}{% endfor %}.
 {% endif %}{% endif %}
 
+Named-person continuity invariant: if a proper name from the authorized
+minor-character list appears in the draft, either the preceding draft chapter
+or the local sentence/paragraph must identify that person. Flag the orphaned
+name, not the editorial choice to cut that character.
+
 For each finding:
-- `class`: one of `non_parseable | dangling_reference | broken_pivot | missing_gloss | unattributed_dialogue | mid_scene_jump`
-- `chapter`: "N" or "N+1"
+- `valid`: true for a repair-worthy structural coherence failure. If you mention a rejected candidate for audit, set `valid`: false; prefer returning `[]` instead of rejected candidates.
+- `class`: one of `non_parseable | dangling_reference | broken_pivot | missing_gloss | unattributed_dialogue | mid_scene_jump | unglossed_name`
+- `chapter`: exactly "N" or "N+1" (do not output the literal chapter number)
 - `draft_passage`: 20-200 chars, the damaged sentence
 - `source_has`: the source's version showing what was present
 - `gate_test_answer`: one sentence explicitly answering "is a reader genuinely confused, or just reading a less-ornamented version?"

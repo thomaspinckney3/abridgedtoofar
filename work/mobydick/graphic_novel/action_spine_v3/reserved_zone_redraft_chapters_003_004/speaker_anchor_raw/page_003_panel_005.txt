@@ -1,0 +1,21 @@
+{
+  "page_number": 3,
+  "anchors": [
+    {
+      "panel_number": 5,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "With heads, to be sure.",
+      "visible": true,
+      "confidence": 0.89,
+      "mouth_point": {"x": 684.0, "y": 835.6},
+      "mouth_point_ratio": {"x": 0.668, "y": 0.544},
+      "tail_target_point": {"x": 728.1, "y": 801.8},
+      "tail_target_point_ratio": {"x": 0.711, "y": 0.522},
+      "face_box": {"x1": 619.5, "y1": 683.5, "x2": 855.0, "y2": 956.9},
+      "evidence": "Single character on right, older man in cap at table; his smirking mouth is clearly visible around grid x≈0.67, y≈0.54.",
+      "reason": "Speaker is on the right as specified. Mouth point at center of lips; tail target nudged up-right toward the top-right balloon zone, just outside the right corner of the mouth. Face box encloses visible head so balloons avoid it."
+    }
+  ]
+}

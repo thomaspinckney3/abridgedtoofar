@@ -1,14 +1,61 @@
 {
-  "ts": "2026-04-22T22:17:56",
+  "ts": "2026-05-08T15:55:24",
   "key": "c2a33de53aecac672748d940c3558fcc",
   "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "classify",
+    "hash": "df189ba6187641bd2db2709d3379fe11",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_classifier.py",
+        "sha256": "057d9dce3dd5d6ebc6ff94f20a9b17c4e7317618be01f7f791e8a1ac56845afb",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/classify_chapters.md",
+        "sha256": "be91bb67e4fecc47bf1fa8e2590b6aae1e59c823deab167c5d7a75ff3a0d62c0",
+        "missing": false
+      }
+    ]
+  },
   "response": {
-    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"toc_fragment\", \"reason\": \"table-of-contents listing of all chapters\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Chapter I narrative prose\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter II narrative prose\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter III narrative prose\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter IV narrative prose\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter V narrative prose\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter VI narrative prose\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VII narrative prose\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII narrative prose\"},\n  {\"id\": \"010\", \"status\": \"diegetic\", \"reason\": \"Chapter IX narrative prose\"},\n  {\"id\": \"011\", \"status\": \"diegetic\", \"reason\": \"Chapter X narrative prose\"},\n  {\"id\": \"012\", \"status\": \"diegetic\", \"reason\": \"Chapter XI narrative prose\"},\n  {\"id\": \"013\", \"status\": \"diegetic\", \"reason\": \"Chapter XII narrative prose\"},\n  {\"id\": \"014\", \"status\": \"diegetic\", \"reason\": \"Chapter XIII narrative prose\"},\n  {\"id\": \"015\", \"status\": \"diegetic\", \"reason\": \"Chapter XIV narrative prose\"},\n  {\"id\": \"016\", \"status\": \"diegetic\", \"reason\": \"Chapter XV narrative prose\"},\n  {\"id\": \"017\", \"status\": \"diegetic\", \"reason\": \"Chapter XVI narrative prose\"},\n  {\"id\": \"018\", \"status\": \"diegetic\", \"reason\": \"Chapter XVII narrative prose\"},\n  {\"id\": \"019\", \"status\": \"diegetic\", \"reason\": \"Chapter XVIII narrative prose\"},\n  {\"id\": \"020\", \"status\": \"diegetic\", \"reason\": \"Chapter XIX narrative prose\"},\n  {\"id\": \"021\", \"status\": \"diegetic\", \"reason\": \"Chapter XX narrative prose\"},\n  {\"id\": \"022\", \"status\": \"diegetic\", \"reason\": \"Chapter XXI narrative prose\"},\n  {\"id\": \"023\", \"status\": \"diegetic\", \"reason\": \"Chapter XXII narrative prose\"},\n  {\"id\": \"024\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIII narrative prose\"},\n  {\"id\": \"025\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIV narrative prose\"},\n  {\"id\": \"026\", \"status\": \"diegetic\", \"reason\": \"Chapter XXV narrative prose\"},\n  {\"id\": \"027\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVI narrative prose\"},\n  {\"id\": \"028\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVII narrative prose\"},\n  {\"id\": \"029\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVIII narrative prose\"},\n  {\"id\": \"030\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIX narrative prose\"},\n  {\"id\": \"031\", \"status\": \"diegetic\", \"reason\": \"Chapter XXX narrative prose\"},\n  {\"id\": \"032\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXI narrative prose\"},\n  {\"id\": \"033\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXII narrative prose\"},\n  {\"id\": \"034\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIII narrative prose\"},\n  {\"id\": \"035\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIV narrative prose\"},\n  {\"id\": \"036\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXV narrative prose\"},\n  {\"id\": \"037\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVI narrative prose\"},\n  {\"id\": \"038\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVII narrative prose\"},\n  {\"id\": \"039\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVIII narrative prose\"},\n  {\"id\": \"040\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIX narrative prose\"},\n  {\"id\": \"041\", \"status\": \"diegetic\", \"reason\": \"Chapter XL narrative prose\"},\n  {\"id\": \"042\", \"status\": \"diegetic\", \"reason\": \"Chapter XLI narrative prose\"},\n  {\"id\": \"043\", \"status\": \"diegetic\", \"reason\": \"Chapter XLII narrative prose\"},\n  {\"id\": \"044\", \"status\": \"diegetic\", \"reason\": \"Chapter XLIII narrative prose\"},\n  {\"id\": \"045\", \"status\": \"diegetic\", \"reason\": \"Chapter XLIV narrative prose\"},\n  {\"id\": \"046\", \"status\": \"extradiegetic\", \"reason\": \"author's concluding remarks defending authenticity of sources\"}\n]\n```",
+    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"toc_fragment\", \"reason\": \"table of contents listing all chapters\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Chapter I full narrative prose\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter II full narrative prose\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter III full narrative prose\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter IV full narrative prose\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter V full narrative prose\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter VI full narrative prose\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VII full narrative prose\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII full narrative prose\"},\n  {\"id\": \"010\", \"status\": \"diegetic\", \"reason\": \"Chapter IX full narrative prose\"},\n  {\"id\": \"011\", \"status\": \"diegetic\", \"reason\": \"Chapter X full narrative prose\"},\n  {\"id\": \"012\", \"status\": \"diegetic\", \"reason\": \"Chapter XI full narrative prose\"},\n  {\"id\": \"013\", \"status\": \"diegetic\", \"reason\": \"Chapter XII full narrative prose\"},\n  {\"id\": \"014\", \"status\": \"diegetic\", \"reason\": \"Chapter XIII full narrative prose\"},\n  {\"id\": \"015\", \"status\": \"diegetic\", \"reason\": \"Chapter XIV full narrative prose\"},\n  {\"id\": \"016\", \"status\": \"diegetic\", \"reason\": \"Chapter XV full narrative prose\"},\n  {\"id\": \"017\", \"status\": \"diegetic\", \"reason\": \"Chapter XVI full narrative prose\"},\n  {\"id\": \"018\", \"status\": \"diegetic\", \"reason\": \"Chapter XVII full narrative prose\"},\n  {\"id\": \"019\", \"status\": \"diegetic\", \"reason\": \"Chapter XVIII full narrative prose\"},\n  {\"id\": \"020\", \"status\": \"diegetic\", \"reason\": \"Chapter XIX full narrative prose\"},\n  {\"id\": \"021\", \"status\": \"diegetic\", \"reason\": \"Chapter XX full narrative prose\"},\n  {\"id\": \"022\", \"status\": \"diegetic\", \"reason\": \"Chapter XXI full narrative prose\"},\n  {\"id\": \"023\", \"status\": \"diegetic\", \"reason\": \"Chapter XXII full narrative prose\"},\n  {\"id\": \"024\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIII full narrative prose\"},\n  {\"id\": \"025\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIV full narrative prose\"},\n  {\"id\": \"026\", \"status\": \"diegetic\", \"reason\": \"Chapter XXV full narrative prose\"},\n  {\"id\": \"027\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVI full narrative prose\"},\n  {\"id\": \"028\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVII full narrative prose\"},\n  {\"id\": \"029\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVIII full narrative prose\"},\n  {\"id\": \"030\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIX full narrative prose\"},\n  {\"id\": \"031\", \"status\": \"diegetic\", \"reason\": \"Chapter XXX full narrative prose\"},\n  {\"id\": \"032\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXI full narrative prose\"},\n  {\"id\": \"033\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXII full narrative prose\"},\n  {\"id\": \"034\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIII full narrative prose\"},\n  {\"id\": \"035\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIV full narrative prose\"},\n  {\"id\": \"036\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXV full narrative prose\"},\n  {\"id\": \"037\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVI full narrative prose\"},\n  {\"id\": \"038\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVII full narrative prose\"},\n  {\"id\": \"039\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXVIII full narrative prose\"},\n  {\"id\": \"040\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIX full narrative prose\"},\n  {\"id\": \"041\", \"status\": \"diegetic\", \"reason\": \"Chapter XL full narrative prose\"},\n  {\"id\": \"042\", \"status\": \"diegetic\", \"reason\": \"Chapter XLI full narrative prose\"},\n  {\"id\": \"043\", \"status\": \"diegetic\", \"reason\": \"Chapter XLII full narrative prose\"},\n  {\"id\": \"044\", \"status\": \"diegetic\", \"reason\": \"Chapter XLIII full narrative prose\"},\n  {\"id\": \"045\", \"status\": \"diegetic\", \"reason\": \"Chapter XLIV full narrative prose\"},\n  {\"id\": \"046\", \"status\": \"extradiegetic\", \"reason\": \"author's concluding remarks and meta-commentary on sources\"}\n]\n```",
     "input_tokens": 16373,
-    "output_tokens": 1222,
+    "output_tokens": 1264,
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
-    "duration_s": 9.3055579662323,
+    "duration_s": 10.201805114746094,
     "stop_reason": "end_turn"
   }
 }

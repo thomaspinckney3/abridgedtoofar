@@ -1,0 +1,159 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_002/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Patched boots are not depicted; footwear appears modern and unpatched.",
+          "visible_evidence": "Ishmael wears bulky lace-up boots with thick soles and no visible toe patches or thin, worn soles.",
+          "repair_prompt": "Replace the footwear with battered 19th-century dark leather ankle boots showing visible toe patches and thin, scuffed soles; avoid modern thick/lugged soles or contemporary eyelets."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Outerwear reads as a long overcoat rather than the specified pea-coat.",
+          "visible_evidence": "The coat extends to mid-thigh/knee with a flaring hem, not a short, hip-length pea-coat.",
+          "repair_prompt": "Shorten and reshape the coat to a hip-length, double-breasted dark wool pea-coat with broad collar and nautical-style buttons."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag appears larger than the specified small compact travel bag.",
+          "visible_evidence": "The mottled fabric bag under Ishmael’s arm has the bulk of a medium doctor’s bag, protruding well beyond his torso.",
+          "repair_prompt": "Scale down the carpet-bag to a small, compact 19th-century soft-sided bag with worn leather trim; keep mottled fabric and scuffs."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot angle is side/three-quarter rather than a clear over-the-shoulder view from behind.",
+          "visible_evidence": "Ishmael is shown in right-profile with much of his face visible; the camera is not positioned behind his shoulder.",
+          "repair_prompt": "Recompose to a long shot from behind Ishmael’s left shoulder, back to viewer, looking toward the empty snowy slip; maintain current environment and weather."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag depicted as a large duffel with a long shoulder strap, reading as a modern travel bag rather than a compact 19th-century carpet-bag.",
+          "visible_evidence": "Bulky bag under Ishmael’s arm with elongated strap and oversized volume relative to his torso.",
+          "repair_prompt": "Replace the duffel with a small, soft-sided 19th-century carpet-bag of mottled fabric and leather trim; compact enough to tuck under the arm; no shoulder strap, no zipper or modern hardware; visibly scuffed and hand-carried."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boot details are not clearly visible; toes and soles look worn but lack distinct patching.",
+          "visible_evidence": "Boots appear scuffed lace-ups without obvious rough toe patches or thin, battered soles.",
+          "repair_prompt": "Add clear rough toe patches and thinned, scuffed sole edges on the dark leather ankle boots to read as patched and well-worn."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Framing reads closer to a full-body/long shot rather than the specified medium three-quarter view, reducing emphasis on the coin-counting action.",
+          "visible_evidence": "Ishmael is shown head-to-toe with ample street visible around him; coins are small within the frame.",
+          "repair_prompt": "Tighten the composition to a medium three-quarter view centered on Ishmael’s torso and gloved palm with coins, keeping the bleak street as background context."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Additional human figures are visible in the distant street despite the contract listing only Ishmael as visible.",
+          "visible_evidence": "Two small silhouettes of pedestrians appear near the center-right distance along the street.",
+          "repair_prompt": "Remove background pedestrians or reduce them to unidentifiable atmospheric shapes so only Ishmael is recognizably present."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag reads as a modern patterned designer bag rather than a small 19th-century mottled carpet-bag.",
+          "visible_evidence": "The bag under Ishmael’s arm has a repeating monogram-like pattern, crisp structure, glossy leather trim, and metal studs/buckles that suggest a modern luxury handbag.",
+          "repair_prompt": "Replace the bag with a small, soft-sided 19th-century carpet-bag: mottled fabric, scuffed, with simple worn leather trim and handle, no logos, no repeating pattern, no shiny hardware; keep it tucked under Ishmael’s arm."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Ishmael’s boots appear sturdy and unpatched, lacking the rough toe patches and thin worn soles specified.",
+          "visible_evidence": "Boots look thick-soled and intact with no visible patching at the toes.",
+          "repair_prompt": "Render dark leather ankle boots with evident wear: rough toe patches, scuffed uppers, and thinner, worn soles; avoid a new or heavy-sole look."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "The image shows Ishmael passing the warm inn and heading toward the waterfront, but it is not clear he is turning into a darker side street.",
+          "visible_evidence": "Street extends straight toward the harbor; no narrow side lane is clearly depicted where Ishmael is stepping.",
+          "repair_prompt": "Adjust staging so Ishmael is angled into a narrower, darker side lane sloping downhill away from the bright inn, while the waterfront remains visible beyond."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Carpet-bag rendered as a modern-looking leather satchel instead of a small mottled-fabric 19th-century carpet-bag.",
+          "visible_evidence": "Ishmael clutches a smooth dark leather flap bag with strap/trim, no mottled tapestry-like fabric or leather-trimmed fabric body.",
+          "repair_prompt": "Replace the bag with a small, soft-sided 19th-century carpet-bag: mottled or tapestry-like fabric body with scuffed leather trim and handles; compact and hand-carried under the arm; avoid modern satchel silhouettes, long straps, or hardware."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Ash-box reads as an active brazier or coal container, emitting smoke, and lacks the ajar lid specified.",
+          "visible_evidence": "Low rectangular box at the threshold has dark cinders and visible wisps of smoke rising; no lid is present.",
+          "repair_prompt": "Depict a true ash-box: a low wooden or tin box half-filled with powdery gray stove ashes, lid present and ajar, fine ash dust scattered nearby; remove any smoke, glow, or embers so it does not read as a brazier or coal scuttle."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Ishmael’s boots appear worn but lack the clearly visible toe patches called for.",
+          "visible_evidence": "Boots show scuffs yet the toe areas look uniform without distinct patch pieces.",
+          "repair_prompt": "Make the ankle boots visibly battered with rough toe patches and thin, worn soles; avoid any new or uniform leather appearance."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Caption-zone failure: the reserved top-center area is occupied and visually busy.",
+          "visible_evidence": "A large wooden hanging sign and its chains extend through the top-center of the frame, with sleet and dark clouds behind it.",
+          "repair_prompt": "Recompose to leave clear negative space in the top-center for the caption by shifting the sign leftward/upward or cropping lower; keep the top-center sky uncluttered and reduce precipitation contrast in that area."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Additional people are visible despite the storyboard listing only Ishmael.",
+          "visible_evidence": "Two small human figures are seen down the dock near lamplights at left background.",
+          "repair_prompt": "Remove or obscure distant figures so only Ishmael is discernible; keep the dockside empty or use non-human silhouettes like posts and rigging."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Patched boots, called out as a visible prop, are not visible in the frame.",
+          "visible_evidence": "The composition crops Ishmael below mid-thigh; no footwear is shown.",
+          "repair_prompt": "Adjust framing to include Ishmael’s lower legs and show dark, battered ankle boots with visible toe patches; avoid new or shiny footwear."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

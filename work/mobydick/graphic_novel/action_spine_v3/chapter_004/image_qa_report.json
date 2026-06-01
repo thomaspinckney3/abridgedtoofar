@@ -1,0 +1,149 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Top-left caption zone is busy and lacks clean negative space.",
+          "visible_evidence": "The top-left quadrant is occupied by a detailed window with bright dawn light and visible ship masts outside.",
+          "repair_prompt": "Recompose or crop to leave a clear, low-detail area in the top-left for lettering: shift the window out of that quadrant or raise/crop so the top-left shows plain wall; reduce contrast/texture there while keeping dawn light across the quilt."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Queequeg’s hairstyle appears as a shaved-sides/mohawk rather than uniformly short black hair.",
+          "visible_evidence": "The sleeper’s hair is closely shorn on the sides with a raised central strip.",
+          "repair_prompt": "Adjust Queequeg’s hair to short, even black hair without shaved sides to align with the described look."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Reserved bottom-left caption zone is busy with patterned quilt and Ishmael’s forearm/hand, leaving no clean negative space for lettering.",
+          "visible_evidence": "Bottom-left corner contains high-contrast patchwork squares and Ishmael’s hand gripping the quilt.",
+          "repair_prompt": "Recompose or clear the bottom-left: move Ishmael’s hand and quilt upward/right, and simplify that corner with plain bedding or a soft vignette so a clean light-toned rectangle remains for the caption."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The tomahawk-pipe reads as a real hatchet rather than a smoking pipe.",
+          "visible_evidence": "A metal axe head on a thick wooden handle lies on the bed with no visible pipe bowl or mouthpiece; proportions match a small hatchet.",
+          "repair_prompt": "Redesign the tomahawk-pipe to clearly be a pipe: smaller overall, hatchet-shaped head incorporating a visible bowl, a slender wooden stem ending in a mouthpiece; avoid heavy axe proportions."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael’s mid-gesture reach to rouse Queequeg is not depicted.",
+          "visible_evidence": "One hand pulls the quilt and the other touches Ishmael’s neck; no hand reaching toward Queequeg.",
+          "repair_prompt": "Pose Ishmael with one hand extending toward Queequeg’s shoulder or arm while the other throws the quilt aside, keeping Queequeg asleep."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Queequeg’s self-shake and arm withdrawal are not clearly depicted.",
+          "visible_evidence": "Queequeg is upright and staring with one hand on the mattress and the other on the bedding; there are no motion cues or posture indicating a vigorous shake or a distinct arm-withdrawing gesture.",
+          "repair_prompt": "Repose Queequeg mid-shake with subtle motion blur or repeated-contour lines at the shoulders/head and forearms, and show his near arm pulling back from Ishmael. Keep the two-shot at the bed edge with Ishmael propped up mid-expostulation, the patchwork counterpane visible, and preserve clear negative space at the top-center for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot is not clearly from Ishmael’s POV as specified.",
+          "visible_evidence": "Ishmael is fully visible reclining on the left side of the frame while looking at Queequeg, indicating a third-person angle rather than a POV shot.",
+          "repair_prompt": "Recompose to a medium over-the-blanket POV from Ishmael’s vantage so Ishmael is not fully visible (at most a foreground edge of quilt/hand). Keep Queequeg mid-frame gesturing toward the clothes pile and the open door. Preserve the patchwork counterpane in the foreground and maintain clean negative space in the bottom-right for the caption. No readable text."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 6,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Boots depicted as modern lace-up footwear rather than pull-on cowhide boots.",
+          "visible_evidence": "A pair of ankle-high lace-up boots sit on the floor beneath the chair by the washstand.",
+          "repair_prompt": "Replace the lace-up boots with damp, wrinkled brown pull-on cowhide boots with no laces; keep them positioned by the chair."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Hard soap bar is not visible on or near the washstand.",
+          "visible_evidence": "The washstand surface shows a basin, pitcher, and towel, but no small off-white rectangular bar of soap.",
+          "repair_prompt": "Add a small off-white rectangular hard soap bar on the washstand near the basin; ensure it reads clearly but subtly."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Queequeg’s hair appears tied into a mid-length bun rather than short hair as specified.",
+          "visible_evidence": "Queequeg is shown with hair gathered into a noticeable bun at the back of his head.",
+          "repair_prompt": "Shorten Queequeg’s hair to a clearly short length (or a very small topknot) consistent with his description; retain tattoos and overall look."
+        },
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Bottom-center area is somewhat busy due to the patterned quilt and floor texture, reducing clean space for lettering.",
+          "visible_evidence": "The patchwork quilt and floor extend into the lower center of the frame with visible texture and color variation.",
+          "repair_prompt": "Introduce clearer negative space at the bottom-center (e.g., vignette fade or softened, darker plain area) to reserve a clean caption zone without covering key details."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Two harpoons appear: Queequeg shaves with a separate harpoon head while a fully assembled harpoon also leans against the wall, obscuring the intended detachable-stock setup.",
+          "visible_evidence": "A complete harpoon with steel head is propped beside the hanging coat, while Queequeg holds another steel head on a short handle to his cheek.",
+          "repair_prompt": "Depict only one harpoon. Show Queequeg holding the detached steel head for shaving and place the matching wooden stock clearly set aside without a head (e.g., on the washstand or leaning nearby). Remove any second full harpoon."
+        },
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "The reserved top-left caption zone is busy and lacks clean negative space.",
+          "visible_evidence": "Top-left contains a detailed window with curtains and an exterior harbor view plus the upper area of Ishmael and the quilt.",
+          "repair_prompt": "Clear the top-left by shifting or cropping the window and Ishmael down/right and leaving a plain section of wall with minimal texture for the caption."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Mirror appears as a framed wall mirror rather than a small mirror shard tacked to the wall.",
+          "visible_evidence": "A rectangular wooden-framed mirror hangs above the washstand.",
+          "repair_prompt": "Replace the framed mirror with a small, irregular mirror shard visibly tacked to the wall above the washstand."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

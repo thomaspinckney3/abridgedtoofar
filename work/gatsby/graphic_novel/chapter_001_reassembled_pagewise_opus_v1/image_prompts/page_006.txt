@@ -1,0 +1,77 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age, post-WWI New York and Midwest
+- line and color: Clean ink linework with muted Art Deco palette: dusky blues, warm sepia, cream, and faded gold accents
+- lighting: Soft window light and lamp glow indoors; overcast melancholy outdoors; selective warm highlights on the narrator; moonlit night with a single distant green pinpoint across water
+
+Character continuity:
+- Nick Carraway: Lean young man, neatly combed light-brown hair, attentive eyes Costume: Light summer suit, tie loosened, soft collar Continuity: Has arrived home at his West Egg bungalow; sits in the yard and then notices his neighbor on the next lawn
+- Nick's Father: Older man with graying mustache, kind reserved eyes, resemblance to Nick Costume: Edwardian-cut dark suit, vest, watch chain Continuity: Appears only in remembered flashback; not present in current timeline
+- Jay Gatsby: Tall man in silhouette at fifty feet, face withheld, hands first in pockets then arms stretched toward the water Costume: Dark summer suit, pale shirt collar visible in moonlight Continuity: First on-page appearance; identified only by leisurely bearing and the secure stance of his feet on his own lawn
+- Lost Stranger: Younger man with rumpled jacket and a road-map, hat pushed back, helpless squint Costume: Plain summer suit, soft cap, scuffed shoes; clearly newer to the area than Nick Continuity: One-scene character introduced on the dusty West Egg road
+- Finnish Housekeeper: Stout middle-aged woman, hair in a kerchief, broad hands Costume: Apron over a plain housedress Continuity: Background domestic presence in the bungalow
+- Tom Buchanan: Sturdy straw-haired man, hard mouth, arrogant shining eyes Costume: Riding clothes: jodhpurs, glistening boots, thin coat Continuity: Stands shoulder-to-shoulder with Daisy in the doorway, then recedes in Nick's mind as a man depressed by a book
+- Daisy Buchanan: Slender young woman with soft bobbed hair, luminous face Costume: White summer dress Continuity: Joins Tom at the door, calls Nick back from the drive to press him about a Western engagement
+- Jordan Baker: Slender girl with erect cadet carriage, chin tipped up Costume: White summer dress Continuity: Reading aloud from a magazine; rises, announces bedtime, and exits up the stairs
+
+Page 6 summary: Seated in the rosy room, Nick relays Chicago gossip to Daisy whose thrilling voice draws him in; Tom interrupts to quiz Nick about his work and dismiss the firm; Jordan abruptly sits up, declines the cocktails just brought in, and Nick takes her in for the first time.
+
+Panels:
+
+Panel 1:
+Beat: Daisy leans toward Nick on the couch, her low thrilling voice drawing him in as she asks after Chicago.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Interior of the rosy Buchanan sitting room, late afternoon light filtered through pale curtains. Daisy on the long couch in a white summer dress, leaning toward Nick who is seated in a low armchair facing her. Her face luminous and sad-lovely, lips parted as if singing a confidence. Nick attentive, slight reserved smile, jacketed. keep faces, mouths, and hands clear of those zones. Muted Art Deco palette, dusky blues and faded gold.
+
+Panel 2:
+Beat: Nick teases Daisy with the mourning-wreath image of Chicago; she rhapsodizes and pivots irrelevantly to the baby.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Close two-shot: Daisy on the couch clapping her hands once in delight, eyes bright, head tilted; Nick across from her smiling faintly as he speaks. Behind them a wedge of the rosy room, a low table with a vase. Muted cream and dusky blue palette.
+
+Panel 3:
+Beat: Tom stops pacing, plants a hand on Nick's shoulder and quizzes him about his work, dismissing the firm.
+Shot: medium
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=12%
+- balloon_1: speech for Tom Buchanan, top_left, x=6%, y=20%, w=38%, h=16%
+- balloon_2: speech for Nick Carraway, top_right, x=56%, y=20%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom Buchanan: x 6%, y 20%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Nick Carraway: x 56%, y 20%, w 38%, h 16%. - Place Tom Buchanan body in x 6%, y 44%, w 40%, h 52%; face in x 20%, y 48%, w 10%, h 10%. - Place Nick Carraway body in x 54%, y 44%, w 40%, h 52%; face in x 69%, y 48%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Tom Buchanan: body x=6%, y=44%, w=40%, h=52%; face x=20%, y=48%, w=10%, h=10%
+- Nick Carraway: body x=54%, y=44%, w=40%, h=52%; face x=69%, y=48%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 12%. - Reserve empty speech box balloon_1 for Tom Buchanan: x 6%, y 20%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Nick Carraway: x 56%, y 20%, w 38%, h 16%. - Place Tom Buchanan body in x 6%, y 44%, w 40%, h 52%; face in x 20%, y 48%, w 10%, h 10%. - Place Nick Carraway body in x 54%, y 44%, w 40%, h 52%; face in x 69%, y 48%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Tom Buchanan in riding clothes and tall boots standing behind Nick's armchair, one heavy hand resting on Nick's shoulder, leaning slightly forward with hard mouth. Nick half-turned upward, mildly nettled. Soft late afternoon light from a French window at left; rosy room visible behind them. keep hands and faces clear. Muted palette with warm highlight on Nick.
+
+Panel 4:
+Beat: Jordan startles the room with 'Absolutely!', stands up cadet-straight, refuses the cocktails as Nick takes her in.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, bottom_center, x=6%, y=77%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 77%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide interior shot: Jordan Baker rising from the couch in one deft motion, slender body thrown backward at the shoulders like a young cadet, chin tipped up, expression bored and emphatic. A maid's tray of four cocktail glasses has just been set on a side table; Tom in mid-stride lifting one glass to drain it, looking at Jordan in disbelief. Daisy on the couch glancing over with a small smile. Nick at right edge watching Jordan with appraising curiosity. Pale curtains stirring behind. keep all figures' faces and the tray of glasses clear of letter zones. Muted Art Deco palette, soft warm window light.

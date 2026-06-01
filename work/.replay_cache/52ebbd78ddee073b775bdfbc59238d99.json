@@ -1,0 +1,51 @@
+{
+  "ts": "2026-05-11T14:16:39",
+  "key": "52ebbd78ddee073b775bdfbc59238d99",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "graphic_dialogue_draft",
+    "hash": "65f063daf96644293ad1d31380064eeb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"valid\": true,\n  \"notes\": [\n    \"Added source-backed balloons and trimmed a few captions for shareable panels without altering layout.\"\n  ],\n  \"pages\": [\n    {\n      \"page_number\": 1,\n      \"panels\": [\n        {\n          \"panel_number\": 2,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I sought the landlord for a room, and being told the house was full, I consented\u2014if the harpooneer were not decidedly objectionable\u2014to share a blanket rather than wander further on so bitter a night.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"You haint no objections to sharing a harpooneer\u2019s blanket, have ye?\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cyou haint no objections to sharing a harpooneer\u2019s blanket, have ye?\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 2,\n      \"panels\": [\n        {\n          \"panel_number\": 3,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I tried making up the bench, but knots, cold, and draughts defeated me.\",\n              \"caption_zone\": \"top_right\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"I\u2019ve changed my mind\u2014I shan\u2019t sleep with him. I\u2019ll try the bench.\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cI\u2019ve changed my mind about that harpooneer.\u2014I shan\u2019t sleep with him. I\u2019ll try the bench here.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 4,\n      \"panels\": [\n        {\n          \"panel_number\": 5,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Seeing it was Sunday and he\u2019d come to anchor elsewhere, I let the landlord lead me to the prodigious bed; I eyed the room and the harpooneer\u2019s outlandish gear, then turned in.\",\n              \"caption_zone\": \"top_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"Make yourself comfortable now, and good night to ye.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cthere, make yourself comfortable now, and good night to ye.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 5,\n      \"panels\": [\n        {\n          \"panel_number\": 7,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"He sprang into bed; I cried out; the landlord burst in with a light.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Queequeg\",\n              \"text\": \"Who-e debel you? You no speak-e\u2014dam-me, I kill-e!\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cWho-e debel you?\u2014you no speak-e, dam-me, I kill-e.\u201d\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Peter Coffin\",\n              \"text\": \"Don\u2019t be afraid now\u2014Queequeg won\u2019t harm a hair of your head.\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cDon\u2019t be afraid now\u2026 Queequeg here wouldn\u2019t harm a hair of your head.\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 8,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"He stashed the tomahawk-pipe; I turned in and slept soundly.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"thought\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Better sleep with a sober cannibal than a drunken Christian.\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cBetter sleep with a sober cannibal than a drunken Christian.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 6,\n      \"panels\": [\n        {\n          \"panel_number\": 2,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I wriggled free, rolled, felt a scratch, and threw back the quilt to find his tomahawk-pipe.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Queequeg! In the name of goodness, wake!\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cQueequeg!\u2014in the name of goodness, Queequeg, wake!\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 8,\n      \"panels\": [\n        {\n          \"panel_number\": 6,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"He complied, then washed only his chest, arms, and hands.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Ishmael\",\n              \"text\": \"Get into your pantaloons as soon as possible.\",\n              \"balloon_zone\": \"top_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\u201cI begged him\u2026 to accelerate his toilet\u2026 particularly to get into his pantaloons as soon as possible.\u201d\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "input_tokens": 22726,
+    "output_tokens": 8517,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 93.89346575737,
+    "stop_reason": "stop"
+  }
+}

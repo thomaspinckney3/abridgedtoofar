@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:19:13",
+  "key": "d69b86acf6a9ff8a7f051cf3efed7f2a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter's draft carefully, applying the gate test and checking against the seven structural failure classes.\n\n---\n\n**Ch 074 draft review**\n\nThe draft compresses cleanly. Stubb's exclamation about \"the long-togged scaramouch the Town-Ho's company told us of\" loses its explanatory bridge sentence (\"Stubb here alluded to a strange story told of the Jeroboam, and a certain man among her crew, some time previous when the Pequod spoke the Town-Ho\"), but \"His story was this\" follows immediately and the reader can track it. The Gabriel narrative, the letter scene, and the closing action all parse. No structural failures detected here.\n\n---\n\n**Ch 076 draft review**\n\n**Candidate 1: The Stubb/Flask dialogue compression and the \"I never look at Fedallah\" splice.**\n\nIn the source, Stubb first says \"Sink him! I never look at him at all; but if ever I get a chance of a dark night\u2026look down there, Flask\" (threatening to throw Fedallah overboard). Then much later, after more dialogue, he says \"I take that Fedallah to be the devil in disguise.\" The draft merges these into a single speech: \"Sink him! I take that Fedallah to be the devil in disguise\u2026Blast him!\u2014now that I think of it, he's always wanting oakum\u2026But I never look at Fedallah at all; if ever I get a chance of a dark night\u2026look down there, Flask\u2014Aye, will I!\" This is structurally awkward but still parseable \u2014 the reader isn't misled, just reading a re-ordered version.\n\n**Candidate 2: \"But Stubb, you boasted of giving Fedallah a sea-toss\"**\n\nIn the source, Flask raises this (\"I thought you a little boasted just now, that you meant to give Fedallah a sea-toss\") *after* Stubb has explicitly said \"if ever I get a chance of a dark night, and he standing hard by the bulwarks\u2026look down there, Flask\u2014Aye, will I!\" \u2014 i.e., the boast. In the draft, that threatening line is present (\"if ever I get a chance of a dark night\u2026look down there, Flask\u2014Aye, will I!\") so Flask's follow-up \"you boasted of giving Fedallah a sea-toss\" has an antecedent in the draft. This parses.\n\n**Candidate 3: \"Pooh, Stubb, you are skylarking.\"**\n\nIn the source Flask says \"Pooh! Stubb, you are skylarking; how can Fedallah do that?\" \u2014 the \"that\" referring to Fedallah making Ahab swap his soul for Moby Dick. The draft cuts \"how can Fedallah do that?\" and has just \"Pooh, Stubb, you are skylarking.\" Stubb then launches into the anecdote about the devil and the governor. The truncation drops the question, but Stubb's response doesn't answer a question in the draft \u2014 he just continues his monologue. No broken pivot; the speech still parses.\n\n**Candidate 4: Locke/Kant passage**\n\n\"So, when on one side you hoist in Locke's head, you go over that way; but now, on the other side, hoist in Kant's and you come back again; but in very poor plight.\" This is a philosophical digression that appears without its source gloss (\"some minds for ever keep trimming boat\" follows, which is the gloss). In the draft both sentences survive together. Parses fine.\n\n**Candidate 5: \"gamboge ghost of a Fedallah\"**\n\nFlask calls Fedallah \"that gamboge ghost of a Fedallah\" \u2014 this is a colorful descriptor, not a missing gloss; Fedallah has been established as a character earlier in the novel and is named here. Not a finding.\n\n**Candidate 6: The broken-pivot candidate \u2014 \"But I never look at Fedallah at all; if ever I get a chance of a dark night\u2026\"**\n\nIn the source this line comes *before* the soul-bargain explanation and is separated from it. In the draft it appears *after* \"I'll eat this whale in one mouthful\" as a continuation of the same speech, creating a non-sequitur mid-speech. A reader might be confused: Stubb has just said he doesn't look at Fedallah at all, yet has been describing him in elaborate detail. However, this is character inconsistency/compression artifact \u2014 not a structural parsing failure; the sentence has a clear main clause and clear referent. Not a valid finding.\n\n**Candidate 7: \"That gamboge ghost of a Fedallah\" \u2014 is \"tusk of his\" parseable?**\n\nFlask says: \"Did you ever notice how that tusk of his is a sort of carved into a snake's head?\" The \"tusk\" here refers to a physical feature of Fedallah that was described in the source chapters but the draft does not establish what this \"tusk\" is anywhere in the draft chapters provided. Let me check the authorized cuts \u2014 the Fedallah \"tusk\" description comes from source ch 076 itself, not from an earlier chapter, and it is not in the draft. The reader has no referent in the draft for \"that tusk of his.\" This is a genuine missing-gloss / dangling reference: \"that tusk of his\" uses a definite determiner pointing to something specific about Fedallah that no preceding draft text has identified.\n\nThis passes the gate test: a reader with no source access would genuinely wonder what \"tusk\" Flask is referring to. Fedallah has appeared in the novel before but no prior draft chapter has mentioned a tusk. This is a real finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Did you ever notice how that tusk of his is a sort of carved into a snake's head?\",\n    \"source_has\": \"Source ch 076 has the same line, but nowhere in the draft of ch 076 or any preceding draft chapter is Fedallah described as having a 'tusk'; the definite 'that tusk of his' presupposes a physical feature of Fedallah that has been established for the reader, yet no such establishment survives in the draft.\",\n    \"gate_test_answer\": \"A reader with no source access is genuinely confused: 'that tusk of his' uses a definite determiner pointing to a specific anatomical or prosthetic feature of Fedallah that no sentence in the draft has ever mentioned, leaving the reader unable to picture what Flask is referring to or why it resembles a snake's head.\"\n  }\n]\n```",
+    "input_tokens": 12226,
+    "output_tokens": 1592,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 34.50559377670288,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T15:52:28",
+  "key": "c13f5dc611c7cbf859e2c4392255ef96",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f8998d99a396a8470a1b715024aa3d15",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to every candidate before flagging it.\n\n---\n\n**Ch 003 candidates:**\n\n**\"I don't believe it.\" / \"Why not?\" / \"I don't know,\" she insisted\u2026**\n\nIn the source, Jordan says \"However, I don't believe it.\" Nick then asks \"Why not?\" \u2014 this is Jordan's line. In the draft the exchange reads:\n\n> \"Well, he told me once he was an Oxford man.\"\n> \"I don't believe it.\"\n> \"Why not?\"\n> \"I don't know,\" she insisted\u2026\n\nIn the source the \"I don't believe it\" is Jordan's line; Nick says \"Why not?\"; Jordan replies \"I don't know.\" In the draft, \"I don't believe it\" reads as Nick's line (he just heard it from Jordan and is responding), making Jordan's \"I don't know\" an answer to Nick's skepticism rather than her own. The attribution is internally consistent in the draft \u2014 a reader can follow it as a valid exchange \u2014 but the *speaker* of \"I don't believe it\" has silently changed from Jordan to Nick, which actually changes the meaning: in the source Nick is surprised by Jordan's doubt; in the draft Nick voices the doubt himself and Jordan defends it. This is a genuine speaker-attribution shift. However: the draft still parses as a coherent dialogue exchange. A reader would understand that Nick or Jordan disbelieves it. The meaning is altered but is the reader *confused or misled*? Slightly misled about who is skeptical, but the subsequent \"I don't know, she insisted\" makes Jordan's stance clear. Borderline \u2014 let me hold this.\n\n**\"I don't believe it\" attribution \u2014 gate test:** A reader without the source reads Nick as the skeptic, Jordan as the uncertain one defending her doubt. In the source, *Jordan* is the skeptic and Nick is mildly surprised. This is a genuine meaning reversal (who doubts Gatsby's Oxford claim), not merely an ornamental difference. A competent reader would be misled about the conversational dynamic. This qualifies as unattributed dialogue \u2014 the speaker tag was lost in compression. **Valid.**\n\n**\"As I walked down the steps I saw that the evening was not quite over; but I turned away and cut across the lawn toward home.\"**\n\nSource has: the car-in-the-ditch scene (Owl Eyes) between \"not quite over\" and cutting across the lawn. The draft cuts the Owl Eyes scene (authorized removal) and joins the two clauses directly. The \"but\" pivot now reads: the evening was not quite over, *but* I turned away. In the source the \"but\" is *Nick's* exit from the ditch scene. In the draft the \"but\" contrasts with nothing \u2014 what is \"not quite over\" is never shown; Nick simply notes it and leaves. The sentence is parseable but the logical pivot (\"not quite over\" \u2192 \"but I turned away\") is a broken contrast whose first term (the ditch scene) was cut. However \u2014 this is a *direct residue of an authorized cut* (Owl Eyes/car-in-the-ditch). Per the rules: \"Dangling references\u2026 that are direct residues of these authorized cuts\u2026 are EXPECTED and NOT findings.\" **Not valid.**\n\n**Ch 004 candidates:**\n\n**\"This is a nice restaurant here,\" said Mr. Wolfshiem\u2026 \"But I like across the street better! Hot and small\u2014yes, but full of memories.\"**\n\nIn the source, Wolfshiem says \"But I like across the street better!\" then Gatsby says \"It's too hot over there\" then Wolfshiem replies \"Hot and small\u2014yes, but full of memories.\" In the draft these are collapsed into one Wolfshiem speech: \"But I like across the street better! Hot and small\u2014yes, but full of memories.\" Wolfshiem's \"Hot and small\u2014yes\" is a concession to Gatsby's interjected objection, which has been cut. Without Gatsby's \"It's too hot over there,\" Wolfshiem's \"Hot and small\u2014yes\" is a concession to nothing \u2014 he is agreeing with an objection that no one in the draft has made.\n\nGate test: A reader sees Wolfshiem volunteer that the place across the street is hot and small \u2014 then immediately say it's \"full of memories.\" The \"yes\" reads as a strange self-concession mid-sentence, answering a question nobody asked. A competent reader would find this genuinely odd \u2014 Wolfshiem seems to be arguing with himself. This is a broken pivot where one side of the exchange was cut. **Valid.**\n\n**\"\u2014So I took one look at him,\" said Mr. Wolfshiem\u2026 \"and what do you think I did?\" / \"What?\" I inquired politely. / But evidently he was not addressing me\u2026 / Gatsby took an arm of each of us\u2026**\n\nIn the source, Wolfshiem then tells the Katspaugh/Rosy Rosenthal story before they move to the table. In the draft that story is cut (authorized: Rosy Rosenthal reminiscence). After \"But evidently he was not addressing me,\" Gatsby immediately takes them to the table and Wolfshiem \"swallowed a new sentence.\" The setup (Wolfshiem begins a story, addressed to Gatsby not Nick) followed by no payoff, then abrupt movement to the table \u2014 this is a residue of the authorized Rosy Rosenthal cut. **Not valid per authorized cut rules.**\n\n**\"Then it had not been merely the stars to which he had aspired on that June night.\"**\n\nThe source has this sentence after Jordan reveals Gatsby bought the house to be across the bay from Daisy. The phrase \"the stars to which he had aspired on that June night\" refers back to the green-light/star-gazing scene established in Ch 001 (source), where Nick sees Gatsby reaching toward the green light. The draft Ch 003 does not cut the Ch 001 green light scene (that scene is not in scope here), and both source and draft Ch 004 contain this sentence. The antecedent (\"that June night\" of aspiring toward stars) derives from Ch 001, which is outside this pair. The question is whether the draft Ch 003 or Ch 004 dropped something that established \"the stars\" / \"that June night.\" Neither chapter in scope establishes this \u2014 it carries forward from Ch 001. Not a seam created by these chapters' compression. **Not valid.**\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"3\",\n    \"draft_passage\": \"\\\"Well, he told me once he was an Oxford man.\\\"\\n\\\"I don't believe it.\\\"\\n\\\"Why not?\\\"\\n\\\"I don't know,\\\" she insisted, \\\"I just don't think he went there.\\\"\",\n    \"source_has\": \"Jordan says 'Well, he told me once he was an Oxford man.' Nick asks 'Why not?' only after Jordan herself says 'However, I don't believe it.' In the source Jordan is the skeptic; the draft reassigns 'I don't believe it' to Nick, inverting who doubts Gatsby's Oxford claim.\",\n    \"gate_test_answer\": \"A reader is genuinely misled: the draft makes Nick the doubter and Jordan the uncertain defender, whereas the source makes Jordan the doubter and Nick the curious questioner \u2014 a meaningful reversal of which character distrusts Gatsby's story.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"4\",\n    \"draft_passage\": \"\\\"But I like across the street better! Hot and small\u2014yes, but full of memories.\\\"\",\n    \"source_has\": \"Wolfshiem says 'But I like across the street better!' then Gatsby interjects 'It's too hot over there,' and only then Wolfshiem concedes 'Hot and small\u2014yes, but full of memories.' The 'yes' is a direct reply to Gatsby's objection.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: Wolfshiem volunteers that the rival restaurant is 'hot and small' and immediately concedes the point with 'yes' \u2014 appearing to argue with himself \u2014 because Gatsby's intervening objection, which the concession answers, has been cut.\"\n  }\n]\n```",
+    "input_tokens": 29299,
+    "output_tokens": 1926,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 43.975656032562256,
+    "stop_reason": "end_turn"
+  }
+}

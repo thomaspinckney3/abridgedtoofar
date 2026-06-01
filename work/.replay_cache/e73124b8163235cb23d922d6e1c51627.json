@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:13:05",
+  "key": "e73124b8163235cb23d922d6e1c51627",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both drafts carefully, applying each test and the gate test, being alert to authorized cuts.\n\n**Ch 012 draft, paragraph beginning \"They began in June, 1862...\"**\n\nThe subject \"They\" opens this paragraph with no grammatical antecedent in the draft. The preceding sentence reads: \"The private secretary alone sought education.\" The source sentence before this was: \"To the end of his life he labored over the lessons then taught. Never was demonstration more tangled... the stages of demonstration were clear. They began in June, 1862...\" \u2014 so \"They\" referred to \"the stages of demonstration.\" The draft cut the framing sentence (\"the stages of demonstration were clear\") and kept only \"They began in June, 1862...\" The pronoun \"They\" now has no antecedent in the draft; the nearest candidates are \"teachers\" or \"professors\" from the prior sentence, which would mislead the reader into thinking Palmerston et al. began something in June 1862, rather than that the stages of diplomatic demonstration began then.\n\nGate test: A reader genuinely cannot parse who or what \"They\" refers to \u2014 the prior sentence names a list of tutors/professors, making \"They\" read as those men beginning some action, which is not the intended meaning.\n\n**Ch 012 draft, \"Palmerston's answer, dated September 23, reversed the parts:\"**\n\nIn the source this is introduced as: \"The roles were reversed. Russell wrote what was expected from Palmerston, or even more violently; while Palmerston wrote what was expected from Russell, or even more temperately.\" The draft cuts the explanatory framing and substitutes \"reversed the parts\" \u2014 this is a compressed version but still parseable. Not a finding.\n\n**Ch 012 draft, \"This lesson was quite upset by the sudden rush of a new actor upon the stage with a rhapsody that made Russell seem sane.\"**\n\nIn the source: \"This healthy lesson would have been worth much for practical education, but it was quite upset by the sudden rush...\" The draft omits \"This healthy lesson would have been worth much for practical education, but it was quite upset...\" and instead says \"This lesson was quite upset...\" The \"but\" pivot is removed but the sentence still parses and conveys the sense. The referent \"this lesson\" \u2014 in the draft the preceding sentence says \"any man of common sense would have told him to stop worrying over phantoms\" \u2014 is workable enough. Not a structural failure.\n\n**Ch 013 draft, \"The law officers rejoined that this would be a violation of neutrality; one must preserve the status quo.\"**\n\nIn the source: \"Bethell rejoined that this would be a violation of neutrality.\" Bethell (Lord Westbury) is an authorized minor-character removal. The draft replaces him with \"The law officers\" \u2014 a competent reader can follow this. Not a finding.\n\n```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"12\",\n    \"draft_passage\": \"They began in June, 1862, after the escape of one rebel cruiser, by the remonstrances of the Minister against the escape of \\\"No. 290,\\\" which was imminent.\",\n    \"source_has\": \"Never was demonstration more tangled... Yet the stages of demonstration were clear. They began in June, 1862, after the escape of one rebel cruiser...\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the nearest antecedent for 'They' in the draft is the list of tutors/professors named in the preceding sentence, making the sentence read as though Palmerston, Russell, and the others began remonstrances in June 1862, which is the opposite of the intended meaning \u2014 it was the stages of Adams's diplomatic education that began then.\"\n  }\n]\n```",
+    "input_tokens": 30720,
+    "output_tokens": 869,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 21.376657009124756,
+    "stop_reason": "end_turn"
+  }
+}

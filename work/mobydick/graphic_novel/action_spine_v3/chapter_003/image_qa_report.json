@@ -1,0 +1,226 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Caption zone at top_left is occupied by a bright oil lamp and stair newel, leaving no clean negative space for lettering.",
+          "visible_evidence": "In the top-left corner, a glass oil lamp mounted on the stair newel glows against textured wall and banister details.",
+          "repair_prompt": "Clear the top-left quadrant of busy elements and bright highlights: remove or relocate the lamp and stair newel from that area, keep the upper wall as plain dim plaster, and preserve a calm, low-contrast space for the caption while maintaining overall dim, uneven lamplight from elsewhere."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "A glass oil lamp is shown instead of the specified plain tallow candle in a small holder.",
+          "visible_evidence": "Left side of the frame shows a tall glass-chimney oil lamp fixed to the stair post; no candle is visible.",
+          "repair_prompt": "Replace the oil lamp with a plain tallow candle in a small brass or tin holder placed within the scene; keep the flame modest and avoid any readable markings."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot is profile/side-on rather than the specified medium-wide over-shoulder of Ishmael toward the painting.",
+          "visible_evidence": "Ishmael is seen in right-profile facing the painting; the viewpoint is not from behind his shoulder.",
+          "repair_prompt": "Recompose to a medium-wide over-the-shoulder view from behind Ishmael, aimed at the smoke-dark painting; keep his far hand holding the opened small back window."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Candle specified in storyboard is depicted as a glass oil lamp.",
+          "visible_evidence": "On the bar at left sits a glass-chimney oil lamp; no plain tallow candle or small brass/tin holder is visible.",
+          "repair_prompt": "Replace the oil lamp on the bar with a plain tallow candle in a small brass or tin holder; keep the flame modest and remove any glass chimney."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Ishmael’s bag appears as a shoulder-strap duffel rather than a rope-cinched sea-bag.",
+          "visible_evidence": "Over Ishmael’s shoulder hangs a soft brown bag with a sewn-on shoulder strap and no visible knotted cords.",
+          "repair_prompt": "Swap the shoulder-strap duffel for a large weathered canvas sea-bag that is soft-sided and cinched with rope and knotted cords; omit the strap."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "character_continuity",
+          "finding": "Peter Coffin lacks the specified tied-back hair or cap.",
+          "visible_evidence": "In the left background, the landlord planing wood has a bare, balding head with no cap or tied-back hair.",
+          "repair_prompt": "Add a simple cap or tie the landlord’s hair back in a short queue while keeping his waistcoat and rolled-up sleeves; retain his planing pose and background placement."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Optional supporting visual of a central iron stove is absent.",
+          "visible_evidence": "The room shows the bench, window, door, candle, and workbench, but no iron stove is visible.",
+          "repair_prompt": "Introduce a small central iron stove in the midground without blocking Ishmael or crowding the top-right caption area."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "unsupported_content",
+          "finding": "A full bedstead with rumpled blankets appears in the background, implying a sleeping room rather than the bar-room specified for this scene.",
+          "visible_evidence": "Left background shows a wooden bed frame with pillows and blankets beside a window.",
+          "repair_prompt": "Remove the bed and any bedroom cues; replace that area with bar-room elements (plain wall, shadowed corner, bench or cask) while keeping the wall clock in shadow and the single candle on the counter."
+        },
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "The bottom-left area reserved for the caption is occupied by Ishmael’s dark coat and table edge, offering little clean negative space for lettering.",
+          "visible_evidence": "Bottom-left quadrant is filled by textured coat and shadowed counter, with no open background patch.",
+          "repair_prompt": "Shift the characters slightly right or vignette/darken and simplify the bottom-left to create a clear, low-contrast space for the caption."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "A large toothed jawbone mounted on the shelf becomes a prominent, unscripted prop that distracts from the dialogue beat.",
+          "visible_evidence": "Top-right shelf displays a long curved bone with many teeth over the landlord’s head.",
+          "repair_prompt": "Remove or downplay the jawbone; keep shelves with nondescript bottles or wooden bric-a-brac that do not draw focus."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Top-center caption zone is occupied by a mirror and a burning candle on the mantel, leaving no clean negative space for lettering.",
+          "visible_evidence": "In the upper center of the frame above the fireplace, a framed mirror and a lit candle sit directly where the caption should go.",
+          "repair_prompt": "Reserve clean negative space in the top-center third: remove or lower the mirror and bottle from above the mantel, relocate the candle away from the top-center, and leave a plain wall area for the caption."
+        },
+        {
+          "severity": "major",
+          "category": "primary_action",
+          "finding": "The landlord is not carrying the candle while backing toward the door as specified.",
+          "visible_evidence": "The landlord stands at the open door empty-handed; the lit candle rests on the mantel.",
+          "repair_prompt": "Have the landlord hold a plain tallow candle in a small brass/tin holder as he backs toward the open door; remove the candle from the mantel."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The prodigious bed is depicted with decorative ball finials and looks neatly made, conflicting with the plain, utilitarian, heavily rumpled bedstead specified.",
+          "visible_evidence": "Bedposts with round finials and a smooth, neatly tucked blanket are clearly visible.",
+          "repair_prompt": "Swap the bed for a very large, plain wooden bedstead with no finials; add heavy, rumpled blankets to emphasize its utilitarian inn character."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The harpoon leans diagonally rather than standing upright at the bed’s head.",
+          "visible_evidence": "Harpoon rests at an angle against the headboard near the pillow.",
+          "repair_prompt": "Reposition the harpoon to stand upright and vertical at the bed’s head, kept as a background prop."
+        }
+      ]
+    },
+    {
+      "frame_number": 6,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The New Zealand preserved head appears life-sized and naturalistic rather than a small, lacquer-dark shrunken head.",
+          "visible_evidence": "A full-size human head with natural proportions and hair protrudes from the open sea-bag on the floor by the hearth.",
+          "repair_prompt": "Redesign the preserved head as a small shrunken, lacquer-dark mokomokai with closed features; reduce its scale relative to the bag and desaturate to a dark, glossy brown. Avoid any fresh or gory detailing."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Garment on the chair is the shaggy poncho-like cloak with quill-like tags, not the heavy grego specified for this frame.",
+          "visible_evidence": "Right side chair holds a thick, shaggy mat-like cloak edged with dangling white quill/teeth tags.",
+          "repair_prompt": "Replace the garment on the chair with a bulky, dark grego overcoat with deep pockets and a worn, sea-scuffed look. If the shaggy poncho is kept, move it off-frame or hang it elsewhere so the chair shows the grego."
+        },
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-right caption zone is cluttered, leaving no clean space for lettering.",
+          "visible_evidence": "The bottom-right quadrant contains a sea chest topped with the tomahawk-pipe, wallet, and a brass cup, filling the area.",
+          "repair_prompt": "Clear negative space in the bottom-right by moving or cropping away the sea chest and small objects; keep that corner as plain floor or wall with low texture."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Expected plain tallow candle is not visible.",
+          "visible_evidence": "No candle or holder is seen on the mantel, bedside, or table; only a small brass cup appears on the chest.",
+          "repair_prompt": "Add a plain tallow candle in a small brass or tin holder on the mantel or a nearby surface; keep the flame modest and include no readable labels."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The wooden idol lacks the described hunch-backed form.",
+          "visible_evidence": "A straight, upright figurine stands between the andirons without a noticeable hunch-backed silhouette.",
+          "repair_prompt": "Refine the idol into a small, polished, hunch-backed ebony-like figure while keeping it carved and inanimate between the andirons."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Top-right caption zone is occupied and visually busy.",
+          "visible_evidence": "The landlord stands in the doorway at the top-right holding a lit candle; the door frame and bright flame fill the corner, leaving no clean negative space.",
+          "repair_prompt": "Recompose to reserve a clear, quiet area in the top-right for caption lettering: shift the landlord leftward into the doorway opening, lower the candle, and simplify the upper-right wall to a dim, uncluttered surface with soft vignette; avoid bright highlights or detailed textures in that corner."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Queequeg’s tomahawk-pipe is rendered as a regular curved pipe, not the hatchet-shaped tomahawk-pipe specified.",
+          "visible_evidence": "The pipe in Queequeg’s mouth has a small bowl and curved stem with no hatchet head or handle profile.",
+          "repair_prompt": "Replace the pipe with a clearly hatchet-shaped tomahawk-pipe: a small bowl integrated at the axe head, a straight handle as the mouthpiece, clenched between Queequeg’s teeth and angled safely away from Ishmael; keep a small ember, thin smoke, and a few ash flecks on the blanket; do not depict it as a weapon swing."
+        }
+      ]
+    },
+    {
+      "frame_number": 8,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The prodigious bed is depicted with ornate ball finials, contradicting the requirement for a plain, utilitarian inn bed with no ornate finials.",
+          "visible_evidence": "Rounded ball finials are clearly visible atop both headboard posts.",
+          "repair_prompt": "Redesign the bedstead as a plain, heavy, utilitarian frame without any finials or decorative posts; keep the large size and rumpled blankets."
+        },
+        {
+          "severity": "major",
+          "category": "character_continuity",
+          "finding": "Queequeg’s tattoos are rendered as curving Polynesian-style motifs rather than the specified dark square patterns.",
+          "visible_evidence": "On his arm, shoulder, and face, the tattoo lines are predominantly curved and flowing, not square or grid-like.",
+          "repair_prompt": "Redraw Queequeg’s tattoos across face, torso, and limbs as dark, squared, lattice-like patterns; retain his scalp-knot, build, and overall look."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael appears awake with eyes open rather than visibly settling to sleep.",
+          "visible_evidence": "Ishmael is looking toward Queequeg with eyes open and hands poised above the blanket.",
+          "repair_prompt": "Adjust Ishmael’s expression and posture to drowsy or eyes closing, with relaxed hands under or resting softly on the covers."
+        }
+      ]
+    }
+  ],
+  "valid": false
+}

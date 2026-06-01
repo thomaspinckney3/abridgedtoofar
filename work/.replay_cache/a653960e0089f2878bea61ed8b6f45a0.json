@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T10:53:50",
+  "key": "a653960e0089f2878bea61ed8b6f45a0",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"In June, at the crisis of interest, the Camerons came over, and took the fine old house of Surrenden Dering in Kent, which they made a sort of country house to the Embassy.\",\n    \"source_has\": \"In June, at the crisis of interest, the Camerons came over, and took the fine old house of Surrenden Dering in Kent which they made a sort of country house to the Embassy.\",\n    \"gate_test_answer\": \"A reader is genuinely left wondering who \u201cthe Camerons\u201d are or why they matter to the Embassy; the sentence introduces a proper name with no role or relationship, creating real confusion about their identity.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Vaguely seeking a clue, he wandered through the art exhibit, and stopped almost every day before St. Gaudens's General Sherman. Once St. Gaudens took him down to Amiens to see the cathedral.\",\n    \"source_has\": \"St. Gaudens himself was in Paris, putting on the work his usual interminable last touches, and listening to the usual contradictory suggestions of brother sculptors... This summer his health was poor and his spirits were low... he risked going now and then to the studio on Mont Parnasse... and in return St. Gaudens sometimes let Adams go about in his company. Once St. Gaudens took him down to Amiens, with a party of Frenchmen, to see the cathedral.\",\n    \"gate_test_answer\": \"A reader unfamiliar with the name is abruptly dropped into a personal outing with \u201cSt. Gaudens\u201d without being told he is the sculptor of the Sherman monument or an acquaintance of Adams, causing real disorientation about who he is and why he\u2019s with Adams.\"\n  }\n]",
+    "input_tokens": 22064,
+    "output_tokens": 8369,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 88.99167490005493,
+    "stop_reason": "stop"
+  }
+}

@@ -13,7 +13,7 @@ from pathlib import Path
 
 from .artifacts import Book, read_json, segment_source_path, write_json, write_text
 from .chapter_split import split_to_disk
-from .llm import complete
+from .llm import LLMResponse, complete
 from .motif_ledger import read_ledger, rebuild_ledger
 from .prompts import load_prompt
 from .text_norm import fuzzy_contains
@@ -30,6 +30,28 @@ class DraftResult:
     signature_hits: int
     signature_misses: list[dict]  # each has {hint, score, ambiguous}
     message: str = ""
+
+
+@dataclass
+class DraftLLMRequest:
+    request_id: str
+    prompt_name: str
+    prompt: str
+    cached_prompt: str | None
+    model: str
+    active_model: str
+    system: str | None
+    max_tokens: int
+    temperature: float | None
+    cache: bool
+    thinking: str | None
+    stage: str
+
+
+@dataclass
+class DraftGroupBuild:
+    request: DraftLLMRequest
+    members: list[dict]
 
 
 def ensure_chapters(book: Book) -> dict:
@@ -86,45 +108,90 @@ def _recent_drafts(book: Book, plan: dict, segment_id: str,
     return list(reversed(out))  # oldest first
 
 
-def _disk_draft_result(seg_dir: Path, segment: dict) -> DraftResult:
-    """Synthesize a DraftResult by reading a segment's on-disk draft. Used
-    when another member of the same merged group already did the LLM work.
-    """
-    path = seg_dir / f"{segment['id']}.md"
-    text = path.read_text() if path.exists() else ""
-    words = len(text.split())
-    return DraftResult(
-        segment_id=segment["id"], title=segment.get("title", ""),
-        status="drafted" if words > 0 else "error",
-        source_words=segment.get("source_word_count", 0),
-        target_words=segment.get("target_word_count", 0),
-        draft_words=words, signature_hits=0, signature_misses=[],
-        message="drafted via merged group",
-    )
+def _draft_runtime_options(prompt, default_model: str) -> tuple[str, str | None, int]:
+    active_model = (os.environ.get("FORAGE_DRAFT_MODEL")
+                    or os.environ.get("FORAGE_MODEL")
+                    or default_model)
+    thinking = os.environ.get("FORAGE_DRAFT_THINKING")
+    if thinking == "":
+        thinking = None
+    if thinking is None:
+        thinking = "max" if "opus" in active_model.lower() else None
+    max_out = max(prompt.config.get("max_tokens", 16000), 128000) if thinking \
+              else prompt.config.get("max_tokens", 32000)
+    return active_model, thinking, max_out
 
 
-def _draft_group(book: Book, plan: dict, group_id: str) -> None:
-    """Draft all segments in a merged group with one LLM call, then split
-    the output into per-member segments/<id>.md files.
-    """
-    import re as _re
+def _draft_fallback_model(active_model: str) -> str:
+    configured = os.environ.get("FORAGE_DRAFT_FALLBACK_MODEL")
+    if configured:
+        return configured
+    if active_model.startswith("anthropic:"):
+        return "openai:gpt-5"
+    return "anthropic:claude-sonnet-4-6"
+
+
+def _complete_draft_with_exception_fallback(
+    *,
+    book: Book,
+    prompt: str,
+    cached_prompt: str | None,
+    model: str,
+    active_model: str,
+    system: str | None,
+    max_tokens: int,
+    temperature: float | None,
+    cache: bool,
+    thinking: str | None,
+    stage: str,
+    fallback_stage: str,
+) -> LLMResponse:
+    try:
+        return complete(
+            prompt=prompt,
+            cached_prompt=cached_prompt,
+            model=model,
+            system=system,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            cache=cache,
+            thinking=thinking,
+            work_dir=book.work_dir,
+            stage=stage,
+        )
+    except Exception as e:
+        import sys as _sys
+        fallback_model = _draft_fallback_model(active_model)
+        fb_thinking = "max" if "opus" in fallback_model.lower() else None
+        fb_max = 128000 if fb_thinking else max_tokens
+        print(f"[drafter] {stage}: {type(e).__name__} from {active_model}; "
+              f"retrying on {fallback_model}",
+              file=_sys.stderr, flush=True)
+        return complete(
+            prompt=prompt,
+            cached_prompt=cached_prompt,
+            model=fallback_model,
+            system=system,
+            max_tokens=fb_max,
+            temperature=temperature,
+            cache=cache,
+            thinking=fb_thinking,
+            work_dir=book.work_dir,
+            stage=fallback_stage,
+        )
+
+
+def build_draft_group_request(book: Book, plan: dict, group_id: str) -> DraftGroupBuild:
     groups = plan.get("merged_groups") or {}
     group = groups[group_id]
     member_ids = group["member_ids"]
     members = [next(s for s in plan["segments"] if s["id"] == mid)
                for mid in member_ids]
 
-    seg_dir = book.work_dir / "segments"
-    seg_dir.mkdir(parents=True, exist_ok=True)
-
-    # Build merged source with per-sub-chapter headers the model can mirror
-    # in its output.
     source_blocks: list[str] = []
-    sources: list[str] = []
     for i, m in enumerate(members, 1):
         src_path = book.work_dir / "chapters" / f"{m['id']}.md"
         src = src_path.read_text() if src_path.exists() else ""
-        sources.append(src)
         title = m.get("title") or f"Chapter {m.get('number') or i}"
         source_blocks.append(
             f"## Sub-chapter {i} — {title}\n"
@@ -150,9 +217,6 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     prompt = load_prompt("draft_lean")
     cuts_path = book.work_dir / "cuts.json"
     cuts = read_json(cuts_path) if cuts_path.exists() else None
-    # Extract relocated kernels whose target is a member of this group —
-    # the drafter must preserve them verbatim/near-verbatim because they
-    # carry plot beats from chapters that were elided wholesale.
     member_id_set = set(member_ids)
     kernels = []
     if cuts:
@@ -182,43 +246,188 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     )
 
     default_model = prompt.config.get("model", "openai:gpt-5")
-    active_model = (os.environ.get("FORAGE_DRAFT_MODEL")
-                    or os.environ.get("FORAGE_MODEL")
-                    or default_model)
-    thinking = "max" if "opus" in active_model.lower() else None
-    # Extended thinking + multi-chapter merge-group output can consume >64k
-    # tokens (thinking budget + visible output share max_tokens). Pre-Opus
-    # default was 64k, but Melville-scale merge groups (6-10 short chapters)
-    # truncated at that ceiling. 128k gives thinking room while leaving plenty
-    # of visible-output budget.
-    max_out = max(prompt.config.get("max_tokens", 16000), 128000) if thinking \
-              else prompt.config.get("max_tokens", 32000)
-
-    resp = complete(
-        prompt=body, cached_prompt=cached,
-        model=default_model, system=prompt.system,
+    active_model, thinking, max_out = _draft_runtime_options(prompt, default_model)
+    request = DraftLLMRequest(
+        request_id=group_id,
+        prompt_name="draft_lean",
+        prompt=body,
+        cached_prompt=cached,
+        model=default_model,
+        active_model=active_model,
+        system=prompt.system,
         max_tokens=max_out,
         temperature=prompt.config.get("temperature"),
-        cache=not cached, thinking=thinking,
-        work_dir=book.work_dir,
+        cache=not cached,
+        thinking=thinking,
         stage=f"draft:{book.book_id}:{group_id}",
+    )
+    return DraftGroupBuild(request=request, members=members)
+
+
+def _disk_draft_result(seg_dir: Path, segment: dict) -> DraftResult:
+    """Synthesize a DraftResult by reading a segment's on-disk draft. Used
+    when another member of the same merged group already did the LLM work.
+    """
+    path = seg_dir / f"{segment['id']}.md"
+    text = path.read_text() if path.exists() else ""
+    words = len(text.split())
+    return DraftResult(
+        segment_id=segment["id"], title=segment.get("title", ""),
+        status="drafted" if words > 0 else "error",
+        source_words=segment.get("source_word_count", 0),
+        target_words=segment.get("target_word_count", 0),
+        draft_words=words, signature_hits=0, signature_misses=[],
+        message="drafted via merged group",
+    )
+
+
+def build_draft_segment_request(
+    book: Book,
+    plan: dict,
+    segment_id: str,
+    segment_source: str,
+    source_words: int,
+    *,
+    critic_feedback: list[dict] | None = None,
+    previous_draft: str | None = None,
+) -> DraftLLMRequest:
+    segment = next((s for s in plan["segments"] if s["id"] == segment_id), None)
+    if segment is None:
+        raise ValueError(f"no segment {segment_id!r} in plan")
+
+    is_lean = plan.get("_meta", {}).get("builder") == "lean_plan"
+    prompt_name = "draft_lean" if is_lean else "draft_segment"
+    prompt = load_prompt(prompt_name)
+
+    if is_lean:
+        spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
+        spec_text = spec_path.read_text() if spec_path.exists() else ""
+        target = int(segment.get("target_word_count", 0) or 0)
+        ceiling = int(round(target * 1.2)) if target else 0
+        cuts_path = book.work_dir / "cuts.json"
+        cuts = (read_json(cuts_path) if cuts_path.exists() else None)
+        kernels = []
+        if cuts:
+            for entry in cuts.get("skippable_chapters", []) or []:
+                tgt = (entry.get("relocate_to") or "").strip()
+                kernel_text = (entry.get("kernel") or "").strip()
+                if tgt == segment["id"] and kernel_text:
+                    kernels.append({
+                        "from_chapter": entry.get("chapter_id"),
+                        "to_chapter": tgt,
+                        "position": entry.get("position"),
+                        "kernel": kernel_text,
+                    })
+        cached, rendered = prompt.render_blocks(
+            spec=spec_text,
+            book={
+                "title": plan.get("title", book.book_id),
+                "author": plan.get("author", "?"),
+                "genre": book.metadata.get("genre", "unknown"),
+            },
+            segment={**segment,
+                     "source_word_count": segment.get("source_word_count") or source_words},
+            ceiling=ceiling,
+            segment_source=segment_source,
+            critic_feedback=critic_feedback,
+            previous_draft=previous_draft,
+            cuts=cuts,
+            kernels=kernels,
+        )
+    else:
+        rendered = prompt.render(
+            book={
+                "title": plan.get("title", book.book_id),
+                "author": plan.get("author", "?"),
+                "genre": book.metadata.get("genre", "unknown"),
+            },
+            plan={
+                "modernization_level": plan.get("modernization_level", "L1"),
+                "modernization_rationale": plan.get("modernization_rationale", ""),
+                "cultural_depth": plan.get("cultural_depth", "?"),
+                "voice_driven_narrator": plan.get("voice_driven_narrator", False),
+                "indirection_budget_applies": plan.get("indirection_budget_applies", False),
+                "overall_compression_ratio": plan.get("overall_compression_ratio", "?"),
+                "plan_notes": plan.get("plan_notes", ""),
+                "motifs": plan.get("motifs", []),
+            },
+            segment=segment,
+            segment_source=segment_source,
+            critic_feedback=critic_feedback,
+            previous_draft=previous_draft,
+            recent_drafts=_recent_drafts(book, plan, segment_id),
+            motif_ledger=read_ledger(book),
+        )
+        cached = None
+
+    stage_label = (f"draft:{book.book_id}:{segment_id}"
+                   if not critic_feedback
+                   else f"regen:{book.book_id}:{segment_id}")
+    default_model = prompt.config.get("model", "anthropic:claude-opus-4-7")
+    active_model, thinking, max_out = _draft_runtime_options(prompt, default_model)
+    return DraftLLMRequest(
+        request_id=segment_id,
+        prompt_name=prompt_name,
+        prompt=rendered,
+        cached_prompt=cached,
+        model=default_model,
+        active_model=active_model,
+        system=prompt.system,
+        max_tokens=max_out,
+        temperature=prompt.config.get("temperature"),
+        cache=not cached,
+        thinking=thinking,
+        stage=stage_label,
+    )
+
+
+def _draft_group(book: Book, plan: dict, group_id: str) -> None:
+    """Draft all segments in a merged group with one LLM call, then split
+    the output into per-member segments/<id>.md files.
+    """
+    import re as _re
+    build = build_draft_group_request(book, plan, group_id)
+    members = build.members
+    request = build.request
+    cached = request.cached_prompt
+    body = request.prompt
+    default_model = request.model
+    active_model = request.active_model
+    thinking = request.thinking
+    max_out = request.max_tokens
+
+    seg_dir = book.work_dir / "segments"
+    seg_dir.mkdir(parents=True, exist_ok=True)
+
+    resp = _complete_draft_with_exception_fallback(
+        book=book,
+        prompt=body,
+        cached_prompt=cached,
+        model=default_model,
+        active_model=active_model,
+        system=request.system,
+        max_tokens=max_out,
+        temperature=request.temperature,
+        cache=request.cache,
+        thinking=thinking,
+        stage=request.stage,
+        fallback_stage=f"draft_fallback:{book.book_id}:{group_id}",
     )
 
     # Cross-provider fallback (same logic as the per-segment drafter path)
     if resp.stop_reason == "content_filter" and active_model.startswith("openai:"):
         import sys as _sys
-        fallback_model = os.environ.get("FORAGE_DRAFT_FALLBACK_MODEL",
-                                        "anthropic:claude-sonnet-4-6")
+        fallback_model = _draft_fallback_model(active_model)
         print(f"[drafter] content_filter on {active_model}; "
               f"retrying on {fallback_model}",
               file=_sys.stderr, flush=True)
         fb_thinking = "max" if "opus" in fallback_model.lower() else None
         resp = complete(
             prompt=body, cached_prompt=cached,
-            model=fallback_model, system=prompt.system,
+            model=fallback_model, system=request.system,
             max_tokens=128000 if fb_thinking else max_out,
-            temperature=prompt.config.get("temperature"),
-            cache=not cached, thinking=fb_thinking,
+            temperature=request.temperature,
+            cache=request.cache, thinking=fb_thinking,
             work_dir=book.work_dir,
             stage=f"draft_fallback:{book.book_id}:{group_id}",
         )
@@ -234,10 +443,10 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
               file=_sys.stderr, flush=True)
         resp = complete(
             prompt=body, cached_prompt=cached,
-            model=default_model, system=prompt.system,
+            model=default_model, system=request.system,
             max_tokens=max_out,
-            temperature=prompt.config.get("temperature"),
-            cache=not cached, thinking=retry_thinking,
+            temperature=request.temperature,
+            cache=request.cache, thinking=retry_thinking,
             work_dir=book.work_dir,
             stage=f"draft_thinkretry:{book.book_id}:{group_id}",
         )
@@ -338,107 +547,33 @@ def draft_segment(
             message="target=0 — skipped by prepare-skips (kernel relocated)",
         )
 
-    # Lean plans (no prepass) use the spec-as-prompt drafter; fall back to
-    # the older tier-based prompt only if the plan has LLM-annotated segments.
-    is_lean = plan.get("_meta", {}).get("builder") == "lean_plan"
-    prompt_name = "draft_lean" if is_lean else "draft_segment"
-    prompt = load_prompt(prompt_name)
-
-    if is_lean:
-        spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
-        spec_text = spec_path.read_text() if spec_path.exists() else ""
-        target = int(segment.get("target_word_count", 0) or 0)
-        ceiling = int(round(target * 1.2)) if target else 0
-        # Load cuts inventory if a prepass has produced one.
-        cuts_path = book.work_dir / "cuts.json"
-        cuts = (read_json(cuts_path) if cuts_path.exists() else None)
-        # Extract any kernels relocated TO this segment — the drafter
-        # must preserve them verbatim/near-verbatim.
-        kernels = []
-        if cuts:
-            for entry in cuts.get("skippable_chapters", []) or []:
-                tgt = (entry.get("relocate_to") or "").strip()
-                kernel_text = (entry.get("kernel") or "").strip()
-                if tgt == segment["id"] and kernel_text:
-                    kernels.append({
-                        "from_chapter": entry.get("chapter_id"),
-                        "to_chapter": tgt,
-                        "position": entry.get("position"),
-                        "kernel": kernel_text,
-                    })
-        cached, body = prompt.render_blocks(
-            spec=spec_text,
-            book={
-                "title": plan.get("title", book.book_id),
-                "author": plan.get("author", "?"),
-                "genre": book.metadata.get("genre", "unknown"),
-            },
-            segment={**segment,
-                     "source_word_count": segment.get("source_word_count") or source_words},
-            ceiling=ceiling,
-            segment_source=segment_source,
-            critic_feedback=critic_feedback,
-            previous_draft=previous_draft,
-            cuts=cuts,
-            kernels=kernels,
-        )
-        rendered = body
-    else:
-        rendered = prompt.render(
-            book={
-                "title": plan.get("title", book.book_id),
-                "author": plan.get("author", "?"),
-                "genre": book.metadata.get("genre", "unknown"),
-            },
-            plan={
-                "modernization_level": plan.get("modernization_level", "L1"),
-                "modernization_rationale": plan.get("modernization_rationale", ""),
-                "cultural_depth": plan.get("cultural_depth", "?"),
-                "voice_driven_narrator": plan.get("voice_driven_narrator", False),
-                "indirection_budget_applies": plan.get("indirection_budget_applies", False),
-                "overall_compression_ratio": plan.get("overall_compression_ratio", "?"),
-                "plan_notes": plan.get("plan_notes", ""),
-                "motifs": plan.get("motifs", []),
-            },
-            segment=segment,
-            segment_source=segment_source,
-            critic_feedback=critic_feedback,
-            previous_draft=previous_draft,
-            recent_drafts=_recent_drafts(book, plan, segment_id),
-            motif_ledger=read_ledger(book),
-        )
-        cached = None
-
-    stage_label = (f"draft:{book.book_id}:{segment_id}"
-                   if not critic_feedback
-                   else f"regen:{book.book_id}:{segment_id}")
-    # Extended thinking on Opus improves budget adherence. Enable it only when
-    # the resolved model is Opus — GPT-5 and other non-Opus models ignore or
-    # reject the param. The per-stage model override (FORAGE_DRAFT_MODEL) wins
-    # over FORAGE_MODEL which wins over prompt config default.
-    default_model = prompt.config.get("model", "anthropic:claude-opus-4-7")
-    active_model = (os.environ.get("FORAGE_DRAFT_MODEL")
-                    or os.environ.get("FORAGE_MODEL")
-                    or default_model)
-    thinking = "max" if "opus" in active_model.lower() else None
-    # Extended thinking + multi-chapter merge-group output can consume >64k
-    # tokens (thinking budget + visible output share max_tokens). Pre-Opus
-    # default was 64k, but Melville-scale merge groups (6-10 short chapters)
-    # truncated at that ceiling. 128k gives thinking room while leaving plenty
-    # of visible-output budget.
-    max_out = max(prompt.config.get("max_tokens", 16000), 128000) if thinking \
-              else prompt.config.get("max_tokens", 32000)
-    resp = complete(
+    request = build_draft_segment_request(
+        book, plan, segment_id, segment_source, source_words,
+        critic_feedback=critic_feedback,
+        previous_draft=previous_draft,
+    )
+    rendered = request.prompt
+    cached = request.cached_prompt
+    default_model = request.model
+    active_model = request.active_model
+    thinking = request.thinking
+    max_out = request.max_tokens
+    fallback_stage = (("draft_fallback:" if not critic_feedback
+                       else "regen_fallback:")
+                      + f"{book.book_id}:{segment_id}")
+    resp = _complete_draft_with_exception_fallback(
+        book=book,
         prompt=rendered,
         cached_prompt=cached,
         model=default_model,
-        system=prompt.system,
+        active_model=active_model,
+        system=request.system,
         max_tokens=max_out,
-        temperature=prompt.config.get("temperature"),
-        cache=not cached,  # if we have a cache prefix, don't double-wrap
+        temperature=request.temperature,
+        cache=request.cache,  # if we have a cache prefix, don't double-wrap
         thinking=thinking,
-        work_dir=book.work_dir,
-        stage=stage_label,
+        stage=request.stage,
+        fallback_stage=fallback_stage,
     )
 
     # Cross-provider fallback on OpenAI's content_filter. Happens on
@@ -447,24 +582,20 @@ def draft_segment(
     # retry once there. Configurable via FORAGE_DRAFT_FALLBACK_MODEL.
     if resp.stop_reason == "content_filter" and active_model.startswith("openai:"):
         import sys as _sys
-        fallback_model = os.environ.get("FORAGE_DRAFT_FALLBACK_MODEL",
-                                        "anthropic:claude-sonnet-4-6")
+        fallback_model = _draft_fallback_model(active_model)
         print(f"[drafter] content_filter on {active_model}; "
               f"retrying on {fallback_model}",
               file=_sys.stderr, flush=True)
         fb_thinking = "max" if "opus" in fallback_model.lower() else None
         fb_max = 128000 if fb_thinking else max_out
-        fallback_stage = (("draft_fallback:" if not critic_feedback
-                           else "regen_fallback:")
-                          + f"{book.book_id}:{segment_id}")
         resp = complete(
             prompt=rendered,
             cached_prompt=cached,
             model=fallback_model,
-            system=prompt.system,
+            system=request.system,
             max_tokens=fb_max,
-            temperature=prompt.config.get("temperature"),
-            cache=not cached,
+            temperature=request.temperature,
+            cache=request.cache,
             thinking=fb_thinking,
             work_dir=book.work_dir,
             stage=fallback_stage,
@@ -502,10 +633,10 @@ def draft_segment(
             prompt=rendered,
             cached_prompt=cached,
             model=default_model,
-            system=prompt.system,
+            system=request.system,
             max_tokens=max_out,
-            temperature=prompt.config.get("temperature"),
-            cache=not cached,
+            temperature=request.temperature,
+            cache=request.cache,
             thinking=retry_thinking,
             work_dir=book.work_dir,
             stage=retry_stage,

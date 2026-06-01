@@ -1,76 +1,77 @@
 {
-  "minor_characters": [
-    {
-      "name": "Renner",
-      "appearances_summary": "The Grand Dragon Lord's adviser who manages the Maiden selection ceremony and tries to direct Stephanie toward Xander before Miriam intervenes.",
-      "reason_removable": "His function as ceremony-master can be folded into Xander or Blake's dialogue without losing any plot beat from the synopsis."
-    },
-    {
-      "name": "Darda's husband",
-      "appearances_summary": "Briefly mentioned as the elderly male servant tangled in the bedsheet during Miriam's second escape attempt.",
-      "reason_removable": "He is unnamed, has no lines, and his presence adds nothing to the comedy of the scene that Darda alone cannot carry."
-    },
-    {
-      "name": "Galen",
-      "appearances_summary": "The white-haired physician who tends to the poisoned Xander and explains that only the Lady's tears can cure silver-talon poison.",
-      "reason_removable": "The synopsis names him but his role as exposition-deliverer could be merged with Apuleius or Cayden; however, since he IS named in the synopsis, he must be retained — excluded."
-    },
-    {
-      "name": "Jethro",
-      "appearances_summary": "Cayden's elderly golden-cloaked priest who assists Apuleius in opening the Portal and compliments Stephanie.",
-      "reason_removable": "He performs a ritual function that Apuleius alone could perform without altering the Portal demonstration or the ensuing attack."
-    },
-    {
-      "name": "The unnamed taxi driver",
-      "appearances_summary": "Drives Miriam and Heather in the opening chapter's chase sequence and accepts cash to lose a tailing red car.",
-      "reason_removable": "He is a one-scene utility figure whose role can be compressed into a single line of action without losing the chase's function as menace foreshadowing."
-    },
-    {
-      "name": "The unnamed pig-men henchmen",
-      "appearances_summary": "Blake's two nameless cohorts who help drug, abduct, and transport the women.",
-      "reason_removable": "They are interchangeable muscle whose collective presence is preserved by retaining Blake; individuating them adds nothing."
-    }
-  ],
-  "subplots": [
-    {
-      "name": "Heather's matchmaking running gag",
-      "chapter_span": "Ch 005",
-      "reason_removable": "The repeated jokes about Heather setting Miriam up with creepy guys can be compressed to a single line establishing the Blake introduction without losing thematic content."
-    },
-    {
-      "name": "The killer-sheep demonstration",
-      "chapter_span": "Ch 014",
-      "reason_removable": "Stephanie's encounter with the aggressive wool-creatures is a self-contained worldbuilding aside that doesn't affect the Portal visit or the dragon attack that follows."
-    },
-    {
-      "name": "The northern-borderland raid intelligence",
-      "chapter_span": "Ch 009",
-      "reason_removable": "Xander's overheard conversation with Renner about scout reports and unknown northern dragons is foreshadowing for later books and not needed for Book 1's resolution."
-    }
-  ],
+  "minor_characters": [],
+  "subplots": [],
   "digressions": [
+    {
+      "chapter_ids": [
+        "005"
+      ],
+      "topic": "Opening office-crowd patter and one-liner jokes before Heather appears, plus extra quips during the taxi chase",
+      "reason_removable": "The stand-up-style banter and extended chase quips don’t change the inciting beats (Heather’s setup with Blake and the reckless taxi escapade) and can be tightened without harming plot or tone."
+    },
+    {
+      "chapter_ids": [
+        "007"
+      ],
+      "topic": "Extended architectural and pastoral description of the stables, castle, fields, and village on arrival",
+      "reason_removable": "Long scenic paragraphs can be pared to a few lines confirming the medieval-feeling estate and village without losing any required plot setup."
+    },
+    {
+      "chapter_ids": [
+        "009"
+      ],
+      "topic": "Room inventory and window mechanics while Miriam fashions the bedsheet rope",
+      "reason_removable": "The minute logistics of furnishings and window hardware slow pace; a brief note that she knots linens and descends suffices to preserve the escape."
+    },
+    {
+      "chapter_ids": [
+        "011"
+      ],
+      "topic": "Slapstick ‘badger in here!’ ruse and sheet-tangle scuffle in the corridor",
+      "reason_removable": "The comic beat doesn’t alter how she ends up in Xander’s room or the consent/captivity conversation that follows, so it can be shortened."
+    },
+    {
+      "chapter_ids": [
+        "012"
+      ],
+      "topic": "Graphic, step-by-step sexual detail after the musk takes effect",
+      "reason_removable": "The synopsis requires consummation under dragon musk, but the explicit choreography can be compressed to a few sentences without losing the turning-point beat."
+    },
     {
       "chapter_ids": [
         "014"
       ],
-      "topic": "Extended worldbuilding on dragon biology, glands, mating scents, and the longevity of dragons",
-      "reason_removable": "Much of the taxonomic exposition about dragon nature can be trimmed to the essentials the synopsis names (glands, scented mates, dual nature) without the extended Q&A."
+      "topic": "Modern ‘frat party’ explanation and culture-clash riff at breakfast",
+      "reason_removable": "A brief acknowledgement that the feast is celebratory covers the joke; the extended modern-culture aside isn’t needed for plot or character."
     },
     {
       "chapter_ids": [
         "015"
       ],
-      "topic": "Detailed description of the Portal's vine-covered carved-dragon iconography and the century of magic used to build it",
-      "reason_removable": "The ornate ritual description is atmospheric and can be condensed since the synopsis only requires the mirror-surface awakening and the stone-to-glass demonstration."
+      "topic": "Ceremonial and iconographic detail of the Portal’s carvings and glow sequence",
+      "reason_removable": "Only the functional points (priests open it; foreign matter shatters) are load-bearing, so the ritual pageantry can be trimmed."
+    },
+    {
+      "chapter_ids": [
+        "016"
+      ],
+      "topic": "Heather’s hard-liquor banter and ‘wipe-the-hard-drive-clean’ cocktail jokes",
+      "reason_removable": "The comic drink talk doesn’t affect Miriam’s decision or the Mark’s pain/vision and can be cut for momentum."
+    },
+    {
+      "chapter_ids": [
+        "020"
+      ],
+      "topic": "Discussion of electricity and whether Miriam could recreate it here",
+      "reason_removable": "The tech chat is color only; Darda’s origin, Spiros’s role, and the storm/bridge sequence carry the required beats."
+    },
+    {
+      "chapter_ids": [
+        "020"
+      ],
+      "topic": "Childhood-anecdote exchange between Xander and Spiros (the bull ‘Devil,’ Grand Canal wing-softening, eluding guards)",
+      "reason_removable": "The specifics are extraneous once we’ve established that Spiros ‘grew up daring beside his lord,’ which the synopsis preserves."
     }
   ],
-  "skippable_chapters": [
-    {
-      "chapter_id": "020",
-      "reason_removable": "This is a sneak-peek excerpt from the next book that follows the resolution of Book 1 and contains no content the synopsis depends on.",
-      "kernel": "",
-      "relocate_to": null,
-      "position": null
-    }
-  ]
+  "skippable_chapters": []
 }

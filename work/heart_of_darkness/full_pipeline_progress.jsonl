@@ -1,0 +1,14 @@
+{"phase": "split", "elapsed_s": 0.0}
+{"phase": "classify", "elapsed_s": 3.3}
+{"phase": "summarize", "elapsed_s": 40.3}
+{"phase": "cuts", "elapsed_s": 90.8}
+{"phase": "plan", "elapsed_s": 0.0}
+{"phase": "prepare-skips", "skipped": [], "kernels_inserted": [], "not_found": [], "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "001", "title": "I", "source_words": 14258, "target_words": 7800, "final_words": 5949, "status": "drafted", "elapsed_s": 1374.5}
+{"phase": "draft", "segment_id": "002", "title": "II", "source_words": 12053, "target_words": 6600, "final_words": 7573, "status": "drafted", "elapsed_s": 1392.5}
+{"phase": "draft", "segment_id": "003", "title": "III", "source_words": 11593, "target_words": 6300, "final_words": 8415, "status": "drafted", "elapsed_s": 1421.5}
+{"phase": "draft-verify", "status": "passed"}
+{"phase": "coherence-pre-fix", "pairs_checked": 2, "findings_total": 0, "class_counts": {}}
+{"phase": "coherence-fix", "pairs_processed": 0, "pairs_applied": 0, "pairs_no_change": 0, "pairs_rejected": 0, "pairs_failed": 0, "pairs_no_findings": 0}
+{"phase": "assemble", "total_drafted": 21937, "book_target": 20478, "book_ceiling": 24573, "over_budget": true, "over_ceiling": false, "segments_drafted": 3, "segments_cut": 0, "segments_missing": 0, "plain_text_path": "/Users/tp/abridgedtoofar/work/heart_of_darkness/abridgment.txt", "published_plain_text_path": "/Users/tp/abridgedtoofar/books/heart_of_darkness/abridgment.txt"}
+{"phase": "book_critique", "verdict": "ship", "is_partial": false, "counts": {"present": 29}}

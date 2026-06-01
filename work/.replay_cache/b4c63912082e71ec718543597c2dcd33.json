@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:33:25",
+  "key": "b4c63912082e71ec718543597c2dcd33",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the gate test strictly and only flagging genuine structural failures.\n\n---\n\n**Ch 029 draft analysis**\n\nThe draft is a competent compression. The philosophical \"democratic dignity\" passage survives intact. No broken pivots, no dangling referents, no unglossed names. The Stubb dialogue tag (\"said Stubb, the second mate\") from the source is cut along with Stubb's line entirely \u2014 this is a clean cut, not a residue. No findings.\n\n---\n\n**Ch 030 draft analysis**\n\nChecking sentence by sentence for the seven failure classes.\n\n1. **\"What, perhaps, made Stubb such an easy-going, unfearing man, that thing must have been his pipe.\"** \u2014 Source reads \"What, perhaps, with other things, made Stubb such an easy-going, unfearing man\u2026 what helped to bring about that almost impious good-humor of his; that thing must have been his pipe.\" The draft collapses this to a single clause that still parses. Not a structural failure.\n\n2. **Tashtego's tribal supply role cut** \u2014 Source says Gay Head \"has long supplied the neighboring island of Nantucket with many of her most daring harpooneers\u2026 they usually go by the generic name of Gay-Headers.\" Draft drops this. Tashtego is still introduced with full physical and cultural description; the reader is not confused about who he is. Not a finding.\n\n3. **\"Tashtego was Stubb's squire.\"** \u2014 Source says \"Tashtego was Stubb the second mate's squire.\" Draft just says \"Stubb's squire.\" Stubb has been fully introduced two paragraphs earlier in the same draft chapter. No confusion. Not a finding.\n\n4. **\"This imperial negro, Ahasuerus Daggoo, was the Squire of little Flask, who looked like a chess-man beside him.\"** \u2014 The appositional \"Ahasuerus Daggoo\" construction: \"Ahasuerus\" was introduced earlier in the paragraph as a simile (\"an Ahasuerus to behold\") \u2014 this is a descriptor, not a proper name. The name \"Daggoo\" itself is introduced in the same paragraph's opening sentence. No orphaned name.\n\n5. **Pip introduction** \u2014 \"Black Little Pip\u2014he never did\u2014oh, no! he went before.\" Pip has not been introduced anywhere in the preceding draft chapters. The source passage introduces him with \"Black Little Pip\" but also gives no prior introduction here \u2014 this is his first appearance in the source too, presented as a proleptic/flash-forward. However, in the source the sentence flows from a paragraph about the Isolatoes crew, contextualizing him as one of the crew. In the draft the same surrounding context survives. The phrase \"he never did\" refers to coming back \u2014 the antecedent is \"not very many of them ever come back.\" This is a deliberate narrative flash-forward, not compression damage. A reader without the source would find it cryptic but intentionally so \u2014 it's the same in the source. Not a structural finding created by compression.\n\n6. **\"Each mate or headsman, like a Gothic Knight of old, is always accompanied by his boat-steerer or harpooneer.\"** \u2014 The source continues: \"and moreover, as there generally subsists between the two, a close intimacy and friendliness; it is therefore but meet, that in this place we set down who the Pequod's harpooneers were, and to what headsman each of them belonged.\" The draft cuts this transitional sentence and moves directly to \"First of all was Queequeg.\" Does the pivot break? The draft's preceding sentence establishes the knight/harpooneer pairing concept, and the next sentence begins listing harpooneers. A reader can follow this. Not a structural failure.\n\n7. **\"They called him King-Post on board the Pequod; because, in form, he could be likened to the short, square timber known by that name in Arctic whalers.\"** \u2014 Source adds \"and which by the means of many radiating side timbers inserted into it, serves to brace the ship against the icy concussions of those battering seas.\" This explanatory clause is cut. The matrix clause still parses and conveys the nickname's derivation. Explicit rejection per instructions: \"The source had an explanatory relative clause and the draft cut it; the matrix clause still parses.\"\n\nAfter exhaustive review, no sentence in either draft chapter fails any of the seven structural tests in a way that would genuinely confuse a competent reader without source access.\n\n```json\n[]\n```",
+    "input_tokens": 8504,
+    "output_tokens": 1053,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 24.251032829284668,
+    "stop_reason": "end_turn"
+  }
+}

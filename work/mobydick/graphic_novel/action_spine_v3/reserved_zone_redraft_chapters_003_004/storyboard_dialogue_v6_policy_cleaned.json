@@ -1,0 +1,559 @@
+{
+  "title": "Moby-Dick Chapters 3-4 Reserved-Zone Redraft",
+  "source": "action_spine_v3 plus expanded chapter 3 landlord sequence prototype",
+  "lettering_policy": {
+    "speech_balloons": "tail-less",
+    "placement": "reserved storyboard zones",
+    "panel_art_fit": "contain"
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_frame_001.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts.",
+              "caption_zone": "top_left"
+            }
+          ]
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_frame_002.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.",
+              "caption_zone": "bottom_center",
+              "lettering_notes": "demoted from speech: indirect or internal narration"
+            },
+            {
+              "kind": "speech",
+              "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 3, frames 3",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch003_frame_003.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.023076923076923078,
+            "w": 0.96875,
+            "h": 0.9538461538461539
+          },
+          "source_chapter": 3,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I chose the bench; the planing and the bitter draughts defeated me.",
+              "caption_zone": "top_right"
+            },
+            {
+              "kind": "speech",
+              "text": "I shan’t sleep with him. I’ll try the bench.",
+              "speaker": "Ishmael",
+              "balloon_zone": "bottom_left",
+              "speaker_region": "left",
+              "source_evidence": "\"I shan’t sleep with him. I’ll try the bench here.\""
+            },
+            {
+              "kind": "speech",
+              "text": "Wait—I’ll make ye snug enough.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "bottom_right",
+              "speaker_region": "right",
+              "source_evidence": "\"wait, I say, and I’ll make ye snug enough.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "layout": "six_panel_exchange",
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, expanded landlord selling-heads exchange",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch003_landlord_001.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Does he always keep such late hours?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "center",
+              "source_evidence": "“does he always keep such late hours?”"
+            },
+            {
+              "kind": "speech",
+              "text": "He went out a peddling—unless maybe he can't sell his head.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“to-night he went out a peddling... unless, may be, he can’t sell his head.”"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        },
+        {
+          "panel_number": 2,
+          "image": "ch003_landlord_002.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "Peddling his head around town?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "center",
+              "source_evidence": "“engaged... in peddling his head around this town?”"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        },
+        {
+          "panel_number": 3,
+          "image": "ch003_landlord_003.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "That's precisely it. The market's overstocked.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“That’s precisely it... the market’s overstocked.”"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        },
+        {
+          "panel_number": 4,
+          "image": "ch003_landlord_004.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With what?",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "center",
+              "source_evidence": "“With what?”"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        },
+        {
+          "panel_number": 5,
+          "image": "ch003_landlord_005.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "With heads, to be sure.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“With heads to be sure; ain’t there too many heads in the world?”"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_landlord_006.png",
+          "texts": [
+            {
+              "kind": "speech",
+              "text": "’Balmed New Zealand heads—he’s sold all on ’em but one.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "top_right",
+              "speaker_region": "right",
+              "source_evidence": "“bought up a lot of ’balmed New Zealand heads... he’s sold all on ’em but one”"
+            },
+            {
+              "kind": "caption",
+              "text": "This account cleared up the otherwise unaccountable mystery.",
+              "caption_zone": "bottom_left"
+            }
+          ],
+          "source_chapter": 3,
+          "source_expanded_sequence": "landlord_selling_heads_exchange"
+        }
+      ],
+      "fit_mode": "crop"
+    },
+    {
+      "page_number": 4,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch003_frame_005.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Since it was Sunday, I took the prodigious bed and eyed his outlandish gear.",
+              "caption_zone": "top_center"
+            },
+            {
+              "kind": "speech",
+              "text": "Come along—I’ll give ye a glim in a jiffy.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "bottom_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Come along here, I’ll give ye a glim in a jiffy;\""
+            }
+          ]
+        },
+        {
+          "panel_number": 6,
+          "image": "ch003_frame_006.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals.",
+              "caption_zone": "bottom_right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 3, frames 7, 8",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch003_frame_007.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He sprang into bed with the tomahawk-pipe.",
+              "caption_zone": "top_right"
+            },
+            {
+              "kind": "speech",
+              "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+              "speaker": "Queequeg",
+              "balloon_zone": "top_center",
+              "speaker_region": "center",
+              "source_evidence": "\"Who-e debel you?—you no speak-e, dam-me, I kill-e.\""
+            },
+            {
+              "kind": "speech",
+              "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+              "speaker": "Ishmael",
+              "balloon_zone": "bottom_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Landlord, for God’s sake, Peter Coffin! ... Watch! ... Angels! save me!\""
+            },
+            {
+              "kind": "speech",
+              "text": "Don’t be afraid; Queequeg won’t harm a hair of your head.",
+              "speaker": "Peter Coffin",
+              "balloon_zone": "bottom_right",
+              "speaker_region": "right",
+              "source_evidence": "\"Don’t be afraid now ... Queequeg here wouldn’t harm a hair of your head.\""
+            }
+          ]
+        },
+        {
+          "panel_number": 8,
+          "image": "ch003_frame_008.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 3,
+          "source_frame_number": 8,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He stashed the tomahawk-pipe; I turned in again and slept soundly.",
+              "caption_zone": "bottom_center"
+            },
+            {
+              "kind": "thought",
+              "text": "Better sleep with a sober cannibal than a drunken Christian.",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Better sleep with a sober cannibal than a drunken Christian.\""
+            },
+            {
+              "kind": "speech",
+              "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+              "speaker": "Ishmael",
+              "balloon_zone": "bottom_left",
+              "speaker_region": "left",
+              "source_evidence": "\"tell him to stash his tomahawk there, or pipe... tell him to stop smoking... Besides, I ain’t insured.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 1, 2",
+      "panels": [
+        {
+          "panel_number": 1,
+          "image": "ch004_frame_001.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 1,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I woke at daylight to find Queequeg’s tattooed arm thrown over me, so blended with the patchwork counterpane that only its weight told me he was hugging me.",
+              "caption_zone": "top_left"
+            }
+          ]
+        },
+        {
+          "panel_number": 2,
+          "image": "ch004_frame_002.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 2,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I wriggled to rouse him and found the tomahawk-pipe by his side.",
+              "caption_zone": "bottom_left"
+            },
+            {
+              "kind": "speech",
+              "text": "Queequeg! In the name of goodness—wake!",
+              "speaker": "Ishmael",
+              "balloon_zone": "top_left",
+              "speaker_region": "left",
+              "source_evidence": "\"Queequeg!—in the name of goodness, Queequeg, wake!\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 3, 4",
+      "panels": [
+        {
+          "panel_number": 3,
+          "image": "ch004_frame_003.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 3,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "By much wriggling and loud expostulations I woke him; he drew back his arm, shook himself, and sat up staring, while I lay quiet and curious rather than afraid.",
+              "caption_zone": "top_center"
+            }
+          ]
+        },
+        {
+          "panel_number": 4,
+          "image": "ch004_frame_004.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 4,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "He made signs that he would dress first and then leave me to dress alone—a very civilized overture I accepted as I watched him.",
+              "caption_zone": "bottom_right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 8,
+      "page_size": {
+        "width": 1536,
+        "height": 2048
+      },
+      "page_summary": "Chapter 4, frames 5, 6",
+      "panels": [
+        {
+          "panel_number": 5,
+          "image": "ch004_frame_005.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.01171875,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 5,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "I watched him begin at the top with his very tall beaver hat, hunt up his boots, crawl under the bed to pull them on, and limp creaking about the room.",
+              "caption_zone": "top_right"
+            }
+          ]
+        },
+        {
+          "panel_number": 6,
+          "image": "ch004_frame_006.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.50439453125,
+            "w": 0.96875,
+            "h": 0.48388671875
+          },
+          "source_chapter": 4,
+          "source_frame_number": 6,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Seeing there were no curtains and the house opposite looked in, I begged him to hasten into his pantaloons, whereupon he complied and washed only his chest, arms, and hands.",
+              "caption_zone": "bottom_center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_number": 9,
+      "page_size": {
+        "width": 1536,
+        "height": 1040
+      },
+      "page_summary": "Chapter 4, frames 7",
+      "panels": [
+        {
+          "panel_number": 7,
+          "image": "ch004_frame_007.png",
+          "box": {
+            "x": 0.015625,
+            "y": 0.023076923076923078,
+            "w": 0.96875,
+            "h": 0.9538461538461539
+          },
+          "source_chapter": 4,
+          "source_frame_number": 7,
+          "texts": [
+            {
+              "kind": "caption",
+              "text": "Then I saw him coolly shave with the head of his harpoon, and, his toilet complete, he marched out in his pilot monkey jacket, sporting the harpoon like a marshal’s baton.",
+              "caption_zone": "top_left"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

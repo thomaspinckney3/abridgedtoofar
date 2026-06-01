@@ -1,0 +1,785 @@
+Create a graphic-novel action spine for one chapter.
+
+Book: Moby-Dick; or, The Whale
+Author: Herman Melville
+Chapter: 3. The Spouter-Inn
+Requested frame range: 3-8
+
+Goal:
+- Find the chapter's core action: what a person does, decides, discovers,
+  enters, leaves, accepts, refuses, fears, or understands next.
+- Produce a short action-oriented synopsis in plain prose. This synopsis should
+  sound like the answer to "what actually happens in this chapter?"
+- The action-oriented synopsis must contain exactly one sentence per selected
+  action turn. Do not write one long sentence that hides multiple frame beats.
+- Then write first-person caption sentences in the narrator's voice, using the
+  author's language where it helps clarity.
+- Create exactly one frame for each caption sentence.
+- The same selected action turns must appear in all three layers:
+  the sentences of `action_oriented_synopsis`, `action_steps[].plain_sentence`,
+  `caption_spine[]`, and `frames[]`.
+- Create a continuity sheet before the frames:
+  - `character_continuity` gives one stable visual description for every
+    named or role-identifiable person who appears visibly.
+  - `prop_continuity` gives one stable visual description for recurring,
+    compound, archaic, or easily misread objects.
+- Every frame must have a single `driver_character` and `primary_action`.
+  Supporting details may appear, but they must not become the main visual
+  action unless they are the selected action turn.
+
+Selection rules:
+- Do not preserve every paragraph, scene, detail, description, or joke.
+- Omit material that does not drive the chapter's action forward.
+- Do not create frames for rhetorical examples, analogies, philosophical
+  explanations, hypothetical scenes, jokes, catalogues, or supporting arguments.
+  Fold their useful meaning into a caption over the real action, or omit them.
+- Do not create a frame for a context tableau that merely illustrates mood,
+  setting, attraction, social pattern, or a general idea. A frame must change
+  the narrator's situation, decision, knowledge, relationship, or physical path.
+  If the only change is "this confirms the mood," fold it into an adjacent
+  action frame.
+- A narrator identity hook may be preserved as its own opening frame when it
+  orients the reader for the chapter/book, especially in a first chapter or
+  first-person narration.
+- Do not split motives, reasons, explanations, costs, benefits, or attitudes
+  into separate frames when they all support the same action decision. Fold them
+  into that decision's caption.
+- Do not turn a hypothetical into a visible event. If the narrator says "what
+  if I were ordered to sweep a deck," do not draw him sweeping unless the
+  chapter actually places him on that deck in story-present action.
+- Use the fewest frames that preserve the chapter's action spine. Stay within
+  the requested frame range unless the chapter is structurally impossible.
+- Most chapters should use 3-6 frames. Use more than 6 only when the chapter has
+  more than 6 actual action turns, not merely because it has many paragraphs.
+- If the chapter's actual movement is one main decision supported by several
+  reasons, use at most 4 frames. Reasons are not separate action turns.
+- Example: if the narrator chooses to go as a common sailor and gives several
+  reasons such as humility, orders, being paid, exercise, or air, that is still
+  one action turn: choosing the common-sailor role. Do not create separate
+  frames for each reason.
+- Example: if the narrator says fate draws him to a voyage and the named object
+  of the voyage opens wonder or curiosity, that is still one action turn:
+  choosing or welcoming that voyage. Do not create separate frames for fate,
+  curiosity, and welcome unless the chapter contains separate physical events.
+- Likewise, choosing a course and welcoming that same course are one action
+  turn unless the chapter contains a later physical event that changes the
+  choice.
+- Inanimate objects cannot drive the action. A street, sign, weather, ship,
+  painting, bed, bench, or door may be setting or prop, but a person must drive
+  each frame.
+- If the narrator is reflecting, stage the narrator's concrete physical action
+  or posture and put the reflection in the caption.
+
+Caption rules:
+- Captions must be first-person narration when the source chapter is first
+  person. Use I, me, my, we, us, or our in every caption.
+- If another character performs the visible action, keep the caption in the
+  narrator's first-person viewpoint: "I watched him...", "I saw him...",
+  "I found him...", "I let him...", or "I followed him...". Do not write
+  captions that begin as detached third-person summary.
+- Captions should be clear enough to carry the story without extra dialogue.
+- Captions must make sense without the reader having the source paragraph open.
+  Do not use a cryptic quotation, joke, idiom, or archaic phrase unless the
+  caption itself gives the immediate context needed to understand it.
+- Before returning, read only `caption_spine[]` in order. It must work as a
+  coherent mini-scene without the images or source. If a caption contains a
+  setup, misunderstanding, punchline, correction, or payoff, the needed setup
+  and correction must appear either in that caption or in the immediately
+  preceding/following caption. Do not let a later caption depend on a joke or
+  explanation that was omitted.
+- If a caption introduces a surprising object, person, place, quoted phrase,
+  nickname, euphemism, or trade term, explain why it matters in the same
+  caption unless an earlier caption already introduced that exact thing.
+- Avoid dangling references such as "that business," "the mystery," "it,"
+  "that one," or "the thing" unless the antecedent is explicit in the same
+  caption or the immediately previous caption.
+- If a source uses an ambiguous shorthand for a compound object, prefer the
+  disambiguated compound name in captions and image prompts. For example, use
+  "tomahawk-pipe" or "tomahawk-shaped pipe" rather than bare "tomahawk" when
+  the visible object is a smoking pipe that could otherwise be mistaken for a
+  weapon.
+- Prefer compact author-colored language over neutral plot summary.
+- Do not create speech balloons or dialogue.
+- A caption may name an entity or idea that the source names, but naming it in
+  the caption does not automatically allow it to appear visibly in the art.
+
+Continuity rules:
+- Use the exact same character description for a recurring person every time
+  that person appears. If "the landlord" appears in three frames, all three
+  image prompts must use the same age, build, hair/facial-hair, clothing, and
+  posture vocabulary unless the source visibly changes him.
+- Do not over-specify unsupported biography, ethnicity, or costume details.
+  Continuity is for stable visual recognition, not invention.
+- If a recurring character appears in a frame, include that character's
+  continuity description in the frame's image prompt or rely on the generated
+  frame prompt to inject it from `character_continuity`.
+- If a prop has an archaic or compound name, disambiguate what it is. For
+  example, a "tomahawk-pipe" is a smoking pipe with a hatchet-like form, not
+  a separate battle axe, unless the source explicitly distinguishes it as one.
+- If the source later calls the same compound prop by a shorter name, keep the
+  same prop-continuity key so it is not redrawn as a different object.
+
+Visual rules:
+- The art may be stylized, simplified, painterly, cartooned, or
+  non-photorealistic.
+- The visible content must be source-grounded. Do not invent people, animals,
+  creatures, objects, locations, symbols, relationships, events, labels, maps,
+  signs with readable text, or visual metaphors.
+- Do not show a named entity as a visible thing unless the chapter physically
+  places that visible thing in the scene of the frame.
+- Do not show the content of a comparison, joke, memory, prophecy, fear, or
+  abstraction as a visible scene unless the chapter physically enters that scene.
+- Named concepts in narration should usually be carried by caption and by the
+  character's action/posture, not by invented visual entities.
+- If the source mentions a sign, book, paper, painting, or label, the image may
+  show the object but must not include readable text.
+- Do not literalize similes, metaphors, idioms, jokes, or comparisons in the
+  art. If a caption says a person "shook himself like a dog," show the person
+  waking and shaking off sleep; do not show a dog, water, wet fur, spray, or
+  other literal content from the comparison unless it is physically present in
+  the source scene.
+- Every frame must include a `do_not_show` list for image-generation traps:
+  literalized similes, ambiguous props, readable text, unsupported symbols,
+  or support actions that should not dominate the frame.
+- If the source includes a minor comic/procedural detail, do not foreground it
+  unless that detail is the selected action turn. Keep the frame centered on
+  the `driver_character` and `primary_action`.
+- The first sentence of every `image_prompt` must visibly stage the
+  `driver_character` performing the `primary_action`.
+- Do not make a secondary character's helper action more visually prominent
+  than the driver character's primary action. If a helper action must appear,
+  describe it as background or secondary.
+- `image_prompt` must be self-contained visual direction. Do not rely on the
+  caption text to explain the image; the final image-generation prompt may omit
+  the caption to prevent metaphor literalization.
+- Every image prompt must say "No readable text."
+- Every frame must reserve one caption zone chosen from:
+  `top_left`, `top_center`, `top_right`, `bottom_left`, `bottom_center`,
+  `bottom_right`.
+
+Chapter text:
+CHAPTER 3. The Spouter-Inn.
+
+Entering that gable-ended Spouter-Inn, you found yourself in a wide,
+low, straggling entry with old-fashioned wainscots, reminding one of
+the bulwarks of some condemned old craft. On one side hung a very large
+oilpainting so thoroughly besmoked, and every way defaced, that in the
+unequal crosslights by which you viewed it, it was only by diligent
+study and a series of systematic visits to it, and careful inquiry of
+the neighbors, that you could any way arrive at an understanding of its
+purpose. Such unaccountable masses of shades and shadows, that at first
+you almost thought some ambitious young artist, in the time of the New
+England hags, had endeavored to delineate chaos bewitched. But by dint
+of much and earnest contemplation, and oft repeated ponderings, and
+especially by throwing open the little window towards the back of the
+entry, you at last come to the conclusion that such an idea, however
+wild, might not be altogether unwarranted.
+
+But what most puzzled and confounded you was a long, limber,
+portentous, black mass of something hovering in the centre of the
+picture over three blue, dim, perpendicular lines floating in a
+nameless yeast. A boggy, soggy, squitchy picture truly, enough to drive
+a nervous man distracted. Yet was there a sort of indefinite,
+half-attained, unimaginable sublimity about it that fairly froze you to
+it, till you involuntarily took an oath with yourself to find out what
+that marvellous painting meant. Ever and anon a bright, but, alas,
+deceptive idea would dart you through.—It’s the Black Sea in a midnight
+gale.—It’s the unnatural combat of the four primal elements.—It’s a
+blasted heath.—It’s a Hyperborean winter scene.—It’s the breaking-up of
+the icebound stream of Time. But at last all these fancies yielded to
+that one portentous something in the picture’s midst. _That_ once found
+out, and all the rest were plain. But stop; does it not bear a faint
+resemblance to a gigantic fish? even the great leviathan himself?
+
+In fact, the artist’s design seemed this: a final theory of my own,
+partly based upon the aggregated opinions of many aged persons with
+whom I conversed upon the subject. The picture represents a Cape-Horner
+in a great hurricane; the half-foundered ship weltering there with its
+three dismantled masts alone visible; and an exasperated whale,
+purposing to spring clean over the craft, is in the enormous act of
+impaling himself upon the three mast-heads.
+
+The opposite wall of this entry was hung all over with a heathenish
+array of monstrous clubs and spears. Some were thickly set with
+glittering teeth resembling ivory saws; others were tufted with knots
+of human hair; and one was sickle-shaped, with a vast handle sweeping
+round like the segment made in the new-mown grass by a long-armed
+mower. You shuddered as you gazed, and wondered what monstrous cannibal
+and savage could ever have gone a death-harvesting with such a hacking,
+horrifying implement. Mixed with these were rusty old whaling lances
+and harpoons all broken and deformed. Some were storied weapons. With
+this once long lance, now wildly elbowed, fifty years ago did Nathan
+Swain kill fifteen whales between a sunrise and a sunset. And that
+harpoon—so like a corkscrew now—was flung in Javan seas, and run away
+with by a whale, years afterwards slain off the Cape of Blanco. The
+original iron entered nigh the tail, and, like a restless needle
+sojourning in the body of a man, travelled full forty feet, and at last
+was found imbedded in the hump.
+
+Crossing this dusky entry, and on through yon low-arched way—cut
+through what in old times must have been a great central chimney with
+fireplaces all round—you enter the public room. A still duskier place
+is this, with such low ponderous beams above, and such old wrinkled
+planks beneath, that you would almost fancy you trod some old craft’s
+cockpits, especially of such a howling night, when this corner-anchored
+old ark rocked so furiously. On one side stood a long, low, shelf-like
+table covered with cracked glass cases, filled with dusty rarities
+gathered from this wide world’s remotest nooks. Projecting from the
+further angle of the room stands a dark-looking den—the bar—a rude
+attempt at a right whale’s head. Be that how it may, there stands the
+vast arched bone of the whale’s jaw, so wide, a coach might almost
+drive beneath it. Within are shabby shelves, ranged round with old
+decanters, bottles, flasks; and in those jaws of swift destruction,
+like another cursed Jonah (by which name indeed they called him),
+bustles a little withered old man, who, for their money, dearly sells
+the sailors deliriums and death.
+
+Abominable are the tumblers into which he pours his poison. Though true
+cylinders without—within, the villanous green goggling glasses
+deceitfully tapered downwards to a cheating bottom. Parallel meridians
+rudely pecked into the glass, surround these footpads’ goblets. Fill to
+_this_ mark, and your charge is but a penny; to _this_ a penny more;
+and so on to the full glass—the Cape Horn measure, which you may gulp
+down for a shilling.
+
+Upon entering the place I found a number of young seamen gathered about
+a table, examining by a dim light divers specimens of _skrimshander_. I
+sought the landlord, and telling him I desired to be accommodated with
+a room, received for answer that his house was full—not a bed
+unoccupied. “But avast,” he added, tapping his forehead, “you haint no
+objections to sharing a harpooneer’s blanket, have ye? I s’pose you are
+goin’ a-whalin’, so you’d better get used to that sort of thing.”
+
+I told him that I never liked to sleep two in a bed; that if I should
+ever do so, it would depend upon who the harpooneer might be, and that
+if he (the landlord) really had no other place for me, and the
+harpooneer was not decidedly objectionable, why rather than wander
+further about a strange town on so bitter a night, I would put up with
+the half of any decent man’s blanket.
+
+“I thought so. All right; take a seat. Supper?—you want supper?
+Supper’ll be ready directly.”
+
+I sat down on an old wooden settle, carved all over like a bench on the
+Battery. At one end a ruminating tar was still further adorning it with
+his jack-knife, stooping over and diligently working away at the space
+between his legs. He was trying his hand at a ship under full sail, but
+he didn’t make much headway, I thought.
+
+At last some four or five of us were summoned to our meal in an
+adjoining room. It was cold as Iceland—no fire at all—the landlord said
+he couldn’t afford it. Nothing but two dismal tallow candles, each in a
+winding sheet. We were fain to button up our monkey jackets, and hold
+to our lips cups of scalding tea with our half frozen fingers. But the
+fare was of the most substantial kind—not only meat and potatoes, but
+dumplings; good heavens! dumplings for supper! One young fellow in a
+green box coat, addressed himself to these dumplings in a most direful
+manner.
+
+“My boy,” said the landlord, “you’ll have the nightmare to a dead
+sartainty.”
+
+“Landlord,” I whispered, “that aint the harpooneer is it?”
+
+“Oh, no,” said he, looking a sort of diabolically funny, “the
+harpooneer is a dark complexioned chap. He never eats dumplings, he
+don’t—he eats nothing but steaks, and he likes ’em rare.”
+
+“The devil he does,” says I. “Where is that harpooneer? Is he here?”
+
+“He’ll be here afore long,” was the answer.
+
+I could not help it, but I began to feel suspicious of this “dark
+complexioned” harpooneer. At any rate, I made up my mind that if it so
+turned out that we should sleep together, he must undress and get into
+bed before I did.
+
+Supper over, the company went back to the bar-room, when, knowing not
+what else to do with myself, I resolved to spend the rest of the
+evening as a looker on.
+
+Presently a rioting noise was heard without. Starting up, the landlord
+cried, “That’s the Grampus’s crew. I seed her reported in the offing
+this morning; a three years’ voyage, and a full ship. Hurrah, boys; now
+we’ll have the latest news from the Feegees.”
+
+A tramping of sea boots was heard in the entry; the door was flung
+open, and in rolled a wild set of mariners enough. Enveloped in their
+shaggy watch coats, and with their heads muffled in woollen comforters,
+all bedarned and ragged, and their beards stiff with icicles, they
+seemed an eruption of bears from Labrador. They had just landed from
+their boat, and this was the first house they entered. No wonder, then,
+that they made a straight wake for the whale’s mouth—the bar—when the
+wrinkled little old Jonah, there officiating, soon poured them out
+brimmers all round. One complained of a bad cold in his head, upon
+which Jonah mixed him a pitch-like potion of gin and molasses, which he
+swore was a sovereign cure for all colds and catarrhs whatsoever, never
+mind of how long standing, or whether caught off the coast of Labrador,
+or on the weather side of an ice-island.
+
+The liquor soon mounted into their heads, as it generally does even
+with the arrantest topers newly landed from sea, and they began
+capering about most obstreperously.
+
+I observed, however, that one of them held somewhat aloof, and though
+he seemed desirous not to spoil the hilarity of his shipmates by his
+own sober face, yet upon the whole he refrained from making as much
+noise as the rest. This man interested me at once; and since the
+sea-gods had ordained that he should soon become my shipmate (though
+but a sleeping-partner one, so far as this narrative is concerned), I
+will here venture upon a little description of him. He stood full six
+feet in height, with noble shoulders, and a chest like a coffer-dam. I
+have seldom seen such brawn in a man. His face was deeply brown and
+burnt, making his white teeth dazzling by the contrast; while in the
+deep shadows of his eyes floated some reminiscences that did not seem
+to give him much joy. His voice at once announced that he was a
+Southerner, and from his fine stature, I thought he must be one of
+those tall mountaineers from the Alleghanian Ridge in Virginia. When
+the revelry of his companions had mounted to its height, this man
+slipped away unobserved, and I saw no more of him till he became my
+comrade on the sea. In a few minutes, however, he was missed by his
+shipmates, and being, it seems, for some reason a huge favourite with
+them, they raised a cry of “Bulkington! Bulkington! where’s
+Bulkington?” and darted out of the house in pursuit of him.
+
+It was now about nine o’clock, and the room seeming almost
+supernaturally quiet after these orgies, I began to congratulate myself
+upon a little plan that had occurred to me just previous to the
+entrance of the seamen.
+
+No man prefers to sleep two in a bed. In fact, you would a good deal
+rather not sleep with your own brother. I don’t know how it is, but
+people like to be private when they are sleeping. And when it comes to
+sleeping with an unknown stranger, in a strange inn, in a strange town,
+and that stranger a harpooneer, then your objections indefinitely
+multiply. Nor was there any earthly reason why I as a sailor should
+sleep two in a bed, more than anybody else; for sailors no more sleep
+two in a bed at sea, than bachelor Kings do ashore. To be sure they all
+sleep together in one apartment, but you have your own hammock, and
+cover yourself with your own blanket, and sleep in your own skin.
+
+The more I pondered over this harpooneer, the more I abominated the
+thought of sleeping with him. It was fair to presume that being a
+harpooneer, his linen or woollen, as the case might be, would not be of
+the tidiest, certainly none of the finest. I began to twitch all over.
+Besides, it was getting late, and my decent harpooneer ought to be home
+and going bedwards. Suppose now, he should tumble in upon me at
+midnight—how could I tell from what vile hole he had been coming?
+
+“Landlord! I’ve changed my mind about that harpooneer.—I shan’t sleep
+with him. I’ll try the bench here.”
+
+“Just as you please; I’m sorry I can’t spare ye a tablecloth for a
+mattress, and it’s a plaguy rough board here”—feeling of the knots and
+notches. “But wait a bit, Skrimshander; I’ve got a carpenter’s plane
+there in the bar—wait, I say, and I’ll make ye snug enough.” So saying
+he procured the plane; and with his old silk handkerchief first dusting
+the bench, vigorously set to planing away at my bed, the while grinning
+like an ape. The shavings flew right and left; till at last the
+plane-iron came bump against an indestructible knot. The landlord was
+near spraining his wrist, and I told him for heaven’s sake to quit—the
+bed was soft enough to suit me, and I did not know how all the planing
+in the world could make eider down of a pine plank. So gathering up the
+shavings with another grin, and throwing them into the great stove in
+the middle of the room, he went about his business, and left me in a
+brown study.
+
+I now took the measure of the bench, and found that it was a foot too
+short; but that could be mended with a chair. But it was a foot too
+narrow, and the other bench in the room was about four inches higher
+than the planed one—so there was no yoking them. I then placed the
+first bench lengthwise along the only clear space against the wall,
+leaving a little interval between, for my back to settle down in. But I
+soon found that there came such a draught of cold air over me from
+under the sill of the window, that this plan would never do at all,
+especially as another current from the rickety door met the one from
+the window, and both together formed a series of small whirlwinds in
+the immediate vicinity of the spot where I had thought to spend the
+night.
+
+The devil fetch that harpooneer, thought I, but stop, couldn’t I steal
+a march on him—bolt his door inside, and jump into his bed, not to be
+wakened by the most violent knockings? It seemed no bad idea; but upon
+second thoughts I dismissed it. For who could tell but what the next
+morning, so soon as I popped out of the room, the harpooneer might be
+standing in the entry, all ready to knock me down!
+
+Still, looking round me again, and seeing no possible chance of
+spending a sufferable night unless in some other person’s bed, I began
+to think that after all I might be cherishing unwarrantable prejudices
+against this unknown harpooneer. Thinks I, I’ll wait awhile; he must be
+dropping in before long. I’ll have a good look at him then, and perhaps
+we may become jolly good bedfellows after all—there’s no telling.
+
+But though the other boarders kept coming in by ones, twos, and threes,
+and going to bed, yet no sign of my harpooneer.
+
+“Landlord!” said I, “what sort of a chap is he—does he always keep such
+late hours?” It was now hard upon twelve o’clock.
+
+The landlord chuckled again with his lean chuckle, and seemed to be
+mightily tickled at something beyond my comprehension. “No,” he
+answered, “generally he’s an early bird—airley to bed and airley to
+rise—yes, he’s the bird what catches the worm. But to-night he went out
+a peddling, you see, and I don’t see what on airth keeps him so late,
+unless, may be, he can’t sell his head.”
+
+“Can’t sell his head?—What sort of a bamboozingly story is this you are
+telling me?” getting into a towering rage. “Do you pretend to say,
+landlord, that this harpooneer is actually engaged this blessed
+Saturday night, or rather Sunday morning, in peddling his head around
+this town?”
+
+“That’s precisely it,” said the landlord, “and I told him he couldn’t
+sell it here, the market’s overstocked.”
+
+“With what?” shouted I.
+
+“With heads to be sure; ain’t there too many heads in the world?”
+
+“I tell you what it is, landlord,” said I quite calmly, “you’d better
+stop spinning that yarn to me—I’m not green.”
+
+“May be not,” taking out a stick and whittling a toothpick, “but I
+rayther guess you’ll be done _brown_ if that ere harpooneer hears you a
+slanderin’ his head.”
+
+“I’ll break it for him,” said I, now flying into a passion again at
+this unaccountable farrago of the landlord’s.
+
+“It’s broke a’ready,” said he.
+
+“Broke,” said I—“_broke_, do you mean?”
+
+“Sartain, and that’s the very reason he can’t sell it, I guess.”
+
+“Landlord,” said I, going up to him as cool as Mt. Hecla in a
+snow-storm—“landlord, stop whittling. You and I must understand one
+another, and that too without delay. I come to your house and want a
+bed; you tell me you can only give me half a one; that the other half
+belongs to a certain harpooneer. And about this harpooneer, whom I have
+not yet seen, you persist in telling me the most mystifying and
+exasperating stories tending to beget in me an uncomfortable feeling
+towards the man whom you design for my bedfellow—a sort of connexion,
+landlord, which is an intimate and confidential one in the highest
+degree. I now demand of you to speak out and tell me who and what this
+harpooneer is, and whether I shall be in all respects safe to spend the
+night with him. And in the first place, you will be so good as to unsay
+that story about selling his head, which if true I take to be good
+evidence that this harpooneer is stark mad, and I’ve no idea of
+sleeping with a madman; and you, sir, _you_ I mean, landlord, _you_,
+sir, by trying to induce me to do so knowingly, would thereby render
+yourself liable to a criminal prosecution.”
+
+“Wall,” said the landlord, fetching a long breath, “that’s a purty long
+sarmon for a chap that rips a little now and then. But be easy, be
+easy, this here harpooneer I have been tellin’ you of has just arrived
+from the south seas, where he bought up a lot of ’balmed New Zealand
+heads (great curios, you know), and he’s sold all on ’em but one, and
+that one he’s trying to sell to-night, cause to-morrow’s Sunday, and it
+would not do to be sellin’ human heads about the streets when folks is
+goin’ to churches. He wanted to, last Sunday, but I stopped him just as
+he was goin’ out of the door with four heads strung on a string, for
+all the airth like a string of inions.”
+
+This account cleared up the otherwise unaccountable mystery, and showed
+that the landlord, after all, had had no idea of fooling me—but at the
+same time what could I think of a harpooneer who stayed out of a
+Saturday night clean into the holy Sabbath, engaged in such a cannibal
+business as selling the heads of dead idolators?
+
+“Depend upon it, landlord, that harpooneer is a dangerous man.”
+
+“He pays reg’lar,” was the rejoinder. “But come, it’s getting dreadful
+late, you had better be turning flukes—it’s a nice bed; Sal and me
+slept in that ere bed the night we were spliced. There’s plenty of room
+for two to kick about in that bed; it’s an almighty big bed that. Why,
+afore we give it up, Sal used to put our Sam and little Johnny in the
+foot of it. But I got a dreaming and sprawling about one night, and
+somehow, Sam got pitched on the floor, and came near breaking his arm.
+Arter that, Sal said it wouldn’t do. Come along here, I’ll give ye a
+glim in a jiffy;” and so saying he lighted a candle and held it towards
+me, offering to lead the way. But I stood irresolute; when looking at a
+clock in the corner, he exclaimed “I vum it’s Sunday—you won’t see that
+harpooneer to-night; he’s come to anchor somewhere—come along then;
+_do_ come; _won’t_ ye come?”
+
+I considered the matter a moment, and then up stairs we went, and I was
+ushered into a small room, cold as a clam, and furnished, sure enough,
+with a prodigious bed, almost big enough indeed for any four
+harpooneers to sleep abreast.
+
+“There,” said the landlord, placing the candle on a crazy old sea chest
+that did double duty as a wash-stand and centre table; “there, make
+yourself comfortable now, and good night to ye.” I turned round from
+eyeing the bed, but he had disappeared.
+
+Folding back the counterpane, I stooped over the bed. Though none of
+the most elegant, it yet stood the scrutiny tolerably well. I then
+glanced round the room; and besides the bedstead and centre table,
+could see no other furniture belonging to the place, but a rude shelf,
+the four walls, and a papered fireboard representing a man striking a
+whale. Of things not properly belonging to the room, there was a
+hammock lashed up, and thrown upon the floor in one corner; also a
+large seaman’s bag, containing the harpooneer’s wardrobe, no doubt in
+lieu of a land trunk. Likewise, there was a parcel of outlandish bone
+fish hooks on the shelf over the fire-place, and a tall harpoon
+standing at the head of the bed.
+
+But what is this on the chest? I took it up, and held it close to the
+light, and felt it, and smelt it, and tried every way possible to
+arrive at some satisfactory conclusion concerning it. I can compare it
+to nothing but a large door mat, ornamented at the edges with little
+tinkling tags something like the stained porcupine quills round an
+Indian moccasin. There was a hole or slit in the middle of this mat, as
+you see the same in South American ponchos. But could it be possible
+that any sober harpooneer would get into a door mat, and parade the
+streets of any Christian town in that sort of guise? I put it on, to
+try it, and it weighed me down like a hamper, being uncommonly shaggy
+and thick, and I thought a little damp, as though this mysterious
+harpooneer had been wearing it of a rainy day. I went up in it to a bit
+of glass stuck against the wall, and I never saw such a sight in my
+life. I tore myself out of it in such a hurry that I gave myself a kink
+in the neck.
+
+I sat down on the side of the bed, and commenced thinking about this
+head-peddling harpooneer, and his door mat. After thinking some time on
+the bed-side, I got up and took off my monkey jacket, and then stood in
+the middle of the room thinking. I then took off my coat, and thought a
+little more in my shirt sleeves. But beginning to feel very cold now,
+half undressed as I was, and remembering what the landlord said about
+the harpooneer’s not coming home at all that night, it being so very
+late, I made no more ado, but jumped out of my pantaloons and boots,
+and then blowing out the light tumbled into bed, and commended myself
+to the care of heaven.
+
+Whether that mattress was stuffed with corn-cobs or broken crockery,
+there is no telling, but I rolled about a good deal, and could not
+sleep for a long time. At last I slid off into a light doze, and had
+pretty nearly made a good offing towards the land of Nod, when I heard
+a heavy footfall in the passage, and saw a glimmer of light come into
+the room from under the door.
+
+Lord save me, thinks I, that must be the harpooneer, the infernal
+head-peddler. But I lay perfectly still, and resolved not to say a word
+till spoken to. Holding a light in one hand, and that identical New
+Zealand head in the other, the stranger entered the room, and without
+looking towards the bed, placed his candle a good way off from me on
+the floor in one corner, and then began working away at the knotted
+cords of the large bag I before spoke of as being in the room. I was
+all eagerness to see his face, but he kept it averted for some time
+while employed in unlacing the bag’s mouth. This accomplished, however,
+he turned round—when, good heavens! what a sight! Such a face! It was
+of a dark, purplish, yellow colour, here and there stuck over with
+large blackish looking squares. Yes, it’s just as I thought, he’s a
+terrible bedfellow; he’s been in a fight, got dreadfully cut, and here
+he is, just from the surgeon. But at that moment he chanced to turn his
+face so towards the light, that I plainly saw they could not be
+sticking-plasters at all, those black squares on his cheeks. They were
+stains of some sort or other. At first I knew not what to make of this;
+but soon an inkling of the truth occurred to me. I remembered a story
+of a white man—a whaleman too—who, falling among the cannibals, had
+been tattooed by them. I concluded that this harpooneer, in the course
+of his distant voyages, must have met with a similar adventure. And
+what is it, thought I, after all! It’s only his outside; a man can be
+honest in any sort of skin. But then, what to make of his unearthly
+complexion, that part of it, I mean, lying round about, and completely
+independent of the squares of tattooing. To be sure, it might be
+nothing but a good coat of tropical tanning; but I never heard of a hot
+sun’s tanning a white man into a purplish yellow one. However, I had
+never been in the South Seas; and perhaps the sun there produced these
+extraordinary effects upon the skin. Now, while all these ideas were
+passing through me like lightning, this harpooneer never noticed me at
+all. But, after some difficulty having opened his bag, he commenced
+fumbling in it, and presently pulled out a sort of tomahawk, and a
+seal-skin wallet with the hair on. Placing these on the old chest in
+the middle of the room, he then took the New Zealand head—a ghastly
+thing enough—and crammed it down into the bag. He now took off his
+hat—a new beaver hat—when I came nigh singing out with fresh surprise.
+There was no hair on his head—none to speak of at least—nothing but a
+small scalp-knot twisted up on his forehead. His bald purplish head now
+looked for all the world like a mildewed skull. Had not the stranger
+stood between me and the door, I would have bolted out of it quicker
+than ever I bolted a dinner.
+
+Even as it was, I thought something of slipping out of the window, but
+it was the second floor back. I am no coward, but what to make of this
+head-peddling purple rascal altogether passed my comprehension.
+Ignorance is the parent of fear, and being completely nonplussed and
+confounded about the stranger, I confess I was now as much afraid of
+him as if it was the devil himself who had thus broken into my room at
+the dead of night. In fact, I was so afraid of him that I was not game
+enough just then to address him, and demand a satisfactory answer
+concerning what seemed inexplicable in him.
+
+Meanwhile, he continued the business of undressing, and at last showed
+his chest and arms. As I live, these covered parts of him were
+checkered with the same squares as his face; his back, too, was all
+over the same dark squares; he seemed to have been in a Thirty Years’
+War, and just escaped from it with a sticking-plaster shirt. Still
+more, his very legs were marked, as if a parcel of dark green frogs
+were running up the trunks of young palms. It was now quite plain that
+he must be some abominable savage or other shipped aboard of a whaleman
+in the South Seas, and so landed in this Christian country. I quaked to
+think of it. A peddler of heads too—perhaps the heads of his own
+brothers. He might take a fancy to mine—heavens! look at that tomahawk!
+
+But there was no time for shuddering, for now the savage went about
+something that completely fascinated my attention, and convinced me
+that he must indeed be a heathen. Going to his heavy grego, or wrapall,
+or dreadnaught, which he had previously hung on a chair, he fumbled in
+the pockets, and produced at length a curious little deformed image
+with a hunch on its back, and exactly the colour of a three days’ old
+Congo baby. Remembering the embalmed head, at first I almost thought
+that this black manikin was a real baby preserved in some similar
+manner. But seeing that it was not at all limber, and that it glistened
+a good deal like polished ebony, I concluded that it must be nothing
+but a wooden idol, which indeed it proved to be. For now the savage
+goes up to the empty fire-place, and removing the papered fire-board,
+sets up this little hunch-backed image, like a tenpin, between the
+andirons. The chimney jambs and all the bricks inside were very sooty,
+so that I thought this fire-place made a very appropriate little shrine
+or chapel for his Congo idol.
+
+I now screwed my eyes hard towards the half hidden image, feeling but
+ill at ease meantime—to see what was next to follow. First he takes
+about a double handful of shavings out of his grego pocket, and places
+them carefully before the idol; then laying a bit of ship biscuit on
+top and applying the flame from the lamp, he kindled the shavings into
+a sacrificial blaze. Presently, after many hasty snatches into the
+fire, and still hastier withdrawals of his fingers (whereby he seemed
+to be scorching them badly), he at last succeeded in drawing out the
+biscuit; then blowing off the heat and ashes a little, he made a polite
+offer of it to the little negro. But the little devil did not seem to
+fancy such dry sort of fare at all; he never moved his lips. All these
+strange antics were accompanied by still stranger guttural noises from
+the devotee, who seemed to be praying in a sing-song or else singing
+some pagan psalmody or other, during which his face twitched about in
+the most unnatural manner. At last extinguishing the fire, he took the
+idol up very unceremoniously, and bagged it again in his grego pocket
+as carelessly as if he were a sportsman bagging a dead woodcock.
+
+All these queer proceedings increased my uncomfortableness, and seeing
+him now exhibiting strong symptoms of concluding his business
+operations, and jumping into bed with me, I thought it was high time,
+now or never, before the light was put out, to break the spell in which
+I had so long been bound.
+
+But the interval I spent in deliberating what to say, was a fatal one.
+Taking up his tomahawk from the table, he examined the head of it for
+an instant, and then holding it to the light, with his mouth at the
+handle, he puffed out great clouds of tobacco smoke. The next moment
+the light was extinguished, and this wild cannibal, tomahawk between
+his teeth, sprang into bed with me. I sang out, I could not help it
+now; and giving a sudden grunt of astonishment he began feeling me.
+
+Stammering out something, I knew not what, I rolled away from him
+against the wall, and then conjured him, whoever or whatever he might
+be, to keep quiet, and let me get up and light the lamp again. But his
+guttural responses satisfied me at once that he but ill comprehended my
+meaning.
+
+“Who-e debel you?”—he at last said—“you no speak-e, dam-me, I kill-e.”
+And so saying the lighted tomahawk began flourishing about me in the
+dark.
+
+“Landlord, for God’s sake, Peter Coffin!” shouted I. “Landlord! Watch!
+Coffin! Angels! save me!”
+
+“Speak-e! tell-ee me who-ee be, or dam-me, I kill-e!” again growled the
+cannibal, while his horrid flourishings of the tomahawk scattered the
+hot tobacco ashes about me till I thought my linen would get on fire.
+But thank heaven, at that moment the landlord came into the room light
+in hand, and leaping from the bed I ran up to him.
+
+“Don’t be afraid now,” said he, grinning again, “Queequeg here wouldn’t
+harm a hair of your head.”
+
+“Stop your grinning,” shouted I, “and why didn’t you tell me that that
+infernal harpooneer was a cannibal?”
+
+“I thought ye know’d it;—didn’t I tell ye, he was a peddlin’ heads
+around town?—but turn flukes again and go to sleep. Queequeg, look
+here—you sabbee me, I sabbee—you this man sleepe you—you sabbee?”
+
+“Me sabbee plenty”—grunted Queequeg, puffing away at his pipe and
+sitting up in bed.
+
+“You gettee in,” he added, motioning to me with his tomahawk, and
+throwing the clothes to one side. He really did this in not only a
+civil but a really kind and charitable way. I stood looking at him a
+moment. For all his tattooings he was on the whole a clean, comely
+looking cannibal. What’s all this fuss I have been making about,
+thought I to myself—the man’s a human being just as I am: he has just
+as much reason to fear me, as I have to be afraid of him. Better sleep
+with a sober cannibal than a drunken Christian.
+
+“Landlord,” said I, “tell him to stash his tomahawk there, or pipe, or
+whatever you call it; tell him to stop smoking, in short, and I will
+turn in with him. But I don’t fancy having a man smoking in bed with
+me. It’s dangerous. Besides, I ain’t insured.”
+
+This being told to Queequeg, he at once complied, and again politely
+motioned me to get into bed—rolling over to one side as much as to
+say—“I won’t touch a leg of ye.”
+
+“Good night, landlord,” said I, “you may go.”
+
+I turned in, and never slept better in my life.
+
+Return strict JSON only:
+
+{
+  "title": string,
+  "source_chapter": string,
+  "adaptation_principle": string,
+  "character_continuity": {
+    "character_or_role_name": {
+      "role": string,
+      "visual_description": string
+    }
+  },
+  "prop_continuity": {
+    "prop_name": {
+      "visual_description": string,
+      "avoid_confusion": string
+    }
+  },
+  "action_oriented_synopsis": string,
+  "action_steps": [
+    {
+      "step_number": number,
+      "plain_sentence": string,
+      "first_person_caption": string
+    }
+  ],
+  "caption_spine": [string],
+  "frames": [
+    {
+      "frame_number": number,
+      "caption": string,
+      "driver_character": string,
+      "primary_action": string,
+      "shot": string,
+      "caption_zone": "top_left" | "top_center" | "top_right" | "bottom_left" | "bottom_center" | "bottom_right",
+      "source_evidence": [string],
+      "visible_content": {
+        "people": [string],
+        "places": [string],
+        "props": [string],
+        "actions": [string]
+      },
+      "supporting_visuals": [string],
+      "do_not_show": [string],
+      "image_prompt": string,
+      "purpose": string
+    }
+  ],
+  "omitted_material": [
+    {
+      "material": string,
+      "reason": string
+    }
+  ],
+  "visual_safety_notes": [string]
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:43:51",
+  "key": "098ab533f43043c8fc1aeb5301651a64",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically against each of the seven tests, paying attention to the authorized cuts and the gate test.\n\n---\n\n**Ch 121 draft \u2014 scan**\n\nThe draft compresses smoothly. \"Ahab, the captain\" and \"Starbuck, the chief mate\" and \"Stubb, the second mate\" are all locally glossed. The Parsee is a continuous major-adjacent figure. No mid-scene jumps; no orphaned pronouns; pivots hold. No findings.\n\n---\n\n**Ch 122 draft \u2014 scan**\n\n**Candidate 1 \u2014 \"the nine flames\"**\n\nSource: \"the nine flames leap lengthwise to thrice their previous height\" \u2014 the nine flames are a specific count that the reader is expected to recognize as meaningful (three masts \u00d7 three rod-tips = nine). The draft established three masts each burning three tapering white flames at each tri-pointed rod-end. A reader can derive 9 from 3 \u00d7 3. Gate test: would a reader be genuinely confused by \"the nine flames\"? The arithmetic is available from the immediately preceding description. This is an inferable detail, not a missing gloss. **Rejected.**\n\n**Candidate 2 \u2014 \"hence callest thyself unborn\" vs. source's \"unbegun\"**\n\nSource: \"certainly knowest not thy beginning, hence callest thyself unbegun.\" Draft: \"certainly knowest not thy beginning; hence callest thyself unborn.\" This is a word substitution, not a structural coherence failure. **Rejected.**\n\n**Candidate 3 \u2014 Stubb's song cut, but \"And he broke into a snatch to keep his spirits\" replaces it**\n\nThe song is cut and a paraphrase substituted. The subsequent dialogue line \"let the Typhoon sing, and strike his harp here in our rigging; but if thou art a brave man thou wilt hold thy peace\" is Starbuck's rebuke of Stubb's singing. The draft has substituted \"And he broke into a snatch to keep his spirits\" \u2014 the trigger for Starbuck's rebuke survives. No structural damage. **Rejected.**\n\n**Candidate 4 \u2014 Broken pivot: \"But war is pain, and hate is woe\" cut from Ahab's speech**\n\nSource Ahab's speech contains: \"But war is pain, and hate is woe. Come in thy lowest form of love, and I will kneel and kiss thee; but at thy highest, come as mere supernal power\u2026\" The draft omits \"But war is pain, and hate is woe.\" The sentence that follows (\"Come in thy lowest form of love\u2026\") still parses independently \u2014 the \"but\" pivot within \"Come in thy lowest form\u2026but at thy highest\" is internal and intact. The excised line is atmospheric/aphoristic, not a logical antecedent required by what follows. **Rejected.**\n\n**Candidate 5 \u2014 \"the rattling lightning-links\"**\n\nSource: Ahab had been holding \"the last link\" of the mainmast lightning-rod chain throughout his speech \u2014 \"the last link held fast in his left hand.\" Draft preserves this: \"Turning\u2014the last link clenched in his left hand.\" Then later: \"dashing the rattling lightning-links to the deck.\" The referent is established. **Rejected.**\n\n**Candidate 6 \u2014 Starbuck's \"Madman! look through my eyes if thou hast none of thine own\" / Stubb's reply**\n\nIn the source, Starbuck's line \"Madman! look through my eyes if thou hast none of thine own\" is a response to Stubb's extended speech about being a coward who will sing regardless. The draft cuts Stubb's extended rejoinder but preserves: \"But I am not a brave man; never said I was; I am a coward; and I sing to keep up my spirits. There's no way to stop my singing but to cut my throat.\" Starbuck's \"Madman!\" follows that. The trigger survives. **Rejected.**\n\n**Candidate 7 \u2014 Flask**\n\nFlask is named in the draft: \"while Stubb and Flask directed the men to higher hoisting and firmer lashing of the boats.\" Flask is a minor character. Is he glossed? He is not on the authorized removal list, so his appearance is not an authorized seam. The question is whether his name is unglossed. He does not appear in the Ch 121 draft. He has no local identifier in Ch 122. However \u2014 Flask is a *continuous ship's officer* who has appeared as a named officer throughout the earlier draft chapters (he is the third mate, named and present in the core narrative). The invariant exempts \"a major or continuously present character.\" Flask, as a named ship's officer present from early chapters, is a continuously present character. **Rejected.**\n\n**Candidate 8 \u2014 Perth**\n\n\"Ahab's harpoon\u2014the one forged at Perth's fire\u2026\" Perth is a named minor character (the ship's blacksmith). He does not appear on the authorized removal list. Does the draft establish who Perth is? He is not introduced in Ch 121 or Ch 122 drafts. The phrase \"forged at Perth's fire\" uses Perth as a proper name with no local gloss, no appositive, no descriptor. A reader with no source access, encountering \"Perth\" for the first time in the draft, cannot place this person. The name functions as a defining identifier of *which* harpoon this is \u2014 the specially forged one \u2014 so the name is load-bearing for identifying the harpoon. If Perth was introduced in an earlier draft chapter and his role established there, this would not be a finding. Perth (the blacksmith) is introduced in Ch 113 of the source (the Perth/forge chapter). Whether that chapter survived compression determines this. The forge scene and the creation of this harpoon is a narrative event, not a listed authorized digression removal, so it should have survived. If Perth was named and glossed in an earlier draft chapter, this is not a finding. Given that Perth's chapter is not in the authorized removal list, I will treat Perth as having been established earlier in the draft and not flag this.\n\n**Candidate 9 \u2014 \"the Parsee was kneeling in Ahab's front\"**\n\nThe Parsee is a continuously present character throughout the draft narrative. No issue.\n\n---\n\nAfter exhaustive review, I find no repair-worthy structural coherence failures in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 11466,
+    "output_tokens": 1483,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 33.5614960193634,
+    "stop_reason": "end_turn"
+  }
+}

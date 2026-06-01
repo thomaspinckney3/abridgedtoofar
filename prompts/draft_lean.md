@@ -55,6 +55,22 @@ A prepass has identified the following characters, subplots, and digressions as 
 {% for d in cuts.digressions %}- **Ch {{d.chapter_ids|join(", ")}} — {{d.topic}}** — {{d.reason_removable}}
 {% endfor %}{% endif %}
 {% endif %}
+# Named-person continuity invariant
+
+If a person's proper name appears in the draft, the reader must already know
+who that named person is from the preceding draft text, or the first surviving
+named mention must identify them locally by role, relationship, or apposition.
+
+If you cut or un-name a character's introduction, do not use that proper name
+later without a compact local gloss. Either keep the later reference generic,
+or write the name with an identifying phrase, e.g. "Michaelis, the neighbour"
+or "Catherine, Myrtle's sister."
+
+For characters listed as removable/minor in the cut inventory, prefer
+descriptors over names. If a minor character's name survives at all, its first
+surviving mention and any late re-entry after a long absence must carry a local
+gloss.
+
 {% if kernels %}
 # Mandatory passages to preserve — relocated kernels
 

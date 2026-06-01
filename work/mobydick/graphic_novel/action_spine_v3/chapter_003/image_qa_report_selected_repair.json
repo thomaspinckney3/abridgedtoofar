@@ -1,0 +1,147 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/candidate_frames_selected_repair",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The Spouter-Inn’s smoke-dark whaling painting is depicted as a conventional marine seascape, breaking prop continuity.",
+          "visible_evidence": "On the left wall above the bench there is a framed painting of a ship on open water with clear tones, not a smoke-blackened abstract scene with a looming dark mass and three faint blue verticals.",
+          "repair_prompt": "Replace the left-wall artwork with the correct smoke-blackened, abstract whaling painting: a large soot-dark canvas showing a looming dark shape above three faint blue vertical strokes in a stormy, chaotic sea; no labels or plaques."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "A giant toothed jawbone arch dominates the backbar area, an unspecific extra prop not called for in this frame.",
+          "visible_evidence": "Behind the landlord, large curved jaws with many sharp teeth form an arch over the counter and shelves.",
+          "repair_prompt": "Remove or reduce the prominence of the giant jawbone; emphasize low beams, unlabeled bottles, and cracked curios cases instead."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Specified candle prop is missing.",
+          "visible_evidence": "No candle or holder is visible on walls, table surfaces, stove, or window ledge.",
+          "repair_prompt": "Add a plain tallow candle in a small brass or tin holder on a nearby ledge or stool near the bench, with a modest flame and no readable labels; keep the top-right caption area clear."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Landlord is actively planing rather than lowering the plane as described.",
+          "visible_evidence": "Peter Coffin is shown pushing a carpenter’s plane across a board on a workbench with shavings curling up.",
+          "repair_prompt": "Pose the landlord a step later in the motion with the plane lowered at his side or just set down on the bench, glancing toward Ishmael."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Wood shavings are concentrated by the workbench rather than near the bench where Ishmael attempts to lie.",
+          "visible_evidence": "Shavings are visible on the floor under and beside the workbench on the left; the floor around the bench on the right is mostly clean.",
+          "repair_prompt": "Scatter a few wood shavings near the base of the wooden bench to echo recent carpentry without cluttering the caption zone."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "readable_text",
+          "finding": "Readable numerals on the wall clock, which the storyboard prohibits.",
+          "visible_evidence": "Roman numerals around the clock face are clearly legible.",
+          "repair_prompt": "Obscure the clock face so numerals are not readable—deepen the shadow, reduce contrast, or use a blank/diffuse face while keeping the hands to suggest a late hour."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Papered fireboard absent even though it is a specified visible prop.",
+          "visible_evidence": "No hearth or thin papered panel is visible on any wall; the left wall shows a lashed hammock and harpoon, and the back/right walls are bare plaster.",
+          "repair_prompt": "Add a small fireplace on one wall with a thin papered fireboard covering the opening; keep the paper pattern indistinct with no readable text or imagery and place it where it won’t intrude into the top-center caption space."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Supporting visual 'rude shelf with odd bone hooks' is missing.",
+          "visible_evidence": "Room walls are bare aside from the hammock; no shelf or bone hooks are present.",
+          "repair_prompt": "Include a rough wooden wall shelf with several odd bone hooks beneath it on a side wall, rendered low-contrast so it doesn’t pull focus from Ishmael, the landlord, and the bed."
+        }
+      ]
+    },
+    {
+      "frame_number": 6,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Bottom-right caption zone is busy with high-contrast props and textures.",
+          "visible_evidence": "A bright seaman’s bag and the preserved head sit in the lower-right corner beside a chair and coat, leaving no clean negative space.",
+          "repair_prompt": "Reserve clean negative space in the bottom-right by moving the seaman’s bag and preserved head left of the hearth or into mid-ground, remove the chair from the corner, and keep that quadrant a low-detail floor/wall gradient suitable for lettering."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Tomahawk-pipe is depicted as a standard straight pipe rather than a hatchet-shaped pipe.",
+          "visible_evidence": "On the sea chest, the pipe has only a stem and bowl with no hatchet head.",
+          "repair_prompt": "Replace the plain pipe with a tomahawk-shaped pipe: a small hatchet head with the tobacco bowl at the blade and a mouthpiece at the handle; place it next to the seal-skin wallet on the sea chest and keep it clearly a pipe, not a separate weapon."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "A large wooden chest with coiled rope appears in the room though not specified and may distract or imply incorrect luggage.",
+          "visible_evidence": "Left foreground shows a rigid wooden chest with metal hardware and a thick rope coil draped over it.",
+          "repair_prompt": "Remove the wooden chest and rope, or replace them with background-neutral elements that do not imply luggage."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Luggage is depicted as a hard trunk rather than the specified soft-sided seaman’s bag, risking confusion with the prop continuity.",
+          "visible_evidence": "Foreground luggage is a boxy wooden chest; no canvas sea-bag with knotted cords is visible.",
+          "repair_prompt": "Swap the wooden chest for a weathered canvas sea-bag cinched with rope and knotted cords; place it near the bed or wall."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Ash flecks from the pipe bowl on the blanket are unclear or absent.",
+          "visible_evidence": "Blanket surface appears uniform; only pipe smoke is visible above the bed.",
+          "repair_prompt": "Add a few subtle ash specks on the blanket beneath the pipe bowl without drawing focus from the main action."
+        }
+      ]
+    },
+    {
+      "frame_number": 8,
+      "valid": true,
+      "findings": []
+    }
+  ],
+  "valid": false
+}

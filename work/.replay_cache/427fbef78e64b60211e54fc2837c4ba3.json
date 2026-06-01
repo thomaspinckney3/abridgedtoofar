@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T11:40:24",
+  "key": "427fbef78e64b60211e54fc2837c4ba3",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"The Nellie, a cruising yawl, swung to her anchor... Marlow sat cross-legged right aft... We felt meditative... dusk deepens... 'I was thinking of very old times... that I had a hankering after' [another river/blank space]\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"'I had an aunt, a dear enthusiastic soul... She was determined to make no end of fuss to get me appointed skipper'; 'a city that always makes me think of a whited sepulchre'; 'Two women, one fat and the other slim, sat on straw-bottomed chairs, knitting black wool'; doctor measuring his head; predecessor Fresleven 'killed in a scuffle with the natives' over 'a misunderstanding about some hens'\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"'A rocky cliff... rusting machinery... objectless blasting'; 'grove of death' paralleled by 'gloomy circle of some Inferno... Black shapes crouched... dying slowly'; accountant described as immaculately dressed keeping books 'in apple-pie order'; ''In the interior you will no doubt meet Mr. Kurtz... Sends in as much ivory as all the others put together'\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"'my steamer was at the bottom of the river. The steamer had started in a sudden hurry up the river with the manager on board; they tore the bottom out of her on stones'; manager described as inspiring uneasiness; 'a taint of imbecile rapacity blew through it all'\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"'What I really wanted was rivets'; 'A small sketch arrested me: a woman, draped and blindfolded, carrying a lighted torch... Mr. Kurtz had painted this'; brickmaker 'the business intrusted to him was the making of bricks; but there wasn't a fragment of a brick anywhere'; Kurtz called 'a prodigy... universal genius'\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"'I had given up worrying myself about the rivets'; Eldorado Exploring Expedition described as 'sordid buccaneers\u2014reckless without hardihood, greedy without audacity'; 'The word ivory rang in the air, was whispered, was sighed'\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"'We penetrated deeper and deeper into the heart of darkness'; crew includes cannibals ('twenty cannibals splashing around'); 'pilgrims' with rifles; manager on board; 'We were wanderers on a prehistoric earth'\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"'At night sometimes the roll of drums behind the curtain of trees'; fog episode; arrows attack: 'the helmsman... fell upon my feet' killed by spear; 'I jerked the steam-whistle out screech after screech. The tumult of yells was checked instantly'\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"'a hut of reeds... a neatly stacked wood-pile... faded pencil-writing: Wood for you. Hurry up. Approach cautiously'; 'a book... An Inquiry into some Points of Seamanship... notes pencilled in the margin\u2014in cipher!'\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"Russian described as wearing patched clothes, 'a beardless, boyish face'; 'babbles with awed devotion' reflected in 'You don't talk with that man\u2014you listen to him'; heads on stakes: 'these round knobs were not ornamental but symbolic... heads on the stakes'\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Russian admits Kurtz 'wanted to shoot me, too, one day' over ivory; 'They adored him... he came to them with thunder and lightning'; the wild woman appears on shore described as bound to Kurtz by 'passion and power'\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"'a stretcher in their midst... The man on it sat up, lank, with an uplifted arm... Kurtz\u2014Kurtz... He looked at least seven feet long... skeletal'; 'the crowd vanished, without perceptible retreat, as if the forest had drawn them in again'\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"'My Intended, my ivory, my station, my river, my\u2014everything belonged to him'; manager calls his methods 'unsound'; Russian's ecstatic loyalty throughout; Kurtz described as largely a voice: 'A voice! a voice! Grave, profound, vibrating'\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"'the International Society for the Suppression of Savage Customs had intrusted him with the making of a report... It was eloquent, vibrating with eloquence... at the end of that moving appeal... it blazed at you... Exterminate all the brutes!'\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"'I had cut him off cleverly... I had to deal with a being to whom I could not appeal in the name of anything high or low... I had, even like the niggers, to invoke him\u2014himself... There was nothing either above or below him'; Marlow appeals to 'Your success in Europe is assured in any case' and coaxes him back\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"'the woman with helmeted head and tawny cheeks rushed out to the very brink. She put out her hands, shouted'; 'The manager was placid; he had no vital anxieties now. The affair had come off as could be wished'\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"'Kurtz discoursed... images of wealth and fame... My Intended, my station, my career... He desired to have kings meet him at railway-stations on his return'; 'a veil had been rent... he cried out twice, a cry that was no more than a breath: The horror! The horror!'\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"Marlow 'gravely ill' implied ('they very nearly buried me'); 'He gave me a packet of papers and a photograph'; 'I had refused to give up the smallest scrap' to the Company's representative; 'I offered him the report... with the postscriptum torn off'\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"'another fellow, calling himself Kurtz's cousin appeared: an organist... Kurtz had been essentially a great musician'; 'a journalist... informed me Kurtz's proper sphere ought to have been politics on the popular side'\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"'It was more than a year since his death; she seemed as though she would mourn forever'; drawing room visit; 'I want you\u2014you who have heard his last words'\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"'The last word he pronounced was\u2014your name.' 'I pulled myself together and spoke slowly'\u2014Marlow lies that Kurtz died with her name on his lips\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"'It would have been too dark\u2014too dark altogether'; the lie sustains 'that great and saving illusion that shone with an unearthly glow in the darkness'; Marlow's reflection on imperial fictions implied throughout\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"'the tranquil waterway leading to the uttermost ends of the earth flowed sombre under an overcast sky\u2014seemed to lead into the heart of an immense darkness'; frame closes on the Thames with listeners\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"'What redeems it is the idea only... not a sentimental pretence but an idea'; Kurtz's humanitarian rhetoric shown as screen for 'Exterminate all the brutes!'; 'a taint of imbecile rapacity'\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"'All Europe contributed to the making of Kurtz'; 'It echoed loudly within him because he was hollow at the core'; Kurtz undone by eloquence: 'It survived his strength to hide in the magnificent folds of eloquence the barren darkness of his heart'\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"'the wilderness had found him out early... I think it had whispered to him things about himself which he did not know'; heads on stakes described as logical result: 'Mr. Kurtz lacked restraint in the gratification of his various lusts'; wilderness as mirror of what men carry\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"helmsman's bond: 'a subtle bond had been created'; accountant's collars praised; Russian's 'pure, foolish wonder': 'the absolutely uncalculating spirit of adventure'; Intended's 'unwavering love' throughout her scene\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"'the dominant thought' of Marlow's vision of soul's exposure: 'Being alone, it had looked within itself, and, by heavens! it had gone mad'; 'The horror! The horror!' as compressed judgment echoing throughout\", \"note\": \"\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"'the tranquil waterway... flowed sombre under an overcast sky\u2014seemed to lead into the heart of an immense darkness'; frame closes where it began on the Thames; listeners feel the darkness\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 33196,
+    "output_tokens": 2484,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 56.99502182006836,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:16:37",
+  "key": "4f3be1b04ec1ebf644d4d01d2990a04d",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the drafts systematically, applying each test.\n\n**Ch 023 Draft Analysis:**\n\nMost compression is clean. One potential issue: \"Yet, in the full delight of his endless fun and variety, one felt the old conundrum repeat itself.\" The source introduced this \"conundrum\" (the wave-length discord between English and American) in the same passage, and the draft preserves enough context. Not a problem.\n\nThe draft drops \"He must return to America to get one\" (companion) between the east/companion passage and \"He went home as a horse goes back to his stable.\" Still parses fine.\n\n\"St. Gaudens\" in the lecturing passage \u2014 St. Gaudens is on the authorized removal list, but he appears in this chapter as the sculptor of the Rock Creek figure. The draft retains \"St. Gaudens\" in the Rock Creek section (correctly) and also in the lecturing passage (\"Adams enjoyed lecturing St. Gaudens\"). The source says \"Augustus St. Gaudens\" \u2014 the draft shortens to \"St. Gaudens.\" Since St. Gaudens is mentioned earlier in the draft as the sculptor, reference is clear. No problem.\n\n**Ch 026 Draft Analysis:**\n\n**\"His solitude was broken in November by the chance arrival of an old friend through whom contact with the medieval imagination had a new value\u2014an artist who alone among Adams's acquaintance could use glass like a thirteenth-century artist, and who led him back to Chartres.\"**\n\nLa Farge is on the authorized removal list. The draft anonymizes him as \"an old friend.\" But the source passage introducing La Farge contains a rich, multi-paragraph characterization (his mind, his method, the Whistler dinner scene) \u2014 all cut. The sentence now says \"an old friend... who led him back to Chartres.\" La Farge also appeared in Ch 023 source (\"He had just come up from the South Seas with John La Farge\") but the Ch 023 *draft* retains him: \"He had just come up from the South Seas with John La Farge.\" So La Farge is named in the preceding draft chapter. However, the Ch 026 draft anonymizes him \u2014 a reader who has read only the draft of Ch 026 sees \"an old friend\" with no name given. Since La Farge was named in the Ch 023 draft and the authorized cut specifically removes him as a minor character, this anonymization is an *expected* residue of the authorized cut. Not a finding.\n\n**\"Adams went at once to Washington to find out what had become of Hay. Nothing good could be hoped, for Hay's troubles had begun, and were quite as great as he had foreseen. But all this worry on Hay's account fretted him not nearly so much as the Boer War did on his own.\"**\n\nThe source has an intervening passage: Adams was glad to get La Farge back to New York on January 15, 1900, and *then* went to Washington. The draft omits this transition but the sentence still parses \u2014 it's a temporal skip, not a structural break. The \"but\" here: \"But all this worry on Hay's account fretted him not nearly so much as the Boer War did on his own.\" In the source, this pivot follows \"He saw as little encouragement as Hay himself did, though he dared not say so. He doubted Hay's endurance, the President's firmness... but all this worry...\" The draft keeps \"Nothing good could be hoped, for Hay's troubles had begun... But all this worry...\" \u2014 the contrast still has both sides present in the draft. Not broken.\n\n**\"President Cleveland set aside Hewitt; President Harrison set aside Hay. 'There is no politics in it,' was his comment on Hay's appointment to office.\"**\n\nSource: \"President Cleveland set aside the one; President Harrison set aside the other. 'There is no politics in it,' was his comment on Hay's appointment to office.\" The pronoun \"his\" refers to President Harrison. In the source, this is clear from \"President Harrison set aside the other.\" In the draft, it reads \"President Harrison set aside Hay. 'There is no politics in it,' was his comment on Hay's appointment to office.\" \u2014 \"his\" could refer to Harrison or could ambiguously refer to Hay. But in context, \"his comment on Hay's appointment to office\" makes Harrison the speaker (the one who set Hay aside comments on the appointment). A competent reader would understand Harrison is speaking. Not genuinely confusing.\n\n**\"These forces, acting with the regular opposition and the natural obstructionists, could always stop action in the Senate.\"**\n\nThe source names \"The German Minister, Von Holleben\" alongside Count Cassini and \"the Clan-na-Gael\" as the forces. The draft's previous sentence names only Count Cassini and \"the German and Russian legations\" (without naming Von Holleben, who is on the authorized removal list, and without naming the Clan-na-Gael). \"These forces\" \u2014 the draft has named \"The interference of the German and Russian legations\" and \"Count Cassini.\" \"These forces\" refers back to these. Slightly vague (how many forces?), but the reader can follow that the legations + Cassini = \"these forces.\" Not genuinely confusing; authorized cut of Von Holleben explains the compression.\n\n**\"Although, as education, this branch of study was more familiar and older than the twelfth century, the task of bringing the two periods into a common relation was new.\"**\n\nSource: \"Although, as education, this branch of study was more familiar and older than the twelfth century...\" \u2014 \"this branch of study\" refers to the political study of Hay's difficulties and the Senate. But in the draft, the preceding paragraph is about Hay \"fading\" and office corrupting him, ending with \"the irritations multiplied.\" There is no sentence in the draft explicitly naming the \"branch of study\" as political observation/Senate dynamics. In the source, this sentence follows discussion of Adams having \"said all he had to say about it in a dozen or more volumes relating to the politics of a hundred years before\" and the spectacle being \"so familiar as to be humorous\" \u2014 political study. In the draft, this context is partially present (the Senate/politics discussion precedes), but the phrase \"this branch of study\" lacks a clear referent that was named as a \"branch of study\" anywhere in the draft. A reader would struggle to identify what \"this branch of study\" is \u2014 politics? Senate mechanics? twelfth-century church history (which was discussed earlier in the same draft chapter)?\n\nThis is a genuine dangling reference: \"this branch of study\" has no unambiguous antecedent in the draft because the source's explicit setup (\"To Adams, who, like Hay, had seen a dozen acquaintances struggling with the same enemies, the question had scarcely the interest of a new study. He had said all he had to say about it in a dozen or more volumes...\") that establishes \"political study\" as *the* branch being referenced was cut from the draft.\n\n```json\n[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Although, as education, this branch of study was more familiar and older than the twelfth century, the task of bringing the two periods into a common relation was new.\",\n    \"source_has\": \"Source precedes this sentence with: 'To Adams, who, like Hay, had seen a dozen acquaintances struggling with the same enemies, the question had scarcely the interest of a new study. He had said all he had to say about it in a dozen or more volumes relating to the politics of a hundred years before. To him, the spectacle was so familiar as to be humorous.' \u2014 establishing that 'this branch of study' = political/Senate observation, before the sentence about bringing it into relation with the twelfth century.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'this branch of study' has no named antecedent in the draft \u2014 the immediately preceding paragraph is about Hay personally fading, and earlier in the chapter the draft discusses both twelfth-century church history and Senate politics, leaving the reader unable to determine which 'branch of study' is meant to be older and more familiar than the twelfth century.\"\n  }\n]\n```",
+    "input_tokens": 28028,
+    "output_tokens": 1905,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 44.41928815841675,
+    "stop_reason": "end_turn"
+  }
+}

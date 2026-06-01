@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:13:37",
+  "key": "e621a68a2c2ae77ccf4b2e327752428a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the five tests and the gate test to every sentence that looks potentially damaged.\n\n---\n\n**CH 013 \u2014 scanning**\n\nThe draft is a tight compression of the source and handles it well. No pronouns lose their antecedents; logical pivots survive; the famous \"superfluous \u2026 this is war\" passage and the Russell biography debate are all intact. The one place worth scrutinizing is the \"Bethell\" \u2192 \"The law officers\" substitution, but that is an authorized minor-character removal (Bethell/Lord Westbury is on the list), so the seam is expected and not a finding.\n\n---\n\n**CH 017 \u2014 scanning**\n\n**Passage 1: the \"Terebratula\" sentence**\n\nSource: Adams asks for \"the simplest case of uniformity on record.\" Lyell names Terebratula. Adams gives up and asks for \"the first vertebrate.\" Lyell names Pteraspis.\n\nDraft keeps the Terebratula exchange and then moves on. No break there.\n\n**Passage 2: the La Fontaine digression bridge**\n\nSource, before the La Fontaine quote: \"Evolution of mind was altogether another matter and belonged to another science, but whether one traced descent from the shark or the wolf was immaterial even in morals. This matter had been discussed for ages without scientific result. La Fontaine and other fabulists maintained that the wolf, even in morals, stood higher than man; and in view of the late civil war, Adams had doubts of his own on the facts of moral evolution.\"\n\nDraft: \"To an American in search of a father, it mattered nothing whether the father breathed through lungs, or walked on fins, or on feet. La Fontaine and other fabulists maintained that the wolf, even in morals, stood higher than man; and in view of the late civil war, Adams had doubts of his own on the facts of moral evolution.\"\n\nThis survives fine.\n\n**Passage 3: the sentence after the La Fontaine verse**\n\nSource: \"It might well be! At all events, it did not enter into the problem of Pteraspis, for it was quite certain that no complete proof of Natural Selection had occurred back to the time of Pteraspis, and that before Pteraspis was eternal void. No trace of any vertebrate had been found there; only starfish, shell-fish, polyps, or trilobites whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\"\n\nDraft: \"It might well be! At all events, no complete proof of Natural Selection had occurred back to the time of Pteraspis, and before Pteraspis was eternal void. Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\"\n\nThe draft's final fragment \u2014 \"Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay\" \u2014 is syntactically a fragment. In the source it is the tail of a full sentence: \"No trace of any vertebrate had been found there; only starfish\u2026\" The draft cut the matrix clause (\"No trace of any vertebrate had been found there\") and left only the remnant. The reader encounters \"Only starfish, shell-fish, polyps, or trilobites\" with no governing verb or predicate \u2014 it is literally non-parseable as a standalone sentence. A competent reader would not know what proposition is being asserted about the starfish; they are genuinely left hanging, not merely reading a less-ornamented version.\n\n**Passage 4: \"If he did publish\" sentence**\n\nSource: \"Six months of patient labor would be thrown away if he did not publish, and with it his whole scheme of making himself a position as a practical man-of-business. If he did publish, how could he tell virtuous bankers in State Street\u2026\"\n\nDraft: \"A mistake about Evolution was not fatal; a mistake about specie payments would destroy forever the last hope of employment in State Street. If he did publish, how could he tell virtuous bankers that moral and absolute principles of abstract truth, such as theirs, had nothing to do with the matter\u2026\"\n\nThe source presents a two-sided dilemma: *if he did not publish* \u2192 six months lost; *if he did publish* \u2192 he offends bankers. The draft cuts the \"if he did not publish\" arm entirely. The surviving \"If he did publish\" sentence is one side of a missing two-sided structure; it hangs as a broken conditional pivot. A reader genuinely cannot understand why publication is the only option under pressure \u2014 the reason it is a dilemma has been excised.\n\n---\n\n```json\n[\n  {\n    \"class\": \"non_parseable\",\n    \"chapter\": \"17\",\n    \"draft_passage\": \"Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\",\n    \"source_has\": \"No trace of any vertebrate had been found there; only starfish, shell-fish, polyps, or trilobites whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the fragment has no main clause and asserts nothing \u2014 it is impossible to tell what proposition about the starfish is meant, so the reader is not merely reading a leaner version but encountering an ungrammatical dead-end.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"17\",\n    \"draft_passage\": \"If he did publish, how could he tell virtuous bankers that moral and absolute principles of abstract truth, such as theirs, had nothing to do with the matter, and that they had better let it alone?\",\n    \"source_has\": \"Six months of patient labor would be thrown away if he did not publish, and with it his whole scheme of making himself a position as a practical man-of-business. If he did publish, how could he tell virtuous bankers in State Street that moral and absolute principles of abstract truth, such as theirs, had nothing to do with the matter\u2026\",\n    \"gate_test_answer\": \"A reader is genuinely misled: without the 'if he did not publish' arm, the conditional reads as a rhetorical question with no apparent stakes, and the reader cannot understand why Adams feels compelled to publish at all \u2014 the two-horned dilemma that gives the sentence its force has been destroyed.\"\n  }\n]\n```",
+    "input_tokens": 23223,
+    "output_tokens": 1528,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 32.312262296676636,
+    "stop_reason": "end_turn"
+  }
+}

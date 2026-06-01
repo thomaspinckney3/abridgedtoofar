@@ -1,0 +1,27 @@
+{
+  "frame_number": 3,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "Carpet-bag appears rigid like a framed doctor’s/Gladstone bag rather than a soft-sided carpet-bag.",
+      "visible_evidence": "The bag under Ishmael’s arm has a stiff metal frame and structured shape with a hinged clasp, holding its form firmly.",
+      "repair_prompt": "Redesign the carpet-bag to be small and soft-sided with a slight sag, mottled worn fabric and leather trim, minimizing any rigid frame; keep it scuffed and 19th-century with no readable text."
+    },
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "Boots look worn but lack the clearly visible rough toe patches specified.",
+      "visible_evidence": "The front boot shows scuffs yet no distinct patching on the toes is visible.",
+      "repair_prompt": "Add obvious rough leather toe patches and thin, well-worn soles to Ishmael’s ankle boots; keep them dull and battered, avoiding modern tread."
+    },
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "The turn into a darker side street is not clearly depicted; he appears to continue along the main street.",
+      "visible_evidence": "Ishmael strides past the inn toward the open downhill street; no distinct side-lane branching or turning motion is emphasized.",
+      "repair_prompt": "Recompose so a darker side lane branches off downhill toward the water, and angle Ishmael’s body/footprints to clearly show him turning into that lane while passing the bright inn door."
+    }
+  ]
+}

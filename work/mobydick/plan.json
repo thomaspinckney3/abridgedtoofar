@@ -7,7 +7,7 @@
   "cultural_depth": "unknown",
   "voice_driven_narrator": null,
   "indirection_budget_applies": null,
-  "overall_compression_ratio": 4.82,
+  "overall_compression_ratio": 2.0,
   "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
   "motifs": [],
   "segments": [
@@ -24,11 +24,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Etymology section with narrative voice, part of book proper",
       "source_word_count_original": 189,
-      "target_word_count_original": 94,
+      "target_word_count_original": 100,
       "skipped": true
     },
     {
@@ -44,11 +44,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Extracts preface with narrative voice addressing Sub-Sub",
       "source_word_count_original": 286,
-      "target_word_count_original": 143,
+      "target_word_count_original": 200,
       "skipped": true
     },
     {
@@ -64,11 +64,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Extracts body, literary anthology integral to novel's front matter",
+      "classification_reason": "Extracts body, literary quotations integral to book's opening",
       "source_word_count_original": 3118,
-      "target_word_count_original": 1559,
+      "target_word_count_original": 1600,
       "skipped": true
     },
     {
@@ -80,11 +80,11 @@
       "source_word_count": 2190,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1095,
+      "target_word_count": 1200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": "g002",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 1 narrative, opens with Call me Ishmael"
     },
@@ -97,11 +97,11 @@
       "source_word_count": 1416,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 708,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": "g002",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 2 narrative prose"
     },
@@ -114,11 +114,11 @@
       "source_word_count": 5783,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2891,
+      "target_word_count": 3000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g001",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 3 narrative prose"
     },
@@ -131,11 +131,11 @@
       "source_word_count": 1640,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 820,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g003",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 4 narrative prose"
     },
@@ -148,11 +148,11 @@
       "source_word_count": 734,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 367,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g003",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 5 narrative prose"
     },
@@ -165,11 +165,11 @@
       "source_word_count": 807,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 403,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g003",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 6 narrative prose"
     },
@@ -182,11 +182,11 @@
       "source_word_count": 940,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 470,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g004",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 7 narrative prose"
     },
@@ -199,11 +199,11 @@
       "source_word_count": 943,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 471,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g004",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 8 narrative prose"
     },
@@ -216,11 +216,11 @@
       "source_word_count": 3552,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1776,
+      "target_word_count": 1900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 9 narrative prose"
     },
@@ -233,11 +233,11 @@
       "source_word_count": 1544,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 772,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g005",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 10 narrative prose"
     },
@@ -250,11 +250,11 @@
       "source_word_count": 721,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 360,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g005",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 11 narrative prose"
     },
@@ -267,11 +267,11 @@
       "source_word_count": 875,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 437,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g002",
+      "group_id": "g005",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 12 narrative prose"
     },
@@ -284,11 +284,11 @@
       "source_word_count": 1673,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 836,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": "g006",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 13 narrative prose"
     },
@@ -301,11 +301,11 @@
       "source_word_count": 752,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 376,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": "g006",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 14 narrative prose"
     },
@@ -318,11 +318,11 @@
       "source_word_count": 1178,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 589,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": "g006",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 15 narrative prose"
     },
@@ -335,11 +335,11 @@
       "source_word_count": 5418,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2709,
+      "target_word_count": 2800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 16 narrative prose"
     },
@@ -352,11 +352,11 @@
       "source_word_count": 2251,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1125,
+      "target_word_count": 1200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": "g007",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 17 narrative prose"
     },
@@ -369,11 +369,11 @@
       "source_word_count": 1344,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 672,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g003",
+      "group_id": "g007",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 18 narrative prose"
     },
@@ -386,11 +386,11 @@
       "source_word_count": 1195,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 597,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g008",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 19 narrative prose"
     },
@@ -403,11 +403,11 @@
       "source_word_count": 917,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 458,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g008",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 20 narrative prose"
     },
@@ -420,11 +420,11 @@
       "source_word_count": 1064,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 532,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g008",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 21 narrative prose"
     },
@@ -437,11 +437,11 @@
       "source_word_count": 1610,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 805,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 22 narrative prose"
     },
@@ -458,11 +458,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 23 narrative prose",
+      "classification_reason": "Chapter 23 narrative prose, Bulkington passage",
       "source_word_count_original": 359,
-      "target_word_count_original": 179,
+      "target_word_count_original": 200,
       "skipped": true
     },
     {
@@ -478,11 +478,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 24 narrative prose",
       "source_word_count_original": 1645,
-      "target_word_count_original": 822,
+      "target_word_count_original": 900,
       "skipped": true
     },
     {
@@ -498,11 +498,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 25 narrative prose",
       "source_word_count_original": 277,
-      "target_word_count_original": 138,
+      "target_word_count_original": 200,
       "skipped": true
     },
     {
@@ -514,11 +514,11 @@
       "source_word_count": 1216,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 608,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g010",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 26 narrative prose"
     },
@@ -531,11 +531,11 @@
       "source_word_count": 1660,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 830,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g010",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 27 narrative prose"
     },
@@ -548,11 +548,11 @@
       "source_word_count": 1393,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 696,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g004",
+      "group_id": "g011",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 28 narrative prose"
     },
@@ -565,11 +565,11 @@
       "source_word_count": 1180,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 590,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": "g011",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 29 narrative prose"
     },
@@ -582,13 +582,16 @@
       "source_word_count": 287,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 143,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 30 narrative prose"
+      "classification_reason": "Chapter 30 narrative prose",
+      "source_word_count_original": 287,
+      "target_word_count_original": 200,
+      "skipped": true
     },
     {
       "id": "034",
@@ -599,13 +602,16 @@
       "source_word_count": 842,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 421,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 31 narrative prose"
+      "classification_reason": "Chapter 31 narrative prose",
+      "source_word_count_original": 842,
+      "target_word_count_original": 500,
+      "skipped": true
     },
     {
       "id": "035",
@@ -620,11 +626,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 32 narrative prose",
+      "classification_reason": "Chapter 32 cetology chapter, narrative voice",
       "source_word_count_original": 5107,
-      "target_word_count_original": 2553,
+      "target_word_count_original": 2700,
       "skipped": true
     },
     {
@@ -640,11 +646,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 33 narrative prose",
       "source_word_count_original": 962,
-      "target_word_count_original": 481,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -656,13 +662,16 @@
       "source_word_count": 2189,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1094,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g005",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 34 narrative prose"
+      "classification_reason": "Chapter 34 narrative prose",
+      "source_word_count_original": 2189,
+      "target_word_count_original": 1200,
+      "skipped": true
     },
     {
       "id": "038",
@@ -677,11 +686,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 35 narrative prose",
       "source_word_count_original": 2531,
-      "target_word_count_original": 1265,
+      "target_word_count_original": 1300,
       "skipped": true
     },
     {
@@ -693,13 +702,13 @@
       "source_word_count": 2769,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1384,
+      "target_word_count": 1500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 36 narrative prose"
+      "classification_reason": "Chapter 36 narrative prose, dramatic scene"
     },
     {
       "id": "040",
@@ -710,13 +719,13 @@
       "source_word_count": 498,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 249,
+      "target_word_count": 300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": "g013",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 37 dramatic monologue narrative"
+      "classification_reason": "Chapter 37 dramatic soliloquy, part of narrative"
     },
     {
       "id": "041",
@@ -727,13 +736,13 @@
       "source_word_count": 388,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 194,
+      "target_word_count": 200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": "g013",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 38 dramatic monologue narrative"
+      "classification_reason": "Chapter 38 dramatic soliloquy, part of narrative"
     },
     {
       "id": "042",
@@ -744,13 +753,13 @@
       "source_word_count": 254,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 127,
+      "target_word_count": 200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": "g013",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 39 dramatic monologue narrative"
+      "classification_reason": "Chapter 39 dramatic monologue, part of narrative"
     },
     {
       "id": "043",
@@ -761,13 +770,16 @@
       "source_word_count": 1509,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 754,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 40 dramatic scene narrative"
+      "classification_reason": "Chapter 40 dramatic scene with sailors",
+      "source_word_count_original": 1509,
+      "target_word_count_original": 800,
+      "skipped": true
     },
     {
       "id": "044",
@@ -778,13 +790,13 @@
       "source_word_count": 3757,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1878,
+      "target_word_count": 2000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g006",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 41 narrative prose"
+      "classification_reason": "Chapter 41 narrative prose on Moby Dick"
     },
     {
       "id": "045",
@@ -795,13 +807,13 @@
       "source_word_count": 3601,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1800,
+      "target_word_count": 1900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 42 narrative prose"
+      "classification_reason": "Chapter 42 narrative prose on whiteness"
     },
     {
       "id": "046",
@@ -812,11 +824,11 @@
       "source_word_count": 295,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 147,
+      "target_word_count": 200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": "g014",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 43 narrative prose"
     },
@@ -829,11 +841,11 @@
       "source_word_count": 2022,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1011,
+      "target_word_count": 1100,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": "g014",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 44 narrative prose"
     },
@@ -846,16 +858,13 @@
       "source_word_count": 3536,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 1900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 45 narrative prose",
-      "source_word_count_original": 3536,
-      "target_word_count_original": 1768,
-      "skipped": true
+      "classification_reason": "Chapter 45 narrative prose"
     },
     {
       "id": "049",
@@ -866,11 +875,11 @@
       "source_word_count": 989,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 494,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": "g015",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 46 narrative prose"
     },
@@ -883,11 +892,11 @@
       "source_word_count": 914,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 457,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g007",
+      "group_id": "g015",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 47 narrative prose"
     },
@@ -900,11 +909,11 @@
       "source_word_count": 3907,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1953,
+      "target_word_count": 2000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 48 narrative prose"
     },
@@ -917,11 +926,11 @@
       "source_word_count": 830,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 415,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": "g016",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 49 narrative prose"
     },
@@ -934,11 +943,11 @@
       "source_word_count": 1000,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 500,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": "g016",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 50 narrative prose"
     },
@@ -951,11 +960,11 @@
       "source_word_count": 1500,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 750,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": "g016",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 51 narrative prose"
     },
@@ -968,11 +977,11 @@
       "source_word_count": 711,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 355,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": "g017",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 52 narrative prose"
     },
@@ -985,11 +994,11 @@
       "source_word_count": 1601,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 800,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g008",
+      "group_id": "g017",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 53 narrative prose"
     },
@@ -1002,16 +1011,13 @@
       "source_word_count": 7913,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 4100,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
       "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 54 narrative prose",
-      "source_word_count_original": 7913,
-      "target_word_count_original": 3956,
-      "skipped": true
+      "classification_reason": "Chapter 54 narrative prose, Town-Ho story"
     },
     {
       "id": "058",
@@ -1026,11 +1032,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 55 narrative prose",
       "source_word_count_original": 1876,
-      "target_word_count_original": 938,
+      "target_word_count_original": 1000,
       "skipped": true
     },
     {
@@ -1046,11 +1052,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 56 narrative prose",
       "source_word_count_original": 1294,
-      "target_word_count_original": 647,
+      "target_word_count_original": 700,
       "skipped": true
     },
     {
@@ -1066,11 +1072,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 57 narrative prose",
       "source_word_count_original": 931,
-      "target_word_count_original": 465,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1082,16 +1088,13 @@
       "source_word_count": 1006,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": "g019",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 58 narrative prose",
-      "source_word_count_original": 1006,
-      "target_word_count_original": 503,
-      "skipped": true
+      "classification_reason": "Chapter 58 narrative prose"
     },
     {
       "id": "062",
@@ -1102,11 +1105,11 @@
       "source_word_count": 917,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 458,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": "g019",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 59 narrative prose"
     },
@@ -1119,16 +1122,13 @@
       "source_word_count": 1452,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": "g020",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 60 narrative prose",
-      "source_word_count_original": 1452,
-      "target_word_count_original": 726,
-      "skipped": true
+      "classification_reason": "Chapter 60 narrative prose"
     },
     {
       "id": "064",
@@ -1139,11 +1139,11 @@
       "source_word_count": 1944,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 972,
+      "target_word_count": 1000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": "g020",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 61 narrative prose"
     },
@@ -1160,11 +1160,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 62 narrative prose",
       "source_word_count_original": 564,
-      "target_word_count_original": 282,
+      "target_word_count_original": 300,
       "skipped": true
     },
     {
@@ -1176,16 +1176,13 @@
       "source_word_count": 472,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g009",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 63 narrative prose",
-      "source_word_count_original": 472,
-      "target_word_count_original": 236,
-      "skipped": true
+      "classification_reason": "Chapter 63 narrative prose"
     },
     {
       "id": "067",
@@ -1196,11 +1193,11 @@
       "source_word_count": 2963,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1481,
+      "target_word_count": 1600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 64 narrative prose"
     },
@@ -1217,11 +1214,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 65 narrative prose",
       "source_word_count_original": 980,
-      "target_word_count_original": 490,
+      "target_word_count_original": 600,
       "skipped": true
     },
     {
@@ -1233,11 +1230,11 @@
       "source_word_count": 625,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 312,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": "g022",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 66 narrative prose"
     },
@@ -1250,11 +1247,11 @@
       "source_word_count": 727,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 363,
+      "target_word_count": 400,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": "g022",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 67 narrative prose"
     },
@@ -1271,11 +1268,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 68 narrative prose",
       "source_word_count_original": 1191,
-      "target_word_count_original": 595,
+      "target_word_count_original": 700,
       "skipped": true
     },
     {
@@ -1291,11 +1288,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 69 narrative prose",
       "source_word_count_original": 429,
-      "target_word_count_original": 214,
+      "target_word_count_original": 300,
       "skipped": true
     },
     {
@@ -1307,11 +1304,11 @@
       "source_word_count": 863,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 431,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 70 narrative prose"
     },
@@ -1324,11 +1321,11 @@
       "source_word_count": 2231,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1115,
+      "target_word_count": 1200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 71 narrative prose"
     },
@@ -1341,13 +1338,16 @@
       "source_word_count": 1617,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 808,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g010",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 72 narrative prose"
+      "classification_reason": "Chapter 72 narrative prose",
+      "source_word_count_original": 1617,
+      "target_word_count_original": 900,
+      "skipped": true
     },
     {
       "id": "076",
@@ -1358,16 +1358,13 @@
       "source_word_count": 2145,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 1100,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 73 narrative prose",
-      "source_word_count_original": 2145,
-      "target_word_count_original": 1072,
-      "skipped": true
+      "classification_reason": "Chapter 73 narrative prose"
     },
     {
       "id": "077",
@@ -1382,11 +1379,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 74 narrative prose",
       "source_word_count_original": 1619,
-      "target_word_count_original": 809,
+      "target_word_count_original": 900,
       "skipped": true
     },
     {
@@ -1402,11 +1399,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 75 narrative prose",
       "source_word_count_original": 1216,
-      "target_word_count_original": 608,
+      "target_word_count_original": 700,
       "skipped": true
     },
     {
@@ -1422,11 +1419,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 76 narrative prose",
       "source_word_count_original": 863,
-      "target_word_count_original": 431,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1442,11 +1439,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 77 narrative prose",
       "source_word_count_original": 630,
-      "target_word_count_original": 315,
+      "target_word_count_original": 400,
       "skipped": true
     },
     {
@@ -1462,11 +1459,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 78 narrative prose",
       "source_word_count_original": 1628,
-      "target_word_count_original": 814,
+      "target_word_count_original": 900,
       "skipped": true
     },
     {
@@ -1482,11 +1479,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 79 narrative prose",
       "source_word_count_original": 927,
-      "target_word_count_original": 463,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1502,11 +1499,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g011",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 80 narrative prose",
       "source_word_count_original": 892,
-      "target_word_count_original": 446,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1518,13 +1515,16 @@
       "source_word_count": 4274,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2137,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 81 narrative prose"
+      "classification_reason": "Chapter 81 narrative prose",
+      "source_word_count_original": 4274,
+      "target_word_count_original": 2200,
+      "skipped": true
     },
     {
       "id": "085",
@@ -1539,11 +1539,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 82 narrative prose",
       "source_word_count_original": 1142,
-      "target_word_count_original": 571,
+      "target_word_count_original": 600,
       "skipped": true
     },
     {
@@ -1559,11 +1559,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 83 narrative prose",
       "source_word_count_original": 766,
-      "target_word_count_original": 383,
+      "target_word_count_original": 400,
       "skipped": true
     },
     {
@@ -1579,11 +1579,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 84 narrative prose",
       "source_word_count_original": 802,
-      "target_word_count_original": 401,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1599,11 +1599,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 85 narrative prose",
       "source_word_count_original": 2052,
-      "target_word_count_original": 1026,
+      "target_word_count_original": 1100,
       "skipped": true
     },
     {
@@ -1619,11 +1619,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g012",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 86 narrative prose",
       "source_word_count_original": 1839,
-      "target_word_count_original": 919,
+      "target_word_count_original": 1000,
       "skipped": true
     },
     {
@@ -1635,13 +1635,16 @@
       "source_word_count": 4720,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2360,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 87 narrative prose"
+      "classification_reason": "Chapter 87 narrative prose",
+      "source_word_count_original": 4720,
+      "target_word_count_original": 2500,
+      "skipped": true
     },
     {
       "id": "091",
@@ -1656,11 +1659,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 88 narrative prose",
       "source_word_count_original": 1180,
-      "target_word_count_original": 590,
+      "target_word_count_original": 700,
       "skipped": true
     },
     {
@@ -1676,11 +1679,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 89 narrative prose",
       "source_word_count_original": 1390,
-      "target_word_count_original": 695,
+      "target_word_count_original": 800,
       "skipped": true
     },
     {
@@ -1696,11 +1699,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 90 narrative prose",
       "source_word_count_original": 1041,
-      "target_word_count_original": 520,
+      "target_word_count_original": 600,
       "skipped": true
     },
     {
@@ -1716,11 +1719,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 91 narrative prose",
       "source_word_count_original": 2477,
-      "target_word_count_original": 1238,
+      "target_word_count_original": 1300,
       "skipped": true
     },
     {
@@ -1736,11 +1739,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g013",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 92 narrative prose",
       "source_word_count_original": 966,
-      "target_word_count_original": 483,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1752,11 +1755,11 @@
       "source_word_count": 1596,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 798,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 93 narrative prose"
     },
@@ -1769,13 +1772,16 @@
       "source_word_count": 1255,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 627,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 94 narrative prose"
+      "classification_reason": "Chapter 94 narrative prose",
+      "source_word_count_original": 1255,
+      "target_word_count_original": 700,
+      "skipped": true
     },
     {
       "id": "098",
@@ -1790,11 +1796,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 95 narrative prose",
       "source_word_count_original": 494,
-      "target_word_count_original": 247,
+      "target_word_count_original": 300,
       "skipped": true
     },
     {
@@ -1806,11 +1812,11 @@
       "source_word_count": 1807,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 903,
+      "target_word_count": 1000,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 96 narrative prose"
     },
@@ -1827,11 +1833,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 97 narrative prose",
       "source_word_count_original": 238,
-      "target_word_count_original": 119,
+      "target_word_count_original": 200,
       "skipped": true
     },
     {
@@ -1847,11 +1853,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 98 narrative prose",
       "source_word_count_original": 1008,
-      "target_word_count_original": 504,
+      "target_word_count_original": 600,
       "skipped": true
     },
     {
@@ -1863,11 +1869,11 @@
       "source_word_count": 2401,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1200,
+      "target_word_count": 1300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 99 narrative prose"
     },
@@ -1884,11 +1890,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g014",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 100 narrative prose",
       "source_word_count_original": 2647,
-      "target_word_count_original": 1323,
+      "target_word_count_original": 1400,
       "skipped": true
     },
     {
@@ -1904,11 +1910,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 101 narrative prose",
       "source_word_count_original": 1747,
-      "target_word_count_original": 873,
+      "target_word_count_original": 900,
       "skipped": true
     },
     {
@@ -1924,11 +1930,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 102 narrative prose",
       "source_word_count_original": 1524,
-      "target_word_count_original": 762,
+      "target_word_count_original": 800,
       "skipped": true
     },
     {
@@ -1944,11 +1950,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 103 narrative prose",
       "source_word_count_original": 915,
-      "target_word_count_original": 457,
+      "target_word_count_original": 500,
       "skipped": true
     },
     {
@@ -1964,11 +1970,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 104 narrative prose",
       "source_word_count_original": 1411,
-      "target_word_count_original": 705,
+      "target_word_count_original": 800,
       "skipped": true
     },
     {
@@ -1984,11 +1990,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 105 narrative prose",
       "source_word_count_original": 1540,
-      "target_word_count_original": 770,
+      "target_word_count_original": 800,
       "skipped": true
     },
     {
@@ -2000,11 +2006,11 @@
       "source_word_count": 918,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 459,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": "g036",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 106 narrative prose"
     },
@@ -2017,16 +2023,13 @@
       "source_word_count": 1030,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": "g036",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 107 narrative prose",
-      "source_word_count_original": 1030,
-      "target_word_count_original": 515,
-      "skipped": true
+      "classification_reason": "Chapter 107 narrative prose"
     },
     {
       "id": "111",
@@ -2037,11 +2040,11 @@
       "source_word_count": 1543,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 771,
+      "target_word_count": 800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": "g037",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 108 dramatic scene narrative"
     },
@@ -2054,11 +2057,11 @@
       "source_word_count": 896,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 448,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g015",
+      "group_id": "g037",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 109 narrative prose"
     },
@@ -2071,11 +2074,11 @@
       "source_word_count": 2225,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1112,
+      "target_word_count": 1200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g038",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 110 narrative prose"
     },
@@ -2088,13 +2091,16 @@
       "source_word_count": 415,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 207,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 111 narrative prose"
+      "classification_reason": "Chapter 111 narrative prose",
+      "source_word_count_original": 415,
+      "target_word_count_original": 300,
+      "skipped": true
     },
     {
       "id": "115",
@@ -2105,16 +2111,13 @@
       "source_word_count": 922,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g038",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 112 narrative prose",
-      "source_word_count_original": 922,
-      "target_word_count_original": 461,
-      "skipped": true
+      "classification_reason": "Chapter 112 narrative prose"
     },
     {
       "id": "116",
@@ -2125,11 +2128,11 @@
       "source_word_count": 1206,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 603,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g039",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 113 narrative prose"
     },
@@ -2142,13 +2145,16 @@
       "source_word_count": 632,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 316,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 114 narrative prose"
+      "classification_reason": "Chapter 114 narrative prose",
+      "source_word_count_original": 632,
+      "target_word_count_original": 400,
+      "skipped": true
     },
     {
       "id": "118",
@@ -2159,16 +2165,13 @@
       "source_word_count": 866,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 0,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g039",
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 115 narrative prose",
-      "source_word_count_original": 866,
-      "target_word_count_original": 433,
-      "skipped": true
+      "classification_reason": "Chapter 115 narrative prose"
     },
     {
       "id": "119",
@@ -2179,13 +2182,16 @@
       "source_word_count": 507,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 253,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 116 narrative prose"
+      "classification_reason": "Chapter 116 narrative prose",
+      "source_word_count_original": 507,
+      "target_word_count_original": 300,
+      "skipped": true
     },
     {
       "id": "120",
@@ -2196,11 +2202,11 @@
       "source_word_count": 462,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 231,
+      "target_word_count": 300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g040",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 117 narrative prose"
     },
@@ -2213,11 +2219,11 @@
       "source_word_count": 881,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 440,
+      "target_word_count": 500,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": "g040",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 118 narrative prose"
     },
@@ -2230,11 +2236,11 @@
       "source_word_count": 2511,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1255,
+      "target_word_count": 1300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 119 narrative prose"
     },
@@ -2247,13 +2253,16 @@
       "source_word_count": 167,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 83,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 120 dramatic scene narrative"
+      "classification_reason": "Chapter 120 dramatic scene, real narrative dialogue",
+      "source_word_count_original": 167,
+      "target_word_count_original": 100,
+      "skipped": true
     },
     {
       "id": "124",
@@ -2264,13 +2273,16 @@
       "source_word_count": 614,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 307,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 121 dramatic scene narrative"
+      "classification_reason": "Chapter 121 dramatic scene narrative",
+      "source_word_count_original": 614,
+      "target_word_count_original": 400,
+      "skipped": true
     },
     {
       "id": "125",
@@ -2285,11 +2297,11 @@
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g016",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 122 very short dramatic scene, real narrative",
+      "classification_reason": "Chapter 122 brief dramatic scene, real narrative",
       "source_word_count_original": 44,
-      "target_word_count_original": 50,
+      "target_word_count_original": 100,
       "skipped": true
     },
     {
@@ -2301,11 +2313,11 @@
       "source_word_count": 1193,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 596,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g042",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 123 narrative prose"
     },
@@ -2318,11 +2330,11 @@
       "source_word_count": 1191,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 595,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g042",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 124 narrative prose"
     },
@@ -2335,11 +2347,11 @@
       "source_word_count": 1091,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 545,
+      "target_word_count": 600,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g042",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 125 narrative prose"
     },
@@ -2352,11 +2364,11 @@
       "source_word_count": 1349,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 674,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g043",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 126 narrative prose"
     },
@@ -2369,13 +2381,16 @@
       "source_word_count": 692,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 346,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 127 dramatic scene narrative"
+      "classification_reason": "Chapter 127 dramatic scene narrative",
+      "source_word_count_original": 692,
+      "target_word_count_original": 400,
+      "skipped": true
     },
     {
       "id": "131",
@@ -2386,11 +2401,11 @@
       "source_word_count": 1367,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 683,
+      "target_word_count": 700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g043",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 128 narrative prose"
     },
@@ -2403,11 +2418,11 @@
       "source_word_count": 570,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 285,
+      "target_word_count": 300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g044",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 129 dramatic scene narrative"
     },
@@ -2420,13 +2435,16 @@
       "source_word_count": 1668,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 834,
+      "target_word_count": 0,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 130 narrative prose"
+      "classification_reason": "Chapter 130 narrative prose",
+      "source_word_count_original": 1668,
+      "target_word_count_original": 900,
+      "skipped": true
     },
     {
       "id": "134",
@@ -2437,11 +2455,11 @@
       "source_word_count": 414,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 207,
+      "target_word_count": 300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": "g044",
       "classification_status": "diegetic",
       "classification_reason": "Chapter 131 narrative prose"
     },
@@ -2454,11 +2472,11 @@
       "source_word_count": 1577,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 788,
+      "target_word_count": 900,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g017",
+      "group_id": null,
       "classification_status": "diegetic",
       "classification_reason": "Chapter 132 narrative prose"
     },
@@ -2471,13 +2489,13 @@
       "source_word_count": 3487,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1743,
+      "target_word_count": 1800,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g018",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 133 narrative prose, climax begins"
+      "classification_reason": "Chapter 133 narrative prose, final chase begins"
     },
     {
       "id": "137",
@@ -2488,13 +2506,13 @@
       "source_word_count": 3231,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 1615,
+      "target_word_count": 1700,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g018",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 134 narrative prose, climax continues"
+      "classification_reason": "Chapter 134 narrative prose, second chase day"
     },
     {
       "id": "138",
@@ -2505,13 +2523,13 @@
       "source_word_count": 4446,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 2223,
+      "target_word_count": 2300,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g018",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Chapter 135 narrative prose, final chase"
+      "classification_reason": "Chapter 135 narrative prose, third chase day"
     },
     {
       "id": "139",
@@ -2522,270 +2540,231 @@
       "source_word_count": 266,
       "diegetic_status": "diegetic",
       "role": "narrative",
-      "target_word_count": 133,
+      "target_word_count": 200,
       "relative_compression": 1.0,
       "signatures": [],
       "notes": "",
-      "group_id": "g018",
+      "group_id": null,
       "classification_status": "diegetic",
-      "classification_reason": "Epilogue, Ishmael survives to tell the tale"
+      "classification_reason": "Epilogue, Ishmael survives, story conclusion"
     }
   ],
   "merged_groups": {
-    "g001": {
-      "member_ids": [
-        "001",
-        "002",
-        "003",
-        "004",
-        "005",
-        "006"
-      ],
-      "combined_target_word_count": 4694,
-      "combined_source_word_count": 12982
-    },
     "g002": {
+      "member_ids": [
+        "004",
+        "005"
+      ],
+      "combined_target_word_count": 2000,
+      "combined_source_word_count": 3606
+    },
+    "g003": {
       "member_ids": [
         "007",
         "008",
-        "009",
+        "009"
+      ],
+      "combined_target_word_count": 1800,
+      "combined_source_word_count": 3181
+    },
+    "g004": {
+      "member_ids": [
         "010",
-        "011",
-        "012",
+        "011"
+      ],
+      "combined_target_word_count": 1000,
+      "combined_source_word_count": 1883
+    },
+    "g005": {
+      "member_ids": [
         "013",
         "014",
         "015"
       ],
-      "combined_target_word_count": 5876,
-      "combined_source_word_count": 11756
-    },
-    "g003": {
-      "member_ids": [
-        "016",
-        "017",
-        "018",
-        "019",
-        "020",
-        "021"
-      ],
-      "combined_target_word_count": 6307,
-      "combined_source_word_count": 12616
-    },
-    "g004": {
-      "member_ids": [
-        "022",
-        "023",
-        "024",
-        "025",
-        "026",
-        "027",
-        "028",
-        "029",
-        "030",
-        "031"
-      ],
-      "combined_target_word_count": 4526,
-      "combined_source_word_count": 11336
-    },
-    "g005": {
-      "member_ids": [
-        "032",
-        "033",
-        "034",
-        "035",
-        "036",
-        "037"
-      ],
-      "combined_target_word_count": 2248,
-      "combined_source_word_count": 10567
+      "combined_target_word_count": 1700,
+      "combined_source_word_count": 3140
     },
     "g006": {
       "member_ids": [
-        "038",
-        "039",
-        "040",
-        "041",
-        "042",
-        "043",
-        "044"
+        "016",
+        "017",
+        "018"
       ],
-      "combined_target_word_count": 4586,
-      "combined_source_word_count": 11706
+      "combined_target_word_count": 2000,
+      "combined_source_word_count": 3603
     },
     "g007": {
       "member_ids": [
-        "045",
-        "046",
-        "047",
-        "048",
-        "049",
-        "050"
+        "020",
+        "021"
       ],
-      "combined_target_word_count": 3909,
-      "combined_source_word_count": 11357
+      "combined_target_word_count": 1900,
+      "combined_source_word_count": 3595
     },
     "g008": {
       "member_ids": [
-        "051",
-        "052",
-        "053",
-        "054",
-        "055",
-        "056"
+        "022",
+        "023",
+        "024"
       ],
-      "combined_target_word_count": 4773,
-      "combined_source_word_count": 9549
-    },
-    "g009": {
-      "member_ids": [
-        "058",
-        "059",
-        "060",
-        "061",
-        "062",
-        "063",
-        "064",
-        "065",
-        "066"
-      ],
-      "combined_target_word_count": 1430,
-      "combined_source_word_count": 10456
+      "combined_target_word_count": 1800,
+      "combined_source_word_count": 3176
     },
     "g010": {
       "member_ids": [
-        "067",
-        "068",
-        "069",
-        "070",
-        "071",
-        "072",
-        "073",
-        "074",
-        "075"
+        "029",
+        "030"
       ],
-      "combined_target_word_count": 4510,
-      "combined_source_word_count": 11626
+      "combined_target_word_count": 1600,
+      "combined_source_word_count": 2876
     },
     "g011": {
       "member_ids": [
-        "076",
-        "077",
-        "078",
-        "079",
-        "080",
-        "081",
-        "082",
-        "083"
+        "031",
+        "032"
       ],
-      "combined_target_word_count": 0,
-      "combined_source_word_count": 9920
-    },
-    "g012": {
-      "member_ids": [
-        "084",
-        "085",
-        "086",
-        "087",
-        "088",
-        "089"
-      ],
-      "combined_target_word_count": 2137,
-      "combined_source_word_count": 10875
+      "combined_target_word_count": 1500,
+      "combined_source_word_count": 2573
     },
     "g013": {
       "member_ids": [
-        "090",
-        "091",
-        "092",
-        "093",
-        "094",
-        "095"
+        "040",
+        "041",
+        "042"
       ],
-      "combined_target_word_count": 2360,
-      "combined_source_word_count": 11774
+      "combined_target_word_count": 700,
+      "combined_source_word_count": 1140
     },
     "g014": {
       "member_ids": [
-        "096",
-        "097",
-        "098",
-        "099",
-        "100",
-        "101",
-        "102",
-        "103"
+        "046",
+        "047"
       ],
-      "combined_target_word_count": 3528,
-      "combined_source_word_count": 11446
+      "combined_target_word_count": 1300,
+      "combined_source_word_count": 2317
     },
     "g015": {
       "member_ids": [
-        "104",
-        "105",
-        "106",
-        "107",
-        "108",
-        "109",
-        "110",
-        "111",
-        "112"
+        "049",
+        "050"
       ],
-      "combined_target_word_count": 1678,
-      "combined_source_word_count": 11524
+      "combined_target_word_count": 1100,
+      "combined_source_word_count": 1903
     },
     "g016": {
       "member_ids": [
-        "113",
-        "114",
-        "115",
-        "116",
-        "117",
-        "118",
-        "119",
-        "120",
-        "121",
-        "122",
-        "123",
-        "124",
-        "125"
+        "052",
+        "053",
+        "054"
       ],
-      "combined_target_word_count": 4807,
-      "combined_source_word_count": 11452
+      "combined_target_word_count": 1900,
+      "combined_source_word_count": 3330
     },
     "g017": {
       "member_ids": [
+        "055",
+        "056"
+      ],
+      "combined_target_word_count": 1300,
+      "combined_source_word_count": 2312
+    },
+    "g019": {
+      "member_ids": [
+        "061",
+        "062"
+      ],
+      "combined_target_word_count": 1100,
+      "combined_source_word_count": 1923
+    },
+    "g020": {
+      "member_ids": [
+        "063",
+        "064"
+      ],
+      "combined_target_word_count": 1800,
+      "combined_source_word_count": 3396
+    },
+    "g022": {
+      "member_ids": [
+        "069",
+        "070"
+      ],
+      "combined_target_word_count": 800,
+      "combined_source_word_count": 1352
+    },
+    "g036": {
+      "member_ids": [
+        "109",
+        "110"
+      ],
+      "combined_target_word_count": 1100,
+      "combined_source_word_count": 1948
+    },
+    "g037": {
+      "member_ids": [
+        "111",
+        "112"
+      ],
+      "combined_target_word_count": 1300,
+      "combined_source_word_count": 2439
+    },
+    "g038": {
+      "member_ids": [
+        "113",
+        "115"
+      ],
+      "combined_target_word_count": 1700,
+      "combined_source_word_count": 3147
+    },
+    "g039": {
+      "member_ids": [
+        "116",
+        "118"
+      ],
+      "combined_target_word_count": 1200,
+      "combined_source_word_count": 2072
+    },
+    "g040": {
+      "member_ids": [
+        "120",
+        "121"
+      ],
+      "combined_target_word_count": 800,
+      "combined_source_word_count": 1343
+    },
+    "g042": {
+      "member_ids": [
         "126",
         "127",
-        "128",
-        "129",
-        "130",
-        "131",
-        "132",
-        "133",
-        "134",
-        "135"
+        "128"
       ],
-      "combined_target_word_count": 5553,
-      "combined_source_word_count": 11112
+      "combined_target_word_count": 2000,
+      "combined_source_word_count": 3475
     },
-    "g018": {
+    "g043": {
       "member_ids": [
-        "136",
-        "137",
-        "138",
-        "139"
+        "129",
+        "131"
       ],
-      "combined_target_word_count": 5714,
-      "combined_source_word_count": 11430
+      "combined_target_word_count": 1400,
+      "combined_source_word_count": 2716
+    },
+    "g044": {
+      "member_ids": [
+        "132",
+        "134"
+      ],
+      "combined_target_word_count": 600,
+      "combined_source_word_count": 984
     }
   },
   "_meta": {
     "computed": {
       "source_word_count": 215845,
       "diegetic_source_word_count": 211397,
-      "target_word_count": 105693,
-      "target_hours": 3.73,
-      "overall_compression_ratio": 2.04
+      "target_word_count": 107922,
+      "target_hours": 8.99,
+      "overall_compression_ratio": 2.0
     },
     "builder": "lean_plan"
   }

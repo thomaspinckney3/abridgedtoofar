@@ -1,0 +1,21 @@
+{
+  "page_number": 3,
+  "anchors": [
+    {
+      "panel_number": 3,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "That's precisely it. The market's overstocked.",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 764, "y": 410},
+      "mouth_point_ratio": {"x": 0.545, "y": 0.365},
+      "tail_target_point": {"x": 792, "y": 398},
+      "tail_target_point_ratio": {"x": 0.565, "y": 0.355},
+      "face_box": {"x1": 603, "y1": 236, "x2": 925, "y2": 561},
+      "evidence": "Single male figure on the right, clearly visible head and mouth; smirking lips around x≈0.545,y≈0.365 on the grid. No other characters present.",
+      "reason": "Speaker region is right and only one visible character fits. Tail target offset up-right from mouth toward the specified top_right balloon zone, landing just outside the mouth corner on the cheek."
+    }
+  ]
+}

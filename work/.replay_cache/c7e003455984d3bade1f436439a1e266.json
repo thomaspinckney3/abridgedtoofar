@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-07T15:20:32",
+  "key": "c7e003455984d3bade1f436439a1e266",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"He lowered his voice. 'I'm carrying papers\u2014vitally important papers... Watch the newspapers! I'll advertise in the personal column of the Times, beginning Shipmate.'\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Carter explains: 'In the early days of 1915 a draft secret treaty was drawn up... dispatched to England by a special messenger... He sailed on the Lusitania... if its terms were made public, it would mean disaster'\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"'I'm darned if I do... Jane Finn. My father and her mother were brother and sister.' Julius throws in his resources to help find her.\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"'He is always spoken of by the unassuming title of Mr. Brown.'\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"'He is the master criminal of this age... Bolshevist gold is pouring into this country for the specific purpose of procuring a Revolution. The Bolshevists are behind the Labour unrest\u2014but a certain man is behind the Bolshevists.'\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"Tuppence secures the housemaid position and enters Mrs. Vandemeyer's service, noting 'her exquisite figure was enhanced by a wonderful gown... something hard and menacing'\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"Boris (Count Stepanov) dines with Mrs. Vandemeyer; Tuppence overhears references to 'Mr. Brown' from the balcony\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"Tuppence jerks the glass upward, splashes chloral into Mrs. Vandemeyer's face, seizes revolver, extracts promise to betray the chief; 'Mrs. Vandemeyer was dead\u2014must have been dead some hours... chloral poisoning'\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"Tommy follows Boris to the Soho house, overhears the conclave with 'a tall man with close-cropped hair and a short, pointed, naval-looking beard'; Sinn Feiners, Bolshevists, trade union men; aided by Annette, he escapes\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"'Scotland Yard again. Another man... Inspector Brown. Quiet, unassuming sort of chap.' The photograph of Jane Finn is lost; Sir James Peel Edgerton 'flits in and out dispensing help, hints, and lawyerly caution'\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Tuppence abducted via forged telegram to Astley Priors; meets Annette who 'cried out' wanting to go 'To Marguerite'; Julius abducts Kramenin at gunpoint, storms house, flees with both girls; Tommy orders them to head for Sir James\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"'Carter raises police around the Soho house'\u2014implied by 'Police were stationed at front and back'\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"Tommy explains: 'I knew it wasn't from her because of the signature. She'd never spell her name Twopence, but anyone who'd never seen it written might quite easily do so\u2026 Sir James hadn't!'\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"'I sent Albert to Mr. Carter, pretended to go away, and doubled back\u2026 I determined I wouldn't tell on [where I believed the papers were] until\u2026 I left a note for Julius\u2026 dropped Sir James's letter\u2026 I rang up Sir James and told him everything except where I believed the papers to be hidden.'\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"Jane 'unhooked the picture of Marguerite\u2026 ripped away the brown paper. Two thin sheets covered with writing fell out.' Then Sir James smiles: 'I am Mr. Brown.'\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"'I am Mr. Brown.'\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"'Neither of you will leave this room alive\u2026 he slowly raised the big automatic. But, even as he did so, he felt himself seized from behind\u2026 the voice of Julius Hersheimmer said drawlingly: I guess you're caught redhanded'\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"'his left hand, the hand which bore the big signet ring, was raised to his lips\u2026 with a long convulsive shudder he fell forward in a crumpled heap, while an odour of bitter almonds filled the air.'\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"'From the dead man's pocket-book he had retrieved the ill-omened draft treaty, and then and there it had been reduced to ashes\u2026 Kramenin had made a precipitate return to Russia\u2026 It was to be Peace, not War.'\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"'Deprived of their chief, the organization fell to pieces\u2026 The gang had fled from Astley Priors in a panic, leaving behind documents which compromised them hopelessly.'\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"Jane narrates: 'I sank into a sort of stupor\u2026 playing the part had become second nature\u2026 I laid the papers between two advertisement pages of a magazine\u2026 between the picture and its backing.' Confirms she survived, hid the papers, and feigned amnesia.\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"distorted\", \"evidence\": \"'By the way, you're all wrong about that photograph of Jane. It was taken from me, but I found it again\u2014in that little safe on the wall in Mrs. Vandemeyer's bedroom\u2026 I determined I wouldn't let on I'd got it until a photographer had made a dozen copies.' Julius's proposal is accepted by Jane in the car.\", \"note\": \"The abridgment confirms Julius recovered the photograph and eventually proposes to Jane (who accepts), but the synopsis says Julius 'confesses his own red herring\u2014losing, then secretly recovering, the photograph' in the aftermath supper scene. In the abridgment it is revealed at supper but Julius also earlier kept it secret; broadly matches. However the synopsis says Julius's proposal is driven by Jane's 'courage' and her 'American loneliness soothed by a kindred audacity,' while the abridgment attributes it to Julius having loved her photo from the start and Jane saying she loved him from the car-chase moment\u2014materially different characterisation of motivation, though the outcome (accepted proposal) is the same. Minor distortion on the characterisation of what wins him over.\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"The narrative confirms Sir James's 'chilling brilliance' nearly destroyed Tuppence; Tommy's discovery of the misspelled 'Twopence' gave him his man.\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"'Sir William surveying him apoplectically\u2026 Not much to look at\u2014but you've done good work. Shall we let bygones be bygones? You're my heir; I propose to make you an allowance'\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"Mr. Carter toasts 'The Joint Venture which has so amply justified itself by success!' and the supper party at the Savoy includes thanks to the Young Adventurers; Julius's lavish party implies cheques/reward.\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"Mr. Carter reads from the dead K.C.'s private notebook/diary at the Savoy supper: 'a great many men are mad\u2026 I realized I had exceptional abilities\u2026 the power I dreamed of was absolute!'\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"Julius proposes to Jane in the Rolls-Royce and she accepts; in another taxi Tommy and Tuppence move from awkwardness to mutual confession ending with 'A sport!'\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"'it is the frank partnership of two modern souls\u2014witty, stubborn, and brave\u2014that defeats the puppeteer' is thematically reflected in the taxi scene and throughout the novel's resolution.\", \"note\": \"\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"The taxi proceeds around Regent's Park; Tommy and Tuppence pledge to marry ('a flat\u2026 Ours') and call marriage 'A sport!'\u2014the two amateurs exchange their pledge to dare together.\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 51083,
+    "output_tokens": 2243,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 48.5340530872345,
+    "stop_reason": "end_turn"
+  }
+}

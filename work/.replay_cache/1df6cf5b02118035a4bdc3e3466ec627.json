@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:30:51",
+  "key": "1df6cf5b02118035a4bdc3e3466ec627",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "86bb2f4e2709551426be2e17ae06193a",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both chapters systematically, testing each candidate against the seven structural tests and the gate test.\n\n---\n\n**Ch 006 draft \u2014 candidates**\n\n1. *\"with a man and a lady in a brown riding-habit\"* \u2014 Mr. Sloane is an authorized removal, so the compression of his name to \"a man\" is expected. The lady's descriptor is clear. No finding.\n\n2. *\"A vague invitation from the lady led to a muddle; Gatsby ran inside for his hat and light overcoat, intending to follow their party in his car.\"* \u2014 The source staged an extended scene (Sloane's aside, Tom's muttering, the invitation's ambiguity) but Sloane is an authorized removal. The summary still parses. No finding.\n\n3. *\"While he was gone Tom muttered on the porch: 'My God, I believe the man's coming. Doesn't he know she doesn't want him?\u2026 I wonder where in the devil he met Daisy.'\"* \u2014 In the source Tom's mutter is a response to the snub dynamic and Sloane's whispered aside. Sloane is an authorized cut, so the residual seam (Tom musing aloud without Sloane as interlocutor) is expected. No finding.\n\n4. The Ella Kaye / Cody background paragraph cuts \"the none too savoury ramifications by which Ella Kaye, the newspaper woman, played Madame de Maintenon to his weakness and sent him to sea.\" The draft still names Ella Kaye and says Cody died when she came aboard. Ella Kaye is not a minor character requiring a gloss by the invariant list; she is named twice in the Cody backstory and her role (scheming woman who inherited the money) is clear from context. No finding.\n\n---\n\n**Ch 007 draft \u2014 candidates**\n\n**Candidate 1: \"Biloxi\" reference**\n\nDraft passage: *\"You must have gone there about the time Bilotle went to New Haven.\"*\n\nExact draft text: `\"You must have gone there about the time Biloxi went to New Haven.\"`\n\nThe Biloxi comic detour is an **authorized subplot removal** (Ch 007 \u2014 \"Biloxi-at-the-wedding comic detour during the Plaza scene\"). The entire preceding conversation about Blocks Biloxi has been cut. Yet the name \"Biloxi\" survives in Tom's taunt, and the preceding draft chapter (Ch 006) never establishes who Biloxi is. The local sentence gives no identifier either. A reader has no idea who \"Biloxi\" is, what his going to New Haven means, or why the timing is significant as a put-down of Gatsby's Oxford claim. This is test 7 (unglossed minor proper name) \u2014 the name survives after its introduction was cut, and neither the preceding draft chapter nor the local sentence tells the reader who this person is.\n\nGate test: A reader with no source access would be genuinely confused \u2014 the name appears without antecedent, role, or relationship, mid-conversation, as if it carries shared meaning that was never established in the draft.\n\n**Candidate 2: \"About Gatsby,\" he corrected himself**\n\nDraft passage: `\"About Gatsby,\" he corrected himself.`\n\nIn the source the exchange runs:\n> \"Do you mean you've been to a medium?\" inquired Jordan humorously.\n> \"What?\" Confused, he stared at us as we laughed. \"A medium?\"\n> \"About Gatsby.\"\n> \"About Gatsby! No, I haven't. I said I'd been making a small investigation of his past.\"\n\nIn the source \"About Gatsby\" is Jordan's clarifying prompt \u2014 she is redirecting Tom's confused \"A medium?\" back to the subject of the conversation. In the draft this becomes Tom saying `\"About Gatsby,\" he corrected himself` \u2014 as if Tom is the one volunteering the subject correction. The attribution \"he corrected himself\" is placed on Tom, but in context Tom is not correcting himself; Jordan provided the clarification in the source. However, reading the draft on its own: Tom has just said \"A medium?\" in apparent confusion, and then says \"About Gatsby, he corrected himself\" \u2014 a competent reader can parse this as Tom refocusing his own thought (\"oh, you mean about Gatsby \u2014 that's what I meant\"). It is awkward but not a structural failure: the sentence parses, the referent of \"he\" is Tom (just named), and there is no missing antecedent. This is merely less well-phrased. **Rejected.**\n\n**Candidate 3: The transition into the accident scene**\n\nDraft passage: `The afternoon's heat had broken; dusk gathered in the valley of ashes. In the garage office Wilson had locked his wife upstairs and spoke, in a colourless way turned hard and strange, about moving West. Then the racket overhead, the rush of a body through the dark, the cry\u2014\"Beat me! Throw me down and beat me, you dirty little coward!\"\u2014and the bursting out into the road.`\n\nThe source handles the accident through Michaelis as the named witness/narrator (an authorized removal). The draft substitutes a compressed summary. The question is whether \"Wilson had locked his wife upstairs\" is a mid-scene jump \u2014 but the draft has already established Wilson's garage stop and his statement \"I'm going to get her away.\" The wife being locked up is a plausible extension. The reader is not confronted with a definite reference (\"the locked room\") that was never established. No finding.\n\n**Candidate 4: \"There was two cars,\" said another voice**\n\nIn the source this line is spoken by Michaelis (authorized removal). The draft attributes it to \"another voice\" \u2014 a clear authorized-removal residue. No finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"You must have gone there about the time Biloxi went to New Haven.\\\"\",\n    \"source_has\": \"A extended comic digression identifies 'Blocks' Biloxi by name, origin (Biloxi, Tennessee), box-making trade, and his fraudulent claim to be president of Tom's Yale class \u2014 establishing who he is before Tom uses his name as a chronological put-down of Gatsby's Oxford claim.\",\n    \"gate_test_answer\": \"A reader with no source access would be genuinely confused: 'Biloxi' appears without any introduction, role, or relationship in the draft, making Tom's taunt ('about the time Biloxi went to New Haven') an opaque non-sequitur rather than the pointed insinuation it is meant to be.\"\n  }\n]\n```",
+    "input_tokens": 34246,
+    "output_tokens": 1568,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 40.97794795036316,
+    "stop_reason": "end_turn"
+  }
+}

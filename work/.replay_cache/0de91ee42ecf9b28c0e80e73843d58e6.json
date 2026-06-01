@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:39:16",
+  "key": "0de91ee42ecf9b28c0e80e73843d58e6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the seven tests and gate test to each potentially damaged passage.\n\n**Ch 025 draft checks:**\n\n1. \"Two days after her young cousin left\" \u2014 the cousin (Alfred's son Henrique) was an authorized removal. But the draft says \"her young cousin left\" which is sufficient \u2014 a reader understands Eva had a young cousin visiting who has departed. No structural damage; the reference is self-contained.\n\n2. \"she said to the nurse, whom he met a moment after\" \u2014 In the source this is Mammy, an authorized removal. The draft substitutes \"the nurse.\" No problem; \"the nurse\" is a clear descriptor.\n\n3. \"There's our good nurse loves her children; I've seen her cry when she talked about them.\" \u2014 In the source this is Mammy, whose children were separated from her by sale \u2014 a fact established in the source. The draft cuts the Mammy subplot (authorized). But does a reader understand this sentence? Eva is saying the nurse loves her children and has cried about them. Without knowing *why* she cried (children sold away), the emotional force is diminished but the sentence still parses and conveys meaning. This is detail loss, not structural damage.\n\n4. \"In that book which she and her simple old friend had read so much together\" \u2014 \"her simple old friend\" refers to Tom. Tom is present in the preceding draft. A reader can infer this is Tom given the subsequent Tom dialogue. No structural damage.\n\n5. The exchange about Prue \u2014 \"when I heard about poor Prue\" \u2014 Prue's story was an authorized subplot removal (Ch 020). Prue is mentioned but not introduced in the draft. However, this is a *direct residue of an authorized cut* \u2014 Prue the bakery woman was explicitly authorized for removal. So this is not a finding.\n\n**Ch 026 draft checks:**\n\n1. Marie's speech compression: In the source, Marie has a two-part exchange where she first complains about heart disease, St. Clare responds skeptically (\"O, Marie, you are blue\"), Marie reproaches him for caring about Eva but not her, St. Clare makes a sardonic reply, and *then* Marie says her distress about Eva developed her suspected condition. In the draft, the middle portion (St. Clare's skepticism, Marie's reproach about his caring only for Eva, his sardonic reply) is cut, and Marie's final claim (\"My distress about Eva, and the exertions I have made with that dear child, have developed what I have long suspected\") immediately follows St. Clare's neutral question about why she needs to send for Doctor Posey. Then St. Clare responds with the sardonic \"If it's particularly agreeable to you to have heart disease...\" \u2014 but in the draft this sarcasm comes after Marie has already stated her belief sincerely, without the intervening dialogue that escalated to it. Does this constitute a broken pivot? St. Clare's sardonic reply in the source is a response to Marie's reproach that he doesn't care about her but only Eva. Without that reproach, his sarcasm reads as responding simply to her claim about heart disease \u2014 which still makes sense as sarcasm. A reader would understand: she claims heart disease, he sarcastically says fine. Not a genuine broken pivot \u2014 the meaning is recoverable.\n\n2. \"What new witchcraft has Tops been brewing?\" \u2014 \"Tops\" is a nickname for Topsy. Has Topsy been introduced in the preceding draft chapters? Looking at the authorized removals and the draft chapters provided: Topsy (Tops) is a major recurring character who was introduced earlier in the novel (Ch 014 in the source, where St. Clare buys her). The draft chapters provided are Ch 025 and Ch 026 only \u2014 but the instructions say \"A major or continuously present character is named without a fresh gloss; readers can track principal names across chapters.\" Topsy is a principal recurring character. However, \"Tops\" is a nickname \u2014 does a reader following the abridgment know this nickname? In this same chapter's draft, Topsy is referred to as \"Topsy\" multiple times afterward. \"Tops\" appears only in St. Clare's colloquial utterance. A reader who has tracked Topsy through the abridgment would recognize \"Tops\" as his nickname for her. Not a finding.\n\n3. \"Miss Feely says so\" \u2014 \"Miss Feely\" is Topsy's pronunciation of \"Miss Ophelia.\" Miss Ophelia is established in the draft. Not a finding.\n\n4. \"old Missis used to say so\" \u2014 this refers to Topsy's previous owner. While the backstory of Topsy's purchase may be compressed, Topsy's own dialogue has just established she was previously owned (\"old Missis\"), and a reader understands this without confusion.\n\nAfter thorough review, I find no passage that genuinely fails the gate test in either chapter. The cuts either fall under authorized removals, involve descriptor substitutions that parse clearly, or reduce richness without damaging structural comprehensibility.\n\n```json\n[]\n```",
+    "input_tokens": 13801,
+    "output_tokens": 1141,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 30.186071157455444,
+    "stop_reason": "end_turn"
+  }
+}

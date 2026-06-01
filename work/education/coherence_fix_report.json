@@ -1,0 +1,330 @@
+{
+  "book_id": "education",
+  "requested_pairs": [
+    "021-022",
+    "023-026"
+  ],
+  "findings_seen": 18,
+  "findings_selected": 16,
+  "findings_filtered": 2,
+  "filtered_findings": [
+    {
+      "pair": "017-018",
+      "finding_index": 5,
+      "segment_id": "017",
+      "valid": true,
+      "reason": "duplicate",
+      "class": "non_parseable",
+      "draft_passage": "Only starfish, shell-fish, polyps, or trilobites — whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.",
+      "gate_test_answer": "A reader would stumble because the draft sentence lacks a main verb and reads as a fragment, obscuring that it modifies the preceding claim about what existed before Pteraspis.",
+      "duplicate_of": {
+        "pair": "013-017",
+        "finding_index": 3,
+        "segment_id": "017",
+        "draft_passage": "Only starfish, shell-fish, polyps, or trilobites — whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay."
+      }
+    },
+    {
+      "pair": "029-030",
+      "finding_index": 11,
+      "segment_id": "029",
+      "valid": true,
+      "reason": "duplicate",
+      "class": "missing_gloss",
+      "draft_passage": "As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin.",
+      "gate_test_answer": "A reader would be genuinely confused about who “the monkey” is, since the draft drops the La Fontaine gloss that defines Adams’s self‑metaphor as the monkey contrasted with the bear.",
+      "duplicate_of": {
+        "pair": "028-029",
+        "finding_index": 9,
+        "segment_id": "029",
+        "draft_passage": "As the monkey looked back across the Baltic from the safe battlements of Stockholm, Russia looked more portentous than from the Kremlin."
+      }
+    }
+  ],
+  "pairs_processed": 14,
+  "pairs_applied": 7,
+  "pairs_no_change": 0,
+  "pairs_failed": 7,
+  "pairs_no_findings": 0,
+  "pairs": [
+    {
+      "pair": "004-005",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "005"
+      ],
+      "before_words": {
+        "004": 4805,
+        "005": 3480
+      },
+      "after_words": {
+        "004": 4805,
+        "005": 3518
+      },
+      "edits": [
+        {
+          "segment_id": "005-para-01",
+          "change": "The opening sentence 'Boston belonged to neither tide—hardly even to America.' lacks its antecedent. Restored the brief setup clause identifying the two tides (the society of the forties as slack-water between a tide passed and a tide to come) so the pivot reads coherently, per source text."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "005-006",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "response must include string fields draft_n and draft_np1",
+      "changed": []
+    },
+    {
+      "pair": "007-008",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "007",
+        "008"
+      ],
+      "before_words": {
+        "007": 2649,
+        "008": 3722
+      },
+      "after_words": {
+        "007": 2661,
+        "008": 3722
+      },
+      "edits": [
+        {
+          "segment_id": "007-para-14",
+          "change": "Clarify the dangling 'he' pronoun in the Apthorp/Beethoven passage: specify that Apthorp protested Adams exaggerated his indifference, making clear it is Adams who loathed Beethoven and Adams who felt surprise, matching source referential structure."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "013-017",
+      "status": "failed",
+      "findings": 2,
+      "attempts": 2,
+      "error": "013-017 repair for 013 changed word count from 3885 to 2827; coherence-fix only allows local edits",
+      "changed": []
+    },
+    {
+      "pair": "018-021",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "018-021 repair for 021 changed word count from 3105 to 2560; coherence-fix only allows local edits",
+      "changed": []
+    },
+    {
+      "pair": "022-023",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "022"
+      ],
+      "before_words": {
+        "022": 2949,
+        "023": 3872
+      },
+      "after_words": {
+        "022": 2956,
+        "023": 3872
+      },
+      "edits": [
+        {
+          "segment_id": "022-idx-7",
+          "change": "Add a brief gloss identifying 'the Fortieth Parallel' as King's Government Survey so a reader is not confused by the bare reference. Inserted as the opening clause of the paragraph, using source-text language, without adding new plot events."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "027-028",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "027"
+      ],
+      "before_words": {
+        "027": 2365,
+        "028": 2411
+      },
+      "after_words": {
+        "027": 2408,
+        "028": 2411
+      },
+      "edits": [
+        {
+          "segment_id": "027-para-last",
+          "change": "Add minimal antecedent for 'this support' by inserting a bridging clause about the pen before the 'Compelled' sentence, drawn from source text, so the reference is no longer dangling."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "028-029",
+      "status": "applied",
+      "findings": 2,
+      "attempts": 1,
+      "changed_segments": [
+        "029"
+      ],
+      "before_words": {
+        "028": 2411,
+        "029": 2261
+      },
+      "after_words": {
+        "028": 2411,
+        "029": 2312
+      },
+      "edits": [
+        {
+          "segment_id": "029-09",
+          "change": "Add minimal La Fontaine gloss before 'As the monkey' so the metaphor is intelligible without quoting the full poem."
+        },
+        {
+          "segment_id": "029-10",
+          "change": "Restore the explicit contrast phrase ('with the dreary forests of Russia and the stern streets of St. Petersburg') so 'In contrast' has a stated counterpart."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "030-031",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "030"
+      ],
+      "before_words": {
+        "030": 1734,
+        "031": 1631
+      },
+      "after_words": {
+        "030": 1758,
+        "031": 1631
+      },
+      "edits": [
+        {
+          "segment_id": "030-12",
+          "change": "Add the source's phrase 'the only possible alternative' before 'a Gun-power combination' and append a one-clause gloss drawn from the source's later passage distinguishing Coal-power (relative intensity) from Gun-power (relative inertia), so readers understand what the terms denote without adding new events or characters."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "031-032",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "031-032 repair for 031 changed word count from 1631 to 580; coherence-fix only allows local edits",
+      "changed": []
+    },
+    {
+      "pair": "032-033",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "032-033 repair for 032 changed word count from 2458 to 139; coherence-fix only allows local edits",
+      "changed": []
+    },
+    {
+      "pair": "036-037",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "036-037 repair for 037 changed word count from 1208 to 572; coherence-fix only allows local edits",
+      "changed": []
+    },
+    {
+      "pair": "021-022",
+      "status": "applied",
+      "findings": 1,
+      "attempts": 1,
+      "changed_segments": [
+        "022"
+      ],
+      "before_words": {
+        "021": 3105,
+        "022": 2956
+      },
+      "after_words": {
+        "021": 3105,
+        "022": 2983
+      },
+      "edits": [
+        {
+          "segment_id": "022-16",
+          "change": "Introduce Emmons by name with minimal identifying phrase before 'Emmons's party was out of reach', since the source establishes him as an old friend and geologist on the Fortieth Parallel Survey but the draft drops that context entirely, leaving 'Emmons's party' a dangling reference."
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "023-026",
+      "status": "failed",
+      "findings": 1,
+      "attempts": 2,
+      "error": "023-026 repair for 023 changed word count from 3872 to 762; coherence-fix only allows local edits",
+      "changed": []
+    }
+  ],
+  "targeted_followup": {
+    "book_id": "education",
+    "requested_pairs": [
+      "021-022",
+      "023-026"
+    ],
+    "findings_seen": 2,
+    "findings_selected": 2,
+    "findings_filtered": 0,
+    "filtered_findings": [],
+    "pairs_processed": 2,
+    "pairs_applied": 1,
+    "pairs_no_change": 0,
+    "pairs_failed": 1,
+    "pairs_no_findings": 0,
+    "pairs": [
+      {
+        "pair": "021-022",
+        "status": "applied",
+        "findings": 1,
+        "attempts": 1,
+        "changed_segments": [
+          "022"
+        ],
+        "before_words": {
+          "021": 3105,
+          "022": 2956
+        },
+        "after_words": {
+          "021": 3105,
+          "022": 2983
+        },
+        "edits": [
+          {
+            "segment_id": "022-16",
+            "change": "Introduce Emmons by name with minimal identifying phrase before 'Emmons's party was out of reach', since the source establishes him as an old friend and geologist on the Fortieth Parallel Survey but the draft drops that context entirely, leaving 'Emmons's party' a dangling reference."
+          }
+        ],
+        "dry_run": false
+      },
+      {
+        "pair": "023-026",
+        "status": "failed",
+        "findings": 1,
+        "attempts": 2,
+        "error": "023-026 repair for 023 changed word count from 3872 to 762; coherence-fix only allows local edits",
+        "changed": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:38:35",
+  "key": "4bf189fad6804c75f5e589b027b8dcc4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through each draft chapter systematically, applying only the seven tests and the gate test.\n\n---\n\n**Ch 062 draft \u2014 \"he yelled out\"**\n\nSource: \"the negro yelled out\" (attributed to Daggoo, who was introduced by name earlier in the paragraph as the one who spotted the spectre).\n\nDraft: The paragraph introduces \"Daggoo\" by name in the previous sentence (\"a strange spectre was seen by Daggoo from the main-mast-head\"), so the pronoun \"he\" in \"he yelled out\" has a clear antecedent. This is not a dangling pronoun \u2014 a competent reader tracks \"Daggoo\" across two adjacent sentences. Not a finding.\n\n---\n\n**Ch 062 draft \u2014 Starbuck's reply / Flask's question**\n\nSource: Flask asks \"What was it, Sir?\" and Starbuck replies \"The great live squid\u2026\". Both speakers are established. In the draft, the same exchange survives intact. The triggering exclamation by Starbuck is also present. Not a finding.\n\n---\n\n**Ch 062 draft \u2014 opening \"the lonely, alluring jet would be seen\"**\n\nSource Ch 062: \"And still, at wide intervals in the silvery night, the lonely, alluring jet would be seen.\" This refers to a solitary spout/jet that had been appearing, which in the source is part of the atmospheric build-up in this same chapter's opening. The draft Ch 061 contains nothing about any jet. The source Ch 061 also contains nothing about a jet. The jet is introduced only in Ch 062's source, and it survives in Ch 062's draft. So this is a self-contained introduction within the same chapter \u2014 not a mid-scene jump. Not a finding.\n\n---\n\n**Ch 061 draft \u2014 \"The accursed shark alone bears comparative analogy to the dog.\"**\n\nSource: \"The accursed shark alone can in any generic respect be said to bear comparative analogy to him.\" The \"him\" in the source refers to the dog, discussed in a preceding sentence asking whether the ocean furnishes any fish answering to \"the sagacious kindness of the dog.\" The draft cuts the setup question and the dog-kindness framing, retaining only \"The accursed shark alone bears comparative analogy to the dog.\" The draft sentence names the dog explicitly, so the reader can parse it. It is compressed but self-contained. Not a finding.\n\n---\n\n**Ch 061 draft \u2014 \"Though we know the sea\u2026yet for ever and for ever\u2026Nevertheless\u2026\"**\n\nSource uses \"But though\u2026though\u2026though\u2026yet\u2026nevertheless\" as a long anaphoric \"though/nevertheless\" structure. The draft compresses into \"Though\u2026though\u2026though\u2026yet\u2026Nevertheless.\" The pivot \"Nevertheless\" still has its antecedent clauses in the draft. Parseable. Not a finding.\n\n---\n\n**Ch 062 draft \u2014 \"So rarely is it beheld that the sight has gone far to invest it with portentousness; whalemen believe it to furnish the sperm whale his only food\u2026\"**\n\nThe \"it\" in \"whalemen believe it to furnish\" refers to the squid, which is established in the preceding paragraph. Parseable. Not a finding.\n\n---\n\nAfter applying all seven tests and the gate test to every sentence in both draft chapters, no sentence fails any of the structural coherence tests. The authorized cuts (digressions, minor characters) account for all compression seams, and all remaining sentences parse unambiguously with clear antecedents and intact logical connectives.\n\n```json\n[]\n```",
+    "input_tokens": 6293,
+    "output_tokens": 818,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 19.008161067962646,
+    "stop_reason": "end_turn"
+  }
+}

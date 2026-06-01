@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:45:33",
+  "key": "be5c9eb0b988a3ccd20992749d490ae4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, testing every candidate against the seven validity criteria and the gate test.\n\n---\n\n**Ch 129 draft \u2014 scan**\n\n1. *\"Yet the grey Manxman, oldest mariner of all, declared the sounds were the voices of newly drowned men in the sea.\"* \u2014 The Manxman is on the authorized removal list. His name appears here with an appositive (\"oldest mariner of all\"), so the first local use does identify him. Not a finding.\n\n2. Carpenter's grumble paragraph: \"The carpenter, set to the task, grumbled\u2026\" \u2014 carpenter has been present throughout the novel and is not a minor removable character; no finding.\n\n3. The carpenter's interior monologue is converted to third-person narration that ends in direct speech. The transition is unconventional but parses.\n\n4. *\"But again the old Manxman said nay.\"* \u2014 Second use in the chapter; first use gave appositive. Not a finding.\n\nNo structural damage found in Ch 129.\n\n---\n\n**Ch 131 draft \u2014 scan**\n\n1. *\"'Bad news; she brings bad news,' muttered the old Manxman.\"* \u2014 This is the second chapter in which the Manxman appears. Ch 129 draft introduced him with \"the grey Manxman, oldest mariner of all.\" But Ch 131 is a separate chapter (there is an intervening Ch 130, not present here, and the authorized removal list notes the Manxman is a removable minor character). The Manxman is on the **authorized minor-character removals** list. The named-person continuity invariant says: if a proper name from that list appears in the draft, the preceding draft chapter or the local sentence/paragraph must identify who that person is.\n\n   - Local sentence: \"said the old Manx sailor\" (later in the same chapter) \u2014 this is a descriptor, not the proper name. The proper-name use is \"the old Manxman\" without any local role/relationship/appositive identifier. The preceding draft chapter (Ch 129) did introduce him with an appositive. However, the invariant says \"the preceding draft chapter **or** the local sentence/paragraph.\" Ch 129 did establish him. So a competent reader coming from Ch 129 draft knows who the Manxman is. Not a finding.\n\n2. *Stubb's whispered line to Flask is cut mid-sentence in the draft:* In the source, Stubb's whisper ends \"\u2014it must have been the\u2014\" (trailing off before the captain's interruption). The draft preserves this trailing structure: *\"see how pale he looks \u2014 pale in the very buttons of his eyes \u2014\"* and then the captain interrupts. The source's trailing dash was a deliberate stylistic cut-off before the captain speaks. The draft renders it similarly. No structural damage.\n\n3. *\"His son!\" cried Stubb. \"Oh, it's his son he's lost! We must save that boy.\"* \u2014 In the source, this is: *\"His son!\" cried Stubb, \"oh, it's his son he's lost! I take back the coat and watch\u2014what says Ahab? We must save that boy.\"* The draft cuts \"I take back the coat and watch \u2014 what says Ahab?\" This is a compression, but the remaining sentence still parses and is attributed. The \"coat and watch\" callback is dropped but Stubb's coat-and-watch comment was itself present in the draft (preceding paragraph). The sentence reads fine without it. Not a finding.\n\n4. *\"Not only was one of the captain's sons among the missing boat's crew; another son had been aboard one of the other boats\u2026\"* \u2014 This paragraph in the draft renders the source's explanatory passage. It reads coherently as a standalone. The phrase \"the majority first\" is slightly compressed but parseable. No finding.\n\n5. **Captain Gardiner** \u2014 *\"Captain Gardiner, I will not do it.\"* This is the first time Gardiner's name appears in the draft. Before this moment, the Rachel's captain has been called only \"the stranger Captain\" or \"the captain\" throughout the draft chapter. The name \"Captain Gardiner\" appears without a local appositive or identifier linking it to \"the stranger Captain.\" \n\n   - Is Gardiner a minor removable character? He is not on the authorized removal list. He is, however, a character who appears only in this chapter. The test (criterion 7) asks: does a minor/removable character's proper name appear without a local role, relationship, or appositive identifier, and is that person not established in the immediately preceding draft chapter? \n   \n   - The preceding draft chapter (Ch 129) does not mention Gardiner at all. Within Ch 131 draft, Gardiner is referred to throughout as \"the stranger Captain\" or \"the captain\" \u2014 never named until Ahab addresses him as \"Captain Gardiner\" in dialogue. A reader with no source access would encounter \"Captain Gardiner\" only in Ahab's speech and in the narration \"*Gardiner*, transfixed\u2026\" without any prior identification that the stranger captain's name is Gardiner.\n   \n   - **Gate test**: A competent reader with no source access, reading only the draft, would not know that \"Captain Gardiner\" = the stranger captain of the Rachel until perhaps inferring it from context (Ahab is addressing someone, the only addressable person present is the stranger captain). The post-dialogue narration \"*Gardiner*, transfixed at this unconditional and utter rejection, started from his enchantment\" uses the bare surname without any appositive. A reader could work it out from context, but the name is introduced without any identification in a chapter where the character has only been called \"the stranger Captain.\" This is a genuine criterion-7 case: a minor proper name introduced without a local role identifier and not established in the preceding draft chapter.\n\n   \u2192 **Valid finding.**\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Captain Gardiner, I will not do it. Even now I lose time.\",\n    \"source_has\": \"Source introduces Gardiner by name only at this same moment, but the surrounding source text has Ahab earlier recognise him as \\\"a Nantucketer he knew,\\\" which in context signals a named acquaintance; the draft retains that phrase but never resolves it to the name Gardiner before this line.\",\n    \"gate_test_answer\": \"A reader with no source access has seen only 'the stranger Captain' throughout the chapter and cannot know that 'Captain Gardiner' refers to that same person until deducing it from context; the subsequent bare 'Gardiner, transfixed\u2026' likewise gives no appositive, so the reader is genuinely momentarily confused about who is being named, not merely reading a less-ornamented version.\"\n  }\n]\n```",
+    "input_tokens": 8471,
+    "output_tokens": 1605,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 35.75872874259949,
+    "stop_reason": "end_turn"
+  }
+}

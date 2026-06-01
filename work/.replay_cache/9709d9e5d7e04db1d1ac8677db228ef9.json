@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-05T15:21:27",
+  "key": "9709d9e5d7e04db1d1ac8677db228ef9",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "classify",
+    "hash": "f61cff406ef1c4a104cec785524d185d",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_classifier.py",
+        "sha256": "057d9dce3dd5d6ebc6ff94f20a9b17c4e7317618be01f7f791e8a1ac56845afb",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/classify_chapters.md",
+        "sha256": "be91bb67e4fecc47bf1fa8e2590b6aae1e59c823deab167c5d7a75ff3a0d62c0",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"extradiegetic\", \"reason\": \"Editor's preface describing publication history\"},\n  {\"id\": \"002\", \"status\": \"diegetic\", \"reason\": \"Author's own preface establishing narrative voice\"},\n  {\"id\": \"003\", \"status\": \"diegetic\", \"reason\": \"Chapter I narrative\"},\n  {\"id\": \"004\", \"status\": \"diegetic\", \"reason\": \"Chapter II narrative\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter III narrative\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter IV narrative\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter V narrative\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter VI narrative\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter VII narrative\"},\n  {\"id\": \"010\", \"status\": \"diegetic\", \"reason\": \"Chapter VIII narrative\"},\n  {\"id\": \"011\", \"status\": \"diegetic\", \"reason\": \"Chapter IX narrative\"},\n  {\"id\": \"012\", \"status\": \"diegetic\", \"reason\": \"Chapter X narrative\"},\n  {\"id\": \"013\", \"status\": \"diegetic\", \"reason\": \"Chapter XI narrative\"},\n  {\"id\": \"014\", \"status\": \"diegetic\", \"reason\": \"Chapter XII narrative\"},\n  {\"id\": \"015\", \"status\": \"diegetic\", \"reason\": \"Chapter XIII narrative\"},\n  {\"id\": \"016\", \"status\": \"diegetic\", \"reason\": \"Chapter XIV narrative\"},\n  {\"id\": \"017\", \"status\": \"diegetic\", \"reason\": \"Chapter XV narrative\"},\n  {\"id\": \"018\", \"status\": \"diegetic\", \"reason\": \"Chapter XVI narrative\"},\n  {\"id\": \"019\", \"status\": \"diegetic\", \"reason\": \"Chapter XVII narrative\"},\n  {\"id\": \"020\", \"status\": \"diegetic\", \"reason\": \"Chapter XVIII narrative\"},\n  {\"id\": \"021\", \"status\": \"diegetic\", \"reason\": \"Chapter XIX narrative\"},\n  {\"id\": \"022\", \"status\": \"diegetic\", \"reason\": \"Chapter XX narrative\"},\n  {\"id\": \"023\", \"status\": \"diegetic\", \"reason\": \"Chapter XXI narrative\"},\n  {\"id\": \"024\", \"status\": \"diegetic\", \"reason\": \"Chapter XXII narrative\"},\n  {\"id\": \"025\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIII narrative\"},\n  {\"id\": \"026\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIV narrative\"},\n  {\"id\": \"027\", \"status\": \"diegetic\", \"reason\": \"Chapter XXV narrative\"},\n  {\"id\": \"028\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVI narrative\"},\n  {\"id\": \"029\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVII narrative\"},\n  {\"id\": \"030\", \"status\": \"diegetic\", \"reason\": \"Chapter XXVIII narrative\"},\n  {\"id\": \"031\", \"status\": \"diegetic\", \"reason\": \"Chapter XXIX narrative\"},\n  {\"id\": \"032\", \"status\": \"diegetic\", \"reason\": \"Chapter XXX narrative\"},\n  {\"id\": \"033\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXI narrative\"},\n  {\"id\": \"034\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXII narrative\"},\n  {\"id\": \"035\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIII narrative\"},\n  {\"id\": \"036\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXIV narrative\"},\n  {\"id\": \"037\", \"status\": \"diegetic\", \"reason\": \"Chapter XXXV narrative\"}\n]\n```",
+    "input_tokens": 12542,
+    "output_tokens": 938,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 8.999177932739258,
+    "stop_reason": "end_turn"
+  }
+}

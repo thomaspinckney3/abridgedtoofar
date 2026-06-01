@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-07T14:11:26",
+  "key": "7852376e69c9b627543196d871066427",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"Heather introduces Blake, whose eyes are 'something dark' and handshake 'clammy, like his skin didn't quite fit'; Miriam is self-deprecating and wary; Heather is a relentless matchmaker\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Heather engineers a reckless taxi chase; back at her apartment Miriam feels watched; Blake and two hulking men enter via the fire escape window, Blake removes a flesh mask to reveal a pig-snout, then chloroforms her\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"Miriam wakes in a canvas-topped metal truck on a gravel road with Alex, Olivia, Cindy, and Stephanie; all were grabbed and drugged; Blake's crew drives them through dark forest\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"The truck stops before a stone castle with thatched stables, armored guards with crests, and a nearby village of stone huts running on oil lanterns and firelight\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"Locked in straw stalls, they are told they will be 'presented' to dragon lords; the elderly Darda tells them 'once you have crossed into these realms and been Marked you can never go back \u2014 that is not a rule, but a law of nature'\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"In the feasting hall five lords preside; the central Grand Dragon Lord has short spiked dirty-blond hair and green eyes; Blake offers the 'merchandise'; the young golden-curled Cayden's eyes fix on Stephanie; Miriam blurts out a dare to take Stephanie's place, drawing the Grand Dragon Lord's attention\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"'I choose you as my Maiden' \u2014 he overrules no named adviser (Renner not mentioned) but does override the room's expectation; Miriam is unchained and led to private quarters where Darda explains the Marking protects her from other lords\", \"note\": \"Renner is not named in the abridgment; otherwise the beat is correct. Marking as protective is conveyed.\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"Darda burns the crest into Miriam's shoulder; Miriam ties bed linens and climbs down the wall; she overhears \u2014 indirectly, through later dialogue \u2014 that northern barbarian dragons (Bestia Draconis) have been attacking border villages\", \"note\": \"The eavesdropping on Xander discussing raids is not shown during the escape itself but the raids are discussed later at the Portal scene.\"},\n  {\"sentence\": 9, \"status\": \"distorted\", \"evidence\": \"Miriam hurls a stone into the pond and summons the Lady of the Pond, who gives the blessing 'May your body grow with your love'; Miriam then faints and Xander catches her\", \"note\": \"Synopsis says Miriam hurled the stone 'to deter her pursuer'; in the abridgment she throws it to summon the Lady without that specific intent \u2014 a minor but material difference in motive. Also the abridgment has her fall to her knees rather than faint into Xander's arms mid-air, though he does catch her.\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"Xander reveals his wings erupting from his back and explains he can fully transform into a scaled dragon though it is 'a great strain'; he says his mother was a Maiden, making him half-human\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"Miriam smells lilacs and cut grass from Xander's glands; her resistance melts; they have sex; she reflects on it in the cool light of the following morning\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"Xander explains Maidens from her world have for millennia refreshed the dragon bloodlines \u2014 'a custom of thousands of years'; the Portal obliterates what doesn't belong, so return means death\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"They breakfast with Cayden and a glowing Stephanie; Xander flies Miriam to the Portal site, a stone arch attended by cloaked priests Apuleius and others representing the five houses, glowing with the houses' colors\", \"note\": \"Jethro is not named; the Portal is described with the five house colors and the priests' colored cloaks including green-and-blue (water sigil implied).\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"Xander throws a rock at the Portal and it shatters into colored glass fragments; then six Bestia Draconis descend and battle explodes; Cayden and Xander shift midair to meet them\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"A gray-cloaked monk is carried to the Portal and bursts to dust; one dragon crashes and shrinks to a bloodied man; a third dragon corners Miriam on the platform; Xander grapples it but Miriam's feet slip and she tumbles through the Portal into choking darkness, landing in a city dump\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"Miriam stumbles to Heather's apartment and tells her everything; the Mark flares with searing pain and she sees a vision of Xander sweat-soaked in bed ringed by grave faces\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"Torn between anger, attraction, and dread, Miriam is nudged by Heather's irreverent loyalty toward going back to see if Xander is dying\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"Miriam focuses on the glowing Mark, a green-blue ring opens in midair, she leaps through and lands before startled priests who rush her to Xander's bedside; Cayden, Darda, and the doctor Galen explain silver-poisoned talons are killing him and only the Lady's tears can save him\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"Miriam takes Cayden to the glen, throws a stone, faces the Lady who demands her motive; the Lady, satisfied that 'where there is doubt, there is still hope,' gives Miriam a vial of healing water\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"Miriam pours the vial between Xander's clenched teeth; he convulses and thrashes; 'a soft blue glow spread from his chest across his body'; his breathing steadies and he wakes, asking if she is an apparition, until she jokes him back\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"'You have survived the Portal after the Marking\u2026 under the circumstances, I cannot in good faith keep you with me. You may return to your home.'\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"Miriam says 'I am home'; kisses follow; Xander explains High Castle is only a gathering place for the five dragon lords and his true domain is far to the southwest by a bay, a capital called Alexandria on a browned leather map\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"They prepare to travel by horse with Cayden and Stephanie in company; Xander teases about patience and Miriam quips her 'butt might not make the trip'\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"Alex is pragmatic and cheerful about her brown-bearded lord; Olivia 'looked as cross as ever'; Cindy is beside the white-haired lord (resigned implied); Darda reveals she fell through from Miriam's world nearly sixty years ago and was pressed into service rather than returning\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"Sheep savagely destroy a tossed stick; winged guards with slits in their armor for wings patrol the skies\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"Themes of choice and captivity run through Miriam trading places for Stephanie, Xander balancing duty and desire amid border raids, and the Lady measuring love by action rather than vows\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"Their bond is built on mutual risk \u2014 his leap into battle, her plunge back through a portal that 'tried to kill' her \u2014 and together they renegotiate power in a world that calls her Maiden but sees her test every gate\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"They end on a rain-soaked road; captain Spiros who grew up daring beside Xander is introduced; a flood-swollen bridge bucks beneath the caravan in the sneak peek; Miriam chose to return, framed as home she picked rather than was dragged to\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 24358,
+    "output_tokens": 2288,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 56.48941397666931,
+    "stop_reason": "end_turn"
+  }
+}

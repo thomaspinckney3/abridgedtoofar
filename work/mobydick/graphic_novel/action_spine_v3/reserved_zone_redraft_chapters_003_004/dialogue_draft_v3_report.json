@@ -1,0 +1,73 @@
+{
+  "source_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard.json",
+  "output_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v3.json",
+  "raw_response": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/dialogue_draft_raw_response.txt",
+  "prompt": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/dialogue_draft_prompt.md",
+  "model": "openai:gpt-5",
+  "stop_reason": "stop",
+  "notes": [
+    "Added source-backed balloons; shortened captions where needed for sharing space."
+  ],
+  "page_count": 9,
+  "panel_count": 20,
+  "speech_count": 16,
+  "thought_count": 1,
+  "caption_count": 15,
+  "zone_adjustments": [],
+  "updated_panels": [
+    {
+      "page_number": 1,
+      "panel_number": 2,
+      "counts": {
+        "caption": 1,
+        "speech": 2,
+        "thought": 0
+      }
+    },
+    {
+      "page_number": 2,
+      "panel_number": 3,
+      "counts": {
+        "caption": 1,
+        "speech": 2,
+        "thought": 0
+      }
+    },
+    {
+      "page_number": 4,
+      "panel_number": 5,
+      "counts": {
+        "caption": 1,
+        "speech": 1,
+        "thought": 0
+      }
+    },
+    {
+      "page_number": 5,
+      "panel_number": 7,
+      "counts": {
+        "caption": 1,
+        "speech": 3,
+        "thought": 0
+      }
+    },
+    {
+      "page_number": 5,
+      "panel_number": 8,
+      "counts": {
+        "caption": 1,
+        "speech": 1,
+        "thought": 1
+      }
+    },
+    {
+      "page_number": 6,
+      "panel_number": 2,
+      "counts": {
+        "caption": 1,
+        "speech": 1,
+        "thought": 0
+      }
+    }
+  ]
+}

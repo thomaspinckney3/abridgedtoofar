@@ -1,0 +1,25 @@
+{"phase": "split", "elapsed_s": 0.0}
+{"phase": "classify", "elapsed_s": 0.0}
+{"phase": "summarize", "elapsed_s": 0.0}
+{"phase": "cuts", "elapsed_s": 0.0}
+{"phase": "plan", "elapsed_s": 0.0}
+{"phase": "prepare-skips", "skipped": [], "kernels_inserted": [], "not_found": [], "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "001", "title": "I", "source_words": 5891, "target_words": 3200, "final_words": 4727, "status": "drafted", "elapsed_s": 1143.7}
+{"phase": "split", "elapsed_s": 0.0}
+{"phase": "classify", "elapsed_s": 0.0}
+{"phase": "summarize", "elapsed_s": 0.0}
+{"phase": "cuts", "elapsed_s": 0.0}
+{"phase": "plan", "elapsed_s": 0.0}
+{"phase": "prepare-skips", "skipped": [], "kernels_inserted": [], "not_found": [], "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "001", "title": "I", "source_words": 5891, "target_words": 3200, "final_words": 4727, "status": "drafted", "resumed": true, "elapsed_s": 0.0}
+{"phase": "draft", "segment_id": "002", "title": "II", "source_words": 4279, "target_words": 2300, "final_words": 3155, "status": "drafted", "elapsed_s": 55.9}
+{"phase": "draft", "segment_id": "003", "title": "III", "source_words": 5733, "target_words": 3100, "final_words": 3380, "status": "drafted", "elapsed_s": 55.0}
+{"phase": "draft", "segment_id": "004", "title": "IV", "source_words": 5455, "target_words": 3000, "final_words": 4807, "status": "drafted", "elapsed_s": 73.0}
+{"phase": "draft", "segment_id": "005", "title": "V", "source_words": 4232, "target_words": 2300, "final_words": 3534, "status": "drafted", "elapsed_s": 50.0}
+{"phase": "draft", "segment_id": "006", "title": "VI", "source_words": 4035, "target_words": 2200, "final_words": 3221, "status": "drafted", "elapsed_s": 63.5}
+{"phase": "draft", "segment_id": "007", "title": "VII", "source_words": 8765, "target_words": 4700, "final_words": 5919, "status": "drafted", "elapsed_s": 93.6}
+{"phase": "draft", "segment_id": "008", "title": "VIII", "source_words": 4529, "target_words": 2500, "final_words": 3290, "status": "drafted", "elapsed_s": 55.8}
+{"phase": "draft", "segment_id": "009", "title": "IX", "source_words": 5224, "target_words": 2800, "final_words": 3951, "status": "drafted", "elapsed_s": 63.0}
+{"phase": "draft-verify", "status": "passed"}
+{"phase": "coherence-pre-fix", "pairs_checked": 8, "findings_total": 10, "class_counts": {"broken_pivot": 4, "unattributed_dialogue": 3, "dangling_reference": 2, "non_parseable": 1}}
+{"phase": "coherence-fix", "pairs_processed": 6, "pairs_applied": 5, "pairs_no_change": 0, "pairs_failed": 1, "pairs_no_findings": 0}

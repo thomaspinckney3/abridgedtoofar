@@ -1,0 +1,81 @@
+{
+  "ts": "2026-05-08T02:07:54",
+  "key": "4c3de3d9e63c38e048efccc46d2989ca",
+  "model": "anthropic:claude-opus-4-7",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "draft",
+    "hash": "9051cf285d6ab6095a24d0887ebc4cd4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/drafter.py",
+        "sha256": "7b528c6eeb991962ac87433eecf551d6e5701b918acc79a0904da5eaecd834b8",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/motif_ledger.py",
+        "sha256": "e954339be994d3c05b158ff34567bb3fe48f5aa4d1df25b4c7b85e9562aa80d4",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "forage/text_norm.py",
+        "sha256": "203b6456278189eb60b29a06ac25d406164940f405e6f9129b7f2f76c53ce64b",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_lean.md",
+        "sha256": "1ec9e462dab787b602c28800358c800ee1bc882b42b56c4f009f6ab141178152",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_segment.md",
+        "sha256": "45996981ceee16182e89bd7dbdc5983a8446045506ece4efebc6fcca9a43c6ac",
+        "missing": false
+      },
+      {
+        "path": "spec/ABRIDGMENT_SPEC.md",
+        "sha256": "a1d6760a2bf9cbc19d1e92214903cbd1fc03dcbe4e7692307df7e3170c918f7d",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Out of the trunk, the branches grow; out of them, the twigs. So, in productive subjects, grow the chapters.\n\nThe crotch deserves independent mention. It is a notched stick some two feet in length, perpendicularly inserted into the starboard gunwale near the bow, furnishing a rest for the wooden extremity of the harpoon, whose other naked, barbed end slopingly projects from the prow. Thereby the weapon is instantly at hand to its hurler, who snatches it up as readily as a backwoodsman swings his rifle from the wall. Two harpoons repose there, the first and second irons.\n\nBoth, by separate cords, are connected with the line, the object being to dart them, one instantly after the other into the same whale; so that if one should draw out, the other may still retain a hold. A doubling of the chances. But owing to the instantaneous, violent, convulsive running of the whale upon receiving the first iron, it often becomes impossible to pitch the second. Nevertheless, since the line is running, the weapon must be tossed somehow out of the boat; else the most terrible jeopardy would involve all hands. Tumbled into the water it accordingly is, the spare coils of box line making this feat prudently practicable; but this critical act is not always unattended with the saddest and most fatal casualties.\n\nFurthermore: once overboard, the second iron becomes a dangling, sharp-edged terror, skittishly curvetting about both boat and whale, entangling the lines or cutting them, making a prodigious sensation in all directions. Nor is it generally possible to secure it again until the whale is captured and a corpse.\n\nConsider now four boats engaging one unusually strong, active, and knowing whale: eight or ten loose second irons may simultaneously dangle about him. These particulars will elucidate intricate passages in scenes hereafter to be painted.",
+    "input_tokens": 4221,
+    "output_tokens": 11273,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 12752,
+    "duration_s": 103.66942596435547,
+    "stop_reason": "end_turn"
+  }
+}

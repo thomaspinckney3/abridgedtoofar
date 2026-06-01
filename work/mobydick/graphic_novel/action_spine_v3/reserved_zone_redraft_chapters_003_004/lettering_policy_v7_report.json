@@ -1,0 +1,128 @@
+{
+  "changed_panels": [
+    {
+      "page_number": 1,
+      "panel_number": 2,
+      "old_counts": {
+        "caption": 1,
+        "speech": 2,
+        "thought": 0
+      },
+      "new_counts": {
+        "caption": 1,
+        "speech": 1,
+        "thought": 0
+      },
+      "old_texts": [
+        {
+          "kind": "caption",
+          "text": "The house was full; I asked for a room and agreed to share.",
+          "caption_zone": "bottom_center"
+        },
+        {
+          "kind": "speech",
+          "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+          "speaker": "Peter Coffin",
+          "balloon_zone": "top_right",
+          "speaker_region": "right",
+          "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\""
+        },
+        {
+          "kind": "speech",
+          "text": "I never liked to sleep two in a bed.",
+          "speaker": "Ishmael",
+          "balloon_zone": "top_left",
+          "speaker_region": "left",
+          "source_evidence": "\"I told him that I never liked to sleep two in a bed;\""
+        }
+      ],
+      "new_texts": [
+        {
+          "kind": "caption",
+          "text": "The house was full; I asked for a room and agreed to share. I never liked to sleep two in a bed.",
+          "caption_zone": "bottom_center",
+          "lettering_notes": "demoted from speech: indirect or internal narration"
+        },
+        {
+          "kind": "speech",
+          "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+          "speaker": "Peter Coffin",
+          "balloon_zone": "top_right",
+          "speaker_region": "right",
+          "source_evidence": "\"you haint no objections to sharing a harpooneer’s blanket, have ye?\""
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "panel_number": 7,
+      "old_counts": {
+        "caption": 1,
+        "speech": 3,
+        "thought": 0
+      },
+      "new_counts": {
+        "caption": 1,
+        "speech": 2,
+        "thought": 0
+      },
+      "old_texts": [
+        {
+          "kind": "caption",
+          "text": "He sprang into bed with the tomahawk-pipe.",
+          "caption_zone": "top_right"
+        },
+        {
+          "kind": "speech",
+          "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+          "speaker": "Queequeg",
+          "balloon_zone": "top_center",
+          "speaker_region": "center",
+          "source_evidence": "\"Who-e debel you?—you no speak-e, dam-me, I kill-e.\""
+        },
+        {
+          "kind": "speech",
+          "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+          "speaker": "Ishmael",
+          "balloon_zone": "bottom_left",
+          "speaker_region": "left",
+          "source_evidence": "\"Landlord, for God’s sake, Peter Coffin! ... Watch! ... Angels! save me!\""
+        },
+        {
+          "kind": "speech",
+          "text": "Don’t be afraid; Queequeg won’t harm a hair of your head.",
+          "speaker": "Peter Coffin",
+          "balloon_zone": "bottom_right",
+          "speaker_region": "right",
+          "source_evidence": "\"Don’t be afraid now ... Queequeg here wouldn’t harm a hair of your head.\""
+        }
+      ],
+      "new_texts": [
+        {
+          "kind": "caption",
+          "text": "He sprang into bed with the tomahawk-pipe. Peter Coffin said, \"Don’t be afraid; Queequeg won’t harm a hair of your head.\"",
+          "caption_zone": "top_right",
+          "lettering_notes": "demoted from speech: panel exceeded 2 balloons"
+        },
+        {
+          "kind": "speech",
+          "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+          "speaker": "Queequeg",
+          "balloon_zone": "top_center",
+          "speaker_region": "center",
+          "source_evidence": "\"Who-e debel you?—you no speak-e, dam-me, I kill-e.\""
+        },
+        {
+          "kind": "speech",
+          "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+          "speaker": "Ishmael",
+          "balloon_zone": "bottom_left",
+          "speaker_region": "left",
+          "source_evidence": "\"Landlord, for God’s sake, Peter Coffin! ... Watch! ... Angels! save me!\""
+        }
+      ]
+    }
+  ],
+  "source_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v3_sequence_repaired.json",
+  "output_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v7_policy_cleaned.json"
+}

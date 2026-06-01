@@ -1,0 +1,77 @@
+{
+  "valid": true,
+  "findings": [
+    {
+      "severity": "major",
+      "frame_numbers": [
+        4
+      ],
+      "category": "dangling_reference",
+      "finding": "The phrase “selling his head” appears without prior setup, so the reader lacks the antecedent for the landlord’s baffling claim.",
+      "repair_strategy": "Add a brief setup in the preceding frame noting the landlord’s chuckling yarn about the harpooneer being out ‘selling his head,’ so Frame 4’s clarification pays off."
+    },
+    {
+      "severity": "minor",
+      "frame_numbers": [
+        5,
+        6
+      ],
+      "category": "cause_effect_gap",
+      "finding": "Frame 6 begins with the narrator dozing and witnessing the harpooneer’s entry, but Frame 5 doesn’t state that the narrator actually turned in.",
+      "repair_strategy": "Append a short clause to Frame 5 indicating the narrator turned in after inspecting the room, bridging into the doze in Frame 6."
+    },
+    {
+      "severity": "minor",
+      "frame_numbers": [
+        7
+      ],
+      "category": "dangling_reference",
+      "finding": "The proper name “Queequeg” appears for the first time without identification.",
+      "repair_strategy": "Introduce the name in Frame 7 as an appositive—“the harpooneer, Queequeg”—to ground who is being named."
+    }
+  ],
+  "revised_caption_spine": [
+    "I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts.",
+    "I sought the landlord for a room, and being told the house was full, I consented—if the harpooneer were not decidedly objectionable—to share a blanket rather than wander further on so bitter a night.",
+    "I changed my mind about that harpooneer, chose the bench, and soon learned that knots, a foot too short, and the meeting draughts would never do—while the landlord kept chuckling that the fellow was out ‘selling his head.’",
+    "Provoked by his bamboozling yarn of selling his head, I demanded the truth, and heard it plain—embalmed New Zealand heads, peddled on a Saturday night.",
+    "Seeing it was Sunday and he’d come to anchor elsewhere, I let the landlord lead me to the prodigious bed; I eyed the room and the harpooneer’s outlandish gear, then turned in.",
+    "Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals.",
+    "Then, tomahawk-pipe between his teeth, he sprang into bed with me; I sang out, and the landlord burst in with a light to swear the harpooneer, Queequeg, wouldn’t harm a hair of my head.",
+    "Better sleep with a sober cannibal than a drunken Christian, thought I; he stashed the tomahawk-pipe, I turned in again, and never slept better in my life."
+  ],
+  "frame_caption_updates": [
+    {
+      "frame_number": 1,
+      "caption": "I entered the Spouter-Inn and, after much pondering and throwing open the little window, I made out the smoke-dark painting: a half-foundered ship and an exasperated whale springing upon her three masts."
+    },
+    {
+      "frame_number": 2,
+      "caption": "I sought the landlord for a room, and being told the house was full, I consented—if the harpooneer were not decidedly objectionable—to share a blanket rather than wander further on so bitter a night."
+    },
+    {
+      "frame_number": 3,
+      "caption": "I changed my mind about that harpooneer, chose the bench, and soon learned that knots, a foot too short, and the meeting draughts would never do—while the landlord kept chuckling that the fellow was out ‘selling his head.’"
+    },
+    {
+      "frame_number": 4,
+      "caption": "Provoked by his bamboozling yarn of selling his head, I demanded the truth, and heard it plain—embalmed New Zealand heads, peddled on a Saturday night."
+    },
+    {
+      "frame_number": 5,
+      "caption": "Seeing it was Sunday and he’d come to anchor elsewhere, I let the landlord lead me to the prodigious bed; I eyed the room and the harpooneer’s outlandish gear, then turned in."
+    },
+    {
+      "frame_number": 6,
+      "caption": "Dozing at last, I saw the harpooneer come in with a New Zealand head, undress to tattooed squares, set a little wooden idol in the fireplace, burn shavings and biscuit, and sing out in strange gutturals."
+    },
+    {
+      "frame_number": 7,
+      "caption": "Then, tomahawk-pipe between his teeth, he sprang into bed with me; I sang out, and the landlord burst in with a light to swear the harpooneer, Queequeg, wouldn’t harm a hair of my head."
+    },
+    {
+      "frame_number": 8,
+      "caption": "Better sleep with a sober cannibal than a drunken Christian, thought I; he stashed the tomahawk-pipe, I turned in again, and never slept better in my life."
+    }
+  ]
+}

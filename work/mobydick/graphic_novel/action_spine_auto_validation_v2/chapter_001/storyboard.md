@@ -1,0 +1,141 @@
+# Loomings — Action Spine
+
+Source chapter: Chapter 1. Loomings
+
+Adaptation principle: Prioritize Ishmael’s concrete decisions and acceptances over Melville’s broad meditations. Stage reflections with the narrator in simple, present physical actions on shore, compressing rhetorical catalogs into captions. Do not visualize hypotheticals or metaphors; carry them in first-person captions. Use the fewest frames that preserve the chapter’s action turns.
+
+## Action-Oriented Synopsis
+
+Feeling grim and restless, I decide to go to sea to set myself right. I choose to ship before the mast rather than travel as a passenger or command as an officer, and I make my peace with the humble knocks of the life. I prefer being paid and the wholesome air. Drawn—almost fated—toward a whaling voyage, my curiosity about the great whale and remote seas opens the gates to the wonder-world, and I welcome the voyage.
+
+## Caption Spine
+
+1. Call me Ishmael—when I grow grim, I take to the ship to see the watery part of the world.
+2. I never go as a passenger or officer; when I go to sea, I go as a simple sailor, right before the mast.
+3. However they may order and thump me about, I count it the universal thump and rub my shoulder-blades, and am content.
+4. I go as a sailor because they pay me, and for the wholesome exercise and pure air of the forecastle.
+5. But now I took it into my head to go on a whaling voyage, as if some invisible police officer of the Fates had me in tow.
+6. The great whale and the wild distant seas tormented my curiosity, so the flood-gates of the wonder-world swung open to me.
+
+## Frames
+
+### Frame 1
+
+Caption: Call me Ishmael—when I grow grim, I take to the ship to see the watery part of the world.
+
+Shot: Medium-wide over-shoulder of me at a damp wharf, facing gray water and distant ship silhouettes under an overcast sky.
+
+Caption zone: bottom_center
+
+Image prompt: 19th-century city waterfront under overcast light; a solitary man in plain seafarer’s clothes stands at a damp wooden wharf, looking out to a gray harbor with a few distant three-masted ship silhouettes; mooring posts and coiled rope nearby; subdued, contemplative mood; painterly realism; No readable text. Leave clean negative space in the bottom-center for the caption.
+
+Purpose: Establish Ishmael’s remedy for his gloom as a decisive turn toward the sea.
+
+Source evidence:
+- Call me Ishmael.
+- I thought I would sail about a little and see the watery part of the world.
+- Whenever I find myself growing grim... I account it high time to get to sea as soon as I can.
+- I quietly take to the ship.
+
+### Frame 2
+
+Caption: I never go as a passenger or officer; when I go to sea, I go as a simple sailor, right before the mast.
+
+Shot: Medium shot at dockside: I heft a plain canvas seabag with rigging and a moored ship’s bow in soft focus behind.
+
+Caption zone: top_right
+
+Image prompt: Close dockside scene with the bow and rigging of a moored wooden sailing ship visible in soft focus; a man in modest 19th-century attire hoists a plain canvas seabag; practical, unadorned feel; overcast daylight; No readable text. Leave clean negative space in the top-right for the caption.
+
+Purpose: Declare his chosen station: he will ship before the mast, not as passenger or officer.
+
+Source evidence:
+- I do not mean... that I ever go to sea as a passenger.
+- nor... do I ever go to sea as a Commodore, or a Captain, or a Cook.
+- No, when I go to sea, I go as a simple sailor, right before the mast.
+
+### Frame 3
+
+Caption: However they may order and thump me about, I count it the universal thump and rub my shoulder-blades, and am content.
+
+Shot: Medium close: seated at the pier on his seabag, I roll one shoulder with a wry, stoic look; ship gear blurred behind.
+
+Caption zone: top_left
+
+Image prompt: Seated figure on a wooden pier near a moored sailing ship; he perches on a canvas seabag, rolling one shoulder with a resigned half-smile; muted tones, practical dock details in background; No readable text. Leave clean negative space in the top-left for the caption.
+
+Purpose: Show his acceptance of humble treatment as part of the shared lot, a key attitudinal decision.
+
+Source evidence:
+- they rather order me about some...
+- however the old sea-captains may order me about—however they may thump and punch me about...
+- the universal thump is passed round, and all hands should rub each other’s shoulder-blades, and be content.
+
+### Frame 4
+
+Caption: I go as a sailor because they pay me, and for the wholesome exercise and pure air of the forecastle.
+
+Shot: Tight medium: my open palm with a few coins catches sea-breeze light; beyond, the ship’s bow and busy silhouettes suggest work and fresh air.
+
+Caption zone: bottom_right
+
+Image prompt: Close dockside view: a weathered hand holds a few coins while a cool sea breeze tousles sleeve and hair; nearby the bow of a wooden sailing ship and indistinct working figures; crisp, airy atmosphere; No readable text. Leave clean negative space in the bottom-right for the caption.
+
+Purpose: Give his practical reasons—being paid and the clean air—for choosing the sailor’s berth.
+
+Source evidence:
+- I always go to sea as a sailor, because they make a point of paying me...
+- Finally, I always go to sea as a sailor, because of the wholesome exercise and pure air of the fore-castle deck.
+
+### Frame 5
+
+Caption: But now I took it into my head to go on a whaling voyage, as if some invisible police officer of the Fates had me in tow.
+
+Shot: Long shot: I stand alone at the pier’s end at dusk, facing a distant three-masted vessel riding at anchor.
+
+Caption zone: top_center
+
+Image prompt: Dusk harbor scene: a solitary figure at the end of a long wooden pier looks out toward a distant three-masted ship at anchor; cool twilight palette, calm water, subtle glow on clouds; No readable text. Leave clean negative space in the top-center for the caption.
+
+Purpose: Mark the specific decision toward whaling, shaded by a sense of fate.
+
+Source evidence:
+- wherefore it was that... I should now take it into my head to go on a whaling voyage;
+- this the invisible police officer of the Fates... can better answer...
+- I... set about performing the part I did...
+
+### Frame 6
+
+Caption: The great whale and the wild distant seas tormented my curiosity, so the flood-gates of the wonder-world swung open to me.
+
+Shot: Close-up: wind on my face as I look seaward, eyes bright with intent; open horizon behind.
+
+Caption zone: bottom_left
+
+Image prompt: Close portrait with seaward backdrop: a determined man in plain 19th-century garb faces a breezy horizon; subtle light, thoughtful yet excited expression; minimalist background of water and sky; No readable text. Leave clean negative space in the bottom-left for the caption.
+
+Purpose: Conclude with his welcomed commitment, driven by awe and curiosity about the whale and remote seas.
+
+Source evidence:
+- Chief among these motives was the overwhelming idea of the great whale...
+- the wild and distant seas where he rolled...
+- By reason of these things, then, the whaling voyage was welcome; the great flood-gates of the wonder-world swung open...
+
+## Omitted Material
+
+- **Extended panorama of Manhattan water-gazers (Battery, Corlears Hook to Coenties Slip) and rhetorical invitation to circumambulate the city.:** Illustrative meditation on universal attraction to water; does not advance Ishmael’s specific decision beyond what the captions convey.
+- **Country paths leading to pools, the metaphysical professor in the desert, and the maxim that meditation and water are wedded forever.:** Philosophical examples and hypotheticals; not present action.
+- **The artist of the Saco valley, prairies without water, Niagara as sand, Rockaway trip, Persians and Greeks revering the sea, Narcissus allegory.:** Comparative and allegorical support; omitted to keep the action spine focused.
+- **Comic digressions on passengers’ miseries, glory of cooks, Egyptians and broiled ibis, and New Testament scales with Gabriel.:** Humorous/rhetorical expansions that do not change Ishmael’s choices.
+- **The riff on paying vs. being paid and consigning ourselves to perdition.:** Retained only as the practical motive in a compressed caption; detailed argument omitted.
+- **Quarter-deck vs. forecastle air and Pythagorean maxim; commonalty leading leaders.:** Social-philosophical aside; summarized into the ‘wholesome air’ reason.
+- **Providential playbill: Grand Contested Election, Whaling Voyage by one Ishmael, Bloody Battle in Afghanistan.:** Printed-program conceit and world events are metaphorical; not a scene in the chapter’s present.
+
+## Visual Safety Notes
+
+- Do not depict hypothetical scenes (e.g., a captain ordering Ishmael to sweep) as actual events; keep such ideas in captions while staging neutral dockside actions.
+- Avoid visualizing metaphors or inner images (e.g., the grand hooded phantom, processions of whales); keep the horizon empty of such figures.
+- Use only generic ships and docks with no readable names, signs, or labels; include the phrase ‘No readable text’ in prompts.
+- Limit people on screen to Ishmael and anonymous background silhouettes; do not introduce named historical figures or specific captains.
+- Keep animals and extra objects minimal and generic; do not add creatures not mentioned in the scene.
+- Maintain period-appropriate but unbranded clothing and props to prevent unintended text or specific identifications.

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:42:56",
+  "key": "3a8af89bcac77fda89a7840c7952acb8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test.\n\n**Ch 116 draft**\n\nThe chapter is well-compressed. Dialogue is preserved with antecedents intact. The Parsee appears without a prior introduction in *this* chapter, but he is a continuously present principal character (not a minor removable one), so no flag. \"Perth\" is the smith, established in the opening sentence. No issues found.\n\n**Ch 118 draft**\n\nScanning for structural damage:\n\n- \"The three men at her mast-head wore streamers of red bunting; from her bowsprit hung the lower jaw of the last whale they had slain.\" \u2014 The source had a suspended whale-boat detail between these two facts, but both surviving clauses parse independently. Not a finding.\n- \"drums roared from her forecastle, where her men beat upon huge try-pots covered with the poke of the black fish.\" \u2014 \"poke\" appears without the source's gloss (\"parchment-like *poke* or stomach skin\"). Let me test: is a reader genuinely confused? \"Poke of the black fish\" \u2014 the reader doesn't know what a \"poke\" is here. The source explicitly glossed it as \"the parchment-like *poke* or stomach skin of the black fish.\" Without that gloss, the word \"poke\" is opaque (it is a technical/dialectal term for stomach-skin used as a drum-head). This is a genuine missing-gloss case: the reader cannot place what material is being stretched over the try-pots, and the word \"poke\" gives no recoverable meaning without the appositive.\n- The vial of sand closing: parses fine, remote associations explained by the Nantucket soundings gloss retained.\n- \"others hurled brick and mortar of the dismantled try-works into the sea\" \u2014 \"dismantled\" is inferrable from context; not a confusion.\n- Dialogue exchange is intact throughout.\n\nNo mid-scene jump issues between Ch 116 and Ch 118 (the gap is authorized by subplot removals; the opening \"A few weeks after Ahab's harpoon had been welded\" bridges cleanly to Ch 116's established event).\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"drums roared from her forecastle, where her men beat upon huge try-pots covered with the poke of the black fish.\",\n    \"source_has\": \"huge try-pots, which, covered with the parchment-like _poke_ or stomach skin of the black fish, gave forth a loud roar to every stroke of the clenched hands of the crew\",\n    \"gate_test_answer\": \"A reader genuinely cannot place 'poke' \u2014 it is a specialist term for stomach-skin used as a drum-head, and the source's appositive gloss ('parchment-like poke or stomach skin') is the only thing that makes the word intelligible; without it the sentence is obscure, not merely less ornate.\"\n  }\n]\n```",
+    "input_tokens": 7245,
+    "output_tokens": 724,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 16.496826171875,
+    "stop_reason": "end_turn"
+  }
+}

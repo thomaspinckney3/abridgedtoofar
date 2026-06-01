@@ -8,7 +8,8 @@ Layout:
   work/<book-id>/segments/NNN.md  -- drafted segments
   work/<book-id>/critics/...      -- critic diagnoses
   work/<book-id>/llm_calls.jsonl  -- per-call log
-  work/<book-id>/abridgment.md    -- final assembled output
+  work/<book-id>/abridgment.md    -- internal assembled markdown-ish output
+  work/<book-id>/abridgment.txt   -- UTF-8 plain-text final assembled output
 """
 
 from __future__ import annotations
@@ -32,6 +33,20 @@ class Book:
 
     @property
     def source_text(self) -> str:
+        if self.source_path.suffix.lower() == ".epub":
+            from .epub_reader import extract_epub_chapters
+
+            parts: list[str] = []
+            for section in extract_epub_chapters(self.source_path):
+                title = (section.get("title") or "").strip()
+                text = (section.get("text") or "").strip()
+                if title and text:
+                    parts.append(f"# {title}\n\n{text}")
+                elif title:
+                    parts.append(f"# {title}")
+                elif text:
+                    parts.append(text)
+            return "\n\n".join(parts)
         return self.source_path.read_text(encoding="utf-8", errors="replace")
 
 
@@ -45,27 +60,27 @@ def load_book(book_id: str) -> Book:
 
     # Source file resolution, in priority order:
     #   1. metadata["source"] if set (any extension — .txt, .epub, ...)
-    #   2. source.txt / source.epub
-    #   3. <book-id>.txt / <book-id>.epub
-    #   4. largest .epub, else largest .txt
+    #   2. source.txt / <book-id>.txt
+    #   3. source.epub / <book-id>.epub
+    #   4. largest .txt, else largest .epub
     source_path: Path | None = None
     if "source" in metadata:
         source_path = book_dir / metadata["source"]
     elif (book_dir / "source.txt").exists():
         source_path = book_dir / "source.txt"
-    elif (book_dir / "source.epub").exists():
-        source_path = book_dir / "source.epub"
     elif (book_dir / f"{book_id}.txt").exists():
         source_path = book_dir / f"{book_id}.txt"
+    elif (book_dir / "source.epub").exists():
+        source_path = book_dir / "source.epub"
     elif (book_dir / f"{book_id}.epub").exists():
         source_path = book_dir / f"{book_id}.epub"
     else:
         epubs = list(book_dir.glob("*.epub"))
         txts = list(book_dir.glob("*.txt"))
-        if epubs:
-            source_path = max(epubs, key=lambda p: p.stat().st_size)
-        elif txts:
+        if txts:
             source_path = max(txts, key=lambda p: p.stat().st_size)
+        elif epubs:
+            source_path = max(epubs, key=lambda p: p.stat().st_size)
         else:
             raise FileNotFoundError(f"no .txt or .epub source in {book_dir}")
 

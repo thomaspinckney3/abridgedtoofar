@@ -1,0 +1,106 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Top-left caption zone is not clean; Ishmael’s head, pillow, and headboard occupy much of the top-left area, leaving limited negative space for lettering.",
+          "visible_evidence": "In the top-left quadrant, Ishmael’s face and hair sit close to the upper-left edge with the curved wooden headboard and pillow behind him.",
+          "repair_prompt": "Recompose to reserve clear negative space in the top-left: shift the subjects slightly right and down, lower the headboard profile near the corner, and keep a plain, softly lit wall patch free of detail for the caption. Maintain dawn light, bed, and the patchwork quilt with Queequeg’s tattooed arm draped over Ishmael."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael is not clearly shown reaching to rouse Queequeg; his right hand is recoiling near his neck while the left only lifts the quilt.",
+          "visible_evidence": "Ishmael’s right hand is held up by his neck in a flinch and not extended toward Queequeg; no hand makes contact with or clearly reaches for Queequeg’s shoulder.",
+          "repair_prompt": "Repose Ishmael so his nearer hand is mid-gesture reaching toward or lightly touching Queequeg’s shoulder to rouse him, while the other hand throws the patchwork quilt aside; keep his flinching expression and maintain the tomahawk-pipe visible by Queequeg’s side."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot does not match specified POV; image includes Ishmael in frame rather than a medium shot from his point of view.",
+          "visible_evidence": "Ishmael is clearly visible reclining in bed at left while Queequeg stands and gestures at right.",
+          "repair_prompt": "Recompose to a medium shot from Ishmael’s POV: place the virtual camera at Ishmael’s pillow height so only a hint of his foreground bedding/hand is seen, with Queequeg centered mid-frame gesturing first to the clothes pile then toward the door; keep bottom-right area clean for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 6,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Patchwork counterpane continuity is broken; the bedcover appears plain rather than a multicolor patchwork quilt.",
+          "visible_evidence": "The blanket over Ishmael is a uniform gray/white without small irregular squares or triangles.",
+          "repair_prompt": "Replace the plain bedcover with the thick patchwork counterpane made of many small, irregular squares and triangles in mixed colors; keep it clearly a quilt on the bed and preserve clean negative space at bottom-center for the caption."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The mirror above the washstand looks like a small framed mirror rather than a tacked-up shard.",
+          "visible_evidence": "A rectangular mirror with a wooden frame hangs above the washstand.",
+          "repair_prompt": "Swap the framed mirror for a small, irregular mirror shard visibly tacked to the wall above the basin; ensure it remains small and not a full-length mirror."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael’s gesture toward a pair of pantaloons is unclear because no separate pantaloons are visible.",
+          "visible_evidence": "Ishmael reaches toward the window area; Queequeg is already wearing pantaloons and there is no extra pair shown.",
+          "repair_prompt": "Add a visible pair of pantaloons on the chair or bed edge along Ishmael’s gesture line, or adjust his hand direction to clearly indicate Queequeg’s trousers, while keeping the uncurtained window prominent and avoiding readable text outside."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The harpoon head used for shaving reads as a cleaver/razor rather than a whaling harpoon head.",
+          "visible_evidence": "Queequeg holds a broad rectangular steel blade with large rivet/bolt holes at the cheek; it lacks the recognizable long, straight-edged harpoon head form and socket/tang details.",
+          "repair_prompt": "Redesign the shaving implement to be the unsheathed steel head of a whaling harpoon: a long, straight-edged, razor-sharp head with clear attachment features for a detachable wooden stock (socket or tang with lashing). Remove cleaver-like holes and proportions. Keep the wooden stock visibly set aside nearby."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The pilot monkey jacket’s cut is ambiguous and may read as a longer overcoat.",
+          "visible_evidence": "Dark coat hanging at right appears thigh-length with long skirts; its short, cropped ‘monkey jacket’ silhouette is not clearly conveyed.",
+          "repair_prompt": "Shorten the hanging coat to a waist-length, heavy double-breasted sailor’s monkey jacket with a boxy cut and broad lapels; avoid long skirts or overcoat length."
+        }
+      ]
+    }
+  ],
+  "valid": true
+}

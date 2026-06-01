@@ -1,0 +1,1061 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v3_sequence_repaired.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/panel_art",
+  "model": "openai:gpt-5",
+  "image_source": "panels",
+  "grid_overlay": true,
+  "dry_run": false,
+  "pages": [
+    {
+      "page_number": 1,
+      "anchors": [
+        {
+          "panel_number": 2,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "Hain’t no objections to sharing a harpooneer’s blanket?",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 976,
+            "y": 1320
+          },
+          "mouth_point_ratio": {
+            "x": 0.6399999999999999,
+            "y": 0.2897880928355197
+          },
+          "tail_target_point": {
+            "x": 1006,
+            "y": 1305
+          },
+          "tail_target_point_ratio": {
+            "x": 0.66,
+            "y": 0.27477295660948536
+          },
+          "source_image_point": {
+            "x": 983,
+            "y": 297
+          },
+          "source_image_point_ratio": {
+            "x": 0.64,
+            "y": 0.29
+          },
+          "source_tail_target_point": {
+            "x": 1014,
+            "y": 282
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.66,
+            "y": 0.275
+          },
+          "face_box": {
+            "x1": 917,
+            "y1": 1261,
+            "x2": 1051,
+            "y2": 1390
+          },
+          "evidence": "Right-side barkeep behind the counter under the jawbone arch; face in left profile with visible lips.",
+          "reason": "Speaker region right matches Peter Coffin. Mouth located at lips; tail target nudged up-right toward top_right balloon zone; face box covers visible head so balloons avoid it.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.6,
+            "y1": 0.22972754793138245,
+            "x2": 0.6900000000000001,
+            "y2": 0.3598587285570131
+          }
+        },
+        {
+          "panel_number": 2,
+          "text_index": 2,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "I never liked to sleep two in a bed.",
+          "visible": true,
+          "confidence": 0.86,
+          "mouth_point": {
+            "x": 582,
+            "y": 1276
+          },
+          "mouth_point_ratio": {
+            "x": 0.375,
+            "y": 0.24474268415741673
+          },
+          "tail_target_point": {
+            "x": 552,
+            "y": 1261
+          },
+          "tail_target_point_ratio": {
+            "x": 0.355,
+            "y": 0.22972754793138245
+          },
+          "source_image_point": {
+            "x": 576,
+            "y": 251
+          },
+          "source_image_point_ratio": {
+            "x": 0.375,
+            "y": 0.245
+          },
+          "source_tail_target_point": {
+            "x": 545,
+            "y": 236
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.355,
+            "y": 0.23
+          },
+          "face_box": {
+            "x1": 485,
+            "y1": 1171,
+            "x2": 634,
+            "y2": 1340
+          },
+          "evidence": "Left-side traveler facing right with clear mouth in profile.",
+          "reason": "Speaker region left matches Ishmael. Tail target offset up-left toward top_left balloon zone; face box bounds the visible head to keep balloons off the face.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.31,
+            "y1": 0.13963673057517662,
+            "x2": 0.41000000000000003,
+            "y2": 0.30980827447023207
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "anchors": [
+        {
+          "panel_number": 3,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "I shan’t sleep with him. I’ll try the bench.",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 966,
+            "y": 305
+          },
+          "mouth_point_ratio": {
+            "x": 0.633,
+            "y": 0.283
+          },
+          "tail_target_point": {
+            "x": 929,
+            "y": 330
+          },
+          "tail_target_point_ratio": {
+            "x": 0.608,
+            "y": 0.308
+          },
+          "source_image_point": {
+            "x": 972,
+            "y": 290
+          },
+          "source_image_point_ratio": {
+            "x": 0.633,
+            "y": 0.283
+          },
+          "source_tail_target_point": {
+            "x": 934,
+            "y": 315
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.608,
+            "y": 0.308
+          },
+          "face_box": {
+            "x1": 887,
+            "y1": 242,
+            "x2": 1013,
+            "y2": 386
+          },
+          "evidence": "Younger man seated on the right bench, head turned left; mouth slightly open around x≈0.63, y≈0.28.",
+          "reason": "Ishmael is the seated traveler; tail offset down-left toward the bottom-left balloon zone while staying just outside the lower lip.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.580078125,
+            "y1": 0.2197265625,
+            "x2": 0.6647135416666666,
+            "y2": 0.365234375
+          }
+        },
+        {
+          "panel_number": 3,
+          "text_index": 2,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "Wait—I’ll make ye snug enough.",
+          "visible": true,
+          "confidence": 0.9,
+          "mouth_point": {
+            "x": 255,
+            "y": 240
+          },
+          "mouth_point_ratio": {
+            "x": 0.155,
+            "y": 0.218
+          },
+          "tail_target_point": {
+            "x": 289,
+            "y": 264
+          },
+          "tail_target_point_ratio": {
+            "x": 0.17800000000000002,
+            "y": 0.242
+          },
+          "source_image_point": {
+            "x": 238,
+            "y": 223
+          },
+          "source_image_point_ratio": {
+            "x": 0.155,
+            "y": 0.218
+          },
+          "source_tail_target_point": {
+            "x": 273,
+            "y": 248
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.178,
+            "y": 0.242
+          },
+          "face_box": {
+            "x1": 188,
+            "y1": 138,
+            "x2": 329,
+            "y2": 282
+          },
+          "evidence": "Older man standing at the left workbench; mouth visible, facing right around x≈0.155, y≈0.218.",
+          "reason": "Innkeeper/carpenter figure addressing the seated man; tail offset down-right toward the bottom-right balloon zone at the chin edge.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.11002604166666667,
+            "y1": 0.115234375,
+            "x2": 0.205078125,
+            "y2": 0.259765625
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "anchors": [
+        {
+          "panel_number": 1,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Does he always keep such late hours?",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 389,
+            "y": 140
+          },
+          "mouth_point_ratio": {
+            "x": 0.24499999999999997,
+            "y": 0.27643169352797237
+          },
+          "tail_target_point": {
+            "x": 344,
+            "y": 132
+          },
+          "tail_target_point_ratio": {
+            "x": 0.21499999999999997,
+            "y": 0.2569909712260569
+          },
+          "source_image_point": {
+            "x": 415,
+            "y": 358
+          },
+          "source_image_point_ratio": {
+            "x": 0.245,
+            "y": 0.385
+          },
+          "source_tail_target_point": {
+            "x": 364,
+            "y": 348
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.215,
+            "y": 0.375
+          },
+          "face_box": {
+            "x1": 307,
+            "y1": 54,
+            "x2": 470,
+            "y2": 210
+          },
+          "evidence": "Younger man in the center-left facing right; visible lips below y≈0.4 near x≈0.25.",
+          "reason": "Speaker is centered; mouth located on lower face. Tail offset slightly up-left toward the top-left balloon zone without piercing the mouth. Face box bounds the visible head so balloons avoid it.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.18999999999999997,
+            "y1": 0.07230410935786011,
+            "x2": 0.3,
+            "y2": 0.4416778330942537
+          }
+        },
+        {
+          "panel_number": 1,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "He went out a peddling—unless maybe he can't sell his head.",
+          "visible": true,
+          "confidence": 0.9,
+          "mouth_point": {
+            "x": 839,
+            "y": 146
+          },
+          "mouth_point_ratio": {
+            "x": 0.548,
+            "y": 0.2900401991393131
+          },
+          "tail_target_point": {
+            "x": 880,
+            "y": 138
+          },
+          "tail_target_point_ratio": {
+            "x": 0.575,
+            "y": 0.27059947683739766
+          },
+          "source_image_point": {
+            "x": 928,
+            "y": 364
+          },
+          "source_image_point_ratio": {
+            "x": 0.548,
+            "y": 0.392
+          },
+          "source_tail_target_point": {
+            "x": 973,
+            "y": 355
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.575,
+            "y": 0.382
+          },
+          "face_box": {
+            "x1": 768,
+            "y1": 71,
+            "x2": 932,
+            "y2": 210
+          },
+          "evidence": "Older man on the right, head turned left; mouth line just above y≈0.4 near x≈0.55.",
+          "reason": "Speaker region is right; mouth clearly visible. Tail target nudged up-right toward the top-right balloon zone and set on the cheek edge just outside the lips. Face box encloses the visible head.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.5,
+            "y1": 0.11118555396169101,
+            "x2": 0.61,
+            "y2": 0.4416778330942537
+          }
+        },
+        {
+          "panel_number": 2,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Peddling his head around town?",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 450,
+            "y": 684
+          },
+          "mouth_point_ratio": {
+            "x": 0.5798999999999999,
+            "y": 0.5274497860199714
+          },
+          "tail_target_point": {
+            "x": 433,
+            "y": 671
+          },
+          "tail_target_point_ratio": {
+            "x": 0.5563,
+            "y": 0.4987395506419401
+          },
+          "source_image_point": {
+            "x": 813,
+            "y": 583
+          },
+          "source_image_point_ratio": {
+            "x": 0.5799,
+            "y": 0.5196
+          },
+          "source_tail_target_point": {
+            "x": 780,
+            "y": 560
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.5563,
+            "y": 0.4991
+          },
+          "face_box": {
+            "x1": 412,
+            "y1": 567,
+            "x2": 533,
+            "y2": 747
+          },
+          "evidence": "Center-right young man visible; mouth slightly open around grid x≈0.58, y≈0.52; no other character present.",
+          "reason": "Speaker is the central figure. With balloon_zone top_left, the tail target is placed just above-left of the lips, slightly outside the mouth, and the face_box covers the visible head so balloons avoid the face.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.527817403708987,
+            "y1": 0.24910841654778884,
+            "x2": 0.6918687589158345,
+            "y2": 0.6797432239657631
+          }
+        },
+        {
+          "panel_number": 3,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "That's precisely it. The market's overstocked.",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 1178,
+            "y": 593
+          },
+          "mouth_point_ratio": {
+            "x": 0.545,
+            "y": 0.3109325962910128
+          },
+          "tail_target_point": {
+            "x": 1192,
+            "y": 587
+          },
+          "tail_target_point_ratio": {
+            "x": 0.565,
+            "y": 0.29692760342368046
+          },
+          "source_image_point": {
+            "x": 764,
+            "y": 410
+          },
+          "source_image_point_ratio": {
+            "x": 0.545,
+            "y": 0.365
+          },
+          "source_tail_target_point": {
+            "x": 792,
+            "y": 398
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.565,
+            "y": 0.355
+          },
+          "face_box": {
+            "x1": 1093,
+            "y1": 502,
+            "x2": 1262,
+            "y2": 672
+          },
+          "evidence": "Single male figure on the right, clearly visible head and mouth; smirking lips around x≈0.545,y≈0.365 on the grid. No other characters present.",
+          "reason": "Speaker region is right and only one visible character fits. Tail target offset up-right from mouth toward the specified top_right balloon zone, landing just outside the mouth corner on the cheek.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.43009985734664763,
+            "y1": 0.09432952924393719,
+            "x2": 0.6597717546362339,
+            "y2": 0.5
+          }
+        },
+        {
+          "panel_number": 4,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "With what?",
+          "visible": true,
+          "confidence": 0.9,
+          "mouth_point": {
+            "x": 454,
+            "y": 1185
+          },
+          "mouth_point_ratio": {
+            "x": 0.585,
+            "y": 0.6793110516934047
+          },
+          "tail_target_point": {
+            "x": 427,
+            "y": 1171
+          },
+          "tail_target_point_ratio": {
+            "x": 0.5479999999999999,
+            "y": 0.6443235294117646
+          },
+          "source_image_point": {
+            "x": 656,
+            "y": 816
+          },
+          "source_image_point_ratio": {
+            "x": 0.585,
+            "y": 0.582
+          },
+          "source_tail_target_point": {
+            "x": 615,
+            "y": 794
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.548,
+            "y": 0.566
+          },
+          "face_box": {
+            "x1": 406,
+            "y1": 1101,
+            "x2": 527,
+            "y2": 1239
+          },
+          "evidence": "Central figure looking up-left with mouth slightly open; no other faces visible.",
+          "reason": "Speaker region is center; balloon zone is top_left so tail target offset up-left from mouth, just outside left edge of lips. Face box bounds the visible head to avoid covering it.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.519964349376114,
+            "y1": 0.4781639928698752,
+            "x2": 0.6850267379679145,
+            "y2": 0.8061720142602495
+          }
+        },
+        {
+          "panel_number": 5,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "With heads, to be sure.",
+          "visible": true,
+          "confidence": 0.89,
+          "mouth_point": {
+            "x": 1268,
+            "y": 1159
+          },
+          "mouth_point_ratio": {
+            "x": 0.668,
+            "y": 0.6154999999999999
+          },
+          "tail_target_point": {
+            "x": 1300,
+            "y": 1134
+          },
+          "tail_target_point_ratio": {
+            "x": 0.7109999999999999,
+            "y": 0.55775
+          },
+          "source_image_point": {
+            "x": 684,
+            "y": 836
+          },
+          "source_image_point_ratio": {
+            "x": 0.668,
+            "y": 0.544
+          },
+          "source_tail_target_point": {
+            "x": 728,
+            "y": 802
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.711,
+            "y": 0.522
+          },
+          "face_box": {
+            "x1": 1222,
+            "y1": 1049,
+            "x2": 1391,
+            "y2": 1246
+          },
+          "evidence": "Single character on right, older man in cap at table; his smirking mouth is clearly visible around grid x≈0.67, y≈0.54.",
+          "reason": "Speaker is on the right as specified. Mouth point at center of lips; tail target nudged up-right toward the top-right balloon zone, just outside the right corner of the mouth. Face box encloses visible head so balloons avoid it.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.60498046875,
+            "y1": 0.3555908203125,
+            "x2": 0.8349609375,
+            "y2": 0.8228271484374997
+          }
+        },
+        {
+          "panel_number": 6,
+          "text_index": 0,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "’Balmed New Zealand heads—he’s sold all on ’em but one.",
+          "visible": true,
+          "confidence": 0.87,
+          "mouth_point": {
+            "x": 865,
+            "y": 1575
+          },
+          "mouth_point_ratio": {
+            "x": 0.565,
+            "y": 0.3452677204541424
+          },
+          "tail_target_point": {
+            "x": 902,
+            "y": 1563
+          },
+          "tail_target_point_ratio": {
+            "x": 0.5899999999999999,
+            "y": 0.3274139958911587
+          },
+          "source_image_point": {
+            "x": 957,
+            "y": 344
+          },
+          "source_image_point_ratio": {
+            "x": 0.565,
+            "y": 0.37
+          },
+          "source_tail_target_point": {
+            "x": 999,
+            "y": 330
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.59,
+            "y": 0.355
+          },
+          "face_box": {
+            "x1": 815,
+            "y1": 1523,
+            "x2": 945,
+            "y2": 1651
+          },
+          "evidence": "Right-side older man in cap leaning toward the left, mouth visible as he gestures with index finger; matches speaker_region 'right'.",
+          "reason": "Mouth point placed on his lips; tail target offset slightly up/right toward top-right balloon zone at the cheek edge, avoiding the mouth. Face box bounds visible head so balloons avoid covering it.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.5316007088009451,
+            "y1": 0.2700219907387476,
+            "x2": 0.6190194920259894,
+            "y2": 0.4557980984985337
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "anchors": [
+        {
+          "panel_number": 5,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "Come along—I’ll give ye a glim in a jiffy.",
+          "visible": true,
+          "confidence": 0.87,
+          "mouth_point": {
+            "x": 1213,
+            "y": 366
+          },
+          "mouth_point_ratio": {
+            "x": 0.7993112769088189,
+            "y": 0.3454
+          },
+          "tail_target_point": {
+            "x": 1267,
+            "y": 406
+          },
+          "tail_target_point_ratio": {
+            "x": 0.835194556993583,
+            "y": 0.38510000000000005
+          },
+          "source_image_point": {
+            "x": 1239,
+            "y": 343
+          },
+          "source_image_point_ratio": {
+            "x": 0.7811,
+            "y": 0.3454
+          },
+          "source_tail_target_point": {
+            "x": 1292,
+            "y": 382
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.8148,
+            "y": 0.3851
+          },
+          "face_box": {
+            "x1": 1163,
+            "y1": 272,
+            "x2": 1292,
+            "y2": 444
+          },
+          "evidence": "The right-side figure at the open doorway is holding a candle and looking back toward the room; this matches the speaker_region 'right' and the innkeeper leading with a light.",
+          "reason": "Speaker is the rightmost character. Mouth located on his turned face; tail target offset down-right toward the bottom-right balloon zone, just outside the jawline to avoid stabbing the mouth. Face box encloses the visible head to keep it clear of balloons.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.7651893914758932,
+            "y1": 0.25,
+            "x2": 0.8524669127211237,
+            "y2": 0.42338709677419356
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "anchors": [
+        {
+          "panel_number": 7,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Queequeg",
+          "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+          "visible": true,
+          "confidence": 0.93,
+          "mouth_point": {
+            "x": 926,
+            "y": 316
+          },
+          "mouth_point_ratio": {
+            "x": 0.6060000000000001,
+            "y": 0.2947931382441978
+          },
+          "tail_target_point": {
+            "x": 909,
+            "y": 301
+          },
+          "tail_target_point_ratio": {
+            "x": 0.595,
+            "y": 0.2797780020181635
+          },
+          "source_image_point": {
+            "x": 931,
+            "y": 302
+          },
+          "source_image_point_ratio": {
+            "x": 0.606,
+            "y": 0.295
+          },
+          "source_tail_target_point": {
+            "x": 914,
+            "y": 287
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.595,
+            "y": 0.28
+          },
+          "face_box": {
+            "x1": 835,
+            "y1": 227,
+            "x2": 979,
+            "y2": 381
+          },
+          "evidence": "Tattooed man straddling the bed at center; pipe stem between his lips. Head around x≈0.60,y≈0.29.",
+          "reason": "Named speaker matches central tattooed figure. Mouth anchored at lip/pipe junction; tail offset up-left toward top-center balloon zone; box encloses visible head to avoid balloon overlap.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.5449869791666668,
+            "y1": 0.2046827699293643,
+            "x2": 0.6419921875,
+            "y2": 0.3598196266397578
+          }
+        },
+        {
+          "panel_number": 7,
+          "text_index": 2,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+          "visible": true,
+          "confidence": 0.92,
+          "mouth_point": {
+            "x": 1167,
+            "y": 402
+          },
+          "mouth_point_ratio": {
+            "x": 0.768,
+            "y": 0.38188092835519677
+          },
+          "tail_target_point": {
+            "x": 1128,
+            "y": 440
+          },
+          "tail_target_point_ratio": {
+            "x": 0.742,
+            "y": 0.4199192734611503
+          },
+          "source_image_point": {
+            "x": 1180,
+            "y": 391
+          },
+          "source_image_point_ratio": {
+            "x": 0.768,
+            "y": 0.382
+          },
+          "source_tail_target_point": {
+            "x": 1140,
+            "y": 430
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.742,
+            "y": 0.42
+          },
+          "face_box": {
+            "x1": 1110,
+            "y1": 336,
+            "x2": 1229,
+            "y2": 465
+          },
+          "evidence": "Man in bed on the right, eyes wide, mouth open toward left.",
+          "reason": "Speaker name and left-region hint correspond to the frightened man on right side of panel. Tail placed slightly below-left of lips toward bottom-left balloon zone; box covers visible head.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.7300130208333332,
+            "y1": 0.3148524217961655,
+            "x2": 0.8100260416666668,
+            "y2": 0.4449640514631685
+          }
+        },
+        {
+          "panel_number": 7,
+          "text_index": 3,
+          "kind": "speech",
+          "speaker": "Peter Coffin",
+          "text": "Don’t be afraid; Queequeg won’t harm a hair of your head.",
+          "visible": true,
+          "confidence": 0.9,
+          "mouth_point": {
+            "x": 237,
+            "y": 224
+          },
+          "mouth_point_ratio": {
+            "x": 0.143,
+            "y": 0.20169929364278508
+          },
+          "tail_target_point": {
+            "x": 255,
+            "y": 242
+          },
+          "tail_target_point_ratio": {
+            "x": 0.155,
+            "y": 0.21971745711402624
+          },
+          "source_image_point": {
+            "x": 220,
+            "y": 207
+          },
+          "source_image_point_ratio": {
+            "x": 0.143,
+            "y": 0.202
+          },
+          "source_tail_target_point": {
+            "x": 238,
+            "y": 225
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.155,
+            "y": 0.22
+          },
+          "face_box": {
+            "x1": 173,
+            "y1": 152,
+            "x2": 299,
+            "y2": 276
+          },
+          "evidence": "Landlord at the open door on the left, holding a candle; mouth slightly open.",
+          "reason": "Named speaker clearly matches the left doorway figure (region hint appears inconsistent). Tail offset down-right toward the specified bottom-right balloon zone; box encloses his head to keep balloons clear.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.09999999999999999,
+            "y1": 0.12960708879919272,
+            "x2": 0.18502604166666664,
+            "y2": 0.25473322401614534
+          }
+        },
+        {
+          "panel_number": 8,
+          "text_index": 1,
+          "kind": "thought",
+          "speaker": "Ishmael",
+          "text": "Better sleep with a sober cannibal than a drunken Christian.",
+          "visible": true,
+          "confidence": 0.88,
+          "mouth_point": {
+            "x": 384,
+            "y": 1364
+          },
+          "mouth_point_ratio": {
+            "x": 0.24192362182281538,
+            "y": 0.33399999999999996
+          },
+          "tail_target_point": {
+            "x": 313,
+            "y": 1301
+          },
+          "tail_target_point_ratio": {
+            "x": 0.19438323636912347,
+            "y": 0.27
+          },
+          "source_image_point": {
+            "x": 445,
+            "y": 321
+          },
+          "source_image_point_ratio": {
+            "x": 0.272,
+            "y": 0.334
+          },
+          "source_tail_target_point": {
+            "x": 376,
+            "y": 260
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.23,
+            "y": 0.27
+          },
+          "face_box": {
+            "x1": 313,
+            "y1": 1340,
+            "x2": 465,
+            "y2": 1479
+          },
+          "evidence": "Left-side reclining man’s head visible on pillow; temple/hairline around x≈0.27,y≈0.33. Top-left is the planned balloon zone, so tail target is slightly above-left of the head.",
+          "reason": "Speaker named as Ishmael in left region. For thought, use a head/temple point and offset the tail target toward the top-left to avoid covering the face.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.19441785147430307,
+            "y1": 0.30997920997920997,
+            "x2": 0.296255490912749,
+            "y2": 0.44999999999999996
+          }
+        },
+        {
+          "panel_number": 8,
+          "text_index": 2,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+          "visible": true,
+          "confidence": 0.87,
+          "mouth_point": {
+            "x": 423,
+            "y": 1412
+          },
+          "mouth_point_ratio": {
+            "x": 0.2679576424284085,
+            "y": 0.38199999999999995
+          },
+          "tail_target_point": {
+            "x": 372,
+            "y": 1449
+          },
+          "tail_target_point_ratio": {
+            "x": 0.23400022424720004,
+            "y": 0.41999999999999993
+          },
+          "source_image_point": {
+            "x": 482,
+            "y": 367
+          },
+          "source_image_point_ratio": {
+            "x": 0.295,
+            "y": 0.382
+          },
+          "source_tail_target_point": {
+            "x": 433,
+            "y": 404
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.265,
+            "y": 0.42
+          },
+          "face_box": {
+            "x1": 313,
+            "y1": 1340,
+            "x2": 465,
+            "y2": 1479
+          },
+          "evidence": "Left man’s mouth and lower face are visible; lips near grid x≈0.295, y≈0.382. Bottom-left balloon zone suggests a tail slightly left and below the mouth.",
+          "reason": "Speaker specified as Ishmael on the left. Mouth point marks the speaking source; tail target is offset toward the intended bottom-left balloon area without stabbing into the mouth, and the face box reserves the visible head region.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.19441785147430307,
+            "y1": 0.30997920997920997,
+            "x2": 0.296255490912749,
+            "y2": 0.44999999999999996
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "anchors": [
+        {
+          "panel_number": 2,
+          "text_index": 1,
+          "kind": "speech",
+          "speaker": "Ishmael",
+          "text": "Queequeg! In the name of goodness—wake!",
+          "visible": true,
+          "confidence": 0.86,
+          "mouth_point": {
+            "x": 369,
+            "y": 1276
+          },
+          "mouth_point_ratio": {
+            "x": 0.23214651395842575,
+            "y": 0.245
+          },
+          "tail_target_point": {
+            "x": 324,
+            "y": 1266
+          },
+          "tail_target_point_ratio": {
+            "x": 0.20182347780277582,
+            "y": 0.235
+          },
+          "source_image_point": {
+            "x": 363,
+            "y": 249
+          },
+          "source_image_point_ratio": {
+            "x": 0.235,
+            "y": 0.245
+          },
+          "source_tail_target_point": {
+            "x": 317,
+            "y": 239
+          },
+          "source_tail_target_point_ratio": {
+            "x": 0.205,
+            "y": 0.235
+          },
+          "face_box": {
+            "x1": 212,
+            "y1": 1123,
+            "x2": 468,
+            "y2": 1360
+          },
+          "evidence": "Left-side figure sitting up in bed with mouth slightly open and hand raised; matches speaker region 'left'.",
+          "reason": "Ishmael is the left figure; mouth located mid-left of image. Tail target offset up-left toward the top-left balloon zone and positioned just outside the lips to avoid stabbing into the mouth. Face box bounds his visible head to keep balloons clear.",
+          "source": "speaker_anchor_detection_panel",
+          "face_box_ratio": {
+            "x1": 0.12611402021674378,
+            "y1": 0.09037328094302553,
+            "x2": 0.298173534972643,
+            "y2": 0.33005893909626716
+          }
+        }
+      ]
+    },
+    {
+      "page_number": 7,
+      "anchors": []
+    },
+    {
+      "page_number": 8,
+      "anchors": []
+    },
+    {
+      "page_number": 9,
+      "anchors": []
+    }
+  ]
+}

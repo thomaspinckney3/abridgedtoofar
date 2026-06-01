@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:41:23",
+  "key": "76259736e102010abc2c4b818c310a4d",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the draft systematically, applying each test.\n\n**Ch 137 draft \u2014 scanning for structural damage:**\n\n1. **\"Starbuck, of late I've felt strangely moved to thee.\"** \u2014 In the source, Ahab continues: \"ever since that hour we both saw\u2014thou know'st what, in one another's eyes.\" The draft cuts this. But the matrix clause still parses and stands alone. Not a finding.\n\n2. **The carpenter's lines are cut.** The source has the carpenter say \"The ferrule has not stood, sir\" and Stubb says \"But no bones broken, sir.\" In the draft, Stubb's line appears without the carpenter's preceding exchange. But Stubb's line is not a *reply* to the carpenter \u2014 it is addressed to Ahab independently. It still parses. Not a finding.\n\n3. **\"He paused, his eye moving from face to face among those gathered on deck. 'Surely I have not seen him yet\u2014by heaven it cannot be!\u2014missing?\u2014quick! call them all.'\"** \u2014 In the source, Ahab first says \"My body, man, not thee. Give me something for a cane\u2014there, that shivered lance will do. Muster the men. Surely I have not seen him yet.\" There is an intervening exchange (\"Sir?\" / \"My body, man\u2026\") that explains *why* Ahab says \"Surely I have not seen him yet\" \u2014 he has just asked Starbuck to help him, Starbuck says \"Sir?\", and then Ahab clarifies \"My body, man, not thee.\" The draft inserts a fabricated stage direction (\"He paused, his eye moving from face to face\") to bridge to the line, but the *triggering dialogue* \u2014 Starbuck's \"Sir?\" and Ahab's \"My body, man, not thee\" and \"Give me something for a cane\u2014there, that shivered lance will do. Muster the men\" \u2014 is cut. The \"missing\" remark flows naturally from \"Muster the men\" in the source. In the draft, Ahab jumps from \"muster the boat's crews\" to a pause and then \"Surely I have not seen him yet\u2014missing?\" without the reader understanding why he is searching faces. This is a borderline case but the gate test: a reader would find it slightly abrupt but not *confused* about who is missing \u2014 the transition is covered by the invented stage direction. Not a finding under strict gate test.\n\n4. **\"thy evil shadow gone\"** in Starbuck's speech. Starbuck says: \"thy evil shadow gone\u2014all good angels mobbing thee with warnings.\" \"Thy evil shadow\" refers to Fedallah, who has just been confirmed missing/drowned. The draft *does* establish the Parsee's disappearance just before this speech. The antecedent is present in the draft. Not a finding.\n\n5. **\"and he was to go before:\u2014but still was to be seen again ere I could perish\"** \u2014 This refers to a prophecy Fedallah made to Ahab (that Fedallah would die before Ahab, but Ahab would see him again before his own death). This prophecy was delivered in an earlier chapter (Ch 117 in source, the authorized digression list includes Ch 117 \"Sea as gilder; quiet interlude in the boats\"). Ch 117 is on the authorized digression removal list. The prophecy established there is now referenced in Ch 137 draft without any prior establishment in the surviving draft. A reader with no source access, encountering \"he was to go before:\u2014but still was to be seen again ere I could perish,\" has no context for this prophecy \u2014 it reads as a mysterious riddle with no prior grounding.\n\nLet me verify: Ch 117 is explicitly listed as an authorized digression removal (\"Ch 117 \u2014 Sea as gilder; quiet interlude in the boats\"). The prophecy scene occurs there. This is a *direct residue of an authorized cut* \u2014 therefore per the instructions, it is NOT a finding.\n\n6. **\"As with Fedallah the day before\"** \u2014 this line appears in the source but is cut from the draft. The draft instead says \"Ahab was found grimly clinging to his boat's broken half\" without the Fedallah comparison. No problem.\n\n7. Scanning for unglossed minor names surviving in the draft: \"Fedallah\" \u2014 is he established? In Ch 136 draft, Fedallah is introduced as \"Fedallah the Parsee\" explicitly. In Ch 137 draft, the Parsee is referred to as \"the Parsee\" and his name \"Fedallah\" appears in Stubb's cry (\"The Parsee!\") and Ahab's lament. He is sufficiently established.\n\n8. **\"Perth the blacksmith's harpoon\"** in Ch 136 draft \u2014 Perth is named with an appositive identifier (\"the blacksmith\"), so this is fine.\n\nAfter thorough analysis, I find no repair-worthy structural coherence failures that survive the gate test and the authorized-cuts filter.\n\n```json\n[]\n```",
+    "input_tokens": 20152,
+    "output_tokens": 1182,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.76689386367798,
+    "stop_reason": "end_turn"
+  }
+}

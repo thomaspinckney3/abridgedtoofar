@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:46:03",
+  "key": "e18ac9b7b32b2dac0a7ae070feba5c0f",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the gate test strictly.\n\n---\n\n**Ch 132 draft \u2014 pass**\n\nPip's line \"I will never desert ye, sir. Sir, I must go with ye.\" cuts the source's preceding clause (\"They tell me, sir, that Stubb did once desert poor little Pip\u2026 But I will never desert ye, sir, as Stubb did him.\") \u2014 but the sentence still parses, and the reader is not confused; it merely loses the Stubb contrast. That is an authorized subplot removal residue (Stubb's characterization) and falls under the explicit rejection for broken pivots that are residues of authorized cuts.\n\nAll pronouns in the cabin scene have clear antecedents in the draft itself. No unglossed names, no mid-scene jump, no dangling dialogue.\n\n---\n\n**Ch 134 draft \u2014 candidates**\n\n**\"Ahab snatched Perth's levelled iron from the crotch\"** \u2014 \"Perth\" is a named blacksmith character. Is he a minor removable character? He is not on the authorized removal list. Is he established in any preceding draft chapter? He is the ship's blacksmith, introduced in earlier chapters. The question is whether a reader of the abridgment has been told who Perth is. He is not on the authorized-removal list, so his introduction should have survived. Given that Perth is a named non-principal whose role (\"the blacksmith,\" his forging of Ahab's harpoon) is thematically central to the climax, and assuming he was introduced in an earlier surviving draft chapter, this is likely fine \u2014 but if his name appears here without prior draft establishment it is an unglossed name. However, the gate test: a reader who has followed the draft knows Perth as the blacksmith from the harpoon-tempering scene (Ch 113 in the source, not on the removal list). I will treat this as established in prior surviving draft chapters and not flag it.\n\n**\"the life-buoy-coffin still lightly swung\"** \u2014 the draft opens Ch 134 with \"the life-buoy-coffin still lightly swung.\" Does the preceding draft chapter (Ch 132) establish a life-buoy-coffin? Ch 132 is the cabin scene; it contains no reference to a life-buoy-coffin. The source of Ch 132 also contains no such reference. The life-buoy-coffin is introduced in Ch 126 of the source (Ahab converts Queequeg's coffin into a life-buoy). Whether that chapter survived compression matters. Ch 126 is not on the authorized-removal list, so it should appear in the draft sequence. The *immediately preceding* draft chapter shown is Ch 132, but Ch 134 comes after Ch 132 in the source numbering \u2014 Ch 133 (\"The Chase \u2014 First Day\") would intervene. The task says \"consecutive chapters\" as presented. Here Ch 132 and Ch 134 are the pair shown; Ch 133 is not shown. The life-buoy-coffin would have been established in earlier surviving chapters (Ch 126), not cut, and the \"still\" reads as continuity with that prior establishment. This is not a mid-scene jump introduced by the immediately preceding chapter \u2014 the object was set up chapters earlier and the \"still\" is continuity language. Not a finding.\n\n**\"the shattered, white ribs and splintered planks\"** \u2014 the source says \"shears, which, in some whaling-ships, cross the quarter-deck\u2026 serving to carry the spare, unrigged, or disabled boats\" and \"Upon the stranger's shears were beheld the shattered, white ribs\u2026\" The draft says \"Upon her shears were beheld the shattered, white ribs\u2026\" cutting the gloss on what \"shears\" are. Is this a missing definitional gloss (test 4)? A competent reader might not know what \"shears\" are in the whaling-ship context. The draft uses \"her shears\" without any identifier. This could leave the reader unable to place what \"shears\" refers to on the ship.\n\nGate test: a reader with no source access reads \"Upon her shears were beheld the shattered, white ribs and splintered planks of what had once been a whale-boat.\" Without the gloss, \"shears\" is an undefined shipboard term. The reader cannot confidently picture where on the ship this wreckage is displayed, though they do understand wreckage of a whale-boat exists. This is mild but the term \"shears\" is genuinely opaque without the gloss \u2014 it is not recoverable from context alone (unlike, say, \"the helm\" or \"the deck\"). This meets test 4.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Upon her shears were beheld the shattered, white ribs and splintered planks of what had once been a whale-boat\",\n    \"source_has\": \"Upon the stranger's shears were beheld the shattered, white ribs\u2026 shears, which, in some whaling-ships, cross the quarter-deck at the height of eight or nine feet; serving to carry the spare, unrigged, or disabled boats\",\n    \"gate_test_answer\": \"A reader with no source access cannot place what 'shears' are on this ship \u2014 the source's gloss ('which, in some whaling-ships, cross the quarter-deck\u2026 serving to carry the spare\u2026 boats') was the only definition provided, and without it the word is genuinely opaque, leaving the reader unable to visualise where the wrecked whale-boat is displayed.\"\n  }\n]\n```",
+    "input_tokens": 4508,
+    "output_tokens": 1306,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 28.3592050075531,
+    "stop_reason": "end_turn"
+  }
+}

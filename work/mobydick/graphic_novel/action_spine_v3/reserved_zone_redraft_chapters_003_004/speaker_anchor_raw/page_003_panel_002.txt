@@ -1,0 +1,21 @@
+{
+  "page_number": 3,
+  "anchors": [
+    {
+      "panel_number": 2,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Peddling his head around town?",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 813, "y": 583},
+      "mouth_point_ratio": {"x": 0.5799, "y": 0.5196},
+      "tail_target_point": {"x": 780, "y": 560},
+      "tail_target_point_ratio": {"x": 0.5563, "y": 0.4991},
+      "face_box": {"x1": 740, "y1": 360, "x2": 970, "y2": 705},
+      "evidence": "Center-right young man visible; mouth slightly open around grid x≈0.58, y≈0.52; no other character present.",
+      "reason": "Speaker is the central figure. With balloon_zone top_left, the tail target is placed just above-left of the lips, slightly outside the mouth, and the face_box covers the visible head so balloons avoid the face."
+    }
+  ]
+}

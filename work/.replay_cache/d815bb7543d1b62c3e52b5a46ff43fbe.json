@@ -1,0 +1,51 @@
+{
+  "ts": "2026-05-06T13:25:47",
+  "key": "d815bb7543d1b62c3e52b5a46ff43fbe",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence_targeted",
+    "hash": "bcc88f90a4b330bdb56763cc32dbc0e0",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Looking at each chapter carefully, I'll test sentences against the six structural failure criteria, excluding anything that is a direct residue of authorized cuts.\n\n---\n\n**Ch 022 draft, mid-scene jump candidate:**\n\nThe draft opens Chapter 22 with Adams's boyhood visit to Harvard, then moves through the Cambridge years, then pivots to the Western trip:\n\n> \"When the first year of professing and editing was at last over, he took the next train for the West.\"\n\nThe source bridges this with: \"Putting in his pocket the July number of the North American, with a notice of the Fortieth Parallel Survey by Professor J. D. Whitney, he started for the plains and the Rocky Mountains.\" \u2014 and crucially, earlier in the chapter, the source introduces Frank Emmons explicitly: \"One of his friends from earliest childhood, and nearest neighbor in Quincy, Frank Emmons, had become a geologist and joined the Fortieth Parallel Survey under Government. At Washington in the winter of 1869-70, Emmons had invited Adams to go out with him.\" The draft omits this entirely, then uses Emmons's name as a given:\n\n> \"Emmons's party was out of reach in the Uintahs, but Arnold Hague's had come in to Laramie for supplies, and they took charge of Adams for a time.\"\n\nThe draft has not introduced Emmons anywhere. A reader with no source access encounters \"Emmons's party\" with no established referent \u2014 Emmons has never been named in the draft.\n\n**Gate test**: A competent reader would be genuinely confused \u2014 \"Emmons\" is a proper name with no antecedent anywhere in the draft, not a generic descriptor that can be inferred. The reader cannot tell who Emmons is or why his party's location matters.\n\nNote: The authorized subplot removal is \"Western geological field-trip with the Fortieth Parallel Survey (Ch 021).\" But this is Ch 022, and the Emmons introduction occurs in Ch 022 source material that was *not* marked for removal \u2014 the drafter preserved the Estes Park scene and Clarence King meeting but silently dropped the Emmons introduction that precedes them. This is not a residue of an authorized cut.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"22\",\n    \"draft_passage\": \"Emmons's party was out of reach in the Uintahs, but Arnold Hague's had come in to Laramie for supplies, and they took charge of Adams for a time.\",\n    \"source_has\": \"One of his friends from earliest childhood, and nearest neighbor in Quincy, Frank Emmons, had become a geologist and joined the Fortieth Parallel Survey under Government. At Washington in the winter of 1869-70, Emmons had invited Adams to go out with him on one of the field-parties in summer... Emmons's party was out of reach in the Uintahs, but Arnold Hague's had come in to Laramie for supplies.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'Emmons' is a proper name that appears nowhere earlier in the draft, so 'Emmons's party' has no established referent and the reader cannot identify who Emmons is or why his party's whereabouts are relevant.\"\n  }\n]\n```",
+    "input_tokens": 24410,
+    "output_tokens": 783,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 17.236351013183594,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:40:09",
+  "key": "053558726db963069a3a6facbb1aee81",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and gate test to every potentially problematic sentence.\n\n---\n\n**Ch 074 draft analysis**\n\nThe draft cuts the transition sentence explaining that Stubb's exclamation alluded to a story told when the Pequod spoke the Town-Ho, then launches directly into \"His story was this.\" Let me check whether \"His story was this\" has a clear antecedent in the preceding draft.\n\nThe preceding sentences name \"this figure\" and then quote Stubb calling him \"the long-togged scaramouch the Town-Ho's company told us of.\" The draft then jumps straight to \"His story was this.\" The pronoun \"His\" must refer to the scaramouch/Gabriel figure \u2014 but the draft never names him Gabriel before this paragraph, and never explains what \"his story\" is a story *of* or *about* in the transition. The source had: \"Stubb here alluded to a strange story told of the Jeroboam, and a certain man among her crew... According to this account and what was subsequently learned, it seemed that the scaramouch in question had gained a wonderful ascendency...\" \u2014 this bridges Stubb's exclamation to the backstory. The draft cuts the bridge entirely and goes straight to \"His story was this.\" However, the pronoun \"His\" can be resolved \u2014 it refers to the freckled man/scaramouch just described and just mentioned by Stubb. A competent reader would follow this. The cut is slightly abrupt but not structurally broken. Not a finding.\n\nNow let me check \"But again the boat tore ahead as if dragged by fiends.\" \u2014 In the source, Ahab says \"I tell thee again, Gabriel, that\u2014\" cut off. The draft preserves this. Fine.\n\n\"When this interlude was over, Captain Mayhew began a dark story concerning Moby Dick, not without frequent interruptions from Gabriel and the crazy sea that seemed leagued with him.\" \u2014 The source adds \"whenever his name was mentioned\" as a gloss on Gabriel's interruptions. The draft drops this but the sentence still parses. Not a finding.\n\n\"But Stubb, you boasted of giving Fedallah a sea-toss\" \u2014 this is in Ch 076, not Ch 074.\n\nCh 074 draft looks structurally sound overall.\n\n---\n\n**Ch 076 draft analysis**\n\n\"But Stubb, you boasted of giving Fedallah a sea-toss; if he's going to live for ever, what good will pitching him overboard do?\"\n\nIn the source, Flask says this *after* Stubb has made the boast about giving Fedallah a sea-toss (\"if ever I get a chance of a dark night...\"). In the draft, Stubb's speech is compressed: \"I'll take him by the nape and say\u2014Look here, Beelzebub, you don't do it; and if he makes any fuss, I'll grab his tail, take it to the capstan, and give him such a wrenching that his tail will come short off at the stump.\" \u2014 The boast about a *sea-toss* specifically (\"I meant to give Fedallah a sea-toss, if you got a good chance\") was cut. Flask's line references \"you boasted of giving Fedallah a sea-toss\" but no sea-toss boast appears anywhere in the preceding draft text. The draft Stubb talks about ducking him and wrenching his tail, not specifically a sea-toss. This is a broken pivot / unattributed dialogue trigger \u2014 Flask's reference has no antecedent boast in the draft.\n\nLet me verify: searching the draft for \"sea-toss\" \u2014 it appears only in Flask's question. Stubb's earlier speech in the draft contains: \"I'll just take him by the nape... say\u2014Look here, Beelzebub, you don't do it; and if he makes any fuss, I'll grab his tail...\" No mention of tossing him into the sea. The source had Stubb say: \"if ever I get a chance of a dark night, and he standing hard by the bulwarks, and no one by; look down there, Flask\u2014Aye, will I!\" which implies throwing him overboard / a sea-toss. That passage was cut. Flask's question specifically attributes a \"boast\" of a \"sea-toss\" that Stubb never made in the draft. A reader would be confused \u2014 Flask is attributing something to Stubb that Stubb didn't say.\n\nThis is a valid finding: **broken_pivot** (Flask's line refers back to a boast that was cut from the draft).\n\nLet me check other passages in Ch 076.\n\n\"Did you never hear that the ship which but once has a Sperm Whale's head hoisted on her starboard side, and at the same time a Right Whale's on the larboard, can never afterwards capsize? I heard that gamboge ghost of a Fedallah saying so.\"\n\nIn the source, Flask says \"did you never hear, Stubb, that that ship can never afterwards capsize?\" and then later \"I heard that gamboge ghost of a Fedallah saying so.\" These are part of the same speech in the source. In the draft they're combined into one speech by Flask. This is fine \u2014 compression within a single speaker's turn. No problem.\n\n\"So, when on one side you hoist in Locke's head, you go over that way; but now, on the other side, hoist in Kant's and you come back again; but in very poor plight.\" \u2014 The source has this as a metaphor for the right/sperm whale heads as Locke/Kant. The draft preserves it without the gloss of what Locke and Kant represent here, but the metaphor is decorative/philosophical and the passage reads as an authorial aside that stands alone. Not a structural finding.\n\n\"The Pequod still bore a Sperm Whale's prodigious head hanging to her side\" \u2014 This is the chapter opener. The previous draft chapter (Ch 074) does not mention a Sperm Whale's head. However, Ch 076 source opens with \"we have a Sperm Whale's prodigious head hanging to the Pequod's side\" \u2014 this is itself a back-reference to prior chapters (the authorized cuts include Ch 070-073 cutting-in chapters). Since this is a residue of the authorized cuts (the head was established in chapters that were cut/compressed), this would be an authorized-cut residue, not a finding.\n\nWait \u2014 let me reconsider. The instructions say authorized digression removals include Ch 070, 071, 072, 073 \u2014 Cutting-in, blubber 'blanket,' funeral drift, Ahab's 'Sphynx' address. These chapters presumably covered the cutting-in of the sperm whale and hanging of the head. The reference to the Sperm Whale's head at the start of Ch 076 is a mid-scene jump residue of those authorized cuts. Per the instructions, authorized cut residues are NOT findings.\n\nLet me check \"gamboge ghost of a Fedallah\" \u2014 is Fedallah introduced in the draft? Fedallah is introduced in Ch 050 (source) as a major/continuously-present character (he's part of Ahab's secret crew, appears in the chase chapters, etc.). He's not a minor removable character. So no unglossed name issue.\n\n\"Laplandish speculations were bandied among them, concerning all these passing things.\" \u2014 \"Laplandish\" is an unusual adjective. In the source it's the same. It's colorful but parseable \u2014 means superstitious/northern-mystical speculations. Not a structural problem.\n\nLet me check the Stubb/Flask dialogue more carefully for any other broken pivots.\n\n\"'I want John.' 'What for?' 'I want to use him.' 'Take him,' says the governor\" \u2014 In the source this is: \"'I want John.' 'What for?' says the old governor. 'What business is that of yours,' says the devil, getting mad,\u2014'I want to use him.' 'Take him,' says the governor.\" The draft compresses out \"What business is that of yours\" and \"getting mad\" \u2014 the exchange still makes sense in compressed form. Not a finding.\n\n\"Give him a good ducking, anyhow. Damn the devil, Flask; who's afraid of him...\" \u2014 In the source, between \"Give him a good ducking, anyhow\" and \"Damn the devil\" there's a full exchange about \"he'd crawl back\" / \"Duck him again\" / \"Suppose he should take it into his head to duck you\" / \"I should like to see him try it.\" The draft jumps from \"Give him a good ducking, anyhow\" directly to \"Damn the devil, Flask; who's afraid of him...\" This cuts Flask's \"But he'd crawl back\" and the back-and-forth. The sentence \"Damn the devil, Flask; who's afraid of him, except the old governor who lets him go about kidnapping people...\" \u2014 this is Stubb continuing. It reads as part of Stubb's ongoing speech after \"Give him a good ducking.\" While the exchange is truncated, Stubb's sentence still parses and makes sense on its own. Not a structural finding.\n\n---\n\nMy one valid finding:\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"But Stubb, you boasted of giving Fedallah a sea-toss; if he's going to live for ever, what good will pitching him overboard do?\\\"\",\n    \"source_has\": \"Source has Stubb explicitly say: 'if ever I get a chance of a dark night, and he standing hard by the bulwarks, and no one by; look down there, Flask\u2014Aye, will I!' \u2014 the sea-toss boast that Flask's question directly references. This passage was cut from the draft.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: Flask attributes a specific boast ('you boasted of giving Fedallah a sea-toss') to Stubb, but no such boast appears anywhere in the draft \u2014 Stubb spoke only of wrenching his tail at the capstan, so Flask's question appears to reference a conversation that never happened.\"\n  }\n]\n```",
+    "input_tokens": 12169,
+    "output_tokens": 2414,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 53.454105854034424,
+    "stop_reason": "end_turn"
+  }
+}

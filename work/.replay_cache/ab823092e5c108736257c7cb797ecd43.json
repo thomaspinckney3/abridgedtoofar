@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-05T15:23:40",
+  "key": "ab823092e5c108736257c7cb797ecd43",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "4afd6d49d21d5bdbbae4b1824018eb18",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\n      \"name\": \"Dr. Lunt\",\n      \"appearances_summary\": \"Parish clergyman at Quincy who delivers the funeral service for John Quincy Adams and provides a vivid oratorical scene in Chapter 003.\",\n      \"reason_removable\": \"His single appearance is ceremonial color; removing him does not affect Adams\u2019s formative oppositions, later diplomacy, or the Virgin/Dynamo arc.\"\n    },\n    {\n      \"name\": \"P. P. F. Degrand\",\n      \"appearances_summary\": \"A dozing visitor in the Quincy spare bedroom during John Quincy Adams\u2019s paralysis (Chapter 003), mentioned for local flavor.\",\n      \"reason_removable\": \"He adds atmosphere but no consequence for Adams\u2019s education, politics, or later metaphors.\"\n    },\n    {\n      \"name\": \"Dr. Parkman\",\n      \"appearances_summary\": \"Boston acquaintance who shares the Quincy sickroom tableau (Chapter 003).\",\n      \"reason_removable\": \"He has no later role and can be cut without altering plot or themes.\"\n    },\n    {\n      \"name\": \"Conky Daniels\",\n      \"appearances_summary\": \"Legendary North End rough invoked in Adams\u2019s boyhood Boston snowball fights on the Common (Chapter 005).\",\n      \"reason_removable\": \"This one-off street vignette can be excised without losing Adams\u2019s broader lesson about force or politics.\"\n    },\n    {\n      \"name\": \"Sir Henry Holland\",\n      \"appearances_summary\": \"Veteran court physician who hosts an anecdotal breakfast where Adams meets Charles Milnes Gaskell (Chapter 023).\",\n      \"reason_removable\": \"He is a one-scene facilitator; his removal does not change Adams\u2019s Indian-summer arc or the Open Door/imperial context.\"\n    },\n    {\n      \"name\": \"Mr. Dohna\",\n      \"appearances_summary\": \"Landlord of Adams\u2019s bachelor rooms on G Street in Washington (Chapter 019).\",\n      \"reason_removable\": \"Pure scene-setting; excising him does not affect the Grant- or Senate-centered education.\"\n    },\n    {\n      \"name\": \"Milnes Gaskell\",\n      \"appearances_summary\": \"Yorkshire host and society friend across several English sojourns (Chapters 011, 023).\",\n      \"reason_removable\": \"Though recurrent as a cordial host, he is not essential to the London diplomacy lessons or to the Virgin/Dynamo argument.\"\n    },\n    {\n      \"name\": \"Lord Westbury\",\n      \"appearances_summary\": \"Chancellor cited in the Alabama/Neutrality legal wrangles (Chapter 012\u2013013).\",\n      \"reason_removable\": \"He is a name in a legal backdrop; Palmerston, Russell, and the rams carry the load-bearing London story.\"\n    },\n    {\n      \"name\": \"Sir George Cornewall Lewis\",\n      \"appearances_summary\": \"Cabinet voice cited in letters around Gladstone\u2019s 1862 intervention speech (Chapter 012).\",\n      \"reason_removable\": \"He refines an episode already anchored by Russell, Palmerston, and Gladstone; his omission does not weaken the diplomatic education.\"\n    },\n    {\n      \"name\": \"Mrs. Cameron\",\n      \"appearances_summary\": \"Washington society hostess (Chapter 026) linked to Adams\u2019s Indian-summer social circuit.\",\n      \"reason_removable\": \"She is peripheral to the Spanish War/Open Door frame and to the Virgin/Dynamo thesis.\"\n    }\n  ],\n  \"subplots\": [\n    {\n      \"name\": \"Boston Common snowball war and street tough lore\",\n      \"chapter_span\": \"Ch 005\",\n      \"reason_removable\": \"Vivid boyhood color that does not alter the central formation of Adams\u2019s double nature or his later political and diplomatic education.\"\n    },\n    {\n      \"name\": \"The Erie \u2018Gold Conspiracy\u2019 chase\",\n      \"chapter_span\": \"Ch 016\u2013017\",\n      \"reason_removable\": \"The investigation and press maneuvers are a self-contained episode; Adams\u2019s broader lesson about Gilded Age corruption and the Senate\u2019s friction remains clear without this case study.\"\n    },\n    {\n      \"name\": \"Western geological field-trip with the Fortieth Parallel Survey\",\n      \"chapter_span\": \"Ch 021\",\n      \"reason_removable\": \"Charming travelogue and friendships, but not required to understand Adams\u2019s turn from science to the Virgin/Dynamo polarity.\"\n    },\n    {\n      \"name\": \"Fryston country-house interlude with Swinburne\",\n      \"chapter_span\": \"Ch 011\",\n      \"reason_removable\": \"A memorable salon portrait, yet not structurally necessary to the London diplomacy arc or to Adams\u2019s later metaphors.\"\n    },\n    {\n      \"name\": \"Cuba\u2013Yellowstone\u2013West Indies loop\",\n      \"chapter_span\": \"Ch 024\",\n      \"reason_removable\": \"Seasonal rambling that can be cut without harming the Spanish War/Open Door arc or the Exposition chapters.\"\n    },\n    {\n      \"name\": \"Bank panic of 1893 as personal peril\",\n      \"chapter_span\": \"Ch 024\",\n      \"reason_removable\": \"This self-contained scare colors mood but is not needed for the Chicago/Paris Expositions or the Virgin/Dynamo synthesis.\"\n    }\n  ],\n  \"digressions\": [\n    {\n      \"chapter_ids\": [\"012\"],\n      \"topic\": \"Press-craft and the \u2018Session\u2019\u2014legislative procedure, civil-service reform, and inside baseball of Congressional maneuver.\",\n      \"reason_removable\": \"Essayistic process-detail that can be summarized in a line about postwar political education without losing the book\u2019s themes.\"\n    },\n    {\n      \"chapter_ids\": [\"017\"],\n      \"topic\": \"Pteraspis, Terebratula, and long geologic excursus as a parable of uniformity vs. selection.\",\n      \"reason_removable\": \"This technical detour is not essential once the Darwin-to-dynamo thread is stated plainly in the Paris chapter.\"\n    },\n    {\n      \"chapter_ids\": [\"019\", \"020\"],\n      \"topic\": \"High-frequency Senate/Spoils friction under Grant and the anatomy of obstruction.\",\n      \"reason_removable\": \"These essays on institutional viscosity can be compressed to a sentence about losing political illusions without changing the arc.\"\n    },\n    {\n      \"chapter_ids\": [\"025\"],\n      \"topic\": \"Magnet, coherer, and the science preamble to Paris 1900.\",\n      \"reason_removable\": \"The emblematic \u2018dynamo\u2019 is introduced directly in Chapter 027; this scientific prelude can be excised without blurring the metaphor.\"\n    },\n    {\n      \"chapter_ids\": [\"014\", \"015\"],\n      \"topic\": \"English social eccentricity and the Harvard perfection joke.\",\n      \"reason_removable\": \"Extended social taxonomy that can be dropped without affecting the London diplomatic education or the Virgin/Dynamo comparison.\"\n    }\n  ],\n  \"skippable_chapters\": [\n    {\n      \"chapter_id\": \"002\",\n      \"reason_removable\": \"The Rousseau/Bacon \u2018manikin\u2019 preface frames the method but is not needed to follow Adams\u2019s childhood opposites, diplomatic education, or the Virgin/Dynamo thesis.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"014\",\n      \"reason_removable\": \"A reflective essay on English eccentricity and social taxonomy that does not advance the London diplomacy education or later metaphors.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"015\",\n      \"reason_removable\": \"The \u2018perfection\u2019 of Boston/Harvard society is a social riff; the main arc proceeds from London diplomacy to postwar writing without it.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"016\",\n      \"reason_removable\": \"\u2018Dilettantism\u2019 (Dresden/Rome return and the side-quest into the Erie affair) is a self-contained detour.\",\n      \"kernel\": \"After Europe had confirmed his sense that Germany\u2019s metaphysics gave little instruction and Rome\u2019s light taught more by shock than by school, Adams drifted back to Washington resolved to learn his era through events rather than lectures.\",\n      \"relocate_to\": \"017\",\n      \"position\": \"start\"\n    },\n    {\n      \"chapter_id\": \"019\",\n      \"reason_removable\": \"The \u2018President Grant\u2019 chapter inventories spoils, Senate friction, and Gilded Age disgust already implicit elsewhere and not needed for the book\u2019s central contrasts.\",\n      \"kernel\": \"Grant\u2019s Washington taught him that a modern capital could smother reform in a genial haze of jobbery and obstruction; his illusions about politics gave way to a colder study of the forces beneath them.\",\n      \"relocate_to\": \"021\",\n      \"position\": \"start\"\n    },\n    {\n      \"chapter_id\": \"020\",\n      \"reason_removable\": \"\u2018Free Fight\u2019 extends the same Senate and patronage anatomy; no later hinge depends on its particulars.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"024\",\n      \"reason_removable\": \"A second \u2018Chicago\u2019 chapter largely recounts travel (Cuba, Yellowstone), a banking scare, and more peregrinations; the 1893 Exposition is already treated in Chapter 021, and the Spanish War/Hay arc resumes in Chapter 026.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    },\n    {\n      \"chapter_id\": \"025\",\n      \"reason_removable\": \"\u2018Silence\u2019 is a broad essay (geology, magnetism, radium) that preludes the 1900 Exposition; Chapter 027 introduces the dynamo directly and carries the Virgin/Dynamo synthesis on its own.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    }\n  ]\n}",
+    "input_tokens": 189570,
+    "output_tokens": 5147,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 82.97640824317932,
+    "stop_reason": "stop"
+  }
+}

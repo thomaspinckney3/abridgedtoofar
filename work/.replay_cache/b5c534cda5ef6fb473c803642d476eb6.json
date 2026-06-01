@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:19:04",
+  "key": "b5c534cda5ef6fb473c803642d476eb6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "16fbe212da6f381bc241f01c98eae677",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "0d20186e30d91b1e32f9c1937887f5c90fa693af446e9839bc46403fdd15aa45",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both drafts systematically, applying each test.\n\n---\n\n**Ch 003 draft \u2014 detailed pass**\n\n- \"Lucille\" appears at the table without any preceding introduction in the draft. In the source, Lucille is introduced by name by her companion (\"Wasn't it for you, Lucille?\") before she speaks. In the draft, the companion's naming line (\"Wasn't it for you, Lucille?\") was cut, along with the girl's prior speech about the dress being altered. Lucille simply speaks her dissenting opinion cold: *\"I don't think it's so much that,\" argued Lucille\u2026* \u2014 she has not been named anywhere in the preceding draft. **Lucille is on the authorized-removal list**, so this is an authorized seam. Not a finding.\n\n- The \"old Metropole\" reference and Wolfshiem's Rosy Rosenthal monologue: authorized subplot removal. The draft retains the exchange up to \"but full of memories\" and then cuts to \"A succulent hash arrived.\" The sentence \"but full of memories\" now has no follow-through, but the Rosenthal anecdote is an authorized removal. The residual seam is expected.\n\n- The motorcycle policeman scene: authorized removal. The draft goes from the valley of ashes directly to the bridge paragraph. No residual reference survives, so no seam problem.\n\n- The Klipspringer reference: authorized removal; he does not appear in the draft.\n\n- \"Jordan Baker had believed he was lying\" \u2014 in Ch 004 draft, this sentence refers to Jordan's skepticism about Oxford. In Ch 003 draft, Jordan says \"I don't believe it\" / \"I just don't think he went there.\" So the antecedent is present in the preceding draft chapter. Not a finding.\n\n- The \"old Metropole\" dialogue in Ch 004: Wolfshiem says \"but full of memories\" \u2014 \"What place is that?\" \u2014 \"The old Metropole.\" Then the Rosenthal story is cut (authorized). The draft jumps to \"A succulent hash arrived, and Mr. Wolfshiem, forgetting the more sentimental atmosphere of the old Metropole, began to eat with ferocious delicacy.\" The phrase \"forgetting the more sentimental atmosphere of the old Metropole\" reads as though the reader has just witnessed Wolfshiem's sentimental reminiscence \u2014 but the reminiscence (the Rosenthal murder story) was cut. A competent reader sees Wolfshiem refer to the Metropole as \"full of memories,\" then instantly the narrator says he is \"forgetting the more sentimental atmosphere of the old Metropole.\" The reader does know the Metropole was just described as full of memories, so \"the more sentimental atmosphere\" isn't entirely opaque. This is a residue of the authorized Rosenthal cut. Expected seam \u2014 not a finding.\n\n- Ch 004 draft, bridge paragraph: *\"Over the great bridge, with the sunlight through the girders making a constant flicker upon the moving cars, with the city rising up across the river in white heaps and sugar lumps all built with a wish out of nonolfactory money.\"* This is a non-finite nominative absolute / fragment \u2014 it has no main verb. In the source it is the same construction; Fitzgerald wrote it as a fragment for stylistic effect. The draft reproduces it faithfully. A competent reader reads it as deliberate impressionism, not a structural failure. Not a finding.\n\n- Ch 004, Jordan's narration ends; then: *\"When Jordan Baker had finished telling all this we had left the Plaza for half an hour and were driving in a victoria through Central Park.\"* \u2014 This sentence works perfectly; Jordan's account is present in full in the draft. Not a finding.\n\n- Ch 003 draft: the conversation between Nick and the stranger (Gatsby) at the table. In the source, after their war reminiscence, \"Jordan looked around and smiled\" and Nick introduces her question \"Having a gay time now?\" Then Nick turns to speak to the man. In the draft, this flows as: *\"Want to go with me, old sport?\u2026 Any time that suits you best. 'Having a gay time now?' Jordan inquired, turning. 'Much better,' I said. 'This is an unusual party for me\u2026'\"* The pronoun \"turning\" is slightly compressed but parseable. Not a finding.\n\n- Ch 003 draft, after the hydroplane invitation: *\"'Having a gay time now?' Jordan inquired, turning.\"* \u2014 In the source, Nick explicitly turns *back* to his new acquaintance after answering Jordan, which sets up the surprise revelation. The draft has Nick address Jordan and then immediately say \"This is an unusual party for me. I haven't even seen the host\u2026 and this man Gatsby sent over his chauffeur with an invitation.\" \u2014 then the man says \"I'm Gatsby.\" A competent reader can follow this without confusion. Not a finding.\n\n- Ch 003 draft: *\"He looked at me sideways\u2014and I knew why Jordan Baker had believed he was lying.\"* \u2014 This is in Ch 004 draft (the car scene). In Ch 003 draft Jordan said \"I don't believe it\" / \"I just don't think he went there.\" So the antecedent is established. Not a finding.\n\n- Ch 004 draft: the motorcycle policeman and Christmas card scene is an authorized removal. The draft goes: *\"\u2026I had a glimpse of Mrs. Wilson straining at the garage pump with panting vitality as we went by. Over the great bridge\u2026\"* No residual dangling reference. Not a finding.\n\n- \"Doctor Webster Civet\" in the guest list: he is on the authorized minor-character removal list. He appears in Ch 004 draft (\"Doctor Webster Civet, who was drowned last summer up in Maine\"). Since he is on the authorized removal list AND appears in the draft, the named-person continuity invariant requires that either the preceding draft chapter or the local sentence identify him. The local sentence does identify him with his role/descriptor: \"Doctor Webster Civet, who was drowned last summer up in Maine\" \u2014 this is a sufficient appositive. Not a finding.\n\n- \"Mrs. Ulysses Swett\" in the guest list: a minor name, but she appears only as part of an anecdote about Snell (\"Mrs. Ulysses Swett's automobile ran over his right hand\"). She is not on the authorized removal list. She appears once with no role or relationship identifier. However, she functions purely as a descriptor within the anecdote \u2014 the reader understands \"someone's car ran him over\" \u2014 and the name is used as a possessive modifier, not as a character requiring tracking. By the explicit rejection rule (\"A minor character is referred to only by a descriptor and the descriptor is clear\"), this is acceptable. Not a finding.\n\n- Ch 004 draft: *\"'Hot and small\u2014yes,' said Mr. Wolfshiem, 'but full of memories.' 'Yes, highballs,' agreed Gatsby.\"* \u2014 In the source the order is: the highballs question \u2192 \"This is a nice restaurant\" \u2192 \"But I like across the street better!\" \u2192 \"Yes, highballs\" agreed Gatsby \u2192 \"Hot and small\u2014yes, but full of memories.\" The draft reorders: \"But I like across the street better!\" \u2192 \"It's too hot over there\" \u2192 \"Hot and small\u2014yes, but full of memories.\" \u2192 \"Yes, highballs,\" agreed Gatsby. This makes \"Yes, highballs\" appear as a non sequitur after \"full of memories.\" A reader would be genuinely confused: Gatsby is agreeing to highballs after Wolfshiem has just said the other place is \"full of memories\" \u2014 the head waiter's question has receded three exchanges earlier. This is a **broken logical pivot** \u2014 Gatsby's \"Yes, highballs\" is a reply whose triggering question (the head waiter's \"Highballs?\") has been separated from the response by intervening dialogue, making it incoherent.\n\nLet me verify: Draft sequence:\n1. `\"Highballs?\" asked the head waiter.`\n2. `\"This is a nice restaurant here,\" said Mr. Wolfshiem\u2026 \"But I like across the street better!\"`\n3. `\"It's too hot over there,\" said Gatsby.`\n4. `\"Hot and small\u2014yes,\" said Mr. Wolfshiem, \"but full of memories.\"`\n5. `\"Yes, highballs,\" agreed Gatsby.`\n\nIn the source, step 5 came *before* steps 3 and 4. The draft moved it after, so now Gatsby says \"Yes, highballs\" as if responding to \"but full of memories.\" A competent reader is genuinely puzzled: why is Gatsby suddenly agreeing to highballs after a remark about the Metropole's atmosphere? This is a structural incoherence introduced by the compression reordering.\n\nThis qualifies as **broken_pivot** (the agreeing response is now attached to the wrong stimulus) or more precisely **unattributed_dialogue** (a reply whose triggering exchange has been displaced). I'll classify it as `broken_pivot` since the connective is implicit agreement (\"Yes, highballs\") and it now appears to respond to the wrong utterance.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"4\",\n    \"draft_passage\": \"\\\"Hot and small\u2014yes,\\\" said Mr. Wolfshiem, \\\"but full of memories.\\\" \\\"Yes, highballs,\\\" agreed Gatsby.\",\n    \"source_has\": \"Source has Gatsby say \\\"Yes, highballs\\\" immediately after the head waiter's question and before Wolfshiem's \\\"Hot and small\u2014yes, but full of memories\\\" remark, so the agreement is a direct answer to the waiter. The draft reorders the lines, placing Gatsby's \\\"Yes, highballs\\\" after Wolfshiem's sentimental comment about the Metropole, making it read as a non-sequitur response to \\\"full of memories\\\" rather than to the waiter's drinks question.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: Gatsby's 'Yes, highballs' appears to be a reply to Wolfshiem's statement that the old Metropole is 'full of memories,' which is semantically incoherent; the reordering has severed the response from its triggering question.\"\n  }\n]\n```",
+    "input_tokens": 29540,
+    "output_tokens": 2410,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 55.33029389381409,
+    "stop_reason": "end_turn"
+  }
+}

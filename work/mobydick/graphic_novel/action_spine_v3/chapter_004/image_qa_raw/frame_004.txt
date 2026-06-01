@@ -1,0 +1,13 @@
+{
+  "frame_number": 4,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Shot is not from Ishmael’s POV as specified; the camera shows Ishmael in bed rather than viewing from his eyes.",
+      "visible_evidence": "Ishmael is clearly visible at left, facing Queequeg, indicating a third-person vantage rather than POV.",
+      "repair_prompt": "Recompose to a medium over-the-blanket POV from Ishmael’s position on the bed (over-shoulder or bed-level), with Queequeg mid-frame gesturing first to the clothes pile and then toward the open door. Preserve clean negative space in the bottom-right for the caption."
+    }
+  ]
+}

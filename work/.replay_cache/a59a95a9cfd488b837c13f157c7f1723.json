@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:08:20",
+  "key": "a59a95a9cfd488b837c13f157c7f1723",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both chapters systematically, applying each test.\n\n**Ch 008 draft \u2014 the Grand Dragon Lord's inspection**\n\nIn the source, Renner (a named adviser figure) conducts the formal inspection of the women and delivers the assessments. The draft reassigns all of Renner's actions and lines to the Grand Dragon Lord himself \u2014 he walks the line, says \"This one appears weak,\" says \"Much too high-spirited,\" says \"She is beautiful.\" This is a compression choice, not a coherence failure.\n\nHowever, the name \"Renner\" is then dropped entirely from the draft. The source has Renner speak (\"What a stupid idea. The Lord has already\u2014\"), then the dragon lord address him by name (\"A moment, Renner\"), then Renner blustering (\"She is not the prettiest\u2026\"), then the lord telling him \"Have her taken to her new quarters,\" Renner clapping for guards. In the draft, none of this dialogue is attributed to Renner \u2014 it's all folded away. No orphaned name survives. \u2713\n\n**Ch 008 draft \u2014 \"I met his green eyes\"**\n\nSource: \"I met his red eyes without blinking.\" Draft: \"I met his green eyes without blinking.\" The lord's eye color was established earlier in the same draft chapter: \"about thirty, dirty-blond hair short and spiked, green eyes.\" So the draft is internally consistent (if inconsistent with the source's red eyes). Not a coherence failure in the draft itself.\n\n**Ch 008 draft \u2014 the guards scene at the end**\n\nSource: Renner \"clapped his hands. A pair of guards against the wall hurried forward. He nodded at me. 'Take her away.'\" Draft: \"A pair of guards hurried forward, and one nodded at me. 'Take her away.'\" In the draft Renner has been fully elided; the guards appear and the line is unattributed. Who gives the order \"Take her away\"? In the draft the preceding sentence is \"Have her taken to her new quarters\" (the dragon lord's). Then \"A pair of guards hurried forward, and one nodded at me. 'Take her away.'\" A guard nodding at Miriam and saying \"Take her away\" reads as a guard directing a colleague \u2014 the line's speaker is ambiguous but not unresolvable. A reader can infer the guard is addressing his partner. Marginal, but parseable.\n\n**Ch 007 draft \u2014 no issues found after testing all sentences.**\n\n**Ch 008 draft \u2014 \"He walked the line himself\"**\n\nThe word \"himself\" implies contrast (as opposed to delegating to someone else). In the source, Renner walks the line. The draft has cut Renner entirely before this point, so \"himself\" has no referential contrast \u2014 but the sentence still parses: the Grand Dragon Lord stood and walked the line. \"Himself\" reads as emphatic, not dangling. Not a finding.\n\n**Ch 008 draft \u2014 \"one nodded at me\"**\n\n\"A pair of guards hurried forward, and one nodded at me. 'Take her away.'\" The dialogue is unattributed \u2014 a guard nodding and then speech appearing without a speaker tag. The triggering command in the source was Renner's, which is cut. But the dragon lord just said \"Have her taken to her new quarters,\" so the command context exists. The \"Take her away\" line is a residue of Renner's cut role \u2014 this is an authorized-cut residue (Renner's role was compressed away). Not a valid finding.\n\nAfter exhaustive checking against all seven tests and the gate test:\n\n```json\n[]\n```",
+    "input_tokens": 10322,
+    "output_tokens": 833,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 20.153213024139404,
+    "stop_reason": "end_turn"
+  }
+}

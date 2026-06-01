@@ -1,0 +1,13 @@
+{
+  "frame_number": 6,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "The whaling harpoon reads visually as a generic spear; the detachable stock and distinctive straight-edged steel head are not clearly depicted.",
+      "visible_evidence": "A long pole with a simple triangular point leans against the wall near the chair; no clear detachable stock or lashing details are visible.",
+      "repair_prompt": "Refine the harpoon so it is unmistakably a 19th-century whaling harpoon: show a detachable wooden stock and a long, straight-edged steel head with proper lashing hardware. Keep its position near the wash-stand/chair; retain all other scene elements and the uncurtained window view."
+    }
+  ]
+}

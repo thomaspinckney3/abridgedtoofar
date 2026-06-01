@@ -1,0 +1,53 @@
+{
+  "page_number": 5,
+  "anchors": [
+    {
+      "panel_number": 7,
+      "text_index": 1,
+      "kind": "speech",
+      "speaker": "Queequeg",
+      "text": "Who-e debel you? You no speak-e—dam-me, I kill-e!",
+      "visible": true,
+      "confidence": 0.93,
+      "mouth_point": {"x": 930.8, "y": 302.1},
+      "mouth_point_ratio": {"x": 0.606, "y": 0.295},
+      "tail_target_point": {"x": 913.9, "y": 286.7},
+      "tail_target_point_ratio": {"x": 0.595, "y": 0.280},
+      "face_box": {"x1": 837.1, "y1": 209.9, "x2": 986.1, "y2": 368.6},
+      "evidence": "Tattooed man straddling the bed at center; pipe stem between his lips. Head around x≈0.60,y≈0.29.",
+      "reason": "Named speaker matches central tattooed figure. Mouth anchored at lip/pipe junction; tail offset up-left toward top-center balloon zone; box encloses visible head to avoid balloon overlap."
+    },
+    {
+      "panel_number": 7,
+      "text_index": 2,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Landlord! For God’s sake—Peter Coffin! Watch! Angels! save me!",
+      "visible": true,
+      "confidence": 0.92,
+      "mouth_point": {"x": 1179.6, "y": 391.2},
+      "mouth_point_ratio": {"x": 0.768, "y": 0.382},
+      "tail_target_point": {"x": 1139.7, "y": 430.1},
+      "tail_target_point_ratio": {"x": 0.742, "y": 0.420},
+      "face_box": {"x1": 1121.3, "y1": 322.6, "x2": 1244.2, "y2": 455.7},
+      "evidence": "Man in bed on the right, eyes wide, mouth open toward left.",
+      "reason": "Speaker name and left-region hint correspond to the frightened man on right side of panel. Tail placed slightly below-left of lips toward bottom-left balloon zone; box covers visible head."
+    },
+    {
+      "panel_number": 7,
+      "text_index": 3,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "Don’t be afraid; Queequeg won’t harm a hair of your head.",
+      "visible": true,
+      "confidence": 0.90,
+      "mouth_point": {"x": 219.6, "y": 206.8},
+      "mouth_point_ratio": {"x": 0.143, "y": 0.202},
+      "tail_target_point": {"x": 238.1, "y": 225.3},
+      "tail_target_point_ratio": {"x": 0.155, "y": 0.220},
+      "face_box": {"x1": 153.6, "y1": 133.1, "x2": 284.2, "y2": 261.1},
+      "evidence": "Landlord at the open door on the left, holding a candle; mouth slightly open.",
+      "reason": "Named speaker clearly matches the left doorway figure (region hint appears inconsistent). Tail offset down-right toward the specified bottom-right balloon zone; box encloses his head to keep balloons clear."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "frame_number": 4,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "major",
+      "category": "prop_confusion",
+      "finding": "Ash-box appears as an active brazier with glowing embers and smoke rather than a box of gray stove ashes with an ajar lid.",
+      "visible_evidence": "At the right-side threshold, the low wooden box shows orange glow and curling smoke; no lid is present, suggesting live coals.",
+      "repair_prompt": "Replace the embering contents with fine gray ash only; remove orange glow and active smoke. Add a slightly ajar lid and dusted ash around the box. Keep it low, wooden or tin, and positioned at the porch corner by the threshold."
+    },
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "Ishmael’s coughing is not visually indicated, only his retreat is shown.",
+      "visible_evidence": "Ishmael is half-turned with one hand on the doorframe and the carpet-bag tucked, but his mouth is closed and no cough plume or gesture is present.",
+      "repair_prompt": "Indicate a subtle cough as he retreats: open his mouth slightly with a faint wisp of ash motes near his face, or a hunched shoulder/hand-near-mouth gesture, without adding text or balloons."
+    },
+    {
+      "severity": "minor",
+      "category": "character_continuity",
+      "finding": "Congregants are rendered with detailed, lit faces rather than dim silhouettes.",
+      "visible_evidence": "Multiple worshipers’ faces and garments are clearly detailed and well-lit across the pews.",
+      "repair_prompt": "Push congregants into dimmer, silhouette-like lighting consistent with lamplight: reduce facial detail and contrast so they read as bundled silhouettes facing the pulpit while still glancing toward the disturbance."
+    }
+  ]
+}

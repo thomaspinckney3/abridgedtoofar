@@ -1,0 +1,49 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_001/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is busy, leaving little clean negative space for lettering.",
+          "visible_evidence": "Bottom-center area contains Ishmael’s legs/boots and detailed wet pier planks; no clear blank space.",
+          "repair_prompt": "Recompose to leave clear negative space at the bottom-center for a caption: shift Ishmael slightly left and up in frame, keep his boots and pier details away from the bottom-center, reduce texture/contrast on planks there or replace with calm water, avoid ropes/pilings overlapping that zone; maintain 1840s attire (dark pea coat, knit watch cap, rough trousers, worn boots), small brown leather coin purse, weathered dock spiles with coiled tarred hemp ropes, overcast drizzle, distant moored ships with furled sails, and indistinct background figures."
+        }
+      ]
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Bottom-center caption zone is partially busy with a diagonal rope and hull detail, reducing clean space for lettering.",
+          "visible_evidence": "A thick rope crosses the lower center-right and the ship’s plank strakes and railings run behind it where the caption should sit; only a narrow misty gap remains.",
+          "repair_prompt": "Reserve a clear bottom-center band for the caption by relocating or thinning the foreground rope away from center, softening/removing hull detail lines in that area, and extending the misty negative space across the bottom-center while keeping Ishmael, the dock spiles, and rigged ship unchanged."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Background pedestrians and dockworkers are visible even though only Ishmael should be discernibly visible.",
+          "visible_evidence": "Small human figures are present along the waterfront street and near moored ships on the left side of the image.",
+          "repair_prompt": "Remove or heavily blur background people so that Ishmael is the only clearly discernible person; keep buildings, ships, and pier details but render distant humans as indistinct silhouettes."
+        }
+      ]
+    }
+  ],
+  "valid": true
+}

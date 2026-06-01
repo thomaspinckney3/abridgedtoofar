@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T16:00:10",
+  "key": "87e225087f309e8870971c504f8fec4e",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "92e80799492fc0c15cb29a75163e1709",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "82ce8d89bcffcb692c689f7263cafd1f5228cd37fe055a683732015551f305e3",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\n      \"name\": \"Aunt Dorcas\",\n      \"appearances_summary\": \"Quaker nurse who tends Tom Loker during his convalescence and banters him out of swearing while he\u2019s bedridden (Ch 038).\",\n      \"reason_removable\": \"She is a one-scene caregiver whose name and personality can be elided without changing Loker\u2019s Quaker-aided recovery already required by the synopsis.\"\n    },\n    {\n      \"name\": \"Mrs. Smyth\",\n      \"appearances_summary\": \"Respectable Canadian woman who poses as Harry\u2019s 'aunty' and travels with George and Eliza on the lake packet to Amherstburg (Ch 038).\",\n      \"reason_removable\": \"Her named role can be replaced by an unnamed helper or folded into the Quaker network without affecting the escape-to-Canada arc.\"\n    },\n    {\n      \"name\": \"Marks\",\n      \"appearances_summary\": \"A slave-catcher who briefly appears at the Sandusky wharf, conferring with the packet clerk as the fugitives board (Ch 038).\",\n      \"reason_removable\": \"His cameo adds momentary tension but no plot turn, and the boat scene reads cleanly without identifying him.\"\n    },\n    {\n      \"name\": \"Tompkins\",\n      \"appearances_summary\": \"A neighboring planter used only as Legree\u2019s cotton-wager foil in plantation talk (Ch 037).\",\n      \"reason_removable\": \"He is a name-check for Legree\u2019s bragging and can be cut without loss.\"\n    },\n    {\n      \"name\": \"Captain Stuart\",\n      \"appearances_summary\": \"In Cassy\u2019s backstory, a kindly purchaser who frees and tries to recover her children (Ch 035).\",\n      \"reason_removable\": \"He exists only inside the optional autobiography and drops out of the main action.\"\n    },\n    {\n      \"name\": \"Butler\",\n      \"appearances_summary\": \"Cassy\u2019s abusive owner in her backstory who sells her children and provokes her attempted attack (Ch 035).\",\n      \"reason_removable\": \"Another backstory figure whose details are not needed to understand Cassy\u2019s despair and later stratagem.\"\n    },\n    {\n      \"name\": \"Simmons\",\n      \"appearances_summary\": \"Named only as the seller on Eliza\u2019s bill of sale recalled aboard the steamer (Ch 043).\",\n      \"reason_removable\": \"A paperwork name that can be omitted without changing the discovery that Eliza is Cassy\u2019s child.\"\n    },\n    {\n      \"name\": \"Lucy\",\n      \"appearances_summary\": \"A sick mulatto field hand whose short weight triggers Tom\u2019s aid and Legree\u2019s order that Tom flog her (Ch 034).\",\n      \"reason_removable\": \"Her specific name is unnecessary\u2014the refusal-to-flog scene works with an unnamed, ailing woman.\"\n    }\n  ],\n  \"subplots\": [\n    {\n      \"name\": \"Cassy\u2019s full autobiography (the 'Quadroon\u2019s Story')\",\n      \"chapter_span\": \"Ch 035\",\n      \"reason_removable\": \"A long embedded life history that can be drastically compressed to 'years of abuse, children sold' without changing her function as Legree\u2019s victim and Tom\u2019s later ally.\"\n    },\n    {\n      \"name\": \"Legree\u2019s cotton-wager rivalries\",\n      \"chapter_span\": \"Ch 037\",\n      \"reason_removable\": \"Talk of out-harvesting Tompkins and betting on crop yields colors Legree but doesn\u2019t alter any plot decision.\"\n    },\n    {\n      \"name\": \"Marks stalking the Sandusky boat\",\n      \"chapter_span\": \"Ch 038\",\n      \"reason_removable\": \"A brief cat-and-mouse beat that heightens suspense yet adds no new consequence once the fugitives cast off.\"\n    },\n    {\n      \"name\": \"Ghost-legend embroidery after the garret ruse\",\n      \"chapter_span\": \"Ch 043\",\n      \"reason_removable\": \"An atmospheric extension of the 'haunting' that repeats the point of Legree\u2019s superstition after the stratagem has already worked.\"\n    },\n    {\n      \"name\": \"Emmeline\u2019s boy-disguise makeover comedy\",\n      \"chapter_span\": \"Ch 038\",\n      \"reason_removable\": \"Light business around hair-cutting, caps and poses can be trimmed to a line that she travels safely in disguise.\"\n    }\n  ],\n  \"digressions\": [\n    {\n      \"chapter_ids\": [\"033\"],\n      \"topic\": \"Authorial aside comparing 'picking cotton isn\u2019t hard work' to the Inquisition\u2019s water-drop torture and the deadening monotony of forced labor.\",\n      \"reason_removable\": \"It is a thematic lecture that can be cut or tightened without affecting the Legree-plantation setup.\"\n    },\n    {\n      \"chapter_ids\": [\"038\"],\n      \"topic\": \"Apostrophe on 'Liberty'\u2014national vs. individual freedom\u2014with rhetorical questions to American readers.\",\n      \"reason_removable\": \"A stirring essay that pauses the fugitives\u2019 departure and can be abbreviated without narrative loss.\"\n    },\n    {\n      \"chapter_ids\": [\"040\"],\n      \"topic\": \"Mini-essay that 'no one is so thoroughly superstitious as the godless man,' contrasting Christian order with dread of the spirit-land.\",\n      \"reason_removable\": \"A homiletic gloss on Legree\u2019s fear that reiterates a point already clear from action.\"\n    },\n    {\n      \"chapter_ids\": [\"043\"],\n      \"topic\": \"Playful 'pneumatology' on why ghosts wear white sheets (with Shakespeare citation) and a general musing on souls and locked doors.\",\n      \"reason_removable\": \"A witty aside that neither advances plot nor deepens character beyond the already-established haunting.\"\n    }\n  ],\n  \"skippable_chapters\": [\n    {\n      \"chapter_id\": \"035\",\n      \"reason_removable\": \"Cassy\u2019s extended backstory occupies most of the chapter and her crucial present-tense role (tending Tom, beginning to soften) can be conveyed in a few lines.\",\n      \"kernel\": \"After Tom\u2019s brutal whipping, Cassy secretly brings him water and dresses his wounds in the gin-house; hardened by years of sale and abuse and the loss of her children, she rages that God has forsaken them, but at Tom\u2019s urging she reads of Christ\u2019s forgiveness and, though despairing still, begins to be moved. She hints at a long, bitter history that has made her what she is.\",\n      \"relocate_to\": \"036\",\n      \"position\": \"start\"\n    },\n    {\n      \"chapter_id\": \"043\",\n      \"reason_removable\": \"It elaborates ghostly lore and Legree\u2019s nightmares and then narrates, at length, the flight of Cassy and Emmeline and their chance boat-meeting, all of which the next chapter summarizes and uses without needing the full scene.\",\n      \"kernel\": \"As ghost rumors spread, Cassy and Emmeline slip from the garret in disguise\u2014Cassy as a Creole lady, Emmeline as her maid\u2014reach the riverboats, and there encounter George Shelby and a French lady, Madame de Thoux, who reveals herself as George Harris\u2019s sister; hearing names and papers, Cassy first suspects that Eliza may be her long-lost child. Legree\u2019s terror intensifies, and that night the house is found open as two white figures vanish down the avenue.\",\n      \"relocate_to\": \"044\",\n      \"position\": \"start\"\n    }\n  ]\n}",
+    "input_tokens": 57467,
+    "output_tokens": 8388,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 122.96926474571228,
+    "stop_reason": "stop"
+  }
+}

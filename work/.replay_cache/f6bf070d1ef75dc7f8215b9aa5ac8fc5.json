@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:29:53",
+  "key": "f6bf070d1ef75dc7f8215b9aa5ac8fc5",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test.\n\n---\n\n**Ch 013 draft \u2014 checking sentence by sentence**\n\nMost compression is clean. One candidate:\n\n> \"I would remonstrate; but he silenced me by pouring them into my pockets.\"\n\nSource: \"I was going to remonstrate; but he silenced me\u2026\" \u2014 the draft changes \"was going to remonstrate\" to \"would remonstrate.\" This is a tense/mood shift but the sentence still parses and the meaning is recoverable. Not a structural failure.\n\nNo valid findings in Ch 013.\n\n---\n\n**Ch 014 draft \u2014 checking sentence by sentence**\n\n> \"I assented to Queequeg's hint that we strike a light, since he felt a strong desire for a few quiet puffs from his Tomahawk.\"\n\nSource passage: \"Nor did I at all object to the hint from Queequeg that perhaps it were best to strike a light, seeing that we were so wide awake; and besides he felt a strong desire to have a few quiet puffs from his Tomahawk. Be it said, that though I had felt such a strong repugnance to his smoking in the bed the night before, yet see how elastic our stiff prejudices grow when love once comes to bend them. For now I liked nothing better than to have Queequeg smoking by me, even in bed, because he seemed to be full of such serene household joy then.\"\n\nThe draft cuts the explanatory pivot (\"though I had felt such a strong repugnance to his smoking in the bed the night before, yet\u2026\") and moves straight to assent. But the \"I assented\" sentence parses on its own and a reader is not confused \u2014 they simply don't get the earlier-prejudice contrast. This is a less-ornamented version, not a structural failure. Not a finding.\n\nEverything else in Ch 014 draft parses, antecedents are present, no unglossed names, no broken pivots that leave a half-sentence hanging, no mid-scene jumps.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 6659,
+    "output_tokens": 481,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.805848836898804,
+    "stop_reason": "end_turn"
+  }
+}

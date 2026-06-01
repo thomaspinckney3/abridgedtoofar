@@ -1,0 +1,92 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_004/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael is not clearly shown reaching to rouse Queequeg; the gesture reads as recoiling rather than an attempt to wake him.",
+          "visible_evidence": "Ishmael’s near hand is lifted toward his own neck in a flinch, with no hand extended toward Queequeg’s shoulder or arm.",
+          "repair_prompt": "Repose Ishmael so one hand lightly extends toward Queequeg’s shoulder (fingers mid-reach) while the other hand flinches at his neck; keep the patchwork quilt mid-throw, tomahawk-pipe small beside Queequeg, and preserve clean negative space in the bottom-left for caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Queequeg’s vigorous self-shake is not depicted.",
+          "visible_evidence": "Queequeg is upright with one hand on the bedding and the other resting; no motion cues or posture indicating a shake.",
+          "repair_prompt": "Show Queequeg mid-shake with subtle motion blur or repeated limb positions, shoulders and hair in motion, while he withdraws his arm; keep two-shot at bed edge, Ishmael mid-expostulation, tattoos visible, and the patchwork counterpane."
+        },
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Top-center caption area is partially encroached by the characters’ heads and textured wall, reducing clean negative space.",
+          "visible_evidence": "The top-center above the headboard includes Ishmael’s and Queequeg’s head silhouettes and wall texture close to the upper margin.",
+          "repair_prompt": "Recompose to leave an unobstructed, plain band of wall at the top-center (e.g., lower the figures or crop slightly lower); avoid heads or curtains entering that zone."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot is not from Ishmael’s POV as specified; the camera shows Ishmael in bed rather than viewing from his eyes.",
+          "visible_evidence": "Ishmael is clearly visible at left, facing Queequeg, indicating a third-person vantage rather than POV.",
+          "repair_prompt": "Recompose to a medium over-the-blanket POV from Ishmael’s position on the bed (over-shoulder or bed-level), with Queequeg mid-frame gesturing first to the clothes pile and then toward the open door. Preserve clean negative space in the bottom-right for the caption."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 6,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The whaling harpoon reads visually as a generic spear; the detachable stock and distinctive straight-edged steel head are not clearly depicted.",
+          "visible_evidence": "A long pole with a simple triangular point leans against the wall near the chair; no clear detachable stock or lashing details are visible.",
+          "repair_prompt": "Refine the harpoon so it is unmistakably a 19th-century whaling harpoon: show a detachable wooden stock and a long, straight-edged steel head with proper lashing hardware. Keep its position near the wash-stand/chair; retain all other scene elements and the uncurtained window view."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Top-left caption zone is partially busy with Ishmael, bedpost, and patchwork quilt encroaching, leaving limited clean negative space.",
+          "visible_evidence": "In the upper-left area, Ishmael’s head and the bed’s post and quilt occupy space up to near the corner of the frame.",
+          "repair_prompt": "Recompose to reserve a clear top-left caption area: shift the camera slightly right or down, or move Ishmael/bed leftward, adding blank wall in the top-left so text can sit cleanly."
+        }
+      ]
+    }
+  ],
+  "valid": true
+}

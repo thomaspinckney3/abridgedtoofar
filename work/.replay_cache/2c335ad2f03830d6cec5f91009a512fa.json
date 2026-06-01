@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:40:36",
+  "key": "2c335ad2f03830d6cec5f91009a512fa",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through each chapter draft carefully, checking every sentence against the seven failure tests and the gate test, keeping in mind authorized cuts.\n\n---\n\n**Ch 033 draft \u2014 Sambo/Quimbo exchange with the mulatto woman**\n\nIn the source, when Sambo throws down the corn and demands her name, the woman answers \"Lucy.\" The draft cuts her name-response but then continues to use \"she said\" and later Sambo addresses dialogue to \"you\" \u2014 no issue there. However, Sambo's second speech in the draft reads:\n\n> \"Wal, **you** my woman now. Yo grind dis yer corn, and get my supper baked, ye har?\"\n\nIn the source Sambo says \"Wal, **Lucy**, yo my woman now\u2026\" \u2014 the name was the woman's reply, which the draft cut. The draft replaces the name with \"you,\" so no name issue arises. No finding here.\n\n**Ch 033 \u2014 \"She made no answer.\"**\n\nThe source has the woman say \"Lucy\" in response to Sambo's \"what a cuss yo name?\" The draft replaces that with \"She made no answer.\" This is a deliberate compression choice \u2014 the authorized cut removes Lucy from the named-character list. The pronoun \"she\" clearly refers to the mulatto woman just introduced. No structural confusion.\n\n**Ch 033 \u2014 \"He had been drinking\u2026\"**\n\n> \"He had been drinking to that degree that he was inclined to be gracious; and now the enclosures of the plantation rose to view.\"\n\nThe source has \"Legree had been drinking\u2026\" \u2014 the draft uses \"He.\" The antecedent is Legree, who spoke in the immediately preceding lines. Unambiguous.\n\n**Ch 033 \u2014 \"When he scolded and stormed, Emmeline was terrified; but when he laid his hand on her\u2026\"**\n\nSource: \"When Legree scolded and stormed, Emmeline was terrified; but when he laid his hand on her, and spoke as he now did, she felt as if she had rather he would strike her.\"\n\nDraft: \"When he scolded and stormed, Emmeline was terrified; but when he laid his hand on her, and spoke as he now did, she felt as if she had rather he would strike her.\"\n\nThe \"he\" is Legree, who just spoke to Emmeline in the preceding sentence. Clear antecedent. No finding.\n\n**Ch 033 \u2014 Quimbo and Sambo introduction**\n\nSource introduces them with: \"These two colored men were the two principal hands on the plantation.\" Draft: \"These two were the principal hands on the place.\" Adequate \u2014 \"these two\" refers to Sambo and Quimbo just named in dialogue. No issue.\n\n**Ch 032 \u2014 \"He next walked to where Emmeline, the young girl he had bought, sat chained to another woman.\"**\n\nThe draft introduces Emmeline here with \"the young girl he had bought\" as a gloss. In the source, Emmeline is named earlier in Chapter 032 (she is chained alongside the mulatto woman from the start of the boat scene). In the draft she hasn't been named before this sentence \u2014 this is the first appearance of her name. The draft supplies the appositive \"the young girl he had bought,\" which gives a local role. A reader can follow who she is. Not a finding.\n\n**Ch 033 \u2014 Sambo and Quimbo \u2014 are they glossed adequately?**\n\nIn Ch 033 draft, Sambo and Quimbo appear for the first time (they are new to the draft). They are introduced by Legree calling out to them by name, and the draft then explains: \"These two were the principal hands on the place.\" The names get a relational gloss immediately after introduction. Not a finding.\n\n**Ch 033 \u2014 \"A dark, wild face glanced for a moment at the window; and, as he opened the door, a female voice spoke, quick and imperative.\"**\n\nThis is the first hint of Cassy (though she is not named here). The draft doesn't name her, so no unglossed-name issue. The referent \"he\" = Legree, who just said \"Come, mistress\u2026you go in here with me.\" Clear. No finding.\n\n**Ch 033 \u2014 \"In dreams, a gentle voice came over his ear. He was sitting on the mossy seat in the garden by Lake Pontchartrain\u2026\"**\n\nThe garden at Lake Pontchartrain was established in Ch 032 draft? Let me check. Ch 032 draft contains no reference to a garden at Lake Pontchartrain \u2014 it is a detail from the St. Clare section of the novel. However, this is not a mid-scene jump introduced by compression of the *previous* chapter; it is a dream-memory reference that the source also presents without prior setup in Ch 033. The source Ch 033 equally uses \"the mossy seat in the garden by Lake Pontchartrain\" without establishing it in Ch 032. This is not a coherence break caused by compression \u2014 it is a deliberate allusion to a location from earlier in the book (the St. Clare household chapters). A reader who has been reading the abridgment will understand from prior chapters that Tom lived at the St. Clare house in New Orleans, near Lake Pontchartrain. Not a finding.\n\n**Ch 032 \u2014 Broken pivot check on Emmeline dialogue with mulatto woman**\n\nThe source names the mulatto woman's previous master as \"Mr. Ellis.\" The draft retains this. Mr. Ellis is not on any authorized removal list, but he is a passing reference within reported dialogue, not a character requiring a gloss. A reader understands this is the woman's former owner. Not a finding.\n\n**Ch 032 \u2014 \"He turned to Tom's trunk, which he had been ransacking\u2026\"**\n\nSource: \"Legree now turned to Tom's trunk, which, previous to this, he had been ransacking.\" Draft: \"He turned to Tom's trunk, which he had been ransacking.\" \"He\" = Legree, active subject of previous sentences. Clear. No finding.\n\n**General pronoun sweep, Ch 032 and Ch 033 drafts**: all pronouns trace cleanly to their antecedents within the draft. No dangling references found.\n\n**Mid-scene jump check, Ch 033 opening**: Ch 033 opens \"Trailing wearily behind a rude wagon\u2026\" \u2014 the wagon and the plantation journey are fully set up by the end of Ch 032 draft (Legree's party disembarked at a small town). No definite reference requires prior establishment that was cut. No finding.\n\n---\n\nAfter this full pass, I find no sentences in either draft that fail any of the seven structural tests. Every pronoun has an unambiguous antecedent in the draft; every logical connective connects to material present in the draft; no proper names appear orphaned; no mid-scene jump references cut material; no definitional glosses are missing in ways that would confuse a reader. The compression is clean.\n\n```json\n[]\n```",
+    "input_tokens": 18011,
+    "output_tokens": 1621,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 36.52454209327698,
+    "stop_reason": "end_turn"
+  }
+}

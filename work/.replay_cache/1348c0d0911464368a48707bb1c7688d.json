@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:44:57",
+  "key": "1348c0d0911464368a48707bb1c7688d",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft systematically, applying the seven tests and the gate test.\n\n---\n\n**Ch 128 draft analysis:**\n\n- \"Two seamen came\u2014the golden-hued Tahitian and the old Manxman, a sailor of the Isle of Man.\" \u2014 The Manxman is an authorized removal, but the draft re-introduces him with a gloss (\"a sailor of the Isle of Man\"), so the gloss is present. No issue here.\n- The dialogue exchange flows coherently. The Manxman's line is attributed, Pip's wild voice is introduced with \"cried a small wild voice.\" No unattributed dialogue.\n- \"let old Perth the blacksmith now come and rivet these two hands together\" \u2014 Perth is a named minor character. Is he established in the preceding draft? He is not on the authorized removal list. The draft adds \"the blacksmith\" as an appositive right here, which glosses him locally. No finding.\n- \"I'll see Mr. Stubb about it\" \u2014 Stubb is a principal character, continuously present. No issue.\n- The Manxman is introduced with a gloss in Ch 128 draft itself. No issue.\n\n**Ch 129 draft analysis:**\n\n- \"Yet the grey Manxman, oldest mariner of all, declared...\" \u2014 The Manxman was introduced with a gloss in Ch 128 draft (\"the old Manxman, a sailor of the Isle of Man\"). The Ch 129 draft also calls him \"oldest mariner of all,\" which is a sufficient descriptor. No issue.\n- \"But again the old Manxman said nay.\" \u2014 Still traceable from the established introduction. No issue.\n- \"The carpenter, set to the task, grumbled at the cobbling sort of business \u2014 undignified, not his place.\" \u2014 The carpenter was mentioned in the dialogue (\"Rig it, carpenter\"). He is not a named minor character here (he is referred to only by descriptor \"the carpenter\"). No issue.\n- \"'We workers in woods make bridal-bedsteads and card-tables...'\" \u2014 This is presented as direct speech from the carpenter, but the carpenter is referred to in third person in the preceding sentence (\"he grumbled... He liked...\"). The transition from indirect narration to direct speech (\"he did not budge. 'We workers in woods...'\") is a bit abrupt. Does the reader know who is speaking? The subject of the preceding sentence is the carpenter (\"he did not budge\"), so \"We workers in woods\" is attributable to him. A competent reader would attribute this to the carpenter. Not a genuine confusion.\n- \"But again the old Manxman said nay.\" \u2014 The antecedent for \"again\" is the earlier Manxman speech in the same chapter. This is fine.\n- \"they were going to leave the stern unprovided when, by certain strange signs and innuendoes, Queequeg hinted concerning his coffin.\" \u2014 The source says \"Queequeg hinted a hint concerning his coffin.\" The coffin was established in earlier chapters (Ch 110 in the source). Has the coffin been established in the preceding draft chapters? This is a potential mid-scene jump \u2014 \"his coffin\" uses a definite possessive that requires prior establishment of Queequeg's coffin. Let me check whether the draft of Ch 128 or earlier drafts would have covered this. The coffin was introduced in Ch 110 (source), which is not in either of the two chapters being reviewed here. The question for Test 6 is whether the *previous draft chapter* (Ch 128 draft) established \"his coffin.\" Ch 128 draft does not mention a coffin. The source of the *previous* chapter (Ch 128 source) also does not mention a coffin. The coffin was established in an earlier chapter (Ch 110). This is not a mid-scene jump between these two consecutive chapters \u2014 the coffin's prior establishment in earlier draft chapters (not provided here) would carry it forward. The gate test: a reader who has been reading the draft sequentially would have encountered Queequeg's coffin earlier. This is not a structural damage introduced by compression of *these two chapters*.\n\nNo valid findings.\n\n```json\n[]\n```",
+    "input_tokens": 8439,
+    "output_tokens": 960,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.00441288948059,
+    "stop_reason": "end_turn"
+  }
+}

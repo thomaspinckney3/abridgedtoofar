@@ -1,0 +1,122 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s America with brief flashbacks to Midwestern 1900s-1910s and college years",
+    "line_and_color": "Clean, expressive linework with restrained, naturalistic color; present-day scenes in neutral tones, flashbacks with a soft sepia wash",
+    "lighting": "Present: warm desk-lamp pools of light against evening shadows; Flashbacks: bright spring-summer sunlight with soft sepia tint, deep greens and sky-blues muted by age-wash",
+    "lettering": "First-person narration in classic serif caption boxes; quoted memories set in italic captions or caption-with-quote; dialogue balloons for in-scene speakers",
+    "recurring_motifs": [
+      "Fountain pen and open notebook",
+      "Pool of lamplight on a wooden desk",
+      "Porch swing and summer cicada dusk",
+      "College pennants and radiator pipes",
+      "Cigarette smoke curling in quiet rooms"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Slim Midwesterner, neatly side-parted brown hair, observant eyes",
+      "costume": "White shirt with sleeves rolled, loosened tie, waistcoat; casual cap outdoors",
+      "expression_range": "Wry, reflective half-smiles; intent, measuring gaze; mild self-deprecation",
+      "continuity_note": "Remain in 1922 flashback along the West Egg shoreline by his bungalow; sepia-warm memory palette. Keep his notebook present as a recurring action anchor."
+    }
+  ],
+  "page": {
+    "page_number": 5,
+    "page_summary": "Nick walks the shoreline by his West Egg bungalow, orienting himself and us to the two Eggs across the bay; he traces his house’s position between two grand estates and reveals that the colossal place on his right belongs to Gatsby, before settling with a wry pride in his modest home’s overlooked but advantageous view.",
+    "source_unit_ids": [37, 38, 39, 40, 41, 42, 43],
+    "source_word_range": [1042, 1238],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick pauses at the water’s edge and studies the twin headlands across the bay, framing their likeness and difference.",
+        "shot": "establishing",
+        "image_prompt": "Late-afternoon sepia sunlight over a calm bay; foreground: Nick in three-quarter back view at the shoreline, cap on, notebook in one hand as if sketching the coastline. Across the water, two similar, rounded peninsulas mirror each other, dotted with distant homes. Tall grasses ripple at Nick’s feet; gentle ripples glitter on the Sound.",
+        "caption": "To the wingless a more interesting phenomenon is their dissimilarity in every particular except shape and size.",
+        "dialogue": [],
+        "sfx": ["water lapping", "distant gulls"],
+        "continuity_notes": "Anchor geography: Across-bay twin peninsulas stay consistent left-right in subsequent panels.",
+        "source_unit_ids": [37],
+        "source_word_range": [1042, 1058],
+        "source_anchor": "To the wingless a more interesting phenomenon...",
+        "adaptation_note": "Abstract comparison is grounded by showing Nick actively surveying/diagramming the shoreline."
+      },
+      {
+        "panel_number": 2,
+        "beat": "He turns slightly, aligning himself with his own shore—West Egg—and considers its standing against the opposite shore.",
+        "shot": "wide",
+        "image_prompt": "Side-profile of Nick along the West Egg shore path; behind him, newer, showy houses peep over hedges, while across the bay the opposite peninsula sits whiter and more reserved in the distance. Breeze stirs Nick’s shirtsleeves; his gaze moves from his side to the opposite shore.",
+        "caption": "I lived at West Egg, the—well, the less fashionable of the two, though this is a most superficial tag to express the bizarre and not a little sinister contrast between them.",
+        "dialogue": [],
+        "sfx": ["breeze through reeds"],
+        "continuity_notes": "Keep West Egg (Nick’s side) foregrounded; East Egg remains distant across water to emphasize separation.",
+        "source_unit_ids": [38],
+        "source_word_range": [1059, 1089],
+        "source_anchor": "I lived at West Egg, the—well, the less fashionable...",
+        "adaptation_note": "Uses the cross-bay composition to embody the ‘contrast’ while keeping Nick physically present."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Nick stops where his modest bungalow sits at the very tip, visibly hemmed in by two grand estates.",
+        "shot": "establishing",
+        "image_prompt": "A coastal tip of land: Nick’s small weather-beaten bungalow near the waterline, only yards from the Sound. On either side rise two sprawling estates beyond hedges and gates. A narrow path leads from Nick’s porch to the shore; a small skiff is pulled up nearby.",
+        "caption": "My house was at the very tip of the egg, only fifty yards from the Sound, and squeezed between two huge places that rented for twelve or fifteen thousand a season.",
+        "dialogue": [],
+        "sfx": ["porch boards creak"],
+        "continuity_notes": "Show both neighboring properties flanking the bungalow to set the squeeze; keep water visible to confirm the fifty-yard proximity.",
+        "source_unit_ids": [39],
+        "source_word_range": [1090, 1120],
+        "source_anchor": "My house was at the very tip of the egg...",
+        "adaptation_note": "Concrete placement shot to lock in the bungalow’s position between the two estates."
+      },
+      {
+        "panel_number": 4,
+        "beat": "He faces right, taking in the colossal, freshly built mansion with its tower, ivy, marble pool, and sweeping lawns.",
+        "shot": "wide",
+        "image_prompt": "Right of Nick’s bungalow: a towering, Normandy-style mansion with an asymmetrical stone tower, pale stone walls still sharp-edged, a sparse beard of raw ivy starting up the facade. In the foreground, a gleaming marble swimming pool and formal gardens open onto an expansive lawn.",
+        "caption": "The one on my right was a colossal affair by any standard—it was a factual imitation of some Hôtel de Ville in Normandy, with a tower on one side, spanking new under a thin beard of raw ivy, and a marble swimming pool, and more than forty acres of lawn and garden. It was Gatsby's mansion.",
+        "dialogue": [],
+        "sfx": ["distant fountain splash"],
+        "continuity_notes": "Maintain rightward orientation from Nick’s bungalow; place the tower on one side as described; keep Nick’s modest roofline peeking at frame edge for scale.",
+        "source_unit_ids": [40, 41],
+        "source_word_range": [1121, 1176],
+        "source_anchor": "The one on my right was a colossal affair...",
+        "adaptation_note": "Combines identification with description to deliver the reveal cleanly in a single visual sweep."
+      },
+      {
+        "panel_number": 5,
+        "beat": "Back at his porch, Nick looks past a hedge to a sliver of lawn and the glitter of the Sound, wryly weighing the value of his small, overlooked place.",
+        "shot": "medium",
+        "image_prompt": "Nick seated on a simple porch swing, notebook resting on his knee, body angled toward the water. Through a gap in the hedge: a partial slice of the neighboring manicured lawn and, beyond, sunlit water. The bungalow’s paint is chipped but neat; late light warms the scene.",
+        "caption": "Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but it was a small eyesore, and it had been overlooked, so I had a view of the water, a partial view of my neighbour's lawn, and the consoling proximity of millionaires—all for eighty dollars a month.",
+        "dialogue": [],
+        "sfx": ["porch swing creak"],
+        "continuity_notes": "Reiterate the view lines: hedge gap to neighbor’s lawn, open sightline to the Sound; keep Nick’s reflective posture.",
+        "source_unit_ids": [42, 43],
+        "source_word_range": [1177, 1238],
+        "source_anchor": "Or, rather, as I didn't know Mr. Gatsby...",
+        "adaptation_note": "Pairs his clarification about Gatsby with his self-deprecating accounting, anchored in a lived vantage from the porch."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+    "last_scene": "West Egg shoreline outside Nick’s bungalow, late afternoon (flashback)",
+    "active_characters": ["Nick Carraway"],
+    "character_updates": [
+      "Nick locates himself on West Egg, noting its contrast with East Egg across the bay.",
+      "His bungalow sits at the very tip of the Egg, fifty yards from the Sound, squeezed between two grand estates.",
+      "The colossal Norman-style mansion to his right is Gatsby’s.",
+      "Despite calling his home a small eyesore, Nick appreciates its overlooked advantages: a water view, a peek at the neighbor’s lawn, and proximity to millionaires for eighty dollars a month."
+    ],
+    "visual_motifs": [
+      "Shoreline vista across a courtesy bay",
+      "Fountain pen and open notebook",
+      "Porch swing and summer cicada dusk"
+    ],
+    "next_page_needs": [
+      "If continuing, pivot from established geography and Gatsby’s mansion to the next interpersonal encounter while maintaining the spatial orientation of Nick’s bungalow and the bay.",
+      "Keep the across-the-bay separation clear in future scenes to sustain the West/East Egg contrast."
+    ]
+  }
+}

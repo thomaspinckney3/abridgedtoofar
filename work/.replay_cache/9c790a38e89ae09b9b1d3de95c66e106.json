@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:43:03",
+  "key": "9c790a38e89ae09b9b1d3de95c66e106",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test rigorously and checking only for structural damage, not stylistic compression.\n\n**Ch 041 draft \u2014 checks:**\n\n- \"The escape of Cassy and Emmeline, two fugitive women\" \u2014 glossed inline, fine.\n- \"Sambo and Quimbo, his brutal drivers\" \u2014 identified inline, fine.\n- Cassy in the garret: established earlier in the draft, fine.\n- Dialogue exchanges all have their triggers present.\n- No authorized-cut residue issues that bleed into surviving material.\n\n**Ch 042 draft \u2014 checks:**\n\n- \"Two days after\" \u2014 the preceding draft chapter (041) established the beating and Tom's collapse; \"two days after\" is intelligible.\n- \"Miss Ophelia's letter to Mrs. Shelby\" \u2014 Miss Ophelia is a continuously present major character; Mrs. Shelby likewise. Fine.\n- \"Guided by the name of the St. Clare lawyer, which Miss Ophelia had thoughtfully sent\" \u2014 the St. Clare lawyer is a minor functional role, unnamed, described by descriptor. Fine.\n- \"Tom had been sold at public auction\" \u2014 established in prior chapters. Fine.\n- \"the St. Clare lawyer\" / \"the answer came\u2014he knew nothing\" \u2014 pivot on an implied letter exchange; slightly compressed but parseable.\n- \"He's in dat ar shed\" \u2014 the shed is not named in the preceding draft chapter 041, but it is a generic descriptor (\"shed\"), not a definite reference like \"the shed\" with prior establishment required. The source also introduces it here for the first time in ch 042. Not a mid-scene jump.\n- \"Tom had lain two days since the fatal night\" \u2014 \"the fatal night\" uses a definite article. Does the preceding draft (041) establish a specific night? Yes \u2014 the entire beating scene occurs in ch 041 draft. Fine.\n- \"Cassy, gliding from her concealment\" \u2014 Cassy's concealment (the garret) was established in ch 041 draft. Fine.\n- \"Give my love to Mas'r, and dear good Missis\" \u2014 \"Mas'r\" here refers to the Shelby household master, who is now dead (established in ch 042 draft). Tom not knowing he's dead is in-character; this is not a structural break.\n- \"his great namesake triumphing over the dragon\" \u2014 George (St. George) is a well-known allusion; the source has the same compressed reference. Not a finding.\n- \"Beyond the plantation bounds, George had marked a dry, sandy knoll\" \u2014 source says \"George had noticed.\" In the draft, the preceding narrative has George at the house/shed/wagon; the knoll is not mentioned before this sentence. In the source, likewise it appears here for the first time in ch 042. Not a mid-scene jump caused by compression.\n\n**Checking for broken pivots, dangling pronouns, unglossed names:**\n\nCh 042 draft: \"Then Mr. Shelby died; and the absorbing pressure of settling large and tangled estates fell, by his appointment, on his wife as sole executrix.\" \u2014 \"his appointment\" refers to Mr. Shelby's prior appointment of his wife as executrix. The source states \"Mr. Shelby showed his confidence in his wife's ability, by appointing her sole executrix.\" The draft compresses this into \"by his appointment\" \u2014 the referent of \"his\" is Mr. Shelby, who was just named. Parseable.\n\nCh 042 draft: \"Six months later, business taking him down the river, George resolved to go to New Orleans\" \u2014 \"him\" refers to George; fine.\n\nNo structural damage found in either chapter.\n\n```json\n[]\n```",
+    "input_tokens": 15508,
+    "output_tokens": 857,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.59557604789734,
+    "stop_reason": "end_turn"
+  }
+}

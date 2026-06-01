@@ -1,0 +1,20 @@
+{
+  "frame_number": 6,
+  "valid": false,
+  "findings": [
+    {
+      "severity": "blocker",
+      "category": "caption_zone",
+      "finding": "Bottom-right caption zone is busy with high-contrast props and textures.",
+      "visible_evidence": "A bright seaman’s bag and the preserved head sit in the lower-right corner beside a chair and coat, leaving no clean negative space.",
+      "repair_prompt": "Reserve clean negative space in the bottom-right by moving the seaman’s bag and preserved head left of the hearth or into mid-ground, remove the chair from the corner, and keep that quadrant a low-detail floor/wall gradient suitable for lettering."
+    },
+    {
+      "severity": "major",
+      "category": "prop_confusion",
+      "finding": "Tomahawk-pipe is depicted as a standard straight pipe rather than a hatchet-shaped pipe.",
+      "visible_evidence": "On the sea chest, the pipe has only a stem and bowl with no hatchet head.",
+      "repair_prompt": "Replace the plain pipe with a tomahawk-shaped pipe: a small hatchet head with the tobacco bowl at the blade and a mouthpiece at the handle; place it next to the seal-skin wallet on the sea chest and keep it clearly a pipe, not a separate weapon."
+    },
+    {
+      "severity": "major

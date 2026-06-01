@@ -1,0 +1,203 @@
+{
+  "book_id": "uncle_toms_cabin",
+  "pairs_checked": 38,
+  "findings_total": 3,
+  "findings_raw_total": 3,
+  "findings_invalid": 0,
+  "class_counts": {
+    "broken_pivot": 1,
+    "missing_gloss": 1,
+    "unglossed_name": 1
+  },
+  "per_segment_counts": {
+    "039": 1,
+    "045": 1,
+    "046": 1
+  },
+  "per_pair": [
+    {
+      "pair": "002-003",
+      "count": 0
+    },
+    {
+      "pair": "003-004",
+      "count": 0
+    },
+    {
+      "pair": "004-005",
+      "count": 0
+    },
+    {
+      "pair": "005-006",
+      "count": 0
+    },
+    {
+      "pair": "006-007",
+      "count": 0
+    },
+    {
+      "pair": "007-008",
+      "count": 0
+    },
+    {
+      "pair": "008-009",
+      "count": 0
+    },
+    {
+      "pair": "009-010",
+      "count": 0
+    },
+    {
+      "pair": "010-011",
+      "count": 0
+    },
+    {
+      "pair": "011-012",
+      "count": 0
+    },
+    {
+      "pair": "012-013",
+      "count": 0
+    },
+    {
+      "pair": "013-014",
+      "count": 0
+    },
+    {
+      "pair": "014-015",
+      "count": 0
+    },
+    {
+      "pair": "015-016",
+      "count": 0
+    },
+    {
+      "pair": "016-017",
+      "count": 0
+    },
+    {
+      "pair": "017-019",
+      "count": 0
+    },
+    {
+      "pair": "019-021",
+      "count": 0
+    },
+    {
+      "pair": "021-023",
+      "count": 0
+    },
+    {
+      "pair": "023-025",
+      "count": 0
+    },
+    {
+      "pair": "025-026",
+      "count": 0
+    },
+    {
+      "pair": "026-027",
+      "count": 0
+    },
+    {
+      "pair": "027-028",
+      "count": 0
+    },
+    {
+      "pair": "028-029",
+      "count": 0
+    },
+    {
+      "pair": "029-030",
+      "count": 0
+    },
+    {
+      "pair": "030-031",
+      "count": 0
+    },
+    {
+      "pair": "031-032",
+      "count": 0
+    },
+    {
+      "pair": "032-033",
+      "count": 0
+    },
+    {
+      "pair": "033-034",
+      "count": 0
+    },
+    {
+      "pair": "034-036",
+      "count": 0
+    },
+    {
+      "pair": "036-037",
+      "count": 0
+    },
+    {
+      "pair": "037-038",
+      "count": 0
+    },
+    {
+      "pair": "038-039",
+      "count": 1
+    },
+    {
+      "pair": "039-040",
+      "count": 0
+    },
+    {
+      "pair": "040-041",
+      "count": 0
+    },
+    {
+      "pair": "041-042",
+      "count": 0
+    },
+    {
+      "pair": "042-044",
+      "count": 0
+    },
+    {
+      "pair": "044-045",
+      "count": 0
+    },
+    {
+      "pair": "045-046",
+      "count": 2
+    }
+  ],
+  "findings": [
+    {
+      "valid": true,
+      "class": "broken_pivot",
+      "chapter": "N+1",
+      "draft_passage": "\"Didn't I tell you that evil spirits followed me? O! Father Tom, I can't pray,—I wish I could.",
+      "source_has": "Cassy's back-reference to her earlier confession about evil spirits (drawn from her full autobiography in Ch 035, 'Didn't I tell you that evil spirits followed me?'). The Ch 035 Quadroon's Story established this prior telling between Cassy and Tom; its authorized removal leaves the callback with no antecedent in the draft.",
+      "gate_test_answer": "A reader of the draft has seen no prior scene in which Cassy told Tom that evil spirits followed her, so 'Didn't I tell you' reads as a dangling callback to a missing conversation, genuinely confusing rather than merely compressed.",
+      "segment_id": "039",
+      "pair": "038-039"
+    },
+    {
+      "valid": true,
+      "class": "missing_gloss",
+      "chapter": "N",
+      "draft_passage": "In the supper-room the money, of which Chloe was so proud, still lay on the table.",
+      "source_has": "Source establishes a full prior scene: Chloe insists the very bills in which her wages were paid be preserved to show her husband as proof of her capability; Mrs. Shelby consents; only then does the money reappear on the table after Tom's death is announced.",
+      "gate_test_answer": "A reader is genuinely confused: the draft never told us what this money is, where it came from, or why Chloe is proud of it, so 'of which Chloe was so proud' is an unexplained dangling characterisation that leaves the scene's emotional pivot unmotivated.",
+      "segment_id": "045",
+      "pair": "045-046"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "\"Nathan, in your place, I think I should feel very much so, myself. You are free.\"",
+      "source_has": "Source introduces the servant's name earlier in the same anecdote: 'An interview was forthwith procured, and Nathan was asked by his young master…' — giving the name before the master addresses him by it.",
+      "gate_test_answer": "A reader is genuinely confused: the draft refers to the servant only as 'a favorite servant' and 'the man' throughout the anecdote, and the name Nathan materialises for the first time inside the master's direct address, with no prior attribution, leaving the reader unable to identify who is being spoken to.",
+      "segment_id": "046",
+      "pair": "045-046"
+    }
+  ]
+}

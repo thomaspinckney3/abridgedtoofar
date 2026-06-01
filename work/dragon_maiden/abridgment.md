@@ -122,111 +122,111 @@ He shoved the cloth over my mouth and nose. Tears pooled and slid down my cheeks
 
 In a moment I was knocked clean out.
 
-"Let me out! Goddamn fucks! Let me out!"
+# CHAPTER 3
 
-My dark world was slowly receding. I forced my eyes open: a barren sight. The back of a metal truck—steel walls and floor, canvas ceiling. The rear flap was tied so tightly not a bit of light showed through. Tires crunched on gravel; the truck rocked over short hills.
+"Let me out! God damn fucks! Let me out!"
 
-On either side were long wooden benches, and on these sat four other women, all roughly my age. Their hands were bound behind their backs, ankles in chains. I shifted, and chains rattled on my own feet.
+My dark world receded, and that was my reintroduction to the real one. I forced my eyes open onto a barren sight — the back of a metal truck, steel walls, canvas roof and rear flap tied tight against any light. Gravel crunched; the truck pitched over short hills.
 
-The one pounding the wall had a scowling face streaked with run mascara. She slammed her shoulder into the steel and winced.
+Four other women shared the long wooden benches with me, all roughly my age, all with hands bound behind their backs and ankles in chains. My own chains rattled when I shifted.
 
-"Will you stop that?" snapped one of the women across from me. "You've been at it for fifteen minutes. Whoever's driving doesn't give a damn."
+The one pounding the wall had mascara streaked down her face like an undead mask. She slammed her shoulder into the steel and screamed again.
 
-Mascara-face sneered. "You idiots can sit there. I'm not giving up." She drew a deep breath. "Heellppppp!"
+"Will you stop that?" snapped a woman to my left. "You've been trying that for fifteen minutes. They don't give a damn."
 
-The truck slowed, then stopped. A door opened; heavy boots crunched gravel along the side. The canvas was untied and shoved aside. Blake, in all his piggy glory, glared in. Behind him stretched a vast, dark forest. Distant lights spoke of a small town—nothing like the city I knew.
+Mascara-face sneered, sucked in a breath, and bellowed: "Heellppppp!"
+
+The truck slowed. She grinned. "See? I get results."
+
+It stopped. Boots crunched. The canvas was shoved aside and there stood Blake, piggy face all sneer. Beyond him: dark forest, a gravel road winding over hills, distant lights from some town nothing like the city I knew.
 
 "What the hell's going on here?"
 
-Mascara-face gathered her wits. "I—I want you to release me."
+Mascara-face glared. "I — I want you to release me."
 
-Blake snorted, an even-piggish noise. "Like hell. Just shut up. We can't hear ourselves think up there."
+Blake snorted, the noise itself piggish. "Like hell. Shut up. We can't hear ourselves think up there."
 
 "What do you want with us?" the woman beside me asked.
 
-"You'll see. We'll be there soon, and you'd better keep your mouths shut. The lords don't like loud women unless they're bedding them."
+He chuckled. "You'll see. We should be there in a little bit, and you'd better keep your mouths shut. The lords don't like loud women unless they're bedding them."
 
-He dropped the canvas. The truck started forward again.
+He retied the canvas. The truck started forward. A few sniffles broke the silence.
 
-Sniffles broke the silence.
+"Will you guys shut up already?" Mascara-face snapped, then caught me looking. "What are you looking at?"
 
-"Will you guys shut up already?" the irate one snapped, and turned on me. "What are you looking at?"
+A girl of maybe twenty sat on my right, shoulders shaking. I leaned my shoulder into hers. "You okay?"
 
-A girl of maybe twenty sat to my right, shoulders shaking. I leaned my shoulder against hers. "You okay?"
+She shook her head. "W-where are they taking us? Why did they take us?"
 
-She wiped her face. "W-where are they taking us? Why did they take us?"
+"I don't know. What do you last remember?"
 
-"We've all got the same story," the irate one cut in. "Grabbed off the streets or out of their homes by those creeps. That little brat's been crying since she woke up."
+"We've all got the same story," Mascara-face cut in. "Everybody grabbed out of their homes, drugged, woke up here, and that little brat's been crying since she opened her eyes."
 
-I glared. "You don't have to be an asshole. We're all going through this together."
+"You don't have to be an asshole. We're going through this together. We should stick together."
 
-"You're dreaming. Did you see those trees? I'm not dragging a brat. She'll slow me down."
+"You're dreaming." She nodded at the canvas. "Did you see all those trees? I'm not dragging a brat with me. She'll only slow me down."
 
 "It's the only way we'll get away from those pig boys."
 
-"It's everybody for themselves."
+"It's everybody for themselves. Besides, I didn't see anybody helping me make noise."
 
-"That's enough, you two." A fifth woman turned to me. "Some of us introduced ourselves before you woke up. Mind telling us your names?"
+"That's enough, you two," said another woman. She turned to me. "Some of us introduced ourselves before you woke up. Mind telling us your names?"
 
 "Miriam."
 
-"Alexandra. Call me Alex." She nodded around the truck. "That's Stephanie and Cindy. That"—a jerk of the head—"is Olivia."
+"I'm Alexandra — Alex." She nodded at the crying girl and the quiet one across. "That's Stephanie and Cindy." A jerk of the head toward the angry one. "That's Olivia."
 
-"What's the point?" Olivia snapped. "For all we know they're going to sell us to sex slavers and we're never going to see anybody again."
+"You're wasting your time getting to know each other," Olivia said. "For all we know they're going to sell us to sex slavers."
 
-"It'll help if any of us get out of here and tell police who we met," Alex argued.
+"It'll help if some of us get out and tell police who we met," Alex said.
 
-A fist pounded the back of the cab. "Shut up back there!"
+A fist banged against the cab. "Shut up back there!"
 
-The truck swayed more heavily, slowed, and stopped. The engine cut. Three sets of feet crunched along the sides; the rear flap was thrown aside. Blake and his two compatriots—human faces gone, snout-nosed identities revealed.
+We grew quiet. The wheels ground on; the truck swayed, then slowed, then stopped. Two doors slammed. Three sets of feet rounded the side. The flap was thrown aside and Blake stood with two compatriots — their human faces gone now, snouts revealed.
 
-"Climb out of there, or we drag you out."
+"Climb out." We hesitated. "Climb out, or we drag you out."
 
-We shuffled out single file. Stephanie hesitated at the edge of the bed; it was two feet down, and our shackles didn't help. One of the men yanked her arm. She cried out and fell onto her side onto the gravel.
+Cindy stood first. We shuffled in single file. Stephanie hesitated at the edge of the bed; the drop was two feet, and shackles didn't help. One of the men grabbed her arm and yanked her down. She cried out and fell onto her side on the gravel.
 
-A flash of red blinded my vision. I screamed and lunged at the closest asshole; my shoulder connected with his face and we both toppled. Alex threw herself at the other henchman. Cindy charged Blake; he side-stepped and smacked her on the back of the head, and she crumpled.
+A flash of red blinded my vision. I screamed and lunged at the closest asshole, shoulder to his face — we both went down. Alex gave a war whoop and threw herself at the other henchman. Cindy charged Blake; he side-stepped, smacked her on the back of the head, and her eyes rolled and she crumpled.
 
 "Handle these wenches or you're fired!"
 
-My victim wrapped me in a bear hug and stood. Alex was likewise subdued. Blake stalked over and glared at us both.
+My victim wrapped me in a bear hug and stood. Alex was subdued. Blake stalked over, eyes narrowing on me.
 
-"You two are almost more trouble than you're worth. One more stupid move and you'll be thrown out into this world that you wouldn't last five minutes in." He swept his arm to the right. "Get them inside before they're all sick and wasted."
+"You two are almost more trouble than you're worth. One more stupid move and you'll be thrown out into this world. You wouldn't last five minutes in it." He swept his arm to the right. "Get them inside before they're all sick and wasted."
 
-My eyes followed his arm. Twenty feet away stood a long stone stable, thatched and primitive. Beyond it lay open ground, fenced fields with sheep, surrounded by forest. A castle dominated the view—six towers, narrow windows softly lit, massive carved doors hewn from mighty trees.
-
-I glanced over my shoulder. Behind us was a small village of stone huts with thatched roofs, smoke pouring from their chimneys.
+Twenty feet on stood a stone stable, thatched and rustic. Beyond it, a castle of grey battlements and six towers cast its shadow over fenced fields where cows and sheep grazed. Behind us, a village of stone huts sent smoke from its chimneys. Medieval, all of it — not the world I'd left.
 
 "Get on with ya!"
 
-I was shoved forward. The henchmen snatched lanterns from the cab. We were marched into the stables, to three empty stalls. Alex, Stephanie, and I were shoved into one; the other three into another.
+We were shoved into line. Each henchman lit an oil lantern and we were marched into the stables to three empty stalls at the end. Alex, Stephanie, and I went into one, the other three into the next.
 
-Blake stood between the stalls. "Take the manacles off all the girls except those two troublemakers. Then go check to see if they're ready up there."
+Blake stood between the stalls. "Take the manacles off all the girls except those two troublemakers. Then go check if they're ready up there."
 
-"That'll make 'em look lame for the presentation," one of the henchmen objected.
+"But that'll make 'em look lame for the presentation."
 
 Blake grinned. "Some of our buyers like them bound."
 
-The three laughed at the crude joke as they unlocked the manacles—hands stayed bound behind backs. Alex and I were passed over, but Stephanie's ankles were freed. One pig-man disappeared through a door at the far end.
+They laughed and unlocked the manacles — all but ours. Hands stayed tied behind backs. One pig-man disappeared through a door at the end of the stables.
 
-Blake glanced between the stalls. "Now listen up. You're to be presented to some very influential—" he chuckled "—we'll call them men. Some will want to take you. You'd better hope so—otherwise you're discarded to the servants' quarters to fend for yourselves. Good girls get a life of luxury."
+"Now listen up — I won't repeat this. You're to be presented to some very influential —" he chuckled "— we'll call them men. Some will want to take you. Hope they do, or you're discarded to the servant's quarters to fend for yourselves. If you're good girls you'll be chosen and given a life of luxury."
 
 "But I want to go home!" Stephanie insisted.
 
-He sneered. "Nobody gets back through the Portal. Nobody." His sly grin slipped on. "At least not alive."
+He sneered. "Nobody gets back through the Portal. Nobody." That sly grin. "At least not alive."
 
 "What the hell are you talking about? What portal?" Alex demanded.
 
-"That's for you girls to find out, after you're presented to the Lords of the Air."
-
-"But we just want to go home!" one of the women yelled.
+"That's for you girls to find out — after you're presented to the Lords of the Air."
 
 "Please take us home!" Stephanie pleaded.
 
 "Let us go!" Alex demanded.
 
-"Shut up!" Blake snapped, snout flaring. "You're staying here, so stop your whining and get used to it!"
+"Shut up!" Blake's pork snout flared. "You're staying here, so stop your whining and get used to it!"
 
-The door opened a sliver and the henchman slipped inside, moved beside Blake, and glanced over his shoulder. "We've got a problem."
+The door opened a sliver and the henchman slipped in. He moved to Blake and glanced over his shoulder before whispering, "We've got a problem."
 
 Blake narrowed his eyes. "What kind of problem?"
 
@@ -730,23 +730,21 @@ My stomach rumbled. He chuckled. "Your Lady is curious to know if breakfast is r
 
 He turned to me. "Then dress, My Lady, and we shall feast with friends."
 
-I slipped into my clothes and Darda led the lord and me down the long halls to the ground floor. We passed servants of various sizes and builds—swarthy bearded ones, pale thin ones, some in green and red, others in the colors of the other dragon lords. All bowed as we passed.
+I slipped into my clothes, and Darda led the lord and me down long halls past bowing servants in various dragon-lord colors. The main stairs descended to an entrance hall, and Darda turned us into a magnificent banquet hall — no benches, but a single long table with high-backed chairs, the walls hung with tapestries of dragons over the countryside, several bearing the crests of dragon lords.
 
-The main stairs opened onto an entrance hall and a magnificent banquet hall beyond. No primitive benches—a single long table with high-backed chairs and elegant curves. Tapestries depicting dragons in flight covered the far wall, several bearing the crests of the dragon lords.
-
-At the far end sat Stephanie and the pale young dragon lord. Stephanie turned, brightened, and rushed over in her golden-hemmed white dress.
+At the far end sat the pale young dragon lord and Stephanie. She rose in her golden-hemmed white dress and rushed over.
 
 "Miriam! I'm so glad to see you!"
 
-My dragon lord came up beside me, eyes twinkling. "So that is your name."
+My dragon lord's eyes twinkled with mischief. "So that is your name."
 
-I glared at him. "You don't have to use it if you don't want to."
+I glared. "You don't have to use it if you don't want to."
 
-He chuckled and bowed his head. "I would be honored."
+He chuckled and bowed. "I would be honored."
 
-The slim lord bowed to mine. "Thank you for agreeing to—"
+The slim lord came over and bowed his head. "Thank you for agreeing to—"
 
-My dragon lord held up his hand. "Not so formal this early, Cayden. I had enough heads bowed to me on the journey to this room to have my fill of formality for another day."
+My dragon lord held up a hand. "Not so formal this early, Cayden. I had enough heads bowed to me on the journey to this room to have my fill of formality for another day."
 
 "But My Lord—"
 
@@ -758,257 +756,261 @@ He turned to me with a smile. "I won't force you to use it."
 
 "I would be glad to use it," Cayden said.
 
-Xander clapped his hand on Cayden's back and led him toward the table. I drew Stephanie aside.
+Xander clapped his hand on Cayden's back and led him toward the table.
 
-"Has he been treating you well?" I whispered.
+I turned to Stephanie. "Has he been treating you well?" I whispered.
 
-A blush colored her cheeks. "Really well."
+She blushed and looked at the floor. "Really well."
 
-I glanced past her at the dragon-men. They were engrossed in conversation. "We could try to escape tomorrow morning. They're going to give us horses. We can—"
+"Where are your old clothes?"
 
-She bit her lower lip and looked away. "I—I think he really likes me."
+"In our— my room."
 
-I blinked. "What's that got to do—" Her blush darkened. "Are you... do you want to stay here?"
+I glanced past her at the dragon-men, engrossed in conversation, and lowered my voice. "We could try to escape tomorrow morning. They're going to give us horses. We can—"
 
-She gave a weak nod. "Yes. He said I couldn't go home anyway. Some portal thing won't let us."
+She bit her lip and averted her eyes. "I— I think he really likes me."
 
-I dropped my hands from her shoulders. "I... I guess you're right."
+I blinked. "What's that got to do—" Her blush darkened. "Are you… do you want to stay here?"
+
+She cringed, gave a weak nod. "Yes. He said I couldn't go home anyway. Some portal thing won't let us."
+
+I dropped my hands from her shoulders and pursed my lips. "I… I guess you're right."
+
+"I'm sorry, Miriam. I didn't mean—"
 
 "We would be honored if you ladies would join us for breakfast," Xander called.
 
-I frowned at the foggy windows. The late afternoon sun showed beyond them. "But it's almost night."
+I glanced at the windows. Foggy glass showed the late afternoon sun. "But it's almost night."
 
-"The Choosing is a special time for us. We celebrate through the night and rest during the day."
+Xander pulled out a chair to the left of the head of the table. "The Choosing is a special time for us. We celebrate through the night and rest during the day."
 
-"So, is this some sort of frat party?"
-
-"I'm not familiar with that term."
-
-"Where guys get together and prove how manly they are by drinking and eating a lot."
-
-"Then this is similar to a frat party. But enough talk. There is a feast before us that begs to be consumed."
-
-I sat at his left, Cayden and Stephanie opposite, Xander at the head. Meat and mead—I did justice to everything within reach.
-
-Xander speared a slice of duck. "Where shall we take our ride this evening, Cayden? Bruin Bay, or the Coven Caves for a fine hunt?"
+A feast of meat and mead was set before us, and I did it justice. Xander speared a slice of duck and glanced at Cayden. "Where shall we ride this evening? Toward Bruin Bay, or the Coven Caves?"
 
 Cayden choked on his mead. "Must we travel so far, Xander? This is my first ride. I am not sure how far I can—"
 
-"True. Perhaps a closer point on the map, or around the castle grounds—"
+"True. Perhaps closer — around the castle grounds. They are quite—"
 
 "I'd like to see this Portal," I said.
 
-Cayden's face paled. Stephanie blinked at me.
+Cayden's face paled. Stephanie blinked.
 
 Xander raised an eyebrow. "Why would you wish to see that?"
 
 "For some closure."
 
-"Closure is important, but"—he looked into my eyes—"there may be pain."
+He looked into my eyes. "There may be pain."
 
 "I'll live with it."
 
-He bowed his head and stood. "Then I suggest we set off before darkness spoils the view for our Maidens."
+Xander stood. "Then I suggest we set off before darkness spoils the view for our Maidens."
 
-We left through a small wooden door at the back of the castle and onto green lawn. The bottom of the setting sun skiffed the western horizon; long shadows stretched from the forest. I glanced around.
+We left through a small wooden door at the back of the castle onto the green lawn. The setting sun skiffed the horizon in the far west, long shadows stretching from the forest.
 
-"Where are the horses?"
+In the nearby pastures, full-coated sheep with curved horns crowded the fences. Stephanie spotted a few lambs.
+
+"How adorable!" She hurried toward them.
+
+"Wait!" Cayden caught her wrist before she reached the fence. "Do not approach them." He picked up a stick and tossed it among the wool.
+
+The sheep let out a terrible wail of a bleat and lunged. They beat the wood with their hooves and rammed it with their heads, smashing it to broken bits.
+
+Stephanie gasped and stumbled back. "My god…"
+
+I looked at Xander. "What kind of mutton are you raising?"
+
+"Not all that resembles creatures in your world are the same in ours. These may have wandered into our world long ago and changed, or perhaps were changed in yours, and what we see are the originals. Either way, caution is the best course."
+
+Cayden grasped Stephanie's shaking shoulders. "Perhaps we should postpone the ride."
+
+"No. My Maiden's curiosity will not be satisfied until she has seen the Portal."
+
+"Damn right." I glanced around. "Where are the horses?"
 
 Cayden blinked. "Horses?"
 
-"Yeah. This is supposed to be a—aah!"
+"Yeah. This is supposed to be a— aah!" Xander swept me into his arms.
 
-Xander swept me into his arms. A sly smile covered his lips. "Your escape has taught me one important lesson. You are not afraid of heights."
+A sly smile crossed his lips. "Your escape has taught me one important lesson. You are not afraid of heights."
 
-I glared up at him. "What's that got to do with anything? And why aren't you putting me—"
+I glared. "What's that got to do with— and why aren't you putting me—" His wings burst from his back and stretched across the plain, scales shimmering in the sun.
 
-His wings burst from his back and stretched across the open plain, scales shimmering.
+"You may wrap your arms around my neck, but not too tightly."
 
-"You may wrap your arms around my neck. Not too tightly."
+"Why would I—" He beat his wings and we were propelled off the ground.
 
-"Why would I—"
-
-He beat his wings, and we were propelled off the ground. The grass turned to seas of green as we left the earth. Every flap of his powerful wings lifted us ten feet.
-
-I yelped. My arms instinctively wrapped around his neck, and I quivered against his warm chest. We hovered at two hundred feet, his wings flapping gently.
+The grass turned to seas of green as we left the earth. I looked down a hundred feet and yelped, arms instinctively wrapping around his neck, and quivered against his warm chest. We hovered as his wings gently flapped.
 
 "How are you enjoying the ride?"
 
-I whipped my head up. "You said there'd be horses!"
+I glared up. "You said there'd be horses!"
 
 "No, I asked if you had ridden a horse. This is much the same."
 
 "No, it's not!"
 
-He nodded at the forest in front of us. "The Portal lies fifteen miles through there. Do you still wish to see it?"
+He nodded toward the forest. "Through fifteen miles of winding roads is a meadow. The Portal lies there. Do you still wish to see it?"
 
 "More than ever," I growled.
 
-Cayden caught up with Stephanie in his arms. She quivered harder than me, but her driver didn't seem to mind her clinging close.
-
-"Are we ready?" the young lord asked.
+Cayden joined us with Stephanie in his arms, quivering harder than me. "Are we ready?"
 
 Xander nodded. "Yes. Let us go."
 
-Xander angled his legs behind him and his head forward. His wings flapped hard, and we sped past the ground beneath us. A cool wind whipped my face. I shivered and turned toward his chest.
+Xander angled forward and his wings pushed us through the cool air. I shivered and turned toward his chest.
 
-"Cold?"
+"Cold?" he asked.
 
 I gave him the Evil Eye. "What do you think?"
 
 "That you are not enjoying the ride as much as I would wish."
 
-I glanced down. "You don't exactly come with a seat belt or parachute."
+I glanced at the earth far below. "You don't exactly come with a seat belt or parachute."
 
-"Seat belt?"
+He blinked. "Seat belt?"
 
 "Never mind. Just don't drop me."
 
 He chuckled. "I believe I can agree to your request."
 
-We flew over thick forests of tall, ancient trees, our shadows ghosting over the needled tops as the sun set to our right. The warmth of his body stifled some of my shivering.
+We flew over thick forests, our shadows ghosting across the needled tops as the sun set. The road below ended at a small village of thatched-roof houses, smoke floating from the chimneys. At the southernmost edge, in a clearing, rose a twenty-foot stone hoop wound with vines. It stood at one end of a stone platform; before it burned an oil-fed altar three feet high. Cloaked figures attended the fire — two in brown and black at the steps, three more in gold, green-and-blue, and white around the altar — flanked by gray-habited monks who tended the oil and swept the ground.
 
-The winding gravel road below us ended at a small village of thatched-roof houses, smoke curling from chimneys, dim candles in windows. At the southern edge, in a round clearing that stretched into the trees, stood a twenty-foot upright hoop of stone and vines. A round stone altar before it held oil; a fire three feet tall pierced the air with twisting flames.
+We landed. The figures bowed. The one in green and blue stepped forward.
 
-Six wide steps led up to the platform. Two cloaked figures in brown and black stood on either side of the steps; three others—in gold, in green and blue, and in white—stood around the altar. Half a dozen gray-robed monks moved among them, pouring oil, sweeping, standing in line.
+"My Lords, you do us a great honor."
 
-The cloaked group looked up as we landed. The man in green and blue stepped forward and bowed.
+Xander inclined his head. "It is too often we forget to pay our respects to you who guard the Portal."
 
-"My Lords, you do us a great honor with your visit."
+The man pushed back his hood — gray-streaked hair, soft smile, wrinkles teasing his eyes. "How may we serve you this night?"
 
-"It is too often we forget to pay our respects to you who guard the Portal," Xander said.
+Xander gestured to me. "My Maiden wishes to see the Portal in all its mythical glory."
 
-The man removed his hood—gray-streaked hair in a tail, wrinkles teasing the corners of his eyes. "It is, and always will be, an honor to manage the Portal for you, My Lord. How may we serve?"
+"As you wish it, My Lord, but I cannot perform the ritual on my own."
 
-"My Maiden wishes to see the Portal in all its mythical glory."
+"One must admire your diligence to code." Xander turned to Cayden. "Does my priest have your permission?"
 
-"As you wish, My Lord, but I cannot perform the ritual on my own."
-
-"One must admire your diligence to code, Apuleius." Xander looked to Cayden. "Does my priest have your permission to open the Portal?"
-
-"I will allow my priest to help."
-
-The man in gold removed his hood—about seventy, with more wrinkles than an unsettled pond. "I will gladly do My Lord's bidding, but would also congratulate you on a beautiful Maiden."
-
-"Thank you, Jethro," Cayden said.
+Cayden nodded. The elder priest in gold pushed back his hood — older still, blue-eyed — and bowed toward Stephanie. "I would also congratulate you on a beautiful Maiden."
 
 "But to the reason for our visit," Xander reminded them.
 
-"Yes, My Lord. Your will shall be done."
-
-Apuleius and Jethro walked up the stone steps and stood ten feet from the hoop. Each held up an opposite arm and closed his eyes. Their lips moved, but no sound reached me.
-
-The vines covering the archway drew back to reveal six carved standing dragons—two sets of three facing the top center, where a small drop of water glowed blue. The figures glowed the colors of the ruling houses, with a red dragon at the top left and a green opposite. Brilliance flowed across the arch and spread over the hole like rippling water. Then an explosion of light burst outward, and behind it, a smooth, reflective surface revealed my astonished face.
+The two priests climbed the steps and stood before the hoop, each raising an opposite arm, lips moving without sound. The vines drew back from the archway, baring six carved dragons whose scales were cut so finely I could see each one. They glowed in the colors of the houses. Light spread from the carvings into the hole, filming over the interior like rippling water — then burst outward and left a smooth, reflective surface that showed back my astonished face.
 
 Xander offered me his arm. "Shall we?"
 
-In my stupor I let him lead me up the steps. The priests stepped aside.
+In a stupor I let him lead me up the stairs, Cayden and Stephanie behind. The priests stepped aside.
 
-"It took a century of ancient magic from the ruling houses to bring this to fruition," Xander said. "The stone figures were carved by the dragons themselves and infused with their life forces."
+"Quite impressive, is it not?" Xander said. "It took a century of ancient magic from the ruling houses of the dragons. The figures were carved by the dragons themselves and infused with their life forces."
 
-"Did it hurt them?" Stephanie asked.
+"Did it hurt them?" Stephanie wondered.
 
 "No. But it left them and their lines spiritually weakened."
 
-"Then why did they do it?"
+I arched an eyebrow. "Then why?"
 
-"Because they believed the reward was worth the price. The Maidens would offer a rejuvenation of their line, a new promise to their descendants."
+He looked down at me. "Because they believed the reward was worth the price. The Maidens would offer a rejuvenation of their line, a new promise to their descendants."
 
-Something on the ground caught my eye. I stooped and picked up a clod of compressed clay—dropped from the tire of the pig-men's truck. I held it up.
+Something on the ground caught my eye. I picked it up — a bit of compressed clay, dropped from the tire of the pig-men's truck. I held it up. "So how were those pig-men able to go through?"
 
-"So how were those pig-men able to go through?"
-
-"Their kind are the exception to the rule. They are not of our world, nor yours, but between them as travelers."
+"Their kind are the exception. They are not of our world, nor yours, but travelers between them."
 
 I let the clod fall. It crumbled to dust.
 
-Xander frowned. He picked up a rock, walked to the Portal, and threw it underhanded at the gray surface. There was a small flash where it struck. The rock burst into a thousand colorful fragments of glass that fell in front of the platform.
+Xander frowned. He picked up a rock, climbed the steps, and threw it underhand at the gray surface. The stone struck — a small flash at the point of contact — and burst into a thousand tiny, colored fragments of glass. They fell to the platform.
 
-He half-turned to me. "That is what happens to anything from our world, of which you are now a part."
+He half-turned. "That is what happens to anything from our world. Of which you are now a part."
 
-My heart sank as that last bit of hope died. Stephanie squeezed my shoulder. "I'm sorry," she whispered.
+My heart sank. The last bit of hope inside me died. Stephanie squeezed my shoulder. "I'm sorry."
 
 I gave her a bitter smile. "I was just—"
 
-"Dragons!" someone yelled.
+"Dragons!"
 
-A gray monk pointed at the sky. Six large forms flew through it—true dragons, those of myth and legend. Fifty feet from nose to whipping tail, leathery wings carrying scales as hard as steel and claws as sharp as knives. Long heads of razor teeth. Stubby legs tucked against scaled bellies, ending in long claws sheathed in silver talons forged by man.
+One of the gray monks pointed. Six forms moved through the sky. These were the true dragons of myth — fifty feet from nose to whipping tail, leathery wings, scales like steel, mouths full of razor teeth, silver talons forged by man. A monk staggered back and fell on his rear, gaping up.
 
-A monk staggered back and fell. "The Bestia Draconis!"
+"The Bestia Draconis!"
 
-Xander stood between me and the shadows, eyes flashing, lips curled in a snarl. Cayden took Stephanie likewise.
+Xander stepped between me and the shadows, eyes flashing, lips curled back. Cayden seized Stephanie.
 
 "How can they be this far from the coast without our knowing?" Cayden said.
 
-"I cannot understand it, but we shall make them regret this intrusion."
-
-Xander's hands lengthened into claws. He pulled me beside Stephanie, then grasped my shoulders.
-
-"Remain here."
+"I cannot understand it. But we shall make them regret this intrusion." Xander pulled me to one side and Cayden mirrored him, so the four of us stood shoulder-to-shoulder. He gripped my shoulders and met my eyes. "Remain here."
 
 "But what are you going to do?"
 
-"I will fight them. You can do nothing against these fiends. Promise me you will remain here."
+"I will fight them. You can do nothing against these fiends. Promise me you will remain."
 
 I nodded. He smiled. "Then wait for me. I will return."
 
-He stepped backward off the platform. His skin thickened with scales. A tail burst from his back and stretched onto the ground; his limbs twisted into four thick legs; the handsome face vanished into the lengthened mug of the beast. A huge green dragon. He flapped airborne. Cayden joined him as a smaller golden dragon.
+He stepped backward off the platform and spread his wings. His skin thickened with scales; a tail burst from his back; his limbs stretched and twisted; his face vanished into the lengthened mug of a huge green dragon. He flapped airborne. Cayden tore himself from Stephanie and transformed into a smaller, golden dragon, sailing up after him.
 
-Four enemies broke off and met them in vicious teeth and claws. Cayden dodged a double strike and circled to attack from behind. Xander rammed through his foes, tearing at wings and bodies. One screeched and fell, the earth shaking as it struck the dirt near the platform—and shrank to a naked man, face-down, blood pooling beneath him.
+Four of the wild dragons broke off and met them. Cayden dodged and circled to attack from behind; Xander rammed straight through, tearing wings and bodies. One enemy let out a terrible screech and fell. The earth shook as it struck. We watched its body shrink to that of a naked man, face-down, blood pooling beneath wounds that matched the dragon's.
 
-The other two swung around and aimed downward. The five priests raised their hands and chanted. Light burst from their palms at the dragons. One was hit; the other rolled, dodged, swooped, and seized a gray-cloaked monk. The dragon flew to the Portal and released him. Stephanie and I ducked. The man collided with the surface, screamed once, and burst into dust.
+Two more dragons swung around and dove at the platform. The five robed wizards raised their hands and chanted; light burst from their fingers in the colors of their cloaks. One enemy was hit; the other rolled and dodged, swooped down, and snatched a gray-cloaked monk from the ground. The man flailed in its grasp as it carried him to the Portal and released him. Stephanie and I ducked. He struck the surface, screamed, and burst into dust.
 
-The injured dragon dropped to all fours and swept its tail in a full circle, knocking the priests aside. Its red eyes fell on us. It curled its lips in a snarl and marched forward, silver talons clinking on the stone.
+The injured dragon hit the ground on all fours. It swung its tail in a full circle and knocked the robed men sprawling. Then its red eyes fell on us. It curled its lips and marched onto the stone platform, silver talons clinking.
 
 I shoved Stephanie. "Run!"
 
-She stumbled off the platform. The dragon cut me off with its long neck and wide body, lowered its head, and hissed.
+She stumbled off the platform; the dragon cut me off with its long neck and lowered its head, hissing. I held up my hands and backed toward the Portal.
 
-I held up my hands and backed toward the Portal. "Can't we talk about this?"
+"Can't we talk about this?"
 
-It roared and lunged. A dark shadow fell from the sky and landed atop it—my dragon. Xander clamped his jaws onto his foe's neck. The dragon screamed and thrashed, tail and wings flailing.
+The creature roared and lunged. A dark shadow dropped from the sky and landed atop it — Xander, jaws clamped on his foe's neck. The wild dragon thrashed, tail and wings flailing.
 
-I stumbled back. My heels tripped on a stone. My arms flailed at my sides; gravity took hold.
+My heels tripped on a stone. My arms flailed; gravity took hold.
 
-Xander turned. His green eyes widened. He leapt off the dragon toward me, neck stretched out as I stretched my hand. Our flesh grazed and fell away. The last I saw was the wounded dragon beneath him lifting one silver-taloned foot to strike.
+Xander turned. His green eyes widened. He leapt off the other dragon, neck stretching out as I stretched my hand. Our flesh grazed and fell away. The last I saw was the wild dragon beneath him lifting one silver-taloned foot to strike.
 
-A warm pool of liquid wrapped around me like a spongy blanket. The world of dragons was blotted out by warped gray liquid. It pressed all around me. I couldn't breathe. My vision blurred.
+A warm pool of liquid wrapped around me like a spongy blanket. The world of dragons was blotted out by a world of warped gray. It pressed everywhere. I couldn't breathe. My vision blurred —
 
-Just as I thought I would pass out, the suffocating world opened. I dropped back-first out of the vortex and landed hard on the ground. What little air was left in me went out in a wheeze. As I lay there sucking in air, the portal in front of me shrank to nothing.
+Then the suffocation opened. I dropped back-first out of the vortex and hit the ground hard, the air knocked out of me in a short wheeze. The portal in front of me shrank to nothing.
 
-A black sea of twinkling stars stretched above me. Electrical wires and poles cut the sky into squares. The far-off sounds of traffic came to my ears. I sat up on shaky arms and looked around. My eyes widened.
+I had ample time to study the black sea of twinkling stars above. Electrical wires and poles cut the sky into squares. Far-off traffic came to my ears. I sat up on shaky arms and looked around. My eyes widened.
 
 I was home.
 
-I was also in the city dump. The heaps of trash and rusted cars glared down at me like giant shadows of ancient creatures. I'd had enough of those for a lifetime.
+# CHAPTER 12
 
-I scrambled to my feet and fled. I couldn't go back to my apartment — the pig-men knew where I lived, and Blake knew where I worked. That left only one place to hide, if Blake hadn't found Heather's address too.
+The city dump. Heaps of trash and rusted cars loomed over me like ancient creatures. I'd had enough of those for a lifetime.
 
-Twelve blocks of stumbling brought me to an old four-story brick building in the artistic part of town, where murals adorned the walls and signs advertised everything from palm reading to palm trees. The lights were on in the third floor. I hurried up the stoop and pressed the buzzer.
+I scrambled up and fled, feet pounding the hard-packed dirt. My apartment was out — the pig-men knew it. Blake knew where I worked. There was only one place left, if Blake hadn't found that out too.
+
+Twelve shaky blocks brought me to the artistic part of town: murals along every wall, trees planted in random holes that littered the sidewalks, signs hawking everything from palm reading to palm trees. I stopped at an old four-story brick building, lights on the third floor, and pressed the third-floor buzzer.
 
 A sniffling voice answered. "Hello?"
 
-"Heth! You gotta let me in!"
+My heart nearly burst. "Heth! You gotta let me in!"
 
 "Miriam! Is that really you?"
 
-I glanced over my shoulder at the deserted street. "It won't be only me for long if you don't open the door!"
+A noise behind me. I glanced back; the street was deserted. "It won't be only me for long if you don't open the door!"
 
-The buzzer rang. I sidled inside as footsteps came pounding down the stairs. Heather flew around the last landing and flung her arms around me, taking the brunt of the blow as I crashed into the wall.
+"Sure! Just wait a sec!"
+
+The buzzer rang and I sidled inside. Footsteps were already pounding down the stairs. Heather flew around the last landing and crashed into me, taking the brunt of the impact against the wall.
 
 "You're safe! Oh my god, you're safe!"
 
 I pried her off and smiled into her tear-soaked face. "Yeah, but remind me never to look for a man again."
 
-Her lower lip quivered. "It's because of me, isn't it? I told you to get a guy and a guy got you, didn't he?"
+Her lower lip quivered. "It's because of me, isn't it? I told you to get a guy and when you tried on your own a guy got you, didn't he?"
 
-I snorted. "Let's just say I was dragged into the wrong crowd."
+"Let's just say I was dragged into the wrong crowd. I'll tell you everything upstairs."
 
-She dragged me up to her apartment, alive with the floating blobs of her lava lamps, and plopped me at the dining table. The old smell of the industrial human world was wonderful to behold. I told her everything.
+She seized my hand. "Yeah. Girl's night."
 
-When I was done, Heather leaned across the table and studied me with a hard eye. "Are you trying to pull my tail?"
+Her apartment was fully furnished in antiques and her own strange taste for lava lamps, the place alive with floating blobs of colored goop. I leaned back at her dining table and sighed. The old industrial smell of the human world was wonderful to breathe.
 
-"I've had enough of tails, thanks."
+"You don't look like you've been kidnapped for a few days," she said.
+
+"I'm not sure you're going to believe what I'm going to tell you."
+
+"Try me."
+
+So I tried her — the pig-men, Xander, the castle, the portal, the battle, all of it. When I was done she leaned in, hard-eyed.
+
+"Are you trying to pull my tail?"
+
+"I've had enough of tails, thanks. Everything I told you is true."
 
 "If it's true, show me the mark."
 
@@ -1016,29 +1018,29 @@ I tugged my shirt down my arm. There, in all its green glory, was the mark of Xa
 
 And it suddenly hurt like hell.
 
-I cried out and grabbed my shoulder. The pain was a hot poker against my skin, a faint green glow visible between my fingers. I clenched my teeth and doubled over.
+I cried out and grabbed my shoulder. The pain was a hot poker; a faint green glow leaked between my fingers. I clenched my teeth and doubled over.
 
 "What is it? What's wrong?"
 
-"Burning."
+"Burning," I ground out.
 
-She raced to the kitchen and returned with ice in a sandwich bag, slapping it against my burning skin. I yelped at the clash of sensations.
+She raced for ice. With my eyes shut against the pain, an image came: Xander in a bed, sweat-soaked, Darda and others around him, faces grave. I gasped; the vision vanished.
+
+Heather slapped a sandwich-bag of ice onto my skin. I yelped as the sensations clashed.
 
 "Sorry!"
 
-"Just shut up for a sec."
+I clutched the bag to me and shook my head. "Just shut up for a sec."
 
-I shut my eyes. An image came to me — Xander in a bed, covered in sweat, Darda and Cayden among a grave-faced crowd around him. I gasped, and the vision vanished.
-
-For once Heather waited in silence as the pain ebbed. After five long minutes my body relaxed.
+For once she listened. Five long minutes the pain ebbed and flowed; then my shoulders slumped, and I peeled the thawed bag off my arm.
 
 "You can speak again."
 
-The words tumbled out. "Areyouokay? Whatthehellwasthat? Istheresomethingwrongwiththedragon?"
+It all spilled out at once: "Areyouokay? Whatthehellwasthat? Istheresomethingwrongwiththedragon? Canyousensehisfeelings? Howbaddidithurt?"
 
-"I'm all right. It hurt like hell, but I don't know why."
+I held up a hand and massaged my temple. "I'm all right. It hurt like hell. I don't know why."
 
-She rubbed her chin between thumb and pointer. "Maybe it has something to do with your dragon husband."
+She rubbed her chin. "Maybe it has something to do with your dragon husband."
 
 "He's not my husband."
 
@@ -1046,73 +1048,63 @@ She rubbed her chin between thumb and pointer. "Maybe it has something to do wit
 
 "He kidnapped me and seduced me. That's it." I pinched the bridge of my nose. "I could really go for a drink."
 
-"Hard or knock-you-off-your-feet?"
+She wrangled glasses and something tar-like from the kitchen. "I still think that burning's got to do with you-know-who."
 
-"Got any wipe-the-hard-drive-clean?"
-
-"Yep, but I warn you, it tastes like socks and cough syrup."
-
-"Then I'll take it."
-
-She wrangled glasses and a bottle of what appeared to be tar. "I still think that burning's got something to do with you-know-who."
-
-A sly smile slipped onto her lips. "You sure you don't kind of like him?"
-
-"Are you seriously trying to set me up with a dragon?"
-
-"He's probably got great teeth."
-
-"Yeah, he flosses the whole lamb out of them every day."
-
-She whipped around. "Really?"
-
-"I was joking." Another sharp pain hit me, more distant this time, like the connection was weaker. I lay my hand over my mark and recalled the red dragon aiming silver talons at Xander.
+Another sharp pain stabbed my shoulder, fainter this time, the connection weaker. I remembered the red dragon, those silver talons aimed at Xander.
 
 "Do you know if silver hurts dragons?"
 
-She furrowed her brow. "Never heard that it could. But I never heard of dragons turning into cute guys either. Why?"
+She furrowed her brow. "Never heard it could. Then again, never heard of dragons turning into cute guys. Why?"
 
 "It's nothing."
 
-She leaned on the column between kitchen and dining area. "What is it?"
+She leaned on the bar column. "What is it?"
 
 "I said it was nothing."
 
 She held up her hands and retreated.
 
-I rubbed my aching shoulder. That last memory wouldn't leave me. A knot gathered in my stomach.
+I rubbed my aching shoulder. The vision wouldn't leave me. A knot gathered in my stomach. "What the hell happened?" I whispered.
 
-"What the hell happened?" I whispered.
+"Why should you care?" she called, carrying mugs over. "I mean, it's not like you love the guy, right?"
 
-"Why should you care?" Heather called, carrying our glasses over. "I mean, it's not like you love the guy, right?"
+I blushed and looked away. "I didn't say anything."
 
-I blushed and averted my eyes. "I didn't say anything."
-
-She plopped down beside me and snorted. "Yeah, and I'm a nun who's taken a vow of silence. Are you blushing?"
+"Yeah, and I'm a nun who's taken a vow of silence. Are you blushing?"
 
 "I'm not blushing."
 
-A gleeful smile spread across her lips. "You've fallen for your knight in green scales!"
+A gleeful smile spread. "You do like him, don't you? You've fallen for your knight in green scales!"
 
-"How could I even like him? He had me kidnapped so he could keep up some kind of —" Another white-hot pain hit my shoulder. I winced and clapped my hand over the tattoo.
+"How could I even like him? He had me kidnapped—" Another white-hot pain hit. I clapped my hand over the tattoo.
 
-Heather sighed. "You gotta get past the Denial stage and take a shortcut to the Acceptance one. That tattoo's connected to him — if it's hurting, he's hurting too. You said there was a big battle. Maybe he's seriously injured. Maybe he's dying."
+"You gotta get past Denial and shortcut to Acceptance."
 
-My blood ran cold. The image of the attacking dragon, the pain in my arm, the vision — none of them pointed to a happy and healthy dragon lord.
+"I'm not grieving!"
 
-"Well?" she prodded. "Are you going to get back there, or do I have to carry you?"
+"But you're going to be if you don't find out what's wrong over there. I bet that tattoo's connected to him. If it's hurting, maybe he's hurting too. You said there was a big battle. Maybe he's seriously injured. Maybe he's dying."
 
-"Are you nuts? I'm not going back!"
+My blood ran cold. The attacking dragon, the pain in my arm, the vision — none of them pointed to a healthy dragon lord.
 
-She jumped up and grabbed my hand. "Come on. Let's get you back to your scaly soul-mate before he dies or eats someone."
+"Well?" she said.
 
-I yanked free and stumbled back. "Are you trying to get me killed? That other dragon wasn't trying to hug me, and that portal also tried to kill me!"
+"Well what?"
 
-Heather smiled and dropped a hand on my shoulder. "Stockholm Syndrome." My face fell. She laughed. "Because sometimes love starts under strange circumstances. Besides, could you really live with yourself if he died?"
+"Are you going to get back there, or do I have to carry you?"
 
-I pursed my lips. She had me there.
+I jerked back. "Are you nuts? I'm not going back there!"
 
-She slipped around me and pressed her palms against my back, steering me toward the door. "Come on. Let's go save your scaly boyfriend."
+She grabbed my hand and dragged me toward the door. "Come on, let's get you back to your scaly soul-mate before he dies or eats someone."
+
+I yanked free and stumbled back to my chair. "Are you trying to get me killed? That other dragon wasn't trying to hug me, and that portal also tried to kill me!"
+
+She put her hands on her hips. "Miriam, you've got the best chance in your life to save a strong, handsome man who loves you, and here you are like you don't love him yourself."
+
+"How can I?"
+
+She stepped forward and dropped a hand on my shoulder. "Stockholm Syndrome." My face fell. She laughed and patted my shoulder. "Because sometimes love starts under strange circumstances. Besides, could you live with yourself if he died?"
+
+I pursed my lips. She had me there. She slipped behind me and pressed her palms to my back, steering me to the door. "Come on. Let's go save your scaly boyfriend."
 
 I let her drive me back to the junk yard and led her to the area where the portal had disappeared.
 
@@ -1184,7 +1176,7 @@ The guards greeted us with spears as Apuleius landed in the courtyard. I slid ou
 
 He led me through corridors and doors to Xander's chambers. Two guards bowed and opened the door.
 
-All thought fled from my mind. There, beneath layers of blankets, lay Xander. His face was ashen, sweat covered his brow, and bandages criss-crossed his chest. He shivered and clenched his teeth. Cayden stood near the foot of the bed with Stephanie, and Darda waited behind them.
+All thought fled from my mind. There, beneath layers of blankets, lay Xander. His face was ashen, sweat covered his brow, and bandages criss-crossed his chest. He shivered and clenched his teeth. Cayden stood near the foot of the bed with Stephanie, a lady of the castle, and Darda waited behind them.
 
 Apuleius hurried to his side, looking from Xander's pale face to a white-haired, gray-bearded man on the opposite side of the bed. He wore silk gloves stained by chemicals and sweat. His face was grave.
 
@@ -1296,94 +1288,216 @@ Xander nodded at me. "Let her stay. I must speak with her."
 
 "If you wish, My Lord."
 
-The room emptied. I caught a smiling glance from Stephanie—the girl was getting bolder by the hour. When the door closed, I turned to Xander, who stared with equal curiosity.
+# CHAPTER 15
+
+The room emptied. Stephanie shot me a smile on her way out, getting bolder by the hour. When the door closed I turned to Xander, who studied me with equal curiosity.
 
 "Did I imagine your falling into the Portal?" he wondered.
 
-I shook my head. "Nope. I went back to my own world, but this"—I tapped my shoulder where my mark hid beneath my shirt—"told me something was wrong, so I came back."
+"Nope. I went back to my own world, but this—" I tapped the mark hidden under my shirt "—told me something was wrong, so I came back."
 
-He clasped my hand and pursed his lips. "Then it appears you have somehow overcome a Maiden's greatest enticement to remain with her dragon lord. You have managed to survive the Portal after the Marking." His hand fell away and he turned his head. "Under the circumstances, I cannot in good faith keep you with me. You may return to your home."
+He took my hand and pursed his lips. "Then you have somehow overcome a Maiden's greatest enticement to remain with her dragon lord. You have survived the Portal after the Marking." His hand fell from mine. He turned his face away. "Under the circumstances, I cannot in good faith keep you with me. You may return to your home."
 
-I shrugged. "Why would I want to? I am home."
+I shrugged. "Why would I want to do that? I am home."
 
-He whipped his head up, eyes flitting across my face. "Do you speak in earnest, or do you humor me in my recuperation?"
+He whipped his head up, eyes flitting over my face. "Do you speak in earnest, or do you humor me in my recuperation?"
 
-"You think I'd lie to you after I just saved your scaly skin?" I teased.
+"You think I'd lie to you after I just saved your scaly skin?"
 
-He leaned forward and captured my lips in a searing kiss that spoke his happiness louder than any words. We broke apart so I could breathe.
+He grinned and leaned forward, capturing my lips in a searing kiss. We broke apart so I could breathe.
 
-I looked around. "I mean, this isn't exactly a nice apartment, but it'll work."
+I looked around the room. "I mean, this isn't exactly a nice apartment, but it'll work."
 
-He chuckled. "If I might tell the truth, the High Castle is not my home. It is only a gathering place for we dragon lords, a place of compromise that sits at the point where our five kingdoms come together."
+He chuckled. "If I might tell the truth, the High Castle is not my home."
+
+I frowned. "This isn't your place?"
+
+"No. It is only a gathering place for we dragon lords, a place of compromise that sits where our five kingdoms come together."
 
 My mind imagined a stone hovel in some distant land. "So where is your kingdom?"
 
-He pulled the cord. Darda soon brought a roll of paper, which Xander unfurled across his lap—a large, browned map of seas, mountains, oceans, lakes. He tapped the center. "This is where we are." He drew his finger southwest. "And this is my kingdom."
-
-A large plain abutted a bay. A dot on the bay read *Alexandria*.
+He pulled the cord. Darda fetched a rolled map, which he unfurled across his lap — a browned leather sheet covered with seas and mountains. He tapped the center, marked High Castle, then drew his finger southwest to a large plain abutting a bay. A dot on the bay read *Alexandria*.
 
 "Do you still wish to see my home?"
 
-I grinned. "Why not? But first you need to obey the doctor's orders and rest."
+"Why not? But—" I slid off the bed "—first you need to obey the doctor's orders and get some rest."
 
-"Stay with me," he said, gripping my arm. "I fear your return is but a dream, and I would not awaken without you at my side."
+"Stay with me," he said, grabbing my arm. "I fear your return is but a dream, and I would not awaken without you at my side."
 
 "Only if you're going to rest."
 
 "As you wish, My Maiden."
 
-When the bright morning came, the place beside me was empty. I sat up. Xander stood at his dresser, half dressed—his chest still bandaged, but the skin pinker than white. He slipped his shirt on and turned with a teasing smile.
+We slept together in his bed, and when the bright morning came I blinked against the light and sat up to find the head of the bed empty. Xander stood at his dresser, half dressed. His chest was still bandaged but his skin was pinker than white. He slipped on his shirt and turned with a teasing smile.
 
 "Are you prepared for the journey?"
 
-I blinked. "For what?"
+"For what?"
 
-He picked up the rolled map. "We have a great distance to travel before we reach my domain."
+He picked up the map. "We have a great distance to travel before we reach my domain."
 
 "Is it that far to fly?"
 
 "No, but as I told you, the dragon form is a great strain on the body. We will travel by horseback."
 
-I rubbed my behind. "Oh goody."
+I winced and rubbed my behind. "Oh goody."
 
-He wrapped his arms around my waist and looked into my eyes. "Do you doubt your decision to join me?"
+Xander tossed the map aside and pulled me against him. "Do you doubt your decision to join me?"
 
 I toyed with the strings of his shirt. "No, but I hope you enjoyed my butt. It might not make the trip."
 
-He chuckled. "I will be sure to protect it as much as I can."
+He chuckled. A knock came. "Enter."
 
-A knock. Darda bowed in the doorway. "My Lord, the horses are ready, and Lord Cayden awaits you."
+Darda bowed in the doorway. "My Lord, the horses are ready, and Lord Cayden awaits you."
 
-The hallways were alive with servants flitting to-and-fro with luggage, stepping aside and bowing as we passed. Many snatched looks at us, and some weren't friendly.
+"Then that is our cue to leave." Xander turned to me. "Cayden's kingdom abuts my own. I hope you won't be displeased with their following us."
 
-The courtyard was chaos—horses, grooms, two dozen wagons, lords mounted and watching. Among them I spotted the three other Maidens. Alex sat on a horse beside her brown-bearded lord; behind her, Olivia and Cindy with their dark-haired and white-haired lords. Olivia looked as cross as ever.
+"Nope."
 
-Alex noticed me and urged her horse over, leaning down to wink. "What do you think of my lord?"
+The hallways of the High Castle were alive with servants flitting to-and-fro, luggage in their arms. They stepped aside and bowed as we passed; some snatched glances that weren't too friendly. We navigated down to the courtyard, where horses and grooms and somehow two dozen wagons filled the space. People shouted, pointed, stumbled. Lords on horseback watched over the proceedings.
 
-I glanced past her at the bearded fellow. He sat proud and erect, then belched. "He's—um, nice."
+In the chaos I saw the three other Maidens. Alex sat on a horse beside the brown-bearded lord. Behind them on their own mounts were Olivia, beside the dark-haired lord, and Cindy, beside the white-haired one. Olivia looked as cross as ever, no affection in the glances she snatched at her lord.
 
-She grinned. "Yeah, and nice in bed, too. He's already promised to teach me how to ride all his stallions when we get to his castle." Her eyes flitted to Xander. "Not a bad catch yourself."
+Alex spotted me and waved. "Miriam!" She urged her horse over and leaned down with a wink. "What do you think of my lord?"
+
+I glanced past her at the bearded fellow. He sat proud and erect, and then belched. "He's—um, nice."
+
+"Yeah, and nice in bed, too. And he's already promised to teach me how to ride all his stallions when we get to his castle." Her eyes flitted to Xander. "Not a bad catch yourself."
 
 "He'll do."
 
 "Alex!" her lord bellowed.
 
-She tightened her reins. "I'll write to you, and you do the same, okay? We might be stuck here, but we can at least enjoy it."
+She tightened her grip on the reins. "I'll make sure to write, and you do the same. We might be stuck here, but we can at least enjoy it."
 
 "Sure thing. Have fun."
 
-She galloped off. I frowned at Xander. "Couldn't she go through the Portal like me?"
+She laughed and galloped away.
 
-"You are the first of anyone from this world to survive the Portal's touch. I would not wish to see anyone else attempt the feat."
+I looked to Xander. "Couldn't she go through the Portal like me?"
+
+He pursed his lips. "You are the first of anyone from this world to survive the Portal's touch. I would not wish to see anyone else attempt the feat."
 
 "So how did I live through it?"
 
 He gave me a teasing smile. "Because you are my Maiden."
 
-I rolled my eyes, and they found Stephanie and Cayden waiting on tan steeds near the gate, beside two riderless white horses.
+I rolled my eyes, and they found our companions. Stephanie and Cayden sat on tan steeds near the gate, two riderless white horses beside them.
 
 Xander offered me his arm. "Shall we?"
 
-"Definitely."
+I grinned and took it. "Definitely."
 
 And so began my adventures in this new world with my new dragon boyfriend.
+
+# SNEAK PEEK: REALMS OF THE DRAGONS
+
+ROMANCE IN A NEW WORLD
+
+Now that you've finished one part of the story, here's a little sneak peek at the next book.
+
+* * *
+
+The life of a Maiden to a dragon didn't seem so glamorous. Actually, at that moment it was downright miserable.
+
+"A warm fire. An electric blanket. A roof over my head."
+
+That was my dream mantra as our group of two dozen riders rode through a torrential rain. Three days out from the High Castle, four more days of outdoor fun ahead. The dirt road was a mud pit fit for any hog. My cloak was soaked through and there were two puddles always with me, one in each riding boot.
+
+"Do you know how to create electricity?" Xander, my personal dragon lord, asked, riding close beside me. Half our guards were ahead, the other half and a few servants behind, along with our friends Stephanie and Cayden.
+
+I arched an eyebrow under my hood. "Do you even know what electricity is?"
+
+He smiled. "Yes. Darda spoke often of your world when she first came into my mother's service."
+
+"She's from my world?"
+
+"The Portal is always open, and people have been known to fall through. The rules demanded she not return to warn others, so she was pressed into service of the priests of the Portal until she was given to my mother. Nearly sixty years ago."
+
+I glanced over my shoulder at the short, stooped woman following behind. Her servile posture didn't bespeak of a person from my world. Still, that explained her stable-talk to us girls about what we were leaving behind.
+
+"I have long wished to see this magic of your world," Xander said.
+
+I shook my head. "I doubt I could create an electric shock by dragging my feet, much less power a light bulb."
+
+"Then I still must continue my dream."
+
+"Maybe you can go there some day," I suggested.
+
+"That is not possible. You yourself witnessed what would happen were I to even touch the Portal's surface."
+
+"But I got through."
+
+He studied me. "Yes, but you are the first. I should not consider myself an exception to a rule that has stood a thousand years." A teasing smile played across his lips. "However, I would not have you make the attempt again."
+
+I saluted him; raindrops nearly drowned me. "I promise I'll be a good little Maiden."
+
+He chuckled. "I expect you to be something other than that, but I would ask nothing else of you."
+
+I smiled, but it faded. The forest around us seemed so vast, and I felt like a tiny, wet little speck in it. Xander reached behind him for his travel blanket and draped it across my shivering shoulders. The weight of thick wool was preceded by the heat it trapped.
+
+"Thanks." I glanced at the tall trees. "How much farther?"
+
+"The Viridi Silva is one of the largest forests in our world. We won't reach its southern boundary for another two days."
+
+The guards' silver armor had slits in the back near their shoulder blades — the same as the priests of the Portal. I knew what that meant. "Are there any humans in this world besides the ones from mine?"
+
+"Yes, but their settlements are few and far between. Many mated with dragons long ago and the dragon blood overrode their human line. Others have simply faded into history."
+
+I glanced over my shoulder at Darda and Stephanie. "So we're kind of an endangered species here."
+
+"I am afraid that is very close to the truth." He straightened in his saddle. "Spiros!"
+
+A guard with an elaborate dragon-spine-crested helmet trotted over — about thirty, a scar across his left cheek, his face marred with care but with a twinkle in his eyes that reminded me of Xander.
+
+"You called, My Lord?"
+
+"I haven't properly introduced you to my Maiden. Miriam, this is my captain, Spiros."
+
+Spiros bowed his head. "It is an honor to meet you, My Lady."
+
+"Ditto."
+
+"Spiros and I grew up together," Xander warned, "so do not be alarmed if he appears too impertinent."
+
+"If I am impertinent, it is because I feel my advice will do you some good, My Lord," Spiros countered. They traded grins over boyhood escapades — a bull, broken rules, eluded guards.
+
+I snorted. "With friends like you who needs enemies?"
+
+Spiros chuckled. "A very interesting saying, My Lady. I shall have to remember it."
+
+Any more conversation was cut off by a sudden worsening of the weather. The rains fell faster and drowned out everything. But I caught a change in their expressions — pursed lips, furrowed brows, knowing looks. Spiros bowed his head and trotted back to the head of the guards.
+
+Cayden filled the empty spot, Stephanie on his left. "What do you make of this weather?" he shouted.
+
+Xander shook his head. "We cannot journey much farther than the bridge."
+
+"If the bridge is to be had," Cayden pointed out.
+
+The muddy road opened ahead and revealed a small river — small when there wasn't a flood warning. As we approached, I could hear the roar of the stream as it turned over rocks and swept away trees from its banks. The bridge was logs strapped with heavy rope and sealed with tar, supported by trees as wide as I was tall, curving over the water in a gentle arch. I winced every time a tree or rock slammed into a pillar.
+
+Spiros stopped his guards at the edge. Xander trotted forward and I cautiously followed.
+
+"I do not like this, My Lord," the captain shouted above the pounding rain.
+
+Xander pursed his lips, studying the swaying logs. "We have little choice. There is no other bridge."
+
+"Then allow my men and I to cross and test the logs, My Lord."
+
+"There is no time. The bridge may collapse at any moment. We cross now." He turned his horse perpendicular to the line and stood on his stirrups. "We cross at once! Make two lines at two abreast and follow the rider in front of you!"
+
+The riders grouped into long lines. I clutched my reigns and tensed my legs against the body of the horse. My steed threw its head back and whinnied.
+
+Xander sidled up and leaned close. "Would you rather ride with me?"
+
+I managed a shaky smile. "And miss all this fun? Not on your life."
+
+He glanced past me at the roaring water and frowned. I hardly heard his murmured words. "I pray not."
+
+That's when an ear-splitting roar bashed my ears. I whipped my head upstream. A huge tree with a six-foot trunk floated on the white-water currents.
+
+"Across!" Xander yelled.
+
+Too late. The tree bore down on the bridge and slammed into the left side, sinking deep into the timbers. Many of the horses whinnied and reared up. My horse wasn't an exception. It reared up on both its back legs. One of its remaining hooves slipped on the slick logs. The horse staggered backward into the downstream wall. We hit it hard. I couldn't keep my position on the slick saddle and fell into the roaring abyss of the wild river.
+
+Like what you read? You can get it here!

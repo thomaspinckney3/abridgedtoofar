@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T15:54:32",
+  "key": "c0a05b46d8c272904e1d44cbd28b939a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f8998d99a396a8470a1b715024aa3d15",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test strictly.\n\n---\n\n**Ch 005 draft \u2014 candidate review**\n\n1. `\"You wouldn't have to do any business with Wolfshiem.\"` \u2014 In the source, Nick has just said \"I've got my hands full \u2026 I couldn't take on any more work,\" and Gatsby's line is a clarification: Gatsby thinks Nick is shying away because of the Wolfshiem \"gonnegtion\" mentioned at lunch. The draft cuts the explanatory sentence (\"Evidently he thought that I was shying away from the 'gonnegtion' mentioned at lunch, but I assured him he was wrong\"). The line still parses, but a reader with no source access sees Gatsby volunteering an unprompted non-sequitur about Wolfshiem with zero context for why Wolfshiem's name would be relevant here. The \"gonnegtion\" was introduced in Ch 004 (the Wolfshiem lunch), and the authorized cuts list does not include the Wolfshiem lunch scene itself, only \"Wolfshiem's Rosy Rosenthal murder reminiscence.\" The name Wolfshiem therefore survives in the draft (he appears in Ch 004 draft at the lunch). However, the specific conversational logic\u2014that Gatsby is addressing Nick's *imagined* reluctance about a business connection\u2014is gone. Does a reader genuinely need that to understand the sentence? The sentence is a non-sequitur but not unparseable; a reader can infer Gatsby is trying to sweeten a business proposal. **Rejected** \u2014 less ornamented, not broken.\n\n2. `\"I walked out the back way\u2014just as Gatsby had when he had made his nervous circuit of the house half an hour before\"` \u2014 The draft never shows Gatsby making a \"nervous circuit of the house.\" In the source this is established by Gatsby's behavior waiting for Daisy (pacing outside before she arrived). The draft compressed that scene heavily. Is this a dangling reference? The sentence refers to a prior action of Gatsby's that the draft did not establish. A reader would not know what \"nervous circuit of the house\" refers to from the draft alone. **Valid candidate \u2014 dangling reference.**\n\n   Gate test: A competent reader with no source access reads that Nick \"walked out the back way\u2014just as Gatsby had when he had made his nervous circuit of the house half an hour before\"\u2014but no circuit has been described or even hinted at in the draft. The reader is genuinely misled into thinking they missed something.\n\n3. `\"I know what we'll do,\" said Gatsby, \"we'll have the piano.\" He called, and presently music drifted up\"` \u2014 Klipspringer (authorized removal) has been cut. In the source Gatsby calls Klipspringer by name and fetches him. The draft replaces this with a vague \"He called, and presently music drifted up.\" A reader is not confused about what happens\u2014someone plays a piano\u2014they just don't know who. **Rejected** \u2014 authorized removal residue; reader understands the event.\n\n4. `\"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\"` (Ch 006) \u2014 The \"cold shower\" incident involving Miss Baedeker (Dr. Civet sticking her head in the pool, the suggestion of a cold shower) is in the source's tipsy-table scene, which the draft cuts (authorized? \u2014 not explicitly listed, but the draft does cut the Baedeker/Civet exchange). Tom's line references an event the draft reader never witnessed. **Valid candidate \u2014 dangling reference.**\n\n   Gate test: A reader of the draft has no knowledge of any girl being asked to take a cold shower. Tom's question is entirely opaque \u2014 the reader cannot infer what incident he means. This is genuine confusion.\n\n---\n\n**Ch 006 draft \u2014 additional candidates**\n\n5. `\"My God, I believe the man's coming,\" said Tom on the porch.` \u2014 In the source, Tom says this *on the porch* while Gatsby has gone inside for his hat, and it's in response to the situation unfolding (Sloane and the lady have mounted and are about to leave without Gatsby). The draft compresses: \"the other three mounted and rode away\" and then Tom says \"My God, I believe the man's coming\" \u2014 but since the draft just said they *rode away*, Tom's line is now internally contradictory. The reader is told they rode away and then Tom expresses alarm that Gatsby is coming to join them. Actually re-reading: \"A vague invitation from the lady led to a muddle; Gatsby, eager to follow in his car, ran inside for his hat; the other three mounted and rode away.\" Then: `\"My God, I believe the man's coming,\" said Tom on the porch.` \u2014 The sequencing has them already gone before Tom speaks. But wait \u2014 Tom is *with* the departing group in the source; in the draft he's \"on the porch.\" This creates a logical impossibility: Tom has \"rode away\" with the others (he's one of the three \u2014 Tom, Sloane, and the woman), yet Tom is then speaking \"on the porch.\" \n\n   Actually the draft says \"a man and a lady in a brown riding-habit\" came with Tom, so Tom is one of the three. \"The other three mounted and rode away\" \u2014 but then Tom speaks on the porch? This is a structural break. **Valid candidate \u2014 broken logical pivot / non-parseable scene.**\n\n   Gate test: The draft states the three visitors (including Tom) mounted and rode away, then immediately quotes Tom speaking \"on the porch.\" A competent reader is genuinely confused \u2014 has Tom left or not?\n\n---\n\n**Final assessment of Finding #2 (the \"nervous circuit\"):**\n\nIn the Ch 005 draft, after the reunion scene Nick walks out the back way. The draft does not show Gatsby pacing nervously outside before Daisy arrived; in the source that pre-arrival nervous circuit is established. This is not an authorized cut (the authorized cuts for Ch 005 are: butler's-nose anecdote, small-talk curlicues at the Buchanans', Ferdie/chauffeur lines [partially], Biloxi detour). The nervous exterior pacing is not listed. The reference therefore dangles in material that should have survived compression.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"5\",\n    \"draft_passage\": \"I walked out the back way\u2014just as Gatsby had when he had made his nervous circuit of the house half an hour before\",\n    \"source_has\": \"Source establishes Gatsby's nervous pre-arrival circuit outside Nick's house before Daisy came; draft omits this entirely, leaving the back-reference to 'his nervous circuit of the house' without antecedent in the draft.\",\n    \"gate_test_answer\": \"A reader of the draft alone has seen no circuit by Gatsby; they are genuinely confused by a comparative reference to an action that, in the draft, never happened.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"6\",\n    \"draft_passage\": \"\\\"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\\\"\",\n    \"source_has\": \"Source contains the full Miss Baedeker tipsy-table scene in which a girl's head is stuck in the pool and a cold shower is suggested; the draft cuts this entire exchange, leaving Tom's reference to 'that girl' and 'a cold shower' with no antecedent anywhere in the draft.\",\n    \"gate_test_answer\": \"A reader of the draft is genuinely confused: no girl, no pool incident, and no cold-shower suggestion appear anywhere in the draft, so Tom's question is completely opaque rather than merely less decorated.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"6\",\n    \"draft_passage\": \"the other three mounted and rode away. \\\"My God, I believe the man's coming,\\\" said Tom on the porch.\",\n    \"source_has\": \"In the source Tom speaks before the group departs\u2014while Gatsby is still inside fetching his hat and the others are about to mount. The draft's compression places Tom's line after stating all three (including Tom) rode away, making Tom simultaneously departed and present on the porch.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft has just said Tom rode away with the others, yet Tom is immediately quoted speaking on the porch\u2014an irreconcilable contradiction, not a mere stylistic reduction.\"\n  }\n]\n```",
+    "input_tokens": 23213,
+    "output_tokens": 2009,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 45.646722078323364,
+    "stop_reason": "end_turn"
+  }
+}

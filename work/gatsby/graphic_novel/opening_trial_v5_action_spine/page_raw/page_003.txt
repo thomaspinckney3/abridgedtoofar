@@ -1,0 +1,159 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s America with brief flashbacks to Midwestern 1900s-1910s and college years",
+    "line_and_color": "Clean, expressive linework with restrained, naturalistic color; present-day scenes in neutral tones, flashbacks with a soft sepia wash",
+    "lighting": "Present: warm desk-lamp pools of light against evening shadows; Flashbacks: late-afternoon Midwestern glow and muted dorm/common-room gaslight",
+    "lettering": "First-person narration in classic serif caption boxes; quoted memories set in italic captions or caption-with-quote; dialogue balloons for in-scene speakers",
+    "recurring_motifs": [
+      "Fountain pen and open notebook",
+      "Pool of lamplight on a wooden desk",
+      "Porch swing and summer cicada dusk",
+      "College pennants and radiator pipes",
+      "Cigarette smoke curling in quiet rooms"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Slim, clean-cut Midwesterner with neatly side-parted brown hair and observant eyes",
+      "costume": "Present: white shirt with rolled sleeves, loosened tie, waistcoat; Flashbacks: travel coat over vest and tie, worn suitcase; casual cap outdoors",
+      "expression_range": "Quietly reflective to mildly wry; attentive when addressed",
+      "continuity_note": "Keep present Nick at his desk under warm lamplight; flashbacks in sepia wash. Maintain lean build and understated demeanor."
+    },
+    {
+      "name": "Mr. Carraway (Nick’s Father)",
+      "visual_anchor": "Tall Midwestern gentleman with tidy mustache and steady gaze",
+      "costume": "Dark waistcoat, crisp white shirt, understated tie; light summer jacket on the porch",
+      "expression_range": "Calm, economical gestures; a steady, supportive look",
+      "continuity_note": "Appears briefly in flashback as a measured, composed presence."
+    },
+    {
+      "name": "Office Young Man",
+      "visual_anchor": "Fresh-faced clerk in his twenties, slick hair, eager posture",
+      "costume": "City office wear: shirtsleeves with suspenders, tie slightly loose",
+      "expression_range": "Upbeat, suggestive, a little impulsive",
+      "continuity_note": "Appears only in New York office flashback to propose the commuting house."
+    },
+    {
+      "name": "Finnish Woman (Housekeeper)",
+      "visual_anchor": "Sturdy, middle-aged woman with a kerchief over her hair and lined, practical face",
+      "costume": "Simple housedress and apron",
+      "expression_range": "Stoic, inward; mouth moving as she mutters to herself",
+      "continuity_note": "Always near the small kitchen’s electric stove, occupied with breakfast tasks."
+    },
+    {
+      "name": "Roadside Man",
+      "visual_anchor": "Nervous newcomer with hat slightly askew, uncertain stance",
+      "costume": "City suit a bit rumpled from travel",
+      "expression_range": "Helpless, in need of directions",
+      "continuity_note": "Meets Nick on the country road near West Egg."
+    }
+  ],
+  "page": {
+    "page_number": 3,
+    "page_summary": "At his desk, Nick writes and recalls leaving the Midwest after the war, his father’s backing, a spring arrival in New York, and the spur-of-the-moment plan that led to a shabby bungalow—where loneliness briefly gives way to a roadside exchange as a newcomer asks him the way to West Egg. The memory moves him from decision to geography, pointing him toward the place he will soon call home.",
+    "source_unit_ids": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
+    "source_word_range": [508, 755],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick writes and recalls Yale, the war, his restlessness, and the decision to go East for the bond business.",
+        "shot": "medium",
+        "image_prompt": "Present-night interior: Nick at his wooden desk under a pool of lamplight, fountain pen mid-stroke over an open notebook; cigarette smoke coils upward. In sepia vignette behind him: a glimpse of a Yale graduation procession with mortarboards, and a muddy trench line with distant artillery flashes. Dust motes float in the lamplight; a framed family portrait sits on the desk’s edge.",
+        "caption": "I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War. I enjoyed the counter-raid so thoroughly that I came back restless. Instead of being the warm centre of the world, the Middle West now seemed like the ragged edge of the universe—so I decided to go East and learn the bond business.",
+        "dialogue": [],
+        "sfx": ["scratch scratch"],
+        "continuity_notes": "Anchor in present with lamplight and pen; flashback elements in soft sepia.",
+        "source_unit_ids": [17, 18, 19],
+        "source_word_range": [508, 570],
+        "source_anchor": "“I graduated from New Haven in 1915... so I decided to go East and learn the bond business.”",
+        "adaptation_note": "Uses the present writing action as a framing device while summarizing three consecutive causal beats in a single captioned panel."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Flashback: With his father’s backing, Nick arrives in New York in spring ’22 and an office colleague suggests sharing a house in a commuting town.",
+        "shot": "wide",
+        "image_prompt": "Sepia: A bright spring morning in a New York brokerage office—open windows, budding trees visible outside. Nick at a desk with papers; an eager young man leans in, gesturing toward a folded newspaper as if pitching an idea. Small inset at panel corner: a Midwestern porch where Nick’s father hands him an envelope, both composed.",
+        "caption": "Father agreed to finance me for a year, and after various delays I came East—permanently, I thought—in the spring of ’22. The practical thing was to find rooms in the city, but it was a warm season, and when a young man at the office suggested that we take a house together in a commuting town, it sounded like a great idea.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Entire panel in sepia as flashback; the father’s porch moment is a small inset to keep chronology intact.",
+        "source_unit_ids": [20, 21],
+        "source_word_range": [571, 647],
+        "source_anchor": "“Father agreed to finance me for a year... it sounded like a great idea.”",
+        "adaptation_note": "Combines closely linked decisions—funding, arrival, and housing plan—into one office-centered action beat."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Nick settles into a shabby bungalow alone, with only a skittish dog, an old Dodge, and a Finnish housekeeper.",
+        "shot": "wide",
+        "image_prompt": "Sepia: Exterior-into-interior feel. A weather-beaten, small bungalow with peeling shingles and scrubby grass; Nick’s old Dodge parked askew out front with a suitcase in the back. Through the open doorway, a modest kitchen shows a Finnish woman at an electric stove, lips moving as she mutters; at Nick’s feet a small dog on a loose lead looks ready to bolt.",
+        "caption": "He found the house—a weather-beaten cardboard bungalow at eighty a month—but at the last minute the firm ordered him to Washington, and I went out to the country alone. I had a dog—at least I had him for a few days until he ran away—and an old Dodge and a Finnish woman, who made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric stove.",
+        "dialogue": [],
+        "sfx": ["putt-putt", "sizzle"],
+        "continuity_notes": "Maintains sepia flashback; foreground the bungalow and period car to anchor geography and daily life.",
+        "source_unit_ids": [22, 23],
+        "source_word_range": [648, 718],
+        "source_anchor": "“a weather-beaten cardboard bungalow at eighty a month... muttered Finnish wisdom... over the electric stove.”",
+        "adaptation_note": "Merges the house acquisition twist and household details into a single settling-in tableau that reads sequentially left-to-right."
+      },
+      {
+        "panel_number": 4,
+        "beat": "One quiet morning on the country road, a newcomer flags Nick down.",
+        "shot": "medium",
+        "image_prompt": "Sepia: A sandy country road near hedges and stunted trees; morning light. Nick in a hat walks beside the lane. A slightly rumpled man steps from a stopped motorcar, hand raised to stop him, uncertain expression on his face.",
+        "caption": "It was lonely for a day or so until one morning some man, more recently arrived than I, stopped me on the road.",
+        "dialogue": [],
+        "sfx": ["crunch"],
+        "continuity_notes": "Continue sepia; position Nick left, newcomer right to set up the following exchange.",
+        "source_unit_ids": [24],
+        "source_word_range": [719, 741],
+        "source_anchor": "“It was lonely for a day or so... stopped me on the road.”",
+        "adaptation_note": "Sets up a two-shot encounter to deliver the page’s only spoken line in the next panel."
+      },
+      {
+        "panel_number": 5,
+        "beat": "The man asks for directions to West Egg; Nick points the way.",
+        "shot": "medium",
+        "image_prompt": "Sepia: Roadside two-shot. The man faces Nick with an open, helpless look; Nick gestures down the road toward unseen shore. Wind tugs at their jackets; the bungalow roofline is distant in the background.",
+        "caption": "I told him.",
+        "dialogue": [
+          {
+            "speaker": "Roadside Man",
+            "text": "How do you get to West Egg village?"
+          }
+        ],
+        "sfx": [],
+        "continuity_notes": "Maintain eyeline match from previous panel; no visible signage.",
+        "source_unit_ids": [25, 26],
+        "source_word_range": [742, 755],
+        "source_anchor": "“‘How do you get to West Egg village?’ he asked helplessly. I told him.”",
+        "adaptation_note": "Keeps dialogue exact and renders Nick’s response as narration to avoid inventing lines."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
+    "last_scene": "Country road near Nick’s West Egg bungalow, morning (flashback)",
+    "active_characters": ["Nick Carraway", "Roadside Man"],
+    "character_updates": [
+      "Nick leaves the Midwest after the war, deciding to learn the bond business in the East.",
+      "His father finances him for a year; he arrives in New York in spring 1922.",
+      "An office colleague proposes sharing a commuting-town house; the colleague is reassigned, and Nick rents the bungalow alone.",
+      "Nick’s makeshift household includes an old Dodge, a fleeting dog, and a Finnish housekeeper.",
+      "A newcomer stops Nick on the road to ask directions to West Egg."
+    ],
+    "visual_motifs": [
+      "Fountain pen and open notebook",
+      "Pool of lamplight on a wooden desk",
+      "Sepia-tinged memories of travel and country roads",
+      "Weather-beaten bungalow",
+      "Cigarette smoke curling in quiet rooms"
+    ],
+    "next_page_needs": [
+      "Establish West Egg’s shoreline and its relation across the bay to East Egg.",
+      "Orient Nick’s bungalow in relation to neighboring estates, including Gatsby’s.",
+      "Transition from roadside directions to a broader sense of the Eggs’ geography and social contrast."
+    ]
+  }
+}

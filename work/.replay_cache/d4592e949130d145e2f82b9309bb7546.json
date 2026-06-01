@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:20:13",
+  "key": "d4592e949130d145e2f82b9309bb7546",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the seven tests.\n\n**Ch 110 draft** \u2014 The compression is clean. The carpenter is introduced with his vice-bench, his trades, and his philosophical description. No dangling pronouns, no broken pivots, no unglossed names. The authorized cuts (Stubb's dream, etc.) leave no residual seams here.\n\n**Ch 111 draft** \u2014 Let me check carefully.\n\n1. \"Come, come, you old Smut, bear a hand with that ferule and buckle-screw.\" \u2014 \"Smut\" is the blacksmith's nickname. In the source the blacksmith is introduced in the stage direction as a named presence at the forge. In the draft, the scene-setting paragraph says \"the blacksmith hammered\" but never names him \"Smut.\" When the carpenter calls out \"you old Smut\" a few lines later, a reader with no source access has no idea who \"Smut\" is \u2014 it reads like a name but the blacksmith was only called \"the blacksmith.\" Is this a named-person continuity problem? \"Smut\" is not on the authorized minor-character removal list, but he's a very minor figure referred to only by nickname. The draft paragraph does say \"the blacksmith\" \u2014 so when the carpenter calls \"you old Smut,\" a competent reader can infer this is the blacksmith's nickname, especially since the carpenter then calls to him again later (\"Halloa, there, you Smut!\") in context. The gate test: a reader would likely understand \"Smut\" is the blacksmith. Not a genuine confusion.\n\n2. The aside \"Now, what's he speaking about, and who's he speaking to, I should like to know? Shall I keep standing here?\" \u2014 In the source this is marked as an aside. In the draft there's no stage-direction or attribution marker. Looking at the dialogue flow: Ahab says \"There, take the order, and away.\" Then this line appears without attribution. In the source it's \"(aside)\" from the Carpenter. In the draft, the sudden shift from Ahab's imperious speech to this puzzled muttering \u2014 a reader can infer it's the carpenter speaking to himself, since Ahab just addressed him and walked away rhetorically. The gate test: slightly ambiguous but the surrounding dialogue context makes it inferrable. Not a genuine structural failure.\n\n3. \"Stubb, the second mate, knows him best of all\" \u2014 The draft adds \"the second mate\" as a gloss for Stubb. This is actually *better* than the source; not a problem.\n\n4. Checking \"Sir?\u2014oh! ah!\u2014I guess so;\u2014yes\u2014oh, dear!\" \u2014 In the source this follows Ahab's line about burying thyself under living people's noses. In the draft, Ahab's speech is compressed: \"Take the hint, then; and when thou art dead, never bury thyself under living people's noses.\u2014Look ye, carpenter\u2026\" \u2014 the draft cuts the carpenter's \"Sir?\u2014oh! ah!\u2014I guess so;\u2014yes\u2014oh, dear!\" response entirely and moves directly to Ahab's next speech. That's fine \u2014 it's just a cut.\n\n5. The carpenter's monologue after Ahab leaves: \"What was that about one leg standing in three places, and all three in one hell\u2014how was that?\" \u2014 In the source: \"What was that now about one leg standing in three places, and all three places standing in one hell\u2014how was that?\" The draft cuts \"I don't wonder he looked so scornful at me! I'm a sort of strange-thoughted sometimes, they say; but that's only haphazard-like.\" This is just compression; the remaining sentence still parses.\n\nAfter careful review, I find no structural coherence failures meeting the validity threshold. The draft chapters are coherent compressions.\n\n```json\n[]\n```",
+    "input_tokens": 8957,
+    "output_tokens": 884,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.264355897903442,
+    "stop_reason": "end_turn"
+  }
+}

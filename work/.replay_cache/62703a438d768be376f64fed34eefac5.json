@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:35:38",
+  "key": "62703a438d768be376f64fed34eefac5",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the seven tests and the gate test.\n\n---\n\n## Ch 045 Draft\n\n**Passage: \"To the sailor beholding the scenery of the Antarctic seas\u2014where at times, by some infernal trick of legerdemain in the powers of frost and air, he, shivering and half shipwrecked, instead of rainbows speaking hope and solace to his misery, views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses.\"**\n\nThe source's \"Second\" example is framed as a complete contrast to the \"First\" (the mariner at night). In the draft, the \"First\" mariner paragraph ends with a grammatically complete sentence (\"\u2026in vain the lead assures him he is still off soundings; heart and helm they both go down; he never rests till blue water is under him again\" \u2014 but wait, the draft cuts that ending too). More critically: the draft's Antarctic sentence begins with \"To the sailor beholding\u2026\" and the main clause's verb is missing \u2014 it reads as a dangling prepositional/participial phrase with no independent clause. The source version reads \"Not so the sailor, beholding the scenery of the Antarctic seas; where at times\u2026he\u2026views what seems a boundless churchyard\" \u2014 a complete sentence with \"views\" as its main verb. The draft rewrites the opening to \"To the sailor beholding the scenery of the Antarctic seas\u2014\" and never supplies a finite main-clause verb; the subordinate clause \"where\u2026he\u2026views\" is grammatically a relative/adverbial clause attached to nothing. This is a non-parseable sentence: no main clause exists.\n\n---\n\n## Ch 047 Draft\n\n**Passage: \"Yet these were but the plainest tokens of its intensity.\"**\n\nThe source reads: \"Yet these, perhaps, instead of being the unsuppressable symptoms of some latent weakness, or fright at his own resolve, were but the plainest tokens of its intensity.\" The \"its\" refers to Ahab's resolve/vow. In the draft, the preceding sentence describes the wild cry and Ahab bursting from his stateroom. The pronoun \"its\" \u2014 meaning the intensity of his resolve \u2014 has no antecedent in the immediately preceding draft sentences, which describe symptoms/behaviors rather than naming the thing those symptoms are tokens *of*. However, \"resolve\" or \"purpose\" can be inferred from context in the broader draft paragraph. This is borderline.\n\nMore clearly: in the source, \"Yet these, perhaps, instead of being the unsuppressable symptoms of some latent weakness, or fright at his own resolve, were but the plainest tokens of its intensity\" \u2014 the contrast is between two interpretations (weakness/fright vs. intensity of resolve). The draft cuts \"instead of being the unsuppressable symptoms of some latent weakness, or fright at his own resolve\" entirely, leaving only \"Yet these were but the plainest tokens of its intensity.\" The \"yet\" functions as a broken pivot: it implies a contrast with a preceding claim (that these symptoms *might* indicate weakness or fear), but that claim was cut. A reader sees \"yet these were but the plainest tokens of its intensity\" \u2014 \"yet\" contrasting with nothing stated \u2014 and \"its\" with no named antecedent in the draft. This is a broken logical pivot combined with a dangling pronoun.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"To the sailor beholding the scenery of the Antarctic seas\u2014where at times, by some infernal trick of legerdemain in the powers of frost and air, he, shivering and half shipwrecked, instead of rainbows speaking hope and solace to his misery, views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses.\",\n    \"source_has\": \"Not so the sailor, beholding the scenery of the Antarctic seas; where at times, by some infernal trick of legerdemain in the powers of frost and air, he, shivering and half shipwrecked, instead of rainbows speaking hope and solace to his misery, views what seems a boundless churchyard grinning upon him with its lean ice monuments and splintered crosses.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft sentence begins 'To the sailor beholding\u2026' and runs into a subordinate 'where\u2026he\u2026views' clause but supplies no main finite verb, leaving the sentence without a parseable main clause \u2014 not merely less ornate, but grammatically incomplete.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Yet these were but the plainest tokens of its intensity.\",\n    \"source_has\": \"Yet these, perhaps, instead of being the unsuppressable symptoms of some latent weakness, or fright at his own resolve, were but the plainest tokens of its intensity.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'yet' signals a contrast with a previously entertained interpretation (that the symptoms might indicate weakness or fright at his own resolve), but that interpretation was cut from the draft, leaving the contrastive pivot dangling against nothing; additionally, 'its' has no named antecedent in the draft.\"\n  }\n]\n```",
+    "input_tokens": 15126,
+    "output_tokens": 1257,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 26.482380867004395,
+    "stop_reason": "end_turn"
+  }
+}

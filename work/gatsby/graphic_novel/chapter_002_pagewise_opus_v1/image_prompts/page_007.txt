@@ -1,0 +1,80 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: 1922 Long Island and Queens, New York; Jazz Age America
+- line and color: Inked linework with muted period palette; ash greys and soot blacks for the valley, warmer sepia and lavender for the city, sickly yellows for the billboard, smoky amber and cream for the cramped apartment interior, cold blue-greys for the dawn station
+- lighting: Smoky amber lamplight thickening toward midnight in the apartment; sudden harsh shadows at the moment of violence; flat fluorescent-cold pallor in the elevator; bluish pre-dawn light at Pennsylvania Station
+
+Character continuity:
+- Nick Carraway: Lean young man, late twenties, side-parted brown hair, observant eyes Costume: Rumpled light grey three-piece summer suit, tie pulled crooked, hat retrieved from the chandelier Continuity: Within-and-without observer; follows McKee out and ends the night at Penn Station
+- Tom Buchanan: Hulking sandy-haired man, hard mouth, heavy shoulders Costume: Summer suit, collar undone, sleeves of jacket taut across his back Continuity: Breaks Myrtle's nose with the flat of his open hand
+- Doctor T. J. Eckleburg (billboard): Enormous blue eyes behind huge yellow spectacles, no face Costume: N/A Continuity: Overhead as they leave the valley
+- George Wilson: Blond, spiritless, anaemic; pale light-blue eyes Costume: Dark mechanic's suit veiled in ash, rag in hands Continuity: Emerges with chairs as Myrtle slips away; unaware of the affair
+- Myrtle Wilson: Faintly stout mid-thirties woman, sensuous carriage, dark hair Costume: Cream-coloured chiffon afternoon dress, now spattered with blood Continuity: Chants Daisy's name; ends bleeding on couch over Versailles tapestry
+- Dog Vendor: Grey-haired old man with a small basket of puppies Costume: Shabby coat, soft cap Continuity: Pockets Tom's bill on the curb
+- Catherine: Slender worldly girl about thirty, sticky bob of red hair, milky-powdered complexion Costume: Slim afternoon dress, pottery bracelets jangling Continuity: Stumbles among furniture with articles of aid
+- Mr. McKee (Chester): Pale, feminine man, soft-featured Costume: Light suit rumpled from sleep; later, sitting up in bed in his underwear with a large portfolio Continuity: Wakes from doze, leaves with Nick, ends in his own bed reciting his photographic studies
+- Mrs. McKee: Shrill, languid woman, handsome but pinched Costume: Fussy afternoon dress, sleeves pushed back Continuity: Among the women tending Myrtle
+- Airedale puppy: Small Airedale with white feet, blunt face Costume: N/A Continuity: Sits on the table groaning in the smoke
+- Elevator boy: Young man in uniform cap, gloved hand on lever Costume: Brass-buttoned elevator uniform Continuity: Snaps at McKee in the descending cage
+
+Page 7 summary: Past midnight in the apartment, Tom and Myrtle square off over Daisy's name; when Myrtle chants it, Tom breaks her nose with an open hand, and the room dissolves into bloody towels and wailing while McKee wakes, stares, and walks out. Nick retrieves his hat and follows, riding down with McKee in the elevator and accepting a vague lunch invitation; the night collapses into McKee in his underwear flipping a portfolio of photographic titles, and finally Nick half-asleep on a Pennsylvania Station bench at four in the morning.
+
+Panels:
+
+Panel 1:
+Beat: Toward midnight, Tom and Myrtle face off over Daisy's name; Myrtle chants it in defiance.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Cramped smoky amber-lit apartment near midnight, second whisky bottle on cluttered table, drunken bric-a-brac and tapestried Versailles couch in background. Hulking sandy-haired Tom Buchanan on the left in summer suit with collar undone, jaw set, hand half raised in argument. Faintly stout dark-haired Myrtle on the right in rustling cream chiffon afternoon dress, head thrown back, mouth open mid-shout, eyes flashing defiance. Tight composition, looming shadows from the lampshade, faces angled toward each other, clear empty space at top center and bottom center for lettering. Period 1922 interior detail. No text, no signs, no labels, no balloons rendered.
+
+Panel 2:
+Beat: Tom breaks Myrtle's nose with the flat of his open hand; the room erupts into bloody towels and wailing while McKee jolts awake.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Same smoky apartment, harsh sudden shadow as Tom Buchanan's open hand connects with Myrtle's face mid-panel — short deft motion, her head snapping back, droplets of blood arcing. To the right, Myrtle collapsing toward the tapestried Versailles couch, cream chiffon dress staining red, a tabloid newspaper spread under her on the Versailles scenes. Mrs. McKee and Catherine in the background stumbling among the crowded furniture with towels and a basin, mouths open scolding. Mr. McKee in a chair on the far left jolting awake from his doze, eyes wide and dazed. Tight chaotic full-width composition, clear lettering space across top band. No readable text, no signs, no balloons rendered.
+
+Panel 3:
+Beat: McKee leaves; Nick retrieves his hat from the chandelier and follows; in the descending elevator McKee invites him to lunch and the elevator boy snaps.
+Shot: medium
+Panel archetype: two_speaker_exchange
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Mr. McKee, top_left, x=6%, y=23%, w=38%, h=16%
+- balloon_2: speech for Elevator boy, top_right, x=56%, y=23%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Mr. McKee: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Elevator boy: x 56%, y 23%, w 38%, h 16%. - Place Mr. McKee body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Elevator boy body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Mr. McKee: body x=6%, y=47%, w=40%, h=49%; face x=20%, y=50%, w=10%, h=10%
+- Elevator boy: body x=54%, y=47%, w=40%, h=49%; face x=69%, y=50%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Mr. McKee: x 6%, y 23%, w 38%, h 16%. - Reserve empty speech box balloon_2 for Elevator boy: x 56%, y 23%, w 38%, h 16%. - Place Mr. McKee body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. - Place Elevator boy body in x 54%, y 47%, w 40%, h 49%; face in x 69%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Narrow elevator cage descending, cold pale electric light, brass fittings. Mr. McKee on the left, pale soft-featured, light suit rumpled, holding himself with dazed dignity, one hand drifting near the brass control lever. Nick on the right in his rumpled grey suit, hat just settled on his head, expression detached and stunned. Young elevator boy in brass-buttoned uniform between them at the back, glaring at McKee's hand on the lever. Vertical claustrophobic framing, clean empty space at top left for caption and right side for stacked dialogue. No readable text, no balloons rendered.
+
+Panel 4:
+Beat: Time jumps: McKee sits up in bed reciting photo titles from his portfolio; then Nick is alone on the cold lower level of Penn Station before dawn.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Split composition without a hard divider. Left two-thirds: dim bedroom, Mr. McKee sitting up between rumpled sheets in his underwear, a great leather portfolio open across his lap, mounted photographs splaying — a posed figure, a lonely lamppost, an old draft horse, a bridge — his lips parted as if reciting, dreamy expression. Right one-third bleeds into a cold blue-grey vault of Pennsylvania Station's lower level before dawn: Nick slumped on a wooden bench in his rumpled suit, hat tipped back, a folded morning newspaper across his knee, empty platform receding behind him. Transition handled by a wash of cold light spilling from right into left. Clear lettering space across the top and a smaller slot at bottom right. No readable text on the newspaper or any signage, no balloons rendered.

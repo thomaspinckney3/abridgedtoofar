@@ -1,0 +1,27 @@
+{
+  "frame_number": 7,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "unsupported_content",
+      "finding": "A large wooden chest with coiled rope appears in the room though not specified and may distract or imply incorrect luggage.",
+      "visible_evidence": "Left foreground shows a rigid wooden chest with metal hardware and a thick rope coil draped over it.",
+      "repair_prompt": "Remove the wooden chest and rope, or replace them with background-neutral elements that do not imply luggage."
+    },
+    {
+      "severity": "minor",
+      "category": "prop_confusion",
+      "finding": "Luggage is depicted as a hard trunk rather than the specified soft-sided seaman’s bag, risking confusion with the prop continuity.",
+      "visible_evidence": "Foreground luggage is a boxy wooden chest; no canvas sea-bag with knotted cords is visible.",
+      "repair_prompt": "Swap the wooden chest for a weathered canvas sea-bag cinched with rope and knotted cords; place it near the bed or wall."
+    },
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Ash flecks from the pipe bowl on the blanket are unclear or absent.",
+      "visible_evidence": "Blanket surface appears uniform; only pipe smoke is visible above the bed.",
+      "repair_prompt": "Add a few subtle ash specks on the blanket beneath the pipe bowl without drawing focus from the main action."
+    }
+  ]
+}

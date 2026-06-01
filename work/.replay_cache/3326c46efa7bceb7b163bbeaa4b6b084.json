@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:39:37",
+  "key": "3326c46efa7bceb7b163bbeaa4b6b084",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter methodically, applying the gate test strictly.\n\n**Ch 029 draft review:**\n\nThe draft replaces Rosa (authorized removal) with \"a little waiting-maid\" \u2014 fine, descriptor is clear. Mammy (authorized removal) becomes \"The old nurse\" \u2014 fine. Adolph (authorized removal) is elided throughout the deed-of-gift scene. The \"my valet\" and \"the girls\" replacements for Adolph/Jane/Rosa are fine.\n\nNo structural breaks detected in Ch 029.\n\n**Ch 030 draft review:**\n\n1. Rosa's introduction: The source introduces Rosa by name (\"Rosa, the pretty young quadroon\") when she knocks. The draft drops her name (authorized removal) and uses \"the pretty young quadroon girl\" \u2014 fine, descriptor works.\n\n2. The fellow-servant (Adolph, authorized removal): \"A few days after, Tom was standing by the balconies, musing, when a fellow-servant, crest-fallen since his master's death, drew near in fear.\" Then at the end: \"The next day, Tom, with the fellow-servant and some half a dozen others, was marched down to a slave-warehouse.\" The fellow-servant is introduced descriptively and referred to again by the same descriptor \u2014 tracks fine.\n\n3. The quadroon girl scene: Miss Ophelia returns to tell \"the girl\" she can do nothing \u2014 \"the girl\" refers back to \"the pretty young quadroon girl.\" Clear.\n\n4. \"I came to speak with you about that poor girl.\" \u2014 \"that poor girl\" \u2014 the quadroon girl was introduced paragraphs earlier, Miss Ophelia just came from her. Clear.\n\n5. The deed-of-gift scene in Ch 029 has St. Clare open a door: in the source he opens Marie's door; the draft says \"then opened the door\" with no destination named \u2014 but the next line is Marie speaking, so context is sufficient.\n\n6. In Ch 029: \"There, now, she's yours, body and soul,\" said St. Clare, handing the paper. / \"No more mine now than she was before,\" said Miss Ophelia. \u2014 The draft omits \"said Miss Ophelia\" in the source's original but the draft version does include it. Fine.\n\n7. \"They returned to the parlor.\" \u2014 the draft inserts this transition. Fine.\n\nLet me check one more carefully:\n\nIn Ch 030 draft: \"About a fortnight after the funeral, Miss Ophelia, busy in her apartment, heard a gentle tap. She opened the door; there stood the pretty young quadroon girl, her hair in disorder, eyes swelled with crying.\"\n\nThis is Rosa (authorized removal). The descriptor \"the pretty young quadroon girl\" is a fresh introduction with no \"whom we have often noticed\" gloss \u2014 but that's an authorized removal residue. The descriptor itself is sufficient for a reader to follow. Not a finding.\n\nAfter careful review, I find no valid structural coherence failures in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 24332,
+    "output_tokens": 687,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 16.87774109840393,
+    "stop_reason": "end_turn"
+  }
+}

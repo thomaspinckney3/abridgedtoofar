@@ -1,0 +1,24 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 6 of mobydick chapter 4: The Counterpane.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Ishmael.
+Primary frame action: urges Queequeg to hasten into his pantaloons for decency.
+Caption zone reserved for later lettering: bottom_center.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Ishmael (Narrator; lodging sailor at the Spouter-Inn): Young adult man, lean build, dark wavy hair to the ears, clean but travel-worn look; in a simple off-white 19th-century nightshirt when in bed. | Queequeg (Harpooner; Ishmael’s bedfellow): Powerfully built man with dark brown skin, dense black geometric tattoos covering arms and chest, short black hair; calm, self-possessed demeanor. When dressing: a very tall black felt beaver hat; later cowhide boots, pantaloons, waistcoat, and a heavy short pilot monkey jacket; carries a whaling harpoon.
+Prop continuity: washstand_and_mirror_shard: A small wash-stand table with a basin and a small piece of mirror tacked against the wall above. Avoid confusion: Do not show a full-length dressing mirror. | hard_soap_bar: A small off-white rectangular bar of hard soap. Avoid confusion: Do not depict it as food.
+Secondary supporting visuals only: Narrow street visible beyond an uncurtained window; A basin on the wash-stand and a small mirror piece on the wall
+Do not show: Readable text in the window view; Public onlookers’ faces in detail; Full nudity
+Scene: Ishmael, from the bedside, motions urgently toward the uncurtained window and the pantaloons while Queequeg, now in his trousers, stands at the wash-stand washing his chest and arms. Show the narrow street beyond the bare window without legible signage, and a small mirror piece above the basin. No readable text. Leave clean negative space in the bottom-center for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. major prop_confusion: Patchwork counterpane continuity is broken; the bedcover appears plain rather than a multicolor patchwork quilt.
+   Visible failure to avoid: The blanket over Ishmael is a uniform gray/white without small irregular squares or triangles.
+   Repair instruction: Replace the plain bedcover with the thick patchwork counterpane made of many small, irregular squares and triangles in mixed colors; keep it clearly a quilt on the bed and preserve clean negative space at bottom-center for the caption.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:22:43",
+  "key": "ed90fe5727970c4cef01151dce46c6f9",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying all seven tests and the gate test.\n\n---\n\n**Ch 132 Draft \u2014 scan**\n\nThe draft is a tight compression of a short dramatic chapter. Pip's speech \"I will never desert ye, sir\" originally included \"They tell me, sir, that Stubb did once desert poor little Pip\u2026\" as the motivating comparison. That context is cut, but the remaining line still parses and conveys loyalty independently. No broken pivot \u2014 the *reason* is enriched in the source but the draft sentence stands alone.\n\nAhab's merged farewell speech combines \"I tell thee no; it cannot be\" with \"Thou wilt often hear my ivory foot upon the deck\u2026\" \u2014 the source had an intermediate exchange (\"Oh good master, master, master!\" / \"Weep so, and I will murder thee!\") that is cut. The merged Ahab speech now reads as one unbroken utterance without the weeping trigger. This is a compression seam but not a broken pivot by rule 3 \u2014 no connective word creates the illusion of a two-sided structure.\n\nPip's final soliloquy loses \"Now were even poor Pip here I could endure it, but he's missing\" \u2014 the dissociated self-reference context \u2014 but the retained lines still parse.\n\nNo findings for Ch 132.\n\n---\n\n**Ch 134 Draft \u2014 scan**\n\n**\"Perth's levelled iron\"** \u2014 Does the draft establish who Perth is? Perth (the blacksmith) appears earlier in the novel and is a named character, not on the authorized minor-character removal list. He is not introduced or glossed in either of these two chapters' drafts. Test 7: is Perth a \"minor/removable\" character whose name appears without local identification? Perth is a named character who forged the harpoon; he is not a continuously present principal. The question is whether the immediately preceding draft chapter (Ch 132, the cabin scene) establishes who Perth is. It does not \u2014 he does not appear there. The source of Ch 134 also provides no appositive gloss for Perth; the source simply says \"Perth's levelled iron from the crotch.\" So the source itself treats Perth as already established by prior narrative \u2014 this is a case where the *source* also relies on cross-chapter continuity. Since the source provides no local gloss either, the draft's failure here is not a *compression artifact* \u2014 it is the same reliance on prior establishment that the source uses. This is not a valid finding under the rules (it is not a seam created by compression of *this* passage).\n\n**\"the life-buoy-coffin still lightly swung\"** \u2014 Test 6: The draft opens Ch 134 with \"the life-buoy-coffin still lightly swung.\" Does the previous draft chapter (Ch 132, the cabin scene) establish the life-buoy-coffin? Ch 132's draft does not mention it at all \u2014 it is a cabin dialogue chapter. Now: did the *source* of Ch 132 establish it? The Ch 132 source also does not mention the life-buoy-coffin. So this is continuity carried from chapters earlier than Ch 132/134 \u2014 it is not a mid-scene jump caused by compression of the immediately preceding chapter. Not a valid finding under rule 6 (which requires that \"the source of the *previous* chapter DID establish them in material that was dropped during compression\").\n\n**\"the crotch\"** \u2014 The draft mentions \"Perth's levelled iron from the crotch.\" The crotch is a technical whaling term (a notched rest for harpoons). Test 4: does the draft gloss it? The source also does not gloss \"the crotch\" in Ch 134 \u2014 it is treated as established vocabulary. No compression artifact here.\n\n**The hollow-cheeked captain** \u2014 Test 5/unattributed dialogue: \"Look!\" replied the hollow-cheeked captain, pointing his trumpet to the wreck.\" The source had \"replied the hollow-cheeked captain from his taffrail; and with his trumpet he pointed.\" The draft merges these. Parses fine.\n\n**\"place the plank, lift the body\"** \u2014 The source has the captain say \"place the plank then on the rail, and lift the body.\" The draft cuts \"then on the rail\" but the action is still parseable.\n\nNo structurally damaged findings for Ch 134 either.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 4527,
+    "output_tokens": 1012,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 23.956655979156494,
+    "stop_reason": "end_turn"
+  }
+}

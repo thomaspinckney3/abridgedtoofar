@@ -1,0 +1,196 @@
+{
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 0,
+        "severe_count": 0,
+        "finding_count": 0
+      }
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Prominent shark jawbone arch behind the landlord is not specified in the storyboard and can distract from the primary action.",
+          "visible_evidence": "A large semicircular jaw with many pointed teeth frames the landlord behind the bar, spanning from counter to ceiling.",
+          "repair_prompt": "Remove the oversized shark jawbone behind the bar. Replace with understated shelves and a cracked-glass curios case as background dressing. Keep the two-shot focus on Ishmael and the landlord and preserve clear bottom-center negative space for the caption."
+        }
+      ],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 21,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Specified candle prop is missing.",
+          "visible_evidence": "No candle or holder is visible on walls, table surfaces, stove, or window ledge.",
+          "repair_prompt": "Add a plain tallow candle in a small brass or tin holder on a nearby ledge or stool near the bench, with a modest flame and no readable labels; keep the top-right caption area clear."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Landlord is actively planing rather than lowering the plane as described.",
+          "visible_evidence": "Peter Coffin is shown pushing a carpenter\u2019s plane across a board on a workbench with shavings curling up.",
+          "repair_prompt": "Pose the landlord a step later in the motion with the plane lowered at his side or just set down on the bench, glancing toward Ishmael."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Wood shavings are concentrated by the workbench rather than near the bench where Ishmael attempts to lie.",
+          "visible_evidence": "Shavings are visible on the floor under and beside the workbench on the left; the floor around the bench on the right is mostly clean.",
+          "repair_prompt": "Scatter a few wood shavings near the base of the wooden bench to echo recent carpentry without cluttering the caption zone."
+        }
+      ],
+      "selected_candidate": "selectedrepair",
+      "selection_score": {
+        "weighted_score": 3,
+        "severe_count": 0,
+        "finding_count": 3
+      }
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-left caption zone is partially occupied by Ishmael\u2019s coat and trousers, reducing clean negative space for lettering.",
+          "visible_evidence": "The lower-left corner shows Ishmael\u2019s dark clothing and his extended arm intruding toward that area; only a narrow sliver of blank wall remains.",
+          "repair_prompt": "Recompose slightly to clear the bottom-left: nudge Ishmael and his pointing arm a bit right, or expand the blank wall margin on the lower-left; keep lighting and poses, preserve tight two-shot."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "The \u2018stick shaving on the landlord\u2019s fingers\u2019 is not clearly visible on his fingers; most shavings are on the tabletop.",
+          "visible_evidence": "Small wood curls lie on the table near the candle, while the landlord\u2019s fingers appear mostly clean.",
+          "repair_prompt": "Add a thin, curling wood shaving draped over or pinched between the landlord\u2019s fingers to emphasize mid-whittle detail."
+        }
+      ],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 11,
+        "severe_count": 1,
+        "finding_count": 2
+      }
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Papered fireboard, listed as a visible prop, is not shown.",
+          "visible_evidence": "Room walls are bare except for a door at right and gear at left; no fireplace opening or papered panel is visible anywhere in the frame.",
+          "repair_prompt": "Add a simple fireplace on one wall closed by a thin papered fireboard with non-readable patterned paper; keep it subdued and in background, maintain clean top-center caption space, and avoid any readable imagery or text."
+        }
+      ],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 6,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "Harpoon is displayed across the fireplace mantel instead of standing by the bed as a background prop.",
+          "visible_evidence": "A long iron harpoon lies horizontally on the mantel above the hearth and candle.",
+          "repair_prompt": "Remove the harpoon from the mantel; if included at all, place a tall iron harpoon upright at the bed\u2019s head as a background element, or omit it for this frame."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Tomahawk-pipe and seal-skin wallet on a sea chest are missing despite being specified supporting visuals.",
+          "visible_evidence": "No tomahawk-shaped pipe, wallet, or sea chest is visible near the bed or hearth; only a chair with the grego and a seaman\u2019s bag are present.",
+          "repair_prompt": "Add a sea chest near the bed with a tomahawk-shaped pipe and a small seal-skin wallet resting on it; keep them unobtrusive."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Papered fireboard set aside is not shown.",
+          "visible_evidence": "Open hearth with andirons and a small blaze, but no thin papered fireboard panel propped nearby.",
+          "repair_prompt": "Include a thin, printed-paper-covered fireboard panel leaned to one side of the fireplace with no readable imagery."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Biscuit used to tend the small blaze is not visible.",
+          "visible_evidence": "Queequeg kneels and reaches toward the fire, but no biscuit is shown in hand or within reach.",
+          "repair_prompt": "Depict a small hard biscuit in Queequeg\u2019s hand or set at the hearth\u2019s edge as he tends the shavings."
+        }
+      ],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 13,
+        "severe_count": 1,
+        "finding_count": 4
+      }
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Extra set-dressing not in contract (wooden chest with coiled rope and glass bottles) may confuse prop continuity around the seaman\u2019s bag.",
+          "visible_evidence": "Lower-left foreground shows a wooden chest with thick rope draped over it; two bottles sit on the left dresser.",
+          "repair_prompt": "Remove the wooden chest and bottles, or push them into deep shadow. If a luggage prop is desired, replace with a soft-sided, weathered canvas sea-bag cinched with rope."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Queequeg\u2019s skin tone does not show the described purplish-yellow cast.",
+          "visible_evidence": "Queequeg is rendered with a medium brown tone under warm light without the specified purplish-yellow hue.",
+          "repair_prompt": "Grade Queequeg\u2019s skin toward a subtle purplish-yellow cast while keeping his dark square tattoo patterns distinct."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Specified ash flecks from the pipe are not visible on the blanket.",
+          "visible_evidence": "Despite smoke from the tomahawk-pipe, the blanket surface near the bowl appears clean with no specks.",
+          "repair_prompt": "Add a few tiny, nonsparking ash flecks on the blanket beneath the pipe bowl; keep them subtle so they don\u2019t draw focus."
+        }
+      ],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 23,
+        "severe_count": 0,
+        "finding_count": 3
+      }
+    },
+    {
+      "frame_number": 8,
+      "valid": true,
+      "findings": [],
+      "selected_candidate": "selected",
+      "selection_score": {
+        "weighted_score": 0,
+        "severe_count": 0,
+        "finding_count": 0
+      }
+    }
+  ]
+}

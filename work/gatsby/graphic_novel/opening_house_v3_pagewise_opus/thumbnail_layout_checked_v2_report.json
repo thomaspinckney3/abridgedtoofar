@@ -1,0 +1,25 @@
+{
+  "panels_processed": 16,
+  "archetypes": {
+    "caption_action": 14,
+    "single_speaker": 2
+  },
+  "warnings": [
+    {
+      "page_number": 1,
+      "panel_number": 2,
+      "code": "panel_missing_caption",
+      "message": "Every panel must carry one in-panel caption for automated story flow."
+    }
+  ],
+  "source_storyboard": "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/storyboard.json",
+  "output_storyboard": "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/storyboard.thumbnail_checked_v2.json",
+  "source_root": null,
+  "source_frames_loaded": 0,
+  "rough_pages": [
+    "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/thumbnail_rough_pages_v2/page_001.png",
+    "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/thumbnail_rough_pages_v2/page_002.png",
+    "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/thumbnail_rough_pages_v2/page_003.png",
+    "work/gatsby/graphic_novel/opening_house_v3_pagewise_opus/thumbnail_rough_pages_v2/page_004.png"
+  ]
+}

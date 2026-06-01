@@ -1,0 +1,54 @@
+{
+  "book_id": "gatsby",
+  "requested_pairs": [
+    "002-003",
+    "008-009"
+  ],
+  "findings_seen": 2,
+  "findings_selected": 2,
+  "findings_filtered": 0,
+  "filtered_findings": [],
+  "pairs_processed": 2,
+  "pairs_applied": 1,
+  "pairs_no_change": 0,
+  "pairs_failed": 0,
+  "pairs_no_findings": 1,
+  "pairs": [
+    {
+      "pair": "002-003",
+      "status": "applied",
+      "findings": 2,
+      "attempts": 1,
+      "changed_segments": [
+        "002",
+        "003"
+      ],
+      "before_words": {
+        "002": 2789,
+        "003": 3381
+      },
+      "after_words": {
+        "002": 2816,
+        "003": 3402
+      },
+      "edits": [
+        {
+          "segment_id": "002-dangling-voice",
+          "change": "Finding 1: 'His voice faded off' reads as Tom's voice fading because Tom was the last speaker in the draft. Restore Wilson's interrupted line ('I don't mean that… I just meant—') immediately before so the pronoun clearly belongs to Wilson, matching the source."
+        },
+        {
+          "segment_id": "003-lucille-unglossed",
+          "change": "Finding 2: 'Lucille' is named without prior introduction in the draft. In the passage where the girl says 'The last one was the one I met you at,' restore a brief exchange that names Lucille before she speaks her opinion, matching the source's 'It was for Lucille, too. / I like to come, Lucille said.'"
+        }
+      ],
+      "dry_run": false
+    },
+    {
+      "pair": "008-009",
+      "status": "no_findings",
+      "findings": 0,
+      "attempts": 0,
+      "changed": []
+    }
+  ]
+}

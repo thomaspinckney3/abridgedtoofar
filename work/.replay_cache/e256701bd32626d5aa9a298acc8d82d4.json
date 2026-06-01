@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:29:06",
+  "key": "e256701bd32626d5aa9a298acc8d82d4",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter draft carefully, applying the gate test strictly.\n\n---\n\n**Ch 009 draft scan**\n\n- \"But New Bedford beats all Water Street and Wapping.\" \u2014 \"Water Street and Wapping\" are presented as comparators without gloss in the draft. The source set them up as \"last-mentioned haunts\" after listing several other port districts. In the draft the preceding sentence only says \"any considerable seaport will offer\u2026\" so \"Water Street and Wapping\" appear without identification. However, the phrase functions as a rhetorical flourish naming famous sailor districts; a competent reader can infer they are comparable ports without being *misled*. Borderline, but the reader is not confused about the argument \u2014 just missing color. Not a finding.\n\n- \"Besides the Feegeeans, Tongatobooarrs, Erromanggoans, and Pannangians, there weekly arrive scores of green Vermonters\u2026\" \u2014 The source separates these two groups with \"and, besides the wild specimens of the whaling-craft which unheeded reel about the streets, you will see other sights still more curious.\" The draft collapses them into one \"Besides X, Y\" sentence, which reads as if the Vermonters are being contrasted *with* or *added to* the Feegeeans etc. This is slightly awkward but not actually confusing \u2014 a reader understands the Vermonters are a different category of visitor. Not a structural failure.\n\n- \"No town-bred dandy will compare with a country-bred one.\" \u2014 The source has a definitional gloss: \"I mean a downright bumpkin dandy \u2014 a fellow that, in the dog-days, will mow his two acres in buckskin gloves for fear of tanning his hands.\" Without this, \"country-bred dandy\" is still parseable and clear enough from context (the previous sentence established Vermont/New Hampshire farm boys). Not a finding.\n\n- \"In bespeaking his sea-outfit, he orders bell-buttons to his waistcoats; straps to his canvas trowsers.\" \u2014 The pronoun \"he\" \u2014 its antecedent in the draft is \"a country-bred one\" (the country dandy). That survives in the draft. Clear enough.\n\nCh 009 draft appears structurally sound.\n\n---\n\n**Ch 010 draft scan**\n\n- \"The sky had changed from clear cold to driving sleet and mist.\" \u2014 The source introduced this with \"Returning from my first morning stroll, I again sallied out upon this special errand.\" That orienting sentence is cut. The draft opens the chapel scene with \"In New Bedford stands a Whaleman's Chapel; few are the moody fishermen\u2026 who fail to make a Sunday visit there.\" Then immediately: \"The sky had changed from clear cold to driving sleet and mist.\" The word \"changed\" implies a prior state. The prior state (sunny cold) was in the source but survives partially (\"clear cold\") in the draft. \"Had changed\" still implies a transition *from* something, and \"clear cold\" is present. A reader understands the weather shifted. Not a structural failure.\n\n- \"Shaking off the sleet, I seated myself near the door, and was surprised to see Queequeg.\" \u2014 The source has: \"Shaking off the sleet from my ice-glazed hat and jacket, I seated myself near the door, and turning sideways was surprised to see Queequeg near me. Affected by the solemnity of the scene, there was a wondering gaze of incredulous curiosity in his countenance. This savage was the only person present who seemed to notice my entrance; because he was the only one who could not read, and, therefore, was not reading those frigid inscriptions on the wall.\" All of that explanatory material is cut. What remains is: \"was surprised to see Queequeg.\" Then the draft jumps directly to the grieving women. The surprise at seeing Queequeg is left hanging \u2014 no reason is given, no reaction follows. Is the reader *confused*? They know Queequeg from earlier chapters; seeing him in a chapel might be mildly surprising. The sentence parses and the reader is not misled. The cut removes richness, not structure. Not a finding.\n\n- \"So plainly did several women wear the countenance of unceasing grief, that I felt sure here were assembled those in whose unhealing hearts the sight of those bleak tablets caused old wounds to bleed afresh.\" \u2014 The source links this to prior material about \"relatives of the seamen whose names appeared there.\" That setup is cut. The draft sentence does stand on its own \u2014 \"those bleak tablets\" refers to the tablets just quoted. Parseable. Not a finding.\n\n- \"Yes, Ishmael, the same fate may be thine.\" \u2014 In the source this is preceded by: \"It needs scarcely to be told, with what feelings, on the eve of a Nantucket voyage, I regarded those marble tablets, and by the murky light of that darkened, doleful day read the fate of the whalemen who had gone before me.\" That whole setup is cut. \"Yes, Ishmael, the same fate may be thine\" \u2014 the word \"Yes\" functions as an affirmation of something just stated or implied. In the draft, the immediately preceding paragraph ends: \"What deadly voids in the lines that seem to gnaw upon all Faith.\" Then: \"But Faith, like a jackal, feeds among the tombs, and even from these dead doubts she gathers her most vital hope.\" Then directly: \"Yes, Ishmael, the same fate may be thine.\" \n\nThe \"Yes\" reads as a pivot affirming something \u2014 in the source it affirms the explicit statement about reading the fate of dead whalemen. In the draft, what does it affirm? The preceding sentence is about Faith gathering hope from dead doubts \u2014 an upward-turning note. \"Yes, Ishmael, the same fate may be thine\" then pivots downward. The \"Yes\" has no logical anchor in the draft; it appears to agree with something that was cut. This is a **broken logical pivot**: the \"Yes\" confirms a proposition (\"the same fate may be thine\" = you too may die at sea) that was explicitly set up in the source (\"I read the fate of the whalemen who had gone before me\") but that setup was cut. A reader would genuinely wonder what \"Yes\" is affirming \u2014 it appears as one side of a two-sided structure whose first side was removed.\n\n- \"A stove boat will make me an immortal by brevet.\" \u2014 In the source: \"Delightful inducements to embark, fine chance for promotion, it seems\u2014aye, a stove boat will make me an immortal by brevet.\" The ironic setup (\"fine chance for promotion\") is cut. The draft sentence has no preceding ironic framing. Does \"A stove boat will make me an immortal by brevet\" parse standalone? \"Brevet\" (an honorary promotion) is a slightly technical military term, and \"immortal by brevet\" is a dark joke. Without the \"fine chance for promotion\" setup, the joke's scaffolding is gone but the sentence still parses as sardonic bravado. A competent reader can follow it, especially since the preceding sentence says \"But somehow I grew merry again.\" The irony is accessible. Not a structural failure \u2014 merely less signposted.\n\n---\n\n**Summary of valid findings:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Yes, Ishmael, the same fate may be thine. But somehow I grew merry again.\",\n    \"source_has\": \"It needs scarcely to be told, with what feelings, on the eve of a Nantucket voyage, I regarded those marble tablets, and by the murky light of that darkened, doleful day read the fate of the whalemen who had gone before me. Yes, Ishmael, the same fate may be thine.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the 'Yes' affirms a proposition ('you too may share the whalemen's fatal fate') that was made explicit in the cut framing sentence; without it, 'Yes' floats without a logical anchor, and the reader cannot tell what the narrator is agreeing with.\"\n  }\n]\n```",
+    "input_tokens": 6002,
+    "output_tokens": 1915,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 37.68065786361694,
+    "stop_reason": "end_turn"
+  }
+}

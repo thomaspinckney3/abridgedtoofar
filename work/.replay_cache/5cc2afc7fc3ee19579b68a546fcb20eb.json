@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:29:28",
+  "key": "5cc2afc7fc3ee19579b68a546fcb20eb",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to each candidate.\n\n---\n\n**Ch 010 draft \u2014 candidates**\n\n*\"Shaking off the sleet, I seated myself near the door, and was surprised to see Queequeg.\"*\n\nIn the source, the narrator notes that Queequeg could not read and so was the only one to notice his entrance \u2014 establishing why Queequeg's presence is remarked on. The draft cuts that explanation but the sentence still parses. A reader is not confused; they simply see an unremarkable observation. Not a valid finding.\n\n*\"Yes, Ishmael, the same fate may be thine. But somehow I grew merry again.\"*\n\nThe source has: \"on the eve of a Nantucket voyage, I regarded those marble tablets\u2026Yes, Ishmael, the same fate may be thine.\" The draft cuts the framing clause but \"Yes, Ishmael, the same fate may be thine\" still reads as a self-address following contemplation of the memorial tablets, which the draft has just presented. \"But somehow I grew merry again\" \u2014 the pivot word \"but\" contrasts with a mood of solemnity/dread. The draft does retain the tablets, the grief, the fatal inscriptions, and the \"What deadly voids\" meditation immediately before. The reader can reconstruct that the narrator was somber and then grew merry. Not a broken pivot in the structural sense \u2014 the somber material survives in the draft.\n\n*\"A stove boat will make me an immortal by brevet.\"*\n\nIn the source this is: \"Delightful inducements to embark, fine chance for promotion, it seems \u2014 aye, a stove boat will make me an immortal by brevet.\" The draft drops the sardonic setup (\"Delightful inducements\u2026fine chance for promotion, it seems\") leaving only the punch line. Does the sentence parse without it? It parses grammatically. Is a reader confused? Slightly odd without the sarcastic framing, but readable as dark humor. The gate test: less ornamented, not structurally broken. Not valid.\n\n---\n\n**Ch 011 draft \u2014 candidates**\n\n*\"I was not prepared to see him, after gaining the height, slowly turn round, and stooping over the pulpit, deliberately drag up the ladder step by step, till the whole was deposited within, leaving him impregnable in his little Quebec.\"*\n\nThe source spends a paragraph explaining the unusual construction of the side ladder (cloth-covered rope, wooden rounds, joints) precisely to establish why the ladder could be pulled up and why \"these joints in the present instance seemed unnecessary.\" The draft cuts all of that. But does the sentence parse? Yes \u2014 a reader simply sees Father Mapple pull the ladder up into the pulpit. They may find \"impregnable in his little Quebec\" vivid but slightly puzzling as to mechanism; however, the core event (ladder pulled up, man isolated) is fully clear. Gate test: less explained, not confusing. Not valid.\n\n*\"There must be some sober reason; it must symbolize something unseen.\"*\n\nIn the source this is introduced with \"I pondered some time without fully comprehending the reason for this. Father Mapple enjoyed such a wide reputation for sincerity and sanctity, that I could not suspect him of courting notoriety by any mere tricks of the stage. No, thought I, there must be some sober reason\u2026\" The draft cuts the deliberative build-up. But \"There must be some sober reason; it must symbolize something unseen\" is a broken pivot in a mild sense \u2014 but the referent (\"this thing\" / the act of pulling up the ladder) is established in the immediately preceding draft sentence. It parses. Not a structural failure.\n\n*\"something like that silver plate now inserted into the Victory's plank where Nelson fell\"*\n\nNo gloss is given for \"the Victory\" or the Nelson allusion. But Nelson and the Victory are a matter of general cultural literacy, not a minor proper name requiring a local gloss under rule 7. Not valid.\n\nNo valid findings in either chapter.\n\n```json\n[]\n```",
+    "input_tokens": 6237,
+    "output_tokens": 930,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.01731300354004,
+    "stop_reason": "end_turn"
+  }
+}

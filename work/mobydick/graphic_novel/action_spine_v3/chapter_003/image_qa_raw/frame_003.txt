@@ -1,0 +1,27 @@
+{
+  "frame_number": 3,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Specified candle prop is missing.",
+      "visible_evidence": "No candle or holder is visible on walls, table surfaces, stove, or window ledge.",
+      "repair_prompt": "Add a plain tallow candle in a small brass or tin holder on a nearby ledge or stool near the bench, with a modest flame and no readable labels; keep the top-right caption area clear."
+    },
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "Landlord is actively planing rather than lowering the plane as described.",
+      "visible_evidence": "Peter Coffin is shown pushing a carpenter’s plane across a board on a workbench with shavings curling up.",
+      "repair_prompt": "Pose the landlord a step later in the motion with the plane lowered at his side or just set down on the bench, glancing toward Ishmael."
+    },
+    {
+      "severity": "minor",
+      "category": "other",
+      "finding": "Wood shavings are concentrated by the workbench rather than near the bench where Ishmael attempts to lie.",
+      "visible_evidence": "Shavings are visible on the floor under and beside the workbench on the left; the floor around the bench on the right is mostly clean.",
+      "repair_prompt": "Scatter a few wood shavings near the base of the wooden bench to echo recent carpentry without cluttering the caption zone."
+    }
+  ]
+}

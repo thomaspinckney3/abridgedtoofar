@@ -1,0 +1,81 @@
+{
+  "ts": "2026-05-08T18:20:18",
+  "key": "227f5a77a925e4e241843e689e8834e2",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "draft",
+    "hash": "9051cf285d6ab6095a24d0887ebc4cd4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/drafter.py",
+        "sha256": "7b528c6eeb991962ac87433eecf551d6e5701b918acc79a0904da5eaecd834b8",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/motif_ledger.py",
+        "sha256": "e954339be994d3c05b158ff34567bb3fe48f5aa4d1df25b4c7b85e9562aa80d4",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "forage/text_norm.py",
+        "sha256": "203b6456278189eb60b29a06ac25d406164940f405e6f9129b7f2f76c53ce64b",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_lean.md",
+        "sha256": "1ec9e462dab787b602c28800358c800ee1bc882b42b56c4f009f6ab141178152",
+        "missing": false
+      },
+      {
+        "path": "prompts/draft_segment.md",
+        "sha256": "45996981ceee16182e89bd7dbdc5983a8446045506ece4efebc6fcca9a43c6ac",
+        "missing": false
+      },
+      {
+        "path": "spec/ABRIDGMENT_SPEC.md",
+        "sha256": "a1d6760a2bf9cbc19d1e92214903cbd1fc03dcbe4e7692307df7e3170c918f7d",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "The Little Evangelist\n\nIt was Sunday afternoon. St. Clare lay on a bamboo lounge in the verandah, solacing himself with a cigar. Marie reclined on a sofa, opposite the window, closely secluded, under an awning of transparent gauze, from the outrages of the mosquitos, languidly holding an elegantly bound prayer-book, and taking a succession of short naps with it open in her hand.\n\nMiss Ophelia, who had hunted up a small Methodist meeting within riding distance, had gone out, with Uncle Tom as driver; and Eva had accompanied them.\n\n\u201cI say, Augustine,\u201d said Marie, after dozing a while, \u201cI must send to the city after my old Doctor Posey; I\u2019m sure I\u2019ve got the complaint of the heart.\u201d\n\n\u201cWell; why need you send for him? This doctor that attends Eva seems skilful.\u201d\n\n\u201cI would not trust him in a critical case,\u201d said Marie. \u201cMy distress about Eva, and the exertions I have made with that dear child, have developed what I have long suspected.\u201d\n\n\u201cIf it\u2019s particularly agreeable to you to have heart disease, why, I\u2019ll try and maintain you have it,\u201d said St. Clare.\n\nA carriage drove up before the verandah, and Eva and Miss Ophelia alighted. Miss Ophelia marched straight to her chamber to put away her bonnet and shawl, as was always her manner, while Eva, at St. Clare\u2019s call, sat on his knee, telling of the services.\n\nThey soon heard loud exclamations from Miss Ophelia\u2019s room, and violent reproof addressed to somebody.\n\n\u201cWhat new witchcraft has Tops been brewing?\u201d asked St. Clare. \u201cThat commotion is of her raising, I\u2019ll be bound!\u201d\n\nIn a moment Miss Ophelia, in high indignation, came dragging the culprit along.\n\n\u201cCome out here, now!\u201d she said. \u201cI will tell your master!\u201d\n\n\u201cWhat\u2019s the case now?\u201d asked Augustine.\n\n\u201cThe case is, that I cannot be plagued with this child any longer! It\u2019s past all bearing; flesh and blood cannot endure it! Here, I locked her up, and gave her a hymn to study; and what does she do, but spy out where I put my key, and has gone to my bureau, and got a bonnet-trimming, and cut it all to pieces to make dolls\u2019 jackets! I never saw anything like it, in my life!\u201d\n\n\u201cI told you, Cousin,\u201d said Marie, \u201cthat you\u2019d find out these creatures can\u2019t be brought up without severity. If I had my way, now, I\u2019d send that child out, and have her thoroughly whipped; I\u2019d have her whipped till she couldn\u2019t stand!\u201d\n\n\u201cI don\u2019t doubt it,\u201d said St. Clare. \u201cTell me of the lovely rule of woman! I never saw above a dozen women that wouldn\u2019t half kill a horse, or a servant, either, if they had their own way with them!\u2014let alone a man.\u201d\n\n\u201cThere is no use in this shilly-shally way of yours, St. Clare!\u201d said Marie. \u201cCousin is a woman of sense, and she sees it now, as plain as I do.\u201d\n\n\u201cI wouldn\u2019t have the child treated so, for the world,\u201d said Miss Ophelia, though her housekeeper\u2019s indignation had been pretty actively roused. \u201cBut I am sure, Augustine, I don\u2019t know what to do. I\u2019ve taught and taught; I\u2019ve talked till I\u2019m tired; I\u2019ve whipped her; I\u2019ve punished her in every way I can think of, and she\u2019s just what she was at first.\u201d\n\n\u201cCome here, Tops, you monkey!\u201d said St. Clare.\n\nTopsy came up; her round, hard eyes glittering and blinking with a mixture of apprehensiveness and their usual odd drollery.\n\n\u201cWhat makes you behave so?\u201d said St. Clare, amused in spite of himself.\n\n\u201cSpects it\u2019s my wicked heart,\u201d said Topsy, demurely; \u201cMiss Feely says so.\u201d\n\n\u201cDon\u2019t you see how much Miss Ophelia has done for you? She says she has done everything she can think of.\u201d\n\n\u201cLor, yes, Mas\u2019r! old Missis used to say so, too. She whipped me a heap harder, and used to pull my har, and knock my head agin the door; but it didn\u2019t do me no good! I spects, if they \u2019s to pull every spear o\u2019 har out o\u2019 my head, it wouldn\u2019t do no good, neither,\u2014I \u2019s so wicked! Laws! I \u2019s nothin but a nigger, no ways!\u201d\n\n\u201cWell, I shall have to give her up,\u201d said Miss Ophelia; \u201cI can\u2019t have that trouble any longer.\u201d\n\n\u201cWell, I\u2019d just like to ask one question,\u201d said St. Clare. \u201cWhy, if your Gospel is not strong enough to save one heathen child, that you can have at home here, all to yourself, what\u2019s the use of sending one or two poor missionaries off with it among thousands of just such? I suppose this child is about a fair sample of what thousands of your heathen are.\u201d\n\nMiss Ophelia did not immediately answer; and Eva, who had stood a silent spectator, made a silent sign to Topsy to follow her. They went into a little glass-room at the corner of the verandah, which St. Clare used as a reading-room.\n\n\u201cWhat\u2019s Eva going about, now?\u201d said St. Clare. He lifted a curtain that covered the glass-door, and, laying his finger on his lips, made a silent gesture to Miss Ophelia to look. There sat the two children on the floor, side faces towards them: Topsy with her usual air of careless drollery; opposite, Eva, her whole face fervent with feeling, tears in her large eyes.\n\n\u201cWhat does make you so bad, Topsy? Why won\u2019t you try and be good? Don\u2019t you love anybody, Topsy?\u201d\n\n\u201cDonno nothing \u2019bout love; I loves candy and sich, that\u2019s all,\u201d said Topsy.\n\n\u201cBut you love your father and mother?\u201d\n\n\u201cNever had none, ye know. I telled ye that, Miss Eva.\u201d\n\n\u201cO, I know,\u201d said Eva, sadly; \u201cbut hadn\u2019t you any brother, or sister, or aunt, or\u2014\u201d\n\n\u201cNo, none on \u2019em,\u2014never had nothing nor nobody.\u201d\n\n\u201cBut, Topsy, if you\u2019d only try to be good, you might\u2014\u201d\n\n\u201cCouldn\u2019t never be nothin\u2019 but a nigger, if I was ever so good,\u201d said Topsy. \u201cIf I could be skinned, and come white, I\u2019d try then.\u201d\n\n\u201cBut people can love you, if you are black, Topsy. Miss Ophelia would love you, if you were good.\u201d\n\nTopsy gave the short, blunt laugh that expressed her incredulity.\n\n\u201cDon\u2019t you think so?\u201d said Eva.\n\n\u201cNo; she can\u2019t bar me, \u2019cause I\u2019m a nigger!\u2014she\u2019d \u2019s soon have a toad touch her! There can\u2019t nobody love niggers, and niggers can\u2019t do nothin\u2019! I don\u2019t care,\u201d said Topsy, beginning to whistle.\n\n\u201cO, Topsy, poor child, I love you!\u201d said Eva, with a sudden burst, laying her little thin, white hand on Topsy\u2019s shoulder. \u201cI love you, because you haven\u2019t had any father, or mother, or friends;\u2014because you\u2019ve been a poor, abused child! I love you, and I want you to be good. I am very unwell, Topsy, and I think I shan\u2019t live a great while; and it really grieves me, to have you be so naughty. I wish you would try to be good, for my sake;\u2014it\u2019s only a little while I shall be with you.\u201d\n\nThe round, keen eyes of the black child were overcast with tears; large, bright drops fell on the little white hand. She laid her head down between her knees, and wept and sobbed; while the beautiful child, bending over her, looked like some bright angel stooping to reclaim a sinner.\n\n\u201cPoor Topsy!\u201d said Eva, \u201cdon\u2019t you know that Jesus loves all alike? He is just as willing to love you, as me. He loves you just as I do,\u2014only more, because he is better. He will help you to be good; and you can go to Heaven at last, and be an angel forever, just as much as if you were white. Only think of it, Topsy!\u2014you can be one of those spirits bright, Uncle Tom sings about.\u201d\n\n\u201cO, dear Miss Eva, dear Miss Eva!\u201d said the child; \u201cI will try, I will try; I never did care nothin\u2019 about it before.\u201d\n\nSt. Clare dropped the curtain. \u201cIt puts me in mind of mother,\u201d he said to Miss Ophelia. \u201cIt is true what she told me; if we want to give sight to the blind, we must be willing to do as Christ did,\u2014call them to us, and put our hands on them.\u201d\n\n\u201cI\u2019ve always had a prejudice against negroes,\u201d said Miss Ophelia, low. \u201cAnd it\u2019s a fact, I never could bear to have that child touch me; but, I don\u2019t think she knew it.\u201d\n\n\u201cTrust any child to find that out,\u201d said St. Clare. \u201cThere\u2019s no keeping it from them. I believe that all the trying in the world to benefit a child, and all the substantial favors you can do them, will never excite one emotion of gratitude, while that feeling of repugnance remains in the heart;\u2014it\u2019s a queer kind of a fact,\u2014but so it is.\u201d\n\n\u201cI don\u2019t know how I can help it,\u201d said Miss Ophelia; \u201cthey are disagreeable to me,\u2014this child in particular,\u2014how can I help feeling so?\u201d\n\n\u201cEva does, it seems.\u201d\n\n\u201cWell, she\u2019s so loving! After all, though, she\u2019s no more than Christ-like,\u201d said Miss Ophelia. \u201cI wish I were like her. She might teach me a lesson.\u201d\n\n\u201cIt wouldn\u2019t be the first time a little child had been used to instruct an old disciple, if it were so,\u201d said St. Clare.",
+    "input_tokens": 12104,
+    "output_tokens": 4322,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 38.44953513145447,
+    "stop_reason": "stop"
+  }
+}

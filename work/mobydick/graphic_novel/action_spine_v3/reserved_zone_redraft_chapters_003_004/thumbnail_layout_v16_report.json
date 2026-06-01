@@ -1,0 +1,53 @@
+{
+  "panels_processed": 20,
+  "archetypes": {
+    "caption_action": 8,
+    "single_speaker": 8,
+    "two_speaker_exchange": 4
+  },
+  "warnings": [
+    {
+      "page_number": 5,
+      "panel_number": 7,
+      "code": "caption_contains_direct_speech",
+      "message": "Narrator captions must not contain quoted spoken dialogue; move the line to a speech balloon or paraphrase it as action.",
+      "text": "He sprang into bed with the tomahawk-pipe. Peter Coffin said, \"Don’t be afraid; Queequeg won’t harm a hair of your head.\""
+    },
+    {
+      "page_number": 5,
+      "panel_number": 7,
+      "code": "extra_figures_suppressed_for_panel_size",
+      "message": "Only wide-tall panels may stage three visible figures; extra non-speaking figures were omitted from the thumbnail contract.",
+      "panel_box": {
+        "x": 0.0156,
+        "y": 0.0117,
+        "w": 0.9688,
+        "h": 0.4839
+      },
+      "source_people": [
+        "Ishmael",
+        "Queequeg",
+        "Peter Coffin"
+      ],
+      "figures_kept": [
+        "Queequeg",
+        "Ishmael"
+      ]
+    }
+  ],
+  "source_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v7_policy_cleaned.json",
+  "output_storyboard": "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/storyboard_dialogue_v16_thumbnail_layout.json",
+  "source_root": "work/mobydick/graphic_novel/action_spine_v3",
+  "source_frames_loaded": 23,
+  "rough_pages": [
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_001.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_002.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_003.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_004.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_005.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_006.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_007.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_008.png",
+    "work/mobydick/graphic_novel/action_spine_v3/reserved_zone_redraft_chapters_003_004/thumbnail_rough_pages_v16/page_009.png"
+  ]
+}

@@ -1,14 +1,61 @@
 {
-  "ts": "2026-04-22T22:15:59",
+  "ts": "2026-05-07T13:40:47",
   "key": "cb68da6f4a0bb2ce2288efe713eac314",
   "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "classify",
+    "hash": "df189ba6187641bd2db2709d3379fe11",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_classifier.py",
+        "sha256": "057d9dce3dd5d6ebc6ff94f20a9b17c4e7317618be01f7f791e8a1ac56845afb",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/classify_chapters.md",
+        "sha256": "be91bb67e4fecc47bf1fa8e2590b6aae1e59c823deab167c5d7a75ff3a0d62c0",
+        "missing": false
+      }
+    ]
+  },
   "response": {
-    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"extradiegetic\", \"reason\": \"Title page only, no narrative content\"},\n  {\"id\": \"002\", \"status\": \"toc_fragment\", \"reason\": \"Table of contents listing\"},\n  {\"id\": \"003\", \"status\": \"extradiegetic\", \"reason\": \"Copyright and legal notice\"},\n  {\"id\": \"004\", \"status\": \"extradiegetic\", \"reason\": \"Author's promotional note and newsletter links\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter 1 narrative prose\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter 2 narrative prose\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter 3 narrative prose\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter 4 narrative prose\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter 5 narrative prose\"},\n  {\"id\": \"010\", \"status\": \"diegetic\", \"reason\": \"Chapter 6 narrative prose\"},\n  {\"id\": \"011\", \"status\": \"diegetic\", \"reason\": \"Chapter 7 narrative prose\"},\n  {\"id\": \"012\", \"status\": \"diegetic\", \"reason\": \"Chapter 8 narrative prose\"},\n  {\"id\": \"013\", \"status\": \"diegetic\", \"reason\": \"Chapter 9 narrative prose\"},\n  {\"id\": \"014\", \"status\": \"diegetic\", \"reason\": \"Chapter 10 narrative prose\"},\n  {\"id\": \"015\", \"status\": \"diegetic\", \"reason\": \"Chapter 11 narrative prose\"},\n  {\"id\": \"016\", \"status\": \"diegetic\", \"reason\": \"Chapter 12 narrative prose\"},\n  {\"id\": \"017\", \"status\": \"diegetic\", \"reason\": \"Chapter 13 narrative prose\"},\n  {\"id\": \"018\", \"status\": \"diegetic\", \"reason\": \"Chapter 14 narrative prose\"},\n  {\"id\": \"019\", \"status\": \"diegetic\", \"reason\": \"Chapter 15 narrative prose\"},\n  {\"id\": \"020\", \"status\": \"diegetic\", \"reason\": \"Sneak peek excerpt is narrative fiction content\"},\n  {\"id\": \"021\", \"status\": \"extradiegetic\", \"reason\": \"Author's review request to readers\"},\n  {\"id\": \"022\", \"status\": \"extradiegetic\", \"reason\": \"Newsletter promotional material\"},\n  {\"id\": \"023\", \"status\": \"extradiegetic\", \"reason\": \"Author's series bibliography list\"},\n  {\"id\": \"024\", \"status\": \"extradiegetic\", \"reason\": \"Author biographical blurb\"}\n]\n```",
+    "text": "```json\n[\n  {\"id\": \"001\", \"status\": \"toc_fragment\", \"reason\": \"title page only, 13 words, no prose\"},\n  {\"id\": \"002\", \"status\": \"toc_fragment\", \"reason\": \"table-of-contents listing, no prose body\"},\n  {\"id\": \"003\", \"status\": \"extradiegetic\", \"reason\": \"copyright and publisher notice\"},\n  {\"id\": \"004\", \"status\": \"extradiegetic\", \"reason\": \"author's promotional note and newsletter links\"},\n  {\"id\": \"005\", \"status\": \"diegetic\", \"reason\": \"Chapter 1 narrative prose\"},\n  {\"id\": \"006\", \"status\": \"diegetic\", \"reason\": \"Chapter 2 narrative prose\"},\n  {\"id\": \"007\", \"status\": \"diegetic\", \"reason\": \"Chapter 3 narrative prose\"},\n  {\"id\": \"008\", \"status\": \"diegetic\", \"reason\": \"Chapter 4 narrative prose\"},\n  {\"id\": \"009\", \"status\": \"diegetic\", \"reason\": \"Chapter 5 narrative prose\"},\n  {\"id\": \"010\", \"status\": \"diegetic\", \"reason\": \"Chapter 6 narrative prose\"},\n  {\"id\": \"011\", \"status\": \"diegetic\", \"reason\": \"Chapter 7 narrative prose\"},\n  {\"id\": \"012\", \"status\": \"diegetic\", \"reason\": \"Chapter 8 narrative prose\"},\n  {\"id\": \"013\", \"status\": \"diegetic\", \"reason\": \"Chapter 9 narrative prose\"},\n  {\"id\": \"014\", \"status\": \"diegetic\", \"reason\": \"Chapter 10 narrative prose\"},\n  {\"id\": \"015\", \"status\": \"diegetic\", \"reason\": \"Chapter 11 narrative prose\"},\n  {\"id\": \"016\", \"status\": \"diegetic\", \"reason\": \"Chapter 12 narrative prose\"},\n  {\"id\": \"017\", \"status\": \"diegetic\", \"reason\": \"Chapter 13 narrative prose\"},\n  {\"id\": \"018\", \"status\": \"diegetic\", \"reason\": \"Chapter 14 narrative prose\"},\n  {\"id\": \"019\", \"status\": \"diegetic\", \"reason\": \"Chapter 15 narrative prose\"},\n  {\"id\": \"020\", \"status\": \"diegetic\", \"reason\": \"sneak peek contains real narrative story prose\"},\n  {\"id\": \"021\", \"status\": \"extradiegetic\", \"reason\": \"author request for review, promotional apparatus\"},\n  {\"id\": \"022\", \"status\": \"extradiegetic\", \"reason\": \"newsletter promotional blurb, no narrative\"},\n  {\"id\": \"023\", \"status\": \"extradiegetic\", \"reason\": \"series backlist bibliography, no narrative\"},\n  {\"id\": \"024\", \"status\": \"extradiegetic\", \"reason\": \"author biographical blurb\"}\n]\n```",
     "input_tokens": 7298,
-    "output_tokens": 663,
+    "output_tokens": 680,
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
-    "duration_s": 7.710683107376099,
+    "duration_s": 9.44347596168518,
     "stop_reason": "end_turn"
   }
 }

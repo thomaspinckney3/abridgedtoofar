@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T15:55:41",
+  "key": "816164e42c83c828d2a85bc291722508",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f8998d99a396a8470a1b715024aa3d15",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "1c0782b09263a6b01909e8f360f2406d4cc2f32f5ec0ec201aa780c2d422b49e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both drafts systematically, applying each test.\n\n---\n\n**Ch 008 draft checks:**\n\nThe Jordan Baker phone call scene has speaker-attribution compression. In the source, Nick explicitly notes \"it was Jordan Baker; she often called me up at this hour\" and her voice is described before dialogue begins. The draft gives us \"it was Jordan Baker\" and then proceeds to dialogue. The dialogue lines themselves \u2014 \"I've left Daisy's house,\" \"You weren't so nice to me last night\" \u2014 are attributed in the source but in the draft the dialogue runs without speaker tags after the opening. Let me check: \"I've left Daisy's house,\" she said \u2014 yes, \"she said\" is present. Then \"You weren't so nice to me last night\" \u2014 in the draft this is a bare line with no speaker tag. In the source it's also a bare line (the quotation marks make it dialogue). This is normal novelistic dialogue convention, not a structural break.\n\nThe Michaelis compression: The source uses Michaelis by name throughout. The draft replaces him with \"a neighbour\" and \"the neighbour.\" The Eckleburg billboard scene in the draft: \"Standing behind him the neighbour saw with a shock that he was looking at the eyes of Doctor T. J. Eckleburg, pale and enormous, on the billboard.\" The source says \"on an faded, enormous\" sign \u2014 actually \"which had just emerged, pale and enormous, from the dissolving night.\" The draft says \"on the billboard.\" The source establishes the Eckleburg sign/billboard context in Ch 002. Does the draft of Ch 002 establish it? The billboard/eyes are a known referent from earlier chapters; they were established in Ch 002 which precedes these chapters. A reader would know what this refers to from earlier in the abridgment. Not a finding.\n\nThe Wilson/neighbour dialogue: \"Have you got a church you go to sometimes, George?\" the neighbour tried. \"Maybe I could call up a priest\u2014\" \u2014 this is attributed to \"the neighbour.\" Fine.\n\n\"Then he killed her,\" he said suddenly. \u2014 \"he\" here refers to Wilson, who is the subject of the preceding paragraphs. Clear antecedent.\n\n**Ch 009 draft checks:**\n\n**Catherine**: Catherine is an authorized removal. The draft retains her in Ch 009's opening paragraph \u2014 \"but Catherine\u2014who might have said anything\u2014swore her sister had never seen Gatsby.\" Catherine appears here without prior introduction in the draft. But wait \u2014 is this an authorized removal? Catherine is listed as an authorized minor-character removal. However, the Catherine material in Ch 009 was NOT listed as an authorized subplot removal \u2014 only \"Catherine's Catholic lie and Monte Carlo tangent (Ch 002)\" was authorized for removal. Catherine's testimony at the inquest is retained in the Ch 009 draft. Since Catherine IS in the authorized removal list as a character, but the drafter chose to retain this passage about her, that's the drafter's choice and the passage reads coherently \u2014 she's introduced inline as someone \"who might have said anything.\" A reader can follow this without prior establishment. Not a structural break.\n\n**The Klipspringer call**: Klipspringer is an authorized removal. The draft replaces him: \"That night there was a call, an obviously frightened person who demanded to know who I was before giving his name. I was relieved when it turned out to be an old hanger-on, and thought he promised another friend at Gatsby's grave; but he hedged and finally asked if a pair of tennis shoes he had left might be sent on.\" The tennis-shoes request is retained but Klipspringer is not named. This reads coherently \u2014 the anonymous \"old hanger-on\" tracks. Not a structural break.\n\n**The Wolfshiem visit**: \"He drew me into his office in a reverent voice and offered me a cigar.\" \u2014 \"in a reverent voice\" is a dangling modifier; it should modify the manner of drawing-in or speaking, but \"in a reverent voice\" makes no grammatical sense with \"drew me into his office.\" The source reads: \"He drew me into his office, remarking in a reverent voice that it was a sad time for all of us, and offered me a cigar.\" The draft cut \"remarking...that it was a sad time for all of us\" and left \"in a reverent voice\" stranded, producing a non-parseable predicate. A reader cannot determine what was done \"in a reverent voice\" \u2014 the office-drawing or the cigar-offering, neither of which is a vocal act. This is a genuine structural damage.\n\n**The Owl Eyes exchange at the gate**: In the source, Owl Eyes says \"I couldn't get to the house\" and Nick replies \"Neither could anybody else,\" then Owl Eyes says \"Go on! Why, my God! they used to go there by the hundreds.\" In the draft, the exchange is: He spoke to me by the gate, wiping his glasses again, outside and in. / \"Go on! Why, my God! they used to go there by the hundreds.\" \u2014 The triggering exchange (\"I couldn't get to the house\" / \"Neither could anybody else\") is cut. \"Go on!\" is a response to Nick's \"Neither could anybody else\" \u2014 it's a reaction to something that has been cut. Without Nick's preceding line, \"Go on!\" is an unattributed exclamation whose trigger is missing, and it reads as a non-sequitur. A reader would be confused about what Owl Eyes is reacting to.\n\n**The Jordan Baker \"bad driver\" exchange**: The source establishes that Jordan is referring back to an earlier conversation in Ch 003 about bad drivers. The authorized removals include \"Jordan Baker's golf scandal and the 'bad drivers' mini-essay (Ch 003).\" In the draft of Ch 009, Jordan says: \"Oh, and do you remember\u2014a conversation we had once about driving a car?\" / \"Why\u2014not exactly.\" / \"You said a bad driver was only safe until she met another bad driver?\" \u2014 Nick's response \"Why\u2014not exactly\" makes sense as written (he vaguely remembers). The exchange is presented as a dim memory, which actually works. The draft's Nick says \"Why\u2014not exactly\" which covers the fact that the earlier conversation was cut. Not a structural break \u2014 the text is self-explaining.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"non_parseable\",\n    \"chapter\": \"9\",\n    \"draft_passage\": \"He drew me into his office in a reverent voice and offered me a cigar.\",\n    \"source_has\": \"He drew me into his office, remarking in a reverent voice that it was a sad time for all of us, and offered me a cigar.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'in a reverent voice' cannot modify 'drew me into his office' (drawing is not a vocal act), so the sentence has no coherent predicate for that adverbial phrase \u2014 the clause it originally modified ('remarking \u2026 that it was a sad time for all of us') was cut, leaving a dangling modifier that makes the sentence non-parseable as written.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unattributed_dialogue\",\n    \"chapter\": \"9\",\n    \"draft_passage\": \"\\\"Go on! Why, my God! they used to go there by the hundreds.\\\"\",\n    \"source_has\": \"Owl-eyes spoke to me by the gate. 'I couldn't get to the house,' he remarked. 'Neither could anybody else.' 'Go on!' He started. 'Why, my God! they used to go there by the hundreds.'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'Go on!' is a surprised rebuttal to Nick's line 'Neither could anybody else,' which was cut from the draft; without that trigger, the exclamation has no referent and reads as an unmotivated non-sequitur rather than a response in a two-line exchange.\"\n  }\n]\n```",
+    "input_tokens": 25043,
+    "output_tokens": 1841,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 42.51052689552307,
+    "stop_reason": "end_turn"
+  }
+}

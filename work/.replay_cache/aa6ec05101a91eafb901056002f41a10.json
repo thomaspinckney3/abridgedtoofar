@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:50:44",
+  "key": "aa6ec05101a91eafb901056002f41a10",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence-fix",
+    "hash": "05af23c16d7569c876384c7e76954fcc",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_fix.py",
+        "sha256": "5e700ecc59cb7c44ccf1eca51000fe803a7c6e29de95ef1df63709c6f131c6b0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/coherence_fix_pair.md",
+        "sha256": "71eff4043236868d9179bcdc8a0eb4bfa52c5f9368e57df367b5dc5aec5e6a6b",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n{\n  \"pair\": \"030-031\",\n  \"edits\": [\n    {\"segment_id\": \"031-003\", \"change\": \"Add compact gloss identifying Elijah as the dockside prophet encountered before sailing, so the name is no longer orphaned for a reader without source access.\"}\n  ],\n  \"draft_n\": \"*Knights and Squires.*\\n\\nStubb was the second mate. He was a native of Cape Cod; a happy-go-lucky; neither craven nor valiant; taking perils as they came with an indifferent air. Good-humored, easy, and careless, he presided over his whale-boat as if the most deadly encounter were but a dinner, and his crew all invited guests. When close to the whale, in the very death-lock of the fight, he handled his unpitying lance coolly and off-handedly, as a whistling tinker his hammer. He would hum over his old rigadig tunes while flank and flank with the most exasperated monster. Long usage had, for this Stubb, converted the jaws of death into an easy chair. What he thought of death itself, there is no telling.\\n\\nWhat, perhaps, made Stubb such an easy-going, unfearing man, that thing must have been his pipe. Like his nose, his short, black little pipe was one of the regular features of his face. He kept a whole row of pipes ready loaded; whenever he turned in, he smoked them all out in succession. When Stubb dressed, instead of first putting his legs into his trowsers, he put his pipe into his mouth.\\n\\nThe third mate was Flask, a native of Tisbury, in Martha's Vineyard. A short, stout, ruddy young fellow, very pugnacious concerning whales, who somehow seemed to think that the great leviathans had personally and hereditarily affronted him; and therefore it was a sort of point of honor with him, to destroy them whenever encountered. So utterly lost was he to all sense of reverence for the marvels of their majestic bulk and mystic ways; that the wondrous whale was but a species of magnified mouse, requiring only a little circumvention and some small application of time and trouble in order to kill and boil. They called him King-Post on board the Pequod; because, in form, he could be likened to the short, square timber known by that name in Arctic whalers.\\n\\nNow these three mates\u2014Starbuck, Stubb, and Flask, were momentous men. They it was who by universal prescription commanded three of the Pequod's boats as headsmen. In that grand order of battle in which Captain Ahab would probably marshal his forces to descend on the whales, these three headsmen were as captains of companies. Each mate or headsman, like a Gothic Knight of old, is always accompanied by his boat-steerer or harpooneer.\\n\\nFirst of all was Queequeg, whom Starbuck had selected for his squire. But Queequeg is already known.\\n\\nNext was Tashtego, an unmixed Indian from Gay Head, the most westerly promontory of Martha's Vineyard, where there still exists the last remnant of a village of red men. Tashtego's long, lean, sable hair, his high cheek bones, and black rounding eyes\u2014for an Indian, Oriental in their largeness, but Antarctic in their glittering expression\u2014all this proclaimed him an inheritor of the unvitiated blood of those proud warrior hunters, who, in quest of the great New England moose, had scoured, bow in hand, the aboriginal forests of the main. But no longer snuffing in the trail of the wild beasts of the woodland, Tashtego now hunted in the wake of the great whales of the sea; the unerring harpoon of the son fitly replacing the infallible arrow of the sires. Tashtego was Stubb's squire.\\n\\nThird among the harpooneers was Daggoo, a gigantic, coal-black negro-savage, with a lion-like tread\u2014an Ahasuerus to behold. Suspended from his ears were two golden hoops, so large that the sailors called them ring-bolts. In his youth Daggoo had voluntarily shipped on board of a whaler, lying in a lonely bay on his native coast. Daggoo retained all his barbaric virtues, and erect as a giraffe, moved about the decks in all the pomp of six feet five in his socks. There was a corporeal humility in looking up at him; and a white man standing before him seemed a white flag come to beg truce of a fortress. This imperial negro, Ahasuerus Daggoo, was the Squire of little Flask, who looked like a chess-man beside him.\\n\\nAs for the residue of the Pequod's company, not one in two of the many thousand men before the mast employed in the American whale fishery are Americans born, though pretty nearly all the officers are. They were nearly all Islanders in the Pequod, _Isolatoes_ too, I call such, not acknowledging the common continent of men, but each _Isolato_ living on a separate continent of his own. Yet now, federated along one keel, what a set these Isolatoes were! An Anacharsis Clootz deputation from all the isles of the sea, and all the ends of the earth, accompanying Old Ahab in the Pequod to lay the world's grievances before that bar from which not very many of them ever come back. Black Little Pip\u2014he never did\u2014oh, no! he went before. Poor Alabama boy! On the grim Pequod's forecastle, ye shall ere long see him, beating his tambourine; prelusive of the eternal time, when sent for, to the great quarter-deck on high, he was bid strike in with angels, and beat his tambourine in glory; called a coward here, hailed a hero there!\",\n  \"draft_np1\": \"*Ahab.*\\n\\nFor several days after leaving Nantucket, nothing above hatches was seen of Captain Ahab. The mates regularly relieved each other at the watches; only they sometimes issued from the cabin with orders so sudden and peremptory that it was plain they but commanded vicariously. Their supreme lord and dictator was there, though hitherto unseen by any eyes not permitted to penetrate into the now sacred retreat of the cabin.\\n\\nEvery time I ascended to the deck I gazed aft to mark if any strange face were visible; for my first vague disquietude touching the unknown captain became almost a perturbation, strangely heightened by the diabolical incoherences of Elijah\u2014a ragged, outlandish prophet who had accosted us on the Nantucket wharves before we sailed\u2014uninvitedly recurring to me. The aspect of the three chief officers of the ship was most forcibly calculated to allay these colourless misgivings.\\n\\nIt was one of those grey and gloomy mornings, when with a fair wind the ship was rushing through the water with a vindictive sort of leaping and melancholy rapidity, that as I mounted to the deck, so soon as I levelled my glance towards the taffrail, foreboding shivers ran over me. Reality outran apprehension; Captain Ahab stood upon his quarter-deck.\\n\\nHe looked like a man cut away from the stake, when the fire has overrunningly wasted all the limbs without consuming them, or taking away one particle from their compacted aged robustness. His whole high, broad form seemed made of solid bronze, and shaped in an unalterable mould, like Cellini's cast Perseus. Threading its way out from among his grey hairs, and continuing right down one side of his tawny scorched face and neck till it disappeared in his clothing, you saw a slender rod-like mark, lividly whitish. It resembled that perpendicular seam sometimes made in the straight, lofty trunk of a great tree, when the upper lightning tearingly darts down it, leaving the tree still greenly alive, but branded. Whether that mark was born with him, or the scar left by some desperate wound, no one could certainly say. A grey Manxman, an old sepulchral man popularly invested with preternatural powers of discernment, insinuated that if ever Captain Ahab should be tranquilly laid out, whoever should do that last office for the dead, would find a birth-mark on him from crown to sole.\\n\\nSo powerfully did the whole grim aspect of Ahab affect me, and the livid brand which streaked it, that for the first few moments I hardly noted the barbaric white leg upon which he partly stood. This ivory leg had at sea been fashioned from the polished bone of the sperm whale's jaw. \"Aye, he was dismasted off Japan,\" said an old Gay-Head Indian; \"but like his dismasted craft, he shipped another mast without coming home for it.\"\\n\\nUpon each side of the Pequod's quarter deck there was an auger hole bored into the plank. His bone leg steadied in that hole; one arm elevated, holding by a shroud; Captain Ahab stood erect, looking straight out beyond the ship's ever-pitching prow. There was an infinity of firmest fortitude, a determinate, unsurrenderable wilfulness, in the fixed and fearless, forward dedication of that glance. Not a word he spoke; nor did his officers say aught to him; though by all their minutest gestures they plainly showed the uneasy consciousness of being under a troubled master-eye. Moody stricken Ahab stood before them with a crucifixion in his face; in all the nameless regal overbearing dignity of some mighty woe.\\n\\nEre long he withdrew into his cabin. But after that morning he was every day visible to the crew. As the sky grew less gloomy, indeed began to grow a little genial, he became less and less a recluse. The Pequod was only making a passage now; nearly all whaling preparatives the mates were fully competent to, so there was little out of himself to employ or excite Ahab, and thus chase away the clouds that layer upon layer were piled upon his brow.\\n\\nNevertheless, ere long, the warm, warbling persuasiveness of the pleasant, holiday weather we came to, seemed gradually to charm him from his mood. For, as when the red-cheeked, dancing girls, April and May, trip home to the wintry, misanthropic woods; even the barest, ruggedest, most thunder-cloven old oak will at least send forth some few green sprouts, to welcome such glad-hearted visitants; so Ahab did, in the end, a little respond to the playful allurings of that girlish air. More than once did he put forth the faint blossom of a look, which, in any other man, would have soon flowered out in a smile.\"\n}\n```",
+    "input_tokens": 8316,
+    "output_tokens": 2571,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 70.70653915405273,
+    "stop_reason": "end_turn"
+  }
+}

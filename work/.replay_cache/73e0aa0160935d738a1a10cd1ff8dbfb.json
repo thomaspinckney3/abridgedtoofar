@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:40:48",
+  "key": "73e0aa0160935d738a1a10cd1ff8dbfb",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test rigorously.\n\n---\n\n**Ch 099 draft \u2014 scan**\n\nThe draft is a faithful compression. No mid-scene jumps, no dangling pronouns whose antecedents were cut, no broken pivots. \"Stubb, the second mate\" is glossed locally. The Manxman is not named (authorized removal). All structural elements carry through.\n\n---\n\n**Ch 102 draft \u2014 scan**\n\n**Candidate 1: \"But stop; here comes little King-Post.\"**\n\nIn the source, Stubb's soliloquy ends \"here comes little King-Post; dodge round the try-works, now, and let's hear what he'll have to say.\" The next speech is given directly to \"Flask\" in the source (\"I see nothing here, but a round thing\u2026\"). In the draft, Stubb says \"here comes little King-Post\" but the next speech is attributed to Flask: `\"I see nothing here,\" said Flask`. \"King-Post\" is a nickname for Flask, established much earlier in the novel \u2014 Flask is a continuously present, named principal. A competent reader who has been following the abridgment knows Flask. No confusion.\n\n\u2192 **Not a finding.**\n\n**Candidate 2: \"But, avast; here comes the old hearse-driver\u2014he luffs up before the doubloon\u2026\"**\n\nIn the source, before introducing the Manxman, Stubb says \"here comes our old Manxman\u2014the old hearse-driver, he must have been.\" In the draft the name \"Manxman\" is dropped (authorized removal) and the figure is referred to only as \"the old hearse-driver.\" The speech that follows (\"If the White Whale be raised\u2026\") is unattributed \u2014 it is the Manxman's speech in the source, but since that character is an authorized removal, his speech floats without a speaker tag. The reader sees Stubb say \"here comes the old hearse-driver\" and then a block of direct speech with no attribution. The speech is not in quotation marks associated with Stubb; it appears as a new paragraph of dialogue. Is the reader confused about who is speaking?\n\nStubb has said \"Hark! he's muttering\" \u2014 the \"he\" refers back to \"the old hearse-driver.\" So the subsequent speech is implicitly the hearse-driver's. This is a residue of the authorized Manxman removal. Per the instructions, \"dangling references\u2026 that are direct residues of these authorized cuts\u2026 are EXPECTED and NOT findings.\"\n\n\u2192 **Not a finding (authorized residue).**\n\n**Candidate 3: The Pip dialogue sequence \u2014 \"Upon my soul, he's been studying Murray's Grammar!\"**\n\nIn the source, this is Stubb commenting on Pip's speech. In the draft, the soliloquy frame is clear: Stubb has been narrating throughout. The Pip section in the draft keeps Stubb as the frame speaker implicitly. Pip's three repetitions and Stubb's commentary all parse. No confusion.\n\n\u2192 **Not a finding.**\n\n**Candidate 4: The final Pip speech \u2014 \"Here's the ship's navel\u2026\"**\n\nIn the source, before this speech Stubb says \"So, so, I leave him muttering\" \u2014 indicating Stubb exits and Pip speaks on alone. The draft retains that sentence. The final speech is clearly Pip continuing. This parses.\n\n\u2192 **Not a finding.**\n\n**Candidate 5: Stubb's soliloquy \u2014 \"As devils can be raised with Daboll's arithmetic, I'll try my hand at raising a meaning out of these queer curvicues.\"**\n\nThe source has: \"I have heard devils can be raised with Daboll's arithmetic.\" The draft drops \"I have heard\" and writes \"As devils can be raised with Daboll's arithmetic.\" This is a slight rephrasing but the sentence parses and conveys the meaning. Not a structural failure.\n\n\u2192 **Not a finding.**\n\n**Candidate 6: \"All sorts of men in one kind of world.\"**\n\nIn the source, this is the tail of Stubb's commentary: \"There's another rendering now; but still one text. All sorts of men in one kind of world, you see.\" In the draft it reads: `\"All sorts of men in one kind of world. Dodge again! here comes Queequeg\u2026\"` \u2014 it appears as a continuation of Stubb's soliloquy. The \"but still one text\" and \"There's another rendering now\" framing is cut, but the sentence still functions as Stubb's observation and transitions smoothly. A reader would not be confused.\n\n\u2192 **Not a finding.**\n\n---\n\nAfter exhaustive review, no sentence in either draft chapter fails the gate test for structural coherence damage that is not an authorized residue.\n\n```json\n[]\n```",
+    "input_tokens": 12907,
+    "output_tokens": 1118,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.796332120895386,
+    "stop_reason": "end_turn"
+  }
+}

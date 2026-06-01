@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-05T13:01:46",
+  "key": "f901c2631b28f5fdf7a30959bc315fa6",
+  "model": "openai:gpt-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "cuts",
+    "hash": "4afd6d49d21d5bdbbae4b1824018eb18",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/cuts.py",
+        "sha256": "1bcedf83a1a072a52728bcd6e25ac7b2ba2c39f8f6d5a044068f1dd6a751d0d0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/prepass_cuts.md",
+        "sha256": "76bfe1b7f40573c4e17fbd647533f6c66ea827c9d123f92c828eb4cec5bac30e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"minor_characters\": [\n    {\"name\": \"Bay Lodge\", \"appearances_summary\": \"A witty companion in Paris and at Bayreuth who banters with Adams about art and helps coin the mock-party of 'Conservative Christian Anarchists.'\", \"reason_removable\": \"He is a social foil with no bearing on Adams\u2019s historical or philosophical arc.\"},\n    {\"name\": \"Mrs. Bay Lodge\", \"appearances_summary\": \"Appears in Paris scenes and at Bayreuth as part of the Lodges\u2019 party.\", \"reason_removable\": \"She serves only as background society and adds no plot or thematic load.\"},\n    {\"name\": \"Joe Stickney\", \"appearances_summary\": \"Paris walking-and-talking companion for poetry and Greek talk.\", \"reason_removable\": \"A one-chapter conversational presence who does not recur or affect the main arc.\"},\n    {\"name\": \"Frau Wagner and Bayreuth principals (e.g., Ternina, Mounet Sully)\", \"appearances_summary\": \"Named in Bayreuth/Paris theater notes when Adams muses on Wagner and performance.\", \"reason_removable\": \"Performance-name dropping is ornamental and not needed for the book\u2019s argument about force and education.\"},\n    {\"name\": \"Reynolds Hitt\", \"appearances_summary\": \"Diplomat who lends Adams an attic in Paris (Avenue du Bois).\", \"reason_removable\": \"A lodging facilitator with no later consequence.\"},\n    {\"name\": \"Mr. Cameron\", \"appearances_summary\": \"Hosts friends at Inverlochy; a seasonal social setting.\", \"reason_removable\": \"Pure scene-setting with no carryover.\"},\n    {\"name\": \"Michael Herbert\", \"appearances_summary\": \"British ambassador welcomed socially in Washington; a soothing personal link in Anglo-American relations.\", \"reason_removable\": \"The synopsis requires Hay\u2019s Atlantic \u2018combine,\u2019 not the diplomats\u2019 names.\"},\n    {\"name\": \"Baron Holleben\", \"appearances_summary\": \"German ambassador abruptly recalled; a pretext to introduce Speck von Sternburg.\", \"reason_removable\": \"Personnel shifts color the moment but are not needed to grasp Germany\u2019s swing westward.\"},\n    {\"name\": \"Speck von Sternburg\", \"appearances_summary\": \"German envoy welcomed into the same Georgetown circle; a symbol of the Kaiser\u2019s tactical shift.\", \"reason_removable\": \"Germany\u2019s reorientation matters, not the envoy\u2019s identity.\"},\n    {\"name\": \"Count Cassini\", \"appearances_summary\": \"Voluble Russian ambassador in Washington offering blague before the Russo-Japanese War.\", \"reason_removable\": \"He personalizes Russian inertia that the synopsis already captures without names.\"},\n    {\"name\": \"Sergei Witte and Vyacheslav von Plehve\", \"appearances_summary\": \"Named as opposing Russian tendencies around Manchuria and St. Petersburg intrigue.\", \"reason_removable\": \"Individual Russian officials are not needed to retain the theme of Russian drift toward war.\"},\n    {\"name\": \"Prince Lamsdorf and Prince Khilkoff\", \"appearances_summary\": \"Referenced as Russian administrators/modernizers when Adams weighs inertia.\", \"reason_removable\": \"They supply texture, not structural necessity.\"},\n    {\"name\": \"Admiral/Viceroy Alexeieff\", \"appearances_summary\": \"Cited in the Manchurian pre-war posture.\", \"reason_removable\": \"Removable because the war\u2019s significance is carried by the larger Hay/Russia/Japan frame.\"},\n    {\"name\": \"President McKinley\", \"appearances_summary\": \"His assassination news reaches Adams at Hammerfest, used to dramatize the reach of modern communications.\", \"reason_removable\": \"It is an illustrative anecdote about acceleration, not a load-bearing event in the book\u2019s core arc.\"},\n    {\"name\": \"St. Gaudens and John Singer Sargent\", \"appearances_summary\": \"Appear when Hay sits for head and portrait near the end.\", \"reason_removable\": \"Immortality trappings are incidental to Hay\u2019s role in the narrative.\"}\n  ],\n  \"subplots\": [\n    {\"name\": \"Bayreuth pilgrimage and Adams\u2019s Wagner disillusion\", \"chapter_span\": \"Ch 039\", \"reason_removable\": \"It is an aesthetic travel thread whose conclusions don\u2019t alter his later Virgin/Dynamo synthesis or the diplomatic arc.\"},\n    {\"name\": \"The mock-party of 'Conservative Christian Anarchists'\", \"chapter_span\": \"Ch 039\", \"reason_removable\": \"This comic-philosophic jeu d\u2019esprit supplies satire but no forward motion in the education plot.\"},\n    {\"name\": \"Scandinavian mail-boat to Hammerfest and the polar tourist vignette\", \"chapter_span\": \"Ch 039\", \"reason_removable\": \"The Arctic set-piece illustrates acceleration and inertia that are established elsewhere in the later theory chapters.\"},\n    {\"name\": \"Dinner-table sparring about the 'failure' of the American man/woman\", \"chapter_span\": \"Ch 043\", \"reason_removable\": \"The salon drama serves the ensuing gender essay but has no effect on the book\u2019s historical or scientific through-line.\"},\n    {\"name\": \"Cathedral glass-hunting mini-odyssey (Engrand le Prince, St. Pantaleon, Troyes)\", \"chapter_span\": \"Ch 045\", \"reason_removable\": \"Specific window hunts are delightful side-stories; the Virgin/Dynamo polarity survives without them.\"}\n  ],\n  \"digressions\": [\n    {\"chapter_ids\": [\"039\"], \"topic\": \"Comic metaphysics of 'conservative Christian anarchy' and extended Bayreuth judgments\", \"reason_removable\": \"These pages are essayistic satire and aesthetics that do not advance the central education-in-force argument.\"},\n    {\"chapter_ids\": [\"040\"], \"topic\": \"Character essay on Henry Cabot Lodge and Boston social psychology\", \"reason_removable\": \"Lengthy Bostonitis/Lodge profiling can be pruned without affecting the Hay/Roosevelt stakes or the force-vs-mind theme.\"},\n    {\"chapter_ids\": [\"041\"], \"topic\": \"Technical personnel choreography of ambassadors (Holleben/Sternburg/Herbert)\", \"reason_removable\": \"Name-by-name staffing detail can be condensed to the broader strategic shift (Germany edging into the Atlantic system).\"},\n    {\"chapter_ids\": [\"043\"], \"topic\": \"Race- and sex-inertia treatise with social-scene anecdotes\", \"reason_removable\": \"A long essay on American women and inertia sits parallel to but outside the required Virgin/Dynamo and acceleration arcs.\"},\n    {\"chapter_ids\": [\"045\"], \"topic\": \"Detailed cataloguing of specific stained-glass programs and local f\u00eates\", \"reason_removable\": \"Deep art-historical inventorying can be tightened without losing the Virgin\u2019s force or the Exposition contrast.\"}\n  ],\n  \"skippable_chapters\": [\n    {\n      \"chapter_id\": \"039\",\n      \"reason_removable\": \"Its Bayreuth excursion, comic 'anarchist' party, and travelogue can be excised if the Russia/coal/inertia takeaways are briefly preserved.\",\n      \"kernel\": \"In 1901 Adams, drawn back to Paris and Europe, ranged east to Russia and read there a massive social inertia unlike the coal-driven unity he saw on returning through Germany; by year\u2019s end, that contrast\u2014Russian drift versus Western coal-power acceleration\u2014set the stage for his coming lessons about force.\",\n      \"relocate_to\": \"040\",\n      \"position\": \"start\"\n    },\n    {\n      \"chapter_id\": \"043\",\n      \"reason_removable\": \"An extended essay on race- and sex-inertia, with dinner-table scenes, does not alter the ensuing scientific inquiry (Grammar of Science), the Virgin/Dynamo synthesis, the law of acceleration, the expositions, or Hay\u2019s diplomatic arc.\",\n      \"kernel\": \"\",\n      \"relocate_to\": null,\n      \"position\": null\n    }\n  ]\n}",
+    "input_tokens": 49289,
+    "output_tokens": 5455,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 111.62387681007385,
+    "stop_reason": "stop"
+  }
+}

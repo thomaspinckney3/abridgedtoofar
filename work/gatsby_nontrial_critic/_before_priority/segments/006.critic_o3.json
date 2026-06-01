@@ -1,0 +1,35 @@
+{
+  "segment_id": "006",
+  "critic": "signature",
+  "findings": [
+    {
+      "severity": "medium",
+      "class": "interpretive_loss",
+      "source_passage": "An instinct toward his future glory had led him, some months before, to the small Lutheran College of St. Olaf’s in southern Minnesota...",
+      "source_locator": "paragraph beginning “An instinct toward his future glory…” (after the fairy’s-wing sentence)",
+      "draft_treatment": "absent",
+      "why_it_matters": "This whole St. Olaf’s episode is the clearest evidence of Gatsby’s first abortive grab at self-betterment; critics routinely cite the “drums of his destiny” irony. Dropping it flattens the arc of self-invention.",
+      "suggested_fix": "Restore the complete St. Olaf’s paragraph, including the janitor job and two-week walk-out, preserving Fitzgerald’s diction."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_erasure",
+      "source_passage": "I remember the portrait of him up in Gatsby’s bedroom, a grey, florid man with a hard, empty face—the pioneer debauchee...",
+      "source_locator": "portrait paragraph immediately after Cody’s death",
+      "draft_treatment": "absent",
+      "why_it_matters": "Nick’s acid sketch of Dan Cody and the champagne-in-the-hair anecdote are quintessential narrator voice and explain Gatsby’s own teetotal habit; cutting them removes character shading and Nick’s satiric tone.",
+      "suggested_fix": "Insert the portrait description and liquor anecdote verbatim or with minimal trimming."
+    },
+    {
+      "severity": "medium",
+      "class": "voice_flattening",
+      "source_passage": "“Anything I hate is to get my head stuck in a pool,” mumbled Miss Baedeker… (full drunken-table exchange with Doc Civet)",
+      "source_locator": "tipsy supper-table sequence, between Daisy’s bad time and the movie-director vignette",
+      "draft_treatment": "absent",
+      "why_it_matters": "The slapstick dialogue is a set-piece of West Egg excess and rounds out the party’s shift from glamour to grotesque; losing it thins Fitzgerald’s social satire.",
+      "suggested_fix": "Reinstate the Miss Baedeker / Doc Civet dialogue in concise form that preserves the drunken repartee and pool joke."
+    }
+  ],
+  "verdict": "regenerate",
+  "summary": "Three voice- and interpretation-critical passages (St. Olaf’s, Cody portrait, drunken Miss Baedeker scene) are missing; restore them."
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:17:35",
+  "key": "3b256e33e0f1c61184b736edd1373e6c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying each test.\n\n---\n\n**Ch 009 draft analysis**\n\n- \"But New Bedford beats all Water Street and Wapping.\" \u2014 The source sets up \"Water Street and Wapping\" as comparable seaports. The draft cuts the explicit comparison setup (\"Even in Broadway\u2026 Regent Street\u2026 Bombay\") but the sentence still parses; a reader understands it as a superlative claim. Not a finding.\n- \"Besides the Feegeeans, Tongatobooarrs, Erromanggoans, and Pannangians, there weekly arrive scores of green Vermonters\u2026\" \u2014 The source's transition includes \"and, besides the wild specimens of the whaling-craft which unheeded reel about the streets, you will see other sights still more curious, certainly more comical.\" The draft elides this but the sentence still parses as an additive. Not a structural damage.\n- \"No town-bred dandy will compare with a country-bred one.\" \u2014 The source follows this with \"I mean a downright bumpkin dandy\u2014a fellow that, in the dog-days, will mow his two acres in buckskin gloves for fear of tanning his hands.\" The draft cuts the gloss. But the next sentence (\"In bespeaking his sea-outfit\u2026\") makes clear who is meant. The reader can follow. Not a finding.\n- \"Yet think not this famous town has only harpooneers, cannibals, and bumpkins to show.\" \u2014 Source uses \"But think not.\" The draft changes \"But\" to \"Yet.\" The source's \"but\" was pivoting against the bumpkin material; \"yet\" functions equivalently here. Not a broken pivot.\n\n**Ch 010 draft analysis**\n\n- \"The sky had changed from clear cold to driving sleet and mist.\" \u2014 The source connects this to Ishmael returning from a morning stroll and setting out again. The draft opens with the chapel sentence, then immediately says \"The sky had changed\u2026\" without establishing when or that Ishmael went out. The source had \"Returning from my first morning stroll, I again sallied out upon this special errand. The sky had changed\u2026\" The draft cut the transitional action sentence. However, the chapel sentence implies he went there, so the sky-change sentence is simply scene-setting. A reader can follow: he went to the chapel, the weather had changed. Slightly compressed but parseable. Marginal \u2014 let me apply the gate test strictly. A reader without source access sees \"In New Bedford stands a Whaleman's Chapel\u2026 The sky had changed from clear cold to driving sleet and mist.\" They can infer he's describing going there and the weather. Not genuinely confused.\n\n- \"Shaking off the sleet, I seated myself near the door, and was surprised to see Queequeg.\" \u2014 The source adds \"and turning sideways was surprised to see Queequeg near me. Affected by the solemnity of the scene, there was a wondering gaze of incredulous curiosity in his countenance. This savage was the only person present who seemed to notice my entrance; because he was the only one who could not read, and, therefore, was not reading those frigid inscriptions on the wall.\" The draft cuts all the explanation of why Queequeg noticed Ishmael. But the sentence itself parses fine \u2014 Ishmael sat down and saw Queequeg there. A reader is not confused. Not a finding.\n\n- \"So plainly did several women wear the countenance of unceasing grief, that I felt sure here were assembled those in whose unhealing hearts the sight of those bleak tablets caused old wounds to bleed afresh.\" \u2014 The source has \"Whether any of the relatives of the seamen whose names appeared there were now among the congregation, I knew not; but so many are the unrecorded accidents in the fishery, and so plainly did several women present wear the countenance if not the trappings of some unceasing grief\u2026\" The draft cuts the opening hedge and the \"I knew not; but\" pivot. The remaining sentence parses and is coherent on its own. Not a finding.\n\n- \"A stove boat will make me an immortal by brevet.\" \u2014 Source: \"Delightful inducements to embark, fine chance for promotion, it seems\u2014aye, a stove boat will make me an immortal by brevet.\" The draft cuts the ironic setup. The phrase \"immortal by brevet\" without the \"fine chance for promotion\" setup loses its ironic framing \u2014 \"brevet\" is a military promotion term, and \"immortal by brevet\" is a joke about dying making you immortal. Without \"fine chance for promotion, it seems,\" the pivot of the joke is gone. Let me apply the gate test: would a reader be *genuinely confused* or just reading a less-ornamented version? The phrase \"immortal by brevet\" is opaque without the promotion joke \u2014 a reader unfamiliar with \"brevet\" (a temporary honorary promotion) has no context at all, and even a reader who knows the word loses the ironic frame that makes it a joke rather than a non sequitur assertion. This is a broken logical pivot: the punch line survives but the setup was cut, leaving the sentence as one side of a missing two-sided joke structure. However \u2014 is this *structural* damage or just loss of richness? The sentence \"A stove boat will make me an immortal by brevet\" does parse grammatically. The irony is flattened but the sentence isn't non-parseable. Applying the gate test strictly: a competent reader sees \"I grew merry again. A stove boat will make me an immortal by brevet. There is death in this business\u2026\" They would find \"immortal by brevet\" puzzling but not impenetrable \u2014 they'd read it as dark humor about dying. It's less ornamented. I'll reject this as merely less richly phrased.\n\nAfter rigorous application of all tests and the gate test, I find no valid structural coherence failures in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 6033,
+    "output_tokens": 1373,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 34.99868392944336,
+    "stop_reason": "end_turn"
+  }
+}

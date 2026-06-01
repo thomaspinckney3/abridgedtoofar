@@ -1,0 +1,192 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI Midwest and East Coast",
+    "line_and_color": "Clean inked linework with muted watercolor washes; sepia and dusty blues for memory, warmer ambers for present",
+    "lighting": "Soft window light and lamp glow; long shadows suggesting introspection",
+    "lettering": "Hand-lettered serif captions in rectangular boxes for Nick's narration; classic round speech balloons reserved for spoken lines",
+    "recurring_motifs": [
+      "the writing desk and journal",
+      "window light",
+      "father's remembered figure",
+      "the East as a distant horizon",
+      "train and travel silhouettes"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neat side-parted light brown hair, calm observant eyes",
+      "costume": "White shirt with rolled sleeves and vest at the desk; traveling suit and soft hat with suitcase when arriving East; doughboy uniform in war memory",
+      "expression_range": "Reserved, contemplative, faintly wry; restless after the war",
+      "continuity_note": "Still the retrospective narrator; this page moves from the desk back through his pre-East biography."
+    },
+    {
+      "name": "Jay Gatsby (silhouette only)",
+      "visual_anchor": "Tall male silhouette at a distance, back to camera, faceless",
+      "costume": "Dark suit, indistinct; outlined against horizon light",
+      "expression_range": "Unseen; pose suggests reaching, watching",
+      "continuity_note": "First appearance, deliberately unidentifiable; reserved as a distant figure in Nick's narration."
+    },
+    {
+      "name": "Nick's Father",
+      "visual_anchor": "Older man, graying mustache, kind reserved eyes",
+      "costume": "Three-piece Midwestern suit, watch chain",
+      "expression_range": "Quiet approval",
+      "continuity_note": "Appears briefly in a memory beat as he agrees to finance Nick's year East."
+    }
+  ],
+  "page": {
+    "page_number": 2,
+    "page_summary": "At his desk, Nick names the one exception to his scorn — Gatsby — picturing him as a distant silhouette; then Nick walks back through his own biography: New Haven and the Great War, a restlessness that made the Middle West feel like the edge of the world, his father agreeing to bankroll a year East, and finally the decision to share a commuter-town house instead of city rooms.",
+    "source_unit_ids": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "source_word_range": [336, 647],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Nick lifts his pen from the journal and gazes toward the window; beyond the glass, a faceless silhouetted figure stands on a far shore under a distant green-tinged horizon — the one exception to his scorn.",
+        "shot": "medium",
+        "image_prompt": "Interior of Nick's study at night, warm amber lamp glow on a writing desk in the foreground left, open journal and pen in his hand, Nick in white shirt, vest and loosened tie seated and turned three-quarters toward a tall window on the right; through the window, a dusty-blue sepia memory layer shows a distant tall male silhouette standing with his back to us on a far shoreline beneath a faint green horizon glow; clean inked linework, muted watercolor wash, soft long shadows; reserve a clear empty rectangular area across the top of the panel and a smaller empty area in the lower right for lettering; no text anywhere in the art",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p2_p1_c1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.62, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "caption",
+            "reading_order": 1
+          },
+          {
+            "id": "p2_p1_c2",
+            "kind": "caption",
+            "zone": "bottom_right",
+            "box": {"x": 0.46, "y": 0.78, "w": 0.5, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "caption",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Only Gatsby was exempt from my reaction — Gatsby, who represented everything for which I have an unaffected scorn. And yet there was something gorgeous about him, a sensitivity to the promises of life, as though he were tuned to earthquakes ten thousand miles away.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Gatsby introduced only as silhouette, never identified visually; keeps him as a horizon-figure consistent with the East-as-horizon motif.",
+        "source_unit_ids": [12, 13],
+        "source_word_range": [336, 403],
+        "source_anchor": "Only Gatsby ... earthquakes ten thousand miles away.",
+        "adaptation_note": "Two captions in one panel because units 12 and 13 are a single continuous thought about Gatsby; splitting them across panels would fragment the sentence."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Close on the journal page as Nick's hand writes; in the negative space above the page, a faint dust-cloud drifts behind the distant silhouette, framing Nick's verdict that Gatsby turned out all right and it was the foul dust in his wake that mattered.",
+        "shot": "detail",
+        "image_prompt": "Tight overhead detail of an open journal on the writing desk, Nick's hand with pen in mid-stroke at the lower edge, warm amber lamplight; above the page in soft dusty-blue sepia, a ghostly drifting haze of pale dust and a small distant silhouetted figure receding into it; clean ink and muted watercolor; reserve large empty zones at top center and bottom center for caption boxes; absolutely no text, letters, numbers, or marks on the journal page",
+        "panel_archetype": "caption_only",
+        "lettering_slots": [
+          {
+            "id": "p2_p2_c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.06, "y": 0.04, "w": 0.88, "h": 0.2},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "caption",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "It was an extraordinary gift for hope, a romantic readiness I shall not find again. No — Gatsby turned out all right at the end; it was the foul dust that floated in the wake of his dreams that closed out my interest in the sorrows of men.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Holds the desk action spine: Nick is still writing. Dust motif seeded for later valley of ashes.",
+        "source_unit_ids": [14, 15],
+        "source_word_range": [404, 492],
+        "source_anchor": "This responsiveness ... abortive sorrows and short-winded elations of men.",
+        "adaptation_note": "Units 14 and 15 are paired because they complete Nick's framing judgment of Gatsby in a single breath, anchored to the same writing gesture."
+      },
+      {
+        "panel_number": 3,
+        "beat": "Memory triptych staged as one wide panel: a Middle Western family home in summer light at left, a young Nick in doughboy uniform crossing a war-torn field at center, and Nick on a station platform with a suitcase staring east at right — biography compressed into a single push toward the East.",
+        "shot": "wide",
+        "image_prompt": "Wide horizontal sepia memory panel split into three soft, overlapping vignettes without hard borders: left vignette, a stately Middle Western brick house behind a wrought iron gate in warm afternoon light, a prosperous family suggested in silhouette on the porch; center vignette, a young lean man in a WWI American doughboy uniform and helmet walking through a smoky French field at dusk, rifle slung, restless eyes; right vignette, the same young man in a 1922 traveling suit and soft hat with a leather suitcase standing on a small-town train platform at dawn, gazing toward a distant eastward horizon with rails converging; muted dusty blues and warm ambers, clean inked linework; reserve a continuous empty caption strip across the bottom of the panel; no text or signage of any kind",
+        "panel_archetype": "single_character",
+        "lettering_slots": [
+          {
+            "id": "p2_p3_c1",
+            "kind": "caption",
+            "zone": "bottom_center",
+            "box": {"x": 0.04, "y": 0.78, "w": 0.92, "h": 0.18},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "caption",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "bottom_center",
+        "caption": "My family had been prominent, well-to-do people in this Middle Western city for three generations. I graduated from New Haven in 1915, then took part in that delayed Teutonic migration called the Great War — and I enjoyed the counter-raid so thoroughly that I came back restless.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Triptych is justified because units 16–18 form one compressed biographical sequence with no intervening action; chronology is preserved left-to-right.",
+        "source_unit_ids": [16, 17, 18],
+        "source_word_range": [493, 539],
+        "source_anchor": "My family have been prominent ... I came back restless.",
+        "adaptation_note": "Montage used here because three consecutive source units cover years of biography with no scene change; explicit left-to-right chronology keeps the sequence legible."
+      },
+      {
+        "panel_number": 4,
+        "beat": "On a Manhattan sidewalk, a young coworker gestures toward a leafy commuter town in a poster-like memory beyond him; Nick, suitcase in hand, listens — having already secured his father's blessing, he chooses the country house over city rooms.",
+        "shot": "medium",
+        "image_prompt": "1922 Manhattan sidewalk in spring morning light, two young men standing in business attire; on the right, Nick in a traveling suit and soft hat holding a leather suitcase, calm reserved expression; on the left, a slightly younger office colleague in shirtsleeves and tie gesturing enthusiastically off-panel toward a soft inset vision in the upper background showing a leafy Long Island commuter town with wide lawns, friendly trees and a modest bungalow beside a larger estate; in the opposite upper corner, a small sepia inset of an older mustached father in a three-piece suit nodding approval over a desk; warm ambers in foreground, dusty-blue sepia in the insets; clean inked linework, muted watercolor; reserve a clear empty caption band across the top and a small empty speech-balloon area in the upper left near the colleague; keep both men's faces and hands clear of those zones; no text rendered in the art",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p2_p4_c1",
+            "kind": "caption",
+            "zone": "top_center",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.92, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "center",
+            "reserved_for": "caption",
+            "reading_order": 1
+          }
+        ],
+        "caption_zone": "top_center",
+        "caption": "The Middle West now seemed the ragged edge of the universe — so I decided to go East and learn the bond business. Father agreed to finance me for a year, and in the spring of twenty-two I came East, permanently, I thought. The practical thing was rooms in the city; but when a young man at the office suggested we take a house together in a commuting town, it sounded like a great idea.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Father appears only as a small memory inset, consistent with prior rule that he is not a present-tense character. Bungalow seeded in the inset to set up next page's arrival in West Egg.",
+        "source_unit_ids": [19, 20, 21],
+        "source_word_range": [540, 647],
+        "source_anchor": "Instead of being the warm centre ... it sounded like a great idea.",
+        "adaptation_note": "Dialogue from the colleague is paraphrased in source, not quoted, so it is carried in caption rather than a balloon; the colleague's gesture provides the visible action anchor."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+    "last_scene": "Nick on a Manhattan sidewalk in spring 1922, having decided to share a house in a Long Island commuter town with a young coworker.",
+    "active_characters": ["Nick Carraway"],
+    "character_updates": [
+      "Nick's biography established: prominent Middle Western family, New Haven 1915, Great War veteran, restless on return",
+      "Nick's father reappears briefly as the financier of his year East, still only a memory figure",
+      "Gatsby introduced as an unseen silhouette and a name, framed as the exception to Nick's scorn"
+    ],
+    "visual_motifs": [
+      "writing desk and open journal",
+      "window light",
+      "sepia memory tone",
+      "the East as a horizon",
+      "distant silhouette of Gatsby",
+      "foul dust in the wake",
+      "train platform and suitcase"
+    ],
+    "next_page_needs": [
+      "Nick arriving at the West Egg bungalow on Long Island",
+      "Establish the neighboring Gatsby estate by line of sight from Nick's house",
+      "Introduce the drive or route to the Buchanans' across the bay, preparing Daisy and Tom"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+Create one finished graphic novel page as clean, text-free art.
+
+Hard constraints:
+- No readable text anywhere.
+- No speech balloons, caption boxes, labels, signs, maps, or lettering.
+- Do not combine panels or remix the order.
+- Keep every panel visually tied to its listed beat only.
+- Do not add motifs, props, animals, objects, or symbols just because they appear elsewhere in the book.
+- Reserve the explicit in-panel lettering slots listed for each panel.
+- Keep those slots as simple empty background; keep faces, mouths, hands, active gestures, and key props out of them.
+- Do not reserve lettering space in gutters or outside panel frames.
+- Page has 4 panels, read left-to-right, top-to-bottom.
+
+Style:
+- Treat these as rendering/style directions only, not as a content inventory. Panel art prompts control what appears.
+- visual period: Early 1920s American Jazz Age, post-WWI Midwest and East Coast
+- line and color: Clean inked linework with muted watercolor washes; sepia and dusty blues for memory, warmer ambers for present
+- lighting: Soft window light and lamp glow; long shadows suggesting introspection
+
+Character continuity:
+- Nick Carraway: Lean young man, neat side-parted light brown hair, calm observant eyes Costume: Light summer suit with vest, tie loosened, sleeves rolled Continuity: Steps out from the bungalow to take in his surroundings; same costume as previous page for continuity.
+- Nick's Father: Older man, graying mustache, kind reserved eyes Costume: Three-piece Midwestern suit, watch chain Continuity: Appears briefly in a memory beat as he agrees to finance Nick's year East.
+- Jay Gatsby (silhouette only): Tall male silhouette at a distance, back to camera, faceless Costume: Dark suit, indistinct; outlined against horizon light Continuity: First appearance, deliberately unidentifiable; reserved as a distant figure in Nick's narration.
+- Stranger on the Road: Younger man, slightly disheveled, hat in hand, uncertain posture Costume: Light traveling jacket, soft cap, plain shoes Continuity: One-off character; appears only to ask Nick the way to West Egg village.
+- Finnish Housekeeper: Sturdy middle-aged woman, hair pinned back, weathered hands Costume: Plain dark dress, white apron Continuity: Domestic background figure at the bungalow stove.
+- Jay Gatsby's mansion: Colossal Norman-style chateau with a tower, raw thin ivy on new stone Costume: n/a Continuity: First clear architectural reveal; Gatsby himself remains unseen.
+
+Page 3 summary: Nick arrives alone at the weather-beaten West Egg bungalow when his coworker is reassigned, settles into a small household routine with a dog, a Dodge, and a Finnish cook, then is stopped on the road by a newcomer asking directions, after which his loneliness lifts; back at the bungalow he opens a stack of new banking books in the summer light, resolving to become a well-rounded man in what he already senses is one of the strangest communities in North America.
+
+Panels:
+
+Panel 1:
+Beat: Nick arrives alone at the weather-beaten West Egg bungalow; his coworker has been sent to Washington. Inside, the Finnish housekeeper tends the stove while Nick sets down his suitcase.
+Shot: establishing
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide establishing shot of a small weather-beaten clapboard bungalow on a Long Island lane in late spring 1922, peeling paint, sagging porch, an old Dodge parked in the dirt drive, a small dog sniffing at the steps. Young Nick Carraway in light traveling suit and soft hat stands at the open front door holding a suitcase, looking in. Through the open doorway, a sturdy middle-aged Finnish housekeeper in dark dress and white apron stoops over an electric stove inside a modest kitchen. Warm amber afternoon light, muted watercolor washes, clean inked linework.
+
+Panel 2:
+Beat: On a sunlit country road near the bungalow, a stranger stops Nick and asks the way to West Egg village. Nick points down the road.
+Shot: medium
+Panel archetype: single_speaker
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=88%, h=15%
+- balloon_1: speech for Stranger, top_left, x=6%, y=23%, w=38%, h=16%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Stranger: x 6%, y 23%, w 38%, h 16%. - Place Stranger body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Thumbnail figure boxes:
+- Stranger: body x=6%, y=47%, w=40%, h=49%; face x=20%, y=50%, w=10%, h=10%
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 88%, h 15%. - Reserve empty speech box balloon_1 for Stranger: x 6%, y 23%, w 38%, h 16%. - Place Stranger body in x 6%, y 47%, w 40%, h 49%; face in x 20%, y 50%, w 10%, h 10%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Medium two-shot on a dusty country road bordered by new green leaves and low hedges, late spring morning. On the right, Nick Carraway in light summer suit and soft hat pauses mid-walk, turning toward a younger disheveled stranger on the left who holds his cap in hand with a helpless, questioning posture. Nick lifts one hand to point down the road behind the stranger. Warm sunlight, clean ink lines, muted watercolor. Keep the upper center area and the lower right corner clear of figures and gesture for lettering. Mouths and pointing hand stay in the mid panel area, away from the reserved zones.
+
+Panel 3:
+Beat: Continuing alone up the road after giving directions, Nick walks taller; trees burst into leaf around him as the season turns.
+Shot: wide
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=15%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 15%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Wide shot of Nick Carraway walking alone away from camera up a country lane in West Egg, jacket over his shoulder, posture straighter, head lifted. The trees on either side are exploding into fresh green leaves, sunlight streaming through them in dappled patches, as if the season is changing in fast motion. A distant glimpse of the bungalow roofline and the bay beyond. Warm amber and green palette, soft watercolor washes, clean ink. Reserve a clean horizontal band along the top and a clean band along the bottom of the panel for two stacked narration boxes, free of foliage detail and the figure.
+
+Panel 4:
+Beat: Back at the bungalow, Nick at a small desk by the window opens one of a dozen new red-and-gold banking books, ready to remake himself as a well-rounded man—unaware he has rented into one of the strangest communities in North America.
+Shot: medium
+Panel archetype: caption_action
+In-panel lettering slots to reserve in the art:
+- caption: caption for narrator caption, top_center, x=6%, y=4%, w=72%, h=19%
+Thumbnail layout: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Lettering constraints: Thumbnail layout contract: - Reserve empty caption box caption for narrator caption: x 6%, y 4%, w 72%, h 19%. Keep faces, mouths, active hands, and key props out of all text boxes.
+Art prompt: Medium interior shot of Nick Carraway seated at a small wooden desk by an open window in the bungalow, sleeves rolled, vest unbuttoned, an open book in his hands. On the desk and on a shelf behind him, a row of about a dozen brand-new volumes bound in red cloth with gold lettering stand upright, gleaming like new mint coins. Through the window behind him, late afternoon light and a hint of the bay and a large neighboring rooftop in the distance. Warm amber lamp glow mixing with cool window light, muted watercolor, clean inked lines.

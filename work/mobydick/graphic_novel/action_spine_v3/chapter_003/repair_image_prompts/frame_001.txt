@@ -1,0 +1,27 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 1 of mobydick chapter 3: The Spouter-Inn.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Ishmael (narrator).
+Primary frame action: studies and deciphers the smoke-dark painting.
+Caption zone reserved for later lettering: top_left.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Ishmael (narrator) (Narrator, traveler seeking a bed): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious.
+Prop continuity: smoke-dark whaling painting: Large, smoke-blackened oil painting with a looming dark shape above three faint blue verticals in a stormy, chaotic sea. Avoid confusion: It is an abstracted whaling scene, not a literal supernatural tableau; no readable labels or plaques. | candle: Plain tallow candle with small brass or tin holder. Avoid confusion: No readable labels; keep flame modest.
+Secondary supporting visuals only: Old wainscots like ship bulwarks; Dim, uneven lamplight; Heathenish weapons on opposite wall in shadow
+Do not show: Readable labels or captions on the painting; Literal chaos or witches from metaphors; Any whale or ship outside the painting; No readable text
+Scene: Ishmael (the young sailor) studies the smoke-dark oil painting in the Spouter-Inn entry, leaning in with narrowed eyes as he holds open a small back window to catch more light. The large, blackened canvas suggests a storm-tossed ship with three faint blue verticals and a looming dark mass above. Old wainscots and dim lamplight frame the entry; vague whaling gear hangs in deeper shadow. No readable text. Leave clean negative space in the top-left for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. blocker caption_zone: Caption zone at top_left is occupied by a bright oil lamp and stair newel, leaving no clean negative space for lettering.
+   Visible failure to avoid: In the top-left corner, a glass oil lamp mounted on the stair newel glows against textured wall and banister details.
+   Repair instruction: Clear the top-left quadrant of busy elements and bright highlights: remove or relocate the lamp and stair newel from that area, keep the upper wall as plain dim plaster, and preserve a calm, low-contrast space for the caption while maintaining overall dim, uneven lamplight from elsewhere.
+2. major prop_confusion: A glass oil lamp is shown instead of the specified plain tallow candle in a small holder.
+   Visible failure to avoid: Left side of the frame shows a tall glass-chimney oil lamp fixed to the stair post; no candle is visible.
+   Repair instruction: Replace the oil lamp with a plain tallow candle in a small brass or tin holder placed within the scene; keep the flame modest and avoid any readable markings.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.

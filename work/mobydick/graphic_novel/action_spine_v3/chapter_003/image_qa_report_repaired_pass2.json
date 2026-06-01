@@ -1,0 +1,189 @@
+{
+  "run_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003",
+  "storyboard": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/storyboard.json",
+  "image_dir": "work/mobydick/graphic_novel/action_spine_v3/chapter_003/generated_frames",
+  "model": "openai:gpt-5",
+  "dry_run": false,
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": []
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Ishmael appears with noticeable facial stubble rather than clean-shaven as specified.",
+          "visible_evidence": "Shadowed texture along Ishmael’s cheeks and jawline suggests beard stubble.",
+          "repair_prompt": "Make Ishmael clean-shaven while retaining his dark hair, worn monkey jacket, plain shirt, rough trousers, and sea-scuffed boots."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Background painting reads as a clear seascape, which could be mistaken for the Spouter-Inn’s canonical smoke-dark abstract whaling painting.",
+          "visible_evidence": "Framed artwork on the left wall shows detailed ships on calm water, not a smoke-blackened abstract with a looming dark mass and three faint blue verticals.",
+          "repair_prompt": "Replace the wall art with the smoke-blackened abstract whaling painting described in the contract or remove the painting to avoid confusion."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Large jawbone arch behind the bar is a prominent unscripted set piece that can pull focus from the primary action.",
+          "visible_evidence": "A curved bone structure with large teeth frames the landlord behind the counter.",
+          "repair_prompt": "Remove or de-emphasize the jawbone arch; keep background to shelves, bottles without readable labels, low beams, and cracked curios cases."
+        }
+      ]
+    },
+    {
+      "frame_number": 3,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "readable_text",
+          "finding": "Readable numerals carved into the bench violate the no-readable-text directive.",
+          "visible_evidence": "On the front panel of the wooden bench, the numbers \"12\" are clearly legible.",
+          "repair_prompt": "Remove all legible alphanumeric carvings from the bench; retain only non-alphanumeric wear and whittling. Ensure there is no readable text anywhere in the frame."
+        },
+        {
+          "severity": "major",
+          "category": "prop_confusion",
+          "finding": "The carpenter's plane appears metal-bodied rather than the specified wooden-bodied style.",
+          "visible_evidence": "The landlord holds a dark, smooth-sided plane that reads as an all-metal tool.",
+          "repair_prompt": "Replace the tool with a sturdy wooden-bodied hand plane showing wood grain and an exposed iron blade/wedge; avoid an all-metal modern plane look."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The required candle prop is missing.",
+          "visible_evidence": "No candle or small holder is visible on tables, shelves, or near the stove.",
+          "repair_prompt": "Add a plain tallow candle in a small brass or tin holder on a nearby surface; keep the flame modest and avoid any labels; do not clutter the top-right caption zone."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Ishmael wears a knit cap not included in his described look.",
+          "visible_evidence": "The young man on the bench has a dark beanie covering his hair.",
+          "repair_prompt": "Remove the knit cap so his dark hair is visible; keep him clean-shaven in a worn dark monkey jacket, rough trousers, and sea-scuffed boots."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Wood shavings are not near the bench as specified in supporting visuals.",
+          "visible_evidence": "Shavings appear mainly on the worktable and floor to the right, away from the bench area at left.",
+          "repair_prompt": "Scatter a light trail of wood shavings near the base of the bench to connect the bench area to the ongoing planing."
+        },
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "The chair meant to extend the bench is not clearly arranged as an extension.",
+          "visible_evidence": "The chair stands beside the bench with a visible gap and angled orientation instead of being flush.",
+          "repair_prompt": "Slide the chair tight against the bench end with the seat aligned to extend the length; keep Ishmael recoiling and clutching his coat."
+        }
+      ]
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "caption_zone",
+          "finding": "Bottom-left caption zone is partially occupied by Ishmael’s coat and trousers, reducing clean negative space for lettering.",
+          "visible_evidence": "The lower-left corner shows Ishmael’s dark clothing and his extended arm intruding toward that area; only a narrow sliver of blank wall remains.",
+          "repair_prompt": "Recompose slightly to clear the bottom-left: nudge Ishmael and his pointing arm a bit right, or expand the blank wall margin on the lower-left; keep lighting and poses, preserve tight two-shot."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "The ‘stick shaving on the landlord’s fingers’ is not clearly visible on his fingers; most shavings are on the tabletop.",
+          "visible_evidence": "Small wood curls lie on the table near the candle, while the landlord’s fingers appear mostly clean.",
+          "repair_prompt": "Add a thin, curling wood shaving draped over or pinched between the landlord’s fingers to emphasize mid-whittle detail."
+        }
+      ]
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Papered fireboard is not visible.",
+          "visible_evidence": "No fireplace or paper-covered fireboard appears on any wall; left wall shows a lashed hammock and the opposite wall is bare.",
+          "repair_prompt": "Add a small hearth on one wall with a thin papered fireboard closing the opening; keep the paper pattern indistinct and without readable images or text."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Supporting visual of a rude shelf with odd bone hooks is missing.",
+          "visible_evidence": "Room walls appear plain aside from the hammock; no shelf or hooks are present.",
+          "repair_prompt": "Include a rough wooden shelf on a wall with a few primitive, bone-like hooks beneath it; keep them unobtrusive so the bed and characters remain primary."
+        },
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "Shaggy poncho-like cloak’s edge tags read as metallic clips rather than quill-like tags.",
+          "visible_evidence": "On the sea chest, the cloak has numerous shiny, uniform metal-looking fasteners along the fringe.",
+          "repair_prompt": "Redesign the cloak’s edging to show small quill-like, organic tags that could tinkle, avoiding shiny metal hardware; keep the garment thick and door-mat-like."
+        }
+      ]
+    },
+    {
+      "frame_number": 6,
+      "valid": false,
+      "findings": [
+        {
+          "severity": "blocker",
+          "category": "caption_zone",
+          "finding": "Bottom-right caption zone is busy and unsuitable for lettering.",
+          "visible_evidence": "The bottom-right corner contains a detailed sea chest with a tomahawk-pipe and wallet on top, plus textured floorboards—no clean negative space.",
+          "repair_prompt": "Recompose to leave a clear, low-detail negative space in the bottom-right quadrant for the caption. Shift the sea chest, pipe, and wallet leftward or crop them out; simplify/darken the floorboards in that corner. Maintain the over-bed angle, Ishmael at left in bed, Queequeg kneeling at the hearth, and all specified props elsewhere."
+        },
+        {
+          "severity": "minor",
+          "category": "character_continuity",
+          "finding": "Queequeg’s skin tone deviates from the specified purplish-yellow cast.",
+          "visible_evidence": "Queequeg appears medium-brown under the warm candlelight rather than the described purplish-yellow.",
+          "repair_prompt": "Adjust Queequeg’s skin tonality toward a purplish-yellow cast while preserving the square tattoo patterns and warm candlelit shading."
+        }
+      ]
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "major",
+          "category": "character_continuity",
+          "finding": "Queequeg’s hairstyle is not a small scalp-knot on a mostly bald head.",
+          "visible_evidence": "He has a full head of hair gathered into a thick bun/ponytail, with no mostly-bald scalp visible.",
+          "repair_prompt": "Render Queequeg with a mostly bald scalp and a small scalp-knot; reduce hair volume while keeping his square-pattern tattoos and the tomahawk-pipe clenched in his teeth."
+        },
+        {
+          "severity": "minor",
+          "category": "unsupported_content",
+          "finding": "Background props risk confusion with story luggage.",
+          "visible_evidence": "A large wooden chest with a coil of rope sits in the left foreground and glass bottles are on the table; no soft canvas sea-bag is shown.",
+          "repair_prompt": "Remove the hard-sided trunk and rope coil (and any bottle clutter if needed). If luggage is desired, replace with a weathered soft canvas sea-bag cinched with rope; keep background simple to avoid confusion."
+        },
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Ash flecks from the pipe are not visible on the blanket.",
+          "visible_evidence": "The blanket surface beneath the pipe bowl appears clean with no specks.",
+          "repair_prompt": "Add a few subtle gray ash flecks on the blanket just below the tomahawk-pipe’s bowl; keep them small and sparse."
+        }
+      ]
+    },
+    {
+      "frame_number": 8,
+      "valid": true,
+      "findings": []
+    }
+  ],
+  "valid": false
+}

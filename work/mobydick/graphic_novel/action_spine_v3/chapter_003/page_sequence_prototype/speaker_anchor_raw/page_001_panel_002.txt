@@ -1,0 +1,21 @@
+{
+  "page_number": 1,
+  "anchors": [
+    {
+      "panel_number": 2,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Peddling his head around town?",
+      "visible": true,
+      "confidence": 0.88,
+      "mouth_point": {"x": 876, "y": 544},
+      "mouth_point_ratio": {"x": 0.625, "y": 0.485},
+      "tail_target_point": {"x": 846, "y": 526},
+      "tail_target_point_ratio": {"x": 0.603, "y": 0.469},
+      "face_box": {"x1": 785, "y1": 448, "x2": 995, "y2": 651},
+      "evidence": "Center figure, young sailor in dark jacket; open mouth at grid ~x=0.625, y=0.485.",
+      "reason": "Only character matching hint in center. Mouth located using grid; tail endpoint nudged up-left toward top-left balloon zone, placed just outside lips on cheek edge to avoid piercing the mouth."
+    }
+  ]
+}

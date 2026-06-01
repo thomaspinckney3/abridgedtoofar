@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T02:40:35",
+  "key": "d5a0de2c2810dad100ee60ad3b45bae2",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters methodically, applying each test strictly and checking against the authorized-cut list before flagging anything.\n\n---\n\n**Ch 076 Draft \u2014 checks**\n\nThe Flask speech compresses the source's two separate paragraphs (Flask's superstition line, then the Fedallah-tusk observation) into one speech. In the source Flask says: *\"did you never hear, Stubb, that that ship can never afterwards capsize?\"* \u2014 then separately raises the tusk. In the draft Flask says: *\"Did you ever notice how that tusk of his\u2014a long tooth, carved somehow into a snake's head\u2014is a sort of omen?\"* The source's version is: *\"Did you ever notice how that tusk of his is a sort of carved into a snake's head, Stubb?\"* \u2014 which is just an observation with no \"omen\" gloss. That's a minor paraphrase, not a structural damage.\n\nThe Stubb speech in the source has a clear two-part structure: (a) \"I never look at him at all; but if ever I get a chance of a dark night\u2026\" and then (b) the devil story about John. In the draft these are reversed and merged: the devil/John story comes first, then \"But I never look at Fedallah at all; if ever I get a chance of a dark night\u2026\" The \"Aye, will I!\" now dangles as a conclusion without the setup of *what* Stubb intends to do (throw Fedallah overboard) \u2014 but within the draft passage, the reader has just been told \"giving Fedallah a sea-toss\" in Flask's next speech, so context recovers it. Borderline, but the reader isn't truly confused about what \"Aye, will I!\" means \u2014 it follows \"look down there, Flask\" pointing to the sea.\n\nFlask's line *\"But Stubb, you boasted of giving Fedallah a sea-toss; if he's going to live for ever, what good will pitching him overboard do?\"* \u2014 in the source this follows a long exchange where Stubb establishes Fedallah's infinite age (the mainmast/hoops speech) and then Stubb's threat is registered. In the draft that age-establishing speech is cut, so Flask's \"if he's going to live for ever\" has no antecedent in the draft. A competent reader would not know Stubb had just argued Fedallah lives forever \u2014 that exchange was removed. This is a **broken pivot**: the \"if he's going to live for ever\" clause depends on a two-sided structure (Stubb's age-claim \u2192 Flask's rebuttal) where the first side was cut.\n\nEverything else in Ch 076 parses cleanly.\n\n---\n\n**Ch 096 Draft \u2014 checks**\n\nOpening: *\"Some few days after\"* \u2014 \"after\" what? The previous draft chapter (076) ends with the Fedallah shadow passage. The source says \"some few days after encountering the Frenchman\" but the Frenchman/Rose-Bud episode is an **authorized removal** (Ch 094\u2013095). This residual seam is a direct consequence of an authorized cut. Not a finding.\n\n*\"By chance an after-oarsman of Stubb, the second mate, sprained his hand\"* \u2014 source says this happened \"in the ambergris affair.\" The ambergris caper is an authorized removal. The seam is residual from an authorized cut. Not a finding.\n\n*\"Tashtego, the Indian harpooneer, stood in the bows\"* \u2014 Tashtego is a principal, continuously present character. Not a finding.\n\nAll other sentences parse cleanly against draft-internal context.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"\\\"But Stubb, you boasted of giving Fedallah a sea-toss; if he's going to live for ever, what good will pitching him overboard do?\\\"\",\n    \"source_has\": \"In the source this line is preceded by Stubb's extended mainmast/hoops speech establishing that Fedallah is immortally old ('well, that wouldn't begin to be Fedallah's age'), which gives Flask's 'if he's going to live for ever' its logical premise. That speech was cut from the draft.\",\n    \"gate_test_answer\": \"A reader of the draft has been given no basis for Flask's conditional 'if he's going to live for ever' \u2014 Stubb never argued this in the draft \u2014 so the sentence reads as Flask rebutting a claim that was never made, genuinely confusing the logical structure of the exchange.\"\n  }\n]\n```",
+    "input_tokens": 11148,
+    "output_tokens": 1100,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.867605209350586,
+    "stop_reason": "end_turn"
+  }
+}

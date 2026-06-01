@@ -1,0 +1,20 @@
+{
+  "frame_number": 3,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "minor",
+      "category": "primary_action",
+      "finding": "Queequeg’s vigorous self-shake is not depicted.",
+      "visible_evidence": "Queequeg is upright with one hand on the bedding and the other resting; no motion cues or posture indicating a shake.",
+      "repair_prompt": "Show Queequeg mid-shake with subtle motion blur or repeated limb positions, shoulders and hair in motion, while he withdraws his arm; keep two-shot at bed edge, Ishmael mid-expostulation, tattoos visible, and the patchwork counterpane."
+    },
+    {
+      "severity": "minor",
+      "category": "caption_zone",
+      "finding": "Top-center caption area is partially encroached by the characters’ heads and textured wall, reducing clean negative space.",
+      "visible_evidence": "The top-center above the headboard includes Ishmael’s and Queequeg’s head silhouettes and wall texture close to the upper margin.",
+      "repair_prompt": "Recompose to leave an unobstructed, plain band of wall at the top-center (e.g., lower the figures or crop slightly lower); avoid heads or curtains entering that zone."
+    }
+  ]
+}

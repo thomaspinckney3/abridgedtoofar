@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:12:42",
+  "key": "5f4e420425540cd9da4b7eb1ad270046",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the gate test and checking against the authorized cuts.\n\n---\n\n**Ch 037 draft \u2014 scan**\n\nThe chapter compresses cleanly. The Tompkins reference is cut but the replacement (\"you won't mind, I suppose? And you'll pay down, like a lady, won't you?\") still parses. The \"his sable attendants\" phrase survives without gloss but it is a descriptor, not a proper name. No structural damage found.\n\n---\n\n**Ch 038 draft \u2014 scan**\n\n**Candidate 1: \"As he had informed them that their party would be looked for in Sandusky\u2026\"**\n\nSource: \"As Tom had informed them\u2026\" \u2014 the subject was Tom Loker, named. Draft elides the name. But \"he\" immediately follows the Tom Loker farewell paragraph, so the antecedent is unambiguous. Not a finding.\n\n**Candidate 2: \"I hope they _will_ get away, just to spite\u2014him!\"**\n\nSource has \"just to spite Marks,\u2014the cursed puppy!\" The draft cuts the name (Marks is on the authorized removal list) and substitutes \"him.\" The \"him\" has no antecedent in the draft: Tom is talking about Sandusky correspondents watching boats, and no antagonist has been named or introduced in the surrounding draft text. However \u2014 the authorized removal list includes Marks, and this is a direct residue of that authorized cut. Per the instructions, dangling references that are direct residues of authorized cuts are expected and NOT findings.\n\n**Candidate 3: Jim**\n\n\"Jim, with his old mother, was forwarded separately\" \u2014 Jim is named without any identifying gloss. Is Jim established in the preceding draft chapter (Ch 037)? Ch 037 is the Emmeline/Cassy/Tom chapter; Jim does not appear there at all. Does any earlier draft chapter establish Jim? The prompt only provides Ch 037 and Ch 038 drafts. The gate test question: would a reader be genuinely confused? \"Jim, with his old mother\" \u2014 Jim is a minor character whose introduction would have been in earlier chapters of the novel (the Quaker settlement / fugitive storyline). Within Ch 038 itself, he is named and paired with \"his old mother,\" which provides a partial descriptor. But \"Jim\" receives no role, relationship, or appositive that places him for a reader who only has the draft. He appears in a single sentence alongside George and Eliza's party as someone who was also being sheltered. However \u2014 Jim is not on the authorized minor-character removal list, meaning his introduction was presumably retained elsewhere in the draft novel. The instruction says the *immediately preceding draft chapter* must establish who a named person is if the character is minor. Ch 037 does not. But the invariant applies if a name \"survives after its introduction was cut.\" If Jim's introduction survived in an earlier draft chapter (not provided here), this is not a finding at this local pair. Given the instructions scope the check to \"the preceding draft chapter\" for first local use, and Jim appears without any gloss here, this is worth flagging \u2014 but only if his introduction was cut. Since Jim is not on the authorized removal list, his intro should survive somewhere earlier in the draft; the reader tracking through the full draft would know him. This pair-level check cannot confirm the earlier chapter retained his intro, but the invariant says to flag orphaned names relative to what survives in the draft. I will flag this conditionally \u2014 but actually, re-reading the invariant: \"if a proper name from the authorized minor-character list appears in the draft\" \u2014 Jim is NOT on that list. The unglossed-name rule (test 7) applies to any minor/removable character. Jim is a minor character. His name appears without a local role identifier, and the immediately preceding draft chapter does not establish him. This is a valid structural gap at the chapter-pair level.\n\n**Candidate 4: The dialogue exchange \"I've watched every one that came on board\u2026 / You would scarcely know the woman from a white one\u2026\"**\n\nSource: first speaker is \"the clerk of the boat,\" second is Marks. Draft cuts both identifications and renders it as anonymous dialogue. The first speaker is introduced in source as \"the clerk of the boat\"; in the draft the first speaker is completely unattributed. The second speaker in source is Marks (authorized removal). In the draft, \"said the other\" replaces Marks. The exchange still parses \u2014 George overhears two men talking, one says X, \"the other\" says Y. This is readable. Not a structural failure.\n\n**Candidate 5: \"The woman, with little Harry, sought the seclusion of the ladies' cabin\u2026\"**\n\nIn the source this is \"Mrs. Smyth, with little Harry.\" Mrs. Smyth is on the authorized removal list. The draft uses \"the woman\" \u2014 the same descriptor used throughout the draft for this character. Clear by context. Not a finding.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Jim, with his old mother, was forwarded separately; and a night or two after, George and Eliza, with their child, were driven privately into Sandusky\",\n    \"source_has\": \"Jim, with his old mother, was forwarded separately \u2014 source introduces Jim as part of the fugitive party sheltered at the Quaker farm, established in earlier scenes of the fugitive storyline; no gloss or appositive is provided in the draft sentence or anywhere in the preceding draft chapter (Ch 037), which concerns Legree's plantation entirely.\",\n    \"gate_test_answer\": \"A reader arriving at this sentence has no basis in the preceding draft chapter to know who Jim is or what his relationship to George and Eliza's party is; the name appears without any role, relationship, or appositive identifier, causing genuine confusion rather than mere loss of ornamentation.\"\n  }\n]\n```",
+    "input_tokens": 16222,
+    "output_tokens": 1370,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 34.52322578430176,
+    "stop_reason": "end_turn"
+  }
+}

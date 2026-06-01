@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T11:39:24",
+  "key": "0142e46f78939bf9f6e58d290ac8782a",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the draft systematically, testing each potential break against the seven validity criteria and the gate test.\n\n**Ch 001 draft candidates:**\n\n1. *\"A door opened; a compassionate head beckoned me into the sanctuary.\"* \u2014 The source has \"a white-haired secretarial head, but wearing a compassionate expression.\" The draft reduces this to \"a compassionate head,\" which still parses and a reader can follow it. The compassionate secretary is on the authorized-removal list, so any seam here is an authorized residue. Not a finding.\n\n2. *\"A shabby clerk led me forth.\"* \u2014 The shabby clerk escort is on the authorized-removal list. The sentence parses fine on its own; \"led me forth\" is clear from context. Authorized residue, not a finding.\n\n3. The rivets passage and the boiler-maker section: the boiler-maker's pigeon-fancying backstory is an authorized removal. The boiler-maker himself is kept. No orphaned name. Not a finding.\n\n4. The Eldorado Expedition closing: the manager's uncle is on the authorized-removal list. The draft says \"they went their ways\" \u2014 no dangling reference. Not a finding.\n\n**Ch 002 draft candidates:**\n\n1. *Opening eavesdropping scene \u2014 \"the nephew and the uncle.\"* The Ch 001 draft never establishes who \"the uncle\" is; the manager's uncle is on the authorized-removal list. However, \"the nephew\" is equally unglossed \u2014 neither \"nephew\" nor \"uncle\" has an antecedent in Ch 001 draft. The manager was introduced in Ch 001 draft, but his uncle and the nephew relationship were never established there. Yet the manager himself is the one referred to as \"the nephew\" here, and the manager was introduced in Ch 001 draft. A reader can infer \"the nephew\" = the manager and \"the uncle\" = his relative. The manager's uncle is an authorized removal, so this seam is expected. Not a finding.\n\n2. *\"There was surface-truth enough in tubes and gauges and snags to save a wiser man\"* \u2014 The source reads \"There was surface-truth enough in these things to save a wiser man,\" referring back to \"white-lead and strips of woolen blanket helping to put bandages on those leaky steam-pipes\" and \"to watch the steering, and circumvent those snags.\" The draft cuts the steam-pipe bandage episode but retains \"tubes and gauges and snags\" as a replacement. This still parses and is comprehensible. Not a finding.\n\n3. *\"One of my hungry and forbearing friends was sounding in the bows just below me. The steamboat, exactly like a decked scow, had two little teakwood houses on deck; the boiler forward, the machinery astern; a light roof on stanchions; a small pilot-house in front of the funnel with a wide door and broad shutters.\"* \u2014 The technical layout of the steamboat is an authorized digression removal. But the phrase \"one of my hungry and forbearing friends\" is a mid-sentence reference. In the source, this phrase refers to the cannibal crew members, established earlier in the same chapter in the extensive cannibal passage. In the Ch 002 draft, the cannibal crew has been introduced earlier (the headman dialogue, the hunger passage), so \"my hungry and forbearing friends\" does have an antecedent in the draft \u2014 the cannibals / wood-cutters established in the fog scene. A reader can follow this. Not a finding.\n\n4. *\"I gave him Towson's book.\"* \u2014 \"Towson's book\" is used with a definite article and possessive, as if previously established. In the Ch 002 draft, the book was introduced at the reed hut: \"by the door I picked up a book... Its title was, An Inquiry into some Points of Seamanship, by a man Towson\u2014some such name.\" So \"Towson's book\" does have an antecedent in the draft. Not a finding.\n\n5. *The harlequin's introduction dialogue \u2014 \"Are we in time?\" / \"He is up there\"* \u2014 Looking at the exchange: `\"Never mind! Are we in time?\" / \"He is up there,\" he replied`. The question is asked by the harlequin and answered by him in the same utterance. Wait \u2014 re-reading: the harlequin asks \"Are we in time?\" and then \"He is up there, he replied\" \u2014 but \"he replied\" uses \"he\" for the harlequin replying to his own question? Actually in both source and draft, the harlequin asks \"Are we in time?\" and then answers it himself with \"He is up there.\" This is the same in both versions. Not a coherence break introduced by compression.\n\n6. *The paragraph beginning \"He had no restraint, no restraint\u2014just like Kurtz\u2014a tree swayed by the wind.\"* \u2014 In the source, this is preceded by \"Poor fool! If he had only left that shutter alone.\" The draft preserves this. The helmsman has been established. Not a finding.\n\n7. Looking at the transition from the headman dialogue to the hunger meditation in Ch 002 draft: The draft cuts the brass-wire pay detail (authorized removal) and the rotten hippo-meat provisions detail (authorized removal). The draft says: \"Had I not reflected that he and his chaps must be very hungry\u2014growing increasingly hungry for at least this month past\u2014I would have been properly horrified. They had been engaged for six months; written paper down the river had settled their wages in brass wire; there were either no villages, or the people were hostile, or the director, who like the rest of us fed out of tins, with an occasional old he-goat, didn't want to stop the steamer.\" The brass-wire wage detail is kept here in abbreviated form. This parses. Not a finding.\n\n8. *\"He is up there,\" he replied* \u2014 re-examining: this is the harlequin's reply to Marlow's question \"Are we in time?\" But in the draft: `\"Never mind! Are we in time?\" / \"He is up there,\" he replied, with a toss of the head up the hill`. The \"he replied\" refers to the harlequin replying to Marlow's \"Are we in time?\" \u2014 but Marlow asks \"Are we in time?\" and the harlequin is the one who answers. Wait, I need to re-read the draft more carefully:\n\n> \"Never mind! Are we in time?\"\n> \"He is up there,\" he replied, with a toss of the head up the hill, and became gloomy all of a sudden.\n\nThis is fine \u2014 the harlequin says \"Never mind! Are we in time?\" and then \"He is up there\" is the harlequin's own answer (self-answering, as in source). Structurally intact.\n\n9. *The paragraph about Kurtz's report and \"This initiated wraith\"* \u2014 In the source, this passage is prefaced with extensive material about Kurtz's origins, the English education, mother/father background. The draft keeps all of this. The International Society passage is intact. Not a finding.\n\nAfter exhaustive checking, I find no valid structural coherence failures in either draft chapter that pass the gate test and are not residues of authorized cuts.\n\n```json\n[]\n```",
+    "input_tokens": 59297,
+    "output_tokens": 1689,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 38.79380226135254,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:38:46",
+  "key": "1ea9b381f6b6ff45e54f60371e4f2b83",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test rigorously.\n\n---\n\n**Ch 023 draft analysis:**\n\n1. \"A letter, in due time, came from young Master George\u2026that his wife, Aunt Chloe, had been hired to a confectioner in Louisville\" \u2014 The draft Ch 023 itself introduces Aunt Chloe as Tom's wife here, so this is self-glossing. No issue.\n\n2. \"Here's poor Mammy,\" said Eva,\u2014her nurse, who loved the book so and wished she could read.\" \u2014 Mammy is on the authorized removal list. The draft adds an appositive \"her nurse\" to identify her. This is a local gloss, so the reader understands who is meant. No structural failure.\n\n3. \"Eva stole away; and after that, she assiduously gave her nurse reading lessons.\" \u2014 The source says \"she assiduously gave Mammy reading lessons.\" The draft substitutes \"her nurse\" for \"Mammy,\" which is consistent with the local appositive gloss. No confusion.\n\n4. The Topsy reference \u2014 \"She still loved to be with Topsy\u2014Miss Ophelia's little pupil.\" This is a gloss. No issue.\n\n---\n\n**Ch 025 draft analysis:**\n\n1. \"Two days after her young cousin left, Eva, who had been stimulated by his visit beyond her strength, began to fail rapidly.\" \u2014 The authorized cut list removes Henrique's visit (Ch 024). The source's Ch 025 opens \"Two days after this, Alfred St. Clare and Augustine parted; and Eva, who had been stimulated, by the society of her young cousin\u2026\" The draft says \"her young cousin left\" \u2014 this is a mid-scene jump referencing \"her young cousin\" whose visit was cut from the preceding draft chapter. However, I need to check: was Henrique's visit established in ANY preceding draft chapter? The authorized subplot removal is \"Henrique's visit and Dodo's mistreatment (Ch 024).\" So the entirety of Henrique's visit was cut. The preceding draft chapter (Ch 023 draft) does not mention Henrique at all. A reader of the draft has no way to know who \"her young cousin\" is. This passes the gate test \u2014 a reader would be genuinely confused about who \"her young cousin\" refers to and why his departure is the precipitating event. This is a mid-scene jump / dangling reference caused by the authorized cut of Ch 024.\n\nBUT \u2014 this is a **direct residue of an authorized cut** (Henrique's visit, Ch 024). The instructions say: \"Dangling references\u2026 that are direct residues of these authorized cuts\u2026 are EXPECTED and NOT findings.\" So this is NOT a valid finding.\n\n2. \"Night after night, the nurse used to sit up with me.\" \u2014 The source says \"Mammy used to sit up with me.\" The draft substitutes \"the nurse.\" Mammy is on the authorized removal list. The descriptor \"the nurse\" is clear in context. Not a finding.\n\n3. \"It's jest no use tryin' to keep Miss Eva here,\" he said to the nurse, whom he met a moment after. \"She's got the Lord's mark in her forehead.\" \u2014 In the source, Tom says this to Mammy, and Mammy replies with a substantial speech: \"Ah, yes, yes,\" said Mammy, raising her hands; \"I've allers said so. She wasn't never like a child that's to live\u2026\" This is dialogue where the reply is cut. But the question is whether Tom's speech is the triggering question for a missing reply. Tom speaks; Mammy's reply is cut. Tom's speech stands alone as a statement, not as a question requiring an answer. The cut of Mammy's reply leaves Tom's statement without a response, but Tom's statement itself is parseable and complete. The reader may find the exchange truncated but is not confused. Not a valid finding.\n\n4. \"There's our good nurse loves her children; I've seen her cry when she talked about them.\" \u2014 The source says \"There's poor Mammy loves her children.\" The draft substitutes \"our good nurse.\" Mammy is authorized-removed. Clear by context. Not a finding.\n\n5. \"When I heard about poor Prue,\u2014oh, wasn't that dreadful!\" \u2014 Prue the bakery woman is an authorized subplot removal (Ch 020). In the draft, Eva references Prue as if the reader knows who she is, but there has been no mention of Prue in any surviving draft chapter. A reader of the draft has no referent for \"poor Prue.\" This would normally be a finding. However: is this a direct residue of an authorized cut? Yes \u2014 Prue's story was removed in Ch 020. The reference to Prue here is a direct residue of that authorized removal. Per the instructions, this is EXPECTED and NOT a finding.\n\n6. \"And then, think of poor old Prue's owners!\" \u2014 Same as above; direct residue of authorized cut. Not a finding.\n\n7. \"Poor old Prue's child was all that she had,\u2014and yet she had to hear it crying, and she couldn't help it!\" \u2014 Same; direct residue. Not a finding.\n\nAfter careful analysis, all apparent discontinuities in both draft chapters are either self-resolved by local glosses, clear from context, or are direct residues of authorized cuts. No repair-worthy structural coherence failures survive the gate test and the authorized-cut exemptions.\n\n```json\n[]\n```",
+    "input_tokens": 15368,
+    "output_tokens": 1262,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 30.530665159225464,
+    "stop_reason": "end_turn"
+  }
+}

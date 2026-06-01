@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:30:30",
+  "key": "0f2238423531dcf7df473194b5a56e0c",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to candidate findings only.\n\n---\n\n**Ch 017 draft \u2014 review**\n\nThe draft is a clean compression of the source. No pronouns lose antecedents, no pivots are broken, no names are introduced without gloss. The cuts (extravaganza list, the legend framing, cod/mackerel detail) leave the matrix sentences intact and parseable.\n\nNo findings for Ch 017.\n\n---\n\n**Ch 018 draft \u2014 review**\n\n**Candidate 1: \"The landlady ushered us into a little room\u2026\"**\n\nIn the source, the innkeeper is introduced as \"Mrs. Hussey,\" named and described before she speaks. The draft elides her introduction: the first mention of the inn's proprietor uses \"The landlady\" without any prior reference in the draft \u2014 the phrase \"The landlady\" uses the definite article (\"The\"), implying she has already been introduced. She has not been named or described anywhere in the preceding draft text. However, she is referred to only by descriptor (\"the landlady\"), not by a proper name. Per the explicit rejection rule: *\"A minor character is referred to only by a descriptor ('the neighbour', 'Myrtle's sister') and the descriptor is clear; proper-name continuity is not required.\"* The descriptor \"the landlady\" is contextually clear (we are at an inn). This is not a valid finding.\n\n**Candidate 2: \"\u2026bethinking me of the announcement, I tried a little experiment.\"**\n\nIn the source: *\"bethinking me of Mrs. Hussey's clam and cod announcement.\"* In the draft, \"the announcement\" refers back to the landlady's \"Clam or Cod?\" exchange, which does appear earlier in the draft. A reader can follow this reference without confusion.\n\nNo valid finding.\n\n**Candidate 3: \"I saw the brindled cow feeding on fish remnants\u2026\"**\n\nThe source reads \"I saw Hosea's brindled cow.\" In the draft, \"the brindled cow\" appears without the owner attribution, but this is the first mention of the cow in the draft, and no prior draft text has established it. The definite article \"the\" implies prior introduction where there is none, but \u2014 the source has no prior introduction either; it is the same sentence that introduces the cow. In the source it reads *\"I saw Hosea's brindled cow\"* \u2014 the possessive grounds it. In the draft it reads *\"I saw the brindled cow\"* \u2014 but \"the\" here is functioning as a generic/contextual definite (in this place full of fish things, the cow), and a reader would not be confused, only mildly puzzled for a moment. This is a detail's cause/origin being cut, not a structural failure. Not a valid finding.\n\n**Candidate 4: \"So I will just take this here iron, and keep it for you till morning.\"**\n\nIn the source this reads: *\"So, Mr. Queequeg (for she had learned his name), I will just take this here iron.\"* The draft drops the parenthetical. The sentence still parses and conveys its meaning. No finding.\n\n---\n\nAfter applying all tests and the gate test, there are no repair-worthy structural coherence failures in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 6531,
+    "output_tokens": 757,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 18.556213855743408,
+    "stop_reason": "end_turn"
+  }
+}

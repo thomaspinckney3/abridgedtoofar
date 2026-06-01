@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:13:09",
+  "key": "e5b8b0191a940310b15bb807a71cb316",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through both draft chapters systematically, applying each test.\n\n**Ch 038 Draft**\n\n- \"As he had informed them that their party would be looked for in Sandusky...\" \u2014 \"he\" refers to Tom Loker, whose name was used just above. Antecedent is clear.\n- \"I hope they will get away, just to spite\u2014him!\" \u2014 Marks's name is cut (authorized removal), so the dash and \"him\" is intentional elision, not a structural failure.\n- The Quaker woman is unnamed throughout (Aunt Dorcas is an authorized removal). References to \"the other,\" \"she,\" \"she answered\" all trace back to the unnamed woman introduced in the opening paragraph. No structural break.\n- Mrs. Smyth is an authorized removal. Her name is absent; she appears as \"a respectable, middle-aged woman\" and \"the woman\" thereafter. No unglossed name issue.\n- \"The disguises the party had assumed were in accordance with the hints of Tom Loker.\" \u2014 Tom Loker's hints about disguising Eliza were given in the draft. Parseable.\n- No mid-scene jump issues.\n\n**Ch 039 Draft**\n\n- \"The poor mulatto, whose faith had been all but crushed by cruelty and wrong, felt her soul raised by the hymns and Scriptures Tom breathed in her ear between tasks\" \u2014 In the source this refers to Emmeline. The source says \"The poor mulatto woman\" and then separately mentions \"Cassy.\" The draft presents \"the poor mulatto\" without identifying her, then \"even the half-crazed, wandering mind of Cassy.\" A competent reader who has followed the draft narrative will have encountered Emmeline previously (she is mentioned by name just a few paragraphs above: \"sometimes the dejected Emmeline\"). The descriptor \"the poor mulatto\" is ambiguous \u2014 Cassy is herself described as a mulatto throughout the novel, and Emmeline has not been firmly established as a mulatto specifically in the draft. However, the sentence structure (\"the poor mulatto\u2026 and even\u2026 Cassy\") implies two different people, and Emmeline is the only other woman established in the immediate context. A reader can infer the referent; this is a less-ornamented version rather than genuine confusion.\n\n- \"Stung to madness by life's agonies, Cassy had often resolved on retribution.\" \u2014 Source has \"Stung to madness and despair by the crushing agonies of a life, Cassy had often resolved in her soul an hour of retribution, when her hand should avenge on her oppressor all the injustice and cruelty to which she had been witness, or which she had in her own person suffered.\" The draft version is compressed but parseable; no structural damage.\n\n- \"One night, after the cabin slept, Tom saw her face at the chink that served for a window.\" \u2014 Source: \"he was suddenly aroused by seeing her face at the hole between the logs, that served for a window.\" The draft changes \"hole between the logs\" to \"chink\" and omits the arousal from sleep, but the sentence parses and conveys the event.\n\n- Sambo appears in the draft (\"What the devil's got into Tom?\" said Legree to Sambo) \u2014 Sambo is a continuing character, present in many prior chapters, not a minor removable character. He is a principal recurring figure at the Legree plantation. Not an unglossed name issue.\n\n- Emmeline is named in Tom's advice to Cassy: \"I'd 'vise ye and Emmeline to do it.\" Emmeline has been mentioned several times in the draft chapter already (\"sometimes the dejected Emmeline\"). No structural problem.\n\nAfter careful review, I find no passages that fail any of the seven structural tests. In Ch 038, the authorized removals (Aunt Dorcas, Marks, Mrs. Smyth) are handled cleanly by substitution or elision. In Ch 039, all named characters either have continuous presence or are introduced with sufficient descriptor. No sentence is non-parseable, no pronoun is genuinely dangling, no pivot is broken by a cut, no gloss is missing in a confusing way, no dialogue is unattributed, no mid-scene jump occurs, and no minor proper name is orphaned.\n\n```json\n[]\n```",
+    "input_tokens": 18604,
+    "output_tokens": 997,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.325917959213257,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "frames": [
+    {
+      "frame_number": 1,
+      "valid": true,
+      "findings": [],
+      "selected_candidate": "repair2",
+      "selection_score": {
+        "weighted_score": 0,
+        "severe_count": 0,
+        "finding_count": 0
+      }
+    },
+    {
+      "frame_number": 2,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "primary_action",
+          "finding": "Ishmael is not clearly shown reaching to rouse Queequeg; his right hand is recoiling near his neck while the left only lifts the quilt.",
+          "visible_evidence": "Ishmael\u2019s right hand is held up by his neck in a flinch and not extended toward Queequeg; no hand makes contact with or clearly reaches for Queequeg\u2019s shoulder.",
+          "repair_prompt": "Repose Ishmael so his nearer hand is mid-gesture reaching toward or lightly touching Queequeg\u2019s shoulder to rouse him, while the other hand throws the patchwork quilt aside; keep his flinching expression and maintain the tomahawk-pipe visible by Queequeg\u2019s side."
+        }
+      ],
+      "selected_candidate": "repair1",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 3,
+      "valid": true,
+      "findings": [],
+      "selected_candidate": "repair1",
+      "selection_score": {
+        "weighted_score": 0,
+        "severe_count": 0,
+        "finding_count": 0
+      }
+    },
+    {
+      "frame_number": 4,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "other",
+          "finding": "Shot is not clearly from Ishmael\u2019s POV as specified.",
+          "visible_evidence": "Ishmael is fully visible reclining on the left side of the frame while looking at Queequeg, indicating a third-person angle rather than a POV shot.",
+          "repair_prompt": "Recompose to a medium over-the-blanket POV from Ishmael\u2019s vantage so Ishmael is not fully visible (at most a foreground edge of quilt/hand). Keep Queequeg mid-frame gesturing toward the clothes pile and the open door. Preserve the patchwork counterpane in the foreground and maintain clean negative space in the bottom-right for the caption. No readable text."
+        }
+      ],
+      "selected_candidate": "initial",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 5,
+      "valid": true,
+      "findings": [],
+      "selected_candidate": "initial",
+      "selection_score": {
+        "weighted_score": 0,
+        "severe_count": 0,
+        "finding_count": 0
+      }
+    },
+    {
+      "frame_number": 6,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "prop_confusion",
+          "finding": "The whaling harpoon reads visually as a generic spear; the detachable stock and distinctive straight-edged steel head are not clearly depicted.",
+          "visible_evidence": "A long pole with a simple triangular point leans against the wall near the chair; no clear detachable stock or lashing details are visible.",
+          "repair_prompt": "Refine the harpoon so it is unmistakably a 19th-century whaling harpoon: show a detachable wooden stock and a long, straight-edged steel head with proper lashing hardware. Keep its position near the wash-stand/chair; retain all other scene elements and the uncurtained window view."
+        }
+      ],
+      "selected_candidate": "repair2",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    },
+    {
+      "frame_number": 7,
+      "valid": true,
+      "findings": [
+        {
+          "severity": "minor",
+          "category": "caption_zone",
+          "finding": "Top-left caption zone is partially busy with Ishmael, bedpost, and patchwork quilt encroaching, leaving limited clean negative space.",
+          "visible_evidence": "In the upper-left area, Ishmael\u2019s head and the bed\u2019s post and quilt occupy space up to near the corner of the frame.",
+          "repair_prompt": "Recompose to reserve a clear top-left caption area: shift the camera slightly right or down, or move Ishmael/bed leftward, adding blank wall in the top-left so text can sit cleanly."
+        }
+      ],
+      "selected_candidate": "repair2",
+      "selection_score": {
+        "weighted_score": 1,
+        "severe_count": 0,
+        "finding_count": 1
+      }
+    }
+  ]
+}

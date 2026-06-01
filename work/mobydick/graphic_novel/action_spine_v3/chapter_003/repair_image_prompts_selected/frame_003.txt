@@ -1,0 +1,25 @@
+Use case: illustration-story
+Asset type: single graphic novel frame, text-free source art for later lettering
+Primary request: Generate Frame 3 of mobydick chapter 3: The Spouter-Inn.
+Hard constraints: No readable text, no caption box, no speech balloons, no labels, no signs with letters, no watermark. Do not add unsupported narrative content.
+Continuity rule: keep recurring people and recurring props visually consistent with the continuity notes below.
+Literalization rule: do not draw similes, metaphors, idioms, jokes, memories, fears, or comparisons as literal scene content.
+Composition rule: make the primary frame action the visual focus; supporting details must stay secondary.
+Driver character: Ishmael (narrator).
+Primary frame action: attempts to make a bench-bed and abandons it.
+Caption zone reserved for later lettering: top_right.
+Style: muted ink-and-wash graphic novel illustration, crisp ink line with simplified anatomy, restrained source-grounded scenery.
+Character continuity: Ishmael (narrator) (Narrator, traveler seeking a bed): Young adult sailor, average build, clean-shaven, dark hair, wearing a worn dark monkey jacket over a plain shirt, rough trousers, and sea-scuffed boots; carries himself wary but curious. | Peter Coffin (landlord) (Innkeeper of the Spouter-Inn): Lean New Englander, late middle-age, angular face with a wry grin, hair tied back or under a cap; simple waistcoat and rolled-up shirtsleeves; practical hands that plane wood or whittle.
+Prop continuity: wooden bench: Old carved wooden settle/bench with notches and whittled marks. Avoid confusion: Do not depict it as a bed; it’s a hard bench in the bar-room. | carpenter's plane: Sturdy wooden-bodied hand plane with exposed iron. Avoid confusion: Tool for shaving wood, not a weapon. | candle: Plain tallow candle with small brass or tin holder. Avoid confusion: No readable labels; keep flame modest.
+Secondary supporting visuals only: Wood shavings near the bench; A loosely fitted window and rickety door suggesting drafts; A central iron stove in the room
+Do not show: The bench turning into a real bed; Exaggerated wind effects or flying debris; No readable text
+Scene: Ishmael tries to bed down on a carved wooden bench he has shoved along the wall with a chair for length, then hugs his coat and grimaces as a cold draft cuts over him. In the background the landlord lowers a carpenter’s plane, wood shavings scattered near the bench; a loose window and rickety door suggest the crossing currents. No readable text. Leave clean negative space in the top-right for the caption.
+Lettering will be added later from the storyboard. Do not include caption text, speech balloons, labels, signs with letters, or any visible writing in the image.
+
+QA repair requirements for this regeneration:
+1. major character_continuity: Peter Coffin lacks the specified tied-back hair or cap.
+   Visible failure to avoid: In the left background, the landlord planing wood has a bare, balding head with no cap or tied-back hair.
+   Repair instruction: Add a simple cap or tie the landlord’s hair back in a short queue while keeping his waistcoat and rolled-up sleeves; retain his planing pose and background placement.
+
+Regenerate the frame from scratch following the base prompt and all repair requirements. Keep the same story moment and style. No readable text, no captions, no speech balloons, no labels, and no watermark.
+Do not introduce new violations while fixing the listed issues: preserve the requested caption zone as clean negative space, keep recurring characters and props consistent with the continuity notes, and omit optional background props when their exact form or placement is likely to cause confusion.

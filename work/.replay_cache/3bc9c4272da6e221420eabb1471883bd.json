@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T01:21:56",
+  "key": "3bc9c4272da6e221420eabb1471883bd",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter systematically, applying the gate test to each candidate finding.\n\n---\n\n**Ch 129 draft \u2014 \"the old Manxman\"**\n\nThe draft introduces \"the grey Manxman, oldest mariner of all\" in paragraph 2. This is the Manxman, an authorized minor-character removal. However, the name appears in the draft itself with an appositive (\"oldest mariner of all\"), so the first use is self-glossed. Later uses (\"But again the old Manxman said nay\") are anaphoric to that introduction. The Manxman also appears in Ch 131 draft (\"muttered the old Manxman\") \u2014 by that point the draft has introduced him in Ch 129. No finding.\n\n**Ch 129 draft \u2014 carpenter's grumble**\n\nThe carpenter's monologue is rendered in free indirect discourse plus one direct-speech passage. The passage \"We workers in woods make bridal-bedsteads\u2026\" is presented as direct speech by the carpenter, but the carpenter was never named or introduced in the preceding draft. Is he traceable? Yes \u2014 \"Rig it, carpenter\" appears in the dialogue above, so \"the carpenter\" is established as a role. The pronoun/descriptor continuity is fine. No finding.\n\n**Ch 131 draft \u2014 \"Captain Gardiner, the Rachel's captain\"**\n\nIn the source, \"Captain Gardiner\" is the name used at the moment Ahab refuses \u2014 the name has been withheld until this dramatic moment. In the draft, the abridger has inserted an appositive: \"Captain Gardiner, the Rachel's captain.\" This is actually a repair, not a damage. No finding.\n\n**Ch 131 draft \u2014 Stubb's whisper, truncated**\n\nSource: `\"that some one in that missing boat wore off that Captain's best coat; mayhap, his watch\u2014he's so cursed anxious to get it back\u2026it wasn't the coat\u2014it must have been the\u2014\"`\n\nDraft: `\"that some one in that missing boat wore off that Captain's best coat \u2014 see how pale he looks \u2014 pale in the very buttons of his eyes \u2014\"`\n\nThe draft cuts Stubb's line mid-thought, ending with an em-dash that trails off before the captain interrupts. In the source, the interruption (\"My boy, my own boy\u2026\") cuts Stubb off \u2014 the trailing dash is structural, indicating interruption. In the draft the same interruption follows immediately. The reader understands Stubb is cut off by the captain's outburst. Not a structural damage \u2014 merely less elaborated. No finding.\n\n**Ch 131 draft \u2014 \"His son!\" cried Stubb**\n\nSource: `\"His son!\" cried Stubb, \"oh, it's his son he's lost! I take back the coat and watch\u2014what says Ahab? We must save that boy.\"`\n\nDraft: `\"His son!\" cried Stubb. \"Oh, it's his son he's lost! We must save that boy.\"`\n\nThe phrase \"I take back the coat and watch\" is a callback to Stubb's whispered speculation about the coat. In the draft, Stubb's whisper was cut (the coat reference remains but \"the watch\" was dropped). The \"take back\" line is cut \u2014 but the draft doesn't include the \"take back\" line at all, so there's no dangling reference. The draft version of Stubb's cry parses cleanly. No finding.\n\n**Ch 131 draft \u2014 \"He's drowned with the rest on 'em, last night,\" said the old Manx sailor**\n\nSource attributes this to \"the old Manx sailor standing behind them.\" Draft: \"said the old Manx sailor\" \u2014 no positional detail, but the speaker is identified by descriptor. The line \"I heard; all of ye heard their spirits\" refers back to the wailing in Ch 129 (the seal-cries interpreted as drowned men's voices). The Ch 129 draft preserved this episode. The reference \"their spirits\" connects to the Manxman's earlier declaration in Ch 129 draft (\"the voices of newly drowned men in the sea\"). Coherent. No finding.\n\n**Ch 131 draft \u2014 \"the old Manxman\" in opening**\n\nFirst sentence of Ch 131 draft to use the name: `\"Bad news; she brings bad news,\" muttered the old Manxman.` The Ch 129 draft introduced him as \"the grey Manxman, oldest mariner of all.\" A reader of the consecutive draft chapters has this. No finding.\n\n**Ch 129 draft \u2014 \"The Manxman\" as authorized removal**\n\nThe Manxman is on the authorized minor-character removal list, yet he appears in both draft chapters with a gloss (\"oldest mariner of all\") in Ch 129. The named-person continuity invariant says: if the name appears, it must be locally identified or identified in the preceding draft chapter. Ch 129 draft provides the gloss at first use. Ch 131 draft uses \"the old Manxman\" anaphorically \u2014 the preceding draft chapter established him. This is compliant.\n\n**Ch 129 draft \u2014 mid-scene referent \"the Manxman said nay\"**\n\n`But again the old Manxman said nay.` \u2014 \"again\" implies a prior \"nay.\" In the source, the Manxman's earlier \"nay\" was about the drowned men's voices (he said the shrieks were drowned men, not seals \u2014 he doesn't accept Ahab's rational explanation). In the draft, the Manxman's declaration (\"the voices of newly drowned men\") is preserved in paragraph 2, then Ahab explains the seals, then the crew decides the shrieks explained the sailor's death. \"But again the old Manxman said nay\" \u2014 nay to what? In the draft, the crew declared \"they knew the reason of those wild shrieks.\" The Manxman says nay to that conclusion. But the draft doesn't explicitly state what the crew concluded before \"But again the old Manxman said nay.\" Let me re-read:\n\nDraft: `Few were grieved, regarding it not as a foreshadowing of evil but as the fulfilment of an evil already presaged \u2014 the wild shrieks of the night before. But again the old Manxman said nay.`\n\nThe crew's view is stated (the shrieks presaged this death), then the Manxman dissents. The word \"again\" implies a prior dissent in this same episode \u2014 in the source, the Manxman first declared the sounds were drowned men (which Ahab refuted with the seal explanation), and now dissents again. In the draft, the Manxman's first declaration is preserved. So \"again\" is traceable. A careful reader can follow: the Manxman first said the sounds were drowned men's voices (Ch 129 draft, para 2), Ahab said no, seals; now the crew says the shrieks foretold this death, and \"again the old Manxman said nay\" \u2014 nay to the crew's interpretation, as he had said nay to Ahab's seal-theory? Actually in the source it's the reverse: the Manxman's \"nay\" here is to the crew's conclusion that the shrieks explained the death (he's saying the shrieks were NOT the dead sailor's spirit \u2014 they were something else, something still to come). This is subtle but the draft sentence still parses: the Manxman disagrees with the crew's interpretation. \"Again\" is slightly awkward since his prior dissent was on a different sub-point, but a reader is not *confused* \u2014 they understand he's dissenting. This is less ornamented, not structurally broken.\n\n**Final check \u2014 any broken pivot in Ch 129 draft:**\n\n`The bodings were destined to receive plausible confirmation.` \u2014 \"The bodings\" refers back to the crew's superstitious fears. In the draft, these are established (the wailing, the mermaid-fear, the Manxman's pronouncement). The antecedent is clear. No finding.\n\n---\n\nAfter exhaustive analysis, I find no sentence in either draft that fails any of the seven tests in a way that would genuinely confuse a competent reader without source access.\n\n```json\n[]\n```",
+    "input_tokens": 8476,
+    "output_tokens": 1913,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 44.6076180934906,
+    "stop_reason": "end_turn"
+  }
+}

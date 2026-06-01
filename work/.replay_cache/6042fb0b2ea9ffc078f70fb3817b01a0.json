@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:00:11",
+  "key": "6042fb0b2ea9ffc078f70fb3817b01a0",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through both draft chapters systematically, testing each candidate sentence against the seven tests and the gate test.\n\n---\n\n**Ch 010 draft \u2014 candidates**\n\n1. *\"She tapped him on the shoulder. 'Now\u2014how would it be if a friend of yours had a cousin that might suit the place?'\"* \u2014 In the source it is Albert's cousin; in the draft Tuppence has inverted it (\"a friend of yours had a cousin\"). This is slightly awkward but still parseable and the reader understands the scheme. Not a structural failure.\n\n2. The postcard is attributed to \"Tommy\" by em-dash in the draft. In the source the attribution is implicit (dirty postcard, no name). The draft's attribution is actually *clearer*. Not a finding.\n\n3. The lift-boy's name (Albert) is never given in the draft Ch 010 but is used in Ch 011 draft (\"a few brief words with Albert\"). Let me check: the Ch 010 draft never names him \u2014 he is \"a small lift-boy\" throughout. Then Ch 011 draft says \"a few brief words with Albert.\" That is a forward reference. Let me check Ch 011 source: \"a few brief words with Albert informed her that nothing was waiting.\" So Ch 011 draft retains the name Albert, but Ch 010 draft never introduced it. In the source Ch 010, his name is established (\"Albert, miss,\" he corrected / \"'Albert be it,' said Tuppence\"). In the draft the naming exchange was cut. This means Albert's name appears in Ch 011 draft without any prior introduction in either draft chapter.\n\n4. The archdeacon reference in Ch 011 draft opening: \"the archdeacon's daughters were well grounded in household tasks.\" In Ch 010 source the badge is described as \"the device of a local training corps originated by the archdeacon in the early days of the war\" \u2014 but in Ch 010 draft this is compressed to \"the device of a local training corps, pinned in for some flowers.\" The archdeacon is not named there. Then Ch 011 draft opens \"the archdeacon's daughters were well grounded in household tasks.\" The archdeacon has no referent in either draft chapter \u2014 this is a definite article reference (\"the archdeacon\") to someone not established. However \u2014 checking the authorized cuts: Archdeacon Cowley is on the authorized minor-character removal list. So this is an authorized-cut residue. NOT a finding.\n\n5. Ch 011 draft: \"The next morning a few brief words at the stationer's confirmed nothing was waiting for her there.\" \u2014 slightly compressed but parseable. In source it is \"a few brief words with Albert informed her that nothing was waiting for her at the stationer's.\" The stationer's is established in Ch 010 source (\"a small stationer's shop near at hand where Albert was to call in frequently\") but this detail was cut from Ch 010 draft. So \"the stationer's\" in Ch 011 draft is a definite reference to something not established in either draft chapter. Furthermore \"Albert\" is named here in the source version, but the draft rephrases to avoid naming him \u2014 yet Ch 011 draft *does* use \"Albert\" in this sentence? Let me re-read: Ch 011 draft says \"a few brief words at the stationer's confirmed nothing was waiting for her there.\" \u2014 No, it doesn't name Albert here. But the stationer's is still a definite reference with no antecedent in the draft. However, does \"the stationer's\" need prior establishment, or is it inferrable? A reader would wonder what stationer's \u2014 it appears as a known location. This is a mid-scene jump / dangling reference. But wait \u2014 is the stationer's a major plot element or just a communication drop point? The reader might infer it is some pre-arranged contact point, but the draft gives no indication of that arrangement having been made. In Ch 010 draft she dispatches words to Mr. Carter and goes shopping \u2014 the arrangement with Albert to check the stationer's was entirely cut.\n\nNow, who is Albert in Ch 011 draft? \"a few brief words at the stationer's confirmed nothing was waiting\" \u2014 actually re-reading: Ch 011 draft doesn't mention Albert by name in this sentence. Let me re-read the Ch 011 draft carefully: \"The next morning a few brief words at the stationer's confirmed nothing was waiting for her there.\" Albert is not named here. But later in Ch 011 source: \"a few brief words with Albert informed her.\" In the draft it's \"a few brief words at the stationer's\" \u2014 Albert is omitted from this sentence. So the Albert-naming issue: does Albert appear by name anywhere in Ch 011 draft? Scanning... I don't see Albert named in Ch 011 draft at all. So no orphaned name in Ch 011 draft.\n\nBut \"the stationer's\" as a definite article reference \u2014 is this a mid-scene jump (test 6) or dangling reference? It's not a chapter opening, so not test 6. It could be test 4 (missing definitional gloss \u2014 the stationer's is presented without explanation of why Tuppence would check there). Or test 1 (non-parseable \u2014 actually it parses, she goes to a stationer's and checks for messages). A reader would be mildly puzzled about why she's checking a stationer's but could infer it's a message drop. Gate test: mildly confusing but not severely so. Still, the arrangement was established in source Ch 010 and cut from draft Ch 010, making \"the stationer's\" a reference with no antecedent.\n\nActually, re-reading more carefully: is Albert named anywhere in Ch 010 draft or Ch 011 draft? In Ch 010 draft he is never named. In Ch 011 draft \u2014 let me scan again \u2014 I see no mention of Albert by name. So the Albert issue doesn't arise as an unglossed name in the drafts.\n\nThe stationer's: this is a broken reference. The source established it as \"a small stationer's shop near at hand where Albert was to call in frequently\" \u2014 this was the arrangement Tuppence made before leaving the Ritz. In Ch 010 draft this is entirely absent. Then Ch 011 draft uses \"the stationer's\" with the definite article as if previously established. A reader has no idea what stationer's this is or why Tuppence would go there for messages. This meets test 2 (dangling demonstrative via definite article) or test 6 adapted \u2014 actually it's a broken reference/missing gloss. It's most like test 4 (missing definitional gloss: \"the stationer's\" was glossed as the message-drop point arranged through Albert, and without that gloss the reader can't place it).\n\nThis is a valid finding.\n\nNow back to Albert's name in Ch 011 draft: Re-scanning Ch 011 draft... \"a few brief words at the stationer's confirmed nothing was waiting for her there.\" Albert not named. \"She's the cousin of the hall porter\" \u2014 no. I don't see Albert named in Ch 011 draft. So no unglossed name issue for Albert in Ch 011.\n\nWait \u2014 let me re-examine Ch 010 draft for Albert's name one more time. The Ch 010 draft says: \"she leaned in. 'I want a word with you.'\" \u2014 no name. \"He fell for it.\" \u2014 no name. Throughout Ch 010 draft the lift-boy is never named Albert. And Ch 011 draft: I see no Albert. So no unglossed name finding.\n\n**Summary of valid findings:**\n\n1. Ch 011 draft: \"a few brief words at the stationer's confirmed nothing was waiting for her there\" \u2014 \"the stationer's\" has no antecedent in either draft chapter; the arrangement was established in source Ch 010 but cut from draft Ch 010. Missing definitional gloss / dangling reference.\n\nAny others? Let me do a final pass.\n\nCh 011 draft: \"She had arranged before leaving the Ritz...\" \u2014 this is from source Ch 011 but NOT in draft Ch 011. The draft Ch 011 omits this entirely and jumps straight to \"the next morning a few brief words at the stationer's.\" Confirmed: no prior mention of the stationer's or the arrangement.\n\nCh 010 draft: \"She walked briskly back to the Ritz, well pleased, and dispatched a few brief words to Mr. Carter.\" \u2014 the Ritz was established in Ch 010 source (and implicitly as their base). Parseable. Not a finding.\n\nI'm satisfied there is one valid finding.\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"The next morning a few brief words at the stationer's confirmed nothing was waiting for her there.\",\n    \"source_has\": \"Source Ch 010 establishes 'a small stationer's shop near at hand where Albert was to call in frequently' as Tuppence's pre-arranged message drop before leaving the Ritz; source Ch 011 then reads 'a few brief words with Albert informed her that nothing was waiting for her at the stationer's.'\",\n    \"gate_test_answer\": \"A reader is genuinely confused: 'the stationer's' carries a definite article pointing to a previously identified location, but neither draft chapter has established what stationer's this is or why Tuppence would go there to receive messages, so the reference is uninterpretable without the source.\"\n  }\n]\n```",
+    "input_tokens": 12152,
+    "output_tokens": 2207,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 47.04091477394104,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:14:25",
+  "key": "cb229476af7656e376aede2d8a190243",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through both draft chapters systematically, applying each of the seven tests to every sentence or passage that could raise a concern, then filtering against the gate test and the authorized-cuts list.\n\n---\n\n**Preliminary scan \u2014 Ch 041 draft**\n\n1. *\"The escape of Cassy and Emmeline, two fugitive women, stung Legree, the plantation master, to fury\"* \u2014 both names were established in prior chapters; the draft adds brief appositives. No problem.\n\n2. *\"But Tom was a faithful, valuable hand; and that, though it sharpened hatred, held him a little in.\"* \u2014 Source reads \"yet the consideration was still somewhat of a restraint to him.\" Draft replaces \"consideration\" with \"that.\" Antecedent of \"that\" is the clause \"Tom was a faithful, valuable hand,\" which immediately precedes. Parseable; no confusion.\n\n3. Sambo and Quimbo dialogue \u2014 both are introduced in the same paragraph as \"his brutal drivers.\" No orphaned names.\n\n4. Cassy/Emmeline garret scene \u2014 the garret was established in previous chapters (not cut from the immediately preceding chapter N draft). The draft opens mid-scene in the garret but Cassy/Emmeline's location was established in prior chapters and the draft of Ch 041 itself opens with the escape already noted. No mid-scene jump problem here.\n\n5. Quimbo drags Tom \u2014 *\"Ay, ay!\" said the giant, dragging him.* \"the giant\" \u2014 Quimbo was just named. Fine.\n\n6. *\"Those savage words never reached that ear; a Higher Voice said\u2026\"* \u2014 \"those savage words\" refers to Quimbo's speech immediately preceding. Clear.\n\n7. Sambo/Quimbo weeping scene \u2014 *\"O, Tom!\" said Quimbo, \"we's been awful wicked to ye!\"* then *\"Sartin, we's been doin' a drefful wicked thing!\" said Sambo.* In the source these appear in the reverse order; the draft reorders them. Both are still attributed and parseable.\n\nNothing in Ch 041 draft fails any of the seven tests.\n\n---\n\n**Preliminary scan \u2014 Ch 042 draft**\n\n1. *\"Miss Ophelia's letter to Mrs. Shelby\u2026\"* \u2014 Miss Ophelia appears without identification in Ch 042 draft. She is an authorized minor-character removal candidate? No \u2014 she is not on the authorized removal list. But she is a major, continuously present character (she has appeared across many chapters). Test 7 applies only to *minor* characters. Miss Ophelia is a principal in the St. Clare household arc. Not a finding.\n\n2. *\"Guided by the name of the St. Clare lawyer, which Miss Ophelia had thoughtfully sent, they wrote\u2026\"* \u2014 \"the St. Clare lawyer\" is a descriptor. Source gives \"the lawyer who did business for the St. Clares.\" The draft descriptor is clear enough. Not a finding.\n\n3. *\"Cassy, gliding from her concealment, and, by overhearing, learning the sacrifice made for her and Emmeline, had dared detection to come; and, moved by the last few words his affectionate soul had strength to breathe, the long winter of despair\u2014the ice of years\u2014broke; and the dark, despairing woman wept and prayed.\"*\n\n   - \"his affectionate soul\" \u2014 antecedent is Tom, who was the subject of the paragraph. Clear.\n   - \"the long winter of despair\u2014the ice of years\u2014broke\" \u2014 this is a metaphor applied to Cassy. Her despair was established in Ch 041 draft at length (the garret scene). Fine.\n   - No structural damage.\n\n4. *\"Tom grasped his hand, and went on: 'Ye mustn't, now, tell Chloe, poor soul! how ye found me\u2026'\"* \u2014 \"Chloe\" appears without any local identification in Ch 042 draft. Is she established in the preceding Ch 041 draft? No \u2014 Ch 041 draft does not mention Chloe at all. Is she established elsewhere in the draft series? Aunt Chloe (Tom's wife) is a major, continuously present character who appeared in the earliest chapters of the novel, not a minor character. She is not on the authorized removal list. Principal names across chapters may be tracked by competent readers. By the explicit rejection rule: \"A major or continuously present character is named without a fresh gloss; readers can track principal names across chapters.\" Aunt Chloe is a principal. Not a finding.\n\n5. *\"Give my love to Mas'r, and dear good Missis\u2026\"* \u2014 \"Mas'r\" and \"Missis\" refer to the Shelbys, principal characters. George Shelby is present in the scene. Not a finding.\n\n6. George knocking Legree down \u2014 *\"he might have personified his great namesake triumphing over the dragon.\"* \"his great namesake\" = St. George. Source says \"he would have formed no bad personification of his great namesake triumphing over the dragon.\" The draft changes \"would have formed no bad personification of\" to \"might have personified.\" The meaning is intact. Not a finding.\n\n7. The two enslaved men at the grave who ask to be bought \u2014 they are introduced as \"two or three negroes\" earlier in the scene and appear only by descriptor throughout. No proper names used, no unglossed names.\n\n8. *\"Beyond the plantation bounds, George had marked a dry, sandy knoll\u2026\"* \u2014 source says \"George had noticed a dry, sandy knoll.\" The draft uses \"had marked.\" Same meaning. Fine.\n\n9. *\"'Shall we take off the cloak, Mas'r?' said the negroes, when the place was ready.\"* \u2014 source says \"when the grave was ready.\" Draft says \"when the place was ready.\" A reader could momentarily wonder what \"the place\" is, but the context (they are burying Tom, a grave was being dug) makes it unambiguously clear. Gate test: not genuinely confused, just less precise.\n\nNo sentence in Ch 042 draft fails any of the seven structural tests at a level that would genuinely confuse a reader.\n\n---\n\n```json\n[]\n```",
+    "input_tokens": 15508,
+    "output_tokens": 1454,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 35.42587900161743,
+    "stop_reason": "end_turn"
+  }
+}

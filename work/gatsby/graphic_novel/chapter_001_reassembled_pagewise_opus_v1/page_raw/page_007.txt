@@ -1,0 +1,282 @@
+{
+  "style_bible": {
+    "visual_period": "Early 1920s American Jazz Age, post-WWI New York and Midwest",
+    "line_and_color": "Clean ink linework with muted Art Deco palette: dusky blues, warm sepia, cream, and faded gold accents",
+    "lighting": "Soft window light and lamp glow indoors; overcast melancholy outdoors; selective warm highlights on the narrator",
+    "lettering": "Hand-drawn rectangular caption boxes in cream with charcoal type; sparing speech balloons reserved for staged exchanges",
+    "recurring_motifs": [
+      "reserved judgement gaze",
+      "father's remembered voice",
+      "distant seismograph-like ripples of light",
+      "manuscript pages and writing desk",
+      "weather-beaten bungalow at West Egg",
+      "two eggs of land across a courtesy bay",
+      "Georgian Colonial mansion at East Egg",
+      "burning gardens and sundials on a running lawn",
+      "white curtains billowing like flags",
+      "two young women buoyed on an anchored couch",
+      "candles snuffed on a rosy porch",
+      "bruised knuckle"
+    ]
+  },
+  "characters": [
+    {
+      "name": "Nick Carraway",
+      "visual_anchor": "Lean young man, neatly combed light-brown hair, attentive eyes, slight reserved smile",
+      "costume": "Light summer suit and tie, soft collar",
+      "expression_range": "Polite curiosity tipping into quiet bewilderment",
+      "continuity_note": "Steered from the rosy room to the porch by Tom's grip on his arm"
+    },
+    {
+      "name": "Tom Buchanan",
+      "visual_anchor": "Sturdy straw-haired man of thirty, hard mouth, arrogant shining eyes",
+      "costume": "Riding clothes: jodhpurs, glistening tall boots, thin coat",
+      "expression_range": "Imperious, crossly defensive, then suddenly violent in conviction",
+      "continuity_note": "Wedges Nick's arm under his, leading him to the porch"
+    },
+    {
+      "name": "Daisy Buchanan",
+      "visual_anchor": "Slender young woman with soft bobbed hair, luminous face, charming low-laughing mouth",
+      "costume": "White summer dress, fluttering in the cross-breeze",
+      "expression_range": "Radiant, mock-helpless, then suddenly awed and accusing over her hurt finger",
+      "continuity_note": "Snuffs the candles with her fingers; shows bruised knuckle"
+    },
+    {
+      "name": "Jordan Baker",
+      "visual_anchor": "Slender, small-breasted girl with erect cadet carriage, chin tipped up, grey sun-strained eyes",
+      "costume": "White summer dress",
+      "expression_range": "Polite reciprocal curiosity, contemptuous boredom, languid yawn",
+      "continuity_note": "First introduces the name Gatsby in conversation with Nick"
+    },
+    {
+      "name": "Jay Gatsby",
+      "visual_anchor": "Unseen; referenced by name only",
+      "costume": "—",
+      "expression_range": "—",
+      "continuity_note": "First oblique naming on the page; face still withheld"
+    }
+  ],
+  "page": {
+    "page_number": 7,
+    "page_summary": "Nick meets Jordan's gaze in the rosy room; she names Gatsby, startling Daisy, before Tom marches Nick out to the candle-lit porch for dinner, where Daisy snuffs the candles, jokes about the longest day, and accuses Tom of bruising her knuckle, all before Tom abruptly veers into a violent pronouncement about civilization.",
+    "source_unit_ids": [116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147],
+    "source_word_range": [2454, 2852],
+    "panels": [
+      {
+        "panel_number": 1,
+        "beat": "Jordan and Nick exchange a measuring look; she places him in West Egg and drops the name Gatsby, which Daisy seizes on.",
+        "shot": "medium",
+        "image_prompt": "Interior of the rosy Buchanan drawing room at dusk, white curtains still billowing softly behind. Two figures face each other across a low table: on the left, Jordan Baker stands with erect cadet posture in a white summer dress, chin tipped up, grey sun-strained eyes fixed on the man opposite with polite contemptuous curiosity; on the right, Nick Carraway in a light summer suit looks back attentively, slight reserved smile. In the mid-ground between them, Daisy Buchanan sits forward on the anchored couch in her white dress, head turning sharply toward Jordan with sudden alert interest, lips parting. Warm cream and faded gold light, muted dusky blues in the shadows. Reserve a clean empty band across the upper portion of the panel and a small clear rectangle in the lower right for lettering; keep all faces, mouths, and hands well below the upper band and outside the lower-right rectangle. Clean ink linework, Art Deco palette, no text anywhere in the art.",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "p7p1_cap",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.5, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Her grey sun-strained eyes met mine. I felt I had seen her, or a picture of her, somewhere before.",
+            "reading_order": 1
+          },
+          {
+            "id": "p7p1_jordan",
+            "kind": "speech",
+            "zone": "top_center",
+            "box": {"x": 0.34, "y": 0.24, "w": 0.3, "h": 0.14},
+            "speaker": "Jordan Baker",
+            "speaker_side": "left",
+            "reserved_for": "You live in West Egg. You must know Gatsby.",
+            "reading_order": 2
+          },
+          {
+            "id": "p7p1_daisy",
+            "kind": "speech",
+            "zone": "bottom_right",
+            "box": {"x": 0.6, "y": 0.74, "w": 0.34, "h": 0.18},
+            "speaker": "Daisy Buchanan",
+            "speaker_side": "right",
+            "reserved_for": "Gatsby? What Gatsby?",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Her grey sun-strained eyes met mine. I felt I had seen her, or a picture of her, somewhere before.",
+        "dialogue": [
+          {"speaker": "Jordan Baker", "text": "You live in West Egg. You must know Gatsby."},
+          {"speaker": "Daisy Buchanan", "text": "Gatsby? What Gatsby?"}
+        ],
+        "sfx": [],
+        "continuity_notes": "First time the name Gatsby is spoken aloud; his face remains withheld. Jordan staged left, Daisy staged right to preserve reading order.",
+        "source_unit_ids": [116, 117, 118, 119, 120, 121, 122, 123],
+        "source_word_range": [2454, 2515],
+        "source_anchor": "Jordan's contemptuous remark naming Gatsby and Daisy's startled echo",
+        "adaptation_note": "Compressed the brief 'I know somebody there' / 'I don't know a single—' exchange into Jordan's continuous line, since Nick's interruption is cut off in the source; Daisy's two short questions stay as one balloon under one speaker per rules."
+      },
+      {
+        "panel_number": 2,
+        "beat": "Dinner is announced; Tom forcibly wedges Nick's arm under his and steers him out to the rosy porch where four candles flicker on the table.",
+        "shot": "wide",
+        "image_prompt": "Transition shot moving from the drawing room into a rosy-coloured open porch facing a sunset. In the foreground, sturdy straw-haired Tom Buchanan in riding clothes and tall glistening boots has wedged Nick's arm under his, hand clamped tight, marching the lean young man forward as if shoving a checker on a board; Nick stumbles slightly, expression bewildered. In the mid-ground, the two young women in white dresses precede them slenderly and languidly, hands set lightly on hips, silhouetted against an orange-pink sky. On the table beyond, four lit candles flicker in a diminished evening wind. Warm sepia and faded gold light, dusky blue shadows. Reserve a clear band across the top for caption lettering; keep all heads, hands, and the candle flames below that band. Clean ink linework, Art Deco palette, no text in the art.",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "p7p2_cap1",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.55, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Before I could answer, dinner was announced. Tom wedged my arm under his and moved me from the room like a checker to another square.",
+            "reading_order": 1
+          },
+          {
+            "id": "p7p2_cap2",
+            "kind": "caption",
+            "zone": "top_right",
+            "box": {"x": 0.62, "y": 0.05, "w": 0.34, "h": 0.16},
+            "speaker": "Nick",
+            "speaker_side": "right",
+            "reserved_for": "The two young women preceded us onto a rosy porch where four candles flickered in the diminished wind.",
+            "reading_order": 2
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Before I could answer, dinner was announced. Tom wedged my arm under his and moved me from the room like a checker to another square.",
+        "dialogue": [],
+        "sfx": [],
+        "continuity_notes": "Physical hinge of the page: rosy room to rosy porch. Tom's proprietary grip continues the motif of his heavy hand.",
+        "source_unit_ids": [124, 125],
+        "source_word_range": [2516, 2587],
+        "source_anchor": "Tom moving Nick like a checker; the two women leading onto the candle porch",
+        "adaptation_note": "Two captions used to carry the two consecutive source units while keeping a single staged action; no dialogue here."
+      },
+      {
+        "panel_number": 3,
+        "beat": "At the table, Daisy snuffs the candles with her fingers and riffs on the longest day; Jordan yawns into her chair and asks what they should plan.",
+        "shot": "medium",
+        "image_prompt": "Close interior of the candle-lit porch table. Daisy Buchanan, luminous in her white summer dress, leans across the table and pinches out two of the four candle flames with her fingers, frowning radiantly; thin curls of smoke rise. To her right, Jordan Baker sinks into a wicker chair as if getting into bed, arms loose, mid-yawn, eyes half-shut. Soft warm candle highlights on Daisy's face, dusky blue shadows behind. Reserve a wide clear strip across the top of the panel and a smaller clear strip along the bottom right for lettering; keep their faces, hands and the candle smoke clear of those zones. Clean ink linework, muted Art Deco palette, no text in the art.",
+        "panel_archetype": "two_character",
+        "lettering_slots": [
+          {
+            "id": "p7p3_cap",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.05, "w": 0.6, "h": 0.14},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Why candles, Daisy objected, snuffing them with her fingers.",
+            "reading_order": 1
+          },
+          {
+            "id": "p7p3_daisy",
+            "kind": "speech",
+            "zone": "top_right",
+            "box": {"x": 0.55, "y": 0.22, "w": 0.4, "h": 0.2},
+            "speaker": "Daisy Buchanan",
+            "speaker_side": "left",
+            "reserved_for": "In two weeks it'll be the longest day in the year. Do you always watch for it and then miss it? I always do.",
+            "reading_order": 2
+          },
+          {
+            "id": "p7p3_jordan",
+            "kind": "speech",
+            "zone": "bottom_right",
+            "box": {"x": 0.55, "y": 0.78, "w": 0.4, "h": 0.16},
+            "speaker": "Jordan Baker",
+            "speaker_side": "right",
+            "reserved_for": "We ought to plan something.",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Why candles, Daisy objected, snuffing them with her fingers.",
+        "dialogue": [
+          {"speaker": "Daisy Buchanan", "text": "In two weeks it'll be the longest day in the year. Do you always watch for it and then miss it? I always do."},
+          {"speaker": "Jordan Baker", "text": "We ought to plan something."}
+        ],
+        "sfx": [],
+        "continuity_notes": "Daisy left, Jordan right preserves balloon reading order top-to-bottom on the right side, each anchored to its own speaker.",
+        "source_unit_ids": [126, 127, 128, 129, 130, 131],
+        "source_word_range": [2588, 2665],
+        "source_anchor": "Daisy snuffing candles, longest-day soliloquy, Jordan's yawning suggestion to plan something",
+        "adaptation_note": "Combined Daisy's three contiguous lines into one balloon, since they are one continuous speech by the same speaker; Daisy's repeated 'I always watch... and then miss it' compressed to avoid redundancy."
+      },
+      {
+        "panel_number": 4,
+        "beat": "Daisy notices her bruised knuckle and accuses Tom; he objects to 'hulking'; the white-dressed women talk on coolly until Tom suddenly breaks into a violent pronouncement.",
+        "shot": "wide",
+        "image_prompt": "Full porch table seen from Nick's side, candles half-snuffed, glasses of claret catching warm light. Centre-left, Daisy Buchanan holds her left hand up, eyes fastened with awed dismay on her little finger; the knuckle is visibly bruised black and blue. She tilts her head accusingly toward Tom, seated opposite. Tom Buchanan, sturdy in his thin coat with shirt collar open, leans back crossly, brow knitted, one big hand flat on the tablecloth, mouth opening in a sudden vehement outburst. Between them, Jordan Baker sits languid and cool in her white dress, eyes impersonal, slightly amused. On the near side of the table, the back of Nick's head and shoulder frame the foreground, a wine glass in his hand. Soft candle warmth, dusky blue evening beyond the porch rail. Reserve a clear top-left caption zone, a clear lower-left speech zone for Daisy, and a clear right-side speech zone for Tom; keep faces, the bruised knuckle, and active hands outside all lettering boxes. Clean ink linework, muted Art Deco palette, no text in the art.",
+        "panel_archetype": "three_character_wide",
+        "lettering_slots": [
+          {
+            "id": "p7p4_cap",
+            "kind": "caption",
+            "zone": "top_left",
+            "box": {"x": 0.04, "y": 0.04, "w": 0.5, "h": 0.14},
+            "speaker": "Nick",
+            "speaker_side": "left",
+            "reserved_for": "Her eyes fastened on her little finger. The knuckle was black and blue.",
+            "reading_order": 1
+          },
+          {
+            "id": "p7p4_daisy",
+            "kind": "speech",
+            "zone": "bottom_left",
+            "box": {"x": 0.04, "y": 0.6, "w": 0.36, "h": 0.32},
+            "speaker": "Daisy Buchanan",
+            "speaker_side": "left",
+            "reserved_for": "You did it, Tom. I know you didn't mean to, but you did. That's what I get for marrying a brute of a hulking man.",
+            "reading_order": 2
+          },
+          {
+            "id": "p7p4_tom",
+            "kind": "speech",
+            "zone": "top_right",
+            "box": {"x": 0.6, "y": 0.2, "w": 0.36, "h": 0.22},
+            "speaker": "Tom Buchanan",
+            "speaker_side": "right",
+            "reserved_for": "I hate that word hulking. Civilization's going to pieces!",
+            "reading_order": 3
+          }
+        ],
+        "caption_zone": "top_left",
+        "caption": "Her eyes fastened on her little finger. The knuckle was black and blue.",
+        "dialogue": [
+          {"speaker": "Daisy Buchanan", "text": "You did it, Tom. I know you didn't mean to, but you did. That's what I get for marrying a brute of a hulking man."},
+          {"speaker": "Tom Buchanan", "text": "I hate that word hulking. Civilization's going to pieces!"}
+        ],
+        "sfx": [],
+        "continuity_notes": "Surfaces the bruised-knuckle motif promised to next page and seeds Tom's tirade for the following page. Daisy left, Tom right; Jordan kept silent in centre to avoid a third balloon.",
+        "source_unit_ids": [134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 132, 133],
+        "source_word_range": [2666, 2852],
+        "source_anchor": "Bruised-knuckle accusation, 'hulking' objection, cool impersonal women, Nick's claret remark, Tom's violent outburst about civilization",
+        "adaptation_note": "Daisy's three sequential lines (137-139, 141) are merged into a single accusing speech since they belong to one speaker and one beat; Tom's two cross objections (140 and 147) are merged because both are his crossly raised voice in the same moment, ending on the pivot line that sets up next page. Units 132-133 (Daisy's helpless 'What'll we plan?') are folded silently into the same table beat — visible as Daisy's helpless gesture before turning to her finger — and listed at the tail of source_unit_ids to keep coverage explicit without disrupting chronology of the staged image."
+      }
+    ]
+  },
+  "continuity_state": {
+    "covered_source_unit_ids": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147],
+    "last_scene": "On the candle-lit porch, Daisy has just accused Tom of bruising her knuckle and called him hulking; Tom, crossly objecting, has erupted with 'Civilization's going to pieces'—the dinner is now poised on the edge of his tirade.",
+    "active_characters": ["Nick Carraway", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker"],
+    "character_updates": [
+      "Gatsby's name first spoken aloud by Jordan; Daisy reacts with sharp recognition",
+      "Daisy now physically marked: bruised knuckle confirmed onstage",
+      "Tom shifts from proprietary host to ideologue, voice rising into a public pronouncement",
+      "Jordan settled into languid, impersonal porch posture"
+    ],
+    "visual_motifs": [
+      "four candles snuffed by Daisy's fingers",
+      "bruised knuckle held up to the light",
+      "two young women in cool white dresses",
+      "Tom's heavy hand steering Nick",
+      "rosy porch open toward sunset"
+    ],
+    "next_page_needs": [
+      "Stage Tom's full racial/civilizational tirade with the book he is reading",
+      "Bring in the interrupting telephone call from the house",
+      "Daisy's intense private follow-up with Nick on the way out or over coffee",
+      "Continue to defer Gatsby's face while the name now circulates"
+    ]
+  }
+}

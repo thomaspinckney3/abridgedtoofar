@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-06T11:14:16",
+  "key": "91b6dec637e96327cc22dc6db87452d6",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "f5cd9c049097fe117e8050913c32a52f",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "b216df05208b1aa0b04d78a22666a9f390ae795cc41d1f069fcb4c9a9e076f57",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "7b4abca444bfd77e274d8c5ab7a47eb25f6faaf76cbbd64acd0152675010aa9d",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "1282185f7c03dd5ef24663f5bb54981d511817e389d8568b74d72b963175d44a",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "53a7e55d435fd98a91faa30efdd9a085284a984e2f3d38b1f363291647995782",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "b3939de453c7ad537a87e9627c7553c9240b7b9ffc87613d71cafadf0281545e",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each chapter systematically, applying the gate test to every potentially damaged sentence.\n\n**Ch 017 Draft Analysis**\n\nThe Pteraspis/Terebratula geological excursus is listed as an authorized digression removal, but the draft actually *retains* most of it \u2014 the authorized cut covers only \"Pteraspis, Terebratula, and long geologic excursus as a parable of uniformity vs. selection.\" The draft keeps substantial Pteraspis material, so I need to check those retained passages for internal coherence.\n\nChecking: \"Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\" \u2014 This is a fragment (no main clause after the dash), left dangling after cutting the source's \"no complete proof of Natural Selection had occurred back to the time of Pteraspis, and that before Pteraspis was eternal void. No trace of any vertebrate had been found there; only starfish...\" The draft's preceding sentence ends \"before Pteraspis was eternal void.\" and then the next sentence opens with \"Only starfish...\" as a fragment. In the source this is a single sentence: \"there; only starfish...\" \u2014 a continuation. The draft broke it into a fragment.\n\nChecking \"In geology as in theology, he could prove only Evolution that did not evolve...\" \u2014 In the source this follows a paragraph about Sir Charles and Adams helping him, with transition \"behind the lesson of the day, he was conscious that.\" The draft cuts that frame entirely but the sentence still parses as a standalone assertion. Not broken.\n\nChecking the broken pivot in the financial section: \"The shock of this discovery to his financial principles was much more serious than the shock of the Terebratula and Pteraspis to his principles of geology.\" \u2014 The draft retains this comparison, and both terms of comparison are present in the draft. OK.\n\n\"If he did publish, how could he tell virtuous bankers...\" \u2014 The source has the preceding sentence: \"Six months of patient labor would be thrown away if he did not publish, and with it his whole scheme of making himself a position as a practical man-of-business. If he did publish...\" The draft cuts \"Six months of patient labor would be thrown away if he did not publish\" \u2014 so the \"If he did publish\" is now one half of a cut two-sided structure. The prior sentence in the draft only says \"A mistake about specie payments would destroy forever the last hope of employment in State Street.\" The pivot \"If he did publish\" implies a prior \"if he did not publish\" clause that was cut.\n\n**Ch 018 Draft Analysis**\n\n\"To him the village seemed unchanged.\" \u2014 The subject \"him\" needs an antecedent. The preceding draft paragraph ends with Evarts taking Adams to Washington in October 1868. The \"him\" refers to Adams, which is clear. The village is Washington, which was just named. No problem.\n\n\"The first acquaintance was naturally the President.\" \u2014 Source: \"The first step, of course, was the making of acquaintance, and the first acquaintance was naturally the President, to whom an aspirant to the press officially paid respect.\" Draft cuts the framing clause. The sentence still parses. Not a finding.\n\n\"Thus, as a teacher of wisdom, Governor Seward passed out of one's life\" \u2014 Source has \"after twenty years of example.\" Draft cuts this. The \"thus\" pivot \u2014 what was the \"thus\" resolving? In source it follows the whist/dinner anecdote. In draft it also follows that anecdote. Still works.\n\nChecking for the missing loss of Henry J. Raymond: Source: \"He lost his one chance by the death of Henry J. Raymond.\" Draft omits this entirely. Raymond is an authorized minor character removal? No, he's not on the list. But the draft simply omits the sentence \u2014 it doesn't produce a dangling reference elsewhere. No finding.\n\nChecking Evarts/Legal Tender section: \"Like most young men, he was much of a doctrinaire.\" In the source this continues: \"and the question was, in any event, rather historical or political than legal. He could easily maintain, by way of argument, that the required power had never been given...\" The draft cuts the continuation. The sentence still parses. Not a finding.\n\nNow back to the Ch 017 fragment finding \u2014 confirming it's real: Draft text: \"At all events, no complete proof of Natural Selection had occurred back to the time of Pteraspis, and before Pteraspis was eternal void. Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\"\n\nThe second \"sentence\" has no main clause. It's a noun phrase followed by a relative clause. A competent reader would genuinely be confused \u2014 is this a list continuing the previous sentence? It reads as syntactically incomplete. This is a real structural damage from compression (the source had it as a continuation \"No trace of any vertebrate had been found there; only starfish...\").\n\nThe Ch 017 \"If he did publish\" finding: Source has the two-sided conditional structure explicitly. Draft cuts the \"if he did not publish\" half. The remaining \"If he did publish, how could he tell...\" now reads as if there is a suppressed premise the reader cannot reconstruct from the draft alone \u2014 the reader doesn't know what the alternative to publishing was that made publishing problematic. This is a broken pivot.\n\n```json\n[\n  {\n    \"class\": \"non_parseable\",\n    \"chapter\": \"17\",\n    \"draft_passage\": \"Only starfish, shell-fish, polyps, or trilobites \u2014 whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\",\n    \"source_has\": \"No trace of any vertebrate had been found there; only starfish, shell-fish, polyps, or trilobites whose kindly descendants he had often bathed with, as a child on the shores of Quincy Bay.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the sentence has no main clause and cannot be parsed as a complete statement; it appears to be a dangling noun phrase left stranded when the drafter broke the source's semicolon-continuation into a separate 'sentence'.\"\n  },\n  {\n    \"class\": \"broken_pivot\",\n    \"chapter\": \"17\",\n    \"draft_passage\": \"If he did publish, how could he tell virtuous bankers that moral and absolute principles of abstract truth, such as theirs, had nothing to do with the matter, and that they had better let it alone?\",\n    \"source_has\": \"Six months of patient labor would be thrown away if he did not publish, and with it his whole scheme of making himself a position as a practical man-of-business. If he did publish, how could he tell virtuous bankers in State Street that moral and absolute principles of abstract truth, such as theirs, had nothing to do with the matter\u2026\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the 'If he did publish' conditional implies a suppressed contrasting arm ('if he did not publish') that was cut from the draft, leaving the logical dilemma \u2014 publish and offend bankers, or don't publish and waste the work \u2014 invisible; the reader cannot reconstruct why publishing is the problem.\"\n  }\n]\n```",
+    "input_tokens": 25421,
+    "output_tokens": 1684,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 38.821449995040894,
+    "stop_reason": "end_turn"
+  }
+}

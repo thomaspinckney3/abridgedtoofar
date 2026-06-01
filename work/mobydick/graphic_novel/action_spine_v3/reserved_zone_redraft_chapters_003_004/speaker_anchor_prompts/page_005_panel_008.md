@@ -1,0 +1,105 @@
+Review one clean graphic-novel image. It may be a full composed page or a
+single panel crop. The image has art only; it does not yet contain captions,
+speech balloons, or thought bubbles.
+
+Your job is to locate the visual anchor for each text item that needs a
+speaker tail:
+
+- `speech`: locate the speaker's mouth point. If the mouth is obscured, use the
+  center of the lower face where a speech tail should point.
+- `thought`: locate the character's head or temple point where a thought-bubble
+  trail should point.
+
+Also locate a separate `tail_target_point`. This is where the rendered balloon
+tail should end. It should be slightly offset from the mouth/head toward the
+planned balloon zone, usually on the edge of the lower face or just outside the
+lips. Do not put the tail target on the center of the mouth; a speech tail
+should point to the speaker without stabbing into the mouth.
+
+Also locate `face_box` for the visible face/head area that a balloon must not
+cover. If only part of the face is visible, box the visible face/head region.
+If the speaker is not visible, use null.
+
+Use the supplied image contract to keep each target in the right panel or
+single-panel image. Use speaker names, speaker_region, and speaker_visual_hint
+to identify the right person. Do not choose a different character just because
+they are nearer the planned balloon zone.
+
+The image may include a colored coordinate grid and small numeric edge labels.
+Those marks are a temporary detection aid, not part of the artwork. Use the
+grid to make coordinates precise, but ignore it as story content.
+
+If the named speaker is not visible, ambiguous, or too cropped to anchor
+reliably, set `visible` to false and confidence at or below 0.40. Do not invent
+coordinates when the speaker cannot be identified.
+
+Image contract:
+{
+  "title": "Moby-Dick Chapters 3-4 Reserved-Zone Redraft",
+  "source_chapter": null,
+  "image_mode": "panel",
+  "coordinate_grid": "visible, every 0.1 in x and y, for detection only",
+  "page_number": 5,
+  "panel_number": 8,
+  "image_size": {
+    "width": 1635,
+    "height": 962
+  },
+  "targets": [
+    {
+      "panel_number": 8,
+      "text_index": 1,
+      "kind": "thought",
+      "speaker": "Ishmael",
+      "text": "Better sleep with a sober cannibal than a drunken Christian.",
+      "speaker_region": "left",
+      "speaker_visual_hint": "",
+      "balloon_zone": "top_left"
+    },
+    {
+      "panel_number": 8,
+      "text_index": 2,
+      "kind": "speech",
+      "speaker": "Ishmael",
+      "text": "Tell him to stash that tomahawk-pipe. No smoking—I ain’t insured.",
+      "speaker_region": "left",
+      "speaker_visual_hint": "",
+      "balloon_zone": "bottom_left"
+    }
+  ]
+}
+
+Return strict JSON only, with this exact shape:
+
+{
+  "page_number": number,
+  "anchors": [
+    {
+      "panel_number": number,
+      "text_index": number,
+      "kind": "speech" | "thought",
+      "speaker": string,
+      "text": string,
+      "visible": boolean,
+      "confidence": number,
+      "mouth_point": {"x": number, "y": number} | null,
+      "mouth_point_ratio": {"x": number, "y": number} | null,
+      "tail_target_point": {"x": number, "y": number} | null,
+      "tail_target_point_ratio": {"x": number, "y": number} | null,
+      "face_box": {"x1": number, "y1": number, "x2": number, "y2": number} | null,
+      "evidence": string,
+      "reason": string
+    }
+  ]
+}
+
+Coordinate rules:
+
+- In `image_mode: "page"`, `mouth_point`, `tail_target_point`, and `face_box`
+  are absolute pixel coordinates on the full page image. The ratio fields are
+  normalized within that target panel's page box.
+- In `image_mode: "panel"`, `mouth_point`, `tail_target_point`, and `face_box`
+  are absolute pixel coordinates on the single panel image. The ratio fields
+  are normalized within the single panel image.
+- Coordinates must be inside the target panel or panel image. If `visible` is
+  false, use null for the coordinate fields.

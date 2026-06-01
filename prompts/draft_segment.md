@@ -107,6 +107,21 @@ Tracking how book-level motifs have been preserved across segments drafted so fa
 7. **Indirection budget** (when `indirection_budget_applies: true`): at least one representative digression or philosophical aside MUST appear in the draft, compressed if necessary but recognizable. This is not a soft preference. Within a preserved digression, cut factual catalog and argument repetition — keep the argument's arc and its voice, not its data.
 8. If the segment is **extradiegetic** (editor's preface, scholarly apparatus, translator's notes), **emit nothing** — respond with the single token `CUT`. This applies only when the pre-pass classified `diegetic_status: extradiegetic`; a diegetic segment marked for heavy compression should still produce drafted text.
 
+## Named-person continuity invariant
+
+If a person's proper name appears in the draft, the reader must already know
+who that named person is from the preceding draft text, or the first surviving
+named mention must identify them locally by role, relationship, or apposition.
+
+If you cut or un-name a character's introduction, do not use that proper name
+later without a compact local gloss. Either keep the later reference generic,
+or write the name with an identifying phrase, e.g. "Michaelis, the neighbour"
+or "Catherine, Myrtle's sister."
+
+For minor or removable characters, prefer descriptors over names. If a minor
+character's name survives at all, its first surviving mention and any late
+re-entry after a long absence must carry a local gloss.
+
 ## Output
 
 Begin with a level-2 Markdown heading containing the segment's title. Then the drafted prose. Nothing else — no notes, no word count, no self-commentary.

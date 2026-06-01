@@ -1,0 +1,45 @@
+{
+  "book_id": "education",
+  "segments_checked": 28,
+  "names_checked": 24,
+  "aliases_checked": 32,
+  "long_gap_segments": 2,
+  "long_gap_words": 2500,
+  "findings_total": 2,
+  "per_segment_counts": {
+    "023": 1,
+    "012": 1
+  },
+  "findings": [
+    {
+      "class": "unglossed_name",
+      "severity": "medium",
+      "name": "John La Farge",
+      "alias": "John La Farge",
+      "segment_id": "023",
+      "line": 11,
+      "occurrence_type": "first_mention",
+      "gap_segments": null,
+      "gap_words": null,
+      "draft_passage": "He had just come up from the South Seas with John La Farge.",
+      "reason": "'John La Farge' is the first surviving named mention of minor/cut character 'John La Farge' and it lacks a local role/relationship gloss.",
+      "appearances_summary": "Credited in Chapter 034 for schooling Adams’s eye on stained glass.",
+      "reason_removable": "Nice provenance for Adams’s medieval eye, but cutting the name does not weaken the Virgin/Dynamo contrast."
+    },
+    {
+      "class": "unglossed_name",
+      "severity": "medium",
+      "name": "Sir George Cornewall Lewis",
+      "alias": "Sir George Cornewall Lewis",
+      "segment_id": "012",
+      "line": 63,
+      "occurrence_type": "first_mention",
+      "gap_segments": null,
+      "gap_words": null,
+      "draft_passage": "He immediately put up Sir George Cornewall Lewis to repudiate the Chancellor of the Exchequer, against whom he turned his press at the same time.",
+      "reason": "'Sir George Cornewall Lewis' is the first surviving named mention of minor/cut character 'Sir George Cornewall Lewis' and it lacks a local role/relationship gloss.",
+      "appearances_summary": "Cabinet voice cited in letters around Gladstone’s 1862 intervention speech (Chapter 012).",
+      "reason_removable": "He refines an episode already anchored by Russell, Palmerston, and Gladstone; his omission does not weaken the diplomatic education."
+    }
+  ]
+}

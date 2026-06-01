@@ -1,0 +1,36 @@
+{
+  "panels_processed": 25,
+  "archetypes": {
+    "single_speaker": 2,
+    "caption_action": 23
+  },
+  "warnings": [
+    {
+      "page_number": 1,
+      "panel_number": 1,
+      "code": "balloon_speaker_explicitly_absent",
+      "message": "A speech or thought balloon names a speaker the panel itself says is not visible; move the line to a panel where the speaker is staged or convert it to narration.",
+      "speaker": "Mr. Carraway",
+      "text": "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had."
+    },
+    {
+      "page_number": 1,
+      "panel_number": 1,
+      "code": "long_balloon_text",
+      "message": "Balloon text is long enough to threaten panel composition.",
+      "speaker": "Mr. Carraway",
+      "text": "Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had."
+    }
+  ],
+  "source_storyboard": "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/storyboard_policy.json",
+  "output_storyboard": "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/storyboard_policy_thumbnail_layout.json",
+  "source_root": null,
+  "source_frames_loaded": 0,
+  "rough_pages": [
+    "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/thumbnail_policy_rough_pages/page_001.png",
+    "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/thumbnail_policy_rough_pages/page_002.png",
+    "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/thumbnail_policy_rough_pages/page_003.png",
+    "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/thumbnail_policy_rough_pages/page_004.png",
+    "work/gatsby/graphic_novel/opening_house_thumbnail_e2e/thumbnail_policy_rough_pages/page_005.png"
+  ]
+}

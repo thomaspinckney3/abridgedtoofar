@@ -1,26 +1,27 @@
 {
   "book_id": "gatsby",
   "pairs_checked": 8,
-  "findings_total": 11,
+  "findings_total": 8,
+  "findings_raw_total": 8,
+  "findings_invalid": 0,
   "class_counts": {
-    "broken_pivot": 4,
-    "dangling_reference": 2,
-    "missing_gloss": 1,
-    "non_parseable": 1,
-    "unattributed_dialogue": 3
+    "broken_pivot": 1,
+    "unglossed_name": 3,
+    "unattributed_dialogue": 2,
+    "dangling_reference": 2
   },
   "per_segment_counts": {
     "001": 1,
-    "004": 1,
-    "005": 2,
-    "006": 2,
-    "007": 3,
-    "009": 2
+    "002": 1,
+    "004": 2,
+    "005": 1,
+    "006": 1,
+    "007": 2
   },
   "per_pair": [
     {
       "pair": "001-002",
-      "count": 1
+      "count": 2
     },
     {
       "pair": "002-003",
@@ -32,15 +33,15 @@
     },
     {
       "pair": "004-005",
-      "count": 1
-    },
-    {
-      "pair": "005-006",
       "count": 2
     },
     {
+      "pair": "005-006",
+      "count": 1
+    },
+    {
       "pair": "006-007",
-      "count": 3
+      "count": 1
     },
     {
       "pair": "007-008",
@@ -48,108 +49,89 @@
     },
     {
       "pair": "008-009",
-      "count": 2
+      "count": 0
     }
   ],
   "findings": [
     {
+      "valid": true,
       "class": "broken_pivot",
-      "chapter": "1",
-      "draft_passage": "Tom hovered restlessly. \"I've got a nice place here,\" he said, his eyes flashing about. He proposed we go out again; instead we moved toward the porch where four candles flickered on the table in the diminished wind.",
-      "source_has": "The source has Tom say 'I've got a nice place here' only once, on the porch before entering the house. The second occurrence in the draft is an artifact of compression: the source's interior scene ends with Tom shutting windows, then leading everyone to the dinner porch \u2014 no repeated line. The draft duplicated Tom's porch speech and spliced it into the post-interior moment, producing a verbatim repetition that also orphans the phrase 'proposed we go out again' (there is no established 'inside' that they need to leave).",
-      "gate_test_answer": "A reader is genuinely confused: Tom appears to repeat word-for-word a remark he made moments ago, and the phrase 'go out again' implies a prior 'going in' that the compressed draft has not clearly staged, making the scene transition unparseable rather than merely less vivid.",
+      "chapter": "N",
+      "draft_passage": "Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.",
+      "source_has": "the butler left the porch Daisy seized upon the momentary interruption and leaned towards me [then later] The butler came back and murmured something close to Tom's ear, whereupon Tom frowned, pushed back his chair, and without a word went inside.",
+      "gate_test_answer": "A reader is genuinely misled: the 'yet' signals logical contrast between Daisy's and Tom's reactions, but both are responses to the same interruption; moreover the source's causal chain—Tom's absence enabling Daisy's confidential lean—is destroyed, leaving the 'yet' connecting two parallel, not opposing, actions.",
       "segment_id": "001",
       "pair": "001-002"
     },
     {
-      "class": "dangling_reference",
-      "chapter": "4",
-      "draft_passage": "They give a better impression than my generalities of those who accepted Gatsby's hospitality and paid him the subtle tribute of knowing nothing whatever about him.",
-      "source_has": "Source follows this sentence with a multi-paragraph roll-call of named guests (the timetable catalog), to which 'They' refers. The frame sentence exists only as an introduction to that list.",
-      "gate_test_answer": "A reader is genuinely misled: 'They give a better impression' promises a list that never materialises, leaving the sentence's claim empty and purposeless rather than merely less detailed.",
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'",
+      "source_has": "\"If Chester could only get you in that pose I think he could make something of it.\" — spoken by Mrs. McKee, with Chester established as Mr. McKee's first name via prior introduction of 'Mr. McKee'",
+      "gate_test_answer": "A reader is genuinely confused: the photographer has been introduced in the draft only as 'a pale, feminine man from the flat below, a photographer' — never named — so the name 'Chester' in this quoted speech has no antecedent in the draft and the reader cannot identify who Chester is.",
+      "segment_id": "002",
+      "pair": "001-002"
+    },
+    {
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N+1",
+      "draft_passage": "\"—So I took one look at him,\" said Mr. Wolfshiem, shaking my hand earnestly, \"and what do you think I did?\" \"What?\" I inquired politely. But evidently he was not addressing me, for he dropped my hand and covered Gatsby with his expressive nose. Gatsby took an arm of each of us and moved forward into the restaurant",
+      "source_has": "After Nick asks 'What?', Wolfshiem completes his anecdote: 'I handed the money to Katspaugh and I said: \"All right, Katspaugh, don't pay him a penny till he shuts his mouth.\" He shut it then and there.' — only then does the group move into the restaurant.",
+      "gate_test_answer": "A reader is genuinely confused: Wolfshiem opens a story ('what do you think I did?'), Nick asks 'What?', and the story simply vanishes with no resolution and no interrupting event to explain its abandonment — the narrative moves straight to entering the restaurant as if the story was completed, leaving an open and unanswered narrative frame.",
       "segment_id": "004",
       "pair": "003-004"
     },
     {
-      "class": "missing_gloss",
-      "chapter": "5",
-      "draft_passage": "There was nothing to look at except Gatsby's enormous house, so I stared at it, like Kant at his church steeple, for half an hour. Americans, while willing, even eager, to be serfs, have always been obstinate about being peasantry.",
-      "source_has": "Source anchors the aphorism in a full anecdote: a brewer built the house, tried to get neighbours to thatch their roofs, failed, 'went into an immediate decline,' and his children sold the house \u2014 the 'Americans\u2026 peasantry' line is the explicit moral of that story.",
-      "gate_test_answer": "A reader is genuinely confused: the aphorism about serfs and peasantry arrives with no narrative setup in the draft, making it impossible to understand what observation it concludes or why it appears at this moment in the text.",
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N",
+      "draft_passage": "\"—So I took one look at him,\" said Mr. Wolfshiem, shaking my hand earnestly, \"and what do you think I did?\"\n\"What?\" I inquired politely.\nBut evidently he was not addressing me, for he dropped my hand and covered Gatsby with his expressive nose.\nGatsby took an arm of each of us and moved forward into the restaurant",
+      "source_has": "After Nick's 'What?' Wolfshiem delivers his answer: 'I handed the money to Katspaugh and I said: \"All right, Katspaugh, don't pay him a penny till he shuts his mouth.\" He shut it then and there.' Only then does Gatsby move them to the restaurant.",
+      "gate_test_answer": "A reader is genuinely confused: Wolfshiem poses an explicit rhetorical question, Nick answers 'What?', and then the answer is simply never given before the scene moves on — the reader has no idea what Wolfshiem did and is left with a conspicuously open loop.",
+      "segment_id": "004",
+      "pair": "004-005"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "As Gatsby closed the door of \"the Merton College Library\" I could have sworn I heard the owl-eyed man break into ghostly laughter.",
+      "source_has": "Source Ch 003 introduced 'a stout, middle-aged man, with enormous owl-eyed spectacles' discovered in the library by Nick; Ch 005 source uses 'the owl-eyed man' as a callback to that established character. The Ch 003 library scene was authorized to be cut, removing the character's only introduction.",
+      "gate_test_answer": "A reader of the draft has never encountered 'the owl-eyed man' — the definite article presupposes prior introduction that was removed by an authorized cut in Ch 003 — and has no way to place who this person is or why his ghostly laughter is significant.",
       "segment_id": "005",
       "pair": "004-005"
     },
     {
-      "class": "broken_pivot",
-      "chapter": "5",
-      "draft_passage": "There was nothing to look at except Gatsby's enormous house, so I stared at it, like Kant at his church steeple, for half an hour. Americans, while willing, even eager, to be serfs, have always been obstinate about being peasantry.",
-      "source_has": "Source interposes a full paragraph: a brewer built the house in a 'period craze,' tried to get neighbours to thatch their roofs, was refused, 'took the heart out of his plan to Found a Family,' and died; his children sold the house. The aphorism 'Americans\u2026obstinate about being peasantry' is the explicit moral drawn from that story.",
-      "gate_test_answer": "A reader is genuinely confused: the aphorism arrives with no referent \u2014 there is no established situation in the draft involving serfs, peasantry, or feudal refusal \u2014 so the sentence reads as a non-sequitur rather than a less-ornamented version of the source.",
-      "segment_id": "005",
-      "pair": "005-006"
-    },
-    {
-      "class": "broken_pivot",
-      "chapter": "6",
-      "draft_passage": "But the rest offended her\u2014and inarguably because it wasn't a gesture but an emotion.",
-      "source_has": "Source immediately precedes this with Daisy saying 'I like her, I think she's lovely' about the movie star under the white-plum tree, establishing the thing she *did* like before the contrastive 'but the rest offended her.'",
-      "gate_test_answer": "A reader is genuinely confused: 'but the rest' requires an established contrast (something she liked), which has been cut entirely from the draft; without it, the sentence's logical pivot has no other side and 'the rest' has no defined referent.",
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "\"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\"",
+      "source_has": "The source's pool scene has the drunk girl (Miss Baedeker) asking Daisy to administer a cold shower, making Tom's question directly referential. The draft replaced that beat with a doctor sticking the girl's head in the pool unprompted, so no girl ever asked Daisy anything.",
+      "gate_test_answer": "A reader of the draft is genuinely confused: Tom asks Daisy about a moment when 'that girl asked her to put her under a cold shower,' but the draft's own compressed version of the scene shows a doctor acting on his own initiative — no girl asked Daisy to do anything, so Tom's question has no antecedent event in the draft.",
       "segment_id": "006",
       "pair": "005-006"
     },
     {
-      "class": "non_parseable",
+      "valid": true,
+      "class": "unglossed_name",
       "chapter": "N+1",
-      "draft_passage": "the conductor to familiar faces: \"Hot! \u2026 Hot! \u2026 Hot! \u2026 Is it hot enough for you?\"",
-      "source_has": "\"Hot!\" said the conductor to familiar faces. \"Some weather! \u2026 Hot! \u2026 Hot! \u2026 Hot! \u2026 Is it hot enough for you?\"",
-      "gate_test_answer": "A competent reader is genuinely confused: the sentence 'the conductor to familiar faces: ...' has no main verb and cannot be parsed as a grammatical sentence \u2014 it is not merely a less-ornamented version of the original.",
+      "draft_passage": "\"You must have gone there about the time Biloxi went to New Haven.\"",
+      "source_has": "A extended comic digression identifies 'Blocks' Biloxi by name, origin (Biloxi, Tennessee), box-making trade, and his fraudulent claim to be president of Tom's Yale class — establishing who he is before Tom uses his name as a chronological put-down of Gatsby's Oxford claim.",
+      "gate_test_answer": "A reader with no source access would be genuinely confused: 'Biloxi' appears without any introduction, role, or relationship in the draft, making Tom's taunt ('about the time Biloxi went to New Haven') an opaque non-sequitur rather than the pointed insinuation it is meant to be.",
       "segment_id": "007",
       "pair": "006-007"
     },
     {
-      "class": "broken_pivot",
+      "valid": true,
+      "class": "unglossed_name",
       "chapter": "N",
-      "draft_passage": "But the rest offended her\u2014and inarguably because it wasn't a gesture but an emotion.",
-      "source_has": "\"I like her,\" said Daisy, \"I think she's lovely.\" But the rest offended her\u2014and inarguably because it wasn't a gesture but an emotion.",
-      "gate_test_answer": "A competent reader is genuinely confused: the adversative 'but' requires a preceding positive claim for contrast, but the draft cuts Daisy's approval of the movie star entirely, leaving 'but the rest offended her' floating with no antecedent positive proposition to push against.",
-      "segment_id": "006",
-      "pair": "006-007"
-    },
-    {
-      "class": "unattributed_dialogue",
-      "chapter": "N+1",
-      "draft_passage": "\"They were out in the open at last and Gatsby was content.\"",
-      "source_has": "They were out in the open at last and Gatsby was content. [unquoted narratorial statement, not dialogue]",
-      "gate_test_answer": "A competent reader is genuinely confused: the compression has accidentally enclosed the narrator's aside in quotation marks, making it appear to be spoken dialogue with no identifiable speaker, immediately after Tom's question and before Daisy's response.",
-      "segment_id": "007",
-      "pair": "006-007"
-    },
-    {
-      "class": "unattributed_dialogue",
-      "chapter": "7",
-      "draft_passage": "\"They were out in the open at last and Gatsby was content.\" Daisy begged for self-control.",
-      "source_has": "They were out in the open at last and Gatsby was content. [narrator's statement, unquoted] Daisy begged for self-control.",
-      "gate_test_answer": "A reader seeing quotation marks around 'They were out in the open at last and Gatsby was content' will be genuinely confused about who is speaking this line and what its meaning is, since it reads as a character's utterance when it is actually Nick's authorial commentary with no speaker.",
+      "draft_passage": "\"You must have gone there about the time Biloxi went to New Haven.\"",
+      "source_has": "The source introduces 'Blocks' Biloxi at length in the Plaza scene: Daisy recalls him fainting at their wedding, Jordan says he stayed in her house for three weeks, and he falsely claimed to be president of Tom's Yale class — establishing him as a fraudulent credential-claimer whose Yale claim is the exact parallel Tom is using against Gatsby's Oxford claim.",
+      "gate_test_answer": "A reader is genuinely confused: without the Biloxi passage (an authorized cut), 'Biloxi' is an unidentified proper name whose relevance to Gatsby's Oxford claim is entirely opaque, so the taunt reads as a non-sequitur rather than a pointed parallel about fabricated academic credentials.",
       "segment_id": "007",
       "pair": "007-008"
-    },
-    {
-      "class": "dangling_reference",
-      "chapter": "9",
-      "draft_passage": "she swore that her sister had never seen Gatsby, that she was completely happy with her husband, that she had been into no mischief whatever.",
-      "source_has": "swore that her sister had never seen Gatsby, that her sister was completely happy with her husband, that her sister had been into no mischief whatever",
-      "gate_test_answer": "A reader is genuinely confused: the second and third 'she' could refer to Catherine (the paragraph's grammatical subject) rather than to the sister, making it ambiguous whose marital happiness and misconduct is being sworn to.",
-      "segment_id": "009",
-      "pair": "008-009"
-    },
-    {
-      "class": "unattributed_dialogue",
-      "chapter": "9",
-      "draft_passage": "'Go on! Why, my God! they used to go there by the hundreds.' He took off his glasses and wiped them, outside and in. 'The poor son-of-a-bitch,' he said.",
-      "source_has": "It was the man with owl-eyed glasses whom I had found marvelling over Gatsby's books in the library \u2026 Owl-eyes spoke to me by the gate. 'I couldn't get to the house,' he remarked \u2026 'Go on!' He started. 'Why, my God! they used to go there by the hundreds.' \u2026 'The poor son-of-a-bitch,' he said.",
-      "gate_test_answer": "A reader is genuinely confused: the voice delivering these lines has no established identity in the draft \u2014 the character's arrival and identification were cut \u2014 so the exclamation and epitaph float without any speaker the reader can place.",
-      "segment_id": "009",
-      "pair": "008-009"
     }
   ]
 }

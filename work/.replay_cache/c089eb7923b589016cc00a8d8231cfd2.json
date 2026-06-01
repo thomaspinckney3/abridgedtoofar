@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-06T17:25:02",
+  "key": "c089eb7923b589016cc00a8d8231cfd2",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "16fbe212da6f381bc241f01c98eae677",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "100f7053985881d48107f57430a36ce3f1e15dc028913673b2b318193c706145",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "d65b28c8b316b5f796a6fe524d00fb7748e8586c68e0f0f710d9b4e0403eeff7",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "0d20186e30d91b1e32f9c1937887f5c90fa693af446e9839bc46403fdd15aa45",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through the drafts systematically, applying each test.\n\n---\n\n**Ch 008 draft \u2014 pass**\n\nThe compression is clean. The Dan Cody reference survives its own gloss (\"the strange story of his youth with Dan Cody\"). Michaelis is replaced throughout by \"a neighbor,\" which is a descriptor, not a proper name \u2014 not a finding. The Jordan Baker phone-call passage retains her name and the immediately preceding paragraph re-introduces her adequately. No mid-scene jumps, no dangling pronouns whose antecedent was cut.\n\n---\n\n**Ch 009 draft \u2014 findings**\n\n**1. \"He spoke to me by the gate.\" \u2014 dangling reference / non-parseable on its own**\n\nIn the source the owl-eyed man is given a running label: \"Owl-eyes spoke to me by the gate.\" In the draft, the preceding sentence ends \"\u2026then the owl-eyed man said 'Amen to that,' in a brave voice. We straggled down quickly through the rain to the cars. **He spoke to me by the gate.**\" The pronoun \"He\" follows \"the owl-eyed man\" in the immediately preceding sentence, so the antecedent survives \u2014 this is parseable. **Not a finding.**\n\n**2. \"After that I felt a certain shame for Gatsby\u2014one gentleman to whom I telephoned implied that he had got what he deserved. I should have known better than to call him. I didn't want it to be in the papers and draw a sightseeing crowd, so I'd been calling up a few people myself.\"**\n\nIn the source the order is: (a) Klipspringer call \u2192 (b) shame for Gatsby \u2192 (c) \"I didn't want it in the papers.\" The Klipspringer episode is an authorized cut. But the draft's sequence drops the Klipspringer episode and then presents \"After that I felt a certain shame for Gatsby\" \u2014 the phrase \"After that\" is a temporal pivot pointing back to an event that no longer exists in the draft. A reader has no referent for \"after that.\" However, \"after that\" here can be read as loose narrative transition rather than a strict causal/temporal link to a specific deleted event; a competent reader would understand it as \"in the wake of all this.\" This is a seam from an authorized cut (Klipspringer). **Not a finding \u2014 direct residue of authorized cut.**\n\n**3. Broken pivot \u2014 \"After that I felt a certain shame for Gatsby \u2026 I didn't want it to be in the papers and draw a sightseeing crowd, so I'd been calling up a few people myself. They were hard to find.\"**\n\nIn the source the logical sequence is: Nick calls people \u2192 Klipspringer answers \u2192 shame episode \u2192 funeral next morning. In the draft the shame paragraph and the \"calling up a few people\" sentence are stranded after Mr. Gatz falls asleep, before the funeral morning scene, with no Klipspringer episode to motivate them. The phrase \"so I'd been calling up a few people myself\" implies a contrast or parallel to some prior action (Klipspringer's failure), which has been cut. This is again a direct residue of the authorized Klipspringer cut. **Not a finding.**\n\n**4. Unglossed minor name: \"Slagle\"**\n\nIn both source and draft, \"Slagle\" is explicitly flagged as unfamiliar to Nick: *\"The name was unfamiliar.\"* The draft retains this. Not a problem.\n\n**5. \"We straggled down quickly through the rain to the cars. He spoke to me by the gate.\"**\n\nRe-examining: \"the owl-eyed man\" is the clear antecedent one sentence back. Parseable. **Not a finding.**\n\n**6. Ch 009 \u2014 \"the man with owl-eyed glasses whom I had found marvelling over Gatsby's books in the library one night three months before.\"**\n\nThe authorized cut list includes \"Owl Eyes's library discovery and the car-in-the-ditch gag (Ch 003).\" That scene was cut from Ch 003's draft. The Ch 009 source re-introduces Owl Eyes with exactly this back-reference to the library. The Ch 009 draft retains this sentence verbatim. A reader of the abridgment's Ch 003 draft has no prior establishment of this man or the library scene. This is a **mid-scene jump / unglossed name** \u2014 a definite reference (\"whom I had found marvelling over Gatsby's books in the library one night three months before\") to an event that was cut from Ch 003.\n\nHowever \u2014 this falls under the authorized-cut residue rule: the library scene was an authorized cut from Ch 003. The dangling reference here is a *direct residue* of that authorized cut. **Not a finding per the authorized-cuts rule.**\n\n**7. Ch 009 \u2014 broken pivot in the Jordan Baker conversation**\n\nJordan says: *\"You said a bad driver was only safe until she met another bad driver? Well, I met another bad driver, didn't I?\"* The source's earlier Jordan/bad-driver mini-essay is on the authorized removal list (Ch 003). The conversation here is internally attributed (Jordan is quoting Nick back to himself, and Nick acknowledges he doesn't exactly remember). A reader can follow that this refers to some prior exchange even without Ch 003's context. The draft's Nick says \"Why\u2014not exactly,\" which signals the reference is to a past conversation. **Not a finding \u2014 residue of authorized cut and the exchange is self-sufficient.**\n\n**8. Ch 009 \u2014 \"I got him to join the American Legion and he used to stand high there.\"**\n\nIn the source Wolfshiem says: *\"I got him to join the American Legion and he used to stand high there. Right off he did some work for a client of mine up to Albany.\"* The draft omits the American Legion sentence between \"I knew I could use him good\" and \"Right off he did some work.\" Let me check the draft text exactly:\n\n> \"I saw right away he was a fine-appearing, gentlemanly young man, and when he told me he was at Oggsford I knew I could use him good. Right off he did some work for a client of mine up to Albany.\"\n\nThe American Legion sentence is simply cut; \"Right off\" still attaches grammatically to the preceding sentence. No broken logical pivot \u2014 it's just a less-detailed version. **Not a finding.**\n\n**9. Ch 009 \u2014 dangling pivot: \"Nevertheless you did throw me over,\" said Jordan suddenly. \"You threw me over on the telephone.\"**\n\nIn the source, before this exchange Nick describes being \"angry, and half in love with her\" and getting up to say goodbye, which precipitates Jordan's \"nevertheless.\" The draft retains this sequence intact. **Not a finding.**\n\n---\n\nAfter exhaustive review, applying the gate test strictly and excluding all authorized-cut residues, I find **no repair-worthy structural coherence failures** in either draft chapter.\n\n```json\n[]\n```",
+    "input_tokens": 26360,
+    "output_tokens": 1608,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 40.335947036743164,
+    "stop_reason": "end_turn"
+  }
+}

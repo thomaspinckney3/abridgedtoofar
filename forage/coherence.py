@@ -1,7 +1,8 @@
 """Coherence critic stage: per-adjacent-chapter-pair structural damage check.
 
-For each pair of adjacent diegetic chapters (Ch N, Ch N+1), sends source
-and draft for both to Sonnet with a strict structural gate. Flags only
+For each pair of adjacent drafted chapters in the final reading sequence
+(Ch N, Ch N+1), sends source and draft for both to Sonnet with a strict
+structural gate. Flags only
 cases where the draft fails one of these tests:
 
   - non-parseable on its own
@@ -25,9 +26,11 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 from .artifacts import Book, read_json, write_json
+from .coherence_filter import normalize_finding_validity
 from .llm import complete
 from .prompts import load_prompt
 
@@ -61,22 +64,73 @@ def _pair_has_drafts(book: Book, sid_n: str, sid_np1: str) -> bool:
                for s in (sid_n, sid_np1))
 
 
+def _coherence_segment_ids(plan: dict) -> list[str]:
+    """Return segment ids in the same sequence the assembled abridgment reads.
+
+    Target-zero/skipped chapters are omitted because their drafts must not
+    participate in adjacent-pair repair. If a chapter's kernel was relocated,
+    the receiving draft carries that context and should be checked directly
+    against the next included draft.
+    """
+    ids: list[str] = []
+    for s in plan.get("segments", []):
+        if s.get("diegetic_status") != "diegetic":
+            continue
+        if (s.get("source_word_count") or 0) < 300:
+            continue
+        if s.get("skipped"):
+            continue
+        if int(s.get("target_word_count", 0) or 0) == 0:
+            continue
+        ids.append(s["id"])
+    return ids
+
+
+def _resolve_finding_segment_id(chapter: object, sid_n: str, sid_np1: str) -> str:
+    """Map a critic `chapter` field to the real segment id for a pair.
+
+    The prompt asks for "N" or "N+1", but models sometimes return the
+    visible chapter/segment number ("2", "002", "3"). Treat those as
+    recoverable instead of defaulting every malformed value to N+1.
+    """
+    raw = str(chapter or "").strip()
+    compact = raw.upper().replace(" ", "").replace("_", "").replace("+", "")
+    if compact == "N":
+        return sid_n
+    if compact in {"N1", "NPLUS1"}:
+        return sid_np1
+
+    if raw == sid_n:
+        return sid_n
+    if raw == sid_np1:
+        return sid_np1
+
+    if raw.isdigit():
+        try:
+            number = int(raw)
+            if sid_n.isdigit() and number == int(sid_n):
+                return sid_n
+            if sid_np1.isdigit() and number == int(sid_np1):
+                return sid_np1
+        except ValueError:
+            pass
+
+    return sid_np1
+
+
 def run_coherence(book: Book) -> dict:
-    """Walk all adjacent pairs of diegetic chapters with drafts on disk,
+    """Walk all adjacent pairs of final drafted chapters with drafts on disk,
     run the v3 structural coherence critic on each, write a combined
     report to work/<book>/coherence_report.json.
     """
     plan = read_json(book.work_dir / "plan.json")
-    # Take ids of diegetic segments in plan order.
-    diegetic = [s["id"] for s in plan.get("segments", [])
-                if s.get("diegetic_status") == "diegetic"
-                and (s.get("source_word_count") or 0) >= 300]
-    if len(diegetic) < 2:
+    final_ids = _coherence_segment_ids(plan)
+    if len(final_ids) < 2:
         raise RuntimeError(
             f"need at least 2 diegetic drafts to form a pair "
-            f"(found {len(diegetic)})")
+            f"(found {len(final_ids)})")
 
-    pairs = list(zip(diegetic, diegetic[1:]))
+    pairs = list(zip(final_ids, final_ids[1:]))
     all_findings: list[dict] = []
     per_pair: list[dict] = []
     prompt = load_prompt("critic_coherence")
@@ -125,26 +179,32 @@ def run_coherence(book: Book) -> dict:
         findings = flat
 
         # Resolve the "chapter" field ("N" or "N+1") to an actual segment id.
+        normalized_findings: list[dict] = []
         for f in findings:
-            ch = str(f.get("chapter", "")).upper().replace("+", "")
-            if ch == "N":
-                f["segment_id"] = sid_n
-            elif ch == "N1":
-                f["segment_id"] = sid_np1
-            else:
-                f["segment_id"] = sid_np1  # default to later chapter
+            f["segment_id"] = _resolve_finding_segment_id(
+                f.get("chapter"), sid_n, sid_np1)
             f["pair"] = f"{sid_n}-{sid_np1}"
+            normalized_findings.append(normalize_finding_validity(f))
+        findings = normalized_findings
         all_findings.extend(findings)
-        per_pair.append({"pair": f"{sid_n}-{sid_np1}", "count": len(findings)})
+        valid_count = sum(1 for f in findings if f.get("valid", True))
+        invalid_count = len(findings) - valid_count
+        pair_row = {"pair": f"{sid_n}-{sid_np1}", "count": valid_count}
+        if invalid_count:
+            pair_row["invalid_count"] = invalid_count
+        per_pair.append(pair_row)
 
-    from collections import Counter
-    class_counts = Counter(f.get("class", "?") for f in all_findings)
-    seg_counts = Counter(f.get("segment_id", "?") for f in all_findings)
+    valid_findings = [f for f in all_findings if f.get("valid", True)]
+    invalid_findings = [f for f in all_findings if not f.get("valid", True)]
+    class_counts = Counter(f.get("class", "?") for f in valid_findings)
+    seg_counts = Counter(f.get("segment_id", "?") for f in valid_findings)
 
     report = {
         "book_id": book.book_id,
         "pairs_checked": len(pairs),
-        "findings_total": len(all_findings),
+        "findings_total": len(valid_findings),
+        "findings_raw_total": len(all_findings),
+        "findings_invalid": len(invalid_findings),
         "class_counts": dict(class_counts),
         "per_segment_counts": dict(seg_counts),
         "per_pair": per_pair,

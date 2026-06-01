@@ -1,0 +1,137 @@
+{
+  "book_id": "gatsby",
+  "pairs_checked": 8,
+  "findings_total": 8,
+  "findings_raw_total": 8,
+  "findings_invalid": 0,
+  "class_counts": {
+    "broken_pivot": 1,
+    "unglossed_name": 3,
+    "unattributed_dialogue": 2,
+    "dangling_reference": 2
+  },
+  "per_segment_counts": {
+    "001": 1,
+    "002": 1,
+    "004": 2,
+    "005": 1,
+    "006": 1,
+    "007": 2
+  },
+  "per_pair": [
+    {
+      "pair": "001-002",
+      "count": 2
+    },
+    {
+      "pair": "002-003",
+      "count": 0
+    },
+    {
+      "pair": "003-004",
+      "count": 1
+    },
+    {
+      "pair": "004-005",
+      "count": 2
+    },
+    {
+      "pair": "005-006",
+      "count": 1
+    },
+    {
+      "pair": "006-007",
+      "count": 1
+    },
+    {
+      "pair": "007-008",
+      "count": 1
+    },
+    {
+      "pair": "008-009",
+      "count": 0
+    }
+  ],
+  "findings": [
+    {
+      "valid": true,
+      "class": "broken_pivot",
+      "chapter": "N",
+      "draft_passage": "Daisy seized upon the interruption; yet Tom frowned, pushed back his chair, and without a word went inside.",
+      "source_has": "the butler left the porch Daisy seized upon the momentary interruption and leaned towards me [then later] The butler came back and murmured something close to Tom's ear, whereupon Tom frowned, pushed back his chair, and without a word went inside.",
+      "gate_test_answer": "A reader is genuinely misled: the 'yet' signals logical contrast between Daisy's and Tom's reactions, but both are responses to the same interruption; moreover the source's causal chain—Tom's absence enabling Daisy's confidential lean—is destroyed, leaving the 'yet' connecting two parallel, not opposing, actions.",
+      "segment_id": "001",
+      "pair": "001-002"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "his wife declared a pose could be made of Myrtle 'if Chester could only get her in that light'",
+      "source_has": "\"If Chester could only get you in that pose I think he could make something of it.\" — spoken by Mrs. McKee, with Chester established as Mr. McKee's first name via prior introduction of 'Mr. McKee'",
+      "gate_test_answer": "A reader is genuinely confused: the photographer has been introduced in the draft only as 'a pale, feminine man from the flat below, a photographer' — never named — so the name 'Chester' in this quoted speech has no antecedent in the draft and the reader cannot identify who Chester is.",
+      "segment_id": "002",
+      "pair": "001-002"
+    },
+    {
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N+1",
+      "draft_passage": "\"—So I took one look at him,\" said Mr. Wolfshiem, shaking my hand earnestly, \"and what do you think I did?\" \"What?\" I inquired politely. But evidently he was not addressing me, for he dropped my hand and covered Gatsby with his expressive nose. Gatsby took an arm of each of us and moved forward into the restaurant",
+      "source_has": "After Nick asks 'What?', Wolfshiem completes his anecdote: 'I handed the money to Katspaugh and I said: \"All right, Katspaugh, don't pay him a penny till he shuts his mouth.\" He shut it then and there.' — only then does the group move into the restaurant.",
+      "gate_test_answer": "A reader is genuinely confused: Wolfshiem opens a story ('what do you think I did?'), Nick asks 'What?', and the story simply vanishes with no resolution and no interrupting event to explain its abandonment — the narrative moves straight to entering the restaurant as if the story was completed, leaving an open and unanswered narrative frame.",
+      "segment_id": "004",
+      "pair": "003-004"
+    },
+    {
+      "valid": true,
+      "class": "unattributed_dialogue",
+      "chapter": "N",
+      "draft_passage": "\"—So I took one look at him,\" said Mr. Wolfshiem, shaking my hand earnestly, \"and what do you think I did?\"\n\"What?\" I inquired politely.\nBut evidently he was not addressing me, for he dropped my hand and covered Gatsby with his expressive nose.\nGatsby took an arm of each of us and moved forward into the restaurant",
+      "source_has": "After Nick's 'What?' Wolfshiem delivers his answer: 'I handed the money to Katspaugh and I said: \"All right, Katspaugh, don't pay him a penny till he shuts his mouth.\" He shut it then and there.' Only then does Gatsby move them to the restaurant.",
+      "gate_test_answer": "A reader is genuinely confused: Wolfshiem poses an explicit rhetorical question, Nick answers 'What?', and then the answer is simply never given before the scene moves on — the reader has no idea what Wolfshiem did and is left with a conspicuously open loop.",
+      "segment_id": "004",
+      "pair": "004-005"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "As Gatsby closed the door of \"the Merton College Library\" I could have sworn I heard the owl-eyed man break into ghostly laughter.",
+      "source_has": "Source Ch 003 introduced 'a stout, middle-aged man, with enormous owl-eyed spectacles' discovered in the library by Nick; Ch 005 source uses 'the owl-eyed man' as a callback to that established character. The Ch 003 library scene was authorized to be cut, removing the character's only introduction.",
+      "gate_test_answer": "A reader of the draft has never encountered 'the owl-eyed man' — the definite article presupposes prior introduction that was removed by an authorized cut in Ch 003 — and has no way to place who this person is or why his ghostly laughter is significant.",
+      "segment_id": "005",
+      "pair": "004-005"
+    },
+    {
+      "valid": true,
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "\"Did you notice Daisy's face when that girl asked her to put her under a cold shower?\"",
+      "source_has": "The source's pool scene has the drunk girl (Miss Baedeker) asking Daisy to administer a cold shower, making Tom's question directly referential. The draft replaced that beat with a doctor sticking the girl's head in the pool unprompted, so no girl ever asked Daisy anything.",
+      "gate_test_answer": "A reader of the draft is genuinely confused: Tom asks Daisy about a moment when 'that girl asked her to put her under a cold shower,' but the draft's own compressed version of the scene shows a doctor acting on his own initiative — no girl asked Daisy to do anything, so Tom's question has no antecedent event in the draft.",
+      "segment_id": "006",
+      "pair": "005-006"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "\"You must have gone there about the time Biloxi went to New Haven.\"",
+      "source_has": "A extended comic digression identifies 'Blocks' Biloxi by name, origin (Biloxi, Tennessee), box-making trade, and his fraudulent claim to be president of Tom's Yale class — establishing who he is before Tom uses his name as a chronological put-down of Gatsby's Oxford claim.",
+      "gate_test_answer": "A reader with no source access would be genuinely confused: 'Biloxi' appears without any introduction, role, or relationship in the draft, making Tom's taunt ('about the time Biloxi went to New Haven') an opaque non-sequitur rather than the pointed insinuation it is meant to be.",
+      "segment_id": "007",
+      "pair": "006-007"
+    },
+    {
+      "valid": true,
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "\"You must have gone there about the time Biloxi went to New Haven.\"",
+      "source_has": "The source introduces 'Blocks' Biloxi at length in the Plaza scene: Daisy recalls him fainting at their wedding, Jordan says he stayed in her house for three weeks, and he falsely claimed to be president of Tom's Yale class — establishing him as a fraudulent credential-claimer whose Yale claim is the exact parallel Tom is using against Gatsby's Oxford claim.",
+      "gate_test_answer": "A reader is genuinely confused: without the Biloxi passage (an authorized cut), 'Biloxi' is an unidentified proper name whose relevance to Gatsby's Oxford claim is entirely opaque, so the taunt reads as a non-sequitur rather than a pointed parallel about fabricated academic credentials.",
+      "segment_id": "007",
+      "pair": "007-008"
+    }
+  ]
+}

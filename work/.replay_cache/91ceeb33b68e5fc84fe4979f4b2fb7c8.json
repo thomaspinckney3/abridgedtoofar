@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T15:18:23",
+  "key": "91ceeb33b68e5fc84fe4979f4b2fb7c8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence-fix",
+    "hash": "05af23c16d7569c876384c7e76954fcc",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_fix.py",
+        "sha256": "5e700ecc59cb7c44ccf1eca51000fe803a7c6e29de95ef1df63709c6f131c6b0",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/coherence_fix_pair.md",
+        "sha256": "71eff4043236868d9179bcdc8a0eb4bfa52c5f9368e57df367b5dc5aec5e6a6b",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n{\n  \"pair\": \"022-023\",\n  \"edits\": [\n    {\"segment_id\": \"023-idx-8\", \"change\": \"The PM's question about 'the bogus inspector' is unresolvable without a referent. Add 'Inspector Brown' as an appositive gloss so the reader knows this is the alias Mr. Brown used \u2014 the smallest local repair that resolves the dangling reference without restoring any cut scene.\"}\n  ],\n  \"draft_n\": \"For a moment they stood staring at each other, dazed.\\n\\n\\\"How in tarnation did he get ahead of us?\\\" Julius ended.\\n\\n\\\"It accounts for the stitches being new. We might have guessed.\\\"\\n\\n\\\"It's downright impossible for anyone to get here quicker than we did. And how did he know? Was there a dictaphone in Jane's room?\\\"\\n\\n\\\"No one could have known beforehand that she'd be in that house \u2014 much less that particular room.\\\"\\n\\n\\\"Then one of the nurses listened at the door. The game's up. We've failed.\\\"\\n\\n\\\"There's only one thing for me to do,\\\" Tommy said. \\\"Get back to London. Mr. Carter must be warned.\\\"\\n\\nHalf an hour after his arrival, haggard and pale, Tommy stood before his chief.\\n\\n\\\"I've come to report. I've failed.\\\"\\n\\n\\\"You mean the treaty\u2014\u2014\\\"\\n\\n\\\"Is in the hands of Mr. Brown, sir.\\\"\\n\\n\\\"Ah!\\\" said Mr. Carter quietly. The expression on his face did not change, but Tommy caught the flicker of despair in his eyes.\\n\\n\\\"Don't take it to heart, lad. You did your best. You were up against one of the biggest brains of the century, and you came very near success.\\\"\\n\\n\\\"Thank you, sir.\\\"\\n\\n\\\"I have been blaming myself ever since I heard this other news.\\\"\\n\\nA new fear gripped Tommy's heart. \\\"Is there \u2014 something more, sir?\\\"\\n\\nMr. Carter stretched out his hand to a sheet on the table. \\\"Read for yourself.\\\"\\n\\nThe typewritten words danced before Tommy's eyes \u2014 the description of a green toque, a coat with a handkerchief in the pocket marked P.L.C.\\n\\n\\\"Tuppence\u2014\u2014?\\\"\\n\\n\\\"Washed up on the Yorkshire coast. I'm afraid \u2014 it looks very much like foul play.\\\"\\n\\n\\\"My God!\\\" gasped Tommy. \\\"*Tuppence!* Those devils \u2014 I'll never rest till I've got even with them!\\\"\\n\\n\\\"I know what you feel, my poor boy. But it's no good. Cut your losses. Time's merciful. You'll forget.\\\"\\n\\n\\\"Forget Tuppence? Never!\\\"\\n\\n\\\"That brave little girl. I'm confoundedly sorry.\\\"\\n\\nBack at the *Ritz*, Tommy packed mechanically. *Tuppence \u2014 dead!* Little Tuppence, brimming over with life. It was a dream \u2014 it couldn't be true.\\n\\nA note came: a few kind words of sympathy from Peel Edgerton, who had read the news. The letter ended with the offer of a post on a ranch in the Argentine.\\n\\nThe door opened, and Julius burst in with his usual violence, an open paper in his hand.\\n\\n\\\"Say \u2014 they seem to have got some fool idea about Tuppence.\\\"\\n\\n\\\"It's true.\\\"\\n\\n\\\"You mean they've done her in?\\\"\\n\\nTommy nodded. \\\"When they got the treaty she wasn't any good to them, and they were afraid to let her go.\\\"\\n\\n\\\"Well, I'm darned! Little Tuppence. She sure was the pluckiest\u2014\u2014\\\"\\n\\nSomething cracked in Tommy's brain. He rose to his feet.\\n\\n\\\"Oh, get out! You don't really care, damn you! You asked her to marry you in your rotten cold-blooded way, but I *loved* her. I'd have given the soul out of my body to save her from harm. I'd have stood by without a word and let her marry you, because you could have given her the sort of time she ought to have had, and I was only a poor devil without a penny. But it wouldn't have been because I didn't care!\\\"\\n\\n\\\"See here\u2014\u2014\\\" Julius began.\\n\\n\\\"Oh, go to the devil! Tuppence is my girl! I've always loved her, from the time we played together as kids. I shall never forget when I was in hospital, and she came in in that ridiculous cap and apron \u2014 like a miracle to see the girl I loved turn up in a nurse's kit\u2014\u2014\\\"\\n\\n\\\"A nurse's kit!\\\" Julius shouted. \\\"Gee whiz! I could swear I've seen Jane in a nurse's cap too. By gum, I've got it! It was her I saw talking to Whittington at that nursing home in Bournemouth. She wasn't a patient there! She was a nurse!\\\"\\n\\n\\\"I dare say she's been in with them from the start. I shouldn't wonder if she stole those papers from Danvers to begin with.\\\"\\n\\n\\\"I'm darned if she did! She's my cousin, and as patriotic a girl as ever stepped.\\\"\\n\\n\\\"I don't care a damn what she is \u2014 get out of here!\\\"\\n\\nThe young men were on the point of blows. Then, with magical abruptness, Julius's anger abated.\\n\\n\\\"All right, son. I'm going. It's mighty lucky you did say it. I've been the most almighty blithering darned idiot. I'm going right away \u2014 to the London and North Western Railway depot, if you want to know.\\\"\\n\\n\\\"I don't care a damn where you're going.\\\"\\n\\nWhen the door closed, Tommy returned to his suit-case. He re-read Sir James's letter and shook his head. Tuppence must be avenged.\\n\\n\\\"Better answer it.\\\" He went to the writing-table \u2014 innumerable envelopes and no paper. He remembered there was a supply in Julius's sitting-room. Julius had announced his immediate departure; there was no fear of running into him. He was beginning to be ashamed of what he had said. He'd apologize if he found him there.\\n\\nBut the room was deserted. Tommy walked to the writing-table and opened the middle drawer. A photograph, carelessly thrust in face upwards, caught his eye. For a moment he stood rooted to the ground. Then he took it out, walked slowly to an arm-chair, and sat down still staring at the photograph in his hand.\\n\\nWhat on earth was a photograph of the French girl Annette doing in Julius Hersheimmer's writing-table?\",\n  \"draft_np1\": \"The Prime Minister tapped the desk with nervous fingers. \\\"Do you really mean things are not so desperate after all?\\\"\\n\\n\\\"So this lad seems to think.\\\" Mr. Carter handed the letter across. It was written in a sprawling boyish hand.\\n\\n> DEAR MR. CARTER,\\n>\\n> Something's turned up that has given me a jar. If my conclusions are right, that girl at Manchester was just a plant \u2014 the whole thing prearranged to make us think the game was up. Therefore we must have been pretty hot on the scent.\\n>\\n> I think I know who the real Jane Finn is, and I've an idea where the papers are. I enclose it in a sealed envelope; please don't open it until midnight on the 28th. Tuppence's drowning is a plant too. As a last chance they'll let Jane Finn escape, hoping she'll lead them to the cache; but if they know the papers have been recovered, neither girl's life will be worth an hour's purchase.\\n>\\n> I want a repeat of that telegram sent to Tuppence at the Ritz. And please have that house in Soho watched day and night.\\n>\\n> Yours,\\n> THOMAS BERESFORD.\\n\\n\\\"The enclosure?\\\"\\n\\n\\\"In the vaults of the Bank. I am taking no chances.\\\"\\n\\n\\\"Hadn't we better open it now? Secure the document.\\\"\\n\\n\\\"Once it's known, I wouldn't give that\\\"\u2014Carter snapped his fingers\u2014\\\"for the lives of those two girls. The boy trusted me; I shan't let him down.\\\"\\n\\n\\\"What's he like?\\\"\\n\\n\\\"Outwardly an ordinary clean-limbed, rather block-headed young Englishman, slow in his mental processes \u2014 but impossible to lead astray through his imagination; he hasn't got any. The little lady's quite different. More intuition and less common sense. Pace and stamina.\\\"\\n\\n\\\"And it is this \u2014 boy who will defeat the master criminal of our time?\\\"\\n\\n\\\"This boy, as you say. But I sometimes fancy I see a shadow behind. Peel Edgerton \u2014 working in the dark. I've always felt that if anyone was to run Mr. Brown to earth, Peel Edgerton would be the man. He sent me an odd request the other day \u2014 a cutting about a man's body found near the docks in New York, badly disfigured, never identified.\\\"\\n\\n\\\"You think the matters connected?\\\"\\n\\n\\\"Somehow I do.\\\"\\n\\nSir James was shown in. The Premier rose with a half-whimsical thought: *My successor, perhaps.*\\n\\n\\\"You've seen young Beresford, I suppose?\\\" said Carter.\\n\\n\\\"You suppose wrong. He rang me up.\\\" Sir James stroked his chin. \\\"He thanked me for a letter offering him a job, then reminded me of something I'd said at Manchester about that bogus telegram. He had discovered a photograph in a drawer in Mr. Hersheimmer's room. I asked if it bore a Californian photographer's mark. He replied: 'You're on to it, sir. It had.' The original was the French girl, Annette, who saved his life.\\\"\\n\\n\\\"What?\\\"\\n\\n\\\"Exactly. He had put the photograph back where he found it \u2014 distinctly good, that. Once Manchester was proved a plant, everything was altered. He couldn't trust his judgment about Miss Cowley, however. I told him there was a very decided chance she was alive, and advised him to apply to you for the original wire.\\\"\\n\\nCarter took a sheet out and read aloud: \\\"Come at once, Astley Priors, Gatehouse, Kent. Great developments \u2014 TOMMY.\\\"\\n\\n\\\"Very simple, and very ingenious. The one important clue they overlooked \u2014 the page-boy's statement that Miss Cowley drove to Charing Cross. They took it for granted he had made a mistake.\\\"\\n\\n\\\"Then young Beresford is now\u2014\\\"\\n\\n\\\"At Gatehouse, Kent.\\\"\\n\\n\\\"I rather wonder you're not there too.\\\"\\n\\n\\\"I'm busy on a case. Any more facts about that American chap?\\\"\\n\\n\\\"Is it important to find out who he was?\\\"\\n\\n\\\"Oh, I know who he was. I can't prove it yet \u2014 but I know.\\\"\\n\\nThe other two asked no questions.\\n\\n\\\"But how,\\\" said the Prime Minister suddenly, \\\"did that photograph come to be in Mr. Hersheimmer's drawer?\\\"\\n\\n\\\"Perhaps it never left it,\\\" suggested the lawyer gently.\\n\\n\\\"But the bogus inspector \u2014 Inspector Brown, who conducted the search?\\\"\\n\\n\\\"Ah,\\\" said Sir James thoughtfully. He rose. \\\"I mustn't keep you. I must get back to my case.\\\"\\n\\nTwo days later Julius Hersheimmer returned from Manchester. A note from Tommy lay on his table: sorry for losing his temper, off to take a job in the Argentine.\\n\\nA peculiar smile lingered on Julius's face. He threw the letter into the waste-paper basket.\\n\\n\\\"The darned fool!\\\" he murmured.\"\n}\n```",
+    "input_tokens": 8528,
+    "output_tokens": 2863,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 65.11149907112122,
+    "stop_reason": "end_turn"
+  }
+}

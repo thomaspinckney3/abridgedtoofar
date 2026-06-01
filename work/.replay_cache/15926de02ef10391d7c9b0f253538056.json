@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-07T14:08:54",
+  "key": "15926de02ef10391d7c9b0f253538056",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Looking at both chapters carefully, I'll check each draft sentence against the seven tests, keeping the authorized cuts and explicit rejections in mind.\n\n**Ch 016 draft review:**\n\nThe draft compresses the hard-liquor banter (authorized cut), which is fine. The rest of the dialogue and action tracks cleanly. Heather is introduced by action before her name appears. The mark, the vision of Xander, Darda \u2014 all have antecedents in the draft itself. No structural breaks found.\n\n**Ch 017 draft review:**\n\nApuleius appears at the portal landing \u2014 his name is used. Was he introduced in a prior draft chapter? Ch 016 draft does not name Apuleius. Checking whether any earlier draft chapter established him: the source Ch 013 (draft Ch 017) is the first time Apuleius appears at the portal. He was introduced in source Ch 013 with no prior appearance. A reader of only the draft would encounter \"the shocked face of Apuleius\" with no prior identification of who Apuleius is.\n\nHowever \u2014 checking the gate test \u2014 is the reader *genuinely confused*? The sentence says \"the shocked face of Apuleius\" and then he is addressed as \"Father Apuleius\" and \"Priest Apuleius\" within the same scene, and acts as a sage/priest guide. A competent reader can assemble who he is from the immediate local context within a few lines. This meets the \"descriptor is clear\" exception for minor characters.\n\nChecking \"Stephanie\" \u2014 she appears at Xander's bedside: \"Cayden stood near the foot of the bed with Stephanie.\" In the source this is her first appearance in this scene, and she has no identifying gloss there either. But was she established in a prior chapter? Checking against the source: Stephanie appears in earlier chapters in the source narrative. The question is whether the *draft* of prior chapters established her. Without the earlier draft chapters to review, I must assess from what's provided: she receives no local identifier, no appositive, no relationship tag in this draft passage or the immediately preceding draft chapter (Ch 016), which takes place entirely in Heather's apartment and does not mention Stephanie at all.\n\nApplying test 7: Stephanie is a minor/removable character whose name appears without a local role, relationship, or appositive identifier, and the immediately preceding draft chapter does not establish who she is.\n\nGate test: A reader sees \"Cayden stood near the foot of the bed with Stephanie\" \u2014 Cayden has been mentioned (in the vision: \"Darda and others around him\" \u2014 actually the draft Ch 016 says \"Darda and others\"), but Stephanie is a bare proper name with no local context. A reader is genuinely puzzled: who is Stephanie and why is she at this dragon lord's sickbed?\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"Cayden stood near the foot of the bed with Stephanie, and Darda waited behind them.\",\n    \"source_has\": \"Near the foot of the bed stood Cayden, and at his side was Stephanie. Darda stood behind them with her husband. \u2014 Stephanie is not glossed in the source either, but the source's prior chapters would have established her; the draft's prior chapter (Ch 016) takes place entirely off-world and introduces no castle characters beyond Darda and Cayden (by name, in a vision).\",\n    \"gate_test_answer\": \"A reader with no source access sees a bare proper name 'Stephanie' placed at a dragon lord's sickbed with no role, relationship, or descriptor supplied anywhere in this draft chapter or the immediately preceding draft chapter, leaving them genuinely unable to place who this person is.\"\n  }\n]\n```",
+    "input_tokens": 10277,
+    "output_tokens": 880,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 22.508363008499146,
+    "stop_reason": "end_turn"
+  }
+}

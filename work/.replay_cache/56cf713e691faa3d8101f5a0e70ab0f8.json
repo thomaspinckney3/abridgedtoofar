@@ -1,0 +1,61 @@
+{
+  "ts": "2026-05-08T19:25:23",
+  "key": "56cf713e691faa3d8101f5a0e70ab0f8",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "critic:book",
+    "hash": "4c6e7b8bc128e94ef82728b822590ccb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/book_critic.py",
+        "sha256": "cd91118b72ed9ddbee56fe68456d0378ea76d95a1ec9a1680cd3ee3cd67bfb6a",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_book.md",
+        "sha256": "abd80cadfbed4c3d6e6019309d4d33791290ec0c2b4153799e86a97d391bc56a",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"sentence\": 1, \"status\": \"present\", \"evidence\": \"Mr. Shelby was a fair average kind of man, good-natured and kindly...he had speculated largely and quite loosely; had involved himself deeply\", \"note\": \"\"},\n  {\"sentence\": 2, \"status\": \"present\", \"evidence\": \"Haley...Tom is an uncommon fellow; he is certainly worth that sum anywhere,\u2014steady, honest, capable...and little Harry...a small quadroon boy\", \"note\": \"\"},\n  {\"sentence\": 3, \"status\": \"present\", \"evidence\": \"Eliza had been brought up by her mistress from girlhood\u2014petted, indulged, trained\", \"note\": \"\"},\n  {\"sentence\": 4, \"status\": \"present\", \"evidence\": \"she vaulted sheer over the turbid current by the shore, on to the raft of ice beyond...leaping\u2014slipping\u2014springing upwards again\", \"note\": \"\"},\n  {\"sentence\": 5, \"status\": \"present\", \"evidence\": \"Rachel Halliday...Simeon Halliday...George and Eliza and little Harry came out...first time George had sat down on equal terms at any white man's table...they were all seated...Phineas Fletcher will carry thee onward to the next stand\", \"note\": \"\"},\n  {\"sentence\": 6, \"status\": \"present\", \"evidence\": \"Senator Bird drew off his boots...Mrs. Bird...he determined to commence...driving her to Van Trompe's farm\", \"note\": \"\"},\n  {\"sentence\": 7, \"status\": \"present\", \"evidence\": \"Tom Loker...having lain three weeks at the Quaker dwelling, sick with a rheumatic fever...Tom arose from his bed a somewhat sadder and wiser man; and, in place of slave-catching, betook himself to life in one of the new settlements\", \"note\": \"\"},\n  {\"sentence\": 8, \"status\": \"present\", \"evidence\": \"Eliza's escape...the Christian charity that aids her...Mrs. Bird...broke the law; the senator helped her to Van Trompe's\", \"note\": \"\"},\n  {\"sentence\": 9, \"status\": \"present\", \"evidence\": \"Tom sat mournfully...Haley drew up at a blacksmith's shop...handcuffed...down the river\", \"note\": \"\"},\n  {\"sentence\": 10, \"status\": \"present\", \"evidence\": \"by some sudden movement, the child lost her balance and fell sheer over the side...Tom was after her in a moment...he caught her\", \"note\": \"\"},\n  {\"sentence\": 11, \"status\": \"present\", \"evidence\": \"a graceful, elegantly-formed young man...Augustine St. Clare...the same noble head, the same blue eyes...genial, skeptical\", \"note\": \"\"},\n  {\"sentence\": 12, \"status\": \"present\", \"evidence\": \"St. Clare made out a roll of bills...'Here, count your money, old boy!'...Tom was made over...he had a master!\", \"note\": \"\"},\n  {\"sentence\": 13, \"status\": \"present\", \"evidence\": \"Tom...manages the stable...his Bible...the quiet force of goodness that softens even the flinty New England spinster, Miss Ophelia, and begins the long conversion of the mischievous Topsy\", \"note\": \"\"},\n  {\"sentence\": 14, \"status\": \"present\", \"evidence\": \"Eva...reads Scripture to Tom...she reads to him from the Bible...insists that slaves are souls like any others\", \"note\": \"\"},\n  {\"sentence\": 15, \"status\": \"present\", \"evidence\": \"on her deathbed she distributes locks of her golden hair, pleads...she said 'O! love,\u2014joy,\u2014peace!' gave one sigh, and passed from death unto life\", \"note\": \"\"},\n  {\"sentence\": 16, \"status\": \"present\", \"evidence\": \"St. Clare commenced the legal steps necessary to Tom's emancipation\", \"note\": \"\"},\n  {\"sentence\": 17, \"status\": \"present\", \"evidence\": \"St. Clare had turned into a caf\u00e9...An affray arose...he received a fatal stab in the side with a bowie-knife\", \"note\": \"\"},\n  {\"sentence\": 18, \"status\": \"present\", \"evidence\": \"Marie...the establishment was to be broken up...all the servants and furniture had better be put up at auction\", \"note\": \"\"},\n  {\"sentence\": 19, \"status\": \"present\", \"evidence\": \"Tom is purchased by Simon Legree, a brutal cotton planter on the Red River, who rules by lash, dogs, and calculated terror\", \"note\": \"\"},\n  {\"sentence\": 20, \"status\": \"present\", \"evidence\": \"'I'm willin' to work, night and day...but this yer thing I can't feel it right to do...I will hold on to the Lord...die or live'\", \"note\": \"\"},\n  {\"sentence\": 21, \"status\": \"present\", \"evidence\": \"Cassy...a proud, tormented quadroon...seamed with lines of pain and of proud endurance...Emmeline, the innocent girl he intends to break\", \"note\": \"\"},\n  {\"sentence\": 22, \"status\": \"present\", \"evidence\": \"Cassy befriends Tom...his steadfast forgiveness...she hatches a brilliant 'haunting' stratagem in the garret that plays on Legree's superstition and helps her and Emmeline slip away\", \"note\": \"\"},\n  {\"sentence\": 23, \"status\": \"present\", \"evidence\": \"Tom will not betray them even under savage beating...a vision of Christ in the shed...One crowned with thorns, buffeted and bleeding\", \"note\": \"\"},\n  {\"sentence\": 24, \"status\": \"present\", \"evidence\": \"Legree smote his victim to the ground...Tom opened his eyes...'Ye poor miserable critter!...I forgive ye, with all my soul!' He fainted away\", \"note\": \"\"},\n  {\"sentence\": 25, \"status\": \"present\", \"evidence\": \"a young man drove a light wagon up the avenue...It was George Shelby...he knelt beside the dying Tom\", \"note\": \"\"},\n  {\"sentence\": 26, \"status\": \"present\", \"evidence\": \"George buried Tom...About a month after...he appeared with a bundle of papers, and read successively a certificate of freedom to every one on the place...Think of your freedom, every time you see UNCLE TOM'S CABIN\", \"note\": \"\"},\n  {\"sentence\": 27, \"status\": \"present\", \"evidence\": \"At womanhood...she was approved as a missionary to a station in Africa; and we have heard that the same ingenuity which, when a child, made her multiform and restless, is now employed in teaching the children of her own country\", \"note\": \"\"},\n  {\"sentence\": 28, \"status\": \"present\", \"evidence\": \"Madame de Thoux threw her arms round George's neck...'I'm your sister Emily.' Cassy...little Eliza suddenly appeared before her in exact shape and curl as her own child\", \"note\": \"\"},\n  {\"sentence\": 29, \"status\": \"present\", \"evidence\": \"George's letter...articulates a vision for an African nationality...the family sails there in the hope of building a free homeland\", \"note\": \"\"},\n  {\"sentence\": 30, \"status\": \"present\", \"evidence\": \"the same cross that sanctified Eva's room and Tom's shed can turn bondage into witness, despair into resolve, and death into life\", \"note\": \"\"},\n  {\"sentence\": 31, \"status\": \"present\", \"evidence\": \"Uncle Tom's Cabin moves from parlors to steamboats, from Quaker kitchens to swamps, revealing how slavery corrodes masters and rends families\", \"note\": \"\"},\n  {\"sentence\": 32, \"status\": \"present\", \"evidence\": \"the night flight across the ice...the child-angel's farewell...the ghostly garret...the old man's forgiveness\", \"note\": \"\"},\n  {\"sentence\": 33, \"status\": \"present\", \"evidence\": \"Christian love is its throughline...in refusing to flog, in bending laws to shelter the oppressed\", \"note\": \"\"},\n  {\"sentence\": 34, \"status\": \"present\", \"evidence\": \"The law of the land may sanction buying souls...Stowe insists the moral universe bends toward justice under a God who counts every tear\", \"note\": \"\"},\n  {\"sentence\": 35, \"status\": \"present\", \"evidence\": \"some free, some teach, some sail to found a nation, and some, like George Shelby, free their neighbors and fight at home\", \"note\": \"\"},\n  {\"sentence\": 36, \"status\": \"present\", \"evidence\": \"The book leaves us where it began\u2014in a cabin\u2014but now it is a memorial, pointing to a life well lived and a cause still to be won\", \"note\": \"\"}\n]\n```",
+    "input_tokens": 168853,
+    "output_tokens": 2098,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 47.79644799232483,
+    "stop_reason": "end_turn"
+  }
+}

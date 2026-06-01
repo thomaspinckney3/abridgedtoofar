@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:14:35",
+  "key": "60eb45868515c2327466e724887f2fc1",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "Scanning both draft chapters carefully against the structural coherence tests.\n\n**Ch 042 draft** \u2014 The draft is a clean compression of the source. George Shelby is introduced and tracked throughout; Legree, Tom, Cassy, and Emmeline are all established or carried from prior chapters. No mid-scene jumps, no dangling pronouns without antecedents in the draft, no broken pivots. The \"fatal night\" reference is used internally in the same chapter where Tom's condition is described, which provides sufficient local context. No unglossed minor proper names from the authorized list appear.\n\n**Ch 044 draft** \u2014 The chapter-opening summary paragraph (carried over as a header/summary) establishes Cassy, Emmeline, George Shelby, Madame de Thoux, and the riverboat meeting. The rest of the draft tracks cleanly. Cassy and Madame de Thoux are named with roles established in the opening summary. George Harris's household in Montreal is set up before the scene begins. \"Emmeline\" appears at \"whither they sailed, carrying Emmeline with them\" \u2014 she was established in the opening summary paragraph as Cassy's companion. Cassy's \"own daughter\" is mentioned after \"little Eliza\" is identified as Cassy's lost child, and the distinction between the two is parseable from context. The P.S. about \"Cassy's son\" is new but Cassy is well-established throughout the chapter.\n\nNo structural coherence failures found in either draft.\n\n```json\n[]\n```",
+    "input_tokens": 16635,
+    "output_tokens": 351,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 9.794413089752197,
+    "stop_reason": "end_turn"
+  }
+}

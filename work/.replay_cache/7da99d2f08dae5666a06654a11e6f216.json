@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T19:29:13",
+  "key": "7da99d2f08dae5666a06654a11e6f216",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I'll work through each draft chapter carefully, applying the gate test and checking each of the seven structural failure classes.\n\n---\n\n**Ch 045 draft \u2014 systematic check**\n\n- \"over which Aunt Chloe, Tom's wife, presided\" \u2014 gloss is present; no issue.\n- The money scene: \"the money, of which Chloe was so proud, still lay on the table\" \u2014 the draft never established that Chloe was proud of the money or what the money was. In the source, there is a prior scene where Chloe explains the bills her wages were paid in, her insistence on keeping them to show her husband, Mrs. Shelby humoring her, etc. In the draft, this setup was cut entirely. The phrase \"of which Chloe was so proud\" is a dangling relative whose referent has no antecedent in the draft. A reader has not been told what this money is, where it came from, or why Chloe is proud of it. This fails test 4 (missing definitional gloss) and also test 2 (the demonstrative referent \"of which Chloe was so proud\" points to something never introduced). A reader would genuinely be confused: whose money? earned how? why proud?\n- The rest of Ch 045 parses cleanly.\n\n**Ch 046 draft \u2014 systematic check**\n\n- \"The story of 'old Prue' fell under the observation of her brother\" \u2014 \"old Prue\" is named but the authorized subplot removal covers her (Prue the bakery woman, Ch 020). This is an authorized cut residue; not a finding.\n- \"Hon. Horace Mann, counsel for the defendants\" \u2014 this is a historical figure introduced with a role identifier; fine.\n- \"Nathan, in your place\u2026\" \u2014 Nathan is named mid-dialogue. Is he introduced? In the draft: \"a young southern gentleman, in Cincinnati with a favorite servant who had waited on him from a boy, lost the man to a Quaker's protection\u2026He said, 'If, to my face, he says it is his desire to be free, I will liberate him.' He asked, had he ever cause to complain?\" Then Nathan speaks. The name \"Nathan\" appears for the first time only in the young master's reply: \"Nathan, in your place, I think I should feel very much so, myself.\" The servant is referred to only as \"a favorite servant\" and \"the man\" before this. The name arrives in the master's mouth without ever having been given to the reader as the servant's name. This is a minor/removable character whose proper name appears without local introduction \u2014 test 7. A reader would not know who Nathan is; the name appears as if it had been introduced earlier, but it was not.\n- \"Pennington among clergymen, and Douglass and Ward among editors\" \u2014 these are historical public figures cited by name in a list; the source also names them without gloss. Not a structural failure.\n- Professor C. E. Stowe is named with his role identifier (\"Professor C. E. Stowe\"). Fine.\n- The rest of Ch 046 parses cleanly.\n\n---\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"In the supper-room the money, of which Chloe was so proud, still lay on the table.\",\n    \"source_has\": \"Source establishes a full prior scene: Chloe insists the very bills in which her wages were paid be preserved to show her husband as proof of her capability; Mrs. Shelby consents; only then does the money reappear on the table after Tom's death is announced.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft never told us what this money is, where it came from, or why Chloe is proud of it, so 'of which Chloe was so proud' is an unexplained dangling characterisation that leaves the scene's emotional pivot unmotivated.\"\n  },\n  {\n    \"valid\": true,\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"\\\"Nathan, in your place, I think I should feel very much so, myself. You are free.\\\"\",\n    \"source_has\": \"Source introduces the servant's name earlier in the same anecdote: 'An interview was forthwith procured, and Nathan was asked by his young master\u2026' \u2014 giving the name before the master addresses him by it.\",\n    \"gate_test_answer\": \"A reader is genuinely confused: the draft refers to the servant only as 'a favorite servant' and 'the man' throughout the anecdote, and the name Nathan materialises for the first time inside the master's direct address, with no prior attribution, leaving the reader unable to identify who is being spoken to.\"\n  }\n]\n```",
+    "input_tokens": 12901,
+    "output_tokens": 1136,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 27.456049919128418,
+    "stop_reason": "end_turn"
+  }
+}

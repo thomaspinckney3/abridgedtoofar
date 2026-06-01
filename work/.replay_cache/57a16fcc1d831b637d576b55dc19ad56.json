@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T00:31:55",
+  "key": "57a16fcc1d831b637d576b55dc19ad56",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through each chapter draft carefully, applying only the seven structural tests and the gate test.\n\n---\n\n**Ch 022 draft \u2014 \"the prediction of the squaw Tistig\"**\n\nThe draft lists \"the prediction of the squaw Tistig\" among the narrator's accumulating anxieties. In the source, this reference appears in the same list and is equally unexplained there \u2014 it is a dangling allusion in the source too, pointing to something mentioned even earlier in the novel (Ch 016). The draft has not cut any material from *this* chapter that established Tistig; the reference simply survives from a prior chapter. A reader of the abridgment who hasn't encountered Tistig in an earlier chapter would be confused, but that confusion, if it exists, originates before Ch 021\u2013022 and is not a structural damage introduced by compression of *these* two chapters. Not a valid finding here.\n\n**Ch 022 draft \u2014 \"_He's_ got enough\u2026\"**\n\nThe italicised pronoun *he* is used with no antecedent yet established in the conversation. But this is true in the source as well \u2014 it is the stranger's deliberately cryptic usage, and the mystery is resolved two exchanges later (\"Captain Ahab\"). The draft preserves the exchange intact. Not a finding.\n\n**Ch 022 draft \u2014 \"Anything down there about your souls?\" / \"About what?\"**\n\nThe exchange is preserved and parses correctly. Not a finding.\n\n**Ch 021 draft \u2014 \"thou beliest thine own heart, Peleg\" (cut from draft)**\n\nThe source has Bildad say \"Thou beliest thine own heart, Peleg\" as part of his speech. The draft cut this. No residual dangling reference results.\n\n**Ch 021 \u2014 Peleg's remark about Nat Swaine**\n\nThe source has Peleg tell a story about \"young Nat Swaine\" to justify his view on pious harpooneers. The draft cuts this passage entirely and goes directly to Bildad's reply (\"Peleg! Peleg!\"). Bildad's reply in both source and draft begins by addressing Peleg's general point, so no structural damage results from dropping the Swaine example; Bildad's words still follow coherently from Peleg's shortened speech in the draft.\n\n**Ch 021 \u2014 \"Quick, Bildad \u2026 who, aghast at the close vicinity of the flying harpoon, had retreated towards the cabin gangway\"**\n\nThe draft cuts the parenthetical explaining why Bildad had retreated. The draft reads: `\"Quick, Bildad,\" said Peleg, \"get the ship's papers.\"` The source's parenthetical (`his partner, who, aghast at the close vicinity of the flying harpoon, had retreated towards the cabin gangway`) is an explanatory flourish. Without it, the command still parses. Not a structural finding.\n\n**Ch 021 \u2014 \"But Queequeg, looking no ways abashed, took the offered pen\u2026\"**\n\nSource: \"But at this question, Queequeg, who had twice or thrice before taken part in similar ceremonies, looked no ways abashed; but taking the offered pen\u2026\" Draft: \"But Queequeg, looking no ways abashed, took the offered pen\u2026\" The relative clause explaining *why* he was unabashed is cut, but the matrix sentence parses. Not a structural finding.\n\n**Ch 022 \u2014 \"What did they _tell_ you about him? Only that he's a good whale-hunter?\"**\n\nIn the source the stranger asks \"What did they tell you about him?\" and then waits for Ishmael's answer before proceeding. The draft collapses this into a single rhetorical question by the stranger: \"What did they _tell_ you about him? Only that he's a good whale-hunter? But nothing about that thing\u2026\" The source's interposed exchange (Ishmael: \"They didn't tell much\u2026a good captain to his crew.\" / Stranger: \"That's true\u2026\") is cut. The draft stranger now answers his own question without Ishmael's response, making the stranger's follow-up (\"But nothing about that thing\u2026\") a broken pivot \u2014 it contrasts with Ishmael's answer, which has been removed. However, re-reading the draft: the stranger's \"Only that he's a good whale-hunter?\" functions as a rhetorical summary of what the stranger assumes Ishmael was told, and then \"But nothing about\u2026\" contrasts with that rhetorical summary \u2014 not with a cut interlocutor turn. A competent reader would read this as the stranger answering his own question rhetorically. This is a compression that works without structural damage. Not a valid finding.\n\n---\n\nAfter exhaustive review, I find no instance where the draft sentence fails any of the seven structural tests in a way that would genuinely confuse a competent reader with no source access. The compression is consistently clean at the structural level.\n\n```json\n[]\n```",
+    "input_tokens": 8758,
+    "output_tokens": 1133,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 26.372907161712646,
+    "stop_reason": "end_turn"
+  }
+}

@@ -1,0 +1,685 @@
+{
+  "title": "The Great Gatsby — Opening Adaptation (Ch. 1, pp. 1-4)",
+  "adaptation_scope": "Opening of Chapter 1: Nick's framing voice, his move East, and his arrival at West Egg next to Gatsby's mansion.",
+  "pacing_strategy": {
+    "summary": "Compress Nick's reflective frame into one or two narrator-anchored beats, then move quickly into the concrete chronology: graduation/war, decision to come East, arrival at the bungalow, the lost-traveler encounter, settling in with books, and the reveal of Gatsby's mansion next door.",
+    "target_reader_experience": "Reader meets Nick as a wry, reserved narrator, then is grounded in a specific summer of 1922 on West Egg, ending with the looming presence of Gatsby's house.",
+    "compression_ratio": "aggressive",
+    "main_risks": [
+      "Losing Fitzgerald's voice if too much reflection is cut",
+      "Over-staging abstract reflection as literal imagery",
+      "Spending panel budget on essay rather than story-present action"
+    ]
+  },
+  "time_frames": [
+    {
+      "id": "tf_frame",
+      "label": "Narrator's present (retrospective frame)",
+      "chronological_position": "After events of the novel; Nick writing/reflecting",
+      "reader_cue": "First-person captions; older-Nick vantage",
+      "visual_cue": "Nick alone, writing or looking out, muted palette"
+    },
+    {
+      "id": "tf_backstory",
+      "label": "Pre-1922 backstory",
+      "chronological_position": "Childhood through Great War through return home",
+      "reader_cue": "Captions referencing father, Yale, war",
+      "visual_cue": "Brief flashback vignettes, sepia or desaturated"
+    },
+    {
+      "id": "tf_spring22",
+      "label": "Spring 1922 — arrival East",
+      "chronological_position": "Nick comes East to learn the bond business",
+      "reader_cue": "Train/arrival, bungalow",
+      "visual_cue": "Bright daylight, Long Island greenery"
+    },
+    {
+      "id": "tf_summer22",
+      "label": "Summer 1922 — settling at West Egg",
+      "chronological_position": "First weeks on West Egg",
+      "reader_cue": "Leaves, books, neighborhood orientation",
+      "visual_cue": "Lush summer light, contrasted scale of houses"
+    }
+  ],
+  "unit_treatments": [
+    {
+      "source_unit_id": 1,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "Father's advice as foundational memory",
+      "narrative_function": "Establishes narrator voice",
+      "preservation_reason": "Iconic opening line; defines Nick",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 2,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "The advice itself",
+      "narrative_function": "Core of Nick's ethic",
+      "preservation_reason": "Distinctive voice and theme",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 3,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_frame",
+      "subject": "Reserved communication with father",
+      "narrative_function": "Texture for father relationship",
+      "preservation_reason": "Supports tone",
+      "omit_or_compress_reason": "Can ride alongside the advice caption"
+    },
+    {
+      "source_unit_id": 4,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "Nick reserves judgment",
+      "narrative_function": "Names Nick's defining habit",
+      "preservation_reason": "Sets up his role as confidant-narrator",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 5,
+      "disposition": "omit",
+      "time_frame": "tf_frame",
+      "subject": "College accusation of being a politician",
+      "narrative_function": "Illustrative anecdote",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "rhetorical_texture; already implied by unit 4"
+    },
+    {
+      "source_unit_id": 6,
+      "disposition": "omit",
+      "time_frame": "tf_frame",
+      "subject": "Confidences of young men",
+      "narrative_function": "Elaboration on reserve",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "repetitive_reflection"
+    },
+    {
+      "source_unit_id": 7,
+      "disposition": "omit",
+      "time_frame": "tf_frame",
+      "subject": "Reserving judgment as hope",
+      "narrative_function": "Aphorism",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "rhetorical_texture"
+    },
+    {
+      "source_unit_id": 8,
+      "disposition": "omit",
+      "time_frame": "tf_frame",
+      "subject": "Snobbery about decencies",
+      "narrative_function": "Self-qualification",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "repetitive_reflection"
+    },
+    {
+      "source_unit_id": 9,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_frame",
+      "subject": "Limit to tolerance",
+      "narrative_function": "Turn toward post-East disillusion",
+      "preservation_reason": "Bridges to next beat",
+      "omit_or_compress_reason": "Short pivot; ride with unit 11"
+    },
+    {
+      "source_unit_id": 10,
+      "disposition": "omit",
+      "time_frame": "tf_frame",
+      "subject": "Conduct on rock or marsh",
+      "narrative_function": "Metaphor",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "rhetorical_texture; risk of unsupported imagery"
+    },
+    {
+      "source_unit_id": 11,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "Return from East, wanting moral order",
+      "narrative_function": "Frames whole story as retrospective",
+      "preservation_reason": "Establishes that the story is told after disillusion",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 12,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_frame",
+      "subject": "Gatsby alone exempt from Nick's scorn",
+      "narrative_function": "Names the title character and stakes",
+      "preservation_reason": "Critical introduction of Gatsby as subject",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 13,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "Gatsby's gorgeous responsiveness",
+      "narrative_function": "Characterizes Gatsby in absentia",
+      "preservation_reason": "Iconic voice; defines Gatsby's quality",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 14,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_frame",
+      "subject": "Gift for hope, romantic readiness",
+      "narrative_function": "Deepens Gatsby characterization",
+      "preservation_reason": "Distinctive phrase",
+      "omit_or_compress_reason": "Ride with 13 as caption"
+    },
+    {
+      "source_unit_id": 15,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_frame",
+      "subject": "Foul dust in wake of Gatsby's dreams",
+      "narrative_function": "Foreshadows tragedy",
+      "preservation_reason": "Thematic hook into the novel",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 16,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_backstory",
+      "subject": "Family prominence in Midwest",
+      "narrative_function": "Background",
+      "preservation_reason": "Light context",
+      "omit_or_compress_reason": "Caption alongside Yale/war"
+    },
+    {
+      "source_unit_id": 17,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_backstory",
+      "subject": "Yale 1915 and the Great War",
+      "narrative_function": "Biographical anchor",
+      "preservation_reason": "Concrete events in Nick's past",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 18,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_backstory",
+      "subject": "Returned restless from war",
+      "narrative_function": "Motivates move East",
+      "preservation_reason": "Causal link",
+      "omit_or_compress_reason": "Ride with war/decision beat"
+    },
+    {
+      "source_unit_id": 19,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_backstory",
+      "subject": "Decides to go East, learn bonds",
+      "narrative_function": "Inciting decision",
+      "preservation_reason": "Drives the plot eastward",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 20,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_spring22",
+      "subject": "Father finances, arrives spring 1922",
+      "narrative_function": "Establishes timeline",
+      "preservation_reason": "Date anchor",
+      "omit_or_compress_reason": "Caption with arrival"
+    },
+    {
+      "source_unit_id": 21,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_spring22",
+      "subject": "Plan to share a commuter-town house",
+      "narrative_function": "Explains the bungalow",
+      "preservation_reason": "Why he ends up in West Egg",
+      "omit_or_compress_reason": "Ride with bungalow beat"
+    },
+    {
+      "source_unit_id": 22,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_spring22",
+      "subject": "Co-renter ordered to Washington; Nick alone in bungalow",
+      "narrative_function": "Puts Nick alone at West Egg",
+      "preservation_reason": "Concrete setup of his living situation",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 23,
+      "disposition": "imply_visually",
+      "time_frame": "tf_spring22",
+      "subject": "Dog, Dodge, Finnish housekeeper",
+      "narrative_function": "Domestic texture",
+      "preservation_reason": "Color of his bachelor life",
+      "omit_or_compress_reason": "Background props rather than its own beat"
+    },
+    {
+      "source_unit_id": 24,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_spring22",
+      "subject": "A stranger stops Nick on the road",
+      "narrative_function": "Ends his loneliness; small encounter",
+      "preservation_reason": "Concrete human exchange",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 25,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_spring22",
+      "subject": "Asks the way to West Egg village",
+      "narrative_function": "Dialogue beat",
+      "preservation_reason": "Direct quote candidate",
+      "omit_or_compress_reason": "Combine with unit 24"
+    },
+    {
+      "source_unit_id": 26,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_spring22",
+      "subject": "Nick gives directions",
+      "narrative_function": "Tiny action",
+      "preservation_reason": "Completes exchange",
+      "omit_or_compress_reason": "Combine with 24-25"
+    },
+    {
+      "source_unit_id": 27,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_spring22",
+      "subject": "Lonely no longer",
+      "narrative_function": "Emotional shift",
+      "preservation_reason": "Caption riding the encounter",
+      "omit_or_compress_reason": "Caption only"
+    },
+    {
+      "source_unit_id": 28,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_spring22",
+      "subject": "A guide, a pathfinder, an original settler",
+      "narrative_function": "Voice and self-image",
+      "preservation_reason": "Distinctive phrase",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 29,
+      "disposition": "omit",
+      "time_frame": "tf_spring22",
+      "subject": "Freedom of the neighborhood",
+      "narrative_function": "Restatement",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "already_implied by units 27-28"
+    },
+    {
+      "source_unit_id": 30,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_summer22",
+      "subject": "Summer begins; life starting over",
+      "narrative_function": "Time transition into summer",
+      "preservation_reason": "Shifts season and mood",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 31,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "So much to read; health from the air",
+      "narrative_function": "Lead-in to books",
+      "preservation_reason": "Bridges to bond-book purchase",
+      "omit_or_compress_reason": "Caption with book panel"
+    },
+    {
+      "source_unit_id": 32,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_summer22",
+      "subject": "Buys volumes on banking and credit",
+      "narrative_function": "Shows ambitions, voice",
+      "preservation_reason": "Concrete object beat with iconic phrasing",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 33,
+      "disposition": "omit",
+      "time_frame": "tf_summer22",
+      "subject": "Literary at Yale; well-rounded man",
+      "narrative_function": "Reflective texture",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "low_plot_value; pace_cost_too_high"
+    },
+    {
+      "source_unit_id": 34,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "Strangest community in North America",
+      "narrative_function": "Turns to geography",
+      "preservation_reason": "Lead-in caption",
+      "omit_or_compress_reason": "Caption with West Egg reveal"
+    },
+    {
+      "source_unit_id": 35,
+      "disposition": "omit",
+      "time_frame": "tf_summer22",
+      "subject": "Slender riotous island east of NY",
+      "narrative_function": "Geographic setup",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "Can be implied visually by setting"
+    },
+    {
+      "source_unit_id": 36,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "Two enormous eggs on Long Island Sound",
+      "narrative_function": "Names the geography",
+      "preservation_reason": "Key place-name 'eggs'",
+      "omit_or_compress_reason": "Caption alongside Nick looking at the Sound"
+    },
+    {
+      "source_unit_id": 37,
+      "disposition": "omit",
+      "time_frame": "tf_summer22",
+      "subject": "Wingless dissimilarity",
+      "narrative_function": "Aside",
+      "preservation_reason": "",
+      "omit_or_compress_reason": "rhetorical_texture"
+    },
+    {
+      "source_unit_id": 38,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_summer22",
+      "subject": "Nick lives at less fashionable West Egg",
+      "narrative_function": "Places Nick socially and physically",
+      "preservation_reason": "Essential orientation",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 39,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "House at tip of egg, between two huge places",
+      "narrative_function": "Sets up Gatsby-mansion contrast",
+      "preservation_reason": "Spatial setup",
+      "omit_or_compress_reason": "Combine with mansion reveal"
+    },
+    {
+      "source_unit_id": 40,
+      "disposition": "keep_as_panel",
+      "time_frame": "tf_summer22",
+      "subject": "Colossal mansion next door — Hôtel de Ville imitation",
+      "narrative_function": "Visual reveal of the mansion",
+      "preservation_reason": "Iconic image of Gatsby's house",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 41,
+      "disposition": "keep_as_caption",
+      "time_frame": "tf_summer22",
+      "subject": "It was Gatsby's mansion",
+      "narrative_function": "Names the owner",
+      "preservation_reason": "Punchline of the reveal",
+      "omit_or_compress_reason": ""
+    },
+    {
+      "source_unit_id": 42,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "Nick doesn't yet know Gatsby personally",
+      "narrative_function": "Caveat — Gatsby still unmet",
+      "preservation_reason": "Sets up later meeting",
+      "omit_or_compress_reason": "Caption alongside reveal"
+    },
+    {
+      "source_unit_id": 43,
+      "disposition": "merge_into_adjacent_beat",
+      "time_frame": "tf_summer22",
+      "subject": "Nick's eyesore bungalow with a view; $80/mo",
+      "narrative_function": "Closes the orientation beat",
+      "preservation_reason": "Concrete contrast with mansion",
+      "omit_or_compress_reason": "Combine with mansion beat as closing caption"
+    }
+  ],
+  "graphic_beats": [
+    {
+      "beat_id": "b1_father_advice",
+      "source_unit_ids": [1, 2, 3, 4, 11, 12, 13, 14, 15],
+      "time_frame": "tf_frame",
+      "subject": "Nick as retrospective narrator introduces himself and Gatsby",
+      "driver_character": "Nick Carraway (narrator-present)",
+      "character_goal_or_state_change": "Establishes himself as the reserved storyteller and names Gatsby as his subject",
+      "physical_action_spine": "Older Nick sits writing/remembering; we see him recall his father speaking to him, then look up toward the idea of Gatsby",
+      "narrative_function": "Open the novel; install voice and thesis",
+      "essential_facts": [
+        "Father's advice shaped Nick",
+        "Nick reserves judgment",
+        "He returned from the East disillusioned",
+        "Only Gatsby was exempt from his scorn",
+        "Something in Gatsby's wake destroyed his interest in others' sorrows"
+      ],
+      "character_relationships": [
+        "Nick ↔ father (reserved, formative)",
+        "Nick ↔ Gatsby (admiring narrator, not yet acquainted in story-time)"
+      ],
+      "setting_or_orientation": "Indeterminate retrospective space — Nick's study or quiet room",
+      "caption_candidates": [
+        "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.",
+        "\"Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had.\"",
+        "I'm inclined to reserve all judgements.",
+        "When I came back from the East last autumn I wanted the world to be in uniform and at a sort of moral attention forever.",
+        "Only Gatsby was exempt from my reaction—Gatsby, who represented everything for which I have an unaffected scorn.",
+        "It was what preyed on Gatsby, what foul dust floated in the wake of his dreams, that closed out my interest in the abortive sorrows and short-winded elations of men."
+      ],
+      "visual_anchor": "Nick at a writing desk or window, faint inset of his father's silhouette speaking",
+      "visual_evidence": [
+        "Adult Nick alone, contemplative",
+        "Small inset of father figure speaking",
+        "An empty chair / suggestion of an absent Gatsby (not literal portrait yet)"
+      ],
+      "compression_guidance": "Use captions to carry voice; only one or two visual moments — Nick remembering, then thinking toward Gatsby. Do not literalize 'foul dust' as imagery.",
+      "storyboard_guidance": "Muted retrospective palette. Keep Gatsby unseen here — his name is introduced but not his face. Frame this as the narrator's bookend so readers know the story is told after the fact.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "b2_yale_war_decision",
+      "source_unit_ids": [16, 17, 18, 19, 20],
+      "time_frame": "tf_backstory",
+      "subject": "Nick's biographical pivot: Midwest, Yale, war, decision to go East",
+      "driver_character": "Younger Nick Carraway",
+      "character_goal_or_state_change": "From restless veteran to a man choosing to leave the Midwest and learn the bond business in the East",
+      "physical_action_spine": "Younger Nick is shown graduating, then in uniform during the war, then deciding and packing/boarding for the East",
+      "narrative_function": "Carry Nick into story-present Long Island",
+      "essential_facts": [
+        "Prominent Midwestern family",
+        "Yale class of 1915",
+        "Served in the Great War",
+        "Came back restless",
+        "Decided to go East to learn bonds",
+        "Father financed him; arrived spring 1922"
+      ],
+      "character_relationships": [
+        "Nick ↔ father (financial support)",
+        "Nick ↔ Midwest (rejected as 'ragged edge')"
+      ],
+      "setting_or_orientation": "Compressed vignette across Midwest → war front → eastbound travel",
+      "caption_candidates": [
+        "I graduated from New Haven in 1915, and later took part in that delayed Teutonic migration known as the Great War.",
+        "I came back restless.",
+        "I decided to go East and learn the bond business.",
+        "I came East, permanently, I thought, in the spring of twenty-two."
+      ],
+      "visual_anchor": "Young Nick in uniform, then in a suit with a suitcase",
+      "visual_evidence": [
+        "Yale diploma or commencement silhouette",
+        "WWI-era American uniform",
+        "Suitcase, eastbound train or platform"
+      ],
+      "compression_guidance": "Three quick images max; bridge with captions. Treat as a montage but anchor on Nick's own actions, not just objects.",
+      "storyboard_guidance": "Period accuracy: 1915 Yale, AEF uniform, 1922 dress. Keep his face consistent so readers recognize him across the time jump.",
+      "pacing_priority": "high"
+    },
+    {
+      "beat_id": "b3_bungalow_and_stranger",
+      "source_unit_ids": [21, 22, 23, 24, 25, 26, 27, 28],
+      "time_frame": "tf_spring22",
+      "subject": "Nick alone at the West Egg bungalow; a lost stranger gives him a sense of belonging",
+      "driver_character": "Nick Carraway",
+      "character_goal_or_state_change": "From isolated newcomer to feeling like 'an original settler' of the neighborhood",
+      "physical_action_spine": "Nick stands outside his weather-beaten bungalow; on a road nearby a stranger stops him and asks for directions, and Nick points the way",
+      "narrative_function": "Ground Nick physically in West Egg and shift his emotional state",
+      "essential_facts": [
+        "Plan to share a house with a coworker fell through",
+        "Coworker sent to Washington; Nick lives alone",
+        "He has a Dodge and a Finnish housekeeper (briefly a dog)",
+        "A stranger asks the way to West Egg village",
+        "Nick gives directions and stops feeling lonely"
+      ],
+      "character_relationships": [
+        "Nick ↔ absent housemate (left for Washington)",
+        "Nick ↔ Finnish housekeeper (domestic background)",
+        "Nick ↔ stranger (fleeting human contact)"
+      ],
+      "setting_or_orientation": "Weather-beaten bungalow on a quiet West Egg road, spring/early summer",
+      "caption_candidates": [
+        "He found the house, a weather-beaten cardboard bungalow at eighty a month — and I went out to the country alone.",
+        "\"How do you get to West Egg village?\" he asked helplessly.",
+        "And as I walked on I was lonely no longer. I was a guide, a pathfinder, an original settler."
+      ],
+      "visual_anchor": "Nick on a country road pointing the way for a stranger, with the small bungalow visible behind him",
+      "visual_evidence": [
+        "Small weather-beaten bungalow",
+        "Old Dodge automobile",
+        "Finnish housekeeper at a stove (background, optional)",
+        "A stranger on the road, hat in hand"
+      ],
+      "compression_guidance": "Combine the housekeeper/dog/car as background texture rather than its own beat. Let the encounter on the road carry the emotional turn.",
+      "storyboard_guidance": "Spring sunlight, lonely composition first, then a more open horizon after the exchange. Do not include the dog as a present character (he ran away early).",
+      "pacing_priority": "medium"
+    },
+    {
+      "beat_id": "b4_summer_books_west_egg_gatsby_reveal",
+      "source_unit_ids": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+      "time_frame": "tf_summer22",
+      "subject": "Summer arrives; Nick studies for his new career and discovers his neighbor is Gatsby",
+      "driver_character": "Nick Carraway",
+      "character_goal_or_state_change": "From hopeful student of bonds to a man placed beside, but not yet acquainted with, Gatsby",
+      "physical_action_spine": "Nick reads his stack of new finance books on his porch, then walks out and looks up at the colossal mansion that dwarfs his bungalow next door",
+      "narrative_function": "Final orientation: place Nick on West Egg directly beside Gatsby's mansion",
+      "essential_facts": [
+        "Summer arrives with full leaves",
+        "He buys a dozen volumes on banking, credit, investment securities",
+        "He lives on West Egg, the less fashionable of two 'eggs' on Long Island Sound",
+        "His small house sits between two huge properties",
+        "The mansion to his right is a Norman-style colossus with tower, marble pool, 40+ acres",
+        "It belongs to a Mr. Gatsby, whom Nick has not yet met",
+        "His own bungalow is an eyesore but cheap and has a view"
+      ],
+      "character_relationships": [
+        "Nick ↔ Gatsby (physically adjacent, socially unknown)",
+        "Nick ↔ West Egg (newcomer in less fashionable half)"
+      ],
+      "setting_or_orientation": "West Egg, Long Island, summer 1922; bungalow tip-of-the-egg with mansion next door and Sound beyond",
+      "caption_candidates": [
+        "Life was beginning over again with the summer.",
+        "I bought a dozen volumes on banking and credit and investment securities… promising to unfold the shining secrets that only Midas and Morgan and Maecenas knew.",
+        "I lived at West Egg, the — well, the less fashionable of the two.",
+        "It was Gatsby's mansion. Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name.",
+        "My own house was an eyesore, but it was a small eyesore… all for eighty dollars a month."
+      ],
+      "visual_anchor": "Wide view: Nick small in foreground beside his modest bungalow, the enormous Norman mansion looming to one side, the Sound glittering beyond",
+      "visual_evidence": [
+        "Stack of red-and-gold finance books",
+        "Leafy summer trees",
+        "Modest bungalow",
+        "Colossal Norman-style mansion with tower, ivy, marble pool, vast lawn",
+        "Long Island Sound in the background"
+      ],
+      "compression_guidance": "Skip the wingless/island-shape asides; let the visual reveal of the two houses side by side carry the geography. End the sequence on the named reveal: 'It was Gatsby's mansion.'",
+      "storyboard_guidance": "Build to the mansion reveal as the closing image of the opening. Optional small map inset of the two eggs may support orientation but must not be the main spine. Do not show Gatsby himself.",
+      "pacing_priority": "high"
+    }
+  ],
+  "omitted_units": [
+    {
+      "source_unit_id": 5,
+      "reason": "rhetorical_texture",
+      "safe_because": "The 'politician' anecdote restates Nick's reserve already conveyed by unit 4."
+    },
+    {
+      "source_unit_id": 6,
+      "reason": "repetitive_reflection",
+      "safe_because": "Elaborates the same trait of reserve without advancing action."
+    },
+    {
+      "source_unit_id": 7,
+      "reason": "rhetorical_texture",
+      "safe_because": "Aphoristic restatement; its sense is folded into kept captions."
+    },
+    {
+      "source_unit_id": 8,
+      "reason": "repetitive_reflection",
+      "safe_because": "Self-qualification that doesn't change Nick's stance or any event."
+    },
+    {
+      "source_unit_id": 10,
+      "reason": "rhetorical_texture",
+      "safe_because": "Abstract metaphor; staging would invent unsupported imagery."
+    },
+    {
+      "source_unit_id": 29,
+      "reason": "already_implied",
+      "safe_because": "'Freedom of the neighborhood' restates units 27-28 kept as caption."
+    },
+    {
+      "source_unit_id": 33,
+      "reason": "low_plot_value",
+      "safe_because": "Yale News and 'well-rounded man' aside doesn't drive any subsequent action."
+    },
+    {
+      "source_unit_id": 35,
+      "reason": "rhetorical_texture",
+      "safe_because": "Geography is conveyed by the kept caption naming West Egg and by setting visuals."
+    },
+    {
+      "source_unit_id": 37,
+      "reason": "rhetorical_texture",
+      "safe_because": "Wingless-observer aside adds no story content."
+    }
+  ],
+  "continuity_requirements": [
+    {
+      "type": "character",
+      "name": "Nick Carraway",
+      "requirement": "Must read as both an older retrospective narrator (frame) and a younger 1922 newcomer (story-present). Keep facial features consistent across ages; use palette/lighting to mark the frame."
+    },
+    {
+      "type": "character",
+      "name": "Jay Gatsby",
+      "requirement": "Named and thematically central but never shown on-page in this opening. Reserve his first visual appearance for later chapters."
+    },
+    {
+      "type": "place",
+      "name": "West Egg bungalow",
+      "requirement": "Small, weather-beaten, sandwiched between two huge estates; must be visually consistent whenever revisited."
+    },
+    {
+      "type": "place",
+      "name": "Gatsby's mansion",
+      "requirement": "Colossal Normandy-style imitation with tower, raw ivy, marble pool, vast lawn — establish silhouette here for later recognition."
+    },
+    {
+      "type": "place",
+      "name": "Long Island Sound / the two Eggs",
+      "requirement": "Orient reader that Nick lives on West Egg (less fashionable) facing the Sound; East Egg implied across the bay."
+    },
+    {
+      "type": "time_frame",
+      "name": "Spring/Summer 1922",
+      "requirement": "Story-present begins spring 1922 and transitions into summer within this opening."
+    },
+    {
+      "type": "theme",
+      "name": "Reserved narrator / withheld judgment",
+      "requirement": "Caption voice should remain measured, reflective, and slightly ironic to match Fitzgerald's narration."
+    }
+  ],
+  "storyboard_instructions": [
+    "Treat this excerpt as the opening 4 pages, roughly one graphic beat per page.",
+    "Page 1: Frame/voice (beat b1). Lean on captions; minimal action; do not show Gatsby's face.",
+    "Page 2: Backstory montage to arrival (beat b2). Compress Yale → war → eastbound move into a tight sequence of Nick-centered images.",
+    "Page 3: Arrival at the bungalow and the lost-stranger encounter (beat b3). Move from isolation to a flicker of belonging.",
+    "Page 4: Summer, books, and the mansion reveal (beat b4). End the opening on the wide shot of Nick's small house dwarfed by Gatsby's mansion, with the caption 'It was Gatsby's mansion.'",
+    "Do not literalize abstract metaphors ('foul dust,' 'hard rock or wet marshes,' earthquake machines). Keep them as captions only if kept at all.",
+    "Maintain a clear palette/lighting distinction between retrospective frame (cooler, muted) and story-present 1922 (warmer, fuller color)."
+  ]
+}

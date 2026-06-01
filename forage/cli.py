@@ -18,12 +18,17 @@ from .chapter_split import split_to_disk
 from .critics import run_critic
 from .drafter import draft_all, draft_segment, ensure_chapters
 from .book_critic import run_book_critic
+from .cache_audit import (audit_book_cache, audit_replay_cache_files,
+                          summarize_stage_verdicts)
 from .chapter_classifier import classify_chapters
 from .coherence import run_coherence
+from .coherence_adjudicate import run_coherence_adjudication
+from .coherence_fix import run_coherence_fixes
 from .cuts import generate_cuts
 from .iterate import iterate_segment
 from .lean_plan import build_lean_plan
 from .llm import set_stream_sink
+from .name_lint import run_name_lint
 from .report import (COLUMNS, available_books, build_report, format_row)
 from .summarizer import summarize_book
 from .prepass import run_prepass
@@ -543,10 +548,10 @@ def _render_signature_diff(segment_id: str, diff: dict) -> None:
 
 @app.command()
 def assemble(book_id: str) -> None:
-    """Concatenate drafted segments into abridgment.md and write
-    assembly_report.json with budget stats. Always emits; budget adherence
-    is reported (overage %, over_target, over_ceiling flags) but does not
-    gate output."""
+    """Concatenate drafted segments into final book artifacts and write
+    assembly_report.json with budget stats. Always emits when content exists;
+    budget adherence is reported (overage %, over_target, over_ceiling flags)
+    but does not gate output."""
     book = load_book(book_id)
     plan_path = book.work_dir / "plan.json"
     if not plan_path.exists():
@@ -561,7 +566,8 @@ def _render_assembly(r) -> None:
     status = ("[red]OVER CEILING[/red]" if r.over_ceiling
               else "[yellow]OVER TARGET[/yellow]" if r.over_budget
               else "[green]WITHIN BUDGET[/green]")
-    # Status is informational only now; abridgment.md is always emitted.
+    # Status is informational only now; final artifacts are emitted whenever
+    # drafted content exists.
     summary = Table.grid(padding=(0, 1))
     summary.add_column(style="dim")
     summary.add_column()
@@ -576,6 +582,10 @@ def _render_assembly(r) -> None:
     summary.add_row("segments_drafted", f"{r.segments_drafted}/{r.segments_total}")
     summary.add_row("segments_cut", f"{r.segments_cut}")
     summary.add_row("segments_missing", f"{r.segments_missing}")
+    if getattr(r, "plain_text_path", None):
+        summary.add_row("plain_text", str(r.plain_text_path))
+    if getattr(r, "published_plain_text_path", None):
+        summary.add_row("published_text", str(r.published_plain_text_path))
     console.print(Panel(summary, title="assembly"))
 
     if r.segments_missing or r.total_drafted > r.book_target:
@@ -705,6 +715,57 @@ def cuts(
         console.print(t)
 
 
+@app.command(name="name-lint")
+def name_lint_cmd(
+    book_id: str,
+    long_gap_segments: int = typer.Option(
+        2,
+        help="Require a fresh local gloss after more than this many segments."),
+    long_gap_words: int = typer.Option(
+        2500,
+        help="Require a fresh local gloss after more than this many words."),
+) -> None:
+    """Mechanically flag minor/cut proper names whose first surviving mention
+    or long-gap re-entry lacks a local role/relationship gloss. Writes
+    work/<book>/name_lint_report.json.
+    """
+    book = load_book(book_id)
+    report = run_name_lint(
+        book,
+        long_gap_segments=long_gap_segments,
+        long_gap_words=long_gap_words,
+    )
+    console.rule(f"[bold]name-lint: {report['findings_total']} findings[/bold]")
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim")
+    tally.add_column()
+    tally.add_row("segments_checked", str(report["segments_checked"]))
+    tally.add_row("names_checked", str(report["names_checked"]))
+    tally.add_row("aliases_checked", str(report["aliases_checked"]))
+    tally.add_row("long_gap_segments", str(report["long_gap_segments"]))
+    tally.add_row("long_gap_words", str(report["long_gap_words"]))
+    console.print(Panel(tally, title="counts"))
+    if not report["findings"]:
+        console.print("[green]no orphaned minor-character names detected[/green]")
+        return
+
+    table = Table(show_lines=True)
+    table.add_column("seg")
+    table.add_column("line", justify="right")
+    table.add_column("name")
+    table.add_column("type", width=16)
+    table.add_column("passage", max_width=80)
+    for finding in report["findings"]:
+        table.add_row(
+            str(finding.get("segment_id", "?")),
+            str(finding.get("line", "?")),
+            str(finding.get("alias") or finding.get("name") or "?"),
+            str(finding.get("occurrence_type", "")),
+            str(finding.get("draft_passage", ""))[:220],
+        )
+    console.print(table)
+
+
 @app.command(name="prepare-skips")
 def prepare_skips_cmd(book_id: str) -> None:
     """Apply cuts.json's `skippable_chapters` directives to the source.
@@ -766,10 +827,16 @@ def coherence(
     tally.add_column(style="dim"); tally.add_column()
     tally.add_row("pairs_checked", str(report["pairs_checked"]))
     tally.add_row("findings_total", str(report["findings_total"]))
+    if report.get("findings_invalid"):
+        tally.add_row("findings_invalid", str(report["findings_invalid"]))
+    raw_total = report.get("findings_raw_total", report["findings_total"])
+    if raw_total != report.get("findings_total"):
+        tally.add_row("findings_raw_total", str(raw_total))
     for k, v in report["class_counts"].items():
         tally.add_row(k, str(v))
     console.print(Panel(tally, title="counts"))
-    if not report["findings"]:
+    valid_findings = [f for f in report["findings"] if f.get("valid", True)]
+    if not valid_findings:
         console.print("[green]no structural coherence damage detected[/green]")
         return
     t = Table(show_lines=True)
@@ -777,12 +844,288 @@ def coherence(
     t.add_column("class", width=22)
     t.add_column("draft passage (trunc)", max_width=60)
     t.add_column("source context (trunc)", max_width=60)
-    for f in report["findings"]:
+    for f in valid_findings:
         t.add_row(
             str(f.get("segment_id", "?")),
             f.get("class", ""),
             (f.get("draft_passage") or "")[:120],
             (f.get("source_has") or "")[:120],
+        )
+    console.print(t)
+
+
+@app.command(name="coherence-adjudicate")
+def coherence_adjudicate(
+    book_id: str,
+    include_low_confidence: bool = typer.Option(
+        False,
+        "--include-low-confidence",
+        help="Mark low-confidence valid findings as repair candidates."),
+) -> None:
+    """Filter coherence_report.json into repair-ready findings.
+
+    Writes work/<book>/coherence_adjudication_report.json. This stage rejects
+    stale findings, duplicates, and mechanically unsupported claims before
+    coherence-fix consumes the report.
+    """
+    book = load_book(book_id)
+    report = run_coherence_adjudication(
+        book,
+        include_low_confidence=include_low_confidence,
+    )
+    console.rule(f"[bold]coherence-adjudicate: {report['book_id']}[/bold]")
+
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim")
+    tally.add_column()
+    tally.add_row("findings seen", str(report["findings_seen"]))
+    tally.add_row("valid findings", str(report["valid_findings"]))
+    tally.add_row("repair candidates", str(report["repair_candidates"]))
+    for key, value in report.get("verdict_counts", {}).items():
+        tally.add_row(key, str(value))
+    console.print(Panel(tally, title="adjudication"))
+
+    candidates = [f for f in report["findings"] if f.get("repair_candidate")]
+    if not candidates:
+        console.print("[green]no repair candidates after adjudication[/green]")
+        return
+
+    t = Table(title="repair candidates", show_lines=False)
+    t.add_column("pair")
+    t.add_column("seg")
+    t.add_column("class", width=18)
+    t.add_column("priority", width=8)
+    t.add_column("reason", max_width=34)
+    t.add_column("draft passage", max_width=70)
+    for f in candidates:
+        adj = f.get("adjudication", {})
+        t.add_row(
+            str(f.get("pair", "")),
+            str(f.get("segment_id", "")),
+            str(f.get("class", "")),
+            str(adj.get("repair_priority", "")),
+            str(adj.get("reason", "")),
+            (f.get("draft_passage") or "")[:140],
+        )
+    console.print(t)
+
+
+@app.command(name="coherence-fix")
+def coherence_fix(
+    book_id: str,
+    pair: list[str] = typer.Option([], "--pair", "-p",
+                                   help="Only process these pairs (format NNN-NNN). "
+                                        "Repeatable."),
+    all_findings: bool = typer.Option(
+        True,
+        "--all-findings/--selected-pairs",
+        help="Process all findings from coherence_report.json (default). "
+             "Use --selected-pairs to restrict to --pair entries.",
+    ),
+    segment: str = typer.Option(None, "--segment", "-s",
+                               help="Only process findings for this segment id "
+                                    "across both neighboring chapters."),
+    include_name_lint: bool = typer.Option(
+        False,
+        "--include-name-lint",
+        help="Merge deterministic name-lint findings into coherence-fix input."),
+    name_lint_only: bool = typer.Option(
+        False,
+        "--name-lint-only",
+        help="Repair only deterministic name-lint findings."),
+    use_adjudication: bool = typer.Option(
+        False,
+        "--use-adjudication",
+        help="Consume coherence_adjudication_report.json repair candidates instead of raw coherence_report.json findings."),
+    max_retries: int = typer.Option(1, help="Max repair retries on parse/validation errors."),
+    dry_run: bool = typer.Option(False, "--dry-run",
+                                help="Render repair plan without writing drafts."),
+) -> None:
+    """Apply coherence findings by doing constrained local repairs on target pairs.
+    Writes revised drafts to segments/NNN.md for successful findings.
+    """
+    book = load_book(book_id)
+    if name_lint_only:
+        include_name_lint = True
+    if not all_findings and not pair and not name_lint_only:
+        raise typer.BadParameter("selected-pairs mode requires at least one --pair")
+    report = run_coherence_fixes(
+        book,
+        all_findings=all_findings,
+        pairs=pair or None,
+        segment=segment,
+        include_name_lint=include_name_lint,
+        name_lint_only=name_lint_only,
+        use_adjudication=use_adjudication,
+        max_retries=max_retries,
+        dry_run=dry_run,
+    )
+
+    console.rule(f"[bold]coherence-fix: {report['book_id']}[/bold]")
+
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim")
+    tally.add_column()
+    tally.add_row("findings seen", str(report.get("findings_seen", 0)))
+    tally.add_row("findings selected", str(report.get("findings_selected", 0)))
+    tally.add_row("findings filtered", str(report.get("findings_filtered", 0)))
+    if report.get("include_name_lint"):
+        tally.add_row("name-lint seen", str(report.get("name_lint_findings_seen", 0)))
+        tally.add_row("name-lint mapped", str(report.get("name_lint_findings_mapped", 0)))
+    if report.get("use_adjudication"):
+        tally.add_row("adjudication seen", str(report.get("adjudication_findings_seen", 0)))
+        tally.add_row("adjudication candidates", str(report.get("adjudication_repair_candidates", 0)))
+    tally.add_row("pairs processed", str(report["pairs_processed"]))
+    tally.add_row("pairs applied", str(report["pairs_applied"]))
+    tally.add_row("pairs no-change", str(report["pairs_no_change"]))
+    tally.add_row("pairs rejected", str(report.get("pairs_rejected", 0)))
+    tally.add_row("pairs failed", str(report["pairs_failed"]))
+    tally.add_row("pairs no findings", str(report["pairs_no_findings"]))
+    console.print(Panel(tally, title="coherence-fix summary"))
+    if not report["pairs"]:
+        console.print("[yellow]no pairs found for requested scope[/yellow]")
+        return
+
+    t = Table(title="pairs", show_lines=False)
+    t.add_column("pair")
+    t.add_column("status", width=12)
+    t.add_column("findings", justify="right")
+    t.add_column("changed", max_width=28)
+    t.add_column("attempts", justify="right")
+    for p in report["pairs"]:
+        changed = ", ".join(p.get("changed_segments", []))
+        t.add_row(
+            p["pair"],
+            p["status"],
+            str(p.get("findings", 0)),
+            changed or "—",
+            str(p.get("attempts", 0)),
+        )
+    console.print(t)
+
+
+@app.command()
+def cache_audit(
+    book_id: str | None = typer.Argument(
+        None,
+        help="Book id to audit; omit for replay-cache file integrity only.",
+    ),
+    coherence: bool = typer.Option(
+        False,
+        "--coherence",
+        help="Also audit current coherence pair requests.",
+    ),
+) -> None:
+    """Audit replay-cache coverage for current prompt/model requests.
+    This only renders prompts and reads cache files; it makes no LLM calls.
+    """
+    integrity = audit_replay_cache_files()
+    invalid = integrity.get("invalid", [])
+    summary = Table.grid(padding=(0, 1))
+    summary.add_column(style="dim")
+    summary.add_column()
+    summary.add_row("cache files", str(integrity.get("total", 0)))
+    summary.add_row("valid", str(integrity.get("valid", 0)))
+    summary.add_row("fingerprinted", str(integrity.get("fingerprinted", 0)))
+    summary.add_row("unfingerprinted", str(integrity.get("unfingerprinted", 0)))
+    summary.add_row("stale fingerprints", str(integrity.get("stale_fingerprint", 0)))
+    summary.add_row("invalid", str(len(invalid)))
+    console.print(Panel(summary, title="replay-cache integrity"))
+
+    if invalid:
+        t_invalid = Table(title="invalid replay-cache files")
+        t_invalid.add_column("path", overflow="fold")
+        t_invalid.add_column("error", overflow="fold")
+        for item in invalid[:20]:
+            if isinstance(item, dict):
+                t_invalid.add_row(item.get("path", "?"),
+                                  item.get("error", "invalid cache file"))
+            else:
+                t_invalid.add_row(str(item), "invalid cache file")
+        console.print(t_invalid)
+        if len(invalid) > 20:
+            console.print(f"[yellow]showing 20 of {len(invalid)} invalid files[/yellow]")
+
+    if not book_id:
+        return
+
+    book = load_book(book_id)
+    rows = audit_book_cache(book, include_coherence=coherence)
+    counts: dict[str, int] = {}
+    for row in rows:
+        counts[row.status] = counts.get(row.status, 0) + 1
+
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim")
+    tally.add_column()
+    for status in ("hit", "miss", "no-call", "blocked", "unsupported"):
+        if status in counts:
+            tally.add_row(status, str(counts[status]))
+    console.print(Panel(tally, title=f"cache audit: {book.book_id}"))
+
+    status_style = {
+        "hit": "green",
+        "miss": "red",
+        "no-call": "cyan",
+        "blocked": "yellow",
+        "stale-risk": "yellow",
+        "source-stale": "yellow",
+        "source-untracked": "yellow",
+        "unsupported": "dim",
+        "current": "green",
+        "stale": "yellow",
+        "missing": "yellow",
+        "n/a": "dim",
+    }
+    verdict_table = Table(title="stage verdicts")
+    verdict_table.add_column("stage")
+    verdict_table.add_column("cache")
+    verdict_table.add_column("pipeline-safe")
+    verdict_table.add_column("source")
+    verdict_table.add_column("counts", overflow="fold")
+    verdict_table.add_column("note", overflow="fold")
+    for verdict in summarize_stage_verdicts(rows):
+        counts_text = " ".join(
+            f"{status}={count}"
+            for status, count in sorted(verdict.counts.items())
+        )
+        cache_style = status_style.get(verdict.cache, "")
+        pipeline_style = status_style.get(verdict.pipeline, "")
+        cache_text = (f"[{cache_style}]{verdict.cache}[/{cache_style}]"
+                      if cache_style else verdict.cache)
+        pipeline_text = (f"[{pipeline_style}]{verdict.pipeline}[/{pipeline_style}]"
+                         if pipeline_style else verdict.pipeline)
+        source_style = status_style.get(verdict.source, "")
+        source_text = (f"[{source_style}]{verdict.source}[/{source_style}]"
+                       if source_style else verdict.source)
+        verdict_table.add_row(
+            verdict.stage,
+            cache_text,
+            pipeline_text,
+            source_text,
+            counts_text,
+            verdict.note,
+        )
+    console.print(verdict_table)
+
+    t = Table(title="current LLM request cache coverage")
+    t.add_column("stage")
+    t.add_column("request")
+    t.add_column("status", width=12)
+    t.add_column("source", width=14)
+    t.add_column("model", overflow="fold")
+    t.add_column("cache key", overflow="fold")
+    t.add_column("note", overflow="fold")
+    for row in rows:
+        style = status_style.get(row.status, "")
+        t.add_row(
+            row.stage,
+            row.request,
+            f"[{style}]{row.status}[/{style}]" if style else row.status,
+            row.fingerprint or "—",
+            row.model or "—",
+            row.key or "—",
+            row.note or "",
         )
     console.print(t)
 

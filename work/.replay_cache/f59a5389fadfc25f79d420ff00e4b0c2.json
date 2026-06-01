@@ -1,0 +1,66 @@
+{
+  "ts": "2026-05-08T18:44:02",
+  "key": "f59a5389fadfc25f79d420ff00e4b0c2",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "coherence",
+    "hash": "135cc2f978af7d773e6a5e12930c5f09",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence.py",
+        "sha256": "aeb7f751b48b6a1da9167f0abd4f2c234846f6dd1e7e5559eea45a4604e98d3f",
+        "missing": false
+      },
+      {
+        "path": "forage/coherence_filter.py",
+        "sha256": "a2b6d1229a4bd6da993154a33b2000dc7beb8290b1ef113e3b5f987fa30cb2fc",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/critic_coherence.md",
+        "sha256": "349eb8c8722ee0ed0c8ebbc1f5d254782ae5d872f72014e4315cd5530e0033b3",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "I will work through both draft chapters systematically, applying each of the seven tests and the gate test to every sentence or passage that looks potentially damaged.\n\n---\n\n**Ch 042 draft \u2014 scan**\n\nThe chapter is self-contained and well-compressed. Background on the Shelby estate, George's search, the death-bed scene, the burial, and the graveside vow all carry through coherently. No dangling pronouns, no broken pivots, no unglossed names (all characters present\u2014George, Tom, Legree, Cassy\u2014are established). The phrase \"the fatal night\" appears (\"Tom had lain two days since the fatal night\") and needs scrutiny under Test 6.\n\n*\"the fatal night\"* \u2014 is this a mid-scene jump? The source of Ch 042 itself uses the identical phrase; it refers to the night of Tom's flogging, which was narrated in the preceding source chapter (Ch 041) and must be checked against the preceding *draft* chapter. The authorized-cut list does not include the flogging scene, so the preceding draft chapter should have carried it. If Ch 041's draft established the flogging, then \"the fatal night\" is an anaphoric reference to material in the preceding draft chapter and is fine. The prompt does not supply Ch 041's draft, but the flogging is a central plot event (not an authorized cut), so it is safe to assume it survived. Not a finding.\n\nAll other references parse cleanly. No unglossed minor names survive (Cassy is a continuing major character; the two enslaved men at the grave are unnamed). Ch 042 draft is structurally sound.\n\n---\n\n**Ch 044 draft \u2014 scan**\n\n**Paragraph 1 (summary header)**\n> \"As ghost rumors spread, Cassy and Emmeline slip from the garret in disguise \u2026 Legree's terror intensifies, and that night the house is found open as two white figures vanish down the avenue.\"\n\nThis is the chapter's own italicized pr\u00e9cis of what happened in the intervening chapter(s) (Ch 043 material). It is not a narrative sentence making claims that must follow from Ch 042 draft; it is a synopsis bridge. Not a finding.\n\n**\"George Shelby, interested \u2026 sent to Cassy the bill of sale of Eliza; its date and name all corresponded with her knowledge of facts, and she felt no doubt of her child's identity.\"**\n\nGeorge Shelby was last seen in Ch 042 draft burying Tom and vowing against slavery. Now he reappears on a steamboat encountering Cassy. The connection is established by the chapter's own header pr\u00e9cis (\"there encounter George Shelby\"). Not a structural break.\n\n**\"Madame de Thoux and Cassy, thus curiously joined by fortune \u2026\"**\nMadame de Thoux is introduced in the header pr\u00e9cis as \"a French lady, Madame de Thoux, who reveals herself as George Harris's sister.\" That is a sufficient local gloss for the subsequent narrative use. Test 7 is met. Not a finding.\n\n**\"At Amherstberg they found the missionary who had sheltered George and Eliza on their first landing \u2026\"**\n\"The missionary\" \u2014 is the reader able to place this? The draft has not, prior to this sentence, named or introduced any missionary. The source establishes this figure in the same sentence (\"the missionary with whom George and Eliza had taken shelter, on their first arrival in Canada\") with an identifying relative clause. The draft version drops the identifying clause and writes \"the missionary who had sheltered George and Eliza on their first landing\" \u2014 actually the draft *does* keep the relative clause (\"who had sheltered George and Eliza on their first landing\"). The reader is told who he is in the same sentence. Not a finding.\n\n**\"So much was the Amherstberg pastor moved by the statements of Madame de Thoux and Cassy, that, at the former's solicitation, he accompanied them to Montreal in their search,\u2014she bearing all the expense.\"**\nThe pronoun \"she\" \u2014 antecedent is \"the former\" = Madame de Thoux. Unambiguous. Not a finding.\n\n**\"He sat making notes from a volume of the family library.\"**\n\"He\" \u2014 antecedent is George, just named in the prior paragraph. Not a finding.\n\n**\"That's right,\" says Eliza, with a matronly air, yet contented and happy as woman need be.**\n\nIn the source: *\"That's right,\" says Eliza, as she begins to cut a loaf of bread. A little older she looks; her form a little fuller; her air more matronly than of yore; but evidently contented and happy as woman need be.*\n\nThe source's \"That's right\" is Eliza's reply to George's \"O, you little witch!\" (his yielding to little Eliza's demand to sit on his knee). The draft preserves that exchange intact. The source then gives a descriptive paragraph (\"A little older she looks \u2026 her air more matronly than of yore; but evidently contented and happy as woman need be\") tagged as authorial observation. The draft folds the observation into the dialogue tag (\"with a matronly air, yet contented and happy as woman need be\"), which still parses and is not confusing. Not a finding.\n\n**\"There is a rap at the door. Eliza opens it; the delighted 'Why! this you?' calls up her husband; and the good pastor of Amherstberg is welcomed. Two ladies are with him, to whom Eliza offers seats.\"**\n\nSource: \"There are two more women with him, and Eliza asks them to sit down.\" Draft: \"Two ladies are with him, to whom Eliza offers seats.\"\n\nThe source identifies the two women as Madame de Thoux and Cassy (the reader knows this from context). The draft reader, who has just read that Madame de Thoux and Cassy accompanied the pastor to Montreal, can readily infer who the two ladies are. Not a finding.\n\n**\"Cassy had seated herself more composedly, and would have carried her part well, had not little Eliza suddenly appeared before her in exact shape and curl as her own child had been when last she saw her.\"**\n\n\"her own child\" \u2014 This is Cassy's lost daughter (subsequently confirmed as Eliza). The draft has established earlier in this chapter: \"hearing names and papers, Cassy first suspects that Eliza may be her long-lost child.\" The reader knows Cassy had a lost child. Not a finding.\n\n**\"The latter's good looks won the affection of the first mate; shortly after entering port she became his wife.\"**\n\n\"The latter\" \u2014 antecedent is Emmeline (just named: \"whither they sailed, carrying Emmeline with them\"). \"She\" \u2014 refers to Emmeline. Unambiguous. Not a finding.\n\n**\"Of our other characters we have little to add, save a word of Miss Ophelia and Topsy, and a farewell chapter to George Shelby.\"**\n\nMiss Ophelia has been an authorized-cut subject (her housekeeping crusade was cut from earlier chapters), but she has been present as a continuing named character throughout the novel and appears in the chapter header (\"Miss Ophelia to Mrs. Shelby\" in Ch 042 source is referenced in Ch 042 draft: \"Miss Ophelia's letter to Mrs. Shelby \u2026 which Miss Ophelia had thoughtfully sent\"). Topsy is a major continuing character. George Shelby is major. Not a finding.\n\n**\"Miss Ophelia took Topsy home to Vermont,\u2014to the surprise of that grave deliberative body, 'our folks.'\"**\n\nSource: *\"much to the surprise of the grave deliberative body whom a New Englander recognizes under the term 'Our folks.'\"* The source glosses \"our folks\" as the term a New Englander uses for that social body. The draft drops this gloss, leaving \"that grave deliberative body, 'our folks'\" \u2014 a phrase in quotation marks without explanation of who these people are or why they are so described.\n\nGate test: A reader with no source access reads \"that grave deliberative body, 'our folks.'\" The phrase \"our folks\" is in scare-quotes suggesting it is a recognized label, but without the gloss (\"whom a New Englander recognizes under the term\") the reader cannot place what body is meant \u2014 is it a church council? a town committee? a family? The source's gloss (\"whom a New Englander recognizes\") was precisely the definitional frame that made the term intelligible as a colloquial label for the extended New England family/community. Without it, the phrase is cryptic. This meets Test 4 (missing definitional gloss).\n\n**P.S. paragraph \u2014 \"Cassy's son\"**\nCassy's son has not been mentioned at any point in the draft (the authorized subplot removals include \"Cassy's full autobiography\"). The P.S. names him only as \"Cassy's son\" (no proper name), gives his backstory briefly (\"escaped \u2026 received and educated by friends of the oppressed in the North\"), and says he will follow his family to Africa. The reader knows who Cassy is. \"Cassy's son\" is a descriptor, not an unglossed proper name. The descriptor is self-explanatory. The fact that the son had never been mentioned before is an authorized residue (Cassy's autobiography was cut). The P.S. itself supplies enough context (\"he had escaped, years before his mother, and been received and educated by friends of the oppressed in the North\") that a reader is not confused. Not a finding under Test 4 or Test 7.\n\n---\n\n**Summary of valid findings:**\n\n```json\n[\n  {\n    \"valid\": true,\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"to the surprise of that grave deliberative body, \\\"our folks.\\\" They thought it an odd addition to a well-trained household\",\n    \"source_has\": \"much to the surprise of the grave deliberative body whom a New Englander recognizes under the term 'Our folks.'\u2014'Our folks,' at first, thought it an odd and unnecessary addition to their well-trained domestic establishment\",\n    \"gate_test_answer\": \"A reader genuinely cannot tell what 'that grave deliberative body' and 'our folks' refer to\u2014church elders, town selectmen, or extended family\u2014because the source's gloss ('whom a New Englander recognizes under the term') that identified the phrase as a colloquial label for the New England home community has been cut, leaving the term opaque rather than merely less ornamented.\"\n  }\n]\n```",
+    "input_tokens": 16635,
+    "output_tokens": 2465,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 58.993074893951416,
+    "stop_reason": "end_turn"
+  }
+}

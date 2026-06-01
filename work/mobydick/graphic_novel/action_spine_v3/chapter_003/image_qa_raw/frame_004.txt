@@ -1,0 +1,13 @@
+{
+  "frame_number": 4,
+  "valid": true,
+  "findings": [
+    {
+      "severity": "major",
+      "category": "readable_text",
+      "finding": "Readable numerals on the wall clock, which the storyboard prohibits.",
+      "visible_evidence": "Roman numerals around the clock face are clearly legible.",
+      "repair_prompt": "Obscure the clock face so numerals are not readable—deepen the shadow, reduce contrast, or use a blank/diffuse face while keeping the hands to suggest a late hour."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "page_number": 1,
+  "anchors": [
+    {
+      "panel_number": 3,
+      "text_index": 0,
+      "kind": "speech",
+      "speaker": "Peter Coffin",
+      "text": "That's precisely it. The market's overstocked.",
+      "visible": true,
+      "confidence": 0.91,
+      "mouth_point": {"x": 736, "y": 417},
+      "mouth_point_ratio": {"x": 0.525, "y": 0.372},
+      "tail_target_point": {"x": 799, "y": 398},
+      "tail_target_point_ratio": {"x": 0.57, "y": 0.355},
+      "face_box": {"x1": 533, "y1": 247, "x2": 855, "y2": 550},
+      "evidence": "Right-side figure matches hint: lean older landlord in cap and waistcoat, actively whittling at the table. His mouth is clearly visible mid-smile.",
+      "reason": "Speaker region is right; only character fits visual hint. Tail aimed toward balloon zone top_right, so target is just outside the right side of his mouth/cheek rather than at mouth center."
+    }
+  ]
+}
