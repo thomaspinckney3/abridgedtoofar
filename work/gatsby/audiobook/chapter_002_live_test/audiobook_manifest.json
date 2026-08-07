@@ -1,0 +1,52 @@
+{
+  "book_id": "gatsby",
+  "source_text_path": "/tmp/forage-gatsby-chapter-002.txt",
+  "output_dir": "work/gatsby/audiobook/chapter_002_live_test",
+  "generated_at": "2026-06-01T14:38:58",
+  "dry_run": false,
+  "voice_id": "3ohjYzh1hTiBZPbNxoHD",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "max_chars": 9000,
+  "context_chars": 1200,
+  "enable_logging": true,
+  "stitch": true,
+  "voice_settings": {
+    "use_speaker_boost": true
+  },
+  "chunk_count": 2,
+  "total_chars": 15622,
+  "generated_count": 1,
+  "skipped_count": 0,
+  "planned_count": 0,
+  "error_count": 1,
+  "combined_audio_path": null,
+  "published_audio_path": null,
+  "combine_error": null,
+  "chunks": [
+    {
+      "id": "0001",
+      "text_path": "work/gatsby/audiobook/chapter_002_live_test/chunks/0001.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_002_live_test/audio/0001.mp3",
+      "chars": 8992,
+      "text_sha256": "253fde3d482720232254e82ed275d515eb1d0d8e3945d84a57f0f5a899416f96",
+      "status": "error",
+      "request_id": null,
+      "character_cost": null,
+      "api_ms": null,
+      "error": "ElevenLabs HTTP 401: {\"detail\":{\"type\":\"invalid_request\",\"code\":\"quota_exceeded\",\"message\":\"This request exceeds your API key (Abridgedtoofar) quota of 50000. You have 5284 credits remaining, while 5450 credits are required for this request.\",\"status\":\"quota_exceeded\",\"request_id\":\"e898567280c15f0fbdd091904b82262e\"}}"
+    },
+    {
+      "id": "0002",
+      "text_path": "work/gatsby/audiobook/chapter_002_live_test/chunks/0002.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_002_live_test/audio/0002.mp3",
+      "chars": 6630,
+      "text_sha256": "43441b81766c79185426e8296258a8de25512ca438a03d49deb5581ff2f2d75e",
+      "status": "generated",
+      "request_id": "Q9QRdWJXskQdrrFI4U8h",
+      "character_cost": "4018",
+      "api_ms": 59740,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "book_id": "secret_adversary",
+  "source_text_path": "/tmp/forage-secret-adversary-chapter-001.txt",
+  "output_dir": "work/secret_adversary/audiobook/chapter_001_live_test",
+  "generated_at": "2026-06-01T17:07:21",
+  "dry_run": false,
+  "voice_id": "wLcvpCptkGwgmNJ5c7bu",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "max_chars": 9000,
+  "context_chars": 1200,
+  "enable_logging": true,
+  "stitch": true,
+  "voice_settings": {
+    "use_speaker_boost": true
+  },
+  "chunk_count": 1,
+  "total_chars": 5766,
+  "generated_count": 1,
+  "skipped_count": 0,
+  "planned_count": 0,
+  "error_count": 0,
+  "combined_audio_path": null,
+  "published_audio_path": null,
+  "combine_error": null,
+  "chunks": [
+    {
+      "id": "0001",
+      "text_path": "work/secret_adversary/audiobook/chapter_001_live_test/chunks/0001.txt",
+      "audio_path": "work/secret_adversary/audiobook/chapter_001_live_test/audio/0001.mp3",
+      "chars": 5766,
+      "text_sha256": "1836806445c14da026c852e61a44a9a23100fedac9a0944059d2facbb49dbdd5",
+      "status": "generated",
+      "request_id": "49knpDK7VkskGk9cHMGA",
+      "character_cost": "3495",
+      "api_ms": 52553,
+      "error": null
+    }
+  ]
+}

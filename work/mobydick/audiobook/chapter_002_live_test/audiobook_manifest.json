@@ -1,0 +1,40 @@
+{
+  "book_id": "mobydick",
+  "source_text_path": "/tmp/forage-mobydick-chapter-002.txt",
+  "output_dir": "work/mobydick/audiobook/chapter_002_live_test",
+  "generated_at": "2026-06-01T14:06:04",
+  "dry_run": false,
+  "voice_id": "ahFsJ9oc9ypSC00lKIfB",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "max_chars": 9000,
+  "context_chars": 1200,
+  "enable_logging": true,
+  "stitch": true,
+  "voice_settings": {
+    "use_speaker_boost": true
+  },
+  "chunk_count": 1,
+  "total_chars": 4086,
+  "generated_count": 1,
+  "skipped_count": 0,
+  "planned_count": 0,
+  "error_count": 0,
+  "combined_audio_path": null,
+  "published_audio_path": null,
+  "combine_error": null,
+  "chunks": [
+    {
+      "id": "0001",
+      "text_path": "work/mobydick/audiobook/chapter_002_live_test/chunks/0001.txt",
+      "audio_path": "work/mobydick/audiobook/chapter_002_live_test/audio/0001.mp3",
+      "chars": 4086,
+      "text_sha256": "5952a05c338b7d11e6f8ae2c369f98f726fd3d82fbe5f28cd250103f5baa1eec",
+      "status": "generated",
+      "request_id": "x3zJQVy4HKLEig6ntS2r",
+      "character_cost": "2476",
+      "api_ms": 38641,
+      "error": null
+    }
+  ]
+}

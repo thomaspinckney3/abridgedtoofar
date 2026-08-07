@@ -1,0 +1,76 @@
+{
+  "book_id": "gatsby",
+  "source_text_path": "/tmp/forage-gatsby-chapter-001.txt",
+  "output_dir": "work/gatsby/audiobook/chapter_001_live_test",
+  "generated_at": "2026-06-01T14:34:50",
+  "dry_run": false,
+  "voice_id": "3ohjYzh1hTiBZPbNxoHD",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "max_chars": 9000,
+  "context_chars": 1200,
+  "enable_logging": true,
+  "stitch": true,
+  "voice_settings": {
+    "use_speaker_boost": true
+  },
+  "chunk_count": 4,
+  "total_chars": 26589,
+  "generated_count": 4,
+  "skipped_count": 0,
+  "planned_count": 0,
+  "error_count": 0,
+  "combined_audio_path": null,
+  "published_audio_path": null,
+  "combine_error": null,
+  "chunks": [
+    {
+      "id": "0001",
+      "text_path": "work/gatsby/audiobook/chapter_001_live_test/chunks/0001.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_001_live_test/audio/0001.mp3",
+      "chars": 8491,
+      "text_sha256": "18332c83f7a8a0f50aeb18bd12ecfc27058d032c596c19f548e2d2d02e3db430",
+      "status": "generated",
+      "request_id": "Zjui2EfUJyVxW3X65iT5",
+      "character_cost": "5146",
+      "api_ms": 75606,
+      "error": null
+    },
+    {
+      "id": "0002",
+      "text_path": "work/gatsby/audiobook/chapter_001_live_test/chunks/0002.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_001_live_test/audio/0002.mp3",
+      "chars": 8659,
+      "text_sha256": "6ad1bc4a3c33087f33c4a4f62eb346745a2a1ed2857bb92eb739389357bcba8f",
+      "status": "generated",
+      "request_id": "unleGdlwWByivZYgXpLG",
+      "character_cost": "5248",
+      "api_ms": 79732,
+      "error": null
+    },
+    {
+      "id": "0003",
+      "text_path": "work/gatsby/audiobook/chapter_001_live_test/chunks/0003.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_001_live_test/audio/0003.mp3",
+      "chars": 8867,
+      "text_sha256": "14233909c06757fcfd152746d900fc3054eaf2c9df9d44a4a212dc333e6255a8",
+      "status": "generated",
+      "request_id": "pvsKYzYj3BicPllRGR1M",
+      "character_cost": "5374",
+      "api_ms": 82028,
+      "error": null
+    },
+    {
+      "id": "0004",
+      "text_path": "work/gatsby/audiobook/chapter_001_live_test/chunks/0004.txt",
+      "audio_path": "work/gatsby/audiobook/chapter_001_live_test/audio/0004.mp3",
+      "chars": 572,
+      "text_sha256": "ca0d042e2d3b7f8869970fd03f6ec415c9f96f29c1fa570f6c044fdb81265c30",
+      "status": "generated",
+      "request_id": "gNkV5SMXkZIFs5CHQ8CZ",
+      "character_cost": "347",
+      "api_ms": 5500,
+      "error": null
+    }
+  ]
+}

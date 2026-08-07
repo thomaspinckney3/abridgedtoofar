@@ -1,0 +1,76 @@
+{
+  "book_id": "education",
+  "source_text_path": "/tmp/forage-education-chapter-001.txt",
+  "output_dir": "work/education/audiobook/chapter_001_live_test",
+  "generated_at": "2026-06-01T15:05:07",
+  "dry_run": false,
+  "voice_id": "3OQWbuIrUGJLNhntQ3hO",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "max_chars": 9000,
+  "context_chars": 1200,
+  "enable_logging": true,
+  "stitch": true,
+  "voice_settings": {
+    "use_speaker_boost": true
+  },
+  "chunk_count": 4,
+  "total_chars": 29629,
+  "generated_count": 4,
+  "skipped_count": 0,
+  "planned_count": 0,
+  "error_count": 0,
+  "combined_audio_path": null,
+  "published_audio_path": null,
+  "combine_error": null,
+  "chunks": [
+    {
+      "id": "0001",
+      "text_path": "work/education/audiobook/chapter_001_live_test/chunks/0001.txt",
+      "audio_path": "work/education/audiobook/chapter_001_live_test/audio/0001.mp3",
+      "chars": 8316,
+      "text_sha256": "967e03398d2d848a9a84bb9ed757277cf43186e3f6bc7fdc15e1d85535501162",
+      "status": "generated",
+      "request_id": "yg1mWBGFGI5rOU9DsF4z",
+      "character_cost": "5040",
+      "api_ms": 75517,
+      "error": null
+    },
+    {
+      "id": "0002",
+      "text_path": "work/education/audiobook/chapter_001_live_test/chunks/0002.txt",
+      "audio_path": "work/education/audiobook/chapter_001_live_test/audio/0002.mp3",
+      "chars": 8466,
+      "text_sha256": "5d408618b03831f0e062156f53409195b11dbbe1b4b5c4cc19e0631b5a333fd3",
+      "status": "generated",
+      "request_id": "WSFepo6iMhI1GsBxf9Nl",
+      "character_cost": "5131",
+      "api_ms": 75561,
+      "error": null
+    },
+    {
+      "id": "0003",
+      "text_path": "work/education/audiobook/chapter_001_live_test/chunks/0003.txt",
+      "audio_path": "work/education/audiobook/chapter_001_live_test/audio/0003.mp3",
+      "chars": 8875,
+      "text_sha256": "09a1e9850292719bc35b5c1f15e92a3a66a448335515a36fad7582a1a4c0207f",
+      "status": "generated",
+      "request_id": "cw7NIWdi487obIXAu2J3",
+      "character_cost": "5379",
+      "api_ms": 78090,
+      "error": null
+    },
+    {
+      "id": "0004",
+      "text_path": "work/education/audiobook/chapter_001_live_test/chunks/0004.txt",
+      "audio_path": "work/education/audiobook/chapter_001_live_test/audio/0004.mp3",
+      "chars": 3972,
+      "text_sha256": "df91c6b23590b560a390e825a402ce1d1df44b3507c8fea186cf97cff037cdd5",
+      "status": "generated",
+      "request_id": "mcTA0o2ekKOdJ4aprxeG",
+      "character_cost": "2407",
+      "api_ms": 35737,
+      "error": null
+    }
+  ]
+}
