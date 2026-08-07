@@ -10,7 +10,7 @@ A finding is valid ONLY if the draft sentence fails at least ONE of these specif
 2. **Dangling pronoun/demonstrative**: "he/she/it/this/that/these" used with no unambiguous antecedent in the preceding draft (not source — draft).
 3. **Broken logical pivot**: a connective like "but", "yet", "however", "because", "as a result" contrasts or follows something that was cut from the draft. The sentence reads as one side of a missing two-sided structure.
 4. **Missing definitional gloss**: a phrase that the source glossed as general/characteristic is presented in the draft without the gloss, leaving the reader unable to place it.
-5. **Unattributed dialogue exchange**: a reply whose triggering question was cut, or a dialogue where the speaker was introduced in the cut passage.
+5. **Unattributed dialogue exchange**: a reply whose triggering question was cut, a dialogue where the speaker was introduced in the cut passage, or multiple adjacent quote-led turns that no longer make clear which character is speaking.
 6. **Mid-scene jump**: a chapter opens with definite references ("the waif-pole", "the dead whale", "that night") that the previous draft chapter did not establish, AND the source of the previous chapter DID establish them in material that was dropped during compression.
 7. **Unglossed minor proper name**: a minor/removable character's proper name appears without a local role, relationship, or appositive identifier, and the immediately preceding draft chapter does not establish who that named person is. If the name survives after its introduction was cut or after a long absence, the first local use must tell the reader who the person is.
 
@@ -25,6 +25,15 @@ Explicit rejections — these are NOT valid findings:
 - A minor character is referred to only by a descriptor ("the neighbour", "Myrtle's sister") and the descriptor is clear; proper-name continuity is not required when the name has been elided.
 
 **The gate test**: would a competent reader with no source access be *actually confused or misled* by this draft sentence, or would they merely be reading a less-ornamented version of the sentence? Only flag the first kind.
+
+**Dialogue attribution audit.** Read every quoted exchange in the DRAFT, not just
+single sentences. Flag `unattributed_dialogue` when compression leaves two or
+more adjacent dialogue turns without enough speaker attribution, action beats,
+or a still-obvious two-speaker alternation to identify who says what. This is
+especially repair-worthy when the source used names, action beats, or dialogue
+tags and the draft reduced the exchange to bare quotation paragraphs. Do not
+flag a single bare reply if the immediately preceding turn and scene context
+make the speaker unambiguous.
 
 {% if cuts %}**Authorized cuts — residual seams are not findings.** A separate prepass instructed the drafter to remove the following material. Dangling references, missing-gloss seams, mid-scene jumps, or broken pivots that are *direct residues* of these authorized cuts (a sentence referring to "the hall" when the hallway scene was cut, an attribution to a character who has been elided) are EXPECTED and NOT findings. Only flag continuity breaks in material that should have survived compression.
 

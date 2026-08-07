@@ -67,30 +67,66 @@ details.unused summary { cursor: pointer; font-weight: bold; color: var(--muted)
 
 
 _TOKEN_RE = re.compile(r"\S+|\s+")
+_QUOTE_NORMALIZE = str.maketrans({
+    "\u2018": "'",
+    "\u2019": "'",
+    "\u201a": "'",
+    "\u201b": "'",
+    "\u2032": "'",
+    "\u201c": '"',
+    "\u201d": '"',
+    "\u201e": '"',
+    "\u201f": '"',
+    "\u2033": '"',
+    "\u00a0": " ",
+})
 
 
 def _tokenize(text: str) -> list[str]:
     return _TOKEN_RE.findall(text)
 
 
-def _word_diff_html(source: str, draft: str) -> str:
+def _visual_diff_key(text: str) -> str:
+    """Collapse differences that render as editorial noise in the galley."""
+    return " ".join(text.translate(_QUOTE_NORMALIZE).split())
+
+
+def _token_diff_key(token: str) -> str:
+    """Normalize a single diff token without erasing word boundaries."""
+    normalized = token.translate(_QUOTE_NORMALIZE)
+    if not normalized.strip():
+        return " "
+    return normalized
+
+
+def _token_diff_keys(tokens: list[str]) -> list[str]:
+    return [_token_diff_key(token) for token in tokens]
+
+
+def word_diff_html(source: str, draft: str) -> str:
     """Inline word-level diff rendered as HTML with <ins>/<del> markers.
     Only meaningful when source and draft are close in length + content."""
+    if _visual_diff_key(source) == _visual_diff_key(draft):
+        return html.escape(draft)
+
     a = _tokenize(source)
     b = _tokenize(draft)
-    sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
+    sm = difflib.SequenceMatcher(a=_token_diff_keys(a),
+                                 b=_token_diff_keys(b),
+                                 autojunk=False)
     out = []
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
         a_seg = "".join(a[i1:i2])
         b_seg = "".join(b[j1:j2])
         if tag == "equal":
-            out.append(html.escape(a_seg))
+            out.append(html.escape(b_seg))
         elif tag == "replace":
             # Whitespace-only differences (e.g. source has \n, draft has space)
             # are visual noise — render the draft's whitespace unchanged rather
             # than wrapping empty <del>/<ins>, which would drop the whitespace
             # entirely.
-            if not a_seg.strip() and not b_seg.strip():
+            if (_visual_diff_key(a_seg) == _visual_diff_key(b_seg)
+                    or (not a_seg.strip() and not b_seg.strip())):
                 out.append(html.escape(b_seg or a_seg))
             else:
                 if a_seg.strip():
@@ -110,12 +146,16 @@ def _word_diff_html(source: str, draft: str) -> str:
     return "".join(out)
 
 
-def _should_word_diff(note_key: str, source: str, draft: str) -> bool:
+def should_word_diff(note_key: str, source: str, draft: str) -> bool:
     """Show word-level diff only when the two texts are close enough that a
     word-level view is readable. Skip when the edit is paragraph-scale."""
     if note_key not in ("verbatim", "paraphrased"):
         return False
     if not source.strip() or not draft.strip():
+        return False
+    # Straight vs curly quotes/apostrophes and source line wrapping are not
+    # useful review diffs. Suppress those no-op highlights entirely.
+    if _visual_diff_key(source) == _visual_diff_key(draft):
         return False
     # Length guardrail: if the two diverge by more than 40% in length the diff
     # becomes mostly insert/delete blocks and isn't useful.
@@ -125,7 +165,9 @@ def _should_word_diff(note_key: str, source: str, draft: str) -> bool:
         return False
     # Similarity guardrail: if the sequences share less than ~50% of content
     # the diff view is noisier than a stacked view.
-    sm = difflib.SequenceMatcher(a=_tokenize(source), b=_tokenize(draft), autojunk=False)
+    sm = difflib.SequenceMatcher(a=_token_diff_keys(_tokenize(source)),
+                                 b=_token_diff_keys(_tokenize(draft)),
+                                 autojunk=False)
     if sm.ratio() < 0.5:
         return False
     return True
@@ -168,13 +210,13 @@ def _render_chapter(alignment: dict) -> str:
         concat_src = "\n\n".join(src_paras[si] for si in src_idxs
                                   if 0 <= si < len(src_paras))
         show_diff = (len(src_idxs) == 1
-                     and _should_word_diff(note_key, concat_src, draft_text))
+                     and should_word_diff(note_key, concat_src, draft_text))
 
         parts.append(f'<div class="block {note_key}">')
         parts.append(f'  <div class="note">{html.escape(note_raw or note_key)} · draft [{idx}]</div>')
 
         if show_diff:
-            diff_html = _word_diff_html(concat_src, draft_text)
+            diff_html = word_diff_html(concat_src, draft_text)
             parts.append(f'  <div class="diff-label">source → draft (word diff)</div>')
             parts.append(f'  <div class="diff-view">{diff_html}</div>')
         else:

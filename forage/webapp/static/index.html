@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forage — editorial review</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the draft</a>
+
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-mark" aria-hidden="true">¶</span>
+    <span class="brand-text">Forage <em>galley</em></span>
+  </a>
+  <div class="topbar-book" id="topbar-book" hidden>
+    <span class="book-title" id="book-title"></span>
+    <span class="book-author" id="book-author"></span>
+  </div>
+  <div class="topbar-actions">
+    <button class="btn ghost" id="help-btn" type="button" aria-keyshortcuts="?">Keys</button>
+    <button class="btn ghost" id="theme-btn" type="button" aria-label="Switch colour theme">Theme</button>
+    <button class="btn" id="session-btn" type="button">Sign in to comment</button>
+  </div>
+</header>
+
+<div class="layout" id="layout">
+  <nav class="rail" id="rail" aria-label="Chapters"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+
+<div class="toast-stack" id="toasts" aria-live="polite"></div>
+
+<div class="selection-tip" id="selection-tip" hidden>
+  <button class="btn small" id="selection-comment" type="button">Comment on selection</button>
+</div>
+
+<dialog id="signin-dialog" class="sheet">
+  <form method="dialog" id="signin-form">
+    <h2>Sign in to comment</h2>
+    <p class="sheet-note" id="signin-note">Reading is open to anyone. The review token lets you leave notes; the admin token also publishes them.</p>
+    <label>Your name<input type="text" id="signin-label" maxlength="64" placeholder="Who's reviewing" autocomplete="name"></label>
+    <label>Token<input type="password" id="signin-token" autocomplete="current-password" required></label>
+    <p class="sheet-error" id="signin-error" hidden></p>
+    <menu>
+      <button class="btn ghost" value="cancel" type="submit" formnovalidate>Cancel</button>
+      <button class="btn primary" id="signin-submit" value="ok">Sign in</button>
+    </menu>
+  </form>
+</dialog>
+
+<dialog id="help-dialog" class="sheet">
+  <form method="dialog">
+    <h2>Keyboard</h2>
+    <dl class="keys">
+      <dt>j / k</dt><dd>Next / previous paragraph</dd>
+      <dt>c</dt><dd>Comment on the current paragraph</dd>
+      <dt>u</dt><dd>Jump to the next unsupported paragraph</dd>
+      <dt>[ / ]</dt><dd>Previous / next chapter</dd>
+      <dt>/</dt><dd>Search this chapter</dd>
+      <dt>Esc</dt><dd>Close the composer</dd>
+    </dl>
+    <menu><button class="btn primary" value="ok">Done</button></menu>
+  </form>
+</dialog>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

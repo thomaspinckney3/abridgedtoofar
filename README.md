@@ -23,7 +23,7 @@ split → classify → plan → summarize → cuts ──┐
 
                    draft → coherence → coherence-fix → assemble → book-critique   ◄── default pipeline
                      │
-                     ├──► proofread (post-hoc)                      ◄── opt-in, recommended
+                     ├──► proofread (post-hoc) ──► serve ──► review-apply  ◄── opt-in, recommended
                      └──► audiobook (ElevenLabs TTS)                 ◄── opt-in, paid
 
                    critique + iterate (draft → regen loop)    ◄── opt-in
@@ -187,7 +187,135 @@ Alignments cache to `work/<book>/alignments/NNN.json` — re-running resumes fro
 
 Empirical: across Gatsby + Dragon Maiden + Secret Adversary, 0.2–1% of aligned paragraphs are marked `unsupported`, and after inspection most unsupported cases are chapter-title headings or drafter-added bridging sentences — zero genuine plot/character fabrications.
 
-### 15. `audiobook` — ElevenLabs narration
+### 15. `serve` — editorial review web app
+
+Zero LLM cost. The same alignment data `proofread` renders statically, served as an interactive review app where a note can be attached to any paragraph and published as a machine-readable fix queue.
+
+```bash
+pip install -e '.[web]'      # fastapi + uvicorn
+forage serve                 # http://127.0.0.1:8000
+```
+
+What it adds over `proofread.html`:
+
+- **Book index** with a fidelity mix bar and unsupported/note counts per book.
+- **Chapter view** — same verdict buckets, word diffs, and cut-material section, plus filters (unsupported / compressed / has-notes / full-text search) and keyboard navigation (`j` `k` move, `u` next unsupported, `c` comment, `[` `]` chapter, `/` search).
+- **Marginalia** — notes sit in the right margin beside the paragraph they annotate. Select text inside a paragraph to quote it in the note.
+- **Note fields** — severity (`blocker` … `praise`), kind (`fidelity`, `voice`, `continuity`, `clarity`, `style`, `typo`, `other`), status (`open` → `accepted` / `resolved` / `wontfix`), free-text body, reviewer name.
+- **Staleness** — each note stores a hash of the paragraph it was written against. Redraft that paragraph and the note is flagged `stale`; drop it from the alignment and the note is flagged `orphaned`. Notes are never silently re-pointed at different prose.
+- **Deep links** — `/b/<book>?c=<chapter>&p=<paragraph>` opens on the paragraph in question.
+
+**Publish** writes the queue to `work/<book>/editorial/edits.json`: comments grouped by chapter, each carrying the paragraph text it was written against and its staleness flag. That file is the overlay a fix stage consumes — the app never edits `segments/*.md` itself, so a review pass can't corrupt drafts. The same document is downloadable without writing to disk at `/api/books/<book>/edits.json`.
+
+#### Access control
+
+Three levels, because the app is meant to grow into running the pipeline behind a login:
+
+| Level | Token | Can |
+| --- | --- | --- |
+| public | none | read every book, chapter, alignment, and note; download `edits.json` |
+| reviewer | `FORAGE_REVIEW_TOKEN` | add, edit, restatus, and delete notes |
+| admin | `FORAGE_ADMIN_TOKEN` | everything a reviewer can, plus publish `edits.json` |
+
+Reviewers self-label with a name; the label is display-only and grants nothing. Sessions are stateless HMAC-signed cookies (`HttpOnly`, `SameSite=Lax`, `Secure` behind TLS) — no session table, so nothing to replicate. The role lives inside the signed payload, so a reviewer cookie cannot be edited into an admin one, and withdrawing `FORAGE_ADMIN_TOKEN` immediately downgrades live admin cookies to reviewer.
+
+Sign-in attempts are limited to 8 per address per 15 minutes; a correct token clears the counter, so a fat-fingered reviewer isn't locked out. Writes are limited separately at 60/minute.
+
+Behind a proxy the limiter has to count the real client rather than the proxy, or the whole internet shares one bucket — so it reads `Fly-Client-IP` first, falling back to the **right-most** `X-Forwarded-For` entry. Right-most matters: proxies append, so the last entry is the one Fly wrote, while anything to its left was supplied by the caller and can be forged to buy a fresh bucket. Forwarded headers are only trusted when `FORAGE_TRUST_PROXY` says a proxy is genuinely in front. Cross-origin writes are refused outright, and every response carries CSP, `nosniff`, `X-Frame-Options: DENY`, and (over HTTPS) HSTS.
+
+| Variable | Purpose |
+| --- | --- |
+| `FORAGE_REVIEW_TOKEN` | Token required to comment |
+| `FORAGE_ADMIN_TOKEN` | Token required to publish; unset disables publishing entirely |
+| `FORAGE_SECRET_KEY` | Cookie signing key |
+| `FORAGE_SESSION_HOURS` | Session lifetime, default 720 (30 days) |
+| `FORAGE_SESSION_EPOCH` | Bump this integer to sign every live session out at once |
+| `FORAGE_ENV` | `production` enables the strict startup check |
+| `FORAGE_TRUST_PROXY` | Honour `X-Forwarded-*`; defaults on when `FLY_APP_NAME` is set |
+| `FORAGE_ALLOWED_HOSTS` | Comma-separated host allowlist (optional) |
+| `FORAGE_WORK_DIR` | Artifact root, default `work/` |
+| `FORAGE_BOOKS_DIR` | Book metadata root, default `books/` |
+| `FORAGE_ARTIFACT_OVERLAY_DIR` | Optional per-book artifact override root, e.g. `/data/artifacts` |
+| `FORAGE_BOOKS_OVERLAY_DIR` | Optional per-book metadata override root, e.g. `/data/books` |
+| `FORAGE_REVIEW_DB` | SQLite comment queue, default `work/_review/review.db` |
+| `FORAGE_EDITS_DIR` | Where publish writes, default `work/<book>/editorial/` |
+
+Locally, an unset review token is generated and printed at startup, so a dev server is never write-open. **In production that generation is refused**: with `FORAGE_ENV=production` (or any `FLY_APP_NAME` in the environment) the app will not boot without an explicit `FORAGE_SECRET_KEY` and `FORAGE_REVIEW_TOKEN`, and it rejects any of them shorter than 12 characters — a short shared secret on the public internet is guessable through the lockout given enough addresses. A generated key would also silently invalidate every session on restart and differ between machines. A misconfigured deploy therefore fails its health check instead of coming up with a password nobody knows.
+
+#### Deploying to Fly.io
+
+`fly.toml` and the `Dockerfile` at the repo root are the whole deployment. Artifacts are baked into the image as a baseline, while the Fly volume holds mutable state: the comment database, published review overlays, and optional per-book artifact overrides.
+
+```bash
+python scripts/package_review_artifacts.py        # deploy/artifacts — MB, not GB
+fly launch --no-deploy                            # once; keep the generated app name
+fly volumes create forage_review_data --size 1
+fly secrets set \
+  FORAGE_SECRET_KEY="$(python -c 'import secrets;print(secrets.token_urlsafe(32))')" \
+  FORAGE_REVIEW_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(9))')" \
+  FORAGE_ADMIN_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(12))')"
+fly deploy
+```
+
+`scripts/package_review_artifacts.py` copies only the alignment JSON plus a trimmed `plan.json` and book metadata — `work/` itself is gigabytes of drafts, replay caches, and rendered pages the app never reads. Re-run it before a normal image deploy to refresh the baked baseline.
+
+For a single revised book, publish the artifact overlay instead of rebuilding:
+
+```bash
+python scripts/publish_review_book.py secret_adversary --dry-run
+python scripts/publish_review_book.py secret_adversary
+```
+
+That packages only `work/<book>/alignments`, `work/<book>/segments/*.checks.json`, current lint artifacts, the review-apply ledger, and metadata, then uploads it to `/data/artifacts/<book>` and `/data/books/<book>`. A mounted book overrides the baked copy on the next request; deleting `/data/artifacts/<book>` falls back to the baked image.
+
+The image installs `fastapi` and `uvicorn` but not the pipeline's model SDKs: the review app only reads JSON off disk and serves HTML. Build with `--build-arg INSTALL_MODE=full` when pipeline stages move behind the admin token and the container needs the full dependency set.
+
+Two things to keep in mind:
+
+- **Stay at one machine.** The comment queue is a SQLite file on a single volume, so `min_machines_running = 1` and no `fly scale count` above 1. Sessions are stateless, so scaling out only ever waits on moving the queue to Postgres.
+- **Publishing writes to the volume**, not to the image: `FORAGE_EDITS_DIR=/data/edits`. Pull a published overlay back down with `fly ssh sftp get /data/edits/<book>/edits.json`, or skip publishing entirely and use `GET /api/books/<book>/edits.json`, which builds the same document on the fly and needs no writable disk.
+- **Single-book content refreshes also write to the volume**: `FORAGE_ARTIFACT_OVERLAY_DIR=/data/artifacts` and `FORAGE_BOOKS_OVERLAY_DIR=/data/books`. Use `scripts/publish_review_book.py` after re-aligning a book; no app restart or redeploy is needed once those env vars are deployed.
+
+Rotating a token is `fly secrets set FORAGE_REVIEW_TOKEN=...`; bump `FORAGE_SESSION_EPOCH` in `fly.toml` at the same time to sign out everyone still holding a cookie issued under the old one.
+
+#### Checking it
+
+`python scripts/check_review_app.py` is the end-to-end check — three layers, ~55 assertions, zero LLM cost:
+
+- **units** — cookie signing, tampered role and signature, wrong key, expiry, epoch rotation, admin downgrade, and the production startup refusal
+- **api** — anonymous reads, anonymous write refused, reviewer vs admin on publish, sign-in lockout (and that it's per-address, not global), cross-origin refusal, `Secure`/HSTS behind a forwarded HTTPS hop, security headers
+- **browser** — real Chrome over the DevTools protocol through the whole review loop: routing, filters, keyboard nav, select-to-quote, add/resolve/delete a note, publish visible to admins only, deep links, mobile layout, no uncaught page errors
+
+The browser layer skips itself when no Chrome is installed; the rest still runs.
+
+### 16. `review-apply` — human feedback incorporation
+
+Plan-only by default, zero LLM cost unless `--apply` is passed. Reads the
+published queue at `work/<book>/editorial/edits.json`, groups pending feedback
+by chapter, and asks the LLM for the smallest source-supported revision that
+addresses correct and relevant comments.
+
+```bash
+forage review-apply secret_adversary --segment 002     # plan only
+forage review-apply secret_adversary --segment 002 --apply
+```
+
+The prompt requires a decision for every feedback item. The model may skip a
+comment if it is wrong, stale, already resolved, irrelevant to that chapter, or
+would require a broad rewrite, but it must record a concise reason. Applied and
+skipped decisions are written to
+`work/<book>/editorial/review_apply_ledger.json` with the comment fingerprint,
+target chapter, draft-before hash, draft-after hash, timestamp, model, and token
+counts. Each decision also carries a per-comment LLM response that the review
+web app displays under the original note when the ledger is present in the
+artifact tree. Future rounds ignore unchanged feedback already in the ledger;
+editing a comment changes its fingerprint and makes it eligible again.
+
+Book-level comments are considered per target chapter. Without `--segment`, the
+stage uses chapters that already have chapter or paragraph feedback rather than
+fanning a global note out across the whole book.
+
+### 17. `audiobook` — ElevenLabs narration
 
 Paid API stage. Reads `books/<book>/abridgment.txt` (falling back to `work/<book>/abridgment.txt`) and splits the assembled abridgment into bounded narration chunks. A dry run writes only chunk text and `work/<book>/audiobook/audiobook_manifest.json`:
 
@@ -312,6 +440,9 @@ forage coherence <book>             # structural damage critic (adjacent-chapter
 forage book-critique <book>         # synopsis-grounded per-sentence verification
 forage validate <book>              # motif + style + signature checks
 forage proofread <book>             # paragraph-level alignment viewer → proofread.html
+forage serve                        # editorial review web app (comments → edits.json)
+forage review-apply <book>          # plan human-feedback repair pass (zero LLM cost)
+forage review-apply <book> --apply  # apply feedback and update review_apply_ledger.json
 forage audiobook <book> --dry-run   # split abridgment into ElevenLabs chunks
 forage audiobook <book>             # generate using metadata audiobook.voice_id
 forage report [<book>]              # standard results row (all books if no arg)
@@ -347,6 +478,7 @@ forage coherence gatsby             # structural damage critic (post-hoc)
 forage book-critique gatsby         # verifies abridgment against synopsis
 forage validate gatsby              # mechanical sanity checks
 forage proofread gatsby             # paragraph-level alignment viewer
+forage serve                        # review + comment on it in the browser
 forage audiobook gatsby --dry-run   # inspect chunking before paid TTS
 ```
 
@@ -387,6 +519,11 @@ forage/
     validate.py                    # mechanical sanity checks
     align.py                       # per-chapter draft↔source paragraph alignment
     proofread.py                   # HTML renderer for alignments
+    webapp/                        # editorial review app (forage serve)
+      app.py                       # FastAPI routes: public read, reviewer write, admin publish
+      store.py                     # read-only artifact view + SQLite comment queue
+      auth.py                      # roles, signed sessions, lockout, proxy awareness
+      static/                      # single-page client (no build step)
     dialogue_split.py              # post-hoc dialogue paragraph splitter
     llm.py                         # provider-agnostic LLM client + routing
     prompts.py                     # prompt template loader
@@ -410,6 +547,11 @@ forage/
   scripts/
     full_pipeline.py               # single-book end-to-end runner
     lean_iterate_first_n.py        # multi-book sweep: first N chapters each
+    check_review_app.py            # units + api + browser check for forage serve
+    package_review_artifacts.py    # trim work/ to the deploy payload
+    publish_review_book.py         # publish one book overlay to Fly without redeploy
+  Dockerfile                       # review app image (artifacts baked in)
+  fly.toml                         # Fly.io service, volume, health check
   spec/
     ABRIDGMENT_SPEC.md             # canonical design doc (also fed to drafter)
   books/                           # source inputs + published deliverables
@@ -447,6 +589,9 @@ forage/
         audiobook_manifest.json    # request ids, hashes, paths, status
         audiobook.mp3              # combined audio when ffmpeg is available
       proofread.html               # self-contained alignment viewer
+      editorial/edits.json         # published review queue (from forage serve)
+      editorial/review_apply_ledger.json
+                                   # applied/skipped human feedback ledger
       llm_calls.jsonl              # every LLM call this book issued
     .replay_cache/                 # memoized LLM responses — tracked in git so
                                    # collaborators get deterministic replay
@@ -462,6 +607,7 @@ forage/
 | `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `anthropic:claude-sonnet-4-6` | Automatic retry on OpenAI `content_filter` (only fires if user routes drafter to OpenAI) |
 | `coherence-fix` | `FORAGE_COHERENCE_FIX_MODEL` | `anthropic:claude-sonnet-4-6` | Constrained adjacent-pair repairs with Anthropic as the primary provider |
 | `coherence-fix` fallback | `FORAGE_COHERENCE_FIX_FALLBACK_MODEL` | `openai:gpt-5` | Automatic retry when Anthropic API calls fail during repair |
+| `review-apply` | `FORAGE_REVIEW_APPLY_MODEL` | `anthropic:claude-sonnet-4-6` | Minimal source-backed incorporation of published human review feedback |
 | `critic:*` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-sonnet-4-6` | Consistent adversarial voice for signature and book critics |
 | `classify` | `FORAGE_CLASSIFY_MODEL` | `anthropic:claude-sonnet-4-6` (prompt default) | Cheap content-aware classification |
 | `summarize` | `FORAGE_SUMMARIZE_MODEL` | `openai:gpt-5` | Long-context synopsis generation |

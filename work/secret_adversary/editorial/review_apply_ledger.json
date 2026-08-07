@@ -1,0 +1,350 @@
+{
+  "ledger_version": 1,
+  "entries": [
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "8c174ed1dd1edca4246edbc3",
+      "comment_id": "14b0246e7379",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 8,
+      "comment_updated_at": 1786038662.4257317,
+      "action": "applied",
+      "reason": "The paragraph conflated Tommy's and Tuppence's dialogue and obscured the meaning of 'demobbed'. Restored the exchange as separate attributed lines following the source, clarifying that 'demobbed' refers to the hospital closing and that Tuppence asks about the gratuity.",
+      "changed_paragraphs": [
+        8
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "The paragraph conflated Tommy's and Tuppence's dialogue and obscured the meaning of 'demobbed'. Restored the exchange as separate attributed lines following the source, clarifying that 'demobbed' refers to the hospital closing and that Tuppence asks about the gratuity.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          8
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "6f62cb48ae3c7ab41894ef33",
+      "comment_id": "652ff7668a60",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 9,
+      "comment_updated_at": 1786038675.7589607,
+      "action": "applied",
+      "reason": "Added 'said Tuppence' to make the speaker clear, consistent with the source.",
+      "changed_paragraphs": [
+        9
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "Added 'said Tuppence' to make the speaker clear, consistent with the source.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          9
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "04dc87cb9a310ee45d032097",
+      "comment_id": "62ea4d726a37",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 13,
+      "comment_updated_at": 1786038252.0708416,
+      "action": "applied",
+      "reason": "Added 'officers' hospital' context from the source to clarify the setting of Tuppence's war duties.",
+      "changed_paragraphs": [
+        13
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "Added 'officers' hospital' context from the source to clarify the setting of Tuppence's war duties.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          13
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "c9df0fee432ac2f0ff04ea13",
+      "comment_id": "33a0f8dfb10b",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 14,
+      "comment_updated_at": 1786038709.0112038,
+      "action": "applied",
+      "reason": "Added 'said Tommy regretfully' to make the speaker clear, consistent with the source.",
+      "changed_paragraphs": [
+        14
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "Added 'said Tommy regretfully' to make the speaker clear, consistent with the source.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          14
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "de84db594ffa0f27f3ef31e0",
+      "comment_id": "14ca01f35f32",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 16,
+      "comment_updated_at": 1786038821.1869218,
+      "action": "applied",
+      "reason": "The pronoun 'her' had no clear antecedent. Restored the brief exchange from the source that establishes Tommy's mother as the referent before the line about the old boy hating her.",
+      "changed_paragraphs": [
+        16
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "The pronoun 'her' had no clear antecedent. Restored the brief exchange from the source that establishes Tommy's mother as the referent before the line about the old boy hating her.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          16
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260806T194626Z",
+      "used_at": "2026-08-06T19:47:13.995802+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "ad1b4e83e22be93622064fb8",
+      "comment_id": "4904570169bf",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 18,
+      "comment_updated_at": 1786038847.1149032,
+      "action": "applied",
+      "reason": "The paragraph blended Tommy's nod with Tuppence's dialogue without attribution. Separated the actions and added 'said Tuppence' to clarify the speaker, following the source.",
+      "changed_paragraphs": [
+        18
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-06T19:47:13.995802+00:00",
+        "run_id": "20260806T194626Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "The paragraph blended Tommy's nod with Tuppence's dialogue without attribution. Separated the actions and added 'said Tuppence' to clarify the speaker, following the source.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          18
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "8ed77219cc6496dac131d5b7",
+      "draft_after_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_changed": true,
+      "overlay_generated_at": 1786045503.035033,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2552
+    },
+    {
+      "run_id": "20260807T024826Z",
+      "used_at": "2026-08-07T02:48:26.110967+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "8956b5af1b9bfc2197549153",
+      "comment_id": "4904570169bf",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 18,
+      "comment_updated_at": 1786052423.0,
+      "action": "applied",
+      "reason": "Paragraphs 18-21 contain an unattributed dialogue run ('Rich relations?' through 'Wanted to adopt me once. I refused—because of my mother.'). Source confirms Tuppence asks 'Rich relations?' and 'Why not?', Tommy replies about his uncle and refusal. Added compact speaker tags to clarify attribution without broad rewrite.",
+      "changed_paragraphs": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-07T02:48:26.110967+00:00",
+        "run_id": "20260807T024826Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "Paragraphs 18-21 contain an unattributed dialogue run ('Rich relations?' through 'Wanted to adopt me once. I refused—because of my mother.'). Source confirms Tuppence asks 'Rich relations?' and 'Why not?', Tommy replies about his uncle and refusal. Added compact speaker tags to clarify attribution without broad rewrite.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          18,
+          19,
+          20,
+          21
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "0661ed8d860bf6c2a2a7154c",
+      "draft_after_hash": "d3db586fa90bfb8222478faa",
+      "draft_changed": true,
+      "overlay_generated_at": 1786052423.0,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2081
+    },
+    {
+      "run_id": "20260807T031056Z",
+      "used_at": "2026-08-07T03:11:21.596855+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "cf6eb93389ebee61a75ce2ad",
+      "comment_id": "6412ee937f80",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 45,
+      "comment_updated_at": 1786072108.9771209,
+      "action": "applied",
+      "reason": "The hostel is introduced here for the first time without context. The source chapter resolves this by mentioning the hostel's location in the very next paragraph. Adding a brief parenthetical or inline note about its location at first mention provides the needed context. The simplest fix is to append the location detail from the source's next paragraph into the line itself, or to let the following paragraph (which already mentions the hostel's location) do the work. Since the following paragraph already reads 'Tuppence's hostel was situated in what was charitably called Southern Belgravia,' the cleanest minimal fix is to reorder so the hostel is introduced with its location on first mention, or simply add a brief appositive. The least invasive change is to add 'in Southern Belgravia' to the first mention.",
+      "changed_paragraphs": [
+        45
+      ],
+      "comment_response": {
+        "source": "review_apply",
+        "processed_at": "2026-08-07T03:11:21.596855+00:00",
+        "run_id": "20260807T031056Z",
+        "segment_id": "002",
+        "action": "applied",
+        "body": "The hostel is introduced here for the first time without context. The source chapter resolves this by mentioning the hostel's location in the very next paragraph. Adding a brief parenthetical or inline note about its location at first mention provides the needed context. The simplest fix is to append the location detail from the source's next paragraph into the line itself, or to let the following paragraph (which already mentions the hostel's location) do the work. Since the following paragraph already reads 'Tuppence's hostel was situated in what was charitably called Southern Belgravia,' the cleanest minimal fix is to reorder so the hostel is introduced with its location on first mention, or simply add a brief appositive. The least invasive change is to add 'in Southern Belgravia' to the first mention.",
+        "draft_changed": true,
+        "changed_paragraphs": [
+          45
+        ],
+        "model": "anthropic:claude-sonnet-4-6"
+      },
+      "draft_before_hash": "d3db586fa90bfb8222478faa",
+      "draft_after_hash": "bcc44dc5e021dae8e96075c0",
+      "draft_changed": true,
+      "overlay_generated_at": 1786072196.4235725,
+      "prompt": "review_apply_segment",
+      "model": "anthropic:claude-sonnet-4-6",
+      "input_tokens": 3,
+      "output_tokens": 2150
+    },
+    {
+      "run_id": "manual_review_correction_20260807T031121Z",
+      "used_at": "2026-08-07T03:19:06.588493+00:00",
+      "book_id": "secret_adversary",
+      "segment_id": "002",
+      "feedback_key": "cf6eb93389ebee61a75ce2ad",
+      "comment_id": "6412ee937f80",
+      "scope": "paragraph",
+      "source_segment_id": "002",
+      "draft_para": 45,
+      "comment_updated_at": 1786072108.9771209,
+      "action": "skipped",
+      "reason": "Correction: the previous applied response was reverted. The source also first mentions Tuppence's hostel at this point and only gives Southern Belgravia in the following paragraph, so the reviewer claim did not require a fidelity fix.",
+      "changed_paragraphs": [],
+      "comment_response": {
+        "source": "review_apply_correction",
+        "processed_at": "2026-08-07T03:19:06.588493+00:00",
+        "run_id": "manual_review_correction_20260807T031121Z",
+        "segment_id": "002",
+        "action": "skipped",
+        "body": "Correction: the previous applied response was reverted. The source also first mentions Tuppence's hostel at this point and only gives Southern Belgravia in the following paragraph, so the reviewer claim did not require a fidelity fix.",
+        "draft_changed": true,
+        "changed_paragraphs": [],
+        "model": ""
+      },
+      "draft_before_hash": "bcc44dc5e021dae8e96075c0",
+      "draft_after_hash": "d3db586fa90bfb8222478faa",
+      "draft_changed": true,
+      "overlay_generated_at": 1786072196.4235725,
+      "prompt": "review_apply_segment",
+      "model": "",
+      "input_tokens": 0,
+      "output_tokens": 0
+    }
+  ],
+  "last_updated_at": "2026-08-07T03:19:06.588493+00:00"
+}

@@ -7,9 +7,12 @@ reads that + plan.json and asks the LLM for the compressed draft.
 
 from __future__ import annotations
 
+import json
 import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from .artifacts import Book, read_json, segment_source_path, write_json, write_text
 from .chapter_split import split_to_disk
@@ -179,6 +182,65 @@ def _complete_draft_with_exception_fallback(
             work_dir=book.work_dir,
             stage=fallback_stage,
         )
+
+
+_CHAPTER_NOTES_RE = re.compile(
+    r"<!--\s*FORAGE_CHAPTER_NOTES\s*(.*?)\s*-->",
+    flags=re.DOTALL,
+)
+_CHAPTER_NOTE_LIST_FIELDS = ("acceptable_changes", "risks", "review_focus")
+_CHAPTER_NOTE_TEXT_FIELDS = ("summary",)
+
+
+def _normalize_chapter_notes(data: Any) -> dict[str, Any]:
+    if not isinstance(data, dict):
+        return {}
+    out: dict[str, Any] = {}
+    for key in _CHAPTER_NOTE_TEXT_FIELDS:
+        value = str(data.get(key) or "").strip()
+        if value:
+            out[key] = value[:1200]
+    for key in _CHAPTER_NOTE_LIST_FIELDS:
+        value = data.get(key)
+        if isinstance(value, str):
+            items = [value]
+        elif isinstance(value, list):
+            items = value
+        else:
+            items = []
+        cleaned = [str(item).strip()[:800] for item in items if str(item).strip()]
+        if cleaned:
+            out[key] = cleaned[:8]
+    return out
+
+
+def _extract_chapter_notes(text: str) -> tuple[str, dict[str, Any]]:
+    """Remove the reviewer-note sidecar marker from model output.
+
+    The marker is intentionally an HTML comment so a malformed parser cannot
+    expose it as prose in most Markdown renderers, but it still must not land
+    in segments/*.md or the assembled abridgment.
+    """
+    notes: dict[str, Any] = {}
+    parse_error = ""
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal notes, parse_error
+        raw = match.group(1).strip()
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            parse_error = str(exc)
+            return ""
+        normalized = _normalize_chapter_notes(parsed)
+        if normalized:
+            notes = normalized
+        return ""
+
+    cleaned = _CHAPTER_NOTES_RE.sub(replace, text).strip()
+    if parse_error and not notes:
+        notes = {"parse_error": parse_error[:500]}
+    return cleaned, notes
 
 
 def build_draft_group_request(book: Book, plan: dict, group_id: str) -> DraftGroupBuild:
@@ -467,13 +529,15 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
 
     for idx, m in enumerate(members):
         body_text = section_bodies[idx] if idx < len(section_bodies) else ""
+        body_text, chapter_notes = _extract_chapter_notes(body_text)
         (seg_dir / f"{m['id']}.md").write_text(body_text + "\n")
         draft_words = len(body_text.split())
         _write_checks(seg_dir / f"{m['id']}.checks.json", m,
                       source_words=m["source_word_count"],
                       draft_words=draft_words,
                       signature_hits=0, signature_misses=[],
-                      status="drafted" if draft_words > 0 else "error")
+                      status="drafted" if draft_words > 0 else "error",
+                      chapter_notes=chapter_notes)
 
 
 def draft_segment(
@@ -601,12 +665,13 @@ def draft_segment(
             stage=fallback_stage,
         )
 
-    draft_text = resp.text.strip()
+    draft_text, chapter_notes = _extract_chapter_notes(resp.text.strip())
     if draft_text == "CUT":
         write_text(seg_dir / f"{segment_id}.md", "")
         _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
                       source_words=source_words, draft_words=0,
-                      signature_hits=0, signature_misses=[], status="cut")
+                      signature_hits=0, signature_misses=[], status="cut",
+                      chapter_notes=chapter_notes)
         return DraftResult(
             segment_id=segment_id, title=segment.get("title", ""),
             status="cut", source_words=source_words,
@@ -641,7 +706,7 @@ def draft_segment(
             work_dir=book.work_dir,
             stage=retry_stage,
         )
-        draft_text = resp.text.strip()
+        draft_text, chapter_notes = _extract_chapter_notes(resp.text.strip())
 
     # If still empty after the thinking-retry (or thinking wasn't max to begin
     # with), report error. Don't leave a stale .md around.
@@ -651,7 +716,8 @@ def draft_segment(
             draft_path.unlink()
         _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
                       source_words=source_words, draft_words=0,
-                      signature_hits=0, signature_misses=[], status="error")
+                      signature_hits=0, signature_misses=[], status="error",
+                      chapter_notes=chapter_notes)
         return DraftResult(
             segment_id=segment_id, title=segment.get("title", ""),
             status="error", source_words=source_words,
@@ -679,7 +745,8 @@ def draft_segment(
                    f"max_tokens. Bump max_tokens or reduce thinking effort.")
     _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
                   source_words=source_words, draft_words=draft_words,
-                  signature_hits=hits, signature_misses=misses, status=status)
+                  signature_hits=hits, signature_misses=misses, status=status,
+                  chapter_notes=chapter_notes)
 
     # Refresh the cumulative motif ledger so the next segment's drafter sees
     # up-to-date running state.
@@ -746,10 +813,11 @@ def _check_signatures(draft: str, signatures: list[dict]) -> tuple[int, list[dic
 
 def _write_checks(path: Path, segment: dict, *, source_words: int,
                   draft_words: int, signature_hits: int,
-                  signature_misses: list[dict] | list[str], status: str) -> None:
+                  signature_misses: list[dict] | list[str], status: str,
+                  chapter_notes: dict[str, Any] | None = None) -> None:
     target = segment.get("target_word_count", 0)
     delta = (draft_words - target) / target if target else None
-    write_json(path, {
+    data: dict[str, Any] = {
         "segment_id": segment["id"],
         "title": segment.get("title", ""),
         "status": status,
@@ -760,7 +828,10 @@ def _write_checks(path: Path, segment: dict, *, source_words: int,
         "signatures_total": len(segment.get("signatures", [])),
         "signatures_matched": signature_hits,
         "signatures_missed": signature_misses,
-    })
+    }
+    if chapter_notes:
+        data["chapter_notes"] = chapter_notes
+    write_json(path, data)
 
 
 def draft_all(book: Book, plan: dict) -> list[DraftResult]:

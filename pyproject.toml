@@ -19,6 +19,13 @@ dependencies = [
     "pillow>=10.0",
 ]
 
+[project.optional-dependencies]
+# Editorial review web app (forage serve). Not needed for the CLI pipeline.
+web = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+]
+
 [project.scripts]
 forage = "forage.cli:app"
 
@@ -29,3 +36,6 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["forage*"]
+
+[tool.setuptools.package-data]
+"forage.webapp" = ["static/*"]

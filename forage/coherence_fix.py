@@ -731,7 +731,8 @@ def _update_checks(path: Path, *, segment: dict, source_words: int, draft_words:
     if not isinstance(sig_misses, list):
         sig_misses = []
     status = "drafted" if draft_words > 0 else old.get("status", "drafted")
-    write_json(path, {
+    updated = dict(old) if isinstance(old, dict) else {}
+    updated.update({
         "segment_id": segment["id"],
         "title": segment.get("title", ""),
         "status": status,
@@ -743,3 +744,4 @@ def _update_checks(path: Path, *, segment: dict, source_words: int, draft_words:
         "signatures_matched": sig_hits,
         "signatures_missed": sig_misses,
     })
+    write_json(path, updated)

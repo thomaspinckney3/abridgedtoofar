@@ -39,6 +39,7 @@ from .prepass import run_prepass
 from .prime import run_prime
 from .rebudget import rebudget
 from .reconsider import reconsider_segment
+from .review_apply import apply_review_feedback
 from .validate import validate_book
 
 load_dotenv()
@@ -1443,6 +1444,191 @@ def proofread(book_id: str,
             console.print(f"  [red]{sid}:[/red] {reason}")
     out = render_proofread_html(book)
     console.print(f"[green]wrote[/green] {out}")
+
+
+@app.command(name="review-apply")
+def review_apply_cmd(
+    book_id: str,
+    segment: list[str] = typer.Option(
+        [], "--segment", "-s",
+        help="Only consider this chapter id. Repeatable. Recommended for testing."),
+    edits: Path | None = typer.Option(
+        None, "--edits",
+        help="Published edits overlay. Defaults to work/<book>/editorial/edits.json."),
+    max_segments: int | None = typer.Option(
+        None, "--max-segments",
+        help="Limit the number of chapters processed in this run."),
+    include_book_comments: bool = typer.Option(
+        True, "--include-book-comments/--no-book-comments",
+        help="Consider book-level comments for each selected chapter."),
+    apply_: bool = typer.Option(
+        False, "--apply",
+        help="Call the LLM and update drafts plus the feedback ledger. "
+             "Omit for zero-cost planning."),
+    dry_run: bool = typer.Option(
+        False, "--dry-run",
+        help="Call the LLM but do not write drafts, reports, or the ledger. "
+             "Requires --apply."),
+    stream: bool = typer.Option(
+        True, "--stream/--no-stream",
+        help="Stream raw LLM output when --apply is used."),
+) -> None:
+    """Apply public review feedback as a constrained LLM repair pass.
+
+    By default this only reports pending feedback and makes no model calls.
+    Use --apply for the paid pass. Applied and skipped feedback are both
+    recorded in work/<book>/editorial/review_apply_ledger.json.
+    """
+    if max_segments is not None and max_segments < 1:
+        raise typer.BadParameter("--max-segments must be at least 1")
+    if dry_run and not apply_:
+        raise typer.BadParameter("--dry-run only has meaning with --apply")
+    book = load_book(book_id)
+    if apply_ and stream:
+        def _sink(chunk: str) -> None:
+            sys.stdout.write(chunk)
+            sys.stdout.flush()
+        set_stream_sink(_sink)
+        console.rule("[dim]raw stream[/dim]")
+
+    report = apply_review_feedback(
+        book,
+        segment_ids=segment or None,
+        edits_path=edits,
+        max_segments=max_segments,
+        include_book_comments=include_book_comments,
+        plan_only=not apply_,
+        dry_run=dry_run,
+    )
+    if apply_ and stream:
+        sys.stdout.write("\n")
+    _render_review_apply(report)
+
+
+def _render_review_apply(report: dict) -> None:
+    mode = "plan-only" if report.get("plan_only") else (
+        "dry-run" if report.get("dry_run") else "apply")
+    console.rule(f"[bold]review-apply: {report['book_id']}[/bold]")
+    tally = Table.grid(padding=(0, 1))
+    tally.add_column(style="dim")
+    tally.add_column()
+    tally.add_row("mode", mode)
+    tally.add_row("edits", report.get("edits_path", ""))
+    tally.add_row("ledger", report.get("ledger_path", ""))
+    tally.add_row("segments considered", str(report.get("segments_considered", 0)))
+    tally.add_row("segments planned", str(report.get("segments_planned", 0)))
+    tally.add_row("pending feedback", str(report.get("pending_feedback", 0)))
+    tally.add_row("already used", str(report.get("already_used_feedback", 0)))
+    if not report.get("plan_only"):
+        tally.add_row("segments applied", str(report.get("segments_applied", 0)))
+        tally.add_row("segments no-change", str(report.get("segments_no_change", 0)))
+        tally.add_row("segments failed", str(report.get("segments_failed", 0)))
+    console.print(Panel(tally, title="review-apply summary"))
+    if report.get("needs_segment_for_book_comments"):
+        console.print(
+            "[yellow]book-level feedback exists, but no chapter comments selected "
+            "a target; rerun with --segment to test it against specific chapters[/yellow]")
+
+    rows = report.get("segments", [])
+    if not rows:
+        console.print("[yellow]no pending feedback for the requested scope[/yellow]")
+        return
+
+    t = Table(title="chapters", show_lines=False)
+    t.add_column("chapter")
+    if report.get("plan_only"):
+        t.add_column("pending", justify="right")
+        t.add_column("used", justify="right")
+        t.add_column("total", justify="right")
+        t.add_column("scopes")
+        for row in rows:
+            scopes = _review_scope_summary(row.get("pending", []))
+            t.add_row(
+                row["segment_id"],
+                str(row.get("pending_count", 0)),
+                str(row.get("used_count", 0)),
+                str(row.get("total_count", 0)),
+                scopes or "—",
+            )
+    else:
+        t.add_column("status", width=12)
+        t.add_column("feedback", justify="right")
+        t.add_column("words", justify="right")
+        t.add_column("changed")
+        for row in rows:
+            words = ""
+            if "before_words" in row and "after_words" in row:
+                words = f"{row['before_words']}->{row['after_words']}"
+            t.add_row(
+                row["segment_id"],
+                row.get("status", ""),
+                str(row.get("feedback_count", 0)),
+                words,
+                "yes" if row.get("changed") else "no",
+            )
+    console.print(t)
+
+
+def _review_scope_summary(items: list[dict]) -> str:
+    counts: dict[str, int] = {}
+    for item in items:
+        scope = str(item.get("scope") or "?")
+        counts[scope] = counts.get(scope, 0) + 1
+    return ", ".join(f"{k}={v}" for k, v in sorted(counts.items()))
+
+
+@app.command()
+def serve(host: str = typer.Option("127.0.0.1", help="Bind address. Use 0.0.0.0 in a container."),
+          port: int = typer.Option(8000, help="Port to listen on."),
+          reload: bool = typer.Option(False, "--reload", help="Restart on code changes.")) -> None:
+    """Run the editorial review web app: the proofread alignment view, plus a
+    comment queue that publishes to work/<book>/editorial/edits.json.
+
+    Reading is public. Commenting needs FORAGE_REVIEW_TOKEN; publishing needs
+    FORAGE_ADMIN_TOKEN. When the review token is unset one is generated and
+    printed here — nothing can be written without it. Zero LLM cost."""
+    try:
+        import uvicorn
+    except ImportError:
+        console.print("[red]uvicorn is not installed[/red] — pip install 'uvicorn[standard]' fastapi")
+        raise typer.Exit(code=1)
+
+    from .webapp.auth import AuthConfig, AuthConfigError
+    from .webapp.store import ArtifactStore, ReviewStore
+
+    try:
+        auth = AuthConfig.from_env()
+    except AuthConfigError as e:
+        console.print(f"[red]{e}[/red]")
+        raise typer.Exit(code=1)
+    artifacts = ArtifactStore()
+    reviews = ReviewStore()
+
+    console.rule("[bold]forage serve[/bold]")
+    console.print(f"artifacts  {artifacts.work_dir}")
+    console.print(f"review db  {reviews.db_path}")
+    console.print(f"books      {', '.join(artifacts.book_ids()) or '(none aligned yet)'}")
+    if "FORAGE_REVIEW_TOKEN" in auth.generated:
+        console.print(f"[yellow]review token[/yellow] {auth.review_token}  "
+                      f"[dim](generated — set FORAGE_REVIEW_TOKEN to keep it stable)[/dim]")
+    console.print("admin      " + ("enabled via FORAGE_ADMIN_TOKEN"
+                                   if auth.admin_enabled
+                                   else "[dim]disabled — publishing is unavailable "
+                                        "until FORAGE_ADMIN_TOKEN is set[/dim]"))
+    if "FORAGE_SECRET_KEY" in auth.generated:
+        console.print("[dim]FORAGE_SECRET_KEY unset — sessions end when this process does[/dim]")
+    console.print(f"[green]listening on[/green] http://{host}:{port}")
+
+    if reload:
+        # The reloader re-imports in a subprocess, so generated values have to
+        # survive into it or sign-in breaks on every restart.
+        os.environ.setdefault("FORAGE_REVIEW_TOKEN", auth.review_token)
+        os.environ.setdefault("FORAGE_SECRET_KEY", auth.secret_key.decode())
+        uvicorn.run("forage.webapp.app:get_app", factory=True,
+                    host=host, port=port, reload=True)
+    else:
+        from .webapp.app import create_app
+        uvicorn.run(create_app(artifacts, reviews, auth), host=host, port=port)
 
 
 @app.command()

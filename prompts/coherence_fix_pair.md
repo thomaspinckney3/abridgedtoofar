@@ -29,6 +29,13 @@ For orphaned names, make the smallest local repair: either add a compact gloss
 with the existing clear descriptor. Do not restore a cut scene just to
 reintroduce a minor character.
 
+For `unattributed_dialogue`, make the smallest local repair: add compact
+speaker tags or action beats from the source where the draft has quote-only
+turns that no longer identify the speaker. Preserve paragraph order and do not
+invent new dialogue. If the source already has a short attribution such as
+`Tommy said`, `Tuppence asked`, or an action beat that identifies the speaker,
+prefer restoring that over rewriting the exchange.
+
 Return ONLY one JSON object and nothing else.
 
 {

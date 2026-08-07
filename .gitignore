@@ -23,15 +23,21 @@ build/
 # Claude Code runtime state (not repo-relevant)
 .claude/
 
-# Large experimental graphic-novel intermediates. Keep metadata, replay
-# caches, PDFs, and contact sheets trackable; leave page/debug image batches
-# local unless explicitly promoted.
-work/**/graphic_novel/**/generated_pages*/**
-work/**/graphic_novel/**/debug_pages*/**
-work/**/graphic_novel/**/panel_art/**
-work/**/graphic_novel/**/panel_art_v*/**
-work/**/graphic_novel/**/rough_pages*/**
-work/**/graphic_novel/**/thumbnail_rough_pages*/**
-work/**/graphic_novel/**/speaker_anchor_grid/**
-work/**/graphic_novel/**/lettered_pages*/**
-!work/**/graphic_novel/**/lettered_pages*/lettered_book.pdf
+# Review app state: the comment queue is per-deployment, not repo content
+work/_review/
+
+# Deploy payload — derived from work/ by scripts/package_review_artifacts.py
+deploy/
+
+# Large graphic-novel rendered outputs. Keep stage-level pipeline metadata,
+# prompts, source excerpts, JSON reports/manifests, and replay caches trackable.
+work/**/graphic_novel/**/*.png
+work/**/graphic_novel/**/*.jpg
+work/**/graphic_novel/**/*.jpeg
+work/**/graphic_novel/**/*.webp
+work/**/graphic_novel/**/*.gif
+work/**/graphic_novel/**/*.tif
+work/**/graphic_novel/**/*.tiff
+work/**/graphic_novel/**/*.pdf
+work/**/graphic_novel/**/lettered_pages*/layout.json
+work/**/graphic_novel/**/lettered_pages*/lettering_layout.json

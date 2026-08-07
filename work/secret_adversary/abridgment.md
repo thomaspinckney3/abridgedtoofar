@@ -48,11 +48,17 @@ The girl assented, and they walked down Dover Street towards Piccadilly. The ver
 
 "Not a bit of it. Rolling in cash."
 
-"You always were a shocking liar."
+"You always were a shocking liar," said Tuppence severely, "though you did once persuade Sister Greenbank that the doctor had ordered you beer as a tonic. Do you remember?"
 
-Tommy chuckled. "Demobbed like everything else, I suppose. Two months ago. Gratuity? Spent. The cost of living—"
+Tommy chuckled. "Good old hospital—demobbed like everything else, I suppose?"
 
-"My dear child, there is nothing I do *not* know about the cost of living. Here we are at Lyons', and we will each pay for our own."
+Tuppence sighed. "Yes. You too?" Tommy nodded. "Two months ago."
+
+"Gratuity?" hinted Tuppence.
+
+"Spent. The cost of living—"
+
+"My dear child," interrupted Tuppence, "there is nothing I do *not* know about the cost of living. Here we are at Lyons', and we will each pay for our own."
 
 They found a table. "Funny scraps one does overhear," murmured Tommy. "I passed two Johnnies in the street to-day talking about some one called Jane Finn. Did you ever hear such a name?"
 
@@ -60,17 +66,23 @@ Tommy was pleasantly ugly, with a shock of slicked-back red hair—nondescript, 
 
 "Now then," said Tommy, taking a large bite of bun. "Let's get up-to-date. I haven't seen you since that time in hospital in 1916."
 
-"Very well." Tuppence helped herself liberally to buttered toast and gave the abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk: ward duties, plate-washing, peeling potatoes, sweeping out wards (where she found a friend of her childhood in Lieutenant Thomas Beresford—bow, Tommy!), then a trade van, a motor-lorry, and a young general. "After that, a Government office, and several enjoyable tea parties—until I was combed out at last. Since then I've been looking for a job. Now—your turn."
+"Very well." Tuppence helped herself liberally to buttered toast and gave the abridged biography of Miss Prudence Cowley, fifth daughter of Archdeacon Cowley of Little Missendell, Suffolk: she had entered an officers' hospital, where her duties ran from plate-washing and peeling potatoes to sweeping out wards (where she found a friend of her childhood in Lieutenant Thomas Beresford—bow, Tommy!), then a trade van, a motor-lorry, and a young general. "After that, a Government office, and several enjoyable tea parties—until I was combed out at last. Since then I've been looking for a job. Now—your turn."
 
-"There's less variety in mine. France, Mesopotamia, wounded again, hospital out there, Egypt till the Armistice, finally demobbed. For ten long, weary months I've been job hunting. There aren't any jobs. And, if there were, they wouldn't give 'em to me. What good am I?"
+"There's not so much promotion in mine," said Tommy regretfully, "and a great deal less variety. France, Mesopotamia, wounded again, hospital out there, Egypt till the Armistice, finally demobbed. For ten long, weary months I've been job hunting. There aren't any jobs. And, if there were, they wouldn't give 'em to me. What good am I?"
 
-"Rich relations?"
+"Rich relations?" asked Tuppence.
 
-"An old uncle who's more or less rolling. Wanted to adopt me once. I refused—because of the mater. Old boy hated her."
+"I've got an old uncle who's more or less rolling, but he's no good."
+
+"Why not?" she pressed.
+
+"Wanted to adopt me once. I refused—because of my mother. You see, he hated her—wanted to get me away from her."
 
 "Your mother's dead, isn't she?" said Tuppence gently.
 
-Tommy nodded. Tuppence's grey eyes looked misty. "You're a good sort, Tommy."
+Tommy nodded.
+
+"You're a good sort, Tommy," said Tuppence. Her grey eyes looked misty. "I always knew it."
 
 "Rot! Well, that's my position. I'm just about desperate."
 

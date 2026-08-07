@@ -1,0 +1,61 @@
+{
+  "ts": "2026-08-06T22:55:03",
+  "key": "4724777b3c0b65fdafbbdd8b553b0743",
+  "model": "anthropic:claude-sonnet-4-6",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "align",
+    "hash": "87b28675be46afb012611b4afdec0014",
+    "files": [
+      {
+        "path": "forage/align.py",
+        "sha256": "d0434ca22834d740c119065c686f13af345a3d2a2e961fb1f5265e1943ddcae6",
+        "missing": false
+      },
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      },
+      {
+        "path": "prompts/align.md",
+        "sha256": "52e67c4885a222ad993ae602747376ae099b918bcdc4333a3fc0fc28834777da",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "```json\n[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"paraphrased\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed \u2014 omits second half of Tommy's speech\"},\n  {\"draft_para\": 4, \"source_paras\": [4, 5, 6], \"note\": \"compressed \u2014 merges walking, 'where shall we go', and Tuppence's observation\"},\n  {\"draft_para\": 5, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 6, \"source_paras\": [8], \"note\": \"compressed \u2014 omits 'unconvincingly'\"},\n  {\"draft_para\": 7, \"source_paras\": [9], \"note\": \"compressed \u2014 omits end of Tuppence's speech\"},\n  {\"draft_para\": 8, \"source_paras\": [10, 11], \"note\": \"compressed \u2014 merges chuckle and Tommy's speech, omitting most of it\"},\n  {\"draft_para\": 9, \"source_paras\": [12, 13, 14, 15], \"note\": \"compressed \u2014 merges sigh, yes/you too, nod, and two months ago\"},\n  {\"draft_para\": 10, \"source_paras\": [16], \"note\": \"verbatim\"},\n  {\"draft_para\": 11, \"source_paras\": [17, 19], \"note\": \"compressed \u2014 merges 'Spent' and start of cost-of-living speech\"},\n  {\"draft_para\": 12, \"source_paras\": [20], \"note\": \"compressed \u2014 omits leading to Lyons' upstairs detail\"},\n  {\"draft_para\": 13, \"source_paras\": [21, 23, 24], \"note\": \"compressed \u2014 omits overheard conversation detail, merges finding table and Jane Finn remark\"},\n  {\"draft_para\": 14, \"source_paras\": [27, 28], \"note\": \"compressed \u2014 merges Tommy and Tuppence physical descriptions, omitting some detail\"},\n  {\"draft_para\": 15, \"source_paras\": [29, 30], \"note\": \"compressed \u2014 merges tea pouring and Tommy's invitation to catch up\"},\n  {\"draft_para\": 16, \"source_paras\": [31, 32, 33], \"note\": \"compressed \u2014 heavily abridges Tuppence's biography monologue and subsequent exchange\"},\n  {\"draft_para\": 17, \"source_paras\": [34], \"note\": \"compressed \u2014 abridges Tommy's account\"},\n  {\"draft_para\": 18, \"source_paras\": [39], \"note\": \"compressed \u2014 skips colonies exchange\"},\n  {\"draft_para\": 19, \"source_paras\": [42], \"note\": \"verbatim\"},\n  {\"draft_para\": 20, \"source_paras\": [43], \"note\": \"paraphrased\"},\n  {\"draft_para\": 21, \"source_paras\": [44, 45, 47], \"note\": \"compressed \u2014 merges refusal and reason, omits Tommy's flush\"},\n  {\"draft_para\": 22, \"source_paras\": [48], \"note\": \"verbatim\"},\n  {\"draft_para\": 23, \"source_paras\": [49], \"note\": \"verbatim\"},\n  {\"draft_para\": 24, \"source_paras\": [50, 51], \"note\": \"compressed \u2014 merges Tuppence's misty eyes and compliment\"},\n  {\"draft_para\": 25, \"source_paras\": [52], \"note\": \"compressed\"},\n  {\"draft_para\": 26, \"source_paras\": [53, 54, 55], \"note\": \"compressed \u2014 abridges Tuppence's going-home speech\"},\n  {\"draft_para\": 27, \"source_paras\": [57, 59, 61], \"note\": \"compressed \u2014 merges money outburst, three ways speech, and marriage resolution\"},\n  {\"draft_para\": 28, \"source_paras\": [62], \"note\": \"compressed \u2014 omits lead-in\"},\n  {\"draft_para\": 29, \"source_paras\": [63], \"note\": \"compressed \u2014 omits opening clause\"},\n  {\"draft_para\": 30, \"source_paras\": [58, 72], \"note\": \"compressed \u2014 blends 'same here' with 'we've tried and failed'\"},\n  {\"draft_para\": 31, \"source_paras\": [72, 73], \"note\": \"compressed\"},\n  {\"draft_para\": 32, \"source_paras\": [74], \"note\": \"compressed\"},\n  {\"draft_para\": 33, \"source_paras\": [75], \"note\": \"paraphrased\"},\n  {\"draft_para\": 34, \"source_paras\": [76], \"note\": \"compressed \u2014 omits 'Delightful,'\"},\n  {\"draft_para\": 35, \"source_paras\": [77, 83, 85], \"note\": \"compressed \u2014 merges moral guilt reply with joint venture phrase, omitting intervening exchange\"},\n  {\"draft_para\": 36, \"source_paras\": [86], \"note\": \"compressed \u2014 omits 'Is that your idea, Tuppence?'\"},\n  {\"draft_para\": 37, \"source_paras\": [87, 88, 89], \"note\": \"compressed \u2014 merges don't laugh, how to advertise, and paper request\"},\n  {\"draft_para\": 38, \"source_paras\": [90], \"note\": \"paraphrased\"},\n  {\"draft_para\": 39, \"source_paras\": [95, 97, 99], \"note\": \"compressed \u2014 gives final advertisement text, omitting drafting back-and-forth\"},\n  {\"draft_para\": 40, \"source_paras\": [100], \"note\": \"compressed\"},\n  {\"draft_para\": 41, \"source_paras\": [101], \"note\": \"compressed \u2014 omits pricing/half-crown detail\"},\n  {\"draft_para\": 42, \"source_paras\": [102, 103], \"note\": \"compressed\"},\n  {\"draft_para\": 43, \"source_paras\": [104, 105], \"note\": \"compressed\"},\n  {\"draft_para\": 44, \"source_paras\": [106], \"note\": \"verbatim\"},\n  {\"draft_para\": 45, \"source_paras\": [107, 108], \"note\": \"compressed\"},\n  {\"draft_para\": 46, \"source_paras\": [109], \"note\": \"compressed \u2014 omits grin and 'when?'\"},\n  {\"draft_para\": 47, \"source_paras\": [110], \"note\": \"compressed \u2014 omits 'Will that suit you?'\"},\n  {\"draft_para\": 48, \"source_paras\": [111], \"note\": \"verbatim\"},\n  {\"draft_para\": 49, \"source_paras\": [114], \"note\": \"verbatim\"},\n  {\"draft_para\": 50, \"source_paras\": [115], \"note\": \"paraphrased\"},\n  {\"draft_para\": 51, \"source_paras\": [116], \"note\": \"verbatim\"}\n]\n```",
+    "input_tokens": 6856,
+    "output_tokens": 1816,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 25.39527988433838,
+    "stop_reason": "end_turn"
+  }
+}

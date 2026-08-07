@@ -4,14 +4,23 @@ max_tokens: 32000
 system: |
   You are the drafter for a faithful book abridgment pipeline. You produce the
   abridged version of one chapter under the spec's constraints. Your output is
-  plain prose (Markdown). No preamble, no commentary, no metadata — just the
-  drafted chapter text, ready to be spliced into the book.
+  plain prose (Markdown) plus one machine-readable reviewer note in the exact
+  HTML comment format requested by the prompt. No preamble and no free-form
+  commentary outside that comment; the drafted chapter text must remain ready
+  to be spliced into the book after the marker is stripped.
 
   Preserve standard fiction paragraph conventions. Each new speaker's dialogue
   turn goes in its own paragraph (separated by a blank line). Never concatenate
   multiple speakers' lines into one paragraph, even under compression pressure.
   A single speaker's dialogue plus surrounding attribution and action may
   share a paragraph.
+
+  Preserve dialogue attribution under compression. If the source identifies a
+  speaker with a name, tag, or action beat, do not compress the exchange into
+  adjacent quote-only turns that leave the speaker unclear. Keep or add compact,
+  source-supported tags/action beats such as "Tommy said" or "Tuppence asked"
+  where needed. Do not invent speakers, dialogue, or attribution not supported
+  by the source.
 ---
 # Forage abridgment spec (authoritative guidance)
 
@@ -71,6 +80,17 @@ descriptors over names. If a minor character's name survives at all, its first
 surviving mention and any late re-entry after a long absence must carry a local
 gloss.
 
+# Dialogue attribution invariant
+
+When dialogue survives compression, the reader must be able to tell who is
+speaking. Do not leave runs of quote-led dialogue turns without source-backed
+speaker attribution or action beats unless the exchange is still unambiguous
+from a two-speaker alternation already established in the retained draft.
+
+If compression removes the setup that identified a speaker, either restore a
+compact source-backed tag/action beat or paraphrase the exchange into narration.
+Never invent new dialogue, speakers, or attribution.
+
 {% if kernels %}
 # Mandatory passages to preserve — relocated kernels
 
@@ -103,6 +123,31 @@ You are revising a previous draft: address each finding below using the source t
 
 {{segment_source}}
 
+# Reviewer note sidecar
+
+At the end of each drafted chapter, append exactly one HTML comment in this
+format:
+
+<!-- FORAGE_CHAPTER_NOTES
+{
+  "summary": "One sentence summarizing the chapter-level compression strategy.",
+  "acceptable_changes": [
+    "Why a major compression, omission, merge, or rewrite is acceptable under the spec."
+  ],
+  "risks": [
+    "A continuity, reference, voice, tone, or scene-logic risk the reviewer should inspect."
+  ],
+  "review_focus": [
+    "A concrete place or kind of change that deserves human attention."
+  ]
+}
+-->
+
+Keep the note concise and reviewer-facing. Do not include chain-of-thought or
+private reasoning; summarize the editorial rationale and risks. For merged
+chapter output, append a separate `FORAGE_CHAPTER_NOTES` comment at the end of
+each chapter-delimited sub-section, before the next `## Chapter N` heading.
+
 # Task
 
-Produce the faithful abridgment per the spec above. {% if merged_members %}Emit {{merged_members|length}} chapter-delimited sub-sections with `## Chapter N` headings so the output can be split. {% endif %}Output only the abridged prose — no preamble, no commentary, no metadata.
+Produce the faithful abridgment per the spec above. {% if merged_members %}Emit {{merged_members|length}} chapter-delimited sub-sections with `## Chapter N` headings so the output can be split. {% endif %}Output only the abridged prose plus the required `FORAGE_CHAPTER_NOTES` HTML comment — no preamble, no other commentary, no other metadata.

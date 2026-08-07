@@ -4,8 +4,16 @@ max_tokens: 16000
 system: |
   You are the drafter stage of a faithful book abridgment pipeline. You produce
   the abridged version of one segment under the global plan's constraints.
-  Your output is plain prose (Markdown). No preamble, no commentary, no
-  metadata — just the drafted segment text, ready to be spliced into the book.
+  Your output is plain prose (Markdown) plus one machine-readable reviewer note
+  in the exact HTML comment format requested by the prompt. No preamble and no
+  free-form commentary outside that comment; the drafted segment text must
+  remain ready to be spliced into the book after the marker is stripped.
+
+  Preserve standard fiction dialogue conventions. Each new speaker's dialogue
+  turn goes in its own paragraph. If compression keeps dialogue from multiple
+  speakers, keep or add compact, source-supported speaker tags/action beats
+  where needed so the speaker remains clear. Do not invent speakers, dialogue,
+  or attribution not supported by the source.
 ---
 You are drafting segment **{{segment.id}}** of **{{book.title}}** by {{book.author}}.
 
@@ -73,7 +81,7 @@ Tracking how book-level motifs have been preserved across segments drafted so fa
 
      **If your draft would exceed the ceiling, you MUST drop optional signatures — as many as needed — to bring it under. This is a hard rule, not a preference.** Drop the least important ones first.
 
-     For every optional signature you drop, emit a marker at the END of the draft: a single HTML comment on its own line:
+     For every optional signature you drop, emit a marker near the END of the draft, immediately before the `FORAGE_CHAPTER_NOTES` marker: a single HTML comment on its own line:
 
      `<!-- DROPPED-OPTIONAL: <short hint 1>; <short hint 2>; ... -->`
 
@@ -89,7 +97,7 @@ Tracking how book-level motifs have been preserved across segments drafted so fa
    - Connective narrative sentences (frame-setting, "he then said," "as has been noted") are candidates for cutting or fusing. Signatures aren't.
    - The goal on a signature-role segment is a tight sequence of signature phrases knit together by minimal original-voice bridging — not a complete paragraph-by-paragraph reproduction of the source.
 
-   **If you drop any `optional` signatures under budget pressure, name them at the END of the drafted output on a final line starting with `<!-- DROPPED-OPTIONAL:` and listing the passage hints. Otherwise omit that line.** The downstream critic uses this signal to distinguish intentional drops from accidental losses.
+     **If you drop any `optional` signatures under budget pressure, name them near the END of the drafted output on a line starting with `<!-- DROPPED-OPTIONAL:` and listing the passage hints. Put it immediately before the `FORAGE_CHAPTER_NOTES` marker. Otherwise omit that line.** The downstream critic uses this signal to distinguish intentional drops from accidental losses.
 2. Target ~{{segment.target_word_count}} words. Aim for target; moderate overrun (within ~20%) is acceptable when signature density genuinely demands it. Do not cut signatures to hit the count — the book-level budget stage handles global reallocation separately.
 3. **Voice preservation per the modernization level:** at L0/L1, preserve period spellings, archaic vocabulary, and punctuation idiosyncrasies. At L2, replace genuinely obsolete vocabulary but keep syntax and register. Never flatten distinctive register or inject contemporary emotional vocabulary.
 4. **Do not invent.** Do not add bridging content that wasn't in the source. If a cut would leave a non-sequitur, restructure rather than fabricate.
@@ -122,14 +130,50 @@ For minor or removable characters, prefer descriptors over names. If a minor
 character's name survives at all, its first surviving mention and any late
 re-entry after a long absence must carry a local gloss.
 
+## Dialogue attribution invariant
+
+When dialogue survives compression, the reader must be able to tell who is
+speaking. Do not leave runs of quote-led dialogue turns without source-backed
+speaker attribution or action beats unless the exchange is still unambiguous
+from a two-speaker alternation already established in the retained draft.
+
+If compression removes the setup that identified a speaker, either restore a
+compact source-backed tag/action beat or paraphrase the exchange into narration.
+Never invent new dialogue, speakers, or attribution.
+
+## Reviewer note sidecar
+
+At the end of the drafted segment, append exactly one HTML comment in this
+format:
+
+<!-- FORAGE_CHAPTER_NOTES
+{
+  "summary": "One sentence summarizing the segment-level compression strategy.",
+  "acceptable_changes": [
+    "Why a major compression, omission, merge, or rewrite is acceptable under the plan."
+  ],
+  "risks": [
+    "A continuity, reference, voice, tone, or scene-logic risk the reviewer should inspect."
+  ],
+  "review_focus": [
+    "A concrete place or kind of change that deserves human attention."
+  ]
+}
+-->
+
+Keep the note concise and reviewer-facing. Do not include chain-of-thought or
+private reasoning; summarize the editorial rationale and risks.
+
 ## Output
 
-Begin with a level-2 Markdown heading containing the segment's title. Then the drafted prose. Nothing else — no notes, no word count, no self-commentary.
+Begin with a level-2 Markdown heading containing the segment's title. Then the
+drafted prose. End with the required `FORAGE_CHAPTER_NOTES` HTML comment.
+Nothing else — no preamble, no other notes, no word count, no self-commentary.
 {% if critic_feedback %}
 
 ## Corrections required for this regeneration pass
 
-You are revising a previous draft: address each finding below using the source text as the authoritative basis for restored material, without reshuffling the draft's paragraph order. Target ~{{segment.target_word_count}} words with hard ceiling {{ (segment.target_word_count * 1.2) | round | int }} — if restorations push over, tighten **lower-priority, non-flagged** material (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) to fit, but never cut a signature (verbatim, recognizable, or newly flagged) to make room. If signatures genuinely cannot fit under the ceiling, preserve them and go over with a final-line `<!-- OVER-BUDGET: restorations forced +N words over ceiling -->` marker.
+You are revising a previous draft: address each finding below using the source text as the authoritative basis for restored material, without reshuffling the draft's paragraph order. Target ~{{segment.target_word_count}} words with hard ceiling {{ (segment.target_word_count * 1.2) | round | int }} — if restorations push over, tighten **lower-priority, non-flagged** material (connective sentences, repeated elaboration, scene-setting without argument load, tertiary-character screen-time) to fit, but never cut a signature (verbatim, recognizable, or newly flagged) to make room. If signatures genuinely cannot fit under the ceiling, preserve them and go over with an `<!-- OVER-BUDGET: restorations forced +N words over ceiling -->` marker immediately before the `FORAGE_CHAPTER_NOTES` marker.
 
 {% for f in critic_feedback %}{{loop.index}}. **[{{f.severity}}] {{f.class}}** — source passage: "{{f.source_passage}}"
    - Current treatment in draft: `{{f.draft_treatment}}`
