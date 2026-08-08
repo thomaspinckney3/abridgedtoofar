@@ -61,7 +61,7 @@ def _unb64(text: str) -> bytes:
     return base64.urlsafe_b64decode(text + "=" * (-len(text) % 4))
 
 
-def _flag(name: str, default: bool) -> bool:
+def env_flag(name: str, default: bool) -> bool:
     raw = os.environ.get(name)
     if raw is None or raw == "":
         return default
@@ -148,7 +148,7 @@ class AuthConfig:
             secret_key=key.encode(),
             session_seconds=max(60, int(hours * 3600)),
             epoch=os.environ.get("FORAGE_SESSION_EPOCH", "0").strip() or "0",
-            trust_proxy=_flag("FORAGE_TRUST_PROXY", production),
+            trust_proxy=env_flag("FORAGE_TRUST_PROXY", production),
             production=production,
             generated=tuple(generated),
         )

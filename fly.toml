@@ -30,6 +30,12 @@ primary_region = "iad"
   FORAGE_EDITS_DIR = "/data/edits"
   # Fly's proxy sits in front: read the real client IP and scheme from it.
   FORAGE_TRUST_PROXY = "1"
+  # Origins a write may come from. Without this the cross-origin check falls
+  # back to comparing Origin against the request's own Host header — one
+  # caller-supplied value against another. Rejecting unknown Host headers
+  # outright is separate (FORAGE_STRICT_HOST) and off, because the health
+  # check below arrives with the machine's address in Host, not this name.
+  FORAGE_ALLOWED_HOSTS = "forage-review.fly.dev"
   # Bump to sign every session out at once (e.g. after rotating a token).
   FORAGE_SESSION_EPOCH = "1"
 

@@ -35,9 +35,17 @@ ENV PYTHONUNBUFFERED=1 \
     FORAGE_REVIEW_DB=/data/review.db \
     FORAGE_EDITS_DIR=/data/edits
 
+# gosu drops privileges in the entrypoint after the volume is chowned; the
+# service account owns nothing else in the image.
+RUN set -e; \
+    apt-get update; \
+    apt-get install -y --no-install-recommends gosu; \
+    rm -rf /var/lib/apt/lists/*; \
+    useradd --system --uid 10001 --create-home forage
+
 WORKDIR /app
 
-COPY pyproject.toml README.md ./
+COPY pyproject.toml README.md requirements-web.txt ./
 COPY forage ./forage
 COPY prompts ./prompts
 COPY spec ./spec
@@ -51,6 +59,11 @@ COPY spec ./spec
 # Build with --build-arg INSTALL_MODE=full once pipeline stages move behind the
 # admin token — that installs everything the CLI needs.
 #
+# Web mode installs from requirements-web.txt rather than resolving fastapi and
+# uvicorn fresh: an unpinned build ships whatever PyPI served that minute, and
+# a bad release would reach production with nothing in the diff to show it.
+# Regeneration instructions are in the header of that file.
+#
 # The retry loop is not paranoia: a dropped connection mid-wheel surfaces as a
 # hash mismatch, which pip's own PIP_RETRIES does not cover because it happens
 # after the download completes.
@@ -60,7 +73,7 @@ RUN set -e; \
         if [ "$INSTALL_MODE" = "full" ]; then \
             pip install ".[web]"; \
         else \
-            pip install --no-deps . && pip install fastapi "uvicorn[standard]"; \
+            pip install --no-deps . && pip install -r requirements-web.txt; \
         fi; \
     }; \
     for attempt in 1 2 3 4; do \
@@ -74,10 +87,15 @@ RUN set -e; \
 COPY deploy/artifacts ./artifacts
 COPY deploy/books ./books
 
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 EXPOSE 8000
 
-# Runs as root so the mounted volume (root-owned by default on Fly) is
-# writable without an ownership dance at boot. The VM is single-tenant.
+# The entrypoint starts as root only long enough to take ownership of the
+# mounted volume, then hands off to the `forage` account: the process parsing
+# request bodies from the open internet has no business running as uid 0, even
+# on a single-tenant VM.
 #
 # --proxy-headers/--forwarded-allow-ips: TLS terminates at Fly's proxy, so
 # uvicorn's own view of scheme and client address needs the forwarded headers
@@ -85,6 +103,7 @@ EXPOSE 8000
 # scope honest for anything that consults it directly, such as access logs.
 # One worker: SQLite is a single file and the artifact read path is cached
 # per process. Scale by region, not by machine — see fly.toml.
+ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["uvicorn", "forage.webapp.app:get_app", "--factory", \
      "--host", "0.0.0.0", "--port", "8000", "--workers", "1", \
      "--proxy-headers", "--forwarded-allow-ips", "*"]

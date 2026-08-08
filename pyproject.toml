@@ -26,6 +26,12 @@ web = [
     "uvicorn[standard]>=0.30",
 ]
 
+# Test suite. httpx is what starlette's TestClient drives the app through.
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.27",
+]
+
 [project.scripts]
 forage = "forage.cli:app"
 
@@ -39,3 +45,9 @@ include = ["forage*"]
 
 [tool.setuptools.package-data]
 "forage.webapp" = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "docker: builds and runs the real image; opt in with FORAGE_DOCKER_TESTS=1",
+]

@@ -66,6 +66,9 @@ MAX_LLM_RESPONSE = 2400
 
 _SEGMENT_RE = re.compile(r"^[A-Za-z0-9_.-]{1,64}$")
 _BOOK_RE = re.compile(r"^[A-Za-z0-9_.-]{1,64}$")
+# The character class admits "." and ".." on its own. Every id becomes a path
+# component, so a bare dot-segment resolves outside the directory it names.
+_RESERVED_IDS = frozenset({".", ".."})
 
 _CHAPTER_NOTE_METRICS = (
     "status",
@@ -79,11 +82,11 @@ _CHAPTER_NOTE_METRICS = (
 
 
 def valid_book_id(book_id: str) -> bool:
-    return bool(_BOOK_RE.match(book_id))
+    return bool(_BOOK_RE.match(book_id)) and book_id not in _RESERVED_IDS
 
 
 def valid_segment_id(segment_id: str) -> bool:
-    return bool(_SEGMENT_RE.match(segment_id))
+    return bool(_SEGMENT_RE.match(segment_id)) and segment_id not in _RESERVED_IDS
 
 
 def anchor_hash(text: str) -> str:

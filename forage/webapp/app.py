@@ -35,7 +35,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from .auth import (COOKIE_NAME, AuthConfig, LoginLimiter, RateLimiter, Session,
-                   client_ip, is_secure)
+                   client_ip, env_flag, is_secure)
 from .store import (BOOK_COMMENT_SEGMENT, KINDS, SEVERITIES, STATUSES,
                     ArtifactStore, ReviewStore, build_edits, publish_edits,
                     valid_segment_id)
@@ -60,7 +60,10 @@ def create_app(artifacts: ArtifactStore | None = None,
     writes = RateLimiter()
     logins = LoginLimiter()
 
-    app = FastAPI(title="Forage editorial review", docs_url=None, redoc_url=None)
+    # openapi_url too, not just the doc viewers: leaving it on publishes the
+    # full route table, admin endpoints included, to anonymous callers.
+    app = FastAPI(title="Forage editorial review",
+                  docs_url=None, redoc_url=None, openapi_url=None)
     app.state.artifacts = artifacts
     app.state.reviews = reviews
     app.state.auth = auth
@@ -69,9 +72,30 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     allowed_hosts = [h.strip() for h in
                      os.environ.get("FORAGE_ALLOWED_HOSTS", "").split(",") if h.strip()]
-    if allowed_hosts:
+
+    # Rejecting unknown Host headers outright is opt-in and deliberately not
+    # implied by setting the allowlist: the platform's health check reaches the
+    # machine directly, with its own address in Host rather than the public
+    # hostname. Switching this on without accounting for that fails /healthz,
+    # which restarts the machine on a loop. The allowlist is useful either way
+    # — origin_allowed() below consults it whether or not this is enabled.
+    if allowed_hosts and env_flag("FORAGE_STRICT_HOST", False):
         from starlette.middleware.trustedhost import TrustedHostMiddleware
-        app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts)
+        app.add_middleware(TrustedHostMiddleware,
+                           allowed_hosts=allowed_hosts + ["*.internal"])
+
+    def origin_allowed(origin: str, host: str) -> bool:
+        """Whether a write may carry this Origin.
+
+        Prefer the configured hostnames. Falling back to the request's own Host
+        header means comparing one caller-supplied value against another, which
+        is why the allowlist exists — but an unconfigured deployment is still
+        better served by the weak check than by none.
+        """
+        netloc = urlsplit(origin).netloc
+        if not netloc:
+            return False
+        return netloc in allowed_hosts if allowed_hosts else netloc == host
 
     @app.middleware("http")
     async def guard(request: Request, call_next):
@@ -80,9 +104,12 @@ def create_app(artifacts: ArtifactStore | None = None,
         # unauthenticated, and covers same-site-but-wrong-origin cases.
         if request.method in _UNSAFE_METHODS:
             origin = request.headers.get("origin")
-            if origin and origin != "null":
+            if origin:
+                # "null" is an opaque origin — a sandboxed iframe, or a
+                # data:/file: document. It can never legitimately match, so it
+                # has to fail the check rather than skip it.
                 host = request.headers.get("host", "")
-                if urlsplit(origin).netloc != host:
+                if origin == "null" or not origin_allowed(origin, host):
                     return JSONResponse({"detail": "Cross-origin write refused."},
                                         status_code=403)
 
@@ -295,7 +322,9 @@ def create_app(artifacts: ArtifactStore | None = None,
             severity=str(payload.get("severity", "minor")),
             kind=str(payload.get("kind", "other")),
             body=body,
-            author=str(payload.get("author") or sess.label),
+            # From the signed cookie, never the body: a client-supplied author
+            # lets any reviewer sign a comment with someone else's name.
+            author=sess.label,
         )
         return _decorate([row], view)[0]
 
@@ -306,7 +335,7 @@ def create_app(artifacts: ArtifactStore | None = None,
         if not existing:
             raise HTTPException(status_code=404, detail="No such comment.")
         row = reviews.update(comment_id, **{
-            k: payload.get(k) for k in ("body", "severity", "kind", "status", "author")
+            k: payload.get(k) for k in ("body", "severity", "kind", "status")
         })
         view = artifacts.chapter_view(existing["book_id"], existing["segment_id"])
         responses = artifacts.review_apply_responses(existing["book_id"])

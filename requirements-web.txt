@@ -1,0 +1,35 @@
+# Pinned dependency set for the review app image (INSTALL_MODE=web).
+#
+# Without pins, every `fly deploy` resolves whatever is newest on PyPI, so a
+# yanked or compromised release reaches production with nothing in the diff to
+# show it. Regenerate inside the image the Dockerfile actually builds from, so
+# the pins match the platform that will install them:
+#
+#   docker run --rm --platform linux/amd64 python:3.12-slim sh -c \
+#     "pip install -q fastapi 'uvicorn[standard]' && pip freeze" \
+#     > requirements-web.txt
+#
+# (then restore this header). Review the diff before deploying.
+#
+# The pipeline's own dependencies are deliberately absent: the web image
+# installs forage with --no-deps, and nothing the app serves imports them.
+
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.14.2
+click==8.4.2
+fastapi==0.141.1
+h11==0.16.0
+httptools==0.8.0
+idna==3.18
+pydantic==2.13.4
+pydantic_core==2.46.4
+python-dotenv==1.2.2
+PyYAML==6.0.3
+starlette==1.4.1
+typing-inspection==0.4.2
+typing_extensions==4.16.0
+uvicorn==0.52.1
+uvloop==0.22.1
+watchfiles==1.2.0
+websockets==17.0.1
