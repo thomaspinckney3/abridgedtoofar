@@ -30,6 +30,7 @@ from forage.artifacts import load_book, write_json
 from forage.json_parse import parse_llm_json
 from forage.llm import complete
 from forage.prompts import load_prompt
+from scripts.graphic_panel_capacity import DEFAULT_PANEL_FIGURES
 
 
 VALID_KINDS = {"caption", "speech", "thought"}
@@ -339,6 +340,7 @@ def _clean_texts(
     page_number: int,
     panel_number: int,
     enforce_role_purity: bool = False,
+    max_balloons: int = DEFAULT_PANEL_FIGURES,
 ) -> list[dict[str, Any]]:
     if not isinstance(raw_texts, list):
         raise ValueError(f"page {page_number} panel {panel_number} texts must be an array")
@@ -395,8 +397,19 @@ def _clean_texts(
             evidence = str(raw.get("source_evidence") or "").strip()
             if evidence:
                 item["source_evidence"] = evidence
+            # A line already split across linked balloons keeps its part markers,
+            # so rerunning the lettering stage neither loses the linkage nor
+            # re-pins both halves to one zone.
+            part = raw.get("balloon_part")
+            parts = raw.get("balloon_parts")
+            if isinstance(part, int) and isinstance(parts, int) and 1 <= part <= parts:
+                item["balloon_part"] = part
+                item["balloon_parts"] = parts
+                item.pop("balloon_zone", None)
         cleaned.append(item)
-    return _limit_balloon_items(_merge_caption_items(cleaned))
+    return _limit_balloon_items(
+        _merge_caption_items(cleaned), max_balloons=max_balloons
+    )
 
 
 def _should_demote_speech(raw: dict[str, Any]) -> bool:
@@ -448,7 +461,9 @@ def _merge_caption_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return merged
 
 
-def _limit_balloon_items(items: list[dict[str, Any]], *, max_balloons: int = 2) -> list[dict[str, Any]]:
+def _limit_balloon_items(
+    items: list[dict[str, Any]], *, max_balloons: int = DEFAULT_PANEL_FIGURES
+) -> list[dict[str, Any]]:
     balloon_count = 0
     overflow_captions: list[dict[str, Any]] = []
     kept: list[dict[str, Any]] = []

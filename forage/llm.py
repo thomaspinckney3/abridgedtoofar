@@ -51,6 +51,7 @@ class LLMStreamTimeoutError(TimeoutError):
 ROOT = Path(__file__).resolve().parent.parent
 REPLAY_DIR = ROOT / "work" / ".replay_cache"
 DEFAULT_ANTHROPIC_READ_TIMEOUT_S = 420.0
+DEFAULT_OPENAI_READ_TIMEOUT_S = 420.0
 
 
 def _replay_enabled() -> bool:
@@ -396,7 +397,13 @@ def set_stream_sink(sink) -> None:
 def _openai(*, prompt: str, model_id: str, system: Optional[str],
             max_tokens: int, temperature: Optional[float]) -> LLMResponse:
     import openai
-    client = openai.OpenAI()
+    # The Anthropic path bounds its reads; this one did not, so a stalled
+    # request could hang indefinitely. The SDK also retries on its own, which
+    # composed with `_with_retries` below into up to 2 x 3 attempts. Bound the
+    # request and keep retry policy in one place.
+    read_timeout = _env_float("FORAGE_OPENAI_READ_TIMEOUT_S",
+                              DEFAULT_OPENAI_READ_TIMEOUT_S)
+    client = openai.OpenAI(timeout=read_timeout, max_retries=0)
     messages = []
     if system:
         messages.append({"role": "system", "content": system})

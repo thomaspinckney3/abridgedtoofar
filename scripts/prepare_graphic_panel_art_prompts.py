@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any
 
 from forage.artifacts import write_json
+from forage.graphic.staging import describe_staging, filter_box_rules
 
 from scripts.compose_graphic_panel_page import _page_size, _panel_boxes
 
@@ -202,71 +203,36 @@ def _base_prompt(
 
 
 def _slot_lines(panel: dict[str, Any]) -> list[str]:
+    """Staging instructions for one panel, phrased ordinally.
+
+    Both sources of geometry here used to be emitted as percentages — the
+    layout stage's `thumbnail_constraints` sentence and the box lists below it
+    — and the image model acts on neither. `forage.graphic.staging` turns the
+    same boxes into bands and positions, which it does act on; see that module
+    for the measurements.
+
+    The numeric constraint sentence is dropped rather than reworded: it names
+    boxes by coordinate, so with the coordinates gone it points at nothing.
+    """
     lines: list[str] = []
     thumbnail = panel.get("thumbnail_layout")
-    thumbnail_constraints = str(panel.get("thumbnail_constraints") or "").strip()
     if isinstance(thumbnail, dict):
-        if thumbnail_constraints:
-            lines.append(thumbnail_constraints)
-        text_boxes = [
-            item for item in thumbnail.get("text_boxes") or []
-            if isinstance(item, dict)
-        ]
-        if text_boxes:
-            lines.append("Thumbnail text boxes that must remain empty:")
-            for item in text_boxes:
-                box = item.get("box") or {}
-                if isinstance(box, dict) and {"x", "y", "w", "h"} <= set(box):
-                    owner = item.get("speaker") or item.get("reserved_for") or item.get("kind")
-                    lines.append(
-                        f"- {item.get('id')}: {item.get('kind')} for {owner}, "
-                        f"x={float(box['x']) * 100:.0f}%, y={float(box['y']) * 100:.0f}%, "
-                        f"w={float(box['w']) * 100:.0f}%, h={float(box['h']) * 100:.0f}%."
-                    )
-        figures = [
-            item for item in thumbnail.get("figures") or []
-            if isinstance(item, dict)
-        ]
-        if figures:
-            lines.append("Thumbnail figure boxes to follow:")
-            for item in figures:
-                body = item.get("body_box") or {}
-                face = item.get("face_box") or {}
-                if not (
-                    isinstance(body, dict)
-                    and isinstance(face, dict)
-                    and {"x", "y", "w", "h"} <= set(body)
-                    and {"x", "y", "w", "h"} <= set(face)
-                ):
-                    continue
-                lines.append(
-                    f"- {item.get('character')}: body x={float(body['x']) * 100:.0f}%, "
-                    f"y={float(body['y']) * 100:.0f}%, w={float(body['w']) * 100:.0f}%, "
-                    f"h={float(body['h']) * 100:.0f}%; face x={float(face['x']) * 100:.0f}%, "
-                    f"y={float(face['y']) * 100:.0f}%, w={float(face['w']) * 100:.0f}%, "
-                    f"h={float(face['h']) * 100:.0f}%."
-                )
-        rules = [str(rule).strip() for rule in thumbnail.get("rules") or [] if str(rule).strip()]
+        lines.extend(
+            describe_staging(
+                thumbnail.get("text_boxes") or [],
+                thumbnail.get("figures") or [],
+            )
+        )
+        rules = filter_box_rules(thumbnail.get("rules") or [])
         if rules:
-            lines.append("Thumbnail rules:")
+            lines.append("Staging rules:")
             lines.extend(f"- {rule}" for rule in rules)
         return lines
 
-    constraints = str(panel.get("lettering_constraints") or "").strip()
-    if constraints:
-        lines.append(constraints)
+    # Legacy path: panels planned before the thumbnail layout stage carry flat
+    # lettering slots instead. Same treatment, so both paths speak one language.
     slots = [slot for slot in panel.get("lettering_slots") or [] if isinstance(slot, dict)]
-    if slots:
-        lines.append("Reserved lettering slots, measured as percentages of the panel:")
-        for slot in slots:
-            box = slot.get("box") or {}
-            if isinstance(box, dict) and {"x", "y", "w", "h"} <= set(box):
-                lines.append(
-                    f"- {slot.get('id')}: {slot.get('kind')} for "
-                    f"{slot.get('speaker') or slot.get('reserved_for') or 'caption'}, "
-                    f"x={float(box['x']) * 100:.0f}%, y={float(box['y']) * 100:.0f}%, "
-                    f"w={float(box['w']) * 100:.0f}%, h={float(box['h']) * 100:.0f}%."
-                )
+    lines.extend(describe_staging(slots))
     return lines
 
 

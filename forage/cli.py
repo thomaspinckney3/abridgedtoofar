@@ -53,6 +53,12 @@ app = typer.Typer(
 )
 console = Console()
 
+# Graphic-novel stages live in their own group so `forage graphic --help` maps
+# that pipeline without crowding the prose commands.
+from .graphic.cli import app as _graphic_app  # noqa: E402
+
+app.add_typer(_graphic_app, name="graphic")
+
 
 @app.command()
 def split(book_id: str) -> None:

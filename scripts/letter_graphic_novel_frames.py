@@ -74,6 +74,35 @@ def _zone_origin(frame_box: Box, box_w: int, box_h: int, zone: str, inset: int) 
     return x, y
 
 
+def _anchor_outside_balloon(
+    tail_point: tuple[int, int],
+    x: int,
+    y: int,
+    box_w: int,
+    box_h: int,
+    min_length: int,
+) -> tuple[int, int]:
+    """Push an anchor that the balloon has grown over back outside it.
+
+    A tall balloon can swallow its own anchor point. The attach-side chain below
+    reads that as "below the balloon" and draws the tail from the bottom edge
+    *up into* the balloon, striking its outline through the last two lines of
+    text. Projecting through the nearest edge first keeps the tail pointing the
+    way the speaker actually lies — normally down, since the layout stages
+    figures beneath the balloon band.
+    """
+    px, py = tail_point
+    if not (x <= px <= x + box_w and y <= py <= y + box_h):
+        return tail_point
+    distances = (
+        (py - y, (px, y - min_length)),
+        ((y + box_h) - py, (px, y + box_h + min_length)),
+        (px - x, (x - min_length, py)),
+        ((x + box_w) - px, (x + box_w + min_length, py)),
+    )
+    return min(distances, key=lambda pair: pair[0])[1]
+
+
 def _anchor_point(frame_box: Box, item: dict[str, Any]) -> tuple[int, int]:
     x_ratio_raw = item.get("anchor_x_ratio")
     y_ratio_raw = item.get("anchor_y_ratio")
@@ -421,6 +450,11 @@ def _draw_speech_balloon(
     )
 
     tail_pad = round(10 * scale)
+    # Do this before choosing an attach side: the chain below has no "inside"
+    # case, and would draw the tail back through the balloon's own text.
+    tail_point = _anchor_outside_balloon(
+        tail_point, x, y, box_w, box_h, min_length=max(tail_pad, round(14 * scale))
+    )
     if tail_point[0] < x:
         attach_side = "left"
         attach_x = x
@@ -482,6 +516,9 @@ def _draw_speech_balloon(
         "anchor": str(item.get("anchor") or "mouth"),
         "anchor_x_ratio": item.get("anchor_x_ratio"),
         "anchor_y_ratio": item.get("anchor_y_ratio"),
+        # Which of the three anchor sources aimed this tail — a vision
+        # detection, the layout's staged mouth, or the fixed fallback ratio.
+        "anchor_source": str(item.get("anchor_source") or "default_ratio"),
         "slot_id": item.get("slot_id"),
         "box": {"x1": x, "y1": y, "x2": x + box_w, "y2": y + box_h},
         "tail_point": {"x": tail_point[0], "y": tail_point[1]},

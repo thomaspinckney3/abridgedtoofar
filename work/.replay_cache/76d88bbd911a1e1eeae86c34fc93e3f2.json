@@ -1,0 +1,51 @@
+{
+  "ts": "2026-08-09T13:00:00",
+  "key": "76d88bbd911a1e1eeae86c34fc93e3f2",
+  "model": "openai:gpt-5.6-terra",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "graphic_dialogue_draft",
+    "hash": "65f063daf96644293ad1d31380064eeb",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "fffb510dd90a7e31addb9c6d8d4d9c3cc875b9780d92c9f468d87783e0b5b87f",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"valid\": true,\n  \"notes\": [\n    \"Added only the two source-quoted spoken lines visible in the drafted panels; shortened their captions to avoid repetition.\"\n  ],\n  \"pages\": [\n    {\n      \"page_number\": 1,\n      \"panels\": [\n        {\n          \"panel_number\": 2,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"My father offered advice in the reserved way we'd always shared.\",\n              \"caption_zone\": \"top_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Nick's Father\",\n              \"text\": \"Whenever you feel like criticizing anyone, just remember that all the people in this world haven't had the advantages that you've had.\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\\\"Whenever you feel like criticizing anyone,\\\" he told me, \\\"just remember that all the people in this world haven't had the advantages that you've had.\\\"\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 2,\n      \"panels\": [\n        {\n          \"panel_number\": 4,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"I gave him directions; as I walked on, I was lonely no longer.\",\n              \"caption_zone\": \"top_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Lost Stranger\",\n              \"text\": \"How do you get to West Egg village?\",\n              \"balloon_zone\": \"bottom_left\",\n              \"speaker_region\": \"left\",\n              \"source_evidence\": \"\\\"How do you get to West Egg village?\\\" he asked helplessly.\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "input_tokens": 7931,
+    "output_tokens": 1203,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 16.214263200759888,
+    "stop_reason": "stop"
+  }
+}

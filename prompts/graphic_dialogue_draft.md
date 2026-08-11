@@ -40,6 +40,19 @@ Rules:
   unambiguous, the reading order is still left-to-right/top-to-bottom, and the
   panel has reserved clean space for them.
 - Use simple balloon text. Keep most balloons under 14 words.
+- A graphic novel moves on action, and the art already carries the setting,
+  weather, faces, and mood. A balloon must carry what the character *does* by
+  speaking: a decision, demand, refusal, promise, threat, accusation, offer, a
+  revelation that changes what someone knows, or a question that forces an
+  answer. Words spent describing what the panel already shows are wasted.
+- When the source gives a long speech, take the part that drives the plot rather
+  than the opening sentences. Leave out description of places and objects,
+  reminiscence that does not bear on what happens next, moral reflection not
+  aimed at another character, and lists whose items do not matter. Prefer the
+  character's own words for the part you keep — select, do not rewrite.
+- A line that fits no balloon has to be cut down later by a stage that cannot
+  hear the scene the way you can. Choosing the plot-driving fragment now is
+  always better than emitting the whole speech and leaving it to be compressed.
 - If a panel shows a surprising visible action or prop, such as someone using a
   tool, handling a preserved article, performing a rite, or showing a weapon-like
   object, the caption or dialogue in that same panel must explain why it is

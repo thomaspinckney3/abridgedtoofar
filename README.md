@@ -16,6 +16,10 @@ A reader who loves the original should feel the abridgment is the same book, sho
 
 ## Pipeline stages
 
+> Adapting a book into comic pages instead? That is a separate pipeline built on
+> the same abridged chapters — see **[docs/graphic-novel.md](docs/graphic-novel.md)**
+> (`forage graphic --help`).
+
 ```
 split → classify → plan → summarize → cuts ──┐
                                               │

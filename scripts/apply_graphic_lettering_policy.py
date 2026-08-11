@@ -16,9 +16,29 @@ from typing import Any
 
 from forage.artifacts import write_json
 
+from scripts.graphic_balloon_split import split_balloon_text, split_panel_balloons
 from scripts.graphic_dialogue_draft import _clean_texts, _count_texts
+from scripts.graphic_panel_capacity import panel_capacities
 
 MAX_BALLOON_CHARS = 95
+
+# Phrases `_reported_speech_text` falls back to when it cannot say anything
+# specific about a line. `_sanitize_caption_artifacts` strips exactly these back
+# out of captions, so demoting a balloon into one of them destroys the line
+# outright. Detect them up front and keep the balloon instead.
+#
+# Both the detector below and the caption stripper are built from this one
+# alternation, so a new fallback phrase cannot be taught to one and missed by
+# the other. Only the predicate is shared: the detector accepts any short lead-in
+# where the stripper insists on a capitalized speaker, which makes the detector
+# the broader of the two. That asymmetry is the safe direction — every phrase the
+# stripper would erase is caught here first, so the balloon is kept instead.
+_UNINFORMATIVE_PREDICATE = (
+    r"(?:spoke(?:\s+(?:briefly|at length))?|asked a question)"
+)
+_UNINFORMATIVE_REPORT_RE = re.compile(
+    rf"^.{{0,60}}?\s+{_UNINFORMATIVE_PREDICATE}\.?$"
+)
 
 
 def _normalize_text(text: str) -> str:
@@ -54,13 +74,23 @@ def _panel_texts(panel: dict[str, Any]) -> list[dict[str, Any]]:
 def apply_lettering_policy(storyboard: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
     data = deepcopy(storyboard)
     changes: list[dict[str, Any]] = []
+    # Lines that would not fit even split across balloons. These are the only
+    # ones a paraphrase pass has to handle, so the report names them explicitly
+    # rather than leaving them to be discovered at render time.
+    oversized: list[dict[str, Any]] = []
     for page in data.get("pages", []) or []:
         if not isinstance(page, dict):
             continue
         page_no = int(page.get("page_number") or 0)
-        for panel in page.get("panels", []) or []:
-            if not isinstance(panel, dict):
-                continue
+        # The layout stage caps figures per panel from the same rule, so
+        # capacity is read here rather than assumed, and a panel can never be
+        # given more balloons than it will be given speakers to carry them.
+        # Non-dict entries are dropped first because the layout stage grids only
+        # well-formed panels — keeping them would shift the grid out from under
+        # the capacities computed here.
+        panels = [item for item in (page.get("panels") or []) if isinstance(item, dict)]
+        capacities = panel_capacities(panels)
+        for index, panel in enumerate(panels):
             panel_no = int(panel.get("panel_number") or 0)
             old_texts = _panel_texts(panel)
             if not isinstance(old_texts, list):
@@ -71,8 +101,28 @@ def apply_lettering_policy(storyboard: dict[str, Any]) -> tuple[dict[str, Any], 
                 and str(item.get("kind") or "").strip().lower() in {"caption", "speech", "thought"}
             ])
             new_texts = _demote_unsafe_balloons(
-                _clean_texts(old_texts, page_number=page_no, panel_number=panel_no)
+                _clean_texts(
+                    old_texts,
+                    page_number=page_no,
+                    panel_number=panel_no,
+                    max_balloons=capacities[index],
+                )
             )
+            # Fit whatever survived as a balloon. Splitting runs last so it only
+            # ever sees lines that are actually staying as speech, and it is
+            # tried before any paraphrase because it costs nothing and keeps the
+            # author's words intact.
+            new_texts, unfittable = split_panel_balloons(
+                new_texts, limit=MAX_BALLOON_CHARS, capacity=capacities[index]
+            )
+            for item in unfittable:
+                oversized.append({
+                    "page_number": page_no,
+                    "panel_number": panel_no,
+                    "speaker": str(item.get("speaker") or ""),
+                    "chars": len(_normalize_text(str(item.get("text") or ""))),
+                    "text": _normalize_text(str(item.get("text") or "")),
+                })
             new_counts = _count_texts(new_texts)
             if new_texts != old_texts or not isinstance(panel.get("texts"), list):
                 panel["texts"] = new_texts
@@ -84,16 +134,21 @@ def apply_lettering_policy(storyboard: dict[str, Any]) -> tuple[dict[str, Any], 
                     "old_texts": old_texts,
                     "new_texts": new_texts,
                 })
-    return data, {"changed_panels": changes}
+    return data, {"changed_panels": changes, "oversized_balloons": oversized}
 
 
 def _demote_unsafe_balloons(texts: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Convert unreliable balloons into narration.
 
-    A single-speaker balloon beside a caption often reads as redundant
-    annotation, and if the art misses the reserve zone the balloon lands on the
-    only visible face. Keep balloons for true exchanges; otherwise fold speech
-    back into the caption as reported speech.
+    A single-speaker balloon can read as redundant annotation when the caption
+    beside it already says the same thing, and folding it back into the caption
+    as reported speech reads better than printing the line twice.
+
+    The test is whether the caption *actually* restates the line. Treating every
+    lone speaker as redundant demotes dialogue whose caption is unrelated
+    narration, and in a graphic novel a spoken line belongs in a balloon unless
+    there is a reason to move it — turning it into narration spends the
+    character's own words to say something the page already said.
     """
     caption_indexes = [
         index for index, item in enumerate(texts)
@@ -112,7 +167,10 @@ def _demote_unsafe_balloons(texts: list[dict[str, Any]]) -> list[dict[str, Any]]
         for item in speech_items
         if str(item.get("speaker") or "").strip()
     }
-    demote_single_speaker = bool(speech_items) and len(speakers) <= 1
+    caption_text = " ".join(
+        str(texts[index].get("text") or "") for index in caption_indexes
+    )
+    lone_speaker = bool(speech_items) and len(speakers) <= 1
 
     result: list[dict[str, Any]] = []
     demoted: list[dict[str, str]] = []
@@ -122,11 +180,24 @@ def _demote_unsafe_balloons(texts: list[dict[str, Any]]) -> list[dict[str, Any]]
         if kind != "speech":
             result.append(item)
             continue
-        if demote_single_speaker or len(text) > MAX_BALLOON_CHARS:
+        # Length alone is no longer grounds for demotion: a long line that can
+        # be split across balloons keeps every word, which beats reporting it in
+        # narration. Only a line that cannot be made to fit is still a candidate.
+        unfittable = (
+            len(text) > MAX_BALLOON_CHARS
+            and split_balloon_text(text, limit=MAX_BALLOON_CHARS) is None
+        )
+        redundant = lone_speaker and _caption_restates(caption_text, text)
+        if redundant or unfittable:
             reported = _reported_speech_text(item)
-            if reported:
+            if reported and not _UNINFORMATIVE_REPORT_RE.match(reported):
                 demoted.append({"text": reported, "raw": text, "speaker": str(item.get("speaker") or "")})
-            continue
+                continue
+            # Demotion would swap the line for a phrase `_sanitize_caption_artifacts`
+            # strips straight back out, so the line would vanish from the page
+            # entirely. Keep the balloon: an over-long balloon is a fitting
+            # problem the letterer already shrinks to solve, but a dropped line
+            # is unrecoverable downstream.
         result.append(item)
     if demoted:
         caption = next(
@@ -138,12 +209,57 @@ def _demote_unsafe_balloons(texts: list[dict[str, Any]]) -> list[dict[str, Any]]
         note = str(caption.get("lettering_notes") or "").strip()
         extra = "demoted non-exchange speech"
         caption["lettering_notes"] = f"{note}; {extra}" if note else extra
+    sanitized: list[dict[str, Any]] = []
     for item in result:
-        if str(item.get("kind") or "").strip().lower() == "caption":
-            item["text"] = _sanitize_caption_artifacts(
-                _sanitize_caption_direct_speech(str(item.get("text") or ""))
-            )
-    return result
+        if str(item.get("kind") or "").strip().lower() != "caption":
+            sanitized.append(item)
+            continue
+        item["text"] = _sanitize_caption_artifacts(
+            _sanitize_caption_direct_speech(str(item.get("text") or ""))
+        )
+        # A caption made up entirely of stripped artifacts sanitizes to nothing.
+        # Keeping the husk would letter an empty caption box onto the panel.
+        if item["text"].strip():
+            sanitized.append(item)
+    return sanitized
+
+
+# Words too common to signal that two sentences are about the same thing.
+_FUNCTION_WORDS = frozenset("""
+the a an and or but of to in on at for with from by as if so no not
+is was were be been being am are do did does have has had will would can could
+i you he she it we they me him her them us my your his its our their this that
+these those there here then than when what who whom whose which how why
+""".split())
+
+# Share of the line's meaningful words that must already appear in the caption
+# before the caption counts as restating it. The corpus splits cleanly either
+# side of this: genuine echoes land well above, unrelated narration well below.
+_CAPTION_ECHO_RATIO = 0.5
+
+
+def _content_words(text: str) -> set[str]:
+    # Split on apostrophes so a contraction reduces to its parts: "you've"
+    # becomes "you" and "ve", both discarded, rather than a token that could
+    # never match the same idea spelled out in the caption.
+    return {
+        word for word in re.findall(r"[a-z]+", text.lower())
+        if len(word) > 2 and word not in _FUNCTION_WORDS
+    }
+
+
+def _caption_restates(caption: str, line: str) -> bool:
+    """True when the caption already carries this line's content.
+
+    Compared on meaningful words only. A short line has few of them, so an
+    incidental shared word would otherwise read as a restatement; requiring at
+    least two keeps "I just—" beside an unrelated caption from counting.
+    """
+    spoken = _content_words(line)
+    if len(spoken) < 2:
+        return False
+    shared = spoken & _content_words(caption)
+    return len(shared) >= 2 and len(shared) / len(spoken) >= _CAPTION_ECHO_RATIO
 
 
 def _sanitize_caption_artifacts(text: str) -> str:
@@ -159,8 +275,7 @@ def _sanitize_caption_artifacts(text: str) -> str:
         r"(?:\s+[A-Z][A-Za-z'.-]+){0,3}"
     )
     artifact_re = re.compile(
-        rf"(^|[.!?][\"'”’]?\s+){speaker}\s+"
-        r"(?:spoke(?:\s+(?:briefly|at length))?|asked a question)\.?(?=\s|$)"
+        rf"(^|[.!?][\"'”’]?\s+){speaker}\s+{_UNINFORMATIVE_PREDICATE}\.?(?=\s|$)"
     )
     while True:
         updated = artifact_re.sub(lambda match: match.group(1), cleaned)
@@ -361,7 +476,14 @@ def _second_person_to_first(text: str) -> str:
 
 
 def _first_lower(text: str) -> str:
+    """Lowercase a clause being folded mid-sentence into reported speech.
+
+    `_second_person_to_first` rewrites "you" to "I", so the clause often now
+    opens on the pronoun, which stays capitalized wherever it lands.
+    """
     if not text:
+        return text
+    if re.match(r"I\b", text):
         return text
     return text[0].lower() + text[1:]
 

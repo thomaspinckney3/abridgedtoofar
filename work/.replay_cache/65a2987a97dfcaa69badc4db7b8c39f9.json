@@ -1,0 +1,51 @@
+{
+  "ts": "2026-08-09T13:16:22",
+  "key": "65a2987a97dfcaa69badc4db7b8c39f9",
+  "model": "openai:gpt-5.6-terra",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "graphic_dialogue_draft",
+    "hash": "351dac8309f053a018079c18373530c4",
+    "files": [
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "cd92df075d374e276f0429975079910b49a324ca12414f3e701ecc294d5bb46b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "a725c6ef45a63a59ce7da1ca9a92bd1487feae62b5c1ddebf19e80dc665d7fa9",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "795198ca2ccbe0f676a9dceaf868a560b7aa9be2e13434518cf19c4efef8493a",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "95330425d5f6618a1f820d37c9e3c14b8b4cb4c6dcf1485cf99ccd41cfe0ed25",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "{\n  \"valid\": true,\n  \"notes\": [\n    \"Added only direct, visible-speaker quotations. Captions were shortened where balloons now carry the spoken turn.\"\n  ],\n  \"pages\": [\n    {\n      \"page_number\": 9,\n      \"panels\": [\n        {\n          \"panel_number\": 3,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"In the deep gloom, Daisy took her face in her hands. I asked about her little girl.\",\n              \"caption_zone\": \"top_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Daisy Buchanan\",\n              \"text\": \"Listen, Nick; let me tell you what I said when she was born.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cListen, Nick; let me tell you what I said when she was born.\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 4,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Evidently, she had reason to be.\",\n              \"caption_zone\": \"bottom_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Daisy Buchanan\",\n              \"text\": \"I hope she'll be a fool.\",\n              \"balloon_zone\": \"top_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cAnd I hope she'll be a fool\u2014that's the best thing a girl can be in this world, a beautiful little fool.\u201d\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"page_number\": 10,\n      \"panels\": [\n        {\n          \"panel_number\": 1,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"To Daisy, everything was terrible; she had been everywhere, seen everything, done everything.\",\n              \"caption_zone\": \"top_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Daisy Buchanan\",\n              \"text\": \"God, I'm sophisticated!\",\n              \"balloon_zone\": \"bottom_center\",\n              \"speaker_region\": \"center\",\n              \"source_evidence\": \"\u201cGod, I'm sophisticated!\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 3,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Inside, the crimson room bloomed with light. Tom and Miss Baker sat at either end of the couch.\",\n              \"caption_zone\": \"top_left\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Jordan Baker\",\n              \"text\": \"Just a minute. I want to finish my piece.\",\n              \"balloon_zone\": \"bottom_right\",\n              \"speaker_region\": \"right\",\n              \"source_evidence\": \"\u201cJust a minute,\u201d she said. \u201cI want to finish my piece.\u201d\"\n            }\n          ]\n        },\n        {\n          \"panel_number\": 4,\n          \"texts\": [\n            {\n              \"kind\": \"caption\",\n              \"text\": \"Jordan left for Westchester; I recognized her from rotogravures. Tom approved flatly.\",\n              \"caption_zone\": \"top_center\"\n            },\n            {\n              \"kind\": \"speech\",\n              \"speaker\": \"Daisy Buchanan\",\n              \"text\": \"I think I'll arrange a marriage.\",\n              \"balloon_zone\": \"bottom_center\",\n              \"speaker_region\": \"center\",\n              \"source_evidence\": \"\u201cIn fact I think I'll arrange a marriage.\u201d\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+    "input_tokens": 8319,
+    "output_tokens": 4132,
+    "cache_read_tokens": null,
+    "cache_write_tokens": null,
+    "duration_s": 51.286595821380615,
+    "stop_reason": "stop"
+  }
+}

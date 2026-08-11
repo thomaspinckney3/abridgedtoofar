@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any
 
 from forage.artifacts import write_json
+from forage.graphic.geometry import Box, is_wide, panel_boxes, panel_capacity
 
 
 TEXT_KINDS = {"caption", "speech", "thought"}
@@ -180,14 +181,16 @@ def _panel_archetype(balloon_count: int, distinct_speakers: int) -> str:
     return "three_character_wide"
 
 
-def _panel_width_ratio(panel: dict[str, Any]) -> float | None:
-    raw = panel.get("box")
-    if isinstance(raw, dict) and raw.get("w") is not None:
-        try:
-            return float(raw["w"])
-        except (TypeError, ValueError):
-            return None
-    return None
+def _balloon_cap(box: Box | None) -> int:
+    """How many balloons this panel may carry.
+
+    One more than it has figures, so a single speaker can hold a line split
+    across two linked balloons. Read from the shared geometry rather than fixed
+    at three: the lettering policy and the thumbnail layout both size a panel
+    this way, and a stage that caps lower reserves no space for a balloon the
+    layout will place anyway.
+    """
+    return panel_capacity(box) + 1
 
 
 def _slot_summary(slot: dict[str, Any]) -> str:
@@ -247,6 +250,7 @@ def _apply_panel_slots(
     panel: dict[str, Any],
     *,
     page_number: int,
+    box: Box | None = None,
 ) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     warnings: list[dict[str, Any]] = []
     texts = _text_items(panel)
@@ -273,23 +277,29 @@ def _apply_panel_slots(
     panel["panel_archetype"] = archetype
     panel_no = int(panel.get("panel_number") or 0)
 
-    if len(balloons) > 3:
+    balloon_cap = _balloon_cap(box)
+    if len(balloons) > balloon_cap:
         warnings.append({
             "page_number": page_number,
             "panel_number": panel_no,
             "code": "too_many_balloons",
-            "message": "More than three balloons in one panel is not reliable; split the exchange or demote weaker turns to caption.",
+            "message": (
+                f"More than {balloon_cap} balloons in this panel is not reliable; "
+                "split the exchange or demote weaker turns to caption."
+            ),
+            "balloon_cap": balloon_cap,
         })
-    if archetype == "three_character_wide":
-        width_ratio = _panel_width_ratio(panel)
-        if width_ratio is not None and width_ratio < 0.86:
-            warnings.append({
-                "page_number": page_number,
-                "panel_number": panel_no,
-                "code": "three_character_panel_not_wide",
-                "message": "Three-speaker panels should use a wide full-width frame.",
-                "panel_width_ratio": width_ratio,
-            })
+    # The box is resolved by the caller, so this fires on unplaced pages too —
+    # they are gridded downstream, and a three-speaker panel that lands in a
+    # half-width slot is worth saying before the art is generated, not after.
+    if archetype == "three_character_wide" and box is not None and not is_wide(box):
+        warnings.append({
+            "page_number": page_number,
+            "panel_number": panel_no,
+            "code": "three_character_panel_not_wide",
+            "message": "Three-speaker panels should use a wide full-width frame.",
+            "panel_width_ratio": round(box.w, 4),
+        })
 
     caption_first = _caption_reads_first(texts, caption_indexes, balloon_indexes)
     caption_zone = "top_center" if caption_first else "bottom_center"
@@ -341,7 +351,7 @@ def _apply_panel_slots(
 
     balloon_slots: list[dict[str, Any]] = []
     side_stack_seen: dict[str, int] = {}
-    for order, text_index in enumerate(balloon_indexes[:3]):
+    for order, text_index in enumerate(balloon_indexes[:balloon_cap]):
         item = texts[text_index]
         kind = str(item.get("kind") or "speech").strip().lower()
         speaker_key = str(item.get("speaker") or "").strip().lower()
@@ -382,7 +392,7 @@ def _apply_panel_slots(
         if caption_slot_id:
             texts[index]["caption_zone"] = caption_zone
             texts[index]["slot_box_ratio"] = slots[0]["box"]
-    for extra_index in balloon_indexes[3:]:
+    for extra_index in balloon_indexes[balloon_cap:]:
         texts[extra_index]["slot_warning"] = "no slot assigned; too many balloons for reliable automatic lettering"
 
     panel["texts"] = texts
@@ -402,11 +412,18 @@ def apply_lettering_slots(storyboard: dict[str, Any]) -> tuple[dict[str, Any], d
         if not isinstance(page, dict):
             continue
         page_no = int(page.get("page_number") or 0)
-        for panel in page.get("panels", []) or []:
-            if not isinstance(panel, dict):
-                continue
+        # Resolved here rather than read off each panel: a page whose panels
+        # carry no boxes is still gridded downstream, and slot decisions that
+        # depend on the rectangle have to see the same grid the layout stage
+        # and the compositor will use. Non-dict entries are dropped first
+        # because the grid is sized by panel count.
+        panels = [item for item in (page.get("panels") or []) if isinstance(item, dict)]
+        boxes = panel_boxes(panels)
+        for index, panel in enumerate(panels):
             panel_count += 1
-            _panel, panel_warnings = _apply_panel_slots(panel, page_number=page_no)
+            _panel, panel_warnings = _apply_panel_slots(
+                panel, page_number=page_no, box=boxes[index]
+            )
             warnings.extend(panel_warnings)
             slot_count += len(panel.get("lettering_slots") or [])
             archetype = str(panel.get("panel_archetype") or "")

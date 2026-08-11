@@ -21,40 +21,25 @@ import copy
 import json
 import math
 import re
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 from PIL import Image, ImageDraw, ImageFont
 
 from forage.artifacts import write_json
+from forage.graphic.geometry import (
+    CROWDED_PANEL_FIGURES,
+    DEFAULT_PANEL_FIGURES,
+    Box,
+    canonical_panel_boxes,
+    is_wide,
+    is_wide_tall,
+    page_size as _shared_page_size,
+    panel_boxes as _shared_panel_boxes,
+)
 from scripts.letter_graphic_novel_frames import _slot_box as _pixel_slot_box
 from scripts.letter_graphic_novel_pages import Box as PixelBox
 from scripts.letter_graphic_novel_pages import _fit_lines
-
-
-@dataclass(frozen=True)
-class Box:
-    x: float
-    y: float
-    w: float
-    h: float
-
-    @property
-    def x2(self) -> float:
-        return self.x + self.w
-
-    @property
-    def y2(self) -> float:
-        return self.y + self.h
-
-    def as_dict(self) -> dict[str, float]:
-        return {
-            "x": round(self.x, 4),
-            "y": round(self.y, 4),
-            "w": round(self.w, 4),
-            "h": round(self.h, 4),
-        }
 
 
 VALID_ZONES = {
@@ -65,6 +50,11 @@ VALID_ZONES = {
     "bottom_center",
     "bottom_right",
 }
+
+# Margin left between a band pushed to the bottom of a panel and the panel edge.
+# It matches the 0.04 top clearance a caption already gets, so a band reads as
+# deliberately inset rather than jammed against the frame.
+BAND_EDGE_CLEARANCE = 0.04
 
 DIRECT_SPEECH_IN_CAPTION_RE = re.compile(
     r"\b(?:said|cried|called|asked|answered|replied|shouted|whispered|exclaimed)\b"
@@ -268,63 +258,15 @@ def _contains(outer: Box, inner: Box, pad: float = 0.0) -> bool:
 
 
 def _page_size(page: dict[str, Any]) -> tuple[int, int]:
-    size = page.get("page_size") or {}
-    return int(size.get("width") or page.get("width") or 1536), int(
-        size.get("height") or page.get("height") or 2048
-    )
+    return _shared_page_size(page)
 
 
 def _canonical_panel_boxes(count: int) -> list[Box]:
-    if count <= 0:
-        return []
-    if count == 1:
-        return [Box(0.015, 0.015, 0.97, 0.97)]
-    if count == 2:
-        return [
-            Box(0.015, 0.012, 0.97, 0.482),
-            Box(0.015, 0.506, 0.97, 0.482),
-        ]
-    if count == 3:
-        return [
-            Box(0.015, 0.015, 0.97, 0.39),
-            Box(0.015, 0.42, 0.477, 0.565),
-            Box(0.508, 0.42, 0.477, 0.565),
-        ]
-    if count == 4:
-        return [
-            Box(0.015, 0.015, 0.477, 0.477),
-            Box(0.508, 0.015, 0.477, 0.477),
-            Box(0.015, 0.508, 0.477, 0.477),
-            Box(0.508, 0.508, 0.477, 0.477),
-        ]
-    if count == 5:
-        return [
-            Box(0.015, 0.015, 0.97, 0.29),
-            Box(0.015, 0.32, 0.477, 0.32),
-            Box(0.508, 0.32, 0.477, 0.32),
-            Box(0.015, 0.655, 0.477, 0.33),
-            Box(0.508, 0.655, 0.477, 0.33),
-        ]
-    # Six-panel exchange: wide top, two two-up rows, wide bottom.
-    return [
-        Box(0.015, 0.012, 0.97, 0.205),
-        Box(0.015, 0.227, 0.477, 0.205),
-        Box(0.508, 0.227, 0.477, 0.205),
-        Box(0.015, 0.443, 0.477, 0.205),
-        Box(0.508, 0.443, 0.477, 0.205),
-        Box(0.015, 0.658, 0.97, 0.33),
-    ][:count]
+    return canonical_panel_boxes(count)
 
 
 def _panel_boxes(page: dict[str, Any], panels: list[dict[str, Any]]) -> list[Box]:
-    explicit = [
-        _box_from_dict(panel["box"])
-        for panel in panels
-        if isinstance(panel.get("box"), dict)
-    ]
-    if len(explicit) == len(panels):
-        return explicit
-    return _canonical_panel_boxes(len(panels))
+    return _shared_panel_boxes(panels)
 
 
 def _size_class(box: Box) -> str:
@@ -700,8 +642,9 @@ def _layout_panel(
 
     size_class = _size_class(panel_box)
     archetype = _layout_archetype(len(balloons), len(speakers), size_class)
-    wide = panel_box.w >= 0.86
-    wide_tall = wide and panel_box.h >= 0.55
+    wide = is_wide(panel_box)
+    wide_tall = is_wide_tall(panel_box)
+    figure_cap = CROWDED_PANEL_FIGURES if wide_tall else DEFAULT_PANEL_FIGURES
     caption_first = not balloon_indexes or (
         caption_indexes and min(caption_indexes) <= min(balloon_indexes)
     )
@@ -734,17 +677,48 @@ def _layout_panel(
             texts[idx]["caption_zone"] = text_box["zone"]
             texts[idx]["slot_box_ratio"] = cbox.as_dict()
 
+    # A caption that reads first used to push the balloons down beneath it, so a
+    # panel reserved the caption band and the balloon band as one block running
+    # to ~36% of the panel. The image model does not clear a band that deep: a
+    # measured A/B put a head across the balloon box on 3 of 6 dialogue panels,
+    # and deepening the band made it worse, because two standing figures framed
+    # from the waist up cannot put their heads below it. Shallow bands it does
+    # clear reliably — both the top fifth and the bottom.
+    #
+    # So the two bands are moved to opposite ends of the panel instead of being
+    # stacked. Reading order survives, because a caption that reads first is
+    # still above balloons that read after it, and the figures get the whole
+    # middle of the frame to put their faces in.
+    split_bands = bool(caption_indexes and caption_first and balloon_indexes)
     balloon_y = caption_bottom if caption_indexes and caption_first else 0.04
     if caption_indexes and caption_first:
         balloon_y = max(balloon_y, 0.18)
+    balloon_entries: list[tuple[dict[str, Any], dict[str, Any]]] = []
     balloon_boxes: list[Box] = []
     side_stack_seen: dict[str, int] = {}
-    for order, idx in enumerate(balloon_indexes[:3]):
+    # A split line is consecutive balloons from one speaker. Stacking per side
+    # would put another speaker's balloon level with the first half, so a reader
+    # scanning left-to-right/top-to-bottom crosses into it before the
+    # continuation. When a split is present, stack strictly in text order so the
+    # halves stay adjacent and the scan matches the exchange.
+    balloon_speakers = [
+        _clean_character_name(texts[idx].get("speaker"))
+        or str(texts[idx].get("speaker") or "").strip()
+        for idx in balloon_indexes
+    ]
+    has_split = any(balloon_speakers.count(key) > 1 for key in balloon_speakers)
+    # A panel may carry one balloon more than it has figures, so that a single
+    # speaker can hold a split line. Truncating below that would leave a balloon
+    # with no box at all.
+    for order, idx in enumerate(balloon_indexes[:figure_cap + 1]):
         item = texts[idx]
-        speaker_key = _clean_character_name(item.get("speaker")) or str(item.get("speaker") or "").strip()
+        speaker_key = balloon_speakers[order]
         side = speaker_side_by_key.get(speaker_key) or _speaker_side(item, order, len(balloon_indexes))
-        stack_index = side_stack_seen.get(side, 0)
-        side_stack_seen[side] = stack_index + 1
+        if has_split:
+            stack_index = order
+        else:
+            stack_index = side_stack_seen.get(side, 0)
+        side_stack_seen[side] = side_stack_seen.get(side, 0) + 1
         bbox = _balloon_box(
             side,
             order,
@@ -768,11 +742,31 @@ def _layout_panel(
         }
         text_boxes.append(text_box)
         slots.append(text_box)
+        balloon_entries.append((text_box, item))
         item["slot_id"] = slot_id
         item["slot_box_ratio"] = bbox.as_dict()
         item["balloon_zone"] = text_box["zone"]
         item["speaker_region"] = side
         item["speaker_position"] = side
+
+    if split_bands and balloon_boxes:
+        # Translate the balloons as one group so their relative stacking — which
+        # carries reading order for a split line — is preserved exactly.
+        # Only ever move down. A balloon stack tall enough to already reach the
+        # bottom stays where it is rather than being dragged up into the faces.
+        shift = max(0.0, (1.0 - BAND_EDGE_CLEARANCE) - max(box.y2 for box in balloon_boxes))
+        for position, (text_box, item) in enumerate(balloon_entries):
+            moved = Box(
+                balloon_boxes[position].x,
+                balloon_boxes[position].y + shift,
+                balloon_boxes[position].w,
+                balloon_boxes[position].h,
+            )
+            balloon_boxes[position] = moved
+            text_box["box"] = moved.as_dict()
+            text_box["zone"] = _zone_from_box(moved)
+            item["slot_box_ratio"] = moved.as_dict()
+            item["balloon_zone"] = text_box["zone"]
 
     for idx in balloon_indexes[3:]:
         warnings.append({
@@ -795,7 +789,7 @@ def _layout_panel(
             bottom_text_top = min(box.y for box in bottom_text_boxes)
             figure_bottom = min(0.96, bottom_text_top - 0.04)
 
-    max_figures = 3 if wide_tall else 2
+    max_figures = figure_cap
     source_names = _source_people(panel, source_frames)
     expected_names: list[str] = []
     for key, _speaker, _item in speaker_items:

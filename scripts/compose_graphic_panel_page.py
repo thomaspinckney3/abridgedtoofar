@@ -21,6 +21,7 @@ from typing import Any
 
 from PIL import Image, ImageDraw, ImageOps, JpegImagePlugin  # noqa: F401
 
+from forage.graphic.geometry import canonical_panel_boxes, page_size
 from scripts.letter_graphic_novel_frames import _balloon_rect, _draw_speech_balloon
 from scripts.letter_graphic_novel_pages import (
     Box,
@@ -37,10 +38,7 @@ AnchorKey = tuple[int, int, int]
 
 
 def _page_size(page: dict[str, Any]) -> tuple[int, int]:
-    size = page.get("page_size") or {}
-    width = int(size.get("width") or page.get("width") or 1536)
-    height = int(size.get("height") or page.get("height") or 2048)
-    return width, height
+    return page_size(page)
 
 
 def _relative_box(page_box: Box, value: dict[str, Any]) -> Box:
@@ -63,32 +61,20 @@ def _relative_box(page_box: Box, value: dict[str, Any]) -> Box:
     raise ValueError(f"panel box must use x/y/w/h or x1/y1/x2/y2: {value}")
 
 
-def _six_panel_boxes(width: int, height: int) -> list[Box]:
-    margin = 24
-    gutter = 18
-    usable_w = width - 2 * margin
-    top_h = 420
-    row_h = 420
-    bottom_h = height - (2 * margin + top_h + row_h * 2 + gutter * 3)
-    half_w = (usable_w - gutter) // 2
-    y = margin
-    boxes = [Box(margin, y, width - margin, y + top_h)]
-    y += top_h + gutter
-    boxes.extend([
-        Box(margin, y, margin + half_w, y + row_h),
-        Box(margin + half_w + gutter, y, width - margin, y + row_h),
-    ])
-    y += row_h + gutter
-    boxes.extend([
-        Box(margin, y, margin + half_w, y + row_h),
-        Box(margin + half_w + gutter, y, width - margin, y + row_h),
-    ])
-    y += row_h + gutter
-    boxes.append(Box(margin, y, width - margin, height - margin))
-    return boxes
-
-
 def _panel_boxes(page: dict[str, Any], panels: list[dict[str, Any]], width: int, height: int) -> list[Box]:
+    """Pixel rectangles to draw each panel into.
+
+    The fallback grid is derived from the shared fractional one rather than
+    hand-computed in pixels. The old six-panel grid here used fixed 420px rows,
+    so it matched the grid the layout stage plans against at 1536x2048 and
+    nowhere else — at 1536x3072 the bottom panel came out 0.557 of the page
+    instead of 0.330, and balloons were planned against one grid and painted
+    against another.
+
+    Any panel count is gridded, not just the layouts this stage used to name:
+    the layout stage grids them all, so refusing here meant a page it planned
+    happily could not be rendered at all.
+    """
     page_box = Box(0, 0, width, height)
     explicit: list[Box] = []
     for panel in panels:
@@ -97,13 +83,10 @@ def _panel_boxes(page: dict[str, Any], panels: list[dict[str, Any]], width: int,
             explicit.append(_relative_box(page_box, raw))
     if len(explicit) == len(panels):
         return explicit
-
-    template = str(page.get("layout") or "").strip().lower().replace("-", "_")
-    if template in {"six_panel_exchange", "landlord_exchange"} and len(panels) == 6:
-        return _six_panel_boxes(width, height)
-    raise ValueError(
-        f"page {page.get('page_number')} needs explicit panel boxes or a supported layout"
-    )
+    return [
+        Box(*box.to_pixel_rect(width, height))
+        for box in canonical_panel_boxes(len(panels))
+    ]
 
 
 def _panel_image_path(panel: dict[str, Any], panel_dir: Path) -> Path:
@@ -527,6 +510,7 @@ def _apply_anchor(
         return anchored
     anchored["anchor_x_ratio"] = max(0.0, min(1.0, float(ratio["x"])))
     anchored["anchor_y_ratio"] = max(0.0, min(1.0, float(ratio["y"])))
+    anchored["anchor_source"] = "detection"
     anchored["anchor_detection"] = {
         "used": True,
         "confidence": confidence,
@@ -542,6 +526,48 @@ def _apply_anchor(
     if isinstance(anchor.get("face_box_ratio"), dict):
         anchored["face_box_ratio"] = anchor.get("face_box_ratio")
     return anchored
+
+
+def _staged_mouth_ratio(panel: dict[str, Any], speaker: Any) -> dict[str, float] | None:
+    """Where the layout staged this speaker's mouth, in panel fractions.
+
+    Without a detected anchor the letterer falls back to a fixed fraction of
+    the panel — `ANCHOR_Y["mouth"]`, 0.34 — which is a guess about where a
+    figure might be. The layout stage has already decided where each figure
+    stands and written a `mouth_point` for it, so the tail can be aimed at the
+    character the art was directed to draw rather than at a constant. It also
+    keeps the tail out of the balloon, because the layout stages figures clear
+    of the text boxes.
+
+    Detected anchors still win: they see the art that actually came back, and
+    this only fills in when there are none.
+    """
+    name = _clean_name(speaker)
+    if not name:
+        return None
+    figures = (panel.get("thumbnail_layout") or {}).get("figures") or []
+    fallback: dict[str, float] | None = None
+    for figure in figures:
+        if not isinstance(figure, dict):
+            continue
+        point = figure.get("mouth_point")
+        if not isinstance(point, dict) or point.get("x") is None or point.get("y") is None:
+            continue
+        character = _clean_name(figure.get("character"))
+        if character == name:
+            return point
+        # "Daisy" in the dialogue against "Daisy Buchanan" in the staging is
+        # the same person; a surname-less match is accepted only if nothing
+        # matches in full.
+        if fallback is None and character and (
+            character.split()[0] == name.split()[0]
+        ):
+            fallback = point
+    return fallback
+
+
+def _clean_name(value: Any) -> str:
+    return " ".join(str(value or "").strip().lower().split())
 
 
 def _letter_texts(
@@ -582,6 +608,12 @@ def _letter_texts(
     for item in balloon_items:
         prepared = copy.deepcopy(item)
         slot = _panel_slot(panel, prepared, str(prepared.get("kind") or "speech").strip().lower())
+        if prepared.get("anchor_x_ratio") is None or prepared.get("anchor_y_ratio") is None:
+            staged = _staged_mouth_ratio(panel, prepared.get("speaker"))
+            if staged:
+                prepared["anchor_x_ratio"] = max(0.0, min(1.0, float(staged["x"])))
+                prepared["anchor_y_ratio"] = max(0.0, min(1.0, float(staged["y"])))
+                prepared["anchor_source"] = "thumbnail_layout"
         if slot and isinstance(slot.get("box"), dict):
             prepared["slot_id"] = slot.get("id")
             prepared["slot_box_ratio"] = slot.get("box")
