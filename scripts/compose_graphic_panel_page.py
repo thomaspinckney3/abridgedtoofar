@@ -652,6 +652,22 @@ def _letter_texts(
 
     zone_seen: dict[str, int] = {}
     layouts: list[dict[str, Any]] = []
+    # Balloons placed beside their own speaker can collide with each other, which
+    # zone stacking used to prevent. Each one is added here as it lands so the
+    # next has something to avoid.
+    placed_rects: list[tuple[int, int, int, int]] = []
+    # Captions are lettered after the balloons and would paint straight over
+    # them. Their boxes are known up front, so register them before any balloon
+    # is placed and let the balloons route around them.
+    for item in text_items:
+        if str(item.get("kind") or "").strip().lower() != "caption":
+            continue
+        slot = _panel_slot(panel, item, "caption")
+        if slot and isinstance(slot.get("box"), dict):
+            caption_box = _slot_box(box, slot["box"])
+            placed_rects.append(
+                (caption_box.x1, caption_box.y1, caption_box.x2, caption_box.y2)
+            )
     for item in prepared_balloon_items:
         zone = (
             str(item.get("balloon_zone") or item.get("placement") or "top_center")
@@ -667,6 +683,7 @@ def _letter_texts(
             item,
             stack_index=stack_index,
             stack_count=zone_counts.get(zone, 1),
+            placed_rects=placed_rects,
         )
         if layout:
             layout.update({
@@ -675,6 +692,11 @@ def _letter_texts(
                 "text_index": int(item.get("text_index") or 0),
                 "anchor_detection": item.get("anchor_detection"),
             })
+            drawn = layout.get("box")
+            if isinstance(drawn, dict):
+                placed_rects.append(
+                    (drawn["x1"], drawn["y1"], drawn["x2"], drawn["y2"])
+                )
             layouts.append(layout)
 
     for item in text_items:

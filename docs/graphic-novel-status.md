@@ -193,6 +193,43 @@ different, harder-to-read book from their neighbours.
 Nothing here is a regression of the balloon fix; 1, 4 and 5 are pre-existing
 weaknesses that the fix made visible or moved into view.
 
+### The band approach was avoidance, not a fix — balloons now sit by the speaker
+
+Splitting the bands to opposite ends kept balloons off faces by keeping them
+away from everything: a strip along the bottom, every balloon in it, tails
+reaching up across the art. Nothing covered a face because nothing was near one,
+and the page stopped reading as comics — the dialogue looked like a row of
+subtitles under the picture.
+
+**`--balloon-placement near-speaker` already existed and had never once run.**
+It places each balloon beside its speaker's detected head and routes it around
+detected faces, but it was gated on `not using_slot`, and the layout stage gives
+every balloon a slot. The good path was dead code. A slot now sets the balloon's
+*size* only; the speaker sets its position.
+
+Four things had to follow from that, all free:
+
+- **Captions are registered before balloons are placed.** They are lettered
+  last, so they were painting over balloons — page 11 panel 2 lost the first two
+  lines of Tom's dialogue behind one.
+- **Placement scores every candidate and takes the least obstructed**, weighting
+  a face 12× a caption. First-fit fell back to its own starting guess when
+  nothing was clear, choosing the worst spot rather than the best.
+- **Balloons avoid each other**, which zone stacking used to guarantee for free.
+- **The tail is part of the balloon's silhouette.** It was a separate polygon
+  drawn over the balloon, so the balloon's own outline ran across the tail's
+  base — a cone resting on a box. Base widened to ~1/8 of the balloon, seam
+  painted out, and the text centred rather than flush-left.
+
+Guarded by `tests/test_graphic_balloon_placement.py`.
+
+**What this leaves.** The art still reserves a bottom band for balloons that no
+longer go there, so several panels (7p1, 11p1, 11p2) carry a dead third of floor.
+The staging instruction should ask for negative space *beside and above the
+speakers' heads* instead of a band at the bottom — which means regenerating the
+art ($0.24) and reworking `staging.py` and `apply_graphic_thumbnail_layout.py`.
+Current output: `lettered_pages_v11/`.
+
 ### Where the chapter stands after v8
 
 1, 2 and 4 are fixed and the chapter regenerated ($0.44: 48 images at $0.24 plus

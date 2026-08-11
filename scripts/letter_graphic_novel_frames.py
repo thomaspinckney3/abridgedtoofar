@@ -110,11 +110,14 @@ def _attach_side(
     pad-widths tall and 18px long instead of a wedge off the top. Choosing the
     edge the speaker is furthest beyond keeps the tail on the dominant axis.
     """
+    # Vertical edges are listed first so that a speaker equally far below and to
+    # the left tails off the bottom, which is where comics put it, rather than
+    # off the side. max() keeps the first of equal values.
     gaps = {
+        "bottom": tail_point[1] - (y + box_h),
+        "top": y - tail_point[1],
         "left": x - tail_point[0],
         "right": tail_point[0] - (x + box_w),
-        "top": y - tail_point[1],
-        "bottom": tail_point[1] - (y + box_h),
     }
     return max(gaps, key=lambda side: gaps[side])
 
@@ -296,6 +299,7 @@ def _rect_hits_avoidance(
     *,
     frame_box: Box,
     item: dict[str, Any],
+    placed_rects: list[tuple[int, int, int, int]] | None = None,
 ) -> bool:
     x1, y1, x2, y2 = rect
     pad_x = max(18, round(frame_box.width * 0.035))
@@ -316,7 +320,72 @@ def _rect_hits_avoidance(
         by2 = frame_box.y1 + round(frame_box.height * max(0.0, min(1.0, float(box["y2"]))))
         if x1 - pad_x < bx2 and x2 + pad_x > bx1 and y1 - pad_y < by2 and y2 + pad_y > by1:
             return True
+    # Balloons already lettered into this panel. Band placement kept them apart
+    # by construction — one per zone, stacked. Placing each beside its own
+    # speaker removes that guarantee, so they have to be avoided explicitly.
+    for px1, py1, px2, py2 in placed_rects or ():
+        if x1 - pad_x < px2 and x2 + pad_x > px1 and y1 - pad_y < py2 and y2 + pad_y > py1:
+            return True
     return False
+
+
+def _avoid_rects(
+    frame_box: Box,
+    item: dict[str, Any],
+    placed_rects: list[tuple[int, int, int, int]] | None,
+) -> list[tuple[int, int, int, int]]:
+    """Everything in this panel a balloon should stay off, in pixels."""
+    rects: list[tuple[int, int, int, int]] = list(placed_rects or ())
+    for box in item.get("avoid_boxes_ratio") or []:
+        if not isinstance(box, dict) or not {"x1", "y1", "x2", "y2"} <= set(box):
+            continue
+        rects.append((
+            frame_box.x1 + round(frame_box.width * max(0.0, min(1.0, float(box["x1"])))),
+            frame_box.y1 + round(frame_box.height * max(0.0, min(1.0, float(box["y1"])))),
+            frame_box.x1 + round(frame_box.width * max(0.0, min(1.0, float(box["x2"])))),
+            frame_box.y1 + round(frame_box.height * max(0.0, min(1.0, float(box["y2"])))),
+        ))
+    return rects
+
+
+def _overlap_area(
+    rect: tuple[int, int, int, int],
+    *,
+    frame_box: Box,
+    item: dict[str, Any],
+    placed_rects: list[tuple[int, int, int, int]] | None = None,
+) -> float:
+    """How much of `rect` lands on something it should not.
+
+    A boolean hit-test cannot rank two bad positions, and when every candidate
+    collides the ranking is the only thing left to choose on. Faces are weighted
+    far above the rest: covering one is the defect this whole stage exists to
+    prevent, while clipping a caption is merely untidy.
+    """
+    x1, y1, x2, y2 = rect
+    total = 0.0
+    face_ratios = [
+        box for box in item.get("avoid_boxes_ratio") or []
+        if isinstance(box, dict) and {"x1", "y1", "x2", "y2"} <= set(box)
+    ]
+    face_count = len(face_ratios)
+    for index, (bx1, by1, bx2, by2) in enumerate(
+        _avoid_rects(frame_box, item, placed_rects)
+    ):
+        w = min(x2, bx2) - max(x1, bx1)
+        h = min(y2, by2) - max(y1, by1)
+        if w <= 0 or h <= 0:
+            continue
+        is_face = index >= len(placed_rects or ()) and face_count
+        total += w * h * (12.0 if is_face else 1.0)
+    for point in item.get("avoid_anchor_points_ratio") or []:
+        if not isinstance(point, dict) or point.get("x") is None or point.get("y") is None:
+            continue
+        px = frame_box.x1 + round(frame_box.width * max(0.0, min(1.0, float(point["x"]))))
+        py = frame_box.y1 + round(frame_box.height * max(0.0, min(1.0, float(point["y"]))))
+        if x1 <= px <= x2 and y1 <= py <= y2:
+            total += frame_box.width * frame_box.height * 0.02
+    return total
 
 
 def _avoidance_zones(zone: str) -> list[str]:
@@ -347,6 +416,7 @@ def _draw_speech_balloon(
     *,
     stack_index: int,
     stack_count: int,
+    placed_rects: list[tuple[int, int, int, int]] | None = None,
 ) -> dict[str, Any]:
     text = str(item.get("text", "")).strip()
     if not text:
@@ -359,7 +429,14 @@ def _draw_speech_balloon(
         .lower()
         .replace("-", "_")
     )
+    placement_mode = (
+        str(item.get("balloon_placement_mode") or "").strip().lower().replace("-", "_")
+    )
+    near_speaker = placement_mode in {"near_speaker", "near_anchor"}
     slot_box_ratio = item.get("slot_box_ratio")
+    # A slot is a reserved band. Near-speaker placement uses it for size only:
+    # letting it also fix the position is what parked every balloon on the floor,
+    # far from the speaker, which reads as a caption strip rather than dialogue.
     using_slot = isinstance(slot_box_ratio, dict)
     if using_slot:
         x, y, box_w, box_h, lines, draw, font, leading = _balloon_rect_from_slot(
@@ -379,10 +456,7 @@ def _draw_speech_balloon(
         )
     scale = min(image.size) / 1024
     tail_point = _anchor_point(frame_box, item)
-    if not using_slot and str(item.get("balloon_placement_mode") or "").strip().lower().replace("-", "_") in {
-        "near_speaker",
-        "near_anchor",
-    }:
+    if near_speaker:
         hgap = max(14, round(min(frame_box.width, frame_box.height) * 0.055))
         vgap = max(box_h, round(frame_box.height * 0.22))
         speaker_region = (
@@ -400,41 +474,44 @@ def _draw_speech_balloon(
             right_space = frame_box.x2 - tail_point[0]
             preferred_sides = ("right", "left") if right_space >= left_space else ("left", "right")
 
-        x = tail_point[0] - box_w // 2
+        # Score every candidate and take the least-obstructed one. First-fit
+        # used to fall back to its own starting guess when nothing was clear,
+        # which is how a balloon ended up underneath a caption that is drawn
+        # after it — the worst available position rather than the best.
+        candidates: list[tuple[int, int]] = []
         for side in preferred_sides:
-            candidate_x = tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
-            if frame_box.x1 + 4 <= candidate_x <= frame_box.x2 - box_w - 4:
-                x = candidate_x
-                break
+            side_x = (
+                tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
+            )
+            for candidate_y in (
+                tail_point[1] - box_h - vgap,
+                tail_point[1] - box_h - hgap,
+                tail_point[1] - box_h // 2,
+                tail_point[1] + round(frame_box.height * 0.10),
+            ):
+                candidates.append((side_x, candidate_y))
+        # Directly over the speaker, as a last resort when neither side is free.
+        candidates.append((tail_point[0] - box_w // 2, tail_point[1] - box_h - vgap))
 
-        above_y = tail_point[1] - box_h - vgap
-        if above_y >= frame_box.y1 + 4:
-            y = above_y
-        else:
-            y = frame_box.y1 + max(4, round(min(frame_box.width, frame_box.height) * 0.04))
-        x = max(frame_box.x1 + 4, min(x, frame_box.x2 - box_w - 4))
-        y = max(frame_box.y1 + 4, min(y, frame_box.y2 - box_h - 4))
-        if _rect_hits_avoidance((x, y, x + box_w, y + box_h), frame_box=frame_box, item=item):
-            for side in preferred_sides:
-                for vertical in ("above", "below"):
-                    candidate_x = tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
-                    if vertical == "above":
-                        candidate_y = tail_point[1] - box_h - vgap
-                    else:
-                        candidate_y = tail_point[1] + round(frame_box.height * 0.10)
-                    candidate_x = max(frame_box.x1 + 4, min(candidate_x, frame_box.x2 - box_w - 4))
-                    candidate_y = max(frame_box.y1 + 4, min(candidate_y, frame_box.y2 - box_h - 4))
-                    if not _rect_hits_avoidance(
-                        (candidate_x, candidate_y, candidate_x + box_w, candidate_y + box_h),
-                        frame_box=frame_box,
-                        item=item,
-                    ):
-                        x, y = candidate_x, candidate_y
-                        break
-                else:
-                    continue
-                break
-    elif not using_slot and _rect_hits_avoidance((x, y, x + box_w, y + box_h), frame_box=frame_box, item=item):
+        best: tuple[float, float, int, int] | None = None
+        for candidate_x, candidate_y in candidates:
+            cx = max(frame_box.x1 + 4, min(candidate_x, frame_box.x2 - box_w - 4))
+            cy = max(frame_box.y1 + 4, min(candidate_y, frame_box.y2 - box_h - 4))
+            rect = (cx, cy, cx + box_w, cy + box_h)
+            penalty = _overlap_area(
+                rect, frame_box=frame_box, item=item, placed_rects=placed_rects
+            )
+            reach = abs(cx + box_w // 2 - tail_point[0]) + abs(cy + box_h - tail_point[1])
+            if best is None or (penalty, reach) < (best[0], best[1]):
+                best = (penalty, reach, cx, cy)
+        if best is not None:
+            x, y = best[2], best[3]
+    elif not using_slot and _rect_hits_avoidance(
+        (x, y, x + box_w, y + box_h),
+        frame_box=frame_box,
+        item=item,
+        placed_rects=placed_rects,
+    ):
         for candidate_zone in _avoidance_zones(zone):
             cx, cy, cbox_w, cbox_h, clines, cdraw, cfont, cleading = _balloon_rect(
                 image,
@@ -448,6 +525,7 @@ def _draw_speech_balloon(
                 (cx, cy, cx + cbox_w, cy + cbox_h),
                 frame_box=frame_box,
                 item=item,
+                placed_rects=placed_rects,
             ):
                 zone = candidate_zone
                 x, y, box_w, box_h, lines, draw, font, leading = (
@@ -533,25 +611,40 @@ def _draw_speech_balloon(
             r = max(4, round(radius * radius_scale * 0.35))
             odraw.ellipse((cx - r, cy - r, cx + r, cy + r), fill=fill, outline=outline)
     else:
+        # A comic tail is part of the balloon's silhouette, not a spike stuck to
+        # it. Drawing the two shapes separately left the balloon's own outline
+        # running across the tail's base, which reads as a cone resting on a
+        # box. The base is widened to roughly an eighth of the balloon and the
+        # seam between them is painted out below.
         if attach_side in {"left", "right"}:
-            tail = [
-                (attach_x, attach_y - tail_pad),
-                (attach_x, attach_y + tail_pad),
-                tail_point,
-            ]
+            base = max(tail_pad, round(box_h * 0.18))
+            attach_y = max(y + base + 2, min(attach_y, y + box_h - base - 2))
+            corner_a = (attach_x, attach_y - base)
+            corner_b = (attach_x, attach_y + base)
         else:
-            tail = [
-                (attach_x - tail_pad, attach_y),
-                (attach_x + tail_pad, attach_y),
-                tail_point,
-            ]
-        odraw.polygon(tail, fill=fill, outline=outline)
+            base = max(tail_pad, round(box_w * 0.13))
+            attach_x = max(x + base + 2, min(attach_x, x + box_w - base - 2))
+            corner_a = (attach_x - base, attach_y)
+            corner_b = (attach_x + base, attach_y)
+        stroke = max(3, round(3 * scale))
+        odraw.polygon([corner_a, corner_b, tail_point], fill=fill, outline=outline, width=stroke)
+        # Erase the balloon border between the tail's base corners so the two
+        # shapes read as one continuous outline.
+        odraw.line([corner_a, corner_b], fill=fill, width=round(stroke * 1.8))
     image.alpha_composite(overlay)
 
     draw = ImageDraw.Draw(image)
     text_y = y + pad_y
     for line in lines:
-        draw.text((x + pad_x, text_y), line, font=font, fill=(20, 18, 16, 255))
+        # Comic lettering is centred in the balloon; flush-left reads as a
+        # caption box or a chat bubble.
+        line_w = draw.textlength(line, font=font)
+        draw.text(
+            (x + (box_w - line_w) / 2, text_y),
+            line,
+            font=font,
+            fill=(20, 18, 16, 255),
+        )
         text_y += leading
     return {
         "kind": kind,
