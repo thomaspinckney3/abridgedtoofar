@@ -170,6 +170,58 @@ class TestStructure:
         assert not any("no face" in line for line in lines)
 
 
+class TestHeadPlacementReachesEveryPanel:
+    """Reserving a band without saying where heads go is what let one through.
+
+    Figures are staged on dialogue panels only — 6 of 48 in Gatsby chapter 1 —
+    and the head rule used to be gated on them. The other 42 panels got a band
+    to keep clear and no instruction about heads, which held until page 4 panel
+    4, whose caption is itself a description of a standing man's face: the art
+    put his head inside the caption band. The rule now goes out with every band.
+    """
+
+    def test_caption_only_panel_is_told_where_heads_go(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.04, 0.88, 0.19), "caption")])
+        blob = "\n".join(lines)
+        assert "must sit clearly below that band" in blob
+
+    def test_wording_is_conditional_without_staged_figures(self):
+        # Most of the 42 are landscapes and interiors. "Every head" would assert
+        # a figure that the panel may not contain.
+        lines = describe_staging([_text(0, _box(0.06, 0.04, 0.88, 0.19), "caption")])
+        blob = "\n".join(lines)
+        assert "Any head or face that appears" in blob
+        assert "Every head" not in blob
+
+    def test_staged_figures_still_get_the_stronger_wording(self):
+        lines = describe_staging(
+            [_text(0, _box(0.06, 0.04, 0.88, 0.12), "caption")],
+            [_figure("Tom", "left", 0.48)],
+        )
+        assert any("Every head" in line for line in lines)
+
+    def test_bottom_band_alone_places_heads_above_it(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.77, 0.88, 0.19), "caption")])
+        assert any("must sit clearly above that band" in line for line in lines)
+
+    def test_split_bands_place_heads_in_the_middle(self):
+        lines = describe_staging([
+            _text(0, _box(0.06, 0.04, 0.88, 0.12), "caption"),
+            _text(1, _box(0.06, 0.80, 0.88, 0.16), speaker="Tom"),
+        ])
+        head_lines = [line for line in lines if "must sit" in line]
+        assert len(head_lines) == 1
+        # Each band's own sentence may say "that band" — it refers to the band
+        # that sentence just named. The head rule follows both, so there it
+        # would be ambiguous, and it names the middle positively instead.
+        assert "clear middle of the panel" in head_lines[0]
+        assert "that band" not in head_lines[0]
+
+    def test_still_no_digits_leak(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.04, 0.88, 0.19), "caption")])
+        assert not re.search(r"\d", "\n".join(lines))
+
+
 class TestFilterBoxRules:
     def test_drops_rules_that_reference_a_box(self):
         kept = filter_box_rules([

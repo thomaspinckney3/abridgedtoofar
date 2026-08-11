@@ -7,17 +7,18 @@ duplicated here.
 
 Keep this short. If an entry stops being true, delete it.
 
-_Last updated: 2026-08-09_
+_Last updated: 2026-08-11_
 
 ## State of the tree
 
-Uncommitted, on `main`: ~23 files. `forage/graphic/` (geometry, panel art, CLI),
-seven `tests/test_graphic_*.py`, four new `scripts/graphic_*`, this doc and
-`graphic-novel.md`. Last commit (`3644fc8`) is unrelated review-app work.
+Branch `graphic-novel-balloon-placement`, two commits on top of `3644fc8`:
+`32c1e97` (keep balloons off faces) and `162344f` (cap balloon tails). `main` has
+not been fast-forwarded onto it.
 
-Tests pass: 318 passed, 6 skipped.
+Tests pass: 353 passed, 6 skipped.
 
-Nothing is half-applied — the tree is consistent, just unversioned.
+The chapter has been regenerated end to end: `storyboard.layout_v5.json` →
+`panel_art_jobs_v5.jsonl` → `generated_pages_v6/` → `lettered_pages_v6/`.
 
 ## Open findings
 
@@ -139,6 +140,57 @@ panel art. `_cap_tail_length` in `scripts/letter_graphic_novel_frames.py` caps
 the tail at 16% of frame height while keeping its direction, which is what
 comics do for a distant speaker. Covered in `tests/test_graphic_balloon_tails.py`.
 
+### Full-chapter review of the regenerated pages (v6)
+
+All 12 pages, 48 panels, read at full resolution. **The original bug is gone on
+47 of 48 panels** — no balloon and no caption lands on a face, including page 11,
+which held two of the three original failures. What the review turned up:
+
+**1. Page 4 panel 4 — a caption still covers a face, and the cause is a gap in
+the prompt, not the model.** `describe_staging` emits the head-placement rule
+("every head must sit clearly below that band") only when the panel has staged
+`figures`. Figures are staged on the 6 dialogue panels; **the other 42 get the
+band sentence with nothing telling them where heads go.** It holds on 41 of them
+and breaks on the one where the caption is itself a description of a standing
+man's face, at a low angle, in a doorway — the art draws Tom's head at y
+0.09–0.20 straight into a band reserved to 0.23.
+
+**Fixed and validated.** `describe_staging` now emits the head rule whenever a
+band exists, phrased conditionally — "any head or face that appears" — since
+many of the 42 are landscapes and interiors where "every head" would assert a
+figure the panel does not contain. Panels with staged figures keep the stronger
+"every head". 42 of 48 prompts changed; the 6 dialogue panels are untouched.
+Regenerating page 4 panel 4 (1 image, $0.005) puts Tom's head at y 0.25–0.31,
+clearly below the band, with the reserved strip carrying continuous sunlit wall
+rather than a flat block. Covered by
+`tests/test_graphic_staging.py::TestHeadPlacementReachesEveryPanel`.
+
+**2. Page 12 panel 3 — the model painted two blank caption boxes into the art.**
+Flat cream rectangles, one behind the real caption and one on the lawn. The
+prompt already says "no caption boxes, no speech balloons" in its hard
+constraints, so this is a compliance failure rather than a missing instruction —
+the same family as the letterboxing, which the band wording fixed. 1 of 48.
+
+**3. Reserved bands cleared by washing the art out** (page 9 panel 1, page 12
+panel 4). Rather than a hard strip, the model fades the lawn or floor to a pale
+wash through the band. The anti-letterbox sentence forbids strips and frames; it
+does not forbid draining the scene. Softer than letterboxing and easy to miss.
+
+**4. Tails no longer spike, but they now visibly aim at the wrong thing.** The
+cap works. What it exposed is finding 2 below: the anchor is the staged
+`thumbnail_layout` mouth point — the left/right template at y 0.373 — not the
+art. On page 11 panel 3 the speakers stand in a doorway upper-right, and Daisy's
+tail points straight up at **Nick**, who is not speaking. This was masked while
+balloons sat near the top, close to their anchors; moving them to the bottom
+made a wrong direction long and obvious.
+
+**5. Long captions render in markedly smaller type** (3p4, 4p4, 10p4, 12p3) —
+the fit chain shrinks to fit rather than splitting, and those boxes read as a
+different, harder-to-read book from their neighbours.
+
+Nothing here is a regression of the balloon fix; 1, 4 and 5 are pre-existing
+weaknesses that the fix made visible or moved into view.
+
 **Do not trust reserved-band energy on its own from here.** That metric fell
 from 0.50 to 0.38 when the model was letterboxing and rose to 0.60 once the
 scene continued through the bands — so on this axis the *worse* page scored
@@ -192,6 +244,11 @@ y 0.54–0.59 — below where the art draws mouths, for the same reason as findi
 1. In the page 6 debug render the anchors land on Tom's hip and Nick's shoulder.
 Tails point at the right *character*, at the wrong *height*.
 
+**Worse than that, per the v6 review:** on page 11 panel 3 the tail points at the
+wrong *character* — the anchor is the left/right template, so a balloon for a
+speaker the art placed in a doorway upper-right aims at whoever happens to be on
+the left. This is now the most visible remaining defect in the chapter.
+
 Same fix as finding 1: a real detected face position resolves both.
 
 ### 3. The placeholder-art harness cannot catch finding 1
@@ -207,6 +264,16 @@ It remains useful for what it was built for — it is how the tail bug in findin
 clean placeholder run as evidence of that would be wrong.
 
 ## Next threads
+
+Ordered by what the v6 review says is worth doing, cheapest first:
+
+- **Anchor tails to detected faces** rather than the staged template. This is
+  finding 2, and it is now the most visible defect. Costs a vision call per
+  dialogue panel — only 6 panels in this chapter.
+- **Add "do not drain or fade the scene" to the anti-letterbox wording**, and
+  fold blank caption boxes into it explicitly.
+- **Split long captions across boxes instead of shrinking the type**, so the
+  handful of dense panels read like the rest of the book.
 
 - **Fold the slots stage into layout.** Layout runs immediately after slots in
   every driver and overwrites its slot boxes, `lettering_constraints`,

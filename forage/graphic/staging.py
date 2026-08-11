@@ -146,24 +146,33 @@ def describe_staging(
             "shrink the scene to fit between them."
         )
 
+    # Where heads go is stated for every panel that reserves a band, not only
+    # the ones with staged figures. Figures are staged on dialogue panels alone
+    # — 6 of 48 in Gatsby chapter 1 — so the other 42 used to get the band
+    # sentence with nothing saying where heads belong. That held on 41 of them
+    # and broke on the one whose caption was itself a description of a standing
+    # man's face, where the model drew the head straight into the band. Panels
+    # with nobody in them are unaffected: the rule only bites if a head appears.
+    subject = "Every head" if figs else "Any head or face that appears"
+    if top and bottom:
+        # With a band at each end, "that band" is ambiguous, and the useful
+        # instruction is the positive one: heads belong in the clear middle.
+        lines.append(
+            f"- {subject} must sit in the clear middle of the panel, "
+            "between the two reserved bands and touching neither."
+        )
+    elif top:
+        lines.append(
+            f"- {subject} must sit clearly below that band, with visible "
+            "space between the top of the head and the band's lower edge."
+        )
+    elif bottom:
+        lines.append(
+            f"- {subject} must sit clearly above that band, with visible "
+            "space between the figure and the band's upper edge."
+        )
+
     if figs:
-        if top and bottom:
-            # With a band at each end, "that band" is ambiguous, and the useful
-            # instruction is the positive one: heads belong in the clear middle.
-            lines.append(
-                "- Every head must sit in the clear middle of the panel, "
-                "between the two reserved bands and touching neither."
-            )
-        elif top:
-            lines.append(
-                "- Every head must sit clearly below that band, with visible "
-                "space between the top of the head and the band's lower edge."
-            )
-        elif bottom:
-            lines.append(
-                "- Every head must sit clearly above that band, with visible "
-                "space between the figure and the band's upper edge."
-            )
         for fig in figs:
             face = fig["face_box"]
             center = float(face["y"]) + float(face["h"]) / 2
