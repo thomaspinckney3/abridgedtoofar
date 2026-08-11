@@ -131,6 +131,14 @@ Adding "the reserved bands are part of the scene, not borders: continue the
 room's own wall, floor, sky or shadow through them" to `staging.py` removed it:
 retested at $0.03, **3 of 3 panels came back full-bleed with every face clear**.
 
+**Follow-on defect, fixed: spike tails.** With the bands at opposite ends, a
+balloon can sit a third of a panel from its speaker's mouth, and the tail was
+drawn as a triangle spanning the whole distance — a white spike across the
+artwork. Only visible on a composed page; every earlier check looked at bare
+panel art. `_cap_tail_length` in `scripts/letter_graphic_novel_frames.py` caps
+the tail at 16% of frame height while keeping its direction, which is what
+comics do for a distant speaker. Covered in `tests/test_graphic_balloon_tails.py`.
+
 **Do not trust reserved-band energy on its own from here.** That metric fell
 from 0.50 to 0.38 when the model was letterboxing and rose to 0.60 once the
 scene continued through the bands — so on this axis the *worse* page scored

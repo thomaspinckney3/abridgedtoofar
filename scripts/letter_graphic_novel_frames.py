@@ -74,6 +74,27 @@ def _zone_origin(frame_box: Box, box_w: int, box_h: int, zone: str, inset: int) 
     return x, y
 
 
+def _cap_tail_length(
+    attach: tuple[int, int],
+    tail_point: tuple[int, int],
+    max_length: int,
+) -> tuple[int, int]:
+    """Shorten a tail to `max_length`, keeping its direction.
+
+    Direction is what a tail communicates — which character is speaking. Length
+    communicates nothing, so a tail long enough to cross the artwork is all cost
+    and no signal. Anything already within the limit is returned untouched.
+    """
+    ax, ay = attach
+    px, py = tail_point
+    dx, dy = px - ax, py - ay
+    length = (dx * dx + dy * dy) ** 0.5
+    if length <= max_length or length == 0:
+        return tail_point
+    scale = max_length / length
+    return (round(ax + dx * scale), round(ay + dy * scale))
+
+
 def _anchor_outside_balloon(
     tail_point: tuple[int, int],
     x: int,
@@ -471,6 +492,18 @@ def _draw_speech_balloon(
         attach_side = "bottom"
         attach_x = max(x + round(box_w * 0.18), min(tail_point[0], x + round(box_w * 0.82)))
         attach_y = y + box_h
+
+    # A tail reaches toward the speaker; it does not have to arrive. Once the
+    # caption and balloon bands moved to opposite ends of the panel, a balloon
+    # could sit a third of a panel away from the mouth it belongs to, and a
+    # triangle drawn the whole distance renders as a white spike across the art.
+    # Capping the length keeps the tail pointing at the right character while
+    # leaving the drawing intact — which is what comics do for a distant speaker.
+    tail_point = _cap_tail_length(
+        (attach_x, attach_y),
+        tail_point,
+        max_length=max(round(frame_box.height * 0.16), tail_pad * 3),
+    )
 
     if tail_style in {"none", "no_tail", "tailess", "tailless", "hidden", "off"}:
         pass

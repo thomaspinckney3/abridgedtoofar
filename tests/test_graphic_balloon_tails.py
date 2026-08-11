@@ -128,3 +128,41 @@ def test_a_figure_without_a_mouth_point_is_skipped() -> None:
     panel = {"thumbnail_layout": {"figures": [{"character": "Tom Buchanan"}]}}
 
     assert _staged_mouth_ratio(panel, "Tom Buchanan") is None
+
+
+class TestTailLengthCap:
+    """A tail points at a speaker; it does not have to reach one.
+
+    Once caption and balloon bands moved to opposite ends of a panel, a balloon
+    could sit a third of a panel from its speaker's mouth. Drawn as a triangle
+    over that distance it renders as a white spike across the artwork — visible
+    only on a composed page, which is how it was found.
+    """
+
+    def test_long_tail_is_shortened_but_keeps_direction(self):
+        from scripts.letter_graphic_novel_frames import _cap_tail_length
+
+        attach = (100, 800)
+        far = (100, 200)  # 600px straight up
+        capped = _cap_tail_length(attach, far, max_length=150)
+
+        assert capped[0] == 100, "direction must be preserved"
+        assert capped[1] == 650, "tail should stop at the cap"
+
+    def test_diagonal_direction_is_preserved(self):
+        from scripts.letter_graphic_novel_frames import _cap_tail_length
+
+        capped = _cap_tail_length((0, 0), (300, 400), max_length=50)
+        # 3-4-5 triangle: the capped point stays on the same ray.
+        assert capped == (30, 40)
+
+    def test_short_tail_is_left_alone(self):
+        from scripts.letter_graphic_novel_frames import _cap_tail_length
+
+        near = (120, 60)
+        assert _cap_tail_length((100, 100), near, max_length=500) == near
+
+    def test_zero_length_does_not_divide_by_zero(self):
+        from scripts.letter_graphic_novel_frames import _cap_tail_length
+
+        assert _cap_tail_length((100, 100), (100, 100), max_length=50) == (100, 100)
