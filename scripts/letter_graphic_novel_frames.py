@@ -95,6 +95,30 @@ def _cap_tail_length(
     return (round(ax + dx * scale), round(ay + dy * scale))
 
 
+def _attach_side(
+    tail_point: tuple[int, int],
+    x: int,
+    y: int,
+    box_w: int,
+    box_h: int,
+) -> str:
+    """Pick the balloon edge a tail should leave from.
+
+    Testing x before y picks a side on the wrong axis whenever the speaker is
+    mostly above or below the balloon but a little to one side: a mouth 141px
+    up and 18px left used to attach to the left edge, producing a sliver two
+    pad-widths tall and 18px long instead of a wedge off the top. Choosing the
+    edge the speaker is furthest beyond keeps the tail on the dominant axis.
+    """
+    gaps = {
+        "left": x - tail_point[0],
+        "right": tail_point[0] - (x + box_w),
+        "top": y - tail_point[1],
+        "bottom": tail_point[1] - (y + box_h),
+    }
+    return max(gaps, key=lambda side: gaps[side])
+
+
 def _anchor_outside_balloon(
     tail_point: tuple[int, int],
     x: int,
@@ -476,22 +500,13 @@ def _draw_speech_balloon(
     tail_point = _anchor_outside_balloon(
         tail_point, x, y, box_w, box_h, min_length=max(tail_pad, round(14 * scale))
     )
-    if tail_point[0] < x:
-        attach_side = "left"
-        attach_x = x
+    attach_side = _attach_side(tail_point, x, y, box_w, box_h)
+    if attach_side in {"left", "right"}:
+        attach_x = x if attach_side == "left" else x + box_w
         attach_y = max(y + tail_pad, min(tail_point[1], y + box_h - tail_pad))
-    elif tail_point[0] > x + box_w:
-        attach_side = "right"
-        attach_x = x + box_w
-        attach_y = max(y + tail_pad, min(tail_point[1], y + box_h - tail_pad))
-    elif tail_point[1] < y:
-        attach_side = "top"
-        attach_x = max(x + round(box_w * 0.18), min(tail_point[0], x + round(box_w * 0.82)))
-        attach_y = y
     else:
-        attach_side = "bottom"
         attach_x = max(x + round(box_w * 0.18), min(tail_point[0], x + round(box_w * 0.82)))
-        attach_y = y + box_h
+        attach_y = y if attach_side == "top" else y + box_h
 
     # A tail reaches toward the speaker; it does not have to arrive. Once the
     # caption and balloon bands moved to opposite ends of the panel, a balloon

@@ -21,6 +21,7 @@ from PIL import Image
 from scripts.compose_graphic_panel_page import _staged_mouth_ratio
 from scripts.letter_graphic_novel_frames import (
     _anchor_outside_balloon,
+    _attach_side,
     _draw_speech_balloon,
 )
 from scripts.letter_graphic_novel_pages import Box
@@ -166,3 +167,38 @@ class TestTailLengthCap:
         from scripts.letter_graphic_novel_frames import _cap_tail_length
 
         assert _cap_tail_length((100, 100), (100, 100), max_length=50) == (100, 100)
+
+
+class TestAttachSide:
+    """Which edge the tail leaves from must follow the dominant axis.
+
+    The old chain tested x before y, so any speaker even slightly outside the
+    balloon's horizontal span attached sideways regardless of how far above or
+    below they were. On page 7 panel 1 that produced a tail 141px tall and 18px
+    wide — a sliver reading as a stray dark line across the art rather than a
+    wedge pointing at Daisy.
+    """
+
+    def _side(self, px, py):
+        return _attach_side((px, py), BOX["x"], BOX["y"], BOX["w"], BOX["h"])
+
+    def test_mostly_above_and_slightly_left_leaves_through_the_top(self):
+        # The regression: 141 above, 18 left.
+        assert self._side(BOX["x"] - 18, BOX["y"] - 141) == "top"
+
+    def test_mostly_left_and_slightly_above_leaves_through_the_left(self):
+        assert self._side(BOX["x"] - 141, BOX["y"] - 18) == "left"
+
+    def test_directly_above_leaves_through_the_top(self):
+        assert self._side(200, 20) == "top"
+
+    def test_directly_below_leaves_through_the_bottom(self):
+        assert self._side(200, 400) == "bottom"
+
+    def test_directly_left_and_right_are_unchanged(self):
+        assert self._side(20, 180) == "left"
+        assert self._side(400, 180) == "right"
+
+    def test_a_diagonal_speaker_picks_the_further_axis(self):
+        # 200 beyond the right edge, 60 below: horizontal dominates.
+        assert self._side(BOX["x"] + BOX["w"] + 200, BOX["y"] + BOX["h"] + 60) == "right"

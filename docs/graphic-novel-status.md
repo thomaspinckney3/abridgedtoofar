@@ -11,14 +11,16 @@ _Last updated: 2026-08-11_
 
 ## State of the tree
 
-Branch `graphic-novel-balloon-placement`, two commits on top of `3644fc8`:
-`32c1e97` (keep balloons off faces) and `162344f` (cap balloon tails). `main` has
-not been fast-forwarded onto it.
+Branch `graphic-novel-balloon-placement`, on top of `3644fc8`. `main` has not
+been fast-forwarded onto it.
 
-Tests pass: 353 passed, 6 skipped.
+Tests pass: 365 passed, 6 skipped.
 
-The chapter has been regenerated end to end: `storyboard.layout_v5.json` →
-`panel_art_jobs_v5.jsonl` → `generated_pages_v6/` → `lettered_pages_v6/`.
+**Current output is `lettered_pages_v8/`.** The chain that produced it:
+`storyboard.layout_v5.json` → `panel_art_jobs_v6.jsonl` → `panel_art_v6/` →
+`speaker_anchors_v6.json` → `generated_pages_v8/` → `lettered_pages_v8/`.
+Earlier `_v6`/`_v7` page directories are superseded; v7 differs from v8 only in
+the balloon-tail attach side.
 
 ## Open findings
 
@@ -191,6 +193,23 @@ different, harder-to-read book from their neighbours.
 Nothing here is a regression of the balloon fix; 1, 4 and 5 are pre-existing
 weaknesses that the fix made visible or moved into view.
 
+### Where the chapter stands after v8
+
+1, 2 and 4 are fixed and the chapter regenerated ($0.44: 48 images at $0.24 plus
+6 vision calls). Across all 12 pages **no balloon or caption lands on a face**,
+and every tail points at the speaker the art actually drew.
+
+**Letterboxing is a residual, not a regression.** It looked like the head rule
+had caused it — page 7 panel 3 came back with a flat slate block above an inset
+scene. Measured with the same detector over both runs, it is **2 of 48 panels
+before the change and 3 of 48 after**: noise at this sample size, and the panel
+that regressed most visibly (7p1) is a dialogue panel whose prompt did not
+change at all. The model is simply inconsistent run to run on this. Worth
+attacking through wording, not worth reading a single run as evidence.
+
+Item 3 (bands cleared by washing the art out) did not recur; item 5 (shrunken
+type on long captions) is unchanged and now the most visible cosmetic flaw.
+
 **Do not trust reserved-band energy on its own from here.** That metric fell
 from 0.50 to 0.38 when the model was letterboxing and rose to 0.60 once the
 scene continued through the bands — so on this axis the *worse* page scored
@@ -233,23 +252,26 @@ Three directions, roughly in order of cost:
 3. Reserve the top band unconditionally and place figures below it, so the plan
    stops depending on where the art puts heads.
 
-### 2. Tail anchors aim at torsos, not mouths
+### 2. Tail anchors aim at torsos, not mouths — resolved
 
-Fixed but incomplete. Tails now aim per-speaker instead of at a constant 0.34,
-and are projected outside the balloon before an attach side is chosen — the
-old bug where a tall balloon covered its own anchor is gone.
+The fallback anchor was the layout's staged `mouth_point`, a left/right template
+at y 0.373. Tails therefore pointed wherever the template said, not where the
+art drew the speaker: on page 11 panel 3 Daisy's tail pointed at **Nick**.
 
-What remains: the fallback anchor is the layout's `mouth_point`, which sits at
-y 0.54–0.59 — below where the art draws mouths, for the same reason as finding
-1. In the page 6 debug render the anchors land on Tom's hip and Nick's shoulder.
-Tails point at the right *character*, at the wrong *height*.
+**Fixed by running the anchor stage that already existed.** No new code was
+needed — `scripts/graphic_speaker_anchor.py` detects mouths, and
+`compose_graphic_panel_page` already accepts `--anchors-json`; the chapter had
+simply been lettered without it. It skips panels with no speech, so this chapter
+cost 6 vision calls. All 12 anchors came back `visible` at confidence 0.83–0.90,
+and every balloon in `lettered_pages_v8/layout.json` now reads
+`anchor_source: detection`.
 
-**Worse than that, per the v6 review:** on page 11 panel 3 the tail points at the
-wrong *character* — the anchor is the left/right template, so a balloon for a
-speaker the art placed in a doorway upper-right aims at whoever happens to be on
-the left. This is now the most visible remaining defect in the chapter.
-
-Same fix as finding 1: a real detected face position resolves both.
+**One rendering bug surfaced once tails aimed truthfully.** `_attach_side` chose
+the balloon edge by testing x before y, so a speaker mostly *above* a balloon but
+slightly to one side attached sideways: on page 7 panel 1 Daisy's tail was 141px
+tall and 18px wide, a sliver reading as a stray dark line rather than a wedge.
+The edge is now chosen by whichever one the speaker is furthest beyond. Covered
+by `tests/test_graphic_balloon_tails.py::TestAttachSide`.
 
 ### 3. The placeholder-art harness cannot catch finding 1
 
@@ -267,11 +289,12 @@ clean placeholder run as evidence of that would be wrong.
 
 Ordered by what the v6 review says is worth doing, cheapest first:
 
-- **Anchor tails to detected faces** rather than the staged template. This is
-  finding 2, and it is now the most visible defect. Costs a vision call per
-  dialogue panel — only 6 panels in this chapter.
+- **Wire the anchor stage into the driver.** It is now proven to work, but it
+  still has to be invoked by hand; a chapter lettered without `--anchors-json`
+  silently falls back to the template that pointed Daisy's tail at Nick.
 - **Add "do not drain or fade the scene" to the anti-letterbox wording**, and
-  fold blank caption boxes into it explicitly.
+  fold blank caption boxes into it explicitly. Letterboxing sits at ~2–3 of 48
+  panels and is the last art-side defect.
 - **Split long captions across boxes instead of shrinking the type**, so the
   handful of dense panels read like the rest of the book.
 
