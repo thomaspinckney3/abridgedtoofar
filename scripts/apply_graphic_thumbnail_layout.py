@@ -778,13 +778,22 @@ def _layout_panel(
 
     figure_top = 0.28
     figure_bottom = 0.96
-    if text_boxes:
-        text_box_values = [_box_from_dict(item["box"]) for item in text_boxes]
-        top_text_boxes = [box for box in text_box_values if box.y < 0.55]
+    # Only captions push the figures around. Balloon boxes used to as well, and
+    # since balloons were parked along the bottom that squeezed every figure up
+    # into the top half — heads in the upper third, exactly the corners the art
+    # now has to keep quiet for the balloons to sit in. Balloons are lettered
+    # beside their speaker, so their slot no longer constrains the staging.
+    caption_boxes = [
+        _box_from_dict(item["box"])
+        for item in text_boxes
+        if str(item.get("kind") or "").strip().lower() == "caption"
+    ]
+    if caption_boxes:
+        top_text_boxes = [box for box in caption_boxes if box.y < 0.55]
         if top_text_boxes:
             top_text_bottom = max(box.y2 for box in top_text_boxes)
             figure_top = max(0.28, top_text_bottom + 0.08)
-        bottom_text_boxes = [box for box in text_box_values if box.y >= 0.55]
+        bottom_text_boxes = [box for box in caption_boxes if box.y >= 0.55]
         if bottom_text_boxes:
             bottom_text_top = min(box.y for box in bottom_text_boxes)
             figure_bottom = min(0.96, bottom_text_top - 0.04)

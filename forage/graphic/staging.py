@@ -87,6 +87,13 @@ def _boxes(items: Iterable[Any]) -> list[dict[str, Any]]:
     return out
 
 
+def _is_caption(item: dict[str, Any]) -> bool:
+    kind = str(item.get("kind") or "").strip().lower()
+    if kind:
+        return kind == "caption"
+    return str(item.get("id") or "").strip().lower().startswith("caption")
+
+
 def _figures(items: Iterable[Any]) -> list[dict[str, Any]]:
     out = []
     for item in items or []:
@@ -116,8 +123,16 @@ def describe_staging(
 
     lines = ["Composition (follow this staging exactly; it is why the panel works):"]
 
-    top = [t for t in texts if float(t["box"]["y"]) < 0.5]
-    bottom = [t for t in texts if float(t["box"]["y"]) >= 0.5]
+    # Only captions are band-placed. Balloons are lettered beside whichever
+    # speaker the art actually drew, so reserving a strip for them asked the
+    # model to empty a part of the panel nothing would ever use — and produced
+    # panels with a dead third of floor. What balloons need from the art is
+    # quiet background around the speakers, which is asked for further down.
+    captions = [t for t in texts if _is_caption(t)]
+    speech = [t for t in texts if not _is_caption(t)]
+
+    top = [t for t in captions if float(t["box"]["y"]) < 0.5]
+    bottom = [t for t in captions if float(t["box"]["y"]) >= 0.5]
 
     if top:
         extent = max(float(t["box"]["y"]) + float(t["box"]["h"]) for t in top)
@@ -172,6 +187,22 @@ def describe_staging(
             "space between the figure and the band's upper edge."
         )
 
+    if speech:
+        # This is what a comic artist actually leaves room for: air around the
+        # speakers, so a balloon can sit next to the person saying the line.
+        # Asking for a strip along the bottom instead produced panels where the
+        # dialogue read as subtitles under the picture.
+        lines.append(
+            "- Give the figures headroom: leave open, uncluttered background "
+            "above and between the speakers' heads — plain wall, sky, drapery "
+            "or shadow. The dialogue is lettered into that space, so keep key "
+            "detail, props and other faces out of it."
+        )
+        lines.append(
+            "- Do not crowd the frame edge to edge. The figures should read "
+            "clearly with open background around them, not fill the panel."
+        )
+
     if figs:
         for fig in figs:
             face = fig["face_box"]
@@ -188,7 +219,7 @@ def describe_staging(
             )
         lines.append(
             "- Crop the figures so their heads fall at the height described "
-            "rather than filling the panel; leave the reserved bands genuinely empty."
+            "rather than filling the panel; leave the quiet areas genuinely empty."
         )
         lines.append("- Stage the speakers in left-to-right order as listed.")
 

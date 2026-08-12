@@ -99,7 +99,9 @@ class TestReservedBandMargin:
     """
 
     def test_margin_widens_the_named_band(self):
-        texts = [_text(0, _box(0.06, 0.04, 0.88, 0.32))]  # extent 0.36
+        # Bands are a caption concept: balloons are lettered beside their
+        # speaker, so a speech box no longer reserves anything from the art.
+        texts = [_text(0, _box(0.06, 0.04, 0.88, 0.32), "caption")]  # extent 0.36
         with_margin = describe_staging(texts, margin=BAND_MARGIN)[1]
         without = describe_staging(texts, margin=0.0)[1]
         assert "top third" in without
@@ -107,7 +109,7 @@ class TestReservedBandMargin:
         assert "upper two-fifths" in with_margin
 
     def test_zero_margin_is_honoured(self):
-        texts = [_text(0, _box(0.0, 0.0, 1.0, 0.14))]
+        texts = [_text(0, _box(0.0, 0.0, 1.0, 0.14), "caption")]
         assert "top eighth" in describe_staging(texts, margin=0.0)[1]
 
 
@@ -205,9 +207,10 @@ class TestHeadPlacementReachesEveryPanel:
         assert any("must sit clearly above that band" in line for line in lines)
 
     def test_split_bands_place_heads_in_the_middle(self):
+        # Two captions, one at each end. A speech box no longer makes a band.
         lines = describe_staging([
             _text(0, _box(0.06, 0.04, 0.88, 0.12), "caption"),
-            _text(1, _box(0.06, 0.80, 0.88, 0.16), speaker="Tom"),
+            _text(1, _box(0.06, 0.80, 0.88, 0.16), "caption"),
         ])
         head_lines = [line for line in lines if "must sit" in line]
         assert len(head_lines) == 1
@@ -219,6 +222,52 @@ class TestHeadPlacementReachesEveryPanel:
 
     def test_still_no_digits_leak(self):
         lines = describe_staging([_text(0, _box(0.06, 0.04, 0.88, 0.19), "caption")])
+        assert not re.search(r"\d", "\n".join(lines))
+
+
+class TestSpeechAsksForAirNotABand:
+    """Balloons need room beside the speaker, not a strip of empty panel.
+
+    Reserving a band for balloons made the model empty a third of the frame that
+    nothing then used, because balloons are lettered next to whichever speaker
+    the art actually drew. What the art has to supply is quiet background around
+    the figures.
+    """
+
+    def test_a_speech_box_reserves_no_band(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.74, 0.38, 0.19), speaker="Tom")])
+        blob = "\n".join(lines)
+        assert "Leave the bottom" not in blob
+        assert "may enter that band" not in blob
+
+    def test_a_speech_box_asks_for_quiet_corners(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.74, 0.38, 0.19), speaker="Tom")])
+        blob = "\n".join(lines)
+        assert "headroom" in blob
+        assert "above and between the speakers' heads" in blob
+
+    def test_a_caption_still_reserves_its_band(self):
+        lines = describe_staging([_text(0, _box(0.06, 0.04, 0.88, 0.12), "caption")])
+        assert any("may enter that band" in line for line in lines)
+
+    def test_a_panel_with_both_reserves_only_the_caption_band(self):
+        lines = describe_staging([
+            _text(0, _box(0.06, 0.04, 0.88, 0.12), "caption"),
+            _text(1, _box(0.06, 0.74, 0.38, 0.19), speaker="Tom"),
+        ])
+        blob = "\n".join(lines)
+        assert "Leave the top" in blob
+        assert "Leave the bottom" not in blob
+        assert "headroom" in blob
+
+    def test_still_no_digits_leak(self):
+        lines = describe_staging(
+            [
+                _text(0, _box(0.06, 0.04, 0.88, 0.12), "caption"),
+                _text(1, _box(0.06, 0.74, 0.38, 0.19), speaker="Tom"),
+            ],
+            [_figure("Tom Buchanan", "left", 0.48)],
+        )
         assert not re.search(r"\d", "\n".join(lines))
 
 

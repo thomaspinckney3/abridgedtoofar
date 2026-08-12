@@ -14,13 +14,13 @@ _Last updated: 2026-08-11_
 Branch `graphic-novel-balloon-placement`, on top of `3644fc8`. `main` has not
 been fast-forwarded onto it.
 
-Tests pass: 365 passed, 6 skipped.
+Tests pass: 377 passed, 6 skipped.
 
-**Current output is `lettered_pages_v8/`.** The chain that produced it:
-`storyboard.layout_v5.json` → `panel_art_jobs_v6.jsonl` → `panel_art_v6/` →
-`speaker_anchors_v6.json` → `generated_pages_v8/` → `lettered_pages_v8/`.
-Earlier `_v6`/`_v7` page directories are superseded; v7 differs from v8 only in
-the balloon-tail attach side.
+**Current output is `lettered_pages_v12/`.** The chain that produced it:
+`storyboard.layout_v6.json` → `panel_art_jobs_v7.jsonl` → `panel_art_v7/` →
+`speaker_anchors_v7.json` → `generated_pages_v12/` → `lettered_pages_v12/`,
+composed with `--balloon-placement near-speaker`. All earlier page directories
+are superseded.
 
 ## Open findings
 
@@ -223,12 +223,34 @@ Four things had to follow from that, all free:
 
 Guarded by `tests/test_graphic_balloon_placement.py`.
 
-**What this leaves.** The art still reserves a bottom band for balloons that no
-longer go there, so several panels (7p1, 11p1, 11p2) carry a dead third of floor.
-The staging instruction should ask for negative space *beside and above the
-speakers' heads* instead of a band at the bottom — which means regenerating the
-art ($0.24) and reworking `staging.py` and `apply_graphic_thumbnail_layout.py`.
-Current output: `lettered_pages_v11/`.
+### The art asks for headroom now, not a band — done
+
+Reserving a strip for balloons made the model empty a third of the panel that
+nothing then used, because balloons are lettered beside whichever speaker the art
+drew. **Bands are a caption concept only.** A speech box now asks for the thing a
+comic artist actually leaves: *"Give the figures headroom: leave open,
+uncluttered background above and between the speakers' heads… the dialogue is
+lettered into that space."*
+
+**A second cause was squeezing the figures.** `figure_bottom` in
+`apply_graphic_thumbnail_layout.py` was pulled up by any text box in the lower
+half of the panel. Balloons were parked along the bottom, so every figure got
+compressed into the top half — heads in the upper third, which is exactly where
+the balloons now need to go. Only captions constrain the figures.
+
+Measured effect: detected mouths moved from **y 0.28–0.42 to 0.36–0.67**, all 12
+still found at 0.86–0.92 confidence, and the dead floor is gone.
+
+**Only 6 of 48 prompts changed**, so regenerating cost **$0.03** rather than
+$0.24 — the other 42 panels' prompts were byte-identical and their art was
+reused. Re-running them would have returned different art, not better art.
+
+Current output: **`lettered_pages_v12/`**, from `storyboard.layout_v6.json` →
+`panel_art_jobs_v7.jsonl` → `panel_art_v7/` → `speaker_anchors_v7.json`.
+
+Watch for one drafting trap: the first wording asked for quiet *upper-left and
+upper-right corners* while the same prompt stages the two speakers on the left
+and right sides. Contradictory instructions; caught before spending.
 
 ### Where the chapter stands after v8
 
