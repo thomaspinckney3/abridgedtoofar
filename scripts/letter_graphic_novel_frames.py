@@ -329,6 +329,24 @@ def _rect_hits_avoidance(
     return False
 
 
+def _reads_before(
+    rect: tuple[int, int, int, int],
+    other: tuple[int, int, int, int],
+) -> bool:
+    """Would a reader reach `rect` before `other`?
+
+    Comics read top to bottom, then left to right within a row. Two balloons on
+    roughly the same line are ordered by x; otherwise by y.
+    """
+    x1, y1, x2, y2 = rect
+    ox1, oy1, ox2, oy2 = other
+    overlap = min(y2, oy2) - max(y1, oy1)
+    same_row = overlap > 0.4 * min(y2 - y1, oy2 - oy1)
+    if same_row:
+        return x1 < ox1
+    return y1 < oy1
+
+
 def _avoid_rects(
     frame_box: Box,
     item: dict[str, Any],
@@ -417,6 +435,7 @@ def _draw_speech_balloon(
     stack_index: int,
     stack_count: int,
     placed_rects: list[tuple[int, int, int, int]] | None = None,
+    read_after_rects: list[tuple[int, int, int, int]] | None = None,
 ) -> dict[str, Any]:
     text = str(item.get("text", "")).strip()
     if not text:
@@ -457,7 +476,8 @@ def _draw_speech_balloon(
     scale = min(image.size) / 1024
     tail_point = _anchor_point(frame_box, item)
     if near_speaker:
-        hgap = max(14, round(min(frame_box.width, frame_box.height) * 0.055))
+        # Wide enough that the tail is a readable stroke rather than a nub.
+        hgap = max(18, round(min(frame_box.width, frame_box.height) * 0.08))
         vgap = max(box_h, round(frame_box.height * 0.22))
         speaker_region = (
             str(item.get("speaker_region") or item.get("speaker_side") or "")
@@ -474,23 +494,44 @@ def _draw_speech_balloon(
             right_space = frame_box.x2 - tail_point[0]
             preferred_sides = ("right", "left") if right_space >= left_space else ("left", "right")
 
-        # Score every candidate and take the least-obstructed one. First-fit
-        # used to fall back to its own starting guess when nothing was clear,
-        # which is how a balloon ended up underneath a caption that is drawn
-        # after it — the worst available position rather than the best.
+        # A balloon belongs out to the SIDE of the speaker at roughly head
+        # height, with the tail angling sideways and in. Offsetting it by a
+        # panel-fraction vertically and only a hair horizontally put it directly
+        # overhead, so every tail dropped straight down — which is not how
+        # comics read. The vertical offsets below are all fractions of the
+        # balloon's own height, so the balloon straddles the speaker's head
+        # rather than floating above it, and the horizontal gap dominates.
         candidates: list[tuple[int, int]] = []
         for side in preferred_sides:
             side_x = (
                 tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
             )
             for candidate_y in (
-                tail_point[1] - box_h - vgap,
-                tail_point[1] - box_h - hgap,
-                tail_point[1] - box_h // 2,
-                tail_point[1] + round(frame_box.height * 0.10),
+                tail_point[1] - round(box_h * 0.80),
+                tail_point[1] - round(box_h * 0.50),
+                tail_point[1] - round(box_h * 1.05),
+                tail_point[1] - round(box_h * 0.20),
             ):
                 candidates.append((side_x, candidate_y))
-        # Directly over the speaker, as a last resort when neither side is free.
+        # Beside the speaker but below every balloon already placed. A speaker
+        # who stands higher in the frame than the one they answer has no
+        # position at their own head height that reads second, so without this
+        # the scorer can only choose between two bad candidates.
+        if read_after_rects:
+            below = max(rect[3] for rect in read_after_rects) + max(8, round(12 * scale))
+            for side in preferred_sides:
+                side_x = (
+                    tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
+                )
+                candidates.append((side_x, below))
+
+        # Overhead and below, only if neither side of the speaker is usable.
+        for side in preferred_sides:
+            side_x = (
+                tail_point[0] + hgap if side == "right" else tail_point[0] - box_w - hgap
+            )
+            candidates.append((side_x, tail_point[1] - box_h - vgap))
+            candidates.append((side_x, tail_point[1] + round(frame_box.height * 0.10)))
         candidates.append((tail_point[0] - box_w // 2, tail_point[1] - box_h - vgap))
 
         best: tuple[float, float, int, int] | None = None
@@ -501,7 +542,33 @@ def _draw_speech_balloon(
             penalty = _overlap_area(
                 rect, frame_box=frame_box, item=item, placed_rects=placed_rects
             )
-            reach = abs(cx + box_w // 2 - tail_point[0]) + abs(cy + box_h - tail_point[1])
+            # A candidate clamped against the panel edge can end up sitting on
+            # the very mouth it belongs to, which leaves a stub of a tail and
+            # covers the speaker. Prefer the speaker's other side over that.
+            if cx <= tail_point[0] <= cx + box_w and cy <= tail_point[1] <= cy + box_h:
+                penalty += frame_box.width * frame_box.height * 0.05
+            # Beside means beside: if the speaker's mouth falls within the
+            # balloon's horizontal span, the tail leaves the top or bottom edge
+            # and drops vertically, which is the habit being corrected. A
+            # balloon clamped against the panel edge lands here even when its
+            # centre looks well offset.
+            elif cx <= tail_point[0] <= cx + box_w:
+                penalty += frame_box.width * frame_box.height * 0.03
+            # This balloon speaks after every balloon already placed in the
+            # panel, so it must not read before one. Placing each balloon beside
+            # its own speaker removed the guarantee the old top-to-bottom band
+            # gave for free: on page 11 panel 2 Tom's reply landed above the
+            # line it answers.
+            for earlier in read_after_rects or ():
+                if _reads_before(rect, earlier):
+                    penalty += frame_box.width * frame_box.height * 0.04
+            # Centre to mouth. Measuring from the balloon's bottom edge instead
+            # rewarded sitting directly above the speaker, which is the habit
+            # being corrected here.
+            reach = (
+                abs(cx + box_w // 2 - tail_point[0])
+                + abs(cy + box_h // 2 - tail_point[1])
+            )
             if best is None or (penalty, reach) < (best[0], best[1]):
                 best = (penalty, reach, cx, cy)
         if best is not None:

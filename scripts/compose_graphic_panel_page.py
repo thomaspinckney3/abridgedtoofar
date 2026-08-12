@@ -656,6 +656,7 @@ def _letter_texts(
     # zone stacking used to prevent. Each one is added here as it lands so the
     # next has something to avoid.
     placed_rects: list[tuple[int, int, int, int]] = []
+    balloon_rects: list[tuple[int, int, int, int]] = []
     # Captions are lettered after the balloons and would paint straight over
     # them. Their boxes are known up front, so register them before any balloon
     # is placed and let the balloons route around them.
@@ -684,6 +685,10 @@ def _letter_texts(
             stack_index=stack_index,
             stack_count=zone_counts.get(zone, 1),
             placed_rects=placed_rects,
+            # Only balloons constrain reading order. A caption reserved at the
+            # bottom of the panel reads after them, so it must not be treated
+            # as something they have to stay below.
+            read_after_rects=balloon_rects,
         )
         if layout:
             layout.update({
@@ -694,9 +699,9 @@ def _letter_texts(
             })
             drawn = layout.get("box")
             if isinstance(drawn, dict):
-                placed_rects.append(
-                    (drawn["x1"], drawn["y1"], drawn["x2"], drawn["y2"])
-                )
+                rect = (drawn["x1"], drawn["y1"], drawn["x2"], drawn["y2"])
+                placed_rects.append(rect)
+                balloon_rects.append(rect)
             layouts.append(layout)
 
     for item in text_items:

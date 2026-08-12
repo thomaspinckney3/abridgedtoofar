@@ -14,11 +14,11 @@ _Last updated: 2026-08-11_
 Branch `graphic-novel-balloon-placement`, on top of `3644fc8`. `main` has not
 been fast-forwarded onto it.
 
-Tests pass: 377 passed, 6 skipped.
+Tests pass: 383 passed, 6 skipped.
 
-**Current output is `lettered_pages_v12/`.** The chain that produced it:
+**Current output is `lettered_pages_v14/`.** The chain that produced it:
 `storyboard.layout_v6.json` → `panel_art_jobs_v7.jsonl` → `panel_art_v7/` →
-`speaker_anchors_v7.json` → `generated_pages_v12/` → `lettered_pages_v12/`,
+`speaker_anchors_v7.json` → `generated_pages_v14/` → `lettered_pages_v14/`,
 composed with `--balloon-placement near-speaker`. All earlier page directories
 are superseded.
 
@@ -245,8 +245,39 @@ still found at 0.86–0.92 confidence, and the dead floor is gone.
 $0.24 — the other 42 panels' prompts were byte-identical and their art was
 reused. Re-running them would have returned different art, not better art.
 
-Current output: **`lettered_pages_v12/`**, from `storyboard.layout_v6.json` →
+Current output: **`lettered_pages_v14/`**, from `storyboard.layout_v6.json` →
 `panel_art_jobs_v7.jsonl` → `panel_art_v7/` → `speaker_anchors_v7.json`.
+
+### Balloons go sideways from the speaker, and still read in order
+
+Near-speaker placement offset the balloon by `max(box_h, 0.22 × panel height)`
+vertically but only `0.055 × min(w, h)` horizontally — roughly 4× more vertical
+than horizontal — so balloons sat directly overhead and every tail dropped
+straight down. Comics put the balloon out to the side at about head height.
+
+- Vertical offsets are now fractions of the **balloon's own height** (0.2–1.05 ×
+  `box_h`), so it straddles head height and the horizontal gap dominates.
+- The scorer measured from the balloon's **bottom edge** to the mouth, which
+  rewarded sitting above the speaker. Centre-to-centre now.
+- `hgap` 0.055 → 0.08 so the tail is a readable stroke, not a nub.
+- **"Beside" is enforced as a property, not a hope:** if the mouth falls inside
+  the balloon's horizontal span the tail must leave the top or bottom edge, so
+  that candidate is penalised. A balloon clamped against the panel edge lands
+  in exactly that state while its *centre* still looks well offset — which is
+  what a naive dx > dy check misses.
+
+**Reading order had been coming free from the band** — balloons were stacked in
+it top to bottom — and free placement threw it away: on page 11 panel 2 Tom's
+reply landed above the line it answers. A balloon is now penalised for reading
+before any balloon already placed (captions excluded: a caption reserved at the
+bottom legitimately reads after them). That alone was not enough, because a
+speaker standing higher in frame than the one they answer has **no position at
+their own head height that reads second** — so candidates beside the speaker but
+below every earlier balloon were added, giving the scorer a legal option.
+
+Measured on the composed chapter: **tails sideways 12/12, vertical 0/12,
+reading-order violations 0**. Guarded by `TestBalloonsSitBesideTheSpeaker` and
+`TestReadingOrderSurvivesFreePlacement`.
 
 Watch for one drafting trap: the first wording asked for quiet *upper-left and
 upper-right corners* while the same prompt stages the two speakers on the left
