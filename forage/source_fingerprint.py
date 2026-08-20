@@ -60,16 +60,7 @@ STAGE_FILES = {
         "forage/motif_ledger.py",
         "forage/text_norm.py",
         "prompts/draft_lean.md",
-        "prompts/draft_segment.md",
         "spec/ABRIDGMENT_SPEC.md",
-    ],
-    "prepass": [
-        "forage/prepass.py",
-        "prompts/prepass.md",
-    ],
-    "prime": [
-        "forage/prime.py",
-        "prompts/prime.md",
     ],
     "reconsider": [
         "forage/reconsider.py",

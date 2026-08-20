@@ -18,7 +18,7 @@ from forage.artifacts import write_json
 
 from scripts.graphic_balloon_split import split_balloon_text, split_panel_balloons
 from scripts.graphic_dialogue_draft import _clean_texts, _count_texts
-from scripts.graphic_panel_capacity import panel_capacities
+from forage.graphic.geometry import panel_capacities
 
 MAX_BALLOON_CHARS = 95
 

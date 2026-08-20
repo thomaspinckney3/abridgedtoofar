@@ -107,7 +107,7 @@ Default model: `anthropic:claude-opus-4-7` (routable via `FORAGE_DRAFT_MODEL`). 
 
 The drafter prompt (`prompts/draft_lean.md`) is the abridgment spec + chapter source + (if present) the cuts inventory. The model reads the spec and writes the chapter; no per-chapter signature enumeration, no tier scaffolding. Output goes to `work/<book>/segments/<NNN>.md`.
 
-The system prompt instructs the drafter to preserve standard fiction paragraph conventions — each new speaker's dialogue turn goes in its own paragraph. (A post-hoc `forage.dialogue_split` tool also fixes older drafts that concatenated dialogue under compression pressure.)
+The system prompt instructs the drafter to preserve standard fiction paragraph conventions — each new speaker's dialogue turn goes in its own paragraph.
 
 **Merge-group initial drafting**: when `draft` is called for a segment that belongs to a merged group, it renders a multi-source prompt covering all group members, calls the LLM once, and splits the output (`## Chapter N` delimited) back into per-member `.md` files. Non-first members of a group are read from disk; no redundant LLM calls.
 
@@ -357,10 +357,6 @@ Outputs:
 
 The stage is resumable: existing chunk audio is skipped unless `--overwrite` is passed. Use `--limit N` for a paid smoke test on the first N chunks. By default it sends adjacent text and up to three prior ElevenLabs request ids to improve continuity across chunk boundaries; `--zero-retention` disables request-id stitching for accounts that require it.
 
-## Legacy LLM stages (optional)
-
-`prime` and `prepass` remain in the CLI for experimentation but are not used by the lean pipeline. They produce a richer plan (LLM-enumerated signatures per segment, web-search-grounded cultural famousness) but at real cost and without clear quality wins over the lean path.
-
 ## Setup
 
 ```bash
@@ -528,7 +524,6 @@ forage/
       store.py                     # read-only artifact view + SQLite comment queue
       auth.py                      # roles, signed sessions, lockout, proxy awareness
       static/                      # single-page client (no build step)
-    dialogue_split.py              # post-hoc dialogue paragraph splitter
     llm.py                         # provider-agnostic LLM client + routing
     prompts.py                     # prompt template loader
     json_parse.py                  # robust LLM-JSON parsing
@@ -544,13 +539,9 @@ forage/
     summarize_merge.md             # merge N partial synopses into one
     prepass_cuts.md                # removable-material prepass
     align.md                       # paragraph-level draft↔source alignment
-    draft_segment.md               # legacy tier-based drafter
-    prepass.md                     # legacy LLM plan builder
-    prime.md                       # legacy example-signature seed
     reconsider_segment.md          # per-segment signature re-id
   scripts/
     full_pipeline.py               # single-book end-to-end runner
-    lean_iterate_first_n.py        # multi-book sweep: first N chapters each
     check_review_app.py            # units + api + browser check for forage serve
     package_review_artifacts.py    # trim work/ to the deploy payload
     publish_review_book.py         # publish one book overlay to Fly without redeploy

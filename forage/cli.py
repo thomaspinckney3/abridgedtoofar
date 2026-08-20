@@ -35,8 +35,6 @@ from .llm import set_stream_sink
 from .name_lint import run_name_lint
 from .report import (COLUMNS, available_books, build_report, format_row)
 from .summarizer import summarize_book
-from .prepass import run_prepass
-from .prime import run_prime
 from .rebudget import rebudget
 from .reconsider import reconsider_segment
 from .review_apply import apply_review_feedback
@@ -88,71 +86,6 @@ def split(book_id: str) -> None:
         t.add_row(c.id, c.kind, str(c.number or "—"),
                   c.title[:40] or "—", str(len(c.text.split())))
     console.print(t)
-
-
-@app.command()
-def prime(
-    book_id: str,
-    search: bool = typer.Option(
-        False, "--search/--no-search",
-        help="Let Claude use the web_search tool to ground signatures in published criticism."),
-    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
-) -> None:
-    """Run the prime stage: surface example signature passages from the book.
-    Writes work/<book-id>/prime.json, which the pre-pass picks up as a seed.
-
-    With --search, Claude uses web_search to ground critical/cultural signatures
-    in actual published criticism. Adds ~$0.10-0.20 per book in search + tokens.
-    """
-    book = load_book(book_id)
-    console.print(f"[dim]source:[/dim] {book.source_path}")
-    console.print(f"[dim]work:  [/dim] {book.work_dir}")
-    console.print(f"[bold]running prime{' with web_search' if search else ''}...[/bold]")
-    if stream:
-        console.rule("[dim]raw stream[/dim]")
-        def _sink(chunk: str) -> None:
-            sys.stdout.write(chunk)
-            sys.stdout.flush()
-        set_stream_sink(_sink)
-    data = run_prime(book, search=search)
-    if stream:
-        sys.stdout.write("\n")
-    _render_prime(data)
-
-
-def _render_prime(data: dict) -> None:
-    console.rule(f"[bold]prime examples ({len(data.get('examples', []))})[/bold]")
-    for ex in data.get("examples", []):
-        console.print(
-            f"  [{ex.get('origin','?')}/{ex.get('category','?')}] "
-            f"[dim]({ex.get('segment_hint','?')})[/dim] "
-            f"{ex.get('passage_hint','')[:100]}"
-        )
-    if data.get("notes"):
-        console.print(Panel(data["notes"], title="notes"))
-
-
-@app.command()
-def prepass(
-    book_id: str,
-    stream: bool = typer.Option(True, help="Stream raw LLM output as it arrives."),
-) -> None:
-    """Run the pre-pass stage on BOOK_ID and print the resulting plan."""
-    book = load_book(book_id)
-    console.print(f"[dim]source:[/dim] {book.source_path}")
-    console.print(f"[dim]work:  [/dim] {book.work_dir}")
-    console.print("[bold]running pre-pass...[/bold]")
-    if stream:
-        console.rule("[dim]raw stream[/dim]")
-        def _sink(chunk: str) -> None:
-            sys.stdout.write(chunk)
-            sys.stdout.flush()
-        set_stream_sink(_sink)
-    plan = run_prepass(book)
-    if stream:
-        sys.stdout.write("\n")
-        console.rule("[dim]parsed plan[/dim]")
-    _render_plan(plan)
 
 
 @app.command()
@@ -282,7 +215,7 @@ def show(book_id: str) -> None:
     book = load_book(book_id)
     plan_path = book.work_dir / "plan.json"
     if not plan_path.exists():
-        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` (lean, free) or `forage prepass {book_id}` (LLM) first")
+        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` first")
         raise typer.Exit(code=1)
     plan = json.loads(plan_path.read_text())
     _render_plan(plan)
@@ -362,7 +295,7 @@ def draft(
     book = load_book(book_id)
     plan_path = book.work_dir / "plan.json"
     if not plan_path.exists():
-        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` (lean, free) or `forage prepass {book_id}` (LLM) first")
+        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` first")
         raise typer.Exit(code=1)
     plan = read_json(plan_path)
 
@@ -437,7 +370,7 @@ def iterate(
     book = load_book(book_id)
     plan_path = book.work_dir / "plan.json"
     if not plan_path.exists():
-        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` (lean, free) or `forage prepass {book_id}` (LLM) first")
+        console.print(f"[red]no plan at {plan_path}[/red] — run `forage plan {book_id}` first")
         raise typer.Exit(code=1)
     plan = read_json(plan_path)
     ensure_chapters(book)

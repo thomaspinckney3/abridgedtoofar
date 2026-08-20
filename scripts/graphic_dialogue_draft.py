@@ -30,7 +30,7 @@ from forage.artifacts import load_book, write_json
 from forage.json_parse import parse_llm_json
 from forage.llm import complete
 from forage.prompts import load_prompt
-from scripts.graphic_panel_capacity import DEFAULT_PANEL_FIGURES
+from forage.graphic.geometry import DEFAULT_PANEL_FIGURES
 
 
 VALID_KINDS = {"caption", "speech", "thought"}

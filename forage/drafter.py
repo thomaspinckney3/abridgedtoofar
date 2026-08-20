@@ -17,7 +17,7 @@ from typing import Any
 from .artifacts import Book, read_json, segment_source_path, write_json, write_text
 from .chapter_split import split_to_disk
 from .llm import LLMResponse, complete
-from .motif_ledger import read_ledger, rebuild_ledger
+from .motif_ledger import rebuild_ledger
 from .prompts import load_prompt
 from .text_norm import fuzzy_contains
 
@@ -66,49 +66,6 @@ def ensure_chapters(book: Book) -> dict:
         return read_json(manifest_path)
     split_to_disk(book)
     return read_json(manifest_path)
-
-
-# Back-compat shim: older call sites expect ensure_extractions(book, plan)
-# returning a per-segment dict. Keep it working by delegating to
-# ensure_chapters, which is plan-independent.
-def ensure_extractions(book: Book, plan: dict) -> dict[str, dict]:
-    manifest = ensure_chapters(book)
-    return {c["id"]: {"word_count": None, "error": None,
-                      "start_offset": c.get("start"),
-                      "end_offset": c.get("end")}
-            for c in manifest.get("chapters", [])}
-
-
-def _recent_drafts(book: Book, plan: dict, segment_id: str,
-                   n: int = 2, max_words: int = 400) -> list[dict]:
-    """Return up to N most recent drafted non-empty segments preceding
-    `segment_id` in plan order, as {id, title, excerpt} dicts. Drafter
-    prompt uses these for voice continuity — NOT as source material.
-    """
-    seg_dir = book.work_dir / "segments"
-    segs = plan.get("segments", [])
-    try:
-        idx = next(i for i, s in enumerate(segs) if s["id"] == segment_id)
-    except StopIteration:
-        return []
-    out: list[dict] = []
-    for i in range(idx - 1, -1, -1):
-        if len(out) >= n:
-            break
-        prev = segs[i]
-        drf_path = seg_dir / f"{prev['id']}.md"
-        if not drf_path.exists():
-            continue
-        text = drf_path.read_text().strip()
-        if not text:
-            continue
-        words = text.split()
-        excerpt = (" ".join(words[:max_words]) + " […]"
-                   if len(words) > max_words else text)
-        out.append({"id": prev["id"],
-                    "title": prev.get("title", ""),
-                    "excerpt": excerpt})
-    return list(reversed(out))  # oldest first
 
 
 def _draft_runtime_options(prompt, default_model: str) -> tuple[str, str | None, int]:
@@ -357,70 +314,50 @@ def build_draft_segment_request(
     if segment is None:
         raise ValueError(f"no segment {segment_id!r} in plan")
 
-    is_lean = plan.get("_meta", {}).get("builder") == "lean_plan"
-    prompt_name = "draft_lean" if is_lean else "draft_segment"
-    prompt = load_prompt(prompt_name)
+    builder = plan.get("_meta", {}).get("builder")
+    if builder != "lean_plan":
+        raise ValueError(
+            f"unsupported plan builder {builder!r}; run `forage plan {book.book_id}`"
+        )
 
-    if is_lean:
-        spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
-        spec_text = spec_path.read_text() if spec_path.exists() else ""
-        target = int(segment.get("target_word_count", 0) or 0)
-        ceiling = int(round(target * 1.2)) if target else 0
-        cuts_path = book.work_dir / "cuts.json"
-        cuts = (read_json(cuts_path) if cuts_path.exists() else None)
-        kernels = []
-        if cuts:
-            for entry in cuts.get("skippable_chapters", []) or []:
-                tgt = (entry.get("relocate_to") or "").strip()
-                kernel_text = (entry.get("kernel") or "").strip()
-                if tgt == segment["id"] and kernel_text:
-                    kernels.append({
-                        "from_chapter": entry.get("chapter_id"),
-                        "to_chapter": tgt,
-                        "position": entry.get("position"),
-                        "kernel": kernel_text,
-                    })
-        cached, rendered = prompt.render_blocks(
-            spec=spec_text,
-            book={
-                "title": plan.get("title", book.book_id),
-                "author": plan.get("author", "?"),
-                "genre": book.metadata.get("genre", "unknown"),
-            },
-            segment={**segment,
-                     "source_word_count": segment.get("source_word_count") or source_words},
-            ceiling=ceiling,
-            segment_source=segment_source,
-            critic_feedback=critic_feedback,
-            previous_draft=previous_draft,
-            cuts=cuts,
-            kernels=kernels,
-        )
-    else:
-        rendered = prompt.render(
-            book={
-                "title": plan.get("title", book.book_id),
-                "author": plan.get("author", "?"),
-                "genre": book.metadata.get("genre", "unknown"),
-            },
-            plan={
-                "modernization_level": plan.get("modernization_level", "L1"),
-                "modernization_rationale": plan.get("modernization_rationale", ""),
-                "cultural_depth": plan.get("cultural_depth", "?"),
-                "voice_driven_narrator": plan.get("voice_driven_narrator", False),
-                "indirection_budget_applies": plan.get("indirection_budget_applies", False),
-                "overall_compression_ratio": plan.get("overall_compression_ratio", "?"),
-                "plan_notes": plan.get("plan_notes", ""),
-                "motifs": plan.get("motifs", []),
-            },
-            segment=segment,
-            segment_source=segment_source,
-            critic_feedback=critic_feedback,
-            previous_draft=previous_draft,
-            recent_drafts=_recent_drafts(book, plan, segment_id),
-            motif_ledger=read_ledger(book),
-        )
-        cached = None
+    prompt_name = "draft_lean"
+    prompt = load_prompt(prompt_name)
+    spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
+    spec_text = spec_path.read_text() if spec_path.exists() else ""
+    target = int(segment.get("target_word_count", 0) or 0)
+    ceiling = int(round(target * 1.2)) if target else 0
+    cuts_path = book.work_dir / "cuts.json"
+    cuts = read_json(cuts_path) if cuts_path.exists() else None
+    kernels = []
+    if cuts:
+        for entry in cuts.get("skippable_chapters", []) or []:
+            tgt = (entry.get("relocate_to") or "").strip()
+            kernel_text = (entry.get("kernel") or "").strip()
+            if tgt == segment["id"] and kernel_text:
+                kernels.append({
+                    "from_chapter": entry.get("chapter_id"),
+                    "to_chapter": tgt,
+                    "position": entry.get("position"),
+                    "kernel": kernel_text,
+                })
+    cached, rendered = prompt.render_blocks(
+        spec=spec_text,
+        book={
+            "title": plan.get("title", book.book_id),
+            "author": plan.get("author", "?"),
+            "genre": book.metadata.get("genre", "unknown"),
+        },
+        segment={
+            **segment,
+            "source_word_count": segment.get("source_word_count") or source_words,
+        },
+        ceiling=ceiling,
+        segment_source=segment_source,
+        critic_feedback=critic_feedback,
+        previous_draft=previous_draft,
+        cuts=cuts,
+        kernels=kernels,
+    )
 
     stage_label = (f"draft:{book.book_id}:{segment_id}"
                    if not critic_feedback

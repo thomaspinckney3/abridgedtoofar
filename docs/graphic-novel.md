@@ -204,9 +204,6 @@ value in keeping it honest about capacity is that its warnings are true, not
 that its geometry reaches the page. Folding it into the layout stage is the
 obvious next simplification.
 
-`scripts/graphic_panel_capacity.py` is a compatibility alias for the geometry
-module; import from `forage.graphic.geometry` in new code.
-
 ## Testing
 
 ```bash

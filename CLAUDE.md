@@ -6,7 +6,7 @@
 
 Every pipeline stage that calls the Anthropic or OpenAI API costs real money. Before running anything that triggers a paid API call — including but not limited to:
 
-- `forage prime`, `forage prepass`, `forage draft`, `forage reconsider`, `forage critique`, `forage iterate`
+- `forage draft`, `forage reconsider`, `forage critique`, `forage iterate`
 - Ad-hoc Python scripts that call `forage.llm.complete` (or the SDKs directly)
 - Any experiment, test, or smoke-check that issues a live LLM request
 
