@@ -71,7 +71,7 @@ def run_prepass(book: Book) -> dict:
     resp = complete(
         prompt=body,
         cached_prompt=cached,
-        model=prompt.config.get("model", "anthropic:claude-opus-4-7"),
+        model=prompt.config.get("model", "anthropic:claude-opus-5-5"),
         system=prompt.system,
         max_tokens=prompt.config.get("max_tokens", 16000),
         temperature=prompt.config.get("temperature"),

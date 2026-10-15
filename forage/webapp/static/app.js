@@ -5,6 +5,8 @@ const state = {
   session: { role: "public", can_write: false, can_admin: false, label: "",
              severities: [], kinds: [], statuses: [] },
   book: null,          // { book_id, title, author, chapters: [...] }
+  media: null,
+  selectionKey: null,
   chapter: null,       // rendered chapter view + comments
   filters: { unsupported: false, compressed: false, diagnostic: false, commented: false, query: "" },
   current: null,       // draft_para index the keyboard is on
@@ -98,15 +100,48 @@ function displayTime(value) {
 /* --------------------------------------------------------------- routing */
 
 function route() {
-  const match = location.pathname.match(/^\/b\/([^/]+)/);
+  const match = location.pathname.match(/^\/(?:b|release)\/([^/]+)/);
   const params = new URLSearchParams(location.search);
   const para = params.get("p");
   return {
     bookId: match ? decodeURIComponent(match[1]) : null,
     segmentId: params.get("c"),
+    channel: location.pathname.startsWith("/release/") ? "release" : "review",
+    revision: params.get("revision"),
+    view: params.get("view"),
     // ?p=<n> deep-links a paragraph so a reviewer can send someone straight to it
     draftPara: para === null || para === "" ? null : Number(para),
   };
+}
+
+function selectionQuery() {
+  const current = route();
+  const query = new URLSearchParams();
+  if (current.channel === "release") query.set("channel", "release");
+  const revision = state.book?.publication_revision || current.revision;
+  if (revision) query.set("revision", revision);
+  return `?${query}`;
+}
+
+function bookRoute(extra = {}) {
+  const current = route();
+  const query = new URLSearchParams(extra);
+  const revision = state.book?.publication_revision || current.revision;
+  if (revision) query.set("revision", revision);
+  return `/${current.channel === "release" ? "release" : "b"}/${encodeURIComponent(current.bookId)}?${query}`;
+}
+
+function publicationNav() {
+  const book = state.book;
+  const edition = book.publication_channel === "release" ? "Public release"
+    : book.publication_channel === "revision" ? "Published revision" : "Review edition";
+  return h("section", { class: "publication-nav" },
+    h("p", { class: "revision-label" }, `${edition} · ${book.publication_revision ? book.publication_revision.slice(0, 12) : "local artifacts"}`),
+    h("a", { class: "btn small", href: bookRoute(), "data-route": true }, "Read text"),
+    h("a", { class: "btn small", href: bookRoute({ view: "media" }), "data-route": true }, "Audio & graphic novel"),
+    h("a", { class: "btn small", href: `/release/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current public release"),
+    h("a", { class: "btn small", href: `/b/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current review edition"),
+    (book.downloads || []).map(item => h("a", { class: "download-link", href: item.url, download: true }, `Download ${item.path}`)));
 }
 
 function go(path, replace = false) {
@@ -145,7 +180,7 @@ el.sessionBtn.addEventListener("click", async () => {
   el.signinError.hidden = true;
   el.signinToken.value = "";
   el.signinNote.textContent = state.session.admin_enabled
-    ? "Reading is open to anyone. The review token lets you leave notes; the admin token also publishes them."
+    ? "Reading is open to anyone. The review token lets you leave notes; the admin token can also export feedback."
     : "Reading is open to anyone. The review token lets you leave notes.";
   if (state.session.generated_token) {
     el.signinNote.textContent += " This server generated its token at startup — it's in the server log.";
@@ -246,7 +281,7 @@ function renderRail(activeSegment) {
     const notes = (ch.comments && ch.comments.total) || 0;
     return h("a", {
       class: "chapter-link",
-      href: `/b/${encodeURIComponent(book.book_id)}?c=${encodeURIComponent(ch.segment_id)}`,
+      href: bookRoute({ c: ch.segment_id }),
       "data-route": true,
       "aria-current": ch.segment_id === activeSegment ? "true" : null,
       title: `${ch.title || ch.segment_id} — ${mixTitle(ch.counts)}`,
@@ -269,6 +304,7 @@ function renderRail(activeSegment) {
   el.layout.classList.remove("no-rail");
   el.rail.replaceChildren(
     h("a", { class: "rail-back", href: "/", "data-route": true }, "← All books"),
+    publicationNav(),
     h("h2", {}, "Chapters"),
     list,
     h("div", { class: "rail-tools" },
@@ -283,7 +319,7 @@ function renderRail(activeSegment) {
         chip("diagnostic", "Flags"),
         chip("commented", "Has notes")),
       state.session.can_admin
-        ? h("button", { class: "btn small", type: "button", onclick: publish }, "Publish edits.json")
+        ? h("button", { class: "btn small", type: "button", onclick: publish }, "Export feedback")
         : null,
       h("button", { class: "btn small", type: "button", onclick: () => openScopeComposer("book") },
         "Book note"),
@@ -306,11 +342,19 @@ async function publish() {
 /* -------------------------------------------------------------- chapter */
 
 async function renderChapter(bookId, segmentId, draftPara) {
-  if (!state.book || state.book.book_id !== bookId) {
+  const currentRoute = route();
+  const key = `${bookId}:${currentRoute.channel}:${currentRoute.revision || "current"}`;
+  if (!state.book || state.selectionKey !== key) {
     el.main.replaceChildren(h("div", { class: "loading" }, "Loading…"));
-    state.book = await api(`/api/books/${encodeURIComponent(bookId)}/chapters`);
+    const query = new URLSearchParams();
+    if (currentRoute.channel === "release") query.set("channel", "release");
+    if (currentRoute.revision) query.set("revision", currentRoute.revision);
+    state.book = await api(`/api/books/${encodeURIComponent(bookId)}/chapters?${query}`);
+    state.selectionKey = key;
   }
   const book = state.book;
+  if (currentRoute.view === "media") { await renderMedia(); return; }
+  state.media = null;
   if (!book.chapters.length) {
     el.main.replaceChildren(h("p", { class: "empty" }, "This book has no aligned chapters."));
     return;
@@ -318,7 +362,7 @@ async function renderChapter(bookId, segmentId, draftPara) {
   const target = book.chapters.some((c) => c.segment_id === segmentId)
     ? segmentId : book.chapters[0].segment_id;
   if (target !== segmentId) {
-    go(`/b/${encodeURIComponent(bookId)}?c=${encodeURIComponent(target)}`, true);
+    go(bookRoute({ c: target }), true);
     return;
   }
 
@@ -328,7 +372,7 @@ async function renderChapter(bookId, segmentId, draftPara) {
   document.title = `${book.title} — chapter ${target}`;
 
   state.chapter = await api(
-    `/api/books/${encodeURIComponent(bookId)}/chapters/${encodeURIComponent(target)}`);
+    `/api/books/${encodeURIComponent(bookId)}/chapters/${encodeURIComponent(target)}${selectionQuery()}`);
   state.current = Number.isInteger(draftPara) ? draftPara : null;
   state.composerFor = null;
   state.scopeComposer = null;
@@ -403,7 +447,7 @@ function renderChapterBody() {
 
   const bookNotes = renderScopeNotes("Book notes", chapter.book_comments || [], "book");
   const chapterNotes = renderScopeNotes("Chapter notes",
-    (chapter.comments || []).filter((c) => c.scope === "chapter" || c.draft_para === null),
+    (chapter.comments || []).filter((c) => c.scope === "chapter" || (!c.scope && c.draft_para === null)),
     "chapter");
 
   el.main.replaceChildren(head, renderChapterNotes(chapter.chapter_notes),
@@ -553,9 +597,10 @@ function renderNote(note) {
       h("span", { class: `tag sev-${note.severity}` }, note.severity),
       h("span", { class: "tag" }, note.kind),
       note.status !== "open" ? h("span", { class: "tag" }, note.status) : null,
-      note.stale ? h("span", { class: "tag stale", title: "The paragraph changed after this note was written" }, "stale") : null,
-      note.orphaned ? h("span", { class: "tag stale", title: "The paragraph this note pointed at is gone" }, "orphaned") : null,
+      note.stale ? h("span", { class: "tag stale", title: "The reviewed content changed after this note was written" }, "stale") : null,
+      note.orphaned ? h("span", { class: "tag stale", title: "The reviewed target is absent from this edition" }, "orphaned") : null,
       h("span", { class: "note-author" }, `${note.author || "anon"} · ${relTime(note.created_at)}`)),
+    note.timestamp_seconds !== null && note.timestamp_seconds !== undefined ? h("p", { class: "note-time" }, `At ${note.timestamp_seconds.toFixed(2)} seconds in this chunk`) : null,
     note.quote ? h("p", { class: "note-quote" }, `“${note.quote}”`) : null,
     h("p", { class: "note-body" }, note.body),
     responses.length
@@ -572,6 +617,7 @@ function renderNote(note) {
         note.status !== "wontfix"
           ? h("button", { type: "button", onclick: () => setStatus(note, "wontfix") }, "Won't fix")
           : null,
+        h("button", { type: "button", onclick: () => editNote(note) }, "Edit"),
         h("button", { type: "button", onclick: () => removeNote(note) }, "Delete"))
       : null);
 }
@@ -607,7 +653,7 @@ async function removeNote(note) {
   try {
     await api(`/api/comments/${note.id}`, { method: "DELETE" });
     removeLocalComment(note);
-    renderChapterBody();
+    if (state.media) renderMediaBody(); else renderChapterBody();
   } catch (err) { toast(err.message, "error"); }
 }
 
@@ -615,10 +661,11 @@ function replaceComment(updated) {
   const list = localCommentList(updated);
   const at = list.findIndex((c) => c.id === updated.id);
   if (at >= 0) list[at] = updated; else list.push(updated);
-  renderChapterBody();
+  if (state.media) renderMediaBody(); else renderChapterBody();
 }
 
 function localCommentList(note) {
+  if (state.media) return state.media.comments;
   if (note.scope === "book" || note.segment_id === "__book__") {
     state.chapter.book_comments = state.chapter.book_comments || [];
     return state.chapter.book_comments;
@@ -628,6 +675,7 @@ function localCommentList(note) {
 }
 
 function removeLocalComment(note) {
+  if (state.media) { state.media.comments = state.media.comments.filter(c => c.id !== note.id); return; }
   if (note.scope === "book" || note.segment_id === "__book__") {
     state.chapter.book_comments = (state.chapter.book_comments || [])
       .filter((c) => c.id !== note.id);
@@ -643,6 +691,70 @@ function bumpRailCount(delta) {
   ch.comments = ch.comments || { total: 0 };
   ch.comments.total = Math.max(0, (ch.comments.total || 0) + delta);
   renderRail(state.chapter.segment_id);
+}
+
+async function editNote(note) {
+  const dialog = h("dialog", { class: "sheet" });
+  const body = h("textarea", { rows: 6, "aria-label": "Edit note" }, note.body);
+  const error = h("p", { class: "sheet-error" });
+  dialog.append(h("h2", {}, "Edit note"), body, error,
+    h("button", { class: "btn", onclick: () => dialog.close() }, "Cancel"),
+    h("button", { class: "btn primary", onclick: async () => {
+      try {
+        const updated = await api(`/api/comments/${note.id}`, { method: "PATCH", body: { body: body.value } });
+        dialog.close(); replaceComment(updated);
+      } catch (err) { error.textContent = err.message; }
+    } }, "Save"));
+  dialog.addEventListener("close", () => dialog.remove());
+  document.body.append(dialog); dialog.showModal(); body.focus();
+}
+
+async function renderMedia() {
+  state.chapter = null;
+  state.media = await api(`/api/books/${encodeURIComponent(state.book.book_id)}/media${selectionQuery()}`);
+  el.topbarBook.hidden = false;
+  el.bookTitle.textContent = state.book.title;
+  el.bookAuthor.textContent = state.book.author || "";
+  el.rail.hidden = false; el.layout.classList.remove("no-rail");
+  el.rail.replaceChildren(h("a", { href: "/", "data-route": true }, "← All books"), publicationNav(),
+    h("a", { class: "btn small", href: `/api/books/${encodeURIComponent(state.book.book_id)}/edits.json${selectionQuery()}` }, "Download notes"));
+  renderMediaBody();
+}
+
+function renderMediaBody() {
+  const media = state.media;
+  const cards = media.targets.map(target => {
+    const player = target.kind === "audio"
+      ? h("audio", { controls: true, preload: "metadata", src: target.url, "aria-label": target.title })
+      : h("img", { src: target.url, alt: target.title, loading: "lazy", class: "graphic-frame" });
+    const notes = media.comments.filter(c => c.target_id === target.id);
+    const composer = h("div", { class: "media-composer" });
+    const add = h("button", { class: "btn small", onclick: () => {
+      if (!state.session.can_write) { el.signin.showModal(); return; }
+      const time = h("input", { type: "number", min: "0", step: "0.01", value: target.kind === "audio" ? player.currentTime.toFixed(2) : "0", "aria-label": "Seconds in audio chunk" });
+      if (target.duration_seconds !== null && target.duration_seconds !== undefined) time.max = String(target.duration_seconds);
+      const body = h("textarea", { placeholder: "Describe the issue or suggested improvement", "aria-label": "Media note" });
+      composer.replaceChildren(...[target.kind === "audio" ? h("label", {}, "Seconds in this chunk", time) : null,
+        body, h("button", { class: "btn primary", onclick: async () => {
+          try {
+            const row = await api(`/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
+              method: "POST", body: { scope: target.kind, target_id: target.id, target_revision: target.revision,
+                publication_revision: media.publication_revision, timestamp_seconds: target.kind === "audio" ? Number(time.value) : null,
+                body: body.value, severity: "minor", kind: "other" } });
+            media.comments.push(row); renderMediaBody(); toast("Media note added.");
+          } catch (err) { toast(err.message, "error"); }
+        } }, "Add note")].filter(Boolean));
+      body.focus();
+    } }, target.kind === "audio" ? "Comment at playback time" : "Comment on this frame");
+    return h("section", { class: "media-card", id: target.id }, h("h2", {}, target.title),
+      h("p", { class: "revision-label" }, `${target.kind} · ${target.id}`), player, add, composer,
+      h("div", { class: "scope-note-list" }, notes.map(renderNote)));
+  });
+  const orphaned = media.comments.filter(c => !media.targets.some(t => t.id === c.target_id));
+  el.main.replaceChildren(...[h("h1", {}, "Audio & graphic novel"),
+    h("p", { class: "revision-label" }, `Edition ${media.publication_revision ? media.publication_revision.slice(0, 12) : "local artifacts"}`),
+    ...cards, !cards.length ? h("p", {}, "No media was published for this edition.") : null,
+    orphaned.length ? h("section", { class: "scope-notes" }, h("h2", {}, "Notes on removed targets"), ...orphaned.map(renderNote)) : null].filter(Boolean));
 }
 
 /* ------------------------------------------------------------- composer */
@@ -718,6 +830,7 @@ function renderScopeComposer(scope) {
     if (!text) { body.focus(); return; }
     try {
       const payload = {
+        publication_revision: state.chapter.publication_revision,
         scope,
         severity: severity.value,
         kind: kind.value,
@@ -770,6 +883,7 @@ function renderComposer(block) {
         `/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
           method: "POST",
           body: {
+            publication_revision: state.chapter.publication_revision,
             segment_id: state.chapter.segment_id,
             draft_para: block.draft_para,
             quote: state.composerQuote,
@@ -868,7 +982,7 @@ function stepChapter(delta) {
   const chapters = state.book.chapters;
   const at = chapters.findIndex((c) => c.segment_id === state.chapter.segment_id);
   const next = chapters[at + delta];
-  if (next) go(`/b/${encodeURIComponent(state.book.book_id)}?c=${encodeURIComponent(next.segment_id)}`);
+  if (next) go(bookRoute({ c: next.segment_id }));
 }
 
 /* ----------------------------------------------------------------- boot */

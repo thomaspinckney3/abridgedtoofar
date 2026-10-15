@@ -1,5 +1,5 @@
 ---
-model: openai:gpt-5
+model: openai:gpt-6-astra
 max_tokens: 16000
 ---
 Below are {{partials|length}} partial synopses of {{book.title}} by {{book.author}}, one per part of the book in order.

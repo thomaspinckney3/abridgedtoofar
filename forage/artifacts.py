@@ -15,13 +15,16 @@ Layout:
 from __future__ import annotations
 
 import json
+import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Optional
 
-ROOT = Path(__file__).resolve().parent.parent
-BOOKS_DIR = ROOT / "books"
-WORK_DIR = ROOT / "work"
+from .resources import workspace_root, workspace_dirs
+
+ROOT = workspace_root()
+BOOKS_DIR, WORK_DIR = workspace_dirs()
 
 
 @dataclass
@@ -50,8 +53,13 @@ class Book:
         return self.source_path.read_text(encoding="utf-8", errors="replace")
 
 
-def load_book(book_id: str) -> Book:
-    book_dir = BOOKS_DIR / book_id
+def load_book(book_id: str, *, workspace=None, create: bool = True) -> Book:
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", book_id):
+        raise ValueError("invalid book ID")
+    books_dir, work_root = (workspace_dirs(workspace) if workspace is not None or any(
+        os.environ.get(k) for k in ("FORAGE_WORKSPACE", "FORAGE_BOOKS_DIR", "FORAGE_WORK_DIR"))
+        else (BOOKS_DIR, WORK_DIR))
+    book_dir = books_dir / book_id
     if not book_dir.is_dir():
         raise FileNotFoundError(f"no book directory at {book_dir}")
 
@@ -84,8 +92,11 @@ def load_book(book_id: str) -> Book:
         else:
             raise FileNotFoundError(f"no .txt or .epub source in {book_dir}")
 
-    work_dir = WORK_DIR / book_id
-    work_dir.mkdir(parents=True, exist_ok=True)
+    if not source_path.resolve().is_relative_to(book_dir.resolve()) or not source_path.is_file():
+        raise ValueError("source must be a file inside its book directory")
+    work_dir = work_root / book_id
+    if create:
+        work_dir.mkdir(parents=True, exist_ok=True)
     return Book(book_id=book_id, source_path=source_path,
                 metadata=metadata, work_dir=work_dir)
 

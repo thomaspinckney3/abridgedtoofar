@@ -21,6 +21,7 @@ without rebuilding or restarting the app.
 from __future__ import annotations
 
 import hashlib
+import copy
 import json
 import os
 import re
@@ -87,6 +88,15 @@ def valid_book_id(book_id: str) -> bool:
 
 def valid_segment_id(segment_id: str) -> bool:
     return bool(_SEGMENT_RE.match(segment_id)) and segment_id not in _RESERVED_IDS
+
+
+def mutable_path(path: Path) -> Path:
+    """A configuration mistake must not put a DB/export inside a snapshot."""
+    parts = path.resolve().parts
+    for index, part in enumerate(parts[:-1]):
+        if part == "publications" and re.fullmatch(r"[0-9a-f]{64}", parts[index + 1]):
+            raise ValueError("Mutable review state must be outside immutable publications.")
+    return path
 
 
 def anchor_hash(text: str) -> str:
@@ -397,7 +407,8 @@ class ArtifactStore:
     def __init__(self, work_dir: Path | None = None,
                  books_dir: Path | None = None,
                  overlay_work_dir: Path | None = None,
-                 overlay_books_dir: Path | None = None) -> None:
+                 overlay_books_dir: Path | None = None,
+                 hosted_dir: Path | None = None) -> None:
         self.work_dir = Path(os.environ.get("FORAGE_WORK_DIR") or work_dir or WORK_DIR)
         self.books_dir = Path(os.environ.get("FORAGE_BOOKS_DIR") or books_dir or BOOKS_DIR)
         self.overlay_work_dir = self._optional_root(
@@ -405,6 +416,88 @@ class ArtifactStore:
         self.overlay_books_dir = self._optional_root(
             "FORAGE_BOOKS_OVERLAY_DIR", overlay_books_dir)
         self._cache: dict[str, tuple[tuple[int, int], Any]] = {}
+        root = (os.environ.get("FORAGE_HOSTED_ROOT")
+                or os.environ.get("FORAGE_PUBLICATION_DIR") or hosted_dir)
+        self.hosted = None
+        if root:
+            from ..hosted_publication import HostedPublications
+            limits = {}
+            for env, parameter in (("FORAGE_MAX_UPLOAD_BYTES", "max_archive_bytes"),
+                                   ("FORAGE_MAX_EXPANDED_BYTES", "max_expanded_bytes"),
+                                   ("FORAGE_MAX_UPLOAD_FILES", "max_files")):
+                if os.environ.get(env):
+                    value = int(os.environ[env])
+                    if value <= 0:
+                        raise ValueError(f"{env} must be a positive integer")
+                    limits[parameter] = value
+            self.hosted = HostedPublications(Path(root), **limits)
+        self._pinned: dict[str, Path] = {}
+        self._revisions: dict[str, dict] = {}
+        self._channels: dict[str, str] = {}
+
+    @staticmethod
+    def _resolve_hosted(hosted, book_id: str, revision: str | None = None,
+                        channel: str | None = None):
+        # Default reading/feedback uses review-current when it exists. A book
+        # may legitimately have only a public release, which is then current.
+        # Explicit selectors stay strict and never change either pointer.
+        selected_channel = channel or "review"
+        if channel is None and revision is None:
+            pointers = hosted.status(book_id)
+            if pointers["review"] is None and pointers["release"] is not None:
+                selected_channel = "release"
+        root, manifest = hosted.resolve(book_id, revision, selected_channel)
+        label = "revision" if revision is not None and channel is None else selected_channel
+        return root, manifest, label
+
+    def selected(self, book_id: str, revision: str | None = None,
+                 channel: str | None = None) -> "ArtifactStore":
+        """Pin a whole book once, so pointer changes cannot mix a response."""
+        if not valid_book_id(book_id) or channel not in {None, "review", "release"}:
+            raise ValueError("Bad book or publication channel.")
+        selected = copy.copy(self)
+        selected._pinned = dict(self._pinned)
+        selected._revisions = dict(self._revisions)
+        selected._channels = dict(self._channels)
+        hosted = self.hosted
+        if hosted is None or book_id not in hosted.book_ids():
+            from ..hosted_publication import HostedPublications
+            for candidate in (self.overlay_work_dir, self.work_dir):
+                if candidate and (candidate / book_id / "publications").is_dir():
+                    hosted = HostedPublications(candidate)
+                    break
+                if candidate and (candidate / book_id / "alignments").is_dir():
+                    break  # A whole-book overlay replaces the baked book.
+        if hosted is not None:
+            try:
+                root, manifest, label = self._resolve_hosted(hosted, book_id, revision, channel)
+            except FileNotFoundError:
+                if revision or channel == "release" or book_id in hosted.book_ids():
+                    raise
+            else:
+                selected._pinned[book_id] = root
+                selected._revisions[book_id] = manifest
+                selected._channels[book_id] = label
+                return selected
+        if revision or channel == "release":
+            raise FileNotFoundError("No such published revision.")
+        selected._pinned[book_id] = self._book_work_dir(book_id)
+        return selected
+
+    def revision_info(self, book_id: str) -> dict:
+        manifest = self._revisions.get(book_id, {})
+        return {"publication_revision": manifest.get("revision"),
+                "text_revision": manifest.get("text_revision")}
+
+    def media(self, book_id: str) -> dict:
+        from ..media import validate_media_manifest
+        root = self._book_work_dir(book_id)
+        index = self._read_json_cached(root / "media_manifest.json")
+        if index is None:
+            return {"version": 1, "book_id": book_id, "targets": []}
+        if not isinstance(index, dict) or index.get("book_id") != book_id:
+            raise ValueError("Media manifest belongs to a different book.")
+        return validate_media_manifest(index, root, verify_files=True)
 
     # -- internals ---------------------------------------------------------
 
@@ -435,6 +528,19 @@ class ArtifactStore:
         return data
 
     def _book_work_dir(self, book_id: str) -> Path:
+        if book_id in self._pinned:
+            return self._pinned[book_id]
+        if self.hosted is not None:
+            try:
+                return self._resolve_hosted(self.hosted, book_id)[0]
+            except FileNotFoundError:
+                pass
+        for candidate in (self.overlay_work_dir, self.work_dir):
+            if candidate and (candidate / book_id / "publications").is_dir():
+                from ..hosted_publication import HostedPublications
+                return self._resolve_hosted(HostedPublications(candidate), book_id)[0]
+            if candidate and (candidate / book_id / "alignments").is_dir():
+                break
         if self.overlay_work_dir and valid_book_id(book_id):
             candidate = self.overlay_work_dir / book_id
             alignments = candidate / "alignments"
@@ -459,6 +565,9 @@ class ArtifactStore:
         return self._book_work_dir(book_id) / "editorial"
 
     def _metadata(self, book_id: str) -> dict:
+        if book_id in self._revisions:
+            plan = self._read_json_cached(self._book_work_dir(book_id) / "plan.json") or {}
+            return {k: plan[k] for k in ("title", "author") if plan.get(k)}
         meta = self._read_json_cached(self._book_books_dir(book_id) / "metadata.json")
         if isinstance(meta, dict) and meta:
             return meta
@@ -486,7 +595,9 @@ class ArtifactStore:
             if not valid_book_id(child.name):
                 continue
             alignments = child / "alignments"
-            if alignments.is_dir() and any(alignments.glob("*.json")):
+            if ((alignments.is_dir() and any(alignments.glob("*.json")))
+                    or (child / "review_current.json").is_file()
+                    or (child / "release_current.json").is_file()):
                 out.add(child.name)
         return out
 
@@ -494,7 +605,8 @@ class ArtifactStore:
 
     def book_ids(self) -> list[str]:
         return sorted(self._book_ids_under(self.work_dir)
-                      | self._book_ids_under(self.overlay_work_dir))
+                      | self._book_ids_under(self.overlay_work_dir)
+                      | (set(self.hosted.book_ids()) if self.hosted else set()))
 
     def has_book(self, book_id: str) -> bool:
         return (valid_book_id(book_id)
@@ -526,6 +638,7 @@ class ArtifactStore:
         self,
         book_id: str,
         segment_id: str | None = None,
+        source_id: str | None = None,
     ) -> dict[str, list[dict[str, Any]]]:
         """LLM decisions recorded after processing human review comments.
 
@@ -537,13 +650,17 @@ class ArtifactStore:
             return {}
         if segment_id is not None and not valid_segment_id(segment_id):
             return {}
-        ledger = self._read_json_cached(
-            self._editorial_dir(book_id) / "review_apply_ledger.json")
+        root = self._book_work_dir(book_id)
+        if root.parent.name == "publications":
+            root = root.parent.parent
+        ledger = self._read_json_cached(root / "editorial" / "review_apply_ledger.json")
         if not isinstance(ledger, dict):
             return {}
         out: dict[str, list[dict[str, Any]]] = {}
         for entry in ledger.get("entries", []) or []:
             if not isinstance(entry, dict):
+                continue
+            if source_id is not None and entry.get("source_id") and entry["source_id"] != source_id:
                 continue
             target_segment = str(entry.get("segment_id") or "").strip()
             if segment_id is not None and target_segment != segment_id:
@@ -794,9 +911,30 @@ class ReviewStore:
     def __init__(self, db_path: Path | None = None) -> None:
         env = os.environ.get("FORAGE_REVIEW_DB")
         self.db_path = Path(env) if env else (db_path or WORK_DIR / "_review" / "review.db")
+        mutable_path(self.db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         with self._connect() as conn:
             conn.executescript(_SCHEMA)
+            # Serialize schema upgrades across app workers; existing comments
+            # retain their original anchors and receive nullable new metadata.
+            conn.execute("BEGIN IMMEDIATE")
+            columns = {r[1] for r in conn.execute("PRAGMA table_info(comments)")}
+            for name, definition in {
+                "scope": "TEXT", "target_kind": "TEXT NOT NULL DEFAULT 'text'",
+                "target_id": "TEXT", "publication_revision": "TEXT",
+                "text_revision": "TEXT", "target_revision": "TEXT",
+                "timestamp_seconds": "REAL", "original_text": "TEXT",
+            }.items():
+                if name not in columns:
+                    conn.execute(f"ALTER TABLE comments ADD COLUMN {name} {definition}")
+            conn.execute("CREATE TABLE IF NOT EXISTS review_metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL)")
+            conn.execute("INSERT OR IGNORE INTO review_metadata VALUES ('source_id', ?)",
+                         (uuid.uuid4().hex,))
+
+    @property
+    def source_id(self) -> str:
+        with self._connect() as conn:
+            return conn.execute("SELECT value FROM review_metadata WHERE key='source_id'").fetchone()[0]
 
     def _connect(self) -> sqlite3.Connection:
         conn = sqlite3.connect(self.db_path, timeout=10)
@@ -851,7 +989,11 @@ class ReviewStore:
 
     def add(self, *, book_id: str, segment_id: str, draft_para: int | None,
             anchor: str, quote: str, severity: str, kind: str, body: str,
-            author: str) -> dict:
+            author: str, scope: str | None = None, target_kind: str = "text",
+            target_id: str | None = None, publication_revision: str | None = None,
+            text_revision: str | None = None, target_revision: str | None = None,
+            timestamp_seconds: float | None = None,
+            original_text: str | None = None) -> dict:
         now = time.time()
         row = {
             "id": uuid.uuid4().hex[:12],
@@ -867,13 +1009,23 @@ class ReviewStore:
             "author": author[:MAX_AUTHOR],
             "created_at": now,
             "updated_at": now,
+            "scope": scope or ("book" if segment_id == BOOK_COMMENT_SEGMENT
+                               else "chapter" if draft_para is None else "paragraph"),
+            "target_kind": target_kind, "target_id": target_id,
+            "publication_revision": publication_revision, "text_revision": text_revision,
+            "target_revision": target_revision, "timestamp_seconds": timestamp_seconds,
+            "original_text": original_text,
         }
         with self._connect() as conn:
             conn.execute(
                 "INSERT INTO comments (id, book_id, segment_id, draft_para, anchor,"
-                " quote, severity, kind, status, body, author, created_at, updated_at)"
+                " quote, severity, kind, status, body, author, created_at, updated_at,"
+                " scope, target_kind, target_id, publication_revision, text_revision,"
+                " target_revision, timestamp_seconds, original_text)"
                 " VALUES (:id, :book_id, :segment_id, :draft_para, :anchor, :quote,"
-                " :severity, :kind, :status, :body, :author, :created_at, :updated_at)",
+                " :severity, :kind, :status, :body, :author, :created_at, :updated_at,"
+                " :scope, :target_kind, :target_id, :publication_revision, :text_revision,"
+                " :target_revision, :timestamp_seconds, :original_text)",
                 row)
         return row
 
@@ -910,76 +1062,73 @@ class ReviewStore:
 # --------------------------------------------------------------------------
 
 
+def decorate_comments(artifacts: ArtifactStore, book_id: str, rows: list[dict],
+                      responses: dict | None = None) -> list[dict]:
+    """Decorate against one pinned revision without changing stored context."""
+    targets = {t["id"]: t for t in artifacts.media(book_id)["targets"]}
+    info = artifacts.revision_info(book_id)
+    out = []
+    for row in rows:
+        item = dict(row)
+        scope = row.get("scope") or ("book" if row["segment_id"] == BOOK_COMMENT_SEGMENT
+                                    else "chapter" if row["draft_para"] is None else "paragraph")
+        item.update(scope=scope, stale=False, orphaned=False)
+        if scope in {"audio", "graphic"}:
+            target = targets.get(row.get("target_id"))
+            item["orphaned"] = target is None
+            item["stale"] = target is not None and target["revision"] != row.get("target_revision")
+        elif scope == "book":
+            item["stale"] = bool(row.get("text_revision") and
+                                 row["text_revision"] != info.get("text_revision"))
+        else:
+            alignment = artifacts.alignment(book_id, row["segment_id"])
+            paras = (alignment or {}).get("draft_paragraphs", [])
+            if scope == "chapter":
+                current = "\n\n".join(paras)
+                item["orphaned"] = alignment is None
+                item["stale"] = alignment is not None and row.get("original_text") is not None and current != row["original_text"]
+            else:
+                idx = row["draft_para"]
+                current = paras[idx] if isinstance(idx, int) and 0 <= idx < len(paras) else None
+                item["orphaned"] = current is None
+                item["stale"] = current is not None and bool(row["anchor"]) and anchor_hash(current) != row["anchor"]
+        response = (responses or {}).get(row["id"], [])
+        if response:
+            item.update(llm_responses=response, llm_response_count=len(response))
+        out.append(item)
+    return out
+
+
+def build_feedback(artifacts: ArtifactStore, reviews: ReviewStore, book_id: str) -> dict:
+    return {"version": 1, "source_id": reviews.source_id, "book_id": book_id,
+            "complete": True,
+            "comments": decorate_comments(artifacts, book_id, reviews.list_comments(book_id))}
+
+
 def build_edits(artifacts: ArtifactStore, reviews: ReviewStore, book_id: str,
                 statuses: Iterable[str] = ("open", "accepted")) -> dict:
-    """Materialize the review queue into the overlay document that a fix stage
-    consumes: comments grouped by chapter, each carrying the paragraph text it
-    was written against and whether that text has since changed."""
+    """Keep prose overlay compatibility while exporting media separately."""
     wanted = set(statuses)
-    comments = [c for c in reviews.list_comments(book_id)
-                if c["status"] in wanted]
-
+    comments = decorate_comments(artifacts, book_id,
+                                [c for c in reviews.list_comments(book_id) if c["status"] in wanted])
     by_segment: dict[str, list[dict]] = {}
-    book_comments: list[dict] = []
+    book_items, media_items = [], []
     for c in comments:
-        if c["segment_id"] == BOOK_COMMENT_SEGMENT:
-            book_comments.append(c)
-            continue
-        by_segment.setdefault(c["segment_id"], []).append(c)
-
-    segments = []
-    stale_total = 0
-    book_items = [
-        {
-            "id": c["id"],
-            "scope": "book",
-            "severity": c["severity"],
-            "kind": c["kind"],
-            "status": c["status"],
-            "note": c["body"],
-            "quote": c["quote"],
-            "author": c["author"],
-            "created_at": c["created_at"],
-            "updated_at": c["updated_at"],
-        }
-        for c in book_comments
-    ]
-    for sid in sorted(by_segment):
-        alignment = artifacts.alignment(book_id, sid) or {}
-        draft_paras = alignment.get("draft_paragraphs", [])
-        items = []
-        for c in by_segment[sid]:
+        item = {**c, "note": c["body"]}
+        if c["scope"] in {"audio", "graphic"}:
+            media_items.append(item)
+        elif c["scope"] == "book":
+            book_items.append(item)
+        else:
+            paras = (artifacts.alignment(book_id, c["segment_id"]) or {}).get("draft_paragraphs", [])
             idx = c["draft_para"]
-            current = draft_paras[idx] if isinstance(idx, int) and 0 <= idx < len(draft_paras) else None
-            stale = bool(c["anchor"]) and current is not None and anchor_hash(current) != c["anchor"]
-            if stale:
-                stale_total += 1
-            items.append({
-                "id": c["id"],
-                "scope": "chapter" if idx is None else "paragraph",
-                "draft_para": idx,
-                "severity": c["severity"],
-                "kind": c["kind"],
-                "status": c["status"],
-                "note": c["body"],
-                "quote": c["quote"],
-                "author": c["author"],
-                "paragraph": current,
-                "stale": stale,
-                "created_at": c["created_at"],
-                "updated_at": c["updated_at"],
-            })
-        segments.append({"segment_id": sid, "comments": items})
-
-    return {
-        "book_id": book_id,
-        "generated_at": time.time(),
-        "statuses": sorted(wanted),
-        "comment_count": len(comments),
-        "stale_count": stale_total,
-        "book_comments": book_items,
-        "segments": segments,
-    }
+            current = paras[idx] if isinstance(idx, int) and 0 <= idx < len(paras) else None
+            item["paragraph"] = c.get("original_text") if c.get("original_text") is not None else current
+            by_segment.setdefault(c["segment_id"], []).append(item)
+    return {"book_id": book_id, "generated_at": time.time(), "statuses": sorted(wanted),
+            "comment_count": len(comments), "stale_count": sum(c["stale"] for c in comments),
+            "book_comments": book_items, "media_comments": media_items,
+            "segments": [{"segment_id": sid, "comments": by_segment[sid]} for sid in sorted(by_segment)]}
 
 
 def edits_path(artifacts: ArtifactStore, book_id: str) -> Path:
@@ -991,8 +1140,8 @@ def edits_path(artifacts: ArtifactStore, book_id: str) -> Path:
     """
     override = os.environ.get("FORAGE_EDITS_DIR")
     if override:
-        return Path(override) / book_id / "edits.json"
-    return artifacts.work_dir / book_id / "editorial" / "edits.json"
+        return mutable_path(Path(override) / book_id / "edits.json")
+    return mutable_path(artifacts.work_dir / book_id / "editorial" / "edits.json")
 
 
 def publish_edits(artifacts: ArtifactStore, reviews: ReviewStore,

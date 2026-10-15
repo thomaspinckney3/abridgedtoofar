@@ -46,7 +46,7 @@ def reconsider_segment(book: Book, segment_id: str) -> dict:
 
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-opus-4-7"),
+        model=prompt.config.get("model", "anthropic:claude-opus-5-5"),
         system=prompt.system,
         max_tokens=prompt.config.get("max_tokens", 4000),
         temperature=prompt.config.get("temperature"),

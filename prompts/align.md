@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-sonnet-4-6
+model: anthropic:claude-sonnet-5-5
 max_tokens: 8000
 ---
 You are aligning a faithful book abridgment back to its source for proofreading. Given the numbered paragraphs of the SOURCE chapter and the numbered paragraphs of the DRAFT (abridged) chapter, produce a mapping from each draft paragraph to the source paragraph(s) it derives from.

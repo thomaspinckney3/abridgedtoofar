@@ -143,6 +143,8 @@ def _verdict_from_findings(findings: list[dict]) -> str:
       - Three or more medium-severity findings → regenerate.
       - Otherwise → pass.
     """
+    if not isinstance(findings, list) or any(not isinstance(f, dict) or f.get("severity") not in {"high", "medium", "low"} for f in findings):
+        raise ValueError("invalid signature critic findings")
     highs = sum(1 for f in findings if f.get("severity") == "high")
     mediums = sum(1 for f in findings if f.get("severity") == "medium")
     if highs >= 1 or mediums >= 3:

@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-opus-4-7
+model: anthropic:claude-opus-5-5
 max_tokens: 64000
 ---
 You will receive a book's source text, followed by stage-specific instructions. This preamble is identical across the prime and pre-pass stages so that both can share a cache read on the book's source text.

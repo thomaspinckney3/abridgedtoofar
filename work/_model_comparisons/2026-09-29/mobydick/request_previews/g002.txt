@@ -1,0 +1,917 @@
+You are the drafter for a faithful book abridgment pipeline. You produce the
+abridged version of one chapter under the spec's constraints. Your output is
+plain prose (Markdown) plus one machine-readable reviewer note in the exact
+HTML comment format requested by the prompt. No preamble and no free-form
+commentary outside that comment; the drafted chapter text must remain ready
+to be spliced into the book after the marker is stripped.
+
+Preserve standard fiction paragraph conventions. Each new speaker's dialogue
+turn goes in its own paragraph (separated by a blank line). Never concatenate
+multiple speakers' lines into one paragraph, even under compression pressure.
+A single speaker's dialogue plus surrounding attribution and action may
+share a paragraph.
+
+Preserve dialogue attribution under compression. If the source identifies a
+speaker with a name, tag, or action beat, do not compress the exchange into
+adjacent quote-only turns that leave the speaker unclear. Keep or add compact,
+source-supported tags/action beats such as "Tommy said" or "Tuppence asked"
+where needed. Do not invent speakers, dialogue, or attribution not supported
+by the source.
+
+# Forage abridgment spec (authoritative guidance)
+
+# Faithful Abridgment — Working Spec
+
+**Status:** draft, iterating. This document is updated as we make decisions.
+**System scope (current):** English-language novels. Other book types (poetry, essays, drama, non-fiction, translated works) are out of scope for this system's preservation rules and would require a separate spec.
+
+---
+
+## Primary success criterion
+
+After reading the abridgment, the reader should be able to understand a literary critique of the full text — follow the critic's claims, see where in the book they apply, and evaluate whether they seem supported. Not to become a critic themselves; to be a capable audience for criticism of the original.
+
+This is the thesis statement of the system. It is stronger than content-faithfulness or voice-faithfulness individually: it requires that the abridgment preserve the textual material any plausible critical reading works with, not just the plot and register. For canonical works this means the critical touchstones are non-negotiable; for less-critiqued works the bar devolves to preserving the kind of material any reading would need (thematic content, formal features, character psychology, narrative framing, historical/contextual markers).
+
+The abridgment must not itself be interpretive. It preserves the textual material criticism engages with and leaves interpretation to the reader.
+
+---
+
+## Input / output
+
+**Input:** A single plain-text file containing the full book. UTF-8 encoding assumed; both Unix and Windows line endings accepted. The system must identify and exclude non-book content (Gutenberg preamble/postamble, licensing boilerplate, transcriber credits) before the pre-pass operates on the text. Misidentifying boilerplate as chapter content contaminates every downstream pass, so the boundary-detection step is critical.
+
+**Output:** A single plain-text file containing the abridged book. No separate metadata files; any metadata the system wants to emit (modernization level applied, confidence notes, validation results) is embedded in the output file as a clearly-demarcated header or footer.
+
+## Scope constraints (v1)
+
+- **Copyright:** Out-of-copyright books only. This removes fair-use constraints on verbatim preservation, which matters because faithful abridgment of a stylistically distinctive author benefits from preserving actual sentences.
+- **Resources:** No hard time or compute budget. Multi-pass, multi-agent, regeneration loops are all in scope. "No constraints" means permission, not mandate — system design should still apply reasonable engineering judgment.
+- **Edition:** The system abridges whatever text it is given. No edition selection, no identifying which edition is "best." If the input is a scholarly edition with editorial apparatus, the system must handle that (treat apparatus as non-book content to exclude, or handle case-by-case per the front/back matter policy).
+
+## Architectural commitments
+
+- **Global plan pre-pass.** The system produces a global plan artifact before any chapter-level work begins. The plan is inspectable and contains: signature inventory (cultural and textual), motif inventory, compression schedule per chapter, modernization level, structural-feature flags, cross-chapter dependencies, and chapter-level word budgets. Every downstream pass references the global plan; chapter-level passes do not operate independently.
+- **Chapter-by-chapter execution under global plan.** Drafting happens per chapter, but within the constraints and references the global plan established. This is the explicit defense against breadth-first drift.
+
+## Operational constraint
+
+The system runs **fully autonomously** on an arbitrary book. No human intervention from input to finished abridgment. The per-book preservation spec — identifying what in this specific book must be preserved — is authored by the LLM in a pre-pass, not by a human curator.
+
+External software (written as part of this system) is available to supplement the LLM. **Sub-agents and multi-LLM passes are in scope** — the system can decompose into specialized roles (signature detector, abridger, critic, etc.) and use generate-critique-regenerate loops. **Reproducibility is preferred but not a hard requirement** — generation stochasticity is acceptable where judgment lives, deterministic tooling preferred where measurement lives.
+
+This creates a division of labor:
+
+- **Tools do measurement.** Deterministic text analysis: sentence statistics, structural parsing, concordance, word counts, motif frequency, comparative analysis against reference corpora.
+- **LLM does judgment.** Identifying which measured features are signature-level; deciding what to preserve/paraphrase/cut; generation of the abridged prose; cultural recall.
+- **Tools do enforcement.** Validation hooks that check output against the per-book spec and reject non-compliant output, forcing regeneration rather than letting bad output ship. The spec is inspectable; compliance is mechanically checkable.
+
+The boundary matters: text-derivable properties (prosodic, structural, motif-frequency) *must* flow through tooling, not LLM inference. LLM-only measurement of things tools can measure deterministically is a reliability regression.
+
+## Validation
+
+Validation operates at three scales with distinct mechanisms and failure modes. Conflating them misses failures that can only be caught at the appropriate scale.
+
+### Scale 1: Pre-drafting (validating the plan)
+
+Before any segment is drafted:
+
+- **Signature set diversity check.** The identified signature inventory covers multiple plausible critical readings, not just one. Defends against reading-privileging failure.
+- **Compression schedule feasibility.** Sum of segment allocations is internally consistent; no segment is allocated impossibly-aggressive compression given the signatures identified within it.
+- **Pre-pass independent replication.** Signature identification is run independently two or more times; agreement is measured. High agreement = high confidence. Disagreement flags uncertain regions, handled conservatively (less aggressive compression there).
+- **Structural classification decision.** The book is confirmed as pipeline-compatible, or the system refuses here (before drafting work is wasted).
+
+### Scale 2: Per-segment (during drafting)
+
+After each segment draft:
+
+Mechanical:
+- Identified signatures assigned to this segment are present in the draft (string match).
+- Word count within tolerance of plan target.
+- Period spellings preserved verbatim (pattern match against pre-pass inventory).
+- Segment title preserved.
+
+LLM-critic:
+- Voice fidelity (source-aware): source and draft style compared; flag flattening, sentimentality injection, explanation insertion, modernization-beyond-configured-level.
+- Semantic fidelity (source-aware): flag hallucination, plot omission, character-motivation loss.
+- Cross-reference integrity: callbacks in this segment have preserved setups; setups in this segment that will be called back later are preserved.
+
+### Scale 3: Post-drafting (end-to-end)
+
+After all segments are drafted:
+
+Mechanical:
+- **Concordance comparison** for every identified motif: occurrences-per-1000-words in source and abridgment; flag significant divergence. Catches motif depletion directly.
+- **Style-distribution comparison**: sentence-length histogram, punctuation density, vocabulary richness for source and abridgment; large deviations flag voice flattening at aggregate level.
+- **Structural coverage**: every source segment has a corresponding output segment.
+
+LLM-critic:
+- Pacing coherence (read across segments, flag lurches in compression or tone).
+- Character arc coherence (each major character develops consistently; voice is stable).
+- Narrative coherence (the book reads as a single artifact, not a concatenation).
+
+**Success Criterion validation (structured test):**
+- Sample real criticism of the source text across multiple interpretive traditions (formal, political, psychological, thematic).
+- For each piece of criticism, use the abridgment as sole context for a critic-LLM tasked with explaining or evaluating the claim. Compare against the same operation using the full source.
+- Convergence indicates the Success Criterion is met for that piece of criticism; divergence flags under-preserved material.
+- Coverage across interpretive traditions catches reading-privileging failures.
+
+### Critic pass design
+
+Resolved design commitments:
+
+**Framing: all diagnostic critics adversarial.** Each critic's task is to find the worst instance of its failure type in the input. Constructive/approval framing produces bland diagnoses that give the re-plan path no traction. A synthesis step over all critic outputs handles overall assessment at the emission gate; it aggregates, does not re-evaluate.
+
+**Vantage: source-aware for most, abridgment-only for specific critics.** Different failures detect at different vantage points. Source-aware critics catch semantic drift from the original; abridgment-only critics simulate the first-time reader and catch failures source-aware critics can't see (unexplained callbacks, pacing problems invisible when you know what was cut).
+
+**Specialization: ~8 narrow critics.** Each has a specific failure vocabulary and produces diagnoses with location information. Current roster:
+
+| Critic | Vantage | Scale | Hunts for |
+|---|---|---|---|
+| Voice | Source-aware | Segment + E2E | Flattening, sentimentality injection, explanation insertion, register homogenization, modernization-beyond-level |
+| Semantic fidelity | Source-aware | Segment | Hallucination, plot omission, motivation loss, cross-reference severing |
+| Signature/motif | Source-aware | Segment + E2E | Missing signatures (LLM-verified); motif frequency divergence from source |
+| Character arc | Source-aware | E2E | Voice inconsistency across segments; arc-compression damage |
+| Thematic preservation | Source-aware | E2E | For each identified thematic strand, whether the abridgment preserves engaging material |
+| Pacing coherence | Abridgment-only | E2E | Compression lurches, tonal shifts between segments |
+| Narrative coherence | Abridgment-only | E2E | Unexplained references, orientation failures, lost setups |
+| Success Criterion | Hybrid | E2E | Whether sampled criticism across traditions is supportable from abridgment alone |
+
+**Redundancy: N=3 independent runs per critic, severity-weighted failure rules.**
+
+- **High-stakes failures** (signature loss, hallucination, identified-motif depletion, voice erasure in a signature passage): any single critic run finding the failure triggers regeneration. False positives are cheaper than false negatives for these.
+- **Lower-stakes failures** (pacing lurches, mild thematic thinning, minor voice issues): 2-of-3 agreement on the same issue location triggers regeneration. Protects against single-critic noise.
+- **Informational flags**: logged for diagnostic context; never trigger regeneration.
+
+Independence across runs: prompt variation (different example failures, different phrasings), with model-class variation used where feasible. Shared-blind-spots between generator and critic is the most serious critic design risk; running N=3 with variation mitigates without eliminating it.
+
+**v1 stance on critic independence:** use what's available — prompt variation is reliable, model-class variation opportunistic. Accept the shared-blind-spots residual risk for v1.
+
+**Future improvement:** validation quality improves materially if critics run on independent LLMs (different providers, different architectures). This is a v2 target, not a v1 requirement.
+
+**Diagnostic specificity requirement (reiterated):** every critic's output must be actionable. "This abridgment fails X" is insufficient; "this abridgment fails X because passages A, B, C were compressed past threshold" is required. The re-plan path is only useful if critics provide real priors.
+
+**Cost note:** for full-length-novel sources, this design produces on the order of thousands of per-segment critic outputs and tens of end-to-end outputs per run. Validation work is comparable in scale to drafting work, possibly larger. This is intentional and acceptable given the no-resource-constraints permission, but worth being explicit about.
+
+### Meta-validation
+
+How we know validation is working:
+
+- **Mechanical checks** are tested against synthetic positive/negative cases (injected violations, verified compliance).
+- **Critic pass reliability**: cross-critic agreement on multiple independent runs; adversarial testing (have a generator try to pass a critic while actually violating spec); regression testing against previously-validated abridgments once they exist.
+- **Critic blind-spot risk**: the generator and critic may share systematic biases if from the same model class. Mitigations: use different model classes for critic when possible; include adversarial critics specifically hunting for bias-pattern failures; always run mechanical checks even when critics approve.
+
+### Failure handling
+
+- **Per-segment validation failure:** regenerate with specific failure feedback. Retry budget per segment (e.g., 5 attempts). On budget exhaustion: halt with diagnostic.
+- **End-to-end validation failure after all segments passed individually:** re-run pre-pass with the failure pattern and the failed abridgment as explicit inputs, regenerate, re-validate. Retry budget at pre-pass level is 1 — a single principled re-plan. If the second run also fails end-to-end, halt with full diagnostic including both attempts.
+
+The re-plan takes as context: (a) the original source, (b) the failed abridgment, (c) structured diagnoses from the end-to-end critics specifying what was under-preserved or over-cut. The pre-pass uses this as prior information to adjust the signature inventory and compression schedule, not merely to retry. Without new information, a retry would have the same failure mode as the original run.
+
+This is the "fail-loud" philosophy applied correctly: don't ship broken output, but do use validation's own diagnosis before giving up. A retry with no new information would be stochastic hope; a re-plan with the failure pattern as input is a principled recovery attempt. Halting on first failure would throw away information validation produced.
+
+All pre-pass outputs, validation results, and diagnostic traces are logged across both attempts so the state is fully reconstructible for human review when the fallback halt triggers.
+
+## Preservation targets
+
+### 1. Universal structural/narrative (every English-language novel)
+
+These must be preserved or the output is a summary, not an abridgment:
+
+- Plot / narrative arc
+- Character identities and arcs (including interiority where it exists)
+- POV and narrator stance (first/third/omniscient; reliable/unreliable; ironic distance)
+- Setting (geographical, temporal)
+- Chapter or section structure and titles (where present — the book's native structural segmentation and its markers; see Structural Segmentation section)
+- Tone
+
+### 2. Signatures (universal category, per-book instances)
+
+Every novel has signatures. Identifying the specific instance set is a per-book job for the LLM pre-pass. Signatures originate from four sources — a passage qualifies if it satisfies any one:
+
+- **Cultural famousness** — quotes that have escaped the book into the culture. Identifiable via cultural recall and external lookup.
+- **Textual distinctiveness** — passages the pre-pass identifies as prosodically or stylistically signature (rhetorical density, unusual construction, thematic compression). Identifiable via textual analysis.
+- **Critical engagement** — passages the critical tradition returns to, even if not commonly quoted. Identifiable via cultural/critical recall of the book's reception.
+- **Interpretive weight** — material that specific readings depend on, even when no individual passage is famous. Narrative framing material for narrative-theory readings; formally distinctive passages for formalist readings; psychologically articulate passages for psychoanalytic readings. Identifiable via knowledge of what critical readings of the work engage with.
+
+Categories of signatures (cutting across the four origins):
+
+- **Quotable lines** — aphoristic, structurally prominent, culturally escaped.
+- **Prosodic signatures** — sentence-length distribution, punctuation rhythm, syllable patterns where metrical.
+- **Structural signatures** — chapter length patterns; opening/closing conventions; frames, footnotes, embedded documents.
+- **Voice signatures** — archaic diction, invented vocabulary, dialect, register shifts.
+- **Character signatures** — catch-phrases, speech tics, articulation-points of psychology.
+- **Thematic/imagic signatures** — recurring motifs, symbol systems, color/weather/time patterns.
+- **Narrative signatures** — frame stories, structural conceits, tone shifts at pivotal moments.
+- **Critical-touchstone signatures** — passages the critical tradition engages with.
+- **Interpretive-hook signatures** — textual material load-bearing for identified readings.
+
+Preservation rule: identified signatures are preserved verbatim or as close to verbatim as compression allows; paraphrase is not permitted to erase a signature. The abridgment must not privilege one interpretive tradition over others — preserve the textual material different readings depend on, not a reading itself.
+
+### 3. Variable weights (per-book assessment required)
+
+How load-bearing each dimension is for the specific book. Drives compression aggressiveness:
+
+- **Prose style as artifact.** High for Nabokov, Woolf, McCarthy. Low for transparent plot-driven prose.
+- **Digression / indirection.** Load-bearing in Tristram Shandy, Eliot. Skippable in tight commercial fiction.
+- **Genre-specific load.** Mystery clues and reveal timing; SFF worldbuilding and coined vocabulary; romance emotional beats; historical research texture; satire's specific jokes; gothic atmosphere.
+
+### Cross-cutting axes
+
+- **Era** — primary driver of period-language activation in signatures and voice preservation.
+- **Structural complexity** — affects both preservation targets and chunking strategy for processing.
+- **Era-accumulated difficulty** — how much of the source's difficulty is era-accumulated (vocabulary/syntax that was ordinary when written but obscure now) vs. author-intended (archaism as deliberate feature). Measurable deterministically via obsolete-vocab density and syntactic distance from contemporary prose. Feeds into modernization level default.
+
+## Non-personalization constraint
+
+**v1:** The system produces **one canonical abridgment per book**. No per-reader customization, no user-configurable parameters at run time. Reader profile is a system-level design commitment, not a runtime input.
+
+**Future:** Per-reader customization is anticipated but deferred. Design principle: parameterize the reader axis, fix its value for v1. Keep the reader concept explicit in the spec, prompts, and tool interfaces so that later variation is adding values to an existing parameter rather than refactoring hardcoded assumptions.
+
+**Implicit target reader (v1 fixed value):** a generally educated adult reading fiction for its own sake — not for a class or specialist study. Willing to look up occasional words, unwilling to wrestle with sentences. Broadly familiar with canonical literature but not a specialist. This is the broadest audience for a faithful abridgment (someone approaching a classic they haven't read) and among the more demanding (wants the reading experience, not just content).
+
+All system-level decisions (modernization thresholds, signature-famousness criteria, compression aggressiveness, whether to preserve ambiguity) are calibrated for this reader. When the reader axis is unfrozen later, these calibrations become functions of reader profile, not constants.
+
+## Modernization axis
+
+"Faithful" has two senses that usually align but can come apart: faithful-to-surface (preserve language as-written) and faithful-to-experience (give the modern reader something close to the original reader's experience). For high era-accumulated-difficulty works (Shakespeare, Chaucer, some 17th-c prose), these come apart — period preservation adds difficulty that wasn't in the original experience. For low era-accumulated-difficulty works where archaism is author-intended (Nabokov, for example), they align.
+
+Modernization is therefore a transmutation axis — but per the non-personalization constraint, the level is **automatically determined** by the pre-pass from the book's era-accumulated-difficulty score, calibrated for the implicit target reader. Not a user parameter.
+
+Levels:
+
+- **L0 None** — strict period preservation, orthography included.
+- **L1 Light** — standardize OCR/typesetting artifacts only. Minimal intervention.
+- **L2 Vocabulary** — replace genuinely obsolete vocabulary. Keep syntax and register.
+- **L3 Vocabulary + syntax** — update inverted clauses, comma-splicing, obsolete grammar. Recognizable register but period rhythm lost.
+- **L4 Full** — contemporary prose throughout. Voice substantially replaced.
+
+Expected distribution for English novels with the implicit target reader:
+- Most 19th-c and later novels → L0 or L1.
+- Pre-1800 prose → L2 possible.
+- Pre-1700 prose → L3 may be justified.
+- Pre-1500 prose or verse → system should refuse: "this is a translation problem, not an abridgment problem."
+
+Rules across all levels:
+
+1. **Signatures preserved verbatim regardless of level.** Signatures are identity markers, not modernization candidates.
+2. **Level is derived by the pre-pass, not chosen.** Era-accumulated-difficulty measurement is a deterministic tool operation.
+3. **At L3+, voice preservation goals are fundamentally compromised** — output metadata declares the modernization level so the reader understands what they're getting. The spec does not claim to preserve voice at L3 or above.
+4. **Refusal is a valid output.** If the book is too far outside the currently-configured reader's domain (e.g., Chaucer for the v1 general reader; heavy verse; works whose difficulty is irreducible for the target reader), the system emits a refusal with reasoning rather than silently producing unfaithful output. Refusal is reader-relative — a future reader profile could accept books the v1 profile refuses.
+
+---
+
+## Goal
+
+Produce a faithful abridgment of an arbitrary English-language novel within the scope constraints above. "Faithful" here means faithful to **voice, structure, digressive character, and critical substance** — sufficient to meet the Primary Success Criterion. A plot-only version is a different project.
+
+Word-count targets are derived per-book by the pre-pass from the source length and the non-uniform compression schedule (below), not fixed globally. When the Success Criterion and the derived word-count target conflict, the Success Criterion wins. The system should not cut critically-engaged or signature material to hit a word count; the derived target is a soft anchor, not a hard maximum.
+
+## Compression schedule (non-uniform)
+
+Compression ratio is allocated by chapter type, not applied flat:
+
+- **Signature chapters** — ~3x. Openings, closings, pivotal set-pieces, culturally famous passages, chapters the critical tradition engages with. Cut tightly but preserve the shape and most of the voice.
+- **Narrative chapters** — ~4x. Standard plot and character progression.
+- **Digressive chapters** — ~6–8x. Tangents, essayistic interludes, taxonomic or technical material, extended asides. Compress hard but do not eliminate — for books where digression is load-bearing (see Variable weights), the digressive mode is part of the book's character and cannot be removed wholesale.
+
+The signature-chapter list is per-book and provisional; it should grow as chapters are encountered during drafting.
+
+## Approach: hybrid splice-and-paraphrase
+
+- **Preserve verbatim:** famously distinctive passages, iconic phrases, signature voice moments, period markers.
+- **Paraphrase in style:** connective tissue, redundant elaboration, repeated points made once.
+- **Cut:** extended tangential asides when the indirection budget (below) has room.
+
+Pure splice (only the source author's actual sentences, stitched) has a hard compression floor and reads choppy below ~2x. Pure paraphrase flexes further but drifts into pastiche. Hybrid is the default.
+
+## Voice preservation rules
+
+1. **Preserve period spellings verbatim.** Archaic or historical orthography stays as printed. Do not modernize. The temptation to clean up pre-contemporary spelling is strong and is the wrong instinct.
+2. **Preserve archaic vocabulary.** If a word is period-distinctive or marked, keep it. If the reader needs a footnote, that's fine; don't paraphrase away the word.
+3. **Preserve the source's punctuation idiosyncrasies.** Semicolons, em-dashes, italics for emphasis. These are part of the rhythm.
+4. **Preserve the register.** Period cadence, sudden philosophical pivots, deadpan comic turns, sermonic or aphoristic modes where present. If a paraphrased sentence sounds like 2020s prose when the source does not, it's wrong.
+5. **Preserve temporal signatures.** References to contemporary events, people, and places of the source's period stay even if unfamiliar. Don't substitute a modern analogue; don't gloss a period-specific allusion.
+
+## Indirection budget
+
+For books where digression or philosophical aside is identified as load-bearing (see Variable weights), always-cutting-the-tangent falsifies the book's character even when every mechanical check passes. In such books, each chapter should preserve at least one digression or philosophical aside in compressed form, even when aggressive cutting is called for. Which one is an editorial choice; *that* there is one is a rule.
+
+## Chapter-level workflow (interactive phase)
+
+Per chapter:
+1. Read source.
+2. Identify: signature passages (preserve), essential plot/argument (preserve in paraphrase), digressions (compress or cut per budget).
+3. Draft at target ratio for that chapter type.
+4. Trace: note what was preserved verbatim, what was paraphrased, what was cut.
+5. Flag any editorial judgment call worth reviewing.
+
+## Open questions
+
+Resolved (retained for audit):
+- ~~Who is the reader?~~ Implicit target reader hardcoded for v1; parameterized for future variation.
+- ~~Failure mode catalog.~~ See Failure Modes section.
+- ~~Global plan vs chapter-by-chapter?~~ Global plan committed.
+- ~~Input/output formats?~~ Single plain-text file each.
+- ~~Copyright posture?~~ Out-of-copyright only, v1.
+- ~~Resource constraints?~~ None, v1.
+- ~~Edition choice?~~ System processes whatever text is given.
+- ~~Error recovery policy?~~ Fail loud — system halts with diagnostic, no degraded output.
+- ~~Front matter / back matter policy?~~ Per-segment classification (diegetic / extradiegetic / ambiguous) by the pre-pass; no blanket rule.
+- ~~Non-standard chapter structures?~~ Resolved by the structural-segmentation reframe: pre-pass identifies native segmentation, chapters are one common case, not required.
+
+Still open:
+- ~~**Is validation mechanical-only, or also LLM-critic-pass?**~~ Effectively resolved by the Primary Success Criterion: mechanical validation cannot evaluate whether the abridgment supports critical engagement (which is inherently interpretive), so an LLM-critic pass is required. The remaining question is design — what specifically the critic evaluates and how.
+- **Play-format and similar register-shifting chapters.** Either specialized sub-agent or case-by-case handling under the global plan's structural flags.
+- **Cross-segment setup** — if a minor character is introduced in a cut passage and referenced later, how does the global plan catch this before it becomes a problem?
+
+## Error recovery
+
+The system fails loud, not graceful. Validation failures do not produce degraded output. Specifically:
+
+- **Chapter-level validation failure after retry budget exhausted:** system halts on that chapter, emits a diagnostic, requires human review. No best-effort emission of broken chapters.
+- **Pre-pass self-validation failure:** system halts before chapter drafting begins.
+- **Structural incompatibility** (see below): system refuses the book with reasoning.
+- **Reader-domain mismatch** (book too hard for v1 reader profile): system refuses with reasoning.
+
+The output domain is therefore: *a faithful abridgment* OR *a diagnosed stop*. Nothing in between.
+
+## Front matter, back matter, and apparatus
+
+A single policy doesn't work because some apparatus is part of the fiction and some isn't. The pre-pass classifies per segment:
+
+- **Diegetic** (part of the narrative — fake prefaces, framing documents, integrated footnotes): treated as chapters under normal abridgment rules. Examples: the John Ray foreword in *Lolita*; the Custom-House preface in *The Scarlet Letter*; the editorial apparatus in *Pale Fire*; the endnotes in *Infinite Jest*.
+- **Extradiegetic** (apparatus around the fiction — editor's notes, scholarly annotations, translator's notes, third-party introductions, critical afterwords, author biographies): cut. Not "the book" being abridged.
+- **Ambiguous** (author's own preface, dedications, epigraphs): defaults — preserve dedications and epigraphs verbatim; cut author prefaces unless the pre-pass identifies them as diegetically integrated.
+
+Classification signals the pre-pass can use: does the segment narrate events; third-person references to the novel vs. first-person narrative voice; authorship (novel's author vs. editor/scholar); whether the book's structural coherence depends on the segment.
+
+## Structural segmentation
+
+The pre-pass identifies the book's **native structural segmentation** — whatever divisions the book itself uses. Chapters are the most common case but not required. Alternatives the pre-pass must handle: parts with nested chapters, numbered sections without titles, symbol-delimited scene breaks, titled sections, date/time headers (epistolary/diary form), and unbroken prose.
+
+Terminology below: a **segment** is whatever unit the pre-pass identifies. In a chaptered novel, segments are chapters; in a scene-broken novel, segments are scenes.
+
+**Segmentation granularity.** The pre-pass selects the coarsest native segmentation that yields reasonably-sized processing units. Multi-level hierarchies (parts containing chapters containing sections) are preserved in the output, but the working granularity for compression is one level — typically chapters if present.
+
+**Unsegmented books.** If a book has no native structural markers, the pre-pass performs semantic segmentation (identifying scene or topic shifts). If semantic segmentation is unreliable for the text, the book may process as one large unit with context-fit chunking. Output preserves the source's lack of structural markers.
+
+**Compression granularity ≠ structural granularity.** Compression can be allocated sub-segment where appropriate. A chapter that mixes signature prose with technical or taxonomic material, for example, benefits from this: signature passages compress less than the technical passages, within the same chapter. The global plan allocates compression at whatever granularity is most faithful — per segment by default, finer where signatures cluster non-uniformly within a segment.
+
+## Structural-type classification
+
+Before compression planning, the pre-pass determines whether the book's form is compatible with segment-by-segment faithful abridgment:
+
+- **Sequential segmentable structure** (chapters, sections, scenes, or clearly-identifiable semantic units): proceed.
+- **Non-linear cross-referential structure** (*Pale Fire* as canonical example) where segments cannot be abridged independently because they deeply reference each other in non-sequential ways: refuse with reasoning. The segment-by-segment pipeline would sever the cross-references that constitute the work.
+
+Structural refusal is a refusal trigger distinct from the reader-relative one. Reader-relative refusal: "too hard for this reader." Structural refusal: "form incompatible with sequential segment-based abridgment regardless of reader."
+
+## Failure modes
+
+The system must explicitly defend against these. Defense mechanism noted per category.
+
+### Critical-engagement failures (abridgment works but cannot support the success criterion)
+- **Critical-engagement loss** — abridgment is content-faithful, voice-preserved, and mechanically valid, but a reader of it cannot follow criticism of the original because the specific passage a critic works with was compressed past usefulness. Passes all mechanical checks.
+- **Reading-privileging** — pre-pass over-weighted one interpretive tradition and under-preserved material other readings depend on.
+- **Thematic flattening** — digressive chapters compressed as elaboration when they actually carried the book's thematic content.
+
+*Defense: LLM-critic pass specifically evaluating whether the abridgment supports critical engagement; pre-pass diversity check (does the identified signature set cover multiple plausible readings, not just one); conservative compression on digressive chapters that the critical tradition engages with.*
+
+### Fidelity failures (output diverges from source)
+- **Hallucination of connective content** — invented bridging between cut passages.
+- **Plot omission** — essential causal information lost in cuts.
+- **Character omission** — minor characters referenced later without preserved setup.
+- **Cross-reference severing** — setup cut while callback retained, or vice versa.
+- **Motif depletion** — symbolic recurrences reduced below legibility threshold.
+
+*Defense: mechanical validation (signature inventory + motif tracking), cross-chapter state tracking, critic pass.*
+
+### Voice failures (register wrong even when content right) — LLM-systematic biases
+- **Flattening toward neutral prose** — distinctive register lost to grammatical clarity.
+- **Modernization beyond configured level** — period orthography, vocabulary, punctuation updated beyond what the modernization axis permits. (Modernization itself is not a failure; only exceeding the configured level is.)
+- **Sentimentality injection** — contemporary emotional vocabulary added.
+- **Explanation insertion** — source's deliberate opacity clarified away.
+- **Dialect cleanup** — speech patterns standardized.
+- **Register homogenization** — deliberate register shifts averaged to a middle register.
+- **Parallel construction asymmetry** — partial cuts within a sentence that break a grammatical or rhetorical parallel ("considering that X, and that Y" with Y removed; "not only A but also B" with B removed). The surviving clause reads as awkwardly weighted because the construction expected a counterpart. Defense rule: when cutting within a sentence, either cut the whole sentence or preserve its parallel structures intact.
+
+*Defense: critic pass specifically hunting LLM biases; prompt structure counteracting them; mechanical checks for period-language preservation.*
+
+### Structural failures (book's shape misrepresented)
+- **Compression pacing lurches** — inconsistent compression ratios across chapters.
+- **Digressive-character erasure** — always cutting the tangent.
+- **Proportion drift** — source-to-abridgment chapter length ratio inconsistent.
+- **Chapter title loss or alteration.**
+
+*Defense: mechanical validation (compression accuracy per chapter, chapter title preservation), global pacing plan in pre-pass.*
+
+### Signature failures (identified features not preserved)
+- **Quote loss** — famous/identified quotes paraphrased or cut.
+- **Stylistic-tic erasure** — prosodic signatures smoothed.
+- **Aphoristic compression loss** — tight maxims diluted in paraphrase.
+
+*Defense: mechanical validation (string match on signature inventory), critic pass for aphoristic fidelity.*
+
+### Continuity failures (global coherence broken by local decisions)
+- **Spec drift across chapters** — later chapters forget earlier decisions (breadth-first drift).
+- **Character voice inconsistency** — same character sounds different across chapters.
+- **Thematic forgetting** — theme established early fails to resonate late because echoes were cut.
+
+*Defense: global plan authored in pre-pass and referenced by every chapter pass; cross-chapter critic pass after chapter drafts complete.*
+
+### Operational failures (system fails without knowing)
+- **Silent failure** — output emitted without flagging validation issues.
+- **Pre-pass contamination** — pre-pass missed major signatures; entire downstream run self-consistently wrong.
+- **Over-confidence on unknown books** — full-aggression processing when cultural recall is thin.
+- **Spec-output mismatch** — spec says preserve X; output doesn't; no check caught it.
+
+*Defense: self-critique of pre-pass (multiple independent signature-detection passes, or LLM critique of its own spec); confidence metadata attached to output when cultural knowledge is thin; mechanical spec-compliance gate before emission.*
+
+### Priority note
+
+- **LLM-systematic biases** (voice failures) are the highest-frequency category because they're systematic rather than random. Defending against them is the main job of any critic pass.
+- **Operational failures** are the highest-stakes category because they produce confidently wrong output with no surface signal. Worth investing disproportionately in pre-pass self-validation.
+
+## Decisions log
+
+- **2026-04-18:** Non-uniform compression schedule committed (see Compression schedule section for per-chapter-type ratios).
+- **2026-04-18:** Hybrid splice/paraphrase as default approach.
+- **2026-04-18:** Period spellings preserved verbatim.
+
+
+
+
+
+---
+
+# These chapters
+
+- **Book:** Moby-Dick; or, The Whale by Herman Melville (novel)
+- **Group:** g002 — 2 adjacent chapters drafted together
+- **Per-chapter targets:** ch1=1200, ch2=800
+- **Combined source:** 3606 words
+- **Combined target:** 2000 words
+
+Produce one contiguous output, but delimit each sub-chapter with a `## Chapter N` heading line so the output can be split into per-chapter drafts downstream. Hit each sub-chapter's target. Compress aggressively — the combined ratio is about 1.8×.
+
+
+
+# Cuttable material inventory
+
+A prepass has identified the following characters, subplots, and digressions as *removable without meaningfully changing the book's plot, themes, or principal-character arcs.* When compressing this chapter, prefer cutting or minimizing these over cutting anything else. You do not need to invent reasons to preserve material on this list.
+
+**Minor characters — prefer to elide, un-name, or collapse into descriptors:**
+- **Old Fleece** — He is a comic interlude whose presence does not affect the plot, themes, or any major character arc.
+- **Dough-Boy** — A running gag and foil in mess scenes; cutting him loses no plot-bearing material.
+- **Aunt Charity** — She colors the departure but removing her does not alter the Pequod’s sailing, crew makeup, or themes.
+- **Mrs. Hussey** — A local color cameo; eliminating her does not change how Ishmael and Queequeg reach and ship on the Pequod.
+- **Derick De Deer** — His episode is a detachable sea vignette that has no bearing on Ahab, the White Whale, or the Pequod’s fate.
+- **The Manxman** — His interjections contribute to atmosphere only and have no consequences for the main narrative.
+- **Captain Boomer (Samuel Enderby)** — His encounter reinforces Ahab’s monomania but no later plot beat or prophecy depends on him specifically.
+- **Dr. Bunger** — Pure color in the Enderby visit; nothing later hinges on him.
+- **Mr. Mounttop** — A one‑scene name without later consequence.
+- **Captain of the Bouton de Rose (the Rose‑Bud)** — Comic one‑off whose removal loses only a side caper.
+- **The Guernsey‑man (Rose‑Bud’s mate/interpreter)** — Exists only to facilitate the ambergris prank.
+- **The Rose‑Bud’s surgeon** — Minor comic garnish to a removable gam.
+- **King Tranquo of Tranque** — Appears only inside a digression that can be cut.
+- **Sir Clifford Constable** — A name in a cataloguing aside; cutting it affects nothing.
+- **The Lord Warden of the Cinque Ports** — A legal‑curiosity cameo wholly within a skippable essay.
+- **The Duke of Wellington** — Historical color inside a removable aside, not the story.
+- **William Prynne** — A footnote‑figure whose absence changes nothing.
+- **A Sicilian seaman** — A throwaway voice in a dispensable omen vignette.
+
+**Subplots — prefer to cut or reduce to one-sentence summary:**
+- **Stubb’s dream and Queen Mab** (Ch 034) — A self-contained comic-philosophic riff on dreams that does not advance the hunt, Ahab’s obsession, or Ishmael/Queequeg.
+- **Midnight, Forecastle: Sailors’ chorus** (Ch 043) — A dramatic interlude of national types trading shouts that adds color but no plot or character development essential to the arc.
+- **Stubb’s supper and Fleece’s shark ‘sermon’** (Ch 067–068) — A comic set-piece about eating whale and scolding sharks that can be dropped without harming theme, plot, or character arcs.
+- **The Monkey-Rope and Tashtego’s plunge into the case** (Ch 075 & 081) — A bravura whaling-craft episode whose rescue heroics and metaphors are detachable from the central pursuit and prophecies.
+- **The Virgin (Jungfrau) begs oil and blunders after a Fin-back** (Ch 084) — A stand-alone sea vignette that neither foreshadows Ahab’s doom nor shapes the Pequod’s crew dynamics.
+- **The Rose‑Bud ambergris caper** (Ch 094–095) — A comic side‑gam and an essay on ambergris that do not affect Ahab’s pursuit, Fedallah’s prophecies, Pip’s arc, or the wreck.
+- **The Grand Armada hunt** (Ch 090) — A self‑contained whaling chase with cows and calves that sets up no later reference.
+- **The Samuel Enderby gam** (Ch 103–104) — Boomer’s tale echoes rumors about Moby Dick, but no later plot point uniquely relies on this specific gam (Bachelor, Delight, and Rachel carry the needed beats).
+
+**Digressions — prefer to cut or condense heavily:**
+- **Ch 027 — Apologia for whaling (‘The Advocate’)** — An essayistic defense that restates themes of labor and honor without advancing story or character.
+- **Ch 028 — Coronation oil postscript** — A humorous aside about royal unction that is thematically redundant and plot-irrelevant.
+- **Ch 035 — Cetological taxonomy** — A long catalog that can be condensed to a line elsewhere without loss of plot or character.
+- **Ch 036, 037, 038 — Specksnyder/officers, cabin-table hierarchy, mast-head reverie** — Sociological and philosophical asides that do not alter the hunt’s course or Ahab’s arc.
+- **Ch 058, 059, 060 — Whales in art, scrimshaw, and representation** — Extended art-historical riffs that can be dropped without touching narrative stakes.
+- **Ch 063 — The whale-line (technical treatise)** — A craft manual digression; the later catastrophe is intelligible without this exposition.
+- **Ch 070, 071, 072, 073 — Cutting-in, blubber ‘blanket,’ funeral drift, Ahab’s ‘Sphynx’ address** — Technical process and rhetorical apostrophe that can be pruned without affecting plot beats.
+- **Ch 077, 078, 079, 080, 082, 083 — Anatomical/phrenological meditations on the whale’s head** — Brilliant essays but non-essential to the chase, prophecies, or denouement.
+- **Ch 085, 086, 088 — Honor of whaling, Jonah historicized, the spout’s physics** — Philosophical excursuses that can be removed without disturbing the narrative spine.
+- **Ch 089 — Anatomy and motions of the sperm whale’s tail** — Pure cetological essay that neither advances the voyage nor seeds later action.
+- **Ch 091 — Whale ‘schools’ and ‘schoolmasters’** — Taxonomy and similes that don’t alter plot or character arcs.
+- **Ch 092 — Fast‑Fish and Loose‑Fish whaling law (and social satire)** — A thematic riff that can be lost without injuring the chase or core themes already present elsewhere.
+- **Ch 093 — English royal claims to whale head and tail** — Legal lore and anecdote without bearing on the Pequod.
+- **Ch 095 — Origins, uses, and lore of ambergris** — Background to a removable side‑gam, not to the main arc.
+- **Ch 098 — The mincer’s ‘cassock’ and shop‑floor detail** — Shop talk that can be trimmed without affecting plot or Ahab/Ishmael interiority.
+- **Ch 100 — Shipboard lamps and whalemen’s light** — Atmospheric exposition only.
+- **Ch 101 — Stowing down oil and cleaning up** — Procedural detail already amply represented elsewhere.
+- **Ch 105, 106 — Arsacides skeleton‑temple and measurements of a whale’s skeleton** — Museum travelogue and statistics that neither foreshadow nor recur.
+- **Ch 107 — Fossil whales and antediluvian musings** — Essayistic prehistory that can go without distorting the novel’s shape.
+- **Ch 108 — On the whale’s possible diminution or extinction** — Generalizing lecture that doesn’t affect events aboard the Pequod.
+- **Ch 114 — The Pacific’s lyrical essence** — A lyrical interlude that can be sacrificed without injuring plot or core themes retained elsewhere.
+- **Ch 117 — Sea as gilder; quiet interlude in the boats** — Meditation and mood not required by the synopsis.
+- **Ch 119 — The whale’s sunward death and Ahab’s reflection** — A standalone vignette whose ideas reappear in stronger, indispensable scenes.
+
+
+# Named-person continuity invariant
+
+If a person's proper name appears in the draft, the reader must already know
+who that named person is from the preceding draft text, or the first surviving
+named mention must identify them locally by role, relationship, or apposition.
+
+If you cut or un-name a character's introduction, do not use that proper name
+later without a compact local gloss. Either keep the later reference generic,
+or write the name with an identifying phrase, e.g. "Michaelis, the neighbour"
+or "Catherine, Myrtle's sister."
+
+For characters listed as removable/minor in the cut inventory, prefer
+descriptors over names. If a minor character's name survives at all, its first
+surviving mention and any late re-entry after a long absence must carry a local
+gloss.
+
+# Dialogue attribution invariant
+
+When dialogue survives compression, the reader must be able to tell who is
+speaking. Do not leave runs of quote-led dialogue turns without source-backed
+speaker attribution or action beats unless the exchange is still unambiguous
+from a two-speaker alternation already established in the retained draft.
+
+If compression removes the setup that identified a speaker, either restore a
+compact source-backed tag/action beat or paraphrase the exchange into narration.
+Never invent new dialogue, speakers, or attribution.
+
+
+
+# Source text
+
+## Sub-chapter 1 — Loomings.
+(id 004; source 2190w; target 1200w)
+
+Call me Ishmael. Some years ago—never mind how long precisely—having
+little or no money in my purse, and nothing particular to interest me
+on shore, I thought I would sail about a little and see the watery part
+of the world. It is a way I have of driving off the spleen and
+regulating the circulation. Whenever I find myself growing grim about
+the mouth; whenever it is a damp, drizzly November in my soul; whenever
+I find myself involuntarily pausing before coffin warehouses, and
+bringing up the rear of every funeral I meet; and especially whenever
+my hypos get such an upper hand of me, that it requires a strong moral
+principle to prevent me from deliberately stepping into the street, and
+methodically knocking people’s hats off—then, I account it high time to
+get to sea as soon as I can. This is my substitute for pistol and ball.
+With a philosophical flourish Cato throws himself upon his sword; I
+quietly take to the ship. There is nothing surprising in this. If they
+but knew it, almost all men in their degree, some time or other,
+cherish very nearly the same feelings towards the ocean with me.
+
+There now is your insular city of the Manhattoes, belted round by
+wharves as Indian isles by coral reefs—commerce surrounds it with her
+surf. Right and left, the streets take you waterward. Its extreme
+downtown is the battery, where that noble mole is washed by waves, and
+cooled by breezes, which a few hours previous were out of sight of
+land. Look at the crowds of water-gazers there.
+
+Circumambulate the city of a dreamy Sabbath afternoon. Go from Corlears
+Hook to Coenties Slip, and from thence, by Whitehall, northward. What
+do you see?—Posted like silent sentinels all around the town, stand
+thousands upon thousands of mortal men fixed in ocean reveries. Some
+leaning against the spiles; some seated upon the pier-heads; some
+looking over the bulwarks of ships from China; some high aloft in the
+rigging, as if striving to get a still better seaward peep. But these
+are all landsmen; of week days pent up in lath and plaster—tied to
+counters, nailed to benches, clinched to desks. How then is this? Are
+the green fields gone? What do they here?
+
+But look! here come more crowds, pacing straight for the water, and
+seemingly bound for a dive. Strange! Nothing will content them but the
+extremest limit of the land; loitering under the shady lee of yonder
+warehouses will not suffice. No. They must get just as nigh the water
+as they possibly can without falling in. And there they stand—miles of
+them—leagues. Inlanders all, they come from lanes and alleys, streets
+and avenues—north, east, south, and west. Yet here they all unite. Tell
+me, does the magnetic virtue of the needles of the compasses of all
+those ships attract them thither?
+
+Once more. Say you are in the country; in some high land of lakes. Take
+almost any path you please, and ten to one it carries you down in a
+dale, and leaves you there by a pool in the stream. There is magic in
+it. Let the most absent-minded of men be plunged in his deepest
+reveries—stand that man on his legs, set his feet a-going, and he will
+infallibly lead you to water, if water there be in all that region.
+Should you ever be athirst in the great American desert, try this
+experiment, if your caravan happen to be supplied with a metaphysical
+professor. Yes, as every one knows, meditation and water are wedded for
+ever.
+
+But here is an artist. He desires to paint you the dreamiest, shadiest,
+quietest, most enchanting bit of romantic landscape in all the valley
+of the Saco. What is the chief element he employs? There stand his
+trees, each with a hollow trunk, as if a hermit and a crucifix were
+within; and here sleeps his meadow, and there sleep his cattle; and up
+from yonder cottage goes a sleepy smoke. Deep into distant woodlands
+winds a mazy way, reaching to overlapping spurs of mountains bathed in
+their hill-side blue. But though the picture lies thus tranced, and
+though this pine-tree shakes down its sighs like leaves upon this
+shepherd’s head, yet all were vain, unless the shepherd’s eye were
+fixed upon the magic stream before him. Go visit the Prairies in June,
+when for scores on scores of miles you wade knee-deep among
+Tiger-lilies—what is the one charm wanting?—Water—there is not a drop
+of water there! Were Niagara but a cataract of sand, would you travel
+your thousand miles to see it? Why did the poor poet of Tennessee, upon
+suddenly receiving two handfuls of silver, deliberate whether to buy
+him a coat, which he sadly needed, or invest his money in a pedestrian
+trip to Rockaway Beach? Why is almost every robust healthy boy with a
+robust healthy soul in him, at some time or other crazy to go to sea?
+Why upon your first voyage as a passenger, did you yourself feel such a
+mystical vibration, when first told that you and your ship were now out
+of sight of land? Why did the old Persians hold the sea holy? Why did
+the Greeks give it a separate deity, and own brother of Jove? Surely
+all this is not without meaning. And still deeper the meaning of that
+story of Narcissus, who because he could not grasp the tormenting, mild
+image he saw in the fountain, plunged into it and was drowned. But that
+same image, we ourselves see in all rivers and oceans. It is the image
+of the ungraspable phantom of life; and this is the key to it all.
+
+Now, when I say that I am in the habit of going to sea whenever I begin
+to grow hazy about the eyes, and begin to be over conscious of my
+lungs, I do not mean to have it inferred that I ever go to sea as a
+passenger. For to go as a passenger you must needs have a purse, and a
+purse is but a rag unless you have something in it. Besides, passengers
+get sea-sick—grow quarrelsome—don’t sleep of nights—do not enjoy
+themselves much, as a general thing;—no, I never go as a passenger;
+nor, though I am something of a salt, do I ever go to sea as a
+Commodore, or a Captain, or a Cook. I abandon the glory and distinction
+of such offices to those who like them. For my part, I abominate all
+honorable respectable toils, trials, and tribulations of every kind
+whatsoever. It is quite as much as I can do to take care of myself,
+without taking care of ships, barques, brigs, schooners, and what not.
+And as for going as cook,—though I confess there is considerable glory
+in that, a cook being a sort of officer on ship-board—yet, somehow, I
+never fancied broiling fowls;—though once broiled, judiciously
+buttered, and judgmatically salted and peppered, there is no one who
+will speak more respectfully, not to say reverentially, of a broiled
+fowl than I will. It is out of the idolatrous dotings of the old
+Egyptians upon broiled ibis and roasted river horse, that you see the
+mummies of those creatures in their huge bake-houses the pyramids.
+
+No, when I go to sea, I go as a simple sailor, right before the mast,
+plumb down into the forecastle, aloft there to the royal mast-head.
+True, they rather order me about some, and make me jump from spar to
+spar, like a grasshopper in a May meadow. And at first, this sort of
+thing is unpleasant enough. It touches one’s sense of honor,
+particularly if you come of an old established family in the land, the
+Van Rensselaers, or Randolphs, or Hardicanutes. And more than all, if
+just previous to putting your hand into the tar-pot, you have been
+lording it as a country schoolmaster, making the tallest boys stand in
+awe of you. The transition is a keen one, I assure you, from a
+schoolmaster to a sailor, and requires a strong decoction of Seneca and
+the Stoics to enable you to grin and bear it. But even this wears off
+in time.
+
+What of it, if some old hunks of a sea-captain orders me to get a broom
+and sweep down the decks? What does that indignity amount to, weighed,
+I mean, in the scales of the New Testament? Do you think the archangel
+Gabriel thinks anything the less of me, because I promptly and
+respectfully obey that old hunks in that particular instance? Who ain’t
+a slave? Tell me that. Well, then, however the old sea-captains may
+order me about—however they may thump and punch me about, I have the
+satisfaction of knowing that it is all right; that everybody else is
+one way or other served in much the same way—either in a physical or
+metaphysical point of view, that is; and so the universal thump is
+passed round, and all hands should rub each other’s shoulder-blades,
+and be content.
+
+Again, I always go to sea as a sailor, because they make a point of
+paying me for my trouble, whereas they never pay passengers a single
+penny that I ever heard of. On the contrary, passengers themselves must
+pay. And there is all the difference in the world between paying and
+being paid. The act of paying is perhaps the most uncomfortable
+infliction that the two orchard thieves entailed upon us. But _being
+paid_,—what will compare with it? The urbane activity with which a man
+receives money is really marvellous, considering that we so earnestly
+believe money to be the root of all earthly ills, and that on no
+account can a monied man enter heaven. Ah! how cheerfully we consign
+ourselves to perdition!
+
+Finally, I always go to sea as a sailor, because of the wholesome
+exercise and pure air of the fore-castle deck. For as in this world,
+head winds are far more prevalent than winds from astern (that is, if
+you never violate the Pythagorean maxim), so for the most part the
+Commodore on the quarter-deck gets his atmosphere at second hand from
+the sailors on the forecastle. He thinks he breathes it first; but not
+so. In much the same way do the commonalty lead their leaders in many
+other things, at the same time that the leaders little suspect it. But
+wherefore it was that after having repeatedly smelt the sea as a
+merchant sailor, I should now take it into my head to go on a whaling
+voyage; this the invisible police officer of the Fates, who has the
+constant surveillance of me, and secretly dogs me, and influences me in
+some unaccountable way—he can better answer than any one else. And,
+doubtless, my going on this whaling voyage, formed part of the grand
+programme of Providence that was drawn up a long time ago. It came in
+as a sort of brief interlude and solo between more extensive
+performances. I take it that this part of the bill must have run
+something like this:
+
+“_Grand Contested Election for the Presidency of the United States._
+“WHALING VOYAGE BY ONE ISHMAEL. “BLOODY BATTLE IN AFFGHANISTAN.”
+
+Though I cannot tell why it was exactly that those stage managers, the
+Fates, put me down for this shabby part of a whaling voyage, when
+others were set down for magnificent parts in high tragedies, and short
+and easy parts in genteel comedies, and jolly parts in farces—though I
+cannot tell why this was exactly; yet, now that I recall all the
+circumstances, I think I can see a little into the springs and motives
+which being cunningly presented to me under various disguises, induced
+me to set about performing the part I did, besides cajoling me into the
+delusion that it was a choice resulting from my own unbiased freewill
+and discriminating judgment.
+
+Chief among these motives was the overwhelming idea of the great whale
+himself. Such a portentous and mysterious monster roused all my
+curiosity. Then the wild and distant seas where he rolled his island
+bulk; the undeliverable, nameless perils of the whale; these, with all
+the attending marvels of a thousand Patagonian sights and sounds,
+helped to sway me to my wish. With other men, perhaps, such things
+would not have been inducements; but as for me, I am tormented with an
+everlasting itch for things remote. I love to sail forbidden seas, and
+land on barbarous coasts. Not ignoring what is good, I am quick to
+perceive a horror, and could still be social with it—would they let
+me—since it is but well to be on friendly terms with all the inmates of
+the place one lodges in.
+
+By reason of these things, then, the whaling voyage was welcome; the
+great flood-gates of the wonder-world swung open, and in the wild
+conceits that swayed me to my purpose, two and two there floated into
+my inmost soul, endless processions of the whale, and, mid most of them
+all, one grand hooded phantom, like a snow hill in the air.
+
+
+---
+
+## Sub-chapter 2 — The Carpet-Bag.
+(id 005; source 1416w; target 800w)
+
+I stuffed a shirt or two into my old carpet-bag, tucked it under my
+arm, and started for Cape Horn and the Pacific. Quitting the good city
+of old Manhatto, I duly arrived in New Bedford. It was a Saturday night
+in December. Much was I disappointed upon learning that the little
+packet for Nantucket had already sailed, and that no way of reaching
+that place would offer, till the following Monday.
+
+As most young candidates for the pains and penalties of whaling stop at
+this same New Bedford, thence to embark on their voyage, it may as well
+be related that I, for one, had no idea of so doing. For my mind was
+made up to sail in no other than a Nantucket craft, because there was a
+fine, boisterous something about everything connected with that famous
+old island, which amazingly pleased me. Besides though New Bedford has
+of late been gradually monopolising the business of whaling, and though
+in this matter poor old Nantucket is now much behind her, yet Nantucket
+was her great original—the Tyre of this Carthage;—the place where the
+first dead American whale was stranded. Where else but from Nantucket
+did those aboriginal whalemen, the Red-Men, first sally out in canoes
+to give chase to the Leviathan? And where but from Nantucket, too, did
+that first adventurous little sloop put forth, partly laden with
+imported cobblestones—so goes the story—to throw at the whales, in
+order to discover when they were nigh enough to risk a harpoon from the
+bowsprit?
+
+Now having a night, a day, and still another night following before me
+in New Bedford, ere I could embark for my destined port, it became a
+matter of concernment where I was to eat and sleep meanwhile. It was a
+very dubious-looking, nay, a very dark and dismal night, bitingly cold
+and cheerless. I knew no one in the place. With anxious grapnels I had
+sounded my pocket, and only brought up a few pieces of silver,—So,
+wherever you go, Ishmael, said I to myself, as I stood in the middle of
+a dreary street shouldering my bag, and comparing the gloom towards the
+north with the darkness towards the south—wherever in your wisdom you
+may conclude to lodge for the night, my dear Ishmael, be sure to
+inquire the price, and don’t be too particular.
+
+With halting steps I paced the streets, and passed the sign of “The
+Crossed Harpoons”—but it looked too expensive and jolly there. Further
+on, from the bright red windows of the “Sword-Fish Inn,” there came
+such fervent rays, that it seemed to have melted the packed snow and
+ice from before the house, for everywhere else the congealed frost lay
+ten inches thick in a hard, asphaltic pavement,—rather weary for me,
+when I struck my foot against the flinty projections, because from
+hard, remorseless service the soles of my boots were in a most
+miserable plight. Too expensive and jolly, again thought I, pausing one
+moment to watch the broad glare in the street, and hear the sounds of
+the tinkling glasses within. But go on, Ishmael, said I at last; don’t
+you hear? get away from before the door; your patched boots are
+stopping the way. So on I went. I now by instinct followed the streets
+that took me waterward, for there, doubtless, were the cheapest, if not
+the cheeriest inns.
+
+Such dreary streets! blocks of blackness, not houses, on either hand,
+and here and there a candle, like a candle moving about in a tomb. At
+this hour of the night, of the last day of the week, that quarter of
+the town proved all but deserted. But presently I came to a smoky light
+proceeding from a low, wide building, the door of which stood
+invitingly open. It had a careless look, as if it were meant for the
+uses of the public; so, entering, the first thing I did was to stumble
+over an ash-box in the porch. Ha! thought I, ha, as the flying
+particles almost choked me, are these ashes from that destroyed city,
+Gomorrah? But “The Crossed Harpoons,” and “The Sword-Fish?”—this, then
+must needs be the sign of “The Trap.” However, I picked myself up and
+hearing a loud voice within, pushed on and opened a second, interior
+door.
+
+It seemed the great Black Parliament sitting in Tophet. A hundred black
+faces turned round in their rows to peer; and beyond, a black Angel of
+Doom was beating a book in a pulpit. It was a negro church; and the
+preacher’s text was about the blackness of darkness, and the weeping
+and wailing and teeth-gnashing there. Ha, Ishmael, muttered I, backing
+out, Wretched entertainment at the sign of ‘The Trap!’
+
+Moving on, I at last came to a dim sort of light not far from the
+docks, and heard a forlorn creaking in the air; and looking up, saw a
+swinging sign over the door with a white painting upon it, faintly
+representing a tall straight jet of misty spray, and these words
+underneath—“The Spouter Inn:—Peter Coffin.”
+
+Coffin?—Spouter?—Rather ominous in that particular connexion, thought
+I. But it is a common name in Nantucket, they say, and I suppose this
+Peter here is an emigrant from there. As the light looked so dim, and
+the place, for the time, looked quiet enough, and the dilapidated
+little wooden house itself looked as if it might have been carted here
+from the ruins of some burnt district, and as the swinging sign had a
+poverty-stricken sort of creak to it, I thought that here was the very
+spot for cheap lodgings, and the best of pea coffee.
+
+It was a queer sort of place—a gable-ended old house, one side palsied
+as it were, and leaning over sadly. It stood on a sharp bleak corner,
+where that tempestuous wind Euroclydon kept up a worse howling than
+ever it did about poor Paul’s tossed craft. Euroclydon, nevertheless,
+is a mighty pleasant zephyr to any one in-doors, with his feet on the
+hob quietly toasting for bed. “In judging of that tempestuous wind
+called Euroclydon,” says an old writer—of whose works I possess the
+only copy extant—“it maketh a marvellous difference, whether thou
+lookest out at it from a glass window where the frost is all on the
+outside, or whether thou observest it from that sashless window, where
+the frost is on both sides, and of which the wight Death is the only
+glazier.” True enough, thought I, as this passage occurred to my
+mind—old black-letter, thou reasonest well. Yes, these eyes are
+windows, and this body of mine is the house. What a pity they didn’t
+stop up the chinks and the crannies though, and thrust in a little lint
+here and there. But it’s too late to make any improvements now. The
+universe is finished; the copestone is on, and the chips were carted
+off a million years ago. Poor Lazarus there, chattering his teeth
+against the curbstone for his pillow, and shaking off his tatters with
+his shiverings, he might plug up both ears with rags, and put a
+corn-cob into his mouth, and yet that would not keep out the
+tempestuous Euroclydon. Euroclydon! says old Dives, in his red silken
+wrapper—(he had a redder one afterwards) pooh, pooh! What a fine frosty
+night; how Orion glitters; what northern lights! Let them talk of their
+oriental summer climes of everlasting conservatories; give me the
+privilege of making my own summer with my own coals.
+
+But what thinks Lazarus? Can he warm his blue hands by holding them up
+to the grand northern lights? Would not Lazarus rather be in Sumatra
+than here? Would he not far rather lay him down lengthwise along the
+line of the equator; yea, ye gods! go down to the fiery pit itself, in
+order to keep out this frost?
+
+Now, that Lazarus should lie stranded there on the curbstone before the
+door of Dives, this is more wonderful than that an iceberg should be
+moored to one of the Moluccas. Yet Dives himself, he too lives like a
+Czar in an ice palace made of frozen sighs, and being a president of a
+temperance society, he only drinks the tepid tears of orphans.
+
+But no more of this blubbering now, we are going a-whaling, and there
+is plenty of that yet to come. Let us scrape the ice from our frosted
+feet, and see what sort of a place this “Spouter” may be.
+
+
+# Reviewer note sidecar
+
+At the end of each drafted chapter, append exactly one HTML comment in this
+format:
+
+<!-- FORAGE_CHAPTER_NOTES
+{
+  "summary": "One sentence summarizing the chapter-level compression strategy.",
+  "acceptable_changes": [
+    "Why a major compression, omission, merge, or rewrite is acceptable under the spec."
+  ],
+  "risks": [
+    "A continuity, reference, voice, tone, or scene-logic risk the reviewer should inspect."
+  ],
+  "review_focus": [
+    "A concrete place or kind of change that deserves human attention."
+  ]
+}
+-->
+
+Keep the note concise and reviewer-facing. Do not include chain-of-thought or
+private reasoning; summarize the editorial rationale and risks. For merged
+chapter output, append a separate `FORAGE_CHAPTER_NOTES` comment at the end of
+each chapter-delimited sub-section, before the next `## Chapter N` heading.
+
+# Task
+
+Produce the faithful abridgment per the spec above. Emit 2 chapter-delimited sub-sections with `## Chapter N` headings so the output can be split. Output only the abridged prose plus the required `FORAGE_CHAPTER_NOTES` HTML comment — no preamble, no other commentary, no other metadata.

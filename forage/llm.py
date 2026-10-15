@@ -1,7 +1,7 @@
 """Provider-agnostic LLM client.
 
 Model strings are of the form "<provider>:<model-id>", e.g.
-"anthropic:claude-opus-4-7" or "openai:gpt-5". Adapters live in this module;
+"anthropic:claude-opus-5-5" or "openai:gpt-6-astra". Adapters live in this module;
 add a new provider by adding one more dispatch branch in `complete`.
 
 Callers pass a work_dir so every call gets appended to that book's
@@ -43,13 +43,32 @@ class LLMResponse:
     cache_read_tokens: Optional[int] = None
     cache_write_tokens: Optional[int] = None
 
+    @property
+    def is_truncated(self) -> bool:
+        """Provider-neutral token-limit detection, including old replay entries."""
+        return self.stop_reason in {"max_tokens", "length"}
+
+    @property
+    def is_complete(self) -> bool:
+        """Only a nonempty, normally terminated response is complete."""
+        return bool(self.text.strip()) and self.stop_reason in {
+            "end_turn", "stop", "stop_sequence",
+        }
+
+
+def require_complete_response(response: LLMResponse, stage: str) -> None:
+    if not response.is_complete:
+        raise ValueError(f"incomplete {stage} response: {response.stop_reason}")
+
 
 class LLMStreamTimeoutError(TimeoutError):
     """Raised when a streaming LLM call stays alive without yielding text."""
 
 
-ROOT = Path(__file__).resolve().parent.parent
-REPLAY_DIR = ROOT / "work" / ".replay_cache"
+from .resources import workspace_root, workspace_dirs
+
+ROOT = workspace_root()
+REPLAY_DIR = workspace_dirs()[1] / ".replay_cache"
 DEFAULT_ANTHROPIC_READ_TIMEOUT_S = 420.0
 
 
@@ -70,11 +89,33 @@ def _env_float(name: str, default: float) -> float:
     return value
 
 
+from contextlib import contextmanager
+from contextvars import ContextVar
+
+_RUN_MODELS = ContextVar("forage_run_models", default=None)
+_RUN_REPLAY = ContextVar("forage_run_replay", default=None)
+
+
+@contextmanager
+def production_context(models, replay_dir):
+    token = _RUN_MODELS.set(models)
+    cache_token = _RUN_REPLAY.set(replay_dir)
+    try:
+        yield
+    finally:
+        _RUN_REPLAY.reset(cache_token)
+        _RUN_MODELS.reset(token)
+
+
 def resolve_model_for_stage(model: str, stage: str) -> tuple[str, Optional[str]]:
     """Apply the same per-stage/global model override rules used by
     `complete`. Returns `(resolved_model, override_source)`, where
     `override_source` is None when no override was applied."""
     stage_base = stage.split(":")[0].upper().replace("-", "_")
+    resolved = _RUN_MODELS.get()
+    specific = "CRITIC_BOOK" if stage.startswith("critic:book:") else stage_base
+    if resolved is not None and specific in resolved:
+        return resolved[specific], "production configuration"
     stage_override = os.environ.get(f"FORAGE_{stage_base}_MODEL")
     if stage_override:
         return stage_override, f"FORAGE_{stage_base}_MODEL"
@@ -103,19 +144,24 @@ def replay_key_for_request(model: str, system: Optional[str],
     return h.hexdigest()[:32]
 
 
+def replay_cache_root() -> Path:
+    configured = any(os.environ.get(k) for k in ("FORAGE_WORKSPACE", "FORAGE_WORK_DIR"))
+    return _RUN_REPLAY.get() or (workspace_dirs()[1] / ".replay_cache" if configured else REPLAY_DIR)
+
+
 def replay_cache_path(key: str) -> Path:
-    return REPLAY_DIR / f"{key}.json"
+    return replay_cache_root() / f"{key}.json"
 
 
 def _replay_load(key: str) -> Optional[dict]:
-    p = REPLAY_DIR / f"{key}.json"
+    p = replay_cache_path(key)
     if p.exists():
         return json.loads(p.read_text())
     return None
 
 
 def _replay_save(key: str, model: str, resp: "LLMResponse", stage: str) -> None:
-    REPLAY_DIR.mkdir(parents=True, exist_ok=True)
+    replay_cache_path(key).parent.mkdir(parents=True, exist_ok=True)
     data = {
         "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "key": key,
@@ -131,7 +177,7 @@ def _replay_save(key: str, model: str, resp: "LLMResponse", stage: str) -> None:
             "stop_reason": resp.stop_reason,
         },
     }
-    (REPLAY_DIR / f"{key}.json").write_text(json.dumps(data, indent=2))
+    replay_cache_path(key).write_text(json.dumps(data, indent=2))
 
 
 def complete(
@@ -158,11 +204,12 @@ def complete(
         Useful when there's no natural split.
     The two flags are independent; if both are set, `cached_prompt` wins.
 
-    `thinking`: on Opus 4.7+ models, enables extended thinking. Pass one of
-    "low" | "medium" | "high" | "max" to set the effort level. Thinking
-    tokens count toward output billing but substantially improve budget-
-    adherence and instruction-following on quality-sensitive tasks. None
-    (default) disables thinking.
+    `thinking`: on supported Anthropic models, requests adaptive thinking
+    and sets the effort level ("low" | "medium" | "high" | "xhigh" | "max").
+    Thinking tokens count toward output billing and max_tokens. None leaves
+    the provider default unchanged; Opus 5.5 always thinks and Sonnet 5.5
+    enables adaptive thinking by default. The OpenAI adapter leaves reasoning
+    effort at its provider default.
     """
     # Model overrides:
     #   FORAGE_{STAGE}_MODEL (e.g. FORAGE_CRITIC_MODEL) — per-stage, wins.

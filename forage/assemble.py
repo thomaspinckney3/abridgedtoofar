@@ -107,6 +107,11 @@ def assemble_book(book: Book, plan: dict) -> AssemblyResult:
             # Drafter failure or truncation — count as missing, not a valid draft.
             status = checks_status
             missing += 1
+        elif s.get("group_id") and checks_status not in ("drafted", "cut"):
+            # Group splits are valid only with completion records from their
+            # shared response. Legacy or damaged metadata cannot certify them.
+            status = "not_drafted"
+            missing += 1
         elif diegetic == "extradiegetic" and target == 0:
             # Extradiegetic target-zero segments are intentionally cut even if
             # the draft loop never materialized an empty placeholder file.
@@ -118,7 +123,10 @@ def assemble_book(book: Book, plan: dict) -> AssemblyResult:
             missing += 1
         else:
             text = draft_path.read_text()
-            if text.strip() == "":
+            if text.strip() == "" and checks_status == "drafted":
+                status = "not_drafted"
+                missing += 1
+            elif text.strip() == "":
                 # Empty draft == extradiegetic cut by drafter.
                 status = "cut"
                 draft_words = 0

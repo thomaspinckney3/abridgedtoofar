@@ -697,7 +697,7 @@ def audiobook(
     ),
     combine: bool = typer.Option(
         True, "--combine/--no-combine",
-        help="Use ffmpeg to concatenate generated MP3 chunks when available.",
+        help="Require a combined published MP3 using ffmpeg; --no-combine produces separate chunks.",
     ),
     overwrite: bool = typer.Option(
         False, "--overwrite",
@@ -723,8 +723,8 @@ def audiobook(
     """Generate an ElevenLabs audiobook from an assembled abridgment.
 
     Outputs chunk text, per-chunk audio, and audiobook_manifest.json under
-    work/<book>/audiobook/. For MP3 output, --combine also publishes
-    books/<book>/audiobook.mp3 when ffmpeg is available.
+    work/<book>/audiobook/. --combine requires ffmpeg and publishes
+    books/<book>/audiobook.mp3; incomplete combined output exits nonzero.
     """
     book = load_book(book_id)
     try:
@@ -801,7 +801,7 @@ def audiobook(
         raise typer.Exit(code=1)
 
     _render_audiobook(result, dry_run=dry_run)
-    if result.error_count:
+    if result.error_count or result.combine_error:
         raise typer.Exit(code=1)
 
 
@@ -870,6 +870,8 @@ def _render_audiobook(r, *, dry_run: bool) -> None:
         summary.add_row("combined_audio", str(r.combined_audio_path))
     if r.published_audio_path:
         summary.add_row("published_audio", str(r.published_audio_path))
+    if r.combine_error:
+        summary.add_row("combine_error", r.combine_error)
     console.print(Panel(summary, title=title))
 
 
@@ -1722,6 +1724,196 @@ def _render_validation(r) -> None:
             delta = (dv - sv) / sv * 100 if sv else 0.0
             t.add_row(name, str(sv), str(dv), f"{delta:+.0f}%")
         console.print(t)
+
+
+@app.command("run")
+def production_run(
+    book_id: str,
+    execute: bool = typer.Option(False, "--execute", help="Execute planned generation; may spend provider credits. Default is a free preview."),
+    outputs: str = typer.Option("text", help="Comma-separated text,audio,graphic. Text is always required."),
+    workspace: Path | None = typer.Option(None, help="Workspace containing books/ and writable work/."),
+    adopt_existing: bool = typer.Option(False, help="Explicitly adopt validated legacy drafts under current source/settings; provenance remains user-adopted."),
+    model: str | None = typer.Option(None, help="Text model provider:id; environment model routing still takes precedence."),
+    stage_model: list[str] | None = typer.Option(None, help="Repeat STAGE=provider:model; e.g. draft=anthropic:claude-opus-5-5."),
+    iterate: bool = typer.Option(False, help="Run signature critic and bounded regeneration."),
+    max_retries: int = typer.Option(1, min=0, help="Maximum iteration/repair retries."),
+    coherence: bool = typer.Option(False, help="Run coherence inspection, also used by the default repair pass."),
+    coherence_fix: bool = typer.Option(True, "--coherence-fix/--no-coherence-fix", help="Fresh coherence inspection and bounded repair before assembly."),
+    coherence_fix_pair: list[str] | None = typer.Option(None, help="Limit repairs to selected adjacent pair IDs, e.g. 001-002."),
+    repair_epoch: str | None = typer.Option(None, help="Change this token to explicitly rerun quality repair on the current accepted draft."),
+    checkpoint_before_media: bool = typer.Option(False, help="Optionally stop before paid media until this exact accepted text revision is acknowledged."),
+    continue_revision: str | None = typer.Option(None, help="Acknowledge the SHA-256 text revision printed by --checkpoint-before-media."),
+    audio_voice_id: str | None = typer.Option(None, help="ElevenLabs voice ID; defaults to metadata audiobook.voice_id."),
+    audio_model: str | None = typer.Option(None, help="ElevenLabs model ID."),
+    audio_format: str | None = typer.Option(None, help="ElevenLabs output format, e.g. mp3_44100_128."),
+    audio_max_chars: int | None = typer.Option(None, min=1000, help="Narration request chunk limit."),
+    audio_combine: bool = typer.Option(True, "--audio-combine/--audio-chunks-only", help="Combined output requires successful ffmpeg; chunks-only is an explicit complete mode."),
+    graphic_provider: str = typer.Option("openai", help="Image provider (currently openai)."),
+    graphic_model: str = typer.Option("gpt-image-1", help="GPT Image model ID."),
+    graphic_storyboard_model: str | None = typer.Option(None, help="Storyboard text model provider:id."),
+    graphic_style: str | None = typer.Option(None, help="Art style instructions."),
+    graphic_size: str = typer.Option("1024x1024", help="Image dimensions supported by GPT Image."),
+    graphic_quality: str = typer.Option("auto", help="auto, low, medium or high."),
+    graphic_chapters: str | None = typer.Option(None, help="Comma-separated required chapter IDs; default is the full abridgment."),
+    graphic_words_per_frame: int = typer.Option(180, min=20, max=1000),
+    graphic_font_size: int = typer.Option(28, min=12, max=80),
+    graphic_caption_height: float = typer.Option(0.28, min=0.15, max=0.6),
+) -> None:
+    """Plan/resume production and prepare an immutable LOCAL review revision.
+
+    Review is asynchronous on a separate website. This command neither uploads
+    to that website nor promotes a public release. It preserves accepted prose
+    edits and refreshes their descendants. Use release for explicit promotion.
+    """
+    options = {k: v for k, v in locals().copy().items() if v is not None}
+    from .production import plan_production, run_production
+    for key in ["book_id", "execute", "workspace", "stage_model", "coherence_fix_pair"]:
+        options.pop(key, None)
+    try:
+        models = {}
+        for value in stage_model or []:
+            stage, sep, choice = value.partition("=")
+            if not sep or not stage or not choice:
+                raise ValueError("--stage-model requires STAGE=provider:model")
+            models[stage] = choice
+        options["models"] = models
+        options["coherence_fix_pairs"] = coherence_fix_pair or []
+        book = load_book(book_id, workspace=workspace, create=False)
+        result = (run_production if execute else plan_production)(book, options)
+    except (ValueError, OSError, RuntimeError) as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    table = Table("Stage", "Status", "Reason")
+    for name, row in result["stages"].items():
+        table.add_row(name, row["status"], row["reason"])
+    console.print(table)
+    critic = result["stages"].get("book_critic", {}).get("metadata", {}).get("verdict")
+    if critic:
+        console.print(f"Book critic: {critic} (editorial judgment; technical completion is separate)")
+    if result.get("review_revision"):
+        console.print(f"Local review revision: {result['review_revision']}")
+    if execute and not result["success"]:
+        raise typer.Exit(1)
+
+
+@app.command("release")
+def production_release(
+    book_id: str,
+    revision: str = typer.Argument(..., help="Complete immutable local revision SHA-256 to promote."),
+    workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
+) -> None:
+    """Explicitly promote a verified local revision; preserve independent review history."""
+    from .publication import promote_release
+    try:
+        result = promote_release(load_book(book_id, workspace=workspace, create=False), revision)
+    except (ValueError, OSError, RuntimeError) as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    console.print(f"Local release revision: {result['revision']}")
+
+
+def _review_transport(book, site, local_root, token_env, feedback_path=None):
+    from .review_transport import ReviewTransport
+    configured = book.metadata.get("review", {})
+    if not isinstance(configured, dict):
+        raise ValueError("metadata.review must be an object")
+    if site is None and local_root is None:
+        site = os.environ.get("FORAGE_REVIEW_URL") or configured.get("url")
+        local_root = os.environ.get("FORAGE_REVIEW_LOCAL_ROOT") or configured.get("local_root")
+    return ReviewTransport(base_url=site, local_root=local_root,
+                           token=os.environ.get(token_env), feedback_path=feedback_path)
+
+
+def _publish_revision(book_id, revision, channel, workspace, site, local_root, token_env):
+    try:
+        book = load_book(book_id, workspace=workspace, create=False)
+        result = _review_transport(book, site, local_root, token_env).publish(
+            book, revision, channel=channel)
+    except (ValueError, OSError, RuntimeError) as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    console.print(f"Hosted {channel} revision confirmed: {result.get('revision', revision)}")
+
+
+@app.command("publish-review")
+def publish_review(
+    book_id: str,
+    revision: str = typer.Argument(..., help="Verified local revision SHA-256 to upload."),
+    workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
+    site: str | None = typer.Option(None, help="Review site URL; defaults to FORAGE_REVIEW_URL or metadata.review.url."),
+    local_root: Path | None = typer.Option(None, help="Local hosted root instead of HTTP; also FORAGE_REVIEW_LOCAL_ROOT."),
+    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN", help="Environment variable holding the site admin token. Never printed."),
+) -> None:
+    """Upload a verified revision and advance hosted review; no generation or release."""
+    _publish_revision(book_id, revision, "review", workspace, site, local_root, token_env)
+
+
+@app.command("publish-release")
+def publish_release(
+    book_id: str,
+    revision: str = typer.Argument(..., help="Verified local revision SHA-256 to release publicly."),
+    workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
+    site: str | None = typer.Option(None, help="Review site URL; defaults to FORAGE_REVIEW_URL or metadata.review.url."),
+    local_root: Path | None = typer.Option(None, help="Local hosted root instead of HTTP; also FORAGE_REVIEW_LOCAL_ROOT."),
+    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN", help="Environment variable holding the site admin token."),
+) -> None:
+    """Explicitly upload/promote a public hosted release; retain review and history."""
+    _publish_revision(book_id, revision, "release", workspace, site, local_root, token_env)
+
+
+def _sync_review(book_id, workspace, site, local_root, token_env, feedback,
+                 apply, republish, outputs=None, production_options=None, segments=None):
+    from .review_sync import sync_feedback
+    try:
+        options = read_json(production_options) if production_options else {}
+        if not isinstance(options, dict):
+            raise ValueError("production options must be a JSON object")
+        if outputs is not None:
+            options["outputs"] = outputs
+        book = load_book(book_id, workspace=workspace, create=False)
+        transport = _review_transport(book, site, local_root, token_env, feedback)
+        result = sync_feedback(book, transport, apply=apply, republish=republish,
+                               production_options=options or None, segment_ids=segments or None)
+    except (ValueError, OSError, RuntimeError) as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    console.print_json(json.dumps(result, ensure_ascii=False, default=str))
+    if result.get("success") is False:
+        raise typer.Exit(1)
+
+
+@app.command("review-pull")
+def review_pull(
+    book_id: str,
+    workspace: Path | None = typer.Option(None),
+    site: str | None = typer.Option(None, help="Review site URL; also FORAGE_REVIEW_URL."),
+    local_root: Path | None = typer.Option(None, help="Local hosting root; also FORAGE_REVIEW_LOCAL_ROOT."),
+    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN"),
+    feedback: Path | None = typer.Option(None, help="Full feedback JSON export for local transport."),
+) -> None:
+    """Fetch/reconcile feedback and report eligible prose edits. No model calls."""
+    _sync_review(book_id, workspace, site, local_root, token_env, feedback, False, False)
+
+
+@app.command("review-sync")
+def review_sync(
+    book_id: str,
+    apply: bool = typer.Option(False, "--apply", help="Apply eligible prose feedback and regenerate affected outputs; paid provider calls."),
+    republish: bool = typer.Option(False, "--republish", help="Publish the resulting complete review revision; requires --apply."),
+    workspace: Path | None = typer.Option(None),
+    site: str | None = typer.Option(None, help="Review site URL; also FORAGE_REVIEW_URL."),
+    local_root: Path | None = typer.Option(None, help="Local hosting root; also FORAGE_REVIEW_LOCAL_ROOT."),
+    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN"),
+    feedback: Path | None = typer.Option(None, help="Full feedback JSON export for local transport."),
+    outputs: str | None = typer.Option(None, help="Override selected outputs: text,audio,graphic; default retains prior production selection."),
+    production_options: Path | None = typer.Option(None, help="JSON object of production.run options, e.g. voice/model/graphic settings."),
+    segment: list[str] | None = typer.Option(None, "--segment", "-s", help="Limit feedback application to chapter IDs; repeatable, also selects targets for book notes."),
+) -> None:
+    """Pull, optionally apply and republish review feedback. Public release is explicit."""
+    if republish and not apply:
+        raise typer.BadParameter("--republish requires --apply")
+    _sync_review(book_id, workspace, site, local_root, token_env, feedback,
+                 apply, republish, outputs, production_options, segment)
 
 
 if __name__ == "__main__":

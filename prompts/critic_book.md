@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-sonnet-4-6
+model: anthropic:claude-sonnet-5-5
 max_tokens: 8000
 ---
 You verify that an abridgment of a book preserves each plot claim from the book's authoritative synopsis.

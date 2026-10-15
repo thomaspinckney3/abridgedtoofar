@@ -10,20 +10,25 @@ from __future__ import annotations
 
 import hashlib
 import difflib
+import copy
 import json
 import re
 import shutil
+from contextlib import nullcontext
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
 from .artifacts import Book, read_json, segment_source_path, write_json
 from .json_parse import parse_llm_json
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
+from .production_state import book_lock
+from .review_recovery import (assert_review_applications_resolved,
+                              commit_review_application, recover_review_applications)
 
 
-_DEFAULT_MODEL = "anthropic:claude-sonnet-4-6"
+_DEFAULT_MODEL = "anthropic:claude-sonnet-5-5"
 _LEDGER_VERSION = 1
 _PROMPT_NAME = "review_apply_segment"
 _SAFE_TERMINALS = set(".!?)]}\"'")
@@ -86,9 +91,13 @@ def pending_review_feedback(
     segment list, candidates are the chapters that already have chapter or
     paragraph feedback in the overlay.
     """
+    assert_review_applications_resolved(book)
     edits_path = edits_path or default_edits_path(book)
     ledger_path = ledger_path or default_ledger_path(book)
     overlay = overlay if overlay is not None else read_json(edits_path)
+    if overlay.get("imported_feedback"):
+        from .review_sync import filter_imported_overlay
+        overlay = filter_imported_overlay(book, overlay)
     ledger = ledger if ledger is not None else load_review_ledger(ledger_path)
 
     candidates = _candidate_segment_ids(book, overlay, segment_ids)
@@ -147,6 +156,32 @@ def apply_review_feedback(
     max_segments: int | None = None,
     plan_only: bool = False,
     dry_run: bool = False,
+    lock_held: bool = False,
+) -> dict[str, Any]:
+    """Serialize repairs and recover an interrupted durable decision first."""
+    if plan_only:
+        assert_review_applications_resolved(book)
+        return _apply_review_feedback(
+            book, segment_ids=segment_ids, edits_path=edits_path,
+            ledger_path=ledger_path, report_path=report_path,
+            include_book_comments=include_book_comments, max_segments=max_segments,
+            plan_only=True, dry_run=dry_run)
+    with nullcontext() if lock_held else book_lock(book):
+        if dry_run:
+            assert_review_applications_resolved(book)
+        else:
+            recover_review_applications(book, lock_held=True)
+        return _apply_review_feedback(
+            book, segment_ids=segment_ids, edits_path=edits_path,
+            ledger_path=ledger_path, report_path=report_path,
+            include_book_comments=include_book_comments, max_segments=max_segments,
+            plan_only=plan_only, dry_run=dry_run)
+
+
+def _apply_review_feedback(
+    book: Book, *, segment_ids=None, edits_path=None, ledger_path=None,
+    report_path=None, include_book_comments=True, max_segments=None,
+    plan_only=False, dry_run=False,
 ) -> dict[str, Any]:
     """Apply pending human feedback.
 
@@ -241,7 +276,9 @@ def _apply_segment_feedback(
         return _segment_error(segment_id, "failed", "missing draft chapter")
 
     source_text = source_path.read_text()
-    draft_text = draft_path.read_text()
+    draft_bytes = draft_path.read_bytes()
+    draft_text = draft_bytes.decode("utf-8")
+    ledger_before = ledger_path.read_bytes() if ledger_path.exists() else None
     if not draft_text.strip():
         return _segment_error(segment_id, "failed", "empty draft chapter")
 
@@ -270,6 +307,7 @@ def _apply_segment_feedback(
     )
 
     try:
+        require_complete_response(response, "review application")
         parsed = _parse_apply_response(response.text)
         _validate_apply_response(parsed, segment_id=segment_id,
                                  expected_keys={f["feedback_key"] for f in feedback})
@@ -287,22 +325,11 @@ def _apply_segment_feedback(
     changed = revised != draft_text.strip()
     before_hash = _text_hash(draft_text.strip() + "\n")
     after_hash = _text_hash(revised + "\n")
-    if changed and not dry_run:
-        snapshot = _snapshot_segment(draft_path, run_id)
-        draft_path.write_text(revised + "\n")
-        _update_checks(
-            book=book,
-            segment_id=segment_id,
-            source_words=len(source_text.split()),
-            draft_words=len(revised.split()),
-            run_id=run_id,
-        )
-    else:
-        snapshot = None
-
+    snapshot = None
     if not dry_run:
+        next_ledger = copy.deepcopy(ledger)
         _record_feedback_use(
-            ledger=ledger,
+            ledger=next_ledger,
             ledger_path=ledger_path,
             book=book,
             segment_id=segment_id,
@@ -316,7 +343,19 @@ def _apply_segment_feedback(
             model=response.model,
             input_tokens=response.input_tokens,
             output_tokens=response.output_tokens,
+            persist=False,
         )
+        checks = (_checks_data(book=book, segment_id=segment_id,
+                               source_words=len(source_text.split()),
+                               draft_words=len(revised.split()), run_id=run_id)
+                  if changed else None)
+        snapshot = commit_review_application(
+            book, segment_id=segment_id, run_id=run_id, draft_before=draft_bytes,
+            draft_after=(revised + "\n").encode("utf-8") if changed else None,
+            checks_after=checks, ledger_path=ledger_path, ledger_before=ledger_before,
+            ledger_after=next_ledger)
+        ledger.clear()
+        ledger.update(next_ledger)
 
     status = "applied" if changed else "no_change"
     return {
@@ -396,7 +435,8 @@ def _normalise_feedback(
         "chapter" if comment.get("draft_para") is None else "paragraph")
     item = {
         "feedback_key": "",
-        "comment_id": str(comment.get("id") or ""),
+        "comment_id": str(comment.get("remote_id") or comment.get("id") or ""),
+        "source_id": comment.get("source_id"),
         "scope": scope,
         "target_segment_id": segment_id,
         "source_segment_id": source_segment_id,
@@ -448,6 +488,11 @@ def feedback_fingerprint(
         "created_at": comment.get("created_at"),
         "updated_at": comment.get("updated_at"),
     }
+    # Preserve original server IDs in decisions/responses, while preventing two
+    # review sites using the same comment ID from sharing an application key.
+    # Legacy local fingerprints deliberately retain their existing byte shape.
+    if comment.get("source_id"):
+        basis["source_id"] = comment["source_id"]
     raw = json.dumps(basis, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
@@ -697,6 +742,7 @@ def _record_feedback_use(
     model: str,
     input_tokens: int | None,
     output_tokens: int | None,
+    persist: bool = True,
 ) -> None:
     now = _now_iso()
     feedback_by_key = {item["feedback_key"]: item for item in feedback}
@@ -722,6 +768,7 @@ def _record_feedback_use(
             "segment_id": segment_id,
             "feedback_key": decision["feedback_key"],
             "comment_id": item["comment_id"],
+            "source_id": item.get("source_id"),
             "scope": item["scope"],
             "source_segment_id": item["source_segment_id"],
             "draft_para": item.get("draft_para"),
@@ -741,7 +788,8 @@ def _record_feedback_use(
         })
     ledger["ledger_version"] = _LEDGER_VERSION
     ledger["last_updated_at"] = now
-    write_json(ledger_path, ledger)
+    if persist:
+        write_json(ledger_path, ledger)
 
 
 def _snapshot_segment(draft_path: Path, run_id: str) -> Path:
@@ -760,6 +808,13 @@ def _update_checks(
     run_id: str,
 ) -> None:
     path = book.work_dir / "segments" / f"{segment_id}.checks.json"
+    write_json(path, _checks_data(book=book, segment_id=segment_id,
+                                source_words=source_words, draft_words=draft_words,
+                                run_id=run_id))
+
+
+def _checks_data(*, book, segment_id, source_words, draft_words, run_id) -> dict:
+    path = book.work_dir / "segments" / f"{segment_id}.checks.json"
     data: dict[str, Any] = read_json(path) if path.exists() else {}
     target = data.get("target_words")
     data["source_words"] = data.get("source_words") or source_words
@@ -770,7 +825,7 @@ def _update_checks(
         "run_id": run_id,
         "updated_at": _now_iso(),
     }
-    write_json(path, data)
+    return data
 
 
 def _segment_error(

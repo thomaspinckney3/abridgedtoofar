@@ -16,7 +16,7 @@ import re
 from collections import Counter
 
 from .artifacts import Book
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 _FENCE_RE = re.compile(r"^```(?:json)?\s*(.*?)\s*```$", re.DOTALL)
@@ -121,14 +121,20 @@ def run_book_critic(book: Book) -> dict:
     )
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+        model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         max_tokens=prompt.config.get("max_tokens", 8000),
         cache=False,
         work_dir=book.work_dir,
         stage=f"critic:book:{book.book_id}",
     )
 
+    require_complete_response(resp, "book critic")
     verdicts = _parse_json_array(resp.text)
+    if (len(verdicts) != len(sentences)
+            or any(not isinstance(v, dict) for v in verdicts)
+            or [v.get("sentence") for v in verdicts] != list(range(1, len(sentences) + 1))
+            or any(v.get("status") not in {"present", "missing", "distorted"} for v in verdicts)):
+        raise ValueError("book critic must return every synopsis sentence once with a valid status")
     counts = Counter(v.get("status", "?") for v in verdicts)
     verdict = ("ship"
                if counts.get("missing", 0) == 0 and counts.get("distorted", 0) == 0

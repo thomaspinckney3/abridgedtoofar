@@ -1,0 +1,1100 @@
+You are the drafter for a faithful book abridgment pipeline. You produce the
+abridged version of one chapter under the spec's constraints. Your output is
+plain prose (Markdown) plus one machine-readable reviewer note in the exact
+HTML comment format requested by the prompt. No preamble and no free-form
+commentary outside that comment; the drafted chapter text must remain ready
+to be spliced into the book after the marker is stripped.
+
+Preserve standard fiction paragraph conventions. Each new speaker's dialogue
+turn goes in its own paragraph (separated by a blank line). Never concatenate
+multiple speakers' lines into one paragraph, even under compression pressure.
+A single speaker's dialogue plus surrounding attribution and action may
+share a paragraph.
+
+Preserve dialogue attribution under compression. If the source identifies a
+speaker with a name, tag, or action beat, do not compress the exchange into
+adjacent quote-only turns that leave the speaker unclear. Keep or add compact,
+source-supported tags/action beats such as "Tommy said" or "Tuppence asked"
+where needed. Do not invent speakers, dialogue, or attribution not supported
+by the source.
+
+# Forage abridgment spec (authoritative guidance)
+
+# Faithful Abridgment — Working Spec
+
+**Status:** draft, iterating. This document is updated as we make decisions.
+**System scope (current):** English-language novels. Other book types (poetry, essays, drama, non-fiction, translated works) are out of scope for this system's preservation rules and would require a separate spec.
+
+---
+
+## Primary success criterion
+
+After reading the abridgment, the reader should be able to understand a literary critique of the full text — follow the critic's claims, see where in the book they apply, and evaluate whether they seem supported. Not to become a critic themselves; to be a capable audience for criticism of the original.
+
+This is the thesis statement of the system. It is stronger than content-faithfulness or voice-faithfulness individually: it requires that the abridgment preserve the textual material any plausible critical reading works with, not just the plot and register. For canonical works this means the critical touchstones are non-negotiable; for less-critiqued works the bar devolves to preserving the kind of material any reading would need (thematic content, formal features, character psychology, narrative framing, historical/contextual markers).
+
+The abridgment must not itself be interpretive. It preserves the textual material criticism engages with and leaves interpretation to the reader.
+
+---
+
+## Input / output
+
+**Input:** A single plain-text file containing the full book. UTF-8 encoding assumed; both Unix and Windows line endings accepted. The system must identify and exclude non-book content (Gutenberg preamble/postamble, licensing boilerplate, transcriber credits) before the pre-pass operates on the text. Misidentifying boilerplate as chapter content contaminates every downstream pass, so the boundary-detection step is critical.
+
+**Output:** A single plain-text file containing the abridged book. No separate metadata files; any metadata the system wants to emit (modernization level applied, confidence notes, validation results) is embedded in the output file as a clearly-demarcated header or footer.
+
+## Scope constraints (v1)
+
+- **Copyright:** Out-of-copyright books only. This removes fair-use constraints on verbatim preservation, which matters because faithful abridgment of a stylistically distinctive author benefits from preserving actual sentences.
+- **Resources:** No hard time or compute budget. Multi-pass, multi-agent, regeneration loops are all in scope. "No constraints" means permission, not mandate — system design should still apply reasonable engineering judgment.
+- **Edition:** The system abridges whatever text it is given. No edition selection, no identifying which edition is "best." If the input is a scholarly edition with editorial apparatus, the system must handle that (treat apparatus as non-book content to exclude, or handle case-by-case per the front/back matter policy).
+
+## Architectural commitments
+
+- **Global plan pre-pass.** The system produces a global plan artifact before any chapter-level work begins. The plan is inspectable and contains: signature inventory (cultural and textual), motif inventory, compression schedule per chapter, modernization level, structural-feature flags, cross-chapter dependencies, and chapter-level word budgets. Every downstream pass references the global plan; chapter-level passes do not operate independently.
+- **Chapter-by-chapter execution under global plan.** Drafting happens per chapter, but within the constraints and references the global plan established. This is the explicit defense against breadth-first drift.
+
+## Operational constraint
+
+The system runs **fully autonomously** on an arbitrary book. No human intervention from input to finished abridgment. The per-book preservation spec — identifying what in this specific book must be preserved — is authored by the LLM in a pre-pass, not by a human curator.
+
+External software (written as part of this system) is available to supplement the LLM. **Sub-agents and multi-LLM passes are in scope** — the system can decompose into specialized roles (signature detector, abridger, critic, etc.) and use generate-critique-regenerate loops. **Reproducibility is preferred but not a hard requirement** — generation stochasticity is acceptable where judgment lives, deterministic tooling preferred where measurement lives.
+
+This creates a division of labor:
+
+- **Tools do measurement.** Deterministic text analysis: sentence statistics, structural parsing, concordance, word counts, motif frequency, comparative analysis against reference corpora.
+- **LLM does judgment.** Identifying which measured features are signature-level; deciding what to preserve/paraphrase/cut; generation of the abridged prose; cultural recall.
+- **Tools do enforcement.** Validation hooks that check output against the per-book spec and reject non-compliant output, forcing regeneration rather than letting bad output ship. The spec is inspectable; compliance is mechanically checkable.
+
+The boundary matters: text-derivable properties (prosodic, structural, motif-frequency) *must* flow through tooling, not LLM inference. LLM-only measurement of things tools can measure deterministically is a reliability regression.
+
+## Validation
+
+Validation operates at three scales with distinct mechanisms and failure modes. Conflating them misses failures that can only be caught at the appropriate scale.
+
+### Scale 1: Pre-drafting (validating the plan)
+
+Before any segment is drafted:
+
+- **Signature set diversity check.** The identified signature inventory covers multiple plausible critical readings, not just one. Defends against reading-privileging failure.
+- **Compression schedule feasibility.** Sum of segment allocations is internally consistent; no segment is allocated impossibly-aggressive compression given the signatures identified within it.
+- **Pre-pass independent replication.** Signature identification is run independently two or more times; agreement is measured. High agreement = high confidence. Disagreement flags uncertain regions, handled conservatively (less aggressive compression there).
+- **Structural classification decision.** The book is confirmed as pipeline-compatible, or the system refuses here (before drafting work is wasted).
+
+### Scale 2: Per-segment (during drafting)
+
+After each segment draft:
+
+Mechanical:
+- Identified signatures assigned to this segment are present in the draft (string match).
+- Word count within tolerance of plan target.
+- Period spellings preserved verbatim (pattern match against pre-pass inventory).
+- Segment title preserved.
+
+LLM-critic:
+- Voice fidelity (source-aware): source and draft style compared; flag flattening, sentimentality injection, explanation insertion, modernization-beyond-configured-level.
+- Semantic fidelity (source-aware): flag hallucination, plot omission, character-motivation loss.
+- Cross-reference integrity: callbacks in this segment have preserved setups; setups in this segment that will be called back later are preserved.
+
+### Scale 3: Post-drafting (end-to-end)
+
+After all segments are drafted:
+
+Mechanical:
+- **Concordance comparison** for every identified motif: occurrences-per-1000-words in source and abridgment; flag significant divergence. Catches motif depletion directly.
+- **Style-distribution comparison**: sentence-length histogram, punctuation density, vocabulary richness for source and abridgment; large deviations flag voice flattening at aggregate level.
+- **Structural coverage**: every source segment has a corresponding output segment.
+
+LLM-critic:
+- Pacing coherence (read across segments, flag lurches in compression or tone).
+- Character arc coherence (each major character develops consistently; voice is stable).
+- Narrative coherence (the book reads as a single artifact, not a concatenation).
+
+**Success Criterion validation (structured test):**
+- Sample real criticism of the source text across multiple interpretive traditions (formal, political, psychological, thematic).
+- For each piece of criticism, use the abridgment as sole context for a critic-LLM tasked with explaining or evaluating the claim. Compare against the same operation using the full source.
+- Convergence indicates the Success Criterion is met for that piece of criticism; divergence flags under-preserved material.
+- Coverage across interpretive traditions catches reading-privileging failures.
+
+### Critic pass design
+
+Resolved design commitments:
+
+**Framing: all diagnostic critics adversarial.** Each critic's task is to find the worst instance of its failure type in the input. Constructive/approval framing produces bland diagnoses that give the re-plan path no traction. A synthesis step over all critic outputs handles overall assessment at the emission gate; it aggregates, does not re-evaluate.
+
+**Vantage: source-aware for most, abridgment-only for specific critics.** Different failures detect at different vantage points. Source-aware critics catch semantic drift from the original; abridgment-only critics simulate the first-time reader and catch failures source-aware critics can't see (unexplained callbacks, pacing problems invisible when you know what was cut).
+
+**Specialization: ~8 narrow critics.** Each has a specific failure vocabulary and produces diagnoses with location information. Current roster:
+
+| Critic | Vantage | Scale | Hunts for |
+|---|---|---|---|
+| Voice | Source-aware | Segment + E2E | Flattening, sentimentality injection, explanation insertion, register homogenization, modernization-beyond-level |
+| Semantic fidelity | Source-aware | Segment | Hallucination, plot omission, motivation loss, cross-reference severing |
+| Signature/motif | Source-aware | Segment + E2E | Missing signatures (LLM-verified); motif frequency divergence from source |
+| Character arc | Source-aware | E2E | Voice inconsistency across segments; arc-compression damage |
+| Thematic preservation | Source-aware | E2E | For each identified thematic strand, whether the abridgment preserves engaging material |
+| Pacing coherence | Abridgment-only | E2E | Compression lurches, tonal shifts between segments |
+| Narrative coherence | Abridgment-only | E2E | Unexplained references, orientation failures, lost setups |
+| Success Criterion | Hybrid | E2E | Whether sampled criticism across traditions is supportable from abridgment alone |
+
+**Redundancy: N=3 independent runs per critic, severity-weighted failure rules.**
+
+- **High-stakes failures** (signature loss, hallucination, identified-motif depletion, voice erasure in a signature passage): any single critic run finding the failure triggers regeneration. False positives are cheaper than false negatives for these.
+- **Lower-stakes failures** (pacing lurches, mild thematic thinning, minor voice issues): 2-of-3 agreement on the same issue location triggers regeneration. Protects against single-critic noise.
+- **Informational flags**: logged for diagnostic context; never trigger regeneration.
+
+Independence across runs: prompt variation (different example failures, different phrasings), with model-class variation used where feasible. Shared-blind-spots between generator and critic is the most serious critic design risk; running N=3 with variation mitigates without eliminating it.
+
+**v1 stance on critic independence:** use what's available — prompt variation is reliable, model-class variation opportunistic. Accept the shared-blind-spots residual risk for v1.
+
+**Future improvement:** validation quality improves materially if critics run on independent LLMs (different providers, different architectures). This is a v2 target, not a v1 requirement.
+
+**Diagnostic specificity requirement (reiterated):** every critic's output must be actionable. "This abridgment fails X" is insufficient; "this abridgment fails X because passages A, B, C were compressed past threshold" is required. The re-plan path is only useful if critics provide real priors.
+
+**Cost note:** for full-length-novel sources, this design produces on the order of thousands of per-segment critic outputs and tens of end-to-end outputs per run. Validation work is comparable in scale to drafting work, possibly larger. This is intentional and acceptable given the no-resource-constraints permission, but worth being explicit about.
+
+### Meta-validation
+
+How we know validation is working:
+
+- **Mechanical checks** are tested against synthetic positive/negative cases (injected violations, verified compliance).
+- **Critic pass reliability**: cross-critic agreement on multiple independent runs; adversarial testing (have a generator try to pass a critic while actually violating spec); regression testing against previously-validated abridgments once they exist.
+- **Critic blind-spot risk**: the generator and critic may share systematic biases if from the same model class. Mitigations: use different model classes for critic when possible; include adversarial critics specifically hunting for bias-pattern failures; always run mechanical checks even when critics approve.
+
+### Failure handling
+
+- **Per-segment validation failure:** regenerate with specific failure feedback. Retry budget per segment (e.g., 5 attempts). On budget exhaustion: halt with diagnostic.
+- **End-to-end validation failure after all segments passed individually:** re-run pre-pass with the failure pattern and the failed abridgment as explicit inputs, regenerate, re-validate. Retry budget at pre-pass level is 1 — a single principled re-plan. If the second run also fails end-to-end, halt with full diagnostic including both attempts.
+
+The re-plan takes as context: (a) the original source, (b) the failed abridgment, (c) structured diagnoses from the end-to-end critics specifying what was under-preserved or over-cut. The pre-pass uses this as prior information to adjust the signature inventory and compression schedule, not merely to retry. Without new information, a retry would have the same failure mode as the original run.
+
+This is the "fail-loud" philosophy applied correctly: don't ship broken output, but do use validation's own diagnosis before giving up. A retry with no new information would be stochastic hope; a re-plan with the failure pattern as input is a principled recovery attempt. Halting on first failure would throw away information validation produced.
+
+All pre-pass outputs, validation results, and diagnostic traces are logged across both attempts so the state is fully reconstructible for human review when the fallback halt triggers.
+
+## Preservation targets
+
+### 1. Universal structural/narrative (every English-language novel)
+
+These must be preserved or the output is a summary, not an abridgment:
+
+- Plot / narrative arc
+- Character identities and arcs (including interiority where it exists)
+- POV and narrator stance (first/third/omniscient; reliable/unreliable; ironic distance)
+- Setting (geographical, temporal)
+- Chapter or section structure and titles (where present — the book's native structural segmentation and its markers; see Structural Segmentation section)
+- Tone
+
+### 2. Signatures (universal category, per-book instances)
+
+Every novel has signatures. Identifying the specific instance set is a per-book job for the LLM pre-pass. Signatures originate from four sources — a passage qualifies if it satisfies any one:
+
+- **Cultural famousness** — quotes that have escaped the book into the culture. Identifiable via cultural recall and external lookup.
+- **Textual distinctiveness** — passages the pre-pass identifies as prosodically or stylistically signature (rhetorical density, unusual construction, thematic compression). Identifiable via textual analysis.
+- **Critical engagement** — passages the critical tradition returns to, even if not commonly quoted. Identifiable via cultural/critical recall of the book's reception.
+- **Interpretive weight** — material that specific readings depend on, even when no individual passage is famous. Narrative framing material for narrative-theory readings; formally distinctive passages for formalist readings; psychologically articulate passages for psychoanalytic readings. Identifiable via knowledge of what critical readings of the work engage with.
+
+Categories of signatures (cutting across the four origins):
+
+- **Quotable lines** — aphoristic, structurally prominent, culturally escaped.
+- **Prosodic signatures** — sentence-length distribution, punctuation rhythm, syllable patterns where metrical.
+- **Structural signatures** — chapter length patterns; opening/closing conventions; frames, footnotes, embedded documents.
+- **Voice signatures** — archaic diction, invented vocabulary, dialect, register shifts.
+- **Character signatures** — catch-phrases, speech tics, articulation-points of psychology.
+- **Thematic/imagic signatures** — recurring motifs, symbol systems, color/weather/time patterns.
+- **Narrative signatures** — frame stories, structural conceits, tone shifts at pivotal moments.
+- **Critical-touchstone signatures** — passages the critical tradition engages with.
+- **Interpretive-hook signatures** — textual material load-bearing for identified readings.
+
+Preservation rule: identified signatures are preserved verbatim or as close to verbatim as compression allows; paraphrase is not permitted to erase a signature. The abridgment must not privilege one interpretive tradition over others — preserve the textual material different readings depend on, not a reading itself.
+
+### 3. Variable weights (per-book assessment required)
+
+How load-bearing each dimension is for the specific book. Drives compression aggressiveness:
+
+- **Prose style as artifact.** High for Nabokov, Woolf, McCarthy. Low for transparent plot-driven prose.
+- **Digression / indirection.** Load-bearing in Tristram Shandy, Eliot. Skippable in tight commercial fiction.
+- **Genre-specific load.** Mystery clues and reveal timing; SFF worldbuilding and coined vocabulary; romance emotional beats; historical research texture; satire's specific jokes; gothic atmosphere.
+
+### Cross-cutting axes
+
+- **Era** — primary driver of period-language activation in signatures and voice preservation.
+- **Structural complexity** — affects both preservation targets and chunking strategy for processing.
+- **Era-accumulated difficulty** — how much of the source's difficulty is era-accumulated (vocabulary/syntax that was ordinary when written but obscure now) vs. author-intended (archaism as deliberate feature). Measurable deterministically via obsolete-vocab density and syntactic distance from contemporary prose. Feeds into modernization level default.
+
+## Non-personalization constraint
+
+**v1:** The system produces **one canonical abridgment per book**. No per-reader customization, no user-configurable parameters at run time. Reader profile is a system-level design commitment, not a runtime input.
+
+**Future:** Per-reader customization is anticipated but deferred. Design principle: parameterize the reader axis, fix its value for v1. Keep the reader concept explicit in the spec, prompts, and tool interfaces so that later variation is adding values to an existing parameter rather than refactoring hardcoded assumptions.
+
+**Implicit target reader (v1 fixed value):** a generally educated adult reading fiction for its own sake — not for a class or specialist study. Willing to look up occasional words, unwilling to wrestle with sentences. Broadly familiar with canonical literature but not a specialist. This is the broadest audience for a faithful abridgment (someone approaching a classic they haven't read) and among the more demanding (wants the reading experience, not just content).
+
+All system-level decisions (modernization thresholds, signature-famousness criteria, compression aggressiveness, whether to preserve ambiguity) are calibrated for this reader. When the reader axis is unfrozen later, these calibrations become functions of reader profile, not constants.
+
+## Modernization axis
+
+"Faithful" has two senses that usually align but can come apart: faithful-to-surface (preserve language as-written) and faithful-to-experience (give the modern reader something close to the original reader's experience). For high era-accumulated-difficulty works (Shakespeare, Chaucer, some 17th-c prose), these come apart — period preservation adds difficulty that wasn't in the original experience. For low era-accumulated-difficulty works where archaism is author-intended (Nabokov, for example), they align.
+
+Modernization is therefore a transmutation axis — but per the non-personalization constraint, the level is **automatically determined** by the pre-pass from the book's era-accumulated-difficulty score, calibrated for the implicit target reader. Not a user parameter.
+
+Levels:
+
+- **L0 None** — strict period preservation, orthography included.
+- **L1 Light** — standardize OCR/typesetting artifacts only. Minimal intervention.
+- **L2 Vocabulary** — replace genuinely obsolete vocabulary. Keep syntax and register.
+- **L3 Vocabulary + syntax** — update inverted clauses, comma-splicing, obsolete grammar. Recognizable register but period rhythm lost.
+- **L4 Full** — contemporary prose throughout. Voice substantially replaced.
+
+Expected distribution for English novels with the implicit target reader:
+- Most 19th-c and later novels → L0 or L1.
+- Pre-1800 prose → L2 possible.
+- Pre-1700 prose → L3 may be justified.
+- Pre-1500 prose or verse → system should refuse: "this is a translation problem, not an abridgment problem."
+
+Rules across all levels:
+
+1. **Signatures preserved verbatim regardless of level.** Signatures are identity markers, not modernization candidates.
+2. **Level is derived by the pre-pass, not chosen.** Era-accumulated-difficulty measurement is a deterministic tool operation.
+3. **At L3+, voice preservation goals are fundamentally compromised** — output metadata declares the modernization level so the reader understands what they're getting. The spec does not claim to preserve voice at L3 or above.
+4. **Refusal is a valid output.** If the book is too far outside the currently-configured reader's domain (e.g., Chaucer for the v1 general reader; heavy verse; works whose difficulty is irreducible for the target reader), the system emits a refusal with reasoning rather than silently producing unfaithful output. Refusal is reader-relative — a future reader profile could accept books the v1 profile refuses.
+
+---
+
+## Goal
+
+Produce a faithful abridgment of an arbitrary English-language novel within the scope constraints above. "Faithful" here means faithful to **voice, structure, digressive character, and critical substance** — sufficient to meet the Primary Success Criterion. A plot-only version is a different project.
+
+Word-count targets are derived per-book by the pre-pass from the source length and the non-uniform compression schedule (below), not fixed globally. When the Success Criterion and the derived word-count target conflict, the Success Criterion wins. The system should not cut critically-engaged or signature material to hit a word count; the derived target is a soft anchor, not a hard maximum.
+
+## Compression schedule (non-uniform)
+
+Compression ratio is allocated by chapter type, not applied flat:
+
+- **Signature chapters** — ~3x. Openings, closings, pivotal set-pieces, culturally famous passages, chapters the critical tradition engages with. Cut tightly but preserve the shape and most of the voice.
+- **Narrative chapters** — ~4x. Standard plot and character progression.
+- **Digressive chapters** — ~6–8x. Tangents, essayistic interludes, taxonomic or technical material, extended asides. Compress hard but do not eliminate — for books where digression is load-bearing (see Variable weights), the digressive mode is part of the book's character and cannot be removed wholesale.
+
+The signature-chapter list is per-book and provisional; it should grow as chapters are encountered during drafting.
+
+## Approach: hybrid splice-and-paraphrase
+
+- **Preserve verbatim:** famously distinctive passages, iconic phrases, signature voice moments, period markers.
+- **Paraphrase in style:** connective tissue, redundant elaboration, repeated points made once.
+- **Cut:** extended tangential asides when the indirection budget (below) has room.
+
+Pure splice (only the source author's actual sentences, stitched) has a hard compression floor and reads choppy below ~2x. Pure paraphrase flexes further but drifts into pastiche. Hybrid is the default.
+
+## Voice preservation rules
+
+1. **Preserve period spellings verbatim.** Archaic or historical orthography stays as printed. Do not modernize. The temptation to clean up pre-contemporary spelling is strong and is the wrong instinct.
+2. **Preserve archaic vocabulary.** If a word is period-distinctive or marked, keep it. If the reader needs a footnote, that's fine; don't paraphrase away the word.
+3. **Preserve the source's punctuation idiosyncrasies.** Semicolons, em-dashes, italics for emphasis. These are part of the rhythm.
+4. **Preserve the register.** Period cadence, sudden philosophical pivots, deadpan comic turns, sermonic or aphoristic modes where present. If a paraphrased sentence sounds like 2020s prose when the source does not, it's wrong.
+5. **Preserve temporal signatures.** References to contemporary events, people, and places of the source's period stay even if unfamiliar. Don't substitute a modern analogue; don't gloss a period-specific allusion.
+
+## Indirection budget
+
+For books where digression or philosophical aside is identified as load-bearing (see Variable weights), always-cutting-the-tangent falsifies the book's character even when every mechanical check passes. In such books, each chapter should preserve at least one digression or philosophical aside in compressed form, even when aggressive cutting is called for. Which one is an editorial choice; *that* there is one is a rule.
+
+## Chapter-level workflow (interactive phase)
+
+Per chapter:
+1. Read source.
+2. Identify: signature passages (preserve), essential plot/argument (preserve in paraphrase), digressions (compress or cut per budget).
+3. Draft at target ratio for that chapter type.
+4. Trace: note what was preserved verbatim, what was paraphrased, what was cut.
+5. Flag any editorial judgment call worth reviewing.
+
+## Open questions
+
+Resolved (retained for audit):
+- ~~Who is the reader?~~ Implicit target reader hardcoded for v1; parameterized for future variation.
+- ~~Failure mode catalog.~~ See Failure Modes section.
+- ~~Global plan vs chapter-by-chapter?~~ Global plan committed.
+- ~~Input/output formats?~~ Single plain-text file each.
+- ~~Copyright posture?~~ Out-of-copyright only, v1.
+- ~~Resource constraints?~~ None, v1.
+- ~~Edition choice?~~ System processes whatever text is given.
+- ~~Error recovery policy?~~ Fail loud — system halts with diagnostic, no degraded output.
+- ~~Front matter / back matter policy?~~ Per-segment classification (diegetic / extradiegetic / ambiguous) by the pre-pass; no blanket rule.
+- ~~Non-standard chapter structures?~~ Resolved by the structural-segmentation reframe: pre-pass identifies native segmentation, chapters are one common case, not required.
+
+Still open:
+- ~~**Is validation mechanical-only, or also LLM-critic-pass?**~~ Effectively resolved by the Primary Success Criterion: mechanical validation cannot evaluate whether the abridgment supports critical engagement (which is inherently interpretive), so an LLM-critic pass is required. The remaining question is design — what specifically the critic evaluates and how.
+- **Play-format and similar register-shifting chapters.** Either specialized sub-agent or case-by-case handling under the global plan's structural flags.
+- **Cross-segment setup** — if a minor character is introduced in a cut passage and referenced later, how does the global plan catch this before it becomes a problem?
+
+## Error recovery
+
+The system fails loud, not graceful. Validation failures do not produce degraded output. Specifically:
+
+- **Chapter-level validation failure after retry budget exhausted:** system halts on that chapter, emits a diagnostic, requires human review. No best-effort emission of broken chapters.
+- **Pre-pass self-validation failure:** system halts before chapter drafting begins.
+- **Structural incompatibility** (see below): system refuses the book with reasoning.
+- **Reader-domain mismatch** (book too hard for v1 reader profile): system refuses with reasoning.
+
+The output domain is therefore: *a faithful abridgment* OR *a diagnosed stop*. Nothing in between.
+
+## Front matter, back matter, and apparatus
+
+A single policy doesn't work because some apparatus is part of the fiction and some isn't. The pre-pass classifies per segment:
+
+- **Diegetic** (part of the narrative — fake prefaces, framing documents, integrated footnotes): treated as chapters under normal abridgment rules. Examples: the John Ray foreword in *Lolita*; the Custom-House preface in *The Scarlet Letter*; the editorial apparatus in *Pale Fire*; the endnotes in *Infinite Jest*.
+- **Extradiegetic** (apparatus around the fiction — editor's notes, scholarly annotations, translator's notes, third-party introductions, critical afterwords, author biographies): cut. Not "the book" being abridged.
+- **Ambiguous** (author's own preface, dedications, epigraphs): defaults — preserve dedications and epigraphs verbatim; cut author prefaces unless the pre-pass identifies them as diegetically integrated.
+
+Classification signals the pre-pass can use: does the segment narrate events; third-person references to the novel vs. first-person narrative voice; authorship (novel's author vs. editor/scholar); whether the book's structural coherence depends on the segment.
+
+## Structural segmentation
+
+The pre-pass identifies the book's **native structural segmentation** — whatever divisions the book itself uses. Chapters are the most common case but not required. Alternatives the pre-pass must handle: parts with nested chapters, numbered sections without titles, symbol-delimited scene breaks, titled sections, date/time headers (epistolary/diary form), and unbroken prose.
+
+Terminology below: a **segment** is whatever unit the pre-pass identifies. In a chaptered novel, segments are chapters; in a scene-broken novel, segments are scenes.
+
+**Segmentation granularity.** The pre-pass selects the coarsest native segmentation that yields reasonably-sized processing units. Multi-level hierarchies (parts containing chapters containing sections) are preserved in the output, but the working granularity for compression is one level — typically chapters if present.
+
+**Unsegmented books.** If a book has no native structural markers, the pre-pass performs semantic segmentation (identifying scene or topic shifts). If semantic segmentation is unreliable for the text, the book may process as one large unit with context-fit chunking. Output preserves the source's lack of structural markers.
+
+**Compression granularity ≠ structural granularity.** Compression can be allocated sub-segment where appropriate. A chapter that mixes signature prose with technical or taxonomic material, for example, benefits from this: signature passages compress less than the technical passages, within the same chapter. The global plan allocates compression at whatever granularity is most faithful — per segment by default, finer where signatures cluster non-uniformly within a segment.
+
+## Structural-type classification
+
+Before compression planning, the pre-pass determines whether the book's form is compatible with segment-by-segment faithful abridgment:
+
+- **Sequential segmentable structure** (chapters, sections, scenes, or clearly-identifiable semantic units): proceed.
+- **Non-linear cross-referential structure** (*Pale Fire* as canonical example) where segments cannot be abridged independently because they deeply reference each other in non-sequential ways: refuse with reasoning. The segment-by-segment pipeline would sever the cross-references that constitute the work.
+
+Structural refusal is a refusal trigger distinct from the reader-relative one. Reader-relative refusal: "too hard for this reader." Structural refusal: "form incompatible with sequential segment-based abridgment regardless of reader."
+
+## Failure modes
+
+The system must explicitly defend against these. Defense mechanism noted per category.
+
+### Critical-engagement failures (abridgment works but cannot support the success criterion)
+- **Critical-engagement loss** — abridgment is content-faithful, voice-preserved, and mechanically valid, but a reader of it cannot follow criticism of the original because the specific passage a critic works with was compressed past usefulness. Passes all mechanical checks.
+- **Reading-privileging** — pre-pass over-weighted one interpretive tradition and under-preserved material other readings depend on.
+- **Thematic flattening** — digressive chapters compressed as elaboration when they actually carried the book's thematic content.
+
+*Defense: LLM-critic pass specifically evaluating whether the abridgment supports critical engagement; pre-pass diversity check (does the identified signature set cover multiple plausible readings, not just one); conservative compression on digressive chapters that the critical tradition engages with.*
+
+### Fidelity failures (output diverges from source)
+- **Hallucination of connective content** — invented bridging between cut passages.
+- **Plot omission** — essential causal information lost in cuts.
+- **Character omission** — minor characters referenced later without preserved setup.
+- **Cross-reference severing** — setup cut while callback retained, or vice versa.
+- **Motif depletion** — symbolic recurrences reduced below legibility threshold.
+
+*Defense: mechanical validation (signature inventory + motif tracking), cross-chapter state tracking, critic pass.*
+
+### Voice failures (register wrong even when content right) — LLM-systematic biases
+- **Flattening toward neutral prose** — distinctive register lost to grammatical clarity.
+- **Modernization beyond configured level** — period orthography, vocabulary, punctuation updated beyond what the modernization axis permits. (Modernization itself is not a failure; only exceeding the configured level is.)
+- **Sentimentality injection** — contemporary emotional vocabulary added.
+- **Explanation insertion** — source's deliberate opacity clarified away.
+- **Dialect cleanup** — speech patterns standardized.
+- **Register homogenization** — deliberate register shifts averaged to a middle register.
+- **Parallel construction asymmetry** — partial cuts within a sentence that break a grammatical or rhetorical parallel ("considering that X, and that Y" with Y removed; "not only A but also B" with B removed). The surviving clause reads as awkwardly weighted because the construction expected a counterpart. Defense rule: when cutting within a sentence, either cut the whole sentence or preserve its parallel structures intact.
+
+*Defense: critic pass specifically hunting LLM biases; prompt structure counteracting them; mechanical checks for period-language preservation.*
+
+### Structural failures (book's shape misrepresented)
+- **Compression pacing lurches** — inconsistent compression ratios across chapters.
+- **Digressive-character erasure** — always cutting the tangent.
+- **Proportion drift** — source-to-abridgment chapter length ratio inconsistent.
+- **Chapter title loss or alteration.**
+
+*Defense: mechanical validation (compression accuracy per chapter, chapter title preservation), global pacing plan in pre-pass.*
+
+### Signature failures (identified features not preserved)
+- **Quote loss** — famous/identified quotes paraphrased or cut.
+- **Stylistic-tic erasure** — prosodic signatures smoothed.
+- **Aphoristic compression loss** — tight maxims diluted in paraphrase.
+
+*Defense: mechanical validation (string match on signature inventory), critic pass for aphoristic fidelity.*
+
+### Continuity failures (global coherence broken by local decisions)
+- **Spec drift across chapters** — later chapters forget earlier decisions (breadth-first drift).
+- **Character voice inconsistency** — same character sounds different across chapters.
+- **Thematic forgetting** — theme established early fails to resonate late because echoes were cut.
+
+*Defense: global plan authored in pre-pass and referenced by every chapter pass; cross-chapter critic pass after chapter drafts complete.*
+
+### Operational failures (system fails without knowing)
+- **Silent failure** — output emitted without flagging validation issues.
+- **Pre-pass contamination** — pre-pass missed major signatures; entire downstream run self-consistently wrong.
+- **Over-confidence on unknown books** — full-aggression processing when cultural recall is thin.
+- **Spec-output mismatch** — spec says preserve X; output doesn't; no check caught it.
+
+*Defense: self-critique of pre-pass (multiple independent signature-detection passes, or LLM critique of its own spec); confidence metadata attached to output when cultural knowledge is thin; mechanical spec-compliance gate before emission.*
+
+### Priority note
+
+- **LLM-systematic biases** (voice failures) are the highest-frequency category because they're systematic rather than random. Defending against them is the main job of any critic pass.
+- **Operational failures** are the highest-stakes category because they produce confidently wrong output with no surface signal. Worth investing disproportionately in pre-pass self-validation.
+
+## Decisions log
+
+- **2026-04-18:** Non-uniform compression schedule committed (see Compression schedule section for per-chapter-type ratios).
+- **2026-04-18:** Hybrid splice/paraphrase as default approach.
+- **2026-04-18:** Period spellings preserved verbatim.
+
+
+
+
+
+---
+
+# This chapter
+
+- **Book:** The Great Gatsby by F. Scott Fitzgerald (novel)
+- **Chapter:** II (id 002)
+- **Source:** 4279 words
+- **Target:** 2300 words (1.9× compression)
+
+Hit the target. Aggressive compression where the spec permits, but do not undershoot — words below target signal lost content, not virtue.
+
+
+
+# Cuttable material inventory
+
+A prepass has identified the following characters, subplots, and digressions as *removable without meaningfully changing the book's plot, themes, or principal-character arcs.* When compressing this chapter, prefer cutting or minimizing these over cutting anything else. You do not need to invent reasons to preserve material on this list.
+
+**Minor characters — prefer to elide, un-name, or collapse into descriptors:**
+- **Ewing Klipspringer** — His functions (background music, a comic postmortem phone call) can be folded into anonymous servants/guests without changing any plot turn or theme the synopsis requires.
+- **Catherine** — Her chatter and later denial add color but no consequence to the affair, the fatal accident, or the fallout described in the synopsis.
+- **Mr. McKee (Chester McKee)** — He is pure background satire at Myrtle’s party and never affects the affair, the death, or Gatsby’s arc.
+- **Mrs. McKee (Lucille McKee)** — She amplifies the scene’s tawdriness but has no bearing on any later event.
+- **Mr. Sloane** — This snub reiterates East Egg snobbery already conveyed elsewhere without shifting any outcome.
+- **Lucille** — Her gossip is duplicative of the general rumor-swirl that the synopsis already captures.
+- **Chester Becker (representative of the guest‑list names)** — He exists solely in a catalog that can be trimmed without cost to story or theme.
+- **Doctor Webster Civet** — A marginal namecheck whose presence never influences any scene that matters to the main arc.
+- **Michaelis** — Nick can summarize Wilson’s despair and movements without inserting Michaelis as a character and nothing in the synopsis depends on him.
+- **‘Blocks’ Biloxi** — The anecdote is digressive comedy that neither alters Daisy’s wavering nor Tom and Gatsby’s showdown.
+- **Rosy Rosenthal** — He serves only to thicken Wolfshiem’s aura; excising him leaves Wolfshiem’s role in Gatsby’s 'drugstore' business intact.
+- **Motorcycle policeman** — This roadside cameo is a throwaway hint of Gatsby’s pull and can be dropped without changing any later beat.
+- **Ferdie (Daisy’s chauffeur)** — Swapping him for an unnamed driver has zero effect on the reunion or its consequences.
+
+**Subplots — prefer to cut or reduce to one-sentence summary:**
+- **Nick’s New York work life and Jersey City fling** (Ch 003) — His office routine and brief romance are self‑contained diversions that don’t touch the Gatsby–Daisy–Tom triangle or the novel’s outcome.
+- **Jordan Baker’s golf scandal and the 'bad drivers' mini‑essay** (Ch 003) — Her alleged cheating and driving maxim are side character notes; the synopsis needs only that Nick later breaks with Jordan.
+- **Owl Eyes’s library discovery and the car‑in‑the‑ditch gag** (Ch 003) — You can let Owl Eyes appear unnamed or newly named at the funeral without earlier comic set‑pieces.
+- **Wolfshiem’s Rosy Rosenthal murder reminiscence** (Ch 004) — The anecdote is flavor; Wolfshiem’s essential functions (shadowy 'fixer,' Gatsby’s business partner) survive without it.
+- **Gatsby’s 'Christmas card' from the police commissioner** (Ch 004) — It’s a one‑off wink at his influence that can be cut without weakening the criminal-connection thread already carried by Wolfshiem.
+- **Mr. Sloane’s perfunctory invitation and snub** (Ch 006) — This dinner fake‑out restates East Egg hauteur already visible at the Plaza and in Tom’s behavior.
+- **Catherine’s Catholic lie and Monte Carlo tangent** (Ch 002) — Her claims are colorful but unnecessary to establishing Tom’s affair and the apartment melee that ends with Myrtle’s broken nose.
+- **Klipspringer’s posthumous 'tennis shoes' phone call** (Ch 009) — Wolfsheim’s refusal and the vanishing party crowd already make the funeral’s emptiness clear.
+- **Biloxi-at-the-wedding comic detour during the Plaza scene** (Ch 007) — The story stalls the confrontation and adds no new leverage to Daisy’s waver or Tom’s counterattack.
+
+**Digressions — prefer to cut or condense heavily:**
+- **Ch 004 — Nick’s full page(s) of rostered party names from his old timetable** — This taxonomic guest list is pure social color; trimming it won’t affect any scene the synopsis depends on.
+- **Ch 003 — Baroque inventory of party logistics (oranges machine, caterers’ canvas, instrument roll‑call)** — The lavish cataloguing can be compressed to 'huge parties every weekend' without loss of plot or theme.
+- **Ch 001 — Carraway genealogy and great‑uncle portrait (Dukes of Buccleuch, Civil War substitute, hardware business)** — It’s background pedigree that exceeds what’s needed for 'Midwesterner Nick moves East' in the synopsis.
+- **Ch 007 — The 'butler’s nose' anecdote and sundry small‑talk curlicues at the Buchanans’** — These comic asides don’t move the lunch‑to‑Plaza chain of events.
+- **Ch 009 — Extended Midwestern prep‑school/railroad Christmas reminiscence** — You can keep Nick’s 'East like a night scene by El Greco' and return‑home resolution while paring this nostalgic excursus.
+
+
+# Named-person continuity invariant
+
+If a person's proper name appears in the draft, the reader must already know
+who that named person is from the preceding draft text, or the first surviving
+named mention must identify them locally by role, relationship, or apposition.
+
+If you cut or un-name a character's introduction, do not use that proper name
+later without a compact local gloss. Either keep the later reference generic,
+or write the name with an identifying phrase, e.g. "Michaelis, the neighbour"
+or "Catherine, Myrtle's sister."
+
+For characters listed as removable/minor in the cut inventory, prefer
+descriptors over names. If a minor character's name survives at all, its first
+surviving mention and any late re-entry after a long absence must carry a local
+gloss.
+
+# Dialogue attribution invariant
+
+When dialogue survives compression, the reader must be able to tell who is
+speaking. Do not leave runs of quote-led dialogue turns without source-backed
+speaker attribution or action beats unless the exchange is still unambiguous
+from a two-speaker alternation already established in the retained draft.
+
+If compression removes the setup that identified a speaker, either restore a
+compact source-backed tag/action beat or paraphrase the exchange into narration.
+Never invent new dialogue, speakers, or attribution.
+
+
+
+# Source text
+
+About halfway between West Egg and New York the motor road hastily
+joins the railroad and runs beside it for a quarter of a mile, so as
+to shrink away from a certain desolate area of land. This is a valley
+of ashes—a fantastic farm where ashes grow like wheat into ridges and
+hills and grotesque gardens; where ashes take the forms of houses and
+chimneys and rising smoke and, finally, with a transcendent effort, of
+ash-grey men, who move dimly and already crumbling through the powdery
+air. Occasionally a line of grey cars crawls along an invisible track,
+gives out a ghastly creak, and comes to rest, and immediately the
+ash-grey men swarm up with leaden spades and stir up an impenetrable
+cloud, which screens their obscure operations from your sight.
+
+But above the grey land and the spasms of bleak dust which drift
+endlessly over it, you perceive, after a moment, the eyes of Doctor T.
+J. Eckleburg. The eyes of Doctor T. J. Eckleburg are blue and
+gigantic—their retinas are one yard high. They look out of no face,
+but, instead, from a pair of enormous yellow spectacles which pass
+over a nonexistent nose. Evidently some wild wag of an oculist set
+them there to fatten his practice in the borough of Queens, and then
+sank down himself into eternal blindness, or forgot them and moved
+away. But his eyes, dimmed a little by many paintless days, under sun
+and rain, brood on over the solemn dumping ground.
+
+The valley of ashes is bounded on one side by a small foul river, and,
+when the drawbridge is up to let barges through, the passengers on
+waiting trains can stare at the dismal scene for as long as half an
+hour. There is always a halt there of at least a minute, and it was
+because of this that I first met Tom Buchanan’s mistress.
+
+The fact that he had one was insisted upon wherever he was known. His
+acquaintances resented the fact that he turned up in popular cafés
+with her and, leaving her at a table, sauntered about, chatting with
+whomsoever he knew. Though I was curious to see her, I had no desire
+to meet her—but I did. I went up to New York with Tom on the train one
+afternoon, and when we stopped by the ash-heaps he jumped to his feet
+and, taking hold of my elbow, literally forced me from the car.
+
+“We’re getting off,” he insisted. “I want you to meet my girl.”
+
+I think he’d tanked up a good deal at luncheon, and his determination
+to have my company bordered on violence. The supercilious assumption
+was that on Sunday afternoon I had nothing better to do.
+
+I followed him over a low whitewashed railroad fence, and we walked
+back a hundred yards along the road under Doctor Eckleburg’s
+persistent stare. The only building in sight was a small block of
+yellow brick sitting on the edge of the waste land, a sort of compact
+Main Street ministering to it, and contiguous to absolutely nothing.
+One of the three shops it contained was for rent and another was an
+all-night restaurant, approached by a trail of ashes; the third was a
+garage—Repairs. George B. Wilson. Cars bought and sold.—and I followed
+Tom inside.
+
+The interior was unprosperous and bare; the only car visible was the
+dust-covered wreck of a Ford which crouched in a dim corner. It had
+occurred to me that this shadow of a garage must be a blind, and that
+sumptuous and romantic apartments were concealed overhead, when the
+proprietor himself appeared in the door of an office, wiping his hands
+on a piece of waste. He was a blond, spiritless man, anaemic, and
+faintly handsome. When he saw us a damp gleam of hope sprang into his
+light blue eyes.
+
+“Hello, Wilson, old man,” said Tom, slapping him jovially on the
+shoulder. “How’s business?”
+
+“I can’t complain,” answered Wilson unconvincingly. “When are you
+going to sell me that car?”
+
+“Next week; I’ve got my man working on it now.”
+
+“Works pretty slow, don’t he?”
+
+“No, he doesn’t,” said Tom coldly. “And if you feel that way about it,
+maybe I’d better sell it somewhere else after all.”
+
+“I don’t mean that,” explained Wilson quickly. “I just meant—”
+
+His voice faded off and Tom glanced impatiently around the garage.
+Then I heard footsteps on a stairs, and in a moment the thickish
+figure of a woman blocked out the light from the office door. She was
+in the middle thirties, and faintly stout, but she carried her flesh
+sensuously as some women can. Her face, above a spotted dress of dark
+blue crêpe-de-chine, contained no facet or gleam of beauty, but there
+was an immediately perceptible vitality about her as if the nerves of
+her body were continually smouldering. She smiled slowly and, walking
+through her husband as if he were a ghost, shook hands with Tom,
+looking him flush in the eye. Then she wet her lips, and without
+turning around spoke to her husband in a soft, coarse voice:
+
+“Get some chairs, why don’t you, so somebody can sit down.”
+
+“Oh, sure,” agreed Wilson hurriedly, and went toward the little
+office, mingling immediately with the cement colour of the walls. A
+white ashen dust veiled his dark suit and his pale hair as it veiled
+everything in the vicinity—except his wife, who moved close to Tom.
+
+“I want to see you,” said Tom intently. “Get on the next train.”
+
+“All right.”
+
+“I’ll meet you by the newsstand on the lower level.”
+
+She nodded and moved away from him just as George Wilson emerged with
+two chairs from his office door.
+
+We waited for her down the road and out of sight. It was a few days
+before the Fourth of July, and a grey, scrawny Italian child was
+setting torpedoes in a row along the railroad track.
+
+“Terrible place, isn’t it,” said Tom, exchanging a frown with Doctor
+Eckleburg.
+
+“Awful.”
+
+“It does her good to get away.”
+
+“Doesn’t her husband object?”
+
+“Wilson? He thinks she goes to see her sister in New York. He’s so
+dumb he doesn’t know he’s alive.”
+
+So Tom Buchanan and his girl and I went up together to New York—or not
+quite together, for Mrs. Wilson sat discreetly in another car. Tom
+deferred that much to the sensibilities of those East Eggers who might
+be on the train.
+
+She had changed her dress to a brown figured muslin, which stretched
+tight over her rather wide hips as Tom helped her to the platform in
+New York. At the newsstand she bought a copy of Town Tattle and a
+moving-picture magazine, and in the station drugstore some cold cream
+and a small flask of perfume. Upstairs, in the solemn echoing drive
+she let four taxicabs drive away before she selected a new one,
+lavender-coloured with grey upholstery, and in this we slid out from
+the mass of the station into the glowing sunshine. But immediately she
+turned sharply from the window and, leaning forward, tapped on the
+front glass.
+
+“I want to get one of those dogs,” she said earnestly. “I want to get
+one for the apartment. They’re nice to have—a dog.”
+
+We backed up to a grey old man who bore an absurd resemblance to John
+D. Rockefeller. In a basket swung from his neck cowered a dozen very
+recent puppies of an indeterminate breed.
+
+“What kind are they?” asked Mrs. Wilson eagerly, as he came to the
+taxi-window.
+
+“All kinds. What kind do you want, lady?”
+
+“I’d like to get one of those police dogs; I don’t suppose you got
+that kind?”
+
+The man peered doubtfully into the basket, plunged in his hand and
+drew one up, wriggling, by the back of the neck.
+
+“That’s no police dog,” said Tom.
+
+“No, it’s not exactly a police dog,” said the man with disappointment
+in his voice. “It’s more of an Airedale.” He passed his hand over the
+brown washrag of a back. “Look at that coat. Some coat. That’s a dog
+that’ll never bother you with catching cold.”
+
+“I think it’s cute,” said Mrs. Wilson enthusiastically. “How much is
+it?”
+
+“That dog?” He looked at it admiringly. “That dog will cost you ten
+dollars.”
+
+The Airedale—undoubtedly there was an Airedale concerned in it
+somewhere, though its feet were startlingly white—changed hands and
+settled down into Mrs. Wilson’s lap, where she fondled the
+weatherproof coat with rapture.
+
+“Is it a boy or a girl?” she asked delicately.
+
+“That dog? That dog’s a boy.”
+
+“It’s a bitch,” said Tom decisively. “Here’s your money. Go and buy
+ten more dogs with it.”
+
+We drove over to Fifth Avenue, warm and soft, almost pastoral, on the
+summer Sunday afternoon. I wouldn’t have been surprised to see a great
+flock of white sheep turn the corner.
+
+“Hold on,” I said, “I have to leave you here.”
+
+“No you don’t,” interposed Tom quickly. “Myrtle’ll be hurt if you
+don’t come up to the apartment. Won’t you, Myrtle?”
+
+“Come on,” she urged. “I’ll telephone my sister Catherine. She’s said
+to be very beautiful by people who ought to know.”
+
+“Well, I’d like to, but—”
+
+We went on, cutting back again over the Park toward the West Hundreds.
+At 158th Street the cab stopped at one slice in a long white cake of
+apartment-houses. Throwing a regal homecoming glance around the
+neighbourhood, Mrs. Wilson gathered up her dog and her other
+purchases, and went haughtily in.
+
+“I’m going to have the McKees come up,” she announced as we rose in
+the elevator. “And, of course, I got to call up my sister, too.”
+
+The apartment was on the top floor—a small living-room, a small
+dining-room, a small bedroom, and a bath. The living-room was crowded
+to the doors with a set of tapestried furniture entirely too large for
+it, so that to move about was to stumble continually over scenes of
+ladies swinging in the gardens of Versailles. The only picture was an
+over-enlarged photograph, apparently a hen sitting on a blurred rock.
+Looked at from a distance, however, the hen resolved itself into a
+bonnet, and the countenance of a stout old lady beamed down into the
+room. Several old copies of Town Tattle lay on the table together with
+a copy of Simon Called Peter, and some of the small scandal magazines
+of Broadway. Mrs. Wilson was first concerned with the dog. A reluctant
+elevator boy went for a box full of straw and some milk, to which he
+added on his own initiative a tin of large, hard dog biscuits—one of
+which decomposed apathetically in the saucer of milk all
+afternoon. Meanwhile Tom brought out a bottle of whisky from a locked
+bureau door.
+
+I have been drunk just twice in my life, and the second time was that
+afternoon; so everything that happened has a dim, hazy cast over it,
+although until after eight o’clock the apartment was full of cheerful
+sun. Sitting on Tom’s lap Mrs. Wilson called up several people on the
+telephone; then there were no cigarettes, and I went out to buy some
+at the drugstore on the corner. When I came back they had both
+disappeared, so I sat down discreetly in the living-room and read a
+chapter of Simon Called Peter—either it was terrible stuff or the
+whisky distorted things, because it didn’t make any sense to me.
+
+Just as Tom and Myrtle (after the first drink Mrs. Wilson and I called
+each other by our first names) reappeared, company commenced to arrive
+at the apartment door.
+
+The sister, Catherine, was a slender, worldly girl of about thirty,
+with a solid, sticky bob of red hair, and a complexion powdered milky
+white. Her eyebrows had been plucked and then drawn on again at a more
+rakish angle, but the efforts of nature toward the restoration of the
+old alignment gave a blurred air to her face. When she moved about
+there was an incessant clicking as innumerable pottery bracelets
+jingled up and down upon her arms. She came in with such a proprietary
+haste, and looked around so possessively at the furniture that I
+wondered if she lived here. But when I asked her she laughed
+immoderately, repeated my question aloud, and told me she lived with a
+girl friend at a hotel.
+
+Mr. McKee was a pale, feminine man from the flat below. He had just
+shaved, for there was a white spot of lather on his cheekbone, and he
+was most respectful in his greeting to everyone in the room. He
+informed me that he was in the “artistic game,” and I gathered later
+that he was a photographer and had made the dim enlargement of
+Mrs. Wilson’s mother which hovered like an ectoplasm on the wall. His
+wife was shrill, languid, handsome, and horrible. She told me with
+pride that her husband had photographed her a hundred and twenty-seven
+times since they had been married.
+
+Mrs. Wilson had changed her costume some time before, and was now
+attired in an elaborate afternoon dress of cream-coloured chiffon,
+which gave out a continual rustle as she swept about the room. With
+the influence of the dress her personality had also undergone a
+change. The intense vitality that had been so remarkable in the garage
+was converted into impressive hauteur. Her laughter, her gestures, her
+assertions became more violently affected moment by moment, and as she
+expanded the room grew smaller around her, until she seemed to be
+revolving on a noisy, creaking pivot through the smoky air.
+
+“My dear,” she told her sister in a high, mincing shout, “most of
+these fellas will cheat you every time. All they think of is money. I
+had a woman up here last week to look at my feet, and when she gave me
+the bill you’d of thought she had my appendicitis out.”
+
+“What was the name of the woman?” asked Mrs. McKee.
+
+“Mrs. Eberhardt. She goes around looking at people’s feet in their own
+homes.”
+
+“I like your dress,” remarked Mrs. McKee, “I think it’s adorable.”
+
+Mrs. Wilson rejected the compliment by raising her eyebrow in disdain.
+
+“It’s just a crazy old thing,” she said. “I just slip it on sometimes
+when I don’t care what I look like.”
+
+“But it looks wonderful on you, if you know what I mean,” pursued Mrs.
+McKee. “If Chester could only get you in that pose I think he could
+make something of it.”
+
+We all looked in silence at Mrs. Wilson, who removed a strand of hair
+from over her eyes and looked back at us with a brilliant smile. Mr.
+McKee regarded her intently with his head on one side, and then moved
+his hand back and forth slowly in front of his face.
+
+“I should change the light,” he said after a moment. “I’d like to
+bring out the modelling of the features. And I’d try to get hold of
+all the back hair.”
+
+“I wouldn’t think of changing the light,” cried Mrs. McKee. “I think
+it’s—”
+
+Her husband said “Sh!” and we all looked at the subject again,
+whereupon Tom Buchanan yawned audibly and got to his feet.
+
+“You McKees have something to drink,” he said. “Get some more ice and
+mineral water, Myrtle, before everybody goes to sleep.”
+
+“I told that boy about the ice.” Myrtle raised her eyebrows in despair
+at the shiftlessness of the lower orders. “These people! You have to
+keep after them all the time.”
+
+She looked at me and laughed pointlessly. Then she flounced over to
+the dog, kissed it with ecstasy, and swept into the kitchen, implying
+that a dozen chefs awaited her orders there.
+
+“I’ve done some nice things out on Long Island,” asserted Mr. McKee.
+
+Tom looked at him blankly.
+
+“Two of them we have framed downstairs.”
+
+“Two what?” demanded Tom.
+
+“Two studies. One of them I call Montauk Point—The Gulls, and the
+other I call Montauk Point—The Sea.”
+
+The sister Catherine sat down beside me on the couch.
+
+“Do you live down on Long Island, too?” she inquired.
+
+“I live at West Egg.”
+
+“Really? I was down there at a party about a month ago. At a man named
+Gatsby’s. Do you know him?”
+
+“I live next door to him.”
+
+“Well, they say he’s a nephew or a cousin of Kaiser Wilhelm’s. That’s
+where all his money comes from.”
+
+“Really?”
+
+She nodded.
+
+“I’m scared of him. I’d hate to have him get anything on me.”
+
+This absorbing information about my neighbour was interrupted by Mrs.
+McKee’s pointing suddenly at Catherine:
+
+“Chester, I think you could do something with her,” she broke out, but
+Mr. McKee only nodded in a bored way, and turned his attention to Tom.
+
+“I’d like to do more work on Long Island, if I could get the entry.
+All I ask is that they should give me a start.”
+
+“Ask Myrtle,” said Tom, breaking into a short shout of laughter as
+Mrs. Wilson entered with a tray. “She’ll give you a letter of
+introduction, won’t you, Myrtle?”
+
+“Do what?” she asked, startled.
+
+“You’ll give McKee a letter of introduction to your husband, so he can
+do some studies of him.” His lips moved silently for a moment as he
+invented, “ ‘George B. Wilson at the Gasoline Pump,’ or something like
+that.”
+
+Catherine leaned close to me and whispered in my ear:
+
+“Neither of them can stand the person they’re married to.”
+
+“Can’t they?”
+
+“Can’t stand them.” She looked at Myrtle and then at Tom. “What I say
+is, why go on living with them if they can’t stand them? If I was them
+I’d get a divorce and get married to each other right away.”
+
+“Doesn’t she like Wilson either?”
+
+The answer to this was unexpected. It came from Myrtle, who had
+overheard the question, and it was violent and obscene.
+
+“You see,” cried Catherine triumphantly. She lowered her voice again.
+“It’s really his wife that’s keeping them apart. She’s a Catholic, and
+they don’t believe in divorce.”
+
+Daisy was not a Catholic, and I was a little shocked at the
+elaborateness of the lie.
+
+“When they do get married,” continued Catherine, “they’re going West
+to live for a while until it blows over.”
+
+“It’d be more discreet to go to Europe.”
+
+“Oh, do you like Europe?” she exclaimed surprisingly. “I just got back
+from Monte Carlo.”
+
+“Really.”
+
+“Just last year. I went over there with another girl.”
+
+“Stay long?”
+
+“No, we just went to Monte Carlo and back. We went by way of
+Marseilles. We had over twelve hundred dollars when we started, but we
+got gyped out of it all in two days in the private rooms. We had an
+awful time getting back, I can tell you. God, how I hated that town!”
+
+The late afternoon sky bloomed in the window for a moment like the
+blue honey of the Mediterranean—then the shrill voice of Mrs. McKee
+called me back into the room.
+
+“I almost made a mistake, too,” she declared vigorously. “I almost
+married a little kike who’d been after me for years. I knew he was
+below me. Everybody kept saying to me: ‘Lucille, that man’s way below
+you!’ But if I hadn’t met Chester, he’d of got me sure.”
+
+“Yes, but listen,” said Myrtle Wilson, nodding her head up and down,
+“at least you didn’t marry him.”
+
+“I know I didn’t.”
+
+“Well, I married him,” said Myrtle, ambiguously. “And that’s the
+difference between your case and mine.”
+
+“Why did you, Myrtle?” demanded Catherine. “Nobody forced you to.”
+
+Myrtle considered.
+
+“I married him because I thought he was a gentleman,” she said
+finally. “I thought he knew something about breeding, but he wasn’t
+fit to lick my shoe.”
+
+“You were crazy about him for a while,” said Catherine.
+
+“Crazy about him!” cried Myrtle incredulously. “Who said I was crazy
+about him? I never was any more crazy about him than I was about that
+man there.”
+
+She pointed suddenly at me, and everyone looked at me accusingly. I
+tried to show by my expression that I expected no affection.
+
+“The only crazy I was was when I married him. I knew right away I made
+a mistake. He borrowed somebody’s best suit to get married in, and
+never even told me about it, and the man came after it one day when he
+was out: ‘Oh, is that your suit?’ I said. ‘This is the first I ever
+heard about it.’ But I gave it to him and then I lay down and cried to
+beat the band all afternoon.”
+
+“She really ought to get away from him,” resumed Catherine to me.
+“They’ve been living over that garage for eleven years. And Tom’s the
+first sweetie she ever had.”
+
+The bottle of whisky—a second one—was now in constant demand by all
+present, excepting Catherine, who “felt just as good on nothing at
+all.” Tom rang for the janitor and sent him for some celebrated
+sandwiches, which were a complete supper in themselves. I wanted to
+get out and walk eastward toward the park through the soft twilight,
+but each time I tried to go I became entangled in some wild, strident
+argument which pulled me back, as if with ropes, into my chair. Yet
+high over the city our line of yellow windows must have contributed
+their share of human secrecy to the casual watcher in the darkening
+streets, and I saw him too, looking up and wondering. I was within and
+without, simultaneously enchanted and repelled by the inexhaustible
+variety of life.
+
+Myrtle pulled her chair close to mine, and suddenly her warm breath
+poured over me the story of her first meeting with Tom.
+
+“It was on the two little seats facing each other that are always the
+last ones left on the train. I was going up to New York to see my
+sister and spend the night. He had on a dress suit and patent leather
+shoes, and I couldn’t keep my eyes off him, but every time he looked
+at me I had to pretend to be looking at the advertisement over his
+head. When we came into the station he was next to me, and his white
+shirtfront pressed against my arm, and so I told him I’d have to call
+a policeman, but he knew I lied. I was so excited that when I got into
+a taxi with him I didn’t hardly know I wasn’t getting into a subway
+train. All I kept thinking about, over and over, was ‘You can’t live
+forever; you can’t live forever.’ ”
+
+She turned to Mrs. McKee and the room rang full of her artificial
+laughter.
+
+“My dear,” she cried, “I’m going to give you this dress as soon as I’m
+through with it. I’ve got to get another one tomorrow. I’m going to
+make a list of all the things I’ve got to get. A massage and a wave,
+and a collar for the dog, and one of those cute little ashtrays where
+you touch a spring, and a wreath with a black silk bow for mother’s
+grave that’ll last all summer. I got to write down a list so I won’t
+forget all the things I got to do.”
+
+It was nine o’clock—almost immediately afterward I looked at my watch
+and found it was ten. Mr. McKee was asleep on a chair with his fists
+clenched in his lap, like a photograph of a man of action. Taking out
+my handkerchief I wiped from his cheek the spot of dried lather that
+had worried me all the afternoon.
+
+The little dog was sitting on the table looking with blind eyes
+through the smoke, and from time to time groaning faintly. People
+disappeared, reappeared, made plans to go somewhere, and then lost
+each other, searched for each other, found each other a few feet
+away. Some time toward midnight Tom Buchanan and Mrs. Wilson stood
+face to face discussing, in impassioned voices, whether Mrs. Wilson
+had any right to mention Daisy’s name.
+
+“Daisy! Daisy! Daisy!” shouted Mrs. Wilson. “I’ll say it whenever I
+want to! Daisy! Dai—”
+
+Making a short deft movement, Tom Buchanan broke her nose with his
+open hand.
+
+Then there were bloody towels upon the bathroom floor, and women’s
+voices scolding, and high over the confusion a long broken wail of
+pain. Mr. McKee awoke from his doze and started in a daze toward the
+door. When he had gone halfway he turned around and stared at the
+scene—his wife and Catherine scolding and consoling as they stumbled
+here and there among the crowded furniture with articles of aid, and
+the despairing figure on the couch, bleeding fluently, and trying to
+spread a copy of Town Tattle over the tapestry scenes of
+Versailles. Then Mr. McKee turned and continued on out the door.
+Taking my hat from the chandelier, I followed.
+
+“Come to lunch some day,” he suggested, as we groaned down in the
+elevator.
+
+“Where?”
+
+“Anywhere.”
+
+“Keep your hands off the lever,” snapped the elevator boy.
+
+“I beg your pardon,” said Mr. McKee with dignity, “I didn’t know I was
+touching it.”
+
+“All right,” I agreed, “I’ll be glad to.”
+
+… I was standing beside his bed and he was sitting up between the
+sheets, clad in his underwear, with a great portfolio in his hands.
+
+“Beauty and the Beast … Loneliness … Old Grocery Horse … Brook’n
+Bridge …”
+
+Then I was lying half asleep in the cold lower level of the
+Pennsylvania Station, staring at the morning Tribune, and waiting for
+the four o’clock train.
+
+
+# Reviewer note sidecar
+
+At the end of each drafted chapter, append exactly one HTML comment in this
+format:
+
+<!-- FORAGE_CHAPTER_NOTES
+{
+  "summary": "One sentence summarizing the chapter-level compression strategy.",
+  "acceptable_changes": [
+    "Why a major compression, omission, merge, or rewrite is acceptable under the spec."
+  ],
+  "risks": [
+    "A continuity, reference, voice, tone, or scene-logic risk the reviewer should inspect."
+  ],
+  "review_focus": [
+    "A concrete place or kind of change that deserves human attention."
+  ]
+}
+-->
+
+Keep the note concise and reviewer-facing. Do not include chain-of-thought or
+private reasoning; summarize the editorial rationale and risks. For merged
+chapter output, append a separate `FORAGE_CHAPTER_NOTES` comment at the end of
+each chapter-delimited sub-section, before the next `## Chapter N` heading.
+
+# Task
+
+Produce the faithful abridgment per the spec above. Output only the abridged prose plus the required `FORAGE_CHAPTER_NOTES` HTML comment — no preamble, no other commentary, no other metadata.

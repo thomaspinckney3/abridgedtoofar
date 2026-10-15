@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-sonnet-4-6
+model: anthropic:claude-sonnet-5-5
 max_tokens: 24000
 ---
 You are the structural coherence repair stage of a faithful abridgment pipeline.

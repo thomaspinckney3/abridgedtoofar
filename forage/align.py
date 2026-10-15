@@ -7,7 +7,9 @@ their source paragraphs. Writes work/<book>/alignments/<sid>.json.
 from __future__ import annotations
 
 import json
+import os
 import re
+import tempfile
 from pathlib import Path
 
 from .artifacts import Book, read_json, write_json
@@ -45,6 +47,34 @@ def _numbered(paragraphs: list[str]) -> str:
     return "\n\n".join(f"[{i}] {p}" for i, p in enumerate(paragraphs))
 
 
+def _valid_mapping(mapping: object, source_count: int, draft_count: int) -> bool:
+    if not isinstance(mapping, list):
+        return False
+    seen = set()
+    for item in mapping:
+        if not isinstance(item, dict):
+            return False
+        draft = item.get("draft_para")
+        sources = item.get("source_paras")
+        if (type(draft) is not int or not 0 <= draft < draft_count
+                or draft in seen or not isinstance(sources, list)
+                or any(type(i) is not int or not 0 <= i < source_count for i in sources)):
+            return False
+        seen.add(draft)
+    return seen == set(range(draft_count))
+
+
+def _alignment_current(path: Path, source: list[str], draft: list[str]) -> bool:
+    try:
+        cached = read_json(path)
+    except (OSError, ValueError):
+        return False
+    return (isinstance(cached, dict)
+            and cached.get("source_paragraphs") == source
+            and cached.get("draft_paragraphs") == draft
+            and _valid_mapping(cached.get("mapping"), len(source), len(draft)))
+
+
 def align_chapter(book: Book, segment_id: str) -> dict:
     """Align one chapter's draft to its source. Returns the alignment dict and
     writes work/<book>/alignments/<sid>.json."""
@@ -65,13 +95,17 @@ def align_chapter(book: Book, segment_id: str) -> dict:
     )
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+        model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         max_tokens=prompt.config.get("max_tokens", 8000),
         cache=False,
         work_dir=book.work_dir,
         stage=f"align:{book.book_id}:{segment_id}",
     )
+    if not resp.is_complete:
+        raise ValueError(f"incomplete alignment response: {resp.stop_reason}")
     mapping = _parse_json_array(resp.text)
+    if not isinstance(mapping, list):
+        raise ValueError("alignment response must be a JSON array")
 
     # Normalize any nested lists (same defensive pattern we use elsewhere).
     flat: list[dict] = []
@@ -80,6 +114,8 @@ def align_chapter(book: Book, segment_id: str) -> dict:
             flat.extend(x for x in f if isinstance(x, dict))
         elif isinstance(f, dict):
             flat.append(f)
+    if not _valid_mapping(flat, len(source_paras), len(draft_paras)):
+        raise ValueError("alignment response does not map every draft paragraph")
 
     out = {
         "segment_id": segment_id,
@@ -89,13 +125,19 @@ def align_chapter(book: Book, segment_id: str) -> dict:
     }
     out_dir = book.work_dir / "alignments"
     out_dir.mkdir(exist_ok=True)
-    write_json(out_dir / f"{segment_id}.json", out)
+    # Keep the previous review view intact until regeneration fully succeeds.
+    with tempfile.NamedTemporaryFile(dir=out_dir, suffix=".tmp", delete=False) as tmp:
+        temp_path = Path(tmp.name)
+    try:
+        write_json(temp_path, out)
+        os.replace(temp_path, out_dir / f"{segment_id}.json")
+    finally:
+        temp_path.unlink(missing_ok=True)
     return out
 
 
 def align_book(book: Book) -> dict:
-    """Align all diegetic chapters. Skips chapters where alignment already
-    exists on disk (resumable). Returns summary dict."""
+    """Align diegetic chapters, reusing only mappings of the current inputs."""
     plan = read_json(book.work_dir / "plan.json")
     diegetic = [s["id"] for s in plan.get("segments", [])
                 if s.get("diegetic_status") == "diegetic"
@@ -106,15 +148,12 @@ def align_book(book: Book) -> dict:
 
     done, skipped, errors = [], [], []
     for sid in diegetic:
-        draft_path = book.work_dir / "segments" / f"{sid}.md"
-        if not draft_path.exists():
-            skipped.append((sid, "no draft"))
-            continue
-        out_path = out_dir / f"{sid}.json"
-        if out_path.exists():
-            skipped.append((sid, "already aligned"))
-            continue
         try:
+            source = _split_paragraphs((book.work_dir / "chapters" / f"{sid}.md").read_text())
+            draft = _split_paragraphs((book.work_dir / "segments" / f"{sid}.md").read_text())
+            if _alignment_current(out_dir / f"{sid}.json", source, draft):
+                skipped.append((sid, "already aligned"))
+                continue
             align_chapter(book, sid)
             done.append(sid)
         except Exception as e:

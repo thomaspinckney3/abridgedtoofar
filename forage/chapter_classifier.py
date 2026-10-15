@@ -19,7 +19,7 @@ import re
 
 from .artifacts import Book, read_json, write_json
 from .chapter_split import split_to_disk
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 _FENCE_RE = re.compile(r"^```(?:json)?\s*(.*?)\s*```$", re.DOTALL)
@@ -101,7 +101,7 @@ def classify_chapters(book: Book) -> dict[str, dict]:
     )
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+        model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         system=prompt.system,
         max_tokens=prompt.config.get("max_tokens", 12000),
         temperature=prompt.config.get("temperature"),
@@ -110,6 +110,7 @@ def classify_chapters(book: Book) -> dict[str, dict]:
         stage=f"classify:{book.book_id}",
     )
 
+    require_complete_response(resp, "classification")
     entries = _parse_json_array(resp.text)
 
     result: dict[str, dict] = {}

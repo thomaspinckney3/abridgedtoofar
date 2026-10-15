@@ -21,7 +21,7 @@ from .cuts import (_build_chapter_blocks, _partition_into_chunks,
                    MAX_CHUNK_WORDS as CUTS_MAX_CHUNK_WORDS)
 from .drafter import (_draft_fallback_model, build_draft_group_request,
                       build_draft_segment_request)
-from .llm import REPLAY_DIR, replay_cache_path, replay_key_for_request, resolve_model_for_stage
+from .llm import replay_cache_root, replay_cache_path, replay_key_for_request, resolve_model_for_stage
 from .prompts import load_prompt
 from .source_fingerprint import compare_source_fingerprint
 from .summarizer import (MAX_CHUNK_WORDS as SYNOPSIS_MAX_CHUNK_WORDS,
@@ -254,7 +254,7 @@ def _classification_rows(book: Book) -> list[AuditRow]:
         stage=f"classify:{book.book_id}",
         request="book",
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+        model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         system=prompt.system,
         max_tokens=prompt.config.get("max_tokens", 12000),
         temperature=prompt.config.get("temperature"),
@@ -302,7 +302,7 @@ def _single_synopsis_row(book: Book, chapter_sources: list[dict], *,
         stage=stage,
         request=request,
         prompt=rendered,
-        model=prompt.config.get("model", "openai:gpt-5"),
+        model=prompt.config.get("model", "openai:gpt-6-astra"),
         max_tokens=prompt.config.get("max_tokens", 8000),
     )
     return row, _cache_text_for_key(row.key) if row.status == "hit" else None
@@ -353,7 +353,7 @@ def _summarize_rows(book: Book) -> list[AuditRow]:
         stage=f"summarize:{book.book_id}:merge",
         request="merge",
         prompt=rendered,
-        model=prompt.config.get("model", "openai:gpt-5"),
+        model=prompt.config.get("model", "openai:gpt-6-astra"),
         max_tokens=prompt.config.get("max_tokens", 4000),
     ))
     return rows
@@ -385,7 +385,7 @@ def _cuts_rows(book: Book) -> list[AuditRow]:
             stage=stage,
             request="book" if len(chunks) == 1 else f"part{i}",
             prompt=rendered,
-            model=prompt.config.get("model", "openai:gpt-5"),
+            model=prompt.config.get("model", "openai:gpt-6-astra"),
             max_tokens=prompt.config.get("max_tokens", 12000),
         ))
     return rows
@@ -556,7 +556,7 @@ def _book_critic_rows(book: Book) -> list[AuditRow]:
         stage=f"critic:book:{book.book_id}",
         request="book",
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+        model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         max_tokens=prompt.config.get("max_tokens", 8000),
     )]
 
@@ -600,7 +600,7 @@ def _coherence_rows(book: Book) -> list[AuditRow]:
             stage=f"coherence:{book.book_id}:{pair}",
             request=pair,
             prompt=rendered,
-            model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+            model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
             max_tokens=prompt.config.get("max_tokens", 12000),
         ))
     return rows
@@ -608,7 +608,7 @@ def _coherence_rows(book: Book) -> list[AuditRow]:
 
 def audit_replay_cache_files() -> dict:
     """Integrity check for existing replay-cache files."""
-    root = REPLAY_DIR
+    root = replay_cache_root()
     result = {
         "total": 0,
         "valid": 0,

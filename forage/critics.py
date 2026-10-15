@@ -12,7 +12,7 @@ from pathlib import Path
 
 from .artifacts import Book, read_json, segment_source_path, write_json
 from .json_parse import parse_llm_json
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 
@@ -28,6 +28,27 @@ class CriticResult:
 CRITICS = {
     "signature": "critic_signature",
 }
+
+
+def _validate_critic_data(data, *, segment_id: str, critic_name: str) -> None:
+    """A provider error or malformed finding is not an editorial pass."""
+    if (not isinstance(data, dict) or data.get("error") or data.get("refusal")
+            or data.get("segment_id") != segment_id
+            or data.get("critic") != critic_name
+            or data.get("verdict") not in {"pass", "regenerate"}
+            or not isinstance(data.get("summary"), str)
+            or not isinstance(data.get("findings"), list)):
+        raise ValueError("invalid signature critic response: expected identity, verdict, summary and findings")
+    classes = {"signature_loss", "voice_erasure", "interpretive_loss", "motif_depletion", "voice_flattening", "other"}
+    treatments = {"absent", "paraphrased", "flattened", "fragment_preserved"}
+    for finding in data["findings"]:
+        if (not isinstance(finding, dict)
+                or finding.get("severity") not in {"high", "medium", "low"}
+                or finding.get("class") not in classes
+                or finding.get("draft_treatment") not in treatments
+                or any(not isinstance(finding.get(key), str) or not finding[key].strip()
+                       for key in ["source_passage", "source_locator", "why_it_matters", "suggested_fix"])):
+            raise ValueError("invalid signature critic finding")
 
 
 def run_critic(book: Book, segment_id: str, critic_name: str) -> CriticResult:
@@ -76,7 +97,7 @@ def run_critic(book: Book, segment_id: str, critic_name: str) -> CriticResult:
 
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "anthropic:claude-opus-4-7"),
+        model=prompt.config.get("model", "anthropic:claude-opus-5-5"),
         system=prompt.system,
         max_tokens=prompt.config.get("max_tokens", 8000),
         temperature=prompt.config.get("temperature"),
@@ -85,14 +106,16 @@ def run_critic(book: Book, segment_id: str, critic_name: str) -> CriticResult:
         stage=f"critic:{critic_name}:{book.book_id}:{segment_id}",
     )
 
+    require_complete_response(resp, "signature critic")
     data = parse_llm_json(resp.text)
+    _validate_critic_data(data, segment_id=segment_id, critic_name=critic_name)
     write_json(seg_dir / f"{segment_id}.critic_{critic_name}.json", data)
     return CriticResult(
         segment_id=segment_id,
         critic=critic_name,
-        verdict=data.get("verdict", "pass"),
-        summary=data.get("summary", ""),
-        findings=data.get("findings", []),
+        verdict=data["verdict"],
+        summary=data["summary"],
+        findings=data["findings"],
     )
 
 

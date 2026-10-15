@@ -13,6 +13,7 @@ import os
 import re
 import shutil
 import subprocess
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -21,13 +22,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from .artifacts import Book, write_json
+from .artifacts import Book
 
 ELEVENLABS_TTS_URL = "https://api.elevenlabs.io/v1/text-to-speech"
 DEFAULT_MODEL = "eleven_multilingual_v2"
 DEFAULT_OUTPUT_FORMAT = "mp3_44100_128"
 DEFAULT_MAX_CHARS = 9000
 DEFAULT_CONTEXT_CHARS = 1200
+MANIFEST_VERSION = 2
 
 
 class AudiobookError(RuntimeError):
@@ -61,6 +63,7 @@ class AudiobookResult:
     total_chars: int
     combined_audio_path: Path | None
     published_audio_path: Path | None
+    combine_error: str | None = None
 
 
 class ElevenLabsClient:
@@ -187,6 +190,8 @@ def generate_audiobook(
         raise AudiobookError("--max-chars must be at least 1000")
     if context_chars < 0:
         raise AudiobookError("--context-chars cannot be negative")
+    if limit is not None and limit < 0:
+        raise AudiobookError("--limit cannot be negative")
 
     api_key = os.environ.get("ELEVENLABS_API_KEY")
     if not dry_run:
@@ -201,16 +206,21 @@ def generate_audiobook(
             )
 
     output_dir = output_dir or (book.work_dir / "audiobook")
-    chunks_dir = output_dir / "chunks"
+    # A preview has its own sidecars and manifest. It must never relabel real
+    # audio with text or settings which have not been synthesized.
+    artifact_dir = output_dir / "preview" if dry_run else output_dir
+    manifest_path = artifact_dir / "audiobook_manifest.json"
+    chunks_dir = artifact_dir / "chunks"
     audio_dir = output_dir / "audio"
     chunks_dir.mkdir(parents=True, exist_ok=True)
-    audio_dir.mkdir(parents=True, exist_ok=True)
+    if not dry_run:
+        audio_dir.mkdir(parents=True, exist_ok=True)
 
     text = source_path.read_text(encoding="utf-8", errors="replace")
     chunks = _make_chunks(text, max_chars=max_chars, chunks_dir=chunks_dir,
                           audio_dir=audio_dir, output_format=output_format)
-    for chunk in chunks:
-        chunk.text_path.write_text(chunk.text + "\n", encoding="utf-8")
+    if not chunks:
+        raise AudiobookError("abridgment text contains no narration chunks")
 
     client = ElevenLabsClient(api_key or "", timeout=timeout, retries=retries)
 
@@ -221,68 +231,96 @@ def generate_audiobook(
     generated_at = time.strftime("%Y-%m-%dT%H:%M:%S")
 
     for index, chunk in enumerate(chunks):
-        old_entry = _old_chunk_entry(old_manifest, chunk)
-        request_id = old_entry.get("request_id") if old_entry else None
+        ids = previous_ids[-3:] if stitch and enable_logging else []
+        request = {
+            "voice_id": voice_id or "",
+            "text": chunk.text,
+            "model_id": model_id,
+            "output_format": output_format,
+            "voice_settings": voice_settings or None,
+            # ElevenLabs ignores previous_text when request IDs are supplied.
+            "previous_text": (
+                _context_before(chunks, index, context_chars)
+                if stitch and not ids else None
+            ),
+            "next_text": (
+                _context_after(chunks, index, context_chars) if stitch else None
+            ),
+            "previous_request_ids": ids or None,
+            "seed": seed,
+            "language_code": language_code or None,
+            "apply_text_normalization": apply_text_normalization or None,
+            "enable_logging": enable_logging,
+        }
+        request_sha256 = _json_sha256({
+            "version": MANIFEST_VERSION,
+            "provider": ELEVENLABS_TTS_URL,
+            "request": request,
+            "stitch": stitch,
+            "context_chars": context_chars if stitch else 0,
+        })
+        old_entry = _old_chunk_entry(old_manifest, chunk, request_sha256)
+        request_id: str | None = None
         status = "planned"
         error: str | None = None
         character_cost: str | None = None
         api_ms: int | None = None
+        audio_sha256: str | None = None
+        audio_size: int | None = None
 
-        should_generate = (
-            not dry_run
-            and (limit is None or index < limit)
-            and (overwrite or not chunk.audio_path.exists())
-        )
-        if dry_run or (limit is not None and index >= limit):
+        if dry_run:
+            _atomic_write(chunk.text_path, (chunk.text + "\n").encode("utf-8"))
             planned += 1
-        elif not overwrite and chunk.audio_path.exists():
+        elif not overwrite and old_entry:
             status = "skipped"
             skipped += 1
-            if request_id:
-                previous_ids.append(str(request_id))
-                previous_ids = previous_ids[-3:]
-        elif should_generate:
+            request_id = old_entry.get("request_id")
+            character_cost = old_entry.get("character_cost")
+            audio_sha256 = old_entry["audio_sha256"]
+            audio_size = old_entry["audio_size"]
+        elif limit is not None and index >= limit:
+            planned += 1
+        else:
             start = time.monotonic()
             try:
-                previous_text = _context_before(chunks, index, context_chars)
-                next_text = _context_after(chunks, index, context_chars)
-                ids = previous_ids if stitch and enable_logging else None
-                audio, headers = client.text_to_speech(
-                    voice_id=voice_id or "",
-                    text=chunk.text,
-                    model_id=model_id,
-                    output_format=output_format,
-                    voice_settings=voice_settings,
-                    previous_text=previous_text if stitch else None,
-                    next_text=next_text if stitch else None,
-                    previous_request_ids=ids,
-                    seed=seed,
-                    language_code=language_code,
-                    apply_text_normalization=apply_text_normalization,
-                    enable_logging=enable_logging,
-                )
-                chunk.audio_path.write_bytes(audio)
+                audio, headers = client.text_to_speech(**request)
+                if not isinstance(audio, bytes) or not audio:
+                    raise AudiobookError("ElevenLabs returned empty or invalid audio")
                 request_id = headers.get("request_id")
                 character_cost = headers.get("character_cost")
-                if request_id:
-                    previous_ids.append(request_id)
-                    previous_ids = previous_ids[-3:]
+                _replace_chunk_output(chunk, audio)
+                audio_sha256 = hashlib.sha256(audio).hexdigest()
+                audio_size = len(audio)
                 api_ms = int((time.monotonic() - start) * 1000)
                 status = "generated"
                 generated += 1
             except Exception as e:
                 status = "error"
                 error = str(e)
+                request_id = None
                 errors += 1
+
+        if status in ("generated", "skipped") and request_id:
+            previous_ids = [*previous_ids, request_id][-3:]
         else:
-            planned += 1
+            # Do not stitch around an unsuccessful predecessor using old IDs.
+            previous_ids = []
 
         entries.append({
             "id": chunk.id,
-            "text_path": str(chunk.text_path),
-            "audio_path": str(chunk.audio_path),
+            "text_path": (
+                str(chunk.text_path)
+                if dry_run or status in ("generated", "skipped") else None
+            ),
+            "audio_path": (
+                str(chunk.audio_path)
+                if status in ("generated", "skipped") else None
+            ),
             "chars": chunk.char_count,
             "text_sha256": chunk.text_sha256,
+            "request_sha256": request_sha256,
+            "audio_sha256": audio_sha256,
+            "audio_size": audio_size,
             "status": status,
             "request_id": request_id,
             "character_cost": character_cost,
@@ -293,23 +331,38 @@ def generate_audiobook(
     combined_audio_path: Path | None = None
     published_audio_path: Path | None = None
     combine_error: str | None = None
-    if combine and not dry_run and errors == 0:
+    if combine and not dry_run and (errors or planned):
+        combine_error = f"cannot combine incomplete narration: {errors} failed and {planned} planned chunks"
+    elif combine and not dry_run:
         audio_paths = [c.audio_path for c in chunks]
-        generated_enough = all(p.exists() for p in audio_paths)
+        generated_enough = all(
+            entry["status"] in ("generated", "skipped")
+            and _verified_audio(chunk.audio_path, entry)
+            for chunk, entry in zip(chunks, entries)
+        )
         if generated_enough:
-            combined_audio_path, combine_error = combine_audio_chunks(
-                audio_paths, output_dir / f"audiobook{_extension(output_format)}",
-                output_format=output_format,
-            )
+            try:
+                combined_audio_path, combine_error = combine_audio_chunks(
+                    audio_paths, output_dir / f"audiobook{_extension(output_format)}",
+                    output_format=output_format,
+                )
+            except OSError as e:
+                combine_error = f"could not combine audio: {e}"
             if combined_audio_path:
-                published_audio_path = (
+                publication_path = (
                     book.source_path.parent
                     / f"audiobook{_extension(output_format)}"
                 )
-                shutil.copyfile(combined_audio_path, published_audio_path)
+                try:
+                    _atomic_write(publication_path, combined_audio_path.read_bytes())
+                    published_audio_path = publication_path
+                except OSError as e:
+                    combine_error = f"could not publish combined audio: {e}"
+        else:
+            combine_error = "chunk audio changed before combination"
 
-    manifest_path = output_dir / "audiobook_manifest.json"
-    write_json(manifest_path, {
+    _atomic_write_json(manifest_path, {
+        "version": MANIFEST_VERSION,
         "book_id": book.book_id,
         "source_text_path": str(source_path),
         "output_dir": str(output_dir),
@@ -323,6 +376,9 @@ def generate_audiobook(
         "enable_logging": enable_logging,
         "stitch": stitch,
         "voice_settings": voice_settings or {},
+        "seed": seed,
+        "language_code": language_code,
+        "apply_text_normalization": apply_text_normalization,
         "chunk_count": len(chunks),
         "total_chars": sum(c.char_count for c in chunks),
         "generated_count": generated,
@@ -352,6 +408,7 @@ def generate_audiobook(
         total_chars=sum(c.char_count for c in chunks),
         combined_audio_path=combined_audio_path,
         published_audio_path=published_audio_path,
+        combine_error=combine_error,
     )
 
 
@@ -398,17 +455,26 @@ def combine_audio_chunks(
         encoding="utf-8",
     )
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        ffmpeg, "-y", "-hide_banner", "-loglevel", "error",
-        "-f", "concat", "-safe", "0", "-i", str(list_path),
-        "-c", "copy", str(output_path),
-    ]
-    try:
-        subprocess.run(cmd, check=True, capture_output=True, text=True)
-        return output_path, None
-    except subprocess.CalledProcessError as e:
-        msg = (e.stderr or e.stdout or str(e)).strip()
-        return None, msg
+    # ffmpeg can leave a partial output on failure. Keep the previous complete
+    # combined file until a nonempty replacement has been produced.
+    with tempfile.TemporaryDirectory(prefix=".combine-", dir=output_path.parent) as temp:
+        staged = Path(temp) / output_path.name
+        cmd = [
+            ffmpeg, "-y", "-hide_banner", "-loglevel", "error",
+            "-f", "concat", "-safe", "0", "-i", str(list_path),
+            "-c", "copy", str(staged),
+        ]
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
+            if not staged.is_file() or not staged.stat().st_size:
+                raise AudiobookError("ffmpeg returned no audio")
+            staged.replace(output_path)
+            return output_path, None
+        except subprocess.CalledProcessError as e:
+            msg = (e.stderr or e.stdout or str(e)).strip()
+            return None, msg
+        except (OSError, AudiobookError) as e:
+            return None, str(e)
 
 
 def _make_chunks(text: str, *, max_chars: int, chunks_dir: Path,
@@ -512,21 +578,124 @@ def _context_after(chunks: list[AudiobookChunk], index: int,
 
 
 def _old_chunk_entry(manifest: dict[str, Any] | None,
-                     chunk: AudiobookChunk) -> dict[str, Any]:
-    if not manifest:
+                     chunk: AudiobookChunk,
+                     request_sha256: str) -> dict[str, Any]:
+    if (not manifest or manifest.get("version") != MANIFEST_VERSION
+            or manifest.get("dry_run") is not False):
         return {}
-    for item in manifest.get("chunks", []):
-        if (item.get("id") == chunk.id
-                and item.get("text_sha256") == chunk.text_sha256):
-            return item
+    items = manifest.get("chunks")
+    if not isinstance(items, list):
+        return {}
+    for item in items:
+        if (isinstance(item, dict)
+                and item.get("id") == chunk.id
+                and item.get("status") in ("generated", "skipped")
+                and item.get("error") is None
+                and item.get("text_sha256") == chunk.text_sha256
+                and item.get("request_sha256") == request_sha256
+                and _verified_audio(chunk.audio_path, item)):
+            try:
+                if chunk.text_path.read_text(encoding="utf-8") == chunk.text + "\n":
+                    return item
+            except (OSError, UnicodeError):
+                pass
     return {}
+
+
+def _verified_audio(path: Path, entry: dict[str, Any]) -> bool:
+    try:
+        audio = path.read_bytes()
+    except OSError:
+        return False
+    return (bool(audio)
+            and len(audio) == entry.get("audio_size")
+            and hashlib.sha256(audio).hexdigest() == entry.get("audio_sha256"))
+
+
+def _json_sha256(value: Any) -> str:
+    encoded = json.dumps(value, sort_keys=True, separators=(",", ":"),
+                         ensure_ascii=False, allow_nan=False).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def _atomic_write(path: Path, data: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".audiobook-",
+                                     delete=False) as handle:
+        staged = Path(handle.name)
+        try:
+            handle.write(data)
+            handle.close()
+            staged.replace(path)
+        finally:
+            staged.unlink(missing_ok=True)
+
+
+def _atomic_write_json(path: Path, data: Any) -> None:
+    _atomic_write(path, (json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+                  .encode("utf-8"))
+
+
+def _replace_chunk_output(chunk: AudiobookChunk, audio: bytes) -> None:
+    """Stage both files, restoring earlier outputs if either replacement fails.
+
+    The manifest is written only after success. A process interruption between
+    replacements is detected by the next run's byte and sidecar checks.
+    """
+    temp_dir = Path(tempfile.mkdtemp(prefix=".chunk-", dir=chunk.audio_path.parent))
+    retain_recovery = False
+    try:
+        replacements = [
+            (chunk.audio_path, audio),
+            (chunk.text_path, (chunk.text + "\n").encode("utf-8")),
+        ]
+        backups: dict[Path, Path | None] = {}
+        staged: dict[Path, Path] = {}
+        for index, (path, content) in enumerate(replacements):
+            staged[path] = temp_dir / f"{index}.new"
+            staged[path].write_bytes(content)
+            backup = temp_dir / f"{index}.old" if path.exists() else None
+            if backup is not None:
+                shutil.copyfile(path, backup)
+            backups[path] = backup
+        replaced: list[Path] = []
+        try:
+            for path, _ in replacements:
+                staged[path].replace(path)
+                replaced.append(path)
+        except BaseException as error:
+            rollback_errors = []
+            for path in reversed(replaced):
+                backup = backups[path]
+                try:
+                    if backup is None:
+                        path.unlink(missing_ok=True)
+                    else:
+                        backup.replace(path)
+                except OSError as rollback_error:
+                    rollback_errors.append((path, backup, rollback_error))
+            if rollback_errors:
+                retain_recovery = True
+                recovery = "; ".join(
+                    f"restore {path} from {backup}" if backup else f"remove partial {path}"
+                    for path, backup, _ in rollback_errors
+                )
+                raise AudiobookError(
+                    f"chunk replacement rollback failed; recovery files retained in "
+                    f"{temp_dir}: {recovery}"
+                ) from error
+            raise
+    finally:
+        if not retain_recovery:
+            shutil.rmtree(temp_dir, ignore_errors=True)
 
 
 def _load_manifest(path: Path) -> dict[str, Any] | None:
     if not path.exists():
         return None
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        value = json.loads(path.read_text(encoding="utf-8"))
+        return value if isinstance(value, dict) else None
     except Exception:
         return None
 

@@ -1,0 +1,111 @@
+{
+  "status": "prepared_awaiting_api_credentials",
+  "scope": "Four-chapter historical-output comparison with fixed existing plans and cuts; not a controlled old-vs-new model benchmark.",
+  "models": {
+    "draft": "anthropic:claude-opus-5-5",
+    "critic": "anthropic:claude-sonnet-5-5",
+    "coherence": "anthropic:claude-sonnet-5-5",
+    "coherence_fix": "anthropic:claude-sonnet-5-5",
+    "draft_fallback": "openai:gpt-6-astra"
+  },
+  "stages": [
+    "draft new sample",
+    "coherence on baseline and new sample",
+    "coherence-fix on new sample when needed",
+    "post-fix coherence when drafts changed",
+    "signature critique on baseline and final new sample",
+    "word counts, source comparison, and HTML diffs"
+  ],
+  "book_level_stages": "Existing classifications, synopsis, cuts, and budgets reused. No full-book regeneration or book-critique verdict on a partial sample.",
+  "expected_calls_without_retries": {
+    "draft": 3,
+    "coherence": "4 to 6",
+    "coherence_fix": "0 to 2",
+    "signature_critic": 8
+  },
+  "estimated_cost_usd": [
+    5,
+    10
+  ],
+  "cost_note": "Estimate from historical token usage at Opus 5.5 $4/$20 and Sonnet 5.5 $2/$10 per million input/output tokens; thinking, retries, and provider fallback can increase cost.",
+  "pricing_source": "https://platform.claude.com/docs/en/models/overview",
+  "books": [
+    {
+      "book_id": "gatsby",
+      "title": "The Great Gatsby",
+      "source_path": "books/gatsby/gatsby.txt",
+      "segments": [
+        {
+          "id": "001",
+          "title": "I",
+          "source_words": 5891,
+          "target_words": 3200,
+          "baseline_words": 4761,
+          "baseline_sha256": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08"
+        },
+        {
+          "id": "002",
+          "title": "II",
+          "source_words": 4279,
+          "target_words": 2300,
+          "baseline_words": 2816,
+          "baseline_sha256": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201"
+        }
+      ],
+      "draft_requests": [
+        {
+          "id": "001",
+          "model": "anthropic:claude-opus-5-5",
+          "thinking": "max",
+          "max_tokens": 128000,
+          "prompt_characters": 79740,
+          "estimated_input_tokens": 22783,
+          "note": "Preview only; sequential draft context is rebuilt at execution."
+        },
+        {
+          "id": "002",
+          "model": "anthropic:claude-opus-5-5",
+          "thinking": "max",
+          "max_tokens": 128000,
+          "prompt_characters": 70336,
+          "estimated_input_tokens": 20096,
+          "note": "Preview only; sequential draft context is rebuilt at execution."
+        }
+      ]
+    },
+    {
+      "book_id": "mobydick",
+      "title": "Moby-Dick; or, The Whale",
+      "source_path": "books/mobydick/mobydick.txt",
+      "segments": [
+        {
+          "id": "004",
+          "title": "Loomings.",
+          "source_words": 2190,
+          "target_words": 1200,
+          "baseline_words": 1123,
+          "baseline_sha256": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489"
+        },
+        {
+          "id": "005",
+          "title": "The Carpet-Bag.",
+          "source_words": 1416,
+          "target_words": 800,
+          "baseline_words": 716,
+          "baseline_sha256": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0"
+        }
+      ],
+      "draft_requests": [
+        {
+          "id": "g002",
+          "model": "anthropic:claude-opus-5-5",
+          "thinking": "max",
+          "max_tokens": 128000,
+          "prompt_characters": 69264,
+          "estimated_input_tokens": 19790,
+          "note": "Preview only; sequential draft context is rebuilt at execution."
+        }
+      ]
+    }
+  ]
+}

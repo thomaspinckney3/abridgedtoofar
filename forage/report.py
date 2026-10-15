@@ -164,7 +164,8 @@ COLUMNS = ("book", "chapters", "source → final",
 
 def available_books() -> list[str]:
     """List books with at least a plan.json or chapters.json in work/."""
-    work_dir = Path(__file__).resolve().parent.parent / "work"
+    from .resources import workspace_dirs
+    work_dir = workspace_dirs()[1]
     if not work_dir.is_dir():
         return []
     return sorted(

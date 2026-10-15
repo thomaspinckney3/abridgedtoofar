@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-opus-4-7
+model: anthropic:claude-opus-5-5
 max_tokens: 4000
 system: |
   You are re-identifying the signature inventory for one segment of a book whose

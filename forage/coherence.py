@@ -31,7 +31,7 @@ from pathlib import Path
 
 from .artifacts import Book, read_json, write_json
 from .coherence_filter import normalize_finding_validity
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 _FENCE_RE = re.compile(r"^```(?:json)?\s*(.*?)\s*```$", re.DOTALL)
@@ -156,12 +156,13 @@ def run_coherence(book: Book) -> dict:
         )
         resp = complete(
             prompt=rendered,
-            model=prompt.config.get("model", "anthropic:claude-sonnet-4-6"),
+            model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
             max_tokens=prompt.config.get("max_tokens", 12000),
             cache=False,
             work_dir=book.work_dir,
             stage=f"coherence:{book.book_id}:{sid_n}-{sid_np1}",
         )
+        require_complete_response(resp, "coherence")
         try:
             findings = _parse_json_array(resp.text)
         except Exception as e:

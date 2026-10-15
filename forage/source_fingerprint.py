@@ -12,6 +12,8 @@ import hashlib
 from pathlib import Path
 from typing import Any
 
+from .resources import resource_path, PACKAGE_DIR
+
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -102,7 +104,8 @@ def stage_fingerprint_group(stage: str) -> str:
 
 
 def _file_digest(rel_path: str) -> dict[str, Any]:
-    path = ROOT / rel_path
+    path = (PACKAGE_DIR / rel_path.removeprefix("forage/")
+            if rel_path.startswith("forage/") else resource_path(rel_path))
     if not path.exists():
         return {"path": rel_path, "sha256": None, "missing": True}
     return {

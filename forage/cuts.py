@@ -5,7 +5,7 @@ without materially changing the reader's sense of plot, theme, or
 principal-character arcs. Inverse framing of the older signature-prepass
 which tried to enumerate what to preserve.
 
-For books that fit GPT-5's input context, a single LLM call produces the
+For books that fit the configured chunk budget, a single LLM call produces the
 inventory. For longer books, the source is split into N chunks at chapter
 boundaries, each chunk is sent with the same authoritative synopsis, and
 the partial inventories are merged deterministically by deduplicating
@@ -24,13 +24,13 @@ import re
 from pathlib import Path
 
 from .artifacts import Book, read_json, write_json
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 TOKENS_PER_WORD = 1.4
-# GPT-5's context fits ~260k tokens, but format adherence degrades at
-# very large inputs (it starts returning prose instead of JSON at ~250k).
-# Conservative cap forces mid-size books like Uncle Tom's Cabin to chunk.
+# Retain the chunk budget established with GPT-5, whose format adherence
+# degraded near 250k input tokens. Larger contexts on newer models do not
+# imply that larger chunks preserve the same output quality.
 MAX_INPUT_TOKENS = 200_000
 PROMPT_OVERHEAD_TOKENS = 2000  # spec + synopsis + instructions
 MAX_CHUNK_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
@@ -138,12 +138,13 @@ def _call_cuts_prepass(book: Book, chunk_blocks: list[tuple[str, int]],
     )
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "openai:gpt-5"),
+        model=prompt.config.get("model", "openai:gpt-6-astra"),
         max_tokens=prompt.config.get("max_tokens", 12000),
         cache=False,
         work_dir=book.work_dir,
         stage=stage,
     )
+    require_complete_response(resp, "cuts")
     data = _parse_json_object(resp.text)
     for key in ("minor_characters", "subplots", "digressions", "skippable_chapters"):
         data.setdefault(key, [])

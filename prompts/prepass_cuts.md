@@ -1,5 +1,5 @@
 ---
-model: openai:gpt-5
+model: openai:gpt-6-astra
 max_tokens: 12000
 ---
 You are building a "cuts inventory" for an abridgment of **{{book.title}}** by {{book.author}}. Enumerate characters, subplots, and digressions that a careful abridger could REMOVE without materially changing a reader's sense of the book's plot, themes, or central characters.

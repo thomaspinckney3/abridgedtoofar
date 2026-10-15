@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-opus-4-7
+model: anthropic:claude-opus-5-5
 max_tokens: 32000
 system: |
   You are the drafter for a faithful book abridgment pipeline. You produce the

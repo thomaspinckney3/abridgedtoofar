@@ -25,13 +25,13 @@ from .coherence_filter import (
     normalize_finding_validity,
 )
 from .json_parse import parse_llm_json
-from .llm import complete
+from .llm import complete, require_complete_response
 from .name_lint import run_name_lint
 from .prompts import load_prompt
 
 
-_DEFAULT_MODEL = "anthropic:claude-sonnet-4-6"
-_DEFAULT_FALLBACK_MODEL = "openai:gpt-5"
+_DEFAULT_MODEL = "anthropic:claude-sonnet-5-5"
+_DEFAULT_FALLBACK_MODEL = "openai:gpt-6-astra"
 _MAX_REPAIR_WORD_DELTA = 250
 _MAX_REPAIR_REL_DELTA = 0.15
 _SAFE_TERMINALS = set(".!?)]}\"'”’")
@@ -367,6 +367,7 @@ def _repair_pair(
                             f"attempt{attempt + 1}"),
         )
         try:
+            require_complete_response(resp, "coherence repair")
             parsed = _parse_repair_response(resp.text)
             parsed_n = parsed.get("draft_n")
             parsed_np1 = parsed.get("draft_np1")

@@ -46,7 +46,7 @@ Both emit the same `chapters.json` shape, so downstream stages don't care which 
 
 ### 2. `classify` — LLM chapter classifier
 
-One LLM call per book (~$0.01–$0.20 on Sonnet). Decides whether each splitter candidate is:
+One Sonnet 5.5 call per book. Decides whether each splitter candidate is:
 
 - `diegetic` — real narrative chapter, keep
 - `extradiegetic` — editor's preface, translator's note, copyright page, illustrations list: cut
@@ -70,7 +70,7 @@ Zero-LLM itself; auto-invokes `classify` if `chapter_classifications.json` is mi
 
 One (or a few) LLM calls per book. Produces a flowing-prose plot synopsis (~30 sentences, paragraph-structured) used as ground truth by the book-level critic and the cuts prepass. Earlier versions produced 15 sentence-per-line bullets; the prose format gives the downstream stages a more complete, naturalistic shape to hold to.
 
-For books that fit GPT-5's ~272k input context (everything up to ~178k source words, ~13 of our 16 books), a single call writes `work/<book>/book_synopsis.md`.
+GPT-6 Astra generates the synopsis. Books within the existing 260k-token chunk budget use a single call to write `work/<book>/book_synopsis.md`. This budget was established with GPT-5 and remains conservative despite the newer model's larger context window.
 
 For longer books, the summarizer does chunked chaining: split diegetic source at chapter boundaries into N roughly-equal chunks, produce a partial synopsis per chunk, merge into one ~30-sentence prose whole-book synopsis. N=2 for Moby Dick / Little Women / Education / Bleak House; N=3 for Don Quixote.
 
@@ -78,7 +78,7 @@ Runs once per book; cached. Independent of the drafting stage — can be generat
 
 ### 5. `cuts` — removable-material inventory
 
-One LLM call per book (GPT-5, ~$1–2). Using the ~30-sentence prose synopsis as the authoritative shape of the book, the prepass identifies three categories of material a careful abridger could remove without materially changing the reader's sense of plot, themes, or principal-character arcs:
+One GPT-6 Astra call per book, or per source chunk for longer books. Using the ~30-sentence prose synopsis as the authoritative shape of the book, the prepass identifies three categories of material a careful abridger could remove without materially changing the reader's sense of plot, themes, or principal-character arcs:
 
 - **minor_characters** — named figures whose removal wouldn't affect major arcs (party guests, one-scene hosts, background functionaries)
 - **subplots** — self-contained or thematically parallel side narratives not structurally necessary
@@ -99,7 +99,7 @@ Gatsby example output: 16 minor characters (Owl Eyes, Klipspringer, Catherine, e
 
 ### 6. `draft` — Opus drafter (spec-as-prompt)
 
-Default model: `anthropic:claude-opus-4-7` (routable via `FORAGE_DRAFT_MODEL`). The drafter auto-enables max extended thinking whenever the active model is an Opus variant — thinking tokens substantially improve referent-chain integrity under compression (e.g. cutting a character's introduction without orphaning later pronouns that depend on it).
+Default model: `anthropic:claude-opus-5-5` (routable via `FORAGE_DRAFT_MODEL`). The drafter preserves its `max` adaptive-thinking effort and 128k output-token budget on Opus. Opus 5.5 always uses adaptive thinking; its output budget includes both thinking and prose.
 
 The drafter prompt (`prompts/draft_lean.md`) is the abridgment spec + chapter source + (if present) the cuts inventory. The model reads the spec and writes the chapter; no per-chapter signature enumeration, no tier scaffolding. Output goes to `work/<book>/segments/<NNN>.md`.
 
@@ -107,13 +107,15 @@ The system prompt instructs the drafter to preserve standard fiction paragraph c
 
 **Merge-group initial drafting**: when `draft` is called for a segment that belongs to a merged group, it renders a multi-source prompt covering all group members, calls the LLM once, and splits the output (`## Chapter N` delimited) back into per-member `.md` files. Non-first members of a group are read from disk; no redundant LLM calls.
 
-**Fallback**: if OpenAI returns `stop_reason=content_filter` (on the drafts where a user-configured `FORAGE_DRAFT_MODEL` routes to OpenAI), the drafter transparently retries on Anthropic (`FORAGE_DRAFT_FALLBACK_MODEL`, default Sonnet). The [llm] log line shows the provider switch.
+Token-limited responses from either provider are incomplete, including every member of a merged response. Empty or failed responses are not drafts. Assembly excludes these chapters and reports missing work. Group reuse requires recorded successful checks; rerunning the first member retries an incomplete group once, and later members retain that attempt's status.
 
-GPT-5 is still a supported option via `FORAGE_DRAFT_MODEL=openai:gpt-5` — it's ~3–5× cheaper per draft but produces more compression-induced dangling references (Gatsby Ch 1 test: Opus preserved the Jordan and daughter antecedents that GPT-5 cut).
+**Fallback**: Anthropic drafting exceptions retry on GPT-6 Astra; OpenAI exceptions or `stop_reason=content_filter` retry on Sonnet 5.5. `FORAGE_DRAFT_FALLBACK_MODEL` overrides that choice. The [llm] log line shows the provider switch.
+
+GPT-6 Astra is also available for drafting via `FORAGE_DRAFT_MODEL=openai:gpt-6-astra`. Earlier Gatsby tests compared Opus with GPT-5 and found more compression-induced dangling references in GPT-5 drafts; those results are historical and do not establish GPT-6 Astra's quality or cost.
 
 ### 7. `critique` — adversarial signature critic
 
-Default model: `anthropic:claude-sonnet-4-6` (routable via `FORAGE_CRITIC_MODEL`).
+Prompt default: `anthropic:claude-opus-5-5`. The recommended `.env.example` sets `FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-5-5`, which routes both signature and book critics to Sonnet 5.5.
 
 Prompt: `prompts/critic_signature.md`. Hunts for voice-establishing prose, culturally famous passages, and interpretively load-bearing moments that are **absent, paraphrased, or flattened** in the draft. Emits a JSON findings list with severity (high/medium/low) and per-finding fields: `source_passage`, `draft_treatment`, `why_it_matters`, `suggested_fix`.
 
@@ -183,7 +185,7 @@ One Sonnet call per chapter (~$0.15 each). For each chapter, aligns draft paragr
 - Collapsible "source paragraphs not mapped to any draft" section per chapter showing cut material
 - `unsupported` flags likely drift / fabrication / cross-chapter movement
 
-Alignments cache to `work/<book>/alignments/NNN.json` — re-running resumes from where it stopped. The `--render-only` flag skips LLM calls and re-renders HTML from existing alignments.
+Alignments cache to `work/<book>/alignments/NNN.json`. Re-running reuses mappings only when their embedded source and draft paragraphs match current files; changed inputs or corrupt caches regenerate. Failed regeneration reports an error and preserves the previous review view. The `--render-only` flag skips freshness checks and LLM calls and re-renders HTML from existing alignments.
 
 Empirical: across Gatsby + Dragon Maiden + Secret Adversary, 0.2–1% of aligned paragraphs are marked `unsupported`, and after inspection most unsupported cases are chapter-title headings or drafter-added bridging sentences — zero genuine plot/character fabrications.
 
@@ -205,7 +207,7 @@ What it adds over `proofread.html`:
 - **Staleness** — each note stores a hash of the paragraph it was written against. Redraft that paragraph and the note is flagged `stale`; drop it from the alignment and the note is flagged `orphaned`. Notes are never silently re-pointed at different prose.
 - **Deep links** — `/b/<book>?c=<chapter>&p=<paragraph>` opens on the paragraph in question.
 
-**Publish** writes the queue to `work/<book>/editorial/edits.json`: comments grouped by chapter, each carrying the paragraph text it was written against and its staleness flag. That file is the overlay a fix stage consumes — the app never edits `segments/*.md` itself, so a review pass can't corrupt drafts. The same document is downloadable without writing to disk at `/api/books/<book>/edits.json`.
+**Export feedback** writes the queue to `work/<book>/editorial/edits.json`: comments grouped by chapter, each carrying the paragraph text it was written against and its staleness flag. That file is the overlay a fix stage consumes — the app never edits `segments/*.md` itself, so a review pass can't corrupt drafts. The same document is downloadable without writing to disk at `/api/books/<book>/edits.json`.
 
 #### Access control
 
@@ -215,7 +217,7 @@ Three levels, because the app is meant to grow into running the pipeline behind 
 | --- | --- | --- |
 | public | none | read every book, chapter, alignment, and note; download `edits.json` |
 | reviewer | `FORAGE_REVIEW_TOKEN` | add, edit, restatus, and delete notes |
-| admin | `FORAGE_ADMIN_TOKEN` | everything a reviewer can, plus publish `edits.json` |
+| admin | `FORAGE_ADMIN_TOKEN` | everything a reviewer can, plus export `edits.json`, upload immutable revisions and promote review/public release |
 
 Reviewers self-label with a name; the label is display-only and grants nothing. Sessions are stateless HMAC-signed cookies (`HttpOnly`, `SameSite=Lax`, `Secure` behind TLS) — no session table, so nothing to replicate. The role lives inside the signed payload, so a reviewer cookie cannot be edited into an admin one, and withdrawing `FORAGE_ADMIN_TOKEN` immediately downgrades live admin cookies to reviewer.
 
@@ -237,7 +239,8 @@ Behind a proxy the limiter has to count the real client rather than the proxy, o
 | `FORAGE_BOOKS_DIR` | Book metadata root, default `books/` |
 | `FORAGE_ARTIFACT_OVERLAY_DIR` | Optional per-book artifact override root, e.g. `/data/artifacts` |
 | `FORAGE_BOOKS_OVERLAY_DIR` | Optional per-book metadata override root, e.g. `/data/books` |
-| `FORAGE_REVIEW_DB` | SQLite comment queue, default `work/_review/review.db` |
+| `FORAGE_REVIEW_DB` | SQLite comment queue, default `work/_review/review.db`; keep outside immutable snapshots |
+| `FORAGE_HOSTED_ROOT` | Writable root for uploaded books, immutable revisions and independent review/release pointers |
 | `FORAGE_EDITS_DIR` | Where publish writes, default `work/<book>/editorial/` |
 
 Locally, an unset review token is generated and printed at startup, so a dev server is never write-open. **In production that generation is refused**: with `FORAGE_ENV=production` (or any `FLY_APP_NAME` in the environment) the app will not boot without an explicit `FORAGE_SECRET_KEY` and `FORAGE_REVIEW_TOKEN`, and it rejects any of them shorter than 12 characters — a short shared secret on the public internet is guessable through the lockout given enough addresses. A generated key would also silently invalidate every session on restart and differ between machines. A misconfigured deploy therefore fails its health check instead of coming up with a password nobody knows.
@@ -257,7 +260,9 @@ fly secrets set \
 fly deploy
 ```
 
-`scripts/package_review_artifacts.py` copies only the alignment JSON plus a trimmed `plan.json` and book metadata — `work/` itself is gigabytes of drafts, replay caches, and rendered pages the app never reads. Re-run it before a normal image deploy to refresh the baked baseline.
+`scripts/package_review_artifacts.py` calls installed `forage.review_package` logic. It copies alignment JSON, a trimmed plan, metadata, existing review responses, verified current media references, and immutable publications referenced by review/release history. It excludes private drafts, replay caches, credentials and obsolete unreferenced media. Re-run it before an image deploy to refresh the baked baseline; media publications may be much larger than text-only bundles.
+
+Custom package outputs must be separate from both input roots after resolving symlinks. Packaging validates the selected books, stages both output directories, and restores previous output if replacement raises an exception. The two directory replacements are not a crash-atomic transaction.
 
 For a single revised book, publish the artifact overlay instead of rebuilding:
 
@@ -266,7 +271,7 @@ python scripts/publish_review_book.py secret_adversary --dry-run
 python scripts/publish_review_book.py secret_adversary
 ```
 
-That packages only `work/<book>/alignments`, `work/<book>/segments/*.checks.json`, current lint artifacts, the review-apply ledger, and metadata, then uploads it to `/data/artifacts/<book>` and `/data/books/<book>`. A mounted book overrides the baked copy on the next request; deleting `/data/artifacts/<book>` falls back to the baked image.
+That packages the same verified review artifacts and metadata, then uploads them to `/data/artifacts/<book>` and `/data/books/<book>`. A mounted book overrides the baked copy on the next request; deleting `/data/artifacts/<book>` falls back to the baked image.
 
 The image installs `fastapi` and `uvicorn` but not the pipeline's model SDKs: the review app only reads JSON off disk and serves HTML. Build with `--build-arg INSTALL_MODE=full` when pipeline stages move behind the admin token and the container needs the full dependency set.
 
@@ -317,7 +322,7 @@ fanning a global note out across the whole book.
 
 ### 17. `audiobook` — ElevenLabs narration
 
-Paid API stage. Reads `books/<book>/abridgment.txt` (falling back to `work/<book>/abridgment.txt`) and splits the assembled abridgment into bounded narration chunks. A dry run writes only chunk text and `work/<book>/audiobook/audiobook_manifest.json`:
+Paid API stage. Reads `books/<book>/abridgment.txt` (falling back to `work/<book>/abridgment.txt`) and splits the assembled abridgment into bounded narration chunks. A dry run writes a separate preview beneath `work/<book>/audiobook/preview/`, preserving generated audio, text sidecars, and their manifest:
 
 ```bash
 forage audiobook gatsby --dry-run
@@ -351,7 +356,9 @@ Outputs:
 - `work/<book>/audiobook/audiobook_manifest.json` - chunk hashes, request ids, status, and paths
 - `work/<book>/audiobook/audiobook.mp3` and `books/<book>/audiobook.mp3` when `ffmpeg` is available and `--combine` is enabled
 
-The stage is resumable: existing chunk audio is skipped unless `--overwrite` is passed. Use `--limit N` for a paid smoke test on the first N chunks. By default it sends adjacent text and up to three prior ElevenLabs request ids to improve continuity across chunk boundaries; `--zero-retention` disables request-id stitching for accounts that require it.
+The stage reuses a chunk only when its successful manifest entry matches the complete synthesis request and verified audio bytes. Changes to prose, voice, model, format, seed, language, normalization, voice settings, or stitched context require fresh audio. Legacy manifests and missing, empty, or modified files regenerate. `--overwrite` forces regeneration. Failed synthesis preserves prior successful files without labeling them current; combination requires every current chunk to be valid. Use `--limit N --no-combine` for a paid smoke test on the first N chunks. By default it sends adjacent text and up to three prior ElevenLabs request ids to improve continuity across chunk boundaries; `--zero-retention` disables request-id stitching for accounts that require it.
+
+With `--combine`, missing ffmpeg, incomplete chunks, combination failures, and publication failures are reported and return a nonzero exit status. `--no-combine` explicitly produces separate chunks. If file replacement and rollback both fail, the chunk error records a retained recovery directory and the original backup path for manual restoration.
 
 ## Legacy LLM stages (optional)
 
@@ -378,9 +385,12 @@ ANTHROPIC_API_KEY=sk-ant-...
 OPENAI_API_KEY=sk-proj-...
 
 # Lean pipeline model routing (recommended defaults)
-FORAGE_DRAFT_MODEL=anthropic:claude-opus-4-7
-FORAGE_REGEN_MODEL=anthropic:claude-opus-4-7
-FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-4-6
+FORAGE_DRAFT_MODEL=anthropic:claude-opus-5-5
+FORAGE_REGEN_MODEL=anthropic:claude-opus-5-5
+FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-5-5
+FORAGE_SUMMARIZE_MODEL=openai:gpt-6-astra
+FORAGE_CUTS_MODEL=openai:gpt-6-astra
+FORAGE_COHERENCE_FIX_MODEL=anthropic:claude-sonnet-5-5
 
 # Memoize every LLM response to work/.replay_cache/<hash>.json so reruns
 # hit the cache instead of spending. The cache is committed to the repo so
@@ -397,8 +407,8 @@ FORAGE_REPLAY=1
 Per-stage overrides (`FORAGE_{STAGE}_MODEL`) beat the global `FORAGE_MODEL`, which beats whatever the caller passes. The CLI prints which model each call resolved to:
 
 ```
-[llm] stage=draft:gatsby:001 model=anthropic:claude-opus-4-7
-[llm] stage=critic:signature:gatsby:001 model=anthropic:claude-sonnet-4-6 (caller requested anthropic:claude-opus-4-7, overridden by FORAGE_CRITIC_MODEL)
+[llm] stage=draft:gatsby:001 model=anthropic:claude-opus-5-5
+[llm] stage=critic:signature:gatsby:001 model=anthropic:claude-sonnet-5-5 (caller requested anthropic:claude-opus-5-5, overridden by FORAGE_CRITIC_MODEL)
 ```
 
 ## Adding a book
@@ -448,6 +458,206 @@ forage audiobook <book>             # generate using metadata audiobook.voice_id
 forage report [<book>]              # standard results row (all books if no arg)
 ```
 
+### Resumable production and local revisions
+
+`forage run BOOK` is the shared end-to-end workflow. It previews reuse, pending
+work, stale outputs and failures without invoking any provider or adopting files.
+Add `--execute` only when you intend to spend provider credits; a replay-cache
+miss can still issue a paid request. Text is always required, and audio/graphic
+outputs are optional:
+
+```bash
+forage run gatsby --workspace /srv/forage
+forage run gatsby --workspace /srv/forage --execute
+forage run gatsby --outputs text,audio,graphic --audio-voice-id VOICE --audio-chunks-only
+forage run gatsby --outputs text,audio,graphic --audio-voice-id VOICE --audio-chunks-only --execute
+forage release gatsby REVISION_SHA256 --workspace /srv/forage
+```
+
+The default executed run prepares chapters/classification/synopsis/cuts/plan,
+drafts every included chapter, runs fresh coherence inspection and bounded
+repair, assembles, performs book criticism and mechanical validation, aligns
+prose for review, generates selected media, and prepares a local immutable
+snapshot. `--iterate` adds signature criticism/regeneration; `--no-coherence-fix`
+disables repair, and `--coherence` retains inspection in that mode. Pair targeting
+uses repeated `--coherence-fix-pair 001-002`; it requires repair. `--max-retries`
+bounds iteration/repair retries. A critic `hold` remains visible as an editorial
+judgment; it does not claim a technical generation failure or automatic approval.
+
+The optional `--checkpoint-before-media` stops before audio/art generation.
+Resume with the printed `--continue-revision SHA256` plus the checkpoint flag;
+acknowledgment applies only to that accepted text revision and becomes stale after
+prose changes. It is disabled by default.
+
+Review is asynchronous on a separate website. Local snapshots are ready for
+review upload, and generation does not wait for human acknowledgment. The intended
+hosted loop is publish review revision → periodically pull feedback → apply
+eligible prose feedback → rerun affected outputs → republish. Existing
+`review-apply` consumes the local feedback export and preserves its application
+ledger. Use the hosted commands below to upload snapshots and review prose,
+audio and panels. Local snapshot creation does not itself upload a book. `forage release` explicitly
+promotes a verified local revision, independently of review-current. Later human
+edits and local review revisions do not change that public-release selection;
+promote a newer revision when ready. Neither command deploys a website.
+
+State lives in `work/BOOK/production_state.json`. Exact input/settings/prompt/spec
+hashes and output inventories govern reuse; a process lock excludes concurrent
+runs and publication changes for the same book. Missing or corrupt outputs and
+interrupted stages retry. A failed media branch preserves successful independent
+branches and blocks a new snapshot. Existing successful prose edits become accepted
+text revisions: their bytes are retained, assembly/criticism/alignment/selected
+media refresh, and initial drafting/repair is not repeated merely because prose
+changed. To explicitly rerun quality repair, change `--repair-epoch TOKEN`.
+Changing source or generation settings archives superseded draft/check/group
+files under `.production/draft_history/` before regeneration. A merged group is
+one generation unit. Initial request/context hashes remain attached to their
+original generation, so later prose edits do not recursively invalidate earlier
+chapters. Cuts and plan edits are reconciled against pristine preparation data;
+removed cuts remove their prior relocated kernels.
+
+Legacy drafts without runner provenance require `--adopt-existing --execute`.
+Review them first: adoption verifies required nonempty prose and successful
+checks against the prepared plan, records `user-adopted` provenance, and does not
+pretend to know the original source/model. Missing or failed checks cannot be
+adopted. Upstream preparation and downstream checks may still require generation.
+Standalone stage commands continue to work; the runner detects their subsequent
+changes through content inventories.
+
+Audio uses ElevenLabs and the current work abridgment. Configure
+`--audio-voice-id`, `--audio-model`, `--audio-format` and `--audio-max-chars`, or
+metadata audiobook settings/environment defaults. Integrated review audio supports
+MP3 (`mp3_22050_32` or `mp3_44100_32/64/96/128/192`). By default all chunks must
+successfully combine via ffmpeg; combination failure fails the stage.
+`--audio-chunks-only` explicitly produces a complete set of independently playable
+chunks. The runner never treats a partial chunk limit as a complete audiobook.
+
+Graphics adapt the full included chapter set unless `--graphic-chapters` selects
+specific chapter IDs. The integrated layout is one lettered frame per page,
+covering consecutive prose units throughout the selection, with a PDF and bounded
+contact sheets. Storyboards use the configurable `--graphic-storyboard-model`;
+images use OpenAI (`--graphic-provider openai`) with `--graphic-model`,
+`--graphic-style`, `--graphic-size` and `--graphic-quality`. Frame density and
+lettering use `--graphic-words-per-frame`, `--graphic-font-size` and
+`--graphic-caption-height`. Edit captions or image prompts in
+`work/BOOK/graphic/storyboard.json`; unchanged art is reused after caption/font
+changes, and failed runs resume verified frames. Provider credentials are
+`OPENAI_API_KEY` for art and the appropriate key for the storyboard text model.
+
+`media_manifest.json` contains revision-bound audio chunk and graphic frame IDs
+with confined relative paths and SHA-256 hashes. Audio timestamps are chunk-local;
+unknown duration is null. `publications/REVISION/revision.json` inventories immutable
+copies of selected text/review/media files. `review_current.json` and
+`release_current.json` have separate atomic histories. Release promotion verifies
+all snapshot bytes; failed promotion leaves the prior release intact. Historical
+`books/BOOK/abridgment.*`/audio copies remain standalone compatibility deliverables,
+not an implicit release promotion.
+
+A workspace contains `books/` and writable `work/`. `--workspace` takes priority;
+otherwise `FORAGE_WORKSPACE`, `FORAGE_BOOKS_DIR`/`FORAGE_WORK_DIR`, then the current
+working directory provide defaults. Installed wheels carry the exact repository
+prompt/spec resources and graphics/static assets, while artifacts and replay
+cache stay in the workspace. `--model provider:id` and repeated
+`--stage-model STAGE=provider:id` select text models; existing stage/global
+environment model overrides keep their documented precedence. See `run --help`
+for available settings. No paid generation or creative quality is certified by
+the offline integration tests.
+
+### Hosted review, feedback sync and public release
+
+The review site runs separately from generation. Configure its writable
+`FORAGE_HOSTED_ROOT`, persistent `FORAGE_REVIEW_DB`, `FORAGE_SECRET_KEY`,
+`FORAGE_REVIEW_TOKEN` and `FORAGE_ADMIN_TOKEN`. Keep the database and exported
+feedback outside the immutable `publications/` directories. The web-only image
+serves uploads without model SDKs or Pillow. Existing baked artifacts and mounted
+whole-book overlays remain supported; a current revision never falls back to an
+older media target that it removed. Upload defaults are 128 MiB compressed,
+512 MiB for the entire decompressed stream (including tar headers, extended
+metadata and trailing data), and 10,000 files. For larger books configure positive
+integer
+`FORAGE_MAX_UPLOAD_BYTES`, `FORAGE_MAX_EXPANDED_BYTES` and
+`FORAGE_MAX_UPLOAD_FILES` on the server; uploads remain bounded by those limits.
+
+On the pipeline machine, set `FORAGE_REVIEW_URL` to the site's base URL and
+`FORAGE_ADMIN_TOKEN` to its admin token (or use `--token-env NAME`). The client
+signs into the existing cookie session API. Credentials are read from the
+environment and never written into revision manifests. Alternatively configure
+`metadata.json` with `{"review": {"url": "https://review.example.org"}}`.
+`--site` overrides configuration. Local transport uses `--local-root PATH` or
+`FORAGE_REVIEW_LOCAL_ROOT`; choose exactly one transport.
+
+```bash
+# REVISION is the SHA-256 printed by a successful forage run --execute.
+forage publish-review BOOK REVISION --workspace /srv/forage
+forage review-pull BOOK --workspace /srv/forage
+forage review-sync BOOK --workspace /srv/forage             # same free pull/plan
+forage review-sync BOOK --workspace /srv/forage --apply --republish
+forage publish-release BOOK REVISION --workspace /srv/forage
+```
+
+Publishing verifies the complete local inventory, uploads an immutable snapshot,
+and advances only the selected hosted pointer after server verification.
+`publish-review` never promotes a public release. `publish-release` is the
+explicit public operation and reports confirmed hosted success; `release`
+remains a separate local selection. A failed upload/promotion preserves the
+previous current revision. Readers can use the public-release view/downloads
+while reviewers work on a newer review revision. A book published directly as a
+release can receive and export feedback immediately: unspecified current views
+use review when present, otherwise release. Explicit channel/revision selections
+remain strict, and this fallback never creates a review publication. Both histories
+and old comment anchors survive later publication and release.
+
+The review UI exposes prose, audio playback with chunk-local timestamp notes,
+and graphic frame notes. Every new hosted comment names the revision actually
+viewed. Notes retain original text/target anchors, author, timestamps and status;
+changed targets appear stale and removed targets appear orphaned. Audio notes
+with unknown duration accept finite nonnegative times without inventing a length.
+Media comments remain available to editors but are not automatically translated
+into prose edits.
+
+`review-pull` makes no model calls. It reads the versioned full feedback feed at
+`/api/books/BOOK/feedback`, atomically reconciles stable source/comment identities,
+and preserves `editorial/review_apply_ledger.json`. Edits, resolved notes and
+remote deletions update eligibility without deleting historical application
+choices. The imported queue is separate from that ledger. Repeated identical
+pulls do not duplicate notes or change their timestamps. Eligibility checks the
+current local draft bytes; stale, orphaned, inactive, media and unanchored remote
+notes never enter the paid prose pass.
+
+`review-sync --apply` invokes the constrained review-apply stage for eligible
+feedback and refreshes affected production outputs. The common production planner validates
+all selected stages, settings and output bytes even when prose did not change.
+A failed media run is retried; an acknowledged checkpoint alone cannot mark a
+revision complete. Explicit output/settings overrides are validated and honored.
+`--republish` uploads the resulting complete review revision. It requires
+`--apply`; release remains a separate explicit action. Saved requested settings
+retain selected outputs and narration/art options across failed runs as well as
+successful ones. Override them with `--outputs` or a JSON object supplied through
+`--production-options PATH`. Use repeated `--segment CHAPTER` to limit application
+or choose chapters for book-level notes. Model routing environment overrides still
+apply. A configured media checkpoint remains
+in force after text edits and must be acknowledged using `forage run`. Existing
+runs predating saved options may require explicit media settings. A failed apply
+or regeneration never republishes partial work.
+
+Before changing prose, review application saves a durable intent containing the
+validated decision and expected before/after artifact hashes. Interrupted writes
+resume without another model call, retaining prior ledger decisions. Apply, pull
+and production recover this intent before treating feedback as stale or publishing
+new output. A free production preview or direct snapshot refuses unresolved intent.
+If someone edited the draft/checks/ledger in the meantime, recovery stops and
+preserves those bytes plus `editorial/review_apply_pending.json` for reconciliation;
+it does not overwrite the intervening edit.
+
+For local transport, provide the full server feedback export with
+`--feedback /path/to/feedback.json`, or place it at the transport's documented
+`HOSTED_ROOT/BOOK/feedback.json` (the server updates this projection). A
+`feedback_pending` marker blocks local pulls while that projection is unfinished
+or failed; HTTP feedback still reads authoritative SQLite state. Repeat a
+successful publication to refresh a failed projection. External cron can call these commands periodically; the CLI
+does not install a scheduler. The same cycle continues after release:
+collect feedback → pull/apply → publish review → explicitly publish a newer
+release. Application decisions for unchanged feedback prevent reapplication.
+
 ### Standard results report
 
 Every book's pipeline run produces artifacts (`plan.json`, `assembly_report.json`, `book_critic.json`) that `forage report` reads to render a uniform per-book row:
@@ -482,18 +692,21 @@ forage serve                        # review + comment on it in the browser
 forage audiobook gatsby --dry-run   # inspect chunking before paid TTS
 ```
 
-Or use the `scripts/full_pipeline.py` driver to run the required upstream stages, draft across all diegetic chapters, then fresh coherence + coherence-fix + assemble + book-critique:
+`scripts/full_pipeline.py` is a compatibility wrapper over the same runner:
 
 ```bash
-.venv/bin/python -m scripts.full_pipeline gatsby
-# opt-in extras:
-.venv/bin/python -m scripts.full_pipeline gatsby --iterate      # critic + regen loop
-.venv/bin/python -m scripts.full_pipeline gatsby --coherence    # adjacent-pair critic
-.venv/bin/python -m scripts.full_pipeline gatsby --skip-coherence-fix  # disable coherence-fix
-.venv/bin/python -m scripts.full_pipeline gatsby --iterate --coherence
+.venv/bin/python -m scripts.full_pipeline gatsby              # free preview
+.venv/bin/python -m scripts.full_pipeline gatsby --execute    # potentially paid
+.venv/bin/python -m scripts.full_pipeline gatsby --iterate --coherence --execute
+.venv/bin/python -m scripts.full_pipeline gatsby --skip-coherence-fix --execute
+.venv/bin/python -m scripts.full_pipeline gatsby --coherence-fix-selected-pairs --coherence-fix-pair 001-002 --execute
 ```
 
-The full-pipeline script runs `split`, `classify`, `summarize`, `cuts`, `plan`, and `prepare-skips` before drafting. LLM stages still use the normal replay cache, so reruns reuse cached responses when the rendered prompt has not changed.
+`--resume-drafts` is accepted as a compatibility alias because verified resume is
+always enabled. `--coherence-fix` explicitly selects the default repair behavior;
+`--coherence-fix-all-findings` selects its default scope. Unsupported flags and
+conflicting repair/pair selections fail before generation. Use `forage run` for
+the full provider/media configuration surface.
 
 ## Directory structure
 
@@ -601,16 +814,25 @@ forage/
 
 ## Model-routing summary
 
+Defaults verified on 2026-09-29 against the [Claude model catalog](https://platform.claude.com/docs/en/models/overview) and [OpenAI model guidance](https://developers.openai.com/api/docs/guides/latest-model). The upgrade preserves stage roles, prompts, chunk budgets, and API endpoints. The review-apply prompt omits `temperature`, which the new reasoning models do not support at non-default values. Sonnet 5.5 now uses adaptive thinking by default; output limits include thinking tokens. Quality, latency, and cost observations from earlier runs are not benchmarks of these models.
+
+Existing `.env` overrides still take precedence and must be updated separately. Model changes produce new replay-cache keys; existing drafts, alignments, and cached stage artifacts are not regenerated by changing defaults.
+
 | Stage | Env var | Default | Why |
 |---|---|---|---|
-| `draft` / `regen` | `FORAGE_DRAFT_MODEL`, `FORAGE_REGEN_MODEL` | `anthropic:claude-opus-4-7` | Max extended thinking auto-enabled on Opus variants; better referent-chain integrity under compression than GPT-5 |
-| `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `anthropic:claude-sonnet-4-6` | Automatic retry on OpenAI `content_filter` (only fires if user routes drafter to OpenAI) |
-| `coherence-fix` | `FORAGE_COHERENCE_FIX_MODEL` | `anthropic:claude-sonnet-4-6` | Constrained adjacent-pair repairs with Anthropic as the primary provider |
-| `coherence-fix` fallback | `FORAGE_COHERENCE_FIX_FALLBACK_MODEL` | `openai:gpt-5` | Automatic retry when Anthropic API calls fail during repair |
-| `review-apply` | `FORAGE_REVIEW_APPLY_MODEL` | `anthropic:claude-sonnet-4-6` | Minimal source-backed incorporation of published human review feedback |
-| `critic:*` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-sonnet-4-6` | Consistent adversarial voice for signature and book critics |
-| `classify` | `FORAGE_CLASSIFY_MODEL` | `anthropic:claude-sonnet-4-6` (prompt default) | Cheap content-aware classification |
-| `summarize` | `FORAGE_SUMMARIZE_MODEL` | `openai:gpt-5` | Long-context synopsis generation |
+| `draft` / `regen` | `FORAGE_DRAFT_MODEL`, `FORAGE_REGEN_MODEL` | `anthropic:claude-opus-5-5` | Drafting and revision with `max` adaptive-thinking effort |
+| `draft` fallback | `FORAGE_DRAFT_FALLBACK_MODEL` | `openai:gpt-6-astra` from Anthropic; `anthropic:claude-sonnet-5-5` from OpenAI | Cross-provider retry on exceptions or OpenAI `content_filter` |
+| `coherence` | `FORAGE_COHERENCE_MODEL` | `anthropic:claude-sonnet-5-5` | Adjacent-chapter continuity review |
+| `coherence-fix` | `FORAGE_COHERENCE_FIX_MODEL` | `anthropic:claude-sonnet-5-5` | Constrained adjacent-pair repairs with Anthropic as the primary provider |
+| `coherence-fix` fallback | `FORAGE_COHERENCE_FIX_FALLBACK_MODEL` | `openai:gpt-6-astra` | Automatic retry when Anthropic API calls fail during repair |
+| `review-apply` | `FORAGE_REVIEW_APPLY_MODEL` | `anthropic:claude-sonnet-5-5` | Minimal source-backed incorporation of published human review feedback |
+| `critic:signature` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-opus-5-5`; example env selects Sonnet 5.5 | Signature and voice preservation review |
+| `critic:book` | `FORAGE_CRITIC_MODEL` | `anthropic:claude-sonnet-5-5` | Synopsis preservation review |
+| `classify` | `FORAGE_CLASSIFY_MODEL` | `anthropic:claude-sonnet-5-5` (prompt default) | Cheap content-aware classification |
+| `summarize` | `FORAGE_SUMMARIZE_MODEL` | `openai:gpt-6-astra` | Long-context synopsis generation |
+| `cuts` | `FORAGE_CUTS_MODEL` | `openai:gpt-6-astra` | Removable-material inventory |
+| `align` (`proofread`) | `FORAGE_ALIGN_MODEL` | `anthropic:claude-sonnet-5-5` | Source/draft paragraph alignment |
+| Legacy `prime` / `prepass` / `reconsider` | `FORAGE_PRIME_MODEL`, `FORAGE_PREPASS_MODEL`, `FORAGE_RECONSIDER_MODEL` | `anthropic:claude-opus-5-5` | Signature discovery and revision |
 
 ## Known limitations
 

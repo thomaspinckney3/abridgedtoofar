@@ -14,9 +14,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from .resources import resource_path
 from .artifacts import Book, read_json, segment_source_path, write_json, write_text
 from .chapter_split import split_to_disk
-from .llm import LLMResponse, complete
+from .llm import LLMResponse, complete, resolve_model_for_stage
 from .motif_ledger import read_ledger, rebuild_ledger
 from .prompts import load_prompt
 from .text_norm import fuzzy_contains
@@ -26,7 +27,7 @@ from .text_norm import fuzzy_contains
 class DraftResult:
     segment_id: str
     title: str
-    status: str  # "drafted", "cut", "skipped_extract_fail", "error"
+    status: str  # "drafted", "cut", "truncated", "skipped_extract_fail", "error"
     source_words: int
     target_words: int
     draft_words: int
@@ -111,10 +112,8 @@ def _recent_drafts(book: Book, plan: dict, segment_id: str,
     return list(reversed(out))  # oldest first
 
 
-def _draft_runtime_options(prompt, default_model: str) -> tuple[str, str | None, int]:
-    active_model = (os.environ.get("FORAGE_DRAFT_MODEL")
-                    or os.environ.get("FORAGE_MODEL")
-                    or default_model)
+def _draft_runtime_options(prompt, default_model: str, stage: str = "draft") -> tuple[str, str | None, int]:
+    active_model = resolve_model_for_stage(default_model, stage)[0]
     thinking = os.environ.get("FORAGE_DRAFT_THINKING")
     if thinking == "":
         thinking = None
@@ -130,8 +129,8 @@ def _draft_fallback_model(active_model: str) -> str:
     if configured:
         return configured
     if active_model.startswith("anthropic:"):
-        return "openai:gpt-5"
-    return "anthropic:claude-sonnet-4-6"
+        return "openai:gpt-6-astra"
+    return "anthropic:claude-sonnet-5-5"
 
 
 def _complete_draft_with_exception_fallback(
@@ -263,7 +262,7 @@ def build_draft_group_request(book: Book, plan: dict, group_id: str) -> DraftGro
         )
     merged_source = "\n\n---\n\n".join(source_blocks)
 
-    spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
+    spec_path = resource_path("spec/ABRIDGMENT_SPEC.md")
     spec_text = spec_path.read_text() if spec_path.exists() else ""
 
     virtual_segment = {
@@ -307,7 +306,7 @@ def build_draft_group_request(book: Book, plan: dict, group_id: str) -> DraftGro
         kernels=kernels,
     )
 
-    default_model = prompt.config.get("model", "openai:gpt-5")
+    default_model = prompt.config.get("model", "openai:gpt-6-astra")
     active_model, thinking, max_out = _draft_runtime_options(prompt, default_model)
     request = DraftLLMRequest(
         request_id=group_id,
@@ -331,16 +330,34 @@ def _disk_draft_result(seg_dir: Path, segment: dict) -> DraftResult:
     when another member of the same merged group already did the LLM work.
     """
     path = seg_dir / f"{segment['id']}.md"
-    text = path.read_text() if path.exists() else ""
+    try:
+        text = path.read_text() if path.exists() else ""
+        checks = read_json(seg_dir / f"{segment['id']}.checks.json")
+        if not isinstance(checks, dict):
+            checks = {}
+    except (OSError, ValueError):
+        text, checks = "", {}
     words = len(text.split())
+    status = checks.get("status", "error")
+    if not isinstance(status, str) or status not in {"drafted", "cut", "error", "truncated"}:
+        status = "error"
+    if (status == "drafted" and not words) or (status == "cut" and words):
+        status = "error"
     return DraftResult(
         segment_id=segment["id"], title=segment.get("title", ""),
-        status="drafted" if words > 0 else "error",
+        status=status,
         source_words=segment.get("source_word_count", 0),
         target_words=segment.get("target_word_count", 0),
-        draft_words=words, signature_hits=0, signature_misses=[],
-        message="drafted via merged group",
+        draft_words=words, signature_hits=checks.get("signatures_matched", 0),
+        signature_misses=checks.get("signatures_missed", []),
+        message=f"merged group recorded status: {status}",
     )
+
+
+def _response_draft_status(resp: LLMResponse, text: str) -> str:
+    if resp.is_truncated:
+        return "truncated"
+    return "drafted" if resp.is_complete and text.strip() else "error"
 
 
 def build_draft_segment_request(
@@ -362,7 +379,7 @@ def build_draft_segment_request(
     prompt = load_prompt(prompt_name)
 
     if is_lean:
-        spec_path = Path(__file__).resolve().parent.parent / "spec" / "ABRIDGMENT_SPEC.md"
+        spec_path = resource_path("spec/ABRIDGMENT_SPEC.md")
         spec_text = spec_path.read_text() if spec_path.exists() else ""
         target = int(segment.get("target_word_count", 0) or 0)
         ceiling = int(round(target * 1.2)) if target else 0
@@ -425,8 +442,8 @@ def build_draft_segment_request(
     stage_label = (f"draft:{book.book_id}:{segment_id}"
                    if not critic_feedback
                    else f"regen:{book.book_id}:{segment_id}")
-    default_model = prompt.config.get("model", "anthropic:claude-opus-4-7")
-    active_model, thinking, max_out = _draft_runtime_options(prompt, default_model)
+    default_model = prompt.config.get("model", "anthropic:claude-opus-5-5")
+    active_model, thinking, max_out = _draft_runtime_options(prompt, default_model, stage_label)
     return DraftLLMRequest(
         request_id=segment_id,
         prompt_name=prompt_name,
@@ -497,7 +514,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
     # Failure mode: empty text + stop_reason=max_tokens means thinking
     # consumed the entire output budget. Retry once with reduced thinking
     # effort so visible output gets guaranteed budget.
-    if not resp.text.strip() and resp.stop_reason == "max_tokens" and thinking == "max":
+    if not resp.text.strip() and resp.is_truncated and thinking == "max":
         import sys as _sys
         retry_thinking = "medium"
         print(f"[drafter] {group_id}: empty output after {resp.output_tokens} "
@@ -536,7 +553,7 @@ def _draft_group(book: Book, plan: dict, group_id: str) -> None:
                       source_words=m["source_word_count"],
                       draft_words=draft_words,
                       signature_hits=0, signature_misses=[],
-                      status="drafted" if draft_words > 0 else "error",
+                      status=_response_draft_status(resp, body_text),
                       chapter_notes=chapter_notes)
 
 
@@ -562,10 +579,15 @@ def draft_segment(
     group_id = segment.get("group_id")
     groups = plan.get("merged_groups") or {}
     if group_id and group_id in groups and not critic_feedback:
-        existing = seg_dir / f"{segment_id}.md"
-        # If another member already triggered the group draft, just return a
-        # result describing the on-disk content without redoing LLM work.
-        if not existing.exists() or not existing.read_text().strip():
+        member_ids = groups[group_id]["member_ids"]
+        members = [s for s in plan["segments"] if s["id"] in member_ids]
+        attempted = any((seg_dir / f"{sid}.checks.json").exists()
+                        or (seg_dir / f"{sid}.md").exists() for sid in member_ids)
+        complete_group = all(_disk_draft_result(seg_dir, s).status in {"drafted", "cut"}
+                             for s in members)
+        # Retry an incomplete group only at its first member. Subsequent
+        # members preserve failure instead of spending once per empty split.
+        if not attempted or (segment_id == member_ids[0] and not complete_group):
             _draft_group(book, plan, group_id)
         return _disk_draft_result(seg_dir, segment)
 
@@ -666,26 +688,12 @@ def draft_segment(
         )
 
     draft_text, chapter_notes = _extract_chapter_notes(resp.text.strip())
-    if draft_text == "CUT":
-        write_text(seg_dir / f"{segment_id}.md", "")
-        _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
-                      source_words=source_words, draft_words=0,
-                      signature_hits=0, signature_misses=[], status="cut",
-                      chapter_notes=chapter_notes)
-        return DraftResult(
-            segment_id=segment_id, title=segment.get("title", ""),
-            status="cut", source_words=source_words,
-            target_words=segment.get("target_word_count", 0),
-            draft_words=0, signature_hits=0, signature_misses=[],
-            message="drafter returned CUT",
-        )
-
     # Failure mode: empty text + stop_reason=max_tokens means the model
     # consumed its entire output budget on thinking/reasoning and never
     # emitted any draft. Retry once with reduced thinking effort so visible
     # output gets guaranteed budget. Only kicks in when thinking="max" was
     # used (otherwise there's nothing to dial down).
-    if not draft_text and resp.stop_reason == "max_tokens" and thinking == "max":
+    if not draft_text and resp.is_truncated and thinking == "max":
         import sys as _sys
         retry_thinking = "medium"
         retry_stage = (f"draft_thinkretry:{book.book_id}:{segment_id}"
@@ -708,24 +716,38 @@ def draft_segment(
         )
         draft_text, chapter_notes = _extract_chapter_notes(resp.text.strip())
 
+    if draft_text == "CUT" and resp.is_complete:
+        write_text(seg_dir / f"{segment_id}.md", "")
+        _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
+                      source_words=source_words, draft_words=0,
+                      signature_hits=0, signature_misses=[], status="cut",
+                      chapter_notes=chapter_notes)
+        return DraftResult(
+            segment_id=segment_id, title=segment.get("title", ""),
+            status="cut", source_words=source_words,
+            target_words=segment.get("target_word_count", 0),
+            draft_words=0, signature_hits=0, signature_misses=[],
+            message="drafter returned CUT",
+        )
+
     # If still empty after the thinking-retry (or thinking wasn't max to begin
     # with), report error. Don't leave a stale .md around.
-    if not draft_text and resp.stop_reason == "max_tokens":
+    if not draft_text:
         draft_path = seg_dir / f"{segment_id}.md"
         if draft_path.exists():
             draft_path.unlink()
         _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
                       source_words=source_words, draft_words=0,
-                      signature_hits=0, signature_misses=[], status="error",
+                      signature_hits=0, signature_misses=[],
+                      status=_response_draft_status(resp, draft_text),
                       chapter_notes=chapter_notes)
         return DraftResult(
             segment_id=segment_id, title=segment.get("title", ""),
-            status="error", source_words=source_words,
+            status=_response_draft_status(resp, draft_text), source_words=source_words,
             target_words=segment.get("target_word_count", 0),
             draft_words=0, signature_hits=0, signature_misses=[],
-            message=(f"empty output with stop_reason=max_tokens after "
-                     f"{resp.output_tokens} tokens — thinking exhausted budget "
-                     f"on both default and reduced-thinking retry."),
+            message=(f"empty output with stop_reason={resp.stop_reason} after "
+                     f"{resp.output_tokens} tokens"),
         )
 
     (seg_dir / f"{segment_id}.md").write_text(draft_text + "\n")
@@ -737,12 +759,12 @@ def draft_segment(
     # off mid-stream. The draft is partial — possibly missing the chapter's
     # ending and later signatures. Mark truncated (not drafted) so assemble
     # treats this as an incomplete segment, not a valid one.
-    status = "truncated" if resp.stop_reason == "max_tokens" else "drafted"
+    status = _response_draft_status(resp, draft_text)
     message = ""
     if status == "truncated":
         message = (f"draft truncated at {draft_words} words "
                    f"(target {segment.get('target_word_count', 0)}) due to "
-                   f"max_tokens. Bump max_tokens or reduce thinking effort.")
+                   f"{resp.stop_reason}. Bump max_tokens or reduce thinking effort.")
     _write_checks(seg_dir / f"{segment_id}.checks.json", segment,
                   source_words=source_words, draft_words=draft_words,
                   signature_hits=hits, signature_misses=misses, status=status,

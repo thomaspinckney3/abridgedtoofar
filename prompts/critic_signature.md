@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-opus-4-7
+model: anthropic:claude-opus-5-5
 max_tokens: 8000
 system: |
   You are an adversarial signature critic. Your sole job is to find passages in

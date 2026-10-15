@@ -13,11 +13,11 @@ import math
 
 from .artifacts import Book, read_json
 from .chapter_split import split_to_disk
-from .llm import complete
+from .llm import complete, require_complete_response
 from .prompts import load_prompt
 
 TOKENS_PER_WORD = 1.4  # empirical for English prose on OpenAI tokenizers
-MAX_INPUT_TOKENS = 260_000  # conservative headroom under GPT-5's 272k limit
+MAX_INPUT_TOKENS = 260_000  # retain the chunk budget established with GPT-5
 PROMPT_OVERHEAD_TOKENS = 500
 MAX_CHUNK_WORDS = int((MAX_INPUT_TOKENS - PROMPT_OVERHEAD_TOKENS) / TOKENS_PER_WORD)
 TARGET_SENTENCES = 30
@@ -114,12 +114,13 @@ def _single_synopsis(book: Book, chapter_sources: list[dict], *,
         stage = f"{stage}:{stage_suffix}"
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "openai:gpt-5"),
+        model=prompt.config.get("model", "openai:gpt-6-astra"),
         max_tokens=prompt.config.get("max_tokens", 8000),
         cache=False,
         work_dir=book.work_dir,
         stage=stage,
     )
+    require_complete_response(resp, "synopsis")
     return resp.text.strip()
 
 
@@ -133,10 +134,11 @@ def _merge_synopses(book: Book, partials: list[str]) -> str:
     )
     resp = complete(
         prompt=rendered,
-        model=prompt.config.get("model", "openai:gpt-5"),
+        model=prompt.config.get("model", "openai:gpt-6-astra"),
         max_tokens=prompt.config.get("max_tokens", 4000),
         cache=False,
         work_dir=book.work_dir,
         stage=f"summarize:{book.book_id}:merge",
     )
+    require_complete_response(resp, "synopsis")
     return resp.text.strip()

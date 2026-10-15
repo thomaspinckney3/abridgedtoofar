@@ -1,0 +1,805 @@
+{
+  "minor_characters": [
+    {
+      "name": "Old Fleece",
+      "appearances_summary": "The Pequod’s aged Black cook who delivers Stubb’s comic ‘sermon’ to the sharks during the cutting-in (Ch 067).",
+      "reason_removable": "He is a comic interlude whose presence does not affect the plot, themes, or any major character arc."
+    },
+    {
+      "name": "Dough-Boy",
+      "appearances_summary": "The timid steward who serves the mates at the capstan and appears during Stubb’s supper scene (Ch 037, 067).",
+      "reason_removable": "A running gag and foil in mess scenes; cutting him loses no plot-bearing material."
+    },
+    {
+      "name": "Aunt Charity",
+      "appearances_summary": "Bildad’s bustling sister who outfits the Pequod and pops up with small domestic admonitions and supplies (Ch 023, 025, 067).",
+      "reason_removable": "She colors the departure but removing her does not alter the Pequod’s sailing, crew makeup, or themes."
+    },
+    {
+      "name": "Mrs. Hussey",
+      "appearances_summary": "Proprietor of the Try-Pots in Nantucket who serves chowder and banters with Ishmael and Queequeg (Ch 018).",
+      "reason_removable": "A local color cameo; eliminating her does not change how Ishmael and Queequeg reach and ship on the Pequod."
+    },
+    {
+      "name": "Derick De Deer",
+      "appearances_summary": "The importunate German captain of the Jungfrau who begs oil and bungles a chase (Ch 084).",
+      "reason_removable": "His episode is a detachable sea vignette that has no bearing on Ahab, the White Whale, or the Pequod’s fate."
+    },
+    {
+      "name": "The Manxman",
+      "appearances_summary": "An old sailor whose superstitious asides punctuate fo’c’sle scenes (e.g., Ch 043).",
+      "reason_removable": "His interjections contribute to atmosphere only and have no consequences for the main narrative."
+    },
+    {
+      "name": "Captain Boomer (Samuel Enderby)",
+      "appearances_summary": "Cheerful, one‑armed English captain met in the gam with the Samuel Enderby; recounts his run‑in with Moby Dick and refuses to pursue him.",
+      "reason_removable": "His encounter reinforces Ahab’s monomania but no later plot beat or prophecy depends on him specifically."
+    },
+    {
+      "name": "Dr. Bunger",
+      "appearances_summary": "Enderby’s wry ship’s surgeon who spars verbally with Ahab and Boomer during the gam.",
+      "reason_removable": "Pure color in the Enderby visit; nothing later hinges on him."
+    },
+    {
+      "name": "Mr. Mounttop",
+      "appearances_summary": "First mate of the Samuel Enderby, introduced during the gam.",
+      "reason_removable": "A one‑scene name without later consequence."
+    },
+    {
+      "name": "Captain of the Bouton de Rose (the Rose‑Bud)",
+      "appearances_summary": "Fussy French captain duped by Stubb during the ambergris caper.",
+      "reason_removable": "Comic one‑off whose removal loses only a side caper."
+    },
+    {
+      "name": "The Guernsey‑man (Rose‑Bud’s mate/interpreter)",
+      "appearances_summary": "Translates and teams with Stubb to satirize the Rose‑Bud’s captain.",
+      "reason_removable": "Exists only to facilitate the ambergris prank."
+    },
+    {
+      "name": "The Rose‑Bud’s surgeon",
+      "appearances_summary": "Shouts protests from the captain’s cabin during the fetid whale scene.",
+      "reason_removable": "Minor comic garnish to a removable gam."
+    },
+    {
+      "name": "King Tranquo of Tranque",
+      "appearances_summary": "Host in the Arsacides who displays a whale’s skeleton as a temple relic.",
+      "reason_removable": "Appears only inside a digression that can be cut."
+    },
+    {
+      "name": "Sir Clifford Constable",
+      "appearances_summary": "English landowner said to own an articulated sperm‑whale skeleton.",
+      "reason_removable": "A name in a cataloguing aside; cutting it affects nothing."
+    },
+    {
+      "name": "The Lord Warden of the Cinque Ports",
+      "appearances_summary": "Invoked in an anecdote about English royal claims to parts of stranded whales.",
+      "reason_removable": "A legal‑curiosity cameo wholly within a skippable essay."
+    },
+    {
+      "name": "The Duke of Wellington",
+      "appearances_summary": "Cited as beneficiary of that same royal whale‑head law.",
+      "reason_removable": "Historical color inside a removable aside, not the story."
+    },
+    {
+      "name": "William Prynne",
+      "appearances_summary": "Quoted in a legal digression about ‘Queen‑Gold’ and whalebone.",
+      "reason_removable": "A footnote‑figure whose absence changes nothing."
+    },
+    {
+      "name": "A Sicilian seaman",
+      "appearances_summary": "Calls out ‘Your hat!’ when the hawk steals Ahab’s cap.",
+      "reason_removable": "A throwaway voice in a dispensable omen vignette."
+    }
+  ],
+  "subplots": [
+    {
+      "name": "Stubb’s dream and Queen Mab",
+      "chapter_span": "Ch 034",
+      "reason_removable": "A self-contained comic-philosophic riff on dreams that does not advance the hunt, Ahab’s obsession, or Ishmael/Queequeg."
+    },
+    {
+      "name": "Midnight, Forecastle: Sailors’ chorus",
+      "chapter_span": "Ch 043",
+      "reason_removable": "A dramatic interlude of national types trading shouts that adds color but no plot or character development essential to the arc."
+    },
+    {
+      "name": "Stubb’s supper and Fleece’s shark ‘sermon’",
+      "chapter_span": "Ch 067–068",
+      "reason_removable": "A comic set-piece about eating whale and scolding sharks that can be dropped without harming theme, plot, or character arcs."
+    },
+    {
+      "name": "The Monkey-Rope and Tashtego’s plunge into the case",
+      "chapter_span": "Ch 075 & 081",
+      "reason_removable": "A bravura whaling-craft episode whose rescue heroics and metaphors are detachable from the central pursuit and prophecies."
+    },
+    {
+      "name": "The Virgin (Jungfrau) begs oil and blunders after a Fin-back",
+      "chapter_span": "Ch 084",
+      "reason_removable": "A stand-alone sea vignette that neither foreshadows Ahab’s doom nor shapes the Pequod’s crew dynamics."
+    },
+    {
+      "name": "The Rose‑Bud ambergris caper",
+      "chapter_span": "Ch 094–095",
+      "reason_removable": "A comic side‑gam and an essay on ambergris that do not affect Ahab’s pursuit, Fedallah’s prophecies, Pip’s arc, or the wreck."
+    },
+    {
+      "name": "The Grand Armada hunt",
+      "chapter_span": "Ch 090",
+      "reason_removable": "A self‑contained whaling chase with cows and calves that sets up no later reference."
+    },
+    {
+      "name": "The Samuel Enderby gam",
+      "chapter_span": "Ch 103–104",
+      "reason_removable": "Boomer’s tale echoes rumors about Moby Dick, but no later plot point uniquely relies on this specific gam (Bachelor, Delight, and Rachel carry the needed beats)."
+    }
+  ],
+  "digressions": [
+    {
+      "chapter_ids": [
+        "027"
+      ],
+      "topic": "Apologia for whaling (‘The Advocate’)",
+      "reason_removable": "An essayistic defense that restates themes of labor and honor without advancing story or character."
+    },
+    {
+      "chapter_ids": [
+        "028"
+      ],
+      "topic": "Coronation oil postscript",
+      "reason_removable": "A humorous aside about royal unction that is thematically redundant and plot-irrelevant."
+    },
+    {
+      "chapter_ids": [
+        "035"
+      ],
+      "topic": "Cetological taxonomy",
+      "reason_removable": "A long catalog that can be condensed to a line elsewhere without loss of plot or character."
+    },
+    {
+      "chapter_ids": [
+        "036",
+        "037",
+        "038"
+      ],
+      "topic": "Specksnyder/officers, cabin-table hierarchy, mast-head reverie",
+      "reason_removable": "Sociological and philosophical asides that do not alter the hunt’s course or Ahab’s arc."
+    },
+    {
+      "chapter_ids": [
+        "058",
+        "059",
+        "060"
+      ],
+      "topic": "Whales in art, scrimshaw, and representation",
+      "reason_removable": "Extended art-historical riffs that can be dropped without touching narrative stakes."
+    },
+    {
+      "chapter_ids": [
+        "063"
+      ],
+      "topic": "The whale-line (technical treatise)",
+      "reason_removable": "A craft manual digression; the later catastrophe is intelligible without this exposition."
+    },
+    {
+      "chapter_ids": [
+        "070",
+        "071",
+        "072",
+        "073"
+      ],
+      "topic": "Cutting-in, blubber ‘blanket,’ funeral drift, Ahab’s ‘Sphynx’ address",
+      "reason_removable": "Technical process and rhetorical apostrophe that can be pruned without affecting plot beats."
+    },
+    {
+      "chapter_ids": [
+        "077",
+        "078",
+        "079",
+        "080",
+        "082",
+        "083"
+      ],
+      "topic": "Anatomical/phrenological meditations on the whale’s head",
+      "reason_removable": "Brilliant essays but non-essential to the chase, prophecies, or denouement."
+    },
+    {
+      "chapter_ids": [
+        "085",
+        "086",
+        "088"
+      ],
+      "topic": "Honor of whaling, Jonah historicized, the spout’s physics",
+      "reason_removable": "Philosophical excursuses that can be removed without disturbing the narrative spine."
+    },
+    {
+      "chapter_ids": [
+        "089"
+      ],
+      "topic": "Anatomy and motions of the sperm whale’s tail",
+      "reason_removable": "Pure cetological essay that neither advances the voyage nor seeds later action."
+    },
+    {
+      "chapter_ids": [
+        "091"
+      ],
+      "topic": "Whale ‘schools’ and ‘schoolmasters’",
+      "reason_removable": "Taxonomy and similes that don’t alter plot or character arcs."
+    },
+    {
+      "chapter_ids": [
+        "092"
+      ],
+      "topic": "Fast‑Fish and Loose‑Fish whaling law (and social satire)",
+      "reason_removable": "A thematic riff that can be lost without injuring the chase or core themes already present elsewhere."
+    },
+    {
+      "chapter_ids": [
+        "093"
+      ],
+      "topic": "English royal claims to whale head and tail",
+      "reason_removable": "Legal lore and anecdote without bearing on the Pequod."
+    },
+    {
+      "chapter_ids": [
+        "095"
+      ],
+      "topic": "Origins, uses, and lore of ambergris",
+      "reason_removable": "Background to a removable side‑gam, not to the main arc."
+    },
+    {
+      "chapter_ids": [
+        "098"
+      ],
+      "topic": "The mincer’s ‘cassock’ and shop‑floor detail",
+      "reason_removable": "Shop talk that can be trimmed without affecting plot or Ahab/Ishmael interiority."
+    },
+    {
+      "chapter_ids": [
+        "100"
+      ],
+      "topic": "Shipboard lamps and whalemen’s light",
+      "reason_removable": "Atmospheric exposition only."
+    },
+    {
+      "chapter_ids": [
+        "101"
+      ],
+      "topic": "Stowing down oil and cleaning up",
+      "reason_removable": "Procedural detail already amply represented elsewhere."
+    },
+    {
+      "chapter_ids": [
+        "105",
+        "106"
+      ],
+      "topic": "Arsacides skeleton‑temple and measurements of a whale’s skeleton",
+      "reason_removable": "Museum travelogue and statistics that neither foreshadow nor recur."
+    },
+    {
+      "chapter_ids": [
+        "107"
+      ],
+      "topic": "Fossil whales and antediluvian musings",
+      "reason_removable": "Essayistic prehistory that can go without distorting the novel’s shape."
+    },
+    {
+      "chapter_ids": [
+        "108"
+      ],
+      "topic": "On the whale’s possible diminution or extinction",
+      "reason_removable": "Generalizing lecture that doesn’t affect events aboard the Pequod."
+    },
+    {
+      "chapter_ids": [
+        "114"
+      ],
+      "topic": "The Pacific’s lyrical essence",
+      "reason_removable": "A lyrical interlude that can be sacrificed without injuring plot or core themes retained elsewhere."
+    },
+    {
+      "chapter_ids": [
+        "117"
+      ],
+      "topic": "Sea as gilder; quiet interlude in the boats",
+      "reason_removable": "Meditation and mood not required by the synopsis."
+    },
+    {
+      "chapter_ids": [
+        "119"
+      ],
+      "topic": "The whale’s sunward death and Ahab’s reflection",
+      "reason_removable": "A standalone vignette whose ideas reappear in stronger, indispensable scenes."
+    }
+  ],
+  "skippable_chapters": [
+    {
+      "chapter_id": "001",
+      "reason_removable": "The ‘Etymology’ preface is a paratextual flourish that does not affect plot or characterization.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "002",
+      "reason_removable": "First ‘Extracts’ is a literary collage whose omission does not change the story.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "003",
+      "reason_removable": "Second ‘Extracts’ continues the anthology of quotations without narrative consequence.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "026",
+      "reason_removable": "‘The Lee Shore’ is a lyrical aside on Bulkington; he is already introduced and plays no later role.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "027",
+      "reason_removable": "‘The Advocate’ is an essayistic defense of whaling that can be excised without narrative loss.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "028",
+      "reason_removable": "‘Postscript’ (coronation oil) is a humorous aside disconnected from plot or character arcs.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "033",
+      "reason_removable": "‘The Pipe’ is a brief mood piece for Ahab whose removal does not affect his established obsession.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "034",
+      "reason_removable": "‘Queen Mab’ is Stubb’s dream riff that neither advances nor reveals anything needed later.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "035",
+      "reason_removable": "‘Cetology’ is a taxonomic catalog that can be cut wholesale in an abridgment.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "036",
+      "reason_removable": "‘The Specksnyder’ is an institutional-history aside about officer roles in earlier fisheries.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "037",
+      "reason_removable": "‘The Cabin-Table’ outlines meal hierarchies without bearing on the hunt or Ahab’s plot.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "038",
+      "reason_removable": "‘The Mast-Head’ is an essay on reverie that can be dropped without harming the narrative arc.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "043",
+      "reason_removable": "‘Midnight, Forecastle’ is a choral tableau of sailors’ banter that plays no role in later events.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "058",
+      "reason_removable": "‘Monstrous Pictures of Whales’ is an art-historical digression with no plot function.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "059",
+      "reason_removable": "‘Less Erroneous Pictures’ continues the representation riff and can be excised cleanly.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "060",
+      "reason_removable": "‘Whales in Paint; in Teeth; ...’ is a scrimshaw-and-art excursus nonessential to story momentum.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "065",
+      "reason_removable": "‘The Dart’ explains throwing technique; it is instructional rather than narrative.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "068",
+      "reason_removable": "‘The Whale as a Dish’ is an essay on eating whale that is thematically redundant and nonessential.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "071",
+      "reason_removable": "‘The Blanket’ continues technical/process exposition that need not be retained in an abridgment.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "072",
+      "reason_removable": "‘The Funeral’ is a rhetorical meditation on the drifting carcass that is skippable for narrative economy.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "075",
+      "reason_removable": "‘The Monkey-Rope’ is a vivid craft-philosophy episode that does not change the plot trajectory.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "077",
+      "reason_removable": "‘The Sperm Whale’s Head—Contrasted View’ is an anatomical essay with no bearing on plot or themes kept in the synopsis.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "078",
+      "reason_removable": "‘The Right Whale’s Head—Contrasted View’ continues the anatomy lecture and can be cut wholesale.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "079",
+      "reason_removable": "‘The Battering-Ram’ speculates on head-first impacts; interesting but nonessential to the arc.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "080",
+      "reason_removable": "‘The Great Heidelburgh Tun’ delves into spermaceti storage; it’s process detail not needed for the abridged throughline.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "081",
+      "reason_removable": "‘Cistern and Buckets’ (Tashtego in the case) is a detachable rescue episode without later consequences.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "082",
+      "reason_removable": "‘The Prairie’ is a phrenological meditation; its removal does not alter character or plot comprehension.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "083",
+      "reason_removable": "‘The Nut’ continues speculative anatomy and can be excised cleanly.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "084",
+      "reason_removable": "‘The Pequod Meets The Virgin’ is a self-contained sea episode not needed for the core hunt or prophecies.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "085",
+      "reason_removable": "‘The Honor and Glory of Whaling’ is a rhetorical set-piece with no narrative stakes.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "086",
+      "reason_removable": "‘Jonah Historically Regarded’ is an excursus that can be dropped without affecting Father Mapple’s sermon already retained.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "087",
+      "reason_removable": "‘Pitchpoling’ is a technique primer; the hunt remains intelligible without it.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "088",
+      "reason_removable": "‘The Fountain’ (on spouts) is a natural-philosophy digression unnecessary to the abridgment.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "089",
+      "reason_removable": "A free‑standing anatomical paean to the tail with no later callbacks.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "090",
+      "reason_removable": "A spectacular but isolated hunt (‘Grand Armada’) that seeds no later reference or consequence.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "091",
+      "reason_removable": "Cetological taxonomy that neither advances plot nor character.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "092",
+      "reason_removable": "An essay on whaling law and social satire that is thematically redundant.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "093",
+      "reason_removable": "Legal curiosities about royal whale rights that never matter at sea.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "094",
+      "reason_removable": "Stubb’s prank on the French Rose‑Bud is a comic detour with no bearing on Ahab, Pip, Fedallah, or the wreck.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "095",
+      "reason_removable": "A technical ambergris essay attached to a removable gam.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "097",
+      "reason_removable": "‘Squeeze of the Hand’ is a lovely aside on camaraderie and sperm, but omitting it doesn’t affect plot or the preserved themes.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "098",
+      "reason_removable": "Work‑bench minutiae that duplicate the book’s work‑world texture elsewhere.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "100",
+      "reason_removable": "Lamp lore adds atmosphere only.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "101",
+      "reason_removable": "Decanting and scrubbing procedure can be spared without loss to plot or theme.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "103",
+      "reason_removable": "The Enderby gam doubles later gams (Bachelor, Delight, Rachel) and can be compressed.",
+      "kernel": "We spoke the London whaler Samuel Enderby, whose genial Captain Boomer, one-armed from Moby Dick, told how the White Whale stove him and warned us off; Ahab, scornful, cut short the talk and quit him with a violence that would soon cost him dear.",
+      "relocate_to": "109",
+      "position": "start"
+    },
+    {
+      "chapter_id": "104",
+      "reason_removable": "Ishmael’s toasting history of the Enderbys is affectionate filler around a skippable gam.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "105",
+      "reason_removable": "A museum‑piece reverie in the Arsacides detached from the ship’s story.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "106",
+      "reason_removable": "Bone measurements and statistics do not feed back into any later scene.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "107",
+      "reason_removable": "Geological musings on fossil whales can be removed without altering readers’ grip on plot or theme.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "108",
+      "reason_removable": "Speculation on the whale’s stature and fate is an essay that the chase itself already answers.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "114",
+      "reason_removable": "A lyrical apostrophe to the Pacific that’s not structurally required.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "117",
+      "reason_removable": "A quiet aesthetic interlude in the boats; the chase and typhoon carry the needed mood elsewhere.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "119",
+      "reason_removable": "A standalone whale‑death vignette whose sentiments recur in indispensable later chapters.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "123",
+      "reason_removable": "A brief storm‑management scene that adds no new turn to Ahab’s course after the typhoon and Candles.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "124",
+      "reason_removable": "Stubb and Flask’s anchor‑lashings banter is expendable comic relief.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "125",
+      "reason_removable": "Tashtego’s top‑sail mutter is a one‑page filler with no bearing on the arc.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "130",
+      "reason_removable": "A reprise of Ahab‑carpenter talk with the coffin already made a life‑buoy in the previous chapter.",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    },
+    {
+      "chapter_id": "133",
+      "reason_removable": "The hawk stealing Ahab’s hat is an omen vignette that can be lost without harming plot or symbols already present (e.g., the doubloon).",
+      "kernel": "",
+      "relocate_to": null,
+      "position": null
+    }
+  ],
+  "_meta": {
+    "force_keep_chapters": [
+      {
+        "chapter_id": "063",
+        "reason": "Preserve the whale-line danger that the book synopsis treats as part of the Indian Ocean whale-work sequence."
+      },
+      {
+        "chapter_id": "064",
+        "reason": "Preserve Stubb's whale kill and the smoking line."
+      },
+      {
+        "chapter_id": "066",
+        "reason": "Preserve the barbed iron and line mechanics that bridge the kill to cutting-in."
+      },
+      {
+        "chapter_id": "067",
+        "reason": "Preserve Stubb's supper and Fleece's shark sermon."
+      },
+      {
+        "chapter_id": "069",
+        "reason": "Preserve sharks rioting around the hull during cutting-in."
+      },
+      {
+        "chapter_id": "070",
+        "reason": "Preserve the red work of cutting-in."
+      },
+      {
+        "chapter_id": "073",
+        "reason": "Preserve Ahab's oracle-like address to the Sphynx head."
+      }
+    ],
+    "force_keep_removed_skips": [
+      {
+        "chapter_id": "063",
+        "reason_removable": "‘The Line’ is a technical treatise; the climactic entanglement remains intelligible without it.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "064",
+        "reason_removable": "‘Stubb Kills a Whale’ is an action vignette whose techniques recur and can be summarized elsewhere.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "066",
+        "reason_removable": "‘The Crotch’ is gear minutiae dispensable in an abridgment focused on plot and themes.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "067",
+        "reason_removable": "‘Stubb’s Supper’ is a comic set-piece (with Fleece) that can be cut without affecting character arcs.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "069",
+        "reason_removable": "‘The Shark Massacre’ intensifies atmosphere but does not affect later outcomes or themes beyond what’s retained elsewhere.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "070",
+        "reason_removable": "‘Cutting In’ (process) can be omitted as technical detail with no plot consequence.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      },
+      {
+        "chapter_id": "073",
+        "reason_removable": "‘The Sphynx’ (Ahab addresses the head) is an apostrophe that can be removed without harming his arc already established.",
+        "kernel": "",
+        "relocate_to": null,
+        "position": null
+      }
+    ]
+  }
+}

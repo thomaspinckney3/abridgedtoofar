@@ -2,7 +2,7 @@
 
 Example:
     ---
-    model: anthropic:claude-opus-4-7
+    model: anthropic:claude-opus-5-5
     max_tokens: 8192
     ---
     You will receive stage-specific instructions after the cache break.
@@ -30,7 +30,9 @@ from typing import Any
 import yaml
 from jinja2 import Template
 
-PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
+from .resources import resource_path
+
+PROMPTS_DIR = resource_path("prompts/draft_lean.md").parent
 CACHE_BREAK = "<!-- CACHE-BREAK -->"
 
 

@@ -1,5 +1,5 @@
 ---
-model: openai:gpt-5
+model: openai:gpt-6-astra
 max_tokens: 8000
 ---
 Provide a synopsis of the following book{% if note %} {{note}}{% endif %}.

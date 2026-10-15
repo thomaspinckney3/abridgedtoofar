@@ -1,5 +1,5 @@
 ---
-model: anthropic:claude-sonnet-4-6
+model: anthropic:claude-sonnet-5-5
 max_tokens: 12000
 system: |
   You classify the structural pieces of a book source, after an automated
