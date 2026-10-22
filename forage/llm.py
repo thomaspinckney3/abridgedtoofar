@@ -346,7 +346,9 @@ def _anthropic(*, prompt: str, model_id: str, system: Optional[str],
     read_timeout = _env_float("FORAGE_ANTHROPIC_READ_TIMEOUT_S",
                               DEFAULT_ANTHROPIC_READ_TIMEOUT_S)
     text_timeout = _env_float("FORAGE_ANTHROPIC_TEXT_TIMEOUT_S", read_timeout)
+    workspace = os.environ.get("ANTHROPIC_WORKSPACE_ID")
     client = anthropic.Anthropic(
+        default_headers={"anthropic-workspace-id": workspace} if workspace else {},
         timeout=anthropic.Timeout(connect=30.0, read=read_timeout,
                                   write=60.0, pool=30.0)
     )
