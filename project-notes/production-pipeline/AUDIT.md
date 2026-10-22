@@ -2312,3 +2312,60 @@ policy: reviewers manage only their own notes, administrators manage all.
   configured single worker and single machine; scaling requires shared limits.
   README and architecture document the limits, permissions and cache lifecycle.
 - Release status: working-tree changes only; no commit, push or deployment.
+
+# Web Security Release Verification
+
+## 2026-10-22
+
+### Verdict
+
+Release-verified on https://forage-review.fly.dev, Fly release **v26**. The user
+explicitly requested commit, push and deployment after reviewing the fixes.
+All four security fixes are committed and pushed to `origin/main`; upstream
+had no divergence, and no rebase was needed. The existing single machine and
+persistent volume were retained.
+
+### Released changes
+
+- `a501ce0`: stable account ownership and transactional note authorization.
+- `aacc422`: bounded request resources and independent login budgets.
+- `8da1592`: cached publication verification and streamed file hashes.
+- `36fefcb`: ownership/resource-limit documentation and remediation evidence.
+- Released image:
+  `registry.fly.io/forage-review@sha256:f116d9ee11e07a0d8da454a1c5c0df8d2e1ce1f03ba17d446bb5cc10f478f3b5`.
+- All 67 application source files in the tested image and live container match
+  the committed working tree. Commit splitting preserved every pending file's
+  bytes. The image passed the nine production-container tests recorded above.
+
+### Live evidence
+
+- Machine `87e005f0262398` is started and its HTTP service check is passing;
+  `/healthz` reports five books. Volume `vol_re176w7xje1gj214` remains attached.
+- SQLite integrity passes. Every pre-existing column/row in comments,
+  revision_reviews, review_metadata and users matches the pre-deployment backup:
+  456 notes, one revision decision and three accounts. The additive owner-ID
+  migration applied; historical notes have NULL ownership and remain
+  admin-managed. Browser verification created and revoked only its own session.
+- All 780 recorded volume artifact files have unchanged hashes. Public captures
+  before and after deployment match across five books, 115 chapters, 456 notes,
+  publication pointers and downloadable files. Comparison ignores only the new
+  nullable `author_user_id` field; prose and existing review data are unchanged.
+- Real Chromium checks pass: existing admin credentials, secure/HttpOnly/Lax
+  session cookie, three-account management display, logout, desktop/mobile
+  layout and no browser exceptions. An anonymous 65,537-byte request receives
+  413 with security headers; a missing immutable asset receives 404.
+- Detailed scripts/logs/captures are in
+  `/tmp/forage-security-release-20261022/`, including `verification.json`,
+  `deploy.log`, `public-after-summary.json`, and `live-browser.log`.
+
+### Recovery and scope
+
+The consistent pre-deployment SQLite backup is
+`/data/backups/security-20261022/review.db`, alongside an artifact hash manifest.
+A Fly volume snapshot was requested before deployment. No book generation,
+paid model calls, account edits, note edits or content republishing occurred.
+Existing accounts/passwords and publication pointers remain intact. This
+documentation append does not change the tested or deployed application image.
+
+Snapshot `vs_4g38XgBpwN9skV72RPXPo0j` is confirmed created at
+2026-10-22T23:14:11Z with five-day retention.
