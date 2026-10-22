@@ -766,8 +766,13 @@ function renderDiagnostic(diagnostic, block) {
       : null);
 }
 
+function canManageNote(note) {
+  return state.session.can_write && (state.session.can_admin
+    || (!!state.session.user_id && note.author_user_id === state.session.user_id));
+}
+
 function renderNote(note) {
-  const canWrite = state.session.can_write;
+  const canWrite = canManageNote(note);
   const responses = note.llm_responses || [];
   return h("div", { class: `note ${note.severity} ${note.status}` },
     h("div", { class: "note-head" },
@@ -818,7 +823,7 @@ function renderRevisionReview(note) {
       "Your feedback is saved. The next pipeline run is started separately outside this website.") : null,
     !review.current ? h("p", {class: "sheet-note"},
       "This response refers to earlier text. Review the current edition before deciding.") : null,
-    state.session.can_write && review.current ? h("div", {class: "revision-actions"},
+    (note.pipeline_review ? state.session.can_write : canManageNote(note)) && review.current ? h("div", {class: "revision-actions"},
       review.state === "accepted"
         ? h("button", {class: "btn small", type: "button", onclick: () => decideRevision(note, "reopened")}, finding ? "Reopen suggestion" : "Reopen revision")
         : [h("button", {class: "btn small", type: "button", onclick: () => decideRevision(note, "accepted")}, finding ? "Dismiss suggestion" : "Accept revision"),

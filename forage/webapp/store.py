@@ -945,6 +945,7 @@ class ReviewStore:
                 "timestamp_seconds": "REAL", "original_text": "TEXT", "chapter_anchor": "TEXT",
                 "review_version": "INTEGER NOT NULL DEFAULT 0",
                 "pipeline_item_id": "TEXT",
+                "author_user_id": "TEXT",
             }.items():
                 if name not in columns:
                     conn.execute(f"ALTER TABLE comments ADD COLUMN {name} {definition}")
@@ -1054,7 +1055,8 @@ class ReviewStore:
             target_id: str | None = None, publication_revision: str | None = None,
             text_revision: str | None = None, target_revision: str | None = None,
             timestamp_seconds: float | None = None,
-            original_text: str | None = None, chapter_anchor: str | None = None) -> dict:
+            original_text: str | None = None, chapter_anchor: str | None = None,
+            author_user_id: str | None = None) -> dict:
         now = time.time()
         row = {
             "id": uuid.uuid4().hex[:12],
@@ -1068,6 +1070,7 @@ class ReviewStore:
             "status": "open",
             "body": body[:MAX_BODY],
             "author": author[:MAX_AUTHOR],
+            "author_user_id": author_user_id,
             "created_at": now,
             "updated_at": now,
             "scope": scope or ("book" if segment_id == BOOK_COMMENT_SEGMENT
@@ -1082,19 +1085,29 @@ class ReviewStore:
                 "INSERT INTO comments (id, book_id, segment_id, draft_para, anchor,"
                 " quote, severity, kind, status, body, author, created_at, updated_at,"
                 " scope, target_kind, target_id, publication_revision, text_revision,"
-                " target_revision, timestamp_seconds, original_text, chapter_anchor)"
+                " target_revision, timestamp_seconds, original_text, chapter_anchor, author_user_id)"
                 " VALUES (:id, :book_id, :segment_id, :draft_para, :anchor, :quote,"
                 " :severity, :kind, :status, :body, :author, :created_at, :updated_at,"
                 " :scope, :target_kind, :target_id, :publication_revision, :text_revision,"
-                " :target_revision, :timestamp_seconds, :original_text, :chapter_anchor)",
+                " :target_revision, :timestamp_seconds, :original_text, :chapter_anchor, :author_user_id)",
                 row)
         return row
 
-    def update(self, comment_id: str, **fields: Any) -> Optional[dict]:
-        allowed = {"body", "severity", "kind", "status", "author"}
+    @staticmethod
+    def _require_owner(conn, row, actor_id, *, pipeline_decision=False):
+        actor = conn.execute('SELECT role FROM users WHERE id=?', (actor_id,)).fetchone()
+        if actor is None or actor['role'] not in {'admin', 'reviewer'}:
+            raise PermissionError('Sign in again before changing notes.')
+        if row['pipeline_item_id'] and not pipeline_decision:
+            raise PermissionError('Use the pipeline review decision controls.')
+        if (actor['role'] == 'admin' or row['author_user_id'] == actor_id
+                or (pipeline_decision and row['pipeline_item_id'])):
+            return
+        raise PermissionError('You can only change your own notes.')
+
+    def update(self, comment_id: str, *, actor_id: str, **fields: Any) -> Optional[dict]:
+        allowed = {"body", "severity", "kind", "status"}
         sets = {k: v for k, v in fields.items() if k in allowed and v is not None}
-        if not sets:
-            return self.get(comment_id)
         if "severity" in sets and sets["severity"] not in SEVERITIES:
             sets.pop("severity")
         if "kind" in sets and sets["kind"] not in KINDS:
@@ -1103,23 +1116,32 @@ class ReviewStore:
             sets.pop("status")
         if "body" in sets:
             sets["body"] = str(sets["body"])[:MAX_BODY]
-        if "author" in sets:
-            sets["author"] = str(sets["author"])[:MAX_AUTHOR]
         sets["updated_at"] = time.time()
         clause = ", ".join(f"{k} = :{k}" for k in sets)
         with self._connect() as conn:
+            conn.execute('BEGIN IMMEDIATE')
+            row = conn.execute('SELECT * FROM comments WHERE id=?', (comment_id,)).fetchone()
+            if row is None:
+                return None
+            self._require_owner(conn, row, actor_id)
             conn.execute(f"UPDATE comments SET {clause}, review_version = review_version + 1 WHERE id = :id",
                          {**sets, "id": comment_id})
         return self.get(comment_id)
 
-    def delete(self, comment_id: str) -> bool:
+    def delete(self, comment_id: str, *, actor_id: str) -> bool:
         with self._connect() as conn:
+            conn.execute('BEGIN IMMEDIATE')
+            row = conn.execute('SELECT * FROM comments WHERE id=?', (comment_id,)).fetchone()
+            if row is None:
+                return False
+            self._require_owner(conn, row, actor_id)
             conn.execute('DELETE FROM revision_reviews WHERE comment_id = ?', (comment_id,))
             cur = conn.execute("DELETE FROM comments WHERE id = ?", (comment_id,))
         return cur.rowcount > 0
 
     def review_revision(self, comment_id: str, *, response: dict, action: str,
-                        body: str, author: str, context: dict, expected_version: int) -> dict:
+                        body: str, author: str, context: dict, expected_version: int,
+                        actor_id: str) -> dict:
         """Save a reviewer decision and queue status as one serialized mutation."""
         if action not in {'accepted', 'rejected', 'reopened'}:
             raise ValueError('Unknown revision decision.')
@@ -1130,6 +1152,7 @@ class ReviewStore:
             row = conn.execute('SELECT * FROM comments WHERE id = ?', (comment_id,)).fetchone()
             if row is None:
                 raise ValueError('No such comment.')
+            self._require_owner(conn, row, actor_id, pipeline_decision=True)
             if type(expected_version) is not int or row['review_version'] != expected_version:
                 raise RuntimeError('This review changed. Reload before deciding.')
             last = conn.execute('SELECT action FROM revision_reviews WHERE comment_id = ? '

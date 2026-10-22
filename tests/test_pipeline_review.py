@@ -11,6 +11,7 @@ from forage.review_anchors import chapter_hash
 from .test_production_runner import pipeline, run_ok
 from .test_review_lifecycle import _site, _comment
 from .test_revision_review import decide
+from .conftest import sign_in
 
 
 def package(book, kind='finding'):
@@ -35,6 +36,18 @@ def enrich(book, revision, data):
 
 def notes(client):
     return client.get('/api/books/sample/comments').json()['comments']
+
+
+def test_shared_pipeline_findings_allow_reviewer_decisions(pipeline, tmp_path):
+    book, _ = pipeline
+    original = run_ok(book)['review_revision']
+    revision = enrich(book, original, package(book))
+    _, _, transport, client = _site(tmp_path)
+    transport.publish(book, revision)
+    sign_in(client)
+    note = next(n for n in notes(client) if n.get('pipeline_review'))
+    assert note['author_user_id'] is None
+    assert decide(client, note, 'accepted').status_code == 200
 
 
 @pytest.mark.parametrize('kind', ['finding', 'repair'])

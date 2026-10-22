@@ -581,7 +581,7 @@ def create_app(artifacts: ArtifactStore | None = None,
                 anchor=anchor, original_text=original_text, quote=str(payload.get("quote", "")),
                 chapter_anchor=chapter_hash(paras) if scope == "paragraph" else None,
                 severity=str(payload.get("severity", "minor")), kind=str(payload.get("kind", "other")),
-                body=body.strip(), author=sess.label, scope=scope,
+                body=body.strip(), author=sess.label, author_user_id=sess.user_id, scope=scope,
                 target_kind=scope if scope in {"audio", "graphic"} else "text", target_id=target_id,
                 target_revision=target_revision, timestamp_seconds=timestamp, **selected.revision_info(book_id))
         return {**decorate_comments(current, book_id, [row])[0], **warning}
@@ -598,7 +598,13 @@ def create_app(artifacts: ArtifactStore | None = None,
             raise HTTPException(status_code=400, detail="A comment needs a body.")
         book_id = existing["book_id"]
         with review_mutation(book_id) as warning:
-            row = reviews.update(comment_id, **{k: payload.get(k) for k in ("body", "severity", "kind", "status")})
+            try:
+                row = reviews.update(comment_id, actor_id=sess.user_id,
+                    **{k: payload.get(k) for k in ("body", "severity", "kind", "status")})
+            except PermissionError as exc:
+                raise HTTPException(status_code=403, detail=str(exc)) from None
+            if row is None:
+                raise HTTPException(status_code=404, detail="No such comment.")
         selected = selected_book(book_id)
         return {**decorate_comments(selected, book_id, [row], selected.review_apply_responses(book_id, source_id=reviews.source_id))[0], **warning}
 
@@ -610,7 +616,11 @@ def create_app(artifacts: ArtifactStore | None = None,
         if existing.get('pipeline_item_id'):
             raise HTTPException(status_code=409, detail='Pipeline review evidence is retained. Dismiss the finding instead.')
         with review_mutation(existing["book_id"]) as warning:
-            if not reviews.delete(comment_id):
+            try:
+                deleted = reviews.delete(comment_id, actor_id=sess.user_id)
+            except PermissionError as exc:
+                raise HTTPException(status_code=403, detail=str(exc)) from None
+            if not deleted:
                 raise HTTPException(status_code=404, detail="No such comment.")
         return {"deleted": comment_id, **warning}
 
@@ -647,7 +657,9 @@ def create_app(artifacts: ArtifactStore | None = None,
             try:
                 row = reviews.review_revision(comment_id, response=viewed['llm_responses'][-1],
                     action=action, body=body, author=sess.label, context=context,
-                    expected_version=payload.get('version'))
+                    expected_version=payload.get('version'), actor_id=sess.user_id)
+            except PermissionError as exc:
+                raise HTTPException(status_code=403, detail=str(exc)) from None
             except ValueError as exc:
                 raise HTTPException(status_code=400, detail=str(exc))
             except RuntimeError as exc:
