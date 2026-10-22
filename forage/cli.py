@@ -377,6 +377,37 @@ def draft(
             _run_one(book, plan, s["id"], stream=stream)
 
 
+@app.command("draft-two-pass")
+def draft_two_pass(
+    book_id: str,
+    segment: list[str] = typer.Option(None, "--segment", help="Repeat to select chapters; default is all positive-target chapters."),
+    output_dir: Path = typer.Option(..., help="New directory for plans, both drafts, measured counts and cut evaluations."),
+    model: str = typer.Option("anthropic:claude-opus-5-5", help="Model for planning and both chapter passes."),
+) -> None:
+    """Plan from the book, draft, count, evaluate cuts and revise once.
+
+    Uses the original plan.json targets. Saves review artifacts without
+    replacing production segments. One planning call plus two calls per chapter.
+    """
+    from .target_revision import run_book
+    book = load_book(book_id, create=False)
+    plan = read_json(book.work_dir / "plan.json")
+    selected = segment or [s["id"] for s in plan["segments"]
+                           if s.get("diegetic_status") != "extradiegetic"
+                           and int(s.get("target_word_count", 0)) > 0]
+    results = run_book(book, selected, output_dir=output_dir, model=model)
+    table = Table(title="Two-pass abridgment")
+    for column in ("Chapter", "Target", "First draft", "Revision", "Difference", "Status"):
+        table.add_column(column)
+    for sid, result in results.items():
+        final = result["revision"]
+        table.add_row(sid, str(final["target_words"]), str(result["initial"]["words"]),
+                      str(final["words"]), f"{final['target_delta_words']:+d}",
+                      result["status"])
+    console.print(table)
+    console.print(f"Review artifacts: {output_dir.resolve()}")
+
+
 def _run_one(book, plan, segment_id: str, *, stream: bool) -> None:
     seg = next((s for s in plan["segments"] if s["id"] == segment_id), None)
     title = seg.get("title", "?") if seg else "?"

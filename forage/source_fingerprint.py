@@ -27,6 +27,12 @@ COMMON_FILES = [
 ]
 
 STAGE_FILES = {
+    "target_revision": [
+        "forage/target_revision.py",
+        "prompts/preservation_plan.md",
+        "prompts/draft_fixed_target.md",
+        "prompts/revise_fixed_target.md",
+    ],
     "align": [
         "forage/align.py",
         "prompts/align.md",

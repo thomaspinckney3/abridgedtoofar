@@ -40,6 +40,11 @@ _ENV_KEYS = (
 
 @pytest.fixture(autouse=True)
 def clean_env(monkeypatch):
+    # CLI imports load the operator's .env during collection. Model routing
+    # must stay local to each test, just like its filesystem configuration.
+    for key in list(os.environ):
+        if key.startswith("FORAGE_") and (key == "FORAGE_MODEL" or key.endswith("_MODEL")):
+            monkeypatch.delenv(key, raising=False)
     for key in _ENV_KEYS:
         monkeypatch.delenv(key, raising=False)
 
