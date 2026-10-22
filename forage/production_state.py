@@ -22,7 +22,8 @@ def digest(value) -> str:
 
 
 def sha256_file(path: Path) -> str:
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    with Path(path).open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
 def confined_path(root: Path, relative: str) -> Path:

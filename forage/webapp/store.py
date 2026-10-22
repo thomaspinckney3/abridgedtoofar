@@ -407,6 +407,8 @@ class ArtifactStore:
         self.overlay_books_dir = self._optional_root(
             "FORAGE_BOOKS_OVERLAY_DIR", overlay_books_dir)
         self._cache: dict[str, tuple[tuple[int, int], Any]] = {}
+        from ..publication_cache import RevisionCache
+        self._revision_cache = RevisionCache()
         root = (os.environ.get("FORAGE_HOSTED_ROOT")
                 or os.environ.get("FORAGE_PUBLICATION_DIR") or hosted_dir)
         self.hosted = None
@@ -426,9 +428,8 @@ class ArtifactStore:
         self._revisions: dict[str, dict] = {}
         self._channels: dict[str, str] = {}
 
-    @staticmethod
-    def _resolve_hosted(hosted, book_id: str, revision: str | None = None,
-                        channel: str | None = None):
+    def _resolve_hosted(self, hosted, book_id: str, revision: str | None = None,
+                        channel: str | None = None, asset_path: str | None = None):
         # Default reading/feedback uses review-current when it exists. A book
         # may legitimately have only a public release, which is then current.
         # Explicit selectors stay strict and never change either pointer.
@@ -437,12 +438,14 @@ class ArtifactStore:
             pointers = hosted.status(book_id)
             if pointers["review"] is None and pointers["release"] is not None:
                 selected_channel = "release"
-        root, manifest = hosted.resolve(book_id, revision, selected_channel)
+        root, manifest = hosted.resolve(book_id, revision, selected_channel,
+                                        verification_cache=self._revision_cache,
+                                        asset_path=asset_path)
         label = "revision" if revision is not None and channel is None else selected_channel
         return root, manifest, label
 
     def selected(self, book_id: str, revision: str | None = None,
-                 channel: str | None = None) -> "ArtifactStore":
+                 channel: str | None = None, *, asset_path: str | None = None) -> "ArtifactStore":
         """Pin a whole book once, so pointer changes cannot mix a response."""
         if not valid_book_id(book_id) or channel not in {None, "review", "release"}:
             raise ValueError("Bad book or publication channel.")
@@ -461,7 +464,7 @@ class ArtifactStore:
                     break  # A whole-book overlay replaces the baked book.
         if hosted is not None:
             try:
-                root, manifest, label = self._resolve_hosted(hosted, book_id, revision, channel)
+                root, manifest, label = self._resolve_hosted(hosted, book_id, revision, channel, asset_path)
             except FileNotFoundError:
                 if revision or channel == "release" or book_id in hosted.book_ids():
                     raise
@@ -480,6 +483,9 @@ class ArtifactStore:
         return {"publication_revision": manifest.get("revision"),
                 "text_revision": manifest.get("text_revision")}
 
+    def invalidate_revision_cache(self) -> None:
+        self._revision_cache.invalidate()
+
     def media(self, book_id: str) -> dict:
         from ..media import validate_media_manifest
         root = self._book_work_dir(book_id)
@@ -488,7 +494,9 @@ class ArtifactStore:
             return {"version": 1, "book_id": book_id, "targets": []}
         if not isinstance(index, dict) or index.get("book_id") != book_id:
             raise ValueError("Media manifest belongs to a different book.")
-        return validate_media_manifest(index, root, verify_files=True)
+        # Selected snapshots have just passed the revision cache's integrity
+        # check; mutable local artifacts still require full media verification.
+        return validate_media_manifest(index, root, verify_files=book_id not in self._revisions)
 
     # -- internals ---------------------------------------------------------
 

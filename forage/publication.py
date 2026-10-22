@@ -171,8 +171,8 @@ def _review_text(root: Path, outputs: list[dict]) -> None:
                 raise ValueError("assembled publication text cannot be empty")
 
 
-def verify_revision(book: Book, revision_id: str) -> dict:
-    """Validate a stored revision and every referenced file without changing it."""
+def read_revision_manifest(book: Book, revision_id: str) -> tuple[Path, dict]:
+    """Validate snapshot identity and inventory without opening payload files."""
     _hash(revision_id, "revision")
     directory = _publication_root(book) / revision_id
     if directory.is_symlink() or not directory.is_dir():
@@ -195,6 +195,16 @@ def verify_revision(book: Book, revision_id: str) -> dict:
         outputs = _outputs(record.get("outputs"))
         if outputs != record["outputs"] or digest(_identity(record)) != revision_id:
             raise ValueError("revision content identity mismatch")
+    except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"invalid publication revision {revision_id}: {exc}") from exc
+    return directory, record
+
+
+def verify_revision(book: Book, revision_id: str) -> dict:
+    """Validate a stored revision and every referenced file without changing it."""
+    directory, record = read_revision_manifest(book, revision_id)
+    outputs = record["outputs"]
+    try:
         expected = {item["path"] for item in outputs} | {"revision.json"}
         actual = set()
         for path in directory.rglob("*"):

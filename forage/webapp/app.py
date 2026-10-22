@@ -398,6 +398,7 @@ def create_app(artifacts: ArtifactStore | None = None,
         try:
             from starlette.concurrency import run_in_threadpool
             manifest = await run_in_threadpool(store.upload, book_id, bytes(data))
+            await run_in_threadpool(artifacts.invalidate_revision_cache)
         except (ValueError, OSError) as exc:
             raise HTTPException(status_code=400, detail=str(exc))
         except RuntimeError as exc:
@@ -416,6 +417,7 @@ def create_app(artifacts: ArtifactStore | None = None,
                 selected = selected_book(book_id, revision=payload['revision'])
                 reviews.import_pipeline_review(selected, book_id)
                 pointer = store.promote(book_id, payload.get("revision"), payload.get("channel", "review"), lock_held=True)
+                artifacts.invalidate_revision_cache()
         except FileNotFoundError as exc:
             raise HTTPException(status_code=404, detail=str(exc))
         except (ValueError, OSError) as exc:
@@ -521,7 +523,7 @@ def create_app(artifacts: ArtifactStore | None = None,
     def revision_asset(book_id: str, revision_id: str, asset_path: str) -> FileResponse:
         from ..production_state import confined_path
         try:
-            selected = artifacts.selected(book_id, revision_id)
+            selected = artifacts.selected(book_id, revision_id, asset_path=asset_path)
             manifest = selected._revisions[book_id]
             entry = next((item for item in manifest["outputs"] if item["path"] == asset_path), None)
             if entry is None:

@@ -163,7 +163,8 @@ class HostedPublications:
         return {channel: publication._read_pointer(book, channel) for channel in ("review", "release")}
 
     def resolve(self, book_id: str, revision: str | None = None,
-                channel: str = "review") -> tuple[Path, dict]:
+                channel: str = "review", *, verification_cache=None,
+                asset_path: str | None = None) -> tuple[Path, dict]:
         if channel not in {"review", "release"}:
             raise ValueError("publication channel must be review or release")
         book = self._book(book_id)
@@ -177,4 +178,10 @@ class HostedPublications:
         root = book.work_dir / "publications" / revision
         if not root.exists() and not root.is_symlink():
             raise FileNotFoundError(f"no publication revision {revision}")
+        if verification_cache is not None:
+            return root, verification_cache.verify(book, revision, asset_path=asset_path)
+        if asset_path is not None:
+            _, manifest = publication.read_revision_manifest(book, revision)
+            if not any(item["path"] == asset_path for item in manifest["outputs"]):
+                raise FileNotFoundError("Asset is absent from this revision.")
         return root, publication.verify_revision(book, revision)
