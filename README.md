@@ -290,8 +290,8 @@ to change your password or sign out; a password change ends other sessions.
 | Level | Can |
 | --- | --- |
 | public | read books, chapters, alignments and notes; download feedback |
-| reviewer | add, edit, restatus and delete notes |
-| admin | reviewer permissions, manage accounts, export feedback, upload revisions and promote review/public release |
+| reviewer | add notes; edit, restatus, delete and decide revisions for their own notes; review shared pipeline findings |
+| admin | manage all human notes and accounts, review pipeline findings, export feedback, upload revisions and promote review/public release |
 
 Usernames are case-insensitive (3–64 letters, numbers, `.`, `@`, `_`, `-`).
 Passwords are 15–128 characters, including spaces and Unicode. Display names
@@ -302,9 +302,33 @@ and `Secure` over HTTPS; only their hashes are stored in SQLite. Every request
 checks the current account and session. Logout invalidates copied cookies too.
 
 The old shared `FORAGE_REVIEW_TOKEN` / `FORAGE_ADMIN_TOKEN` login and signed role
-cookies are no longer accepted. Sign-in attempts are limited to 8 per address
-per 15 minutes; successful sign-ins clear that counter. Writes are limited to
-60/minute. Password hashing concurrency is bounded for the small server.
+cookies are no longer accepted. Sign-in attempts have independent limits of
+8 per normalized username and 30 per address per 15 minutes. Successful sign-ins
+clear only that username's counter; they never clear the address budget or
+another account's budget. Writes are limited to 60/minute per address. Password
+hashing concurrency is bounded for the small server. Limiter maps have a hard
+capacity and reject new keys until space expires when full. These limits are
+per process, matching the deployment's single worker and single machine.
+
+Human notes store the author's stable account ID. Display names do not grant
+ownership, and recreating a deleted username does not recover its notes. Older
+notes without an account ID remain admin-managed. Pipeline evidence remains
+shared: reviewers can dismiss findings or request changes through its decision
+controls; the evidence itself is retained.
+
+Ordinary write bodies are capped at 64 KiB before JSON parsing, counting streamed
+bytes as well as declared length, with a 15-second read deadline and 16 concurrent
+requests. Admin publication uploads use their existing archive byte limit,
+120-second read deadline and a separate single-upload slot. Public book API reads
+allow 180/minute per address and 600/minute overall, with at most 8 active reads.
+Rejected requests return 413 for size, 408 for timeout, 429 for rate, or 503 for
+concurrency, with `Retry-After` on 429 and 503 responses.
+
+Snapshot verification is cached for up to 32 revisions. Each read checks the
+complete tree's identity, size, modification time and change time; changes trigger
+full verification, and uploads/promotions invalidate the cache. Missing asset
+paths are rejected from the validated inventory before payload files are opened.
+File hashing streams data rather than loading a whole asset into memory.
 
 Behind a proxy the limiter has to count the real client rather than the proxy, or the whole internet shares one bucket — so it reads `Fly-Client-IP` first, falling back to the **right-most** `X-Forwarded-For` entry. Right-most matters: proxies append, so the last entry is the one Fly wrote, while anything to its left was supplied by the caller and can be forged to buy a fresh bucket. Forwarded headers are only trusted when `FORAGE_TRUST_PROXY` says a proxy is genuinely in front. Cross-origin writes are refused outright, and every response carries CSP, `nosniff`, `X-Frame-Options: DENY`, and (over HTTPS) HSTS.
 

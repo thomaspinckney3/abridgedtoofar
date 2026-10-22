@@ -2006,3 +2006,309 @@ owner change a personal password without interrupting automation. Scaling across
 machines still requires shared storage, as before. Rollback to v23 requires
 restoring its retired secrets from the private operation backup; the additive
 account tables do not require reverting review data. No small fix remains.
+
+
+# Web Application Security Audit
+
+## 2026-10-22
+
+### Verdict
+
+Security gate: **FAIL**. Audit of committed application source at `90ecbd8`
+confirmed four actionable issues: missing comment ownership enforcement,
+unbounded JSON request bodies before access/rate checks, a login-throttling
+bypass using a valid low-privilege account, and anonymous publication-validation
+work amplification. These are verified local behaviors, not evidence that the
+deployed service has been compromised. This audit changes no application code
+and deploys no fixes. It supersedes the earlier clean security assessment for
+the specific paths identified below.
+
+The user explicitly confirmed the authorization policy during this audit:
+reviewers may edit/delete only their own notes; administrators may manage all.
+Reading published text and feedback remains intentionally public.
+
+### Findings
+
+1. **High / P1 — reviewers can overwrite or delete other users' notes.**
+   - Evidence: `forage/webapp/app.py:590`, `forage/webapp/app.py:606`,
+     `forage/webapp/app.py:584`, `forage/webapp/store.py:1070`,
+     `forage/webapp/store.py:1093`, `forage/webapp/store.py:1115`.
+   - PATCH and DELETE check only `require_write`, then operate on any supplied
+     ordinary comment ID. Public comment feeds expose those IDs. There is no
+     owner check. The stored `author` is a display-name string, not a user ID.
+   - Reproduction: create a note as Alice, sign in as Bob, PATCH then DELETE
+     Alice's note. Both return 200. The edited content still identifies Alice
+     as its author. A separate reproduction uses an administrator's note:
+     the reviewer can edit and delete it, retaining `Administrator` attribution.
+   - Impact: unauthorized alteration, false attribution and permanent deletion
+     of editorial notes; deletion also removes associated revision-review rows.
+   - Remediation: store an immutable author user ID, enforce owner-or-admin in
+     the mutation transaction, and apply that rule in the browser controls.
+     Preserve existing author text for history. Legacy notes without a proven
+     owner should be admin-managed; display-name matching is not an identity
+     migration because names need not be unique. Keep pipeline-generated
+     finding/decision permissions explicit rather than assigning a human owner
+     by inference.
+   - Evidence files: `collaborative-note-permissions.json` and
+     `reviewer-modifies-admin-note.json` in the audit evidence directory below.
+
+2. **High / P1 — unauthenticated JSON bodies can consume unbounded memory.**
+   - Evidence: `forage/webapp/app.py:115`, `forage/webapp/app.py:254`,
+     `forage/webapp/app.py:289`; compare the separate archive-stream limit at
+     `forage/webapp/app.py:362`. `fly.toml` configures a single 512 MB machine.
+   - Ordinary `Body(...)` routes have no byte limit. FastAPI consumes/parses
+     their JSON before dependency authorization and before the login handler's
+     limiter. The archive endpoint's explicit limit does not cover these routes.
+   - Bounded local reproduction instrumented `Request.json`: an anonymous
+     `/api/users` request consumed all 8,388,623 bytes before returning 401.
+     After login lockout, `/api/session` still consumed the same body before
+     returning 429. An unauthenticated malformed 2 MB body returned a JSON
+     parse error (422), further confirming parsing precedes access checks.
+   - Impact: a remote caller can force allocation/parsing of arbitrarily large
+     bodies. Exhausting the deployed machine's memory is a reasoned risk from
+     the unbounded path, not an intentionally induced live outage.
+   - Remediation: enforce a small JSON byte limit in ASGI middleware before
+     buffering/parsing, count actual streamed bytes for chunked requests, and
+     reject oversized declared lengths early. Keep the authenticated publication
+     upload route's separate size policy and bound concurrent uploads.
+   - Evidence: `unbounded-json-body.json`, `json-before-auth.json`.
+
+3. **Medium / P2 — one valid reviewer login resets the admin guessing budget.**
+   - Evidence: `forage/webapp/app.py:257`, `forage/webapp/app.py:268`,
+     `forage/webapp/auth.py:155`.
+   - All usernames from an IP share one login bucket. Any successful login
+     clears that entire bucket; no separate target-account throttle exists.
+   - Control: eight wrong administrator passwords return 403; the ninth returns
+     429. Bypass: alternate a wrong administrator password with a correct Alice
+     password from the same client. Twenty wrong administrator attempts all
+     return 403, with successful reviewer logins between them and no 429.
+   - Prerequisite: an existing valid account/password, such as a compromised or
+     malicious reviewer. This is a throttle bypass, not proof of recovering a
+     strong administrator password or bypassing password verification itself.
+   - Remediation: maintain separate IP-wide and normalized-username budgets.
+     A successful login must not reset another account's failure history or
+     clear the aggregate abuse budget. Avoid permanent account lockouts that
+     allow an attacker to deny the owner access.
+   - Evidence: `login-control.json`, `login-reset-bypass.json`.
+
+4. **Medium / P2 — anonymous missing-asset requests repeatedly hash a full book.**
+   - Evidence: `forage/webapp/app.py:503`, `forage/webapp/app.py:506`,
+     `forage/webapp/store.py:444`, `forage/hosted_publication.py:180`,
+     `forage/publication.py:205`, `forage/production_state.py:85`.
+   - Asset lookup resolves and verifies the entire publication before checking
+     whether the requested path is in its manifest. Verification walks every
+     file and recomputes every output hash on every request. Public reads have
+     no rate limit; response cache headers do not remove this server-side work.
+   - Reproduction uses the existing Christie publication read-only in a local
+     app with a temporary review DB. Two anonymous requests for `missing.txt`
+     each return 404 after hashing 103 files / 4,649,215 bytes, taking about
+     0.10 seconds each on the audit machine. The second request does not reuse
+     verification. Larger media publications increase the work proportionally.
+   - Remediation: cache validated immutable manifests with explicit invalidation
+     on publication changes, reject absent assets before opening content, and
+     enforce public-read request/concurrency budgets. Preserve integrity checks
+     at upload/promotion and handle out-of-band file changes explicitly; do not
+     simply remove snapshot validation.
+   - Evidence: `public-missing-asset-amplification.json`.
+
+Additional low-priority hardening: `forage/webapp/auth.py:147` does not enforce
+the commented 4,096-key memory bound. It drops only expired keys, retaining all
+active ones and scanning the whole map on every new allowed hit over the
+threshold. A local test retains 5,000 active keys. Bound active-key cardinality
+and cleanup work, ideally as part of finding 3's limiter redesign. Exploiting
+this through Fly requires many genuine source IPs; the audit does not assert
+that clients can forge Fly's injected address header.
+
+### Verification and evidence
+
+Evidence directory: `/tmp/forage-security-20261022/`. The audit test module
+contains bounded reproductions against temporary accounts/databases and one
+read-only local publication. No tests send attack requests to production.
+
+Commands:
+
+```bash
+.venv/bin/python -m pytest -q /tmp/forage-security-20261022/test_security_audit.py tests/test_accounts.py tests/test_auth.py tests/test_webapp_security.py tests/test_hosted_publication.py tests/test_artifact_safety.py tests/test_web_media.py
+.venv/bin/python -m pytest -q /tmp/forage-security-20261022/test_security_audit.py -k 'reviewer_can_change_admin_note or public_missing_asset'
+.venv/bin/python /tmp/forage-security-20261022/check_external.py
+```
+
+The first run passed 210 checks, including six audit checks; the second passed
+the two subsequently added checks. In total: **204 existing tests and eight
+audit checks**. Passing the reproduction checks confirms vulnerable behavior;
+it does not constitute a clean security verdict. Six existing TestClient
+timeout-deprecation warnings were emitted.
+
+Positive checks: salted scrypt hashes; opaque hashed sessions; logout, password
+change and user deletion revocation; admin-only account management/publication;
+legacy-token rejection; SQL parameterization; origin checks and secure cookie
+attributes; archive traversal/link/duplicate/expanded-size protections; confined
+asset paths; browser text-node rendering and restrictive script CSP. No verified
+SQL injection, stored-script execution, path escape, or session forgery emerged
+from the inspected paths and targeted tests.
+
+Read-only GET of the live home page returned 200 with CSP, HSTS, `nosniff`,
+`DENY` framing and same-origin referrer policy. OSV batch queries returned no
+advisories for the 19 exact pins in `requirements-web.txt`. This covers that
+Python dependency list, not an OS/container vulnerability scan or a guarantee
+that undisclosed flaws do not exist. Primary references:
+[OSV package-version query API](https://google.github.io/osv.dev/api/) and
+[Fly request-header semantics](https://docs.fly.io/networking/request-headers).
+Machine-readable results are in `live-headers.json` and
+`dependency-advisories.json`.
+
+### Completeness
+
+- Scope covered: authentication/session lifecycle, role and object permissions,
+  request processing, SQL/file/archive boundaries, browser rendering, proxy and
+  deployment configuration, Python dependency advisories and live headers.
+- Ownership acceptance criterion: **not met**, as confirmed by finding 1.
+- Truthful state: vulnerabilities locally reproduced against committed source;
+  existing deployment remains in place. Remediation is not implemented or
+  release-verified. No live load testing, credential guessing or data mutation.
+- Limits: no base-image/OS package scan, comprehensive third-party penetration
+  test, or production exploit attempt. No paid pipeline/model calls occurred.
+- Audit output only: application, tests in the repository, and deployment were
+  unchanged. Reproduction scripts/results are outside the source tree.
+
+### Structural Assessment
+
+AccountStore correctly centralizes password/session handling, and the existing
+publication boundary validates archive integrity. Missing object ownership
+must be enforced by ReviewStore's mutation transaction, not just the UI.
+Request-size admission needs a shared layer before framework JSON parsing.
+Rate limiting currently conflates source-IP abuse with account authentication
+success. Publication validation is sound but performed at excessive cost on
+every public read. These boundaries prevent a clean structural verdict.
+
+### Forward Impact and Remediation Mapping
+
+1. Prioritize comment ownership and early request-size limits before inviting
+   additional reviewers. Persist stable owner IDs and define a conservative
+   migration for existing anonymous/legacy author strings.
+2. Separate authentication budgets and bound limiter memory/cleanup work.
+3. Add immutable-publication verification reuse and bounded read admission.
+4. Turn the exploit reproductions into rejection/authorization regression tests,
+   test owner/admin/other-user behavior and streaming lengths, then run the
+   web/container checks and verify the fixes after deployment.
+
+# Web Security Remediation Audit
+
+## 2026-10-22
+
+### Verdict
+
+The four security findings above and the limiter-capacity observation are
+addressed in the working tree. Functional, structural and forward-impact checks
+pass for the local application and rebuilt production container. Live deployment
+has not changed; these fixes are not yet committed, pushed or verified on Fly.
+Scope is the user's instruction to fix the audit findings and their explicit
+policy: reviewers manage only their own notes, administrators manage all.
+
+### Findings and verification
+
+1. **Object ownership enforced in the database transaction.**
+   - `forage/webapp/store.py:956` migrates a nullable `author_user_id` without
+     changing prior records or inferring ownership from mutable author labels.
+   - `forage/webapp/app.py:604` assigns the session account ID, ignoring submitted
+     identity. `forage/webapp/store.py:1105` checks the current account role and
+     note owner inside the edit/delete/revision-decision write transaction.
+     Admins can manage all human notes. Deleted/recreated users cannot inherit
+     notes; legacy notes remain admin-managed. Pipeline evidence retains its
+     existing shared decision workflow and cannot be edited or deleted.
+   - `forage/webapp/static/app.js:769` applies the same policy to visible controls.
+   - `tests/test_note_ownership.py:16` covers owner, other reviewer, admin,
+     forged identity, legacy migration, recreated accounts, revoked actors and
+     revision decisions. The pipeline suite verifies ordinary reviewers can
+     still decide shared findings.
+
+2. **Body admission precedes JSON parsing.**
+   - `forage/webapp/limits.py:37` enforces a 64 KiB ordinary-write limit using
+     declared length and actual streamed bytes, with a 15-second deadline and
+     16 active writes. Oversize declared bodies are never read. Understated or
+     missing lengths cannot bypass streamed limits; invalid/duplicate lengths
+     are rejected. Admission slots are released after rejection/disconnect.
+   - `forage/webapp/app.py:375` keeps uploads admin-gated, independently limited
+     to one concurrent stream and the configured archive size, with a 120-second
+     read deadline. Upload verification and cache invalidation run in the thread
+     pool, preserving event-loop responsiveness.
+   - `tests/test_request_limits.py:52` covers declared/streamed limits, parser
+     exclusion, deadlines, disconnect cleanup and concurrency. The final three
+     upload cases at lines 180, 192 and 208 verify no unauthenticated body read,
+     the upload deadline, and health responsiveness on the same event loop.
+
+3. **Independent authentication budgets and bounded limiter memory.**
+   - `forage/webapp/app.py:76` creates independent normalized-username and
+     source-IP budgets: 8 and 30 attempts respectively per 15 minutes.
+     Success resets only its own username bucket. Password changes use a
+     separate account budget. Successful reviewer logins cannot clear admin
+     guessing attempts or the aggregate IP budget.
+   - `forage/webapp/auth.py:116` caps active keys at 4096 and timestamps per key
+     at the configured request limit. Ordered expiration removes idle buckets
+     without repeated whole-map scans. New keys fail closed at capacity and
+     become admissible as old keys expire; rejected hits do not extend expiry.
+   - `tests/test_request_limits.py:150` reproduces the alternating-login attack
+     and now observes 429 after the eighth admin guess. Related tests verify
+     successful logins cannot reset the IP budget and 5000 distinct keys cannot
+     grow a two-key test limiter. Account tests cover IP-change resistance.
+
+4. **Public reads reuse verified revisions with bounded admission.**
+   - `forage/publication.py:174` separates manifest identity validation from
+     full payload verification; `verify_revision` still validates every file.
+   - `forage/publication_cache.py:37` rejects absent asset paths before payload
+     reads, serializes cold verification and holds at most 32 revisions. Cache
+     hits require a matching complete tree fingerprint including device/inode,
+     mode, size, mtime and ctime. Changed or concurrently modified snapshots
+     fail verification, including same-size rewrites with restored mtime.
+     Upload/promotion invalidates cached verification. Pipeline and upload
+     verification remain uncached.
+   - `forage/production_state.py:24` hashes files in bounded chunks. Web reads
+     have 180/minute per-address and 600/minute aggregate budgets with 8 active
+     requests; health checks remain independently available.
+   - `tests/test_publication_cache.py:33` proves missing asset requests hash
+     zero payload files, and unchanged repeated successful reads do not rehash.
+     Additional cases cover corruption, added/deleted files, symlinks, invalid
+     manifests, concurrent readers, eviction, explicit invalidation, defensive
+     manifest copies and changes occurring during verification.
+
+### Validation evidence
+
+- `.venv/bin/python -m pytest -q`: **828 passed, 9 skipped**, 44 existing
+  Starlette TestClient timeout deprecation warnings. Log:
+  `/tmp/forage-security-fixes-full-tests.log`.
+- `.venv/bin/python -m pytest -q tests/test_request_limits.py`: **19 passed**,
+  including three upload checks added after full-suite collection. Log:
+  `/tmp/forage-security-fixes-request-tests.log`. Their first attempt exposed a
+  test cookie-jar conversion error, corrected before this successful rerun.
+- After the final upload-threading change, affected media/cache checks passed;
+  the complete request suite above passed after the harness correction.
+- `DOCKER_HOST=unix:///run/user/1000/docker.sock FORAGE_DOCKER_TESTS=1
+  .venv/bin/python -m pytest -q tests/test_container.py`: **9 passed** against
+  the final rebuilt image. Log: `/tmp/forage-security-fixes-container-final.log`.
+- `node /tmp/forage-security-browser.cjs`: **passed** against a temporary local
+  server and synthetic accounts. Desktop/mobile controls enforce ownership,
+  reviewers can resolve their own note, admins see other authors' controls,
+  and no browser exceptions occurred. Log: `/tmp/forage-security-browser.log`.
+  The temporary server was stopped after verification.
+- `git diff --check`: passed. No model calls, source prose changes, production
+  requests or live account/review mutations were made during remediation.
+
+### Completeness and structure
+
+- Truthful state: exposed and verified locally in application/browser/container;
+  live release verification remains a deployment step, outside this code fix.
+- Acceptance criteria: all four findings and limiter capacity addressed. No
+  placeholder branches or silent permission/integrity bypasses remain in the
+  changed paths. Tests cover both denial and authorized success.
+- Architecture: ReviewStore owns transactional note authorization; account IDs
+  remain separate from display labels. Request admission belongs before the
+  framework parser. Publication content validation remains authoritative and
+  the web cache reuses it rather than replacing it.
+- Abstraction: existing account normalization, limiter, publication inventory,
+  media validation, review decision and UI rendering paths are reused. Shared
+  pipeline evidence is an explicit permission case, not inferred ownership.
+- Forward impact: legacy notes have a conservative, documented admin-only
+  policy. Admission budgets/cache are process-local, consistent with the
+  configured single worker and single machine; scaling requires shared limits.
+  README and architecture document the limits, permissions and cache lifecycle.
+- Release status: working-tree changes only; no commit, push or deployment.

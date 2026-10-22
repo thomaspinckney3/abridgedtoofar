@@ -44,11 +44,30 @@ changes invalidate the stages whose inputs changed.
   account mutations recheck the actor inside the write transaction. Deleting an
   account cascades to sessions and retains review records. Session resolution
   reads current account permissions; login-supplied labels/roles are ignored.
+- Human notes carry a stable account ID, separate from their display author.
+  ReviewStore checks current account role and note ownership in the same write
+  transaction for edits, deletion and revision decisions. Reviewers manage their
+  own notes; administrators manage all. Legacy notes with unknown ownership are
+  admin-managed, and recreated usernames do not inherit deleted accounts' notes.
+  Shared pipeline findings retain their collaborative decision workflow.
 - AuthConfig owns session duration/epoch and proxy configuration. Shared login
   tokens and legacy signed role cookies are unsupported. Bootstrap initializes
   only an empty user table and never overwrites account passwords. Production
   needs an existing account or explicit first-admin credentials. Publishing
   transport uses an ordinary administrator account through the session API.
+- Request admission precedes JSON parsing: ordinary write bodies have declared
+  and streamed byte limits, deadlines and bounded concurrency. Admin uploads
+  retain separate streaming admission, byte limits and a read deadline; archive
+  verification runs outside the ASGI event loop. Login username and address
+  budgets are independent; a successful login resets only its own username.
+  Public book reads have per-address/global budgets and a concurrency cap.
+  All limiter maps are bounded and expire idle entries without whole-map scans.
+- Web publication reads share a bounded revision verification cache. A validated
+  inventory rejects absent assets before opening payload files. Cache hits
+  require an unchanged complete filesystem fingerprint (including inode and
+  change time); misses execute full content verification and reject concurrent
+  changes. Upload/promotion invalidates cached verification. Pipeline/CLI and
+  upload verification remain uncached, and file hashing uses bounded reads.
 - Packaging owns generated deploy artifacts only. Resolved input/output
   overlap is rejected before any destructive operation. Existing content is
   replaced only after a complete staged package has been built.
