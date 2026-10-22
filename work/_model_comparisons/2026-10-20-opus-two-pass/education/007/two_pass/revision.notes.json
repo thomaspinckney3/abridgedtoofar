@@ -1,0 +1,154 @@
+{
+  "summary": "Cut the first draft by an estimated net 530 or more words. The cuts remove optional catalogues, repeated explanations and secondary witticisms. All eight protected excerpts, every essential beat, the hindsight framing and the Berlin resolution at the end are kept. No bridges were added; every connective phrase used ('Whether worthy or not', 'At Eaton Hall') comes from the source wording.",
+  "cut_evaluation": [
+    {
+      "paragraph_ids": [
+        1
+      ],
+      "action": "compress",
+      "reason": "Removed the 'Strictly followed... Quincy' clause, two of the four ironic character qualifiers, and 'What he was at heart...'.",
+      "dependency_check": "V1 and V2 remain. The parents' wariness of Europe, Boston's own temptations and the Civil Law absurdity remain, so Civil Law is introduced before the ghost image."
+    },
+    {
+      "paragraph_ids": [
+        2
+      ],
+      "action": "compress",
+      "reason": "Cut 'deserved such indulgence', the companions, the ship superlatives and the 'rapidest school' sentence.",
+      "dependency_check": "The gale lesson that outlasts university teaching remains. V3 itself states the premise of many impressions and little education, so the tourist-mathematics joke still lands."
+    },
+    {
+      "paragraph_ids": [
+        3
+      ],
+      "action": "compress",
+      "reason": "Cut 'days before tourists', the gilded-rooms list and the superiority clause. The Dickens examples shrink to Oliver Twist, as the plan allows.",
+      "dependency_check": "Chester, Eaton Hall, 'Aristocracy was real' and 'At least he thought he felt it' are retained."
+    },
+    {
+      "paragraph_ids": [
+        4
+      ],
+      "action": "compress",
+      "reason": "Shortened the gloom series to two images.",
+      "dependency_check": "V4 is retained as narrator hindsight, along with the boy running away from what he disliked."
+    },
+    {
+      "paragraph_ids": [
+        5
+      ],
+      "action": "compress",
+      "reason": "Cut the Vanity Fair/Piccadilly image and kept Fleet Street and Dr. Johnson.",
+      "dependency_check": "The closing line, 'felt and hated', is kept. It sets up 'He liked it best when he hated it'."
+    },
+    {
+      "paragraph_ids": [
+        6
+      ],
+      "action": "compress",
+      "reason": "Cut the eighteenth-to-sixteenth transition sentence, the walls and landscape, the two 'Descent from the Cross' sentences and 'lasted barely ten years'.",
+      "dependency_check": "The fifty-years hindsight, V5, the drunk-on-emotions image, the lesson soon lost and the 'kneeling at the foot of the Cross' sentence remain whole. 'Cross' needs no prior antecedent."
+    },
+    {
+      "paragraph_ids": [
+        7
+      ],
+      "action": "compress",
+      "reason": "Merged the registration steps into one list.",
+      "dependency_check": "The descent-of-the-social-ladder joke and the first lecture remain as setup for V6."
+    },
+    {
+      "paragraph_ids": [
+        8
+      ],
+      "action": "compress",
+      "reason": "Cut 'religious respect' and the Harvard-torpid comparison. This was an important rejected keep, chosen to protect the Gymnasium and Beethoven sections.",
+      "dependency_check": "V6, the thirteenth-century lecture system and the Civil/Common Law reasoning are intact."
+    },
+    {
+      "paragraph_ids": [
+        9
+      ],
+      "action": "compress",
+      "reason": "Cut the accent, beer and dancing judgments.",
+      "dependency_check": "Heine is still mentioned before 'smacked of Heine' and 'derisive Jew laughter of Heine'. 'Learning the language' remains."
+    },
+    {
+      "paragraph_ids": [
+        10
+      ],
+      "action": "keep",
+      "reason": "The Sumner exchange is performed dialogue and the hero-worship cue.",
+      "dependency_check": "'Worshipper' and Sumner's attributed boast are verbatim."
+    },
+    {
+      "paragraph_ids": [
+        11
+      ],
+      "action": "compress",
+      "reason": "Cut 'ridded him of the university' and the closing 'never did anything so foolish' sentence.",
+      "dependency_check": "Apthorp's suggestion is attributed to him. The Gymnasium, the class of 12–13-year-olds and the three months remain."
+    },
+    {
+      "paragraph_ids": [
+        12
+      ],
+      "action": "compress",
+      "reason": "Cut the English-accent joke.",
+      "dependency_check": "The poodle and cabman callback to Sumner is kept, as is the turn to German education."
+    },
+    {
+      "paragraph_ids": [
+        13
+      ],
+      "action": "compress",
+      "reason": "Cut 'Overridden by military methods'.",
+      "dependency_check": "One clause on Prussian inertia (Bismarck) remains, ending on 'smacked of Heine'."
+    },
+    {
+      "paragraph_ids": [
+        14
+      ],
+      "action": "compress",
+      "reason": "Cut the final sentence about the government discouraging reasoning, which repeats 'no use made of reason'.",
+      "dependency_check": "Memory torture and the absence of reason are kept."
+    },
+    {
+      "paragraph_ids": [
+        15
+      ],
+      "action": "compress",
+      "reason": "Cut the daily-lessons sentence, which repeats the memory indictment.",
+      "dependency_check": "V7, the sealed rooms, the window rebuke and 'indictable nuisance' remain."
+    },
+    {
+      "paragraph_ids": [
+        17
+      ],
+      "action": "cut",
+      "reason": "Removed the Wagner, Tannhauser and Gotterdammerung coda as a unit, as the plan permits.",
+      "dependency_check": "No 'Near forty years' orphan remains. The beer-hall is established before V8, the 'accidental' framing is kept, and so are the overrated inference and 'never listened'."
+    },
+    {
+      "paragraph_ids": [
+        18
+      ],
+      "action": "compress",
+      "reason": "Cut the Kant, Hegel, Goethe and Schiller detail to a single clause.",
+      "dependency_check": "'No other sense awoke', the father exchange and the final resolution are intact."
+    }
+  ],
+  "acceptable_changes": [
+    "P2 now opens with 'Whether worthy or not', a phrase taken from the source, in place of the longer indulgence sentence.",
+    "P3 now reads 'At Eaton Hall the boys were awed', a light syntactic contraction of the source sentence."
+  ],
+  "risks": [
+    "The word count is an estimate and has not been measured. The result may land slightly above or below 2200.",
+    "Cutting the Harvard-torpid comparison loses one comic contrast in the university section."
+  ],
+  "review_focus": [
+    "The transition in P6 from London hindsight to 'He crossed to Antwerp' now that the eighteenth-to-sixteenth bridge is gone.",
+    "The P2 flow from the gale sentence directly into V3."
+  ],
+  "infeasible": false
+}

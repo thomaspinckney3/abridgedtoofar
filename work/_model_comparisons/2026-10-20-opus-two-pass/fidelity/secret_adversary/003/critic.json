@@ -1,0 +1,324 @@
+{
+  "chapter": "secret_adversary/003",
+  "summary": "The revision cuts the chapter from 2,388 to about 1,300 words and keeps every planned verbatim line, the Brown/telephone-message beat, the Rita question, the spontaneous 'Jane Finn' invention, Whittington's bulk and clean-shaven face, and the Paris/ward/secrecy/American details. The causal spine and the speakers are clear. The losses are mostly small: some narrator irony and Tuppence's relish of her own bluff are thinned, one Whittington retort and one clue-bearing rationale are gone, and the closing scene loses its time cue. These are tradeoffs or light polish items, not blockers.",
+  "verdict": "editorial_review",
+  "coverage": [
+    {
+      "axis": "causality_and_setup",
+      "status": "findings",
+      "assessment": "The main chain survives: overheard conversation, card, appointment, offer, objection, 'Jane Finn', bluff, payment, clerk's message, dismissal with £50, taxi. Two small setup trims: 'You want work?' is gone, so Tuppence's 'the nature of the work?' has no antecedent. The five-to-twelve clock is gone, so the taxi and the 'surprise' have less motivation."
+    },
+    {
+      "axis": "referents_and_scene",
+      "status": "no_material_issue",
+      "assessment": "Entrances, exits and who hears what stay clear. The clerk comes in on a knock, hands over the paper and withdraws. The outer office has no telephone. Tommy is 'my partner' and Mr. Beresford, and Whittington saw them together. The tube-station arrival is a bit bare in isolation but is supported by the preceding chapter."
+    },
+    {
+      "axis": "dialogue",
+      "status": "findings",
+      "assessment": "Speakers are never confused. The one structural dent is the cut of Whittington's sarcastic reply to 'It might be my own name', which turns a three-beat exchange into two consecutive lines from Tuppence. The 'quit fooling' repetitions are condensed to one round, as the plan allows."
+    },
+    {
+      "axis": "qualification_and_facts",
+      "status": "no_material_issue",
+      "assessment": "£100 offered and £50 paid, three months, 'to-morrow at the same time', and the eleven o'clock appointment are all intact. Only minor hedges are lost ('for the time being', 'Possibly' is kept). The 'nominal' trip, the discretion rationale and 'Very little indeed' survive."
+    },
+    {
+      "axis": "viewpoint_and_revelation",
+      "status": "no_material_issue",
+      "assessment": "The narration stays with Tuppence's limited knowledge. Rita is an 'unknown Rita'. Nothing explains Jane Finn, the clerk's significance, or where the name came from. 'First name that came into her head' is kept, so there is no premature disclosure."
+    },
+    {
+      "axis": "voice_and_rhythm",
+      "status": "findings",
+      "assessment": "Signature lines are kept: the terrier shake, the catchphrase, 'intoxicated with the success of truthfulness', 'so very fond of money', and the dream of hospital plates. The narration between them is flatter. Narratorial comic asides at the bluff's high points are trimmed, so the pacing is brisker but less wry."
+    },
+    {
+      "axis": "interpretive_structure",
+      "status": "findings",
+      "assessment": "The comic engine of bluff-by-truthfulness is preserved. The explanation of why she answers 'Very little indeed' is compressed away, and the rationale for passing as an American, which hints at impersonation, is cut. Both are small interpretive losses."
+    },
+    {
+      "axis": "planned_dependencies",
+      "status": "no_material_issue",
+      "assessment": "All five dependencies are intact at the local endpoint and match their partners' actual production text."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "tradeoff",
+      "axis": "voice_and_rhythm",
+      "title": "Narrator's ironic asides at the bluff's peak thinned",
+      "origin": "revision",
+      "claim": "The revision drops the narrator's wry commentary on Tuppence's relish of her role: 'Her present part was of the adventuress rather than the adventurous order', her sitting up 'with the air of one who has the situation thoroughly well in hand', and her pause 'to admire her own ingenuity'. Her lines now follow the cues without the narrator's smile.",
+      "reader_effect": "The comic self-congratulation that the voice profile names as central is reduced to the single phrase 'intoxicated with the success of truthfulness'. The scene still works, but it is more telegraphic and less ironic.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 90,
+          "quote": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities."
+        },
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 95,
+          "quote": "Tuppence paused a moment to admire her own ingenuity, and then said softly:"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 63,
+          "quote": "The last five words took Tuppence’s fancy mightily, especially after a meagre breakfast and a supper of buns."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 66,
+          "quote": "“I shouldn’t like to contradict you, Mr. Whittington,” said Tuppence softly."
+        }
+      ],
+      "counterevidence": "At half length some asides must go. The planned verbatim lines and the key phrase 'intoxicated with the success of truthfulness' survive.",
+      "plan_relation": "optional tradeoff",
+      "minimal_repair": "If a few words are available, restore 'and paused to admire her own ingenuity' before 'I shouldn't like to contradict you'.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F2",
+      "priority": "tradeoff",
+      "axis": "interpretive_structure",
+      "title": "Rationale for passing as an American removed",
+      "origin": "revision",
+      "claim": "The source and the first draft give Whittington's reason for the suggestion: 'Details about your past life in England might be more difficult to sustain.' The revision keeps the suggestion but drops the reason.",
+      "reader_effect": "That sentence is the clearest hint that he wants a cover identity, and it is what chapter 005 later reads as impersonation. Without it the suggestion looks like a mere convenience, so the later realisation lands with less retrospective force. The required details (Paris, ward, secrecy, American) are still present.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 59,
+          "quote": "Details about your past life in England might be more difficult to sustain."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 36,
+          "quote": "“On the contrary, it might be simpler for you to pass as an American. Then----”"
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 42,
+          "quote": "They'll produce a Jane Finn of their own—say, at a *pensionnat* in Paris."
+        }
+      ],
+      "counterevidence": "The plan only requires 'the suggestion to pass as an American'. The ward role and secrecy are kept in paragraph 32, so the scheme is still legible as a cover.",
+      "plan_relation": "optional tradeoff; the dependency instruction is met",
+      "minimal_repair": "Add a short clause: 'Your past life in England would be harder to sustain.'",
+      "confidence": "medium"
+    },
+    {
+      "id": "F3",
+      "priority": "tradeoff",
+      "axis": "dialogue",
+      "title": "Bluff exchange compressed: Whittington's retort and the explanation of 'very little' lost",
+      "origin": "revision",
+      "claim": "Whittington's scoffing reply to 'It might be my own name' is cut, so Tuppence's two alternative explanations follow each other with no resistance. The sentence explaining why admitting little is clever ('To have boasted that she knew a lot might have raised doubts') is also cut.",
+      "reader_effect": "The back-and-forth in which he rejects each truth and she keeps offering another is flattened. The reader still sees his uneasiness 'augmented instead of allayed', but not the reasoning behind her tactic, which was the explicit comic method of the chapter.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 86,
+          "quote": "“It’s likely, isn’t it, then there would be two girls with a name like that?”"
+        },
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 83,
+          "quote": "To have boasted that she knew a lot might have raised doubts in his mind."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 59,
+          "quote": "“It might be my own name,” Tuppence pointed out."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 60,
+          "quote": "“Or I might just have hit upon it by chance,” continued Tuppence, intoxicated with the success of truthfulness."
+        }
+      ],
+      "counterevidence": "All planned bluff lines are retained and the exchange reads smoothly. The plan allowed condensing the repeated exchanges.",
+      "plan_relation": "essential beats kept; compression is optional",
+      "minimal_repair": "Optionally reinstate Whittington's one-line retort between paragraphs 59 and 60.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F4",
+      "priority": "should_improve",
+      "axis": "causality_and_setup",
+      "title": "Ending loses the time cue that motivates the taxi and Tommy's presence",
+      "origin": "first_draft",
+      "claim": "The source says a neighbouring clock showed 'five minutes to twelve', which explains why Tuppence takes a taxi to meet Tommy. The first draft and the revision both cut it, and the revision's closing paragraphs never mention the appointment. Tommy simply appears 'within the entrance'.",
+      "reader_effect": "In this chapter alone, 'Let's give Tommy a surprise!' and the taxi seem unmotivated. The appointment was set in chapter 002 ('Twelve o'clock to-morrow. Piccadilly Tube station'), so a continuous reader can recover it, but the chapter's closing joke relies on the inference.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 119,
+          "quote": "A neighbouring clock showed the time to be five minutes to twelve."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 86,
+          "quote": "Tuppence sped lightly down the stairs in wild elation. “Let’s give Tommy a surprise!” she murmured, and hailed a taxi."
+        },
+        {
+          "document": "secret_adversary/002/production",
+          "paragraph": 42,
+          "quote": "\"Twelve o'clock to-morrow. Piccadilly Tube station.\""
+        }
+      ],
+      "counterevidence": "Chapter 002's production text sets the appointment directly before this chapter, and chapter 004 opens on the taxi. The gap is small.",
+      "plan_relation": "planning omission: the plan gives the end beat but not the clock",
+      "minimal_repair": "Add 'It was five minutes to twelve' to paragraph 86, or 'to keep her twelve o'clock appointment with Tommy' before the taxi.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F5",
+      "priority": "tradeoff",
+      "axis": "causality_and_setup",
+      "title": "'Work' lacks its antecedent in the offer",
+      "origin": "revision",
+      "claim": "Source and first draft have Whittington say 'You want work? Well, I have work to offer you.' The revision opens with 'what should you say to £100 down', and Tuppence then asks 'the nature of the work?' with no preceding mention of work.",
+      "reader_effect": "A very slight stumble: her question reads as ahead of the cue. It is easily inferred from the £100 and the appointment, and the 'nominal' reply restores context.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 39,
+          "quote": "You want work? Well, I have work to offer you."
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 21,
+          "quote": "“Now, my dear young lady, what should you say to £100 down, and all expenses paid?”"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 22,
+          "quote": "“And the nature of the work?” Tuppence demanded warily."
+        }
+      ],
+      "counterevidence": "Context makes 'the work' obvious. The revision also keeps the earlier 'proposition' and 'be of some use to you'.",
+      "plan_relation": "optional tradeoff",
+      "minimal_repair": "Change to 'what should you say to work at £100 down'.",
+      "confidence": "low"
+    }
+  ],
+  "dependencies": [
+    {
+      "index": 0,
+      "status": "intact",
+      "assessment": "The revision keeps the discreet knock, 'Telephone message just come for you, sir', the paper, the frown, and 'That'll do, Brown'. It adds no comment on the clerk and no telephone in the outer office. Chapter 005 recalls the clerk called Brown and asks about a telephone in the outer office, and Tuppence says she saw none, which agrees with the revision.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 80,
+          "quote": "“That’ll do, Brown. You can go.”"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 78,
+          "quote": "“Telephone message just come for you, sir.”"
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 29,
+          "quote": "in Mr. Whittington's office, the clerk—he called him Brown."
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 32,
+          "quote": "Notice a telephone in the outer office?"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "status": "intact",
+      "assessment": "The exact question is preserved, and Tuppence is 'careful not to drag an unknown Rita into it', with no hint of who Rita is. Chapter 013 quotes it word for word.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 53,
+          "quote": "Who’s been blabbing? Rita?"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 54,
+          "quote": "careful not to drag an unknown Rita into it"
+        },
+        {
+          "document": "secret_adversary/013/production",
+          "paragraph": 79,
+          "quote": "Who's been blabbing? Rita?"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "status": "intact",
+      "assessment": "The name is presented as a spontaneous invention from Tuppence's side, with no mention of Tommy's overheard remark. Chapter 004 supplies the correction.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 48,
+          "quote": "She seized hurriedly on the first name that came into her head."
+        },
+        {
+          "document": "secret_adversary/004/production",
+          "paragraph": 13,
+          "quote": "You didn't invent it."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "status": "intact",
+      "assessment": "Pensionnat, ward, secrecy, no communication with friends, and passing as an American are all kept, and the purpose is not revealed. Chapter 005 supports the later reading as a Jane Finn impersonation. Only the supporting rationale about her English past is trimmed (see F2).",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 27,
+          "quote": "one of those charming _pensionnats de jeunes filles_ with which Paris abounds"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 32,
+          "quote": "You would go as my ward, hold no communication with your friends, and keep absolute secrecy."
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 42,
+          "quote": "They'll produce a Jane Finn of their own—say, at a *pensionnat* in Paris."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "status": "intact",
+      "assessment": "The revision keeps 'a big man, clean shaven, with a heavy jowl', which supports Tommy's identification of 'a big fat sort of chap. Clean shaven' in chapter 004.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 3,
+          "quote": "He was a big man, clean shaven, with a heavy jowl, and small, cunning, shifty eyes."
+        },
+        {
+          "document": "secret_adversary/004/production",
+          "paragraph": 15,
+          "quote": "One was a big fat sort of chap. Clean shaven, and dark."
+        }
+      ]
+    }
+  ],
+  "strengths": [
+    "All eight protected lines are kept exactly, including the catchphrase, 'The terms are almost too liberal', 'Rita knows nothing about me', 'I'm so very fond of money!' and the five-pound-note punchline.",
+    "The Whittington description (big, clean shaven, heavy jowl, small cunning shifty eyes) is kept compactly and still serves Tommy's identification.",
+    "The clerk beat (knock, 'telephone message', frown, 'That'll do, Brown', abrupt dismissal with £50) is kept without commentary, and the outer office has no telephone.",
+    "The bluff-by-literal-truth sequence is kept in order, from the Rita denial through 'Very little indeed' and 'hit upon it by chance', with 'intoxicated with the success of truthfulness'. The turn from his rage to 'How much do you want?' reads clearly.",
+    "The terrier shake, the hospital-plate dream and the near-genial 'au revoir' with Tuppence's faint misgiving survive as voice callbacks despite the cuts.",
+    "The first draft's telegram, buns reflection and stair/walking details are cut cleanly with no dangling residue; 'a supper of buns' resurfaces coherently in the later money line."
+  ]
+}

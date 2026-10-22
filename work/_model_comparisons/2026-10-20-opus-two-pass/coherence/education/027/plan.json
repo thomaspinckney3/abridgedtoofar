@@ -1,0 +1,77 @@
+{
+  "book_id": "education",
+  "title": "The Education of Henry Adams",
+  "author": "Henry Adams",
+  "structural_classification": "lean",
+  "modernization_level": "L1",
+  "cultural_depth": "unknown",
+  "voice_driven_narrator": null,
+  "indirection_budget_applies": null,
+  "overall_compression_ratio": 2.0,
+  "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
+  "motifs": [],
+  "segments": [
+    {
+      "id": "026",
+      "kind": "chapter",
+      "number": "XXIV",
+      "title": "INDIAN SUMMER (1898-1899)",
+      "raw_heading": "CHAPTER XXIV",
+      "source_word_count": 5839,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 3000,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter XXIV narrative"
+    },
+    {
+      "id": "027",
+      "kind": "chapter",
+      "number": "XXV",
+      "title": "THE DYNAMO AND THE VIRGIN (1900)",
+      "raw_heading": "CHAPTER XXV",
+      "source_word_count": 3991,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2100,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter XXV narrative"
+    },
+    {
+      "id": "028",
+      "kind": "chapter",
+      "number": "XXVI",
+      "title": "TWILIGHT (1901)",
+      "raw_heading": "CHAPTER XXVI",
+      "source_word_count": 4140,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2200,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter XXVI narrative"
+    }
+  ],
+  "merged_groups": {},
+  "_meta": {
+    "computed": {
+      "source_word_count": 179035,
+      "diegetic_source_word_count": 174967,
+      "target_word_count": 89517,
+      "target_hours": 7.46,
+      "overall_compression_ratio": 2.0
+    },
+    "builder": "lean_plan"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "text": "[\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"At Eaton Hall the boys were awed, as Thackeray or Dickens would have felt in the presence of a Duke.\",\n    \"source_has\": \"He was not alone. Several of his college companions sailed with him... When the boys went out to Eaton Hall, they were awed...\",\n    \"gate_test_answer\": \"A reader is mildly confused: the draft cut the companions who sailed with him, so \\\"the boys\\\" (and later \\\"his friends\\\" in Berlin) has no antecedent, though the sense is still roughly inferable.\",\n    \"valid\": true\n  },\n  {\n    \"class\": \"missing_gloss\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"when things reached this condition, Lee had to exhaust his authority over his own staff.\",\n    \"source_has\": \"the two others who seemed instinctively to form a staff for Lee, were town-Virginians from Petersburg.\",\n    \"gate_test_answer\": \"A reader is somewhat confused, since the draft never says the two Petersburg Virginians formed Lee's \\\"staff\\\", though context lets them guess it means his Virginian followers.\",\n    \"valid\": true\n  }\n]",
+  "model": "anthropic:claude-sonnet-5-5",
+  "input_tokens": 31894,
+  "output_tokens": 2289,
+  "duration_s": 18.354134053981397,
+  "stop_reason": "end_turn",
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "id": "msg_011CgDrq2oacAv1WF2Yx9Vsw",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 31894,
+    "output_tokens": 2289,
+    "output_tokens_details": {
+      "thinking_tokens": 1878
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "cost_usd": 0.086678,
+  "finished_at": "2026-10-20T17:10:44.059494+00:00"
+}

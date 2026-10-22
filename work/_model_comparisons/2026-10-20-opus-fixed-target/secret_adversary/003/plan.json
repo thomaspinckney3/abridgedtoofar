@@ -1,0 +1,159 @@
+{
+  "id": "003",
+  "verbatim": [
+    {
+      "paragraph": 22,
+      "text": "little Tuppence can look after herself, thank you!",
+      "purpose": "Tuppence's signature self-assurance, which the book keeps testing.",
+      "id": "V1",
+      "words": 8
+    },
+    {
+      "paragraph": 73,
+      "text": "“Jane Finn,” she said hastily; and then paused open-mouthed at the effect of those two simple words.",
+      "purpose": "The pivotal accident that launches the plot.",
+      "id": "V2",
+      "words": 17
+    },
+    {
+      "paragraph": 78,
+      "text": "“Who’s been blabbing? Rita?”",
+      "purpose": "Plants the clue Rita, which is followed up later.",
+      "id": "V3",
+      "words": 4
+    },
+    {
+      "paragraph": 80,
+      "text": "“No,” she replied with perfect truth. “Rita knows nothing about me.”",
+      "purpose": "Shows the comic method of bluffing by literal truth.",
+      "id": "V4",
+      "words": 11
+    },
+    {
+      "paragraph": 90,
+      "text": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities.",
+      "purpose": "Distinctive wordplay in the narrator's ironic voice.",
+      "id": "V5",
+      "words": 19
+    },
+    {
+      "paragraph": 107,
+      "text": "“Life,” moralized Tuppence, “is full of surprises.”",
+      "purpose": "Her flippant poise under pressure.",
+      "id": "V6",
+      "words": 7
+    },
+    {
+      "paragraph": 112,
+      "text": "“That’ll do, Brown. You can go.”",
+      "purpose": "An exact clue that must be planted without emphasis.",
+      "id": "V7",
+      "words": 6
+    },
+    {
+      "paragraph": 122,
+      "text": "“Pay the thing, will you, old bean? I’ve got nothing smaller than a five-pound note!”",
+      "purpose": "The punchline ending, which the next chapter picks up.",
+      "id": "V8",
+      "words": 15
+    }
+  ],
+  "essential": [
+    "Whittington stops Tuppence in St. James's Park. He admits he overheard her at Lyons' and followed her; she dislikes him but is not afraid. He gives her the Esthonia Glassware Co. card and the 11 o'clock appointment.",
+    "Tuppence telegraphs Tommy with her retained pencil: \"Don't put in advertisement. Will explain to-morrow.\" She weighs the ninepence against five shillings.",
+    "She arrives at the dirty office, which has a middle-aged clerk in the outer room. Whittington's sleek prosperity and shifty eye confirm her mistrust.",
+    "The offer: £100 and expenses for about three months at Madame Colombier's pensionnat in Paris, as his ward, with no communication with friends and absolute secrecy. Keep his suggestion that she pass as an American because of her accent.",
+    "Tuppence says the terms are too liberal. Whittington replies that he is paying for intelligence and discretion. She insists that her partner Beresford is included: 'both or neither'.",
+    "Asked her name, she blurts 'Jane Finn' to protect the archdeacon. She has no idea of its meaning, and the narration must state that ignorance. Keep Whittington's rage and dismay.",
+    "Keep the bluffing exchange: his question about Rita; 'How much do you know?' answered with 'Very little indeed', which worries him more; 'It might be my own name' or chance; and 'how much do you want?'",
+    "Keep her money-talk: a little down now, 'payment of services in advance' rather than blackmail, and 'I'm so very fond of money!' Keep his unwilling admiration: he took her for a meek kid with just enough brains.",
+    "The clerk brings a 'telephone message'; Whittington dismisses him by the name Brown. Do not comment on the telephone or on Brown.",
+    "He abruptly gives her fifty pounds and tells her to come back tomorrow. His 'Au revoir' turns genial again, which gives her a faint misgiving.",
+    "She leaves elated, takes a taxi to Tommy, and closes with the five-pound-note line."
+  ],
+  "optional": [
+    "The bun purchase and her musings in the cubicle (para 26–27) can be condensed. Keep the dream of the glassware as hospital plates only if space allows; it echoes her hospital biography.",
+    "Her walk to the end of the street to avoid looking over-eager, and climbing the stairs instead of taking the lift (para 29–30).",
+    "The aside about Tommy's club subscription (para 24).",
+    "The Government's 'spiky pen and thick, black treacle' aside.",
+    "Her thought that her father would have a fit and that Whittington is no 'gay deceiver' (para 46).",
+    "Repetitions in the bluff ('quit fooling' said twice, para 92–96): compress, but keep 'I shouldn't like to contradict you'."
+  ],
+  "dependencies": [
+    {
+      "local_evidence": "“That’ll do, Brown. You can go.”",
+      "other_evidence": "“I remember in Mr. Whittington’s office. The clerk--he called him Brown. You don’t think----”",
+      "other_chapter": "WHO IS JANE FINN?",
+      "instruction": "Keep the clerk, his delivery of a 'telephone message' and the name Brown exactly. Add no suspicion and no mention of a missing telephone."
+    },
+    {
+      "local_evidence": "“Who’s been blabbing? Rita?”",
+      "other_evidence": "Only a Christian name--Rita. Whittington mentioned it that day.",
+      "other_chapter": "A PLAN OF CAMPAIGN",
+      "instruction": "Keep the name Rita spoken by Whittington and Tuppence's refusal to drag Rita in. Do not identify Rita."
+    },
+    {
+      "local_evidence": "“On the contrary, it might be simpler for you to pass as an American.",
+      "other_evidence": "They know we’re looking for Jane Finn. Well, they’ll produce a Jane Finn of their own--say at a _pensionnat_ in Paris.",
+      "other_chapter": "WHO IS JANE FINN?",
+      "instruction": "Keep the Paris pensionnat, the ward role, the no-contact secrecy and passing as American. Do not explain their purpose."
+    },
+    {
+      "local_evidence": "“Jane Finn,” she said hastily;",
+      "other_evidence": "“No. _I_ told it to you. Don’t you remember, I said yesterday I’d overheard two people talking about a female called Jane Finn?",
+      "other_chapter": "A SET BACK",
+      "instruction": "Present the name as something that simply came into her head. Do not reveal its source."
+    },
+    {
+      "local_evidence": "“I’m so very fond of money!”",
+      "other_evidence": "for the first time she felt a horror of her own money-loving spirit.",
+      "other_chapter": "TUPPENCE ENTERS DOMESTIC SERVICE",
+      "instruction": "Keep her candid, cheerful love of money in her own words."
+    }
+  ],
+  "sections": [
+    {
+      "name": "Park encounter, card and telegram",
+      "weight": 3,
+      "words": 371
+    },
+    {
+      "name": "Night and arrival at the office",
+      "weight": 1,
+      "words": 124
+    },
+    {
+      "name": "The Paris offer and the partnership condition",
+      "weight": 3,
+      "words": 371
+    },
+    {
+      "name": "Jane Finn blurted and the bluff",
+      "weight": 5,
+      "words": 619
+    },
+    {
+      "name": "Clerk Brown, the fifty pounds and the taxi",
+      "weight": 2,
+      "words": 248
+    }
+  ],
+  "continuity_checks": [
+    "The clerk is introduced in the outer office before he reappears as Brown.",
+    "Tuppence remains genuinely ignorant of what 'Jane Finn' means.",
+    "Fifty pounds, not one hundred, is actually paid.",
+    "Tommy's pencil is still with her when she writes the telegram.",
+    "Whittington's 'yesterday' refers to the Lyons' conversation."
+  ],
+  "infeasible": false,
+  "risks": [
+    "Over-compressing the bluff may lose the 'truthfulness' joke that Chapter III pays off ('No one does believe it')."
+  ],
+  "title": "MR. WHITTINGTON’S OFFER",
+  "number": "II",
+  "target_words": 1733,
+  "protected_words": 87,
+  "voice_profile": "Brisk, light third-person narration that stays close to Tuppence or Tommy and slips into their idiom ('keep her end up', 'old bean', 'If that isn't a Hun, I'm a Dutchman!'). Comedy and danger sit side by side. Short dialogue exchanges carry most of the action. Wry authorial asides deflate the drama ('a reversion that aroused in Tuppence a faint misgiving'). The narration reports the characters' own reasoning step by step, such as Tuppence 'intoxicated with the success of truthfulness' or Tommy weighing the risks 'in his usual slow and steady way'. Villains speak in heightened melodramatic idiom, which is set against the young heroes' slangy understatement.",
+  "book_context": "A 1920s thriller in alternating Tuppence and Tommy strands. Its central device is the unseen 'Mr. Brown', who hides as a nondescript background figure and whose name is used openly. Small details are planted and later paid off: the clerk called Brown and the telephone message with no telephone; the name Rita, which leads to Mrs. Vandemeyer; the false Jane Finn at a Paris pensionnat; Number 14; the recess and curtain in the Soho house; the date of the 29th; the half-recognised faces of the conspirators; the girl who cannot be made to speak. Chapter II begins Tuppence's bluffing streak and her open love of money. Chapter VIII starts Tommy's captivity and lays out the conspiracy's stakes. Neither chapter may reveal who Mr. Brown is, who Number One is, or that Jane has lost her memory.",
+  "provenance": "Generated by Opus from the entire book with a shared generic rubric; no human chapter-specific edits. Code normalized quote typography and converted section weights to exact budgets."
+}

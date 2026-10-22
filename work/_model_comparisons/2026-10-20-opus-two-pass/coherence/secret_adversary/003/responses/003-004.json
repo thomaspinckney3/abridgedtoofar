@@ -1,0 +1,30 @@
+{
+  "text": "[]",
+  "model": "anthropic:claude-sonnet-5-5",
+  "input_tokens": 14858,
+  "output_tokens": 934,
+  "duration_s": 7.4240724529954605,
+  "stop_reason": "end_turn",
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "id": "msg_011CgDrvAPdB4RMqAs43jBLd",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 14858,
+    "output_tokens": 934,
+    "output_tokens_details": {
+      "thinking_tokens": 930
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "cost_usd": 0.039056,
+  "finished_at": "2026-10-20T17:11:43.467889+00:00"
+}

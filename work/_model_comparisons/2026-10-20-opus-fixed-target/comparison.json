@@ -1,0 +1,93 @@
+{
+  "chapters": [
+    {
+      "chapter": "education/007",
+      "title": "BERLIN (1858-1859)",
+      "source_words": 4300,
+      "previous_target": 2200,
+      "previous_words": 2932,
+      "previous_delta_percent": 33.27,
+      "fixed_target": 2933,
+      "new_words": 3370,
+      "new_delta_percent": 14.9,
+      "change_from_previous_words": 438,
+      "previous_reuse_percent": 88.77,
+      "new_reuse_percent": 95.41,
+      "previous_protected_words": 172,
+      "new_protected_words": 221,
+      "protected_present": 8,
+      "protected_total": 8,
+      "prior_anchors_retained": 7,
+      "prior_anchors_total": 7
+    },
+    {
+      "chapter": "education/027",
+      "title": "THE DYNAMO AND THE VIRGIN (1900)",
+      "source_words": 3991,
+      "previous_target": 2100,
+      "previous_words": 2735,
+      "previous_delta_percent": 30.24,
+      "fixed_target": 2800,
+      "new_words": 3566,
+      "new_delta_percent": 27.36,
+      "change_from_previous_words": 831,
+      "previous_reuse_percent": 90.3,
+      "new_reuse_percent": 97.81,
+      "previous_protected_words": 140,
+      "new_protected_words": 163,
+      "protected_present": 8,
+      "protected_total": 8,
+      "prior_anchors_retained": 8,
+      "prior_anchors_total": 8
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "title": "MR. WHITTINGTON’S OFFER",
+      "source_words": 2388,
+      "previous_target": 1300,
+      "previous_words": 1807,
+      "previous_delta_percent": 39.0,
+      "fixed_target": 1733,
+      "new_words": 2108,
+      "new_delta_percent": 21.64,
+      "change_from_previous_words": 301,
+      "previous_reuse_percent": 84.49,
+      "new_reuse_percent": 93.79,
+      "previous_protected_words": 108,
+      "new_protected_words": 87,
+      "protected_present": 8,
+      "protected_total": 8,
+      "prior_anchors_retained": 8,
+      "prior_anchors_total": 8
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "title": "THE ADVENTURES OF TOMMY",
+      "source_words": 3012,
+      "previous_target": 1600,
+      "previous_words": 1997,
+      "previous_delta_percent": 24.81,
+      "fixed_target": 2133,
+      "new_words": 2705,
+      "new_delta_percent": 26.82,
+      "change_from_previous_words": 708,
+      "previous_reuse_percent": 78.06,
+      "new_reuse_percent": 91.86,
+      "previous_protected_words": 141,
+      "new_protected_words": 117,
+      "protected_present": 8,
+      "protected_total": 8,
+      "prior_anchors_retained": 8,
+      "prior_anchors_total": 8
+    }
+  ],
+  "mean_absolute_target_deviation_percent": {
+    "previous": 31.83,
+    "new": 22.68
+  },
+  "total_words": {
+    "previous": 9471,
+    "new": 11749
+  },
+  "note": "Old and new deviations use their respective targets. Prior anchors are a diagnostic only; the new model received only its newly generated plan."
+}

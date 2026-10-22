@@ -1,0 +1,104 @@
+{
+  "education/007": {
+    "verdict": "A substantial improvement in length control: 2,728 → 2,215 words for a 2,200-word target. The remaining 15 words are reported, not silently accepted.",
+    "findings": [
+      "All eight protected excerpts remain. The Marx foreshadowing, Civil/Common Law reasoning, Sumner/cabman/poodle chain, Apthorp introduction before Beethoven, Civil Law ghost and final rejection of Berlin remain coherent.",
+      "The revision removes a net 513 words through distributed cuts, including the Wagner/Tannhauser/Gotterdammerung coda as a complete unit. The Beethoven awakening and its deflation remain in Adams’s voice.",
+      "A real qualification is lost: the explicit admission that Adams never learned to speak German well. The cut evaluation calls this the English-accent joke, but the removed sentence also contains that factual caveat.",
+      "Removing both mentions of the Descent from the Cross leaves the kneeling-at-the-Cross image less specifically attached to the artwork. It reads smoothly, but loses the original art reference.",
+      "Source five-word wording reuse falls modestly, from 89.55% to 86.20%. This is a text-overlap diagnostic, not an independent score of style or quality."
+    ],
+    "examples": [
+      {
+        "title": "A qualification disappears with a joke",
+        "observation": "The cut explanation focuses on the English-accent joke. The same sentence also says he never mastered spoken German; that part is absent from the revision.",
+        "passages": [
+          {
+            "variant": "initial",
+            "text": "Adams never learned to talk German well, but the same might be said of his English, if he could believe Englishmen;"
+          },
+          {
+            "variant": "draft",
+            "text": "It was not merely the language, though three months passed in such fashion would teach a poodle enough to talk with a cabman. Whatever success he had interested him less than his contact with German education."
+          }
+        ]
+      }
+    ]
+  },
+  "education/027": {
+    "verdict": "2,926 → 2,326 words for a 2,100-word target. The revision removes 600 words but still needs 226 more to reach the requested length.",
+    "findings": [
+      "All eight protected excerpts survive. The ordered sequence argument, Langley attribution, risky rays-to-faith method, Venus/Virgin premise, Gibbon irony, force/taste contrast, Chartres and Cherbourg ending remain.",
+      "The planner called the Marx sentence optional while warning that cutting it would lose the Berlin payoff. The second-pass evaluation explicitly chooses to retain it, and both chapters now preserve the connection.",
+      "The biggest stylistic losses include the Lancelot knife-edge image and several elaborations of scientific uncertainty. The chapter remains an argument in Adams’s voice rather than a bare synopsis, but these cuts reduce its texture.",
+      "The generalization “Artists felt a railway train as power” was already present in the first pass and remains unchanged. The source assigns that feeling specifically to St. Gaudens and Matthew Arnold before broadening the following complaint to other artists.",
+      "Wording reuse falls from 93.13% to 85.34%. The model acknowledges its final count is estimated; the pipeline records the measured +10.76% difference and leaves the result needing review."
+    ],
+    "examples": [
+      {
+        "title": "An explicit decision to protect the Marx connection",
+        "observation": "The cut evaluation keeps this sentence despite the pressure to remove 826 words. It also survives in the final revision.",
+        "passages": [
+          {
+            "variant": "initial",
+            "text": "He had studied Karl Marx and his doctrines of history with profound attention, yet he could not apply them at Paris."
+          },
+          {
+            "variant": "draft",
+            "text": "He had studied Karl Marx and his doctrines of history with profound attention, yet he could not apply them at Paris."
+          }
+        ]
+      }
+    ]
+  },
+  "secret_adversary/003": {
+    "verdict": "1,909 → 1,302 words for a 1,300-word target. The count is very close, but this revision makes the largest shift away from the source’s exact phrasing so far.",
+    "findings": [
+      "All eight protected excerpts remain. The neutral introduction of the clerk, telephone message and Brown dismissal are intact, without revealing the later clue. Rita, the Paris pensionnat, ward role, secrecy and passing as American remain unexplained.",
+      "The £100 offer and actual £50 payment stay distinct. Tuppence’s ignorance of Jane Finn stays explicit; her truthful bluff, loyalty to her partner and five-pound-note punchline remain.",
+      "The telegram is removed as a complete unit, as the generated plan permits. The buns are retained to support the later hungry calculation, and the hospital-plates dream remains. Checks against the surrounding source did not reveal an immediate dangling telegram reference.",
+      "The price of approaching 1,300 words is extensive line-by-line dialogue compression. Five-word source reuse falls from 89.07% to 64.38%. The speech is still recognizably Christie, but the wording and cadence are less faithfully preserved.",
+      "The adventuress/adventurous wordplay was already missing in the first pass; the second pass does not restore it. It was not among the new plan’s protected excerpts. This illustrates the limits of checking protected passages alone.",
+      "Two successive Tuppence speeches remain after Whittington’s intervening reply is removed; “continued Tuppence” keeps attribution clear, although the exchange is less responsive than the original."
+    ],
+    "examples": [
+      {
+        "title": "Compression changes the dialogue’s cadence",
+        "observation": "The second pass preserves the transaction’s meaning but substantially rewrites Whittington’s sentence instead of simply removing an optional exchange.",
+        "passages": [
+          {
+            "variant": "initial",
+            "text": "“No?” said Whittington softly. “Well, I will tell you. I could doubtless obtain some one else for very much less. What I am willing to pay for is a young lady with sufficient intelligence and presence of mind to sustain her part well, and also one who will have sufficient discretion not to ask too many questions.”"
+          },
+          {
+            "variant": "draft",
+            "text": "“No?” said Whittington softly. “I could doubtless obtain some one else for much less. I am paying for intelligence to sustain the part, and discretion not to ask too many questions.”"
+          }
+        ]
+      }
+    ]
+  },
+  "secret_adversary/009": {
+    "verdict": "2,063 → 1,602 words for a 1,600-word target. The mystery and spatial logic survive, with substantially more compression of Christie’s phrasing.",
+    "findings": [
+      "All eight protected excerpts survive. The recess remains opposite the meeting room, the shoes stay behind the curtain, the locked handle is carefully restored, and the connecting bedroom door and portière explain hearing without seeing.",
+      "The first identification of Boris remains tentative, as does the commanding man’s voice. Mr. Brown may be among the group; the familiar faces, the girl’s condition and the person striking Tommy remain unidentified.",
+      "The revision preserves the 29th, the honest Labour leaders, Clymes/Fourteen, the fingerprint gloves and the complete broken-off ending. It keeps “far-reaching concern” specifically to make the protected “this man” question refer to Mr. Brown, rather than to the Sinn Feiner.",
+      "The Irish-American funding exchange was already absent from the first pass. The ammunition/colleague line and Belfast quip remain together, as the generated plan requires when that exchange is cut.",
+      "The slower comic suspense of turning the handle is much shorter, and the union details disappear. Five-word source reuse falls from 80.35% to 64.16%, so the close word count comes with a real change in texture and phrasing.",
+      "The cut evaluation acknowledges the loss of the handle scene’s slow build. No cut/compress entry was mechanically contradicted by all its referenced paragraphs remaining unchanged; this is a limited check, not full validation of the editorial rationale."
+    ],
+    "examples": [
+      {
+        "title": "A rejected cut protects a reference",
+        "observation": "The revision keeps the preceding Mr. Brown sentence so that “this man” in the following protected question has the right referent.",
+        "passages": [
+          {
+            "variant": "draft",
+            "text": "Tommy recognized this visitor as an Irish Sinn Feiner. Certainly Mr. Brown’s organization was a far-reaching concern. Who was this man who held in his finger these curiously variegated links of an unknown chain?"
+          }
+        ]
+      }
+    ]
+  }
+}

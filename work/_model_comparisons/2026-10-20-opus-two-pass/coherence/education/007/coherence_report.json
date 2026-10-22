@@ -1,0 +1,47 @@
+{
+  "book_id": "education",
+  "pairs_checked": 2,
+  "findings_total": 2,
+  "findings_raw_total": 2,
+  "findings_invalid": 0,
+  "class_counts": {
+    "dangling_reference": 1,
+    "missing_gloss": 1
+  },
+  "per_segment_counts": {
+    "007": 1,
+    "006": 1
+  },
+  "per_pair": [
+    {
+      "pair": "006-007",
+      "count": 2
+    },
+    {
+      "pair": "007-008",
+      "count": 0
+    }
+  ],
+  "findings": [
+    {
+      "class": "dangling_reference",
+      "chapter": "N+1",
+      "draft_passage": "At Eaton Hall the boys were awed, as Thackeray or Dickens would have felt in the presence of a Duke.",
+      "source_has": "He was not alone. Several of his college companions sailed with him... When the boys went out to Eaton Hall, they were awed...",
+      "gate_test_answer": "A reader is mildly confused: the draft cut the companions who sailed with him, so \"the boys\" (and later \"his friends\" in Berlin) has no antecedent, though the sense is still roughly inferable.",
+      "valid": true,
+      "segment_id": "007",
+      "pair": "006-007"
+    },
+    {
+      "class": "missing_gloss",
+      "chapter": "N",
+      "draft_passage": "when things reached this condition, Lee had to exhaust his authority over his own staff.",
+      "source_has": "the two others who seemed instinctively to form a staff for Lee, were town-Virginians from Petersburg.",
+      "gate_test_answer": "A reader is somewhat confused, since the draft never says the two Petersburg Virginians formed Lee's \"staff\", though context lets them guess it means his Virginian followers.",
+      "valid": true,
+      "segment_id": "006",
+      "pair": "006-007"
+    }
+  ]
+}

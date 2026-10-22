@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "live_artifacts_unchanged": 474,
+  "frozen_inputs_unchanged": 28,
+  "previous_experiment_artifacts_unchanged": 96,
+  "chapters": [
+    {
+      "chapter": "education/007",
+      "fixed_target": 2933,
+      "words": 3370,
+      "protected_present": 8,
+      "protected_total": 8,
+      "verified_dependency_pairs": 6,
+      "prose_identical_to_provider_response": true,
+      "fixed_target_prompt_audit": "pass"
+    },
+    {
+      "chapter": "education/027",
+      "fixed_target": 2800,
+      "words": 3566,
+      "protected_present": 8,
+      "protected_total": 8,
+      "verified_dependency_pairs": 6,
+      "prose_identical_to_provider_response": true,
+      "fixed_target_prompt_audit": "pass"
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "fixed_target": 1733,
+      "words": 2108,
+      "protected_present": 8,
+      "protected_total": 8,
+      "verified_dependency_pairs": 5,
+      "prose_identical_to_provider_response": true,
+      "fixed_target_prompt_audit": "pass"
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "fixed_target": 2133,
+      "words": 2705,
+      "protected_present": 8,
+      "protected_total": 8,
+      "verified_dependency_pairs": 9,
+      "prose_identical_to_provider_response": true,
+      "fixed_target_prompt_audit": "pass"
+    }
+  ],
+  "calls": [
+    {
+      "path": "education/007/draft.response.json",
+      "cost_usd": 0.319236,
+      "stop_reason": "end_turn"
+    },
+    {
+      "path": "education/027/draft.response.json",
+      "cost_usd": 0.227528,
+      "stop_reason": "end_turn"
+    },
+    {
+      "path": "education/planning.response.json",
+      "cost_usd": 1.666928,
+      "stop_reason": "end_turn"
+    },
+    {
+      "path": "secret_adversary/003/draft.response.json",
+      "cost_usd": 0.198176,
+      "stop_reason": "end_turn"
+    },
+    {
+      "path": "secret_adversary/009/draft.response.json",
+      "cost_usd": 0.16826,
+      "stop_reason": "end_turn"
+    },
+    {
+      "path": "secret_adversary/planning.response.json",
+      "cost_usd": 0.886924,
+      "stop_reason": "end_turn"
+    }
+  ],
+  "cost_usd": 3.467052,
+  "announced_maximum_usd": 7.18101,
+  "meaning": "Verification of provenance and measurements; this does not assert editorial perfection or exact target compliance."
+}

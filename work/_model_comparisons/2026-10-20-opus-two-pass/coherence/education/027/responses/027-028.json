@@ -1,0 +1,30 @@
+{
+  "text": "[\n  {\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N+1\",\n    \"draft_passage\": \"He felt almost aggrieved to find Walcott so vigorously flinging the ganoid all the way off to Colorado and far back into the Lower Trenton limestone\",\n    \"source_has\": \"He felt almost aggrieved to find Walcott so vigorously acting the part of Comus as to have flung the ganoid all the way off to Colorado... (Walcott is also unglossed in the source, but the Comus role framed him as an actor in the Pteraspis story.)\",\n    \"gate_test_answer\": \"A reader meets 'Walcott' as a new name with no role (geologist or paleontologist) and no earlier mention in either draft chapter, so they cannot tell who he is or why he is moving the fish, which is genuine confusion rather than lost ornament.\"\n  },\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"Adams knew nothing about any of it, but though all were occult, all reacted on his mind, and he rather inclined to think the Virgin easiest to handle.\",\n    \"source_has\": \"It could scarcely be more complex than radium; it could hardly be deflected, diverted, polarized, absorbed more perplexingly than other radiant matter. Adams knew nothing about any of them, but as a mathematical problem of influence on human progress, though all were occult, all reacted on his mind...\",\n    \"gate_test_answer\": \"The comparison with radium and other radiant matter was cut, so 'all were occult' has no clear plural antecedent in the preceding draft and the 'easiest to handle' comparison loses its other terms, which is a real referential gap.\"\n  }\n]",
+  "model": "anthropic:claude-sonnet-5-5",
+  "input_tokens": 25880,
+  "output_tokens": 2271,
+  "duration_s": 16.875438392016804,
+  "stop_reason": "end_turn",
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "id": "msg_011CgDrtLz3ZyTA1KLpA8NVN",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 25880,
+    "output_tokens": 2271,
+    "output_tokens_details": {
+      "thinking_tokens": 1701
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "cost_usd": 0.07447,
+  "finished_at": "2026-10-20T17:11:28.249956+00:00"
+}

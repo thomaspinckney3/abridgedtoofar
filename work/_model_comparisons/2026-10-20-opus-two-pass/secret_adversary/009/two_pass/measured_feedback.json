@@ -1,0 +1,751 @@
+{
+  "book": {
+    "genre": "novel",
+    "title": "The Secret Adversary",
+    "author": "Agatha Christie"
+  },
+  "preservation_plan": {
+    "id": "009",
+    "verbatim": [
+      {
+        "paragraph": 3,
+        "text": "deciding that the mention of “Mr. Brown” was not a request for an individual, but in all probability a password used by the gang.",
+        "purpose": "Tommy's slow reasoning; the password pays off later.",
+        "id": "V1",
+        "words": 24
+      },
+      {
+        "paragraph": 12,
+        "text": "“If that isn’t a Hun, I’m a Dutchman!”",
+        "purpose": "Tommy's idiom and his limited, inferential knowledge.",
+        "id": "V2",
+        "words": 8
+      },
+      {
+        "paragraph": 13,
+        "text": "Who was this man who held in his finger these curiously variegated links of an unknown chain?",
+        "purpose": "The central question about Mr. Brown, in the author's phrasing.",
+        "id": "V3",
+        "words": 17
+      },
+      {
+        "paragraph": 19,
+        "text": "The creature reminded him of a venomous snake.",
+        "purpose": "Characterising image for the honoured visitor.",
+        "id": "V4",
+        "words": 8
+      },
+      {
+        "paragraph": 27,
+        "text": "“Ah! I understand. I have read of his methods. He works in the dark and trusts no one. But, all the same, it is possible that he is among us now....”",
+        "purpose": "Ambiguity about Mr. Brown's presence and the group's mutual suspicion.",
+        "id": "V5",
+        "words": 31
+      },
+      {
+        "paragraph": 69,
+        "text": "“Every revolution has had its honest men. They are soon disposed of afterwards.”",
+        "purpose": "The chapter's political argument and sinister wit.",
+        "id": "V6",
+        "words": 13
+      },
+      {
+        "paragraph": 101,
+        "text": "“A girl?” The Russian’s voice rose contemptuously. “And you have not made her speak? In Russia we have ways of making a girl talk.”",
+        "purpose": "Menace attached to the missing girl.",
+        "id": "V7",
+        "words": 24
+      },
+      {
+        "paragraph": 107,
+        "text": "But Tommy heard no more. A crashing blow descended on his head, and all was darkness.",
+        "purpose": "Cliffhanger ending.",
+        "id": "V8",
+        "words": 16
+      }
+    ],
+    "essential": [
+      "Tommy climbs the filthy house undisturbed. He reasons that 'Mr. Brown' is a password and that entering the meeting room unknown would be foolhardy, then hides in the curtained recess opposite the door, which also overlooks the stairs.",
+      "The arrivals, each giving the signal knock: a brutish criminal who answers 'Fourteen' to the bearded, precise-voiced man ('Your number, comrade?'), whom Tommy takes for a German; an Irish Sinn Feiner; a shabby clerk-like man; a working man whose face seems vaguely familiar; and a commanding, well-born man whose face Tommy also half knows but cannot name. Keep the variety, which shows the organisation's reach.",
+      "The last arrival is small, pale and gentle-mannered, with Slavonic cheekbones and strange light eyes that seem to see through the curtain. Everyone rises for him. He asks whether Mr. Brown is present and is told only a 'message' has come. He suggests Brown may be among them, and the men eye one another. He is seated as 'Number One'. Number Fourteen shuts the door.",
+      "Tommy, shoeless, finds the door locked or bolted. He carefully restores the handle and expresses indignation, then shows his bulldog tenacity: he enters the adjoining bedroom, draws the rusty bolt of the communicating door and listens through a portière. He can hear but not see, so identify speakers only by voice ('rather thought was that of Boris').",
+      "Overheard business: the Sinn Feiner demands money for a reign of terror in Ireland. Number One grants it and tells Boris to see to it. The commanding man makes the Belfast quip. There is a loan to an English newspaper, with a Moscow denial if needed. The German reports on the unions 'directed by--Mr. Brown'.",
+      "The date of the 29th, set by the Labour leaders, who must believe the strike is their own show. Keep Number One's 'honest men' remarks.",
+      "'Clymes must go', assigned to Number Fourteen, with the promise of legal defence and gloves bearing a housebreaker's fingerprints. Keep Fourteen's relish for blood and for jewels in the gutter.",
+      "The German admits doubt that the leaders will strike. A certain document would ensure success, but they do not have it and do not know where it is. Perhaps one person knows: a girl. 'This case is different.' The question 'Where is the girl now?' is broken off by the blow from an unseen attacker."
+    ],
+    "optional": [
+      "The extended description of the dirt, wallpaper and cobwebs can be cut to one phrase.",
+      "The shabby clerk-like man can be reduced to a phrase but should not be deleted, because the later 'He's bluffing you' speaker depends on his presence.",
+      "The Irish-American financing exchange ('Mr. Potter', the transatlantic voice, 'money only nominally comes from the States') can be cut as a unit. If cut, also cut the Sinn Feiner's 'thanks to our colleague here' line, or keep it attached to the Belfast quip as a pair.",
+      "The German's union details (miners, railways, A.S.E.) can be compressed to one sentence.",
+      "The step-by-step handle-turning suspense can be condensed, keeping the locked-door discovery and the 'dirty trick' line.",
+      "Tommy's 'Lucky I didn't roll in' reflection can be shortened, but keep the point that he would have given the wrong number."
+    ],
+    "dependencies": [
+      {
+        "local_evidence": "“It is the only possible place,” he said, “for--Number One.",
+        "other_evidence": "“So that’s who Number 1 is,” said Tommy with his mouth full of eggs and bacon.",
+        "other_chapter": "ANNETTE",
+        "instruction": "Keep Number One's distinctive physical description (pale, small, Slavonic cheekbones, light eyes) so that a later portrait can identify him. Never name him here."
+      },
+      {
+        "local_evidence": "his face was vaguely familiar to the young man.",
+        "other_evidence": "You say two faces were familiar to you? One’s a Labour man, you think?",
+        "other_chapter": "ANNETTE",
+        "instruction": "Preserve that both the working man and the commanding, well-born man look half familiar to Tommy. Do not name or identify either."
+      },
+      {
+        "local_evidence": "“The 29th.”",
+        "other_evidence": "“The 29th,” he said thoughtfully, “is less than a fortnight ahead----",
+        "other_chapter": "FURTHER ADVENTURES OF TOMMY",
+        "instruction": "Keep the date spoken explicitly in the council, since Tommy later uses it as a lever."
+      },
+      {
+        "local_evidence": "deciding that the mention of “Mr. Brown” was not a request for an individual, but in all probability a password used by the gang.",
+        "other_evidence": "Remember what dear old Conrad said-- _with your own password_, wasn’t it?",
+        "other_chapter": "FURTHER ADVENTURES OF TOMMY",
+        "instruction": "Keep the password inference and the doorkeeper. Do not name the doorkeeper."
+      },
+      {
+        "local_evidence": "a small recess immediately on his right, half concealed by a torn velvet curtain.",
+        "other_evidence": "At the top was the ragged curtain hiding the recess where Tommy had hidden that day.",
+        "other_chapter": "MR. BROWN",
+        "instruction": "Retain the curtained recess at the top of the stairs opposite the meeting-room door, together with its view."
+      },
+      {
+        "local_evidence": "“Clymes must go. He is too far-seeing. Number Fourteen will see to that.”",
+        "other_evidence": "With him was the evil-looking Number 14.",
+        "other_chapter": "ANNETTE",
+        "instruction": "Keep Number Fourteen's identity as the brutish first arrival and his assignment, so that his later return is recognisable."
+      }
+    ],
+    "sections": [
+      {
+        "name": "Entry and the recess",
+        "weight": 2,
+        "words": 214
+      },
+      {
+        "name": "Arrivals and numbers",
+        "weight": 3,
+        "words": 320
+      },
+      {
+        "name": "Number One arrives",
+        "weight": 2,
+        "words": 213
+      },
+      {
+        "name": "Locked door and the adjoining room",
+        "weight": 2,
+        "words": 213
+      },
+      {
+        "name": "Overheard council: Ireland, unions, the 29th",
+        "weight": 4,
+        "words": 427
+      },
+      {
+        "name": "The document, the girl, the blow",
+        "weight": 2,
+        "words": 213
+      }
+    ],
+    "continuity_checks": [
+      "The attacker is unidentified. Do not name him or say how he approached.",
+      "Speakers heard through the portière are attributed tentatively, since Tommy cannot see them.",
+      "The 'German' and 'Russian' labels remain Tommy's inferences.",
+      "Mr. Brown's presence stays ambiguous, and no member is identified as him.",
+      "Do not name Number One, the familiar faces or the doorkeeper.",
+      "The girl is not named Jane Finn in the dialogue, and her amnesia is not explained.",
+      "Boris is present and named only through others' speech or Tommy's guess."
+    ],
+    "infeasible": false,
+    "risks": [
+      "Including every arrival may crowd the budget. Compress descriptions rather than drop arrivals, because later identifications depend on them."
+    ],
+    "target_words": 1600,
+    "protected_words": 141,
+    "title": "THE ADVENTURES OF TOMMY",
+    "number": "VIII",
+    "voice_profile": "Brisk, comic-thriller third person in a light, ironic 1920s register. In Tuppence's scenes the narrator sits close to her thoughts, wryly reporting her self-congratulation ('intoxicated with the success of truthfulness'), her money-mindedness and her schoolgirl slang. In Tommy's scenes the voice turns slow, practical and understated: he weighs his options, admits to nerves and feels plain indignation ('What a dirty trick!'). Comedy and menace alternate quickly. Short dialogue exchanges carry the plot. Villains give themselves away through tics: snarling, sibilance, heel-clicking. The narrator often inserts small ironic asides and callbacks such as buns, hospital plates and the terrier shake. Characters guess at identities by voice and appearance rather than knowing them.",
+    "book_context": "Tommy and Tuppence are two demobilised, penniless young people who form the 'Young Adventurers, Ltd.' and blunder into a hunt for Jane Finn and a lost draft treaty. Behind the plot is the unseen 'Mr. Brown', whose rule is to stay as an unnoticed nonentity in the background. The book plants small clues that pay off later: a clerk addressed as Brown, the name Rita, a password, faces that seem familiar, the date of the 29th, a curtained recess, a portrait of the pale Russian. Ignorance is played as accidental bluff: Tuppence 'knows' only a name, and Tommy later fakes knowledge. Chapter II begins the main plot through Tuppence's chance use of 'Jane Finn'. Chapter VIII shows the conspiracy's inner council as overheard fragments, ending on a cliffhanger. Who the leaders and later-named figures are must not be revealed in these chapters."
+  },
+  "measurements": {
+    "words": 2063,
+    "target_words": 1600,
+    "target_delta_words": 463,
+    "target_delta_percent": 28.94,
+    "target_matched": false,
+    "protected": [
+      {
+        "id": "V1",
+        "present": true
+      },
+      {
+        "id": "V2",
+        "present": true
+      },
+      {
+        "id": "V3",
+        "present": true
+      },
+      {
+        "id": "V4",
+        "present": true
+      },
+      {
+        "id": "V5",
+        "present": true
+      },
+      {
+        "id": "V6",
+        "present": true
+      },
+      {
+        "id": "V7",
+        "present": true
+      },
+      {
+        "id": "V8",
+        "present": true
+      }
+    ]
+  },
+  "first_draft_paragraphs": [
+    {
+      "id": 1,
+      "words": 80,
+      "text": "Taken aback though he was by the man's words, Tommy did not hesitate. If audacity had successfully carried him so far, it was to be hoped it would carry him yet farther. He quietly passed into the house and mounted the ramshackle staircase, past grimy paper and grey masses of cobweb. By the time he reached the bend of the staircase, he had heard the man below disappear into a back room. Clearly no suspicion attached to him as yet.",
+      "protected_ids": []
+    },
+    {
+      "id": 2,
+      "words": 144,
+      "text": "At the top of the stairs Tommy halted to consider his next move. In front of him ran a narrow passage, with doors opening on either side of it. From the one nearest him on the left came a low murmur of voices. It was this room which he had been directed to enter. But what held his glance fascinated was a small recess immediately on his right, half concealed by a torn velvet curtain. It was directly opposite the left-handed door and, owing to its angle, it also commanded a good view of the upper part of the staircase. He thought things over in his usual slow and steady way, deciding that the mention of \"Mr. Brown\" was not a request for an individual, but in all probability a password used by the gang. His lucky use of it had gained him admission.",
+      "protected_ids": [
+        "V1"
+      ]
+    },
+    {
+      "id": 3,
+      "words": 88,
+      "text": "Suppose he were boldly to enter the room on the left? Perhaps a further password would be required, or, at any rate, some proof of identity. The doorkeeper clearly did not know all the members of the gang by sight, but it might be different upstairs. Luck had served him very well so far, but there was such a thing as trusting it too far. Sooner or later he was almost bound to betray himself, and then he would have thrown away a vital chance in mere foolhardiness.",
+      "protected_ids": []
+    },
+    {
+      "id": 4,
+      "words": 40,
+      "text": "A repetition of the signal knock sounded on the door below. Tommy, his mind made up, slipped quickly into the recess and drew the curtain farther across. Several rents and slits in the ancient material afforded him a good view.",
+      "protected_ids": []
+    },
+    {
+      "id": 5,
+      "words": 99,
+      "text": "The man who came up the staircase with a furtive, soft-footed tread was quite unknown to Tommy. The low beetling brows, the criminal jaw and the bestiality of the whole countenance marked a type that Scotland Yard would have recognized at a glance. He stopped at the door opposite and gave the signal knock. As he passed in, Tommy glimpsed four or five people seated round a long table. At its head sat a tall man with close-cropped hair and a short, pointed, naval-looking beard, papers in front of him. With a correct, but curiously precise enunciation, he asked:",
+      "protected_ids": []
+    },
+    {
+      "id": 6,
+      "words": 3,
+      "text": "\"Your number, comrade?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 7,
+      "words": 6,
+      "text": "\"Fourteen, gov'nor,\" replied the other hoarsely.",
+      "protected_ids": []
+    },
+    {
+      "id": 8,
+      "words": 1,
+      "text": "\"Correct.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 9,
+      "words": 4,
+      "text": "The door shut again.",
+      "protected_ids": []
+    },
+    {
+      "id": 10,
+      "words": 46,
+      "text": "\"If that isn't a Hun, I'm a Dutchman!\" said Tommy to himself. \"And running the show darned systematically too--as they always do. Lucky I didn't roll in. I'd have given the wrong number, and there would have been the deuce to pay. Hullo, here's another knock.\"",
+      "protected_ids": [
+        "V2"
+      ]
+    },
+    {
+      "id": 11,
+      "words": 34,
+      "text": "Tommy recognized this visitor as an Irish Sinn Feiner. Certainly Mr. Brown's organization was a far-reaching concern. Who was this man who held in his finger these curiously variegated links of an unknown chain?",
+      "protected_ids": [
+        "V3"
+      ]
+    },
+    {
+      "id": 12,
+      "words": 18,
+      "text": "The procedure was exactly the same: the signal knock, the demand for a number, and the reply \"Correct.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 13,
+      "words": 38,
+      "text": "Two knocks followed in quick succession. Tommy put the first man down as a city clerk, quiet and rather shabbily dressed. The second was of the working classes, and his face was vaguely familiar to the young man.",
+      "protected_ids": []
+    },
+    {
+      "id": 14,
+      "words": 37,
+      "text": "Three minutes later came another, a man of commanding appearance, exquisitely dressed, and evidently well born. His face, again, was not unknown to the watcher, though he could not for the moment put a name to it.",
+      "protected_ids": []
+    },
+    {
+      "id": 15,
+      "words": 23,
+      "text": "There followed a long wait. Tommy was just cautiously creeping out from his hiding-place when another knock sent him scuttling back to cover.",
+      "protected_ids": []
+    },
+    {
+      "id": 16,
+      "words": 94,
+      "text": "This last-comer came up the stairs so quietly that he was almost abreast of Tommy before the young man had realized his presence. He was a small man, very pale, with a gentle almost womanish air. The angle of the cheek-bones hinted at his Slavonic ancestry. As he passed the recess, he turned his head slowly. The strange light eyes seemed to burn through the curtain. Tommy could hardly believe that the man did not know he was there, and in spite of himself he shivered. The creature reminded him of a venomous snake.",
+      "protected_ids": [
+        "V4"
+      ]
+    },
+    {
+      "id": 17,
+      "words": 37,
+      "text": "The new-comer knocked as all had done, but his reception was very different. The bearded man rose to his feet, and all the others followed suit. The German came forward and shook hands. His heels clicked together.",
+      "protected_ids": []
+    },
+    {
+      "id": 18,
+      "words": 17,
+      "text": "\"We are honoured,\" he said. \"We are greatly honoured. I much feared that it would be impossible.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 19,
+      "words": 15,
+      "text": "The other answered in a low voice that had a kind of hiss in it:",
+      "protected_ids": []
+    },
+    {
+      "id": 20,
+      "words": 20,
+      "text": "\"There were difficulties. But one meeting is essential--to define my policy. I can do nothing without--Mr. Brown. He is here?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 21,
+      "words": 6,
+      "text": "The German replied with slight hesitation:",
+      "protected_ids": []
+    },
+    {
+      "id": 22,
+      "words": 27,
+      "text": "\"We have received a message. It is impossible for him to be present in person.\" He stopped, giving a curious impression of having left the sentence unfinished.",
+      "protected_ids": []
+    },
+    {
+      "id": 23,
+      "words": 19,
+      "text": "A very slow smile overspread the face of the other. He looked round at a circle of uneasy faces.",
+      "protected_ids": []
+    },
+    {
+      "id": 24,
+      "words": 38,
+      "text": "\"Ah! I understand. I have read of his methods. He works in the dark and trusts no one. But, all the same, it is possible that he is among us now....\" Each man seemed eyeing his neighbour doubtfully.",
+      "protected_ids": [
+        "V5"
+      ]
+    },
+    {
+      "id": 25,
+      "words": 11,
+      "text": "The Russian tapped his cheek. \"So be it. Let us proceed.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 26,
+      "words": 18,
+      "text": "The German indicated the place at the head of the table. The Russian demurred, but the other insisted.",
+      "protected_ids": []
+    },
+    {
+      "id": 27,
+      "words": 17,
+      "text": "\"It is the only possible place,\" he said, \"for--Number One. Perhaps Number Fourteen will shut the door?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 28,
+      "words": 123,
+      "text": "Once more Tommy was confronting bare wooden panels and a mere undistinguishable murmur. He felt that, by hook or by crook, he must hear more. There was no sound from below. Tommy removed his shoes and left them behind the curtain. Then he walked gingerly out on his stockinged feet and knelt with his ear to the crack of the door, but he could catch only a chance word here and there. Very slowly, a fraction of an inch at a time, he turned the handle. Then he pressed, at first ever so slightly, then harder, and finally with all his might. But the door remained firm, and at last the truth dawned upon him. It was locked or bolted on the inside.",
+      "protected_ids": []
+    },
+    {
+      "id": 29,
+      "words": 9,
+      "text": "\"Well, I'm damned!\" he said. \"What a dirty trick!\"",
+      "protected_ids": []
+    },
+    {
+      "id": 30,
+      "words": 43,
+      "text": "As his indignation cooled, he restored the handle to its original position with the same infinite pains. There was a certain bulldog tenacity about Tommy that made him slow to admit defeat. Checkmated for the moment, he was far from abandoning the conflict.",
+      "protected_ids": []
+    },
+    {
+      "id": 31,
+      "words": 119,
+      "text": "A little farther along the passage on the left was a second door. It yielded, and he slipped inside. The room was an untenanted bedroom, and the dirt there was, if anything, more abundant. But it held the thing he had hoped to find, a communicating door between the two rooms. Its bolt was very rusty, and by gently wriggling it to and fro, Tommy managed to draw it back without making too much noise. Then he repeated his manœuvres with the handle, this time with complete success. The door swung open a mere crack. A velvet _portière_ on the inside prevented him from seeing, but he was able to recognize the voices with a reasonable amount of accuracy.",
+      "protected_ids": []
+    },
+    {
+      "id": 32,
+      "words": 11,
+      "text": "The Sinn Feiner was speaking. His rich Irish voice was unmistakable:",
+      "protected_ids": []
+    },
+    {
+      "id": 33,
+      "words": 12,
+      "text": "\"That's all very well. But more money is essential. No money--no results!\"",
+      "protected_ids": []
+    },
+    {
+      "id": 34,
+      "words": 11,
+      "text": "Another voice, which Tommy rather thought was that of Boris, replied:",
+      "protected_ids": []
+    },
+    {
+      "id": 35,
+      "words": 7,
+      "text": "\"Will you guarantee that there _are_ results?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 36,
+      "words": 29,
+      "text": "\"In a month from now--sooner or later as you wish--I will guarantee you such a reign of terror in Ireland as shall shake the British Empire to its foundations.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 37,
+      "words": 14,
+      "text": "There was a pause, and then came the soft, sibilant accents of Number One:",
+      "protected_ids": []
+    },
+    {
+      "id": 38,
+      "words": 12,
+      "text": "\"Good! You shall have the money. Boris, you will see to that.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 39,
+      "words": 24,
+      "text": "\"The chief difficulty is the landing of the ammunition,\" said the Sinn Feiner. \"The money is conveyed in easily enough--thanks to our colleague here.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 40,
+      "words": 20,
+      "text": "Another voice, which Tommy fancied was that of the tall, commanding-looking man whose face had seemed familiar to him, said:",
+      "protected_ids": []
+    },
+    {
+      "id": 41,
+      "words": 11,
+      "text": "\"Think of the feelings of Belfast if they could hear you!\"",
+      "protected_ids": []
+    },
+    {
+      "id": 42,
+      "words": 26,
+      "text": "\"That is settled, then,\" said the sibilant tones. \"Now, in the matter of the loan to an English newspaper, you have arranged the details satisfactorily, Boris?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 43,
+      "words": 10,
+      "text": "\"I think so,\" the voice Tommy took for Boris's replied.",
+      "protected_ids": []
+    },
+    {
+      "id": 44,
+      "words": 13,
+      "text": "\"That is good. An official denial from Moscow will be forthcoming if necessary.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 45,
+      "words": 10,
+      "text": "Then the clear voice of the German broke the silence:",
+      "protected_ids": []
+    },
+    {
+      "id": 46,
+      "words": 31,
+      "text": "\"I am directed by--Mr. Brown, to place the summaries of the reports from the different unions before you. That of the miners is most satisfactory. We must hold back the railways.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 47,
+      "words": 26,
+      "text": "For a long time there was silence, broken only by the rustle of papers. Then Tommy heard the light tap-tap of fingers, drumming on the table.",
+      "protected_ids": []
+    },
+    {
+      "id": 48,
+      "words": 7,
+      "text": "\"And--the date, my friend?\" said Number One.",
+      "protected_ids": []
+    },
+    {
+      "id": 49,
+      "words": 5,
+      "text": "\"The 29th,\" the German answered.",
+      "protected_ids": []
+    },
+    {
+      "id": 50,
+      "words": 9,
+      "text": "The Russian seemed to consider. \"That is rather soon.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 51,
+      "words": 29,
+      "text": "\"I know. But it was settled by the principal Labour leaders, and we cannot seem to interfere too much. They must believe it to be entirely their own show.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 52,
+      "words": 7,
+      "text": "The Russian laughed softly, as though amused.",
+      "protected_ids": []
+    },
+    {
+      "id": 53,
+      "words": 63,
+      "text": "\"Yes, yes,\" he said. \"They must have no inkling that we are using them for our own ends. They are honest men--and that is their value to us. It is curious--but you cannot make a revolution without honest men.\" He paused, and then repeated, as though the phrase pleased him: \"Every revolution has had its honest men. They are soon disposed of afterwards.\"",
+      "protected_ids": [
+        "V6"
+      ]
+    },
+    {
+      "id": 54,
+      "words": 8,
+      "text": "There was a sinister note in his voice.",
+      "protected_ids": []
+    },
+    {
+      "id": 55,
+      "words": 3,
+      "text": "The German resumed:",
+      "protected_ids": []
+    },
+    {
+      "id": 56,
+      "words": 13,
+      "text": "\"Clymes must go. He is too far-seeing. Number Fourteen will see to that.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 57,
+      "words": 5,
+      "text": "There was a hoarse murmur.",
+      "protected_ids": []
+    },
+    {
+      "id": 58,
+      "words": 12,
+      "text": "\"That's all right, gov'nor.\" And then after a moment: \"Suppose I'm nabbed.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 59,
+      "words": 35,
+      "text": "\"You will have the best legal talent to defend you,\" replied the German quietly. \"But in any case you will wear gloves fitted with the finger-prints of a notorious housebreaker. You have little to fear.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 60,
+      "words": 49,
+      "text": "\"Oh, I ain't afraid, gov'nor. All for the good of the cause. The streets is going to run with blood, so they say.\" He spoke with a grim relish. \"Dreams of it, sometimes, I does. And diamonds and pearls rolling about in the gutter for anyone to pick up!\"",
+      "protected_ids": []
+    },
+    {
+      "id": 61,
+      "words": 9,
+      "text": "Tommy heard a chair shifted. Then Number One spoke:",
+      "protected_ids": []
+    },
+    {
+      "id": 62,
+      "words": 9,
+      "text": "\"Then all is arranged. We are assured of success?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 63,
+      "words": 12,
+      "text": "\"I--think so.\" But the German spoke with less than his usual confidence.",
+      "protected_ids": []
+    },
+    {
+      "id": 64,
+      "words": 12,
+      "text": "Number One's voice held suddenly a dangerous quality. \"What has gone wrong?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 65,
+      "words": 17,
+      "text": "\"The Labour leaders,\" said the German. \"If they do not declare a general strike on the 29th----\"",
+      "protected_ids": []
+    },
+    {
+      "id": 66,
+      "words": 4,
+      "text": "\"Why should they not?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 67,
+      "words": 39,
+      "text": "\"As you've said, they're honest. And, in spite of everything we've done to discredit the Government in their eyes, I'm not sure that they haven't got a sneaking faith and belief in it. They will not go against it.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 68,
+      "words": 8,
+      "text": "Again the Russian's fingers drummed on the table.",
+      "protected_ids": []
+    },
+    {
+      "id": 69,
+      "words": 21,
+      "text": "\"To the point, my friend. I was given to understand that there was a certain document in existence which assured success.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 70,
+      "words": 24,
+      "text": "\"That is so. If that document were placed before the leaders, the result would be immediate. The Government would be broken finally and completely.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 71,
+      "words": 6,
+      "text": "\"Then what more do you want?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 72,
+      "words": 7,
+      "text": "\"The document itself,\" said the German bluntly.",
+      "protected_ids": []
+    },
+    {
+      "id": 73,
+      "words": 13,
+      "text": "\"Ah! It is not in your possession? But you know where it is?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 74,
+      "words": 1,
+      "text": "\"No.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 75,
+      "words": 6,
+      "text": "\"Does anyone know where it is?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 76,
+      "words": 10,
+      "text": "\"One person--perhaps. And we are not sure of that even.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 77,
+      "words": 4,
+      "text": "\"Who is this person?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 78,
+      "words": 2,
+      "text": "\"A girl.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 79,
+      "words": 4,
+      "text": "Tommy held his breath.",
+      "protected_ids": []
+    },
+    {
+      "id": 80,
+      "words": 24,
+      "text": "\"A girl?\" The Russian's voice rose contemptuously. \"And you have not made her speak? In Russia we have ways of making a girl talk.\"",
+      "protected_ids": [
+        "V7"
+      ]
+    },
+    {
+      "id": 81,
+      "words": 8,
+      "text": "\"This case is different,\" said the German sullenly.",
+      "protected_ids": []
+    },
+    {
+      "id": 82,
+      "words": 13,
+      "text": "\"How--different?\" He paused a moment, then went on: \"Where is the girl now?\"",
+      "protected_ids": []
+    },
+    {
+      "id": 83,
+      "words": 5,
+      "text": "\"The girl?\" the German repeated.",
+      "protected_ids": []
+    },
+    {
+      "id": 84,
+      "words": 1,
+      "text": "\"Yes.\"",
+      "protected_ids": []
+    },
+    {
+      "id": 85,
+      "words": 2,
+      "text": "\"She is----\"",
+      "protected_ids": []
+    },
+    {
+      "id": 86,
+      "words": 16,
+      "text": "But Tommy heard no more. A crashing blow descended on his head, and all was darkness.",
+      "protected_ids": [
+        "V8"
+      ]
+    }
+  ],
+  "original_source": "TAKEN aback though he was by the man’s words, Tommy did not hesitate.\nIf audacity had successfully carried him so far, it was to be hoped\nit would carry him yet farther. He quietly passed into the house and\nmounted the ramshackle staircase. Everything in the house was filthy\nbeyond words. The grimy paper, of a pattern now indistinguishable,\nhung in loose festoons from the wall. In every angle was a grey mass of\ncobweb.\n\nTommy proceeded leisurely. By the time he reached the bend of the\nstaircase, he had heard the man below disappear into a back room.\nClearly no suspicion attached to him as yet. To come to the house and\nask for “Mr. Brown” appeared indeed to be a reasonable and natural\nproceeding.\n\nAt the top of the stairs Tommy halted to consider his next move. In\nfront of him ran a narrow passage, with doors opening on either side of\nit. From the one nearest him on the left came a low murmur of voices.\nIt was this room which he had been directed to enter. But what held\nhis glance fascinated was a small recess immediately on his right,\nhalf concealed by a torn velvet curtain. It was directly opposite the\nleft-handed door and, owing to its angle, it also commanded a good view\nof the upper part of the staircase. As a hiding-place for one or, at a\npinch, two men, it was ideal, being about two feet deep and three feet\nwide. It attracted Tommy mightily. He thought things over in his usual\nslow and steady way, deciding that the mention of “Mr. Brown” was not a\nrequest for an individual, but in all probability a password used by\nthe gang. His lucky use of it had gained him admission. So far he had\naroused no suspicion. But he must decide quickly on his next step.\n\nSuppose he were boldly to enter the room on the left of the passage.\nWould the mere fact of his having been admitted to the house be\nsufficient? Perhaps a further password would be required, or, at any\nrate, some proof of identity. The doorkeeper clearly did not know all\nthe members of the gang by sight, but it might be different upstairs.\nOn the whole it seemed to him that luck had served him very well so far,\nbut that there was such a thing as trusting it too far. To enter\nthat room was a colossal risk. He could not hope to sustain his part\nindefinitely; sooner or later he was almost bound to betray himself, and\nthen he would have thrown away a vital chance in mere foolhardiness.\n\nA repetition of the signal knock sounded on the door below, and Tommy,\nhis mind made up, slipped quickly into the recess, and cautiously drew\nthe curtain farther across so that it shielded him completely from\nsight. There were several rents and slits in the ancient material which\nafforded him a good view. He would watch events, and any time he chose\ncould, after all, join the assembly, modelling his behaviour on that of\nthe new arrival.\n\nThe man who came up the staircase with a furtive, soft-footed tread was\nquite unknown to Tommy. He was obviously of the very dregs of society.\nThe low beetling brows, and the criminal jaw, the bestiality of the\nwhole countenance were new to the young man, though he was a type that\nScotland Yard would have recognized at a glance.\n\nThe man passed the recess, breathing heavily as he went. He stopped at\nthe door opposite, and gave a repetition of the signal knock. A voice\ninside called out something, and the man opened the door and passed in,\naffording Tommy a momentary glimpse of the room inside. He thought there\nmust be about four or five people seated round a long table that took up\nmost of the space, but his attention was caught and held by a tall man\nwith close-cropped hair and a short, pointed, naval-looking beard,\nwho sat at the head of the table with papers in front of him. As the\nnew-comer entered he glanced up, and with a correct, but curiously\nprecise enunciation, which attracted Tommy’s notice, he asked:\n\n“Your number, comrade?”\n\n“Fourteen, gov’nor,” replied the other hoarsely.\n\n“Correct.”\n\nThe door shut again.\n\n“If that isn’t a Hun, I’m a Dutchman!” said Tommy to himself. “And\nrunning the show darned systematically too--as they always do. Lucky I\ndidn’t roll in. I’d have given the wrong number, and there would have\nbeen the deuce to pay. No, this is the place for me. Hullo, here’s\nanother knock.”\n\nThis visitor proved to be of an entirely different type to the last.\nTommy recognized in him an Irish Sinn Feiner. Certainly Mr. Brown’s\norganization was a far-reaching concern. The common criminal, the\nwell-bred Irish gentleman, the pale Russian, and the efficient German\nmaster of the ceremonies! Truly a strange and sinister gathering! Who\nwas this man who held in his finger these curiously variegated links of\nan unknown chain?\n\nIn this case, the procedure was exactly the same. The signal knock, the\ndemand for a number, and the reply “Correct.”\n\nTwo knocks followed in quick succession on the door below. The first man\nwas quite unknown to Tommy, who put him down as a city clerk. A quiet,\nintelligent-looking man, rather shabbily dressed. The second was of the\nworking classes, and his face was vaguely familiar to the young man.\n\nThree minutes later came another, a man of commanding appearance,\nexquisitely dressed, and evidently well born. His face, again, was not\nunknown to the watcher, though he could not for the moment put a name to\nit.\n\nAfter his arrival there was a long wait. In fact Tommy concluded that\nthe gathering was now complete, and was just cautiously creeping out\nfrom his hiding-place, when another knock sent him scuttling back to\ncover.\n\nThis last-comer came up the stairs so quietly that he was almost abreast\nof Tommy before the young man had realized his presence.\n\nHe was a small man, very pale, with a gentle almost womanish air. The\nangle of the cheek-bones hinted at his Slavonic ancestry, otherwise\nthere was nothing to indicate his nationality. As he passed the recess,\nhe turned his head slowly. The strange light eyes seemed to burn through\nthe curtain; Tommy could hardly believe that the man did not know he was\nthere and in spite of himself he shivered. He was no more fanciful than\nthe majority of young Englishmen, but he could not rid himself of the\nimpression that some unusually potent force emanated from the man. The\ncreature reminded him of a venomous snake.\n\nA moment later his impression was proved correct. The new-comer knocked\non the door as all had done, but his reception was very different. The\nbearded man rose to his feet, and all the others followed suit. The\nGerman came forward and shook hands. His heels clicked together.\n\n“We are honoured,” he said. “We are greatly honoured. I much feared that\nit would be impossible.”\n\nThe other answered in a low voice that had a kind of hiss in it:\n\n“There were difficulties. It will not be possible again, I fear. But one\nmeeting is essential--to define my policy. I can do nothing without--Mr.\nBrown. He is here?”\n\nThe change in the German’s voice was audible as he replied with slight\nhesitation:\n\n“We have received a message. It is impossible for him to be present\nin person.” He stopped, giving a curious impression of having left the\nsentence unfinished.\n\nA very slow smile overspread the face of the other. He looked round at a\ncircle of uneasy faces.\n\n“Ah! I understand. I have read of his methods. He works in the dark and\ntrusts no one. But, all the same, it is possible that he is among us\nnow....” He looked round him again, and again that expression of fear\nswept over the group. Each man seemed eyeing his neighbour doubtfully.\n\nThe Russian tapped his cheek.\n\n“So be it. Let us proceed.”\n\nThe German seemed to pull himself together. He indicated the place he\nhad been occupying at the head of the table. The Russian demurred, but\nthe other insisted.\n\n“It is the only possible place,” he said, “for--Number One. Perhaps\nNumber Fourteen will shut the door?”\n\nIn another moment Tommy was once more confronting bare wooden panels,\nand the voices within had sunk once more to a mere undistinguishable\nmurmur. Tommy became restive. The conversation he had overheard had\nstimulated his curiosity. He felt that, by hook or by crook, he must\nhear more.\n\nThere was no sound from below, and it did not seem likely that the\ndoorkeeper would come upstairs. After listening intently for a minute or\ntwo, he put his head round the curtain. The passage was deserted. Tommy\nbent down and removed his shoes, then, leaving them behind the curtain,\nhe walked gingerly out on his stockinged feet, and kneeling down by\nthe closed door he laid his ear cautiously to the crack. To his intense\nannoyance he could distinguish little more; just a chance word here and\nthere if a voice was raised, which merely served to whet his curiosity\nstill farther.\n\nHe eyed the handle of the door tentatively. Could he turn it by degrees\nso gently and imperceptibly that those in the room would notice nothing?\nHe decided that with great care it could be done. Very slowly, a\nfraction of an inch at a time, he moved it round, holding his breath in\nhis excessive care. A little more--a little more still--would it never\nbe finished? Ah! at last it would turn no farther.\n\nHe stayed so for a minute or two, then drew a deep breath, and pressed\nit ever so slightly inward. The door did not budge. Tommy was annoyed.\nIf he had to use too much force, it would almost certainly creak.\nHe waited until the voices rose a little, then he tried again. Still\nnothing happened. He increased the pressure. Had the beastly thing\nstuck? Finally, in desperation, he pushed with all his might. But the\ndoor remained firm, and at last the truth dawned upon him. It was locked\nor bolted on the inside.\n\nFor a moment or two Tommy’s indignation got the better of him.\n\n“Well, I’m damned!” he said. “What a dirty trick!”\n\nAs his indignation cooled, he prepared to face the situation. Clearly\nthe first thing to be done was to restore the handle to its original\nposition. If he let it go suddenly, the men inside would be almost\ncertain to notice it, so, with the same infinite pains, he reversed his\nformer tactics. All went well, and with a sigh of relief the young man\nrose to his feet. There was a certain bulldog tenacity about Tommy that\nmade him slow to admit defeat. Checkmated for the moment, he was far\nfrom abandoning the conflict. He still intended to hear what was going\non in the locked room. As one plan had failed, he must hunt about for\nanother.\n\nHe looked round him. A little farther along the passage on the left was\na second door. He slipped silently along to it. He listened for a moment\nor two, then tried the handle. It yielded, and he slipped inside.\n\nThe room, which was untenanted, was furnished as a bedroom. Like\neverything else in the house, the furniture was falling to pieces, and\nthe dirt was, if anything, more abundant.\n\nBut what interested Tommy was the thing he had hoped to find, a\ncommunicating door between the two rooms, up on the left by the window.\nCarefully closing the door into the passage behind him, he stepped\nacross to the other and examined it closely. The bolt was shot across\nit. It was very rusty, and had clearly not been used for some time. By\ngently wriggling it to and fro, Tommy managed to draw it back without\nmaking too much noise. Then he repeated his former manœuvres with the\nhandle--this time with complete success. The door swung open--a crack,\na mere fraction, but enough for Tommy to hear what went on. There was a\nvelvet _portière_ on the inside of this door which prevented him from\nseeing, but he was able to recognize the voices with a reasonable amount\nof accuracy.\n\nThe Sinn Feiner was speaking. His rich Irish voice was unmistakable:\n\n“That’s all very well. But more money is essential. No money--no\nresults!”\n\nAnother voice which Tommy rather thought was that of Boris replied:\n\n“Will you guarantee that there _are_ results?”\n\n“In a month from now--sooner or later as you wish--I will guarantee you\nsuch a reign of terror in Ireland as shall shake the British Empire to\nits foundations.”\n\nThere was a pause, and then came the soft, sibilant accents of Number\nOne:\n\n“Good! You shall have the money. Boris, you will see to that.”\n\nBoris asked a question:\n\n“Via the Irish Americans, and Mr. Potter as usual?”\n\n“I guess that’ll be all right!” said a new voice, with a transatlantic\nintonation, “though I’d like to point out, here and now, that things\nare getting a mite difficult. There’s not the sympathy there was, and\na growing disposition to let the Irish settle their own affairs without\ninterference from America.”\n\nTommy felt that Boris had shrugged his shoulders as he answered:\n\n“Does that matter, since the money only nominally comes from the\nStates?”\n\n“The chief difficulty is the landing of the ammunition,” said the Sinn\nFeiner. “The money is conveyed in easily enough--thanks to our colleague\nhere.”\n\nAnother voice, which Tommy fancied was that of the tall,\ncommanding-looking man whose face had seemed familiar to him, said:\n\n“Think of the feelings of Belfast if they could hear you!”\n\n“That is settled, then,” said the sibilant tones. “Now, in the matter\nof the loan to an English newspaper, you have arranged the details\nsatisfactorily, Boris?”\n\n“I think so.”\n\n“That is good. An official denial from Moscow will be forthcoming if\nnecessary.”\n\nThere was a pause, and then the clear voice of the German broke the\nsilence:\n\n“I am directed by--Mr. Brown, to place the summaries of the reports\nfrom the different unions before you. That of the miners is most\nsatisfactory. We must hold back the railways. There may be trouble with\nthe A.S.E.”\n\nFor a long time there was a silence, broken only by the rustle of papers\nand an occasional word of explanation from the German. Then Tommy heard\nthe light tap-tap of fingers, drumming on the table.\n\n“And--the date, my friend?” said Number One.\n\n“The 29th.”\n\nThe Russian seemed to consider:\n\n“That is rather soon.”\n\n“I know. But it was settled by the principal Labour leaders, and we\ncannot seem to interfere too much. They must believe it to be entirely\ntheir own show.”\n\nThe Russian laughed softly, as though amused.\n\n“Yes, yes,” he said. “That is true. They must have no inkling that we\nare using them for our own ends. They are honest men--and that is their\nvalue to us. It is curious--but you cannot make a revolution without\nhonest men. The instinct of the populace is infallible.” He paused, and\nthen repeated, as though the phrase pleased him: “Every revolution has\nhad its honest men. They are soon disposed of afterwards.”\n\nThere was a sinister note in his voice.\n\nThe German resumed:\n\n“Clymes must go. He is too far-seeing. Number Fourteen will see to\nthat.”\n\nThere was a hoarse murmur.\n\n“That’s all right, gov’nor.” And then after a moment or two: “Suppose\nI’m nabbed.”\n\n“You will have the best legal talent to defend you,” replied the\nGerman quietly. “But in any case you will wear gloves fitted with the\nfinger-prints of a notorious housebreaker. You have little to fear.”\n\n“Oh, I ain’t afraid, gov’nor. All for the good of the cause. The streets\nis going to run with blood, so they say.” He spoke with a grim relish.\n“Dreams of it, sometimes, I does. And diamonds and pearls rolling about\nin the gutter for anyone to pick up!”\n\nTommy heard a chair shifted. Then Number One spoke:\n\n“Then all is arranged. We are assured of success?”\n\n“I--think so.” But the German spoke with less than his usual confidence.\n\nNumber One’s voice held suddenly a dangerous quality:\n\n“What has gone wrong?”\n\n“Nothing; but----”\n\n“But what?”\n\n“The Labour leaders. Without them, as you say, we can do nothing. If\nthey do not declare a general strike on the 29th----”\n\n“Why should they not?”\n\n“As you’ve said, they’re honest. And, in spite of everything we’ve\ndone to discredit the Government in their eyes, I’m not sure that they\nhaven’t got a sneaking faith and belief in it.”\n\n“But----”\n\n“I know. They abuse it unceasingly. But, on the whole, public opinion\nswings to the side of the Government. They will not go against it.”\n\nAgain the Russian’s fingers drummed on the table.\n\n“To the point, my friend. I was given to understand that there was a\ncertain document in existence which assured success.”\n\n“That is so. If that document were placed before the leaders, the result\nwould be immediate. They would publish it broadcast throughout England,\nand declare for the revolution without a moment’s hesitation. The\nGovernment would be broken finally and completely.”\n\n“Then what more do you want?”\n\n“The document itself,” said the German bluntly.\n\n“Ah! It is not in your possession? But you know where it is?”\n\n“No.”\n\n“Does anyone know where it is?”\n\n“One person--perhaps. And we are not sure of that even.”\n\n“Who is this person?”\n\n“A girl.”\n\nTommy held his breath.\n\n“A girl?” The Russian’s voice rose contemptuously. “And you have not\nmade her speak? In Russia we have ways of making a girl talk.”\n\n“This case is different,” said the German sullenly.\n\n“How--different?” He paused a moment, then went on: “Where is the girl\nnow?”\n\n“The girl?”\n\n“Yes.”\n\n“She is----”\n\nBut Tommy heard no more. A crashing blow descended on his head, and all\nwas darkness.\n"
+}

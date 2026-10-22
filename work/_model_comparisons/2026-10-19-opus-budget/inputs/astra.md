@@ -1,0 +1,139 @@
+## II
+
+About halfway between West Egg and New York the motor road hastily joins the railroad and runs beside it for a quarter of a mile, so as to shrink away from a certain desolate area of land. This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens; where ashes take the forms of houses and chimneys and rising smoke and, finally, with a transcendent effort, of ash-grey men, who move dimly and already crumbling through the powdery air.
+
+But above the grey land and the spasms of bleak dust you perceive, after a moment, the eyes of Doctor T. J. Eckleburg. They are blue and gigantic—their retinas are one yard high. They look out of no face, but from enormous yellow spectacles which pass over a nonexistent nose. Some wild wag of an oculist had set them there to fatten his practice in Queens, and then sank into eternal blindness, or forgot them and moved away. But his eyes, dimmed by many paintless days, brood on over the solemn dumping ground.
+
+The valley is bounded by a small foul river; when the drawbridge is up, passengers on waiting trains can stare at the scene for half an hour. There is always a halt of at least a minute, and it was because of this that I first met Tom Buchanan’s mistress.
+
+Though I was curious to see her, I had no desire to meet her—but I did. Going up to New York with Tom one afternoon, I was literally forced from the car when we stopped by the ash-heaps.
+
+“We’re getting off,” he insisted, taking my elbow. “I want you to meet my girl.”
+
+I think he’d tanked up at luncheon; his determination bordered on violence. We walked back along the road under Doctor Eckleburg’s persistent stare to a yellow brick block containing an empty shop, an all-night restaurant, and a garage—Repairs. George B. Wilson. Cars bought and sold.
+
+The interior was unprosperous and bare, with a dust-covered wreck of a Ford crouching in a corner. The proprietor appeared, wiping his hands on waste—a blond, spiritless man, anaemic, and faintly handsome. At sight of Tom a damp gleam of hope sprang into his light blue eyes. He asked when Tom would sell him his car.
+
+“Next week; I’ve got my man working on it now,” said Tom.
+
+“Works pretty slow, don’t he?”
+
+“No, he doesn’t,” said Tom coldly. “And if you feel that way about it, maybe I’d better sell it somewhere else after all.”
+
+Wilson’s explanation faded off as a woman blocked the light from the office door. In her middle thirties, faintly stout, she carried her flesh sensuously. Her face contained no gleam of beauty, but there was an immediately perceptible vitality about her as if the nerves of her body were continually smouldering. Walking through her husband as if he were a ghost, she shook hands with Tom and told Wilson to get chairs.
+
+He mingled immediately with the cement colour of the walls. White ashen dust veiled his suit and hair as it veiled everything in the vicinity—except his wife, who moved close to Tom.
+
+“I want to see you,” said Tom intently. “Get on the next train.”
+
+“All right,” she said.
+
+He arranged to meet her by the newsstand on the lower level. We waited down the road, out of sight. It was a few days before the Fourth of July; a grey, scrawny Italian child was setting torpedoes along the railroad track.
+
+“Doesn’t her husband object?” I asked.
+
+“Wilson? He thinks she goes to see her sister in New York. He’s so dumb he doesn’t know he’s alive.”
+
+Mrs. Wilson sat discreetly in another car, in deference to East Eggers who might be on the train. In New York she bought Town Tattle, a moving-picture magazine, cold cream and perfume, then let four taxicabs pass before selecting a new lavender-coloured one. Almost immediately she tapped on the glass.
+
+“I want to get one of those dogs,” she said. “I want to get one for the apartment.”
+
+We backed up to an old man with a basket of puppies. She wanted a police dog; he produced something more like an Airedale, with startlingly white feet, and asked ten dollars.
+
+“Is it a boy or a girl?” she asked delicately.
+
+“That dog’s a boy,” said the man.
+
+“It’s a bitch,” said Tom decisively. “Here’s your money. Go and buy ten more dogs with it.”
+
+On Fifth Avenue I tried to leave them.
+
+“No you don’t,” interposed Tom. “Myrtle’ll be hurt if you don’t come up to the apartment. Won’t you, Myrtle?”
+
+“Come on,” she urged. “I’ll telephone my sister.”
+
+At 158th Street the cab stopped at one slice in a long white cake of apartment-houses. Mrs. Wilson gathered her purchases, threw a regal homecoming glance around the neighbourhood, and went haughtily in.
+
+The top-floor apartment had a small living-room, dining-room, bedroom, and bath. Tapestried furniture crowded it so that to move was to stumble over scenes of ladies swinging in the gardens of Versailles. An over-enlarged photograph, apparently a hen on a blurred rock, resolved itself at a distance into a bonnet and the countenance of a stout old lady. Town Tattle and Simon Called Peter lay among scandal magazines. An elevator boy brought straw and milk for the dog, adding a biscuit which decomposed apathetically in the saucer all afternoon. Tom brought whisky from a locked bureau.
+
+I have been drunk just twice in my life, and the second time was that afternoon; so everything that happened has a dim, hazy cast over it, although until after eight o’clock the apartment was full of cheerful sun. Mrs. Wilson telephoned from Tom’s lap. I went for cigarettes; when I returned they had disappeared, so I discreetly read Simon Called Peter—either terrible stuff or distorted by the whisky.
+
+When Tom and Myrtle reappeared, company began arriving. Her sister was a worldly girl with sticky bobbed red hair, a powdered complexion and incessantly clicking pottery bracelets. A pale, feminine photographer came from the flat below, with a white spot of shaving lather on his cheekbone. He had made the enlargement of Myrtle’s mother. His wife was shrill, languid, handsome, and horrible.
+
+Myrtle had changed into cream-coloured chiffon. With the influence of the dress her personality had also undergone a change. The vitality of the garage was converted into impressive hauteur. Her laughter, gestures and assertions grew more violently affected, and as she expanded the room grew smaller around her, until she seemed to revolve on a noisy, creaking pivot through the smoky air.
+
+“I like your dress,” remarked the photographer’s wife. “I think it’s adorable.”
+
+“It’s just a crazy old thing,” Myrtle said disdainfully. “I just slip it on sometimes when I don’t care what I look like.”
+
+The photographer considered her pose and the modelling of her features until Tom yawned and told Myrtle to get ice.
+
+“I told that boy about the ice.” Myrtle raised her eyebrows in despair at the shiftlessness of the lower orders. “These people! You have to keep after them all the time.”
+
+She kissed the dog with ecstasy and swept into the kitchen, implying that a dozen chefs awaited her orders there.
+
+Her sister sat beside me and asked where I lived. At West Egg, I told her.
+
+“Really? I was down there at a party about a month ago. At a man named Gatsby’s. Do you know him?”
+
+“I live next door to him.”
+
+“Well, they say he’s a nephew or a cousin of Kaiser Wilhelm’s. That’s where all his money comes from. I’m scared of him. I’d hate to have him get anything on me.”
+
+The photographer wanted more work on Long Island, if he could get the entry. Tom laughed and suggested that Myrtle give him an introduction to her husband, for studies of “George B. Wilson at the Gasoline Pump.”
+
+Myrtle’s sister leaned close and whispered that neither Tom nor Myrtle could stand the person they were married to; why didn’t they divorce and marry each other? When I asked whether Myrtle disliked Wilson, Myrtle herself answered violently and obscenely.
+
+“It’s really his wife that’s keeping them apart,” her sister whispered. “She’s a Catholic, and they don’t believe in divorce.”
+
+Tom’s wife Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie.
+
+Presently Myrtle was explaining her marriage.
+
+“I married him because I thought he was a gentleman,” she said. “I thought he knew something about breeding, but he wasn’t fit to lick my shoe.”
+
+“You were crazy about him for a while,” said her sister.
+
+“Crazy about him!” cried Myrtle. “I never was any more crazy about him than I was about that man there.”
+
+She pointed at me, and everyone looked accusingly. I tried to show that I expected no affection.
+
+“The only crazy I was was when I married him,” she continued. “He borrowed somebody’s best suit to get married in, and never even told me about it, and the man came after it one day when he was out.” She had returned it and cried to beat the band all afternoon.
+
+They had lived over the garage for eleven years, her sister told me, and Tom was her first sweetie.
+
+The second bottle of whisky was in constant demand. Tom sent for sandwiches. I wanted to walk eastward toward the park through the soft twilight, but each attempt to leave became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.
+
+Myrtle pulled her chair close, and her warm breath poured over me the story of meeting Tom.
+
+“It was on the two little seats facing each other that are always the last ones left on the train. I was going up to New York to see my sister and spend the night. He had on a dress suit and patent leather shoes, and I couldn’t keep my eyes off him, but every time he looked at me I had to pretend to be looking at the advertisement over his head. When we came into the station he was next to me, and his white shirtfront pressed against my arm, and so I told him I’d have to call a policeman, but he knew I lied. I was so excited that when I got into a taxi with him I didn’t hardly know I wasn’t getting into a subway train. All I kept thinking about, over and over, was ‘You can’t live forever; you can’t live forever.’ ”
+
+Turning to the photographer’s wife, she promised her the dress. Tomorrow she must buy another, and have a massage and a wave, and get a dog collar, a spring ashtray, and a wreath with a black silk bow for her mother’s grave.
+
+It was nine o’clock—almost immediately afterward my watch said ten. The photographer slept with clenched fists, like a photograph of a man of action. I wiped from his cheek the dried lather that had worried me all afternoon.
+
+The dog looked with blind eyes through the smoke, groaning faintly. People disappeared, reappeared, made plans, lost and found each other a few feet away. Toward midnight Tom and Mrs. Wilson stood face to face discussing whether she had any right to mention Daisy’s name.
+
+“Daisy! Daisy! Daisy!” shouted Mrs. Wilson. “I’ll say it whenever I want to! Daisy! Dai—”
+
+Making a short deft movement, Tom Buchanan broke her nose with his open hand.
+
+Then there were bloody towels upon the bathroom floor, and women’s voices scolding, and high over the confusion a long broken wail of pain. The photographer awoke and started toward the door, turning to stare at his wife and Myrtle’s sister stumbling among the furniture with articles of aid, and the despairing figure on the couch, bleeding fluently, trying to spread Town Tattle over the tapestry scenes of Versailles. Taking my hat from the chandelier, I followed him out.
+
+“Come to lunch some day,” he suggested, as we groaned down in the elevator.
+
+“Where?” I asked.
+
+“Anywhere.”
+
+“Keep your hands off the lever,” snapped the elevator boy.
+
+“I beg your pardon,” said the photographer with dignity, “I didn’t know I was touching it.”
+
+“All right,” I agreed, “I’ll be glad to.”
+
+… I was standing beside his bed and he was sitting up between the sheets, clad in his underwear, with a great portfolio in his hands.
+
+“Beauty and the Beast … Loneliness … Old Grocery Horse … Brook’n Bridge …”
+
+Then I was lying half asleep in the cold lower level of the Pennsylvania Station, staring at the morning Tribune, and waiting for the four o’clock train.

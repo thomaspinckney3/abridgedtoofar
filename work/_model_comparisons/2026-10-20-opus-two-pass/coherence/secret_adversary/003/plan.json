@@ -1,0 +1,102 @@
+{
+  "book_id": "secret_adversary",
+  "title": "The Secret Adversary",
+  "author": "Agatha Christie",
+  "structural_classification": "lean",
+  "modernization_level": "L1",
+  "cultural_depth": "unknown",
+  "voice_driven_narrator": null,
+  "indirection_budget_applies": null,
+  "overall_compression_ratio": 2.0,
+  "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
+  "motifs": [],
+  "segments": [
+    {
+      "id": "002",
+      "kind": "chapter",
+      "number": "I",
+      "title": "THE YOUNG ADVENTURERS, LTD.",
+      "raw_heading": "CHAPTER I. THE YOUNG ADVENTURERS, LTD.",
+      "source_word_count": 2562,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1400,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": "g001",
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter I narrative prose"
+    },
+    {
+      "id": "003",
+      "kind": "chapter",
+      "number": "II",
+      "title": "MR. WHITTINGTON’S OFFER",
+      "raw_heading": "CHAPTER II. MR. WHITTINGTON’S OFFER",
+      "source_word_count": 2388,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1300,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter II narrative prose"
+    },
+    {
+      "id": "004",
+      "kind": "chapter",
+      "number": "III",
+      "title": "A SET BACK",
+      "raw_heading": "CHAPTER III. A SET BACK",
+      "source_word_count": 1720,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 900,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter III narrative prose"
+    }
+  ],
+  "merged_groups": {
+    "g001": {
+      "member_ids": [
+        "001",
+        "002"
+      ],
+      "combined_target_word_count": 1700,
+      "combined_source_word_count": 3092
+    },
+    "g002": {
+      "member_ids": [
+        "021",
+        "022"
+      ],
+      "combined_target_word_count": 1900,
+      "combined_source_word_count": 3516
+    },
+    "g003": {
+      "member_ids": [
+        "023",
+        "024"
+      ],
+      "combined_target_word_count": 2000,
+      "combined_source_word_count": 3586
+    }
+  },
+  "_meta": {
+    "computed": {
+      "source_word_count": 78347,
+      "diegetic_source_word_count": 74977,
+      "target_word_count": 39173,
+      "target_hours": 3.26,
+      "overall_compression_ratio": 2.0
+    },
+    "builder": "lean_plan"
+  }
+}

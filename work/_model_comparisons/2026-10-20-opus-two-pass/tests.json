@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "total_passed": 149,
+  "commands": [
+    {
+      "command": ".venv/bin/pytest -q tests/test_target_revision.py tests/test_draft_completion.py",
+      "passed": 60
+    },
+    {
+      "command": ".venv/bin/pytest -q tests/test_production_runner.py tests/test_distribution.py",
+      "passed": 89
+    }
+  ]
+}

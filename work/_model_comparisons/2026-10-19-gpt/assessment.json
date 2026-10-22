@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "reviewer": "Coding assistant; source-aware, not blinded or independent.",
+  "findings": [
+    "GPT-6 Astra is the strongest quality candidate in this four-chapter pilot; GPT-6.1 Sol is a strong lower-cost drafting option that still needs review. The preference is based on preserved context and voice as well as length, not an automatic score or a general model ranking.",
+    "All eight GPT chapters are closer to the frozen word targets than the existing abridgments or the completed Anthropic drafts. Astra is 3.6–5.9% below target across the four; Sol is 4.3–10.5% below. The prompt says not to undershoot, so these are near-target drafts rather than exact compliance. Anthropic retained substantially more source wording but usually exceeded the targets by large margins.",
+    "Both GPT models repair the existing Gatsby I phone-scene gap and avoid the dangling name and missing setups seen in earlier Gatsby II versions. Astra also preserves the money/heaven premise for Loomings’ perdition joke; Sol repeats the omission seen in both Anthropic drafts. Both GPT models retain the schoolmaster setup and the Carpet-Bag’s ice-palace/tears-of-orphans satire.",
+    "The shorter drafts use more paraphrase and lose some texture. Astra retains more of Nick’s qualifying language and period-specific vocabulary in Gatsby I. Both GPT Loomings drafts cut Cato and Seneca; Astra also drops the headwind explanation for its second-hand-air joke, which Sol retains. This is not evidence that every Astra cut is superior.",
+    "All six GPT calls completed without retry, fallback, or truncation. Provider-usage cost was $1.339828 total: Astra $1.121065 and Sol $0.218763. Summed request latency was 163.83 seconds for Astra and 191.27 for Sol. Sol was about 5.1 times cheaper here, but not faster. Costs and timing cover three calls/four chapters per model, including the merged Moby-Dick request.",
+    "This is the same frozen drafting-stage material as the Anthropic trial, with medium GPT reasoning and a 32,000-token cap. Historical existing versions include older prompts and repair passes. No full-pipeline validation or publication was performed, and all protected live artifact hashes were unchanged."
+  ],
+  "chapters": {
+    "gatsby/001": {
+      "judgment": "Both GPT drafts compress substantially while fixing the older phone-scene gap; Astra preserves more of Nick’s qualifying language.",
+      "observations": [
+        "Astra is 3,011 words (5.9% below the 3,200 target); Sol is 2,865 (10.5% below). Existing is 4,761; Sonnet 5.5 is 5,616; Opus 5.5 produced no completed draft here.",
+        "Both preserve the opening advice, Nick’s exception for Gatsby, East/West Egg class geography, Tom’s physical dominance and racist dinner conversation, Daisy’s beautiful-little-fool speech, Jordan’s identity, and the uncertain green-light ending.",
+        "Both keep Daisy leaving after Tom (Astra paragraph 53; Sol paragraph 50) before their return, repairing the older abridgment’s continuity gap. Sonnet also fixed that gap, but with very little compression.",
+        "Astra keeps Nick’s full formulation about Daisy’s voice compelling his attention and belief (paragraph 72). Sol shortens it to a direct declaration of her insincerity (paragraph 67), retaining the event but reducing the passage’s psychological modulation.",
+        "Sol compresses the recognition of Jordan into “sporting pictures” (paragraph 72), whereas Astra retains the period-specific “rotogravure pictures” (paragraph 77). This is a small but concrete loss of texture under the specification’s period-language preservation rule.",
+        "Both turn some dialogue and descriptive passages into narration; they preserve much less exact source phrasing than Sonnet. Lower wording overlap is not itself an error: the specification permits hybrid splice and paraphrase. Both also undershoot the prompt’s requested target, especially Sol.",
+        "No major invented event or broken movement identified in either GPT chapter during this review. Preference for Astra’s fuller texture on this chapter is an editorial judgment, not a general model ranking."
+      ]
+    },
+    "gatsby/002": {
+      "judgment": "Both GPT drafts are strong compact alternatives; the earlier continuity problems are avoided.",
+      "observations": [
+        "Astra is 2,173 words (5.5% below the 2,300 target); Sol is 2,186 (5.0% below). Existing is 2,816; Opus 5.5 is 3,187; Sonnet 5.5 is 3,199.",
+        "Both keep the ash valley and Eckleburg, Wilson’s garage and Tom’s car-sale threat, Myrtle’s separate train car, her apartment transformation, the within-and-without passage, first-meeting story, Daisy-name dispute and assault, and the elliptical bedroom/station ending.",
+        "Both consistently identify the unnamed sister and photographer by role, avoiding the existing abridgment’s isolated Chester reference. Un-naming is allowed by the frozen cut plan.",
+        "Both introduce the photographer’s shaving lather before Nick wipes it away (Astra paragraphs 31 and 57; Sol 38 and 67). Both also retain the photographer’s request before Tom’s Gasoline Pump joke, unlike the weaker setups identified in Sonnet 5.5.",
+        "Both say the whisky is in constant demand without adding “by all present”; they omit Catherine’s abstention but do not make the false universal claim found in the Opus draft.",
+        "Both retain the Kaiser rumor and Catholic lie even though their removal was permitted. They preserve these at a substantially shorter length than either Anthropic draft.",
+        "The texture tradeoff varies: Astra retains Myrtle’s noisy, creaking pivot image (paragraph 32), while Sol keeps more of her borrowed-wedding-suit story in direct speech (paragraph 61). I do not see a decisive overall quality winner between the two on this chapter.",
+        "No major invented event, unintroduced surviving name, or broken movement identified during this source-aware review. Some smaller qualifications and comic details are condensed."
+      ]
+    },
+    "mobydick/004": {
+      "judgment": "Astra has the clearest contextual advantage: it preserves the premise of the money joke that Sol and both Anthropic drafts lose.",
+      "observations": [
+        "Astra is 1,157 words (3.6% below the 1,200 target); Sol is 1,148 (4.3% below). Existing is 1,123; Opus 5.5 is 1,607; Sonnet 5.5 is 1,310.",
+        "Both keep the Call-me-Ishmael opening, melancholy and hat-knocking comedy, water-gazers and Narcissus, reasons for sailing, universal thump, Providence playbill, freewill tension, and final snow-hill phantom.",
+        "Both keep the conditional schoolmaster setup (Astra paragraph 8; Sol 7), avoiding the weakened transition in the existing and Sonnet drafts. Opus also kept this setup at greater length.",
+        "Astra paragraph 10 retains money as the root of earthly ills and the rich man’s exclusion from heaven before the perdition punchline. Sol paragraph 9 keeps the punchline but cuts that premise, repeating a concrete compression problem in both Anthropic versions. The existing draft avoided this particular dangling joke by dropping the punchline too.",
+        "Sol paragraph 10 retains prevailing headwinds as the explanation for officers getting sailors’ second-hand air. Astra paragraph 11 preserves the resulting social analogy but drops that physical explanation. This is a smaller explanatory loss in Astra, not a claim that the resulting statement is false.",
+        "Both remove the Cato contrast after the pistol-and-ball line and the Seneca/Stoic elaboration of the schoolmaster transition. These cuts reduce the learned comic texture even while the main movements remain coherent.",
+        "The adjacent Carpet-Bag chapter continues from choosing a whaling voyage into reaching New Bedford; no contradiction between the paired GPT chapters was identified."
+      ]
+    },
+    "mobydick/005": {
+      "judgment": "Both GPT drafts retain the lodging sequence and social satire near budget; neither clearly dominates this chapter.",
+      "observations": [
+        "Astra is 764 words (4.5% below the 800 target); Sol is 757 (5.4% below). Existing is 716; Opus 5.5 is 1,058; Sonnet 5.5 is 1,061.",
+        "Both preserve Saturday arrival at New Bedford, no Nantucket packet until Monday, the Nantucket preference, limited money, rejected inns, mistaken church entrance, Peter Coffin’s ominous sign, and the final move into the Spouter.",
+        "Both keep the Euroclydon/window/body conceit, Lazarus–Dives contrast, and Dives’s ice palace and tears of orphans (paragraph 13 in both). The last satirical payoff was kept by Opus but cut by Sonnet despite its longer draft.",
+        "Sol retains the imaginary old writer’s longer direct quotation (paragraph 10) and the Moluccas comparison (paragraph 13). Astra condenses that quotation into attributed narration but retains more of Ishmael’s boisterous attraction to Nantucket (paragraph 3) and the fiery-pit question (paragraph 12).",
+        "Both keep the source’s racialized church description and archaic diction rather than replacing them with contemporary explanation. The reduced surrounding imagery makes the encounter shorter and more abrupt than the source.",
+        "No invented subsequent lodging event or conflict with the preceding Loomings draft was identified in either version. Both still require the normal production checks before any publication."
+      ]
+    }
+  },
+  "configuration_note": "Production model settings and .env were not changed. The earlier trial identified FORAGE_COHERENCE_FIX_MODEL=anthropic:opus-5-5 as an unavailable alias; the valid spelling was anthropic:claude-opus-5-5. It was not used in this drafting-only evaluation. GPT medium reasoning and disabled retries were explicit benchmark settings, not modifications to the production adapter.",
+  "recommendation": {
+    "quality_candidate": "gpt-6-astra",
+    "lower_cost_candidate": "gpt-6.1-sol",
+    "publication_status": "Not published; isolated evaluation only.",
+    "next_evaluation": "A broader full-pipeline comparison would be needed before a production model decision; no additional calls were made."
+  }
+}

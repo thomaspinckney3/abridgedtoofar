@@ -1,0 +1,244 @@
+{
+  "chapter": "education/007",
+  "summary": "The revision is a coherent, voice-aware half-length abridgment. It keeps the key verbatim lines, the Marx hindsight, the dynamo image, the Civil Law ghost, the Sumner/Apthorp attributions and the final resolution. The main damage is to the Beethoven section (the 'accidental' framing is thinned, and the Wagner coda is cut cleanly), plus some compression of qualifications and irony in the opening, the language story and the Gymnasium indictment.",
+  "verdict": "editorial_review",
+  "coverage": [
+    {
+      "axis": "causality_and_setup",
+      "status": "findings",
+      "assessment": "The Civil Law and the Common Law reasoning survive. The Gymnasium step loses the stated motive of ridding him of the university, and the Beethoven passage loses part of its setup."
+    },
+    {
+      "axis": "referents_and_scene",
+      "status": "no_material_issue",
+      "assessment": "Entrances, speakers and places stay clear. The beer-hall is established before the symphony, and Sumner and Apthorp keep their remarks."
+    },
+    {
+      "axis": "dialogue",
+      "status": "no_material_issue",
+      "assessment": "Sumner's cabman boast and Apthorp's schooling suggestion keep correct attribution. Sumner's quotation survives verbatim, as does Adams's 'loathed Beethoven' reply."
+    },
+    {
+      "axis": "qualification_and_facts",
+      "status": "findings",
+      "assessment": "Some hedged or ironic qualifiers are lost. The Gymnasium paragraph loses 'a bit of education which served him some purpose'. The German-reasoning claim and the 'German society, if it existed' qualification are also cut."
+    },
+    {
+      "axis": "viewpoint_and_revelation",
+      "status": "no_material_issue",
+      "assessment": "Marx and the fifty-years-later London remain old-narrator hindsight. The boy still does not know of Marx."
+    },
+    {
+      "axis": "voice_and_rhythm",
+      "status": "findings",
+      "assessment": "The main epigrams survive. Some semicolon piling, the 'single step to a higher life' irony and the comic bathos of the Gymnasium are thinned."
+    },
+    {
+      "axis": "interpretive_structure",
+      "status": "findings",
+      "assessment": "The accidental-education theme is partly weakened in the Beethoven passage. It also loses the point that no other sense awoke, since the Kant/Hegel and Goethe lines are cut."
+    },
+    {
+      "axis": "planned_dependencies",
+      "status": "findings",
+      "assessment": "Five of six dependencies are intact. The Beethoven 'accidental' framing is the weak one."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "should_improve",
+      "axis": "interpretive_structure",
+      "title": "Beethoven episode loses its tie to 'accidental' education",
+      "origin": "first_draft",
+      "claim": "The source frames the gain as 'accidental, unintended, unforeseen' and ends with 'no other sense awoke'. The draft keeps the opening claim in the para 16 clause but cuts the Wagner coda. The 'this could not be called education' passage is now followed by an abrupt end to the paragraph.",
+      "reader_effect": "The Rome chapter's 'passed Beethoven as a piece of accidental education' measures against a slightly thinner root. The bridge from the music-hall to 'accidental' is less direct.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 15,
+          "quote": "it was accidental, unintended, unforeseen."
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 17,
+          "quote": "Mere mechanical repetition of certain sounds had stuck to his unconscious mind."
+        }
+      ],
+      "counterevidence": "The 'accidental, unintended, unforeseen' clause is retained in para 16, and 'accidental' recurs in the sense passage. The Wagner coda was optional.",
+      "plan_relation": "Plan required explicit accidental framing; this is partly met.",
+      "minimal_repair": "Keep the sentence 'a new sense...something apart, accidental' as is, and consider restoring one clause on the Beethoven gain being 'accidental education'.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F2",
+      "priority": "should_improve",
+      "axis": "qualification_and_facts",
+      "title": "Gymnasium motive and ironic payoff trimmed",
+      "origin": "first_draft_worsened_by_revision",
+      "claim": "The revision cuts 'At least it ridded him of the university and the Civil Law', which explained why Apthorp's idea suited him. It also cuts the 'bit of education which served him some purpose in life' clause, which gave the later indictment its irony.",
+      "reader_effect": "His desperate frame of mind is now unexplained. The school's shock to him loses its deflating setup.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 10,
+          "quote": "At least it ridded him of the university and the Civil Law"
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 11,
+          "quote": "The idea suited Adams's desperate frame of mind."
+        }
+      ],
+      "counterevidence": "The sentence 'as though he had not always avoided high schools' keeps the comic reluctance.",
+      "plan_relation": "optional tradeoff",
+      "minimal_repair": "Restore 'At least it ridded him of the university and the Civil Law.'",
+      "confidence": "medium"
+    },
+    {
+      "id": "F3",
+      "priority": "tradeoff",
+      "axis": "voice_and_rhythm",
+      "title": "Opening's ironic parental portrait and tourist-student comedy compressed",
+      "origin": "first_draft",
+      "claim": "The critic's reply about Europe's help, 'timid parents', and 'Whether the boy deserved such indulgence' are cut. The opening becomes drier. The gale and tourist-mathematics lines keep their wit, but the 'ultimate wisdom' epigram is lost.",
+      "reader_effect": "The self-deprecating tone is slightly flatter. The 'tourist mathematics' joke ends without its capping line.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 2,
+          "quote": "How many would turn out to be wrong whether any could turn out right, was ultimate wisdom."
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 2,
+          "quote": "became the pons asinorum of tourist mathematics."
+        }
+      ],
+      "counterevidence": "The plan only required the premise 'many impressions, little education', which is kept.",
+      "plan_relation": "optional tradeoff",
+      "minimal_repair": "None required; optionally restore the 'ultimate wisdom' sentence.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F4",
+      "priority": "tradeoff",
+      "axis": "interpretive_structure",
+      "title": "State-education indictment loses reasoning charge",
+      "origin": "first_draft",
+      "claim": "The sentence 'The German government did not encourage reasoning.' was cut in the revision. The draft para 14 now ends on 'Least of all was any use made of reason.', and the dynamo paragraph follows.",
+      "reader_effect": "The dynamo generalization has slightly less political point. The dynamo line itself is intact.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 13,
+          "quote": "The German government did not encourage reasoning."
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 14,
+          "quote": "Least of all was any use made of reason."
+        }
+      ],
+      "counterevidence": "The dynamo image is kept verbatim and still says 'State purposes'.",
+      "plan_relation": "optional tradeoff",
+      "minimal_repair": "Optionally restore the short sentence.",
+      "confidence": "low"
+    }
+  ],
+  "dependencies": [
+    {
+      "index": 0,
+      "status": "intact",
+      "assessment": "The Marx hindsight remains as narrator hindsight, and the boy has 'no idea'.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 4,
+          "quote": "he had no idea that Karl Marx was standing there waiting for him"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "status": "intact",
+      "assessment": "The dynamo line is verbatim, without explanation of its later use.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 15,
+          "quote": "All State education is a sort of dynamo machine for polarizing the popular mind"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "status": "intact",
+      "assessment": "The ghost-in-closet image is kept. The partner chapter 025 has no published draft here, so the echo is unverifiable.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 16,
+          "quote": "the ghost of the Civil Law shut up in the darkest of closets, never to gibber again"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "status": "intact",
+      "assessment": "The 'accidental' framing is present in the local text. The 'Haus-frauen' line is kept, and the 'accidental' clause in para 16 survives. Rome's 'passed Beethoven' remote line is intact.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 17,
+          "quote": "surrounded by the commonest of German Haus-frauen, a new sense burst out like a flower in his life"
+        },
+        {
+          "document": "education/008/production",
+          "paragraph": 8,
+          "quote": "passed Beethoven as a piece of accidental education"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "status": "intact",
+      "assessment": "The 'worshipper' wording is kept and matches Boston's 'The boy worshipped him'. The Sumner rupture is not foreshadowed.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 10,
+          "quote": "he was pleased to find a young worshipper in the remote Prussian wilderness"
+        },
+        {
+          "document": "education/004/production",
+          "paragraph": 12,
+          "quote": "The boy worshipped him"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "status": "intact",
+      "assessment": "The final resolution against Berlin is firm, and the later Berlin memories in 029 pay it off.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 18,
+          "quote": "it should not be again in Berlin."
+        },
+        {
+          "document": "education/029/production",
+          "paragraph": 9,
+          "quote": "forty years of varied emotions had not deadened his memories of that city"
+        }
+      ]
+    }
+  ],
+  "strengths": [
+    "The Marx hindsight and the London fifty-years-later passage remain marked as old-narrator knowledge.",
+    "Sumner's cabman boast and Apthorp's schooling suggestion stay correctly attributed, with the quotation intact.",
+    "The Civil Law reasoning (it needs prior Common Law) is complete and keeps the thirteenth-century lecture-system joke.",
+    "The final tramp-to-resolution sequence keeps its rhythm and its epigrammatic close."
+  ]
+}

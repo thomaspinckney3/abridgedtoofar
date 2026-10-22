@@ -1,0 +1,251 @@
+{
+  "verdict": "The pilot meets its length and protected-passage requirements while largely retaining Opus’s source-based style. It supports the bounded-plan revision approach, with one minor continuity loose end and identifiable interpretive losses from optional cuts.",
+  "method": "Full source-aware close reading by the coding assistant, unblinded and not an independent evaluation; mechanical word, anchor, provider-completion, wording-reuse and immutable-input checks. The assistant also authored the preservation plan, informed by the earlier samples. No model judge or further generation call.",
+  "findings": [
+    "Length fell from 3,187 to 2,376 words: 811 words removed net, a 25.45% reduction. The new result is 76 words above the 2,300 target (+3.30%), within the specified ±5% range and 384 words below the 2,760 ceiling. It retains 55.53% of source length, compared with 74.48% before.",
+    "All nine protected passages survive after whitespace and straight/curly quote normalization. The provider completed normally (end_turn), with the full bedroom/portfolio/station ending. The model did not declare infeasibility.",
+    "The dominant operation remains deletion and splicing. Source five-gram reuse falls only from 93.33% to 90.95%; excluding sequences found in the protected passages, it falls from 92.17% to 88.70%. The latter figure is 41.91% for Astra and 51.11% for Sol in the earlier first drafts. These measure wording reuse, not the percentage of style retained.",
+    "Unprotected prose still carries Fitzgerald’s characteristic diction and syntax: Wilson’s 'damp gleam of hope', Myrtle’s 'continually smouldering' vitality, the full threat over the car, the oversized Versailles furniture, and the long sentence of bloody aftermath survive. Myrtle’s shopping remains performed in direct speech, whereas both GPT drafts summarize it.",
+    "The plan also produces a factual correction: Catherine is again excluded from 'all present' drinking whisky. The lather setup and later wipe both remain. Catherine and the McKees are identified, and the Gasoline Pump exchange is removed together with its setup.",
+    "The observed overrun was not unavoidable for this chapter. With explicit permission to cut bounded optional material, the same model reaches the target range while retaining much of its earlier verbal texture. This supports a prompt/prioritization explanation; it does not isolate which prompt change caused the improvement."
+  ],
+  "caveats": [
+    "This is one chapter, one sample, and a revision of an existing draft. The plan was manually specified by the assistant and informed by earlier results. It tests the combined workflow, not autonomous planning, a pure prompt ablation, or a fair equal-prompt model ranking. The revision remains 190–203 words longer than the GPT drafts.",
+    "A minor continuity loose end remains: Myrtle gathers her dog 'and her other purchases' after the earlier shopping details have been removed. The source supports those purchases, but the revised chapter no longer establishes them. This should be resolved before adopting the text.",
+    "Optional cuts have real interpretive costs. The Catholic lie and Nick’s rebuttal disappear, as does Myrtle’s 'lower orders' performance. The elevator-lever interruption is removed; the protected bedroom/station ending survives, but a potentially suggestive comic beat before it is lost. Both GPT drafts retain these units while compressing more of the surrounding prose.",
+    "The taxi and dog bridges are more compressed than the surrounding prose. The dog purchase is still intelligible through 'Here’s your money'; the shift into party/marriage talk is quicker. The long eyes paragraph and almost all the shopping speech remain, so the suggested scene allocations were not hard per-scene limits.",
+    "The model’s cut notes mix changes from the existing draft with omissions already made before this trial (for example the elevator McKees announcement, Europe/Monte Carlo conversation and 'crazy about him' exchange). The current pipeline parser also keeps only the first eight list entries, reducing 19 raw change notes to eight. The report preserves all raw notes and supplies an independently checked before/after cut list.",
+    "The prose has not been hand-corrected after generation. The small loose end is retained in the artifact so the experimental result remains inspectable. No production prompt or published chapter was changed."
+  ],
+  "actual_revision_changes": [
+    {
+      "unit": "Opening and garage",
+      "change": "Removed grey-car operations, river/drawbridge sentence, public-affair gossip, Nick’s curious-but-unwilling qualification, supercilious-assumption sentence, compact-Main-Street clause, Ford wreck and Myrtle’s age/build; preserved eyes, forced exit, car threat, vitality and ash contrast."
+    },
+    {
+      "unit": "Travel and dog",
+      "change": "Removed Italian child/torpedoes and dress/newsstand/drugstore/four-cab details; shortened dog bargaining and removed the explicit ten-dollar price. The narrator’s Airedale qualification, Tom’s sex assertion and payment remain."
+    },
+    {
+      "unit": "Apartment and arrivals",
+      "change": "Removed room inventory, hen/mother photograph and its attribution to McKee, magazines/book, dog biscuits, telephone/cigarette/disappearance detour and Catherine’s bracelets. Kept Versailles furniture, drunken framing, first-name introduction, named arrivals and lather."
+    },
+    {
+      "unit": "Party conversation",
+      "change": "Restored Mrs. McKee’s dress compliment as direct speech; removed ice/lower-orders/kitchen episode, Gatsby fear lines, photographer work request/Gasoline Pump joke, Catholic lie/Nick rebuttal and eleven-years/first-sweetie line. Restored Nick’s Wilson question and the source’s description of Myrtle’s obscene answer."
+    },
+    {
+      "unit": "Whisky and shopping",
+      "change": "Restored Catherine’s non-drinking exception. Removed spring ashtray list item and restored the list-making closing sentence; kept the speech as direct dialogue rather than summary."
+    },
+    {
+      "unit": "Late party and ending",
+      "change": "Removed repeated crowd movements and the elevator-lever exchange. Retained lather callback, Daisy dispute, blow, full bloody aftermath, lunch invitation and protected ending."
+    }
+  ],
+  "acceptance": {
+    "target_range": "pass",
+    "ceiling": "pass",
+    "nine_protected_spans": "pass",
+    "complete_response_and_ending": "pass",
+    "critical_causal_chain": "pass",
+    "manual_editorial_review": "minor continuity finding and documented interpretive losses; not an unconditional editorial sign-off",
+    "model_cut_notes": "available but require verification; raw notes preserved separately from normalized sidecar",
+    "overall": "promising pilot, suitable for a broader controlled trial; not evidence for unattended production adoption"
+  },
+  "recommendation": "Retain the bounded three-tier plan, visible target/ceiling, mechanical counting and source-aware continuity check as the candidate workflow. Before changing production, test matched first drafts on additional chapters using frozen plans, and audit losses as well as words. Explicitly preserve any elevator/sexual-ambiguity setup judged essential, and do not treat the model’s cut ledger as authoritative.",
+  "examples": [
+    {
+      "title": "Unprotected diction survives the compression",
+      "observation": "The revision removes the wrecked Ford but keeps Wilson’s full description and the 'damp gleam of hope' sentence. Astra and Sol compress and partly recast these sentences. This is evidence of retained texture outside the protected passages, with a genuine loss of the Ford image in the revision.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 8,
+          "path": "inputs/source.md",
+          "text": "The interior was unprosperous and bare; the only car visible was the dust-covered wreck of a Ford which crouched in a dim corner. It had occurred to me that this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead, when the proprietor himself appeared in the door of an office, wiping his hands on a piece of waste. He was a blond, spiritless man, anaemic, and faintly handsome. When he saw us a damp gleam of hope sprang into his light blue eyes."
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 8,
+          "path": "inputs/opus_before.md",
+          "text": "The interior was unprosperous and bare; the only car visible was the dust-covered wreck of a Ford which crouched in a dim corner. The proprietor himself appeared in the door of an office, wiping his hands on a piece of waste. He was a blond, spiritless man, anaemic, and faintly handsome. When he saw us a damp gleam of hope sprang into his light blue eyes."
+        },
+        {
+          "variant": "revision",
+          "paragraph": 7,
+          "path": "revision.md",
+          "text": "The interior was unprosperous and bare. The proprietor himself appeared in the door of an office, wiping his hands on a piece of waste. He was a blond, spiritless man, anaemic, and faintly handsome. When he saw us a damp gleam of hope sprang into his light blue eyes."
+        },
+        {
+          "variant": "astra",
+          "paragraph": 8,
+          "path": "inputs/astra.md",
+          "text": "The interior was unprosperous and bare, with a dust-covered wreck of a Ford crouching in a corner. The proprietor appeared, wiping his hands on waste—a blond, spiritless man, anaemic, and faintly handsome. At sight of Tom a damp gleam of hope sprang into his light blue eyes. He asked when Tom would sell him his car."
+        },
+        {
+          "variant": "sol",
+          "paragraph": 8,
+          "path": "inputs/sol.md",
+          "text": "The interior was unprosperous and bare, with a dust-covered wreck of a Ford crouching in a corner. The proprietor appeared, wiping his hands on waste: a blond, spiritless man, anaemic, and faintly handsome. A damp gleam of hope sprang into his eyes."
+        }
+      ]
+    },
+    {
+      "title": "Myrtle still performs her importance in speech",
+      "observation": "The revision retains the address, repeated 'I’m going to'/'I’ve got to', and list-making close. It removes one shopping item but does not turn the speech into a report. Both earlier GPT drafts convey the purchases in narrated summary. This speech was essential in function, not one of the nine verbatim spans.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 123,
+          "path": "inputs/source.md",
+          "text": "“My dear,” she cried, “I’m going to give you this dress as soon as I’m through with it. I’ve got to get another one tomorrow. I’m going to make a list of all the things I’ve got to get. A massage and a wave, and a collar for the dog, and one of those cute little ashtrays where you touch a spring, and a wreath with a black silk bow for mother’s grave that’ll last all summer. I got to write down a list so I won’t forget all the things I got to do.”"
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 70,
+          "path": "inputs/opus_before.md",
+          "text": "\"My dear,\" she cried, \"I'm going to give you this dress as soon as I'm through with it. I've got to get another one tomorrow. I'm going to make a list of all the things I've got to get. A massage and a wave, and a collar for the dog, and one of those cute little ashtrays where you touch a spring, and a wreath with a black silk bow for mother's grave that'll last all summer.\""
+        },
+        {
+          "variant": "revision",
+          "paragraph": 64,
+          "path": "revision.md",
+          "text": "\"My dear,\" she cried, \"I'm going to give you this dress as soon as I'm through with it. I've got to get another one tomorrow. I'm going to make a list of all the things I've got to get. A massage and a wave, and a collar for the dog, and a wreath with a black silk bow for mother's grave that'll last all summer. I got to write down a list so I won't forget all the things I got to do.\""
+        },
+        {
+          "variant": "astra",
+          "paragraph": 56,
+          "path": "inputs/astra.md",
+          "text": "Turning to the photographer’s wife, she promised her the dress. Tomorrow she must buy another, and have a massage and a wave, and get a dog collar, a spring ashtray, and a wreath with a black silk bow for her mother’s grave."
+        },
+        {
+          "variant": "sol",
+          "paragraph": 66,
+          "path": "inputs/sol.md",
+          "text": "She turned to the photographer’s wife, promising her the dress when she was through with it. She must make a list: a massage, a wave, a collar for the dog, a little spring ashtray, a wreath with a black silk bow for mother’s grave."
+        }
+      ]
+    },
+    {
+      "title": "A factual repair accompanies the cuts",
+      "observation": "The original Opus draft incorrectly extends drinking to everyone present. The revised chapter restores the source’s Catherine exception. Both GPT drafts avoid the false universal by simply saying that the second bottle was in constant demand.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 119,
+          "path": "inputs/source.md",
+          "text": "The bottle of whisky—a second one—was now in constant demand by all present, excepting Catherine, who “felt just as good on nothing at all.” Tom rang for the janitor and sent him for some celebrated sandwiches, which were a complete supper in themselves. I wanted to get out and walk eastward toward the park through the soft twilight, but each time I tried to go I became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life."
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 66,
+          "path": "inputs/opus_before.md",
+          "text": "The bottle of whisky—a second one—was now in constant demand by all present. I wanted to get out and walk eastward toward the park through the soft twilight, but each time I tried to go I became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life."
+        },
+        {
+          "variant": "revision",
+          "paragraph": 60,
+          "path": "revision.md",
+          "text": "The bottle of whisky—a second one—was now in constant demand by all present, excepting Catherine, who \"felt just as good on nothing at all.\" I wanted to get out and walk eastward toward the park through the soft twilight, but each time I tried to go I became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life."
+        },
+        {
+          "variant": "astra",
+          "paragraph": 53,
+          "path": "inputs/astra.md",
+          "text": "The second bottle of whisky was in constant demand. Tom sent for sandwiches. I wanted to walk eastward toward the park through the soft twilight, but each attempt to leave became entangled in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life."
+        },
+        {
+          "variant": "sol",
+          "paragraph": 63,
+          "path": "inputs/sol.md",
+          "text": "The second bottle of whisky was in constant demand. Tom sent for sandwiches. I wanted to walk eastward toward the park through the soft twilight, but each attempt to go entangled me in some wild, strident argument which pulled me back, as if with ropes, into my chair. Yet high over the city our line of yellow windows must have contributed their share of human secrecy to the casual watcher in the darkening streets, and I saw him too, looking up and wondering. I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life."
+        }
+      ]
+    },
+    {
+      "title": "A small reference is left behind",
+      "observation": "The arrival sentence keeps 'her other purchases', although the revision has cut the earlier buying of magazines, cold cream and perfume. This is source-backed but less coherent as a self-contained abridgment. The earlier Opus draft supplies the missing shopping context; this trial intentionally leaves the generated text intact.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 49,
+          "path": "inputs/source.md",
+          "text": "We went on, cutting back again over the Park toward the West Hundreds. At 158th Street the cab stopped at one slice in a long white cake of apartment-houses. Throwing a regal homecoming glance around the neighbourhood, Mrs. Wilson gathered up her dog and her other purchases, and went haughtily in."
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 42,
+          "path": "inputs/opus_before.md",
+          "text": "At 158th Street the cab stopped at one slice in a long white cake of apartment-houses. Throwing a regal homecoming glance around the neighbourhood, Mrs. Wilson gathered up her dog and her other purchases, and went haughtily in."
+        },
+        {
+          "variant": "revision",
+          "paragraph": 38,
+          "path": "revision.md",
+          "text": "At 158th Street the cab stopped at one slice in a long white cake of apartment-houses. Throwing a regal homecoming glance around the neighbourhood, Mrs. Wilson gathered up her dog and her other purchases, and went haughtily in."
+        }
+      ]
+    },
+    {
+      "title": "The elliptical ending is intact, but its lead-in loses a beat",
+      "observation": "The revision retains the lunch invitation and all of the protected bedroom/portfolio/station text. It cuts the elevator boy’s lever warning and McKee’s apology, a comic interruption that can carry suggestive force. This is an interpretive cost that an exact ending check cannot detect.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 132,
+          "path": "inputs/source.md",
+          "text": "“Keep your hands off the lever,” snapped the elevator boy."
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 79,
+          "path": "inputs/opus_before.md",
+          "text": "\"Keep your hands off the lever,\" snapped the elevator boy."
+        },
+        {
+          "variant": "astra",
+          "paragraph": 65,
+          "path": "inputs/astra.md",
+          "text": "“Keep your hands off the lever,” snapped the elevator boy."
+        },
+        {
+          "variant": "sol",
+          "paragraph": 75,
+          "path": "inputs/sol.md",
+          "text": "“Keep your hands off the lever,” snapped the elevator boy."
+        }
+      ]
+    },
+    {
+      "title": "Cutting a whole exchange still loses Nick’s judgment",
+      "observation": "The prior Opus and both GPT drafts keep the explicit correction of the Catholic claim. The new revision removes the claim and rebuttal together, so no dangling rebuttal remains, but this instance of Nick recognizing a lie is lost. The plan deliberately classified the entire unit as optional.",
+      "passages": [
+        {
+          "variant": "source",
+          "paragraph": 98,
+          "path": "inputs/source.md",
+          "text": "Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie."
+        },
+        {
+          "variant": "opus_before",
+          "paragraph": 59,
+          "path": "inputs/opus_before.md",
+          "text": "Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie."
+        },
+        {
+          "variant": "astra",
+          "paragraph": 45,
+          "path": "inputs/astra.md",
+          "text": "Tom’s wife Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie."
+        },
+        {
+          "variant": "sol",
+          "paragraph": 55,
+          "path": "inputs/sol.md",
+          "text": "Myrtle overheard. Her answer was violent and obscene. Her sister confided that Tom’s wife was a Catholic and would not divorce him. Daisy was not a Catholic, and I was a little shocked at the elaborateness of the lie."
+        }
+      ]
+    }
+  ]
+}

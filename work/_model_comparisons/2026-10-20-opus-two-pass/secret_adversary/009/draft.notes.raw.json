@@ -1,0 +1,192 @@
+{
+  "summary": "Second-pass abridgment that removes roughly 460 words, mostly through compressing narrative description, Tommy's deliberation, the door-handle suspense and the bedroom passage, plus small trims to the council dialogue. All eight protected excerpts, every arrival, the recess, the password, the 29th, Clymes/Fourteen, the honest-men lines and the cliffhanger are retained.",
+  "cut_evaluation": [
+    {
+      "paragraph_ids": [
+        1
+      ],
+      "action": "compress",
+      "reason": "Folded 'filthy beyond words' into one adjective and dropped the audacity sentence.",
+      "dependency_check": "The undisturbed ascent and the doorkeeper vanishing into the back room remain."
+    },
+    {
+      "paragraph_ids": [
+        2,
+        3
+      ],
+      "action": "compress",
+      "reason": "Trimmed the passage description and reduced Tommy's risk-weighing to its core points.",
+      "dependency_check": "V1 is intact. The recess stays opposite the meeting door with its view of the stairs. The doorkeeper is still unnamed, and the foolhardiness conclusion is kept."
+    },
+    {
+      "paragraph_ids": [
+        4,
+        5
+      ],
+      "action": "compress",
+      "reason": "Merged the glimpse of the room into the first arrival's entry and removed repeated description.",
+      "dependency_check": "The signal knock, Fourteen's brutish look, the bearded man and his precise enunciation all remain to set up 'Your number, comrade?'"
+    },
+    {
+      "paragraph_ids": [
+        10
+      ],
+      "action": "compress",
+      "reason": "Cut 'running the show darned systematically' and 'deuce to pay'.",
+      "dependency_check": "V2 and the wrong-number point required by the plan remain."
+    },
+    {
+      "paragraph_ids": [
+        11
+      ],
+      "action": "keep",
+      "reason": "The 'far-reaching concern' sentence is rejected as a cut because without it 'this man' in V3 could be misread as the Sinn Feiner.",
+      "dependency_check": "V3 stays clearly about Mr. Brown."
+    },
+    {
+      "paragraph_ids": [
+        12
+      ],
+      "action": "cut",
+      "reason": "The repeated procedure is already established by the first arrival.",
+      "dependency_check": "The knocks are still mentioned for each arrival."
+    },
+    {
+      "paragraph_ids": [
+        13,
+        14,
+        15
+      ],
+      "action": "compress",
+      "reason": "Arrival descriptions are tightened, but no arrival is dropped.",
+      "dependency_check": "The clerk is kept for later dependencies. Both half-familiar faces are preserved and unnamed."
+    },
+    {
+      "paragraph_ids": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "action": "compress",
+      "reason": "Trimmed the arrival sentence, the reception and the speech tag ('kind of hiss' becomes 'hissing').",
+      "dependency_check": "Number One's pallor, Slavonic cheekbones, light eyes through the curtain and V4 remain for the later portrait. The heel-click tic and the honoured greeting are kept."
+    },
+    {
+      "paragraph_ids": [
+        21,
+        22,
+        23,
+        25,
+        26
+      ],
+      "action": "compress",
+      "reason": "Merged the hesitation tag into the speech and the smile into the look round. The Russian's demurral is reduced to the German's insistence.",
+      "dependency_check": "The 'message' and unfinished sentence stay. V5 and the mutual suspicion are intact. 'Number One' seating is unchanged."
+    },
+    {
+      "paragraph_ids": [
+        28,
+        30
+      ],
+      "action": "compress",
+      "reason": "Condensed the handle suspense as the plan permits.",
+      "dependency_check": "Shoes left behind the curtain, the locked door, 'dirty trick', the careful restoration of the handle and the bulldog tenacity are all kept."
+    },
+    {
+      "paragraph_ids": [
+        31
+      ],
+      "action": "compress",
+      "reason": "Removed extra dirt description and procedural detail.",
+      "dependency_check": "The communicating door, rusty bolt, 'manœuvres' callback and portière remain. Hearing without seeing is kept, which supports the tentative attribution that follows."
+    },
+    {
+      "paragraph_ids": [
+        39,
+        40,
+        41
+      ],
+      "action": "keep",
+      "reason": "The Irish-American unit was already cut. The 'colleague' line stays paired with the Belfast quip.",
+      "dependency_check": "The commanding man is still identified only by Tommy's fancy."
+    },
+    {
+      "paragraph_ids": [
+        42,
+        43,
+        45,
+        46,
+        47
+      ],
+      "action": "compress",
+      "reason": "Shortened the newspaper exchange and reduced the union report to one sentence.",
+      "dependency_check": "The Moscow denial and the 'directed by--Mr. Brown' phrasing remain."
+    },
+    {
+      "paragraph_ids": [
+        51,
+        53
+      ],
+      "action": "compress",
+      "reason": "Dropped 'cannot seem to interfere' and two connective phrases.",
+      "dependency_check": "The 29th is spoken explicitly. 'Their own show', the honest-men line and V6 ('repeated' still has its antecedent) are kept."
+    },
+    {
+      "paragraph_ids": [
+        59,
+        60
+      ],
+      "action": "compress",
+      "reason": "Minor trims ('But', 'All for the good of the cause', 'so they say').",
+      "dependency_check": "Legal defence, housebreaker gloves, 'little to fear', and the relish for blood and jewels in the gutter are kept."
+    },
+    {
+      "paragraph_ids": [
+        67,
+        70
+      ],
+      "action": "compress",
+      "reason": "Trimmed the Labour-leaders explanation and the document's effect.",
+      "dependency_check": "The leaders' honesty, their faith in the Government and the document's decisive power remain."
+    },
+    {
+      "paragraph_ids": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ],
+      "action": "keep",
+      "reason": "This is the climactic rapid exchange, and its timing depends on the short lines.",
+      "dependency_check": "V7, 'This case is different', the broken-off question and V8 are intact. The girl and the attacker are unnamed."
+    }
+  ],
+  "acceptable_changes": [
+    "'Filthy' is moved into the description of the house as the plan's one-phrase reduction of the dirt.",
+    "The German's hesitation is moved into the narration that introduces his speech, in the same paragraph as the speaker.",
+    "The Russian's demurral over the head of the table is folded into the German's insistence."
+  ],
+  "risks": [
+    "The handle suspense is now brief, which loses some of the comic slow build.",
+    "The union details (miners, railways) are removed. Only the 'directed by--Mr. Brown' report remains."
+  ],
+  "review_focus": [
+    "Transition from 'Number Fourteen will shut the door?' to 'Once more Tommy confronted bare wooden panels'.",
+    "Check that V3 still clearly refers to Mr. Brown after the Sinn Feiner sentence.",
+    "Whether the final measured count lands near 1600."
+  ],
+  "infeasible": false
+}

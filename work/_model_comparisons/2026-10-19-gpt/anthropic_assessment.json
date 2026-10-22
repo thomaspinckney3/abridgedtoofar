@@ -1,0 +1,54 @@
+{
+  "reviewer": "Coding assistant; source-aware editorial review, not an independent or blinded judging panel",
+  "verdict": "No demonstrated drop-in improvement for abridgment with the current prompts. Keep the existing published versions pending a budget-controlled follow-up.",
+  "findings": [
+    "The newer models retain more original wording, but every completed new chapter is longer than the existing abridgment. Six of seven completed chapter drafts exceed target by more than 20%. Sonnet's Gatsby I is 5,616 words versus 5,891 in the source: only a 4.7% reduction. This is not yet a useful replacement for the existing abridgments.",
+    "There are real preservation gains and real regressions. Sonnet restores Daisy's missing exit in Gatsby I; Opus restores the conditional schoolmaster setup in Loomings. But Opus removes the Catherine exception from 'all present' drinking in Gatsby II, Sonnet drops the shaving-lather setup while retaining its callback, and both new Loomings drafts keep the perdition punchline after cutting its religious premise.",
+    "Opus at medium effort completed its two remaining requests in 55.72 and 61.83 seconds. On the three chapters completed by both models, recorded usage cost was $0.4763 for Opus versus $0.2106 for Sonnet, with total call times of 117.55 versus 90.09 seconds. Sonnet was cheaper on this sample; the quality tradeoffs do not establish an overall winner.",
+    "The original maximum-effort Opus call returned no prose within Forage's 420-second timeout. It was not retried. The remaining Opus calls used medium effort, so this is an adaptive pilot. The timeout could reflect long reasoning or provider/transport latency; it does not establish poor literary quality. Five successful calls cost $0.8695 in recorded usage; failed-call billing is unknown, with a conservative total bound of $3.57.",
+    "The likely next improvement is in the pipeline's compression control: the prompt says to hit target, while the specification gives preservation priority over word count. The new models' own notes invoke signature preservation to justify excess length. That is evidence of a prompt-policy tension, not proof of its causal effect. Use deterministic counts, explicit preservation priorities, and source-aware continuity checks before considering a full-book regeneration. No prompt changes or additional paid trials were performed here."
+  ],
+  "chapters": {
+    "gatsby/001": {
+      "judgment": "Sonnet improves a specific continuity gap but barely abridges the chapter. Opus has no completed sample.",
+      "observations": [
+        "Existing: 4,761 words, 48.8% above the 3,200-word target. Paragraph 78 has Tom leave after the phone rings; paragraph 88 brings Tom and Daisy back, without a surviving Daisy departure.",
+        "Sonnet: 5,616 words, 75.5% above target. Paragraph 91 explicitly has Daisy throw her napkin down, excuse herself and enter the house, repairing that gap. It keeps Nick's self-qualifying opening, the dinner's racist conversation, Daisy's beautiful-little-fool speech, Nick's skepticism and the green-light ending.",
+        "Most of Sonnet's draft is unchanged source text. A normalized token alignment found mainly small deletions plus the shortened family/house setup and an attribution tag. This strongly preserves Fitzgerald's wording, but reduces the source by only 275 words.",
+        "Sonnet's reviewer note says word count may be 'slightly under or over' target, despite being 2,416 words over. Generated reviewer notes cannot substitute for measurement.",
+        "Opus maximum effort: no completed text after the local no-prose timeout. No literary assessment is possible for that request."
+      ]
+    },
+    "gatsby/002": {
+      "judgment": "Both new drafts restore source detail at greater length, and both introduce or retain a local editing problem. No clear replacement winner.",
+      "observations": [
+        "Existing: 2,816 words. Opus: 3,187 (+38.6% over target); Sonnet: 3,199 (+39.1%). The new drafts are about 13% longer than the existing one.",
+        "Both new drafts retain the valley of ashes and Eckleburg, Myrtle's change of manner, the within-and-without passage, her first meeting with Tom, the Daisy-name dispute and violence, and the ambiguous drunken ending. They replace some of the old draft's broad summary with source dialogue, including the Catholic lie and Gatsby rumor.",
+        "Opus paragraph 66 says the whisky was in constant demand 'by all present'. The source explicitly exempts Catherine, and Sonnet paragraph 70 retains that exception. This is a small factual regression caused by cutting a qualifier.",
+        "Sonnet paragraph 75 retains the lather that had worried Nick 'all the afternoon', but cuts the earlier white-spot-of-lather introduction. The existing draft and Opus both preserve that setup. Sonnet also retains Tom's Gasoline Pump joke after removing most of the photographer's request that motivates it; this is a weaker transition, not an invented event.",
+        "Opus keeps Tom's threat to sell the car elsewhere after Wilson complains, preserving more of Tom's dominance in the garage. Sonnet cuts that exchange. Conversely, Sonnet preserves Catherine's abstention and Myrtle's obscene response, which Opus trims.",
+        "The cut plan permits un-naming Catherine and the McKees and removing the Catholic lie, so their absence alone is not a baseline failure. The old draft does retain an isolated 'Chester' after removing the McKee names; the new versions avoid that particular loose reference."
+      ]
+    },
+    "mobydick/004": {
+      "judgment": "Sonnet is closer to the word budget; Opus better preserves the schoolmaster setup. Both leave an unsupported punchline.",
+      "observations": [
+        "Existing: 1,123 words. Opus: 1,607 (+33.9% over the 1,200 target). Sonnet: 1,310 (+9.2%). Both preserve the opening, Narcissus, universal thump, the theatrical bill and the final whale-phantom image.",
+        "Opus paragraph 9 preserves the conditional premise about having been a schoolmaster before becoming a sailor. Sonnet paragraph 8 repeats the old draft's shortened transition without that setup. The latter remains interpretable but weakens the source's conditional logic.",
+        "Both new drafts retain 'Ah! how cheerfully we consign ourselves to perdition!' but remove the preceding belief that money is evil and a rich man cannot enter heaven. The old draft cuts the punchline too. This is a clear example of preserving a striking sentence while severing its rhetorical setup.",
+        "Opus restores more of the landscape/water meditation and the Fates/freewill discussion, giving a fuller sense of Ishmael's digressive reasoning. The extra material comes with 484 more words than the existing abridgment. Sonnet keeps the metaphysical-professor joke and is substantially shorter than Opus."
+      ]
+    },
+    "mobydick/005": {
+      "judgment": "Opus has the stronger satirical ending among the two similarly sized new drafts, but both exceed the target by about a third.",
+      "observations": [
+        "Existing: 716 words. Opus: 1,058 (+32.2% over the 800 target). Sonnet: 1,061 (+32.6%). Both are almost 48% longer than the existing abridgment.",
+        "All versions retain Saturday arrival, the Monday boat constraint, the search for affordable lodgings, the mistaken church entrance, the Spouter Inn/Peter Coffin joke, and movement toward the inn. The two new drafts also fit the preceding whaling decision without an obvious cross-chapter contradiction.",
+        "Both new versions retain more of Ishmael's self-address, the church episode and the Euroclydon meditation in Melville's own wording. Original five-word phrase retention rises from 70.6% in the existing draft to 93.3% in Opus and 95.4% in Sonnet; this measures wording overlap, not factual quality.",
+        "Opus paragraph 11 retains Dives's ice palace and the tepid tears of orphans, including the temperance-society satire. Sonnet cuts that final conceit while keeping more of the preceding Lazarus imagery. At almost identical lengths, I prefer Opus's preservation of the satirical payoff; this is an editorial preference, not a benchmark score."
+      ]
+    }
+  },
+  "configuration_note": "FORAGE_COHERENCE_FIX_MODEL in .env is anthropic:opus-5-5, which returned 404 in the free Models API preflight. The valid ID is anthropic:claude-opus-5-5. This stage was not invoked, and .env was left unchanged.",
+  "next_experiment_not_run": "Keep the published outputs; resolve the preservation-versus-length policy, use a planned word-budget check before repair/publication, then compare budget-matched drafts with the same repair allowance. Prefer a medium-effort Opus trial over assuming maximum effort is necessary."
+}

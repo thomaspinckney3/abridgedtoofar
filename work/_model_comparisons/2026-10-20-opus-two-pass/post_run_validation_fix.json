@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "path": "forage/target_revision.py",
+      "executed_sha256": "8153182dc2cf29c9cae7553e35d3b71896496a234dbcfbabba727850b07f51ca",
+      "current_sha256": "24aca27119f081f4e8125e6feb303911ec67ec38e63e0a69e9db414dc4040f18",
+      "reason": "After the live run, scope plan auditing to alternate length fields so literal source quotations containing words such as overrun remain valid. Prompt templates and model-facing requests are unchanged."
+    }
+  ]
+}

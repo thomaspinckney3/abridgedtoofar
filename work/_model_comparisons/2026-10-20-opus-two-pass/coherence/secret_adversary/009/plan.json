@@ -1,0 +1,102 @@
+{
+  "book_id": "secret_adversary",
+  "title": "The Secret Adversary",
+  "author": "Agatha Christie",
+  "structural_classification": "lean",
+  "modernization_level": "L1",
+  "cultural_depth": "unknown",
+  "voice_driven_narrator": null,
+  "indirection_budget_applies": null,
+  "overall_compression_ratio": 2.0,
+  "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
+  "motifs": [],
+  "segments": [
+    {
+      "id": "008",
+      "kind": "chapter",
+      "number": "VII",
+      "title": "THE HOUSE IN SOHO",
+      "raw_heading": "CHAPTER VII. THE HOUSE IN SOHO",
+      "source_word_count": 1929,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1100,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter VII narrative prose"
+    },
+    {
+      "id": "009",
+      "kind": "chapter",
+      "number": "VIII",
+      "title": "THE ADVENTURES OF TOMMY",
+      "raw_heading": "CHAPTER VIII. THE ADVENTURES OF TOMMY",
+      "source_word_count": 3012,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1600,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter VIII narrative prose"
+    },
+    {
+      "id": "010",
+      "kind": "chapter",
+      "number": "IX",
+      "title": "TUPPENCE ENTERS DOMESTIC SERVICE",
+      "raw_heading": "CHAPTER IX. TUPPENCE ENTERS DOMESTIC SERVICE",
+      "source_word_count": 2864,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 1500,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter IX narrative prose"
+    }
+  ],
+  "merged_groups": {
+    "g001": {
+      "member_ids": [
+        "001",
+        "002"
+      ],
+      "combined_target_word_count": 1700,
+      "combined_source_word_count": 3092
+    },
+    "g002": {
+      "member_ids": [
+        "021",
+        "022"
+      ],
+      "combined_target_word_count": 1900,
+      "combined_source_word_count": 3516
+    },
+    "g003": {
+      "member_ids": [
+        "023",
+        "024"
+      ],
+      "combined_target_word_count": 2000,
+      "combined_source_word_count": 3586
+    }
+  },
+  "_meta": {
+    "computed": {
+      "source_word_count": 78347,
+      "diegetic_source_word_count": 74977,
+      "target_word_count": 39173,
+      "target_hours": 3.26,
+      "overall_compression_ratio": 2.0
+    },
+    "builder": "lean_plan"
+  }
+}

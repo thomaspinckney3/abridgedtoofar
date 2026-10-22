@@ -1,0 +1,164 @@
+{
+  "summary": "Second-pass reduction of the chapter toward the 2100-word target. Cuts fall mostly on optional apparatus: the telescope image, transport specifics, Branly/X-ray elaboration, the St. Gaudens character list and the chemist's framing sentence. Trims are spread across long paragraphs. All eight protected excerpts and the essential chain of argument (Chicago 1893, Langley, the dynamo prayer, the sequences, 310, rays into faith, sex as strength, Gibbon at Amiens, force versus taste, Chartres, Cherbourg) are retained.",
+  "cut_evaluation": [
+    {
+      "paragraph_ids": [
+        1
+      ],
+      "action": "compress",
+      "reason": "Removed the Milky Way image and the 'Comedy of Errors' comparison. These are optional illustrations of Adams's ignorance.",
+      "dependency_check": "Langley is still identified as of the Smithsonian and as teacher. The Bacon formula and the Chicago 1893 link remain."
+    },
+    {
+      "paragraph_ids": [
+        2
+      ],
+      "action": "compress",
+      "reason": "Cut the industrial-exhibit sentence and the 'nightmare at a hundred kilometres' detail.",
+      "dependency_check": "Kept the Marx sentence so the Berlin callback keeps its payoff. Daimler, the automobile and the steam-engine as Adams's own age remain."
+    },
+    {
+      "paragraph_ids": [
+        3
+      ],
+      "action": "compress",
+      "reason": "Replaced the planet comparison and the 'stand a hair's-breadth further' clause with a shorter sentence. Dropped the closing 'thousand symbols' sentence.",
+      "dependency_check": "Langley's coal-channel view, 'symbol of infinity', the early Christians and the Cross, the baby against the frame, and V1 all remain."
+    },
+    {
+      "paragraph_ids": [
+        4
+      ],
+      "action": "compress",
+      "reason": "Cut 'occult mechanism', 'absolute fiat' and 'The force was wholly new'. These partly duplicate surrounding claims.",
+      "dependency_check": "The break of continuity, Cross/cathedral, the anarchical and parricidal rays, and 'Radium denied its God' remain attributed to Langley."
+    },
+    {
+      "paragraph_ids": [
+        5
+      ],
+      "action": "compress",
+      "reason": "Cut the X-ray/atom sentence and the supersensual-collisions sentence. The Branly coherer is kept as the single rhetorical question.",
+      "dependency_check": "'Supersensual', 'no common scale' and 'physics stark mad in metaphysics' remain as Adams's characterization."
+    },
+    {
+      "paragraph_ids": [
+        6
+      ],
+      "action": "compress",
+      "reason": "Shortened the description of the dozen volumes. Cut the Harvard comparison and the 'unit of measure' clause.",
+      "dependency_check": "The rejected sequences (men, society, time, thought, force) stay in order before V2."
+    },
+    {
+      "paragraph_ids": [
+        7
+      ],
+      "action": "compress",
+      "reason": "Cut the opening 'elderly person' sentence.",
+      "dependency_check": "Copernicus/Galileo, Columbus, Constantine in 310 and 'immediate modes of the divine substance' remain."
+    },
+    {
+      "paragraph_ids": [
+        8
+      ],
+      "action": "compress",
+      "reason": "Cut the 'treat them as felt' restatement and the chemist-amusement sentence.",
+      "dependency_check": "V3 remains framed as a risky venture. The Boston chemist keeps the Venus/Virgin and 'women were dead' payoff."
+    },
+    {
+      "paragraph_ids": [
+        9
+      ],
+      "action": "cut",
+      "reason": "Dropped the Sir Lancelot knife-edge sentence.",
+      "dependency_check": "Lourdes and the American point about sentiment versus force still lead into the next paragraph."
+    },
+    {
+      "paragraph_ids": [
+        10,
+        11
+      ],
+      "action": "compress",
+      "reason": "Cut the opening 'problem in dynamics' sentence and 'Neither art nor beauty was needed'.",
+      "dependency_check": "'Sex was sin' against 'sex was strength', V4, and Lucretius invoking Venus 'exactly as Dante invoked the Virgin' remain, with the Latin line."
+    },
+    {
+      "paragraph_ids": [
+        12
+      ],
+      "action": "compress",
+      "reason": "Reduced the Louvre/Chartres energy sentence to its core.",
+      "dependency_check": "The 'letter/law' antithesis and V5 remain."
+    },
+    {
+      "paragraph_ids": [
+        13
+      ],
+      "action": "compress",
+      "reason": "Cut Eve/Herodias and the 'sex of the dynamo' coda.",
+      "dependency_check": "Whitman, Bret Harte, the painters, 'sexless' and 'unmoral force' remain."
+    },
+    {
+      "paragraph_ids": [
+        14
+      ],
+      "action": "compress",
+      "reason": "Trimmed the St. Gaudens character sketch and the post of honor.",
+      "dependency_check": "'Most inarticulate', 'no egoist' and his illness that summer remain."
+    },
+    {
+      "paragraph_ids": [
+        15
+      ],
+      "action": "compress",
+      "reason": "Merged the Amiens arrival with the portal realization and cut the footnote-humor sentence.",
+      "dependency_check": "V6 is attributed to Gibbon. The fat-historian conjecture ('perhaps himself') remains, as does 'One sees what one brings' with Gibbon, Ruskin and St. Gaudens."
+    },
+    {
+      "paragraph_ids": [
+        16
+      ],
+      "action": "compress",
+      "reason": "Cut the 'bore the stamp of the Renaissance' opener. Named St. Gaudens explicitly to avoid an ambiguous 'He'.",
+      "dependency_check": "The Cellini/Boston half-natures and V7 remain."
+    },
+    {
+      "paragraph_ids": [
+        17
+      ],
+      "action": "keep",
+      "reason": "This paragraph carries the horse symbol, 'since 1895', Chartres and V8.",
+      "dependency_check": "The railway-train sentence sets up the steam epigram."
+    },
+    {
+      "paragraph_ids": [
+        18
+      ],
+      "action": "compress",
+      "reason": "Cut the compass-needle sentence and the 'values, equivalents, conversions' list.",
+      "dependency_check": "Interchangeable force measured by action on man and 'easiest to handle' remain."
+    },
+    {
+      "paragraph_ids": [
+        19
+      ],
+      "action": "keep",
+      "reason": "Ending kept complete.",
+      "dependency_check": "The thicket, forty-five years, blind-man's dog, struck out/left in, and Cherbourg on January 19, 1901 remain."
+    }
+  ],
+  "acceptable_changes": [
+    "Short bridges were added in P3 ('The huge wheel...') and P15 (Amiens merge). Each is shorter than the text it replaced.",
+    "'St. Gaudens writhed' replaces 'He writhed' to fix the referent after the cut."
+  ],
+  "risks": [
+    "The revised length is estimated, not measured, and may land somewhat above 2100.",
+    "The P3 bridge sentence slightly recasts the source syntax."
+  ],
+  "review_focus": [
+    "P3: the wheel/baby bridge.",
+    "P15: the merged Amiens arrival sentence.",
+    "P9 to P10: the transition now that the 'problem in dynamics' opener is gone."
+  ],
+  "infeasible": false
+}

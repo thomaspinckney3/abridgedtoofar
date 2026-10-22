@@ -1,0 +1,206 @@
+{
+  "summary": "Cut roughly 610 words by hand estimate from the 1909-word first draft, aiming at the 1300-word target. The revision removes the telegram, trims stage business and attributions, and condenses repeated exchanges. All eight protected excerpts are intact, and the essential plot beats and planted clues remain: Lyons', card, pensionnat, ward, American accent, Rita, the telephone message, Brown, £100 and £50, and 'to-morrow at the same time'.",
+  "cut_evaluation": [
+    {
+      "paragraph_ids": [
+        1,
+        2,
+        3
+      ],
+      "action": "compress",
+      "reason": "Removed the hesitation beat and 'Tuppence believed him'. Merged the eye description into one clause.",
+      "dependency_check": "Kept the suspected improper approach, the acquittal ('inclined to acquit'), the instinctive dislike, and big, clean shaven, heavy jowl and shifty eyes for Tommy's later identification."
+    },
+    {
+      "paragraph_ids": [
+        5,
+        7
+      ],
+      "action": "cut",
+      "reason": "'The man smiled' and the narrated inference added no content.",
+      "dependency_check": "The alternating dialogue keeps the speakers clear. The admission of following her remains."
+    },
+    {
+      "paragraph_ids": [
+        10
+      ],
+      "action": "compress",
+      "reason": "Folded the card's inscription into one sentence.",
+      "dependency_check": "Name, firm and city office all retained."
+    },
+    {
+      "paragraph_ids": [
+        14,
+        15
+      ],
+      "action": "compress",
+      "reason": "Cut the gazing-after-him beat and the 'I wonder' question.",
+      "dependency_check": "Kept the terrier shake, the private dislike and fearlessness, and V1 with its 'said before' framing."
+    },
+    {
+      "paragraph_ids": [
+        16
+      ],
+      "action": "cut",
+      "reason": "The plan marks the telegram as optional. Cutting it was the largest low-risk saving.",
+      "dependency_check": "No later line in this chapter refers to the telegram, so the pencil callback is not needed."
+    },
+    {
+      "paragraph_ids": [
+        17
+      ],
+      "action": "compress",
+      "reason": "Reduced the evening reflection to a one-line dream.",
+      "dependency_check": "Kept the buns and the Esthonia Glassware and hospital-plates callback. Buns recur later in paragraph 73."
+    },
+    {
+      "paragraph_ids": [
+        18,
+        19,
+        21,
+        22,
+        24
+      ],
+      "action": "compress",
+      "reason": "Trimmed office arrival, door and desk business.",
+      "dependency_check": "The small, rather dirty outer office and the middle-aged clerk who shows her in remain. No telephone added. 'Small and demure' is kept for the payoff 'meek little kid'."
+    },
+    {
+      "paragraph_ids": [
+        25,
+        26,
+        27,
+        31,
+        33,
+        34,
+        36
+      ],
+      "action": "compress",
+      "reason": "Cut the business preamble. Reduced the father aside and the American-friends aside to one clause each, as the plan permits.",
+      "dependency_check": "Kept £100 down plus expenses, 'Nominal--purely nominal', Paris, and the exact pensionnat phrase."
+    },
+    {
+      "paragraph_ids": [
+        38,
+        41,
+        42
+      ],
+      "action": "compress",
+      "reason": "Condensed the conditions. Dropped the reasoning about her past life in England.",
+      "dependency_check": "Kept three months, ward, no communication, absolute secrecy and the pass-as-American suggestion. 'I can soon get out of it' is kept so that 'On the contrary' still has something to answer."
+    },
+    {
+      "paragraph_ids": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "action": "compress",
+      "reason": "Shortened the liberal-terms exchange.",
+      "dependency_check": "Whittington's 'most liberal' sets up V2. His reply about intelligence and discretion survives, and 'had scored' follows it."
+    },
+    {
+      "paragraph_ids": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "action": "keep",
+      "reason": "This is the both-or-neither pivot and the naming. The lines are already short. Paragraph 49 was trimmed slightly.",
+      "dependency_check": "'Mr. Beresford', 'my partner' and 'saw us together' are kept. The first-name-in-her-head phrasing stays from her point of view, with no explanation of where the name came from."
+    },
+    {
+      "paragraph_ids": [
+        57,
+        59,
+        60,
+        61,
+        62
+      ],
+      "action": "compress",
+      "reason": "Trimmed the rage description, 'Whittington went on', 'Is that it, eh?' and 'cooling down'.",
+      "dependency_check": "Kept purple rage, incredulous dismay, cat and mouse, the exact Rita question (V4), and her choice not to drag in the unknown Rita."
+    },
+    {
+      "paragraph_ids": [
+        64,
+        66,
+        69
+      ],
+      "action": "cut",
+      "reason": "Cut the gimlets line, the explanatory sentence after 'Very little indeed', and Whittington's 'two girls' retort.",
+      "dependency_check": "The plan's four truthful denials remain. Augmented uneasiness is still shown. 'continued Tuppence' now reads naturally after her own prior line."
+    },
+    {
+      "paragraph_ids": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "action": "compress",
+      "reason": "Condensed the 'quit fooling' rounds to one, as the plan allows. Removed 'cards upon the table' and the ingenuity aside.",
+      "dependency_check": "Kept 'How much do you want?' with the breakfast and buns, the live-by-my-wits claim, and 'I shouldn't like to contradict you'."
+    },
+    {
+      "paragraph_ids": [
+        79,
+        85,
+        87,
+        88
+      ],
+      "action": "compress",
+      "reason": "Shortened the dilemma line and Whittington's admiration. Cut 'Whittington grunted' and 'Life is full of surprises', which the plan marks optional.",
+      "dependency_check": "Blackmail versus payment in advance remains, along with 'smiled sweetly' before 'still sweetly' (V6) and his unwilling admiration."
+    },
+    {
+      "paragraph_ids": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "action": "keep",
+      "reason": "The planted clue sequence. Only the clerk's exit was trimmed.",
+      "dependency_check": "Discreet knock, 'Telephone message', the frown, V7 with Brown, £50, and 'to-morrow at the same time' are all retained without narrator comment."
+    },
+    {
+      "paragraph_ids": [
+        96,
+        98,
+        99,
+        100,
+        101
+      ],
+      "action": "compress",
+      "reason": "Trimmed the note-counting business. Cut 'my clever and charming young lady'. Merged the elation and taxi paragraphs. Tightened the arrival.",
+      "dependency_check": "Near-genial au revoir with her faint misgiving, the taxi and the tube station lead intact into V8."
+    }
+  ],
+  "acceptable_changes": [
+    "Telegram to Tommy's club removed entirely, under the optional plan item.",
+    "Small bridge wordings added ('that motive', 'as sleek and shifty as ever', 'careful not to drag'); these are included in the net reduction estimate."
+  ],
+  "risks": [
+    "The word count is hand-estimated at about 1297. It needs code measurement.",
+    "'that motive' in paragraph 3 relies on the reader carrying 'first and most natural assumption' from paragraph 1."
+  ],
+  "review_focus": [
+    "Paragraph 61 opens with Whittington's speech with no attribution; check that the speaker is clear after Tuppence's narration.",
+    "The paragraph 68 to 70 transition now has two consecutive Tuppence lines joined by 'continued Tuppence'."
+  ],
+  "infeasible": false
+}

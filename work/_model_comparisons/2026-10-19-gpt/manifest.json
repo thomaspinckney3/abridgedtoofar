@@ -1,0 +1,448 @@
+{
+  "status": "completed",
+  "prepared_at": "2026-10-20T00:51:59.837885+00:00",
+  "prior_comparison": "/mnt/data/forage/work/_model_comparisons/2026-10-19",
+  "models": {
+    "astra": "gpt-6-astra",
+    "sol61": "gpt-6.1-sol"
+  },
+  "pipeline": "Identical frozen Forage draft_lean system/prompt/cached_prompt, flattened as in forage.llm._openai; existing chapter-note parser. Benchmark-only SDK adapter explicitly sets medium reasoning and disables retries.",
+  "scope": "Drafting-stage trial, not a complete production pipeline run.",
+  "limitations": [
+    "Four chapters, two books, one sample per model, no statistical claim.",
+    "Historical final versions have prior repair passes and older prompts.",
+    "New-model comparison uses identical prompts but normal model-specific reasoning settings.",
+    "No independent paid judge; qualitative review is by the coding assistant.",
+    "Same reasoning label does not imply equal reasoning compute across providers.",
+    "GPT requests use medium reasoning and 32,000 total output tokens including reasoning.",
+    "Prior Anthropic trial changed Opus effort after a timeout; retained as historical evidence."
+  ],
+  "rates_usd_per_million": {
+    "astra": {
+      "input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "sol61": {
+      "input": 2,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "output": 10
+    }
+  },
+  "pricing_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+  ],
+  "proposed_batch_ceiling_usd": 7,
+  "expected_cost_usd": [
+    2,
+    4
+  ],
+  "chapters": [
+    {
+      "book": "gatsby",
+      "id": "001",
+      "title": "I",
+      "target_words": 3200,
+      "source_words": 5891,
+      "baseline_words": 4761,
+      "baseline_sha256": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08"
+    },
+    {
+      "book": "gatsby",
+      "id": "002",
+      "title": "II",
+      "target_words": 2300,
+      "source_words": 4279,
+      "baseline_words": 2816,
+      "baseline_sha256": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201"
+    },
+    {
+      "book": "mobydick",
+      "id": "004",
+      "title": "Loomings.",
+      "target_words": 1200,
+      "source_words": 2190,
+      "baseline_words": 1123,
+      "baseline_sha256": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489"
+    },
+    {
+      "book": "mobydick",
+      "id": "005",
+      "title": "The Carpet-Bag.",
+      "target_words": 800,
+      "source_words": 1416,
+      "baseline_words": 716,
+      "baseline_sha256": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0"
+    }
+  ],
+  "rubric": [
+    "source fidelity and causal completeness",
+    "authorial voice",
+    "dialogue paragraphing and attribution",
+    "within/between-chapter continuity",
+    "word-budget compliance (not a quality score)",
+    "latency and billed tokens"
+  ],
+  "live_hashes": {
+    "work/gatsby/chapters/001.md": "dc4d1d94b9704b2adc13cfd42673406cbcf032e1ce648b99672732d45da32168",
+    "work/gatsby/segments/001.md": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08",
+    "work/gatsby/chapters/002.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "work/gatsby/segments/002.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "work/gatsby/plan.json": "016f29eadc40a43f8dcd98879acc1c8fdbbc0879e0639c6823c26cd1fcb2092f",
+    "work/gatsby/cuts.json": "3f41260ce657ccf28cf14ddb2d96ffa07d1a95936be3e0cb19eba622d799b3ad",
+    "work/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "work/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "books/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "books/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "work/mobydick/chapters/004.md": "d6aa75dabae26d82ac0703b13a6aebaa3ae01f0a86f2145490d24c8c85aea796",
+    "work/mobydick/segments/004.md": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489",
+    "work/mobydick/chapters/005.md": "908020b2e8df58cf5a8eb90370b3a777af41fe204f3103630914e78397603e0d",
+    "work/mobydick/segments/005.md": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0",
+    "work/mobydick/plan.json": "8e6993ac0f1985b2ecbc98c60de5131cbcd960c55cb870dbd67081f01214056c",
+    "work/mobydick/cuts.json": "1fe9d6906f052409619e146c38f9267a5da551b1b7299196c5e1a98bc92a13cb",
+    "work/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "work/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821",
+    "books/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "books/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821"
+  },
+  "requests": [
+    {
+      "key": "gatsby-001-astra",
+      "book": "gatsby",
+      "members": [
+        "001"
+      ],
+      "variant": "astra",
+      "model": "gpt-6-astra",
+      "request_path": "requests/gatsby-001-astra.json",
+      "sha256": "aa6956bddebd357893c86f1bbae00b270763988fab28accde21cc9fd4c379ff3",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/gatsby-001-sonnet55.json",
+      "source_sha256": "c4f32293c349a85358b7adbc8def2301610d48fde483edd2240afd34281cb8ea",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 17422,
+      "maximum_cost_usd": 1.830575,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.428517,
+        "returned_model": "gpt-6-astra",
+        "usage": {
+          "completion_tokens": 4215,
+          "prompt_tokens": 17422,
+          "total_tokens": 21637,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 207,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 17419,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 4215,
+        "request_id": "req_e5510c6a379046579187dda13e20f71a",
+        "stop_reason": "stop",
+        "duration_s": 62.85
+      }
+    },
+    {
+      "key": "gatsby-001-sol61",
+      "book": "gatsby",
+      "members": [
+        "001"
+      ],
+      "variant": "sol61",
+      "model": "gpt-6.1-sol",
+      "request_path": "requests/gatsby-001-sol61.json",
+      "sha256": "ad07bafb7bceb5a37f4a9a851ec8315b3a3cc98e770613d1b09dddb40f21ebf9",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/gatsby-001-sonnet55.json",
+      "source_sha256": "c4f32293c349a85358b7adbc8def2301610d48fde483edd2240afd34281cb8ea",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 17422,
+      "maximum_cost_usd": 0.366115,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.082633,
+        "returned_model": "gpt-6.1-sol",
+        "usage": {
+          "completion_tokens": 3908,
+          "prompt_tokens": 17422,
+          "total_tokens": 21330,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 129,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 17419,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 3908,
+        "request_id": "req_92b836ca4d294289ba91ddfdfc6e73d4",
+        "stop_reason": "stop",
+        "duration_s": 73.68
+      }
+    },
+    {
+      "key": "gatsby-002-astra",
+      "book": "gatsby",
+      "members": [
+        "002"
+      ],
+      "variant": "astra",
+      "model": "gpt-6-astra",
+      "request_path": "requests/gatsby-002-astra.json",
+      "sha256": "41e23ef3dd5dcd1aa42f69bfc5a7e482ef055a9142d4163e9c027c61e7b7f4fb",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/gatsby-002-sonnet55.json",
+      "source_sha256": "d04f887fb5cde0ece85d4386454fd7359fa9489c8091a5e796bc4cd2682b3302",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 15318,
+      "maximum_cost_usd": 1.804275,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.346318,
+        "returned_model": "gpt-6-astra",
+        "usage": {
+          "completion_tokens": 3097,
+          "prompt_tokens": 15318,
+          "total_tokens": 18415,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 163,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 15315,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 3097,
+        "request_id": "req_82e468645c2a4cd8b881dbb68fd79977",
+        "stop_reason": "stop",
+        "duration_s": 52.75
+      }
+    },
+    {
+      "key": "gatsby-002-sol61",
+      "book": "gatsby",
+      "members": [
+        "002"
+      ],
+      "variant": "sol61",
+      "model": "gpt-6.1-sol",
+      "request_path": "requests/gatsby-002-sol61.json",
+      "sha256": "993f178ea13029316e88e2d441c37ceb437199bea19c71bfa8ef92d51dc364be",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/gatsby-002-sonnet55.json",
+      "source_sha256": "d04f887fb5cde0ece85d4386454fd7359fa9489c8091a5e796bc4cd2682b3302",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 15318,
+      "maximum_cost_usd": 0.360855,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.068764,
+        "returned_model": "gpt-6.1-sol",
+        "usage": {
+          "completion_tokens": 3047,
+          "prompt_tokens": 15318,
+          "total_tokens": 18365,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 93,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 15315,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 3047,
+        "request_id": "req_45ff3872ba9f43b4b55b3f058c7620c6",
+        "stop_reason": "stop",
+        "duration_s": 60.72
+      }
+    },
+    {
+      "key": "mobydick-g002-astra",
+      "book": "mobydick",
+      "members": [
+        "004",
+        "005"
+      ],
+      "variant": "astra",
+      "model": "gpt-6-astra",
+      "request_path": "requests/mobydick-g002-astra.json",
+      "sha256": "1680149febfd1859ac796c3ae83ea5ceae575c1795e9429f11b5fdfb2a628aa9",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/mobydick-g002-sonnet55.json",
+      "source_sha256": "ccddc00956dd846d5d960419e40b507870dbbd9ea2dfaf4b47faec2a3eb9bcad",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 15255,
+      "maximum_cost_usd": 1.803487,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.34623,
+        "returned_model": "gpt-6-astra",
+        "usage": {
+          "completion_tokens": 3111,
+          "prompt_tokens": 15255,
+          "total_tokens": 18366,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 267,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 15252,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 3111,
+        "request_id": "req_ae0bb0b720f2484f827dec78e1b612c4",
+        "stop_reason": "stop",
+        "duration_s": 48.23
+      }
+    },
+    {
+      "key": "mobydick-g002-sol61",
+      "book": "mobydick",
+      "members": [
+        "004",
+        "005"
+      ],
+      "variant": "sol61",
+      "model": "gpt-6.1-sol",
+      "request_path": "requests/mobydick-g002-sol61.json",
+      "sha256": "87a7c10e2ab8d79f970560951516a471329bbafa7dbc0e34f09d5270b3fdb7a3",
+      "source_request": "/mnt/data/forage/work/_model_comparisons/2026-10-19/requests/mobydick-g002-sonnet55.json",
+      "source_sha256": "ccddc00956dd846d5d960419e40b507870dbbd9ea2dfaf4b47faec2a3eb9bcad",
+      "max_tokens": 32000,
+      "reasoning_effort": "medium",
+      "counted_input_tokens": 15255,
+      "maximum_cost_usd": 0.360698,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.067366,
+        "returned_model": "gpt-6.1-sol",
+        "usage": {
+          "completion_tokens": 2923,
+          "prompt_tokens": 15255,
+          "total_tokens": 18178,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 118,
+            "rejected_prediction_tokens": 0,
+            "text_tokens": null
+          },
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cache_write_tokens": 15252,
+            "cached_tokens": 0,
+            "image_tokens": null,
+            "text_tokens": null
+          }
+        },
+        "output_tokens": 2923,
+        "request_id": "req_03526ca6dd99497aabccfe7380faf6fd",
+        "stop_reason": "stop",
+        "duration_s": 56.87
+      }
+    }
+  ],
+  "input_hashes": {
+    "anthropic_assessment.json": "4985945e50fcd1d58af32f75c67726f5eef2b1d8110e2db739aaeabf788a2a93",
+    "anthropic_manifest.json": "7c4a696de3dfa538ea1bdf9b7b81f02acc806eed4a90ebe80995dd860e08f358",
+    "preflight_assessment.json": "f3e7f19435ca67136ff7d9d296c4ecf70df88222821af3bda0c28f5fa69e234d",
+    "requests/gatsby-001-sol61.json": "ad07bafb7bceb5a37f4a9a851ec8315b3a3cc98e770613d1b09dddb40f21ebf9",
+    "requests/gatsby-001-astra.json": "aa6956bddebd357893c86f1bbae00b270763988fab28accde21cc9fd4c379ff3",
+    "requests/gatsby-002-astra.json": "41e23ef3dd5dcd1aa42f69bfc5a7e482ef055a9142d4163e9c027c61e7b7f4fb",
+    "requests/mobydick-g002-astra.json": "1680149febfd1859ac796c3ae83ea5ceae575c1795e9429f11b5fdfb2a628aa9",
+    "requests/gatsby-002-sol61.json": "993f178ea13029316e88e2d441c37ceb437199bea19c71bfa8ef92d51dc364be",
+    "requests/mobydick-g002-sol61.json": "87a7c10e2ab8d79f970560951516a471329bbafa7dbc0e34f09d5270b3fdb7a3",
+    "gatsby/baseline/plan.json": "016f29eadc40a43f8dcd98879acc1c8fdbbc0879e0639c6823c26cd1fcb2092f",
+    "gatsby/baseline/book_synopsis.md": "837b61f4213d350b8f2bb7a0a86c536ca2b4f8842607cbf5b8ff54782137396a",
+    "gatsby/baseline/historical_generation_log.json": "457ec503658018ad392393087e5a34b706dd60eb28df966d1a9181eefab06a93",
+    "gatsby/baseline/cuts.json": "3f41260ce657ccf28cf14ddb2d96ffa07d1a95936be3e0cb19eba622d799b3ad",
+    "gatsby/baseline/metadata.json": "8ddbbb98eeaeeefc8d8c4339ced8adc45c5242a144209fa7c24313984323f991",
+    "gatsby/sonnet55/gatsby-001-sonnet55.response.json": "6ce7ae3388e36f9016c859962b501fcc850fbc3347717ae5003b4027464593f8",
+    "gatsby/sonnet55/gatsby-002-sonnet55.started.json": "1cdde858cf0f392d2c2cedcd91061207192b05a7a2d729ae7d5deef27fad1a24",
+    "gatsby/sonnet55/gatsby-002-sonnet55.response.json": "38da70fa4c60f11735c9291e0253a8c0256eb77cf38ccad5e82e8c75165b0fa4",
+    "gatsby/sonnet55/gatsby-001-sonnet55.started.json": "c07cd8d2b93af0eb4c980d13c789a8e2b02fe9ab2771b6c6691f2c17aaee11df",
+    "gatsby/sonnet55/llm_calls.jsonl": "a0539f955abcb419e8699a5fb6ac8f7ceb2e0667e0c333d238bb91362dd87931",
+    "gatsby/opus55/gatsby-002-opus55.started.json": "39501d18cbd503ad5d843c018eadd15c038775c16e15b515731265c90a5fdf5a",
+    "gatsby/opus55/gatsby-001-opus55.started.json": "5e1253c6b436d6816e70cb200f9737564328160a812c4cae665d38aa023a5340",
+    "gatsby/opus55/gatsby-002-opus55.response.json": "d097d3b20dde21d35688fffc271c5338bdc9a56a740261212a6ec3b17a6ff4a2",
+    "gatsby/opus55/llm_calls.jsonl": "9652629cff8728a0aaff2e2ff80c2bfc8a82e14c4d8c547bfc6cd2a4e2ea2d96",
+    "gatsby/baseline/segments/002.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "gatsby/baseline/segments/001.md": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08",
+    "gatsby/baseline/chapters/002.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "gatsby/baseline/chapters/001.md": "dc4d1d94b9704b2adc13cfd42673406cbcf032e1ce648b99672732d45da32168",
+    "gatsby/sonnet55/segments/001.notes.json": "53ec5fab19ee534a0bd78a40ff03d9fe11f6f2b802723a6b1a6551c33fd5e416",
+    "gatsby/sonnet55/segments/002.md": "1ee265def09b51b5a5afcc9210b03dd9c7913e8cf2b2363a7ecd01e92b0218ac",
+    "gatsby/sonnet55/segments/002.notes.json": "abffbaa40ee8fce522c6b389598f97d3d9cb5a0760886cc901039d6520429518",
+    "gatsby/sonnet55/segments/001.md": "f81dee7962ef76c77b7fda23e1e37b63d738e69a4c89f9979c3b97a24b826b9c",
+    "gatsby/opus55/segments/002.md": "e15e9d84785a6c3ced65cc0c3610d232fa71e340be06344ce54a2a9a128e5261",
+    "gatsby/opus55/segments/002.notes.json": "84df46855e8b9f5e51968179c7539977468c84acd6ef201a595e9c46b990abbd",
+    "mobydick/baseline/plan.json": "8e6993ac0f1985b2ecbc98c60de5131cbcd960c55cb870dbd67081f01214056c",
+    "mobydick/baseline/book_synopsis.md": "0c6c93a37ee7630555a8ccda35fcadf5c5f3becda4bbf319db9e68b5d1241a6b",
+    "mobydick/baseline/historical_generation_log.json": "4e04c6f9ba29d10a76f83398f59259251cf132c9eb3fe8c2e158d82cc32c4df0",
+    "mobydick/baseline/cuts.json": "1fe9d6906f052409619e146c38f9267a5da551b1b7299196c5e1a98bc92a13cb",
+    "mobydick/baseline/metadata.json": "bb02ae3691dcd23374517421b85164d991c89471ebe7168f04c44e68852e46b7",
+    "mobydick/sonnet55/mobydick-g002-sonnet55.started.json": "1605c60556b0a9171003a6eb580d8ea558ef7253a27a112df33ff2966b79ef03",
+    "mobydick/sonnet55/mobydick-g002-sonnet55.response.json": "7ae1261422f3b0609747f430052aee7f5aa1329d206c32ed967e50a15c9d0331",
+    "mobydick/sonnet55/llm_calls.jsonl": "0c53ab121704a4ea3d670b4992caa9be3afc48735c027bd961770b67cbc79634",
+    "mobydick/opus55/mobydick-g002-opus55.response.json": "9310e90805bf03dfa8225a1209df81261aa6b7fb78551acd9e31f971bf88fa41",
+    "mobydick/opus55/llm_calls.jsonl": "4f05a1524f6f53d2bd8528e7835033d37df0db67e238b2308664899cebc2e434",
+    "mobydick/opus55/mobydick-g002-opus55.started.json": "ee239924e0fc7dc33703084dcf02c29172d05763eb372e1a54273e1ab4760dcc",
+    "mobydick/baseline/segments/004.md": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489",
+    "mobydick/baseline/segments/005.md": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0",
+    "mobydick/baseline/chapters/004.md": "d6aa75dabae26d82ac0703b13a6aebaa3ae01f0a86f2145490d24c8c85aea796",
+    "mobydick/baseline/chapters/005.md": "908020b2e8df58cf5a8eb90370b3a777af41fe204f3103630914e78397603e0d",
+    "mobydick/sonnet55/segments/004.notes.json": "906f1ad25b01231bf163f356266fa554792a5a3eb3067f2e48241ac55be54f13",
+    "mobydick/sonnet55/segments/005.notes.json": "045c41de041197443ee2ffa614e404b406e67ad01fa26ccf1309c862088ed652",
+    "mobydick/sonnet55/segments/004.md": "b0a0fe6581febde322b433fcf06524dcff6422671d64972a2a4cc0fb6457b9f1",
+    "mobydick/sonnet55/segments/005.md": "2a1e9d59cbe8d4f7a935f1e44d621d44a49c84224c9989172c0a6dcadcec38eb",
+    "mobydick/opus55/segments/004.notes.json": "4a20a37642c657077dab5e8ce381a396602af39ce9f4912140740721b4750326",
+    "mobydick/opus55/segments/005.notes.json": "0bbbdb1f7297eba389977290328a08ece48f2d4f62b0f65216787da140915610",
+    "mobydick/opus55/segments/004.md": "b467ba9a3a9d348a8364a2e854d91426f208d22ff245217d749652e9a7e3cf8e",
+    "mobydick/opus55/segments/005.md": "19263e944be69be431612561a8918c74b33be8485ce787be7ae268124a23197b"
+  },
+  "maximum_batch_cost_usd": 6.526005,
+  "approval_recorded_at": "2026-10-20T00:52:29.974344+00:00",
+  "recorded_generation_cost_usd": 1.339828,
+  "total_cost_upper_bound_usd": 1.339828,
+  "finished_at": "2026-10-20T00:58:25.082942+00:00"
+}

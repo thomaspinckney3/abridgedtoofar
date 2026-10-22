@@ -1,0 +1,77 @@
+{
+  "book_id": "education",
+  "title": "The Education of Henry Adams",
+  "author": "Henry Adams",
+  "structural_classification": "lean",
+  "modernization_level": "L1",
+  "cultural_depth": "unknown",
+  "voice_driven_narrator": null,
+  "indirection_budget_applies": null,
+  "overall_compression_ratio": 2.0,
+  "plan_notes": "Lean deterministic plan: per-chapter targets apportioned by source-word share; extradiegetic chapters excluded. No prepass, no signature enumeration.",
+  "motifs": [],
+  "segments": [
+    {
+      "id": "006",
+      "kind": "chapter",
+      "number": "IV",
+      "title": "HARVARD COLLEGE (1854-1858)",
+      "raw_heading": "CHAPTER IV",
+      "source_word_count": 5613,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2900,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter IV narrative"
+    },
+    {
+      "id": "007",
+      "kind": "chapter",
+      "number": "V",
+      "title": "BERLIN (1858-1859)",
+      "raw_heading": "CHAPTER V",
+      "source_word_count": 4300,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2200,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter V narrative"
+    },
+    {
+      "id": "008",
+      "kind": "chapter",
+      "number": "VI",
+      "title": "ROME (1859-1860)",
+      "raw_heading": "CHAPTER VI",
+      "source_word_count": 5464,
+      "diegetic_status": "diegetic",
+      "role": "narrative",
+      "target_word_count": 2800,
+      "relative_compression": 1.0,
+      "signatures": [],
+      "notes": "",
+      "group_id": null,
+      "classification_status": "diegetic",
+      "classification_reason": "Chapter VI narrative"
+    }
+  ],
+  "merged_groups": {},
+  "_meta": {
+    "computed": {
+      "source_word_count": 179035,
+      "diegetic_source_word_count": 174967,
+      "target_word_count": 89517,
+      "target_hours": 7.46,
+      "overall_compression_ratio": 2.0
+    },
+    "builder": "lean_plan"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "status": "partial_response_only_complete_objects_retained",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "should_improve",
+      "axis": "referents_and_scene",
+      "title": "'Whether worthy or not' is orphaned",
+      "origin": "revision",
+      "claim": "The first draft opened paragraph 2 with 'Whether the boy deserved such indulgence, or was worth it, he knew no more than they'. The revision cut that clause but kept the tail phrase 'Whether worthy or not'. It now opens a sentence with no stated question. Paragraph 1 ended on the parents' smile, not on any doubt about desert.",
+      "reader_effect": "A reader stumbles over an unexplained 'whether' where the narrator's ironic doubt about his own worth should link the departure to the voyage.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 2,
+          "quote": "Whether worthy or not, he began his third or fourth attempt at education in November, 1858, by sailing on the steamer Persia."
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 2,
+          "quote": "Whether the boy deserved such indulgence, or was worth it, he knew no more than they"
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 2,
+          "quote": "Whether the boy deserved such indulgence, or was worth it, he knew no more than they, or than a professor at Harvard College"
+        }
+      ],
+      "counterevidence": "Paragraph 1 does discuss the boy's merits and the parents' indulgence, so the sense can be inferred.",
+      "plan_relation": "Optional trimming executed with a dangling residue; the plan did not prescribe this seam.",
+      "minimal_repair": "Restore a short clause, for example 'Whether the boy deserved such indulgence he knew no more than they; but he began…', or change 'Whether worthy or not' to 'Worthy or not'.",
+      "confidence": "high"
+    },
+    {
+      "id": "F2",
+      "priority": "should_improve",
+      "axis": "causality_and_setup",
+      "title": "Tourist-mathematics joke has lost its premise",
+      "origin": "first_draft_worsened_by_revision",
+      "claim": "In the source the axiom follows from the gale joining 'a great variety of other impressions' that made the first month 'the rapidest school of education he had yet found'. The first draft kept that sentence. The revision cuts it, so 'a great many impressions' arrives right after the gale with no impressions yet mentioned. The source's closing capstone ('How many would turn out to be wrong…was ultimate wisdom') was already gone in the first draft.",
+      "reader_effect": "The joke is protected verbatim and still reads, but its premise (a month of accumulating impressions, a deceptive 'gigantic' stride in knowledge) is not set up. The reader gets the axiom without the experience it summarizes.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 2,
+          "quote": "which, for mere physical misery, passed endurance. One began at last to see that a great many impressions were needed to make very little education"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 2,
+          "quote": "It united itself with a great variety of other impressions which made the first month of travel altogether the rapidest school of education he had yet found."
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 2,
+          "quote": "How many would turn out to be wrong whether any could turn out right, was ultimate wisdom."
+        }
+      ],
+      "counterevidence": "The England and Chester paragraphs that follow supply impressions retrospectively, so the axiom is not meaningless.",
+      "plan_relation": "The plan names the premise 'many impressions, little education' as essential; the premise was thinned while the line itself was preserved.",
+      "minimal_repair": "Restore a clause such as 'It united itself with a great variety of other impressions, and the first month of travel was the rapidest school he had yet found.' before 'One began at last to see…'.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F3",
+      "priority": "should_improve",
+      "axis": "referents_and_scene",
+      "title": "'The boys' at Eaton Hall have no antecedent",
+      "origin": "revision",
+      "claim": "The first draft kept 'Several of his college companions sailed with him' in paragraph 2. The revision cut it. 'At Eaton Hall the boys were awed' now refers to a group never introduced. The next sentence moves to 'An eighteenth-century American boy fresh from Boston', singular.",
+      "reader_effect": "A momentary question arises about who 'the boys' are and why Adams is travelling in company, when he was introduced as sailing alone with his own private motive.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 3,
+          "quote": "At Eaton Hall the boys were awed, as Thackeray or Dickens would have felt in the presence of a Duke."
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 2,
+          "quote": "Several of his college companions sailed with him"
+        }
+      ],
+      "counterevidence": "'The boys' could be read loosely as Adams plus unspecified fellow tourists, and 'the young man' is still the focal figure.",
+      "plan_relation": "A side effect of an optional trim in paragraph 2, not a planned omission.",
+      "minimal_repair": "Change to 'At Eaton Hall he and his companions were awed…', or restore 'Several of his college companions sailed with him.'",
+      "confidence": "high"
+    },
+    {
+      "id": "F4",
+      "priority": "should_improve",
+      "axis": "causality_and_setup",
+      "title": "'Foot of the Cross' is unmoored from the Descent from the Cross",
+      "origin": "revision",
+      "claim": "The first draft kept 'Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross.' The revision cut that sentence, and also 'He never dreamed of trying to educate himself to the Descent from the Cross'. The paragraph ends on 'kneeling at the foot of the Cross' and 'getting up again', but the painting or cathedral that makes this an aesthetic experience is never named. The plan says that if this sentence is retained, it should be kept as a unit.",
+      "reader_effect": "The image reads as generic religious feeling, or as an unexplained metaphor. The point is that Rubens in the cathedral overwhelmed him sensually and left no education.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 6,
+          "quote": "He was only too happy to feel himself kneeling at the foot of the Cross; he learned only to loathe the sordid necessity of getting up again"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 6,
+          "quote": "Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross."
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 6,
+          "quote": "He never dreamed of trying to educate himself to the Descent from the Cross."
+        }
+      ],
+      "counterevidence": "The mention of Rubens and 'the thirteenth-century cathedral' lets an attentive reader infer art, and 'only sensual' frames the experience.",
+      "plan_relation": "The plan's optional list says to keep the sentence as a unit if retained. The unit is partially retained without its anchor.",
+      "minimal_repair": "Insert 'Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross.' before 'He merely got drunk on his emotions', or add 'before Rubens's Descent from the Cross' to the kneeling sentence.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F5",
+      "priority": "tradeoff",
+      "axis": "interpretive_structure",
+      "title": "The 'education went backward' hinge is thinned",
+      "origin": "revision",
+      "claim": "The source and first draft state: 'Thus far it had remained in the eighteenth century, and the next step took it back to the sixteenth.' The revision drops it. 'Education went backward' and 'Education began at the end, or perhaps would end at the beginning' now sit beside 'He crossed to Antwerp'. The century-by-century regression survives only in the 'sixteenth-century' roofs and the 'middle ages' later in the paragraph.",
+      "reader_effect": "The paradoxical chiasmus loses its concrete referent. The reader no longer sees explicitly that London was the eighteenth century and Antwerp the sixteenth.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 6,
+          "quote": "Education began at the end, or perhaps would end at the beginning. He crossed to Antwerp."
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 6,
+          "quote": "Thus far it had remained in the eighteenth century, and the next step took it back to the sixteenth."
+        }
+      ],
+      "counterevidence": "The London paragraph's 'eighteenth century' phrases and Antwerp's 'sixteenth-century' and 'middle ages' wording let the reader reconstruct the arc.",
+      "plan_relation": "Section title 'education going backward' implies the idea is wanted. The plan did not protect the hinge sentence.",
+      "minimal_repair": "Restore 'the next step took it back to the sixteenth' before 'He crossed to Antwerp.'",
+      "confidence": "low"
+    },
+    {
+      "id": "F6",
+      "priority": "should_improve",
+      "axis": "causality_and_setup",
+      "title": "Opening connective 'So much more timid' has lost its antecedent",
+      "origin": "revision",
+      "claim": "In the source and first draft the parents' timidity follows 'Strictly followed, the rule would have obliged [them] never to quit Quincy; and, in fact, so much more timid are parents…'. The revision cut the 'rule' sentence but kept a bare, capitalized 'So much more timid are parents for their children than for themselves, that…'. The sentence now follows 'unfitted Americans for America' without the 'never leave Quincy' reductio that motivates it.",
+      "reader_effect": "The leap from the father's dislike of Europe to the parents' preference for Mount Vernon Street is abrupt, and the intended irony of the 'rule' is lost.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 1,
+          "quote": "unfitted Americans for America. So much more timid are parents for their children than for themselves, that Mr. and Mrs. Adams would have been content"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 1,
+          "quote": "Strictly followed, the rule would have obliged the family never to quit Quincy; and, in fact, so much more timid are parents"
+        }
+      ],
+      "counterevidence": "Readers can still follow the parents' ambivalence about Europe versus Boston, which the plan treats as the essential content.",
+      "plan_relation": "The plan wants the ambivalence kept; it is kept, but the connective seam is rough.",
+      "minimal_repair": "Restore a short bridging clause: 'Strictly followed, the rule would have obliged the family never to quit Quincy, and, in fact, so much more timid are parents…'.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F7",
+      "priority": "tradeoff",
+      "axis": "voice_and_rhythm",
+      "title": "Opening trims shed some self-deprecating irony",
+      "origin": "first_draft_worsened_by_revision",
+      "claim": "The source's captious-critic rejoinder (Europe was the field of the Adamses' success) was cut in the first draft. The revision also cut 'Above all, he was timid…' and the clause 'What he was at heart, no one could say; least of all himself; but he was probably human, and no worse than some others.' The father's 'unfitted Americans for America' now stands unanswered, and the boy's portrait ends on 'were not known to be bad'.",
+      "reader_effect": "The cuts remove an undercutting of the family's pieties and the boy's wry self-assessment. The 'fourth child' frame survives but with less of the hedged, comic self-portrait.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 1,
+          "quote": "his morals were apparently good, and his moral principles, if he had any, were not known to be bad. Therefore"
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 1,
+          "quote": "What he was at heart, no one could say; least of all himself; but he was probably human, and no worse than some others."
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 1,
+          "quote": "A captious critic might have replied that all the success he or his father or his grandfather achieved was chiefly due to the field that Europe gave them"
+        }
+      ],
+      "counterevidence": "The plan's essential list only requires the ambivalence and the Civil Law absurdity, and both survive. 'If he had any' keeps some of the irony.",
+      "plan_relation": "Defensible compression within the plan; a real but minor artistic cost.",
+      "minimal_repair": "If space allows, restore 'least of all himself; but he was probably human' as a single clause.",
+      "confidence": "medium"
+    }
+  ]
+}

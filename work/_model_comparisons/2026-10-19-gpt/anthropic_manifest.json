@@ -1,0 +1,314 @@
+{
+  "status": "completed_with_one_failed_request",
+  "prepared_at": "2026-10-19T21:30:47.637269+00:00",
+  "scope": "Historical final-output comparison; one first draft per model. Not an isolated causal old-versus-new model benchmark.",
+  "pipeline": "Forage draft_lean request builders and chapter-note parser; existing classifications, plans, cuts and chapter inputs frozen.",
+  "excluded": "No regeneration, paid judging, coherence repair, fallback, retry, assembly, review decisions, or publication.",
+  "models": {
+    "opus55": "anthropic:claude-opus-5-5",
+    "sonnet55": "anthropic:claude-sonnet-5-5"
+  },
+  "rates_usd_per_million": {
+    "opus55": [
+      4,
+      20,
+      5,
+      0.2
+    ],
+    "sonnet55": [
+      2,
+      10,
+      2.5,
+      0.1
+    ]
+  },
+  "rate_columns": [
+    "input",
+    "output_including_thinking",
+    "cache_write_5m",
+    "cache_read"
+  ],
+  "pricing_source": "https://platform.claude.com/docs/en/models/overview",
+  "expected_cost_usd": [
+    2,
+    5
+  ],
+  "authorized_batch_ceiling_usd": 10,
+  "rubric": [
+    "source fidelity and causal completeness",
+    "authorial voice",
+    "dialogue paragraphing and attribution",
+    "within/between-chapter continuity",
+    "word-budget compliance (not a quality score)",
+    "latency and billed tokens"
+  ],
+  "limitations": [
+    "Four chapters, two books, one sample per model, no statistical claim.",
+    "Historical final versions have prior repair passes and older prompts.",
+    "New-model comparison uses identical prompts but normal model-specific reasoning settings.",
+    "No independent paid judge; qualitative review is by the coding assistant."
+  ],
+  "live_hashes": {
+    "work/gatsby/chapters/001.md": "dc4d1d94b9704b2adc13cfd42673406cbcf032e1ce648b99672732d45da32168",
+    "work/gatsby/segments/001.md": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08",
+    "work/gatsby/chapters/002.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "work/gatsby/segments/002.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "work/gatsby/plan.json": "016f29eadc40a43f8dcd98879acc1c8fdbbc0879e0639c6823c26cd1fcb2092f",
+    "work/gatsby/cuts.json": "3f41260ce657ccf28cf14ddb2d96ffa07d1a95936be3e0cb19eba622d799b3ad",
+    "work/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "work/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "books/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "books/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "work/mobydick/chapters/004.md": "d6aa75dabae26d82ac0703b13a6aebaa3ae01f0a86f2145490d24c8c85aea796",
+    "work/mobydick/segments/004.md": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489",
+    "work/mobydick/chapters/005.md": "908020b2e8df58cf5a8eb90370b3a777af41fe204f3103630914e78397603e0d",
+    "work/mobydick/segments/005.md": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0",
+    "work/mobydick/plan.json": "8e6993ac0f1985b2ecbc98c60de5131cbcd960c55cb870dbd67081f01214056c",
+    "work/mobydick/cuts.json": "1fe9d6906f052409619e146c38f9267a5da551b1b7299196c5e1a98bc92a13cb",
+    "work/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "work/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821",
+    "books/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "books/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821"
+  },
+  "chapters": [
+    {
+      "book": "gatsby",
+      "id": "001",
+      "title": "I",
+      "target_words": 3200,
+      "source_words": 5891,
+      "baseline_words": 4761,
+      "baseline_sha256": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08"
+    },
+    {
+      "book": "gatsby",
+      "id": "002",
+      "title": "II",
+      "target_words": 2300,
+      "source_words": 4279,
+      "baseline_words": 2816,
+      "baseline_sha256": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201"
+    },
+    {
+      "book": "mobydick",
+      "id": "004",
+      "title": "Loomings.",
+      "target_words": 1200,
+      "source_words": 2190,
+      "baseline_words": 1123,
+      "baseline_sha256": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489"
+    },
+    {
+      "book": "mobydick",
+      "id": "005",
+      "title": "The Carpet-Bag.",
+      "target_words": 800,
+      "source_words": 1416,
+      "baseline_words": 716,
+      "baseline_sha256": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0"
+    }
+  ],
+  "requests": [
+    {
+      "key": "gatsby-001-opus55",
+      "book": "gatsby",
+      "members": [
+        "001"
+      ],
+      "variant": "opus55",
+      "model": "anthropic:claude-opus-5-5",
+      "request_path": "requests/gatsby-001-opus55.json",
+      "sha256": "a491ff60bf56714b4f521053b2ebb29f89ccad762e1e2d668c5bb9424221dcd1",
+      "max_tokens": 128000,
+      "thinking": "max",
+      "estimated_input_tokens": 26579,
+      "counted_input_tokens": 27468,
+      "maximum_cost_usd": 2.69734,
+      "result": {
+        "status": "failed",
+        "error_type": "ReadTimeout",
+        "error": "Anthropic stream yielded no text for 420s",
+        "duration_s": 420,
+        "duration_note": "Configured timeout; approximate elapsed duration.",
+        "cost_usd": null,
+        "billing_note": "No final provider usage received; billable input/reasoning unknown."
+      }
+    },
+    {
+      "key": "gatsby-002-opus55",
+      "book": "gatsby",
+      "members": [
+        "002"
+      ],
+      "variant": "opus55",
+      "model": "anthropic:claude-opus-5-5",
+      "request_path": "requests/gatsby-002-opus55-medium.json",
+      "sha256": "a99fe49e94455443ef455c8a6ef3aad95106868a214b315d828cea386e469973",
+      "max_tokens": 128000,
+      "thinking": "medium",
+      "estimated_input_tokens": 23444,
+      "counted_input_tokens": 24597,
+      "maximum_cost_usd": 2.682985,
+      "original_request_path": "requests/gatsby-002-opus55.json",
+      "original_sha256": "8d4408a164e1dc9417366495ace8d1609b4f58877e2a32f11d18640e8d15b6d9",
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.261883,
+        "duration_s": 55.72,
+        "stop_reason": "end_turn",
+        "input_tokens": 11662,
+        "output_tokens": 7528,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 12935
+      }
+    },
+    {
+      "key": "gatsby-001-sonnet55",
+      "book": "gatsby",
+      "members": [
+        "001"
+      ],
+      "variant": "sonnet55",
+      "model": "anthropic:claude-sonnet-5-5",
+      "request_path": "requests/gatsby-001-sonnet55.json",
+      "sha256": "c4f32293c349a85358b7adbc8def2301610d48fde483edd2240afd34281cb8ea",
+      "max_tokens": 32000,
+      "thinking": null,
+      "estimated_input_tokens": 26579,
+      "counted_input_tokens": 27468,
+      "maximum_cost_usd": 0.38867,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.182543,
+        "duration_s": 60.44,
+        "stop_reason": "end_turn",
+        "input_tokens": 14533,
+        "output_tokens": 12114,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 12935
+      }
+    },
+    {
+      "key": "gatsby-002-sonnet55",
+      "book": "gatsby",
+      "members": [
+        "002"
+      ],
+      "variant": "sonnet55",
+      "model": "anthropic:claude-sonnet-5-5",
+      "request_path": "requests/gatsby-002-sonnet55.json",
+      "sha256": "d04f887fb5cde0ece85d4386454fd7359fa9489c8091a5e796bc4cd2682b3302",
+      "max_tokens": 32000,
+      "thinking": null,
+      "estimated_input_tokens": 23444,
+      "counted_input_tokens": 24597,
+      "maximum_cost_usd": 0.381493,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.101718,
+        "duration_s": 40.86,
+        "stop_reason": "end_turn",
+        "input_tokens": 11662,
+        "output_tokens": 7710,
+        "cache_read_tokens": 12935,
+        "cache_write_tokens": 0
+      }
+    },
+    {
+      "key": "mobydick-g002-opus55",
+      "book": "mobydick",
+      "members": [
+        "004",
+        "005"
+      ],
+      "variant": "opus55",
+      "model": "anthropic:claude-opus-5-5",
+      "request_path": "requests/mobydick-g002-opus55-medium.json",
+      "sha256": "1037774b34c25bf8f717fe477a5e6647223f4ff0d911acbea2235c4036820f44",
+      "max_tokens": 128000,
+      "thinking": "medium",
+      "estimated_input_tokens": 23087,
+      "counted_input_tokens": 23943,
+      "maximum_cost_usd": 2.679715,
+      "original_request_path": "requests/mobydick-g002-opus55.json",
+      "original_sha256": "296153763c4f78944a70ccea0baf7f03ffd29909460a2774ec60f801d8b24f0f",
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.214419,
+        "duration_s": 61.83,
+        "stop_reason": "end_turn",
+        "input_tokens": 11008,
+        "output_tokens": 8390,
+        "cache_read_tokens": 12935,
+        "cache_write_tokens": 0
+      }
+    },
+    {
+      "key": "mobydick-g002-sonnet55",
+      "book": "mobydick",
+      "members": [
+        "004",
+        "005"
+      ],
+      "variant": "sonnet55",
+      "model": "anthropic:claude-sonnet-5-5",
+      "request_path": "requests/mobydick-g002-sonnet55.json",
+      "sha256": "ccddc00956dd846d5d960419e40b507870dbbd9ea2dfaf4b47faec2a3eb9bcad",
+      "max_tokens": 32000,
+      "thinking": null,
+      "estimated_input_tokens": 23087,
+      "counted_input_tokens": 23943,
+      "maximum_cost_usd": 0.379858,
+      "result": {
+        "status": "complete",
+        "cost_usd": 0.10891,
+        "duration_s": 49.23,
+        "stop_reason": "end_turn",
+        "input_tokens": 11008,
+        "output_tokens": 8560,
+        "cache_read_tokens": 12935,
+        "cache_write_tokens": 0
+      }
+    }
+  ],
+  "maximum_batch_cost_usd": 9.210061,
+  "started_at": "2026-10-19T23:39:32.238886+00:00",
+  "approval": {
+    "scope": "Six generation calls using Opus 5.5 and Sonnet 5.5; user replied approved",
+    "maximum_disclosed_usd": 9.22,
+    "no_retries": true
+  },
+  "adaptations": [
+    {
+      "at": "2026-10-19T23:47:16.480596+00:00",
+      "reason": "First Opus call reached Forage no-text timeout at 420 seconds with maximum reasoning effort.",
+      "change": "Remaining two Opus calls use provider default medium effort. Same prompts and token ceilings. No retry of failed call.",
+      "pricing_and_default_source": "https://platform.claude.com/docs/en/models/opus-5-5/overview"
+    }
+  ],
+  "completed_at": "2026-10-19T23:51:48.975212+00:00",
+  "live_artifacts_unchanged": true,
+  "recorded_generation_cost_usd": 0.869473,
+  "unpriced_failed_requests": [
+    "gatsby-001-opus55"
+  ],
+  "total_cost_upper_bound_usd": 3.566813,
+  "assessment_completed_at": "2026-10-19T23:54:39.976109+00:00",
+  "assessment_path": "assessment.json",
+  "artifacts": {
+    "reader": "report.html",
+    "metrics": "metrics.json",
+    "assessment": "assessment.json",
+    "checklist": "preflight_assessment.json"
+  },
+  "verification": {
+    "generation_attempts": 6,
+    "successful_calls": 5,
+    "failed_calls": 1,
+    "completed_chapter_drafts": 7,
+    "live_artifacts_unchanged": true,
+    "matched_prompt_text_across_models": true,
+    "paid_judging_calls": 0,
+    "retry_calls": 0
+  }
+}

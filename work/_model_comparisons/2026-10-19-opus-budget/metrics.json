@@ -1,0 +1,141 @@
+[
+  {
+    "variant": "source",
+    "label": "Original source",
+    "words": 4279,
+    "target_delta_percent": 86.04,
+    "source_length_percent": 100.0,
+    "source_five_gram_percent": 100.0,
+    "unprotected_five_gram_percent": 100.0,
+    "unprotected_five_gram_windows": 3831,
+    "protected_exact": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "existing",
+    "label": "Existing abridgment",
+    "words": 2816,
+    "target_delta_percent": 22.43,
+    "source_length_percent": 65.81,
+    "source_five_gram_percent": 88.87,
+    "unprotected_five_gram_percent": 86.63,
+    "unprotected_five_gram_windows": 2364,
+    "protected_exact": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "opus_before",
+    "label": "Opus 5.5 · before",
+    "words": 3187,
+    "target_delta_percent": 38.57,
+    "source_length_percent": 74.48,
+    "source_five_gram_percent": 93.33,
+    "unprotected_five_gram_percent": 92.17,
+    "unprotected_five_gram_windows": 2733,
+    "protected_exact": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "revision",
+    "label": "Opus 5.5 · revised",
+    "words": 2376,
+    "target_delta_percent": 3.3,
+    "source_length_percent": 55.53,
+    "source_five_gram_percent": 90.95,
+    "unprotected_five_gram_percent": 88.7,
+    "unprotected_five_gram_windows": 1912,
+    "protected_exact": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "sonnet",
+    "label": "Sonnet 5.5",
+    "words": 3199,
+    "target_delta_percent": 39.09,
+    "source_length_percent": 74.76,
+    "source_five_gram_percent": 94.81,
+    "unprotected_five_gram_percent": 93.91,
+    "unprotected_five_gram_windows": 2744,
+    "protected_exact": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "astra",
+    "label": "GPT-6 Astra",
+    "words": 2173,
+    "target_delta_percent": -5.52,
+    "source_length_percent": 50.78,
+    "source_five_gram_percent": 52.43,
+    "unprotected_five_gram_percent": 41.91,
+    "unprotected_five_gram_windows": 1787,
+    "protected_exact": [
+      "V1",
+      "V4",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  },
+  {
+    "variant": "sol",
+    "label": "GPT-6.1 Sol",
+    "words": 2186,
+    "target_delta_percent": -4.96,
+    "source_length_percent": 51.09,
+    "source_five_gram_percent": 59.65,
+    "unprotected_five_gram_percent": 51.11,
+    "unprotected_five_gram_windows": 1808,
+    "protected_exact": [
+      "V1",
+      "V4",
+      "V7",
+      "V8",
+      "V9"
+    ]
+  }
+]

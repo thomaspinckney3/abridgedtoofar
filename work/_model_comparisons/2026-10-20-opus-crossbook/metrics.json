@@ -1,0 +1,122 @@
+[
+  {
+    "chapter": "education/007",
+    "target": 2200,
+    "variants": [
+      {
+        "variant": "source",
+        "words": 4300,
+        "target_delta_percent": 95.45,
+        "source_length_percent": 100.0,
+        "five_gram_reuse_percent": 100.0,
+        "outside_protected_reuse_percent": 100.0
+      },
+      {
+        "variant": "existing",
+        "words": 2661,
+        "target_delta_percent": 20.95,
+        "source_length_percent": 61.88,
+        "five_gram_reuse_percent": 62.05,
+        "outside_protected_reuse_percent": 60.46
+      },
+      {
+        "variant": "draft",
+        "words": 2932,
+        "target_delta_percent": 33.27,
+        "source_length_percent": 68.19,
+        "five_gram_reuse_percent": 88.77,
+        "outside_protected_reuse_percent": 88.19
+      }
+    ]
+  },
+  {
+    "chapter": "education/027",
+    "target": 2100,
+    "variants": [
+      {
+        "variant": "source",
+        "words": 3991,
+        "target_delta_percent": 90.05,
+        "source_length_percent": 100.0,
+        "five_gram_reuse_percent": 100.0,
+        "outside_protected_reuse_percent": 100.0
+      },
+      {
+        "variant": "existing",
+        "words": 2408,
+        "target_delta_percent": 14.67,
+        "source_length_percent": 60.34,
+        "five_gram_reuse_percent": 91.08,
+        "outside_protected_reuse_percent": 90.73
+      },
+      {
+        "variant": "draft",
+        "words": 2735,
+        "target_delta_percent": 30.24,
+        "source_length_percent": 68.53,
+        "five_gram_reuse_percent": 90.3,
+        "outside_protected_reuse_percent": 89.9
+      }
+    ]
+  },
+  {
+    "chapter": "secret_adversary/003",
+    "target": 1300,
+    "variants": [
+      {
+        "variant": "source",
+        "words": 2388,
+        "target_delta_percent": 83.69,
+        "source_length_percent": 100.0,
+        "five_gram_reuse_percent": 100.0,
+        "outside_protected_reuse_percent": 100.0
+      },
+      {
+        "variant": "existing",
+        "words": 1185,
+        "target_delta_percent": -8.85,
+        "source_length_percent": 49.62,
+        "five_gram_reuse_percent": 60.05,
+        "outside_protected_reuse_percent": 58.34
+      },
+      {
+        "variant": "draft",
+        "words": 1807,
+        "target_delta_percent": 39.0,
+        "source_length_percent": 75.67,
+        "five_gram_reuse_percent": 84.49,
+        "outside_protected_reuse_percent": 83.79
+      }
+    ]
+  },
+  {
+    "chapter": "secret_adversary/009",
+    "target": 1600,
+    "variants": [
+      {
+        "variant": "source",
+        "words": 3012,
+        "target_delta_percent": 88.25,
+        "source_length_percent": 100.0,
+        "five_gram_reuse_percent": 100.0,
+        "outside_protected_reuse_percent": 100.0
+      },
+      {
+        "variant": "existing",
+        "words": 1390,
+        "target_delta_percent": -13.12,
+        "source_length_percent": 46.15,
+        "five_gram_reuse_percent": 49.33,
+        "outside_protected_reuse_percent": 47.08
+      },
+      {
+        "variant": "draft",
+        "words": 1997,
+        "target_delta_percent": 24.81,
+        "source_length_percent": 66.3,
+        "five_gram_reuse_percent": 78.06,
+        "outside_protected_reuse_percent": 76.78
+      }
+    ]
+  }
+]

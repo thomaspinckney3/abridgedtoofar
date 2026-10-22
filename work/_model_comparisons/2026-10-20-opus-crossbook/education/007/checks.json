@@ -1,0 +1,44 @@
+{
+  "words": 2932,
+  "target_words": 2200,
+  "target_delta_percent": 33.27,
+  "within_target_range": false,
+  "under_ceiling": false,
+  "protected": [
+    {
+      "id": "V1",
+      "present": true
+    },
+    {
+      "id": "V2",
+      "present": true
+    },
+    {
+      "id": "V3",
+      "present": true
+    },
+    {
+      "id": "V4",
+      "present": true
+    },
+    {
+      "id": "V5",
+      "present": true
+    },
+    {
+      "id": "V6",
+      "present": true
+    },
+    {
+      "id": "V7",
+      "present": true
+    }
+  ],
+  "reported_infeasible": false,
+  "manual_review": "Source-aware review complete; budget failed. See assessment.json for style and dependency findings.",
+  "accepted_for_production": false,
+  "acceptance_reasons": [
+    "outside_target_range",
+    "over_absolute_ceiling"
+  ]
+}

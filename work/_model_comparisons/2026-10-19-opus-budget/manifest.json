@@ -1,0 +1,99 @@
+{
+  "status": "assessed_with_minor_editorial_findings",
+  "prepared_at": "2026-10-20T02:24:12.924881+00:00",
+  "authorization": "User explicitly approved this proposed Gatsby II experiment in the current conversation.",
+  "maximum_generation_calls": 1,
+  "retries": 0,
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "max_output_tokens": 32000,
+  "rates_usd_per_million": {
+    "input": 4,
+    "output": 20,
+    "cache_write_5m": 5,
+    "cache_read": 0.2
+  },
+  "pricing_source": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+  "expected_cost_usd": [
+    0.15,
+    0.4
+  ],
+  "experiment_cost_ceiling_usd": 0.85,
+  "scope": "Single isolated editorial revision with a bounded preservation plan; not a production pipeline change or publication.",
+  "limitations": [
+    "One chapter and one revision sample, with an assistant-authored plan informed by prior outputs.",
+    "Tests a combined editorial workflow, not a one-variable prompt ablation or an autonomous planning stage.",
+    "Revises an existing Opus draft; the old GPT and Anthropic samples were first drafts.",
+    "The protected excerpts influence wording-overlap measurements; also measure overlap excluding their five-word sequences."
+  ],
+  "live_hashes": {
+    "work/gatsby/chapters/001.md": "dc4d1d94b9704b2adc13cfd42673406cbcf032e1ce648b99672732d45da32168",
+    "work/gatsby/segments/001.md": "5d06466a28236546d25775c53ea33be604eb6964a2663d0455edad78b1d84d08",
+    "work/gatsby/chapters/002.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "work/gatsby/segments/002.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "work/gatsby/plan.json": "016f29eadc40a43f8dcd98879acc1c8fdbbc0879e0639c6823c26cd1fcb2092f",
+    "work/gatsby/cuts.json": "3f41260ce657ccf28cf14ddb2d96ffa07d1a95936be3e0cb19eba622d799b3ad",
+    "work/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "work/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "books/gatsby/abridgment.md": "7d6cc95318c0b2822c0628c0c3ce9bd9f56a14f370e7be149041349865843a0b",
+    "books/gatsby/abridgment.txt": "c7d4bf102b323291db8893eb7365ccae8b6298301c8c2033677099f7eb13ab94",
+    "work/mobydick/chapters/004.md": "d6aa75dabae26d82ac0703b13a6aebaa3ae01f0a86f2145490d24c8c85aea796",
+    "work/mobydick/segments/004.md": "f6fc712b2631cb487e5ff1fb41a3c40cf08e4181c11ef7165e98ddcee7443489",
+    "work/mobydick/chapters/005.md": "908020b2e8df58cf5a8eb90370b3a777af41fe204f3103630914e78397603e0d",
+    "work/mobydick/segments/005.md": "543a1dc886aab039dbfc34b9bf7919137c55b625fe16f785798fd3b62a3d75a0",
+    "work/mobydick/plan.json": "8e6993ac0f1985b2ecbc98c60de5131cbcd960c55cb870dbd67081f01214056c",
+    "work/mobydick/cuts.json": "1fe9d6906f052409619e146c38f9267a5da551b1b7299196c5e1a98bc92a13cb",
+    "work/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "work/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821",
+    "books/mobydick/abridgment.md": "661ee3b69d549b7d81866a430de5f1ef3001bb050ebcc8bb8a20d832f3d0a8ee",
+    "books/mobydick/abridgment.txt": "50da52b1a16815c4896491eb5d9733fe62bd685bc44288c21f54417958051821"
+  },
+  "original_input_hashes": {
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19/gatsby/baseline/chapters/002.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19/gatsby/baseline/segments/002.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19/gatsby/opus55/segments/002.md": "e15e9d84785a6c3ced65cc0c3610d232fa71e340be06344ce54a2a9a128e5261",
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19/gatsby/sonnet55/segments/002.md": "1ee265def09b51b5a5afcc9210b03dd9c7913e8cf2b2363a7ecd01e92b0218ac",
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19-gpt/gatsby/astra/segments/002.md": "2452093c350246aa739ec5bd02ad1eb7bf49466207e8f9e7b1e0a79618e491f4",
+    "/mnt/data/forage/work/_model_comparisons/2026-10-19-gpt/gatsby/sol61/segments/002.md": "78ce53ee959b1f3d22782ffff3afb5551ff3b0c3d327ccc764e04d1ff800738b"
+  },
+  "frozen_hashes": {
+    "inputs/astra.md": "2452093c350246aa739ec5bd02ad1eb7bf49466207e8f9e7b1e0a79618e491f4",
+    "inputs/sol.md": "78ce53ee959b1f3d22782ffff3afb5551ff3b0c3d327ccc764e04d1ff800738b",
+    "inputs/source.md": "1815a801ef1a80e408cb5cbce156c1eeca04a7d18627e34db65ad111273533da",
+    "inputs/opus_before.md": "e15e9d84785a6c3ced65cc0c3610d232fa71e340be06344ce54a2a9a128e5261",
+    "inputs/sonnet.md": "1ee265def09b51b5a5afcc9210b03dd9c7913e8cf2b2363a7ecd01e92b0218ac",
+    "inputs/existing.md": "845658260e1457989e756e8e5875329e2908b1a4b2c9c65714eda637c82a3201",
+    "preservation_plan.json": "4341181dbcf424d60321d41c1f276a9db1f9afc2bb0767c6d9626eb2fd870b46",
+    "request.json": "67a39b4b327544b0db931ce661936ca7725af28aff4427af8870a80dd3249a9b",
+    "request.txt": "9f058437f0d81bd78c5d8449e288beb06e4fe0f34a4accf33f1b197be59c3f3b"
+  },
+  "counted_input_tokens": 19733,
+  "maximum_cost_usd": 0.743785,
+  "result": {
+    "status": "complete",
+    "cost_usd": 0.388492,
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "global",
+      "input_tokens": 19733,
+      "output_tokens": 15478,
+      "output_tokens_details": {
+        "thinking_tokens": 9216
+      },
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard"
+    },
+    "model": "claude-opus-5-5",
+    "stop_reason": "end_turn",
+    "words": 2376,
+    "duration_s": 122.86
+  },
+  "finished_at": "2026-10-20T02:26:28.895318+00:00",
+  "assessment": "assessment.json"
+}

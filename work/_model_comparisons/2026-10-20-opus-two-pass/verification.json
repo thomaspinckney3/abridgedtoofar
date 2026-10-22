@@ -1,0 +1,424 @@
+{
+  "status": "pass",
+  "live_artifacts_unchanged": 474,
+  "previous_experiment_artifacts_unchanged": 91,
+  "frozen_inputs_unchanged": 33,
+  "executed_implementation_snapshot_verified": true,
+  "current_code_renders_identical_model_requests": true,
+  "post_run_validation_fix": {
+    "changes": [
+      {
+        "path": "forage/target_revision.py",
+        "executed_sha256": "8153182dc2cf29c9cae7553e35d3b71896496a234dbcfbabba727850b07f51ca",
+        "current_sha256": "24aca27119f081f4e8125e6feb303911ec67ec38e63e0a69e9db414dc4040f18",
+        "reason": "After the live run, scope plan auditing to alternate length fields so literal source quotations containing words such as overrun remain valid. Prompt templates and model-facing requests are unchanged."
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": "education/007",
+      "target_words": 2200,
+      "initial": {
+        "words": 2728,
+        "target_words": 2200,
+        "target_delta_words": 528,
+        "target_delta_percent": 24.0,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "revision": {
+        "words": 2215,
+        "target_words": 2200,
+        "target_delta_words": 15,
+        "target_delta_percent": 0.68,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "cut_evaluations": 17,
+      "dependency_evidence_pairs": 6,
+      "prose_matches_provider": true,
+      "feedback_matches_mechanical_count": true
+    },
+    {
+      "chapter": "education/027",
+      "target_words": 2100,
+      "initial": {
+        "words": 2926,
+        "target_words": 2100,
+        "target_delta_words": 826,
+        "target_delta_percent": 39.33,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "revision": {
+        "words": 2326,
+        "target_words": 2100,
+        "target_delta_words": 226,
+        "target_delta_percent": 10.76,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "cut_evaluations": 18,
+      "dependency_evidence_pairs": 5,
+      "prose_matches_provider": true,
+      "feedback_matches_mechanical_count": true
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "target_words": 1300,
+      "initial": {
+        "words": 1909,
+        "target_words": 1300,
+        "target_delta_words": 609,
+        "target_delta_percent": 46.85,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "revision": {
+        "words": 1302,
+        "target_words": 1300,
+        "target_delta_words": 2,
+        "target_delta_percent": 0.15,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "cut_evaluations": 17,
+      "dependency_evidence_pairs": 5,
+      "prose_matches_provider": true,
+      "feedback_matches_mechanical_count": true
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "target_words": 1600,
+      "initial": {
+        "words": 2063,
+        "target_words": 1600,
+        "target_delta_words": 463,
+        "target_delta_percent": 28.94,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "revision": {
+        "words": 1602,
+        "target_words": 1600,
+        "target_delta_words": 2,
+        "target_delta_percent": 0.12,
+        "target_matched": false,
+        "protected": [
+          {
+            "id": "V1",
+            "present": true
+          },
+          {
+            "id": "V2",
+            "present": true
+          },
+          {
+            "id": "V3",
+            "present": true
+          },
+          {
+            "id": "V4",
+            "present": true
+          },
+          {
+            "id": "V5",
+            "present": true
+          },
+          {
+            "id": "V6",
+            "present": true
+          },
+          {
+            "id": "V7",
+            "present": true
+          },
+          {
+            "id": "V8",
+            "present": true
+          }
+        ]
+      },
+      "cut_evaluations": 17,
+      "dependency_evidence_pairs": 6,
+      "prose_matches_provider": true,
+      "feedback_matches_mechanical_count": true
+    }
+  ],
+  "calls": [
+    {
+      "path": "education/007/two_pass/initial.response.json",
+      "cost_usd": 0.29036
+    },
+    {
+      "path": "education/007/two_pass/revision.response.json",
+      "cost_usd": 0.335916
+    },
+    {
+      "path": "education/027/two_pass/initial.response.json",
+      "cost_usd": 0.203696
+    },
+    {
+      "path": "education/027/two_pass/revision.response.json",
+      "cost_usd": 0.34472
+    },
+    {
+      "path": "education/planning.response.json",
+      "cost_usd": 1.77678
+    },
+    {
+      "path": "secret_adversary/003/two_pass/initial.response.json",
+      "cost_usd": 0.207944
+    },
+    {
+      "path": "secret_adversary/003/two_pass/revision.response.json",
+      "cost_usd": 0.50132
+    },
+    {
+      "path": "secret_adversary/009/two_pass/initial.response.json",
+      "cost_usd": 0.220456
+    },
+    {
+      "path": "secret_adversary/009/two_pass/revision.response.json",
+      "cost_usd": 0.6355
+    },
+    {
+      "path": "secret_adversary/planning.response.json",
+      "cost_usd": 0.99722
+    }
+  ],
+  "cost_usd": 5.513912,
+  "limits": "Provenance and arithmetic verification; not a declaration of editorial quality or target compliance."
+}

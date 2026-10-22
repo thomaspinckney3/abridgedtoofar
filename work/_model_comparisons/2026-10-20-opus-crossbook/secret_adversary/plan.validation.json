@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "chapter_ids": [
+    "003",
+    "009"
+  ],
+  "protected_words": {
+    "003": 108,
+    "009": 141
+  },
+  "dependencies": {
+    "003": 6,
+    "009": 7
+  },
+  "checks": [
+    "ids and structural limits",
+    "verbatim excerpts match assigned source paragraphs",
+    "protected words <=25% target",
+    "dependency evidence exists locally and elsewhere in whole book",
+    "section budgets sum exactly to target"
+  ],
+  "limit": "Quote existence and budget checks do not establish the quality or completeness of the editorial plan."
+}

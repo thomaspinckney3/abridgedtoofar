@@ -1,0 +1,26 @@
+{
+  "id": "msg_011CgDa32GvmofevXny1XTuP",
+  "model": "claude-opus-5-5",
+  "stop_reason": "end_turn",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 700,
+    "output_tokens": 122,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "text": "{\"patches\": [{\"issue_id\": \"009-verbatim-5\", \"action\": \"replace\", \"text\": \"In Russia we have ways of making a girl talk.”\", \"reason\": \"In the source paragraph this sentence falls mid-speech after “And you have not made her speak?”, so it has no opening quotation mark of its own. The excerpt now matches the source exactly.\"}]}",
+  "cost_usd": 0.00524,
+  "duration_s": 2.52,
+  "finished_at": "2026-10-20T13:30:15.490848+00:00"
+}

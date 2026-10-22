@@ -1,0 +1,1786 @@
+{
+  "summary": {
+    "reviewed_chapters": 4,
+    "complete_model_reviews": 4,
+    "paid_attempts": 6,
+    "truncated_attempts": 2,
+    "cost_usd": 1.643964,
+    "model": "claude-sonnet-5-5",
+    "issue_counts": {
+      "must_fix": 2,
+      "should_improve": 5,
+      "tradeoff": 6
+    },
+    "dependency_counts": {
+      "intact": 20,
+      "partner_chapter_omitted": 2
+    },
+    "raw_candidates_adjudicated": 26,
+    "repairs_applied": false,
+    "published": false
+  },
+  "reviewer": "Sonnet 5.5 candidates with coding-assistant source-aware adjudication; not blinded.",
+  "conclusions": {
+    "education/007": "Repair the companions introduction; restore the language qualification and clarify the art reference. Main educational irony and the Beethoven/Rome connection remain.",
+    "education/027": "Correct the broadened artist subject and clarify two local comparisons. Marx, Cellini half-natures, personal-method hedges, and the main force/taste argument survive.",
+    "secret_adversary/003": "No confirmed plot or attribution failure. Improve selected dialogue rhythm if style is the priority; distinguish optional losses from broken clues.",
+    "secret_adversary/009": "No required repair identified. Spatial mechanism, limited recognition, principal clues, and cliffhanger survive. Some suspense timing and ceremony are compressed."
+  },
+  "issues": [
+    {
+      "id": "B1",
+      "chapter": "education/007",
+      "priority": "must_fix",
+      "origin": "revision",
+      "title": "Introduce the traveling companions",
+      "assessment": "The second pass deletes the companions' introduction, then retains 'the boys' at Eaton Hall and later 'his friends'. This is the confirmed small continuity break from the earlier structural review. It does not require restoring the travel description.",
+      "suggested_repair": "Restore the source's short college-companions introduction near the sailing sentence.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 2,
+          "quote": "Several of his college companions sailed with him",
+          "file": "education/007/documents/007.source.md"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 2,
+          "quote": "Several of his college companions sailed with him",
+          "file": "education/007/documents/007.initial.md"
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 3,
+          "quote": "At Eaton Hall the boys were awed",
+          "file": "education/007/documents/007.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "chapter": "education/007",
+      "priority": "should_improve",
+      "origin": "revision",
+      "title": "Restore the qualification about learning German",
+      "assessment": "The first draft retained Adams's explicit admission that he never learned German well, followed by the joke about his English. The revision removes both. 'Whatever success he had' still hedges the result, so this is loss of a factual qualification and self-mockery, not an affirmative claim of fluency.",
+      "suggested_repair": "Restore the short admission and, if space permits, its English-language joke.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 11,
+          "quote": "Adams never learned to talk German well, but the same might be said of his English",
+          "file": "education/007/documents/007.source.md"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 12,
+          "quote": "Adams never learned to talk German well",
+          "file": "education/007/documents/007.initial.md"
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 12,
+          "quote": "Whatever success he had interested him less than his contact with German education.",
+          "file": "education/007/documents/007.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "chapter": "education/007",
+      "priority": "should_improve",
+      "origin": "revision",
+      "title": "Reconnect the Cross image to the artwork",
+      "assessment": "Both references to the Descent from the Cross disappear from the revised Antwerp passage, while kneeling at the foot of the Cross remains. The surviving cathedral, Rubens and 'only sensual' cues make the scene recoverable, but the specific aesthetic experience becomes less clear. This is a qualified interpretation concern, not proof of a wholly incoherent passage.",
+      "suggested_repair": "Restore the artwork's name with a short source-grounded connection.",
+      "evidence": [
+        {
+          "document": "education/007/initial",
+          "paragraph": 6,
+          "quote": "Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross.",
+          "file": "education/007/documents/007.initial.md"
+        },
+        {
+          "document": "education/007/source",
+          "paragraph": 6,
+          "quote": "He never dreamed of trying to educate himself to the Descent from the Cross.",
+          "file": "education/007/documents/007.source.md"
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 6,
+          "quote": "He was only too happy to feel himself kneeling at the foot of the Cross",
+          "file": "education/007/documents/007.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "chapter": "education/007",
+      "priority": "tradeoff",
+      "origin": "mixed_first_draft_and_revision",
+      "title": "Opening irony and the tourist joke lose some buildup",
+      "assessment": "The first draft already omitted the rejoinder that Europe enabled the family's success and the tourist-mathematics capstone. Revision further cuts the boy's 'probably human' self-assessment and the sentence accumulating travel impressions before the mathematical joke. The core paradoxes remain; restoring every lost clause would defeat the abridgment.",
+      "suggested_repair": "Optional: restore one representative ironic qualification or the impressions setup, rather than the entire opening.",
+      "evidence": [
+        {
+          "document": "education/007/source",
+          "paragraph": 1,
+          "quote": "but he was probably human, and no worse than some others.",
+          "file": "education/007/documents/007.source.md"
+        },
+        {
+          "document": "education/007/initial",
+          "paragraph": 2,
+          "quote": "It united itself with a great variety of other impressions",
+          "file": "education/007/documents/007.initial.md"
+        },
+        {
+          "document": "education/007/revision",
+          "paragraph": 2,
+          "quote": "One began at last to see that a great many impressions were needed to make very little education",
+          "file": "education/007/documents/007.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "chapter": "education/027",
+      "priority": "must_fix",
+      "origin": "first_draft",
+      "title": "Avoid broadening two artists' response into a general claim",
+      "assessment": "The source's 'They felt a railway train as power' refers to St. Gaudens and Matthew Arnold. Both generated drafts make this 'Artists felt', broadening that assertion. The source separately broadens the following complaint about expressing railway power in art to all artists. Those two scopes should remain distinct. This was inherited from the first pass.",
+      "suggested_repair": "Keep St. Gaudens as the subject of the train-as-power clause; retain the broader subject only for the artists' complaint.",
+      "evidence": [
+        {
+          "document": "education/027/source",
+          "paragraph": 20,
+          "quote": "St. Gaudens at Amiens was hardly less sensitive to the force of the female energy than Matthew Arnold",
+          "file": "education/027/documents/027.source.md"
+        },
+        {
+          "document": "education/027/source",
+          "paragraph": 20,
+          "quote": "They felt a railway train as power, yet they, and all other artists, constantly complained",
+          "file": "education/027/documents/027.source.md"
+        },
+        {
+          "document": "education/027/initial",
+          "paragraph": 17,
+          "quote": "Artists felt a railway train as power",
+          "file": "education/027/documents/027.initial.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 17,
+          "quote": "Artists felt a railway train as power",
+          "file": "education/027/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "chapter": "education/027",
+      "priority": "should_improve",
+      "origin": "revision",
+      "title": "Restore the two sides of the chemist comparison",
+      "assessment": "The first draft retained both the chemist's skepticism about translating forces and his unfamiliarity with dynamos, automobiles and radium. Revision cuts both while retaining 'force of all' and 'the rays were unborn'. Earlier rays/faith context still makes the overall argument intelligible, but the local example loses its explicit comparison. The partial critic wrongly attributed part of this loss to the first draft.",
+      "suggested_repair": "Restore a compact reference to the physical forces alongside Venus/Virgin, and the chemist's ability to feel both.",
+      "evidence": [
+        {
+          "document": "education/027/source",
+          "paragraph": 8,
+          "quote": "neither had he heard of dynamos or automobiles or radium",
+          "file": "education/027/documents/027.source.md"
+        },
+        {
+          "document": "education/027/initial",
+          "paragraph": 8,
+          "quote": "Such a reversible process would vastly amuse a chemist",
+          "file": "education/027/documents/027.initial.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 8,
+          "quote": "yet his mind was ready to feel the force of all, though the rays were unborn and the women were dead.",
+          "file": "education/027/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "chapter": "education/027",
+      "priority": "should_improve",
+      "origin": "first_draft_worsened_by_revision",
+      "title": "Clarify 'all were occult' and 'easiest to handle'",
+      "assessment": "The comparison with radium and other radiant matter was already cut in the first pass. Revision changes 'any of them' to 'any of it' and removes further plural terms, while retaining 'all' and the Virgin being 'easiest'. Earlier discussion of forces supplies recoverable context; this remains a possible local clarity problem, not a demonstrated collapse of the argument.",
+      "suggested_repair": "Restore a short plural comparison grounded in the source, then check the whole paragraph.",
+      "evidence": [
+        {
+          "document": "education/027/source",
+          "paragraph": 21,
+          "quote": "It could scarcely be more complex than radium",
+          "file": "education/027/documents/027.source.md"
+        },
+        {
+          "document": "education/027/initial",
+          "paragraph": 18,
+          "quote": "Adams knew nothing about any of them",
+          "file": "education/027/documents/027.initial.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 18,
+          "quote": "Adams knew nothing about any of it, but though all were occult",
+          "file": "education/027/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "chapter": "education/027",
+      "priority": "tradeoff",
+      "origin": "revision",
+      "title": "Some vivid analogies and comic endings disappear",
+      "assessment": "The second pass removes the Lancelot knife-edge image and the sentence about the dynamo's sex. The risky personal method and the explicit exclusion of the moral issue remain. These are real losses of imagery and ironic cadence, not missing logical premises that all need restoration.",
+      "suggested_repair": "Optional: retain one of these distinctive short effects at the expense of less distinctive exposition.",
+      "evidence": [
+        {
+          "document": "education/027/initial",
+          "paragraph": 9,
+          "quote": "The knife-edge along which he must crawl, like Sir Lancelot in the twelfth century",
+          "file": "education/027/documents/027.initial.md"
+        },
+        {
+          "document": "education/027/source",
+          "paragraph": 15,
+          "quote": "He cared nothing for the sex of the dynamo until he could measure its energy.",
+          "file": "education/027/documents/027.source.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 13,
+          "quote": "did not concern one who was studying the relations of unmoral force.",
+          "file": "education/027/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "W1",
+      "chapter": "secret_adversary/003",
+      "priority": "should_improve",
+      "origin": "revision",
+      "title": "Preserve more of the negotiation's spoken rhythm",
+      "assessment": "Revision turns Whittington's ceremonious explanation into brisk transactional speech and removes his retort between Tuppence's two proposed explanations for 'Jane Finn'. The speakers and bluff remain clear, but the character performance and resistance in the exchange are reduced. This is a style concern the structural critic did not measure.",
+      "suggested_repair": "Prefer retaining the retort and selected original sentence shapes; fund them with a whole optional cut elsewhere.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/initial",
+          "paragraph": 47,
+          "quote": "Well, I will tell you. I could doubtless obtain some one else for very much less.",
+          "file": "secret_adversary/003/documents/003.initial.md"
+        },
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 86,
+          "quote": "It’s likely, isn’t it, then there would be two girls with a name like that?",
+          "file": "secret_adversary/003/documents/003.source.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 40,
+          "quote": "I am paying for intelligence to sustain the part, and discretion not to ask too many questions.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 60,
+          "quote": "Or I might just have hit upon it by chance",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "W2",
+      "chapter": "secret_adversary/003",
+      "priority": "tradeoff",
+      "origin": "revision",
+      "title": "The American cover-identity hint is less explicit",
+      "assessment": "The reason an American past would be easier to sustain is cut. Paris, the ward role, secrecy and passing as an American all remain, and the later impersonation inference still works. This is a weakened supporting clue, not a broken dependency.",
+      "suggested_repair": "Optional: restore the short sentence about sustaining details of her English past.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 59,
+          "quote": "Details about your past life in England might be more difficult to sustain.",
+          "file": "secret_adversary/003/documents/003.source.md"
+        },
+        {
+          "document": "secret_adversary/003/initial",
+          "paragraph": 42,
+          "quote": "Details about your past life in England might be more difficult to sustain.",
+          "file": "secret_adversary/003/documents/003.initial.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 36,
+          "quote": "it might be simpler for you to pass as an American.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "chapter": "secret_adversary/003",
+      "priority": "tradeoff",
+      "origin": "mixed_first_draft_and_revision",
+      "title": "The narrator's smile is thinner around Tuppence's bluff",
+      "assessment": "The adventuress/adventurous wordplay was already absent in the first draft. Revision additionally removes her pause to admire her ingenuity. 'Intoxicated with the success of truthfulness', the terrier shake and the hospital-plate dream survive. The critic's blanket attribution of these losses to revision was inaccurate.",
+      "suggested_repair": "Optional: restore one short narratorial aside, rather than every repeated bluff exchange.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/source",
+          "paragraph": 90,
+          "quote": "Her present part was of the adventuress rather than the adventurous order",
+          "file": "secret_adversary/003/documents/003.source.md"
+        },
+        {
+          "document": "secret_adversary/003/initial",
+          "paragraph": 76,
+          "quote": "Tuppence paused a moment to admire her own ingenuity",
+          "file": "secret_adversary/003/documents/003.initial.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 60,
+          "quote": "continued Tuppence, intoxicated with the success of truthfulness.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "T1",
+      "chapter": "secret_adversary/009",
+      "priority": "tradeoff",
+      "origin": "revision",
+      "title": "Door-handle suspense is faster and less comic",
+      "assessment": "The long sequence of tentative movement, hesitation and mounting annoyance is compressed. The locked door, careful restoration of the handle, indignation, bedroom detour and listening through the portière all remain. The mechanism is coherent; the loss is suspense timing, explicitly permitted by the plan.",
+      "suggested_repair": "No required repair. If pacing feels too brisk, restore a single hesitation before the locked-door revelation.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/source",
+          "paragraph": 34,
+          "quote": "A little more--a little more still--would it never be finished?",
+          "file": "secret_adversary/009/documents/009.source.md"
+        },
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 26,
+          "quote": "Then he pressed, finally with all his might. But the door remained firm.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        }
+      ]
+    },
+    {
+      "id": "T2",
+      "chapter": "secret_adversary/009",
+      "priority": "tradeoff",
+      "origin": "revision",
+      "title": "Number One's ceremonial refusal of the chair disappears",
+      "assessment": "The initial draft includes the Russian's demurral; revision summarizes the German's insistence. The next line explicitly seats Number One, so the pronoun does not create sustained speaker or staging confusion. A small characterization beat is lost.",
+      "suggested_repair": "No required repair. Optionally retain the short demurral if that social performance matters.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/source",
+          "paragraph": 30,
+          "quote": "The Russian demurred, but the other insisted.",
+          "file": "secret_adversary/009/documents/009.source.md"
+        },
+        {
+          "document": "secret_adversary/009/initial",
+          "paragraph": 26,
+          "quote": "The Russian demurred, but the other insisted.",
+          "file": "secret_adversary/009/documents/009.initial.md"
+        },
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 24,
+          "quote": "The German insisted that he take the head of the table.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "chapter": "education/007",
+      "index": 0,
+      "partner": "027",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 4,
+          "quote": "he had no idea that Karl Marx was standing there waiting for him",
+          "file": "education/007/documents/007.revision.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 2,
+          "quote": "He had studied Karl Marx and his doctrines of history with profound attention",
+          "file": "education/007/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/007",
+      "index": 1,
+      "partner": "027",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 15,
+          "quote": "All State education is a sort of dynamo machine for polarizing the popular mind",
+          "file": "education/007/documents/007.revision.md"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 3,
+          "quote": "but to Adams the dynamo became a symbol of infinity",
+          "file": "education/007/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/007",
+      "index": 2,
+      "partner": "025",
+      "status": "partner_chapter_omitted",
+      "note": "The local text is self-contained, but the source-book echo is absent because the existing partner chapter is omitted. Not a defect newly introduced by revision.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 16,
+          "quote": "the ghost of the Civil Law shut up in the darkest of closets, never to gibber again",
+          "file": "education/007/documents/007.revision.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/007",
+      "index": 3,
+      "partner": "008",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 17,
+          "quote": "surrounded by the commonest of German Haus-frauen, a new sense burst out like a flower in his life",
+          "file": "education/007/documents/007.revision.md"
+        },
+        {
+          "document": "education/008/production",
+          "paragraph": 8,
+          "quote": "passed Beethoven as a piece of accidental education",
+          "file": "education/007/documents/008.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/007",
+      "index": 4,
+      "partner": "004",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 10,
+          "quote": "he was pleased to find a young worshipper in the remote Prussian wilderness",
+          "file": "education/007/documents/007.revision.md"
+        },
+        {
+          "document": "education/004/production",
+          "paragraph": 12,
+          "quote": "The boy worshipped him",
+          "file": "education/007/documents/004.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/007",
+      "index": 5,
+      "partner": "029",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/007/revision",
+          "paragraph": 18,
+          "quote": "it should not be again in Berlin.",
+          "file": "education/007/documents/007.revision.md"
+        },
+        {
+          "document": "education/029/production",
+          "paragraph": 9,
+          "quote": "forty years of varied emotions had not deadened his memories of that city",
+          "file": "education/007/documents/029.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/027",
+      "index": 0,
+      "partner": "024",
+      "status": "partner_chapter_omitted",
+      "note": "The local text is self-contained, but the source-book echo is absent because the existing partner chapter is omitted. Not a defect newly introduced by revision.",
+      "evidence": [
+        {
+          "document": "education/027/revision",
+          "paragraph": 1,
+          "quote": "since 1893, when he began the study at Chicago.",
+          "file": "education/027/documents/027.revision.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/027",
+      "index": 1,
+      "partner": "026",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/027/revision",
+          "paragraph": 1,
+          "quote": "Langley, of the Smithsonian, came by, and showed it to him.",
+          "file": "education/027/documents/027.revision.md"
+        },
+        {
+          "document": "education/026/production",
+          "paragraph": 22,
+          "quote": "After Gibbs, one of the most distinguished was Langley, of the Smithsonian",
+          "file": "education/027/documents/026.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/027",
+      "index": 2,
+      "partner": "033",
+      "status": "intact",
+      "note": "The originally cited Civitas Dei sentence is cut, but the later 'catastrophe of 310' passage retains the connection. An exact-quote-only check would wrongly report failure.",
+      "evidence": [
+        {
+          "document": "education/027/revision",
+          "paragraph": 7,
+          "quote": "that of 310, when Constantine set up the Cross.",
+          "file": "education/027/documents/027.revision.md"
+        },
+        {
+          "document": "education/033/production",
+          "paragraph": 16,
+          "quote": "Its first violent acceleration in historical times had ended in the catastrophe of 310.",
+          "file": "education/027/documents/033.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/027",
+      "index": 3,
+      "partner": "023",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/027/revision",
+          "paragraph": 15,
+          "quote": "One sees what one brings",
+          "file": "education/027/documents/027.revision.md"
+        },
+        {
+          "document": "education/023/production",
+          "paragraph": 22,
+          "quote": "Like all great artists, St. Gaudens held up the mirror and no more.",
+          "file": "education/027/documents/023.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "education/027",
+      "index": 4,
+      "partner": "031",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "education/027/revision",
+          "paragraph": 17,
+          "quote": "At Chartres--perhaps at Lourdes",
+          "file": "education/027/documents/027.revision.md"
+        },
+        {
+          "document": "education/031/production",
+          "paragraph": 4,
+          "quote": "Adams had gone straight to the Virgin at Chartres",
+          "file": "education/027/documents/031.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "index": 0,
+      "partner": "005",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 80,
+          "quote": "“That’ll do, Brown. You can go.”",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 78,
+          "quote": "“Telephone message just come for you, sir.”",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 29,
+          "quote": "in Mr. Whittington's office, the clerk—he called him Brown.",
+          "file": "secret_adversary/003/documents/005.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "index": 1,
+      "partner": "013",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 53,
+          "quote": "Who’s been blabbing? Rita?",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 54,
+          "quote": "careful not to drag an unknown Rita into it",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/013/production",
+          "paragraph": 79,
+          "quote": "Who's been blabbing? Rita?",
+          "file": "secret_adversary/003/documents/013.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "index": 2,
+      "partner": "004",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 48,
+          "quote": "She seized hurriedly on the first name that came into her head.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/004/production",
+          "paragraph": 13,
+          "quote": "You didn't invent it. *I* told it to you.",
+          "file": "secret_adversary/003/documents/004.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "index": 3,
+      "partner": "005",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 27,
+          "quote": "one of those charming _pensionnats de jeunes filles_ with which Paris abounds",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 32,
+          "quote": "You would go as my ward, hold no communication with your friends, and keep absolute secrecy.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/005/production",
+          "paragraph": 42,
+          "quote": "They'll produce a Jane Finn of their own",
+          "file": "secret_adversary/003/documents/005.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "index": 4,
+      "partner": "004",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/003/revision",
+          "paragraph": 3,
+          "quote": "He was a big man, clean shaven, with a heavy jowl, and small, cunning, shifty eyes.",
+          "file": "secret_adversary/003/documents/003.revision.md"
+        },
+        {
+          "document": "secret_adversary/004/production",
+          "paragraph": 15,
+          "quote": "One was a big fat sort of chap. Clean shaven, and dark.",
+          "file": "secret_adversary/003/documents/004.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 0,
+      "partner": "018",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 15,
+          "quote": "He was a small man, very pale, with a gentle almost womanish air.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/018/production",
+          "paragraph": 56,
+          "quote": "So that's who Number 1 is",
+          "file": "secret_adversary/009/documents/018.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 1,
+      "partner": "018",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 12,
+          "quote": "a working man whose face was vaguely familiar to the young man.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 13,
+          "quote": "His face, again, was not unknown to the watcher, though he could not put a name to it.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/018/production",
+          "paragraph": 60,
+          "quote": "Carter handed him another. Tommy exclaimed.",
+          "file": "secret_adversary/009/documents/018.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 2,
+      "partner": "017",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 47,
+          "quote": "“The 29th,” the German answered.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/017/production",
+          "paragraph": 21,
+          "quote": "is less than a fortnight ahead",
+          "file": "secret_adversary/009/documents/017.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 3,
+      "partner": "017",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 2,
+          "quote": "not a request for an individual, but in all probability a password used by the gang.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 3,
+          "quote": "The doorkeeper clearly did not know all the gang by sight",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/017/production",
+          "paragraph": 9,
+          "quote": "With your own password, wasn't it?",
+          "file": "secret_adversary/009/documents/017.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 4,
+      "partner": "027",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 2,
+          "quote": "a small recess immediately on his right, half concealed by a torn velvet curtain, directly opposite the left-handed door and commanding a good view of the staircase.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/027/production",
+          "paragraph": 11,
+          "quote": "the ragged curtain hiding the recess",
+          "file": "secret_adversary/009/documents/027.production.md"
+        }
+      ]
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "index": 5,
+      "partner": "018",
+      "status": "intact",
+      "note": "Both endpoints survive in function; quotation need not be identical.",
+      "evidence": [
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 5,
+          "quote": "had the low beetling brows and criminal jaw of a type Scotland Yard would have recognized at a glance.",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/009/revision",
+          "paragraph": 54,
+          "quote": "“Clymes must go. He is too far-seeing. Number Fourteen will see to that.”",
+          "file": "secret_adversary/009/documents/009.revision.md"
+        },
+        {
+          "document": "secret_adversary/018/production",
+          "paragraph": 25,
+          "quote": "Conrad entered with the evil-looking Number 14",
+          "file": "secret_adversary/009/documents/018.production.md"
+        }
+      ]
+    }
+  ],
+  "raw_candidate_reviews": [
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F1",
+        "priority": "should_improve",
+        "axis": "referents_and_scene",
+        "title": "'Whether worthy or not' is orphaned",
+        "origin": "revision",
+        "claim": "The first draft opened paragraph 2 with 'Whether the boy deserved such indulgence, or was worth it, he knew no more than they'. The revision cut that clause but kept the tail phrase 'Whether worthy or not'. It now opens a sentence with no stated question. Paragraph 1 ended on the parents' smile, not on any doubt about desert.",
+        "reader_effect": "A reader stumbles over an unexplained 'whether' where the narrator's ironic doubt about his own worth should link the departure to the voyage.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 2,
+            "quote": "Whether worthy or not, he began his third or fourth attempt at education in November, 1858, by sailing on the steamer Persia."
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 2,
+            "quote": "Whether the boy deserved such indulgence, or was worth it, he knew no more than they"
+          },
+          {
+            "document": "education/007/source",
+            "paragraph": 2,
+            "quote": "Whether the boy deserved such indulgence, or was worth it, he knew no more than they, or than a professor at Harvard College"
+          }
+        ],
+        "counterevidence": "Paragraph 1 does discuss the boy's merits and the parents' indulgence, so the sense can be inferred.",
+        "plan_relation": "Optional trimming executed with a dangling residue; the plan did not prescribe this seam.",
+        "minimal_repair": "Restore a short clause, for example 'Whether the boy deserved such indulgence he knew no more than they; but he began…', or change 'Whether worthy or not' to 'Worthy or not'.",
+        "confidence": "high"
+      },
+      "review": "rejected",
+      "reason": "'Whether worthy' is intelligible from the parents' indulgence and the preceding portrait."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F2",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "Tourist-mathematics joke has lost its premise",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "In the source the axiom follows from the gale joining 'a great variety of other impressions' that made the first month 'the rapidest school of education he had yet found'. The first draft kept that sentence. The revision cuts it, so 'a great many impressions' arrives right after the gale with no impressions yet mentioned. The source's closing capstone ('How many would turn out to be wrong…was ultimate wisdom') was already gone in the first draft.",
+        "reader_effect": "The joke is protected verbatim and still reads, but its premise (a month of accumulating impressions, a deceptive 'gigantic' stride in knowledge) is not set up. The reader gets the axiom without the experience it summarizes.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 2,
+            "quote": "which, for mere physical misery, passed endurance. One began at last to see that a great many impressions were needed to make very little education"
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 2,
+            "quote": "It united itself with a great variety of other impressions which made the first month of travel altogether the rapidest school of education he had yet found."
+          },
+          {
+            "document": "education/007/source",
+            "paragraph": 2,
+            "quote": "How many would turn out to be wrong whether any could turn out right, was ultimate wisdom."
+          }
+        ],
+        "counterevidence": "The England and Chester paragraphs that follow supply impressions retrospectively, so the axiom is not meaningless.",
+        "plan_relation": "The plan names the premise 'many impressions, little education' as essential; the premise was thinned while the line itself was preserved.",
+        "minimal_repair": "Restore a clause such as 'It united itself with a great variety of other impressions, and the first month of travel was the rapidest school he had yet found.' before 'One began at last to see…'.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Real setup compression; later travel impressions preserve the general sense. See B4."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F3",
+        "priority": "should_improve",
+        "axis": "referents_and_scene",
+        "title": "'The boys' at Eaton Hall have no antecedent",
+        "origin": "revision",
+        "claim": "The first draft kept 'Several of his college companions sailed with him' in paragraph 2. The revision cut it. 'At Eaton Hall the boys were awed' now refers to a group never introduced. The next sentence moves to 'An eighteenth-century American boy fresh from Boston', singular.",
+        "reader_effect": "A momentary question arises about who 'the boys' are and why Adams is travelling in company, when he was introduced as sailing alone with his own private motive.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 3,
+            "quote": "At Eaton Hall the boys were awed, as Thackeray or Dickens would have felt in the presence of a Duke."
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 2,
+            "quote": "Several of his college companions sailed with him"
+          }
+        ],
+        "counterevidence": "'The boys' could be read loosely as Adams plus unspecified fellow tourists, and 'the young man' is still the focal figure.",
+        "plan_relation": "A side effect of an optional trim in paragraph 2, not a planned omission.",
+        "minimal_repair": "Change to 'At Eaton Hall he and his companions were awed…', or restore 'Several of his college companions sailed with him.'",
+        "confidence": "high"
+      },
+      "review": "confirmed",
+      "reason": "Companions introduction is gone; B1."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F4",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "'Foot of the Cross' is unmoored from the Descent from the Cross",
+        "origin": "revision",
+        "claim": "The first draft kept 'Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross.' The revision cut that sentence, and also 'He never dreamed of trying to educate himself to the Descent from the Cross'. The paragraph ends on 'kneeling at the foot of the Cross' and 'getting up again', but the painting or cathedral that makes this an aesthetic experience is never named. The plan says that if this sentence is retained, it should be kept as a unit.",
+        "reader_effect": "The image reads as generic religious feeling, or as an unexplained metaphor. The point is that Rubens in the cathedral overwhelmed him sensually and left no education.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 6,
+            "quote": "He was only too happy to feel himself kneeling at the foot of the Cross; he learned only to loathe the sordid necessity of getting up again"
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 6,
+            "quote": "Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross."
+          },
+          {
+            "document": "education/007/source",
+            "paragraph": 6,
+            "quote": "He never dreamed of trying to educate himself to the Descent from the Cross."
+          }
+        ],
+        "counterevidence": "The mention of Rubens and 'the thirteenth-century cathedral' lets an attentive reader infer art, and 'only sensual' frames the experience.",
+        "plan_relation": "The plan's optional list says to keep the sentence as a unit if retained. The unit is partially retained without its anchor.",
+        "minimal_repair": "Insert 'Even in art, one can hardly begin with Antwerp Cathedral and the Descent from the Cross.' before 'He merely got drunk on his emotions', or add 'before Rubens's Descent from the Cross' to the kneeling sentence.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Specific artwork anchor lost, but Rubens/cathedral/sensual cues remain; B3."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F5",
+        "priority": "tradeoff",
+        "axis": "interpretive_structure",
+        "title": "The 'education went backward' hinge is thinned",
+        "origin": "revision",
+        "claim": "The source and first draft state: 'Thus far it had remained in the eighteenth century, and the next step took it back to the sixteenth.' The revision drops it. 'Education went backward' and 'Education began at the end, or perhaps would end at the beginning' now sit beside 'He crossed to Antwerp'. The century-by-century regression survives only in the 'sixteenth-century' roofs and the 'middle ages' later in the paragraph.",
+        "reader_effect": "The paradoxical chiasmus loses its concrete referent. The reader no longer sees explicitly that London was the eighteenth century and Antwerp the sixteenth.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 6,
+            "quote": "Education began at the end, or perhaps would end at the beginning. He crossed to Antwerp."
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 6,
+            "quote": "Thus far it had remained in the eighteenth century, and the next step took it back to the sixteenth."
+          }
+        ],
+        "counterevidence": "The London paragraph's 'eighteenth century' phrases and Antwerp's 'sixteenth-century' and 'middle ages' wording let the reader reconstruct the arc.",
+        "plan_relation": "Section title 'education going backward' implies the idea is wanted. The plan did not protect the hinge sentence.",
+        "minimal_repair": "Restore 'the next step took it back to the sixteenth' before 'He crossed to Antwerp.'",
+        "confidence": "low"
+      },
+      "review": "tradeoff",
+      "reason": "Eighteenth- and sixteenth-century cues remain; no broken century progression."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F6",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "Opening connective 'So much more timid' has lost its antecedent",
+        "origin": "revision",
+        "claim": "In the source and first draft the parents' timidity follows 'Strictly followed, the rule would have obliged [them] never to quit Quincy; and, in fact, so much more timid are parents…'. The revision cut the 'rule' sentence but kept a bare, capitalized 'So much more timid are parents for their children than for themselves, that…'. The sentence now follows 'unfitted Americans for America' without the 'never leave Quincy' reductio that motivates it.",
+        "reader_effect": "The leap from the father's dislike of Europe to the parents' preference for Mount Vernon Street is abrupt, and the intended irony of the 'rule' is lost.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 1,
+            "quote": "unfitted Americans for America. So much more timid are parents for their children than for themselves, that Mr. and Mrs. Adams would have been content"
+          },
+          {
+            "document": "education/007/initial",
+            "paragraph": 1,
+            "quote": "Strictly followed, the rule would have obliged the family never to quit Quincy; and, in fact, so much more timid are parents"
+          }
+        ],
+        "counterevidence": "Readers can still follow the parents' ambivalence about Europe versus Boston, which the plan treats as the essential content.",
+        "plan_relation": "The plan wants the ambivalence kept; it is kept, but the connective seam is rough.",
+        "minimal_repair": "Restore a short bridging clause: 'Strictly followed, the rule would have obliged the family never to quit Quincy, and, in fact, so much more timid are parents…'.",
+        "confidence": "medium"
+      },
+      "review": "rejected",
+      "reason": "'So much ... that' is a self-contained degree construction, not a dangling connective."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F7",
+        "priority": "tradeoff",
+        "axis": "voice_and_rhythm",
+        "title": "Opening trims shed some self-deprecating irony",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The source's captious-critic rejoinder (Europe was the field of the Adamses' success) was cut in the first draft. The revision also cut 'Above all, he was timid…' and the clause 'What he was at heart, no one could say; least of all himself; but he was probably human, and no worse than some others.' The father's 'unfitted Americans for America' now stands unanswered, and the boy's portrait ends on 'were not known to be bad'.",
+        "reader_effect": "The cuts remove an undercutting of the family's pieties and the boy's wry self-assessment. The 'fourth child' frame survives but with less of the hedged, comic self-portrait.",
+        "evidence": [
+          {
+            "document": "education/007/revision",
+            "paragraph": 1,
+            "quote": "his morals were apparently good, and his moral principles, if he had any, were not known to be bad. Therefore"
+          },
+          {
+            "document": "education/007/source",
+            "paragraph": 1,
+            "quote": "What he was at heart, no one could say; least of all himself; but he was probably human, and no worse than some others."
+          },
+          {
+            "document": "education/007/source",
+            "paragraph": 1,
+            "quote": "A captious critic might have replied that all the success he or his father or his grandfather achieved was chiefly due to the field that Europe gave them"
+          }
+        ],
+        "counterevidence": "The plan's essential list only requires the ambivalence and the Civil Law absurdity, and both survive. 'If he had any' keeps some of the irony.",
+        "plan_relation": "Defensible compression within the plan; a real but minor artistic cost.",
+        "minimal_repair": "If space allows, restore 'least of all himself; but he was probably human' as a single clause.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Real loss of self-mockery; some claimed origin details are mixed. See B4."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F1",
+        "priority": "should_improve",
+        "axis": "interpretive_structure",
+        "title": "Beethoven episode loses its tie to 'accidental' education",
+        "origin": "first_draft",
+        "claim": "The source frames the gain as 'accidental, unintended, unforeseen' and ends with 'no other sense awoke'. The draft keeps the opening claim in the para 16 clause but cuts the Wagner coda. The 'this could not be called education' passage is now followed by an abrupt end to the paragraph.",
+        "reader_effect": "The Rome chapter's 'passed Beethoven as a piece of accidental education' measures against a slightly thinner root. The bridge from the music-hall to 'accidental' is less direct.",
+        "evidence": [
+          {
+            "document": "education/007/source",
+            "paragraph": 15,
+            "quote": "it was accidental, unintended, unforeseen."
+          },
+          {
+            "document": "education/007/revision",
+            "paragraph": 17,
+            "quote": "Mere mechanical repetition of certain sounds had stuck to his unconscious mind."
+          }
+        ],
+        "counterevidence": "The 'accidental, unintended, unforeseen' clause is retained in para 16, and 'accidental' recurs in the sense passage. The Wagner coda was optional.",
+        "plan_relation": "Plan required explicit accidental framing; this is partly met.",
+        "minimal_repair": "Keep the sentence 'a new sense...something apart, accidental' as is, and consider restoring one clause on the Beethoven gain being 'accidental education'.",
+        "confidence": "medium"
+      },
+      "review": "rejected",
+      "reason": "'Accidental, unintended, unforeseen' and 'no other sense awoke' both remain; the proposed broken Beethoven/Rome connection is unsupported."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F2",
+        "priority": "should_improve",
+        "axis": "qualification_and_facts",
+        "title": "Gymnasium motive and ironic payoff trimmed",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The revision cuts 'At least it ridded him of the university and the Civil Law', which explained why Apthorp's idea suited him. It also cuts the 'bit of education which served him some purpose in life' clause, which gave the later indictment its irony.",
+        "reader_effect": "His desperate frame of mind is now unexplained. The school's shock to him loses its deflating setup.",
+        "evidence": [
+          {
+            "document": "education/007/source",
+            "paragraph": 10,
+            "quote": "At least it ridded him of the university and the Civil Law"
+          },
+          {
+            "document": "education/007/revision",
+            "paragraph": 11,
+            "quote": "The idea suited Adams's desperate frame of mind."
+          }
+        ],
+        "counterevidence": "The sentence 'as though he had not always avoided high schools' keeps the comic reluctance.",
+        "plan_relation": "optional tradeoff",
+        "minimal_repair": "Restore 'At least it ridded him of the university and the Civil Law.'",
+        "confidence": "medium"
+      },
+      "review": "tradeoff",
+      "reason": "Desperation is explained by preceding language difficulties; the foolish-but-useful payoff is a genuine optional loss."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F3",
+        "priority": "tradeoff",
+        "axis": "voice_and_rhythm",
+        "title": "Opening's ironic parental portrait and tourist-student comedy compressed",
+        "origin": "first_draft",
+        "claim": "The critic's reply about Europe's help, 'timid parents', and 'Whether the boy deserved such indulgence' are cut. The opening becomes drier. The gale and tourist-mathematics lines keep their wit, but the 'ultimate wisdom' epigram is lost.",
+        "reader_effect": "The self-deprecating tone is slightly flatter. The 'tourist mathematics' joke ends without its capping line.",
+        "evidence": [
+          {
+            "document": "education/007/source",
+            "paragraph": 2,
+            "quote": "How many would turn out to be wrong whether any could turn out right, was ultimate wisdom."
+          },
+          {
+            "document": "education/007/revision",
+            "paragraph": 2,
+            "quote": "became the pons asinorum of tourist mathematics."
+          }
+        ],
+        "counterevidence": "The plan only required the premise 'many impressions, little education', which is kept.",
+        "plan_relation": "optional tradeoff",
+        "minimal_repair": "None required; optionally restore the 'ultimate wisdom' sentence.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Timid parents remain. The ultimate-wisdom ending was cut earlier; optional voice loss, B4."
+    },
+    {
+      "chapter": "education/007",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F4",
+        "priority": "tradeoff",
+        "axis": "interpretive_structure",
+        "title": "State-education indictment loses reasoning charge",
+        "origin": "first_draft",
+        "claim": "The sentence 'The German government did not encourage reasoning.' was cut in the revision. The draft para 14 now ends on 'Least of all was any use made of reason.', and the dynamo paragraph follows.",
+        "reader_effect": "The dynamo generalization has slightly less political point. The dynamo line itself is intact.",
+        "evidence": [
+          {
+            "document": "education/007/source",
+            "paragraph": 13,
+            "quote": "The German government did not encourage reasoning."
+          },
+          {
+            "document": "education/007/revision",
+            "paragraph": 14,
+            "quote": "Least of all was any use made of reason."
+          }
+        ],
+        "counterevidence": "The dynamo image is kept verbatim and still says 'State purposes'.",
+        "plan_relation": "optional tradeoff",
+        "minimal_repair": "Optionally restore the short sentence.",
+        "confidence": "low"
+      },
+      "review": "tradeoff",
+      "reason": "Reason and State purposes remain explicit. The omitted sentence was cut in revision, not the first draft."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F1",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "Boston chemist's point loses its logical setup and its second term",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The source sets up the chemist as the sceptic of a 'reversible process' who 'could not deny' he could feel the force of both rays and Virgin. It also lists his ignorance of dynamos, automobiles and radium alongside Venus and the Virgin. The revision cuts the sceptic frame and the dynamos/radium clause, so 'the force of all' now has only Venus and the Virgin as antecedents. 'The rays were unborn' then has no matching ignorance of the rays.",
+        "reader_effect": "The chemist is a sudden aside whose purpose (the mind can feel both kinds of force, which justifies translating rays into faith) is no longer stated.",
+        "evidence": [
+          {
+            "document": "education/027/source",
+            "paragraph": 8,
+            "quote": "Such a reversible process would vastly amuse a chemist, but the chemist could not deny that he, or some of his fellow physicists, could feel the force of both."
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 8,
+            "quote": "neither had he heard of dynamos or automobiles or radium; yet his mind was ready to feel the force of all"
+          },
+          {
+            "document": "education/027/revision",
+            "paragraph": 8,
+            "quote": "yet his mind was ready to feel the force of all, though the rays were unborn and the women were dead."
+          }
+        ],
+        "counterevidence": "The plan only asks for the chemist who never heard of Venus or the Virgin, yet could feel such forces, and that much survives. 'Rays' and 'faith' sit one sentence earlier, so a reader can partly infer the point.",
+        "plan_relation": "Required (chemist kept); the connective logic is a planning gap.",
+        "minimal_repair": "Restore a short clause such as 'neither had he heard of dynamos or radium; yet his mind could feel the force of both'.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "The relevant setup was present in the first draft; revision removed it. See D2."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "partial",
+      "finding": {
+        "id": "F2",
+        "priority": "should_improve",
+        "axis": "interpretive_structure",
+        "title": "Antithesis behind the Chartres epigram is thinned",
+        "origin": "first_draft",
+        "claim": "In the source, the 'railway train as power' sentence answers a statement that neither St. Gaudens nor Arnold felt goddesses as power, only as emotion, beauty and taste. The revision keeps 'Artists felt a railway train as power…' but drops the goddess-as-taste sentence. Only the pivot 'but otherwise one must look for force to the goddesses of Indian mythology' remains, so the contrast the epigram resolves is implicit.",
+        "reader_effect": "V8 still lands as an epigram, but the force/taste opposition that links it to V7 is left to inference.",
+        "evidence": [
+          {
+            "document": "education/027/source",
+            "paragraph": 20,
+            "quote": "Neither of them felt goddesses as power--only as reflected emotion, human expression, beauty, purity, taste"
+          },
+          {
+            "document": "education/027/revision",
+            "paragraph": 17,
+            "quote": "Artists felt a railway train as power, yet they constantly complained that the power embodied in a railway train could never be embodied in art."
+          }
+        ],
+        "counterevidence": "V7 (force versus taste) sits just above and carries the contrast; the Arnold comparison was authorised for cutting.",
+        "plan_relation": "Optional tradeoff for Arnold; the missing 'taste' sentence is a small planning omission.",
+        "minimal_repair": "Insert a short clause before the railway sentence, e.g. 'They felt goddesses only as taste or emotion, never as power; they felt a railway train as power…'.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Force/taste contrast remains immediately above; narrower valid issue is the broadened subject in D1."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F1",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "Dante invoked but not quoted; Lucretius left unglossed",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The Dante tercet was cut, as the plan permits, yet 'invoked Venus exactly as Dante invoked the Virgin' remains with no Dante text. The Latin line has no gloss, though the plan asks for a clear gloss.",
+        "reader_effect": "The comparison is asserted rather than shown, and a reader without Latin cannot follow it.",
+        "evidence": [
+          {
+            "document": "education/027/revision",
+            "paragraph": 10,
+            "quote": "where the poet invoked Venus exactly as Dante invoked the Virgin:--"
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 13,
+            "quote": "Donna, sei tanto grande, e tanto vali"
+          }
+        ],
+        "counterevidence": "The plan allows the cut if the comparison is kept, and the comparison is kept.",
+        "plan_relation": "The plan's gloss requirement was missed.",
+        "minimal_repair": "Add a short gloss after the Latin, e.g. 'who alone governs the nature of things'; optionally restore one Dante line.",
+        "confidence": "medium"
+      },
+      "review": "rejected",
+      "reason": "Plan requires the first Latin line OR a gloss, and explicitly permits cutting Dante's tercet. Those requirements are satisfied."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F2",
+        "priority": "should_improve",
+        "axis": "interpretive_structure",
+        "title": "Gibbon/Ruskin lesson thinned",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "'but besides the humor, one felt also the relation' and the Ruskin comparison ('more instructive than a whole lecture of Ruskin') were cut. 'One sees what one brings' now follows only 'Gibbon ignored the Virgin', so Gibbon's humor and its meaning are not tied together.",
+        "reader_effect": "The echo of the earlier mirror passage survives, but its payoff is weaker.",
+        "evidence": [
+          {
+            "document": "education/027/revision",
+            "paragraph": 15,
+            "quote": "One sees what one brings, and at that moment Gibbon brought the French Revolution."
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 18,
+            "quote": "but besides the humor, one felt also the relation."
+          }
+        ],
+        "counterevidence": "The essential phrase, the Gibbon quotation, and the humor of the fat historian all remain.",
+        "plan_relation": "Optional trimming, but it hits a protected dependency.",
+        "minimal_repair": "Restore 'but besides the humor, one felt also the relation.'",
+        "confidence": "medium"
+      },
+      "review": "tradeoff",
+      "reason": "Gibbon's Revolution, Ruskin's reaction, and the force/taste lesson remain; omitted commentary is not a broken dependency."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F3",
+        "priority": "should_improve",
+        "axis": "qualification_and_facts",
+        "title": "Final 'it' blurs Virgin and radium; Langley's uncertainty lost",
+        "origin": "revision",
+        "claim": "'Adams knew nothing about any of it' lost the source's 'any of them' (Virgin, radium and the other forces). Langley's admission that the sun might 'spout less or more' was cut.",
+        "reader_effect": "The chapter's closing claim about the Virgin being 'easiest to handle' loses its comparative frame with radiant matter, and Langley's modesty is thinner.",
+        "evidence": [
+          {
+            "document": "education/027/revision",
+            "paragraph": 18,
+            "quote": "Adams knew nothing about any of it, but though all were occult"
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 21,
+            "quote": "It could scarcely be more complex than radium"
+          }
+        ],
+        "counterevidence": "'all were occult' still points to plural forces.",
+        "plan_relation": "Planned compression; the ambiguity is a side effect.",
+        "minimal_repair": "Write 'about any of them' and add 'as complex as radium'.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Local referent concern survives review, with earlier forces as counterevidence; D3. Langley's general modesty remains."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F4",
+        "priority": "tradeoff",
+        "axis": "voice_and_rhythm",
+        "title": "Dynamo-hall and rupture passages flattened",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The dynamo paragraph now ends on the prayer and loses 'the most expressive'. The revision also loses 'the force was wholly new', the sun's heat passage, and the knife-edge/Lancelot image.",
+        "reader_effect": "The central paragraphs end less on Adams's epigrammatic cadence, and the hazard of the new education is less vivid.",
+        "evidence": [
+          {
+            "document": "education/027/revision",
+            "paragraph": 3,
+            "quote": "inherited instinct taught the natural expression of man before silent and infinite force."
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 3,
+            "quote": "it was the most expressive."
+          }
+        ],
+        "counterevidence": "The prayer image and baby image survive, and the plan marks them as essential.",
+        "plan_relation": "Optional tradeoff.",
+        "minimal_repair": "Restore the closing sentence, 'Among the thousand symbols... the most expressive.'",
+        "confidence": "medium"
+      },
+      "review": "tradeoff",
+      "reason": "Imagery/cadence loss is real, but prayer and the baby remain; D4."
+    },
+    {
+      "chapter": "education/027",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F5",
+        "priority": "tradeoff",
+        "axis": "interpretive_structure",
+        "title": "Marx and Berlin payoff, 'sex' qualifiers",
+        "origin": "revision",
+        "claim": "Marx is kept but the 'moral issue set aside' ending ('He cared nothing for the sex of the dynamo') is cut. The 'any one brought up among Puritans' premise now follows directly after the fig-leaf remark.",
+        "reader_effect": "Minor loss of Adams's humorous detachment and of the dynamo-sex link.",
+        "evidence": [
+          {
+            "document": "education/027/revision",
+            "paragraph": 13,
+            "quote": "did not concern one who was studying the relations of unmoral force."
+          },
+          {
+            "document": "education/027/source",
+            "paragraph": 15,
+            "quote": "He cared nothing for the sex of the dynamo until he could measure its energy."
+          }
+        ],
+        "counterevidence": "'unmoral force' is kept, as the plan requires.",
+        "plan_relation": "Optional.",
+        "minimal_repair": "Restore the final sentence if space allows.",
+        "confidence": "low"
+      },
+      "review": "qualified",
+      "reason": "Marx and the moral qualification remain. Only the comic dynamo-sex ending is lost; D4."
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F1",
+        "priority": "tradeoff",
+        "axis": "voice_and_rhythm",
+        "title": "Narrator's ironic asides at the bluff's peak thinned",
+        "origin": "revision",
+        "claim": "The revision drops the narrator's wry commentary on Tuppence's relish of her role: 'Her present part was of the adventuress rather than the adventurous order', her sitting up 'with the air of one who has the situation thoroughly well in hand', and her pause 'to admire her own ingenuity'. Her lines now follow the cues without the narrator's smile.",
+        "reader_effect": "The comic self-congratulation that the voice profile names as central is reduced to the single phrase 'intoxicated with the success of truthfulness'. The scene still works, but it is more telegraphic and less ironic.",
+        "evidence": [
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 90,
+            "quote": "Her present part was of the adventuress rather than the adventurous order, but she did not deny its possibilities."
+          },
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 95,
+            "quote": "Tuppence paused a moment to admire her own ingenuity, and then said softly:"
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 63,
+            "quote": "The last five words took Tuppence’s fancy mightily, especially after a meagre breakfast and a supper of buns."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 66,
+            "quote": "“I shouldn’t like to contradict you, Mr. Whittington,” said Tuppence softly."
+          }
+        ],
+        "counterevidence": "At half length some asides must go. The planned verbatim lines and the key phrase 'intoxicated with the success of truthfulness' survive.",
+        "plan_relation": "optional tradeoff",
+        "minimal_repair": "If a few words are available, restore 'and paused to admire her own ingenuity' before 'I shouldn't like to contradict you'.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "Wordplay was already absent in the first draft; the ingenuity aside was removed in revision. See W3."
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F2",
+        "priority": "tradeoff",
+        "axis": "interpretive_structure",
+        "title": "Rationale for passing as an American removed",
+        "origin": "revision",
+        "claim": "The source and the first draft give Whittington's reason for the suggestion: 'Details about your past life in England might be more difficult to sustain.' The revision keeps the suggestion but drops the reason.",
+        "reader_effect": "That sentence is the clearest hint that he wants a cover identity, and it is what chapter 005 later reads as impersonation. Without it the suggestion looks like a mere convenience, so the later realisation lands with less retrospective force. The required details (Paris, ward, secrecy, American) are still present.",
+        "evidence": [
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 59,
+            "quote": "Details about your past life in England might be more difficult to sustain."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 36,
+            "quote": "“On the contrary, it might be simpler for you to pass as an American. Then----”"
+          },
+          {
+            "document": "secret_adversary/005/production",
+            "paragraph": 42,
+            "quote": "They'll produce a Jane Finn of their own—say, at a *pensionnat* in Paris."
+          }
+        ],
+        "counterevidence": "The plan only requires 'the suggestion to pass as an American'. The ward role and secrecy are kept in paragraph 32, so the scheme is still legible as a cover.",
+        "plan_relation": "optional tradeoff; the dependency instruction is met",
+        "minimal_repair": "Add a short clause: 'Your past life in England would be harder to sustain.'",
+        "confidence": "medium"
+      },
+      "review": "tradeoff",
+      "reason": "Supporting rationale lost, but the actual partner still carries the impersonation inference; W2."
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F3",
+        "priority": "tradeoff",
+        "axis": "dialogue",
+        "title": "Bluff exchange compressed: Whittington's retort and the explanation of 'very little' lost",
+        "origin": "revision",
+        "claim": "Whittington's scoffing reply to 'It might be my own name' is cut, so Tuppence's two alternative explanations follow each other with no resistance. The sentence explaining why admitting little is clever ('To have boasted that she knew a lot might have raised doubts') is also cut.",
+        "reader_effect": "The back-and-forth in which he rejects each truth and she keeps offering another is flattened. The reader still sees his uneasiness 'augmented instead of allayed', but not the reasoning behind her tactic, which was the explicit comic method of the chapter.",
+        "evidence": [
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 86,
+            "quote": "“It’s likely, isn’t it, then there would be two girls with a name like that?”"
+          },
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 83,
+            "quote": "To have boasted that she knew a lot might have raised doubts in his mind."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 59,
+            "quote": "“It might be my own name,” Tuppence pointed out."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 60,
+            "quote": "“Or I might just have hit upon it by chance,” continued Tuppence, intoxicated with the success of truthfulness."
+          }
+        ],
+        "counterevidence": "All planned bluff lines are retained and the exchange reads smoothly. The plan allowed condensing the repeated exchanges.",
+        "plan_relation": "essential beats kept; compression is optional",
+        "minimal_repair": "Optionally reinstate Whittington's one-line retort between paragraphs 59 and 60.",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "No confused speaker, but a genuine loss of repartee; W1."
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F4",
+        "priority": "should_improve",
+        "axis": "causality_and_setup",
+        "title": "Ending loses the time cue that motivates the taxi and Tommy's presence",
+        "origin": "first_draft",
+        "claim": "The source says a neighbouring clock showed 'five minutes to twelve', which explains why Tuppence takes a taxi to meet Tommy. The first draft and the revision both cut it, and the revision's closing paragraphs never mention the appointment. Tommy simply appears 'within the entrance'.",
+        "reader_effect": "In this chapter alone, 'Let's give Tommy a surprise!' and the taxi seem unmotivated. The appointment was set in chapter 002 ('Twelve o'clock to-morrow. Piccadilly Tube station'), so a continuous reader can recover it, but the chapter's closing joke relies on the inference.",
+        "evidence": [
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 119,
+            "quote": "A neighbouring clock showed the time to be five minutes to twelve."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 86,
+            "quote": "Tuppence sped lightly down the stairs in wild elation. “Let’s give Tommy a surprise!” she murmured, and hailed a taxi."
+          },
+          {
+            "document": "secret_adversary/002/production",
+            "paragraph": 42,
+            "quote": "\"Twelve o'clock to-morrow. Piccadilly Tube station.\""
+          }
+        ],
+        "counterevidence": "Chapter 002's production text sets the appointment directly before this chapter, and chapter 004 opens on the taxi. The gap is small.",
+        "plan_relation": "planning omission: the plan gives the end beat but not the clock",
+        "minimal_repair": "Add 'It was five minutes to twelve' to paragraph 86, or 'to keep her twelve o'clock appointment with Tommy' before the taxi.",
+        "confidence": "medium"
+      },
+      "review": "rejected",
+      "reason": "The preceding included chapter explicitly sets the station appointment. The taxi also performs her newfound wealth; the clock is optional."
+    },
+    {
+      "chapter": "secret_adversary/003",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F5",
+        "priority": "tradeoff",
+        "axis": "causality_and_setup",
+        "title": "'Work' lacks its antecedent in the offer",
+        "origin": "revision",
+        "claim": "Source and first draft have Whittington say 'You want work? Well, I have work to offer you.' The revision opens with 'what should you say to £100 down', and Tuppence then asks 'the nature of the work?' with no preceding mention of work.",
+        "reader_effect": "A very slight stumble: her question reads as ahead of the cue. It is easily inferred from the £100 and the appointment, and the 'nominal' reply restores context.",
+        "evidence": [
+          {
+            "document": "secret_adversary/003/source",
+            "paragraph": 39,
+            "quote": "You want work? Well, I have work to offer you."
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 21,
+            "quote": "“Now, my dear young lady, what should you say to £100 down, and all expenses paid?”"
+          },
+          {
+            "document": "secret_adversary/003/revision",
+            "paragraph": 22,
+            "quote": "“And the nature of the work?” Tuppence demanded warily."
+          }
+        ],
+        "counterevidence": "Context makes 'the work' obvious. The revision also keeps the earlier 'proposition' and 'be of some use to you'.",
+        "plan_relation": "optional tradeoff",
+        "minimal_repair": "Change to 'what should you say to work at £100 down'.",
+        "confidence": "low"
+      },
+      "review": "rejected",
+      "reason": "The job-search/proposition/payment context supplies 'work'; no meaningful anaphora failure."
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F1",
+        "priority": "should_improve",
+        "axis": "qualification_and_facts",
+        "title": "Nationality hedge for Number One removed; 'the Russian' becomes flat narration",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "The source says the cheekbones 'hinted' at Slavonic ancestry and that 'otherwise there was nothing to indicate his nationality.' The revision keeps 'hinted' but drops the qualifier, then calls him 'The Russian' in narration without any intervening Tommy-inference marker. The earlier 'pale Russian' thought was also cut.",
+        "reader_effect": "A guess from a single physical cue reads as established fact. The plan says the 'German'/'Russian' labels must remain Tommy's inferences.",
+        "evidence": [
+          {
+            "document": "secret_adversary/009/source",
+            "paragraph": 19,
+            "quote": "otherwise there was nothing to indicate his nationality"
+          },
+          {
+            "document": "secret_adversary/009/revision",
+            "paragraph": 15,
+            "quote": "The angle of the cheek-bones hinted at his Slavonic ancestry."
+          },
+          {
+            "document": "secret_adversary/009/revision",
+            "paragraph": 23,
+            "quote": "The Russian tapped his cheek."
+          }
+        ],
+        "counterevidence": "'Hinted' remains, and the book as a whole labels him 'the Russian' freely, as the source narration also does.",
+        "plan_relation": "Plan continuity check ('labels remain Tommy's inferences'); the revision does not fully honour it.",
+        "minimal_repair": "Restore a short clause in P15: 'hinted at his Slavonic ancestry, though otherwise nothing betrayed his nationality.'",
+        "confidence": "medium"
+      },
+      "review": "qualified",
+      "reason": "The hedge 'hinted' remains, and the source itself uses 'the Russian'. The additional qualification is lost, but no demonstrated new identity disclosure."
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F2",
+        "priority": "tradeoff",
+        "axis": "referents_and_scene",
+        "title": "Seating exchange compressed; Number One's deferential refusal lost and 'he' blurred",
+        "origin": "first_draft_worsened_by_revision",
+        "claim": "In the source the German indicates his own place, the Russian demurs, and the German insists. The revision gives 'The German insisted that he take the head of the table', so the demurral is gone and 'he' is briefly ambiguous between German and Russian.",
+        "reader_effect": "A small beat of the newcomer's deference and the group's homage is lost, but the 'Number One' payoff and Fourteen shutting the door survive.",
+        "evidence": [
+          {
+            "document": "secret_adversary/009/source",
+            "paragraph": 30,
+            "quote": "The Russian demurred, but the other insisted."
+          },
+          {
+            "document": "secret_adversary/009/revision",
+            "paragraph": 24,
+            "quote": "The German insisted that he take the head of the table."
+          }
+        ],
+        "counterevidence": "The next line, 'It is the only possible place... for--Number One', clarifies who is seated and why.",
+        "plan_relation": "Optional compression; no dependency affected.",
+        "minimal_repair": "If words allow: 'The German offered his own place at the head of the table, and the Russian demurred, but he insisted.'",
+        "confidence": "medium"
+      },
+      "review": "tradeoff",
+      "reason": "Seating clarified immediately by Number One; lost demurral is a small performance cost, T2."
+    },
+    {
+      "chapter": "secret_adversary/009",
+      "response_kind": "complete",
+      "finding": {
+        "id": "F3",
+        "priority": "tradeoff",
+        "axis": "voice_and_rhythm",
+        "title": "Summary of the gathering's variety and Tommy's reaction cut",
+        "origin": "first_draft",
+        "claim": "The source stacks 'the common criminal, the well-bred Irish gentleman, the pale Russian, and the efficient German master of the ceremonies! Truly a strange and sinister gathering!' before the 'who was this man' question. Both drafts reduce this, so V3 now follows a single arrival.",
+        "reader_effect": "The Brown-as-hub idea is stated, but the cumulative wonder is thinner and the question comes a little earlier than its build-up.",
+        "evidence": [
+          {
+            "document": "secret_adversary/009/source",
+            "paragraph": 13,
+            "quote": "Truly a strange and sinister gathering!"
+          },
+          {
+            "document": "secret_adversary/009/revision",
+            "paragraph": 11,
+            "quote": "Certainly Mr. Brown’s organization was a far-reaching concern."
+          }
+        ],
+        "counterevidence": "Later paragraphs show the variety directly (criminal, Sinn Feiner, clerk, worker, gentleman). The source list also names the Russian before he arrives, so cutting it avoids an inconsistency.",
+        "plan_relation": "Plan says keep the variety, which is satisfied through the arrivals; the narrator's flourish is a defensible cut.",
+        "minimal_repair": "Optionally add after the Sinn Feiner: 'A strange and sinister gathering.'",
+        "confidence": "low"
+      },
+      "review": "tradeoff",
+      "reason": "Arrivals still show the group's variety. Removing the rhetorical inventory is defensible; no repair needed."
+    }
+  ],
+  "unsupported_summary_claims": [
+    "Berlin's completed critic says 'no other sense awoke' is lost; it is present in revision paragraph 18.",
+    "Dynamo's completed critic summary says Marx and the Cellini half-natures were dropped; revision paragraphs 2 and 16 retain them.",
+    "The claim that the Lucretius line requires an additional gloss misreads the plan's 'Latin line OR a clear gloss'."
+  ],
+  "limits": [
+    "This checks four chapters and 22 planned connections, not every dependency in either complete book.",
+    "Critic quotes were valid, but several conclusions or claimed origins were not. Quote validation is not semantic validation.",
+    "Style recommendations are editorial judgments; tradeoffs are not mandatory restorations.",
+    "All review calls preceded the user's subsequent change to Opus 5.5 routing. They remain labeled Sonnet 5.5."
+  ]
+}

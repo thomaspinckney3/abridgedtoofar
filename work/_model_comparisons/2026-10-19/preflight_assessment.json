@@ -1,0 +1,72 @@
+{
+  "recorded_before_generation": true,
+  "purpose": "Fix assessment criteria before seeing new model outputs. This is an editorial checklist, not an automatic quality score.",
+  "historical_provenance": "Saved final outputs have multiple generation and repair passes from older models. Exact authorship cannot be assigned from the most recent log row alone. Historical generation logs are copied beside each baseline.",
+  "chapters": {
+    "gatsby/001": {
+      "target_words": 3200,
+      "baseline_words": 4761,
+      "inspect": [
+        "Nick's reservation of judgment and retrospective exception for Gatsby",
+        "East/West Egg geography and Nick's relation to Daisy and Tom",
+        "Tom's physical dominance and racist dinner conversation",
+        "Phone interruption, Tom's departure and Daisy's participation without dangling movements",
+        "Daisy's beautiful-little-fool speech and Nick's skepticism",
+        "Jordan's identity and Gatsby-neighbor connection",
+        "Gatsby's reaching gesture and distant green light, preserving uncertainty"
+      ],
+      "baseline_observation": "49% above target; much source wording survives. Review whether cuts create gaps around the phone interruption."
+    },
+    "gatsby/002": {
+      "target_words": 2300,
+      "baseline_words": 2816,
+      "inspect": [
+        "Valley of ashes and Eckleburg's eyes",
+        "Wilson garage, Tom's dominance, and Myrtle's vitality",
+        "Myrtle travels separately to conceal the affair",
+        "Apartment social performance and change in Myrtle's manner",
+        "Nick's within-and-without passage",
+        "Myrtle's first-meeting story and you-cannot-live-forever refrain",
+        "Daisy-name dispute immediately motivates Tom's violence",
+        "Drunken fragmentary ending preserves its ambiguity",
+        "Any surviving minor character name has an identifiable referent"
+      ],
+      "baseline_observation": "22% above target; includes newly written summarizing sentences among source passages. One surviving Chester reference follows removal of McKee names.",
+      "cut_plan_caveat": "The existing cuts explicitly permit un-naming Catherine and the McKees and omitting the Catholic lie. Do not count those omissions alone as model failures."
+    },
+    "mobydick/004": {
+      "target_words": 1200,
+      "baseline_words": 1123,
+      "inspect": [
+        "Call-me-Ishmael opening and melancholy comic voice",
+        "Water-gazers, meditation, Narcissus, and phantom-of-life meditation",
+        "Reasons for choosing sailor over passenger",
+        "Schoolmaster-to-sailor transition, if retained, has its setup",
+        "Universal-thump passage preserves social irony",
+        "Providence theatrical bill and whaling motives",
+        "Snow-hill phantom foreshadowing"
+      ],
+      "baseline_observation": "Near target; preserves the schoolmaster-to-sailor transition but cuts the preceding schoolmaster setup."
+    },
+    "mobydick/005": {
+      "target_words": 800,
+      "baseline_words": 716,
+      "inspect": [
+        "Saturday arrival at New Bedford, no Nantucket boat until Monday",
+        "Reason for preferring Nantucket and need for cheap lodgings",
+        "Rejected inns and mistaken church entrance",
+        "Spouter Inn sign, Peter Coffin, and ominous joke",
+        "Euroclydon and Dives/Lazarus social contrast",
+        "Ending moves into the Spouter without inventing later action"
+      ],
+      "baseline_observation": "10.5% below target; preserves the essential lodging sequence, black-letter conceit, and a shortened Lazarus/Dives contrast."
+    }
+  },
+  "configuration_finding": {
+    "variable": "FORAGE_COHERENCE_FIX_MODEL",
+    "configured_value": "anthropic:opus-5-5",
+    "models_api_status": 404,
+    "valid_value": "anthropic:claude-opus-5-5",
+    "action": "Not used in this drafting-only trial; .env left unchanged."
+  }
+}

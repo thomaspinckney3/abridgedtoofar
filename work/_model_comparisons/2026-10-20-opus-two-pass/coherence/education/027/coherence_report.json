@@ -1,0 +1,68 @@
+{
+  "book_id": "education",
+  "pairs_checked": 2,
+  "findings_total": 4,
+  "findings_raw_total": 4,
+  "findings_invalid": 0,
+  "class_counts": {
+    "unglossed_name": 2,
+    "dangling_reference": 2
+  },
+  "per_segment_counts": {
+    "026": 2,
+    "028": 1,
+    "027": 1
+  },
+  "per_pair": [
+    {
+      "pair": "026-027",
+      "count": 2
+    },
+    {
+      "pair": "027-028",
+      "count": 2
+    }
+  ],
+  "findings": [
+    {
+      "class": "unglossed_name",
+      "chapter": "N",
+      "draft_passage": "President Cleveland set aside Hewitt; President Harrison set aside Hay.",
+      "source_has": "Hay belonged to the New York school, like Abram Hewitt, Evarts, W. C. Whitney, Samuel J. Tilden... The story of Abram Hewitt would offer one type of this statesman series, and that of Hay another.",
+      "gate_test_answer": "A reader is genuinely confused, because Hewitt appears without a first name or role and the draft cut the passage that introduced him as a fellow member of the New York school.",
+      "segment_id": "026",
+      "pair": "026-027",
+      "valid": true
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "N",
+      "draft_passage": "Even there, Adams would have been beaten had he not been helped by Mrs. Hay, who saw the necessity of distraction",
+      "source_has": "They all united in trying to help each other to get along the best way they could, and all they tried to save was the personal relation. Even there, Adams would have been beaten had he not been helped by Mrs. Hay",
+      "gate_test_answer": "\"Even there\" has no antecedent, since the cut sentence about saving the personal relation was what it pointed to, so the reader cannot tell what Adams would have been beaten at.",
+      "segment_id": "026",
+      "pair": "026-027",
+      "valid": true
+    },
+    {
+      "class": "unglossed_name",
+      "chapter": "N+1",
+      "draft_passage": "He felt almost aggrieved to find Walcott so vigorously flinging the ganoid all the way off to Colorado and far back into the Lower Trenton limestone",
+      "source_has": "He felt almost aggrieved to find Walcott so vigorously acting the part of Comus as to have flung the ganoid all the way off to Colorado... (Walcott is also unglossed in the source, but the Comus role framed him as an actor in the Pteraspis story.)",
+      "gate_test_answer": "A reader meets 'Walcott' as a new name with no role (geologist or paleontologist) and no earlier mention in either draft chapter, so they cannot tell who he is or why he is moving the fish, which is genuine confusion rather than lost ornament.",
+      "segment_id": "028",
+      "pair": "027-028",
+      "valid": true
+    },
+    {
+      "class": "dangling_reference",
+      "chapter": "N",
+      "draft_passage": "Adams knew nothing about any of it, but though all were occult, all reacted on his mind, and he rather inclined to think the Virgin easiest to handle.",
+      "source_has": "It could scarcely be more complex than radium; it could hardly be deflected, diverted, polarized, absorbed more perplexingly than other radiant matter. Adams knew nothing about any of them, but as a mathematical problem of influence on human progress, though all were occult, all reacted on his mind...",
+      "gate_test_answer": "The comparison with radium and other radiant matter was cut, so 'all were occult' has no clear plural antecedent in the preceding draft and the 'easiest to handle' comparison loses its other terms, which is a real referential gap.",
+      "segment_id": "027",
+      "pair": "027-028",
+      "valid": true
+    }
+  ]
+}

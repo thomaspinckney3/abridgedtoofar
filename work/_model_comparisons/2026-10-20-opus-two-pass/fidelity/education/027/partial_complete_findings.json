@@ -1,0 +1,60 @@
+{
+  "status": "partial_response_only_complete_objects_retained",
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "should_improve",
+      "axis": "causality_and_setup",
+      "title": "Boston chemist's point loses its logical setup and its second term",
+      "origin": "first_draft_worsened_by_revision",
+      "claim": "The source sets up the chemist as the sceptic of a 'reversible process' who 'could not deny' he could feel the force of both rays and Virgin. It also lists his ignorance of dynamos, automobiles and radium alongside Venus and the Virgin. The revision cuts the sceptic frame and the dynamos/radium clause, so 'the force of all' now has only Venus and the Virgin as antecedents. 'The rays were unborn' then has no matching ignorance of the rays.",
+      "reader_effect": "The chemist is a sudden aside whose purpose (the mind can feel both kinds of force, which justifies translating rays into faith) is no longer stated.",
+      "evidence": [
+        {
+          "document": "education/027/source",
+          "paragraph": 8,
+          "quote": "Such a reversible process would vastly amuse a chemist, but the chemist could not deny that he, or some of his fellow physicists, could feel the force of both."
+        },
+        {
+          "document": "education/027/source",
+          "paragraph": 8,
+          "quote": "neither had he heard of dynamos or automobiles or radium; yet his mind was ready to feel the force of all"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 8,
+          "quote": "yet his mind was ready to feel the force of all, though the rays were unborn and the women were dead."
+        }
+      ],
+      "counterevidence": "The plan only asks for the chemist who never heard of Venus or the Virgin, yet could feel such forces, and that much survives. 'Rays' and 'faith' sit one sentence earlier, so a reader can partly infer the point.",
+      "plan_relation": "Required (chemist kept); the connective logic is a planning gap.",
+      "minimal_repair": "Restore a short clause such as 'neither had he heard of dynamos or radium; yet his mind could feel the force of both'.",
+      "confidence": "medium"
+    },
+    {
+      "id": "F2",
+      "priority": "should_improve",
+      "axis": "interpretive_structure",
+      "title": "Antithesis behind the Chartres epigram is thinned",
+      "origin": "first_draft",
+      "claim": "In the source, the 'railway train as power' sentence answers a statement that neither St. Gaudens nor Arnold felt goddesses as power, only as emotion, beauty and taste. The revision keeps 'Artists felt a railway train as power…' but drops the goddess-as-taste sentence. Only the pivot 'but otherwise one must look for force to the goddesses of Indian mythology' remains, so the contrast the epigram resolves is implicit.",
+      "reader_effect": "V8 still lands as an epigram, but the force/taste opposition that links it to V7 is left to inference.",
+      "evidence": [
+        {
+          "document": "education/027/source",
+          "paragraph": 20,
+          "quote": "Neither of them felt goddesses as power--only as reflected emotion, human expression, beauty, purity, taste"
+        },
+        {
+          "document": "education/027/revision",
+          "paragraph": 17,
+          "quote": "Artists felt a railway train as power, yet they constantly complained that the power embodied in a railway train could never be embodied in art."
+        }
+      ],
+      "counterevidence": "V7 (force versus taste) sits just above and carries the contrast; the Arnold comparison was authorised for cutting.",
+      "plan_relation": "Optional tradeoff for Arnold; the missing 'taste' sentence is a small planning omission.",
+      "minimal_repair": "Insert a short clause before the railway sentence, e.g. 'They felt goddesses only as taste or emotion, never as power; they felt a railway train as power…'.",
+      "confidence": "medium"
+    }
+  ]
+}

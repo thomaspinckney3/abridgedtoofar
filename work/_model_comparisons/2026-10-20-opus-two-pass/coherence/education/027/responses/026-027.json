@@ -1,0 +1,30 @@
+{
+  "text": "[\n  {\n    \"class\": \"unglossed_name\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"President Cleveland set aside Hewitt; President Harrison set aside Hay.\",\n    \"source_has\": \"Hay belonged to the New York school, like Abram Hewitt, Evarts, W. C. Whitney, Samuel J. Tilden... The story of Abram Hewitt would offer one type of this statesman series, and that of Hay another.\",\n    \"gate_test_answer\": \"A reader is genuinely confused, because Hewitt appears without a first name or role and the draft cut the passage that introduced him as a fellow member of the New York school.\"\n  },\n  {\n    \"class\": \"dangling_reference\",\n    \"chapter\": \"N\",\n    \"draft_passage\": \"Even there, Adams would have been beaten had he not been helped by Mrs. Hay, who saw the necessity of distraction\",\n    \"source_has\": \"They all united in trying to help each other to get along the best way they could, and all they tried to save was the personal relation. Even there, Adams would have been beaten had he not been helped by Mrs. Hay\",\n    \"gate_test_answer\": \"\\\"Even there\\\" has no antecedent, since the cut sentence about saving the personal relation was what it pointed to, so the reader cannot tell what Adams would have been beaten at.\"\n  }\n]",
+  "model": "anthropic:claude-sonnet-5-5",
+  "input_tokens": 30843,
+  "output_tokens": 1836,
+  "duration_s": 13.772941019997234,
+  "stop_reason": "end_turn",
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "id": "msg_011CgDrsL7wWk1nmbrJwTuMG",
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 30843,
+    "output_tokens": 1836,
+    "output_tokens_details": {
+      "thinking_tokens": 1394
+    },
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard"
+  },
+  "cost_usd": 0.080046,
+  "finished_at": "2026-10-20T17:11:11.370959+00:00"
+}

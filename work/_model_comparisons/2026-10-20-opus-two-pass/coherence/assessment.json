@@ -1,0 +1,266 @@
+{
+  "reviewer": "Coding assistant, source-aware manual adjudication; no additional model calls",
+  "reviewed_at": "2026-10-20T17:14:13.515831+00:00",
+  "chapters": [
+    {
+      "book": "education",
+      "segment": "007",
+      "title": "BERLIN (1858-1859)",
+      "pairs_checked": 2,
+      "critic_flags": 1,
+      "confirmed": 1,
+      "possible": 0
+    },
+    {
+      "book": "education",
+      "segment": "027",
+      "title": "THE DYNAMO AND THE VIRGIN (1900)",
+      "pairs_checked": 2,
+      "critic_flags": 1,
+      "confirmed": 0,
+      "possible": 1
+    },
+    {
+      "book": "secret_adversary",
+      "segment": "003",
+      "title": "MR. WHITTINGTON’S OFFER",
+      "pairs_checked": 2,
+      "critic_flags": 0,
+      "confirmed": 0,
+      "possible": 0
+    },
+    {
+      "book": "secret_adversary",
+      "segment": "009",
+      "title": "THE ADVENTURES OF TOMMY",
+      "pairs_checked": 2,
+      "critic_flags": 0,
+      "confirmed": 0,
+      "possible": 0
+    }
+  ],
+  "findings": [
+    {
+      "group": "education/007",
+      "index": 0,
+      "critic": {
+        "class": "dangling_reference",
+        "chapter": "N+1",
+        "draft_passage": "At Eaton Hall the boys were awed, as Thackeray or Dickens would have felt in the presence of a Duke.",
+        "source_has": "He was not alone. Several of his college companions sailed with him... When the boys went out to Eaton Hall, they were awed...",
+        "gate_test_answer": "A reader is mildly confused: the draft cut the companions who sailed with him, so \"the boys\" (and later \"his friends\" in Berlin) has no antecedent, though the sense is still roughly inferable.",
+        "valid": true,
+        "segment_id": "007",
+        "pair": "006-007"
+      },
+      "is_selected_revision": true,
+      "review": {
+        "verdict": "confirmed",
+        "confidence": "high",
+        "origin": "introduced_by_second_pass",
+        "title": "Traveling companions disappear before 'the boys'",
+        "assessment": "The source and initial draft explicitly say several college companions sailed with Adams. The revision removes that introduction but retains 'the boys' at Eaton Hall and later 'his friends'. This is a real, small continuity break introduced by the length-reduction pass.",
+        "suggested_action": "Restore the short source sentence introducing the college companions near the sailing sentence, then compensate with an unrelated optional cut.",
+        "evidence": [
+          {
+            "file": "../education/007/initial.md",
+            "text": "Several of his college companions sailed with him"
+          },
+          {
+            "file": "../education/007/draft.md",
+            "text": "At Eaton Hall the boys were awed"
+          }
+        ]
+      }
+    },
+    {
+      "group": "education/007",
+      "index": 1,
+      "critic": {
+        "class": "missing_gloss",
+        "chapter": "N",
+        "draft_passage": "when things reached this condition, Lee had to exhaust his authority over his own staff.",
+        "source_has": "the two others who seemed instinctively to form a staff for Lee, were town-Virginians from Petersburg.",
+        "gate_test_answer": "A reader is somewhat confused, since the draft never says the two Petersburg Virginians formed Lee's \"staff\", though context lets them guess it means his Virginian followers.",
+        "valid": true,
+        "segment_id": "006",
+        "pair": "006-007"
+      },
+      "is_selected_revision": false,
+      "review": {
+        "verdict": "not_confirmed",
+        "confidence": "medium",
+        "origin": "existing_neighbor",
+        "title": "Lee's 'staff' is inferable from the surrounding scene",
+        "assessment": "This is in the existing Harvard College draft. The earlier paragraphs identify the two Petersburg Virginians and Lee's habitual leadership. The next sentence says he kept his friends under control. Those cues make the military metaphor understandable; I would not treat this as a required repair.",
+        "suggested_action": "No repair recommended on this evidence.",
+        "evidence": [
+          {
+            "file": "education/007/segments/006.md",
+            "text": "the two others were town-Virginians from Petersburg"
+          },
+          {
+            "file": "education/007/segments/006.md",
+            "text": "he kept his temper and his friends under control"
+          }
+        ]
+      }
+    },
+    {
+      "group": "education/027",
+      "index": 0,
+      "critic": {
+        "class": "unglossed_name",
+        "chapter": "N",
+        "draft_passage": "President Cleveland set aside Hewitt; President Harrison set aside Hay.",
+        "source_has": "Hay belonged to the New York school, like Abram Hewitt, Evarts, W. C. Whitney, Samuel J. Tilden... The story of Abram Hewitt would offer one type of this statesman series, and that of Hay another.",
+        "gate_test_answer": "A reader is genuinely confused, because Hewitt appears without a first name or role and the draft cut the passage that introduced him as a fellow member of the New York school.",
+        "segment_id": "026",
+        "pair": "026-027",
+        "valid": true
+      },
+      "is_selected_revision": false,
+      "review": {
+        "verdict": "context_dependent",
+        "confidence": "medium",
+        "origin": "existing_neighbor",
+        "title": "Hewitt's political role is underexplained in an existing chapter",
+        "assessment": "The existing Indian Summer draft removes the local New York-school introduction. However, the actual preceding included draft is segment 023 (024 and 025 are omitted), where Abram Hewitt is named as one of Adams's serious readers. That preceding chapter was outside this pair's context. The critic's claim that he has no first name or prior introduction is therefore too strong. A local political-role gloss may help, but this is not a new revision defect.",
+        "suggested_action": "Review in full reading context before any repair.",
+        "evidence": [
+          {
+            "file": "context/education-023.md",
+            "text": "Abram Hewitt, Wayne McVeagh, and Hay himself"
+          },
+          {
+            "file": "education/027/segments/026.md",
+            "text": "President Cleveland set aside Hewitt"
+          }
+        ]
+      }
+    },
+    {
+      "group": "education/027",
+      "index": 1,
+      "critic": {
+        "class": "dangling_reference",
+        "chapter": "N",
+        "draft_passage": "Even there, Adams would have been beaten had he not been helped by Mrs. Hay, who saw the necessity of distraction",
+        "source_has": "They all united in trying to help each other to get along the best way they could, and all they tried to save was the personal relation. Even there, Adams would have been beaten had he not been helped by Mrs. Hay",
+        "gate_test_answer": "\"Even there\" has no antecedent, since the cut sentence about saving the personal relation was what it pointed to, so the reader cannot tell what Adams would have been beaten at.",
+        "segment_id": "026",
+        "pair": "026-027",
+        "valid": true
+      },
+      "is_selected_revision": false,
+      "review": {
+        "verdict": "confirmed",
+        "confidence": "medium",
+        "origin": "existing_neighbor",
+        "title": "'Even there' loses its explicit reference to preserving friendship",
+        "assessment": "The existing Indian Summer draft retains 'Even there, Adams would have been beaten' but removes the sentence saying the friends were trying to save their personal relation. The broader struggle to retain Hay's company is still present, so the scene is recoverable, but the connective is locally weakened.",
+        "suggested_action": "Restore the personal-relation link or revise the connective in a later repair.",
+        "evidence": [
+          {
+            "file": "education/027/chapters/026.md",
+            "text": "all they tried to save was the personal relation"
+          },
+          {
+            "file": "education/027/segments/026.md",
+            "text": "Even there, Adams would have been beaten"
+          }
+        ]
+      }
+    },
+    {
+      "group": "education/027",
+      "index": 2,
+      "critic": {
+        "class": "unglossed_name",
+        "chapter": "N+1",
+        "draft_passage": "He felt almost aggrieved to find Walcott so vigorously flinging the ganoid all the way off to Colorado and far back into the Lower Trenton limestone",
+        "source_has": "He felt almost aggrieved to find Walcott so vigorously acting the part of Comus as to have flung the ganoid all the way off to Colorado... (Walcott is also unglossed in the source, but the Comus role framed him as an actor in the Pteraspis story.)",
+        "gate_test_answer": "A reader meets 'Walcott' as a new name with no role (geologist or paleontologist) and no earlier mention in either draft chapter, so they cannot tell who he is or why he is moving the fish, which is genuine confusion rather than lost ornament.",
+        "segment_id": "028",
+        "pair": "027-028",
+        "valid": true
+      },
+      "is_selected_revision": false,
+      "review": {
+        "verdict": "context_dependent",
+        "confidence": "medium",
+        "origin": "existing_neighbor",
+        "title": "Walcott is unglossed, but already unglossed in the source",
+        "assessment": "This name is in the existing Twilight draft, not the revised Dynamo chapter. Neither the local source nor the draft gives a role gloss; the critic itself acknowledges this. The surrounding geology discussion suggests his role. A gloss could improve accessibility, but the supplied evidence does not establish that abridgment removed an introduction.",
+        "suggested_action": "Treat as an optional accessibility improvement, not a demonstrated new defect.",
+        "evidence": [
+          {
+            "file": "education/027/segments/028.md",
+            "text": "find Walcott so vigorously flinging the ganoid"
+          },
+          {
+            "file": "education/027/chapters/028.md",
+            "text": "find Walcott so vigorously acting the part of Comus"
+          }
+        ]
+      }
+    },
+    {
+      "group": "education/027",
+      "index": 3,
+      "critic": {
+        "class": "dangling_reference",
+        "chapter": "N",
+        "draft_passage": "Adams knew nothing about any of it, but though all were occult, all reacted on his mind, and he rather inclined to think the Virgin easiest to handle.",
+        "source_has": "It could scarcely be more complex than radium; it could hardly be deflected, diverted, polarized, absorbed more perplexingly than other radiant matter. Adams knew nothing about any of them, but as a mathematical problem of influence on human progress, though all were occult, all reacted on his mind...",
+        "gate_test_answer": "The comparison with radium and other radiant matter was cut, so 'all were occult' has no clear plural antecedent in the preceding draft and the 'easiest to handle' comparison loses its other terms, which is a real referential gap.",
+        "segment_id": "027",
+        "pair": "027-028",
+        "valid": true
+      },
+      "is_selected_revision": true,
+      "review": {
+        "verdict": "possible",
+        "confidence": "medium",
+        "origin": "comparison_cut_in_first_pass_referent_weakened_in_second",
+        "title": "'All were occult' loses its immediate comparison",
+        "assessment": "The local comparison with radium and other radiant matter was already absent in the initial draft. The second pass further cuts the list of energies' properties and changes 'any of them' to singular 'any of it', while retaining 'all were occult' and 'the Virgin easiest to handle'. This weakens the local referent. It is less conclusive than the Berlin finding: radium, rays, and 'both energies' still appear earlier, so a reader can recover the broad comparison from the chapter.",
+        "suggested_action": "Clarify the compared forces with a short source-grounded link. Count this as a possible local clarity repair, not proven loss of the whole argument.",
+        "evidence": [
+          {
+            "file": "../education/027/source.md",
+            "text": "It could scarcely be more complex than radium"
+          },
+          {
+            "file": "../education/027/initial.md",
+            "text": "Adams knew nothing about any of them"
+          },
+          {
+            "file": "../education/027/draft.md",
+            "text": "Adams knew nothing about any of it, but though all were occult"
+          },
+          {
+            "file": "../education/027/draft.md",
+            "text": "both energies acted as interchangeable force on man"
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "pairs_checked": 8,
+    "selected_revision_flags": 2,
+    "selected_confirmed": 1,
+    "selected_possible": 1,
+    "existing_neighbor_flags": 4,
+    "cost_usd": 0.495158
+  },
+  "limitations": [
+    "This is a structural coherence critic, not a style or completeness critic.",
+    "Immediate neighbors are existing production drafts with different generation provenance.",
+    "Each pair sees only its two chapters; earlier context can require manual adjudication.",
+    "One critic sample per pair; no automatic prose repairs or publication."
+  ],
+  "no_findings_does_not_mean": "No style loss, perfect fidelity, or exhaustive coherence coverage.",
+  "repairs_applied": false
+}
