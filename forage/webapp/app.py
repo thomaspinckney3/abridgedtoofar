@@ -1,15 +1,14 @@
 """FastAPI application for editorial review of abridgments.
 
-Public read, token-gated write, admin-gated publish. Reads pipeline artifacts
-off disk (see store.ArtifactStore) and owns exactly one piece of mutable state:
-the comment queue in SQLite.
+Public read, account-gated write, admin-gated account management and publish.
+Reads pipeline artifacts off disk; comments, accounts and sessions use SQLite.
 
 Routes
   GET  /                              review console shell
   GET  /b/{book_id}                   ditto (client-side routing)
   GET  /healthz                       liveness probe for the platform
   GET  /api/session                   role + vocabulary for the client
-  POST /api/session                   { token, label } -> sets cookie
+  POST /api/session                   { username, password } -> sets cookie
   DELETE /api/session                 sign out
   GET  /api/books                     book list with alignment + comment counts
   GET  /api/books/{book}/chapters     chapter index
@@ -40,6 +39,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .auth import (COOKIE_NAME, AuthConfig, LoginLimiter, RateLimiter, Session,
                    client_ip, env_flag, is_secure)
+from .accounts import AccountStore
 from ..review_anchors import chapter_hash
 from .store import (BOOK_COMMENT_SEGMENT, KINDS, SEVERITIES, STATUSES,
                     ArtifactStore, ReviewStore, build_edits, build_feedback,
@@ -68,6 +68,8 @@ def create_app(artifacts: ArtifactStore | None = None,
     if os.environ.get("FORAGE_EDITS_DIR"):
         mutable_path(Path(os.environ["FORAGE_EDITS_DIR"]))
     auth = auth or AuthConfig.from_env()
+    accounts = AccountStore(reviews.db_path)
+    accounts.bootstrap(auth.production)
     writes = RateLimiter()
     logins = LoginLimiter()
 
@@ -78,6 +80,7 @@ def create_app(artifacts: ArtifactStore | None = None,
     app.state.artifacts = artifacts
     app.state.reviews = reviews
     app.state.auth = auth
+    app.state.accounts = accounts
 
     # -- middleware --------------------------------------------------------
 
@@ -129,6 +132,8 @@ def create_app(artifacts: ArtifactStore | None = None,
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
         response.headers.setdefault("Referrer-Policy", "same-origin")
         response.headers.setdefault("X-Frame-Options", "DENY")
+        if request.url.path.startswith(("/api/session", "/api/users", "/api/account")):
+            response.headers["Cache-Control"] = "no-store"
         if is_secure(request, auth.trust_proxy):
             response.headers.setdefault(
                 "Strict-Transport-Security", "max-age=31536000; includeSubDomains")
@@ -137,13 +142,13 @@ def create_app(artifacts: ArtifactStore | None = None,
     # -- dependencies ------------------------------------------------------
 
     def session(forage_review: Optional[str] = Cookie(default=None)) -> Session:
-        return auth.verify(forage_review)
+        return accounts.verify(forage_review, auth)
 
     def require_write(request: Request,
                       sess: Session = Depends(session)) -> Session:
         if not sess.can_write:
             raise HTTPException(status_code=401,
-                                detail="Sign in with the review token to comment.")
+                                detail="Sign in to comment.")
         retry = writes.check(client_ip(request, auth.trust_proxy))
         if retry:
             raise HTTPException(status_code=429,
@@ -154,7 +159,7 @@ def create_app(artifacts: ArtifactStore | None = None,
     def require_admin(sess: Session = Depends(require_write)) -> Session:
         if not sess.can_admin:
             raise HTTPException(status_code=403,
-                                detail="Publishing needs the admin token.")
+                                detail="An administrator account is required.")
         return sess
 
     def require_book(book_id: str) -> str:
@@ -239,10 +244,9 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     @app.get("/api/session")
     def get_session(sess: Session = Depends(session)) -> dict:
-        return {"role": sess.role, "label": sess.label,
+        return {"role": sess.role, "label": sess.label, "username": sess.username,
+                "user_id": sess.user_id,
                 "can_write": sess.can_write, "can_admin": sess.can_admin,
-                "admin_enabled": auth.admin_enabled,
-                "generated_token": "FORAGE_REVIEW_TOKEN" in auth.generated,
                 "severities": list(SEVERITIES), "kinds": list(KINDS),
                 "statuses": list(STATUSES)}
 
@@ -257,24 +261,69 @@ def create_app(artifacts: ArtifactStore | None = None,
                 detail=f"Too many sign-in attempts. Try again in {int(retry / 60) + 1} min.",
                 headers={"Retry-After": str(int(retry))})
 
-        role = auth.authenticate(str(payload.get("token", "")))
-        if role is None:
-            raise HTTPException(status_code=403, detail="That token isn't right.")
+        result = accounts.login(payload.get("username"), payload.get("password"), auth)
+        if result is None:
+            raise HTTPException(status_code=403, detail="Incorrect username or password.")
 
-        logins.reset(ip)  # a correct token clears the guess counter
-        label = str(payload.get("label", "")).strip()[:64]
+        logins.reset(ip)
+        sess, cookie = result
+        accounts.logout(request.cookies.get(COOKIE_NAME))
         response.set_cookie(
-            COOKIE_NAME, auth.issue(role, label),
+            COOKIE_NAME, cookie,
             max_age=auth.session_seconds, httponly=True, samesite="lax",
             secure=is_secure(request, auth.trust_proxy),
         )
-        return {"role": role, "label": label, "can_write": True,
-                "can_admin": role == "admin"}
+        return get_session(sess)
 
     @app.delete("/api/session")
-    def sign_out(response: Response) -> dict:
+    def sign_out(request: Request, response: Response) -> dict:
+        accounts.logout(request.cookies.get(COOKIE_NAME))
         response.delete_cookie(COOKIE_NAME)
-        return {"role": "public", "label": "", "can_write": False, "can_admin": False}
+        return get_session(Session())
+
+    @app.get("/api/users")
+    def list_users(sess: Session = Depends(require_admin)) -> dict:
+        return {"users": accounts.list_users()}
+
+    @app.post("/api/users", status_code=201)
+    def create_user(payload: dict = Body(...), sess: Session = Depends(require_admin)) -> dict:
+        try:
+            return accounts.create_user(payload.get("username"), payload.get("password"),
+                display_name=payload.get("display_name"), role=payload.get("role", "reviewer"),
+                actor_id=sess.user_id)
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from None
+        except PermissionError as exc:
+            raise HTTPException(status_code=403, detail=str(exc)) from None
+
+    @app.delete("/api/users/{user_id}", status_code=204)
+    def delete_user(user_id: str, sess: Session = Depends(require_admin)) -> Response:
+        try:
+            accounts.delete_user(user_id, actor_id=sess.user_id)
+        except KeyError:
+            raise HTTPException(status_code=404, detail="Account not found.") from None
+        except ValueError as exc:
+            raise HTTPException(status_code=409, detail=str(exc)) from None
+        except PermissionError as exc:
+            raise HTTPException(status_code=403, detail=str(exc)) from None
+        return Response(status_code=204)
+
+    @app.put("/api/account/password")
+    def change_password(request: Request, response: Response, payload: dict = Body(...),
+                        sess: Session = Depends(require_write)) -> dict:
+        retry = logins.check('password:' + sess.user_id)
+        if retry:
+            raise HTTPException(status_code=429, detail="Too many attempts. Try again later.",
+                                headers={"Retry-After": str(int(retry))})
+        try:
+            cookie = accounts.change_password(sess.user_id, payload.get("current_password"),
+                                              payload.get("new_password"), auth)
+        except ValueError as exc:
+            raise HTTPException(status_code=400, detail=str(exc)) from None
+        logins.reset('password:' + sess.user_id)
+        response.set_cookie(COOKIE_NAME, cookie, max_age=auth.session_seconds,
+                            httponly=True, samesite="lax", secure=is_secure(request, auth.trust_proxy))
+        return {"success": True}
 
     # -- reading -----------------------------------------------------------
 

@@ -5,6 +5,7 @@
 #   /app/books      trimmed book metadata (title, author)
 #   /data/artifacts per-book artifact overrides, refreshed without redeploy
 #   /data/books     per-book metadata overrides, refreshed without redeploy
+#   /data/hosted    uploaded revisions and review/public-release pointers
 #   /data           Fly volume: the comment database and published edits.json
 #
 # Build the artifact payload first — the image must not carry all of work/:
@@ -13,11 +14,11 @@
 # Then:
 #   fly launch --no-deploy          # once, to create the app
 #   fly volumes create forage_review_data --size 1
-#   fly secrets set FORAGE_SECRET_KEY=... FORAGE_REVIEW_TOKEN=... FORAGE_ADMIN_TOKEN=...
-#   fly deploy
+#   fly secrets set FORAGE_BOOTSTRAP_ADMIN_USERNAME=admin FORAGE_BOOTSTRAP_ADMIN_PASSWORD=...
+#   fly deploy --ha=false
 #
 # Locally the same image runs with:
-#   docker run -p 8000:8000 -e FORAGE_SECRET_KEY=dev -e FORAGE_REVIEW_TOKEN=dev \
+#   docker run -p 8000:8000 -e FORAGE_BOOTSTRAP_ADMIN_USERNAME=admin -e FORAGE_BOOTSTRAP_ADMIN_PASSWORD='local-development-password' \
 #     -v forage-review:/data forage-review
 
 FROM python:3.12-slim
@@ -33,7 +34,8 @@ ENV PYTHONUNBUFFERED=1 \
     FORAGE_ARTIFACT_OVERLAY_DIR=/data/artifacts \
     FORAGE_BOOKS_OVERLAY_DIR=/data/books \
     FORAGE_REVIEW_DB=/data/review.db \
-    FORAGE_EDITS_DIR=/data/edits
+    FORAGE_EDITS_DIR=/data/edits \
+    FORAGE_HOSTED_ROOT=/data/hosted
 
 # gosu drops privileges in the entrypoint after the volume is chowned; the
 # service account owns nothing else in the image.
@@ -45,7 +47,7 @@ RUN set -e; \
 
 WORKDIR /app
 
-COPY pyproject.toml README.md requirements-web.txt ./
+COPY pyproject.toml setup.py MANIFEST.in README.md requirements-web.txt ./
 COPY forage ./forage
 COPY prompts ./prompts
 COPY spec ./spec
@@ -57,7 +59,7 @@ COPY spec ./spec
 # anything heavy, and it does so lazily inside a property nothing here calls.)
 #
 # Build with --build-arg INSTALL_MODE=full once pipeline stages move behind the
-# admin token — that installs everything the CLI needs.
+# admin account — that installs everything the CLI needs.
 #
 # Web mode installs from requirements-web.txt rather than resolving fastapi and
 # uvicorn fresh: an unpinned build ships whatever PyPI served that minute, and
@@ -101,8 +103,8 @@ EXPOSE 8000
 # uvicorn's own view of scheme and client address needs the forwarded headers
 # too. The app reads them itself (FORAGE_TRUST_PROXY) — this keeps the ASGI
 # scope honest for anything that consults it directly, such as access logs.
-# One worker: SQLite is a single file and the artifact read path is cached
-# per process. Scale by region, not by machine — see fly.toml.
+# One worker and one machine: SQLite and publications are local to the volume.
+# Multiple machines or regions require shared/replicated storage — see fly.toml.
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["uvicorn", "forage.webapp.app:get_app", "--factory", \
      "--host", "0.0.0.0", "--port", "8000", "--workers", "1", \

@@ -17,8 +17,8 @@ from forage.webapp.app import create_app
 from forage.webapp.auth import AuthConfig
 from forage.webapp.store import ArtifactStore, ReviewStore
 
-REVIEW_TOKEN = "review-token-for-tests"
-ADMIN_TOKEN = "admin-token-for-tests"
+REVIEW_PASSWORD = "review-token-for-tests"
+ADMIN_PASSWORD = "admin-token-for-tests"
 ALLOWED_HOST = "review.example.com"
 BOOK_ID = "testbook"
 SEGMENT_ID = "001"
@@ -30,8 +30,9 @@ _ENV_KEYS = (
     "FORAGE_WORK_DIR", "FORAGE_BOOKS_DIR", "FORAGE_ARTIFACT_OVERLAY_DIR",
     "FORAGE_BOOKS_OVERLAY_DIR", "FORAGE_REVIEW_DB", "FORAGE_EDITS_DIR",
     "FORAGE_ALLOWED_HOSTS", "FORAGE_STRICT_HOST", "FORAGE_TRUST_PROXY",
-    "FORAGE_ENV", "FLY_APP_NAME", "FORAGE_SECRET_KEY", "FORAGE_REVIEW_TOKEN",
-    "FORAGE_ADMIN_TOKEN", "FORAGE_SESSION_HOURS", "FORAGE_SESSION_EPOCH",
+    "FORAGE_ENV", "FLY_APP_NAME", "FORAGE_SECRET_KEY", "FORAGE_REVIEW_PASSWORD",
+    "FORAGE_ADMIN_PASSWORD", "FORAGE_ADMIN_USERNAME", "FORAGE_BOOTSTRAP_ADMIN_USERNAME",
+    "FORAGE_BOOTSTRAP_ADMIN_PASSWORD", "FORAGE_REVIEW_TOKEN", "FORAGE_ADMIN_TOKEN", "FORAGE_SESSION_HOURS", "FORAGE_SESSION_EPOCH",
     "FORAGE_HOSTED_ROOT", "FORAGE_PUBLICATION_DIR", "FORAGE_REVIEW_URL",
     "FORAGE_REVIEW_LOCAL_ROOT", "FORAGE_MAX_UPLOAD_BYTES",
     "FORAGE_MAX_EXPANDED_BYTES", "FORAGE_MAX_UPLOAD_FILES",
@@ -88,7 +89,7 @@ def make_client(artifact_tree: Path, tmp_path: Path, monkeypatch):
     """Build a TestClient. `allowed_hosts` mirrors FORAGE_ALLOWED_HOSTS, which
     create_app reads at construction time."""
 
-    def _make(allowed_hosts: str | None = None, admin_token: str = ADMIN_TOKEN,
+    def _make(allowed_hosts: str | None = None,
               strict_host: bool = False, **auth_overrides) -> TestClient:
         if allowed_hosts is not None:
             monkeypatch.setenv("FORAGE_ALLOWED_HOSTS", allowed_hosts)
@@ -99,18 +100,15 @@ def make_client(artifact_tree: Path, tmp_path: Path, monkeypatch):
                                   books_dir=artifact_tree / "books")
         reviews = ReviewStore(db_path=tmp_path / "review.db")
         auth_kwargs = dict(
-            review_token=REVIEW_TOKEN,
-            admin_token=admin_token,
-            secret_key=b"secret-key-for-tests",
             session_seconds=3600,
             epoch="0",
             trust_proxy=False,
             production=False,
-            generated=(),
         )
         auth_kwargs.update(auth_overrides)
         app = create_app(artifacts=artifacts, reviews=reviews,
                          auth=AuthConfig(**auth_kwargs))
+        seed_accounts(app)
         return TestClient(app)
 
     return _make
@@ -121,10 +119,26 @@ def client(make_client) -> TestClient:
     return make_client()
 
 
-def sign_in(client: TestClient, token: str = REVIEW_TOKEN,
+def seed_accounts(app):
+    store = app.state.accounts
+    existing = {u['username'] for u in store.list_users()}
+    if 'admin' not in existing:
+        store.create_user('admin', ADMIN_PASSWORD, role='admin', display_name='Administrator')
+    if 'alice' not in existing:
+        store.create_user('alice', REVIEW_PASSWORD, display_name='alice')
+
+
+def sign_in(client: TestClient, password: str = REVIEW_PASSWORD,
             label: str = "alice") -> dict:
-    """Sign in and leave the session cookie in the client's jar."""
-    response = client.post("/api/session", json={"token": token, "label": label})
+    """Fixture provisioning is separate from the real account login endpoint."""
+    seed_accounts(client.app)
+    username = 'admin' if password == ADMIN_PASSWORD else 'alice'
+    if label not in ('alice', '') and username != 'admin':
+        import hashlib
+        username = 'reviewer-' + hashlib.sha256(label.encode()).hexdigest()[:12]
+        if username not in {u['username'] for u in client.app.state.accounts.list_users()}:
+            client.app.state.accounts.create_user(username, password, display_name=label)
+    response = client.post("/api/session", json={"username": username, "password": password})
     assert response.status_code == 200, response.text
     return response.json()
 

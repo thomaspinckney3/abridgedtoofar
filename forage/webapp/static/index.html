@@ -21,6 +21,7 @@
   <div class="topbar-actions">
     <button class="btn ghost" id="help-btn" type="button" aria-keyshortcuts="?">Keys</button>
     <button class="btn ghost" id="theme-btn" type="button" aria-label="Switch colour theme">Theme</button>
+    <button class="btn" id="users-btn" type="button" hidden>Users</button>
     <button class="btn" id="session-btn" type="button">Sign in to comment</button>
   </div>
 </header>
@@ -39,9 +40,9 @@
 <dialog id="signin-dialog" class="sheet">
   <form method="dialog" id="signin-form">
     <h2>Sign in to comment</h2>
-    <p class="sheet-note" id="signin-note">Reading is open to anyone. The review token lets you leave notes; the admin token can also export feedback.</p>
-    <label>Your name<input type="text" id="signin-label" maxlength="64" placeholder="Who's reviewing" autocomplete="name"></label>
-    <label>Token<input type="password" id="signin-token" autocomplete="current-password" required></label>
+    <p class="sheet-note">Sign in with the account created by your administrator.</p>
+    <label>Username<input type="text" id="signin-username" maxlength="64" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+    <label>Password<input type="password" id="signin-password" maxlength="128" autocomplete="current-password" required></label>
     <p class="sheet-error" id="signin-error" hidden></p>
     <menu>
       <button class="btn ghost" value="cancel" type="submit" formnovalidate>Cancel</button>

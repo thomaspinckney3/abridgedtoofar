@@ -737,3 +737,19 @@ del { background: var(--del-bg); color: var(--del-fg); padding: 0 2px; border-ra
 .media-composer textarea, .sheet textarea { display: block; width: 100%; min-height: 6rem; margin: .75rem 0; }
 .media-composer label { display: block; margin-top: 1rem; }
 .note-time { font-size: .85rem; }
+/* Account forms use the same dialog and control styles as review notes. */
+.account-sheet { max-height: 90vh; overflow-y: auto; padding: 1.25rem; box-sizing: border-box; }
+.account-sheet input, .account-sheet select { width: 100%; box-sizing: border-box; }
+.account-sheet form { display: grid; gap: .65rem; padding: 0; }
+.account-sheet select { font: inherit; color: var(--ink); background: var(--paper); padding: .5rem; border: 1px solid var(--line); border-radius: 5px; }
+#session-btn { max-width: 12rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 700px) {
+  #session-btn { max-width: 8rem; }
+  .topbar-actions { gap: .3rem; }
+  #theme-btn { display: none; }
+}
+.user-list { display: grid; gap: .5rem; margin: 1rem 0; }
+.user-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .65rem 0; border-bottom: 1px solid var(--line); }
+.user-row > div { min-width: 0; overflow-wrap: anywhere; }
+.user-row button { flex-shrink: 0; }
+.create-user { margin-top: 1.5rem; }

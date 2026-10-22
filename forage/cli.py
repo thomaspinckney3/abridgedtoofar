@@ -1618,9 +1618,9 @@ def serve(host: str = typer.Option("127.0.0.1", help="Bind address. Use 0.0.0.0 
     """Run the editorial review web app: the proofread alignment view, plus a
     comment queue that publishes to work/<book>/editorial/edits.json.
 
-    Reading is public. Commenting needs FORAGE_REVIEW_TOKEN; publishing needs
-    FORAGE_ADMIN_TOKEN. When the review token is unset one is generated and
-    printed here — nothing can be written without it. Zero LLM cost."""
+    Reading is public. Accounts sign in with a username and password.
+    Create the first admin with `python -m forage.webapp.accounts create-admin USERNAME`.
+    Zero LLM cost."""
     try:
         import uvicorn
     except ImportError:
@@ -1642,22 +1642,18 @@ def serve(host: str = typer.Option("127.0.0.1", help="Bind address. Use 0.0.0.0 
     console.print(f"artifacts  {artifacts.work_dir}")
     console.print(f"review db  {reviews.db_path}")
     console.print(f"books      {', '.join(artifacts.book_ids()) or '(none aligned yet)'}")
-    if "FORAGE_REVIEW_TOKEN" in auth.generated:
-        console.print(f"[yellow]review token[/yellow] {auth.review_token}  "
-                      f"[dim](generated — set FORAGE_REVIEW_TOKEN to keep it stable)[/dim]")
-    console.print("admin      " + ("enabled via FORAGE_ADMIN_TOKEN"
-                                   if auth.admin_enabled
-                                   else "[dim]disabled — publishing is unavailable "
-                                        "until FORAGE_ADMIN_TOKEN is set[/dim]"))
-    if "FORAGE_SECRET_KEY" in auth.generated:
-        console.print("[dim]FORAGE_SECRET_KEY unset — sessions end when this process does[/dim]")
+    from .webapp.accounts import AccountStore
+    accounts = AccountStore(reviews.db_path)
+    try:
+        accounts.bootstrap(auth.production)
+    except (AuthConfigError, ValueError) as exc:
+        console.print(f"[red]{exc}[/red]")
+        raise typer.Exit(code=1)
+    if not accounts.list_users():
+        console.print("Create your first admin: python -m forage.webapp.accounts create-admin USERNAME")
     console.print(f"[green]listening on[/green] http://{host}:{port}")
 
     if reload:
-        # The reloader re-imports in a subprocess, so generated values have to
-        # survive into it or sign-in breaks on every restart.
-        os.environ.setdefault("FORAGE_REVIEW_TOKEN", auth.review_token)
-        os.environ.setdefault("FORAGE_SECRET_KEY", auth.secret_key.decode())
         uvicorn.run("forage.webapp.app:get_app", factory=True,
                     host=host, port=port, reload=True)
     else:
@@ -1844,7 +1840,7 @@ def production_release(
     console.print(f"Local release revision: {result['revision']}")
 
 
-def _review_transport(book, site, local_root, token_env, feedback_path=None):
+def _review_transport(book, site, local_root, username_env, password_env, feedback_path=None):
     from .review_transport import ReviewTransport
     configured = book.metadata.get("review", {})
     if not isinstance(configured, dict):
@@ -1853,13 +1849,14 @@ def _review_transport(book, site, local_root, token_env, feedback_path=None):
         site = os.environ.get("FORAGE_REVIEW_URL") or configured.get("url")
         local_root = os.environ.get("FORAGE_REVIEW_LOCAL_ROOT") or configured.get("local_root")
     return ReviewTransport(base_url=site, local_root=local_root,
-                           token=os.environ.get(token_env), feedback_path=feedback_path)
+                           username=os.environ.get(username_env), password=os.environ.get(password_env),
+                           feedback_path=feedback_path)
 
 
-def _publish_revision(book_id, revision, channel, workspace, site, local_root, token_env):
+def _publish_revision(book_id, revision, channel, workspace, site, local_root, username_env, password_env):
     try:
         book = load_book(book_id, workspace=workspace, create=False)
-        result = _review_transport(book, site, local_root, token_env).publish(
+        result = _review_transport(book, site, local_root, username_env, password_env).publish(
             book, revision, channel=channel)
     except (ValueError, OSError, RuntimeError) as error:
         console.print(f"[red]{error}[/red]")
@@ -1874,10 +1871,11 @@ def publish_review(
     workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
     site: str | None = typer.Option(None, help="Review site URL; defaults to FORAGE_REVIEW_URL or metadata.review.url."),
     local_root: Path | None = typer.Option(None, help="Local hosted root instead of HTTP; also FORAGE_REVIEW_LOCAL_ROOT."),
-    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN", help="Environment variable holding the site admin token. Never printed."),
+    username_env: str = typer.Option("FORAGE_ADMIN_USERNAME", help="Environment variable holding the publishing account username."),
+    password_env: str = typer.Option("FORAGE_ADMIN_PASSWORD", help="Environment variable holding its password. Never printed."),
 ) -> None:
     """Upload a verified revision and advance hosted review; no generation or release."""
-    _publish_revision(book_id, revision, "review", workspace, site, local_root, token_env)
+    _publish_revision(book_id, revision, "review", workspace, site, local_root, username_env, password_env)
 
 
 @app.command("prepare-review")
@@ -1902,13 +1900,14 @@ def publish_release(
     workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
     site: str | None = typer.Option(None, help="Review site URL; defaults to FORAGE_REVIEW_URL or metadata.review.url."),
     local_root: Path | None = typer.Option(None, help="Local hosted root instead of HTTP; also FORAGE_REVIEW_LOCAL_ROOT."),
-    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN", help="Environment variable holding the site admin token."),
+    username_env: str = typer.Option("FORAGE_ADMIN_USERNAME"),
+    password_env: str = typer.Option("FORAGE_ADMIN_PASSWORD"),
 ) -> None:
     """Explicitly upload/promote a public hosted release; retain review and history."""
-    _publish_revision(book_id, revision, "release", workspace, site, local_root, token_env)
+    _publish_revision(book_id, revision, "release", workspace, site, local_root, username_env, password_env)
 
 
-def _sync_review(book_id, workspace, site, local_root, token_env, feedback,
+def _sync_review(book_id, workspace, site, local_root, username_env, password_env, feedback,
                  apply, republish, outputs=None, production_options=None, segments=None):
     from .review_sync import sync_feedback
     try:
@@ -1918,7 +1917,7 @@ def _sync_review(book_id, workspace, site, local_root, token_env, feedback,
         if outputs is not None:
             options["outputs"] = outputs
         book = load_book(book_id, workspace=workspace, create=False)
-        transport = _review_transport(book, site, local_root, token_env, feedback)
+        transport = _review_transport(book, site, local_root, username_env, password_env, feedback)
         result = sync_feedback(book, transport, apply=apply, republish=republish,
                                production_options=options or None, segment_ids=segments or None)
     except (ValueError, OSError, RuntimeError) as error:
@@ -1935,11 +1934,12 @@ def review_pull(
     workspace: Path | None = typer.Option(None),
     site: str | None = typer.Option(None, help="Review site URL; also FORAGE_REVIEW_URL."),
     local_root: Path | None = typer.Option(None, help="Local hosting root; also FORAGE_REVIEW_LOCAL_ROOT."),
-    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN"),
+    username_env: str = typer.Option("FORAGE_ADMIN_USERNAME"),
+    password_env: str = typer.Option("FORAGE_ADMIN_PASSWORD"),
     feedback: Path | None = typer.Option(None, help="Full feedback JSON export for local transport."),
 ) -> None:
     """Fetch/reconcile feedback and report eligible prose edits. No model calls."""
-    _sync_review(book_id, workspace, site, local_root, token_env, feedback, False, False)
+    _sync_review(book_id, workspace, site, local_root, username_env, password_env, feedback, False, False)
 
 
 @app.command("review-sync")
@@ -1950,7 +1950,8 @@ def review_sync(
     workspace: Path | None = typer.Option(None),
     site: str | None = typer.Option(None, help="Review site URL; also FORAGE_REVIEW_URL."),
     local_root: Path | None = typer.Option(None, help="Local hosting root; also FORAGE_REVIEW_LOCAL_ROOT."),
-    token_env: str = typer.Option("FORAGE_ADMIN_TOKEN"),
+    username_env: str = typer.Option("FORAGE_ADMIN_USERNAME"),
+    password_env: str = typer.Option("FORAGE_ADMIN_PASSWORD"),
     feedback: Path | None = typer.Option(None, help="Full feedback JSON export for local transport."),
     outputs: str | None = typer.Option(None, help="Override selected outputs: text,audio,graphic; default retains prior production selection."),
     production_options: Path | None = typer.Option(None, help="JSON object of production.run options, e.g. voice/model/graphic settings."),
@@ -1959,7 +1960,7 @@ def review_sync(
     """Pull, optionally apply and republish review feedback. Public release is explicit."""
     if republish and not apply:
         raise typer.BadParameter("--republish requires --apply")
-    _sync_review(book_id, workspace, site, local_root, token_env, feedback,
+    _sync_review(book_id, workspace, site, local_root, username_env, password_env, feedback,
                  apply, republish, outputs, production_options, segment)
 
 

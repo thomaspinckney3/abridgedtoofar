@@ -17,19 +17,18 @@ from forage.webapp.app import create_app
 from forage.webapp.auth import AuthConfig
 from forage.webapp.store import ArtifactStore, ReviewStore
 from .test_production_runner import pipeline, run_ok, _media_mocks
-from .conftest import ADMIN_TOKEN, REVIEW_TOKEN, sign_in
+from .conftest import ADMIN_PASSWORD, REVIEW_PASSWORD, seed_accounts, sign_in
 
 
 def _site(tmp_path):
     host = HostedPublications(tmp_path / 'separate-website')
     reviews = ReviewStore(tmp_path / 'site-comments.sqlite')
     artifacts = ArtifactStore(work_dir=tmp_path / 'empty-artifacts', books_dir=tmp_path / 'empty-metadata', hosted_dir=host.root)
-    auth = AuthConfig(review_token=REVIEW_TOKEN, admin_token=ADMIN_TOKEN,
-                      secret_key=b'fixture-secret', session_seconds=3600,
-                      epoch='0', trust_proxy=False, production=False, generated=())
+    auth = AuthConfig(session_seconds=3600)
     app = create_app(artifacts=artifacts, reviews=reviews, auth=auth, hosted=host)
+    seed_accounts(app)
     machine, reviewer = TestClient(app), TestClient(app)
-    transport = ReviewTransport(base_url='http://testserver', token=ADMIN_TOKEN, http_client=machine)
+    transport = ReviewTransport(base_url='http://testserver', username="admin", password=ADMIN_PASSWORD, http_client=machine)
     sign_in(reviewer)
     return host, reviews, transport, reviewer
 

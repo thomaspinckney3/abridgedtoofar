@@ -3,14 +3,11 @@
 # Rename `app` to whatever `fly launch` created for you. Secrets are never set
 # here — use `fly secrets set` so they land in the encrypted store:
 #
-#   fly secrets set \
-#     FORAGE_SECRET_KEY="$(python -c 'import secrets;print(secrets.token_urlsafe(32))')" \
-#     FORAGE_REVIEW_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(9))')" \
-#     FORAGE_ADMIN_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(12))')"
+#   fly secrets set FORAGE_BOOTSTRAP_ADMIN_USERNAME=admin \
+#     FORAGE_BOOTSTRAP_ADMIN_PASSWORD='a unique password of at least 15 characters'
 #
-# The app refuses to boot in production without FORAGE_SECRET_KEY and
-# FORAGE_REVIEW_TOKEN, so a misconfigured deploy fails the health check
-# instead of coming up wide open.
+# Bootstrap creates an administrator only when the database has no accounts.
+# Remove bootstrap secrets after initialization. Existing accounts survive deploys.
 
 app = "forage-review"
 primary_region = "iad"
@@ -25,9 +22,10 @@ primary_region = "iad"
   # Per-book mounted artifacts here override baked books without a rebuild.
   FORAGE_ARTIFACT_OVERLAY_DIR = "/data/artifacts"
   FORAGE_BOOKS_OVERLAY_DIR = "/data/books"
-  # On the volume, so comments and published overlays survive a deploy.
+  # On the volume, so comments, uploaded revisions and releases survive deploys.
   FORAGE_REVIEW_DB = "/data/review.db"
   FORAGE_EDITS_DIR = "/data/edits"
+  FORAGE_HOSTED_ROOT = "/data/hosted"
   # Fly's proxy sits in front: read the real client IP and scheme from it.
   FORAGE_TRUST_PROXY = "1"
   # Origins a write may come from. Without this the cross-origin check falls
@@ -36,7 +34,7 @@ primary_region = "iad"
   # outright is separate (FORAGE_STRICT_HOST) and off, because the health
   # check below arrives with the machine's address in Host, not this name.
   FORAGE_ALLOWED_HOSTS = "forage-review.fly.dev"
-  # Bump to sign every session out at once (e.g. after rotating a token).
+  # Bump to sign every session out at once (e.g. after an account incident).
   FORAGE_SESSION_EPOCH = "1"
 
 [http_service]
@@ -44,8 +42,8 @@ primary_region = "iad"
   force_https = true
   auto_stop_machines = "suspend"
   auto_start_machines = true
-  # The comment queue is a SQLite file on one volume: exactly one machine may
-  # write it. Keep this at 1 and do not `fly scale count` above 1.
+  # This is a minimum, not a machine-count cap. Keep the app at one machine:
+  # SQLite and uploaded publications are local to its unreplicated volume.
   min_machines_running = 1
 
   [[http_service.checks]]

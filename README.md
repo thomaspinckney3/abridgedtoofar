@@ -280,25 +280,38 @@ What it adds over `proofread.html`:
 
 #### Access control
 
-Three levels, because the app is meant to grow into running the pipeline behind a login:
+Accounts use a username and password. Reading remains public; registration is
+admin-only. The **Users** button lets administrators list accounts, create a
+reviewer or another administrator, and remove an account. Removal immediately
+revokes its sessions while preserving its review notes and attribution. The last
+administrator and your own account cannot be removed. Click your account name
+to change your password or sign out; a password change ends other sessions.
 
-| Level | Token | Can |
-| --- | --- | --- |
-| public | none | read every book, chapter, alignment, and note; download `edits.json` |
-| reviewer | `FORAGE_REVIEW_TOKEN` | add, edit, restatus, and delete notes |
-| admin | `FORAGE_ADMIN_TOKEN` | everything a reviewer can, plus export `edits.json`, upload immutable revisions and promote review/public release |
+| Level | Can |
+| --- | --- |
+| public | read books, chapters, alignments and notes; download feedback |
+| reviewer | add, edit, restatus and delete notes |
+| admin | reviewer permissions, manage accounts, export feedback, upload revisions and promote review/public release |
 
-Reviewers self-label with a name; the label is display-only and grants nothing. Sessions are stateless HMAC-signed cookies (`HttpOnly`, `SameSite=Lax`, `Secure` behind TLS) — no session table, so nothing to replicate. The role lives inside the signed payload, so a reviewer cookie cannot be edited into an admin one, and withdrawing `FORAGE_ADMIN_TOKEN` immediately downgrades live admin cookies to reviewer.
+Usernames are case-insensitive (3–64 letters, numbers, `.`, `@`, `_`, `-`).
+Passwords are 15–128 characters, including spaces and Unicode. Display names
+come from the stored account, never a sign-in label. Passwords use salted scrypt
+hashes with the [OWASP 32 MiB profile](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+(N=32768, r=8, p=3). Random 256-bit session cookies are `HttpOnly`, `SameSite=Lax`
+and `Secure` over HTTPS; only their hashes are stored in SQLite. Every request
+checks the current account and session. Logout invalidates copied cookies too.
 
-Sign-in attempts are limited to 8 per address per 15 minutes; a correct token clears the counter, so a fat-fingered reviewer isn't locked out. Writes are limited separately at 60/minute.
+The old shared `FORAGE_REVIEW_TOKEN` / `FORAGE_ADMIN_TOKEN` login and signed role
+cookies are no longer accepted. Sign-in attempts are limited to 8 per address
+per 15 minutes; successful sign-ins clear that counter. Writes are limited to
+60/minute. Password hashing concurrency is bounded for the small server.
 
 Behind a proxy the limiter has to count the real client rather than the proxy, or the whole internet shares one bucket — so it reads `Fly-Client-IP` first, falling back to the **right-most** `X-Forwarded-For` entry. Right-most matters: proxies append, so the last entry is the one Fly wrote, while anything to its left was supplied by the caller and can be forged to buy a fresh bucket. Forwarded headers are only trusted when `FORAGE_TRUST_PROXY` says a proxy is genuinely in front. Cross-origin writes are refused outright, and every response carries CSP, `nosniff`, `X-Frame-Options: DENY`, and (over HTTPS) HSTS.
 
 | Variable | Purpose |
 | --- | --- |
-| `FORAGE_REVIEW_TOKEN` | Token required to comment |
-| `FORAGE_ADMIN_TOKEN` | Token required to publish; unset disables publishing entirely |
-| `FORAGE_SECRET_KEY` | Cookie signing key |
+| `FORAGE_BOOTSTRAP_ADMIN_USERNAME` | First administrator username; used only when no accounts exist |
+| `FORAGE_BOOTSTRAP_ADMIN_PASSWORD` | Initial password; remove bootstrap variables after first startup |
 | `FORAGE_SESSION_HOURS` | Session lifetime, default 720 (30 days) |
 | `FORAGE_SESSION_EPOCH` | Bump this integer to sign every live session out at once |
 | `FORAGE_ENV` | `production` enables the strict startup check |
@@ -308,11 +321,23 @@ Behind a proxy the limiter has to count the real client rather than the proxy, o
 | `FORAGE_BOOKS_DIR` | Book metadata root, default `books/` |
 | `FORAGE_ARTIFACT_OVERLAY_DIR` | Optional per-book artifact override root, e.g. `/data/artifacts` |
 | `FORAGE_BOOKS_OVERLAY_DIR` | Optional per-book metadata override root, e.g. `/data/books` |
-| `FORAGE_REVIEW_DB` | SQLite comment queue, default `work/_review/review.db`; keep outside immutable snapshots |
+| `FORAGE_REVIEW_DB` | SQLite accounts, sessions and comment queue, default `work/_review/review.db`; keep outside immutable snapshots |
 | `FORAGE_HOSTED_ROOT` | Writable root for uploaded books, immutable revisions and independent review/release pointers |
 | `FORAGE_EDITS_DIR` | Where publish writes, default `work/<book>/editorial/` |
 
-Locally, an unset review token is generated and printed at startup, so a dev server is never write-open. **In production that generation is refused**: with `FORAGE_ENV=production` (or any `FLY_APP_NAME` in the environment) the app will not boot without an explicit `FORAGE_SECRET_KEY` and `FORAGE_REVIEW_TOKEN`, and it rejects any of them shorter than 12 characters — a short shared secret on the public internet is guessable through the lockout given enough addresses. A generated key would also silently invalidate every session on restart and differ between machines. A misconfigured deploy therefore fails its health check instead of coming up with a password nobody knows.
+For a local installation, create the first administrator with a hidden password
+prompt (use the same `FORAGE_REVIEW_DB` as the server):
+
+```bash
+python -m forage.webapp.accounts create-admin admin
+forage serve
+```
+
+For a container's first startup, supply both bootstrap variables as secrets.
+Production refuses to start without an existing account or valid bootstrap
+credentials. Bootstrap never overwrites an existing password. After initialization,
+remove both bootstrap variables; accounts and sessions survive restarts in the
+persistent database. No credentials are generated or printed by the server.
 
 #### Deploying to Fly.io
 
@@ -322,11 +347,9 @@ Locally, an unset review token is generated and printed at startup, so a dev ser
 python scripts/package_review_artifacts.py        # deploy/artifacts — MB, not GB
 fly launch --no-deploy                            # once; keep the generated app name
 fly volumes create forage_review_data --size 1
-fly secrets set \
-  FORAGE_SECRET_KEY="$(python -c 'import secrets;print(secrets.token_urlsafe(32))')" \
-  FORAGE_REVIEW_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(9))')" \
-  FORAGE_ADMIN_TOKEN="$(python -c 'import secrets;print(secrets.token_urlsafe(12))')"
-fly deploy
+fly secrets set FORAGE_BOOTSTRAP_ADMIN_USERNAME=admin \
+  FORAGE_BOOTSTRAP_ADMIN_PASSWORD='a unique initial password of at least 15 characters'
+fly deploy --ha=false
 ```
 
 `scripts/package_review_artifacts.py` calls installed `forage.review_package` logic. It copies alignment JSON, a trimmed plan, metadata, existing review responses, verified current media references, and immutable publications referenced by review/release history. It excludes private drafts, replay caches, credentials and obsolete unreferenced media. Re-run it before an image deploy to refresh the baked baseline; media publications may be much larger than text-only bundles.
@@ -351,13 +374,19 @@ Deployment storage:
 - **Publishing writes to the volume**, not to the image: `FORAGE_EDITS_DIR=/data/edits`. Pull a published overlay back down with `fly ssh sftp get /data/edits/<book>/edits.json`, or skip publishing entirely and use `GET /api/books/<book>/edits.json`, which builds the same document on the fly and needs no writable disk.
 - **Single-book content refreshes also write to the volume**: `FORAGE_ARTIFACT_OVERLAY_DIR=/data/artifacts` and `FORAGE_BOOKS_OVERLAY_DIR=/data/books`. Use `scripts/publish_review_book.py` after re-aligning a book; no app restart or redeploy is needed once those env vars are deployed.
 
-Rotating a token is `fly secrets set FORAGE_REVIEW_TOKEN=...`; bump `FORAGE_SESSION_EPOCH` in `fly.toml` at the same time to sign out everyone still holding a cookie issued under the old one.
+After a successful first login, remove the bootstrap secrets with
+`fly secrets unset FORAGE_BOOTSTRAP_ADMIN_USERNAME FORAGE_BOOTSTRAP_ADMIN_PASSWORD`.
+Use the account menu for subsequent password changes. Bumping
+`FORAGE_SESSION_EPOCH` invalidates every session. Before upgrading an existing
+token-based deployment, back up the SQLite database, configure the initial admin,
+and deploy; the migration adds account/session tables without modifying review
+records. Remove the obsolete token and signing-key secrets after verifying login.
 
 #### Checking it
 
 `python scripts/check_review_app.py` is the end-to-end check — three layers, ~55 assertions, zero LLM cost:
 
-- **units** — cookie signing, tampered role and signature, wrong key, expiry, epoch rotation, admin downgrade, and the production startup refusal
+- **units** — password checks, role separation, session tampering, epoch rotation, logout revocation and first-admin startup refusal
 - **api** — anonymous reads, anonymous write refused, reviewer vs admin on publish, sign-in lockout (and that it's per-address, not global), cross-origin refusal, `Secure`/HSTS behind a forwarded HTTPS hop, security headers
 - **browser** — real Chrome over the DevTools protocol through the whole review loop: routing, filters, keyboard nav, select-to-quote, add/resolve/delete a note, publish visible to admins only, deep links, mobile layout, no uncaught page errors
 
@@ -667,8 +696,8 @@ reviewer decisions. Subsequent feedback repairs carry the original review items
 forward and publish a new response requiring its own review.
 
 The review site runs separately from generation. Configure its writable
-`FORAGE_HOSTED_ROOT`, persistent `FORAGE_REVIEW_DB`, `FORAGE_SECRET_KEY`,
-`FORAGE_REVIEW_TOKEN` and `FORAGE_ADMIN_TOKEN`. Keep the database and exported
+`FORAGE_HOSTED_ROOT`, persistent `FORAGE_REVIEW_DB`, and first-start
+`FORAGE_BOOTSTRAP_ADMIN_USERNAME` / `FORAGE_BOOTSTRAP_ADMIN_PASSWORD`. Keep the database and exported
 feedback outside the immutable `publications/` directories. The web-only image
 serves uploads without model SDKs or Pillow. Existing baked artifacts and mounted
 whole-book overlays remain supported; a current revision never falls back to an
@@ -680,8 +709,10 @@ integer
 `FORAGE_MAX_UPLOAD_FILES` on the server; uploads remain bounded by those limits.
 
 On the pipeline machine, set `FORAGE_REVIEW_URL` to the site's base URL and
-`FORAGE_ADMIN_TOKEN` to its admin token (or use `--token-env NAME`). The client
-signs into the existing cookie session API. Credentials are read from the
+`FORAGE_ADMIN_USERNAME` and `FORAGE_ADMIN_PASSWORD` to an administrator account
+(or select variable names using `--username-env` and `--password-env`). Use a
+dedicated publishing account so personal password changes do not interrupt
+automation. The client signs in through the account session API. Credentials are read from the
 environment and never written into revision manifests. Alternatively configure
 `metadata.json` with `{"review": {"url": "https://review.example.org"}}`.
 `--site` overrides configuration. Local transport uses `--local-root PATH` or
@@ -853,7 +884,8 @@ forage/
     webapp/                        # editorial review app (forage serve)
       app.py                       # FastAPI routes: public read, reviewer write, admin publish
       store.py                     # read-only artifact view + SQLite comment queue
-      auth.py                      # roles, signed sessions, lockout, proxy awareness
+      auth.py                      # roles, session configuration, lockout, proxy awareness
+      accounts.py                  # password hashes, user management and revocable sessions
       static/                      # single-page client (no build step)
     dialogue_split.py              # post-hoc dialogue paragraph splitter
     llm.py                         # provider-agnostic LLM client + routing

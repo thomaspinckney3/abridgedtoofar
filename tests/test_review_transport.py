@@ -11,7 +11,7 @@ from forage.webapp.app import create_app
 from forage.webapp.auth import AuthConfig
 from forage.webapp.store import ArtifactStore, ReviewStore
 from tests.test_publication import publication_input
-from tests.conftest import ADMIN_TOKEN, REVIEW_TOKEN
+from tests.conftest import ADMIN_PASSWORD, REVIEW_PASSWORD, seed_accounts
 
 
 def test_local_publish_and_feedback(publication_input, tmp_path):
@@ -30,11 +30,10 @@ def test_actual_http_publish_first_book_and_fetch(publication_input, tmp_path):
     revision = publication.snapshot_revision(book, **kwargs)["revision"]
     artifacts = ArtifactStore(work_dir=tmp_path / "baked", books_dir=tmp_path / "books", hosted_dir=tmp_path / "hosted")
     reviews = ReviewStore(db_path=tmp_path / "review.db")
-    auth = AuthConfig(review_token=REVIEW_TOKEN, admin_token=ADMIN_TOKEN,
-                      secret_key=b"tests-only", session_seconds=3600, epoch="0",
-                      trust_proxy=False, production=False, generated=())
+    auth = AuthConfig(session_seconds=3600)
     with TestClient(create_app(artifacts=artifacts, reviews=reviews, auth=auth)) as http:
-        transport = ReviewTransport(base_url="http://testserver", token=ADMIN_TOKEN, http_client=http)
+        seed_accounts(http.app)
+        transport = ReviewTransport(base_url="http://testserver", username="admin", password=ADMIN_PASSWORD, http_client=http)
         result = transport.publish(book, revision)
         assert result["revision"] == revision
         assert transport.fetch_feedback(book.book_id)["complete"] is True
@@ -79,7 +78,7 @@ def test_wrong_confirmation_is_failure(publication_input):
     book, kwargs = publication_input
     revision = publication.snapshot_revision(book, **kwargs)["revision"]
     stub = Stub([(200, b'{"role":"admin"}'), (200, b'{"revision":"wrong"}')])
-    transport = ReviewTransport(base_url="https://example.com", token="secret", http_client=stub)
+    transport = ReviewTransport(base_url="https://example.com", username="admin", password="secret", http_client=stub)
     with pytest.raises(TransportError, match="different"):
         transport.publish(book, revision)
     assert len(stub.calls) == 2
@@ -89,7 +88,7 @@ def test_reviewer_credentials_cannot_publish(publication_input):
     book, kwargs = publication_input
     revision = publication.snapshot_revision(book, **kwargs)["revision"]
     stub = Stub([(200, b'{"role":"reviewer"}')])
-    transport = ReviewTransport(base_url="https://example.com", token="secret", http_client=stub)
+    transport = ReviewTransport(base_url="https://example.com", username="admin", password="secret", http_client=stub)
     with pytest.raises(TransportError, match="administrator"):
         transport.publish(book, revision)
     assert len(stub.calls) == 1

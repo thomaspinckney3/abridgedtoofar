@@ -11,12 +11,14 @@ from __future__ import annotations
 
 import json
 import subprocess
+import time
 import uuid
 from pathlib import Path
 
 import pytest
 
 from .conftest import docker_available
+from .test_publication import publication_input
 
 REPO = Path(__file__).resolve().parent.parent
 IMAGE = "forage-review:pytest"
@@ -29,9 +31,53 @@ pytestmark = [
 
 ENV = [
     "-e", "FORAGE_ENV=production",
-    "-e", "FORAGE_SECRET_KEY=secret-key-for-tests-0123456789",
-    "-e", "FORAGE_REVIEW_TOKEN=review-token-for-tests",
+    "-e", "FORAGE_BOOTSTRAP_ADMIN_USERNAME=admin",
+    "-e", "FORAGE_BOOTSTRAP_ADMIN_PASSWORD=admin-password-for-tests",
 ]
+
+
+def test_accounts_and_revocations_survive_restart_without_bootstrap(container):
+    name = container()
+    _run('docker', 'exec', name, 'python', '-c', '''
+import http.cookiejar, json, urllib.request
+base='http://127.0.0.1:8000'
+def client():
+    return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+def request(opener, method, path, payload):
+    return json.load(opener.open(urllib.request.Request(base+path,
+        data=json.dumps(payload).encode(),method=method,headers={'Content-Type':'application/json'})))
+admin=client()
+request(admin,'POST','/api/session',{'username':'admin','password':'admin-password-for-tests'})
+request(admin,'POST','/api/users',{'username':'reviewer','password':'reviewer-password-for-tests'})
+request(admin,'PUT','/api/account/password',{'current_password':'admin-password-for-tests','new_password':'changed-admin-password'})
+with open('/data/saved-cookie','w') as stream:
+    for handler in admin.handlers:
+        if hasattr(handler,'cookiejar'):
+            stream.write(next(iter(handler.cookiejar)).value)
+''')
+    _run('docker', 'rm', '-f', name)
+    revived = container('-e', 'FORAGE_BOOTSTRAP_ADMIN_USERNAME=', '-e', 'FORAGE_BOOTSTRAP_ADMIN_PASSWORD=')
+    _run('docker', 'exec', revived, 'python', '-c', '''
+import http.cookiejar, json, urllib.request, urllib.error
+base='http://127.0.0.1:8000'
+cookie=open('/data/saved-cookie').read()
+def get(path):
+    return json.load(urllib.request.urlopen(urllib.request.Request(base+path,headers={'Cookie':'forage_review='+cookie})))
+assert get('/api/session')['role']=='admin'
+assert len(get('/api/users')['users'])==2
+def login(password):
+    return urllib.request.urlopen(urllib.request.Request(base+'/api/session',
+        data=json.dumps({'username':'admin','password':password}).encode(),headers={'Content-Type':'application/json'}))
+try:
+    login('admin-password-for-tests')
+    raise AssertionError('Bootstrap password was restored')
+except urllib.error.HTTPError as response:
+    assert response.code==403
+assert json.load(login('changed-admin-password'))['role']=='admin'
+reviewer=next(u for u in get('/api/users')['users'] if u['username']=='reviewer')
+response=urllib.request.urlopen(urllib.request.Request(base+'/api/users/'+reviewer['id'],method='DELETE',headers={'Cookie':'forage_review='+cookie}))
+assert response.status==204
+''')
 
 
 def _run(*args: str, check: bool = True) -> str:
@@ -64,15 +110,8 @@ def container(image, volume):
         names.append(name)
         _run("docker", "run", "-d", "--name", name, "-v", f"{volume}:/data",
              *ENV, *extra, image)
-        # The entrypoint chowns before exec'ing, so wait for the server itself.
-        for _ in range(60):
-            state = _run("docker", "inspect", name, "--format",
-                         "{{.State.Running}}", check=False)
-            if state == "true" and _exec(name, "test -f /data/review.db && echo ok",
-                                         check=False) == "ok":
-                return name
-        logs = _run("docker", "logs", name, check=False)
-        raise AssertionError(f"container {name} never became ready:\n{logs}")
+        _wait_ready(name)
+        return name
 
     yield _start
     for name in names:
@@ -81,6 +120,20 @@ def container(image, volume):
 
 def _exec(name: str, command: str, check: bool = True) -> str:
     return _run("docker", "exec", name, "sh", "-c", command, check=check)
+
+
+def _wait_ready(name: str) -> None:
+    """A persistent DB already exists during restart; wait for HTTP readiness."""
+    deadline = time.monotonic() + 30
+    probe = ("import urllib.request; "
+             "print(urllib.request.urlopen('http://127.0.0.1:8000/healthz', "
+             "timeout=1).status)")
+    while time.monotonic() < deadline:
+        if _run("docker", "exec", name, "python", "-c", probe, check=False) == "200":
+            return
+        time.sleep(0.1)
+    logs = _run("docker", "logs", name, check=False)
+    raise AssertionError(f"container {name} never became ready:\n{logs}")
 
 
 def test_the_server_process_does_not_run_as_root(container):
@@ -99,6 +152,22 @@ def test_the_volume_is_writable_by_the_service_account(container):
     owner = _exec(name, "stat -c '%U' /data")
     assert owner == "forage"
     _exec(name, "su forage -s /bin/sh -c 'touch /data/write-probe'")
+
+
+def test_baked_review_artifacts_are_readable_by_the_service_account(image):
+    _run("docker", "run", "--rm", "--user", "10001", "--entrypoint", "python", image, "-c", """
+import os
+def fail(error):
+    raise error
+checked = 0
+for root in ('/app/artifacts', '/app/books'):
+    for directory, _, files in os.walk(root, onerror=fail):
+        for name in files:
+            with open(os.path.join(directory, name), 'rb') as stream:
+                stream.read(1)
+            checked += 1
+assert checked > 0, 'Expected packaged review artifacts'
+""")
 
 
 def test_a_root_owned_volume_is_adopted_on_boot(image, volume, container):
@@ -120,18 +189,65 @@ def test_a_root_owned_volume_is_adopted_on_boot(image, volume, container):
 
 def test_the_database_survives_the_ownership_change(container):
     name = container()
-    _exec(name, "python -c \"import sqlite3;c=sqlite3.connect('/data/review.db');"
-                "c.execute('INSERT INTO comments VALUES (\\\"x\\\",\\\"b\\\",\\\"s\\\","
-                "0,\\\"\\\",\\\"\\\",\\\"minor\\\",\\\"other\\\",\\\"open\\\","
-                "\\\"body\\\",\\\"alice\\\",0,0)');c.commit()\"")
+    _run("docker", "exec", name, "python", "-c", """
+import sqlite3
+with sqlite3.connect('/data/review.db') as connection:
+    connection.execute(
+        'INSERT INTO comments '
+        '(id, book_id, segment_id, draft_para, anchor, quote, severity, kind, '
+        'status, body, author, created_at, updated_at) '
+        'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+        ('x', 'b', 's', 0, '', '', 'minor', 'other', 'open', 'body', 'alice', 0, 0))
+""")
     _run("docker", "restart", name)
-    for _ in range(60):
-        if _exec(name, "test -f /data/review.db && echo ok", check=False) == "ok":
-            break
+    _wait_ready(name)
     rows = _exec(name, "python -c \"import sqlite3;"
                        "print(sqlite3.connect('/data/review.db')"
                        ".execute('SELECT COUNT(*) FROM comments').fetchone()[0])\"")
     assert rows == "1"
+
+
+def test_hosted_publication_and_feedback_survive_restart(container, publication_input, tmp_path):
+    """Exercise image defaults through HTTP, without injecting a hosted root."""
+    from forage.hosted_publication import archive_snapshot
+    from forage.publication import snapshot_revision
+
+    book, options = publication_input
+    revision = snapshot_revision(book, **options)["revision"]
+    archive = tmp_path / "revision.tgz"
+    archive.write_bytes(archive_snapshot(book, revision))
+    name = container()
+    _run("docker", "cp", str(archive), f"{name}:/tmp/revision.tgz")
+    result = json.loads(_run("docker", "exec", name, "python", "-c", """
+import http.cookiejar, json, os, pathlib, sys, urllib.request
+book, revision = sys.argv[1:]
+opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+def post(path, payload, content_type='application/json'):
+    request = urllib.request.Request('http://127.0.0.1:8000' + path, data=payload,
+                                     headers={'Content-Type': content_type}, method='POST')
+    with opener.open(request, timeout=10) as response:
+        return response.status, json.load(response)
+post('/api/session', json.dumps({'username':os.environ['FORAGE_BOOTSTRAP_ADMIN_USERNAME'], 'password':os.environ['FORAGE_BOOTSTRAP_ADMIN_PASSWORD']}).encode())
+status, upload = post(f'/api/books/{book}/revisions', pathlib.Path('/tmp/revision.tgz').read_bytes(), 'application/gzip')
+assert status == 201 and upload['revision'] == revision
+_, pointer = post(f'/api/books/{book}/publication', json.dumps({'revision': revision, 'channel': 'review'}).encode())
+_, note = post(f'/api/books/{book}/comments', json.dumps({'publication_revision': revision, 'scope': 'book', 'body': 'Persist this review.'}).encode())
+print(json.dumps({'pointer': pointer, 'comment': note['id']}))
+""", book.book_id, revision))
+    assert result["pointer"]["revision"] == revision
+    _run("docker", "restart", name)
+    _wait_ready(name)
+    after = json.loads(_run("docker", "exec", name, "python", "-c", """
+import json, sys, urllib.request
+book = sys.argv[1]
+def get(suffix):
+    with urllib.request.urlopen(f'http://127.0.0.1:8000/api/books/{book}/{suffix}', timeout=10) as response:
+        return json.load(response)
+print(json.dumps({'publication': get('publication'), 'feedback': get('feedback')}))
+""", book.book_id))
+    assert after["publication"]["review"]["revision"] == revision
+    assert after["publication"]["release"] is None
+    assert [note["id"] for note in after["feedback"]["comments"]] == [result["comment"]]
 
 
 def test_installed_versions_match_the_pin_file(container):

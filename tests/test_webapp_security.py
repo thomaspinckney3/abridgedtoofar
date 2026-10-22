@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import pytest
 
-from .conftest import ADMIN_TOKEN, ALLOWED_HOST, BOOK_ID, REVIEW_TOKEN, sign_in
+from .conftest import ADMIN_PASSWORD, ALLOWED_HOST, BOOK_ID, REVIEW_PASSWORD, sign_in
 
 
 # -- schema exposure -------------------------------------------------------
@@ -127,22 +127,22 @@ def test_author_cannot_be_rewritten_by_patch(client):
     assert response.json()["body"] == "edited"
 
 
-def test_unlabelled_session_yields_no_author_rather_than_a_claimed_one(client):
+def test_login_cannot_choose_an_arbitrary_comment_author(client):
     sign_in(client, label="")
-    assert _comment(client, author="bob-the-impostor").json()["author"] == ""
+    assert _comment(client, author="bob-the-impostor").json()["author"] == "alice"
 
 
 # -- role separation -------------------------------------------------------
 
 
-def test_publishing_requires_the_admin_token(client):
-    sign_in(client, token=REVIEW_TOKEN)
+def test_publishing_requires_an_admin_account(client):
+    sign_in(client, password=REVIEW_PASSWORD)
     assert client.post(f"/api/books/{BOOK_ID}/publish").status_code == 403
 
 
 def test_admin_may_publish(client, tmp_path, monkeypatch):
     monkeypatch.setenv("FORAGE_EDITS_DIR", str(tmp_path / "edits"))
-    sign_in(client, token=ADMIN_TOKEN)
+    sign_in(client, password=ADMIN_PASSWORD)
     response = client.post(f"/api/books/{BOOK_ID}/publish")
     assert response.status_code == 200
     assert (tmp_path / "edits" / BOOK_ID / "edits.json").is_file()

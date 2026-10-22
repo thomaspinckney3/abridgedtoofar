@@ -3,7 +3,7 @@
 
 Three layers, all against a throwaway database on a free port:
 
-  units    session cookies — signing, tampering, expiry, epoch, role downgrade,
+  units    account sessions — password checks, tampering, epoch and logout,
            and the production startup refusal
   api      access control over HTTP — anonymous reads, reviewer vs admin,
            sign-in lockout, cross-origin refusal, proxy headers, security headers
@@ -44,9 +44,8 @@ CHROME_CANDIDATES = [
     "chromium-browser",
 ]
 
-REVIEW_TOKEN = "smoke-review-token"
-ADMIN_TOKEN = "smoke-admin-token"
-SECRET = "smoke-secret"
+REVIEW_PASSWORD = "smoke-review-token"
+ADMIN_PASSWORD = "smoke-admin-token"
 
 
 def find_chrome() -> str | None:
@@ -149,9 +148,9 @@ class Client:
             parsed = {"raw": payload[:200].decode("utf-8", "replace")}
         return status, parsed, head
 
-    def sign_in(self, token: str, label: str = "smoke") -> tuple[int, dict]:
+    def sign_in(self, password: str, label: str = "smoke") -> tuple[int, dict]:
         status, payload, _ = self.request("POST", "/api/session",
-                                          {"token": token, "label": label})
+                                          {"username": "admin" if password == ADMIN_PASSWORD else "reviewer", "password": password})
         return status, payload
 
 
@@ -169,47 +168,24 @@ def check_units(check: Checks) -> None:
     from forage.webapp import auth as A
     from forage.webapp.store import ArtifactStore
 
-    env = {"FORAGE_SECRET_KEY": SECRET, "FORAGE_REVIEW_TOKEN": REVIEW_TOKEN,
-           "FORAGE_ADMIN_TOKEN": ADMIN_TOKEN}
-    with patched_env(env):
-        cfg = A.AuthConfig.from_env()
-
-    check("review token maps to the reviewer role",
-          cfg.authenticate(REVIEW_TOKEN) == A.REVIEWER)
-    check("admin token maps to the admin role",
-          cfg.authenticate(ADMIN_TOKEN) == A.ADMIN)
-    check("an unknown token maps to no role", cfg.authenticate("nope") is None)
-
-    admin_cookie = cfg.issue(A.ADMIN, "Tom")
-    check("an issued cookie verifies", cfg.verify(admin_cookie).can_admin)
-    check("the label survives the round trip", cfg.verify(admin_cookie).label == "Tom")
-
-    reviewer_cookie = cfg.issue(A.REVIEWER, "Tom")
-    forged = reviewer_cookie.replace(f".{A.REVIEWER}.", f".{A.ADMIN}.", 1)
-    check("editing the role in a cookie invalidates it",
-          cfg.verify(forged).role == A.PUBLIC, cfg.verify(forged).role)
-    check("editing the signature invalidates it",
-          cfg.verify(reviewer_cookie[:-4] + "AAAA").role == A.PUBLIC)
-    check("a cookie from another key is rejected", A.AuthConfig(
-        review_token=REVIEW_TOKEN, admin_token=ADMIN_TOKEN, secret_key=b"other-key",
-        session_seconds=3600, epoch="0", trust_proxy=False, production=False,
-        generated=()).verify(reviewer_cookie).role == A.PUBLIC)
-
-    with patched_env({**env, "FORAGE_SESSION_EPOCH": "7"}):
-        rotated = A.AuthConfig.from_env()
-    check("bumping the session epoch signs everyone out",
-          rotated.verify(reviewer_cookie).role == A.PUBLIC)
-
-    with patched_env({**env, "FORAGE_SESSION_HOURS": "0"}):
-        brief = A.AuthConfig.from_env()
-    expired = brief.issue(A.REVIEWER, "Tom")
-    expired = ".".join(["v1", A.REVIEWER, "1", "0"] + expired.split(".")[4:5])
-    check("an expired cookie is rejected", brief.verify(expired).role == A.PUBLIC)
-
-    with patched_env({**env, "FORAGE_ADMIN_TOKEN": ""}):
-        no_admin = A.AuthConfig.from_env()
-    check("withdrawing the admin token downgrades live admin cookies",
-          no_admin.verify(admin_cookie).role == A.REVIEWER)
+    from forage.webapp.accounts import AccountStore
+    from dataclasses import replace
+    cfg = A.AuthConfig()
+    with tempfile.TemporaryDirectory() as directory:
+        store = AccountStore(Path(directory) / 'accounts.db')
+        store.create_user('admin', ADMIN_PASSWORD, role='admin', display_name='Tom')
+        store.create_user('reviewer', REVIEW_PASSWORD, display_name='smoke')
+        admin_session, admin_cookie = store.login('admin', ADMIN_PASSWORD, cfg)
+        check('administrator password signs in', admin_session.can_admin)
+        check('account name survives session roundtrip', store.verify(admin_cookie,cfg).label == 'Tom')
+        check('wrong password is rejected', store.login('admin','wrong',cfg) is None)
+        _, reviewer_cookie = store.login('reviewer', REVIEW_PASSWORD, cfg)
+        check('reviewer cannot administer', not store.verify(reviewer_cookie,cfg).can_admin)
+        check('modified session rejected', store.verify(reviewer_cookie + 'x',cfg).role == A.PUBLIC)
+        check('old shared-token sessions rejected', store.verify('v1.admin.9999999999.0..old',cfg).role == A.PUBLIC)
+        check('epoch rotation revokes sessions', store.verify(reviewer_cookie,replace(cfg,epoch='7')).role == A.PUBLIC)
+        store.logout(reviewer_cookie)
+        check('logout revokes copied cookies', store.verify(reviewer_cookie,cfg).role == A.PUBLIC)
 
     quote_source = "“Do you live down on Long Island, too?” she inquired."
     quote_draft = "\"Do you live down on Long Island, too?\""
@@ -459,33 +435,21 @@ def check_units(check: Checks) -> None:
     finally:
         shutil.rmtree(overlay_tmp, ignore_errors=True)
 
-    with patched_env({"FORAGE_ENV": "production", "FORAGE_SECRET_KEY": "",
-                      "FORAGE_REVIEW_TOKEN": "", "FORAGE_ADMIN_TOKEN": "",
-                      "FLY_APP_NAME": ""}):
+    with tempfile.TemporaryDirectory() as directory:
+        store = AccountStore(Path(directory) / 'accounts.db')
+        with patched_env({'FORAGE_BOOTSTRAP_ADMIN_USERNAME':'', 'FORAGE_BOOTSTRAP_ADMIN_PASSWORD':''}):
+            try:
+                store.bootstrap(production=True)
+                refused = False
+            except A.AuthConfigError:
+                refused = True
+        check('production needs an initial administrator', refused)
         try:
-            A.AuthConfig.from_env()
-            refused = False
-        except A.AuthConfigError:
-            refused = True
-    check("production refuses to start without a secret key and token", refused)
-
-    with patched_env({"FORAGE_ENV": "production", "FORAGE_SECRET_KEY": SECRET,
-                      "FORAGE_REVIEW_TOKEN": "short", "FORAGE_ADMIN_TOKEN": "",
-                      "FLY_APP_NAME": ""}):
-        try:
-            A.AuthConfig.from_env()
-            refused_weak = False
-        except A.AuthConfigError:
-            refused_weak = True
-    check("production refuses a token shorter than the floor", refused_weak)
-
-    with patched_env({**env, "FORAGE_ADMIN_TOKEN": REVIEW_TOKEN}):
-        try:
-            A.AuthConfig.from_env()
-            rejected = False
-        except A.AuthConfigError:
-            rejected = True
-    check("identical review and admin tokens are rejected", rejected)
+            store.create_user('admin','short',role='admin')
+            weak = False
+        except ValueError:
+            weak = True
+        check('short passwords are rejected', weak)
 
 
 def check_api(
@@ -527,8 +491,8 @@ def check_api(
     check("anonymous writes are refused", status == 401, str(status))
 
     reviewer = Client(app_url, ip="203.0.113.11")
-    status, payload = reviewer.sign_in(REVIEW_TOKEN)
-    check("the review token signs in as reviewer",
+    status, payload = reviewer.sign_in(REVIEW_PASSWORD)
+    check("the reviewer account signs in as reviewer",
           status == 200 and payload["role"] == "reviewer", str(payload))
     status, created, _ = reviewer.request("POST", f"/api/books/{book}/comments",
                                           {**note, "body": "reviewer note"})
@@ -640,8 +604,8 @@ def check_api(
     check("a reviewer cannot publish", status == 403, str(status))
 
     admin = Client(app_url, ip="203.0.113.12")
-    status, payload = admin.sign_in(ADMIN_TOKEN)
-    check("the admin token signs in as admin",
+    status, payload = admin.sign_in(ADMIN_PASSWORD)
+    check("the administrator account signs in as admin",
           status == 200 and payload["role"] == "admin", str(payload))
     status, published, _ = admin.request("POST", f"/api/books/{book}/publish")
     check("an admin can publish", status == 200, str(published))
@@ -685,11 +649,11 @@ def check_api(
 
     # Secure cookie only when the proxy says the hop was HTTPS.
     plain = Client(app_url, ip="203.0.113.13")
-    _, _, headers = plain.request("POST", "/api/session", {"token": REVIEW_TOKEN})
+    _, _, headers = plain.request("POST", "/api/session", {"username":"reviewer", "password":REVIEW_PASSWORD})
     check("no Secure flag on a plain-http sign-in",
           "Secure" not in headers.get("set-cookie", ""), headers.get("set-cookie", ""))
     tls = Client(app_url, ip="203.0.113.14")
-    _, _, headers = tls.request("POST", "/api/session", {"token": REVIEW_TOKEN},
+    _, _, headers = tls.request("POST", "/api/session", {"username":"reviewer", "password":REVIEW_PASSWORD},
                                 headers={"X-Forwarded-Proto": "https"})
     check("Secure flag is set behind an HTTPS proxy",
           "Secure" in headers.get("set-cookie", ""), headers.get("set-cookie", ""))
@@ -699,17 +663,17 @@ def check_api(
     # Guessing lockout, on its own address so the other scenarios stay usable.
     guesser = Client(app_url, ip="203.0.113.99")
     codes = [guesser.sign_in("wrong-" + str(i))[0] for i in range(9)]
-    check("wrong tokens are refused", codes[0] == 403, str(codes[0]))
+    check("wrong passwords are refused", codes[0] == 403, str(codes[0]))
     check("repeated guessing locks the address out", codes[-1] == 429, str(codes))
-    status, _ = guesser.sign_in(REVIEW_TOKEN)
-    check("the lockout also blocks the correct token", status == 429, str(status))
+    status, _ = guesser.sign_in(REVIEW_PASSWORD)
+    check("the lockout also blocks the correct password", status == 429, str(status))
     check("the lockout is per address, not global",
-          Client(app_url, ip="203.0.113.15").sign_in(REVIEW_TOKEN)[0] == 200)
+          Client(app_url, ip="203.0.113.15").sign_in(REVIEW_PASSWORD)[0] == 200)
     # A caller who prepends their own forwarded entry must not escape the
     # lockout: the proxy's appended value is the one that counts.
     spoofer = Client(app_url, ip="198.51.100.7, 203.0.113.99")
     check("forged forwarded entries don't buy a fresh bucket",
-          spoofer.sign_in(REVIEW_TOKEN)[0] == 429, str(spoofer.sign_in(REVIEW_TOKEN)[0]))
+          spoofer.sign_in(REVIEW_PASSWORD)[0] == 429, str(spoofer.sign_in(REVIEW_PASSWORD)[0]))
 
 
 class patched_env:
@@ -789,14 +753,15 @@ async def run(book: str, shots_dir: Path) -> int:
     edits_dir = tmp / "edits"
     port = free_port()
     env = {**os.environ,
-           "FORAGE_REVIEW_TOKEN": REVIEW_TOKEN,
-           "FORAGE_ADMIN_TOKEN": ADMIN_TOKEN,
-           "FORAGE_SECRET_KEY": SECRET,
            "FORAGE_REVIEW_DB": str(tmp / "review.db"),
            "FORAGE_EDITS_DIR": str(edits_dir),
            # so the checks can present distinct client addresses
            "FORAGE_TRUST_PROXY": "1"}
     env.pop("FLY_APP_NAME", None)
+    from forage.webapp.accounts import AccountStore
+    accounts = AccountStore(tmp / 'review.db')
+    accounts.create_user('admin', ADMIN_PASSWORD, role='admin', display_name='smoke')
+    accounts.create_user('reviewer', REVIEW_PASSWORD, display_name='smoke')
     server = subprocess.Popen(
         [sys.executable, "-m", "uvicorn", "forage.webapp.app:get_app", "--factory",
          "--host", "127.0.0.1", "--port", str(port), "--log-level", "warning"],
@@ -843,9 +808,7 @@ async def run(book: str, shots_dir: Path) -> int:
             print("Chrome never exposed a debugging target")
             return 1
 
-        with patched_env({"FORAGE_SECRET_KEY": SECRET, "FORAGE_REVIEW_TOKEN": REVIEW_TOKEN,
-                          "FORAGE_ADMIN_TOKEN": ADMIN_TOKEN, "FLY_APP_NAME": ""}):
-            cookie = AuthConfig.from_env().issue(ADMIN, "smoke")
+        cookie = accounts.login('admin', ADMIN_PASSWORD, AuthConfig.from_env())[1]
 
         async with websockets.connect(page["webSocketDebuggerUrl"], max_size=40_000_000) as ws:
             c = CDP(ws)
@@ -1043,7 +1006,7 @@ async def run(book: str, shots_dir: Path) -> int:
             check("the session button names the role",
                   "Admin" in (await c.js("return document.getElementById('session-btn').textContent") or ""))
 
-            await c.js("return document.getElementById('session-btn').click()")
+            await c.js("document.getElementById('session-btn').click(); [...document.querySelectorAll('.account-sheet button')].find(b=>b.textContent==='Sign out').click();")
             await asyncio.sleep(0.9)
             check("signing out returns to read-only",
                   "Sign in" in (await c.js("return document.getElementById('session-btn').textContent") or ""))
@@ -1056,19 +1019,20 @@ async def run(book: str, shots_dir: Path) -> int:
             await c.js("return document.getElementById('session-btn').click()")
             await asyncio.sleep(0.4)
             await c.js("""
-              document.getElementById('signin-token').value = 'wrong';
+              document.getElementById('signin-username').value = 'reviewer';
+              document.getElementById('signin-password').value = 'wrong';
               document.getElementById('signin-form')
                 .dispatchEvent(new SubmitEvent('submit', {bubbles: true, cancelable: true}));""")
             await asyncio.sleep(0.7)
-            check("a wrong token is rejected",
+            check("a wrong password is rejected",
                   await c.js("return !document.getElementById('signin-error').hidden"))
             await c.js(f"""
-              document.getElementById('signin-token').value = {json.dumps(REVIEW_TOKEN)};
-              document.getElementById('signin-label').value = 'smoke';
+              document.getElementById('signin-password').value = {json.dumps(REVIEW_PASSWORD)};
+              document.getElementById('signin-username').value = 'reviewer';
               document.getElementById('signin-form')
                 .dispatchEvent(new SubmitEvent('submit', {{bubbles: true, cancelable: true}}));""")
             await asyncio.sleep(1.2)
-            check("the review token signs in as a reviewer",
+            check("the reviewer account signs in as a reviewer",
                   "Reviewer" in (await c.js("return document.getElementById('session-btn').textContent") or ""))
             check("a reviewer does not see the publish button", 0 == await c.js("""
               return [...document.querySelectorAll('.rail-tools .btn')]
@@ -1076,14 +1040,16 @@ async def run(book: str, shots_dir: Path) -> int:
 
             await c.js(f"""
               document.getElementById('session-btn').click();
+              [...document.querySelectorAll('.account-sheet button')].find(b=>b.textContent==='Sign out').click();
               await new Promise(r => setTimeout(r, 400));
               document.getElementById('session-btn').click();
               await new Promise(r => setTimeout(r, 200));
-              document.getElementById('signin-token').value = {json.dumps(ADMIN_TOKEN)};
+              document.getElementById('signin-username').value = 'admin';
+              document.getElementById('signin-password').value = {json.dumps(ADMIN_PASSWORD)};
               document.getElementById('signin-form')
                 .dispatchEvent(new SubmitEvent('submit', {{bubbles: true, cancelable: true}}));""")
             await asyncio.sleep(1.4)
-            check("the admin token signs in as an admin",
+            check("the administrator account signs in as an admin",
                   "Admin" in (await c.js("return document.getElementById('session-btn').textContent") or ""))
             await c.js("""
               [...document.querySelectorAll('.rail-tools .btn')]

@@ -23,6 +23,7 @@ const el = {
   bookTitle: document.getElementById("book-title"),
   bookAuthor: document.getElementById("book-author"),
   sessionBtn: document.getElementById("session-btn"),
+  usersBtn: document.getElementById("users-btn"),
   themeBtn: document.getElementById("theme-btn"),
   helpBtn: document.getElementById("help-btn"),
   toasts: document.getElementById("toasts"),
@@ -30,10 +31,9 @@ const el = {
   tipBtn: document.getElementById("selection-comment"),
   signin: document.getElementById("signin-dialog"),
   signinForm: document.getElementById("signin-form"),
-  signinLabel: document.getElementById("signin-label"),
-  signinToken: document.getElementById("signin-token"),
+  signinUsername: document.getElementById("signin-username"),
+  signinPassword: document.getElementById("signin-password"),
   signinError: document.getElementById("signin-error"),
-  signinNote: document.getElementById("signin-note"),
   help: document.getElementById("help-dialog"),
 };
 
@@ -167,25 +167,18 @@ async function loadSession() {
   el.sessionBtn.textContent = state.session.can_admin
     ? `Admin${who}`
     : state.session.can_write ? `Reviewer${who}` : "Sign in to comment";
+  el.usersBtn.hidden = !state.session.can_admin;
 }
 
 el.sessionBtn.addEventListener("click", async () => {
   if (state.session.can_write) {
-    await api("/api/session", { method: "DELETE" });
-    await loadSession();
-    toast("Signed out. Reading stays open.");
-    render();
+    showAccount();
     return;
   }
   el.signinError.hidden = true;
-  el.signinToken.value = "";
-  el.signinNote.textContent = state.session.admin_enabled
-    ? "Reading is open to anyone. The review token lets you leave notes; the admin token can also export feedback."
-    : "Reading is open to anyone. The review token lets you leave notes.";
-  if (state.session.generated_token) {
-    el.signinNote.textContent += " This server generated its token at startup — it's in the server log.";
-  }
+  el.signinPassword.value = "";
   el.signin.showModal();
+  el.signinUsername.focus();
 });
 
 el.signinForm.addEventListener("submit", async (event) => {
@@ -194,7 +187,7 @@ el.signinForm.addEventListener("submit", async (event) => {
   try {
     await api("/api/session", {
       method: "POST",
-      body: { token: el.signinToken.value, label: el.signinLabel.value },
+      body: { username: el.signinUsername.value, password: el.signinPassword.value },
     });
     el.signin.close();
     await loadSession();
@@ -205,6 +198,91 @@ el.signinForm.addEventListener("submit", async (event) => {
     el.signinError.hidden = false;
   }
 });
+
+el.signin.addEventListener("close", () => { el.signinPassword.value = ""; });
+
+function accountDialog(title) {
+  const dialog = h("dialog", {class: "sheet account-sheet", "aria-label": title}, h("h2", {}, title));
+  dialog.addEventListener("close", () => dialog.remove());
+  document.body.append(dialog);
+  return dialog;
+}
+
+function showAccount() {
+  const dialog = accountDialog("Your account");
+  const current = h("input", {type: "password", autocomplete: "current-password", required: true, maxlength: 128});
+  const password = h("input", {type: "password", autocomplete: "new-password", required: true, minlength: 15, maxlength: 128});
+  const confirm = h("input", {type: "password", autocomplete: "new-password", required: true, maxlength: 128});
+  const error = h("p", {class: "sheet-error", role: "alert"});
+  const save = h("button", {class: "btn primary", type: "submit"}, "Change password");
+  const form = h("form", {}, h("h3", {}, "Change password"),
+    h("label", {}, "Current password", current), h("label", {}, "New password", password),
+    h("p", {class: "sheet-note"}, "Use 15–128 characters. A phrase works well."),
+    h("label", {}, "Confirm new password", confirm), error, save);
+  form.addEventListener("submit", async event => {
+    event.preventDefault(); error.textContent = "";
+    if (password.value !== confirm.value) { error.textContent = "Passwords do not match."; return; }
+    save.disabled = true;
+    try {
+      await api("/api/account/password", {method: "PUT", body: {current_password: current.value, new_password: password.value}});
+      dialog.close(); toast("Password changed. Other sessions have been signed out.");
+    } catch (err) { error.textContent = err.message; }
+    finally { save.disabled = false; }
+  });
+  dialog.append(h("p", {}, `${state.session.label} · ${state.session.username}`), form,
+    h("menu", {}, h("button", {class: "btn ghost", type: "button", onclick: () => dialog.close()}, "Close"),
+      h("button", {class: "btn", type: "button", onclick: async () => {
+        try {
+          await api("/api/session", {method: "DELETE"}); dialog.close(); await loadSession();
+          toast("Signed out."); render();
+        } catch (err) { error.textContent = err.message; }
+      }}, "Sign out")));
+  dialog.showModal();
+}
+
+el.usersBtn.addEventListener("click", showUsers);
+
+async function showUsers() {
+  const dialog = accountDialog("Manage users");
+  const list = h("div", {class: "user-list", "aria-live": "polite"});
+  const error = h("p", {class: "sheet-error", role: "alert"});
+  const username = h("input", {required: true, minlength: 3, maxlength: 64, autocomplete: "off", autocapitalize: "none", spellcheck: "false"});
+  const name = h("input", {maxlength: 64, autocomplete: "off"});
+  const password = h("input", {type: "password", required: true, minlength: 15, maxlength: 128, autocomplete: "new-password"});
+  const role = h("select", {}, h("option", {value: "reviewer"}, "Reviewer"), h("option", {value: "admin"}, "Administrator"));
+  const create = h("button", {class: "btn primary", type: "submit"}, "Create account");
+  async function refresh() {
+    const result = await api("/api/users");
+    list.replaceChildren(...result.users.map(user => {
+      const own = user.id === state.session.user_id;
+      const remove = h("button", {class: "btn small", type: "button", disabled: own,
+        "aria-label": `Remove ${user.username}`, title: own ? "You cannot remove your own account" : "Remove account",
+        onclick: async () => {
+          if (!window.confirm(`Remove ${user.username}? They will be signed out immediately. Their review notes will remain.`)) return;
+          remove.disabled = true; error.textContent = "";
+          try { await api(`/api/users/${encodeURIComponent(user.id)}`, {method: "DELETE"}); await refresh(); toast("Account removed."); }
+          catch (err) { error.textContent = err.message; remove.disabled = false; }
+        }}, "Remove");
+      return h("div", {class: "user-row"}, h("div", {}, h("strong", {}, user.display_name),
+        h("div", {class: "sheet-note"}, `${user.username} · ${user.role === "admin" ? "Administrator" : "Reviewer"}${own ? " · You" : ""}`)), remove);
+    }));
+  }
+  const form = h("form", {class: "create-user"}, h("h3", {}, "Create account"),
+    h("label", {}, "Username", username), h("label", {}, "Display name (optional)", name),
+    h("label", {}, "Password", password), h("p", {class: "sheet-note"}, "Use 15–128 characters. Share the account details with this person directly."),
+    h("label", {}, "Role", role), create);
+  form.addEventListener("submit", async event => {
+    event.preventDefault(); create.disabled = true; error.textContent = "";
+    try {
+      await api("/api/users", {method: "POST", body: {username: username.value, display_name: name.value, password: password.value, role: role.value}});
+      form.reset(); await refresh(); toast("Account created."); username.focus();
+    } catch (err) { error.textContent = err.message; }
+    finally { create.disabled = false; }
+  });
+  dialog.append(list, error, form, h("menu", {}, h("button", {class: "btn ghost", type: "button", onclick: () => dialog.close()}, "Close")));
+  dialog.showModal();
+  try { await refresh(); } catch (err) { error.textContent = err.message; }
+}
 
 el.helpBtn.addEventListener("click", () => el.help.showModal());
 

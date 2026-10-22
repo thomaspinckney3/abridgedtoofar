@@ -27,7 +27,8 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
 
 class ReviewTransport:
     def __init__(self, *, base_url: str | None = None, local_root=None,
-                 token: str | None = None, http_client=None, feedback_path=None,
+                 username: str | None = None, password: str | None = None,
+                 http_client=None, feedback_path=None,
                  timeout: float = 30, max_response_bytes: int = MAX_RESPONSE_BYTES):
         if base_url is None and local_root is None:
             base_url = os.environ.get("FORAGE_REVIEW_URL")
@@ -41,7 +42,8 @@ class ReviewTransport:
             if (parsed.scheme not in {"http", "https"} or not parsed.hostname
                     or parsed.username or parsed.password or parsed.query or parsed.fragment):
                 raise ValueError("review site must be an HTTP(S) URL without credentials/query/fragment")
-        self.token = token
+        self.username = username
+        self.password = password
         self.http_client = http_client
         self.feedback_path = Path(feedback_path) if feedback_path else None
         self.timeout = timeout
@@ -84,9 +86,9 @@ class ReviewTransport:
     def _login(self):
         if self._authenticated or self.local:
             return
-        if self.token:
+        if self.username and self.password:
             result = self._request("POST", "/api/session", payload=json.dumps(
-                {"token": self.token, "label": "pipeline"}).encode())
+                {"username": self.username, "password": self.password}).encode())
             if result.get("role") != "admin":
                 raise TransportError("publication transport requires an administrator session")
         self._authenticated = True
@@ -99,8 +101,8 @@ class ReviewTransport:
             uploaded = self.local.upload(book.book_id, payload)
             pointer = self.local.promote(book.book_id, revision, channel)
         else:
-            if not self.token:
-                raise TransportError("an admin token is required to publish to the review site")
+            if not self.username or not self.password:
+                raise TransportError("an admin username and password are required to publish to the review site")
             self._login()
             uploaded = self._request("POST", f"/api/books/{book.book_id}/revisions",
                                      payload=payload, content_type="application/gzip")

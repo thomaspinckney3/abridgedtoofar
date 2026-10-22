@@ -14,6 +14,9 @@ import tomllib
 from pathlib import Path
 
 import pytest
+from fastapi.testclient import TestClient
+
+from .test_publication import publication_input
 
 REPO = Path(__file__).resolve().parent.parent
 REQUIREMENTS = REPO / "requirements-web.txt"
@@ -125,7 +128,40 @@ def test_no_secrets_are_committed_to_fly_toml(fly_config):
     assert leaked == [], f"secret-shaped keys in fly.toml [env]: {leaked}"
 
 
-def test_the_sqlite_writer_stays_single_machine(fly_config):
-    """The comment queue is one file on one volume: a second writer corrupts
-    it. Not a security property, but it shares a config file with several."""
+def test_one_machine_stays_running(fly_config):
+    """The running minimum is not a cap; deployment must also keep count at one."""
     assert fly_config["http_service"]["min_machines_running"] == 1
+
+
+def test_fly_config_enables_persistent_hosted_publication(fly_config, publication_input,
+                                                        monkeypatch, tmp_path):
+    from forage.hosted_publication import archive_snapshot
+    from forage.publication import snapshot_revision
+    from forage.webapp.app import create_app
+
+    book, options = publication_input
+    revision = snapshot_revision(book, **options)["revision"]
+    archive = archive_snapshot(book, revision)
+    settings = fly_config["env"]
+    mount = Path(fly_config["mounts"]["destination"])
+    hosted = Path(settings["FORAGE_HOSTED_ROOT"])
+    assert hosted.is_relative_to(mount) and hosted != mount
+    for key, value in settings.items():
+        if key.endswith(("_DIR", "_DB", "_ROOT")):
+            value = str(tmp_path / "image" / value.lstrip("/"))
+        monkeypatch.setenv(key, value)
+    monkeypatch.setenv("FORAGE_BOOTSTRAP_ADMIN_USERNAME", "admin")
+    monkeypatch.setenv("FORAGE_BOOTSTRAP_ADMIN_PASSWORD", "admin-password-for-tests")
+    base_url = "https://" + settings["FORAGE_ALLOWED_HOSTS"].split(",")[0].strip()
+    with TestClient(create_app(), base_url=base_url) as client:
+        assert client.post("/api/session", json={"username":"admin", "password":"admin-password-for-tests"}).status_code == 200
+        upload = client.post(f"/api/books/{book.book_id}/revisions", content=archive)
+        assert upload.status_code == 201, upload.text
+        pointer = client.post(f"/api/books/{book.book_id}/publication",
+                              json={"revision": revision, "channel": "review"})
+        assert pointer.status_code == 200, pointer.text
+    with TestClient(create_app(), base_url=base_url) as client:
+        pointers = client.get(f"/api/books/{book.book_id}/publication").json()
+        assert pointers["review"]["revision"] == revision
+        assert pointers["release"] is None
+        assert client.get(f"/api/books/{book.book_id}/feedback").status_code == 200

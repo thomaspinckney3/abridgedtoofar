@@ -19,7 +19,7 @@ from forage.publication import snapshot_revision
 from forage.webapp.app import create_app
 from forage.webapp.auth import AuthConfig
 from forage.webapp.store import ArtifactStore, ReviewStore, _SCHEMA
-from .conftest import ADMIN_TOKEN, REVIEW_TOKEN, sign_in
+from .conftest import ADMIN_PASSWORD, REVIEW_PASSWORD, sign_in
 
 
 @pytest.fixture
@@ -54,7 +54,7 @@ def hosted(tmp_path):
     storage = HostedPublications(tmp_path / 'hosted')
     artifacts = ArtifactStore(work_dir=tmp_path / 'empty', books_dir=tmp_path / 'books')
     reviews = ReviewStore(tmp_path / 'reviews.sqlite')
-    auth = AuthConfig(REVIEW_TOKEN, ADMIN_TOKEN, b'test secret', 3600, '0', False, False, ())
+    auth = AuthConfig(session_seconds=3600)
     client = TestClient(create_app(artifacts=artifacts, reviews=reviews, auth=auth, hosted=storage))
     return client, storage, book, kwargs, revision, reviews
 
@@ -62,7 +62,7 @@ def hosted(tmp_path):
 def publish(hosted, channel='review', revision=None):
     client, storage, book, kwargs, first, reviews = hosted
     revision = revision or first
-    sign_in(client, ADMIN_TOKEN)
+    sign_in(client, ADMIN_PASSWORD)
     response = client.post('/api/books/sample/revisions', content=archive_snapshot(book, revision),
                            headers={'Content-Type': 'application/gzip'})
     assert response.status_code == 201, response.text
@@ -322,7 +322,7 @@ def test_old_database_migrates_idempotently_preserving_legacy_rows(tmp_path):
 @pytest.mark.parametrize('origin', ['null', 'https://evil.example'])
 def test_new_unsafe_endpoints_keep_origin_guard(hosted, path, origin):
     client = hosted[0]
-    sign_in(client, ADMIN_TOKEN)
+    sign_in(client, ADMIN_PASSWORD)
     assert client.post('/api/books/sample' + path, content=b'x', headers={'Origin': origin}).status_code == 403
 
 
@@ -454,11 +454,12 @@ from forage.webapp.auth import AuthConfig
 from forage.hosted_publication import HostedPublications
 root = Path(sys.argv[1])
 app = create_app(ArtifactStore(work_dir=root/'empty', books_dir=root/'books'),
-                 ReviewStore(root/'web.db'), AuthConfig('review','admin',b'secret',3600,'0',False,False,()),
+                 ReviewStore(root/'web.db'), AuthConfig(session_seconds=3600),
                  HostedPublications(root/'publications'))
+app.state.accounts.create_user('admin', 'web-only-admin-password', role='admin')
 with TestClient(app) as client:
     assert client.get('/healthz').status_code == 200
-    assert client.post('/api/session',json={'token':'admin'}).status_code == 200
+    assert client.post('/api/session',json={'username':'admin','password':'web-only-admin-password'}).status_code == 200
     response = client.post('/api/books/sample/revisions',content=Path(sys.argv[2]).read_bytes())
     assert response.status_code == 201, response.text
     revision = response.json()['revision']
