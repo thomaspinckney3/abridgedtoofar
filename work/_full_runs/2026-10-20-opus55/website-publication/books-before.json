@@ -1,0 +1,130 @@
+{
+  "books": [
+    {
+      "book_id": "dragon_maiden",
+      "title": "Caught By the Dragon: Maiden to the Dragon, Book 1",
+      "author": "Mac Flynn",
+      "chapters": 16,
+      "counts": {
+        "verbatim": 199,
+        "paraphrased": 242,
+        "compressed": 246,
+        "unsupported": 0
+      },
+      "diagnostics": {
+        "non_parseable": 0,
+        "dangling_reference": 0,
+        "broken_pivot": 0,
+        "missing_gloss": 0,
+        "unattributed_dialogue": 12,
+        "mid_scene_jump": 0,
+        "unglossed_name": 0,
+        "total": 12
+      },
+      "comments": {
+        "total": 0
+      }
+    },
+    {
+      "book_id": "education",
+      "title": "The Education of Henry Adams",
+      "author": "Henry Adams",
+      "chapters": 46,
+      "counts": {
+        "verbatim": 109,
+        "paraphrased": 19,
+        "compressed": 563,
+        "unsupported": 0
+      },
+      "diagnostics": {
+        "non_parseable": 0,
+        "dangling_reference": 0,
+        "broken_pivot": 0,
+        "missing_gloss": 0,
+        "unattributed_dialogue": 0,
+        "mid_scene_jump": 0,
+        "unglossed_name": 2,
+        "total": 2
+      },
+      "comments": {
+        "total": 0
+      }
+    },
+    {
+      "book_id": "gatsby",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "chapters": 9,
+      "counts": {
+        "verbatim": 490,
+        "paraphrased": 77,
+        "compressed": 286,
+        "unsupported": 9
+      },
+      "diagnostics": {
+        "non_parseable": 0,
+        "dangling_reference": 0,
+        "broken_pivot": 0,
+        "missing_gloss": 0,
+        "unattributed_dialogue": 6,
+        "mid_scene_jump": 0,
+        "unglossed_name": 0,
+        "total": 6
+      },
+      "comments": {
+        "total": 0
+      }
+    },
+    {
+      "book_id": "secret_adversary",
+      "title": "The Secret Adversary",
+      "author": "Agatha Christie",
+      "chapters": 29,
+      "counts": {
+        "verbatim": 299,
+        "paraphrased": 330,
+        "compressed": 598,
+        "unsupported": 9
+      },
+      "diagnostics": {
+        "non_parseable": 0,
+        "dangling_reference": 0,
+        "broken_pivot": 0,
+        "missing_gloss": 0,
+        "unattributed_dialogue": 61,
+        "mid_scene_jump": 0,
+        "unglossed_name": 0,
+        "total": 61
+      },
+      "comments": {
+        "total": 7,
+        "open": 7
+      }
+    },
+    {
+      "book_id": "treasure_island",
+      "title": "Treasure Island",
+      "author": "Robert Louis Stevenson",
+      "chapters": 33,
+      "counts": {
+        "verbatim": 238,
+        "paraphrased": 188,
+        "compressed": 494,
+        "unsupported": 3
+      },
+      "diagnostics": {
+        "non_parseable": 0,
+        "dangling_reference": 0,
+        "broken_pivot": 0,
+        "missing_gloss": 0,
+        "unattributed_dialogue": 3,
+        "mid_scene_jump": 0,
+        "unglossed_name": 0,
+        "total": 3
+      },
+      "comments": {
+        "total": 0
+      }
+    }
+  ]
+}

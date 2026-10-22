@@ -1,0 +1,37 @@
+{
+  "unchanged_original_inputs": 72,
+  "books": {
+    "education": {
+      "chapters": 28,
+      "words": 72449,
+      "target": 72200,
+      "protected_passages": 218,
+      "revision": "89cd02779bd148f5ad38cf98d59456328b1914ba81d60f059310dbedba05b162",
+      "final_review_label": "release_review_2",
+      "review_inputs_and_evidence": "verified",
+      "local_patches": "replayed exactly",
+      "final_alignments": "current",
+      "completed_run_resume": "latest snapshot retained without generation"
+    },
+    "secret_adversary": {
+      "chapters": 29,
+      "words": 40749,
+      "target": 40600,
+      "protected_passages": 214,
+      "revision": "c13ea7e54c8ca5916cfae075d4fa50982e45f6146743adc950ed91a30522e62f",
+      "final_review_label": "release_review_2",
+      "review_inputs_and_evidence": "verified",
+      "local_patches": "replayed exactly",
+      "final_alignments": "current",
+      "completed_run_resume": "latest snapshot retained without generation"
+    }
+  },
+  "completed_responses": 565,
+  "recorded_cost_usd": 281.992725,
+  "diagnostic_cost_usd": 0.00014,
+  "total_recorded_cost_usd": 281.992865,
+  "provider_cache_read_tokens": 0,
+  "provider_cache_write_tokens": 3730097,
+  "unsettled_requests": 28,
+  "unsettled_reserve_usd": 27.61479
+}

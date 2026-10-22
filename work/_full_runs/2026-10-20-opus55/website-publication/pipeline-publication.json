@@ -1,0 +1,27 @@
+{
+  "site": "https://forage-review.fly.dev",
+  "command": "forage publish-review",
+  "books": [
+    "education",
+    "secret_adversary"
+  ],
+  "channel": "review",
+  "credentials_persisted": false,
+  "status": "verified",
+  "published_revisions": {
+    "education": {
+      "revision": "89cd02779bd148f5ad38cf98d59456328b1914ba81d60f059310dbedba05b162",
+      "text_revision": "0ff41fecf1e1b9afe1abad4b4ce0428a14a67d8cf08bbd8c6662537f394250d1",
+      "at": "2026-10-20T21:44:37.647975+00:00",
+      "url": "https://forage-review.fly.dev/b/education"
+    },
+    "secret_adversary": {
+      "revision": "c13ea7e54c8ca5916cfae075d4fa50982e45f6146743adc950ed91a30522e62f",
+      "text_revision": "fafd5fba07b7afd4ba88303b5735d39515d97d4c6f1583355f3877227dad5a48",
+      "at": "2026-10-20T21:44:38.634664+00:00",
+      "url": "https://forage-review.fly.dev/b/secret_adversary"
+    }
+  },
+  "verification": "verification.json",
+  "browser_verification": "browser-verification.json"
+}

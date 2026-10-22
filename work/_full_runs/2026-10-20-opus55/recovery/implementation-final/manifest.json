@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-20T21:32:58.479024+00:00",
+  "scope": "Final relevant implementation files. Earlier processes may have loaded earlier versions; exact paid prompts and responses remain in calls/. Earlier implementation snapshots are retained.",
+  "files": [
+    {
+      "original": "forage/full_run.py",
+      "snapshot": "recovery/implementation-final/forage/full_run.py",
+      "sha256": "c4ac91a326b7d9d3c65ebd8226b4440afb9497d74b0b048f719f947d3446d03a"
+    },
+    {
+      "original": "forage/target_revision.py",
+      "snapshot": "recovery/implementation-final/forage/target_revision.py",
+      "sha256": "24aca27119f081f4e8125e6feb303911ec67ec38e63e0a69e9db414dc4040f18"
+    },
+    {
+      "original": "forage/align.py",
+      "snapshot": "recovery/implementation-final/forage/align.py",
+      "sha256": "76914f0ee576b87f77492dadb14cdcb6f3250f7cccf5c560974d680e806f824a"
+    },
+    {
+      "original": "forage/book_critic.py",
+      "snapshot": "recovery/implementation-final/forage/book_critic.py",
+      "sha256": "c120ae47adb51b65e7a9a969cff649bb34b6132b9fc55a7e4246e156de631fdd"
+    },
+    {
+      "original": "forage/llm.py",
+      "snapshot": "recovery/implementation-final/forage/llm.py",
+      "sha256": "ef0e2d7cbcc202a2f6f087a99f6d5019207b0f2bbcf327190f5dde1358303cb1"
+    },
+    {
+      "original": "tests/test_full_run.py",
+      "snapshot": "recovery/implementation-final/tests/test_full_run.py",
+      "sha256": "c40da98ed7dce3a05636611fd9b92b0cb8c8a1361eeaeff63e2d49a7d73f6d2a"
+    },
+    {
+      "original": "tests/test_target_revision.py",
+      "snapshot": "recovery/implementation-final/tests/test_target_revision.py",
+      "sha256": "a80cfc03e47961924a20aa426d987f5a84db04888d4bdbe11f7797ccd7e5a317"
+    },
+    {
+      "original": "prompts/draft_fixed_target.md",
+      "snapshot": "recovery/implementation-final/prompts/draft_fixed_target.md",
+      "sha256": "c559ae4ccaaf41c0bae080476ac98bb98b61fba65082febf25def140b2ac8756"
+    },
+    {
+      "original": "prompts/revise_fixed_target.md",
+      "snapshot": "recovery/implementation-final/prompts/revise_fixed_target.md",
+      "sha256": "e576386b2f7063eb32649bc5de9fa9f89cfba0147c3ea30a49bfbb309bed9232"
+    },
+    {
+      "original": "prompts/preservation_plan.md",
+      "snapshot": "recovery/implementation-final/prompts/preservation_plan.md",
+      "sha256": "c375cbf233bb9bef71c6a4a30cacc32b19a09dc658ed7d7856b22a3198d2de64"
+    },
+    {
+      "original": "prompts/fidelity_review.md",
+      "snapshot": "recovery/implementation-final/prompts/fidelity_review.md",
+      "sha256": "9100aa33a4fb6ec3d864a59e1068f7cf86659e3189f596375145f8edcde87491"
+    },
+    {
+      "original": "prompts/fidelity_repair.md",
+      "snapshot": "recovery/implementation-final/prompts/fidelity_repair.md",
+      "sha256": "47f67df26b83185737d2939231be7e247ceaffb3e7ed8b025bccb384866a4441"
+    },
+    {
+      "original": "prompts/summarize_synopsis.md",
+      "snapshot": "recovery/implementation-final/prompts/summarize_synopsis.md",
+      "sha256": "0233999c580d5bf85c0a28e2d8057422d30d54e8ab813d7dcf3f001c52622417"
+    },
+    {
+      "original": "prompts/critic_book.md",
+      "snapshot": "recovery/implementation-final/prompts/critic_book.md",
+      "sha256": "6fba4ad39436905143752cea90ab1e72d4691d6f1770c583a8a832bc12fa646f"
+    },
+    {
+      "original": "prompts/align.md",
+      "snapshot": "recovery/implementation-final/prompts/align.md",
+      "sha256": "d7ccc287f361157de70e24c08a6c5c0ccea929c17fd313a9da9d43bf4cfb91a0"
+    },
+    {
+      "original": "work/_full_runs/2026-10-20-opus55/recovery/resume_both.py",
+      "snapshot": "recovery/implementation-final/work/_full_runs/2026-10-20-opus55/recovery/resume_both.py",
+      "sha256": "cf0ca5eda9f6edc771fbba76abbde61116d1a059f05e208822eb216923f0e20d"
+    },
+    {
+      "original": "work/_full_runs/2026-10-20-opus55/recovery/close_findings.py",
+      "snapshot": "recovery/implementation-final/work/_full_runs/2026-10-20-opus55/recovery/close_findings.py",
+      "sha256": "7fa381815b577458a218949a21a1377652908a65a56107151e5e2097d8f1ed07"
+    },
+    {
+      "original": "work/_full_runs/2026-10-20-opus55/reporting/status.py",
+      "snapshot": "recovery/implementation-final/work/_full_runs/2026-10-20-opus55/reporting/status.py",
+      "sha256": "525829b159a323a94ea5298e1ca8b4d40659756209bacf14445ade7beeaab644"
+    },
+    {
+      "original": "work/_full_runs/2026-10-20-opus55/reporting/verify.py",
+      "snapshot": "recovery/implementation-final/work/_full_runs/2026-10-20-opus55/reporting/verify.py",
+      "sha256": "877c979c85936fdce9ed13174383d55ff0aaa187a2ced847cb5f2dc2c37739e3"
+    },
+    {
+      "original": "work/_full_runs/2026-10-20-opus55/reporting/render.py",
+      "snapshot": "recovery/implementation-final/work/_full_runs/2026-10-20-opus55/reporting/render.py",
+      "sha256": "e1dc00e2debe1ffbcb96556e8e668a106e305a5f9f7efb1c20bcaa8f0cb779e8"
+    }
+  ]
+}

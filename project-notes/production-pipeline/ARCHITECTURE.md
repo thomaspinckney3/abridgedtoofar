@@ -39,6 +39,16 @@ changes invalidate the stages whose inputs changed.
 - ArtifactStore owns read-only discovery of text and media review artifacts.
   ReviewStore owns comments and their revision anchors, including media target
   identifiers. No model SDK is required to serve packaged review data.
+- AccountStore owns users, salted password hashes and revocable session hashes
+  in the same persistent database as ReviewStore, with separate tables. Admin
+  account mutations recheck the actor inside the write transaction. Deleting an
+  account cascades to sessions and retains review records. Session resolution
+  reads current account permissions; login-supplied labels/roles are ignored.
+- AuthConfig owns session duration/epoch and proxy configuration. Shared login
+  tokens and legacy signed role cookies are unsupported. Bootstrap initializes
+  only an empty user table and never overwrites account passwords. Production
+  needs an existing account or explicit first-admin credentials. Publishing
+  transport uses an ordinary administrator account through the session API.
 - Packaging owns generated deploy artifacts only. Resolved input/output
   overlap is rejected before any destructive operation. Existing content is
   replaced only after a complete staged package has been built.
@@ -101,6 +111,65 @@ Public release is an explicit promotion of a complete selected revision, with
 separate release history. Subsequent feedback remains permitted after release.
 Transport is configurable and callable from CLI; offline tests replace remote
 I/O. This task does not execute a deployment or schedule a live sync job.
+
+## Pipeline findings and repair evidence
+
+The full-run producer emits `pipeline_review.json` alongside its final snapshot.
+The provider-free `prepare-review` command can add the same package to an older
+completed run after verifying the prior inventory, current review context,
+evidence and historical patch replay. It preserves text identity and all prior
+snapshot files. Stable item IDs bind the item and reviewed chapter context.
+
+Hosted publication imports these chapter-scoped items idempotently into
+ReviewStore. ArtifactStore supplies their immutable evidence and initial review
+response. The ordinary revision-decision API owns dismissal/acceptance, reopening,
+requests and decision history; no second decision store or generation API is
+introduced. Historical views filter pipeline items by the selected snapshot.
+Publication retries preserve decisions, and an unsuccessful pointer promotion
+cannot expose a newer snapshot's items in an older view.
+
+Pending/dismissed/accepted/reopened items do not request generation. Explicit
+change requests use the existing complete feedback feed and externally invoked
+review-sync pipeline. Later production snapshots retain the original evidence
+and publish fresh review-apply responses requiring new acceptance. The website
+never launches a pipeline rerun.
+
+The chapter view starts with prose. Compact outstanding suggestions follow the
+text and are reachable by a header jump button. Completed repairs, accepted or
+outdated findings, detailed critic records and draft diagnostics live in a
+collapsed Review history panel. This is a presentation split over the existing
+items and decision API, not a separate queue or status schema. Moving an item
+after dismissal/reopening retains focus and reveals its destination; history
+disclosure persists during rerenders of the same chapter and resets on navigation.
+Source citations use reader-facing source/earlier-draft/reviewed-draft labels.
+
+## Full-run feedback refresh
+
+`production_origin.FullRunOrigin` verifies a completed full-run publication and
+its source provenance before the common production runner accepts its prose.
+New full-run snapshots include source/metadata/chapter inventories; existing
+workspaces use their original `run.json` source hashes and immutable alignments.
+Preparation bytes and all source chapters must still match. The adapter records
+the origin revision explicitly rather than claiming the standard drafting stages
+produced this text. It never reruns planning, drafting or automatic coherence
+repair during a feedback refresh. Source/plan changes require a new full run.
+
+Preflight validates provenance, complete accepted drafts and requested settings
+before feedback application. An unchanged publication is reused directly. After
+feedback, the common runner owns assembly, criticism, validation, alignment,
+optional media and snapshot publication, with its normal retry records. Only
+changed chapters need new alignment. Unchanged text can reuse verified origin
+outputs when publishing a skipped response. Quality records measure current
+targets/protected passages and label the original fidelity review as historical.
+Completed full-run resume returns the latest successful feedback snapshot.
+
+`production_state.text_revision` owns the text identity for both producers and
+feedback eligibility. Existing snapshot IDs remain immutable; legacy book notes
+can match through verified plan and retained-draft hashes. Paragraph response
+freshness is shared by hosted decisions and local apply: a removed target needs
+its recorded final chapter hash, while present targets need verified passage
+bindings. A finding missing from the selected package yields HTTP 409 before
+decision storage, preserving its older-edition history.
 
 ## Missing Data and Forbidden Fallbacks
 

@@ -1,0 +1,215 @@
+IN his suite at Claridge’s, Kramenin reclined on a couch and dictated to his secretary in sibilant Russian.
+
+Presently the telephone at the secretary’s elbow purred, and he took up the receiver, spoke for a minute or two, then turned to his employer.
+
+“Some one below is asking for you. He gives the name of Mr. Julius P. Hersheimmer.”
+
+“His father was one of the steel kings of America,” explained the secretary, whose business it was to know everything. “This young man must be a millionaire several times over.”
+
+The other’s eyes narrowed appreciatively.
+
+“A millionaire several times over,” murmured Kramenin. “Bring him up, my dear Ivan.”
+
+The secretary left the room, and returned escorting Julius.
+
+“Monsieur Kramenin?” said the latter abruptly.
+
+The Russian, studying him attentively with his pale venomous eyes, bowed.
+
+“I’ve got some very important business I’d like to talk over with you, if I can see you alone,” said the American. He looked pointedly at the other.
+
+“Ivan,” said the Russian softly, “perhaps you would not mind retiring into the next room----”
+
+“The next room won’t do,” interrupted Julius. “I want this one plumb empty except for you and me.”
+
+“Very good, Ivan. I shall not require you again this evening. Go to the theatre--take a night off.”
+
+The secretary bowed and departed.
+
+“Now, Mr. Hersheimmer, perhaps you will be so kind as to come to the point?”
+
+“I guess that won’t take a minute,” drawled Julius. Then, with an abrupt change of manner: “Hands up--or I shoot!”
+
+For a moment Kramenin stared blindly into the big automatic, then, with almost comical haste, he flung up his hands above his head. In that instant Julius had taken his measure. The man he had to deal with was an abject physical coward--the rest would be easy.
+
+“This is an outrage,” cried the Russian in a high hysterical voice. “Do you mean to kill me?”
+
+“No. I want Jane Finn.”
+
+“Jane Finn? I--never heard of her!”
+
+“You’re a darned liar! You know perfectly who I mean.”
+
+“I tell you I’ve never heard of the girl.”
+
+“And I tell you,” retorted Julius, “that Little Willie here is just hopping mad to go off!”
+
+Kramenin must have recognized something in the voice that carried conviction, for he said sullenly:
+
+“Well? Granted I do know who you mean--what of it?”
+
+“You will tell me now--right here--where she is to be found.”
+
+“I daren’t. You ask an impossibility.”
+
+“Afraid, eh? Of whom? Mr. Brown? Ah, that tickles you up! And the mere mention of him scares you stiff!”
+
+“I have seen him,” said the Russian slowly. “Spoken to him face to face. I did not know it until afterwards. He was one of a crowd. I should not know him again. Who is he really? I do not know. But I know this--he is a man to fear.”
+
+“Sure that’s a pity for you,” said Julius cheerfully. “But the world in general will benefit.” He raised the revolver.
+
+“Stop,” shrieked the Russian. “You will hang if you shoot me!”
+
+“No, stranger, that’s where you’re wrong. You forget the dollars. A big crowd of solicitors will get busy, and they’ll get some high-brow doctors on the job, and the end of it all will be that they’ll say my brain was unhinged. But don’t you kid yourself I’ll hang for it!”
+
+The Russian believed him. Corrupt himself, he believed implicitly in the power of money. This virile young American had the whip hand of him.
+
+“I’m going to count five,” continued Julius, “and I guess, if you let me get past four, you needn’t worry any about Mr. Brown. Maybe he’ll send some flowers to the funeral, but _you_ won’t smell them! One--two--three--four----”
+
+The Russian interrupted with a shriek:
+
+“Do not shoot. I will do all you wish.”
+
+Julius lowered the revolver.
+
+“I thought you’d hear sense. Where is the girl?”
+
+“At Gatehouse, in Kent. Astley Priors, the place is called.”
+
+“Is she a prisoner there?”
+
+“She’s not allowed to leave the house--though it’s safe enough really. The little fool has lost her memory, curse her!”
+
+“What about the other girl, the one you decoyed away over a week ago?”
+
+“She’s there too,” said the Russian sullenly.
+
+“That’s good,” said Julius. “And a lovely night for the run! Down to Gatehouse, sure.”
+
+“I refuse to go.”
+
+“You must see I’m not such a kid as to leave you here. You’d ring up your friends on that telephone first thing! No, sir, you’re coming along with me.”
+
+They descended the stairs and passed out to the waiting car. A cry hovered on the Russian’s lips, but at the last minute his nerve failed him.
+
+“Get in,” Julius ordered. Then, as he caught the other’s sidelong glance, “No, the chauffeur won’t help you any. Naval man. Was on a submarine in Russia when the Revolution broke out. A brother of his was murdered by your people. George! This gentleman is a Russian Bolshevik. We don’t want to shoot him, but it may be necessary. You understand?”
+
+“Perfectly, sir.”
+
+The car shot forward through the traffic. Julius, his hand in his coat pocket, was urbane to the last degree, and told one cheerful tale of shooting after another. At the end of the hour’s run the unfortunate Kramenin was more dead than alive. Julius’s narrative style, if not strictly accurate, was picturesque! By the time they came into Gatehouse he was as putty in the other’s hands.
+
+The car swept up the drive. The front door was opened by the butler. Kramenin felt the muzzle of the revolver pressed against his ribs.
+
+“Now,” hissed Julius. “And be careful.”
+
+“It is I--Kramenin! Bring down the girl at once! There is no time to lose!”
+
+Whittington had come down the steps. He uttered an exclamation of astonishment.
+
+“You! What’s up? Surely you know the plan----”
+
+Kramenin interrupted him, using the words that have created many unnecessary panics:
+
+“We have been betrayed! Plans must be abandoned. The girl! And at once! It’s our only chance.”
+
+Whittington hesitated, but for hardly a moment.
+
+“You have orders--from _him?_”
+
+“Naturally! Should I be here otherwise? Hurry! The other little fool had better come too.”
+
+Whittington ran back into the house. The agonizing minutes went by. Then--two figures hastily huddled in cloaks were hustled into the car. Julius leaned forward, and the light from the open door lit up his face. Another man on the steps behind Whittington gave a startled exclamation. Concealment was at an end.
+
+“Get a move on, George,” shouted Julius.
+
+The car started with a bound. The man on the steps uttered an oath. There was a flash and a report. The bullet just missed the taller girl by an inch.
+
+“Get down, Jane,” cried Julius. “Flat on the bottom of the car.” Then, standing up, he took careful aim and fired.
+
+“Have you hit him?” cried Tuppence eagerly.
+
+“Sure,” replied Julius. “He isn’t killed, though. Are you all right, Tuppence?”
+
+“Of course I am. Where’s Tommy? And who’s this?” She indicated the shivering Kramenin.
+
+“Tommy’s making tracks for the Argentine. I guess he thought you’d turned up your toes. Who’s this? Let me present Monsieur Kramenin. I persuaded him to come on the trip for his health.”
+
+“Curse you!” burst out the Russian. “They know now that I betrayed them. Let me go. I have done what you asked.”
+
+“Sure thing. Pull up, George.”
+
+Before the car had finally halted, the Russian had swung himself out and disappeared into the night.
+
+“Say, Jane, you can get up on the seat now,” said Julius.
+
+For the first time the girl spoke.
+
+“How did you ‘persuade’ him?” she asked.
+
+Julius tapped his revolver.
+
+“Little Willie here takes the credit!”
+
+“Annette and I didn’t know what was going to happen to us,” said Tuppence.
+
+“Annette,” said Julius. “Is that what you call her?”
+
+“It’s her name,” said Tuppence, opening her eyes very wide.
+
+“Shucks!” retorted Julius. “She may think it’s her name, because her memory’s gone, poor kid. But it’s the one real and original Jane Finn we’ve got here.”
+
+“What?” cried Tuppence.
+
+A bullet embedded itself in the upholstery just behind her head.
+
+“Down with you,” cried Julius. “It’s an ambush. Push her a bit, George.”
+
+Three more shots rang out. Julius raised his hand to his cheek.
+
+“You are hurt?” said Annette quickly.
+
+“Only a scratch.”
+
+The girl sprang to her feet.
+
+“Let me out! It is me they’re after. You shall not lose your lives because of me.”
+
+Julius took her by both arms. She had spoken with no trace of foreign accent.
+
+“Sit down, kid,” he said gently. “I guess there’s nothing wrong with your memory. Been fooling them all the time, eh?”
+
+The girl nodded, and then suddenly burst into tears.
+
+“You’re from home,” she said indistinctly. “I can tell by your voice.”
+
+“Sure I’m from home. I’m your cousin--Julius Hersheimmer. I came over to Europe on purpose to find you.”
+
+The car slowed at cross-roads till it hardly moved. As it did so a figure climbed suddenly over the back, and plunged head first into the midst of them.
+
+“Sorry,” said Tommy, extricating himself. “Was in the bushes by the drive. Hung on behind. Now then, you girls, get out! There’s a station just up that road. Train due in three minutes.”
+
+“What the devil are you driving at?” demanded Julius.
+
+“You and I aren’t going to leave the car. Only the girls.”
+
+Tommy turned to Tuppence.
+
+“Get out at once, Tuppence. Take her with you, and do just as I say. You’re safe. Take the train to London. Go straight to Sir James Peel Edgerton.”
+
+“Darn you!” cried Julius. “Jane, you stay where you are.”
+
+With a sudden swift movement, Tommy snatched the revolver from Julius’s hand, and levelled it at him.
+
+“Now will you believe I’m in earnest? Get out, both of you--or I’ll shoot!”
+
+Tuppence sprang out, dragging the unwilling Jane after her.
+
+“Come on, it’s all right. If Tommy’s sure--he’s sure. Be quick.”
+
+They started running. Julius’s pent-up rage burst forth.
+
+“What the hell----”
+
+Tommy interrupted him.
+
+“Dry up! I want a few words with you, Mr. Julius Hersheimmer.”

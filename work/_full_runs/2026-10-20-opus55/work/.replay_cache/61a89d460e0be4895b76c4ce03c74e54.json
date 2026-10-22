@@ -1,0 +1,61 @@
+{
+  "ts": "2026-10-21T14:55:57",
+  "key": "61a89d460e0be4895b76c4ce03c74e54",
+  "model": "anthropic:claude-opus-5-5",
+  "source_fingerprint": {
+    "version": 1,
+    "group": "align",
+    "hash": "e02dcbc68a864c15eeda4288512bb3ca",
+    "files": [
+      {
+        "path": "forage/align.py",
+        "sha256": "76914f0ee576b87f77492dadb14cdcb6f3250f7cccf5c560974d680e806f824a",
+        "missing": false
+      },
+      {
+        "path": "forage/artifacts.py",
+        "sha256": "3f7c214c5b0b849e8e42566e2c37f7185475a32e3ed022c8520eb0cc6173b25b",
+        "missing": false
+      },
+      {
+        "path": "forage/chapter_split.py",
+        "sha256": "5b5f72795535bed8b5c22cb53a8e0c5f04612976a761b2093ab86abb092eeb11",
+        "missing": false
+      },
+      {
+        "path": "forage/epub_reader.py",
+        "sha256": "d620e0a0bfc305633f79d79d1893b28d67771866a27503bee51e71b20736916e",
+        "missing": false
+      },
+      {
+        "path": "forage/llm.py",
+        "sha256": "ef0e2d7cbcc202a2f6f087a99f6d5019207b0f2bbcf327190f5dde1358303cb1",
+        "missing": false
+      },
+      {
+        "path": "forage/prompts.py",
+        "sha256": "8bda8ce6bdbf41f17d6dbb1119e814bf232e42f91404a675ae8f5c32086f1641",
+        "missing": false
+      },
+      {
+        "path": "forage/source_fingerprint.py",
+        "sha256": "2471d27b07b58c69890c6c91a5155f30e4ab69db1ede8593a39f0c8a9d63a5f0",
+        "missing": false
+      },
+      {
+        "path": "prompts/align.md",
+        "sha256": "d7ccc287f361157de70e24c08a6c5c0ccea929c17fd313a9da9d43bf4cfb91a0",
+        "missing": false
+      }
+    ]
+  },
+  "response": {
+    "text": "[\n  {\"draft_para\": 0, \"source_paras\": [0], \"note\": \"verbatim\"},\n  {\"draft_para\": 1, \"source_paras\": [1], \"note\": \"verbatim\"},\n  {\"draft_para\": 2, \"source_paras\": [2], \"note\": \"verbatim\"},\n  {\"draft_para\": 3, \"source_paras\": [3], \"note\": \"compressed \u2014 trimmed dialogue; omits walk toward Piccadilly (src 4)\"},\n  {\"draft_para\": 4, \"source_paras\": [5], \"note\": \"verbatim\"},\n  {\"draft_para\": 5, \"source_paras\": [6], \"note\": \"verbatim \u2014 final sentence dropped\"},\n  {\"draft_para\": 6, \"source_paras\": [7], \"note\": \"verbatim\"},\n  {\"draft_para\": 7, \"source_paras\": [8], \"note\": \"verbatim\"},\n  {\"draft_para\": 8, \"source_paras\": [9], \"note\": \"verbatim\"},\n  {\"draft_para\": 9, \"source_paras\": [10, 11], \"note\": \"compressed\"},\n  {\"draft_para\": 10, \"source_paras\": [12, 13], \"note\": \"compressed\"},\n  {\"draft_para\": 11, \"source_paras\": [14, 15], \"note\": \"compressed\"},\n  {\"draft_para\": 12, \"source_paras\": [16], \"note\": \"verbatim\"},\n  {\"draft_para\": 13, \"source_paras\": [17], \"note\": \"verbatim\"},\n  {\"draft_para\": 14, \"source_paras\": [18], \"note\": \"verbatim\"},\n  {\"draft_para\": 15, \"source_paras\": [19], \"note\": \"compressed\"},\n  {\"draft_para\": 16, \"source_paras\": [20], \"note\": \"verbatim\"},\n  {\"draft_para\": 17, \"source_paras\": [21], \"note\": \"compressed \u2014 overheard snippets (src 22) omitted\"},\n  {\"draft_para\": 18, \"source_paras\": [23], \"note\": \"verbatim\"},\n  {\"draft_para\": 19, \"source_paras\": [24], \"note\": \"verbatim \u2014 ordering of tea (src 25-26) omitted\"},\n  {\"draft_para\": 20, \"source_paras\": [27], \"note\": \"verbatim \u2014 last sentence dropped\"},\n  {\"draft_para\": 21, \"source_paras\": [28], \"note\": \"compressed\"},\n  {\"draft_para\": 22, \"source_paras\": [29, 30], \"note\": \"compressed\"},\n  {\"draft_para\": 23, \"source_paras\": [31], \"note\": \"compressed \u2014 adds bridging phrase 'And so on, upwards and downwards'\"},\n  {\"draft_para\": 24, \"source_paras\": [32], \"note\": \"compressed\"},\n  {\"draft_para\": 25, \"source_paras\": [33], \"note\": \"compressed\"},\n  {\"draft_para\": 26, \"source_paras\": [34], \"note\": \"compressed\"},\n  {\"draft_para\": 27, \"source_paras\": [35], \"note\": \"verbatim\"},\n  {\"draft_para\": 28, \"source_paras\": [36, 39], \"note\": \"compressed \u2014 colonies exchange dropped; 'Rich relations?' merged with 'she suggested' from src 36\"},\n  {\"draft_para\": 29, \"source_paras\": [42], \"note\": \"verbatim\"},\n  {\"draft_para\": 30, \"source_paras\": [43], \"note\": \"verbatim\"},\n  {\"draft_para\": 31, \"source_paras\": [44], \"note\": \"verbatim\"},\n  {\"draft_para\": 32, \"source_paras\": [45], \"note\": \"verbatim\"},\n  {\"draft_para\": 33, \"source_paras\": [46], \"note\": \"verbatim\"},\n  {\"draft_para\": 34, \"source_paras\": [47], \"note\": \"compressed\"},\n  {\"draft_para\": 35, \"source_paras\": [48], \"note\": \"verbatim\"},\n  {\"draft_para\": 36, \"source_paras\": [49], \"note\": \"verbatim\"},\n  {\"draft_para\": 37, \"source_paras\": [51], \"note\": \"verbatim\"},\n  {\"draft_para\": 38, \"source_paras\": [52], \"note\": \"compressed\"},\n  {\"draft_para\": 39, \"source_paras\": [53], \"note\": \"compressed\"},\n  {\"draft_para\": 40, \"source_paras\": [54], \"note\": \"verbatim\"},\n  {\"draft_para\": 41, \"source_paras\": [55], \"note\": \"compressed\"},\n  {\"draft_para\": 42, \"source_paras\": [56], \"note\": \"verbatim\"},\n  {\"draft_para\": 43, \"source_paras\": [57], \"note\": \"verbatim\"},\n  {\"draft_para\": 44, \"source_paras\": [58], \"note\": \"verbatim\"},\n  {\"draft_para\": 45, \"source_paras\": [59, 61], \"note\": \"compressed\"},\n  {\"draft_para\": 46, \"source_paras\": [62], \"note\": \"verbatim\"},\n  {\"draft_para\": 47, \"source_paras\": [63], \"note\": \"compressed\"},\n  {\"draft_para\": 48, \"source_paras\": [64], \"note\": \"verbatim\"},\n  {\"draft_para\": 49, \"source_paras\": [65, 71], \"note\": \"compressed \u2014 Ritz/rich-girl exchange (src 65 latter half, 66-70) omitted\"},\n  {\"draft_para\": 50, \"source_paras\": [72], \"note\": \"verbatim\"},\n  {\"draft_para\": 51, \"source_paras\": [73], \"note\": \"verbatim\"},\n  {\"draft_para\": 52, \"source_paras\": [74], \"note\": \"verbatim\"},\n  {\"draft_para\": 53, \"source_paras\": [75], \"note\": \"verbatim\"},\n  {\"draft_para\": 54, \"source_paras\": [76], \"note\": \"verbatim\"},\n  {\"draft_para\": 55, \"source_paras\": [77], \"note\": \"compressed\"},\n  {\"draft_para\": 56, \"source_paras\": [78], \"note\": \"verbatim\"},\n  {\"draft_para\": 57, \"source_paras\": [79], \"note\": \"verbatim\"},\n  {\"draft_para\": 58, \"source_paras\": [80], \"note\": \"verbatim\"},\n  {\"draft_para\": 59, \"source_paras\": [81, 83, 85], \"note\": \"compressed\"},\n  {\"draft_para\": 60, \"source_paras\": [86, 88], \"note\": \"compressed\"},\n  {\"draft_para\": 61, \"source_paras\": [89], \"note\": \"compressed\"},\n  {\"draft_para\": 62, \"source_paras\": [90], \"note\": \"verbatim\"},\n  {\"draft_para\": 63, \"source_paras\": [95], \"note\": \"compressed \u2014 'young officer' exchange (src 91-94) omitted\"},\n  {\"draft_para\": 64, \"source_paras\": [96], \"note\": \"verbatim\"},\n  {\"draft_para\": 65, \"source_paras\": [97], \"note\": \"compressed\"},\n  {\"draft_para\": 66, \"source_paras\": [98], \"note\": \"verbatim\"},\n  {\"draft_para\": 67, \"source_paras\": [99], \"note\": \"compressed\"},\n  {\"draft_para\": 68, \"source_paras\": [100], \"note\": \"verbatim\"},\n  {\"draft_para\": 69, \"source_paras\": [101], \"note\": \"compressed\"},\n  {\"draft_para\": 70, \"source_paras\": [102, 103], \"note\": \"compressed\"},\n  {\"draft_para\": 71, \"source_paras\": [104], \"note\": \"compressed\"},\n  {\"draft_para\": 72, \"source_paras\": [105], \"note\": \"verbatim\"},\n  {\"draft_para\": 73, \"source_paras\": [106], \"note\": \"verbatim\"},\n  {\"draft_para\": 74, \"source_paras\": [107], \"note\": \"verbatim\"},\n  {\"draft_para\": 75, \"source_paras\": [109], \"note\": \"compressed \u2014 hostel/Ritz quips (src 108-109) dropped\"},\n  {\"draft_para\": 76, \"source_paras\": [110], \"note\": \"verbatim\"},\n  {\"draft_para\": 77, \"source_paras\": [111], \"note\": \"verbatim\"},\n  {\"draft_para\": 78, \"source_paras\": [112], \"note\": \"verbatim\"},\n  {\"draft_para\": 79, \"source_paras\": [113], \"note\": \"verbatim\"},\n  {\"draft_para\": 80, \"source_paras\": [114], \"note\": \"compressed\"},\n  {\"draft_para\": 81, \"source_paras\": [115], \"note\": \"verbatim\"},\n  {\"draft_para\": 82, \"source_paras\": [116], \"note\": \"verbatim\"}\n]",
+    "input_tokens": 10329,
+    "output_tokens": 2783,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "duration_s": 20.40390372276306,
+    "stop_reason": "end_turn"
+  }
+}

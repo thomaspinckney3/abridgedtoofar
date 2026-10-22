@@ -1,0 +1,83 @@
+{
+  "calls_cap": 600,
+  "cap_usd": 350,
+  "christie_log": "recovery/christie-closure-2.log",
+  "christie_session": null,
+  "editorial_followups": [
+    "Christie 003: restore or adjudicate the setup for improvising Jane Finn.",
+    "Christie 004: restore or adjudicate the omitted reason for using an alias before Perhaps that is so.",
+    "Adams whole-book hold corresponds to three events in intentionally excluded chapters.",
+    "Provider prompt caching had zero reads; shared-prefix caching is a future efficiency improvement."
+  ],
+  "education_closure_log": "recovery/education-closure-2.log",
+  "education_closure_session": null,
+  "finished_at": "2026-10-20T21:35:35.581166+00:00",
+  "hosted_publication": {
+    "app_release": 21,
+    "books": {
+      "education": {
+        "at": "2026-10-20T22:31:01.687370+00:00",
+        "revision": "62885e00511e10faf75e7e5344ba670f086ecb73ed3eff7c4af15daff3867ff4",
+        "text_revision": "0ff41fecf1e1b9afe1abad4b4ce0428a14a67d8cf08bbd8c6662537f394250d1",
+        "url": "https://forage-review.fly.dev/b/education"
+      },
+      "secret_adversary": {
+        "at": "2026-10-20T22:31:03.509470+00:00",
+        "revision": "1db5c7538c28c3f9499b6bdd69c7e415bf590f9966007eaa1d486be76cbb3466",
+        "text_revision": "fafd5fba07b7afd4ba88303b5735d39515d97d4c6f1583355f3877227dad5a48",
+        "url": "https://forage-review.fly.dev/b/secret_adversary"
+      }
+    },
+    "browser_verified": true,
+    "channel": "review",
+    "existing_comments_preserved": true,
+    "live_decisions_submitted": false,
+    "method": "forage publish-review",
+    "provider_calls": 0,
+    "release_channels_unchanged": true,
+    "site": "https://forage-review.fly.dev",
+    "status": "verified",
+    "verification": "pipeline-review-publication/live-verification.json"
+  },
+  "hosted_publication_history": [
+    {
+      "books": {
+        "education": {
+          "at": "2026-10-20T21:44:37.647975+00:00",
+          "revision": "89cd02779bd148f5ad38cf98d59456328b1914ba81d60f059310dbedba05b162",
+          "text_revision": "0ff41fecf1e1b9afe1abad4b4ce0428a14a67d8cf08bbd8c6662537f394250d1",
+          "url": "https://forage-review.fly.dev/b/education"
+        },
+        "secret_adversary": {
+          "at": "2026-10-20T21:44:38.634664+00:00",
+          "revision": "c13ea7e54c8ca5916cfae075d4fa50982e45f6146743adc950ed91a30522e62f",
+          "text_revision": "fafd5fba07b7afd4ba88303b5735d39515d97d4c6f1583355f3877227dad5a48",
+          "url": "https://forage-review.fly.dev/b/secret_adversary"
+        }
+      },
+      "browser_verification": "website-publication/browser-verification.json",
+      "channel": "review",
+      "existing_comments_preserved": true,
+      "method": "forage publish-review",
+      "release_channels_unchanged": true,
+      "site": "https://forage-review.fly.dev",
+      "status": "verified",
+      "verification": "website-publication/verification.json"
+    }
+  ],
+  "last_stopped_at": "2026-10-20T20:29:43Z",
+  "main_log": "recovery/verified-credit-resume.log",
+  "main_session": null,
+  "note": "Both completed full-run editions are published with pipeline findings and chapter repair history. All 57 chapters, 453 current pipeline review items, original text downloads and seven prior comments verified. Release v21 provides review decisions only; pipeline reruns remain external. No paid provider calls or real reviewer decisions were made for this update.",
+  "pending": [],
+  "publication_status": "hosted_review_current",
+  "resume_command": ".venv/bin/python -u work/_full_runs/2026-10-20-opus55/recovery/resume_both.py --workers 4",
+  "status": "complete_awaiting_editorial_review",
+  "status_command": ".venv/bin/python work/_full_runs/2026-10-20-opus55/reporting/status.py",
+  "usage": {
+    "attempts": 593,
+    "cost_usd": 281.992725,
+    "responses": 565,
+    "unsettled_reserve_usd": 27.61479
+  }
+}

@@ -1,0 +1,148 @@
+{
+    "AppURL": "https://2a09:8280:1::161:ce8d:0",
+    "Deployed": false,
+    "Hostname": "forage-review.fly.dev",
+    "ID": "forage-review",
+    "Machines": [
+        {
+            "id": "87e005f0262398",
+            "name": "cold-tree-5735",
+            "state": "started",
+            "region": "iad",
+            "image_ref": {
+                "registry": "registry.fly.io",
+                "repository": "forage-review",
+                "digest": "sha256:11c1b5d58c914c6cb77d3e6d42d2fbff12659abbd4149c0a03e692825eec03a6"
+            },
+            "instance_id": "01M5DQ05Q2HFAHZJFX8KZSVFPV",
+            "version": "01M5DQ05Q2HFAHZJFX8KZSVFPV",
+            "private_ip": "fdaa:a7:90e8:a7b:610:da6e:81b6:2",
+            "created_at": "2026-08-06T11:00:20Z",
+            "updated_at": "2026-10-20T22:30:42Z",
+            "config": {
+                "env": {
+                    "FLY_PROCESS_GROUP": "app",
+                    "FORAGE_ALLOWED_HOSTS": "forage-review.fly.dev",
+                    "FORAGE_ARTIFACT_OVERLAY_DIR": "/data/artifacts",
+                    "FORAGE_BOOKS_DIR": "/app/books",
+                    "FORAGE_BOOKS_OVERLAY_DIR": "/data/books",
+                    "FORAGE_EDITS_DIR": "/data/edits",
+                    "FORAGE_ENV": "production",
+                    "FORAGE_HOSTED_ROOT": "/data/hosted",
+                    "FORAGE_REVIEW_DB": "/data/review.db",
+                    "FORAGE_SESSION_EPOCH": "1",
+                    "FORAGE_TRUST_PROXY": "1",
+                    "FORAGE_WORK_DIR": "/app/artifacts",
+                    "PRIMARY_REGION": "iad"
+                },
+                "init": {},
+                "guest": {
+                    "cpu_kind": "shared",
+                    "cpus": 1,
+                    "memory_mb": 512
+                },
+                "metadata": {
+                    "fly_builder_id": "8d96937f152368",
+                    "fly_flyctl_version": "0.4.118",
+                    "fly_platform_version": "v2",
+                    "fly_process_group": "app",
+                    "fly_release_id": "rel_3d092nmr0683zjxm",
+                    "fly_release_version": "21"
+                },
+                "mounts": [
+                    {
+                        "encrypted": true,
+                        "path": "/data",
+                        "size_gb": 1,
+                        "volume": "vol_re176w7xje1gj214",
+                        "name": "forage_review_data"
+                    }
+                ],
+                "services": [
+                    {
+                        "protocol": "tcp",
+                        "internal_port": 8000,
+                        "autostop": "suspend",
+                        "autostart": true,
+                        "min_machines_running": 1,
+                        "ports": [
+                            {
+                                "port": 80,
+                                "handlers": [
+                                    "http"
+                                ],
+                                "force_https": true
+                            },
+                            {
+                                "port": 443,
+                                "handlers": [
+                                    "http",
+                                    "tls"
+                                ]
+                            }
+                        ],
+                        "checks": [
+                            {
+                                "type": "http",
+                                "interval": "30s",
+                                "timeout": "5s",
+                                "grace_period": "10s",
+                                "method": "GET",
+                                "path": "/healthz"
+                            }
+                        ],
+                        "force_instance_key": null
+                    }
+                ],
+                "image": "registry.fly.io/forage-review@sha256:11c1b5d58c914c6cb77d3e6d42d2fbff12659abbd4149c0a03e692825eec03a6",
+                "restart": {
+                    "policy": "on-failure",
+                    "max_retries": 10
+                }
+            },
+            "events": [
+                {
+                    "type": "start",
+                    "status": "started",
+                    "request": {},
+                    "source": "flyd",
+                    "timestamp": 1792535442025
+                },
+                {
+                    "type": "launch",
+                    "status": "created",
+                    "source": "user",
+                    "timestamp": 1792535435121
+                },
+                {
+                    "type": "launch",
+                    "status": "pending",
+                    "source": "flyd",
+                    "timestamp": 1792535434980
+                }
+            ],
+            "checks": [
+                {
+                    "name": "servicecheck-00-http-8000",
+                    "status": "passing",
+                    "output": "{\"ok\":true,\"books\":5}",
+                    "updated_at": "2026-10-20T22:30:43.207Z"
+                }
+            ],
+            "host_status": "ok",
+            "cordoned": false
+        }
+    ],
+    "Name": "forage-review",
+    "Organization": {
+        "ID": "OnX7k3pwgYXlqieZ7GqwN0pRDwTwK03bJ",
+        "InternalNumericID": "1744053",
+        "Name": "",
+        "Slug": "personal",
+        "RawSlug": "",
+        "PaidPlan": true
+    },
+    "PlatformVersion": "machines",
+    "Status": "suspended",
+    "Version": 21
+}

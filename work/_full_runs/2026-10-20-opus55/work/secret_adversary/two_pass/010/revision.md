@@ -1,0 +1,141 @@
+When Tommy set forth on the trail of the two men, it took all Tuppence's self-command to refrain from accompanying him. She was consoled by the reflection that her reasoning had been justified: that one slender thread of the name "Rita" had set the Young Adventurers once more upon the track of the abductors of Jane Finn.
+
+The question was what to do next? Tuppence hated letting the grass grow under her feet. She retraced her steps to the entrance hall, now tenanted by a small lift-boy who was polishing brass fittings. She reflected that an ally in the enemy's camp, so to speak, was not to be despised.
+
+"Well, William," she remarked cheerfully, in the best approved hospital-early-morning style, "getting a good shine up?"
+
+The boy grinned responsively. "Albert, miss," he corrected.
+
+"Albert be it," said Tuppence. She leaned towards the boy and dropped her voice. "Look! Do you know what this is?" She flung back the left side of her coat and exposed a small enamelled badge. In reality it was the device of a local training corps originated by the archdeacon in the early days of the war. But Tuppence had noted the corner of a threepenny detective novel protruding from Albert's pocket.
+
+"American Detective Force!" she hissed.
+
+Albert fell for it. "Lord!" he murmured ecstatically.
+
+"Know who I'm after?" she inquired genially.
+
+"One of the flats?" Albert demanded breathlessly.
+
+Tuppence nodded and jerked a thumb up the stairs. "No. 20. Calls herself Vandemeyer. Vandemeyer! Ha! ha!"
+
+"A crook?" Albert queried eagerly.
+
+"A crook? I should say so. Ready Rita they call her in the States."
+
+"Ready Rita," repeated Albert deliriously. "Oh, ain't it just like the pictures!"
+
+It was. Tuppence was a great frequenter of the cinema.
+
+"Annie always said as how she was a bad lot," continued the boy. Annie, the house-parlourmaid, was leaving to-day.
+
+Tuppence explained that they were after her for the emeralds of Rysdale, the oil king. "Worth a million dollars!"
+
+"Mind you, sonny, not a word of this," said Tuppence.
+
+"I'll not breathe a word," protested Albert eagerly. "Ain't there anything I could do?"
+
+"See here, son, my brain's got busy. How would it be if you mentioned that you'd got a young cousin, or a friend of yours had, that might suit the place. You get me?"
+
+"I'm there," said Albert instantly. "You leave it to me, miss, and I'll fix the whole thing up in two ticks."
+
+"Some lad!" commented Tuppence. "You let me know, and if it's O.K. I'll be round to-morrow at eleven o'clock."
+
+"Where am I to let you know to?"
+
+"_Ritz_," replied Tuppence laconically. "Name of Cowley."
+
+Albert eyed her enviously. "It must be a good job, this tec business."
+
+"It sure is," drawled Tuppence, "especially when old man Rysdale backs the bill. But don't fret, son. If this goes well, you shall come in on the ground floor."
+
+With which promise she took leave of her new ally, well pleased with her morning's work.
+
+She went straight back to the _Ritz_ and wrote a few brief words to Mr. Carter. She started off on a shopping expedition that finished at a well-known hairdresser's. That evening, with an actress's pencil, she slightly altered the line of her eyebrows. Taken with the new luxuriant growth of fair hair above, this so changed her appearance that even Whittington would not recognize her. The cap and apron would be an even more valuable disguise. From hospital experience she knew that a nurse out of uniform is frequently unrecognized by her patients.
+
+"Yes," said Tuppence aloud, nodding at the pert reflection in the glass, "you'll do."
+
+Dinner was a solitary meal. Tommy had not returned, and Julius was absent too, but his abrupt "hustling" appearances and disappearances were accepted as part of the day's work.
+
+"All very well," thought Tuppence, "but this is very dull for _me!_ Here I am bursting with news, and absolutely no one to tell it to! Tommy might have wired, or something. I wonder where he is."
+
+The morning brought a note from Mr. Carter:
+
+"DEAR MISS TUPPENCE,
+
+"You have made a splendid start, and I congratulate you. Those people are absolutely desperate and incapable of either mercy or pity. I warn you again that I can promise you no protection.
+
+"If, in spite of my warnings, you make up your mind to go through with it, you will find everything arranged. You have lived for two years with Miss Dufferin, The Parsonage, Llanelly, and Mrs. Vandemeyer can apply to her for a reference.
+
+"May I be permitted a word or two of advice? Stick as near to the truth as possible--it minimizes the danger of 'slips.' I suggest that you should represent yourself to be what you are, a former V.A.D., who has chosen domestic service as a profession. That explains away any incongruities of voice or manner.
+
+"Whichever way you decide, good luck to you.
+
+"Your sincere friend,
+
+"MR. CARTER."
+
+Tuppence's spirits rose mercurially. Mr. Carter's warnings passed unheeded, but she had too much common sense not to recognize the force of his arguments.
+
+There was still no word from Tommy, but the morning post brought a somewhat dirty postcard with the words "It's O.K." scrawled upon it.
+
+At ten-thirty Tuppence drove to Paddington with a slightly battered tin trunk and left it in the cloak room. Ten minutes later a metamorphosed Tuppence walked demurely out of the station and entered a bus.
+
+It was a few minutes past eleven when she again entered the hall of South Audley Mansions. Albert's admiration was unbounded.
+
+"Blest if I'd have known you! That rig-out's top-hole."
+
+"Glad you like it, Albert," replied Tuppence modestly. "By the way, am I your cousin, or am I not?"
+
+"Your voice too," cried the delighted boy. "It's as English as anything! No, I said as a friend of mine knew a young gal. Annie wasn't best pleased. She's stopped on till to-day--to oblige, _she_ said, but really it's so as to put you against the place."
+
+As Tuppence rang the bell of No. 20, a smart young woman opened the door.
+
+"I've come about the place," said Tuppence.
+
+"It's a rotten place," said the young woman without hesitation. "Regular old cat--always interfering. There's never anything in the waste-paper basket--she burns everything. Cook knows something about her--but she won't tell--scared to death of her. And suspicious! She's on to you in a minute if you as much as speak to a fellow. I can tell you----"
+
+But what more Annie could tell, Tuppence was never destined to learn. At that moment a clear voice with a peculiarly steely ring to it called:
+
+"Annie!"
+
+The smart young woman jumped as if she had been shot. "Yes, ma'am."
+
+"Who are you talking to?"
+
+"It's a young woman about the situation, ma'am."
+
+"Show her in then. At once."
+
+A woman was standing by the fireplace. She was no longer in her first youth, and the beauty she undeniably possessed was hardened and coarsened. Her eyes, of a piercing electric blue, seemed to possess a faculty of boring into the very soul of the person she was looking at. And yet, despite her swaying grace, you felt instinctively the presence of something hard and menacing, a kind of metallic strength that found expression in the tones of her voice and in that gimlet-like quality of her eyes.
+
+For the first time Tuppence felt afraid. She had not feared Whittington, but this woman was different. Mr. Carter's warning recurred to her mind. Here, indeed, she might expect no mercy.
+
+Fighting down the panic that urged her to turn tail and run, Tuppence returned the lady's gaze firmly and respectfully. Mrs. Vandemeyer motioned to a chair.
+
+"You can sit down. How did you hear I wanted a house-parlourmaid?"
+
+"Through a friend who knows the lift boy here. He thought the place might suit me."
+
+Again that basilisk glance seemed to pierce her through. "You speak like an educated girl?"
+
+Glibly enough, Tuppence ran through her imaginary career on the lines suggested by Mr. Carter.
+
+"I see," Mrs. Vandemeyer remarked at length. "Is there anyone I can write to for a reference?"
+
+"I lived last with a Miss Dufferin, The Parsonage, Llanelly. I was with her two years."
+
+"And then you thought you would get more money by coming to London, I suppose? Well, it doesn't matter to me. I will give you £50--£60--whatever you want. You can come in at once?"
+
+"Yes, ma'am. To-day, if you like. My box is at Paddington."
+
+"Go and fetch it in a taxi, then. By the way, what's your name?"
+
+"Prudence Cooper, ma'am."
+
+"Very well, Prudence. Go away and fetch your box. The cook will show you where everything is."
+
+"Thank you, ma'am."
+
+Tuppence withdrew and passed meekly out.
+
+The adventure had begun, but she felt less elated than she had done earlier in the morning. It crossed her mind that if the unknown Jane Finn had fallen into the hands of Mrs. Vandemeyer, it was likely to have gone hard with her.

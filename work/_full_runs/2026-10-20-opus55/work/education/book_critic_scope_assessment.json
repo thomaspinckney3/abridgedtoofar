@@ -1,0 +1,58 @@
+{
+  "assessment": "Three missing synopsis events correspond to intentionally excluded chapters in the preserved input plan. This explains the book-level hold but does not override it or authorize changing the plan.",
+  "scope": "Existing whole-chapter omissions retained; included-chapter coherence is reviewed separately.",
+  "mappings": [
+    {
+      "synopsis_sentence": 17,
+      "chapters": [
+        "019",
+        "020"
+      ],
+      "events": "Grant Cabinet appointments, Gold Conspiracy and opposition",
+      "plan_evidence": [
+        {
+          "id": "019",
+          "title": "PRESIDENT GRANT (1869)",
+          "skipped": true,
+          "target_word_count": 0
+        },
+        {
+          "id": "020",
+          "title": "FREE FIGHT (1869-1870)",
+          "skipped": true,
+          "target_word_count": 0
+        }
+      ]
+    },
+    {
+      "synopsis_sentence": 24,
+      "chapters": [
+        "024"
+      ],
+      "events": "Panic of 1893 and Chicago dynamos",
+      "plan_evidence": [
+        {
+          "id": "024",
+          "title": "CHICAGO (1893)",
+          "skipped": true,
+          "target_word_count": 0
+        }
+      ]
+    },
+    {
+      "synopsis_sentence": 25,
+      "chapters": [
+        "025"
+      ],
+      "events": "Gold standard victory and capitalism",
+      "plan_evidence": [
+        {
+          "id": "025",
+          "title": "SILENCE (1894-1898)",
+          "skipped": true,
+          "target_word_count": 0
+        }
+      ]
+    }
+  ]
+}

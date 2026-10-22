@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-20T19:58:00.693160+00:00",
+  "note": "Code used by the 19:51 UTC funded retry and standalone Christie worker; earlier exact prompts and responses remain in calls/.",
+  "files": [
+    {
+      "path": "forage/full_run.py",
+      "sha256": "e3be97324402defe61e20189a8f8de2b79b8f12b0672df3b2ebb4c61597fa2ff"
+    },
+    {
+      "path": "prompts/fidelity_review.md",
+      "sha256": "9100aa33a4fb6ec3d864a59e1068f7cf86659e3189f596375145f8edcde87491"
+    },
+    {
+      "path": "prompts/fidelity_repair.md",
+      "sha256": "47f67df26b83185737d2939231be7e247ceaffb3e7ed8b025bccb384866a4441"
+    },
+    {
+      "path": "prompts/revise_fixed_target.md",
+      "sha256": "e576386b2f7063eb32649bc5de9fa9f89cfba0147c3ea30a49bfbb309bed9232"
+    },
+    {
+      "path": "tests/test_full_run.py",
+      "sha256": "8b3f0f9c7af3231b30a5f55921b4546e98dd37a1592ca78436ed9c9b3babfa37"
+    }
+  ]
+}

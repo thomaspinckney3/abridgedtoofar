@@ -1,0 +1,117 @@
+FOR a moment or two they stood staring at each other stupidly, dazed with the shock. Somehow, inexplicably, Mr. Brown had forestalled them. Tommy accepted defeat quietly. Not so Julius.
+
+“How in tarnation did he get ahead of us? That’s what beats me!”
+
+Tommy shook his head, and said dully:
+
+“It accounts for the stitches being new. We might have guessed....”
+
+“Never mind the darned stitches. How did he know? Do you reckon there was a dictaphone in Jane’s room?”
+
+But Tommy’s common sense pointed out objections.
+
+“No one could have known beforehand that she was going to be in that house--much less that particular room.”
+
+“That’s so,” admitted Julius. “Then one of the nurses was a crook and listened at the door. How’s that?”
+
+“I don’t see that it matters anyway,” said Tommy wearily. “If he’d had them for months, they’d have been published at once.”
+
+“Sure thing they would! No, some one’s got ahead of us to-day by an hour or so. But how they did it gets my goat.”
+
+“I wish that chap Peel Edgerton had been with us,” said Tommy thoughtfully.
+
+“Why?” Julius stared. “The mischief was done when we came.”
+
+“Yes----” Tommy hesitated. He could not explain his own feeling--the illogical idea that the K.C.’s presence would somehow have averted the catastrophe. “It’s no good arguing about how it was done. The game’s up. I must get back to London. Mr. Carter must be warned.”
+
+He took the midnight mail to London. Julius elected to stay the night at Holyhead.
+
+Half an hour after arrival, haggard and pale, Tommy stood before his chief.
+
+“I’ve come to report, sir. I’ve failed--failed badly.”
+
+Mr. Carter eyed him sharply.
+
+“You mean that the treaty----”
+
+“Is in the hands of Mr. Brown, sir.”
+
+“Ah!” said Mr. Carter quietly. The expression on his face did not change, but Tommy caught the flicker of despair in his eyes.
+
+“Well,” said Mr. Carter after a minute or two, “we mustn’t sag at the knees, I suppose. We must do what we can.”
+
+Through Tommy’s mind flashed the assurance: “It’s hopeless, and he knows it’s hopeless!”
+
+“Don’t take it to heart, lad,” Mr. Carter said kindly. “You did your best. You were up against one of the biggest brains of the century. And you came very near success. Remember that. I blame myself. I have been blaming myself ever since I heard this other news.”
+
+A new fear gripped at Tommy’s heart. Mr. Carter stretched out his hand to a sheet on the table.
+
+“Tuppence----?” faltered Tommy.
+
+“Read for yourself.”
+
+The typewritten words danced before his eyes. The description of a green toque, a coat with a handkerchief in the pocket marked P.L.C. He looked an agonized question at Mr. Carter.
+
+“Washed up on the Yorkshire coast--near Ebury. I’m afraid--it looks very much like foul play.”
+
+“My God!” gasped Tommy. “_Tuppence!_ Those devils--I’ll never rest till I’ve got even with them! I’ll hunt them down! I’ll----”
+
+The pity on Mr. Carter’s face stopped him.
+
+“I know what you feel like, my poor boy. But it’s no good. Cut your losses. Time’s merciful. You’ll forget.”
+
+“Forget Tuppence? Never!”
+
+Mr. Carter shook his head. “So you think now. Well, it won’t bear thinking of--that brave little girl!”
+
+“There’s no need for you to blame yourself, sir,” Tommy said with an effort. “I dare say we were a couple of young fools to take on such a job. But I wish to God I’d been the one to get it in the neck. Good-bye, sir.”
+
+Back at the _Ritz_, Tommy packed up his few belongings mechanically. _Tuppence--dead!_ Little Tuppence, brimming over with life! It was a dream, a horrible dream. Nothing more.
+
+They brought him a note, a few kind words of sympathy from Peel Edgerton, who had read the news in the paper. (There had been a large headline: EX-V.A.D. FEARED DROWNED.) The letter ended with the offer of a post on a ranch in the Argentine, where Sir James had considerable interests.
+
+“Kind old beggar,” muttered Tommy, as he flung it aside.
+
+The door opened, and Julius burst in with an open newspaper in his hand.
+
+“Say, what’s all this? They seem to have got some fool idea about Tuppence.”
+
+“It’s true,” said Tommy quietly.
+
+“Well, I’m darned!” said Julius. “Little Tuppence. She sure was the pluckiest little girl----”
+
+But suddenly something seemed to crack in Tommy’s brain. He rose to his feet.
+
+“Oh, get out! You don’t really care, damn you! You asked her to marry you in your rotten cold-blooded way, but I _loved_ her. I’d have given the soul out of my body to save her from harm. I’d have stood by without a word and let her marry you, because I was only a poor devil without a penny. But it wouldn’t have been because I didn’t care!”
+
+“See here,” began Julius temperately.
+
+“Oh, go to the devil! Go and look after your cousin. Tuppence is my girl! I shall never forget when I was in hospital, and she came in in that ridiculous cap and apron! It was like a miracle to see the girl I loved turn up in a nurse’s kit----”
+
+But Julius interrupted him.
+
+“A nurse’s kit! Gee whiz! I could swear I’ve seen Jane in a nurse’s cap too. No, by gum, I’ve got it! It was her I saw talking to Whittington at that nursing home in Bournemouth. She wasn’t a patient there! She was a nurse!”
+
+“I dare say,” said Tommy angrily, “she’s probably been in with them from the start.”
+
+“I’m darned if she did!” shouted Julius. “She’s my cousin, and as patriotic a girl as ever stepped.”
+
+“I don’t care a damn what she is, but get out of here!” retorted Tommy.
+
+The young men were on the point of coming to blows. But suddenly, with an almost magical abruptness, Julius’s anger abated.
+
+“All right, son,” he said quietly, “I’m going. I don’t blame you any for what you’ve been saying. It’s mighty lucky you did say it. I’ve been the most almighty blithering darned idiot that it’s possible to imagine. I’m going right away now--going to the London and North Western Railway depot, if you want to know.”
+
+“I don’t care a damn where you’re going,” growled Tommy.
+
+When the door closed, he finished packing and rang for his luggage to be taken down.
+
+“Going away, sir?”
+
+“I’m going to the devil,” said Tommy.
+
+Where was he going? He hadn’t the faintest idea. Beyond a fixed determination to get even with Mr. Brown he had no plans. Still, Sir James’s letter had been kind; better answer it. Finding no paper in his room, he remembered the good supply in Julius’s sitting-room. He was beginning to be rather ashamed of the things he had said. He’d apologize if he found him there.
+
+But the room was deserted. Tommy opened the middle drawer of the writing-table. A photograph, carelessly thrust in face upwards, caught his eye. For a moment he stood rooted to the ground. Then he took it out and sat down, still staring at it.
+
+What on earth was a photograph of the French girl Annette doing in Julius Hersheimmer’s writing-table?

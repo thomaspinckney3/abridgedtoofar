@@ -1,0 +1,27 @@
+{
+  "site": "https://forage-review.fly.dev",
+  "channel": "review",
+  "method": "forage publish-review",
+  "status": "verified",
+  "app_release": 21,
+  "books": {
+    "education": {
+      "revision": "62885e00511e10faf75e7e5344ba670f086ecb73ed3eff7c4af15daff3867ff4",
+      "text_revision": "0ff41fecf1e1b9afe1abad4b4ce0428a14a67d8cf08bbd8c6662537f394250d1",
+      "at": "2026-10-20T22:31:01.687370+00:00",
+      "url": "https://forage-review.fly.dev/b/education"
+    },
+    "secret_adversary": {
+      "revision": "1db5c7538c28c3f9499b6bdd69c7e415bf590f9966007eaa1d486be76cbb3466",
+      "text_revision": "fafd5fba07b7afd4ba88303b5735d39515d97d4c6f1583355f3877227dad5a48",
+      "at": "2026-10-20T22:31:03.509470+00:00",
+      "url": "https://forage-review.fly.dev/b/secret_adversary"
+    }
+  },
+  "verification": "pipeline-review-publication/live-verification.json",
+  "browser_verified": true,
+  "live_decisions_submitted": false,
+  "existing_comments_preserved": true,
+  "release_channels_unchanged": true,
+  "provider_calls": 0
+}

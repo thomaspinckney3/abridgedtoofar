@@ -414,3 +414,459 @@ remain authoritative. Existing .venv/build tools used; no new dependencies.
 Pre-existing model edits and work/_model_comparisons preserved. No real book/work
 mutation, live generation, hosted deployment/publication, commits, pushes, resets
 or Nova builds. Base: 3644fc8. Changes remain uncommitted by instruction.
+
+
+## 2026-10-15 — Fly hosted storage deployment preparation
+
+- Enabled FORAGE_HOSTED_ROOT=/data/hosted in Fly and Docker defaults, copied
+  package build/resource hooks into the image, and corrected single-machine
+  deployment guidance for both SQLite and publication storage.
+- Corrected the container persistence INSERT to name its columns; readiness
+  now waits for HTTP rather than a pre-existing database file. Added configured
+  upload/promotion and real-image feedback/restart persistence coverage.
+- Validation: 38 configuration/security tests passed; all 7 real Docker tests
+  passed in 38.79s; installed resources and web-only imports passed outside /app;
+  diff and entrypoint shell checks passed. No paid provider calls.
+- Prepared 4.0 MB of artifacts for dragon_maiden, education, gatsby,
+  secret_adversary and treasure_island, matching the live site's five book IDs.
+- Deployment is authorized but not yet performed: Fly CLI reports no access
+  token. Installed Fly CLI 0.4.118 and requested authentication.
+- Next: authenticate, inspect existing Fly state, deploy and verify the live site.
+
+## 2026-10-19 — Fly deployment complete
+
+- Loaded the user-provided `FLY_API_TOKEN` from ignored `.env` without displaying
+  the token. Inspected the existing app, machine, volume and secret names;
+  retained the single-machine topology and all three existing app secrets.
+- Backed up SQLite with its online backup API, downloaded and integrity-checked
+  the backup, recorded hashes for 62 volume artifact files, and completed volume
+  snapshot `vs_kk9PokZpY0Bhg2V5qJXBO6` before deployment.
+- Rebuilt the prepared Docker image; all build layers were cached. Compared
+  image metadata: filesystem layers and runtime configuration exactly match
+  `forage-review:pytest`, which passed the seven real Docker tests on October 15.
+  Pushed using temporary registry credentials, then removed those credentials.
+- Deployed immutable image index
+  `sha256:7c4f27818b64efc57c88ba434cbaaaba59d72ce0710123e1d58591f11de3dc25`
+  with `--ha=false --update-only --strategy rolling`. Fly release v16 uses
+  existing machine `87e005f0262398` and volume `vol_re176w7xje1gj214`; health and
+  DNS checks passed. Running amd64 manifest:
+  `sha256:2b6eac508658823fe2a1be24a2d6c8bd39c7f942006413895dc50abfd5864e0c`.
+- Live verification passed: five identical book summaries, 133 chapter reads,
+  all seven comments preserved, 62 artifact hashes unchanged, SQLite integrity,
+  source-matching HTML/JS/CSS, closed schema endpoints and anonymous-write
+  rejection. Reviewer/admin HTTPS sign-in and secure cookies work; reviewers
+  cannot upload, while an empty admin upload reaches archive validation.
+- Verified the actual server runs as uid 10001 and can write `/data/hosted` on
+  the persistent mount. Removed the temporary storage probe. No new book or
+  publication was created, no paid provider call was made, and no secrets were
+  rotated. Full publication/restart behavior remains covered by the prior real
+  Docker tests; interactive browser rendering was not exercised live.
+- Evidence and operation helpers: `/mnt/data/tmp/forage-fly-20261019/`.
+  STATUS.md contains the deployment and backup record. Deployment changes remain
+  uncommitted; no Git push or reset was performed.
+
+## 2026-10-19 — Comment attachment repair and requested regeneration
+
+- Recovered all seven original reviewed passages from archived drafts. Five
+  comments had been displayed against unrelated numeric positions after prior
+  paragraph splits. Removed numeric fallback: exact anchors follow moved text;
+  generation records validated original-to-revised passage bindings, including
+  split passages and an explicit primary display paragraph. Unmatched notes
+  stay visible separately. Exports preserve original text instead of substituting
+  the current text at the old index; application blocks unverifiable targets.
+- Added optional `ANTHROPIC_WORKSPACE_ID` routing. With the workspace provided
+  by the user, ran the requested chapter regeneration against the original
+  reviewed draft and then alignment using Sonnet 5.5. Six notes were applied;
+  the hostel note was skipped because its introduction follows the source.
+  One response field contained the comment ID instead of its feedback key.
+  Corrected this metadata in the cached response and reran validation locally;
+  no additional generation call was made. Raw response and correction retained.
+- Installed the accepted draft/ledger through recoverable commit, preserving
+  the previous live draft. Refreshed alignment and assembled book text. The
+  revised chapter has 46 paragraphs and 1,001 words. Usage for the two calls is
+  recorded in the book's `llm_calls.jsonl` with their staging execution directory.
+- Published the chapter and deployed the attachment fix. The live read check
+  caught owner-only generated file permissions after upload; corrected canonical
+  packaging to make selected public copies readable without changing source
+  permissions. Republished and deployed final release v18 using immutable image
+  index `sha256:52a2d445d4b8cc6d83020fb0c6e85d3da5e7b03d44ba48cf1354d0a2ccc83162`.
+- Validation: full suite 706 passed before final refinements; final affected
+  suites 120 review, 68 packaging and 8 real Docker tests passed. Added regressions
+  for moved/split/ambiguous targets, immutable original exports, validated apply
+  bindings, owner-only pipeline inputs and service-account access to baked files.
+- Live verification: all 133 chapters readable; all 46 revised paragraphs match
+  the accepted output; seven notes at paragraphs 8, 9, 13, 14, 16, 18 and 39;
+  original comment bodies, indices, anchors, timestamps and open statuses remain
+  unchanged. Only chapter 002 alignment/checks and the ledger changed on the
+  mounted artifact tree. Original-text exports and served web assets match.
+  Browser checks show all seven notes and no JavaScript errors. In a local
+  browser preview, Resolve → Reopen → edit retained the correct attachment and
+  produced eligible feedback for another pipeline pass without a model call.
+- Review workflow remains explicit: Accept accepts a comment for action;
+  Resolve closes it after review; resolved notes can be reopened. Reviewers can
+  add/edit feedback, but there is no web regeneration button or separate LLM
+  revision approval workflow. The seven existing notes remain open for review.
+- Backup and operation evidence: `/data/backups/comment-fix-20261019/` and
+  `/mnt/data/tmp/forage-comment-fix-20261019/`. No secrets displayed, no token
+  rotation, and no Git commit/push/reset. Follow-up changes remain uncommitted.
+
+## 2026-10-19 — Explicit revision acceptance and further review
+
+- Added Accept revision, Reject with comment, and Reopen revision controls to
+  model responses. Rejection requires a comment and queues a new request;
+  acceptance resolves the note. Reopening restores review without generation.
+  Reviewers can update or cancel a pending rejection. Ordinary Accept is now
+  labeled Accept comment to distinguish it from accepting an LLM revision.
+- SQLite stores append-only revision decisions with reviewer identity, feedback,
+  the response reviewed and chapter/publication context. Comment bodies and
+  original anchors remain intact. An atomic version check rejects conflicting
+  decisions and stale browser pages. A new response always requires its own
+  acceptance; reverted prose cannot make a discarded correction reviewable.
+- Feedback exports include the decision/request. Application fingerprints a
+  rejection once, incorporates its follow-up wording, and verifies the reviewed
+  chapter plus the pipeline's own passage binding before calling a provider.
+  Accepted/reopened revisions are inactive until another rejection. Book-level
+  requests automatically select the chapter named by their model response.
+- Production snapshots now include sanitized `review_responses.json`; the
+  snapshot depends on the decision ledger so even a skipped/no-change request
+  publishes its new response. Hosted views read the pinned snapshot's responses.
+  Failed review attempts refresh the authoritative feedback projection, avoiding
+  an unnecessary stale local-transport marker after a concurrency conflict.
+- Validation: full suite 721 passed before the final edge-case refinements;
+  final affected suites 114 review/lifecycle, 56 security/store, 34 revision/anchor
+  and 8 real Docker tests passed (overlapping selections). The hosted HTTP test
+  completes accept/reopen/reject/apply/publish and a skipped follow-up using
+  simulated provider responses. Browser preview tested required feedback,
+  persistence across reloads, decision history and all seven paragraph locations.
+- Deployed the tested image to the existing single Fly machine/volume as final
+  release v20, immutable index
+  `sha256:249dba5fa275ee09f9fdc405d913938a403cfc599b3838cb2059aef3bab09caf`;
+  running amd64 manifest
+  `sha256:3b00d4313513fec9f544661802c948df3fe85b99b5f94473845d7e863db432e6`.
+  Health/DNS checks pass. Live verification covered all 133 chapter reads,
+  unchanged text and original comment records, migration, authenticated rejection
+  validation, seven visible acceptance/rejection controls, and opening/cancelling
+  the rejection dialog. No live review decisions were submitted.
+- All seven existing notes remain awaiting review. No paid model calls, prose
+  regeneration, public-release promotion, token rotation, commits or pushes for
+  this feature. Rejection is processed during the next explicit pipeline pass.
+- Backup: `/data/backups/revision-workflow-20261019/`. Local evidence and
+  operation helpers: `/mnt/data/tmp/forage-revision-workflow-20261019/`.
+  Temporary browser/registry credentials removed; isolated preview stopped.
+
+
+## 2026-10-20 — full Opus 5.5 book runs; provider balance blocked
+
+- User requested complete Adams/Christie runs and explicitly preapproved cost.
+  Added `forage.full_run`, using original chapter targets/omissions, pristine
+  sources, batched whole-book preservation planning, counted two-pass drafting,
+  source-aware eight-axis reviews, independent adjudication with local patch
+  repairs, final reviews, existing book critic/validation/alignment/proofreading,
+  and immutable local review snapshots. All new calls use Opus 5.5 medium.
+- Isolated run: `work/_full_runs/2026-10-20-opus55/`. Original inputs hash-verified
+  unchanged. Removed synthetic prefixes only in the isolated copies of Adams
+  chapters 017/021 by using their pristine `.orig` sources. Existing website,
+  reviewer state and original production artifacts were not regenerated.
+- Paid run began 18:39 UTC. At 18:43 UTC Anthropic reported insufficient account
+  credit. Five complete responses: fresh Adams synopsis and four validated
+  planning batches covering 16 chapters. Completed usage cost $10.294680.
+  Three interrupted planning requests have no final usage report; conservatively
+  reserve $7.642055 against the $200 cap. Christie failed during free token
+  preflight. No chapter drafts, reviews, repairs, alignment or new snapshots yet.
+- Account funding requested. Resume after credits are available:
+  `.venv/bin/python -u -m forage.full_run run --output work/_full_runs/2026-10-20-opus55 --workers 4 --max-usd 200 --max-calls 600 --retry-credit-errors`.
+  Completed responses reuse exact request hashes. Explicit credit recovery keeps
+  prior error records/reserves and logs new attempts; other unsettled requests
+  remain blocked. No automatic paid retries were performed.
+- Validation: initial fixed-target/full-run/production selection 116 passed;
+  alignment/publication selection 94 passed; final affected selection 125 passed
+  (overlapping selections). Includes a simulated complete snapshot with verified
+  paragraph alignment and tests for evidence validation, local edit safety,
+  exact response reuse and credit-error recovery accounting.
+
+
+## 2026-10-20 — full-run retries, detailed reviews and provider credit stop
+
+- Continued under the user's explicit full-run cost approval and funded retry
+  requests. All 57 preservation plans, first drafts and counted second drafts
+  completed with Opus 5.5. Added bounded 48k-output recovery for truncated
+  counted revisions; incomplete prose was never installed.
+- Adams completed 28 initial reviews/repairs and 28 second reviews/repairs.
+  Repaired text is 72,290 words against 72,200; all 218 protected passages are
+  present. Eighteen final reviews are saved. Christie completed 29 initial
+  reviews/repairs, yielding 40,801 words against 40,600, and 22 second reviews.
+- Added cross-process journal reservation locking and a shared provider-credit
+  stop. The operational $200 cost/reserve cap settled at $183.594105 recorded
+  cost; continued both books at $350 under existing full-cost approval. At
+  20:29 UTC Anthropic again reported insufficient credit. All workers stopped.
+  Totals: 350 complete responses, $194.368489 recorded token cost, 28 interrupted
+  requests with unknown final usage and a $27.614790 conservative reserve.
+- Final review candidates include genuine dangling references despite all
+  protected quotations surviving. Prepared a minimal blocking-finding closure
+  pass that forbids unrelated offsetting cuts and re-reviews the corrected
+  book. It has not run. All ordinary review, repair and raw response artifacts
+  are preserved. No final assembly/snapshot/alignment or website publication.
+- Saved clearly labeled working-text exports, HTML progress report, partial
+  integrity audit and durable retry instructions in the isolated workspace.
+  `recovery/resume_both.py --retry-credit-errors` resumes both books after
+  funding; `recovery/close_findings.py <book_id>` follows standard completion
+  if substantive final blocking candidates remain.
+- Latest focused tests: 16 passed. Original 72 input hashes remain unchanged.
+  Further provider calls require available account credit; no additional cost
+  permission is needed because the user already approved the full task.
+
+
+## 2026-10-20 — completed full runs, credit diagnosis and restart verification
+
+- Correction to earlier funding assumptions: the user reported ample Console
+  credit. The unchanged `.env` key and requested workspace passed tiny and full
+  Opus generation probes. The account balance was never verified; the provider's
+  earlier low-credit error remains unexplained. Both books then finished without
+  another credit error. Routing metadata is retained without credentials.
+- Completed all 57 chapters with Opus 5.5, original targets and exclusions,
+  counted two-pass drafting, two full review/repair cycles, and two focused
+  closure passes. Closing fixes use exact source-backed patches without unrelated
+  offsetting cuts; 64 identical complete review contexts were reused for free.
+- Adams ends at 72,449 / 72,200 words with zero final must-fix candidates. Its
+  whole-book hold maps to three intentionally omitted chapter events. Christie
+  ends at 40,749 / 40,600, passes all 47 synopsis checks, and retains two final
+  must-fix candidates (003 improvised-name setup; 004 alias-reason reply) for
+  editorial review. Optional style/detail findings are preserved in the report.
+- Final audit passed: all 72 original inputs unchanged; all 432 protected passages
+  present; all saved review contexts and evidence valid; every local patch replayed
+  exactly; all final alignments current; both immutable snapshots verified.
+- Fixed default-runner resume so it verifies and retains the latest completed
+  snapshot instead of replaying older phases over final repairs. 20 focused tests
+  pass, and real completed-book resumes were verified without any generator call.
+- 565 journaled responses: $281.992725 estimated token cost, plus
+  $0.000140 for the diagnostic. 28 interrupted requests have unknown usage;
+  conservative reserve $27.614790, not a verified charge. Provider prompt cache:
+  0 read tokens, 3,730,097 write tokens. Only planning configured cache
+  control; persistent response reuse is distinct and survives restarts.
+- Final report, verification, current run manifest, diagnostic evidence, and
+  final relevant implementation snapshots are saved in the isolated workspace.
+  New book snapshots remain local; no website publication or Git commit/push.
+
+
+## 2026-10-20 — published full-run editions through the pipeline
+
+- User requested the website update and explicitly required using the pipeline.
+  Ran `forage publish-review` for both final snapshots from the isolated full-run
+  workspace against https://forage-review.fly.dev. Hosted review pointers advanced
+  successfully at 21:44 UTC; no regeneration, paid model calls, application
+  deployment, or direct hosted content edits were performed.
+- Adams review revision:
+  `89cd02779bd148f5ad38cf98d59456328b1914ba81d60f059310dbedba05b162`.
+  Christie review revision:
+  `c13ea7e54c8ca5916cfae075d4fa50982e45f6146743adc950ed91a30522e62f`.
+- Verified all 57 hosted chapters against local paragraph alignments, including
+  source text and indices; complete text downloads match the immutable snapshots.
+  Read-only browser checks confirmed both revisions render without JavaScript
+  errors. The other three books, public release pointers, and app v20 are unchanged.
+- All seven prior Christie comments retain their content, original anchors,
+  statuses, decisions and history. Their earlier-edition anchors are stale and
+  unplaced in the new full regeneration; the browser displays them under
+  "Notes awaiting a matching passage". No reviewer decisions were submitted.
+- Evidence, CLI logs, before/after metadata, chapter verification and browser
+  screenshots are saved in
+  `work/_full_runs/2026-10-20-opus55/website-publication/`.
+  Updated run/operator metadata to record the verified hosted publication.
+
+
+## 2026-10-20 — pipeline findings and repair review live (v21)
+
+- User approved publishing critic findings/repair history into the review UX and
+  explicitly kept pipeline reruns outside the website. Added immutable
+  `pipeline_review.json`, automatic full-run packaging, and provider-free
+  `forage prepare-review` for previously completed runs. The stage validates
+  current chapter context, evidence, exact historical patch replay, and the
+  prior snapshot inventory without changing prose or calling a model.
+- Publication imports stable pipeline items idempotently into the existing
+  review database. Decisions reuse the existing revision API and history;
+  findings offer dismiss/request/reopen, while chapter repair cards offer
+  accept/reject/reopen. Evidence, adjudications and before/after patches remain
+  available. Explicit requests feed external review-pull/review-sync; pending
+  items and reopening alone do not queue generation. Subsequent responses need
+  fresh review. Earlier-edition views exclude later pipeline items.
+- Published Adams revision
+  `62885e00511e10faf75e7e5344ba670f086ecb73ed3eff7c4af15daff3867ff4`
+  (240 items) and Christie revision
+  `1db5c7538c28c3f9499b6bdd69c7e415bf590f9966007eaa1d486be76cbb3466`
+  (213 items) through `forage publish-review`. These include 57 chapter repair
+  cards and both remaining Christie must-fix findings. Every previous snapshot
+  file remains byte-identical; only the review package/manifest were added.
+- Full suite: 760 passed, 8 container tests skipped there; all 8 actual container
+  tests passed on the final deployable image. Final producer/lifecycle selection:
+  25 passed (overlapping). Preview browser exercised both decision workflows,
+  required feedback, persistence and history. Fixed details collapsing after a
+  decision and null empty-section text observed in browser inspection.
+- Created volume snapshot `vs_9K386K1QPeoT3j8Xnv4zax`. Deployed tested image
+  `sha256:ca2aa6ebd286be41675a2564635669884bd0f00a4de3b22259c328011057581d`
+  as Fly release v21 on the existing machine and volume. Secrets are unchanged;
+  temporary registry/browser credential files were removed.
+- Live verification: all 57 chapter texts/source mappings, 453 current pending
+  review items, original full-text downloads, seven original comments and
+  histories, other three books, release pointers, and health passed. Signed-in
+  browser verified controls/evidence on both books without submitting decisions.
+  No paid generation, Git commit, or push. Preview server stopped.
+- Durable evidence: `work/_full_runs/2026-10-20-opus55/pipeline-review-publication/`.
+  Updated run/operator publication metadata; remaining editorial decisions are
+  still for the reviewer, including the two Christie coherence candidates.
+
+## 2026-10-20 — audit corrections validated locally
+
+- Fixed the completed-full-run/common-runner provenance mismatch with a verified
+  origin adapter. New snapshots include source inventories; older workspaces
+  verify their existing source manifest and immutable alignment evidence.
+  Feedback refresh retains the original plan, fixed targets, exclusions and
+  accepted prose. Shared downstream stages handle refresh and durable retries;
+  no-op sync reuses the existing revision. Preflight validates provenance,
+  accepted drafts and settings before feedback can issue a paid request.
+- Unified text identity across both producers and feedback eligibility. Older
+  snapshot IDs remain unchanged; book feedback can match their verified plan
+  and draft bytes. Full-run resume follows the latest successful feedback
+  publication. Original fidelity evidence is retained as historical evidence.
+- Fixed revision freshness for a deliberately removed paragraph by requiring
+  its recorded final chapter hash. Acceptance/reopening/rejection and restoring
+  the passage through feedback now work; subsequent chapter edits still block
+  stale decisions. A superseded pipeline item now returns HTTP 409 before
+  indexing the filtered notes or writing a decision, preserving its history.
+- Added 33 regression cases using actual full-run finalization, hosted HTTP
+  feedback/decisions and mocked model transport, covering both new and legacy
+  snapshots, no-op reuse, apply/republish, skipped responses, failed-refresh
+  retry, invalid preflight inputs, deletion restoration and historical items.
+- Validation: full suite 789 passed / 8 Docker skipped; actual container suite
+  8 passed; final affected selection 182 passed including four additional
+  preflight cases. Existing TestClient timeout deprecations remain warnings.
+  `git diff --check` passed. Both real completed workspaces pass free planning
+  with their existing revision IDs, unchanged plan/result/pointer bytes and no
+  `production_state.json` creation. Updated README, architecture and status;
+  appended audit resolution. No live mutations, paid calls, deployment, commit
+  or push. Fixes are local; the deployed v21 code is unchanged.
+
+## 2026-10-20 — audited fixes deployed as v22 (2026-10-21 UTC)
+
+- User requested deployment. Refreshed the five-book baked payload, rebuilt
+  the image through the real container suite, and passed all 8 tests. Saved
+  a SQLite backup at `/data/backups/audit-fixes-20261021/review.db`, verified
+  its integrity locally, and created volume snapshot `vs_vzAZpzYgLG7h3Bmjwl20q4Q`.
+- Deployed immutable image
+  `registry.fly.io/forage-review@sha256:c139be967d8d5e89612876f96ce7540da1dcbf7233f2400f2d72fdda58e35a76`
+  using `--ha=false --update-only --strategy rolling`. Fly release v22 uses
+  the existing `87e005f0262398` machine and `vol_re176w7xje1gj214` volume in iad.
+  Health, smoke and DNS checks pass; environment and secret digests are unchanged.
+- Verified all 64 deployed source files against the working tree, 676 stored
+  artifact files against the backup, SQLite integrity and unchanged comments,
+  review metadata and revision-decision tables. Public before/after captures
+  match for all five books, 115 chapters, 460 comments, downloads and channel
+  pointers. Existing full-run snapshots were not regenerated or republished.
+- Authenticated validation and the deployed deletion-binding helper pass.
+  Signed-in read-only browser checks pass for both remaining Christie findings,
+  Adams repair controls, evidence, request dialogs and external-pipeline
+  messaging, with no JavaScript errors or reviewer decisions submitted.
+- No paid generation, Git commit or push. Temporary registry and browser
+  credentials were removed. Evidence and operation scripts:
+  `/mnt/data/tmp/forage-audit-deploy-20261021/verification.json` and neighboring
+  files. Pipeline feedback generation remains an external operator action;
+  deployment does not start a rerun.
+
+## 2026-10-21 — chapter-first review layout live (v23)
+
+- User accepted simplifying the internal critic section: prose now leads the
+  chapter, with jump buttons for Suggested issues and Review history. Suggestions
+  are compact and collapsed by default, with reader-facing priority and decision
+  labels. Completed repairs, dismissed/outdated suggestions, draft diagnostics
+  and detailed critic records live in a collapsed history panel after the text.
+  Citation labels distinguish original source, earlier draft and reviewed draft.
+- Existing response/decision APIs and stored evidence remain unchanged. Dismissed
+  suggestions move to history; reopening returns them to the active list. The
+  destination is revealed and keyboard focus follows the item. History disclosure
+  survives same-chapter rerenders and resets on chapter/edition navigation.
+- JavaScript syntax and diff checks pass; 41 affected tests and all 8 real-image
+  container tests pass. Browser preview exercises both full decision cycles,
+  persistence/export, source comparisons, request validation, chapter comments,
+  desktop/mobile and public/reviewer states. No new dependencies or schema changes.
+- Backed up SQLite and the volume (`vs_25RDp5Yq2X7HbRAPkA9JJ06`); a registry
+  upload timed out once and succeeded on retry. Deployed immutable image
+  `sha256:407bee1c6913de663e8d1b8468293d1101befc7d4c8a290b1b24b4f86e848d17`
+  with rolling update, `--ha=false --update-only`, as release v23 on the existing
+  machine/volume. Health, smoke and DNS checks pass; secrets and environment match.
+- Live verification: all five books, 115 chapters, 460 comments, downloads and
+  pointers match the pre-deploy captures. All 64 deployed source files match the
+  working tree, 676 stored artifact hashes match the backup, and SQLite integrity
+  and all application table rows are unchanged. Read-only desktop/mobile browser
+  checks pass, without JavaScript errors or live reviewer decisions.
+- Evidence, screenshots, backup and operation scripts:
+  `/mnt/data/tmp/forage-review-layout-20261021/`. Temporary registry/browser
+  credentials removed. No paid generation, Git commit or push.
+
+## 2026-10-21 — approved review feedback incorporated and published
+
+- Pulled the live feeds for all five books. One actionable paragraph note,
+  `8b74e1d2dee2`, requested restoring hospital setup in Secret Adversary 002.
+  Imported the complete current feeds for both full-run books, preserving the
+  user's deletion of seven older Christie comments. Source and immutable-origin
+  preflight passed before paid work; the user explicitly approved the estimated
+  $1–2 run.
+- Ran `forage review-sync secret_adversary --apply --republish --segment 002`
+  against `work/_full_runs/2026-10-20-opus55` and the live review site. Opus 5.5
+  restored the source's Sister Greenbank/doctor/chart clause in paragraph 8,
+  adding 28 words. No other paragraph or chapter changed. Whole-book critic and
+  chapter alignment completed normally: 47/47 synopsis claims present and all
+  214 protected passages retained. Three completed provider calls have an
+  estimated token cost of $0.704138, including prompt cache writes.
+- Pipeline publication confirmed review revision
+  `4dd94ce6dd03ec0a930ec12484b8ba10b4a961b674864059a12a7cabb21bd793`.
+  Verified all 29 hosted chapters, alignment mappings, complete downloads and
+  old/new immutable snapshot inventories. All 214 comment bodies, statuses and
+  original anchors remain unchanged; the applied note has a verified current
+  binding and a pending revision decision. Other book pointers, Adams prose and
+  the public release channel remain unchanged.
+- Signed-in and public browser checks confirm the source restoration, attached
+  note, explanation, pending Accept/Reject controls and mobile layout, with no
+  JavaScript errors or live decisions submitted. Fresh free pull reports zero
+  pending requests; free production planning reuses every completed stage.
+  App release remains v23; no deployment, code edit, Git commit or push.
+- Evidence, exact paragraph diff, usage log, publication acknowledgement and
+  desktop/mobile screenshots: `/mnt/data/tmp/forage-feedback-20261021/`.
+  Temporary browser session credentials were removed.
+
+## 2026-10-21 — persistent user accounts replace shared tokens
+
+- Implemented AccountStore in the existing persistent review database. Passwords
+  are salted scrypt hashes (N=32768/r=8/p=3); session cookies contain random
+  256-bit identifiers whose hashes are stored server-side. Each request resolves
+  current account permissions. Logout, password changes and account deletion
+  revoke sessions; deletion preserves all review records and attribution.
+- Added username/password login, admin-only list/create/remove endpoints and
+  Users UI, plus a personal password-change/sign-out menu. Case-insensitive
+  usernames are unique. Last-admin/self-removal protections run in the write
+  transaction. Admin mutations recheck the actor after expensive hashing.
+  Account responses omit password/session hashes, and auth responses are no-store.
+- Updated CLI publishing transport, operational smoke checks, test fixtures,
+  bootstrap documentation and deployment examples to use accounts. Legacy
+  login tokens and signed role cookies are removed rather than retained as a
+  fallback. Initial admin creation uses a hidden local prompt or one-time
+  bootstrap secrets; existing accounts are never overwritten at startup.
+- Validation: 797 full-suite tests passed, 8 Docker tests skipped there; all 9
+  real-image tests passed, including restart without bootstrap credentials and
+  password persistence. 26 focused account tests and 106 affected tests overlap
+  the suite. Updated HTTP smoke checks passed. Dedicated real-browser checks
+  exercised create/remove, reviewer restrictions, password change, deleted-user
+  rejection and desktop/mobile layouts without JavaScript errors.
+- Backed up SQLite and 780 artifact hashes under `/data/backups/accounts-20261021`
+  and created snapshot `vs_KA4ewADgkzQTZovyPVOQDKD`. Deployed tested image index
+  `sha256:46f3b456a35bce9717d59549226e249a9a8b1ff21de298ba5828db2669aa615e`
+  as v24 on the existing single machine/volume. Created initial `admin` and
+  dedicated `pipeline` accounts, configured local publishing credentials, then
+  removed legacy and bootstrap Fly secrets; the resulting restart is v25.
+- Live verification: all 65 source files match, all 780 stored artifact hashes
+  and all 454 review records are unchanged, and every public response/download
+  across five books and 115 chapters matches the pre-deploy capture. SQLite
+  integrity passes. Real old shared credentials and correctly signed legacy
+  cookies are rejected. New admin and pipeline accounts authenticate. Browser
+  verifies admin management controls, password form, logout and mobile layout.
+- Operation evidence, screenshots, immutable image and rollback metadata:
+  `/mnt/data/tmp/forage-accounts-20261021/`. Initial admin credentials and retired
+  secrets are in owner-only files outside the repo. No paid model calls, Git
+  commit or push. Account migration is release-verified.

@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-20T20:48:18.060973+00:00",
+  "key_fingerprint": "3b5331c59343",
+  "workspace": "wrkspc_01N1HWHrGNE4agYcDrfANr9X",
+  "results": [
+    {
+      "probe": "models",
+      "status": 200,
+      "headers": {
+        "request-id": "req_011CgE9SZCGMrQRmqdMNmfLm",
+        "anthropic-organization-id": "6e87c9b2-f838-45a4-b2bd-7d7575ec381b",
+        "anthropic-workspace-id": "wrkspc_01N1HWHrGNE4agYcDrfANr9X"
+      },
+      "body": {
+        "data": [
+          {
+            "id": "claude-haiku-5-5",
+            "display_name": "Claude Haiku 5.5"
+          }
+        ],
+        "error": null
+      }
+    },
+    {
+      "probe": "token_preflight",
+      "status": 200,
+      "headers": {
+        "request-id": "req_011CgE9SaCoUZShAWvK6oVBN",
+        "anthropic-organization-id": "6e87c9b2-f838-45a4-b2bd-7d7575ec381b",
+        "anthropic-workspace-id": "wrkspc_01N1HWHrGNE4agYcDrfANr9X"
+      },
+      "body": {
+        "input_tokens": 14
+      }
+    },
+    {
+      "probe": "workspace",
+      "status": 400,
+      "headers": {
+        "request-id": "req_011CgE9SaZ8WB9udwgNH9t57"
+      },
+      "body": {
+        "type": "error",
+        "error": {
+          "type": "invalid_request_error",
+          "message": "anthropic-workspace-id is not supported on Admin API endpoints; remove the header."
+        },
+        "request_id": "req_011CgE9SaZ8WB9udwgNH9t57"
+      }
+    }
+  ]
+}

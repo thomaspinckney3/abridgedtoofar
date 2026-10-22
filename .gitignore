@@ -26,6 +26,10 @@ build/
 # Review app state: the comment queue is per-deployment, not repo content
 work/_review/
 
+# Advisory process locks are recreated by pipeline workers.
+work/**/.production.lock
+work/**/.ledger.lock
+
 # Deploy payload — derived from work/ by scripts/package_review_artifacts.py
 deploy/
 

@@ -1451,3 +1451,558 @@ Corrections are within the four verified findings and preserve existing model
 updates and comparison artifacts. Periodic external sync can now resume the
 verified failure paths without losing application decisions or certifying an
 obsolete working revision. No further remediation is required by this audit.
+
+
+# Pipeline findings and repair-review UX audit
+
+## 2026-10-20
+
+### Verdict
+
+Pass: functional, structural and forward-impact checks. Release-verified on Fly
+v21. The approved scope is publication and reviewer decisions; actual reruns
+remain external. No editorial approval is inferred from mechanical validation.
+
+### Findings and evidence
+
+1. Completed full-run reports previously had no actionable website projection.
+   The producer now emits a verified immutable review package and supports
+   provider-free enrichment of completed runs (`forage/pipeline_review.py:158`,
+   `forage/pipeline_review.py:215`, `forage/full_run.py:661`). Saved evidence and
+   patches are checked against their frozen inputs, and all preexisting snapshot
+   files in both real books remained byte-identical.
+2. Stable publication imports preserve reviewer-owned state
+   (`forage/webapp/store.py:1026`, `forage/webapp/app.py:350`). Historical views
+   filter pipeline items by the selected snapshot. Existing revision freshness,
+   concurrency, authentication, required-feedback and decision-history rules
+   govern the new cards. Direct edit/delete of immutable pipeline evidence is
+   refused; dismissal is recorded through the decision API.
+3. Pending/reopened review items do not trigger generation. Explicit requests
+   travel through the existing feedback/apply path. Later production snapshots
+   carry the original package and new responses (`forage/production.py:612`,
+   `tests/test_pipeline_review.py:41`). Both finding and repair cycles were
+   exercised through real HTTP/storage and simulated provider calls, including
+   repeat publication, stale decisions, acceptance, reopening and republishing.
+4. Browser inspection found empty-section null text and collapsing review cards.
+   Both were corrected and verified in preview and the final deployed image.
+   UI evidence and copy explicitly describe an external pipeline run
+   (`forage/webapp/static/app.js:469`, `forage/webapp/static/app.js:726`).
+
+Commands/evidence:
+- `.venv/bin/pytest -q`: 760 passed, 8 skipped.
+- `.venv/bin/pytest -q tests/test_pipeline_review.py tests/test_full_run.py`:
+  25 passed, overlapping the suite; repeated after final producer refinements.
+- `FORAGE_DOCKER_TESTS=1 DOCKER_HOST=unix:///run/user/1000/docker.sock .venv/bin/pytest -q tests/test_container.py`:
+  8 passed on the final image.
+- `node --check forage/webapp/static/app.js`; `git diff --check`: passed.
+- `node /mnt/data/tmp/forage-pipeline-review-20261020/check-browser.cjs`:
+  preview lifecycle, reload persistence, history, feedback export passed.
+- `.venv/bin/python /mnt/data/tmp/forage-pipeline-review-20261020/verify-live.py`:
+  all 57 chapters, 453 current/pending items, downloads, original seven comments,
+  other books, release pointers and health passed.
+- `.venv/bin/python /mnt/data/tmp/forage-pipeline-review-20261020/verify-live-browser.py`:
+  live authenticated controls and evidence passed; all non-GET browser requests
+  blocked and no live reviewer decisions submitted.
+
+### Completeness
+
+- Truthful state: release-verified.
+- Accepted scope: all addressed. Final findings, repair history, decisions,
+  externally consumed requests, reopening, pipeline publication and live UX.
+- Findings remain separate from chapter repair acceptance. Optional critic
+  findings and tradeoffs remain visible without being queued automatically.
+- Original seven stale comments remain unchanged. No manual reanchoring, direct
+  hosted content edits, provider generation or unresolved placeholder.
+- All book text and source mappings remain unchanged; no public-release promotion.
+
+### Structural assessment and forward impact
+
+Ownership follows ARCHITECTURE.md: the pipeline owns immutable evidence;
+ArtifactStore reads it; ReviewStore owns mutable decisions; publication owns
+idempotent import; existing feedback/apply/snapshot stages close the loop.
+No second decision engine, server-side generation endpoint, or model dependency
+was added to hosting. Prepared package identity and original chapter context
+survive subsequent repairs and distinguish newer model responses from accepted
+older responses. No remaining remediation is required for the approved scope.
+
+
+# Uncommitted full-run and review workflow audit
+
+## 2026-10-20
+
+### Verdict
+
+Does not pass all three audit dimensions. Reviewed tracked changes against
+`148c158` and the new full-run, fixed-target, review-anchor, revision-decision
+and pipeline-review modules, prompts and tests. Four reproducible defects remain:
+one P1 production/feedback integration failure and three P2 review correctness
+failures. The site is deployed and readable, but that does not establish that
+feedback can complete the round trip for the actual full-run editions. This
+section supersedes the earlier blanket completion claim for that lifecycle;
+prior audit entries are retained unchanged.
+
+No production code or live data was changed. The only repository edit in this
+audit is this appended section. Reproductions use temporary books, a temporary
+SQLite database, in-process HTTP clients and mocked/forbidden provider calls.
+
+### Findings
+
+1. **P1 — Full-run publications cannot complete the documented feedback sync.**
+   - Evidence: `forage/full_run.py:673`, `forage/full_run.py:681`,
+     `forage/review_sync.py:318`, `forage/review_sync.py:327`,
+     `forage/production.py:677`.
+   - `finish()` writes an immutable publication and `full_run_result.json`, but
+     does not produce state/provenance understood by the common production
+     runner. Sync always consults that runner for refresh after applying
+     feedback. It rejects these completed books with
+     `legacy drafts lack provenance; inspect and pass --adopt-existing`.
+     Even an empty-feed `--apply --republish` fails. With a valid chapter note,
+     a mocked model response was applied and the local draft and ledger were
+     updated before the same exception prevented republishing; the hosted
+     review pointer remained on the earlier text.
+   - This is not limited to synthetic data: both actual completed workspaces
+     under `work/_full_runs/2026-10-20-opus55/work/` lack
+     `production_state.json`. Read-only `plan_production()` returns
+     `success=False` and the legacy-provenance reason for both books.
+   - Required correction: integrate full-run provenance and downstream refresh
+     with sync, preserving the fixed targets, omission decisions and accepted
+     prose. Validate that the refresh path is supported before making a paid
+     apply request. Blindly forcing legacy adoption would rerun a different
+     preparation/quality pipeline and is not a verified correction.
+   - Reproductions: `test_completed_full_run_can_sync_without_legacy_adoption`
+     and `test_full_run_feedback_is_not_left_applied_but_unpublished` in the
+     audit reproduction file listed below.
+
+2. **P2 — Fresh book-level feedback on full-run editions is always stale.**
+   - Evidence: `forage/full_run.py:645`, `forage/review_sync.py:102`,
+     `forage/review_sync.py:131`, `forage/production.py:535`.
+   - The new runner derives text identity from `{"plan": plan, "drafts":
+     drafts}`. Feedback eligibility instead hashes the canonical production
+     identity containing version, book ID, plan-file hash and draft inventory.
+     These disagree even when every file is unchanged. Publishing a completed
+     full-run fixture, creating a new book note and immediately pulling it
+     produces `{'stale': 1}` instead of `{'eligible': 1}`. The note never reaches
+     application. The two actual full-run snapshots likewise have text IDs
+     different from `current_text_revision()`.
+   - Required correction: share one text-identity contract across producers
+     and feedback consumers, including a compatibility path for already
+     published full-run revisions.
+   - Reproduction: `test_new_book_comment_on_full_run_is_eligible`.
+
+3. **P2 — A valid paragraph deletion cannot be accepted or rejected.**
+   - Evidence: `prompts/review_apply_segment.md:75`,
+     `forage/review_anchors.py:72`, `forage/webapp/store.py:1197`,
+     `forage/webapp/app.py:589`.
+   - The response contract explicitly permits `target_paragraphs: []` when the
+     reviewed passage was removed. `make_binding()` records this correctly and
+     `locate()` reports `attachment_status='removed'`. However, revision
+     freshness requires a non-null current paragraph index. The resulting
+     response is marked noncurrent even with an exact matching final chapter
+     hash. Acceptance returns HTTP 409, and the UI hides revision decisions.
+     Reloading cannot resolve this because the absence is intentional.
+   - Required correction: validate removed-passage responses against their
+     recorded final chapter identity and permit review of that verified
+     deletion. Preserve the existing rejection of genuinely changed chapters.
+   - Reproduction: `test_removed_passage_revision_can_be_accepted`.
+
+4. **P2 — Decisions on superseded pipeline findings raise an unhandled error.**
+   - Evidence: `forage/webapp/store.py:1164`, `forage/webapp/app.py:587`.
+   - Publishing a replacement package leaves the old finding in the database
+     for history but filters it out of the current edition's decorated notes.
+     If an already-open browser submits a decision on that finding, the
+     endpoint indexes `[0]` on the empty result before reaching its stale-page
+     check. The reproduction raises `IndexError`, yielding a server error
+     rather than the intended HTTP 409/reload response.
+   - Required correction: handle an item absent from the selected publication
+     before indexing the decorated result, retaining its history and returning
+     a controlled conflict without recording a decision.
+   - Reproduction: `test_replaced_pipeline_item_returns_conflict_instead_of_crash`.
+
+### Verification and commands
+
+- The unchanged repository test suite was run earlier in this session:
+  `ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test FORAGE_DOCKER_TESTS=0 .venv/bin/python -m pytest -q`
+  returned **760 passed, 8 skipped, 12 warnings**. Docker execution was not
+  repeated for this audit. JavaScript syntax and `git diff --check` passed.
+- New offline audit probes:
+  `PYTHONPATH=/mnt/data/forage ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test FORAGE_DOCKER_TESTS=0 .venv/bin/python -m pytest -q /mnt/data/tmp/forage-audit-20261020/test_audit_regressions.py --tb=line -p no:cacheprovider`
+  returned **5 failed**, each on the intended assertion/error above. Source:
+  `/mnt/data/tmp/forage-audit-20261020/test_audit_regressions.py`; captured output:
+  `/mnt/data/tmp/forage-audit-20261020/results.txt`.
+- Existing lifecycle tests start from `run_ok()`/`run_production()` fixtures,
+  while the full-run test ends at publication. They do not connect the actual
+  new producer to feedback sync, explaining why findings 1 and 2 passed the
+  existing suite. The deletion and replaced-item cases are also absent from
+  those successful lifecycle tests.
+- Earlier read-only checks in this session verified both current immutable
+  snapshot inventories, 72 unchanged original inputs, Fly v21 health, current
+  publication pointers and matching complete-text downloads. These support
+  deployment/read integrity, not paid generation or the failing write cases.
+
+### Completeness
+
+The original PROJECT.md criteria are used as the contract baseline; subsequent
+scope is recorded in README.md, ARCHITECTURE.md and LOG.md. This audit reviews
+the uncommitted extension rather than re-certifying every unchanged subsystem.
+
+- AC1 packaging safety: no new defect found; permission/build changes reviewed.
+- AC2 completion/truncation: new provider paths use completion validation and
+  retain failed responses; no additional finding from this review.
+- AC3 alignment and staleness: alignment checks remain, but new book-level
+  freshness violates the contract (finding 2).
+- AC4 audio reuse: unchanged; no new live-media verification claimed.
+- AC5 shared workflow/provenance: full-run/sync integration is missing (finding 1).
+- AC6 failure/completion: the full-run CLI has a nonzero failure exit and book
+  locks; feedback refresh still fails after application (finding 1).
+- AC7 graphic execution: unchanged; outside new runtime verification.
+- AC8 review compatibility: deletion decisions and superseded finding actions
+  fail (findings 3 and 4); media behavior otherwise unchanged.
+- AC9 packaging/serving: immutable text snapshots and serving verified earlier
+  in this session; no new media-format changes.
+- AC10 coverage/docs: existing tests pass, but five focused probes expose
+  missing lifecycle coverage; documentation overstates that round trip.
+- AC11 hosted feedback apply/refresh/republish: incomplete for full-run output
+  and fresh book notes (findings 1 and 2).
+- AC12 release separation: no changed-path conflation found; audit performed
+  no promotion or live mutation.
+- Additional fixed-target scope: measured drafts, protected text checks,
+  bounded repairs and immutable artifacts are implemented and exposed.
+- Additional revision/pipeline-review scope: publication and controls are
+  deployed; the four cases above prevent full end-to-end certification.
+- Truthful state: deployed/read paths are release-verified; the complete
+  feedback lifecycle remains exposed with known defects.
+- Deferred items: no user-authorized deferral resolves these findings.
+- Placeholder audit: no stub was found; the main failure is incompatible
+  complete implementations, not an unimplemented branch.
+
+### Structural Assessment
+
+- Architecture: the second producer bypasses the common runner's provenance
+  contract while claiming compatibility with its sync consumer.
+- Abstraction and semantic families: production state and text identity have
+  diverged between full-run and standard production. The two contracts need
+  shared ownership rather than special cases in each consumer.
+- Patterns: snapshot validation, local locks, provider-free web imports and
+  transactional decisions are used consistently in the reviewed paths.
+- Integrity: deleted-passage identity and filtered historical rows are missing
+  cases in otherwise deliberate stale-review validation.
+- Scope: source, tests, docs, deployment and generated run data are mixed in
+  the working tree. No production files were changed by this audit.
+
+### Forward Impact and Remediation Mapping
+
+- Fix findings 1 and 2 together at the producer/refresh boundary. Add permanent
+  integration coverage starting with an actual `full_run.finish()` result,
+  then publish, create both book and chapter feedback, apply and republish.
+  Preserve existing publication identities and original editorial choices.
+- Fix finding 3 in binding/freshness handling, with acceptance and rejection
+  tests for verified removals plus rejection after a later chapter change.
+- Fix finding 4 at the decision endpoint, with a test that replaces a package
+  between page load and submission and verifies a controlled conflict.
+- Existing published text remains intact. The immediate operational risk is
+  attempting the advertised external feedback cycle on these editions before
+  the producer/refresh integration is corrected.
+
+# Full-run feedback and revision-decision correction audit
+
+## 2026-10-20 (America/New_York)
+
+### Verdict
+
+The four findings in the preceding audit are resolved locally. Functional,
+structural and forward-impact review passes for this correction scope. The
+fixes are exposed through the existing CLI and HTTP endpoints and verified
+offline/in containers, but are not release-verified: no deployment, live
+editorial decision or paid model request was performed. Existing dirty work
+and immutable published editions were preserved.
+
+### Findings and resolution evidence
+
+1. **Resolved P1: full-run feedback can refresh and republish.**
+   `forage/production_origin.py:21` records source provenance for new runs;
+   `forage/production_origin.py:60` verifies new and legacy origins.
+   `forage/production.py:268` routes verified preparation through the common
+   runner, preserving accepted drafts and original plan choices.
+   `forage/production.py:701` checks provenance, complete drafts and options
+   before the apply call at `forage/review_sync.py:315`.
+   `tests/test_full_run_review.py:108`, `:121`, `:155`, `:169` and `:205`
+   cover unchanged sync, actual finding request/apply/republish, skipped
+   responses, failed-refresh retry without a second apply, and invalid inputs.
+   Both real completed workspaces now plan successfully with their existing
+   immutable review revisions and without creating production state.
+2. **Resolved P2: fresh whole-book feedback no longer becomes falsely stale.**
+   `forage/production_state.py:52` owns shared retained-text inputs and identity;
+   `forage/full_run.py:645` uses that identity. The compatibility check at
+   `forage/production_state.py:73` verifies immutable publication content and
+   exact current plan/draft bytes rather than rewriting earlier IDs.
+   `tests/test_full_run_review.py:187` covers current, edited and corrupt
+   publication cases for both identity formats.
+3. **Resolved P2: verified deletions support revision decisions and restoration.**
+   `forage/review_anchors.py:106` validates removed targets against their final
+   chapter hash. Shared consumers are `forage/webapp/store.py:1200`,
+   `forage/review_sync.py:164` and `forage/review_apply.py:422`.
+   `tests/test_revision_review.py:143` exercises accept/reopen/reject and
+   feedback restoration; `:169` proves later chapter changes still reject
+   stale requests and decisions.
+4. **Resolved P2: stale pipeline pages return a controlled conflict.**
+   `forage/webapp/app.py:587` checks the selected publication's visible items
+   before indexing. `tests/test_pipeline_review.py:166` replaces a package,
+   verifies HTTP 409 and unchanged stored history, and checks the historical
+   edition still exposes its original decisions.
+
+### Verification
+
+- `.venv/bin/python -m pytest -q --tb=short` — **789 passed, 8 skipped**.
+- `DOCKER_HOST=unix:///run/user/1000/docker.sock FORAGE_DOCKER_TESTS=1 ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test .venv/bin/python -m pytest -q tests/test_container.py --tb=short`
+  — **8 passed**, including real image startup, HTTP/storage persistence,
+  non-root operation, artifact permissions and installed web dependencies.
+- After adding incomplete-draft preflight cases and preserving the standard
+  runner's segment-ID syntax in the shared identity helper:
+  `ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test .venv/bin/python -m pytest -q tests/test_full_run_review.py tests/test_review_sync.py tests/test_production_runner.py tests/test_production_state.py --tb=short`
+  — **182 passed**. Counts overlap; four cases were added after the full suite.
+  The full change adds 33 cases. Existing TestClient timeout deprecations are
+  warnings, not failed checks.
+- Read-only `load_book(..., workspace=Path('work/_full_runs/2026-10-20-opus55'),
+  create=False)`, `validate_refresh_inputs(book)` and `plan_production(book)`
+  succeed for education and secret_adversary. Plan/result/pointer inventories
+  are unchanged and neither workspace gains `production_state.json`.
+- `git diff --check` passes. New lifecycle tests forbid preparation/drafting
+  and direct SDK calls, replacing only model transport for downstream work.
+
+### Completeness
+
+- Truthful state: **exposed locally**, not release-verified.
+- Acceptance criteria: all four audit corrections addressed, including older
+  deployed snapshot compatibility, retry and stale-state error paths.
+- Completion matrix: producer → publish → feedback → apply → refresh →
+  republish → decision/resume is proven with simulated provider responses;
+  original snapshot bytes and independent release pointers remain intact.
+- Architecture: common downstream production and review decision stores remain
+  authoritative. No new workflow engine, legacy-adoption override, or fabricated
+  drafting provenance was introduced.
+- Placeholder audit: clean; unsupported automatic full-run repair fails
+  explicitly before apply, while requested feedback uses the existing path.
+- Deferred correction items: none. Deployment and paid editorial generation
+  are outside this local bug-fix validation, not claimed as completed.
+
+### Structural Assessment and Forward Impact
+
+- Ownership and semantic families are unified: text identity is shared;
+  original full-run verification lives in one adapter; hosted and local
+  consumers share deletion freshness; common production owns downstream
+  regeneration, retry and snapshot creation.
+- Original planning/fidelity work remains distinct from current accepted-text
+  measurements. Source or plan changes require a new full run; the refresh
+  adapter never silently reclassifies, replans or repairs accepted prose.
+- Existing generations, immutable snapshot IDs, editorial decisions, failure
+  recovery and publication permissions remain intact. No dependencies added.
+- Scope is limited to the four fixes, their preflight contract, regression
+  coverage and related operator/architecture documentation. No unrelated
+  formatting or existing generated-data changes were introduced.
+- No further local remediation identified. Live v21 retains the previous code
+  until a subsequent deployment; paid editorial quality is not certified by
+  these offline tests.
+
+# Audit-fix deployment verification
+
+## 2026-10-20 (2026-10-21 UTC)
+
+The user subsequently requested deployment. Fly release v22 is healthy and
+verified on the existing machine and volume. The prior correction audit remains
+the functional/structural proof; this section records release verification of
+the application, without claiming a paid editorial generation run.
+
+- Repackaged the existing five-book image payload, then ran
+  `DOCKER_HOST=unix:///run/user/1000/docker.sock FORAGE_DOCKER_TESTS=1 ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test .venv/bin/python -m pytest -q tests/test_container.py --tb=short`:
+  **8 passed** on the final image.
+- Backed up SQLite, verified its integrity remotely and locally, and created
+  volume snapshot `vs_vzAZpzYgLG7h3Bmjwl20q4Q`. Existing application tables contain
+  460 comments; no original records or decisions were altered.
+- Deployed image index
+  `sha256:c139be967d8d5e89612876f96ce7540da1dcbf7233f2400f2d72fdda58e35a76`
+  through `deploy --app forage-review --image IMAGE --ha=false --update-only
+  --strategy rolling --yes --wait-timeout 5m`. Fly confirms v22, one started
+  machine, passing HTTP health, and valid DNS. Secrets, environment and volume
+  identity are unchanged.
+- All 64 deployed source-file hashes equal the local tested code. All 676
+  stored artifact hashes and all application database table rows equal the
+  backup. Public before/after JSON and download hashes match for five books,
+  115 chapters, 460 notes, review/release pointers and decision histories.
+- Signed-in browser checks cover both Christie must-fix finding cards, Adams
+  repair controls, evidence and request dialogs with no JavaScript errors.
+  A malformed authenticated decision returns HTTP 400 before mutation. The
+  deployed binding helper accepts a verified deletion and rejects a changed
+  chapter. Local integration tests cover full decision mutations and stale
+  package conflicts; no live reviewer decision was submitted.
+- Temporary registry credentials and browser cookies were deleted. No paid
+  model calls, Git commit or push. The external pipeline remains operator-run.
+- Evidence and reproducible scripts are under
+  `/mnt/data/tmp/forage-audit-deploy-20261021/`; the compact result is
+  `verification.json`. STATUS.md and LOG.md record v22 and rollback/backup
+  identities. Deployment scope is **release-verified** with no new findings.
+
+# Chapter-first review layout audit
+
+## 2026-10-21
+
+### Verdict
+
+Functional, structural and forward-impact checks pass for the user-approved
+layout change. The reviewer now reaches chapter prose before automated reports,
+with compact Suggested issues and optional Review history. All decision behavior
+and evidence remain available through the existing data/API contracts. Fly v23
+is **release-verified**. No new findings or deferred acceptance criteria.
+
+### Acceptance and evidence
+
+- **Chapter text first:** `forage/webapp/static/app.js:452` adds header jump
+  controls; `:472` places prose immediately after the chapter header. Book/chapter
+  notes remain reachable, paragraph marginalia remain attached, and the chapter
+  comment composer retains keyboard focus after relocation.
+- **Compact Suggested issues:** `forage/webapp/static/app.js:486` derives the
+  outstanding list from existing item kind, revision state and freshness.
+  `:525` renders collapsed cards with plain priority labels, source comparison,
+  the actual revision response and shared decision controls. Suggestions are
+  explicitly presented as automated possibilities for reviewer judgment.
+- **Optional history:** the same section owner groups completed repairs,
+  dismissed/outdated suggestions, detailed critic records and draft diagnostics
+  under a collapsed panel. All original evidence, before/after patches, reasons
+  and decisions remain available. No publication or stored note is rewritten.
+- **Decision continuity:** `forage/webapp/static/app.js:767` reveals a moved
+  suggestion and retains focus after dismiss/reopen. Existing shared revision
+  rendering and API calls own requests, acceptance and decision history.
+  Same-chapter disclosure persists; navigation resets the history panel.
+- **Reader-facing citations and mobile:** `forage/webapp/static/app.js:476`
+  labels source/earlier-draft/reviewed-draft citations; CSS at
+  `forage/webapp/static/app.css:12` and `:299` supplies section scroll offsets,
+  history spacing and wrapping actions. Desktop and 390px layouts were inspected.
+
+### Verification
+
+- `node --check forage/webapp/static/app.js` and `git diff --check` pass.
+- `ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test .venv/bin/python -m pytest -q tests/test_pipeline_review.py tests/test_revision_review.py tests/test_deploy_config.py --tb=short`
+  — **41 passed**; existing TestClient deprecation warnings only.
+- `node /mnt/data/tmp/forage-review-layout-20261021/check-browser.cjs` — isolated
+  browser passed chapter order, collapsed state, jump/focus behavior, source
+  evidence, dismiss/reopen/request, accept/reopen/reject, required feedback,
+  reload persistence, feedback export, chapter commenting and public/mobile
+  access, with no JavaScript errors. Preview data was isolated from live data.
+- `DOCKER_HOST=unix:///run/user/1000/docker.sock FORAGE_DOCKER_TESTS=1 ANTHROPIC_API_KEY=offline-test OPENAI_API_KEY=offline-test ELEVENLABS_API_KEY=offline-test .venv/bin/python -m pytest -q tests/test_container.py --tb=short`
+  — **8 passed** on the final image.
+- Release v23 uses image index
+  `sha256:407bee1c6913de663e8d1b8468293d1101befc7d4c8a290b1b24b4f86e848d17`.
+  Live health/smoke/DNS checks pass. Public before/after captures are equal for
+  five books, 115 chapters, 460 comments, all downloads and channel pointers.
+  All 64 source hashes match locally, 676 stored artifact hashes match the
+  backup, and SQLite integrity plus all application table rows are unchanged.
+  Authenticated read-only desktop/mobile browser checks pass; no live decisions
+  were submitted. Machine, volume, environment and secret digests are unchanged.
+- Fresh SQLite backup and volume snapshot `vs_25RDp5Yq2X7HbRAPkA9JJ06` exist.
+  The first image upload timed out; retry succeeded before deployment. Temporary
+  registry/browser credentials were removed. No paid generation or Git mutation.
+- Durable evidence and scripts:
+  `/mnt/data/tmp/forage-review-layout-20261021/verification.json` and neighboring
+  files, including preview/live screenshots and browser verification logs.
+
+### Structural assessment and forward impact
+
+Presentation changes stay in the existing chapter renderer and stylesheet;
+section grouping and card rendering have separate owners. Shared revision
+controls retain the existing semantics and no second decision store, queue,
+status schema, dependency or generation mechanism is introduced. Evidence is
+preserved rather than regenerated or reinterpreted. Scope is the approved
+reviewer layout and its operator/architecture documentation. Placeholder and
+error-path inspection is clean; stale responses remain non-actionable. No
+further remediation identified.
+
+
+# Account Authentication Migration Audit
+
+## 2026-10-21
+
+### Verdict
+
+Pass: functional, structural and forward-impact review. Username/password
+accounts, administrator creation/removal, immediate revocation and removal of
+the old shared-token path are implemented and release-verified on Fly v25.
+No blocking findings remain. Review content and publication history are intact.
+
+### Findings and evidence
+
+1. Account identity and access control are authoritative in persistent storage.
+   - `forage/webapp/accounts.py:47`: salted scrypt uses the documented 32 MiB
+     profile, with bounded concurrent hashing and constant-time comparison.
+   - `forage/webapp/accounts.py:137`: unique normalized usernames, bounded
+     fields, role validation and admin-actor recheck in the write transaction.
+   - `forage/webapp/accounts.py:167`: last-admin/self-removal protections and
+     session cascade deletion. Review tables have no deletion cascade to users.
+   - `forage/webapp/accounts.py:189`: authentication rechecks the original
+     password hash before issuing a session, preventing deletion/reset races.
+   - `forage/webapp/accounts.py:207`: every session lookup joins the live user;
+     logout and password changes revoke database sessions.
+   - Commands: `.venv/bin/python -m pytest -q tests/test_accounts.py`
+     (26 passed); full suite includes these cases.
+2. User-facing and publishing interfaces both use the new account path.
+   - `forage/webapp/app.py:284`: admin-only list/create/remove routes.
+   - `forage/webapp/app.py:311`: current-password verification and session
+     rotation for password changes, with attempt limiting.
+   - `forage/webapp/static/app.js:211`: account/password/sign-out dialog.
+   - `forage/webapp/static/app.js:245`: admin Users UI, creation, explicit
+     removal confirmation, self-removal disabled, errors and mobile behavior.
+   - `forage/review_transport.py:86`, `forage/cli.py:1843`: publishing signs in
+     with username/password; no token fallback or credential manifest fields.
+   - Commands: `node /mnt/data/tmp/forage-accounts-20261021/check-browser.cjs`,
+     `.venv/bin/python scripts/check_review_app.py --book gatsby --shots
+     /mnt/data/tmp/forage-accounts-20261021/smoke-shots`.
+     Both pass; the smoke script skipped its default Chrome lookup, while the
+     dedicated browser test used installed Chromium and exercised all account
+     actions. Node syntax and `git diff --check` pass.
+3. Bootstrap, migration and deployment preserve existing data.
+   - `forage/webapp/accounts.py:123`: only an empty account store is bootstrapped;
+     restarts cannot overwrite a changed password. Production requires explicit
+     initialization when empty. Old signed cookies fail the new session format.
+   - Command: `.venv/bin/python -m pytest -q` — 797 passed, 8 Docker skipped.
+   - Command: `DOCKER_HOST=unix:///run/user/1000/docker.sock FORAGE_DOCKER_TESTS=1
+     .venv/bin/python -m pytest -q tests/test_container.py` — all 9 passed,
+     including password/session persistence after removing bootstrap credentials.
+   - Live v25: all 65 source hashes match the tested image; all 780 artifact
+     files, 454 review records, five books, 115 chapter responses, downloads and
+     publication pointers match the pre-deploy capture. SQLite integrity passes.
+   - Live valid legacy signed cookie and shared token are rejected. Admin and
+     dedicated publishing accounts authenticate after all legacy/bootstrap
+     secrets are removed. Desktop/mobile live browser checks pass.
+   - Evidence: `/mnt/data/tmp/forage-accounts-20261021/verification.json`,
+     `live-auth.json`, `verify-remote.log`, `live-browser.log`, `public-after.json`.
+
+### Completeness
+
+- Truthful state: release-verified, Fly v25.
+- Acceptance criteria: all addressed — password login, administrator create and
+  remove users, and replacement of the token system.
+- Completion matrix: admin/reviewer/public permissions, invalid credentials and
+  fields, duplicates, concurrent bootstrap, revocation, expiration, epoch change,
+  logout, password changes, persistence, publishing and migration are covered.
+- Approach and done-when conditions: complete. No deferred required items.
+- Architectural intent: AccountStore owns accounts/sessions beside the review
+  store; the website remains provider-free. Existing review ownership is intact.
+- Placeholder audit: clean; no legacy authentication fallback or hidden bypass.
+
+### Structural Assessment
+
+- Architecture and abstraction: clean. Password/session operations are owned by
+  one store; API authorization, browser flows and publisher share that path.
+- Semantic families: account changes and session invalidation remain unified.
+- Integrity: transactions protect account mutation and identity races; public
+  account payloads never include hashes. Existing review attribution survives
+  deletion. No test-only branches or generated production credentials in code.
+- Scope: requested account workflow, required publisher migration, tests,
+  documentation and deployment. No prose generation or review decisions.
+
+### Forward Impact
+
+Clean for the existing single-machine deployment. Accounts and sessions persist
+on the same SQLite volume as reviews. The separate publishing account lets the
+owner change a personal password without interrupting automation. Scaling across
+machines still requires shared storage, as before. Rollback to v23 requires
+restoring its retired secrets from the private operation backup; the additive
+account tables do not require reverting review data. No small fix remains.

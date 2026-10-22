@@ -1,0 +1,87 @@
+WHITTINGTON and his companion were walking at a good pace. Tommy started in pursuit at once.
+
+The sport was a new one to him. He knew the technicalities only from a course of novel reading. Supposing, for instance, that they should suddenly hail a taxi? In books, you simply leapt into another, promised the driver a sovereign--or its modern equivalent--and there you were. In actual fact, Tommy foresaw that there would very likely be no second taxi.
+
+At this juncture in his thoughts a taxi with flag erect turned the corner of the street ahead. Tommy held his breath. Would they hail it?
+
+He drew a sigh of relief as they allowed it to pass unchallenged. Their zigzag course brought them to Oxford Street.
+
+Just before the Bond Street Tube station they crossed the road and entered the big Lyons'. Tommy took the next table, directly behind Whittington, with a full view of the second man. He was fair, with a weak, unpleasant face, and Tommy put him down as being either a Russian or a Pole. He was probably about fifty years of age, and his eyes, small and crafty, shifted unceasingly.
+
+Whittington ordered lunch and began to talk earnestly in a low voice. The gist seemed to be orders which the big man was impressing on his companion, and with which the latter from time to time disagreed. Whittington addressed the other as Boris.
+
+Tommy caught the word "Ireland" several times, also "propaganda," but of Jane Finn there was no mention. Suddenly, in a lull in the clatter of the room, he got one phrase entire. Whittington was speaking. "Ah, but you don't know Flossie. She's a marvel. An archbishop would swear she was his own mother. She gets the voice right every time, and that's really the principal thing."
+
+Tommy did not hear Boris's reply, but in response to it Whittington said something that sounded like: "Of course--only in an emergency...."
+
+Presently two words, uttered by Boris, had a most stimulating effect upon the listener: "Mr. Brown."
+
+Whittington seemed to remonstrate with him, but he merely laughed.
+
+"Why not, my friend? It is a name most respectable--most common. Did he not choose it for that reason? Ah, I should like to meet him--Mr. Brown."
+
+There was a steely ring in Whittington's voice as he replied:
+
+"Who knows? You may have met him already."
+
+"Bah!" retorted the other. "Do you know what I say to myself sometimes? That he is a fable invented by the Inner Ring, a bogy to frighten us with. It might be so."
+
+"And it might not," said Whittington.
+
+"I wonder," Boris went on, "... or is it indeed true that he is with us and amongst us, unknown to all but a chosen few? We look at each other-- _one of us is Mr. Brown_--which? He commands--but also he serves. And no one knows which he is...."
+
+With an effort the Russian shook off the vagary of his fancy. He looked at his watch.
+
+"Yes," said Whittington. "We might as well go."
+
+Tommy paid his bill likewise and followed them down the stairs. Outside, Whittington hailed a taxi, and another was drawing up to the curb in obedience to Tommy's peremptory hand.
+
+At Waterloo Tommy was behind Whittington at the booking-office. Whittington took a first-class single ticket to Bournemouth, and Tommy did the same. Boris remarked, glancing up at the clock: "You are early. You have nearly half an hour."
+
+Clearly Whittington was making the journey alone, while the other remained in London. Obviously, Tommy could not follow both of them unless---- The Bournemouth train left at 3.30. He hurried into a telephone box. He dared not waste time trying to get hold of Tuppence; in all probability she was still in the neighbourhood of South Audley Mansions. He rang up the _Ritz_ and asked for Julius Hersheimmer. "Hello" came over the wire in unmistakable accents.
+
+"That you, Hersheimmer? Beresford speaking. I'm at Waterloo. I've followed Whittington and another man here. Whittington's off to Bournemouth by the 3.30. Can you get there by then?"
+
+"Sure. I'll hustle," Julius replied.
+
+Tommy fingered his pocket thoughtfully. The first-class ticket had left him with only a few shillings. It was to be hoped that Julius would arrive better provided.
+
+The minutes were creeping by: 3.15.... 3.29.... Doors were banging. Tommy felt cold waves of despair pass over him. Then a hand fell on his shoulder.
+
+"Here I am, son. Your British traffic beats description! Put me wise to the crooks right away."
+
+"That's Whittington--there, getting in now, that big dark man," said Tommy. "The other is the foreign chap he's talking to."
+
+"I'm on to them. Which of the two is my bird?"
+
+"Got any money with you?" Tommy asked.
+
+Julius shook his head, and Tommy's face fell.
+
+"I guess I haven't more than three or four hundred dollars with me at the moment," explained the American.
+
+Tommy gave a faint whoop of relief.
+
+"Oh, Lord, you millionaires! You don't talk the same language! Climb aboard the lugger. Here's your ticket. Whittington's your man."
+
+"Me for Whittington!" said Julius darkly. The train was just starting as he swung himself aboard, and it slid out of the station.
+
+Boris was coming along the platform towards him. Tommy allowed him to pass and then took up the chase once more.
+
+From Waterloo Boris took the tube as far as Piccadilly Circus. Then he walked up Shaftesbury Avenue, finally turning off into the maze of mean streets round Soho.
+
+They reached at length a small dilapidated square, an almost deserted cul-de-sac. Tommy watched Boris go up the steps of a particularly evil-looking house and rap sharply, with a peculiar rhythm, on the door. It was opened promptly, he said a word or two to the doorkeeper, then passed inside. The door was shut to again.
+
+It was at this juncture that Tommy lost his head. What he did was entirely foreign to the sober common sense which was, as a rule, his leading characteristic. Without a moment's pause for reflection he, too, went up the steps, and reproduced as far as he was able the peculiar knock.
+
+The door swung open with the same promptness as before. A villainous-faced man with close-cropped hair stood in the doorway.
+
+"Well?" he grunted.
+
+It was at that moment that the full realization of his folly began to come home to Tommy. He seized at the first words that came into his mind.
+
+"Mr. Brown?" he said.
+
+To his surprise the man stood aside.
+
+"Upstairs," he said, jerking his thumb over his shoulder, "second door on your left."

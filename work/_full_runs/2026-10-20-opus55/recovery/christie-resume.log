@@ -1,0 +1,391 @@
+{"at": "2026-10-20T19:51:34.890085+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["029"]}
+{"at": "2026-10-20T19:51:38.321978+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["001", "002", "003", "004"]}
+{"at": "2026-10-20T19:51:38.627278+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["021", "022", "023", "024"]}
+{"at": "2026-10-20T19:51:38.698313+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["005", "006", "007", "008"]}
+{"at": "2026-10-20T19:51:38.912405+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["009", "010", "011", "012"]}
+{"at": "2026-10-20T19:51:38.932793+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["017", "018", "019", "020"]}
+{"at": "2026-10-20T19:51:38.935310+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["025", "026", "027", "028"]}
+{"at": "2026-10-20T19:51:38.935446+00:00", "event": "plans_ready", "book": "secret_adversary", "chapters": ["013", "014", "015", "016"]}
+{"at": "2026-10-20T19:51:39.153407+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:003", "input_tokens": 10113}
+{"at": "2026-10-20T19:51:39.166948+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:002", "input_tokens": 11089}
+{"at": "2026-10-20T19:51:39.203083+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:001", "input_tokens": 4572}
+{"at": "2026-10-20T19:51:39.242485+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:005", "input_tokens": 11650}
+{"at": "2026-10-20T19:51:39.255604+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:006", "input_tokens": 8709}
+{"at": "2026-10-20T19:51:39.271841+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:007", "input_tokens": 9293}
+{"at": "2026-10-20T19:51:39.284750+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:008", "input_tokens": 8282}
+{"at": "2026-10-20T19:51:39.297110+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:004", "input_tokens": 8289}
+{"at": "2026-10-20T19:52:06.859472+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:001", "cost_usd": 0.08541, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:07.061905+00:00", "event": "call_start", "stage": "target_revision:revision:001:secret_adversary", "input_tokens": 5730}
+{"at": "2026-10-20T19:52:11.801601+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:007", "cost_usd": 0.12417, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:12.003122+00:00", "event": "call_start", "stage": "target_revision:revision:007:secret_adversary", "input_tokens": 13959}
+{"at": "2026-10-20T19:52:22.113914+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:006", "cost_usd": 0.15302, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:22.270711+00:00", "event": "call_start", "stage": "target_revision:revision:006:secret_adversary", "input_tokens": 13662}
+{"at": "2026-10-20T19:52:23.742755+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:005", "cost_usd": 0.16702, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:23.914197+00:00", "event": "call_start", "stage": "target_revision:revision:005:secret_adversary", "input_tokens": 17917}
+{"at": "2026-10-20T19:52:23.946605+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:002", "cost_usd": 0.16644, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:24.193601+00:00", "event": "call_start", "stage": "target_revision:revision:002:secret_adversary", "input_tokens": 17484}
+{"at": "2026-10-20T19:52:25.644876+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:004", "cost_usd": 0.1517, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:25.834349+00:00", "event": "call_start", "stage": "target_revision:revision:004:secret_adversary", "input_tokens": 12574}
+{"at": "2026-10-20T19:52:30.432997+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:003", "cost_usd": 0.17965, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:30.643809+00:00", "event": "call_start", "stage": "target_revision:revision:003:secret_adversary", "input_tokens": 16434}
+{"at": "2026-10-20T19:52:32.503561+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:008", "cost_usd": 0.17679, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:52:32.678904+00:00", "event": "call_start", "stage": "target_revision:revision:008:secret_adversary", "input_tokens": 12259}
+{"at": "2026-10-20T19:53:06.175171+00:00", "event": "call_end", "stage": "target_revision:revision:001:secret_adversary", "cost_usd": 0.15684, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:53:06.185012+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "001", "initial": 378, "revised": 253, "target": 300}
+{"at": "2026-10-20T19:53:06.396621+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:009", "input_tokens": 10925}
+{"at": "2026-10-20T19:53:23.291007+00:00", "event": "call_end", "stage": "target_revision:revision:007:secret_adversary", "cost_usd": 0.22698, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:53:23.306621+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "007", "initial": 1290, "revised": 1102, "target": 1100}
+{"at": "2026-10-20T19:53:23.451302+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:010", "input_tokens": 10959}
+{"at": "2026-10-20T19:53:42.686016+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:009", "cost_usd": 0.1418, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:53:42.883633+00:00", "event": "call_start", "stage": "target_revision:revision:009:secret_adversary", "input_tokens": 17076}
+{"at": "2026-10-20T19:53:59.183031+00:00", "event": "call_end", "stage": "target_revision:revision:008:secret_adversary", "cost_usd": 0.25256, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:53:59.195202+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "008", "initial": 1338, "revised": 1105, "target": 1100}
+{"at": "2026-10-20T19:53:59.356349+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:011", "input_tokens": 8994}
+{"at": "2026-10-20T19:54:16.389903+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:010", "cost_usd": 0.17904, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:54:16.609532+00:00", "event": "call_start", "stage": "target_revision:revision:010:secret_adversary", "input_tokens": 17056}
+{"at": "2026-10-20T19:54:47.099933+00:00", "event": "call_end", "stage": "target_revision:revision:004:secret_adversary", "cost_usd": 0.37752, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:54:47.114216+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "004", "initial": 1205, "revised": 918, "target": 900}
+{"at": "2026-10-20T19:54:47.291498+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:012", "input_tokens": 11612}
+{"at": "2026-10-20T19:54:50.870764+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:011", "cost_usd": 0.1781, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:54:51.087908+00:00", "event": "call_start", "stage": "target_revision:revision:011:secret_adversary", "input_tokens": 14565}
+{"at": "2026-10-20T19:54:59.179191+00:00", "event": "call_end", "stage": "target_revision:revision:002:secret_adversary", "cost_usd": 0.43, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:54:59.196928+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "002", "initial": 1726, "revised": 1409, "target": 1400}
+{"at": "2026-10-20T19:54:59.359159+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:013", "input_tokens": 17871}
+{"at": "2026-10-20T19:55:10.376766+00:00", "event": "call_end", "stage": "target_revision:revision:005:secret_adversary", "cost_usd": 0.47575, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:55:10.395061+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "005", "initial": 1851, "revised": 1513, "target": 1500}
+{"at": "2026-10-20T19:55:10.561846+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:014", "input_tokens": 11679}
+{"at": "2026-10-20T19:55:38.266882+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:012", "cost_usd": 0.18467, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:55:38.493360+00:00", "event": "call_start", "stage": "target_revision:revision:012:secret_adversary", "input_tokens": 18133}
+{"at": "2026-10-20T19:55:41.771243+00:00", "event": "call_end", "stage": "target_revision:revision:003:secret_adversary", "cost_usd": 0.50638, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:55:41.788037+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "003", "initial": 1821, "revised": 1312, "target": 1300}
+{"at": "2026-10-20T19:55:41.909649+00:00", "event": "call_end", "stage": "target_revision:revision:006:secret_adversary", "cost_usd": 0.52081, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:55:41.921198+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "006", "initial": 1418, "revised": 1019, "target": 1000}
+{"at": "2026-10-20T19:55:41.941778+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:015", "input_tokens": 8346}
+{"at": "2026-10-20T19:55:42.073422+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:016", "input_tokens": 9051}
+{"at": "2026-10-20T19:56:01.015908+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:013", "cost_usd": 0.24624, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:01.265344+00:00", "event": "call_start", "stage": "target_revision:revision:013:secret_adversary", "input_tokens": 29270}
+{"at": "2026-10-20T19:56:05.308865+00:00", "event": "call_end", "stage": "target_revision:revision:010:secret_adversary", "cost_usd": 0.33126, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:05.472448+00:00", "event": "call_start", "stage": "target_revision:revision:010:secret_adversary:output_recovery", "input_tokens": 17120}
+{"at": "2026-10-20T19:56:14.596434+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:016", "cost_usd": 0.12482, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:14.797582+00:00", "event": "call_start", "stage": "target_revision:revision:016:secret_adversary", "input_tokens": 14389}
+{"at": "2026-10-20T19:56:15.395470+00:00", "event": "call_end", "stage": "target_revision:revision:009:secret_adversary", "cost_usd": 0.43488, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:15.415100+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "009", "initial": 1997, "revised": 1600, "target": 1600}
+{"at": "2026-10-20T19:56:15.566899+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:017", "input_tokens": 10611}
+{"at": "2026-10-20T19:56:16.092433+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:014", "cost_usd": 0.23636, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:16.125818+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:015", "cost_usd": 0.12864, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:56:16.365458+00:00", "event": "call_start", "stage": "target_revision:revision:015:secret_adversary", "input_tokens": 14002}
+{"at": "2026-10-20T19:56:16.424817+00:00", "event": "call_start", "stage": "target_revision:revision:014:secret_adversary", "input_tokens": 18803}
+{"at": "2026-10-20T19:57:02.414499+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:017", "cost_usd": 0.17244, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:57:02.656848+00:00", "event": "call_start", "stage": "target_revision:revision:017:secret_adversary", "input_tokens": 17648}
+{"at": "2026-10-20T19:57:58.979830+00:00", "event": "call_end", "stage": "target_revision:revision:010:secret_adversary:output_recovery", "cost_usd": 0.34352, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:57:59.001930+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "010", "initial": 1940, "revised": 1513, "target": 1500}
+{"at": "2026-10-20T19:57:59.156507+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:018", "input_tokens": 16038}
+{"at": "2026-10-20T19:58:03.398721+00:00", "event": "call_end", "stage": "target_revision:revision:012:secret_adversary", "cost_usd": 0.42009, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:58:03.419606+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "012", "initial": 2270, "revised": 1832, "target": 1800}
+{"at": "2026-10-20T19:58:03.596851+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:019", "input_tokens": 14727}
+{"at": "2026-10-20T19:58:25.107807+00:00", "event": "call_end", "stage": "target_revision:revision:016:secret_adversary", "cost_usd": 0.35498, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:58:25.121247+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "016", "initial": 1471, "revised": 1148, "target": 1100}
+{"at": "2026-10-20T19:58:25.260106+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:020", "input_tokens": 12190}
+{"at": "2026-10-20T19:58:37.351464+00:00", "event": "call_end", "stage": "target_revision:revision:011:secret_adversary", "cost_usd": 0.57724, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:58:37.367765+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "011", "initial": 1663, "revised": 1110, "target": 1100}
+{"at": "2026-10-20T19:58:37.545429+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:021", "input_tokens": 8330}
+{"at": "2026-10-20T19:58:56.338872+00:00", "event": "call_end", "stage": "target_revision:revision:015:secret_adversary", "cost_usd": 0.41795, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:58:56.354862+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "015", "initial": 1571, "revised": 1089, "target": 1100}
+{"at": "2026-10-20T19:58:56.525707+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:022", "input_tokens": 8158}
+{"at": "2026-10-20T19:58:56.792663+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:019", "cost_usd": 0.20921, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:58:56.972930+00:00", "event": "call_start", "stage": "target_revision:revision:019:secret_adversary", "input_tokens": 24910}
+{"at": "2026-10-20T19:59:07.355577+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:018", "cost_usd": 0.25771, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:59:07.597747+00:00", "event": "call_start", "stage": "target_revision:revision:018:secret_adversary", "input_tokens": 27983}
+{"at": "2026-10-20T19:59:11.407408+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:020", "cost_usd": 0.17856, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:59:11.595025+00:00", "event": "call_start", "stage": "target_revision:revision:020:secret_adversary", "input_tokens": 18927}
+{"at": "2026-10-20T19:59:30.264730+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:021", "cost_usd": 0.16724, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:59:30.457554+00:00", "event": "call_start", "stage": "target_revision:revision:021:secret_adversary", "input_tokens": 12874}
+{"at": "2026-10-20T19:59:33.475260+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:022", "cost_usd": 0.13173, "stop_reason": "end_turn"}
+{"at": "2026-10-20T19:59:33.730798+00:00", "event": "call_start", "stage": "target_revision:revision:022:secret_adversary", "input_tokens": 12360}
+{"at": "2026-10-20T20:00:11.853311+00:00", "event": "call_end", "stage": "target_revision:revision:014:secret_adversary", "cost_usd": 0.62049, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:00:11.871700+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "014", "initial": 2031, "revised": 1533, "target": 1500}
+{"at": "2026-10-20T20:00:12.104338+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:023", "input_tokens": 7838}
+{"at": "2026-10-20T20:00:23.219189+00:00", "event": "call_end", "stage": "target_revision:revision:017:secret_adversary", "cost_usd": 0.53305, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:00:23.237488+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "017", "initial": 1996, "revised": 1428, "target": 1400}
+{"at": "2026-10-20T20:00:23.404457+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:024", "input_tokens": 8594}
+{"at": "2026-10-20T20:00:39.684923+00:00", "event": "call_end", "stage": "target_revision:revision:013:secret_adversary", "cost_usd": 0.75708, "stop_reason": "max_tokens"}
+{"at": "2026-10-20T20:00:39.878418+00:00", "event": "call_start", "stage": "target_revision:revision:013:secret_adversary:output_recovery", "input_tokens": 29350}
+{"at": "2026-10-20T20:00:48.982371+00:00", "event": "call_end", "stage": "target_revision:revision:022:secret_adversary", "cost_usd": 0.22436, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:00:48.996378+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "022", "initial": 1201, "revised": 899, "target": 900}
+{"at": "2026-10-20T20:00:49.284066+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:025", "input_tokens": 12094}
+{"at": "2026-10-20T20:00:54.260594+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:023", "cost_usd": 0.14477, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:00:54.442556+00:00", "event": "call_start", "stage": "target_revision:revision:023:secret_adversary", "input_tokens": 11548}
+{"at": "2026-10-20T20:01:05.142693+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:024", "cost_usd": 0.14832, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:01:05.387791+00:00", "event": "call_start", "stage": "target_revision:revision:024:secret_adversary", "input_tokens": 13228}
+{"at": "2026-10-20T20:01:31.529237+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:025", "cost_usd": 0.16044, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:01:31.816144+00:00", "event": "call_start", "stage": "target_revision:revision:025:secret_adversary", "input_tokens": 19615}
+{"at": "2026-10-20T20:02:07.731020+00:00", "event": "call_end", "stage": "target_revision:revision:021:secret_adversary", "cost_usd": 0.41768, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:07.745237+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "021", "initial": 1320, "revised": 1002, "target": 1000}
+{"at": "2026-10-20T20:02:07.912498+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:026", "input_tokens": 14889}
+{"at": "2026-10-20T20:02:08.326971+00:00", "event": "call_end", "stage": "target_revision:revision:020:secret_adversary", "cost_usd": 0.48023, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:08.346182+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "020", "initial": 2200, "revised": 1710, "target": 1700}
+{"at": "2026-10-20T20:02:08.542353+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:027", "input_tokens": 8076}
+{"at": "2026-10-20T20:02:18.005459+00:00", "event": "call_end", "stage": "target_revision:revision:019:secret_adversary", "cost_usd": 0.57028, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:18.029442+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "019", "initial": 2796, "revised": 2219, "target": 2200}
+{"at": "2026-10-20T20:02:18.189672+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:028", "input_tokens": 11779}
+{"at": "2026-10-20T20:02:25.857509+00:00", "event": "call_end", "stage": "target_revision:revision:023:secret_adversary", "cost_usd": 0.25089, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:25.869871+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "023", "initial": 1082, "revised": 909, "target": 900}
+{"at": "2026-10-20T20:02:26.025780+00:00", "event": "call_start", "stage": "target_revision:initial:secret_adversary:029", "input_tokens": 7421}
+{"at": "2026-10-20T20:02:48.676491+00:00", "event": "call_end", "stage": "target_revision:revision:025:secret_adversary", "cost_usd": 0.26662, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:48.695020+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "025", "initial": 1939, "revised": 1698, "target": 1700}
+{"at": "2026-10-20T20:02:54.396051+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:027", "cost_usd": 0.16122, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:02:54.624290+00:00", "event": "call_start", "stage": "target_revision:revision:027:secret_adversary", "input_tokens": 12511}
+{"at": "2026-10-20T20:03:00.779917+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:029", "cost_usd": 0.1224, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:03:00.988084+00:00", "event": "call_start", "stage": "target_revision:revision:029:secret_adversary", "input_tokens": 10699}
+{"at": "2026-10-20T20:03:05.655990+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:026", "cost_usd": 0.21924, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:03:05.864402+00:00", "event": "call_start", "stage": "target_revision:revision:026:secret_adversary", "input_tokens": 24007}
+{"at": "2026-10-20T20:03:25.322070+00:00", "event": "call_end", "stage": "target_revision:revision:013:secret_adversary:output_recovery", "cost_usd": 0.52604, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:03:25.352427+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "013", "initial": 3457, "revised": 2799, "target": 2800}
+{"at": "2026-10-20T20:03:41.643776+00:00", "event": "call_end", "stage": "target_revision:initial:secret_adversary:028", "cost_usd": 0.27158, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:03:41.851484+00:00", "event": "call_start", "stage": "target_revision:revision:028:secret_adversary", "input_tokens": 18907}
+{"at": "2026-10-20T20:03:49.584756+00:00", "event": "call_end", "stage": "target_revision:revision:018:secret_adversary", "cost_usd": 0.75193, "stop_reason": "max_tokens"}
+{"at": "2026-10-20T20:03:49.763028+00:00", "event": "call_start", "stage": "target_revision:revision:018:secret_adversary:output_recovery", "input_tokens": 28063}
+{"at": "2026-10-20T20:04:03.105467+00:00", "event": "call_end", "stage": "target_revision:revision:024:secret_adversary", "cost_usd": 0.48163, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:04:03.138784+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "024", "initial": 1466, "revised": 1101, "target": 1100}
+{"at": "2026-10-20T20:05:13.552837+00:00", "event": "call_end", "stage": "target_revision:revision:027:secret_adversary", "cost_usd": 0.37916, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:05:13.572508+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "027", "initial": 1500, "revised": 964, "target": 1000}
+{"at": "2026-10-20T20:05:51.869428+00:00", "event": "call_end", "stage": "target_revision:revision:026:secret_adversary", "cost_usd": 0.49715, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:05:51.991959+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "026", "initial": 3334, "revised": 2616, "target": 2600}
+{"at": "2026-10-20T20:06:02.389479+00:00", "event": "call_end", "stage": "target_revision:revision:029:secret_adversary", "cost_usd": 0.46122, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:06:02.410771+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "029", "initial": 823, "revised": 650, "target": 600}
+{"at": "2026-10-20T20:07:41.258978+00:00", "event": "call_end", "stage": "target_revision:revision:028:secret_adversary", "cost_usd": 0.62567, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:07:41.284696+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "028", "initial": 2455, "revised": 1836, "target": 1800}
+{"at": "2026-10-20T20:07:54.772176+00:00", "event": "call_end", "stage": "target_revision:revision:018:secret_adversary:output_recovery", "cost_usd": 0.68607, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:07:54.805680+00:00", "event": "draft_ready", "book": "secret_adversary", "chapter": "018", "initial": 3809, "revised": 2685, "target": 2600}
+{"at": "2026-10-20T20:07:55.979873+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:008", "input_tokens": 80628}
+{"at": "2026-10-20T20:07:56.003565+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:001", "input_tokens": 64641}
+{"at": "2026-10-20T20:07:56.160724+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:007", "input_tokens": 91074}
+{"at": "2026-10-20T20:07:56.225715+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:002", "input_tokens": 77509}
+{"at": "2026-10-20T20:07:56.248677+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:004", "input_tokens": 49690}
+{"at": "2026-10-20T20:07:56.275054+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:006", "input_tokens": 87138}
+{"at": "2026-10-20T20:07:56.297913+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:003", "input_tokens": 93058}
+{"at": "2026-10-20T20:07:56.320352+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:005", "input_tokens": 64174}
+{"at": "2026-10-20T20:08:47.626902+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:001", "cost_usd": 0.36706, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:08:47.635583+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "001", "pass_name": "initial_review", "must_fix": 1, "should_improve": 1}
+{"at": "2026-10-20T20:08:48.004324+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:009", "input_tokens": 76057}
+{"at": "2026-10-20T20:09:06.451961+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:008", "cost_usd": 0.48623, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:06.460799+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "008", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:09:06.817815+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:010", "input_tokens": 82624}
+{"at": "2026-10-20T20:09:23.720782+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:005", "cost_usd": 0.4447, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:23.728714+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "005", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:09:24.062734+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:011", "input_tokens": 92796}
+{"at": "2026-10-20T20:09:25.185747+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:002", "cost_usd": 0.50198, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:25.194435+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "002", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:09:25.569564+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:012", "input_tokens": 103178}
+{"at": "2026-10-20T20:09:32.612294+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:007", "cost_usd": 0.58208, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:32.621105+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "007", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:09:33.088004+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:013", "input_tokens": 128340}
+{"at": "2026-10-20T20:09:42.334472+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:004", "cost_usd": 0.43468, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:42.342280+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "004", "pass_name": "initial_review", "must_fix": 1, "should_improve": 3}
+{"at": "2026-10-20T20:09:42.686594+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:014", "input_tokens": 98278}
+{"at": "2026-10-20T20:09:42.767837+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:006", "cost_usd": 0.56489, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:42.776909+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "006", "pass_name": "initial_review", "must_fix": 1, "should_improve": 4}
+{"at": "2026-10-20T20:09:42.991125+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:015", "input_tokens": 74449}
+{"at": "2026-10-20T20:09:44.121145+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:003", "cost_usd": 0.61615, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:09:44.128128+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "003", "pass_name": "initial_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:09:44.407077+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:016", "input_tokens": 92077}
+{"at": "2026-10-20T20:10:02.633941+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:009", "cost_usd": 0.46509, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:10:02.642059+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "009", "pass_name": "initial_review", "must_fix": 0, "should_improve": 2}
+{"at": "2026-10-20T20:10:02.918516+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:017", "input_tokens": 103983}
+{"at": "2026-10-20T20:10:37.047667+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:010", "cost_usd": 0.53156, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:10:37.065933+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "010", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:10:37.860671+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:018", "input_tokens": 100379}
+{"at": "2026-10-20T20:11:12.100104+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:011", "cost_usd": 0.6127, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:12.109224+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "011", "pass_name": "initial_review", "must_fix": 1, "should_improve": 4}
+{"at": "2026-10-20T20:11:12.517131+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:019", "input_tokens": 107526}
+{"at": "2026-10-20T20:11:13.227897+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:015", "cost_usd": 0.49246, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:13.236590+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "015", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:11:13.562679+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:020", "input_tokens": 82392}
+{"at": "2026-10-20T20:11:24.418823+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:014", "cost_usd": 0.62209, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:24.434906+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "014", "pass_name": "initial_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:11:24.871684+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:021", "input_tokens": 54356}
+{"at": "2026-10-20T20:11:36.143150+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:012", "cost_usd": 0.70645, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:36.153343+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "012", "pass_name": "initial_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:11:36.429005+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:022", "input_tokens": 66980}
+{"at": "2026-10-20T20:11:39.144203+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:013", "cost_usd": 0.79936, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:39.162864+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "013", "pass_name": "initial_review", "must_fix": 2, "should_improve": 5}
+{"at": "2026-10-20T20:11:39.817701+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:023", "input_tokens": 72833}
+{"at": "2026-10-20T20:11:42.312364+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:016", "cost_usd": 0.63591, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:42.320812+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "016", "pass_name": "initial_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:11:42.613492+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:024", "input_tokens": 61752}
+{"at": "2026-10-20T20:11:51.503084+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:017", "cost_usd": 0.65825, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:11:51.512316+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "017", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:11:51.827101+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:025", "input_tokens": 76327}
+{"at": "2026-10-20T20:12:33.499423+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:018", "cost_usd": 0.65748, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:12:33.508719+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "018", "pass_name": "initial_review", "must_fix": 1, "should_improve": 5}
+{"at": "2026-10-20T20:12:33.873266+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:026", "input_tokens": 114534}
+{"at": "2026-10-20T20:12:54.069299+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:021", "cost_usd": 0.42202, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:12:54.077302+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "021", "pass_name": "initial_review", "must_fix": 1, "should_improve": 4}
+{"at": "2026-10-20T20:12:54.354148+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:027", "input_tokens": 63623}
+{"at": "2026-10-20T20:12:59.005925+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:020", "cost_usd": 0.57077, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:12:59.014499+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "020", "pass_name": "initial_review", "must_fix": 1, "should_improve": 5}
+{"at": "2026-10-20T20:12:59.329489+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:028", "input_tokens": 82228}
+{"at": "2026-10-20T20:13:13.104320+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:022", "cost_usd": 0.49338, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:13:13.112895+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "022", "pass_name": "initial_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:13:13.593410+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:initial_review:029", "input_tokens": 74539}
+{"at": "2026-10-20T20:13:22.348759+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:023", "cost_usd": 0.51215, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:13:22.356953+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "023", "pass_name": "initial_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:13:23.982097+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:024", "cost_usd": 0.47337, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:13:23.989097+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "024", "pass_name": "initial_review", "must_fix": 1, "should_improve": 3}
+{"at": "2026-10-20T20:13:26.220432+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:019", "cost_usd": 0.73956, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:13:26.229743+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "019", "pass_name": "initial_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:13:27.333180+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:025", "cost_usd": 0.51917, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:13:27.341499+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "025", "pass_name": "initial_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:14:29.538177+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:026", "cost_usd": 0.7063, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:14:29.560641+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "026", "pass_name": "initial_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:14:31.339946+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:027", "cost_usd": 0.47397, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:14:31.368362+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "027", "pass_name": "initial_review", "must_fix": 2, "should_improve": 5}
+{"at": "2026-10-20T20:14:31.931632+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:029", "cost_usd": 0.47402, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:14:31.942431+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "029", "pass_name": "initial_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:14:55.662696+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:initial_review:028", "cost_usd": 0.59111, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:14:55.671675+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "028", "pass_name": "initial_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:14:56.728871+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:001", "input_tokens": 64810}
+{"at": "2026-10-20T20:14:56.765338+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:006", "input_tokens": 88622}
+{"at": "2026-10-20T20:14:56.809875+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:003", "input_tokens": 94196}
+{"at": "2026-10-20T20:14:56.992716+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:004", "input_tokens": 51059}
+{"at": "2026-10-20T20:14:57.025691+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:007", "input_tokens": 91813}
+{"at": "2026-10-20T20:14:57.066040+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:008", "input_tokens": 81131}
+{"at": "2026-10-20T20:14:57.094260+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:005", "input_tokens": 64685}
+{"at": "2026-10-20T20:14:57.203249+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:002", "input_tokens": 78253}
+{"at": "2026-10-20T20:15:17.706975+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:001", "cost_usd": 0.29862, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:17.711427+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "001", "pass_name": "initial_review", "words": 328, "target": 300, "replacements": 3}
+{"at": "2026-10-20T20:15:18.052399+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:009", "input_tokens": 76101}
+{"at": "2026-10-20T20:15:25.316160+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:002", "cost_usd": 0.36937, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:25.334573+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "002", "pass_name": "initial_review", "words": 1400, "target": 1400, "replacements": 6}
+{"at": "2026-10-20T20:15:25.649447+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:010", "input_tokens": 82985}
+{"at": "2026-10-20T20:15:29.747920+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:005", "cost_usd": 0.32304, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:29.765401+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "005", "pass_name": "initial_review", "words": 1501, "target": 1500, "replacements": 2}
+{"at": "2026-10-20T20:15:30.068856+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:011", "input_tokens": 94620}
+{"at": "2026-10-20T20:15:37.332288+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:003", "cost_usd": 0.4577, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:37.404302+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "003", "pass_name": "initial_review", "words": 1299, "target": 1300, "replacements": 4}
+{"at": "2026-10-20T20:15:38.287409+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:012", "input_tokens": 104940}
+{"at": "2026-10-20T20:15:41.539950+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:008", "cost_usd": 0.4117, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:41.545623+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "008", "pass_name": "initial_review", "words": 1101, "target": 1100, "replacements": 4}
+{"at": "2026-10-20T20:15:41.954667+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:013", "input_tokens": 130955}
+{"at": "2026-10-20T20:15:50.919191+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:009", "cost_usd": 0.36712, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:15:51.000755+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "009", "pass_name": "initial_review", "words": 1602, "target": 1600, "replacements": 5}
+{"at": "2026-10-20T20:15:51.455755+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:014", "input_tokens": 99613}
+{"at": "2026-10-20T20:16:00.176091+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:010", "cost_usd": 0.39512, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:00.192934+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "010", "pass_name": "initial_review", "words": 1501, "target": 1500, "replacements": 3}
+{"at": "2026-10-20T20:16:00.523195+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:015", "input_tokens": 75112}
+{"at": "2026-10-20T20:16:07.303341+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:006", "cost_usd": 0.49681, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:07.309321+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "006", "pass_name": "initial_review", "words": 1017, "target": 1000, "replacements": 3}
+{"at": "2026-10-20T20:16:07.602472+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:016", "input_tokens": 94560}
+{"at": "2026-10-20T20:16:14.255932+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:004", "cost_usd": 0.36644, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:14.303865+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "004", "pass_name": "initial_review", "words": 902, "target": 900, "replacements": 7}
+{"at": "2026-10-20T20:16:14.735309+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:017", "input_tokens": 104727}
+{"at": "2026-10-20T20:16:22.367435+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:015", "cost_usd": 0.34217, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:22.377872+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "015", "pass_name": "initial_review", "words": 1104, "target": 1100, "replacements": 2}
+{"at": "2026-10-20T20:16:22.725323+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:018", "input_tokens": 102502}
+{"at": "2026-10-20T20:16:23.055679+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:007", "cost_usd": 0.54787, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:23.070091+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "007", "pass_name": "initial_review", "words": 1102, "target": 1100, "replacements": 5}
+{"at": "2026-10-20T20:16:23.433428+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:019", "input_tokens": 109380}
+{"at": "2026-10-20T20:16:27.083122+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:011", "cost_usd": 0.49692, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:27.098155+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "011", "pass_name": "initial_review", "words": 1100, "target": 1100, "replacements": 4}
+{"at": "2026-10-20T20:16:27.525384+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:020", "input_tokens": 84133}
+{"at": "2026-10-20T20:16:52.925862+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:012", "cost_usd": 0.57732, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:16:53.025816+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "012", "pass_name": "initial_review", "words": 1800, "target": 1800, "replacements": 8}
+{"at": "2026-10-20T20:16:53.855300+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:021", "input_tokens": 56168}
+{"at": "2026-10-20T20:17:03.140565+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:013", "cost_usd": 0.69876, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:03.175757+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "013", "pass_name": "initial_review", "words": 2801, "target": 2800, "replacements": 8}
+{"at": "2026-10-20T20:17:03.459862+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:022", "input_tokens": 67464}
+{"at": "2026-10-20T20:17:11.058526+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:017", "cost_usd": 0.52643, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:11.119785+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "017", "pass_name": "initial_review", "words": 1402, "target": 1400, "replacements": 7}
+{"at": "2026-10-20T20:17:11.423484+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:023", "input_tokens": 74492}
+{"at": "2026-10-20T20:17:13.397016+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:020", "cost_usd": 0.42527, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:13.417845+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "020", "pass_name": "initial_review", "words": 1706, "target": 1700, "replacements": 6}
+{"at": "2026-10-20T20:17:13.666540+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:024", "input_tokens": 63154}
+{"at": "2026-10-20T20:17:22.903430+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:014", "cost_usd": 0.58923, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:22.924017+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "014", "pass_name": "initial_review", "words": 1515, "target": 1500, "replacements": 8}
+{"at": "2026-10-20T20:17:23.254494+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:025", "input_tokens": 77550}
+{"at": "2026-10-20T20:17:29.350305+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:016", "cost_usd": 0.54752, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:29.364218+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "016", "pass_name": "initial_review", "words": 1113, "target": 1100, "replacements": 10}
+{"at": "2026-10-20T20:17:30.332118+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:026", "input_tokens": 115677}
+{"at": "2026-10-20T20:17:33.409549+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:022", "cost_usd": 0.32718, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:33.421049+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "022", "pass_name": "initial_review", "words": 901, "target": 900, "replacements": 4}
+{"at": "2026-10-20T20:17:33.694989+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:027", "input_tokens": 66226}
+{"at": "2026-10-20T20:17:34.403727+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:021", "cost_usd": 0.31053, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:34.414841+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "021", "pass_name": "initial_review", "words": 1000, "target": 1000, "replacements": 5}
+{"at": "2026-10-20T20:17:34.706377+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:028", "input_tokens": 84479}
+{"at": "2026-10-20T20:17:39.439944+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:019", "cost_usd": 0.60484, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:39.467431+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "019", "pass_name": "initial_review", "words": 2199, "target": 2200, "replacements": 7}
+{"at": "2026-10-20T20:17:39.821720+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:029", "input_tokens": 75364}
+{"at": "2026-10-20T20:17:53.790284+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:025", "cost_usd": 0.36856, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:53.813407+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "025", "pass_name": "initial_review", "words": 1702, "target": 1700, "replacements": 3}
+{"at": "2026-10-20T20:17:58.549536+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:023", "cost_usd": 0.39503, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:17:58.555863+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "023", "pass_name": "initial_review", "words": 901, "target": 900, "replacements": 5}
+{"at": "2026-10-20T20:18:07.143145+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:018", "cost_usd": 0.62893, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:07.178609+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "018", "pass_name": "initial_review", "words": 2642, "target": 2600, "replacements": 11}
+{"at": "2026-10-20T20:18:07.342306+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:027", "cost_usd": 0.33352, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:07.355813+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "027", "pass_name": "initial_review", "words": 1004, "target": 1000, "replacements": 3}
+{"at": "2026-10-20T20:18:15.675904+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:026", "cost_usd": 0.54585, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:15.709274+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "026", "pass_name": "initial_review", "words": 2603, "target": 2600, "replacements": 5}
+{"at": "2026-10-20T20:18:17.949243+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:024", "cost_usd": 0.38328, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:17.955029+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "024", "pass_name": "initial_review", "words": 1098, "target": 1100, "replacements": 3}
+{"at": "2026-10-20T20:18:31.901684+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:029", "cost_usd": 0.40244, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:31.911265+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "029", "pass_name": "initial_review", "words": 658, "target": 600, "replacements": 1}
+{"at": "2026-10-20T20:18:53.153431+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:028", "cost_usd": 0.49966, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:18:53.342022+00:00", "event": "call_start", "stage": "fidelity_repair:secret_adversary:initial_review:028:corrected", "input_tokens": 86493}
+{"at": "2026-10-20T20:19:17.864031+00:00", "event": "call_end", "stage": "fidelity_repair:secret_adversary:initial_review:028:corrected", "cost_usd": 0.40167, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:19:17.889872+00:00", "event": "repair_ready", "book": "secret_adversary", "chapter": "028", "pass_name": "initial_review", "words": 1799, "target": 1800, "replacements": 8}
+{"at": "2026-10-20T20:19:18.992554+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:001", "input_tokens": 64728}
+{"at": "2026-10-20T20:19:19.028435+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:003", "input_tokens": 92967}
+{"at": "2026-10-20T20:19:19.196387+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:002", "input_tokens": 77502}
+{"at": "2026-10-20T20:19:19.227941+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:004", "input_tokens": 49639}
+{"at": "2026-10-20T20:19:19.258212+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:005", "input_tokens": 64193}
+{"at": "2026-10-20T20:19:19.289249+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:008", "input_tokens": 80494}
+{"at": "2026-10-20T20:19:19.413734+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:007", "input_tokens": 91035}
+{"at": "2026-10-20T20:19:19.445822+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:006", "input_tokens": 87273}
+{"at": "2026-10-20T20:20:19.791181+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:001", "cost_usd": 0.40005, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:20:19.806801+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "001", "pass_name": "repair_review", "must_fix": 0, "should_improve": 2}
+{"at": "2026-10-20T20:20:20.523359+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:009", "input_tokens": 75797}
+{"at": "2026-10-20T20:20:44.826835+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:008", "cost_usd": 0.5168, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:20:44.835093+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "008", "pass_name": "repair_review", "must_fix": 1, "should_improve": 3}
+{"at": "2026-10-20T20:20:45.152052+00:00", "event": "call_start", "stage": "fidelity:secret_adversary:repair_review:010", "input_tokens": 82548}
+{"at": "2026-10-20T20:20:45.877032+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:007", "cost_usd": 0.5608, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:20:45.885961+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "007", "pass_name": "repair_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:20:46.218853+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:46.549977+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:46.900453+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:47.225132+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:47.479521+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:47.799283+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:48.082222+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:48.434022+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:48.610875+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:004", "cost_usd": 0.39968, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:20:48.626350+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "004", "pass_name": "repair_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:20:48.803558+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:48.955899+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.101055+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.272464+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.393243+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.569494+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.730513+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:49.920920+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:50.108192+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:50.317498+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:50.498450+00:00", "event": "unit_failed", "error": "Run cost/call bound reached"}
+{"at": "2026-10-20T20:20:57.958419+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:005", "cost_usd": 0.47973, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:20:57.966501+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "005", "pass_name": "repair_review", "must_fix": 0, "should_improve": 4}
+{"at": "2026-10-20T20:21:14.346956+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:002", "cost_usd": 0.56919, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:21:14.355332+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "002", "pass_name": "repair_review", "must_fix": 0, "should_improve": 3}
+{"at": "2026-10-20T20:21:16.553299+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:006", "cost_usd": 0.60343, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:21:16.562666+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "006", "pass_name": "repair_review", "must_fix": 0, "should_improve": 5}
+{"at": "2026-10-20T20:21:21.922161+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:003", "cost_usd": 0.64003, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:21:21.942955+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "003", "pass_name": "repair_review", "must_fix": 1, "should_improve": 5}
+{"at": "2026-10-20T20:21:54.903111+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:009", "cost_usd": 0.51309, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:21:54.911359+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "009", "pass_name": "repair_review", "must_fix": 1, "should_improve": 4}
+{"at": "2026-10-20T20:22:23.429963+00:00", "event": "call_end", "stage": "fidelity:secret_adversary:repair_review:010", "cost_usd": 0.54375, "stop_reason": "end_turn"}
+{"at": "2026-10-20T20:22:23.437826+00:00", "event": "review_ready", "book": "secret_adversary", "chapter": "010", "pass_name": "repair_review", "must_fix": 0, "should_improve": 2}
+Traceback (most recent call last):
+  File "<stdin>", line 12, in <module>
+  File "/mnt/data/forage/forage/full_run.py", line 679, in run_book
+    parallel(ids, lambda sid: review(book, sid, drafts, generate, label), workers)
+  File "/mnt/data/forage/forage/full_run.py", line 307, in parallel
+    raise RuntimeError("; ".join(errors))
+RuntimeError: Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached; Run cost/call bound reached

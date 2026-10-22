@@ -1,0 +1,1 @@
+.venv/bin/python -u -m forage.full_run run --output work/_full_runs/2026-10-20-opus55 --workers 4 --max-usd 200 --max-calls 600 --retry-credit-errors

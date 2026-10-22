@@ -1,0 +1,50 @@
+{
+  "book_id": "secret_adversary",
+  "run_id": "20261021T185422Z",
+  "plan_only": false,
+  "dry_run": false,
+  "edits_path": "/mnt/data/forage/work/_full_runs/2026-10-20-opus55/work/secret_adversary/editorial/imported_edits.json",
+  "ledger_path": "/mnt/data/forage/work/_full_runs/2026-10-20-opus55/work/secret_adversary/editorial/review_apply_ledger.json",
+  "overlay_generated_at": null,
+  "include_book_comments": true,
+  "segments_considered": 1,
+  "segments_planned": 1,
+  "pending_feedback": 1,
+  "already_used_feedback": 0,
+  "blocked_feedback": 0,
+  "blocked": [],
+  "needs_segment_for_book_comments": false,
+  "segments": [
+    {
+      "segment_id": "002",
+      "status": "applied",
+      "feedback_count": 1,
+      "decisions": [
+        {
+          "feedback_key": "677ab0061c7a53cbab1af98d",
+          "comment_id": "8b74e1d2dee2",
+          "action": "applied",
+          "reason": "Valid. The draft cut the Sister Greenbank anecdote, so Tommy's 'Good old hospital' in the next paragraph has no setup. I restored the source clause about the sister, the doctor and the chart within the same line of dialogue.",
+          "changed_paragraphs": [
+            8
+          ],
+          "target_paragraphs": [
+            8
+          ],
+          "display_paragraph": 8
+        }
+      ],
+      "changed": true,
+      "snapshot": "/mnt/data/forage/work/_full_runs/2026-10-20-opus55/work/secret_adversary/segments/002.review_apply.152e121bfa0b42848ff2283f321f3365.before.md",
+      "before_words": 1401,
+      "after_words": 1429,
+      "model": "anthropic:claude-opus-5-5",
+      "input_tokens": 4,
+      "output_tokens": 4049,
+      "dry_run": false
+    }
+  ],
+  "segments_applied": 1,
+  "segments_no_change": 0,
+  "segments_failed": 0
+}

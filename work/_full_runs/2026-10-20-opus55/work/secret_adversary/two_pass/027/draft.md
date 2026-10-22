@@ -1,0 +1,87 @@
+“When I came across this paragraph,” resumed the lawyer, “my problem was solved. Julius Hersheimmer set out to discover what had become of his cousin. On the eve of his departure from New York he was set upon and murdered. Mr. Brown took his place. Since then he had been hand and glove with those sworn to hunt him down. Mrs. Vandemeyer knew his secret. Exposure stared him in the face. He took a desperate step, trusting in his assumed character to avert suspicion. He nearly succeeded--but not quite.”
+
+“I can’t believe it,” murmured Jane. “He seemed so splendid.”
+
+Jane turned mutely to Tuppence. The latter nodded.
+
+“I didn’t want to say it, Jane. And, after all, I couldn’t be sure. I still don’t understand why, if he’s Mr. Brown, he rescued us.”
+
+“Can’t you? I can. So can young Beresford, by his actions. As a last hope Jane Finn was to be allowed to escape. They’ll take care to get him out of the way at the right minute. Then Julius Hersheimmer dashes up and rescues you in true melodramatic style. Bullets fly--but don’t hit anybody. You would have driven straight to the house in Soho and secured the document. And I rather fancy some accident would have happened to both of you. I admit I was caught napping; but somebody else wasn’t.”
+
+“Tommy,” said Tuppence softly.
+
+“Yes. All the same, I’m not too easy in my mind about him.”
+
+“Why?”
+
+“Because Julius Hersheimmer is Mr. Brown,” said Sir James dryly. “And it takes more than one man and a revolver to hold up Mr. Brown....”
+
+Tuppence paled a little. “What can we do?”
+
+“Nothing until we’ve been to the house in Soho.” He took a service revolver, and placed it in his coat pocket.
+
+He suggested that Miss Finn should remain behind. But to Tuppence’s surprise Jane shook her head.
+
+“No. I guess I’m going too. Those papers were my trust.”
+
+At the corner of the square Sir James spoke to a plain-clothes man, then rejoined the girls.
+
+“No one has gone into the house so far. It is being watched at the back as well, so they are quite sure of that.”
+
+The three entered the house. Slowly they mounted the rickety stairs. At the top was the ragged curtain hiding the recess where Tommy had hidden that day. Even now Tuppence could almost swear it moved--as though _some one_ was behind it. Supposing Mr. Brown--Julius--was there waiting....
+
+Now they were entering the prison room. She must not give way to this curious insistent feeling that _Mr. Brown was in the house_....
+
+Jane had gone straight to the picture of Marguerite. Sir James handed her a pocket-knife, and she ripped away the brown paper from the back.... Holding apart the frayed inner edges she extracted two thin sheets covered with writing!
+
+“We’ve got it,” said Tuppence. “At last....”
+
+Sir James took it, and scrutinized it attentively.
+
+“Yes,” he said quietly, “this is the ill-fated draft treaty!”
+
+“We’ve succeeded,” said Tuppence.
+
+Sir James echoed her words as he folded the paper carefully and put it away in his pocket-book, then he looked curiously round the dingy room.
+
+“A truly sinister room,” he said. “You notice the absence of windows, and the thickness of the close-fitting door. Whatever took place here would never be heard by the outside world.”
+
+Tuppence shivered. What if some one concealed in the house should bar that door on them, and leave them to die like rats in a trap? Sir James gave her an emphatic little nod.
+
+“Quite right, Miss Tuppence. You scent danger. So do I. So does Miss Finn.”
+
+“Yes,” admitted Jane. “It’s absurd--but I can’t help it.”
+
+Sir James nodded again.
+
+“You feel--as we all feel-- _the presence of Mr. Brown_. Yes”--as Tuppence made a movement--“not a doubt of it-- _Mr. Brown is here_....”
+
+“In this house?”
+
+“In this room.... You don’t understand? _I am Mr. Brown_....”
+
+Stupefied, unbelieving, they stared at him. The very lines of his face had changed. He smiled a slow cruel smile.
+
+“Neither of you will leave this room alive! You said just now we had succeeded. _I_ have succeeded! The draft treaty is mine. Sooner or later the police will break in, and they will find three victims of Mr. Brown--three, not two, you understand, but fortunately the third will not be dead, only wounded, and will be able to describe the attack with a wealth of detail! So no one will think of searching the pockets of Sir James Peel Edgerton!”
+
+He turned to Jane.
+
+“You outwitted me. I make my acknowledgments. But you will not do it again.”
+
+There was a faint sound behind him, but, intoxicated with success, he did not turn his head. He slipped his hand into his pocket.
+
+“Checkmate to the Young Adventurers,” he said, and slowly raised the big automatic.
+
+But, even as he did so, he felt himself seized from behind in a grip of iron. The revolver was wrenched from his hand, and the voice of Julius Hersheimmer said drawlingly:
+
+“I guess you’re caught redhanded with the goods upon you.”
+
+The blood rushed to the K.C.’s face, but his self-control was marvellous, as he looked from one to the other of his two captors. He looked longest at Tommy.
+
+“You,” he said beneath his breath. “_You!_ I might have known.”
+
+Seeing that he was disposed to offer no resistance, their grip slackened. Quick as a flash his left hand, the hand which bore the big signet ring, was raised to his lips....
+
+“‘_Ave, Cæsar! te morituri salutant_,’” he said, still looking at Tommy.
+
+Then his face changed, and with a long convulsive shudder he fell forward in a crumpled heap, whilst an odour of bitter almonds filled the air.

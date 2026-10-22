@@ -1,0 +1,30 @@
+[
+  {
+    "probe": "workspace",
+    "status": 403,
+    "headers": {
+      "request-id": "req_011CgE9TXHheuXwFMG67QbKS"
+    },
+    "body": {
+      "type": "error",
+      "error": {
+        "type": "permission_error",
+        "message": "Missing permissions. Please check with Anthropic support if you think this is in error."
+      },
+      "request_id": "req_011CgE9TXHheuXwFMG67QbKS"
+    }
+  },
+  {
+    "probe": "organization",
+    "status": 200,
+    "headers": {
+      "request-id": "req_011CgE9TXhFuVCFvaBdjgBSJ",
+      "anthropic-organization-id": "6e87c9b2-f838-45a4-b2bd-7d7575ec381b"
+    },
+    "body": {
+      "id": "6e87c9b2-f838-45a4-b2bd-7d7575ec381b",
+      "type": "organization",
+      "name": "Tom\u2018s Individual Org"
+    }
+  }
+]
