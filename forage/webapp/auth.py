@@ -9,6 +9,7 @@ import math
 import os
 import time
 import threading
+from collections import OrderedDict, deque
 from dataclasses import dataclass
 
 COOKIE_NAME = "forage_review"
@@ -113,12 +114,17 @@ def is_secure(request, trust_proxy: bool) -> bool:
 
 
 class RateLimiter:
-    """Sliding-window per-key cap. Used for writes by authenticated accounts."""
+    """Bounded sliding-window admission; new keys fail closed at capacity."""
 
-    def __init__(self, limit: int = 60, window: float = 60.0) -> None:
+    def __init__(self, limit: int = 60, window: float = 60.0,
+                 max_keys: int = 4096, clock=time.monotonic) -> None:
+        if limit <= 0 or window <= 0 or max_keys <= 0:
+            raise ValueError('Rate limits must be positive')
         self.limit = limit
         self.window = window
-        self._hits: dict[str, list[float]] = {}
+        self.max_keys = max_keys
+        self._clock = clock
+        self._hits = OrderedDict()
         self._lock = threading.Lock()
 
     def check(self, key: str) -> float:
@@ -127,14 +133,23 @@ class RateLimiter:
             return self._check(key)
 
     def _check(self, key: str) -> float:
-        now = time.time()
-        bucket = [t for t in self._hits.get(key, []) if now - t < self.window]
+        now = self._clock()
+        cutoff = now - self.window
+        # Ordered by last admitted hit: cleanup is amortized, never a full-map
+        # scan for each new address. Blocked hits do not extend the window.
+        while self._hits and next(iter(self._hits.values()))[-1] <= cutoff:
+            self._hits.popitem(last=False)
+        bucket = self._hits.get(key)
+        if bucket is None:
+            if len(self._hits) >= self.max_keys:
+                return max(1.0, next(iter(self._hits.values()))[-1] + self.window - now)
+            bucket = self._hits[key] = deque()
+        while bucket and bucket[0] <= cutoff:
+            bucket.popleft()
         if len(bucket) >= self.limit:
-            self._hits[key] = bucket
             return max(1.0, self.window - (now - bucket[0]))
         bucket.append(now)
-        self._hits[key] = bucket
-        self._evict(now)
+        self._hits.move_to_end(key)
         return 0.0
 
     def allow(self, key: str) -> bool:
@@ -144,19 +159,8 @@ class RateLimiter:
         with self._lock:
             self._hits.pop(key, None)
 
-    def _evict(self, now: float) -> None:
-        if len(self._hits) <= 4096:  # bound memory on a public host
-            return
-        cutoff = now - self.window
-        self._hits = {k: v for k, v in self._hits.items() if v and v[-1] > cutoff}
-
-
 class LoginLimiter(RateLimiter):
-    """Stricter window for password guessing.
-
-    Successful sign-ins clear the counter, so a reviewer who fat-fingers their
-    password twice and then gets it right is not locked out.
-    """
+    """Account-specific guessing budget; IP-wide admission is separate."""
 
     def __init__(self, limit: int = 8, window: float = 900.0) -> None:
         super().__init__(limit=limit, window=window)

@@ -23,6 +23,7 @@ Routes
 
 from __future__ import annotations
 
+import asyncio
 import os
 import hashlib
 import math
@@ -39,7 +40,8 @@ from fastapi.staticfiles import StaticFiles
 
 from .auth import (COOKIE_NAME, AuthConfig, LoginLimiter, RateLimiter, Session,
                    client_ip, env_flag, is_secure)
-from .accounts import AccountStore
+from .accounts import AccountStore, username_key
+from .limits import RequestLimitsMiddleware
 from ..review_anchors import chapter_hash
 from .store import (BOOK_COMMENT_SEGMENT, KINDS, SEVERITIES, STATUSES,
                     ArtifactStore, ReviewStore, build_edits, build_feedback,
@@ -71,7 +73,9 @@ def create_app(artifacts: ArtifactStore | None = None,
     accounts = AccountStore(reviews.db_path)
     accounts.bootstrap(auth.production)
     writes = RateLimiter()
-    logins = LoginLimiter()
+    login_ips = RateLimiter(limit=30, window=900)
+    login_accounts = LoginLimiter()
+    password_changes = LoginLimiter()
 
     # openapi_url too, not just the doc viewers: leaving it on publishes the
     # full route table, admin endpoints included, to anonymous callers.
@@ -97,6 +101,9 @@ def create_app(artifacts: ArtifactStore | None = None,
         from starlette.middleware.trustedhost import TrustedHostMiddleware
         app.add_middleware(TrustedHostMiddleware,
                            allowed_hosts=allowed_hosts + ["*.internal"])
+
+    app.add_middleware(RequestLimitsMiddleware, trust_proxy=auth.trust_proxy,
+                       upload_limit=artifacts.hosted.max_archive_bytes if artifacts.hosted else 128 * 1024 * 1024)
 
     def origin_allowed(origin: str, host: str) -> bool:
         """Whether a write may carry this Origin.
@@ -254,7 +261,13 @@ def create_app(artifacts: ArtifactStore | None = None,
     def sign_in(request: Request, response: Response,
                 payload: dict = Body(...)) -> dict:
         ip = client_ip(request, auth.trust_proxy)
-        retry = logins.check(ip)
+        try:
+            username = username_key(payload.get('username'))
+        except ValueError:
+            username = ''
+        retry = login_ips.check(ip)
+        if not retry:
+            retry = login_accounts.check(username)
         if retry:
             raise HTTPException(
                 status_code=429,
@@ -265,7 +278,7 @@ def create_app(artifacts: ArtifactStore | None = None,
         if result is None:
             raise HTTPException(status_code=403, detail="Incorrect username or password.")
 
-        logins.reset(ip)
+        login_accounts.reset(username)
         sess, cookie = result
         accounts.logout(request.cookies.get(COOKIE_NAME))
         response.set_cookie(
@@ -311,7 +324,7 @@ def create_app(artifacts: ArtifactStore | None = None,
     @app.put("/api/account/password")
     def change_password(request: Request, response: Response, payload: dict = Body(...),
                         sess: Session = Depends(require_write)) -> dict:
-        retry = logins.check('password:' + sess.user_id)
+        retry = password_changes.check(sess.user_id)
         if retry:
             raise HTTPException(status_code=429, detail="Too many attempts. Try again later.",
                                 headers={"Retry-After": str(int(retry))})
@@ -320,7 +333,7 @@ def create_app(artifacts: ArtifactStore | None = None,
                                               payload.get("new_password"), auth)
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from None
-        logins.reset('password:' + sess.user_id)
+        password_changes.reset(sess.user_id)
         response.set_cookie(COOKIE_NAME, cookie, max_age=auth.session_seconds,
                             httponly=True, samesite="lax", secure=is_secure(request, auth.trust_proxy))
         return {"success": True}
@@ -374,12 +387,17 @@ def create_app(artifacts: ArtifactStore | None = None,
             except ValueError:
                 raise HTTPException(status_code=400, detail="Bad content length.")
         data = bytearray()
-        async for chunk in request.stream():
-            if len(data) + len(chunk) > limit:
-                raise HTTPException(status_code=413, detail="Publication archive is too large.")
-            data.extend(chunk)
         try:
-            manifest = store.upload(book_id, bytes(data))
+            async with asyncio.timeout(120):
+                async for chunk in request.stream():
+                    if len(data) + len(chunk) > limit:
+                        raise HTTPException(status_code=413, detail="Publication archive is too large.")
+                    data.extend(chunk)
+        except TimeoutError:
+            raise HTTPException(status_code=408, detail="Publication upload timed out.") from None
+        try:
+            from starlette.concurrency import run_in_threadpool
+            manifest = await run_in_threadpool(store.upload, book_id, bytes(data))
         except (ValueError, OSError) as exc:
             raise HTTPException(status_code=400, detail=str(exc))
         except RuntimeError as exc:

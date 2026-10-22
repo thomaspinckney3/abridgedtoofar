@@ -146,6 +146,9 @@ def test_login_lockout_and_cookie_security(make_client):
     assert client.post('/api/session',json={'username':'alice','password':REVIEW_PASSWORD}).status_code == 429
     response = client.post('/api/session', json={'username':'alice','password':REVIEW_PASSWORD},
                            headers={'x-forwarded-for':'203.0.113.3', 'x-forwarded-proto':'https'})
+    assert response.status_code == 429  # An account budget survives IP changes.
+    response = client.post('/api/session', json={'username':'admin','password':ADMIN_PASSWORD},
+                           headers={'x-forwarded-for':'203.0.113.3', 'x-forwarded-proto':'https'})
     assert response.status_code == 200
     cookie = response.headers['set-cookie']
     assert 'HttpOnly' in cookie and 'Secure' in cookie and 'SameSite=lax' in cookie
