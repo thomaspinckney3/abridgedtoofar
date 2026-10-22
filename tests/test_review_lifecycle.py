@@ -98,7 +98,7 @@ def test_http_review_apply_republish_release_and_further_feedback(pipeline, monk
         return LLMResponse(json.dumps({'segment_id': sid, 'revised_draft': replacement,
             'decisions': [{'feedback_key': p['feedback_key'], 'comment_id': p['comment_id'],
                            'action': 'applied', 'reason': 'Clarifies the requested wording.',
-                           'changed_paragraphs': [0]} for p in pending]}), 'mock', 1, 1, 0, 'stop')
+                           'changed_paragraphs': [0], 'target_paragraphs': [0]} for p in pending]}), 'mock', 1, 1, 0, 'stop')
     monkeypatch.setattr('forage.review_apply.complete', apply_mock)
     book.metadata['audiobook'] = {'voice_id': 'a-later-metadata-default'}
     applied = sync_feedback(book, transport, apply=True, republish=True)

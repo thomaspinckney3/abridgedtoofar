@@ -38,7 +38,7 @@ from .summarizer import summarize_book
 from .validate import validate_book
 from .production_state import (atomic_json, book_lock, confined_path,
                                digest, inventory, load_state, now, save_state,
-                               sha256_file, verify_inventory)
+                               sha256_file, verify_inventory, text_revision as compute_text_revision)
 
 PROMPT_STAGES = {
     "classify": "classify_chapters", "summarize": "summarize_synopsis",
@@ -51,6 +51,12 @@ PROMPT_STAGES = {
 
 def resolve_options(book: Book, options: dict | None = None) -> dict:
     options = dict(options or {})
+    from .production_origin import origin_revision, FullRunOrigin
+    origin_id = origin_revision(book, load_state(book))
+    if origin_id:
+        origin = FullRunOrigin(book, origin_id)
+        options.setdefault('coherence_fix', False)
+        options.setdefault('model', origin.model)
     allowed = {"outputs", "adopt_existing", "model", "models", "iterate", "max_retries",
                "coherence", "coherence_fix", "coherence_fix_pairs", "repair_epoch",
                "checkpoint_before_media", "continue_revision",
@@ -126,6 +132,8 @@ def resolve_options(book: Book, options: dict | None = None) -> dict:
         from .graphic import graphic_settings
         result["graphic"] = graphic_settings(options)
         result["resolved_models"]["GRAPHIC_STORYBOARD"] = result["graphic"]["storyboard_model"]
+    if origin_id:
+        origin.validate_options(result)
     return result
 
 
@@ -193,6 +201,9 @@ class _Run:
         self.root = book.work_dir
         self.base = Book(book.book_id, book.source_path, book.metadata, self.root / ".production" / "base")
         self.state = load_state(book)
+        from .production_origin import origin_revision, FullRunOrigin
+        origin_id = origin_revision(book, self.state)
+        self.origin = FullRunOrigin(book, origin_id) if origin_id else None
         self.results = {}
         self.error = None
 
@@ -210,6 +221,14 @@ class _Run:
             return False
         signature = digest({"version": 1, "inputs": inputs})
         old = self.state["stages"].get(name, {})
+        imported = self.origin.reusable_stage(name, self.config) if self.origin and not old else None
+        if imported:
+            if name == 'alignment':
+                imported['metadata']['settings'] = _stage_settings(self.config, 'align')
+            old = {'version': 1, 'status': 'complete', 'input': signature, **imported}
+            self.state['stages'][name] = old
+            if self.execute:
+                save_state(self.book, self.state)
         good = old.get("status") == "complete" and old.get("input") == signature and verify_inventory(self.root, old.get("outputs"))
         if good and not force:
             self.results[name] = {"status": "reused", "reason": "inputs and verified output bytes match", "metadata": old.get("metadata", {})}
@@ -249,6 +268,10 @@ class _Run:
             save_state(self.book, self.state)
 
     def preparation(self):
+        if self.origin:
+            outputs = self.origin.preparation + self.origin.sources
+            return self.stage('preparation', [self.origin.revision, outputs],
+                              lambda: {'outputs': outputs, 'metadata': {'origin_revision': self.origin.revision}})
         split_config = self.book.source_path.parent / "split_config.json"
         source_input = {"source": sha256_file(self.book.source_path), "split_config": _hash_optional(split_config),
                         "algorithm": source_fingerprint_for_stage("split")["hash"]}
@@ -349,6 +372,13 @@ class _Run:
             source.unlink()
 
     def drafts(self, plan):
+        if self.origin:
+            segments = required_segments(plan)
+            if not all(_disk_draft_result(self.root / 'segments', s).status == 'drafted' for s in segments):
+                raise ValueError('Full-run refresh requires complete accepted drafts')
+            return {'outputs': inventory(self.root, [f"segments/{s['id']}.{suffix}" for s in segments
+                                                     for suffix in ('md', 'checks.json')]),
+                    'metadata': {'generation': self.origin.revision}}
         units = {}
         for segment in required_segments(plan):
             units.setdefault(segment.get("group_id") or segment["id"], []).append(segment)
@@ -437,6 +467,8 @@ class _Run:
         return {"outputs": outputs, "metadata": {"generation": digest({u: {"input": records[u]["input"], "generated": records[u].get("generated")} for u in units})}}
 
     def quality(self, plan):
+        if self.origin:
+            return self.origin.quality()
         results = {"iteration": [], "coherence": None, "repair": None}
         if self.config["iterate"]:
             for segment in required_segments(plan):
@@ -502,11 +534,17 @@ class _Run:
         return {"outputs": inventory(self.root, paths), "metadata": {"targets": targets, "provider": "elevenlabs", "settings": self.config["audio"]}}
 
     def run(self):
+        if self.origin and not self.state['stages'] and self.origin.unchanged(self.config):
+            self.state.update(text_revision=self.origin.manifest['text_revision'], review_revision=self.origin.revision)
+            self.results = {name: {'status': 'reused', 'reason': 'verified full-run publication'}
+                            for name in self.origin.manifest['stage_summary']['stages']}
+            self.results['snapshot'] = {'status': 'reused', 'reason': 'verified full-run publication'}
+            return self.result()
         prepared = self.preparation()
         if not prepared:
             for stage in ["drafting", "quality", "assembly", "book_critic", "validation", "alignment"] + [o for o in self.config["outputs"] if o != "text"] + ["snapshot"]:
                 self.results[stage] = {"status": "pending", "reason": "waiting for current preparation"}
-            if not self.state.get("draft_units") and any((self.root / "segments").glob("*.md")):
+            if not self.origin and not self.state.get("draft_units") and any((self.root / "segments").glob("*.md")):
                 self.results["drafting"]["reason"] = "legacy drafts lack provenance; execution requires --adopt-existing"
             return self.result()
         plan = _valid_plan(read_json(self.root / "plan.json"))
@@ -520,7 +558,9 @@ class _Run:
         generation = self.state["stages"]["drafting"]["metadata"]["generation"]
         quality_settings = {k: self.config.get(k) for k in ["iterate", "max_retries", "coherence", "coherence_fix", "coherence_fix_pairs", "repair_epoch"]}
         quality_models = [_stage_settings(self.config, s) for s in ["regen", "critic", "coherence", "coherence_fix"]]
-        self.stage("quality", [generation, quality_settings, quality_models], lambda: self.quality(plan), dependencies=["drafting"])
+        quality_inputs = ([generation, compute_text_revision(self.book)] if self.origin
+                          else [generation, quality_settings, quality_models])
+        self.stage("quality", quality_inputs, lambda: self.quality(plan), dependencies=["drafting"])
         if self.execute and self.results["quality"]["status"] in {"complete", "reused"}:
             # Repair owns the accepted result; it must not invalidate its original draft generation.
             for unit in self.state.get("draft_units", {}).values():
@@ -529,9 +569,7 @@ class _Run:
                     unit["checks"] = inventory(self.root, [i["path"] for i in unit["checks"]])
             self.state["stages"]["drafting"]["outputs"] = inventory(self.root, current)
             save_state(self.book, self.state)
-        text_revision = digest({"version": 1, "book_id": self.book.book_id,
-                                "plan": sha256_file(self.root / "plan.json"),
-                                "drafts": inventory(self.root, [f"segments/{s['id']}.md" for s in required_segments(plan)])})
+        text_revision = compute_text_revision(self.book)
         def assembly():
             result = assemble_book(self.book, plan)
             if result.segments_missing or not result.abridgment_path or not result.plain_text_path:
@@ -540,6 +578,12 @@ class _Run:
             for key in ["timestamp", "published_abridgment_path", "published_plain_text_path"]:
                 report.pop(key, None)
             report.update(abridgment_path="abridgment.md", plain_text_path="abridgment.txt")
+            if self.origin:
+                for key in list(report):
+                    if 'ceiling' in key or 'overage' in key:
+                        report.pop(key)
+                report.update(length_policy='One fixed target; every deviation is reported.',
+                              target_delta_words=result.total_drafted - result.book_target)
             atomic_json(self.root / "assembly_report.json", report)
             return {"outputs": self._paths(self.book, ["abridgment.md", "abridgment.txt", "assembly_report.json"])}
         self.stage("assembly", text_revision, assembly, dependencies=["quality"])
@@ -550,7 +594,8 @@ class _Run:
             if [f.get("sentence") for f in report["findings"]] != list(range(1, report["synopsis_sentence_count"] + 1)) or any(f.get("status") not in {"present", "missing", "distorted"} for f in report["findings"]):
                 raise ValueError("book critic returned an incomplete report")
             return {"outputs": self._paths(self.book, ["book_critic.json"]), "metadata": {"verdict": report["verdict"]}}
-        self.stage("book_critic", [text_revision, self._input("summarize"), _stage_settings(self.config, "book_critic")], critic, dependencies=["assembly"])
+        synopsis = sha256_file(self.root / 'book_synopsis.md') if self.origin else self._input('summarize')
+        self.stage("book_critic", [text_revision, synopsis, _stage_settings(self.config, "book_critic")], critic, dependencies=["assembly"])
         def validate():
             report = validate_book(self.book, plan)
             atomic_json(self.root / "validation_report.json", asdict(report))
@@ -558,6 +603,8 @@ class _Run:
         self.stage("validation", text_revision, validate, dependencies=["assembly"])
         alignment_settings = _stage_settings(self.config, "align")
         previous_alignment_settings = self.state["stages"].get("alignment", {}).get("metadata", {}).get("settings")
+        if self.origin and previous_alignment_settings is None and self.config['resolved_models']['ALIGN'] == self.origin.model:
+            previous_alignment_settings = alignment_settings
         def alignment():
             paths = []
             for segment in required_segments(plan):
@@ -602,12 +649,21 @@ class _Run:
         deps = ["assembly", "book_critic", "validation", "alignment"] + [o for o in self.config["outputs"] if o != "text"]
         def snapshot():
             from .publication import snapshot_revision
+            from .revision_review import public_responses
             targets = [target for branch in ["audio", "graphic"] if branch in self.config["outputs"] for target in self.state["stages"][branch]["metadata"]["targets"]]
             index = {"version": 1, "book_id": self.book.book_id, "text_revision": text_revision, "targets": targets}
             validate_media_manifest(index, self.root)
             atomic_json(self.root / "media_manifest.json", index)
             names = ["plan.json", "chapters.json", "chapter_classifications.json", "book_synopsis.md", "cuts.json", "production_quality.json", "media_manifest.json"]
             names += current
+            if (self.root / 'pipeline_review.json').exists():
+                names.append('pipeline_review.json')
+            if self.origin:
+                names.append('fixed_target_checks.json')
+            ledger_path = self.root / 'editorial/review_apply_ledger.json'
+            if ledger_path.exists():
+                atomic_json(self.root / 'review_responses.json', public_responses(read_json(ledger_path)))
+                names.append('review_responses.json')
             outputs = inventory(self.root, names)
             for stage in deps:
                 outputs += self.state["stages"][stage]["outputs"]
@@ -621,7 +677,11 @@ class _Run:
             self.state["text_revision"] = text_revision
             self.state["review_revision"] = result["revision"]
             return {"outputs": inventory(self.root, ["media_manifest.json", "review_current.json", f"publications/{result['revision']}/revision.json"] + [f"publications/{result['revision']}/{i['path']}" for i in result["outputs"]]), "metadata": {"revision": result["revision"], "text_revision": text_revision}}
-        self.stage("snapshot", [text_revision, self.config["outputs"], [self._input(d) for d in deps]], snapshot, dependencies=deps)
+        ledger_path = self.root / 'editorial/review_apply_ledger.json'
+        ledger_hash = sha256_file(ledger_path) if ledger_path.exists() else None
+        pipeline_review_path = self.root / 'pipeline_review.json'
+        pipeline_review_hash = sha256_file(pipeline_review_path) if pipeline_review_path.exists() else None
+        self.stage("snapshot", [text_revision, self.config["outputs"], [self._input(d) for d in deps], ledger_hash, pipeline_review_hash], snapshot, dependencies=deps)
         return self.result()
 
     def result(self):
@@ -636,6 +696,17 @@ def plan_production(book: Book, options: dict | None = None) -> dict:
     assert_review_applications_resolved(book)
     config = resolve_options(book, options)
     return _Run(book, config, execute=False).run()
+
+
+def validate_refresh_inputs(book: Book, options: dict | None = None) -> None:
+    """Check provenance and settings before feedback can invoke a paid model."""
+    config = resolve_options(book, options)
+    runner = _Run(book, config, execute=False)
+    if runner.origin:
+        runner.drafts(runner.origin.plan)  # Verify accepted drafts without invoking a generator.
+    elif (not runner.state.get('draft_units')
+            and any((book.work_dir / 'segments').glob('*.md')) and not config.get('adopt_existing')):
+        raise ValueError('legacy drafts lack provenance; inspect and pass --adopt-existing')
 
 
 def _reusable_options(config: dict) -> dict:
@@ -664,8 +735,10 @@ def run_production(book: Book, options: dict | None = None, *, lock_held: bool =
         recover_review_applications(book, lock_held=True)
         runner = _Run(book, config, execute=True)
         # Refuse legacy drafts before any paid preparation can overwrite context.
-        if not runner.state.get("draft_units") and any((book.work_dir / "segments").glob("*.md")) and not config.get("adopt_existing"):
+        if not runner.origin and not runner.state.get("draft_units") and any((book.work_dir / "segments").glob("*.md")) and not config.get("adopt_existing"):
             raise ValueError("legacy drafts lack provenance; inspect and pass --adopt-existing")
+        if runner.origin:
+            runner.state['full_run_origin'] = runner.origin.revision
         # A failed branch still owns a deliberate configuration request. Sync
         # retries must not silently revert to the previous successful selection.
         runner.state["requested_production_options"] = _reusable_options(config)

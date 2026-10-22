@@ -1552,6 +1552,7 @@ def _render_review_apply(report: dict) -> None:
     tally.add_row("segments planned", str(report.get("segments_planned", 0)))
     tally.add_row("pending feedback", str(report.get("pending_feedback", 0)))
     tally.add_row("already used", str(report.get("already_used_feedback", 0)))
+    tally.add_row("unmatched feedback", str(report.get("blocked_feedback", 0)))
     if not report.get("plan_only"):
         tally.add_row("segments applied", str(report.get("segments_applied", 0)))
         tally.add_row("segments no-change", str(report.get("segments_no_change", 0)))
@@ -1877,6 +1878,21 @@ def publish_review(
 ) -> None:
     """Upload a verified revision and advance hosted review; no generation or release."""
     _publish_revision(book_id, revision, "review", workspace, site, local_root, token_env)
+
+
+@app.command("prepare-review")
+def prepare_pipeline_review(
+    book_id: str,
+    workspace: Path | None = typer.Option(None, help="Workspace containing books/ and work/."),
+) -> None:
+    """Package completed full-run findings/repair history. No generation or upload."""
+    from .pipeline_review import prepare_review
+    try:
+        result = prepare_review(load_book(book_id, workspace=workspace, create=False))
+    except (ValueError, OSError, RuntimeError) as error:
+        console.print(f"[red]{error}[/red]")
+        raise typer.Exit(1)
+    console.print_json(json.dumps(result))
 
 
 @app.command("publish-release")

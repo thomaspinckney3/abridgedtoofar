@@ -75,7 +75,7 @@ def _alignment_current(path: Path, source: list[str], draft: list[str]) -> bool:
             and _valid_mapping(cached.get("mapping"), len(source), len(draft)))
 
 
-def align_chapter(book: Book, segment_id: str) -> dict:
+def align_chapter(book: Book, segment_id: str, *, generate=None) -> dict:
     """Align one chapter's draft to its source. Returns the alignment dict and
     writes work/<book>/alignments/<sid>.json."""
     src_path = book.work_dir / "chapters" / f"{segment_id}.md"
@@ -93,7 +93,7 @@ def align_chapter(book: Book, segment_id: str) -> dict:
         source_paragraphs=_numbered(source_paras),
         draft_paragraphs=_numbered(draft_paras),
     )
-    resp = complete(
+    resp = (generate or complete)(
         prompt=rendered,
         model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         max_tokens=prompt.config.get("max_tokens", 8000),

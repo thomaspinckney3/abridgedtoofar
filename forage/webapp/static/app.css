@@ -2,6 +2,23 @@
    Reading column on the left, marginalia on the right, fidelity carried by a
    spine mark rather than a page-wide tint so long reading stays comfortable. */
 
+.pipeline-card { margin: .65rem 0; padding: .8rem; border: 1px solid var(--border, #bbb); border-radius: 6px; }
+.pipeline-card > summary { cursor: pointer; font-weight: 600; }
+.pipeline-status { display: inline-block; margin-left: .8rem; font-size: .85em; font-weight: normal; }
+.pipeline-card .note-body, .pipeline-patch p { white-space: pre-wrap; }
+.pipeline-pass, .pipeline-patch, .pipeline-adjudication { margin: .9rem 0; }
+.pipeline-patch { border-left: 3px solid var(--border, #bbb); padding-left: .8rem; }
+.pipeline-evidence blockquote { margin: .8rem 0; padding-left: .8rem; border-left: 2px solid var(--border, #bbb); }
+.suggested-issues, .review-history { scroll-margin-top: 5rem; }
+.suggested-issues h2 { margin: 0 0 .6rem; font-family: var(--ui); font-size: 1rem; }
+.review-history > summary { cursor: pointer; font-family: var(--ui); font-weight: 600; }
+.review-history > .sheet-note, .pipeline-card > .note-body { margin: .8rem 0; }
+.review-history .chapter-notes { margin: 1rem 0 0; }
+.critic-records, .pipeline-record { margin: 1rem 0; }
+.critic-records summary { cursor: pointer; }
+.pipeline-record .note-body { white-space: pre-wrap; }
+.blocks + .scope-notes { margin-top: 1.5rem; }
+
 :root {
   color-scheme: light dark;
 
@@ -279,6 +296,7 @@ main { padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 6rem; min-width: 0; }
 .chapter-actions {
   margin-top: .65rem;
   display: flex;
+  flex-wrap: wrap;
   gap: .4rem;
   font-family: var(--ui);
 }
@@ -528,6 +546,14 @@ del { background: var(--del-bg); color: var(--del-fg); padding: 0 2px; border-ra
   margin: 0; color: var(--ink-soft); white-space: pre-wrap;
 }
 .llm-response-changes { margin-top: .25rem; }
+.revision-review { margin-top: .65rem; border-top: 1px solid var(--line); padding-top: .55rem; }
+.revision-state { display: block; font-size: .78rem; }
+.revision-state.accepted { color: var(--accent); }
+.revision-request { white-space: pre-wrap; margin: .4rem 0; }
+.revision-actions { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .5rem; }
+.revision-history { margin-top: .6rem; font-size: .78rem; }
+.revision-event { border-left: 2px solid var(--line); padding: .25rem .6rem; margin-top: .45rem; }
+.revision-event p { white-space: pre-wrap; }
 .note-foot { margin-top: .45rem; display: flex; gap: .35rem; flex-wrap: wrap; }
 .note-foot button {
   font-family: var(--ui); font-size: .7rem; background: none; border: 0;

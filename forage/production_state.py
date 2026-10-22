@@ -7,6 +7,7 @@ import fcntl
 import hashlib
 import json
 import os
+import re
 from pathlib import Path, PurePosixPath
 import tempfile
 
@@ -46,6 +47,39 @@ def inventory(root: Path, paths) -> list[dict]:
             raise ValueError(f"missing output: {relative}")
         result.append({"path": relative, "sha256": sha256_file(target)})
     return sorted({item["path"]: item for item in result}.values(), key=lambda x: x["path"])
+
+
+def text_inputs(book) -> list[dict]:
+    """Authoritative plan and retained prose, shared by every text producer."""
+    plan = json.loads((book.work_dir / 'plan.json').read_text())
+    segments = [s['id'] for s in plan['segments']
+                if s.get('diegetic_status') == 'diegetic' and not s.get('skipped')
+                and int(s.get('target_word_count', 0)) > 0]
+    if (not segments
+            or any(not isinstance(sid, str) or not re.fullmatch(r'[A-Za-z0-9_-]+', sid)
+                   for sid in segments)
+            or len(set(segments)) != len(segments)):
+        raise ValueError('A text revision requires retained chapters')
+    return inventory(book.work_dir, ['plan.json'] + [f'segments/{sid}.md' for sid in segments])
+
+
+def text_revision(book) -> str:
+    inputs = text_inputs(book)
+    return digest({'version': 1, 'book_id': book.book_id,
+                   'plan': next(i['sha256'] for i in inputs if i['path'] == 'plan.json'),
+                   'drafts': [i for i in inputs if i['path'] != 'plan.json']})
+
+
+def matches_published_text(book, revision: str, expected_text: str) -> bool:
+    """Accept older identity schemes only with verified, byte-identical inputs."""
+    from .publication import verify_revision
+    try:
+        manifest = verify_revision(book, revision)
+        expected = {i['path']: i['sha256'] for i in manifest['outputs']}
+        return (manifest['text_revision'] == expected_text
+                and all(expected.get(i['path']) == i['sha256'] for i in text_inputs(book)))
+    except (OSError, ValueError, KeyError, TypeError):
+        return False
 
 
 def verify_inventory(root: Path, outputs) -> bool:

@@ -113,6 +113,70 @@ Token-limited responses from either provider are incomplete, including every mem
 
 GPT-6 Astra is also available for drafting via `FORAGE_DRAFT_MODEL=openai:gpt-6-astra`. Earlier Gatsby tests compared Opus with GPT-5 and found more compression-induced dangling references in GPT-5 drafts; those results are historical and do not establish GPT-6 Astra's quality or cost.
 
+### `draft-two-pass` — measured revision at a fixed target
+
+For a complete text run using this workflow, including source-aware editorial
+review, local repairs, final review, alignment and an immutable review snapshot:
+
+```bash
+python -m forage.full_run prepare --output work/_full_runs/my-run \
+  --books education secret_adversary
+python -m forage.full_run run --output work/_full_runs/my-run \
+  --workers 4 --max-usd 200 --max-calls 600
+```
+
+This Opus 5.5 runner retains the existing chapter targets and omission decisions.
+It uses pristine source chapters, plans in small batches with whole-book context,
+and saves everything in a separate workspace. `prepare` is free; `run` makes
+paid calls. Exact saved responses are reused when the same run resumes.
+Unknown billing after a lost response remains reserved and requires explicit
+recovery; it is never silently retried. The cost bound uses standard Opus 5.5
+rates and must be reviewed if pricing changes.
+After adding credits following a provider credit-balance rejection, resume with
+`--retry-credit-errors`. This preserves the failed attempts and their billing
+reserves while reusing every completed response.
+
+Each editorial pass reads a frozen set of chapter drafts, including actual
+adjacent and dependency chapters. Repairs independently adjudicate critic
+findings, apply unique non-overlapping replacements, and verify protected text.
+Two bounded repair rounds are followed by a final review. Remaining findings
+and exact word differences remain visible; a completed run is not a claim that
+all editorial concerns are resolved. `full_run_result.json` records the result.
+These are local review revisions; publishing or releasing them is separate.
+
+```bash
+forage draft-two-pass education --segment 007 --segment 027 \
+  --output-dir work/education/two-pass-run-001
+```
+
+Uses the existing `plan.json` targets without a separate length allowance.
+One whole-book call generates source-grounded preservation plans for the selected
+chapters. Code validates exact passages and cross-chapter evidence, then assigns
+section budgets that sum to each target.
+
+Each chapter has two generation passes:
+
+1. Draft from its original source and validated plan.
+2. Count the prose and each paragraph mechanically, then pass those measurements
+   and the required net change to the model. It evaluates possible cuts and
+   returns a complete revision with a brief cut rationale and dependency check.
+
+The revision is counted again. Both texts, the exact requests, source, plan,
+review notes, paragraph references and measured word edits remain in the output
+directory. Reviewer comments are excluded from word counts. Any remaining target
+difference, missing protected text or reported infeasibility is marked
+`needs_review`; meeting the mechanical checks does not establish editorial quality.
+There is no automatic third pass.
+
+The command saves review artifacts in a new directory and does not replace
+accepted segments or publish a book. It uses one planning call plus two chapter
+calls, with medium effort and a 32,000-token output limit by default.
+Use repeated `--segment` options to select chapters, or omit them to select all
+positive-target narrative chapters. `--model` selects the provider/model.
+Planning currently supplies the full book in one request; the book and selected
+chapters must fit the model context, and relocated chapter sources must first be
+reconciled with the original source.
+
 ### 7. `critique` — adversarial signature critic
 
 Prompt default: `anthropic:claude-opus-5-5`. The recommended `.env.example` sets `FORAGE_CRITIC_MODEL=anthropic:claude-sonnet-5-5`, which routes both signature and book critics to Sonnet 5.5.
@@ -204,7 +268,12 @@ What it adds over `proofread.html`:
 - **Chapter view** — same verdict buckets, word diffs, and cut-material section, plus filters (unsupported / compressed / has-notes / full-text search) and keyboard navigation (`j` `k` move, `u` next unsupported, `c` comment, `[` `]` chapter, `/` search).
 - **Marginalia** — notes sit in the right margin beside the paragraph they annotate. Select text inside a paragraph to quote it in the note.
 - **Note fields** — severity (`blocker` … `praise`), kind (`fidelity`, `voice`, `continuity`, `clarity`, `style`, `typo`, `other`), status (`open` → `accepted` / `resolved` / `wontfix`), free-text body, reviewer name.
-- **Staleness** — each note stores a hash of the paragraph it was written against. Redraft that paragraph and the note is flagged `stale`; drop it from the alignment and the note is flagged `orphaned`. Notes are never silently re-pointed at different prose.
+- **Comment locations** — the original paragraph index, text and anchor remain immutable. The UI uses a separately verified current location: a unique matching passage follows insertions, and review application records explicit destinations for corrected or split passages. Ambiguous or unmatched notes appear under “Notes awaiting a matching passage” with their original text, rather than beside whatever now occupies the old index. `stale` means the reviewed wording changed; it is independent of the open/accepted/resolved/wontfix status.
+- **Revision review** — each published LLM response has **Accept revision** and **Reject with comment** controls. Acceptance closes the note; rejection requires feedback and queues it for the next revision pass. An accepted revision has **Reopen revision**, which returns it to review without requesting generation. Reviewers can update a rejection or accept it to cancel the pending request. The original note remains intact and **Review history** records decisions, comments, authors and the response reviewed. A new model response always needs its own acceptance, and an outdated page cannot decide a newer revision.
+- **Suggested issues** — the chapter text comes first, with a jump button to compact suggestions below it. These are possible issues from automated review, labeled **Needs attention**, **Suggestion**, or **Optional**. Open a card to compare passages, **Dismiss suggestion**, or **Request change with comment**. You can read and annotate without deciding every suggestion.
+- **Review history** — a collapsed panel holds changes already made, dismissed or outdated suggestions, detailed critic records and draft diagnostics. Completed repairs retain **Accept revision**, **Reject with comment**, and **Reopen revision**; dismissed suggestions can be reopened. Before/after passages and reasons remain available. Accepting a repair acknowledges the existing draft and does not dismiss other suggestions. Nothing is queued for generation until a reviewer requests a change.
+- **External reruns** — the website records decisions and requests only. An operator runs `review-pull` / `review-sync --apply --republish` separately; there is no website control that starts the pipeline.
+- **Regeneration safety** — feedback exports preserve the originally reviewed text. Application rechecks the target against the actual draft before calling a model and blocks notes without sufficient context. Each generated paragraph decision must identify its target paragraphs in the final draft; that mapping is committed with the draft and ledger, so restart recovery preserves both.
 - **Deep links** — `/b/<book>?c=<chapter>&p=<paragraph>` opens on the paragraph in question.
 
 **Export feedback** writes the queue to `work/<book>/editorial/edits.json`: comments grouped by chapter, each carrying the paragraph text it was written against and its staleness flag. That file is the overlay a fix stage consumes — the app never edits `segments/*.md` itself, so a review pass can't corrupt drafts. The same document is downloadable without writing to disk at `/api/books/<book>/edits.json`.
@@ -247,7 +316,7 @@ Locally, an unset review token is generated and printed at startup, so a dev ser
 
 #### Deploying to Fly.io
 
-`fly.toml` and the `Dockerfile` at the repo root are the whole deployment. Artifacts are baked into the image as a baseline, while the Fly volume holds mutable state: the comment database, published review overlays, and optional per-book artifact overrides.
+`fly.toml` and the `Dockerfile` at the repo root are the whole deployment. Artifacts are baked into the image as a baseline, while the Fly volume holds the comment database, uploaded revisions and review/release pointers under `/data/hosted`, published review overlays, and optional per-book artifact overrides.
 
 ```bash
 python scripts/package_review_artifacts.py        # deploy/artifacts — MB, not GB
@@ -273,11 +342,12 @@ python scripts/publish_review_book.py secret_adversary
 
 That packages the same verified review artifacts and metadata, then uploads them to `/data/artifacts/<book>` and `/data/books/<book>`. A mounted book overrides the baked copy on the next request; deleting `/data/artifacts/<book>` falls back to the baked image.
 
-The image installs `fastapi` and `uvicorn` but not the pipeline's model SDKs: the review app only reads JSON off disk and serves HTML. Build with `--build-arg INSTALL_MODE=full` when pipeline stages move behind the admin token and the container needs the full dependency set.
+The image installs `fastapi` and `uvicorn` but not the pipeline's model SDKs: the review app only reads JSON off disk and serves HTML. Build with `--build-arg INSTALL_MODE=full` when pipeline stages move behind the admin account and the container needs the full dependency set.
 
-Two things to keep in mind:
+Deployment storage:
 
-- **Stay at one machine.** The comment queue is a SQLite file on a single volume, so `min_machines_running = 1` and no `fly scale count` above 1. Sessions are stateless, so scaling out only ever waits on moving the queue to Postgres.
+- **Stay at one machine.** `min_machines_running = 1` keeps one machine running; it does not cap the count. Check `fly status` before deployment and keep the app at one machine. Scaling to more machines or regions requires shared/replicated storage for both the comment database and uploaded publications; moving only SQLite to Postgres is insufficient.
+- **Hosted publication uses persistent storage:** `FORAGE_HOSTED_ROOT=/data/hosted` enables `forage publish-review` and `forage publish-release`. Uploaded revisions, channel pointers and feedback projections survive restarts and deployments on the mounted volume.
 - **Publishing writes to the volume**, not to the image: `FORAGE_EDITS_DIR=/data/edits`. Pull a published overlay back down with `fly ssh sftp get /data/edits/<book>/edits.json`, or skip publishing entirely and use `GET /api/books/<book>/edits.json`, which builds the same document on the fly and needs no writable disk.
 - **Single-book content refreshes also write to the volume**: `FORAGE_ARTIFACT_OVERLAY_DIR=/data/artifacts` and `FORAGE_BOOKS_OVERLAY_DIR=/data/books`. Use `scripts/publish_review_book.py` after re-aligning a book; no app restart or redeploy is needed once those env vars are deployed.
 
@@ -314,7 +384,12 @@ target chapter, draft-before hash, draft-after hash, timestamp, model, and token
 counts. Each decision also carries a per-comment LLM response that the review
 web app displays under the original note when the ledger is present in the
 artifact tree. Future rounds ignore unchanged feedback already in the ledger;
-editing a comment changes its fingerprint and makes it eligible again.
+editing an ordinary comment changes its fingerprint and makes it eligible again.
+For a note with a published response, use **Reject with comment** to request
+another pass. The follow-up has its own identity and is applied once against the
+verified current passage. **Accept revision** and **Reopen revision** make no
+model calls. The existing **Accept comment** action means the initial note is
+accepted for action; it is separate from accepting the resulting revision.
 
 Book-level comments are considered per target chapter. Without `--segment`, the
 stage uses chapters that already have chapter or paragraph feedback rather than
@@ -515,6 +590,19 @@ original generation, so later prose edits do not recursively invalidate earlier
 chapters. Cuts and plan edits are reconciled against pristine preparation data;
 removed cuts remove their prior relocated kernels.
 
+Completed full runs can use the same `review-sync --apply --republish` workflow.
+The runner verifies their immutable publication, source chapters and original
+plan before applying feedback, then preserves their targets, omissions and
+accepted prose. New snapshots contain `full_run_inputs.json`; older full-run
+workspaces also need their original `run.json` source inventory. Unchanged runs
+reuse the existing revision without model calls. Changed prose refreshes the
+common downstream stages; original fidelity findings remain historical evidence.
+Automatic iteration/coherence repair is disabled for this refresh path: request
+prose changes through review feedback, and start a new run for source/plan changes.
+New full runs share the common text identity. Existing editions keep their IDs;
+book-level notes on those editions are eligible when the verified snapshot's
+plan and draft bytes still match locally.
+
 Legacy drafts without runner provenance require `--adopt-existing --execute`.
 Review them first: adoption verifies required nonempty prose and successful
 checks against the prepared plan, records `user-adopted` provenance, and does not
@@ -563,6 +651,20 @@ for available settings. No paid generation or creative quality is certified by
 the offline integration tests.
 
 ### Hosted review, feedback sync and public release
+
+For older completed full runs, package the saved critic findings and repair
+history without generation, then publish the returned revision:
+
+```bash
+forage prepare-review BOOK --workspace /srv/forage
+forage publish-review BOOK REVISION --workspace /srv/forage
+```
+
+New full runs package this automatically. Preparation verifies saved evidence,
+patch replay, current paragraph alignment, and the prior snapshot inventory;
+prose and text identity remain unchanged. Republish is idempotent and retains
+reviewer decisions. Subsequent feedback repairs carry the original review items
+forward and publish a new response requiring its own review.
 
 The review site runs separately from generation. Configure its writable
 `FORAGE_HOSTED_ROOT`, persistent `FORAGE_REVIEW_DB`, `FORAGE_SECRET_KEY`,
@@ -614,6 +716,16 @@ with unknown duration accept finite nonnegative times without inventing a length
 Media comments remain available to editors but are not automatically translated
 into prose edits.
 
+Revision decisions are stored transactionally in the review database and are
+included in feedback exports. Rejection queues feedback; generation continues
+through `review-sync --apply --republish` (or an exported `review-apply` pass),
+not inside the web server. Original anchors are retained while local ledger
+bindings verify the current passage. A request is blocked if its reviewed
+chapter changed before application. Production snapshots include a sanitized
+`review_responses.json`, so the hosted site receives the new response even when
+the model skips a request and leaves the prose unchanged. Review decisions do
+not promote a public release.
+
 `review-pull` makes no model calls. It reads the versioned full feedback feed at
 `/api/books/BOOK/feedback`, atomically reconciles stable source/comment identities,
 and preserves `editorial/review_apply_ledger.json`. Edits, resolved notes and
@@ -622,6 +734,12 @@ choices. The imported queue is separate from that ledger. Repeated identical
 pulls do not duplicate notes or change their timestamps. Eligibility checks the
 current local draft bytes; stale, orphaned, inactive, media and unanchored remote
 notes never enter the paid prose pass.
+
+An applied paragraph deletion remains reviewable while its recorded final
+chapter still matches. Rejecting it can request restoration through the next
+sync. A later chapter change requires a fresh review; decisions submitted from
+a page showing a superseded pipeline finding return a conflict and preserve
+the existing decision history.
 
 `review-sync --apply` invokes the constrained review-apply stage for eligible
 feedback and refreshes affected production outputs. The common production planner validates

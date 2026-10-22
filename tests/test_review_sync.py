@@ -156,7 +156,7 @@ def test_import_excludes_media_inactive_stale_orphan_unanchored(pipeline):
     comments = [comment(book, result["review_revision"], identifier=str(i), **change) for i, change in enumerate([
         {}, {"scope": "audio", "target_kind": "audio", "timestamp_seconds": 2},
         {"scope": "graphic", "target_kind": "graphic"}, {"status": "resolved"},
-        {"original_text": "Old prose."}, {"draft_para": 9}, {"anchor": ""},
+        {"original_text": "Old prose."}, {"segment_id": "999"}, {"anchor": ""},
         {"publication_revision": None},
     ])]
     report = review_sync.pull_feedback(book, FeedTransport(feed(book, comments)))
@@ -204,11 +204,12 @@ def test_removed_chapter_is_orphaned_even_if_old_draft_remains(pipeline):
     assert review_sync.imported_eligibility(book, c) == "orphaned"
 
 
-def test_legacy_local_overlay_remains_compatible(pipeline):
+def test_legacy_index_only_overlay_requires_original_context(pipeline):
     book, _ = pipeline
     run_ok(book)
     overlay = {"segments": [{"segment_id": "001", "comments": [{"id": "local", "note": "Review this", "draft_para": 0}]}]}
-    assert review_apply.pending_review_feedback(book, overlay=overlay)["pending_count"] == 1
+    assert review_apply.pending_review_feedback(book, overlay=overlay)["pending_count"] == 0
+    assert review_apply.pending_review_feedback(book, overlay=overlay)["blocked_count"] == 1
 
 
 def fake_apply_provider(book, monkeypatch, seen):
@@ -222,7 +223,7 @@ def fake_apply_provider(book, monkeypatch, seen):
         old = (book.work_dir / "segments/001.md").read_text()
         response = {"segment_id": "001", "revised_draft": old.replace("traveler", "wanderer"),
                     "decisions": [{"feedback_key": item["feedback_key"], "action": "applied",
-                                   "reason": "Consistent naming.", "changed_paragraphs": [0]} for item in pending]}
+                                   "reason": "Consistent naming.", "changed_paragraphs": [0], "target_paragraphs": [0]} for item in pending]}
         return LLMResponse(json.dumps(response), "mock", 0, 0, 0, "stop")
     monkeypatch.setattr(review_apply, "complete", complete)
 

@@ -24,6 +24,8 @@ from .json_parse import parse_llm_json
 from .llm import complete, require_complete_response
 from .prompts import load_prompt
 from .production_state import book_lock
+from .review_anchors import anchor_hash, locate, make_binding, binding_is_current
+from .revision_review import actionable, request_for, request_matches
 from .review_recovery import (assert_review_applications_resolved,
                               commit_review_application, recover_review_applications)
 
@@ -115,13 +117,15 @@ def pending_review_feedback(
             segment_id=sid,
             include_book_comments=include_book_comments,
         )
-        pending = [item for item in all_items
-                   if item["feedback_key"] not in used_keys]
+        unused = [item for item in all_items if item["feedback_key"] not in used_keys]
+        pending, blocked = _locate_feedback(book, sid, unused, ledger)
         segment_rows.append({
             "segment_id": sid,
             "pending": pending,
             "pending_count": len(pending),
-            "used_count": len(all_items) - len(pending),
+            "used_count": len(all_items) - len(unused),
+            "blocked": blocked,
+            "blocked_count": len(blocked),
             "total_count": len(all_items),
         })
 
@@ -134,6 +138,7 @@ def pending_review_feedback(
         "book_comment_count": len(overlay.get("book_comments", []) or []),
         "segments": segment_rows,
         "pending_count": sum(row["pending_count"] for row in segment_rows),
+        "blocked_count": sum(row["blocked_count"] for row in segment_rows),
         "used_count": sum(row["used_count"] for row in segment_rows),
         "total_count": sum(row["total_count"] for row in segment_rows),
         "needs_segment_for_book_comments": (
@@ -222,6 +227,8 @@ def _apply_review_feedback(
         "segments_planned": len(planned_segments),
         "pending_feedback": sum(row["pending_count"] for row in planned_segments),
         "already_used_feedback": plan["used_count"],
+        "blocked_feedback": plan["blocked_count"],
+        "blocked": [item for row in plan["segments"] for item in row["blocked"]],
         "needs_segment_for_book_comments": plan.get(
             "needs_segment_for_book_comments", False),
         "segments": [],
@@ -291,6 +298,7 @@ def _apply_segment_feedback(
         segment_id=segment_id,
         source_text=source_text,
         draft_text=draft_text,
+        draft_paragraphs_json=json.dumps([{"draft_para": i, "text": p} for i, p in enumerate(_draft_paragraphs(draft_text))], ensure_ascii=False, indent=2),
         feedback_json=json.dumps(feedback, indent=2, ensure_ascii=False),
     )
 
@@ -313,6 +321,12 @@ def _apply_segment_feedback(
                                  expected_keys={f["feedback_key"] for f in feedback})
         revised = parsed["revised_draft"].strip()
         original = draft_text.strip()
+        decisions = {d["feedback_key"]: d for d in parsed["decisions"]}
+        for item in feedback:
+            if item["scope"] == "paragraph":
+                make_binding(item, _draft_paragraphs(revised),
+                             decisions[item["feedback_key"]].get("target_paragraphs"),
+                             decisions[item["feedback_key"]].get("display_paragraph"))
         _validate_revision_consistency(
             decisions=parsed["decisions"], original=original, revised=revised)
         _validate_revised_draft(segment_id, original=original, revised=revised)
@@ -344,6 +358,7 @@ def _apply_segment_feedback(
             input_tokens=response.input_tokens,
             output_tokens=response.output_tokens,
             persist=False,
+            revised_paragraphs=_draft_paragraphs(revised),
         )
         checks = (_checks_data(book=book, segment_id=segment_id,
                                source_words=len(source_text.split()),
@@ -374,6 +389,55 @@ def _apply_segment_feedback(
     }
 
 
+def _locate_feedback(book, segment_id, items, ledger):
+    """Recheck target identity from actual prose before any provider request."""
+    path = book.work_dir / "segments" / f"{segment_id}.md"
+    paras = _draft_paragraphs(path.read_text()) if path.is_file() else []
+    ready, blocked = [], []
+    for item in items:
+        if item["status"] not in {"open", "accepted"}:
+            continue
+        if item.get('revision_request') and not request_matches(item['revision_request'], segment_id, paras):
+            blocked.append({'comment_id': item['comment_id'], 'segment_id': segment_id,
+                            'reason': 'the revision reviewed for this request has changed'})
+            continue
+        if item["scope"] != "paragraph":
+            ready.append(item)
+            continue
+        original = item.get("original_text")
+        anchor = item.get("anchor")
+        # Old local exports with actual reviewed text remain usable. A stale
+        # export without an anchor cannot certify which passage was reviewed.
+        if not anchor and original and not item.get("stale"):
+            anchor = anchor_hash(original)
+        candidate = {**item, "anchor": anchor}
+        binding = None
+        for entry in ledger.get("entries", []):
+            if (entry.get("comment_id") == item["comment_id"]
+                    and entry.get("source_id") == item.get("source_id")
+                    and entry.get("segment_id") == segment_id
+                    and isinstance(entry.get("comment_binding"), dict)):
+                binding = entry["comment_binding"]
+        located = locate(candidate, paras, binding)
+        present = located['current_draft_para'] is not None or (
+            item.get('revision_request') and binding_is_current(candidate, paras, binding))
+        if (not present or not located["original_text"]
+                or anchor_hash(located["original_text"]) != anchor):
+            blocked.append({"comment_id": item["comment_id"], "segment_id": segment_id,
+                            "reason": "original passage cannot be safely located"})
+            continue
+        indices = located["current_draft_paras"]
+        ready.append({**item, "anchor": anchor,
+                      "original_draft_para": item["draft_para"],
+                      "reviewed_paragraph": located["original_text"],
+                      "original_text": located["original_text"],
+                      "draft_para": located["current_draft_para"], "target_paragraphs": indices,
+                      "paragraph": "\n\n".join(paras[i] for i in indices),
+                      "stale": located["stale"],
+                      "attachment_status": located["attachment_status"]})
+    return ready, blocked
+
+
 def _candidate_segment_ids(
     book: Book,
     overlay: dict[str, Any],
@@ -392,7 +456,8 @@ def _overlay_segment_ids(overlay: dict[str, Any]) -> list[str]:
         _normalize_segment_id(str(seg.get("segment_id")))
         for seg in overlay.get("segments", []) or []
         if seg.get("segment_id") and seg.get("comments")
-    })
+    } | {request_for(comment)['segment_id']
+         for comment in overlay.get('book_comments', []) if request_for(comment)})
 
 
 def _feedback_for_segment(
@@ -405,6 +470,8 @@ def _feedback_for_segment(
     items: list[dict[str, Any]] = []
     if include_book_comments:
         for comment in overlay.get("book_comments", []) or []:
+            if not actionable(comment) or (request_for(comment) and request_for(comment)['segment_id'] != segment_id):
+                continue
             items.append(_normalise_feedback(
                 book_id=book_id,
                 segment_id=segment_id,
@@ -415,6 +482,8 @@ def _feedback_for_segment(
         if _normalize_segment_id(str(seg.get("segment_id", ""))) != segment_id:
             continue
         for comment in seg.get("comments", []) or []:
+            if not actionable(comment):
+                continue
             items.append(_normalise_feedback(
                 book_id=book_id,
                 segment_id=segment_id,
@@ -447,11 +516,18 @@ def _normalise_feedback(
         "note": comment.get("note") or "",
         "quote": comment.get("quote") or "",
         "paragraph": comment.get("paragraph"),
+        "original_text": comment.get("original_text") or comment.get("paragraph"),
+        "anchor": comment.get("anchor"),
+        "chapter_anchor": comment.get("chapter_anchor"),
         "stale": bool(comment.get("stale")),
         "author": comment.get("author") or "",
         "created_at": comment.get("created_at"),
         "updated_at": comment.get("updated_at"),
     }
+    request = request_for(comment)
+    if request:
+        item['revision_request'] = request
+        item['note'] += '\n\nReviewer requested another revision:\n' + request['body']
     item["feedback_key"] = feedback_fingerprint(
         book_id=book_id,
         segment_id=segment_id,
@@ -493,6 +569,8 @@ def feedback_fingerprint(
     # Legacy local fingerprints deliberately retain their existing byte shape.
     if comment.get("source_id"):
         basis["source_id"] = comment["source_id"]
+    if comment.get('revision_request'):
+        basis['review_request_id'] = comment['revision_request']['id']
     raw = json.dumps(basis, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
@@ -558,6 +636,8 @@ def _validate_apply_response(
             "action": action,
             "reason": reason,
             "changed_paragraphs": changed,
+            **({"target_paragraphs": raw["target_paragraphs"]} if "target_paragraphs" in raw else {}),
+            **({"display_paragraph": raw["display_paragraph"]} if "display_paragraph" in raw else {}),
         })
         seen.add(key)
 
@@ -743,6 +823,7 @@ def _record_feedback_use(
     input_tokens: int | None,
     output_tokens: int | None,
     persist: bool = True,
+    revised_paragraphs: list[str] | None = None,
 ) -> None:
     now = _now_iso()
     feedback_by_key = {item["feedback_key"]: item for item in feedback}
@@ -773,10 +854,13 @@ def _record_feedback_use(
             "source_segment_id": item["source_segment_id"],
             "draft_para": item.get("draft_para"),
             "comment_updated_at": item.get("updated_at") or item.get("created_at"),
+            **({'review_request_id': item['revision_request']['id']} if item.get('revision_request') else {}),
             "action": decision["action"],
             "reason": decision["reason"],
             "changed_paragraphs": changed_paragraphs,
             "comment_response": comment_response,
+            **({"comment_binding": make_binding(item, revised_paragraphs, decision["target_paragraphs"], decision.get("display_paragraph"))}
+               if item["scope"] == "paragraph" and revised_paragraphs is not None else {}),
             "draft_before_hash": before_hash,
             "draft_after_hash": after_hash,
             "draft_changed": draft_changed,

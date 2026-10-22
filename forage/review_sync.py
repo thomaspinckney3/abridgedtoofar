@@ -10,7 +10,10 @@ import math
 from pathlib import Path
 import re
 
-from .production_state import atomic_json, book_lock, canonical_json, digest, inventory, load_state, sha256_file
+from .review_anchors import locate, anchor_hash, binding_is_current
+from .revision_review import actionable, request_for, request_matches
+from .production_state import (atomic_json, book_lock, canonical_json, digest,
+                               load_state, text_revision, matches_published_text)
 
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
 _SEGMENT = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]{0,127}\Z")
@@ -80,6 +83,19 @@ def validate_feed(feed, book_id: str) -> dict:
         for key in ("anchor", "original_text", "target_id"):
             if item.get(key) is not None and not isinstance(item[key], str):
                 raise ValueError(f"invalid feedback {key}")
+        review = item.get('revision_review')
+        if review is not None:
+            if (not isinstance(review, dict) or not isinstance(review.get('state'), str)
+                    or review['state'] not in {'pending', 'accepted', 'rejected', 'reopened'}
+                    or type(review.get('current')) is not bool):
+                raise ValueError('invalid revision review')
+            if review['state'] == 'rejected':
+                request = review.get('request')
+                if (not isinstance(request, dict) or not isinstance(request.get('id'), str) or not request['id']
+                        or not isinstance(request.get('body'), str) or not request['body'].strip()
+                        or not isinstance(request.get('segment_id'), str) or not _SEGMENT.fullmatch(request['segment_id'])
+                        or not isinstance(request.get('chapter_anchor'), str) or not _HASH.fullmatch(request['chapter_anchor'])):
+                    raise ValueError('invalid revision request')
     canonical_json(feed)  # Reject NaN/Infinity anywhere before state changes.
     return feed
 
@@ -87,14 +103,7 @@ def validate_feed(feed, book_id: str) -> dict:
 def current_text_revision(book) -> str | None:
     """Match the production text identity from current plan and draft bytes."""
     try:
-        plan = json.loads((book.work_dir / "plan.json").read_text())
-        required = [s for s in plan["segments"] if s.get("diegetic_status") == "diegetic"
-                    and not s.get("skipped") and int(s.get("target_word_count", 0)) > 0]
-        if not required or any(not isinstance(s.get("id"), str) or not _SEGMENT.fullmatch(s["id"]) for s in required):
-            return None
-        return digest({"version": 1, "book_id": book.book_id,
-                       "plan": sha256_file(book.work_dir / "plan.json"),
-                       "drafts": inventory(book.work_dir, [f"segments/{s['id']}.md" for s in required])})
+        return text_revision(book)
     except (OSError, ValueError, KeyError, TypeError):
         return None
 
@@ -103,17 +112,22 @@ def imported_eligibility(book, comment: dict) -> str:
     """Freshness comes from live local prose, never a remote stale flag."""
     if comment.get("removed") or comment.get("status") not in {"open", "accepted"}:
         return "inactive"
+    if not actionable(comment):
+        return 'inactive'
     scope = comment.get("scope")
     if scope in {"audio", "graphic"} or comment.get("target_kind") in {"audio", "graphic"}:
         return "media"
     if scope not in {"book", "chapter", "paragraph"}:
         return "unanchored"
-    if not comment.get("publication_revision") or not comment.get("text_revision"):
+    request = request_for(comment)
+    if not request and (not comment.get("publication_revision") or not comment.get("text_revision")):
         return "unanchored"
-    if scope == "book":
+    if scope == "book" and not request:
         current = current_text_revision(book)
-        return "eligible" if current and current == comment.get("text_revision") else "stale"
-    sid = comment.get("segment_id")
+        matches = current and (current == comment.get('text_revision') or matches_published_text(
+            book, comment['publication_revision'], comment['text_revision']))
+        return 'eligible' if matches else 'stale'
+    sid = request['segment_id'] if request else comment.get("segment_id")
     if not isinstance(sid, str) or not _SEGMENT.fullmatch(sid):
         return "unanchored"
     try:
@@ -131,19 +145,39 @@ def imported_eligibility(book, comment: dict) -> str:
         paragraphs = [p.strip() for p in re.split(r"\n\s*\n", path.read_text(encoding="utf-8").strip()) if p.strip()]
     except (OSError, UnicodeError):
         return "orphaned"
-    if scope == "paragraph":
-        position = comment.get("draft_para")
-        if type(position) is not int or position < 0:
-            return "unanchored"
-        if position >= len(paragraphs):
-            return "orphaned"
-        current = paragraphs[position]
-    else:
-        current = "\n\n".join(paragraphs)
+    if request:
+        if not request_matches(request, sid, paragraphs):
+            return 'stale'
+        if scope in {'book', 'chapter'}:
+            return 'eligible'
+        # A remote request cannot certify an old-to-new mapping. Use only the
+        # pipeline's own durable binding, or an exact original passage match.
+        from .review_apply import load_review_ledger, default_ledger_path
+        binding = None
+        for entry in load_review_ledger(default_ledger_path(book)).get('entries', []):
+            if (entry.get('comment_id') == (comment.get('remote_id') or comment.get('id'))
+                    and entry.get('source_id') == comment.get('source_id')
+                    and entry.get('segment_id') == sid and entry.get('comment_binding')):
+                binding = entry['comment_binding']
+        located = locate(comment, paragraphs, binding)
+        original = located.get('original_text')
+        present = located['current_draft_para'] is not None or binding_is_current(comment, paragraphs, binding)
+        return ('eligible' if present and original
+                and anchor_hash(original) == comment.get('anchor') else 'stale')
     original = comment.get("original_text")
     anchor = comment.get("anchor")
     if not isinstance(original, str) or not original or not isinstance(anchor, str) or not anchor:
         return "unanchored"
+    if scope == "paragraph":
+        position = comment.get("draft_para")
+        if type(position) is not int or position < 0:
+            return "unanchored"
+        target = locate(comment, paragraphs)
+        if target["current_draft_para"] is None:
+            return "orphaned" if not paragraphs else "stale"
+        current = paragraphs[target["current_draft_para"]]
+    else:
+        current = "\n\n".join(paragraphs)
     expected = hashlib.sha1(" ".join(current.split()).encode("utf-8")).hexdigest()[:16]
     return "eligible" if original == current and anchor == expected else "stale"
 
@@ -186,7 +220,8 @@ def _projection(book, state):
     media = []
     for source_id, source in state["sources"].items():
         for remote_id, record in source["comments"].items():
-            comment = {**record["comment"], "removed": record.get("removed", False)}
+            comment = {**record["comment"], "source_id": source_id,
+                       "removed": record.get("removed", False)}
             reason = imported_eligibility(book, comment)
             counts[reason] += 1
             identity = digest([source_id, book.book_id, remote_id])
@@ -223,7 +258,8 @@ def pull_feedback(book, transport, *, lock_held: bool = False) -> dict:
             active.add(identifier)
             # Decoration is not source identity; republishing alone must not make
             # an unchanged feedback body into a new application decision.
-            comment = {k: v for k, v in comment.items() if k not in {"stale", "orphaned", "responses", "current_revision"}}
+            comment = {k: v for k, v in comment.items() if k not in {"stale", "orphaned", "responses", "current_revision", "current_draft_para",
+                        "current_draft_paras", "attachment_status", "llm_responses", "llm_response_count"}}
             old = source["comments"].get(identifier)
             if old is None or old["comment"] != comment or old.get("removed"):
                 history = list(old.get("history", [])) if old else []
@@ -260,7 +296,7 @@ def sync_feedback(book, transport, *, apply: bool = False, republish: bool = Fal
         # Heavy pipeline dependencies are only imported after the explicit paid
         # boundary; pulling and all hosted storage remain provider-free.
         from .review_apply import apply_review_feedback
-        from .production import run_production, plan_production, resolve_options
+        from .production import run_production, plan_production, validate_refresh_inputs
         from .publication import verify_revision
         state = load_state(book)
         options = dict(state.get("requested_production_options") or state.get("production_options") or {})
@@ -275,7 +311,7 @@ def sync_feedback(book, transport, *, apply: bool = False, republish: bool = Fal
         options.update(production_options or {})
         # Invalid explicit settings must fail even when the feed has no new
         # prose. Validate before any provider call can apply feedback.
-        resolve_options(book, options)
+        validate_refresh_inputs(book, options)
         result = apply_review_feedback(book, edits_path=imported_edits_path(book),
                                        segment_ids=segment_ids, lock_held=True)
         report["apply"] = result

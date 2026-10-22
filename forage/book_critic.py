@@ -91,7 +91,7 @@ def _split_synopsis_sentences(text: str) -> list[str]:
     return [re.sub(r"^\d+\.\s*", "", s).strip() for s in sentences if s.strip()]
 
 
-def run_book_critic(book: Book) -> dict:
+def run_book_critic(book: Book, *, generate=None) -> dict:
     synopsis_path = book.work_dir / "book_synopsis.md"
     if not synopsis_path.exists():
         raise FileNotFoundError(
@@ -119,7 +119,7 @@ def run_book_critic(book: Book) -> dict:
         partial_note=partial_note,
         abridgment=abridgment,
     )
-    resp = complete(
+    resp = (generate or complete)(
         prompt=rendered,
         model=prompt.config.get("model", "anthropic:claude-sonnet-5-5"),
         max_tokens=prompt.config.get("max_tokens", 8000),

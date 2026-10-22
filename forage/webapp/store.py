@@ -34,6 +34,9 @@ from typing import Any, Iterable, Optional
 
 from ..artifacts import BOOKS_DIR, WORK_DIR
 from ..proofread import should_word_diff, word_diff_html
+from ..review_anchors import anchor_hash, locate, binding_is_current
+from ..revision_review import response_id
+from ..review_anchors import chapter_hash
 
 NOTE_KEYS = ("verbatim", "paraphrased", "compressed", "unsupported")
 DIAGNOSTIC_CLASSES = (
@@ -97,18 +100,6 @@ def mutable_path(path: Path) -> Path:
         if part == "publications" and re.fullmatch(r"[0-9a-f]{64}", parts[index + 1]):
             raise ValueError("Mutable review state must be outside immutable publications.")
     return path
-
-
-def anchor_hash(text: str) -> str:
-    """Stable fingerprint of a draft paragraph.
-
-    Comments anchor to (segment, paragraph index, anchor hash). When the draft
-    is redrafted the index may still exist but the hash won't match — that's
-    how the UI knows a comment has gone stale rather than silently pointing at
-    different prose.
-    """
-    normalized = " ".join(text.split())
-    return hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:16]
 
 
 _DIAG_TEXT_NORMALIZE = str.maketrans({
@@ -651,13 +642,20 @@ class ArtifactStore:
         if segment_id is not None and not valid_segment_id(segment_id):
             return {}
         root = self._book_work_dir(book_id)
-        if root.parent.name == "publications":
+        snapshot = root.parent.name == 'publications'
+        ledger = self._read_json_cached(root / "review_responses.json") if snapshot else None
+        if ledger is None and snapshot:
             root = root.parent.parent
-        ledger = self._read_json_cached(root / "editorial" / "review_apply_ledger.json")
-        if not isinstance(ledger, dict):
-            return {}
+        if ledger is None:
+            ledger = self._read_json_cached(root / "editorial" / "review_apply_ledger.json")
         out: dict[str, list[dict[str, Any]]] = {}
-        for entry in ledger.get("entries", []) or []:
+        from ..pipeline_review import response_entry
+        package = self.pipeline_review(book_id)
+        for item in package.get('items', []):
+            if segment_id is None or item['segment_id'] == segment_id:
+                out[item['id']] = [_review_apply_response(response_entry(package, item))]
+        applied: dict[str, list[dict[str, Any]]] = {}
+        for entry in (ledger.get("entries", []) or []) if isinstance(ledger, dict) else []:
             if not isinstance(entry, dict):
                 continue
             if source_id is not None and entry.get("source_id") and entry["source_id"] != source_id:
@@ -670,11 +668,16 @@ class ArtifactStore:
                 continue
             response = _review_apply_response(entry)
             if response:
-                out.setdefault(comment_id, []).append(response)
-        for comment_id, items in list(out.items()):
+                applied.setdefault(comment_id, []).append(response)
+        for comment_id, items in applied.items():
             items.sort(key=lambda r: str(r.get("processed_at") or ""))
             out[comment_id] = items[-1:]
         return out
+
+    def pipeline_review(self, book_id: str) -> dict:
+        from ..pipeline_review import FILENAME, validate_package
+        data = self._read_json_cached(self._book_work_dir(book_id) / FILENAME)
+        return validate_package(data, book_id) if data is not None else {}
 
     def book_summary(self, book_id: str) -> Optional[BookSummary]:
         if not self.has_book(book_id):
@@ -866,6 +869,7 @@ def _review_apply_response(entry: dict[str, Any]) -> dict[str, Any] | None:
     if action not in {"applied", "skipped"}:
         action = "processed"
     return {
+        "id": response_id(entry),
         "source": str(response.get("source") or "review_apply"),
         "action": action,
         "body": body[:MAX_LLM_RESPONSE],
@@ -876,6 +880,8 @@ def _review_apply_response(entry: dict[str, Any]) -> dict[str, Any] | None:
         "draft_changed": bool(response.get("draft_changed", entry.get("draft_changed"))),
         "changed_paragraphs": changed,
         "model": str(response.get("model") or entry.get("model") or ""),
+        "draft_after_hash": entry.get("draft_after_hash"),
+        **({"comment_binding": entry["comment_binding"]} if isinstance(entry.get("comment_binding"), dict) else {}),
     }
 
 
@@ -901,6 +907,19 @@ CREATE TABLE IF NOT EXISTS comments (
     updated_at  REAL NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_comments_book ON comments (book_id, segment_id);
+CREATE TABLE IF NOT EXISTS revision_reviews (
+    sequence INTEGER PRIMARY KEY AUTOINCREMENT,
+    id TEXT NOT NULL UNIQUE,
+    comment_id TEXT NOT NULL,
+    response_id TEXT NOT NULL,
+    action TEXT NOT NULL,
+    body TEXT NOT NULL,
+    author TEXT NOT NULL,
+    created_at REAL NOT NULL,
+    context TEXT NOT NULL,
+    response TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_revision_reviews_comment ON revision_reviews (comment_id, sequence);
 """
 
 
@@ -923,7 +942,9 @@ class ReviewStore:
                 "scope": "TEXT", "target_kind": "TEXT NOT NULL DEFAULT 'text'",
                 "target_id": "TEXT", "publication_revision": "TEXT",
                 "text_revision": "TEXT", "target_revision": "TEXT",
-                "timestamp_seconds": "REAL", "original_text": "TEXT",
+                "timestamp_seconds": "REAL", "original_text": "TEXT", "chapter_anchor": "TEXT",
+                "review_version": "INTEGER NOT NULL DEFAULT 0",
+                "pipeline_item_id": "TEXT",
             }.items():
                 if name not in columns:
                     conn.execute(f"ALTER TABLE comments ADD COLUMN {name} {definition}")
@@ -953,13 +974,28 @@ class ReviewStore:
             args.append(segment_id)
         sql += " ORDER BY segment_id, draft_para IS NULL, draft_para, created_at"
         with self._connect() as conn:
-            return [dict(r) for r in conn.execute(sql, args)]
+            return self._with_reviews(conn, [dict(r) for r in conn.execute(sql, args)])
 
     def get(self, comment_id: str) -> Optional[dict]:
         with self._connect() as conn:
             row = conn.execute("SELECT * FROM comments WHERE id = ?",
                                (comment_id,)).fetchone()
-        return dict(row) if row else None
+            return self._with_reviews(conn, [dict(row)])[0] if row else None
+
+    def _with_reviews(self, conn, rows):
+        by_id = {row['id']: row for row in rows}
+        for row in rows:
+            row['revision_reviews'] = []
+        if rows:
+            # One history query per book, avoiding a query for every comment.
+            for event in conn.execute('SELECT * FROM revision_reviews WHERE comment_id IN '
+                    '(SELECT id FROM comments WHERE book_id = ?) ORDER BY sequence', (rows[0]['book_id'],)):
+                if event['comment_id'] in by_id:
+                    data = dict(event)
+                    data['context'] = json.loads(data['context'])
+                    data['response'] = json.loads(data['response'])
+                    by_id[event['comment_id']]['revision_reviews'].append(data)
+        return rows
 
     def counts_by_chapter(self, book_id: str) -> dict[str, dict[str, int]]:
         with self._connect() as conn:
@@ -987,13 +1023,38 @@ class ReviewStore:
 
     # -- writes ------------------------------------------------------------
 
+    def import_pipeline_review(self, artifacts: ArtifactStore, book_id: str) -> None:
+        """Idempotent publication import; never replace reviewer decisions."""
+        package = artifacts.pipeline_review(book_id)
+        info = artifacts.revision_info(book_id)
+        now = time.time()
+        with self._connect() as conn:
+            conn.execute('BEGIN IMMEDIATE')
+            for item in package.get('items', []):
+                original = '\n\n'.join(package['chapters'][item['segment_id']]['paragraphs'])
+                existing = conn.execute('SELECT pipeline_item_id FROM comments WHERE id = ?', (item['id'],)).fetchone()
+                if existing is not None:
+                    if existing['pipeline_item_id'] != item['id']:
+                        raise ValueError('Pipeline review ID conflicts with an existing comment')
+                    continue
+                conn.execute('INSERT INTO comments '
+                    '(id, book_id, segment_id, draft_para, anchor, quote, severity, kind, status, body, '
+                    'author, created_at, updated_at, scope, target_kind, original_text, chapter_anchor, '
+                    'publication_revision, text_revision, pipeline_item_id) '
+                    'VALUES (?, ?, ?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                    (item['id'], book_id, item['segment_id'], anchor_hash(original), '',
+                     'blocker' if item['priority'] == 'must_fix' else 'minor', 'continuity', 'open',
+                     item['body'], 'Pipeline critic' if item['kind'] == 'finding' else 'Pipeline repairs',
+                     now, now, 'chapter', 'text', original, item['chapter_anchor'],
+                     info['publication_revision'], info['text_revision'], item['id']))
+
     def add(self, *, book_id: str, segment_id: str, draft_para: int | None,
             anchor: str, quote: str, severity: str, kind: str, body: str,
             author: str, scope: str | None = None, target_kind: str = "text",
             target_id: str | None = None, publication_revision: str | None = None,
             text_revision: str | None = None, target_revision: str | None = None,
             timestamp_seconds: float | None = None,
-            original_text: str | None = None) -> dict:
+            original_text: str | None = None, chapter_anchor: str | None = None) -> dict:
         now = time.time()
         row = {
             "id": uuid.uuid4().hex[:12],
@@ -1014,18 +1075,18 @@ class ReviewStore:
             "target_kind": target_kind, "target_id": target_id,
             "publication_revision": publication_revision, "text_revision": text_revision,
             "target_revision": target_revision, "timestamp_seconds": timestamp_seconds,
-            "original_text": original_text,
+            "original_text": original_text, "chapter_anchor": chapter_anchor,
         }
         with self._connect() as conn:
             conn.execute(
                 "INSERT INTO comments (id, book_id, segment_id, draft_para, anchor,"
                 " quote, severity, kind, status, body, author, created_at, updated_at,"
                 " scope, target_kind, target_id, publication_revision, text_revision,"
-                " target_revision, timestamp_seconds, original_text)"
+                " target_revision, timestamp_seconds, original_text, chapter_anchor)"
                 " VALUES (:id, :book_id, :segment_id, :draft_para, :anchor, :quote,"
                 " :severity, :kind, :status, :body, :author, :created_at, :updated_at,"
                 " :scope, :target_kind, :target_id, :publication_revision, :text_revision,"
-                " :target_revision, :timestamp_seconds, :original_text)",
+                " :target_revision, :timestamp_seconds, :original_text, :chapter_anchor)",
                 row)
         return row
 
@@ -1047,14 +1108,44 @@ class ReviewStore:
         sets["updated_at"] = time.time()
         clause = ", ".join(f"{k} = :{k}" for k in sets)
         with self._connect() as conn:
-            conn.execute(f"UPDATE comments SET {clause} WHERE id = :id",
+            conn.execute(f"UPDATE comments SET {clause}, review_version = review_version + 1 WHERE id = :id",
                          {**sets, "id": comment_id})
         return self.get(comment_id)
 
     def delete(self, comment_id: str) -> bool:
         with self._connect() as conn:
+            conn.execute('DELETE FROM revision_reviews WHERE comment_id = ?', (comment_id,))
             cur = conn.execute("DELETE FROM comments WHERE id = ?", (comment_id,))
         return cur.rowcount > 0
+
+    def review_revision(self, comment_id: str, *, response: dict, action: str,
+                        body: str, author: str, context: dict, expected_version: int) -> dict:
+        """Save a reviewer decision and queue status as one serialized mutation."""
+        if action not in {'accepted', 'rejected', 'reopened'}:
+            raise ValueError('Unknown revision decision.')
+        if not isinstance(body, str) or len(body) > MAX_BODY or (action == 'rejected' and not body.strip()):
+            raise ValueError('Explain what should change before requesting another revision.')
+        with self._connect() as conn:
+            conn.execute('BEGIN IMMEDIATE')
+            row = conn.execute('SELECT * FROM comments WHERE id = ?', (comment_id,)).fetchone()
+            if row is None:
+                raise ValueError('No such comment.')
+            if type(expected_version) is not int or row['review_version'] != expected_version:
+                raise RuntimeError('This review changed. Reload before deciding.')
+            last = conn.execute('SELECT action FROM revision_reviews WHERE comment_id = ? '
+                'AND response_id = ? ORDER BY sequence DESC LIMIT 1', (comment_id, response['id'])).fetchone()
+            state = last['action'] if last else 'pending'
+            if (action == 'reopened' and state != 'accepted') or (action != 'reopened' and state == 'accepted'):
+                raise RuntimeError('Reopen an accepted revision before changing its decision.')
+            now = time.time()
+            conn.execute('INSERT INTO revision_reviews '
+                '(id, comment_id, response_id, action, body, author, created_at, context, response) '
+                'VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                (uuid.uuid4().hex, comment_id, response['id'], action, body.strip(), author[:MAX_AUTHOR],
+                 now, json.dumps(context), json.dumps(response)))
+            conn.execute('UPDATE comments SET status = ?, updated_at = ?, review_version = review_version + 1 WHERE id = ?',
+                ('resolved' if action == 'accepted' else 'open', now, comment_id))
+        return self.get(comment_id)
 
 
 # --------------------------------------------------------------------------
@@ -1068,8 +1159,13 @@ def decorate_comments(artifacts: ArtifactStore, book_id: str, rows: list[dict],
     targets = {t["id"]: t for t in artifacts.media(book_id)["targets"]}
     info = artifacts.revision_info(book_id)
     out = []
+    pipeline_items = {i['id']: i for i in artifacts.pipeline_review(book_id).get('items', [])}
     for row in rows:
+        if row.get('pipeline_item_id') and row['pipeline_item_id'] not in pipeline_items:
+            continue  # Historical editions show only their own immutable review items.
         item = dict(row)
+        if row.get('pipeline_item_id'):
+            item['pipeline_review'] = pipeline_items[row['pipeline_item_id']]
         scope = row.get("scope") or ("book" if row["segment_id"] == BOOK_COMMENT_SEGMENT
                                     else "chapter" if row["draft_para"] is None else "paragraph")
         item.update(scope=scope, stale=False, orphaned=False)
@@ -1088,13 +1184,36 @@ def decorate_comments(artifacts: ArtifactStore, book_id: str, rows: list[dict],
                 item["orphaned"] = alignment is None
                 item["stale"] = alignment is not None and row.get("original_text") is not None and current != row["original_text"]
             else:
-                idx = row["draft_para"]
-                current = paras[idx] if isinstance(idx, int) and 0 <= idx < len(paras) else None
-                item["orphaned"] = current is None
-                item["stale"] = current is not None and bool(row["anchor"]) and anchor_hash(current) != row["anchor"]
+                response = (responses or {}).get(row["id"], [])
+                binding = response[-1].get("comment_binding") if response else None
+                item.update(locate(row, paras, binding))
         response = (responses or {}).get(row["id"], [])
         if response:
             item.update(llm_responses=response, llm_response_count=len(response))
+            latest = response[-1]
+            sid = latest['segment_id']
+            paragraphs = (artifacts.alignment(book_id, sid) or {}).get('draft_paragraphs', [])
+            binding = latest.get('comment_binding')
+            if scope == 'paragraph':
+                # A return to the original chapter can locate the old note,
+                # but must not make a discarded LLM correction reviewable.
+                current = binding_is_current(row, paragraphs, binding)
+            else:
+                digest = hashlib.sha256(('\n\n'.join(paragraphs).strip() + '\n').encode()).hexdigest()[:24]
+                current = bool(paragraphs) and digest == latest.get('draft_after_hash')
+            history = row.get('revision_reviews', [])
+            decisions = [e for e in history if e['response_id'] == latest['id']]
+            decision = decisions[-1] if decisions else None
+            state = decision['action'] if decision else 'pending'
+            item['revision_review'] = {
+                'response_id': latest['id'], 'state': state, 'current': current,
+                'version': row.get('review_version', 0), 'chapter_anchor': chapter_hash(paragraphs),
+                'segment_id': sid, **info,
+                'request': ({'id': decision['id'], 'body': decision['body'], **decision['context']}
+                            if state == 'rejected' else None),
+            }
+            if history and not decision:
+                item['status'] = 'open'  # An old acceptance never approves a new response.
         out.append(item)
     return out
 
@@ -1102,7 +1221,8 @@ def decorate_comments(artifacts: ArtifactStore, book_id: str, rows: list[dict],
 def build_feedback(artifacts: ArtifactStore, reviews: ReviewStore, book_id: str) -> dict:
     return {"version": 1, "source_id": reviews.source_id, "book_id": book_id,
             "complete": True,
-            "comments": decorate_comments(artifacts, book_id, reviews.list_comments(book_id))}
+            "comments": decorate_comments(artifacts, book_id, reviews.list_comments(book_id),
+                artifacts.review_apply_responses(book_id, source_id=reviews.source_id))}
 
 
 def build_edits(artifacts: ArtifactStore, reviews: ReviewStore, book_id: str,
@@ -1110,20 +1230,26 @@ def build_edits(artifacts: ArtifactStore, reviews: ReviewStore, book_id: str,
     """Keep prose overlay compatibility while exporting media separately."""
     wanted = set(statuses)
     comments = decorate_comments(artifacts, book_id,
-                                [c for c in reviews.list_comments(book_id) if c["status"] in wanted])
+                                reviews.list_comments(book_id),
+                                artifacts.review_apply_responses(book_id, source_id=reviews.source_id))
+    comments = [c for c in comments if c['status'] in wanted]
     by_segment: dict[str, list[dict]] = {}
     book_items, media_items = [], []
     for c in comments:
-        item = {**c, "note": c["body"]}
+        item = {**c, "note": c["body"], "source_id": reviews.source_id}
         if c["scope"] in {"audio", "graphic"}:
             media_items.append(item)
         elif c["scope"] == "book":
             book_items.append(item)
         else:
             paras = (artifacts.alignment(book_id, c["segment_id"]) or {}).get("draft_paragraphs", [])
-            idx = c["draft_para"]
-            current = paras[idx] if isinstance(idx, int) and 0 <= idx < len(paras) else None
-            item["paragraph"] = c.get("original_text") if c.get("original_text") is not None else current
+            # Never substitute today's text at an old numeric position.
+            original = c.get("original_text")
+            if original is None and c.get("attachment_status") == "exact":
+                original = paras[c["current_draft_para"]]
+            if original is None and c.get("scope") == "chapter" and not c.get("stale"):
+                original = "\n\n".join(paras)
+            item["paragraph"] = original
             by_segment.setdefault(c["segment_id"], []).append(item)
     return {"book_id": book_id, "generated_at": time.time(), "statuses": sorted(wanted),
             "comment_count": len(comments), "stale_count": sum(c["stale"] for c in comments),

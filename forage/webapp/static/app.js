@@ -403,7 +403,7 @@ function matchesFilters(block) {
 }
 
 function commentsFor(draftPara) {
-  return (state.chapter.comments || []).filter((c) => c.draft_para === draftPara);
+  return (state.chapter.comments || []).filter((c) => c.scope === "paragraph" && c.current_draft_para === draftPara);
 }
 
 function renderChapterBody() {
@@ -447,11 +447,110 @@ function renderChapterBody() {
 
   const bookNotes = renderScopeNotes("Book notes", chapter.book_comments || [], "book");
   const chapterNotes = renderScopeNotes("Chapter notes",
-    (chapter.comments || []).filter((c) => c.scope === "chapter" || (!c.scope && c.draft_para === null)),
+    (chapter.comments || []).filter((c) => !c.pipeline_review && (c.scope === "chapter" || (!c.scope && c.draft_para === null))),
     "chapter");
+  const review = renderPipelineReviews((chapter.comments || []).filter(c => c.pipeline_review),
+    [renderChapterNotes(chapter.chapter_notes), unplaced].filter(Boolean));
+  const jumpTo = (section) => {
+    if (section.tagName === "DETAILS") section.open = true;
+    section.focus({preventScroll: true});
+    section.scrollIntoView({block: "start"});
+  };
+  head.querySelector(".chapter-actions").append(...[
+    review.issues ? h("button", {class: "btn small", type: "button", onclick: () => jumpTo(review.issues)},
+      `Suggested issues (${review.count})`) : null,
+    review.history ? h("button", {class: "btn small", type: "button", onclick: () => jumpTo(review.history)},
+      "Review history") : null,
+  ].filter(Boolean));
 
-  el.main.replaceChildren(head, renderChapterNotes(chapter.chapter_notes),
-    bookNotes, chapterNotes, unplaced, blocks, unused);
+  const unattached = (chapter.comments || []).filter(c =>
+    c.scope === "paragraph" && c.current_draft_para === null);
+  const earlierNotes = unattached.length ? h("section", { class: "scope-notes" },
+    h("h2", {}, "Notes awaiting a matching passage"),
+    h("p", {}, "These notes refer to earlier text. Their current location could not be established."),
+    ...unattached.map(renderNote)) : null;
+  el.main.replaceChildren(...[head, blocks, bookNotes, chapterNotes, earlierNotes,
+    review.issues, review.history, unused].filter(Boolean));
+}
+
+function renderEvidence(evidence) {
+  const names = {source: "Original source", initial: "Earlier draft", revision: "Reviewed draft"};
+  return h("div", {class: "pipeline-evidence"}, evidence.map(e => {
+    const match = e.document.match(/^([A-Za-z0-9_-]+)\.(source|initial|revision)$/);
+    const label = match ? `${names[match[2]]} · chapter ${match[1]}` : e.document;
+    return h("blockquote", {}, h("p", {}, e.quote),
+      h("small", {}, `${label} · paragraph ${e.paragraph} in the recorded review`));
+  }));
+}
+
+function renderPipelineReviews(notes, records) {
+  const expanded = new Map([...document.querySelectorAll('.pipeline-card')]
+    .map(card => [card.dataset.reviewId, card.open]));
+  const order = {must_fix: 0, should_improve: 1, tradeoff: 2, review: 3};
+  notes = [...notes].sort((a, b) => order[a.pipeline_review.priority] - order[b.pipeline_review.priority]);
+  const outstanding = note => note.pipeline_review.kind === "finding"
+    && note.revision_review?.state !== "accepted" && note.revision_review?.current !== false;
+  const suggestions = notes.filter(outstanding);
+  const previous = notes.filter(note => !outstanding(note));
+  const issues = suggestions.length ? h("section", {
+    id: "suggested-issues", class: "scope-notes suggested-issues", tabindex: "-1"},
+    h("h2", {}, "Suggested issues"),
+    h("p", {class: "sheet-note"},
+      "Possible issues identified by automated review. Use your judgment; you can read and annotate the chapter without deciding every suggestion."),
+    !state.session.can_write ? h("p", {class: "sheet-note"}, "Sign in to dismiss a suggestion or request a change.") : null,
+    ...suggestions.map(note => renderPipelineCard(note, expanded))) : null;
+
+  const context = `${state.book.book_id}/${state.chapter.segment_id}/${state.chapter.publication_revision || ""}`;
+  const oldHistory = document.getElementById("review-history");
+  const history = notes.length || records.length ? h("details", {
+    id: "review-history", class: "scope-notes review-history", tabindex: "-1", "data-context": context,
+    open: oldHistory?.dataset.context === context && oldHistory.open},
+    h("summary", {}, "Review history"),
+    h("p", {class: "sheet-note"},
+      "Changes already made, reviewed suggestions, and detailed automated records. Earlier edits may have been revised again; the chapter above is the current text."),
+    ...previous.map(note => renderPipelineCard(note, expanded)),
+    notes.some(note => note.pipeline_review.kind === "finding") ? h("details", {class: "critic-records"},
+      h("summary", {}, "Detailed critic records"),
+      ...notes.filter(note => note.pipeline_review.kind === "finding").map(note => h("details", {class: "pipeline-record"},
+        h("summary", {}, note.pipeline_review.title),
+        h("p", {class: "sheet-note"}, `Recorded priority: ${labelize(note.pipeline_review.priority)} · ${labelize(note.pipeline_review.review_label)}`),
+        h("p", {class: "note-body"}, note.body),
+        note.pipeline_review.finding?.counterevidence ? h("p", {}, `Other context: ${note.pipeline_review.finding.counterevidence}`) : null,
+        renderEvidence(note.pipeline_review.evidence),
+        (note.llm_responses || []).filter(r => r.source === "pipeline_finding").map(renderLlmResponse)))) : null,
+    ...records) : null;
+  return {issues, history, count: suggestions.length};
+}
+
+function renderPipelineCard(note, expanded) {
+  const item = note.pipeline_review;
+  const review = note.revision_review;
+  const labels = {must_fix: "Needs attention", should_improve: "Suggestion", tradeoff: "Optional", review: "Already edited"};
+  const status = review?.current === false ? "Earlier text" : review?.state === "accepted"
+    ? (note.llm_responses?.at(-1)?.source === "pipeline_finding" ? "Dismissed" : "Accepted")
+    : review?.state === "rejected" ? "Changes requested" : "Awaiting review";
+  return h("details", {class: "pipeline-card", "data-review-id": note.id, open: expanded.get(note.id) || false},
+    h("summary", {}, h("span", {class: "tag"}, labels[item.priority]), " ",
+      item.kind === "repair" ? "Changes already made to this chapter" : item.title,
+      h("span", {class: "pipeline-status"}, status)),
+    h("p", {class: "note-body"}, note.body),
+    (note.llm_responses || []).filter(r => !["pipeline_finding", "pipeline_repair"].includes(r.source)).map(renderLlmResponse),
+    review ? renderRevisionReview(note) : null,
+    item.evidence.length ? h("details", {}, h("summary", {}, "Compare source and draft"), renderEvidence(item.evidence)) : null,
+    ...item.history.map((pass, index) => h("details", {class: "pipeline-pass"},
+      h("summary", {}, `Editing pass ${index + 1} · ${plural(pass.replacements.length, "change", "changes")}`),
+      ...pass.replacements.map(patch => h("div", {class: "pipeline-patch"},
+        h("strong", {}, "Before"), h("p", {}, patch.old),
+        h("strong", {}, "After"), h("p", {}, patch.new || "[Removed]"))),
+      h("details", {}, h("summary", {}, "Why these changes were made"),
+        h("p", {class: "sheet-note"}, `Recorded pass: ${labelize(pass.pass)}`),
+        ...pass.adjudications.map(a => {
+          const finding = pass.findings.find(f => f.id === a.id);
+          return h("div", {class: "pipeline-adjudication"},
+            h("strong", {}, `${finding?.title || a.id} · ${a.decision}`),
+            finding?.claim ? h("p", {}, finding.claim) : null,
+            h("p", {}, a.reason), renderEvidence(a.evidence || []));
+        })))));
 }
 
 function formatDelta(value) {
@@ -596,20 +695,26 @@ function renderNote(note) {
     h("div", { class: "note-head" },
       h("span", { class: `tag sev-${note.severity}` }, note.severity),
       h("span", { class: "tag" }, note.kind),
-      note.status !== "open" ? h("span", { class: "tag" }, note.status) : null,
+      note.status !== "open" && !note.revision_review ? h("span", { class: "tag" }, note.status) : null,
       note.stale ? h("span", { class: "tag stale", title: "The reviewed content changed after this note was written" }, "stale") : null,
       note.orphaned ? h("span", { class: "tag stale", title: "The reviewed target is absent from this edition" }, "orphaned") : null,
       h("span", { class: "note-author" }, `${note.author || "anon"} · ${relTime(note.created_at)}`)),
     note.timestamp_seconds !== null && note.timestamp_seconds !== undefined ? h("p", { class: "note-time" }, `At ${note.timestamp_seconds.toFixed(2)} seconds in this chunk`) : null,
     note.quote ? h("p", { class: "note-quote" }, `“${note.quote}”`) : null,
+    note.stale && note.original_text ? h("details", { class: "note-original" },
+      h("summary", {}, "Originally reviewed passage"),
+      h("p", { class: "note-quote" }, note.original_text)) : null,
+    note.current_draft_paras?.length > 1 ? h("p", { class: "sheet-note" },
+      `Revised passage: draft ${note.current_draft_paras.join(", ")}`) : null,
     h("p", { class: "note-body" }, note.body),
     responses.length
       ? h("div", { class: "note-responses" }, responses.map(renderLlmResponse))
       : null,
-    canWrite
+    note.revision_review ? renderRevisionReview(note) : null,
+    canWrite && !note.revision_review
       ? h("div", { class: "note-foot" },
         note.status === "open"
-          ? h("button", { type: "button", onclick: () => setStatus(note, "accepted") }, "Accept")
+          ? h("button", { type: "button", onclick: () => setStatus(note, "accepted") }, "Accept comment")
           : null,
         note.status !== "resolved"
           ? h("button", { type: "button", onclick: () => setStatus(note, "resolved") }, "Resolve")
@@ -620,6 +725,79 @@ function renderNote(note) {
         h("button", { type: "button", onclick: () => editNote(note) }, "Edit"),
         h("button", { type: "button", onclick: () => removeNote(note) }, "Delete"))
       : null);
+}
+
+function renderRevisionReview(note) {
+  const review = note.revision_review;
+  const finding = note.llm_responses?.at(-1)?.source === "pipeline_finding";
+  const labels = {pending: finding ? "Suggestion awaiting review" : "Awaiting revision review", accepted: finding ? "Suggestion dismissed" : "Revision accepted",
+    rejected: "Changes requested", reopened: finding ? "Suggestion reopened" : "Revision reopened"};
+  const history = note.revision_reviews || [];
+  return h("section", {class: "revision-review", "aria-label": "Revision review"},
+    h("strong", {class: `revision-state ${review.state}`}, labels[review.state]),
+    review.state === "rejected" ? h("p", {class: "revision-request"}, review.request.body) : null,
+    review.state === "rejected" ? h("p", {class: "sheet-note"},
+      "Your feedback is saved. The next pipeline run is started separately outside this website.") : null,
+    !review.current ? h("p", {class: "sheet-note"},
+      "This response refers to earlier text. Review the current edition before deciding.") : null,
+    state.session.can_write && review.current ? h("div", {class: "revision-actions"},
+      review.state === "accepted"
+        ? h("button", {class: "btn small", type: "button", onclick: () => decideRevision(note, "reopened")}, finding ? "Reopen suggestion" : "Reopen revision")
+        : [h("button", {class: "btn small", type: "button", onclick: () => decideRevision(note, "accepted")}, finding ? "Dismiss suggestion" : "Accept revision"),
+           h("button", {class: "btn small", type: "button", onclick: () => rejectRevision(note)},
+             review.state === "rejected" ? "Update revision request" : finding ? "Request change with comment" : "Reject with comment")]) : null,
+    history.length ? h("details", {class: "revision-history"},
+      h("summary", {}, `Review history (${history.length})`),
+      ...history.map(event => h("div", {class: "revision-event"},
+        h("p", {class: "sheet-note"}, `${labels[event.action]} · ${event.author || "Reviewer"} · ${displayTime(event.created_at)}`),
+        event.body ? h("p", {class: "note-body"}, event.body) : null,
+        h("details", {}, h("summary", {}, "Response reviewed"), h("p", {}, event.response.body))))) : null);
+}
+
+async function saveRevisionDecision(note, action, body = "") {
+  const review = note.revision_review;
+  const updated = await api(`/api/comments/${note.id}/revision-review`, {
+    method: "POST", body: {action, body, response_id: review.response_id,
+      version: review.version, chapter_anchor: review.chapter_anchor,
+      publication_revision: review.publication_revision}
+  });
+  replaceComment(updated);
+}
+
+async function decideRevision(note, action) {
+  try {
+    await saveRevisionDecision(note, action);
+    if (note.pipeline_review) {
+      const card = document.querySelector(`.pipeline-card[data-review-id="${CSS.escape(note.id)}"]`);
+      if (card) {
+        const history = card.closest("#review-history");
+        if (history) history.open = true;
+        card.open = true;
+        card.querySelector("summary").focus({preventScroll: true});
+        card.scrollIntoView({block: "nearest"});
+      }
+    }
+  }
+  catch (err) { toast(err.message, "error"); }
+}
+
+function rejectRevision(note) {
+  const finding = note.llm_responses?.at(-1)?.source === "pipeline_finding";
+  const dialog = h("dialog", {class: "sheet"});
+  const body = h("textarea", {rows: 6, "aria-label": "What should change?", required: true},
+    note.revision_review.request?.body || "");
+  const error = h("p", {class: "sheet-error", role: "alert"});
+  const submit = h("button", {class: "btn primary", type: "button", onclick: async () => {
+    if (!body.value.trim()) { error.textContent = "Describe what should change."; body.focus(); return; }
+    submit.disabled = true;
+    try { await saveRevisionDecision(note, "rejected", body.value.trim()); dialog.close(); }
+    catch (err) { error.textContent = err.message; submit.disabled = false; }
+  }}, "Save revision request");
+  dialog.append(h("h2", {}, finding ? "Request a change" : "Reject revision with feedback"),
+    h("p", {class: "sheet-note"}, "Explain what should change. Saving queues your feedback; the pipeline is run separately outside this website."),
+    body, error, h("button", {class: "btn", type: "button", onclick: () => dialog.close()}, "Cancel"), submit);
+  dialog.addEventListener("close", () => dialog.remove());
+  document.body.append(dialog); dialog.showModal(); body.focus();
 }
 
 function renderLlmResponse(response) {
@@ -633,7 +811,8 @@ function renderLlmResponse(response) {
   ].filter(Boolean).join(" · ");
   return h("div", { class: `llm-response ${response.action || "processed"}` },
     h("div", { class: "llm-response-head" },
-      h("span", { class: `tag llm-${response.action || "processed"}` }, `LLM ${action}`),
+      h("span", { class: `tag llm-${response.action || "processed"}` },
+        response.source === "pipeline_finding" ? "Critic finding" : response.source === "pipeline_repair" ? "Pipeline repairs" : `LLM ${action}`),
       meta ? h("span", { class: "llm-response-meta" }, meta) : null),
     h("p", { class: "llm-response-body" }, response.body),
     changed.length

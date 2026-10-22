@@ -205,6 +205,9 @@ def verify_revision(book: Book, revision_id: str) -> dict:
         if actual != expected or not verify_inventory(directory, outputs):
             raise ValueError("publication file inventory is missing, changed or contains extra files")
         _review_text(directory, outputs)
+        if any(item['path'] == 'pipeline_review.json' for item in outputs):
+            from .pipeline_review import validate_package
+            validate_package(json.loads((directory / 'pipeline_review.json').read_text()), book.book_id)
         index = json.loads((directory / "media_manifest.json").read_text(encoding="utf-8"))
         _media(index, directory, book.book_id, record["text_revision"], record["selected_outputs"], outputs)
     except (OSError, KeyError, TypeError, json.JSONDecodeError) as exc:

@@ -277,6 +277,13 @@ def package(book_ids: list[str], out_dir: Path) -> int:
         for book_id in book_ids:
             size, chapters = _stage_book(book_id, stage / "artifacts", stage / "books")
             summaries.append((book_id, size, chapters))
+        # Atomic pipeline writes are owner-only. These selected public copies
+        # must also be readable when the web server runs under a different uid
+        # from the operator who builds/uploads the package.
+        for public_root in (stage / "artifacts", stage / "books"):
+            public_root.chmod(0o755)
+            for path in public_root.rglob("*"):
+                path.chmod(0o755 if path.is_dir() else 0o644)
         _publish(stage, out_dir, books_out)
         published = True
     finally:

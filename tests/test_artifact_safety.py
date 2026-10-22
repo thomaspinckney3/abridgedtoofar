@@ -342,3 +342,28 @@ def test_one_book_archive_keeps_existing_layout(package_tree):
     assert f"books/{BOOK_ID}/source.txt" not in names
     assert _snapshot(root / "work") == before_work
     assert _snapshot(root / "books") == before_books
+
+
+@pytest.mark.parametrize("archive", [False, True])
+def test_private_pipeline_files_publish_readable_copies(package_tree, archive):
+    root = package_tree
+    alignment = root / "work" / BOOK_ID / "alignments" / "001.json"
+    ledger = root / "work" / BOOK_ID / "editorial" / "review_apply_ledger.json"
+    for path in (alignment, ledger):
+        path.chmod(0o600)
+        path.parent.chmod(0o700)
+    if archive:
+        bundle_path = root / "book.tgz"
+        _archive_book(BOOK_ID, bundle_path)
+        with tarfile.open(bundle_path) as bundle:
+            for member in bundle.getmembers():
+                assert member.mode == (0o755 if member.isdir() else 0o644)
+    else:
+        output = root / "deploy" / "artifacts"
+        assert packaging.package([BOOK_ID], output) == 0
+        for public_root in (output, output.parent / "books"):
+            for path in [public_root, *public_root.rglob("*")]:
+                assert path.stat().st_mode & 0o777 == (0o755 if path.is_dir() else 0o644)
+    for path in (alignment, ledger):
+        assert path.stat().st_mode & 0o777 == 0o600
+        assert path.parent.stat().st_mode & 0o777 == 0o700

@@ -40,6 +40,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .auth import (COOKIE_NAME, AuthConfig, LoginLimiter, RateLimiter, Session,
                    client_ip, env_flag, is_secure)
+from ..review_anchors import chapter_hash
 from .store import (BOOK_COMMENT_SEGMENT, KINDS, SEVERITIES, STATUSES,
                     ArtifactStore, ReviewStore, build_edits, build_feedback,
                     decorate_comments, publish_edits, valid_book_id,
@@ -197,14 +198,16 @@ def create_app(artifacts: ArtifactStore | None = None,
             with book_lock(book):
                 pending = book.work_dir / "feedback_pending"
                 atomic_json(pending, {"version": 1, "book_id": book_id})
-                yield warning
                 try:
-                    selected = artifacts.selected(book_id)
-                    atomic_json(book.work_dir / "feedback.json", build_feedback(selected, reviews, book_id))
-                    pending.unlink()
-                except (OSError, ValueError):
-                    warning["feedback_projection_warning"] = "Saved successfully. Local feedback cache refresh failed; use HTTP feedback or repeat publication to refresh it."
-                    logging.getLogger(__name__).warning("Feedback projection refresh failed for %s; local pulls are blocked", book_id)
+                    yield warning
+                finally:
+                    try:
+                        selected = artifacts.selected(book_id)
+                        atomic_json(book.work_dir / "feedback.json", build_feedback(selected, reviews, book_id))
+                        pending.unlink()
+                    except (OSError, ValueError):
+                        warning["feedback_projection_warning"] = "Saved successfully. Local feedback cache refresh failed; use HTTP feedback or repeat publication to refresh it."
+                        logging.getLogger(__name__).warning("Feedback projection refresh failed for %s; local pulls are blocked", book_id)
         except RuntimeError as exc:
             raise HTTPException(status_code=409, detail=str(exc))
 
@@ -275,9 +278,17 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     # -- reading -----------------------------------------------------------
 
+    def comment_counts(selected, book_id):
+        by_chapter, total = {}, {'total': 0}
+        for row in build_feedback(selected, reviews, book_id)['comments']:
+            chapter = by_chapter.setdefault(row['segment_id'], {'total': 0})
+            for bucket in (chapter, total):
+                bucket['total'] += 1
+                bucket[row['status']] = bucket.get(row['status'], 0) + 1
+        return by_chapter, total
+
     @app.get("/api/books")
     def list_books() -> dict:
-        comment_counts = reviews.counts_by_book()
         books = []
         for book_id in artifacts.book_ids():
             try:
@@ -294,7 +305,7 @@ def create_app(artifacts: ArtifactStore | None = None,
                 "chapters": summary.chapters,
                 "counts": summary.counts,
                 "diagnostics": summary.diagnostics,
-                "comments": comment_counts.get(book_id, {"total": 0}),
+                "comments": comment_counts(selected, book_id)[1],
             })
         return {"books": books}
 
@@ -335,6 +346,8 @@ def create_app(artifacts: ArtifactStore | None = None,
         try:
             store = receiver()
             with review_mutation(book_id) as warning:
+                selected = selected_book(book_id, revision=payload['revision'])
+                reviews.import_pipeline_review(selected, book_id)
                 pointer = store.promote(book_id, payload.get("revision"), payload.get("channel", "review"), lock_held=True)
         except FileNotFoundError as exc:
             raise HTTPException(status_code=404, detail=str(exc))
@@ -362,10 +375,10 @@ def create_app(artifacts: ArtifactStore | None = None,
     @app.get("/api/books/{book_id}/chapters")
     def chapter_index(book_id: str, selected: ArtifactStore = Depends(selected_book)) -> dict:
         summary = selected.book_summary(book_id)
-        comment_counts = reviews.counts_by_chapter(book_id)
+        counts = comment_counts(selected, book_id)[0]
         chapters = selected.chapter_index(book_id)
         for ch in chapters:
-            ch["comments"] = comment_counts.get(ch["segment_id"], {"total": 0})
+            ch["comments"] = counts.get(ch["segment_id"], {"total": 0})
         manifest = selected._revisions.get(book_id, {})
         downloads = []
         for item in manifest.get("outputs", []):
@@ -391,7 +404,8 @@ def create_app(artifacts: ArtifactStore | None = None,
         view["comments"] = decorate_comments(selected, book_id,
             [c for c in reviews.list_comments(book_id, segment_id) if c.get("target_kind") == "text"], responses)
         view["book_comments"] = decorate_comments(selected, book_id,
-            reviews.list_comments(book_id, BOOK_COMMENT_SEGMENT), responses)
+            reviews.list_comments(book_id, BOOK_COMMENT_SEGMENT),
+            selected.review_apply_responses(book_id, source_id=reviews.source_id))
         view.update(selected.revision_info(book_id))
         return view
 
@@ -516,6 +530,7 @@ def create_app(artifacts: ArtifactStore | None = None,
         with review_mutation(book_id) as warning:
             row = reviews.add(book_id=book_id, segment_id=segment_id, draft_para=draft_para,
                 anchor=anchor, original_text=original_text, quote=str(payload.get("quote", "")),
+                chapter_anchor=chapter_hash(paras) if scope == "paragraph" else None,
                 severity=str(payload.get("severity", "minor")), kind=str(payload.get("kind", "other")),
                 body=body.strip(), author=sess.label, scope=scope,
                 target_kind=scope if scope in {"audio", "graphic"} else "text", target_id=target_id,
@@ -528,6 +543,8 @@ def create_app(artifacts: ArtifactStore | None = None,
         existing = reviews.get(comment_id)
         if not existing:
             raise HTTPException(status_code=404, detail="No such comment.")
+        if existing.get('pipeline_item_id'):
+            raise HTTPException(status_code=409, detail='Use the pipeline review decision controls to dismiss or request changes.')
         if "body" in payload and (not isinstance(payload["body"], str) or not payload["body"].strip()):
             raise HTTPException(status_code=400, detail="A comment needs a body.")
         book_id = existing["book_id"]
@@ -541,10 +558,52 @@ def create_app(artifacts: ArtifactStore | None = None,
         existing = reviews.get(comment_id)
         if not existing:
             raise HTTPException(status_code=404, detail="No such comment.")
+        if existing.get('pipeline_item_id'):
+            raise HTTPException(status_code=409, detail='Pipeline review evidence is retained. Dismiss the finding instead.')
         with review_mutation(existing["book_id"]) as warning:
             if not reviews.delete(comment_id):
                 raise HTTPException(status_code=404, detail="No such comment.")
         return {"deleted": comment_id, **warning}
+
+    @app.post("/api/comments/{comment_id}/revision-review")
+    def review_revision(comment_id: str, payload: dict = Body(...),
+                        sess: Session = Depends(require_write)) -> dict:
+        existing = reviews.get(comment_id)
+        if existing is None:
+            raise HTTPException(status_code=404, detail="No such comment.")
+        action, body = payload.get('action'), payload.get('body', '')
+        from .store import MAX_BODY
+        if not isinstance(action, str) or action not in {'accepted', 'rejected', 'reopened'}:
+            raise HTTPException(status_code=400, detail='Unknown revision decision.')
+        if not isinstance(body, str) or len(body) > MAX_BODY or (action == 'rejected' and not body.strip()):
+            raise HTTPException(status_code=400, detail='Explain what should change before requesting another revision.')
+        book_id = existing['book_id']
+        with review_mutation(book_id) as warning:
+            selected = selected_book(book_id)
+            responses = selected.review_apply_responses(book_id, source_id=reviews.source_id)
+            existing = reviews.get(comment_id)
+            if existing is None:
+                raise HTTPException(status_code=404, detail='No such comment.')
+            visible = decorate_comments(selected, book_id, [existing], responses)
+            if not visible:
+                raise HTTPException(status_code=409, detail='The revision changed. Reload and review the current text.')
+            viewed = visible[0]
+            review = viewed.get('revision_review')
+            if (not review or not review['current']
+                    or payload.get('response_id') != review['response_id']
+                    or payload.get('chapter_anchor') != review['chapter_anchor']
+                    or payload.get('publication_revision') != review['publication_revision']):
+                raise HTTPException(status_code=409, detail='The revision changed. Reload and review the current text.')
+            context = {k: review[k] for k in ('segment_id', 'chapter_anchor', 'publication_revision', 'text_revision')}
+            try:
+                row = reviews.review_revision(comment_id, response=viewed['llm_responses'][-1],
+                    action=action, body=body, author=sess.label, context=context,
+                    expected_version=payload.get('version'))
+            except ValueError as exc:
+                raise HTTPException(status_code=400, detail=str(exc))
+            except RuntimeError as exc:
+                raise HTTPException(status_code=409, detail=str(exc))
+        return {**decorate_comments(selected, book_id, [row], responses)[0], **warning}
 
     @app.get("/api/books/{book_id}/edits.json")
     def download_edits(book_id: str, selected: ArtifactStore = Depends(selected_book)) -> JSONResponse:
