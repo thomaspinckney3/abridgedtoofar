@@ -1,0 +1,126 @@
+{
+  "book_id": "secret_adversary",
+  "run_id": "20261019T200316Z",
+  "plan_only": false,
+  "dry_run": false,
+  "edits_path": "/mnt/data/tmp/forage-comment-fix-20261019/stage/editorial/edits.json",
+  "ledger_path": "/mnt/data/tmp/forage-comment-fix-20261019/stage/editorial/review_apply_ledger.json",
+  "overlay_generated_at": null,
+  "include_book_comments": true,
+  "segments_considered": 1,
+  "segments_planned": 1,
+  "pending_feedback": 7,
+  "already_used_feedback": 0,
+  "blocked_feedback": 0,
+  "blocked": [],
+  "needs_segment_for_book_comments": false,
+  "segments": [
+    {
+      "segment_id": "002",
+      "status": "applied",
+      "feedback_count": 7,
+      "decisions": [
+        {
+          "feedback_key": "5b7bf781671c9f5d9327d648",
+          "comment_id": "14b0246e7379",
+          "action": "applied",
+          "reason": "The draft gave Tuppence's lines to Tommy. Restored the source's exchange (\"Yes. You too?\" / \"Gratuity?\") with compact speaker tags, and kept the \"Good old hospital\" line, which shows what \"demobbed\" refers to.",
+          "changed_paragraphs": [
+            8
+          ],
+          "target_paragraphs": [
+            8
+          ],
+          "display_paragraph": 8
+        },
+        {
+          "feedback_key": "4f252c3e3597d17ff58584c3",
+          "comment_id": "652ff7668a60",
+          "action": "applied",
+          "reason": "Added a source-supported speaker tag (\"interrupted Tuppence\") to make clear Tuppence is speaking.",
+          "changed_paragraphs": [
+            9
+          ],
+          "target_paragraphs": [
+            9
+          ],
+          "display_paragraph": 9
+        },
+        {
+          "feedback_key": "b607ccf8ec3d22530313aee8",
+          "comment_id": "62ea4d726a37",
+          "action": "applied",
+          "reason": "Briefly restored the source's context that she came to London and worked in an officers' hospital, which explains her duties.",
+          "changed_paragraphs": [
+            13
+          ],
+          "target_paragraphs": [
+            13
+          ],
+          "display_paragraph": 13
+        },
+        {
+          "feedback_key": "cdde525791a0d305f13bd17d",
+          "comment_id": "33a0f8dfb10b",
+          "action": "applied",
+          "reason": "Added a speaker tag so it is clear Tommy is speaking.",
+          "changed_paragraphs": [
+            14
+          ],
+          "target_paragraphs": [
+            14
+          ],
+          "display_paragraph": 14
+        },
+        {
+          "feedback_key": "19e75db9e390fd7f56d1f5d2",
+          "comment_id": "14ca01f35f32",
+          "action": "applied",
+          "reason": "Clarified that \"the mater\" is his mother, so \"her\" has a clear referent. The source states this through Tuppence's line about his mother.",
+          "changed_paragraphs": [
+            16
+          ],
+          "target_paragraphs": [
+            16
+          ],
+          "display_paragraph": 16
+        },
+        {
+          "feedback_key": "617220dd0f848ec3bc582e50",
+          "comment_id": "4904570169bf",
+          "action": "applied",
+          "reason": "Named Tuppence as the owner of the misty eyes and added \"she said\" so the speaker is clear.",
+          "changed_paragraphs": [
+            18
+          ],
+          "target_paragraphs": [
+            18
+          ],
+          "display_paragraph": 18
+        },
+        {
+          "feedback_key": "0b3ad950527e878250356f1e",
+          "comment_id": "6412ee937f80",
+          "action": "skipped",
+          "reason": "The source also mentions the hostel here, at Tuppence's exit line, with no earlier setup. The draft adds no new problem, so no change was made.",
+          "changed_paragraphs": [],
+          "target_paragraphs": [
+            39
+          ],
+          "display_paragraph": 39
+        }
+      ],
+      "changed": true,
+      "snapshot": "/mnt/data/tmp/forage-comment-fix-20261019/stage/segments/002.review_apply.cb0c5b84b71d45309c25fa70cbfe9ae0.before.md",
+      "before_words": 968,
+      "after_words": 1001,
+      "model": "anthropic:claude-sonnet-5-5",
+      "input_tokens": 4,
+      "output_tokens": 5515,
+      "dry_run": false
+    }
+  ],
+  "segments_applied": 1,
+  "segments_no_change": 0,
+  "segments_failed": 0
+}
