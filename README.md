@@ -244,9 +244,11 @@ Zero-LLM. Motif concordance, style distribution (sentence length, em-dash freque
 One Sonnet call per chapter (~$0.15 each). For each chapter, aligns draft paragraphs back to their source paragraphs and classifies each as `verbatim`, `paraphrased`, `compressed`, or `unsupported`. Renders a self-contained HTML file at `work/<book>/proofread.html`:
 
 - Color-coded blocks per classification
-- Stacked draft ↔ source view for compressed pairs
-- Inline word-level diff (using Python's `difflib`) for close pairs where a paragraph-scale edit isn't happening
-- Collapsible "source paragraphs not mapped to any draft" section per chapter showing cut material
+- Clean abridged paragraphs above their source comparisons
+- Sentence-aware highlights on the source: red strikethrough for removals and green underline for additions, including readable compression and multiple source paragraphs
+- Substantial rewrites stay plain with an explanatory label; nearby small edits and clear cuts still receive highlights. Identical sentences moved within a comparison stay plain and are labeled as reordered. These are wording comparisons, not judgments of equivalent meaning
+- Source paragraphs shared by several abridged paragraphs are compared together so retained wording is not falsely marked as deleted; quote style and line wrapping alone are ignored
+- Collapsible "source paragraphs not mapped to any draft" section per chapter marks fully cut material in red
 - `unsupported` flags likely drift / fabrication / cross-chapter movement
 
 Alignments cache to `work/<book>/alignments/NNN.json`. Re-running reuses mappings only when their embedded source and draft paragraphs match current files; changed inputs or corrupt caches regenerate. Failed regeneration reports an error and preserves the previous review view. The `--render-only` flag skips freshness checks and LLM calls and re-renders HTML from existing alignments.

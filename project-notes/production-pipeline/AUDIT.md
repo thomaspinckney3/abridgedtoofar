@@ -2369,3 +2369,207 @@ documentation append does not change the tested or deployed application image.
 
 Snapshot `vs_4g38XgBpwN9skV72RPXPo0j` is confirmed created at
 2026-10-22T23:14:11Z with five-day retention.
+
+# Source Comparison Highlighting
+
+## 2026-10-22
+
+### Verdict
+
+Exposed and verified locally. Abridged paragraphs remain plain text; additions
+and deletions appear consistently in their source comparison. This change is
+not yet committed or deployed. No blocking findings remain in the changed paths.
+
+### Functional audit
+
+- The previous renderer enabled a diff only for sufficiently similar,
+  single-source verbatim/paraphrased blocks, then replaced the abridged text
+  with that diff. The shared renderer now annotates the source regardless of
+  classification, compression ratio or number of mapped source paragraphs.
+- Deletions use red backgrounds and strikethrough; additions use green
+  backgrounds and underlines. A legend explains both. Completely cut source
+  paragraphs are marked as deletions; unmatched draft additions receive an
+  explicitly labeled source comparison.
+- Connected source/draft mappings are compared together. A source paragraph
+  split between multiple draft paragraphs no longer falsely marks text retained
+  in another draft paragraph as deleted. Paragraph boundaries and source IDs
+  are retained, and shared comparisons state their abridged paragraph count.
+- Original source text is preserved exactly when insertion markup is excluded.
+  Matching ignores whitespace and quote-style differences while preserving
+  original typography. Unrelated rewritten phrases receive coherent spans.
+  All source and draft content is HTML-escaped before markup is added.
+- Draft text and review anchors are unchanged. Browser selection returns the
+  clean abridged passage, without removed source wording.
+
+### Validation
+
+- Final focused tests: **35 passed** in `tests/test_source_highlights.py` and
+  `tests/test_alignment_freshness.py`, including source/draft reconstruction,
+  retained phrases across source boundaries, shared mappings, HTML escaping,
+  all classifications, API output and static report parity.
+- Broader review regression run: **197 passed**, with 12 existing Starlette
+  TestClient timeout warnings. This preceded the final word-matching refinement;
+  the focused tests, corpus checks and browser checks were rerun afterward.
+- Final real-corpus check: **57 chapters, 2,737 blocks, 2,721 comparison groups**.
+  Every source paragraph reconstructed exactly; every compared draft
+  reconstructed after whitespace/quote normalization. The sample took 1.077s,
+  with a slowest chapter of 0.027s.
+- Real Chromium checks passed for light/dark desktop/mobile layouts, plain
+  abridged selection, compressed/rewritten/combined/split passages, unmatched
+  additions, whole cuts, literal HTML content and static report parity. No
+  horizontal overflow or browser exceptions were observed. Final screenshots
+  were visually inspected.
+- `node --check forage/webapp/static/app.js` and `git diff --check` passed.
+  Local evidence is in `/tmp/forage-source-highlights-tests.log`,
+  `/tmp/forage-highlights-regression.log`, `/tmp/forage-highlights-corpus.log`
+  and `/tmp/forage-highlights-browser.log`.
+
+### Structure and forward impact
+
+- `forage.proofread.source_comparisons` owns comparison grouping and rendering
+  for both the API and static report. The web client renders only server-escaped
+  comparison markup and keeps its existing plain-text draft/comment path.
+- Existing word-diff helpers remain available to their compatibility callers.
+  README and architecture documentation describe the source-only presentation.
+- This is a read-time presentation change. No paid model calls, pipeline reruns,
+  book text edits, publication mutations or production requests were made.
+  Existing exported static reports require regeneration to adopt the new view;
+  the web app computes it from its existing alignment artifacts after deployment.
+
+# Sentence-Aware Source Comparison Audit
+
+## 2026-10-23
+
+### Verdict
+
+Functional, structural and forward-impact checks pass locally. The user asked
+for sentence-aware matching and explicitly accepted leaving substantial
+paraphrasing unhighlighted. This supersedes the earlier requirement to highlight
+every rewrite. State: exposed and locally verified; not committed or deployed.
+
+### Findings and evidence
+
+1. Sentence boundaries and anchors reduce scattered word matches.
+   `forage/proofread.py:251` preserves original characters while recognizing
+   common titles, initials, decimals and dialogue attribution.
+   `forage/proofread.py:289` anchors exact sentences, consumes reordered matches
+   by occurrence, and then finds similar sentence anchors within changed runs.
+   One-to-many sentence changes stay together to preserve split/merged wording.
+2. Unreadable replacements intentionally remain plain, with an explanation.
+   `forage/proofread.py:271` uses shared wording to assess readability, not
+   semantic equivalence or editorial quality. Clear additions/deletions retain
+   their marks; nearby small edits remain visible when a rewrite is suppressed.
+   `forage/proofread.py:467` and `forage/webapp/static/app.js:719` expose the same
+   per-source explanation in the static report and web app. Identical moved
+   sentences stay plain and receive a sentence-order note.
+3. Original source text, paragraph boundaries and HTML escaping are preserved.
+   Source reconstruction passed for all 2,721 comparison groups in 57 existing
+   chapters. Draft reconstruction also passed wherever the view is a complete
+   inline comparison; labeled rewrites and reorderings intentionally do not
+   provide that representation. Of 416 blocks labeled paraphrased, 16 contain
+   at least one rewrite shown plain; 108 groups across all classifications do.
+   The final sample ran in 0.951s, slowest chapter 0.036s.
+
+### Validation
+
+- Focused command: `.venv/bin/python -m pytest -q tests/test_source_highlights.py tests/test_alignment_freshness.py`
+  — **50 passed**. Tests cover mixed rewrites/edits/cuts, repeated and moved
+  sentences, splitting/merging, empty text, spacing, punctuation boundaries,
+  HTML escaping, and API/static explanations. Earlier expectations requiring
+  every rewrite to be highlighted were updated to the user's new requirement.
+- Review regression command: `.venv/bin/python -m pytest -q tests/test_source_highlights.py tests/test_alignment_freshness.py tests/test_webapp_security.py tests/test_artifact_safety.py tests/test_web_media.py tests/test_review_anchors.py tests/test_revision_review.py tests/test_pipeline_review.py tests/test_note_ownership.py`
+  — **214 passed**, 12 existing Starlette TestClient timeout warnings.
+- `.venv/bin/python /tmp/forage-sentence-corpus.py` — all reconstruction checks
+  above passed; results in `/tmp/forage-sentence-corpus.log`.
+- `node /tmp/forage-sentence-browser.cjs` — light/dark desktop/mobile checks
+  passed for plain drafts, selection, source colors, explained rewrites and
+  moves, shared paragraphs, cuts, literal HTML, and static report parity.
+  No browser exceptions or horizontal overflow. Screenshots visually inspected.
+- `node --check forage/webapp/static/app.js` and `git diff --check` passed.
+  Regression/browser logs: `/tmp/forage-sentence-regressions.log` and
+  `/tmp/forage-sentence-browser.log`. The temporary preview server was stopped.
+
+### Completeness, structure and forward impact
+
+- All requested local behavior is exposed on both review surfaces. Abridged
+  text remains clean and review anchors unchanged. No placeholder paths remain.
+- Comparison policy remains in the shared proofreading renderer; the client
+  only displays escaped markup and explanations. Sentence recognition, wording
+  overlap and the low-level diff have separate responsibilities. README and
+  architecture describe the updated policy.
+- Sentence boundaries and lexical overlap are deliberately conservative
+  presentation heuristics. They do not establish that a paraphrase preserves
+  meaning, and only identical sentences are recognized as moves. The plain
+  abridgment and original source remain available for that editorial judgment.
+- No new dependencies, paid model calls, generation, publication changes,
+  production requests or book/review/account mutations. Existing static exports
+  need regeneration and the live application needs deployment to adopt this view.
+
+# Source Comparison Release Verification
+
+## 2026-10-23
+
+### Verdict
+
+Release-verified on https://forage-review.fly.dev, Fly **v27**, following the
+user's explicit deployment request. Functional, structural and forward-impact
+checks pass. The running image contains the tested source-only highlighting and
+sentence-aware comparison changes, including explanations for plain rewrites.
+Git changes remain uncommitted and unpushed; deployment used the working tree
+based on `d1fbc82` with its application file hashes recorded.
+
+### Release and validation evidence
+
+- Immutable tested image:
+  `registry.fly.io/forage-review@sha256:f3bc94e387d0d9e7c8262788c74b27458e281031b1b43a83ae62f05bfa7a77c2`.
+  All 67 application files match between the working tree, tested image and
+  running container. All 279 packaged artifact/metadata files are byte-identical
+  before and after repackaging; this release does not refresh book content.
+- `FORAGE_DOCKER_TESTS=1 DOCKER_HOST=unix:///run/user/1000/docker.sock .venv/bin/python -m pytest -q tests/test_container.py`
+  — **nine passed** against the rebuilt image. The prior **214 review regression
+  tests** and sentence-comparison corpus/browser checks cover the same code.
+- Deployment used the verified image digest with `--ha=false --update-only
+  --strategy rolling`. The existing machine `87e005f0262398` remains started
+  in iad with its original volume `vol_re176w7xje1gj214` and a passing HTTP check.
+  The single worker/machine topology, secrets and session epoch are unchanged.
+- Before/after public captures match for all five books, 115 chapters, 456
+  notes, publication pointers and downloads. Comparison excludes only changed
+  presentation fields (`diff_html`, `source_addition_html`,
+  `comparison_draft_paras`, `comparison_note`); prose and review data match.
+- SQLite integrity passes. Every row/column in comments, review metadata,
+  revision reviews and users matches the pre-deployment backup: 456 notes,
+  one revision decision and three accounts. All 780 recorded volume artifact
+  hashes match. Browser verification created and revoked only its own session.
+- Real Chromium verification passes on live passages: red/green source marks,
+  plain abridged text, displayed rewrite explanations, and exact original
+  source reconstruction after excluding additions. Light/dark desktop/mobile
+  layouts have no horizontal overflow or browser exceptions. Existing admin
+  login, secure/HttpOnly/Lax session cookie, three accounts and logout pass.
+  Live screenshots were visually inspected.
+- Detailed scripts, captures, source hashes and verification results are in
+  `/tmp/forage-source-highlights-release-20261023/`, including `verification.json`,
+  `container-tests.log`, `deploy.log`, `public-after-summary.json`,
+  `verify-remote.log`, and `live-browser.log`. `git diff --check` passes.
+
+### Recovery and scope
+
+The consistent SQLite backup is
+`/data/backups/source-highlights-20261023/review.db`, alongside the volume
+artifact hash manifest. Snapshot `vs_qz6PYzwp7L8hzVBG7BK9X1v` was confirmed
+created at 2026-10-23T16:19:02Z with five-day retention. Existing prose,
+publication selections, accounts/passwords and notes were preserved. No model
+calls, generation, content republishing or account/note edits were performed.
+The website computes comparisons at read time; existing exported static reports
+retain their previously generated presentation until explicitly regenerated.
+
+### Checkin verification — 2026-10-23
+
+Following the user's commit-and-push request, fetched `origin` and confirmed
+zero divergence between `main` and `origin/main`; no rebase was necessary.
+Commit `e529dbf` records the source comparison implementation and its regression
+tests. All 67 application file hashes still match the tested and deployed v27
+image. Documentation is committed separately from implementation, preserving
+the user's preference for related chunks. The earlier uncommitted status above
+describes the deployment checkpoint, before this checkin. No application code
+or production state changed during checkin, so the recorded 214 regression,
+nine container, corpus and live browser checks remain applicable.

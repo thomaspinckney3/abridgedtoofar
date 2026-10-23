@@ -39,6 +39,16 @@ changes invalidate the stages whose inputs changed.
 - ArtifactStore owns read-only discovery of text and media review artifacts.
   ReviewStore owns comments and their revision anchors, including media target
   identifiers. No model SDK is required to serve packaged review data.
+- The shared proofreading renderer owns source/draft comparison markup. Both
+  the website and static proofread output keep abridged prose unmarked and put
+  additions/deletions on the source view. Connected paragraph mappings are
+  compared together so split or combined paragraphs do not create false cuts.
+  Sentence anchors isolate local changes before word comparison. Identical
+  reordered sentences are matched by occurrence; low-overlap rewrites remain
+  plain with a per-source explanation. The readability heuristic measures shared
+  wording, not semantic equivalence, and does not suppress clear cuts/additions.
+  This is read-time presentation over existing alignment data; it never changes
+  source/draft text, review anchors or immutable publication inventories.
 - AccountStore owns users, salted password hashes and revocable session hashes
   in the same persistent database as ReviewStore, with separate tables. Admin
   account mutations recheck the actor inside the write transaction. Deleting an

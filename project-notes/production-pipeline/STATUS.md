@@ -2,6 +2,18 @@
 
 ## Current Stage
 
+[source comparison deployed — 2026-10-23] Fly **v27** is live at
+https://forage-review.fly.dev. Abridged paragraphs stay plain; source comparisons
+use red deletions and green additions, sentence-aware matching, labeled plain
+substantial rewrites, and recognition of identical moved sentences. Shared
+source paragraphs are compared together, and fully cut material stays marked.
+All 214 review regressions and nine container tests passed. Live light/dark
+desktop/mobile checks verified the presentation and existing admin login.
+Five books, 115 chapters, 456 notes, three accounts and 780 stored artifact files
+were preserved. The deployed implementation is recorded in commit `e529dbf`;
+all 67 application files match the running image. Release evidence is in the 2026-10-23 source comparison
+release section of `AUDIT.md` and `/tmp/forage-source-highlights-release-20261023/`.
+
 [account authentication deployed — 2026-10-21] Fly v25 replaces shared-token
 login with username/password accounts. Administrators use **Users** to create
 reviewer/admin accounts and remove existing accounts. Removal revokes sessions
