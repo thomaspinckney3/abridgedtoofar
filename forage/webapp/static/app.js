@@ -520,7 +520,7 @@ function renderChapterBody() {
     ? h("details", { class: "unused" },
       h("summary", {}, `${chapter.unused.length} source paragraphs no draft paragraph uses — the cut material`),
       chapter.unused.map((p) => h("p", { class: "src-para" },
-        h("span", { class: "para-id" }, `src ${p.index}`), p.text)))
+        h("span", { class: "para-id" }, `src ${p.index}`), h("del", {}, p.text))))
     : null;
 
   const bookNotes = renderScopeNotes("Book notes", chapter.book_comments || [], "book");
@@ -547,7 +547,11 @@ function renderChapterBody() {
     h("h2", {}, "Notes awaiting a matching passage"),
     h("p", {}, "These notes refer to earlier text. Their current location could not be established."),
     ...unattached.map(renderNote)) : null;
-  el.main.replaceChildren(...[head, blocks, bookNotes, chapterNotes, earlierNotes,
+  const diffLegend = h("p", {class: "diff-legend"},
+    h("span", {}, "Source highlights:"), h("del", {}, "Removed from source"),
+    h("ins", {}, "Added in abridgment"),
+    h("span", {}, "Substantial rewrites may be shown without highlights."));
+  el.main.replaceChildren(...[head, diffLegend, blocks, bookNotes, chapterNotes, earlierNotes,
     review.issues, review.history, unused].filter(Boolean));
 }
 
@@ -706,13 +710,17 @@ function renderBlock(block) {
           class: "btn small", type: "button",
           onclick: () => openComposer(block.draft_para, ""),
         }, "Comment"))),
-    block.diff_html
-      ? h("p", { class: "draft diff-view selectable", html: block.diff_html, "data-para": block.draft_para })
-      : h("p", { class: "draft selectable", "data-para": block.draft_para }, block.draft),
-    block.sources.length
-      ? h("div", { class: "source" }, block.sources.map((s) =>
-        h("p", { class: "src-para" }, h("span", { class: "para-id" }, `src ${s.index}`), s.text)))
-      : null,
+    h("p", { class: "draft selectable", "data-para": block.draft_para }, block.draft),
+    h("div", { class: "source" },
+      h("div", { class: "source-label" }, "Source comparison",
+        block.comparison_draft_paras?.length > 1
+          ? ` · covers ${block.comparison_draft_paras.length} abridged paragraphs` : null),
+      block.sources.map((s) => h("div", { class: "src-para" },
+        s.comparison_note ? h("div", {class: "source-label"}, s.comparison_note) : null,
+        h("span", { class: "para-id" }, `src ${s.index}`),
+        s.diff_html !== undefined ? h("span", {class: "source-text", html: s.diff_html}) : s.text)),
+      block.source_addition_html ? [h("p", {class: "source-label"}, "No matched source passage"),
+        h("p", {class: "src-para source-text", html: block.source_addition_html})] : null),
     diagnostics.length
       ? h("div", { class: "diagnostics-inline" },
         diagnostics.map((d) => renderDiagnostic(d, block)))

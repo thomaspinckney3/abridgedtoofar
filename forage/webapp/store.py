@@ -33,7 +33,7 @@ from pathlib import Path
 from typing import Any, Iterable, Optional
 
 from ..artifacts import BOOKS_DIR, WORK_DIR
-from ..proofread import should_word_diff, word_diff_html
+from ..proofread import source_comparisons
 from ..review_anchors import anchor_hash, locate, binding_is_current
 from ..revision_review import response_id
 from ..review_anchors import chapter_hash
@@ -798,32 +798,26 @@ class ArtifactStore:
         return out
 
     def chapter_view(self, book_id: str, segment_id: str) -> Optional[dict]:
-        """Alignment rendered into the block shape the UI consumes — same
-        bucketing and word-diff decisions the static proofread.html makes."""
+        """Clean abridged text and consistently annotated source comparisons."""
         alignment = self.alignment(book_id, segment_id)
         if not alignment:
             return None
         src_paras: list[str] = alignment.get("source_paragraphs", [])
         draft_paras: list[str] = alignment.get("draft_paragraphs", [])
         titles = self._segment_titles(book_id)
+        comparisons = source_comparisons(alignment)
 
         blocks: list[dict] = []
         used_src: set[int] = set()
         for m in alignment.get("mapping", []):
             idx = m.get("draft_para")
-            if not isinstance(idx, int) or not (0 <= idx < len(draft_paras)):
+            if type(idx) is not int or not (0 <= idx < len(draft_paras)):
                 continue
             note_raw = str(m.get("note", "")).strip()
             note_key = _note_key(note_raw)
-            src_idxs = [i for i in (m.get("source_paras") or [])
-                        if isinstance(i, int) and 0 <= i < len(src_paras)]
-            used_src.update(src_idxs)
-
+            comparison = comparisons[idx]
+            used_src.update(source['index'] for source in comparison['sources'])
             draft_text = draft_paras[idx]
-            concat_src = "\n\n".join(src_paras[i] for i in src_idxs)
-            diff = None
-            if len(src_idxs) == 1 and should_word_diff(note_key, concat_src, draft_text):
-                diff = word_diff_html(concat_src, draft_text)
 
             blocks.append({
                 "draft_para": idx,
@@ -831,8 +825,9 @@ class ArtifactStore:
                 "note_key": note_key,
                 "draft": draft_text,
                 "anchor": anchor_hash(draft_text),
-                "sources": [{"index": i, "text": src_paras[i]} for i in src_idxs],
-                "diff_html": diff,
+                "sources": comparison['sources'],
+                "source_addition_html": comparison['addition_html'],
+                "comparison_draft_paras": comparison['draft_paras'],
                 "diagnostics": [],
             })
 
