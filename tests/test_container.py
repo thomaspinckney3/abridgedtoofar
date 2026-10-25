@@ -227,27 +227,49 @@ def post(path, payload, content_type='application/json'):
                                      headers={'Content-Type': content_type}, method='POST')
     with opener.open(request, timeout=10) as response:
         return response.status, json.load(response)
-post('/api/session', json.dumps({'username':os.environ['FORAGE_BOOTSTRAP_ADMIN_USERNAME'], 'password':os.environ['FORAGE_BOOTSTRAP_ADMIN_PASSWORD']}).encode())
+_, session = post('/api/session', json.dumps({'username':os.environ['FORAGE_BOOTSTRAP_ADMIN_USERNAME'], 'password':os.environ['FORAGE_BOOTSTRAP_ADMIN_PASSWORD']}).encode())
+_, terms = post('/api/account/contribution-terms', json.dumps({'version':session['contribution_terms']['version'], 'accepted':True}).encode())
 status, upload = post(f'/api/books/{book}/revisions', pathlib.Path('/tmp/revision.tgz').read_bytes(), 'application/gzip')
 assert status == 201 and upload['revision'] == revision
 _, pointer = post(f'/api/books/{book}/publication', json.dumps({'revision': revision, 'channel': 'review'}).encode())
 _, note = post(f'/api/books/{book}/comments', json.dumps({'publication_revision': revision, 'scope': 'book', 'body': 'Persist this review.'}).encode())
-print(json.dumps({'pointer': pointer, 'comment': note['id']}))
+print(json.dumps({'pointer': pointer, 'comment': note['id'], 'terms': terms}))
 """, book.book_id, revision))
     assert result["pointer"]["revision"] == revision
     _run("docker", "restart", name)
     _wait_ready(name)
     after = json.loads(_run("docker", "exec", name, "python", "-c", """
-import json, sys, urllib.request
+import json, os, sys, urllib.request
 book = sys.argv[1]
 def get(suffix):
     with urllib.request.urlopen(f'http://127.0.0.1:8000/api/books/{book}/{suffix}', timeout=10) as response:
         return json.load(response)
-print(json.dumps({'publication': get('publication'), 'feedback': get('feedback')}))
+result = {'publication': get('publication'), 'feedback': get('feedback')}
+reading = get('reading')
+assert reading['license']['owner'] == 'Abridged Too Far'
+assert reading['license']['short_name'] == 'CC BY 4.0'
+with urllib.request.urlopen('http://127.0.0.1:8000' + reading['download_url']) as response:
+    assert response.headers['Content-Type'].startswith('text/plain')
+    assert 'attachment' in response.headers['Content-Disposition']
+    text = response.read().decode('utf-8')
+    assert 'An abridged book.' in text and 'including commercially' in text
+for path in ('/read/' + book, '/static/reader.js', '/static/reader.css', '/terms'):
+    with urllib.request.urlopen('http://127.0.0.1:8000' + path) as response:
+        assert response.status == 200
+        if path == '/terms':
+            assert 'Acceptable use policy' in response.read().decode()
+request = urllib.request.Request('http://127.0.0.1:8000/api/session',
+    data=json.dumps({'username':os.environ['FORAGE_BOOTSTRAP_ADMIN_USERNAME'],
+                     'password':os.environ['FORAGE_BOOTSTRAP_ADMIN_PASSWORD']}).encode(),
+    headers={'Content-Type':'application/json'}, method='POST')
+with urllib.request.urlopen(request) as response:
+    result['terms'] = json.load(response)['contribution_terms']
+print(json.dumps(result))
 """, book.book_id))
     assert after["publication"]["review"]["revision"] == revision
     assert after["publication"]["release"] is None
     assert [note["id"] for note in after["feedback"]["comments"]] == [result["comment"]]
+    assert after['terms'] == result['terms']
 
 
 def test_installed_versions_match_the_pin_file(container):

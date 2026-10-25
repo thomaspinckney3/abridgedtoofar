@@ -31,7 +31,7 @@ import logging
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlsplit
+from urllib.parse import urlencode, urlsplit
 
 from fastapi import (Body, Cookie, Depends, FastAPI, HTTPException, Request,
                      Response)
@@ -40,7 +40,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .auth import (COOKIE_NAME, AuthConfig, LoginLimiter, RateLimiter, Session,
                    client_ip, env_flag, is_secure)
-from .accounts import AccountStore, username_key
+from .accounts import AccountStore, CONTRIBUTION_TERMS_VERSION, username_key
 from .limits import RequestLimitsMiddleware
 from ..review_anchors import chapter_hash
 from .store import (BOOK_COMMENT_SEGMENT, KINDS, SEVERITIES, STATUSES,
@@ -169,6 +169,12 @@ def create_app(artifacts: ArtifactStore | None = None,
                                 detail="An administrator account is required.")
         return sess
 
+    def require_contributor(sess: Session = Depends(require_write)) -> Session:
+        if not accounts.terms_status(sess.user_id)['accepted']:
+            raise HTTPException(status_code=428, detail=
+                'Accept the contribution terms at /terms before submitting editorial review content.')
+        return sess
+
     def require_book(book_id: str) -> str:
         if not artifacts.has_book(book_id):
             raise HTTPException(status_code=404, detail=f"No alignments for {book_id!r}.")
@@ -243,6 +249,15 @@ def create_app(artifacts: ArtifactStore | None = None,
     def release_page(book_id: str) -> FileResponse:
         return shell()
 
+    @app.get('/read', include_in_schema=False)
+    @app.get('/read/{book_id}', include_in_schema=False)
+    def reading_page() -> FileResponse:
+        return FileResponse(STATIC_DIR / 'reader.html', headers={'Cache-Control': 'no-cache'})
+
+    @app.get('/terms', include_in_schema=False)
+    def terms_page() -> FileResponse:
+        return FileResponse(STATIC_DIR / 'terms.html', headers={'Cache-Control': 'no-cache'})
+
     @app.get("/healthz", include_in_schema=False)
     def healthz() -> dict:
         return {"ok": True, "books": len(artifacts.book_ids())}
@@ -253,9 +268,22 @@ def create_app(artifacts: ArtifactStore | None = None,
     def get_session(sess: Session = Depends(session)) -> dict:
         return {"role": sess.role, "label": sess.label, "username": sess.username,
                 "user_id": sess.user_id,
+                "contribution_terms": accounts.terms_status(sess.user_id),
                 "can_write": sess.can_write, "can_admin": sess.can_admin,
                 "severities": list(SEVERITIES), "kinds": list(KINDS),
                 "statuses": list(STATUSES)}
+
+    @app.post('/api/account/contribution-terms')
+    def accept_contribution_terms(payload: dict = Body(...),
+                                  sess: Session = Depends(require_write)) -> dict:
+        if payload.get('accepted') is not True:
+            raise HTTPException(status_code=400, detail='Explicit agreement is required.')
+        if payload.get('version') != CONTRIBUTION_TERMS_VERSION:
+            raise HTTPException(status_code=409, detail='The contribution terms changed. Reload and read the current terms.')
+        try:
+            return accounts.accept_terms(sess.user_id)
+        except PermissionError as exc:
+            raise HTTPException(status_code=401, detail=str(exc)) from None
 
     @app.post("/api/session")
     def sign_in(request: Request, response: Response,
@@ -339,6 +367,57 @@ def create_app(artifacts: ArtifactStore | None = None,
         return {"success": True}
 
     # -- reading -----------------------------------------------------------
+
+    def reading_payload(book_id, selected, version=None):
+        try:
+            book = selected.reading_book(book_id)
+        except FileNotFoundError:
+            raise HTTPException(status_code=404, detail='A completed reading edition is not available yet.') from None
+        except (ValueError, OSError):
+            raise HTTPException(status_code=503, detail='This reading edition is temporarily unavailable.') from None
+        if version is not None and version != book['edition_id']:
+            raise HTTPException(status_code=409, detail='This book has been updated. Open the latest edition to continue.')
+        query = {'version': book['edition_id']}
+        if book['publication_revision']:
+            query['revision'] = book['publication_revision']
+        book['reading_url'] = f'/read/{book_id}?{urlencode(query)}'
+        book['download_url'] = f'/api/books/{book_id}/reading.txt?{urlencode(query)}'
+        return book
+
+    @app.get('/api/books/reading')
+    def reading_library() -> dict:
+        books = []
+        for book_id in artifacts.book_ids():
+            try:
+                selected = artifacts.selected(book_id)
+                book = reading_payload(book_id, selected)
+            except FileNotFoundError:
+                continue
+            except (ValueError, OSError):
+                raise HTTPException(status_code=503, detail='The reading library is temporarily unavailable.') from None
+            except HTTPException as exc:
+                if exc.status_code == 404:
+                    continue
+                raise
+            books.append({key: book[key] for key in (
+                'book_id', 'title', 'author', 'word_count', 'reading_url', 'download_url')})
+        return {'books': books}
+
+    @app.get('/api/books/{book_id}/reading')
+    def reading_book(book_id: str, version: str | None = None,
+                     selected: ArtifactStore = Depends(selected_book)) -> dict:
+        book = reading_payload(book_id, selected, version)
+        return {key: value for key, value in book.items() if key != 'text'}
+
+    @app.get('/api/books/{book_id}/reading.txt')
+    def download_reading_book(book_id: str, version: str | None = None,
+                              selected: ArtifactStore = Depends(selected_book)) -> Response:
+        from ..reading import plain_text_download
+        book = reading_payload(book_id, selected, version)
+        return Response(plain_text_download(book), media_type='text/plain', headers={
+            'Content-Disposition': f'attachment; filename="{book_id}-abridged.txt"',
+            'Cache-Control': 'no-cache', 'ETag': f'"{book["edition_id"]}"',
+        })
 
     def comment_counts(selected, book_id):
         by_chapter, total = {}, {'total': 0}
@@ -541,7 +620,7 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     @app.post("/api/books/{book_id}/comments", status_code=201)
     def add_comment(book_id: str, payload: dict = Body(...),
-                    sess: Session = Depends(require_write)) -> dict:
+                    sess: Session = Depends(require_contributor)) -> dict:
         # Historical comments are supported explicitly. The submitted viewed
         # revision chooses the anchor; a concurrent pointer change cannot do so.
         revision = payload.get("publication_revision")
@@ -608,7 +687,7 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     @app.patch("/api/comments/{comment_id}")
     def edit_comment(comment_id: str, payload: dict = Body(...),
-                     sess: Session = Depends(require_write)) -> dict:
+                     sess: Session = Depends(require_contributor)) -> dict:
         existing = reviews.get(comment_id)
         if not existing:
             raise HTTPException(status_code=404, detail="No such comment.")
@@ -646,7 +725,7 @@ def create_app(artifacts: ArtifactStore | None = None,
 
     @app.post("/api/comments/{comment_id}/revision-review")
     def review_revision(comment_id: str, payload: dict = Body(...),
-                        sess: Session = Depends(require_write)) -> dict:
+                        sess: Session = Depends(require_contributor)) -> dict:
         existing = reviews.get(comment_id)
         if existing is None:
             raise HTTPException(status_code=404, detail="No such comment.")

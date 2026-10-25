@@ -257,6 +257,68 @@ Empirical: across Gatsby + Dragon Maiden + Secret Adversary, 0.2–1% of aligned
 
 ### 15. `serve` — editorial review web app
 
+The separate reading room is at `/read`, with individual books at
+`/read/<book-id>`. It offers the latest completed abridgments without source
+comparisons, critic reports, review notes or a login requirement. Readers can
+choose chapters, adjust text size, switch light/dark themes, and download the
+entire abridgment as UTF-8 plain text. The review app links to it through
+**Read books** and **Reading view**.
+
+Reading prose comes from the completed assembled book, never from stitching
+together review blocks. Immutable publications use their verified inventory;
+older local editions need an assembly report with no missing segments and
+`partial: false`. Repackage before deployment to include those legacy completed
+texts. Incomplete editions remain available for review but are excluded from the
+reader library. Matching alignments locate chapter boundaries without supplying
+prose; stale alignments fall back to existing chapter headings or the complete
+book. Downloads always contain the entire assembled text, including the ending.
+
+Reader links and downloads pin the selected publication revision and an edition
+fingerprint. If a mutable local edition changes, old download links ask the
+reader to reopen the latest edition instead of silently serving different text.
+Explicit `?channel=release` and `?revision=<revision>` selections remain supported;
+reading never promotes or changes a publication pointer.
+
+The reader and its plain-text downloads credit **Abridged Too Far** under
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),
+allowing commercial reuse of its original editorial contributions with
+attribution. The notice explicitly excludes the underlying source text and
+third-party material, preserves their existing rights, and imposes no new
+restrictions on public-domain material. This follows
+[Creative Commons' adaptation guidance](https://creativecommons.org/faq/).
+The notice is added to the reading download; immutable pipeline text and source
+books are not rewritten or relicensed. The software's license is unchanged.
+
+`/terms` is a public Terms of Use page linked from both the reading room and
+editorial review. It includes an acceptable use policy for site participation
+and an explicit, nonexclusive CC BY 4.0 grant for new review contributions,
+including commercial reuse. Reviewers keep their copyrights and request the
+collective credit **Abridged Too Far contributors**, which the reading notice
+and downloads include. The policy adds no restrictions on downstream CC reuse
+and does not retroactively license existing reviews or third-party material.
+
+Before submitting notes, edits or revision decisions, each account (including
+admins) must explicitly accept the current contribution terms. The editor shows
+an unchecked agreement with links to the full terms and license; cancellation
+preserves the draft. The API enforces acceptance independently of the browser.
+`GET /api/session` returns `contribution_terms`; an authenticated
+`POST /api/account/contribution-terms` with `{"version":"2026-10-25","accepted":true}`
+records acceptance for that account. Use the version returned by the session,
+rather than hardcoding it in clients. Contribution writes return 428 until
+accepted; reading, sign-in, deleting notes and account management remain
+available. Publishing transport does not accept terms on anyone's behalf.
+
+AccountStore retains account ID, terms version and first acceptance time in
+`contribution_terms_acceptances`, including after account deletion, alongside
+retained review history. No earlier accounts are automatically opted in. When
+changing the contribution agreement, bump `CONTRIBUTION_TERMS_VERSION` and the
+date in `terms.html` together; keep prior terms in version control. Old receipts
+remain and the next contribution requires fresh acceptance.
+
+Reader APIs: `GET /api/books/reading` lists available completed books;
+`GET /api/books/<book-id>/reading` returns clean reading content;
+`GET /api/books/<book-id>/reading.txt` downloads the complete licensed edition.
+
 Zero LLM cost. The same alignment data `proofread` renders statically, served as an interactive review app where a note can be attached to any paragraph and published as a machine-readable fix queue.
 
 ```bash

@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f4ec;
+  --surface: #fffdf8;
+  --ink: #262e2b;
+  --muted: #616b64;
+  --line: #d9ddd2;
+  --accent: #275c49;
+  --button-ink: #fffdf8;
+  --reading-size: 1.2rem;
+  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: ui-sans-serif, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #171e1b; --surface: #202923; --ink: #ecece1;
+    --muted: #b0bdb1; --line: #39463c; --accent: #a8d8b9; --button-ink: #17221a;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #171e1b; --surface: #202923; --ink: #ecece1;
+  --muted: #b0bdb1; --line: #39463c; --accent: #a8d8b9; --button-ink: #17221a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+a { color: var(--accent); text-underline-offset: .2em; }
+button, select { font: inherit; color: inherit; }
+button, .reader-button { min-height: 2.75rem; padding: .55rem .9rem; border: 1px solid var(--line); border-radius: .3rem; background: var(--surface); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+button:hover, .reader-button:hover { border-color: var(--accent); }
+.reader-button.primary { background: var(--accent); color: var(--button-ink); border-color: var(--accent); }
+button:disabled { opacity: .45; cursor: default; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 5; padding: .5rem; background: var(--surface); }
+.skip-link:focus { top: 1rem; }
+.reader-header { max-width: 76rem; margin: auto; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); }
+.reader-brand { font: 1.5rem var(--serif); color: var(--ink); text-decoration: none; }
+.reader-brand span { display: block; font: .62rem var(--sans); letter-spacing: .2em; margin-top: .5rem; color: var(--muted); }
+.reader-header nav { display: flex; align-items: center; gap: 1.1rem; font-size: .85rem; }
+.reader-header nav > a { text-decoration: none; }
+#reader-main { max-width: 76rem; margin: auto; padding: 3rem 2rem 5rem; min-height: 65vh; }
+.library-intro { max-width: 42rem; margin-bottom: 3rem; }
+.eyebrow { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.2; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.7rem); margin: .7rem 0 1rem; overflow-wrap: anywhere; }
+.library-intro > p:last-child { font-size: 1.05rem; color: var(--muted); }
+.reading-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 1.25rem; }
+.reading-card { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: .2rem; padding: 1.65rem; display: flex; flex-direction: column; }
+.reading-card h2 { margin: .35rem 0 .6rem; font-size: 1.65rem; }
+.reading-card h2 a { color: var(--ink); text-decoration: none; }
+.reading-card .author { margin: 0; color: var(--muted); }
+.reading-card .book-length { margin-top: auto; padding-top: 1.5rem; font-size: .8rem; color: var(--muted); }
+.card-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; font-size: .85rem; }
+.book-heading { max-width: 56rem; margin: 0 auto 2rem; text-align: center; }
+.book-heading .author { font: 1.35rem var(--serif); color: var(--muted); }
+.book-heading .book-length { color: var(--muted); font-size: .8rem; }
+.reading-tools { max-width: 60rem; margin: 2rem auto 3rem; padding: 1rem 0; border-block: 1px solid var(--line); display: flex; align-items: end; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+.chapter-picker { flex: 1 1 15rem; max-width: 28rem; min-width: 0; }
+.chapter-picker span { display: block; margin-bottom: .35rem; font-size: .75rem; color: var(--muted); }
+.chapter-picker select { width: 100%; min-height: 2.75rem; padding: .55rem; background: var(--surface); border: 1px solid var(--line); border-radius: .3rem; }
+.type-controls { display: flex; gap: .4rem; }
+.type-controls button { min-width: 2.75rem; }
+.reading-tools > a { font-size: .85rem; }
+.reading-prose { max-width: 66ch; margin: auto; font: var(--reading-size)/1.8 var(--serif); overflow-wrap: break-word; }
+.reading-prose h2 { font-size: 1.6em; margin: 0 0 1.5em; }
+.reading-prose p { margin: 0 0 1.2em; white-space: pre-line; }
+.chapter-navigation { max-width: 60rem; margin: 3rem auto 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; justify-content: space-between; font-size: .85rem; }
+.chapter-navigation span { color: var(--muted); }
+.reading-license { max-width: 60rem; margin: 2.5rem auto 0; color: var(--muted); font-size: .8rem; }
+.reading-license summary { cursor: pointer; padding: .5rem 0; color: var(--accent); }
+.reading-license p { max-width: 75ch; }
+.reader-footer { max-width: 76rem; margin: auto; padding: 1.5rem 2rem; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .75rem 2rem; justify-content: space-between; color: var(--muted); font-size: .75rem; }
+.reader-status { padding: 3rem 0; color: var(--muted); }
+.reader-error { max-width: 42rem; margin: 2rem auto; }
+.reader-error h1 { font-size: 2rem; }
+.terms-prose { max-width: 48rem; margin: auto; padding: 3rem 1.5rem 5rem; overflow-wrap: break-word; }
+.terms-prose h2 { margin-top: 2rem; scroll-margin-top: 1rem; }
+.terms-prose li { margin-bottom: .8rem; }
+@media (max-width: 600px) {
+  .reader-header { padding: 1rem; gap: .6rem; }
+  .reader-brand { font-size: 1.15rem; }
+  .reader-brand span { font-size: .53rem; }
+  .reader-header nav { gap: .7rem; font-size: .75rem; }
+  .reader-header nav { flex-wrap: wrap; justify-content: flex-end; }
+  .reader-header button { padding: .5rem; }
+  #reader-main { padding: 2rem 1.15rem 3rem; }
+  .book-heading { text-align: left; }
+  .reading-tools { margin-block: 1.5rem 2rem; }
+  .chapter-picker { max-width: none; flex-basis: 100%; }
+  .reading-tools > a { flex: 1; }
+  .reader-footer { padding-inline: 1.15rem; }
+}
+@media print {
+  .reader-header, .reader-footer, .reading-tools, .chapter-navigation, .skip-link { display: none; }
+  body { background: white; color: black; }
+  #reader-main { max-width: none; padding: 0; }
+}

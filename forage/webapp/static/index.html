@@ -19,6 +19,7 @@
     <span class="book-author" id="book-author"></span>
   </div>
   <div class="topbar-actions">
+    <a class="btn ghost" href="/read">Read books</a>
     <button class="btn ghost" id="help-btn" type="button" aria-keyshortcuts="?">Keys</button>
     <button class="btn ghost" id="theme-btn" type="button" aria-label="Switch colour theme">Theme</button>
     <button class="btn" id="users-btn" type="button" hidden>Users</button>
@@ -31,6 +32,8 @@
   <main id="main" tabindex="-1"></main>
 </div>
 
+<footer class="site-footer"><span>Abridged Too Far · Editorial review</span><a href="/terms">Terms of Use</a></footer>
+
 <div class="toast-stack" id="toasts" aria-live="polite"></div>
 
 <div class="selection-tip" id="selection-tip" hidden>
@@ -41,6 +44,7 @@
   <form method="dialog" id="signin-form">
     <h2>Sign in to comment</h2>
     <p class="sheet-note">Sign in with the account created by your administrator.</p>
+    <p class="sheet-note">Review contributions require agreement to our <a href="/terms" target="_blank" rel="noopener">Terms of Use</a>, CC BY 4.0 license and acceptable use policy.</p>
     <label>Username<input type="text" id="signin-username" maxlength="64" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
     <label>Password<input type="password" id="signin-password" maxlength="128" autocomplete="current-password" required></label>
     <p class="sheet-error" id="signin-error" hidden></p>

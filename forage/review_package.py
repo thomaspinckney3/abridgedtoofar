@@ -190,7 +190,9 @@ def _stage_book(book_id: str, artifacts_out: Path, books_out: Path) -> tuple[int
             "book_id": plan.get("book_id", book_id),
             "title": plan.get("title", book_id),
             "author": plan.get("author", ""),
-            "segments": [{k: s.get(k) for k in ("id", "title")} for s in segments],
+            "segments": [{**{k: s.get(k) for k in ("id", "title")},
+                          **{k: s[k] for k in ("raw_heading", "kind", "number") if s.get(k)}}
+                         for s in segments],
         }
         (dest / "plan.json").write_text(json.dumps(slim, indent=2, ensure_ascii=False) + "\n",
                                         encoding="utf-8")
@@ -203,6 +205,21 @@ def _stage_book(book_id: str, artifacts_out: Path, books_out: Path) -> tuple[int
 
     _stage_media(work_book, dest, book_id)
     _stage_publications(work_book, dest, book_id)
+
+    # Legacy books without immutable publications still need their completed
+    # assembly for the reader. Do not expose partial assemblies or regenerate
+    # prose from alignment fragments. Keep private report paths out of images.
+    from .reading import completed_text
+    try:
+        reading_text = completed_text(work_book)
+    except FileNotFoundError:
+        pass  # Review remains available while the reading edition is incomplete.
+    else:
+        report = _read_object(confined_path(work_book, 'assembly_report.json'))
+        (dest / 'abridgment.txt').write_text(reading_text, encoding='utf-8')
+        (dest / 'assembly_report.json').write_text(json.dumps({
+            key: report[key] for key in ('partial', 'segments_missing', 'segments_drafted')
+        }) + '\n', encoding='utf-8')
 
     books_book = _confined(BOOKS_DIR.resolve() / book_id, BOOKS_DIR.resolve())
     meta_path = _input_file(books_book / "metadata.json", books_book, optional=True)

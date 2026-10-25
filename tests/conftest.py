@@ -129,8 +129,8 @@ def seed_accounts(app):
 
 
 def sign_in(client: TestClient, password: str = REVIEW_PASSWORD,
-            label: str = "alice") -> dict:
-    """Fixture provisioning is separate from the real account login endpoint."""
+            label: str = "alice", *, accept_terms: bool = True) -> dict:
+    """Provision, sign in, then explicitly agree as this test contributor."""
     seed_accounts(client.app)
     username = 'admin' if password == ADMIN_PASSWORD else 'alice'
     if label not in ('alice', '') and username != 'admin':
@@ -139,6 +139,17 @@ def sign_in(client: TestClient, password: str = REVIEW_PASSWORD,
         if username not in {u['username'] for u in client.app.state.accounts.list_users()}:
             client.app.state.accounts.create_user(username, password, display_name=label)
     response = client.post("/api/session", json={"username": username, "password": password})
+    assert response.status_code == 200, response.text
+    if accept_terms:
+        accept_contribution_terms(client)
+        return client.get('/api/session').json()
+    return response.json()
+
+
+def accept_contribution_terms(client):
+    terms = client.get('/api/session').json()['contribution_terms']
+    response = client.post('/api/account/contribution-terms',
+                           json={'version': terms['version'], 'accepted': True})
     assert response.status_code == 200, response.text
     return response.json()
 

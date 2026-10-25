@@ -483,6 +483,16 @@ class ArtifactStore:
         return {"publication_revision": manifest.get("revision"),
                 "text_revision": manifest.get("text_revision")}
 
+    def reading_book(self, book_id: str) -> dict:
+        """Read the completed assembly without source text or review metadata."""
+        from ..reading import reading_document
+        root = self._book_work_dir(book_id)
+        plan = self._read_json_cached(root / 'plan.json') or {}
+        if not isinstance(plan, dict):
+            raise ValueError('Invalid reading plan.')
+        return reading_document(root, book_id, self._metadata(book_id), plan,
+                                self._revisions.get(book_id))
+
     def invalidate_revision_cache(self) -> None:
         self._revision_cache.invalidate()
 

@@ -9,7 +9,7 @@ import pytest
 
 from forage.webapp.accounts import AccountStore, hash_password, verify_password
 from forage.webapp.auth import AuthConfig, AuthConfigError, COOKIE_NAME
-from .conftest import ADMIN_PASSWORD, REVIEW_PASSWORD, BOOK_ID, sign_in
+from .conftest import ADMIN_PASSWORD, REVIEW_PASSWORD, BOOK_ID, sign_in, accept_contribution_terms
 
 PASSWORD = 'a long test passphrase'
 
@@ -50,6 +50,7 @@ def test_create_login_delete_revokes_sessions_and_keeps_notes(client):
     login = reviewer.post('/api/session', json={'username':'BOB', 'password':PASSWORD, 'label':'Impostor', 'role':'admin'})
     assert login.status_code == 200
     assert login.json()['label'] == 'Bob' and login.json()['role'] == 'reviewer'
+    accept_contribution_terms(reviewer)
     note = reviewer.post(f'/api/books/{BOOK_ID}/comments', json={'scope':'book', 'body':'Keep this note.'}).json()
     assert note['author'] == 'Bob'
     cookie = reviewer.cookies.get(COOKIE_NAME)

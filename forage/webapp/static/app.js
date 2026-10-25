@@ -65,9 +65,79 @@ async function api(path, options = {}) {
   if (!res.ok) {
     let detail = `${res.status} ${res.statusText}`;
     try { detail = (await res.json()).detail || detail; } catch { /* keep status */ }
-    throw new Error(detail);
+    const error = new Error(detail);
+    error.status = res.status;
+    throw error;
   }
   return res.status === 204 ? null : res.json();
+}
+
+function contributionNotice() {
+  return h("p", {class: "contribution-notice"},
+    "Your contributions are shared under CC BY 4.0 and must follow our ",
+    h("a", {href: "/terms#contributions", target: "_blank", rel: "noopener"}, "Terms of Use and acceptable use policy"), ".");
+}
+
+let pendingTerms = null;
+async function ensureContributionTerms() {
+  if (state.session?.contribution_terms?.accepted) return;
+  if (pendingTerms) return pendingTerms;
+  pendingTerms = (async () => {
+    // Read the current version and account before showing an agreement.
+    state.session = await api('/api/session');
+    if (!state.session.can_write) throw new Error('Sign in before submitting a review.');
+    const terms = state.session.contribution_terms;
+    if (terms.accepted) return;
+    await new Promise((resolve, reject) => {
+      let accepted = false;
+      const dialog = h('dialog', {class: 'sheet terms-sheet', 'aria-labelledby': 'terms-heading'});
+      const checkbox = h('input', {type: 'checkbox', required: true});
+      const error = h('p', {class: 'sheet-error', role: 'alert'});
+      const submit = h('button', {class: 'btn primary', type: 'submit'}, 'Agree and continue');
+      const form = h('form', {onsubmit: async event => {
+        event.preventDefault();
+        if (!checkbox.checked || submit.disabled) return;
+        submit.disabled = true;
+        try {
+          state.session.contribution_terms = await api('/api/account/contribution-terms', {
+            method: 'POST', body: {version: terms.version, accepted: true}
+          });
+          accepted = true;
+          dialog.close();
+        } catch (err) { error.textContent = err.message; submit.disabled = false; }
+      }},
+      h('h2', {id: 'terms-heading'}, 'Before you contribute'),
+      h('p', {}, 'You retain your copyright and expressly license your new review contributions to Abridged Too Far and everyone else under CC BY 4.0, allowing sharing, adaptation and commercial use with attribution. This license is irrevocable while its conditions are met.'),
+      h('p', {}, 'Contribute only material you have authority to share. Follow the acceptable use policy: no harassment, infringement, private information, spam or attacks on the site.'),
+      h('p', {}, h('a', {href: terms.url, target: '_blank', rel: 'noopener'}, 'Read the full Terms of Use'),
+        ` (version ${terms.version}). `,
+        h('a', {href: 'https://creativecommons.org/licenses/by/4.0/', target: '_blank', rel: 'noopener'}, 'Read CC BY 4.0')),
+      h('label', {class: 'terms-check'}, checkbox,
+        'I agree to the Terms of Use, expressly grant the CC BY 4.0 copyright license for my contributions, and agree to the acceptable use policy.'),
+      error, h('menu', {}, h('button', {class: 'btn ghost', type: 'button', onclick: () => dialog.close()}, 'Cancel'), submit));
+      dialog.append(form);
+      dialog.addEventListener('close', () => {
+        dialog.remove();
+        if (accepted) resolve();
+        else reject(new Error('Contribution cancelled. Your draft is still available.'));
+      }, {once: true});
+      document.body.append(dialog);
+      dialog.showModal();
+    });
+  })();
+  try { await pendingTerms; } finally { pendingTerms = null; }
+}
+
+async function contributionApi(path, options) {
+  await ensureContributionTerms();
+  try { return await api(path, options); }
+  catch (err) {
+    if (err.status !== 428) throw err;
+    // A newly deployed terms version can invalidate a previously accepted tab.
+    state.session = await api('/api/session');
+    await ensureContributionTerms();
+    return api(path, options);
+  }
 }
 
 function toast(message, kind = "") {
@@ -133,11 +203,14 @@ function bookRoute(extra = {}) {
 
 function publicationNav() {
   const book = state.book;
+  const readingQuery = new URLSearchParams();
+  if (book.publication_revision) readingQuery.set('revision', book.publication_revision);
   const edition = book.publication_channel === "release" ? "Public release"
     : book.publication_channel === "revision" ? "Published revision" : "Review edition";
   return h("section", { class: "publication-nav" },
     h("p", { class: "revision-label" }, `${edition} · ${book.publication_revision ? book.publication_revision.slice(0, 12) : "local artifacts"}`),
-    h("a", { class: "btn small", href: bookRoute(), "data-route": true }, "Read text"),
+    h("a", { class: "btn small", href: `/read/${encodeURIComponent(book.book_id)}?${readingQuery}` }, "Reading view"),
+    h("a", { class: "btn small", href: bookRoute(), "data-route": true }, "Review text"),
     h("a", { class: "btn small", href: bookRoute({ view: "media" }), "data-route": true }, "Audio & graphic novel"),
     h("a", { class: "btn small", href: `/release/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current public release"),
     h("a", { class: "btn small", href: `/b/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current review edition"),
@@ -314,7 +387,7 @@ async function renderIndex() {
   const head = h("div", { class: "index-head" },
     h("h1", {}, "Editorial review"),
     h("p", {}, "Every abridged paragraph next to the source it came from. Read anything; " +
-      "sign in with the review token to leave notes for the fix pass."));
+      "sign in with your account to leave notes for the fix pass."));
 
   if (!books.length) {
     el.main.replaceChildren(head, h("p", { class: "empty" },
@@ -847,7 +920,7 @@ function renderRevisionReview(note) {
 
 async function saveRevisionDecision(note, action, body = "") {
   const review = note.revision_review;
-  const updated = await api(`/api/comments/${note.id}/revision-review`, {
+  const updated = await contributionApi(`/api/comments/${note.id}/revision-review`, {
     method: "POST", body: {action, body, response_id: review.response_id,
       version: review.version, chapter_anchor: review.chapter_anchor,
       publication_revision: review.publication_revision}
@@ -886,7 +959,7 @@ function rejectRevision(note) {
   }}, "Save revision request");
   dialog.append(h("h2", {}, finding ? "Request a change" : "Reject revision with feedback"),
     h("p", {class: "sheet-note"}, "Explain what should change. Saving queues your feedback; the pipeline is run separately outside this website."),
-    body, error, h("button", {class: "btn", type: "button", onclick: () => dialog.close()}, "Cancel"), submit);
+    body, contributionNotice(), error, h("button", {class: "btn", type: "button", onclick: () => dialog.close()}, "Cancel"), submit);
   dialog.addEventListener("close", () => dialog.remove());
   document.body.append(dialog); dialog.showModal(); body.focus();
 }
@@ -914,7 +987,7 @@ function renderLlmResponse(response) {
 
 async function setStatus(note, status) {
   try {
-    const updated = await api(`/api/comments/${note.id}`, { method: "PATCH", body: { status } });
+    const updated = await contributionApi(`/api/comments/${note.id}`, { method: "PATCH", body: { status } });
     replaceComment(updated);
   } catch (err) { toast(err.message, "error"); }
 }
@@ -967,11 +1040,11 @@ async function editNote(note) {
   const dialog = h("dialog", { class: "sheet" });
   const body = h("textarea", { rows: 6, "aria-label": "Edit note" }, note.body);
   const error = h("p", { class: "sheet-error" });
-  dialog.append(h("h2", {}, "Edit note"), body, error,
+  dialog.append(h("h2", {}, "Edit note"), body, contributionNotice(), error,
     h("button", { class: "btn", onclick: () => dialog.close() }, "Cancel"),
     h("button", { class: "btn primary", onclick: async () => {
       try {
-        const updated = await api(`/api/comments/${note.id}`, { method: "PATCH", body: { body: body.value } });
+        const updated = await contributionApi(`/api/comments/${note.id}`, { method: "PATCH", body: { body: body.value } });
         dialog.close(); replaceComment(updated);
       } catch (err) { error.textContent = err.message; }
     } }, "Save"));
@@ -1005,9 +1078,9 @@ function renderMediaBody() {
       if (target.duration_seconds !== null && target.duration_seconds !== undefined) time.max = String(target.duration_seconds);
       const body = h("textarea", { placeholder: "Describe the issue or suggested improvement", "aria-label": "Media note" });
       composer.replaceChildren(...[target.kind === "audio" ? h("label", {}, "Seconds in this chunk", time) : null,
-        body, h("button", { class: "btn primary", onclick: async () => {
+        body, contributionNotice(), h("button", { class: "btn primary", onclick: async () => {
           try {
-            const row = await api(`/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
+            const row = await contributionApi(`/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
               method: "POST", body: { scope: target.kind, target_id: target.id, target_revision: target.revision,
                 publication_revision: media.publication_revision, timestamp_seconds: target.kind === "audio" ? Number(time.value) : null,
                 body: body.value, severity: "minor", kind: "other" } });
@@ -1107,7 +1180,7 @@ function renderScopeComposer(scope) {
         body: text,
       };
       if (scope === "chapter") payload.segment_id = state.chapter.segment_id;
-      const created = await api(
+      const created = await contributionApi(
         `/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
           method: "POST",
           body: payload,
@@ -1122,6 +1195,7 @@ function renderScopeComposer(scope) {
 
   return h("div", { class: "composer scope-composer" },
     body,
+    contributionNotice(),
     h("div", { class: "row" }, severity, kind),
     h("div", { class: "actions" },
       h("span", { class: "hint" }, "⌘↵ to save"),
@@ -1149,7 +1223,7 @@ function renderComposer(block) {
     const text = body.value.trim();
     if (!text) { body.focus(); return; }
     try {
-      const created = await api(
+      const created = await contributionApi(
         `/api/books/${encodeURIComponent(state.book.book_id)}/comments`, {
           method: "POST",
           body: {
@@ -1174,6 +1248,7 @@ function renderComposer(block) {
   return h("div", { class: "composer" },
     state.composerQuote ? h("p", { class: "composer-quote" }, `“${state.composerQuote}”`) : null,
     body,
+    contributionNotice(),
     h("div", { class: "row" }, severity, kind),
     h("div", { class: "actions" },
       h("span", { class: "hint" }, "⌘↵ to save"),
@@ -1206,6 +1281,7 @@ document.addEventListener("mousedown", (e) => {
 /* -------------------------------------------------------------- keyboard */
 
 document.addEventListener("keydown", (event) => {
+  if (document.querySelector('dialog[open]')) return;
   const tag = event.target.tagName;
   if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || event.metaKey || event.ctrlKey) {
     if (event.key === "Escape" && (state.composerFor !== null || state.scopeComposer !== null)) closeComposer();

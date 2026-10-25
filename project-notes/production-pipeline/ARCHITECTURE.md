@@ -49,11 +49,32 @@ changes invalidate the stages whose inputs changed.
   wording, not semantic equivalence, and does not suppress clear cuts/additions.
   This is read-time presentation over existing alignment data; it never changes
   source/draft text, review anchors or immutable publication inventories.
+- `forage.reading` owns completed reading editions and their attributed
+  plain-text exports. It consumes the verified assembled publication, or an
+  explicitly complete legacy assembly report and text. Alignment may locate
+  chapter boundaries but never supplies or replaces reading prose. Missing or
+  stale boundaries fall back to existing headings or a complete-book section.
+  The separate `/read` client consumes only reading content, without editorial
+  notes, source comparisons or authentication UI. Reading downloads pin both
+  publication revision and edition identity; stale mutable editions return 409.
+  CC BY 4.0 covers Abridged Too Far's original editorial contributions and
+  reviewer contributions licensed under the contribution terms,
+  without changing source rights or immutable pipeline files. Packaging carries
+  complete legacy text and minimal completion evidence, excluding private paths.
 - AccountStore owns users, salted password hashes and revocable session hashes
   in the same persistent database as ReviewStore, with separate tables. Admin
   account mutations recheck the actor inside the write transaction. Deleting an
   account cascades to sessions and retains review records. Session resolution
   reads current account permissions; login-supplied labels/roles are ignored.
+- The public `/terms` page defines reading rights, the explicit CC BY 4.0
+  contribution grant and acceptable use for site participation. Both clients
+  link to it; all editorial submission paths share the same assent dialog and
+  server dependency. AccountStore records the authenticated account ID, terms
+  version and acceptance time independently of sessions. Existing accounts are
+  not opted in; changed terms require renewed acceptance. Receipts survive
+  account deletion, and the contribution license survives removal of content.
+  Account administration, publication transport and public reading do not imply
+  acceptance. AUP moderation never adds restrictions to licensed downstream reuse.
 - Human notes carry a stable account ID, separate from their display author.
   ReviewStore checks current account role and note ownership in the same write
   transaction for edits, deletion and revision decisions. Reviewers manage their

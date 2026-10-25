@@ -23,6 +23,8 @@ from .auth import ADMIN, REVIEWER, AuthConfigError, Session
 
 MIN_PASSWORD = 15
 MAX_PASSWORD = 128
+# Bump whenever contribution terms change; retain prior versions in git.
+CONTRIBUTION_TERMS_VERSION = '2026-10-25'
 _USERNAME = re.compile(r"[a-z0-9][a-z0-9_.@-]{2,63}\Z")
 _COOKIE = re.compile(r"u2\.[0-9a-f]{64}\Z")
 # Bound expensive hashing across concurrent HTTP workers in this process.
@@ -102,6 +104,12 @@ class AccountStore:
                     epoch TEXT NOT NULL
                 );
                 CREATE INDEX IF NOT EXISTS sessions_user ON user_sessions(user_id);
+                CREATE TABLE IF NOT EXISTS contribution_terms_acceptances (
+                    user_id TEXT NOT NULL,
+                    version TEXT NOT NULL,
+                    accepted_at REAL NOT NULL,
+                    PRIMARY KEY (user_id, version)
+                );
             ''')
 
     @contextmanager
@@ -119,6 +127,25 @@ class AccountStore:
     def list_users(self):
         with self.connect() as conn:
             return [_public(row) for row in conn.execute('SELECT * FROM users ORDER BY username')]
+
+    def terms_status(self, user_id):
+        with self.connect() as conn:
+            row = conn.execute('''SELECT accepted_at FROM contribution_terms_acceptances
+                WHERE user_id=? AND version=?''', (user_id, CONTRIBUTION_TERMS_VERSION)).fetchone()
+        return {'version': CONTRIBUTION_TERMS_VERSION, 'url': '/terms',
+                'accepted': row is not None, 'accepted_at': row['accepted_at'] if row else None}
+
+    def accept_terms(self, user_id):
+        # Keep this receipt when an account is removed, like its retained notes.
+        # Account IDs are never reused. No IP address or password is recorded.
+        with self.connect() as conn:
+            conn.execute('BEGIN IMMEDIATE')
+            if not conn.execute('SELECT 1 FROM users WHERE id=?', (user_id,)).fetchone():
+                raise PermissionError('Sign in to accept the contribution terms.')
+            conn.execute('''INSERT OR IGNORE INTO contribution_terms_acceptances
+                (user_id, version, accepted_at) VALUES (?,?,?)''',
+                (user_id, CONTRIBUTION_TERMS_VERSION, time.time()))
+        return self.terms_status(user_id)
 
     def bootstrap(self, production=False):
         # Bootstrap is one-time initialization, never an environment-password
