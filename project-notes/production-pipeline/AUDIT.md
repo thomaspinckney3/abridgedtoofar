@@ -2573,3 +2573,482 @@ the user's preference for related chunks. The earlier uncommitted status above
 describes the deployment checkpoint, before this checkin. No application code
 or production state changed during checkin, so the recorded 214 regression,
 nine container, corpus and live browser checks remain applicable.
+
+# Reading Room and Licensed Plain-Text Download Audit
+
+## 2026-10-25
+
+### Verdict
+
+Functional, structural and forward-impact checks pass locally. State: exposed
+and verified in browser and production container; not release-verified. The
+requested separate reader and complete plain-text download are implemented.
+The user chose commercial reuse and Abridged Too Far as the copyright/credit
+name; CC BY 4.0 is applied to its original editorial contributions only.
+No deployment, commit or push was requested for this change or performed.
+
+### Functional evidence and completeness
+
+- `/read` and `/read/<book-id>` use a separate shell, stylesheet and client
+  (`forage/webapp/app.py:246`, `forage/webapp/static/reader.html:1`). The reader
+  has a library, chapter navigation, adjustable type, light/dark themes,
+  anonymous reading and a prominent complete-book download. It renders only
+  text nodes and has no reviewer login, critic content, source comparisons,
+  diagnostics or comments. Review pages link through Read books/Reading view.
+- `forage/reading.py:24` requires verified immutable publication inventory or
+  an explicit complete legacy assembly report with no missing segments. It
+  reads the assembled text, including Markdown-to-text compatibility for old
+  editions; it never stitches review fragments into a supposedly complete book.
+  Incomplete or unproven assemblies are excluded from the reader library.
+- `forage/reading.py:59` uses matching alignments solely to locate boundaries.
+  Some real older alignments differ from their completed assembly. Such editions
+  use existing chapter headings, or one complete-book section when boundaries
+  cannot be established. Reader prose and downloads still retain the full
+  assembled book. Malformed auxiliary alignment shapes cannot replace prose;
+  malformed reading plans return a controlled unavailable response.
+- `forage/webapp/app.py:348` pins publication revision and edition fingerprint
+  into reading/download links. Mutable-edition changes return 409, with a
+  latest-edition recovery link. Historical downloads stay on their selected
+  immutable revision after the review pointer moves. Explicit release selection
+  remains strict. Reading never promotes a publication pointer.
+- `forage/reading.py:12` defines the shared attribution/CC BY 4.0 notice for the
+  reader and plain-text download. It names the original author and Abridged Too
+  Far, allows commercial reuse of editorial contributions with attribution,
+  includes the license URL and change-notice requirement, and excludes source
+  text/third-party rights without restricting public-domain material. This
+  follows https://creativecommons.org/licenses/by/4.0/ and
+  https://creativecommons.org/faq/ (adaptations and license scope).
+- `forage/review_package.py:209` carries completed legacy text and only the
+  completion fields needed by the reader; private assembly-report paths are
+  omitted. Chapter-heading metadata is retained. Original pipeline files and
+  immutable publications are not rewritten to add the notice; it accompanies
+  the reader's downloadable edition. The software license is unchanged.
+- The library uses completed current editions, including review editions. The
+  user was asked about release-only selection; no release-only constraint was
+  supplied, and this assumption was explicitly stated while implementing.
+  Previously captured production state had no public release pointers.
+
+### Validation
+
+- Broad command: `.venv/bin/python -m pytest -q tests/test_reading.py tests/test_source_highlights.py tests/test_alignment_freshness.py tests/test_review_packaging.py tests/test_artifact_safety.py tests/test_webapp_security.py tests/test_publication_cache.py tests/test_request_limits.py tests/test_web_media.py tests/test_hosted_publication.py`
+  — **260 passed**, six existing Starlette TestClient timeout warnings. This
+  preceded the final controlled malformed-input responses; focused tests and
+  the production-container suite ran afterward.
+- Final focused command: `.venv/bin/python -m pytest -q tests/test_reading.py tests/test_review_packaging.py tests/test_artifact_safety.py`
+  — **83 passed**. Coverage includes complete versus partial/missing assemblies,
+  complete endings independent of mappings, licensed UTF-8 attachments,
+  pinned revisions, stale-version rejection, corruption, confinement,
+  Markdown-only legacy text, safe fallback boundaries and packaging privacy.
+- `FORAGE_DOCKER_TESTS=1 DOCKER_HOST=unix:///run/user/1000/docker.sock .venv/bin/python -m pytest -q tests/test_container.py`
+  — **nine passed**. The restarted hosted-publication test now verifies the
+  anonymous reader, licensed text download and shipped reader JS/CSS. The final
+  container matches all 71 application source files in the working tree.
+- `.venv/bin/python /tmp/forage-reader-corpus.py` reconstructs all five packaged
+  books from reading sections and verifies each complete assembled text is
+  present in its download: **205,105 words**, all passed in 0.109s. Existing
+  Dragon Maiden headings support five reading sections; other books expose
+  28, nine, 29 and 33 sections respectively. This is navigation over existing
+  text, not invented chapter content or silently omitted prose.
+- `node /tmp/forage-reader-browser.cjs` passes for library/book routes, all nine
+  Gatsby chapters, next/previous/back/reload, text size, themes, real plain-text
+  downloads, scoped license links, anonymous access, stale/missing editions and
+  review entry links. Light/dark desktop and 390px/320px layouts have no
+  horizontal overflow or browser exceptions. Screenshots visually inspected.
+- `node /tmp/forage-reader-xss.cjs` passes for literal HTML in title/prose,
+  disabled browser storage and malformed URL handling. No script execution.
+- Both JS files pass `node --check`; `git diff --check` passes. Logs are
+  `/tmp/forage-reader-{regression,final-tests,container-tests,browser,xss,corpus}.log`;
+  final image hashes are in `/tmp/forage-reader-image-hashes.json`. The temporary
+  browser preview server was stopped after verification.
+
+### Structure and forward impact
+
+- Completed reading content/export policy belongs to `forage.reading`;
+  ArtifactStore selects the edition, API endpoints reuse existing revision
+  validation and read admission, and the separate client renders text only.
+  The established plain-text conversion helper is reused. No new dependencies,
+  model calls, paid generation, production requests or review/account mutations.
+- The download adds attribution and license outside the preserved book body.
+  Licensing is scoped explicitly rather than claiming ownership of the original
+  author’s text or certainty about copyright in generated material.
+- README and architecture document routes, completion policy, provenance,
+  licensing scope and packaging. No placeholders or acceptance gaps remain in
+  the local implementation. Publication/deployment remains a separate action;
+  current live v27 is unchanged.
+
+# Terms of Use and contribution consent audit
+
+## 2026-10-25
+
+### Verdict
+
+Passes functional, structural and forward-impact review locally. The public
+terms page and agreement are exposed in the tested application and container;
+they are **not release-verified**. No commit, push or deployment was requested
+for this extension. Live Fly v27 remains unchanged. This is an implementation
+audit, not a claim of legal enforceability in every jurisdiction.
+
+### Findings and evidence
+
+1. Both website surfaces expose the same public Terms of Use, including the
+   reading license, express copyright grant and acceptable use policy:
+   `forage/webapp/static/reader.html:16`, `static/index.html:35`,
+   `static/terms.html:19`, and `forage/webapp/app.py:258`. Static terms require no
+   login or JavaScript and retain the app's CSP. CC BY 4.0 permits commercial
+   reuse; contributors retain ownership and request collective attribution.
+   Site participation rules add no restrictions to downstream CC rights.
+   Source/public-domain/third-party material and pre-acceptance contributions
+   are explicitly distinguished. The reading notice and download carry the
+   reviewer credit (`forage/reading.py:154`). Official CC references consulted:
+   https://creativecommons.org/licenses/by/4.0/legalcode and
+   https://creativecommons.org/faq/.
+2. New contributions cannot bypass assent by calling the API directly:
+   `forage/webapp/app.py:172`, `:277`, `:623`, `:690`, `:728` share one dependency
+   for notes of all scopes, edits and revision decisions. Existing identity,
+   ownership, rate-limit and origin checks remain effective. Acceptance is a
+   strict boolean for the current version and authenticated account; admin
+   payloads cannot select another accepting user. Account administration,
+   deletion and publication transport do not imply acceptance.
+3. `forage/webapp/accounts.py:107` and `:131` implement an additive table and
+   idempotent receipt (account ID, version, first acceptance timestamp).
+   Existing accounts receive no automatic acceptance. Receipts persist across
+   restart and account deletion; recreated usernames have fresh IDs. Old
+   versions remain recorded but do not authorize writes under changed terms.
+4. All client contribution paths use `contributionApi` and one explicit,
+   initially unchecked agreement (`forage/webapp/static/app.js:75`, `:82`,
+   `:131`, `:923`, `:990`, `:1047`, `:1083`, `:1183`, `:1226`). Terms open in a
+   separate tab to preserve drafts. Cancelling, failed acceptance and stale
+   terms are handled, including a nested note-edit dialog. The keyboard guard
+   at `:1284` prevents Escape from discarding the underlying composer when an
+   agreement dialog is open. No local-storage flag substitutes for server
+   consent.
+
+### Verification
+
+- `.venv/bin/python -m pytest -q tests/test_terms.py tests/test_accounts.py tests/test_webapp_security.py tests/test_revision_review.py tests/test_reading.py`
+  — **90 passed**, one existing Starlette deprecation warning.
+- `.venv/bin/python -m pytest -q tests/test_web_media.py tests/test_request_limits.py tests/test_deploy_config.py tests/test_review_lifecycle.py tests/test_auth.py tests/test_review_transport.py tests/test_review_sync.py tests/test_review_packaging.py tests/test_artifact_safety.py tests/test_publication_cache.py tests/test_source_highlights.py tests/test_alignment_freshness.py tests/test_pipeline_review.py`
+  — **284 passed**, 13 existing Starlette warnings. This covers existing note
+  ownership, pipeline decisions, media feedback, transport and read safety.
+- `FORAGE_DOCKER_TESTS=1 DOCKER_HOST=unix:///run/user/1000/docker.sock .venv/bin/python -m pytest -q tests/test_container.py`
+  — **nine passed**. After extending the restart test with the terms page and
+  exact acceptance receipt, the same command with
+  `-k hosted_publication_and_feedback` passed (**one**, eight deselected).
+  All **72 application files** in `forage-review:pytest` match local hashes.
+- `node /tmp/forage-terms-browser.cjs` — passed public links from library,
+  reader and editorial section; light/dark terms page down to 320px; unchecked
+  assent; native validation; Escape preserving the draft; separate terms tab;
+  failed receipt recovery; saved contributions; persistence on reload;
+  stale-version retry; nested edit cancellation and successful resubmission.
+  No browser exceptions. Mobile screenshots visually inspected.
+- `node /tmp/forage-reader-browser.cjs` — reading regression passed, including
+  complete licensed TXT download, navigation, theme/type controls, anonymous
+  access and mobile layouts. Both JS syntax checks and `git diff --check` pass.
+- Evidence: `/tmp/forage-terms-{focused,regression,container,container-restart,browser,reader-browser}.log`
+  and `/tmp/forage-terms-image-hashes.json`. Browser work used only a temporary
+  preview database, test accounts and local artifacts; no live account, review,
+  book or paid model call was touched.
+
+### Completeness, structure and forward impact
+
+- All requested local acceptance criteria are addressed: terms links in both
+  views, express CC grant with commercial use and acceptable use. Licensing
+  does not claim an assignment or retrofit consent onto existing content.
+- AccountStore owns assent persistence; route dependencies own enforcement;
+  the editor shares one dialog/API helper. No new dependencies or duplicated
+  contribution enforcement. Terms version and page date are checked together
+  by tests and their update procedure is documented in README.
+- Account and review migrations are additive; existing identity, publication
+  and artifact contracts remain intact. No placeholders, silent permission
+  failures or deferred implementation items. Deployment remains separate.
+- A license-text change changes reading edition identity, as designed; stale
+  pinned download URLs ask readers to reopen the current edition. Future
+  contribution agreement changes must increment the version and retain prior
+  text in version control. No structural remediation remains.
+
+# Lightweight visual polish audit
+
+## 2026-10-25
+
+### Verdict
+
+Passes functional, structural and forward-impact checks locally. The reader,
+editorial index, chapter review and terms page have a coherent visual treatment
+without adding dependencies or network fetches. Exposed in the local preview;
+not release-verified. Fly v27 and the earlier container image remain unchanged.
+
+### Findings and evidence
+
+1. `forage/webapp/static/app.css:25` and `reader.css:3` align light/dark colors,
+   type and borders. Library cards use restrained spine accents and consistent
+   metadata alignment (`app.css:226`, `reader.css:56`). Reading controls and
+   legal text receive clearer containers without altering book prose
+   (`reader.css:69`, `:91`). Decorative numbering is hidden from accessibility
+   names (`app.js:409`, `reader.js:82`). Editorial branding now uses Abridged
+   Too Far; the source highlight colors and semantics remain intact.
+2. The editorial index's fixed 19rem card minimum previously overflowed a
+   320px viewport. The bounded grid minimum fixes this (`app.css:226`). The
+   header wraps on phone/tablet widths, buttons have larger targets, inputs use
+   readable mobile sizing, and forms/toasts fit their viewport (`app.css:729`).
+   A labelled native chapter select replaces the narrow numeric link grid on
+   smaller screens (`app.js:464`, `app.css:751`). It reuses the existing route
+   builder, preserving edition selection and browser history. Desktop links
+   remain available.
+3. Secondary edition/media/download links use native details/summary, keeping
+   every existing destination accessible (`app.js:204`). No menu framework,
+   custom animation or additional state machine. Theme preference reads/writes
+   now tolerate unavailable storage, matching the reader (`app.js:371`). The
+   expensive header/backdrop blur was removed. Source text, API behavior,
+   account permissions, contribution assent and persistence are unchanged.
+
+### Verification
+
+- `node /tmp/forage-polish-check.cjs` passed **50 layout combinations**: library,
+  editorial index, reader, review chapter and terms at 320, 390, 768, 1024 and
+  1440px, in light and dark themes. No horizontal overflow or external assets.
+  Primary ink, muted text and accent tokens meet 4.5:1 contrast against paper
+  and surface in both themes. This is a targeted contrast check, not a claim
+  of a full accessibility certification.
+- The same browser run verified touch chapter selection/back navigation,
+  edition/media navigation, mobile theme switching, sign-in and admin controls
+  through 320px, keyboard skip links, reduced-motion settings and disabled
+  storage. No JavaScript errors. Chromium mobile emulation was used; physical
+  devices and other browser engines were not tested. A final DOM check confirms
+  decorative numbers have `aria-hidden="true"` in both indexes.
+- `node /tmp/forage-reader-browser.cjs` and
+  `node /tmp/forage-terms-browser.cjs` passed the existing reading/download and
+  contribution agreement flows, including cancelled drafts and nested editing.
+- `.venv/bin/python -m pytest -q tests/test_reading.py tests/test_terms.py tests/test_source_highlights.py`
+  — **61 passed**. `node --check` on both clients and `git diff --check` pass.
+- Static file comparison against `/tmp/forage-polish-before/` shows **5,121
+  additional bytes uncompressed, 1,050 bytes gzip** across changed assets. No
+  fonts, images, libraries or new requests were introduced. Local render
+  measurements in `/tmp/forage-polish/metrics.json` are smoke evidence only,
+  not production/network benchmarks. Desktop, mobile and dark screenshots in
+  `/tmp/forage-polish/` were visually inspected.
+- Logs: `/tmp/forage-polish-{check,reader,terms,tests}.log`. Only temporary test
+  accounts/artifacts were used. No paid model calls or live mutations.
+
+### Completeness, structure and forward impact
+
+- Requested presentation improvements, simple/fast operation and mobile/desktop
+  layouts are covered. No implementation items deferred or placeholders added.
+- Styling stays in the existing stylesheets; small DOM changes reuse native
+  controls and shared navigation. The reader remains separate and lightweight.
+- Existing source/draft comparison, note ownership, terms and reading content
+  contracts are preserved. The deployment image must be rebuilt for a future
+  release; this audit does not reuse the older image's hashes for new assets.
+- README and STATUS describe the result and its local-only release status.
+  No unresolved findings requiring remediation.
+
+# Web application security audit
+
+## 2026-10-25
+
+### Verdict and scope
+
+**Two open findings: one conditional medium and one low.** No critical or high
+issue was identified in this review. This is not an assertion that no other
+vulnerability exists. Both findings predate the uncommitted reading, terms and
+visual changes (confirmed against HEAD). No application code was changed by
+this audit.
+
+Audited the current working tree, including reader/downloads, contribution
+assent, browser rendering, authentication/session lifecycle, note ownership,
+publication upload/asset confinement and request admission. Rebuilt and tested
+the production-style container locally. Live checks were six ordinary,
+unauthenticated GETs only; no live login guesses, writes, exploit attempts,
+load tests or account access. The reading/terms/style features remain local;
+live `/read` and `/terms` still return 404 as expected for v27.
+
+### Findings
+
+1. **SEC-20261025-01 — Medium, conditional: direct Docker clients can forge
+   their rate-limit identity even with application proxy trust disabled.**
+   - Evidence: `Dockerfile:109` unconditionally starts Uvicorn with
+     `--proxy-headers --forwarded-allow-ips '*'`. Uvicorn rewrites the ASGI
+     client address before `forage/webapp/auth.py:96` reads it when
+     `FORAGE_TRUST_PROXY=0`. Disabling the app flag therefore does not disable
+     trust in caller-controlled `X-Forwarded-For` at the server layer.
+   - Reproduced in the freshly built `forage-review:pytest` image with a
+     temporary `/data` filesystem and `FORAGE_TRUST_PROXY=0`: 31 incorrect
+     logins for distinct usernames from an unchanged address produced 30 × 403
+     and then 429. Changing only the forwarded address per request produced
+     31 × 403, bypassing the IP budget. The per-account attempt limit remains
+     effective; this is rate-limit evasion, not an authentication bypass.
+   - Exposure condition: the container is reachable directly, as in a local
+     or self-hosted deployment. No bypass through the deployed Fly proxy was
+     demonstrated. In the configured Fly path the app prioritizes Fly's
+     platform-supplied client header; that distinction must be retained.
+   - Remedy: make proxy trust consistent and opt-in at both layers. Disable
+     Uvicorn proxy rewriting when running directly, or restrict it to known
+     proxy peers. Do not assume the application flag cancels the hardcoded
+     CLI wildcard. Add an integration regression for the direct-server path.
+   - Reproduction: `.venv/bin/python /tmp/forage-security-docker-proxy.py`;
+     results in `/tmp/forage-security-20261025-docker-proxy.json`. Independent
+     ASGI reproduction is in `/tmp/forage-security-audit-20261025.py`.
+   - Primary references: [Uvicorn proxy settings](https://uvicorn.dev/settings/#http)
+     and [Fly request headers](https://docs.fly.io/networking/request-headers).
+
+2. **SEC-20261025-02 — Low: account deletion does not stop an already admitted
+   note creation before it commits.**
+   - Evidence: `forage/webapp/app.py:623` checks the session and contribution
+     agreement before preparing the note, but `forage/webapp/store.py:1096`
+     inserts without rechecking the author account inside the transaction.
+     In contrast, update/delete/revision decisions recheck the actor through
+     `_require_owner` at `forage/webapp/store.py:1110`.
+   - A deterministic local concurrency reproduction paused a legitimate note
+     POST immediately before its insert, deleted the reviewer through the
+     administrator API (204), and resumed the POST. It returned 201 and left a
+     new note owned by the now-absent account. A subsequent POST returned 401.
+     This affects requests already in flight at revocation, not new requests
+     using a revoked session, and does not confer admin privileges.
+   - Remedy: validate the authenticated author in the same serialized database
+     transaction that creates a human note, analogous to existing edits and
+     deletions. Cover account deletion between request admission and insert.
+   - Reproduction: `.venv/bin/python /tmp/forage-security-audit-20261025.py`;
+     `/tmp/forage-security-20261025-repros.json` records deletion 204, pending
+     POST 201, persisted note, absent account and subsequent POST 401.
+
+### Verification and positive results
+
+- `.venv/bin/python -m pytest -q tests/test_auth.py tests/test_accounts.py tests/test_note_ownership.py tests/test_terms.py tests/test_webapp_security.py tests/test_request_limits.py tests/test_artifact_safety.py tests/test_store_ids.py tests/test_hosted_publication.py tests/test_publication_cache.py tests/test_reading.py tests/test_source_highlights.py`
+  — **300 passed**, covering password/session handling, role separation,
+  ownership, CSRF/origin rejection, consent, path safety, bounded uploads,
+  immutable asset verification, read admission and escaped comparisons. The
+  two additional reproductions above are gaps beyond these existing checks.
+- `FORAGE_DOCKER_TESTS=1 DOCKER_HOST=unix:///run/user/1000/docker.sock .venv/bin/python -m pytest -q tests/test_container.py`
+  — **nine passed**, including non-root operation, persistence, pinned packages
+  and closed schema routes. All **72 application files** in the new image
+  match the current source, including the visual pass. Image evidence:
+  `/tmp/forage-security-20261025-image-hashes.json`.
+- `.venv/bin/python /tmp/forage-security-browser-server.py` with
+  `node /tmp/forage-security-browser.cjs` passed actual stored hostile strings
+  in book titles/authors, chapter names, source and draft prose, review notes
+  and account display names. They render as literal text. Generated diff HTML
+  escapes them, and TXT exports use plain-text MIME, attachment disposition
+  and `nosniff`. No injected elements, script execution or browser exceptions.
+  The server used a temporary directory/database and was stopped afterward.
+- Release-specific [PyPI advisory data](https://docs.pypi.org/api/json/#get-a-release)
+  returned **no known vulnerabilities for all 19 pinned web packages** on this
+  date, with no failed queries. Results are in
+  `/tmp/forage-security-20261025-dependencies.json`. This excludes operating
+  system packages and the separate pipeline's full dependency environment.
+- A bounded pattern scan of 14,023 tracked/unignored text files found no
+  provider-token/private-key candidates; no credential values were printed.
+  This was not a complete git-history or entropy-based secret audit.
+  `/tmp/forage-security-20261025-secret-scan.json` records the scope/results.
+- Live GETs to health, root, anonymous session and account-list paths confirmed
+  CSP, HSTS, nosniff and frame protections; session/account responses are
+  no-store and account listing returns 401. `/read` and `/terms` are not yet
+  deployed. No authenticated live cookie or account state was inspected.
+  Evidence: `/tmp/forage-security-20261025-live.json`.
+- Logs are `/tmp/forage-security-20261025-{tests,container,repros,docker-proxy,browser}.log`.
+  All exploit reproductions used temporary local state. No production data or
+  paid model services were touched.
+
+### Completeness, structure and forward impact
+
+The requested audit is complete; remediation is outstanding. Functional
+security checks passed within their stated scope. Structural review found
+inconsistent proxy trust across server/application layers and inconsistent
+account revalidation at creation versus mutation. These should be addressed
+before depending on direct-container rate limiting or strict immediate
+revocation of pending writes. No new weakness was identified in the reader,
+terms acceptance or presentation changes. No full host/OS penetration test,
+physical-device testing or live authenticated exploitation is claimed.
+
+### Remediation mapping
+
+- SEC-20261025-01: align Docker/Uvicorn proxy trust with deployment mode and
+  verify direct clients cannot choose their limiter key.
+- SEC-20261025-02: recheck account identity atomically for human note creation
+  and verify a pending POST cannot commit after account deletion.
+
+# Reading room, terms and visual polish release verification
+
+## 2026-10-25
+
+### Verdict and deployed scope
+
+Release-verified on https://forage-review.fly.dev, Fly **v28**, following the
+user's deployment request. The separate public reader, complete plain-text
+downloads, scoped CC BY 4.0 notice, Terms of Use, explicit contribution assent
+and responsive visual updates are live. This deploy does not remediate
+SEC-20261025-01 or SEC-20261025-02; both findings remain open.
+
+### Release evidence
+
+- Immutable tested image:
+  `registry.fly.io/forage-review@sha256:ac605df60f6f49d761726c439ca8192132d2945378560470b222bbcee2607b63`.
+  All 72 application files match the working tree, audited/tested image and
+  running container. The prior 300 security/regression tests and nine rebuilt
+  container tests cover this unchanged application code. No additional build
+  or dependency resolution occurred during deployment.
+- Deployment used the verified image digest with `--ha=false --update-only
+  --strategy rolling`. Machine `87e005f0262398` remains started in iad with
+  volume `vol_re176w7xje1gj214` and a passing HTTP health check. Configuration,
+  secrets, session epoch and single-machine topology are unchanged.
+- Before/after public captures match for five books, all 115 review chapters,
+  456 notes, existing downloads and publication pointers. SQLite integrity
+  passes; all existing comments, review metadata, revision reviews and users
+  match the consistent backup. Three accounts, one revision decision and all
+  780 volume artifact hashes are preserved. The additive contribution-assent
+  table is present and no legacy acceptance was inferred.
+- The live reader lists five books totaling 199,811 words in the selected
+  production editions. All five UTF-8 plain-text downloads exactly match
+  exports from their authoritative completed assemblies plus the license
+  notice. Checks verify the edition/revision pins, CC BY 4.0 attribution,
+  commercial-use wording, third-party-rights scope, attachment disposition,
+  text/plain MIME type and nosniff header. `/read` and `/terms` return 200 with
+  expected security headers. Production totals differ from the earlier local
+  packaged-corpus totals because mounted/current publication editions take
+  precedence; no prose or publication pointers were changed.
+- Live Chromium checks pass for five page types across five widths
+  (320, 390, 768, 1024 and 1440px) in light and dark themes: 50 layouts with no
+  horizontal overflow or browser exceptions. Reading navigation/back, font
+  size, complete download and mobile review chapter selection pass. Reading
+  prose remains separate from review/source UI, and abridged review paragraphs
+  remain plain. Desktop library and mobile reader screenshots were inspected.
+- Existing admin login, three-account listing, Secure/HttpOnly/Lax session
+  cookie and logout pass. The new agreement opens unchecked; cancellation
+  preserves the unsaved draft. Browser verification explicitly blocked all
+  writes other than its own login/logout and submitted no notes, account
+  changes, acceptance receipts or publication changes.
+- Scripts, captures, source hashes, screenshots and results are recorded in
+  `/tmp/forage-reading-release-20261025/`, including `verification.json`,
+  `reading-live.json`, `public-after-summary.json`, `verify-remote.log`,
+  `live-browser.log` and `deploy.log`.
+
+### Recovery and forward impact
+
+Consistent SQLite backup: `/data/backups/reading-20261025/review.db`, alongside
+the artifact hash manifest. Volume snapshot `vs_1gYb2gGP09zsonjMKR1yxZL` was
+confirmed created at 2026-10-25T15:55:41Z with five-day retention. The previous
+machine image is
+`registry.fly.io/forage-review@sha256:0efa9b064ca9cb0fda29b071966432a5b29da8e66640e2c1aca0be3689d21f42`;
+its identity is captured for rollback. The schema migration is additive.
+
+No paid model calls, book regeneration, review decisions or content republishing
+were performed. New human review contributions now require the explicit terms
+agreement; existing contributions were not retroactively relicensed. Changes
+remain uncommitted/unpushed, and the deployed source hashes identify the working
+tree based on `76debce`. Security remediation remains separate outstanding work.
+
+### Source control verification — 2026-10-25
+
+Following the user's commit-and-push request, fetched origin and confirmed zero
+divergence from `origin/main`; no rebase was needed. The issue tracker contained
+no issues to associate with this user-requested work. The changes are grouped as:
+
+- `2d2e2d0` — public reading editions, complete licensed plain-text downloads,
+  contribution terms/assent, packaging, corresponding tests and documentation.
+- `eaea9db` — responsive reading/review styling, touch controls, chapter
+  selection, grouped edition links and resilient theme preferences.
+
+The split reused the saved pre-styling source for the first commit without
+altering the working files. All 72 committed application files match the source
+hashes verified on Fly v28. The existing security/container/browser results
+therefore cover the committed code; no code changed during checkin. Release and
+security documentation is recorded separately. The two security findings remain
+open, and this checkin does not change the live deployment or book content.

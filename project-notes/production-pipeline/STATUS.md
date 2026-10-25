@@ -2,6 +2,80 @@
 
 ## Current Stage
 
+[reading room, terms and visual polish deployed — 2026-10-25] Fly **v28** is
+live at https://forage-review.fly.dev. `/read` offers all five completed books
+and complete UTF-8 plain-text downloads with the scoped CC BY 4.0 notice;
+`/terms` and explicit contribution assent are live. Desktop/mobile styling,
+light/dark themes and mobile chapter navigation are verified. All 72 application
+files match the tested image. Before/after captures preserve five books, 115
+review chapters, 456 notes, publication pointers and existing downloads; three
+accounts, one revision decision and all 780 volume artifact hashes are unchanged.
+SQLite integrity and Fly health checks pass. All five reader downloads match the
+selected assembled editions; 50 live browser layouts and existing admin login
+pass. No contribution agreement was accepted or review data changed during checks.
+Database backup `/data/backups/reading-20261025/review.db` and volume snapshot
+`vs_1gYb2gGP09zsonjMKR1yxZL` are recorded. Detailed release evidence is in
+`/tmp/forage-reading-release-20261025/verification.json` and the appended audit.
+The two security audit findings remain open. Reader/terms changes are recorded
+in `2d2e2d0` and visual polish in `eaea9db`; both match the deployed source.
+Deployment used the tested working tree based on `76debce`.
+
+[security audit completed — 2026-10-25] Two pre-existing findings remain open:
+SEC-20261025-01 (conditional medium) allows IP-limit evasion when Docker is
+reached directly because Uvicorn trusts forwarded headers even with the app's
+trust flag disabled; no bypass through Fly's proxy was demonstrated.
+SEC-20261025-02 (low) allows an already-admitted note POST to commit after its
+account is removed; subsequent requests are rejected. Both were reproduced
+locally and documented in the appended security audit. No critical/high issue
+was found in scope. 300 security/regression tests, nine rebuilt-container tests
+and stored-XSS browser checks passed. All 72 application files now match the
+new tested image, including visual polish. The 19 pinned web packages have no
+known PyPI advisories on this date. Only benign live GETs were made. Application
+code was not changed by the audit; fixes, commit/push and deployment remain
+outstanding. Fly v27 is still live, without `/read` or `/terms`.
+
+[visual polish implemented locally — 2026-10-25] Reading, editorial and terms
+pages share warm paper/green colors, serif headings, clearer cards and spacing.
+Phone/tablet review navigation uses a labelled chapter selector and secondary
+edition links use a native disclosure. Primary touch controls are larger;
+forms use readable mobile font sizes and the mobile theme control is visible.
+The 320px editorial card overflow is fixed. Theme preferences tolerate disabled
+storage. No external assets, libraries or additional fetches; the visual pass
+adds 5,121 raw bytes / 1,050 gzip bytes across its changed static files.
+All 50 Chromium layouts (five pages × five widths × two themes), touch/admin/
+keyboard checks, reading and contribution browser flows, and 61 focused tests
+pass. Earlier reader/terms container verification predates this visual pass;
+no image or live deployment is claimed for these newest styles. Work remains
+uncommitted and undeployed; Fly v27 is unchanged.
+
+[terms and contribution agreement implemented locally — 2026-10-25] `/terms`
+is linked from the reading room and editorial review. It covers the scoped
+CC BY 4.0 copyright license (including commercial use), an explicit grant for
+new review contributions and acceptable use of the website. Reviewers retain
+copyright; legacy content is not retroactively relicensed. All human review
+write paths require recorded, versioned assent, including admins. The checkbox
+starts unchecked; cancellation preserves drafts. The license remains separate
+from participation rules. Acceptance receipts survive restart/account removal;
+account recreation does not inherit them. Reading/download notices include
+collective reviewer credit. 374 focused/regression tests and nine container
+tests pass, with a further targeted container check of the public terms page
+and exact acceptance receipt after restart. Browser verification covers terms,
+the agreement and the reader. All 72 application files in the tested image
+match source. These changes and the reading room remain uncommitted and
+undeployed; Fly v27 is unchanged.
+
+[reading room implemented locally — 2026-10-25] `/read` provides a separate
+library and clean reader for completed abridgments, with chapter navigation,
+text size/theme controls and complete UTF-8 plain-text downloads. Abridged Too
+Far's original editorial contributions carry a CC BY 4.0 notice allowing
+commercial reuse; source and third-party rights remain separate. The reader
+uses authoritative assembled text, excludes incomplete editions and pins viewed
+editions for downloads. Packaging includes completed legacy text and minimal
+completion evidence. Five-book reconstruction, 260 review/security/packaging
+regressions, 83 final focused tests, nine container tests and light/dark
+desktop/mobile browser checks pass (test counts overlap). Changes are local,
+uncommitted and undeployed; Fly v27 remains the live version.
+
 [source comparison deployed — 2026-10-23] Fly **v27** is live at
 https://forage-review.fly.dev. Abridged paragraphs stay plain; source comparisons
 use red deletions and green additions, sentence-aware matching, labeled plain
