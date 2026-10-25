@@ -319,6 +319,13 @@ Reader APIs: `GET /api/books/reading` lists available completed books;
 `GET /api/books/<book-id>/reading` returns clean reading content;
 `GET /api/books/<book-id>/reading.txt` downloads the complete licensed edition.
 
+Reading and editorial views share a restrained paper-and-green palette,
+system-font typography and light/dark themes. Layouts adapt to phones, tablets
+and desktops, with larger touch controls and a chapter selector on smaller
+review screens. Secondary edition links remain under **Editions & downloads**.
+The presentation uses local CSS and the existing JavaScript, without external
+fonts, images, animation libraries or extra page requests.
+
 Zero LLM cost. The same alignment data `proofread` renders statically, served as an interactive review app where a note can be attached to any paragraph and published as a machine-readable fix queue.
 
 ```bash

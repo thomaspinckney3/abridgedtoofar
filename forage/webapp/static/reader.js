@@ -78,7 +78,8 @@ async function library(turn) {
   const intro = node('section', {class: 'library-intro'},
     node('p', {class: 'eyebrow'}, 'The reading room'), node('h1', {}, 'A shorter way into a good book.'),
     node('p', {}, 'Read an abridged edition here, or download the complete abridgment as plain text to take with you.'));
-  const grid = node('div', {class: 'reading-grid'}, books.map(book => node('article', {class: 'reading-card'},
+  const grid = node('div', {class: 'reading-grid'}, books.map((book, index) => node('article', {class: 'reading-card'},
+    node('span', {class: 'book-mark', 'aria-hidden': 'true'}, String(index + 1).padStart(2, '0')),
     node('h2', {}, node('a', {href: book.reading_url, 'data-reader-link': true}, book.title)),
     book.author ? node('p', {class: 'author'}, `by ${book.author}`) : null,
     node('p', {class: 'book-length'}, lengthLabel(book)),

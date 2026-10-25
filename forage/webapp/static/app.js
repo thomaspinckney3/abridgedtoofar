@@ -208,13 +208,16 @@ function publicationNav() {
   const edition = book.publication_channel === "release" ? "Public release"
     : book.publication_channel === "revision" ? "Published revision" : "Review edition";
   return h("section", { class: "publication-nav" },
-    h("p", { class: "revision-label" }, `${edition} · ${book.publication_revision ? book.publication_revision.slice(0, 12) : "local artifacts"}`),
-    h("a", { class: "btn small", href: `/read/${encodeURIComponent(book.book_id)}?${readingQuery}` }, "Reading view"),
-    h("a", { class: "btn small", href: bookRoute(), "data-route": true }, "Review text"),
-    h("a", { class: "btn small", href: bookRoute({ view: "media" }), "data-route": true }, "Audio & graphic novel"),
-    h("a", { class: "btn small", href: `/release/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current public release"),
-    h("a", { class: "btn small", href: `/b/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current review edition"),
-    (book.downloads || []).map(item => h("a", { class: "download-link", href: item.url, download: true }, `Download ${item.path}`)));
+    h("div", {class: "publication-primary"},
+      h("a", { class: "btn small", href: `/read/${encodeURIComponent(book.book_id)}?${readingQuery}` }, "Reading view"),
+      h("a", { class: "btn small", href: bookRoute(), "data-route": true }, "Review text")),
+    h("details", {class: "edition-tools"}, h("summary", {}, "Editions & downloads"),
+      h("div", {class: "edition-options"},
+        h("p", { class: "revision-label" }, `${edition} · ${book.publication_revision ? book.publication_revision.slice(0, 12) : "local artifacts"}`),
+        h("a", { class: "btn small", href: bookRoute({ view: "media" }), "data-route": true }, "Audio & graphic novel"),
+        h("a", { class: "btn small", href: `/release/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current public release"),
+        h("a", { class: "btn small", href: `/b/${encodeURIComponent(book.book_id)}`, "data-route": true }, "Current review edition"),
+        (book.downloads || []).map(item => h("a", { class: "download-link", href: item.url, download: true }, `Download ${item.path}`)))));
 }
 
 function go(path, replace = false) {
@@ -365,12 +368,12 @@ function applyTheme(theme) {
   if (theme) document.documentElement.setAttribute("data-theme", theme);
   else document.documentElement.removeAttribute("data-theme");
 }
-applyTheme(localStorage.getItem("forage-theme"));
+try { applyTheme(localStorage.getItem("forage-theme")); } catch { /* System theme when storage is unavailable. */ }
 el.themeBtn.addEventListener("click", () => {
   const now = document.documentElement.getAttribute("data-theme");
   const dark = now ? now === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
   const next = dark ? "light" : "dark";
-  localStorage.setItem("forage-theme", next);
+  try { localStorage.setItem("forage-theme", next); } catch { /* Keep the choice for this page. */ }
   applyTheme(next);
 });
 
@@ -385,9 +388,9 @@ async function renderIndex() {
 
   const { books } = await api("/api/books");
   const head = h("div", { class: "index-head" },
+    h("p", {class: "eyebrow"}, "Abridged Too Far · The editorial desk"),
     h("h1", {}, "Editorial review"),
-    h("p", {}, "Every abridged paragraph next to the source it came from. Read anything; " +
-      "sign in with your account to leave notes for the fix pass."));
+    h("p", {}, "Compare each abridged passage with its source, and leave notes to help shape the next edition. Sign in when you’re ready to contribute."));
 
   if (!books.length) {
     el.main.replaceChildren(head, h("p", { class: "empty" },
@@ -395,7 +398,7 @@ async function renderIndex() {
     return;
   }
 
-  const grid = h("div", { class: "book-grid" }, books.map((book) => {
+  const grid = h("div", { class: "book-grid" }, books.map((book, index) => {
     const total = Object.values(book.counts).reduce((a, b) => a + b, 0) || 1;
     const mix = h("div", { class: "mix", title: mixTitle(book.counts) },
       ["verbatim", "paraphrased", "compressed", "unsupported"].map((key) =>
@@ -403,11 +406,11 @@ async function renderIndex() {
           class: key, style: `width:${(book.counts[key] / total) * 100}%`,
         }) : null));
     return h("a", { class: "book-card", href: `/b/${encodeURIComponent(book.book_id)}`, "data-route": true },
+      h("span", {class: "book-mark", "aria-hidden": "true"}, String(index + 1).padStart(2, '0')),
       h("h2", {}, book.title),
       book.author ? h("div", { class: "byline" }, book.author) : null,
       mix,
       h("div", { class: "card-meta" },
-        h("span", { class: "slug" }, book.book_id),
         h("span", {}, plural(book.chapters, "chapter", "chapters")),
         book.counts.unsupported ? h("span", {}, `${book.counts.unsupported} unsupported`) : null,
         book.diagnostics?.total ? h("span", {}, `${book.diagnostics.total} flags`) : null,
@@ -415,7 +418,7 @@ async function renderIndex() {
   }));
 
   el.main.replaceChildren(head, grid);
-  document.title = "Forage — editorial review";
+  document.title = "Abridged Too Far — editorial review";
 }
 
 function mixTitle(counts) {
@@ -456,8 +459,12 @@ function renderRail(activeSegment) {
   el.rail.replaceChildren(
     h("a", { class: "rail-back", href: "/", "data-route": true }, "← All books"),
     publicationNav(),
-    h("h2", {}, "Chapters"),
+    h("h2", {class: "chapter-list-heading"}, "Chapters"),
     list,
+    h("label", {class: "mobile-chapters"}, h("span", {id: "review-chapter-label"}, "Chapter"),
+      h("select", {id: "review-chapter", "aria-labelledby": "review-chapter-label", onchange: event => go(bookRoute({c: event.target.value}))},
+        book.chapters.map(ch => h("option", {value: ch.segment_id, selected: ch.segment_id === activeSegment},
+          `${ch.segment_id} · ${ch.title || 'Untitled chapter'}`)))),
     h("div", { class: "rail-tools" },
       h("input", {
         type: "search", id: "chapter-search", placeholder: "Search this chapter",
